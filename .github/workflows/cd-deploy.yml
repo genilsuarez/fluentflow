@@ -209,16 +209,3 @@ jobs:
         run: |
           echo "🎉 Deployment successful!"
           echo "📍 URL: ${{ steps.deployment.outputs.page_url }}"
-
-  deployment-complete:
-    name: Deployment Complete
-    runs-on: ubuntu-latest
-    needs: [check-pipelines, deploy]
-    if: needs.check-pipelines.outputs.should-deploy == 'true' && needs.deploy.result == 'success'
-    steps:
-      - name: Success notification
-        run: |
-          echo "🎉 CD Deploy Workflow Completed Successfully!"
-          echo "✅ All pipelines passed"
-          echo "✅ Deployment executed successfully"
-          echo "🌐 Application is live and accessible"
