@@ -125,29 +125,71 @@ jobs:
           COMMIT_SHA="${{ needs.check-pipelines.outputs.commit-sha }}"
           ARTIFACT_NAME="build-files-$COMMIT_SHA"
           
+          echo "🔍 Looking for build artifacts for commit: $COMMIT_SHA"
+          
           # Get the build run ID
           BUILD_RUN_ID=$(gh api repos/${{ github.repository }}/actions/runs \
             --jq ".workflow_runs[] | select(.head_sha == \"$COMMIT_SHA\" and .name == \"CI Build\" and .conclusion == \"success\") | .id" \
             | head -1)
           
           if [ -z "$BUILD_RUN_ID" ]; then
-            echo "❌ No successful CI Build run found"
+            echo "❌ No successful CI Build run found for commit $COMMIT_SHA"
+            echo "💡 This usually means:"
+            echo "   - The artifact expired (>7 days old)"
+            echo "   - The CI Build workflow didn't run for this commit"
+            echo ""
+            echo "🔧 To fix: Trigger a new build with:"
+            echo "   git commit --allow-empty -m 'chore: refresh build artifacts'"
+            echo "   git push"
             exit 1
           fi
           
-          # Download artifacts
+          echo "✅ Found CI Build run: $BUILD_RUN_ID"
+          
+          # Check if artifact exists
           ARTIFACT_URL=$(gh api repos/${{ github.repository }}/actions/runs/$BUILD_RUN_ID/artifacts \
             --jq ".artifacts[] | select(.name == \"$ARTIFACT_NAME\") | .archive_download_url")
           
+          if [ -z "$ARTIFACT_URL" ]; then
+            echo "❌ Artifact '$ARTIFACT_NAME' not found or expired"
+            echo "💡 Artifacts are retained for 7 days only"
+            echo ""
+            echo "🔧 To fix: Trigger a new build with:"
+            echo "   git commit --allow-empty -m 'chore: refresh build artifacts'"
+            echo "   git push"
+            exit 1
+          fi
+          
+          echo "✅ Found artifact, downloading..."
+          
+          # Download artifacts
           mkdir -p dist
           curl -L -H "Authorization: token ${{ github.token }}" \
             -H "Accept: application/vnd.github.v3+json" \
             "$ARTIFACT_URL" -o artifact.zip
           
-          unzip -q artifact.zip -d dist/
+          # Verify download
+          if [ ! -f artifact.zip ] || [ ! -s artifact.zip ]; then
+            echo "❌ Failed to download artifact or file is empty"
+            exit 1
+          fi
+          
+          # Unzip with error handling
+          if ! unzip -q artifact.zip -d dist/; then
+            echo "❌ Failed to extract artifact (corrupted or invalid zip)"
+            echo "📋 Artifact may be corrupted or expired"
+            exit 1
+          fi
+          
           rm artifact.zip
           
-          echo "✅ Artifacts downloaded"
+          # Verify extracted files
+          if [ ! -f "dist/index.html" ]; then
+            echo "❌ Extracted artifact is missing index.html"
+            exit 1
+          fi
+          
+          echo "✅ Artifacts downloaded and verified successfully"
         env:
           GH_TOKEN: ${{ github.token }}
 
