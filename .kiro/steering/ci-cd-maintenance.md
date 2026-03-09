@@ -54,20 +54,24 @@ El workflow `maintenance.yml` corre cada 5 días automáticamente:
 
 **No requiere intervención manual.**
 
-### Manual (Opcional)
-Si necesitas forzar actualización antes del cron:
+### Manual (Recomendado)
 
+#### Opción 1: Build Safe (Recomendado)
 ```bash
+npm run build:safe
+```
+Hace `git pull --rebase` automáticamente antes del build completo. **Previene conflictos con commits del cron job.**
+
+#### Opción 2: Build Full (Requiere pull manual)
+```bash
+# Siempre pull primero para evitar conflictos
+git pull --rebase
+
+# Luego ejecutar build:full
 npm run build:full
 ```
 
-Esto ejecuta:
-1. Quality pipeline (lint, type-check, tests, format)
-2. Security pipeline (audit, patterns)
-3. Build pipeline (tsc + vite build)
-4. Commit + Push automático
-5. Trigger de GitHub Actions
-6. Deploy automático
+**⚠️ Importante**: Si no haces `git pull` antes de `build:full`, puede fallar el push si el cron job hizo un commit mientras trabajabas.
 
 ### Monitoreo de Seguridad
 
@@ -160,8 +164,11 @@ gh workflow run "CD Deploy" --field force-deploy=true
 ## Comandos Útiles
 
 ```bash
-# Pipeline completo local + deploy
-npm run build:full
+# Pipeline completo local + deploy (CON pull automático)
+npm run build:safe
+
+# Pipeline completo local + deploy (requiere pull manual)
+git pull --rebase && npm run build:full
 
 # Verificar estado de deployment
 npm run deploy:status

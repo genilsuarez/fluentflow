@@ -45,7 +45,19 @@ Triggered by scheduled maintenance workflow every 5 days."
       - name: Push changes
         run: |
           echo "🚀 Pushing maintenance commit..."
-          git push
+          
+          # Try to push, handle rejection if remote has changes
+          if ! git push 2>&1; then
+            echo "⚠️ Push rejected - remote has new commits"
+            echo "🔄 Pulling remote changes and retrying..."
+            
+            # Pull with rebase to avoid merge commits
+            git pull --rebase
+            
+            # Try push again
+            git push
+          fi
+          
           echo "✅ Maintenance commit pushed successfully"
 
       - name: Summary
