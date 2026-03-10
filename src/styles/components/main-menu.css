@@ -10,18 +10,18 @@
   --grid-padding-desktop: 2px;
   --grid-padding-large-desktop: 2px;
 
-  /* Heights optimized for 4 columns grid with exactly 4 visible rows - REDUCED */
-  /* Mobile: 2 cols, 4 rows visible = 8 modules - reduced 3px from cards */
-  --grid-height-mobile: calc(87px * 4 + 0.5rem * 3 + 0.5rem);
+  /* Heights optimized for 4 columns grid with exactly 4 visible rows - COMPACT */
+  /* Mobile: 2 cols, 4 rows visible = 8 modules - reduced for compactness */
+  --grid-height-mobile: calc(var(--card-height-mobile) * 4 + 0.5rem * 3 + 0.5rem);
 
-  /* Tablet: 3 cols, 4 rows visible = 12 modules - reduced 3px from cards */
-  --grid-height-tablet: calc(97px * 4 + 0.625rem * 3 + 0.625rem);
+  /* Tablet: 3 cols, 4 rows visible = 12 modules - reduced for compactness */
+  --grid-height-tablet: calc(var(--card-height-tablet) * 4 + 0.625rem * 3 + 0.625rem);
 
-  /* Desktop: 4 cols, 4 rows visible = 16 modules - reduced 3px from cards */
-  --grid-height-desktop: calc(107px * 4 + 0.75rem * 3 + 0.75rem);
+  /* Desktop: 4 cols, 4 rows visible = 16 modules - reduced for compactness */
+  --grid-height-desktop: calc(var(--card-height-desktop) * 4 + 0.75rem * 3 + 0.75rem);
 
   /* Large Desktop: same as desktop */
-  --grid-height-large-desktop: calc(107px * 4 + 0.75rem * 3 + 0.75rem);
+  --grid-height-large-desktop: calc(var(--card-height-desktop) * 4 + 0.75rem * 3 + 0.75rem);
 }
 
 /* SVG Icon Inheritance Fix - Force white in dark mode */

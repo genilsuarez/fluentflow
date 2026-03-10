@@ -364,12 +364,6 @@ html.dark .compact-about .compact-about__developer-link .compact-about__link-ico
   border: 2px solid var(--theme-border-soft, #e5e7eb);
   border-radius: var(--radius-lg, 0.5rem);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  transition: all 0.2s ease;
-}
-
-.compact-about__tech-stack:hover {
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
-  border-color: var(--theme-primary-blue, #3b82f6);
 }
 
 .compact-about__tech-item {
@@ -386,7 +380,7 @@ html.dark .compact-about .compact-about__developer-link .compact-about__link-ico
   font-weight: 700;
   transition: all 0.2s ease;
   position: relative;
-  overflow: visible;
+  overflow: hidden;
   box-shadow: 0 2px 4px rgba(59, 130, 246, 0.1);
   white-space: nowrap;
   flex: 1;
@@ -438,8 +432,9 @@ html.dark .compact-about .compact-about__developer-link .compact-about__link-ico
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transition: left 0.5s ease;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.4s ease;
+  pointer-events: none;
 }
 
 .compact-about__tech-item:hover::before {

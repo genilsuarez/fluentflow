@@ -7,11 +7,11 @@
   --card-shadow-hover: var(--shadow-card-hover);
   --card-shadow-active: var(--shadow-card-active);
   --card-width-mobile: 120px;
-  --card-height-mobile: 87px;
+  --card-height-mobile: 85px;
   --card-width-tablet: 150px;
-  --card-height-tablet: 97px;
+  --card-height-tablet: 95px;
   --card-width-desktop: 145px;
-  --card-height-desktop: 107px;
+  --card-height-desktop: 105px;
 }
 
 /* Card Container - Enhanced Design with Rectangular Shape */

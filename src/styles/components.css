@@ -16,11 +16,11 @@
 @import './components/fluent-flow-logo.css';
 @import './components/game-controls.css';
 @import './components/header.css';
+@import './components/module-card.css';
 @import './components/main-menu.css';
 @import './components/matching-cards.css';
 @import './components/matching-component.css';
 @import './components/matching-modal.css';
-@import './components/module-card.css';
 @import './components/quiz-component.css';
 @import './components/score-display.css';
 @import './components/search-bar.css';
