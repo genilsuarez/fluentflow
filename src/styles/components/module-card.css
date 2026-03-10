@@ -511,8 +511,8 @@
   }
 
   .module-card__type {
-    /* IMPROVED: Maintained minimum legible size */
-    font-size: var(--text-xs, 0.75rem);
+    /* Smaller size for less visual competition with title */
+    font-size: 0.625rem;
     font-weight: var(--font-medium, 500);
     margin-bottom: 0.125rem;
   }
@@ -575,8 +575,8 @@
   }
 
   .module-card__type {
-    /* Keep at xs to fit compact card */
-    font-size: var(--text-xs, 0.75rem);
+    /* Smaller size for less visual competition with title */
+    font-size: 0.625rem;
     font-weight: var(--font-medium, 500);
   }
 
@@ -615,8 +615,8 @@
   }
 
   .module-card__type {
-    /* Keep metadata at xs */
-    font-size: var(--text-xs, 0.75rem);
+    /* Smaller size for less visual competition with title */
+    font-size: 0.625rem;
     font-weight: var(--font-medium, 500);
   }
 
