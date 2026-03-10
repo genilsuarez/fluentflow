@@ -126,24 +126,24 @@ export class ContentParser {
    * @private
    */
   private static isValidTerm(content: string): boolean {
-      // Skip empty content
-      if (!content) {
-        return false;
-      }
-
-      // Check against common English contractions first
-      if (ContentParser.isContraction(content)) {
-        return false;
-      }
-
-      // Check for possessives (words ending with 's but not contractions)
-      if (content.endsWith("'s") || content.endsWith("s'")) {
-        return false;
-      }
-
-      // Allow single letters (like 'I', 'a') and vocabulary words
-      return /^[a-zA-Z\s-]+$/.test(content);
+    // Skip empty content
+    if (!content) {
+      return false;
     }
+
+    // Check against common English contractions first
+    if (ContentParser.isContraction(content)) {
+      return false;
+    }
+
+    // Check for possessives (words ending with 's but not contractions)
+    if (content.endsWith("'s") || content.endsWith("s'")) {
+      return false;
+    }
+
+    // Allow single letters (like 'I', 'a') and vocabulary words
+    return /^[a-zA-Z\s-]+$/.test(content);
+  }
 
   /**
    * Check if text is a common English contraction
@@ -208,67 +208,67 @@ export class ContentParser {
    * Reading content uses double quotes for terms (no single-quote ambiguity).
    */
   static parseReadingContent(text: string): StructuredContent {
-      if (!text || typeof text !== 'string') {
-        return { segments: [{ type: 'text', content: '' }], format: 'reading' };
-      }
-
-      const segments: ContentSegment[] = [];
-      let currentIndex = 0;
-
-      // Reading uses only double quotes for terms (single quotes are apostrophes)
-      const patterns = [
-        { regex: /<([^>]+)>/g, type: 'term' as const },
-        { regex: /"([^"]+)"/g, type: 'term' as const },
-        { regex: /\*\*([^*]+)\*\*/g, type: 'emphasis' as const },
-        { regex: /`([^`]+)`/g, type: 'code' as const },
-        { regex: /\{\{([^}]+)\}\}/g, type: 'variable' as const },
-      ];
-
-      const matches: Array<{
-        start: number;
-        end: number;
-        content: string;
-        type: ContentSegment['type'];
-      }> = [];
-
-      patterns.forEach(({ regex, type }) => {
-        let match;
-        while ((match = regex.exec(text)) !== null) {
-          matches.push({
-            start: match.index,
-            end: match.index + match[0].length,
-            content: match[1],
-            type,
-          });
-        }
-      });
-
-      matches.sort((a, b) => a.start - b.start);
-
-      matches.forEach(match => {
-        if (currentIndex < match.start) {
-          const textContent = text.slice(currentIndex, match.start);
-          if (textContent) {
-            segments.push({ type: 'text', content: textContent });
-          }
-        }
-        segments.push({ type: match.type, content: match.content });
-        currentIndex = match.end;
-      });
-
-      if (currentIndex < text.length) {
-        const remainingText = text.slice(currentIndex);
-        if (remainingText) {
-          segments.push({ type: 'text', content: remainingText });
-        }
-      }
-
-      if (segments.length === 0) {
-        segments.push({ type: 'text', content: text });
-      }
-
-      return { segments, format: 'reading' };
+    if (!text || typeof text !== 'string') {
+      return { segments: [{ type: 'text', content: '' }], format: 'reading' };
     }
+
+    const segments: ContentSegment[] = [];
+    let currentIndex = 0;
+
+    // Reading uses only double quotes for terms (single quotes are apostrophes)
+    const patterns = [
+      { regex: /<([^>]+)>/g, type: 'term' as const },
+      { regex: /"([^"]+)"/g, type: 'term' as const },
+      { regex: /\*\*([^*]+)\*\*/g, type: 'emphasis' as const },
+      { regex: /`([^`]+)`/g, type: 'code' as const },
+      { regex: /\{\{([^}]+)\}\}/g, type: 'variable' as const },
+    ];
+
+    const matches: Array<{
+      start: number;
+      end: number;
+      content: string;
+      type: ContentSegment['type'];
+    }> = [];
+
+    patterns.forEach(({ regex, type }) => {
+      let match;
+      while ((match = regex.exec(text)) !== null) {
+        matches.push({
+          start: match.index,
+          end: match.index + match[0].length,
+          content: match[1],
+          type,
+        });
+      }
+    });
+
+    matches.sort((a, b) => a.start - b.start);
+
+    matches.forEach(match => {
+      if (currentIndex < match.start) {
+        const textContent = text.slice(currentIndex, match.start);
+        if (textContent) {
+          segments.push({ type: 'text', content: textContent });
+        }
+      }
+      segments.push({ type: match.type, content: match.content });
+      currentIndex = match.end;
+    });
+
+    if (currentIndex < text.length) {
+      const remainingText = text.slice(currentIndex);
+      if (remainingText) {
+        segments.push({ type: 'text', content: remainingText });
+      }
+    }
+
+    if (segments.length === 0) {
+      segments.push({ type: 'text', content: text });
+    }
+
+    return { segments, format: 'reading' };
+  }
 
   /**
    * Legacy compatibility: convert current string content to structured

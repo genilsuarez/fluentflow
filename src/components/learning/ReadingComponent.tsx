@@ -386,7 +386,8 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                     // Supports both single and double quote delimiters
                     const singleQuotePattern = /^Example (\d+):\s*(.+?)\s*-\s*'(.*)$/;
                     const doubleQuotePattern = /^Example (\d+):\s*(.+?)\s*-\s*"(.*)$/;
-                    const match = example.match(singleQuotePattern) || example.match(doubleQuotePattern);
+                    const match =
+                      example.match(singleQuotePattern) || example.match(doubleQuotePattern);
                     // Determine which closing quote to look for
                     const closingQuote = example.match(singleQuotePattern) ? "'" : '"';
 

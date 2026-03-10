@@ -377,7 +377,8 @@ html.dark {
 }
 
 @keyframes devPulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
     transform: scale(1);
   }
@@ -552,7 +553,9 @@ html.dark {
   background: linear-gradient(135deg, rgba(75, 85, 99, 0.6) 0%, rgba(55, 65, 81, 0.4) 100%);
   border: 1px solid var(--header-border);
   backdrop-filter: blur(8px);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .dark .header-redesigned__menu-btn--primary:hover,
@@ -560,12 +563,16 @@ html.dark {
 .dark .header-redesigned__login-btn--primary:hover {
   background: linear-gradient(135deg, rgba(107, 114, 128, 0.7) 0%, rgba(75, 85, 99, 0.5) 100%);
   border-color: #6b7280;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 .dark .header-side-menu {
   background: linear-gradient(180deg, #1f2937 0%, #1a202c 100%);
-  box-shadow: 4px 0 25px rgba(0, 0, 0, 0.5), inset -1px 0 0 rgba(255, 255, 255, 0.05);
+  box-shadow:
+    4px 0 25px rgba(0, 0, 0, 0.5),
+    inset -1px 0 0 rgba(255, 255, 255, 0.05);
 }
 
 .dark .header-side-menu__header {
@@ -580,17 +587,26 @@ html.dark {
 .dark .header-side-menu__item:hover {
   background: linear-gradient(90deg, rgba(75, 85, 99, 0.5) 0%, rgba(107, 114, 128, 0.3) 100%);
   border-color: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .dark .header-side-menu-overlay {
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.7) 100%);
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
   backdrop-filter: blur(8px);
 }
 
 .dark .header-redesigned__logo {
   background: linear-gradient(135deg, #374151 0%, #4b5563 100%);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   padding: 4px;
@@ -598,7 +614,9 @@ html.dark {
 
 .dark .header-redesigned__brand:hover .header-redesigned__logo {
   background: linear-gradient(135deg, #4b5563 0%, #6b7280 100%);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
   border-color: rgba(255, 255, 255, 0.2);
 }
 

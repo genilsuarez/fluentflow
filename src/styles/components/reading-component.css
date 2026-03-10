@@ -467,7 +467,9 @@
 }
 
 /* Hover state - must come after base to override */
-.reading-component__summary-section-trigger:hover .reading-component__summary-section-title .reading-component__summary-section-count {
+.reading-component__summary-section-trigger:hover
+  .reading-component__summary-section-title
+  .reading-component__summary-section-count {
   background: #3b82f6;
   color: #ffffff;
   transform: scale(1.08);
