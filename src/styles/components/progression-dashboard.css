@@ -343,9 +343,9 @@
   gap: 0.1875rem;
   transition: all 0.2s ease;
   position: relative;
-  height: 56px;
-  min-height: 56px;
-  max-height: 56px;
+  height: var(--card-height-mobile);
+  min-height: var(--card-height-mobile);
+  max-height: var(--card-height-mobile);
   overflow: hidden;
 }
 
@@ -511,9 +511,9 @@
   }
 
   .progression-dashboard__module {
-    height: 76px;
-    min-height: 76px;
-    max-height: 76px;
+    height: var(--card-height-desktop);
+    min-height: var(--card-height-desktop);
+    max-height: var(--card-height-desktop);
   }
 }
 
@@ -523,9 +523,9 @@
   }
 
   .progression-dashboard__module {
-    height: 70px;
-    min-height: 70px;
-    max-height: 70px;
+    height: var(--card-height-tablet);
+    min-height: var(--card-height-tablet);
+    max-height: var(--card-height-tablet);
   }
 }
 
@@ -562,9 +562,9 @@
   }
 
   .progression-dashboard__module {
-    height: 60px;
-    min-height: 60px;
-    max-height: 60px;
+    height: var(--card-height-mobile);
+    min-height: var(--card-height-mobile);
+    max-height: var(--card-height-mobile);
   }
 
   .progression-dashboard__unit {
@@ -734,9 +734,9 @@ html.dark .progression-dashboard__unit-stats:hover {
   .progression-dashboard__module {
     padding: 0.2rem;
     margin-bottom: 0.02rem;
-    height: 58px;
-    min-height: 58px;
-    max-height: 58px;
+    height: var(--card-height-mobile);
+    min-height: var(--card-height-mobile);
+    max-height: var(--card-height-mobile);
   }
 
   .progression-dashboard__units::-webkit-scrollbar {
