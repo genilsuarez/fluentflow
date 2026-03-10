@@ -172,7 +172,7 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
       {/* Unified progress header */}
       <LearningProgressHeader
         title={readingData.title}
-        currentIndex={currentSectionIndex}
+        currentIndex={currentSectionIndex + 1}
         totalItems={readingSections.length + 1 + (hasSummaryContent ? 1 : 0)}
         mode="reading"
       />
@@ -382,15 +382,18 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
               {currentSection?.type === 'examples' ? (
                 <div className="reading-component__examples-grid">
                   {currentSection.content.split('\n\n').map((example, index) => {
-                    // Parse example format: "Example N: Title - 'Quote' (optional note)"
-                    // Strategy: Find the last single quote to handle apostrophes like "I'm"
-                    const examplePattern = /^Example (\d+):\s*(.+?)\s*-\s*'(.*)$/;
-                    const match = example.match(examplePattern);
+                    // Parse example format: "Example N: Title - 'Quote'" or 'Example N: Title - "Quote"'
+                    // Supports both single and double quote delimiters
+                    const singleQuotePattern = /^Example (\d+):\s*(.+?)\s*-\s*'(.*)$/;
+                    const doubleQuotePattern = /^Example (\d+):\s*(.+?)\s*-\s*"(.*)$/;
+                    const match = example.match(singleQuotePattern) || example.match(doubleQuotePattern);
+                    // Determine which closing quote to look for
+                    const closingQuote = example.match(singleQuotePattern) ? "'" : '"';
 
                     if (match) {
                       const [, number, title, fullQuote] = match;
-                      // Find the last single quote to separate quote from note
-                      const lastQuoteIndex = fullQuote.lastIndexOf("'");
+                      // Find the last matching quote to separate quote from note
+                      const lastQuoteIndex = fullQuote.lastIndexOf(closingQuote);
 
                       if (lastQuoteIndex !== -1) {
                         const quote = fullQuote.substring(0, lastQuoteIndex);

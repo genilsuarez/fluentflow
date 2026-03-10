@@ -252,13 +252,6 @@
     "example_es": "Necesitamos encontrar una forma de evitar este obstáculo."
   },
   {
-    "front": "Get to grips with",
-    "back": "Dominar / Entender a fondo",
-    "ipa": "/ɡet tuː ɡrɪps wɪð/",
-    "example": "He's trying to get to grips with the new software.",
-    "example_es": "Está intentando dominar el nuevo software."
-  },
-  {
     "front": "Pinpoint",
     "back": "Identificar con precisión",
     "ipa": "/ˈpɪnpɔɪnt/",
@@ -278,5 +271,12 @@
     "ipa": "/kʌm ʌp wɪð/",
     "example": "She came up with a brilliant idea.",
     "example_es": "Se le ocurrió una idea brillante."
+  },
+  {
+    "front": "Weigh up",
+    "back": "Sopesar / Evaluar",
+    "ipa": "/weɪ ʌp/",
+    "example": "We need to weigh up the pros and cons before deciding.",
+    "example_es": "Necesitamos sopesar los pros y los contras antes de decidir."
   }
 ]

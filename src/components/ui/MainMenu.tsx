@@ -36,67 +36,72 @@ export const MainMenu: React.FC = () => {
     setPreviousMenuContext(viewMode);
   }, [viewMode, setPreviousMenuContext]);
 
-  // Auto-scroll to next recommended module after completing a lesson
-  useEffect(() => {
-    if (isLoading || !modules.length) return;
+  // Scroll to next recommended module and highlight it
+  const scrollToNextModule = React.useCallback(
+    (behavior: ScrollBehavior = 'smooth') => {
+      const nextModule = progression.getNextRecommendedModule();
+      console.log('[AutoScroll] scrollToNextModule called', {
+        nextModule: nextModule?.id ?? null,
+        gridRef: !!gridRef.current,
+        dataModuleIds: document.querySelectorAll('[data-module-id]').length,
+      });
+      if (!nextModule || !gridRef.current) return;
 
-    let shouldAutoScroll: string | null = null;
+      setHighlightedModuleId(nextModule.id);
+
+      const scrollTimer = setTimeout(() => {
+        const moduleCard = document.querySelector(`[data-module-id="${nextModule.id}"]`);
+
+        if (moduleCard && gridRef.current) {
+          const gridRect = gridRef.current.getBoundingClientRect();
+          const cardRect = moduleCard.getBoundingClientRect();
+
+          // Calculate scroll position to center the card vertically
+          const scrollTop =
+            gridRef.current.scrollTop +
+            (cardRect.top - gridRect.top) -
+            gridRect.height / 2 +
+            cardRect.height / 2;
+
+          gridRef.current.scrollTo({
+            top: Math.max(0, scrollTop),
+            behavior,
+          });
+        }
+      }, 150);
+
+      const highlightTimer = setTimeout(() => {
+        setHighlightedModuleId(null);
+      }, 2500);
+
+      return () => {
+        clearTimeout(scrollTimer);
+        clearTimeout(highlightTimer);
+      };
+    },
+    [progression]
+  );
+
+  // Auto-scroll to next recommended module when entering All Modules view
+  // This covers both: returning from a completed lesson and switching tabs
+  useEffect(() => {
+    console.log('[AutoScroll] effect check', { viewMode, isLoading, modulesLen: modules.length });
+    if (viewMode !== 'list' || isLoading || !modules.length) return;
+
+    // Clear the post-lesson flag if present (no longer needed as a separate trigger)
     try {
-      shouldAutoScroll = sessionStorage.getItem('autoScrollToNext');
+      sessionStorage.removeItem('autoScrollToNext');
     } catch {
       /* */
     }
-    let scrollTimer: ReturnType<typeof setTimeout> | null = null;
-    let highlightTimer: ReturnType<typeof setTimeout> | null = null;
 
-    if (shouldAutoScroll === 'true' && viewMode === 'list') {
-      // Clear flag immediately to prevent re-triggering
-      try {
-        sessionStorage.removeItem('autoScrollToNext');
-      } catch {
-        /* */
-      }
+    // Wait for the grid to mount and cards to render before scrolling
+    const timerId = setTimeout(() => {
+      scrollToNextModule('smooth');
+    }, 200);
 
-      const nextModule = progression.getNextRecommendedModule();
-
-      if (nextModule && gridRef.current) {
-        // Highlight the next module
-        setHighlightedModuleId(nextModule.id);
-
-        // Delay to ensure DOM is fully rendered
-        scrollTimer = setTimeout(() => {
-          const moduleCard = document.querySelector(`[data-module-id="${nextModule.id}"]`);
-
-          if (moduleCard && gridRef.current) {
-            const gridRect = gridRef.current.getBoundingClientRect();
-            const cardRect = moduleCard.getBoundingClientRect();
-
-            // Calculate scroll position to center the card vertically
-            const scrollTop =
-              gridRef.current.scrollTop +
-              (cardRect.top - gridRect.top) -
-              gridRect.height / 2 +
-              cardRect.height / 2;
-
-            gridRef.current.scrollTo({
-              top: Math.max(0, scrollTop),
-              behavior: 'smooth',
-            });
-          }
-        }, 150);
-
-        // Remove highlight after animation completes
-        highlightTimer = setTimeout(() => {
-          setHighlightedModuleId(null);
-        }, 2500);
-      }
-    }
-
-    return () => {
-      if (scrollTimer) clearTimeout(scrollTimer);
-      if (highlightTimer) clearTimeout(highlightTimer);
-    };
-  }, [isLoading, modules.length, viewMode, progression]);
+    return () => clearTimeout(timerId);
+  }, [viewMode, isLoading, modules.length, scrollToNextModule]);
 
   // Show welcome toast when modules are loaded (only once per session)
   useEffect(() => {
@@ -288,7 +293,6 @@ export const MainMenu: React.FC = () => {
                 role="gridcell"
                 aria-posinset={index + 1}
                 aria-setsize={modules.length}
-                data-module-id={module.id}
                 isNextRecommended={highlightedModuleId === module.id}
               />
             ))}

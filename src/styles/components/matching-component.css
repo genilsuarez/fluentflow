@@ -81,6 +81,13 @@
 .matching-component__grid {
   margin-bottom: 0.625rem;
 }
+
+.matching-component__columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
 @media (max-width: 768px) {
   .matching-component__columns {
     grid-template-columns: 1fr;

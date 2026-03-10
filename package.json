@@ -25,8 +25,7 @@
     "analyze:deep:da": "node scripts/validation/deep-analysis.js --da",
     "analyze:deep:db": "node scripts/validation/deep-analysis.js --db",
     "analyze:deep:dc": "node scripts/validation/deep-analysis.js --dc",
-    "audit:header": "node scripts/validation/audit-header-alignment.js",
-    "audit:inherited": "node scripts/validation/audit-inherited-rules.js",
+
     "security:audit": "npm audit --audit-level=high --omit=dev",
     "security:scan": "node scripts/build/security-patterns.js",
     "pipeline": "node scripts/development/dev-tools.js interactive",

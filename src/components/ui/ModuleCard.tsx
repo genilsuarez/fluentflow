@@ -142,6 +142,7 @@ export const ModuleCard: React.FC<ModuleCardProps> = ({
 
   return (
     <button
+      data-module-id={module.id}
       className={`module-card module-card--${module.learningMode} ${statusInfo.className} ${isNextRecommended ? 'module-card--next-recommended' : ''}`}
       onClick={handleClick}
       onKeyDown={handleKeyDown}

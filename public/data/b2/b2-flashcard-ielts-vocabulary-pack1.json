@@ -56,14 +56,6 @@
     "category": "General"
   },
   {
-    "front": "Factor",
-    "back": "Factor",
-    "ipa": "/ˈfæktər/",
-    "example": "Cost is a major factor in our decision.",
-    "example_es": "El costo es un factor importante en nuestra decisión.",
-    "category": "General"
-  },
-  {
     "front": "Function",
     "back": "Función",
     "ipa": "/ˈfʌŋkʃn/",
@@ -112,14 +104,6 @@
     "category": "General"
   },
   {
-    "front": "Sector",
-    "back": "Sector",
-    "ipa": "/ˈsektər/",
-    "example": "The technology sector is growing rapidly.",
-    "example_es": "El sector tecnológico está creciendo rápidamente.",
-    "category": "General"
-  },
-  {
     "front": "Source",
     "back": "Fuente",
     "ipa": "/sɔːrs/",
@@ -141,14 +125,6 @@
     "ipa": "/ˈθɪəri/",
     "example": "This is just a theory, it hasn't been proven.",
     "example_es": "Esto es solo una teoría, no ha sido probada.",
-    "category": "General"
-  },
-  {
-    "front": "Variable",
-    "back": "Variable",
-    "ipa": "/ˈveəriəbl/",
-    "example": "There are too many variables to consider.",
-    "example_es": "Hay demasiadas variables a considerar.",
     "category": "General"
   },
   {
@@ -280,14 +256,6 @@
     "category": "General"
   },
   {
-    "front": "Assume",
-    "back": "Asumir",
-    "ipa": "/əˈsuːm/",
-    "example": "Don't assume anything.",
-    "example_es": "No asumas nada.",
-    "category": "General"
-  },
-  {
     "front": "Authority",
     "back": "Autoridad",
     "ipa": "/əˈθɔːrəti/",
@@ -368,14 +336,6 @@
     "category": "Technology"
   },
   {
-    "front": "Digital",
-    "back": "Digital",
-    "ipa": "/ˈdɪdʒɪtl/",
-    "example": "We are living in a digital age.",
-    "example_es": "Vivimos en una era digital.",
-    "category": "Technology"
-  },
-  {
     "front": "Device",
     "back": "Dispositivo",
     "ipa": "/dɪˈvaɪs/",
@@ -397,22 +357,6 @@
     "ipa": "/ˈnetwɜːrk/",
     "example": "The office network was down for an hour.",
     "example_es": "La red de la oficina estuvo caída durante una hora.",
-    "category": "Technology"
-  },
-  {
-    "front": "Software",
-    "back": "Software",
-    "ipa": "/ˈsɒftweər/",
-    "example": "You need to install the new software to use this feature.",
-    "example_es": "Necesitas instalar el nuevo software para usar esta función.",
-    "category": "Technology"
-  },
-  {
-    "front": "Hardware",
-    "back": "Hardware",
-    "ipa": "/ˈhɑːrdweər/",
-    "example": "The computer's hardware was damaged.",
-    "example_es": "El hardware de la computadora estaba dañado.",
     "category": "Technology"
   },
   {
@@ -544,27 +488,11 @@
     "category": "Technology"
   },
   {
-    "front": "Firmware",
-    "back": "Firmware",
-    "ipa": "/ˈfɜːrmweər/",
-    "example": "You might need to update the device's firmware.",
-    "example_es": "Es posible que necesites actualizar el firmware del dispositivo.",
-    "category": "Technology"
-  },
-  {
     "front": "Geolocation",
     "back": "Geolocalización",
     "ipa": "/ˌdʒiːoʊloʊˈkeɪʃn/",
     "example": "Geolocation services are used in many mobile apps.",
     "example_es": "Los servicios de geolocalización se utilizan en muchas aplicaciones móviles.",
-    "category": "Technology"
-  },
-  {
-    "front": "Hacking",
-    "back": "Hacking",
-    "ipa": "/ˈhækɪŋ/",
-    "example": "The company was a victim of a major hacking attack.",
-    "example_es": "La empresa fue víctima de un importante ataque de hacking.",
     "category": "Technology"
   },
   {
@@ -920,14 +848,6 @@
     "category": "Clothing"
   },
   {
-    "front": "Dress down",
-    "back": "Vestir informal",
-    "ipa": "/dres daʊn/",
-    "example": "It's a casual office, so you can dress down.",
-    "example_es": "Es una oficina informal, así que puedes vestir informal.",
-    "category": "Clothing"
-  },
-  {
     "front": "Fling on",
     "back": "Ponerse rápidamente",
     "ipa": "/flɪŋ ɒn/",
@@ -957,6 +877,86 @@
     "ipa": "/teɪk ɒf weɪt/",
     "example": "She's trying to take off weight for her wedding.",
     "example_es": "Está intentando adelgazar para su boda.",
+    "category": "Clothing"
+  },
+  {
+    "front": "Sustainable",
+    "back": "Sostenible",
+    "ipa": "/səˈsteɪnəbl/",
+    "example": "We need to find sustainable solutions for the future.",
+    "example_es": "Necesitamos encontrar soluciones sostenibles para el futuro.",
+    "category": "General"
+  },
+  {
+    "front": "Comprehensive",
+    "back": "Exhaustivo / Completo",
+    "ipa": "/ˌkɒmprɪˈhensɪv/",
+    "example": "The report provides a comprehensive analysis of the market.",
+    "example_es": "El informe proporciona un análisis exhaustivo del mercado.",
+    "category": "General"
+  },
+  {
+    "front": "Feasible",
+    "back": "Factible / Viable",
+    "ipa": "/ˈfiːzəbl/",
+    "example": "Is this plan feasible within our budget?",
+    "example_es": "¿Es factible este plan dentro de nuestro presupuesto?",
+    "category": "General"
+  },
+  {
+    "front": "Substantial",
+    "back": "Sustancial / Considerable",
+    "ipa": "/səbˈstænʃl/",
+    "example": "There has been a substantial increase in sales.",
+    "example_es": "Ha habido un aumento sustancial en las ventas.",
+    "category": "General"
+  },
+  {
+    "front": "Preliminary",
+    "back": "Preliminar",
+    "ipa": "/prɪˈlɪmɪnəri/",
+    "example": "The preliminary results are very promising.",
+    "example_es": "Los resultados preliminares son muy prometedores.",
+    "category": "General"
+  },
+  {
+    "front": "Subsequent",
+    "back": "Posterior / Subsiguiente",
+    "ipa": "/ˈsʌbsɪkwənt/",
+    "example": "Subsequent studies confirmed the initial findings.",
+    "example_es": "Estudios posteriores confirmaron los hallazgos iniciales.",
+    "category": "General"
+  },
+  {
+    "front": "Prevalent",
+    "back": "Predominante / Frecuente",
+    "ipa": "/ˈprevələnt/",
+    "example": "Cyberbullying is becoming increasingly prevalent.",
+    "example_es": "El ciberacoso se está volviendo cada vez más frecuente.",
+    "category": "General"
+  },
+  {
+    "front": "Scrutinize",
+    "back": "Examinar minuciosamente",
+    "ipa": "/ˈskruːtənaɪz/",
+    "example": "The auditors will scrutinize every transaction.",
+    "example_es": "Los auditores examinarán minuciosamente cada transacción.",
+    "category": "General"
+  },
+  {
+    "front": "Bandwidth",
+    "back": "Ancho de banda",
+    "ipa": "/ˈbændwɪdθ/",
+    "example": "Streaming video requires a lot of bandwidth.",
+    "example_es": "La transmisión de video requiere mucho ancho de banda.",
+    "category": "Technology"
+  },
+  {
+    "front": "Tailor",
+    "back": "Adaptar / Personalizar",
+    "ipa": "/ˈteɪlər/",
+    "example": "We can tailor the program to meet your specific needs.",
+    "example_es": "Podemos adaptar el programa para satisfacer tus necesidades específicas.",
     "category": "Clothing"
   }
 ]

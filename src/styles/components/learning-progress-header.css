@@ -96,6 +96,14 @@
   background-color: var(--theme-primary-purple, #8b5cf6);
 }
 
+.learning-progress-header__progress-fill--reading {
+  background: linear-gradient(
+    90deg,
+    var(--theme-primary-blue, #3b82f6) 0%,
+    var(--theme-primary-purple, #8b5cf6) 100%
+  );
+}
+
 .learning-progress-header__help-text {
   font-size: 0.75rem;
   color: var(--theme-text-tertiary, #9ca3af);

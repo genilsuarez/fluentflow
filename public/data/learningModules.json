@@ -695,6 +695,23 @@
     "difficulty": 4
   },
   {
+    "id": "quiz-upper-intermediate-review-b2",
+    "name": "Upper-Intermediate Review",
+    "learningMode": "quiz",
+    "dataPath": "data/b2/b2-quiz-upper-intermediate-review.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Review",
+    "unit": 4,
+    "prerequisites": [
+      "sorting-connector-words-b2"
+    ],
+    "description": "Comprehensive review of B2 level concepts: used to, phrasal verbs, connectors, and professional vocabulary",
+    "estimatedTime": 10,
+    "difficulty": 4
+  },
+  {
     "id": "reading-academic-c1",
     "name": "Academic Research",
     "learningMode": "reading",
@@ -705,7 +722,7 @@
     "category": "Reading",
     "unit": 5,
     "prerequisites": [
-      "sorting-connector-words-b2"
+      "quiz-upper-intermediate-review-b2"
     ],
     "description": "Academic research and scholarly communication",
     "estimatedTime": 18,
@@ -780,7 +797,7 @@
     "difficulty": 5
   },
   {
-    "id": "flashcard-ielts-problem-solving",
+    "id": "flashcard-ielts-problem-solving-c1",
     "name": "Problem Solving",
     "learningMode": "flashcard",
     "dataPath": "data/c1/c1-flashcard-ielts-problem-solving.json",
@@ -797,7 +814,7 @@
     "difficulty": 5
   },
   {
-    "id": "quiz-advanced-grammar-conditionals",
+    "id": "quiz-advanced-grammar-conditionals-c1",
     "name": "Conditionals",
     "learningMode": "completion",
     "dataPath": "data/c1/c1-quiz-advanced-grammar-conditionals.json",
@@ -807,14 +824,14 @@
     "category": "Grammar",
     "unit": 5,
     "prerequisites": [
-      "flashcard-ielts-problem-solving"
+      "flashcard-ielts-problem-solving-c1"
     ],
     "description": "Advanced conditional structures",
     "estimatedTime": 5,
     "difficulty": 5
   },
   {
-    "id": "quiz-advanced-grammar-inversions",
+    "id": "quiz-advanced-grammar-inversions-c1",
     "name": "Grammar Inversions",
     "learningMode": "completion",
     "dataPath": "data/c1/c1-quiz-advanced-grammar-inversions.json",
@@ -824,14 +841,14 @@
     "category": "Grammar",
     "unit": 5,
     "prerequisites": [
-      "quiz-advanced-grammar-conditionals"
+      "quiz-advanced-grammar-conditionals-c1"
     ],
     "description": "Advanced grammatical inversions",
     "estimatedTime": 5,
     "difficulty": 5
   },
   {
-    "id": "quiz-advanced-grammar-participles",
+    "id": "quiz-advanced-grammar-participles-c1",
     "name": "Participles",
     "learningMode": "completion",
     "dataPath": "data/c1/c1-quiz-advanced-grammar-participles.json",
@@ -841,14 +858,14 @@
     "category": "Grammar",
     "unit": 5,
     "prerequisites": [
-      "quiz-advanced-grammar-inversions"
+      "quiz-advanced-grammar-inversions-c1"
     ],
     "description": "Advanced participle constructions",
     "estimatedTime": 5,
     "difficulty": 5
   },
   {
-    "id": "quiz-advanced-grammar-subjunctive",
+    "id": "quiz-advanced-grammar-subjunctive-c1",
     "name": "Subjunctive",
     "learningMode": "completion",
     "dataPath": "data/c1/c1-quiz-advanced-grammar-subjunctive.json",
@@ -858,7 +875,7 @@
     "category": "Grammar",
     "unit": 5,
     "prerequisites": [
-      "quiz-advanced-grammar-participles"
+      "quiz-advanced-grammar-participles-c1"
     ],
     "description": "Subjunctive mood and usage",
     "estimatedTime": 5,
@@ -875,7 +892,7 @@
     "category": "Vocabulary",
     "unit": 5,
     "prerequisites": [
-      "quiz-advanced-grammar-subjunctive"
+      "quiz-advanced-grammar-subjunctive-c1"
     ],
     "description": "Advanced vocabulary matching",
     "estimatedTime": 5,
