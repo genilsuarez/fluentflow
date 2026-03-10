@@ -172,13 +172,7 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
       {/* Unified progress header */}
       <LearningProgressHeader
         title={readingData.title}
-        currentIndex={
-          isObjectivesPage
-            ? 0
-            : isSummaryPage
-              ? readingSections.length + 1
-              : currentSectionIndex + 1
-        }
+        currentIndex={currentSectionIndex + 1}
         totalItems={readingSections.length + 1 + (hasSummaryContent ? 1 : 0)}
         mode="reading"
       />
