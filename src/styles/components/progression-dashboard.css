@@ -13,7 +13,7 @@
 .progression-dashboard__hero {
   background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #2563eb 100%);
   border-radius: 0.75rem;
-  padding: 0.0625rem;
+  padding: 0; /* Reduced from 0.0625rem to 0 for 1px less height */
   margin-bottom: 0.1875rem;
   color: white;
   box-shadow:
