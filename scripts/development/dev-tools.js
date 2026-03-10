@@ -94,6 +94,7 @@ const workflows = {
     description: 'Quality + Security + Build + Deploy',
     steps: [
       { type: 'command', cmd: 'node scripts/git/smart-commit.js --stage-all --auto --allow-empty', desc: 'Pre-build commit (clean working directory)' },
+      { type: 'command', cmd: 'git pull --rebase', desc: 'Sync with remote' },
       { type: 'pipeline', target: 'quality' },
       { type: 'pipeline', target: 'security' },
       { type: 'pipeline', target: 'build' },

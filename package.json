@@ -6,7 +6,7 @@
     "dev": "vite --mode development --config config/vite.config.ts",
     "build": "tsc --project config/tsconfig.json && vite build --mode production --config config/vite.config.ts",
     "build:analyze": "npm run build && npx vite-bundle-analyzer",
-    "build:full": "git pull --rebase && node scripts/development/dev-tools.js full",
+    "build:full": "node scripts/development/dev-tools.js full",
     "preview": "vite preview --config config/vite.config.ts",
     "preview:github": "node scripts/development/simulate-github-pages.js",
     "test": "vitest run --config config/vitest.config.ts --reporter=verbose --silent",
