@@ -17,12 +17,12 @@ export const DefaultErrorFallback: React.FC<ErrorFallbackProps> = ({ error, retr
       <div className="error-fallback__card">
         <div className="error-fallback__icon">⚠️</div>
         <h2 className="error-fallback__title">{t('errors.somethingWentWrong')}</h2>
-        <p className="error-fallback__message">
-          {t('errors.unexpectedError')}
-        </p>
+        <p className="error-fallback__message">{t('errors.unexpectedError')}</p>
         {import.meta.env.DEV && error && (
           <details className="error-fallback__details">
-            <summary className="error-fallback__details-summary">{t('errors.errorDetails')}</summary>
+            <summary className="error-fallback__details-summary">
+              {t('errors.errorDetails')}
+            </summary>
             <pre className="error-fallback__details-content">
               {error.message}
               {error.stack}
@@ -30,7 +30,10 @@ export const DefaultErrorFallback: React.FC<ErrorFallbackProps> = ({ error, retr
           </details>
         )}
         <div className="error-fallback__actions">
-          <button onClick={retry} className="error-fallback__button error-fallback__button--primary">
+          <button
+            onClick={retry}
+            className="error-fallback__button error-fallback__button--primary"
+          >
             {t('errors.tryAgain')}
           </button>
           <button

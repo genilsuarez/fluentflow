@@ -337,7 +337,7 @@ const translations = {
     },
     errors: {
       somethingWentWrong: 'Something went wrong',
-      unexpectedError: 'We\'re sorry, but something unexpected happened. Please try again.',
+      unexpectedError: "We're sorry, but something unexpected happened. Please try again.",
       errorDetails: 'Error Details',
       tryAgain: 'Try Again',
       goToHome: 'Go to Home',
@@ -875,5 +875,3 @@ export const useTranslation = (language: Language) => {
     },
   };
 };
-
-

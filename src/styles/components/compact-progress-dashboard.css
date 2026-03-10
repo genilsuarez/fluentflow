@@ -446,8 +446,6 @@
     font-size: 0.5rem; /* Ultra-compact day values */
   }
 
-  
-
   /* AGGRESSIVE COMPACTION for progress elements */
   .compact-dashboard__progress-bar {
     height: 2.5rem; /* Slightly smaller progress bars */

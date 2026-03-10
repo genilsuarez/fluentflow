@@ -2,7 +2,8 @@
 .app-router {
   min-height: calc(100dvh - 64px);
   height: 100%;
-}.app-router__loader::before {
+}
+.app-router__loader::before {
   content: '';
   position: absolute;
   top: 0;
@@ -41,7 +42,8 @@
   border-radius: var(--radius-lg, 0.5rem);
   padding: 2rem;
   box-shadow: 0 4px 12px rgba(239, 68, 68, 0.1);
-}.app-router__error-actions {
+}
+.app-router__error-actions {
   display: flex;
   gap: 1rem;
   justify-content: center;

@@ -19,7 +19,8 @@
   );
   border: 1px solid var(--theme-border-modal, rgba(0, 0, 0, 0.1));
   border-radius: var(--radius-lg, 0.5rem);
-}@media (min-width: 640px) {
+}
+@media (min-width: 640px) {
   .completion-component__container {
     padding: 0.75rem;
   }
@@ -382,7 +383,8 @@ html.dark .completion-component__explanation-label {
     font-size: 1.1rem;
     padding: 0.75rem 0.5rem;
   }
-}html.dark .completion-component__exercise-card {
+}
+html.dark .completion-component__exercise-card {
   background-color: var(--theme-bg-elevated, #1f2937);
   border-color: var(--theme-border-soft, #4b5563);
 }

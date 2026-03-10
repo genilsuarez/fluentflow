@@ -41,13 +41,21 @@ export const MainMenu: React.FC = () => {
     if (isLoading || !modules.length) return;
 
     let shouldAutoScroll: string | null = null;
-    try { shouldAutoScroll = sessionStorage.getItem('autoScrollToNext'); } catch { /* */ }
+    try {
+      shouldAutoScroll = sessionStorage.getItem('autoScrollToNext');
+    } catch {
+      /* */
+    }
     let scrollTimer: ReturnType<typeof setTimeout> | null = null;
     let highlightTimer: ReturnType<typeof setTimeout> | null = null;
 
     if (shouldAutoScroll === 'true' && viewMode === 'list') {
       // Clear flag immediately to prevent re-triggering
-      try { sessionStorage.removeItem('autoScrollToNext'); } catch { /* */ }
+      try {
+        sessionStorage.removeItem('autoScrollToNext');
+      } catch {
+        /* */
+      }
 
       const nextModule = progression.getNextRecommendedModule();
 
@@ -122,7 +130,11 @@ export const MainMenu: React.FC = () => {
     // Save scroll position before changing view
     const gridElement = document.querySelector('.main-menu__grid');
     if (gridElement) {
-      try { sessionStorage.setItem('menuGridScrollPosition', gridElement.scrollTop.toString()); } catch { /* */ }
+      try {
+        sessionStorage.setItem('menuGridScrollPosition', gridElement.scrollTop.toString());
+      } catch {
+        /* */
+      }
     }
 
     // Reset auto-scroll flag when user manually selects a module
@@ -154,7 +166,12 @@ export const MainMenu: React.FC = () => {
     return (
       <div className="main-menu">
         <div className="main-menu__search">
-          <SearchBar query="" onQueryChange={() => {}} placeholder={t('common.searchPlaceholder')} disabled={true} />
+          <SearchBar
+            query=""
+            onQueryChange={() => {}}
+            placeholder={t('common.searchPlaceholder')}
+            disabled={true}
+          />
         </div>
         <ModuleGridSkeleton />
       </div>
@@ -186,7 +203,11 @@ export const MainMenu: React.FC = () => {
       {/* Header with view toggle */}
       <div className="main-menu__header">
         <div className="main-menu__search">
-          <SearchBar query={query} onQueryChange={setQuery} placeholder={t('common.searchPlaceholder')} />
+          <SearchBar
+            query={query}
+            onQueryChange={setQuery}
+            placeholder={t('common.searchPlaceholder')}
+          />
         </div>
 
         <div className="main-menu__view-toggle">

@@ -201,26 +201,24 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                 <p className="progression-dashboard__next-desc progression-dashboard__next-desc--compact">
                   {nextRecommended.description}
                 </p>
-                <div
-                  className="progression-dashboard__next-meta progression-dashboard__next-meta--compact"
-                >
+                <div className="progression-dashboard__next-meta progression-dashboard__next-meta--compact">
                   <span
                     className="progression-dashboard__level-badge"
-                    style={{
-                      '--level-color': getLevelColor(
-                        Array.isArray(nextRecommended.level)
-                          ? nextRecommended.level[0]
-                          : nextRecommended.level
-                      ),
-                    } as React.CSSProperties}
+                    style={
+                      {
+                        '--level-color': getLevelColor(
+                          Array.isArray(nextRecommended.level)
+                            ? nextRecommended.level[0]
+                            : nextRecommended.level
+                        ),
+                      } as React.CSSProperties
+                    }
                   >
                     {Array.isArray(nextRecommended.level)
                       ? nextRecommended.level[0].toUpperCase()
                       : nextRecommended.level.toUpperCase()}
                   </span>
-                  <span
-                    className="progression-dashboard__time progression-dashboard__time--compact"
-                  >
+                  <span className="progression-dashboard__time progression-dashboard__time--compact">
                     ~{nextRecommended.estimatedTime}min
                   </span>
                 </div>
@@ -280,7 +278,9 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                     <div className="progression-dashboard__progress-bar">
                       <div
                         className="progression-dashboard__progress-fill"
-                        style={{ '--progress-width': `${unitStatus.percentage}%` } as React.CSSProperties}
+                        style={
+                          { '--progress-width': `${unitStatus.percentage}%` } as React.CSSProperties
+                        }
                       />
                     </div>
                   </div>
@@ -317,11 +317,13 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                             <div className="progression-dashboard__module-meta">
                               <span
                                 className="progression-dashboard__level-badge"
-                                style={{
-                                  '--level-color': getLevelColor(
-                                    Array.isArray(module.level) ? module.level[0] : module.level
-                                  ),
-                                } as React.CSSProperties}
+                                style={
+                                  {
+                                    '--level-color': getLevelColor(
+                                      Array.isArray(module.level) ? module.level[0] : module.level
+                                    ),
+                                  } as React.CSSProperties
+                                }
                               >
                                 {Array.isArray(module.level)
                                   ? module.level[0].toUpperCase()

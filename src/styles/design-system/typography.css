@@ -14,7 +14,6 @@
 
 /* === TYPOGRAPHY DESIGN TOKENS === */
 :root {
-
   /* === FONT SIZES - MODULAR SCALE === */
   /* FONT_SCALE - Harmonious scale based on 1rem base */
   /* Minimum 12px (0.75rem) for accessibility compliance */
@@ -194,6 +193,4 @@ html.dark {
 
   --shadow-button-default: 0 2px 4px rgba(0, 0, 0, 0.4);
   --shadow-button-hover: 0 4px 12px rgba(0, 0, 0, 0.5);
-
 }
-

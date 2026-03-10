@@ -246,12 +246,6 @@ cua
   .flashcard-component__back-answer {
     font-size: 1.25rem;
   }
-
-  
-
-  
-
-  
 }
 
 /* === CRITICAL: Mobile ≤400px - Translation Visibility Fix === */
@@ -326,8 +320,8 @@ cua
   }
 
   /* Ensure controls don't interfere with card content */
-  
-}html.dark .flashcard-component__card-front,
+}
+html.dark .flashcard-component__card-front,
 html.dark .flashcard-component__card-back {
   background: linear-gradient(
     135deg,
@@ -360,8 +354,6 @@ html.dark .flashcard-component__back-answer {
   .flashcard-component__card:hover {
     transform: none;
   }
-
-  
 }
 
 @media (prefers-contrast: high) {

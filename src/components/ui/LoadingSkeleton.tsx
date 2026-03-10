@@ -65,5 +65,3 @@ export const ModuleGridSkeleton: React.FC = () => (
     </div>
   </div>
 );
-
-

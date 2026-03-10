@@ -76,8 +76,6 @@
     height: 1.125rem;
   }
 
-  
-
   /* Ensure primary button text is readable on mobile */
   .game-controls__primary-btn {
     font-weight: 700;
@@ -329,8 +327,6 @@
     padding: 0.5rem 0.75rem;
   }
 
-  
-
   .game-controls__nav-btn {
     width: 2rem;
     height: 2rem;
@@ -363,8 +359,6 @@
     height: 2.5rem;
     /* Increased from 2rem for better touch */
   }
-
-  
 
   .game-controls__nav-btn {
     width: 2.5rem;
@@ -403,8 +397,6 @@
     height: 2.75rem;
     /* Increased for better mobile touch */
   }
-
-  
 
   .game-controls__nav-btn {
     width: 2.75rem;
@@ -447,8 +439,6 @@
     text-align: center;
     /* Center text within fixed width */
   }
-
-  
 
   .game-controls__nav-btn {
     width: 2.5rem;

@@ -252,9 +252,7 @@ export const CompactProfile: React.FC<CompactProfileProps> = ({ isOpen, onClose 
             <div className="compact-profile__section">
               <h3 className="compact-profile__section-title">
                 🎯 {t('profile.interestedCategories')}{' '}
-                <span className="compact-profile__required-mark">
-                  *
-                </span>
+                <span className="compact-profile__required-mark">*</span>
               </h3>
               <div className="compact-profile__categories">
                 {categories.map(category => (

@@ -293,7 +293,6 @@ export const toast = {
   },
 };
 
-
 // Make debug functions available globally for testing
 if (typeof window !== 'undefined') {
   (window as any).toastDebug = {

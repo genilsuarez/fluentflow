@@ -508,9 +508,7 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
                         )}
 
                         {result.explanation && (
-                          <span
-                            className="matching-modal__result-card__explanation"
-                          >
+                          <span className="matching-modal__result-card__explanation">
                             {result.explanation}
                           </span>
                         )}

@@ -33,11 +33,15 @@ const applySafariMobileClass = (): void => {
   const isSafariMobile = detectSafariMobile();
 
   // Debug logging
-  logDebug('Safari Mobile Detection', {
-    userAgent: navigator.userAgent,
-    isSafariMobile,
-    classList: document.documentElement.classList.toString(),
-  }, 'safariDetection');
+  logDebug(
+    'Safari Mobile Detection',
+    {
+      userAgent: navigator.userAgent,
+      isSafariMobile,
+      classList: document.documentElement.classList.toString(),
+    },
+    'safariDetection'
+  );
 
   if (isSafariMobile) {
     document.documentElement.classList.add('browser-safari-mobile');

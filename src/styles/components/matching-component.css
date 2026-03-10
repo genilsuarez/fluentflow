@@ -80,13 +80,15 @@
 /* === MATCHING GRID === */
 .matching-component__grid {
   margin-bottom: 0.625rem;
-}@media (max-width: 768px) {
+}
+@media (max-width: 768px) {
   .matching-component__columns {
     grid-template-columns: 1fr;
     gap: 2rem;
     padding: 12px;
   }
-}.matching-component__column-header {
+}
+.matching-component__column-header {
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--theme-text-primary, #111827);
@@ -96,7 +98,7 @@
   background-color: var(--theme-bg-subtle, #f9fafb);
   border: 1px solid var(--theme-border-subtle, #e5e7eb);
   border-radius: 0.75rem;
-}/* HOVER STATE - Enhanced for non-selected cards (NO LAYOUT SHIFT) */
+} /* HOVER STATE - Enhanced for non-selected cards (NO LAYOUT SHIFT) */
 .matching-component__item:hover:not(.matching-component__item--selected):not(
     .matching-component__item--matched
   ):not(.matching-component__item--correct):not(.matching-component__item--incorrect):not(
@@ -584,7 +586,8 @@ button.matching-component__item.matching-component__item--incorrect .matching-co
 .dark .matching-component__column-header {
   background-color: var(--gray-800, #1f2937);
   color: var(--gray-200, #e5e7eb);
-}.dark .matching-component__item-letter {
+}
+.dark .matching-component__item-letter {
   background-color: #475569;
   color: #f1f5f9;
   transition: var(--transition-interactive);
@@ -602,7 +605,7 @@ button.matching-component__item.matching-component__item--incorrect .matching-co
   border-color: #0ea5e9;
   box-shadow: var(--shadow-card-hover);
   transition: var(--transition-interactive);
-}/* Dark mode - Maximum specificity for selected text */
+} /* Dark mode - Maximum specificity for selected text */
 .dark
   button.matching-component__item.matching-component__item--selected
   .matching-component__item-text,
@@ -611,7 +614,8 @@ button.matching-component__item.matching-component__item--incorrect .matching-co
   .matching-component__item-text,
 .dark .matching-component__item--selected .matching-component__item-text {
   color: white;
-}.dark .matching-component__item--matched .matching-component__item-letter {
+}
+.dark .matching-component__item--matched .matching-component__item-letter {
   background-color: #0ea5e9;
   color: #ffffff;
 }
@@ -625,7 +629,8 @@ button.matching-component__item.matching-component__item--incorrect .matching-co
   .matching-component__item-text,
 .dark .matching-component__item--matched .matching-component__item-text {
   color: var(--gray-200, #e5e7eb);
-}.dark .matching-component__item--correct .matching-component__item-letter {
+}
+.dark .matching-component__item--correct .matching-component__item-letter {
   background-color: rgba(255, 255, 255, 0.3) !important;
   color: #ffffff !important;
   font-weight: 800 !important;
@@ -642,7 +647,8 @@ button.matching-component__item.matching-component__item--incorrect .matching-co
   .matching-component__item-text,
 .dark .matching-component__item--correct .matching-component__item-text {
   color: white;
-}.dark .matching-component__item--incorrect .matching-component__item-letter {
+}
+.dark .matching-component__item--incorrect .matching-component__item-letter {
   background-color: rgba(255, 255, 255, 0.3) !important;
   color: #ffffff !important;
   font-weight: 800 !important;
@@ -681,8 +687,6 @@ button.matching-component__item.matching-component__item--incorrect .matching-co
   .matching-component__item-text {
     font-size: 1rem;
   }
-
-  
 }
 
 /* === COLUMN SPACING - Compact Design === */
@@ -977,7 +981,7 @@ html.dark .matching-component__item .matching-component__item-text {
 html.dark .matching-component__item .matching-component__item-letter {
   background: #475569 !important;
   color: #f1f5f9 !important;
-}/*
+} /*
  Override selected letter with high contrast */
 .dark .matching-component__item--selected .matching-component__item-letter {
   background: #ffffff !important;

@@ -83,4 +83,3 @@ export const THEME_SELECTORS = {
 } as const;
 
 export type ThemeMode = 'light' | 'dark';
-

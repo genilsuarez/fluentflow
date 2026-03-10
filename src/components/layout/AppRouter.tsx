@@ -26,9 +26,7 @@ const FlashcardComponent = lazy(() =>
       default: module.default,
     }))
     .catch(() => ({
-      default: () => (
-        <div className="app-router__error-fallback">{getErrorMsg()}</div>
-      ),
+      default: () => <div className="app-router__error-fallback">{getErrorMsg()}</div>,
     }))
 );
 
@@ -38,9 +36,7 @@ const QuizComponent = lazy(() =>
       default: module.default,
     }))
     .catch(() => ({
-      default: () => (
-        <div className="app-router__error-fallback">{getErrorMsg()}</div>
-      ),
+      default: () => <div className="app-router__error-fallback">{getErrorMsg()}</div>,
     }))
 );
 
@@ -50,9 +46,7 @@ const CompletionComponent = lazy(() =>
       default: module.default,
     }))
     .catch(() => ({
-      default: () => (
-        <div className="app-router__error-fallback">{getErrorMsg()}</div>
-      ),
+      default: () => <div className="app-router__error-fallback">{getErrorMsg()}</div>,
     }))
 );
 
@@ -62,9 +56,7 @@ const SortingComponent = lazy(() =>
       default: module.default,
     }))
     .catch(() => ({
-      default: () => (
-        <div className="app-router__error-fallback">{getErrorMsg()}</div>
-      ),
+      default: () => <div className="app-router__error-fallback">{getErrorMsg()}</div>,
     }))
 );
 
@@ -74,9 +66,7 @@ const MatchingComponent = lazy(() =>
       default: module.default,
     }))
     .catch(() => ({
-      default: () => (
-        <div className="app-router__error-fallback">{getErrorMsg()}</div>
-      ),
+      default: () => <div className="app-router__error-fallback">{getErrorMsg()}</div>,
     }))
 );
 
@@ -86,9 +76,7 @@ const ReadingComponent = lazy(() =>
       default: module.default,
     }))
     .catch(() => ({
-      default: () => (
-        <div className="app-router__error-fallback">{getErrorMsg()}</div>
-      ),
+      default: () => <div className="app-router__error-fallback">{getErrorMsg()}</div>,
     }))
 );
 
@@ -112,10 +100,15 @@ const ModuleError: React.FC<{ error: Error; moduleId: string; onRetry: () => voi
     <div className="app-router__error">
       <div className="app-router__error-container">
         <div className="app-router__error-icon">⚠️</div>
-        <h3 className="app-router__error-title">{t('errors.failedToLoadModule')}: {moduleId}</h3>
+        <h3 className="app-router__error-title">
+          {t('errors.failedToLoadModule')}: {moduleId}
+        </h3>
         <p className="app-router__error-message">{error.message}</p>
         <div className="app-router__error-actions">
-          <button onClick={onRetry} className="app-router__error-btn app-router__error-btn--primary">
+          <button
+            onClick={onRetry}
+            className="app-router__error-btn app-router__error-btn--primary"
+          >
             {t('errors.tryAgain')}
           </button>
           <button

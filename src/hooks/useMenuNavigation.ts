@@ -10,7 +10,11 @@ export const useMenuNavigation = () => {
   const returnToMenu = (options?: { autoScrollToNext?: boolean }) => {
     // Set flag for auto-scroll to next module if requested
     if (options?.autoScrollToNext) {
-      try { sessionStorage.setItem('autoScrollToNext', 'true'); } catch { /* */ }
+      try {
+        sessionStorage.setItem('autoScrollToNext', 'true');
+      } catch {
+        /* */
+      }
     }
 
     setCurrentView('menu');

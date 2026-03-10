@@ -243,7 +243,8 @@
   background-color: var(--theme-error-light, #fef2f2);
   color: var(--theme-error, #ef4444);
   border: 1px solid var(--theme-error, #ef4444);
-}html.dark .sorting-component__workspace {
+}
+html.dark .sorting-component__workspace {
   background-color: var(--theme-bg-elevated, #1f2937);
   border-color: var(--theme-border-soft, #4b5563);
 }
@@ -396,19 +397,15 @@ html.dark .sorting-component__drop-zone--error {
 }
 @media (prefers-reduced-motion: reduce) {
   .sorting-component__word-chip,
-.sorting-component__drop-zone {
+  .sorting-component__drop-zone {
     transition: none !important;
     animation: none !important;
   }
-
-  
 
   .sorting-component__word-chip--dragging,
   .sorting-component__word-chip--preview {
     transform: none;
   }
-
-  
 
   .sorting-component__drag-preview {
     animation: none;
@@ -424,13 +421,9 @@ html.dark .sorting-component__drop-zone--error {
     border-width: 3px;
   }
 
-  
-
   .sorting-component__word-chip {
     border-width: 2px;
   }
-
-  
 }
 
 /* === DRAG AND DROP STATES === */

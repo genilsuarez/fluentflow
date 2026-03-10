@@ -12,10 +12,7 @@ interface SecureFetchOptions extends globalThis.RequestInit {
  * @param options - Fetch options with additional security configurations
  * @returns Promise with fetch response
  */
-const secureFetch = async (
-  url: string,
-  options: SecureFetchOptions = {}
-): Promise<Response> => {
+const secureFetch = async (url: string, options: SecureFetchOptions = {}): Promise<Response> => {
   const { timeout = 10000, ...fetchOptions } = options;
 
   // Security headers for requests

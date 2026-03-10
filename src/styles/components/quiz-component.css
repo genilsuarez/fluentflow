@@ -23,7 +23,8 @@
   );
   border: 1px solid var(--theme-border-modal, rgba(0, 0, 0, 0.1));
   border-radius: var(--radius-lg, 0.5rem);
-}@media (min-width: 640px) {
+}
+@media (min-width: 640px) {
   .quiz-component__container {
     padding: 0.75rem;
   }
@@ -304,8 +305,6 @@
   .quiz-component__option-text {
     font-size: 1rem;
   }
-
-  
 }
 
 /* === ACCESSIBILITY === */
@@ -321,7 +320,7 @@
   }
 
   .quiz-component__option--correct,
-.quiz-component__option--incorrect {
+  .quiz-component__option--incorrect {
     border-width: 3px;
     font-weight: 600;
   }

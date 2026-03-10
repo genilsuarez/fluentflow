@@ -54,12 +54,6 @@
     min-width: 0;
     width: 100%;
   }
-
-  
-
-  
-
-  
 }
 
 /* === HIGH CONTRAST === */
@@ -67,14 +61,6 @@
   .toast {
     border-width: 2px;
   }
-
-  
-
-  
-
-  
-
-  
 }
 
 /* === REDUCED MOTION === */
@@ -84,8 +70,4 @@
     transform: translateX(0);
     opacity: 1;
   }
-
-  
-
-  
 }

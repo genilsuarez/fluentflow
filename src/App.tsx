@@ -45,7 +45,9 @@ const AppContent: React.FC = () => {
     try {
       prevView = sessionStorage.getItem('prevView') || 'menu';
       sessionStorage.setItem('prevView', currentView);
-    } catch { /* Private browsing or storage full */ }
+    } catch {
+      /* Private browsing or storage full */
+    }
 
     // Clear toasts when changing views (immediate, no delays)
     if (currentView !== prevView) {
@@ -69,7 +71,9 @@ const AppContent: React.FC = () => {
             }
           });
         }
-      } catch { /* Private browsing */ }
+      } catch {
+        /* Private browsing */
+      }
     }
   }, [currentView]);
 

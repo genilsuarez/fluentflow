@@ -68,7 +68,7 @@ html.dark {
   box-shadow: var(--shadow-medium, 0 4px 6px rgba(0, 0, 0, 0.1));
   border-bottom: 1px solid var(--header-border, #e5e7eb);
   background: linear-gradient(180deg, #1f2937 0%, #1a202c 100%);
-}/* === MOBILE SAFE AREA MARGINS FOR HEADER === */
+} /* === MOBILE SAFE AREA MARGINS FOR HEADER === */
 /* Para dispositivos móviles con pantallas curvas o bordes problemáticos */
 @media (max-width: 500px) {
   .header-redesigned__container {
@@ -161,7 +161,8 @@ html.dark {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
-}.header-redesigned__menu-btn {
+}
+.header-redesigned__menu-btn {
   padding: 8px;
   border-radius: 6px;
   color: var(--header-icon-color);
@@ -187,14 +188,15 @@ html.dark {
 .header-redesigned__menu-btn:focus {
   outline: none;
   box-shadow: 0 0 0 2px var(--header-focus-ring);
-}.header-redesigned__title {
+}
+.header-redesigned__title {
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--header-text-primary, #111827);
   line-height: 1.2;
   letter-spacing: -0.025em;
   transition: color 0.2s ease-in-out;
-}/* Development Mode Indicator */
+} /* Development Mode Indicator */
 .header-redesigned__dev-indicator {
   display: flex;
   align-items: center;
@@ -242,7 +244,8 @@ html.dark {
     opacity: 0.85;
     transform: scale(1.01);
   }
-}.header-redesigned__user-section {
+}
+.header-redesigned__user-section {
   display: flex;
   align-items: center;
 }
@@ -324,7 +327,7 @@ html.dark {
   display: flex;
   align-items: center;
   gap: 0.25rem;
-}/* Enhanced Hamburger Menu with Design System */
+} /* Enhanced Hamburger Menu with Design System */
 .header-side-menu {
   position: fixed;
   left: 0;
@@ -337,7 +340,7 @@ html.dark {
   box-shadow: 4px 0 25px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   backdrop-filter: blur(8px);
-}/* Enhanced Menu Header */
+} /* Enhanced Menu Header */
 .header-side-menu__header {
   padding: 20px;
   background-color: var(--menu-header-bg);
@@ -444,7 +447,7 @@ html.dark {
 .header-side-menu__item:focus {
   outline: none;
   box-shadow: 0 0 0 2px var(--header-focus-ring);
-}/* Enhanced Menu Icons and Text */
+} /* Enhanced Menu Icons and Text */
 .header-side-menu__text {
   font-weight: 500;
   font-size: 0.875rem;
@@ -838,7 +841,7 @@ html.dark {
     animation: none;
     /* Accessibility: disable animations */
   }
-}/* Light mode - keep it clean */
+} /* Light mode - keep it clean */
 .header-redesigned__logo {
   background: transparent;
 }
@@ -858,7 +861,7 @@ html.dark {
   z-index: 40;
   backdrop-filter: blur(4px);
   transition: opacity 0.3s ease-in-out;
-}/* Logo Animation and Accessibility Enhancements */
+} /* Logo Animation and Accessibility Enhancements */
 .header-redesigned__brand {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -912,7 +915,7 @@ html.dark {
   border-color: var(--header-border, #e5e7eb);
   background-color: var(--header-button-hover-bg);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}/* Avatar styles removed - now using consistent icon-only approach for all buttons */
+} /* Avatar styles removed - now using consistent icon-only approach for all buttons */
 
 /* Enhanced Side Menu for Dark Mode */
 .dark .header-side-menu {
@@ -997,10 +1000,10 @@ html.dark {
 .dark .header-redesigned__username {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   color: #e5e7eb;
-}/* Ensure consistent spacing between primary action buttons */
+} /* Ensure consistent spacing between primary action buttons */
 .header-redesigned__right > * + * {
   margin-left: 8px;
-}/* Ensure icons have consistent visual weight and better contrast */
+} /* Ensure icons have consistent visual weight and better contrast */
 .header-redesigned__menu-btn--primary svg,
 .header-redesigned__user-btn--primary svg,
 .header-redesigned__login-btn--primary svg {

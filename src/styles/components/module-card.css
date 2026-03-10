@@ -465,7 +465,8 @@
 
 .module-card__status-indicator--locked svg {
   color: var(--theme-text-on-colored, rgba(255, 255, 255, 0.9));
-}.module-card__status-icon svg {
+}
+.module-card__status-icon svg {
   width: 0.75rem;
   height: 0.75rem;
   color: var(--theme-text-on-colored, #ffffff);
