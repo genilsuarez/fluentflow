@@ -195,12 +195,8 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
           <div className="progression-dashboard__continue">
             <div className="progression-dashboard__next-module">
               <div className="progression-dashboard__next-info">
-                <h3 className="progression-dashboard__next-name">
-                  {nextRecommended.name}
-                </h3>
-                <p className="progression-dashboard__next-desc">
-                  {nextRecommended.description}
-                </p>
+                <h3 className="progression-dashboard__next-name">{nextRecommended.name}</h3>
+                <p className="progression-dashboard__next-desc">{nextRecommended.description}</p>
                 <div className="progression-dashboard__next-meta">
                   <span
                     className="progression-dashboard__level-badge"
