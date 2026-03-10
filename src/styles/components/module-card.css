@@ -68,6 +68,7 @@
   gap: 0;
   /* Ensure perfect centering within card bounds */
   box-sizing: border-box;
+  position: relative; /* For absolute positioning of level badge */
 }
 
 /* Icon Section - Harmonious Spacing */
@@ -144,6 +145,12 @@
   flex-shrink: 0;
   transition: all 0.2s ease-in-out;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  /* Position at bottom center */
+  position: absolute;
+  bottom: 0.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
 .module-card__time {
