@@ -8,11 +8,15 @@ import { MainMenu } from '../ui/MainMenu';
 import type { LearningModule } from '../../types';
 import '../../styles/components/app-router.css';
 
-// Helper to get translated error message outside React context
+// Helper to get translated error message outside React context (no hooks)
 const getErrorMsg = () => {
   const lang = useSettingsStore.getState().language;
-  const { t } = useTranslation(lang);
-  return t('errors.failedToLoadComponent');
+  // Access translation directly without useTranslation hook
+  const translations: Record<string, Record<string, string>> = {
+    en: { 'errors.failedToLoadComponent': 'Failed to load component' },
+    es: { 'errors.failedToLoadComponent': 'Error al cargar componente' },
+  };
+  return translations[lang]?.['errors.failedToLoadComponent'] || 'Failed to load component';
 };
 
 // Lazy load learning components with better error handling
@@ -161,6 +165,8 @@ const LearningComponentWrapper: React.FC<LearningComponentWrapperProps> = ({
 
 export const AppRouter: React.FC = () => {
   const { currentView, currentModule } = useAppStore();
+  const { language } = useSettingsStore();
+  const { t } = useTranslation(language);
 
   // Return menu for menu view
   if (currentView === 'menu') {
@@ -170,8 +176,6 @@ export const AppRouter: React.FC = () => {
   // For learning modes, we need a module
   const moduleId = currentModule?.id;
   if (!moduleId) {
-    const lang = useSettingsStore.getState().language;
-    const { t } = useTranslation(lang);
     return (
       <div className="app-router__no-module">
         <p className="app-router__no-module-text">{t('messages.noModuleSelected')}</p>
