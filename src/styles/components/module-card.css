@@ -406,7 +406,7 @@
   justify-content: center;
   position: relative;
   width: 100%;
-  margin-bottom: 0.125rem;
+  margin-bottom: 0;
 }
 
 /* BEM-Like Status Indicators - Base styles */
