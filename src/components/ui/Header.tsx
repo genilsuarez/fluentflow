@@ -81,7 +81,9 @@ export const Header: React.FC<HeaderProps> = () => {
   // };
 
   return (
-    <header className={`header-redesigned header-redesigned--${headerMode}${isInGame ? ' header-redesigned--learning-mode' : ''}`}>
+    <header
+      className={`header-redesigned header-redesigned--${headerMode}${isInGame ? ' header-redesigned--learning-mode' : ''}`}
+    >
       <div className={`header-redesigned__container header-redesigned__container--${headerMode}`}>
         {/* Left Section: Menu + Brand */}
         <div className="header-redesigned__left">

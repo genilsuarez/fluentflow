@@ -779,12 +779,12 @@ html.dark {
   .header-redesigned--learning-mode {
     display: none;
   }
-  
+
   /* Adjust body padding when header is hidden */
   body:has(.header-redesigned--learning-mode) {
     padding-top: 0;
   }
-  
+
   /* Ensure main content uses full viewport */
   body:has(.header-redesigned--learning-mode) main,
   body:has(.header-redesigned--learning-mode) .app-container {
