@@ -6,38 +6,6 @@
   flex-direction: column;
 }
 
-/* Reading mode: centered container with fixed dimensions */
-.layout-container[data-view='reading'] {
-  height: auto;
-  min-height: 100vh;
-  overflow: visible;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.layout-container[data-view='reading'] main {
-  flex: 0 0 auto;
-  overflow: visible;
-  padding: 1rem;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Mobile: Adjust reading mode for smaller screens */
-@media (max-width: 767px) {
-  .layout-container[data-view='reading'] {
-    min-height: 100vh;
-    align-items: flex-start;
-    padding-top: 1rem;
-  }
-
-  .layout-container[data-view='reading'] main {
-    padding: 0.5rem;
-  }
-}
-
 /* Mobile optimization for layout container - ONLY for main menu */
 @media (max-width: 400px) {
   .layout-container[data-view='menu'] {
