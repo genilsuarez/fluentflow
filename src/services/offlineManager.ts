@@ -239,7 +239,7 @@ export async function downloadLevels(
  */
 export async function deleteLevelCache(level: string): Promise<void> {
   const allModules = await fetchModulesList();
-  const urlsByLevel = await getUrlsForLevels([level], allModules);
+  const urlsByLevel = await getUrlsForLevels([level], [], allModules);
   const urlsToDelete = urlsByLevel.get(level) ?? [];
 
   const cache = await caches.open(CACHE_NAME);
