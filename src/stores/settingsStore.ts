@@ -52,14 +52,7 @@ interface SettingsState {
 }
 
 // Default categories for fallback and migration
-const DEFAULT_CATEGORIES = [
-  'Vocabulary',
-  'Grammar',
-  'PhrasalVerbs',
-  'Idioms',
-  'Reading',
-  'Review',
-];
+const DEFAULT_CATEGORIES = ['Vocabulary', 'Grammar', 'PhrasalVerbs', 'Idioms', 'Reading', 'Review'];
 
 // Categories removed in v4 migration
 const REMOVED_CATEGORIES = ['Pronunciation', 'Listening', 'Writing', 'Speaking'];
@@ -146,9 +139,7 @@ export const useSettingsStore = create<SettingsState>()(
           const currentCategories = persistedState.categories || [];
           persistedState = {
             ...persistedState,
-            categories: currentCategories.filter(
-              (c: string) => !REMOVED_CATEGORIES.includes(c)
-            ),
+            categories: currentCategories.filter((c: string) => !REMOVED_CATEGORIES.includes(c)),
           };
         }
         return persistedState;

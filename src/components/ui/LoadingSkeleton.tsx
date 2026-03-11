@@ -47,7 +47,11 @@ export const LoadingSkeleton: React.FC<LoadingSkeletonProps> = ({
   }
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }} role="status" aria-label="Loading content">
+    <div
+      style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}
+      role="status"
+      aria-label="Loading content"
+    >
       {Array.from({ length: count }).map((_, index) => (
         <div key={index} className={skeletonClasses} style={style} />
       ))}

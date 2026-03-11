@@ -675,9 +675,7 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
 
                       <div className="sorting-modal__card-content">
                         <div className="sorting-modal__card-field">
-                          <span className="sorting-modal__card-label">
-                            Correct category:
-                          </span>
+                          <span className="sorting-modal__card-label">Correct category:</span>
                           <p className="sorting-modal__card-value sorting-modal__card-value--correct">
                             {result.correctCategory}
                           </p>
@@ -695,9 +693,7 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
                         {result.explanation && (
                           <div className="sorting-modal__card-field">
                             <span className="sorting-modal__card-label">Explanation:</span>
-                            <p className="sorting-modal__card-explanation">
-                              {result.explanation}
-                            </p>
+                            <p className="sorting-modal__card-explanation">{result.explanation}</p>
                           </div>
                         )}
                       </div>
