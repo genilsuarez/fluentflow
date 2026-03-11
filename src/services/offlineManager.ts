@@ -120,7 +120,7 @@ async function getUrlsForLevels(
 async function preCacheJavaScriptAssets(): Promise<void> {
   try {
     console.log('[OfflineManager] Pre-caching JavaScript assets...');
-    
+
     // Get all script tags from the current page
     const scripts = Array.from(document.querySelectorAll('script[src]'));
     const scriptUrls = scripts
@@ -135,7 +135,7 @@ async function preCacheJavaScriptAssets(): Promise<void> {
     console.log('[OfflineManager] Found', scriptUrls.length, 'JavaScript assets to cache');
 
     const assetsCache = await caches.open(ASSETS_CACHE);
-    
+
     for (const url of scriptUrls) {
       try {
         // Check if already cached
@@ -261,10 +261,7 @@ export async function deleteLevelCache(level: string): Promise<void> {
  * Delete the entire offline cache (both data and assets).
  */
 export async function deleteAllCache(): Promise<void> {
-  await Promise.all([
-    caches.delete(CACHE_NAME),
-    caches.delete(ASSETS_CACHE)
-  ]);
+  await Promise.all([caches.delete(CACHE_NAME), caches.delete(ASSETS_CACHE)]);
   logDebug('Deleted all offline cache', undefined, 'OfflineManager');
 }
 
