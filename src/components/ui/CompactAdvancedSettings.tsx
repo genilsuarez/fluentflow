@@ -63,6 +63,17 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
   const [totalCacheSize, setTotalCacheSize] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  // Debug: log offline state
+  useEffect(() => {
+    console.log('[UI] Offline state:', {
+      cacheSupported,
+      offlineEnabled,
+      downloadedLevels,
+      selectedLevels,
+      isDownloading,
+    });
+  }, [cacheSupported, offlineEnabled, downloadedLevels, selectedLevels, isDownloading]);
+
   // Handle escape key to close modal (disabled when download manager is open)
   useEscapeKey(isOpen && !isModalOpen, onClose);
 
@@ -168,7 +179,22 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
   }, []);
 
   const handleDownload = useCallback(async () => {
-    if (selectedLevels.length === 0 || isDownloading) return;
+    console.log('[UI] handleDownload called', {
+      selectedLevels,
+      isDownloading,
+      downloadedLevels,
+    });
+
+    if (selectedLevels.length === 0) {
+      console.warn('[UI] No levels selected, aborting');
+      return;
+    }
+
+    if (isDownloading) {
+      console.warn('[UI] Already downloading, aborting');
+      return;
+    }
+
     setIsDownloading(true);
     setFailedUrls([]);
     setDownloadProgress(null);
@@ -177,22 +203,34 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
       // Differential update: compare selected vs already downloaded
       const levelsToDownload = selectedLevels.filter(l => !downloadedLevels.includes(l));
       const levelsToDelete = downloadedLevels.filter(l => !selectedLevels.includes(l));
-      // Levels in both selectedLevels and downloadedLevels are left untouched
+
+      console.log('[UI] Differential update:', {
+        levelsToDownload,
+        levelsToDelete,
+      });
 
       // Delete deselected levels
       for (const level of levelsToDelete) {
+        console.log('[UI] Deleting level:', level);
         await deleteLevelCache(level);
       }
 
       // Download new levels (only if there are any)
       if (levelsToDownload.length > 0) {
+        console.log('[UI] Starting download for:', levelsToDownload);
         const result = await downloadLevels(levelsToDownload, progress => {
+          console.log('[UI] Download progress:', progress);
           setDownloadProgress(progress);
         });
 
+        console.log('[UI] Download complete:', result);
+
         if (result.failed.length > 0) {
+          console.error('[UI] Failed URLs:', result.failed);
           setFailedUrls(result.failed);
         }
+      } else {
+        console.log('[UI] No new levels to download');
       }
 
       setDownloadedLevels(selectedLevels);
@@ -200,11 +238,13 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
 
       // Refresh cache size
       const size = await getTotalCacheSize();
+      console.log('[UI] Total cache size:', size);
       setTotalCacheSize(size);
-    } catch {
-      // Download error handled via progress callback
+    } catch (error) {
+      console.error('[UI] Download error:', error);
     } finally {
       setIsDownloading(false);
+      console.log('[UI] Download process finished');
     }
   }, [selectedLevels, isDownloading, downloadedLevels, setDownloadedLevels, setLastDownloadDate]);
 
@@ -727,7 +767,10 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
                         </div>
                         <button
                           className="compact-settings__offline-download-btn"
-                          onClick={handleDownload}
+                          onClick={() => {
+                            console.log('[UI] Download button clicked');
+                            handleDownload();
+                          }}
                           disabled={selectedLevels.length === 0 || isDownloading}
                         >
                           {isDownloading ? t('offline.downloading') : t('offline.download')}
