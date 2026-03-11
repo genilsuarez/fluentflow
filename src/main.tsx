@@ -11,10 +11,10 @@ if ('serviceWorker' in navigator) {
     const swPath = import.meta.env.BASE_URL + 'sw.js';
     navigator.serviceWorker
       .register(swPath)
-      .then((registration) => {
+      .then(registration => {
         console.log('SW registered:', registration.scope);
       })
-      .catch((error) => {
+      .catch(error => {
         console.warn('SW registration failed:', error);
       });
   });
