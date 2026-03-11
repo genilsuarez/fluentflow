@@ -124,7 +124,7 @@ export async function downloadLevels(
   onProgress: (progress: DownloadProgress) => void
 ): Promise<DownloadProgress> {
   console.log('[OfflineManager] Starting download for levels:', levels);
-  
+
   const allModules = await fetchModulesList();
   const urlsByLevel = await getUrlsForLevels(levels, allModules);
 
