@@ -91,10 +91,11 @@ function resolveDataPath(dataPath: string): string {
 }
 
 /**
- * Get all URLs that should be cached for a given set of levels
+ * Get all URLs that should be cached for a given set of levels and categories
  */
 async function getUrlsForLevels(
   levels: string[],
+  categories: string[],
   allModules: LearningModule[]
 ): Promise<Map<string, string[]>> {
   const urlsByLevel = new Map<string, string[]>();
@@ -102,7 +103,15 @@ async function getUrlsForLevels(
   for (const targetLevel of levels) {
     const modulesForLevel = allModules.filter(m => {
       const moduleLevels = Array.isArray(m.level) ? m.level : [m.level];
-      return moduleLevels.includes(targetLevel as any);
+      const hasLevel = moduleLevels.includes(targetLevel as any);
+      
+      // If no categories selected, include all modules for this level
+      if (categories.length === 0) {
+        return hasLevel;
+      }
+      
+      // If categories selected, also filter by category
+      return hasLevel && m.category && categories.includes(m.category);
     });
 
     const urls = modulesForLevel.filter(m => m.dataPath).map(m => resolveDataPath(m.dataPath!));
@@ -155,22 +164,23 @@ async function preCacheJavaScriptAssets(): Promise<void> {
 }
 
 /**
- * Download content for the specified CEFR levels into the Cache API.
+ * Download content for the specified CEFR levels and categories into the Cache API.
  *
- * - Fetches learningModules.json, filters by level
+ * - Fetches learningModules.json, filters by level and category
  * - Downloads each file sequentially with retries (1 original + 2 retries, backoff 1s/2s)
  * - Pre-caches JavaScript assets for offline component loading
  * - Calls onProgress with monotonically increasing completed count
  */
 export async function downloadLevels(
   levels: string[],
-  onProgress: (progress: DownloadProgress) => void
+  onProgress: (progress: DownloadProgress) => void,
+  categories: string[] = []
 ): Promise<DownloadProgress> {
   // Pre-cache JavaScript assets first (critical for offline functionality)
   await preCacheJavaScriptAssets();
 
   const allModules = await fetchModulesList();
-  const urlsByLevel = await getUrlsForLevels(levels, allModules);
+  const urlsByLevel = await getUrlsForLevels(levels, categories, allModules);
 
   // Collect all unique URLs to download
   const allUrls: string[] = [];
