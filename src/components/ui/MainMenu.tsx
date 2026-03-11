@@ -40,11 +40,6 @@ export const MainMenu: React.FC = () => {
   const scrollToNextModule = React.useCallback(
     (behavior: ScrollBehavior = 'smooth') => {
       const nextModule = progression.getNextRecommendedModule();
-      console.log('[AutoScroll] scrollToNextModule called', {
-        nextModule: nextModule?.id ?? null,
-        gridRef: !!gridRef.current,
-        dataModuleIds: document.querySelectorAll('[data-module-id]').length,
-      });
       if (!nextModule || !gridRef.current) return;
 
       setHighlightedModuleId(nextModule.id);
@@ -82,10 +77,15 @@ export const MainMenu: React.FC = () => {
     [progression]
   );
 
+  // Stable ref to always call the latest version of scrollToNextModule
+  const scrollFnRef = useRef(scrollToNextModule);
+  useEffect(() => {
+    scrollFnRef.current = scrollToNextModule;
+  }, [scrollToNextModule]);
+
   // Auto-scroll to next recommended module when entering All Modules view
   // This covers both: returning from a completed lesson and switching tabs
   useEffect(() => {
-    console.log('[AutoScroll] effect check', { viewMode, isLoading, modulesLen: modules.length });
     if (viewMode !== 'list' || isLoading || !modules.length) return;
 
     // Clear the post-lesson flag if present (no longer needed as a separate trigger)
@@ -97,11 +97,12 @@ export const MainMenu: React.FC = () => {
 
     // Wait for the grid to mount and cards to render before scrolling
     const timerId = setTimeout(() => {
-      scrollToNextModule('smooth');
-    }, 200);
+      scrollFnRef.current('smooth');
+    }, 300);
 
     return () => clearTimeout(timerId);
-  }, [viewMode, isLoading, modules.length, scrollToNextModule]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [viewMode, isLoading, modules.length]);
 
   // Show welcome toast when modules are loaded (only once per session)
   useEffect(() => {
