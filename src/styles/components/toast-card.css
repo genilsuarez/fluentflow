@@ -107,8 +107,8 @@
 
 .toast-card__close {
   flex-shrink: 0;
-  min-width: 44px;
-  min-height: 44px;
+  min-width: 48px;
+  min-height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -138,8 +138,8 @@
 }
 
 .toast-card__close-icon {
-  width: 1rem;
-  height: 1rem;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 /* Type Modifiers */
@@ -218,8 +218,62 @@
 }
 
 .toast-card--minimal .toast-card__close {
-  min-width: 36px;
-  min-height: 36px;
+  min-width: 48px;
+  min-height: 48px;
+}
+
+/* === MOBILE RESPONSIVE === */
+@media (max-width: 767px) {
+  .toast-card {
+    width: calc(100vw - 24px);
+    max-width: 100%;
+    margin: 0 12px 8px 12px;
+  }
+
+  .toast-card__content {
+    padding: 14px;
+  }
+
+  .toast-card__icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .toast-card__icon-svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .toast-card__title {
+    font-size: 15px;
+  }
+
+  .toast-card__message {
+    font-size: 13px;
+  }
+
+  .toast-card__action {
+    min-height: 44px;
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  .toast-card__close {
+    min-width: 48px;
+    min-height: 48px;
+  }
+}
+
+@media (max-width: 419px) {
+  .toast-card {
+    width: calc(100vw - 16px);
+    margin: 0 8px 8px 8px;
+  }
+
+  .toast-card__content {
+    padding: 12px;
+    gap: 6px;
+  }
 }
 
 /* Responsive Design */

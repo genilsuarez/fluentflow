@@ -56,6 +56,8 @@
   cursor: pointer;
   transition: all 0.2s ease;
   border: none;
+  min-height: 48px;
+  min-width: 48px;
 }
 
 .app-router__error-btn--primary {
@@ -96,10 +98,37 @@
   border: none;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  min-height: 48px;
+  min-width: 48px;
 }
 
 .app-router__no-module-btn:hover {
   background-color: var(--primary-blue-dark, #2563eb);
+}
+
+/* === MOBILE RESPONSIVE === */
+@media (max-width: 767px) {
+  .app-router__error,
+  .app-router__no-module,
+  .app-router__unknown-view {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .app-router__error-container {
+    padding: 1.5rem;
+  }
+
+  .app-router__error-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .app-router__error-btn,
+  .app-router__no-module-btn {
+    width: 100%;
+    min-height: 48px;
+  }
 }
 
 .app-router__unknown-view {

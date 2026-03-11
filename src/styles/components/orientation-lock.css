@@ -80,9 +80,11 @@
 .orientation-lock__icon-wrapper {
   margin-bottom: 2rem;
 
-  /* Icon container styling */
-  width: 80px;
-  height: 80px;
+  /* Icon container styling - Touch-friendly size */
+  width: 88px;
+  height: 88px;
+  min-width: 88px;
+  min-height: 88px;
   border-radius: 50%;
 
   /* Theme-aware background */
