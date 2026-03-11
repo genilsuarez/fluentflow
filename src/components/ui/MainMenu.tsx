@@ -101,7 +101,6 @@ export const MainMenu: React.FC = () => {
     }, 300);
 
     return () => clearTimeout(timerId);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [viewMode, isLoading, modules.length]);
 
   // Show welcome toast when modules are loaded (only once per session)
