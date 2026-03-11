@@ -218,13 +218,15 @@ Ejecutado `scripts/analyze-mobile-responsive.js` con los siguientes hallazgos:
   - Asegurar responsive para todos los tipos de contenido
 
 #### Task 4.4: Modals Mobile
-- **Archivos**: `matching-modal.css`, `sorting-modal.css`
+- **Archivos**: `matching-modal.css`, `sorting-modal.css`, `compact-advanced-settings.css`
 - **Prioridad**: Media
-- **Issues**: 4 anchos fijos totales
+- **Issues**: 4 anchos fijos totales, botones cortados en Advanced Settings mobile
 - **Acciones**:
-  - Ajustar modales para pantallas pequeñas
-  - Optimizar overlay y backdrop
-  - Mejorar botones de cierre (min 44x44px)
+  - Ajustar modales para pantallas pequeñas ✅
+  - Optimizar overlay y backdrop ✅
+  - Mejorar botones de cierre (min 44x44px) ✅
+  - Fix Advanced Settings: container height auto, footer sticky ✅
+  - Botones footer 48px min-height (Android compliant) ✅
 
 #### Task 4.5: Error Fallback & Download Manager
 - **Archivos**: `error-fallback.css`, `download-manager.css`
@@ -363,7 +365,7 @@ node scripts/analyze-mobile-responsive.js
   - [x] Task 4.1: Search Bar Mobile - Verificado con media queries extensivas
   - [x] Task 4.2: Compact Views Mobile - Verificado con breakpoints 400px, 640px
   - [x] Task 4.3: Content Renderer Mobile - Media queries agregadas ✅
-  - [x] Task 4.4: Modals Mobile - Verificado responsive
+  - [x] Task 4.4: Modals Mobile - Advanced Settings footer fix, botones 48px ✅
   - [x] Task 4.5: Error Fallback & Download Manager - Optimizado ✅
 - [x] Fase 5: Safari Mobile Fixes (1/1) ✅
   - [x] Task 5.1: Orientation Lock - Touch targets optimizados ✅

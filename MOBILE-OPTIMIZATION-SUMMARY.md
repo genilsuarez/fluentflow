@@ -30,7 +30,7 @@
 - ✅ Search Bar - Breakpoints 639px, 768px
 - ✅ Compact Views - Breakpoints 400px, 640px
 - ✅ Content Renderer - Media queries agregadas
-- ✅ Modals - Responsive verificado
+- ✅ Modals - Advanced Settings footer fix, botones 48px
 - ✅ Error Fallback & Download Manager - Optimizados
 
 ### Fase 5: Safari Mobile Fixes (100%)
@@ -50,6 +50,7 @@
 | app-router buttons | 40px | 48px | ✅ Android 48px |
 | toast-card close | 44px | 48px | ✅ Android 48px |
 | fluent-flow-logo | Variable | Min-width/height | ✅ Responsive |
+| advanced-settings footer | Cortado | 48px sticky | ✅ Android 48px |
 
 ### Media Queries Agregadas
 1. **content-renderer.css** - 767px, 419px
@@ -150,6 +151,59 @@
    - 4 archivos optimizados
    - 100% cobertura media queries
    - 100% touch targets compliance
+
+4. **fix(mobile): advanced settings modal footer buttons cut off**
+   - Container height: fixed → auto con max-height
+   - Footer sticky positioning con z-index
+   - Botones 48px min-height (Android compliant)
+   - Content scrollable, footer siempre visible
+
+## 🔧 Detalles Técnicos - Advanced Settings Fix
+
+### Problema
+En dispositivos móviles ≤400px, los botones Reset/Save del modal Advanced Settings quedaban cortados fuera del viewport.
+
+### Causa Raíz
+- Container con `height: 350px` fijo
+- Sin flexbox layout para distribuir espacio
+- Footer sin posicionamiento sticky
+
+### Solución
+```css
+@media (max-width: 400px) {
+  .compact-settings__container {
+    height: auto;
+    max-height: calc(100dvh - 40px);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .compact-settings__content {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    min-height: 0;
+  }
+  
+  .compact-settings .modal__actions {
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+    margin-top: auto;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .compact-settings .modal__btn {
+    min-height: 48px;
+  }
+}
+```
+
+### Beneficios
+- ✅ Footer siempre visible sin importar contenido
+- ✅ Scroll solo en área de contenido
+- ✅ Botones accesibles (48px Android standard)
+- ✅ Separación visual con box-shadow
+- ✅ Funciona en todos los tabs del modal
 
 ## ✨ Conclusión
 
