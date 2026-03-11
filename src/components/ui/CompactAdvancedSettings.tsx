@@ -55,8 +55,8 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
   const [totalCacheSize, setTotalCacheSize] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Handle escape key to close modal
-  useEscapeKey(isOpen, onClose);
+  // Handle escape key to close modal (disabled when download manager is open)
+  useEscapeKey(isOpen && !isModalOpen, onClose);
 
   // Local state for editing
   const [localTheme, setLocalTheme] = useState(theme);
@@ -78,6 +78,9 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
       setLocalCategories(categories);
       setLocalGameSettings(gameSettings);
       setHasChanges(false);
+    } else {
+      // Reset download manager modal state when main modal closes
+      setIsModalOpen(false);
     }
   }, [isOpen, theme, language, level, developmentMode, randomizeItems, categories, gameSettings]);
 

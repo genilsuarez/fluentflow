@@ -62,6 +62,7 @@ export const DownloadManagerModal: React.FC<DownloadManagerModalProps> = ({ isOp
   }, [setDownloadedLevels, setOfflineEnabled, setLastDownloadDate, onClose]);
 
   const handleOverlayClick = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+    // Only close if clicking directly on the overlay, not on child elements
     if (e.target === e.currentTarget) {
       onClose();
     }
