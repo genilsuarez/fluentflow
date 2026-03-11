@@ -720,6 +720,42 @@ html.dark {
   }
 }
 
+/* === OFFLINE BADGE === */
+.header__offline-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: #f59e0b;
+  background-color: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  border-radius: var(--radius-sm, 0.25rem);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  margin-left: var(--header-spacing-sm);
+  white-space: nowrap;
+}
+
+.header__offline-badge--hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.dark .header__offline-badge {
+  color: #fbbf24;
+  background-color: rgba(251, 191, 36, 0.15);
+  border-color: rgba(251, 191, 36, 0.25);
+}
+
+/* Hide offline badge on very small screens */
+@media (max-width: 400px) {
+  .header__offline-badge span {
+    display: none;
+  }
+}
+
 /* === LEARNING MODE ADJUSTMENTS === */
 .header-redesigned__container--learning {
   padding: 0 var(--header-spacing-md);

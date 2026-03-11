@@ -460,7 +460,9 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
             <div className="matching-modal__content">
               <div className="matching-modal__header">
                 <h3 className="matching-modal__title">
-                  {selectedTerm.pairs ? t('learning.exerciseSummary') : selectedTerm.left}
+                  {selectedTerm.pairs
+                    ? t('learning.exerciseSummary')
+                    : t('learning.explanation').replace(':', '')}
                 </h3>
                 <button
                   onClick={() => setShowExplanation(false)}
@@ -517,24 +519,26 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
                   </div>
                 </div>
               ) : (
-                /* Individual Explanation View */
+                /* Individual Explanation View - Card style */
                 <div className="matching-modal__individual">
-                  <div className="matching-modal__detail-field">
-                    <h4 className="matching-modal__detail-label">Match:</h4>
-                    <p className="matching-modal__detail-value">{selectedTerm.right}</p>
+                  <div className="matching-modal__result-card matching-modal__result-card--correct">
+                    <span className="matching-modal__card-status matching-modal__card-status--correct">
+                      ✓
+                    </span>
+                    <h4 className="matching-modal__card-term">{selectedTerm.left}</h4>
+                    <p className="matching-modal__card-value matching-modal__card-value--correct">
+                      {selectedTerm.right}
+                    </p>
                   </div>
 
                   {selectedTerm.explanation && (
-                    <div className="matching-modal__detail-field">
-                      <h4 className="matching-modal__detail-label">Explanation:</h4>
-                      <div className="matching-modal__detail-explanation">
-                        <ContentRenderer
-                          content={ContentAdapter.ensureStructured(
-                            selectedTerm.explanation,
-                            'explanation'
-                          )}
-                        />
-                      </div>
+                    <div className="matching-modal__detail-explanation">
+                      <ContentRenderer
+                        content={ContentAdapter.ensureStructured(
+                          selectedTerm.explanation,
+                          'explanation'
+                        )}
+                      />
                     </div>
                   )}
                 </div>

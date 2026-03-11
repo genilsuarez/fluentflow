@@ -1,6 +1,7 @@
 import { secureJsonFetch, validateUrl } from '../utils/secureHttp';
 import { getLearningModulesPath, getAssetPath } from '../utils/pathUtils';
 import { logError, logDebug } from '../utils/logger';
+import { getCachedResponse } from './offlineManager';
 import type { LearningModule } from '../types';
 
 /**
@@ -45,6 +46,7 @@ class ApiService {
 
   /**
    * Fetch all available learning modules
+   * Strategy: network-first with Cache API fallback for offline support
    */
   async fetchModules(): Promise<ApiResponse<LearningModule[]>> {
     const cacheKey = this.getCacheKey('modules');
@@ -55,9 +57,30 @@ class ApiService {
       return { data: cached, success: true };
     }
 
+    const modulesUrl = getLearningModulesPath();
+
+    // If offline, skip network and go straight to Cache API
+    if (!navigator.onLine) {
+      logDebug('Offline: attempting Cache API fallback for modules', undefined, 'ApiService');
+      const cachedResponse = await getCachedResponse(modulesUrl);
+      if (cachedResponse) {
+        const modules = await cachedResponse.json();
+        const enhancedModules = modules.map((module: LearningModule) => ({
+          ...module,
+          estimatedTime: module.estimatedTime ?? 5,
+          difficulty: module.difficulty ?? 3,
+          tags: module.tags ?? [module.category],
+        }));
+        this.setCache(cacheKey, enhancedModules);
+        logDebug('Served modules from Cache API (offline)', { count: enhancedModules.length }, 'ApiService');
+        return { data: enhancedModules, success: true };
+      }
+      return { data: [], success: false, error: 'MODULE_NOT_AVAILABLE_OFFLINE' };
+    }
+
     try {
-      const modulesUrl = validateUrl(getLearningModulesPath());
-      const modules = await secureJsonFetch<LearningModule[]>(modulesUrl);
+      const validatedUrl = validateUrl(modulesUrl);
+      const modules = await secureJsonFetch<LearningModule[]>(validatedUrl);
 
       // Enhance modules with default values
       const enhancedModules = modules.map((module: LearningModule) => ({
@@ -72,6 +95,22 @@ class ApiService {
 
       return { data: enhancedModules, success: true };
     } catch (error) {
+      // Network failed: fallback to Cache API
+      logDebug('Network failed, attempting Cache API fallback for modules', undefined, 'ApiService');
+      const cachedResponse = await getCachedResponse(modulesUrl);
+      if (cachedResponse) {
+        const modules = await cachedResponse.json();
+        const enhancedModules = modules.map((module: LearningModule) => ({
+          ...module,
+          estimatedTime: module.estimatedTime ?? 5,
+          difficulty: module.difficulty ?? 3,
+          tags: module.tags ?? [module.category],
+        }));
+        this.setCache(cacheKey, enhancedModules);
+        logDebug('Served modules from Cache API (network fallback)', { count: enhancedModules.length }, 'ApiService');
+        return { data: enhancedModules, success: true };
+      }
+
       const errorMessage = error instanceof Error ? error.message : 'Unknown error';
       logError('Failed to fetch modules', { error: errorMessage }, 'ApiService');
       return { data: [], success: false, error: errorMessage };
@@ -80,66 +119,100 @@ class ApiService {
 
   /**
    * Fetch specific module with its data
+   * Strategy: network-first with Cache API fallback for offline support
    */
-  async fetchModuleData(moduleId: string): Promise<ApiResponse<LearningModule>> {
-    const cacheKey = this.getCacheKey('module', { moduleId });
-    const cached = this.getFromCache<LearningModule>(cacheKey);
+  /**
+     * Fetch specific module with its data
+     * Strategy: network-first with Cache API fallback for offline support
+     */
+    async fetchModuleData(moduleId: string): Promise<ApiResponse<LearningModule>> {
+      const cacheKey = this.getCacheKey('module', { moduleId });
+      const cached = this.getFromCache<LearningModule>(cacheKey);
 
-    if (cached) {
-      logDebug('Returning cached module data', { moduleId }, 'ApiService');
-      return { data: cached, success: true };
-    }
-
-    try {
-      // First get module metadata
-      const modulesResponse = await this.fetchModules();
-      if (!modulesResponse.success) {
-        throw new Error('Failed to fetch modules list');
+      if (cached) {
+        logDebug('Returning cached module data', { moduleId }, 'ApiService');
+        return { data: cached, success: true };
       }
 
-      const moduleInfo = modulesResponse.data.find(m => m.id === moduleId);
-      if (!moduleInfo) {
-        throw new Error(`Module ${moduleId} not found`);
-      }
-
-      // Then get module data if dataPath exists
-      let moduleData: LearningModule = { ...moduleInfo };
-
-      if (moduleInfo.dataPath) {
-        // Handle dataPath that may already include 'data/' prefix
-        const cleanDataPath = moduleInfo.dataPath.startsWith('data/')
-          ? moduleInfo.dataPath.substring(5) // Remove 'data/' prefix
-          : moduleInfo.dataPath;
-        const dataUrl = validateUrl(getAssetPath(cleanDataPath));
-        const data = await secureJsonFetch(dataUrl);
-
-        // Handle different data formats:
-        // - Arrays (flashcard, quiz, etc.): use as-is
-        // - Objects (reading mode): wrap in array for consistent access
-        let processedData = data.data || data;
-        if (!Array.isArray(processedData) && typeof processedData === 'object') {
-          processedData = [processedData];
+      try {
+        // First get module metadata
+        const modulesResponse = await this.fetchModules();
+        if (!modulesResponse.success) {
+          // If offline and modules list failed, propagate the offline error
+          if (!navigator.onLine) {
+            return { data: {} as LearningModule, success: false, error: 'MODULE_NOT_AVAILABLE_OFFLINE' };
+          }
+          throw new Error('Failed to fetch modules list');
         }
 
-        moduleData = {
-          ...moduleInfo,
-          data: processedData,
-          estimatedTime: data.estimatedTime || moduleInfo.estimatedTime || 5,
-          difficulty: data.difficulty || moduleInfo.difficulty || 3,
-          tags: data.tags || moduleInfo.tags || [moduleInfo.category],
-        };
+        const moduleInfo = modulesResponse.data.find(m => m.id === moduleId);
+        if (!moduleInfo) {
+          throw new Error(`Module ${moduleId} not found`);
+        }
+
+        // Then get module data if dataPath exists
+        let moduleData: LearningModule = { ...moduleInfo };
+
+        if (moduleInfo.dataPath) {
+          // Handle dataPath that may already include 'data/' prefix
+          const cleanDataPath = moduleInfo.dataPath.startsWith('data/')
+            ? moduleInfo.dataPath.substring(5) // Remove 'data/' prefix
+            : moduleInfo.dataPath;
+          const dataUrl = validateUrl(getAssetPath(cleanDataPath));
+
+          let data: any;
+
+          if (!navigator.onLine) {
+            // Offline: go straight to Cache API
+            logDebug('Offline: attempting Cache API fallback for module data', { moduleId }, 'ApiService');
+            const cachedResponse = await getCachedResponse(dataUrl);
+            if (cachedResponse) {
+              data = await cachedResponse.json();
+            } else {
+              return { data: {} as LearningModule, success: false, error: 'MODULE_NOT_AVAILABLE_OFFLINE' };
+            }
+          } else {
+            // Online: try network first, fallback to Cache API
+            try {
+              data = await secureJsonFetch(dataUrl);
+            } catch (fetchError) {
+              logDebug('Network failed, attempting Cache API fallback for module data', { moduleId }, 'ApiService');
+              const cachedResponse = await getCachedResponse(dataUrl);
+              if (cachedResponse) {
+                data = await cachedResponse.json();
+              } else {
+                throw fetchError; // Re-throw original error if no cache
+              }
+            }
+          }
+
+          // Handle different data formats:
+          // - Arrays (flashcard, quiz, etc.): use as-is
+          // - Objects (reading mode): wrap in array for consistent access
+          let processedData = data.data || data;
+          if (!Array.isArray(processedData) && typeof processedData === 'object') {
+            processedData = [processedData];
+          }
+
+          moduleData = {
+            ...moduleInfo,
+            data: processedData,
+            estimatedTime: data.estimatedTime || moduleInfo.estimatedTime || 5,
+            difficulty: data.difficulty || moduleInfo.difficulty || 3,
+            tags: data.tags || moduleInfo.tags || [moduleInfo.category],
+          };
+        }
+
+        this.setCache(cacheKey, moduleData);
+        logDebug('Fetched module data successfully', { moduleId }, 'ApiService');
+
+        return { data: moduleData, success: true };
+      } catch (error) {
+        const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+        logError('Failed to fetch module data', { moduleId, error: errorMessage }, 'ApiService');
+        return { data: {} as LearningModule, success: false, error: errorMessage };
       }
-
-      this.setCache(cacheKey, moduleData);
-      logDebug('Fetched module data successfully', { moduleId }, 'ApiService');
-
-      return { data: moduleData, success: true };
-    } catch (error) {
-      const errorMessage = error instanceof Error ? error.message : 'Unknown error';
-      logError('Failed to fetch module data', { moduleId, error: errorMessage }, 'ApiService');
-      return { data: {} as LearningModule, success: false, error: errorMessage };
     }
-  }
 
   /**
    * Filter module data based on user settings

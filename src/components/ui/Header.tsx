@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { User, Settings, Menu, BarChart3, BookOpen, LogOut } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { User, Settings, Menu, BarChart3, BookOpen, LogOut, WifiOff } from 'lucide-react';
 import '../../styles/components/header.css';
 import { useAppStore } from '../../stores/appStore';
 import { useUserStore } from '../../stores/userStore';
@@ -7,6 +7,7 @@ import { useSettingsStore } from '../../stores/settingsStore';
 import { useMenuNavigation } from '../../hooks/useMenuNavigation';
 import { useTranslation } from '../../utils/i18n';
 import { useEscapeKey } from '../../hooks/useEscapeKey';
+import { useOfflineStatus } from '../../hooks/useOfflineStatus';
 // import { toast } from '../../stores/toastStore';
 
 // Compact modals - optimized versions
@@ -25,15 +26,33 @@ interface HeaderProps {
 export const Header: React.FC<HeaderProps> = () => {
   const { currentView } = useAppStore();
   const { user } = useUserStore();
-  const { developmentMode, language } = useSettingsStore();
+  const { developmentMode, language, offlineEnabled } = useSettingsStore();
   const { returnToMenu } = useMenuNavigation();
   const { t } = useTranslation(language);
+  const { isOnline } = useOfflineStatus();
   const [showProfileForm, setShowProfileForm] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [showAbout, setShowAbout] = useState(false);
   const [showSideMenu, setShowSideMenu] = useState(false);
   const [showProgressDashboard, setShowProgressDashboard] = useState(false);
   const [showModuleProgression, setShowModuleProgression] = useState(false);
+  const [showBadge, setShowBadge] = useState(false);
+
+  // Offline badge: show immediately when offline+enabled, hide with 3s delay on reconnect
+  useEffect(() => {
+    const shouldShow = !isOnline && offlineEnabled;
+
+    if (shouldShow) {
+      setShowBadge(true);
+      return;
+    }
+
+    // When going back online, delay hiding by 3 seconds
+    if (showBadge && !shouldShow) {
+      const timer = setTimeout(() => setShowBadge(false), 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [isOnline, offlineEnabled, showBadge]);
 
   // Determine header layout mode
   const isInGame = currentView !== 'menu';
@@ -88,6 +107,16 @@ export const Header: React.FC<HeaderProps> = () => {
         {/* Center Section: Score Display */}
         <div className="header-redesigned__center">
           <ScoreDisplay />
+          {showBadge && (
+            <div
+              className={`header__offline-badge${isOnline ? ' header__offline-badge--hidden' : ''}`}
+              aria-label={t('offline.indicator')}
+              role="status"
+            >
+              <WifiOff size={12} aria-hidden="true" />
+              <span>{t('offline.indicator')}</span>
+            </div>
+          )}
           {developmentMode && (
             <div
               className="header-redesigned__dev-indicator"

@@ -1,9 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import { X, Settings, Save, Gamepad2, Palette, Wrench } from 'lucide-react';
+import React, { useState, useEffect, useCallback } from 'react';
+import { X, Settings, Save, Gamepad2, Palette, Wrench, WifiOff } from 'lucide-react';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useTranslation } from '../../utils/i18n';
 import { validateGameSettings } from '../../utils/inputValidation';
 import { useEscapeKey } from '../../hooks/useEscapeKey';
+import { downloadLevels, deleteAllCache, deleteLevelCache, formatStorageSize, getTotalCacheSize } from '../../services/offlineManager';
+import type { DownloadProgress } from '../../services/offlineManager';
+import { DownloadManagerModal } from './DownloadManagerModal';
 import '../../styles/components/compact-advanced-settings.css';
 import '../../styles/components/modal-buttons.css';
 
@@ -24,6 +27,8 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
     randomizeItems,
     categories,
     gameSettings,
+    offlineEnabled,
+    downloadedLevels,
     setTheme,
     setLanguage,
     setLevel,
@@ -31,11 +36,24 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
     setRandomizeItems,
     setCategories,
     setGameSetting,
+    setOfflineEnabled,
+    setDownloadedLevels,
+    setLastDownloadDate,
   } = useSettingsStore();
 
   const { t } = useTranslation(language);
   const [hasChanges, setHasChanges] = useState(false);
-  const [activeTab, setActiveTab] = useState<'general' | 'games' | 'categories'>('general');
+  const [activeTab, setActiveTab] = useState<'general' | 'games' | 'categories' | 'offline'>('general');
+
+  // Offline state
+  const cacheSupported = 'caches' in window;
+  const allLevels = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'] as const;
+  const [selectedLevels, setSelectedLevels] = useState<string[]>([]);
+  const [isDownloading, setIsDownloading] = useState(false);
+  const [downloadProgress, setDownloadProgress] = useState<DownloadProgress | null>(null);
+  const [failedUrls, setFailedUrls] = useState<string[]>([]);
+  const [totalCacheSize, setTotalCacheSize] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Handle escape key to close modal
   useEscapeKey(isOpen, onClose);
@@ -90,6 +108,116 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
     categories,
     gameSettings,
   ]);
+
+  // Initialize offline level selection when modal opens or offline is toggled
+  useEffect(() => {
+    if (isOpen && offlineEnabled) {
+      if (level === 'all') {
+        setSelectedLevels([...allLevels]);
+      } else {
+        setSelectedLevels([level]);
+      }
+    }
+  }, [isOpen, offlineEnabled, level]);
+
+  // Load total cache size when modal opens and offline is enabled
+  useEffect(() => {
+    if (isOpen && offlineEnabled && cacheSupported) {
+      getTotalCacheSize().then(setTotalCacheSize).catch(() => setTotalCacheSize(0));
+    }
+  }, [isOpen, offlineEnabled, cacheSupported, downloadedLevels]);
+
+  const handleToggleOffline = useCallback(async (enabled: boolean) => {
+    if (!enabled) {
+      // Deactivating: delete all cache and clean state
+      await deleteAllCache();
+      setDownloadedLevels([]);
+      setLastDownloadDate(null);
+      setOfflineEnabled(false);
+      setTotalCacheSize(0);
+      setSelectedLevels([]);
+      setFailedUrls([]);
+    } else {
+      setOfflineEnabled(true);
+      if (level === 'all') {
+        setSelectedLevels([...allLevels]);
+      } else {
+        setSelectedLevels([level]);
+      }
+    }
+  }, [level, setOfflineEnabled, setDownloadedLevels, setLastDownloadDate]);
+
+  const handleLevelCheckbox = useCallback((lvl: string, checked: boolean) => {
+    setSelectedLevels(prev =>
+      checked ? [...prev, lvl] : prev.filter(l => l !== lvl)
+    );
+  }, []);
+
+  const handleDownload = useCallback(async () => {
+    if (selectedLevels.length === 0 || isDownloading) return;
+    setIsDownloading(true);
+    setFailedUrls([]);
+    setDownloadProgress(null);
+
+    try {
+      // Differential update: compare selected vs already downloaded
+      const levelsToDownload = selectedLevels.filter(l => !downloadedLevels.includes(l));
+      const levelsToDelete = downloadedLevels.filter(l => !selectedLevels.includes(l));
+      // Levels in both selectedLevels and downloadedLevels are left untouched
+
+      // Delete deselected levels
+      for (const level of levelsToDelete) {
+        await deleteLevelCache(level);
+      }
+
+      // Download new levels (only if there are any)
+      if (levelsToDownload.length > 0) {
+        const result = await downloadLevels(levelsToDownload, (progress) => {
+          setDownloadProgress(progress);
+        });
+
+        if (result.failed.length > 0) {
+          setFailedUrls(result.failed);
+        }
+      }
+
+      setDownloadedLevels(selectedLevels);
+      setLastDownloadDate(new Date().toISOString());
+
+      // Refresh cache size
+      const size = await getTotalCacheSize();
+      setTotalCacheSize(size);
+    } catch {
+      // Download error handled via progress callback
+    } finally {
+      setIsDownloading(false);
+    }
+  }, [selectedLevels, isDownloading, downloadedLevels, setDownloadedLevels, setLastDownloadDate]);
+
+  const handleRetryFailed = useCallback(async () => {
+    if (failedUrls.length === 0 || isDownloading) return;
+    setIsDownloading(true);
+
+    try {
+      const result = await downloadLevels(selectedLevels, (progress) => {
+        setDownloadProgress(progress);
+      });
+
+      setFailedUrls(result.failed);
+
+      if (result.failed.length === 0) {
+        setDownloadedLevels(selectedLevels);
+        setLastDownloadDate(new Date().toISOString());
+      }
+
+      const size = await getTotalCacheSize();
+      setTotalCacheSize(size);
+    } catch {
+      // Error handled via progress
+    } finally {
+      setIsDownloading(false);
+    }
+  }, [failedUrls, isDownloading, selectedLevels, setDownloadedLevels, setLastDownloadDate]);
 
   const handleSave = () => {
     if (!hasChanges) return;
@@ -180,23 +308,28 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
             className={`compact-settings__tab ${activeTab === 'general' ? 'compact-settings__tab--active' : ''}`}
           >
             <Palette className="compact-settings__tab-icon" />
-            <span className="compact-settings__tab-title">{t('settings.generalSettings')}</span>
+            <span className="compact-settings__tab-title">General</span>
           </button>
           <button
             onClick={() => setActiveTab('games')}
             className={`compact-settings__tab ${activeTab === 'games' ? 'compact-settings__tab--active' : ''}`}
           >
             <Gamepad2 className="compact-settings__tab-icon" />
-            <span className="compact-settings__tab-title compact-settings__tab-title--compact">
-              {t('settings.itemSettings')}
-            </span>
+            <span className="compact-settings__tab-title">Games</span>
           </button>
           <button
             onClick={() => setActiveTab('categories')}
             className={`compact-settings__tab ${activeTab === 'categories' ? 'compact-settings__tab--active' : ''}`}
           >
             <Wrench className="compact-settings__tab-icon" />
-            <span className="compact-settings__tab-title">{t('settings.categorySettings')}</span>
+            <span className="compact-settings__tab-title">Categories</span>
+          </button>
+          <button
+            onClick={() => setActiveTab('offline')}
+            className={`compact-settings__tab ${activeTab === 'offline' ? 'compact-settings__tab--active' : ''}`}
+          >
+            <WifiOff className="compact-settings__tab-icon" />
+            <span className="compact-settings__tab-title">Offline</span>
           </button>
         </div>
 
@@ -246,49 +379,51 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
                   </select>
                 </div>
 
-                <div className="compact-settings__field compact-settings__field--dev">
-                  <div className="compact-settings__toggle-container">
-                    <label
-                      className="compact-settings__label compact-settings__label--dev"
-                      title={t(
-                        'settings.developmentModeDescription',
-                        'Unlock all modes for testing'
-                      )}
-                    >
-                      🔧 Dev Mode:{' '}
-                      {localDevelopmentMode ? t('settings.enabled') : t('settings.disabled')}
-                    </label>
-                    <input
-                      type="checkbox"
-                      id="developmentMode"
-                      className="compact-settings__toggle"
-                      checked={localDevelopmentMode}
-                      onChange={e => setLocalDevelopmentMode(e.target.checked)}
-                    />
+                <div className="compact-settings__toggles-row">
+                  <div className="compact-settings__field compact-settings__field--dev">
+                    <div className="compact-settings__toggle-container">
+                      <label
+                        className="compact-settings__label compact-settings__label--dev"
+                        title={t(
+                          'settings.developmentModeDescription',
+                          'Unlock all modes for testing'
+                        )}
+                      >
+                        🔧 Dev Mode
+                      </label>
+                      <input
+                        type="checkbox"
+                        id="developmentMode"
+                        className="compact-settings__toggle"
+                        checked={localDevelopmentMode}
+                        onChange={e => setLocalDevelopmentMode(e.target.checked)}
+                      />
+                    </div>
+                  </div>
+
+                  <div className="compact-settings__field compact-settings__field--dev">
+                    <div className="compact-settings__toggle-container">
+                      <label
+                        className="compact-settings__label compact-settings__label--dev"
+                        title={t(
+                          'settings.randomizeItemsDescription',
+                          'Shuffle cards, questions and exercises in random order'
+                        )}
+                      >
+                        🎲 Randomize
+                      </label>
+                      <input
+                        type="checkbox"
+                        id="randomizeItems"
+                        className="compact-settings__toggle"
+                        checked={localRandomizeItems}
+                        onChange={e => setLocalRandomizeItems(e.target.checked)}
+                      />
+                    </div>
                   </div>
                 </div>
 
-                <div className="compact-settings__field compact-settings__field--dev">
-                  <div className="compact-settings__toggle-container">
-                    <label
-                      className="compact-settings__label compact-settings__label--dev"
-                      title={t(
-                        'settings.randomizeItemsDescription',
-                        'Shuffle cards, questions and exercises in random order'
-                      )}
-                    >
-                      🎲 {t('settings.randomizeItems')}:{' '}
-                      {localRandomizeItems ? t('settings.enabled') : t('settings.disabled')}
-                    </label>
-                    <input
-                      type="checkbox"
-                      id="randomizeItems"
-                      className="compact-settings__toggle"
-                      checked={localRandomizeItems}
-                      onChange={e => setLocalRandomizeItems(e.target.checked)}
-                    />
-                  </div>
-                </div>
+
               </div>
             </div>
           )}
@@ -533,9 +668,106 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
               </div>
             </div>
           )}
-        </div>
 
-        {/* Footer Actions - Homologated with other modals */}
+          {/* Offline Tab */}
+          {activeTab === 'offline' && (
+            <div className="compact-settings__section">
+              <div className="compact-settings__fields">
+                <div className="compact-settings__offline-toggle">
+                  <div className="compact-settings__toggle-container">
+                    <label className="compact-settings__label">
+                      <WifiOff className="compact-settings__offline-icon" />
+                      {t('offline.title')}:{' '}
+                      {offlineEnabled && downloadedLevels.length > 0
+                        ? t('offline.enabled')
+                        : t('offline.disabled')}
+                    </label>
+                    <input
+                      type="checkbox"
+                      id="offlineMode"
+                      className="compact-settings__toggle"
+                      checked={offlineEnabled}
+                      onChange={e => handleToggleOffline(e.target.checked)}
+                      disabled={!cacheSupported}
+                    />
+                  </div>
+                </div>
+
+                {offlineEnabled && (
+                  <>
+                    <div className="compact-settings__offline-levels">
+                      <span className="compact-settings__offline-levels-label">
+                        {t('offline.selectLevels')}
+                      </span>
+                      <div className="compact-settings__offline-levels-grid">
+                        {allLevels.map(lvl => (
+                          <label key={lvl} className="compact-settings__offline-level-item">
+                            <input
+                              type="checkbox"
+                              checked={selectedLevels.includes(lvl)}
+                              onChange={e => handleLevelCheckbox(lvl, e.target.checked)}
+                              disabled={isDownloading}
+                            />
+                            <span>{lvl.toUpperCase()}</span>
+                          </label>
+                        ))}
+                      </div>
+                      <button
+                        className="compact-settings__offline-download-btn"
+                        onClick={handleDownload}
+                        disabled={selectedLevels.length === 0 || isDownloading}
+                      >
+                        {isDownloading ? t('offline.downloading') : t('offline.download')}
+                      </button>
+                    </div>
+
+                    {isDownloading && downloadProgress && (
+                      <div className="compact-settings__offline-progress">
+                        <div className="compact-settings__offline-progress-bar">
+                          <div
+                            className="compact-settings__offline-progress-fill"
+                            style={{
+                              width: `${downloadProgress.total > 0 ? (downloadProgress.completed / downloadProgress.total) * 100 : 0}%`,
+                            }}
+                          />
+                        </div>
+                        <span className="compact-settings__offline-progress-text">
+                          {downloadProgress.completed}/{downloadProgress.total}
+                        </span>
+                      </div>
+                    )}
+
+                    {failedUrls.length > 0 && !isDownloading && (
+                      <div className="compact-settings__offline-failed">
+                        <span>{t('offline.filesFailedCount', undefined, { count: failedUrls.length })}</span>
+                        <button
+                          className="compact-settings__offline-retry-btn"
+                          onClick={handleRetryFailed}
+                        >
+                          {t('offline.retryFailed')}
+                        </button>
+                      </div>
+                    )}
+
+                    {downloadedLevels.length > 0 && (
+                      <div className="compact-settings__offline-storage">
+                        <span>
+                          {t('offline.storage')}: {formatStorageSize(totalCacheSize)}
+                        </span>
+                        <button
+                          className="compact-settings__offline-manage-btn"
+                          onClick={() => setIsModalOpen(true)}
+                        >
+                          {t('offline.manageDownloads')}
+                        </button>
+                      </div>
+                    )}
+                  </>
+                )}
+              </div>
+            </div>
+          )}
+        </div>
         <div className="modal__actions modal__actions--single">
           <button
             onClick={handleSaveAndClose}
@@ -547,6 +779,8 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
           </button>
         </div>
       </div>
+
+      <DownloadManagerModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </div>
   );
 };

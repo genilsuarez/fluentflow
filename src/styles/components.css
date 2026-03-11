@@ -28,6 +28,7 @@
 @import './components/sorting-modal.css';
 @import './components/toast-card.css';
 @import './components/toast.css';
+@import './components/download-manager.css';
 
 /* Safari Mobile Specific Fixes */
 @import './safari-mobile-fixes.css';

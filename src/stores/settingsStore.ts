@@ -40,6 +40,11 @@ interface SettingsState {
   // Max limits based on available data
   maxLimits: MaxLimits;
 
+  // Offline
+  offlineEnabled: boolean;
+  downloadedLevels: string[];
+  lastDownloadDate: string | null;
+
   // Actions
   setTheme: (theme: 'light' | 'dark') => void;
   setLanguage: (language: 'en' | 'es') => void;
@@ -49,6 +54,9 @@ interface SettingsState {
   setCategories: (categories: string[]) => void;
   setGameSetting: (mode: keyof GameSettings, setting: string, value: number) => void;
   updateMaxLimits: (limits: MaxLimits) => void;
+  setOfflineEnabled: (enabled: boolean) => void;
+  setDownloadedLevels: (levels: string[]) => void;
+  setLastDownloadDate: (date: string | null) => void;
 }
 
 // Default categories for fallback and migration
@@ -84,6 +92,11 @@ export const useSettingsStore = create<SettingsState>()(
         maxCategories: 10,
       },
 
+      // Offline defaults
+      offlineEnabled: false,
+      downloadedLevels: [],
+      lastDownloadDate: null,
+
       // Actions
       setTheme: theme => {
         set({ theme });
@@ -115,10 +128,16 @@ export const useSettingsStore = create<SettingsState>()(
       },
 
       updateMaxLimits: limits => set({ maxLimits: limits }),
+
+      setOfflineEnabled: enabled => set({ offlineEnabled: enabled }),
+
+      setDownloadedLevels: levels => set({ downloadedLevels: levels }),
+
+      setLastDownloadDate: date => set({ lastDownloadDate: date }),
     }),
     {
       name: 'settings-storage',
-      version: 4,
+      version: 5,
       migrate: (persistedState: any, version: number) => {
         // Migration from version 1 to version 2
         if (version < 2) {
@@ -140,6 +159,15 @@ export const useSettingsStore = create<SettingsState>()(
           persistedState = {
             ...persistedState,
             categories: currentCategories.filter((c: string) => !REMOVED_CATEGORIES.includes(c)),
+          };
+        }
+        // Migration from version 4 to version 5: add offline fields
+        if (version < 5) {
+          persistedState = {
+            ...persistedState,
+            offlineEnabled: false,
+            downloadedLevels: [],
+            lastDownloadDate: null,
           };
         }
         return persistedState;
