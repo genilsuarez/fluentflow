@@ -6,31 +6,35 @@
   flex-direction: column;
 }
 
-/* Reading mode: lock viewport height so footer stays visible */
+/* Reading mode: centered container with fixed dimensions */
 .layout-container[data-view='reading'] {
-  height: 100vh;
-  height: 100dvh;
-  overflow: hidden;
+  height: auto;
+  min-height: 100vh;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .layout-container[data-view='reading'] main {
-  flex: 1;
-  overflow: hidden;
-  min-height: 0;
-  padding: 0.5rem 0.5rem 1rem;
-  display: flex;
-  flex-direction: column;
+  flex: 0 0 auto;
+  overflow: visible;
+  padding: 1rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* Mobile: Adjust reading mode for hidden header */
+/* Mobile: Adjust reading mode for smaller screens */
 @media (max-width: 767px) {
   .layout-container[data-view='reading'] {
-    height: 100vh;
-    height: 100dvh;
+    min-height: 100vh;
+    align-items: flex-start;
+    padding-top: 1rem;
   }
   
   .layout-container[data-view='reading'] main {
-    padding: 0.5rem 0.5rem 1rem;
+    padding: 0.5rem;
   }
 }
 
