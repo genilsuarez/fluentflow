@@ -292,17 +292,18 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
   };
 
   return (
-    <div className="compact-settings">
-      <div className="compact-settings__container">
-        <div className="compact-settings__header">
-          <div className="compact-settings__title-section">
-            <Settings className="compact-settings__icon" />
-            <h2 className="compact-settings__title">{t('modals.advancedSettings')}</h2>
+    <>
+      <div className="compact-settings">
+        <div className="compact-settings__container">
+          <div className="compact-settings__header">
+            <div className="compact-settings__title-section">
+              <Settings className="compact-settings__icon" />
+              <h2 className="compact-settings__title">{t('modals.advancedSettings')}</h2>
+            </div>
+            <button onClick={onClose} className="modal__close-btn" aria-label={t('common.close')}>
+              <X className="modal__close-icon" />
+            </button>
           </div>
-          <button onClick={onClose} className="modal__close-btn" aria-label={t('common.close')}>
-            <X className="modal__close-icon" />
-          </button>
-        </div>
 
         {/* Tab Navigation */}
         <div className="compact-settings__tabs">
@@ -782,8 +783,9 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
           </button>
         </div>
       </div>
+    </div>
 
       <DownloadManagerModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
-    </div>
+    </>
   );
 };
