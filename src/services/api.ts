@@ -1,7 +1,6 @@
 import { secureJsonFetch, validateUrl } from '../utils/secureHttp';
 import { getLearningModulesPath, getAssetPath } from '../utils/pathUtils';
 import { logError, logDebug } from '../utils/logger';
-import { getCachedResponse } from './offlineManager';
 import type { LearningModule } from '../types';
 
 /**
@@ -59,29 +58,7 @@ class ApiService {
 
     const modulesUrl = getLearningModulesPath();
 
-    // If offline, skip network and go straight to Cache API
-    if (!navigator.onLine) {
-      logDebug('Offline: attempting Cache API fallback for modules', undefined, 'ApiService');
-      const cachedResponse = await getCachedResponse(modulesUrl);
-      if (cachedResponse) {
-        const modules = await cachedResponse.json();
-        const enhancedModules = modules.map((module: LearningModule) => ({
-          ...module,
-          estimatedTime: module.estimatedTime ?? 5,
-          difficulty: module.difficulty ?? 3,
-          tags: module.tags ?? [module.category],
-        }));
-        this.setCache(cacheKey, enhancedModules);
-        logDebug(
-          'Served modules from Cache API (offline)',
-          { count: enhancedModules.length },
-          'ApiService'
-        );
-        return { data: enhancedModules, success: true };
-      }
-      return { data: [], success: false, error: 'MODULE_NOT_AVAILABLE_OFFLINE' };
-    }
-
+    // Let service worker handle offline/online - it has network-first with cache fallback
     try {
       const validatedUrl = validateUrl(modulesUrl);
       const modules = await secureJsonFetch<LearningModule[]>(validatedUrl);
@@ -99,30 +76,6 @@ class ApiService {
 
       return { data: enhancedModules, success: true };
     } catch (error) {
-      // Network failed: fallback to Cache API
-      logDebug(
-        'Network failed, attempting Cache API fallback for modules',
-        undefined,
-        'ApiService'
-      );
-      const cachedResponse = await getCachedResponse(modulesUrl);
-      if (cachedResponse) {
-        const modules = await cachedResponse.json();
-        const enhancedModules = modules.map((module: LearningModule) => ({
-          ...module,
-          estimatedTime: module.estimatedTime ?? 5,
-          difficulty: module.difficulty ?? 3,
-          tags: module.tags ?? [module.category],
-        }));
-        this.setCache(cacheKey, enhancedModules);
-        logDebug(
-          'Served modules from Cache API (network fallback)',
-          { count: enhancedModules.length },
-          'ApiService'
-        );
-        return { data: enhancedModules, success: true };
-      }
-
       const errorMessage = error instanceof Error ? error.message : 'Unknown error';
       logError('Failed to fetch modules', { error: errorMessage }, 'ApiService');
       return { data: [], success: false, error: errorMessage };
@@ -150,15 +103,6 @@ class ApiService {
       // First get module metadata
       const modulesResponse = await this.fetchModules();
       if (!modulesResponse.success) {
-        console.error('[ApiService] Failed to fetch modules list');
-        // If offline and modules list failed, propagate the offline error
-        if (!navigator.onLine) {
-          return {
-            data: {} as LearningModule,
-            success: false,
-            error: 'MODULE_NOT_AVAILABLE_OFFLINE',
-          };
-        }
         throw new Error('Failed to fetch modules list');
       }
 
@@ -179,40 +123,13 @@ class ApiService {
 
         let data: any;
 
-        if (!navigator.onLine) {
-          // Offline: go straight to Cache API
-          logDebug(
-            'Offline: attempting Cache API fallback for module data',
-            { moduleId },
-            'ApiService'
-          );
-          const cachedResponse = await getCachedResponse(dataUrl);
-          if (cachedResponse) {
-            data = await cachedResponse.json();
-          } else {
-            return {
-              data: {} as LearningModule,
-              success: false,
-              error: 'MODULE_NOT_AVAILABLE_OFFLINE',
-            };
-          }
-        } else {
-          // Online: try network first, fallback to Cache API
-          try {
-            data = await secureJsonFetch(dataUrl);
-          } catch (fetchError) {
-            logDebug(
-              'Network failed, attempting Cache API fallback for module data',
-              { moduleId },
-              'ApiService'
-            );
-            const cachedResponse = await getCachedResponse(dataUrl);
-            if (cachedResponse) {
-              data = await cachedResponse.json();
-            } else {
-              throw fetchError; // Re-throw original error if no cache
-            }
-          }
+        // Let service worker handle offline/online - it has network-first with cache fallback
+        try {
+          data = await secureJsonFetch(dataUrl);
+        } catch (fetchError) {
+          // If fetch fails, service worker should have already tried cache
+          // Re-throw the error to be handled by outer catch
+          throw fetchError;
         }
 
         // Handle different data formats:

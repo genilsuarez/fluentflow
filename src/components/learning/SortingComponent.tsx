@@ -637,17 +637,17 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
       {showExplanation && selectedTerm && (
         <div className="sorting-modal">
           <div className="sorting-modal__container">
-            <div className="sorting-modal__content">
-              <div className="sorting-modal__header">
-                <h3 className="sorting-modal__title">Exercise Summary - Past Tense Verbs</h3>
-                <button
-                  onClick={() => setShowExplanation(false)}
-                  className="sorting-modal__close-btn"
-                >
-                  <X className="sorting-modal__close-icon" />
-                </button>
-              </div>
+            <div className="sorting-modal__header">
+              <h3 className="sorting-modal__title">Exercise Summary - Past Tense Verbs</h3>
+              <button
+                onClick={() => setShowExplanation(false)}
+                className="sorting-modal__close-btn"
+              >
+                <X className="sorting-modal__close-icon" />
+              </button>
+            </div>
 
+            <div className="sorting-modal__content">
               {/* Summary View */}
               <div className="sorting-modal__summary">
                 <div className="sorting-modal__results-grid">
@@ -701,15 +701,15 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
                   ))}
                 </div>
               </div>
+            </div>
 
-              <div className="sorting-modal__actions">
-                <button
-                  onClick={() => setShowExplanation(false)}
-                  className="sorting-modal__close-button"
-                >
-                  Close
-                </button>
-              </div>
+            <div className="sorting-modal__actions">
+              <button
+                onClick={() => setShowExplanation(false)}
+                className="sorting-modal__close-button"
+              >
+                Close
+              </button>
             </div>
           </div>
         </div>
