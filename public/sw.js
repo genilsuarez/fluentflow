@@ -3,8 +3,8 @@
  * Estrategia: Network-first con fallback a Cache API para modo offline
  */
 
-const CACHE_NAME = 'fluentflow-offline-v2';
-const ASSETS_CACHE = 'fluentflow-assets-v2';
+const CACHE_NAME = 'fluentflow-offline-v3';
+const ASSETS_CACHE = 'fluentflow-assets-v3';
 
 // Instalación: pre-cachear assets críticos
 self.addEventListener('install', (event) => {
@@ -127,13 +127,29 @@ self.addEventListener('fetch', (event) => {
         } catch (error) {
           console.log('[SW] Network failed, checking cache:', url.pathname);
           
-          // Try exact match first
-          let cached = await cache.match(request);
+          // Try multiple URL formats for matching
+          let cached = null;
           
-          // If no match, try with absolute URL (for consistency with offlineManager)
-          if (!cached && !request.url.startsWith('http')) {
-            const absoluteUrl = new URL(request.url, self.location.origin).href;
+          // 1. Try exact match with original request
+          cached = await cache.match(request);
+          
+          // 2. Try with absolute URL (add origin if missing)
+          if (!cached) {
+            const absoluteUrl = url.origin + url.pathname;
             cached = await cache.match(absoluteUrl);
+            if (cached) console.log('[SW] ✅ Found with absolute URL');
+          }
+          
+          // 3. Try with just pathname (remove origin if present)
+          if (!cached) {
+            cached = await cache.match(url.pathname);
+            if (cached) console.log('[SW] ✅ Found with pathname only');
+          }
+          
+          // 4. Try ignoring search params
+          if (!cached) {
+            cached = await cache.match(request, { ignoreSearch: true });
+            if (cached) console.log('[SW] ✅ Found ignoring search params');
           }
           
           if (cached) {
