@@ -119,7 +119,6 @@ async function getUrlsForLevels(
  */
 async function preCacheJavaScriptAssets(): Promise<void> {
   try {
-
     // Get all script tags from the current page
     const scripts = Array.from(document.querySelectorAll('script[src]'));
     const scriptUrls = scripts
@@ -130,7 +129,6 @@ async function preCacheJavaScriptAssets(): Promise<void> {
       console.warn('[OfflineManager] No JavaScript assets found to pre-cache');
       return;
     }
-
 
     const assetsCache = await caches.open(ASSETS_CACHE);
 
@@ -151,7 +149,6 @@ async function preCacheJavaScriptAssets(): Promise<void> {
         console.warn('[OfflineManager] Failed to cache JS asset:', url, error);
       }
     }
-
   } catch (error) {
     console.error('[OfflineManager] Pre-cache JavaScript assets failed:', error);
   }
@@ -169,7 +166,6 @@ export async function downloadLevels(
   levels: string[],
   onProgress: (progress: DownloadProgress) => void
 ): Promise<DownloadProgress> {
-
   // Pre-cache JavaScript assets first (critical for offline functionality)
   await preCacheJavaScriptAssets();
 
@@ -191,7 +187,6 @@ export async function downloadLevels(
   if (!allUrls.includes(modulesUrl)) {
     allUrls.unshift(modulesUrl);
   }
-
 
   const total = allUrls.length;
   const failed: string[] = [];
