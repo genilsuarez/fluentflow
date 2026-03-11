@@ -3,8 +3,8 @@
  * Estrategia: Network-first con fallback a Cache API para modo offline
  */
 
-const CACHE_NAME = 'fluentflow-offline-v4';
-const ASSETS_CACHE = 'fluentflow-assets-v5';
+const CACHE_NAME = 'fluentflow-offline-v5';
+const ASSETS_CACHE = 'fluentflow-assets-v6';
 
 // Instalación: pre-cachear assets críticos
 self.addEventListener('install', (event) => {
@@ -125,16 +125,42 @@ self.addEventListener('fetch', (event) => {
           const response = await fetch(request);
           
           if (response.ok) {
-            // Store with absolute URL for consistency
-            cache.put(absoluteUrl, response.clone());
+            // Store with BOTH absolute URL and request for maximum compatibility
+            await cache.put(absoluteUrl, response.clone());
+            await cache.put(request, response.clone());
             console.log('[SW] ✅ Data cached:', url.pathname);
           }
           return response;
         } catch (error) {
           console.log('[SW] Network failed, checking cache:', url.pathname);
           
-          // Try matching with absolute URL (primary strategy)
+          // Try multiple matching strategies for maximum compatibility
           let cached = await cache.match(absoluteUrl);
+          
+          if (!cached) {
+            // Try with original request
+            cached = await cache.match(request);
+          }
+          
+          if (!cached) {
+            // Try with ignoreSearch option (ignores query params)
+            cached = await cache.match(absoluteUrl, { ignoreSearch: true });
+          }
+          
+          if (!cached) {
+            // Last resort: try matching just by pathname
+            const keys = await cache.keys();
+            for (const cachedRequest of keys) {
+              const cachedUrl = new URL(cachedRequest.url);
+              if (cachedUrl.pathname === url.pathname) {
+                cached = await cache.match(cachedRequest);
+                if (cached) {
+                  console.log('[SW] ✅ Matched by pathname:', url.pathname);
+                  break;
+                }
+              }
+            }
+          }
           
           if (cached) {
             console.log('[SW] ✅ Data from cache:', url.pathname);

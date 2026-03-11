@@ -11,8 +11,8 @@ import { logDebug, logError } from '../utils/logger';
 import type { LearningModule } from '../types';
 
 // Isolated cache names to avoid interfering with other browser data
-export const CACHE_NAME = 'fluentflow-offline-v4';
-export const ASSETS_CACHE = 'fluentflow-assets-v4';
+export const CACHE_NAME = 'fluentflow-offline-v5';
+export const ASSETS_CACHE = 'fluentflow-assets-v6';
 
 export interface DownloadProgress {
   total: number;
@@ -211,7 +211,10 @@ export async function downloadLevels(
   for (const url of allUrls) {
     try {
       const response = await fetchWithRetries(url);
-      await cache.put(url, response);
+      // Store with BOTH absolute URL and as Request for maximum compatibility
+      await cache.put(url, response.clone());
+      // Also store with Request object for service worker compatibility
+      await cache.put(new Request(url), response);
       completed++;
     } catch (error) {
       console.error('[OfflineManager] ❌ Failed:', url, error);
