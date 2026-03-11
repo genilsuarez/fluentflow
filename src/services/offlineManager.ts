@@ -10,8 +10,9 @@ import { getLearningModulesPath, getAssetPath } from '../utils/pathUtils';
 import { logDebug, logError } from '../utils/logger';
 import type { LearningModule } from '../types';
 
-// Isolated cache name to avoid interfering with other browser data
-export const CACHE_NAME = 'fluentflow-offline-v1';
+// Isolated cache names to avoid interfering with other browser data
+export const CACHE_NAME = 'fluentflow-offline-v2';
+export const ASSETS_CACHE = 'fluentflow-assets-v2';
 
 export interface DownloadProgress {
   total: number;
@@ -113,10 +114,60 @@ async function getUrlsForLevels(
 }
 
 /**
+ * Pre-cache JavaScript assets by loading the app's main chunks
+ * This ensures component chunks are available offline
+ */
+async function preCacheJavaScriptAssets(): Promise<void> {
+  try {
+    console.log('[OfflineManager] Pre-caching JavaScript assets...');
+    
+    // Get all script tags from the current page
+    const scripts = Array.from(document.querySelectorAll('script[src]'));
+    const scriptUrls = scripts
+      .map(script => (script as HTMLScriptElement).src)
+      .filter(src => src.includes('/assets/') && src.endsWith('.js'));
+
+    if (scriptUrls.length === 0) {
+      console.warn('[OfflineManager] No JavaScript assets found to pre-cache');
+      return;
+    }
+
+    console.log('[OfflineManager] Found', scriptUrls.length, 'JavaScript assets to cache');
+
+    const assetsCache = await caches.open(ASSETS_CACHE);
+    
+    for (const url of scriptUrls) {
+      try {
+        // Check if already cached
+        const cached = await assetsCache.match(url);
+        if (cached) {
+          console.log('[OfflineManager] Already cached:', url);
+          continue;
+        }
+
+        // Fetch and cache
+        const response = await fetch(url);
+        if (response.ok) {
+          await assetsCache.put(url, response);
+          console.log('[OfflineManager] ✅ Cached JS asset:', url);
+        }
+      } catch (error) {
+        console.warn('[OfflineManager] Failed to cache JS asset:', url, error);
+      }
+    }
+
+    console.log('[OfflineManager] JavaScript assets pre-cache complete');
+  } catch (error) {
+    console.error('[OfflineManager] Pre-cache JavaScript assets failed:', error);
+  }
+}
+
+/**
  * Download content for the specified CEFR levels into the Cache API.
  *
  * - Fetches learningModules.json, filters by level
  * - Downloads each file sequentially with retries (1 original + 2 retries, backoff 1s/2s)
+ * - Pre-caches JavaScript assets for offline component loading
  * - Calls onProgress with monotonically increasing completed count
  */
 export async function downloadLevels(
@@ -124,6 +175,9 @@ export async function downloadLevels(
   onProgress: (progress: DownloadProgress) => void
 ): Promise<DownloadProgress> {
   console.log('[OfflineManager] Starting download for levels:', levels);
+
+  // Pre-cache JavaScript assets first (critical for offline functionality)
+  await preCacheJavaScriptAssets();
 
   const allModules = await fetchModulesList();
   const urlsByLevel = await getUrlsForLevels(levels, allModules);
@@ -204,10 +258,13 @@ export async function deleteLevelCache(level: string): Promise<void> {
 }
 
 /**
- * Delete the entire offline cache (fluentflow-offline-v1).
+ * Delete the entire offline cache (both data and assets).
  */
 export async function deleteAllCache(): Promise<void> {
-  await caches.delete(CACHE_NAME);
+  await Promise.all([
+    caches.delete(CACHE_NAME),
+    caches.delete(ASSETS_CACHE)
+  ]);
   logDebug('Deleted all offline cache', undefined, 'OfflineManager');
 }
 
