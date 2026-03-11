@@ -125,7 +125,7 @@ const AppContent: React.FC = () => {
     return () => {
       window.removeEventListener('hashchange', handleHashChange);
     };
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, []);
 
   // Handle view changes and cleanup
   useEffect(() => {
