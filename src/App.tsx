@@ -88,11 +88,11 @@ const AppContent: React.FC = () => {
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash;
-      
+
       // Parse hash format: #/learn/module-id
       if (hash.startsWith('#/learn/')) {
         const moduleId = hash.replace('#/learn/', '');
-        
+
         // Only update if different from current state
         const { currentModule, setCurrentModule, setCurrentView } = useAppStore.getState();
         if (!currentModule || currentModule.id !== moduleId) {
@@ -121,7 +121,7 @@ const AppContent: React.FC = () => {
 
     // Listen for hash changes
     window.addEventListener('hashchange', handleHashChange);
-    
+
     return () => {
       window.removeEventListener('hashchange', handleHashChange);
     };

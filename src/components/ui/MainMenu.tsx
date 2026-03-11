@@ -165,7 +165,7 @@ export const MainMenu: React.FC = () => {
     setPreviousMenuContext(viewMode);
     setCurrentModule(module);
     setCurrentView(module.learningMode);
-    
+
     // Update URL hash for proper navigation
     window.location.hash = `#/learn/${module.id}`;
   };
