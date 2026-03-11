@@ -8,15 +8,30 @@
 
 /* Reading mode: lock viewport height so footer stays visible */
 .layout-container[data-view='reading'] {
-  height: 100dvh;
-  overflow: hidden;
+  height: auto;
+  min-height: 100vh;
+  overflow: visible;
 }
 
 .layout-container[data-view='reading'] main {
   flex: 1;
-  overflow: hidden;
+  overflow: visible;
   min-height: 0;
-  padding: 0 0.5rem 1.5rem;
+  padding: 0.5rem 0.5rem 1rem;
+}
+
+/* Mobile: Adjust reading mode height to account for hidden header */
+@media (max-width: 767px) {
+  .layout-container[data-view='reading'] {
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+  
+  .layout-container[data-view='reading'] main {
+    padding: 0.5rem 0.5rem 1rem;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 /* Mobile optimization for layout container - ONLY for main menu */
