@@ -143,13 +143,9 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
         setFailedUrls([]);
       } else {
         setOfflineEnabled(true);
-        // Only pre-select current level if it's a specific level (not 'all')
-        if (level !== 'all') {
-          setSelectedLevels([level]);
-        } else {
-          // If level is 'all', don't pre-select any level - let user choose
-          setSelectedLevels([]);
-        }
+        // Always pre-select current level, or 'a1' if level is 'all'
+        const defaultLevel = level === 'all' ? 'a1' : level;
+        setSelectedLevels([defaultLevel]);
       }
     },
     [level, setOfflineEnabled, setDownloadedLevels, setLastDownloadDate]
