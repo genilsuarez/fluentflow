@@ -168,13 +168,7 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
   }, []);
 
   const handleDownload = useCallback(async () => {
-      selectedLevels,
-      isDownloading,
-      downloadedLevels,
-    });
-
     if (selectedLevels.length === 0) {
-      console.warn('[UI] No levels selected, aborting');
       return;
     }
 
@@ -192,10 +186,6 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
       const levelsToDownload = selectedLevels.filter(l => !downloadedLevels.includes(l));
       const levelsToDelete = downloadedLevels.filter(l => !selectedLevels.includes(l));
 
-        levelsToDownload,
-        levelsToDelete,
-      });
-
       // Delete deselected levels
       for (const level of levelsToDelete) {
         await deleteLevelCache(level);
@@ -207,12 +197,9 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
           setDownloadProgress(progress);
         });
 
-
         if (result.failed.length > 0) {
-          console.error('[UI] Failed URLs:', result.failed);
           setFailedUrls(result.failed);
         }
-      } else {
       }
 
       setDownloadedLevels(selectedLevels);
@@ -222,7 +209,7 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
       const size = await getTotalCacheSize();
       setTotalCacheSize(size);
     } catch (error) {
-      console.error('[UI] Download error:', error);
+      logError('Download error', { error }, 'CompactAdvancedSettings');
     } finally {
       setIsDownloading(false);
     }
