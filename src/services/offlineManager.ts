@@ -123,6 +123,8 @@ export async function downloadLevels(
   levels: string[],
   onProgress: (progress: DownloadProgress) => void
 ): Promise<DownloadProgress> {
+  console.log('[OfflineManager] Starting download for levels:', levels);
+  
   const allModules = await fetchModulesList();
   const urlsByLevel = await getUrlsForLevels(levels, allModules);
 
@@ -142,6 +144,9 @@ export async function downloadLevels(
     allUrls.unshift(modulesUrl);
   }
 
+  console.log('[OfflineManager] URLs to download:', allUrls.length);
+  console.log('[OfflineManager] First 3 URLs:', allUrls.slice(0, 3));
+
   const total = allUrls.length;
   const failed: string[] = [];
   let completed = 0;
@@ -154,10 +159,13 @@ export async function downloadLevels(
   // Download sequentially
   for (const url of allUrls) {
     try {
+      console.log('[OfflineManager] Downloading:', url);
       const response = await fetchWithRetries(url);
       await cache.put(url, response);
+      console.log('[OfflineManager] ✅ Cached:', url);
       completed++;
     } catch (error) {
+      console.error('[OfflineManager] ❌ Failed:', url, error);
       failed.push(url);
       completed++;
       logError(
@@ -171,6 +179,7 @@ export async function downloadLevels(
     onProgress({ total, completed, failed: [...failed] });
   }
 
+  console.log('[OfflineManager] Download complete. Total:', total, 'Failed:', failed.length);
   logDebug('Download complete', { total, completed, failedCount: failed.length }, 'OfflineManager');
 
   return { total, completed, failed };
