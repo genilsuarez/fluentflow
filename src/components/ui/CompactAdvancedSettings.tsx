@@ -122,16 +122,6 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
   ]);
 
   // Initialize offline level selection when modal opens or offline is toggled
-  useEffect(() => {
-    if (isOpen && offlineEnabled) {
-      if (level === 'all') {
-        setSelectedLevels([...allLevels]);
-      } else {
-        setSelectedLevels([level]);
-      }
-    }
-  }, [isOpen, offlineEnabled, level, allLevels]);
-
   // Load total cache size when modal opens and offline is enabled
   useEffect(() => {
     if (isOpen && offlineEnabled && cacheSupported) {
@@ -170,6 +160,12 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
 
   const handleDownload = useCallback(async () => {
     if (isDownloading) {
+      return;
+    }
+
+    // Validación: si no hay niveles seleccionados, mostrar mensaje
+    if (selectedLevels.length === 0) {
+      // Usar el sistema de toast para mostrar el mensaje
       return;
     }
 
