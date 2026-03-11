@@ -167,7 +167,17 @@ export const AppRouter: React.FC = () => {
   }
 
   // For learning modes, we need a module
-  const moduleId = currentModule?.id;
+  // Try to get moduleId from currentModule, or fallback to hash
+  let moduleId = currentModule?.id;
+  
+  // If no moduleId in Zustand, try to extract from hash (handles race condition)
+  if (!moduleId) {
+    const hash = window.location.hash;
+    if (hash.startsWith('#/learn/')) {
+      moduleId = hash.replace('#/learn/', '');
+    }
+  }
+  
   if (!moduleId) {
     return (
       <div className="app-router__no-module">
