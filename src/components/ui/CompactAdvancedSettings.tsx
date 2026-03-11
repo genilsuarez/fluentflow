@@ -143,14 +143,16 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
         setFailedUrls([]);
       } else {
         setOfflineEnabled(true);
-        if (level === 'all') {
-          setSelectedLevels([...allLevels]);
-        } else {
+        // Only pre-select current level if it's a specific level (not 'all')
+        if (level !== 'all') {
           setSelectedLevels([level]);
+        } else {
+          // If level is 'all', don't pre-select any level - let user choose
+          setSelectedLevels([]);
         }
       }
     },
-    [level, allLevels, setOfflineEnabled, setDownloadedLevels, setLastDownloadDate]
+    [level, setOfflineEnabled, setDownloadedLevels, setLastDownloadDate]
   );
 
   const handleLevelCheckbox = useCallback((lvl: string, checked: boolean) => {
