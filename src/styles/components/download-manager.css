@@ -35,9 +35,9 @@
   max-width: 20rem;
   width: 100%;
   max-height: 80vh;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
+  overflow: visible;
 }
 
 /* === HEADER === */
@@ -47,10 +47,9 @@
   justify-content: space-between;
   gap: 0.5rem;
   padding: 0.5rem;
+  min-height: 3rem;
   background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
   border-radius: var(--radius-lg, 0.5rem) var(--radius-lg, 0.5rem) 0 0;
-  position: relative;
-  z-index: 10;
   flex-shrink: 0;
 }
 
@@ -74,14 +73,14 @@
   border-radius: 50%;
   width: 2rem;
   height: 2rem;
+  min-width: 2rem;
+  min-height: 2rem;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: all 0.2s ease;
-  position: relative;
-  z-index: 20;
 }
 
 .download-manager__header .modal__close-btn:hover {
@@ -95,12 +94,12 @@
   padding: 0.75rem;
   flex: 1;
   overflow-y: auto;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
   background-color: var(--theme-bg-subtle, #fafafa);
-  position: relative;
-  z-index: 1;
+  border-radius: 0 0 var(--radius-lg, 0.5rem) var(--radius-lg, 0.5rem);
 }
 
 /* === LIST === */
