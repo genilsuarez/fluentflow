@@ -183,7 +183,7 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
         {isObjectivesPage ? (
           <div className="reading-component__objectives-page">
             {/* Estimated reading time badge */}
-            {readingData.estimatedReadingTime && (
+            {readingData.estimatedReadingTime && readingSections.length > 0 && (
               <div className="reading-component__objectives-page-meta">
                 <span className="reading-component__time-badge">
                   <svg
