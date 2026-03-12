@@ -204,6 +204,9 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                     time: String(readingData.estimatedReadingTime),
                   })}
                 </span>
+                <span className="reading-component__sections-badge">
+                  {readingSections.length} {readingSections.length === 1 ? t('reading.component.section', undefined, { default: 'section' }) : t('reading.component.sections', undefined, { default: 'sections' })}
+                </span>
               </div>
             )}
 
