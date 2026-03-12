@@ -110,17 +110,41 @@ const AppContent: React.FC = () => {
           return;
         }
 
-        // Module needs to be loaded - fetch module metadata
-        const { fetchModules } = await import('./services/api');
-        const response = await fetchModules();
+        try {
+          // Module needs to be loaded - fetch module metadata
+          const { fetchModules } = await import('./services/api');
+          const response = await fetchModules();
 
-        if (response.success) {
-          const module = response.data.find(m => m.id === moduleId);
-          if (module) {
-            const { setCurrentModule, setCurrentView } = useAppStore.getState();
-            setCurrentModule(module);
-            setCurrentView(module.learningMode);
+          if (!response.success || !response.data) {
+            console.error('[App] Failed to fetch modules:', response.error);
+            // Fallback to menu on error
+            const { setCurrentView, setCurrentModule } = useAppStore.getState();
+            setCurrentModule(null);
+            setCurrentView('menu');
+            return;
           }
+
+          const module = response.data.find(m => m.id === moduleId);
+
+          if (!module) {
+            console.error('[App] Module not found:', moduleId);
+            // Fallback to menu if module not found
+            const { setCurrentView, setCurrentModule } = useAppStore.getState();
+            setCurrentModule(null);
+            setCurrentView('menu');
+            return;
+          }
+
+          // Module found - update state
+          const { setCurrentModule, setCurrentView } = useAppStore.getState();
+          setCurrentModule(module);
+          setCurrentView(module.learningMode);
+        } catch (error) {
+          console.error('[App] Error in handleHashChange:', error);
+          // Fallback to menu on exception
+          const { setCurrentView, setCurrentModule } = useAppStore.getState();
+          setCurrentModule(null);
+          setCurrentView('menu');
         }
       } else if (hash === '' || hash === '#/' || hash === '#/menu') {
         // Navigate to menu
