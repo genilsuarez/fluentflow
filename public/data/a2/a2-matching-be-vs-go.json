@@ -1,0 +1,102 @@
+[
+  {
+    "left": "I am at home",
+    "right": "Estoy en casa (ubicación)",
+    "explanation": "Use 'be' for location/state"
+  },
+  {
+    "left": "I go home",
+    "right": "Voy a casa (movimiento)",
+    "explanation": "Use 'go' for movement/direction"
+  },
+  {
+    "left": "She is in the office",
+    "right": "Ella está en la oficina (ubicación)",
+    "explanation": "Use 'be' for current location"
+  },
+  {
+    "left": "She goes to the office",
+    "right": "Ella va a la oficina (movimiento)",
+    "explanation": "Use 'go' for movement towards a place"
+  },
+  {
+    "left": "They are at school",
+    "right": "Ellos están en la escuela (ubicación)",
+    "explanation": "Use 'be' to indicate presence"
+  },
+  {
+    "left": "They go to school",
+    "right": "Ellos van a la escuela (movimiento)",
+    "explanation": "Use 'go' for regular movement/routine"
+  },
+  {
+    "left": "We are happy",
+    "right": "Estamos felices (estado)",
+    "explanation": "Use 'be' for emotional states"
+  },
+  {
+    "left": "We go shopping",
+    "right": "Vamos de compras (actividad)",
+    "explanation": "Use 'go' for activities"
+  },
+  {
+    "left": "He is tired",
+    "right": "Él está cansado (estado)",
+    "explanation": "Use 'be' for physical/mental states"
+  },
+  {
+    "left": "He goes running",
+    "right": "Él va a correr (actividad)",
+    "explanation": "Use 'go' + -ing for sports/activities"
+  },
+  {
+    "left": "I am a teacher",
+    "right": "Soy profesor (identidad)",
+    "explanation": "Use 'be' for profession/identity"
+  },
+  {
+    "left": "I go to work",
+    "right": "Voy al trabajo (movimiento)",
+    "explanation": "Use 'go' for movement to workplace"
+  },
+  {
+    "left": "The book is on the table",
+    "right": "El libro está en la mesa (ubicación)",
+    "explanation": "Use 'be' for object location"
+  },
+  {
+    "left": "The bus goes to the station",
+    "right": "El autobús va a la estación (movimiento)",
+    "explanation": "Use 'go' for vehicle movement"
+  },
+  {
+    "left": "You are ready",
+    "right": "Estás listo (estado)",
+    "explanation": "Use 'be' for readiness/state"
+  },
+  {
+    "left": "You go first",
+    "right": "Tú vas primero (acción)",
+    "explanation": "Use 'go' for taking action/turn"
+  },
+  {
+    "left": "It is cold today",
+    "right": "Hace frío hoy (estado)",
+    "explanation": "Use 'be' for weather/temperature"
+  },
+  {
+    "left": "Let's go outside",
+    "right": "Vamos afuera (movimiento)",
+    "explanation": "Use 'go' for movement to a place"
+  },
+  {
+    "left": "The party is at 8pm",
+    "right": "La fiesta es a las 8pm (tiempo)",
+    "explanation": "Use 'be' for time/schedule"
+  },
+  {
+    "left": "I go swimming every day",
+    "right": "Voy a nadar todos los días (actividad)",
+    "explanation": "Use 'go' + -ing for regular activities"
+  }
+]

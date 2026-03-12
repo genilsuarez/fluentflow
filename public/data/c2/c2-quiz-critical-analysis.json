@@ -1,0 +1,122 @@
+[
+  {
+    "question": "What is a <paradigm shift>?",
+    "options": ["minor change", "fundamental transformation in thinking", "temporary adjustment", "error correction"],
+    "correct": "fundamental transformation in thinking",
+    "explanation": "A paradigm shift is a fundamental change in approach or underlying assumptions."
+  },
+  {
+    "question": "What does <epistemological> relate to?",
+    "options": ["emotions", "the nature of knowledge", "physical objects", "time"],
+    "correct": "the nature of knowledge",
+    "explanation": "Epistemological relates to the theory of knowledge and how we know what we know."
+  },
+  {
+    "question": "What is <ontological> concerned with?",
+    "options": ["language", "the nature of being", "mathematics", "history"],
+    "correct": "the nature of being",
+    "explanation": "Ontological relates to the branch of philosophy dealing with the nature of being."
+  },
+  {
+    "question": "What is a <dialectical> approach?",
+    "options": ["one-sided", "based on examining contradictions", "purely emotional", "random"],
+    "correct": "based on examining contradictions",
+    "explanation": "Dialectical refers to a method of examining ideas through contradictions and their resolution."
+  },
+  {
+    "question": "What does <heuristic> mean?",
+    "options": ["definitive answer", "method enabling discovery", "final conclusion", "absolute truth"],
+    "correct": "method enabling discovery",
+    "explanation": "Heuristic refers to a method that enables learning or problem-solving through experimentation."
+  },
+  {
+    "question": "What is <empiricism>?",
+    "options": ["pure logic", "knowledge based on experience", "religious belief", "mathematical proof"],
+    "correct": "knowledge based on experience",
+    "explanation": "Empiricism is the theory that knowledge comes primarily from sensory experience."
+  },
+  {
+    "question": "What is <rationalism>?",
+    "options": ["emotional thinking", "knowledge based on reason", "random guessing", "sensory experience"],
+    "correct": "knowledge based on reason",
+    "explanation": "Rationalism is the theory that reason is the chief source of knowledge."
+  },
+  {
+    "question": "What is <reductionism>?",
+    "options": ["expanding complexity", "simplifying to basic elements", "adding details", "avoiding analysis"],
+    "correct": "simplifying to basic elements",
+    "explanation": "Reductionism is the practice of analyzing complex things by reducing them to simpler components."
+  },
+  {
+    "question": "What does <holistic> mean?",
+    "options": ["focusing on parts", "considering the whole system", "ignoring context", "random approach"],
+    "correct": "considering the whole system",
+    "explanation": "Holistic means characterized by the belief that parts are interconnected and should be viewed as a whole."
+  },
+  {
+    "question": "What is a <dichotomy>?",
+    "options": ["unity", "division into two parts", "multiple options", "gradual change"],
+    "correct": "division into two parts",
+    "explanation": "A dichotomy is a division into two mutually exclusive or contradictory groups."
+  },
+  {
+    "question": "What is an <antithesis>?",
+    "options": ["agreement", "direct opposite", "similarity", "compromise"],
+    "correct": "direct opposite",
+    "explanation": "Antithesis is a person or thing that is the direct opposite of someone or something else."
+  },
+  {
+    "question": "What is a <paradox>?",
+    "options": ["simple truth", "apparent contradiction", "obvious fact", "clear solution"],
+    "correct": "apparent contradiction",
+    "explanation": "A paradox is a seemingly absurd or contradictory statement that may nonetheless be true."
+  },
+  {
+    "question": "What is a <corollary>?",
+    "options": ["contradiction", "natural consequence", "unrelated fact", "opposite"],
+    "correct": "natural consequence",
+    "explanation": "A corollary is a proposition that follows from one already proved."
+  },
+  {
+    "question": "What is a <caveat>?",
+    "options": ["guarantee", "warning or qualification", "promise", "conclusion"],
+    "correct": "warning or qualification",
+    "explanation": "A caveat is a warning or proviso of specific conditions or limitations."
+  },
+  {
+    "question": "What is a <presupposition>?",
+    "options": ["proven fact", "implicit assumption", "final conclusion", "random guess"],
+    "correct": "implicit assumption",
+    "explanation": "A presupposition is a thing tacitly assumed beforehand as the basis of an argument."
+  },
+  {
+    "question": "What is <deduction>?",
+    "options": ["specific to general", "general to specific", "random inference", "emotional reasoning"],
+    "correct": "general to specific",
+    "explanation": "Deduction is reasoning from general principles to specific cases."
+  },
+  {
+    "question": "What is <induction>?",
+    "options": ["general to specific", "specific to general", "circular reasoning", "no reasoning"],
+    "correct": "specific to general",
+    "explanation": "Induction is reasoning from specific observations to general principles."
+  },
+  {
+    "question": "What is <falsifiability>?",
+    "options": ["always true", "capable of being proven false", "never testable", "purely subjective"],
+    "correct": "capable of being proven false",
+    "explanation": "Falsifiability is the capacity for a statement or theory to be proven false by observation."
+  },
+  {
+    "question": "What is a <tautology>?",
+    "options": ["new information", "redundant statement", "false claim", "complex idea"],
+    "correct": "redundant statement",
+    "explanation": "A tautology is a statement that is true by necessity or by virtue of its logical form."
+  },
+  {
+    "question": "What is <ad hominem>?",
+    "options": ["logical argument", "personal attack", "factual evidence", "neutral observation"],
+    "correct": "personal attack",
+    "explanation": "Ad hominem is an argument directed against a person rather than their position."
+  }
+]

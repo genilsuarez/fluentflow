@@ -1,0 +1,122 @@
+[
+  {
+    "question": "What is the opposite of <hot>?",
+    "options": ["warm", "cold", "cool", "freezing"],
+    "correct": "cold",
+    "explanation": "Cold is the direct opposite of hot."
+  },
+  {
+    "question": "Which word means <a place where you live>?",
+    "options": ["house", "car", "office", "school"],
+    "correct": "house",
+    "explanation": "A house is a place where people live."
+  },
+  {
+    "question": "What do you use to <write>?",
+    "options": ["pen", "cup", "plate", "chair"],
+    "correct": "pen",
+    "explanation": "A pen is used for writing."
+  },
+  {
+    "question": "Which is a <color>?",
+    "options": ["table", "blue", "book", "door"],
+    "correct": "blue",
+    "explanation": "Blue is a color."
+  },
+  {
+    "question": "What is the opposite of <big>?",
+    "options": ["large", "huge", "small", "tall"],
+    "correct": "small",
+    "explanation": "Small is the opposite of big."
+  },
+  {
+    "question": "Which word means <happy>?",
+    "options": ["sad", "angry", "glad", "tired"],
+    "correct": "glad",
+    "explanation": "Glad means happy or pleased."
+  },
+  {
+    "question": "What do you use to <eat>?",
+    "options": ["fork", "pen", "key", "phone"],
+    "correct": "fork",
+    "explanation": "A fork is used for eating."
+  },
+  {
+    "question": "Which is a <number>?",
+    "options": ["cat", "seven", "red", "fast"],
+    "correct": "seven",
+    "explanation": "Seven is a number."
+  },
+  {
+    "question": "What is the opposite of <old>?",
+    "options": ["new", "ancient", "broken", "dirty"],
+    "correct": "new",
+    "explanation": "New is the opposite of old."
+  },
+  {
+    "question": "Which word means <very good>?",
+    "options": ["bad", "excellent", "poor", "weak"],
+    "correct": "excellent",
+    "explanation": "Excellent means very good."
+  },
+  {
+    "question": "What do you use to <see>?",
+    "options": ["ears", "eyes", "nose", "mouth"],
+    "correct": "eyes",
+    "explanation": "Eyes are used for seeing."
+  },
+  {
+    "question": "Which is a <day of the week>?",
+    "options": ["January", "Monday", "Summer", "Morning"],
+    "correct": "Monday",
+    "explanation": "Monday is a day of the week."
+  },
+  {
+    "question": "What is the opposite of <fast>?",
+    "options": ["quick", "rapid", "slow", "speedy"],
+    "correct": "slow",
+    "explanation": "Slow is the opposite of fast."
+  },
+  {
+    "question": "Which word means <not difficult>?",
+    "options": ["hard", "easy", "tough", "complex"],
+    "correct": "easy",
+    "explanation": "Easy means not difficult."
+  },
+  {
+    "question": "What do you use to <listen>?",
+    "options": ["eyes", "ears", "hands", "feet"],
+    "correct": "ears",
+    "explanation": "Ears are used for listening."
+  },
+  {
+    "question": "Which is a <season>?",
+    "options": ["Monday", "Winter", "Morning", "Hour"],
+    "correct": "Winter",
+    "explanation": "Winter is a season of the year."
+  },
+  {
+    "question": "What is the opposite of <up>?",
+    "options": ["high", "down", "top", "above"],
+    "correct": "down",
+    "explanation": "Down is the opposite of up."
+  },
+  {
+    "question": "Which word means <very tired>?",
+    "options": ["energetic", "exhausted", "active", "awake"],
+    "correct": "exhausted",
+    "explanation": "Exhausted means very tired."
+  },
+  {
+    "question": "What do you use to <open a door>?",
+    "options": ["key", "pen", "book", "cup"],
+    "correct": "key",
+    "explanation": "A key is used to open a door."
+  },
+  {
+    "question": "Which is a <month>?",
+    "options": ["Tuesday", "April", "Autumn", "Night"],
+    "correct": "April",
+    "explanation": "April is a month of the year."
+  }
+]

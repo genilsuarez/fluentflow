@@ -1,0 +1,152 @@
+[
+  {
+    "sentence": "The committee will _____ the proposal at the next meeting.",
+    "correct": "deliberate upon",
+    "options": ["deliberate upon", "think about", "look at", "check out"],
+    "explanation": "Deliberate upon is the formal register equivalent of think about."
+  },
+  {
+    "sentence": "We must _____ the implications before proceeding.",
+    "correct": "ascertain",
+    "options": ["ascertain", "find out", "check", "see"],
+    "explanation": "Ascertain is the formal term for finding out or determining something."
+  },
+  {
+    "sentence": "The findings _____ the need for further investigation.",
+    "correct": "underscore",
+    "options": ["underscore", "show", "prove", "tell"],
+    "explanation": "Underscore is a formal way to emphasize or highlight something."
+  },
+  {
+    "sentence": "The organization seeks to _____ collaboration among stakeholders.",
+    "correct": "foster",
+    "options": ["foster", "help", "make", "do"],
+    "explanation": "Foster is the formal term for encouraging or promoting development."
+  },
+  {
+    "sentence": "The policy aims to _____ economic disparities.",
+    "correct": "ameliorate",
+    "options": ["ameliorate", "fix", "help", "change"],
+    "explanation": "Ameliorate is the formal term for making something better or improving it."
+  },
+  {
+    "sentence": "The report _____ several critical issues.",
+    "correct": "delineates",
+    "options": ["delineates", "shows", "talks about", "mentions"],
+    "explanation": "Delineate is the formal term for describing or outlining precisely."
+  },
+  {
+    "sentence": "We must _____ resources more efficiently.",
+    "correct": "allocate",
+    "options": ["allocate", "give out", "share", "split"],
+    "explanation": "Allocate is the formal term for distributing resources."
+  },
+  {
+    "sentence": "The study _____ previous research in the field.",
+    "correct": "corroborates",
+    "options": ["corroborates", "agrees with", "matches", "supports"],
+    "explanation": "Corroborate is the formal term for confirming or supporting with evidence."
+  },
+  {
+    "sentence": "The institution will _____ new regulations next quarter.",
+    "correct": "implement",
+    "options": ["implement", "start", "begin", "do"],
+    "explanation": "Implement is the formal term for putting a plan into effect."
+  },
+  {
+    "sentence": "The analysis _____ significant trends in the data.",
+    "correct": "discerns",
+    "options": ["discerns", "sees", "finds", "spots"],
+    "explanation": "Discern is the formal term for perceiving or recognizing something."
+  },
+  {
+    "sentence": "The board will _____ the matter at its discretion.",
+    "correct": "adjudicate",
+    "options": ["adjudicate", "decide", "judge", "settle"],
+    "explanation": "Adjudicate is the formal term for making a formal judgment or decision."
+  },
+  {
+    "sentence": "The evidence _____ the hypothesis.",
+    "correct": "substantiates",
+    "options": ["substantiates", "proves", "shows", "backs up"],
+    "explanation": "Substantiate is the formal term for providing evidence to support something."
+  },
+  {
+    "sentence": "We must _____ the terms of the agreement.",
+    "correct": "stipulate",
+    "options": ["stipulate", "say", "write down", "mention"],
+    "explanation": "Stipulate is the formal term for specifying as a condition or requirement."
+  },
+  {
+    "sentence": "The document _____ the procedures to be followed.",
+    "correct": "enumerates",
+    "options": ["enumerates", "lists", "shows", "tells"],
+    "explanation": "Enumerate is the formal term for listing items one by one."
+  },
+  {
+    "sentence": "The research _____ new insights into the phenomenon.",
+    "correct": "elucidates",
+    "options": ["elucidates", "explains", "shows", "gives"],
+    "explanation": "Elucidate is the formal term for making something clear or explaining."
+  },
+  {
+    "sentence": "The committee will _____ the recommendations.",
+    "correct": "promulgate",
+    "options": ["promulgate", "announce", "tell", "share"],
+    "explanation": "Promulgate is the formal term for promoting or making widely known."
+  },
+  {
+    "sentence": "The policy seeks to _____ sustainable practices.",
+    "correct": "engender",
+    "options": ["engender", "create", "make", "start"],
+    "explanation": "Engender is the formal term for causing or giving rise to something."
+  },
+  {
+    "sentence": "The findings _____ the initial assumptions.",
+    "correct": "contravene",
+    "options": ["contravene", "go against", "oppose", "contradict"],
+    "explanation": "Contravene is the formal term for conflicting with or violating."
+  },
+  {
+    "sentence": "The organization will _____ its commitment to excellence.",
+    "correct": "reaffirm",
+    "options": ["reaffirm", "say again", "repeat", "confirm"],
+    "explanation": "Reaffirm is the formal term for stating something again strongly."
+  },
+  {
+    "sentence": "The study _____ the relationship between variables.",
+    "correct": "elucidates",
+    "options": ["elucidates", "explains", "shows", "clarifies"],
+    "explanation": "Elucidate is the formal term for making something clear through explanation."
+  },
+  {
+    "sentence": "We must _____ the scope of the investigation.",
+    "correct": "circumscribe",
+    "options": ["circumscribe", "limit", "reduce", "cut"],
+    "explanation": "Circumscribe is the formal term for restricting or limiting something."
+  },
+  {
+    "sentence": "The report _____ best practices in the industry.",
+    "correct": "delineates",
+    "options": ["delineates", "describes", "shows", "lists"],
+    "explanation": "Delineate is the formal term for describing or outlining precisely."
+  },
+  {
+    "sentence": "The framework _____ a systematic approach.",
+    "correct": "propounds",
+    "options": ["propounds", "suggests", "offers", "gives"],
+    "explanation": "Propound is the formal term for putting forward for consideration."
+  },
+  {
+    "sentence": "The institution will _____ transparency in all operations.",
+    "correct": "ensure",
+    "options": ["ensure", "make sure", "guarantee", "check"],
+    "explanation": "Ensure is the formal term for making certain that something happens."
+  },
+  {
+    "sentence": "The analysis _____ several key factors.",
+    "correct": "identifies",
+    "options": ["identifies", "finds", "sees", "spots"],
+    "explanation": "Identify is the formal term for establishing or recognizing something."
+  }
+]

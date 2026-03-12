@@ -1,0 +1,122 @@
+[
+  {
+    "sentence": "The apartment has _____ heating throughout all rooms.",
+    "correct": "central",
+    "options": ["central", "middle", "center", "focused"],
+    "explanation": "Central heating is a system that heats an entire building from one point."
+  },
+  {
+    "sentence": "We need to _____ the lease before it expires next month.",
+    "correct": "renew",
+    "options": ["renew", "repeat", "restart", "remake"],
+    "explanation": "Renew a lease means to extend the rental agreement for another period."
+  },
+  {
+    "sentence": "The house has a _____ garden with beautiful landscaping.",
+    "correct": "spacious",
+    "options": ["spacious", "space", "spacing", "spaced"],
+    "explanation": "Spacious means having ample space; roomy."
+  },
+  {
+    "sentence": "They decided to _____ their home to increase its value.",
+    "correct": "renovate",
+    "options": ["renovate", "remove", "reduce", "relocate"],
+    "explanation": "Renovate means to restore to good condition; make new or as if new again."
+  },
+  {
+    "sentence": "The landlord requires a security _____ equal to one month's rent.",
+    "correct": "deposit",
+    "options": ["deposit", "payment", "fee", "charge"],
+    "explanation": "A security deposit is money paid to a landlord as security against damage or non-payment."
+  },
+  {
+    "sentence": "Our neighborhood has excellent _____ including shops and schools.",
+    "correct": "amenities",
+    "options": ["amenities", "amendments", "amusements", "amazements"],
+    "explanation": "Amenities are desirable or useful features of a place."
+  },
+  {
+    "sentence": "The property has _____ access for wheelchair users.",
+    "correct": "disabled",
+    "options": ["disabled", "disability", "disable", "disabling"],
+    "explanation": "Disabled access means facilities designed for people with disabilities."
+  },
+  {
+    "sentence": "We pay our _____ bills monthly, including electricity and water.",
+    "correct": "utility",
+    "options": ["utility", "utilities", "utilize", "utilization"],
+    "explanation": "Utility bills are charges for services like electricity, gas, and water."
+  },
+  {
+    "sentence": "The house is located in a quiet _____ area away from traffic.",
+    "correct": "residential",
+    "options": ["residential", "residence", "resident", "residing"],
+    "explanation": "Residential means designed for people to live in."
+  },
+  {
+    "sentence": "They hired a contractor to _____ the kitchen and bathrooms.",
+    "correct": "remodel",
+    "options": ["remodel", "remove", "remind", "remain"],
+    "explanation": "Remodel means to change the structure or form of something, especially a building."
+  },
+  {
+    "sentence": "The apartment comes _____ with all appliances included.",
+    "correct": "furnished",
+    "options": ["furnished", "furniture", "furnish", "furnishing"],
+    "explanation": "Furnished means provided with furniture and fittings."
+  },
+  {
+    "sentence": "We need to _____ the mortgage before buying the house.",
+    "correct": "secure",
+    "options": ["secure", "security", "securing", "securely"],
+    "explanation": "Secure a mortgage means to obtain approval for a home loan."
+  },
+  {
+    "sentence": "The building has a _____ system for residents' safety.",
+    "correct": "surveillance",
+    "options": ["surveillance", "survey", "survival", "surface"],
+    "explanation": "A surveillance system monitors and records activity for security purposes."
+  },
+  {
+    "sentence": "They decided to _____ to a larger house for their growing family.",
+    "correct": "relocate",
+    "options": ["relocate", "remove", "replace", "repeat"],
+    "explanation": "Relocate means to move to a new place and establish one's home there."
+  },
+  {
+    "sentence": "The property has excellent _____ to public transportation.",
+    "correct": "proximity",
+    "options": ["proximity", "approximate", "approach", "appropriate"],
+    "explanation": "Proximity means nearness in space, time, or relationship."
+  },
+  {
+    "sentence": "We hired an interior _____ to help decorate our new home.",
+    "correct": "designer",
+    "options": ["designer", "design", "designing", "designed"],
+    "explanation": "An interior designer is a professional who plans the decoration of building interiors."
+  },
+  {
+    "sentence": "The house has energy-_____ windows to reduce heating costs.",
+    "correct": "efficient",
+    "options": ["efficient", "efficiency", "effect", "effective"],
+    "explanation": "Energy-efficient means using less energy to perform the same function."
+  },
+  {
+    "sentence": "They installed solar _____ on the roof to generate electricity.",
+    "correct": "panels",
+    "options": ["panels", "panel", "panes", "pane"],
+    "explanation": "Solar panels are devices that convert sunlight into electricity."
+  },
+  {
+    "sentence": "The apartment has a _____ balcony with city views.",
+    "correct": "private",
+    "options": ["private", "privacy", "privately", "privatize"],
+    "explanation": "Private means belonging to or for the use of one particular person or group only."
+  },
+  {
+    "sentence": "We need to _____ the property before making an offer.",
+    "correct": "inspect",
+    "options": ["inspect", "inspection", "inspector", "inspecting"],
+    "explanation": "Inspect means to look at something carefully to assess its condition."
+  }
+]

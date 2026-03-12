@@ -1,0 +1,122 @@
+[
+  {
+    "question": "The book ______ by millions of people.",
+    "options": ["is read", "reads", "is reading", "read"],
+    "correct": "is read",
+    "explanation": "Present simple passive: is/are + past participle"
+  },
+  {
+    "question": "The house ______ in 1920.",
+    "options": ["built", "was built", "is built", "builds"],
+    "correct": "was built",
+    "explanation": "Past simple passive: was/were + past participle"
+  },
+  {
+    "question": "English ______ all over the world.",
+    "options": ["speaks", "is spoken", "is speaking", "spoke"],
+    "correct": "is spoken",
+    "explanation": "Present simple passive for general facts"
+  },
+  {
+    "question": "The letter ______ yesterday.",
+    "options": ["was sent", "sent", "is sent", "sends"],
+    "correct": "was sent",
+    "explanation": "Past simple passive with time expression"
+  },
+  {
+    "question": "The car ______ right now.",
+    "options": ["repairs", "is repairing", "is being repaired", "was repaired"],
+    "correct": "is being repaired",
+    "explanation": "Present continuous passive: is/are being + past participle"
+  },
+  {
+    "question": "The project ______ by next week.",
+    "options": ["will finish", "will be finished", "is finished", "finishes"],
+    "correct": "will be finished",
+    "explanation": "Future simple passive: will be + past participle"
+  },
+  {
+    "question": "The cake ______ by my mother.",
+    "options": ["made", "was made", "is making", "makes"],
+    "correct": "was made",
+    "explanation": "Past simple passive with 'by' agent"
+  },
+  {
+    "question": "The windows ______ every week.",
+    "options": ["clean", "are cleaned", "is cleaned", "cleaned"],
+    "correct": "are cleaned",
+    "explanation": "Present simple passive for routines"
+  },
+  {
+    "question": "The movie ______ in 2010.",
+    "options": ["was released", "released", "is released", "releases"],
+    "correct": "was released",
+    "explanation": "Past simple passive for completed actions"
+  },
+  {
+    "question": "The problem ______ soon.",
+    "options": ["will solve", "will be solved", "is solving", "solves"],
+    "correct": "will be solved",
+    "explanation": "Future passive for predictions"
+  },
+  {
+    "question": "The documents ______ at the moment.",
+    "options": ["are checking", "are being checked", "check", "checked"],
+    "correct": "are being checked",
+    "explanation": "Present continuous passive for actions in progress"
+  },
+  {
+    "question": "The bridge ______ last year.",
+    "options": ["was destroyed", "destroyed", "is destroyed", "destroys"],
+    "correct": "was destroyed",
+    "explanation": "Past simple passive for past events"
+  },
+  {
+    "question": "The email ______ to all employees.",
+    "options": ["sent", "was sent", "is sending", "sends"],
+    "correct": "was sent",
+    "explanation": "Past simple passive with indirect object"
+  },
+  {
+    "question": "The new policy ______ next month.",
+    "options": ["will introduce", "will be introduced", "introduces", "is introducing"],
+    "correct": "will be introduced",
+    "explanation": "Future passive for scheduled events"
+  },
+  {
+    "question": "The song ______ by everyone at the party.",
+    "options": ["sang", "was sung", "is singing", "sings"],
+    "correct": "was sung",
+    "explanation": "Past simple passive with 'by' phrase"
+  },
+  {
+    "question": "The report ______ at this moment.",
+    "options": ["writes", "is writing", "is being written", "was written"],
+    "correct": "is being written",
+    "explanation": "Present continuous passive for current actions"
+  },
+  {
+    "question": "The building ______ in the earthquake.",
+    "options": ["damaged", "was damaged", "is damaging", "damages"],
+    "correct": "was damaged",
+    "explanation": "Past simple passive for past events"
+  },
+  {
+    "question": "The package ______ tomorrow.",
+    "options": ["will deliver", "will be delivered", "delivers", "is delivering"],
+    "correct": "will be delivered",
+    "explanation": "Future passive for future actions"
+  },
+  {
+    "question": "The room ______ when I arrived.",
+    "options": ["cleaned", "was being cleaned", "is cleaned", "cleans"],
+    "correct": "was being cleaned",
+    "explanation": "Past continuous passive: was/were being + past participle"
+  },
+  {
+    "question": "The decision ______ by the committee.",
+    "options": ["made", "was made", "is making", "makes"],
+    "correct": "was made",
+    "explanation": "Past simple passive with agent"
+  }
+]

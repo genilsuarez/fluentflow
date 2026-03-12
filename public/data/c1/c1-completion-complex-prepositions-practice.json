@@ -1,0 +1,152 @@
+[
+  {
+    "sentence": "_____ the bad weather, we decided to go hiking.",
+    "correct": "In spite of",
+    "options": ["In spite of", "Despite of", "Although", "Even"],
+    "explanation": "In spite of + noun/gerund (not 'despite of')"
+  },
+  {
+    "sentence": "I'm calling _____ my colleague who is sick today.",
+    "correct": "on behalf of",
+    "options": ["on behalf of", "in behalf of", "for behalf of", "by behalf of"],
+    "explanation": "On behalf of = representing someone"
+  },
+  {
+    "sentence": "_____ his age, he's very active and energetic.",
+    "correct": "In spite of",
+    "options": ["In spite of", "Despite of", "Although", "However"],
+    "explanation": "In spite of + noun phrase"
+  },
+  {
+    "sentence": "The meeting was postponed _____ the director's illness.",
+    "correct": "due to",
+    "options": ["due to", "because", "since", "as"],
+    "explanation": "Due to + noun (because + clause)"
+  },
+  {
+    "sentence": "_____ being tired, she continued working.",
+    "correct": "Despite",
+    "options": ["Despite", "Despite of", "In despite of", "Although"],
+    "explanation": "Despite + gerund (no 'of')"
+  },
+  {
+    "sentence": "He succeeded _____ many obstacles.",
+    "correct": "in spite of",
+    "options": ["in spite of", "despite of", "although", "even though"],
+    "explanation": "In spite of + noun"
+  },
+  {
+    "sentence": "_____ the circumstances, we must proceed.",
+    "correct": "Regardless of",
+    "options": ["Regardless of", "Regardless", "Despite of", "In despite of"],
+    "explanation": "Regardless of = without being affected by"
+  },
+  {
+    "sentence": "The project was completed _____ budget constraints.",
+    "correct": "in spite of",
+    "options": ["in spite of", "despite of", "although", "even"],
+    "explanation": "In spite of + noun phrase"
+  },
+  {
+    "sentence": "_____ what you think, I'm going ahead with my plan.",
+    "correct": "Regardless of",
+    "options": ["Regardless of", "Despite", "In spite", "Although"],
+    "explanation": "Regardless of + what clause"
+  },
+  {
+    "sentence": "The flight was cancelled _____ fog.",
+    "correct": "owing to",
+    "options": ["owing to", "owing", "because", "since"],
+    "explanation": "Owing to = due to (+ noun)"
+  },
+  {
+    "sentence": "_____ her efforts, she didn't pass the exam.",
+    "correct": "Despite",
+    "options": ["Despite", "Despite of", "In despite of", "Although"],
+    "explanation": "Despite + noun (no 'of')"
+  },
+  {
+    "sentence": "I'm writing _____ the entire team.",
+    "correct": "on behalf of",
+    "options": ["on behalf of", "in behalf of", "for behalf", "by behalf"],
+    "explanation": "On behalf of = representing"
+  },
+  {
+    "sentence": "_____ the rain, the match continued.",
+    "correct": "In spite of",
+    "options": ["In spite of", "Despite of", "Although", "Even though"],
+    "explanation": "In spite of + noun"
+  },
+  {
+    "sentence": "The delay was _____ technical problems.",
+    "correct": "due to",
+    "options": ["due to", "because", "since", "as"],
+    "explanation": "Due to + noun phrase"
+  },
+  {
+    "sentence": "_____ having little experience, he got the job.",
+    "correct": "Despite",
+    "options": ["Despite", "Despite of", "In despite", "Although"],
+    "explanation": "Despite + gerund"
+  },
+  {
+    "sentence": "She accepted the position _____ the low salary.",
+    "correct": "in spite of",
+    "options": ["in spite of", "despite of", "although", "even though"],
+    "explanation": "In spite of + noun phrase"
+  },
+  {
+    "sentence": "_____ your opinion, I believe this is the right decision.",
+    "correct": "Regardless of",
+    "options": ["Regardless of", "Despite", "In spite", "Although"],
+    "explanation": "Regardless of = not influenced by"
+  },
+  {
+    "sentence": "The event was a success _____ poor planning.",
+    "correct": "despite",
+    "options": ["despite", "despite of", "in despite of", "although"],
+    "explanation": "Despite + noun (no 'of')"
+  },
+  {
+    "sentence": "The accident occurred _____ driver negligence.",
+    "correct": "owing to",
+    "options": ["owing to", "owing", "because", "since"],
+    "explanation": "Owing to + noun"
+  },
+  {
+    "sentence": "_____ the difficulties, we never gave up.",
+    "correct": "In spite of",
+    "options": ["In spite of", "Despite of", "Although", "Even though"],
+    "explanation": "In spite of + noun"
+  },
+  {
+    "sentence": "I'm speaking _____ all the employees.",
+    "correct": "on behalf of",
+    "options": ["on behalf of", "in behalf of", "for behalf of", "by behalf of"],
+    "explanation": "On behalf of = as representative"
+  },
+  {
+    "sentence": "_____ being expensive, the product is worth it.",
+    "correct": "Despite",
+    "options": ["Despite", "Despite of", "In despite of", "Although"],
+    "explanation": "Despite + gerund"
+  },
+  {
+    "sentence": "The closure was _____ financial losses.",
+    "correct": "due to",
+    "options": ["due to", "because", "since", "as"],
+    "explanation": "Due to + noun"
+  },
+  {
+    "sentence": "_____ the warnings, he continued with his plan.",
+    "correct": "In spite of",
+    "options": ["In spite of", "Despite of", "Although", "Even though"],
+    "explanation": "In spite of + noun"
+  },
+  {
+    "sentence": "_____ happens, I'll support you.",
+    "correct": "Regardless of what",
+    "options": ["Regardless of what", "Despite what", "In spite what", "Although what"],
+    "explanation": "Regardless of what = no matter what"
+  }
+]

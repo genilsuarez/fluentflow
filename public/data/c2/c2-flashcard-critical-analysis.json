@@ -1,0 +1,242 @@
+[
+  {
+    "front": "paradigm shift",
+    "back": "cambio de paradigma / transformación fundamental",
+    "example": "The discovery represented a paradigm shift in scientific thinking.",
+    "example_es": "El descubrimiento representó un cambio de paradigma en el pensamiento científico."
+  },
+  {
+    "front": "epistemological",
+    "back": "epistemológico / relativo al conocimiento",
+    "example": "The study raises epistemological questions about truth.",
+    "example_es": "El estudio plantea preguntas epistemológicas sobre la verdad."
+  },
+  {
+    "front": "ontological",
+    "back": "ontológico / relativo a la naturaleza del ser",
+    "example": "The debate has ontological implications for our understanding.",
+    "example_es": "El debate tiene implicaciones ontológicas para nuestra comprensión."
+  },
+  {
+    "front": "hermeneutic",
+    "back": "hermenéutico / interpretativo",
+    "example": "A hermeneutic approach reveals deeper meanings in the text.",
+    "example_es": "Un enfoque hermenéutico revela significados más profundos en el texto."
+  },
+  {
+    "front": "dialectical",
+    "back": "dialéctico / basado en contradicciones",
+    "example": "The dialectical method examines opposing viewpoints.",
+    "example_es": "El método dialéctico examina puntos de vista opuestos."
+  },
+  {
+    "front": "heuristic",
+    "back": "heurístico / método de descubrimiento",
+    "example": "The heuristic approach facilitates problem-solving.",
+    "example_es": "El enfoque heurístico facilita la resolución de problemas."
+  },
+  {
+    "front": "axiomatic",
+    "back": "axiomático / evidente por sí mismo",
+    "example": "The principle is considered axiomatic in the field.",
+    "example_es": "El principio se considera axiomático en el campo."
+  },
+  {
+    "front": "teleological",
+    "back": "teleológico / orientado a un fin",
+    "example": "The teleological argument focuses on purpose and design.",
+    "example_es": "El argumento teleológico se centra en el propósito y el diseño."
+  },
+  {
+    "front": "empiricism",
+    "back": "empirismo / conocimiento basado en experiencia",
+    "example": "Empiricism emphasizes observation and experimentation.",
+    "example_es": "El empirismo enfatiza la observación y la experimentación."
+  },
+  {
+    "front": "rationalism",
+    "back": "racionalismo / conocimiento basado en razón",
+    "example": "Rationalism prioritizes logical reasoning over sensory experience.",
+    "example_es": "El racionalismo prioriza el razonamiento lógico sobre la experiencia sensorial."
+  },
+  {
+    "front": "reductionism",
+    "back": "reduccionismo / simplificación a elementos básicos",
+    "example": "Critics argue that reductionism oversimplifies complex phenomena.",
+    "example_es": "Los críticos argumentan que el reduccionismo simplifica excesivamente fenómenos complejos."
+  },
+  {
+    "front": "holistic",
+    "back": "holístico / considerando el todo",
+    "example": "A holistic approach considers all interconnected factors.",
+    "example_es": "Un enfoque holístico considera todos los factores interconectados."
+  },
+  {
+    "front": "determinism",
+    "back": "determinismo / causalidad inevitable",
+    "example": "Determinism suggests that events are causally predetermined.",
+    "example_es": "El determinismo sugiere que los eventos están causalmente predeterminados."
+  },
+  {
+    "front": "contingent",
+    "back": "contingente / dependiente de circunstancias",
+    "example": "The outcome is contingent upon multiple variables.",
+    "example_es": "El resultado es contingente de múltiples variables."
+  },
+  {
+    "front": "dichotomy",
+    "back": "dicotomía / división en dos partes",
+    "example": "The dichotomy between theory and practice is often overstated.",
+    "example_es": "La dicotomía entre teoría y práctica a menudo se exagera."
+  },
+  {
+    "front": "antithesis",
+    "back": "antítesis / contraste directo",
+    "example": "The new policy is the antithesis of previous approaches.",
+    "example_es": "La nueva política es la antítesis de enfoques previos."
+  },
+  {
+    "front": "synthesis",
+    "back": "síntesis / combinación de elementos",
+    "example": "The theory represents a synthesis of diverse perspectives.",
+    "example_es": "La teoría representa una síntesis de perspectivas diversas."
+  },
+  {
+    "front": "juxtaposition",
+    "back": "yuxtaposición / colocación lado a lado",
+    "example": "The juxtaposition of images creates powerful meaning.",
+    "example_es": "La yuxtaposición de imágenes crea un significado poderoso."
+  },
+  {
+    "front": "paradox",
+    "back": "paradoja / contradicción aparente",
+    "example": "The paradox challenges conventional understanding.",
+    "example_es": "La paradoja desafía la comprensión convencional."
+  },
+  {
+    "front": "anomaly",
+    "back": "anomalía / desviación de lo esperado",
+    "example": "The anomaly in the data requires further investigation.",
+    "example_es": "La anomalía en los datos requiere mayor investigación."
+  },
+  {
+    "front": "corollary",
+    "back": "corolario / consecuencia natural",
+    "example": "A corollary of this theory is that behavior is predictable.",
+    "example_es": "Un corolario de esta teoría es que el comportamiento es predecible."
+  },
+  {
+    "front": "caveat",
+    "back": "advertencia / salvedad",
+    "example": "An important caveat is that results may not generalize.",
+    "example_es": "Una advertencia importante es que los resultados pueden no generalizarse."
+  },
+  {
+    "front": "proviso",
+    "back": "condición / estipulación",
+    "example": "The agreement includes a proviso regarding confidentiality.",
+    "example_es": "El acuerdo incluye una condición respecto a la confidencialidad."
+  },
+  {
+    "front": "stipulation",
+    "back": "estipulación / requisito específico",
+    "example": "The stipulation ensures methodological rigor.",
+    "example_es": "La estipulación asegura rigor metodológico."
+  },
+  {
+    "front": "presupposition",
+    "back": "presuposición / suposición implícita",
+    "example": "The argument rests on questionable presuppositions.",
+    "example_es": "El argumento se basa en presuposiciones cuestionables."
+  },
+  {
+    "front": "ramification",
+    "back": "ramificación / consecuencia compleja",
+    "example": "The policy has far-reaching ramifications.",
+    "example_es": "La política tiene ramificaciones de gran alcance."
+  },
+  {
+    "front": "implication",
+    "back": "implicación / consecuencia lógica",
+    "example": "The implications of the findings are profound.",
+    "example_es": "Las implicaciones de los hallazgos son profundas."
+  },
+  {
+    "front": "extrapolation",
+    "back": "extrapolación / inferencia más allá de datos",
+    "example": "Extrapolation from limited data can be problematic.",
+    "example_es": "La extrapolación de datos limitados puede ser problemática."
+  },
+  {
+    "front": "interpolation",
+    "back": "interpolación / estimación entre puntos",
+    "example": "Interpolation helps fill gaps in the dataset.",
+    "example_es": "La interpolación ayuda a llenar vacíos en el conjunto de datos."
+  },
+  {
+    "front": "deduction",
+    "back": "deducción / razonamiento de general a específico",
+    "example": "Deduction proceeds from general principles to specific cases.",
+    "example_es": "La deducción procede de principios generales a casos específicos."
+  },
+  {
+    "front": "induction",
+    "back": "inducción / razonamiento de específico a general",
+    "example": "Induction builds general theories from specific observations.",
+    "example_es": "La inducción construye teorías generales a partir de observaciones específicas."
+  },
+  {
+    "front": "abduction",
+    "back": "abducción / inferencia a la mejor explicación",
+    "example": "Abduction seeks the most plausible explanation for phenomena.",
+    "example_es": "La abducción busca la explicación más plausible para los fenómenos."
+  },
+  {
+    "front": "falsifiability",
+    "back": "falsabilidad / capacidad de ser refutado",
+    "example": "Falsifiability is a criterion for scientific theories.",
+    "example_es": "La falsabilidad es un criterio para las teorías científicas."
+  },
+  {
+    "front": "verisimilitude",
+    "back": "verosimilitud / apariencia de verdad",
+    "example": "The narrative has verisimilitude despite being fictional.",
+    "example_es": "La narrativa tiene verosimilitud a pesar de ser ficticia."
+  },
+  {
+    "front": "tautology",
+    "back": "tautología / redundancia lógica",
+    "example": "The statement is a tautology that adds no new information.",
+    "example_es": "La declaración es una tautología que no agrega información nueva."
+  },
+  {
+    "front": "syllogism",
+    "back": "silogismo / razonamiento deductivo",
+    "example": "The classic syllogism demonstrates logical reasoning.",
+    "example_es": "El silogismo clásico demuestra razonamiento lógico."
+  },
+  {
+    "front": "sophistry",
+    "back": "sofisma / razonamiento falaz",
+    "example": "The argument relies on sophistry rather than sound logic.",
+    "example_es": "El argumento se basa en sofismas en lugar de lógica sólida."
+  },
+  {
+    "front": "non sequitur",
+    "back": "non sequitur / conclusión ilógica",
+    "example": "The conclusion is a non sequitur that doesn't follow from premises.",
+    "example_es": "La conclusión es un non sequitur que no se sigue de las premisas."
+  },
+  {
+    "front": "ad hominem",
+    "back": "ad hominem / ataque personal",
+    "example": "Ad hominem attacks undermine rational discourse.",
+    "example_es": "Los ataques ad hominem socavan el discurso racional."
+  },
+  {
+    "front": "straw man",
+    "back": "hombre de paja / argumento distorsionado",
+    "example": "The straw man fallacy misrepresents the opponent's position.",
+    "example_es": "La falacia del hombre de paja tergiversa la posición del oponente."
+  }
+]

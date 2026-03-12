@@ -1,0 +1,282 @@
+[
+  {
+    "front": "Outfit",
+    "back": "Conjunto de ropa",
+    "ipa": "/ˈaʊtfɪt/",
+    "example": "She wore a stylish outfit to the party.",
+    "example_es": "Ella llevó un conjunto elegante a la fiesta."
+  },
+  {
+    "front": "Wardrobe",
+    "back": "Guardarropa",
+    "ipa": "/ˈwɔːrdroʊb/",
+    "example": "I need to update my wardrobe for the new season.",
+    "example_es": "Necesito actualizar mi guardarropa para la nueva temporada."
+  },
+  {
+    "front": "Trendy",
+    "back": "De moda",
+    "ipa": "/ˈtrendi/",
+    "example": "Those sneakers are very trendy right now.",
+    "example_es": "Esas zapatillas están muy de moda ahora."
+  },
+  {
+    "front": "Fashionable",
+    "back": "A la moda",
+    "ipa": "/ˈfæʃənəbl/",
+    "example": "She always looks fashionable and elegant.",
+    "example_es": "Ella siempre se ve a la moda y elegante."
+  },
+  {
+    "front": "Accessory",
+    "back": "Accesorio",
+    "ipa": "/əkˈsesəri/",
+    "example": "A nice watch is a great accessory.",
+    "example_es": "Un buen reloj es un gran accesorio."
+  },
+  {
+    "front": "Garment",
+    "back": "Prenda de vestir",
+    "ipa": "/ˈɡɑːrmənt/",
+    "example": "This garment requires dry cleaning.",
+    "example_es": "Esta prenda requiere limpieza en seco."
+  },
+  {
+    "front": "Fabric",
+    "back": "Tela",
+    "ipa": "/ˈfæbrɪk/",
+    "example": "The fabric feels soft and comfortable.",
+    "example_es": "La tela se siente suave y cómoda."
+  },
+  {
+    "front": "Pattern",
+    "back": "Patrón, estampado",
+    "ipa": "/ˈpætərn/",
+    "example": "I love the floral pattern on this dress.",
+    "example_es": "Me encanta el estampado floral de este vestido."
+  },
+  {
+    "front": "Stripe",
+    "back": "Raya",
+    "ipa": "/straɪp/",
+    "example": "He wore a shirt with vertical stripes.",
+    "example_es": "Él llevaba una camisa con rayas verticales."
+  },
+  {
+    "front": "Polka dot",
+    "back": "Lunar",
+    "ipa": "/ˈpoʊlkə dɑːt/",
+    "example": "Her polka dot dress is adorable.",
+    "example_es": "Su vestido de lunares es adorable."
+  },
+  {
+    "front": "Sleeve",
+    "back": "Manga",
+    "ipa": "/sliːv/",
+    "example": "I prefer shirts with long sleeves.",
+    "example_es": "Prefiero camisas de manga larga."
+  },
+  {
+    "front": "Collar",
+    "back": "Cuello",
+    "ipa": "/ˈkɑːlər/",
+    "example": "This jacket has a high collar.",
+    "example_es": "Esta chaqueta tiene un cuello alto."
+  },
+  {
+    "front": "Hem",
+    "back": "Dobladillo",
+    "ipa": "/hem/",
+    "example": "The hem of the skirt needs to be shortened.",
+    "example_es": "El dobladillo de la falda necesita acortarse."
+  },
+  {
+    "front": "Zipper",
+    "back": "Cremallera",
+    "ipa": "/ˈzɪpər/",
+    "example": "The zipper on my jacket is broken.",
+    "example_es": "La cremallera de mi chaqueta está rota."
+  },
+  {
+    "front": "Button",
+    "back": "Botón",
+    "ipa": "/ˈbʌtn/",
+    "example": "I lost a button from my shirt.",
+    "example_es": "Perdí un botón de mi camisa."
+  },
+  {
+    "front": "Pocket",
+    "back": "Bolsillo",
+    "ipa": "/ˈpɑːkɪt/",
+    "example": "These jeans have deep pockets.",
+    "example_es": "Estos jeans tienen bolsillos profundos."
+  },
+  {
+    "front": "Belt",
+    "back": "Cinturón",
+    "ipa": "/belt/",
+    "example": "I need a belt to hold up these pants.",
+    "example_es": "Necesito un cinturón para sostener estos pantalones."
+  },
+  {
+    "front": "Scarf",
+    "back": "Bufanda",
+    "ipa": "/skɑːrf/",
+    "example": "She wrapped a warm scarf around her neck.",
+    "example_es": "Ella se envolvió una bufanda caliente alrededor del cuello."
+  },
+  {
+    "front": "Gloves",
+    "back": "Guantes",
+    "ipa": "/ɡlʌvz/",
+    "example": "I wear gloves when it's cold outside.",
+    "example_es": "Uso guantes cuando hace frío afuera."
+  },
+  {
+    "front": "Hat",
+    "back": "Sombrero",
+    "ipa": "/hæt/",
+    "example": "He wore a hat to protect himself from the sun.",
+    "example_es": "Él llevaba un sombrero para protegerse del sol."
+  },
+  {
+    "front": "Cap",
+    "back": "Gorra",
+    "ipa": "/kæp/",
+    "example": "Baseball players wear caps.",
+    "example_es": "Los jugadores de béisbol usan gorras."
+  },
+  {
+    "front": "Sneakers",
+    "back": "Zapatillas deportivas",
+    "ipa": "/ˈsniːkərz/",
+    "example": "I prefer wearing sneakers for comfort.",
+    "example_es": "Prefiero usar zapatillas deportivas por comodidad."
+  },
+  {
+    "front": "Boots",
+    "back": "Botas",
+    "ipa": "/buːts/",
+    "example": "She bought new leather boots for winter.",
+    "example_es": "Ella compró botas de cuero nuevas para el invierno."
+  },
+  {
+    "front": "Sandals",
+    "back": "Sandalias",
+    "ipa": "/ˈsændlz/",
+    "example": "Sandals are perfect for summer.",
+    "example_es": "Las sandalias son perfectas para el verano."
+  },
+  {
+    "front": "Heels",
+    "back": "Tacones",
+    "ipa": "/hiːlz/",
+    "example": "She wore high heels to the wedding.",
+    "example_es": "Ella usó tacones altos para la boda."
+  },
+  {
+    "front": "Jewelry",
+    "back": "Joyería",
+    "ipa": "/ˈdʒuːəlri/",
+    "example": "She loves wearing elegant jewelry.",
+    "example_es": "A ella le encanta usar joyería elegante."
+  },
+  {
+    "front": "Necklace",
+    "back": "Collar",
+    "ipa": "/ˈnekləs/",
+    "example": "He gave her a beautiful necklace for her birthday.",
+    "example_es": "Él le dio un hermoso collar para su cumpleaños."
+  },
+  {
+    "front": "Bracelet",
+    "back": "Pulsera",
+    "ipa": "/ˈbreɪslət/",
+    "example": "She wears a silver bracelet on her wrist.",
+    "example_es": "Ella usa una pulsera de plata en su muñeca."
+  },
+  {
+    "front": "Earrings",
+    "back": "Aretes, pendientes",
+    "ipa": "/ˈɪrɪŋz/",
+    "example": "Those earrings match your dress perfectly.",
+    "example_es": "Esos aretes combinan perfectamente con tu vestido."
+  },
+  {
+    "front": "Ring",
+    "back": "Anillo",
+    "ipa": "/rɪŋ/",
+    "example": "She received an engagement ring.",
+    "example_es": "Ella recibió un anillo de compromiso."
+  },
+  {
+    "front": "Sunglasses",
+    "back": "Gafas de sol",
+    "ipa": "/ˈsʌnɡlæsɪz/",
+    "example": "Don't forget your sunglasses on a sunny day.",
+    "example_es": "No olvides tus gafas de sol en un día soleado."
+  },
+  {
+    "front": "Handbag",
+    "back": "Bolso de mano",
+    "ipa": "/ˈhændbæɡ/",
+    "example": "She carries her essentials in a small handbag.",
+    "example_es": "Ella lleva sus cosas esenciales en un bolso pequeño."
+  },
+  {
+    "front": "Backpack",
+    "back": "Mochila",
+    "ipa": "/ˈbækpæk/",
+    "example": "Students often carry backpacks to school.",
+    "example_es": "Los estudiantes suelen llevar mochilas a la escuela."
+  },
+  {
+    "front": "Wallet",
+    "back": "Cartera",
+    "ipa": "/ˈwɑːlɪt/",
+    "example": "I keep my credit cards in my wallet.",
+    "example_es": "Guardo mis tarjetas de crédito en mi cartera."
+  },
+  {
+    "front": "Casual",
+    "back": "Informal",
+    "ipa": "/ˈkæʒuəl/",
+    "example": "The dress code is casual for the event.",
+    "example_es": "El código de vestimenta es informal para el evento."
+  },
+  {
+    "front": "Formal",
+    "back": "Formal",
+    "ipa": "/ˈfɔːrml/",
+    "example": "You need to wear formal attire to the gala.",
+    "example_es": "Necesitas usar vestimenta formal para la gala."
+  },
+  {
+    "front": "Elegant",
+    "back": "Elegante",
+    "ipa": "/ˈelɪɡənt/",
+    "example": "She looked elegant in her evening gown.",
+    "example_es": "Ella se veía elegante en su vestido de noche."
+  },
+  {
+    "front": "Stylish",
+    "back": "Con estilo",
+    "ipa": "/ˈstaɪlɪʃ/",
+    "example": "He has a very stylish way of dressing.",
+    "example_es": "Él tiene una forma muy estilosa de vestir."
+  },
+  {
+    "front": "Vintage",
+    "back": "Vintage, retro",
+    "ipa": "/ˈvɪntɪdʒ/",
+    "example": "She loves shopping for vintage clothing.",
+    "example_es": "A ella le encanta comprar ropa vintage."
+  },
+  {
+    "front": "Designer",
+    "back": "De diseñador",
+    "ipa": "/dɪˈzaɪnər/",
+    "example": "She bought a designer handbag.",
+    "example_es": "Ella compró un bolso de diseñador."
+  }
+]

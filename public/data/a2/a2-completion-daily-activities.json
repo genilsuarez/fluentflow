@@ -1,0 +1,122 @@
+[
+  {
+    "sentence": "I usually _____ at 7 AM every morning.",
+    "correct": "wake up",
+    "options": ["wake up", "go to bed", "have dinner", "watch TV"],
+    "explanation": "Wake up means to stop sleeping, typically done in the morning."
+  },
+  {
+    "sentence": "She likes to _____ in the park on weekends.",
+    "correct": "jog",
+    "options": ["jog", "cook", "study", "sleep"],
+    "explanation": "Jogging is a common outdoor activity done in parks."
+  },
+  {
+    "sentence": "We need to _____ the groceries before dinner.",
+    "correct": "buy",
+    "options": ["buy", "sell", "throw", "break"],
+    "explanation": "Buying groceries is a daily activity to get food for meals."
+  },
+  {
+    "sentence": "He always _____ his teeth before going to bed.",
+    "correct": "brushes",
+    "options": ["brushes", "washes", "combs", "cuts"],
+    "explanation": "Brushing teeth is an important hygiene activity done before bed."
+  },
+  {
+    "sentence": "They _____ the bus to work every day.",
+    "correct": "take",
+    "options": ["take", "drive", "fly", "ride"],
+    "explanation": "Take the bus is the correct collocation for using public transportation."
+  },
+  {
+    "sentence": "I need to _____ my homework before class.",
+    "correct": "finish",
+    "options": ["finish", "start", "forget", "lose"],
+    "explanation": "Finishing homework means completing it before the deadline."
+  },
+  {
+    "sentence": "She _____ a shower every morning.",
+    "correct": "takes",
+    "options": ["takes", "makes", "does", "has"],
+    "explanation": "Take a shower is the correct expression for bathing."
+  },
+  {
+    "sentence": "We usually _____ dinner at 8 PM.",
+    "correct": "have",
+    "options": ["have", "make", "do", "take"],
+    "explanation": "Have dinner is the correct expression for eating the evening meal."
+  },
+  {
+    "sentence": "He likes to _____ music while working.",
+    "correct": "listen to",
+    "options": ["listen to", "hear", "watch", "see"],
+    "explanation": "Listen to music is the correct expression for enjoying music."
+  },
+  {
+    "sentence": "I _____ my bed every morning after waking up.",
+    "correct": "make",
+    "options": ["make", "do", "have", "take"],
+    "explanation": "Make the bed means to arrange the sheets and blankets neatly."
+  },
+  {
+    "sentence": "She _____ her clothes in the wardrobe.",
+    "correct": "hangs",
+    "options": ["hangs", "puts", "throws", "drops"],
+    "explanation": "Hang clothes means to put them on hangers in the wardrobe."
+  },
+  {
+    "sentence": "They _____ shopping every Saturday.",
+    "correct": "go",
+    "options": ["go", "make", "do", "have"],
+    "explanation": "Go shopping is the correct expression for the activity of shopping."
+  },
+  {
+    "sentence": "I need to _____ the dishes after dinner.",
+    "correct": "wash",
+    "options": ["wash", "clean", "dry", "cook"],
+    "explanation": "Wash the dishes means to clean plates, cups, and utensils after eating."
+  },
+  {
+    "sentence": "He _____ his car every weekend.",
+    "correct": "washes",
+    "options": ["washes", "drives", "buys", "sells"],
+    "explanation": "Washing the car is a common weekend activity to keep it clean."
+  },
+  {
+    "sentence": "We _____ a walk in the evening.",
+    "correct": "take",
+    "options": ["take", "make", "do", "have"],
+    "explanation": "Take a walk is the correct expression for going for a walk."
+  },
+  {
+    "sentence": "She _____ her hair every morning.",
+    "correct": "combs",
+    "options": ["combs", "washes", "cuts", "dries"],
+    "explanation": "Combing hair means to arrange it neatly with a comb."
+  },
+  {
+    "sentence": "I _____ the newspaper every morning.",
+    "correct": "read",
+    "options": ["read", "write", "buy", "sell"],
+    "explanation": "Reading the newspaper is a common morning activity."
+  },
+  {
+    "sentence": "He _____ his email several times a day.",
+    "correct": "checks",
+    "options": ["checks", "sends", "writes", "deletes"],
+    "explanation": "Checking email means to look at new messages."
+  },
+  {
+    "sentence": "They _____ the dog for a walk twice a day.",
+    "correct": "take",
+    "options": ["take", "bring", "carry", "move"],
+    "explanation": "Take the dog for a walk is the correct expression for walking a pet."
+  },
+  {
+    "sentence": "I _____ the lights before leaving the house.",
+    "correct": "turn off",
+    "options": ["turn off", "turn on", "switch", "open"],
+    "explanation": "Turn off the lights means to switch them off to save energy."
+  }
+]

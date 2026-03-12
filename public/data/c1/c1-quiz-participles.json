@@ -1,0 +1,152 @@
+[
+  {
+    "question": "_____ by the news, she couldn't speak for several minutes.",
+    "options": ["Shocking", "Shocked", "Having shocked", "To shock"],
+    "correct": 1,
+    "explanation": "Past participle (shocked) is used when the subject experiences the feeling."
+  },
+  {
+    "question": "The movie was so _____ that I fell asleep.",
+    "options": ["boring", "bored", "having bored", "to bore"],
+    "correct": 0,
+    "explanation": "Present participle (boring) describes what causes the feeling."
+  },
+  {
+    "question": "_____ all her homework, she went out to play.",
+    "options": ["Finishing", "Finished", "Having finished", "To finish"],
+    "correct": 2,
+    "explanation": "Having + past participle shows an action completed before another action."
+  },
+  {
+    "question": "The children, _____ in the park, didn't hear their mother calling.",
+    "options": ["playing", "played", "having played", "to play"],
+    "correct": 0,
+    "explanation": "Present participle (playing) describes simultaneous action."
+  },
+  {
+    "question": "_____ in 1850, the building is now a museum.",
+    "options": ["Building", "Built", "Having built", "To build"],
+    "correct": 1,
+    "explanation": "Past participle (built) in passive meaning."
+  },
+  {
+    "question": "_____ lived in Paris for ten years, she speaks French fluently.",
+    "options": ["Living", "Lived", "Having lived", "To live"],
+    "correct": 2,
+    "explanation": "Having + past participle shows prior experience affecting the present."
+  },
+  {
+    "question": "The results were quite _____.",
+    "options": ["disappointing", "disappointed", "having disappointed", "to disappoint"],
+    "correct": 0,
+    "explanation": "Present participle describes what causes the feeling."
+  },
+  {
+    "question": "_____ by everyone, he felt very lonely.",
+    "options": ["Ignoring", "Ignored", "Having ignored", "To ignore"],
+    "correct": 1,
+    "explanation": "Past participle (ignored) shows the subject receives the action."
+  },
+  {
+    "question": "_____ the letter, he put it in an envelope.",
+    "options": ["Writing", "Written", "Having written", "To write"],
+    "correct": 2,
+    "explanation": "Having + past participle shows completed action before another."
+  },
+  {
+    "question": "The lecture was absolutely _____.",
+    "options": ["fascinating", "fascinated", "having fascinated", "to fascinate"],
+    "correct": 0,
+    "explanation": "Present participle describes the quality of the lecture."
+  },
+  {
+    "question": "_____ no other choice, we decided to accept the offer.",
+    "options": ["Having", "Had", "Have", "To have"],
+    "correct": 0,
+    "explanation": "Having + object shows reason or cause."
+  },
+  {
+    "question": "The man _____ next to me is a famous author.",
+    "options": ["sitting", "sat", "having sat", "to sit"],
+    "correct": 0,
+    "explanation": "Present participle used as adjective describing the man."
+  },
+  {
+    "question": "_____ carefully, the instructions are easy to follow.",
+    "options": ["Reading", "Read", "Having read", "To read"],
+    "correct": 1,
+    "explanation": "Past participle in passive meaning (when read)."
+  },
+  {
+    "question": "She felt _____ after the long journey.",
+    "options": ["exhausting", "exhausted", "having exhausted", "to exhaust"],
+    "correct": 1,
+    "explanation": "Past participle describes how she felt."
+  },
+  {
+    "question": "_____ the exam, students must wait for the results.",
+    "options": ["Taking", "Taken", "Having taken", "To take"],
+    "correct": 2,
+    "explanation": "Having + past participle shows completed action."
+  },
+  {
+    "question": "The story was very _____.",
+    "options": ["moving", "moved", "having moved", "to move"],
+    "correct": 0,
+    "explanation": "Present participle describes the quality of the story."
+  },
+  {
+    "question": "_____ in the rain, we arrived home completely wet.",
+    "options": ["Walking", "Walked", "Having walked", "To walk"],
+    "correct": 2,
+    "explanation": "Having + past participle shows the reason for being wet."
+  },
+  {
+    "question": "The news was quite _____.",
+    "options": ["surprising", "surprised", "having surprised", "to surprise"],
+    "correct": 0,
+    "explanation": "Present participle describes the nature of the news."
+  },
+  {
+    "question": "_____ by his parents, he became very successful.",
+    "options": ["Encouraging", "Encouraged", "Having encouraged", "To encourage"],
+    "correct": 1,
+    "explanation": "Past participle shows he received encouragement."
+  },
+  {
+    "question": "_____ the mistake, she apologized immediately.",
+    "options": ["Realizing", "Realized", "Having realized", "To realize"],
+    "correct": 2,
+    "explanation": "Having + past participle shows action completed before apologizing."
+  },
+  {
+    "question": "The experience was truly _____.",
+    "options": ["terrifying", "terrified", "having terrified", "to terrify"],
+    "correct": 0,
+    "explanation": "Present participle describes the nature of the experience."
+  },
+  {
+    "question": "_____ all the evidence, the jury reached a verdict.",
+    "options": ["Considering", "Considered", "Having considered", "To consider"],
+    "correct": 2,
+    "explanation": "Having + past participle shows completed deliberation."
+  },
+  {
+    "question": "The children were _____ by the clown's performance.",
+    "options": ["amusing", "amused", "having amused", "to amuse"],
+    "correct": 1,
+    "explanation": "Past participle shows the children's reaction."
+  },
+  {
+    "question": "_____ in the accident, he couldn't work for months.",
+    "options": ["Injuring", "Injured", "Having injured", "To injure"],
+    "correct": 1,
+    "explanation": "Past participle shows he received the injury."
+  },
+  {
+    "question": "_____ the book three times, I know the story well.",
+    "options": ["Reading", "Read", "Having read", "To read"],
+    "correct": 2,
+    "explanation": "Having + past participle shows repeated past action affecting present knowledge."
+  }
+]

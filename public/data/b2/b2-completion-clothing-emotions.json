@@ -1,0 +1,122 @@
+[
+  {
+    "sentence": "She wore an _____ dress to the formal event.",
+    "correct": "elegant",
+    "options": ["elegant", "casual", "sporty", "torn"],
+    "explanation": "Elegant means graceful and stylish, appropriate for formal occasions."
+  },
+  {
+    "sentence": "He felt _____ when he received the unexpected award.",
+    "correct": "overwhelmed",
+    "options": ["overwhelmed", "bored", "indifferent", "annoyed"],
+    "explanation": "Overwhelmed means having strong emotional effects, often from surprise or joy."
+  },
+  {
+    "sentence": "The _____ jacket kept him warm during winter.",
+    "correct": "insulated",
+    "options": ["insulated", "thin", "sleeveless", "transparent"],
+    "explanation": "Insulated means protected from cold with special material."
+  },
+  {
+    "sentence": "She was _____ about the job interview results.",
+    "correct": "anxious",
+    "options": ["anxious", "confident", "relaxed", "indifferent"],
+    "explanation": "Anxious means experiencing worry or nervousness about something uncertain."
+  },
+  {
+    "sentence": "He prefers _____ clothing for everyday wear.",
+    "correct": "casual",
+    "options": ["casual", "formal", "ceremonial", "extravagant"],
+    "explanation": "Casual clothing is relaxed and suitable for everyday activities."
+  },
+  {
+    "sentence": "The news left her feeling _____ and disappointed.",
+    "correct": "dejected",
+    "options": ["dejected", "elated", "thrilled", "excited"],
+    "explanation": "Dejected means sad and depressed; dispirited."
+  },
+  {
+    "sentence": "The _____ scarf complemented her outfit perfectly.",
+    "correct": "silk",
+    "options": ["silk", "rough", "heavy", "plastic"],
+    "explanation": "Silk is a smooth, luxurious fabric often used for accessories."
+  },
+  {
+    "sentence": "He felt _____ after achieving his long-term goal.",
+    "correct": "fulfilled",
+    "options": ["fulfilled", "empty", "frustrated", "disappointed"],
+    "explanation": "Fulfilled means satisfied or happy because of fully developing one's abilities."
+  },
+  {
+    "sentence": "She bought a _____ coat for the rainy season.",
+    "correct": "waterproof",
+    "options": ["waterproof", "absorbent", "porous", "delicate"],
+    "explanation": "Waterproof means impervious to water, keeping you dry in rain."
+  },
+  {
+    "sentence": "The team was _____ after losing the championship.",
+    "correct": "devastated",
+    "options": ["devastated", "jubilant", "ecstatic", "cheerful"],
+    "explanation": "Devastated means severely shocked and distressed."
+  },
+  {
+    "sentence": "He wore _____ shoes to the business meeting.",
+    "correct": "polished",
+    "options": ["polished", "dirty", "torn", "casual"],
+    "explanation": "Polished shoes are shiny and well-maintained, appropriate for professional settings."
+  },
+  {
+    "sentence": "She felt _____ when her friend betrayed her trust.",
+    "correct": "hurt",
+    "options": ["hurt", "happy", "grateful", "proud"],
+    "explanation": "Hurt means suffering emotional pain or distress."
+  },
+  {
+    "sentence": "The _____ fabric was perfect for summer weather.",
+    "correct": "breathable",
+    "options": ["breathable", "thick", "heavy", "insulated"],
+    "explanation": "Breathable fabric allows air to pass through, keeping you cool."
+  },
+  {
+    "sentence": "He was _____ by the unexpected kindness of strangers.",
+    "correct": "touched",
+    "options": ["touched", "annoyed", "angered", "disgusted"],
+    "explanation": "Touched means feeling gratitude or sympathy; moved emotionally."
+  },
+  {
+    "sentence": "She chose a _____ outfit for the job interview.",
+    "correct": "professional",
+    "options": ["professional", "sloppy", "revealing", "childish"],
+    "explanation": "Professional clothing is appropriate and suitable for work environments."
+  },
+  {
+    "sentence": "The children were _____ on Christmas morning.",
+    "correct": "ecstatic",
+    "options": ["ecstatic", "miserable", "sad", "angry"],
+    "explanation": "Ecstatic means feeling or expressing overwhelming happiness or joyful excitement."
+  },
+  {
+    "sentence": "He wore a _____ tie to add color to his suit.",
+    "correct": "vibrant",
+    "options": ["vibrant", "dull", "faded", "colorless"],
+    "explanation": "Vibrant means full of energy and life; bright and striking."
+  },
+  {
+    "sentence": "She felt _____ after the long and stressful week.",
+    "correct": "exhausted",
+    "options": ["exhausted", "energized", "refreshed", "invigorated"],
+    "explanation": "Exhausted means extremely tired; drained of energy."
+  },
+  {
+    "sentence": "The _____ accessories completed her elegant look.",
+    "correct": "matching",
+    "options": ["matching", "clashing", "mismatched", "random"],
+    "explanation": "Matching accessories coordinate well with the outfit."
+  },
+  {
+    "sentence": "He was _____ to finally reunite with his family.",
+    "correct": "overjoyed",
+    "options": ["overjoyed", "upset", "disappointed", "indifferent"],
+    "explanation": "Overjoyed means extremely happy; filled with great joy."
+  }
+]

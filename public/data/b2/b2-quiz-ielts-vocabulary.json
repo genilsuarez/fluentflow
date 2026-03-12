@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What does <ubiquitous> mean?",
+    "options": ["rare", "present everywhere", "expensive", "ancient"],
+    "correct": "present everywhere",
+    "explanation": "Ubiquitous means found everywhere or very common."
+  },
+  {
+    "question": "What is a <paradigm>?",
+    "options": ["a problem", "a typical example or pattern", "a solution", "a mistake"],
+    "correct": "a typical example or pattern",
+    "explanation": "A paradigm is a typical example, pattern, or model of something."
+  },
+  {
+    "question": "What does <mitigate> mean?",
+    "options": ["worsen", "make less severe", "ignore", "create"],
+    "correct": "make less severe",
+    "explanation": "Mitigate means to make something less severe, serious, or painful."
+  },
+  {
+    "question": "What is <sustainability>?",
+    "options": ["quick growth", "ability to maintain over time", "destruction", "temporary state"],
+    "correct": "ability to maintain over time",
+    "explanation": "Sustainability is the ability to maintain something at a certain rate or level over time."
+  },
+  {
+    "question": "What does <implement> mean?",
+    "options": ["cancel", "put into effect", "discuss", "ignore"],
+    "correct": "put into effect",
+    "explanation": "Implement means to put a plan or system into operation."
+  },
+  {
+    "question": "What is <infrastructure>?",
+    "options": ["buildings only", "basic physical systems", "decoration", "furniture"],
+    "correct": "basic physical systems",
+    "explanation": "Infrastructure refers to basic physical systems like roads, bridges, and utilities."
+  },
+  {
+    "question": "What does <advocate> mean?",
+    "options": ["oppose", "publicly support", "ignore", "criticize"],
+    "correct": "publicly support",
+    "explanation": "Advocate means to publicly recommend or support a cause or policy."
+  },
+  {
+    "question": "What is <innovation>?",
+    "options": ["tradition", "new method or idea", "old practice", "repetition"],
+    "correct": "new method or idea",
+    "explanation": "Innovation is a new method, idea, or product."
+  },
+  {
+    "question": "What does <comprehensive> mean?",
+    "options": ["incomplete", "complete and thorough", "simple", "brief"],
+    "correct": "complete and thorough",
+    "explanation": "Comprehensive means including all or nearly all elements or aspects."
+  },
+  {
+    "question": "What is <diversity>?",
+    "options": ["sameness", "variety and difference", "uniformity", "simplicity"],
+    "correct": "variety and difference",
+    "explanation": "Diversity means the state of being diverse; variety."
+  },
+  {
+    "question": "What does <facilitate> mean?",
+    "options": ["prevent", "make easier", "complicate", "stop"],
+    "correct": "make easier",
+    "explanation": "Facilitate means to make an action or process easier."
+  },
+  {
+    "question": "What is <resilience>?",
+    "options": ["weakness", "ability to recover quickly", "fragility", "permanence"],
+    "correct": "ability to recover quickly",
+    "explanation": "Resilience is the capacity to recover quickly from difficulties."
+  },
+  {
+    "question": "What does <enhance> mean?",
+    "options": ["reduce", "improve quality", "damage", "maintain"],
+    "correct": "improve quality",
+    "explanation": "Enhance means to intensify, increase, or further improve the quality of something."
+  },
+  {
+    "question": "What is <collaboration>?",
+    "options": ["working alone", "working together", "competition", "isolation"],
+    "correct": "working together",
+    "explanation": "Collaboration is the action of working with someone to produce something."
+  },
+  {
+    "question": "What does <contemporary> mean?",
+    "options": ["ancient", "belonging to the present time", "future", "historical"],
+    "correct": "belonging to the present time",
+    "explanation": "Contemporary means living or occurring at the same time; modern."
+  },
+  {
+    "question": "What is <methodology>?",
+    "options": ["result", "system of methods", "problem", "conclusion"],
+    "correct": "system of methods",
+    "explanation": "Methodology is a system of methods used in a particular area of study or activity."
+  },
+  {
+    "question": "What does <substantial> mean?",
+    "options": ["small", "of considerable importance or size", "insignificant", "temporary"],
+    "correct": "of considerable importance or size",
+    "explanation": "Substantial means of considerable importance, size, or worth."
+  },
+  {
+    "question": "What is <phenomenon>?",
+    "options": ["ordinary event", "remarkable occurrence", "mistake", "routine"],
+    "correct": "remarkable occurrence",
+    "explanation": "A phenomenon is a fact or situation that is observed to exist or happen."
+  },
+  {
+    "question": "What does <integrate> mean?",
+    "options": ["separate", "combine into a whole", "divide", "isolate"],
+    "correct": "combine into a whole",
+    "explanation": "Integrate means to combine one thing with another to form a whole."
+  },
+  {
+    "question": "What is <perspective>?",
+    "options": ["fact", "particular way of viewing things", "truth", "lie"],
+    "correct": "particular way of viewing things",
+    "explanation": "Perspective is a particular attitude toward or way of regarding something; a point of view."
+  },
+  {
+    "question": "What does <significant> mean?",
+    "options": ["unimportant", "sufficiently great or important", "tiny", "irrelevant"],
+    "correct": "sufficiently great or important",
+    "explanation": "Significant means sufficiently great or important to be worthy of attention."
+  },
+  {
+    "question": "What is <consensus>?",
+    "options": ["disagreement", "general agreement", "conflict", "debate"],
+    "correct": "general agreement",
+    "explanation": "Consensus is a general agreement among a group of people."
+  },
+  {
+    "question": "What does <analyze> mean?",
+    "options": ["ignore", "examine in detail", "guess", "assume"],
+    "correct": "examine in detail",
+    "explanation": "Analyze means to examine something methodically and in detail."
+  },
+  {
+    "question": "What is <criterion>?",
+    "options": ["result", "standard for judgment", "opinion", "guess"],
+    "correct": "standard for judgment",
+    "explanation": "A criterion is a principle or standard by which something may be judged."
+  },
+  {
+    "question": "What does <fluctuate> mean?",
+    "options": ["stay constant", "rise and fall irregularly", "increase only", "decrease only"],
+    "correct": "rise and fall irregularly",
+    "explanation": "Fluctuate means to rise and fall irregularly in number or amount."
+  }
+]

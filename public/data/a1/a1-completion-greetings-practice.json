@@ -1,0 +1,122 @@
+[
+  {
+    "sentence": "Hello! My ______ is Maria.",
+    "correct": "name",
+    "explanation": "Use <name> to introduce yourself",
+    "tip": "Complete with the correct word"
+  },
+  {
+    "sentence": "Nice to ______ you!",
+    "correct": "meet",
+    "explanation": "Use <meet> when meeting someone for the first time",
+    "tip": "Complete with the correct verb"
+  },
+  {
+    "sentence": "How ______ you?",
+    "correct": "are",
+    "explanation": "Use <are> to ask about someone's state",
+    "tip": "Complete with the correct form of <be>"
+  },
+  {
+    "sentence": "I'm ______, thank you.",
+    "correct": "fine",
+    "explanation": "Use <fine> to say you are well",
+    "tip": "Complete with an adjective"
+  },
+  {
+    "sentence": "What's your ______?",
+    "correct": "name",
+    "explanation": "Use <name> to ask someone's name",
+    "tip": "Complete with the correct noun"
+  },
+  {
+    "sentence": "Where are you ______?",
+    "correct": "from",
+    "explanation": "Use <from> to ask about origin",
+    "tip": "Complete with the correct preposition"
+  },
+  {
+    "sentence": "I'm from ______.",
+    "correct": "Spain",
+    "explanation": "Use a country name to say where you're from",
+    "tip": "Complete with a country name"
+  },
+  {
+    "sentence": "Good ______, everyone!",
+    "correct": "morning",
+    "explanation": "Use <morning> for greetings before noon",
+    "tip": "Complete with a time of day"
+  },
+  {
+    "sentence": "See you ______!",
+    "correct": "later",
+    "explanation": "Use <later> to say goodbye informally",
+    "tip": "Complete with a time expression"
+  },
+  {
+    "sentence": "Have a nice ______!",
+    "correct": "day",
+    "explanation": "Use <day> to wish someone well",
+    "tip": "Complete with a time period"
+  },
+  {
+    "sentence": "Good ______, sir.",
+    "correct": "afternoon",
+    "explanation": "Use <afternoon> for greetings after noon",
+    "tip": "Complete with a time of day"
+  },
+  {
+    "sentence": "Good ______, sleep well!",
+    "correct": "night",
+    "explanation": "Use <night> for evening farewells",
+    "tip": "Complete with a time of day"
+  },
+  {
+    "sentence": "How do you ______?",
+    "correct": "do",
+    "explanation": "Use <do> for formal greetings",
+    "tip": "Complete with the correct verb"
+  },
+  {
+    "sentence": "Pleased to ______ you.",
+    "correct": "meet",
+    "explanation": "Use <meet> for formal introductions",
+    "tip": "Complete with the correct verb"
+  },
+  {
+    "sentence": "This is my ______ John.",
+    "correct": "friend",
+    "explanation": "Use <friend> to introduce someone",
+    "tip": "Complete with a relationship word"
+  },
+  {
+    "sentence": "I ______ in Madrid.",
+    "correct": "live",
+    "explanation": "Use <live> to say where you reside",
+    "tip": "Complete with the correct verb"
+  },
+  {
+    "sentence": "I'm a ______.",
+    "correct": "student",
+    "explanation": "Use <student> or another occupation",
+    "tip": "Complete with an occupation"
+  },
+  {
+    "sentence": "What do you ______?",
+    "correct": "do",
+    "explanation": "Use <do> to ask about occupation",
+    "tip": "Complete with the correct verb"
+  },
+  {
+    "sentence": "I ______ English.",
+    "correct": "speak",
+    "explanation": "Use <speak> to talk about languages",
+    "tip": "Complete with the correct verb"
+  },
+  {
+    "sentence": "Goodbye! Take ______!",
+    "correct": "care",
+    "explanation": "Use <care> in the expression <take care>",
+    "tip": "Complete with the correct noun"
+  }
+]

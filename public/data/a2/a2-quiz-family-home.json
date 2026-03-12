@@ -1,0 +1,122 @@
+[
+  {
+    "question": "What do you call your <spouse's parents>?",
+    "options": ["cousins", "in-laws", "siblings", "relatives"],
+    "correct": "in-laws",
+    "explanation": "Your spouse's parents are your in-laws (mother-in-law, father-in-law)."
+  },
+  {
+    "question": "Which furniture is used for <sleeping>?",
+    "options": ["sofa", "bed", "table", "chair"],
+    "correct": "bed",
+    "explanation": "A bed is furniture used for sleeping."
+  },
+  {
+    "question": "What is a <stepmother>?",
+    "options": ["your mother's sister", "your father's new wife", "your grandmother", "your aunt"],
+    "correct": "your father's new wife",
+    "explanation": "A stepmother is your father's wife who is not your biological mother."
+  },
+  {
+    "question": "Which appliance keeps food <cold>?",
+    "options": ["oven", "refrigerator", "microwave", "toaster"],
+    "correct": "refrigerator",
+    "explanation": "A refrigerator keeps food cold and fresh."
+  },
+  {
+    "question": "What do you call your <aunt's children>?",
+    "options": ["nephews", "cousins", "siblings", "nieces"],
+    "correct": "cousins",
+    "explanation": "Your aunt's children are your cousins."
+  },
+  {
+    "question": "Which room item is used to <sit and relax>?",
+    "options": ["lamp", "armchair", "bookshelf", "curtain"],
+    "correct": "armchair",
+    "explanation": "An armchair is a comfortable chair used for sitting and relaxing."
+  },
+  {
+    "question": "What is an <only child>?",
+    "options": ["the oldest child", "a child with no siblings", "the youngest child", "an adopted child"],
+    "correct": "a child with no siblings",
+    "explanation": "An only child has no brothers or sisters."
+  },
+  {
+    "question": "Which appliance is used for <washing clothes>?",
+    "options": ["dishwasher", "dryer", "washing machine", "vacuum cleaner"],
+    "correct": "washing machine",
+    "explanation": "A washing machine is used to wash clothes."
+  },
+  {
+    "question": "What do you call your <grandparents' parents>?",
+    "options": ["ancestors", "great-grandparents", "relatives", "elders"],
+    "correct": "great-grandparents",
+    "explanation": "Your grandparents' parents are your great-grandparents."
+  },
+  {
+    "question": "Which item is used to <cover windows>?",
+    "options": ["carpet", "curtains", "pillow", "blanket"],
+    "correct": "curtains",
+    "explanation": "Curtains are used to cover windows for privacy and shade."
+  },
+  {
+    "question": "What is a <sibling>?",
+    "options": ["your parent", "your brother or sister", "your cousin", "your friend"],
+    "correct": "your brother or sister",
+    "explanation": "A sibling is your brother or sister."
+  },
+  {
+    "question": "Which appliance is used for <cooking food quickly>?",
+    "options": ["refrigerator", "microwave", "freezer", "blender"],
+    "correct": "microwave",
+    "explanation": "A microwave cooks or heats food quickly using electromagnetic waves."
+  },
+  {
+    "question": "What do you call your <children's children>?",
+    "options": ["nephews", "grandchildren", "cousins", "descendants"],
+    "correct": "grandchildren",
+    "explanation": "Your children's children are your grandchildren."
+  },
+  {
+    "question": "Which furniture is used for <storing clothes>?",
+    "options": ["desk", "wardrobe", "bookcase", "coffee table"],
+    "correct": "wardrobe",
+    "explanation": "A wardrobe is furniture used for storing clothes."
+  },
+  {
+    "question": "What is a <nuclear family>?",
+    "options": ["parents and children only", "all relatives", "grandparents only", "cousins and aunts"],
+    "correct": "parents and children only",
+    "explanation": "A nuclear family consists of parents and their children living together."
+  },
+  {
+    "question": "Which item is used to <cover the floor>?",
+    "options": ["wallpaper", "rug", "ceiling", "door"],
+    "correct": "rug",
+    "explanation": "A rug is used to cover part of the floor."
+  },
+  {
+    "question": "What do you call your <spouse's brother>?",
+    "options": ["cousin", "brother-in-law", "stepbrother", "nephew"],
+    "correct": "brother-in-law",
+    "explanation": "Your spouse's brother is your brother-in-law."
+  },
+  {
+    "question": "Which appliance is used for <cleaning floors>?",
+    "options": ["iron", "vacuum cleaner", "toaster", "fan"],
+    "correct": "vacuum cleaner",
+    "explanation": "A vacuum cleaner is used to clean floors by sucking up dirt and dust."
+  },
+  {
+    "question": "What is an <extended family>?",
+    "options": ["parents only", "children only", "parents, children, and other relatives", "friends"],
+    "correct": "parents, children, and other relatives",
+    "explanation": "An extended family includes parents, children, grandparents, aunts, uncles, and cousins."
+  },
+  {
+    "question": "Which item provides <light in a room>?",
+    "options": ["mirror", "lamp", "vase", "picture frame"],
+    "correct": "lamp",
+    "explanation": "A lamp provides artificial light in a room."
+  }
+]

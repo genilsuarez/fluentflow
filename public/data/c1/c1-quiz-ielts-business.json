@@ -1,0 +1,122 @@
+[
+  {
+    "question": "What does <leverage> mean in business?",
+    "options": ["ignore", "use something to maximum advantage", "avoid", "destroy"],
+    "correct": "use something to maximum advantage",
+    "explanation": "Leverage means to use something to maximum advantage, especially resources or opportunities."
+  },
+  {
+    "question": "What is <stakeholder>?",
+    "options": ["employee only", "person with interest in business", "customer only", "competitor"],
+    "correct": "person with interest in business",
+    "explanation": "A stakeholder is a person with an interest or concern in something, especially a business."
+  },
+  {
+    "question": "What does <streamline> mean?",
+    "options": ["complicate", "make more efficient", "expand", "delay"],
+    "correct": "make more efficient",
+    "explanation": "Streamline means to make an organization or system more efficient by simplifying procedures."
+  },
+  {
+    "question": "What is <synergy>?",
+    "options": ["conflict", "combined effect greater than sum", "competition", "isolation"],
+    "correct": "combined effect greater than sum",
+    "explanation": "Synergy is the interaction of elements that when combined produce a total effect greater than the sum of individual elements."
+  },
+  {
+    "question": "What does <scalable> mean?",
+    "options": ["fixed size", "able to grow proportionally", "shrinking", "unstable"],
+    "correct": "able to grow proportionally",
+    "explanation": "Scalable means able to be changed in size or scale, especially to grow while maintaining efficiency."
+  },
+  {
+    "question": "What is <due diligence>?",
+    "options": ["carelessness", "reasonable investigation before agreement", "quick decision", "avoidance"],
+    "correct": "reasonable investigation before agreement",
+    "explanation": "Due diligence is reasonable steps taken by a person to satisfy a legal requirement or investigate before entering an agreement."
+  },
+  {
+    "question": "What does <benchmark> mean?",
+    "options": ["failure", "standard for comparison", "guess", "mistake"],
+    "correct": "standard for comparison",
+    "explanation": "A benchmark is a standard or point of reference against which things may be compared or assessed."
+  },
+  {
+    "question": "What is <ROI>?",
+    "options": ["risk only", "return on investment", "rate of interest", "revenue only"],
+    "correct": "return on investment",
+    "explanation": "ROI (Return on Investment) is a measure of the profitability of an investment."
+  },
+  {
+    "question": "What does <disruptive> mean in business?",
+    "options": ["traditional", "causing radical change", "maintaining status quo", "conservative"],
+    "correct": "causing radical change",
+    "explanation": "Disruptive in business refers to innovation that significantly alters the way industries or markets function."
+  },
+  {
+    "question": "What is <market penetration>?",
+    "options": ["leaving market", "extent of product sales in market", "avoiding market", "market closure"],
+    "correct": "extent of product sales in market",
+    "explanation": "Market penetration is the extent to which a product is recognized and bought by customers in a particular market."
+  },
+  {
+    "question": "What does <pivot> mean in business?",
+    "options": ["stay same", "change strategy fundamentally", "expand slowly", "close down"],
+    "correct": "change strategy fundamentally",
+    "explanation": "To pivot means to change the fundamental direction or strategy of a business."
+  },
+  {
+    "question": "What is <value proposition>?",
+    "options": ["price only", "promise of value to customer", "cost", "expense"],
+    "correct": "promise of value to customer",
+    "explanation": "A value proposition is an innovation, service, or feature intended to make a company attractive to customers."
+  },
+  {
+    "question": "What does <monetize> mean?",
+    "options": ["give away free", "earn revenue from", "spend money", "lose money"],
+    "correct": "earn revenue from",
+    "explanation": "Monetize means to earn revenue from an asset, business, or activity."
+  },
+  {
+    "question": "What is <equity>?",
+    "options": ["debt", "ownership value in company", "loan", "expense"],
+    "correct": "ownership value in company",
+    "explanation": "Equity is the value of shares issued by a company; ownership interest."
+  },
+  {
+    "question": "What does <outsource> mean?",
+    "options": ["do internally", "obtain from external supplier", "hire employees", "expand"],
+    "correct": "obtain from external supplier",
+    "explanation": "Outsource means to obtain goods or services from an outside or foreign supplier."
+  },
+  {
+    "question": "What is <cash flow>?",
+    "options": ["profit", "total money moving in/out", "revenue only", "expenses only"],
+    "correct": "total money moving in/out",
+    "explanation": "Cash flow is the total amount of money being transferred into and out of a business."
+  },
+  {
+    "question": "What does <diversify> mean?",
+    "options": ["focus on one thing", "expand into different areas", "shrink", "specialize"],
+    "correct": "expand into different areas",
+    "explanation": "Diversify means to enlarge or vary the range of products or field of operation."
+  },
+  {
+    "question": "What is <intellectual property>?",
+    "options": ["physical assets", "creations of the mind", "real estate", "equipment"],
+    "correct": "creations of the mind",
+    "explanation": "Intellectual property refers to creations of the mind, such as inventions, designs, and artistic works."
+  },
+  {
+    "question": "What does <acquisition> mean?",
+    "options": ["selling", "buying another company", "closing", "merging equally"],
+    "correct": "buying another company",
+    "explanation": "Acquisition is the act of buying or obtaining an asset or object, especially another company."
+  },
+  {
+    "question": "What is <competitive advantage>?",
+    "options": ["disadvantage", "condition giving superior position", "equality", "weakness"],
+    "correct": "condition giving superior position",
+    "explanation": "Competitive advantage is a condition or circumstance that puts a company in a favorable business position."
+  }
+]

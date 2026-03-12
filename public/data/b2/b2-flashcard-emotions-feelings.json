@@ -1,0 +1,282 @@
+[
+  {
+    "front": "Anxious",
+    "back": "Ansioso",
+    "ipa": "/ˈæŋkʃəs/",
+    "example": "I feel anxious about the exam tomorrow.",
+    "example_es": "Me siento ansioso por el examen de mañana."
+  },
+  {
+    "front": "Overwhelmed",
+    "back": "Abrumado",
+    "ipa": "/ˌoʊvərˈwelmd/",
+    "example": "She felt overwhelmed by all the work.",
+    "example_es": "Ella se sintió abrumada por todo el trabajo."
+  },
+  {
+    "front": "Frustrated",
+    "back": "Frustrado",
+    "ipa": "/ˈfrʌstreɪtɪd/",
+    "example": "He was frustrated with the slow progress.",
+    "example_es": "Él estaba frustrado con el progreso lento."
+  },
+  {
+    "front": "Relieved",
+    "back": "Aliviado",
+    "ipa": "/rɪˈliːvd/",
+    "example": "I was relieved when I heard the good news.",
+    "example_es": "Me sentí aliviado cuando escuché las buenas noticias."
+  },
+  {
+    "front": "Grateful",
+    "back": "Agradecido",
+    "ipa": "/ˈɡreɪtfl/",
+    "example": "I'm grateful for all your help.",
+    "example_es": "Estoy agradecido por toda tu ayuda."
+  },
+  {
+    "front": "Content",
+    "back": "Satisfecho, contento",
+    "ipa": "/kənˈtent/",
+    "example": "She felt content with her life.",
+    "example_es": "Ella se sentía satisfecha con su vida."
+  },
+  {
+    "front": "Delighted",
+    "back": "Encantado",
+    "ipa": "/dɪˈlaɪtɪd/",
+    "example": "We were delighted to receive your invitation.",
+    "example_es": "Estábamos encantados de recibir tu invitación."
+  },
+  {
+    "front": "Thrilled",
+    "back": "Emocionado",
+    "ipa": "/θrɪld/",
+    "example": "I'm thrilled about the new opportunity.",
+    "example_es": "Estoy emocionado por la nueva oportunidad."
+  },
+  {
+    "front": "Ecstatic",
+    "back": "Eufórico",
+    "ipa": "/ɪkˈstætɪk/",
+    "example": "She was ecstatic when she won the prize.",
+    "example_es": "Ella estaba eufórica cuando ganó el premio."
+  },
+  {
+    "front": "Disappointed",
+    "back": "Decepcionado",
+    "ipa": "/ˌdɪsəˈpɔɪntɪd/",
+    "example": "He was disappointed with the results.",
+    "example_es": "Él estaba decepcionado con los resultados."
+  },
+  {
+    "front": "Discouraged",
+    "back": "Desanimado",
+    "ipa": "/dɪsˈkɜːrɪdʒd/",
+    "example": "Don't feel discouraged by the setback.",
+    "example_es": "No te sientas desanimado por el contratiempo."
+  },
+  {
+    "front": "Hopeful",
+    "back": "Esperanzado",
+    "ipa": "/ˈhoʊpfl/",
+    "example": "I'm hopeful that things will improve.",
+    "example_es": "Tengo esperanza de que las cosas mejoren."
+  },
+  {
+    "front": "Optimistic",
+    "back": "Optimista",
+    "ipa": "/ˌɑːptɪˈmɪstɪk/",
+    "example": "She remains optimistic about the future.",
+    "example_es": "Ella se mantiene optimista sobre el futuro."
+  },
+  {
+    "front": "Pessimistic",
+    "back": "Pesimista",
+    "ipa": "/ˌpesɪˈmɪstɪk/",
+    "example": "He has a pessimistic view of the situation.",
+    "example_es": "Él tiene una visión pesimista de la situación."
+  },
+  {
+    "front": "Nervous",
+    "back": "Nervioso",
+    "ipa": "/ˈnɜːrvəs/",
+    "example": "I always get nervous before presentations.",
+    "example_es": "Siempre me pongo nervioso antes de las presentaciones."
+  },
+  {
+    "front": "Confident",
+    "back": "Seguro de sí mismo",
+    "ipa": "/ˈkɑːnfɪdənt/",
+    "example": "She feels confident about her abilities.",
+    "example_es": "Ella se siente segura de sus habilidades."
+  },
+  {
+    "front": "Insecure",
+    "back": "Inseguro",
+    "ipa": "/ˌɪnsɪˈkjʊr/",
+    "example": "He felt insecure about his performance.",
+    "example_es": "Él se sentía inseguro sobre su desempeño."
+  },
+  {
+    "front": "Embarrassed",
+    "back": "Avergonzado",
+    "ipa": "/ɪmˈbærəst/",
+    "example": "I was embarrassed by my mistake.",
+    "example_es": "Estaba avergonzado por mi error."
+  },
+  {
+    "front": "Ashamed",
+    "back": "Avergonzado, apenado",
+    "ipa": "/əˈʃeɪmd/",
+    "example": "He felt ashamed of his behavior.",
+    "example_es": "Él se sentía avergonzado de su comportamiento."
+  },
+  {
+    "front": "Proud",
+    "back": "Orgulloso",
+    "ipa": "/praʊd/",
+    "example": "I'm proud of your achievements.",
+    "example_es": "Estoy orgulloso de tus logros."
+  },
+  {
+    "front": "Jealous",
+    "back": "Celoso",
+    "ipa": "/ˈdʒeləs/",
+    "example": "She felt jealous of her friend's success.",
+    "example_es": "Ella sentía celos del éxito de su amiga."
+  },
+  {
+    "front": "Envious",
+    "back": "Envidioso",
+    "ipa": "/ˈenviəs/",
+    "example": "He was envious of their new house.",
+    "example_es": "Él estaba envidioso de su casa nueva."
+  },
+  {
+    "front": "Resentful",
+    "back": "Resentido",
+    "ipa": "/rɪˈzentfl/",
+    "example": "She felt resentful about the unfair treatment.",
+    "example_es": "Ella se sentía resentida por el trato injusto."
+  },
+  {
+    "front": "Bitter",
+    "back": "Amargado",
+    "ipa": "/ˈbɪtər/",
+    "example": "He became bitter after the divorce.",
+    "example_es": "Él se volvió amargado después del divorcio."
+  },
+  {
+    "front": "Sympathetic",
+    "back": "Comprensivo",
+    "ipa": "/ˌsɪmpəˈθetɪk/",
+    "example": "She was sympathetic to his problems.",
+    "example_es": "Ella era comprensiva con sus problemas."
+  },
+  {
+    "front": "Compassionate",
+    "back": "Compasivo",
+    "ipa": "/kəmˈpæʃənət/",
+    "example": "He's a compassionate person who helps others.",
+    "example_es": "Él es una persona compasiva que ayuda a otros."
+  },
+  {
+    "front": "Indifferent",
+    "back": "Indiferente",
+    "ipa": "/ɪnˈdɪfrənt/",
+    "example": "She seemed indifferent to the news.",
+    "example_es": "Ella parecía indiferente a las noticias."
+  },
+  {
+    "front": "Apathetic",
+    "back": "Apático",
+    "ipa": "/ˌæpəˈθetɪk/",
+    "example": "He felt apathetic about the election.",
+    "example_es": "Él se sentía apático sobre las elecciones."
+  },
+  {
+    "front": "Enthusiastic",
+    "back": "Entusiasta",
+    "ipa": "/ɪnˌθuːziˈæstɪk/",
+    "example": "She's enthusiastic about the new project.",
+    "example_es": "Ella está entusiasta con el nuevo proyecto."
+  },
+  {
+    "front": "Passionate",
+    "back": "Apasionado",
+    "ipa": "/ˈpæʃənət/",
+    "example": "He's passionate about environmental issues.",
+    "example_es": "Él es apasionado sobre temas ambientales."
+  },
+  {
+    "front": "Melancholy",
+    "back": "Melancólico",
+    "ipa": "/ˈmelənkɑːli/",
+    "example": "The music gave her a melancholy feeling.",
+    "example_es": "La música le dio un sentimiento melancólico."
+  },
+  {
+    "front": "Nostalgic",
+    "back": "Nostálgico",
+    "ipa": "/nɑːˈstældʒɪk/",
+    "example": "I feel nostalgic when I see old photos.",
+    "example_es": "Me siento nostálgico cuando veo fotos antiguas."
+  },
+  {
+    "front": "Homesick",
+    "back": "Con nostalgia del hogar",
+    "ipa": "/ˈhoʊmsɪk/",
+    "example": "She felt homesick during her first year abroad.",
+    "example_es": "Ella sintió nostalgia del hogar durante su primer año en el extranjero."
+  },
+  {
+    "front": "Lonely",
+    "back": "Solo, solitario",
+    "ipa": "/ˈloʊnli/",
+    "example": "He felt lonely after moving to a new city.",
+    "example_es": "Él se sintió solo después de mudarse a una nueva ciudad."
+  },
+  {
+    "front": "Isolated",
+    "back": "Aislado",
+    "ipa": "/ˈaɪsəleɪtɪd/",
+    "example": "She felt isolated from her colleagues.",
+    "example_es": "Ella se sentía aislada de sus colegas."
+  },
+  {
+    "front": "Vulnerable",
+    "back": "Vulnerable",
+    "ipa": "/ˈvʌlnərəbl/",
+    "example": "He felt vulnerable after sharing his feelings.",
+    "example_es": "Él se sintió vulnerable después de compartir sus sentimientos."
+  },
+  {
+    "front": "Empowered",
+    "back": "Empoderado",
+    "ipa": "/ɪmˈpaʊərd/",
+    "example": "She felt empowered after the training.",
+    "example_es": "Ella se sintió empoderada después del entrenamiento."
+  },
+  {
+    "front": "Motivated",
+    "back": "Motivado",
+    "ipa": "/ˈmoʊtɪveɪtɪd/",
+    "example": "I feel motivated to achieve my goals.",
+    "example_es": "Me siento motivado para lograr mis objetivos."
+  },
+  {
+    "front": "Inspired",
+    "back": "Inspirado",
+    "ipa": "/ɪnˈspaɪərd/",
+    "example": "She felt inspired by the speaker's words.",
+    "example_es": "Ella se sintió inspirada por las palabras del orador."
+  },
+  {
+    "front": "Fulfilled",
+    "back": "Realizado",
+    "ipa": "/fʊlˈfɪld/",
+    "example": "He feels fulfilled in his career.",
+    "example_es": "Él se siente realizado en su carrera."
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "question": "_____ had I arrived home when the phone rang.",
+    "options": ["Hardly", "Rarely", "Seldom", "Never"],
+    "correct": 0,
+    "explanation": "Hardly/Scarcely/Barely + had + subject + past participle is used for inversion with past perfect."
+  },
+  {
+    "question": "_____ does she complain about her workload.",
+    "options": ["Rarely", "Often", "Always", "Usually"],
+    "correct": 0,
+    "explanation": "Negative adverbs like rarely, seldom, hardly require inversion: Rarely + auxiliary + subject + verb."
+  },
+  {
+    "question": "Not only _____ the exam, but he also got the highest score.",
+    "options": ["he passed", "did he pass", "passed he", "he did pass"],
+    "correct": 1,
+    "explanation": "Not only requires inversion: Not only + auxiliary + subject + verb."
+  },
+  {
+    "question": "Under no circumstances _____ this door unlocked.",
+    "options": ["you should leave", "should you leave", "leave you should", "you leave should"],
+    "correct": 1,
+    "explanation": "Negative expressions require inversion: Under no circumstances + auxiliary + subject + verb."
+  },
+  {
+    "question": "_____ had we started the meeting when the fire alarm went off.",
+    "options": ["No sooner", "As soon as", "Immediately", "Just"],
+    "correct": 0,
+    "explanation": "No sooner + had + subject + past participle + than is used for immediate succession."
+  },
+  {
+    "question": "Little _____ that this decision would change everything.",
+    "options": ["he knew", "did he know", "knew he", "he did know"],
+    "correct": 1,
+    "explanation": "Little (meaning 'not much') requires inversion: Little + auxiliary + subject + verb."
+  },
+  {
+    "question": "Never before _____ such a beautiful sunset.",
+    "options": ["I have seen", "have I seen", "seen I have", "I seen have"],
+    "correct": 1,
+    "explanation": "Never requires inversion: Never + auxiliary + subject + verb."
+  },
+  {
+    "question": "Only after finishing the project _____ how difficult it was.",
+    "options": ["I realized", "did I realize", "realized I", "I did realize"],
+    "correct": 1,
+    "explanation": "Only + time expression requires inversion: Only after + auxiliary + subject + verb."
+  },
+  {
+    "question": "_____ will I agree to such unreasonable terms.",
+    "options": ["In no way", "Anyway", "Some way", "This way"],
+    "correct": 0,
+    "explanation": "In no way is a negative expression requiring inversion."
+  },
+  {
+    "question": "Seldom _____ such dedication in a young employee.",
+    "options": ["we see", "do we see", "see we", "we do see"],
+    "correct": 1,
+    "explanation": "Seldom requires inversion: Seldom + auxiliary + subject + verb."
+  },
+  {
+    "question": "Not until midnight _____ working on the report.",
+    "options": ["she finished", "did she finish", "finished she", "she did finish"],
+    "correct": 1,
+    "explanation": "Not until requires inversion: Not until + time + auxiliary + subject + verb."
+  },
+  {
+    "question": "_____ the door than the lights went out.",
+    "options": ["No sooner had I opened", "No sooner I had opened", "I had no sooner opened", "Had I no sooner opened"],
+    "correct": 0,
+    "explanation": "No sooner + had + subject + past participle + than."
+  },
+  {
+    "question": "At no time _____ that the project would fail.",
+    "options": ["I thought", "did I think", "thought I", "I did think"],
+    "correct": 1,
+    "explanation": "At no time requires inversion: At no time + auxiliary + subject + verb."
+  },
+  {
+    "question": "Only when you lose something _____ its true value.",
+    "options": ["you appreciate", "do you appreciate", "appreciate you", "you do appreciate"],
+    "correct": 1,
+    "explanation": "Only when requires inversion in the main clause."
+  },
+  {
+    "question": "_____ such a talented musician.",
+    "options": ["Rarely have I met", "Rarely I have met", "I have rarely met", "Have I rarely met"],
+    "correct": 0,
+    "explanation": "Rarely at the beginning requires inversion: Rarely + auxiliary + subject + verb."
+  },
+  {
+    "question": "Not a word _____ during the entire meeting.",
+    "options": ["he said", "did he say", "said he", "he did say"],
+    "correct": 1,
+    "explanation": "Not a + noun requires inversion: Not a word + auxiliary + subject + verb."
+  },
+  {
+    "question": "_____ the importance of this decision.",
+    "options": ["Little did they realize", "Little they realized", "They little realized", "Did they little realize"],
+    "correct": 0,
+    "explanation": "Little + auxiliary + subject + verb for emphasis."
+  },
+  {
+    "question": "Only by working together _____ this challenge.",
+    "options": ["we can overcome", "can we overcome", "overcome we can", "we overcome can"],
+    "correct": 1,
+    "explanation": "Only by + -ing requires inversion: Only by + auxiliary + subject + verb."
+  },
+  {
+    "question": "_____ to such a ridiculous proposal.",
+    "options": ["Never will I agree", "Never I will agree", "I will never agree", "Will I never agree"],
+    "correct": 0,
+    "explanation": "Never at the beginning requires inversion for emphasis."
+  },
+  {
+    "question": "Not only _____ late, but he also forgot the documents.",
+    "options": ["he was", "was he", "he did be", "did he be"],
+    "correct": 1,
+    "explanation": "Not only + be verb + subject (inversion with be)."
+  },
+  {
+    "question": "_____ such poor customer service.",
+    "options": ["Seldom have I experienced", "Seldom I have experienced", "I have seldom experienced", "Have I seldom experienced"],
+    "correct": 0,
+    "explanation": "Seldom at the beginning requires inversion."
+  },
+  {
+    "question": "Under no circumstances _____ your password with anyone.",
+    "options": ["you should share", "should you share", "share you should", "you share should"],
+    "correct": 1,
+    "explanation": "Under no circumstances + modal + subject + verb."
+  },
+  {
+    "question": "_____ the truth about what happened that night.",
+    "options": ["Little did anyone know", "Little anyone knew", "Anyone little knew", "Did anyone little know"],
+    "correct": 0,
+    "explanation": "Little + auxiliary + subject + verb."
+  },
+  {
+    "question": "Only in emergencies _____ this button.",
+    "options": ["you should press", "should you press", "press you should", "you press should"],
+    "correct": 1,
+    "explanation": "Only in + place/situation requires inversion."
+  },
+  {
+    "question": "_____ such a complex problem in such a short time.",
+    "options": ["Rarely can one solve", "Rarely one can solve", "One can rarely solve", "Can one rarely solve"],
+    "correct": 0,
+    "explanation": "Rarely + modal + subject + verb for emphasis."
+  }
+]

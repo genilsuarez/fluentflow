@@ -1,0 +1,122 @@
+[
+  {
+    "question": "What does <perseverance> mean?",
+    "options": ["giving up easily", "persistence in doing something", "avoiding challenges", "quitting"],
+    "correct": "persistence in doing something",
+    "explanation": "Perseverance means continued effort to do or achieve something despite difficulties."
+  },
+  {
+    "question": "What is a <setback>?",
+    "options": ["a success", "a difficulty that delays progress", "an achievement", "a reward"],
+    "correct": "a difficulty that delays progress",
+    "explanation": "A setback is a reversal or check in progress."
+  },
+  {
+    "question": "What does <triumph> mean?",
+    "options": ["failure", "great victory or achievement", "attempt", "struggle"],
+    "correct": "great victory or achievement",
+    "explanation": "Triumph means a great victory or achievement."
+  },
+  {
+    "question": "What is <resilience>?",
+    "options": ["weakness", "ability to recover from difficulties", "giving up", "avoiding problems"],
+    "correct": "ability to recover from difficulties",
+    "explanation": "Resilience is the capacity to recover quickly from difficulties; toughness."
+  },
+  {
+    "question": "What does <accomplish> mean?",
+    "options": ["fail", "achieve or complete successfully", "try", "abandon"],
+    "correct": "achieve or complete successfully",
+    "explanation": "Accomplish means to achieve or complete something successfully."
+  },
+  {
+    "question": "What is a <breakthrough>?",
+    "options": ["a failure", "a sudden important development", "a mistake", "a delay"],
+    "correct": "a sudden important development",
+    "explanation": "A breakthrough is a sudden, dramatic, and important discovery or development."
+  },
+  {
+    "question": "What does <determination> mean?",
+    "options": ["uncertainty", "firmness of purpose", "hesitation", "doubt"],
+    "correct": "firmness of purpose",
+    "explanation": "Determination is firmness of purpose; resoluteness."
+  },
+  {
+    "question": "What is <adversity>?",
+    "options": ["good fortune", "difficulties or misfortune", "success", "happiness"],
+    "correct": "difficulties or misfortune",
+    "explanation": "Adversity means difficulties or misfortune."
+  },
+  {
+    "question": "What does <strive> mean?",
+    "options": ["give up", "make great efforts to achieve", "relax", "avoid"],
+    "correct": "make great efforts to achieve",
+    "explanation": "Strive means to make great efforts to achieve or obtain something."
+  },
+  {
+    "question": "What is an <obstacle>?",
+    "options": ["help", "something that blocks progress", "support", "advantage"],
+    "correct": "something that blocks progress",
+    "explanation": "An obstacle is something that blocks one's way or prevents progress."
+  },
+  {
+    "question": "What does <flourish> mean?",
+    "options": ["decline", "grow or develop successfully", "fail", "struggle"],
+    "correct": "grow or develop successfully",
+    "explanation": "Flourish means to grow or develop in a healthy or vigorous way."
+  },
+  {
+    "question": "What is a <downfall>?",
+    "options": ["success", "loss of power or prosperity", "achievement", "victory"],
+    "correct": "loss of power or prosperity",
+    "explanation": "Downfall is a loss of power, prosperity, or status."
+  },
+  {
+    "question": "What does <ambitious> mean?",
+    "options": ["lazy", "having strong desire for success", "unmotivated", "content"],
+    "correct": "having strong desire for success",
+    "explanation": "Ambitious means having or showing a strong desire and determination to succeed."
+  },
+  {
+    "question": "What is a <fiasco>?",
+    "options": ["success", "complete failure", "achievement", "triumph"],
+    "correct": "complete failure",
+    "explanation": "A fiasco is a thing that is a complete failure, especially in a ludicrous way."
+  },
+  {
+    "question": "What does <excel> mean?",
+    "options": ["fail", "be exceptionally good at something", "struggle", "quit"],
+    "correct": "be exceptionally good at something",
+    "explanation": "Excel means to be exceptionally good at or proficient in an activity or subject."
+  },
+  {
+    "question": "What is <defeat>?",
+    "options": ["victory", "instance of being beaten", "success", "achievement"],
+    "correct": "instance of being beaten",
+    "explanation": "Defeat is an instance of defeating or being defeated."
+  },
+  {
+    "question": "What does <aspire> mean?",
+    "options": ["give up", "direct hope toward achieving something", "avoid", "fear"],
+    "correct": "direct hope toward achieving something",
+    "explanation": "Aspire means to direct one's hopes or ambitions toward achieving something."
+  },
+  {
+    "question": "What is a <milestone>?",
+    "options": ["failure", "significant stage or event", "mistake", "problem"],
+    "correct": "significant stage or event",
+    "explanation": "A milestone is a significant stage or event in development or progress."
+  },
+  {
+    "question": "What does <falter> mean?",
+    "options": ["succeed", "lose strength or momentum", "improve", "excel"],
+    "correct": "lose strength or momentum",
+    "explanation": "Falter means to lose strength or momentum; to start to fail."
+  },
+  {
+    "question": "What is <tenacity>?",
+    "options": ["weakness", "quality of being determined", "giving up", "laziness"],
+    "correct": "quality of being determined",
+    "explanation": "Tenacity is the quality or fact of being very determined; persistence."
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "question": "What is your <mother's mother> called?",
+    "options": ["aunt", "grandmother", "sister", "cousin"],
+    "correct": "grandmother",
+    "explanation": "Your mother's mother is your grandmother."
+  },
+  {
+    "question": "Which body part do you use to <smell>?",
+    "options": ["nose", "ear", "eye", "mouth"],
+    "correct": "nose",
+    "explanation": "The nose is used for smelling."
+  },
+  {
+    "question": "What do you wear on your <feet>?",
+    "options": ["hat", "gloves", "shoes", "scarf"],
+    "correct": "shoes",
+    "explanation": "Shoes are worn on the feet."
+  },
+  {
+    "question": "Which weather word means <water falling from the sky>?",
+    "options": ["sunny", "rain", "cloudy", "windy"],
+    "correct": "rain",
+    "explanation": "Rain is water falling from the sky."
+  },
+  {
+    "question": "What room do you <sleep> in?",
+    "options": ["kitchen", "bathroom", "bedroom", "living room"],
+    "correct": "bedroom",
+    "explanation": "The bedroom is where you sleep."
+  },
+  {
+    "question": "Which is a <school subject>?",
+    "options": ["desk", "math", "pencil", "teacher"],
+    "correct": "math",
+    "explanation": "Math is a school subject."
+  },
+  {
+    "question": "What is your <father's brother> called?",
+    "options": ["uncle", "cousin", "nephew", "grandfather"],
+    "correct": "uncle",
+    "explanation": "Your father's brother is your uncle."
+  },
+  {
+    "question": "Which body part do you use to <think>?",
+    "options": ["heart", "brain", "stomach", "lungs"],
+    "correct": "brain",
+    "explanation": "The brain is used for thinking."
+  },
+  {
+    "question": "What do you wear when it's <cold>?",
+    "options": ["swimsuit", "shorts", "jacket", "sandals"],
+    "correct": "jacket",
+    "explanation": "A jacket keeps you warm when it's cold."
+  },
+  {
+    "question": "Which weather word means <no clouds>?",
+    "options": ["rainy", "sunny", "foggy", "stormy"],
+    "correct": "sunny",
+    "explanation": "Sunny means there are no clouds and the sun is shining."
+  },
+  {
+    "question": "What room do you <cook> in?",
+    "options": ["bedroom", "kitchen", "garage", "bathroom"],
+    "correct": "kitchen",
+    "explanation": "The kitchen is where you cook food."
+  },
+  {
+    "question": "Which is used in a <classroom>?",
+    "options": ["bed", "blackboard", "stove", "shower"],
+    "correct": "blackboard",
+    "explanation": "A blackboard is used in a classroom for teaching."
+  },
+  {
+    "question": "What is your <brother's son> called?",
+    "options": ["nephew", "cousin", "uncle", "son"],
+    "correct": "nephew",
+    "explanation": "Your brother's son is your nephew."
+  },
+  {
+    "question": "Which body part connects your <head to your body>?",
+    "options": ["arm", "leg", "neck", "finger"],
+    "correct": "neck",
+    "explanation": "The neck connects your head to your body."
+  },
+  {
+    "question": "What do you wear on your <head>?",
+    "options": ["shoes", "hat", "gloves", "belt"],
+    "correct": "hat",
+    "explanation": "A hat is worn on the head."
+  },
+  {
+    "question": "Which weather word means <very cold with ice>?",
+    "options": ["hot", "warm", "freezing", "mild"],
+    "correct": "freezing",
+    "explanation": "Freezing means extremely cold, often with ice."
+  },
+  {
+    "question": "What room do you <wash> in?",
+    "options": ["living room", "bathroom", "dining room", "bedroom"],
+    "correct": "bathroom",
+    "explanation": "The bathroom is where you wash yourself."
+  },
+  {
+    "question": "Which do you use to <write on paper>?",
+    "options": ["eraser", "ruler", "pencil", "scissors"],
+    "correct": "pencil",
+    "explanation": "A pencil is used to write on paper."
+  },
+  {
+    "question": "What is your <sister's daughter> called?",
+    "options": ["niece", "aunt", "cousin", "daughter"],
+    "correct": "niece",
+    "explanation": "Your sister's daughter is your niece."
+  },
+  {
+    "question": "Which body part do you use to <walk>?",
+    "options": ["arms", "legs", "hands", "shoulders"],
+    "correct": "legs",
+    "explanation": "Legs are used for walking."
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "question": "What does <elucidate> mean?",
+    "options": ["confuse", "clarify and explain in detail", "summarize briefly", "ignore"],
+    "correct": "clarify and explain in detail",
+    "explanation": "Elucidate means to make something clear by explaining it in detail."
+  },
+  {
+    "question": "What is the purpose of <substantiating> a claim?",
+    "options": ["to question it", "to provide evidence for it", "to reject it", "to simplify it"],
+    "correct": "to provide evidence for it",
+    "explanation": "Substantiate means to provide evidence or proof to support a claim."
+  },
+  {
+    "question": "When you <juxtapose> two concepts, you:",
+    "options": ["combine them", "place them side by side for comparison", "separate them", "eliminate one"],
+    "correct": "place them side by side for comparison",
+    "explanation": "Juxtapose means to place things side by side to highlight contrasts or similarities."
+  },
+  {
+    "question": "What does <extrapolate> mean?",
+    "options": ["copy exactly", "infer from known data", "delete information", "memorize"],
+    "correct": "infer from known data",
+    "explanation": "Extrapolate means to extend known information to infer unknown information."
+  },
+  {
+    "question": "To <delineate> something means to:",
+    "options": ["erase it", "describe it precisely", "question it", "avoid it"],
+    "correct": "describe it precisely",
+    "explanation": "Delineate means to describe or portray something precisely."
+  },
+  {
+    "question": "What does <notwithstanding> mean?",
+    "options": ["because of", "in spite of", "instead of", "before"],
+    "correct": "in spite of",
+    "explanation": "Notwithstanding means in spite of or despite something."
+  },
+  {
+    "question": "When is <albeit> used?",
+    "options": ["to agree completely", "to introduce a concession", "to reject an idea", "to start a sentence"],
+    "correct": "to introduce a concession",
+    "explanation": "Albeit means although or even though, introducing a concession."
+  },
+  {
+    "question": "What does <hitherto> mean?",
+    "options": ["in the future", "until now", "never", "always"],
+    "correct": "until now",
+    "explanation": "Hitherto means until now or up to this time."
+  },
+  {
+    "question": "What is <vis-à-vis> used for?",
+    "options": ["to end a discussion", "to compare or relate to", "to disagree", "to summarize"],
+    "correct": "to compare or relate to",
+    "explanation": "Vis-à-vis means in relation to or compared with."
+  },
+  {
+    "question": "What does <a priori> mean?",
+    "options": ["after experience", "before experience", "during experience", "without experience"],
+    "correct": "before experience",
+    "explanation": "A priori means relating to reasoning or knowledge independent of experience."
+  },
+  {
+    "question": "What is <sui generis>?",
+    "options": ["common", "unique in its kind", "traditional", "simple"],
+    "correct": "unique in its kind",
+    "explanation": "Sui generis means unique, constituting a class of its own."
+  },
+  {
+    "question": "What does <prima facie> mean?",
+    "options": ["finally", "at first sight", "never", "always"],
+    "correct": "at first sight",
+    "explanation": "Prima facie means based on first impression or at first sight."
+  },
+  {
+    "question": "What is <ceteris paribus>?",
+    "options": ["everything changes", "all else being equal", "nothing matters", "always true"],
+    "correct": "all else being equal",
+    "explanation": "Ceteris paribus means with other conditions remaining the same."
+  },
+  {
+    "question": "What does <inter alia> mean?",
+    "options": ["only this", "among other things", "never", "always"],
+    "correct": "among other things",
+    "explanation": "Inter alia means among other things."
+  },
+  {
+    "question": "What is the difference between <de facto> and <de jure>?",
+    "options": ["no difference", "in fact vs. by law", "past vs. future", "theory vs. practice"],
+    "correct": "in fact vs. by law",
+    "explanation": "De facto means in fact or reality, while de jure means by law or officially."
+  },
+  {
+    "question": "What does <per se> mean?",
+    "options": ["by itself", "with others", "never", "sometimes"],
+    "correct": "by itself",
+    "explanation": "Per se means by or in itself, intrinsically."
+  },
+  {
+    "question": "To <refute> an argument means to:",
+    "options": ["accept it", "prove it wrong", "ignore it", "repeat it"],
+    "correct": "prove it wrong",
+    "explanation": "Refute means to prove a statement or theory to be wrong."
+  },
+  {
+    "question": "What does <synthesize> mean?",
+    "options": ["separate", "combine elements into a whole", "destroy", "copy"],
+    "correct": "combine elements into a whole",
+    "explanation": "Synthesize means to combine separate elements to form a coherent whole."
+  },
+  {
+    "question": "To <articulate> an idea means to:",
+    "options": ["hide it", "express it clearly", "forget it", "question it"],
+    "correct": "express it clearly",
+    "explanation": "Articulate means to express an idea or feeling fluently and coherently."
+  },
+  {
+    "question": "What does <circumscribe> mean?",
+    "options": ["expand", "restrict or limit", "explain", "repeat"],
+    "correct": "restrict or limit",
+    "explanation": "Circumscribe means to restrict something within limits or to draw a line around."
+  }
+]

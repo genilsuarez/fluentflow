@@ -1,0 +1,122 @@
+[
+  {
+    "question": "What does <troubleshoot> mean?",
+    "options": ["create problems", "identify and solve problems", "ignore issues", "complicate matters"],
+    "correct": "identify and solve problems",
+    "explanation": "Troubleshoot means to analyze and solve problems in a system or process."
+  },
+  {
+    "question": "What is a <workaround>?",
+    "options": ["permanent solution", "temporary solution to problem", "creating problems", "avoiding work"],
+    "correct": "temporary solution to problem",
+    "explanation": "A workaround is a method for overcoming a problem temporarily when a direct approach is not possible."
+  },
+  {
+    "question": "What does <diagnose> mean?",
+    "options": ["ignore", "identify nature of problem", "create", "worsen"],
+    "correct": "identify nature of problem",
+    "explanation": "Diagnose means to identify the nature of an illness or problem by examination."
+  },
+  {
+    "question": "What is <root cause>?",
+    "options": ["symptom", "fundamental reason for problem", "solution", "effect"],
+    "correct": "fundamental reason for problem",
+    "explanation": "Root cause is the fundamental reason for the occurrence of a problem."
+  },
+  {
+    "question": "What does <mitigate> mean?",
+    "options": ["worsen", "make less severe", "ignore", "create"],
+    "correct": "make less severe",
+    "explanation": "Mitigate means to make something less severe, serious, or painful."
+  },
+  {
+    "question": "What is <contingency plan>?",
+    "options": ["main plan", "backup plan for emergencies", "no plan", "old plan"],
+    "correct": "backup plan for emergencies",
+    "explanation": "A contingency plan is a course of action designed to help respond effectively to unexpected events."
+  },
+  {
+    "question": "What does <prioritize> mean?",
+    "options": ["randomize", "arrange by importance", "ignore", "delay"],
+    "correct": "arrange by importance",
+    "explanation": "Prioritize means to designate or treat something as more important than other things."
+  },
+  {
+    "question": "What is <bottleneck>?",
+    "options": ["solution", "point of congestion", "improvement", "expansion"],
+    "correct": "point of congestion",
+    "explanation": "A bottleneck is a point of congestion in a system that slows overall progress."
+  },
+  {
+    "question": "What does <optimize> mean?",
+    "options": ["worsen", "make best use of", "complicate", "reduce"],
+    "correct": "make best use of",
+    "explanation": "Optimize means to make the best or most effective use of a situation or resource."
+  },
+  {
+    "question": "What is <critical thinking>?",
+    "options": ["complaining", "objective analysis to form judgment", "accepting everything", "criticizing"],
+    "correct": "objective analysis to form judgment",
+    "explanation": "Critical thinking is the objective analysis and evaluation of an issue to form a judgment."
+  },
+  {
+    "question": "What does <brainstorm> mean?",
+    "options": ["think alone", "generate ideas in group", "criticize ideas", "avoid thinking"],
+    "correct": "generate ideas in group",
+    "explanation": "Brainstorm means to produce an idea or way of solving a problem through group discussion."
+  },
+  {
+    "question": "What is <feasibility>?",
+    "options": ["impossibility", "state of being possible", "difficulty", "complexity"],
+    "correct": "state of being possible",
+    "explanation": "Feasibility is the state or degree of being easily or conveniently done."
+  },
+  {
+    "question": "What does <implement> mean?",
+    "options": ["plan only", "put into effect", "discuss", "cancel"],
+    "correct": "put into effect",
+    "explanation": "Implement means to put a decision or plan into effect."
+  },
+  {
+    "question": "What is <trade-off>?",
+    "options": ["perfect solution", "balance between two things", "no compromise", "complete win"],
+    "correct": "balance between two things",
+    "explanation": "A trade-off is a balance achieved between two desirable but incompatible features."
+  },
+  {
+    "question": "What does <assess> mean?",
+    "options": ["ignore", "evaluate nature or quality", "guess", "assume"],
+    "correct": "evaluate nature or quality",
+    "explanation": "Assess means to evaluate or estimate the nature, ability, or quality of something."
+  },
+  {
+    "question": "What is <proactive>?",
+    "options": ["reactive", "acting in anticipation", "passive", "delayed"],
+    "correct": "acting in anticipation",
+    "explanation": "Proactive means creating or controlling a situation by causing something to happen rather than responding after it happens."
+  },
+  {
+    "question": "What does <escalate> mean?",
+    "options": ["resolve", "increase in intensity", "decrease", "maintain"],
+    "correct": "increase in intensity",
+    "explanation": "Escalate means to increase rapidly in intensity or seriousness."
+  },
+  {
+    "question": "What is <resolution>?",
+    "options": ["problem", "firm decision or solution", "confusion", "delay"],
+    "correct": "firm decision or solution",
+    "explanation": "Resolution is a firm decision to do or not do something; the action of solving a problem."
+  },
+  {
+    "question": "What does <collaborate> mean?",
+    "options": ["work alone", "work jointly with others", "compete", "avoid"],
+    "correct": "work jointly with others",
+    "explanation": "Collaborate means to work jointly on an activity, especially to produce something."
+  },
+  {
+    "question": "What is <systematic approach>?",
+    "options": ["random method", "methodical procedure", "chaotic process", "guessing"],
+    "correct": "methodical procedure",
+    "explanation": "A systematic approach is done or acting according to a fixed plan or system; methodical."
+  }
+]

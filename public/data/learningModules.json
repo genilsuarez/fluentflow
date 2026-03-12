@@ -15,6 +15,23 @@
     "difficulty": 1
   },
   {
+    "id": "completion-greetings-practice-a1",
+    "name": "Greetings Practice",
+    "learningMode": "completion",
+    "dataPath": "data/a1/a1-completion-greetings-practice.json",
+    "level": [
+      "a1"
+    ],
+    "category": "Grammar",
+    "unit": 1,
+    "prerequisites": [
+      "reading-greetings-a1"
+    ],
+    "description": "Complete dialogues with greetings and introductions",
+    "estimatedTime": 5,
+    "difficulty": 1
+  },
+  {
     "id": "flashcard-basic-vocabulary-a1",
     "name": "Basic Vocabulary",
     "learningMode": "flashcard",
@@ -25,9 +42,26 @@
     "category": "Vocabulary",
     "unit": 1,
     "prerequisites": [
-      "reading-greetings-a1"
+      "completion-greetings-practice-a1"
     ],
     "description": "Essential everyday vocabulary for beginners",
+    "estimatedTime": 5,
+    "difficulty": 1
+  },
+  {
+    "id": "quiz-basic-vocabulary-a1",
+    "name": "Basic Vocabulary Quiz",
+    "learningMode": "quiz",
+    "dataPath": "data/a1/a1-quiz-basic-vocabulary.json",
+    "level": [
+      "a1"
+    ],
+    "category": "Vocabulary",
+    "unit": 1,
+    "prerequisites": [
+      "flashcard-basic-vocabulary-a1"
+    ],
+    "description": "Test your knowledge of basic English vocabulary",
     "estimatedTime": 5,
     "difficulty": 1
   },
@@ -42,7 +76,7 @@
     "category": "Vocabulary",
     "unit": 1,
     "prerequisites": [
-      "flashcard-basic-vocabulary-a1"
+      "quiz-basic-vocabulary-a1"
     ],
     "description": "Match common English verbs with Spanish translations",
     "estimatedTime": 5,
@@ -100,6 +134,23 @@
     ]
   },
   {
+    "id": "quiz-everyday-life-a1",
+    "name": "Everyday Life Quiz",
+    "learningMode": "quiz",
+    "dataPath": "data/a1/a1-quiz-everyday-life.json",
+    "level": [
+      "a1"
+    ],
+    "category": "Vocabulary",
+    "unit": 1,
+    "prerequisites": [
+      "flashcard-everyday-life-a1"
+    ],
+    "description": "Test your knowledge of everyday life vocabulary",
+    "estimatedTime": 5,
+    "difficulty": 1
+  },
+  {
     "id": "reading-travel-a1",
     "name": "Travel Reading",
     "learningMode": "reading",
@@ -110,7 +161,7 @@
     "category": "Reading",
     "unit": 1,
     "prerequisites": [
-      "flashcard-everyday-life-a1"
+      "quiz-everyday-life-a1"
     ],
     "description": "Essential travel vocabulary and phrases",
     "estimatedTime": 8,
@@ -168,6 +219,23 @@
     "difficulty": 1
   },
   {
+    "id": "sorting-verb-tenses-a1",
+    "name": "Verb Tenses",
+    "learningMode": "sorting",
+    "dataPath": "data/a1/a1-sorting-verb-tenses.json",
+    "level": [
+      "a1"
+    ],
+    "category": "Grammar",
+    "unit": 1,
+    "prerequisites": [
+      "completion-basic-sentences-a1"
+    ],
+    "description": "Sort verbs by tense: present, past, future",
+    "estimatedTime": 5,
+    "difficulty": 1
+  },
+  {
     "id": "matching-basic-phrasal-verbs-a1",
     "name": "Basic Phrasal Verbs",
     "learningMode": "matching",
@@ -178,7 +246,7 @@
     "category": "PhrasalVerbs",
     "unit": 1,
     "prerequisites": [
-      "completion-basic-sentences-a1"
+      "sorting-verb-tenses-a1"
     ],
     "description": "Match basic phrasal verbs with Spanish translations",
     "estimatedTime": 5,
@@ -202,6 +270,23 @@
     "difficulty": 1
   },
   {
+    "id": "quiz-phrasal-verbs-a1",
+    "name": "Phrasal Verbs Quiz",
+    "learningMode": "quiz",
+    "dataPath": "data/a1/a1-quiz-phrasal-verbs.json",
+    "level": [
+      "a1"
+    ],
+    "category": "PhrasalVerbs",
+    "unit": 1,
+    "prerequisites": [
+      "completion-basic-phrasal-verbs-a1"
+    ],
+    "description": "Test your knowledge of basic phrasal verbs",
+    "estimatedTime": 5,
+    "difficulty": 1
+  },
+  {
     "id": "flashcard-basic-idioms-a1",
     "name": "Basic Idioms Flashcards",
     "learningMode": "flashcard",
@@ -212,7 +297,7 @@
     "category": "Idioms",
     "unit": 1,
     "prerequisites": [
-      "completion-basic-phrasal-verbs-a1"
+      "quiz-phrasal-verbs-a1"
     ],
     "description": "Learn common English idioms with Spanish translations (20 idioms)",
     "estimatedTime": 5,
@@ -287,6 +372,23 @@
     "difficulty": 2
   },
   {
+    "id": "matching-time-expressions-a2",
+    "name": "Time Expressions",
+    "learningMode": "matching",
+    "dataPath": "data/a2/a2-matching-time-expressions.json",
+    "level": [
+      "a2"
+    ],
+    "category": "Vocabulary",
+    "unit": 2,
+    "prerequisites": [
+      "reading-culture-a2"
+    ],
+    "description": "Time expressions and temporal phrases",
+    "estimatedTime": 5,
+    "difficulty": 2
+  },
+  {
     "id": "reading-technology-a2",
     "name": "Technology Reading",
     "learningMode": "reading",
@@ -297,7 +399,7 @@
     "category": "Reading",
     "unit": 2,
     "prerequisites": [
-      "reading-culture-a2"
+      "matching-time-expressions-a2"
     ],
     "description": "Technology and digital communication vocabulary",
     "estimatedTime": 10,
@@ -355,6 +457,23 @@
     "difficulty": 2
   },
   {
+    "id": "quiz-family-home-a2",
+    "name": "Family & Home Quiz",
+    "learningMode": "quiz",
+    "dataPath": "data/a2/a2-quiz-family-home.json",
+    "level": [
+      "a2"
+    ],
+    "category": "Vocabulary",
+    "unit": 2,
+    "prerequisites": [
+      "flashcard-home-a2"
+    ],
+    "description": "Test your knowledge of family and home vocabulary",
+    "estimatedTime": 5,
+    "difficulty": 2
+  },
+  {
     "id": "flashcard-daily-activities-a2",
     "name": "Daily Activities & Feelings",
     "learningMode": "flashcard",
@@ -368,14 +487,14 @@
     "estimatedTime": 8,
     "difficulty": 2,
     "prerequisites": [
-      "flashcard-home-a2"
+      "quiz-family-home-a2"
     ]
   },
   {
-    "id": "matching-time-expressions-a2",
-    "name": "Time Expressions",
-    "learningMode": "matching",
-    "dataPath": "data/a2/a2-matching-time-expressions.json",
+    "id": "completion-daily-activities-a2",
+    "name": "Daily Activities Practice",
+    "learningMode": "completion",
+    "dataPath": "data/a2/a2-completion-daily-activities.json",
     "level": [
       "a2"
     ],
@@ -384,7 +503,7 @@
     "prerequisites": [
       "flashcard-daily-activities-a2"
     ],
-    "description": "Time expressions and temporal phrases",
+    "description": "Complete sentences using daily activities vocabulary",
     "estimatedTime": 5,
     "difficulty": 2
   },
@@ -399,9 +518,26 @@
     "category": "Grammar",
     "unit": 2,
     "prerequisites": [
-      "matching-time-expressions-a2"
+      "completion-daily-activities-a2"
     ],
     "description": "Regular and irregular past tense verbs",
+    "estimatedTime": 5,
+    "difficulty": 2
+  },
+  {
+    "id": "matching-be-vs-go-a2",
+    "name": "Be vs Go",
+    "learningMode": "matching",
+    "dataPath": "data/a2/a2-matching-be-vs-go.json",
+    "level": [
+      "a2"
+    ],
+    "category": "Grammar",
+    "unit": 2,
+    "prerequisites": [
+      "sorting-past-tense-a2"
+    ],
+    "description": "Understand the difference between be and go",
     "estimatedTime": 5,
     "difficulty": 2
   },
@@ -416,7 +552,7 @@
     "category": "Grammar",
     "unit": 2,
     "prerequisites": [
-      "sorting-past-tense-a2"
+      "matching-be-vs-go-a2"
     ],
     "description": "Complete stories using past tense",
     "estimatedTime": 5,
@@ -610,6 +746,23 @@
     "difficulty": 3
   },
   {
+    "id": "quiz-travel-leisure-b1",
+    "name": "Travel & Leisure Quiz",
+    "learningMode": "quiz",
+    "dataPath": "data/b1/b1-quiz-travel-leisure.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Vocabulary",
+    "unit": 3,
+    "prerequisites": [
+      "flashcard-travel-leisure-b1"
+    ],
+    "description": "Test your knowledge of travel and leisure vocabulary",
+    "estimatedTime": 5,
+    "difficulty": 3
+  },
+  {
     "id": "sorting-modal-verbs-b1",
     "name": "Modal Verbs",
     "learningMode": "sorting",
@@ -620,7 +773,7 @@
     "category": "Grammar",
     "unit": 3,
     "prerequisites": [
-      "flashcard-travel-leisure-b1"
+      "quiz-travel-leisure-b1"
     ],
     "description": "Modal verbs and their uses",
     "estimatedTime": 5,
@@ -695,6 +848,23 @@
     ]
   },
   {
+    "id": "sorting-conditionals-b1",
+    "name": "Conditionals Sorting",
+    "learningMode": "sorting",
+    "dataPath": "data/b1/b1-sorting-conditionals.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Grammar",
+    "unit": 3,
+    "prerequisites": [
+      "completion-conditionals-b1"
+    ],
+    "description": "Sort sentences by conditional type: first and second conditionals",
+    "estimatedTime": 5,
+    "difficulty": 3
+  },
+  {
     "id": "flashcard-money-life-b1",
     "name": "Money & Relationships",
     "learningMode": "flashcard",
@@ -708,7 +878,7 @@
     "estimatedTime": 8,
     "difficulty": 3,
     "prerequisites": [
-      "completion-conditionals-b1"
+      "sorting-conditionals-b1"
     ]
   },
   {
@@ -729,6 +899,23 @@
     ]
   },
   {
+    "id": "quiz-passive-voice-b1",
+    "name": "Passive Voice Quiz",
+    "learningMode": "quiz",
+    "dataPath": "data/b1/b1-quiz-passive-voice.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Grammar",
+    "unit": 3,
+    "prerequisites": [
+      "completion-passive-voice-b1"
+    ],
+    "description": "Test your understanding of passive voice transformations",
+    "estimatedTime": 5,
+    "difficulty": 3
+  },
+  {
     "id": "matching-common-phrasal-verbs-b1",
     "name": "Common Phrasal Verbs",
     "learningMode": "matching",
@@ -739,7 +926,7 @@
     "category": "PhrasalVerbs",
     "unit": 3,
     "prerequisites": [
-      "completion-passive-voice-b1"
+      "quiz-passive-voice-b1"
     ],
     "description": "Most common phrasal verbs and meanings",
     "estimatedTime": 5,
@@ -797,6 +984,23 @@
     "difficulty": 3
   },
   {
+    "id": "quiz-idioms-challenge-b1",
+    "name": "Idioms Challenge",
+    "learningMode": "quiz",
+    "dataPath": "data/b1/b1-quiz-idioms-challenge.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Idioms",
+    "unit": 3,
+    "prerequisites": [
+      "quiz-idioms-everyday-situations-b1"
+    ],
+    "description": "Challenging idioms quiz for intermediate learners",
+    "estimatedTime": 10,
+    "difficulty": 3
+  },
+  {
     "id": "quiz-intermediate-review-b1",
     "name": "Intermediate Review",
     "learningMode": "quiz",
@@ -807,7 +1011,7 @@
     "category": "Review",
     "unit": 3,
     "prerequisites": [
-      "quiz-idioms-everyday-situations-b1"
+      "quiz-idioms-challenge-b1"
     ],
     "description": "Comprehensive review of B1 level concepts",
     "estimatedTime": 5,
@@ -848,23 +1052,6 @@
     "difficulty": 4
   },
   {
-    "id": "reading-innovation-b2",
-    "name": "Innovation & Entrepreneurship",
-    "learningMode": "reading",
-    "dataPath": "data/b2/b2-reading-innovation.json",
-    "level": [
-      "b2"
-    ],
-    "category": "Reading",
-    "unit": 4,
-    "prerequisites": [
-      "reading-global-issues-b2"
-    ],
-    "description": "Startups, innovation, and business development",
-    "estimatedTime": 15,
-    "difficulty": 4
-  },
-  {
     "id": "sorting-connector-words-b2",
     "name": "Connector Words",
     "learningMode": "sorting",
@@ -875,10 +1062,27 @@
     "category": "Grammar",
     "unit": 4,
     "prerequisites": [
-      "reading-innovation-b2"
+      "reading-global-issues-b2"
     ],
     "description": "Discourse markers and connectors",
     "estimatedTime": 5,
+    "difficulty": 4
+  },
+  {
+    "id": "reading-innovation-b2",
+    "name": "Innovation & Entrepreneurship",
+    "learningMode": "reading",
+    "dataPath": "data/b2/b2-reading-innovation.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Reading",
+    "unit": 4,
+    "prerequisites": [
+      "sorting-connector-words-b2"
+    ],
+    "description": "Startups, innovation, and business development",
+    "estimatedTime": 15,
     "difficulty": 4
   },
   {
@@ -892,7 +1096,7 @@
     "category": "Grammar",
     "unit": 4,
     "prerequisites": [
-      "sorting-connector-words-b2"
+      "reading-innovation-b2"
     ],
     "description": "Advanced usage of <used to>, <be used to>, and <get used to>",
     "estimatedTime": 8,
@@ -933,6 +1137,125 @@
     "difficulty": 4
   },
   {
+    "id": "quiz-ielts-vocabulary-b2",
+    "name": "IELTS Vocabulary Quiz",
+    "learningMode": "quiz",
+    "dataPath": "data/b2/b2-quiz-ielts-vocabulary.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Vocabulary",
+    "unit": 4,
+    "prerequisites": [
+      "flashcard-ielts-vocabulary-pack1-b2"
+    ],
+    "description": "Test your knowledge of IELTS vocabulary",
+    "estimatedTime": 8,
+    "difficulty": 4
+  },
+  {
+    "id": "flashcard-clothing-style-b2",
+    "name": "Clothing & Style",
+    "learningMode": "flashcard",
+    "dataPath": "data/b2/b2-flashcard-clothing-style.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Vocabulary",
+    "unit": 4,
+    "prerequisites": [
+      "quiz-ielts-vocabulary-b2"
+    ],
+    "description": "Fashion, clothing, accessories, and style vocabulary",
+    "estimatedTime": 8,
+    "difficulty": 4
+  },
+  {
+    "id": "flashcard-emotions-feelings-b2",
+    "name": "Emotions & Feelings",
+    "learningMode": "flashcard",
+    "dataPath": "data/b2/b2-flashcard-emotions-feelings.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Vocabulary",
+    "unit": 4,
+    "prerequisites": [
+      "flashcard-clothing-style-b2"
+    ],
+    "description": "Complex emotions, moods, and feelings vocabulary",
+    "estimatedTime": 8,
+    "difficulty": 4
+  },
+  {
+    "id": "completion-clothing-emotions-b2",
+    "name": "Clothing & Emotions Practice",
+    "learningMode": "completion",
+    "dataPath": "data/b2/b2-completion-clothing-emotions.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Vocabulary",
+    "unit": 4,
+    "prerequisites": [
+      "flashcard-emotions-feelings-b2"
+    ],
+    "description": "Complete sentences using clothing and emotions vocabulary",
+    "estimatedTime": 5,
+    "difficulty": 4
+  },
+  {
+    "id": "flashcard-success-failure-b2",
+    "name": "Success & Failure",
+    "learningMode": "flashcard",
+    "dataPath": "data/b2/b2-flashcard-success-failure.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Vocabulary",
+    "unit": 4,
+    "prerequisites": [
+      "completion-clothing-emotions-b2"
+    ],
+    "description": "Achievement, perseverance, ambition, and adversity vocabulary",
+    "estimatedTime": 8,
+    "difficulty": 4
+  },
+  {
+    "id": "quiz-success-failure-b2",
+    "name": "Success & Failure Quiz",
+    "learningMode": "quiz",
+    "dataPath": "data/b2/b2-quiz-success-failure.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Vocabulary",
+    "unit": 4,
+    "prerequisites": [
+      "flashcard-success-failure-b2"
+    ],
+    "description": "Test your knowledge of success and failure vocabulary",
+    "estimatedTime": 5,
+    "difficulty": 4
+  },
+  {
+    "id": "flashcard-time-idioms-b2",
+    "name": "Time Idioms",
+    "learningMode": "flashcard",
+    "dataPath": "data/b2/b2-flashcard-time-idioms.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Idioms",
+    "unit": 4,
+    "prerequisites": [
+      "quiz-success-failure-b2"
+    ],
+    "description": "Common idioms related to time expressions",
+    "estimatedTime": 6,
+    "difficulty": 4
+  },
+  {
     "id": "completion-conditionals-advanced-b2",
     "name": "Advanced Conditionals",
     "learningMode": "completion",
@@ -946,7 +1269,7 @@
     "estimatedTime": 8,
     "difficulty": 4,
     "prerequisites": [
-      "flashcard-ielts-vocabulary-pack1-b2"
+      "flashcard-time-idioms-b2"
     ]
   },
   {
@@ -1120,6 +1443,23 @@
     "difficulty": 5
   },
   {
+    "id": "sorting-formal-register-c1",
+    "name": "Formal Register",
+    "learningMode": "sorting",
+    "dataPath": "data/c1/c1-sorting-formal-register.json",
+    "level": [
+      "c1"
+    ],
+    "category": "Vocabulary",
+    "unit": 5,
+    "prerequisites": [
+      "reading-leadership-c1"
+    ],
+    "description": "Sort expressions by register: Formal, Neutral, and Informal (40 items)",
+    "estimatedTime": 8,
+    "difficulty": 5
+  },
+  {
     "id": "reading-cultural-analysis-c1",
     "name": "Cultural Analysis",
     "learningMode": "reading",
@@ -1130,7 +1470,7 @@
     "category": "Reading",
     "unit": 5,
     "prerequisites": [
-      "reading-leadership-c1"
+      "sorting-formal-register-c1"
     ],
     "description": "Cross-cultural communication and analysis",
     "estimatedTime": 18,
@@ -1154,6 +1494,23 @@
     "difficulty": 5
   },
   {
+    "id": "quiz-ielts-business-c1",
+    "name": "IELTS Business Quiz",
+    "learningMode": "quiz",
+    "dataPath": "data/c1/c1-quiz-ielts-business.json",
+    "level": [
+      "c1"
+    ],
+    "category": "Vocabulary",
+    "unit": 5,
+    "prerequisites": [
+      "flashcard-ielts-business-c1"
+    ],
+    "description": "Test your knowledge of business vocabulary",
+    "estimatedTime": 5,
+    "difficulty": 5
+  },
+  {
     "id": "flashcard-ielts-home-daily-life-c1",
     "name": "Home & Daily Life",
     "learningMode": "flashcard",
@@ -1164,9 +1521,26 @@
     "category": "Vocabulary",
     "unit": 5,
     "prerequisites": [
-      "flashcard-ielts-business-c1"
+      "quiz-ielts-business-c1"
     ],
     "description": "Advanced home and daily life vocabulary",
+    "estimatedTime": 5,
+    "difficulty": 5
+  },
+  {
+    "id": "completion-ielts-home-life-c1",
+    "name": "IELTS Home & Life Practice",
+    "learningMode": "completion",
+    "dataPath": "data/c1/c1-completion-ielts-home-life.json",
+    "level": [
+      "c1"
+    ],
+    "category": "Vocabulary",
+    "unit": 5,
+    "prerequisites": [
+      "flashcard-ielts-home-daily-life-c1"
+    ],
+    "description": "Complete sentences using home and daily life vocabulary",
     "estimatedTime": 5,
     "difficulty": 5
   },
@@ -1181,10 +1555,44 @@
     "category": "Vocabulary",
     "unit": 5,
     "prerequisites": [
-      "flashcard-ielts-home-daily-life-c1"
+      "completion-ielts-home-life-c1"
     ],
     "description": "Advanced problem solving vocabulary",
     "estimatedTime": 5,
+    "difficulty": 5
+  },
+  {
+    "id": "quiz-problem-solving-c1",
+    "name": "Problem Solving Quiz",
+    "learningMode": "quiz",
+    "dataPath": "data/c1/c1-quiz-problem-solving.json",
+    "level": [
+      "c1"
+    ],
+    "category": "Vocabulary",
+    "unit": 5,
+    "prerequisites": [
+      "flashcard-ielts-problem-solving-c1"
+    ],
+    "description": "Test your knowledge of problem-solving vocabulary",
+    "estimatedTime": 5,
+    "difficulty": 5
+  },
+  {
+    "id": "flashcard-nature-animals-c1",
+    "name": "Nature & Animals",
+    "learningMode": "flashcard",
+    "dataPath": "data/c1/c1-flashcard-nature-animals.json",
+    "level": [
+      "c1"
+    ],
+    "category": "Vocabulary",
+    "unit": 5,
+    "prerequisites": [
+      "quiz-problem-solving-c1"
+    ],
+    "description": "Advanced nature, fauna, flora, and ecosystem vocabulary",
+    "estimatedTime": 8,
     "difficulty": 5
   },
   {
@@ -1198,7 +1606,7 @@
     "category": "Grammar",
     "unit": 5,
     "prerequisites": [
-      "flashcard-ielts-problem-solving-c1"
+      "flashcard-nature-animals-c1"
     ],
     "description": "Advanced conditional structures",
     "estimatedTime": 5,
@@ -1222,6 +1630,57 @@
     "difficulty": 5
   },
   {
+    "id": "quiz-grammar-inversions-c1",
+    "name": "Grammar Inversions Quiz",
+    "learningMode": "quiz",
+    "dataPath": "data/c1/c1-quiz-grammar-inversions.json",
+    "level": [
+      "c1"
+    ],
+    "category": "Grammar",
+    "unit": 5,
+    "prerequisites": [
+      "completion-advanced-grammar-inversions-c1"
+    ],
+    "description": "Test your knowledge of advanced grammatical inversions",
+    "estimatedTime": 8,
+    "difficulty": 5
+  },
+  {
+    "id": "quiz-participles-c1",
+    "name": "Participles Quiz",
+    "learningMode": "quiz",
+    "dataPath": "data/c1/c1-quiz-participles.json",
+    "level": [
+      "c1"
+    ],
+    "category": "Grammar",
+    "unit": 5,
+    "prerequisites": [
+      "quiz-grammar-inversions-c1"
+    ],
+    "description": "Test your knowledge of advanced participle constructions",
+    "estimatedTime": 8,
+    "difficulty": 5
+  },
+  {
+    "id": "completion-complex-prepositions-practice-c1",
+    "name": "Complex Prepositions Practice",
+    "learningMode": "completion",
+    "dataPath": "data/c1/c1-completion-complex-prepositions-practice.json",
+    "level": [
+      "c1"
+    ],
+    "category": "Grammar",
+    "unit": 5,
+    "prerequisites": [
+      "quiz-participles-c1"
+    ],
+    "description": "Practice complex prepositions in context",
+    "estimatedTime": 8,
+    "difficulty": 5
+  },
+  {
     "id": "completion-advanced-grammar-participles-c1",
     "name": "Participles",
     "learningMode": "completion",
@@ -1232,9 +1691,26 @@
     "category": "Grammar",
     "unit": 5,
     "prerequisites": [
-      "completion-advanced-grammar-inversions-c1"
+      "completion-complex-prepositions-practice-c1"
     ],
     "description": "Advanced participle constructions",
+    "estimatedTime": 5,
+    "difficulty": 5
+  },
+  {
+    "id": "matching-vocabulary-c1",
+    "name": "Advanced Vocabulary",
+    "learningMode": "matching",
+    "dataPath": "data/c1/c1-matching-sample.json",
+    "level": [
+      "c1"
+    ],
+    "category": "Vocabulary",
+    "unit": 5,
+    "prerequisites": [
+      "completion-advanced-grammar-participles-c1"
+    ],
+    "description": "Advanced vocabulary matching",
     "estimatedTime": 5,
     "difficulty": 5
   },
@@ -1249,43 +1725,9 @@
     "category": "Grammar",
     "unit": 5,
     "prerequisites": [
-      "completion-advanced-grammar-participles-c1"
+      "matching-vocabulary-c1"
     ],
     "description": "Subjunctive mood and usage",
-    "estimatedTime": 5,
-    "difficulty": 5
-  },
-  {
-    "id": "sorting-formal-register-c1",
-    "name": "Formal Register",
-    "learningMode": "sorting",
-    "dataPath": "data/c1/c1-sorting-formal-register.json",
-    "level": [
-      "c1"
-    ],
-    "category": "Vocabulary",
-    "unit": 5,
-    "prerequisites": [
-      "completion-advanced-grammar-subjunctive-c1"
-    ],
-    "description": "Sort expressions by register: Formal, Neutral, and Informal (40 items)",
-    "estimatedTime": 8,
-    "difficulty": 5
-  },
-  {
-    "id": "matching-vocabulary-c1",
-    "name": "Advanced Vocabulary",
-    "learningMode": "matching",
-    "dataPath": "data/c1/c1-matching-sample.json",
-    "level": [
-      "c1"
-    ],
-    "category": "Vocabulary",
-    "unit": 5,
-    "prerequisites": [
-      "sorting-formal-register-c1"
-    ],
-    "description": "Advanced vocabulary matching",
     "estimatedTime": 5,
     "difficulty": 5
   },
@@ -1300,7 +1742,7 @@
     "category": "PhrasalVerbs",
     "unit": 5,
     "prerequisites": [
-      "matching-vocabulary-c1"
+      "completion-advanced-grammar-subjunctive-c1"
     ],
     "description": "Match advanced phrasal verbs with Spanish translations (20 pairs)",
     "estimatedTime": 5,
@@ -1443,6 +1885,74 @@
     "difficulty": 5
   },
   {
+    "id": "flashcard-academic-writing-c2",
+    "name": "Academic Writing",
+    "learningMode": "flashcard",
+    "dataPath": "data/c2/c2-flashcard-academic-writing.json",
+    "level": [
+      "c2"
+    ],
+    "category": "Vocabulary",
+    "unit": 6,
+    "prerequisites": [
+      "flashcard-academic-c2"
+    ],
+    "description": "Advanced academic writing vocabulary and Latin expressions",
+    "estimatedTime": 8,
+    "difficulty": 5
+  },
+  {
+    "id": "quiz-academic-writing-c2",
+    "name": "Academic Writing Quiz",
+    "learningMode": "quiz",
+    "dataPath": "data/c2/c2-quiz-academic-writing.json",
+    "level": [
+      "c2"
+    ],
+    "category": "Vocabulary",
+    "unit": 6,
+    "prerequisites": [
+      "flashcard-academic-writing-c2"
+    ],
+    "description": "Test your knowledge of academic writing vocabulary",
+    "estimatedTime": 5,
+    "difficulty": 5
+  },
+  {
+    "id": "flashcard-critical-analysis-c2",
+    "name": "Critical Analysis",
+    "learningMode": "flashcard",
+    "dataPath": "data/c2/c2-flashcard-critical-analysis.json",
+    "level": [
+      "c2"
+    ],
+    "category": "Vocabulary",
+    "unit": 6,
+    "prerequisites": [
+      "quiz-academic-writing-c2"
+    ],
+    "description": "Advanced critical thinking and philosophical vocabulary",
+    "estimatedTime": 8,
+    "difficulty": 5
+  },
+  {
+    "id": "quiz-critical-analysis-c2",
+    "name": "Critical Analysis Quiz",
+    "learningMode": "quiz",
+    "dataPath": "data/c2/c2-quiz-critical-analysis.json",
+    "level": [
+      "c2"
+    ],
+    "category": "Vocabulary",
+    "unit": 6,
+    "prerequisites": [
+      "flashcard-critical-analysis-c2"
+    ],
+    "description": "Test your knowledge of critical analysis vocabulary",
+    "estimatedTime": 5,
+    "difficulty": 5
+  },
+  {
     "id": "completion-advanced-collocations-idioms-c2",
     "name": "Advanced Collocations",
     "learningMode": "completion",
@@ -1453,7 +1963,7 @@
     "category": "Vocabulary",
     "unit": 6,
     "prerequisites": [
-      "flashcard-academic-c2"
+      "quiz-critical-analysis-c2"
     ],
     "description": "Sophisticated collocations and idioms",
     "estimatedTime": 5,
@@ -1494,6 +2004,23 @@
     "difficulty": 5
   },
   {
+    "id": "completion-formal-register-advanced-c2",
+    "name": "Formal Register Advanced",
+    "learningMode": "completion",
+    "dataPath": "data/c2/c2-completion-formal-register-advanced.json",
+    "level": [
+      "c2"
+    ],
+    "category": "Vocabulary",
+    "unit": 6,
+    "prerequisites": [
+      "completion-formal-vocabulary-nuance-c2"
+    ],
+    "description": "Advanced formal register transformations and usage",
+    "estimatedTime": 8,
+    "difficulty": 5
+  },
+  {
     "id": "sorting-nuance-vocabulary-c2",
     "name": "Vocabulary Nuance",
     "learningMode": "sorting",
@@ -1504,7 +2031,7 @@
     "category": "Vocabulary",
     "unit": 6,
     "prerequisites": [
-      "completion-formal-vocabulary-nuance-c2"
+      "completion-formal-register-advanced-c2"
     ],
     "description": "Subtle vocabulary distinctions",
     "estimatedTime": 5,

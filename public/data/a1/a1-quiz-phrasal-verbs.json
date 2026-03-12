@@ -1,0 +1,122 @@
+[
+  {
+    "question": "I need to ______ early tomorrow.",
+    "options": ["wake up", "wake down", "wake in", "wake out"],
+    "correct": "wake up",
+    "explanation": "Wake up means to stop sleeping and become awake."
+  },
+  {
+    "question": "Please ______ the TV. It's too loud.",
+    "options": ["turn up", "turn down", "turn in", "turn at"],
+    "correct": "turn down",
+    "explanation": "Turn down means to reduce the volume."
+  },
+  {
+    "question": "Can you ______ this word in the dictionary?",
+    "options": ["look at", "look up", "look down", "look in"],
+    "correct": "look up",
+    "explanation": "Look up means to search for information."
+  },
+  {
+    "question": "I ______ at 7 AM every day.",
+    "options": ["get down", "get up", "get in", "get at"],
+    "correct": "get up",
+    "explanation": "Get up means to rise from bed."
+  },
+  {
+    "question": "Please ______ your shoes before entering.",
+    "options": ["take off", "take on", "take up", "take down"],
+    "correct": "take off",
+    "explanation": "Take off means to remove clothing or shoes."
+  },
+  {
+    "question": "I need to ______ my homework.",
+    "options": ["give up", "give in", "hand in", "hand up"],
+    "correct": "hand in",
+    "explanation": "Hand in means to submit or deliver something."
+  },
+  {
+    "question": "Let's ______ the meeting until tomorrow.",
+    "options": ["put off", "put on", "put up", "put down"],
+    "correct": "put off",
+    "explanation": "Put off means to postpone or delay."
+  },
+  {
+    "question": "Can you ______ the lights, please?",
+    "options": ["turn off", "turn up", "turn down", "turn at"],
+    "correct": "turn off",
+    "explanation": "Turn off means to stop a device from operating."
+  },
+  {
+    "question": "I ______ my old friend yesterday.",
+    "options": ["ran into", "ran up", "ran down", "ran off"],
+    "correct": "ran into",
+    "explanation": "Run into means to meet someone by chance."
+  },
+  {
+    "question": "Please ______ the form.",
+    "options": ["fill up", "fill in", "fill down", "fill at"],
+    "correct": "fill in",
+    "explanation": "Fill in means to complete a form with information."
+  },
+  {
+    "question": "I need to ______ some money from the bank.",
+    "options": ["take out", "take in", "take up", "take down"],
+    "correct": "take out",
+    "explanation": "Take out means to withdraw money."
+  },
+  {
+    "question": "Let's ______ this problem together.",
+    "options": ["work out", "work in", "work up", "work down"],
+    "correct": "work out",
+    "explanation": "Work out means to solve or resolve."
+  },
+  {
+    "question": "I ______ my jacket because it was cold.",
+    "options": ["put off", "put on", "put up", "put down"],
+    "correct": "put on",
+    "explanation": "Put on means to dress yourself in clothing."
+  },
+  {
+    "question": "Can you ______ the music? I can't hear it.",
+    "options": ["turn down", "turn up", "turn off", "turn in"],
+    "correct": "turn up",
+    "explanation": "Turn up means to increase the volume."
+  },
+  {
+    "question": "I need to ______ my room.",
+    "options": ["clean up", "clean down", "clean in", "clean at"],
+    "correct": "clean up",
+    "explanation": "Clean up means to tidy or organize."
+  },
+  {
+    "question": "Please ______ for a moment.",
+    "options": ["sit down", "sit up", "sit in", "sit at"],
+    "correct": "sit down",
+    "explanation": "Sit down means to take a seat."
+  },
+  {
+    "question": "I ______ smoking last year.",
+    "options": ["gave up", "gave in", "gave out", "gave off"],
+    "correct": "gave up",
+    "explanation": "Give up means to stop doing something."
+  },
+  {
+    "question": "Let's ______ the party at 10 PM.",
+    "options": ["go on", "go off", "go out", "go away"],
+    "correct": "go away",
+    "explanation": "Go away means to leave a place."
+  },
+  {
+    "question": "I need to ______ my email.",
+    "options": ["check out", "check in", "check up", "check on"],
+    "correct": "check out",
+    "explanation": "Check out means to examine or review."
+  },
+  {
+    "question": "Please ______ the door when you leave.",
+    "options": ["close down", "close up", "close in", "close off"],
+    "correct": "close up",
+    "explanation": "Close up means to shut completely."
+  }
+]

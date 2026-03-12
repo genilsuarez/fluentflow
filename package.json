@@ -28,6 +28,7 @@
     "analyze:deep:dc": "node scripts/validation/deep-analysis.js --dc",
     "audit:modules": "node scripts/validation/audit-modules.js",
     "audit:modules:json": "node scripts/validation/audit-modules.js --json",
+    "clean": "node scripts/utils/cleanup.js",
 
     "security:audit": "npm audit --audit-level=high --omit=dev",
     "security:scan": "node scripts/build/security-patterns.js",
