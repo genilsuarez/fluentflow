@@ -63,6 +63,8 @@ export const useProgression = () => {
     },
     enabled: allModules.length > 0,
     staleTime: 0, // No stale time - always refetch when dependencies change
+    refetchOnMount: true, // Always refetch on mount
+    refetchOnWindowFocus: false, // Don't refetch on window focus to avoid unnecessary updates
   });
 
   // Memoized helper functions

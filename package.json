@@ -11,6 +11,7 @@
     "preview:github": "node scripts/development/simulate-github-pages.js",
     "test": "vitest run --config config/vitest.config.ts --reporter=verbose --silent",
     "test:watch": "vitest --config config/vitest.config.ts",
+    "test:offline": "node scripts/testing/test-offline-mode.js",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 20 --config config/eslint.config.js",
     "lint:fix": "eslint . --ext ts,tsx --fix --config config/eslint.config.js",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css,md}\"",

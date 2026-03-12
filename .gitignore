@@ -5,3 +5,11 @@ coverage/
 .DS_Store
 .vscode/
 .kiro/
+
+# DevTools test artifacts (keep only reports)
+scripts/devtools/*.png
+scripts/devtools/*.jpg
+scripts/devtools/*.txt
+scripts/devtools/*.json
+!scripts/devtools/README.md
+!scripts/devtools/*-results.md

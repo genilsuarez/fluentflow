@@ -75,6 +75,20 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
   }, [isDarkMode, forceWhiteTextIfNeeded]);
 
   const nextRecommended = progression.getNextRecommendedModule();
+  
+  // Get completed modules from store
+  const { completedModules } = useProgressStore();
+  const completedModulesCount = Object.keys(completedModules || {}).length;
+  const prevCompletedCountRef = React.useRef(completedModulesCount);
+
+  // Force refresh progression when completed modules change
+  React.useEffect(() => {
+    if (completedModulesCount !== prevCompletedCountRef.current) {
+      prevCompletedCountRef.current = completedModulesCount;
+      // Force progression refresh to recalculate next-module
+      progression.refresh();
+    }
+  }, [completedModulesCount, progression]);
 
   // Auto-expand unit with next recommended module
   React.useEffect(() => {
