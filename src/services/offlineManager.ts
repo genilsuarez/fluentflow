@@ -156,7 +156,7 @@ async function getUrlsForLevels(
  * - Fetches learningModules.json, filters by level and category
  * - Downloads each file sequentially with retries (1 original + 2 retries, backoff 1s/2s)
  * - Calls onProgress with monotonically increasing completed count
- * 
+ *
  * NOTE: JS/CSS assets are NOT pre-cached. Browser's native HTTP cache handles them.
  * This prevents issues with stale cached assets after new deployments with different hashes.
  */
