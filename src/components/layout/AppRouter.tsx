@@ -3,6 +3,7 @@ import { useAppStore } from '../../stores/appStore';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useModuleData } from '../../hooks/useModuleData';
 import { useTranslation } from '../../utils/i18n';
+import { ModuleNotAvailableOfflineError } from '../../utils/secureHttp';
 import { LoadingSkeleton } from '../ui/LoadingSkeleton';
 import { MainMenu } from '../ui/MainMenu';
 import type { LearningModule } from '../../types';
@@ -95,28 +96,61 @@ const ModuleError: React.FC<{ error: Error; moduleId: string; onRetry: () => voi
 }) => {
   const { language } = useSettingsStore();
   const { t } = useTranslation(language);
+  const { setCurrentView } = useAppStore();
+
+  // Check if this is an offline error
+  const isOfflineError = error instanceof ModuleNotAvailableOfflineError;
+
+  const handleGoToSettings = () => {
+    setCurrentView('menu');
+    // Navigate to menu and let user access settings from there
+    window.location.hash = '#/menu';
+  };
 
   return (
     <div className="app-router__error">
       <div className="app-router__error-container">
-        <div className="app-router__error-icon">⚠️</div>
+        <div className="app-router__error-icon">{isOfflineError ? '📡' : '⚠️'}</div>
         <h3 className="app-router__error-title">
-          {t('errors.failedToLoadModule')}: {moduleId}
+          {isOfflineError
+            ? t('errors.moduleNotAvailableOffline')
+            : `${t('errors.failedToLoadModule')}: ${moduleId}`}
         </h3>
-        <p className="app-router__error-message">{error.message}</p>
+        <p className="app-router__error-message">
+          {isOfflineError ? t('errors.moduleNotAvailableOfflineDescription') : error.message}
+        </p>
         <div className="app-router__error-actions">
-          <button
-            onClick={onRetry}
-            className="app-router__error-btn app-router__error-btn--primary"
-          >
-            {t('errors.tryAgain')}
-          </button>
-          <button
-            onClick={() => window.location.reload()}
-            className="app-router__error-btn app-router__error-btn--secondary"
-          >
-            {t('errors.goToHome')}
-          </button>
+          {isOfflineError ? (
+            <>
+              <button
+                onClick={handleGoToSettings}
+                className="app-router__error-btn app-router__error-btn--primary"
+              >
+                {t('errors.goToOfflineSettings')}
+              </button>
+              <button
+                onClick={onRetry}
+                className="app-router__error-btn app-router__error-btn--secondary"
+              >
+                {t('errors.tryAgain')}
+              </button>
+            </>
+          ) : (
+            <>
+              <button
+                onClick={onRetry}
+                className="app-router__error-btn app-router__error-btn--primary"
+              >
+                {t('errors.tryAgain')}
+              </button>
+              <button
+                onClick={() => window.location.reload()}
+                className="app-router__error-btn app-router__error-btn--secondary"
+              >
+                {t('errors.goToHome')}
+              </button>
+            </>
+          )}
         </div>
       </div>
     </div>

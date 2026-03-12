@@ -343,6 +343,10 @@ const translations = {
       goToHome: 'Go to Home',
       failedToLoadComponent: 'Failed to load component',
       failedToLoadModule: 'Failed to load module',
+      moduleNotAvailableOffline: 'This module is not available offline',
+      moduleNotAvailableOfflineDescription:
+        'To use this module offline, please download it first or connect to the internet.',
+      goToOfflineSettings: 'Go to Offline Settings',
       errorLoadingModules: 'Error loading modules',
       unexpectedErrorOccurred: 'An unexpected error occurred',
       networkError: 'Network error',
@@ -768,6 +772,10 @@ const translations = {
       goToHome: 'Ir al Inicio',
       failedToLoadComponent: 'Error al cargar componente',
       failedToLoadModule: 'Error al cargar módulo',
+      moduleNotAvailableOffline: 'Este módulo no está disponible offline',
+      moduleNotAvailableOfflineDescription:
+        'Para usar este módulo sin conexión, descárgalo primero o conéctate a internet.',
+      goToOfflineSettings: 'Ir a Configuración Offline',
       errorLoadingModules: 'Error al cargar módulos',
       unexpectedErrorOccurred: 'Ocurrió un error inesperado',
       networkError: 'Error de red',

@@ -7,6 +7,16 @@ interface SecureFetchOptions extends globalThis.RequestInit {
 }
 
 /**
+ * Custom error for modules not available offline
+ */
+export class ModuleNotAvailableOfflineError extends Error {
+  constructor(message: string = 'Module not available offline') {
+    super(message);
+    this.name = 'ModuleNotAvailableOfflineError';
+  }
+}
+
+/**
  * Secure fetch wrapper with TLS validation and security headers
  * @param url - URL to fetch
  * @param options - Fetch options with additional security configurations
@@ -126,6 +136,22 @@ export const secureJsonFetch = async <T = any>(
   });
 
   if (!response.ok) {
+    // Check if this is a MODULE_NOT_AVAILABLE_OFFLINE error from service worker
+    if (response.status === 503) {
+      try {
+        const errorData = await response.json();
+        if (errorData.error === 'MODULE_NOT_AVAILABLE_OFFLINE') {
+          throw new ModuleNotAvailableOfflineError(
+            'This module is not available offline. Please download it or connect to the internet.'
+          );
+        }
+      } catch (error) {
+        // If parsing fails or it's not our specific error, fall through to generic error
+        if (error instanceof ModuleNotAvailableOfflineError) {
+          throw error;
+        }
+      }
+    }
     throw new Error(`HTTP ${response.status}: ${response.statusText}`);
   }
 
