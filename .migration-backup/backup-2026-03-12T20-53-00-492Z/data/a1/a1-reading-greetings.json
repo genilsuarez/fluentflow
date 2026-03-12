@@ -1,0 +1,115 @@
+{
+  "title": "Greetings and Introductions",
+  "estimatedReadingTime": 6,
+  "learningObjectives": [
+    "Learn basic greetings in English",
+    "Introduce yourself and others",
+    "Ask and answer simple questions about yourself",
+    "Use polite expressions in everyday situations"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "title": "Saying Hello",
+      "type": "introduction",
+      "content": "Greetings are the first words we say when we meet someone. In English, we have different ways to say hello. The most common greeting is \"Hello\" or \"Hi\". We can also say \"Good morning\", \"Good afternoon\", or \"Good evening\" depending on the time of day."
+    },
+    {
+      "id": "basic-greetings",
+      "title": "Common Greetings",
+      "type": "theory",
+      "content": "Here are the most common greetings:\n\n• Hello / Hi - Use anytime\n• Good morning - Before 12:00 PM\n• Good afternoon - From 12:00 PM to 6:00 PM\n• Good evening - After 6:00 PM\n• How are you? - A friendly question after greeting\n\nWhen someone asks \"How are you?\", you can answer: 'I'm fine, thank you' or 'I'm good, thanks'."
+    },
+    {
+      "id": "introductions",
+      "title": "Introducing Yourself",
+      "type": "theory",
+      "content": "When you meet someone new, you introduce yourself. Here's how:\n\n• My name is [your name]\n• I'm [your name]\n• Nice to meet you\n• Pleased to meet you\n\nExample: \"Hello, my name is Maria. Nice to meet you.\"\n\nYou can also say where you're from: 'I'm from Spain' or 'I'm Spanish'."
+    },
+    {
+      "id": "examples",
+      "title": "Conversation Examples",
+      "type": "examples",
+      "content": "Example 1: FIRST MEETING - \"Hello! My name is Sarah. Nice to meet you.\"\n\nExample 2: ASKING HOW SOMEONE IS - \"Good morning! How are you today?\"\n\nExample 3: INTRODUCING YOURSELF - 'Hi! I'm Carlos. I'm from Mexico.'\n\nExample 4: POLITE GREETING - 'Good evening! It's a pleasure to meet you.'"
+    },
+    {
+      "id": "polite-words",
+      "title": "Polite Expressions",
+      "type": "theory",
+      "content": "Being polite is important in English. Here are essential polite words:\n\n• Please - When you ask for something\n• Thank you / Thanks - When someone helps you\n• You're welcome - Response to \"thank you\"\n• Excuse me - To get attention or apologize\n• Sorry - To apologize\n\nExample: \"Excuse me, can you help me, please?\" \"Yes, of course!\" \"Thank you!\" 'You're welcome!'"
+    },
+    {
+      "id": "summary",
+      "title": "Key Takeaways",
+      "type": "summary",
+      "content": "Remember:\n• Use \"Hello\" or \"Hi\" to greet people\n• Say \"My name is...\" to introduce yourself\n• Ask \"How are you?\" to be friendly\n• Always use \"please\" and \"thank you\"\n• Say \"Nice to meet you\" when meeting someone new\n\nPractice these greetings every day and you'll feel more confident speaking English!"
+    }
+  ],
+  "keyVocabulary": [
+    {
+      "term": "hello",
+      "definition": "A greeting used when meeting someone",
+      "example": "Hello! How are you today?",
+      "pronunciation": "/həˈloʊ/"
+    },
+    {
+      "term": "goodbye",
+      "definition": "A word used when leaving or ending a conversation",
+      "example": "Goodbye! See you tomorrow!",
+      "pronunciation": "/ɡʊdˈbaɪ/"
+    },
+    {
+      "term": "name",
+      "definition": "What someone is called",
+      "example": "My name is Maria.",
+      "pronunciation": "/neɪm/"
+    },
+    {
+      "term": "meet",
+      "definition": "To see and talk to someone for the first time",
+      "example": "Nice to meet you!",
+      "pronunciation": "/miːt/"
+    },
+    {
+      "term": "please",
+      "definition": "A polite word used when asking for something",
+      "example": "Can you help me, please?",
+      "pronunciation": "/pliːz/"
+    },
+    {
+      "term": "thank you",
+      "definition": "Words used to show gratitude",
+      "example": "Thank you for your help!",
+      "pronunciation": "/θæŋk juː/"
+    }
+  ],
+  "grammarPoints": [
+    {
+      "rule": "Using 'My name is' vs 'I'm'",
+      "explanation": "Both are correct for introductions. \"My name is\" is slightly more formal.",
+      "examples": [
+        "My name is John. (formal)",
+        "I'm John. (casual)",
+        "My name is Maria Garcia. (full name)",
+        "I'm Maria. (first name only)"
+      ],
+      "commonMistakes": [
+        "Saying \"I am name is John\" - Wrong! Say \"My name is John\"",
+        "Forgetting \"to\" in \"Nice to meet you\""
+      ]
+    },
+    {
+      "rule": "Question: What's your name?",
+      "explanation": "Use this question to ask someone's name. 'What's' is short for \"What is\".",
+      "examples": [
+        "What's your name? - My name is Carlos.",
+        "What is your name? - I'm Sarah.",
+        "May I ask your name? - I'm David. (more polite)"
+      ],
+      "commonMistakes": [
+        "Saying \"How is your name?\" - Wrong! Say 'What's your name?'",
+        "Answering with just the name without \"My name is\" or 'I'm'"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+[
+  {
+    "front": "savings",
+    "back": "ahorros",
+    "ipa": "/ˈseɪvɪŋz/",
+    "example": "I'm using my savings to pay for the trip.",
+    "example_es": "Estoy usando mis ahorros para pagar el viaje."
+  },
+  {
+    "front": "budget",
+    "back": "presupuesto",
+    "ipa": "/ˈbʌdʒɪt/",
+    "example": "We need to stick to our monthly budget.",
+    "example_es": "Necesitamos ceñirnos a nuestro presupuesto mensual."
+  },
+  {
+    "front": "loan",
+    "back": "préstamo",
+    "ipa": "/ləʊn/",
+    "example": "She took out a loan to buy a car.",
+    "example_es": "Ella pidió un préstamo para comprar un coche."
+  },
+  {
+    "front": "debt",
+    "back": "deuda",
+    "ipa": "/det/",
+    "example": "He's trying to pay off his student debt.",
+    "example_es": "Él está intentando pagar su deuda estudiantil."
+  },
+  {
+    "front": "bill",
+    "back": "factura / cuenta",
+    "ipa": "/bɪl/",
+    "example": "Don't forget to pay the electricity bill.",
+    "example_es": "No olvides pagar la factura de electricidad."
+  },
+  {
+    "front": "receipt",
+    "back": "recibo",
+    "ipa": "/rɪˈsiːt/",
+    "example": "Keep the receipt in case you need to return it.",
+    "example_es": "Guarda el recibo por si necesitas devolverlo."
+  },
+  {
+    "front": "afford",
+    "back": "permitirse / costear",
+    "ipa": "/əˈfɔːrd/",
+    "example": "We can't afford a new car right now.",
+    "example_es": "No podemos permitirnos un coche nuevo ahora mismo."
+  },
+  {
+    "front": "invest",
+    "back": "invertir",
+    "ipa": "/ɪnˈvest/",
+    "example": "She decided to invest in property.",
+    "example_es": "Ella decidió invertir en propiedades."
+  },
+  {
+    "front": "tax",
+    "back": "impuesto",
+    "ipa": "/tæks/",
+    "example": "Income tax is deducted from your salary.",
+    "example_es": "El impuesto sobre la renta se deduce de tu salario."
+  },
+  {
+    "front": "cash",
+    "back": "efectivo",
+    "ipa": "/kæʃ/",
+    "example": "Do you prefer to pay by cash or card?",
+    "example_es": "¿Prefieres pagar en efectivo o con tarjeta?"
+  },
+  {
+    "front": "withdraw",
+    "back": "retirar (dinero)",
+    "ipa": "/wɪðˈdrɔː/",
+    "example": "I need to withdraw some money from the ATM.",
+    "example_es": "Necesito retirar algo de dinero del cajero."
+  },
+  {
+    "front": "deposit",
+    "back": "depósito / depositar",
+    "ipa": "/dɪˈpɒzɪt/",
+    "example": "I deposited my paycheck this morning.",
+    "example_es": "Deposité mi cheque de pago esta mañana."
+  },
+  {
+    "front": "exchange rate",
+    "back": "tipo de cambio",
+    "ipa": "/ɪksˈtʃeɪndʒ reɪt/",
+    "example": "The exchange rate for euros is very good today.",
+    "example_es": "El tipo de cambio del euro está muy bien hoy."
+  },
+  {
+    "front": "discount",
+    "back": "descuento",
+    "ipa": "/ˈdɪskaʊnt/",
+    "example": "Students get a 20% discount on tickets.",
+    "example_es": "Los estudiantes obtienen un 20% de descuento en entradas."
+  },
+  {
+    "front": "bargain",
+    "back": "ganga / oferta",
+    "ipa": "/ˈbɑːrɡɪn/",
+    "example": "This jacket was a real bargain at half price.",
+    "example_es": "Esta chaqueta fue una verdadera ganga a mitad de precio."
+  },
+  {
+    "front": "insurance",
+    "back": "seguro",
+    "ipa": "/ɪnˈʃʊərəns/",
+    "example": "Health insurance is very important.",
+    "example_es": "El seguro médico es muy importante."
+  },
+  {
+    "front": "mortgage",
+    "back": "hipoteca",
+    "ipa": "/ˈmɔːrɡɪdʒ/",
+    "example": "They're paying off their mortgage over 25 years.",
+    "example_es": "Están pagando su hipoteca en 25 años."
+  },
+  {
+    "front": "tip",
+    "back": "propina",
+    "ipa": "/tɪp/",
+    "example": "It's common to leave a tip at restaurants.",
+    "example_es": "Es común dejar propina en los restaurantes."
+  },
+  {
+    "front": "refund",
+    "back": "reembolso",
+    "ipa": "/ˈriːfʌnd/",
+    "example": "I asked for a refund because the product was damaged.",
+    "example_es": "Pedí un reembolso porque el producto estaba dañado."
+  },
+  {
+    "front": "account",
+    "back": "cuenta (bancaria)",
+    "ipa": "/əˈkaʊnt/",
+    "example": "I opened a savings account at the bank.",
+    "example_es": "Abrí una cuenta de ahorros en el banco."
+  },
+  {
+    "front": "relationship",
+    "back": "relación",
+    "ipa": "/rɪˈleɪʃənʃɪp/",
+    "example": "They have a very close relationship.",
+    "example_es": "Tienen una relación muy cercana."
+  },
+  {
+    "front": "trust",
+    "back": "confianza / confiar",
+    "ipa": "/trʌst/",
+    "example": "Trust is the foundation of any good friendship.",
+    "example_es": "La confianza es la base de cualquier buena amistad."
+  },
+  {
+    "front": "argument",
+    "back": "discusión / pelea",
+    "ipa": "/ˈɑːrɡjʊmənt/",
+    "example": "They had an argument about money.",
+    "example_es": "Tuvieron una discusión sobre dinero."
+  },
+  {
+    "front": "apologize",
+    "back": "disculparse",
+    "ipa": "/əˈpɒlədʒaɪz/",
+    "example": "He apologized for being late.",
+    "example_es": "Se disculpó por llegar tarde."
+  },
+  {
+    "front": "support",
+    "back": "apoyo / apoyar",
+    "ipa": "/səˈpɔːrt/",
+    "example": "My family always supports my decisions.",
+    "example_es": "Mi familia siempre apoya mis decisiones."
+  },
+  {
+    "front": "get along with",
+    "back": "llevarse bien con",
+    "ipa": "/ɡet əˈlɒŋ wɪð/",
+    "example": "I get along well with my neighbours.",
+    "example_es": "Me llevo bien con mis vecinos."
+  },
+  {
+    "front": "break up",
+    "back": "romper / terminar (relación)",
+    "ipa": "/breɪk ʌp/",
+    "example": "They broke up after three years together.",
+    "example_es": "Rompieron después de tres años juntos."
+  },
+  {
+    "front": "compromise",
+    "back": "compromiso / llegar a un acuerdo",
+    "ipa": "/ˈkɒmprəmaɪz/",
+    "example": "In any relationship, you need to compromise.",
+    "example_es": "En cualquier relación, necesitas llegar a acuerdos."
+  },
+  {
+    "front": "grateful",
+    "back": "agradecido",
+    "ipa": "/ˈɡreɪtfəl/",
+    "example": "I'm very grateful for your help.",
+    "example_es": "Estoy muy agradecido por tu ayuda."
+  },
+  {
+    "front": "generous",
+    "back": "generoso",
+    "ipa": "/ˈdʒenərəs/",
+    "example": "She's very generous with her time.",
+    "example_es": "Ella es muy generosa con su tiempo."
+  },
+  {
+    "front": "honest",
+    "back": "honesto",
+    "ipa": "/ˈɒnɪst/",
+    "example": "It's important to be honest with your friends.",
+    "example_es": "Es importante ser honesto con tus amigos."
+  },
+  {
+    "front": "jealous",
+    "back": "celoso / envidioso",
+    "ipa": "/ˈdʒeləs/",
+    "example": "He gets jealous when she talks to other people.",
+    "example_es": "Él se pone celoso cuando ella habla con otras personas."
+  },
+  {
+    "front": "reliable",
+    "back": "confiable / fiable",
+    "ipa": "/rɪˈlaɪəbəl/",
+    "example": "She's the most reliable person I know.",
+    "example_es": "Ella es la persona más confiable que conozco."
+  },
+  {
+    "front": "selfish",
+    "back": "egoísta",
+    "ipa": "/ˈselfɪʃ/",
+    "example": "Don't be selfish — share with your brother.",
+    "example_es": "No seas egoísta — comparte con tu hermano."
+  },
+  {
+    "front": "patience",
+    "back": "paciencia",
+    "ipa": "/ˈpeɪʃəns/",
+    "example": "Teaching children requires a lot of patience.",
+    "example_es": "Enseñar a niños requiere mucha paciencia."
+  },
+  {
+    "front": "forgive",
+    "back": "perdonar",
+    "ipa": "/fəˈɡɪv/",
+    "example": "It took her a long time to forgive him.",
+    "example_es": "Le tomó mucho tiempo perdonarlo."
+  },
+  {
+    "front": "respect",
+    "back": "respeto / respetar",
+    "ipa": "/rɪˈspekt/",
+    "example": "Mutual respect is key in any relationship.",
+    "example_es": "El respeto mutuo es clave en cualquier relación."
+  },
+  {
+    "front": "expense",
+    "back": "gasto",
+    "ipa": "/ɪkˈspens/",
+    "example": "Rent is our biggest monthly expense.",
+    "example_es": "El alquiler es nuestro mayor gasto mensual."
+  },
+  {
+    "front": "worth",
+    "back": "valor / valer la pena",
+    "ipa": "/wɜːrθ/",
+    "example": "This painting is worth thousands of dollars.",
+    "example_es": "Esta pintura vale miles de dólares."
+  },
+  {
+    "front": "owe",
+    "back": "deber (dinero)",
+    "ipa": "/əʊ/",
+    "example": "I owe my friend fifty pounds.",
+    "example_es": "Le debo a mi amigo cincuenta libras."
+  }
+]

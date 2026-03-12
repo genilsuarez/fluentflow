@@ -1,0 +1,282 @@
+[
+  {
+    "front": "salary",
+    "back": "salario",
+    "ipa": "/ˈsæləri/",
+    "example": "She earns a good salary as a software engineer.",
+    "example_es": "Ella gana un buen salario como ingeniera de software."
+  },
+  {
+    "front": "colleague",
+    "back": "colega / compañero de trabajo",
+    "ipa": "/ˈkɒliːɡ/",
+    "example": "My colleague helped me finish the report.",
+    "example_es": "Mi colega me ayudó a terminar el informe."
+  },
+  {
+    "front": "deadline",
+    "back": "fecha límite",
+    "ipa": "/ˈdedlaɪn/",
+    "example": "The deadline for the project is next Friday.",
+    "example_es": "La fecha límite del proyecto es el próximo viernes."
+  },
+  {
+    "front": "interview",
+    "back": "entrevista",
+    "ipa": "/ˈɪntəvjuː/",
+    "example": "I have a job interview tomorrow morning.",
+    "example_es": "Tengo una entrevista de trabajo mañana por la mañana."
+  },
+  {
+    "front": "promotion",
+    "back": "ascenso / promoción",
+    "ipa": "/prəˈməʊʃən/",
+    "example": "He got a promotion after two years in the company.",
+    "example_es": "Consiguió un ascenso después de dos años en la empresa."
+  },
+  {
+    "front": "resign",
+    "back": "renunciar / dimitir",
+    "ipa": "/rɪˈzaɪn/",
+    "example": "She decided to resign from her position.",
+    "example_es": "Ella decidió renunciar a su puesto."
+  },
+  {
+    "front": "apply for",
+    "back": "solicitar / postularse a",
+    "ipa": "/əˈplaɪ fɔːr/",
+    "example": "I want to apply for the marketing position.",
+    "example_es": "Quiero postularme al puesto de marketing."
+  },
+  {
+    "front": "overtime",
+    "back": "horas extra",
+    "ipa": "/ˈəʊvətaɪm/",
+    "example": "I had to work overtime to meet the deadline.",
+    "example_es": "Tuve que trabajar horas extra para cumplir la fecha límite."
+  },
+  {
+    "front": "shift",
+    "back": "turno",
+    "ipa": "/ʃɪft/",
+    "example": "She works the night shift at the hospital.",
+    "example_es": "Ella trabaja el turno de noche en el hospital."
+  },
+  {
+    "front": "employer",
+    "back": "empleador",
+    "ipa": "/ɪmˈplɔɪər/",
+    "example": "My employer offers good health insurance.",
+    "example_es": "Mi empleador ofrece un buen seguro médico."
+  },
+  {
+    "front": "employee",
+    "back": "empleado",
+    "ipa": "/ɪmˈplɔɪiː/",
+    "example": "The company has over 500 employees.",
+    "example_es": "La empresa tiene más de 500 empleados."
+  },
+  {
+    "front": "CV / résumé",
+    "back": "currículum vitae",
+    "ipa": "/ˌsiːˈviː/",
+    "example": "Please send your CV with the application.",
+    "example_es": "Por favor envía tu currículum con la solicitud."
+  },
+  {
+    "front": "freelance",
+    "back": "autónomo / independiente",
+    "ipa": "/ˈfriːlɑːns/",
+    "example": "She works as a freelance graphic designer.",
+    "example_es": "Ella trabaja como diseñadora gráfica independiente."
+  },
+  {
+    "front": "retire",
+    "back": "jubilarse",
+    "ipa": "/rɪˈtaɪər/",
+    "example": "My father plans to retire at 65.",
+    "example_es": "Mi padre planea jubilarse a los 65."
+  },
+  {
+    "front": "commute",
+    "back": "desplazarse al trabajo",
+    "ipa": "/kəˈmjuːt/",
+    "example": "I commute by train every day.",
+    "example_es": "Me desplazo en tren todos los días."
+  },
+  {
+    "front": "meeting",
+    "back": "reunión",
+    "ipa": "/ˈmiːtɪŋ/",
+    "example": "We have a team meeting every Monday.",
+    "example_es": "Tenemos una reunión de equipo cada lunes."
+  },
+  {
+    "front": "contract",
+    "back": "contrato",
+    "ipa": "/ˈkɒntrækt/",
+    "example": "I signed a one-year contract with the company.",
+    "example_es": "Firmé un contrato de un año con la empresa."
+  },
+  {
+    "front": "part-time",
+    "back": "a tiempo parcial",
+    "ipa": "/ˌpɑːrt ˈtaɪm/",
+    "example": "Many students work part-time during university.",
+    "example_es": "Muchos estudiantes trabajan a tiempo parcial durante la universidad."
+  },
+  {
+    "front": "full-time",
+    "back": "a tiempo completo",
+    "ipa": "/ˌfʊl ˈtaɪm/",
+    "example": "She got her first full-time job after graduation.",
+    "example_es": "Consiguió su primer trabajo a tiempo completo después de graduarse."
+  },
+  {
+    "front": "skill",
+    "back": "habilidad / destreza",
+    "ipa": "/skɪl/",
+    "example": "Communication is an important skill in any job.",
+    "example_es": "La comunicación es una habilidad importante en cualquier trabajo."
+  },
+  {
+    "front": "experience",
+    "back": "experiencia",
+    "ipa": "/ɪkˈspɪəriəns/",
+    "example": "You need at least two years of experience.",
+    "example_es": "Necesitas al menos dos años de experiencia."
+  },
+  {
+    "front": "training",
+    "back": "capacitación / formación",
+    "ipa": "/ˈtreɪnɪŋ/",
+    "example": "The company provides training for new employees.",
+    "example_es": "La empresa proporciona capacitación para nuevos empleados."
+  },
+  {
+    "front": "boss",
+    "back": "jefe",
+    "ipa": "/bɒs/",
+    "example": "My boss is very supportive and understanding.",
+    "example_es": "Mi jefe es muy comprensivo y solidario."
+  },
+  {
+    "front": "wage",
+    "back": "sueldo / jornal",
+    "ipa": "/weɪdʒ/",
+    "example": "The minimum wage has increased this year.",
+    "example_es": "El salario mínimo ha aumentado este año."
+  },
+  {
+    "front": "hire",
+    "back": "contratar",
+    "ipa": "/haɪər/",
+    "example": "The company plans to hire 20 new people.",
+    "example_es": "La empresa planea contratar a 20 personas nuevas."
+  },
+  {
+    "front": "fire / dismiss",
+    "back": "despedir",
+    "ipa": "/faɪər/",
+    "example": "He was fired for arriving late every day.",
+    "example_es": "Lo despidieron por llegar tarde todos los días."
+  },
+  {
+    "front": "benefits",
+    "back": "beneficios / prestaciones",
+    "ipa": "/ˈbenɪfɪts/",
+    "example": "The job offers great benefits including health insurance.",
+    "example_es": "El trabajo ofrece grandes beneficios incluyendo seguro médico."
+  },
+  {
+    "front": "teamwork",
+    "back": "trabajo en equipo",
+    "ipa": "/ˈtiːmwɜːrk/",
+    "example": "Good teamwork is essential for project success.",
+    "example_es": "El buen trabajo en equipo es esencial para el éxito del proyecto."
+  },
+  {
+    "front": "workload",
+    "back": "carga de trabajo",
+    "ipa": "/ˈwɜːrkləʊd/",
+    "example": "The workload has been very heavy this month.",
+    "example_es": "La carga de trabajo ha sido muy pesada este mes."
+  },
+  {
+    "front": "day off",
+    "back": "día libre",
+    "ipa": "/deɪ ɒf/",
+    "example": "I'm taking a day off next Wednesday.",
+    "example_es": "Me tomaré un día libre el próximo miércoles."
+  },
+  {
+    "front": "qualification",
+    "back": "cualificación / título",
+    "ipa": "/ˌkwɒlɪfɪˈkeɪʃən/",
+    "example": "What qualifications do you need for this role?",
+    "example_es": "¿Qué cualificaciones necesitas para este puesto?"
+  },
+  {
+    "front": "vacancy",
+    "back": "vacante",
+    "ipa": "/ˈveɪkənsi/",
+    "example": "There are several vacancies in the IT department.",
+    "example_es": "Hay varias vacantes en el departamento de informática."
+  },
+  {
+    "front": "income",
+    "back": "ingresos",
+    "ipa": "/ˈɪnkʌm/",
+    "example": "Their household income is above average.",
+    "example_es": "Los ingresos de su hogar están por encima del promedio."
+  },
+  {
+    "front": "profession",
+    "back": "profesión",
+    "ipa": "/prəˈfeʃən/",
+    "example": "Teaching is a rewarding profession.",
+    "example_es": "La enseñanza es una profesión gratificante."
+  },
+  {
+    "front": "task",
+    "back": "tarea",
+    "ipa": "/tɑːsk/",
+    "example": "My main task today is to prepare the presentation.",
+    "example_es": "Mi tarea principal hoy es preparar la presentación."
+  },
+  {
+    "front": "manage",
+    "back": "gestionar / dirigir",
+    "ipa": "/ˈmænɪdʒ/",
+    "example": "She manages a team of 15 people.",
+    "example_es": "Ella dirige un equipo de 15 personas."
+  },
+  {
+    "front": "career",
+    "back": "carrera profesional",
+    "ipa": "/kəˈrɪər/",
+    "example": "He wants to build a career in finance.",
+    "example_es": "Él quiere construir una carrera en finanzas."
+  },
+  {
+    "front": "sick leave",
+    "back": "baja por enfermedad",
+    "ipa": "/sɪk liːv/",
+    "example": "She's on sick leave this week.",
+    "example_es": "Ella está de baja por enfermedad esta semana."
+  },
+  {
+    "front": "performance",
+    "back": "rendimiento / desempeño",
+    "ipa": "/pəˈfɔːrməns/",
+    "example": "His performance review was very positive.",
+    "example_es": "Su evaluación de desempeño fue muy positiva."
+  },
+  {
+    "front": "remote work",
+    "back": "trabajo remoto / teletrabajo",
+    "ipa": "/rɪˈməʊt wɜːrk/",
+    "example": "Many companies now offer remote work options.",
+    "example_es": "Muchas empresas ahora ofrecen opciones de trabajo remoto."
+  }
+]

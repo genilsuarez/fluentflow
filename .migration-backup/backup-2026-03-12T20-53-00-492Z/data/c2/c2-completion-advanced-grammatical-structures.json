@@ -1,0 +1,482 @@
+[
+  {
+    "sentence": "<Seldom do we see> such dedication in young athletes.",
+    "idiom": "Seldom do we see",
+    "options": [
+      "We seldom see",
+      "Do we seldom see",
+      "Seldom we see",
+      "Seldom we do see"
+    ],
+    "correct": "Seldom do we see",
+    "explanation": "Inversion with <seldom> requires the auxiliary verb before the subject."
+  },
+  {
+    "sentence": "<Had I known> about the party, I would have attended.",
+    "idiom": "Had I known",
+    "options": [
+      "If I knew",
+      "If I had known",
+      "I had known",
+      "Knowing"
+    ],
+    "correct": "If I had known",
+    "explanation": "This is an inverted conditional sentence, equivalent to <If I had known>."
+  },
+  {
+    "sentence": "<Not only did he finish> the race, but he also won it.",
+    "idiom": "Not only did he finish",
+    "options": [
+      "He not only finished",
+      "Not only he finished",
+      "Did he not only finish",
+      "He finished not only"
+    ],
+    "correct": "Not only did he finish",
+    "explanation": "Inversion with <not only> requires the auxiliary verb before the subject."
+  },
+  {
+    "sentence": "<No sooner had she arrived> than the phone rang.",
+    "idiom": "No sooner had she arrived",
+    "options": [
+      "She had no sooner arrived",
+      "No sooner she arrived",
+      "Had she no sooner arrived",
+      "She arrived no sooner"
+    ],
+    "correct": "No sooner had she arrived",
+    "explanation": "Inversion with 'no sooner... than' requires the auxiliary verb before the subject."
+  },
+  {
+    "sentence": "<Little did he know> the challenges that lay ahead.",
+    "idiom": "Little did he know",
+    "options": [
+      "He little knew",
+      "Little he knew",
+      "Did he little know",
+      "He did little know"
+    ],
+    "correct": "Little did he know",
+    "explanation": "Inversion with <little> (meaning <not much>) requires the auxiliary verb before the subject."
+  },
+  {
+    "sentence": "<Only when the sun set> did they decide to leave.",
+    "idiom": "Only when the sun set",
+    "options": [
+      "They decided to leave only when the sun set",
+      "Only when the sun set they decided to leave",
+      "Did they decide to leave only when the sun set",
+      "Only when the sun did set"
+    ],
+    "correct": "Only when the sun set",
+    "explanation": "Inversion with <only when> occurs in the main clause, not the <only> clause."
+  },
+  {
+    "sentence": "<Such was the impact> of the speech that everyone was moved.",
+    "idiom": "Such was the impact",
+    "options": [
+      "The impact was such",
+      "Such the impact was",
+      "Was such the impact",
+      "The impact such was"
+    ],
+    "correct": "Such was the impact",
+    "explanation": "Inversion with <such> emphasizes the degree of something."
+  },
+  {
+    "sentence": "<Under no circumstances should you open> that door.",
+    "idiom": "Under no circumstances should you open",
+    "options": [
+      "You should open under no circumstances",
+      "Under no circumstances you should open",
+      "Should you open under no circumstances",
+      "You should not open under any circumstances"
+    ],
+    "correct": "Under no circumstances should you open",
+    "explanation": "Inversion with negative expressions like <under no circumstances> requires the auxiliary verb before the subject."
+  },
+  {
+    "sentence": "<Rarely have I seen> such a beautiful painting.",
+    "idiom": "Rarely have I seen",
+    "options": [
+      "I have rarely seen",
+      "Rarely I have seen",
+      "Have I rarely seen",
+      "I rarely have seen"
+    ],
+    "correct": "Rarely have I seen",
+    "explanation": "Inversion with <rarely> requires the auxiliary verb before the subject."
+  },
+  {
+    "sentence": "<No sooner had he finished> his work than he went home.",
+    "idiom": "No sooner had he finished",
+    "options": [
+      "He had no sooner finished",
+      "No sooner he finished",
+      "Had he no sooner finished",
+      "He finished no sooner"
+    ],
+    "correct": "No sooner had he finished",
+    "explanation": "Inversion with 'no sooner... than' requires the auxiliary verb before the subject."
+  },
+  {
+    "sentence": "<Hardly had she left> when it started to rain.",
+    "idiom": "Hardly had she left",
+    "options": [
+      "She had hardly left",
+      "Hardly she left",
+      "Had she hardly left",
+      "She left hardly"
+    ],
+    "correct": "Hardly had she left",
+    "explanation": "Inversion with 'hardly... when' requires the auxiliary verb before the subject."
+  },
+  {
+    "sentence": "<So successful was the project> that it was expanded globally.",
+    "idiom": "So successful was the project",
+    "options": [
+      "The project was so successful",
+      "So successful the project was",
+      "Was the project so successful",
+      "The project so successful was"
+    ],
+    "correct": "So successful was the project",
+    "explanation": "Inversion with 'so + adjective/adverb' emphasizes the degree of something."
+  },
+  {
+    "sentence": "<Never before has technology advanced> so rapidly.",
+    "idiom": "Never before has technology advanced",
+    "options": [
+      "Technology has never before advanced",
+      "Never before technology has advanced",
+      "Has technology never before advanced",
+      "Technology never before has advanced"
+    ],
+    "correct": "Never before has technology advanced",
+    "explanation": "Inversion with <never before> requires the auxiliary verb before the subject."
+  },
+  {
+    "sentence": "<On no account are you to disclose> this information.",
+    "idiom": "On no account are you to disclose",
+    "options": [
+      "You are on no account to disclose",
+      "On no account you are to disclose",
+      "Are you on no account to disclose",
+      "You are not to disclose on any account"
+    ],
+    "correct": "On no account are you to disclose",
+    "explanation": "Inversion with <on no account> requires the auxiliary verb before the subject."
+  },
+  {
+    "sentence": "<Were I to win> the lottery, I would travel the world.",
+    "idiom": "Were I to win",
+    "options": [
+      "If I won",
+      "If I were to win",
+      "I were to win",
+      "Winning"
+    ],
+    "correct": "If I were to win",
+    "explanation": "This is an inverted conditional sentence, equivalent to <If I were to win>."
+  },
+  {
+    "sentence": "<Only by working together can we achieve> our goals.",
+    "idiom": "Only by working together can we achieve",
+    "options": [
+      "We can achieve our goals only by working together",
+      "Only by working together we can achieve",
+      "Can we achieve our goals only by working together",
+      "We can only achieve by working together"
+    ],
+    "correct": "Only by working together can we achieve",
+    "explanation": "Inversion with <only by> occurs in the main clause."
+  },
+  {
+    "sentence": "<Not until all the guests had left> did she finally relax.",
+    "idiom": "Not until all the guests had left",
+    "options": [
+      "She finally relaxed not until all the guests had left",
+      "Not until all the guests had left she finally relaxed",
+      "Did she finally relax not until all the guests had left",
+      "She did finally relax not until all the guests had left"
+    ],
+    "correct": "Not until all the guests had left",
+    "explanation": "Inversion with <not until> occurs in the main clause."
+  },
+  {
+    "sentence": "<So quickly did he run> that he broke the world record.",
+    "idiom": "So quickly did he run",
+    "options": [
+      "He ran so quickly",
+      "So quickly he ran",
+      "Did he run so quickly",
+      "He did run so quickly"
+    ],
+    "correct": "So quickly did he run",
+    "explanation": "Inversion with 'so + adverb' emphasizes the degree of something."
+  },
+  {
+    "sentence": "<Should you require> any further assistance, please do not hesitate to ask.",
+    "idiom": "Should you require",
+    "options": [
+      "If you require",
+      "If you should require",
+      "You should require",
+      "Requiring"
+    ],
+    "correct": "If you require",
+    "explanation": "This is an inverted conditional sentence, equivalent to <If you require>."
+  },
+  {
+    "sentence": "<In no way is he responsible> for the accident.",
+    "idiom": "In no way is he responsible",
+    "options": [
+      "He is in no way responsible",
+      "In no way he is responsible",
+      "Is he in no way responsible",
+      "He is not responsible in any way"
+    ],
+    "correct": "In no way is he responsible",
+    "explanation": "Inversion with <in no way> requires the auxiliary verb before the subject."
+  },
+  {
+    "sentence": "<Nowhere else will you find> such a diverse collection of art.",
+    "idiom": "Nowhere else will you find",
+    "options": [
+      "You will find nowhere else",
+      "Nowhere else you will find",
+      "Will you find nowhere else",
+      "Nowhere else will you find"
+    ],
+    "correct": "Nowhere else will you find",
+    "explanation": "Inversion with <Nowhere else> requires the auxiliary verb before the subject."
+  },
+  {
+    "sentence": "<At no time was the president> aware of the secret plan.",
+    "idiom": "At no time was the president",
+    "options": [
+      "The president was at no time",
+      "At no time the president was",
+      "Was the president at no time",
+      "At no time was the president"
+    ],
+    "correct": "At no time was the president",
+    "explanation": "Inversion with <At no time> requires the auxiliary verb before the subject."
+  },
+  {
+    "sentence": "<Were she to accept> the offer, she would have to relocate.",
+    "idiom": "Were she to accept",
+    "options": [
+      "If she accepted",
+      "If she were to accept",
+      "She were to accept",
+      "If she would accept"
+    ],
+    "correct": "If she were to accept",
+    "explanation": "This is an inverted conditional, equivalent to <If she were to accept>."
+  },
+  {
+    "sentence": "<It was his arrogance that> I found so irritating.",
+    "idiom": "It was his arrogance that",
+    "options": [
+      "His arrogance was what",
+      "That his arrogance was",
+      "It was his arrogance what",
+      "It was his arrogance that"
+    ],
+    "correct": "It was his arrogance that",
+    "explanation": "This is a cleft sentence used for emphasis, starting with 'It was... that...'"
+  },
+  {
+    "sentence": "<What I need is> a long holiday, not more work.",
+    "idiom": "What I need is",
+    "options": [
+      "I need is",
+      "What I need it is",
+      "That I need is",
+      "What I need is"
+    ],
+    "correct": "What I need is",
+    "explanation": "This is a <wh-> cleft sentence used to emphasize the object of the need."
+  },
+  {
+    "sentence": "<Having been warned> about the storm, they stayed indoors.",
+    "idiom": "Having been warned",
+    "options": [
+      "Warning",
+      "They were warned",
+      "Having been warned",
+      "After they warned"
+    ],
+    "correct": "Having been warned",
+    "explanation": "A perfect participle clause (<Having been> + past participle) is used to show that one action happened before another."
+  },
+  {
+    "sentence": "<Exhausted from the journey,> he went straight to bed.",
+    "idiom": "Exhausted from the journey,",
+    "options": [
+      "Because he exhausted",
+      "Exhausted from the journey,",
+      "He was exhausted so",
+      "Exhausting from the journey,"
+    ],
+    "correct": "Exhausted from the journey,",
+    "explanation": "A past participle clause at the beginning of a sentence can explain the reason for the main action."
+  },
+  {
+    "sentence": "<It is imperative that the matter be> investigated immediately.",
+    "idiom": "It is imperative that the matter be",
+    "options": [
+      "the matter is",
+      "the matter to be",
+      "the matter be",
+      "the matter being"
+    ],
+    "correct": "the matter be",
+    "explanation": "The subjunctive <be> is used after expressions like 'It is imperative that...'"
+  },
+  {
+    "sentence": "<The harder you study,> the more you will learn.",
+    "idiom": "The harder you study,",
+    "options": [
+      "Harder you study,",
+      "The harder you study,",
+      "As harder you study,",
+      "If you study harder,"
+    ],
+    "correct": "The harder you study,",
+    "explanation": "This is a double comparative structure: 'The + comparative, the + comparative'."
+  },
+  {
+    "sentence": "<A great writer he was,> but a difficult person to know.",
+    "idiom": "A great writer he was,",
+    "options": [
+      "He was a great writer,",
+      "A great writer was he,",
+      "A great writer he was,",
+      "He was a writer great,"
+    ],
+    "correct": "A great writer he was,",
+    "explanation": "This is an example of fronting, where a part of the sentence is moved to the front for emphasis."
+  },
+  {
+    "sentence": "<Not for a moment did I think> I would get the job.",
+    "idiom": "Not for a moment did I think",
+    "options": [
+      "I did not think for a moment",
+      "Not for a moment I thought",
+      "Not for a moment did I think",
+      "I thought not for a moment"
+    ],
+    "correct": "Not for a moment did I think",
+    "explanation": "Inversion is used after the negative expression <Not for a moment>."
+  },
+  {
+    "sentence": "<Only after his speech did I understand> the full situation.",
+    "idiom": "Only after his speech did I understand",
+    "options": [
+      "I understood only after his speech",
+      "Only after his speech I understood",
+      "Only after his speech did I understand",
+      "I did understand only after his speech"
+    ],
+    "correct": "Only after his speech did I understand",
+    "explanation": "When a sentence starts with <Only after>, the main clause is inverted."
+  },
+  {
+    "sentence": "<Should the situation worsen,> we have a contingency plan.",
+    "idiom": "Should the situation worsen,",
+    "options": [
+      "If the situation should worsen,",
+      "If the situation worsens,",
+      "If the situation will worsen,",
+      "The situation should worsen,"
+    ],
+    "correct": "If the situation should worsen,",
+    "explanation": "This inverted conditional is a more formal way of saying <If the situation should worsen>."
+  },
+  {
+    "sentence": "<Built in the 16th century,> the castle is a major tourist attraction.",
+    "idiom": "Built in the 16th century,",
+    "options": [
+      "It was built in the 16th century,",
+      "Building in the 16th century,",
+      "Built in the 16th century,",
+      "Having built in the 16th century,"
+    ],
+    "correct": "Built in the 16th century,",
+    "explanation": "A past participle clause is used to give more information about the noun <the castle>."
+  },
+  {
+    "sentence": "<The board proposed that the new policy be> implemented next year.",
+    "idiom": "The board proposed that the new policy be",
+    "options": [
+      "the new policy is",
+      "the new policy to be",
+      "the new policy be",
+      "the new policy was"
+    ],
+    "correct": "the new policy be",
+    "explanation": "The subjunctive <be> is used after verbs of suggestion like <propose>."
+  },
+  {
+    "sentence": "<The sooner we leave,> the earlier we will arrive.",
+    "idiom": "The sooner we leave,",
+    "options": [
+      "Sooner we leave,",
+      "The sooner we leave,",
+      "As soon as we leave,",
+      "If we leave sooner,"
+    ],
+    "correct": "The sooner we leave,",
+    "explanation": "This is a double comparative structure: 'The + comparative, the + comparative'."
+  },
+  {
+    "sentence": "<Into the room walked> the mysterious stranger.",
+    "idiom": "Into the room walked",
+    "options": [
+      "The mysterious stranger walked into the room",
+      "Into the room the mysterious stranger walked",
+      "Walked into the room the mysterious stranger",
+      "Into the room walked"
+    ],
+    "correct": "Into the room walked",
+    "explanation": "This is an example of fronting a prepositional phrase for dramatic effect, followed by inversion."
+  },
+  {
+    "sentence": "<Not a single mistake did she make> in the entire performance.",
+    "idiom": "Not a single mistake did she make",
+    "options": [
+      "She did not make a single mistake",
+      "Not a single mistake she made",
+      "A single mistake she did not make",
+      "Not a single mistake did she make"
+    ],
+    "correct": "Not a single mistake did she make",
+    "explanation": "Inversion is used after the negative expression 'Not a single...'"
+  },
+  {
+    "sentence": "<The problem is thought to be> more complex than initially assumed.",
+    "idiom": "The problem is thought to be",
+    "options": [
+      "People think the problem is",
+      "The problem is thought to be",
+      "It is thought the problem to be",
+      "The problem, it is thought, is"
+    ],
+    "correct": "The problem is thought to be",
+    "explanation": "This is a common complex passive structure used in formal or academic writing."
+  },
+  {
+    "sentence": "<On no condition are you to> leave this room.",
+    "idiom": "On no condition are you to",
+    "options": [
+      "You are on no condition to",
+      "On no condition you are to",
+      "Are you on no condition to",
+      "On no condition are you to"
+    ],
+    "correct": "On no condition are you to",
+    "explanation": "Inversion with the negative expression <On no condition> requires the auxiliary verb before the subject."
+  }
+]

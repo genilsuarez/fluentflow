@@ -1,0 +1,116 @@
+{
+  "title": "Environment and Sustainability",
+  "estimatedReadingTime": 12,
+  "learningObjectives": [
+    "Learn vocabulary related to environmental issues and climate change",
+    "Understand concepts of sustainability and conservation",
+    "Practice discussing environmental problems and solutions",
+    "Recognize terms related to renewable energy and green living"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "title": "Our Planet's Future",
+      "type": "introduction",
+      "content": "Environmental issues are among the most important challenges facing humanity today. Climate change, pollution, and loss of biodiversity affect everyone on Earth. Understanding environmental vocabulary in English allows you to participate in global conversations about sustainability, read scientific reports, and make informed decisions about protecting our planet. This lesson covers key environmental concepts, problems, and solutions that are frequently discussed in English-speaking contexts."
+    },
+    {
+      "id": "climate-change",
+      "title": "Climate Change and Global Warming",
+      "type": "theory",
+      "content": "\"Climate change\" refers to long-term changes in Earth's weather patterns. \"Global warming\" is the increase in Earth's average temperature, primarily caused by \"greenhouse gases\" like carbon dioxide (CO2) and methane. These gases trap heat in the atmosphere, creating a \"greenhouse effect\". Human activities, especially burning \"fossil fuels\" (coal, oil, gas), release massive amounts of CO2. Consequences include melting ice caps, rising sea levels, extreme weather events, and disrupted ecosystems. Scientists measure climate change through \"carbon footprint\" - the total greenhouse gases produced by human activities."
+    },
+    {
+      "id": "environmental-problems",
+      "title": "Major Environmental Challenges",
+      "type": "theory",
+      "content": "Beyond climate change, we face multiple environmental threats. \"Pollution\" contaminates air, water, and soil - from industrial waste, plastic, and chemicals. \"Deforestation\" destroys forests, eliminating habitats and reducing oxygen production. \"Biodiversity loss\" means species are becoming extinct at alarming rates. \"Ocean acidification\" harms marine life. \"Plastic pollution\" fills oceans and landfills - plastic takes hundreds of years to decompose. \"Air pollution\" from vehicles and factories causes health problems. \"Water scarcity\" affects billions of people. These interconnected problems require urgent action."
+    },
+    {
+      "id": "solutions",
+      "title": "Sustainable Solutions",
+      "type": "theory",
+      "content": "\"Sustainability\" means meeting present needs without compromising future generations. Solutions include: \"Renewable energy\" (solar, wind, hydro) replaces fossil fuels. \"Recycling\" and \"composting\" reduce waste. \"Conservation\" protects natural resources and wildlife. \"Reforestation\" plants new trees. \"Green technology\" develops eco-friendly innovations. Individual actions matter: reduce consumption, use public transport, eat less meat, avoid single-use plastics, conserve water and energy. \"Carbon neutral\" means balancing emissions with removal. Many countries set \"emission targets\" to limit pollution. \"Circular economy\" reuses materials instead of discarding them."
+    },
+    {
+      "id": "examples",
+      "title": "Environmental Discussions",
+      "type": "examples",
+      "content": "Example 1: EXPRESSING CONCERN - \"Climate change is a serious threat. We need to reduce our carbon footprint.\"\n\nExample 2: DISCUSSING SOLUTIONS - \"Switching to renewable energy like solar and wind can reduce emissions.\"\n\nExample 3: PERSONAL ACTIONS - 'I've started recycling more and using reusable bags instead of plastic.'\n\nExample 4: FUTURE OUTLOOK - 'If we don't act now, future generations will face severe consequences.'"
+    },
+    {
+      "id": "summary",
+      "title": "Taking Action",
+      "type": "summary",
+      "content": "Environmental challenges are complex but not insurmountable. Understanding key terms like climate change, sustainability, and renewable energy helps you engage in important discussions. Remember: every action counts. Reduce, reuse, recycle. Support sustainable businesses and policies. Stay informed about environmental issues. Advocate for change in your community. The transition to a sustainable future requires collective effort from individuals, businesses, and governments. By learning this vocabulary, you're taking the first step toward being an informed environmental citizen."
+    }
+  ],
+  "keyVocabulary": [
+    {
+      "term": "sustainability",
+      "definition": "Meeting present needs without harming future generations",
+      "example": "Sustainability is key to protecting our planet's future.",
+      "pronunciation": "/səˌsteɪnəˈbɪləti/"
+    },
+    {
+      "term": "renewable energy",
+      "definition": "Energy from sources that don't run out, like sun and wind",
+      "example": "Solar panels generate renewable energy from sunlight.",
+      "pronunciation": "/rɪˈnuːəbəl ˈenərdʒi/"
+    },
+    {
+      "term": "carbon footprint",
+      "definition": "Total greenhouse gases produced by human activities",
+      "example": "Flying frequently increases your carbon footprint.",
+      "pronunciation": "/ˈkɑːrbən ˈfʊtprɪnt/"
+    },
+    {
+      "term": "biodiversity",
+      "definition": "The variety of plant and animal life in an environment",
+      "example": "Rainforests have incredible biodiversity.",
+      "pronunciation": "/ˌbaɪoʊdaɪˈvɜːrsəti/"
+    },
+    {
+      "term": "conservation",
+      "definition": "Protection and preservation of natural resources",
+      "example": "Wildlife conservation efforts have saved many species.",
+      "pronunciation": "/ˌkɑːnsərˈveɪʃən/"
+    },
+    {
+      "term": "emissions",
+      "definition": "Gases or substances released into the atmosphere",
+      "example": "We need to reduce carbon emissions from vehicles.",
+      "pronunciation": "/ɪˈmɪʃənz/"
+    }
+  ],
+  "grammarPoints": [
+    {
+      "rule": "Discussing Environmental Causes and Effects",
+      "explanation": "Use conditional sentences and cause-effect structures to discuss environmental issues.",
+      "examples": [
+        "If we continue burning fossil fuels, temperatures will rise.",
+        "Deforestation leads to biodiversity loss.",
+        "Pollution causes health problems and environmental damage.",
+        "Unless we act now, climate change will worsen."
+      ],
+      "commonMistakes": [
+        "Confusing \"affect\" (verb) and \"effect\" (noun): \"Climate change affects everyone\" ✓",
+        "Using wrong conditional: \"If we will reduce emissions\" ❌ → \"If we reduce emissions\" ✓"
+      ]
+    },
+    {
+      "rule": "Expressing Environmental Opinions and Solutions",
+      "explanation": "Use modal verbs (should, must, need to) and opinion phrases to discuss solutions.",
+      "examples": [
+        "We should invest more in renewable energy.",
+        "Governments must implement stricter environmental regulations.",
+        "We need to reduce our consumption of single-use plastics.",
+        "In my opinion, sustainability should be a top priority."
+      ],
+      "commonMistakes": [
+        "Using \"must\" too strongly for suggestions: \"You must recycle\" (too forceful)",
+        "Forgetting \"to\" after \"need\": \"We need reduce\" ❌ → \"We need to reduce\" ✓"
+      ]
+    }
+  ]
+}

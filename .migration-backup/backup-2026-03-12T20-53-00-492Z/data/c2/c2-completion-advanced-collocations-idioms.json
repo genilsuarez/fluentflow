@@ -1,0 +1,482 @@
+[
+  {
+    "sentence": "It's important to <bear in mind> that not all information online is reliable.",
+    "idiom": "bear in mind",
+    "options": [
+      "remember",
+      "forget",
+      "ignore",
+      "understand"
+    ],
+    "correct": "remember",
+    "explanation": "To <bear in mind> means to remember or consider something."
+  },
+  {
+    "sentence": "The new policy will <have a profound impact> on the economy.",
+    "idiom": "have a profound impact",
+    "options": [
+      "have a small effect",
+      "have a significant effect",
+      "have no effect",
+      "have a negative effect"
+    ],
+    "correct": "have a significant effect",
+    "explanation": "To <have a profound impact> means to have a very great or intense effect."
+  },
+  {
+    "sentence": "She managed to <strike a balance> between her career and family life.",
+    "idiom": "strike a balance",
+    "options": [
+      "find a compromise",
+      "create conflict",
+      "lose control",
+      "make a choice"
+    ],
+    "correct": "find a compromise",
+    "explanation": "To <strike a balance> means to find a satisfactory compromise between two extremes."
+  },
+  {
+    "sentence": "His arguments <hold water>, despite initial skepticism.",
+    "idiom": "hold water",
+    "options": [
+      "are illogical",
+      "are valid and sound",
+      "are weak",
+      "are confusing"
+    ],
+    "correct": "are valid and sound",
+    "explanation": "If an argument or statement <holds water>, it is valid and sound."
+  },
+  {
+    "sentence": "The new evidence <sheds light on> the mysterious disappearance.",
+    "idiom": "sheds light on",
+    "options": [
+      "darkens",
+      "confuses",
+      "clarifies",
+      "hides"
+    ],
+    "correct": "clarifies",
+    "explanation": "To <shed light on> something means to help to explain it."
+  },
+  {
+    "sentence": "We need to <iron out the kinks> before the system goes live.",
+    "idiom": "iron out the kinks",
+    "options": [
+      "create problems",
+      "solve minor problems",
+      "ignore issues",
+      "complicate things"
+    ],
+    "correct": "solve minor problems",
+    "explanation": "To <iron out the kinks> means to resolve minor problems or difficulties."
+  },
+  {
+    "sentence": "The decision was made <at the eleventh hour>.",
+    "idiom": "at the eleventh hour",
+    "options": [
+      "very early",
+      "at the last possible moment",
+      "on time",
+      "without warning"
+    ],
+    "correct": "at the last possible moment",
+    "explanation": "To do something <at the eleventh hour> means to do it at the last possible moment."
+  },
+  {
+    "sentence": "He tends to <jump the gun> and make decisions too quickly.",
+    "idiom": "jump the gun",
+    "options": [
+      "act prematurely",
+      "act slowly",
+      "act carefully",
+      "act decisively"
+    ],
+    "correct": "act prematurely",
+    "explanation": "To <jump the gun> means to act too soon or before the proper time."
+  },
+  {
+    "sentence": "The new manager is determined to <turn over a new leaf> and improve team morale.",
+    "idiom": "turn over a new leaf",
+    "options": [
+      "continue old habits",
+      "make a fresh start",
+      "change jobs",
+      "read a new book"
+    ],
+    "correct": "make a fresh start",
+    "explanation": "To <turn over a new leaf> means to make a fresh start and change your behavior for the better."
+  },
+  {
+    "sentence": "The company is <on the cusp of> a major breakthrough.",
+    "idiom": "on the cusp of",
+    "options": [
+      "far from",
+      "at the beginning of",
+      "at the end of",
+      "in the middle of"
+    ],
+    "correct": "at the beginning of",
+    "explanation": "To be <on the cusp of> something means to be at the point when something is about to happen."
+  },
+  {
+    "sentence": "His explanation didn't <ring true> to me.",
+    "idiom": "ring true",
+    "options": [
+      "seem false",
+      "seem honest or truthful",
+      "sound loud",
+      "sound confusing"
+    ],
+    "correct": "seem honest or truthful",
+    "explanation": "If something <rings true>, it seems to be true or genuine."
+  },
+  {
+    "sentence": "She has a tendency to <make a mountain out of a molehill>.",
+    "idiom": "make a mountain out of a molehill",
+    "options": [
+      "exaggerate a minor problem",
+      "solve a big problem",
+      "ignore a problem",
+      "create a problem"
+    ],
+    "correct": "exaggerate a minor problem",
+    "explanation": "To <make a mountain out of a molehill> means to exaggerate the importance of a small problem."
+  },
+  {
+    "sentence": "The project was a success, <by and large>.",
+    "idiom": "by and large",
+    "options": [
+      "completely",
+      "mostly",
+      "partially",
+      "rarely"
+    ],
+    "correct": "mostly",
+    "explanation": "<By and large> means generally or mostly."
+  },
+  {
+    "sentence": "He decided to <take the plunge> and start his own business.",
+    "idiom": "take the plunge",
+    "options": [
+      "hesitate",
+      "make a bold decision",
+      "swim",
+      "avoid a decision"
+    ],
+    "correct": "make a bold decision",
+    "explanation": "To <take the plunge> means to decide to do something important or difficult that you have been thinking about doing for a long time."
+  },
+  {
+    "sentence": "The new regulations will <level the playing field> for all competitors.",
+    "idiom": "level the playing field",
+    "options": [
+      "create an unfair advantage",
+      "make competition fair",
+      "make things more difficult",
+      "reduce competition"
+    ],
+    "correct": "make competition fair",
+    "explanation": "To <level the playing field> means to make a situation fair for everyone."
+  },
+  {
+    "sentence": "She's always been able to <read between the lines>.",
+    "idiom": "read between the lines",
+    "options": [
+      "read quickly",
+      "understand implied meanings",
+      "read aloud",
+      "read superficially"
+    ],
+    "correct": "understand implied meanings",
+    "explanation": "To <read between the lines> means to understand the real meaning of something, even if it is not stated directly."
+  },
+  {
+    "sentence": "The company is trying to <get its act together> after a series of setbacks.",
+    "idiom": "get its act together",
+    "options": [
+      "become disorganized",
+      "become more organized and effective",
+      "give up",
+      "blame others"
+    ],
+    "correct": "become more organized and effective",
+    "explanation": "To <get your act together> means to organize yourself and your affairs so that you can achieve something."
+  },
+  {
+    "sentence": "His comments were <a breath of fresh air>.",
+    "idiom": "a breath of fresh air",
+    "options": [
+      "something new and refreshing",
+      "something old and boring",
+      "something confusing",
+      "something negative"
+    ],
+    "correct": "something new and refreshing",
+    "explanation": "A <breath of fresh air> is something new and refreshing that makes a situation better."
+  },
+  {
+    "sentence": "We need to <nip it in the bud> before it becomes a bigger problem.",
+    "idiom": "nip it in the bud",
+    "options": [
+      "allow it to grow",
+      "deal with it at an early stage",
+      "ignore it",
+      "make it worse"
+    ],
+    "correct": "deal with it at an early stage",
+    "explanation": "To <nip something in the bud> means to stop a problem at an early stage before it gets worse."
+  },
+  {
+    "sentence": "The company decided to <turn a blind eye> to the minor infractions.",
+    "idiom": "turn a blind eye",
+    "options": [
+      "ignore deliberately",
+      "pay close attention",
+      "punish severely",
+      "report immediately"
+    ],
+    "correct": "ignore deliberately",
+    "explanation": "To <turn a blind eye> means to deliberately ignore something that you know is wrong."
+  },
+  {
+    "sentence": "It's time to <clear the air> and discuss our differences openly.",
+    "idiom": "clear the air",
+    "options": [
+      "make things worse",
+      "resolve misunderstandings",
+      "create confusion",
+      "avoid confrontation"
+    ],
+    "correct": "resolve misunderstandings",
+    "explanation": "To <clear the air> means to resolve misunderstandings or disagreements."
+  },
+  {
+    "sentence": "He always <gets cold feet> before a big presentation.",
+    "idiom": "gets cold feet",
+    "options": [
+      "becomes nervous or afraid",
+      "feels cold in her feet",
+      "gets sick",
+      "runs away"
+    ],
+    "correct": "becomes nervous or afraid",
+    "explanation": "To <get cold feet> means to become nervous or afraid to do something you had planned."
+  },
+  {
+    "sentence": "She managed to <keep a low profile> during the scandal.",
+    "idiom": "keep a low profile",
+    "options": [
+      "attract attention",
+      "avoid public notice",
+      "seek publicity",
+      "make a statement"
+    ],
+    "correct": "avoid public notice",
+    "explanation": "To <keep a low profile> means to avoid attracting attention to yourself."
+  },
+  {
+    "sentence": "His comments <hit a raw nerve> with many people.",
+    "idiom": "hit a raw nerve",
+    "options": [
+      "made them happy",
+      "touched a sensitive point",
+      "made them laugh",
+      "left them indifferent"
+    ],
+    "correct": "touched a sensitive point",
+    "explanation": "To <hit a raw nerve> means to touch on a sensitive subject that makes someone feel upset or angry."
+  },
+  {
+    "sentence": "The company is <at a crossroads> regarding its future strategy.",
+    "idiom": "at a crossroads",
+    "options": [
+      "making rapid progress",
+      "facing an important decision",
+      "experiencing stagnation",
+      "following a clear path"
+    ],
+    "correct": "facing an important decision",
+    "explanation": "To be <at a crossroads> means to be at a point where a crucial decision must be made."
+  },
+  {
+    "sentence": "It's important to <keep your ear to the ground> for new opportunities.",
+    "idiom": "keep your ear to the ground",
+    "options": [
+      "ignore rumors",
+      "stay informed about current trends",
+      "listen to music",
+      "avoid communication"
+    ],
+    "correct": "stay informed about current trends",
+    "explanation": "To <keep your ear to the ground> means to pay attention to rumors or what people are saying so that you can find out about new developments."
+  },
+  {
+    "sentence": "The project was a <baptism of fire> for the new manager.",
+    "idiom": "baptism of fire",
+    "options": [
+      "an easy start",
+      "a difficult first experience",
+      "a celebratory event",
+      "a peaceful period"
+    ],
+    "correct": "a difficult first experience",
+    "explanation": "A <baptism of fire> is a difficult or unpleasant first experience of something."
+  },
+  {
+    "sentence": "He decided to <take the bull by the horns> and confront the problem.",
+    "idiom": "take the bull by the horns",
+    "options": [
+      "avoid the problem",
+      "deal with a difficult situation directly",
+      "make a situation worse",
+      "ask for help"
+    ],
+    "correct": "deal with a difficult situation directly",
+    "explanation": "To <take the bull by the horns> means to deal with a difficult situation directly and bravely."
+  },
+  {
+    "sentence": "We need to <iron out the kinks> before the system goes live.",
+    "idiom": "iron out the kinks",
+    "options": [
+      "create problems",
+      "solve minor problems",
+      "ignore issues",
+      "complicate things"
+    ],
+    "correct": "solve minor problems",
+    "explanation": "To <iron out the kinks> means to resolve minor problems or difficulties."
+  },
+  {
+    "sentence": "The new regulations will <level the playing field> for all competitors.",
+    "idiom": "level the playing field",
+    "options": [
+      "create an unfair advantage",
+      "make competition fair",
+      "make things more difficult",
+      "reduce competition"
+    ],
+    "correct": "make competition fair",
+    "explanation": "To <level the playing field> means to make a situation fair for everyone."
+  },
+  {
+    "sentence": "He always <calls a spade a spade>, even if it's unpopular.",
+    "idiom": "calls a spade a spade",
+    "options": [
+      "speaks indirectly",
+      "speaks frankly and directly",
+      "uses metaphors",
+      "avoids difficult topics"
+    ],
+    "correct": "speaks frankly and directly",
+    "explanation": "To <call a spade a spade> means to speak frankly and directly, even if it is impolite or unpleasant."
+  },
+  {
+    "sentence": "The company is trying to <rein in spending> after a period of rapid growth.",
+    "idiom": "rein in spending",
+    "options": [
+      "increase spending",
+      "control or limit spending",
+      "ignore spending",
+      "encourage spending"
+    ],
+    "correct": "control or limit spending",
+    "explanation": "To <rein in> means to control or limit something."
+  },
+  {
+    "sentence": "She has a knack for <reading between the lines>.",
+    "idiom": "reading between the lines",
+    "options": [
+      "reading quickly",
+      "understanding implied meanings",
+      "read aloud",
+      "reading superficially"
+    ],
+    "correct": "understanding implied meanings",
+    "explanation": "To <read between the lines> means to understand the real meaning of something, even if it is not stated directly."
+  },
+  {
+    "sentence": "His proposal was met with <a mixed bag> of reactions.",
+    "idiom": "a mixed bag",
+    "options": [
+      "uniform approval",
+      "a variety of different things",
+      "complete rejection",
+      "total confusion"
+    ],
+    "correct": "a variety of different things",
+    "explanation": "A <mixed bag> refers to a collection of various things, some good and some bad."
+  },
+  {
+    "sentence": "The company needs to <get its house in order> before expanding.",
+    "idiom": "get its house in order",
+    "options": [
+      "expand rapidly",
+      "organize its affairs",
+      "build a new office",
+      "hire more staff"
+    ],
+    "correct": "organize its affairs",
+    "explanation": "To <get its house in order> means to organize one's affairs or business."
+  },
+  {
+    "sentence": "His argument doesn't <hold water>.",
+    "idiom": "hold water",
+    "options": [
+      "is valid",
+      "is illogical",
+      "is interesting",
+      "is confusing"
+    ],
+    "correct": "is illogical",
+    "explanation": "If an argument or statement doesn<t >hold water', it is not valid or sound."
+  },
+  {
+    "sentence": "She's always <on the ball> when it comes to planning events.",
+    "idiom": "on the ball",
+    "options": [
+      "unprepared",
+      "alert and competent",
+      "distracted",
+      "lazy"
+    ],
+    "correct": "alert and competent",
+    "explanation": "To be <on the ball> means to be alert, quick to understand, and competent."
+  },
+  {
+    "sentence": "It's time to <clear the air> and discuss our differences openly.",
+    "idiom": "clear the air",
+    "options": [
+      "make things worse",
+      "resolve misunderstandings",
+      "create confusion",
+      "avoid confrontation"
+    ],
+    "correct": "resolve misunderstandings",
+    "explanation": "To <clear the air> means to resolve misunderstandings or disagreements."
+  },
+  {
+    "sentence": "He decided to <take the plunge> and start his own business.",
+    "idiom": "take the plunge",
+    "options": [
+      "hesitate",
+      "make a bold decision",
+      "swim",
+      "avoid a decision"
+    ],
+    "correct": "make a bold decision",
+    "explanation": "To <take the plunge> means to decide to do something important or difficult that you have been thinking about for a long time."
+  },
+  {
+    "sentence": "We need to <nip it in the bud> before it becomes a bigger problem.",
+    "idiom": "nip it in the bud",
+    "options": [
+      "allow it to grow",
+      "deal with it at an early stage",
+      "ignore it",
+      "make it worse"
+    ],
+    "correct": "deal with it at an early stage",
+    "explanation": "To <nip something in the bud> means to stop a problem at an early stage before it gets worse."
+  }
+]

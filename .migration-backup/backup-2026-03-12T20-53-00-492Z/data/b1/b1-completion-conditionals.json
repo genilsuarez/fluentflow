@@ -1,0 +1,152 @@
+[
+  {
+    "sentence": "If it ______ tomorrow, we will stay at home.",
+    "correct": "rains",
+    "explanation": "First conditional: <If> + present simple, <will> + base verb. Used for real/possible future situations.",
+    "tip": "Think about the weather forecast — what verb form goes after 'if'?"
+  },
+  {
+    "sentence": "If you study hard, you ______ the exam.",
+    "correct": "will pass",
+    "explanation": "First conditional: the result clause uses <will> + base verb for likely outcomes.",
+    "tip": "What's the likely result of studying hard?"
+  },
+  {
+    "sentence": "If I ______ a million dollars, I would travel the world.",
+    "correct": "had",
+    "explanation": "Second conditional: <If> + past simple, <would> + base verb. Used for unreal/hypothetical present situations.",
+    "tip": "This is imaginary — what past form expresses an unreal situation?"
+  },
+  {
+    "sentence": "If she spoke French, she ______ get that job in Paris.",
+    "correct": "would",
+    "explanation": "Second conditional: the result clause uses <would> + base verb for hypothetical outcomes.",
+    "tip": "She doesn't speak French — what auxiliary shows an imaginary result?"
+  },
+  {
+    "sentence": "We will go to the beach if the weather ______ nice.",
+    "correct": "is",
+    "explanation": "First conditional: the <if> clause uses present simple, even though we're talking about the future.",
+    "tip": "After 'if' in first conditional, use present simple — not 'will'."
+  },
+  {
+    "sentence": "If I ______ you, I would apologize immediately.",
+    "correct": "were",
+    "explanation": "Second conditional: we use <were> for all persons with <be> in hypothetical situations (not <was>).",
+    "tip": "In formal/hypothetical English, what form of 'be' do we use after 'if I'?"
+  },
+  {
+    "sentence": "If they arrive late, they ______ miss the beginning of the film.",
+    "correct": "will",
+    "explanation": "First conditional: <will> + base verb in the result clause for a real possibility.",
+    "tip": "Arriving late is possible — what auxiliary shows a real future consequence?"
+  },
+  {
+    "sentence": "If he ______ more money, he would buy a bigger house.",
+    "correct": "had",
+    "explanation": "Second conditional: past simple in the <if> clause for an unreal present situation.",
+    "tip": "He doesn't have enough money — what past form shows this isn't real?"
+  },
+  {
+    "sentence": "I will call you if I ______ any news.",
+    "correct": "get",
+    "explanation": "First conditional: present simple after <if> for a possible future event.",
+    "tip": "Getting news is possible — use present simple after 'if'."
+  },
+  {
+    "sentence": "If we ______ closer to the office, we wouldn't need a car.",
+    "correct": "lived",
+    "explanation": "Second conditional: past simple for an unreal present situation.",
+    "tip": "We don't live close — what past form shows this hypothetical situation?"
+  },
+  {
+    "sentence": "She will be angry if you ______ tell her the truth.",
+    "correct": "don't",
+    "explanation": "First conditional: negative present simple in the <if> clause.",
+    "tip": "Not telling the truth is a real possibility — negate the present simple."
+  },
+  {
+    "sentence": "If I could fly, I ______ visit every country in the world.",
+    "correct": "would",
+    "explanation": "Second conditional: <would> + base verb for an impossible/imaginary result.",
+    "tip": "Flying is impossible for humans — what auxiliary shows the imaginary result?"
+  },
+  {
+    "sentence": "If the bus ______ on time, we won't be late for school.",
+    "correct": "comes",
+    "explanation": "First conditional: present simple in the <if> clause for a real possibility.",
+    "tip": "The bus might come on time — use present simple."
+  },
+  {
+    "sentence": "If I ______ the president, I would improve public education.",
+    "correct": "were",
+    "explanation": "Second conditional: <were> (not <was>) for hypothetical situations with <be>.",
+    "tip": "Being president is hypothetical — use the subjunctive form of 'be'."
+  },
+  {
+    "sentence": "You will feel better if you ______ some rest.",
+    "correct": "get",
+    "explanation": "First conditional: present simple after <if> for advice about a likely outcome.",
+    "tip": "Getting rest is a real action you can take — present simple after 'if'."
+  },
+  {
+    "sentence": "If we ______ a garden, we would grow our own vegetables.",
+    "correct": "had",
+    "explanation": "Second conditional: past simple for something we don't have but wish we did.",
+    "tip": "We don't have a garden — what past form shows this unreal situation?"
+  },
+  {
+    "sentence": "If you ______ that button, the machine will start.",
+    "correct": "press",
+    "explanation": "First conditional: present simple for a real cause-and-effect relationship.",
+    "tip": "Pressing the button is a real action — use present simple."
+  },
+  {
+    "sentence": "If she ______ harder, she would get better grades.",
+    "correct": "studied",
+    "explanation": "Second conditional: past simple for advice about an unreal present situation.",
+    "tip": "She doesn't study hard enough — what past form shows this hypothetical change?"
+  },
+  {
+    "sentence": "I won't go to the party if nobody ______ me.",
+    "correct": "invites",
+    "explanation": "First conditional: present simple in the <if> clause, even in negative result clauses.",
+    "tip": "Being invited is a real possibility — present simple after 'if'."
+  },
+  {
+    "sentence": "If I ______ speak Chinese, I would move to Beijing.",
+    "correct": "could",
+    "explanation": "Second conditional: <could> (past of <can>) in the <if> clause for hypothetical ability.",
+    "tip": "You can't speak Chinese — what past modal shows imaginary ability?"
+  },
+  {
+    "sentence": "If the weather improves, we ______ go hiking this weekend.",
+    "correct": "will",
+    "explanation": "First conditional: <will> in the result clause for a real future plan.",
+    "tip": "The weather might improve — what auxiliary shows the real future result?"
+  },
+  {
+    "sentence": "If I ______ taller, I would play basketball professionally.",
+    "correct": "were",
+    "explanation": "Second conditional: <were> for hypothetical physical characteristics.",
+    "tip": "You can't change your height — use the hypothetical form of 'be'."
+  },
+  {
+    "sentence": "We will save money if we ______ cooking at home.",
+    "correct": "start",
+    "explanation": "First conditional: present simple for a realistic action with a real benefit.",
+    "tip": "Starting to cook at home is a real possibility — present simple."
+  },
+  {
+    "sentence": "If they ______ us, we would help them move to their new flat.",
+    "correct": "asked",
+    "explanation": "Second conditional: past simple for a situation that hasn't happened (they haven't asked).",
+    "tip": "They haven't asked — what past form shows this unreal condition?"
+  },
+  {
+    "sentence": "If you don't hurry, you ______ miss your flight.",
+    "correct": "will",
+    "explanation": "First conditional: <will> for a real warning about a likely consequence.",
+    "tip": "Missing the flight is a real risk — what auxiliary shows this warning?"
+  }
+]

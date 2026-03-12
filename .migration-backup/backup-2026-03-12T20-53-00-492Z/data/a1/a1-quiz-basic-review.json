@@ -1,0 +1,442 @@
+[
+  {
+    "question": "What is the correct form of <be> with <I>?",
+    "options": [
+      "am",
+      "is",
+      "are",
+      "be"
+    ],
+    "correct": "am",
+    "explanation": "<I am> is the correct form of the verb <be> with the pronoun <I>."
+  },
+  {
+    "question": "Which article goes before <apple>?",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct": "an",
+    "explanation": "Use <an> before words that start with vowel sounds like <apple>."
+  },
+  {
+    "question": "How do you say <Hola> in English?",
+    "options": [
+      "Goodbye",
+      "Please",
+      "Hello",
+      "Thank you"
+    ],
+    "correct": "Hello",
+    "explanation": "<Hello> is the English translation of <Hola>."
+  },
+  {
+    "question": "What is the plural of <cat>?",
+    "options": [
+      "cat",
+      "cats",
+      "cates",
+      "caties"
+    ],
+    "correct": "cats",
+    "explanation": "Add <s> to make most nouns plural: cat → cats."
+  },
+  {
+    "question": "Which pronoun goes with <is>?",
+    "options": [
+      "I",
+      "You",
+      "He",
+      "We"
+    ],
+    "correct": "He",
+    "explanation": "Use <is> with he, she, it, and singular nouns."
+  },
+  {
+    "question": "What do you say when someone helps you?",
+    "options": [
+      "Hello",
+      "Goodbye",
+      "Please",
+      "Thank you"
+    ],
+    "correct": "Thank you",
+    "explanation": "<Thank you> is used to express gratitude when someone helps you."
+  },
+  {
+    "question": "How do you make <like> negative with <I>?",
+    "options": [
+      "I not like",
+      "I don't like",
+      "I doesn't like",
+      "I no like"
+    ],
+    "correct": "I don't like",
+    "explanation": "Use <don't> for negative sentences with I, you, we, they."
+  },
+  {
+    "question": "What is the number <fifteen> as digits?",
+    "options": [
+      "5",
+      "50",
+      "15",
+      "51"
+    ],
+    "correct": "15",
+    "explanation": "<Fifteen> is the word form of the number 15."
+  },
+  {
+    "question": "Which word asks about location?",
+    "options": [
+      "What",
+      "Where",
+      "When",
+      "Who"
+    ],
+    "correct": "Where",
+    "explanation": "<Where> is used to ask about location or place."
+  },
+  {
+    "question": "What is the correct form: 'She ___ a teacher'?",
+    "options": [
+      "am",
+      "is",
+      "are",
+      "be"
+    ],
+    "correct": "is",
+    "explanation": "Use <is> with she, he, it, and singular nouns."
+  },
+  {
+    "question": "How do you ask about someone's name?",
+    "options": [
+      "How is your name?",
+      "What is your name?",
+      "Where is your name?",
+      "When is your name?"
+    ],
+    "correct": "What is your name?",
+    "explanation": "Use 'What is your name?' to ask for someone's name."
+  },
+  {
+    "question": "Which preposition goes with <in the morning>?",
+    "options": [
+      "at",
+      "on",
+      "in",
+      "by"
+    ],
+    "correct": "in",
+    "explanation": "Use <in> with parts of the day: in the morning, in the afternoon, in the evening."
+  },
+  {
+    "question": "What is the opposite of <big>?",
+    "options": [
+      "good",
+      "bad",
+      "small",
+      "happy"
+    ],
+    "correct": "small",
+    "explanation": "<Small> is the opposite of <big>."
+  },
+  {
+    "question": "How do you say the time '3:00'?",
+    "options": [
+      "three hour",
+      "three o'clock",
+      "three time",
+      "three clock"
+    ],
+    "correct": "three o'clock",
+    "explanation": "We say <three o'clock> for the time 3:00."
+  },
+  {
+    "question": "Which word means <a lot of> for countable nouns?",
+    "options": [
+      "much",
+      "many",
+      "little",
+      "few"
+    ],
+    "correct": "many",
+    "explanation": "Use <many> with countable nouns to mean <a lot of>."
+  },
+  {
+    "question": "What is the correct question form with <he>?",
+    "options": [
+      "Do he like music?",
+      "Does he like music?",
+      "Is he like music?",
+      "Are he like music?"
+    ],
+    "correct": "Does he like music?",
+    "explanation": "Use <Does> for questions with he, she, it."
+  },
+  {
+    "question": "How do you express ability?",
+    "options": [
+      "I must swim",
+      "I should swim",
+      "I can swim",
+      "I will swim"
+    ],
+    "correct": "I can swim",
+    "explanation": "<Can> is used to express ability or what someone is able to do."
+  },
+  {
+    "question": "What is the correct possessive for <the book of Mary>?",
+    "options": [
+      "Mary book",
+      "Marys book",
+      "Mary's book",
+      "Book of Mary"
+    ],
+    "correct": "Mary's book",
+    "explanation": "Use apostrophe + s ('s) to show possession: Mary's book."
+  },
+  {
+    "question": "Which color is the sun usually described as?",
+    "options": [
+      "blue",
+      "green",
+      "yellow",
+      "black"
+    ],
+    "correct": "yellow",
+    "explanation": "The sun is usually described as yellow in color."
+  },
+  {
+    "question": "What do you say when you meet someone for the first time?",
+    "options": [
+      "Goodbye",
+      "Good night",
+      "Nice to meet you",
+      "See you later"
+    ],
+    "correct": "Nice to meet you",
+    "explanation": "<Nice to meet you> is a polite greeting when meeting someone for the first time."
+  },
+  {
+    "question": "How do you make a sentence with <There> and one item?",
+    "options": [
+      "There are a book",
+      "There is a book",
+      "There have a book",
+      "There has a book"
+    ],
+    "correct": "There is a book",
+    "explanation": "Use <There is> with singular nouns and <There are> with plural nouns."
+  },
+  {
+    "question": "What is the correct way to say you own something?",
+    "options": [
+      "I am have a car",
+      "I have a car",
+      "I has a car",
+      "I having a car"
+    ],
+    "correct": "I have a car",
+    "explanation": "Use <have> with I, you, we, they and <has> with he, she, it."
+  },
+  {
+    "question": "Which word asks about people?",
+    "options": [
+      "What",
+      "Where",
+      "When",
+      "Who"
+    ],
+    "correct": "Who",
+    "explanation": "<Who> is used to ask about people or to identify someone."
+  },
+  {
+    "question": "What is the correct negative form with <she>?",
+    "options": [
+      "She don't like",
+      "She doesn't like",
+      "She not like",
+      "She no like"
+    ],
+    "correct": "She doesn't like",
+    "explanation": "Use <doesn't> for negative sentences with he, she, it."
+  },
+  {
+    "question": "How do you ask for help politely?",
+    "options": [
+      "Help me!",
+      "You help me",
+      "Can you help me?",
+      "Help me now"
+    ],
+    "correct": "Can you help me?",
+    "explanation": "'Can you help me?' is a polite way to ask for help."
+  },
+  {
+    "question": "What preposition is used with transportation?",
+    "options": [
+      "I go by car",
+      "I go in car",
+      "I go on car",
+      "I go at car"
+    ],
+    "correct": "I go by car",
+    "explanation": "Use <by> with means of transportation: by car, by bus, by train."
+  },
+  {
+    "question": "Which is the correct way to introduce yourself?",
+    "options": [
+      "My name John",
+      "I name is John",
+      "My name is John",
+      "I am name John"
+    ],
+    "correct": "My name is John",
+    "explanation": "'My name is...' is the correct way to introduce yourself."
+  },
+  {
+    "question": "What is the opposite of <hot>?",
+    "options": [
+      "warm",
+      "cool",
+      "cold",
+      "big"
+    ],
+    "correct": "cold",
+    "explanation": "<Cold> is the opposite of <hot>."
+  },
+  {
+    "question": "How do you express age?",
+    "options": [
+      "I have 25 years",
+      "I am 25 years old",
+      "I am 25 years",
+      "My age 25"
+    ],
+    "correct": "I am 25 years old",
+    "explanation": "Say 'I am [number] years old' to express your age."
+  },
+  {
+    "question": "Which article is used with unique things?",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correct": "the",
+    "explanation": "Use <the> with unique things like the sun, the moon, the sky."
+  },
+  {
+    "question": "What is the correct plural of <child>?",
+    "options": [
+      "childs",
+      "childes",
+      "children",
+      "child"
+    ],
+    "correct": "children",
+    "explanation": "<Children> is the irregular plural form of <child>."
+  },
+  {
+    "question": "How do you ask about time?",
+    "options": [
+      "What time is it?",
+      "How time is it?",
+      "Where time is it?",
+      "When time is it?"
+    ],
+    "correct": "What time is it?",
+    "explanation": "'What time is it?' is the correct way to ask about the current time."
+  },
+  {
+    "question": "Which word means <not much> for uncountable nouns?",
+    "options": [
+      "few",
+      "many",
+      "little",
+      "some"
+    ],
+    "correct": "little",
+    "explanation": "Use <little> with uncountable nouns to mean <not much>."
+  },
+  {
+    "question": "What is the correct way to say goodbye?",
+    "options": [
+      "Good morning",
+      "Good afternoon",
+      "Goodbye",
+      "Good night"
+    ],
+    "correct": "Goodbye",
+    "explanation": "<Goodbye> is used when leaving or ending a conversation."
+  },
+  {
+    "question": "How do you ask about someone's origin?",
+    "options": [
+      "Where are you from?",
+      "What are you from?",
+      "How are you from?",
+      "When are you from?"
+    ],
+    "correct": "Where are you from?",
+    "explanation": "'Where are you from?' asks about someone's place of origin."
+  },
+  {
+    "question": "What is the correct form: 'We ___ students'?",
+    "options": [
+      "am",
+      "is",
+      "are",
+      "be"
+    ],
+    "correct": "are",
+    "explanation": "Use <are> with we, you, they, and plural nouns."
+  },
+  {
+    "question": "Which preposition is used with specific times?",
+    "options": [
+      "in",
+      "on",
+      "at",
+      "by"
+    ],
+    "correct": "at",
+    "explanation": "Use <at> with specific times: at 3 o'clock, at noon, at midnight."
+  },
+  {
+    "question": "How do you make <go> third person singular?",
+    "options": [
+      "go",
+      "gos",
+      "goes",
+      "going"
+    ],
+    "correct": "goes",
+    "explanation": "Add <es> to verbs ending in <o>: go → goes."
+  },
+  {
+    "question": "What is the correct way to ask about condition?",
+    "options": [
+      "How are you?",
+      "What are you?",
+      "Where are you?",
+      "When are you?"
+    ],
+    "correct": "How are you?",
+    "explanation": "'How are you?' asks about someone's condition or well-being."
+  },
+  {
+    "question": "Which word shows possession for <I>?",
+    "options": [
+      "me",
+      "my",
+      "mine",
+      "I"
+    ],
+    "correct": "my",
+    "explanation": "<My> is the possessive adjective for <I>: my book, my car."
+  }
+]

@@ -1,0 +1,482 @@
+[
+  {
+    "sentence": "The committee decided to <ameliorate> the working conditions.",
+    "idiom": "ameliorate",
+    "options": [
+      "worsen",
+      "improve",
+      "maintain",
+      "ignore"
+    ],
+    "correct": "improve",
+    "explanation": "To <ameliorate> means to make something better or more tolerable."
+  },
+  {
+    "sentence": "The report provides a <comprehensive> analysis of the data.",
+    "idiom": "comprehensive",
+    "options": [
+      "partial",
+      "limited",
+      "thorough and complete",
+      "confusing"
+    ],
+    "correct": "thorough and complete",
+    "explanation": "<Comprehensive> means including or dealing with all or nearly all elements or aspects of something."
+  },
+  {
+    "sentence": "The new policy will <endeavor> to address the issue of inequality.",
+    "idiom": "endeavor",
+    "options": [
+      "fail",
+      "try hard",
+      "avoid",
+      "ignore"
+    ],
+    "correct": "try hard",
+    "explanation": "To <endeavor> means to try hard to do or achieve something."
+  },
+  {
+    "sentence": "The evidence presented was <unequivocal>.",
+    "idiom": "unequivocal",
+    "options": [
+      "ambiguous",
+      "clear and unambiguous",
+      "doubtful",
+      "misleading"
+    ],
+    "correct": "clear and unambiguous",
+    "explanation": "<Unequivocal> means leaving no doubt; unambiguous."
+  },
+  {
+    "sentence": "The government's actions could <exacerbate> the economic crisis.",
+    "idiom": "exacerbate",
+    "options": [
+      "alleviate",
+      "worsen",
+      "solve",
+      "prevent"
+    ],
+    "correct": "worsen",
+    "explanation": "To <exacerbate> means to make a problem, bad situation, or negative feeling worse."
+  },
+  {
+    "sentence": "The study aims to <elucidate> the complex relationship between the two variables.",
+    "idiom": "elucidate",
+    "options": [
+      "obscure",
+      "clarify",
+      "complicate",
+      "question"
+    ],
+    "correct": "clarify",
+    "explanation": "To <elucidate> means to make something clear; explain."
+  },
+  {
+    "sentence": "The committee reached a <consensus> on the proposed changes.",
+    "idiom": "consensus",
+    "options": [
+      "disagreement",
+      "general agreement",
+      "debate",
+      "compromise"
+    ],
+    "correct": "general agreement",
+    "explanation": "A <consensus> is a general agreement."
+  },
+  {
+    "sentence": "The new technology will <facilitate> communication between departments.",
+    "idiom": "facilitate",
+    "options": [
+      "hinder",
+      "make easier",
+      "complicate",
+      "prevent"
+    ],
+    "correct": "make easier",
+    "explanation": "To <facilitate> means to make an action or process easy or easier."
+  },
+  {
+    "sentence": "The research findings were <substantiated> by empirical data.",
+    "idiom": "substantiated",
+    "options": [
+      "disproved",
+      "supported with evidence",
+      "ignored",
+      "questioned"
+    ],
+    "correct": "supported with evidence",
+    "explanation": "To <substantiate> means to provide evidence to support or prove the truth of something."
+  },
+  {
+    "sentence": "The speaker's arguments were <cogent> and well-reasoned.",
+    "idiom": "cogent",
+    "options": [
+      "unconvincing",
+      "clear, logical, and convincing",
+      "confusing",
+      "emotional"
+    ],
+    "correct": "clear, logical, and convincing",
+    "explanation": "<Cogent> means (of an argument or case) clear, logical, and convincing."
+  },
+  {
+    "sentence": "The company aims to <mitigate> the risks associated with the investment.",
+    "idiom": "mitigate",
+    "options": [
+      "increase",
+      "make less severe",
+      "ignore",
+      "create"
+    ],
+    "correct": "make less severe",
+    "explanation": "To <mitigate> means to make something less severe, serious, or painful."
+  },
+  {
+    "sentence": "The report highlighted the <pervasive> influence of social media.",
+    "idiom": "pervasive",
+    "options": [
+      "limited",
+      "widespread",
+      "uncommon",
+      "hidden"
+    ],
+    "correct": "widespread",
+    "explanation": "<Pervasive> means (especially of an unwelcome influence or physical effect) spreading widely throughout an area or a group of people."
+  },
+  {
+    "sentence": "The committee decided to <promulgate> the new regulations.",
+    "idiom": "promulgate",
+    "options": [
+      "hide",
+      "make known by proclamation",
+      "cancel",
+      "delay"
+    ],
+    "correct": "make known by proclamation",
+    "explanation": "To <promulgate> means to promote or make widely known (an idea or cause)."
+  },
+  {
+    "sentence": "The artist's work is characterized by its <ephemeral> beauty.",
+    "idiom": "ephemeral",
+    "options": [
+      "lasting",
+      "short-lived",
+      "eternal",
+      "ugly"
+    ],
+    "correct": "short-lived",
+    "explanation": "<Ephemeral> means lasting for a very short time."
+  },
+  {
+    "sentence": "The new evidence will <corroborate> the witness's testimony.",
+    "idiom": "corroborate",
+    "options": [
+      "contradict",
+      "confirm or give support to",
+      "ignore",
+      "question"
+    ],
+    "correct": "confirm or give support to",
+    "explanation": "To <corroborate> means to confirm or give support to (a statement, theory, or finding)."
+  },
+  {
+    "sentence": "The government's policy was met with <widespread opprobrium>.",
+    "idiom": "widespread opprobrium",
+    "options": [
+      "general approval",
+      "strong criticism or condemnation",
+      "indifference",
+      "support"
+    ],
+    "correct": "strong criticism or condemnation",
+    "explanation": "<Opprobrium> means harsh criticism or censure."
+  },
+  {
+    "sentence": "The scientist's theory was based on <conjecture> rather than fact.",
+    "idiom": "conjecture",
+    "options": [
+      "proven fact",
+      "opinion or conclusion formed on the basis of incomplete information",
+      "evidence",
+      "experiment"
+    ],
+    "correct": "opinion or conclusion formed on the basis of incomplete information",
+    "explanation": "<Conjecture> means an opinion or conclusion formed on the basis of incomplete information."
+  },
+  {
+    "sentence": "The company decided to <delineate> its new strategy.",
+    "idiom": "delineate",
+    "options": [
+      "obscure",
+      "describe or portray precisely",
+      "complicate",
+      "ignore"
+    ],
+    "correct": "describe or portray precisely",
+    "explanation": "To <delineate> means to describe or portray (something) precisely."
+  },
+  {
+    "sentence": "The new law will have <far-reaching implications>.",
+    "idiom": "far-reaching implications",
+    "options": [
+      "limited consequences",
+      "extensive consequences",
+      "no consequences",
+      "positive consequences"
+    ],
+    "correct": "extensive consequences",
+    "explanation": "<Far-reaching implications> means having important and widely applicable effects or consequences."
+  },
+  {
+    "sentence": "The committee's decision was met with <unanimous approval>.",
+    "idiom": "unanimous approval",
+    "options": [
+      "disagreement",
+      "complete agreement",
+      "partial agreement",
+      "indifference"
+    ],
+    "correct": "complete agreement",
+    "explanation": "<Unanimous approval> means (of two or more people) fully in agreement."
+  },
+  {
+    "sentence": "The committee decided to <convene> a meeting to discuss the new proposals.",
+    "idiom": "convene",
+    "options": [
+      "cancel",
+      "postpone",
+      "call together",
+      "attend"
+    ],
+    "correct": "call together",
+    "explanation": "To <convene> means to call people together for a meeting."
+  },
+  {
+    "sentence": "The committee decided to <delineate> the responsibilities of each department.",
+    "idiom": "delineate",
+    "options": [
+      "obscure",
+      "describe precisely",
+      "complicate",
+      "ignore"
+    ],
+    "correct": "describe precisely",
+    "explanation": "To <delineate> means to describe or portray something precisely."
+  },
+  {
+    "sentence": "The new evidence will <corroborate> the witness's testimony.",
+    "idiom": "corroborate",
+    "options": [
+      "contradict",
+      "confirm or support",
+      "ignore",
+      "question"
+    ],
+    "correct": "confirm or support",
+    "explanation": "To <corroborate> means to confirm or give support to a statement, theory, or finding."
+  },
+  {
+    "sentence": "The government's policy was met with <widespread opprobrium>.",
+    "idiom": "widespread opprobrium",
+    "options": [
+      "general approval",
+      "strong criticism",
+      "indifference",
+      "support"
+    ],
+    "correct": "strong criticism",
+    "explanation": "<Opprobrium> means harsh criticism or censure."
+  },
+  {
+    "sentence": "The scientist's theory was based on <conjecture> rather than fact.",
+    "idiom": "conjecture",
+    "options": [
+      "proven fact",
+      "opinion based on incomplete information",
+      "evidence",
+      "experiment"
+    ],
+    "correct": "opinion based on incomplete information",
+    "explanation": "<Conjecture> means an opinion or conclusion formed on the basis of incomplete information."
+  },
+  {
+    "sentence": "The new law will have <far-reaching implications>.",
+    "idiom": "far-reaching implications",
+    "options": [
+      "limited consequences",
+      "extensive consequences",
+      "no consequences",
+      "positive consequences"
+    ],
+    "correct": "extensive consequences",
+    "explanation": "<Far-reaching implications> means having important and widely applicable effects or consequences."
+  },
+  {
+    "sentence": "The committee's decision was met with <unanimous approval>.",
+    "idiom": "unanimous approval",
+    "options": [
+      "disagreement",
+      "complete agreement",
+      "partial agreement",
+      "indifference"
+    ],
+    "correct": "complete agreement",
+    "explanation": "<Unanimous approval> means (of two or more people) fully in agreement."
+  },
+  {
+    "sentence": "The company aims to <mitigate> the risks associated with the investment.",
+    "idiom": "mitigate",
+    "options": [
+      "increase",
+      "make less severe",
+      "ignore",
+      "create"
+    ],
+    "correct": "make less severe",
+    "explanation": "To <mitigate> means to make something less severe, serious, or painful."
+  },
+  {
+    "sentence": "The report highlighted the <pervasive> influence of social media.",
+    "idiom": "pervasive",
+    "options": [
+      "limited",
+      "widespread",
+      "uncommon",
+      "hidden"
+    ],
+    "correct": "widespread",
+    "explanation": "<Pervasive> means (especially of an unwelcome influence or physical effect) spreading widely throughout an area or a group of people."
+  },
+  {
+    "sentence": "The committee decided to <promulgate> the new regulations.",
+    "idiom": "promulgate",
+    "options": [
+      "hide",
+      "make known by proclamation",
+      "cancel",
+      "delay"
+    ],
+    "correct": "make known by proclamation",
+    "explanation": "To <promulgate> means to promote or make widely known (an idea or cause)."
+  },
+  {
+    "sentence": "The artist's work is characterized by its <ephemeral> beauty.",
+    "idiom": "ephemeral",
+    "options": [
+      "lasting",
+      "short-lived",
+      "eternal",
+      "ugly"
+    ],
+    "correct": "short-lived",
+    "explanation": "<Ephemeral> means lasting for a very short time."
+  },
+  {
+    "sentence": "The committee decided to <ameliorate> the working conditions.",
+    "idiom": "ameliorate",
+    "options": [
+      "worsen",
+      "improve",
+      "maintain",
+      "ignore"
+    ],
+    "correct": "improve",
+    "explanation": "To <ameliorate> means to make something better or more tolerable."
+  },
+  {
+    "sentence": "The report provides a <comprehensive> analysis of the data.",
+    "idiom": "comprehensive",
+    "options": [
+      "partial",
+      "limited",
+      "thorough and complete",
+      "confusing"
+    ],
+    "correct": "thorough and complete",
+    "explanation": "<Comprehensive> means including or dealing with all or nearly all elements or aspects of something."
+  },
+  {
+    "sentence": "The new policy will <endeavor> to address the issue of inequality.",
+    "idiom": "endeavor",
+    "options": [
+      "fail",
+      "try hard",
+      "avoid",
+      "ignore"
+    ],
+    "correct": "try hard",
+    "explanation": "To <endeavor> means to try hard to do or achieve something."
+  },
+  {
+    "sentence": "The evidence presented was <unequivocal>.",
+    "idiom": "unequivocal",
+    "options": [
+      "ambiguous",
+      "clear and unambiguous",
+      "doubtful",
+      "misleading"
+    ],
+    "correct": "clear and unambiguous",
+    "explanation": "<Unequivocal> means leaving no doubt; unambiguous."
+  },
+  {
+    "sentence": "The government's actions could <exacerbate> the economic crisis.",
+    "idiom": "exacerbate",
+    "options": [
+      "alleviate",
+      "worsen",
+      "solve",
+      "prevent"
+    ],
+    "correct": "worsen",
+    "explanation": "To <exacerbate> means to make a problem, bad situation, or negative feeling worse."
+  },
+  {
+    "sentence": "The study aims to <elucidate> the complex relationship between the two variables.",
+    "idiom": "elucidate",
+    "options": [
+      "obscure",
+      "clarify",
+      "complicate",
+      "question"
+    ],
+    "correct": "clarify",
+    "explanation": "To <elucidate> means to make something clear; explain."
+  },
+  {
+    "sentence": "The committee reached a <consensus> on the proposed changes.",
+    "idiom": "consensus",
+    "options": [
+      "disagreement",
+      "general agreement",
+      "debate",
+      "compromise"
+    ],
+    "correct": "general agreement",
+    "explanation": "A <consensus> is a general agreement."
+  },
+  {
+    "sentence": "The new technology will <facilitate> communication between departments.",
+    "idiom": "facilitate",
+    "options": [
+      "hinder",
+      "make easier",
+      "complicate",
+      "prevent"
+    ],
+    "correct": "make easier",
+    "explanation": "To <facilitate> means to make an action or process easy or easier."
+  },
+  {
+    "sentence": "The research findings were <substantiated> by empirical data.",
+    "idiom": "substantiated",
+    "options": [
+      "disproved",
+      "supported with evidence",
+      "ignored",
+      "questioned"
+    ],
+    "correct": "supported with evidence",
+    "explanation": "To <substantiate> means to provide evidence to support or prove the truth of something."
+  }
+]

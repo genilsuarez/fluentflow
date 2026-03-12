@@ -71,7 +71,7 @@ export const useSettingsStore = create<SettingsState>()(
       // Default values - will be overridden by theme initializer
       theme: 'light',
       language: 'en',
-      level: 'all',
+      level: 'b1', // Changed from 'all' to reduce initial load (103 → ~20 requests)
       developmentMode: false,
       randomizeItems: true, // Default: randomization enabled
       categories: DEFAULT_CATEGORIES,

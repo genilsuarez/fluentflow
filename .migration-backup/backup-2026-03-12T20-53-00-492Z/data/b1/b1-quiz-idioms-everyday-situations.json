@@ -1,0 +1,827 @@
+[
+  {
+    "question": "What does <break the ice> mean?",
+    "options": [
+      "to make ice cubes",
+      "to start a conversation",
+      "to cool down",
+      "to break something"
+    ],
+    "correct": "to start a conversation",
+    "explanation": "This idiom means to initiate conversation in a social situation."
+  },
+  {
+    "question": "If someone <spills the beans>, they:",
+    "options": [
+      "cook badly",
+      "reveal a secret",
+      "make a mess",
+      "plant vegetables"
+    ],
+    "correct": "reveal a secret",
+    "explanation": "This idiom means to accidentally or intentionally reveal secret information."
+  },
+  {
+    "question": "What does <hit the hay> mean?",
+    "options": [
+      "go to sleep",
+      "work on a farm",
+      "get angry",
+      "exercise"
+    ],
+    "correct": "go to sleep",
+    "explanation": "This idiom means to go to bed or go to sleep."
+  },
+  {
+    "question": "If you <bite the bullet>, you:",
+    "options": [
+      "eat metal",
+      "face a difficult situation",
+      "shoot a gun",
+      "be aggressive"
+    ],
+    "correct": "face a difficult situation",
+    "explanation": "This idiom means to courageously face a difficult or unpleasant situation."
+  },
+  {
+    "question": "What does <piece of cake> mean?",
+    "options": [
+      "dessert",
+      "very easy",
+      "birthday party",
+      "sweet food"
+    ],
+    "correct": "very easy",
+    "explanation": "This idiom means something that is very easy to do."
+  },
+  {
+    "question": "If someone <lets the cat out of the bag>, they:",
+    "options": [
+      "free an animal",
+      "reveal a secret",
+      "clean the house",
+      "go shopping"
+    ],
+    "correct": "reveal a secret",
+    "explanation": "This idiom means to accidentally reveal a secret or surprise."
+  },
+  {
+    "question": "What does <cost an arm and a leg> mean?",
+    "options": [
+      "be dangerous",
+      "be very expensive",
+      "require surgery",
+      "be painful"
+    ],
+    "correct": "be very expensive",
+    "explanation": "This idiom means something is extremely expensive."
+  },
+  {
+    "question": "If you <kill two birds with one stone>, you:",
+    "options": [
+      "hunt animals",
+      "accomplish two things at once",
+      "be violent",
+      "throw rocks"
+    ],
+    "correct": "accomplish two things at once",
+    "explanation": "This idiom means to achieve two goals with a single action."
+  },
+  {
+    "question": "What does <it's raining cats and dogs> mean?",
+    "options": [
+      "animals are falling",
+      "it's raining very heavily",
+      "it's sunny",
+      "pets are outside"
+    ],
+    "correct": "it's raining very heavily",
+    "explanation": "This idiom means it's raining very hard."
+  },
+  {
+    "question": "If someone <burns the midnight oil>, they:",
+    "options": [
+      "waste fuel",
+      "work late into the night",
+      "cook dinner",
+      "light candles"
+    ],
+    "correct": "work late into the night",
+    "explanation": "This idiom means to work or study late into the night."
+  },
+  {
+    "question": "What does <don>t cry over spilled milk' mean?",
+    "options": [
+      "clean up messes",
+      "don't waste food",
+      "don't worry about past mistakes",
+      "drink more water"
+    ],
+    "correct": "don't worry about past mistakes",
+    "explanation": "This idiom means don't be upset about something that has already happened and cannot be changed."
+  },
+  {
+    "question": "If you <jump on the bandwagon>, you:",
+    "options": [
+      "play music",
+      "join a popular trend",
+      "exercise",
+      "travel by wagon"
+    ],
+    "correct": "join a popular trend",
+    "explanation": "This idiom means to join others in doing something that has become popular."
+  },
+  {
+    "question": "What does <the ball is in your court> mean?",
+    "options": [
+      "play tennis",
+      "it's your turn to act",
+      "you own a ball",
+      "you're at home"
+    ],
+    "correct": "it's your turn to act",
+    "explanation": "This idiom means it's your turn to make a decision or take action."
+  },
+  {
+    "question": "If someone <pulls your leg>, they:",
+    "options": [
+      "help you walk",
+      "joke with you",
+      "hurt you",
+      "exercise with you"
+    ],
+    "correct": "joke with you",
+    "explanation": "This idiom means to tease someone or tell them something untrue as a joke."
+  },
+  {
+    "question": "What does <when pigs fly> mean?",
+    "options": [
+      "at the airport",
+      "never",
+      "in the future",
+      "on a farm"
+    ],
+    "correct": "never",
+    "explanation": "This idiom means something will never happen."
+  },
+  {
+    "question": "If you <get cold feet>, you:",
+    "options": [
+      "need socks",
+      "become nervous",
+      "feel cold",
+      "go outside"
+    ],
+    "correct": "become nervous",
+    "explanation": "This idiom means to become nervous or afraid about doing something."
+  },
+  {
+    "question": "What does <break a leg> mean?",
+    "options": [
+      "get injured",
+      "good luck",
+      "dance badly",
+      "run fast"
+    ],
+    "correct": "good luck",
+    "explanation": "This idiom is used to wish someone good luck, especially before a performance."
+  },
+  {
+    "question": "If something is <a blessing in disguise>, it:",
+    "options": [
+      "looks religious",
+      "seems bad but is actually good",
+      "is hidden",
+      "is a gift"
+    ],
+    "correct": "seems bad but is actually good",
+    "explanation": "This idiom means something that initially seems bad but turns out to be good."
+  },
+  {
+    "question": "What does <cut to the chase> mean?",
+    "options": [
+      "use scissors",
+      "run after someone",
+      "get to the point",
+      "watch a movie"
+    ],
+    "correct": "get to the point",
+    "explanation": "This idiom means to skip the details and get straight to the important part."
+  },
+  {
+    "question": "If you <go the extra mile>, you:",
+    "options": [
+      "travel far",
+      "do more than expected",
+      "exercise",
+      "drive a car"
+    ],
+    "correct": "do more than expected",
+    "explanation": "This idiom means to make a special effort to achieve something."
+  },
+  {
+    "question": "What does <it>s not rocket science' mean?",
+    "options": [
+      "it's about space",
+      "it's not complicated",
+      "it's scientific",
+      "it's dangerous"
+    ],
+    "correct": "it's not complicated",
+    "explanation": "This idiom means something is not difficult to understand or do."
+  },
+  {
+    "question": "If you <keep your chin up>, you:",
+    "options": [
+      "exercise your neck",
+      "stay positive",
+      "look up",
+      "be proud"
+    ],
+    "correct": "stay positive",
+    "explanation": "This idiom means to remain cheerful and optimistic during difficult times."
+  },
+  {
+    "question": "What does <once in a blue moon> mean?",
+    "options": [
+      "every month",
+      "very rarely",
+      "at night",
+      "when it's cold"
+    ],
+    "correct": "very rarely",
+    "explanation": "This idiom means something happens very infrequently."
+  },
+  {
+    "question": "If someone <steals your thunder>, they:",
+    "options": [
+      "take your weather",
+      "take credit for your idea",
+      "make noise",
+      "be loud"
+    ],
+    "correct": "take credit for your idea",
+    "explanation": "This idiom means someone takes attention away from you or takes credit for your work."
+  },
+  {
+    "question": "What does <the early bird catches the worm> mean?",
+    "options": [
+      "birds eat insects",
+      "wake up early to succeed",
+      "go fishing",
+      "hunt animals"
+    ],
+    "correct": "wake up early to succeed",
+    "explanation": "This idiom means people who start early or arrive first have the best chance of success."
+  },
+  {
+    "question": "If you <throw in the towel>, you:",
+    "options": [
+      "do laundry",
+      "give up",
+      "clean up",
+      "play sports"
+    ],
+    "correct": "give up",
+    "explanation": "This idiom means to quit or surrender."
+  },
+  {
+    "question": "What does <under the weather> mean?",
+    "options": [
+      "outside",
+      "feeling sick",
+      "during rain",
+      "cold"
+    ],
+    "correct": "feeling sick",
+    "explanation": "This idiom means to feel ill or unwell."
+  },
+  {
+    "question": "If something <rings a bell>, it:",
+    "options": [
+      "makes noise",
+      "sounds familiar",
+      "is musical",
+      "calls someone"
+    ],
+    "correct": "sounds familiar",
+    "explanation": "This idiom means something sounds familiar or reminds you of something."
+  },
+  {
+    "question": "What does <get your act together> mean?",
+    "options": [
+      "perform on stage",
+      "organize yourself",
+      "act in a play",
+      "work with others"
+    ],
+    "correct": "organize yourself",
+    "explanation": "This idiom means to organize yourself and start behaving responsibly."
+  },
+  {
+    "question": "If you <face the music>, you:",
+    "options": [
+      "listen to songs",
+      "accept consequences",
+      "turn around",
+      "be brave"
+    ],
+    "correct": "accept consequences",
+    "explanation": "This idiom means to accept responsibility for something you have done wrong."
+  },
+  {
+    "question": "What does <hang in there> mean?",
+    "options": [
+      "hold something",
+      "don't give up",
+      "wait somewhere",
+      "climb up"
+    ],
+    "correct": "don't give up",
+    "explanation": "This idiom means to persevere and not give up during difficult times."
+  },
+  {
+    "question": "If you <play it by ear>, you:",
+    "options": [
+      "make music",
+      "improvise",
+      "listen carefully",
+      "use your ears"
+    ],
+    "correct": "improvise",
+    "explanation": "This idiom means to handle a situation without a plan, adapting as you go."
+  },
+  {
+    "question": "What does <time flies> mean?",
+    "options": [
+      "clocks move",
+      "insects fly",
+      "time passes quickly",
+      "travel fast"
+    ],
+    "correct": "time passes quickly",
+    "explanation": "This idiom means time seems to pass very quickly."
+  },
+  {
+    "question": "If you <bite off more than you can chew>, you:",
+    "options": [
+      "eat too much",
+      "take on too much",
+      "have big teeth",
+      "be hungry"
+    ],
+    "correct": "take on too much",
+    "explanation": "This idiom means to attempt to do more than you are capable of."
+  },
+  {
+    "question": "What does <better late than never> mean?",
+    "options": [
+      "punctuality matters",
+      "it's good to arrive eventually",
+      "time is important",
+      "speed is key"
+    ],
+    "correct": "it's good to arrive eventually",
+    "explanation": "This idiom means it's better to do something late than not do it at all."
+  },
+  {
+    "question": "If something is <a piece of work>, it:",
+    "options": [
+      "is art",
+      "is difficult to deal with",
+      "needs fixing",
+      "is valuable"
+    ],
+    "correct": "is difficult to deal with",
+    "explanation": "This idiom describes someone who is difficult, annoying, or problematic."
+  },
+  {
+    "question": "What does <call it a day> mean?",
+    "options": [
+      "make a phone call",
+      "stop working",
+      "name something",
+      "plan ahead"
+    ],
+    "correct": "stop working",
+    "explanation": "This idiom means to stop working or end an activity for the day."
+  },
+  {
+    "question": "If you <get the hang of it>, you:",
+    "options": [
+      "hold something",
+      "learn how to do it",
+      "hang up clothes",
+      "understand hanging"
+    ],
+    "correct": "learn how to do it",
+    "explanation": "This idiom means to learn how to do something or understand how something works."
+  },
+  {
+    "question": "What does <in the same boat> mean?",
+    "options": [
+      "traveling together",
+      "in the same situation",
+      "on water",
+      "working together"
+    ],
+    "correct": "in the same situation",
+    "explanation": "This idiom means to be in the same difficult situation as someone else."
+  },
+  {
+    "question": "If you <keep your eyes peeled>, you:",
+    "options": [
+      "hurt your eyes",
+      "watch carefully",
+      "close your eyes",
+      "eat fruit"
+    ],
+    "correct": "watch carefully",
+    "explanation": "This idiom means to watch carefully and be alert for something."
+  },
+  {
+    "question": "What does <raining cats and dogs> mean?",
+    "options": [
+      "raining heavily",
+      "raining lightly",
+      "raining animals",
+      "raining intermittently"
+    ],
+    "correct": "raining heavily",
+    "explanation": "The idiom <raining cats and dogs> means it's raining very heavily."
+  },
+  {
+    "question": "What does <beat around the bush> mean?",
+    "options": [
+      "avoid the main topic",
+      "speak directly",
+      "hit a bush",
+      "talk loudly"
+    ],
+    "correct": "avoid the main topic",
+    "explanation": "To <beat around the bush> means to avoid coming to the point."
+  },
+  {
+    "question": "What does <spill the beans> mean?",
+    "options": [
+      "reveal a secret",
+      "drop some food",
+      "clean up a mess",
+      "cook a meal"
+    ],
+    "correct": "reveal a secret",
+    "explanation": "To <spill the beans> means to reveal a secret or disclose confidential information."
+  },
+  {
+    "question": "What does <not my cup of tea> mean?",
+    "options": [
+      "not something I enjoy",
+      "my favorite drink",
+      "something I do often",
+      "a type of tea"
+    ],
+    "correct": "not something I enjoy",
+    "explanation": "If something is <not your cup of tea>, it is not something you like or are interested in."
+  },
+  {
+    "question": "What does <barking up the wrong tree> mean?",
+    "options": [
+      "pursuing a mistaken course of action",
+      "climbing a tree",
+      "making a loud noise",
+      "looking in the right place"
+    ],
+    "correct": "pursuing a mistaken course of action",
+    "explanation": "To be <barking up the wrong tree> means to be pursuing a mistaken course of action or making a wrong assumption."
+  },
+  {
+    "question": "What does <cry over spilled milk> mean?",
+    "options": [
+      "regret something that cannot be undone",
+      "be upset about a minor accident",
+      "clean up a mess",
+      "express sadness"
+    ],
+    "correct": "regret something that cannot be undone",
+    "explanation": "To <cry over spilled milk> means to be upset about something that has already happened and cannot be changed."
+  },
+  {
+    "question": "What does <bee in his bonnet> mean?",
+    "options": [
+      "an obsession or fixation",
+      "an insect in his hat",
+      "a buzzing sound",
+      "a new idea"
+    ],
+    "correct": "an obsession or fixation",
+    "explanation": "To have a <bee in your bonnet> means to be preoccupied or obsessed with something."
+  },
+  {
+    "question": "What does <pulling my leg> mean?",
+    "options": [
+      "joking or teasing me",
+      "helping me walk",
+      "hurting my leg",
+      "telling me a secret"
+    ],
+    "correct": "joking or teasing me",
+    "explanation": "To <pull someone>s leg' means to tease or joke with them, often by telling them something untrue."
+  },
+  {
+    "question": "What does <the best of both worlds> mean?",
+    "options": [
+      "all the advantages",
+      "a difficult choice",
+      "a confusing situation",
+      "a new experience"
+    ],
+    "correct": "all the advantages",
+    "explanation": "To have <the best of both worlds> means to enjoy the advantages of two different things at the same time."
+  },
+  {
+    "question": "What does <frog in his throat> mean?",
+    "options": [
+      "difficulty speaking due to hoarseness",
+      "a pet frog",
+      "a sore throat",
+      "a sudden cough"
+    ],
+    "correct": "difficulty speaking due to hoarseness",
+    "explanation": "To have a <frog in your throat> means to have a hoarse voice or difficulty speaking clearly."
+  },
+  {
+    "question": "What does <head in the clouds> mean?",
+    "options": [
+      "daydreaming or unrealistic",
+      "thinking clearly",
+      "looking at the sky",
+      "feeling dizzy"
+    ],
+    "correct": "daydreaming or unrealistic",
+    "explanation": "To have your <head in the clouds> means to be daydreaming, unrealistic, or impractical."
+  },
+  {
+    "question": "What does <blessing in disguise> mean?",
+    "options": [
+      "a good thing that seemed bad at first",
+      "a hidden problem",
+      "a fortunate event",
+      "a difficult situation"
+    ],
+    "correct": "a good thing that seemed bad at first",
+    "explanation": "A <blessing in disguise> is something that seems bad or unlucky at first but results in something good happening later."
+  },
+  {
+    "question": "What does <screw loose> mean?",
+    "options": [
+      "slightly crazy or eccentric",
+      "a missing part",
+      "a loose bolt",
+      "a clever idea"
+    ],
+    "correct": "slightly crazy or eccentric",
+    "explanation": "To have a <screw loose> means to be slightly crazy or eccentric."
+  },
+  {
+    "question": "What does <storm in a teacup> mean?",
+    "options": [
+      "a lot of fuss about something unimportant",
+      "a serious problem",
+      "a sudden weather change",
+      "a small drink"
+    ],
+    "correct": "a lot of fuss about something unimportant",
+    "explanation": "A <storm in a teacup> refers to a lot of anger or worry about something unimportant."
+  },
+  {
+    "question": "What does <two left feet> mean?",
+    "options": [
+      "clumsy or awkward at dancing",
+      "missing a foot",
+      "wearing two left shoes",
+      "a good dancer"
+    ],
+    "correct": "clumsy or awkward at dancing",
+    "explanation": "To have <two left feet> means to be clumsy or awkward, especially when dancing."
+  },
+  {
+    "question": "What does <eat a horse> mean?",
+    "options": [
+      "be extremely hungry",
+      "eat an animal",
+      "feel sick",
+      "go to sleep"
+    ],
+    "correct": "be extremely hungry",
+    "explanation": "To <eat a horse> means to be extremely hungry."
+  },
+  {
+    "question": "What does <not rocket science> mean?",
+    "options": [
+      "not difficult to understand",
+      "very complicated",
+      "a scientific experiment",
+      "a space mission"
+    ],
+    "correct": "not difficult to understand",
+    "explanation": "If something is <not rocket science>, it means it's not difficult to understand or do."
+  },
+  {
+    "question": "What does <with flying colors> mean?",
+    "options": [
+      "very easily and successfully",
+      "with colorful flags",
+      "with great difficulty",
+      "with a lot of help"
+    ],
+    "correct": "very easily and successfully",
+    "explanation": "To pass <with flying colors> means to pass very easily and successfully."
+  },
+  {
+    "question": "What does <burning the midnight oil> mean?",
+    "options": [
+      "working late into the night",
+      "wasting electricity",
+      "setting things on fire",
+      "sleeping soundly"
+    ],
+    "correct": "working late into the night",
+    "explanation": "To <burn the midnight oil> means to work or study late into the night."
+  },
+  {
+    "question": "What does <all ears> mean?",
+    "options": [
+      "eager to listen",
+      "having big ears",
+      "ignoring you",
+      "feeling tired"
+    ],
+    "correct": "eager to listen",
+    "explanation": "To be <all ears> means to be eager to hear what someone has to say."
+  },
+  {
+    "question": "What does <on cloud nine> mean?",
+    "options": [
+      "extremely happy",
+      "flying in an airplane",
+      "feeling sad",
+      "confused"
+    ],
+    "correct": "extremely happy",
+    "explanation": "To be <on cloud nine> means to be extremely happy."
+  },
+  {
+    "question": "What does <jump to conclusions> mean?",
+    "options": [
+      "make a decision too quickly",
+      "jump high",
+      "think carefully",
+      "avoid making decisions"
+    ],
+    "correct": "make a decision too quickly",
+    "explanation": "To <jump to conclusions> means to make a decision or judgment too quickly without having all the facts."
+  },
+  {
+    "question": "What does <couch potato> mean?",
+    "options": [
+      "a lazy person who watches a lot of TV",
+      "a vegetable on the sofa",
+      "an active person",
+      "a good cook"
+    ],
+    "correct": "a lazy person who watches a lot of TV",
+    "explanation": "A <couch potato> is a person who spends a lot of time sitting or lying on a couch, watching television."
+  },
+  {
+    "question": "What does <green thumb> mean?",
+    "options": [
+      "a natural talent for gardening",
+      "a green finger",
+      "a bad habit",
+      "a lucky charm"
+    ],
+    "correct": "a natural talent for gardening",
+    "explanation": "To have a <green thumb> means to be good at gardening."
+  },
+  {
+    "question": "What does <in hot water> mean?",
+    "options": [
+      "in trouble",
+      "taking a bath",
+      "feeling warm",
+      "in a good situation"
+    ],
+    "correct": "in trouble",
+    "explanation": "To be <in hot water> means to be in trouble."
+  },
+  {
+    "question": "What does <drop in the ocean> mean?",
+    "options": [
+      "a very small amount compared to what is needed",
+      "a drop of water",
+      "a large quantity",
+      "a significant contribution"
+    ],
+    "correct": "a very small amount compared to what is needed",
+    "explanation": "A <drop in the ocean> means a very small amount compared with what is needed or expected."
+  },
+  {
+    "question": "What does <hit the books> mean?",
+    "options": [
+      "study hard",
+      "hit actual books",
+      "play a game",
+      "read casually"
+    ],
+    "correct": "study hard",
+    "explanation": "To <hit the books> means to study hard."
+  },
+  {
+    "question": "What does <sweet tooth> mean?",
+    "options": [
+      "a strong liking for sweet foods",
+      "a sweet taste in mouth",
+      "a healthy diet",
+      "a dental problem"
+    ],
+    "correct": "a strong liking for sweet foods",
+    "explanation": "To have a <sweet tooth> means to have a strong liking for sweet foods."
+  },
+  {
+    "question": "What does <on the ball> mean?",
+    "options": [
+      "alert and competent",
+      "playing soccer",
+      "distracted",
+      "making mistakes"
+    ],
+    "correct": "alert and competent",
+    "explanation": "To be <on the ball> means to be alert, quick to understand, and competent."
+  },
+  {
+    "question": "What does <on the fence> mean?",
+    "options": [
+      "undecided",
+      "enthusiastic",
+      "clumsy",
+      "confident"
+    ],
+    "correct": "undecided",
+    "explanation": "To be <on the fence> means to be undecided or neutral about something."
+  },
+  {
+    "question": "What does <take a rain check> mean?",
+    "options": [
+      "postpone to a later date",
+      "accept the invitation",
+      "decline politely",
+      "ask for more details"
+    ],
+    "correct": "postpone to a later date",
+    "explanation": "To <take a rain check> means to decline an offer or invitation but suggest that it could be accepted at a later time."
+  },
+  {
+    "question": "What does <play devil>s advocate' mean?",
+    "options": [
+      "argue against an idea for the sake of argument",
+      "support an idea",
+      "agree with everyone",
+      "avoid conflict"
+    ],
+    "correct": "argue against an idea for the sake of argument",
+    "explanation": "To <play devil>s advocate' means to argue against an idea or plan that a lot of people support, in order to make people think about the issue in a different way."
+  },
+  {
+    "question": "What does <on the tip of my tongue> mean?",
+    "options": [
+      "about to be said or remembered",
+      "easy to remember",
+      "difficult to pronounce",
+      "a secret"
+    ],
+    "correct": "about to be said or remembered",
+    "explanation": "If something is <on the tip of your tongue>, you are sure that you know it but you cannot remember it."
+  },
+  {
+    "question": "What does <hot potato> mean?",
+    "options": [
+      "a controversial or difficult issue",
+      "an easy task",
+      "a popular idea",
+      "a delicious meal"
+    ],
+    "correct": "a controversial or difficult issue",
+    "explanation": "A <hot potato> is a controversial or difficult issue that is awkward to deal with."
+  },
+  {
+    "question": "What does <let the cat out of the bag> mean?",
+    "options": [
+      "reveal a secret accidentally",
+      "free a pet",
+      "make a mess",
+      "start a fight"
+    ],
+    "correct": "reveal a secret accidentally",
+    "explanation": "To <let the cat out of the bag> means to reveal a secret accidentally."
+  }
+]

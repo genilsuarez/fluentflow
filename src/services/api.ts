@@ -135,7 +135,7 @@ class ApiService {
    */
   /**
    * Fetch specific module with its data
-   * Strategy: network-first with Cache API fallback for offline support
+   * Strategy: Metadata from learningModules.json (already loaded), data lazy-loaded on demand
    */
   async fetchModuleData(moduleId: string): Promise<ApiResponse<LearningModule>> {
     const cacheKey = this.getCacheKey('module', { moduleId });
@@ -147,7 +147,7 @@ class ApiService {
     }
 
     try {
-      // First get module metadata
+      // Get module metadata from learningModules.json (already cached)
       const modulesResponse = await this.fetchModules();
       if (!modulesResponse.success) {
         throw new Error('Failed to fetch modules list');
@@ -158,7 +158,8 @@ class ApiService {
         throw new Error(`Module ${moduleId} not found`);
       }
 
-      // Then get module data if dataPath exists
+      // Module metadata is already complete in learningModules.json
+      // Only fetch actual data if dataPath exists
       let moduleData: LearningModule = { ...moduleInfo };
 
       if (moduleInfo.dataPath) {
@@ -168,7 +169,7 @@ class ApiService {
           : moduleInfo.dataPath;
         const dataUrl = validateUrl(getAssetPath(cleanDataPath));
 
-        // Let service worker handle offline/online - it has network-first with cache fallback
+        // Lazy load actual module data (questions, flashcards, etc.)
         const data = await secureJsonFetch(dataUrl);
 
         // Handle different data formats:
@@ -180,11 +181,8 @@ class ApiService {
         }
 
         moduleData = {
-          ...moduleInfo,
-          data: processedData,
-          estimatedTime: data.estimatedTime || moduleInfo.estimatedTime || 5,
-          difficulty: data.difficulty || moduleInfo.difficulty || 3,
-          tags: data.tags || moduleInfo.tags || [moduleInfo.category],
+          ...moduleInfo, // Metadata from learningModules.json (estimatedTime, difficulty, tags)
+          data: processedData, // Actual content from individual file
         };
       }
 

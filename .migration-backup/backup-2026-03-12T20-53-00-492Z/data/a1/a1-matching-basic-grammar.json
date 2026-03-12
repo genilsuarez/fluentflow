@@ -1,0 +1,202 @@
+[
+  {
+    "left": "I ___ a student",
+    "right": "am",
+    "explanation": "Use <am> with the pronoun <I>"
+  },
+  {
+    "left": "You ___ my friend",
+    "right": "are",
+    "explanation": "Use <are> with the pronoun <you>"
+  },
+  {
+    "left": "The cat ___ sleeping",
+    "right": "is",
+    "explanation": "Use <is> with singular nouns"
+  },
+  {
+    "left": "I ___ a car",
+    "right": "have",
+    "explanation": "Use <have> with I, you, we, they"
+  },
+  {
+    "left": "She ___ two cats",
+    "right": "has",
+    "explanation": "Use <has> with he, she, it"
+  },
+  {
+    "left": "I ___ my homework",
+    "right": "do",
+    "explanation": "Use <do> with I, you, we, they"
+  },
+  {
+    "left": "He ___ his work",
+    "right": "does",
+    "explanation": "Use <does> with he, she, it"
+  },
+  {
+    "left": "I ___ at home yesterday",
+    "right": "was",
+    "explanation": "Past tense of <be> with I, he, she, it"
+  },
+  {
+    "left": "You ___ at school yesterday",
+    "right": "were",
+    "explanation": "Past tense of <be> with you, we, they"
+  },
+  {
+    "left": "I ___ to the store",
+    "right": "went",
+    "explanation": "Past tense of <go>"
+  },
+  {
+    "left": "She ___ home late",
+    "right": "came",
+    "explanation": "Past tense of <come>"
+  },
+  {
+    "left": "We ___ a movie",
+    "right": "saw",
+    "explanation": "Past tense of <see>"
+  },
+  {
+    "left": "They ___ dinner",
+    "right": "ate",
+    "explanation": "Past tense of <eat>"
+  },
+  {
+    "left": "I ___ breakfast this morning",
+    "right": "had",
+    "explanation": "Past tense of <have>"
+  },
+  {
+    "left": "He ___ his homework yesterday",
+    "right": "did",
+    "explanation": "Past tense of <do>"
+  },
+  {
+    "left": "___ book",
+    "right": "A",
+    "explanation": "Use <a> before consonant sounds"
+  },
+  {
+    "left": "___ apple",
+    "right": "An",
+    "explanation": "Use <an> before vowel sounds"
+  },
+  {
+    "left": "___ sun is bright",
+    "right": "The",
+    "explanation": "Use <the> for specific or unique things"
+  },
+  {
+    "left": "___ house is big",
+    "right": "My",
+    "explanation": "<My> shows possession (I)"
+  },
+  {
+    "left": "___ car is red",
+    "right": "Your",
+    "explanation": "<Your> shows possession (you)"
+  },
+  {
+    "left": "___ dog is small",
+    "right": "His",
+    "explanation": "<His> shows possession (he)"
+  },
+  {
+    "left": "___ cat is cute",
+    "right": "Her",
+    "explanation": "<Her> shows possession (she)"
+  },
+  {
+    "left": "___ family is happy",
+    "right": "Our",
+    "explanation": "<Our> shows possession (we)"
+  },
+  {
+    "left": "___ school is new",
+    "right": "Their",
+    "explanation": "<Their> shows possession (they)"
+  },
+  {
+    "left": "I like ___",
+    "right": "music",
+    "explanation": "Use base form of verb with I, you, we, they"
+  },
+  {
+    "left": "She likes ___",
+    "right": "books",
+    "explanation": "Add <s> to verbs with he, she, it"
+  },
+  {
+    "left": "I don't like ___",
+    "right": "coffee",
+    "explanation": "Use <don>t' for negative with I, you, we, they"
+  },
+  {
+    "left": "She ___ not at home",
+    "right": "is (singular)",
+    "explanation": "Use <is not> or <isn>t' for negative with he, she, it"
+  },
+  {
+    "left": "Do you like ___?",
+    "right": "pizza",
+    "explanation": "Use <do> for questions with I, you, we, they"
+  },
+  {
+    "left": "Does she speak ___?",
+    "right": "English",
+    "explanation": "Use <does> for questions with he, she, it"
+  },
+  {
+    "left": "___ is the book?",
+    "right": "Where",
+    "explanation": "<Where> asks about location"
+  },
+  {
+    "left": "___ is your name?",
+    "right": "What",
+    "explanation": "<What> asks for information"
+  },
+  {
+    "left": "___ is that person?",
+    "right": "Who",
+    "explanation": "<Who> asks about people"
+  },
+  {
+    "left": "___ is the party?",
+    "right": "When",
+    "explanation": "<When> asks about time"
+  },
+  {
+    "left": "___ are you today?",
+    "right": "How",
+    "explanation": "<How> asks about condition"
+  },
+  {
+    "left": "___ are you sad?",
+    "right": "Why",
+    "explanation": "<Why> asks for reasons"
+  },
+  {
+    "left": "There is ___ on the table",
+    "right": "a book",
+    "explanation": "Use <there is> with singular nouns"
+  },
+  {
+    "left": "There are ___ in the park",
+    "right": "two dogs",
+    "explanation": "Use <there are> with plural nouns"
+  },
+  {
+    "left": "I can ___ very well",
+    "right": "swim",
+    "explanation": "<Can> shows ability"
+  },
+  {
+    "left": "She can't ___ a car",
+    "right": "drive",
+    "explanation": "<Can>t' shows inability"
+  }
+]

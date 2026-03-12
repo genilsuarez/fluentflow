@@ -1,0 +1,116 @@
+{
+  "title": "Understanding English-Speaking Cultures",
+  "estimatedReadingTime": 10,
+  "learningObjectives": [
+    "Learn about cultural differences and similarities",
+    "Understand common customs and traditions in English-speaking countries",
+    "Recognize cultural etiquette and social norms",
+    "Practice discussing cultural topics respectfully"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "title": "Culture and Communication",
+      "type": "introduction",
+      "content": "Culture is the way people live, think, and behave in different countries. When you learn English, you also learn about the cultures of English-speaking countries like the USA, UK, Canada, Australia, and others. Understanding culture helps you communicate better and avoid misunderstandings. Every culture has its own customs, holidays, and ways of doing things."
+    },
+    {
+      "id": "greetings-customs",
+      "title": "Greetings and Social Customs",
+      "type": "theory",
+      "content": "Different cultures have different ways of greeting. In English-speaking countries, people often shake hands when they meet for the first time. Friends might hug or wave. Personal space is important - people usually stand about an arm's length apart when talking. It's polite to make eye contact during conversation. When visiting someone's home, it's common to bring a small gift like flowers or wine."
+    },
+    {
+      "id": "holidays",
+      "title": "Common Holidays and Celebrations",
+      "type": "theory",
+      "content": "English-speaking countries celebrate many holidays. Christmas (December 25) is a major holiday where families exchange gifts. Thanksgiving (November in the USA, October in Canada) is a time to be grateful and eat turkey. Halloween (October 31) is when children dress in costumes and collect candy. New Year's Eve (December 31) is celebrated with parties and fireworks. Each country also has its own national holidays."
+    },
+    {
+      "id": "dining-etiquette",
+      "title": "Food and Dining Customs",
+      "type": "theory",
+      "content": "Dining customs vary by culture. In restaurants, you usually wait to be seated by a host. It's polite to say \"please\" and \"thank you\" to servers. Tipping is expected in the USA and Canada (usually 15-20% of the bill), but not always in other countries. When eating with others, wait until everyone has their food before starting. Don't talk with your mouth full. If you're invited to dinner, arriving 5-10 minutes late is acceptable."
+    },
+    {
+      "id": "examples",
+      "title": "Cultural Situations",
+      "type": "examples",
+      "content": "Example 1: MEETING SOMEONE - 'Nice to meet you! It's a pleasure to make your acquaintance.'\n\nExample 2: DINNER INVITATION - \"Thank you for inviting me. Can I bring anything?\"\n\nExample 3: AT A RESTAURANT - 'Could we have the check, please? I'll leave a tip.'\n\nExample 4: DISCUSSING HOLIDAYS - \"How do you celebrate Christmas in your country?\""
+    },
+    {
+      "id": "summary",
+      "title": "Cultural Awareness",
+      "type": "summary",
+      "content": "Remember: Every culture is different, and that's okay! Be respectful and open-minded. When you don't understand something, it's fine to ask politely. Learn about customs before visiting a new country. Don't judge - just observe and learn. Cultural awareness makes you a better communicator and helps you make friends from around the world."
+    }
+  ],
+  "keyVocabulary": [
+    {
+      "term": "custom",
+      "definition": "A traditional way of behaving or doing something",
+      "example": "It's a custom to shake hands when you meet someone.",
+      "pronunciation": "/ˈkʌstəm/"
+    },
+    {
+      "term": "tradition",
+      "definition": "A belief or practice passed down through generations",
+      "example": "Eating turkey on Thanksgiving is an American tradition.",
+      "pronunciation": "/trəˈdɪʃən/"
+    },
+    {
+      "term": "etiquette",
+      "definition": "The rules of polite behavior in society",
+      "example": "Good table etiquette is important at formal dinners.",
+      "pronunciation": "/ˈetɪket/"
+    },
+    {
+      "term": "celebrate",
+      "definition": "To do something special for an important event",
+      "example": "We celebrate birthdays with cake and presents.",
+      "pronunciation": "/ˈseləbreɪt/"
+    },
+    {
+      "term": "respect",
+      "definition": "To show consideration and honor for someone or something",
+      "example": "We should respect different cultures and beliefs.",
+      "pronunciation": "/rɪˈspekt/"
+    },
+    {
+      "term": "host",
+      "definition": "A person who receives and entertains guests",
+      "example": "Our host made us feel very welcome.",
+      "pronunciation": "/hoʊst/"
+    }
+  ],
+  "grammarPoints": [
+    {
+      "rule": "Talking About Customs with 'Usually' and 'Often'",
+      "explanation": "Use adverbs of frequency to describe how often something happens in a culture.",
+      "examples": [
+        "People usually shake hands when they meet.",
+        "We often celebrate with family and friends.",
+        "Americans typically tip 15-20% at restaurants.",
+        "It's common to bring a gift when visiting someone."
+      ],
+      "commonMistakes": [
+        "Placing adverbs incorrectly: \"Usually people shake\" ❌ → \"People usually shake\" ✓",
+        "Using \"always\" for customs that aren't universal"
+      ]
+    },
+    {
+      "rule": "Making Polite Inquiries About Culture",
+      "explanation": "Use \"Could you...?\" or \"Would you mind...?\" to ask about cultural practices politely.",
+      "examples": [
+        "Could you explain this custom to me?",
+        "Would you mind telling me about your traditions?",
+        "I'm curious about... Could you share more?",
+        "What's the proper way to...?"
+      ],
+      "commonMistakes": [
+        "Being too direct: \"Why do you do that?\" can sound rude",
+        "Making assumptions about cultures"
+      ]
+    }
+  ]
+}

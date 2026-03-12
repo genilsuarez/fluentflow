@@ -1,0 +1,152 @@
+[
+  {
+    "sentence": "If I had studied harder, I ______ passed the exam.",
+    "correct": "would have",
+    "explanation": "Third conditional: <If> + past perfect, <would have> + past participle. For unreal past situations.",
+    "tip": "You didn't study hard and didn't pass — what shows a different past result?"
+  },
+  {
+    "sentence": "If she ______ the email, she would have known about the meeting.",
+    "correct": "had read",
+    "explanation": "Third conditional: <had> + past participle in the <if> clause for an unreal past condition.",
+    "tip": "She didn't read the email — what past perfect form shows this?"
+  },
+  {
+    "sentence": "If I hadn't missed the bus, I ______ arrived on time.",
+    "correct": "would have",
+    "explanation": "Third conditional: <would have> + past participle for the imaginary past result.",
+    "tip": "You missed the bus and arrived late — what auxiliary shows the alternative result?"
+  },
+  {
+    "sentence": "If they had left earlier, they ______ have got stuck in traffic.",
+    "correct": "wouldn't",
+    "explanation": "Third conditional negative: <wouldn't have> + past participle for an avoided past outcome.",
+    "tip": "They left late and got stuck — negate the result to show what could have been avoided."
+  },
+  {
+    "sentence": "If I ______ known you were coming, I would have prepared dinner.",
+    "correct": "had",
+    "explanation": "Third conditional: <had> + past participle in the <if> clause.",
+    "tip": "You didn't know — what auxiliary completes the past perfect in the condition?"
+  },
+  {
+    "sentence": "If I spoke better English, I ______ have got that job last year.",
+    "correct": "would",
+    "explanation": "Mixed conditional (present→past): present unreal condition + past unreal result. <If> + past simple, <would have> + past participle.",
+    "tip": "You don't speak English well (now) and didn't get the job (past) — mixed conditional."
+  },
+  {
+    "sentence": "If she had taken that job in London, she ______ living there now.",
+    "correct": "would be",
+    "explanation": "Mixed conditional (past→present): past unreal condition + present unreal result. <If> + past perfect, <would> + base verb.",
+    "tip": "She didn't take the job (past) so she's not living there (now) — mixed conditional."
+  },
+  {
+    "sentence": "If we ______ bought that house, we would be living by the sea now.",
+    "correct": "had",
+    "explanation": "Mixed conditional (past→present): <had> + past participle for the unreal past condition.",
+    "tip": "You didn't buy the house — what auxiliary starts the past perfect condition?"
+  },
+  {
+    "sentence": "If he hadn't broken his leg, he ______ playing in today's match.",
+    "correct": "would be",
+    "explanation": "Mixed conditional (past→present): past event affecting present situation.",
+    "tip": "He broke his leg (past) so he can't play (now) — what shows the present result?"
+  },
+  {
+    "sentence": "If I were more organized, I ______ have forgotten the appointment yesterday.",
+    "correct": "wouldn't",
+    "explanation": "Mixed conditional (present→past): a general trait (present) affecting a past event.",
+    "tip": "You're not organized (now) and forgot the appointment (past) — negate the past result."
+  },
+  {
+    "sentence": "If they ______ invested in that company, they would be rich now.",
+    "correct": "had",
+    "explanation": "Mixed conditional (past→present): <had> + past participle for the unreal past action.",
+    "tip": "They didn't invest (past) and aren't rich (now) — past perfect in the condition."
+  },
+  {
+    "sentence": "If I had accepted the scholarship, I ______ studying at Oxford right now.",
+    "correct": "would be",
+    "explanation": "Mixed conditional (past→present): <would be> + -ing for a present continuous unreal result.",
+    "tip": "You didn't accept (past) so you're not studying there (now) — present result."
+  },
+  {
+    "sentence": "We would have won the game if the referee ______ made that mistake.",
+    "correct": "hadn't",
+    "explanation": "Third conditional: <hadn't> + past participle for a negative past condition.",
+    "tip": "The referee made a mistake — negate the past perfect to show the alternative."
+  },
+  {
+    "sentence": "If you ______ listened to my advice, you wouldn't be in this situation now.",
+    "correct": "had",
+    "explanation": "Mixed conditional (past→present): past action affecting current situation.",
+    "tip": "You didn't listen (past) and now you're in trouble (present) — past perfect condition."
+  },
+  {
+    "sentence": "If I hadn't eaten so much, I ______ feel sick now.",
+    "correct": "wouldn't",
+    "explanation": "Mixed conditional (past→present): <wouldn't> + base verb for the negated present result.",
+    "tip": "You ate too much (past) and feel sick (now) — negate the present result."
+  },
+  {
+    "sentence": "If she ______ been more careful, she wouldn't have lost her passport.",
+    "correct": "had",
+    "explanation": "Third conditional: <had been> + adjective in the <if> clause.",
+    "tip": "She wasn't careful and lost her passport — past perfect in the condition."
+  },
+  {
+    "sentence": "If I were taller, I ______ have been selected for the basketball team last year.",
+    "correct": "might",
+    "explanation": "Mixed conditional with <might>: present unreal condition + uncertain past result.",
+    "tip": "You're not tall (now) and weren't selected (past) — what modal shows uncertainty?"
+  },
+  {
+    "sentence": "If he had saved more money, he ______ afford to travel this summer.",
+    "correct": "could",
+    "explanation": "Mixed conditional (past→present): <could> + base verb for present ability from a past action.",
+    "tip": "He didn't save (past) so he can't afford it (now) — what modal shows ability?"
+  },
+  {
+    "sentence": "If we ______ taken a taxi, we would have arrived much earlier.",
+    "correct": "had",
+    "explanation": "Third conditional: <had taken> in the <if> clause for an alternative past action.",
+    "tip": "You didn't take a taxi — past perfect in the condition."
+  },
+  {
+    "sentence": "If I hadn't met you, my life ______ be completely different now.",
+    "correct": "would",
+    "explanation": "Mixed conditional (past→present): <would> + base verb for the present unreal result.",
+    "tip": "You met this person (past) and it changed your life (present) — present result."
+  },
+  {
+    "sentence": "If the weather had been better, we ______ have gone to the beach.",
+    "correct": "could",
+    "explanation": "Third conditional with <could>: <could have> + past participle for a past possibility.",
+    "tip": "The weather was bad so the beach wasn't possible — what modal shows past possibility?"
+  },
+  {
+    "sentence": "If I ______ won the lottery, I would have bought a house by the sea.",
+    "correct": "had",
+    "explanation": "Third conditional: <had won> in the <if> clause for an unreal past event.",
+    "tip": "You didn't win — past perfect in the condition."
+  },
+  {
+    "sentence": "If she hadn't studied medicine, she ______ be a doctor today.",
+    "correct": "wouldn't",
+    "explanation": "Mixed conditional (past→present): negated present result from an unreal past change.",
+    "tip": "She studied medicine (past) and is a doctor (now) — negate the present result."
+  },
+  {
+    "sentence": "If they ______ warned us, we would have been prepared.",
+    "correct": "had",
+    "explanation": "Third conditional: <had warned> for the unreal past condition.",
+    "tip": "They didn't warn you — past perfect in the condition."
+  },
+  {
+    "sentence": "If I hadn't overslept, I ______ have missed the interview.",
+    "correct": "wouldn't",
+    "explanation": "Third conditional negative: <wouldn't have> + past participle for the avoided result.",
+    "tip": "You overslept and missed it — negate to show what would have been different."
+  }
+]

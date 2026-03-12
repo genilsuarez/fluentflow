@@ -1,0 +1,442 @@
+[
+  {
+    "question": "Which sentence correctly uses \"used to\" to describe a past habit?",
+    "options": [
+      "I used to going to the gym every day.",
+      "I used to go to the gym every day.",
+      "I am used to go to the gym every day.",
+      "I use to go to the gym every day."
+    ],
+    "correct": "I used to go to the gym every day.",
+    "explanation": "<Used to> + base verb describes past habits that no longer happen."
+  },
+  {
+    "question": "Complete: \"She ______ living alone after her roommate moved out.\"",
+    "options": [
+      "got used to",
+      "used to",
+      "is use to",
+      "was used"
+    ],
+    "correct": "got used to",
+    "explanation": "<Got used to> + -ing describes the process of becoming accustomed to something."
+  },
+  {
+    "question": "Which phrasal verb means \"to compensate for something\"?",
+    "options": [
+      "Make up for",
+      "Put up with",
+      "Come up with",
+      "Look forward to"
+    ],
+    "correct": "Make up for",
+    "explanation": "<Make up for> means to compensate or do something to correct a bad situation."
+  },
+  {
+    "question": "Choose the correct connector: \"The project was delayed. ______, we managed to meet the deadline.\"",
+    "options": [
+      "Furthermore",
+      "Nevertheless",
+      "Moreover",
+      "In addition"
+    ],
+    "correct": "Nevertheless",
+    "explanation": "<Nevertheless> introduces a contrasting result despite a negative situation."
+  },
+  {
+    "question": "What does the phrasal verb \"put up with\" mean?",
+    "options": [
+      "To tolerate",
+      "To postpone",
+      "To display",
+      "To accommodate"
+    ],
+    "correct": "To tolerate",
+    "explanation": "<Put up with> means to tolerate or endure something unpleasant."
+  },
+  {
+    "question": "Which connector is used to add supporting information?",
+    "options": [
+      "However",
+      "Furthermore",
+      "Despite",
+      "Although"
+    ],
+    "correct": "Furthermore",
+    "explanation": "<Furthermore> adds additional information to support a point."
+  },
+  {
+    "question": "Complete: \"______ the bad weather, the event was a success.\"",
+    "options": [
+      "Despite",
+      "Because",
+      "Moreover",
+      "Therefore"
+    ],
+    "correct": "Despite",
+    "explanation": "<Despite> + noun/gerund shows contrast with an unexpected positive outcome."
+  },
+  {
+    "question": "Which sentence uses \"be used to\" correctly?",
+    "options": [
+      "He is used to wake up early.",
+      "He is used to waking up early.",
+      "He is used to woke up early.",
+      "He is used to wakes up early."
+    ],
+    "correct": "He is used to waking up early.",
+    "explanation": "<Be used to> + -ing form means being accustomed to something."
+  },
+  {
+    "question": "What does \"break new ground\" mean?",
+    "options": [
+      "To dig a hole",
+      "To do something innovative",
+      "To destroy something",
+      "To start farming"
+    ],
+    "correct": "To do something innovative",
+    "explanation": "<Break new ground> means to do something that has not been done before."
+  },
+  {
+    "question": "Choose the correct option: \"The results were poor. ______, the team decided to change their strategy.\"",
+    "options": [
+      "Consequently",
+      "Furthermore",
+      "In addition",
+      "Specifically"
+    ],
+    "correct": "Consequently",
+    "explanation": "<Consequently> shows a cause-and-effect relationship between two events."
+  },
+  {
+    "question": "Which phrasal verb means \"to investigate\"?",
+    "options": [
+      "Look into",
+      "Look after",
+      "Look up to",
+      "Look down on"
+    ],
+    "correct": "Look into",
+    "explanation": "<Look into> means to investigate or examine something carefully."
+  },
+  {
+    "question": "Complete: \"______ some experts disagree, the majority supports the new policy.\"",
+    "options": [
+      "While",
+      "Moreover",
+      "Therefore",
+      "Indeed"
+    ],
+    "correct": "While",
+    "explanation": "<While> introduces a contrasting viewpoint or situation."
+  },
+  {
+    "question": "What does \"cut corners\" mean in a professional context?",
+    "options": [
+      "To take shortcuts, often reducing quality",
+      "To reduce the size of something",
+      "To turn around a corner",
+      "To cut paper into shapes"
+    ],
+    "correct": "To take shortcuts, often reducing quality",
+    "explanation": "<Cut corners> means to do something in the easiest or cheapest way, often sacrificing quality."
+  },
+  {
+    "question": "Which connector signals a conclusion?",
+    "options": [
+      "In contrast",
+      "To sum up",
+      "Besides",
+      "Whereas"
+    ],
+    "correct": "To sum up",
+    "explanation": "<To sum up> signals a brief summary or conclusion of the main points."
+  },
+  {
+    "question": "Complete: \"He didn't ______ like spicy food, but now he loves it.\"",
+    "options": [
+      "use to",
+      "used to",
+      "get used to",
+      "be used to"
+    ],
+    "correct": "use to",
+    "explanation": "In the negative form with <didn't>, the correct form is <use to> (without d)."
+  },
+  {
+    "question": "What does \"dress down\" mean?",
+    "options": [
+      "To wear casual clothes",
+      "To put on a dress",
+      "To feel sad",
+      "To go downstairs"
+    ],
+    "correct": "To wear casual clothes",
+    "explanation": "<Dress down> means to wear informal or casual clothing."
+  },
+  {
+    "question": "Choose the correct connector: \"______, we need to focus on customer satisfaction.\"",
+    "options": [
+      "Specifically",
+      "Nevertheless",
+      "Although",
+      "Despite"
+    ],
+    "correct": "Specifically",
+    "explanation": "<Specifically> introduces precise details or a particular focus."
+  },
+  {
+    "question": "Which phrasal verb means \"to continue doing something despite difficulties\"?",
+    "options": [
+      "Carry on",
+      "Carry out",
+      "Carry away",
+      "Carry off"
+    ],
+    "correct": "Carry on",
+    "explanation": "<Carry on> means to continue doing something, especially despite difficulties."
+  },
+  {
+    "question": "What does \"owing to\" express?",
+    "options": [
+      "Cause or reason",
+      "Contrast",
+      "Addition",
+      "Emphasis"
+    ],
+    "correct": "Cause or reason",
+    "explanation": "<Owing to> indicates the reason or cause for something, similar to <due to>."
+  },
+  {
+    "question": "Complete: \"It took her a while to ______ the new work schedule.\"",
+    "options": [
+      "get used to",
+      "used to",
+      "use to",
+      "getting used to"
+    ],
+    "correct": "get used to",
+    "explanation": "<Get used to> + noun/gerund describes the process of becoming accustomed to something new."
+  },
+  {
+    "question": "What does \"hit the ground running\" mean?",
+    "options": [
+      "To start something with great energy and enthusiasm",
+      "To fall while running",
+      "To run very fast",
+      "To start exercising"
+    ],
+    "correct": "To start something with great energy and enthusiasm",
+    "explanation": "<Hit the ground running> means to begin a task or project with immediate effort and energy."
+  },
+  {
+    "question": "Which connector introduces an alternative viewpoint?",
+    "options": [
+      "On the other hand",
+      "In addition",
+      "Consequently",
+      "Indeed"
+    ],
+    "correct": "On the other hand",
+    "explanation": "<On the other hand> presents a contrasting or alternative perspective."
+  },
+  {
+    "question": "What does the phrasal verb \"figure out\" mean?",
+    "options": [
+      "To understand or solve something",
+      "To calculate a number",
+      "To draw a figure",
+      "To go outside"
+    ],
+    "correct": "To understand or solve something",
+    "explanation": "<Figure out> means to understand something or find the answer to a problem."
+  },
+  {
+    "question": "Choose the correct option: \"______ the evidence, the committee made their decision.\"",
+    "options": [
+      "Based on",
+      "However",
+      "Furthermore",
+      "Although"
+    ],
+    "correct": "Based on",
+    "explanation": "<Based on> indicates that something is founded on specific evidence or information."
+  },
+  {
+    "question": "What does \"make ends meet\" mean?",
+    "options": [
+      "To earn just enough money to live on",
+      "To finish a project",
+      "To meet new people",
+      "To reach the end of a road"
+    ],
+    "correct": "To earn just enough money to live on",
+    "explanation": "<Make ends meet> means to have just enough money to pay for basic necessities."
+  },
+  {
+    "question": "Which sentence correctly uses a contrast connector?",
+    "options": [
+      "The plan was risky. However, it succeeded.",
+      "The plan was risky. Furthermore, it succeeded.",
+      "The plan was risky. In addition, it succeeded.",
+      "The plan was risky. Specifically, it succeeded."
+    ],
+    "correct": "The plan was risky. However, it succeeded.",
+    "explanation": "<However> correctly introduces a contrasting outcome to the risky situation."
+  },
+  {
+    "question": "What does \"try on\" mean?",
+    "options": [
+      "To put on clothing to see if it fits",
+      "To attempt something",
+      "To turn on a device",
+      "To start a new job"
+    ],
+    "correct": "To put on clothing to see if it fits",
+    "explanation": "<Try on> means to put on a piece of clothing to check the fit or appearance."
+  },
+  {
+    "question": "Complete: \"______ budget constraints, the project was postponed.\"",
+    "options": [
+      "Due to",
+      "However",
+      "Furthermore",
+      "In contrast"
+    ],
+    "correct": "Due to",
+    "explanation": "<Due to> indicates the cause or reason for something happening."
+  },
+  {
+    "question": "What does \"once in a blue moon\" mean?",
+    "options": [
+      "Very rarely",
+      "Every night",
+      "During a full moon",
+      "When the sky is blue"
+    ],
+    "correct": "Very rarely",
+    "explanation": "<Once in a blue moon> means something happens very infrequently."
+  },
+  {
+    "question": "Which connector expresses certainty or emphasis?",
+    "options": [
+      "Undoubtedly",
+      "However",
+      "Although",
+      "Whereas"
+    ],
+    "correct": "Undoubtedly",
+    "explanation": "<Undoubtedly> expresses complete certainty about a statement."
+  },
+  {
+    "question": "What does \"pull strings\" mean?",
+    "options": [
+      "To use influence or connections to get something done",
+      "To play a musical instrument",
+      "To pull a rope",
+      "To untangle something"
+    ],
+    "correct": "To use influence or connections to get something done",
+    "explanation": "<Pull strings> means to use personal connections or influence to achieve something."
+  },
+  {
+    "question": "Complete: \"She ______ working night shifts, so it doesn't bother her anymore.\"",
+    "options": [
+      "is used to",
+      "used to",
+      "uses to",
+      "was use to"
+    ],
+    "correct": "is used to",
+    "explanation": "<Is used to> + -ing means she is already accustomed to working night shifts."
+  },
+  {
+    "question": "Which phrasal verb means \"to reject or refuse\"?",
+    "options": [
+      "Turn down",
+      "Turn up",
+      "Turn on",
+      "Turn over"
+    ],
+    "correct": "Turn down",
+    "explanation": "<Turn down> means to reject an offer, invitation, or request."
+  },
+  {
+    "question": "What does \"in the long run\" mean?",
+    "options": [
+      "Over a long period of time",
+      "During a marathon",
+      "In a hurry",
+      "At the end of a race"
+    ],
+    "correct": "Over a long period of time",
+    "explanation": "<In the long run> means considering a long period of time or the final result."
+  },
+  {
+    "question": "Choose the correct connector: \"The first option is expensive. ______, the second is more affordable.\"",
+    "options": [
+      "In contrast",
+      "In addition",
+      "Consequently",
+      "Indeed"
+    ],
+    "correct": "In contrast",
+    "explanation": "<In contrast> highlights differences between two things being compared."
+  },
+  {
+    "question": "What does \"state-of-the-art\" mean?",
+    "options": [
+      "Using the most modern technology",
+      "Related to art museums",
+      "In a state of confusion",
+      "Very old-fashioned"
+    ],
+    "correct": "Using the most modern technology",
+    "explanation": "<State-of-the-art> describes something that uses the newest and most advanced technology."
+  },
+  {
+    "question": "Which phrasal verb means \"to postpone\"?",
+    "options": [
+      "Put off",
+      "Put on",
+      "Put up",
+      "Put away"
+    ],
+    "correct": "Put off",
+    "explanation": "<Put off> means to delay or postpone something to a later time."
+  },
+  {
+    "question": "Complete: \"______, the research confirms that exercise improves mental health.\"",
+    "options": [
+      "In conclusion",
+      "In contrast",
+      "On the other hand",
+      "Whereas"
+    ],
+    "correct": "In conclusion",
+    "explanation": "<In conclusion> signals the final summary of arguments or findings."
+  },
+  {
+    "question": "What does \"win-win situation\" mean?",
+    "options": [
+      "A situation where everyone benefits",
+      "Winning twice in a row",
+      "A competitive game",
+      "A situation with no losers"
+    ],
+    "correct": "A situation where everyone benefits",
+    "explanation": "<Win-win situation> describes an outcome that is beneficial for all parties involved."
+  },
+  {
+    "question": "Which sentence uses \"get used to\" correctly?",
+    "options": [
+      "I'm slowly getting used to the cold weather.",
+      "I'm slowly getting used to cold weather is.",
+      "I'm slowly getting use to the cold weather.",
+      "I'm slowly get used to the cold weather."
+    ],
+    "correct": "I'm slowly getting used to the cold weather.",
+    "explanation": "<Getting used to> + noun/gerund shows the ongoing process of becoming accustomed to something."
+  }
+]

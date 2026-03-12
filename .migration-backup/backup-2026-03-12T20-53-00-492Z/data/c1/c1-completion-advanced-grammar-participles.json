@@ -1,0 +1,442 @@
+[
+  {
+    "sentence": "The report, _ by the committee, was published yesterday.",
+    "options": [
+      "written",
+      "wrote",
+      "writing",
+      "writes"
+    ],
+    "correct": "written",
+    "explanation": "Se usa un participio pasado (<written>) para crear una cláusula pasiva reducida que modifica al sustantivo <report>."
+  },
+  {
+    "sentence": "Having _ the book, he knew the movie's ending.",
+    "options": [
+      "read",
+      "reading",
+      "reads",
+      "had read"
+    ],
+    "correct": "read",
+    "explanation": "Se usa un participio perfecto (<Having read>) para indicar que una acción se completó antes que la otra."
+  },
+  {
+    "sentence": "All the tickets for the concert had already been _.",
+    "options": [
+      "selled",
+      "sale",
+      "sold",
+      "selling"
+    ],
+    "correct": "sold",
+    "explanation": "Se necesita el participio pasado del verbo <sell> (sold) para la voz pasiva en pluscuamperfecto (<had been sold>)."
+  },
+  {
+    "sentence": "I was very _ in the story he told.",
+    "options": [
+      "interesting",
+      "interested",
+      "interest",
+      "interests"
+    ],
+    "correct": "interested",
+    "explanation": "Se usa el participio pasado (-ed) para describir un sentimiento o emoción. <Interested> describe cómo me sentía."
+  },
+  {
+    "sentence": "The movie was so _, I fell asleep.",
+    "options": [
+      "bored",
+      "boring",
+      "bore",
+      "bores"
+    ],
+    "correct": "boring",
+    "explanation": "Se usa el participio presente (-ing) para describir la característica de algo o alguien que causa un sentimiento. La película era aburrida."
+  },
+  {
+    "sentence": "_ by the noise, the baby started to cry.",
+    "options": [
+      "Woken",
+      "Waking",
+      "Woke",
+      "Awake"
+    ],
+    "correct": "Woken",
+    "explanation": "Un participio pasado se usa al principio de una cláusula para indicar la razón (pasiva) de la acción principal."
+  },
+  {
+    "sentence": "The man _ the newspaper is my father.",
+    "options": [
+      "read",
+      "is reading",
+      "reading",
+      "reads"
+    ],
+    "correct": "reading",
+    "explanation": "Un participio presente se usa para reducir una cláusula adjetiva ('The man who is reading...')."
+  },
+  {
+    "sentence": "She felt _ after the long journey.",
+    "options": [
+      "exhausting",
+      "exhausted",
+      "exhausts",
+      "exhaust"
+    ],
+    "correct": "exhausted",
+    "explanation": "El participio pasado (-ed) se usa para describir cómo se siente una persona."
+  },
+  {
+    "sentence": "The results were _.",
+    "options": [
+      "disappointed",
+      "disappoints",
+      "disappointing",
+      "disappointment"
+    ],
+    "correct": "disappointing",
+    "explanation": "El participio presente (-ing) se usa para describir la cualidad de algo que causa un sentimiento."
+  },
+  {
+    "sentence": "Having _ his homework, he went out to play.",
+    "options": [
+      "finish",
+      "finished",
+      "finishing",
+      "was finishing"
+    ],
+    "correct": "finished",
+    "explanation": "El participio perfecto (<Having finished>) muestra que la primera acción se completó antes de la segunda."
+  },
+  {
+    "sentence": "The car, _ in Germany, is very reliable.",
+    "options": [
+      "making",
+      "made",
+      "is made",
+      "makes"
+    ],
+    "correct": "made",
+    "explanation": "Cláusula de participio pasado para dar más información sobre el sustantivo ('The car which was made...')."
+  },
+  {
+    "sentence": "I find this subject very _.",
+    "options": [
+      "confused",
+      "confusing",
+      "confuse",
+      "confusion"
+    ],
+    "correct": "confusing",
+    "explanation": "El participio presente (-ing) describe la característica que provoca el sentimiento de confusión."
+  },
+  {
+    "sentence": "The students _ for the exam felt nervous.",
+    "options": [
+      "study",
+      "studied",
+      "studying",
+      "were studying"
+    ],
+    "correct": "studying",
+    "explanation": "Cláusula de participio presente para modificar <students> ('The students who were studying...')."
+  },
+  {
+    "sentence": "The letter _ yesterday contained good news.",
+    "options": [
+      "receiving",
+      "received",
+      "was received",
+      "receive"
+    ],
+    "correct": "received",
+    "explanation": "Cláusula de participio pasado para modificar <letter> ('The letter that was received...')."
+  },
+  {
+    "sentence": "He was _ by the film's special effects.",
+    "options": [
+      "amazing",
+      "amazed",
+      "amaze",
+      "amazement"
+    ],
+    "correct": "amazed",
+    "explanation": "El participio pasado (-ed) describe la emoción o sentimiento de una persona."
+  },
+  {
+    "sentence": "The speech _ by the president was inspiring.",
+    "options": [
+      "giving",
+      "gave",
+      "given",
+      "was given"
+    ],
+    "correct": "given",
+    "explanation": "Cláusula de participio pasado en función adjetival ('The speech that was given...')."
+  },
+  {
+    "sentence": "Feeling _, she went to bed early.",
+    "options": [
+      "tired",
+      "tiring",
+      "tire",
+      "tires"
+    ],
+    "correct": "tired",
+    "explanation": "Una cláusula de participio presente al inicio de la oración para describir el estado del sujeto."
+  },
+  {
+    "sentence": "The problem, _ for hours, remained unsolved.",
+    "options": [
+      "discussing",
+      "discussed",
+      "was discussed",
+      "having discussed"
+    ],
+    "correct": "discussed",
+    "explanation": "Participio pasado para una cláusula pasiva reducida."
+  },
+  {
+    "sentence": "The _ child held his mother's hand.",
+    "options": [
+      "frightening",
+      "frightened",
+      "frighten",
+      "frightens"
+    ],
+    "correct": "frightened",
+    "explanation": "El participio pasado <frightened> funciona como un adjetivo para describir el estado del niño."
+  },
+  {
+    "sentence": "This is a very _ book.",
+    "options": [
+      "entertained",
+      "entertaining",
+      "entertain",
+      "entertainment"
+    ],
+    "correct": "entertaining",
+    "explanation": "El participio presente <entertaining> funciona como un adjetivo para describir la cualidad del libro."
+  },
+  {
+    "sentence": "The _ news left everyone shocked.",
+    "options": [
+      "shocking",
+      "shocked",
+      "shocks",
+      "shock"
+    ],
+    "correct": "shocking",
+    "explanation": "El participio presente (-ing) describe la cualidad de algo que causa un sentimiento."
+  },
+  {
+    "sentence": "He was _ by the sudden noise.",
+    "options": [
+      "startling",
+      "startled",
+      "startle",
+      "startles"
+    ],
+    "correct": "startled",
+    "explanation": "El participio pasado (-ed) describe un sentimiento o emoción."
+  },
+  {
+    "sentence": "The _ dog barked loudly.",
+    "options": [
+      "annoying",
+      "annoyed",
+      "annoys",
+      "annoy"
+    ],
+    "correct": "annoying",
+    "explanation": "El participio presente (-ing) describe la cualidad de algo que causa un sentimiento."
+  },
+  {
+    "sentence": "I felt very _ after the long flight.",
+    "options": [
+      "tiring",
+      "tired",
+      "tires",
+      "tire"
+    ],
+    "correct": "tired",
+    "explanation": "El participio pasado (-ed) describe un sentimiento o emoción."
+  },
+  {
+    "sentence": "The _ movie kept us on the edge of our seats.",
+    "options": [
+      "thrilling",
+      "thrilled",
+      "thrills",
+      "thrill"
+    ],
+    "correct": "thrilling",
+    "explanation": "El participio presente (-ing) describe la cualidad de algo que causa un sentimiento."
+  },
+  {
+    "sentence": "She was _ to hear the good news.",
+    "options": [
+      "pleasing",
+      "pleased",
+      "please",
+      "pleases"
+    ],
+    "correct": "pleased",
+    "explanation": "El participio pasado (-ed) describe un sentimiento o emoción."
+  },
+  {
+    "sentence": "The _ child wouldn't stop crying.",
+    "options": [
+      "irritating",
+      "irritated",
+      "irritates",
+      "irritate"
+    ],
+    "correct": "irritating",
+    "explanation": "El participio presente (-ing) describe la cualidad de algo que causa un sentimiento."
+  },
+  {
+    "sentence": "He was _ by the lack of progress.",
+    "options": [
+      "frustrating",
+      "frustrated",
+      "frustrates",
+      "frustrate"
+    ],
+    "correct": "frustrated",
+    "explanation": "El participio pasado (-ed) describe un sentimiento o emoción."
+  },
+  {
+    "sentence": "The _ journey took all day.",
+    "options": [
+      "exhausting",
+      "exhausted",
+      "exhausts",
+      "exhaust"
+    ],
+    "correct": "exhausting",
+    "explanation": "El participio presente (-ing) describe la cualidad de algo que causa un sentimiento."
+  },
+  {
+    "sentence": "I was _ to find my keys.",
+    "options": [
+      "relieving",
+      "relieved",
+      "relieves",
+      "relieve"
+    ],
+    "correct": "relieved",
+    "explanation": "El participio pasado (-ed) describe un sentimiento o emoción."
+  },
+  {
+    "sentence": "The _ results surprised everyone.",
+    "options": [
+      "astonishing",
+      "astonished",
+      "astonishes",
+      "astonish"
+    ],
+    "correct": "astonishing",
+    "explanation": "El participio presente (-ing) describe la cualidad de algo que causa un sentimiento."
+  },
+  {
+    "sentence": "She was _ by his rude behavior.",
+    "options": [
+      "offending",
+      "offended",
+      "offends",
+      "offend"
+    ],
+    "correct": "offended",
+    "explanation": "El participio pasado (-ed) describe un sentimiento o emoción."
+  },
+  {
+    "sentence": "The _ lecture put everyone to sleep.",
+    "options": [
+      "boring",
+      "bored",
+      "bores",
+      "bore"
+    ],
+    "correct": "boring",
+    "explanation": "El participio presente (-ing) describe la cualidad de algo que causa un sentimiento."
+  },
+  {
+    "sentence": "He was _ with his new toy.",
+    "options": [
+      "exciting",
+      "excited",
+      "excites",
+      "excite"
+    ],
+    "correct": "excited",
+    "explanation": "El participio pasado (-ed) describe un sentimiento o emoción."
+  },
+  {
+    "sentence": "The _ situation made them nervous.",
+    "options": [
+      "worrying",
+      "worried",
+      "worries",
+      "worry"
+    ],
+    "correct": "worrying",
+    "explanation": "El participio presente (-ing) describe la cualidad de algo que causa un sentimiento."
+  },
+  {
+    "sentence": "I was _ to see him again.",
+    "options": [
+      "surprising",
+      "surprised",
+      "surprises",
+      "surprise"
+    ],
+    "correct": "surprised",
+    "explanation": "El participio pasado (-ed) describe un sentimiento o emoción."
+  },
+  {
+    "sentence": "The _ news made her cry.",
+    "options": [
+      "depressing",
+      "depressed",
+      "depresses",
+      "depress"
+    ],
+    "correct": "depressing",
+    "explanation": "El participio presente (-ing) describe la cualidad de algo que causa un sentimiento."
+  },
+  {
+    "sentence": "He was _ by the beautiful scenery.",
+    "options": [
+      "captivating",
+      "captivated",
+      "captivates",
+      "captivate"
+    ],
+    "correct": "captivated",
+    "explanation": "El participio pasado (-ed) describe un sentimiento o emoción."
+  },
+  {
+    "sentence": "The _ story made me laugh.",
+    "options": [
+      "amusing",
+      "amused",
+      "amuses",
+      "amuse"
+    ],
+    "correct": "amusing",
+    "explanation": "El participio presente (-ing) describe la cualidad de algo que causa un sentimiento."
+  },
+  {
+    "sentence": "The _ child was playing in the park.",
+    "options": [
+      "laughing",
+      "laughed",
+      "laughs",
+      "laugh"
+    ],
+    "correct": "laughing",
+    "explanation": "El participio presente (-ing) describe una acción en curso."
+  }
+]

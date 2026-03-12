@@ -1,0 +1,282 @@
+[
+  {
+    "front": "Hello",
+    "back": "Hola",
+    "ipa": "/həˈloʊ/",
+    "example": "Hello, how are you?",
+    "example_es": "Hola, ¿cómo estás?"
+  },
+  {
+    "front": "Goodbye",
+    "back": "Adiós",
+    "ipa": "/ɡʊdˈbaɪ/",
+    "example": "Goodbye, see you later!",
+    "example_es": "Adiós, ¡nos vemos luego!"
+  },
+  {
+    "front": "Please",
+    "back": "Por favor",
+    "ipa": "/pliːz/",
+    "example": "Please help me.",
+    "example_es": "Por favor ayúdame."
+  },
+  {
+    "front": "Thank you",
+    "back": "Gracias",
+    "ipa": "/θæŋk juː/",
+    "example": "Thank you very much.",
+    "example_es": "Muchas gracias."
+  },
+  {
+    "front": "Yes",
+    "back": "Sí",
+    "ipa": "/jes/",
+    "example": "Yes, I understand.",
+    "example_es": "Sí, entiendo."
+  },
+  {
+    "front": "No",
+    "back": "No",
+    "ipa": "/noʊ/",
+    "example": "No, I don't want it.",
+    "example_es": "No, no lo quiero."
+  },
+  {
+    "front": "Water",
+    "back": "Agua",
+    "ipa": "/ˈwɔːtər/",
+    "example": "I need water.",
+    "example_es": "Necesito agua."
+  },
+  {
+    "front": "Food",
+    "back": "Comida",
+    "ipa": "/fuːd/",
+    "example": "The food is delicious.",
+    "example_es": "La comida está deliciosa."
+  },
+  {
+    "front": "House",
+    "back": "Casa",
+    "ipa": "/haʊs/",
+    "example": "This is my house.",
+    "example_es": "Esta es mi casa."
+  },
+  {
+    "front": "Car",
+    "back": "Coche",
+    "ipa": "/kɑːr/",
+    "example": "I have a red car.",
+    "example_es": "Tengo un coche rojo."
+  },
+  {
+    "front": "Book",
+    "back": "Libro",
+    "ipa": "/bʊk/",
+    "example": "I'm reading a book.",
+    "example_es": "Estoy leyendo un libro."
+  },
+  {
+    "front": "School",
+    "back": "Escuela",
+    "ipa": "/skuːl/",
+    "example": "I go to school every day.",
+    "example_es": "Voy a la escuela todos los días."
+  },
+  {
+    "front": "Work",
+    "back": "Trabajo",
+    "ipa": "/wɜːrk/",
+    "example": "I work in an office.",
+    "example_es": "Trabajo en una oficina."
+  },
+  {
+    "front": "Friend",
+    "back": "Amigo",
+    "ipa": "/frend/",
+    "example": "She is my best friend.",
+    "example_es": "Ella es mi mejor amiga."
+  },
+  {
+    "front": "Family",
+    "back": "Familia",
+    "ipa": "/ˈfæməli/",
+    "example": "I love my family.",
+    "example_es": "Amo a mi familia."
+  },
+  {
+    "front": "Mother",
+    "back": "Madre",
+    "ipa": "/ˈmʌðər/",
+    "example": "My mother is kind.",
+    "example_es": "Mi madre es amable."
+  },
+  {
+    "front": "Father",
+    "back": "Padre",
+    "ipa": "/ˈfɑːðər/",
+    "example": "My father works hard.",
+    "example_es": "Mi padre trabaja duro."
+  },
+  {
+    "front": "Dog",
+    "back": "Perro",
+    "ipa": "/dɔːɡ/",
+    "example": "I have a small dog.",
+    "example_es": "Tengo un perro pequeño."
+  },
+  {
+    "front": "Cat",
+    "back": "Gato",
+    "ipa": "/kæt/",
+    "example": "The cat is sleeping.",
+    "example_es": "El gato está durmiendo."
+  },
+  {
+    "front": "Big",
+    "back": "Grande",
+    "ipa": "/bɪɡ/",
+    "example": "This is a big house.",
+    "example_es": "Esta es una casa grande."
+  },
+  {
+    "front": "Small",
+    "back": "Pequeño",
+    "ipa": "/smɔːl/",
+    "example": "I have a small car.",
+    "example_es": "Tengo un coche pequeño."
+  },
+  {
+    "front": "Good",
+    "back": "Bueno",
+    "ipa": "/ɡʊd/",
+    "example": "This is good food.",
+    "example_es": "Esta es buena comida."
+  },
+  {
+    "front": "Bad",
+    "back": "Malo",
+    "ipa": "/bæd/",
+    "example": "The weather is bad today.",
+    "example_es": "El clima está malo hoy."
+  },
+  {
+    "front": "Happy",
+    "back": "Feliz",
+    "ipa": "/ˈhæpi/",
+    "example": "I am very happy.",
+    "example_es": "Estoy muy feliz."
+  },
+  {
+    "front": "Sad",
+    "back": "Triste",
+    "ipa": "/sæd/",
+    "example": "She looks sad today.",
+    "example_es": "Ella se ve triste hoy."
+  },
+  {
+    "front": "Hot",
+    "back": "Caliente",
+    "ipa": "/hɑːt/",
+    "example": "The coffee is hot.",
+    "example_es": "El café está caliente."
+  },
+  {
+    "front": "Cold",
+    "back": "Frío",
+    "ipa": "/koʊld/",
+    "example": "It's cold outside.",
+    "example_es": "Hace frío afuera."
+  },
+  {
+    "front": "Red",
+    "back": "Rojo",
+    "ipa": "/red/",
+    "example": "I like the red dress.",
+    "example_es": "Me gusta el vestido rojo."
+  },
+  {
+    "front": "Blue",
+    "back": "Azul",
+    "ipa": "/bluː/",
+    "example": "The sky is blue.",
+    "example_es": "El cielo es azul."
+  },
+  {
+    "front": "Green",
+    "back": "Verde",
+    "ipa": "/ɡriːn/",
+    "example": "The grass is green.",
+    "example_es": "La hierba es verde."
+  },
+  {
+    "front": "White",
+    "back": "Blanco",
+    "ipa": "/waɪt/",
+    "example": "She wears a white shirt.",
+    "example_es": "Ella usa una camisa blanca."
+  },
+  {
+    "front": "Black",
+    "back": "Negro",
+    "ipa": "/blæk/",
+    "example": "I have black shoes.",
+    "example_es": "Tengo zapatos negros."
+  },
+  {
+    "front": "Money",
+    "back": "Dinero",
+    "ipa": "/ˈmʌni/",
+    "example": "I need money to buy food.",
+    "example_es": "Necesito dinero para comprar comida."
+  },
+  {
+    "front": "Time",
+    "back": "Tiempo",
+    "ipa": "/taɪm/",
+    "example": "What time is it?",
+    "example_es": "¿Qué hora es?"
+  },
+  {
+    "front": "Day",
+    "back": "Día",
+    "ipa": "/deɪ/",
+    "example": "Today is a beautiful day.",
+    "example_es": "Hoy es un día hermoso."
+  },
+  {
+    "front": "Night",
+    "back": "Noche",
+    "ipa": "/naɪt/",
+    "example": "Good night, sleep well.",
+    "example_es": "Buenas noches, que duermas bien."
+  },
+  {
+    "front": "Morning",
+    "back": "Mañana",
+    "ipa": "/ˈmɔːrnɪŋ/",
+    "example": "Good morning! How are you?",
+    "example_es": "¡Buenos días! ¿Cómo estás?"
+  },
+  {
+    "front": "Afternoon",
+    "back": "Tarde",
+    "ipa": "/ˌæftərˈnuːn/",
+    "example": "See you this afternoon.",
+    "example_es": "Te veo esta tarde."
+  },
+  {
+    "front": "Name",
+    "back": "Nombre",
+    "ipa": "/neɪm/",
+    "example": "What is your name?",
+    "example_es": "¿Cuál es tu nombre?"
+  },
+  {
+    "front": "Help",
+    "back": "Ayuda",
+    "ipa": "/help/",
+    "example": "Can you help me?",
+    "example_es": "¿Puedes ayudarme?"
+  }
+]

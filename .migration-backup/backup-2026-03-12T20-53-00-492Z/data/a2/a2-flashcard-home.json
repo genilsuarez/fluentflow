@@ -1,0 +1,282 @@
+[
+  {
+    "front": "kitchen",
+    "back": "cocina",
+    "ipa": "/ˈkɪtʃən/",
+    "example": "I cook dinner in the kitchen.",
+    "example_es": "Cocino la cena en la cocina."
+  },
+  {
+    "front": "bedroom",
+    "back": "dormitorio",
+    "ipa": "/ˈbɛdrum/",
+    "example": "My bedroom is upstairs.",
+    "example_es": "Mi dormitorio está arriba."
+  },
+  {
+    "front": "bathroom",
+    "back": "baño",
+    "ipa": "/ˈbæθrum/",
+    "example": "The bathroom is next to the kitchen.",
+    "example_es": "El baño está al lado de la cocina."
+  },
+  {
+    "front": "living room",
+    "back": "sala de estar",
+    "ipa": "/ˈlɪvɪŋ rum/",
+    "example": "We watch TV in the living room.",
+    "example_es": "Vemos televisión en la sala de estar."
+  },
+  {
+    "front": "dining room",
+    "back": "comedor",
+    "ipa": "/ˈdaɪnɪŋ rum/",
+    "example": "We eat dinner in the dining room.",
+    "example_es": "Cenamos en el comedor."
+  },
+  {
+    "front": "garage",
+    "back": "garaje",
+    "ipa": "/ɡəˈrɑʒ/",
+    "example": "The car is in the garage.",
+    "example_es": "El coche está en el garaje."
+  },
+  {
+    "front": "garden",
+    "back": "jardín",
+    "ipa": "/ˈɡɑrdən/",
+    "example": "We have flowers in our garden.",
+    "example_es": "Tenemos flores en nuestro jardín."
+  },
+  {
+    "front": "basement",
+    "back": "sótano",
+    "ipa": "/ˈbeɪsmənt/",
+    "example": "The basement is very cold.",
+    "example_es": "El sótano está muy frío."
+  },
+  {
+    "front": "attic",
+    "back": "ático",
+    "ipa": "/ˈætɪk/",
+    "example": "We store old things in the attic.",
+    "example_es": "Guardamos cosas viejas en el ático."
+  },
+  {
+    "front": "balcony",
+    "back": "balcón",
+    "ipa": "/ˈbælkəni/",
+    "example": "I like to sit on the balcony.",
+    "example_es": "Me gusta sentarme en el balcón."
+  },
+  {
+    "front": "stairs",
+    "back": "escaleras",
+    "ipa": "/stɛrz/",
+    "example": "Be careful on the stairs.",
+    "example_es": "Ten cuidado en las escaleras."
+  },
+  {
+    "front": "door",
+    "back": "puerta",
+    "ipa": "/dɔr/",
+    "example": "Please close the door.",
+    "example_es": "Por favor cierra la puerta."
+  },
+  {
+    "front": "window",
+    "back": "ventana",
+    "ipa": "/ˈwɪndoʊ/",
+    "example": "Open the window for fresh air.",
+    "example_es": "Abre la ventana para aire fresco."
+  },
+  {
+    "front": "roof",
+    "back": "techo",
+    "ipa": "/ruf/",
+    "example": "The roof needs repair.",
+    "example_es": "El techo necesita reparación."
+  },
+  {
+    "front": "wall",
+    "back": "pared",
+    "ipa": "/wɔl/",
+    "example": "The wall is painted blue.",
+    "example_es": "La pared está pintada de azul."
+  },
+  {
+    "front": "floor",
+    "back": "suelo/piso",
+    "ipa": "/flɔr/",
+    "example": "The floor is made of wood.",
+    "example_es": "El suelo es de madera."
+  },
+  {
+    "front": "ceiling",
+    "back": "techo interior",
+    "ipa": "/ˈsilɪŋ/",
+    "example": "There's a fan on the ceiling.",
+    "example_es": "Hay un ventilador en el techo."
+  },
+  {
+    "front": "furniture",
+    "back": "muebles",
+    "ipa": "/ˈfɜrnɪtʃər/",
+    "example": "We bought new furniture.",
+    "example_es": "Compramos muebles nuevos."
+  },
+  {
+    "front": "sofa",
+    "back": "sofá",
+    "ipa": "/ˈsoʊfə/",
+    "example": "The sofa is very comfortable.",
+    "example_es": "El sofá es muy cómodo."
+  },
+  {
+    "front": "chair",
+    "back": "silla",
+    "ipa": "/tʃɛr/",
+    "example": "Please sit on this chair.",
+    "example_es": "Por favor siéntate en esta silla."
+  },
+  {
+    "front": "table",
+    "back": "mesa",
+    "ipa": "/ˈteɪbəl/",
+    "example": "The table is in the dining room.",
+    "example_es": "La mesa está en el comedor."
+  },
+  {
+    "front": "bed",
+    "back": "cama",
+    "ipa": "/bɛd/",
+    "example": "I sleep in my bed.",
+    "example_es": "Duermo en mi cama."
+  },
+  {
+    "front": "closet",
+    "back": "armario",
+    "ipa": "/ˈklɑzət/",
+    "example": "My clothes are in the closet.",
+    "example_es": "Mi ropa está en el armario."
+  },
+  {
+    "front": "refrigerator",
+    "back": "refrigerador",
+    "ipa": "/rɪˈfrɪdʒəˌreɪtər/",
+    "example": "The milk is in the refrigerator.",
+    "example_es": "La leche está en el refrigerador."
+  },
+  {
+    "front": "stove",
+    "back": "estufa",
+    "ipa": "/stoʊv/",
+    "example": "I cook on the stove.",
+    "example_es": "Cocino en la estufa."
+  },
+  {
+    "front": "oven",
+    "back": "horno",
+    "ipa": "/ˈʌvən/",
+    "example": "The cake is in the oven.",
+    "example_es": "El pastel está en el horno."
+  },
+  {
+    "front": "sink",
+    "back": "fregadero",
+    "ipa": "/sɪŋk/",
+    "example": "Wash the dishes in the sink.",
+    "example_es": "Lava los platos en el fregadero."
+  },
+  {
+    "front": "shower",
+    "back": "ducha",
+    "ipa": "/ˈʃaʊər/",
+    "example": "I take a shower every morning.",
+    "example_es": "Me ducho todas las mañanas."
+  },
+  {
+    "front": "bathtub",
+    "back": "bañera",
+    "ipa": "/ˈbæθˌtʌb/",
+    "example": "The children play in the bathtub.",
+    "example_es": "Los niños juegan en la bañera."
+  },
+  {
+    "front": "mirror",
+    "back": "espejo",
+    "ipa": "/ˈmɪrər/",
+    "example": "I look at myself in the mirror.",
+    "example_es": "Me miro en el espejo."
+  },
+  {
+    "front": "lamp",
+    "back": "lámpara",
+    "ipa": "/læmp/",
+    "example": "Turn on the lamp, please.",
+    "example_es": "Enciende la lámpara, por favor."
+  },
+  {
+    "front": "curtains",
+    "back": "cortinas",
+    "ipa": "/ˈkɜrtənz/",
+    "example": "The curtains are blue.",
+    "example_es": "Las cortinas son azules."
+  },
+  {
+    "front": "carpet",
+    "back": "alfombra",
+    "ipa": "/ˈkɑrpət/",
+    "example": "There's a carpet in the living room.",
+    "example_es": "Hay una alfombra en la sala de estar."
+  },
+  {
+    "front": "television",
+    "back": "televisión",
+    "ipa": "/ˈtɛləˌvɪʒən/",
+    "example": "We watch television after dinner.",
+    "example_es": "Vemos televisión después de cenar."
+  },
+  {
+    "front": "telephone",
+    "back": "teléfono",
+    "ipa": "/ˈtɛləˌfoʊn/",
+    "example": "The telephone is ringing.",
+    "example_es": "El teléfono está sonando."
+  },
+  {
+    "front": "air conditioning",
+    "back": "aire acondicionado",
+    "ipa": "/ɛr kənˈdɪʃənɪŋ/",
+    "example": "Turn on the air conditioning.",
+    "example_es": "Enciende el aire acondicionado."
+  },
+  {
+    "front": "heating",
+    "back": "calefacción",
+    "ipa": "/ˈhitɪŋ/",
+    "example": "The heating is not working.",
+    "example_es": "La calefacción no funciona."
+  },
+  {
+    "front": "electricity",
+    "back": "electricidad",
+    "ipa": "/ɪˌlɛkˈtrɪsəti/",
+    "example": "We have no electricity today.",
+    "example_es": "No tenemos electricidad hoy."
+  },
+  {
+    "front": "plumbing",
+    "back": "fontanería",
+    "ipa": "/ˈplʌmɪŋ/",
+    "example": "The plumbing needs to be fixed.",
+    "example_es": "La fontanería necesita ser reparada."
+  },
+  {
+    "front": "key",
+    "back": "llave",
+    "ipa": "/ki/",
+    "example": "I lost my house key.",
+    "example_es": "Perdí la llave de mi casa."
+  }
+]

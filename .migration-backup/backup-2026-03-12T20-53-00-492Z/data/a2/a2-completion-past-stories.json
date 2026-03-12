@@ -1,0 +1,242 @@
+[
+  {
+    "sentence": "Yesterday I ______ to the store.",
+    "correct": "went",
+    "explanation": "Use <went> (past tense of <go>) for completed actions in the past",
+    "tip": "Complete with the past tense of <go>"
+  },
+  {
+    "sentence": "She ______ her homework last night.",
+    "correct": "did",
+    "explanation": "Use <did> (past tense of <do>) for completed actions",
+    "tip": "Complete with the past tense of <do>"
+  },
+  {
+    "sentence": "We ______ pizza for dinner.",
+    "correct": "ate",
+    "explanation": "Use <ate> (past tense of <eat>) for completed actions",
+    "tip": "Complete with the past tense of <eat>"
+  },
+  {
+    "sentence": "He ______ a movie yesterday.",
+    "correct": "watched",
+    "explanation": "Use <watched> (past tense of <watch>) - regular verb adds -ed",
+    "tip": "Complete with the past tense of <watch>"
+  },
+  {
+    "sentence": "They ______ to music all evening.",
+    "correct": "listened",
+    "explanation": "Use <listened> (past tense of <listen>) - regular verb adds -ed",
+    "tip": "Complete with the past tense of <listen>"
+  },
+  {
+    "sentence": "I ______ my friend on the phone.",
+    "correct": "called",
+    "explanation": "Use <called> (past tense of <call>) - regular verb adds -ed",
+    "tip": "Complete with the past tense of <call>"
+  },
+  {
+    "sentence": "She ______ a beautiful dress.",
+    "correct": "wore",
+    "explanation": "Use <wore> (past tense of <wear>) - irregular verb",
+    "tip": "Complete with the past tense of <wear>"
+  },
+  {
+    "sentence": "We ______ at the beach all day.",
+    "correct": "played",
+    "explanation": "Use <played> (past tense of <play>) - regular verb adds -ed",
+    "tip": "Complete with the past tense of <play>"
+  },
+  {
+    "sentence": "He ______ his car to work.",
+    "correct": "drove",
+    "explanation": "Use <drove> (past tense of <drive>) - irregular verb",
+    "tip": "Complete with the past tense of <drive>"
+  },
+  {
+    "sentence": "I ______ eight hours last night.",
+    "correct": "slept",
+    "explanation": "Use <slept> (past tense of <sleep>) - irregular verb",
+    "tip": "Complete with the past tense of <sleep>"
+  },
+  {
+    "sentence": "She ______ a letter to her grandmother.",
+    "correct": "wrote",
+    "explanation": "Use <wrote> (past tense of <write>) - irregular verb",
+    "tip": "Complete with the past tense of <write>"
+  },
+  {
+    "sentence": "We ______ our house last summer.",
+    "correct": "painted",
+    "explanation": "Use <painted> (past tense of <paint>) - regular verb adds -ed",
+    "tip": "Complete with the past tense of <paint>"
+  },
+  {
+    "sentence": "He ______ his keys in the car.",
+    "correct": "left",
+    "explanation": "Use <left> (past tense of <leave>) - irregular verb",
+    "tip": "Complete with the past tense of <leave>"
+  },
+  {
+    "sentence": "They ______ a new apartment.",
+    "correct": "found",
+    "explanation": "Use <found> (past tense of <find>) - irregular verb",
+    "tip": "Complete with the past tense of <find>"
+  },
+  {
+    "sentence": "I ______ my grandmother last weekend.",
+    "correct": "visited",
+    "explanation": "Use <visited> (past tense of <visit>) - regular verb adds -ed",
+    "tip": "Complete with the past tense of <visit>"
+  },
+  {
+    "sentence": "She ______ a cake for the party.",
+    "correct": "made",
+    "explanation": "Use <made> (past tense of <make>) - irregular verb",
+    "tip": "Complete with the past tense of <make>"
+  },
+  {
+    "sentence": "We ______ to the park after lunch.",
+    "correct": "walked",
+    "explanation": "Use <walked> (past tense of <walk>) - regular verb adds -ed",
+    "tip": "Complete with the past tense of <walk>"
+  },
+  {
+    "sentence": "He ______ his bicycle to school.",
+    "correct": "rode",
+    "explanation": "Use <rode> (past tense of <ride>) - irregular verb",
+    "tip": "Complete with the past tense of <ride>"
+  },
+  {
+    "sentence": "I ______ a book before bed.",
+    "correct": "read",
+    "explanation": "Use <read> (past tense of <read>) - same spelling, different pronunciation",
+    "tip": "Complete with the past tense of <read>"
+  },
+  {
+    "sentence": "She ______ her room yesterday.",
+    "correct": "cleaned",
+    "explanation": "Use <cleaned> (past tense of <clean>) - regular verb adds -ed",
+    "tip": "Complete with the past tense of <clean>"
+  },
+  {
+    "sentence": "We ______ our vacation photos.",
+    "correct": "looked",
+    "explanation": "Use <looked> (past tense of <look>) - regular verb adds -ed",
+    "tip": "Complete with the past tense of <look>"
+  },
+  {
+    "sentence": "He ______ his coffee too quickly.",
+    "correct": "drank",
+    "explanation": "Use <drank> (past tense of <drink>) - irregular verb",
+    "tip": "Complete with the past tense of <drink>"
+  },
+  {
+    "sentence": "They ______ at the restaurant.",
+    "correct": "met",
+    "explanation": "Use <met> (past tense of <meet>) - irregular verb",
+    "tip": "Complete with the past tense of <meet>"
+  },
+  {
+    "sentence": "I ______ my wallet at home.",
+    "correct": "forgot",
+    "explanation": "Use <forgot> (past tense of <forget>) - irregular verb",
+    "tip": "Complete with the past tense of <forget>"
+  },
+  {
+    "sentence": "She ______ the door behind her.",
+    "correct": "closed",
+    "explanation": "Use <closed> (past tense of <close>) - regular verb adds -ed",
+    "tip": "Complete with the past tense of <close>"
+  },
+  {
+    "sentence": "We ______ the game last night.",
+    "correct": "won",
+    "explanation": "Use <won> (past tense of <win>) - irregular verb",
+    "tip": "Complete with the past tense of <win>"
+  },
+  {
+    "sentence": "He ______ his lunch at work.",
+    "correct": "brought",
+    "explanation": "Use <brought> (past tense of <bring>) - irregular verb",
+    "tip": "Complete with the past tense of <bring>"
+  },
+  {
+    "sentence": "I ______ a new shirt yesterday.",
+    "correct": "bought",
+    "explanation": "Use <bought> (past tense of <buy>) - irregular verb",
+    "tip": "Complete with the past tense of <buy>"
+  },
+  {
+    "sentence": "She ______ her dog in the park.",
+    "correct": "walked",
+    "explanation": "Use <walked> (past tense of <walk>) - regular verb adds -ed",
+    "tip": "Complete with the past tense of <walk>"
+  },
+  {
+    "sentence": "We ______ the museum last Saturday.",
+    "correct": "visited",
+    "explanation": "Use <visited> (past tense of <visit>) - regular verb adds -ed",
+    "tip": "Complete with the past tense of <visit>"
+  },
+  {
+    "sentence": "He ______ his homework after dinner.",
+    "correct": "finished",
+    "explanation": "Use <finished> (past tense of <finish>) - regular verb adds -ed",
+    "tip": "Complete with the past tense of <finish>"
+  },
+  {
+    "sentence": "They ______ to a new city.",
+    "correct": "moved",
+    "explanation": "Use <moved> (past tense of <move>) - regular verb adds -ed",
+    "tip": "Complete with the past tense of <move>"
+  },
+  {
+    "sentence": "I ______ my favorite song.",
+    "correct": "sang",
+    "explanation": "Use <sang> (past tense of <sing>) - irregular verb",
+    "tip": "Complete with the past tense of <sing>"
+  },
+  {
+    "sentence": "She ______ the window to let air in.",
+    "correct": "opened",
+    "explanation": "Use <opened> (past tense of <open>) - regular verb adds -ed",
+    "tip": "Complete with the past tense of <open>"
+  },
+  {
+    "sentence": "We ______ our friends at the party.",
+    "correct": "saw",
+    "explanation": "Use <saw> (past tense of <see>) - irregular verb",
+    "tip": "Complete with the past tense of <see>"
+  },
+  {
+    "sentence": "He ______ his mother a gift.",
+    "correct": "gave",
+    "explanation": "Use <gave> (past tense of <give>) - irregular verb",
+    "tip": "Complete with the past tense of <give>"
+  },
+  {
+    "sentence": "I ______ about my vacation.",
+    "correct": "thought",
+    "explanation": "Use <thought> (past tense of <think>) - irregular verb",
+    "tip": "Complete with the past tense of <think>"
+  },
+  {
+    "sentence": "She ______ her hair before the party.",
+    "correct": "washed",
+    "explanation": "Use <washed> (past tense of <wash>) - regular verb adds -ed",
+    "tip": "Complete with the past tense of <wash>"
+  },
+  {
+    "sentence": "We ______ early this morning.",
+    "correct": "woke",
+    "explanation": "Use <woke> (past tense of <wake>) - irregular verb",
+    "tip": "Complete with the past tense of <wake>"
+  },
+  {
+    "sentence": "He ______ his jacket on the chair.",
+    "correct": "put",
+    "explanation": "Use <put> (past tense of <put>) - same form as present",
+    "tip": "Complete with the past tense of <put>"
+  }
+]

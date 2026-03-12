@@ -1,0 +1,104 @@
+{
+  "learningSettings": {
+    "categories": [
+      "Vocabulary",
+      "Grammar",
+      "PhrasalVerbs",
+      "Idioms",
+      "Reading",
+      "Review"
+    ],
+    "levels": [
+      {
+        "code": "a1",
+        "name": "Beginner",
+        "description": "Basic everyday expressions and vocabulary",
+        "color": "#4CAF50"
+      },
+      {
+        "code": "a2",
+        "name": "Elementary",
+        "description": "Simple phrases and familiar topics",
+        "color": "#8BC34A"
+      },
+      {
+        "code": "b1",
+        "name": "Intermediate",
+        "description": "Clear standard input on familiar matters",
+        "color": "#FFC107"
+      },
+      {
+        "code": "b2",
+        "name": "Upper Intermediate",
+        "description": "Complex text and abstract topics",
+        "color": "#FF9800"
+      },
+      {
+        "code": "c1",
+        "name": "Advanced",
+        "description": "Wide range of demanding texts",
+        "color": "#FF5722"
+      },
+      {
+        "code": "c2",
+        "name": "Proficient",
+        "description": "Virtually everything heard or read",
+        "color": "#F44336"
+      }
+    ],
+    "units": [
+      {
+        "id": 1,
+        "name": "Foundation",
+        "description": "Essential basics for beginners",
+        "targetLevel": [
+          "a1"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Building Blocks",
+        "description": "Expanding vocabulary and grammar",
+        "targetLevel": [
+          "a2"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Communication",
+        "description": "Practical communication skills",
+        "targetLevel": [
+          "b1"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Fluency",
+        "description": "Natural and fluent expression",
+        "targetLevel": [
+          "b2"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Proficiency",
+        "description": "Advanced language skills",
+        "targetLevel": [
+          "c1"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Mastery",
+        "description": "Near-native proficiency",
+        "targetLevel": [
+          "c2"
+        ]
+      }
+    ]
+  },
+  "progressTracking": {
+    "enabled": true,
+    "adaptiveLearning": true
+  }
+}

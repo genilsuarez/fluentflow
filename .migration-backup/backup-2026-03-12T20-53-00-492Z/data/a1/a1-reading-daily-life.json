@@ -1,0 +1,115 @@
+{
+  "title": "Daily Life and Routines",
+  "estimatedReadingTime": 8,
+  "learningObjectives": [
+    "Learn vocabulary for daily activities and routines",
+    "Understand how to talk about time and schedules",
+    "Practice describing your typical day",
+    "Recognize common household and personal care vocabulary"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "title": "Talking About Your Day",
+      "type": "introduction",
+      "content": "Every day we do many activities: we wake up, eat, work, and sleep. Learning to talk about your daily routine in English is very useful. You can tell people about your day, make plans, and understand others' schedules. This lesson teaches you the words and phrases you need for everyday life."
+    },
+    {
+      "id": "morning-routine",
+      "title": "Morning Activities",
+      "type": "theory",
+      "content": "Most people start their day in the morning. First, you \"wake up\" and \"get up\" from bed. Then you \"take a shower\" or \"wash your face\". You \"brush your teeth\" and \"get dressed\". Many people \"have breakfast\" before they \"go to work\" or \"go to school\". Common breakfast foods are cereal, toast, eggs, and coffee."
+    },
+    {
+      "id": "daily-activities",
+      "title": "Throughout the Day",
+      "type": "theory",
+      "content": "During the day, people do different activities. You might \"work\" in an office, \"study\" at school, or \"take care of\" children at home. At lunchtime, you \"have lunch\" or \"eat lunch\". In the afternoon, you might \"run errands\" (do tasks like shopping), \"exercise\" at the gym, or \"meet friends\" for coffee. We use time expressions like \"in the morning\", \"in the afternoon\", and \"in the evening\"."
+    },
+    {
+      "id": "evening-routine",
+      "title": "Evening and Night",
+      "type": "theory",
+      "content": "In the evening, many people \"come home\" from work, \"cook dinner\" or \"have dinner\" with family. After dinner, you might \"watch TV\", \"read a book\", \"do homework\", or \"relax\". Before bed, you \"brush your teeth\" again and \"go to bed\". Most people \"go to sleep\" between 10 PM and midnight. A good night's sleep is important!"
+    },
+    {
+      "id": "examples",
+      "title": "Describing Your Routine",
+      "type": "examples",
+      "content": "Example 1: MORNING ROUTINE - \"I wake up at 7 AM, take a shower, and have breakfast.\"\n\nExample 2: WORK SCHEDULE - \"I have lunch at 1 PM and work until 5 PM.\"\n\nExample 3: EVENING ACTIVITIES - \"I come home at 6 PM, cook dinner, and watch TV.\"\n\nExample 4: WEEKEND PLANS - \"On Saturday, I sleep late and meet my friends for lunch.\""
+    },
+    {
+      "id": "summary",
+      "title": "Daily Life Summary",
+      "type": "summary",
+      "content": "Everyone has a daily routine. Use simple present tense to describe regular activities: \"I wake up\", \"I go to work\", \"I have dinner\". Use time expressions to say when: \"at 7 AM\", \"in the morning\", \"after work\". Practice talking about your routine every day. This will help you become more comfortable with English!"
+    }
+  ],
+  "keyVocabulary": [
+    {
+      "term": "wake up",
+      "definition": "To stop sleeping and become conscious",
+      "example": "I wake up at 6:30 every morning.",
+      "pronunciation": "/weɪk ʌp/"
+    },
+    {
+      "term": "get dressed",
+      "definition": "To put on clothes",
+      "example": "I get dressed after I take a shower.",
+      "pronunciation": "/ɡet drest/"
+    },
+    {
+      "term": "have breakfast",
+      "definition": "To eat the first meal of the day",
+      "example": "I have breakfast at 7 AM.",
+      "pronunciation": "/hæv ˈbrekfəst/"
+    },
+    {
+      "term": "go to work",
+      "definition": "To travel to your job",
+      "example": "I go to work by bus.",
+      "pronunciation": "/ɡoʊ tə wɜːrk/"
+    },
+    {
+      "term": "come home",
+      "definition": "To return to your house",
+      "example": "I come home at 6 PM.",
+      "pronunciation": "/kʌm hoʊm/"
+    },
+    {
+      "term": "go to bed",
+      "definition": "To lie down to sleep",
+      "example": "I go to bed at 10:30 PM.",
+      "pronunciation": "/ɡoʊ tə bed/"
+    }
+  ],
+  "grammarPoints": [
+    {
+      "rule": "Simple Present for Routines",
+      "explanation": "Use simple present tense to talk about things you do regularly. Add \"s\" or \"es\" for he/she/it.",
+      "examples": [
+        "I wake up at 7 AM every day.",
+        "She goes to work by car.",
+        "We have dinner at 7 PM.",
+        "He watches TV in the evening."
+      ],
+      "commonMistakes": [
+        "Forgetting to add \"s\" for he/she/it: \"He wake up\" ❌ → \"He wakes up\" ✓",
+        "Using present continuous for routines: \"I am going to work every day\" ❌"
+      ]
+    },
+    {
+      "rule": "Time Expressions",
+      "explanation": "Use \"at\" for specific times, \"in\" for parts of the day, and \"on\" for days.",
+      "examples": [
+        "at 7 AM, at noon, at midnight",
+        "in the morning, in the afternoon, in the evening",
+        "on Monday, on weekends, on Saturday morning"
+      ],
+      "commonMistakes": [
+        "Using wrong preposition: \"in 7 AM\" ❌ → \"at 7 AM\" ✓",
+        "Saying \"in the night\" ❌ → \"at night\" ✓"
+      ]
+    }
+  ]
+}

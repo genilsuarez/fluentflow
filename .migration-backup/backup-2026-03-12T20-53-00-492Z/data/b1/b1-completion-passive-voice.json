@@ -1,0 +1,152 @@
+[
+  {
+    "sentence": "English ______ spoken in many countries around the world.",
+    "correct": "is",
+    "explanation": "Present simple passive: <is/are> + past participle. The subject receives the action.",
+    "tip": "English receives the action of being spoken — what form of 'be' fits?"
+  },
+  {
+    "sentence": "The Mona Lisa ______ painted by Leonardo da Vinci.",
+    "correct": "was",
+    "explanation": "Past simple passive: <was/were> + past participle for completed past actions.",
+    "tip": "Leonardo painted it centuries ago — what past form of 'be' fits?"
+  },
+  {
+    "sentence": "These cars ______ made in Germany.",
+    "correct": "are",
+    "explanation": "Present simple passive: <are> + past participle for plural subjects.",
+    "tip": "The cars (plural) receive the action of being made — present passive."
+  },
+  {
+    "sentence": "The letter ______ sent yesterday morning.",
+    "correct": "was",
+    "explanation": "Past simple passive: <was> + past participle. 'Yesterday' tells us it's past.",
+    "tip": "'Yesterday' signals past tense — what past form of 'be' completes the passive?"
+  },
+  {
+    "sentence": "Coffee ______ grown in Brazil and Colombia.",
+    "correct": "is",
+    "explanation": "Present simple passive: <is> + past participle for general facts.",
+    "tip": "This is a general fact about coffee production — present passive."
+  },
+  {
+    "sentence": "The windows ______ broken during the storm last night.",
+    "correct": "were",
+    "explanation": "Past simple passive: <were> + past participle for plural subjects in the past.",
+    "tip": "The windows (plural) were affected last night — past passive."
+  },
+  {
+    "sentence": "This bridge ______ built in 1890.",
+    "correct": "was",
+    "explanation": "Past simple passive: <was> + past participle with a specific past date.",
+    "tip": "1890 is a specific past date — what form of 'be' makes this passive?"
+  },
+  {
+    "sentence": "Millions of emails ______ sent every day.",
+    "correct": "are",
+    "explanation": "Present simple passive: <are> + past participle for habitual/regular actions.",
+    "tip": "'Every day' signals a regular action — present passive with plural subject."
+  },
+  {
+    "sentence": "The homework must ______ finished before Friday.",
+    "correct": "be",
+    "explanation": "Modal passive: modal + <be> + past participle. After modals, use base form <be>.",
+    "tip": "After 'must', what base form of 'be' completes the passive structure?"
+  },
+  {
+    "sentence": "The new hospital ______ opened by the mayor last month.",
+    "correct": "was",
+    "explanation": "Past simple passive: <was> + past participle. 'Last month' confirms past tense.",
+    "tip": "The mayor opened it last month — past passive."
+  },
+  {
+    "sentence": "Spanish ______ taught in most American schools.",
+    "correct": "is",
+    "explanation": "Present simple passive: <is> + past participle for a general fact.",
+    "tip": "This describes a current general situation — present passive."
+  },
+  {
+    "sentence": "The thief ______ caught by the police two hours later.",
+    "correct": "was",
+    "explanation": "Past simple passive: <was> + past participle for a completed past event.",
+    "tip": "The police caught the thief in the past — past passive."
+  },
+  {
+    "sentence": "These products ______ not tested on animals.",
+    "correct": "are",
+    "explanation": "Present simple passive negative: <are> + not + past participle.",
+    "tip": "This is a current policy about the products (plural) — present passive."
+  },
+  {
+    "sentence": "The meeting ______ cancelled because of the bad weather.",
+    "correct": "was",
+    "explanation": "Past simple passive: <was> + past participle for a past event.",
+    "tip": "The meeting was affected by past weather — past passive."
+  },
+  {
+    "sentence": "Rice ______ eaten as a main food in many Asian countries.",
+    "correct": "is",
+    "explanation": "Present simple passive: <is> + past participle for general cultural facts.",
+    "tip": "This is a general fact about eating habits — present passive."
+  },
+  {
+    "sentence": "The pyramids ______ built thousands of years ago.",
+    "correct": "were",
+    "explanation": "Past simple passive: <were> + past participle for plural subjects in the distant past.",
+    "tip": "The pyramids (plural) were constructed long ago — past passive."
+  },
+  {
+    "sentence": "This song can ______ heard on every radio station.",
+    "correct": "be",
+    "explanation": "Modal passive: <can> + <be> + past participle.",
+    "tip": "After 'can', what base form completes the passive?"
+  },
+  {
+    "sentence": "The children ______ given new books by their teacher.",
+    "correct": "were",
+    "explanation": "Past simple passive: <were> + past participle for plural subjects receiving something.",
+    "tip": "The children (plural) received books — past passive."
+  },
+  {
+    "sentence": "Paper ______ invented in China.",
+    "correct": "was",
+    "explanation": "Past simple passive: <was> + past participle for a historical fact.",
+    "tip": "Paper was invented long ago — past passive for historical events."
+  },
+  {
+    "sentence": "The rooms ______ cleaned every morning by the hotel staff.",
+    "correct": "are",
+    "explanation": "Present simple passive: <are> + past participle for routine actions.",
+    "tip": "'Every morning' signals a routine — present passive with plural subject."
+  },
+  {
+    "sentence": "The film ______ directed by Steven Spielberg in 1993.",
+    "correct": "was",
+    "explanation": "Past simple passive: <was> + past participle with a specific year.",
+    "tip": "1993 is a past date — past passive."
+  },
+  {
+    "sentence": "Cheese ______ made from milk.",
+    "correct": "is",
+    "explanation": "Present simple passive: <is> + past participle for describing a process.",
+    "tip": "This describes how cheese is produced — present passive."
+  },
+  {
+    "sentence": "The injured people ______ taken to the hospital immediately.",
+    "correct": "were",
+    "explanation": "Past simple passive: <were> + past participle for a past emergency action.",
+    "tip": "The people (plural) were transported after an incident — past passive."
+  },
+  {
+    "sentence": "This castle should ______ visited by every tourist.",
+    "correct": "be",
+    "explanation": "Modal passive: <should> + <be> + past participle for recommendations.",
+    "tip": "After 'should', what base form completes the passive recommendation?"
+  },
+  {
+    "sentence": "The Olympic Games ______ held every four years.",
+    "correct": "are",
+    "explanation": "Present simple passive: <are> + past participle for regular scheduled events.",
+    "tip": "'Every four years' signals a regular event — present passive."
+  }
+]

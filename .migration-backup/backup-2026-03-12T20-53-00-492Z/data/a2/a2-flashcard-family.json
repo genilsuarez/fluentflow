@@ -1,0 +1,282 @@
+[
+  {
+    "front": "mother",
+    "back": "madre",
+    "ipa": "/ˈmʌðər/",
+    "example": "My mother is a teacher.",
+    "example_es": "Mi madre es profesora."
+  },
+  {
+    "front": "father",
+    "back": "padre",
+    "ipa": "/ˈfɑːðər/",
+    "example": "My father works in an office.",
+    "example_es": "Mi padre trabaja en una oficina."
+  },
+  {
+    "front": "sister",
+    "back": "hermana",
+    "ipa": "/ˈsɪstər/",
+    "example": "I have one sister.",
+    "example_es": "Tengo una hermana."
+  },
+  {
+    "front": "brother",
+    "back": "hermano",
+    "ipa": "/ˈbrʌðər/",
+    "example": "My brother is older than me.",
+    "example_es": "Mi hermano es mayor que yo."
+  },
+  {
+    "front": "grandmother",
+    "back": "abuela",
+    "ipa": "/ˈɡrænmʌðər/",
+    "example": "My grandmother lives with us.",
+    "example_es": "Mi abuela vive con nosotros."
+  },
+  {
+    "front": "grandfather",
+    "back": "abuelo",
+    "ipa": "/ˈɡrænfɑːðər/",
+    "example": "My grandfather tells great stories.",
+    "example_es": "Mi abuelo cuenta historias geniales."
+  },
+  {
+    "front": "aunt",
+    "back": "tía",
+    "ipa": "/ænt/",
+    "example": "My aunt visits us every Sunday.",
+    "example_es": "Mi tía nos visita todos los domingos."
+  },
+  {
+    "front": "uncle",
+    "back": "tío",
+    "ipa": "/ˈʌŋkəl/",
+    "example": "My uncle is very funny.",
+    "example_es": "Mi tío es muy divertido."
+  },
+  {
+    "front": "cousin",
+    "back": "primo/prima",
+    "ipa": "/ˈkʌzən/",
+    "example": "My cousin lives in another city.",
+    "example_es": "Mi primo vive en otra ciudad."
+  },
+  {
+    "front": "son",
+    "back": "hijo",
+    "ipa": "/sʌn/",
+    "example": "They have one son.",
+    "example_es": "Tienen un hijo."
+  },
+  {
+    "front": "daughter",
+    "back": "hija",
+    "ipa": "/ˈdɔːtər/",
+    "example": "They have one daughter.",
+    "example_es": "Tienen una hija."
+  },
+  {
+    "front": "husband",
+    "back": "esposo",
+    "ipa": "/ˈhʌzbənd/",
+    "example": "Her husband is a doctor.",
+    "example_es": "Su esposo es doctor."
+  },
+  {
+    "front": "wife",
+    "back": "esposa",
+    "ipa": "/waɪf/",
+    "example": "His wife is very kind.",
+    "example_es": "Su esposa es muy amable."
+  },
+  {
+    "front": "parents",
+    "back": "padres",
+    "ipa": "/ˈpɛrənts/",
+    "example": "My parents are at home.",
+    "example_es": "Mis padres están en casa."
+  },
+  {
+    "front": "children",
+    "back": "hijos/niños",
+    "ipa": "/ˈtʃɪldrən/",
+    "example": "They have three children.",
+    "example_es": "Tienen tres hijos."
+  },
+  {
+    "front": "grandparents",
+    "back": "abuelos",
+    "ipa": "/ˈɡrænpɛrənts/",
+    "example": "My grandparents live in the countryside.",
+    "example_es": "Mis abuelos viven en el campo."
+  },
+  {
+    "front": "family",
+    "back": "familia",
+    "ipa": "/ˈfæməli/",
+    "example": "I love my family.",
+    "example_es": "Amo a mi familia."
+  },
+  {
+    "front": "baby",
+    "back": "bebé",
+    "ipa": "/ˈbeɪbi/",
+    "example": "The baby is sleeping.",
+    "example_es": "El bebé está durmiendo."
+  },
+  {
+    "front": "teenager",
+    "back": "adolescente",
+    "ipa": "/ˈtiːnˌeɪdʒər/",
+    "example": "My cousin is a teenager.",
+    "example_es": "Mi primo es adolescente."
+  },
+  {
+    "front": "adult",
+    "back": "adulto",
+    "ipa": "/ˈædʌlt/",
+    "example": "All adults must work.",
+    "example_es": "Todos los adultos deben trabajar."
+  },
+  {
+    "front": "nephew",
+    "back": "sobrino",
+    "ipa": "/ˈnɛfju/",
+    "example": "My nephew is very smart.",
+    "example_es": "Mi sobrino es muy inteligente."
+  },
+  {
+    "front": "niece",
+    "back": "sobrina",
+    "ipa": "/nis/",
+    "example": "My niece loves to draw.",
+    "example_es": "A mi sobrina le encanta dibujar."
+  },
+  {
+    "front": "stepmother",
+    "back": "madrastra",
+    "ipa": "/ˈstɛpˌmʌðər/",
+    "example": "My stepmother is very nice.",
+    "example_es": "Mi madrastra es muy agradable."
+  },
+  {
+    "front": "stepfather",
+    "back": "padrastro",
+    "ipa": "/ˈstɛpˌfɑːðər/",
+    "example": "My stepfather helps me with homework.",
+    "example_es": "Mi padrastro me ayuda con la tarea."
+  },
+  {
+    "front": "twin",
+    "back": "gemelo/mellizo",
+    "ipa": "/twɪn/",
+    "example": "She has a twin sister.",
+    "example_es": "Ella tiene una hermana gemela."
+  },
+  {
+    "front": "relative",
+    "back": "pariente",
+    "ipa": "/ˈrɛlətɪv/",
+    "example": "All my relatives came to the party.",
+    "example_es": "Todos mis parientes vinieron a la fiesta."
+  },
+  {
+    "front": "married",
+    "back": "casado/a",
+    "ipa": "/ˈmærid/",
+    "example": "They got married last year.",
+    "example_es": "Se casaron el año pasado."
+  },
+  {
+    "front": "single",
+    "back": "soltero/a",
+    "ipa": "/ˈsɪŋɡəl/",
+    "example": "He is still single.",
+    "example_es": "Él todavía está soltero."
+  },
+  {
+    "front": "divorced",
+    "back": "divorciado/a",
+    "ipa": "/dɪˈvɔrst/",
+    "example": "My parents are divorced.",
+    "example_es": "Mis padres están divorciados."
+  },
+  {
+    "front": "widowed",
+    "back": "viudo/a",
+    "ipa": "/ˈwɪdoʊd/",
+    "example": "She has been widowed for five years.",
+    "example_es": "Ella ha sido viuda por cinco años."
+  },
+  {
+    "front": "engaged",
+    "back": "comprometido/a",
+    "ipa": "/ɪnˈɡeɪdʒd/",
+    "example": "They got engaged last month.",
+    "example_es": "Se comprometieron el mes pasado."
+  },
+  {
+    "front": "relationship",
+    "back": "relación",
+    "ipa": "/rɪˈleɪʃənˌʃɪp/",
+    "example": "They have a good relationship.",
+    "example_es": "Tienen una buena relación."
+  },
+  {
+    "front": "generation",
+    "back": "generación",
+    "ipa": "/ˌdʒɛnəˈreɪʃən/",
+    "example": "Three generations live in this house.",
+    "example_es": "Tres generaciones viven en esta casa."
+  },
+  {
+    "front": "ancestor",
+    "back": "antepasado",
+    "ipa": "/ˈænsɛstər/",
+    "example": "My ancestors came from Europe.",
+    "example_es": "Mis antepasados vinieron de Europa."
+  },
+  {
+    "front": "descendant",
+    "back": "descendiente",
+    "ipa": "/dɪˈsɛndənt/",
+    "example": "He is a descendant of famous writers.",
+    "example_es": "Él es descendiente de escritores famosos."
+  },
+  {
+    "front": "adoption",
+    "back": "adopción",
+    "ipa": "/əˈdɑpʃən/",
+    "example": "They are considering adoption.",
+    "example_es": "Están considerando la adopción."
+  },
+  {
+    "front": "foster",
+    "back": "de acogida",
+    "ipa": "/ˈfɔstər/",
+    "example": "She is a foster child.",
+    "example_es": "Ella es una niña de acogida."
+  },
+  {
+    "front": "guardian",
+    "back": "tutor/guardián",
+    "ipa": "/ˈɡɑrdiən/",
+    "example": "His uncle is his legal guardian.",
+    "example_es": "Su tío es su tutor legal."
+  },
+  {
+    "front": "household",
+    "back": "hogar/casa",
+    "ipa": "/ˈhaʊsˌhoʊld/",
+    "example": "There are five people in our household.",
+    "example_es": "Hay cinco personas en nuestro hogar."
+  },
+  {
+    "front": "reunion",
+    "back": "reunión familiar",
+    "ipa": "/riˈjunjən/",
+    "example": "We have a family reunion every summer.",
+    "example_es": "Tenemos una reunión familiar cada verano."
+  }
+]

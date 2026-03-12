@@ -1,0 +1,202 @@
+[
+  {
+    "left": "yesterday",
+    "right": "ayer",
+    "explanation": "Used to refer to the day before today"
+  },
+  {
+    "left": "today",
+    "right": "hoy",
+    "explanation": "Used to refer to the current day"
+  },
+  {
+    "left": "tomorrow",
+    "right": "mañana",
+    "explanation": "Used to refer to the day after today"
+  },
+  {
+    "left": "last week",
+    "right": "la semana pasada",
+    "explanation": "Used to refer to the week before this one"
+  },
+  {
+    "left": "this week",
+    "right": "esta semana",
+    "explanation": "Used to refer to the current week"
+  },
+  {
+    "left": "next week",
+    "right": "la próxima semana",
+    "explanation": "Used to refer to the week after this one"
+  },
+  {
+    "left": "last month",
+    "right": "el mes pasado",
+    "explanation": "Used to refer to the month before this one"
+  },
+  {
+    "left": "this month",
+    "right": "este mes",
+    "explanation": "Used to refer to the current month"
+  },
+  {
+    "left": "next month",
+    "right": "el próximo mes",
+    "explanation": "Used to refer to the month after this one"
+  },
+  {
+    "left": "last year",
+    "right": "el año pasado",
+    "explanation": "Used to refer to the year before this one"
+  },
+  {
+    "left": "this year",
+    "right": "este año",
+    "explanation": "Used to refer to the current year"
+  },
+  {
+    "left": "next year",
+    "right": "el próximo año",
+    "explanation": "Used to refer to the year after this one"
+  },
+  {
+    "left": "in the morning",
+    "right": "por la mañana",
+    "explanation": "Used to refer to the early part of the day"
+  },
+  {
+    "left": "in the afternoon",
+    "right": "por la tarde",
+    "explanation": "Used to refer to the middle part of the day"
+  },
+  {
+    "left": "in the evening",
+    "right": "por la noche",
+    "explanation": "Used to refer to the later part of the day"
+  },
+  {
+    "left": "at night",
+    "right": "en la noche",
+    "explanation": "Used to refer to the dark hours of the day"
+  },
+  {
+    "left": "at midnight",
+    "right": "a medianoche",
+    "explanation": "Used to refer to 12:00 AM"
+  },
+  {
+    "left": "at noon",
+    "right": "al mediodía",
+    "explanation": "Used to refer to 12:00 PM"
+  },
+  {
+    "left": "early",
+    "right": "temprano",
+    "explanation": "Used to refer to a time before the usual time"
+  },
+  {
+    "left": "late",
+    "right": "tarde",
+    "explanation": "Used to refer to a time after the usual time"
+  },
+  {
+    "left": "on time",
+    "right": "a tiempo",
+    "explanation": "Used to refer to arriving at the correct time"
+  },
+  {
+    "left": "before",
+    "right": "antes",
+    "explanation": "Used to refer to an earlier time"
+  },
+  {
+    "left": "after",
+    "right": "después",
+    "explanation": "Used to refer to a later time"
+  },
+  {
+    "left": "during",
+    "right": "durante",
+    "explanation": "Used to refer to the time when something happens"
+  },
+  {
+    "left": "while",
+    "right": "mientras",
+    "explanation": "Used to refer to the same time as something else"
+  },
+  {
+    "left": "since",
+    "right": "desde",
+    "explanation": "Used to refer to a starting point in time"
+  },
+  {
+    "left": "until",
+    "right": "hasta",
+    "explanation": "Used to refer to an ending point in time"
+  },
+  {
+    "left": "for",
+    "right": "por/durante",
+    "explanation": "Used to refer to a period of time"
+  },
+  {
+    "left": "ago",
+    "right": "hace",
+    "explanation": "Used to refer to time in the past"
+  },
+  {
+    "left": "already",
+    "right": "ya",
+    "explanation": "Used to refer to something that happened earlier than expected"
+  },
+  {
+    "left": "still",
+    "right": "todavía",
+    "explanation": "Used to refer to something continuing"
+  },
+  {
+    "left": "yet",
+    "right": "aún/todavía",
+    "explanation": "Used in questions and negatives about expected events"
+  },
+  {
+    "left": "just",
+    "right": "apenas/justo",
+    "explanation": "Used to refer to something that happened very recently"
+  },
+  {
+    "left": "recently",
+    "right": "recientemente",
+    "explanation": "Used to refer to something that happened not long ago"
+  },
+  {
+    "left": "soon",
+    "right": "pronto",
+    "explanation": "Used to refer to something that will happen in the near future"
+  },
+  {
+    "left": "later",
+    "right": "más tarde",
+    "explanation": "Used to refer to a time after now or after another time"
+  },
+  {
+    "left": "earlier",
+    "right": "más temprano",
+    "explanation": "Used to refer to a time before now or before another time"
+  },
+  {
+    "left": "always",
+    "right": "siempre",
+    "explanation": "Used to refer to all the time"
+  },
+  {
+    "left": "never",
+    "right": "nunca",
+    "explanation": "Used to refer to not at any time"
+  },
+  {
+    "left": "sometimes",
+    "right": "a veces",
+    "explanation": "Used to refer to some of the time"
+  }
+]

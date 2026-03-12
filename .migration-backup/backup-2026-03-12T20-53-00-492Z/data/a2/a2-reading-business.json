@@ -1,0 +1,116 @@
+{
+  "title": "Introduction to Business English",
+  "estimatedReadingTime": 8,
+  "learningObjectives": [
+    "Understand basic business vocabulary and greetings",
+    "Learn the difference between formal and informal communication",
+    "Recognize common workplace terms and expressions",
+    "Practice professional email etiquette basics"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "title": "Welcome to Business English",
+      "type": "introduction",
+      "content": "Business English is the language used in professional settings like offices, meetings, and emails. It's more formal than everyday English and uses specific vocabulary. Learning business English will help you communicate professionally in the workplace and understand business conversations."
+    },
+    {
+      "id": "greetings",
+      "title": "Professional Greetings",
+      "type": "theory",
+      "content": "In business, we use formal greetings. Instead of \"Hi\" or \"Hey\", we say \"Good morning\", \"Good afternoon\", or \"Good evening\". When meeting someone for the first time, we say \"Nice to meet you\" or \"Pleased to meet you\". We also use titles like Mr., Ms., or Dr. with last names to show respect."
+    },
+    {
+      "id": "workplace-vocab",
+      "title": "Common Workplace Words",
+      "type": "theory",
+      "content": "Every workplace has special words. An \"office\" is where people work. A \"meeting\" is when people talk about work together. A \"deadline\" is the time when work must be finished. Your \"colleague\" is someone who works with you. The \"manager\" or \"boss\" is the person who leads the team."
+    },
+    {
+      "id": "email-etiquette",
+      "title": "Email Etiquette",
+      "type": "theory",
+      "content": "Emails are one of the most common forms of business communication. A professional email has three main parts: a greeting, a body, and a closing. Start with \"Dear Mr./Ms. [Last Name]\" for formal emails or \"Hello [First Name]\" for semi-formal ones. Keep the body short and clear. Use phrases like \"I am writing to inform you...\" or \"Please find attached...\" to sound professional. End with \"Kind regards\", \"Best regards\", or \"Yours sincerely\" followed by your full name. Always check your email for spelling mistakes before sending it. Remember: never use slang, emojis, or ALL CAPS in professional emails."
+    },
+    {
+      "id": "examples",
+      "title": "Business Situations",
+      "type": "examples",
+      "content": "Example 1: PROFESSIONAL GREETING - 'Good morning, Mr. Smith. I'm Maria. Nice to meet you.'\n\nExample 2: IN A MEETING - \"We have a deadline next Friday. Can everyone finish by then?\"\n\nExample 3: EMAIL OPENING - \"Dear Ms. Johnson, I hope this email finds you well.\"\n\nExample 4: ASKING FOR HELP - \"Excuse me, could you please help me with this report?\""
+    },
+    {
+      "id": "summary",
+      "title": "Key Takeaways",
+      "type": "summary",
+      "content": "Remember: Business English is formal and polite. Use proper greetings like \"Good morning\" instead of \"Hi\". Learn workplace vocabulary like \"meeting\", \"deadline\", and \"colleague\". Always be respectful and professional in your communication. Practice makes perfect!"
+    }
+  ],
+  "keyVocabulary": [
+    {
+      "term": "meeting",
+      "definition": "A gathering of people to discuss work topics",
+      "example": "We have a team meeting at 3 PM today.",
+      "pronunciation": "/ˈmiːtɪŋ/"
+    },
+    {
+      "term": "deadline",
+      "definition": "The time by which work must be completed",
+      "example": "The deadline for this project is Friday.",
+      "pronunciation": "/ˈdedlaɪn/"
+    },
+    {
+      "term": "colleague",
+      "definition": "A person you work with",
+      "example": "My colleague helped me with the presentation.",
+      "pronunciation": "/ˈkɑːliːɡ/"
+    },
+    {
+      "term": "manager",
+      "definition": "A person who leads and supervises a team",
+      "example": "I need to speak with my manager about this.",
+      "pronunciation": "/ˈmænɪdʒər/"
+    },
+    {
+      "term": "office",
+      "definition": "A place where people work",
+      "example": "I work in an office downtown.",
+      "pronunciation": "/ˈɔːfɪs/"
+    },
+    {
+      "term": "email",
+      "definition": "Electronic mail sent through the internet",
+      "example": "Please send me an email with the details.",
+      "pronunciation": "/ˈiːmeɪl/"
+    }
+  ],
+  "grammarPoints": [
+    {
+      "rule": "Formal vs Informal Greetings",
+      "explanation": "In business, always use formal greetings. Say \"Good morning\" instead of \"Hi\" or \"Hey\". Use titles (Mr., Ms., Dr.) with last names.",
+      "examples": [
+        "Formal: Good morning, Mr. Smith. How are you today?",
+        "Informal: Hey John! What's up?",
+        "Formal: Dear Ms. Johnson, (in emails)",
+        "Informal: Hi Sarah, (in casual messages)"
+      ],
+      "commonMistakes": [
+        "Using \"Hey\" in professional emails",
+        "Forgetting to use titles with last names",
+        "Being too casual in first meetings"
+      ]
+    },
+    {
+      "rule": "Polite Requests",
+      "explanation": "Use \"Could you please...\" or \"Would you mind...\" to make polite requests in business settings.",
+      "examples": [
+        "Could you please send me the report?",
+        "Would you mind helping me with this?",
+        "May I ask you a question?"
+      ],
+      "commonMistakes": [
+        "Using \"Give me...\" instead of \"Could you please give me...\"",
+        "Forgetting to say \"please\" and \"thank you\""
+      ]
+    }
+  ]
+}

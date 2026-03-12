@@ -1,0 +1,217 @@
+[
+  {
+    "left": "1",
+    "right": "one",
+    "explanation": "The number one written as a word"
+  },
+  {
+    "left": "2",
+    "right": "two",
+    "explanation": "The number two written as a word"
+  },
+  {
+    "left": "3",
+    "right": "three",
+    "explanation": "The number three written as a word"
+  },
+  {
+    "left": "4",
+    "right": "four",
+    "explanation": "The number four written as a word"
+  },
+  {
+    "left": "5",
+    "right": "five",
+    "explanation": "The number five written as a word"
+  },
+  {
+    "left": "6",
+    "right": "six",
+    "explanation": "The number six written as a word"
+  },
+  {
+    "left": "7",
+    "right": "seven",
+    "explanation": "The number seven written as a word"
+  },
+  {
+    "left": "8",
+    "right": "eight",
+    "explanation": "The number eight written as a word"
+  },
+  {
+    "left": "9",
+    "right": "nine",
+    "explanation": "The number nine written as a word"
+  },
+  {
+    "left": "10",
+    "right": "ten",
+    "explanation": "The number ten written as a word"
+  },
+  {
+    "left": "11",
+    "right": "eleven",
+    "explanation": "The number eleven written as a word"
+  },
+  {
+    "left": "12",
+    "right": "twelve",
+    "explanation": "The number twelve written as a word"
+  },
+  {
+    "left": "13",
+    "right": "thirteen",
+    "explanation": "The number thirteen written as a word"
+  },
+  {
+    "left": "14",
+    "right": "fourteen",
+    "explanation": "The number fourteen written as a word"
+  },
+  {
+    "left": "15",
+    "right": "fifteen",
+    "explanation": "The number fifteen written as a word"
+  },
+  {
+    "left": "16",
+    "right": "sixteen",
+    "explanation": "The number sixteen written as a word"
+  },
+  {
+    "left": "17",
+    "right": "seventeen",
+    "explanation": "The number seventeen written as a word"
+  },
+  {
+    "left": "18",
+    "right": "eighteen",
+    "explanation": "The number eighteen written as a word"
+  },
+  {
+    "left": "19",
+    "right": "nineteen",
+    "explanation": "The number nineteen written as a word"
+  },
+  {
+    "left": "20",
+    "right": "twenty",
+    "explanation": "The number twenty written as a word"
+  },
+  {
+    "left": "21",
+    "right": "twenty-one",
+    "explanation": "The number twenty-one written as words"
+  },
+  {
+    "left": "25",
+    "right": "twenty-five",
+    "explanation": "The number twenty-five written as words"
+  },
+  {
+    "left": "30",
+    "right": "thirty",
+    "explanation": "The number thirty written as a word"
+  },
+  {
+    "left": "40",
+    "right": "forty",
+    "explanation": "The number forty written as a word"
+  },
+  {
+    "left": "50",
+    "right": "fifty",
+    "explanation": "The number fifty written as a word"
+  },
+  {
+    "left": "some",
+    "right": "a few",
+    "explanation": "Both mean a small amount",
+    "type": "word-definition"
+  },
+  {
+    "left": "many",
+    "right": "a lot of",
+    "explanation": "Both mean a large amount",
+    "type": "word-definition"
+  },
+  {
+    "left": "all",
+    "right": "everything",
+    "explanation": "Both mean the complete amount",
+    "type": "word-definition"
+  },
+  {
+    "left": "none",
+    "right": "nothing",
+    "explanation": "Both mean zero amount",
+    "type": "word-definition"
+  },
+  {
+    "left": "half",
+    "right": "50%",
+    "explanation": "Half means one of two equal parts",
+    "type": "word-definition"
+  },
+  {
+    "left": "How many?",
+    "right": "¿Cuántos?",
+    "explanation": "Question for countable things",
+    "type": "word-translation"
+  },
+  {
+    "left": "How much?",
+    "right": "¿Cuánto?",
+    "explanation": "Question for uncountable things",
+    "type": "word-translation"
+  },
+  {
+    "left": "first",
+    "right": "1st",
+    "explanation": "Ordinal number for position one",
+    "type": "word-definition"
+  },
+  {
+    "left": "second",
+    "right": "2nd",
+    "explanation": "Ordinal number for position two",
+    "type": "word-definition"
+  },
+  {
+    "left": "third",
+    "right": "3rd",
+    "explanation": "Ordinal number for position three",
+    "type": "word-definition"
+  },
+  {
+    "left": "zero",
+    "right": "0",
+    "explanation": "The number zero",
+    "type": "word-definition"
+  },
+  {
+    "left": "one hundred",
+    "right": "100",
+    "explanation": "The number one hundred",
+    "type": "word-definition"
+  },
+  {
+    "left": "pair",
+    "right": "two things",
+    "explanation": "A pair means two things together",
+    "type": "word-definition"
+  },
+  {
+    "left": "dozen",
+    "right": "12",
+    "explanation": "A dozen means twelve",
+    "type": "word-definition"
+  },
+  {
+    "left": "both",
+    "right": "the two",
+    "explanation": "Both means the two together",
+    "type": "word-definition"
+  }
+]

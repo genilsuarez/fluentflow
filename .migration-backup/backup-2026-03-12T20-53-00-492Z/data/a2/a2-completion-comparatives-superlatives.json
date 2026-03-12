@@ -1,0 +1,242 @@
+[
+  {
+    "sentence": "My sister is ______ than me.",
+    "correct": "taller",
+    "explanation": "Use <taller> (comparative form of <tall>) to compare two people",
+    "tip": "Complete with the comparative form of <tall>"
+  },
+  {
+    "sentence": "This book is ______ than that one.",
+    "correct": "better",
+    "explanation": "Use <better> (comparative form of <good>) - irregular comparative",
+    "tip": "Complete with the comparative form of <good>"
+  },
+  {
+    "sentence": "She is the ______ student in the class.",
+    "correct": "smartest",
+    "explanation": "Use <smartest> (superlative form of <smart>) to compare among many",
+    "tip": "Complete with the superlative form of <smart>"
+  },
+  {
+    "sentence": "This is the ______ movie I've ever seen.",
+    "correct": "best",
+    "explanation": "Use <best> (superlative form of <good>) - irregular superlative",
+    "tip": "Complete with the superlative form of <good>"
+  },
+  {
+    "sentence": "Winter is ______ than summer.",
+    "correct": "colder",
+    "explanation": "Use <colder> (comparative form of <cold>) to compare two seasons",
+    "tip": "Complete with the comparative form of <cold>"
+  },
+  {
+    "sentence": "This is the ______ day of the year.",
+    "correct": "hottest",
+    "explanation": "Use <hottest> (superlative form of <hot>) to compare among all days",
+    "tip": "Complete with the superlative form of <hot>"
+  },
+  {
+    "sentence": "My car is ______ than yours.",
+    "correct": "faster",
+    "explanation": "Use <faster> (comparative form of <fast>) to compare two cars",
+    "tip": "Complete with the comparative form of <fast>"
+  },
+  {
+    "sentence": "She is the ______ person I know.",
+    "correct": "kindest",
+    "explanation": "Use <kindest> (superlative form of <kind>) to compare among many people",
+    "tip": "Complete with the superlative form of <kind>"
+  },
+  {
+    "sentence": "This exercise is ______ than the last one.",
+    "correct": "easier",
+    "explanation": "Use <easier> (comparative form of <easy>) - y changes to i + er",
+    "tip": "Complete with the comparative form of <easy>"
+  },
+  {
+    "sentence": "Mount Everest is the ______ mountain in the world.",
+    "correct": "highest",
+    "explanation": "Use <highest> (superlative form of <high>) to compare among all mountains",
+    "tip": "Complete with the superlative form of <high>"
+  },
+  {
+    "sentence": "This problem is ______ than I thought.",
+    "correct": "worse",
+    "explanation": "Use <worse> (comparative form of <bad>) - irregular comparative",
+    "tip": "Complete with the comparative form of <bad>"
+  },
+  {
+    "sentence": "That was the ______ meal I've ever had.",
+    "correct": "worst",
+    "explanation": "Use <worst> (superlative form of <bad>) - irregular superlative",
+    "tip": "Complete with the superlative form of <bad>"
+  },
+  {
+    "sentence": "My house is ______ than my friend's house.",
+    "correct": "bigger",
+    "explanation": "Use <bigger> (comparative form of <big>) - double g + er",
+    "tip": "Complete with the comparative form of <big>"
+  },
+  {
+    "sentence": "This is the ______ room in the house.",
+    "correct": "smallest",
+    "explanation": "Use <smallest> (superlative form of <small>) to compare among all rooms",
+    "tip": "Complete with the superlative form of <small>"
+  },
+  {
+    "sentence": "She speaks English ______ than her brother.",
+    "correct": "more fluently",
+    "explanation": "Use <more fluently> (comparative form of <fluently>) - use <more> with adverbs ending in -ly",
+    "tip": "Complete with the comparative form of <fluently>"
+  },
+  {
+    "sentence": "He is the ______ runner on the team.",
+    "correct": "fastest",
+    "explanation": "Use <fastest> (superlative form of <fast>) to compare among all runners",
+    "tip": "Complete with the superlative form of <fast>"
+  },
+  {
+    "sentence": "This chair is ______ than that one.",
+    "correct": "more comfortable",
+    "explanation": "Use <more comfortable> (comparative form) - use <more> with longer adjectives",
+    "tip": "Complete with the comparative form of <comfortable>"
+  },
+  {
+    "sentence": "This is the ______ expensive restaurant in town.",
+    "correct": "most",
+    "explanation": "Use <most expensive> (superlative form) - use <most> with longer adjectives",
+    "tip": "Complete with <most> to form the superlative"
+  },
+  {
+    "sentence": "Today is ______ than yesterday.",
+    "correct": "sunnier",
+    "explanation": "Use <sunnier> (comparative form of <sunny>) - y changes to i + er",
+    "tip": "Complete with the comparative form of <sunny>"
+  },
+  {
+    "sentence": "This is the ______ building in the city.",
+    "correct": "tallest",
+    "explanation": "Use <tallest> (superlative form of <tall>) to compare among all buildings",
+    "tip": "Complete with the superlative form of <tall>"
+  },
+  {
+    "sentence": "My dog is ______ than my cat.",
+    "correct": "friendlier",
+    "explanation": "Use <friendlier> (comparative form of <friendly>) - y changes to i + er",
+    "tip": "Complete with the comparative form of <friendly>"
+  },
+  {
+    "sentence": "She is the ______ student in our school.",
+    "correct": "most hardworking",
+    "explanation": "Use <most hardworking> (superlative form) - use <most> with compound adjectives",
+    "tip": "Complete with <most> to form the superlative"
+  },
+  {
+    "sentence": "This test was ______ than the last one.",
+    "correct": "harder",
+    "explanation": "Use <harder> (comparative form of <hard>) to compare two tests",
+    "tip": "Complete with the comparative form of <hard>"
+  },
+  {
+    "sentence": "That was the ______ joke I've ever heard.",
+    "correct": "funniest",
+    "explanation": "Use <funniest> (superlative form of <funny>) - y changes to i + est",
+    "tip": "Complete with the superlative form of <funny>"
+  },
+  {
+    "sentence": "This road is ______ than the highway.",
+    "correct": "narrower",
+    "explanation": "Use <narrower> (comparative form of <narrow>) to compare two roads",
+    "tip": "Complete with the comparative form of <narrow>"
+  },
+  {
+    "sentence": "She has the ______ hair in the family.",
+    "correct": "longest",
+    "explanation": "Use <longest> (superlative form of <long>) to compare among family members",
+    "tip": "Complete with the superlative form of <long>"
+  },
+  {
+    "sentence": "This coffee is ______ than tea.",
+    "correct": "stronger",
+    "explanation": "Use <stronger> (comparative form of <strong>) to compare two drinks",
+    "tip": "Complete with the comparative form of <strong>"
+  },
+  {
+    "sentence": "This is the ______ cake I've ever tasted.",
+    "correct": "sweetest",
+    "explanation": "Use <sweetest> (superlative form of <sweet>) to compare among all cakes",
+    "tip": "Complete with the superlative form of <sweet>"
+  },
+  {
+    "sentence": "My new job is ______ than my old one.",
+    "correct": "more interesting",
+    "explanation": "Use <more interesting> (comparative form) - use <more> with longer adjectives",
+    "tip": "Complete with the comparative form of <interesting>"
+  },
+  {
+    "sentence": "This is the ______ place I've ever visited.",
+    "correct": "most beautiful",
+    "explanation": "Use <most beautiful> (superlative form) - use <most> with longer adjectives",
+    "tip": "Complete with <most> to form the superlative"
+  },
+  {
+    "sentence": "Winter nights are ______ than summer nights.",
+    "correct": "longer",
+    "explanation": "Use <longer> (comparative form of <long>) to compare two types of nights",
+    "tip": "Complete with the comparative form of <long>"
+  },
+  {
+    "sentence": "She is the ______ person in our office.",
+    "correct": "youngest",
+    "explanation": "Use <youngest> (superlative form of <young>) to compare among all people",
+    "tip": "Complete with the superlative form of <young>"
+  },
+  {
+    "sentence": "This bag is ______ than that one.",
+    "correct": "heavier",
+    "explanation": "Use <heavier> (comparative form of <heavy>) - y changes to i + er",
+    "tip": "Complete with the comparative form of <heavy>"
+  },
+  {
+    "sentence": "This is the ______ song on the album.",
+    "correct": "shortest",
+    "explanation": "Use <shortest> (superlative form of <short>) to compare among all songs",
+    "tip": "Complete with the superlative form of <short>"
+  },
+  {
+    "sentence": "My apartment is ______ than yours.",
+    "correct": "cleaner",
+    "explanation": "Use <cleaner> (comparative form of <clean>) to compare two apartments",
+    "tip": "Complete with the comparative form of <clean>"
+  },
+  {
+    "sentence": "This is the ______ story in the book.",
+    "correct": "most exciting",
+    "explanation": "Use <most exciting> (superlative form) - use <most> with longer adjectives",
+    "tip": "Complete with <most> to form the superlative"
+  },
+  {
+    "sentence": "Today's weather is ______ than yesterday's.",
+    "correct": "nicer",
+    "explanation": "Use <nicer> (comparative form of <nice>) to compare two days' weather",
+    "tip": "Complete with the comparative form of <nice>"
+  },
+  {
+    "sentence": "She has the ______ voice in the choir.",
+    "correct": "most melodious",
+    "explanation": "Use <most melodious> (superlative form) - use <most> with longer adjectives",
+    "tip": "Complete with <most> to form the superlative"
+  },
+  {
+    "sentence": "This puzzle is ______ than the previous one.",
+    "correct": "more challenging",
+    "explanation": "Use <more challenging> (comparative form) - use <more> with longer adjectives",
+    "tip": "Complete with the comparative form of <challenging>"
+  },
+  {
+    "sentence": "This is the ______ decision I've ever made.",
+    "correct": "most difficult",
+    "explanation": "Use <most difficult> (superlative form) - use <most> with longer adjectives",
+    "tip": "Complete with <most> to form the superlative"
+  }
+]

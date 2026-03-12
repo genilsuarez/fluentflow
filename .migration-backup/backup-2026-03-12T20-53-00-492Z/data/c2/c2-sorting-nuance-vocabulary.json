@@ -1,0 +1,252 @@
+{
+  "categories": [
+    "Intensity/Degree",
+    "Formality/Register",
+    "Movement/Speed",
+    "Perception/Cognition",
+    "Certainty/Doubt",
+    "Sound/Speech"
+  ],
+  "data": [
+    {
+      "word": "The performance was utterly magnificent.",
+      "category": "Intensity/Degree",
+      "explanation": "<Utterly> intensifies the adjective to express complete degree"
+    },
+    {
+      "word": "She was thoroughly exhausted after the marathon.",
+      "category": "Intensity/Degree",
+      "explanation": "<Thoroughly> emphasizes the complete extent of exhaustion"
+    },
+    {
+      "word": "The proposal was categorically rejected.",
+      "category": "Intensity/Degree",
+      "explanation": "<Categorically> expresses absolute, unqualified rejection"
+    },
+    {
+      "word": "He was profoundly moved by the ceremony.",
+      "category": "Intensity/Degree",
+      "explanation": "<Profoundly> indicates deep, intense emotional impact"
+    },
+    {
+      "word": "The results were marginally better than expected.",
+      "category": "Intensity/Degree",
+      "explanation": "<Marginally> indicates a small, slight degree of improvement"
+    },
+    {
+      "word": "The evidence was overwhelmingly convincing.",
+      "category": "Intensity/Degree",
+      "explanation": "<Overwhelmingly> suggests an extremely high degree of conviction"
+    },
+    {
+      "word": "She was acutely aware of the tension.",
+      "category": "Intensity/Degree",
+      "explanation": "<Acutely> intensifies awareness to a sharp, intense level"
+    },
+    {
+      "word": "The situation deteriorated drastically.",
+      "category": "Intensity/Degree",
+      "explanation": "<Drastically> indicates severe, extreme change"
+    },
+    {
+      "word": "I would be delighted to attend your soirée.",
+      "category": "Formality/Register",
+      "explanation": "Formal, elevated language appropriate for sophisticated social contexts"
+    },
+    {
+      "word": "We cordially invite you to the gala dinner.",
+      "category": "Formality/Register",
+      "explanation": "<Cordially> is formal, ceremonious language for official invitations"
+    },
+    {
+      "word": "The committee will deliberate on the matter.",
+      "category": "Formality/Register",
+      "explanation": "<Deliberate> is formal, official language for careful consideration"
+    },
+    {
+      "word": "I must respectfully decline your generous offer.",
+      "category": "Formality/Register",
+      "explanation": "Highly formal, polite language for diplomatic refusal"
+    },
+    {
+      "word": "Let's grab a bite and catch up later.",
+      "category": "Formality/Register",
+      "explanation": "Informal, colloquial language for casual social interaction"
+    },
+    {
+      "word": "The proposal merits serious consideration.",
+      "category": "Formality/Register",
+      "explanation": "Formal, professional language for business contexts"
+    },
+    {
+      "word": "We regret to inform you of this unfortunate development.",
+      "category": "Formality/Register",
+      "explanation": "Formal, diplomatic language for delivering bad news"
+    },
+    {
+      "word": "The negotiations have reached an impasse.",
+      "category": "Formality/Register",
+      "explanation": "Formal, professional terminology for diplomatic situations"
+    },
+    {
+      "word": "She sauntered leisurely through the park.",
+      "category": "Movement/Speed",
+      "explanation": "<Sauntered> implies slow, relaxed, unhurried movement"
+    },
+    {
+      "word": "He sprinted frantically toward the station.",
+      "category": "Movement/Speed",
+      "explanation": "<Sprinted frantically> indicates urgent, high-speed movement"
+    },
+    {
+      "word": "The cat crept stealthily through the shadows.",
+      "category": "Movement/Speed",
+      "explanation": "<Crept stealthily> suggests slow, secretive, careful movement"
+    },
+    {
+      "word": "She meandered aimlessly through the streets.",
+      "category": "Movement/Speed",
+      "explanation": "<Meandered aimlessly> indicates slow, wandering movement without purpose"
+    },
+    {
+      "word": "The car careened wildly down the hill.",
+      "category": "Movement/Speed",
+      "explanation": "<Careened wildly> suggests fast, uncontrolled, dangerous movement"
+    },
+    {
+      "word": "He trudged wearily up the mountain path.",
+      "category": "Movement/Speed",
+      "explanation": "<Trudged wearily> indicates slow, laborious movement with effort"
+    },
+    {
+      "word": "She glided gracefully across the dance floor.",
+      "category": "Movement/Speed",
+      "explanation": "<Glided gracefully> suggests smooth, elegant, controlled movement"
+    },
+    {
+      "word": "The thief darted quickly between the buildings.",
+      "category": "Movement/Speed",
+      "explanation": "<Darted quickly> indicates rapid, sudden, evasive movement"
+    },
+    {
+      "word": "She perceived the subtle implications immediately.",
+      "category": "Perception/Cognition",
+      "explanation": "<Perceived> indicates sophisticated mental recognition of complex meaning"
+    },
+    {
+      "word": "He discerned the underlying motives behind the proposal.",
+      "category": "Perception/Cognition",
+      "explanation": "<Discerned> suggests keen insight into hidden or complex matters"
+    },
+    {
+      "word": "The scholar contemplated the philosophical implications.",
+      "category": "Perception/Cognition",
+      "explanation": "<Contemplated> indicates deep, reflective intellectual consideration"
+    },
+    {
+      "word": "She intuited that something was amiss.",
+      "category": "Perception/Cognition",
+      "explanation": "<Intuited> suggests instinctive, non-rational understanding"
+    },
+    {
+      "word": "He scrutinized the document for inconsistencies.",
+      "category": "Perception/Cognition",
+      "explanation": "<Scrutinized> indicates careful, detailed, analytical examination"
+    },
+    {
+      "word": "The detective deduced the sequence of events.",
+      "category": "Perception/Cognition",
+      "explanation": "<Deduced> suggests logical reasoning from available evidence"
+    },
+    {
+      "word": "She comprehended the complexity of the situation.",
+      "category": "Perception/Cognition",
+      "explanation": "<Comprehended> indicates full intellectual grasp of difficult concepts"
+    },
+    {
+      "word": "He apprehended the significance of the discovery.",
+      "category": "Perception/Cognition",
+      "explanation": "<Apprehended> suggests sudden understanding of importance"
+    },
+    {
+      "word": "I am absolutely certain of the outcome.",
+      "category": "Certainty/Doubt",
+      "explanation": "<Absolutely certain> expresses complete, unqualified confidence"
+    },
+    {
+      "word": "She was utterly convinced by the evidence.",
+      "category": "Certainty/Doubt",
+      "explanation": "<Utterly convinced> indicates total, complete belief"
+    },
+    {
+      "word": "He harbored serious doubts about the plan.",
+      "category": "Certainty/Doubt",
+      "explanation": "<Harbored serious doubts> suggests significant uncertainty or skepticism"
+    },
+    {
+      "word": "I'm somewhat skeptical of their claims.",
+      "category": "Certainty/Doubt",
+      "explanation": "<Somewhat skeptical> indicates moderate doubt or questioning attitude"
+    },
+    {
+      "word": "The results are unequivocally positive.",
+      "category": "Certainty/Doubt",
+      "explanation": "<Unequivocally> expresses absolute clarity without ambiguity"
+    },
+    {
+      "word": "She remained tentatively optimistic about the prospects.",
+      "category": "Certainty/Doubt",
+      "explanation": "<Tentatively optimistic> suggests cautious, qualified hopefulness"
+    },
+    {
+      "word": "I'm thoroughly convinced of his innocence.",
+      "category": "Certainty/Doubt",
+      "explanation": "<Thoroughly convinced> indicates complete, deep-seated belief"
+    },
+    {
+      "word": "The outcome remains decidedly uncertain.",
+      "category": "Certainty/Doubt",
+      "explanation": "<Decidedly uncertain> emphasizes clear, definite lack of certainty"
+    },
+    {
+      "word": "She whispered conspiratorially in his ear.",
+      "category": "Sound/Speech",
+      "explanation": "<Whispered conspiratorially> suggests secretive, low-volume communication"
+    },
+    {
+      "word": "He bellowed angrily at the protesters.",
+      "category": "Sound/Speech",
+      "explanation": "<Bellowed angrily> indicates loud, forceful, aggressive vocalization"
+    },
+    {
+      "word": "The professor articulated his theory eloquently.",
+      "category": "Sound/Speech",
+      "explanation": "<Articulated eloquently> suggests clear, sophisticated verbal expression"
+    },
+    {
+      "word": "She murmured softly to comfort the child.",
+      "category": "Sound/Speech",
+      "explanation": "<Murmured softly> indicates gentle, quiet, soothing speech"
+    },
+    {
+      "word": "He proclaimed triumphantly from the podium.",
+      "category": "Sound/Speech",
+      "explanation": "<Proclaimed triumphantly> suggests loud, victorious public declaration"
+    },
+    {
+      "word": "The witness testified hesitantly under oath.",
+      "category": "Sound/Speech",
+      "explanation": "<Testified hesitantly> indicates uncertain, cautious formal speech"
+    },
+    {
+      "word": "She enunciated each word with precision.",
+      "category": "Sound/Speech",
+      "explanation": "<Enunciated with precision> suggests careful, clear articulation"
+    },
+    {
+      "word": "He muttered incoherently under his breath.",
+      "category": "Sound/Speech",
+      "explanation": "<Muttered incoherently> indicates unclear, low-volume, confused speech"
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+[
+  {
+    "question": "If it is <raining cats and dogs>, it means:",
+    "options": [
+      "animals are falling",
+      "it is raining very hard",
+      "it is sunny",
+      "cats and dogs are playing"
+    ],
+    "correct": "it is raining very hard",
+    "explanation": "This idiom means it is raining very heavily."
+  },
+  {
+    "question": "What does <a piece of cake> mean?",
+    "options": [
+      "a type of dessert",
+      "something very easy",
+      "something expensive",
+      "a birthday party"
+    ],
+    "correct": "something very easy",
+    "explanation": "This idiom means something is very easy to do."
+  },
+  {
+    "question": "If you <break a leg>, someone is wishing you:",
+    "options": [
+      "bad luck",
+      "to get hurt",
+      "good luck",
+      "to run fast"
+    ],
+    "correct": "good luck",
+    "explanation": "This idiom is used to wish someone good luck, especially before a performance."
+  },
+  {
+    "question": "What does <it's not my cup of tea> mean?",
+    "options": [
+      "I don't like tea",
+      "it's not something I enjoy",
+      "the tea is cold",
+      "I prefer coffee"
+    ],
+    "correct": "it's not something I enjoy",
+    "explanation": "This idiom means something is not to your liking or interest."
+  },
+  {
+    "question": "If someone says <hold on>, they want you to:",
+    "options": [
+      "grab something",
+      "wait a moment",
+      "run away",
+      "sit down"
+    ],
+    "correct": "wait a moment",
+    "explanation": "This idiom means to wait for a short time."
+  },
+  {
+    "question": "What does <once in a blue moon> mean?",
+    "options": [
+      "every night",
+      "very rarely",
+      "when the moon is blue",
+      "every month"
+    ],
+    "correct": "very rarely",
+    "explanation": "This idiom means something happens very infrequently."
+  },
+  {
+    "question": "If you are <under the weather>, you are:",
+    "options": [
+      "outside in rain",
+      "feeling sick",
+      "very happy",
+      "cold"
+    ],
+    "correct": "feeling sick",
+    "explanation": "This idiom means you are not feeling well."
+  },
+  {
+    "question": "What does <time flies> mean?",
+    "options": [
+      "clocks have wings",
+      "time passes quickly",
+      "it is late",
+      "time stops"
+    ],
+    "correct": "time passes quickly",
+    "explanation": "This idiom means time seems to pass very fast."
+  },
+  {
+    "question": "If something costs <an arm and a leg>, it is:",
+    "options": [
+      "free",
+      "cheap",
+      "very expensive",
+      "painful"
+    ],
+    "correct": "very expensive",
+    "explanation": "This idiom means something is very expensive."
+  },
+  {
+    "question": "What does <keep an eye on> mean?",
+    "options": [
+      "close one eye",
+      "watch carefully",
+      "look away",
+      "sleep"
+    ],
+    "correct": "watch carefully",
+    "explanation": "This idiom means to watch something or someone carefully."
+  },
+  {
+    "question": "If you <hit the books>, you:",
+    "options": [
+      "throw books",
+      "study hard",
+      "go to a library",
+      "read a novel"
+    ],
+    "correct": "study hard",
+    "explanation": "This idiom means to study intensively."
+  },
+  {
+    "question": "What does <let the cat out of the bag> mean?",
+    "options": [
+      "free a cat",
+      "reveal a secret",
+      "open a bag",
+      "go shopping"
+    ],
+    "correct": "reveal a secret",
+    "explanation": "This idiom means to accidentally reveal a secret."
+  },
+  {
+    "question": "If someone says <no pain, no gain>, they mean:",
+    "options": [
+      "pain is bad",
+      "you must suffer to succeed",
+      "don't exercise",
+      "life is easy"
+    ],
+    "correct": "you must suffer to succeed",
+    "explanation": "This idiom means you need to work hard to achieve results."
+  },
+  {
+    "question": "What does <so far, so good> mean?",
+    "options": [
+      "it is far away",
+      "everything is fine until now",
+      "it is finished",
+      "keep going"
+    ],
+    "correct": "everything is fine until now",
+    "explanation": "This idiom means things are going well up to this point."
+  },
+  {
+    "question": "If you <call it a day>, you:",
+    "options": [
+      "name the day",
+      "stop working",
+      "start early",
+      "make a phone call"
+    ],
+    "correct": "stop working",
+    "explanation": "This idiom means to stop working for the day."
+  },
+  {
+    "question": "What does <better late than never> mean?",
+    "options": [
+      "be on time",
+      "it's good to arrive even if late",
+      "never be late",
+      "time is money"
+    ],
+    "correct": "it's good to arrive even if late",
+    "explanation": "This idiom means it is better to do something late than not at all."
+  },
+  {
+    "question": "If you <get the ball rolling>, you:",
+    "options": [
+      "play football",
+      "start an activity",
+      "throw a ball",
+      "stop playing"
+    ],
+    "correct": "start an activity",
+    "explanation": "This idiom means to begin or start something."
+  },
+  {
+    "question": "What does <sleep on it> mean?",
+    "options": [
+      "sleep well",
+      "think about it overnight",
+      "go to bed early",
+      "use a pillow"
+    ],
+    "correct": "think about it overnight",
+    "explanation": "This idiom means to wait until the next day before making a decision."
+  },
+  {
+    "question": "If something is <a long shot>, it is:",
+    "options": [
+      "very likely",
+      "unlikely to succeed",
+      "a long distance",
+      "a photograph"
+    ],
+    "correct": "unlikely to succeed",
+    "explanation": "This idiom means something has a small chance of success."
+  },
+  {
+    "question": "What does <hang in there> mean?",
+    "options": [
+      "hold onto something",
+      "don't give up",
+      "hang clothes",
+      "wait outside"
+    ],
+    "correct": "don't give up",
+    "explanation": "This idiom is used to encourage someone to keep trying."
+  }
+]

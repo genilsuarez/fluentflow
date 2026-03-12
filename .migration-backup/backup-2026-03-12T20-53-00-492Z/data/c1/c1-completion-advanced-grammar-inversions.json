@@ -1,0 +1,442 @@
+[
+  {
+    "sentence": "Never before _ such a beautiful sunset.",
+    "options": [
+      "I have seen",
+      "have I seen",
+      "I saw",
+      "did I see"
+    ],
+    "correct": "have I seen",
+    "explanation": "Cuando una frase comienza con una expresión negativa como <Never before>, se invierte el sujeto y el verbo auxiliar."
+  },
+  {
+    "sentence": "Hardly ever _ so much talent in one place.",
+    "options": [
+      "I have seen",
+      "have I seen",
+      "I saw",
+      "did I see"
+    ],
+    "correct": "have I seen",
+    "explanation": "Con <Hardly ever> al inicio, se invierte el sujeto y el verbo auxiliar."
+  },
+  {
+    "sentence": "Scarcely had _ when the phone rang.",
+    "options": [
+      "I arrived",
+      "I arrive",
+      "arrived I",
+      "did I arrive"
+    ],
+    "correct": "I arrived",
+    "explanation": "Con <Scarcely had> al inicio, se usa la inversión del sujeto y el verbo auxiliar."
+  },
+  {
+    "sentence": "No sooner had _ than it started to rain.",
+    "options": [
+      "he left",
+      "he leave",
+      "left he",
+      "did he leave"
+    ],
+    "correct": "he left",
+    "explanation": "Con <No sooner had> al inicio, se usa la inversión del sujeto y el verbo auxiliar."
+  },
+  {
+    "sentence": "Little _ about his past.",
+    "options": [
+      "did he know",
+      "he knew",
+      "knew he",
+      "he did know"
+    ],
+    "correct": "did he know",
+    "explanation": "Con <Little> al inicio, se invierte el sujeto y el verbo auxiliar."
+  },
+  {
+    "sentence": "Only after _ the truth did she apologize.",
+    "options": [
+      "she knew",
+      "did she know",
+      "knew she",
+      "she did know"
+    ],
+    "correct": "she knew",
+    "explanation": "Con <Only after> al inicio, la inversión ocurre en la segunda cláusula."
+  },
+  {
+    "sentence": "Not until _ the sun set did they leave.",
+    "options": [
+      "did they see",
+      "they saw",
+      "saw they",
+      "they did see"
+    ],
+    "correct": "they saw",
+    "explanation": "Con <Not until> al inicio, la inversión ocurre en la segunda cláusula."
+  },
+  {
+    "sentence": "Rarely _ such a stunning performance.",
+    "options": [
+      "I have witnessed",
+      "have I witnessed",
+      "I witnessed",
+      "did I witness"
+    ],
+    "correct": "have I witnessed",
+    "explanation": "Con <Rarely> al inicio, se invierte el sujeto y el verbo auxiliar."
+  },
+  {
+    "sentence": "Seldom _ a more captivating story.",
+    "options": [
+      "I have heard",
+      "have I heard",
+      "I heard",
+      "did I hear"
+    ],
+    "correct": "have I heard",
+    "explanation": "Con <Seldom> al inicio, se invierte el sujeto y el verbo auxiliar."
+  },
+  {
+    "sentence": "Under no circumstances _ you reveal this information.",
+    "options": [
+      "should",
+      "will",
+      "can",
+      "do"
+    ],
+    "correct": "should",
+    "explanation": "Con <Under no circumstances> al inicio, se invierte el sujeto y el verbo auxiliar."
+  },
+  {
+    "sentence": "On no account _ you open that package.",
+    "options": [
+      "should",
+      "must",
+      "will",
+      "can"
+    ],
+    "correct": "must",
+    "explanation": "Con <On no account> al inicio, se invierte el sujeto y el verbo auxiliar."
+  },
+  {
+    "sentence": "In no way _ I agree with his proposal.",
+    "options": [
+      "do",
+      "did",
+      "will",
+      "can"
+    ],
+    "correct": "do",
+    "explanation": "Con <In no way> al inicio, se invierte el sujeto y el verbo auxiliar."
+  },
+  {
+    "sentence": "At no time _ he admit his mistake.",
+    "options": [
+      "did",
+      "does",
+      "will",
+      "can"
+    ],
+    "correct": "did",
+    "explanation": "Con <At no time> al inicio, se invierte el sujeto y el verbo auxiliar."
+  },
+  {
+    "sentence": "So successful _ the project that they expanded it.",
+    "options": [
+      "was",
+      "is",
+      "has been",
+      "had been"
+    ],
+    "correct": "was",
+    "explanation": "Con 'So + adjective/adverb' al inicio, se invierte el sujeto y el verbo."
+  },
+  {
+    "sentence": "Such _ the impact that it changed everything.",
+    "options": [
+      "was",
+      "is",
+      "has been",
+      "had been"
+    ],
+    "correct": "was",
+    "explanation": "Con <Such> al inicio, se invierte el sujeto y el verbo."
+  },
+  {
+    "sentence": "Not a single word _ she say.",
+    "options": [
+      "did",
+      "does",
+      "will",
+      "can"
+    ],
+    "correct": "did",
+    "explanation": "Con <Not a single word> al inicio, se invierte el sujeto y el verbo auxiliar."
+  },
+  {
+    "sentence": "Never in my life _ such a beautiful sight.",
+    "options": [
+      "I have seen",
+      "have I seen",
+      "I saw",
+      "did I see"
+    ],
+    "correct": "have I seen",
+    "explanation": "Con <Never in my life> al inicio, se invierte el sujeto y el verbo auxiliar."
+  },
+  {
+    "sentence": "Only then _ the truth come out.",
+    "options": [
+      "did",
+      "does",
+      "will",
+      "can"
+    ],
+    "correct": "did",
+    "explanation": "Con <Only then> al inicio, se invierte el sujeto y el verbo auxiliar."
+  },
+  {
+    "sentence": "Had I known, _ I would have helped.",
+    "options": [
+      "I would have helped",
+      "would I have helped",
+      "I helped",
+      "did I help"
+    ],
+    "correct": "I would have helped",
+    "explanation": "En oraciones condicionales sin <if>, se invierte el sujeto y el verbo auxiliar."
+  },
+  {
+    "sentence": "Should you need anything, _ me know.",
+    "options": [
+      "let",
+      "you let",
+      "do you let",
+      "you do let"
+    ],
+    "correct": "let",
+    "explanation": "En oraciones condicionales sin <if>, se invierte el sujeto y el verbo auxiliar."
+  },
+  {
+    "sentence": "Not only _ talented, but he is also very humble.",
+    "options": [
+      "he is",
+      "is he",
+      "he was",
+      "was he"
+    ],
+    "correct": "is he",
+    "explanation": "Con <Not only> al inicio, se invierte el sujeto y el verbo auxiliar."
+  },
+  {
+    "sentence": "So beautiful _ the scenery that I couldn't stop taking pictures.",
+    "options": [
+      "was",
+      "is",
+      "has been",
+      "had been"
+    ],
+    "correct": "was",
+    "explanation": "Con 'So + adjective/adverb' al inicio, se invierte el sujeto y el verbo."
+  },
+  {
+    "sentence": "Under no circumstances _ you leave the building.",
+    "options": [
+      "should",
+      "will",
+      "can",
+      "do"
+    ],
+    "correct": "should",
+    "explanation": "Con <Under no circumstances> al inicio, se invierte el sujeto y el verbo auxiliar."
+  },
+  {
+    "sentence": "Rarely _ such a complex problem.",
+    "options": [
+      "I have encountered",
+      "have I encountered",
+      "I encountered",
+      "did I encounter"
+    ],
+    "correct": "have I encountered",
+    "explanation": "Con <Rarely> al inicio, se invierte el sujeto y el verbo auxiliar."
+  },
+  {
+    "sentence": "Little _ about the consequences of his actions.",
+    "options": [
+      "did he think",
+      "he thought",
+      "thought he",
+      "he did think"
+    ],
+    "correct": "did he think",
+    "explanation": "Con <Little> al inicio, se invierte el sujeto y el verbo auxiliar."
+  },
+  {
+    "sentence": "No sooner had _ than the alarm went off.",
+    "options": [
+      "they arrived",
+      "they arrive",
+      "arrived they",
+      "did they arrive"
+    ],
+    "correct": "they arrived",
+    "explanation": "Con <No sooner had> al inicio, se usa la inversión del sujeto y el verbo auxiliar."
+  },
+  {
+    "sentence": "Hardly had _ when the phone rang.",
+    "options": [
+      "I finished",
+      "I finish",
+      "finished I",
+      "did I finish"
+    ],
+    "correct": "I finished",
+    "explanation": "Con <Hardly had> al inicio, se usa la inversión del sujeto y el verbo auxiliar."
+  },
+  {
+    "sentence": "Only when _ the truth did she understand.",
+    "options": [
+      "she heard",
+      "did she hear",
+      "heard she",
+      "she did hear"
+    ],
+    "correct": "she heard",
+    "explanation": "Con <Only when> al inicio, la inversión ocurre en la segunda cláusula."
+  },
+  {
+    "sentence": "Never again _ I make the same mistake.",
+    "options": [
+      "will",
+      "do",
+      "can",
+      "should"
+    ],
+    "correct": "will",
+    "explanation": "Con <Never again> al inicio, se invierte el sujeto y el verbo auxiliar."
+  },
+  {
+    "sentence": "On no account _ you open that door.",
+    "options": [
+      "should",
+      "must",
+      "will",
+      "can"
+    ],
+    "correct": "should",
+    "explanation": "Con <On no account> al inicio, se invierte el sujeto y el verbo auxiliar."
+  },
+  {
+    "sentence": "In no way _ I agree with his decision.",
+    "options": [
+      "do",
+      "did",
+      "will",
+      "can"
+    ],
+    "correct": "do",
+    "explanation": "Con <In no way> al inicio, se invierte el sujeto y el verbo auxiliar."
+  },
+  {
+    "sentence": "At no time _ he apologize for his behavior.",
+    "options": [
+      "did",
+      "does",
+      "will",
+      "can"
+    ],
+    "correct": "did",
+    "explanation": "Con <At no time> al inicio, se invierte el sujeto y el verbo auxiliar."
+  },
+  {
+    "sentence": "So quickly _ he run that no one could catch him.",
+    "options": [
+      "did",
+      "does",
+      "will",
+      "can"
+    ],
+    "correct": "did",
+    "explanation": "Con 'So + adjective/adverb' al inicio, se invierte el sujeto y el verbo."
+  },
+  {
+    "sentence": "Such _ the demand that they had to increase production.",
+    "options": [
+      "was",
+      "is",
+      "has been",
+      "had been"
+    ],
+    "correct": "was",
+    "explanation": "Con <Such> al inicio, se invierte el sujeto y el verbo."
+  },
+  {
+    "sentence": "Not a sound _ from the abandoned house.",
+    "options": [
+      "came",
+      "did come",
+      "comes",
+      "will come"
+    ],
+    "correct": "came",
+    "explanation": "Con <Not a sound> al inicio, se invierte el sujeto y el verbo."
+  },
+  {
+    "sentence": "Never in my wildest dreams _ I have imagined this.",
+    "options": [
+      "could",
+      "can",
+      "will",
+      "do"
+    ],
+    "correct": "could",
+    "explanation": "Con <Never in my wildest dreams> al inicio, se invierte el sujeto y el verbo auxiliar."
+  },
+  {
+    "sentence": "Only then _ the true extent of the damage become clear.",
+    "options": [
+      "did",
+      "does",
+      "will",
+      "can"
+    ],
+    "correct": "did",
+    "explanation": "Con <Only then> al inicio, se invierte el sujeto y el verbo auxiliar."
+  },
+  {
+    "sentence": "Were I to _ again, I would choose a different path.",
+    "options": [
+      "live",
+      "lived",
+      "living",
+      "to live"
+    ],
+    "correct": "live",
+    "explanation": "Inversión del segundo condicional sin <if>."
+  },
+  {
+    "sentence": "Only in this way _ solve the problem.",
+    "options": [
+      "we can",
+      "can we",
+      "we do",
+      "do we"
+    ],
+    "correct": "can we",
+    "explanation": "Cuando una frase comienza con <Only in this way>, se invierte el sujeto y el verbo auxiliar (<can we> en lugar de <we can>)."
+  },
+  {
+    "sentence": "Had I _ his advice, I would have succeeded.",
+    "options": [
+      "followed",
+      "follow",
+      "following",
+      "to follow"
+    ],
+    "correct": "followed",
+    "explanation": "Inversión del tercer condicional sin <if>."
+  }
+]

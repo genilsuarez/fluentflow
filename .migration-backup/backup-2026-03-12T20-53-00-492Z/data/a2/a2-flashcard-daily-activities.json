@@ -1,0 +1,282 @@
+[
+  {
+    "front": "hobby",
+    "back": "pasatiempo / hobby",
+    "ipa": "/ˈhɒbi/",
+    "example": "My hobby is playing the guitar.",
+    "example_es": "Mi pasatiempo es tocar la guitarra."
+  },
+  {
+    "front": "swimming",
+    "back": "natación",
+    "ipa": "/ˈswɪmɪŋ/",
+    "example": "I go swimming every Saturday morning.",
+    "example_es": "Voy a nadar todos los sábados por la mañana."
+  },
+  {
+    "front": "cycling",
+    "back": "ciclismo",
+    "ipa": "/ˈsaɪklɪŋ/",
+    "example": "Cycling is a great way to stay fit.",
+    "example_es": "El ciclismo es una gran forma de mantenerse en forma."
+  },
+  {
+    "front": "painting",
+    "back": "pintura (actividad)",
+    "ipa": "/ˈpeɪntɪŋ/",
+    "example": "She enjoys painting landscapes.",
+    "example_es": "Ella disfruta pintando paisajes."
+  },
+  {
+    "front": "gardening",
+    "back": "jardinería",
+    "ipa": "/ˈɡɑːrdənɪŋ/",
+    "example": "Gardening is very relaxing for me.",
+    "example_es": "La jardinería es muy relajante para mí."
+  },
+  {
+    "front": "cooking",
+    "back": "cocinar / cocina",
+    "ipa": "/ˈkʊkɪŋ/",
+    "example": "I love cooking Italian food.",
+    "example_es": "Me encanta cocinar comida italiana."
+  },
+  {
+    "front": "recipe",
+    "back": "receta",
+    "ipa": "/ˈresɪpi/",
+    "example": "Can you give me the recipe for this cake?",
+    "example_es": "¿Puedes darme la receta de este pastel?"
+  },
+  {
+    "front": "ingredient",
+    "back": "ingrediente",
+    "ipa": "/ɪnˈɡriːdiənt/",
+    "example": "We need fresh ingredients for the salad.",
+    "example_es": "Necesitamos ingredientes frescos para la ensalada."
+  },
+  {
+    "front": "shopping",
+    "back": "compras",
+    "ipa": "/ˈʃɒpɪŋ/",
+    "example": "Let's go shopping this afternoon.",
+    "example_es": "Vamos de compras esta tarde."
+  },
+  {
+    "front": "customer",
+    "back": "cliente",
+    "ipa": "/ˈkʌstəmər/",
+    "example": "The customer asked for a bigger size.",
+    "example_es": "El cliente pidió una talla más grande."
+  },
+  {
+    "front": "price",
+    "back": "precio",
+    "ipa": "/praɪs/",
+    "example": "What's the price of this jacket?",
+    "example_es": "¿Cuál es el precio de esta chaqueta?"
+  },
+  {
+    "front": "cheap",
+    "back": "barato",
+    "ipa": "/tʃiːp/",
+    "example": "This restaurant is cheap and good.",
+    "example_es": "Este restaurante es barato y bueno."
+  },
+  {
+    "front": "expensive",
+    "back": "caro",
+    "ipa": "/ɪkˈspensɪv/",
+    "example": "That hotel is too expensive for us.",
+    "example_es": "Ese hotel es demasiado caro para nosotros."
+  },
+  {
+    "front": "size",
+    "back": "talla / tamaño",
+    "ipa": "/saɪz/",
+    "example": "What size do you wear?",
+    "example_es": "¿Qué talla usas?"
+  },
+  {
+    "front": "job",
+    "back": "trabajo / empleo",
+    "ipa": "/dʒɒb/",
+    "example": "She found a new job last week.",
+    "example_es": "Ella encontró un nuevo trabajo la semana pasada."
+  },
+  {
+    "front": "office",
+    "back": "oficina",
+    "ipa": "/ˈɒfɪs/",
+    "example": "He works in an office in the city centre.",
+    "example_es": "Él trabaja en una oficina en el centro de la ciudad."
+  },
+  {
+    "front": "nurse",
+    "back": "enfermero/a",
+    "ipa": "/nɜːrs/",
+    "example": "The nurse checked my blood pressure.",
+    "example_es": "La enfermera revisó mi presión arterial."
+  },
+  {
+    "front": "mechanic",
+    "back": "mecánico",
+    "ipa": "/məˈkænɪk/",
+    "example": "The mechanic fixed my car in two hours.",
+    "example_es": "El mecánico arregló mi coche en dos horas."
+  },
+  {
+    "front": "waiter",
+    "back": "camarero / mesero",
+    "ipa": "/ˈweɪtər/",
+    "example": "The waiter brought us the menu.",
+    "example_es": "El camarero nos trajo el menú."
+  },
+  {
+    "front": "driver",
+    "back": "conductor / chofer",
+    "ipa": "/ˈdraɪvər/",
+    "example": "The bus driver was very friendly.",
+    "example_es": "El conductor del autobús fue muy amable."
+  },
+  {
+    "front": "happy",
+    "back": "feliz / contento",
+    "ipa": "/ˈhæpi/",
+    "example": "I'm very happy to see you again.",
+    "example_es": "Estoy muy feliz de verte de nuevo."
+  },
+  {
+    "front": "sad",
+    "back": "triste",
+    "ipa": "/sæd/",
+    "example": "She felt sad when her friend moved away.",
+    "example_es": "Se sintió triste cuando su amiga se mudó."
+  },
+  {
+    "front": "angry",
+    "back": "enfadado / enojado",
+    "ipa": "/ˈæŋɡri/",
+    "example": "Don't be angry with me. I'm sorry.",
+    "example_es": "No te enfades conmigo. Lo siento."
+  },
+  {
+    "front": "worried",
+    "back": "preocupado",
+    "ipa": "/ˈwʌrid/",
+    "example": "I'm worried about the exam tomorrow.",
+    "example_es": "Estoy preocupado por el examen de mañana."
+  },
+  {
+    "front": "excited",
+    "back": "emocionado / entusiasmado",
+    "ipa": "/ɪkˈsaɪtɪd/",
+    "example": "The children are excited about the trip.",
+    "example_es": "Los niños están emocionados por el viaje."
+  },
+  {
+    "front": "scared",
+    "back": "asustado",
+    "ipa": "/skeərd/",
+    "example": "Are you scared of spiders?",
+    "example_es": "¿Te asustan las arañas?"
+  },
+  {
+    "front": "surprised",
+    "back": "sorprendido",
+    "ipa": "/sərˈpraɪzd/",
+    "example": "I was surprised to see her at the party.",
+    "example_es": "Me sorprendió verla en la fiesta."
+  },
+  {
+    "front": "bored",
+    "back": "aburrido",
+    "ipa": "/bɔːrd/",
+    "example": "I'm bored. Let's do something fun.",
+    "example_es": "Estoy aburrido. Hagamos algo divertido."
+  },
+  {
+    "front": "tired",
+    "back": "cansado",
+    "ipa": "/taɪərd/",
+    "example": "I'm very tired after work today.",
+    "example_es": "Estoy muy cansado después del trabajo hoy."
+  },
+  {
+    "front": "proud",
+    "back": "orgulloso",
+    "ipa": "/praʊd/",
+    "example": "Her parents are very proud of her.",
+    "example_es": "Sus padres están muy orgullosos de ella."
+  },
+  {
+    "front": "bus stop",
+    "back": "parada de autobús",
+    "ipa": "/bʌs stɒp/",
+    "example": "Wait for me at the bus stop.",
+    "example_es": "Espérame en la parada de autobús."
+  },
+  {
+    "front": "train station",
+    "back": "estación de tren",
+    "ipa": "/treɪn ˈsteɪʃən/",
+    "example": "The train station is near the park.",
+    "example_es": "La estación de tren está cerca del parque."
+  },
+  {
+    "front": "airport",
+    "back": "aeropuerto",
+    "ipa": "/ˈeərpɔːrt/",
+    "example": "We arrived at the airport two hours early.",
+    "example_es": "Llegamos al aeropuerto dos horas antes."
+  },
+  {
+    "front": "ticket",
+    "back": "billete / entrada",
+    "ipa": "/ˈtɪkɪt/",
+    "example": "I bought a return ticket to London.",
+    "example_es": "Compré un billete de ida y vuelta a Londres."
+  },
+  {
+    "front": "passport",
+    "back": "pasaporte",
+    "ipa": "/ˈpɑːspɔːrt/",
+    "example": "Don't forget your passport at home.",
+    "example_es": "No olvides tu pasaporte en casa."
+  },
+  {
+    "front": "suitcase",
+    "back": "maleta",
+    "ipa": "/ˈsuːtkeɪs/",
+    "example": "My suitcase is very heavy.",
+    "example_es": "Mi maleta es muy pesada."
+  },
+  {
+    "front": "running",
+    "back": "correr / carrera",
+    "ipa": "/ˈrʌnɪŋ/",
+    "example": "I go running in the park every morning.",
+    "example_es": "Voy a correr al parque todas las mañanas."
+  },
+  {
+    "front": "team",
+    "back": "equipo",
+    "ipa": "/tiːm/",
+    "example": "Our team won the match yesterday.",
+    "example_es": "Nuestro equipo ganó el partido ayer."
+  },
+  {
+    "front": "match",
+    "back": "partido",
+    "ipa": "/mætʃ/",
+    "example": "Did you watch the football match last night?",
+    "example_es": "¿Viste el partido de fútbol anoche?"
+  },
+  {
+    "front": "lonely",
+    "back": "solo / solitario",
+    "ipa": "/ˈləʊnli/",
+    "example": "She feels lonely since she moved to a new city.",
+    "example_es": "Se siente sola desde que se mudó a una nueva ciudad."
+  }
+]
