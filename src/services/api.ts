@@ -5,25 +5,25 @@ import type { LearningModule } from '../types';
 
 /**
  * API Service Layer - Abstracts all API calls and data fetching logic
- * 
+ *
  * CACHE ARCHITECTURE (3 niveles):
- * 
+ *
  * 1. MEMORY CACHE (ApiService.cache)
  *    - TTL: 5 minutos
  *    - Propósito: Respuestas instantáneas durante la sesión activa
  *    - Scope: Solo en memoria, se pierde al recargar
- * 
+ *
  * 2. REACT QUERY CACHE (TanStack Query)
  *    - staleTime: 10-15 minutos
  *    - Propósito: Gestión de estado de queries, deduplicación, refetch automático
  *    - Scope: Sesión activa, con opciones de persistencia
- * 
+ *
  * 3. PERSISTENT CACHE (Service Worker + Cache API)
  *    - TTL: Indefinido (hasta que usuario borre o se actualice versión)
  *    - Propósito: Modo offline, disponibilidad sin red
  *    - Scope: Persistente entre sesiones, sobrevive recargas
  *    - Estrategia: Network-first con fallback a cache
- * 
+ *
  * FLUJO DE DATOS:
  * Online: Memory → Network → SW Cache (actualiza) → Memory Cache (actualiza)
  * Offline: Memory → SW Cache → Memory Cache (actualiza)
