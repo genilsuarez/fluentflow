@@ -87,47 +87,15 @@ self.addEventListener('fetch', (event) => {
   // Determinar qué cachear y con qué estrategia
   const isDataJson = url.pathname.includes('/data/') && url.pathname.endsWith('.json');
   const isModulesJson = url.pathname.includes('learningModules.json');
-  const isJsAsset = url.pathname.includes('/assets/') && url.pathname.endsWith('.js');
-  const isCssAsset = url.pathname.includes('/assets/') && url.pathname.endsWith('.css');
   const isHtml = url.pathname.endsWith('.html') || url.pathname === '/' || url.pathname.endsWith('/englishgame6/');
 
-  const shouldIntercept = isDataJson || isModulesJson || isJsAsset || isCssAsset || isHtml;
+  // NOTE: JS/CSS assets are NOT intercepted by SW
+  // Browser's native HTTP cache handles them better (respects hashes, ETags, etc)
+  // This prevents issues with stale cached assets after new deployments
+
+  const shouldIntercept = isDataJson || isModulesJson || isHtml;
 
   if (!shouldIntercept) {
-    return;
-  }
-
-  // Estrategia 1: Assets de JS/CSS → Cache-first (son inmutables por hash)
-  if (isJsAsset || isCssAsset) {
-    event.respondWith(
-      caches.open(ASSETS_CACHE).then(async (cache) => {
-        const normalizedUrl = normalizeUrl(request.url);
-        
-        // Try with normalized URL
-        let cached = await cache.match(normalizedUrl);
-        
-        if (cached) {
-          console.log('[SW] ✅ Asset from cache:', url.pathname);
-          return cached;
-        }
-
-        console.log('[SW] Asset not cached, fetching:', url.pathname);
-        try {
-          const response = await fetch(request);
-          if (response.ok) {
-            cache.put(normalizedUrl, response.clone());
-            console.log('[SW] ✅ Asset cached:', url.pathname);
-          }
-          return response;
-        } catch (error) {
-          console.error('[SW] ❌ Asset fetch failed:', url.pathname, error.message);
-          return new Response('Asset not available offline', { 
-            status: 503,
-            statusText: 'Service Unavailable'
-          });
-        }
-      })
-    );
     return;
   }
 

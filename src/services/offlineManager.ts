@@ -150,59 +150,21 @@ async function getUrlsForLevels(
  * Pre-cache JavaScript assets by loading the app's main chunks
  * This ensures component chunks are available offline
  */
-async function preCacheJavaScriptAssets(): Promise<void> {
-  try {
-    // Get all script tags from the current page
-    const scripts = Array.from(document.querySelectorAll('script[src]'));
-    const scriptUrls = scripts
-      .map(script => (script as HTMLScriptElement).src)
-      .filter(src => src.includes('/assets/') && src.endsWith('.js'));
-
-    if (scriptUrls.length === 0) {
-      console.warn('[OfflineManager] No JavaScript assets found to pre-cache');
-      return;
-    }
-
-    const assetsCache = await caches.open(ASSETS_CACHE);
-
-    for (const url of scriptUrls) {
-      try {
-        // Check if already cached
-        const cached = await assetsCache.match(url);
-        if (cached) {
-          continue;
-        }
-
-        // Fetch and cache
-        const response = await fetch(url);
-        if (response.ok) {
-          await assetsCache.put(url, response);
-        }
-      } catch (error) {
-        console.warn('[OfflineManager] Failed to cache JS asset:', url, error);
-      }
-    }
-  } catch (error) {
-    console.error('[OfflineManager] Pre-cache JavaScript assets failed:', error);
-  }
-}
-
 /**
  * Download content for the specified CEFR levels and categories into the Cache API.
  *
  * - Fetches learningModules.json, filters by level and category
  * - Downloads each file sequentially with retries (1 original + 2 retries, backoff 1s/2s)
- * - Pre-caches JavaScript assets for offline component loading
  * - Calls onProgress with monotonically increasing completed count
+ * 
+ * NOTE: JS/CSS assets are NOT pre-cached. Browser's native HTTP cache handles them.
+ * This prevents issues with stale cached assets after new deployments with different hashes.
  */
 export async function downloadLevels(
   levels: string[],
   onProgress: (progress: DownloadProgress) => void,
   categories: string[] = []
 ): Promise<DownloadProgress> {
-  // Pre-cache JavaScript assets first (critical for offline functionality)
-  await preCacheJavaScriptAssets();
-
   const allModules = await fetchModulesList();
   const urlsByLevel = await getUrlsForLevels(levels, categories, allModules);
 
