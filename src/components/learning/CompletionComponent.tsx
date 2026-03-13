@@ -57,7 +57,9 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
   // Auto-focus input when exercise changes or component mounts
   useEffect(() => {
     if (!showResult && processedExercises.length > 0) {
-      const editableEl = document.querySelector('.editable-input[contenteditable="true"]') as HTMLElement;
+      const editableEl = document.querySelector(
+        '.editable-input[contenteditable="true"]'
+      ) as HTMLElement;
       if (editableEl) {
         setTimeout(() => editableEl.focus(), 100);
       }
