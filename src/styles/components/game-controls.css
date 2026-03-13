@@ -398,7 +398,7 @@
   }
 
   .game-controls__nav-btn {
-    width: 3rem;   /* 48px - meets 44px minimum touch target */
+    width: 3rem; /* 48px - meets 44px minimum touch target */
     height: 3rem;
   }
 
@@ -430,7 +430,7 @@
   }
 
   .game-controls__nav-btn {
-    width: 2.75rem;  /* 44px - minimum touch target */
+    width: 2.75rem; /* 44px - minimum touch target */
     height: 2.75rem;
   }
 
