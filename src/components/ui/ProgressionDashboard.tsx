@@ -117,7 +117,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
   const toggleUnit = (unit: number) => {
     const newExpanded = new Set(expandedUnits);
     const isExpanding = !newExpanded.has(unit);
-    
+
     if (newExpanded.has(unit)) {
       newExpanded.delete(unit);
     } else {
