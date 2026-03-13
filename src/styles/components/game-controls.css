@@ -30,6 +30,7 @@
   color: var(--theme-text-secondary, #6b7280);
   flex-shrink: 0;
   box-shadow: var(--shadow-button-default);
+  touch-action: manipulation;
 }
 
 .game-controls__nav-btn:hover:not(:disabled) {
@@ -96,12 +97,13 @@
   border-radius: 9999px;
   cursor: pointer;
   font-weight: 600;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   transition: var(--transition-shadow), var(--transition-transform);
   flex-shrink: 0;
   box-shadow: var(--shadow-button-default);
   position: relative;
   overflow: hidden;
+  touch-action: manipulation;
 }
 
 /* Ripple effect for primary buttons */

@@ -154,6 +154,7 @@
   user-select: none;
   flex: 1;
   will-change: auto;
+  touch-action: manipulation;
 }
 
 .main-menu__view-btn:not(.main-menu__view-btn--active):hover {
@@ -463,6 +464,11 @@
     min-width: 44px;
     max-width: 100% !important;
     box-sizing: border-box !important;
+  }
+
+  .main-menu__view-btn {
+    font-size: 0.75rem;
+    padding: 0 0.5rem;
   }
 
   .main-menu__view-icon {

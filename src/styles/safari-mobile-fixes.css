@@ -1,287 +1,88 @@
 /* Safari Mobile Specific Fixes - SAFARI ONLY */
-/* Use CSS class applied by JavaScript for precise Safari detection */
+/* Applied via .browser-safari-mobile class set by JavaScript */
 
 .browser-safari-mobile {
-  /* === MAIN MENU HEADER FIXES === */
-
-  /* Progress button - must be blue like Chrome */
+  /* === MAIN MENU: BUTTON COLORS === */
+  /* Safari renders button backgrounds differently - force correct colors */
   .main-menu__view-btn--active {
-    background: #3b82f6 !important;
-    color: #ffffff !important;
-    border: none !important;
+    background: #3b82f6;
+    color: #ffffff;
+    border: none;
   }
 
-  /* All Modules button - white background like Chrome */
   .main-menu__view-btn:not(.main-menu__view-btn--active) {
-    background: #ffffff !important;
-    color: #374151 !important;
-    border: none !important;
+    background: #ffffff;
+    color: #374151;
+    border: none;
   }
 
-  /* === HIDE PASSWORD AUTOFILL BAR === */
-
-  /* Hide the iOS password autofill accessory bar */
+  /* === SEARCH INPUT: REMOVE NATIVE APPEARANCE === */
   input[type='text'],
   input[type='search'] {
-    -webkit-appearance: none !important;
-    appearance: none !important;
+    -webkit-appearance: none;
+    appearance: none;
   }
 
-  /* === SEARCH BAR FIX === */
-
-  /* Add search icon */
-  .search-bar::before {
-    content: '🔍';
-    position: absolute;
-    left: 0.75rem;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    pointer-events: none;
-  }
-
-  .search-bar {
-    position: relative;
-  }
-
+  /* Compensate for removed native appearance - restore padding for search icon */
   .search-bar input {
-    padding-left: 2.5rem !important;
+    padding-left: 2.5rem;
   }
 
-  /* Fix Continue button - now we know the class works */
+  /* === CONTINUE BUTTON FIX === */
   .progression-dashboard__continue-btn {
-    background: #ffffff !important;
-    color: #1e40af !important;
-    border: 2px solid #1e40af !important;
+    background: #ffffff;
+    color: #1e40af;
+    border: 2px solid #1e40af;
   }
 
-  /* Fix text overflow in module cards */
+  /* === MODULE CARD: TEXT OVERFLOW === */
   .module-card {
-    overflow: hidden !important;
+    overflow: hidden;
   }
 
   .module-card__title {
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    white-space: nowrap !important;
-    max-width: 100% !important;
-    width: 100% !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    width: 100%;
   }
 
   .module-card__content {
-    overflow: hidden !important;
-    width: 100% !important;
+    overflow: hidden;
+    width: 100%;
   }
 
-  /* === BUTTON TEXT OVERFLOW FIXES - ULTRA AGGRESSIVE === */
-
-  /* Fix main menu view toggle buttons - Maximum specificity */
-  .main-menu .main-menu__header .main-menu__view-toggle .main-menu__view-btn {
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    white-space: nowrap !important;
-    padding: 0.375rem 0.25rem !important;
-    font-size: 0.55rem !important;
-    line-height: 1.1 !important;
-    min-width: 0 !important;
-    max-width: 100% !important;
-    flex: 1 !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 0.125rem !important;
-    box-sizing: border-box !important;
-    word-break: break-all !important;
-    hyphens: auto !important;
-  }
-
-  /* Alternative approach - force smaller container */
-  .main-menu .main-menu__view-toggle {
-    min-width: 120px !important;
-    max-width: 150px !important;
-    width: 135px !important;
-    overflow: hidden !important;
-    box-sizing: border-box !important;
-  }
-
-  /* Force text to fit - even more aggressive */
+  /* === VIEW TOGGLE BUTTONS === */
+  /* Safari flex buttons overflow with 0.875rem - use 0.75rem which fits comfortably */
   .main-menu__view-btn {
-    font-size: 0.5rem !important;
-    padding: 0.25rem 0.125rem !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    white-space: nowrap !important;
-    min-width: 0 !important;
-    flex: 1 !important;
-    box-sizing: border-box !important;
-  }
-
-  /* Fix modal buttons */
-  .modal__btn {
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    white-space: nowrap !important;
-    padding: 0.5rem 0.75rem !important;
     font-size: 0.75rem !important;
-    line-height: 1.2 !important;
-    min-width: 0 !important;
-    max-width: 100% !important;
-    box-sizing: border-box !important;
+    padding: 0.375rem 0.5rem !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+    flex: 1;
+    box-sizing: border-box;
   }
 
-  /* Fix navigation buttons */
-  .nav-btn {
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    white-space: nowrap !important;
-    padding: 0.5rem 0.75rem !important;
-    font-size: 0.75rem !important;
-    line-height: 1.2 !important;
-    min-width: 0 !important;
-    max-width: 100% !important;
-    box-sizing: border-box !important;
-  }
-
-  /* Fix any generic button elements */
-  button {
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    white-space: nowrap !important;
-    box-sizing: border-box !important;
-  }
-
-  /* Fix button text containers */
-  button span,
-  button div {
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    white-space: nowrap !important;
-    max-width: 100% !important;
-  }
-
-  /* Specific fix for view toggle container */
   .main-menu__view-toggle {
-    overflow: hidden !important;
-    min-width: 140px !important;
-    max-width: 180px !important;
-    width: 160px !important;
+    overflow: hidden;
+    box-sizing: border-box;
+    flex-shrink: 0;
   }
 
-  /* === SAFARI MOBILE BUTTON TEXT REPLACEMENT === */
-
-  /* Replace "Progress" and "All Modules" with shorter text */
-  .main-menu__view-btn {
-    font-size: 0 !important;
-    /* Hide original text */
-    position: relative !important;
-    overflow: hidden !important;
-    padding: 0.375rem 0.25rem !important;
-    min-width: 0 !important;
-    flex: 1 !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 0.25rem !important;
-    box-sizing: border-box !important;
-  }
-
-  /* Show shorter text for Progress button */
-  .main-menu__view-btn:first-child::after {
-    content: 'Prog' !important;
-    font-size: 0.6rem !important;
-    font-weight: 600 !important;
-    line-height: 1.2 !important;
-    color: inherit !important;
-    display: block !important;
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    max-width: 100% !important;
-  }
-
-  /* Show shorter text for All Modules button */
-  .main-menu__view-btn:last-child::after {
-    content: 'All' !important;
-    font-size: 0.6rem !important;
-    font-weight: 600 !important;
-    line-height: 1.2 !important;
-    color: inherit !important;
-    display: block !important;
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    max-width: 100% !important;
-  }
-
-  /* Ensure icons are still visible */
-  .main-menu__view-btn .main-menu__view-icon {
-    width: 0.875rem !important;
-    height: 0.875rem !important;
-    flex-shrink: 0 !important;
-    opacity: 1 !important;
-  }
-
-  /* Active state colors for pseudo-elements */
-  .main-menu__view-btn--active::after {
-    color: #ffffff !important;
-  }
-
-  /* Non-active state colors for pseudo-elements */
-  .main-menu__view-btn:not(.main-menu__view-btn--active)::after {
-    color: #374151 !important;
-  }
-
-  /* Fix for small screens - even shorter text */
-  @media (max-width: 400px) {
-    .main-menu__view-btn:first-child::after {
-      content: 'P' !important;
-      font-size: 0.7rem !important;
-    }
-
-    .main-menu__view-btn:last-child::after {
-      content: 'A' !important;
-      font-size: 0.7rem !important;
-    }
-
-    .modal__btn {
-      font-size: 0.6rem !important;
-      padding: 0.25rem 0.375rem !important;
-    }
-  }
-
-  /* Ultra small screens - icons only */
-  @media (max-width: 350px) {
-    .main-menu__view-btn {
-      font-size: 0 !important;
-      padding: 0.375rem !important;
-    }
-
-    .main-menu__view-btn::after {
-      display: none !important;
-    }
-
-    .main-menu__view-icon {
-      width: 1rem !important;
-      height: 1rem !important;
-    }
-
-    .main-menu__view-toggle {
-      min-width: 80px !important;
-      max-width: 100px !important;
-      width: 90px !important;
-    }
-  }
-
-  /* Medium screens - slightly longer abbreviations */
-  @media (min-width: 401px) and (max-width: 500px) {
-    .main-menu__view-btn:first-child::after {
-      content: 'Prog' !important;
-      font-size: 0.65rem !important;
-    }
-
-    .main-menu__view-btn:last-child::after {
-      content: 'Mods' !important;
-      font-size: 0.65rem !important;
-    }
+  /* === MODAL AND NAV BUTTONS === */
+  .modal__btn,
+  .nav-btn {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.75rem;
+    line-height: 1.2;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 }
