@@ -1,4 +1,4 @@
-import React, { useId } from 'react';
+import React, { useId, useRef } from 'react';
 import { Search, X } from 'lucide-react';
 import '../../styles/components/search-bar.css';
 
@@ -17,11 +17,25 @@ export const SearchBar: React.FC<SearchBarProps> = ({
 }) => {
   const searchId = useId();
   const clearButtonId = useId();
-  const [isReadOnly, setIsReadOnly] = React.useState(true);
+  const divRef = useRef<HTMLDivElement>(null);
 
-  // Remove readonly on first interaction to prevent password bar
-  const handleFocus = () => {
-    setIsReadOnly(false);
+  // Update div content when query changes externally
+  React.useEffect(() => {
+    if (divRef.current && divRef.current.textContent !== query) {
+      divRef.current.textContent = query;
+    }
+  }, [query]);
+
+  const handleInput = (e: React.FormEvent<HTMLDivElement>) => {
+    const newValue = e.currentTarget.textContent || '';
+    onQueryChange(newValue);
+  };
+
+  const handlePaste = (e: React.ClipboardEvent<HTMLDivElement>) => {
+    // Prevent pasting formatted text
+    e.preventDefault();
+    const text = e.clipboardData.getData('text/plain');
+    document.execCommand('insertText', false, text);
   };
 
   return (
@@ -32,27 +46,19 @@ export const SearchBar: React.FC<SearchBarProps> = ({
       <div className="search-bar__icon" aria-hidden="true">
         <Search className="search-bar__icon-svg" />
       </div>
-      <input
+      <div
+        ref={divRef}
         id={searchId}
-        type="search"
-        inputMode="search"
-        name="search"
-        value={query}
-        onChange={e => onQueryChange(e.target.value)}
-        onFocus={handleFocus}
+        contentEditable={!disabled}
+        onInput={handleInput}
+        onPaste={handlePaste}
         className="search-bar__input"
-        placeholder={placeholder}
-        disabled={disabled}
-        readOnly={isReadOnly}
-        autoComplete="off"
-        autoCorrect="off"
-        autoCapitalize="off"
-        spellCheck="false"
-        data-form-type="other"
-        data-lpignore="true"
-        data-1p-ignore="true"
-        aria-describedby={query ? clearButtonId : undefined}
+        data-placeholder={!query ? placeholder : ''}
+        role="searchbox"
         aria-label="Search learning modules by name, category, or topic"
+        aria-describedby={query ? clearButtonId : undefined}
+        data-form-type="other"
+        suppressContentEditableWarning
       />
       {query && !disabled && (
         <button

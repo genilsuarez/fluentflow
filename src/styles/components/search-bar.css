@@ -135,6 +135,19 @@
   font-size: 0.75rem;
 }
 
+/* Placeholder for contentEditable div */
+.search-bar__input:empty::before {
+  content: attr(data-placeholder);
+  color: var(--theme-text-tertiary, #9ca3af);
+  font-weight: 400;
+  font-size: 0.75rem;
+  pointer-events: none;
+}
+
+.search-bar__input:focus:empty::before {
+  color: var(--theme-text-secondary, #6b7280);
+}
+
 .search-bar__input:disabled {
   opacity: 0.6;
   cursor: not-allowed;

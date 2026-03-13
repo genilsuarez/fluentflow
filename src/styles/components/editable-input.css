@@ -18,6 +18,10 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  
+  /* Prevent iOS form navigation bar */
+  -webkit-user-select: text;
+  user-select: text;
 }
 
 .editable-input:focus {

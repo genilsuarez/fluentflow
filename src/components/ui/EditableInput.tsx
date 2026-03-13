@@ -74,6 +74,8 @@ export const EditableInput: React.FC<EditableInputProps> = ({
       role="textbox"
       aria-label={placeholder}
       suppressContentEditableWarning
+      // Prevent iOS form navigation bar
+      data-form-type="other"
     />
   );
 };
