@@ -17,6 +17,8 @@ export const useMenuNavigation = () => {
       }
     }
 
+    // Clear the hash so re-entering the same module works correctly
+    window.location.hash = '#/menu';
     setCurrentView('menu');
     // The MainMenu component will automatically use the previousMenuContext
     // to set the correct view mode when it mounts

@@ -163,20 +163,8 @@ export const MainMenu: React.FC = () => {
     // Save current menu context before navigating to learning mode
     setPreviousMenuContext(viewMode);
 
-    // Force hash change even if it's the same module
-    // This ensures the module loads even after exiting it
-    const targetHash = `#/learn/${module.id}`;
-    if (window.location.hash === targetHash) {
-      // Hash is the same, force reload by clearing and setting again
-      window.location.hash = '#/menu';
-      // Use setTimeout to ensure the hash change is processed
-      setTimeout(() => {
-        window.location.hash = targetHash;
-      }, 0);
-    } else {
-      // Different hash, just set it normally
-      window.location.hash = targetHash;
-    }
+    // Navigate to the module
+    window.location.hash = `#/learn/${module.id}`;
   };
 
   if (isLoading) {
