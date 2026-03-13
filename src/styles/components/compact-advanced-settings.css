@@ -661,6 +661,14 @@
 
   .compact-settings__toggles-row {
     gap: 0.25rem;
+    /* Stack toggles vertically on small screens — prevents overflow */
+    flex-direction: column;
+  }
+
+  .compact-settings__toggles-row .compact-settings__field--dev {
+    flex: none;
+    width: 100%;
+    max-width: 22rem;
   }
 
   /* AGGRESSIVE COMPACTION for game settings and categories */
