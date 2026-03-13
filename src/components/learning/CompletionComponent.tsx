@@ -59,7 +59,6 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
   // Focus input on mount
   useEffect(() => {
     inputRef.current?.focus();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const checkAnswer = useCallback(() => {
