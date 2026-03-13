@@ -69,15 +69,6 @@ const Toast: React.FC<ToastProps> = ({ toast, onClose }) => {
       aria-live="polite"
       aria-atomic="true"
       className={`${baseClass} ${modifierClass} ${stateClass}`}
-      style={{
-        // Override CSS animations with JavaScript state
-        transform: isLeaving
-          ? 'translateX(100%)'
-          : isVisible
-            ? 'translateX(0)'
-            : 'translateX(100%)',
-        opacity: isLeaving ? 0 : isVisible ? 1 : 0,
-      }}
     >
       <div className={`${baseClass}__container`}>
         <div className={`${baseClass}__content`}>

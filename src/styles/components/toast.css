@@ -44,15 +44,12 @@
 /* === RESPONSIVE === */
 @media (max-width: 640px) {
   .toast-container {
-    top: 0.5rem;
-    right: 0.5rem;
-    left: 0.5rem;
+    top: 0.75rem;
+    right: 50%;
+    left: auto;
+    transform: translateX(50%);
     max-width: none;
-  }
-
-  .toast {
-    min-width: 0;
-    width: 100%;
+    width: auto;
   }
 }
 

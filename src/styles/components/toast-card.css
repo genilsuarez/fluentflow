@@ -224,55 +224,81 @@
 
 /* === MOBILE RESPONSIVE === */
 @media (max-width: 767px) {
+  /* Toast container: centered at top */
+  .toast-container {
+    top: 0.75rem;
+    right: 50%;
+    left: auto;
+    transform: translateX(50%);
+    max-width: none;
+    width: auto;
+  }
+
+  /* Pill shape — compact, auto-width */
   .toast-card {
-    width: calc(100vw - 24px);
-    max-width: 100%;
-    margin: 0 12px 8px 12px;
+    width: auto;
+    max-width: calc(100vw - 2rem);
+    min-width: 0;
+    margin: 0 0 6px 0;
+    border-radius: 999px;
+    border-left-width: 1px; /* override the 4px colored left border */
+    min-height: 0;
   }
 
   .toast-card__content {
-    padding: 14px;
+    padding: 8px 14px;
+    gap: 6px;
+    align-items: center;
   }
 
   .toast-card__icon {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
+    margin-top: 0;
   }
 
   .toast-card__icon-svg {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
   }
 
   .toast-card__title {
-    font-size: 15px;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
   }
 
+  /* Hide message on mobile — title alone is enough for quick feedback */
   .toast-card__message {
-    font-size: 13px;
+    display: none;
+  }
+
+  /* Hide close button on mobile — toasts are short-lived */
+  .toast-card__close {
+    display: none;
   }
 
   .toast-card__action {
-    min-height: 44px;
-    padding: 6px 12px;
-    font-size: 13px;
+    min-height: 32px;
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 999px;
   }
 
-  .toast-card__close {
-    min-width: 48px;
-    min-height: 48px;
-  }
-}
-
-@media (max-width: 419px) {
-  .toast-card {
-    width: calc(100vw - 16px);
-    margin: 0 8px 8px 8px;
+  /* Slide down from top instead of from right */
+  .toast-card--entering {
+    transform: translateY(-120%);
+    opacity: 0;
   }
 
-  .toast-card__content {
-    padding: 12px;
-    gap: 6px;
+  .toast-card--visible {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .toast-card--exiting {
+    transform: translateY(-120%);
+    opacity: 0;
   }
 }
 
