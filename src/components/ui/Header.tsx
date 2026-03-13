@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { User, Settings, Menu, BarChart3, BookOpen, LogOut, WifiOff } from 'lucide-react';
 import '../../styles/components/header.css';
 import { useAppStore } from '../../stores/appStore';
@@ -167,24 +168,37 @@ export const Header: React.FC<HeaderProps> = () => {
         </div>
       </div>
 
-      {/* Compact Modals - Optimized versions */}
-      {showProfileForm && (
-        <CompactProfile isOpen={showProfileForm} onClose={() => setShowProfileForm(false)} />
+      {/* Compact Modals - rendered via portal to avoid event bubbling to header */}
+      {showProfileForm && createPortal(
+        <CompactProfile isOpen={showProfileForm} onClose={() => setShowProfileForm(false)} />,
+        document.body
       )}
 
-      <CompactAdvancedSettings isOpen={showSettings} onClose={() => setShowSettings(false)} />
+      {createPortal(
+        <CompactAdvancedSettings isOpen={showSettings} onClose={() => setShowSettings(false)} />,
+        document.body
+      )}
 
-      <CompactAbout isOpen={showAbout} onClose={() => setShowAbout(false)} />
+      {createPortal(
+        <CompactAbout isOpen={showAbout} onClose={() => setShowAbout(false)} />,
+        document.body
+      )}
 
-      <CompactProgressDashboard
-        isOpen={showProgressDashboard}
-        onClose={() => setShowProgressDashboard(false)}
-      />
+      {createPortal(
+        <CompactProgressDashboard
+          isOpen={showProgressDashboard}
+          onClose={() => setShowProgressDashboard(false)}
+        />,
+        document.body
+      )}
 
-      <CompactLearningPath
-        isOpen={showModuleProgression}
-        onClose={() => setShowModuleProgression(false)}
-      />
+      {createPortal(
+        <CompactLearningPath
+          isOpen={showModuleProgression}
+          onClose={() => setShowModuleProgression(false)}
+        />,
+        document.body
+      )}
 
       {showSideMenu && (
         <div

@@ -2,6 +2,8 @@
 
 /* === CLOSE BUTTON STANDARD === */
 .modal__close-btn {
+  width: 2.75rem;   /* 44px - meets minimum touch target */
+  height: 2.75rem;
   padding: var(--padding-sm, 0.5rem);
   color: var(--theme-text-tertiary, #9ca3af);
   background-color: transparent;
@@ -12,6 +14,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1; /* Ensure above decorative overlays */
 }
 
 .modal__close-btn:hover {

@@ -118,7 +118,7 @@ export const CompactProfile: React.FC<CompactProfileProps> = ({ isOpen, onClose 
             <User className="compact-profile__icon" />
             <h2 className="compact-profile__title">{t('modals.userProfile')}</h2>
           </div>
-          <button onClick={onClose} className="modal__close-btn" aria-label={t('common.close')}>
+          <button type="button" onClick={onClose} className="modal__close-btn" aria-label={t('common.close')}>
             <X className="modal__close-icon" />
           </button>
         </div>

@@ -842,8 +842,8 @@ html:not(.dark) .compact-about .compact-about__info-value {
 
 /* Larger close button for mobile accessibility */
 .compact-about__header .modal__close-btn {
-  width: 2rem;
-  height: 2rem;
+  width: 2.75rem;
+  height: 2.75rem;
   padding: 0.375rem;
 }
 
