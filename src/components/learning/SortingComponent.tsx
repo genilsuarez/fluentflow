@@ -280,8 +280,15 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
     e.preventDefault();
   };
 
+  // Haptic feedback helper
+  const vibrate = (pattern: number | number[]) => {
+    if (navigator.vibrate) navigator.vibrate(pattern);
+  };
+
   // Unified move function for both desktop and mobile
   const moveWordToCategory = (word: string, categoryName: string) => {
+    vibrate(30); // short tap feedback on drop
+
     // Remove from available words
     setAvailableWords(prev => prev.filter(w => w !== word));
 
