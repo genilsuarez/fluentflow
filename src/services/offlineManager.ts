@@ -26,8 +26,6 @@ export interface LevelStorageInfo {
   sizeBytes: number;
 }
 
-
-
 /**
  * Fetch with retries: 1 original attempt + 2 retries with backoff (1s, 2s)
  */
