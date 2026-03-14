@@ -26,29 +26,7 @@ export interface LevelStorageInfo {
   sizeBytes: number;
 }
 
-/**
- * Normalize URL for consistent cache storage and retrieval
- * Removes query params, trailing slashes, and ensures absolute format
- */
-function normalizeUrl(url: string): string {
-  try {
-    const parsed = new URL(
-      url,
-      typeof window !== 'undefined' ? window.location.origin : 'https://gsphome.github.io'
-    );
-    // Remove query params for consistent matching
-    parsed.search = '';
-    // Remove hash
-    parsed.hash = '';
-    // Remove trailing slash from pathname
-    parsed.pathname = parsed.pathname.replace(/\/$/, '');
-    return parsed.href;
-  } catch (error) {
-    // If URL parsing fails, return original
-    console.warn('[OfflineManager] Failed to normalize URL:', url, error);
-    return url;
-  }
-}
+
 
 /**
  * Fetch with retries: 1 original attempt + 2 retries with backoff (1s, 2s)
@@ -147,10 +125,6 @@ async function getUrlsForLevels(
 }
 
 /**
- * Pre-cache JavaScript assets by loading the app's main chunks
- * This ensures component chunks are available offline
- */
-/**
  * Download content for the specified CEFR levels and categories into the Cache API.
  *
  * - Fetches learningModules.json, filters by level and category
@@ -196,12 +170,11 @@ export async function downloadLevels(
   // Download sequentially
   for (const url of allUrls) {
     try {
-      const normalizedUrl = normalizeUrl(url);
-      const response = await fetchWithRetries(normalizedUrl);
-      // Store with normalized URL for consistent retrieval
-      await cache.put(normalizedUrl, response);
+      const response = await fetchWithRetries(url);
+      // Store with the same URL the SW uses (no normalization needed)
+      await cache.put(url, response);
       completed++;
-      logDebug('Downloaded and cached', { url: normalizedUrl }, 'OfflineManager');
+      logDebug('Downloaded and cached', { url }, 'OfflineManager');
     } catch (error) {
       console.error('[OfflineManager] ❌ Failed:', url, error);
       failed.push(url);
@@ -344,7 +317,7 @@ export async function verifyCacheIntegrity(
 
     const urlsForLevel = modulesForLevel
       .filter(m => m.dataPath)
-      .map(m => normalizeUrl(resolveDataPath(m.dataPath!)));
+      .map(m => resolveDataPath(m.dataPath!));
 
     if (urlsForLevel.length === 0) {
       continue;
