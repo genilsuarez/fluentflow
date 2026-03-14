@@ -28,8 +28,7 @@ const secureFetch = async (url: string, options: SecureFetchOptions = {}): Promi
   // Security headers for requests
   // NOTE: Do NOT add Cache-Control: no-cache for same-origin requests —
   // it bypasses the Service Worker cache and breaks offline mode.
-  const isSameOrigin =
-    typeof window !== 'undefined' && url.startsWith(window.location.origin);
+  const isSameOrigin = typeof window !== 'undefined' && url.startsWith(window.location.origin);
 
   const secureHeaders: globalThis.HeadersInit = {
     'X-Requested-With': 'XMLHttpRequest',
@@ -132,8 +131,7 @@ export const secureJsonFetch = async <T = any>(
 ): Promise<T> => {
   // Do NOT send Cache-Control: no-cache for same-origin asset requests.
   // Those headers bypass the Service Worker cache, breaking offline mode.
-  const isSameOrigin =
-    typeof window !== 'undefined' && url.startsWith(window.location.origin);
+  const isSameOrigin = typeof window !== 'undefined' && url.startsWith(window.location.origin);
 
   const response = await secureFetch(url, {
     ...options,

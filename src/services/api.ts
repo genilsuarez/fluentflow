@@ -124,8 +124,7 @@ class ApiService {
         const cache = await caches.open('fluentflow-offline-v5');
         // Normalize URL to match how SW stores it (no query params, no trailing slash)
         const normalizedUrl = normalizeUrlForCache(modulesUrl);
-        const cacheResponse =
-          (await cache.match(normalizedUrl)) ?? (await cache.match(modulesUrl));
+        const cacheResponse = (await cache.match(normalizedUrl)) ?? (await cache.match(modulesUrl));
 
         if (cacheResponse) {
           const modules = await cacheResponse.json();
@@ -220,8 +219,12 @@ class ApiService {
         // - Objects with .data property (reading mode): extract it
         // - Plain objects: wrap in array for consistent access
         // NOTE: use explicit null/undefined check — data.data could be 0, false, or ""
-        let processedData = (data.data !== null && data.data !== undefined) ? data.data : data;
-        if (!Array.isArray(processedData) && typeof processedData === 'object' && processedData !== null) {
+        let processedData = data.data !== null && data.data !== undefined ? data.data : data;
+        if (
+          !Array.isArray(processedData) &&
+          typeof processedData === 'object' &&
+          processedData !== null
+        ) {
           processedData = [processedData];
         }
 
