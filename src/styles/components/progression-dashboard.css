@@ -698,13 +698,13 @@ html.dark .progression-dashboard__unit-stats:hover {
     gap: 0.15rem;
     margin-bottom: 0.1rem;
     height: auto;
-    min-height: 30px;
-    max-height: 30px;
+    min-height: 26px;
+    max-height: 26px;
     padding: 0.05rem;
   }
 
   .progression-dashboard__unit-title {
-    font-size: 0.8125rem;
+    font-size: 0.75rem;
     line-height: 1.2;
   }
 

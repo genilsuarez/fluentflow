@@ -11,8 +11,8 @@
   --grid-padding-large-desktop: 2px;
 
   /* Heights optimized for 4 columns grid with exactly 4 visible rows - COMPACT */
-  /* Mobile: 2 cols, 3.5 rows visible = ~7 modules - reduced ~12% for better fit */
-  --grid-height-mobile: calc(var(--card-height-mobile) * 3.5 + 0.5rem * 3 + 0.5rem);
+  /* Mobile: 2 cols, 4 rows visible = 8 modules */
+  --grid-height-mobile: calc(var(--card-height-mobile) * 4 + 0.5rem * 3 + 0.5rem);
 
   /* Tablet: 3 cols, 4 rows visible = 12 modules - reduced for compactness */
   --grid-height-tablet: calc(var(--card-height-tablet) * 4 + 0.625rem * 3 + 0.625rem);
