@@ -236,15 +236,15 @@
 
 @media (max-width: 639px) {
   .flashcard-component__card {
-    height: 10rem;
+    height: 9.5rem;
   }
 
   .flashcard-component__front-text {
-    font-size: 1.5rem;
+    font-size: 1.375rem;
   }
 
   .flashcard-component__back-answer {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 }
 

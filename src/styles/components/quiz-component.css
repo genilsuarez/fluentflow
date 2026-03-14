@@ -288,23 +288,53 @@
 /* === MOBILE OPTIMIZATIONS === */
 @media (max-width: 768px) {
   .quiz-component {
-    padding: 0.5rem;
+    padding: 0.375rem;
   }
 
   .quiz-component__options {
     grid-template-columns: 1fr;
+    gap: 0.375rem;
+    margin-bottom: 0.5rem;
   }
 
   .quiz-component__question-card {
-    padding: 1rem;
+    padding: 0.625rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .quiz-component__question-title {
+    font-size: 0.9375rem;
+    margin-bottom: 0.5rem;
   }
 
   .quiz-component__option {
-    padding: 1rem;
+    padding: 0.625rem 0.75rem;
   }
 
   .quiz-component__option-text {
-    font-size: 1rem;
+    font-size: 0.875rem;
+  }
+
+  .quiz-component__explanation-container--visible {
+    max-height: 5rem;
+  }
+
+  .quiz-component__explanation {
+    padding: 0.375rem 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .quiz-component__question-card {
+    padding: 0.5rem;
+  }
+
+  .quiz-component__option {
+    padding: 0.5rem 0.625rem;
+  }
+
+  .quiz-component__option-text {
+    font-size: 0.8125rem;
   }
 }
 
