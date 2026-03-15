@@ -100,10 +100,8 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
     }));
 
     if (pairs.length > 0) {
-      const terms = pairs
-        .map((pair: { left: string; right: string }) => pair.left);
-      const definitions = pairs
-        .map((pair: { left: string; right: string }) => pair.right);
+      const terms = pairs.map((pair: { left: string; right: string }) => pair.left);
+      const definitions = pairs.map((pair: { left: string; right: string }) => pair.right);
 
       setLeftItems(conditionalShuffle(terms, randomizeItems));
       setRightItems(conditionalShuffle(definitions, randomizeItems));
@@ -199,10 +197,8 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
   };
 
   const resetExercise = () => {
-    const terms = pairs
-      .map((pair: { left: string; right: string }) => pair.left);
-    const definitions = pairs
-      .map((pair: { left: string; right: string }) => pair.right);
+    const terms = pairs.map((pair: { left: string; right: string }) => pair.left);
+    const definitions = pairs.map((pair: { left: string; right: string }) => pair.right);
 
     setLeftItems(conditionalShuffle(terms, randomizeItems));
     setRightItems(conditionalShuffle(definitions, randomizeItems));
