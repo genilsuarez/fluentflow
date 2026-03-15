@@ -7,7 +7,7 @@
 
 /* === LEARNING PROGRESS HEADER BLOCK === */
 .learning-progress-header {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   text-align: center;
   flex-shrink: 0; /* Never compress in flex column layouts */
 }
@@ -16,7 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.375rem;
 }
 
 .learning-progress-header__title {
