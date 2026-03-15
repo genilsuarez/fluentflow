@@ -45,6 +45,14 @@ body {
   html:has(.layout-container[data-view='menu']) {
     background-color: #ffffff;
   }
+
+  html.dark body:has(.layout-container[data-view='menu']) {
+    background-color: #111827;
+  }
+
+  html.dark:has(.layout-container[data-view='menu']) {
+    background-color: #111827;
+  }
 }
 
 .dark body {
