@@ -190,31 +190,23 @@ html body .matching-component .matching-component__item--selected {
   transition: var(--transition-interactive);
 }
 
-/* CORRECT STATE - Soft success styling with better UX */
+/* CORRECT STATE - Homologated with quiz component */
 .matching-component__item--correct {
-  background: linear-gradient(
-    135deg,
-    rgba(34, 197, 94, 0.12) 0%,
-    rgba(34, 197, 94, 0.08) 100%
-  ) !important;
-  border: 2px solid rgba(34, 197, 94, 0.4) !important;
-  color: #166534 !important;
-  box-shadow: var(--shadow-card-hover) !important;
+  background-color: var(--theme-success, #10b981) !important;
+  border-color: transparent !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2) !important;
   font-weight: 600 !important;
   transition: var(--transition-interactive) !important;
   animation: pulse-success var(--animation-normal) ease-out !important;
 }
 
-/* INCORRECT STATE - Soft error styling with better UX */
+/* INCORRECT STATE - Homologated with quiz component */
 .matching-component__item--incorrect {
-  background: linear-gradient(
-    135deg,
-    rgba(239, 68, 68, 0.15) 0%,
-    rgba(239, 68, 68, 0.1) 100%
-  ) !important;
-  border: 2px solid rgba(239, 68, 68, 0.5) !important;
-  color: #991b1b !important;
-  box-shadow: var(--shadow-card-hover) !important;
+  background-color: var(--theme-error, #ef4444) !important;
+  border-color: transparent !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2) !important;
   font-weight: 600 !important;
   transition: var(--transition-interactive) !important;
 }
@@ -865,7 +857,7 @@ button.matching-component__item.matching-component__item--correct .matching-comp
 .matching-component__item--correct .matching-component__item-text {
   color: #ffffff !important;
   font-weight: 700 !important;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+  text-shadow: none !important;
   /* Force white text on correct state */
 }
 
@@ -880,7 +872,7 @@ button.matching-component__item.matching-component__item--incorrect .matching-co
 .matching-component__item--incorrect .matching-component__item-text {
   color: #ffffff !important;
   font-weight: 700 !important;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+  text-shadow: none !important;
   /* Force white text on incorrect state */
 }
 
@@ -990,12 +982,14 @@ button.matching-component__item.matching-component__item--selected .matching-com
 }
 
 .dark .matching-component__item--correct {
-  background: #166534 !important;
+  background-color: var(--theme-success, #10b981) !important;
+  border-color: transparent !important;
   color: #ffffff !important;
 }
 
 .dark .matching-component__item--incorrect {
-  background: #991b1b !important;
+  background-color: var(--theme-error, #ef4444) !important;
+  border-color: transparent !important;
   color: #ffffff !important;
 }
 
@@ -1142,22 +1136,19 @@ button.matching-component__item.matching-component__button,
 /* Force compact columns - consolidated into html body selectors above */
 
 /* ===== FINAL OVERRIDE - MAXIMUM SPECIFICITY FOR CORRECT ANSWERS ===== */
-/* This section has the highest priority and will override all previous styles */
 
-/* CORRECT ANSWER - ULTRA HIGH SPECIFICITY */
+/* CORRECT ANSWER - Homologated with quiz */
 html body .matching-component .matching-component__item.matching-component__item--correct,
 html body .matching-component button.matching-component__item.matching-component__item--correct,
 html body .matching-component .matching-component__button.matching-component__item--correct,
 html body button.matching-component__item--correct,
 html body .matching-component__item--correct {
-  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%) !important;
-  border: 3px solid #15803d !important;
+  background-color: var(--theme-success, #10b981) !important;
+  border-color: transparent !important;
   color: #ffffff !important;
-  box-shadow:
-    0 0 0 4px rgba(34, 197, 94, 0.4),
-    0 8px 25px rgba(34, 197, 94, 0.5) !important;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2) !important;
   font-weight: 700 !important;
-  transform: scale(1.03) !important;
+  transform: none !important;
 }
 
 /* CORRECT ANSWER TEXT - ULTRA HIGH SPECIFICITY */
@@ -1181,7 +1172,7 @@ html body .matching-component__item--correct .matching-component__item-text,
 html body .matching-component__item--correct .matching-component__item-text * {
   color: #ffffff !important;
   font-weight: 700 !important;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) !important;
+  text-shadow: none !important;
 }
 
 /* CORRECT ANSWER LETTER - ULTRA HIGH SPECIFICITY */
@@ -1202,27 +1193,25 @@ html
   .matching-component__item-letter,
 html body button.matching-component__item--correct .matching-component__item-letter,
 html body .matching-component__item--correct .matching-component__item-letter {
-  background-color: rgba(255, 255, 255, 0.4) !important;
+  background-color: rgba(255, 255, 255, 0.2) !important;
   color: #ffffff !important;
-  font-weight: 800 !important;
-  border: 2px solid rgba(255, 255, 255, 0.6) !important;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3) !important;
+  font-weight: 700 !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  box-shadow: none !important;
 }
 
-/* INCORRECT ANSWER - ULTRA HIGH SPECIFICITY */
+/* INCORRECT ANSWER - Homologated with quiz */
 html body .matching-component .matching-component__item.matching-component__item--incorrect,
 html body .matching-component button.matching-component__item.matching-component__item--incorrect,
 html body .matching-component .matching-component__button.matching-component__item--incorrect,
 html body button.matching-component__item--incorrect,
 html body .matching-component__item--incorrect {
-  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%) !important;
-  border: 3px solid #b91c1c !important;
+  background-color: var(--theme-error, #ef4444) !important;
+  border-color: transparent !important;
   color: #ffffff !important;
-  box-shadow:
-    0 0 0 4px rgba(239, 68, 68, 0.4),
-    0 8px 25px rgba(239, 68, 68, 0.5) !important;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2) !important;
   font-weight: 700 !important;
-  transform: scale(1.03) !important;
+  transform: none !important;
 }
 
 /* INCORRECT ANSWER TEXT - ULTRA HIGH SPECIFICITY */
@@ -1246,10 +1235,10 @@ html body .matching-component__item--incorrect .matching-component__item-text,
 html body .matching-component__item--incorrect .matching-component__item-text * {
   color: #ffffff !important;
   font-weight: 700 !important;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) !important;
+  text-shadow: none !important;
 }
 
-/* DARK MODE OVERRIDES - ULTRA HIGH SPECIFICITY */
+/* DARK MODE OVERRIDES - Homologated */
 html.dark body .matching-component .matching-component__item.matching-component__item--correct,
 html.dark
   body
@@ -1258,12 +1247,10 @@ html.dark
 html.dark body .matching-component .matching-component__button.matching-component__item--correct,
 html.dark body button.matching-component__item--correct,
 html.dark body .matching-component__item--correct {
-  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%) !important;
-  border: 3px solid #15803d !important;
+  background-color: var(--theme-success, #10b981) !important;
+  border-color: transparent !important;
   color: #ffffff !important;
-  box-shadow:
-    0 0 0 4px rgba(34, 197, 94, 0.5),
-    0 8px 25px rgba(34, 197, 94, 0.6) !important;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3) !important;
 }
 
 html.dark
@@ -1286,7 +1273,7 @@ html.dark body .matching-component__item--correct .matching-component__item-text
 html.dark body .matching-component__item--correct .matching-component__item-text * {
   color: #ffffff !important;
   font-weight: 700 !important;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5) !important;
+  text-shadow: none !important;
 }
 /* === LEARNING COMPONENT BORDER - DARK MODE === */
 html.dark .matching-component {
