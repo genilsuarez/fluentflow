@@ -1,5 +1,6 @@
 import { getLearningModulesPath, getAssetPath } from '../utils/pathUtils';
 import { ModuleNotAvailableOfflineError } from '../utils/secureHttp';
+import { shuffleArray } from '../utils/randomUtils';
 import type { LearningModule } from '../types';
 
 export interface ApiResponse<T> {
@@ -141,8 +142,8 @@ export function filterModuleData<
     );
   }
 
-  if (filters.limit && filters.limit > 0) {
-    result = result.slice(0, filters.limit);
+  if (filters.limit && filters.limit > 0 && result.length > filters.limit) {
+    result = shuffleArray(result).slice(0, filters.limit);
   }
 
   return result;

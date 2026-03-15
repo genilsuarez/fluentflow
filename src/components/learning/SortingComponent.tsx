@@ -5,7 +5,7 @@ import { useUserStore } from '../../stores/userStore';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useMenuNavigation } from '../../hooks/useMenuNavigation';
 import { useProgressStore } from '../../stores/progressStore';
-import { conditionalRandomSort } from '../../utils/randomUtils';
+import { conditionalShuffle } from '../../utils/randomUtils';
 import { useTranslation } from '../../utils/i18n';
 import { useToast } from '../../hooks/useToast';
 import { useLearningCleanup } from '../../hooks/useLearningCleanup';
@@ -91,7 +91,7 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
           return;
         }
 
-        const processedCategories = uniqueCategories.sort(conditionalRandomSort(randomizeItems));
+        const processedCategories = conditionalShuffle([...uniqueCategories], randomizeItems);
         const { gameSettings } = useSettingsStore.getState();
         const totalWords = gameSettings.sortingMode.wordCount;
 
@@ -124,9 +124,7 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
 
         // First, ensure each category gets at least one word
         categoriesWithWords.forEach(category => {
-          const categoryWords = wordsByCategory[category].sort(
-            conditionalRandomSort(randomizeItems)
-          );
+          const categoryWords = conditionalShuffle([...wordsByCategory[category]], randomizeItems);
           const wordsToTake = Math.min(minWordsPerCategory, categoryWords.length);
           for (let i = 0; i < wordsToTake && selectedWords.length < totalWords; i++) {
             selectedWords.push({ word: categoryWords[i], category });
@@ -137,7 +135,7 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
         if (selectedWords.length < totalWords) {
           const usedWords = new Set(selectedWords.map(w => w.word));
           const remainingWords = allAvailableWords.filter(w => !usedWords.has(w.word));
-          const processedRemaining = remainingWords.sort(conditionalRandomSort(randomizeItems));
+          const processedRemaining = conditionalShuffle([...remainingWords], randomizeItems);
 
           for (let i = 0; i < processedRemaining.length && selectedWords.length < totalWords; i++) {
             selectedWords.push(processedRemaining[i]);
@@ -177,7 +175,7 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
     setExercise(newExercise);
 
     if (newExercise.words?.length > 0) {
-      const processed = [...newExercise.words].sort(conditionalRandomSort(randomizeItems));
+      const processed = conditionalShuffle([...newExercise.words], randomizeItems);
       setAvailableWords(processed);
 
       const initialSorted: Record<string, string[]> = {};
@@ -352,7 +350,7 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
   };
 
   const resetExercise = () => {
-    const processed = [...exercise.words].sort(conditionalRandomSort(randomizeItems));
+    const processed = conditionalShuffle([...exercise.words], randomizeItems);
     setAvailableWords(processed);
 
     const initialSorted: Record<string, string[]> = {};

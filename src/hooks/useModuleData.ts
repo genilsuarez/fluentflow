@@ -1,3 +1,4 @@
+import React from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { useSettingsStore } from '../stores/settingsStore';
 import { apiService, fetchModules, fetchModuleData } from '../services/api';
@@ -6,8 +7,13 @@ import type { LearningModule } from '../types';
 export const useModuleData = (moduleId: string) => {
   const { categories, level, gameSettings, developmentMode } = useSettingsStore();
 
+  // Session key ensures a fresh shuffle each time the hook mounts (new game session).
+  // We use a ref-like approach via a module-level map so the key is stable within
+  // a single component lifecycle but changes on remount (new session).
+  const sessionKey = React.useRef(Date.now()).current;
+
   return useQuery({
-    queryKey: ['module', moduleId],
+    queryKey: ['module', moduleId, sessionKey],
     queryFn: async () => {
       const response = await fetchModuleData(moduleId);
       if (!response.success) {

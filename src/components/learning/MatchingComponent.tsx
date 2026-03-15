@@ -5,7 +5,7 @@ import { useUserStore } from '../../stores/userStore';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useMenuNavigation } from '../../hooks/useMenuNavigation';
 import { useToast } from '../../hooks/useToast';
-import { conditionalRandomSort } from '../../utils/randomUtils';
+import { conditionalShuffle } from '../../utils/randomUtils';
 import { useLearningCleanup } from '../../hooks/useLearningCleanup';
 import { useTranslation } from '../../utils/i18n';
 import { ContentAdapter } from '../../utils/contentAdapter';
@@ -101,14 +101,12 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
 
     if (pairs.length > 0) {
       const terms = pairs
-        .map((pair: { left: string; right: string }) => pair.left)
-        .sort(conditionalRandomSort(randomizeItems));
+        .map((pair: { left: string; right: string }) => pair.left);
       const definitions = pairs
-        .map((pair: { left: string; right: string }) => pair.right)
-        .sort(conditionalRandomSort(randomizeItems));
+        .map((pair: { left: string; right: string }) => pair.right);
 
-      setLeftItems(terms);
-      setRightItems(definitions);
+      setLeftItems(conditionalShuffle(terms, randomizeItems));
+      setRightItems(conditionalShuffle(definitions, randomizeItems));
 
       setMatches({});
       setSelectedLeft(null);
@@ -202,14 +200,12 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
 
   const resetExercise = () => {
     const terms = pairs
-      .map((pair: { left: string; right: string }) => pair.left)
-      .sort(conditionalRandomSort(randomizeItems));
+      .map((pair: { left: string; right: string }) => pair.left);
     const definitions = pairs
-      .map((pair: { left: string; right: string }) => pair.right)
-      .sort(conditionalRandomSort(randomizeItems));
+      .map((pair: { left: string; right: string }) => pair.right);
 
-    setLeftItems(terms);
-    setRightItems(definitions);
+    setLeftItems(conditionalShuffle(terms, randomizeItems));
+    setRightItems(conditionalShuffle(definitions, randomizeItems));
     setMatches({});
     setSelectedLeft(null);
     setSelectedRight(null);
