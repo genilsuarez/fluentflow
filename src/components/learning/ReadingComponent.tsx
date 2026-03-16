@@ -199,10 +199,8 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                   })}
                 </span>
                 <span className="reading-component__sections-badge">
-                  {readingSections.length}{' '}
-                  {readingSections.length === 1
-                    ? t('reading.component.section')
-                    : t('reading.component.sections')}
+                  {readingSections.length + 1 + (hasSummaryContent ? 1 : 0)}{' '}
+                  {t('reading.component.pages')}
                 </span>
               </div>
             )}

@@ -458,6 +458,8 @@ const translations = {
         examples: 'Examples',
         section: 'section',
         sections: 'sections',
+        page: 'page',
+        pages: 'pages',
       },
       navigation: {
         returnToMenu: 'Return to Main Menu',
@@ -965,6 +967,8 @@ const translations = {
         examples: 'Ejemplos',
         section: 'sección',
         sections: 'secciones',
+        page: 'página',
+        pages: 'páginas',
       },
       navigation: {
         returnToMenu: 'Volver al Menú Principal',

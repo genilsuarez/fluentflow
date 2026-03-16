@@ -236,7 +236,7 @@
 
 @media (max-width: 639px) {
   .flashcard-component__card {
-    height: 9.5rem;
+    height: 11.5rem;
   }
 
   .flashcard-component__front-text {
@@ -272,8 +272,8 @@
   }
 
   .flashcard-component__card {
-    height: 9rem;
-    /* Slightly reduced card height to save space */
+    height: 11rem;
+    /* Sufficient height for back content: word + IPA + translation + 2 examples */
     margin: 0.125rem auto;
     /* Minimal margin */
   }

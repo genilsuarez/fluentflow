@@ -1799,6 +1799,22 @@ html.dark .reading-component__grammar-point:hover {
   box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
 }
 
+/* Dark theme - Grammar mistakes (ERRORES COMUNES) */
+html.dark .reading-component__grammar-mistakes {
+  background: rgba(239, 68, 68, 0.1);
+  border-left-color: #f87171;
+}
+
+html.dark .reading-component__grammar-mistakes-title {
+  color: #f87171;
+}
+
+html.dark .reading-component__grammar-mistake-item {
+  background: rgba(239, 68, 68, 0.08);
+  border-left-color: #f87171;
+  color: var(--reading-text-primary);
+}
+
 /* === ACCESSIBILITY - Component-scoped === */
 
 /* Focus indicators - Local to reading component */

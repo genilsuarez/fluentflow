@@ -226,7 +226,6 @@
 .compact-settings__select:hover {
   border-color: var(--theme-primary-blue, #3b82f6);
   background-color: rgba(59, 130, 246, 0.03);
-  transform: translateY(-1px);
   box-shadow: 0 2px 8px rgba(59, 130, 246, 0.1);
 }
 
