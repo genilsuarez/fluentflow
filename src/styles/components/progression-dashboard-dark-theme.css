@@ -58,6 +58,15 @@
   color: var(--theme-text-primary, #ffffff);
 }
 
+/* === EXPAND ICON (unit chevron) === */
+.progression-dashboard--dark-theme .progression-dashboard__unit-expand {
+  background: var(--theme-bg-soft, #374151);
+}
+
+.progression-dashboard--dark-theme .progression-dashboard__expand-icon {
+  color: var(--theme-text-secondary, #d1d5db);
+}
+
 /* === BACKGROUND ELEMENTS === */
 .progression-dashboard--dark-theme .progression-dashboard__unit {
   background-color: var(--theme-bg-elevated, #1f2937);
@@ -119,17 +128,37 @@
   border-color: var(--theme-primary-blue-hover, #60a5fa);
 }
 
-/* === LOCKED MODULES === */
+/* === UNLOCKED MODULES (active, accessible) === */
+.progression-dashboard--dark-theme .progression-dashboard__module--unlocked {
+  background-color: #1e293b;
+  border: 1px solid #475569;
+  opacity: 1;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.progression-dashboard--dark-theme .progression-dashboard__module--unlocked:hover {
+  background-color: #263347;
+  border-color: var(--theme-primary-blue, #3b82f6);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+}
+
+/* === LOCKED MODULES (dimmed, inaccessible) === */
+.progression-dashboard--dark-theme .progression-dashboard__module--locked {
+  background-color: #1a2332;
+  border: 1px solid #2d3a4a;
+  opacity: 0.8;
+}
+
 .progression-dashboard--dark-theme
   .progression-dashboard__module--locked
   .progression-dashboard__module-name {
-  color: var(--theme-text-secondary, #d1d5db);
+  color: #9ca3af;
 }
 
 .progression-dashboard--dark-theme
   .progression-dashboard__module--locked
   .progression-dashboard__module-desc {
-  color: var(--theme-text-tertiary, #9ca3af);
+  color: #6b7280;
 }
 
 .progression-dashboard--dark-theme
@@ -138,7 +167,26 @@
 .progression-dashboard--dark-theme
   .progression-dashboard__module--locked
   .progression-dashboard__module-time {
-  color: var(--theme-text-tertiary, #9ca3af);
+  color: #6b7280;
+}
+
+.progression-dashboard--dark-theme
+  .progression-dashboard__module--locked
+  .progression-dashboard__module-icon {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+
+.progression-dashboard--dark-theme
+  .progression-dashboard__module--locked
+  .progression-dashboard__icon--locked {
+  color: #6b7280;
+}
+
+.progression-dashboard--dark-theme
+  .progression-dashboard__module--locked
+  .progression-dashboard__level-badge {
+  opacity: 0.5;
 }
 
 /* === COMPONENT-SPECIFIC MODIFIERS === */

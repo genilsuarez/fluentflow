@@ -5,6 +5,7 @@ import { AppRouter } from './components/layout/AppRouter';
 import { MemoizedHeader, MemoizedToastContainer } from './components/ui/MemoizedComponents';
 import { OrientationLock } from './components/ui/OrientationLock';
 import { useAppStore } from './stores/appStore';
+import { useProgressStore } from './stores/progressStore';
 import { useSettingsStore } from './stores/settingsStore';
 
 import { useSystemTheme } from './hooks/useSystemTheme';
@@ -149,7 +150,23 @@ const AppContent: React.FC = () => {
             return;
           }
 
-          // Module found - update state
+          // Check prerequisites before allowing access (skip in development mode)
+          const { developmentMode } = useSettingsStore.getState();
+          if (!developmentMode && module.prerequisites && module.prerequisites.length > 0) {
+            const { getCompletedModuleIds } = useProgressStore.getState();
+            const completedIds = new Set(getCompletedModuleIds());
+            const allPrereqsMet = module.prerequisites.every(id => completedIds.has(id));
+            if (!allPrereqsMet) {
+              console.warn('[App] Module prerequisites not met:', moduleId);
+              const { setCurrentView, setCurrentModule } = useAppStore.getState();
+              setCurrentModule(null);
+              setCurrentView('menu');
+              window.location.hash = '#/menu';
+              return;
+            }
+          }
+
+          // Module found and accessible - update state
           const { setCurrentModule, setCurrentView } = useAppStore.getState();
           setCurrentModule(module);
           setCurrentView(module.learningMode);

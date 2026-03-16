@@ -59,6 +59,10 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
       if (dashboardElement) {
         const textElements = dashboardElement.querySelectorAll('*');
         textElements.forEach(element => {
+          // Skip elements inside locked modules — they should stay dimmed
+          if ((element as HTMLElement).closest?.('.progression-dashboard__module--locked')) {
+            return;
+          }
           const computedStyle = window.getComputedStyle(element);
           const textColor = computedStyle.color;
 
@@ -225,14 +229,43 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
     return colors[level as keyof typeof colors] || '#6b7280';
   };
 
-  // Group modules by unit for better organization
+  // Group modules by unit, preserving prerequisite chain order (JSON definition order)
   const modulesByUnit = React.useMemo(() => {
     const units: Record<number, LearningModule[]> = {};
-    progression.unlockedModules.concat(progression.lockedModules).forEach(module => {
+    // Combine all modules and deduplicate by id
+    const allModules = [...progression.unlockedModules, ...progression.lockedModules];
+    const seen = new Set<string>();
+    allModules.forEach(module => {
+      if (seen.has(module.id)) return;
+      seen.add(module.id);
       if (!units[module.unit]) {
         units[module.unit] = [];
       }
       units[module.unit].push(module);
+    });
+    // Sort each unit's modules by their original definition order (prerequisite chain)
+    // Modules with no prerequisites come first, then follow the chain
+    Object.keys(units).forEach(unitKey => {
+      const unitModules = units[Number(unitKey)];
+      const idToModule = new Map(unitModules.map(m => [m.id, m]));
+      const sorted: LearningModule[] = [];
+      const visited = new Set<string>();
+
+      const visit = (mod: LearningModule) => {
+        if (visited.has(mod.id)) return;
+        visited.add(mod.id);
+        // Visit prerequisites first (that are in this unit)
+        if (mod.prerequisites) {
+          mod.prerequisites.forEach(prereqId => {
+            const prereq = idToModule.get(prereqId);
+            if (prereq) visit(prereq);
+          });
+        }
+        sorted.push(mod);
+      };
+
+      unitModules.forEach(m => visit(m));
+      units[Number(unitKey)] = sorted;
     });
     return units;
   }, [progression.unlockedModules, progression.lockedModules]);
