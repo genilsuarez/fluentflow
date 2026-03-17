@@ -250,7 +250,11 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
               <div className="reading-component__vocabulary">
                 <button
                   className="reading-component__summary-section-trigger"
-                  onClick={() => setVocabularyExpanded(!vocabularyExpanded)}
+                  onClick={() => {
+                    const next = !vocabularyExpanded;
+                    setVocabularyExpanded(next);
+                    if (next) setGrammarExpanded(false);
+                  }}
                   aria-expanded={vocabularyExpanded}
                   aria-controls="vocabulary-content"
                   aria-label={t('reading.accessibility.vocabularySectionLabel', undefined, {
@@ -319,7 +323,11 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
               <div className="reading-component__grammar-points">
                 <button
                   className="reading-component__summary-section-trigger"
-                  onClick={() => setGrammarExpanded(!grammarExpanded)}
+                  onClick={() => {
+                    const next = !grammarExpanded;
+                    setGrammarExpanded(next);
+                    if (next) setVocabularyExpanded(false);
+                  }}
                   aria-expanded={grammarExpanded}
                   aria-controls="grammar-content"
                   aria-label={t('reading.accessibility.grammarSectionLabel', undefined, {
