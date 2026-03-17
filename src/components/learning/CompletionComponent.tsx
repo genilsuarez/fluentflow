@@ -205,8 +205,10 @@ function isTenseError(userAnswer: string, correctAnswer: string): boolean {
     const cWord = cWords[0];
     if (cWord.endsWith('ed') && cWord.startsWith(uWord)) return true;
     if (uWord.endsWith('ed') && uWord.startsWith(cWord)) return true;
-    if (cWord.endsWith('ing') && (cWord.startsWith(uWord) || cWord.slice(0, -3) === uWord)) return true;
-    if (uWord.endsWith('ing') && (uWord.startsWith(cWord) || uWord.slice(0, -3) === cWord)) return true;
+    if (cWord.endsWith('ing') && (cWord.startsWith(uWord) || cWord.slice(0, -3) === uWord))
+      return true;
+    if (uWord.endsWith('ing') && (uWord.startsWith(cWord) || uWord.slice(0, -3) === cWord))
+      return true;
   }
 
   return false;
@@ -520,9 +522,7 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
               answer.toLowerCase().trim() !== currentExercise?.correct?.toLowerCase().trim() &&
               isTenseError(answer, currentExercise?.correct || '') && (
                 <div className="completion-component__tense-hint">
-                  <p className="completion-component__tense-hint-text">
-                    {t('learning.tenseHint')}
-                  </p>
+                  <p className="completion-component__tense-hint-text">{t('learning.tenseHint')}</p>
                 </div>
               )}
             {showResult &&

@@ -247,8 +247,10 @@ const translations = {
       correct: 'Correct!',
       incorrect: 'Incorrect',
       answer: 'Answer:',
-      tenseHint: '💡 You used the right word but in the wrong tense. Check the sentence context for clues about which tense to use.',
-      particleHint: '💡 You used the right verb but the wrong particle. Re-read the tip and sentence context — the particle changes the meaning completely.',
+      tenseHint:
+        '💡 You used the right word but in the wrong tense. Check the sentence context for clues about which tense to use.',
+      particleHint:
+        '💡 You used the right verb but the wrong particle. Re-read the tip and sentence context — the particle changes the meaning completely.',
       tip: 'Tip:',
       // Quiz mode
       pressSelectOption: 'Press 1-4 to select or click an option',
@@ -758,8 +760,10 @@ const translations = {
       correct: '¡Correcto!',
       incorrect: 'Incorrecto',
       answer: 'Respuesta:',
-      tenseHint: '💡 Usaste la palabra correcta pero en el tiempo verbal equivocado. Revisa el contexto de la oración para saber qué tiempo usar.',
-      particleHint: '💡 Usaste el verbo correcto pero con la partícula equivocada. Relee el consejo y el contexto de la oración — la partícula cambia completamente el significado.',
+      tenseHint:
+        '💡 Usaste la palabra correcta pero en el tiempo verbal equivocado. Revisa el contexto de la oración para saber qué tiempo usar.',
+      particleHint:
+        '💡 Usaste el verbo correcto pero con la partícula equivocada. Relee el consejo y el contexto de la oración — la partícula cambia completamente el significado.',
       tip: 'Consejo:',
       // Quiz mode
       pressSelectOption: 'Presiona 1-4 para seleccionar o haz clic en una opción',
