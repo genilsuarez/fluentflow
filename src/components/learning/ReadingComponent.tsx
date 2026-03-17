@@ -175,10 +175,7 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
   }
 
   return (
-    <div
-      ref={containerRef}
-      className="reading-component__container"
-    >
+    <div ref={containerRef} className="reading-component__container">
       {/* Unified progress header */}
       <LearningProgressHeader
         title={readingData.title}
