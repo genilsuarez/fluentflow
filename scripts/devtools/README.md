@@ -11,22 +11,51 @@ Ejecutar contra producción: `https://gsphome.github.io/englishgame6/`
 | `validate-modals.md` | 10 modales + 10 validaciones generales (z-index, scroll, a11y, dark mode) | 11 secciones (0-10) |
 | `automated-offline-test.md` | 8 tests offline: cache, next-module, sync, performance | 9 secciones (0-8) |
 
+## Paso 0: Activar Dev Mode (OBLIGATORIO)
+
+Dev Mode desbloquea todos los módulos sin necesidad de completar prerequisites uno a uno. Sin esto, solo los módulos iniciales son accesibles y no se puede testear la mayoría del contenido.
+
+Ejecutar siempre al inicio de cada sesión de testing:
+
+```
+mcp_chrome_devtools_new_page
+url: "https://gsphome.github.io/englishgame6/"
+timeout: 10000
+
+mcp_chrome_devtools_evaluate_script
+function: "() => {
+  const raw = localStorage.getItem('settings-storage');
+  const data = JSON.parse(raw);
+  data.state.devMode = true;
+  localStorage.setItem('settings-storage', JSON.stringify(data));
+  location.reload();
+  return 'Dev mode enabled';
+}"
+```
+
+Verificar que aparece el badge "🔧 DEV" en el header después del reload.
+
+> Alternativa: abrir Settings → tab General → activar toggle "Dev Mode".
+
+---
+
 ## Casos de uso
 
 ### Post-deploy rápido (~5 min)
 
 Verificación mínima después de cada deploy:
 
-1. `validate-learning-modes.md` → Checklist rápido (sección final)
-2. `validate-modals.md` → Checklist rápido (sección final)
-3. `automated-offline-test.md` → Tests 1, 3, 6
+1. Activar Dev Mode (Paso 0)
+2. `validate-learning-modes.md` → Checklist rápido (sección final)
+3. `validate-modals.md` → Checklist rápido (sección final)
+4. `automated-offline-test.md` → Tests 1, 3, 6
 
 ### Regresión completa (~30 min)
 
-Ejecutar los 3 scripts completos en orden:
+Ejecutar los 3 scripts completos en orden (activar Dev Mode primero):
 
 1. Learning modes (funcionalidad core)
-2. Modals (UI/UX)
+2. Modals (UI/UX), incluyendo summary modals de Matching y Sorting
 3. Offline (PWA/cache)
 
 ### Revisión visual multi-viewport (~20 min)
@@ -79,6 +108,46 @@ Verificar que abrir/cerrar modales no afecta el estado del learning mode activo:
 7. Verificar: estado intacto
 ```
 
+### Test de modales de resumen Matching/Sorting (~10 min)
+
+Estos modales requieren completar el ejercicio completo antes de poder abrirlos. Procedimiento detallado en `validate-modals.md` §8 (Sorting) y §9 (Matching).
+
+**Sorting:**
+
+```
+# 1. Navegar a sorting
+mcp_chrome_devtools_evaluate_script
+function: "() => { window.location.hash = '#/learn/sorting-word-categories-a1'; return 'ok'; }"
+
+# 2. Completar ejercicio: arrastrar todas las palabras a categorías
+#    (tomar snapshot después de cada drag, los uids cambian)
+
+# 3. Click "Check Answers" → Click "View Summary"
+# 4. Verificar: results grid, cards correct/incorrect, heading "Exercise Summary"
+# 5. Cerrar modal → verificar que ejercicio sigue visible con resultados
+```
+
+**Matching:**
+
+```
+# 1. Navegar a matching
+mcp_chrome_devtools_evaluate_script
+function: "() => { window.location.hash = '#/learn/matching-common-verbs-a1'; return 'ok'; }"
+
+# 2. Completar ejercicio: emparejar todos los items (click columna izq + columna der)
+
+# 3. Click "Check Matches" → Click "View Summary"
+# 4. Verificar: results grid, body scroll locked (clase modal-open), header violeta
+# 5. Cerrar modal → verificar scroll restaurado, posición no saltó al top
+# 6. Verificar: body.classList NO contiene 'modal-open', overflow restaurado
+```
+
+**Validaciones clave:**
+- Body scroll lock/restore (Matching usa `modal-open` class + `--scroll-y` CSS var)
+- Cards muestran respuesta correcta e incorrecta con iconos ✓/✗
+- Cerrar con botón Close, botón X, o Escape (Matching) / Enter (Matching)
+- Estado del ejercicio preservado después de cerrar el summary
+
 ### Test de accesibilidad (~5 min)
 
 Validaciones de a11y incluidas en `validate-modals.md` sección 10:
@@ -125,22 +194,6 @@ Configurado en `.kiro/settings/mcp.json`:
     }
   }
 }
-```
-
-### Dev Mode (bypass prerequisites)
-
-Para testear módulos sin completar prerequisitos:
-
-```
-mcp_chrome_devtools_evaluate_script
-function: "() => {
-  const raw = localStorage.getItem('settings-storage');
-  const data = JSON.parse(raw);
-  data.state.devMode = true;
-  localStorage.setItem('settings-storage', JSON.stringify(data));
-  location.reload();
-  return 'Dev mode enabled';
-}"
 ```
 
 ### Navegación a módulos
