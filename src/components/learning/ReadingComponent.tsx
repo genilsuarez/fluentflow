@@ -25,6 +25,8 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
   const [vocabularyExpanded, setVocabularyExpanded] = useState(false);
   const [grammarExpanded, setGrammarExpanded] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [initialHeight, setInitialHeight] = useState<number | null>(null);
 
   const { updateUserScore } = useUserStore();
   const { language } = useSettingsStore();
@@ -32,6 +34,16 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
   const { addProgressEntry } = useProgressStore();
   const { t } = useTranslation(language);
   useLearningCleanup();
+
+  // Capture initial height from objectives page to prevent layout jumps
+  useEffect(() => {
+    if (isObjectivesPage && containerRef.current && initialHeight === null) {
+      const height = containerRef.current.getBoundingClientRect().height;
+      if (height > 0) {
+        setInitialHeight(height);
+      }
+    }
+  }, [isObjectivesPage, initialHeight]);
 
   const handleReturnToMenu = () => returnToMenu();
 
@@ -162,7 +174,11 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
   }
 
   return (
-    <div className="reading-component__container">
+    <div
+      ref={containerRef}
+      className="reading-component__container"
+      style={initialHeight ? { minHeight: `${initialHeight}px` } : undefined}
+    >
       {/* Unified progress header */}
       <LearningProgressHeader
         title={readingData.title}
