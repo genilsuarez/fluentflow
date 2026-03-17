@@ -37,13 +37,13 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
 
   // Capture initial height from objectives page to prevent layout jumps
   useEffect(() => {
-    if (isObjectivesPage && containerRef.current && initialHeight === null) {
+    if (currentSectionIndex === -1 && containerRef.current && initialHeight === null) {
       const height = containerRef.current.getBoundingClientRect().height;
       if (height > 0) {
         setInitialHeight(height);
       }
     }
-  }, [isObjectivesPage, initialHeight]);
+  }, [currentSectionIndex, initialHeight]);
 
   const handleReturnToMenu = () => returnToMenu();
 
