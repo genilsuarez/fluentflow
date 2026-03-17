@@ -1,35 +1,12 @@
-# Automated Offline Test - MCP Chrome DevTools
+# Automated Offline Test
 
-Tests de modo offline y PWA contra producción: `https://gsphome.github.io/englishgame6/`
+Service Worker, cache, navegación offline, sincronización y performance.
 
-> Relacionado: `validate-learning-modes.md` (funcionalidad core), `validate-modals.md` (UI/UX)
-
-## Prerequisitos
-
-```bash
-curl -I https://gsphome.github.io/englishgame6/  # Verificar sitio activo
-```
+> Prerequisitos y setup en [README.md](README.md). Ejecutar "Antes de empezar" primero.
 
 ---
 
-## 0. Setup inicial
-
-```
-mcp_chrome_devtools_new_page
-url: "https://gsphome.github.io/englishgame6/"
-timeout: 10000
-
-mcp_chrome_devtools_take_snapshot
-```
-
-**Validar:**
-- ✓ URL contiene `#/menu`
-- ✓ Snapshot muestra heading "FluentFlow"
-- ✓ Módulos visibles en gridcells
-
----
-
-## 1. Carga inicial ONLINE
+## 1. Carga inicial online
 
 ```
 mcp_chrome_devtools_list_network_requests
@@ -37,36 +14,27 @@ resourceTypes: ["document", "script", "fetch", "xhr"]
 pageSize: 50
 ```
 
-**Validar:**
-- ✓ Requests incluyen módulos JSON (`/data/app-config.json`, etc.)
-- ✓ Status 200 en requests principales
-- ✓ No hay requests fallidos inesperados
+- [ ] Requests incluyen módulos JSON (`/data/app-config.json`)
+- [ ] Status 200 en requests principales
 
-### Verificar Service Worker
+### Service Worker
 
 ```
 mcp_chrome_devtools_evaluate_script
 function: "async () => {
   const reg = await navigator.serviceWorker.getRegistration();
-  return {
-    active: !!reg?.active,
-    waiting: !!reg?.waiting,
-    installing: !!reg?.installing,
-    scope: reg?.scope
-  };
+  return { active: !!reg?.active, waiting: !!reg?.waiting, scope: reg?.scope };
 }"
 ```
 
-**Validar:**
-- ✓ `active: true`
-- ✓ `scope` incluye `/englishgame6/`
+- [ ] `active: true`
+- [ ] `scope` incluye `/englishgame6/`
 
 ---
 
-## 2. Completar módulo para activar next-module
+## 2. Completar módulo (activar next-module)
 
 ```
-# Navegar a un módulo de reading (más fácil de completar)
 mcp_chrome_devtools_evaluate_script
 function: "() => { window.location.hash = '#/learn/reading-greetings-a1'; return 'ok'; }"
 
@@ -77,24 +45,21 @@ timeout: 5000
 mcp_chrome_devtools_take_snapshot
 ```
 
-**Interacción — navegar todas las secciones:**
+Navegar todas las secciones con click en next hasta finish:
+
 ```
-# Click next repetidamente hasta llegar al final
 mcp_chrome_devtools_click
 uid: {uid-next-btn}
 includeSnapshot: true
+# Repetir hasta "Finish Reading"
 
-# Repetir hasta ver "Finish Reading" o equivalente
-# Click finish para volver al menú
 mcp_chrome_devtools_click
 uid: {uid-finish-btn}
 includeSnapshot: true
 ```
 
-**Validar:**
-- ✓ URL cambió a `#/menu`
-- ✓ Módulo aparece como "Completed"
-- ✓ Next-module destacado en el menú
+- [ ] URL cambió a `#/menu`
+- [ ] Módulo "Completed", next-module destacado
 
 ### Verificar progreso en localStorage
 
@@ -106,55 +71,42 @@ function: "() => {
 }"
 ```
 
-**Validar:**
-- ✓ Hay datos de progreso guardados
-- ✓ Size > 0
+- [ ] Datos de progreso guardados, size > 0
 
 ---
 
-## 3. Modo OFFLINE - Navegación básica
+## 3. Modo offline — navegación básica
 
 ```
-# Activar modo offline
 mcp_chrome_devtools_emulate
 networkConditions: "Offline"
 
-# Recargar página
 mcp_chrome_devtools_navigate_page
 type: "reload"
 timeout: 10000
 
-# Verificar que app carga desde cache
 mcp_chrome_devtools_take_snapshot
 ```
 
-**Validar:**
-- ✓ App carga completamente (heading "FluentFlow" visible)
-- ✓ Módulos visibles en gridcells
-- ✓ Progreso persistido (módulo completado sigue marcado)
-- ✓ Global score se mantiene
+- [ ] App carga (heading "FluentFlow" visible)
+- [ ] Módulos visibles
+- [ ] Progreso persistido
+- [ ] Global score se mantiene
 
-### Verificar requests offline
+### Requests offline
 
 ```
 mcp_chrome_devtools_list_network_requests
 pageSize: 30
 ```
 
-**Validar:**
-- ✓ Requests servidos desde Service Worker cache
-- ✓ No hay errores de red que rompan la UI
+- [ ] Servidos desde SW cache, sin errores que rompan UI
 
 ---
 
-## 4. CASO DE BORDE - Next-module OFFLINE
+## 4. Next-module offline
 
 ```
-# Mantener modo offline
-mcp_chrome_devtools_take_snapshot
-# Identificar el next-module destacado
-
-# Navegar al next-module
 mcp_chrome_devtools_evaluate_script
 function: "() => {
   const nextBtn = document.querySelector('[data-module-id].module-card--next-recommended');
@@ -171,10 +123,9 @@ timeout: 5000
 mcp_chrome_devtools_take_snapshot
 ```
 
-**Validar:**
-- ✓ Módulo carga correctamente offline (contenido JSON desde cache)
-- ✓ No hay pantalla de error
-- ✓ Interacción funciona (botones responden)
+- [ ] Módulo carga offline (contenido JSON desde cache)
+- [ ] Sin pantalla de error
+- [ ] Interacción funciona
 
 ### Volver al menú
 
@@ -185,44 +136,35 @@ function: "() => { window.location.hash = '#/menu'; return 'ok'; }"
 mcp_chrome_devtools_take_snapshot
 ```
 
-**Validar:**
-- ✓ Menú carga correctamente
-- ✓ Progreso se mantiene
+- [ ] Menú carga, progreso se mantiene
 
 ---
 
-## 5. Cambio de vista OFFLINE
+## 5. Cambio de vista offline
 
 ```
-# Mantener modo offline
 mcp_chrome_devtools_take_snapshot
-# Identificar tabs disponibles
 
-# Click en tab "All Modules" (si existe)
 mcp_chrome_devtools_click
 uid: {uid-tab-all}
 includeSnapshot: true
 
-# Click en tab "My Progress" (si existe)
 mcp_chrome_devtools_click
 uid: {uid-tab-progress}
 includeSnapshot: true
 ```
 
-**Validar:**
-- ✓ Navegación entre tabs funciona offline
-- ✓ Dashboard muestra stats correctos
-- ✓ Módulos completados marcados correctamente
+- [ ] Navegación entre tabs funciona offline
+- [ ] Stats correctos
+- [ ] Módulos completados marcados
 
 ---
 
-## 6. Volver ONLINE - Sincronización
+## 6. Volver online — sincronización
 
 ```
-# Desactivar modo offline (string vacío resetea)
 mcp_chrome_devtools_emulate
 
-# Recargar
 mcp_chrome_devtools_navigate_page
 type: "reload"
 timeout: 10000
@@ -230,12 +172,9 @@ timeout: 10000
 mcp_chrome_devtools_take_snapshot
 ```
 
-**Validar:**
-- ✓ Progreso se mantiene intacto
-- ✓ Módulos completados siguen marcados
-- ✓ Next-module sigue siendo el correcto
-
-### Verificar requests exitosos
+- [ ] Progreso intacto
+- [ ] Módulos completados siguen marcados
+- [ ] Next-module correcto
 
 ```
 mcp_chrome_devtools_list_network_requests
@@ -243,24 +182,20 @@ resourceTypes: ["fetch", "xhr"]
 pageSize: 30
 ```
 
-**Validar:**
-- ✓ Requests exitosos (status 200)
+- [ ] Requests exitosos (status 200)
 
 ---
 
-## 7. Edge Case - Sin cache inicial
+## 7. Edge case — sin cache inicial
 
 ```
-# Abrir nueva página en contexto aislado (sin cache)
 mcp_chrome_devtools_new_page
 url: "about:blank"
 isolatedContext: "test-no-cache"
 
-# Activar offline ANTES de navegar
 mcp_chrome_devtools_emulate
 networkConditions: "Offline"
 
-# Intentar cargar app
 mcp_chrome_devtools_navigate_page
 type: "url"
 url: "https://gsphome.github.io/englishgame6/"
@@ -273,32 +208,29 @@ types: ["error", "warn"]
 pageSize: 20
 ```
 
-**Validar:**
-- ✓ App muestra error apropiado (no crash silencioso)
-- ✓ No hay excepciones JS no manejadas
-- ✓ Fallback UI visible si existe
+- [ ] Error apropiado (no crash silencioso)
+- [ ] Sin excepciones JS no manejadas
 
 ### Cleanup
 
 ```
-# Cerrar página de test aislado
 mcp_chrome_devtools_list_pages
-# Cerrar la página del contexto aislado
+
 mcp_chrome_devtools_close_page
 pageId: {id-pagina-aislada}
 ```
 
 ---
 
-## 8. Performance OFFLINE
+## 8. Performance offline
 
 ```
-# Seleccionar página principal (no la aislada)
 mcp_chrome_devtools_list_pages
+
 mcp_chrome_devtools_select_page
 pageId: {id-pagina-principal}
 
-# Asegurar online primero para tener cache
+# Online primero para tener cache
 mcp_chrome_devtools_emulate
 
 mcp_chrome_devtools_navigate_page
@@ -306,85 +238,32 @@ type: "url"
 url: "https://gsphome.github.io/englishgame6/"
 timeout: 10000
 
-# Activar offline
+# Offline + trace
 mcp_chrome_devtools_emulate
 networkConditions: "Offline"
 
-# Performance trace
 mcp_chrome_devtools_performance_start_trace
 reload: true
 autoStop: true
 filePath: "scripts/devtools/perf-offline-trace.json.gz"
 ```
 
-**Validar:**
-- ✓ LCP < 2.5s
-- ✓ FCP < 1.8s
-- ✓ No layout shifts significativos (CLS < 0.1)
+- [ ] LCP < 2.5s
+- [ ] FCP < 1.8s
+- [ ] CLS < 0.1
 
-### Cleanup final
+### Cleanup
 
 ```
-# Restaurar online
 mcp_chrome_devtools_emulate
-```
-
----
-
-## Debugging
-
-### Ver localStorage completo
-
-```
-mcp_chrome_devtools_evaluate_script
-function: "() => {
-  const data = {};
-  for (let i = 0; i < localStorage.length; i++) {
-    const key = localStorage.key(i);
-    data[key] = localStorage.getItem(key).length + ' chars';
-  }
-  return data;
-}"
-```
-
-### Ver cache storage
-
-```
-mcp_chrome_devtools_evaluate_script
-function: "async () => {
-  const names = await caches.keys();
-  const details = {};
-  for (const name of names) {
-    const cache = await caches.open(name);
-    const keys = await cache.keys();
-    details[name] = keys.length + ' entries';
-  }
-  return details;
-}"
-```
-
-### Ver Service Worker status
-
-```
-mcp_chrome_devtools_evaluate_script
-function: "async () => {
-  const reg = await navigator.serviceWorker.getRegistration();
-  return {
-    active: !!reg?.active,
-    waiting: !!reg?.waiting,
-    installing: !!reg?.installing,
-    scope: reg?.scope,
-    updateViaCache: reg?.updateViaCache
-  };
-}"
 ```
 
 ---
 
 ## Resultados esperados
 
-| Test | Online | Offline (con cache) | Sin cache |
-|------|--------|---------------------|-----------|
+| Test | Online | Offline (cache) | Sin cache |
+|------|--------|-----------------|-----------|
 | Carga inicial | ✓ | ✓ | ✗ (error esperado) |
 | Completar módulo | ✓ | ✓ | N/A |
 | Next-module | ✓ | ✓ | N/A |
@@ -394,14 +273,13 @@ function: "async () => {
 
 ---
 
-## Checklist rápido post-deploy
+## Checklist rápido
 
 ```
-[ ] Sitio accesible online (HTTP 200)
 [ ] Service Worker activo
 [ ] Modo offline: app carga desde cache
 [ ] Modo offline: módulos navegables
 [ ] Modo offline: progreso persiste
 [ ] Vuelta online: progreso intacto
-[ ] Sin errores JS en console durante todo el flujo
+[ ] Sin errores JS en console
 ```

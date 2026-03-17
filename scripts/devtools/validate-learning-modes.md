@@ -1,45 +1,12 @@
-# Validate Learning Modes - MCP Chrome DevTools
+# Validate Learning Modes
 
-Suite completa de pruebas E2E para los 6 modos de aprendizaje + validaciones generales.
-Ejecutar con Chrome DevTools MCP contra producción: `https://gsphome.github.io/englishgame6/`
+6 modos de aprendizaje + validaciones generales + anti-remount.
 
-> Relacionado: `validate-modals.md` (modales), `automated-offline-test.md` (offline/PWA)
-
-### Nota sobre navegación
-Los module cards del menú no son clickeables via a11y tree. Usar siempre `evaluate_script` para navegar:
-```
-mcp_chrome_devtools_evaluate_script
-function: "() => { window.location.hash = '#/learn/{moduleId}'; return 'ok'; }"
-```
-
-## Prerequisitos
-
-```bash
-curl -I https://gsphome.github.io/englishgame6/  # Verificar sitio activo
-```
+> Prerequisitos y setup en [README.md](README.md). Ejecutar "Antes de empezar" primero.
 
 ---
 
-## 0. Setup inicial
-
-```
-mcp_chrome_devtools_new_page
-url: "https://gsphome.github.io/englishgame6/"
-timeout: 10000
-
-mcp_chrome_devtools_take_snapshot
-```
-
-**Validar:**
-- ✓ URL contiene `#/menu`
-- ✓ Snapshot muestra heading "FluentFlow"
-- ✓ Status muestra "Global score: X correct, Y incorrect, Z% accuracy"
-- ✓ Hay gridcells con módulos visibles
-- ✓ Barra de búsqueda presente
-
----
-
-## 1. Quiz Mode
+## 1. Quiz
 
 ```
 mcp_chrome_devtools_evaluate_script
@@ -50,39 +17,39 @@ text: ["Which word means", "What does"]
 timeout: 5000
 
 mcp_chrome_devtools_take_snapshot
-# ANOTAR: texto de la pregunta, opciones visibles, session score = "0 correct"
 ```
 
-**Interacción — responder una pregunta:**
+ANOTAR: texto de la pregunta, opciones, session score = "0 correct"
+
+### Responder una pregunta
+
 ```
-# Click en una opción (usar uid del snapshot)
 mcp_chrome_devtools_click
 uid: {uid-opcion}
 includeSnapshot: true
 ```
 
-**Validar después de responder:**
-- ✓ Session score cambió a "1 correct" o "1 incorrect"
-- ✓ La pregunta es LA MISMA que antes de responder (no cambió)
-- ✓ Aparece feedback: icono ✓ o ✗, explicación
-- ✓ Botón "Next Question" visible
-- ✓ URL sigue siendo `#/learn/quiz-basic-vocabulary-a1`
+Validar:
+- [ ] Session score cambió a "1 correct" o "1 incorrect"
+- [ ] La pregunta es LA MISMA (no cambió al responder)
+- [ ] Feedback visible: icono ✓/✗, explicación
+- [ ] Botón "Next Question" visible
 
-**Avanzar a siguiente pregunta:**
+### Avanzar
+
 ```
 mcp_chrome_devtools_click
 uid: {uid-next-question}
 includeSnapshot: true
 ```
 
-**Validar:**
-- ✓ Pregunta nueva (diferente a la anterior)
-- ✓ Score acumulado se mantiene
-- ✓ Contador avanzó (ej: "2/10")
+- [ ] Pregunta nueva diferente
+- [ ] Score acumulado se mantiene
+- [ ] Contador avanzó (ej: "2/10")
 
 ---
 
-## 2. Completion Mode
+## 2. Completion
 
 ```
 mcp_chrome_devtools_evaluate_script
@@ -93,43 +60,42 @@ text: ["____"]
 timeout: 5000
 
 mcp_chrome_devtools_take_snapshot
-# ANOTAR: oración con blank, session score = "0 correct"
 ```
 
-**Interacción — completar oración:**
+ANOTAR: oración con blank, session score = "0 correct"
+
+### Completar oración
+
 ```
-# Escribir respuesta en el input
 mcp_chrome_devtools_fill
 uid: {uid-input}
 value: "{respuesta}"
 
-# Enviar
 mcp_chrome_devtools_press_key
 key: "Enter"
 includeSnapshot: true
 ```
 
-**Validar después de enviar:**
-- ✓ Session score cambió a "1 correct" o "1 incorrect"
-- ✓ La oración es LA MISMA que antes de responder
-- ✓ Muestra "Correct!" o "Incorrect" con respuesta correcta
-- ✓ Botón "Next Exercise" visible
-- ✓ URL sigue siendo `#/learn/completion-basic-sentences-a1`
+Validar:
+- [ ] Session score cambió
+- [ ] La oración es LA MISMA
+- [ ] Muestra "Correct!" o "Incorrect" con respuesta correcta
+- [ ] Botón "Next Exercise" visible
 
-**Avanzar:**
+### Avanzar
+
 ```
 mcp_chrome_devtools_click
 uid: {uid-next-exercise}
 includeSnapshot: true
 ```
 
-**Validar:**
-- ✓ Nueva oración con blank
-- ✓ Score acumulado se mantiene
+- [ ] Nueva oración con blank
+- [ ] Score acumulado se mantiene
 
 ---
 
-## 3. Matching Mode
+## 3. Matching
 
 ```
 mcp_chrome_devtools_evaluate_script
@@ -140,10 +106,12 @@ text: ["Click items from both columns"]
 timeout: 5000
 
 mcp_chrome_devtools_take_snapshot
-# ANOTAR: términos (columna izq), definiciones (columna der), contador "0/X"
 ```
 
-**Interacción — emparejar todos los items:**
+ANOTAR: términos, definiciones, contador "0/X"
+
+### Emparejar todos los items
+
 ```
 # Para cada par: click término → click definición
 mcp_chrome_devtools_click
@@ -152,31 +120,25 @@ uid: {uid-term}
 mcp_chrome_devtools_click
 uid: {uid-definition}
 includeSnapshot: true
-
-# Verificar que contador incrementó (ej: "1/6")
-# Repetir hasta "X/X"
+# Verificar contador incrementó. Repetir hasta "X/X"
 ```
 
-**Cuando todos emparejados — verificar y enviar:**
+### Check Matches
+
 ```
-# Debe decir "All matched! Check your answers"
-# Click "Check Matches"
 mcp_chrome_devtools_click
 uid: {uid-check-matches}
 includeSnapshot: true
 ```
 
-**Validar después de Check:**
-- ✓ Session score cambió (ej: "1 correct, 0 incorrect")
-- ✓ Pares siguen visibles con sus emparejamientos
-- ✓ Heading sigue siendo el mismo módulo
-- ✓ Botones "Finish Exercise" y "View Summary" aparecen
-- ✓ URL no cambió
-- ✓ Pares NO se reiniciaron (no se barajaron de nuevo)
+Validar:
+- [ ] Session score cambió
+- [ ] Pares siguen visibles (NO se reiniciaron/barajaron)
+- [ ] Botones "Finish Exercise" y "View Summary" aparecen
 
 ---
 
-## 4. Sorting Mode
+## 4. Sorting
 
 ```
 mcp_chrome_devtools_evaluate_script
@@ -187,39 +149,39 @@ text: ["Drag and drop words"]
 timeout: 5000
 
 mcp_chrome_devtools_take_snapshot
-# ANOTAR: palabras disponibles, categorías, contador "0/X"
 ```
 
-**Interacción — arrastrar palabras a categorías:**
+ANOTAR: palabras, categorías, contador "0/X"
+
+### Arrastrar palabras a categorías
+
 ```
-# IMPORTANTE: tomar snapshot DESPUÉS de cada drag (uids cambian al mover)
+# IMPORTANTE: tomar snapshot DESPUÉS de cada drag (uids cambian)
 mcp_chrome_devtools_drag
 from_uid: {uid-palabra}
 to_uid: {uid-categoria}
 
 mcp_chrome_devtools_take_snapshot
-# Verificar contador incrementó, palabra movida a categoría correcta
 # Repetir hasta "X/X - All words sorted!"
 ```
 
-**Cuando todas clasificadas — verificar:**
+### Check Answers
+
 ```
 mcp_chrome_devtools_click
 uid: {uid-check-answers}
 includeSnapshot: true
 ```
 
-**Validar después de Check:**
-- ✓ Session score cambió
-- ✓ Categorías muestran checkmarks (✓) para correctas
-- ✓ Heading sigue siendo el mismo módulo
-- ✓ Botones "Finish Sorting" y "View Summary" aparecen
-- ✓ URL no cambió
-- ✓ Palabras NO volvieron a "Available Words"
+Validar:
+- [ ] Session score cambió
+- [ ] Categorías muestran checkmarks ✓ para correctas
+- [ ] Botones "Finish Sorting" y "View Summary" aparecen
+- [ ] Palabras NO volvieron a "Available Words"
 
 ---
 
-## 5. Flashcard Mode
+## 5. Flashcard
 
 ```
 mcp_chrome_devtools_evaluate_script
@@ -230,68 +192,57 @@ text: ["Flip", "1/"]
 timeout: 5000
 
 mcp_chrome_devtools_take_snapshot
-# ANOTAR: texto frontal de la tarjeta, contador "1/X"
 ```
 
-**Interacción — voltear tarjeta:**
+### Flip
+
 ```
-# Click en botón Flip (o click en la tarjeta)
 mcp_chrome_devtools_click
 uid: {uid-flip-btn}
 includeSnapshot: true
 ```
 
-**Validar después de flip:**
-- ✓ Tarjeta muestra el reverso (traducción/definición)
-- ✓ Texto frontal sigue visible en el reverso
-- ✓ Botón cambia a "Flip Back"
-- ✓ Contador no cambió (sigue "1/X")
+- [ ] Muestra reverso (traducción/definición)
+- [ ] Botón cambia a "Flip Back"
+- [ ] Contador no cambió
 
-**Avanzar a siguiente tarjeta:**
+### Navegación
+
 ```
-# Click flecha derecha (next)
 mcp_chrome_devtools_click
 uid: {uid-next-btn}
 includeSnapshot: true
 ```
 
-**Validar:**
-- ✓ Nueva tarjeta (texto diferente)
-- ✓ Contador avanzó ("2/X")
-- ✓ Tarjeta empieza por el frente (no volteada)
+- [ ] Nueva tarjeta, contador avanzó ("2/X")
+- [ ] Tarjeta empieza por el frente
 
-**Navegar hacia atrás:**
 ```
 mcp_chrome_devtools_click
 uid: {uid-prev-btn}
 includeSnapshot: true
 ```
 
-**Validar:**
-- ✓ Vuelve a tarjeta anterior
-- ✓ Contador retrocedió ("1/X")
+- [ ] Vuelve a tarjeta anterior, contador retrocedió
 
-**Keyboard navigation:**
+### Keyboard
+
 ```
-# Flip con Space
 mcp_chrome_devtools_press_key
 key: " "
-includeSnapshot: true
 
-# Next con ArrowRight
 mcp_chrome_devtools_press_key
 key: "ArrowRight"
-includeSnapshot: true
 
-# Prev con ArrowLeft
 mcp_chrome_devtools_press_key
 key: "ArrowLeft"
-includeSnapshot: true
 ```
+
+- [ ] Space = flip, ArrowRight = next, ArrowLeft = prev
 
 ---
 
-## 6. Reading Mode
+## 6. Reading
 
 ```
 mcp_chrome_devtools_evaluate_script
@@ -302,66 +253,39 @@ text: ["Learning Objectives", "Start Reading", "Greetings"]
 timeout: 5000
 
 mcp_chrome_devtools_take_snapshot
-# ANOTAR: título, página de objetivos visible
 ```
 
-**Interacción — navegar secciones:**
+### Navegar secciones
+
 ```
-# Click "Start Reading" o flecha derecha
 mcp_chrome_devtools_click
 uid: {uid-next-btn}
 includeSnapshot: true
+# Repetir hasta llegar al summary
 ```
 
-**Validar primera sección:**
-- ✓ Contenido de lectura visible (párrafos, texto)
-- ✓ Contador muestra sección actual (ej: "1/3")
-- ✓ Botones prev/next visibles
+- [ ] Contenido de lectura visible en cada sección
+- [ ] Contador muestra sección actual (ej: "1/3")
+- [ ] Summary muestra "Key Vocabulary" y/o "Grammar Points"
 
-**Avanzar por todas las secciones:**
-```
-# Repetir click next hasta llegar al summary
-mcp_chrome_devtools_click
-uid: {uid-next-btn}
-includeSnapshot: true
-```
+### Finish
 
-**Validar summary (última página):**
-- ✓ Muestra "Key Vocabulary" y/o "Grammar Points" si existen
-- ✓ Botón "Finish Reading" o equivalente
-- ✓ Al hacer click en finish, vuelve al menú
-
-**Validar retorno al menú:**
 ```
 mcp_chrome_devtools_click
 uid: {uid-finish-btn}
 includeSnapshot: true
 ```
 
-- ✓ URL cambió a `#/menu`
-- ✓ Módulo de reading aparece como "Completed"
+- [ ] URL cambió a `#/menu`
+- [ ] Módulo aparece como "Completed"
 
 ---
 
 ## 7. Validaciones generales
 
-### 7a. Header y Score Display
+### 7a. Navegación menú ↔ módulo
 
 ```
-# Desde cualquier módulo de aprendizaje, verificar header
-mcp_chrome_devtools_take_snapshot
-```
-
-**Validar:**
-- ✓ Header muestra "FluentFlow" con heading level 1
-- ✓ Status muestra session score (en modo learning) o global score (en menú)
-- ✓ Botón de navegación/settings presente
-- ✓ Botón de login presente
-
-### 7b. Navegación menú → módulo → menú
-
-```
-# Desde menú, navegar a un módulo
 mcp_chrome_devtools_evaluate_script
 function: "() => { window.location.hash = '#/learn/quiz-basic-vocabulary-a1'; return 'ok'; }"
 
@@ -369,39 +293,15 @@ mcp_chrome_devtools_wait_for
 text: ["Which word means", "What does"]
 timeout: 5000
 
-mcp_chrome_devtools_take_snapshot
-# Verificar que estamos en el módulo
-
-# Volver al menú con botón "Return to main menu"
 mcp_chrome_devtools_click
 uid: {uid-return-menu}
 includeSnapshot: true
 ```
 
-**Validar:**
-- ✓ URL cambió a `#/menu`
-- ✓ Menú principal visible con todos los módulos
-- ✓ Global score visible (no session score)
+- [ ] URL cambió a `#/menu`
+- [ ] Global score visible (no session score)
 
-### 7c. Navegación directa por hash
-
-```
-# Probar navegación directa a diferentes modos
-mcp_chrome_devtools_evaluate_script
-function: "() => { window.location.hash = '#/learn/flashcard-everyday-life-a1'; return 'ok'; }"
-
-mcp_chrome_devtools_wait_for
-text: ["Flip", "1/"]
-timeout: 5000
-
-mcp_chrome_devtools_take_snapshot
-```
-
-**Validar:**
-- ✓ Módulo carga correctamente sin pasar por menú
-- ✓ Session score se reinicia a 0
-
-### 7d. Módulo inexistente
+### 7b. Módulo inexistente
 
 ```
 mcp_chrome_devtools_evaluate_script
@@ -410,29 +310,16 @@ function: "() => { window.location.hash = '#/learn/nonexistent-module-xyz'; retu
 mcp_chrome_devtools_take_snapshot
 ```
 
-**Validar:**
-- ✓ Muestra error UI (no crash)
-- ✓ Botón "Try Again" o "Return to Menu" visible
-- ✓ No hay errores JS en console
+- [ ] Error UI visible (no crash)
+- [ ] Botón "Try Again" o "Return to Menu"
+
+### 7c. Console limpia
 
 ```
-mcp_chrome_devtools_list_console_messages
-types: ["error"]
-pageSize: 20
-```
-
-### 7e. Console limpia durante uso normal
-
-```
-# Navegar al menú
-mcp_chrome_devtools_evaluate_script
-function: "() => { window.location.hash = '#/menu'; return 'ok'; }"
-
-# Limpiar console
 mcp_chrome_devtools_evaluate_script
 function: "() => { console.clear(); return 'cleared'; }"
 
-# Navegar a un módulo, interactuar, volver
+# Navegar a quiz, responder, volver
 mcp_chrome_devtools_evaluate_script
 function: "() => { window.location.hash = '#/learn/quiz-basic-vocabulary-a1'; return 'ok'; }"
 
@@ -440,32 +327,20 @@ mcp_chrome_devtools_wait_for
 text: ["Which word means", "What does"]
 timeout: 5000
 
-# Responder una pregunta (click opción)
 mcp_chrome_devtools_click
 uid: {uid-opcion}
 
-# Verificar console
 mcp_chrome_devtools_list_console_messages
 types: ["error", "warn"]
 pageSize: 20
 ```
 
-**Validar:**
-- ✓ No hay errores de React ("unmounted component", "state update")
-- ✓ No hay warnings de keys duplicadas
-- ✓ No hay errores de red inesperados
+- [ ] Sin errores de React ("unmounted component", "state update")
+- [ ] Sin warnings de keys duplicadas
 
-### 7f. Persistencia de progreso
+### 7d. Persistencia
 
 ```
-# Verificar localStorage
-mcp_chrome_devtools_evaluate_script
-function: "() => {
-  const keys = Object.keys(localStorage).filter(k => k.includes('progress') || k.includes('score') || k.includes('user'));
-  return keys.map(k => ({ key: k, size: localStorage.getItem(k).length }));
-}"
-
-# Recargar página
 mcp_chrome_devtools_navigate_page
 type: "reload"
 timeout: 10000
@@ -473,75 +348,37 @@ timeout: 10000
 mcp_chrome_devtools_take_snapshot
 ```
 
-**Validar:**
-- ✓ Global score se mantiene después de reload
-- ✓ Módulos completados siguen marcados como "Completed"
-- ✓ localStorage contiene datos de progreso
+- [ ] Global score se mantiene
+- [ ] Módulos completados siguen marcados
+- [ ] Settings (tema, idioma) preservados
 
-### 7g. Responsive / viewport
-
-```
-# Desktop
-mcp_chrome_devtools_resize_page
-width: 1280
-height: 800
-
-mcp_chrome_devtools_take_screenshot
-filePath: "scripts/devtools/responsive-desktop.png"
-
-# Tablet
-mcp_chrome_devtools_resize_page
-width: 768
-height: 1024
-
-mcp_chrome_devtools_take_screenshot
-filePath: "scripts/devtools/responsive-tablet.png"
-
-# Mobile
-mcp_chrome_devtools_resize_page
-width: 375
-height: 667
-
-mcp_chrome_devtools_take_screenshot
-filePath: "scripts/devtools/responsive-mobile.png"
-```
-
-**Validar:**
-- ✓ Layout se adapta sin overflow horizontal
-- ✓ Cards del menú se reorganizan
-- ✓ Botones son accesibles en mobile
-- ✓ Texto no se corta
-
-### 7h. Zustand selector regression check
+### 7e. Horizontal overflow
 
 ```
 mcp_chrome_devtools_evaluate_script
-function: "() => {
-  // Verificar que no hay suscripciones completas al store en componentes críticos
-  // Esto es una verificación de código, no de runtime
-  return {
-    note: 'Verificar manualmente con grep',
-    command: 'grep -r \"useAppStore()\" src/components/learning/ src/components/layout/AppRouter.tsx src/App.tsx src/components/ui/Header.tsx',
-    expected: 'No matches (todos deben usar selectores)'
-  };
-}"
+function: "() => ({
+  overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth,
+  scrollWidth: document.documentElement.scrollWidth,
+  clientWidth: document.documentElement.clientWidth
+})"
 ```
 
-**Verificación en código:**
+- [ ] `overflow: false` en desktop, tablet y mobile
+
+### 7f. Zustand selector check
+
 ```bash
 grep -r "useAppStore()" src/components/learning/ src/components/layout/AppRouter.tsx src/App.tsx src/components/ui/Header.tsx
-# Esperado: sin resultados
-# Si hay resultados → regresión del bug de remount
+# Esperado: sin resultados → todos usan selectores individuales
 ```
 
 ---
 
-## 8. Test de no-remount (anti-regresión)
+## 8. Anti-remount
 
 Verifica que `updateSessionScore` no causa remount del componente.
 
 ```
-# Navegar a quiz
 mcp_chrome_devtools_evaluate_script
 function: "() => { window.location.hash = '#/learn/quiz-basic-vocabulary-a1'; return 'ok'; }"
 
@@ -549,7 +386,7 @@ mcp_chrome_devtools_wait_for
 text: ["Which word means", "What does"]
 timeout: 5000
 
-# Instalar detector de remount
+# Instalar detector
 mcp_chrome_devtools_evaluate_script
 function: "() => {
   let remounts = 0;
@@ -567,163 +404,35 @@ function: "() => {
   return 'Detector installed';
 }"
 
-# Tomar snapshot y anotar la pregunta
 mcp_chrome_devtools_take_snapshot
+# ANOTAR: pregunta actual
 
-# Responder la pregunta
 mcp_chrome_devtools_click
 uid: {uid-opcion}
 
-# Verificar remounts
 mcp_chrome_devtools_evaluate_script
 function: "() => {
   const count = window.__remountDetector.count();
   window.__remountDetector.stop();
-  return {
-    remounts: count,
-    verdict: count === 0 ? 'PASS - no remount detected' : 'FAIL - component remounted ' + count + ' times'
-  };
+  return { remounts: count, verdict: count === 0 ? 'PASS' : 'FAIL - remounted ' + count + ' times' };
 }"
 ```
 
-**Validar:**
-- ✓ `remounts: 0` → PASS
-- ✓ Si `remounts > 0` → regresión del bug, revisar selectores de Zustand
+- [ ] `remounts: 0` → PASS
+- [ ] Pregunta es la misma que antes de responder
 
 ---
 
-## Módulos de referencia por modo
-
-| Modo | ID del módulo | Nivel |
-|------|---------------|-------|
-| Quiz | `quiz-basic-vocabulary-a1` | A1 |
-| Quiz | `quiz-everyday-life-a1` | A1 |
-| Quiz | `quiz-family-home-a2` | A2 |
-| Quiz | `quiz-elementary-review-a2` | A2 |
-| Completion | `completion-basic-sentences-a1` | A1 |
-| Completion | `completion-greetings-practice-a1` | A1 |
-| Completion | `completion-daily-activities-a2` | A2 |
-| Completion | `completion-past-stories-a2` | A2 |
-| Matching | `matching-common-verbs-a1` | A1 |
-| Matching | `matching-basic-grammar-a1` | A1 |
-| Matching | `matching-time-expressions-a2` | A2 |
-| Matching | `matching-be-vs-go-a2` | A2 |
-| Sorting | `sorting-word-categories-a1` | A1 |
-| Sorting | `sorting-verb-tenses-a1` | A1 |
-| Sorting | `sorting-past-tense-a2` | A2 |
-| Sorting | `sorting-conditionals-b1` | B1 |
-| Flashcard | `flashcard-basic-vocabulary-a1` | A1 |
-| Flashcard | `flashcard-everyday-life-a1` | A1 |
-| Flashcard | `flashcard-family-a2` | A2 |
-| Flashcard | `flashcard-home-a2` | A2 |
-| Reading | `reading-greetings-a1` | A1 |
-| Reading | `reading-daily-life-a1` | A1 |
-| Reading | `reading-travel-a1` | A1 |
-| Reading | `reading-business-a2` | A2 |
-
----
-
-## Señales de regresión
-
-| Síntoma | Causa probable |
-|---------|----------------|
-| Al responder, pregunta cambia a otra diferente | `useAppStore()` sin selector en componente de learning o AppRouter |
-| Pregunta nueva ya muestra resultado sin responder | Remount: `processedQuestionsRef` se reinicializa con shuffle diferente |
-| Score no se actualiza al responder | `updateSessionScore` no se llama o selector roto |
-| Componente muestra loading spinner al responder | AppRouter se re-renderiza y Suspense se activa |
-| Console: "Can't perform state update on unmounted" | Componente se desmontó durante actualización de score |
-| Pares de matching se barajan al hacer Check | Remount del MatchingComponent |
-| Palabras de sorting vuelven a Available Words | Remount del SortingComponent |
-| Flashcard vuelve a tarjeta 1 al voltear | Remount del FlashcardComponent |
-
----
-
-## 9. Revisión visual multi-viewport
-
-Revisión visual exhaustiva combinando viewports, temas e idiomas.
-
-### Setup
+## Checklist rápido
 
 ```
-# Habilitar Dev Mode para bypass de prerequisites
-mcp_chrome_devtools_evaluate_script
-function: "() => {
-  const raw = localStorage.getItem('settings-storage');
-  const data = JSON.parse(raw);
-  data.state.devMode = true;
-  localStorage.setItem('settings-storage', JSON.stringify(data));
-  location.reload();
-  return 'Dev mode enabled';
-}"
-```
-
-### Combinaciones recomendadas
-
-| # | Viewport | Tema | Idioma | Resize |
-|---|----------|------|--------|--------|
-| 1 | Desktop | Light | English | `width: 1280, height: 800` |
-| 2 | Mobile | Dark | Español | `width: 375, height: 667` |
-| 3 | Desktop | Dark | Español | `width: 1280, height: 800` |
-| 4 | Tablet | Dark | Español | `width: 768, height: 1024` |
-
-### Para cada combinación, verificar:
-
-**Modos de aprendizaje** (navegar con `window.location.hash`):
-- Quiz: pregunta, opciones, explicación, botones
-- Completion: oración con blank, input, tip, botones
-- Flashcard: tarjeta, flip/prev/next
-- Matching: columnas términos/definiciones, botones
-- Sorting: palabras disponibles, categorías, botones
-- Reading: objetivos, navegación de secciones
-
-**Menú principal:**
-- Cards de módulos con nivel, tipo, duración
-- Barra de búsqueda
-- Niveles colapsables (Fundamentos, Elemental, etc.)
-- Botón "Continuar" en next-module
-
-**Modales (abrir desde side menu):**
-- Settings: 4 tabs (General/Juegos/Categorías/Offline)
-- About: versión, features, developer, tech stack
-- Progress Dashboard: stats, gráfico semanal
-- Learning Path: círculos SVG por nivel
-- Profile: formulario con validación
-
-### Verificar horizontal overflow
-
-```
-mcp_chrome_devtools_evaluate_script
-function: "() => ({
-  overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth,
-  scrollWidth: document.documentElement.scrollWidth,
-  clientWidth: document.documentElement.clientWidth
-})"
-```
-
-- ✓ `overflow: false` en todos los viewports
-
-### Screenshots (opcionales, gitignored)
-
-```
-mcp_chrome_devtools_take_screenshot
-filePath: "scripts/devtools/review-{viewport}-{theme}-{lang}-{mode}.png"
-```
-
----
-
-## Checklist rápido post-deploy
-
-```
-[ ] Sitio accesible (HTTP 200)
-[ ] Menú carga con módulos
 [ ] Quiz: responder → score actualiza, pregunta no cambia
 [ ] Completion: enviar → score actualiza, oración no cambia
-[ ] Matching: Check → score actualiza, pares no se reinician
-[ ] Sorting: Check → score actualiza, palabras no vuelven
-[ ] Flashcard: flip funciona, next/prev funciona
+[ ] Matching: Check → pares no se reinician
+[ ] Sorting: Check → palabras no vuelven
+[ ] Flashcard: flip/next/prev funciona
 [ ] Reading: navegar secciones, finish vuelve al menú
 [ ] Console sin errores de React
 [ ] Progreso persiste después de reload
-[ ] Sin overflow horizontal en mobile/tablet/desktop
-[ ] Modales no afectan estado de learning mode activo
+[ ] Sin overflow horizontal
 ```
