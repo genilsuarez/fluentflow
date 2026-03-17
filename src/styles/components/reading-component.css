@@ -7,11 +7,12 @@
 .reading-component__container *::before,
 .reading-component__container *::after {
   box-sizing: border-box;
-} /* === MAIN CONTAINER - Fixed dimensions, no jumps === */
+} /* === MAIN CONTAINER - Stable minimum height, grows with content === */
 .reading-component__container {
   width: 100%;
   max-width: 900px;
-  height: clamp(400px, 70vh, 600px);
+  min-height: clamp(400px, 70vh, 600px);
+  max-height: 100vh;
   margin: 0 auto;
   padding: 0.375rem;
   display: flex;
