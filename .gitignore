@@ -2,6 +2,7 @@ node_modules/
 local/
 dist/
 coverage/
+screenshots/
 .DS_Store
 .vscode/
 .kiro/

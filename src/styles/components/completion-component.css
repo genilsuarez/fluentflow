@@ -278,7 +278,7 @@ html.dark .completion-component__input--neutral:focus {
 }
 
 .completion-component__result-container--visible {
-  max-height: 6rem;
+  max-height: 12rem;
   opacity: 1;
 }
 
@@ -337,6 +337,32 @@ html.dark .completion-component__correct-answer {
   color: var(--theme-text-secondary, #e5e7eb);
 }
 
+/* === TENSE HINT === */
+.completion-component__tense-hint {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.625rem;
+  background-color: #fef3c7;
+  border-left: 3px solid #f59e0b;
+  border-radius: 0 var(--radius-sm, 0.25rem) var(--radius-sm, 0.25rem) 0;
+}
+
+.completion-component__tense-hint-text {
+  font-size: 0.75rem;
+  color: #92400e;
+  line-height: 1.5;
+  margin: 0;
+}
+
+html.dark .completion-component__tense-hint {
+  background-color: rgba(245, 158, 11, 0.15);
+  border-left-color: #f59e0b;
+}
+
+html.dark .completion-component__tense-hint-text {
+  color: #fbbf24;
+}
+
+/* === EXPLANATION === */
 .completion-component__explanation {
   border-top: 1px solid #bfdbfe;
   padding-top: 0.5rem;
@@ -422,7 +448,7 @@ html.dark .completion-component__explanation-label {
   }
 
   .completion-component__result-container--visible {
-    max-height: 5rem;
+    max-height: 10rem;
   }
 }
 
