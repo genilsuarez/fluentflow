@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
 import { initializeTheme } from './utils/themeInitializer';
+import { clearChunkRetryFlag } from './utils/lazyWithRetry';
 import './utils/safariDetection';
 
 // Registrar Service Worker para modo offline
@@ -44,6 +45,9 @@ try {
       <App />
     </React.StrictMode>
   );
+
+  // App loaded successfully — clear any chunk retry flag
+  clearChunkRetryFlag();
 } catch (error) {
   // Use basic console.error for critical initialization errors
   console.error('Failed to initialize React app:', error);

@@ -1,85 +1,22 @@
-import React, { Suspense, lazy } from 'react';
+import React, { Suspense } from 'react';
 import { useAppStore } from '../../stores/appStore';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useModuleData } from '../../hooks/useModuleData';
 import { useTranslation } from '../../utils/i18n';
 import { ModuleNotAvailableOfflineError } from '../../utils/secureHttp';
+import { lazyWithRetry } from '../../utils/lazyWithRetry';
 import { LoadingSkeleton } from '../ui/LoadingSkeleton';
 import { MainMenu } from '../ui/MainMenu';
 import type { LearningModule } from '../../types';
 import '../../styles/components/app-router.css';
 
-// Helper to get translated error message outside React context (no hooks)
-const getErrorMsg = () => {
-  const lang = useSettingsStore.getState().language;
-  // Access translation directly without useTranslation hook
-  const translations: Record<string, Record<string, string>> = {
-    en: { 'errors.failedToLoadComponent': 'Failed to load component' },
-    es: { 'errors.failedToLoadComponent': 'Error al cargar componente' },
-  };
-  return translations[lang]?.['errors.failedToLoadComponent'] || 'Failed to load component';
-};
-
-// Lazy load learning components with better error handling
-const FlashcardComponent = lazy(() =>
-  import('../learning/FlashcardComponent')
-    .then(module => ({
-      default: module.default,
-    }))
-    .catch(() => ({
-      default: () => <div className="app-router__error-fallback">{getErrorMsg()}</div>,
-    }))
-);
-
-const QuizComponent = lazy(() =>
-  import('../learning/QuizComponent')
-    .then(module => ({
-      default: module.default,
-    }))
-    .catch(() => ({
-      default: () => <div className="app-router__error-fallback">{getErrorMsg()}</div>,
-    }))
-);
-
-const CompletionComponent = lazy(() =>
-  import('../learning/CompletionComponent')
-    .then(module => ({
-      default: module.default,
-    }))
-    .catch(() => ({
-      default: () => <div className="app-router__error-fallback">{getErrorMsg()}</div>,
-    }))
-);
-
-const SortingComponent = lazy(() =>
-  import('../learning/SortingComponent')
-    .then(module => ({
-      default: module.default,
-    }))
-    .catch(() => ({
-      default: () => <div className="app-router__error-fallback">{getErrorMsg()}</div>,
-    }))
-);
-
-const MatchingComponent = lazy(() =>
-  import('../learning/MatchingComponent')
-    .then(module => ({
-      default: module.default,
-    }))
-    .catch(() => ({
-      default: () => <div className="app-router__error-fallback">{getErrorMsg()}</div>,
-    }))
-);
-
-const ReadingComponent = lazy(() =>
-  import('../learning/ReadingComponent')
-    .then(module => ({
-      default: module.default,
-    }))
-    .catch(() => ({
-      default: () => <div className="app-router__error-fallback">{getErrorMsg()}</div>,
-    }))
-);
+// Lazy load learning components with auto-retry on chunk load failure
+const FlashcardComponent = lazyWithRetry(() => import('../learning/FlashcardComponent'));
+const QuizComponent = lazyWithRetry(() => import('../learning/QuizComponent'));
+const CompletionComponent = lazyWithRetry(() => import('../learning/CompletionComponent'));
+const SortingComponent = lazyWithRetry(() => import('../learning/SortingComponent'));
+const MatchingComponent = lazyWithRetry(() => import('../learning/MatchingComponent'));
+const ReadingComponent = lazyWithRetry(() => import('../learning/ReadingComponent'));
 
 // Enhanced loading component
 const ComponentLoader: React.FC = () => (
