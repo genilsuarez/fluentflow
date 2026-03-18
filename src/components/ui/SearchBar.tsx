@@ -25,6 +25,16 @@ export const SearchBar: React.FC<SearchBarProps> = ({
   const clearButtonId = useId();
   const divRef = useRef<HTMLDivElement>(null);
 
+  // Force native spellcheck/autocorrect attributes for iOS Safari/Chrome
+  React.useEffect(() => {
+    const el = divRef.current;
+    if (!el) return;
+    el.setAttribute('spellcheck', 'false');
+    el.setAttribute('autocorrect', 'off');
+    el.setAttribute('autocapitalize', 'off');
+    el.setAttribute('autocomplete', 'off');
+  }, []);
+
   // Update div content when query changes externally
   React.useEffect(() => {
     if (divRef.current && divRef.current.textContent !== query) {
@@ -65,6 +75,9 @@ export const SearchBar: React.FC<SearchBarProps> = ({
         aria-describedby={query ? clearButtonId : undefined}
         data-form-type="other"
         suppressContentEditableWarning
+        spellCheck={false}
+        autoCorrect="off"
+        autoCapitalize="off"
       />
       {query && !disabled && (
         <button

@@ -51,6 +51,19 @@ export const EditableInput = forwardRef<EditableInputHandle, EditableInputProps>
       },
     }));
 
+    // Force native spellcheck/autocorrect attributes for iOS Safari/Chrome
+    useEffect(() => {
+      const el = divRef.current;
+      if (!el) return;
+      el.setAttribute('spellcheck', 'false');
+      el.setAttribute('autocorrect', 'off');
+      el.setAttribute('autocapitalize', 'off');
+      el.setAttribute('autocomplete', 'off');
+      el.setAttribute('data-gramm', 'false');           // Grammarly
+      el.setAttribute('data-gramm_editor', 'false');
+      el.setAttribute('data-enable-grammarly', 'false');
+    }, []);
+
     // Focus and place cursor at end of content
     const focusAtEnd = () => {
       const el = divRef.current;
@@ -150,6 +163,9 @@ export const EditableInput = forwardRef<EditableInputHandle, EditableInputProps>
         role="textbox"
         aria-label={placeholder}
         suppressContentEditableWarning
+        spellCheck={false}
+        autoCorrect="off"
+        autoCapitalize="off"
         // Prevent iOS form navigation bar
         data-form-type="other"
       />
