@@ -31,6 +31,7 @@ export interface FlashcardData extends BaseLearningData {
   front: string;
   back: string;
   ipa?: string;
+  hint?: string;
   example?: string;
   example_es?: string;
 }

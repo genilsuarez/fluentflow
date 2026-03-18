@@ -132,6 +132,17 @@
   margin-bottom: 0.375rem;
 }
 
+.flashcard-component__hint {
+  font-size: 0.75rem;
+  color: var(--theme-primary-blue, #3b82f6);
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 0.25rem;
+  padding: 0.125rem 0.5rem;
+  background-color: rgba(59, 130, 246, 0.08);
+  border-radius: var(--radius-sm, 0.25rem);
+}
+
 .flashcard-component__example {
   font-size: 0.75rem;
   color: var(--theme-text-secondary, #6b7280);
