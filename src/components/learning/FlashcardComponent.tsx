@@ -116,12 +116,7 @@ const FlashcardComponent: React.FC<FlashcardComponentProps> = ({ module }) => {
 
     window.addEventListener('keydown', handleKeyPress);
     return () => window.removeEventListener('keydown', handleKeyPress);
-  }, [
-    processedFlashcards.length,
-    handleRevealOrNext,
-    handlePrev,
-    returnToMenu,
-  ]);
+  }, [processedFlashcards.length, handleRevealOrNext, handlePrev, returnToMenu]);
 
   // Early return if no data
   if (!processedFlashcards.length) {
