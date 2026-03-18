@@ -6,6 +6,7 @@ screenshots/
 .DS_Store
 .vscode/
 .kiro/
+bot/
 
 # DevTools test artifacts (keep only reports)
 scripts/devtools/*.png

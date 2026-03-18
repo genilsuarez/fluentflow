@@ -667,49 +667,29 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
                           : 'sorting-modal__result-card--incorrect'
                       }`}
                     >
-                      <div className="sorting-modal__card-header">
-                        <h4 className="sorting-modal__card-word">{result.word}</h4>
-                        <span
-                          className={`sorting-modal__card-status ${
-                            result.isCorrect
-                              ? 'sorting-modal__card-status--correct'
-                              : 'sorting-modal__card-status--incorrect'
-                          }`}
-                        >
-                          {result.isCorrect ? '✓' : '✗'}
-                        </span>
-                      </div>
+                      <span
+                        className={`sorting-modal__card-status ${
+                          result.isCorrect
+                            ? 'sorting-modal__card-status--correct'
+                            : 'sorting-modal__card-status--incorrect'
+                        }`}
+                      >
+                        {result.isCorrect ? '✓' : '✗'}
+                      </span>
 
-                      <div className="sorting-modal__card-content">
-                        <div className="sorting-modal__card-field">
-                          <span className="sorting-modal__card-label">
-                            {t('learning.correctAnswer')}
-                          </span>
-                          <p className="sorting-modal__card-value sorting-modal__card-value--correct">
-                            {result.correctCategory}
-                          </p>
-                        </div>
+                      <h4 className="sorting-modal__card-word">{result.word}</h4>
 
-                        {!result.isCorrect && (
-                          <div className="sorting-modal__card-field">
-                            <span className="sorting-modal__card-label">
-                              {t('learning.yourAnswer')}
-                            </span>
-                            <p className="sorting-modal__card-value sorting-modal__card-value--incorrect">
-                              {result.userCategory}
-                            </p>
-                          </div>
-                        )}
+                      <p className="sorting-modal__card-value sorting-modal__card-value--correct">
+                        {result.correctCategory}
+                      </p>
 
-                        {result.explanation && (
-                          <div className="sorting-modal__card-field">
-                            <span className="sorting-modal__card-label">
-                              {t('learning.explanation')}
-                            </span>
-                            <p className="sorting-modal__card-explanation">{result.explanation}</p>
-                          </div>
-                        )}
-                      </div>
+                      {!result.isCorrect ? (
+                        <p className="sorting-modal__card-value sorting-modal__card-value--incorrect">
+                          {result.userCategory}
+                        </p>
+                      ) : (
+                        <span className="sorting-modal__card-placeholder"></span>
+                      )}
                     </div>
                   ))}
                 </div>
