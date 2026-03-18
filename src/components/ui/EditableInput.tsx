@@ -59,7 +59,7 @@ export const EditableInput = forwardRef<EditableInputHandle, EditableInputProps>
       el.setAttribute('autocorrect', 'off');
       el.setAttribute('autocapitalize', 'off');
       el.setAttribute('autocomplete', 'off');
-      el.setAttribute('data-gramm', 'false');           // Grammarly
+      el.setAttribute('data-gramm', 'false'); // Grammarly
       el.setAttribute('data-gramm_editor', 'false');
       el.setAttribute('data-enable-grammarly', 'false');
     }, []);
