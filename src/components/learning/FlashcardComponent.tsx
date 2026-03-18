@@ -166,9 +166,7 @@ const FlashcardComponent: React.FC<FlashcardComponentProps> = ({ module }) => {
               />
             </div>
             {currentCard?.ipa && <p className="flashcard-component__ipa">{currentCard.ipa}</p>}
-            {currentCard?.hint && (
-              <p className="flashcard-component__hint">{currentCard.hint}</p>
-            )}
+            {currentCard?.hint && <p className="flashcard-component__hint">{currentCard.hint}</p>}
             {currentCard?.example && (
               <div className="flashcard-component__example">
                 "
