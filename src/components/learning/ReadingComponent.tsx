@@ -451,10 +451,8 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                       const [, number, quote, note] = angleBracketMatch;
                       return (
                         <div key={index} className="reading-component__example-card">
-                          <div className="reading-component__example-card-header">
-                            <span className="reading-component__example-number">{number}</span>
-                          </div>
                           <div className="reading-component__example-quote">
+                            <span className="reading-component__example-number">{number}</span>
                             &ldquo;{quote}&rdquo;
                             {note?.trim() && (
                               <span className="reading-component__example-note">{note.trim()}</span>

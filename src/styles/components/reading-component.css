@@ -211,8 +211,9 @@
   border-radius: 0.375rem;
   border-left: 2px solid var(--reading-accent-primary);
   display: flex;
-  flex-direction: column;
-  gap: 0.125rem;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem;
 }
 
 .reading-component__example-note {
@@ -220,7 +221,7 @@
   font-weight: 400;
   font-style: normal;
   color: var(--reading-text-secondary);
-  margin-top: 0.125rem;
+  width: 100%;
 }
 
 /* === EXAMPLE CONTENT - Fallback for non-structured examples === */
