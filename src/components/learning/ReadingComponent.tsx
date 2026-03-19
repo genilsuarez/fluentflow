@@ -364,7 +364,11 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                           >
                             {index + 1}
                           </span>
-                          <div className="reading-component__grammar-rule">{point.rule}</div>
+                          <div className="reading-component__grammar-rule">
+                            <ContentRenderer
+                              content={ContentAdapter.ensureStructured(point.rule, 'reading')}
+                            />
+                          </div>
                         </div>
                         <div className="reading-component__grammar-explanation">
                           <ContentRenderer
