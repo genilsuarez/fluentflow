@@ -25,6 +25,11 @@ export const MainMenu: React.FC = () => {
   const gridRef = useRef<HTMLDivElement>(null);
   const hasScrolledToNext = useRef(false);
 
+  // Persistent current module ID (next recommended)
+  const currentModuleId = React.useMemo(() => {
+    return progression.getNextRecommendedModule()?.id ?? null;
+  }, [progression]);
+
   // Sync view mode with stored context when component mounts
   useEffect(() => {
     setViewMode(previousMenuContext);
@@ -272,6 +277,7 @@ export const MainMenu: React.FC = () => {
                     role="gridcell"
                     aria-posinset={index + 1}
                     aria-setsize={results.length}
+                    isCurrentModule={currentModuleId === module.id}
                   />
                 ))}
               </div>
@@ -305,6 +311,7 @@ export const MainMenu: React.FC = () => {
                 aria-posinset={index + 1}
                 aria-setsize={modules.length}
                 isNextRecommended={highlightedModuleId === module.id}
+                isCurrentModule={currentModuleId === module.id}
               />
             ))}
           </div>

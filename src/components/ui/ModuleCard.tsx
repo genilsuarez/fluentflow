@@ -24,6 +24,7 @@ interface ModuleCardProps {
   'aria-posinset'?: number;
   'aria-setsize'?: number;
   isNextRecommended?: boolean;
+  isCurrentModule?: boolean;
 }
 
 const getIcon = (learningMode: string) => {
@@ -60,6 +61,7 @@ export const ModuleCard: React.FC<ModuleCardProps> = ({
   'aria-posinset': ariaPosinset,
   'aria-setsize': ariaSetsize,
   isNextRecommended = false,
+  isCurrentModule = false,
 }) => {
   const progression = useModuleProgression(module.id);
   const { getModuleCompletion } = useProgressStore();
@@ -143,7 +145,7 @@ export const ModuleCard: React.FC<ModuleCardProps> = ({
   return (
     <button
       data-module-id={module.id}
-      className={`module-card module-card--${module.learningMode} ${statusInfo.className} ${isNextRecommended ? 'module-card--next-recommended' : ''}`}
+      className={`module-card module-card--${module.learningMode} ${statusInfo.className} ${isNextRecommended ? 'module-card--next-recommended' : ''} ${isCurrentModule ? 'module-card--current' : ''}`}
       onClick={handleClick}
       onKeyDown={handleKeyDown}
       tabIndex={statusInfo.disabled ? -1 : tabIndex}
