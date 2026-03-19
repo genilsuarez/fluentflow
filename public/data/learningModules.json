@@ -331,7 +331,7 @@
     "category": "Idioms",
     "unit": 1,
     "prerequisites": [
-      "quiz-phrasal-verbs-a1"
+      "reading-idioms-a1"
     ],
     "description": "Learn common English idioms with Spanish translations (20 idioms)",
     "estimatedTime": 5,
@@ -756,7 +756,7 @@
     "category": "Idioms",
     "unit": 2,
     "prerequisites": [
-      "completion-elementary-phrasal-verbs-a2"
+      "reading-idioms-a2"
     ],
     "description": "Common English idioms for elementary learners (20 idioms)",
     "estimatedTime": 5,
@@ -1164,7 +1164,7 @@
     "category": "Idioms",
     "unit": 3,
     "prerequisites": [
-      "completion-phrasal-verbs-practice-b1"
+      "reading-idioms-b1"
     ],
     "description": "Common idioms for everyday situations with translations (20 idioms)",
     "estimatedTime": 5,
