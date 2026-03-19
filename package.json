@@ -1,6 +1,7 @@
 {
   "name": "fluentflow",
   "version": "1.0.0",
+  "author": "Genil Suárez",
   "type": "module",
   "scripts": {
     "dev": "vite --mode development --config config/vite.config.ts",
