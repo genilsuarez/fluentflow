@@ -46,9 +46,15 @@ function sendTelegram(token, chatId, text) {
   });
 }
 
-const message = process.argv[2];
+let message = process.argv[2];
 if (!message) {
-  console.error('Usage: node telegram-notify.js "message"');
+  // Read from stdin if no argument (avoids CLI truncation for long messages)
+  const chunks = [];
+  for await (const chunk of process.stdin) chunks.push(chunk);
+  message = Buffer.concat(chunks).toString().trim();
+}
+if (!message) {
+  console.error('Usage: node telegram-notify.js "message"  OR  echo "message" | node telegram-notify.js');
   process.exit(1);
 }
 
