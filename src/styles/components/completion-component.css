@@ -202,14 +202,18 @@ html.dark .completion-component__sentence {
 /* Input States */
 .completion-component__input--correct {
   border-color: var(--theme-success, #10b981);
-  background-color: #f0fdf4;
+  background-color: #dcfce7;
   color: #15803d;
+  border-width: 2px;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
 }
 
 .completion-component__input--incorrect {
   border-color: var(--theme-error, #ef4444);
-  background-color: #fef2f2;
+  background-color: #fee2e2;
   color: #dc2626;
+  border-width: 2px;
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
 }
 
 .completion-component__input--disabled {
@@ -231,15 +235,19 @@ html.dark .completion-component__sentence {
 
 /* Dark mode input states */
 html.dark .completion-component__input--correct {
-  background-color: rgba(16, 185, 129, 0.15);
+  background-color: rgba(16, 185, 129, 0.25);
   color: #6ee7b7;
   border-color: #34d399;
+  border-width: 2px;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.25);
 }
 
 html.dark .completion-component__input--incorrect {
-  background-color: rgba(239, 68, 68, 0.15);
+  background-color: rgba(239, 68, 68, 0.25);
   color: #fca5a5;
   border-color: #f87171;
+  border-width: 2px;
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.25);
 }
 
 html.dark .completion-component__input--disabled {

@@ -195,10 +195,11 @@ html body .matching-component .matching-component__item--selected {
   background-color: var(--theme-success, #10b981) !important;
   border-color: transparent !important;
   color: #ffffff !important;
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2) !important;
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.35) !important;
   font-weight: 600 !important;
   transition: var(--transition-interactive) !important;
   animation: pulse-success var(--animation-normal) ease-out !important;
+  transform: scale(1.02) !important;
 }
 
 /* INCORRECT STATE - Homologated with quiz component */
@@ -206,9 +207,10 @@ html body .matching-component .matching-component__item--selected {
   background-color: var(--theme-error, #ef4444) !important;
   border-color: transparent !important;
   color: #ffffff !important;
-  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2) !important;
+  box-shadow: 0 4px 16px rgba(239, 68, 68, 0.35) !important;
   font-weight: 600 !important;
   transition: var(--transition-interactive) !important;
+  transform: scale(1.02) !important;
 }
 
 .matching-component__item:disabled {

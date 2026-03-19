@@ -50,12 +50,16 @@
 .editable-input--correct {
   border-color: var(--color-success);
   background: var(--color-success-bg);
+  border-width: 2px;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
 }
 
 /* Incorrect state */
 .editable-input--incorrect {
   border-color: var(--color-error);
   background: var(--color-error-bg);
+  border-width: 2px;
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
 }
 
 /* Neutral state (default) */

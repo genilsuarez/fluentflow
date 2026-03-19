@@ -140,11 +140,15 @@
 .sorting-component__drop-zone--correct {
   border-color: #16a34a;
   background-color: #dcfce7;
+  border-width: 2px;
+  box-shadow: 0 0 0 2px rgba(22, 163, 74, 0.15);
 }
 
 .sorting-component__drop-zone--error {
   border-color: #dc2626;
-  background-color: #fef2f2;
+  background-color: #fee2e2;
+  border-width: 2px;
+  box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.15);
 }
 
 .sorting-component__drop-zone--neutral {
