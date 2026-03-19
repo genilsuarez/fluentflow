@@ -150,8 +150,8 @@ describe('offlineManager', () => {
   });
 
   describe('CACHE_NAME', () => {
-    it('should be "fluentflow-v1"', () => {
-      expect(CACHE_NAME).toBe('fluentflow-v1');
+    it('should be "fluentflow-v2"', () => {
+      expect(CACHE_NAME).toBe('fluentflow-v2');
     });
   });
 
