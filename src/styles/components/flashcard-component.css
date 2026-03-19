@@ -354,22 +354,26 @@
 
   /* Ensure controls don't interfere with card content */
 }
-html.dark .flashcard-component__card-front,
-html.dark .flashcard-component__card-back {
+/* Front dark: warm amber tint */
+html.dark .flashcard-component__card-front {
   background: linear-gradient(
-    135deg,
+    160deg,
     var(--theme-bg-elevated, #1f2937) 0%,
-    rgba(59, 130, 246, 0.1) 100%
+    rgba(251, 191, 36, 0.08) 100%
   );
-  border-color: var(--theme-border-soft, #4b5563);
+  border-color: rgba(251, 191, 36, 0.2);
+  border-top: 3px solid rgba(251, 191, 36, 0.6);
 }
 
+/* Back dark: cool blue tint */
 html.dark .flashcard-component__card-back {
   background: linear-gradient(
-    135deg,
-    rgba(59, 130, 246, 0.1) 0%,
+    160deg,
+    rgba(59, 130, 246, 0.12) 0%,
     var(--theme-bg-elevated, #1f2937) 100%
   );
+  border-color: rgba(59, 130, 246, 0.25);
+  border-top: 3px solid rgba(59, 130, 246, 0.7);
 }
 
 html.dark .flashcard-component__front-text,
@@ -390,9 +394,14 @@ html.dark .flashcard-component__back-answer {
 }
 
 @media (prefers-contrast: high) {
-  .flashcard-component__card-front,
+  .flashcard-component__card-front {
+    border-width: 2px;
+    border-top-width: 4px;
+  }
+
   .flashcard-component__card-back {
     border-width: 2px;
+    border-top-width: 4px;
   }
 }
 /* === LEARNING COMPONENT BORDER - DARK MODE === */
