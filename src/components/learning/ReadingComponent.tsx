@@ -421,9 +421,7 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                   {currentSection.content.split('\n\n').map((example, index) => {
                     // Parse example format: "Example N: <Quote> (note)"
                     // Supports angle brackets, single quotes, and double quotes
-                    const angleBracketMatch = example.match(
-                      /^Example (\d+):\s*<([^>]+)>\s*(.*)$/
-                    );
+                    const angleBracketMatch = example.match(/^Example (\d+):\s*<([^>]+)>\s*(.*)$/);
                     const dashAngleMatch = example.match(
                       /^Example (\d+):\s*(.+?)\s*-\s*<([^>]+)>\s*(.*)$/
                     );
@@ -442,9 +440,7 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                           <div className="reading-component__example-quote">
                             &ldquo;{quote}&rdquo;
                             {note?.trim() && (
-                              <span className="reading-component__example-note">
-                                {note.trim()}
-                              </span>
+                              <span className="reading-component__example-note">{note.trim()}</span>
                             )}
                           </div>
                         </div>
@@ -461,9 +457,7 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                           <div className="reading-component__example-quote">
                             &ldquo;{quote}&rdquo;
                             {note?.trim() && (
-                              <span className="reading-component__example-note">
-                                {note.trim()}
-                              </span>
+                              <span className="reading-component__example-note">{note.trim()}</span>
                             )}
                           </div>
                         </div>
@@ -481,9 +475,7 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                           <div className="reading-component__example-quote">
                             &ldquo;{quote}&rdquo;
                             {note?.trim() && (
-                              <span className="reading-component__example-note">
-                                {note.trim()}
-                              </span>
+                              <span className="reading-component__example-note">{note.trim()}</span>
                             )}
                           </div>
                         </div>
