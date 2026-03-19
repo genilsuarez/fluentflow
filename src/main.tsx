@@ -46,6 +46,9 @@ try {
     </React.StrictMode>
   );
 
+  // Mark app as alive for the inline resume-detection script
+  (window as any).__REACT_ALIVE = true;
+
   // App loaded successfully — clear any chunk retry flag
   clearChunkRetryFlag();
 } catch (error) {

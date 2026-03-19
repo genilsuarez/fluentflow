@@ -40,6 +40,27 @@
                 // On error, default to light mode
                 document.documentElement.classList.add('light');
             }
+
+            // Safari iOS: reload when page is restored from bfcache or after being discarded
+            window.addEventListener('pageshow', function(e) {
+                if (e.persisted) {
+                    window.location.reload();
+                }
+            });
+
+            // Detect frozen/discarded page resume (Safari iOS tab suspension)
+            var lastActive = Date.now();
+            document.addEventListener('visibilitychange', function() {
+                if (!document.hidden) {
+                    var elapsed = Date.now() - lastActive;
+                    var root = document.getElementById('root');
+                    // If more than 30s passed and either root is empty or React flag is gone — reload
+                    if (elapsed > 30000 && root && (!root.firstChild || !window.__REACT_ALIVE)) {
+                        window.location.reload();
+                    }
+                }
+                lastActive = Date.now();
+            });
         })();
     </script>
 
