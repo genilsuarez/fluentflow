@@ -902,31 +902,31 @@ html.light .module-card--reading .module-card__icon svg {
 
 /* Current module indicator — persistent highlight for next recommended */
 .module-card--current {
-  border: 2.5px solid rgba(59, 130, 246, 0.85);
+  border: 3px solid rgba(37, 99, 235, 1);
   box-shadow:
-    0 0 0 3px rgba(59, 130, 246, 0.15),
+    0 0 0 2px rgba(59, 130, 246, 0.25),
     var(--card-shadow);
 }
 
 .module-card--current:hover {
   box-shadow:
-    0 0 0 3px rgba(59, 130, 246, 0.25),
+    0 0 0 3px rgba(59, 130, 246, 0.35),
     var(--card-shadow-hover);
 }
 
-/* Dark mode: luminous cyan-blue glow */
+/* Dark mode: bright border + glow */
 .dark .module-card--current {
-  border: 2.5px solid rgba(96, 165, 250, 0.6);
+  border: 3px solid rgba(96, 165, 250, 0.9);
   box-shadow:
-    0 0 8px rgba(96, 165, 250, 0.2),
-    0 0 0 2px rgba(96, 165, 250, 0.1),
+    0 0 10px rgba(96, 165, 250, 0.3),
+    0 0 0 2px rgba(96, 165, 250, 0.15),
     var(--card-shadow);
 }
 
 .dark .module-card--current:hover {
   box-shadow:
-    0 0 12px rgba(96, 165, 250, 0.3),
-    0 0 0 3px rgba(96, 165, 250, 0.15),
+    0 0 14px rgba(96, 165, 250, 0.4),
+    0 0 0 3px rgba(96, 165, 250, 0.2),
     var(--card-shadow-hover);
 }
 
