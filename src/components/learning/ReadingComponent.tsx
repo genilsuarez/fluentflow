@@ -419,48 +419,75 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
               {currentSection?.type === 'examples' ? (
                 <div className="reading-component__examples-grid">
                   {currentSection.content.split('\n\n').map((example, index) => {
-                    // Parse example format: "Example N: Title - <Quote>" (angle brackets)
-                    // Also supports legacy: 'Quote' or "Quote"
-                    const angleBracketPattern = /^Example (\d+):\s*(.+?)\s*-\s*<(.*)$/;
-                    const singleQuotePattern = /^Example (\d+):\s*(.+?)\s*-\s*'(.*)$/;
-                    const doubleQuotePattern = /^Example (\d+):\s*(.+?)\s*-\s*"(.*)$/;
-                    const angleMatch = example.match(angleBracketPattern);
-                    const match =
-                      angleMatch ||
-                      example.match(singleQuotePattern) ||
-                      example.match(doubleQuotePattern);
-                    // Determine closing delimiter
-                    const closingDelim = angleMatch
-                      ? '>'
-                      : example.match(singleQuotePattern)
-                        ? "'"
-                        : '"';
+                    // Parse example format: "Example N: <Quote> (note)"
+                    // Supports angle brackets, single quotes, and double quotes
+                    const angleBracketMatch = example.match(
+                      /^Example (\d+):\s*<([^>]+)>\s*(.*)$/
+                    );
+                    const dashAngleMatch = example.match(
+                      /^Example (\d+):\s*(.+?)\s*-\s*<([^>]+)>\s*(.*)$/
+                    );
+                    const dashQuoteMatch = example.match(
+                      /^Example (\d+):\s*(.+?)\s*-\s*(['"])(.+?)\3\s*(.*)$/
+                    );
 
-                    if (match) {
-                      const [, number, title, fullQuote] = match;
-                      const lastDelimIndex = fullQuote.lastIndexOf(closingDelim);
-
-                      if (lastDelimIndex !== -1) {
-                        const quote = fullQuote.substring(0, lastDelimIndex);
-                        const note = fullQuote.substring(lastDelimIndex + 1);
-
-                        return (
-                          <div key={index} className="reading-component__example-card">
-                            <div className="reading-component__example-card-header">
-                              <span className="reading-component__example-number">{number}</span>
-                              <span className="reading-component__example-title">{title}</span>
-                            </div>
-                            <div className="reading-component__example-quote">
-                              "{quote}"
-                              {note.trim() && (
-                                <span className="reading-component__example-note">
-                                  {note.trim()}
-                                </span>
-                              )}
-                            </div>
+                    if (dashAngleMatch) {
+                      const [, number, title, quote, note] = dashAngleMatch;
+                      return (
+                        <div key={index} className="reading-component__example-card">
+                          <div className="reading-component__example-card-header">
+                            <span className="reading-component__example-number">{number}</span>
+                            <span className="reading-component__example-title">{title}</span>
                           </div>
-                        );
-                      }
+                          <div className="reading-component__example-quote">
+                            &ldquo;{quote}&rdquo;
+                            {note?.trim() && (
+                              <span className="reading-component__example-note">
+                                {note.trim()}
+                              </span>
+                            )}
+                          </div>
+                        </div>
+                      );
+                    }
+
+                    if (angleBracketMatch) {
+                      const [, number, quote, note] = angleBracketMatch;
+                      return (
+                        <div key={index} className="reading-component__example-card">
+                          <div className="reading-component__example-card-header">
+                            <span className="reading-component__example-number">{number}</span>
+                          </div>
+                          <div className="reading-component__example-quote">
+                            &ldquo;{quote}&rdquo;
+                            {note?.trim() && (
+                              <span className="reading-component__example-note">
+                                {note.trim()}
+                              </span>
+                            )}
+                          </div>
+                        </div>
+                      );
+                    }
+
+                    if (dashQuoteMatch) {
+                      const [, number, title, , quote, note] = dashQuoteMatch;
+                      return (
+                        <div key={index} className="reading-component__example-card">
+                          <div className="reading-component__example-card-header">
+                            <span className="reading-component__example-number">{number}</span>
+                            <span className="reading-component__example-title">{title}</span>
+                          </div>
+                          <div className="reading-component__example-quote">
+                            &ldquo;{quote}&rdquo;
+                            {note?.trim() && (
+                              <span className="reading-component__example-note">
+                                {note.trim()}
+                              </span>
+                            )}
+                          </div>
+                        </div>
+                      );
                     }
 
                     // Fallback for non-matching format
