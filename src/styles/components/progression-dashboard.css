@@ -366,11 +366,12 @@
 }
 
 .progression-dashboard__module--locked {
-  cursor: not-allowed;
+  cursor: default;
   background: #f3f4f6;
   border: 1px solid #d1d5db;
   filter: grayscale(0.3);
-  opacity: 0.85;
+  opacity: 0.65;
+  pointer-events: none;
 }
 
 .progression-dashboard__module--locked .progression-dashboard__module-name {
@@ -666,7 +667,8 @@ html.dark .progression-dashboard__module--unlocked {
 html.dark .progression-dashboard__module--locked {
   background-color: #1a2332;
   border: 1px solid #2d3a4a;
-  opacity: 0.8;
+  opacity: 0.6;
+  pointer-events: none;
 }
 
 html.dark .progression-dashboard__module--locked .progression-dashboard__module-name {
