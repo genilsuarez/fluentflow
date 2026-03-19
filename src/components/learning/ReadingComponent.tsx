@@ -367,7 +367,12 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                           <div className="reading-component__grammar-rule">{point.rule}</div>
                         </div>
                         <div className="reading-component__grammar-explanation">
-                          {point.explanation}
+                          <ContentRenderer
+                            content={ContentAdapter.ensureStructured(
+                              point.explanation,
+                              'explanation'
+                            )}
+                          />
                         </div>
                         {point.examples && point.examples.length > 0 && (
                           <div className="reading-component__grammar-examples">

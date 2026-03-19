@@ -96,7 +96,7 @@
 /* Explanation format - educational styling */
 .content-renderer--explanation .content-renderer__segment--term {
   color: #1d4ed8;
-  font-weight: 600;
+  font-weight: bold;
   border-bottom: 1px dotted currentColor;
 }
 

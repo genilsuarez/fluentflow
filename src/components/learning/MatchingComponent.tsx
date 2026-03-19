@@ -500,7 +500,12 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
 
                         {result.explanation && (
                           <span className="matching-modal__card-explanation">
-                            {result.explanation}
+                            <ContentRenderer
+                              content={ContentAdapter.ensureStructured(
+                                result.explanation,
+                                'explanation'
+                              )}
+                            />
                           </span>
                         )}
                       </div>
