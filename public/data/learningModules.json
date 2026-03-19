@@ -406,6 +406,23 @@
     "difficulty": 1
   },
   {
+    "id": "sorting-expressions-type-a1",
+    "name": "Expressions by Type",
+    "learningMode": "sorting",
+    "dataPath": "data/a1/a1-sorting-expressions-type.json",
+    "level": [
+      "a1"
+    ],
+    "category": "Vocabulary",
+    "unit": 1,
+    "description": "Sort expressions into categories: Phrasal Verbs, Idioms, Greetings, Polite Expressions",
+    "estimatedTime": 5,
+    "difficulty": 1,
+    "prerequisites": [
+      "completion-everyday-expressions-a1"
+    ]
+  },
+  {
     "id": "quiz-basic-review-a1",
     "name": "Basic Review",
     "learningMode": "quiz",
@@ -416,7 +433,7 @@
     "category": "Review",
     "unit": 1,
     "prerequisites": [
-      "completion-everyday-expressions-a1"
+      "sorting-expressions-type-a1"
     ],
     "description": "Comprehensive review of A1 level concepts",
     "estimatedTime": 5,
@@ -831,6 +848,23 @@
     "difficulty": 2
   },
   {
+    "id": "sorting-vocabulary-context-a2",
+    "name": "Vocabulary by Context",
+    "learningMode": "sorting",
+    "dataPath": "data/a2/a2-sorting-vocabulary-context.json",
+    "level": [
+      "a2"
+    ],
+    "category": "Vocabulary",
+    "unit": 2,
+    "description": "Sort vocabulary into contexts: Home, Health, Technology, Work",
+    "estimatedTime": 5,
+    "difficulty": 2,
+    "prerequisites": [
+      "quiz-elementary-idioms-a2"
+    ]
+  },
+  {
     "id": "quiz-elementary-review-a2",
     "name": "Elementary Review",
     "learningMode": "quiz",
@@ -841,7 +875,7 @@
     "category": "Review",
     "unit": 2,
     "prerequisites": [
-      "quiz-elementary-idioms-a2"
+      "sorting-vocabulary-context-a2"
     ],
     "description": "Comprehensive review of A2 level concepts",
     "estimatedTime": 5,
@@ -1256,6 +1290,23 @@
     "difficulty": 3
   },
   {
+    "id": "sorting-phrasal-verbs-particle-b1",
+    "name": "Phrasal Verbs by Particle",
+    "learningMode": "sorting",
+    "dataPath": "data/b1/b1-sorting-phrasal-verbs-particle.json",
+    "level": [
+      "b1"
+    ],
+    "category": "PhrasalVerbs",
+    "unit": 3,
+    "description": "Sort phrasal verbs by particle: up, out, off, down",
+    "estimatedTime": 5,
+    "difficulty": 3,
+    "prerequisites": [
+      "quiz-idioms-challenge-b1"
+    ]
+  },
+  {
     "id": "quiz-intermediate-review-b1",
     "name": "Intermediate Review",
     "learningMode": "quiz",
@@ -1266,7 +1317,7 @@
     "category": "Review",
     "unit": 3,
     "prerequisites": [
-      "quiz-idioms-challenge-b1"
+      "sorting-phrasal-verbs-particle-b1"
     ],
     "description": "Comprehensive review of B1 level concepts",
     "estimatedTime": 5,
@@ -2633,6 +2684,23 @@
     "difficulty": 5
   },
   {
+    "id": "sorting-discourse-markers-c2",
+    "name": "Discourse Markers",
+    "learningMode": "sorting",
+    "dataPath": "data/c2/c2-sorting-discourse-markers.json",
+    "level": [
+      "c2"
+    ],
+    "category": "Grammar",
+    "unit": 6,
+    "description": "Sort discourse markers by function: Contrast, Addition, Cause, Sequence",
+    "estimatedTime": 5,
+    "difficulty": 5,
+    "prerequisites": [
+      "quiz-mastery-idioms-c2"
+    ]
+  },
+  {
     "id": "quiz-mastery-assessment-c2",
     "name": "Mastery Assessment",
     "learningMode": "quiz",
@@ -2643,7 +2711,7 @@
     "category": "Review",
     "unit": 6,
     "prerequisites": [
-      "quiz-mastery-idioms-c2"
+      "sorting-discourse-markers-c2"
     ],
     "description": "Comprehensive mastery assessment",
     "estimatedTime": 5,
