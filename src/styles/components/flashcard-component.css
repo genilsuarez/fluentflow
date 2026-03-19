@@ -74,27 +74,22 @@
   contain: layout style;
 }
 
-/* Front: warm neutral — "thinking" state */
+/* Front: cool blue — "thinking" state */
 .flashcard-component__card-front {
   background: linear-gradient(
     160deg,
     var(--theme-bg-elevated, #ffffff) 0%,
-    rgba(251, 191, 36, 0.04) 100%
-  );
-  border: 1px solid rgba(251, 191, 36, 0.15);
-  border-top: 3px solid rgba(251, 191, 36, 0.5);
-}
-
-/* Back: cool blue — "reveal" state */
-.flashcard-component__card-back {
-  transform: rotateY(180deg);
-  background: linear-gradient(
-    160deg,
-    rgba(59, 130, 246, 0.06) 0%,
-    var(--theme-bg-elevated, #ffffff) 100%
+    rgba(59, 130, 246, 0.05) 100%
   );
   border: 1px solid rgba(59, 130, 246, 0.15);
   border-top: 3px solid rgba(59, 130, 246, 0.5);
+}
+
+/* Back: clean neutral — "reveal" state */
+.flashcard-component__card-back {
+  transform: rotateY(180deg);
+  background: var(--theme-bg-elevated, #ffffff);
+  border: 1px solid var(--theme-border-modal, rgba(0, 0, 0, 0.1));
 }
 
 /* === CARD CONTENT === */
@@ -354,26 +349,21 @@
 
   /* Ensure controls don't interfere with card content */
 }
-/* Front dark: warm amber tint */
+/* Front dark: cool blue tint */
 html.dark .flashcard-component__card-front {
   background: linear-gradient(
     160deg,
     var(--theme-bg-elevated, #1f2937) 0%,
-    rgba(251, 191, 36, 0.08) 100%
-  );
-  border-color: rgba(251, 191, 36, 0.2);
-  border-top: 3px solid rgba(251, 191, 36, 0.6);
-}
-
-/* Back dark: cool blue tint */
-html.dark .flashcard-component__card-back {
-  background: linear-gradient(
-    160deg,
-    rgba(59, 130, 246, 0.12) 0%,
-    var(--theme-bg-elevated, #1f2937) 100%
+    rgba(59, 130, 246, 0.1) 100%
   );
   border-color: rgba(59, 130, 246, 0.25);
   border-top: 3px solid rgba(59, 130, 246, 0.7);
+}
+
+/* Back dark: clean neutral */
+html.dark .flashcard-component__card-back {
+  background: var(--theme-bg-elevated, #1f2937);
+  border-color: var(--theme-border-modal-dark, rgba(255, 255, 255, 0.15));
 }
 
 html.dark .flashcard-component__front-text,
@@ -401,7 +391,6 @@ html.dark .flashcard-component__back-answer {
 
   .flashcard-component__card-back {
     border-width: 2px;
-    border-top-width: 4px;
   }
 }
 /* === LEARNING COMPONENT BORDER - DARK MODE === */
