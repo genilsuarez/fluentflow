@@ -11,8 +11,8 @@ import { logDebug, logError } from '../utils/logger';
 import type { LearningModule } from '../types';
 
 // Must match the CACHE_NAME in public/sw.js
-export const CACHE_NAME = 'fluentflow-v1';
-export const ASSETS_CACHE = 'fluentflow-v1'; // unified cache
+export const CACHE_NAME = 'fluentflow-v2';
+export const ASSETS_CACHE = 'fluentflow-v2'; // unified cache
 
 export interface DownloadProgress {
   total: number;
