@@ -307,7 +307,9 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                               {t('reading.component.example')}
                             </div>
                             <div className="reading-component__vocabulary-example">
-                              {term.example}
+                              <ContentRenderer
+                                content={ContentAdapter.ensureStructured(term.example, 'reading')}
+                              />
                             </div>
                           </div>
                         </div>
