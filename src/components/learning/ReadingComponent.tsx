@@ -419,23 +419,30 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
               {currentSection?.type === 'examples' ? (
                 <div className="reading-component__examples-grid">
                   {currentSection.content.split('\n\n').map((example, index) => {
-                    // Parse example format: "Example N: Title - 'Quote'" or 'Example N: Title - "Quote"'
-                    // Supports both single and double quote delimiters
+                    // Parse example format: "Example N: Title - <Quote>" (angle brackets)
+                    // Also supports legacy: 'Quote' or "Quote"
+                    const angleBracketPattern = /^Example (\d+):\s*(.+?)\s*-\s*<(.*)$/;
                     const singleQuotePattern = /^Example (\d+):\s*(.+?)\s*-\s*'(.*)$/;
                     const doubleQuotePattern = /^Example (\d+):\s*(.+?)\s*-\s*"(.*)$/;
+                    const angleMatch = example.match(angleBracketPattern);
                     const match =
-                      example.match(singleQuotePattern) || example.match(doubleQuotePattern);
-                    // Determine which closing quote to look for
-                    const closingQuote = example.match(singleQuotePattern) ? "'" : '"';
+                      angleMatch ||
+                      example.match(singleQuotePattern) ||
+                      example.match(doubleQuotePattern);
+                    // Determine closing delimiter
+                    const closingDelim = angleMatch
+                      ? '>'
+                      : example.match(singleQuotePattern)
+                        ? "'"
+                        : '"';
 
                     if (match) {
                       const [, number, title, fullQuote] = match;
-                      // Find the last matching quote to separate quote from note
-                      const lastQuoteIndex = fullQuote.lastIndexOf(closingQuote);
+                      const lastDelimIndex = fullQuote.lastIndexOf(closingDelim);
 
-                      if (lastQuoteIndex !== -1) {
-                        const quote = fullQuote.substring(0, lastQuoteIndex);
-                        const note = fullQuote.substring(lastQuoteIndex + 1);
+                      if (lastDelimIndex !== -1) {
+                        const quote = fullQuote.substring(0, lastDelimIndex);
+                        const note = fullQuote.substring(lastDelimIndex + 1);
 
                         return (
                           <div key={index} className="reading-component__example-card">
@@ -459,7 +466,11 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                     // Fallback for non-matching format
                     return example.trim() ? (
                       <div key={index} className="reading-component__example-card">
-                        <div className="reading-component__example-content">{example}</div>
+                        <div className="reading-component__example-content">
+                          <ContentRenderer
+                            content={ContentAdapter.ensureStructured(example, 'reading')}
+                          />
+                        </div>
                       </div>
                     ) : null;
                   })}

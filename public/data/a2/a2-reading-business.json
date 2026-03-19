@@ -18,31 +18,31 @@
       "id": "greetings",
       "title": "Professional Greetings",
       "type": "theory",
-      "content": "In business, we use formal greetings. Instead of \"Hi\" or \"Hey\", we say \"Good morning\", \"Good afternoon\", or \"Good evening\". When meeting someone for the first time, we say \"Nice to meet you\" or \"Pleased to meet you\". We also use titles like Mr., Ms., or Dr. with last names to show respect."
+      "content": "In business, we use formal greetings. Instead of <Hi> or <Hey>, we say <Good morning>, <Good afternoon>, or <Good evening>. When meeting someone for the first time, we say <Nice to meet you> or <Pleased to meet you>. We also use titles like Mr., Ms., or Dr. with last names to show respect."
     },
     {
       "id": "workplace-vocab",
       "title": "Common Workplace Words",
       "type": "theory",
-      "content": "Every workplace has special words. An \"office\" is where people work. A \"meeting\" is when people talk about work together. A \"deadline\" is the time when work must be finished. Your \"colleague\" is someone who works with you. The \"manager\" or \"boss\" is the person who leads the team."
+      "content": "Every workplace has special words. An <office> is where people work. A <meeting> is when people talk about work together. A <deadline> is the time when work must be finished. Your <colleague> is someone who works with you. The <manager> or <boss> is the person who leads the team."
     },
     {
       "id": "email-etiquette",
       "title": "Email Etiquette",
       "type": "theory",
-      "content": "Emails are one of the most common forms of business communication. A professional email has three main parts: a greeting, a body, and a closing. Start with \"Dear Mr./Ms. [Last Name]\" for formal emails or \"Hello [First Name]\" for semi-formal ones. Keep the body short and clear. Use phrases like \"I am writing to inform you...\" or \"Please find attached...\" to sound professional. End with \"Kind regards\", \"Best regards\", or \"Yours sincerely\" followed by your full name. Always check your email for spelling mistakes before sending it. Remember: never use slang, emojis, or ALL CAPS in professional emails."
+      "content": "Emails are one of the most common forms of business communication. A professional email has three main parts: a greeting, a body, and a closing. Start with <Dear Mr./Ms. [Last Name]> for formal emails or <Hello [First Name]> for semi-formal ones. Keep the body short and clear. Use phrases like <I am writing to inform you...> or <Please find attached...> to sound professional. End with <Kind regards>, <Best regards>, or <Yours sincerely> followed by your full name. Always check your email for spelling mistakes before sending it. Remember: never use slang, emojis, or ALL CAPS in professional emails."
     },
     {
       "id": "examples",
       "title": "Business Situations",
       "type": "examples",
-      "content": "Example 1: PROFESSIONAL GREETING - 'Good morning, Mr. Smith. I'm Maria. Nice to meet you.'\n\nExample 2: IN A MEETING - \"We have a deadline next Friday. Can everyone finish by then?\"\n\nExample 3: EMAIL OPENING - \"Dear Ms. Johnson, I hope this email finds you well.\""
+      "content": "Example 1: PROFESSIONAL GREETING - <Good morning, Mr. Smith. I'm Maria. Nice to meet you.>\n\nExample 2: IN A MEETING - <We have a deadline next Friday. Can everyone finish by then?>\n\nExample 3: EMAIL OPENING - <Dear Ms. Johnson, I hope this email finds you well.>"
     },
     {
       "id": "summary",
       "title": "Key Takeaways",
       "type": "summary",
-      "content": "Remember: Business English is formal and polite. Use proper greetings like \"Good morning\" instead of \"Hi\". Learn workplace vocabulary like \"meeting\", \"deadline\", and \"colleague\". Always be respectful and professional in your communication. Practice makes perfect!"
+      "content": "Remember: Business English is formal and polite. Use proper greetings like <Good morning> instead of <Hi>. Learn workplace vocabulary like <meeting>, <deadline>, and <colleague>. Always be respectful and professional in your communication. Practice makes perfect!"
     }
   ],
   "keyVocabulary": [
@@ -86,7 +86,7 @@
   "grammarPoints": [
     {
       "rule": "Formal vs Informal Greetings",
-      "explanation": "In business, always use formal greetings. Say \"Good morning\" instead of \"Hi\" or \"Hey\". Use titles (Mr., Ms., Dr.) with last names.",
+      "explanation": "In business, always use formal greetings. Say <Good morning> instead of <Hi> or <Hey>. Use titles (Mr., Ms., Dr.) with last names.",
       "examples": [
         "Formal: Good morning, Mr. Smith. How are you today?",
         "Informal: Hey John! What's up?",
@@ -101,7 +101,7 @@
     },
     {
       "rule": "Polite Requests",
-      "explanation": "Use \"Could you please...\" or \"Would you mind...\" to make polite requests in business settings.",
+      "explanation": "Use <Could you please...> or <Would you mind...> to make polite requests in business settings.",
       "examples": [
         "Could you please send me the report?",
         "Would you mind helping me with this?",

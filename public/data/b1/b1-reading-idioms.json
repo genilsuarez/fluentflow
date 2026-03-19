@@ -18,19 +18,19 @@
       "id": "work-idioms",
       "title": "Idioms at Work",
       "type": "theory",
-      "content": "The business world is full of idioms:\n\n• Get the ball rolling - Start something. 'Let's get the ball rolling on this project.'\n• Think outside the box - Be creative. 'We need to think outside the box to solve this.'\n• Go the extra mile - Do more than expected. 'She always goes the extra mile for her clients.'\n• Cut corners - Do something cheaply or quickly, sacrificing quality. 'Don't cut corners on safety.'\n• Back to square one - Start again from the beginning. 'The plan failed, so we're back to square one.'\n• On the same page - In agreement. 'Let's make sure we're all on the same page.'"
+      "content": "The business world is full of idioms:\n\n• Get the ball rolling - Start something. <Let's get the ball rolling on this project.>\n• Think outside the box - Be creative. <We need to think outside the box to solve this.>\n• Go the extra mile - Do more than expected. <She always goes the extra mile for her clients.>\n• Cut corners - Do something cheaply or quickly, sacrificing quality. <Don't cut corners on safety.>\n• Back to square one - Start again from the beginning. <The plan failed, so we're back to square one.>\n• On the same page - In agreement. <Let's make sure we're all on the same page.>"
     },
     {
       "id": "education-idioms",
       "title": "Idioms in Education",
       "type": "theory",
-      "content": "Students and teachers use many idioms:\n\n• Learn the ropes - Learn how to do something new. 'It took me a semester to learn the ropes at university.'\n• Pass with flying colors - Pass easily with excellent results. 'She passed the exam with flying colors.'\n• Burn the midnight oil - Study or work very late. 'I burned the midnight oil to finish my thesis.'\n• A steep learning curve - Something difficult to learn at first. 'Programming has a steep learning curve.'\n• Hit the nail on the head - Say exactly the right thing. 'Your analysis hit the nail on the head.'"
+      "content": "Students and teachers use many idioms:\n\n• Learn the ropes - Learn how to do something new. <It took me a semester to learn the ropes at university.>\n• Pass with flying colors - Pass easily with excellent results. <She passed the exam with flying colors.>\n• Burn the midnight oil - Study or work very late. <I burned the midnight oil to finish my thesis.>\n• A steep learning curve - Something difficult to learn at first. <Programming has a steep learning curve.>\n• Hit the nail on the head - Say exactly the right thing. <Your analysis hit the nail on the head.>"
     },
     {
       "id": "examples",
       "title": "Idioms in Context",
       "type": "examples",
-      "content": "Example 1: 'The new curriculum is challenging, but the students are learning the ropes quickly.' (curriculum = plan of study)\n\nExample 2: 'After three semesters of hard work, she graduated with flying colors and got a scholarship for her tuition.' (tuition = university fees)\n\nExample 3: 'The renewable energy project hit a wall, but the team didn't give up. They went back to square one and came up with a better plan.'\n\nExample 4: 'The influencer's viral post about cyberbullying really hit the nail on the head.'"
+      "content": "Example 1: <The new curriculum is challenging, but the students are learning the ropes quickly.> (curriculum = plan of study)\n\nExample 2: <After three semesters of hard work, she graduated with flying colors and got a scholarship for her tuition.> (tuition = university fees)\n\nExample 3: <The renewable energy project hit a wall, but the team didn't give up. They went back to square one and came up with a better plan.>\n\nExample 4: <The influencer's viral post about cyberbullying really hit the nail on the head.>"
     },
     {
       "id": "summary",
@@ -92,7 +92,7 @@
   "grammarPoints": [
     {
       "rule": "Idioms in Formal vs Informal Contexts",
-      "explanation": "Some idioms are appropriate for both formal and informal situations, while others are more casual. 'Think outside the box' works in a business meeting, but 'hit the books' is more casual.",
+      "explanation": "Some idioms are appropriate for both formal and informal situations, while others are more casual. <Think outside the box> works in a business meeting, but <hit the books> is more casual.",
       "examples": [
         "Formal: 'Let's get the ball rolling on this initiative.'",
         "Informal: 'I need to hit the books tonight.'",

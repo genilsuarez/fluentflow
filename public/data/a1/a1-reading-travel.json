@@ -18,31 +18,31 @@
       "id": "airport",
       "title": "At the Airport",
       "type": "theory",
-      "content": "The airport has many important places. \"Check-in\" is where you show your ticket and get your boarding pass. \"Security\" checks your bags for safety. The \"gate\" is where you wait for your plane. \"Baggage claim\" is where you get your luggage after landing. Important words: passport, ticket, boarding pass, flight, departure, arrival."
+      "content": "The airport has many important places. <Check-in> is where you show your ticket and get your boarding pass. <Security> checks your bags for safety. The <gate> is where you wait for your plane. <Baggage claim> is where you get your luggage after landing. Important words: passport, ticket, boarding pass, flight, departure, arrival."
     },
     {
       "id": "hotel",
       "title": "At the Hotel",
       "type": "theory",
-      "content": "When you arrive at a hotel, you go to the \"reception\" or \"front desk\" to check in. You need to show your \"reservation\" (booking). Your \"room key\" opens your room. If you need something, call \"room service\". When you leave, you \"check out\" and pay your bill. The hotel staff can help you with directions and recommendations."
+      "content": "When you arrive at a hotel, you go to the <reception> or <front desk> to check in. You need to show your <reservation> (booking). Your <room key> opens your room. If you need something, call <room service>. When you leave, you <check out> and pay your bill. The hotel staff can help you with directions and recommendations."
     },
     {
       "id": "transportation",
       "title": "Getting Around",
       "type": "theory",
-      "content": "There are many ways to travel: taxi, bus, train, subway (metro), or rental car. To take a taxi, you can say \"Taxi!\" or go to a taxi stand. For public transport, you need to buy a ticket. Always ask \"How much?\" for the price. To ask for directions, say \"Excuse me, how do I get to...?\" or \"Where is...?\""
+      "content": "There are many ways to travel: taxi, bus, train, subway (metro), or rental car. To take a taxi, you can say <Taxi!> or go to a taxi stand. For public transport, you need to buy a ticket. Always ask <How much?> for the price. To ask for directions, say <Excuse me, how do I get to...?> or <Where is...?>"
     },
     {
       "id": "examples",
       "title": "Travel Conversations",
       "type": "examples",
-      "content": "Example 1: HOTEL CHECK-IN - \"Hello, I have a reservation under the name Garcia.\"\n\nExample 2: ASKING DIRECTIONS - \"Excuse me, where is the nearest subway station?\"\n\nExample 3: TAKING A TAXI - \"Could you take me to the Grand Hotel, please?\""
+      "content": "Example 1: HOTEL CHECK-IN - <Hello, I have a reservation under the name Garcia.>\n\nExample 2: ASKING DIRECTIONS - <Excuse me, where is the nearest subway station?>\n\nExample 3: TAKING A TAXI - <Could you take me to the Grand Hotel, please?>"
     },
     {
       "id": "summary",
       "title": "Travel Tips",
       "type": "summary",
-      "content": "Remember these key points: Always carry your passport and important documents. Learn basic phrases like \"Where is...?\", \"How much?\", and \"I need help\". Be polite and say \"please\" and \"thank you\". Don't be afraid to ask people to speak slowly. Keep a translation app on your phone for emergencies. Most importantly, enjoy your trip!"
+      "content": "Remember these key points: Always carry your passport and important documents. Learn basic phrases like <Where is...?>, <How much?>, and <I need help>. Be polite and say <please> and <thank you>. Don't be afraid to ask people to speak slowly. Keep a translation app on your phone for emergencies. Most importantly, enjoy your trip!"
     }
   ],
   "keyVocabulary": [
@@ -86,7 +86,7 @@
   "grammarPoints": [
     {
       "rule": "Asking for Directions",
-      "explanation": "Use \"Where is...?\" or \"How do I get to...?\" to ask for directions. Always start with \"Excuse me\" to be polite.",
+      "explanation": "Use <Where is...?> or <How do I get to...?> to ask for directions. Always start with <Excuse me> to be polite.",
       "examples": [
         "Excuse me, where is the train station?",
         "How do I get to the city center?",
@@ -100,7 +100,7 @@
     },
     {
       "rule": "Making Requests While Traveling",
-      "explanation": "Use \"Can I...?\" or \"Could you...?\" to make polite requests. Add \"please\" to be more polite.",
+      "explanation": "Use <Can I...?> or <Could you...?> to make polite requests. Add <please> to be more polite.",
       "examples": [
         "Can I have a window seat, please?",
         "Could you call a taxi for me?",

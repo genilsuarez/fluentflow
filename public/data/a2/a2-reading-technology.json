@@ -18,31 +18,31 @@
       "id": "devices",
       "title": "Common Devices and Hardware",
       "type": "theory",
-      "content": "A \"computer\" or \"laptop\" is used for work and browsing the internet. A \"smartphone\" is a mobile phone with internet access. A \"tablet\" is between a phone and computer in size. Important parts include: the \"screen\" (display), \"keyboard\" (for typing), \"mouse\" (for clicking), and \"charger\" (for battery power). You \"turn on\" or \"power on\" devices, and \"turn off\" or \"shut down\" when finished."
+      "content": "A <computer> or <laptop> is used for work and browsing the internet. A <smartphone> is a mobile phone with internet access. A <tablet> is between a phone and computer in size. Important parts include: the <screen> (display), <keyboard> (for typing), <mouse> (for clicking), and <charger> (for battery power). You <turn on> or <power on> devices, and <turn off> or <shut down> when finished."
     },
     {
       "id": "internet-apps",
       "title": "Internet and Applications",
       "type": "theory",
-      "content": "The \"internet\" or \"web\" connects computers worldwide. A \"website\" is a page on the internet. A \"browser\" (like Chrome or Safari) lets you visit websites. An \"app\" or \"application\" is a program on your phone or computer. You \"download\" apps from an app store. \"Wi-Fi\" is wireless internet. When you \"log in\", you enter your username and password. \"Email\" is electronic mail for sending messages."
+      "content": "The <internet> or <web> connects computers worldwide. A <website> is a page on the internet. A <browser> (like Chrome or Safari) lets you visit websites. An <app> or <application> is a program on your phone or computer. You <download> apps from an app store. <Wi-Fi> is wireless internet. When you <log in>, you enter your username and password. <Email> is electronic mail for sending messages."
     },
     {
       "id": "social-media",
       "title": "Social Media and Communication",
       "type": "theory",
-      "content": "Social media platforms like Facebook, Instagram, and Twitter let people share photos, videos, and messages. You \"post\" content, \"like\" or \"comment\" on others' posts, and \"follow\" people you're interested in. \"Messaging apps\" like WhatsApp let you send instant messages. A \"video call\" lets you see and talk to someone online. Remember to be careful about \"privacy\" - don't share personal information with strangers online."
+      "content": "Social media platforms like Facebook, Instagram, and Twitter let people share photos, videos, and messages. You <post> content, <like> or <comment> on others' posts, and <follow> people you're interested in. <Messaging apps> like WhatsApp let you send instant messages. A <video call> lets you see and talk to someone online. Remember to be careful about <privacy> - don't share personal information with strangers online."
     },
     {
       "id": "examples",
       "title": "Technology Conversations",
       "type": "examples",
-      "content": "Example 1: TECH PROBLEM - 'My computer won't turn on. I think the battery is dead.'\n\nExample 2: ASKING FOR HELP - 'Could you help me download this app? I'm not sure how.'\n\nExample 3: SHARING CONTACT - 'What's your email address? I'll send you the document.'"
+      "content": "Example 1: TECH PROBLEM - <My computer won't turn on. I think the battery is dead.>\n\nExample 2: ASKING FOR HELP - <Could you help me download this app? I'm not sure how.>\n\nExample 3: SHARING CONTACT - <What's your email address? I'll send you the document.>"
     },
     {
       "id": "summary",
       "title": "Digital Literacy",
       "type": "summary",
-      "content": "Technology vocabulary is important in today's world. Learn the names of devices and their parts. Practice talking about apps, websites, and social media. When you have a tech problem, describe it clearly: 'My phone won't charge' or 'I can't connect to Wi-Fi'. Remember to stay safe online - use strong passwords and protect your privacy. Technology changes fast, so keep learning new terms!"
+      "content": "Technology vocabulary is important in today's world. Learn the names of devices and their parts. Practice talking about apps, websites, and social media. When you have a tech problem, describe it clearly: <My phone won't charge> or <I can't connect to Wi-Fi>. Remember to stay safe online - use strong passwords and protect your privacy. Technology changes fast, so keep learning new terms!"
     }
   ],
   "keyVocabulary": [
@@ -101,7 +101,7 @@
     },
     {
       "rule": "Describing Tech Problems",
-      "explanation": "Use 'won't' (will not) or 'doesn't work' to describe problems. Use 'can't' for inability.",
+      "explanation": "Use <won't> (will not) or <doesn't work> to describe problems. Use <can't> for inability.",
       "examples": [
         "My phone won't turn on.",
         "The Wi-Fi doesn't work.",
