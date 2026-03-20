@@ -175,9 +175,9 @@
   },
   {
     "sentence": "We ______ the museum last Saturday.",
-    "correct": "visited",
-    "explanation": "Use <visited> (past tense of <visit>) - regular verb adds -ed",
-    "tip": "Complete with the past tense of <visit>"
+    "correct": "explored",
+    "explanation": "Use <explored> (past tense of <explore>) - regular verb adds -ed",
+    "tip": "Complete with the past tense of <explore>"
   },
   {
     "sentence": "He ______ his homework after dinner.",
