@@ -28,10 +28,13 @@ Herramientas organizadas por funcionalidad para el mantenimiento del proyecto.
 - `validate-data-paths.js` - Verificacion de datos JSON y rutas
 - `analyze-unused.js` - 17 pasadas: archivos huerfanos, exports muertos, CSS sin uso, BEM, !important audit
 - `deep-analysis.js` - 30 pasadas en 3 grupos (DA+DB+DC): CSS quality, cross-file, JSON integrity
+- `audit-content.js` - Auditoria de contenido educativo
+- `audit-modules.js` - Auditoria de modulos y dependencias
 
 ### utils/
 - `logger.js` - Sistema de logging compartido
 - `git-utils.js` - Operaciones de Git
+- `cleanup.js` - Limpieza de artifacts de build
 
 ## Uso Rapido
 
@@ -58,6 +61,10 @@ npm run analyze:deep:dc    # Solo DC-1..DC-10 (JSON data integrity)
 # Seguridad
 npm run security:audit     # npm audit
 npm run security:scan      # Patrones peligrosos
+
+# Modulos y limpieza
+npm run audit:modules      # Auditoria de modulos
+npm run clean              # Limpieza de artifacts
 
 # Git
 npm run commit             # Smart commit interactivo

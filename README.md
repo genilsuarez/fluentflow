@@ -6,7 +6,7 @@ English learning app (CEFR A1-C2) — React 18, TypeScript, Pure CSS/BEM.
 
 ## Stack
 
-React 18 · TypeScript strict · Vite + esbuild · Zustand · TanStack Query · Zod · Recharts · i18next · Vitest · GitHub Actions → GitHub Pages
+React 18 · TypeScript strict · Vite + esbuild · Zustand · TanStack Query · Zod · Fuse.js · Custom i18n · Vitest · GitHub Actions → GitHub Pages
 
 ## Features
 
@@ -25,14 +25,24 @@ npm install && npm run dev
 |----------|---------|-------------|
 | Dev | `npm run dev` | Dev server |
 | Build | `npm run build` | Production build |
-| Test | `npm test` | 2 files, 24 tests, ~2s |
+| Test | `npm test` | 4 files, 55 tests, ~2s |
 | Lint | `npm run lint` | ESLint |
 | Format | `npm run format` | Prettier |
 | Types | `npm run type-check` | TypeScript check |
-| Validate | `npm run validate:all` | All validations |
+| Validate | `npm run validate:all` | Data + BEM validations |
+| Validate Full | `npm run validate:full` | All validations (47 passes) |
 | CSS | `npm run validate:bem` | BEM validation |
+| Unused | `npm run analyze:unused` | 17 passes: orphans, dead exports, CSS |
+| Deep | `npm run analyze:deep` | 30 passes: CSS quality, cross-file, JSON |
+| Modules | `npm run audit:modules` | Module audit |
+| Clean | `npm run clean` | Cleanup build artifacts |
 | Security | `npm run security:audit` | Dependency audit |
+| Security Scan | `npm run security:scan` | Dangerous patterns scan |
+| Build Full | `npm run build:full` | Pull + quality + security + build + push + deploy |
+| Commit | `npm run commit:push` | Stage all + smart commit + push |
 | Monitor | `npm run gh:status` | GitHub Actions status |
+| Watch | `npm run gh:watch` | Monitor workflows in real time |
+| Deploy | `npm run deploy:status` | Deployment status |
 | Pipeline | `npm run pipeline` | Interactive pipeline |
 
 ## Structure
@@ -42,7 +52,7 @@ config/          5 files (vite, vitest, tsconfig, eslint, .env)
 src/             components/ hooks/ services/ stores/ styles/ types/ utils/
 public/data/     Learning content JSON by CEFR level (A1-C2)
 scripts/         5 dirs: build, development, git, validation, utils
-tests/           setup.ts + 2 test files (api-service, progressionService)
+tests/           setup.ts + 4 test files (api-service, progressionService, offlineManager, useOfflineStatus)
 ```
 
 ## Architecture
