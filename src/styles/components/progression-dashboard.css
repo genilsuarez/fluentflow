@@ -268,15 +268,11 @@
   font-size: 0.75rem;
   font-weight: 600;
   color: var(--theme-text-primary, #111827);
-  background: linear-gradient(
-    135deg,
-    var(--theme-bg-elevated, #ffffff) 0%,
-    var(--theme-bg-subtle, #f9fafb) 100%
-  );
-  border: 1px solid var(--theme-border-soft, #e5e7eb);
+  background: var(--theme-bg-elevated, #ffffff);
+  border: 1px solid var(--theme-border-soft, #f3f4f6);
   border-radius: 0.375rem;
   padding: 0.25rem 0.5rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-subtle, 0 1px 3px rgba(0, 0, 0, 0.1));
   white-space: nowrap;
   display: inline-flex;
   align-items: center;
@@ -287,12 +283,6 @@
   transition: all 0.2s ease;
   order: 2;
   margin-left: auto;
-}
-
-.progression-dashboard__unit-stats:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  border-color: var(--theme-primary-blue, #3b82f6);
 }
 
 .progression-dashboard__progress-bar {
@@ -643,18 +633,9 @@ html.dark .progression-dashboard__expand-icon {
 
 html.dark .progression-dashboard__unit-stats {
   color: var(--theme-text-primary, #ffffff);
-  background: linear-gradient(
-    135deg,
-    var(--theme-bg-elevated, #374151) 0%,
-    var(--theme-bg-subtle, #4b5563) 100%
-  );
-  border-color: var(--theme-border-soft, #6b7280);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-}
-
-html.dark .progression-dashboard__unit-stats:hover {
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  border-color: var(--theme-primary-blue, #60a5fa);
+  background: var(--theme-bg-elevated, #374151);
+  border-color: var(--theme-border-soft, #4b5563);
+  box-shadow: var(--shadow-subtle, 0 1px 3px rgba(0, 0, 0, 0.2));
 }
 
 /* Dark mode: unlocked modules - visible and interactive */
