@@ -357,8 +357,8 @@
 
 .compact-learning-path__unit-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 0.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
   width: 100%;
   margin-top: 0.5rem;
 }
@@ -373,8 +373,8 @@
 
 .compact-learning-path__unit-circle {
   position: relative;
-  width: 3rem;
-  height: 3rem;
+  width: 4.5rem;
+  height: 4.5rem;
   transition: transform 0.2s ease;
 }
 
@@ -440,9 +440,9 @@
 }
 
 .compact-learning-path__unit-circle-badge {
-  font-size: 0.625rem;
+  font-size: 0.8rem;
   font-weight: 700;
-  padding: 0.0625rem 0.25rem;
+  padding: 0.0625rem 0.3rem;
   border-radius: 9999px;
 }
 
@@ -477,7 +477,7 @@
 }
 
 .compact-learning-path__unit-circle-percentage {
-  font-size: 0.5rem;
+  font-size: 0.65rem;
   font-weight: 600;
   color: var(--theme-text-secondary, #6b7280);
 }
@@ -493,7 +493,7 @@
 }
 
 .compact-learning-path__unit-circle-name {
-  font-size: 0.625rem;
+  font-size: 0.75rem;
   font-weight: 500;
   color: var(--theme-text-primary, #111827);
   text-align: center;
@@ -504,7 +504,7 @@
 
 /* Enhanced module numbers design - Higher specificity */
 .compact-learning-path .compact-learning-path__unit-circle-stats {
-  font-size: 0.5rem !important;
+  font-size: 0.65rem !important;
   font-weight: 600 !important;
   color: var(--theme-text-primary, #111827) !important;
   background: linear-gradient(
@@ -706,12 +706,12 @@ html.dark .compact-learning-path .compact-learning-path__unit-circle-stats {
   }
 
   .compact-learning-path__unit-circle {
-    width: 2rem;
-    height: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
   }
 
   .compact-learning-path__unit-circle-name {
-    font-size: 0.5rem;
+    font-size: 0.65rem;
   }
 
   .compact-learning-path__unit-circle-stats {
@@ -953,12 +953,12 @@ html.dark .compact-learning-path .compact-learning-path__unit-circle-stats {
   }
 
   .compact-learning-path__unit-circle {
-    width: 1.75rem;
-    height: 1.75rem;
+    width: 3rem;
+    height: 3rem;
   }
 
   .compact-learning-path__unit-circle-name {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
   }
 
   .compact-learning-path__unit-circle-stats {
