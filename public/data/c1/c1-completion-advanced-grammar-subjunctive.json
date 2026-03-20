@@ -8,7 +8,8 @@
       "was"
     ],
     "correct": "be",
-    "explanation": "Después de verbos de sugerencia o demanda como <insist>, <suggest>, <recommend>, se usa el subjuntivo (la forma base del verbo)."
+    "explanation": "Después de verbos de sugerencia o demanda como <insist>, <suggest>, <recommend>, se usa el subjuntivo (la forma base del verbo).",
+    "tip": "After verbs of suggestion/demand, use the subjunctive (base form, no -s)."
   },
   {
     "sentence": "I wish I ______ more time to travel.",
@@ -19,7 +20,8 @@
       "having"
     ],
     "correct": "had",
-    "explanation": "Para expresar un deseo sobre una situación presente que es irreal, se usa 'wish + pasado simple'."
+    "explanation": "Para expresar un deseo sobre una situación presente que es irreal, se usa 'wish + pasado simple'.",
+    "tip": "The subjunctive uses the base form of the verb, without conjugation."
   },
   {
     "sentence": "It is essential that she ______ the document before signing.",
@@ -30,7 +32,8 @@
       "to read"
     ],
     "correct": "read",
-    "explanation": "Después de la estructura 'It is essential/important/vital that...', se usa el subjuntivo (la forma base del verbo)."
+    "explanation": "Después de la estructura 'It is essential/important/vital that...', se usa el subjuntivo (la forma base del verbo).",
+    "tip": "After 'It is essential/important that...', use the subjunctive base form."
   },
   {
     "sentence": "If only he ______ us the truth earlier.",
@@ -41,7 +44,8 @@
       "would tell"
     ],
     "correct": "had told",
-    "explanation": "Para expresar un arrepentimiento sobre una situación pasada, se usa 'If only + pasado perfecto'."
+    "explanation": "Para expresar un arrepentimiento sobre una situación pasada, se usa 'If only + pasado perfecto'.",
+    "tip": "The subjunctive uses the base form of the verb, without conjugation."
   },
   {
     "sentence": "He talks as if he ______ everything.",
@@ -52,7 +56,8 @@
       "had known"
     ],
     "correct": "knew",
-    "explanation": "Después de <as if> para describir una situación hipotética o irreal en el presente, se usa el pasado simple."
+    "explanation": "Después de <as if> para describir una situación hipotética o irreal en el presente, se usa el pasado simple.",
+    "tip": "Use 'were' (not 'was') in hypothetical/unreal comparisons."
   },
   {
     "sentence": "I demand that he ______ immediately.",
@@ -63,7 +68,8 @@
       "to apologize"
     ],
     "correct": "apologize",
-    "explanation": "El subjuntivo (forma base del verbo) se usa después de verbos de demanda como <demand>."
+    "explanation": "El subjuntivo (forma base del verbo) se usa después de verbos de demanda como <demand>.",
+    "tip": "After verbs of suggestion/demand, use the subjunctive (base form, no -s)."
   },
   {
     "sentence": "It's crucial that they ______ on the project together.",
@@ -74,7 +80,8 @@
       "are working"
     ],
     "correct": "work",
-    "explanation": "Después de 'It's crucial that...', se usa el subjuntivo."
+    "explanation": "Después de 'It's crucial that...', se usa el subjuntivo.",
+    "tip": "The subjunctive uses the base form of the verb, without conjugation."
   },
   {
     "sentence": "She wishes she ______ taller.",
@@ -85,7 +92,8 @@
       "be"
     ],
     "correct": "were",
-    "explanation": "Para deseos en el presente, se usa 'wish + pasado simple'. Se prefiere <were> para todos los sujetos."
+    "explanation": "Para deseos en el presente, se usa 'wish + pasado simple'. Se prefiere <were> para todos los sujetos.",
+    "tip": "The subjunctive uses the base form of the verb, without conjugation."
   },
   {
     "sentence": "The doctor recommended that he ______ more.",
@@ -96,7 +104,8 @@
       "to rest"
     ],
     "correct": "rest",
-    "explanation": "El subjuntivo se usa después de verbos de recomendación como <recommend>."
+    "explanation": "El subjuntivo se usa después de verbos de recomendación como <recommend>.",
+    "tip": "After verbs of suggestion/demand, use the subjunctive (base form, no -s)."
   },
   {
     "sentence": "If only I ______ the answer.",
@@ -107,7 +116,8 @@
       "known"
     ],
     "correct": "knew",
-    "explanation": "<If only> funciona como <I wish> para expresar deseos. Se usa el pasado para un deseo presente."
+    "explanation": "<If only> funciona como <I wish> para expresar deseos. Se usa el pasado para un deseo presente.",
+    "tip": "The subjunctive uses the base form of the verb, without conjugation."
   },
   {
     "sentence": "It is imperative that the rules ______ followed.",
@@ -118,7 +128,8 @@
       "to be"
     ],
     "correct": "be",
-    "explanation": "Después de 'It is imperative that...', se usa el subjuntivo pasivo '<be> + participio pasado'."
+    "explanation": "Después de 'It is imperative that...', se usa el subjuntivo pasivo '<be> + participio pasado'.",
+    "tip": "The subjunctive uses the base form of the verb, without conjugation."
   },
   {
     "sentence": "He acts as though he ______ the boss.",
@@ -129,7 +140,8 @@
       "be"
     ],
     "correct": "were",
-    "explanation": "Se usa el pasado subjuntivo <were> después de <as though> para situaciones hipotéticas."
+    "explanation": "Se usa el pasado subjuntivo <were> después de <as though> para situaciones hipotéticas.",
+    "tip": "Use 'were' (not 'was') in hypothetical/unreal comparisons."
   },
   {
     "sentence": "I propose that the meeting ______ postponed.",
@@ -140,7 +152,8 @@
       "to be"
     ],
     "correct": "be",
-    "explanation": "El subjuntivo se usa después de verbos como <propose>."
+    "explanation": "El subjuntivo se usa después de verbos como <propose>.",
+    "tip": "After verbs of suggestion/demand, use the subjunctive (base form, no -s)."
   },
   {
     "sentence": "They requested that she ______ the presentation.",
@@ -151,7 +164,8 @@
       "to give"
     ],
     "correct": "give",
-    "explanation": "El subjuntivo (forma base) se usa después de 'request that...'."
+    "explanation": "El subjuntivo (forma base) se usa después de 'request that...'.",
+    "tip": "The subjunctive uses the base form of the verb, without conjugation."
   },
   {
     "sentence": "I wish you ______ making that noise.",
@@ -162,7 +176,8 @@
       "had stopped"
     ],
     "correct": "would stop",
-    "explanation": "Se usa 'wish + would + infinitivo' para expresar molestia o un deseo de que alguien cambie su comportamiento."
+    "explanation": "Se usa 'wish + would + infinitivo' para expresar molestia o un deseo de que alguien cambie su comportamiento.",
+    "tip": "The subjunctive uses the base form of the verb, without conjugation."
   },
   {
     "sentence": "It's important that everyone ______ their role.",
@@ -173,7 +188,8 @@
       "is understanding"
     ],
     "correct": "understand",
-    "explanation": "Después de 'It's important that...', se usa el subjuntivo."
+    "explanation": "Después de 'It's important that...', se usa el subjuntivo.",
+    "tip": "The subjunctive uses the base form of the verb, without conjugation."
   },
   {
     "sentence": "If only we ______ sooner.",
@@ -184,7 +200,8 @@
       "would leave"
     ],
     "correct": "had left",
-    "explanation": "Se usa 'If only + pasado perfecto' para expresar arrepentimiento por algo que no sucedió en el pasado."
+    "explanation": "Se usa 'If only + pasado perfecto' para expresar arrepentimiento por algo que no sucedió en el pasado.",
+    "tip": "The subjunctive uses the base form of the verb, without conjugation."
   },
   {
     "sentence": "The law requires that all drivers ______ insurance.",
@@ -195,7 +212,8 @@
       "are having"
     ],
     "correct": "have",
-    "explanation": "El subjuntivo se usa después de verbos que indican un requisito, como <require>."
+    "explanation": "El subjuntivo se usa después de verbos que indican un requisito, como <require>.",
+    "tip": "The subjunctive uses the base form of the verb, without conjugation."
   },
   {
     "sentence": "I wish it ______ Friday today.",
@@ -206,7 +224,8 @@
       "be"
     ],
     "correct": "were",
-    "explanation": "Se usa 'wish + pasado simple' para un deseo sobre el presente. <Were> es la forma subjuntiva correcta."
+    "explanation": "Se usa 'wish + pasado simple' para un deseo sobre el presente. <Were> es la forma subjuntiva correcta.",
+    "tip": "The subjunctive uses the base form of the verb, without conjugation."
   },
   {
     "sentence": "The teacher suggested that the student ______ the chapter again.",
@@ -217,7 +236,8 @@
       "reading"
     ],
     "correct": "read",
-    "explanation": "Después de 'suggest that...', se usa el subjuntivo (forma base del verbo)."
+    "explanation": "Después de 'suggest that...', se usa el subjuntivo (forma base del verbo).",
+    "tip": "After verbs of suggestion/demand, use the subjunctive (base form, no -s)."
   },
   {
     "sentence": "It is vital that he ______ aware of the risks.",
@@ -228,7 +248,8 @@
       "are"
     ],
     "correct": "be",
-    "explanation": "Después de 'It is vital that...', se usa el subjuntivo (la forma base del verbo)."
+    "explanation": "Después de 'It is vital that...', se usa el subjuntivo (la forma base del verbo).",
+    "tip": "After 'It is essential/important that...', use the subjunctive base form."
   },
   {
     "sentence": "I wish I ______ able to help you.",
@@ -239,7 +260,8 @@
       "be"
     ],
     "correct": "were",
-    "explanation": "Para expresar un deseo sobre una situación presente que es irreal, se usa 'wish + pasado simple'. Se prefiere <were> para todos los sujetos."
+    "explanation": "Para expresar un deseo sobre una situación presente que es irreal, se usa 'wish + pasado simple'. Se prefiere <were> para todos los sujetos.",
+    "tip": "The subjunctive uses the base form of the verb, without conjugation."
   },
   {
     "sentence": "The committee recommended that the proposal ______ approved.",
@@ -250,7 +272,8 @@
       "are"
     ],
     "correct": "be",
-    "explanation": "Después de verbos de recomendación como <recommend>, se usa el subjuntivo (la forma base del verbo)."
+    "explanation": "Después de verbos de recomendación como <recommend>, se usa el subjuntivo (la forma base del verbo).",
+    "tip": "After verbs of suggestion/demand, use the subjunctive (base form, no -s)."
   },
   {
     "sentence": "If only I ______ more patient.",
@@ -261,7 +284,8 @@
       "be"
     ],
     "correct": "were",
-    "explanation": "Para expresar un deseo sobre una situación presente que es irreal, se usa 'If only + pasado simple'. Se prefiere <were> para todos los sujetos."
+    "explanation": "Para expresar un deseo sobre una situación presente que es irreal, se usa 'If only + pasado simple'. Se prefiere <were> para todos los sujetos.",
+    "tip": "The subjunctive uses the base form of the verb, without conjugation."
   },
   {
     "sentence": "He behaves as if he ______ the boss.",
@@ -272,7 +296,8 @@
       "be"
     ],
     "correct": "were",
-    "explanation": "Después de <as if> para describir una situación hipotética o irreal en el presente, se usa el pasado simple. Se prefiere <were> para todos los sujetos."
+    "explanation": "Después de <as if> para describir una situación hipotética o irreal en el presente, se usa el pasado simple. Se prefiere <were> para todos los sujetos.",
+    "tip": "Use 'were' (not 'was') in hypothetical/unreal comparisons."
   },
   {
     "sentence": "It is important that she ______ her responsibilities.",
@@ -283,7 +308,8 @@
       "is understanding"
     ],
     "correct": "understand",
-    "explanation": "Después de 'It is important that...', se usa el subjuntivo (la forma base del verbo)."
+    "explanation": "Después de 'It is important that...', se usa el subjuntivo (la forma base del verbo).",
+    "tip": "After 'It is essential/important that...', use the subjunctive base form."
   },
   {
     "sentence": "They insisted that he ______ the truth.",
@@ -294,7 +320,8 @@
       "to tell"
     ],
     "correct": "tell",
-    "explanation": "Después de verbos de sugerencia o demanda como <insist>, se usa el subjuntivo (la forma base del verbo)."
+    "explanation": "Después de verbos de sugerencia o demanda como <insist>, se usa el subjuntivo (la forma base del verbo).",
+    "tip": "After verbs of suggestion/demand, use the subjunctive (base form, no -s)."
   },
   {
     "sentence": "I wish it ______ not raining.",
@@ -305,7 +332,8 @@
       "be"
     ],
     "correct": "were",
-    "explanation": "Para expresar un deseo sobre una situación presente que es irreal, se usa 'wish + pasado simple'. Se prefiere <were> para todos los sujetos."
+    "explanation": "Para expresar un deseo sobre una situación presente que es irreal, se usa 'wish + pasado simple'. Se prefiere <were> para todos los sujetos.",
+    "tip": "The subjunctive uses the base form of the verb, without conjugation."
   },
   {
     "sentence": "If only he ______ here now.",
@@ -316,7 +344,8 @@
       "be"
     ],
     "correct": "were",
-    "explanation": "Para expresar un deseo sobre una situación presente que es irreal, se usa 'If only + pasado simple'. Se prefiere <were> para todos los sujetos."
+    "explanation": "Para expresar un deseo sobre una situación presente que es irreal, se usa 'If only + pasado simple'. Se prefiere <were> para todos los sujetos.",
+    "tip": "The subjunctive uses the base form of the verb, without conjugation."
   },
   {
     "sentence": "It is crucial that the information ______ accurate.",
@@ -327,7 +356,8 @@
       "are"
     ],
     "correct": "be",
-    "explanation": "Después de 'It is crucial that...', se usa el subjuntivo (la forma base del verbo)."
+    "explanation": "Después de 'It is crucial that...', se usa el subjuntivo (la forma base del verbo).",
+    "tip": "After 'It is essential/important that...', use the subjunctive base form."
   },
   {
     "sentence": "She acts as though she ______ never wrong.",
@@ -338,7 +368,8 @@
       "be"
     ],
     "correct": "were",
-    "explanation": "Después de <as though> para describir una situación hipotética o irreal en el presente, se usa el pasado simple. Se prefiere <were> para todos los sujetos."
+    "explanation": "Después de <as though> para describir una situación hipotética o irreal en el presente, se usa el pasado simple. Se prefiere <were> para todos los sujetos.",
+    "tip": "Use 'were' (not 'was') in hypothetical/unreal comparisons."
   },
   {
     "sentence": "I propose that we ______ a break.",
@@ -349,7 +380,8 @@
       "to take"
     ],
     "correct": "take",
-    "explanation": "El subjuntivo (la forma base del verbo) se usa después de verbos como <propose>."
+    "explanation": "El subjuntivo (la forma base del verbo) se usa después de verbos como <propose>.",
+    "tip": "After verbs of suggestion/demand, use the subjunctive (base form, no -s)."
   },
   {
     "sentence": "They requested that the documents ______ sent immediately.",
@@ -360,7 +392,8 @@
       "to be"
     ],
     "correct": "be",
-    "explanation": "Después de 'request that...', se usa el subjuntivo pasivo '<be> + participio pasado'."
+    "explanation": "Después de 'request that...', se usa el subjuntivo pasivo '<be> + participio pasado'.",
+    "tip": "The subjunctive uses the base form of the verb, without conjugation."
   },
   {
     "sentence": "I wish you ______ listen to me.",
@@ -371,7 +404,8 @@
       "could"
     ],
     "correct": "would",
-    "explanation": "Se usa 'wish + <would> + infinitivo' para expresar un deseo de que alguien cambie su comportamiento."
+    "explanation": "Se usa 'wish + <would> + infinitivo' para expresar un deseo de que alguien cambie su comportamiento.",
+    "tip": "The subjunctive uses the base form of the verb, without conjugation."
   },
   {
     "sentence": "It's essential that he ______ the contract carefully.",
@@ -382,7 +416,8 @@
       "to read"
     ],
     "correct": "read",
-    "explanation": "Después de 'It's essential that...', se usa el subjuntivo (la forma base del verbo)."
+    "explanation": "Después de 'It's essential that...', se usa el subjuntivo (la forma base del verbo).",
+    "tip": "The subjunctive uses the base form of the verb, without conjugation."
   },
   {
     "sentence": "If only I ______ studied harder for the exam.",
@@ -393,7 +428,8 @@
       "did"
     ],
     "correct": "had",
-    "explanation": "Se usa 'If only + pasado perfecto' para expresar arrepentimiento por algo que no sucedió en el pasado."
+    "explanation": "Se usa 'If only + pasado perfecto' para expresar arrepentimiento por algo que no sucedió en el pasado.",
+    "tip": "The subjunctive uses the base form of the verb, without conjugation."
   },
   {
     "sentence": "The regulations require that all equipment ______ inspected regularly.",
@@ -404,7 +440,8 @@
       "are"
     ],
     "correct": "be",
-    "explanation": "El subjuntivo pasivo 'be + participio pasado' se usa después de verbos que indican un requisito, como <require>."
+    "explanation": "El subjuntivo pasivo 'be + participio pasado' se usa después de verbos que indican un requisito, como <require>.",
+    "tip": "The subjunctive uses the base form of the verb, without conjugation."
   },
   {
     "sentence": "I wish today ______ my birthday.",
@@ -415,7 +452,8 @@
       "be"
     ],
     "correct": "were",
-    "explanation": "Se usa 'wish + pasado simple' para un deseo sobre el presente. <Were> es la forma subjuntiva correcta."
+    "explanation": "Se usa 'wish + pasado simple' para un deseo sobre el presente. <Were> es la forma subjuntiva correcta.",
+    "tip": "The subjunctive uses the base form of the verb, without conjugation."
   },
   {
     "sentence": "He requested that a doctor ______ present during the procedure.",
@@ -438,6 +476,7 @@
       "to try"
     ],
     "correct": "try",
-    "explanation": "Después de 'suggest that...', se usa el subjuntivo (forma base del verbo)."
+    "explanation": "Después de 'suggest that...', se usa el subjuntivo (forma base del verbo).",
+    "tip": "After verbs of suggestion/demand, use the subjunctive (base form, no -s)."
   }
 ]

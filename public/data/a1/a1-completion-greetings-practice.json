@@ -140,11 +140,13 @@
   {
     "sentence": "______, I'm from Spain.",
     "correct": "Hello",
-    "explanation": "We use \"Hello\" to introduce ourselves."
+    "explanation": "We use \"Hello\" to introduce ourselves.",
+    "tip": "Think about common ways to greet someone."
   },
   {
     "sentence": "It was nice to meet you. ______!",
     "correct": "Goodbye",
-    "explanation": "We say \"Goodbye\" when leaving."
+    "explanation": "We say \"Goodbye\" when leaving.",
+    "tip": "Think about how to say farewell."
   }
 ]

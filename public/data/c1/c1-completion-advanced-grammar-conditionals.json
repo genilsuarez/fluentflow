@@ -8,7 +8,8 @@
       "be"
     ],
     "correct": "were",
-    "explanation": "En el segundo condicional (situaciones hipotéticas), se usa <were> para todos los pronombres, incluido <I>."
+    "explanation": "En el segundo condicional (situaciones hipotéticas), se usa <were> para todos los pronombres, incluido <I>.",
+    "tip": "In hypothetical situations, use 'were' for all subjects."
   },
   {
     "sentence": "Had I known about the traffic, I ______ a different route.",
@@ -19,7 +20,8 @@
       "take"
     ],
     "correct": "would have taken",
-    "explanation": "Esto es una inversión del tercer condicional. La estructura es 'Had + sujeto + participio pasado, sujeto + would have + participio pasado'."
+    "explanation": "Esto es una inversión del tercer condicional. La estructura es 'Had + sujeto + participio pasado, sujeto + would have + participio pasado'.",
+    "tip": "This is an inverted conditional — no 'if' needed when the clause starts with 'had'."
   },
   {
     "sentence": "If you heat water to 100 degrees, it ______.",
@@ -30,7 +32,8 @@
       "is boiling"
     ],
     "correct": "boils",
-    "explanation": "El condicional cero se usa para hechos generales o verdades científicas. La estructura es 'If + presente simple, ... presente simple'."
+    "explanation": "El condicional cero se usa para hechos generales o verdades científicas. La estructura es 'If + presente simple, ... presente simple'.",
+    "tip": "Zero conditional: general truths use present simple in both clauses."
   },
   {
     "sentence": "Unless you ______ now, you will miss the train.",
@@ -41,7 +44,8 @@
       "will leave"
     ],
     "correct": "leave",
-    "explanation": "<Unless> significa <si no>. Después de <unless>, se usa el verbo en afirmativo. <Unless you leave> = <If you don>t leave'."
+    "explanation": "<Unless> significa <si no>. Después de <unless>, se usa el verbo en afirmativo. <Unless you leave> = <If you don>t leave'.",
+    "tip": "'Unless' means 'if not' — the verb stays affirmative."
   },
   {
     "sentence": "She would be a great musician if she ______ more.",
@@ -52,7 +56,8 @@
       "would practice"
     ],
     "correct": "practiced",
-    "explanation": "Segundo condicional para una situación hipotética presente. La estructura es 'sujeto + would + infinitivo ... if + sujeto + pasado simple'."
+    "explanation": "Segundo condicional para una situación hipotética presente. La estructura es 'sujeto + would + infinitivo ... if + sujeto + pasado simple'.",
+    "tip": "Identify the conditional type (0, 1, 2, 3, or mixed) to choose the right tense."
   },
   {
     "sentence": "If she had studied, she ______ the exam.",
@@ -63,7 +68,8 @@
       "would have passed"
     ],
     "correct": "would have passed",
-    "explanation": "Tercer condicional para una situación hipotética en el pasado. 'If + pasado perfecto, ... would have + participio pasado'."
+    "explanation": "Tercer condicional para una situación hipotética en el pasado. 'If + pasado perfecto, ... would have + participio pasado'.",
+    "tip": "Think about an unreal past result — third conditional structure."
   },
   {
     "sentence": "What would you do if it ______ tomorrow?",
@@ -74,7 +80,8 @@
       "would rain"
     ],
     "correct": "rained",
-    "explanation": "Segundo condicional para una situación hipotética futura. 'If + pasado simple, ... would + infinitivo'."
+    "explanation": "Segundo condicional para una situación hipotética futura. 'If + pasado simple, ... would + infinitivo'.",
+    "tip": "Identify the conditional type (0, 1, 2, 3, or mixed) to choose the right tense."
   },
   {
     "sentence": "If I see him, I ______ him the message.",
@@ -85,7 +92,8 @@
       "would give"
     ],
     "correct": "will give",
-    "explanation": "Primer condicional para una situación real o probable en el futuro. 'If + presente simple, ... will + infinitivo'."
+    "explanation": "Primer condicional para una situación real o probable en el futuro. 'If + presente simple, ... will + infinitivo'.",
+    "tip": "Identify the conditional type (0, 1, 2, 3, or mixed) to choose the right tense."
   },
   {
     "sentence": "They would have been lost if he ______ a map.",
@@ -96,7 +104,8 @@
       "wouldn't bring"
     ],
     "correct": "hadn't brought",
-    "explanation": "Tercer condicional que expresa una condición pasada que no ocurrió y su resultado hipotético."
+    "explanation": "Tercer condicional que expresa una condición pasada que no ocurrió y su resultado hipotético.",
+    "tip": "Identify the conditional type (0, 1, 2, 3, or mixed) to choose the right tense."
   },
   {
     "sentence": "If you mix red and blue, you ______ purple.",
@@ -107,7 +116,8 @@
       "would get"
     ],
     "correct": "get",
-    "explanation": "Condicional cero para una verdad universal o un hecho científico."
+    "explanation": "Condicional cero para una verdad universal o un hecho científico.",
+    "tip": "Zero conditional: general truths use present simple in both clauses."
   },
   {
     "sentence": "Provided that you ______ on time, you'll get a good seat.",
@@ -118,7 +128,8 @@
       "are arriving"
     ],
     "correct": "arrive",
-    "explanation": "<Provided that> es similar a <if> y se usa con el presente simple para una condición futura."
+    "explanation": "<Provided that> es similar a <if> y se usa con el presente simple para una condición futura.",
+    "tip": "This conditional connector works like 'if' but with a condition emphasis."
   },
   {
     "sentence": "I wouldn't go there if I ______ you.",
@@ -129,7 +140,8 @@
       "be"
     ],
     "correct": "were",
-    "explanation": "En el segundo condicional, se prefiere <were> sobre <was> para todos los sujetos al expresar una hipótesis."
+    "explanation": "En el segundo condicional, se prefiere <were> sobre <was> para todos los sujetos al expresar una hipótesis.",
+    "tip": "In hypothetical situations, use 'were' for all subjects."
   },
   {
     "sentence": "If the weather ______ better, we would have gone to the beach.",
@@ -140,7 +152,8 @@
       "would be"
     ],
     "correct": "had been",
-    "explanation": "Tercer condicional para una situación pasada irreal y su resultado."
+    "explanation": "Tercer condicional para una situación pasada irreal y su resultado.",
+    "tip": "Identify the conditional type (0, 1, 2, 3, or mixed) to choose the right tense."
   },
   {
     "sentence": "He will be late unless he ______ now.",
@@ -151,7 +164,8 @@
       "will hurry"
     ],
     "correct": "hurries",
-    "explanation": "<Unless> (a menos que) va seguido del presente simple para indicar una condición."
+    "explanation": "<Unless> (a menos que) va seguido del presente simple para indicar una condición.",
+    "tip": "'Unless' means 'if not' — the verb stays affirmative."
   },
   {
     "sentence": "If I had the money, I ______ a new car.",
@@ -162,7 +176,8 @@
       "buy"
     ],
     "correct": "would buy",
-    "explanation": "Segundo condicional para una situación presente o futura hipotética."
+    "explanation": "Segundo condicional para una situación presente o futura hipotética.",
+    "tip": "The result clause of a hypothetical uses 'would' + base verb."
   },
   {
     "sentence": "Should you ______ any help, just ask.",
@@ -173,7 +188,8 @@
       "are needing"
     ],
     "correct": "need",
-    "explanation": "Esto es una forma invertida y más formal del primer condicional, omitiendo <if>. <Should you need> = <If you should need>."
+    "explanation": "Esto es una forma invertida y más formal del primer condicional, omitiendo <if>. <Should you need> = <If you should need>.",
+    "tip": "Identify the conditional type (0, 1, 2, 3, or mixed) to choose the right tense."
   },
   {
     "sentence": "If he ______ harder, he will succeed.",
@@ -184,7 +200,8 @@
       "will try"
     ],
     "correct": "tries",
-    "explanation": "Primer condicional para una posible situación futura."
+    "explanation": "Primer condicional para una posible situación futura.",
+    "tip": "Identify the conditional type (0, 1, 2, 3, or mixed) to choose the right tense."
   },
   {
     "sentence": "Water turns to ice if the temperature ______ below zero.",
@@ -195,7 +212,8 @@
       "will drop"
     ],
     "correct": "drops",
-    "explanation": "Condicional cero para un hecho científico."
+    "explanation": "Condicional cero para un hecho científico.",
+    "tip": "Identify the conditional type (0, 1, 2, 3, or mixed) to choose the right tense."
   },
   {
     "sentence": "If they had invited me, I ______.",
@@ -206,7 +224,8 @@
       "would have gone"
     ],
     "correct": "would have gone",
-    "explanation": "Tercer condicional para una situación hipotética en el pasado."
+    "explanation": "Tercer condicional para una situación hipotética en el pasado.",
+    "tip": "Think about an unreal past result — third conditional structure."
   },
   {
     "sentence": "As long as you ______ quiet, you can stay.",
@@ -217,7 +236,8 @@
       "are keeping"
     ],
     "correct": "keep",
-    "explanation": "<As long as> (siempre y cuando) se usa con el presente simple para establecer una condición."
+    "explanation": "<As long as> (siempre y cuando) se usa con el presente simple para establecer una condición.",
+    "tip": "This conditional connector works like 'if' but with a condition emphasis."
   },
   {
     "sentence": "If I ______ a millionaire, I would travel the world.",
@@ -228,7 +248,8 @@
       "be"
     ],
     "correct": "were",
-    "explanation": "Segundo condicional para una situación hipotética irreal en el presente. Se usa <were> para todos los sujetos."
+    "explanation": "Segundo condicional para una situación hipotética irreal en el presente. Se usa <were> para todos los sujetos.",
+    "tip": "In hypothetical situations, use 'were' for all subjects."
   },
   {
     "sentence": "Unless it ______ tomorrow, we will go for a picnic.",
@@ -239,7 +260,8 @@
       "doesn't rain"
     ],
     "correct": "rains",
-    "explanation": "<Unless> significa <si no>. Se usa con el presente simple para una condición futura."
+    "explanation": "<Unless> significa <si no>. Se usa con el presente simple para una condición futura.",
+    "tip": "'Unless' means 'if not' — the verb stays affirmative."
   },
   {
     "sentence": "If she ______ earlier, she wouldn't have missed the bus.",
@@ -250,7 +272,8 @@
       "would leave"
     ],
     "correct": "had left",
-    "explanation": "Tercer condicional para una situación hipotética en el pasado."
+    "explanation": "Tercer condicional para una situación hipotética en el pasado.",
+    "tip": "Identify the conditional type (0, 1, 2, 3, or mixed) to choose the right tense."
   },
   {
     "sentence": "What ______ if you won the lottery?",
@@ -261,7 +284,8 @@
       "did you do"
     ],
     "correct": "would you do",
-    "explanation": "Segundo condicional para una situación hipotética futura."
+    "explanation": "Segundo condicional para una situación hipotética futura.",
+    "tip": "The result clause of a hypothetical uses 'would' + base verb."
   },
   {
     "sentence": "If you ______ water, it evaporates.",
@@ -272,7 +296,8 @@
       "would heat"
     ],
     "correct": "heat",
-    "explanation": "Condicional cero para hechos científicos o verdades generales."
+    "explanation": "Condicional cero para hechos científicos o verdades generales.",
+    "tip": "Identify the conditional type (0, 1, 2, 3, or mixed) to choose the right tense."
   },
   {
     "sentence": "Had he ______ the instructions, he wouldn't have made a mistake.",
@@ -283,7 +308,8 @@
       "following"
     ],
     "correct": "followed",
-    "explanation": "Inversión del tercer condicional. 'Had + sujeto + participio pasado'."
+    "explanation": "Inversión del tercer condicional. 'Had + sujeto + participio pasado'.",
+    "tip": "This is an inverted conditional — no 'if' needed when the clause starts with 'had'."
   },
   {
     "sentence": "If I ______ you, I would apologize.",
@@ -294,7 +320,8 @@
       "be"
     ],
     "correct": "were",
-    "explanation": "Segundo condicional para dar un consejo. Se usa <were> para todos los sujetos."
+    "explanation": "Segundo condicional para dar un consejo. Se usa <were> para todos los sujetos.",
+    "tip": "In hypothetical situations, use 'were' for all subjects."
   },
   {
     "sentence": "She ______ if she knew the answer.",
@@ -305,7 +332,8 @@
       "told you"
     ],
     "correct": "would tell you",
-    "explanation": "Segundo condicional para una situación hipotética en el presente."
+    "explanation": "Segundo condicional para una situación hipotética en el presente.",
+    "tip": "The result clause of a hypothetical uses 'would' + base verb."
   },
   {
     "sentence": "If they ______ harder, they will pass the exam.",
@@ -316,7 +344,8 @@
       "would study"
     ],
     "correct": "study",
-    "explanation": "Primer condicional para una situación real o probable en el futuro."
+    "explanation": "Primer condicional para una situación real o probable en el futuro.",
+    "tip": "Identify the conditional type (0, 1, 2, 3, or mixed) to choose the right tense."
   },
   {
     "sentence": "Provided that you ______ your work, you can go home.",
@@ -327,7 +356,8 @@
       "are finishing"
     ],
     "correct": "finish",
-    "explanation": "<Provided that> se usa con el presente simple para una condición futura."
+    "explanation": "<Provided that> se usa con el presente simple para una condición futura.",
+    "tip": "This conditional connector works like 'if' but with a condition emphasis."
   },
   {
     "sentence": "If I ______ more time, I would learn a new language.",
@@ -338,7 +368,8 @@
       "would have"
     ],
     "correct": "had",
-    "explanation": "Segundo condicional para una situación hipotética en el presente."
+    "explanation": "Segundo condicional para una situación hipotética en el presente.",
+    "tip": "Identify the conditional type (0, 1, 2, 3, or mixed) to choose the right tense."
   },
   {
     "sentence": "Unless you ______ a valid passport, you cannot travel.",
@@ -349,7 +380,8 @@
       "will have"
     ],
     "correct": "have",
-    "explanation": "<Unless> significa <si no>. Se usa con el presente simple."
+    "explanation": "<Unless> significa <si no>. Se usa con el presente simple.",
+    "tip": "'Unless' means 'if not' — the verb stays affirmative."
   },
   {
     "sentence": "If he ______ the truth, she would have forgiven him.",
@@ -360,7 +392,8 @@
       "would tell"
     ],
     "correct": "had told",
-    "explanation": "Tercer condicional para una situación hipotética en el pasado."
+    "explanation": "Tercer condicional para una situación hipotética en el pasado.",
+    "tip": "Identify the conditional type (0, 1, 2, 3, or mixed) to choose the right tense."
   },
   {
     "sentence": "What would you have done if you ______ in that situation?",
@@ -371,7 +404,8 @@
       "would be"
     ],
     "correct": "had been",
-    "explanation": "Tercer condicional para una situación hipotética en el pasado."
+    "explanation": "Tercer condicional para una situación hipotética en el pasado.",
+    "tip": "Identify the conditional type (0, 1, 2, 3, or mixed) to choose the right tense."
   },
   {
     "sentence": "If you ______ the button, the machine starts.",
@@ -382,7 +416,8 @@
       "would press"
     ],
     "correct": "press",
-    "explanation": "Condicional cero para una verdad general."
+    "explanation": "Condicional cero para una verdad general.",
+    "tip": "Identify the conditional type (0, 1, 2, 3, or mixed) to choose the right tense."
   },
   {
     "sentence": "Should you ______ any problems, contact us immediately.",
@@ -393,7 +428,8 @@
       "are encountering"
     ],
     "correct": "encounter",
-    "explanation": "Forma invertida y más formal del primer condicional."
+    "explanation": "Forma invertida y más formal del primer condicional.",
+    "tip": "Identify the conditional type (0, 1, 2, 3, or mixed) to choose the right tense."
   },
   {
     "sentence": "If I ______ rich, I would buy a mansion.",
@@ -404,7 +440,8 @@
       "be"
     ],
     "correct": "were",
-    "explanation": "Segundo condicional para una situación hipotética irreal."
+    "explanation": "Segundo condicional para una situación hipotética irreal.",
+    "tip": "In hypothetical situations, use 'were' for all subjects."
   },
   {
     "sentence": "They ______ if they had known about the party.",
@@ -415,7 +452,8 @@
       "would have come"
     ],
     "correct": "would have come",
-    "explanation": "Tercer condicional para una situación hipotética en el pasado."
+    "explanation": "Tercer condicional para una situación hipotética en el pasado.",
+    "tip": "Think about an unreal past result — third conditional structure."
   },
   {
     "sentence": "As long as you ______ your best, that's all that matters.",
@@ -426,7 +464,8 @@
       "are doing"
     ],
     "correct": "do",
-    "explanation": "<As long as> se usa con el presente simple para establecer una condición."
+    "explanation": "<As long as> se usa con el presente simple para establecer una condición.",
+    "tip": "This conditional connector works like 'if' but with a condition emphasis."
   },
   {
     "sentence": "If I ______ a bird, I would fly.",
@@ -437,6 +476,7 @@
       "be"
     ],
     "correct": "were",
-    "explanation": "Segundo condicional para una situación hipotética irreal."
+    "explanation": "Segundo condicional para una situación hipotética irreal.",
+    "tip": "In hypothetical situations, use 'were' for all subjects."
   }
 ]

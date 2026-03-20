@@ -8,7 +8,8 @@
       "did I see"
     ],
     "correct": "have I seen",
-    "explanation": "Cuando una frase comienza con una expresión negativa como <Never before>, se invierte el sujeto y el verbo auxiliar."
+    "explanation": "Cuando una frase comienza con una expresión negativa como <Never before>, se invierte el sujeto y el verbo auxiliar.",
+    "tip": "Negative adverbs at the start trigger subject-auxiliary inversion."
   },
   {
     "sentence": "Hardly ever ______ so much talent in one place.",
@@ -19,7 +20,8 @@
       "did I see"
     ],
     "correct": "have I seen",
-    "explanation": "Con <Hardly ever> al inicio, se invierte el sujeto y el verbo auxiliar."
+    "explanation": "Con <Hardly ever> al inicio, se invierte el sujeto y el verbo auxiliar.",
+    "tip": "These time expressions trigger inversion — think about the auxiliary verb."
   },
   {
     "sentence": "Scarcely had ______ when the phone rang.",
@@ -30,7 +32,8 @@
       "did I arrive"
     ],
     "correct": "I arrived",
-    "explanation": "Con <Scarcely had> al inicio, se usa la inversión del sujeto y el verbo auxiliar."
+    "explanation": "Con <Scarcely had> al inicio, se usa la inversión del sujeto y el verbo auxiliar.",
+    "tip": "These time expressions trigger inversion — think about the auxiliary verb."
   },
   {
     "sentence": "No sooner had ______ than it started to rain.",
@@ -41,7 +44,8 @@
       "did he leave"
     ],
     "correct": "he left",
-    "explanation": "Con <No sooner had> al inicio, se usa la inversión del sujeto y el verbo auxiliar."
+    "explanation": "Con <No sooner had> al inicio, se usa la inversión del sujeto y el verbo auxiliar.",
+    "tip": "These time expressions trigger inversion — think about the auxiliary verb."
   },
   {
     "sentence": "Little ______ about his past.",
@@ -52,7 +56,8 @@
       "he did know"
     ],
     "correct": "did he know",
-    "explanation": "Con <Little> al inicio, se invierte el sujeto y el verbo auxiliar."
+    "explanation": "Con <Little> al inicio, se invierte el sujeto y el verbo auxiliar.",
+    "tip": "'Little' as a negative adverb triggers inversion with 'did'."
   },
   {
     "sentence": "Only after ______ the truth did she apologize.",
@@ -63,7 +68,8 @@
       "she did know"
     ],
     "correct": "she knew",
-    "explanation": "Con <Only after> al inicio, la inversión ocurre en la segunda cláusula."
+    "explanation": "Con <Only after> al inicio, la inversión ocurre en la segunda cláusula.",
+    "tip": "'Only + time expression' at the start triggers inversion in the main clause."
   },
   {
     "sentence": "Not until ______ the sun set did they leave.",
@@ -74,7 +80,8 @@
       "they did see"
     ],
     "correct": "they saw",
-    "explanation": "Con <Not until> al inicio, la inversión ocurre en la segunda cláusula."
+    "explanation": "Con <Not until> al inicio, la inversión ocurre en la segunda cláusula.",
+    "tip": "Formal inversion: the auxiliary comes before the subject for emphasis."
   },
   {
     "sentence": "Rarely ______ such a stunning performance.",
@@ -85,7 +92,8 @@
       "did I witness"
     ],
     "correct": "have I witnessed",
-    "explanation": "Con <Rarely> al inicio, se invierte el sujeto y el verbo auxiliar."
+    "explanation": "Con <Rarely> al inicio, se invierte el sujeto y el verbo auxiliar.",
+    "tip": "Negative adverbs at the start trigger subject-auxiliary inversion."
   },
   {
     "sentence": "Seldom ______ a more captivating story.",
@@ -96,7 +104,8 @@
       "did I hear"
     ],
     "correct": "have I heard",
-    "explanation": "Con <Seldom> al inicio, se invierte el sujeto y el verbo auxiliar."
+    "explanation": "Con <Seldom> al inicio, se invierte el sujeto y el verbo auxiliar.",
+    "tip": "Negative adverbs at the start trigger subject-auxiliary inversion."
   },
   {
     "sentence": "Under no circumstances ______ you reveal this information.",
@@ -107,7 +116,8 @@
       "do"
     ],
     "correct": "should",
-    "explanation": "Con <Under no circumstances> al inicio, se invierte el sujeto y el verbo auxiliar."
+    "explanation": "Con <Under no circumstances> al inicio, se invierte el sujeto y el verbo auxiliar.",
+    "tip": "Negative prepositional phrases at the start trigger inversion."
   },
   {
     "sentence": "On no account ______ you open that package.",
@@ -118,7 +128,8 @@
       "can"
     ],
     "correct": "must",
-    "explanation": "Con <On no account> al inicio, se invierte el sujeto y el verbo auxiliar."
+    "explanation": "Con <On no account> al inicio, se invierte el sujeto y el verbo auxiliar.",
+    "tip": "Negative prepositional phrases at the start trigger inversion."
   },
   {
     "sentence": "In no way ______ I agree with his proposal.",
@@ -129,7 +140,8 @@
       "can"
     ],
     "correct": "do",
-    "explanation": "Con <In no way> al inicio, se invierte el sujeto y el verbo auxiliar."
+    "explanation": "Con <In no way> al inicio, se invierte el sujeto y el verbo auxiliar.",
+    "tip": "Negative prepositional phrases at the start trigger inversion."
   },
   {
     "sentence": "At no time ______ he admit his mistake.",
@@ -140,7 +152,8 @@
       "can"
     ],
     "correct": "did",
-    "explanation": "Con <At no time> al inicio, se invierte el sujeto y el verbo auxiliar."
+    "explanation": "Con <At no time> al inicio, se invierte el sujeto y el verbo auxiliar.",
+    "tip": "Inversion requires an auxiliary verb before the subject."
   },
   {
     "sentence": "So successful ______ the project that they expanded it.",
@@ -151,7 +164,8 @@
       "had been"
     ],
     "correct": "was",
-    "explanation": "Con 'So + adjective/adverb' al inicio, se invierte el sujeto y el verbo."
+    "explanation": "Con 'So + adjective/adverb' al inicio, se invierte el sujeto y el verbo.",
+    "tip": "'So/Such' at the start for emphasis triggers inverted order."
   },
   {
     "sentence": "Such ______ the impact that it changed everything.",
@@ -162,7 +176,8 @@
       "had been"
     ],
     "correct": "was",
-    "explanation": "Con <Such> al inicio, se invierte el sujeto y el verbo."
+    "explanation": "Con <Such> al inicio, se invierte el sujeto y el verbo.",
+    "tip": "'So/Such' at the start for emphasis triggers inverted order."
   },
   {
     "sentence": "Not a single word ______ she say.",
@@ -173,7 +188,8 @@
       "can"
     ],
     "correct": "did",
-    "explanation": "Con <Not a single word> al inicio, se invierte el sujeto y el verbo auxiliar."
+    "explanation": "Con <Not a single word> al inicio, se invierte el sujeto y el verbo auxiliar.",
+    "tip": "Inversion requires an auxiliary verb before the subject."
   },
   {
     "sentence": "Never in my life ______ such a beautiful sight.",
@@ -184,7 +200,8 @@
       "did I see"
     ],
     "correct": "have I seen",
-    "explanation": "Con <Never in my life> al inicio, se invierte el sujeto y el verbo auxiliar."
+    "explanation": "Con <Never in my life> al inicio, se invierte el sujeto y el verbo auxiliar.",
+    "tip": "Negative adverbs at the start trigger subject-auxiliary inversion."
   },
   {
     "sentence": "Only then ______ the truth come out.",
@@ -195,7 +212,8 @@
       "can"
     ],
     "correct": "did",
-    "explanation": "Con <Only then> al inicio, se invierte el sujeto y el verbo auxiliar."
+    "explanation": "Con <Only then> al inicio, se invierte el sujeto y el verbo auxiliar.",
+    "tip": "'Only + time expression' at the start triggers inversion in the main clause."
   },
   {
     "sentence": "Had I known, ______ I would have helped.",
@@ -206,7 +224,8 @@
       "did I help"
     ],
     "correct": "I would have helped",
-    "explanation": "En oraciones condicionales sin <if>, se invierte el sujeto y el verbo auxiliar."
+    "explanation": "En oraciones condicionales sin <if>, se invierte el sujeto y el verbo auxiliar.",
+    "tip": "Formal inversion: the auxiliary comes before the subject for emphasis."
   },
   {
     "sentence": "Should you need anything, ______ me know.",
@@ -217,7 +236,8 @@
       "you do let"
     ],
     "correct": "let",
-    "explanation": "En oraciones condicionales sin <if>, se invierte el sujeto y el verbo auxiliar."
+    "explanation": "En oraciones condicionales sin <if>, se invierte el sujeto y el verbo auxiliar.",
+    "tip": "Formal inversion: the auxiliary comes before the subject for emphasis."
   },
   {
     "sentence": "Not only ______ talented, but he is also very humble.",
@@ -228,7 +248,8 @@
       "was he"
     ],
     "correct": "is he",
-    "explanation": "Con <Not only> al inicio, se invierte el sujeto y el verbo auxiliar."
+    "explanation": "Con <Not only> al inicio, se invierte el sujeto y el verbo auxiliar.",
+    "tip": "After 'Not only' at the start, use inverted word order (auxiliary + subject)."
   },
   {
     "sentence": "So beautiful ______ the scenery that I couldn't stop taking pictures.",
@@ -239,7 +260,8 @@
       "had been"
     ],
     "correct": "was",
-    "explanation": "Con 'So + adjective/adverb' al inicio, se invierte el sujeto y el verbo."
+    "explanation": "Con 'So + adjective/adverb' al inicio, se invierte el sujeto y el verbo.",
+    "tip": "'So/Such' at the start for emphasis triggers inverted order."
   },
   {
     "sentence": "Under no circumstances ______ you leave the building.",
@@ -250,7 +272,8 @@
       "do"
     ],
     "correct": "should",
-    "explanation": "Con <Under no circumstances> al inicio, se invierte el sujeto y el verbo auxiliar."
+    "explanation": "Con <Under no circumstances> al inicio, se invierte el sujeto y el verbo auxiliar.",
+    "tip": "Negative prepositional phrases at the start trigger inversion."
   },
   {
     "sentence": "Rarely ______ such a complex problem.",
@@ -261,7 +284,8 @@
       "did I encounter"
     ],
     "correct": "have I encountered",
-    "explanation": "Con <Rarely> al inicio, se invierte el sujeto y el verbo auxiliar."
+    "explanation": "Con <Rarely> al inicio, se invierte el sujeto y el verbo auxiliar.",
+    "tip": "Negative adverbs at the start trigger subject-auxiliary inversion."
   },
   {
     "sentence": "Little ______ about the consequences of his actions.",
@@ -272,7 +296,8 @@
       "he did think"
     ],
     "correct": "did he think",
-    "explanation": "Con <Little> al inicio, se invierte el sujeto y el verbo auxiliar."
+    "explanation": "Con <Little> al inicio, se invierte el sujeto y el verbo auxiliar.",
+    "tip": "'Little' as a negative adverb triggers inversion with 'did'."
   },
   {
     "sentence": "No sooner had ______ than the alarm went off.",
@@ -283,7 +308,8 @@
       "did they arrive"
     ],
     "correct": "they arrived",
-    "explanation": "Con <No sooner had> al inicio, se usa la inversión del sujeto y el verbo auxiliar."
+    "explanation": "Con <No sooner had> al inicio, se usa la inversión del sujeto y el verbo auxiliar.",
+    "tip": "These time expressions trigger inversion — think about the auxiliary verb."
   },
   {
     "sentence": "Hardly had ______ when the phone rang.",
@@ -294,7 +320,8 @@
       "did I finish"
     ],
     "correct": "I finished",
-    "explanation": "Con <Hardly had> al inicio, se usa la inversión del sujeto y el verbo auxiliar."
+    "explanation": "Con <Hardly had> al inicio, se usa la inversión del sujeto y el verbo auxiliar.",
+    "tip": "These time expressions trigger inversion — think about the auxiliary verb."
   },
   {
     "sentence": "Only when ______ the truth did she understand.",
@@ -305,7 +332,8 @@
       "she did hear"
     ],
     "correct": "she heard",
-    "explanation": "Con <Only when> al inicio, la inversión ocurre en la segunda cláusula."
+    "explanation": "Con <Only when> al inicio, la inversión ocurre en la segunda cláusula.",
+    "tip": "'Only + time expression' at the start triggers inversion in the main clause."
   },
   {
     "sentence": "Never again ______ I make the same mistake.",
@@ -316,7 +344,8 @@
       "should"
     ],
     "correct": "will",
-    "explanation": "Con <Never again> al inicio, se invierte el sujeto y el verbo auxiliar."
+    "explanation": "Con <Never again> al inicio, se invierte el sujeto y el verbo auxiliar.",
+    "tip": "Negative adverbs at the start trigger subject-auxiliary inversion."
   },
   {
     "sentence": "On no account ______ you open that door.",
@@ -327,7 +356,8 @@
       "can"
     ],
     "correct": "should",
-    "explanation": "Con <On no account> al inicio, se invierte el sujeto y el verbo auxiliar."
+    "explanation": "Con <On no account> al inicio, se invierte el sujeto y el verbo auxiliar.",
+    "tip": "Negative prepositional phrases at the start trigger inversion."
   },
   {
     "sentence": "In no way ______ I agree with his decision.",
@@ -338,7 +368,8 @@
       "can"
     ],
     "correct": "do",
-    "explanation": "Con <In no way> al inicio, se invierte el sujeto y el verbo auxiliar."
+    "explanation": "Con <In no way> al inicio, se invierte el sujeto y el verbo auxiliar.",
+    "tip": "Negative prepositional phrases at the start trigger inversion."
   },
   {
     "sentence": "At no time ______ he apologize for his behavior.",
@@ -349,7 +380,8 @@
       "can"
     ],
     "correct": "did",
-    "explanation": "Con <At no time> al inicio, se invierte el sujeto y el verbo auxiliar."
+    "explanation": "Con <At no time> al inicio, se invierte el sujeto y el verbo auxiliar.",
+    "tip": "Inversion requires an auxiliary verb before the subject."
   },
   {
     "sentence": "So quickly ______ he run that no one could catch him.",
@@ -360,7 +392,8 @@
       "can"
     ],
     "correct": "did",
-    "explanation": "Con 'So + adjective/adverb' al inicio, se invierte el sujeto y el verbo."
+    "explanation": "Con 'So + adjective/adverb' al inicio, se invierte el sujeto y el verbo.",
+    "tip": "'So/Such' at the start for emphasis triggers inverted order."
   },
   {
     "sentence": "Such ______ the demand that they had to increase production.",
@@ -371,7 +404,8 @@
       "had been"
     ],
     "correct": "was",
-    "explanation": "Con <Such> al inicio, se invierte el sujeto y el verbo."
+    "explanation": "Con <Such> al inicio, se invierte el sujeto y el verbo.",
+    "tip": "'So/Such' at the start for emphasis triggers inverted order."
   },
   {
     "sentence": "Not a sound ______ from the abandoned house.",
@@ -382,7 +416,8 @@
       "will come"
     ],
     "correct": "came",
-    "explanation": "Con <Not a sound> al inicio, se invierte el sujeto y el verbo."
+    "explanation": "Con <Not a sound> al inicio, se invierte el sujeto y el verbo.",
+    "tip": "Formal inversion: the auxiliary comes before the subject for emphasis."
   },
   {
     "sentence": "Never in my wildest dreams ______ I have imagined this.",
@@ -393,7 +428,8 @@
       "do"
     ],
     "correct": "could",
-    "explanation": "Con <Never in my wildest dreams> al inicio, se invierte el sujeto y el verbo auxiliar."
+    "explanation": "Con <Never in my wildest dreams> al inicio, se invierte el sujeto y el verbo auxiliar.",
+    "tip": "Negative adverbs at the start trigger subject-auxiliary inversion."
   },
   {
     "sentence": "Only then ______ the true extent of the damage become clear.",
@@ -404,7 +440,8 @@
       "can"
     ],
     "correct": "did",
-    "explanation": "Con <Only then> al inicio, se invierte el sujeto y el verbo auxiliar."
+    "explanation": "Con <Only then> al inicio, se invierte el sujeto y el verbo auxiliar.",
+    "tip": "'Only + time expression' at the start triggers inversion in the main clause."
   },
   {
     "sentence": "Were I to ______ again, I would choose a different path.",
@@ -415,7 +452,8 @@
       "to live"
     ],
     "correct": "live",
-    "explanation": "Inversión del segundo condicional sin <if>."
+    "explanation": "Inversión del segundo condicional sin <if>.",
+    "tip": "Formal inversion: the auxiliary comes before the subject for emphasis."
   },
   {
     "sentence": "Only in this way ______ solve the problem.",
@@ -426,7 +464,8 @@
       "do we"
     ],
     "correct": "can we",
-    "explanation": "Cuando una frase comienza con <Only in this way>, se invierte el sujeto y el verbo auxiliar (<can we> en lugar de <we can>)."
+    "explanation": "Cuando una frase comienza con <Only in this way>, se invierte el sujeto y el verbo auxiliar (<can we> en lugar de <we can>).",
+    "tip": "'Only + time expression' at the start triggers inversion in the main clause."
   },
   {
     "sentence": "Had I ______ his advice, I would have succeeded.",
@@ -437,6 +476,7 @@
       "to follow"
     ],
     "correct": "followed",
-    "explanation": "Inversión del tercer condicional sin <if>."
+    "explanation": "Inversión del tercer condicional sin <if>.",
+    "tip": "Formal inversion: the auxiliary comes before the subject for emphasis."
   }
 ]

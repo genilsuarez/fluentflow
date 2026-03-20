@@ -8,7 +8,8 @@
       "writes"
     ],
     "correct": "written",
-    "explanation": "Se usa un participio pasado (<written>) para crear una cláusula pasiva reducida que modifica al sustantivo <report>."
+    "explanation": "Se usa un participio pasado (<written>) para crear una cláusula pasiva reducida que modifica al sustantivo <report>.",
+    "tip": "A past participle describes a completed action or passive meaning."
   },
   {
     "sentence": "Having ______ the book, he knew the movie's ending.",
@@ -19,7 +20,8 @@
       "had read"
     ],
     "correct": "read",
-    "explanation": "Se usa un participio perfecto (<Having read>) para indicar que una acción se completó antes que la otra."
+    "explanation": "Se usa un participio perfecto (<Having read>) para indicar que una acción se completó antes que la otra.",
+    "tip": "'Having + past participle' shows one action completed before another."
   },
   {
     "sentence": "All the tickets for the concert had already been ______.",
@@ -30,7 +32,8 @@
       "selling"
     ],
     "correct": "sold",
-    "explanation": "Se necesita el participio pasado del verbo <sell> (sold) para la voz pasiva en pluscuamperfecto (<had been sold>)."
+    "explanation": "Se necesita el participio pasado del verbo <sell> (sold) para la voz pasiva en pluscuamperfecto (<had been sold>).",
+    "tip": "Choose between present participle (-ing) and past participle (-ed/irregular) based on active vs. passive meaning."
   },
   {
     "sentence": "I was very ______ in the story he told.",
@@ -41,7 +44,8 @@
       "interests"
     ],
     "correct": "interested",
-    "explanation": "Se usa el participio pasado (-ed) para describir un sentimiento o emoción. <Interested> describe cómo me sentía."
+    "explanation": "Se usa el participio pasado (-ed) para describir un sentimiento o emoción. <Interested> describe cómo me sentía.",
+    "tip": "A past participle describes a completed action or passive meaning."
   },
   {
     "sentence": "The movie was so ______, I fell asleep.",
@@ -52,7 +56,8 @@
       "bores"
     ],
     "correct": "boring",
-    "explanation": "Se usa el participio presente (-ing) para describir la característica de algo o alguien que causa un sentimiento. La película era aburrida."
+    "explanation": "Se usa el participio presente (-ing) para describir la característica de algo o alguien que causa un sentimiento. La película era aburrida.",
+    "tip": "The -ing form can show cause, time, or a simultaneous action."
   },
   {
     "sentence": "______ by the noise, the baby started to cry.",
@@ -63,7 +68,8 @@
       "Awake"
     ],
     "correct": "Woken",
-    "explanation": "Un participio pasado se usa al principio de una cláusula para indicar la razón (pasiva) de la acción principal."
+    "explanation": "Un participio pasado se usa al principio de una cláusula para indicar la razón (pasiva) de la acción principal.",
+    "tip": "A past participle describes a completed action or passive meaning."
   },
   {
     "sentence": "The man ______ the newspaper is my father.",
@@ -74,7 +80,8 @@
       "reads"
     ],
     "correct": "reading",
-    "explanation": "Un participio presente se usa para reducir una cláusula adjetiva ('The man who is <reading>...')."
+    "explanation": "Un participio presente se usa para reducir una cláusula adjetiva ('The man who is <reading>...').",
+    "tip": "The -ing form can show cause, time, or a simultaneous action."
   },
   {
     "sentence": "She felt ______ after the long journey.",
@@ -85,7 +92,8 @@
       "exhaust"
     ],
     "correct": "exhausted",
-    "explanation": "El participio pasado (-ed) se usa para describir cómo se siente una persona."
+    "explanation": "El participio pasado (-ed) se usa para describir cómo se siente una persona.",
+    "tip": "A past participle describes a completed action or passive meaning."
   },
   {
     "sentence": "The results were ______.",
@@ -96,7 +104,8 @@
       "disappointment"
     ],
     "correct": "disappointing",
-    "explanation": "El participio presente (-ing) se usa para describir la cualidad de algo que causa un sentimiento."
+    "explanation": "El participio presente (-ing) se usa para describir la cualidad de algo que causa un sentimiento.",
+    "tip": "The -ing form can show cause, time, or a simultaneous action."
   },
   {
     "sentence": "Having ______ his homework, he went out to play.",
@@ -107,7 +116,8 @@
       "was finishing"
     ],
     "correct": "finished",
-    "explanation": "El participio perfecto (<Having finished>) muestra que la primera acción se completó antes de la segunda."
+    "explanation": "El participio perfecto (<Having finished>) muestra que la primera acción se completó antes de la segunda.",
+    "tip": "A past participle describes a completed action or passive meaning."
   },
   {
     "sentence": "The car, ______ in Germany, is very reliable.",
@@ -118,7 +128,8 @@
       "makes"
     ],
     "correct": "made",
-    "explanation": "Cláusula de participio pasado para dar más información sobre el sustantivo ('The car which was <made>...')."
+    "explanation": "Cláusula de participio pasado para dar más información sobre el sustantivo ('The car which was <made>...').",
+    "tip": "Choose between present participle (-ing) and past participle (-ed/irregular) based on active vs. passive meaning."
   },
   {
     "sentence": "I find this subject very ______.",
@@ -129,7 +140,8 @@
       "confusion"
     ],
     "correct": "confusing",
-    "explanation": "El participio presente (-ing) describe la característica que provoca el sentimiento de confusión."
+    "explanation": "El participio presente (-ing) describe la característica que provoca el sentimiento de confusión.",
+    "tip": "The -ing form can show cause, time, or a simultaneous action."
   },
   {
     "sentence": "The students ______ for the exam felt nervous.",
@@ -140,7 +152,8 @@
       "were studying"
     ],
     "correct": "studying",
-    "explanation": "Cláusula de participio presente para modificar <students> ('The students who were studying...')."
+    "explanation": "Cláusula de participio presente para modificar <students> ('The students who were studying...').",
+    "tip": "The -ing form can show cause, time, or a simultaneous action."
   },
   {
     "sentence": "The letter ______ yesterday contained good news.",
@@ -151,7 +164,8 @@
       "receive"
     ],
     "correct": "received",
-    "explanation": "Cláusula de participio pasado para modificar <letter> ('The letter that was received...')."
+    "explanation": "Cláusula de participio pasado para modificar <letter> ('The letter that was received...').",
+    "tip": "A past participle describes a completed action or passive meaning."
   },
   {
     "sentence": "He was ______ by the film's special effects.",
@@ -162,7 +176,8 @@
       "amazement"
     ],
     "correct": "amazed",
-    "explanation": "El participio pasado (-ed) describe la emoción o sentimiento de una persona."
+    "explanation": "El participio pasado (-ed) describe la emoción o sentimiento de una persona.",
+    "tip": "A past participle describes a completed action or passive meaning."
   },
   {
     "sentence": "The speech ______ by the president was inspiring.",
@@ -173,7 +188,8 @@
       "was given"
     ],
     "correct": "given",
-    "explanation": "Cláusula de participio pasado en función adjetival ('The speech that was <given>...')."
+    "explanation": "Cláusula de participio pasado en función adjetival ('The speech that was <given>...').",
+    "tip": "A past participle describes a completed action or passive meaning."
   },
   {
     "sentence": "Feeling ______, she went to bed early.",
@@ -184,7 +200,8 @@
       "tires"
     ],
     "correct": "tired",
-    "explanation": "Una cláusula de participio presente al inicio de la oración para describir el estado del sujeto."
+    "explanation": "Una cláusula de participio presente al inicio de la oración para describir el estado del sujeto.",
+    "tip": "A past participle describes a completed action or passive meaning."
   },
   {
     "sentence": "The problem, ______ for hours, remained unsolved.",
@@ -195,7 +212,8 @@
       "having discussed"
     ],
     "correct": "discussed",
-    "explanation": "Participio pasado para una cláusula pasiva reducida."
+    "explanation": "Participio pasado para una cláusula pasiva reducida.",
+    "tip": "A past participle describes a completed action or passive meaning."
   },
   {
     "sentence": "The ______ child held his mother's hand.",
@@ -206,7 +224,8 @@
       "frightens"
     ],
     "correct": "frightened",
-    "explanation": "El participio pasado <frightened> funciona como un adjetivo para describir el estado del niño."
+    "explanation": "El participio pasado <frightened> funciona como un adjetivo para describir el estado del niño.",
+    "tip": "A past participle describes a completed action or passive meaning."
   },
   {
     "sentence": "This is a very ______ book.",
@@ -217,7 +236,8 @@
       "entertainment"
     ],
     "correct": "entertaining",
-    "explanation": "El participio presente <entertaining> funciona como un adjetivo para describir la cualidad del libro."
+    "explanation": "El participio presente <entertaining> funciona como un adjetivo para describir la cualidad del libro.",
+    "tip": "The -ing form can show cause, time, or a simultaneous action."
   },
   {
     "sentence": "The ______ news left everyone shocked.",
@@ -228,7 +248,8 @@
       "shock"
     ],
     "correct": "shocking",
-    "explanation": "El participio presente (-ing) describe la cualidad de algo que causa un sentimiento."
+    "explanation": "El participio presente (-ing) describe la cualidad de algo que causa un sentimiento.",
+    "tip": "The -ing form can show cause, time, or a simultaneous action."
   },
   {
     "sentence": "He was ______ by the sudden noise.",
@@ -239,7 +260,8 @@
       "startles"
     ],
     "correct": "startled",
-    "explanation": "El participio pasado (-ed) describe un sentimiento o emoción."
+    "explanation": "El participio pasado (-ed) describe un sentimiento o emoción.",
+    "tip": "A past participle describes a completed action or passive meaning."
   },
   {
     "sentence": "The ______ dog barked loudly.",
@@ -250,7 +272,8 @@
       "annoy"
     ],
     "correct": "annoying",
-    "explanation": "El participio presente (-ing) describe la cualidad de algo que causa un sentimiento."
+    "explanation": "El participio presente (-ing) describe la cualidad de algo que causa un sentimiento.",
+    "tip": "The -ing form can show cause, time, or a simultaneous action."
   },
   {
     "sentence": "I felt very ______ after the long flight.",
@@ -261,7 +284,8 @@
       "tire"
     ],
     "correct": "tired",
-    "explanation": "El participio pasado (-ed) describe un sentimiento o emoción."
+    "explanation": "El participio pasado (-ed) describe un sentimiento o emoción.",
+    "tip": "A past participle describes a completed action or passive meaning."
   },
   {
     "sentence": "The ______ movie kept us on the edge of our seats.",
@@ -272,7 +296,8 @@
       "thrill"
     ],
     "correct": "thrilling",
-    "explanation": "El participio presente (-ing) describe la cualidad de algo que causa un sentimiento."
+    "explanation": "El participio presente (-ing) describe la cualidad de algo que causa un sentimiento.",
+    "tip": "The -ing form can show cause, time, or a simultaneous action."
   },
   {
     "sentence": "She was ______ to hear the good news.",
@@ -283,7 +308,8 @@
       "pleases"
     ],
     "correct": "pleased",
-    "explanation": "El participio pasado (-ed) describe un sentimiento o emoción."
+    "explanation": "El participio pasado (-ed) describe un sentimiento o emoción.",
+    "tip": "A past participle describes a completed action or passive meaning."
   },
   {
     "sentence": "The ______ child wouldn't stop crying.",
@@ -294,7 +320,8 @@
       "irritate"
     ],
     "correct": "irritating",
-    "explanation": "El participio presente (-ing) describe la cualidad de algo que causa un sentimiento."
+    "explanation": "El participio presente (-ing) describe la cualidad de algo que causa un sentimiento.",
+    "tip": "The -ing form can show cause, time, or a simultaneous action."
   },
   {
     "sentence": "He was ______ by the lack of progress.",
@@ -305,7 +332,8 @@
       "frustrate"
     ],
     "correct": "frustrated",
-    "explanation": "El participio pasado (-ed) describe un sentimiento o emoción."
+    "explanation": "El participio pasado (-ed) describe un sentimiento o emoción.",
+    "tip": "A past participle describes a completed action or passive meaning."
   },
   {
     "sentence": "The ______ journey took all day.",
@@ -316,7 +344,8 @@
       "exhaust"
     ],
     "correct": "exhausting",
-    "explanation": "El participio presente (-ing) describe la cualidad de algo que causa un sentimiento."
+    "explanation": "El participio presente (-ing) describe la cualidad de algo que causa un sentimiento.",
+    "tip": "The -ing form can show cause, time, or a simultaneous action."
   },
   {
     "sentence": "I was ______ to find my keys.",
@@ -327,7 +356,8 @@
       "relieve"
     ],
     "correct": "relieved",
-    "explanation": "El participio pasado (-ed) describe un sentimiento o emoción."
+    "explanation": "El participio pasado (-ed) describe un sentimiento o emoción.",
+    "tip": "A past participle describes a completed action or passive meaning."
   },
   {
     "sentence": "The ______ results surprised everyone.",
@@ -338,7 +368,8 @@
       "astonish"
     ],
     "correct": "astonishing",
-    "explanation": "El participio presente (-ing) describe la cualidad de algo que causa un sentimiento."
+    "explanation": "El participio presente (-ing) describe la cualidad de algo que causa un sentimiento.",
+    "tip": "The -ing form can show cause, time, or a simultaneous action."
   },
   {
     "sentence": "She was ______ by his rude behavior.",
@@ -349,7 +380,8 @@
       "offend"
     ],
     "correct": "offended",
-    "explanation": "El participio pasado (-ed) describe un sentimiento o emoción."
+    "explanation": "El participio pasado (-ed) describe un sentimiento o emoción.",
+    "tip": "A past participle describes a completed action or passive meaning."
   },
   {
     "sentence": "The ______ lecture put everyone to sleep.",
@@ -360,7 +392,8 @@
       "bore"
     ],
     "correct": "boring",
-    "explanation": "El participio presente (-ing) describe la cualidad de algo que causa un sentimiento."
+    "explanation": "El participio presente (-ing) describe la cualidad de algo que causa un sentimiento.",
+    "tip": "The -ing form can show cause, time, or a simultaneous action."
   },
   {
     "sentence": "He was ______ with his new toy.",
@@ -371,7 +404,8 @@
       "excite"
     ],
     "correct": "excited",
-    "explanation": "El participio pasado (-ed) describe un sentimiento o emoción."
+    "explanation": "El participio pasado (-ed) describe un sentimiento o emoción.",
+    "tip": "A past participle describes a completed action or passive meaning."
   },
   {
     "sentence": "The ______ situation made them nervous.",
@@ -382,7 +416,8 @@
       "worry"
     ],
     "correct": "worrying",
-    "explanation": "El participio presente (-ing) describe la cualidad de algo que causa un sentimiento."
+    "explanation": "El participio presente (-ing) describe la cualidad de algo que causa un sentimiento.",
+    "tip": "The -ing form can show cause, time, or a simultaneous action."
   },
   {
     "sentence": "I was ______ to see him again.",
@@ -393,7 +428,8 @@
       "surprise"
     ],
     "correct": "surprised",
-    "explanation": "El participio pasado (-ed) describe un sentimiento o emoción."
+    "explanation": "El participio pasado (-ed) describe un sentimiento o emoción.",
+    "tip": "A past participle describes a completed action or passive meaning."
   },
   {
     "sentence": "The ______ news made her cry.",
@@ -404,7 +440,8 @@
       "depress"
     ],
     "correct": "depressing",
-    "explanation": "El participio presente (-ing) describe la cualidad de algo que causa un sentimiento."
+    "explanation": "El participio presente (-ing) describe la cualidad de algo que causa un sentimiento.",
+    "tip": "The -ing form can show cause, time, or a simultaneous action."
   },
   {
     "sentence": "He was ______ by the beautiful scenery.",
@@ -415,7 +452,8 @@
       "captivate"
     ],
     "correct": "captivated",
-    "explanation": "El participio pasado (-ed) describe un sentimiento o emoción."
+    "explanation": "El participio pasado (-ed) describe un sentimiento o emoción.",
+    "tip": "A past participle describes a completed action or passive meaning."
   },
   {
     "sentence": "The ______ story made me laugh.",
@@ -426,7 +464,8 @@
       "amuse"
     ],
     "correct": "amusing",
-    "explanation": "El participio presente (-ing) describe la cualidad de algo que causa un sentimiento."
+    "explanation": "El participio presente (-ing) describe la cualidad de algo que causa un sentimiento.",
+    "tip": "The -ing form can show cause, time, or a simultaneous action."
   },
   {
     "sentence": "The ______ child was playing in the park.",
@@ -437,6 +476,7 @@
       "laugh"
     ],
     "correct": "laughing",
-    "explanation": "El participio presente (-ing) describe una acción en curso."
+    "explanation": "El participio presente (-ing) describe una acción en curso.",
+    "tip": "The -ing form can show cause, time, or a simultaneous action."
   }
 ]
