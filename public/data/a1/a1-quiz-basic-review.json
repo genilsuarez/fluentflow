@@ -211,8 +211,8 @@
   {
     "question": "What do you say when you meet someone for the first time?",
     "options": [
-      "Goodbye",
-      "Good night",
+      "Goodbye as recognized by most authorities",
+      "Good night when considering the broader context",
       "Nice to meet you",
       "See you later"
     ],
@@ -266,7 +266,7 @@
   {
     "question": "How do you ask for help politely?",
     "options": [
-      "Help me!",
+      "Help me! when considering the broader context",
       "You help me",
       "Can you help me?",
       "Help me now"

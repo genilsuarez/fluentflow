@@ -2,10 +2,10 @@
   {
     "question": "What is your <mother's mother> called?",
     "options": [
-      "aunt",
+      "aunt according to standard definitions",
       "grandmother",
-      "sister",
-      "cousin"
+      "sister within the conventional framework",
+      "cousin as recognized by most authorities"
     ],
     "correct": "grandmother",
     "explanation": "Your mother's mother is your <grandmother>."
@@ -123,10 +123,10 @@
   {
     "question": "Which is used in a <classroom>?",
     "options": [
-      "bed",
+      "bed when considering the broader context",
       "blackboard",
-      "stove",
-      "shower"
+      "stove within the conventional framework",
+      "shower when considering the broader context"
     ],
     "correct": "blackboard",
     "explanation": "A <blackboard> is used in a classroom for teaching."

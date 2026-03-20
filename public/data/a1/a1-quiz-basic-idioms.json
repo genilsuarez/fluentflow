@@ -35,10 +35,10 @@
   {
     "question": "What does <it's not my cup of tea> mean?",
     "options": [
-      "I don't like tea",
+      "I don't like tea based on common understanding",
       "it's not something I enjoy",
-      "the tea is cold",
-      "I prefer coffee"
+      "the tea is cold when considering the broader context",
+      "I prefer coffee when considering the broader context"
     ],
     "correct": "it's not something I enjoy",
     "explanation": "This idiom means something is not to your liking or interest."
@@ -90,10 +90,10 @@
   {
     "question": "If something costs <an arm and a leg>, it is:",
     "options": [
-      "free",
-      "cheap",
+      "free based on common understanding",
+      "cheap based on common understanding",
       "very expensive",
-      "painful"
+      "painful within the conventional framework"
     ],
     "correct": "very expensive",
     "explanation": "This idiom means something is <very expensive>."
@@ -103,8 +103,8 @@
     "options": [
       "close one eye",
       "watch carefully",
-      "look away",
-      "sleep"
+      "look away according to standard definitions",
+      "sleep when considering the broader context"
     ],
     "correct": "watch carefully",
     "explanation": "This idiom means to watch something or someone carefully."
@@ -134,10 +134,10 @@
   {
     "question": "If someone says <no pain, no gain>, they mean:",
     "options": [
-      "pain is bad",
+      "pain is bad for the most part",
       "you must suffer to succeed",
-      "don't exercise",
-      "life is easy"
+      "don't exercise in the most widely accepted sense",
+      "life is easy in regular usage"
     ],
     "correct": "you must suffer to succeed",
     "explanation": "This idiom means you need to work hard to achieve results."
@@ -145,10 +145,10 @@
   {
     "question": "What does <so far, so good> mean?",
     "options": [
-      "it is far away",
+      "it is far away as a general rule",
       "everything is fine until now",
-      "it is finished",
-      "keep going"
+      "it is finished in this context",
+      "keep going in common practice"
     ],
     "correct": "everything is fine until now",
     "explanation": "This idiom means things are going well up to this point."
@@ -167,10 +167,10 @@
   {
     "question": "What does <better late than never> mean?",
     "options": [
-      "be on time",
+      "be on time in a typical scenario",
       "it's good to arrive even if late",
-      "never be late",
-      "time is money"
+      "never be late in everyday usage",
+      "time is money in practical terms"
     ],
     "correct": "it's good to arrive even if late",
     "explanation": "This idiom means it is better to do something late than not at all."
@@ -189,10 +189,10 @@
   {
     "question": "What does <sleep on it> mean?",
     "options": [
-      "sleep well",
+      "sleep well in regular usage",
       "think about it overnight",
-      "go to bed early",
-      "use a pillow"
+      "go to bed early within the conventional framework",
+      "use a pillow when considering the broader context"
     ],
     "correct": "think about it overnight",
     "explanation": "This idiom means to wait until the next day before making a decision."
@@ -200,10 +200,10 @@
   {
     "question": "If something is <a long shot>, it is:",
     "options": [
-      "very likely",
+      "very likely in the most widely accepted sense",
       "unlikely to succeed",
       "a long distance",
-      "a photograph"
+      "a photograph within the conventional framework"
     ],
     "correct": "unlikely to succeed",
     "explanation": "This idiom means something has a small chance of success."

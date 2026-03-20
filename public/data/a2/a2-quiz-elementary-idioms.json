@@ -2,10 +2,10 @@
   {
     "question": "What does <the early bird catches the worm> mean?",
     "options": [
-      "birds eat worms",
+      "birds eat worms when considering the broader context",
       "wake up early to succeed",
-      "worms are fast",
-      "birds are smart"
+      "worms are fast when considering the broader context",
+      "birds are smart when considering the broader context"
     ],
     "correct": "wake up early to succeed",
     "explanation": "This idiom means people who start early have an advantage."
@@ -13,10 +13,10 @@
   {
     "question": "If you <kill two birds with one stone>, you:",
     "options": [
-      "hurt animals",
+      "hurt animals according to standard definitions",
       "do two things at once",
-      "throw stones",
-      "go hunting"
+      "throw stones in the most widely accepted sense",
+      "go hunting as recognized by most authorities"
     ],
     "correct": "do two things at once",
     "explanation": "This idiom means to accomplish two things with a single action."
@@ -24,10 +24,10 @@
   {
     "question": "What does <actions speak louder than words> mean?",
     "options": [
-      "be quiet",
+      "be quiet under normal circumstances",
       "what you do matters more than what you say",
-      "speak loudly",
-      "don't talk"
+      "speak loudly in standard terms as a general rule",
+      "don't talk as typically understood"
     ],
     "correct": "what you do matters more than what you say",
     "explanation": "This idiom means behavior is more important than promises."
@@ -46,10 +46,10 @@
   {
     "question": "What does <bite off more than you can chew> mean?",
     "options": [
-      "eat too much",
+      "eat too much by common definition",
       "take on too much responsibility",
-      "have big teeth",
-      "chew slowly"
+      "have big teeth in regular usage",
+      "chew slowly in common practice"
     ],
     "correct": "take on too much responsibility",
     "explanation": "This idiom means to attempt more than you can handle."
@@ -57,10 +57,10 @@
   {
     "question": "If you <go the extra mile>, you:",
     "options": [
-      "walk far",
+      "walk far in this context",
       "do more than expected",
-      "run a race",
-      "travel by car"
+      "run a race within the conventional framework",
+      "travel by car when considering the broader context"
     ],
     "correct": "do more than expected",
     "explanation": "This idiom means to make a special effort beyond what is required."
@@ -68,10 +68,10 @@
   {
     "question": "What does <every cloud has a silver lining> mean?",
     "options": [
-      "clouds are silver",
+      "clouds are silver in ordinary cases",
       "bad situations have something positive",
-      "it will rain",
-      "look at the sky"
+      "it will rain in everyday usage",
+      "look at the sky as a general rule"
     ],
     "correct": "bad situations have something positive",
     "explanation": "This idiom means there is something good in every bad situation."
@@ -90,10 +90,10 @@
   {
     "question": "What does <practice makes perfect> mean?",
     "options": [
-      "perfection is easy",
+      "perfection is easy as a general rule",
       "doing something many times improves your skill",
-      "practice is boring",
-      "be perfect always"
+      "practice is boring under normal circumstances",
+      "be perfect always in everyday usage"
     ],
     "correct": "doing something many times improves your skill",
     "explanation": "This idiom means regular practice leads to improvement."
@@ -101,10 +101,10 @@
   {
     "question": "If something is <the tip of the iceberg>, it is:",
     "options": [
-      "very cold",
+      "very cold in everyday usage",
       "only a small part of a bigger problem",
-      "on top of ice",
-      "easy to see"
+      "on top of ice for the most part",
+      "easy to see in ordinary cases"
     ],
     "correct": "only a small part of a bigger problem",
     "explanation": "This idiom means what you see is only a small part of a much larger issue."
@@ -114,8 +114,8 @@
     "options": [
       "books are important",
       "don't judge by appearance",
-      "read more books",
-      "covers are nice"
+      "read more books within the conventional framework",
+      "covers are nice when considering the broader context"
     ],
     "correct": "don't judge by appearance",
     "explanation": "This idiom means you shouldn't form opinions based only on how things look."
@@ -123,10 +123,10 @@
   {
     "question": "If you <burn the midnight oil>, you:",
     "options": [
-      "start a fire",
+      "start a fire in standard terms",
       "work or study late at night",
-      "waste oil",
-      "cook at midnight"
+      "waste oil in everyday usage",
+      "cook at midnight when considering the broader context"
     ],
     "correct": "work or study late at night",
     "explanation": "This idiom means to work or study until very late."
@@ -134,10 +134,10 @@
   {
     "question": "What does <a blessing in disguise> mean?",
     "options": [
-      "a hidden costume",
+      "a hidden costume in this context",
       "something bad that turns out good",
-      "a religious event",
-      "a surprise gift"
+      "a religious event in common practice",
+      "a surprise gift in regular usage"
     ],
     "correct": "something bad that turns out good",
     "explanation": "This idiom means something that seems bad at first but results in something good."
@@ -145,10 +145,10 @@
   {
     "question": "If you <get out of hand>, the situation:",
     "options": [
-      "is under control",
+      "is under control in this context",
       "becomes difficult to control",
-      "is in your hand",
-      "is easy"
+      "is in your hand in this context",
+      "is easy in conventional terms"
     ],
     "correct": "becomes difficult to control",
     "explanation": "This idiom means a situation becomes uncontrollable."
@@ -200,10 +200,10 @@
   {
     "question": "What does <the best of both worlds> mean?",
     "options": [
-      "travel the world",
+      "travel the world in this context",
       "enjoy advantages of two different things",
-      "be the best",
-      "live in two places"
+      "be the best in standard terms",
+      "live in two places in everyday usage"
     ],
     "correct": "enjoy advantages of two different things",
     "explanation": "This idiom means to benefit from two different situations at the same time."
@@ -211,10 +211,10 @@
   {
     "question": "If you <add fuel to the fire>, you:",
     "options": [
-      "cook food",
+      "cook food in practical terms",
       "make a bad situation worse",
-      "start a campfire",
-      "help someone"
+      "start a campfire as recognized by most authorities",
+      "help someone in this context"
     ],
     "correct": "make a bad situation worse",
     "explanation": "This idiom means to make an already bad situation even worse."

@@ -13,10 +13,10 @@
   {
     "question": "Which word means <the mother of your father>?",
     "options": [
-      "aunt",
-      "sister",
+      "aunt in the most widely accepted sense",
+      "sister in the most widely accepted sense",
       "grandmother",
-      "cousin"
+      "cousin within the conventional framework"
     ],
     "correct": "grandmother",
     "explanation": "<Grandmother> is your father's or mother's mother."

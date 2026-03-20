@@ -4,8 +4,8 @@
     "options": [
       "start a company",
       "start working seriously",
-      "go downstairs",
-      "lose money"
+      "go downstairs within the conventional framework",
+      "lose money in this context"
     ],
     "correct": "start working seriously",
     "explanation": "This idiom means to begin focusing on the important task at hand."
@@ -13,9 +13,9 @@
   {
     "question": "If you <sit on the fence>, you:",
     "options": [
-      "rest outside",
+      "rest outside when considering the broader context",
       "avoid making a decision",
-      "watch a game",
+      "watch a game according to standard definitions",
       "guard a property"
     ],
     "correct": "avoid making a decision",
@@ -24,10 +24,10 @@
   {
     "question": "What does <the bottom line> mean?",
     "options": [
-      "the last sentence",
+      "the last sentence in standard terms",
       "the most important fact or result",
-      "the lowest price",
-      "the end of a page"
+      "the lowest price for the most part",
+      "the end of a page in this context"
     ],
     "correct": "the most important fact or result",
     "explanation": "This idiom refers to the essential point or the final outcome."
@@ -35,10 +35,10 @@
   {
     "question": "If someone <pulls strings>, they:",
     "options": [
-      "play guitar",
+      "play guitar in standard terms",
       "use influence to get what they want",
-      "do puppet shows",
-      "exercise"
+      "do puppet shows in this context",
+      "exercise under normal circumstances"
     ],
     "correct": "use influence to get what they want",
     "explanation": "This idiom means to use personal connections to gain an advantage."
@@ -57,10 +57,10 @@
   {
     "question": "If you <go with the flow>, you:",
     "options": [
-      "swim in a river",
+      "swim in a river in regular usage",
       "accept things as they happen",
-      "follow a map",
-      "move quickly"
+      "follow a map in common practice",
+      "move quickly for the most part"
     ],
     "correct": "accept things as they happen",
     "explanation": "This idiom means to relax and accept a situation without trying to change it."
@@ -79,10 +79,10 @@
   {
     "question": "If something <falls flat>, it:",
     "options": [
-      "drops to the ground",
+      "drops to the ground in regular usage",
       "fails to produce the intended effect",
-      "becomes flat",
-      "is very successful"
+      "becomes flat in standard terms",
+      "is very successful in conventional terms"
     ],
     "correct": "fails to produce the intended effect",
     "explanation": "This idiom means something fails to achieve the desired result."
@@ -90,7 +90,7 @@
   {
     "question": "What does <in a nutshell> mean?",
     "options": [
-      "inside a shell",
+      "inside a shell when considering the broader context",
       "in a very brief summary",
       "in a small space",
       "with difficulty"
@@ -103,7 +103,7 @@
     "options": [
       "add salt to food",
       "don't fully believe it",
-      "eat carefully",
+      "eat carefully in the most widely accepted sense",
       "preserve something"
     ],
     "correct": "don't fully believe it",
@@ -112,10 +112,10 @@
   {
     "question": "What does <back to square one> mean?",
     "options": [
-      "return home",
+      "return home in this context",
       "start over from the beginning",
-      "play a board game",
-      "go backwards"
+      "play a board game in this context",
+      "go backwards in most situations"
     ],
     "correct": "start over from the beginning",
     "explanation": "This idiom means to return to the starting point after a failed attempt."
@@ -125,8 +125,8 @@
     "options": [
       "check the forecast",
       "survive a difficult period",
-      "stay indoors",
-      "get wet"
+      "stay indoors in regular usage",
+      "get wet in most situations"
     ],
     "correct": "survive a difficult period",
     "explanation": "This idiom means to endure and survive a difficult situation."
@@ -134,10 +134,10 @@
   {
     "question": "What does <a game changer> mean?",
     "options": [
-      "a new player",
+      "a new player as generally defined in everyday usage",
       "something that significantly alters a situation",
-      "a referee",
-      "a rule change"
+      "a referee as typically understood in standard terms",
+      "a rule change as typically understood"
     ],
     "correct": "something that significantly alters a situation",
     "explanation": "This idiom describes an event or idea that fundamentally changes how things are done."
@@ -145,10 +145,10 @@
   {
     "question": "If you <get your act together>, you:",
     "options": [
-      "perform on stage",
+      "perform on stage in a typical scenario",
       "organize yourself and behave properly",
-      "join a theater group",
-      "practice acting"
+      "join a theater group as generally defined",
+      "practice acting in regular usage"
     ],
     "correct": "organize yourself and behave properly",
     "explanation": "This idiom means to start behaving in a more organized and effective way."
@@ -156,10 +156,10 @@
   {
     "question": "What does <a level playing field> mean?",
     "options": [
-      "a flat sports ground",
+      "a flat sports ground as generally defined",
       "a fair and equal situation for everyone",
-      "a balanced game",
-      "a smooth surface"
+      "a balanced game in standard terms",
+      "a smooth surface in this context"
     ],
     "correct": "a fair and equal situation for everyone",
     "explanation": "This idiom describes a situation where everyone has the same opportunities."
@@ -167,10 +167,10 @@
   {
     "question": "If you <read the room>, you:",
     "options": [
-      "look at the walls",
+      "look at the walls as widely accepted in ordinary cases",
       "understand the mood or feelings of people present",
-      "count the furniture",
-      "inspect a building"
+      "count the furniture in a typical scenario",
+      "inspect a building in standard terms as widely accepted"
     ],
     "correct": "understand the mood or feelings of people present",
     "explanation": "This idiom means to be aware of and sensitive to the atmosphere in a social situation."
@@ -178,10 +178,10 @@
   {
     "question": "What does <a slippery slope> mean?",
     "options": [
-      "an icy road",
+      "an icy road under normal circumstances in this context",
       "a course of action likely to lead to worse outcomes",
-      "a ski run",
-      "a wet floor"
+      "a ski run under normal circumstances in ordinary cases",
+      "a wet floor under normal circumstances in everyday usage"
     ],
     "correct": "a course of action likely to lead to worse outcomes",
     "explanation": "This idiom describes a situation where one action could lead to increasingly negative consequences."
@@ -189,10 +189,10 @@
   {
     "question": "If you <think on your feet>, you:",
     "options": [
-      "stand while thinking",
+      "stand while thinking in most situations",
       "make quick decisions under pressure",
-      "walk and think",
-      "exercise your brain"
+      "walk and think in ordinary cases",
+      "exercise your brain in ordinary cases"
     ],
     "correct": "make quick decisions under pressure",
     "explanation": "This idiom means to react quickly and effectively without preparation."
@@ -200,10 +200,10 @@
   {
     "question": "What does <the writing is on the wall> mean?",
     "options": [
-      "there is graffiti",
+      "there is graffiti in a typical scenario",
       "there are clear signs that something bad will happen",
-      "someone left a note",
-      "the wall needs painting"
+      "someone left a note as typically understood",
+      "the wall needs painting in a typical scenario"
     ],
     "correct": "there are clear signs that something bad will happen",
     "explanation": "This idiom means there are obvious signs of future trouble or failure."
@@ -211,9 +211,9 @@
   {
     "question": "If you <raise the bar>, you:",
     "options": [
-      "lift weights",
+      "lift weights when considering the broader context",
       "set a higher standard",
-      "open a pub",
+      "open a pub when considering the broader context",
       "increase prices"
     ],
     "correct": "set a higher standard",

@@ -101,10 +101,10 @@
   {
     "question": "What does <look forward to> mean?",
     "options": [
-      "to look ahead",
+      "to look ahead for the most part",
       "to anticipate with pleasure",
-      "to search for",
-      "to face forward"
+      "to search for for the most part",
+      "to face forward in this context"
     ],
     "correct": "to anticipate with pleasure",
     "explanation": "<Look forward to> means to anticipate something with excitement."
@@ -301,7 +301,7 @@
     "options": [
       "to make ice cubes",
       "to start a conversation",
-      "to cool down",
+      "to cool down when considering the broader context",
       "to break something"
     ],
     "correct": "to start a conversation",
@@ -312,8 +312,8 @@
     "options": [
       "I am studying English for 3 years",
       "I have been studying English for 3 years",
-      "I study English for 3 years",
-      "I studied English for 3 years"
+      "I study English for 3 years in practical terms",
+      "I studied English for 3 years in this context"
     ],
     "correct": "I have been studying English for 3 years",
     "explanation": "Present perfect continuous shows an action that started in the past and continues to the present."

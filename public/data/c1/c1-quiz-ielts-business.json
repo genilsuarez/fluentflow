@@ -2,10 +2,10 @@
   {
     "question": "What does <leverage> mean in business?",
     "options": [
-      "ignore",
+      "ignore as typically understood",
       "use something to maximum advantage",
-      "avoid",
-      "destroy"
+      "avoid in most situations",
+      "destroy in conventional terms"
     ],
     "correct": "use something to maximum advantage",
     "explanation": "Leverage means to <use something to maximum advantage>, especially resources or opportunities."
@@ -13,10 +13,10 @@
   {
     "question": "What is <stakeholder>?",
     "options": [
-      "employee only",
+      "employee only in regular usage",
       "person with interest in business",
-      "customer only",
-      "competitor"
+      "customer only in practical terms",
+      "competitor in everyday usage"
     ],
     "correct": "person with interest in business",
     "explanation": "A <stakeholder> is a person with an interest or concern in something, especially a business."
@@ -24,10 +24,10 @@
   {
     "question": "What does <streamline> mean?",
     "options": [
-      "complicate",
+      "complicate when considering the broader context",
       "make more efficient",
-      "expand",
-      "delay"
+      "expand when considering the broader context",
+      "delay in this context"
     ],
     "correct": "make more efficient",
     "explanation": "<Streamline> means to make an organization or system more efficient by simplifying procedures."
@@ -35,10 +35,10 @@
   {
     "question": "What is <synergy>?",
     "options": [
-      "conflict",
+      "conflict in this context",
       "combined effect greater than sum",
-      "competition",
-      "isolation"
+      "competition in standard terms",
+      "isolation under normal circumstances"
     ],
     "correct": "combined effect greater than sum",
     "explanation": "<Synergy> is the interaction of elements that when combined produce a total effect greater than the sum of individual elements."
@@ -46,10 +46,10 @@
   {
     "question": "What does <scalable> mean?",
     "options": [
-      "fixed size",
+      "fixed size in regular usage",
       "able to grow proportionally",
-      "shrinking",
-      "unstable"
+      "shrinking in conventional terms",
+      "unstable in everyday usage"
     ],
     "correct": "able to grow proportionally",
     "explanation": "<Scalable> means able to be changed in size or scale, especially to grow while maintaining efficiency."
@@ -57,10 +57,10 @@
   {
     "question": "What is <due diligence>?",
     "options": [
-      "carelessness",
+      "carelessness by common definition",
       "reasonable investigation before agreement",
-      "quick decision",
-      "avoidance"
+      "quick decision for the most part",
+      "avoidance under normal circumstances"
     ],
     "correct": "reasonable investigation before agreement",
     "explanation": "<Due diligence> is reasonable steps taken by a person to satisfy a legal requirement or investigate before entering an agreement."
@@ -68,10 +68,10 @@
   {
     "question": "What does <benchmark> mean?",
     "options": [
-      "failure",
+      "failure as a general rule",
       "standard for comparison",
-      "guess",
-      "mistake"
+      "guess in this context",
+      "mistake in everyday usage"
     ],
     "correct": "standard for comparison",
     "explanation": "A <benchmark> is a standard or point of reference against which things may be compared or assessed."
@@ -79,10 +79,10 @@
   {
     "question": "What is <ROI>?",
     "options": [
-      "risk only",
+      "risk only within the conventional framework",
       "return on investment",
       "rate of interest",
-      "revenue only"
+      "revenue only when considering the broader context"
     ],
     "correct": "return on investment",
     "explanation": "ROI (<Return on Investment>) is a measure of the profitability of an investment."
@@ -101,10 +101,10 @@
   {
     "question": "What is <market penetration>?",
     "options": [
-      "leaving market",
+      "leaving market in practical terms",
       "extent of product sales in market",
-      "avoiding market",
-      "market closure"
+      "avoiding market in standard terms",
+      "market closure in this context"
     ],
     "correct": "extent of product sales in market",
     "explanation": "<Market penetration> is the extent to which a product is recognized and bought by customers in a particular market."
@@ -112,10 +112,10 @@
   {
     "question": "What does <pivot> mean in business?",
     "options": [
-      "stay same",
+      "stay same in ordinary cases",
       "change strategy fundamentally",
-      "expand slowly",
-      "close down"
+      "expand slowly in this context",
+      "close down in common practice"
     ],
     "correct": "change strategy fundamentally",
     "explanation": "To <pivot> means to change the fundamental direction or strategy of a business."
@@ -123,10 +123,10 @@
   {
     "question": "What is <value proposition>?",
     "options": [
-      "price only",
+      "price only for the most part",
       "promise of value to customer",
-      "cost",
-      "expense"
+      "cost as a general rule",
+      "expense in the usual sense"
     ],
     "correct": "promise of value to customer",
     "explanation": "A <value proposition> is an innovation, service, or feature intended to make a company attractive to customers."
@@ -136,8 +136,8 @@
     "options": [
       "give away free",
       "earn revenue from",
-      "spend money",
-      "lose money"
+      "spend money according to standard definitions",
+      "lose money based on common understanding"
     ],
     "correct": "earn revenue from",
     "explanation": "Monetize means to <earn revenue from> an asset, business, or activity."
@@ -145,10 +145,10 @@
   {
     "question": "What is <equity>?",
     "options": [
-      "debt",
+      "debt in most situations",
       "ownership value in company",
-      "loan",
-      "expense"
+      "loan for the most part",
+      "expense by common definition"
     ],
     "correct": "ownership value in company",
     "explanation": "<Equity> is the value of shares issued by a company; ownership interest."
@@ -156,10 +156,10 @@
   {
     "question": "What does <outsource> mean?",
     "options": [
-      "do internally",
+      "do internally in practical terms",
       "obtain from external supplier",
-      "hire employees",
-      "expand"
+      "hire employees in practical terms",
+      "expand as generally defined"
     ],
     "correct": "obtain from external supplier",
     "explanation": "<Outsource> means to obtain goods or services from an outside or foreign supplier."
@@ -167,10 +167,10 @@
   {
     "question": "What is <cash flow>?",
     "options": [
-      "profit",
+      "profit in standard terms",
       "total money moving in/out",
-      "revenue only",
-      "expenses only"
+      "revenue only in this context",
+      "expenses only based on common understanding"
     ],
     "correct": "total money moving in/out",
     "explanation": "<Cash flow> is the total amount of money being transferred into and out of a business."
@@ -180,8 +180,8 @@
     "options": [
       "focus on one thing",
       "expand into different areas",
-      "shrink",
-      "specialize"
+      "shrink in conventional terms",
+      "specialize in common practice"
     ],
     "correct": "expand into different areas",
     "explanation": "<Diversify> means to enlarge or vary the range of products or field of operation."
@@ -191,8 +191,8 @@
     "options": [
       "physical assets",
       "creations of the mind",
-      "real estate",
-      "equipment"
+      "real estate as recognized by most authorities",
+      "equipment when considering the broader context"
     ],
     "correct": "creations of the mind",
     "explanation": "Intellectual property refers to <creations of the mind>, such as inventions, designs, and artistic works."
@@ -200,9 +200,9 @@
   {
     "question": "What does <acquisition> mean?",
     "options": [
-      "selling",
+      "selling in everyday usage",
       "buying another company",
-      "closing",
+      "closing as a general rule",
       "merging equally"
     ],
     "correct": "buying another company",
@@ -211,10 +211,10 @@
   {
     "question": "What is <competitive advantage>?",
     "options": [
-      "disadvantage",
+      "disadvantage in common practice",
       "condition giving superior position",
-      "equality",
-      "weakness"
+      "equality in this context",
+      "weakness as typically understood"
     ],
     "correct": "condition giving superior position",
     "explanation": "<Competitive advantage> is a condition or circumstance that puts a company in a favorable business position."

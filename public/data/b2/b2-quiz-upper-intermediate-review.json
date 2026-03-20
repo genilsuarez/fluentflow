@@ -90,10 +90,10 @@
   {
     "question": "What does \"break new ground\" mean?",
     "options": [
-      "To dig a hole",
+      "To dig a hole in this context",
       "To do something innovative",
       "To destroy something",
-      "To start farming"
+      "To start farming within the conventional framework"
     ],
     "correct": "To do something innovative",
     "explanation": "<Break new ground> means to do something that has not been done before."
@@ -136,8 +136,8 @@
     "options": [
       "To take shortcuts, often reducing quality",
       "To reduce the size of something",
-      "To turn around a corner",
-      "To cut paper into shapes"
+      "To turn around a corner in ordinary cases",
+      "To cut paper into shapes for the most part"
     ],
     "correct": "To take shortcuts, often reducing quality",
     "explanation": "<Cut corners> means to do something in the easiest or cheapest way, often sacrificing quality."
@@ -169,7 +169,7 @@
     "options": [
       "To wear casual clothes",
       "To put on a dress",
-      "To feel sad",
+      "To feel sad when considering the broader context",
       "To go downstairs"
     ],
     "correct": "To wear casual clothes",
@@ -201,9 +201,9 @@
     "question": "What does \"owing to\" express?",
     "options": [
       "Cause or reason",
-      "Contrast",
-      "Addition",
-      "Emphasis"
+      "Contrast when considering the broader context",
+      "Addition within the conventional framework",
+      "Emphasis based on common understanding"
     ],
     "correct": "Cause or reason",
     "explanation": "<Owing to> indicates the reason or cause for something, similar to <due to>."
@@ -223,9 +223,9 @@
     "question": "What does \"hit the ground running\" mean?",
     "options": [
       "To start something with great energy and enthusiasm",
-      "To fall while running",
-      "To run very fast",
-      "To start exercising"
+      "To fall while running in conventional terms",
+      "To run very fast in conventional terms in this context",
+      "To start exercising by common definition"
     ],
     "correct": "To start something with great energy and enthusiasm",
     "explanation": "<Hit the ground running> means to begin a task or project with immediate effort and energy."
@@ -234,9 +234,9 @@
     "question": "Which connector introduces an alternative viewpoint?",
     "options": [
       "On the other hand",
-      "In addition",
+      "In addition when considering the broader context",
       "Consequently",
-      "Indeed"
+      "Indeed in the most widely accepted sense"
     ],
     "correct": "On the other hand",
     "explanation": "<On the other hand> presents a contrasting or alternative perspective."
@@ -246,8 +246,8 @@
     "options": [
       "To understand or solve something",
       "To calculate a number",
-      "To draw a figure",
-      "To go outside"
+      "To draw a figure in most situations",
+      "To go outside in a typical scenario"
     ],
     "correct": "To understand or solve something",
     "explanation": "<Figure out> means to understand something or find the answer to a problem."
@@ -267,8 +267,8 @@
     "question": "What does \"make ends meet\" mean?",
     "options": [
       "To earn just enough money to live on",
-      "To finish a project",
-      "To meet new people",
+      "To finish a project for the most part",
+      "To meet new people in most situations",
       "To reach the end of a road"
     ],
     "correct": "To earn just enough money to live on",
@@ -289,9 +289,9 @@
     "question": "What does \"try on\" mean?",
     "options": [
       "To put on clothing to see if it fits",
-      "To attempt something",
-      "To turn on a device",
-      "To start a new job"
+      "To attempt something as a general rule",
+      "To turn on a device in a typical scenario",
+      "To start a new job in this context"
     ],
     "correct": "To put on clothing to see if it fits",
     "explanation": "<Try on> means to put on a piece of clothing to check the fit or appearance."
@@ -333,9 +333,9 @@
     "question": "What does \"pull strings\" mean?",
     "options": [
       "To use influence or connections to get something done",
-      "To play a musical instrument",
-      "To pull a rope",
-      "To untangle something"
+      "To play a musical instrument in common practice",
+      "To pull a rope under normal circumstances",
+      "To untangle something in common practice"
     ],
     "correct": "To use influence or connections to get something done",
     "explanation": "<Pull strings> means to use personal connections or influence to achieve something."
@@ -367,7 +367,7 @@
     "options": [
       "Over a long period of time",
       "During a marathon",
-      "In a hurry",
+      "In a hurry as widely accepted",
       "At the end of a race"
     ],
     "correct": "Over a long period of time",
@@ -390,7 +390,7 @@
       "Using the most modern technology",
       "Related to art museums",
       "In a state of confusion",
-      "Very old-fashioned"
+      "Very old-fashioned in this context"
     ],
     "correct": "Using the most modern technology",
     "explanation": "<State-of-the-art> describes something that uses the newest and most advanced technology."
@@ -421,8 +421,8 @@
     "question": "What does \"win-win situation\" mean?",
     "options": [
       "A situation where everyone benefits",
-      "Winning twice in a row",
-      "A competitive game",
+      "Winning twice in a row in ordinary cases",
+      "A competitive game in common practice",
       "A situation with no losers"
     ],
     "correct": "A situation where everyone benefits",

@@ -35,10 +35,10 @@
   {
     "question": "Which appliance keeps food <cold>?",
     "options": [
-      "oven",
+      "oven in the most widely accepted sense",
       "refrigerator",
       "microwave",
-      "toaster"
+      "toaster when considering the broader context"
     ],
     "correct": "refrigerator",
     "explanation": "A <refrigerator> keeps food cold and fresh."
@@ -68,10 +68,10 @@
   {
     "question": "What is an <only child>?",
     "options": [
-      "the oldest child",
+      "the oldest child, overall speaking",
       "a child with no siblings",
       "the youngest child",
-      "an adopted child"
+      "an adopted child, overall speaking"
     ],
     "correct": "a child with no siblings",
     "explanation": "An <only child> has no brothers or sisters."
@@ -90,10 +90,10 @@
   {
     "question": "What do you call your <grandparents' parents>?",
     "options": [
-      "ancestors",
+      "ancestors when considering the broader context",
       "great-grandparents",
-      "relatives",
-      "elders"
+      "relatives when considering the broader context",
+      "elders when considering the broader context"
     ],
     "correct": "great-grandparents",
     "explanation": "Your grandparents' parents are your <great-grandparents>."
@@ -112,10 +112,10 @@
   {
     "question": "What is a <sibling>?",
     "options": [
-      "your parent",
+      "your parent within the conventional framework",
       "your brother or sister",
-      "your cousin",
-      "your friend"
+      "your cousin when considering the broader context",
+      "your friend when considering the broader context"
     ],
     "correct": "your brother or sister",
     "explanation": "A sibling is <your brother or sister>."
@@ -157,7 +157,7 @@
     "question": "What is a <nuclear family>?",
     "options": [
       "parents and children only",
-      "all relatives",
+      "all relatives in the most widely accepted sense",
       "grandparents only",
       "cousins and aunts"
     ],
@@ -178,10 +178,10 @@
   {
     "question": "What do you call your <spouse's brother>?",
     "options": [
-      "cousin",
+      "cousin when considering the broader context",
       "brother-in-law",
       "stepbrother",
-      "nephew"
+      "nephew as recognized by most authorities"
     ],
     "correct": "brother-in-law",
     "explanation": "Your spouse's brother is your <brother-in-law>."
@@ -189,10 +189,10 @@
   {
     "question": "Which appliance is used for <cleaning floors>?",
     "options": [
-      "iron",
+      "iron based on common understanding",
       "vacuum cleaner",
-      "toaster",
-      "fan"
+      "toaster within the conventional framework",
+      "fan when considering the broader context"
     ],
     "correct": "vacuum cleaner",
     "explanation": "A <vacuum cleaner> is used to clean floors by sucking up dirt and dust."
@@ -200,10 +200,10 @@
   {
     "question": "What is an <extended family>?",
     "options": [
-      "parents only",
-      "children only",
+      "parents only in the usual sense",
+      "children only as widely accepted",
       "parents, children, and other relatives",
-      "friends"
+      "friends under normal circumstances"
     ],
     "correct": "parents, children, and other relatives",
     "explanation": "An <extended family> includes parents, children, grandparents, aunts, uncles, and cousins."

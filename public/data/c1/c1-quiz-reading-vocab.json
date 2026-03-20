@@ -14,9 +14,9 @@
     "question": "A <lacuna> is...",
     "options": [
       "a gap or missing part in knowledge or research",
-      "a type of academic degree",
-      "a research method",
-      "a university department"
+      "a type of academic degree in regular usage",
+      "a research method in this context",
+      "a university department by common definition"
     ],
     "correct": "a gap or missing part in knowledge or research",
     "explanation": "A <lacuna> is a gap or blank space, especially in knowledge or a manuscript."
@@ -25,9 +25,9 @@
     "question": "<Epistemology> is the study of...",
     "options": [
       "the nature and scope of knowledge",
-      "ancient languages",
+      "ancient languages in this context",
       "mathematical equations",
-      "biological systems"
+      "biological systems in this context"
     ],
     "correct": "the nature and scope of knowledge",
     "explanation": "<Epistemology> is the branch of philosophy concerned with the theory of knowledge."
@@ -36,9 +36,9 @@
     "question": "<Ethnocentrism> is the tendency to...",
     "options": [
       "judge other cultures by the standards of your own",
-      "study multiple languages",
-      "travel to different countries",
-      "appreciate cultural diversity"
+      "study multiple languages in standard terms",
+      "travel to different countries in regular usage",
+      "appreciate cultural diversity as widely accepted"
     ],
     "correct": "judge other cultures by the standards of your own",
     "explanation": "<Ethnocentrism> is evaluating other cultures according to the norms of one's own culture."
@@ -47,9 +47,9 @@
     "question": "To <essentialize> means to...",
     "options": [
       "reduce something complex to a single characteristic",
-      "make something essential",
-      "improve something",
-      "analyze in detail"
+      "make something essential in practical terms",
+      "improve something in conventional terms",
+      "analyze in detail in the usual sense in standard terms"
     ],
     "correct": "reduce something complex to a single characteristic",
     "explanation": "To <essentialize> means to oversimplify by attributing a fixed essence to something complex."
@@ -58,9 +58,9 @@
     "question": "<Cosmopolitanism> promotes...",
     "options": [
       "the idea that all people belong to a single global community",
-      "national pride",
-      "local traditions only",
-      "economic isolation"
+      "national pride within the conventional framework",
+      "local traditions only under normal circumstances",
+      "economic isolation as typically understood in this context"
     ],
     "correct": "the idea that all people belong to a single global community",
     "explanation": "<Cosmopolitanism> is the ideology that all human beings belong to a single community."
@@ -69,9 +69,9 @@
     "question": "<Intersectionality> examines...",
     "options": [
       "how different social identities overlap and interact",
-      "road intersections",
-      "mathematical intersections",
-      "business partnerships"
+      "road intersections as widely accepted",
+      "mathematical intersections under normal circumstances",
+      "business partnerships in this context"
     ],
     "correct": "how different social identities overlap and interact",
     "explanation": "<Intersectionality> studies how categories like race, gender, and class interconnect."
@@ -80,9 +80,9 @@
     "question": "<Glocalization> refers to...",
     "options": [
       "adapting global products or ideas to local contexts",
-      "only focusing on local markets",
-      "rejecting globalization",
-      "standardizing products worldwide"
+      "only focusing on local markets in this context",
+      "rejecting globalization in everyday usage",
+      "standardizing products worldwide in ordinary cases"
     ],
     "correct": "adapting global products or ideas to local contexts",
     "explanation": "<Glocalization> is the practice of adapting globally distributed products to local markets."
@@ -91,9 +91,9 @@
     "question": "To <recalibrate> means to...",
     "options": [
       "adjust or correct something based on new information",
-      "repeat an experiment",
-      "cancel a project",
-      "start from scratch"
+      "repeat an experiment in the usual sense",
+      "cancel a project as generally defined in practical terms",
+      "start from scratch in common practice in common practice"
     ],
     "correct": "adjust or correct something based on new information",
     "explanation": "To <recalibrate> means to adjust measurements, expectations, or approaches."
@@ -103,8 +103,8 @@
     "options": [
       "extremely large and significant",
       "very small and gradual",
-      "temporary",
-      "predictable"
+      "temporary in this context",
+      "predictable as generally defined"
     ],
     "correct": "extremely large and significant",
     "explanation": "<Seismic> figuratively means having enormous impact or significance."
@@ -113,9 +113,9 @@
     "question": "<Preeminent> means...",
     "options": [
       "surpassing all others; most distinguished",
-      "average",
-      "unknown",
-      "controversial"
+      "average in a typical scenario in everyday usage",
+      "unknown in a typical scenario in standard terms",
+      "controversial in regular usage in this context"
     ],
     "correct": "surpassing all others; most distinguished",
     "explanation": "<Preeminent> means superior to or notable above all others."
@@ -124,9 +124,9 @@
     "question": "A <paradigm shift> is...",
     "options": [
       "a fundamental change in approach or underlying assumptions",
-      "a minor adjustment",
-      "a temporary trend",
-      "a return to old methods"
+      "a minor adjustment under normal circumstances",
+      "a temporary trend as typically understood in common practice",
+      "a return to old methods in conventional terms"
     ],
     "correct": "a fundamental change in approach or underlying assumptions",
     "explanation": "A <paradigm shift> is a fundamental change in the basic concepts and practices of a discipline."
@@ -135,9 +135,9 @@
     "question": "<Discourse> refers to...",
     "options": [
       "written or spoken communication on a topic",
-      "a type of university course",
-      "a research grant",
-      "a scientific experiment"
+      "a type of university course as widely accepted",
+      "a research grant as a general rule",
+      "a scientific experiment in a typical scenario"
     ],
     "correct": "written or spoken communication on a topic",
     "explanation": "<Discourse> is formal discussion or debate, or a connected series of utterances on a topic."
@@ -146,9 +146,9 @@
     "question": "<Hegemony> means...",
     "options": [
       "dominance or leadership of one group over others",
-      "equality among groups",
-      "cooperation between nations",
-      "academic excellence"
+      "equality among groups as a general rule",
+      "cooperation between nations by common definition",
+      "academic excellence as a general rule"
     ],
     "correct": "dominance or leadership of one group over others",
     "explanation": "<Hegemony> is the dominance of one group over others, especially in politics or culture."
@@ -157,9 +157,9 @@
     "question": "<Empirical> evidence is based on...",
     "options": [
       "observation and experience rather than theory",
-      "personal opinions",
-      "mathematical proofs only",
-      "historical documents only"
+      "personal opinions as widely accepted",
+      "mathematical proofs only in ordinary cases",
+      "historical documents only in practical terms"
     ],
     "correct": "observation and experience rather than theory",
     "explanation": "<Empirical> means based on verifiable observation or experience rather than theory."
@@ -168,9 +168,9 @@
     "question": "A <nuance> is...",
     "options": [
       "a subtle difference in meaning or expression",
-      "a major difference",
-      "an obvious error",
-      "a simple explanation"
+      "a major difference for the most part",
+      "an obvious error in everyday usage",
+      "a simple explanation in standard terms"
     ],
     "correct": "a subtle difference in meaning or expression",
     "explanation": "A <nuance> is a subtle distinction or variation in meaning, tone, or color."
@@ -179,9 +179,9 @@
     "question": "To <corroborate> means to...",
     "options": [
       "confirm or support with evidence",
-      "contradict",
-      "ignore",
-      "simplify"
+      "contradict in this context",
+      "ignore by common definition",
+      "simplify as a general rule"
     ],
     "correct": "confirm or support with evidence",
     "explanation": "To <corroborate> means to confirm or give support to a statement or theory."
@@ -190,9 +190,9 @@
     "question": "To <juxtapose> means to...",
     "options": [
       "place things side by side for comparison",
-      "combine into one",
-      "separate completely",
-      "arrange chronologically"
+      "combine into one in everyday usage",
+      "separate completely as a general rule",
+      "arrange chronologically in conventional terms"
     ],
     "correct": "place things side by side for comparison",
     "explanation": "To <juxtapose> means to place close together for contrasting effect."
@@ -201,9 +201,9 @@
     "question": "<Proliferation> means...",
     "options": [
       "rapid increase in number or spread",
-      "gradual decrease",
-      "complete elimination",
-      "careful selection"
+      "gradual decrease for the most part",
+      "complete elimination as a general rule",
+      "careful selection in most situations"
     ],
     "correct": "rapid increase in number or spread",
     "explanation": "<Proliferation> is a rapid increase in the number or amount of something."
@@ -212,9 +212,9 @@
     "question": "<Ubiquitous> means...",
     "options": [
       "present everywhere; very common",
-      "extremely rare",
-      "invisible",
-      "temporary"
+      "extremely rare in practical terms",
+      "invisible in common practice",
+      "temporary as generally defined"
     ],
     "correct": "present everywhere; very common",
     "explanation": "<Ubiquitous> means found everywhere; omnipresent."

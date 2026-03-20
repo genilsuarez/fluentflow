@@ -2,10 +2,10 @@
   {
     "question": "What does <elucidate> mean?",
     "options": [
-      "confuse",
+      "confuse in most situations",
       "clarify and explain in detail",
-      "summarize briefly",
-      "ignore"
+      "summarize briefly in this context",
+      "ignore as widely accepted"
     ],
     "correct": "clarify and explain in detail",
     "explanation": "<Elucidate> means to make something clear by explaining it in detail."
@@ -13,10 +13,10 @@
   {
     "question": "What is the purpose of <substantiating> a claim?",
     "options": [
-      "to question it",
+      "to question it when considering the broader context",
       "to provide evidence for it",
-      "to reject it",
-      "to simplify it"
+      "to reject it in regular usage",
+      "to simplify it in the most widely accepted sense"
     ],
     "correct": "to provide evidence for it",
     "explanation": "Substantiate means to provide evidence or proof to support a claim."
@@ -24,10 +24,10 @@
   {
     "question": "When you <juxtapose> two concepts, you:",
     "options": [
-      "combine them",
+      "combine them in a typical scenario",
       "place them side by side for comparison",
-      "separate them",
-      "eliminate one"
+      "separate them in ordinary cases",
+      "eliminate one in everyday usage"
     ],
     "correct": "place them side by side for comparison",
     "explanation": "<Juxtapose> means to place things side by side to highlight contrasts or similarities."
@@ -35,10 +35,10 @@
   {
     "question": "What does <extrapolate> mean?",
     "options": [
-      "copy exactly",
+      "copy exactly as recognized by most authorities",
       "infer from known data",
       "delete information",
-      "memorize"
+      "memorize in this context"
     ],
     "correct": "infer from known data",
     "explanation": "<Extrapolate> means to extend known information to infer unknown information."
@@ -46,10 +46,10 @@
   {
     "question": "To <delineate> something means to:",
     "options": [
-      "erase it",
+      "erase it in this context",
       "describe it precisely",
-      "question it",
-      "avoid it"
+      "question it within the conventional framework",
+      "avoid it in this context"
     ],
     "correct": "describe it precisely",
     "explanation": "<Delineate> means to describe or portray something precisely."
@@ -70,7 +70,7 @@
     "options": [
       "to agree completely",
       "to introduce a concession",
-      "to reject an idea",
+      "to reject an idea, overall speaking",
       "to start a sentence"
     ],
     "correct": "to introduce a concession",
@@ -92,8 +92,8 @@
     "options": [
       "to end a discussion",
       "to compare or relate to",
-      "to disagree",
-      "to summarize"
+      "to disagree according to standard definitions",
+      "to summarize when considering the broader context"
     ],
     "correct": "to compare or relate to",
     "explanation": "<Vis-à-vis> means in relation to or compared with."
@@ -112,10 +112,10 @@
   {
     "question": "What is <sui generis>?",
     "options": [
-      "common",
+      "common when considering the broader context",
       "unique in its kind",
-      "traditional",
-      "simple"
+      "traditional according to standard definitions",
+      "simple in the most widely accepted sense"
     ],
     "correct": "unique in its kind",
     "explanation": "<Sui generis> means unique, constituting a class of its own."
@@ -123,10 +123,10 @@
   {
     "question": "What does <prima facie> mean?",
     "options": [
-      "finally",
+      "finally in the most widely accepted sense",
       "at first sight",
-      "never",
-      "always"
+      "never when considering the broader context",
+      "always within the conventional framework"
     ],
     "correct": "at first sight",
     "explanation": "Prima facie means based on first impression or <at first sight>."
@@ -145,10 +145,10 @@
   {
     "question": "What does <inter alia> mean?",
     "options": [
-      "only this",
+      "only this when considering the broader context",
       "among other things",
-      "never",
-      "always"
+      "never within the conventional framework",
+      "always within the conventional framework"
     ],
     "correct": "among other things",
     "explanation": "Inter alia means <among other things>."
@@ -189,10 +189,10 @@
   {
     "question": "What does <synthesize> mean?",
     "options": [
-      "separate",
+      "separate in this context",
       "combine elements into a whole",
-      "destroy",
-      "copy"
+      "destroy in the usual sense",
+      "copy in a typical scenario"
     ],
     "correct": "combine elements into a whole",
     "explanation": "<Synthesize> means to combine separate elements to form a coherent whole."
@@ -200,10 +200,10 @@
   {
     "question": "To <articulate> an idea means to:",
     "options": [
-      "hide it",
+      "hide it according to standard definitions",
       "express it clearly",
-      "forget it",
-      "question it"
+      "forget it based on common understanding",
+      "question it based on common understanding"
     ],
     "correct": "express it clearly",
     "explanation": "<Articulate> means to express an idea or feeling fluently and coherently."
@@ -211,10 +211,10 @@
   {
     "question": "What does <circumscribe> mean?",
     "options": [
-      "expand",
+      "expand in the most widely accepted sense",
       "restrict or limit",
-      "explain",
-      "repeat"
+      "explain when considering the broader context",
+      "repeat in the most widely accepted sense"
     ],
     "correct": "restrict or limit",
     "explanation": "<Circumscribe> means to restrict something within limits or to draw a line around."

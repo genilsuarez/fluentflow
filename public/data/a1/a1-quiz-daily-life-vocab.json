@@ -15,7 +15,7 @@
     "options": [
       "return to your house",
       "leave your house",
-      "buy a house",
+      "buy a house as recognized by most authorities",
       "clean your house"
     ],
     "correct": "return to your house",
@@ -25,8 +25,8 @@
     "question": "You need <directions> when you...",
     "options": [
       "don't know the way",
-      "are hungry",
-      "feel tired",
+      "are hungry in the most widely accepted sense",
+      "feel tired based on common understanding",
       "want to sleep"
     ],
     "correct": "don't know the way",
@@ -58,8 +58,8 @@
     "question": "What does <take a shower> mean?",
     "options": [
       "Wash your body with water",
-      "Go swimming",
-      "Drink water",
+      "Go swimming in this context",
+      "Drink water in regular usage",
       "Clean the bathroom"
     ],
     "correct": "Wash your body with water",
@@ -69,9 +69,9 @@
     "question": "You <brush your teeth> with a...",
     "options": [
       "toothbrush",
-      "comb",
-      "towel",
-      "spoon"
+      "comb when considering the broader context",
+      "towel in the most widely accepted sense",
+      "spoon within the conventional framework"
     ],
     "correct": "toothbrush",
     "explanation": "We use a toothbrush and toothpaste to <brush our teeth>."
@@ -91,8 +91,8 @@
     "question": "Where do you <go shopping>?",
     "options": [
       "At a store or mall",
-      "At school",
-      "At the park",
+      "At school when considering the broader context",
+      "At the park when considering the broader context",
       "At the hospital"
     ],
     "correct": "At a store or mall",
@@ -114,8 +114,8 @@
     "options": [
       "Look at television programs",
       "Listen to the radio",
-      "Read a newspaper",
-      "Play video games"
+      "Read a newspaper according to standard definitions",
+      "Play video games in the most widely accepted sense"
     ],
     "correct": "Look at television programs",
     "explanation": "<Watch TV> means to look at programs on television."
@@ -135,9 +135,9 @@
     "question": "What does <play sports> mean?",
     "options": [
       "Do physical activities like football or tennis",
-      "Watch sports on TV",
-      "Read about sports",
-      "Talk about sports"
+      "Watch sports on TV in ordinary cases",
+      "Read about sports in everyday usage",
+      "Talk about sports in common practice"
     ],
     "correct": "Do physical activities like football or tennis",
     "explanation": "<Play sports> means to participate in physical activities and games."
@@ -157,9 +157,9 @@
     "question": "What does <clean the house> mean?",
     "options": [
       "Make the house tidy and neat",
-      "Build a new house",
-      "Paint the house",
-      "Sell the house"
+      "Build a new house based on common understanding",
+      "Paint the house in this context",
+      "Sell the house as a general rule"
     ],
     "correct": "Make the house tidy and neat",
     "explanation": "<Clean the house> means to tidy up, sweep, and make everything neat."
@@ -168,9 +168,9 @@
     "question": "You <walk the dog> in the...",
     "options": [
       "park or street",
-      "kitchen",
-      "bedroom",
-      "bathroom"
+      "kitchen in the most widely accepted sense",
+      "bedroom when considering the broader context",
+      "bathroom as recognized by most authorities"
     ],
     "correct": "park or street",
     "explanation": "People <walk the dog> outside, usually in the park or on the street."
@@ -179,9 +179,9 @@
     "question": "What does <read a book> mean?",
     "options": [
       "Look at and understand written words",
-      "Write a story",
-      "Draw pictures",
-      "Watch a movie"
+      "Write a story as typically understood",
+      "Draw pictures in most situations",
+      "Watch a movie as typically understood"
     ],
     "correct": "Look at and understand written words",
     "explanation": "<Read a book> means to look at the pages and understand the written text."
@@ -190,9 +190,9 @@
     "question": "When you <go for a walk>, you...",
     "options": [
       "walk outside for exercise or fun",
-      "drive a car",
-      "ride a bicycle",
-      "take a taxi"
+      "drive a car in this context",
+      "ride a bicycle in common practice",
+      "take a taxi as widely accepted"
     ],
     "correct": "walk outside for exercise or fun",
     "explanation": "<Go for a walk> means to walk outside, usually for exercise or pleasure."
@@ -201,9 +201,9 @@
     "question": "You <take the bus> to...",
     "options": [
       "travel to a place",
-      "buy a bus",
-      "drive a bus",
-      "wash a bus"
+      "buy a bus in the most widely accepted sense",
+      "drive a bus as recognized by most authorities",
+      "wash a bus when considering the broader context"
     ],
     "correct": "travel to a place",
     "explanation": "<Take the bus> means to use the bus as transportation to go somewhere."
@@ -212,9 +212,9 @@
     "question": "What does <have lunch> mean?",
     "options": [
       "Eat the midday meal",
-      "Skip a meal",
+      "Skip a meal based on common understanding",
       "Cook breakfast",
-      "Order dinner"
+      "Order dinner when considering the broader context"
     ],
     "correct": "Eat the midday meal",
     "explanation": "<Have lunch> means to eat the meal in the middle of the day, usually around noon."
