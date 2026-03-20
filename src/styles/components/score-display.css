@@ -244,12 +244,12 @@
 
   .score-display-compact__container--in-game {
     min-width: 70px;
-    max-width: 80px;
+    max-width: none;
   }
 
   .score-display-compact__container--full {
     min-width: 80px;
-    max-width: 90px;
+    max-width: none;
   }
 
   /* Hide world icon for space */
@@ -375,17 +375,17 @@
   /* Compact containers for header priority */
   .score-display-compact__container--in-game {
     min-width: 80px !important;
-    max-width: 100px !important;
+    max-width: none !important;
   }
 
   .score-display-compact__container--full {
     min-width: 90px !important;
-    max-width: 120px !important;
+    max-width: none !important;
   }
 
   .score-display-compact--menu {
     min-width: 70px !important;
-    max-width: 90px !important;
+    max-width: none !important;
   }
 
   /* Centered design */
@@ -393,6 +393,7 @@
     padding: 0 0.375rem !important;
     height: 28px !important;
     justify-content: center !important;
+    white-space: nowrap;
   }
 
   .score-display-compact__accuracy,
@@ -405,6 +406,7 @@
   .score-display-compact__values {
     gap: 0.25rem;
     justify-content: center;
+    white-space: nowrap;
   }
 
   /* Hide dividers for clean design */
