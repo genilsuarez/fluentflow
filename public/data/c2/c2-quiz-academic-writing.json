@@ -3,9 +3,9 @@
     "question": "What does <elucidate> mean?",
     "options": [
       "confuse in most situations",
-      "clarify and explain in detail",
       "summarize briefly in this context",
-      "ignore as widely accepted"
+      "ignore as widely accepted",
+      "clarify and explain in detail"
     ],
     "correct": "clarify and explain in detail",
     "explanation": "<Elucidate> means to make something clear by explaining it in detail."
@@ -13,10 +13,10 @@
   {
     "question": "What is the purpose of <substantiating> a claim?",
     "options": [
+      "to simplify it in the most widely accepted sense",
       "to question it when considering the broader context",
-      "to provide evidence for it",
       "to reject it in regular usage",
-      "to simplify it in the most widely accepted sense"
+      "to provide evidence for it"
     ],
     "correct": "to provide evidence for it",
     "explanation": "Substantiate means to provide evidence or proof to support a claim."
@@ -24,10 +24,10 @@
   {
     "question": "When you <juxtapose> two concepts, you:",
     "options": [
-      "combine them in a typical scenario",
       "place them side by side for comparison",
+      "eliminate one in everyday usage",
       "separate them in ordinary cases",
-      "eliminate one in everyday usage"
+      "combine them in a typical scenario"
     ],
     "correct": "place them side by side for comparison",
     "explanation": "<Juxtapose> means to place things side by side to highlight contrasts or similarities."
@@ -35,10 +35,10 @@
   {
     "question": "What does <extrapolate> mean?",
     "options": [
-      "copy exactly as recognized by most authorities",
       "infer from known data",
-      "delete information",
-      "memorize in this context"
+      "memorize in this context",
+      "copy exactly as recognized by most authorities",
+      "delete information"
     ],
     "correct": "infer from known data",
     "explanation": "<Extrapolate> means to extend known information to infer unknown information."
@@ -46,8 +46,8 @@
   {
     "question": "To <delineate> something means to:",
     "options": [
-      "erase it in this context",
       "describe it precisely",
+      "erase it in this context",
       "question it within the conventional framework",
       "avoid it in this context"
     ],
@@ -57,10 +57,10 @@
   {
     "question": "What does <notwithstanding> mean?",
     "options": [
-      "because of",
+      "before",
       "in spite of",
       "instead of",
-      "before"
+      "because of"
     ],
     "correct": "in spite of",
     "explanation": "Notwithstanding means <in spite of> or despite something."
@@ -68,10 +68,10 @@
   {
     "question": "When is <albeit> used?",
     "options": [
-      "to agree completely",
+      "to start a sentence",
       "to introduce a concession",
-      "to reject an idea, overall speaking",
-      "to start a sentence"
+      "to agree completely",
+      "to reject an idea, overall speaking"
     ],
     "correct": "to introduce a concession",
     "explanation": "<Albeit> means although or even though, introducing a concession."
@@ -79,10 +79,10 @@
   {
     "question": "What does <hitherto> mean?",
     "options": [
-      "in the future",
-      "until now",
       "never",
-      "always"
+      "until now",
+      "always",
+      "in the future"
     ],
     "correct": "until now",
     "explanation": "Hitherto means <until now> or up to this time."
@@ -90,9 +90,9 @@
   {
     "question": "What is <vis-à-vis> used for?",
     "options": [
-      "to end a discussion",
-      "to compare or relate to",
       "to disagree according to standard definitions",
+      "to compare or relate to",
+      "to end a discussion",
       "to summarize when considering the broader context"
     ],
     "correct": "to compare or relate to",
@@ -103,8 +103,8 @@
     "options": [
       "after experience",
       "before experience",
-      "during experience",
-      "without experience"
+      "without experience",
+      "during experience"
     ],
     "correct": "before experience",
     "explanation": "<A priori> means relating to reasoning or knowledge independent of experience."
@@ -112,10 +112,10 @@
   {
     "question": "What is <sui generis>?",
     "options": [
-      "common when considering the broader context",
-      "unique in its kind",
       "traditional according to standard definitions",
-      "simple in the most widely accepted sense"
+      "common when considering the broader context",
+      "simple in the most widely accepted sense",
+      "unique in its kind"
     ],
     "correct": "unique in its kind",
     "explanation": "<Sui generis> means unique, constituting a class of its own."
@@ -134,10 +134,10 @@
   {
     "question": "What is <ceteris paribus>?",
     "options": [
-      "everything changes",
-      "all else being equal",
+      "always true",
       "nothing matters",
-      "always true"
+      "everything changes",
+      "all else being equal"
     ],
     "correct": "all else being equal",
     "explanation": "<Ceteris paribus> means with other conditions remaining the same."
@@ -146,9 +146,9 @@
     "question": "What does <inter alia> mean?",
     "options": [
       "only this when considering the broader context",
+      "always within the conventional framework",
       "among other things",
-      "never within the conventional framework",
-      "always within the conventional framework"
+      "never within the conventional framework"
     ],
     "correct": "among other things",
     "explanation": "Inter alia means <among other things>."
@@ -156,10 +156,10 @@
   {
     "question": "What is the difference between <de facto> and <de jure>?",
     "options": [
-      "no difference",
-      "in fact vs. by law",
+      "theory vs. practice",
       "past vs. future",
-      "theory vs. practice"
+      "no difference",
+      "in fact vs. by law"
     ],
     "correct": "in fact vs. by law",
     "explanation": "<De facto> means in fact or reality, while de jure means by law or officially."
@@ -167,10 +167,10 @@
   {
     "question": "What does <per se> mean?",
     "options": [
-      "by itself",
+      "sometimes",
       "with others",
-      "never",
-      "sometimes"
+      "by itself",
+      "never"
     ],
     "correct": "by itself",
     "explanation": "<Per se> means by or in itself, intrinsically."
@@ -178,10 +178,10 @@
   {
     "question": "To <refute> an argument means to:",
     "options": [
-      "accept it",
-      "prove it wrong",
       "ignore it",
-      "repeat it"
+      "accept it",
+      "repeat it",
+      "prove it wrong"
     ],
     "correct": "prove it wrong",
     "explanation": "<Refute> means to prove a statement or theory to be wrong."
@@ -189,10 +189,10 @@
   {
     "question": "What does <synthesize> mean?",
     "options": [
-      "separate in this context",
-      "combine elements into a whole",
       "destroy in the usual sense",
-      "copy in a typical scenario"
+      "copy in a typical scenario",
+      "combine elements into a whole",
+      "separate in this context"
     ],
     "correct": "combine elements into a whole",
     "explanation": "<Synthesize> means to combine separate elements to form a coherent whole."
@@ -200,10 +200,10 @@
   {
     "question": "To <articulate> an idea means to:",
     "options": [
+      "question it based on common understanding",
       "hide it according to standard definitions",
       "express it clearly",
-      "forget it based on common understanding",
-      "question it based on common understanding"
+      "forget it based on common understanding"
     ],
     "correct": "express it clearly",
     "explanation": "<Articulate> means to express an idea or feeling fluently and coherently."
@@ -211,10 +211,10 @@
   {
     "question": "What does <circumscribe> mean?",
     "options": [
-      "expand in the most widely accepted sense",
+      "repeat in the most widely accepted sense",
       "restrict or limit",
       "explain when considering the broader context",
-      "repeat in the most widely accepted sense"
+      "expand in the most widely accepted sense"
     ],
     "correct": "restrict or limit",
     "explanation": "<Circumscribe> means to restrict something within limits or to draw a line around."

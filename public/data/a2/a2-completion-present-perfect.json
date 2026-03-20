@@ -9,7 +9,7 @@
     "sentence": "She ______ finished her homework yet.",
     "correct": "hasn't",
     "explanation": "Use <hasn't> with <yet> in negative sentences to show something is not complete.",
-    "tip": "Complete with <haven't> or <hasn't>"
+    "tip": "Check the time reference in the sentence to determine the tense."
   },
   {
     "sentence": "Have you ______ lunch today?",
@@ -105,7 +105,7 @@
     "sentence": "She has already ______ three books this month.",
     "correct": "read",
     "explanation": "Use <read> (past participle) with <already> to show completed actions.",
-    "tip": "Complete with the past participle of <read>"
+    "tip": "Think about the grammatical structure the sentence requires."
   },
   {
     "sentence": "Have they ______ the new movie?",

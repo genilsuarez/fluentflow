@@ -2,10 +2,10 @@
   {
     "question": "What does <the early bird catches the worm> mean?",
     "options": [
-      "birds eat worms when considering the broader context",
       "wake up early to succeed",
-      "worms are fast when considering the broader context",
-      "birds are smart when considering the broader context"
+      "birds eat worms when considering the broader context",
+      "birds are smart when considering the broader context",
+      "worms are fast when considering the broader context"
     ],
     "correct": "wake up early to succeed",
     "explanation": "This idiom means people who start early have an advantage."
@@ -13,10 +13,10 @@
   {
     "question": "If you <kill two birds with one stone>, you:",
     "options": [
-      "hurt animals according to standard definitions",
-      "do two things at once",
+      "go hunting as recognized by most authorities",
       "throw stones in the most widely accepted sense",
-      "go hunting as recognized by most authorities"
+      "hurt animals according to standard definitions",
+      "do two things at once"
     ],
     "correct": "do two things at once",
     "explanation": "This idiom means to accomplish two things with a single action."
@@ -24,10 +24,10 @@
   {
     "question": "What does <actions speak louder than words> mean?",
     "options": [
-      "be quiet under normal circumstances",
-      "what you do matters more than what you say",
       "speak loudly in standard terms as a general rule",
-      "don't talk as typically understood"
+      "don't talk as typically understood",
+      "what you do matters more than what you say",
+      "be quiet under normal circumstances"
     ],
     "correct": "what you do matters more than what you say",
     "explanation": "This idiom means behavior is more important than promises."
@@ -35,10 +35,10 @@
   {
     "question": "If someone is <on the same page>, they:",
     "options": [
-      "read the same book",
-      "agree with each other",
       "are in the same class",
-      "write together"
+      "read the same book",
+      "write together",
+      "agree with each other"
     ],
     "correct": "agree with each other",
     "explanation": "This idiom means people share the same understanding."
@@ -46,10 +46,10 @@
   {
     "question": "What does <bite off more than you can chew> mean?",
     "options": [
-      "eat too much by common definition",
-      "take on too much responsibility",
+      "chew slowly in common practice",
       "have big teeth in regular usage",
-      "chew slowly in common practice"
+      "eat too much by common definition",
+      "take on too much responsibility"
     ],
     "correct": "take on too much responsibility",
     "explanation": "This idiom means to attempt more than you can handle."
@@ -57,10 +57,10 @@
   {
     "question": "If you <go the extra mile>, you:",
     "options": [
-      "walk far in this context",
-      "do more than expected",
+      "travel by car when considering the broader context",
       "run a race within the conventional framework",
-      "travel by car when considering the broader context"
+      "walk far in this context",
+      "do more than expected"
     ],
     "correct": "do more than expected",
     "explanation": "This idiom means to make a special effort beyond what is required."
@@ -68,10 +68,10 @@
   {
     "question": "What does <every cloud has a silver lining> mean?",
     "options": [
-      "clouds are silver in ordinary cases",
-      "bad situations have something positive",
       "it will rain in everyday usage",
-      "look at the sky as a general rule"
+      "look at the sky as a general rule",
+      "clouds are silver in ordinary cases",
+      "bad situations have something positive"
     ],
     "correct": "bad situations have something positive",
     "explanation": "This idiom means there is something good in every bad situation."
@@ -79,10 +79,10 @@
   {
     "question": "If you <miss the boat>, you:",
     "options": [
-      "are late for a ship",
       "miss an opportunity",
+      "take the wrong bus",
       "can't swim",
-      "take the wrong bus"
+      "are late for a ship"
     ],
     "correct": "miss an opportunity",
     "explanation": "This idiom means to miss a chance or opportunity."
@@ -90,10 +90,10 @@
   {
     "question": "What does <practice makes perfect> mean?",
     "options": [
+      "be perfect always in everyday usage",
       "perfection is easy as a general rule",
-      "doing something many times improves your skill",
       "practice is boring under normal circumstances",
-      "be perfect always in everyday usage"
+      "doing something many times improves your skill"
     ],
     "correct": "doing something many times improves your skill",
     "explanation": "This idiom means regular practice leads to improvement."
@@ -101,10 +101,10 @@
   {
     "question": "If something is <the tip of the iceberg>, it is:",
     "options": [
-      "very cold in everyday usage",
       "only a small part of a bigger problem",
-      "on top of ice for the most part",
-      "easy to see in ordinary cases"
+      "very cold in everyday usage",
+      "easy to see in ordinary cases",
+      "on top of ice for the most part"
     ],
     "correct": "only a small part of a bigger problem",
     "explanation": "This idiom means what you see is only a small part of a much larger issue."
@@ -112,10 +112,10 @@
   {
     "question": "What does <don't judge a book by its cover> mean?",
     "options": [
-      "books are important",
-      "don't judge by appearance",
       "read more books within the conventional framework",
-      "covers are nice when considering the broader context"
+      "books are important",
+      "covers are nice when considering the broader context",
+      "don't judge by appearance"
     ],
     "correct": "don't judge by appearance",
     "explanation": "This idiom means you shouldn't form opinions based only on how things look."
@@ -125,8 +125,8 @@
     "options": [
       "start a fire in standard terms",
       "work or study late at night",
-      "waste oil in everyday usage",
-      "cook at midnight when considering the broader context"
+      "cook at midnight when considering the broader context",
+      "waste oil in everyday usage"
     ],
     "correct": "work or study late at night",
     "explanation": "This idiom means to work or study until very late."
@@ -134,10 +134,10 @@
   {
     "question": "What does <a blessing in disguise> mean?",
     "options": [
-      "a hidden costume in this context",
       "something bad that turns out good",
-      "a religious event in common practice",
-      "a surprise gift in regular usage"
+      "a surprise gift in regular usage",
+      "a hidden costume in this context",
+      "a religious event in common practice"
     ],
     "correct": "something bad that turns out good",
     "explanation": "This idiom means something that seems bad at first but results in something good."
@@ -145,10 +145,10 @@
   {
     "question": "If you <get out of hand>, the situation:",
     "options": [
-      "is under control in this context",
       "becomes difficult to control",
       "is in your hand in this context",
-      "is easy in conventional terms"
+      "is easy in conventional terms",
+      "is under control in this context"
     ],
     "correct": "becomes difficult to control",
     "explanation": "This idiom means a situation becomes uncontrollable."
@@ -156,10 +156,10 @@
   {
     "question": "What does <take it easy> mean?",
     "options": [
-      "steal something",
       "relax and don't worry",
-      "carry something light",
-      "work harder"
+      "work harder",
+      "steal something",
+      "carry something light"
     ],
     "correct": "relax and don't worry",
     "explanation": "This idiom means to relax and not be stressed."
@@ -168,9 +168,9 @@
     "question": "If you <see eye to eye> with someone, you:",
     "options": [
       "look at their eyes",
-      "agree with them",
       "are the same height",
-      "stare at them"
+      "stare at them",
+      "agree with them"
     ],
     "correct": "agree with them",
     "explanation": "This idiom means to agree with someone completely."
@@ -179,9 +179,9 @@
     "question": "What does <when pigs fly> mean?",
     "options": [
       "pigs can fly",
-      "never / impossible",
+      "at the airport",
       "in the future",
-      "at the airport"
+      "never / impossible"
     ],
     "correct": "never / impossible",
     "explanation": "This idiom means something will never happen."
@@ -189,10 +189,10 @@
   {
     "question": "If you <pull someone's leg>, you:",
     "options": [
-      "hurt their leg",
-      "joke with them",
       "help them walk",
-      "push them"
+      "push them",
+      "joke with them",
+      "hurt their leg"
     ],
     "correct": "joke with them",
     "explanation": "This idiom means to joke or tease someone in a playful way."
@@ -200,10 +200,10 @@
   {
     "question": "What does <the best of both worlds> mean?",
     "options": [
-      "travel the world in this context",
       "enjoy advantages of two different things",
       "be the best in standard terms",
-      "live in two places in everyday usage"
+      "live in two places in everyday usage",
+      "travel the world in this context"
     ],
     "correct": "enjoy advantages of two different things",
     "explanation": "This idiom means to benefit from two different situations at the same time."
@@ -211,9 +211,9 @@
   {
     "question": "If you <add fuel to the fire>, you:",
     "options": [
-      "cook food in practical terms",
       "make a bad situation worse",
       "start a campfire as recognized by most authorities",
+      "cook food in practical terms",
       "help someone in this context"
     ],
     "correct": "make a bad situation worse",

@@ -2,10 +2,10 @@
   {
     "question": "The book ______ by millions of people.",
     "options": [
-      "is read",
-      "reads",
       "is reading",
-      "read"
+      "reads",
+      "read",
+      "is read"
     ],
     "correct": "is read",
     "explanation": "Present simple passive: is/are + past participle"
@@ -14,9 +14,9 @@
     "question": "The house ______ in 1920.",
     "options": [
       "built",
-      "was built",
+      "builds",
       "is built",
-      "builds"
+      "was built"
     ],
     "correct": "was built",
     "explanation": "Past simple passive: was/were + past participle"
@@ -25,9 +25,9 @@
     "question": "English ______ all over the world.",
     "options": [
       "speaks",
-      "is spoken",
       "is speaking",
-      "spoke"
+      "spoke",
+      "is spoken"
     ],
     "correct": "is spoken",
     "explanation": "Present simple passive for general facts"
@@ -36,9 +36,9 @@
     "question": "The letter ______ yesterday.",
     "options": [
       "was sent",
-      "sent",
+      "sends",
       "is sent",
-      "sends"
+      "sent"
     ],
     "correct": "was sent",
     "explanation": "Past simple passive with time expression"
@@ -46,10 +46,10 @@
   {
     "question": "The car ______ right now.",
     "options": [
-      "repairs according to standard definitions",
-      "is repairing",
       "is being repaired",
-      "was repaired"
+      "was repaired",
+      "repairs according to standard definitions",
+      "is repairing"
     ],
     "correct": "is being repaired",
     "explanation": "Present continuous passive: is/are being + past participle"
@@ -57,10 +57,10 @@
   {
     "question": "The project ______ by next week.",
     "options": [
-      "will finish",
-      "will be finished",
       "is finished",
-      "finishes within the conventional framework"
+      "finishes within the conventional framework",
+      "will finish",
+      "will be finished"
     ],
     "correct": "will be finished",
     "explanation": "Future simple passive: will be + past participle"
@@ -68,10 +68,10 @@
   {
     "question": "The cake ______ by my mother.",
     "options": [
-      "made",
       "was made",
-      "is making",
-      "makes"
+      "makes",
+      "made",
+      "is making"
     ],
     "correct": "was made",
     "explanation": "Past simple passive with 'by' agent"
@@ -79,10 +79,10 @@
   {
     "question": "The windows ______ every week.",
     "options": [
-      "clean",
-      "are cleaned",
+      "cleaned",
       "is cleaned",
-      "cleaned"
+      "are cleaned",
+      "clean"
     ],
     "correct": "are cleaned",
     "explanation": "Present simple passive for routines"
@@ -91,9 +91,9 @@
     "question": "The movie ______ in 2010.",
     "options": [
       "was released",
-      "released",
+      "releases",
       "is released",
-      "releases"
+      "released"
     ],
     "correct": "was released",
     "explanation": "Past simple passive for completed actions"
@@ -101,10 +101,10 @@
   {
     "question": "The problem ______ soon.",
     "options": [
-      "will solve",
-      "will be solved",
       "is solving",
-      "solves in the most widely accepted sense"
+      "solves in the most widely accepted sense",
+      "will be solved",
+      "will solve"
     ],
     "correct": "will be solved",
     "explanation": "Future passive for predictions"
@@ -112,10 +112,10 @@
   {
     "question": "The documents ______ at the moment.",
     "options": [
-      "are checking",
-      "are being checked",
       "check based on common understanding",
-      "checked when considering the broader context"
+      "checked when considering the broader context",
+      "are checking",
+      "are being checked"
     ],
     "correct": "are being checked",
     "explanation": "Present continuous passive for actions in progress"
@@ -123,10 +123,10 @@
   {
     "question": "The bridge ______ last year.",
     "options": [
-      "was destroyed",
-      "destroyed",
+      "destroys",
       "is destroyed",
-      "destroys"
+      "was destroyed",
+      "destroyed"
     ],
     "correct": "was destroyed",
     "explanation": "Past simple passive for past events"
@@ -134,10 +134,10 @@
   {
     "question": "The email ______ to all employees.",
     "options": [
-      "sent",
-      "was sent",
       "is sending",
-      "sends"
+      "was sent",
+      "sends",
+      "sent"
     ],
     "correct": "was sent",
     "explanation": "Past simple passive with indirect object"
@@ -145,10 +145,10 @@
   {
     "question": "The new policy ______ next month.",
     "options": [
-      "will introduce",
+      "is introducing",
       "will be introduced",
-      "introduces within the conventional framework",
-      "is introducing"
+      "will introduce",
+      "introduces within the conventional framework"
     ],
     "correct": "will be introduced",
     "explanation": "Future passive for scheduled events"
@@ -156,10 +156,10 @@
   {
     "question": "The song ______ by everyone at the party.",
     "options": [
+      "sings",
       "sang",
       "was sung",
-      "is singing",
-      "sings"
+      "is singing"
     ],
     "correct": "was sung",
     "explanation": "Past simple passive with 'by' phrase"
@@ -167,10 +167,10 @@
   {
     "question": "The report ______ at this moment.",
     "options": [
-      "writes according to standard definitions",
-      "is writing when considering the broader context",
       "is being written",
-      "was written"
+      "was written",
+      "writes according to standard definitions",
+      "is writing when considering the broader context"
     ],
     "correct": "is being written",
     "explanation": "Present continuous passive for current actions"
@@ -178,9 +178,9 @@
   {
     "question": "The building ______ in the earthquake.",
     "options": [
-      "damaged",
       "was damaged",
       "is damaging",
+      "damaged",
       "damages"
     ],
     "correct": "was damaged",
@@ -189,10 +189,10 @@
   {
     "question": "The package ______ tomorrow.",
     "options": [
-      "will deliver",
-      "will be delivered",
+      "is delivering",
       "delivers based on common understanding",
-      "is delivering"
+      "will be delivered",
+      "will deliver"
     ],
     "correct": "will be delivered",
     "explanation": "Future passive for future actions"
@@ -202,8 +202,8 @@
     "options": [
       "cleaned based on common understanding",
       "was being cleaned",
-      "is cleaned when considering the broader context",
-      "cleans when considering the broader context"
+      "cleans when considering the broader context",
+      "is cleaned when considering the broader context"
     ],
     "correct": "was being cleaned",
     "explanation": "Past continuous passive: was/were being + past participle"
@@ -211,9 +211,9 @@
   {
     "question": "The decision ______ by the committee.",
     "options": [
-      "made",
       "was made",
       "is making",
+      "made",
       "makes"
     ],
     "correct": "was made",

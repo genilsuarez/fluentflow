@@ -2,12 +2,12 @@
   {
     "question": "_____ by the news, she couldn't speak for several minutes.",
     "options": [
-      "Shocking",
       "Shocked",
-      "Having shocked",
-      "To shock"
+      "Shocking",
+      "To shock",
+      "Having shocked"
     ],
-    "correct": 1,
+    "correct": "Shocked",
     "explanation": "Past participle (shocked) is used when the subject experiences the feeling."
   },
   {
@@ -15,32 +15,32 @@
     "options": [
       "boring",
       "bored",
-      "having bored",
-      "to bore"
+      "to bore",
+      "having bored"
     ],
-    "correct": 0,
+    "correct": "boring",
     "explanation": "Present participle (boring) describes what causes the feeling."
   },
   {
     "question": "_____ all her homework, she went out to play.",
     "options": [
-      "Finishing when considering the broader context",
       "Finished in the most widely accepted sense",
+      "Finishing when considering the broader context",
       "Having finished",
       "To finish as recognized by most authorities"
     ],
-    "correct": 2,
+    "correct": "Having finished",
     "explanation": "Having + past participle shows an action completed before another action."
   },
   {
     "question": "The children, _____ in the park, didn't hear their mother calling.",
     "options": [
-      "playing",
-      "played",
       "having played",
-      "to play"
+      "playing",
+      "to play",
+      "played"
     ],
-    "correct": 0,
+    "correct": "playing",
     "explanation": "Present participle (playing) describes simultaneous action."
   },
   {
@@ -48,164 +48,164 @@
     "options": [
       "Building",
       "Built",
-      "Having built",
-      "To build"
+      "To build",
+      "Having built"
     ],
-    "correct": 1,
+    "correct": "Built",
     "explanation": "Past participle (built) in passive meaning."
   },
   {
     "question": "_____ lived in Paris for ten years, she speaks French fluently.",
     "options": [
+      "To live when considering the broader context",
       "Living as recognized by most authorities",
-      "Lived as recognized by most authorities",
       "Having lived",
-      "To live when considering the broader context"
+      "Lived as recognized by most authorities"
     ],
-    "correct": 2,
+    "correct": "Having lived",
     "explanation": "Having + past participle shows prior experience affecting the present."
   },
   {
     "question": "The results were quite _____.",
     "options": [
-      "disappointing",
-      "disappointed",
       "having disappointed",
-      "to disappoint"
+      "to disappoint",
+      "disappointing",
+      "disappointed"
     ],
-    "correct": 0,
+    "correct": "disappointing",
     "explanation": "Present participle describes what causes the feeling."
   },
   {
     "question": "_____ by everyone, he felt very lonely.",
     "options": [
       "Ignoring",
-      "Ignored",
       "Having ignored",
-      "To ignore"
+      "To ignore",
+      "Ignored"
     ],
-    "correct": 1,
+    "correct": "Ignored",
     "explanation": "Past participle (ignored) shows the subject receives the action."
   },
   {
     "question": "_____ the letter, he put it in an envelope.",
     "options": [
       "Writing in the most widely accepted sense",
-      "Written within the conventional framework",
+      "To write when considering the broader context",
       "Having written",
-      "To write when considering the broader context"
+      "Written within the conventional framework"
     ],
-    "correct": 2,
+    "correct": "Having written",
     "explanation": "Having + past participle shows completed action before another."
   },
   {
     "question": "The lecture was absolutely _____.",
     "options": [
-      "fascinating",
-      "fascinated",
       "having fascinated",
-      "to fascinate"
+      "fascinated",
+      "to fascinate",
+      "fascinating"
     ],
-    "correct": 0,
+    "correct": "fascinating",
     "explanation": "Present participle describes the quality of the lecture."
   },
   {
     "question": "_____ no other choice, we decided to accept the offer.",
     "options": [
-      "Having",
-      "Had",
+      "To have",
       "Have",
-      "To have"
+      "Had",
+      "Having"
     ],
-    "correct": 0,
+    "correct": "Having",
     "explanation": "Having + object shows reason or cause."
   },
   {
     "question": "The man _____ next to me is a famous author.",
     "options": [
-      "sitting",
+      "to sit",
       "sat",
       "having sat",
-      "to sit"
+      "sitting"
     ],
-    "correct": 0,
+    "correct": "sitting",
     "explanation": "Present participle used as adjective describing the man."
   },
   {
     "question": "_____ carefully, the instructions are easy to follow.",
     "options": [
-      "Reading",
-      "Read",
       "Having read",
+      "Read",
+      "Reading",
       "To read"
     ],
-    "correct": 1,
+    "correct": "Read",
     "explanation": "Past participle in passive meaning (when read)."
   },
   {
     "question": "She felt _____ after the long journey.",
     "options": [
       "exhausting",
-      "exhausted",
       "having exhausted",
+      "exhausted",
       "to exhaust"
     ],
-    "correct": 1,
+    "correct": "exhausted",
     "explanation": "Past participle describes how she felt."
   },
   {
     "question": "_____ the exam, students must wait for the results.",
     "options": [
-      "Taking according to standard definitions",
-      "Taken when considering the broader context",
       "Having taken",
-      "To take when considering the broader context"
+      "To take when considering the broader context",
+      "Taken when considering the broader context",
+      "Taking according to standard definitions"
     ],
-    "correct": 2,
+    "correct": "Having taken",
     "explanation": "Having + past participle shows completed action."
   },
   {
     "question": "The story was very _____.",
     "options": [
       "moving",
+      "to move",
       "moved",
-      "having moved",
-      "to move"
+      "having moved"
     ],
-    "correct": 0,
+    "correct": "moving",
     "explanation": "Present participle describes the quality of the story."
   },
   {
     "question": "_____ in the rain, we arrived home completely wet.",
     "options": [
-      "Walking in the most widely accepted sense",
       "Walked in the most widely accepted sense",
+      "Walking in the most widely accepted sense",
       "Having walked",
       "To walk when considering the broader context"
     ],
-    "correct": 2,
+    "correct": "Having walked",
     "explanation": "Having + past participle shows the reason for being wet."
   },
   {
     "question": "The news was quite _____.",
     "options": [
-      "surprising",
-      "surprised",
+      "to surprise",
       "having surprised",
-      "to surprise"
+      "surprised",
+      "surprising"
     ],
-    "correct": 0,
+    "correct": "surprising",
     "explanation": "Present participle describes the nature of the news."
   },
   {
     "question": "_____ by his parents, he became very successful.",
     "options": [
-      "Encouraging",
-      "Encouraged",
       "Having encouraged",
-      "To encourage"
+      "To encourage",
+      "Encouraging",
+      "Encouraged"
     ],
-    "correct": 1,
+    "correct": "Encouraged",
     "explanation": "Past participle shows he received encouragement."
   },
   {
@@ -213,65 +213,65 @@
     "options": [
       "Realizing according to standard definitions",
       "Realized as recognized by most authorities",
-      "Having realized",
-      "To realize"
+      "To realize",
+      "Having realized"
     ],
-    "correct": 2,
+    "correct": "Having realized",
     "explanation": "Having + past participle shows action completed before apologizing."
   },
   {
     "question": "The experience was truly _____.",
     "options": [
+      "to terrify",
       "terrifying",
       "terrified",
-      "having terrified",
-      "to terrify"
+      "having terrified"
     ],
-    "correct": 0,
+    "correct": "terrifying",
     "explanation": "Present participle describes the nature of the experience."
   },
   {
     "question": "_____ all the evidence, the jury reached a verdict.",
     "options": [
-      "Considering when considering the broader context",
       "Considered within the conventional framework",
       "Having considered",
-      "To consider when considering the broader context"
+      "To consider when considering the broader context",
+      "Considering when considering the broader context"
     ],
-    "correct": 2,
+    "correct": "Having considered",
     "explanation": "Having + past participle shows completed deliberation."
   },
   {
     "question": "The children were _____ by the clown's performance.",
     "options": [
-      "amusing",
-      "amused",
       "having amused",
-      "to amuse"
+      "to amuse",
+      "amused",
+      "amusing"
     ],
-    "correct": 1,
+    "correct": "amused",
     "explanation": "Past participle shows the children's reaction."
   },
   {
     "question": "_____ in the accident, he couldn't work for months.",
     "options": [
       "Injuring",
-      "Injured",
+      "To injure",
       "Having injured",
-      "To injure"
+      "Injured"
     ],
-    "correct": 1,
+    "correct": "Injured",
     "explanation": "Past participle shows he received the injury."
   },
   {
     "question": "_____ the book three times, I know the story well.",
     "options": [
-      "Reading",
       "Read",
+      "Reading",
       "Having read",
       "To read"
     ],
-    "correct": 2,
+    "correct": "Having read",
     "explanation": "Having + past participle shows repeated past action affecting present knowledge."
   }
 ]

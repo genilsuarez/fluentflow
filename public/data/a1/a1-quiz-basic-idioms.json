@@ -2,10 +2,10 @@
   {
     "question": "If it is <raining cats and dogs>, it means:",
     "options": [
-      "animals are falling",
-      "it is raining very hard",
       "it is sunny",
-      "cats and dogs are playing"
+      "it is raining very hard",
+      "cats and dogs are playing",
+      "animals are falling"
     ],
     "correct": "it is raining very hard",
     "explanation": "This idiom means it is raining very heavily."
@@ -13,10 +13,10 @@
   {
     "question": "What does <a piece of cake> mean?",
     "options": [
-      "a type of dessert",
       "something very easy",
       "something expensive",
-      "a birthday party"
+      "a birthday party",
+      "a type of dessert"
     ],
     "correct": "something very easy",
     "explanation": "This idiom means something is very easy to do."
@@ -24,10 +24,10 @@
   {
     "question": "If you <break a leg>, someone is wishing you:",
     "options": [
+      "to run fast",
       "bad luck",
-      "to get hurt",
       "good luck",
-      "to run fast"
+      "to get hurt"
     ],
     "correct": "good luck",
     "explanation": "This idiom is used to wish someone <good luck>, especially before a performance."
@@ -35,9 +35,9 @@
   {
     "question": "What does <it's not my cup of tea> mean?",
     "options": [
+      "the tea is cold when considering the broader context",
       "I don't like tea based on common understanding",
       "it's not something I enjoy",
-      "the tea is cold when considering the broader context",
       "I prefer coffee when considering the broader context"
     ],
     "correct": "it's not something I enjoy",
@@ -46,10 +46,10 @@
   {
     "question": "If someone says <hold on>, they want you to:",
     "options": [
-      "grab something",
-      "wait a moment",
       "run away",
-      "sit down"
+      "sit down",
+      "grab something",
+      "wait a moment"
     ],
     "correct": "wait a moment",
     "explanation": "This idiom means to wait for a short time."
@@ -59,8 +59,8 @@
     "options": [
       "every night",
       "very rarely",
-      "when the moon is blue",
-      "every month"
+      "every month",
+      "when the moon is blue"
     ],
     "correct": "very rarely",
     "explanation": "This idiom means something happens very infrequently."
@@ -69,8 +69,8 @@
     "question": "If you are <under the weather>, you are:",
     "options": [
       "outside in rain",
-      "feeling sick",
       "very happy",
+      "feeling sick",
       "cold"
     ],
     "correct": "feeling sick",
@@ -79,10 +79,10 @@
   {
     "question": "What does <time flies> mean?",
     "options": [
-      "clocks have wings",
-      "time passes quickly",
       "it is late",
-      "time stops"
+      "time passes quickly",
+      "time stops",
+      "clocks have wings"
     ],
     "correct": "time passes quickly",
     "explanation": "This idiom means time seems to pass very fast."
@@ -90,9 +90,9 @@
   {
     "question": "If something costs <an arm and a leg>, it is:",
     "options": [
+      "very expensive",
       "free based on common understanding",
       "cheap based on common understanding",
-      "very expensive",
       "painful within the conventional framework"
     ],
     "correct": "very expensive",
@@ -101,10 +101,10 @@
   {
     "question": "What does <keep an eye on> mean?",
     "options": [
-      "close one eye",
       "watch carefully",
+      "sleep when considering the broader context",
       "look away according to standard definitions",
-      "sleep when considering the broader context"
+      "close one eye"
     ],
     "correct": "watch carefully",
     "explanation": "This idiom means to watch something or someone carefully."
@@ -123,10 +123,10 @@
   {
     "question": "What does <let the cat out of the bag> mean?",
     "options": [
-      "free a cat",
-      "reveal a secret",
       "open a bag",
-      "go shopping"
+      "go shopping",
+      "free a cat",
+      "reveal a secret"
     ],
     "correct": "reveal a secret",
     "explanation": "This idiom means to accidentally <reveal a secret>."
@@ -134,10 +134,10 @@
   {
     "question": "If someone says <no pain, no gain>, they mean:",
     "options": [
-      "pain is bad for the most part",
-      "you must suffer to succeed",
       "don't exercise in the most widely accepted sense",
-      "life is easy in regular usage"
+      "pain is bad for the most part",
+      "life is easy in regular usage",
+      "you must suffer to succeed"
     ],
     "correct": "you must suffer to succeed",
     "explanation": "This idiom means you need to work hard to achieve results."
@@ -145,8 +145,8 @@
   {
     "question": "What does <so far, so good> mean?",
     "options": [
-      "it is far away as a general rule",
       "everything is fine until now",
+      "it is far away as a general rule",
       "it is finished in this context",
       "keep going in common practice"
     ],
@@ -157,9 +157,9 @@
     "question": "If you <call it a day>, you:",
     "options": [
       "name the day",
-      "stop working",
       "start early",
-      "make a phone call"
+      "make a phone call",
+      "stop working"
     ],
     "correct": "stop working",
     "explanation": "This idiom means to <stop working> for the day."
@@ -168,9 +168,9 @@
     "question": "What does <better late than never> mean?",
     "options": [
       "be on time in a typical scenario",
+      "time is money in practical terms",
       "it's good to arrive even if late",
-      "never be late in everyday usage",
-      "time is money in practical terms"
+      "never be late in everyday usage"
     ],
     "correct": "it's good to arrive even if late",
     "explanation": "This idiom means it is better to do something late than not at all."
@@ -178,8 +178,8 @@
   {
     "question": "If you <get the ball rolling>, you:",
     "options": [
-      "play football",
       "start an activity",
+      "play football",
       "throw a ball",
       "stop playing"
     ],
@@ -191,8 +191,8 @@
     "options": [
       "sleep well in regular usage",
       "think about it overnight",
-      "go to bed early within the conventional framework",
-      "use a pillow when considering the broader context"
+      "use a pillow when considering the broader context",
+      "go to bed early within the conventional framework"
     ],
     "correct": "think about it overnight",
     "explanation": "This idiom means to wait until the next day before making a decision."
@@ -200,8 +200,8 @@
   {
     "question": "If something is <a long shot>, it is:",
     "options": [
-      "very likely in the most widely accepted sense",
       "unlikely to succeed",
+      "very likely in the most widely accepted sense",
       "a long distance",
       "a photograph within the conventional framework"
     ],
@@ -212,9 +212,9 @@
     "question": "What does <hang in there> mean?",
     "options": [
       "hold onto something",
-      "don't give up",
       "hang clothes",
-      "wait outside"
+      "wait outside",
+      "don't give up"
     ],
     "correct": "don't give up",
     "explanation": "This idiom is used to encourage someone to keep trying."

@@ -13,10 +13,10 @@
   {
     "question": "What does <epistemological> relate to?",
     "options": [
-      "emotions in regular usage",
+      "time in ordinary cases",
       "the nature of knowledge",
-      "physical objects",
-      "time in ordinary cases"
+      "emotions in regular usage",
+      "physical objects"
     ],
     "correct": "the nature of knowledge",
     "explanation": "<Epistemological> relates to the theory of knowledge and how we know what we know."
@@ -25,9 +25,9 @@
     "question": "What is <ontological> concerned with?",
     "options": [
       "language in the most widely accepted sense",
-      "the nature of being",
       "mathematics based on common understanding",
-      "history when considering the broader context"
+      "history when considering the broader context",
+      "the nature of being"
     ],
     "correct": "the nature of being",
     "explanation": "Ontological relates to the branch of philosophy dealing with <the nature of being>."
@@ -35,10 +35,10 @@
   {
     "question": "What is a <dialectical> approach?",
     "options": [
-      "one-sided as generally defined",
-      "based on examining contradictions",
       "purely emotional in most situations",
-      "random by common definition"
+      "random by common definition",
+      "based on examining contradictions",
+      "one-sided as generally defined"
     ],
     "correct": "based on examining contradictions",
     "explanation": "<Dialectical> refers to a method of examining ideas through contradictions and their resolution."
@@ -46,9 +46,9 @@
   {
     "question": "What does <heuristic> mean?",
     "options": [
+      "final conclusion in the most widely accepted sense",
       "definitive answer",
       "method enabling discovery",
-      "final conclusion in the most widely accepted sense",
       "absolute truth within the conventional framework"
     ],
     "correct": "method enabling discovery",
@@ -57,10 +57,10 @@
   {
     "question": "What is <empiricism>?",
     "options": [
-      "pure logic as generally defined",
-      "knowledge based on experience",
       "religious belief in regular usage",
-      "mathematical proof when considering the broader context"
+      "knowledge based on experience",
+      "mathematical proof when considering the broader context",
+      "pure logic as generally defined"
     ],
     "correct": "knowledge based on experience",
     "explanation": "<Empiricism> is the theory that knowledge comes primarily from sensory experience."
@@ -68,10 +68,10 @@
   {
     "question": "What is <rationalism>?",
     "options": [
-      "emotional thinking",
       "knowledge based on reason",
-      "random guessing when considering the broader context",
-      "sensory experience"
+      "emotional thinking",
+      "sensory experience",
+      "random guessing when considering the broader context"
     ],
     "correct": "knowledge based on reason",
     "explanation": "<Rationalism> is the theory that reason is the chief source of knowledge."
@@ -79,10 +79,10 @@
   {
     "question": "What is <reductionism>?",
     "options": [
-      "expanding complexity",
       "simplifying to basic elements",
-      "adding details in standard terms",
-      "avoiding analysis in this context"
+      "avoiding analysis in this context",
+      "expanding complexity",
+      "adding details in standard terms"
     ],
     "correct": "simplifying to basic elements",
     "explanation": "<Reductionism> is the practice of analyzing complex things by reducing them to simpler components."
@@ -90,8 +90,8 @@
   {
     "question": "What does <holistic> mean?",
     "options": [
-      "focusing on parts in the most widely accepted sense",
       "considering the whole system",
+      "focusing on parts in the most widely accepted sense",
       "ignoring context in this context",
       "random approach in regular usage"
     ],
@@ -101,9 +101,9 @@
   {
     "question": "What is a <dichotomy>?",
     "options": [
+      "multiple options",
       "unity in standard terms",
       "division into two parts",
-      "multiple options",
       "gradual change in the most widely accepted sense"
     ],
     "correct": "division into two parts",
@@ -112,10 +112,10 @@
   {
     "question": "What is an <antithesis>?",
     "options": [
-      "agreement based on common understanding",
-      "direct opposite",
       "similarity",
-      "compromise"
+      "direct opposite",
+      "compromise",
+      "agreement based on common understanding"
     ],
     "correct": "direct opposite",
     "explanation": "Antithesis is a person or thing that is the <direct opposite> of someone or something else."
@@ -124,9 +124,9 @@
     "question": "What is a <paradox>?",
     "options": [
       "simple truth when considering the broader context",
+      "clear solution in the most widely accepted sense",
       "apparent contradiction",
-      "obvious fact based on common understanding",
-      "clear solution in the most widely accepted sense"
+      "obvious fact based on common understanding"
     ],
     "correct": "apparent contradiction",
     "explanation": "A <paradox> is a seemingly absurd or contradictory statement that may nonetheless be true."
@@ -135,9 +135,9 @@
     "question": "What is a <corollary>?",
     "options": [
       "contradiction",
+      "opposite when considering the broader context",
       "natural consequence",
-      "unrelated fact",
-      "opposite when considering the broader context"
+      "unrelated fact"
     ],
     "correct": "natural consequence",
     "explanation": "A <corollary> is a proposition that follows from one already proved."
@@ -145,10 +145,10 @@
   {
     "question": "What is a <caveat>?",
     "options": [
+      "conclusion in this context",
       "guarantee for the most part",
-      "warning or qualification",
       "promise for the most part",
-      "conclusion in this context"
+      "warning or qualification"
     ],
     "correct": "warning or qualification",
     "explanation": "A <caveat> is a warning or proviso of specific conditions or limitations."
@@ -168,8 +168,8 @@
     "question": "What is <deduction>?",
     "options": [
       "specific to general",
-      "general to specific",
       "random inference",
+      "general to specific",
       "emotional reasoning"
     ],
     "correct": "general to specific",
@@ -178,9 +178,9 @@
   {
     "question": "What is <induction>?",
     "options": [
-      "general to specific",
       "specific to general",
       "circular reasoning",
+      "general to specific",
       "no reasoning"
     ],
     "correct": "specific to general",
@@ -189,10 +189,10 @@
   {
     "question": "What is <falsifiability>?",
     "options": [
-      "always true as generally defined",
       "capable of being proven false",
-      "never testable in ordinary cases",
-      "purely subjective in this context"
+      "purely subjective in this context",
+      "always true as generally defined",
+      "never testable in ordinary cases"
     ],
     "correct": "capable of being proven false",
     "explanation": "<Falsifiability> is the capacity for a statement or theory to be proven false by observation."
@@ -200,10 +200,10 @@
   {
     "question": "What is a <tautology>?",
     "options": [
-      "new information",
-      "redundant statement",
       "false claim in the most widely accepted sense",
-      "complex idea in the most widely accepted sense"
+      "new information",
+      "complex idea in the most widely accepted sense",
+      "redundant statement"
     ],
     "correct": "redundant statement",
     "explanation": "A <tautology> is a statement that is true by necessity or by virtue of its logical form."
@@ -211,10 +211,10 @@
   {
     "question": "What is <ad hominem>?",
     "options": [
-      "logical argument",
       "personal attack",
-      "factual evidence",
-      "neutral observation"
+      "logical argument",
+      "neutral observation",
+      "factual evidence"
     ],
     "correct": "personal attack",
     "explanation": "<Ad hominem> is an argument directed against a person rather than their position."

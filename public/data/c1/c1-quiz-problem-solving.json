@@ -3,9 +3,9 @@
     "question": "What does <troubleshoot> mean?",
     "options": [
       "create problems in this context",
-      "identify and solve problems",
       "ignore issues in this context",
-      "complicate matters"
+      "complicate matters",
+      "identify and solve problems"
     ],
     "correct": "identify and solve problems",
     "explanation": "<Troubleshoot> means to analyze and solve problems in a system or process."
@@ -14,8 +14,8 @@
     "question": "What is a <workaround>?",
     "options": [
       "permanent solution as recognized by most authorities",
-      "temporary solution to problem",
       "creating problems in this context",
+      "temporary solution to problem",
       "avoiding work in everyday usage"
     ],
     "correct": "temporary solution to problem",
@@ -24,10 +24,10 @@
   {
     "question": "What does <diagnose> mean?",
     "options": [
-      "ignore in a typical scenario",
-      "identify nature of problem",
       "create for the most part",
-      "worsen in most situations"
+      "worsen in most situations",
+      "ignore in a typical scenario",
+      "identify nature of problem"
     ],
     "correct": "identify nature of problem",
     "explanation": "<Diagnose> means to identify the nature of an illness or problem by examination."
@@ -35,10 +35,10 @@
   {
     "question": "What is <root cause>?",
     "options": [
-      "symptom for the most part",
-      "fundamental reason for problem",
+      "effect as generally defined",
       "solution for the most part",
-      "effect as generally defined"
+      "symptom for the most part",
+      "fundamental reason for problem"
     ],
     "correct": "fundamental reason for problem",
     "explanation": "<Root cause> is the fundamental reason for the occurrence of a problem."
@@ -47,8 +47,8 @@
     "question": "What does <mitigate> mean?",
     "options": [
       "worsen based on common understanding",
-      "make less severe",
       "ignore when considering the broader context",
+      "make less severe",
       "create within the conventional framework"
     ],
     "correct": "make less severe",
@@ -57,9 +57,9 @@
   {
     "question": "What is <contingency plan>?",
     "options": [
+      "no plan in regular usage",
       "main plan in this context",
       "backup plan for emergencies",
-      "no plan in regular usage",
       "old plan in this context"
     ],
     "correct": "backup plan for emergencies",
@@ -68,9 +68,9 @@
   {
     "question": "What does <prioritize> mean?",
     "options": [
-      "randomize when considering the broader context",
-      "arrange by importance",
       "ignore in this context",
+      "arrange by importance",
+      "randomize when considering the broader context",
       "delay in this context"
     ],
     "correct": "arrange by importance",
@@ -90,10 +90,10 @@
   {
     "question": "What does <optimize> mean?",
     "options": [
-      "worsen in the most widely accepted sense",
-      "make best use of",
       "complicate based on common understanding",
-      "reduce within the conventional framework"
+      "worsen in the most widely accepted sense",
+      "reduce within the conventional framework",
+      "make best use of"
     ],
     "correct": "make best use of",
     "explanation": "<Optimize> means to make the best or most effective use of a situation or resource."
@@ -101,10 +101,10 @@
   {
     "question": "What is <critical thinking>?",
     "options": [
-      "complaining under normal circumstances",
+      "criticizing under normal circumstances",
       "objective analysis to form judgment",
       "accepting everything in common practice",
-      "criticizing under normal circumstances"
+      "complaining under normal circumstances"
     ],
     "correct": "objective analysis to form judgment",
     "explanation": "<Critical thinking> is the objective analysis and evaluation of an issue to form a judgment."
@@ -112,10 +112,10 @@
   {
     "question": "What does <brainstorm> mean?",
     "options": [
-      "think alone when considering the broader context",
       "generate ideas in group",
-      "criticize ideas",
-      "avoid thinking within the conventional framework"
+      "avoid thinking within the conventional framework",
+      "think alone when considering the broader context",
+      "criticize ideas"
     ],
     "correct": "generate ideas in group",
     "explanation": "<Brainstorm> means to produce an idea or way of solving a problem through group discussion."
@@ -123,10 +123,10 @@
   {
     "question": "What is <feasibility>?",
     "options": [
-      "impossibility when considering the broader context",
-      "state of being possible",
+      "complexity in this context",
       "difficulty in this context",
-      "complexity in this context"
+      "impossibility when considering the broader context",
+      "state of being possible"
     ],
     "correct": "state of being possible",
     "explanation": "<Feasibility> is the state or degree of being easily or conveniently done."
@@ -134,10 +134,10 @@
   {
     "question": "What does <implement> mean?",
     "options": [
-      "plan only within the conventional framework",
-      "put into effect",
       "discuss in the most widely accepted sense",
-      "cancel in the most widely accepted sense"
+      "put into effect",
+      "cancel in the most widely accepted sense",
+      "plan only within the conventional framework"
     ],
     "correct": "put into effect",
     "explanation": "<Implement> means to put a decision or plan into effect."
@@ -145,10 +145,10 @@
   {
     "question": "What is <trade-off>?",
     "options": [
-      "perfect solution as recognized by most authorities",
       "balance between two things",
+      "complete win in regular usage",
       "no compromise in this context",
-      "complete win in regular usage"
+      "perfect solution as recognized by most authorities"
     ],
     "correct": "balance between two things",
     "explanation": "A <trade-off> is a balance achieved between two desirable but incompatible features."
@@ -156,10 +156,10 @@
   {
     "question": "What does <assess> mean?",
     "options": [
-      "ignore as generally defined",
-      "evaluate nature or quality",
       "guess as a general rule",
-      "assume in this context"
+      "evaluate nature or quality",
+      "assume in this context",
+      "ignore as generally defined"
     ],
     "correct": "evaluate nature or quality",
     "explanation": "<Assess> means to evaluate or estimate the nature, ability, or quality of something."
@@ -167,10 +167,10 @@
   {
     "question": "What is <proactive>?",
     "options": [
-      "reactive in this context",
-      "acting in anticipation",
+      "delayed as a general rule",
       "passive as a general rule",
-      "delayed as a general rule"
+      "acting in anticipation",
+      "reactive in this context"
     ],
     "correct": "acting in anticipation",
     "explanation": "<Proactive> means creating or controlling a situation by causing something to happen rather than responding after it happens."
@@ -178,10 +178,10 @@
   {
     "question": "What does <escalate> mean?",
     "options": [
-      "resolve in regular usage",
       "increase in intensity",
-      "decrease in this context",
-      "maintain in this context"
+      "maintain in this context",
+      "resolve in regular usage",
+      "decrease in this context"
     ],
     "correct": "increase in intensity",
     "explanation": "<Escalate> means to increase rapidly in intensity or seriousness."
@@ -189,10 +189,10 @@
   {
     "question": "What is <resolution>?",
     "options": [
-      "problem in standard terms",
+      "delay for the most part",
       "firm decision or solution",
-      "confusion in practical terms",
-      "delay for the most part"
+      "problem in standard terms",
+      "confusion in practical terms"
     ],
     "correct": "firm decision or solution",
     "explanation": "<Resolution> is a firm decision to do or not do something; the action of solving a problem."
@@ -200,10 +200,10 @@
   {
     "question": "What does <collaborate> mean?",
     "options": [
-      "work alone in regular usage",
-      "work jointly with others",
       "compete for the most part",
-      "avoid in regular usage"
+      "work jointly with others",
+      "avoid in regular usage",
+      "work alone in regular usage"
     ],
     "correct": "work jointly with others",
     "explanation": "<Collaborate> means to work jointly on an activity, especially to produce something."
@@ -211,9 +211,9 @@
   {
     "question": "What is <systematic approach>?",
     "options": [
-      "random method",
-      "methodical procedure",
       "chaotic process",
+      "methodical procedure",
+      "random method",
       "guessing based on common understanding"
     ],
     "correct": "methodical procedure",

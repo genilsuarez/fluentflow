@@ -3,9 +3,9 @@
     "question": "What does the phrasal verb \"phase out\" mean?",
     "options": [
       "To gradually eliminate or discontinue something",
-      "To introduce something new in standard terms",
       "To pause temporarily in this context",
-      "To reorganise a process in everyday usage"
+      "To reorganise a process in everyday usage",
+      "To introduce something new in standard terms"
     ],
     "correct": "To gradually eliminate or discontinue something",
     "explanation": "<Phase out> means to gradually stop using or producing something over a period of time.",
@@ -17,8 +17,8 @@
     "options": [
       "The deal fell through at the last minute.",
       "The deal fell through with success.",
-      "The deal fell through to completion.",
-      "The deal fell through our expectations."
+      "The deal fell through our expectations.",
+      "The deal fell through to completion."
     ],
     "correct": "The deal fell through at the last minute.",
     "explanation": "<Fall through> means a plan or deal fails to happen or materialise.",
@@ -28,10 +28,10 @@
   {
     "question": "What does \"iron out\" mean in a professional context?",
     "options": [
-      "To resolve problems or difficulties",
       "To press clothing in conventional terms",
-      "To straighten a structure",
-      "To simplify a process in everyday usage"
+      "To resolve problems or difficulties",
+      "To simplify a process in everyday usage",
+      "To straighten a structure"
     ],
     "correct": "To resolve problems or difficulties",
     "explanation": "<Iron out> means to resolve or smooth out problems, disagreements, or complications.",
@@ -41,10 +41,10 @@
   {
     "question": "Which phrasal verb means \"to resign from a position\"?",
     "options": [
-      "Step down",
-      "Step up",
       "Step back",
-      "Step out"
+      "Step out",
+      "Step up",
+      "Step down"
     ],
     "correct": "Step down",
     "explanation": "<Step down> means to resign from a position of authority or responsibility.",
@@ -55,8 +55,8 @@
     "question": "What does \"gloss over\" mean?",
     "options": [
       "To treat something superficially or avoid dealing with it",
-      "To explain in great detail in this context in ordinary cases",
       "To add a shiny finish as widely accepted as widely accepted",
+      "To explain in great detail in this context in ordinary cases",
       "To review carefully as generally defined in the usual sense"
     ],
     "correct": "To treat something superficially or avoid dealing with it",
@@ -67,10 +67,10 @@
   {
     "question": "Complete: \"The committee ______ a comprehensive report on the findings.\"",
     "options": [
-      "drew up",
-      "drew out",
       "drew on",
-      "drew back"
+      "drew up",
+      "drew back",
+      "drew out"
     ],
     "correct": "drew up",
     "explanation": "<Draw up> means to prepare or write a formal document, plan, or list. <Drew up> is the past simple form of <Draw up>.",
@@ -80,10 +80,10 @@
   {
     "question": "What does \"water down\" mean?",
     "options": [
-      "To weaken or dilute the strength of something",
       "To add water to a drink under normal circumstances",
-      "To reduce the price of something as a general rule",
-      "To simplify language in standard terms"
+      "To simplify language in standard terms",
+      "To weaken or dilute the strength of something",
+      "To reduce the price of something as a general rule"
     ],
     "correct": "To weaken or dilute the strength of something",
     "explanation": "<Water down> means to make something weaker or less effective, often a proposal or policy.",
@@ -93,10 +93,10 @@
   {
     "question": "Which phrasal verb means \"to include something in a calculation or plan\"?",
     "options": [
-      "Factor in",
-      "Factor out",
       "Factor up",
-      "Factor through"
+      "Factor in",
+      "Factor through",
+      "Factor out"
     ],
     "correct": "Factor in",
     "explanation": "<Factor in> means to include a particular element when making a calculation or decision.",
@@ -106,10 +106,10 @@
   {
     "question": "What does \"pass over\" mean in a workplace context?",
     "options": [
+      "To transfer responsibility in this context",
       "To ignore someone for a promotion or opportunity",
-      "To hand something to a colleague in conventional terms",
       "To review a document for the most part",
-      "To transfer responsibility in this context"
+      "To hand something to a colleague in conventional terms"
     ],
     "correct": "To ignore someone for a promotion or opportunity",
     "explanation": "<Pass over> means to overlook or ignore someone when giving a promotion or opportunity.",
@@ -119,10 +119,10 @@
   {
     "question": "Complete: \"The team ______ the evidence to reconstruct what had happened.\"",
     "options": [
-      "pieced together",
-      "pieced out",
       "pieced up",
-      "pieced through"
+      "pieced together",
+      "pieced through",
+      "pieced out"
     ],
     "correct": "pieced together",
     "explanation": "<Piece together> means to reconstruct something from separate parts or fragments of information. <Pieced together> is the past simple form of <Piece together>.",
@@ -132,10 +132,10 @@
   {
     "question": "What does \"fend off\" mean?",
     "options": [
-      "To defend against an attack or unwanted approach",
-      "To send someone away politely in common practice",
       "To avoid a difficult question as typically understood",
-      "To protect a resource as a general rule"
+      "To protect a resource as a general rule",
+      "To send someone away politely in common practice",
+      "To defend against an attack or unwanted approach"
     ],
     "correct": "To defend against an attack or unwanted approach",
     "explanation": "<Fend off> means to defend yourself against an attack, criticism, or unwanted attention.",
@@ -145,10 +145,10 @@
   {
     "question": "Which phrasal verb means \"to expand into new areas\"?",
     "options": [
+      "Branch into",
       "Branch out",
       "Branch off",
-      "Branch up",
-      "Branch into"
+      "Branch up"
     ],
     "correct": "Branch out",
     "explanation": "<Branch out> means to expand or diversify into new areas of activity.",
@@ -158,10 +158,10 @@
   {
     "question": "What does \"scale back\" mean?",
     "options": [
-      "To reduce the size or scope of something",
-      "To return to a previous level in this context",
       "To measure something precisely",
-      "To increase gradually in common practice"
+      "To increase gradually in common practice",
+      "To return to a previous level in this context",
+      "To reduce the size or scope of something"
     ],
     "correct": "To reduce the size or scope of something",
     "explanation": "<Scale back> means to reduce the size, extent, or ambition of something.",
@@ -171,10 +171,10 @@
   {
     "question": "Complete: \"She was ______ by the unexpected turn of events.\"",
     "options": [
-      "taken aback",
-      "taken over",
+      "taken in",
       "taken apart",
-      "taken in"
+      "taken over",
+      "taken aback"
     ],
     "correct": "taken aback",
     "explanation": "<Taken aback> means to be surprised or shocked by something unexpected. <Taken aback> is the past participle form of <Take aback>.",
@@ -185,8 +185,8 @@
     "question": "What does \"hold up\" mean when referring to a project?",
     "options": [
       "To delay or obstruct progress",
-      "To support something physically",
       "To present something for review",
+      "To support something physically",
       "To maintain a high standard"
     ],
     "correct": "To delay or obstruct progress",
@@ -197,10 +197,10 @@
   {
     "question": "Which phrasal verb means \"to negotiate intensely until an agreement is reached\"?",
     "options": [
-      "Hammer out",
-      "Work out",
       "Sort out",
-      "Figure out"
+      "Figure out",
+      "Hammer out",
+      "Work out"
     ],
     "correct": "Hammer out",
     "explanation": "<Hammer out> means to reach an agreement through prolonged and difficult negotiation.",
@@ -210,10 +210,10 @@
   {
     "question": "What does \"single out\" mean?",
     "options": [
-      "To choose or identify one person from a group",
       "To isolate a problem in the usual sense",
+      "To separate items individually as generally defined",
       "To focus on one task in conventional terms",
-      "To separate items individually as generally defined"
+      "To choose or identify one person from a group"
     ],
     "correct": "To choose or identify one person from a group",
     "explanation": "<Single out> means to select or identify one particular person or thing from a group.",
@@ -223,10 +223,10 @@
   {
     "question": "Complete: \"The old regulations were ______ last year to modernise the system.\"",
     "options": [
-      "done away with",
-      "done out of",
       "done up with",
-      "done over with"
+      "done out of",
+      "done over with",
+      "done away with"
     ],
     "correct": "done away with",
     "explanation": "<Do away with> means to abolish or eliminate something, such as a rule or practice. <Done away with> is the past participle form of <Do away with>.",
@@ -236,10 +236,10 @@
   {
     "question": "What does \"rally around\" mean?",
     "options": [
-      "To unite and support someone in difficulty",
       "To gather for a protest for the most part",
-      "To organise a group event in standard terms",
-      "To surround someone physically in standard terms"
+      "To unite and support someone in difficulty",
+      "To surround someone physically in standard terms",
+      "To organise a group event in standard terms"
     ],
     "correct": "To unite and support someone in difficulty",
     "explanation": "<Rally around> means to come together to support someone who is in a difficult situation.",
@@ -249,10 +249,10 @@
   {
     "question": "Which phrasal verb means \"to choose not to participate\"?",
     "options": [
-      "Opt out",
       "Opt in",
-      "Opt for",
-      "Opt up"
+      "Opt up",
+      "Opt out",
+      "Opt for"
     ],
     "correct": "Opt out",
     "explanation": "<Opt out> means to choose not to participate in something or to withdraw from an arrangement.",
@@ -262,10 +262,10 @@
   {
     "question": "What does \"stumble upon\" mean?",
     "options": [
-      "To find or discover something by accident",
-      "To trip over an obstacle in standard terms",
       "To make a mistake in a presentation",
-      "To encounter a problem unexpectedly"
+      "To trip over an obstacle in standard terms",
+      "To encounter a problem unexpectedly",
+      "To find or discover something by accident"
     ],
     "correct": "To find or discover something by accident",
     "explanation": "<Stumble upon> means to find or discover something unexpectedly, without looking for it.",
@@ -275,10 +275,10 @@
   {
     "question": "Complete: \"The CEO was ______ after the company's financial scandal became public.\"",
     "options": [
-      "let go",
-      "let off",
+      "let out",
       "let down",
-      "let out"
+      "let off",
+      "let go"
     ],
     "correct": "let go",
     "explanation": "<Let go> means to dismiss someone from their job, often used as a diplomatic euphemism.",
@@ -288,10 +288,10 @@
   {
     "question": "What does \"play down\" mean?",
     "options": [
+      "To simplify a game in a typical scenario",
       "To minimise the importance or seriousness of something",
       "To reduce the volume of music in this context",
-      "To perform below one's ability in regular usage",
-      "To simplify a game in a typical scenario"
+      "To perform below one's ability in regular usage"
     ],
     "correct": "To minimise the importance or seriousness of something",
     "explanation": "<Play down> means to make something seem less important or serious than it really is.",
@@ -301,10 +301,10 @@
   {
     "question": "Which phrasal verb means \"to introduce a new system or policy\"?",
     "options": [
-      "Bring in",
-      "Bring up",
       "Bring out",
-      "Bring about"
+      "Bring about",
+      "Bring up",
+      "Bring in"
     ],
     "correct": "Bring in",
     "explanation": "<Bring in> means to introduce a new law, policy, or system.",
@@ -314,10 +314,10 @@
   {
     "question": "What does \"pull off\" mean?",
     "options": [
-      "To succeed in doing something difficult",
-      "To remove something forcefully",
       "To leave a road for the most part",
-      "To cancel an event in most situations"
+      "To cancel an event in most situations",
+      "To succeed in doing something difficult",
+      "To remove something forcefully"
     ],
     "correct": "To succeed in doing something difficult",
     "explanation": "<Pull off> means to succeed in achieving something that was difficult or seemed unlikely.",

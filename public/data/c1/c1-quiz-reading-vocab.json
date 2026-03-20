@@ -2,10 +2,10 @@
   {
     "question": "To <interrogate> in an academic context means to...",
     "options": [
-      "critically examine or question assumptions",
-      "ask someone questions in a police station",
       "translate a text",
-      "memorize information"
+      "ask someone questions in a police station",
+      "memorize information",
+      "critically examine or question assumptions"
     ],
     "correct": "critically examine or question assumptions",
     "explanation": "In academic discourse, to <interrogate> means to critically examine or challenge ideas and assumptions."
@@ -13,8 +13,8 @@
   {
     "question": "A <lacuna> is...",
     "options": [
-      "a gap or missing part in knowledge or research",
       "a type of academic degree in regular usage",
+      "a gap or missing part in knowledge or research",
       "a research method in this context",
       "a university department by common definition"
     ],
@@ -24,9 +24,9 @@
   {
     "question": "<Epistemology> is the study of...",
     "options": [
-      "the nature and scope of knowledge",
       "ancient languages in this context",
       "mathematical equations",
+      "the nature and scope of knowledge",
       "biological systems in this context"
     ],
     "correct": "the nature and scope of knowledge",
@@ -35,10 +35,10 @@
   {
     "question": "<Ethnocentrism> is the tendency to...",
     "options": [
-      "judge other cultures by the standards of your own",
+      "appreciate cultural diversity as widely accepted",
       "study multiple languages in standard terms",
       "travel to different countries in regular usage",
-      "appreciate cultural diversity as widely accepted"
+      "judge other cultures by the standards of your own"
     ],
     "correct": "judge other cultures by the standards of your own",
     "explanation": "<Ethnocentrism> is evaluating other cultures according to the norms of one's own culture."
@@ -46,10 +46,10 @@
   {
     "question": "To <essentialize> means to...",
     "options": [
-      "reduce something complex to a single characteristic",
-      "make something essential in practical terms",
       "improve something in conventional terms",
-      "analyze in detail in the usual sense in standard terms"
+      "analyze in detail in the usual sense in standard terms",
+      "reduce something complex to a single characteristic",
+      "make something essential in practical terms"
     ],
     "correct": "reduce something complex to a single characteristic",
     "explanation": "To <essentialize> means to oversimplify by attributing a fixed essence to something complex."
@@ -57,10 +57,10 @@
   {
     "question": "<Cosmopolitanism> promotes...",
     "options": [
-      "the idea that all people belong to a single global community",
+      "economic isolation as typically understood in this context",
       "national pride within the conventional framework",
       "local traditions only under normal circumstances",
-      "economic isolation as typically understood in this context"
+      "the idea that all people belong to a single global community"
     ],
     "correct": "the idea that all people belong to a single global community",
     "explanation": "<Cosmopolitanism> is the ideology that all human beings belong to a single community."
@@ -79,10 +79,10 @@
   {
     "question": "<Glocalization> refers to...",
     "options": [
-      "adapting global products or ideas to local contexts",
       "only focusing on local markets in this context",
+      "standardizing products worldwide in ordinary cases",
       "rejecting globalization in everyday usage",
-      "standardizing products worldwide in ordinary cases"
+      "adapting global products or ideas to local contexts"
     ],
     "correct": "adapting global products or ideas to local contexts",
     "explanation": "<Glocalization> is the practice of adapting globally distributed products to local markets."
@@ -90,10 +90,10 @@
   {
     "question": "To <recalibrate> means to...",
     "options": [
-      "adjust or correct something based on new information",
       "repeat an experiment in the usual sense",
-      "cancel a project as generally defined in practical terms",
-      "start from scratch in common practice in common practice"
+      "adjust or correct something based on new information",
+      "start from scratch in common practice in common practice",
+      "cancel a project as generally defined in practical terms"
     ],
     "correct": "adjust or correct something based on new information",
     "explanation": "To <recalibrate> means to adjust measurements, expectations, or approaches."
@@ -101,10 +101,10 @@
   {
     "question": "A <seismic> change is...",
     "options": [
-      "extremely large and significant",
       "very small and gradual",
-      "temporary in this context",
-      "predictable as generally defined"
+      "predictable as generally defined",
+      "extremely large and significant",
+      "temporary in this context"
     ],
     "correct": "extremely large and significant",
     "explanation": "<Seismic> figuratively means having enormous impact or significance."
@@ -112,10 +112,10 @@
   {
     "question": "<Preeminent> means...",
     "options": [
-      "surpassing all others; most distinguished",
+      "controversial in regular usage in this context",
       "average in a typical scenario in everyday usage",
       "unknown in a typical scenario in standard terms",
-      "controversial in regular usage in this context"
+      "surpassing all others; most distinguished"
     ],
     "correct": "surpassing all others; most distinguished",
     "explanation": "<Preeminent> means superior to or notable above all others."
@@ -134,9 +134,9 @@
   {
     "question": "<Discourse> refers to...",
     "options": [
-      "written or spoken communication on a topic",
-      "a type of university course as widely accepted",
       "a research grant as a general rule",
+      "a type of university course as widely accepted",
+      "written or spoken communication on a topic",
       "a scientific experiment in a typical scenario"
     ],
     "correct": "written or spoken communication on a topic",
@@ -145,10 +145,10 @@
   {
     "question": "<Hegemony> means...",
     "options": [
-      "dominance or leadership of one group over others",
-      "equality among groups as a general rule",
+      "academic excellence as a general rule",
       "cooperation between nations by common definition",
-      "academic excellence as a general rule"
+      "equality among groups as a general rule",
+      "dominance or leadership of one group over others"
     ],
     "correct": "dominance or leadership of one group over others",
     "explanation": "<Hegemony> is the dominance of one group over others, especially in politics or culture."
@@ -156,10 +156,10 @@
   {
     "question": "<Empirical> evidence is based on...",
     "options": [
-      "observation and experience rather than theory",
-      "personal opinions as widely accepted",
       "mathematical proofs only in ordinary cases",
-      "historical documents only in practical terms"
+      "historical documents only in practical terms",
+      "observation and experience rather than theory",
+      "personal opinions as widely accepted"
     ],
     "correct": "observation and experience rather than theory",
     "explanation": "<Empirical> means based on verifiable observation or experience rather than theory."
@@ -167,10 +167,10 @@
   {
     "question": "A <nuance> is...",
     "options": [
-      "a subtle difference in meaning or expression",
-      "a major difference for the most part",
+      "a simple explanation in standard terms",
       "an obvious error in everyday usage",
-      "a simple explanation in standard terms"
+      "a subtle difference in meaning or expression",
+      "a major difference for the most part"
     ],
     "correct": "a subtle difference in meaning or expression",
     "explanation": "A <nuance> is a subtle distinction or variation in meaning, tone, or color."
@@ -178,10 +178,10 @@
   {
     "question": "To <corroborate> means to...",
     "options": [
+      "simplify as a general rule",
       "confirm or support with evidence",
-      "contradict in this context",
       "ignore by common definition",
-      "simplify as a general rule"
+      "contradict in this context"
     ],
     "correct": "confirm or support with evidence",
     "explanation": "To <corroborate> means to confirm or give support to a statement or theory."
@@ -189,9 +189,9 @@
   {
     "question": "To <juxtapose> means to...",
     "options": [
-      "place things side by side for comparison",
-      "combine into one in everyday usage",
       "separate completely as a general rule",
+      "combine into one in everyday usage",
+      "place things side by side for comparison",
       "arrange chronologically in conventional terms"
     ],
     "correct": "place things side by side for comparison",
@@ -200,10 +200,10 @@
   {
     "question": "<Proliferation> means...",
     "options": [
-      "rapid increase in number or spread",
+      "careful selection in most situations",
       "gradual decrease for the most part",
-      "complete elimination as a general rule",
-      "careful selection in most situations"
+      "rapid increase in number or spread",
+      "complete elimination as a general rule"
     ],
     "correct": "rapid increase in number or spread",
     "explanation": "<Proliferation> is a rapid increase in the number or amount of something."
@@ -211,8 +211,8 @@
   {
     "question": "<Ubiquitous> means...",
     "options": [
-      "present everywhere; very common",
       "extremely rare in practical terms",
+      "present everywhere; very common",
       "invisible in common practice",
       "temporary as generally defined"
     ],

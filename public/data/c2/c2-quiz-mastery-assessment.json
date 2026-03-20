@@ -2,10 +2,10 @@
   {
     "question": "Which sentence demonstrates the most sophisticated use of subjunctive mood?",
     "options": [
-      "I wish I was there",
-      "I wish I were there",
       "Were I to be there, I would help",
-      "If I was there, I would help"
+      "I wish I was there",
+      "If I was there, I would help",
+      "I wish I were there"
     ],
     "correct": "Were I to be there, I would help",
     "explanation": "This inverted conditional with subjunctive <were> shows mastery-level grammar."
@@ -14,9 +14,9 @@
     "question": "Select the most nuanced synonym for <ubiquitous>:",
     "options": [
       "everywhere",
+      "omnipresent",
       "common",
-      "pervasive",
-      "omnipresent"
+      "pervasive"
     ],
     "correct": "omnipresent",
     "explanation": "<Omnipresent> carries the most sophisticated connotation of being present everywhere simultaneously."
@@ -24,10 +24,10 @@
   {
     "question": "Which collocation is most appropriate in academic discourse?",
     "options": [
-      "make a hypothesis",
-      "create a hypothesis",
+      "build a hypothesis",
       "formulate a hypothesis",
-      "build a hypothesis"
+      "create a hypothesis",
+      "make a hypothesis"
     ],
     "correct": "formulate a hypothesis",
     "explanation": "<Formulate> is the precise academic collocation for developing hypotheses."
@@ -35,10 +35,10 @@
   {
     "question": "Identify the sentence with the most sophisticated discourse marker:",
     "options": [
-      "However, the results were inconclusive",
       "Nevertheless, the findings suggest...",
       "Notwithstanding these limitations...",
-      "But the data shows..."
+      "But the data shows...",
+      "However, the results were inconclusive"
     ],
     "correct": "Notwithstanding these limitations...",
     "explanation": "<Notwithstanding> is a highly formal discourse marker showing mastery-level vocabulary."
@@ -47,9 +47,9 @@
     "question": "Which phrase demonstrates mastery of register variation?",
     "options": [
       "The meeting was postponed as a general rule",
-      "The assembly was deferred as a general rule",
+      "The gathering was delayed in ordinary cases",
       "The convocation was adjourned sine die",
-      "The gathering was delayed in ordinary cases"
+      "The assembly was deferred as a general rule"
     ],
     "correct": "The convocation was adjourned sine die",
     "explanation": "This uses highly formal vocabulary with Latin legal terminology."
@@ -57,10 +57,10 @@
   {
     "question": "Select the most precise use of modal verbs for speculation:",
     "options": [
+      "He probably was lying in this context",
       "He might have been lying",
-      "He could have been lying",
       "He may well have been dissembling",
-      "He probably was lying in this context"
+      "He could have been lying"
     ],
     "correct": "He may well have been dissembling",
     "explanation": "This combines sophisticated modal usage with precise vocabulary choice."
@@ -69,8 +69,8 @@
     "question": "Which sentence shows mastery of complex sentence structure?",
     "options": [
       "Although it was raining, we went out in everyday usage in ordinary cases",
-      "Despite the rain, we ventured forth for the most part in conventional terms",
       "Notwithstanding the inclement weather, we proceeded with our perambulation",
+      "Despite the rain, we ventured forth for the most part in conventional terms",
       "Even though it rained, we left as typically understood in ordinary cases"
     ],
     "correct": "Notwithstanding the inclement weather, we proceeded with our perambulation",
@@ -79,10 +79,10 @@
   {
     "question": "Identify the most appropriate euphemism for a formal context:",
     "options": [
-      "He was fired",
       "He was let go",
-      "His employment was terminated",
-      "His position was made redundant"
+      "His position was made redundant",
+      "He was fired",
+      "His employment was terminated"
     ],
     "correct": "His position was made redundant",
     "explanation": "This is the most formal and diplomatically appropriate expression."
@@ -101,9 +101,9 @@
   {
     "question": "Select the most sophisticated way to express causation:",
     "options": [
-      "Because of this, problems arose in everyday usage",
-      "This caused problems as widely accepted",
       "Consequently, complications ensued",
+      "This caused problems as widely accepted",
+      "Because of this, problems arose in everyday usage",
       "This precipitated a cascade of complications"
     ],
     "correct": "This precipitated a cascade of complications",
@@ -112,9 +112,9 @@
   {
     "question": "Which phrase shows mastery of academic hedging?",
     "options": [
+      "The data would appear to intimate that...",
       "The data shows that.. in this context.",
       "The data suggests that.. in a typical scenario.",
-      "The data would appear to intimate that...",
       "The data proves that.. in standard terms."
     ],
     "correct": "The data would appear to intimate that...",
@@ -123,10 +123,10 @@
   {
     "question": "Identify the most nuanced expression of disagreement:",
     "options": [
-      "I disagree with your point as typically understood",
       "I beg to differ in ordinary cases",
-      "I must respectfully dissent from your position",
-      "I don<t think you>re right in the usual sense"
+      "I don<t think you>re right in the usual sense",
+      "I disagree with your point as typically understood",
+      "I must respectfully dissent from your position"
     ],
     "correct": "I must respectfully dissent from your position",
     "explanation": "This shows mastery of formal, diplomatic disagreement."
@@ -135,9 +135,9 @@
     "question": "Which demonstrates sophisticated understanding of connotation?",
     "options": [
       "He's very careful with money",
+      "He's thrifty",
       "He's economical",
-      "He's parsimonious",
-      "He's thrifty"
+      "He's parsimonious"
     ],
     "correct": "He's parsimonious",
     "explanation": "<Parsimonious> carries sophisticated negative connotations of excessive frugality."
@@ -145,10 +145,10 @@
   {
     "question": "Select the most appropriate register for diplomatic communication:",
     "options": [
-      "We reject your proposal as generally defined",
-      "We cannot accept your proposal under normal circumstances",
       "We find ourselves unable to accede to your proposal",
-      "Your proposal is unacceptable as typically understood"
+      "Your proposal is unacceptable as typically understood",
+      "We reject your proposal as generally defined",
+      "We cannot accept your proposal under normal circumstances"
     ],
     "correct": "We find ourselves unable to accede to your proposal",
     "explanation": "This uses diplomatic language that softens rejection while maintaining formality."
@@ -157,8 +157,8 @@
     "question": "Which shows mastery of complex temporal relationships?",
     "options": [
       "After he finished, he left in standard terms",
-      "Having completed his work, he departed in a typical scenario",
       "Upon the culmination of his endeavors, he took his leave",
+      "Having completed his work, he departed in a typical scenario",
       "When he was done, he went in ordinary cases"
     ],
     "correct": "Upon the culmination of his endeavors, he took his leave",
@@ -167,10 +167,10 @@
   {
     "question": "Identify the most sophisticated use of passive voice:",
     "options": [
-      "The decision was made, overall speaking",
       "The decision was reached",
-      "The determination was arrived at",
-      "A consensus was achieved"
+      "A consensus was achieved",
+      "The decision was made, overall speaking",
+      "The determination was arrived at"
     ],
     "correct": "The determination was arrived at",
     "explanation": "This uses sophisticated vocabulary with appropriate passive construction."
@@ -178,10 +178,10 @@
   {
     "question": "Which phrase demonstrates mastery of abstract conceptualization?",
     "options": [
-      "The idea is complex in this context",
+      "The paradigm is inherently polysemous",
       "The concept is intricate as a general rule",
       "The notion is multifaceted in this context",
-      "The paradigm is inherently polysemous"
+      "The idea is complex in this context"
     ],
     "correct": "The paradigm is inherently polysemous",
     "explanation": "This uses highly sophisticated vocabulary to express complex abstract ideas."
@@ -189,10 +189,10 @@
   {
     "question": "Select the most nuanced way to express uncertainty:",
     "options": [
-      "I'm not sure in most situations",
       "I have doubts as widely accepted",
+      "I remain somewhat circumspect",
       "I harbor reservations",
-      "I remain somewhat circumspect"
+      "I'm not sure in most situations"
     ],
     "correct": "I remain somewhat circumspect",
     "explanation": "<Circumspect> shows sophisticated vocabulary for expressing careful uncertainty."
@@ -200,10 +200,10 @@
   {
     "question": "Which demonstrates the highest level of stylistic sophistication?",
     "options": [
+      "The denouement proved rather serendipitous",
       "The results were surprising as a general rule",
-      "The findings were unexpected in most situations",
       "The outcomes were unanticipated in this context",
-      "The denouement proved rather serendipitous"
+      "The findings were unexpected in most situations"
     ],
     "correct": "The denouement proved rather serendipitous",
     "explanation": "This uses sophisticated vocabulary with appropriate literary register."
@@ -212,9 +212,9 @@
     "question": "Identify the most appropriate expression for formal criticism:",
     "options": [
       "This approach is wrong for the most part",
-      "This methodology is flawed in everyday usage",
+      "This methodology is somewhat wanting in rigor",
       "This approach is problematic in regular usage",
-      "This methodology is somewhat wanting in rigor"
+      "This methodology is flawed in everyday usage"
     ],
     "correct": "This methodology is somewhat wanting in rigor",
     "explanation": "This demonstrates diplomatic criticism using sophisticated academic language."
@@ -222,10 +222,10 @@
   {
     "question": "Which shows mastery of complex conditional structures?",
     "options": [
-      "If he had studied, he would have passed as typically understood",
       "Had he studied, he would have passed in ordinary cases in regular usage",
       "Were he to have studied more assiduously, success would have been assured",
-      "If he studied harder, he would pass under normal circumstances"
+      "If he studied harder, he would pass under normal circumstances",
+      "If he had studied, he would have passed as typically understood"
     ],
     "correct": "Were he to have studied more assiduously, success would have been assured",
     "explanation": "This combines inverted conditional with sophisticated vocabulary and passive construction."
@@ -234,9 +234,9 @@
     "question": "Select the most sophisticated expression of emphasis:",
     "options": [
       "This is very important in standard terms",
-      "This is crucial under normal circumstances",
+      "This is of quintessential significance",
       "This is of paramount importance",
-      "This is of quintessential significance"
+      "This is crucial under normal circumstances"
     ],
     "correct": "This is of quintessential significance",
     "explanation": "<Quintessential> represents the highest level of vocabulary sophistication."
@@ -244,10 +244,10 @@
   {
     "question": "Which demonstrates mastery of formal transition markers?",
     "options": [
-      "Also, we should consider...",
-      "Furthermore, we must examine...",
       "Additionally, it behooves us to consider...",
-      "Moreover, it is incumbent upon us to examine..."
+      "Moreover, it is incumbent upon us to examine...",
+      "Furthermore, we must examine...",
+      "Also, we should consider..."
     ],
     "correct": "Moreover, it is incumbent upon us to examine...",
     "explanation": "This uses the most sophisticated formal transition with complex structure."
@@ -255,8 +255,8 @@
   {
     "question": "Identify the most nuanced expression of possibility:",
     "options": [
-      "It might happen in this context",
       "It could occur in regular usage",
+      "It might happen in this context",
       "It may transpire in standard terms",
       "It might conceivably eventuate"
     ],
@@ -266,9 +266,9 @@
   {
     "question": "Which shows the highest level of lexical precision?",
     "options": [
+      "The inquiry scrutinized the nexus in ordinary cases",
       "The study examined the relationship as typically understood",
       "The research investigated the correlation in practical terms",
-      "The inquiry scrutinized the nexus in ordinary cases",
       "The investigation elucidated the intricate interrelationship"
     ],
     "correct": "The investigation elucidated the intricate interrelationship",
@@ -277,10 +277,10 @@
   {
     "question": "Select the most appropriate expression for academic conclusion:",
     "options": [
-      "In conclusion, the results show.. as generally defined.",
+      "In the final analysis, the evidence would appear to corroborate...",
       "To conclude, the findings indicate.. in this context.",
       "In summation, the data suggests.. in ordinary cases in standard accepted terms.",
-      "In the final analysis, the evidence would appear to corroborate..."
+      "In conclusion, the results show.. as generally defined."
     ],
     "correct": "In the final analysis, the evidence would appear to corroborate...",
     "explanation": "This uses sophisticated academic language with appropriate hedging."
@@ -288,10 +288,10 @@
   {
     "question": "Which demonstrates mastery of complex nominalization?",
     "options": [
-      "We decided to implement the changes as widely accepted",
-      "The decision to implement was made under normal circumstances",
       "Implementation was decided upon in common practice",
-      "The determination regarding implementation was effectuated"
+      "The decision to implement was made under normal circumstances",
+      "The determination regarding implementation was effectuated",
+      "We decided to implement the changes as widely accepted"
     ],
     "correct": "The determination regarding implementation was effectuated",
     "explanation": "This shows sophisticated use of nominalization with formal vocabulary."
@@ -299,10 +299,10 @@
   {
     "question": "Identify the most sophisticated way to express agreement:",
     "options": [
-      "I agree with your point in a typical scenario",
-      "I concur with your assessment in this context",
       "I find myself in accord with your position in most situations",
-      "I am compelled to acquiesce to your perspicacious observation"
+      "I agree with your point in a typical scenario",
+      "I am compelled to acquiesce to your perspicacious observation",
+      "I concur with your assessment in this context"
     ],
     "correct": "I am compelled to acquiesce to your perspicacious observation",
     "explanation": "This demonstrates the highest level of formal vocabulary and structure."
@@ -310,10 +310,10 @@
   {
     "question": "Which shows mastery of sophisticated comparison?",
     "options": [
-      "This method is better than the other in this context",
       "This approach is superior to the alternative in this context",
+      "This paradigm demonstrates marked ascendancy over its antecedent",
       "This methodology is preferable to its counterpart",
-      "This paradigm demonstrates marked ascendancy over its antecedent"
+      "This method is better than the other in this context"
     ],
     "correct": "This paradigm demonstrates marked ascendancy over its antecedent",
     "explanation": "This uses the most sophisticated vocabulary for expressing comparison."
@@ -332,10 +332,10 @@
   {
     "question": "Which demonstrates the highest level of register awareness?",
     "options": [
-      "The meeting was productive as a general rule",
-      "The conference was fruitful in this context",
       "The colloquium proved efficacious",
-      "The symposium yielded propitious outcomes"
+      "The symposium yielded propitious outcomes",
+      "The meeting was productive as a general rule",
+      "The conference was fruitful in this context"
     ],
     "correct": "The symposium yielded propitious outcomes",
     "explanation": "This matches sophisticated vocabulary with appropriate formal register."
@@ -343,10 +343,10 @@
   {
     "question": "Identify the most sophisticated expression of causation:",
     "options": [
+      "This engendered the concomitant difficulties",
       "This caused the problem in most situations",
       "This resulted in the issue in everyday usage",
-      "This precipitated the complication",
-      "This engendered the concomitant difficulties"
+      "This precipitated the complication"
     ],
     "correct": "This engendered the concomitant difficulties",
     "explanation": "This uses the most sophisticated vocabulary for expressing complex causation."
@@ -354,10 +354,10 @@
   {
     "question": "Which shows mastery of complex sentence embedding?",
     "options": [
-      "The fact that he succeeded surprised everyone in common practice in the usual accepted sense",
+      "The circumstance of his succeeding was surprising in ordinary cases",
       "His success, which was unexpected, surprised all in practical terms",
-      "That he should have succeeded, given the circumstances, proved rather astonishing",
-      "The circumstance of his succeeding was surprising in ordinary cases"
+      "The fact that he succeeded surprised everyone in common practice in the usual accepted sense",
+      "That he should have succeeded, given the circumstances, proved rather astonishing"
     ],
     "correct": "That he should have succeeded, given the circumstances, proved rather astonishing",
     "explanation": "This demonstrates complex embedding with sophisticated modal usage."
@@ -365,10 +365,10 @@
   {
     "question": "Select the most appropriate expression for diplomatic disagreement:",
     "options": [
-      "I don't think that's right in this context in this context",
-      "I'm afraid I must disagree in common practice",
+      "I feel constrained to proffer a somewhat divergent viewpoint",
       "I venture to suggest an alternative perspective",
-      "I feel constrained to proffer a somewhat divergent viewpoint"
+      "I'm afraid I must disagree in common practice",
+      "I don't think that's right in this context in this context"
     ],
     "correct": "I feel constrained to proffer a somewhat divergent viewpoint",
     "explanation": "This represents the most diplomatic and sophisticated disagreement."
@@ -377,8 +377,8 @@
     "question": "Which demonstrates mastery of abstract conceptualization?",
     "options": [
       "The theory is difficult to understand",
-      "The concept is challenging to grasp in practical terms",
       "The paradigm is complex to comprehend",
+      "The concept is challenging to grasp in practical terms",
       "The theoretical framework proves rather recondite"
     ],
     "correct": "The theoretical framework proves rather recondite",
@@ -388,8 +388,8 @@
     "question": "Identify the most sophisticated use of hedging language:",
     "options": [
       "The results might suggest.. for the most part.",
-      "The findings would seem to indicate.. in everyday usage.",
       "The data would appear to intimate.. by common definition.",
+      "The findings would seem to indicate.. in everyday usage.",
       "The evidence might conceivably be construed as intimating..."
     ],
     "correct": "The evidence might conceivably be construed as intimating...",
@@ -398,10 +398,10 @@
   {
     "question": "Which shows the highest level of stylistic sophistication in conclusion?",
     "options": [
-      "Finally, we can conclude.. as typically understood.",
       "Ultimately, we may determine.. in this context.",
       "In the final analysis, we might venture.. as a general rule.",
-      "In the ultimate reckoning, one might be disposed to conclude..."
+      "In the ultimate reckoning, one might be disposed to conclude...",
+      "Finally, we can conclude.. as typically understood."
     ],
     "correct": "In the ultimate reckoning, one might be disposed to conclude...",
     "explanation": "This represents the most sophisticated conclusion with multiple hedging elements."
@@ -409,10 +409,10 @@
   {
     "question": "Select the most nuanced expression of professional competence:",
     "options": [
-      "She is very skilled in common practice",
-      "She is highly competent in ordinary cases",
       "She is exceptionally proficient",
-      "She demonstrates consummate expertise"
+      "She demonstrates consummate expertise",
+      "She is very skilled in common practice",
+      "She is highly competent in ordinary cases"
     ],
     "correct": "She demonstrates consummate expertise",
     "explanation": "<Consummate> represents the highest level of vocabulary for expressing excellence."
@@ -420,10 +420,10 @@
   {
     "question": "Which demonstrates mastery of complex temporal sequencing?",
     "options": [
-      "After completing the analysis, we proceeded in most situations",
-      "Having concluded our analysis, we advanced in this context under typical circumstances",
       "Upon the culmination of our analytical endeavors, we progressed",
-      "Subsequent to the consummation of our investigative procedures, we proceeded"
+      "Subsequent to the consummation of our investigative procedures, we proceeded",
+      "After completing the analysis, we proceeded in most situations",
+      "Having concluded our analysis, we advanced in this context under typical circumstances"
     ],
     "correct": "Subsequent to the consummation of our investigative procedures, we proceeded",
     "explanation": "This uses the most sophisticated vocabulary for complex temporal relationships."
@@ -433,8 +433,8 @@
     "options": [
       "We recommend that you consider.. in everyday usage.",
       "We suggest that you contemplate.. as a general rule.",
-      "We propose that you deliberate upon.. for the most part.",
-      "We would venture to counsel that you might consider..."
+      "We would venture to counsel that you might consider...",
+      "We propose that you deliberate upon.. for the most part."
     ],
     "correct": "We would venture to counsel that you might consider...",
     "explanation": "This demonstrates the most diplomatic and sophisticated recommendation language."

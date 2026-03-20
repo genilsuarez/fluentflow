@@ -2,10 +2,10 @@
   {
     "question": "What is a <round-trip ticket>?",
     "options": [
-      "a ticket for one direction",
-      "a ticket to go and return",
       "a circular ticket",
-      "a free ticket"
+      "a free ticket",
+      "a ticket to go and return",
+      "a ticket for one direction"
     ],
     "correct": "a ticket to go and return",
     "explanation": "A <round-trip ticket> allows you to travel to a destination and return."
@@ -13,9 +13,9 @@
   {
     "question": "Where do you <check in> at an airport?",
     "options": [
-      "at the gate when considering the broader context",
-      "at the check-in counter",
       "on the plane according to standard definitions",
+      "at the check-in counter",
+      "at the gate when considering the broader context",
       "at customs in this context"
     ],
     "correct": "at the check-in counter",
@@ -25,9 +25,9 @@
     "question": "What does <boarding pass> mean?",
     "options": [
       "a ticket to board the plane",
-      "a passport in this context",
       "a visa in a typical scenario",
-      "luggage tag in most situations"
+      "luggage tag in most situations",
+      "a passport in this context"
     ],
     "correct": "a ticket to board the plane",
     "explanation": "A <boarding pass> is the document that allows you to board your flight."
@@ -35,10 +35,10 @@
   {
     "question": "What is <carry-on luggage>?",
     "options": [
-      "luggage you check in",
-      "luggage you carry on the plane",
+      "heavy luggage as a general rule",
       "lost luggage in this context",
-      "heavy luggage as a general rule"
+      "luggage you carry on the plane",
+      "luggage you check in"
     ],
     "correct": "luggage you carry on the plane",
     "explanation": "<Carry-on luggage> is small bags you can take with you on the plane."
@@ -46,10 +46,10 @@
   {
     "question": "Where do you go through <customs>?",
     "options": [
-      "at the hotel based on common understanding",
       "when entering a country",
-      "at the restaurant",
-      "at the beach in the most widely accepted sense"
+      "at the hotel based on common understanding",
+      "at the beach in the most widely accepted sense",
+      "at the restaurant"
     ],
     "correct": "when entering a country",
     "explanation": "<Customs> is where officials check what you're bringing into a country."
@@ -57,10 +57,10 @@
   {
     "question": "What does <all-inclusive> mean for a hotel?",
     "options": [
-      "only breakfast included",
+      "only dinner included",
       "all meals and drinks included",
-      "no meals included in this context",
-      "only dinner included"
+      "only breakfast included",
+      "no meals included in this context"
     ],
     "correct": "all meals and drinks included",
     "explanation": "<All-inclusive> means all meals, drinks, and activities are included in the price."
@@ -79,10 +79,10 @@
   {
     "question": "What does <book a room> mean?",
     "options": [
-      "read in a room",
       "reserve a room",
+      "leave a room",
       "clean a room",
-      "leave a room"
+      "read in a room"
     ],
     "correct": "reserve a room",
     "explanation": "Booking a room means to reserve accommodation in advance."
@@ -90,10 +90,10 @@
   {
     "question": "What is <jet lag>?",
     "options": [
-      "fear of flying in everyday usage",
+      "lost luggage by common definition",
       "tiredness from time zone changes",
-      "missing a flight in this context",
-      "lost luggage by common definition"
+      "fear of flying in everyday usage",
+      "missing a flight in this context"
     ],
     "correct": "tiredness from time zone changes",
     "explanation": "<Jet lag> is fatigue caused by traveling across different time zones."
@@ -102,9 +102,9 @@
     "question": "Where do you find <tourist attractions>?",
     "options": [
       "at home in the usual sense",
+      "in offices in this context",
       "in popular destinations",
-      "at the airport when considering the broader context",
-      "in offices in this context"
+      "at the airport when considering the broader context"
     ],
     "correct": "in popular destinations",
     "explanation": "<Tourist attractions> are interesting places that visitors want to see."
@@ -113,9 +113,9 @@
     "question": "What does <off-season> mean?",
     "options": [
       "peak tourist time",
-      "when fewer tourists visit",
       "holiday season when considering the broader context",
-      "summer time in regular usage"
+      "summer time in regular usage",
+      "when fewer tourists visit"
     ],
     "correct": "when fewer tourists visit",
     "explanation": "<Off-season> is the time of year when there are fewer tourists and lower prices."
@@ -123,10 +123,10 @@
   {
     "question": "What is a <guided tour>?",
     "options": [
-      "tour alone",
-      "tour with a guide",
       "virtual tour",
-      "cancelled tour"
+      "cancelled tour",
+      "tour alone",
+      "tour with a guide"
     ],
     "correct": "tour with a guide",
     "explanation": "A <guided tour> is led by someone who explains the sights and history."
@@ -134,10 +134,10 @@
   {
     "question": "What does <check out> mean at a hotel?",
     "options": [
-      "arrive at hotel",
-      "leave the hotel",
+      "complain",
       "book a room",
-      "complain"
+      "leave the hotel",
+      "arrive at hotel"
     ],
     "correct": "leave the hotel",
     "explanation": "Checking out means to officially <leave the hotel> and pay your bill."
@@ -146,9 +146,9 @@
     "question": "What is <backpacking>?",
     "options": [
       "luxury travel in this context",
+      "cruise travel in standard terms",
       "budget travel with a backpack",
-      "business travel in standard terms",
-      "cruise travel in standard terms"
+      "business travel in standard terms"
     ],
     "correct": "budget travel with a backpack",
     "explanation": "<Backpacking> is traveling cheaply, often staying in hostels and carrying your belongings in a backpack."
@@ -156,10 +156,10 @@
   {
     "question": "What does <sightseeing> mean?",
     "options": [
-      "sleeping for the most part",
+      "eating in the usual sense",
       "visiting tourist attractions",
-      "shopping in most situations",
-      "eating in the usual sense"
+      "sleeping for the most part",
+      "shopping in most situations"
     ],
     "correct": "visiting tourist attractions",
     "explanation": "<Sightseeing> is the activity of visiting interesting places as a tourist."
@@ -167,8 +167,8 @@
   {
     "question": "What is a <souvenir>?",
     "options": [
-      "a ticket in the usual sense",
       "a memory item from a trip",
+      "a ticket in the usual sense",
       "a passport as a general rule",
       "a map as generally defined"
     ],
@@ -178,10 +178,10 @@
   {
     "question": "What does <fully booked> mean?",
     "options": [
-      "empty based on common understanding",
       "no rooms available",
-      "cheap within the conventional framework",
-      "expensive according to standard definitions"
+      "expensive according to standard definitions",
+      "empty based on common understanding",
+      "cheap within the conventional framework"
     ],
     "correct": "no rooms available",
     "explanation": "<Fully booked> means all rooms or seats are reserved."
@@ -189,10 +189,10 @@
   {
     "question": "What is a <travel itinerary>?",
     "options": [
-      "a suitcase in the usual sense",
       "a planned route or schedule",
       "a passport for the most part",
-      "a ticket by common definition"
+      "a ticket by common definition",
+      "a suitcase in the usual sense"
     ],
     "correct": "a planned route or schedule",
     "explanation": "An itinerary is a detailed plan of your trip including dates and places."
@@ -200,10 +200,10 @@
   {
     "question": "What does <duty-free> mean?",
     "options": [
-      "expensive items",
+      "used items",
       "items without tax",
-      "free items",
-      "used items"
+      "expensive items",
+      "free items"
     ],
     "correct": "items without tax",
     "explanation": "<Duty-free> means goods sold without local taxes, usually at airports."
@@ -211,10 +211,10 @@
   {
     "question": "What is a <package tour>?",
     "options": [
-      "sending a package in regular usage",
-      "organized trip with everything included",
       "solo travel in everyday usage",
-      "business trip in this context"
+      "business trip in this context",
+      "organized trip with everything included",
+      "sending a package in regular usage"
     ],
     "correct": "organized trip with everything included",
     "explanation": "A <package tour> includes transportation, accommodation, and activities in one price."

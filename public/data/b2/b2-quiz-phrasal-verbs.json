@@ -2,10 +2,10 @@
   {
     "question": "What does the phrasal verb \"bring about\" mean?",
     "options": [
-      "To cause something to happen",
-      "To carry something nearby",
+      "To return something",
       "To introduce someone",
-      "To return something"
+      "To cause something to happen",
+      "To carry something nearby"
     ],
     "correct": "To cause something to happen",
     "explanation": "<Bring about> means to cause something to happen, often a change or result."
@@ -13,10 +13,10 @@
   {
     "question": "Choose the correct sentence using \"run out of\":",
     "options": [
-      "We ran out of time before finishing the project.",
       "We ran out time before finishing the project.",
-      "We ran out for time before finishing the project.",
-      "We ran out on time before finishing the project."
+      "We ran out of time before finishing the project.",
+      "We ran out on time before finishing the project.",
+      "We ran out for time before finishing the project."
     ],
     "correct": "We ran out of time before finishing the project.",
     "explanation": "<Run out of> means to have no more of something. It always takes <of> before the noun."
@@ -24,10 +24,10 @@
   {
     "question": "What does \"fall back on\" mean?",
     "options": [
+      "To support someone physically",
       "To rely on something as a backup",
-      "To fall behind schedule",
       "To return to a previous position",
-      "To support someone physically"
+      "To fall behind schedule"
     ],
     "correct": "To rely on something as a backup",
     "explanation": "<Fall back on> means to use something as a last resort or backup option."
@@ -35,10 +35,10 @@
   {
     "question": "Which phrasal verb means \"to delay or postpone\"?",
     "options": [
-      "Put off",
       "Put out",
       "Put through",
-      "Put forward"
+      "Put forward",
+      "Put off"
     ],
     "correct": "Put off",
     "explanation": "<Put off> means to postpone or delay something to a later time."
@@ -46,10 +46,10 @@
   {
     "question": "What does \"take on\" mean in a professional context?",
     "options": [
-      "To accept responsibility or a new challenge",
+      "To travel by transport in this context",
       "To remove clothing in this context",
-      "To attack someone in most situations",
-      "To travel by transport in this context"
+      "To accept responsibility or a new challenge",
+      "To attack someone in most situations"
     ],
     "correct": "To accept responsibility or a new challenge",
     "explanation": "<Take on> means to accept a new responsibility, task, or employee."
@@ -57,8 +57,8 @@
   {
     "question": "Complete: \"She decided to ______ her own business after years of working for others.\"",
     "options": [
-      "set up",
       "set off",
+      "set up",
       "set out",
       "set back"
     ],
@@ -68,10 +68,10 @@
   {
     "question": "What does \"go through\" mean when talking about a difficult experience?",
     "options": [
-      "To experience or endure something",
+      "To finish a task by common definition",
       "To pass a physical space",
-      "To read quickly in this context",
-      "To finish a task by common definition"
+      "To experience or endure something",
+      "To read quickly in this context"
     ],
     "correct": "To experience or endure something",
     "explanation": "<Go through> means to experience something difficult or unpleasant."
@@ -81,8 +81,8 @@
     "options": [
       "Find out",
       "Find off",
-      "Find up",
-      "Find over"
+      "Find over",
+      "Find up"
     ],
     "correct": "Find out",
     "explanation": "<Find out> means to discover information or learn the truth about something."
@@ -90,10 +90,10 @@
   {
     "question": "What does \"back down\" mean?",
     "options": [
+      "To reduce speed for the most part",
       "To withdraw from a position or argument",
       "To move backwards by common definition",
-      "To support someone by common definition",
-      "To reduce speed for the most part"
+      "To support someone by common definition"
     ],
     "correct": "To withdraw from a position or argument",
     "explanation": "<Back down> means to stop insisting on something or to withdraw from a confrontation."
@@ -101,10 +101,10 @@
   {
     "question": "Complete: \"The company had to ______ several employees due to budget cuts.\"",
     "options": [
-      "lay off",
-      "lay out",
+      "lay up",
       "lay down",
-      "lay up"
+      "lay off",
+      "lay out"
     ],
     "correct": "lay off",
     "explanation": "<Lay off> means to dismiss employees, usually due to financial reasons. <Lay off> is the past simple form of <Lie off>."
@@ -112,10 +112,10 @@
   {
     "question": "What does \"keep up with\" mean?",
     "options": [
-      "To maintain the same pace or level as someone",
+      "To support someone emotionally as a general rule",
       "To store something above in everyday usage",
       "To continue a habit for the most part",
-      "To support someone emotionally as a general rule"
+      "To maintain the same pace or level as someone"
     ],
     "correct": "To maintain the same pace or level as someone",
     "explanation": "<Keep up with> means to stay at the same level or pace as someone or something."
@@ -123,10 +123,10 @@
   {
     "question": "Which phrasal verb means \"to submit or present formally\"?",
     "options": [
-      "Put forward",
-      "Put away",
       "Put across",
-      "Put aside"
+      "Put forward",
+      "Put aside",
+      "Put away"
     ],
     "correct": "Put forward",
     "explanation": "<Put forward> means to propose or present an idea, plan, or candidate formally."
@@ -134,9 +134,9 @@
   {
     "question": "What does \"wear off\" mean?",
     "options": [
+      "To become tired in this context",
       "To gradually disappear or lose effect",
       "To remove clothing in common practice",
-      "To become tired in this context",
       "To damage through use in common practice"
     ],
     "correct": "To gradually disappear or lose effect",
@@ -145,9 +145,9 @@
   {
     "question": "Complete: \"He managed to ______ the difficult situation with humour.\"",
     "options": [
+      "get by",
       "get through",
       "get over",
-      "get by",
       "get around"
     ],
     "correct": "get through",
@@ -156,9 +156,9 @@
   {
     "question": "What does \"stand out\" mean?",
     "options": [
-      "To be noticeably different or better",
-      "To leave a building in standard terms",
       "To resist something in standard terms",
+      "To leave a building in standard terms",
+      "To be noticeably different or better",
       "To wait outside in regular usage"
     ],
     "correct": "To be noticeably different or better",
@@ -168,9 +168,9 @@
     "question": "Which phrasal verb means \"to tolerate or endure\"?",
     "options": [
       "Put up with",
+      "Put up on",
       "Put up for",
-      "Put up to",
-      "Put up on"
+      "Put up to"
     ],
     "correct": "Put up with",
     "explanation": "<Put up with> means to tolerate something or someone unpleasant without complaining."
@@ -178,8 +178,8 @@
   {
     "question": "What does \"draw on\" mean?",
     "options": [
-      "To use a resource or experience",
       "To sketch something",
+      "To use a resource or experience",
       "To approach slowly",
       "To pull something towards you"
     ],
@@ -189,10 +189,10 @@
   {
     "question": "Complete: \"The new manager ______ a lot of changes in the first month.\"",
     "options": [
-      "brought in",
-      "brought up",
       "brought out",
-      "brought over"
+      "brought over",
+      "brought up",
+      "brought in"
     ],
     "correct": "brought in",
     "explanation": "<Bring in> means to introduce something new, such as a policy, rule, or person. <Brought in> is the past simple form of <Bring in>."
@@ -200,10 +200,10 @@
   {
     "question": "What does \"come across\" mean?",
     "options": [
-      "To find something by chance or make an impression",
       "To cross a road as generally defined",
-      "To arrive from another country as a general rule",
-      "To disagree with someone by common definition"
+      "To find something by chance or make an impression",
+      "To disagree with someone by common definition",
+      "To arrive from another country as a general rule"
     ],
     "correct": "To find something by chance or make an impression",
     "explanation": "<Come across> means to find something unexpectedly, or to appear a certain way to others."
@@ -211,10 +211,10 @@
   {
     "question": "Which phrasal verb means \"to investigate something\"?",
     "options": [
-      "Look into",
-      "Look over",
+      "Look up",
       "Look through",
-      "Look up"
+      "Look into",
+      "Look over"
     ],
     "correct": "Look into",
     "explanation": "<Look into> means to investigate or examine something carefully."
@@ -223,9 +223,9 @@
     "question": "What does \"break through\" mean?",
     "options": [
       "To achieve success after overcoming obstacles",
+      "To escape from somewhere for the most part",
       "To physically break a wall by common definition",
-      "To interrupt a conversation in this context",
-      "To escape from somewhere for the most part"
+      "To interrupt a conversation in this context"
     ],
     "correct": "To achieve success after overcoming obstacles",
     "explanation": "<Break through> means to make a significant advance or overcome a barrier."
@@ -233,10 +233,10 @@
   {
     "question": "Complete: \"She ______ her nerves and delivered a brilliant presentation.\"",
     "options": [
-      "got over",
-      "got through",
       "got around",
-      "got by"
+      "got by",
+      "got through",
+      "got over"
     ],
     "correct": "got over",
     "explanation": "<Get over> means to recover from or overcome something, such as fear or illness. <Got over> is the past simple form of <Get over>."
@@ -244,10 +244,10 @@
   {
     "question": "What does \"hold back\" mean?",
     "options": [
-      "To restrain or prevent progress",
       "To return to a previous position",
       "To keep something in reserve",
-      "To support from behind"
+      "To support from behind",
+      "To restrain or prevent progress"
     ],
     "correct": "To restrain or prevent progress",
     "explanation": "<Hold back> means to restrain someone or something, or to prevent progress."
@@ -255,10 +255,10 @@
   {
     "question": "Which phrasal verb means \"to make something public or available\"?",
     "options": [
-      "Roll out",
       "Roll up",
       "Roll over",
-      "Roll back"
+      "Roll back",
+      "Roll out"
     ],
     "correct": "Roll out",
     "explanation": "<Roll out> means to launch or make something available to the public, often a product or service."
@@ -266,10 +266,10 @@
   {
     "question": "What does \"step up\" mean?",
     "options": [
-      "To increase effort or take more responsibility",
       "To climb stairs in the usual sense",
+      "To improve appearance in this context",
       "To move forward physically in most situations",
-      "To improve appearance in this context"
+      "To increase effort or take more responsibility"
     ],
     "correct": "To increase effort or take more responsibility",
     "explanation": "<Step up> means to increase one's efforts or to take on greater responsibility."

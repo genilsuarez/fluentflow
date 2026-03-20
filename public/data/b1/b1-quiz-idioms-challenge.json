@@ -4,11 +4,11 @@
     "question": "What does 'bite off more than you can chew' mean?",
     "options": [
       "To take on more responsibility than you can handle",
-      "To eat too much food as a general rule",
       "To speak without thinking by common definition",
-      "To make a difficult decision in regular usage"
+      "To make a difficult decision in regular usage",
+      "To eat too much food as a general rule"
     ],
-    "correct": 0,
+    "correct": "To take on more responsibility than you can handle",
     "explanation": "This idiom means to attempt something that is too difficult or beyond your capabilities."
   },
   {
@@ -16,119 +16,119 @@
     "question": "If 'the ball is in your court', what does it mean?",
     "options": [
       "It's your turn to take action or make a decision",
-      "You're playing a sport in common practice",
       "You have a problem in practical terms",
-      "You need to exercise in this context"
+      "You need to exercise in this context",
+      "You're playing a sport in common practice"
     ],
-    "correct": 0,
+    "correct": "It's your turn to take action or make a decision",
     "explanation": "This means it's your responsibility to take the next step or make a decision."
   },
   {
     "idiom": "Cut corners",
     "question": "What does it mean to 'cut corners'?",
     "options": [
+      "To take a shortcut while walking in regular usage",
       "To do something poorly to save time or money",
-      "To drive carefully by common definition",
       "To be very precise for the most part",
-      "To take a shortcut while walking in regular usage"
+      "To drive carefully by common definition"
     ],
-    "correct": 0,
+    "correct": "To do something poorly to save time or money",
     "explanation": "To <cut corners> means to do something in the easiest or cheapest way, often sacrificing quality."
   },
   {
     "idiom": "Hit the nail on the head",
     "question": "If someone 'hits the nail on the head', they:",
     "options": [
-      "Describe exactly what is causing a situation or problem",
-      "Make a mistake under normal circumstances in regular usage",
       "Build something under normal circumstances",
-      "Get angry within the conventional framework"
+      "Get angry within the conventional framework",
+      "Describe exactly what is causing a situation or problem",
+      "Make a mistake under normal circumstances in regular usage"
     ],
-    "correct": 0,
+    "correct": "Describe exactly what is causing a situation or problem",
     "explanation": "This means to describe or identify something exactly right."
   },
   {
     "idiom": "Let the cat out of the bag",
     "question": "What does 'let the cat out of the bag' mean?",
     "options": [
-      "To reveal a secret accidentally",
-      "To free an animal in this context",
+      "To start a problem in regular usage",
       "To make a mess as a general rule",
-      "To start a problem in regular usage"
+      "To free an animal in this context",
+      "To reveal a secret accidentally"
     ],
-    "correct": 0,
+    "correct": "To reveal a secret accidentally",
     "explanation": "This idiom means to accidentally reveal information that was supposed to be kept secret."
   },
   {
     "idiom": "Miss the boat",
     "question": "If you 'miss the boat', you:",
     "options": [
-      "Lose an opportunity",
-      "Arrive late to work",
       "Forget something",
+      "Arrive late to work",
+      "Lose an opportunity",
       "Make a mistake"
     ],
-    "correct": 0,
+    "correct": "Lose an opportunity",
     "explanation": "To <miss the boat> means to lose an opportunity by being too slow to act."
   },
   {
     "idiom": "On thin ice",
     "question": "If you're 'on thin ice', you are:",
     "options": [
-      "In a risky or dangerous situation",
-      "Very cold in common practice",
+      "Being careful in regular usage",
       "Ice skating in standard terms",
-      "Being careful in regular usage"
+      "Very cold in common practice",
+      "In a risky or dangerous situation"
     ],
-    "correct": 0,
+    "correct": "In a risky or dangerous situation",
     "explanation": "Being <on thin ice> means being in a precarious or risky situation."
   },
   {
     "idiom": "Pull someone's leg",
     "question": "To 'pull someone's leg' means to:",
     "options": [
-      "Joke with someone in a playful way",
       "Help someone walk by common definition",
       "Make someone fall in most situations",
-      "Annoy someone in common practice"
+      "Annoy someone in common practice",
+      "Joke with someone in a playful way"
     ],
-    "correct": 0,
+    "correct": "Joke with someone in a playful way",
     "explanation": "This means to tease or joke with someone in a friendly, playful manner."
   },
   {
     "idiom": "Spill the beans",
     "question": "What does 'spill the beans' mean?",
     "options": [
+      "To cook badly as widely accepted",
       "To reveal secret information",
       "To make a mess for the most part",
-      "To cook badly as widely accepted",
       "To waste food in ordinary cases"
     ],
-    "correct": 0,
+    "correct": "To reveal secret information",
     "explanation": "To <spill the beans> means to reveal secret or private information."
   },
   {
     "idiom": "The last straw",
     "question": "'The last straw' refers to:",
     "options": [
-      "The final problem that makes you lose patience",
       "The end of a drink by common definition",
+      "The final problem that makes you lose patience",
       "The final opportunity in a typical scenario",
       "Something very light in a typical scenario"
     ],
-    "correct": 0,
+    "correct": "The final problem that makes you lose patience",
     "explanation": "<The last straw> is the final problem in a series that causes you to lose patience or give up."
   },
   {
     "idiom": "Under the weather",
     "question": "If you're 'under the weather', you are:",
     "options": [
+      "Very busy",
       "Feeling slightly ill",
       "Outside in bad weather",
-      "Feeling sad",
-      "Very busy"
+      "Feeling sad"
     ],
-    "correct": 0,
+    "correct": "Feeling slightly ill",
     "explanation": "<Under the weather> means feeling slightly sick or unwell."
   },
   {
@@ -137,10 +137,10 @@
     "options": [
       "Uncertain or undecided",
       "Flying in this context",
-      "Very expensive according to standard definitions",
-      "Impossible when considering the broader context"
+      "Impossible when considering the broader context",
+      "Very expensive according to standard definitions"
     ],
-    "correct": 0,
+    "correct": "Uncertain or undecided",
     "explanation": "<Up in the air> means uncertain, undecided, or not yet determined."
   },
   {
@@ -148,131 +148,131 @@
     "question": "To 'burn bridges' means to:",
     "options": [
       "Destroy relationships or opportunities for the future",
+      "Travel a lot under normal circumstances in common practice",
       "Set something on fire as a general rule in most situations",
-      "Work very hard under normal circumstances",
-      "Travel a lot under normal circumstances in common practice"
+      "Work very hard under normal circumstances"
     ],
-    "correct": 0,
+    "correct": "Destroy relationships or opportunities for the future",
     "explanation": "Burning bridges means to act in a way that destroys relationships or future opportunities."
   },
   {
     "idiom": "Get cold feet",
     "question": "If you 'get cold feet', you:",
     "options": [
-      "Become nervous and decide not to do something",
-      "Feel physically cold under normal circumstances",
       "Walk in snow under normal circumstances",
+      "Feel physically cold under normal circumstances",
+      "Become nervous and decide not to do something",
       "Make a quick decision by common definition"
     ],
-    "correct": 0,
+    "correct": "Become nervous and decide not to do something",
     "explanation": "To <get cold feet> means to suddenly become too nervous or afraid to do something you planned."
   },
   {
     "idiom": "Jump on the bandwagon",
     "question": "To 'jump on the bandwagon' means to:",
     "options": [
-      "Join others in doing something popular",
-      "Start a new trend for the most part",
       "Get on a vehicle in conventional terms",
-      "Make music for the most part"
+      "Make music for the most part",
+      "Start a new trend for the most part",
+      "Join others in doing something popular"
     ],
-    "correct": 0,
+    "correct": "Join others in doing something popular",
     "explanation": "This means to join others in doing something that has become fashionable or popular."
   },
   {
     "idiom": "Keep your chin up",
     "question": "'Keep your chin up' means:",
     "options": [
-      "Stay positive in a difficult situation",
-      "Stand up straight by common definition",
       "Be proud as generally defined",
-      "Look upward as generally defined"
+      "Look upward as generally defined",
+      "Stay positive in a difficult situation",
+      "Stand up straight by common definition"
     ],
-    "correct": 0,
+    "correct": "Stay positive in a difficult situation",
     "explanation": "This means to remain cheerful and optimistic despite difficulties."
   },
   {
     "idiom": "Let sleeping dogs lie",
     "question": "What does 'let sleeping dogs lie' mean?",
     "options": [
-      "Don't bring up old problems or issues",
-      "Be quiet around animals in this context",
       "Rest when tired as generally defined",
-      "Avoid all conflicts in common practice"
+      "Don't bring up old problems or issues",
+      "Avoid all conflicts in common practice",
+      "Be quiet around animals in this context"
     ],
-    "correct": 0,
+    "correct": "Don't bring up old problems or issues",
     "explanation": "This means to avoid interfering in a situation that might cause trouble if disturbed."
   },
   {
     "idiom": "Make a long story short",
     "question": "To 'make a long story short' means to:",
     "options": [
+      "End a conversation under normal circumstances",
       "Tell something briefly without all the details",
       "Write a summary in standard terms",
-      "End a conversation under normal circumstances",
       "Forget parts of a story in the usual sense"
     ],
-    "correct": 0,
+    "correct": "Tell something briefly without all the details",
     "explanation": "This means to tell something in a brief way, leaving out unnecessary details."
   },
   {
     "idiom": "No pain, no gain",
     "question": "'No pain, no gain' suggests that:",
     "options": [
-      "You must work hard to achieve something worthwhile",
-      "Exercise always hurts in a typical scenario",
+      "Success is impossible by common definition",
       "Suffering is good by common definition",
-      "Success is impossible by common definition"
+      "You must work hard to achieve something worthwhile",
+      "Exercise always hurts in a typical scenario"
     ],
-    "correct": 0,
+    "correct": "You must work hard to achieve something worthwhile",
     "explanation": "This means you have to work hard and perhaps suffer to achieve something valuable."
   },
   {
     "idiom": "Once in a blue moon",
     "question": "If something happens 'once in a blue moon', it happens:",
     "options": [
-      "Very rarely",
       "Every month",
       "At night",
+      "Very rarely",
       "When the moon is blue"
     ],
-    "correct": 0,
+    "correct": "Very rarely",
     "explanation": "This means something happens very rarely or almost never."
   },
   {
     "idiom": "See eye to eye",
     "question": "To 'see eye to eye' with someone means to:",
     "options": [
-      "Agree with them completely",
       "Look at them directly",
+      "Understand their vision",
       "Be the same height",
-      "Understand their vision"
+      "Agree with them completely"
     ],
-    "correct": 0,
+    "correct": "Agree with them completely",
     "explanation": "This means to agree with someone or have the same opinion."
   },
   {
     "idiom": "Sit on the fence",
     "question": "If you 'sit on the fence', you:",
     "options": [
-      "Avoid making a decision or choosing a side",
-      "Rest outdoors as typically understood",
+      "Stay neutral in sports in conventional terms",
       "Watch something carefully by common definition",
-      "Stay neutral in sports in conventional terms"
+      "Rest outdoors as typically understood",
+      "Avoid making a decision or choosing a side"
     ],
-    "correct": 0,
+    "correct": "Avoid making a decision or choosing a side",
     "explanation": "This means to avoid making a decision or taking a position on an issue."
   },
   {
     "idiom": "Speak of the devil",
     "question": "'Speak of the devil' is said when:",
     "options": [
-      "Someone you were talking about appears",
-      "You mention something evil in this context",
       "You tell a scary story as generally defined",
+      "You mention something evil in this context",
+      "Someone you were talking about appears",
       "You gossip about someone for the most part"
     ],
-    "correct": 0,
+    "correct": "Someone you were talking about appears",
     "explanation": "This is said when the person you were just talking about suddenly appears."
   },
   {
@@ -281,10 +281,10 @@
     "options": [
       "Not completely believe what you hear",
       "Add salt to food as typically understood",
-      "Accept something easily in everyday usage",
-      "Be very skeptical in regular usage"
+      "Be very skeptical in regular usage",
+      "Accept something easily in everyday usage"
     ],
-    "correct": 0,
+    "correct": "Not completely believe what you hear",
     "explanation": "This means to view something with skepticism or not take it too seriously."
   },
   {
@@ -292,35 +292,35 @@
     "question": "'The best of both worlds' means:",
     "options": [
       "Enjoying the advantages of two different things",
-      "Traveling to two places in common practice",
       "Being very lucky in most situations",
-      "Having two jobs under normal circumstances"
+      "Having two jobs under normal circumstances",
+      "Traveling to two places in common practice"
     ],
-    "correct": 0,
+    "correct": "Enjoying the advantages of two different things",
     "explanation": "This means enjoying the benefits of two different situations at the same time."
   },
   {
     "idiom": "Through thick and thin",
     "question": "'Through thick and thin' means:",
     "options": [
+      "Very quickly",
       "In good times and bad times",
-      "Through difficult terrain",
       "Losing and gaining weight",
-      "Very quickly"
+      "Through difficult terrain"
     ],
-    "correct": 0,
+    "correct": "In good times and bad times",
     "explanation": "This means in all circumstances, both good and bad."
   },
   {
     "idiom": "To make matters worse",
     "question": "'To make matters worse' is used to:",
     "options": [
-      "Introduce an additional problem",
-      "Solve a problem as a general rule",
+      "Change the subject in regular usage",
       "End a discussion as a general rule",
-      "Change the subject in regular usage"
+      "Solve a problem as a general rule",
+      "Introduce an additional problem"
     ],
-    "correct": 0,
+    "correct": "Introduce an additional problem",
     "explanation": "This phrase introduces an additional problem that makes a bad situation even worse."
   },
   {
@@ -328,35 +328,35 @@
     "question": "To 'twist someone's arm' means to:",
     "options": [
       "Persuade someone to do something they don't want to do",
+      "Dance with someone as typically understood",
       "Hurt someone physically under normal circumstances",
-      "Help someone under normal circumstances",
-      "Dance with someone as typically understood"
+      "Help someone under normal circumstances"
     ],
-    "correct": 0,
+    "correct": "Persuade someone to do something they don't want to do",
     "explanation": "This means to persuade or pressure someone to do something."
   },
   {
     "idiom": "When pigs fly",
     "question": "'When pigs fly' means:",
     "options": [
-      "Something will never happen",
       "Something is possible",
+      "In the future in this context",
       "Animals can do anything",
-      "In the future in this context"
+      "Something will never happen"
     ],
-    "correct": 0,
+    "correct": "Something will never happen",
     "explanation": "This is used to say that something will never happen or is impossible."
   },
   {
     "idiom": "Your guess is as good as mine",
     "question": "'Your guess is as good as mine' means:",
     "options": [
-      "I don't know the answer either",
       "You're very smart in this context",
-      "Let's guess together",
-      "I know but won't tell"
+      "I know but won't tell",
+      "I don't know the answer either",
+      "Let's guess together"
     ],
-    "correct": 0,
+    "correct": "I don't know the answer either",
     "explanation": "This means I don't know the answer any better than you do."
   }
 ]

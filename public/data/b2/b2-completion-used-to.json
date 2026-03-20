@@ -9,7 +9,7 @@
     "sentence": "I ______ English every day, but now I don't have time.",
     "correct": "used to read",
     "explanation": "The correct answer is <used to read>. <Used to> + base form of the verb expresses a past habit or state that no longer exists.",
-    "tip": "Complete with '- / get / be' + used to' + read."
+    "tip": "Look at the context clues — do they point to a past habit or a current state?"
   },
   {
     "sentence": "Don't worry, it is easy to learn this grammar. You ______  in no time!",
@@ -51,7 +51,7 @@
     "sentence": "He ______ in a small village, but now he lives in a big city.",
     "correct": "used to live",
     "explanation": "The correct answer is <used to>. <Used to> + base form of the verb expresses a past state that no longer exists.",
-    "tip": "Complete with '- / get / be' + used to' + live."
+    "tip": "Check: does the sentence describe a change from past to present?"
   },
   {
     "sentence": "It took me a while, but I ______ early for work.",
@@ -63,7 +63,7 @@
     "sentence": "My grandmother ______ me stories every night.",
     "correct": "used to tell",
     "explanation": "The correct answer is <used to>. <Used to> + base form of the verb expresses a past habit.",
-    "tip": "Complete with '- / get / be' + used to' + tell."
+    "tip": "Is this a past habit, a current familiarity, or a process of adapting?"
   },
   {
     "sentence": "I ______ coffee in the morning, so I feel strange without it.",
@@ -93,25 +93,25 @@
     "sentence": "They ______ a dog, but it died last year.",
     "correct": "used to have",
     "explanation": "The correct answer is <used to>. <Used to> + base form of the verb expresses a past state that no longer exists.",
-    "tip": "Complete with '- / get / be' + used to' + have."
+    "tip": "Look at the context clues — do they point to a past habit or a current state?"
   },
   {
     "sentence": "I ______ from the street now; it doesn't bother me anymore.",
     "correct": "am used to the noise",
     "explanation": "The correct answer is <am used to>. <Be used to> + -- expresses a present habit or state that has become familiar.",
-    "tip": "Complete with '- / get / be' + used to' + the noise."
+    "tip": "Check: does the sentence describe a change from past to present?"
   },
   {
     "sentence": "He ______ , but he quit five years ago.",
     "correct": "used to smoke",
     "explanation": "The correct answer is <used to>. <Used to> + base form of the verb expresses a past habit that no longer exists.",
-    "tip": "Complete with '- / get / be' + used to' + smoke."
+    "tip": "Think about whether the action is in the past, present, or ongoing."
   },
   {
     "sentence": "You'll ______ weather after a few weeks.",
     "correct": "get used to the cold",
     "explanation": "The correct answer is <get used to>. <Get used to> expresses the process of becoming accustomed to something.",
-    "tip": "Complete with '- / get / be' + used to' + the cold."
+    "tip": "Think about whether the action is in the past, present, or ongoing."
   },
   {
     "sentence": "We ______ to that restaurant every Friday.",
@@ -135,7 +135,7 @@
     "sentence": "He ______ in a big city, but now he prefers the countryside.",
     "correct": "used to live",
     "explanation": "The correct answer is <used to live>. <Used to> + base form of the verb expresses a past state that no longer exists.",
-    "tip": "Complete with '- / get / be' + used to' + live."
+    "tip": "The surrounding verbs and time markers will tell you which \"used to\" structure to use."
   },
   {
     "sentence": "Did you ______ play outside when you were young?",
@@ -153,7 +153,7 @@
     "sentence": "She ______ long hair, but she cut it short last year.",
     "correct": "used to have",
     "explanation": "The correct answer is <used to have>. <Used to> + base form of the verb expresses a past state that no longer exists.",
-    "tip": "Complete with '- / get / be' + used to' + have."
+    "tip": "Is this a past habit, a current familiarity, or a process of adapting?"
   },
   {
     "sentence": "It took me a while, but I ______ the new system.",
@@ -165,7 +165,7 @@
     "sentence": "They ______ go on holiday every summer.",
     "correct": "used to",
     "explanation": "The correct answer is <used to>. <Used to> + base form of the verb expresses a past habit.",
-    "tip": "Complete with '- / get / be' + used to' + go."
+    "tip": "Think about whether the action is in the past, present, or ongoing."
   },
   {
     "sentence": "I ______ driving on the left side of the road now.",
@@ -177,7 +177,7 @@
     "sentence": "He ______ play the guitar, but he stopped years ago.",
     "correct": "used to",
     "explanation": "The correct answer is <used to>. <Used to> + base form of the verb expresses a past habit that no longer exists.",
-    "tip": "Complete with '- / get / be' + used to' + play."
+    "tip": "Which structure fits: a finished habit, a current comfort, or becoming comfortable?"
   },
   {
     "sentence": "She ______ living in a big city.",
@@ -201,13 +201,13 @@
     "sentence": "They ______ work long hours when they started their business.",
     "correct": "used to",
     "explanation": "The correct answer is <used to>. <Used to> + base form of the verb expresses a past habit.",
-    "tip": "Complete with '- / get / be' + used to' + work."
+    "tip": "Check: does the sentence describe a change from past to present?"
   },
   {
     "sentence": "She ______ wearing glasses, but now she wears contact lenses.",
     "correct": "used to",
     "explanation": "The correct answer is <used to>. <Used to> + base form of the verb expresses a past state that no longer exists.",
-    "tip": "Complete with '- / get / be' + used to' + wear."
+    "tip": "Look at the context clues — do they point to a past habit or a current state?"
   },
   {
     "sentence": "He ______ eating spicy food, so he can handle the heat.",
@@ -237,6 +237,6 @@
     "sentence": "We ______ wake up early when we were children.",
     "correct": "used to",
     "explanation": "The correct answer is <used to>. <Used to> + base form of the verb expresses a past habit.",
-    "tip": "Complete with '- / get / be' + used to' + wake."
+    "tip": "Check: does the sentence describe a change from past to present?"
   }
 ]

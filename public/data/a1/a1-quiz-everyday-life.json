@@ -2,10 +2,10 @@
   {
     "question": "What is your <mother's mother> called?",
     "options": [
-      "aunt according to standard definitions",
+      "cousin as recognized by most authorities",
       "grandmother",
-      "sister within the conventional framework",
-      "cousin as recognized by most authorities"
+      "aunt according to standard definitions",
+      "sister within the conventional framework"
     ],
     "correct": "grandmother",
     "explanation": "Your mother's mother is your <grandmother>."
@@ -14,9 +14,9 @@
     "question": "Which body part do you use to <smell>?",
     "options": [
       "nose",
-      "ear",
+      "mouth",
       "eye",
-      "mouth"
+      "ear"
     ],
     "correct": "nose",
     "explanation": "The <nose> is used for smelling."
@@ -35,10 +35,10 @@
   {
     "question": "Which weather word means <water falling from the sky>?",
     "options": [
-      "sunny",
+      "windy",
       "rain",
       "cloudy",
-      "windy"
+      "sunny"
     ],
     "correct": "rain",
     "explanation": "<Rain> is water falling from the sky."
@@ -47,9 +47,9 @@
     "question": "What room do you <sleep> in?",
     "options": [
       "kitchen",
-      "bathroom",
       "bedroom",
-      "living room"
+      "living room",
+      "bathroom"
     ],
     "correct": "bedroom",
     "explanation": "The <bedroom> is where you sleep."
@@ -58,8 +58,8 @@
     "question": "Which is a <school subject>?",
     "options": [
       "desk",
-      "math",
       "pencil",
+      "math",
       "teacher"
     ],
     "correct": "math",
@@ -69,9 +69,9 @@
     "question": "What is your <father's brother> called?",
     "options": [
       "uncle",
+      "grandfather",
       "cousin",
-      "nephew",
-      "grandfather"
+      "nephew"
     ],
     "correct": "uncle",
     "explanation": "Your father's brother is your <uncle>."
@@ -79,9 +79,9 @@
   {
     "question": "Which body part do you use to <think>?",
     "options": [
-      "heart",
-      "brain",
       "stomach",
+      "brain",
+      "heart",
       "lungs"
     ],
     "correct": "brain",
@@ -90,10 +90,10 @@
   {
     "question": "What do you wear when it's <cold>?",
     "options": [
+      "sandals",
       "swimsuit",
-      "shorts",
       "jacket",
-      "sandals"
+      "shorts"
     ],
     "correct": "jacket",
     "explanation": "A <jacket> keeps you warm when it's cold."
@@ -101,10 +101,10 @@
   {
     "question": "Which weather word means <no clouds>?",
     "options": [
-      "rainy",
       "sunny",
       "foggy",
-      "stormy"
+      "stormy",
+      "rainy"
     ],
     "correct": "sunny",
     "explanation": "<Sunny> means there are no clouds and the sun is shining."
@@ -112,10 +112,10 @@
   {
     "question": "What room do you <cook> in?",
     "options": [
-      "bedroom",
+      "bathroom",
       "kitchen",
       "garage",
-      "bathroom"
+      "bedroom"
     ],
     "correct": "kitchen",
     "explanation": "The <kitchen> is where you cook food."
@@ -123,8 +123,8 @@
   {
     "question": "Which is used in a <classroom>?",
     "options": [
-      "bed when considering the broader context",
       "blackboard",
+      "bed when considering the broader context",
       "stove within the conventional framework",
       "shower when considering the broader context"
     ],
@@ -134,10 +134,10 @@
   {
     "question": "What is your <brother's son> called?",
     "options": [
-      "nephew",
       "cousin",
+      "son",
       "uncle",
-      "son"
+      "nephew"
     ],
     "correct": "nephew",
     "explanation": "Your brother's son is your <nephew>."
@@ -145,10 +145,10 @@
   {
     "question": "Which body part connects your <head to your body>?",
     "options": [
-      "arm",
-      "leg",
+      "finger",
       "neck",
-      "finger"
+      "leg",
+      "arm"
     ],
     "correct": "neck",
     "explanation": "The <neck> connects your head to your body."
@@ -156,10 +156,10 @@
   {
     "question": "What do you wear on your <head>?",
     "options": [
-      "shoes",
-      "hat",
       "gloves",
-      "belt"
+      "shoes",
+      "belt",
+      "hat"
     ],
     "correct": "hat",
     "explanation": "A <hat> is worn on the head."
@@ -168,9 +168,9 @@
     "question": "Which weather word means <very cold with ice>?",
     "options": [
       "hot",
-      "warm",
       "freezing",
-      "mild"
+      "mild",
+      "warm"
     ],
     "correct": "freezing",
     "explanation": "<Freezing> means extremely cold, often with ice."
@@ -178,10 +178,10 @@
   {
     "question": "What room do you <wash> in?",
     "options": [
-      "living room",
+      "bedroom",
       "bathroom",
       "dining room",
-      "bedroom"
+      "living room"
     ],
     "correct": "bathroom",
     "explanation": "The <bathroom> is where you wash yourself."
@@ -189,10 +189,10 @@
   {
     "question": "Which do you use to <write on paper>?",
     "options": [
-      "eraser",
       "ruler",
-      "pencil",
-      "scissors"
+      "scissors",
+      "eraser",
+      "pencil"
     ],
     "correct": "pencil",
     "explanation": "A <pencil> is used to write on paper."
@@ -211,10 +211,10 @@
   {
     "question": "Which body part do you use to <walk>?",
     "options": [
-      "arms",
       "legs",
-      "hands",
-      "shoulders"
+      "shoulders",
+      "arms",
+      "hands"
     ],
     "correct": "legs",
     "explanation": "<Legs> are used for walking."

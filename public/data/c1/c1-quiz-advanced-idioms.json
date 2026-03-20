@@ -2,10 +2,10 @@
   {
     "question": "What does <the elephant in the room> mean?",
     "options": [
-      "a large animal in standard terms",
       "an obvious problem nobody discusses",
+      "an unusual decoration in this context",
       "a crowded space in the usual sense",
-      "an unusual decoration in this context"
+      "a large animal in standard terms"
     ],
     "correct": "an obvious problem nobody discusses",
     "explanation": "This idiom refers to a significant issue that everyone is aware of but avoids discussing."
@@ -14,9 +14,9 @@
     "question": "If someone <moves the goalposts>, they:",
     "options": [
       "play football based on common understanding",
+      "rearrange furniture",
       "change the rules unfairly",
-      "score a goal in this context",
-      "rearrange furniture"
+      "score a goal in this context"
     ],
     "correct": "change the rules unfairly",
     "explanation": "This idiom means to change the criteria or rules after something has begun."
@@ -35,10 +35,10 @@
   {
     "question": "If you <read between the lines>, you:",
     "options": [
-      "read very carefully",
       "understand the hidden meaning",
       "skip some lines in regular usage",
-      "read aloud as a general rule"
+      "read aloud as a general rule",
+      "read very carefully"
     ],
     "correct": "understand the hidden meaning",
     "explanation": "This idiom means to understand what is implied but not explicitly stated."
@@ -46,10 +46,10 @@
   {
     "question": "What does <cut corners> mean?",
     "options": [
-      "use scissors in common practice in regular usage",
       "do something in the cheapest or easiest way",
-      "turn sharply in the usual sense in this context",
-      "save paper by common definition in standard terms"
+      "use scissors in common practice in regular usage",
+      "save paper by common definition in standard terms",
+      "turn sharply in the usual sense in this context"
     ],
     "correct": "do something in the cheapest or easiest way",
     "explanation": "This idiom means to do something poorly to save time or money."
@@ -57,10 +57,10 @@
   {
     "question": "If something is <a watershed moment>, it is:",
     "options": [
-      "related to water",
-      "a turning point",
       "a rainy day",
-      "a minor event"
+      "a minor event",
+      "related to water",
+      "a turning point"
     ],
     "correct": "a turning point",
     "explanation": "This idiom describes a critical point that marks a significant change."
@@ -68,10 +68,10 @@
   {
     "question": "What does <throw someone under the bus> mean?",
     "options": [
-      "push someone",
-      "betray someone for personal gain",
+      "drive a bus",
       "help someone cross the street",
-      "drive a bus"
+      "betray someone for personal gain",
+      "push someone"
     ],
     "correct": "betray someone for personal gain",
     "explanation": "This idiom means to sacrifice someone else for your own benefit."
@@ -79,10 +79,10 @@
   {
     "question": "If you <have a lot on your plate>, you:",
     "options": [
-      "eat too much in regular usage",
+      "cook a big meal within the conventional framework",
       "have many responsibilities",
       "are at a restaurant",
-      "cook a big meal within the conventional framework"
+      "eat too much in regular usage"
     ],
     "correct": "have many responsibilities",
     "explanation": "This idiom means to have many tasks or problems to deal with."
@@ -90,10 +90,10 @@
   {
     "question": "What does <the ball is in your court> mean?",
     "options": [
-      "you are playing tennis",
+      "the game is over in this context",
       "it's your turn to make a decision",
-      "you lost the ball in common practice",
-      "the game is over in this context"
+      "you are playing tennis",
+      "you lost the ball in common practice"
     ],
     "correct": "it's your turn to make a decision",
     "explanation": "This idiom means it is now your responsibility to take action."
@@ -101,10 +101,10 @@
   {
     "question": "If someone <barks up the wrong tree>, they:",
     "options": [
+      "are in a forest in practical terms",
       "are near a dog in practical terms",
-      "are pursuing a mistaken approach",
       "climb trees in everyday usage",
-      "are in a forest in practical terms"
+      "are pursuing a mistaken approach"
     ],
     "correct": "are pursuing a mistaken approach",
     "explanation": "This idiom means to make a wrong assumption or follow a false lead."
@@ -114,8 +114,8 @@
     "options": [
       "fishing bait based on common understanding",
       "a complicated situation",
-      "a container as recognized by most authorities",
-      "a simple problem"
+      "a simple problem",
+      "a container as recognized by most authorities"
     ],
     "correct": "a complicated situation",
     "explanation": "This idiom describes a situation that, once started, will cause many problems."
@@ -123,10 +123,10 @@
   {
     "question": "If you <bite the bullet>, you:",
     "options": [
-      "eat metal in a typical scenario",
       "accept something difficult bravely",
+      "shoot a gun under normal circumstances",
       "go to the dentist by common definition",
-      "shoot a gun under normal circumstances"
+      "eat metal in a typical scenario"
     ],
     "correct": "accept something difficult bravely",
     "explanation": "This idiom means to endure a painful situation with courage."
@@ -134,10 +134,10 @@
   {
     "question": "What does <turn a blind eye> mean?",
     "options": [
-      "close your eyes for the most part",
-      "deliberately ignore something",
       "have poor vision in this context",
-      "look the other way when considering the broader context"
+      "deliberately ignore something",
+      "look the other way when considering the broader context",
+      "close your eyes for the most part"
     ],
     "correct": "deliberately ignore something",
     "explanation": "This idiom means to intentionally overlook or ignore wrongdoing."
@@ -145,10 +145,10 @@
   {
     "question": "If something <rings a bell>, it:",
     "options": [
-      "makes noise",
       "sounds familiar",
       "is a doorbell",
-      "is musical"
+      "is musical",
+      "makes noise"
     ],
     "correct": "sounds familiar",
     "explanation": "This idiom means something seems familiar or reminds you of something."
@@ -157,8 +157,8 @@
     "question": "What does <in the same boat> mean?",
     "options": [
       "on a ship in common practice",
-      "in the same difficult situation",
       "traveling together in this context",
+      "in the same difficult situation",
       "at the beach by common definition"
     ],
     "correct": "in the same difficult situation",
@@ -167,10 +167,10 @@
   {
     "question": "If you <jump on the bandwagon>, you:",
     "options": [
+      "exercise in this context",
       "ride a wagon when considering the broader context",
       "follow a popular trend",
-      "play music within the conventional framework",
-      "exercise in this context"
+      "play music within the conventional framework"
     ],
     "correct": "follow a popular trend",
     "explanation": "This idiom means to join others in doing something fashionable or popular."
@@ -178,10 +178,10 @@
   {
     "question": "What does <a storm in a teacup> mean?",
     "options": [
-      "bad weather by common definition",
-      "a big fuss about something unimportant",
       "a broken cup in a typical scenario",
-      "a tea party as a general rule"
+      "a tea party as a general rule",
+      "a big fuss about something unimportant",
+      "bad weather by common definition"
     ],
     "correct": "a big fuss about something unimportant",
     "explanation": "This idiom describes an exaggerated reaction to a minor issue."
@@ -189,10 +189,10 @@
   {
     "question": "If you <burn bridges>, you:",
     "options": [
-      "start fires in standard terms",
-      "destroy relationships permanently",
+      "build something in ordinary cases",
       "cross a river in this context",
-      "build something in ordinary cases"
+      "start fires in standard terms",
+      "destroy relationships permanently"
     ],
     "correct": "destroy relationships permanently",
     "explanation": "This idiom means to damage a relationship beyond repair."
@@ -201,9 +201,9 @@
     "question": "What does <the last straw> mean?",
     "options": [
       "a drinking straw as a general rule",
+      "the end of summer under normal circumstances",
       "the final problem that causes a reaction",
-      "hay for animals by common definition",
-      "the end of summer under normal circumstances"
+      "hay for animals by common definition"
     ],
     "correct": "the final problem that causes a reaction",
     "explanation": "This idiom refers to the final event in a series that causes someone to lose patience."
@@ -211,10 +211,10 @@
   {
     "question": "If you <think outside the box>, you:",
     "options": [
-      "look at a box in standard terms",
       "think creatively and unconventionally",
-      "pack things by common definition",
-      "move house under normal circumstances"
+      "look at a box in standard terms",
+      "move house under normal circumstances",
+      "pack things by common definition"
     ],
     "correct": "think creatively and unconventionally",
     "explanation": "This idiom means to think in an original or creative way."

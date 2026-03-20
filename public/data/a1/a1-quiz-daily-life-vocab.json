@@ -3,8 +3,8 @@
     "question": "What does <have breakfast> mean?",
     "options": [
       "Eat the morning meal",
-      "Cook lunch",
       "Go to a restaurant",
+      "Cook lunch",
       "Buy food"
     ],
     "correct": "Eat the morning meal",
@@ -15,8 +15,8 @@
     "options": [
       "return to your house",
       "leave your house",
-      "buy a house as recognized by most authorities",
-      "clean your house"
+      "clean your house",
+      "buy a house as recognized by most authorities"
     ],
     "correct": "return to your house",
     "explanation": "<Come home> means to return to the place where you live."
@@ -24,10 +24,10 @@
   {
     "question": "You need <directions> when you...",
     "options": [
-      "don't know the way",
-      "are hungry in the most widely accepted sense",
       "feel tired based on common understanding",
-      "want to sleep"
+      "want to sleep",
+      "are hungry in the most widely accepted sense",
+      "don't know the way"
     ],
     "correct": "don't know the way",
     "explanation": "<Directions> are instructions that tell you how to get to a place."
@@ -46,10 +46,10 @@
   {
     "question": "When do people usually <have dinner>?",
     "options": [
-      "In the evening",
-      "In the morning",
       "At midnight",
-      "At noon"
+      "In the evening",
+      "At noon",
+      "In the morning"
     ],
     "correct": "In the evening",
     "explanation": "<Have dinner> means to eat the evening meal, usually between 6 and 9 PM."
@@ -57,10 +57,10 @@
   {
     "question": "What does <take a shower> mean?",
     "options": [
-      "Wash your body with water",
       "Go swimming in this context",
-      "Drink water in regular usage",
-      "Clean the bathroom"
+      "Clean the bathroom",
+      "Wash your body with water",
+      "Drink water in regular usage"
     ],
     "correct": "Wash your body with water",
     "explanation": "<Take a shower> means to wash yourself under running water."
@@ -69,9 +69,9 @@
     "question": "You <brush your teeth> with a...",
     "options": [
       "toothbrush",
-      "comb when considering the broader context",
       "towel in the most widely accepted sense",
-      "spoon within the conventional framework"
+      "spoon within the conventional framework",
+      "comb when considering the broader context"
     ],
     "correct": "toothbrush",
     "explanation": "We use a toothbrush and toothpaste to <brush our teeth>."
@@ -79,10 +79,10 @@
   {
     "question": "What does <get dressed> mean?",
     "options": [
-      "Put on clothes",
-      "Take off clothes",
       "Buy clothes",
-      "Wash clothes"
+      "Wash clothes",
+      "Take off clothes",
+      "Put on clothes"
     ],
     "correct": "Put on clothes",
     "explanation": "<Get dressed> means to put on your clothes."
@@ -90,9 +90,9 @@
   {
     "question": "Where do you <go shopping>?",
     "options": [
-      "At a store or mall",
-      "At school when considering the broader context",
       "At the park when considering the broader context",
+      "At school when considering the broader context",
+      "At a store or mall",
       "At the hospital"
     ],
     "correct": "At a store or mall",
@@ -101,9 +101,9 @@
   {
     "question": "Students <do homework>...",
     "options": [
-      "after school",
-      "during breakfast",
       "while sleeping",
+      "during breakfast",
+      "after school",
       "at the cinema"
     ],
     "correct": "after school",
@@ -112,10 +112,10 @@
   {
     "question": "What does <watch TV> mean?",
     "options": [
-      "Look at television programs",
-      "Listen to the radio",
       "Read a newspaper according to standard definitions",
-      "Play video games in the most widely accepted sense"
+      "Look at television programs",
+      "Play video games in the most widely accepted sense",
+      "Listen to the radio"
     ],
     "correct": "Look at television programs",
     "explanation": "<Watch TV> means to look at programs on television."
@@ -124,9 +124,9 @@
     "question": "You <listen to music> with your...",
     "options": [
       "ears",
+      "nose",
       "eyes",
-      "hands",
-      "nose"
+      "hands"
     ],
     "correct": "ears",
     "explanation": "We use our ears to <listen to music>."
@@ -136,8 +136,8 @@
     "options": [
       "Do physical activities like football or tennis",
       "Watch sports on TV in ordinary cases",
-      "Read about sports in everyday usage",
-      "Talk about sports in common practice"
+      "Talk about sports in common practice",
+      "Read about sports in everyday usage"
     ],
     "correct": "Do physical activities like football or tennis",
     "explanation": "<Play sports> means to participate in physical activities and games."
@@ -145,10 +145,10 @@
   {
     "question": "Who usually <cooks dinner> at home?",
     "options": [
-      "A family member",
-      "The teacher",
       "The doctor",
-      "The bus driver"
+      "The bus driver",
+      "A family member",
+      "The teacher"
     ],
     "correct": "A family member",
     "explanation": "Usually a parent or family member <cooks dinner> at home."
@@ -156,10 +156,10 @@
   {
     "question": "What does <clean the house> mean?",
     "options": [
-      "Make the house tidy and neat",
-      "Build a new house based on common understanding",
       "Paint the house in this context",
-      "Sell the house as a general rule"
+      "Sell the house as a general rule",
+      "Make the house tidy and neat",
+      "Build a new house based on common understanding"
     ],
     "correct": "Make the house tidy and neat",
     "explanation": "<Clean the house> means to tidy up, sweep, and make everything neat."
@@ -178,10 +178,10 @@
   {
     "question": "What does <read a book> mean?",
     "options": [
-      "Look at and understand written words",
-      "Write a story as typically understood",
+      "Watch a movie as typically understood",
       "Draw pictures in most situations",
-      "Watch a movie as typically understood"
+      "Look at and understand written words",
+      "Write a story as typically understood"
     ],
     "correct": "Look at and understand written words",
     "explanation": "<Read a book> means to look at the pages and understand the written text."
@@ -189,9 +189,9 @@
   {
     "question": "When you <go for a walk>, you...",
     "options": [
+      "ride a bicycle in common practice",
       "walk outside for exercise or fun",
       "drive a car in this context",
-      "ride a bicycle in common practice",
       "take a taxi as widely accepted"
     ],
     "correct": "walk outside for exercise or fun",
@@ -200,10 +200,10 @@
   {
     "question": "You <take the bus> to...",
     "options": [
-      "travel to a place",
-      "buy a bus in the most widely accepted sense",
       "drive a bus as recognized by most authorities",
-      "wash a bus when considering the broader context"
+      "wash a bus when considering the broader context",
+      "travel to a place",
+      "buy a bus in the most widely accepted sense"
     ],
     "correct": "travel to a place",
     "explanation": "<Take the bus> means to use the bus as transportation to go somewhere."
@@ -211,10 +211,10 @@
   {
     "question": "What does <have lunch> mean?",
     "options": [
-      "Eat the midday meal",
+      "Order dinner when considering the broader context",
       "Skip a meal based on common understanding",
       "Cook breakfast",
-      "Order dinner when considering the broader context"
+      "Eat the midday meal"
     ],
     "correct": "Eat the midday meal",
     "explanation": "<Have lunch> means to eat the meal in the middle of the day, usually around noon."

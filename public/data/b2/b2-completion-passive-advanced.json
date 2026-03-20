@@ -15,7 +15,7 @@
     "sentence": "The documents should ______ been signed before the meeting.",
     "correct": "have",
     "explanation": "Modal perfect passive: <should have been> + past participle for past obligations not fulfilled.",
-    "tip": "The documents weren't signed but they should have been — modal perfect passive."
+    "tip": "Consider the relationship between the clauses."
   },
   {
     "sentence": "The house ______ being renovated at the moment.",
@@ -105,7 +105,7 @@
     "sentence": "The road ______ have been repaired months ago. It's still full of holes.",
     "correct": "should",
     "explanation": "Modal perfect passive for criticism: <should have been> + past participle.",
-    "tip": "The road wasn't repaired but it should have been — what modal shows this criticism?"
+    "tip": "Look at the auxiliary verbs already in the sentence for clues."
   },
   {
     "sentence": "By the time we arrived, the food had already ______ served.",
@@ -117,7 +117,7 @@
     "sentence": "She had her portrait ______ by a famous artist.",
     "correct": "painted",
     "explanation": "Causative <have>: <had> + object + past participle. The artist painted it for her.",
-    "tip": "A famous artist painted it for her — what past participle of 'paint'?"
+    "tip": "The context tells you whether this is active or passive."
   },
   {
     "sentence": "The concert is expected ______ attract over 50,000 fans.",
