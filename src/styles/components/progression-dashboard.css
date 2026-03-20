@@ -371,6 +371,7 @@
   border: 1px solid #d1d5db;
   filter: grayscale(0.3);
   opacity: 0.65;
+  pointer-events: none;
 }
 
 .progression-dashboard__module--locked .progression-dashboard__module-name {

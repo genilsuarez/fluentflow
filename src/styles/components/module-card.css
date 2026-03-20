@@ -367,6 +367,7 @@
     inset 0 0 0 2px rgba(156, 163, 175, 0.4),
     var(--card-shadow);
   position: relative;
+  pointer-events: none;
 }
 
 .module-card--locked:hover {
