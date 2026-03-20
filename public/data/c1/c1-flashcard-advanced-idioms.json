@@ -3,240 +3,280 @@
     "front": "Move the goalposts",
     "back": "Cambiar las reglas a conveniencia",
     "example": "They keep moving the <goalposts> on the project requirements.",
-    "example_es": "Siguen cambiando las <reglas> de los requisitos del proyecto."
+    "example_es": "Siguen cambiando las <reglas> de los requisitos del proyecto.",
+    "ipa": "/muːv ðə ˈɡoʊlpoʊsts/"
   },
   {
     "front": "A double-edged sword",
     "back": "Un arma de doble filo",
     "example": "Social media is <a double-edged sword>.",
-    "example_es": "Las redes sociales son <un arma de doble filo>."
+    "example_es": "Las redes sociales son <un arma de doble filo>.",
+    "ipa": "/ə ˈdʌbəl ɛdʒd sɔːrd/"
   },
   {
     "front": "A watershed moment",
     "back": "Un momento decisivo / punto de inflexión",
     "example": "The invention of the internet was <a watershed moment>.",
-    "example_es": "La invención de internet fue un punto de inflexión."
+    "example_es": "La invención de internet fue un punto de inflexión.",
+    "ipa": "/ə ˈwɔːtərʃɛd ˈmoʊmənt/"
   },
   {
     "front": "Throw someone under the bus",
     "back": "Traicionar a alguien por beneficio propio",
     "example": "He threw his colleague <under> the bus to save his job.",
-    "example_es": "Traicionó a su colega para salvar su trabajo."
+    "example_es": "Traicionó a su colega para salvar su trabajo.",
+    "ipa": "/θroʊ ˈsʌmwʌn ˈʌndər ðə bʌs/"
   },
   {
     "front": "Have a lot on your plate",
     "back": "Tener mucho que hacer",
     "example": "I can't take on more work — I <have> a lot on my plate.",
-    "example_es": "No puedo asumir más trabajo — tengo <mucho> que hacer."
+    "example_es": "No puedo asumir más trabajo — tengo <mucho> que hacer.",
+    "ipa": "/hæv ə lɒt ɒn jʊr pleɪt/"
   },
   {
     "front": "Bark up the wrong tree",
     "back": "Equivocarse de objetivo",
     "example": "If you think I did it, you're barking up the <wrong> tree.",
-    "example_es": "Si crees que fui yo, te estás equivocando de <objetivo>."
+    "example_es": "Si crees que fui yo, te estás equivocando de <objetivo>.",
+    "ipa": "/bɑːrk ʌp ðə rɒŋ triː/"
   },
   {
     "front": "A can of worms",
     "back": "Un tema complicado / una caja de Pandora",
     "example": "Discussing salaries opened <a can of worms>.",
-    "example_es": "Discutir los salarios abrió una caja de Pandora."
+    "example_es": "Discutir los salarios abrió una caja de Pandora.",
+    "ipa": "/ə kæn əv wɜːrmz/"
   },
   {
     "front": "Turn a blind eye",
     "back": "Hacer la vista gorda",
     "example": "The manager turned a <blind> eye to the late arrivals.",
-    "example_es": "El gerente hizo la <vista> gorda con las llegadas tarde."
+    "example_es": "El gerente hizo la <vista> gorda con las llegadas tarde.",
+    "ipa": "/tɜːrn ə blaɪnd aɪ/"
   },
   {
     "front": "Jump on the bandwagon",
     "back": "Subirse al carro / seguir la moda",
     "example": "Everyone jumped on the AI <bandwagon>.",
-    "example_es": "Todos se subieron al <carro> de la IA."
+    "example_es": "Todos se subieron al <carro> de la IA.",
+    "ipa": "/dʒʌmp ɒn ðə ˈbændˌwæɡən/"
   },
   {
     "front": "A storm in a teacup",
     "back": "Una tempestad en un vaso de agua",
     "example": "The argument was just <a storm in a teacup>.",
-    "example_es": "La discusión fue solo <una tempestad en un vaso de agua>."
+    "example_es": "La discusión fue solo <una tempestad en un vaso de agua>.",
+    "ipa": "/ə stɔːrm ɪn ə ˈtiːkʌp/"
   },
   {
     "front": "Burn bridges",
     "back": "Quemar puentes / romper relaciones",
     "example": "Don't <burn bridges> when you leave a job.",
-    "example_es": "No quemes puentes cuando dejes un trabajo."
+    "example_es": "No quemes puentes cuando dejes un trabajo.",
+    "ipa": "/bɜːrn ˈbrɪdʒɪz/"
   },
   {
     "front": "The last straw",
     "back": "La gota que colma el vaso",
     "example": "His rudeness was <the last straw> — I quit.",
-    "example_es": "Su grosería fue la gota que colmó el vaso — renuncié."
+    "example_es": "Su grosería fue la gota que colmó el vaso — renuncié.",
+    "ipa": "/ðə læst strɔː/"
   },
   {
     "front": "Think outside the box",
     "back": "Pensar de forma creativa",
     "example": "We need to <think outside the box> to solve this.",
-    "example_es": "Necesitamos <pensar de forma creativa> para resolver esto."
+    "example_es": "Necesitamos <pensar de forma creativa> para resolver esto.",
+    "ipa": "/θɪŋk aʊtˈsaɪd ðə bɒks/"
   },
   {
     "front": "In the same boat",
     "back": "En la misma situación",
     "example": "We're all <in the same boat> with these budget cuts.",
-    "example_es": "Todos estamos <en la misma situación> con estos recortes."
+    "example_es": "Todos estamos <en la misma situación> con estos recortes.",
+    "ipa": "/ɪn ðə seɪm boʊt/"
   },
   {
     "front": "Bite the hand that feeds you",
     "back": "Morder la mano que te da de comer",
     "example": "Criticizing your sponsor is biting the <hand> that feeds you.",
-    "example_es": "Criticar a tu patrocinador es <morder la mano que te da de comer>."
+    "example_es": "Criticar a tu patrocinador es <morder la mano que te da de comer>.",
+    "ipa": "/baɪt ðə hænd ðæt fiːdz juː/"
   },
   {
     "front": "Go back to the drawing board",
     "back": "Volver a empezar desde cero",
     "example": "The plan failed — we need to <go back to the drawing board>.",
-    "example_es": "El plan falló — necesitamos <volver a empezar desde cero>."
+    "example_es": "El plan falló — necesitamos <volver a empezar desde cero>.",
+    "ipa": "/ɡoʊ bæk tə ðə ˈdrɔːɪŋ bɔːrd/"
   },
   {
     "front": "Nip it in the bud",
     "back": "Cortar de raíz / atajar a tiempo",
     "example": "We should <nip> this problem in the bud before it grows.",
-    "example_es": "Deberíamos atajar este problema de <raíz> antes de que crezca."
+    "example_es": "Deberíamos atajar este problema de <raíz> antes de que crezca.",
+    "ipa": "/nɪp ɪt ɪn ðə bʌd/"
   },
   {
     "front": "At the drop of a hat",
     "back": "Sin pensarlo / al instante",
     "example": "She'd travel anywhere <at the drop of a hat>.",
-    "example_es": "Viajaría a cualquier lugar sin pensarlo."
+    "example_es": "Viajaría a cualquier lugar sin pensarlo.",
+    "ipa": "/ət ðə drɒp əv ə hæt/"
   },
   {
     "front": "Beat around the bush",
     "back": "Andarse con rodeos",
     "example": "Stop beating <around> the bush and tell me the truth.",
-    "example_es": "Deja de andarte con <rodeos> y dime la verdad."
+    "example_es": "Deja de andarte con <rodeos> y dime la verdad.",
+    "ipa": "/biːt əˈraʊnd ðə bʊʃ/"
   },
   {
     "front": "Blow it out of proportion",
     "back": "Exagerar / sacar de proporción",
     "example": "The media blew the incident out of <proportion>.",
-    "example_es": "Los medios exageraron el incidente."
+    "example_es": "Los medios exageraron el incidente.",
+    "ipa": "/bloʊ ɪt aʊt əv prəˈpɔːrʃən/"
   },
   {
     "front": "By and large",
     "back": "En general / en su mayor parte",
     "example": "<By and large>, the project was a success.",
-    "example_es": "En general, el proyecto fue un éxito."
+    "example_es": "En general, el proyecto fue un éxito.",
+    "ipa": "/baɪ ənd lɑːrdʒ/"
   },
   {
     "front": "Come to grips with",
     "back": "Aceptar y enfrentar algo",
     "example": "She's still coming to <grips> with the loss.",
-    "example_es": "Todavía está aceptando la pérdida."
+    "example_es": "Todavía está aceptando la pérdida.",
+    "ipa": "/kʌm tə ɡrɪps wɪð/"
   },
   {
     "front": "Draw the line",
     "back": "Poner un límite",
     "example": "I <draw the line> at working weekends.",
-    "example_es": "Pongo el límite en trabajar los fines de semana."
+    "example_es": "Pongo el límite en trabajar los fines de semana.",
+    "ipa": "/drɔː ðə laɪn/"
   },
   {
     "front": "Fall through the cracks",
     "back": "Pasar desapercibido / quedar olvidado",
     "example": "Some students <fall through the cracks> in large schools.",
-    "example_es": "Algunos estudiantes pasan desapercibidos en escuelas grandes."
+    "example_es": "Algunos estudiantes pasan desapercibidos en escuelas grandes.",
+    "ipa": "/fɔːl θruː ðə kræks/"
   },
   {
     "front": "Get to the bottom of",
     "back": "Llegar al fondo de",
     "example": "We need to <get to the bottom of> this issue.",
-    "example_es": "Necesitamos <llegar al fondo de> este asunto."
+    "example_es": "Necesitamos <llegar al fondo de> este asunto.",
+    "ipa": "/ɡɛt tə ðə ˈbɒtəm əv/"
   },
   {
     "front": "In the pipeline",
     "back": "En preparación / en camino",
     "example": "Several new products are <in the pipeline>.",
-    "example_es": "Varios productos nuevos están en preparación."
+    "example_es": "Varios productos nuevos están en preparación.",
+    "ipa": "/ɪn ðə ˈpaɪplaɪn/"
   },
   {
     "front": "Keep tabs on",
     "back": "Vigilar / hacer seguimiento",
     "example": "The manager keeps <tabs> on all expenses.",
-    "example_es": "El gerente hace <seguimiento> de todos los gastos."
+    "example_es": "El gerente hace <seguimiento> de todos los gastos.",
+    "ipa": "/kiːp tæbz ɒn/"
   },
   {
     "front": "Miss the mark",
     "back": "No dar en el blanco / fallar",
     "example": "The advertising campaign missed the <mark>.",
-    "example_es": "La campaña publicitaria no dio en el <blanco>."
+    "example_es": "La campaña publicitaria no dio en el <blanco>.",
+    "ipa": "/mɪs ðə mɑːrk/"
   },
   {
     "front": "On thin ice",
     "back": "En terreno peligroso",
     "example": "After his mistake, he's <on thin ice> with the boss.",
-    "example_es": "Después de su error, está <en terreno peligroso> con el jefe."
+    "example_es": "Después de su error, está <en terreno peligroso> con el jefe.",
+    "ipa": "/ɒn θɪn aɪs/"
   },
   {
     "front": "Pull the plug",
     "back": "Cancelar / poner fin a",
     "example": "They pulled the <plug> on the project due to costs.",
-    "example_es": "Cancelaron el proyecto por los costos."
+    "example_es": "Cancelaron el proyecto por los costos.",
+    "ipa": "/pʊl ðə plʌɡ/"
   },
   {
     "front": "Raise eyebrows",
     "back": "Causar sorpresa / levantar sospechas",
     "example": "His sudden resignation raised <eyebrows>.",
-    "example_es": "Su renuncia repentina causó <sorpresa>."
+    "example_es": "Su renuncia repentina causó <sorpresa>.",
+    "ipa": "/reɪz ˈaɪbraʊz/"
   },
   {
     "front": "Set the record straight",
     "back": "Aclarar las cosas",
     "example": "I'd like to <set the record straight> about what happened.",
-    "example_es": "Me gustaría <aclarar las cosas> sobre lo que pasó."
+    "example_es": "Me gustaría <aclarar las cosas> sobre lo que pasó.",
+    "ipa": "/sɛt ðə ˈrɛkərd streɪt/"
   },
   {
     "front": "Under the radar",
     "back": "Pasar desapercibido",
     "example": "The startup flew <under the radar> for years.",
-    "example_es": "La startup pasó desapercibida durante años."
+    "example_es": "La startup pasó desapercibida durante años.",
+    "ipa": "/ˈʌndər ðə ˈreɪdɑːr/"
   },
   {
     "front": "Wear many hats",
     "back": "Desempeñar muchos roles",
     "example": "In a small company, everyone wears <many> hats.",
-    "example_es": "En una empresa pequeña, todos desempeñan <muchos> roles."
+    "example_es": "En una empresa pequeña, todos desempeñan <muchos> roles.",
+    "ipa": "/wɛr ˈmɛni hæts/"
   },
   {
     "front": "The elephant in the room",
     "back": "el tema incómodo que nadie menciona",
     "example": "Budget cuts are <the elephant in the room>.",
-    "example_es": ""
+    "example_es": "",
+    "ipa": "/ðə ˈɛlɪfənt ɪn ðə ruːm/"
   },
   {
     "front": "Read between the lines",
     "back": "leer entre líneas",
     "example": "You need to <read between the lines> of his email.",
-    "example_es": ""
+    "example_es": "",
+    "ipa": "/riːd bɪˈtwiːn ðə laɪnz/"
   },
   {
     "front": "A blessing in disguise",
     "back": "no hay mal que por bien no venga",
     "example": "Losing that job was <a blessing in disguise>.",
-    "example_es": ""
+    "example_es": "",
+    "ipa": "/ə ˈblɛsɪŋ ɪn dɪsˈɡaɪz/"
   },
   {
     "front": "Barking up the wrong tree",
     "back": "ir por mal camino",
     "example": "If you think I did it, you're <barking up the wrong tree>.",
-    "example_es": ""
+    "example_es": "",
+    "ipa": "/ˈbɑːrkɪŋ ʌp ðə rɒŋ triː/"
   },
   {
     "front": "Cut corners",
     "back": "tomar atajos / hacer chapuzas",
     "example": "Don't <cut corners> on safety.",
-    "example_es": ""
+    "example_es": "",
+    "ipa": "/kʌt ˈkɔːrnərz/"
   },
   {
     "front": "Hit the nail on the head",
     "back": "dar en el clavo",
     "example": "You <hit the nail on the head> with that analysis.",
-    "example_es": ""
+    "example_es": "",
+    "ipa": "/hɪt ðə neɪl ɒn ðə hɛd/"
   }
 ]

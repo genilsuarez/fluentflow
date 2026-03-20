@@ -261,21 +261,21 @@
   {
     "front": "Procurement",
     "back": "adquisición / compras",
-    "ipa": "",
+    "ipa": "/prəˈkjʊərmənt/",
     "example": "The <procurement> department handles supplier contracts.",
     "example_es": ""
   },
   {
     "front": "Turnover",
     "back": "facturación / rotación",
-    "ipa": "",
+    "ipa": "/ˈtɜːrnoʊvər/",
     "example": "The company has a high employee <turnover> rate.",
     "example_es": ""
   },
   {
     "front": "Stakeholder",
     "back": "parte interesada",
-    "ipa": "",
+    "ipa": "/ˈsteɪkhoʊldər/",
     "example": "All <stakeholders> were consulted before the merger.",
     "example_es": ""
   }

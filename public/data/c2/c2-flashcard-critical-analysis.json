@@ -3,240 +3,280 @@
     "front": "epistemological",
     "back": "epistemológico / relativo al conocimiento",
     "example": "The study raises <epistemological> questions about truth.",
-    "example_es": "El estudio plantea preguntas epistemológicas sobre la verdad."
+    "example_es": "El estudio plantea preguntas epistemológicas sobre la verdad.",
+    "ipa": "/ɪˌpɪstəməˈlɒdʒɪkəl/"
   },
   {
     "front": "ontological",
     "back": "ontológico / relativo a la naturaleza del ser",
     "example": "The debate has <ontological> implications for our understanding.",
-    "example_es": "El debate tiene implicaciones ontológicas para nuestra comprensión."
+    "example_es": "El debate tiene implicaciones ontológicas para nuestra comprensión.",
+    "ipa": "/ˌɒntəˈlɒdʒɪkəl/"
   },
   {
     "front": "hermeneutic",
     "back": "hermenéutico / interpretativo",
     "example": "A <hermeneutic> approach reveals deeper meanings in the text.",
-    "example_es": "Un enfoque hermenéutico revela significados más profundos en el texto."
+    "example_es": "Un enfoque hermenéutico revela significados más profundos en el texto.",
+    "ipa": "/ˌhɜːrməˈnjuːtɪk/"
   },
   {
     "front": "dialectical",
     "back": "dialéctico / basado en contradicciones",
     "example": "The <dialectical> method examines opposing viewpoints.",
-    "example_es": "El método dialéctico examina puntos de vista opuestos."
+    "example_es": "El método dialéctico examina puntos de vista opuestos.",
+    "ipa": "/ˌdaɪəˈlɛktɪkəl/"
   },
   {
     "front": "heuristic",
     "back": "heurístico / método de descubrimiento",
     "example": "The <heuristic> approach facilitates problem-solving.",
-    "example_es": "El enfoque heurístico facilita la resolución de problemas."
+    "example_es": "El enfoque heurístico facilita la resolución de problemas.",
+    "ipa": "/hjʊˈrɪstɪk/"
   },
   {
     "front": "axiomatic",
     "back": "axiomático / evidente por sí mismo",
     "example": "The principle is considered <axiomatic> in the field.",
-    "example_es": "El principio se considera axiomático en el campo."
+    "example_es": "El principio se considera axiomático en el campo.",
+    "ipa": "/ˌæksiəˈmætɪk/"
   },
   {
     "front": "teleological",
     "back": "teleológico / orientado a un fin",
     "example": "The <teleological> argument focuses on purpose and design.",
-    "example_es": "El argumento teleológico se centra en el propósito y el diseño."
+    "example_es": "El argumento teleológico se centra en el propósito y el diseño.",
+    "ipa": "/ˌtɛliəˈlɒdʒɪkəl/"
   },
   {
     "front": "rationalism",
     "back": "racionalismo / conocimiento basado en razón",
     "example": "<Rationalism> prioritizes logical reasoning over sensory experience.",
-    "example_es": "El racionalismo prioriza el razonamiento lógico sobre la experiencia sensorial."
+    "example_es": "El racionalismo prioriza el razonamiento lógico sobre la experiencia sensorial.",
+    "ipa": "/ˈræʃənəlɪzəm/"
   },
   {
     "front": "holistic",
     "back": "holístico / considerando el todo",
     "example": "A <holistic> approach considers all interconnected factors.",
-    "example_es": "Un enfoque holístico considera todos los factores interconectados."
+    "example_es": "Un enfoque holístico considera todos los factores interconectados.",
+    "ipa": "/hoʊˈlɪstɪk/"
   },
   {
     "front": "determinism",
     "back": "determinismo / causalidad inevitable",
     "example": "<Determinism> suggests that events are causally predetermined.",
-    "example_es": "El determinismo sugiere que los eventos están causalmente predeterminados."
+    "example_es": "El determinismo sugiere que los eventos están causalmente predeterminados.",
+    "ipa": "/dɪˈtɜːrmɪnɪzəm/"
   },
   {
     "front": "contingent",
     "back": "contingente / dependiente de circunstancias",
     "example": "The outcome is <contingent> upon multiple variables.",
-    "example_es": "El resultado es contingente de múltiples variables."
+    "example_es": "El resultado es contingente de múltiples variables.",
+    "ipa": "/kənˈtɪndʒənt/"
   },
   {
     "front": "antithesis",
     "back": "antítesis / contraste directo",
     "example": "The new policy is the <antithesis> of previous approaches.",
-    "example_es": "La nueva política es la antítesis de enfoques previos."
+    "example_es": "La nueva política es la antítesis de enfoques previos.",
+    "ipa": "/ænˈtɪθəsɪs/"
   },
   {
     "front": "synthesis",
     "back": "síntesis / combinación de elementos",
     "example": "The theory represents a <synthesis> of diverse perspectives.",
-    "example_es": "La teoría representa una síntesis de perspectivas diversas."
+    "example_es": "La teoría representa una síntesis de perspectivas diversas.",
+    "ipa": "/ˈsɪnθəsɪs/"
   },
   {
     "front": "paradox",
     "back": "paradoja / contradicción aparente",
     "example": "The <paradox> challenges conventional understanding.",
-    "example_es": "La paradoja desafía la comprensión convencional."
+    "example_es": "La paradoja desafía la comprensión convencional.",
+    "ipa": "/ˈpærədɒks/"
   },
   {
     "front": "anomaly",
     "back": "anomalía / desviación de lo esperado",
     "example": "The <anomaly> in the data requires further investigation.",
-    "example_es": "La anomalía en los datos requiere mayor investigación."
+    "example_es": "La anomalía en los datos requiere mayor investigación.",
+    "ipa": "/əˈnɒməli/"
   },
   {
     "front": "corollary",
     "back": "corolario / consecuencia natural",
     "example": "A <corollary> of this theory is that behavior is predictable.",
-    "example_es": "Un corolario de esta teoría es que el comportamiento es predecible."
+    "example_es": "Un corolario de esta teoría es que el comportamiento es predecible.",
+    "ipa": "/ˈkɒrəlɛri/"
   },
   {
     "front": "caveat",
     "back": "advertencia / salvedad",
     "example": "An important <caveat> is that results may not generalize.",
-    "example_es": "Una advertencia importante es que los resultados pueden no generalizarse."
+    "example_es": "Una advertencia importante es que los resultados pueden no generalizarse.",
+    "ipa": "/ˈkæviæt/"
   },
   {
     "front": "proviso",
     "back": "condición / estipulación",
     "example": "The agreement includes a <proviso> regarding confidentiality.",
-    "example_es": "El acuerdo incluye una condición respecto a la confidencialidad."
+    "example_es": "El acuerdo incluye una condición respecto a la confidencialidad.",
+    "ipa": "/prəˈvaɪzoʊ/"
   },
   {
     "front": "stipulation",
     "back": "estipulación / requisito específico",
     "example": "The <stipulation> ensures methodological rigor.",
-    "example_es": "La estipulación asegura rigor metodológico."
+    "example_es": "La estipulación asegura rigor metodológico.",
+    "ipa": "/ˌstɪpjəˈleɪʃən/"
   },
   {
     "front": "presupposition",
     "back": "presuposición / suposición implícita",
     "example": "The argument rests on questionable <presuppositions>.",
-    "example_es": "El argumento se basa en presuposiciones cuestionables."
+    "example_es": "El argumento se basa en presuposiciones cuestionables.",
+    "ipa": "/ˌpriːsʌpəˈzɪʃən/"
   },
   {
     "front": "implication",
     "back": "implicación / consecuencia lógica",
     "example": "The <implications> of the findings are profound.",
-    "example_es": "Las implicaciones de los hallazgos son profundas."
+    "example_es": "Las implicaciones de los hallazgos son profundas.",
+    "ipa": "/ˌɪmplɪˈkeɪʃən/"
   },
   {
     "front": "extrapolation",
     "back": "extrapolación / inferencia más allá de datos",
     "example": "<Extrapolation> from limited data can be problematic.",
-    "example_es": "La extrapolación de datos limitados puede ser problemática."
+    "example_es": "La extrapolación de datos limitados puede ser problemática.",
+    "ipa": "/ɪkˌstræpəˈleɪʃən/"
   },
   {
     "front": "interpolation",
     "back": "interpolación / estimación entre puntos",
     "example": "<Interpolation> helps fill gaps in the dataset.",
-    "example_es": "La interpolación ayuda a llenar vacíos en el conjunto de datos."
+    "example_es": "La interpolación ayuda a llenar vacíos en el conjunto de datos.",
+    "ipa": "/ɪnˌtɜːrpəˈleɪʃən/"
   },
   {
     "front": "deduction",
     "back": "deducción / razonamiento de general a específico",
     "example": "<Deduction> proceeds from general principles to specific cases.",
-    "example_es": "La deducción procede de principios generales a casos específicos."
+    "example_es": "La deducción procede de principios generales a casos específicos.",
+    "ipa": "/dɪˈdʌkʃən/"
   },
   {
     "front": "induction",
     "back": "inducción / razonamiento de específico a general",
     "example": "<Induction> builds general theories from specific observations.",
-    "example_es": "La inducción construye teorías generales a partir de observaciones específicas."
+    "example_es": "La inducción construye teorías generales a partir de observaciones específicas.",
+    "ipa": "/ɪnˈdʌkʃən/"
   },
   {
     "front": "abduction",
     "back": "abducción / inferencia a la mejor explicación",
     "example": "<Abduction> seeks the most plausible explanation for phenomena.",
-    "example_es": "La abducción busca la explicación más plausible para los fenómenos."
+    "example_es": "La abducción busca la explicación más plausible para los fenómenos.",
+    "ipa": "/æbˈdʌkʃən/"
   },
   {
     "front": "falsifiability",
     "back": "falsabilidad / capacidad de ser refutado",
     "example": "<Falsifiability> is a criterion for scientific theories.",
-    "example_es": "La falsabilidad es un criterio para las teorías científicas."
+    "example_es": "La falsabilidad es un criterio para las teorías científicas.",
+    "ipa": "/ˌfɔːlsɪfaɪəˈbɪləti/"
   },
   {
     "front": "verisimilitude",
     "back": "verosimilitud / apariencia de verdad",
     "example": "The narrative has <verisimilitude> despite being fictional.",
-    "example_es": "La narrativa tiene verosimilitud a pesar de ser ficticia."
+    "example_es": "La narrativa tiene verosimilitud a pesar de ser ficticia.",
+    "ipa": "/ˌvɛrɪsɪˈmɪlɪtjuːd/"
   },
   {
     "front": "tautology",
     "back": "tautología / redundancia lógica",
     "example": "The statement is a <tautology> that adds no new information.",
-    "example_es": "La declaración es una tautología que no agrega información nueva."
+    "example_es": "La declaración es una tautología que no agrega información nueva.",
+    "ipa": "/tɔːˈtɒlədʒi/"
   },
   {
     "front": "sophistry",
     "back": "sofisma / razonamiento falaz",
     "example": "The argument relies on <sophistry> rather than sound logic.",
-    "example_es": "El argumento se basa en sofismas en lugar de lógica sólida."
+    "example_es": "El argumento se basa en sofismas en lugar de lógica sólida.",
+    "ipa": "/ˈsɒfɪstri/"
   },
   {
     "front": "non sequitur",
     "back": "non sequitur / conclusión ilógica",
     "example": "The conclusion is a <non sequitur> that doesn't follow from premises.",
-    "example_es": "La conclusión es un non sequitur que no se sigue de las premisas."
+    "example_es": "La conclusión es un non sequitur que no se sigue de las premisas.",
+    "ipa": "/nɒn ˈsɛkwɪtər/"
   },
   {
     "front": "ad hominem",
     "back": "ad hominem / ataque personal",
     "example": "<Ad hominem> attacks undermine rational discourse.",
-    "example_es": "Los ataques ad hominem socavan el discurso racional."
+    "example_es": "Los ataques ad hominem socavan el discurso racional.",
+    "ipa": "/æd ˈhɒmɪnɛm/"
   },
   {
     "front": "straw man",
     "back": "hombre de paja / argumento distorsionado",
     "example": "The <straw man> fallacy misrepresents the opponent's position.",
-    "example_es": "La falacia del hombre de paja tergiversa la posición del oponente."
+    "example_es": "La falacia del hombre de paja tergiversa la posición del oponente.",
+    "ipa": "/strɔː mæn/"
   },
   {
     "front": "Subtext",
     "back": "subtexto",
     "example": "The <subtext> of the dialogue reveals hidden tensions.",
-    "example_es": ""
+    "example_es": "",
+    "ipa": "/ˈsʌbtɛkst/"
   },
   {
     "front": "Allegory",
     "back": "alegoría",
     "example": "Animal Farm is an <allegory> of the Russian Revolution.",
-    "example_es": ""
+    "example_es": "",
+    "ipa": "/ˈæləɡɔːri/"
   },
   {
     "front": "Motif",
     "back": "motivo / tema recurrente",
     "example": "Water is a recurring <motif> in the novel.",
-    "example_es": ""
+    "example_es": "",
+    "ipa": "/moʊˈtiːf/"
   },
   {
     "front": "Catharsis",
     "back": "catarsis",
     "example": "Greek tragedy aims to produce <catharsis> in the audience.",
-    "example_es": ""
+    "example_es": "",
+    "ipa": "/kəˈθɑːrsɪs/"
   },
   {
     "front": "Pastiche",
     "back": "pastiche / imitación",
     "example": "The film is a <pastiche> of classic horror movies.",
-    "example_es": ""
+    "example_es": "",
+    "ipa": "/pæˈstiːʃ/"
   },
   {
     "front": "Denouement",
     "back": "desenlace",
     "example": "The <denouement> of the play was unexpected.",
-    "example_es": ""
+    "example_es": "",
+    "ipa": "/ˌdeɪnuːˈmɒ̃/"
   },
   {
     "front": "Intertextuality",
     "back": "intertextualidad",
     "example": "<Intertextuality> refers to how texts reference other texts.",
-    "example_es": ""
+    "example_es": "",
+    "ipa": "/ˌɪntərtɛkstʃuˈæləti/"
   }
 ]
