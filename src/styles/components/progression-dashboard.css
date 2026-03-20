@@ -119,6 +119,7 @@
 
 /* Units Section - VERTICAL STACK WITH ELEGANT SCROLL */
 .progression-dashboard__units {
+  width: 100%;
   max-width: 100%;
   margin: 0 auto;
   display: flex;
@@ -159,8 +160,9 @@
   box-shadow:
     0 1px 3px rgba(0, 0, 0, 0.1),
     0 1px 2px rgba(0, 0, 0, 0.06);
-  height: fit-content;
   width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
   transition: all 0.2s ease;
 }
 
