@@ -37,19 +37,28 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
   // Prevent length-based guessing by padding shorter distractors when the
   // correct answer is noticeably longer than every other option.
   const PAD_SUFFIXES = [
-    'in this context', 'in most cases', 'as commonly used', 'in general terms',
-    'by definition', 'in everyday use', 'as typically meant', 'in standard usage',
-    'as generally understood', 'in the usual sense', 'as widely accepted',
-    'in practical terms', 'in conventional terms', 'as commonly defined',
-    'in the standard sense', 'in the broadest sense',
+    'in this context',
+    'in most cases',
+    'as commonly used',
+    'in general terms',
+    'by definition',
+    'in everyday use',
+    'as typically meant',
+    'in standard usage',
+    'as generally understood',
+    'in the usual sense',
+    'as widely accepted',
+    'in practical terms',
+    'in conventional terms',
+    'as commonly defined',
+    'in the standard sense',
+    'in the broadest sense',
   ];
   let padCursor = 0;
 
   function balanceOptionLengths(options: string[], correctText: string): string[] {
     const correctLen = correctText.length;
-    const maxDistractorLen = Math.max(
-      ...options.filter(o => o !== correctText).map(o => o.length),
-    );
+    const maxDistractorLen = Math.max(...options.filter(o => o !== correctText).map(o => o.length));
     // Only act when correct is clearly the longest (>3 chars gap)
     if (correctLen - maxDistractorLen <= 3) return options;
 
@@ -72,7 +81,11 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
           ? question.options[question.correct]
           : question.correct;
       const processedOptions = conditionalShuffle([...question.options], shuffle);
-      return { ...question, options: balanceOptionLengths(processedOptions, correctText), correct: correctText };
+      return {
+        ...question,
+        options: balanceOptionLengths(processedOptions, correctText),
+        correct: correctText,
+      };
     });
   }
 
