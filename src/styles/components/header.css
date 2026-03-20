@@ -786,23 +786,10 @@ html.dark {
   }
 }
 
-/* === MOBILE LEARNING MODE - COMPACT HEADER === */
-/* Show a minimal header on mobile during learning to keep navigation and score visible */
+/* === MOBILE LEARNING MODE - HIDE HEADER === */
+/* Hide the main header on mobile during learning; LearningProgressHeader handles navigation */
 @media (max-width: 767px) {
   .header-redesigned--learning-mode {
-    height: 38px;
-    min-height: 38px;
-  }
-
-  .header-redesigned--learning-mode .header-redesigned__left {
-    gap: 4px;
-  }
-
-  .header-redesigned--learning-mode .header-redesigned__brand {
-    display: none;
-  }
-
-  .header-redesigned--learning-mode .header-redesigned__user-section {
     display: none;
   }
 }
