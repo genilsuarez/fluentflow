@@ -168,56 +168,14 @@
   }
 }
 
-/* SMALL SCREENS: 420px - 519px - Compact design */
-@media (min-width: 420px) and (max-width: 519px) {
+/* MOBILE: ≤519px - Compact unified rules */
+@media (max-width: 519px) {
   .score-display-compact__container {
-    padding: 0 0.5rem;
-    height: 25px;
-    --score-font-size: 0.6875rem;
-  }
-
-  .score-display-compact__container--in-game {
-    min-width: 120px;
-  }
-
-  .score-display-compact__container--full {
-    min-width: 140px;
-  }
-
-  .score-display-compact__icon {
-    font-size: 0.875rem;
-  }
-
-  .score-display-compact__values {
-    gap: 0.125rem;
-  }
-
-  .score-display-compact__accuracy {
-    min-width: 30px;
-  }
-
-  .score-display-compact__progress {
-    gap: 0.25rem;
-  }
-
-  .score-display-compact__progress-bar {
-    width: 30px;
-    height: 3px;
-  }
-
-  .score-display-compact__divider {
-    height: 16px;
-    margin: 0 0.25rem;
-  }
-}
-
-/* MOBILE: 311px - 419px - Compact with icon visible */
-@media (min-width: 311px) and (max-width: 419px) {
-  .score-display-compact__container {
-    padding: 0 0.25rem;
+    padding: 0 0.375rem;
     height: 28px;
-    overflow: hidden;
-    --score-font-size: 0.625rem;
+    justify-content: center;
+    white-space: nowrap;
+    --score-font-size: 0.6875rem;
   }
 
   .score-display-compact__container--in-game {
@@ -229,99 +187,18 @@
   }
 
   .score-display-compact__icon {
-    font-size: 0.8rem;
+    font-size: 0.875rem;
   }
 
   .score-display-compact__values {
     gap: 0.125rem;
-    flex-wrap: nowrap;
-    justify-content: center;
-  }
-
-  .score-display-compact__accuracy {
-    min-width: 16px;
-    text-align: center;
-    flex-shrink: 0;
-  }
-
-  .score-display-compact__divider {
-    height: 14px;
-    margin: 0 0.125rem;
-  }
-
-  .score-display-compact__progress-bar {
-    width: 24px;
-    height: 3px;
-  }
-}
-
-/* MOBILE TINY: ≤310px - Emergency fallback */
-@media (max-width: 310px) {
-  .score-display-compact__container {
-    padding: 0 0.125rem;
-    height: 20px;
-    overflow: hidden;
-    --score-font-size: 0.5rem;
-  }
-
-  .score-display-compact__container--in-game {
-    min-width: 50px;
-  }
-
-  .score-display-compact__container--full {
-    min-width: 60px;
-  }
-
-  .score-display-compact__icon {
-    display: none;
-  }
-
-  .score-display-compact__divider {
-    display: none;
-  }
-
-  .score-display-compact__progress {
-    display: none;
-  }
-
-  .score-display-compact__values {
-    gap: 0.0625rem;
-    flex-wrap: nowrap;
-  }
-
-  .score-display-compact__accuracy {
-    min-width: 12px;
-  }
-
-  .score-display-compact__main,
-  .score-display-compact__session,
-  .score-display-compact__global {
-    gap: 0.0625rem;
-  }
-}
-
-/* === GLOBAL MOBILE RULES === */
-
-/* Compact score display for mobile screens */
-@media (max-width: 519px) {
-  .score-display-compact__container {
-    padding: 0 0.375rem;
-    height: 22px;
     justify-content: center;
     white-space: nowrap;
-    --score-font-size: 0.6875rem;
   }
 
-  .score-display-compact__container--in-game {
-    min-width: 90px;
-  }
-
-  .score-display-compact__container--full {
-    min-width: 120px;
-  }
-
-  .score-display-compact__icon {
-    display: none;
+  .score-display-compact__accuracy {
+    min-width: 28px;
+    text-align: center;
   }
 
   .score-display-compact__divider {
@@ -338,18 +215,14 @@
     height: 3px;
   }
 
-  .score-display-compact__accuracy {
-    text-align: center;
-  }
-
-  .score-display-compact__values {
-    gap: 0.125rem;
-    justify-content: center;
-    white-space: nowrap;
+  .score-display-compact__session,
+  .score-display-compact__global,
+  .score-display-compact__main {
+    gap: 0.375rem;
   }
 }
 
-/* MOBILE TINY: ≤360px - Hide progress only */
+/* MOBILE SMALL: ≤360px - Hide progress */
 @media (max-width: 360px) {
   .score-display-compact__progress {
     display: none;
@@ -360,7 +233,32 @@
   }
 
   .score-display-compact__container--full {
-    min-width: 110px;
+    min-width: 90px;
+  }
+}
+
+/* MOBILE TINY: ≤310px - Emergency fallback */
+@media (max-width: 310px) {
+  .score-display-compact__container {
+    padding: 0 0.125rem;
+    height: 20px;
+    --score-font-size: 0.5625rem;
+  }
+
+  .score-display-compact__container--in-game {
+    min-width: 60px;
+  }
+
+  .score-display-compact__container--full {
+    min-width: 70px;
+  }
+
+  .score-display-compact__icon {
+    display: none;
+  }
+
+  .score-display-compact__accuracy {
+    min-width: 14px;
   }
 }
 
