@@ -201,11 +201,12 @@ html.dark .completion-component__sentence {
 
 /* Input States */
 .completion-component__input--correct {
-  border-color: var(--theme-success, #10b981);
-  background-color: #dcfce7;
-  color: #15803d;
-  border-width: 2px;
-  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+  border-color: #059669;
+  background-color: #bbf7d0;
+  color: #065f46;
+  border-width: 2.5px;
+  box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.25);
+  font-weight: 600;
 }
 
 .completion-component__input--incorrect {
@@ -235,11 +236,12 @@ html.dark .completion-component__sentence {
 
 /* Dark mode input states */
 html.dark .completion-component__input--correct {
-  background-color: rgba(16, 185, 129, 0.25);
+  background-color: rgba(16, 185, 129, 0.3);
   color: #6ee7b7;
   border-color: #34d399;
-  border-width: 2px;
-  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.25);
+  border-width: 2.5px;
+  box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.3);
+  font-weight: 600;
 }
 
 html.dark .completion-component__input--incorrect {
