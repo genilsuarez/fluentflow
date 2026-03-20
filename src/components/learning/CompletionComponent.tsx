@@ -486,13 +486,15 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
           </div>
         )}
 
-        <div className={`completion-component__sentence-container${
-          showResult
-            ? answer.toLowerCase().trim() === currentExercise?.correct?.toLowerCase().trim()
-              ? ' completion-component__sentence-container--correct'
-              : ' completion-component__sentence-container--incorrect'
-            : ''
-        }`}>
+        <div
+          className={`completion-component__sentence-container${
+            showResult
+              ? answer.toLowerCase().trim() === currentExercise?.correct?.toLowerCase().trim()
+                ? ' completion-component__sentence-container--correct'
+                : ' completion-component__sentence-container--incorrect'
+              : ''
+          }`}
+        >
           <div className="completion-component__sentence">{renderSentence()}</div>
         </div>
 
