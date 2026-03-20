@@ -2,6 +2,7 @@ import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { writeFileSync } from 'fs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -12,13 +13,21 @@ export default defineConfig(({ mode }) => {
 
   // Set NODE_ENV properly based on mode (Vite best practice)
   const isProduction = mode === 'production';
+  const buildTime = new Date().toISOString();
 
   return {
     plugins: [
       react({
         jsxRuntime: 'automatic',
         jsxImportSource: 'react'
-      })
+      }),
+      {
+        name: 'build-info',
+        closeBundle() {
+          const outDir = resolve(__dirname, '../dist');
+          writeFileSync(resolve(outDir, 'build-info.json'), JSON.stringify({ buildTime }));
+        }
+      }
     ],
     root: resolve(__dirname, '..'),
     base: env.VITE_APP_BASE_URL || '/',
@@ -85,8 +94,8 @@ export default defineConfig(({ mode }) => {
     },
     define: {
       __APP_VERSION__: JSON.stringify(process.env.npm_package_version),
-      __BUILD_TIME__: JSON.stringify(new Date().toISOString()),
-      'window.__BUILD_TIME__': JSON.stringify(new Date().toISOString()),
+      __BUILD_TIME__: JSON.stringify(buildTime),
+      'window.__BUILD_TIME__': JSON.stringify(buildTime),
       // Properly define NODE_ENV for runtime (Vite best practice)
       'process.env.NODE_ENV': JSON.stringify(mode),
       // Make environment variables available at build time
