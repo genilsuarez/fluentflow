@@ -635,21 +635,11 @@ html.dark {
 }
 
 .dark .header-redesigned__logo {
-  background: linear-gradient(135deg, #374151 0%, #4b5563 100%);
-  box-shadow:
-    0 2px 8px rgba(0, 0, 0, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  padding: 4px;
-}
-
-.dark .header-redesigned__brand:hover .header-redesigned__logo {
-  background: linear-gradient(135deg, #4b5563 0%, #6b7280 100%);
-  box-shadow:
-    0 4px 12px rgba(0, 0, 0, 0.4),
-    inset 0 1px 0 rgba(255, 255, 255, 0.15);
-  border-color: rgba(255, 255, 255, 0.2);
+  background: none;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
 }
 
 .dark .header-redesigned__title {
