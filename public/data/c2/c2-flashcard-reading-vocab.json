@@ -119,13 +119,6 @@
     "example_es": "La <hermenéutica> es la teoría de la interpretación de textos."
   },
   {
-    "front": "Teleological",
-    "back": "Teleológico",
-    "ipa": "/ˌteliəˈlɒdʒɪkəl/",
-    "example": "A <teleological> argument explains things by their purpose.",
-    "example_es": "Un argumento <teleológico> explica las cosas por su propósito."
-  },
-  {
     "front": "Phenomenology",
     "back": "Fenomenología",
     "ipa": "/fɪˌnɒmɪˈnɒlədʒi/",
@@ -138,5 +131,152 @@
     "ipa": "/ˌepɪˈstemɪk/",
     "example": "There is an <epistemic> gap in our understanding.",
     "example_es": "Hay una brecha epistémica en nuestra comprensión."
+  },
+  {
+    "front": "Solipsism",
+    "back": "Solipsismo",
+    "ipa": "/ˈsɒlɪpsɪzəm/",
+    "example": "<Solipsism> holds that only one's own mind is certain.",
+    "example_es": "El <solipsismo> sostiene que solo la propia mente es segura."
+  },
+  {
+    "front": "Tautology",
+    "back": "Tautología",
+    "ipa": "/tɔːˈtɒlədʒi/",
+    "example": "The statement is a <tautology> — true by definition.",
+    "example_es": "La afirmación es una <tautología> — verdadera por definición."
+  },
+  {
+    "front": "Axiom",
+    "back": "Axioma",
+    "ipa": "/ˈæksiəm/",
+    "example": "This <axiom> underpins the entire theory.",
+    "example_es": "Este <axioma> sustenta toda la teoría."
+  },
+  {
+    "front": "Paradigm",
+    "back": "Paradigma",
+    "ipa": "/ˈpærədaɪm/",
+    "example": "Kuhn described how a <paradigm> shift transforms science.",
+    "example_es": "Kuhn describió cómo un cambio de <paradigma> transforma la ciencia."
+  },
+  {
+    "front": "Praxis",
+    "back": "Praxis (práctica informada por teoría)",
+    "ipa": "/ˈpræksɪs/",
+    "example": "Effective teaching requires both theory and <praxis>.",
+    "example_es": "La enseñanza efectiva requiere tanto teoría como <praxis>."
+  },
+  {
+    "front": "Hegemony",
+    "back": "Hegemonía",
+    "ipa": "/hɪˈdʒeməni/",
+    "example": "Gramsci analyzed cultural <hegemony> in modern societies.",
+    "example_es": "Gramsci analizó la <hegemonía> cultural en las sociedades modernas."
+  },
+  {
+    "front": "Reification",
+    "back": "Reificación (cosificación)",
+    "ipa": "/ˌriːɪfɪˈkeɪʃən/",
+    "example": "<Reification> treats abstract concepts as concrete things.",
+    "example_es": "La <reificación> trata conceptos abstractos como cosas concretas."
+  },
+  {
+    "front": "Antinomy",
+    "back": "Antinomia (contradicción entre leyes)",
+    "ipa": "/ænˈtɪnəmi/",
+    "example": "Kant identified fundamental <antinomies> of pure reason.",
+    "example_es": "Kant identificó <antinomias> fundamentales de la razón pura."
+  },
+  {
+    "front": "Exegesis",
+    "back": "Exégesis (interpretación crítica)",
+    "ipa": "/ˌeksɪˈdʒiːsɪs/",
+    "example": "A careful <exegesis> of the text reveals hidden meanings.",
+    "example_es": "Una cuidadosa <exégesis> del texto revela significados ocultos."
+  },
+  {
+    "front": "Liminal",
+    "back": "Liminal (en el umbral)",
+    "ipa": "/ˈlɪmɪnəl/",
+    "example": "The character exists in a <liminal> space between worlds.",
+    "example_es": "El personaje existe en un espacio <liminal> entre mundos."
+  },
+  {
+    "front": "Synecdoche",
+    "back": "Sinécdoque",
+    "ipa": "/sɪˈnekdəki/",
+    "example": "<Synecdoche> uses a part to represent the whole.",
+    "example_es": "La <sinécdoque> usa una parte para representar el todo."
+  },
+  {
+    "front": "Metonymy",
+    "back": "Metonimia",
+    "ipa": "/mɪˈtɒnɪmi/",
+    "example": "<Metonymy> substitutes a related concept for the original.",
+    "example_es": "La <metonimia> sustituye un concepto relacionado por el original."
+  },
+  {
+    "front": "Polysemy",
+    "back": "Polisemia",
+    "ipa": "/pəˈlɪsɪmi/",
+    "example": "<Polysemy> occurs when a word has multiple related meanings.",
+    "example_es": "La <polisemia> ocurre cuando una palabra tiene múltiples significados relacionados."
+  },
+  {
+    "front": "Anachronism",
+    "back": "Anacronismo",
+    "ipa": "/əˈnækrənɪzəm/",
+    "example": "The film contains a deliberate <anachronism>.",
+    "example_es": "La película contiene un <anacronismo> deliberado."
+  },
+  {
+    "front": "Verisimilitude",
+    "back": "Verosimilitud",
+    "ipa": "/ˌverɪsɪˈmɪlɪtjuːd/",
+    "example": "The novel achieves remarkable <verisimilitude>.",
+    "example_es": "La novela logra una notable <verosimilitud>."
+  },
+  {
+    "front": "Didactic",
+    "back": "Didáctico",
+    "ipa": "/daɪˈdæktɪk/",
+    "example": "The poem has a strongly <didactic> purpose.",
+    "example_es": "El poema tiene un propósito fuertemente <didáctico>."
+  },
+  {
+    "front": "Pejorative",
+    "back": "Peyorativo / Despectivo",
+    "ipa": "/pɪˈdʒɒrətɪv/",
+    "example": "The term has acquired a <pejorative> connotation.",
+    "example_es": "El término ha adquirido una connotación <peyorativa>."
+  },
+  {
+    "front": "Semiotic",
+    "back": "Semiótico",
+    "ipa": "/ˌsemiˈɒtɪk/",
+    "example": "A <semiotic> analysis examines signs and symbols.",
+    "example_es": "Un análisis <semiótico> examina signos y símbolos."
+  },
+  {
+    "front": "Diachronic",
+    "back": "Diacrónico",
+    "ipa": "/ˌdaɪəˈkrɒnɪk/",
+    "example": "A <diachronic> study traces changes over time.",
+    "example_es": "Un estudio <diacrónico> rastrea cambios a lo largo del tiempo."
+  },
+  {
+    "front": "Synchronic",
+    "back": "Sincrónico",
+    "ipa": "/sɪnˈkrɒnɪk/",
+    "example": "A <synchronic> analysis examines a single point in time.",
+    "example_es": "Un análisis <sincrónico> examina un solo punto en el tiempo."
+  },
+  {
+    "front": "Eschatology",
+    "back": "Escatología (estudio del fin)",
+    "ipa": "/ˌeskəˈtɒlədʒi/",
+    "example": "The text explores themes of <eschatology> and renewal.",
+    "example_es": "El texto explora temas de <escatología> y renovación."
   }
 ]

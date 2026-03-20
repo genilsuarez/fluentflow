@@ -118,5 +118,35 @@
     "correct": "care",
     "explanation": "Use <care> in the expression <take care>",
     "tip": "Complete with the correct noun"
+  },
+  {
+    "sentence": "Good ______, everyone!",
+    "correct": "morning",
+    "explanation": "Use <morning> to greet people before noon",
+    "tip": "Complete with the time of day"
+  },
+  {
+    "sentence": "See you ______!",
+    "correct": "later",
+    "explanation": "Use <later> to say goodbye informally",
+    "tip": "Complete with a time word"
+  },
+  {
+    "sentence": "Have a ______ day!",
+    "correct": "nice",
+    "explanation": "Use <nice> to wish someone well",
+    "tip": "Complete with an adjective"
+  },
+  {
+    "sentence": "I ______ English and Spanish.",
+    "correct": "speak",
+    "explanation": "Use <speak> to talk about languages",
+    "tip": "Complete with the correct verb"
+  },
+  {
+    "sentence": "It's ______ to meet you.",
+    "correct": "nice",
+    "explanation": "Use <nice> in the expression <nice to meet you>",
+    "tip": "Complete with an adjective"
   }
 ]

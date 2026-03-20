@@ -138,5 +138,145 @@
     "ipa": "/səˈsteɪnəbəl/",
     "example": "We need <sustainable> solutions for energy.",
     "example_es": "Necesitamos soluciones sostenibles para la energía."
+  },
+  {
+    "front": "Paradigm",
+    "back": "Paradigma",
+    "ipa": "/ˈpærədaɪm/",
+    "example": "A <paradigm> shift changed the industry.",
+    "example_es": "Un cambio de <paradigma> cambió la industria."
+  },
+  {
+    "front": "Pragmatic",
+    "back": "Pragmático",
+    "ipa": "/præɡˈmætɪk/",
+    "example": "She took a <pragmatic> approach to the problem.",
+    "example_es": "Ella tomó un enfoque <pragmático> al problema."
+  },
+  {
+    "front": "Ambiguity",
+    "back": "Ambigüedad",
+    "ipa": "/ˌæmbɪˈɡjuːəti/",
+    "example": "The law is full of <ambiguity>.",
+    "example_es": "La ley está llena de <ambigüedad>."
+  },
+  {
+    "front": "Nuance",
+    "back": "Matiz",
+    "ipa": "/ˈnjuːɑːns/",
+    "example": "The <nuance> of her argument was lost.",
+    "example_es": "El <matiz> de su argumento se perdió."
+  },
+  {
+    "front": "Rhetoric",
+    "back": "Retórica",
+    "ipa": "/ˈretərɪk/",
+    "example": "Political <rhetoric> can be misleading.",
+    "example_es": "La <retórica> política puede ser engañosa."
+  },
+  {
+    "front": "Consensus",
+    "back": "Consenso",
+    "ipa": "/kənˈsensəs/",
+    "example": "The team reached a <consensus>.",
+    "example_es": "El equipo llegó a un <consenso>."
+  },
+  {
+    "front": "Scrutiny",
+    "back": "Escrutinio / Examen minucioso",
+    "ipa": "/ˈskruːtɪni/",
+    "example": "The plan came under intense <scrutiny>.",
+    "example_es": "El plan fue sometido a intenso <escrutinio>."
+  },
+  {
+    "front": "Disparity",
+    "back": "Disparidad",
+    "ipa": "/dɪˈspærəti/",
+    "example": "There is a <disparity> in wages.",
+    "example_es": "Hay una <disparidad> en los salarios."
+  },
+  {
+    "front": "Prevalent",
+    "back": "Prevalente / Predominante",
+    "ipa": "/ˈprevələnt/",
+    "example": "The disease is <prevalent> in tropical areas.",
+    "example_es": "La enfermedad es <prevalente> en áreas tropicales."
+  },
+  {
+    "front": "Mitigate",
+    "back": "Mitigar",
+    "ipa": "/ˈmɪtɪɡeɪt/",
+    "example": "We must <mitigate> the effects of climate change.",
+    "example_es": "Debemos <mitigar> los efectos del cambio climático."
+  },
+  {
+    "front": "Exacerbate",
+    "back": "Exacerbar / Empeorar",
+    "ipa": "/ɪɡˈzæsərbeɪt/",
+    "example": "The policy could <exacerbate> inequality.",
+    "example_es": "La política podría <exacerbar> la desigualdad."
+  },
+  {
+    "front": "Unprecedented",
+    "back": "Sin precedentes",
+    "ipa": "/ʌnˈpresɪdentɪd/",
+    "example": "The crisis was <unprecedented> in scale.",
+    "example_es": "La crisis fue <sin precedentes> en escala."
+  },
+  {
+    "front": "Deteriorate",
+    "back": "Deteriorarse",
+    "ipa": "/dɪˈtɪəriəreɪt/",
+    "example": "His health began to <deteriorate>.",
+    "example_es": "Su salud comenzó a <deteriorarse>."
+  },
+  {
+    "front": "Encompass",
+    "back": "Abarcar / Englobar",
+    "ipa": "/ɪnˈkʌmpəs/",
+    "example": "The study <encompasses> several disciplines.",
+    "example_es": "El estudio <abarca> varias disciplinas."
+  },
+  {
+    "front": "Inherent",
+    "back": "Inherente",
+    "ipa": "/ɪnˈhɪərənt/",
+    "example": "There are <inherent> risks in the plan.",
+    "example_es": "Hay riesgos <inherentes> en el plan."
+  },
+  {
+    "front": "Plausible",
+    "back": "Plausible / Verosímil",
+    "ipa": "/ˈplɔːzɪbəl/",
+    "example": "Her explanation seems <plausible>.",
+    "example_es": "Su explicación parece <plausible>."
+  },
+  {
+    "front": "Compelling",
+    "back": "Convincente / Irresistible",
+    "ipa": "/kəmˈpelɪŋ/",
+    "example": "The evidence is <compelling>.",
+    "example_es": "La evidencia es <convincente>."
+  },
+  {
+    "front": "Volatile",
+    "back": "Volátil",
+    "ipa": "/ˈvɒlətaɪl/",
+    "example": "The market is extremely <volatile>.",
+    "example_es": "El mercado es extremadamente <volátil>."
+  },
+  {
+    "front": "Tangible",
+    "back": "Tangible / Palpable",
+    "ipa": "/ˈtændʒɪbəl/",
+    "example": "We need <tangible> results.",
+    "example_es": "Necesitamos resultados <tangibles>."
+  },
+  {
+    "front": "Elusive",
+    "back": "Elusivo / Esquivo",
+    "ipa": "/ɪˈluːsɪv/",
+    "example": "Success remained <elusive>.",
+    "example_es": "El éxito siguió siendo <elusivo>."
   }
 ]

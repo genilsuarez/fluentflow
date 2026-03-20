@@ -36,7 +36,7 @@
       "id": "examples",
       "title": "Academic Discourse Examples",
       "type": "examples",
-      "content": "Example 1: INTRODUCING RESEARCH - <This study employs mixed-methods to investigate correlation between socioeconomic factors and educational outcomes.>\n\nExample 2: PRESENTING FINDINGS - <The data suggest a statistically significant relationship (p < 0.05), though causality cannot be established.>\n\nExample 3: CRITICAL ANALYSIS - <While Smith's framework offers insights, it arguably overlooks institutional factors, a limitation acknowledged by subsequent scholars.>"
+      "content": "Example 1: INTRODUCING RESEARCH - <This study employs mixed-methods to investigate correlation between socioeconomic factors and educational outcomes.>\n\nExample 2: PRESENTING FINDINGS - <The data suggest a statistically significant relationship (p less than 0.05), though causality cannot be established.>\n\nExample 3: CRITICAL ANALYSIS - <While Smith's framework offers insights, it arguably overlooks institutional factors, a limitation acknowledged by subsequent scholars.>"
     },
     {
       "id": "summary",

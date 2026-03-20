@@ -57,7 +57,7 @@
   },
   {
     "front": "Viral",
-    "back": "Viral",
+    "back": "Viral (que se difunde rápidamente)",
     "ipa": "/ˈvaɪrəl/",
     "example": "The video went <viral> overnight.",
     "example_es": "El video se hizo <viral> de la noche a la mañana."
@@ -138,5 +138,145 @@
     "ipa": "/riːˈsaɪkəl/",
     "example": "We should <recycle> plastic and paper.",
     "example_es": "Deberíamos <reciclar> plástico y papel."
+  },
+  {
+    "front": "Sustainable",
+    "back": "Sostenible",
+    "ipa": "/səˈsteɪnəbəl/",
+    "example": "We need <sustainable> energy sources.",
+    "example_es": "Necesitamos fuentes de energía <sostenibles>."
+  },
+  {
+    "front": "Curriculum",
+    "back": "Plan de estudios",
+    "ipa": "/kəˈrɪkjələm/",
+    "example": "The school updated its <curriculum>.",
+    "example_es": "La escuela actualizó su <plan de estudios>."
+  },
+  {
+    "front": "Biodiversity",
+    "back": "Biodiversidad",
+    "ipa": "/ˌbaɪoʊdaɪˈvɜːrsəti/",
+    "example": "<Biodiversity> is essential for healthy ecosystems.",
+    "example_es": "La <biodiversidad> es esencial para ecosistemas saludables."
+  },
+  {
+    "front": "Renewable",
+    "back": "Renovable",
+    "ipa": "/rɪˈnjuːəbəl/",
+    "example": "Solar power is a <renewable> energy.",
+    "example_es": "La energía solar es una energía <renovable>."
+  },
+  {
+    "front": "Deforestation",
+    "back": "Deforestación",
+    "ipa": "/diːˌfɒrɪˈsteɪʃən/",
+    "example": "<Deforestation> destroys animal habitats.",
+    "example_es": "La <deforestación> destruye hábitats animales."
+  },
+  {
+    "front": "Scholarship",
+    "back": "Beca",
+    "ipa": "/ˈskɒlərʃɪp/",
+    "example": "She won a <scholarship> to university.",
+    "example_es": "Ella ganó una <beca> para la universidad."
+  },
+  {
+    "front": "Entrepreneur",
+    "back": "Emprendedor",
+    "ipa": "/ˌɒntrəprəˈnɜːr/",
+    "example": "The young <entrepreneur> started a tech company.",
+    "example_es": "El joven <emprendedor> inició una empresa tecnológica."
+  },
+  {
+    "front": "Volunteer",
+    "back": "Voluntario",
+    "ipa": "/ˌvɒlənˈtɪər/",
+    "example": "She works as a <volunteer> at the hospital.",
+    "example_es": "Ella trabaja como <voluntaria> en el hospital."
+  },
+  {
+    "front": "Awareness",
+    "back": "Conciencia / Conocimiento",
+    "ipa": "/əˈwernəs/",
+    "example": "We need to raise <awareness> about pollution.",
+    "example_es": "Necesitamos crear <conciencia> sobre la contaminación."
+  },
+  {
+    "front": "Commute",
+    "back": "Desplazamiento diario al trabajo",
+    "ipa": "/kəˈmjuːt/",
+    "example": "My <commute> takes 45 minutes.",
+    "example_es": "Mi <desplazamiento> al trabajo toma 45 minutos."
+  },
+  {
+    "front": "Deadline",
+    "back": "Fecha límite / Plazo",
+    "ipa": "/ˈdedlaɪn/",
+    "example": "The <deadline> for the project is Friday.",
+    "example_es": "La <fecha límite> del proyecto es el viernes."
+  },
+  {
+    "front": "Feedback",
+    "back": "Retroalimentación",
+    "ipa": "/ˈfiːdbæk/",
+    "example": "The teacher gave positive <feedback>.",
+    "example_es": "El profesor dio <retroalimentación> positiva."
+  },
+  {
+    "front": "Drought",
+    "back": "Sequía",
+    "ipa": "/draʊt/",
+    "example": "The <drought> lasted three months.",
+    "example_es": "La <sequía> duró tres meses."
+  },
+  {
+    "front": "Flood",
+    "back": "Inundación",
+    "ipa": "/flʌd/",
+    "example": "The <flood> damaged many homes.",
+    "example_es": "La <inundación> dañó muchas casas."
+  },
+  {
+    "front": "Poverty",
+    "back": "Pobreza",
+    "ipa": "/ˈpɒvərti/",
+    "example": "<Poverty> affects millions worldwide.",
+    "example_es": "La <pobreza> afecta a millones en todo el mundo."
+  },
+  {
+    "front": "Inequality",
+    "back": "Desigualdad",
+    "ipa": "/ˌɪnɪˈkwɒləti/",
+    "example": "Social <inequality> is a major issue.",
+    "example_es": "La <desigualdad> social es un problema importante."
+  },
+  {
+    "front": "Literacy",
+    "back": "Alfabetización",
+    "ipa": "/ˈlɪtərəsi/",
+    "example": "<Literacy> rates have improved globally.",
+    "example_es": "Las tasas de <alfabetización> han mejorado globalmente."
+  },
+  {
+    "front": "Stereotype",
+    "back": "Estereotipo",
+    "ipa": "/ˈsteriətaɪp/",
+    "example": "We should challenge <stereotypes>.",
+    "example_es": "Debemos desafiar los <estereotipos>."
+  },
+  {
+    "front": "Bias",
+    "back": "Sesgo / Prejuicio",
+    "ipa": "/ˈbaɪəs/",
+    "example": "The article shows a clear <bias>.",
+    "example_es": "El artículo muestra un claro <sesgo>."
+  },
+  {
+    "front": "Empathy",
+    "back": "Empatía",
+    "ipa": "/ˈempəθi/",
+    "example": "<Empathy> helps us understand others.",
+    "example_es": "La <empatía> nos ayuda a entender a otros."
   }
 ]

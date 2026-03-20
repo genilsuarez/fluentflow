@@ -118,5 +118,65 @@
     "correct": "epistemic",
     "explanation": "<Epistemic> relates to knowledge and the conditions for its possibility.",
     "tip": "Complete with the adjective relating to knowledge"
+  },
+  {
+    "sentence": "The author's ______ style makes the text difficult to parse.",
+    "correct": "convoluted",
+    "options": [
+      "convoluted",
+      "simple",
+      "clear",
+      "direct"
+    ],
+    "explanation": "<Convoluted> means extremely complex and difficult to follow",
+    "tip": "Choose the word for overly complex"
+  },
+  {
+    "sentence": "The critic offered a ______ analysis of the novel's themes.",
+    "correct": "trenchant",
+    "options": [
+      "trenchant",
+      "superficial",
+      "vague",
+      "gentle"
+    ],
+    "explanation": "<Trenchant> means vigorous, incisive, and effective",
+    "tip": "Choose the word for sharp, penetrating criticism"
+  },
+  {
+    "sentence": "Her argument was ______ and impossible to refute.",
+    "correct": "irrefutable",
+    "options": [
+      "irrefutable",
+      "weak",
+      "debatable",
+      "questionable"
+    ],
+    "explanation": "<Irrefutable> means impossible to deny or disprove",
+    "tip": "Choose the strongest word"
+  },
+  {
+    "sentence": "The philosopher's ______ reasoning led to a paradox.",
+    "correct": "specious",
+    "options": [
+      "specious",
+      "sound",
+      "logical",
+      "valid"
+    ],
+    "explanation": "<Specious> means superficially plausible but actually wrong",
+    "tip": "Choose the word for misleadingly attractive reasoning"
+  },
+  {
+    "sentence": "The text is ______ with references to classical mythology.",
+    "correct": "replete",
+    "options": [
+      "replete",
+      "devoid",
+      "lacking",
+      "empty"
+    ],
+    "explanation": "<Replete> means filled or well-supplied with",
+    "tip": "Choose the word meaning 'full of'"
   }
 ]

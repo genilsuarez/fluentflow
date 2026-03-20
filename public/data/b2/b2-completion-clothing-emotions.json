@@ -218,5 +218,65 @@
       "indifferent"
     ],
     "explanation": "<Overjoyed> means extremely happy; filled with great joy."
+  },
+  {
+    "sentence": "She felt ______ when she received the award.",
+    "correct": "overwhelmed",
+    "options": [
+      "overwhelmed",
+      "underwhelmed",
+      "bored",
+      "indifferent"
+    ],
+    "explanation": "<Overwhelmed> means feeling very strong emotions",
+    "tip": "Choose the strongest positive emotion"
+  },
+  {
+    "sentence": "He was ______ about the job interview.",
+    "correct": "anxious",
+    "options": [
+      "anxious",
+      "relaxed",
+      "bored",
+      "amused"
+    ],
+    "explanation": "<Anxious> means feeling worried or nervous",
+    "tip": "Choose the word for nervous anticipation"
+  },
+  {
+    "sentence": "The elegant ______ made her feel confident.",
+    "correct": "outfit",
+    "options": [
+      "outfit",
+      "pajamas",
+      "uniform",
+      "costume"
+    ],
+    "explanation": "An <outfit> is a set of clothes worn together",
+    "tip": "Choose the general term for clothes"
+  },
+  {
+    "sentence": "His ______ expression showed he was upset.",
+    "correct": "gloomy",
+    "options": [
+      "gloomy",
+      "cheerful",
+      "neutral",
+      "excited"
+    ],
+    "explanation": "<Gloomy> means looking sad or depressed",
+    "tip": "Choose the word for a sad appearance"
+  },
+  {
+    "sentence": "She wore a ______ dress to the formal event.",
+    "correct": "stunning",
+    "options": [
+      "stunning",
+      "casual",
+      "plain",
+      "torn"
+    ],
+    "explanation": "<Stunning> means extremely beautiful or impressive",
+    "tip": "Choose the most positive adjective"
   }
 ]

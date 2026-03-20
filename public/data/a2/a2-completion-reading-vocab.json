@@ -118,5 +118,35 @@
     "correct": "festival",
     "explanation": "A <festival> is an organized celebration event.",
     "tip": "Complete with the word for a celebration event"
+  },
+  {
+    "sentence": "The ______ was very interesting to read.",
+    "correct": "article",
+    "explanation": "An <article> is a piece of writing in a newspaper or magazine",
+    "tip": "Complete with a type of text"
+  },
+  {
+    "sentence": "She wrote a ______ about her vacation.",
+    "correct": "paragraph",
+    "explanation": "A <paragraph> is a section of text with related sentences",
+    "tip": "Complete with a writing term"
+  },
+  {
+    "sentence": "The ______ of the story was surprising.",
+    "correct": "ending",
+    "explanation": "The <ending> is how a story finishes",
+    "tip": "Complete with a story element"
+  },
+  {
+    "sentence": "Can you ______ this word for me?",
+    "correct": "translate",
+    "explanation": "To <translate> means to change from one language to another",
+    "tip": "Complete with a language verb"
+  },
+  {
+    "sentence": "The main ______ of the text is about health.",
+    "correct": "topic",
+    "explanation": "The <topic> is the main subject of a text",
+    "tip": "Complete with a reading term"
   }
 ]

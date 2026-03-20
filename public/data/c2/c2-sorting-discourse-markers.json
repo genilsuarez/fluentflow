@@ -118,5 +118,35 @@
     "word": "Ultimately, the initiative achieved its stated objectives.",
     "category": "Sequence/Time",
     "explanation": "<Ultimately> signals the final outcome after a process"
+  },
+  {
+    "word": "In the final analysis, the project was deemed a success.",
+    "category": "Sequence/Time",
+    "explanation": "<In the final analysis> signals a concluding assessment after deliberation"
+  },
+  {
+    "word": "To put it another way, the results were far from conclusive.",
+    "category": "Addition/Emphasis",
+    "explanation": "<To put it another way> rephrases a point for clarity or emphasis"
+  },
+  {
+    "word": "On the whole, the experiment yielded positive results.",
+    "category": "Addition/Emphasis",
+    "explanation": "<On the whole> introduces a general, balanced assessment"
+  },
+  {
+    "word": "For all intents and purposes, the law is now obsolete.",
+    "category": "Cause/Result",
+    "explanation": "<For all intents and purposes> means effectively or in practical terms"
+  },
+  {
+    "word": "That said, there are notable exceptions to this trend.",
+    "category": "Contrast/Concession",
+    "explanation": "<That said> acknowledges a point before introducing a contrasting view"
+  },
+  {
+    "word": "As a consequence, funding was redirected to other projects.",
+    "category": "Cause/Result",
+    "explanation": "<As a consequence> signals a direct result of the preceding situation"
   }
 ]

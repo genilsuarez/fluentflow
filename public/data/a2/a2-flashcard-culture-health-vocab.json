@@ -71,7 +71,7 @@
   },
   {
     "front": "Festival",
-    "back": "Festival",
+    "back": "Festival / Festividad",
     "ipa": "/ˈfestɪvəl/",
     "example": "The music <festival> is in July.",
     "example_es": "El <festival> de música es en julio."
@@ -138,5 +138,145 @@
     "ipa": "/ˈwebsaɪt/",
     "example": "Visit our <website> for more information.",
     "example_es": "Visita nuestro <sitio web> para más información."
+  },
+  {
+    "front": "Headache",
+    "back": "Dolor de cabeza",
+    "ipa": "/ˈhedeɪk/",
+    "example": "I have a terrible <headache>.",
+    "example_es": "Tengo un terrible <dolor de cabeza>."
+  },
+  {
+    "front": "Fever",
+    "back": "Fiebre",
+    "ipa": "/ˈfiːvər/",
+    "example": "She has a high <fever>.",
+    "example_es": "Ella tiene <fiebre> alta."
+  },
+  {
+    "front": "Cough",
+    "back": "Tos / Toser",
+    "ipa": "/kɒf/",
+    "example": "I can't stop my <cough>.",
+    "example_es": "No puedo parar mi <tos>."
+  },
+  {
+    "front": "Medicine",
+    "back": "Medicina / Medicamento",
+    "ipa": "/ˈmedɪsɪn/",
+    "example": "Take your <medicine> after meals.",
+    "example_es": "Toma tu <medicina> después de comer."
+  },
+  {
+    "front": "Pharmacy",
+    "back": "Farmacia",
+    "ipa": "/ˈfɑːrməsi/",
+    "example": "Buy the pills at the <pharmacy>.",
+    "example_es": "Compra las pastillas en la <farmacia>."
+  },
+  {
+    "front": "Appointment",
+    "back": "Cita (médica)",
+    "ipa": "/əˈpɔɪntmənt/",
+    "example": "I have a doctor's <appointment>.",
+    "example_es": "Tengo una <cita> con el doctor."
+  },
+  {
+    "front": "Symptom",
+    "back": "Síntoma",
+    "ipa": "/ˈsɪmptəm/",
+    "example": "What are your <symptoms>?",
+    "example_es": "¿Cuáles son tus <síntomas>?"
+  },
+  {
+    "front": "Allergy",
+    "back": "Alergia",
+    "ipa": "/ˈælədʒi/",
+    "example": "I have an <allergy> to pollen.",
+    "example_es": "Tengo <alergia> al polen."
+  },
+  {
+    "front": "Museum",
+    "back": "Museo",
+    "ipa": "/mjuːˈziːəm/",
+    "example": "We visited the art <museum>.",
+    "example_es": "Visitamos el <museo> de arte."
+  },
+  {
+    "front": "Tradition",
+    "back": "Tradición",
+    "ipa": "/trəˈdɪʃən/",
+    "example": "It's a family <tradition>.",
+    "example_es": "Es una <tradición> familiar."
+  },
+  {
+    "front": "Celebration",
+    "back": "Celebración",
+    "ipa": "/ˌselɪˈbreɪʃən/",
+    "example": "The <celebration> was wonderful.",
+    "example_es": "La <celebración> fue maravillosa."
+  },
+  {
+    "front": "Custom",
+    "back": "Costumbre",
+    "ipa": "/ˈkʌstəm/",
+    "example": "It's a local <custom>.",
+    "example_es": "Es una <costumbre> local."
+  },
+  {
+    "front": "Recipe",
+    "back": "Receta",
+    "ipa": "/ˈresɪpi/",
+    "example": "This <recipe> is from my grandmother.",
+    "example_es": "Esta <receta> es de mi abuela."
+  },
+  {
+    "front": "Ingredient",
+    "back": "Ingrediente",
+    "ipa": "/ɪnˈɡriːdiənt/",
+    "example": "What <ingredients> do we need?",
+    "example_es": "¿Qué <ingredientes> necesitamos?"
+  },
+  {
+    "front": "Costume",
+    "back": "Disfraz / Traje típico",
+    "ipa": "/ˈkɒstjuːm/",
+    "example": "She wore a traditional <costume>.",
+    "example_es": "Ella usó un <traje> tradicional."
+  },
+  {
+    "front": "Parade",
+    "back": "Desfile",
+    "ipa": "/pəˈreɪd/",
+    "example": "The <parade> goes through the city.",
+    "example_es": "El <desfile> pasa por la ciudad."
+  },
+  {
+    "front": "Fireworks",
+    "back": "Fuegos artificiales",
+    "ipa": "/ˈfaɪərwɜːrks/",
+    "example": "We watched the <fireworks> at night.",
+    "example_es": "Vimos los <fuegos artificiales> de noche."
+  },
+  {
+    "front": "Vaccine",
+    "back": "Vacuna",
+    "ipa": "/vækˈsiːn/",
+    "example": "The <vaccine> protects against the flu.",
+    "example_es": "La <vacuna> protege contra la gripe."
+  },
+  {
+    "front": "Bandage",
+    "back": "Vendaje / Curita",
+    "ipa": "/ˈbændɪdʒ/",
+    "example": "Put a <bandage> on the cut.",
+    "example_es": "Pon un <vendaje> en el corte."
+  },
+  {
+    "front": "Heritage",
+    "back": "Patrimonio / Herencia cultural",
+    "ipa": "/ˈherɪtɪdʒ/",
+    "example": "We must protect our cultural <heritage>.",
+    "example_es": "Debemos proteger nuestro <patrimonio> cultural."
   }
 ]

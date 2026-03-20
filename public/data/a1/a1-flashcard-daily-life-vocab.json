@@ -138,5 +138,145 @@
     "ipa": "/teɪk ðə bʌs/",
     "example": "I <take the bus> to school.",
     "example_es": "Tomo el autobús a la escuela."
+  },
+  {
+    "front": "Kitchen",
+    "back": "Cocina",
+    "ipa": "/ˈkɪtʃɪn/",
+    "example": "I cook in the <kitchen>.",
+    "example_es": "Cocino en la <cocina>."
+  },
+  {
+    "front": "Bathroom",
+    "back": "Baño",
+    "ipa": "/ˈbæθruːm/",
+    "example": "The <bathroom> is upstairs.",
+    "example_es": "El <baño> está arriba."
+  },
+  {
+    "front": "Bedroom",
+    "back": "Dormitorio",
+    "ipa": "/ˈbedruːm/",
+    "example": "My <bedroom> is small.",
+    "example_es": "Mi <dormitorio> es pequeño."
+  },
+  {
+    "front": "Garden",
+    "back": "Jardín",
+    "ipa": "/ˈɡɑːrdən/",
+    "example": "We play in the <garden>.",
+    "example_es": "Jugamos en el <jardín>."
+  },
+  {
+    "front": "Window",
+    "back": "Ventana",
+    "ipa": "/ˈwɪndoʊ/",
+    "example": "Open the <window>, please.",
+    "example_es": "Abre la <ventana>, por favor."
+  },
+  {
+    "front": "Door",
+    "back": "Puerta",
+    "ipa": "/dɔːr/",
+    "example": "Close the <door>.",
+    "example_es": "Cierra la <puerta>."
+  },
+  {
+    "front": "Chair",
+    "back": "Silla",
+    "ipa": "/tʃer/",
+    "example": "Sit on the <chair>.",
+    "example_es": "Siéntate en la <silla>."
+  },
+  {
+    "front": "Table",
+    "back": "Mesa",
+    "ipa": "/ˈteɪbəl/",
+    "example": "The food is on the <table>.",
+    "example_es": "La comida está en la <mesa>."
+  },
+  {
+    "front": "Bed",
+    "back": "Cama",
+    "ipa": "/bed/",
+    "example": "I sleep in my <bed>.",
+    "example_es": "Duermo en mi <cama>."
+  },
+  {
+    "front": "Lamp",
+    "back": "Lámpara",
+    "ipa": "/læmp/",
+    "example": "Turn on the <lamp>.",
+    "example_es": "Enciende la <lámpara>."
+  },
+  {
+    "front": "Clock",
+    "back": "Reloj (de pared)",
+    "ipa": "/klɒk/",
+    "example": "The <clock> says 3 PM.",
+    "example_es": "El <reloj> dice las 3 PM."
+  },
+  {
+    "front": "Mirror",
+    "back": "Espejo",
+    "ipa": "/ˈmɪrər/",
+    "example": "I look in the <mirror>.",
+    "example_es": "Me miro en el <espejo>."
+  },
+  {
+    "front": "Soap",
+    "back": "Jabón",
+    "ipa": "/soʊp/",
+    "example": "Wash your hands with <soap>.",
+    "example_es": "Lávate las manos con <jabón>."
+  },
+  {
+    "front": "Towel",
+    "back": "Toalla",
+    "ipa": "/ˈtaʊəl/",
+    "example": "Use a <towel> to dry.",
+    "example_es": "Usa una <toalla> para secarte."
+  },
+  {
+    "front": "Plate",
+    "back": "Plato",
+    "ipa": "/pleɪt/",
+    "example": "Put the food on the <plate>.",
+    "example_es": "Pon la comida en el <plato>."
+  },
+  {
+    "front": "Cup",
+    "back": "Taza",
+    "ipa": "/kʌp/",
+    "example": "I drink tea from a <cup>.",
+    "example_es": "Bebo té de una <taza>."
+  },
+  {
+    "front": "Spoon",
+    "back": "Cuchara",
+    "ipa": "/spuːn/",
+    "example": "Eat soup with a <spoon>.",
+    "example_es": "Come sopa con una <cuchara>."
+  },
+  {
+    "front": "Knife",
+    "back": "Cuchillo",
+    "ipa": "/naɪf/",
+    "example": "Cut the bread with a <knife>.",
+    "example_es": "Corta el pan con un <cuchillo>."
+  },
+  {
+    "front": "Fridge",
+    "back": "Refrigerador / Nevera",
+    "ipa": "/frɪdʒ/",
+    "example": "The milk is in the <fridge>.",
+    "example_es": "La leche está en la <nevera>."
+  },
+  {
+    "front": "Stairs",
+    "back": "Escaleras",
+    "ipa": "/sterz/",
+    "example": "Go up the <stairs>.",
+    "example_es": "Sube las <escaleras>."
   }
 ]

@@ -1,26 +1,122 @@
 [
-  {"word": "pillow", "category": "Home"},
-  {"word": "curtain", "category": "Home"},
-  {"word": "fridge", "category": "Home"},
-  {"word": "blanket", "category": "Home"},
-  {"word": "shelf", "category": "Home"},
-  {"word": "wardrobe", "category": "Home"},
-  {"word": "headache", "category": "Health"},
-  {"word": "fever", "category": "Health"},
-  {"word": "prescription", "category": "Health"},
-  {"word": "symptom", "category": "Health"},
-  {"word": "appointment", "category": "Health"},
-  {"word": "pharmacy", "category": "Health"},
-  {"word": "password", "category": "Technology"},
-  {"word": "download", "category": "Technology"},
-  {"word": "screenshot", "category": "Technology"},
-  {"word": "update", "category": "Technology"},
-  {"word": "Wi-Fi", "category": "Technology"},
-  {"word": "charger", "category": "Technology"},
-  {"word": "colleague", "category": "Work"},
-  {"word": "salary", "category": "Work"},
-  {"word": "interview", "category": "Work"},
-  {"word": "deadline", "category": "Work"},
-  {"word": "meeting", "category": "Work"},
-  {"word": "resume", "category": "Work"}
+  {
+    "word": "pillow",
+    "category": "Home"
+  },
+  {
+    "word": "curtain",
+    "category": "Home"
+  },
+  {
+    "word": "fridge",
+    "category": "Home"
+  },
+  {
+    "word": "blanket",
+    "category": "Home"
+  },
+  {
+    "word": "shelf",
+    "category": "Home"
+  },
+  {
+    "word": "wardrobe",
+    "category": "Home"
+  },
+  {
+    "word": "headache",
+    "category": "Health"
+  },
+  {
+    "word": "fever",
+    "category": "Health"
+  },
+  {
+    "word": "prescription",
+    "category": "Health"
+  },
+  {
+    "word": "symptom",
+    "category": "Health"
+  },
+  {
+    "word": "appointment",
+    "category": "Health"
+  },
+  {
+    "word": "pharmacy",
+    "category": "Health"
+  },
+  {
+    "word": "password",
+    "category": "Technology"
+  },
+  {
+    "word": "download",
+    "category": "Technology"
+  },
+  {
+    "word": "screenshot",
+    "category": "Technology"
+  },
+  {
+    "word": "update",
+    "category": "Technology"
+  },
+  {
+    "word": "Wi-Fi",
+    "category": "Technology"
+  },
+  {
+    "word": "charger",
+    "category": "Technology"
+  },
+  {
+    "word": "colleague",
+    "category": "Work"
+  },
+  {
+    "word": "salary",
+    "category": "Work"
+  },
+  {
+    "word": "interview",
+    "category": "Work"
+  },
+  {
+    "word": "deadline",
+    "category": "Work"
+  },
+  {
+    "word": "meeting",
+    "category": "Work"
+  },
+  {
+    "word": "resume",
+    "category": "Work"
+  },
+  {
+    "word": "stethoscope",
+    "category": "Health"
+  },
+  {
+    "word": "bandage",
+    "category": "Health"
+  },
+  {
+    "word": "oven",
+    "category": "Home"
+  },
+  {
+    "word": "balcony",
+    "category": "Home"
+  },
+  {
+    "word": "promotion",
+    "category": "Work"
+  },
+  {
+    "word": "bluetooth",
+    "category": "Technology"
+  }
 ]

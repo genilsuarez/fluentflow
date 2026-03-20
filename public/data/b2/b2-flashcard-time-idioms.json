@@ -208,5 +208,75 @@
     "ipa": "/ðə kræk əv dɔːn/",
     "example": "We left at <the crack of dawn> to avoid traffic.",
     "example_es": "Salimos <al amanecer> para evitar el tráfico."
+  },
+  {
+    "front": "Around the clock",
+    "back": "Las 24 horas / Sin parar",
+    "ipa": "/əˈraʊnd ðə klɒk/",
+    "example": "The hospital operates <around the clock>.",
+    "example_es": "El hospital opera <las 24 horas>."
+  },
+  {
+    "front": "In due time",
+    "back": "A su debido tiempo",
+    "ipa": "/ɪn djuː taɪm/",
+    "example": "You will understand <in due time>.",
+    "example_es": "Entenderás <a su debido tiempo>."
+  },
+  {
+    "front": "A matter of time",
+    "back": "Cuestión de tiempo",
+    "ipa": "/ə ˈmætər əv taɪm/",
+    "example": "It's only <a matter of time> before they find out.",
+    "example_es": "Es solo <cuestión de tiempo> antes de que se enteren."
+  },
+  {
+    "front": "Time after time",
+    "back": "Una y otra vez",
+    "ipa": "/taɪm ˈæftər taɪm/",
+    "example": "She makes the same mistake <time after time>.",
+    "example_es": "Ella comete el mismo error <una y otra vez>."
+  },
+  {
+    "front": "Pressed for time",
+    "back": "Con poco tiempo / Apurado",
+    "ipa": "/prest fɔːr taɪm/",
+    "example": "I'm <pressed for time>, let's be quick.",
+    "example_es": "Estoy <apurado de tiempo>, seamos rápidos."
+  },
+  {
+    "front": "Stand the test of time",
+    "back": "Resistir el paso del tiempo",
+    "ipa": "/stænd ðə test əv taɪm/",
+    "example": "Great art <stands the test of time>.",
+    "example_es": "El gran arte <resiste el paso del tiempo>."
+  },
+  {
+    "front": "Ahead of time",
+    "back": "Con anticipación",
+    "ipa": "/əˈhed əv taɪm/",
+    "example": "Please arrive <ahead of time>.",
+    "example_es": "Por favor llega <con anticipación>."
+  },
+  {
+    "front": "Bide your time",
+    "back": "Esperar el momento oportuno",
+    "ipa": "/baɪd jɔːr taɪm/",
+    "example": "He decided to <bide his time> before acting.",
+    "example_es": "Decidió <esperar el momento oportuno> antes de actuar."
+  },
+  {
+    "front": "On borrowed time",
+    "back": "Con el tiempo contado",
+    "ipa": "/ɒn ˈbɒroʊd taɪm/",
+    "example": "The old building is living <on borrowed time>.",
+    "example_es": "El viejo edificio vive <con el tiempo contado>."
+  },
+  {
+    "front": "Turn back the clock",
+    "back": "Retroceder en el tiempo",
+    "ipa": "/tɜːrn bæk ðə klɒk/",
+    "example": "I wish I could <turn back the clock>.",
+    "example_es": "Ojalá pudiera <retroceder en el tiempo>."
   }
 ]

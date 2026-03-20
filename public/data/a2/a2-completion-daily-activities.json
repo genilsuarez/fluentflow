@@ -218,5 +218,35 @@
       "open"
     ],
     "explanation": "<Turn off> the lights means to switch them off to save energy."
+  },
+  {
+    "sentence": "I ______ my teeth every morning.",
+    "correct": "brush",
+    "explanation": "Use <brush> for cleaning teeth",
+    "tip": "Complete with the correct verb"
+  },
+  {
+    "sentence": "She ______ the bus to work.",
+    "correct": "takes",
+    "explanation": "Use <takes> with public transport",
+    "tip": "Complete with a transport verb"
+  },
+  {
+    "sentence": "We ______ dinner at 7 PM.",
+    "correct": "have",
+    "explanation": "Use <have> with meals",
+    "tip": "Complete with the correct verb"
+  },
+  {
+    "sentence": "He ______ to bed at 10 PM.",
+    "correct": "goes",
+    "explanation": "Use <goes> with <to bed>",
+    "tip": "Complete with a movement verb"
+  },
+  {
+    "sentence": "They ______ TV after dinner.",
+    "correct": "watch",
+    "explanation": "Use <watch> with television",
+    "tip": "Complete with the correct verb"
   }
 ]

@@ -127,14 +127,14 @@
   },
   {
     "front": "Fauna",
-    "back": "Fauna",
+    "back": "Fauna (conjunto de animales)",
     "ipa": "/ˈfɔːnə/",
     "example": "The <fauna> of Australia is unique.",
     "example_es": "La <fauna> de Australia es única."
   },
   {
     "front": "Flora",
-    "back": "Flora",
+    "back": "Flora (conjunto de plantas)",
     "ipa": "/ˈflɔːrə/",
     "example": "The tropical <flora> includes many exotic plants.",
     "example_es": "La <flora> tropical incluye muchas plantas exóticas."
@@ -183,7 +183,7 @@
   },
   {
     "front": "Tundra",
-    "back": "Tundra",
+    "back": "Tundra (bioma ártico)",
     "ipa": "/ˈtʌndrə/",
     "example": "The Arctic <tundra> has a harsh climate.",
     "example_es": "La <tundra> ártica tiene un clima severo."

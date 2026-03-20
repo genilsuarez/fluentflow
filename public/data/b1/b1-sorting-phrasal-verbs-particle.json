@@ -1,30 +1,122 @@
 [
-  {"word": "give up (stop trying)", "category": "Up"},
-  {"word": "pick up (collect)", "category": "Up"},
-  {"word": "set up (arrange)", "category": "Up"},
-  {"word": "come up (arise)", "category": "Up"},
-  {"word": "make up (invent)", "category": "Up"},
-  {"word": "bring up (mention)", "category": "Up"},
-  {"word": "grow up (become adult)", "category": "Up"},
-  {"word": "find out (discover)", "category": "Out"},
-  {"word": "work out (exercise/solve)", "category": "Out"},
-  {"word": "carry out (perform)", "category": "Out"},
-  {"word": "point out (indicate)", "category": "Out"},
-  {"word": "run out (exhaust supply)", "category": "Out"},
-  {"word": "figure out (understand)", "category": "Out"},
-  {"word": "turn out (result)", "category": "Out"},
-  {"word": "take off (remove/depart)", "category": "Off"},
-  {"word": "put off (postpone)", "category": "Off"},
-  {"word": "call off (cancel)", "category": "Off"},
-  {"word": "pay off (be worthwhile)", "category": "Off"},
-  {"word": "show off (boast)", "category": "Off"},
-  {"word": "go off (explode/ring)", "category": "Off"},
-  {"word": "cut off (disconnect)", "category": "Off"},
-  {"word": "look down on (despise)", "category": "Down"},
-  {"word": "break down (stop working)", "category": "Down"},
-  {"word": "calm down (relax)", "category": "Down"},
-  {"word": "turn down (reject)", "category": "Down"},
-  {"word": "let down (disappoint)", "category": "Down"},
-  {"word": "settle down (become stable)", "category": "Down"},
-  {"word": "slow down (reduce speed)", "category": "Down"}
+  {
+    "word": "give up (stop trying)",
+    "category": "Up"
+  },
+  {
+    "word": "pick up (collect)",
+    "category": "Up"
+  },
+  {
+    "word": "set up (arrange)",
+    "category": "Up"
+  },
+  {
+    "word": "come up (arise)",
+    "category": "Up"
+  },
+  {
+    "word": "make up (invent)",
+    "category": "Up"
+  },
+  {
+    "word": "bring up (mention)",
+    "category": "Up"
+  },
+  {
+    "word": "grow up (become adult)",
+    "category": "Up"
+  },
+  {
+    "word": "find out (discover)",
+    "category": "Out"
+  },
+  {
+    "word": "work out (exercise/solve)",
+    "category": "Out"
+  },
+  {
+    "word": "carry out (perform)",
+    "category": "Out"
+  },
+  {
+    "word": "point out (indicate)",
+    "category": "Out"
+  },
+  {
+    "word": "run out (exhaust supply)",
+    "category": "Out"
+  },
+  {
+    "word": "figure out (understand)",
+    "category": "Out"
+  },
+  {
+    "word": "turn out (result)",
+    "category": "Out"
+  },
+  {
+    "word": "take off (remove/depart)",
+    "category": "Off"
+  },
+  {
+    "word": "put off (postpone)",
+    "category": "Off"
+  },
+  {
+    "word": "call off (cancel)",
+    "category": "Off"
+  },
+  {
+    "word": "pay off (be worthwhile)",
+    "category": "Off"
+  },
+  {
+    "word": "show off (boast)",
+    "category": "Off"
+  },
+  {
+    "word": "go off (explode/ring)",
+    "category": "Off"
+  },
+  {
+    "word": "cut off (disconnect)",
+    "category": "Off"
+  },
+  {
+    "word": "look down on (despise)",
+    "category": "Down"
+  },
+  {
+    "word": "break down (stop working)",
+    "category": "Down"
+  },
+  {
+    "word": "calm down (relax)",
+    "category": "Down"
+  },
+  {
+    "word": "turn down (reject)",
+    "category": "Down"
+  },
+  {
+    "word": "let down (disappoint)",
+    "category": "Down"
+  },
+  {
+    "word": "settle down (become stable)",
+    "category": "Down"
+  },
+  {
+    "word": "slow down (reduce speed)",
+    "category": "Down"
+  },
+  {
+    "word": "hang out (spend time)",
+    "category": "Out"
+  },
+  {
+    "word": "cheer up (become happier)",
+    "category": "Up"
+  }
 ]

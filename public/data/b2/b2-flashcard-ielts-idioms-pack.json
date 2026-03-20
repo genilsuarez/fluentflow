@@ -640,35 +640,11 @@
     "category": "Success"
   },
   {
-    "front": "Once in a blue moon",
-    "back": "Muy de vez en cuando / Rara vez",
-    "ipa": "/wʌns ɪn ə bluː muːn/",
-    "example": "<Once in a blue moon>.",
-    "example_es": "Muy de vez en cuando.",
-    "category": "Time"
-  },
-  {
     "front": "Time flies when you're having fun",
     "back": "El tiempo vuela cuando te diviertes",
     "ipa": "/taɪm flaɪz wɛn jʊər ˈhævɪŋ fʌn/",
     "example": "<Time flies when you're having fun>.",
     "example_es": "<El tiempo vuela cuando te diviertes>.",
-    "category": "Time"
-  },
-  {
-    "front": "Better late than never",
-    "back": "Más vale tarde que nunca",
-    "ipa": "/ˈbetər leɪt ðæn ˈnevər/",
-    "example": "<Better late than never>.",
-    "example_es": "<Más vale tarde que nunca>.",
-    "category": "Time"
-  },
-  {
-    "front": "In the nick of time",
-    "back": "Justo a tiempo / En el último momento",
-    "ipa": "/ɪn ðə nɪk ɒv taɪm/",
-    "example": "<In the nick of time>.",
-    "example_es": "Justo a tiempo.",
     "category": "Time"
   },
   {
@@ -704,27 +680,11 @@
     "category": "Time"
   },
   {
-    "front": "At the eleventh hour",
-    "back": "En el último momento",
-    "ipa": "/æt ði ɪˈlevənθ ˈaʊər/",
-    "example": "<At the eleventh hour>.",
-    "example_es": "<En el último momento>.",
-    "category": "Time"
-  },
-  {
     "front": "Turn back the clock",
     "back": "Volver atrás en el tiempo",
     "ipa": "/tɜːrn bæk ðə klɒk/",
     "example": "<Turn back the clock>.",
     "example_es": "<Volver atrás en el tiempo>.",
-    "category": "Time"
-  },
-  {
-    "front": "Against the clock",
-    "back": "Contra reloj",
-    "ipa": "/əˈɡenst ðə klɒk/",
-    "example": "<Against the clock>.",
-    "example_es": "<Contra reloj>.",
     "category": "Time"
   },
   {
@@ -736,35 +696,11 @@
     "category": "Time"
   },
   {
-    "front": "Take your time",
-    "back": "Tómate tu tiempo",
-    "ipa": "/teɪk jɔːr taɪm/",
-    "example": "<Take your time>.",
-    "example_es": "<Tómate tu tiempo>.",
-    "category": "Time"
-  },
-  {
-    "front": "Time is money",
-    "back": "El tiempo es oro",
-    "ipa": "/taɪm ɪz ˈmʌni/",
-    "example": "<Time is money>.",
-    "example_es": "<El tiempo es oro>.",
-    "category": "Time"
-  },
-  {
     "front": "Have the time of your life",
     "back": "Pasárselo en grande",
     "ipa": "/hæv ðə taɪm ɒv jɔːr laɪf/",
     "example": "<Have the time of your life>.",
     "example_es": "<Pasárselo en grande>.",
-    "category": "Time"
-  },
-  {
-    "front": "Behind the times",
-    "back": "Anticuado / Desfasado",
-    "ipa": "/bɪˈhaɪnd ðə taɪmz/",
-    "example": "<Behind the times>.",
-    "example_es": "Anticuado.",
     "category": "Time"
   },
   {
@@ -792,35 +728,11 @@
     "category": "Time"
   },
   {
-    "front": "In the long run",
-    "back": "A la larga / A la larga",
-    "ipa": "/ɪn ðə lɒŋ rʌn/",
-    "example": "<In the long run>.",
-    "example_es": "A la larga.",
-    "category": "Time"
-  },
-  {
     "front": "A moment in time",
     "back": "Un momento en el tiempo",
     "ipa": "/ə ˈmoʊmənt ɪn taɪm/",
     "example": "It was just <a moment in time>.",
     "example_es": "Fue solo <un momento en el tiempo>.",
-    "category": "Time"
-  },
-  {
-    "front": "Against the clock",
-    "back": "Contra reloj",
-    "ipa": "/əˈɡenst ðə klɒk/",
-    "example": "We are working <against the clock> to finish the project.",
-    "example_es": "Estamos trabajando <contra reloj> para terminar el proyecto.",
-    "category": "Time"
-  },
-  {
-    "front": "At the eleventh hour",
-    "back": "En el último momento",
-    "ipa": "/æt ði ɪˈlevənθ ˈaʊər/",
-    "example": "He submitted his assignment <at the eleventh hour>.",
-    "example_es": "Entregó su tarea <en el último momento>.",
     "category": "Time"
   },
   {
@@ -832,75 +744,11 @@
     "category": "Time"
   },
   {
-    "front": "Behind the times",
-    "back": "Anticuado / Desfasado",
-    "ipa": "/bɪˈhaɪnd ðə taɪmz/",
-    "example": "His ideas are a bit <behind the times>.",
-    "example_es": "Sus ideas están un poco anticuadas.",
-    "category": "Time"
-  },
-  {
     "front": "Big time",
     "back": "A lo grande / Mucho",
     "ipa": "/bɪɡ taɪm/",
     "example": "He failed <big time>.",
     "example_es": "Fracasó a lo grande.",
-    "category": "Time"
-  },
-  {
-    "front": "Call it a day",
-    "back": "Dar por terminado el día",
-    "ipa": "/kɔːl ɪt ə deɪ/",
-    "example": "Let's <call it a day> and go home.",
-    "example_es": "Demos por terminado el día y vayamos a casa.",
-    "category": "Time"
-  },
-  {
-    "front": "For the time being",
-    "back": "Por el momento",
-    "ipa": "/fɔːr ðə taɪm ˈbiːɪŋ/",
-    "example": "<For the time being>, we will continue as planned.",
-    "example_es": "<Por el momento>, continuaremos según lo planeado.",
-    "category": "Time"
-  },
-  {
-    "front": "From time to time",
-    "back": "De vez en cuando",
-    "ipa": "/frɒm taɪm tuː taɪm/",
-    "example": "I visit my grandparents <from time to time>.",
-    "example_es": "Visito a mis abuelos <de vez en cuando>.",
-    "category": "Time"
-  },
-  {
-    "front": "In the nick of time",
-    "back": "Justo a tiempo / En el último momento",
-    "ipa": "/ɪn ðə nɪk ɒv taɪm/",
-    "example": "He arrived <in the nick of time> to catch the train.",
-    "example_es": "Llegó justo a tiempo para coger el tren.",
-    "category": "Time"
-  },
-  {
-    "front": "Kill time",
-    "back": "Matar el tiempo",
-    "ipa": "/kɪl taɪm/",
-    "example": "We had to <kill time> while waiting for the flight.",
-    "example_es": "Tuvimos que <matar el tiempo> mientras esperábamos el vuelo.",
-    "category": "Time"
-  },
-  {
-    "front": "Make up for lost time",
-    "back": "Recuperar el tiempo perdido",
-    "ipa": "/meɪk ʌp fɔːr lɒst taɪm/",
-    "example": "He's working hard to <make up for lost time>.",
-    "example_es": "Está trabajando duro para <recuperar el tiempo perdido>.",
-    "category": "Time"
-  },
-  {
-    "front": "Once in a blue moon",
-    "back": "Muy de vez en cuando / Rara vez",
-    "ipa": "/wʌns ɪn ə bluː muːn/",
-    "example": "She only visits her family <once in a blue moon>.",
-    "example_es": "Ella solo visita a su familia muy de vez en cuando.",
     "category": "Time"
   },
   {
@@ -925,30 +773,6 @@
     "ipa": "/seɪv taɪm/",
     "example": "Taking the shortcut will <save> us time.",
     "example_es": "Tomar el atajo nos <ahorrar>á tiempo.",
-    "category": "Time"
-  },
-  {
-    "front": "Take your time",
-    "back": "Tómate tu tiempo",
-    "ipa": "/teɪk jɔːr taɪm/",
-    "example": "Don't rush, <take your time>.",
-    "example_es": "No te apresures, <tómate tu tiempo>.",
-    "category": "Time"
-  },
-  {
-    "front": "Time is money",
-    "back": "El tiempo es oro",
-    "ipa": "/taɪm ɪz ˈmʌni/",
-    "example": "In business, <time is money>.",
-    "example_es": "En los negocios, <el tiempo es oro>.",
-    "category": "Time"
-  },
-  {
-    "front": "Time flies",
-    "back": "El tiempo vuela",
-    "ipa": "/taɪm flaɪz/",
-    "example": "<Time flies> when you're having fun.",
-    "example_es": "<El tiempo vuela> cuando te diviertes.",
     "category": "Time"
   },
   {
@@ -1229,22 +1053,6 @@
     "ipa": "/teɪk ðə bʊl baɪ ðə hɔːrnz/",
     "example": "You need to <take the bull by the horns> and deal with the problem.",
     "example_es": "Necesitas <tomar el toro por los cuernos> y lidiar con el problema.",
-    "category": "Nature"
-  },
-  {
-    "front": "The early bird catches the worm",
-    "back": "Al que madruga, Dios le ayuda",
-    "ipa": "/ði ˈɜːrli bɜːrd ˈkætʃɪz ðə wɜːrm/",
-    "example": "Get there early, <the early bird catches the worm>.",
-    "example_es": "Llega temprano, <al que madruga, Dios le ayuda>.",
-    "category": "Nature"
-  },
-  {
-    "front": "The lion's share",
-    "back": "La mayor parte",
-    "ipa": "/ðə ˈlaɪənz ʃer/",
-    "example": "He got <the lion's share> of the inheritance.",
-    "example_es": "Él obtuvo <la mayor parte> de la herencia.",
     "category": "Nature"
   },
   {

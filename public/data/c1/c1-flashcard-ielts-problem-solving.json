@@ -91,13 +91,6 @@
     "example_es": "Se ha estado devanando los <sesos> para recordar dónde puso sus llaves."
   },
   {
-    "front": "Get to the bottom of",
-    "back": "Llegar al fondo de",
-    "ipa": "/ɡet tuː ðə ˈbɒtəm ɒv/",
-    "example": "We need to <get to the bottom of> the problem.",
-    "example_es": "Necesitamos llegar al fondo del problema."
-  },
-  {
     "front": "Piece together",
     "back": "Reconstruir / Armar",
     "ipa": "/piːs təˈɡeðər/",
@@ -203,13 +196,6 @@
     "example_es": "Necesitamos <resolver> este conflicto pacíficamente."
   },
   {
-    "front": "Sort out",
-    "back": "Solucionar / Organizar",
-    "ipa": "/sɔːrt aʊt/",
-    "example": "I need to <sort out> my finances.",
-    "example_es": "Necesito organizar mis finanzas."
-  },
-  {
     "front": "Tackle",
     "back": "Abordar / Afrontar",
     "ipa": "/ˈtækl/",
@@ -278,5 +264,19 @@
     "ipa": "/weɪ ʌp/",
     "example": "We need to <weigh up> the pros and cons before deciding.",
     "example_es": "Necesitamos sopesar los pros y los contras antes de decidir."
+  },
+  {
+    "front": "Troubleshoot",
+    "back": "Solucionar problemas / Diagnosticar",
+    "ipa": "/ˈtrʌbəlʃuːt/",
+    "example": "We need to <troubleshoot> the system.",
+    "example_es": "Necesitamos <diagnosticar> el sistema."
+  },
+  {
+    "front": "Workaround",
+    "back": "Solución alternativa",
+    "ipa": "/ˈwɜːrkəraʊnd/",
+    "example": "We found a <workaround> for the bug.",
+    "example_es": "Encontramos una <solución alternativa> para el error."
   }
 ]

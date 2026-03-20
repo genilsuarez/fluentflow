@@ -57,7 +57,7 @@
   },
   {
     "front": "visa",
-    "back": "visa",
+    "back": "Visa / Visado",
     "ipa": "/ˈviːzə/",
     "example": "Do I need a <visa> to visit that country?",
     "example_es": "¿Necesito una <visa> para visitar ese país?"
@@ -117,13 +117,6 @@
     "ipa": "/ˈkʌrənsi/",
     "example": "What's the local <currency> here?",
     "example_es": "¿Cuál es la <moneda> local aquí?"
-  },
-  {
-    "front": "exchange rate",
-    "back": "tipo de cambio",
-    "ipa": "/ɪksˈtʃeɪndʒ reɪt/",
-    "example": "The <exchange rate> is very favorable today.",
-    "example_es": "El <tipo de cambio> es muy favorable hoy."
   },
   {
     "front": "backpack",
@@ -278,5 +271,12 @@
     "ipa": "/ˈtrævəl ɪnˈʃʊrəns/",
     "example": "<Travel insurance> is essential for international trips.",
     "example_es": "El <seguro de viaje> es esencial para viajes internacionales."
+  },
+  {
+    "front": "Souvenir",
+    "back": "Recuerdo / Suvenir",
+    "ipa": "/ˌsuːvəˈnɪər/",
+    "example": "I bought a <souvenir> from the trip.",
+    "example_es": "Compré un <recuerdo> del viaje."
   }
 ]

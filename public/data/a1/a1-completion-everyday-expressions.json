@@ -118,5 +118,35 @@
     "correct": "take",
     "explanation": "We use <take the bus> to mean using the bus for transportation.",
     "tip": "Complete with the verb for using transportation"
+  },
+  {
+    "sentence": "Can I ______ you a question?",
+    "correct": "ask",
+    "explanation": "Use <ask> to request information",
+    "tip": "Complete with the correct verb"
+  },
+  {
+    "sentence": "I don't ______ that word.",
+    "correct": "understand",
+    "explanation": "Use <understand> when something is not clear",
+    "tip": "Complete with a verb of comprehension"
+  },
+  {
+    "sentence": "What ______ is it?",
+    "correct": "time",
+    "explanation": "Use <time> to ask about the hour",
+    "tip": "Complete with the correct noun"
+  },
+  {
+    "sentence": "I ______ to go now.",
+    "correct": "need",
+    "explanation": "Use <need> to express necessity",
+    "tip": "Complete with a verb"
+  },
+  {
+    "sentence": "Let me ______ about it.",
+    "correct": "think",
+    "explanation": "Use <think> when you need time to decide",
+    "tip": "Complete with a mental verb"
   }
 ]

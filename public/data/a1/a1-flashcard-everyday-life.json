@@ -1,19 +1,5 @@
 [
   {
-    "front": "mother",
-    "back": "madre",
-    "ipa": "/ˈmʌðər/",
-    "example": "My <mother> cooks dinner every evening.",
-    "example_es": "Mi <madre> cocina la cena todas las noches."
-  },
-  {
-    "front": "father",
-    "back": "padre",
-    "ipa": "/ˈfɑːðər/",
-    "example": "My <father> works in an office.",
-    "example_es": "Mi <padre> trabaja en una oficina."
-  },
-  {
     "front": "brother",
     "back": "hermano",
     "ipa": "/ˈbrʌðər/",
@@ -140,20 +126,6 @@
     "example_es": "Lleva un paraguas. Hoy está <lluvioso>."
   },
   {
-    "front": "cold",
-    "back": "frío",
-    "ipa": "/kəʊld/",
-    "example": "It's very <cold> in winter.",
-    "example_es": "Hace mucho <frío> en invierno."
-  },
-  {
-    "front": "hot",
-    "back": "caluroso / caliente",
-    "ipa": "/hɒt/",
-    "example": "It's too <hot> to go outside.",
-    "example_es": "Hace demasiado calor para salir."
-  },
-  {
     "front": "windy",
     "back": "ventoso",
     "ipa": "/ˈwɪndi/",
@@ -245,13 +217,6 @@
     "example_es": "¿Puedo tomar prestado tu <bolígrafo>?"
   },
   {
-    "front": "book",
-    "back": "libro",
-    "ipa": "/bʊk/",
-    "example": "I'm reading a very interesting <book>.",
-    "example_es": "Estoy leyendo un <libro> muy interesante."
-  },
-  {
     "front": "homework",
     "back": "tarea / deberes",
     "ipa": "/ˈhəʊmwɜːrk/",
@@ -278,5 +243,40 @@
     "ipa": "/ˈstʌmək/",
     "example": "My <stomach> hurts. I ate too much.",
     "example_es": "Me duele el <estómago>. Comí demasiado."
+  },
+  {
+    "front": "Breakfast",
+    "back": "Desayuno",
+    "ipa": "/ˈbrekfəst/",
+    "example": "I eat <breakfast> at 7 AM.",
+    "example_es": "Desayuno a las 7 AM."
+  },
+  {
+    "front": "Lunch",
+    "back": "Almuerzo",
+    "ipa": "/lʌntʃ/",
+    "example": "We have <lunch> at noon.",
+    "example_es": "Almorzamos al mediodía."
+  },
+  {
+    "front": "Dinner",
+    "back": "Cena",
+    "ipa": "/ˈdɪnər/",
+    "example": "What's for <dinner> tonight?",
+    "example_es": "¿Qué hay de <cena> esta noche?"
+  },
+  {
+    "front": "Homework",
+    "back": "Tarea",
+    "ipa": "/ˈhoʊmwɜːrk/",
+    "example": "I do my <homework> after school.",
+    "example_es": "Hago mi <tarea> después de la escuela."
+  },
+  {
+    "front": "Weekend",
+    "back": "Fin de semana",
+    "ipa": "/ˌwiːkˈend/",
+    "example": "I rest on the <weekend>.",
+    "example_es": "Descanso el <fin de semana>."
   }
 ]

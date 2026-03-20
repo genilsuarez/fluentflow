@@ -91,13 +91,6 @@
     "example_es": "Ella superó muchos desafíos en su vida."
   },
   {
-    "front": "Resilience",
-    "back": "Resiliencia",
-    "ipa": "/rɪˈzɪliəns/",
-    "example": "<Resilience> is key to bouncing back from failure.",
-    "example_es": "La <resiliencia> es clave para recuperarse del fracaso."
-  },
-  {
     "front": "Failure",
     "back": "Fracaso",
     "ipa": "/ˈfeɪljər/",
@@ -278,5 +271,12 @@
     "ipa": "/pəˈtenʃl/",
     "example": "She has the <potential> to become a great leader.",
     "example_es": "Ella tiene el <potencial> de convertirse en una gran líder."
+  },
+  {
+    "front": "Perseverance",
+    "back": "Perseverancia",
+    "ipa": "/ˌpɜːrsɪˈvɪərəns/",
+    "example": "<Perseverance> is key to achieving your goals.",
+    "example_es": "La <perseverancia> es clave para lograr tus metas."
   }
 ]

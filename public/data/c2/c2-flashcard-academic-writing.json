@@ -7,13 +7,6 @@
     "example_es": "El profesor aclaró la teoría compleja con ejemplos claros."
   },
   {
-    "front": "substantiate",
-    "back": "fundamentar / proporcionar evidencia",
-    "ipa": "/səbˈstænʃieɪt/",
-    "example": "The researcher <substantiated> her claims with empirical data.",
-    "example_es": "La investigadora fundamentó sus afirmaciones con datos empíricos."
-  },
-  {
     "front": "corroborate",
     "back": "corroborar / confirmar",
     "ipa": "/kəˈrɒbəreɪt/",
@@ -49,13 +42,6 @@
     "example_es": "Los científicos postulan que el cambio climático afecta los patrones migratorios."
   },
   {
-    "front": "synthesize",
-    "back": "sintetizar / combinar elementos",
-    "ipa": "/ˈsɪnθəsaɪz/",
-    "example": "The thesis <synthesizes> various theoretical frameworks.",
-    "example_es": "La tesis sintetiza varios marcos teóricos."
-  },
-  {
     "front": "articulate",
     "back": "articular / expresar claramente",
     "ipa": "/ɑːˈtɪkjuleɪt/",
@@ -68,13 +54,6 @@
     "ipa": "/rɪˈfjuːt/",
     "example": "The study <refutes> previous assumptions about the topic.",
     "example_es": "El estudio refuta suposiciones previas sobre el tema."
-  },
-  {
-    "front": "elucidate",
-    "back": "dilucidar / hacer comprensible",
-    "ipa": "/ɪˈluːsɪdeɪt/",
-    "example": "The appendix <elucidates> the methodology used.",
-    "example_es": "El apéndice dilucida la metodología utilizada."
   },
   {
     "front": "circumscribe",
@@ -168,25 +147,11 @@
     "example_es": "Se descubrieron documentos anteriormente desconocidos."
   },
   {
-    "front": "vis-à-vis",
-    "back": "con respecto a / en relación con",
-    "ipa": "/ˌviːzɑːˈviː/",
-    "example": "The policy's effectiveness <vis-à-vis> previous approaches is clear.",
-    "example_es": "La efectividad de la política con respecto a enfoques previos es clara."
-  },
-  {
     "front": "qua",
     "back": "en calidad de / como",
     "ipa": "/kweɪ/",
     "example": "The institution <qua> educational body has certain responsibilities.",
     "example_es": "La institución en calidad de organismo educativo tiene ciertas responsabilidades."
-  },
-  {
-    "front": "ipso facto",
-    "back": "por ese mismo hecho / automáticamente",
-    "ipa": "/ˌɪpsəʊ ˈfæktəʊ/",
-    "example": "The discovery does not <ipso facto> invalidate the theory.",
-    "example_es": "El descubrimiento no invalida automáticamente la teoría."
   },
   {
     "front": "a priori",
@@ -238,25 +203,11 @@
     "example_es": "El informe discute, inter alia, preocupaciones ambientales."
   },
   {
-    "front": "de facto",
-    "back": "de facto / de hecho",
-    "ipa": "/deɪ ˈfæktəʊ/",
-    "example": "The policy became <de facto> standard practice.",
-    "example_es": "La política se convirtió en práctica estándar de facto."
-  },
-  {
     "front": "de jure",
     "back": "de jure / de derecho",
     "ipa": "/deɪ ˈdʒʊəri/",
     "example": "The organization is <de jure> independent.",
     "example_es": "La organización es de jure independiente."
-  },
-  {
-    "front": "ad hoc",
-    "back": "ad hoc / para este propósito específico",
-    "ipa": "/ˌæd ˈhɒk/",
-    "example": "An <ad hoc> committee was formed to address the issue.",
-    "example_es": "Se formó un comité ad hoc para abordar el problema."
   },
   {
     "front": "per se",
@@ -278,5 +229,54 @@
     "ipa": "/ˌeks pəʊst ˈfæktəʊ/",
     "example": "<Ex post facto> analysis revealed several flaws.",
     "example_es": "El análisis ex post facto reveló varios defectos."
+  },
+  {
+    "front": "Extrapolate",
+    "back": "Extrapolar",
+    "ipa": "/ɪkˈstræpəleɪt/",
+    "example": "We can <extrapolate> trends from the data.",
+    "example_es": "Podemos <extrapolar> tendencias de los datos."
+  },
+  {
+    "front": "Delineate",
+    "back": "Delinear / Describir con precisión",
+    "ipa": "/dɪˈlɪnieɪt/",
+    "example": "The paper <delineates> the key differences.",
+    "example_es": "El artículo <delinea> las diferencias clave."
+  },
+  {
+    "front": "Postulate",
+    "back": "Postular",
+    "ipa": "/ˈpɒstjʊleɪt/",
+    "example": "The theory <postulates> a new mechanism.",
+    "example_es": "La teoría <postula> un nuevo mecanismo."
+  },
+  {
+    "front": "Predicate",
+    "back": "Predicar / Basar",
+    "ipa": "/ˈpredɪkeɪt/",
+    "example": "The argument is <predicated> on false assumptions.",
+    "example_es": "El argumento está <basado> en suposiciones falsas."
+  },
+  {
+    "front": "Circumscribe",
+    "back": "Circunscribir / Limitar",
+    "ipa": "/ˈsɜːrkəmskraɪb/",
+    "example": "The study is <circumscribed> by its methodology.",
+    "example_es": "El estudio está <circunscrito> por su metodología."
+  },
+  {
+    "front": "Promulgate",
+    "back": "Promulgar / Difundir",
+    "ipa": "/ˈprɒməlɡeɪt/",
+    "example": "The government <promulgated> new regulations.",
+    "example_es": "El gobierno <promulgó> nuevas regulaciones."
+  },
+  {
+    "front": "Obviate",
+    "back": "Obviar / Evitar",
+    "ipa": "/ˈɒbvieɪt/",
+    "example": "This approach <obviates> the need for surgery.",
+    "example_es": "Este enfoque <obvia> la necesidad de cirugía."
   }
 ]

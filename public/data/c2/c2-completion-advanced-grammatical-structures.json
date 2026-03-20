@@ -4,7 +4,7 @@
     "idiom": "Seldom do we see",
     "options": [
       "We seldom see",
-      "Do we seldom see",
+      "Seldom do we see",
       "Seldom we see",
       "Seldom we do see"
     ],
@@ -28,7 +28,7 @@
     "idiom": "Not only did he finish",
     "options": [
       "He not only finished",
-      "Not only he finished",
+      "Not only did he finish",
       "Did he not only finish",
       "He finished not only"
     ],
@@ -42,7 +42,7 @@
       "She had no sooner arrived",
       "No sooner she arrived",
       "Had she no sooner arrived",
-      "She arrived no sooner"
+      "No sooner had she arrived"
     ],
     "correct": "No sooner had she arrived",
     "explanation": "Inversion with 'no sooner... than' requires the auxiliary verb before the subject."
@@ -52,7 +52,7 @@
     "idiom": "Little did he know",
     "options": [
       "He little knew",
-      "Little he knew",
+      "Little did he know",
       "Did he little know",
       "He did little know"
     ],
@@ -63,7 +63,7 @@
     "sentence": "<Only when the sun set> did they decide to leave.",
     "idiom": "Only when the sun set",
     "options": [
-      "They decided to leave only when the sun set",
+      "Only when the sun set",
       "Only when the sun set they decided to leave",
       "Did they decide to leave only when the sun set",
       "Only when the sun did set"
@@ -75,7 +75,7 @@
     "sentence": "<Such was the impact> of the speech that everyone was moved.",
     "idiom": "Such was the impact",
     "options": [
-      "The impact was such",
+      "Such was the impact",
       "Such the impact was",
       "Was such the impact",
       "The impact such was"
@@ -90,7 +90,7 @@
       "You should open under no circumstances",
       "Under no circumstances you should open",
       "Should you open under no circumstances",
-      "You should not open under any circumstances"
+      "Under no circumstances should you open"
     ],
     "correct": "Under no circumstances should you open",
     "explanation": "Inversion with negative expressions like <under no circumstances> requires the auxiliary verb before the subject."
@@ -101,7 +101,7 @@
     "options": [
       "I have rarely seen",
       "Rarely I have seen",
-      "Have I rarely seen",
+      "Rarely have I seen",
       "I rarely have seen"
     ],
     "correct": "Rarely have I seen",
@@ -114,7 +114,7 @@
       "He had no sooner finished",
       "No sooner he finished",
       "Had he no sooner finished",
-      "He finished no sooner"
+      "No sooner had he finished"
     ],
     "correct": "No sooner had he finished",
     "explanation": "Inversion with 'no sooner... than' requires the auxiliary verb before the subject."
@@ -126,7 +126,7 @@
       "She had hardly left",
       "Hardly she left",
       "Had she hardly left",
-      "She left hardly"
+      "Hardly had she left"
     ],
     "correct": "Hardly had she left",
     "explanation": "Inversion with 'hardly... when' requires the auxiliary verb before the subject."
@@ -135,7 +135,7 @@
     "sentence": "<So successful was the project> that it was expanded globally.",
     "idiom": "So successful was the project",
     "options": [
-      "The project was so successful",
+      "So successful was the project",
       "So successful the project was",
       "Was the project so successful",
       "The project so successful was"
@@ -147,7 +147,7 @@
     "sentence": "<Never before has technology advanced> so rapidly.",
     "idiom": "Never before has technology advanced",
     "options": [
-      "Technology has never before advanced",
+      "Never before has technology advanced",
       "Never before technology has advanced",
       "Has technology never before advanced",
       "Technology never before has advanced"
@@ -162,7 +162,7 @@
       "You are on no account to disclose",
       "On no account you are to disclose",
       "Are you on no account to disclose",
-      "You are not to disclose on any account"
+      "On no account are you to disclose"
     ],
     "correct": "On no account are you to disclose",
     "explanation": "Inversion with <on no account> requires the auxiliary verb before the subject."
@@ -185,7 +185,7 @@
     "options": [
       "We can achieve our goals only by working together",
       "Only by working together we can achieve",
-      "Can we achieve our goals only by working together",
+      "Only by working together can we achieve",
       "We can only achieve by working together"
     ],
     "correct": "Only by working together can we achieve",
@@ -196,7 +196,7 @@
     "idiom": "Not until all the guests had left",
     "options": [
       "She finally relaxed not until all the guests had left",
-      "Not until all the guests had left she finally relaxed",
+      "Not until all the guests had left",
       "Did she finally relax not until all the guests had left",
       "She did finally relax not until all the guests had left"
     ],
@@ -208,7 +208,7 @@
     "idiom": "So quickly did he run",
     "options": [
       "He ran so quickly",
-      "So quickly he ran",
+      "So quickly did he run",
       "Did he run so quickly",
       "He did run so quickly"
     ],
@@ -231,7 +231,7 @@
     "sentence": "<In no way is he responsible> for the accident.",
     "idiom": "In no way is he responsible",
     "options": [
-      "He is in no way responsible",
+      "In no way is he responsible",
       "In no way he is responsible",
       "Is he in no way responsible",
       "He is not responsible in any way"

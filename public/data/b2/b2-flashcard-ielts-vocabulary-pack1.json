@@ -280,14 +280,6 @@
     "category": "General"
   },
   {
-    "front": "Challenge",
-    "back": "Desafío",
-    "ipa": "/ˈtʃælɪndʒ/",
-    "example": "This project presents a new <challenge>.",
-    "example_es": "Este proyecto presenta un nuevo <desafío>.",
-    "category": "General"
-  },
-  {
     "front": "Innovation",
     "back": "Innovación",
     "ipa": "/ˌɪnəˈveɪʃn/",
@@ -880,27 +872,11 @@
     "category": "Clothing"
   },
   {
-    "front": "Sustainable",
-    "back": "Sostenible",
-    "ipa": "/səˈsteɪnəbl/",
-    "example": "We need to find <sustainable> solutions for the future.",
-    "example_es": "Necesitamos encontrar soluciones sostenibles para el futuro.",
-    "category": "General"
-  },
-  {
     "front": "Comprehensive",
     "back": "Exhaustivo / Completo",
     "ipa": "/ˌkɒmprɪˈhensɪv/",
     "example": "The report provides a <comprehensive> analysis of the market.",
     "example_es": "El informe proporciona un análisis exhaustivo del mercado.",
-    "category": "General"
-  },
-  {
-    "front": "Feasible",
-    "back": "Factible / Viable",
-    "ipa": "/ˈfiːzəbl/",
-    "example": "Is this plan <feasible> within our budget?",
-    "example_es": "¿Es factible este plan dentro de nuestro presupuesto?",
     "category": "General"
   },
   {

@@ -218,5 +218,65 @@
       "inspecting"
     ],
     "explanation": "<Inspect> means to look at something carefully to assess its condition."
+  },
+  {
+    "sentence": "The ______ of the neighbourhood has changed dramatically.",
+    "correct": "character",
+    "options": [
+      "character",
+      "personality",
+      "mood",
+      "temper"
+    ],
+    "explanation": "The <character> of a place refers to its distinctive qualities",
+    "tip": "Choose the word for a place's identity"
+  },
+  {
+    "sentence": "They decided to ______ the old house rather than demolish it.",
+    "correct": "renovate",
+    "options": [
+      "renovate",
+      "abandon",
+      "ignore",
+      "destroy"
+    ],
+    "explanation": "To <renovate> means to restore to good condition",
+    "tip": "Choose the word for improving a building"
+  },
+  {
+    "sentence": "The cost of living has ______ significantly in recent years.",
+    "correct": "escalated",
+    "options": [
+      "escalated",
+      "decreased",
+      "stabilized",
+      "fluctuated"
+    ],
+    "explanation": "<Escalated> means increased rapidly",
+    "tip": "Choose the word for a sharp increase"
+  },
+  {
+    "sentence": "Many people ______ between work and family responsibilities.",
+    "correct": "juggle",
+    "options": [
+      "juggle",
+      "ignore",
+      "abandon",
+      "separate"
+    ],
+    "explanation": "To <juggle> means to manage multiple things at once",
+    "tip": "Choose the word for balancing many tasks"
+  },
+  {
+    "sentence": "The ______ lifestyle of city dwellers differs from rural life.",
+    "correct": "hectic",
+    "options": [
+      "hectic",
+      "peaceful",
+      "slow",
+      "boring"
+    ],
+    "explanation": "<Hectic> means very busy and full of activity",
+    "tip": "Choose the word for a very busy life"
   }
 ]
