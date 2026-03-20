@@ -1,7 +1,7 @@
 import React from 'react';
 import { useAppStore } from '../../stores/appStore';
-import { useUserStore } from '../../stores/userStore';
 import { useSettingsStore } from '../../stores/settingsStore';
+import { useProgression } from '../../hooks/useProgression';
 import { useTranslation } from '../../utils/i18n';
 import '../../styles/components/score-display.css';
 
@@ -9,17 +9,13 @@ export const ScoreDisplay: React.FC = () => {
   const sessionScore = useAppStore(state => state.sessionScore);
   const globalScore = useAppStore(state => state.globalScore);
   const currentView = useAppStore(state => state.currentView);
-  const { getTotalScore } = useUserStore();
   const { language } = useSettingsStore();
   const { t } = useTranslation(language);
+  const { stats } = useProgression();
 
-  // Determine what to show based on current view
   const isInGame = currentView !== 'menu';
-  const totalPoints = getTotalScore();
-
-  // Calculate level based on total points
-  const level = Math.floor(totalPoints / 100) + 1;
-  const levelProgress = (totalPoints % 100) / 100;
+  const { completedModules, totalModules, completionPercentage } = stats;
+  const progressWidth = totalModules > 0 ? (completedModules / totalModules) * 100 : 0;
 
   return (
     <div
@@ -29,15 +25,13 @@ export const ScoreDisplay: React.FC = () => {
       aria-label={
         isInGame
           ? `Session score: ${sessionScore.correct} correct, ${sessionScore.incorrect} incorrect, ${sessionScore.accuracy.toFixed(0)}% accuracy`
-          : `Global score: ${globalScore.correct} correct, ${globalScore.incorrect} incorrect, ${globalScore.accuracy.toFixed(0)}% accuracy, Level ${level}`
+          : `Global score: ${globalScore.correct} correct, ${globalScore.incorrect} incorrect, ${globalScore.accuracy.toFixed(0)}% accuracy. Progress: ${completedModules} of ${totalModules} modules completed`
       }
     >
-      {/* Adaptive container based on context */}
       <div
         className={`score-display-compact__container ${isInGame ? 'score-display-compact__container--in-game' : 'score-display-compact__container--full'}`}
       >
         {isInGame ? (
-          // Compact session score with fixed layout
           <div className="score-display-compact__session">
             <div
               className="score-display-compact__icon"
@@ -71,7 +65,6 @@ export const ScoreDisplay: React.FC = () => {
             </div>
           </div>
         ) : (
-          // Compact global score with level indicator
           <div className="score-display-compact__global">
             <div className="score-display-compact__main">
               <div
@@ -106,30 +99,23 @@ export const ScoreDisplay: React.FC = () => {
               </div>
             </div>
 
-            {/* Level indicator - Compact horizontal layout */}
+            {/* Module completion progress */}
             <div className="score-display-compact__divider" aria-hidden="true" />
-            <div className="score-display-compact__level">
-              <div className="score-display-compact__level-badge" aria-label={`Level ${level}`}>
-                L{level}
-              </div>
-              <div
-                className="score-display-compact__points"
-                aria-label={`${totalPoints} total points`}
-              >
-                {totalPoints}
-              </div>
-              {/* Compact progress bar for next level */}
+            <div className="score-display-compact__progress">
+              <span className="score-display-compact__progress-label">
+                {completedModules}/{totalModules}
+              </span>
               <div
                 className="score-display-compact__progress-bar"
                 role="progressbar"
-                aria-valuenow={Math.round(levelProgress * 100)}
+                aria-valuenow={completionPercentage}
                 aria-valuemin={0}
                 aria-valuemax={100}
-                aria-label={`${Math.round(levelProgress * 100)}% progress to next level`}
+                aria-label={`${completionPercentage}% modules completed, ${completedModules} of ${totalModules}`}
               >
                 <div
                   className="score-display-compact__progress-fill"
-                  style={{ '--progress-width': `${levelProgress * 100}%` } as React.CSSProperties}
+                  style={{ '--progress-width': `${progressWidth}%` } as React.CSSProperties}
                 />
               </div>
             </div>
