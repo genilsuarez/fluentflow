@@ -1,6 +1,6 @@
 {
   "title": "Cultural Analysis and Cross-Cultural Communication",
-  "estimatedReadingTime": 18,
+  "estimatedReadingTime": 20,
   "learningObjectives": [
     "Master sophisticated vocabulary for cultural analysis and anthropological concepts",
     "Understand frameworks for analyzing cultural differences and communication patterns",
@@ -37,6 +37,18 @@
       "title": "Cultural Analysis Discourse",
       "type": "examples",
       "content": "Example 1: ANALYZING COMMUNICATION - <Japanese business culture exemplifies high-context communication, where implicit understanding is valued over explicit directness.>\n\nExample 2: DISCUSSING FRAMEWORKS - <While Hofstede's dimensions provide useful heuristics, we must resist essentializing entire nations. Significant intra-cultural diversity exists.>\n\nExample 3: ADDRESSING APPROPRIATION - <The distinction between appropriation and appreciation hinges on power dynamics, context, and respect for marginalized cultures.>"
+    },
+    {
+      "id": "media-representation",
+      "title": "Media Representation and Cultural Narratives",
+      "type": "theory",
+      "content": "Media plays a pivotal role in constructing and reinforcing cultural narratives, shaping how societies understand themselves and others.\n\n<Representation> in media refers to how different groups, identities, and experiences are portrayed. <Stereotyping> reduces complex identities to simplified, often negative characterizations. <Tokenism> involves including minimal representation to create an appearance of inclusivity without meaningful engagement.\n\nCritical media analysis examines:\n• <Framing> — how the presentation of information influences interpretation\n• <Agenda setting> — media's power to determine which issues receive public attention\n• <Cultural hegemony> — Gramsci's concept of dominant groups maintaining power through cultural institutions rather than force\n• <Orientalism> — Said's analysis of how Western media constructs the \"East\" as exotic and inferior\n\nThe rise of <social media> has democratized content creation, enabling <counter-narratives> that challenge mainstream representations. However, <echo chambers> and <algorithmic curation> can reinforce existing biases rather than broadening perspectives."
+    },
+    {
+      "id": "examples-2",
+      "title": "Cross-Cultural Analysis in Practice",
+      "type": "examples",
+      "content": "Example 1: CULTURAL NEGOTIATION - <When the Swedish team proposed a flat organizational structure for the joint venture, their Japanese counterparts initially perceived it as lacking proper hierarchy and respect. Through sustained dialogue, both sides came to appreciate how their respective approaches to authority reflected deeply embedded cultural values rather than mere organizational preferences.>\n\nExample 2: MEDIA ANALYSIS - <The documentary's portrayal of indigenous communities, while well-intentioned, inadvertently reproduced colonial narratives by positioning Western researchers as the primary interpreters of indigenous knowledge systems, rather than centering indigenous voices and epistemologies.>\n\nExample 3: INTERCULTURAL COMPETENCE - <Developing genuine intercultural competence requires moving beyond surface-level cultural knowledge — knowing that Japanese people bow, for instance — toward understanding the underlying value systems that inform behaviour and the capacity to navigate ambiguity without defaulting to ethnocentric judgments.>"
     },
     {
       "id": "summary",

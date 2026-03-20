@@ -1,6 +1,6 @@
 {
   "title": "Health and Wellness",
-  "estimatedReadingTime": 10,
+  "estimatedReadingTime": 20,
   "learningObjectives": [
     "Learn vocabulary for health, illness, and medical situations",
     "Understand how to describe symptoms and health problems",
@@ -37,6 +37,18 @@
       "title": "Health Conversations",
       "type": "examples",
       "content": "Example 1: DESCRIBING SYMPTOMS - <I have a terrible headache and a fever. I think I have the flu.>\n\nExample 2: AT THE DOCTOR - <Doctor, my throat is very sore and I can't stop coughing.>\n\nExample 3: AT THE PHARMACY - <I have a prescription for antibiotics. How much is it?>"
+    },
+    {
+      "id": "mental-wellbeing",
+      "title": "Mental Health and Wellbeing",
+      "type": "theory",
+      "content": "Mental health is as important as physical health. Here are useful words:\n\n• <Stress> - Feeling worried or under pressure\n• <Anxiety> - Feeling nervous or worried about the future\n• <Relax> - To become calm and less worried\n• <Mindfulness> - Paying attention to the present moment\n• <Self-care> - Taking care of your own health and happiness\n\nWays to feel better:\n• Get enough <sleep> (7-8 hours)\n• <Exercise> regularly\n• Talk to <friends> and <family>\n• Take <breaks> during work\n• Spend time <outdoors> in nature\n\nExample: <I feel stressed about my exams. I need to relax and take a break.>"
+    },
+    {
+      "id": "examples-2",
+      "title": "Health Advice Dialogues",
+      "type": "examples",
+      "content": "Example 1: FEELING ILL - <I have a terrible headache.> <You should take some paracetamol and drink water.> <Thanks, I'll do that.>\n\nExample 2: AT THE PHARMACY - <I need something for a cough.> <This cough syrup is very good. Take it three times a day.> <Thank you. How much is it?>\n\nExample 3: HEALTHY HABITS - <How do you stay healthy?> <I try to eat fruit every day and I walk to work.> <That's a great habit!>"
     },
     {
       "id": "summary",

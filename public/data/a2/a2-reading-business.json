@@ -1,6 +1,6 @@
 {
   "title": "Introduction to Business English",
-  "estimatedReadingTime": 8,
+  "estimatedReadingTime": 20,
   "learningObjectives": [
     "Understand basic business vocabulary and greetings",
     "Learn the difference between formal and informal communication",
@@ -37,6 +37,18 @@
       "title": "Business Situations",
       "type": "examples",
       "content": "Example 1: PROFESSIONAL GREETING - <Good morning, Mr. Smith. I'm Maria. Nice to meet you.>\n\nExample 2: IN A MEETING - <We have a deadline next Friday. Can everyone finish by then?>\n\nExample 3: EMAIL OPENING - <Dear Ms. Johnson, I hope this email finds you well.>"
+    },
+    {
+      "id": "meetings-calls",
+      "title": "Meetings and Phone Calls",
+      "type": "theory",
+      "content": "Meetings and phone calls are important in business. Here are useful phrases:\n\nStarting a meeting:\n• <Let's get started> - Begin the meeting\n• <The purpose of this meeting is...> - Explain why you are meeting\n• <Does everyone have the agenda?> - Check everyone has the plan\n\nPhone calls:\n• <Good morning, this is [name] speaking> - Answering professionally\n• <May I speak to...?> - Asking for someone\n• <I'll call you back> - Promise to phone again later\n• <Could you repeat that, please?> - Asking to hear again\n\nExample: <Good morning, this is Anna speaking. How can I help you?>"
+    },
+    {
+      "id": "examples-2",
+      "title": "Workplace Dialogues",
+      "type": "examples",
+      "content": "Example 1: ASKING FOR HELP - <Excuse me, could you help me with this report?> <Of course. What do you need?> <I'm not sure how to format the table.>\n\nExample 2: SCHEDULING - <Are you free on Thursday afternoon?> <Let me check my calendar. Yes, 2 PM works for me.> <Great, I'll send a meeting invitation.>\n\nExample 3: PHONE CALL - <Hello, may I speak to Mr. Johnson?> <I'm sorry, he's in a meeting. Can I take a message?> <Yes, please ask him to call me back.>"
     },
     {
       "id": "summary",

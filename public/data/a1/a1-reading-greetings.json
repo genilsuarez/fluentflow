@@ -1,6 +1,6 @@
 {
   "title": "Greetings and Introductions",
-  "estimatedReadingTime": 6,
+  "estimatedReadingTime": 20,
   "learningObjectives": [
     "Learn basic greetings in English",
     "Introduce yourself and others",
@@ -37,6 +37,18 @@
       "title": "Polite Expressions",
       "type": "theory",
       "content": "Being polite is important in English. Here are essential polite words:\n\n• Please - When you ask for something\n• Thank you / Thanks - When someone helps you\n• You're welcome - Response to <thank you>\n• Excuse me - To get attention or apologize\n• Sorry - To apologize\n\nExample: <Excuse me, can you help me, please?> <Yes, of course!> <Thank you!> <You're welcome!>"
+    },
+    {
+      "id": "saying-goodbye",
+      "title": "Saying Goodbye",
+      "type": "theory",
+      "content": "Just as greetings open a conversation, farewells close it. Here are common ways to say goodbye:\n\n• Goodbye / Bye - Standard farewell\n• See you later / See you soon - When you expect to meet again\n• Have a nice day - A friendly wish\n• Take care - Showing you care about the person\n• Good night - Only used in the evening or before bed\n\nExample: <See you later! Have a nice day!>\n\nNote: <Good night> is a farewell, not a greeting. We don't say \"Good night\" when we arrive somewhere."
+    },
+    {
+      "id": "examples-2",
+      "title": "Practice Dialogues",
+      "type": "examples",
+      "content": "Example 1: AT A SHOP - <Good morning! How can I help you?> <Hello! I'm looking for a book, please.> <Here you are.> <Thank you! Goodbye!>\n\nExample 2: MEETING A FRIEND - <Hi, Sarah! How are you?> <I'm great, thanks! And you?> <I'm fine. See you tomorrow!> <Bye! Take care!>\n\nExample 3: ON THE PHONE - <Hello, this is Maria.> <Hi Maria! Nice to hear from you.> <Thanks for calling. Goodbye!>"
     },
     {
       "id": "summary",

@@ -1,6 +1,6 @@
 {
   "title": "Professional Development and Career Growth",
-  "estimatedReadingTime": 15,
+  "estimatedReadingTime": 20,
   "learningObjectives": [
     "Master advanced business and career vocabulary",
     "Understand professional development strategies and career planning",
@@ -37,6 +37,18 @@
       "title": "Professional Conversations",
       "type": "examples",
       "content": "Example 1: CAREER GOALS - <My five-year plan involves transitioning to project management, leveraging technical expertise while developing leadership skills.>\n\nExample 2: NETWORKING - <I've been actively networking at conferences and engaging with thought leaders on LinkedIn.>\n\nExample 3: PERFORMANCE REVIEW - <This quarter, I exceeded targets by 25% and led a cross-functional initiative improving efficiency by 15%.>"
+    },
+    {
+      "id": "negotiation-conflict",
+      "title": "Negotiation and Conflict Resolution",
+      "type": "theory",
+      "content": "Effective professionals must navigate <negotiations> and resolve <conflicts> constructively. Key strategies include:\n\n<Principled negotiation> focuses on interests rather than positions. Instead of demanding a specific outcome, explore the underlying needs of all parties. <Active listening> demonstrates respect and helps identify common ground.\n\nConflict resolution approaches:\n• <Collaboration> - Working together to find a mutually beneficial solution\n• <Compromise> - Each party gives up something to reach agreement\n• <Mediation> - A neutral third party facilitates discussion\n• <De-escalation> - Reducing tension before addressing the core issue\n\nProfessional language for disagreement: <I see your point, however...>, <I understand your concern, but perhaps we could consider...>, <While I appreciate your perspective, the data suggests...>"
+    },
+    {
+      "id": "examples-2",
+      "title": "Professional Development Scenarios",
+      "type": "examples",
+      "content": "Example 1: SALARY NEGOTIATION - <Rather than simply requesting a higher salary, I presented a portfolio of my achievements and market research on comparable roles. My manager appreciated the data-driven approach and we reached a mutually satisfactory agreement.>\n\nExample 2: TEAM CONFLICT - <Two team members had fundamentally different approaches to the project. As team lead, I facilitated a meeting where each person explained their reasoning. We ultimately combined elements of both approaches, which produced a stronger result.>\n\nExample 3: PERFORMANCE REVIEW - <My supervisor provided constructive feedback about my presentation skills. Rather than becoming defensive, I asked for specific examples and created an action plan for improvement.>"
     },
     {
       "id": "summary",

@@ -1,6 +1,6 @@
 {
   "title": "Global Issues and Societal Challenges",
-  "estimatedReadingTime": 15,
+  "estimatedReadingTime": 20,
   "learningObjectives": [
     "Understand vocabulary related to global challenges and international affairs",
     "Learn to discuss complex societal issues with nuance and depth",
@@ -37,6 +37,18 @@
       "title": "Discussing Global Issues",
       "type": "examples",
       "content": "Example 1: ANALYZING CAUSES - <Economic inequality stems from inadequate education, discriminatory policies, and wealth concentration.>\n\nExample 2: PROPOSING SOLUTIONS - <Addressing the refugee crisis requires conflict resolution, burden-sharing, and investment in origin countries.>\n\nExample 3: NUANCED OPINION - <While globalization lifted millions from poverty, it exacerbated inequality within countries.>"
+    },
+    {
+      "id": "technology-ethics",
+      "title": "Technology, Ethics, and Digital Rights",
+      "type": "theory",
+      "content": "Technological advancement raises profound ethical questions that societies must address:\n\n<Artificial intelligence> presents both opportunities and risks. While AI can improve healthcare diagnostics and optimize resource allocation, concerns about <algorithmic bias>, <job displacement>, and <surveillance> are growing.\n\n<Data privacy> has become a fundamental rights issue. The tension between <national security> and <individual privacy> continues to generate debate. Regulations like the GDPR attempt to balance innovation with protection.\n\n<Digital divide> refers to the gap between those with access to technology and those without. This inequality affects education, employment, and civic participation. Bridging this divide requires investment in <infrastructure>, <digital literacy>, and <affordable access>.\n\nThe question of <content moderation> on social platforms highlights the tension between <free speech> and preventing <misinformation> and <hate speech>."
+    },
+    {
+      "id": "examples-2",
+      "title": "Debating Global Issues",
+      "type": "examples",
+      "content": "Example 1: CLIMATE POLICY - <While carbon taxes are economically efficient in theory, their implementation disproportionately affects lower-income households. Any effective climate policy must include provisions for social equity and a just transition for workers in fossil fuel industries.>\n\nExample 2: MIGRATION DEBATE - <The narrative around immigration often overlooks the significant economic contributions that migrants make to host countries. Studies consistently show that immigration has a net positive effect on GDP, though the benefits are not always evenly distributed.>\n\nExample 3: AI ETHICS - <When an autonomous vehicle must choose between two harmful outcomes, who bears responsibility? The programmer, the manufacturer, or the owner? These questions require new legal and ethical frameworks that our current systems are not equipped to handle.>"
     },
     {
       "id": "summary",

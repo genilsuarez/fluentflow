@@ -1,6 +1,6 @@
 {
   "title": "Idioms in Professional and Global Contexts",
-  "estimatedReadingTime": 12,
+  "estimatedReadingTime": 20,
   "learningObjectives": [
     "Learn idioms used in business, innovation, and global discussions",
     "Understand cultural context behind common idioms",
@@ -31,6 +31,24 @@
       "title": "Idioms in Professional Contexts",
       "type": "examples",
       "content": "Example 1: <The startup gained traction after its initiative for accountability went viral.>\n\nExample 2: <The disparity in wages is just the tip of the iceberg — systemic issues run much deeper.>\n\nExample 3: <The new policy is a game changer, but critics say it's a double-edged sword.>"
+    },
+    {
+      "id": "negotiation-idioms",
+      "title": "Idioms in Negotiation and Strategy",
+      "type": "theory",
+      "content": "Professional negotiations are rich with idiomatic expressions:\n\n• <Play hardball> - Negotiate aggressively, refuse to compromise\n• <Meet someone halfway> - Compromise, each side giving something\n• <The ball is in your court> - It's your turn to make a decision or take action\n• <Move the goalposts> - Change the rules or requirements unfairly\n• <A win-win situation> - An outcome that benefits everyone involved\n• <Put all your eggs in one basket> - Risk everything on a single plan\n• <Back to square one> - Return to the beginning after a failed attempt\n\nExample: <The client tried to move the goalposts after we'd already agreed on the scope. I suggested we meet halfway — we'd include one additional feature without changing the deadline. The ball is now in their court.>"
+    },
+    {
+      "id": "change-idioms",
+      "title": "Idioms About Change and Uncertainty",
+      "type": "theory",
+      "content": "In a rapidly changing world, these idioms describe transformation and uncertainty:\n\n• <Turn over a new leaf> - Make a fresh start, change behaviour for the better\n• <The tide is turning> - The situation is beginning to change\n• <Up in the air> - Uncertain, not yet decided\n• <At a crossroads> - At a point where an important decision must be made\n• <Weather the storm> - Survive a difficult period\n• <Light at the end of the tunnel> - Hope that a difficult situation is nearly over\n\nExample: <After the restructuring, the company's future was up in the air for months. But the new CEO helped us weather the storm, and now there's finally light at the end of the tunnel. The tide is turning in our favour.>"
+    },
+    {
+      "id": "examples-2",
+      "title": "Idioms in Professional Contexts",
+      "type": "examples",
+      "content": "Example 1: BOARD MEETING - <We can't put all our eggs in one basket with this single product line. If the market shifts, we'll be back to square one. We need to diversify.>\n\nExample 2: CAREER CHANGE - <I'm at a crossroads in my career. I could stay in finance or turn over a new leaf and pursue my passion for education. The decision is still up in the air.>\n\nExample 3: NEGOTIATION - <They're playing hardball on the price, but I think we can find a win-win situation if we offer extended payment terms. The ball is in their court now.>"
     },
     {
       "id": "summary",

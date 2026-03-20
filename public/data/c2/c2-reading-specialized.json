@@ -39,6 +39,18 @@
       "content": "Example 1: LEGAL ANALYSIS - <The appellate court's decision hinges on novel interpretation of legislative history, effectively narrowing precedential scope while purporting to distinguish rather than overrule.>\n\nExample 2: MEDICAL CASE - <Patient presents with acute dyspnea, orthopnea, and bilateral edema, consistent with decompensated heart failure, likely precipitated by medication non-compliance.>\n\nExample 3: FINANCIAL ANALYSIS - <The portfolio's Sharpe ratio deteriorated significantly. Rebalancing toward less correlated assets could mitigate downside exposure while preserving upside participation.>"
     },
     {
+      "id": "diplomatic-political",
+      "title": "Diplomatic Language and Political Discourse",
+      "type": "theory",
+      "content": "<Diplomatic language> represents perhaps the most carefully calibrated register in English, where every word carries weight and ambiguity is often intentional rather than accidental.\n\nKey features of diplomatic discourse:\n• <Constructive ambiguity> — deliberately vague language that allows multiple interpretations, enabling parties to agree on text while maintaining different positions\n• <Hedged commitments> — phrases like <shall endeavour to> or <will give due consideration to> that signal intention without binding obligation\n• <Face-saving language> — formulations that allow parties to change position without appearing to concede defeat\n\nPolitical discourse employs distinct rhetorical strategies:\n• <Framing> — presenting issues in ways that favour particular interpretations\n• <Dog-whistle politics> — language that carries one meaning for the general public and another for a specific audience\n• <Euphemism> — substituting mild expressions for harsh realities: <collateral damage> for civilian casualties, <downsizing> for mass layoffs\n• <Weasel words> — qualifiers that hollow out statements: <some people say>, <it has been suggested that>\n\nCritical analysis of political language requires identifying these strategies and evaluating the gap between rhetoric and substance."
+    },
+    {
+      "id": "examples-2",
+      "title": "Expert Discourse Across Domains",
+      "type": "examples",
+      "content": "Example 1: LEGAL PRECISION - <The defendant's liability is contingent upon establishing that a duty of care existed, that said duty was breached, and that the breach was the proximate cause of the plaintiff's demonstrable losses — a tripartite test that must be satisfied on the balance of probabilities.>\n\nExample 2: DIPLOMATIC COMMUNIQUÉ - <The parties acknowledged the complexity of the situation and reaffirmed their commitment to pursuing a comprehensive resolution through sustained dialogue, while recognizing that significant divergences remain on several substantive issues.>\n\nExample 3: SCIENTIFIC ABSTRACT - <Our findings demonstrate a statistically significant inverse correlation between ambient particulate matter concentration and pulmonary function indices, suggesting that chronic exposure to fine particulate pollution may constitute an independent risk factor for respiratory morbidity in urban populations.>"
+    },
+    {
       "id": "summary",
       "title": "Mastering Specialized Discourse",
       "type": "summary",

@@ -1,6 +1,6 @@
 {
   "title": "Figurative Language in Scholarly and Literary Discourse",
-  "estimatedReadingTime": 18,
+  "estimatedReadingTime": 20,
   "learningObjectives": [
     "Analyze sophisticated phrasal verbs in scholarly writing",
     "Understand literary and philosophical idioms at near-native level",
@@ -37,6 +37,18 @@
       "title": "The Rhetorical Power of Figurative Language",
       "type": "theory",
       "content": "At the C2 level, understanding why a writer chooses a phrasal verb or idiom is as important as understanding what it means:\n\n<Tease out> implies patience and delicacy — the writer is handling fragile ideas.\n<Push back against> implies intellectual courage — the writer is challenging authority.\n<Grapple with> implies honest struggle — the writer acknowledges difficulty.\n<Do away with> implies decisive action — the writer is making a bold claim.\n\nThese choices are never accidental. They signal the writer's stance, confidence, and relationship to the material."
+    },
+    {
+      "id": "cognitive-metaphor",
+      "title": "Cognitive Metaphor and Conceptual Frameworks",
+      "type": "theory",
+      "content": "At the C2 level, understanding figurative language requires engaging with <cognitive linguistics> and the theory of <conceptual metaphor>.\n\nLakoff and Johnson's seminal work demonstrated that metaphor is not merely a literary device but a fundamental cognitive mechanism. We don't just talk in metaphors — we <think> in them. The metaphor ARGUMENT IS WAR structures how we conceptualize disagreement: we <attack> positions, <defend> claims, <shoot down> arguments, and <win> debates. Alternative metaphors (ARGUMENT IS DANCE, ARGUMENT IS CONSTRUCTION) would fundamentally alter how we engage with disagreement.\n\n<Dead metaphors> — expressions whose figurative origins have been forgotten — reveal how deeply metaphorical thinking is embedded in language. We <grasp> concepts, <see> the point, <weigh> options, and <build> arguments without conscious awareness of the physical metaphors underlying these abstractions.\n\n<Catachresis> — the deliberate misuse or extension of metaphor — is a powerful literary and rhetorical device. Derrida argued that all language is ultimately catachrestic, since words never perfectly capture the concepts they represent.\n\nMastery at this level means not only using figurative language fluently but recognizing how it shapes thought itself."
+    },
+    {
+      "id": "examples-2",
+      "title": "Figurative Language at Mastery Level",
+      "type": "examples",
+      "content": "Example 1: ACADEMIC PROSE - <The author's argument, while superficially compelling, ultimately falls apart under scrutiny. She glosses over several inconvenient counterexamples and papers over the cracks in her theoretical framework with rhetorical flourish rather than evidential substance.>\n\nExample 2: LITERARY CRITICISM - <Woolf's prose doesn't merely describe consciousness — it enacts it. Her sentences ebb and flow, circle back on themselves, and branch into unexpected tributaries, mirroring the very stream of consciousness they seek to capture. Form and content become indistinguishable.>\n\nExample 3: PHILOSOPHICAL WRITING - <To speak of \"grasping\" a concept is already to invoke a bodily metaphor that privileges tactile engagement over, say, visual or auditory modes of understanding. The very language we use to discuss abstraction betrays our inescapable embodiment — we cannot think our way out of the body that thinks.>"
     },
     {
       "id": "summary",

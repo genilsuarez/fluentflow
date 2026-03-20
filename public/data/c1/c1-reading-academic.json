@@ -1,6 +1,6 @@
 {
   "title": "Academic Research and Scholarly Communication",
-  "estimatedReadingTime": 18,
+  "estimatedReadingTime": 20,
   "learningObjectives": [
     "Master advanced academic vocabulary and research terminology",
     "Understand the structure and conventions of scholarly discourse",
@@ -37,6 +37,18 @@
       "title": "Academic Discourse Examples",
       "type": "examples",
       "content": "Example 1: INTRODUCING RESEARCH - <This study employs mixed-methods to investigate correlation between socioeconomic factors and educational outcomes.>\n\nExample 2: PRESENTING FINDINGS - <The data suggest a statistically significant relationship (p less than 0.05), though causality cannot be established.>\n\nExample 3: CRITICAL ANALYSIS - <While Smith's framework offers insights, it arguably overlooks institutional factors, a limitation acknowledged by subsequent scholars.>"
+    },
+    {
+      "id": "peer-review-ethics",
+      "title": "Peer Review, Reproducibility, and Research Ethics",
+      "type": "theory",
+      "content": "The integrity of academic research depends on robust systems of quality control and ethical conduct.\n\n<Peer review> is the cornerstone of scholarly validation. Manuscripts undergo evaluation by experts who assess methodological rigour, originality, and significance. <Single-blind> review conceals reviewer identity; <double-blind> conceals both reviewer and author identities; <open review> makes the process transparent. Critics argue that peer review can be slow, biased, and resistant to genuinely innovative work.\n\nThe <reproducibility crisis> has shaken confidence in published findings, particularly in psychology and biomedical sciences. Studies suggest that a significant proportion of published results cannot be replicated. Contributing factors include <publication bias> (journals preferring positive results), <p-hacking> (manipulating statistical analyses), and insufficient <sample sizes>.\n\n<Research ethics> encompasses informed consent, data integrity, conflict of interest disclosure, and responsible authorship. <Institutional Review Boards> (IRBs) oversee research involving human subjects. <Predatory journals> that publish without genuine peer review pose a growing threat to scholarly credibility."
+    },
+    {
+      "id": "examples-2",
+      "title": "Scholarly Communication in Practice",
+      "type": "examples",
+      "content": "Example 1: LITERATURE REVIEW - <While the existing body of research broadly supports the hypothesis that bilingualism confers cognitive advantages, recent meta-analyses have called into question the magnitude and generalizability of these effects, suggesting that earlier studies may have been subject to publication bias.>\n\nExample 2: METHODOLOGY CRITIQUE - <The authors' reliance on self-reported data introduces potential response bias, and the cross-sectional design precludes causal inference. A longitudinal approach with objective measures would strengthen the validity of these findings.>\n\nExample 3: CONFERENCE PRESENTATION - <Our preliminary findings suggest a statistically significant correlation between sleep quality and academic performance, controlling for socioeconomic variables. However, we acknowledge several limitations and welcome feedback on our analytical framework.>"
     },
     {
       "id": "summary",

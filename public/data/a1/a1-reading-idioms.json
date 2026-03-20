@@ -1,6 +1,6 @@
 {
   "title": "Common Idioms in Daily Life",
-  "estimatedReadingTime": 6,
+  "estimatedReadingTime": 20,
   "learningObjectives": [
     "Understand what idioms are",
     "Learn basic idioms used in everyday conversations",
@@ -31,6 +31,24 @@
       "title": "More Idiom Examples",
       "type": "examples",
       "content": "Example 1: <Let's call it a day.> (= Let's stop working for today)\n\nExample 2: <She has a sweet tooth.> (= She loves sweet food)\n\nExample 3: <He's feeling blue.> (= He's feeling sad)"
+    },
+    {
+      "id": "weather-idioms",
+      "title": "Weather and Nature Idioms",
+      "type": "theory",
+      "content": "English has many idioms about weather and nature. They don't mean what they say literally:\n\n• <It's raining cats and dogs> - It's raining very heavily\n• <Under the weather> - Feeling sick or unwell\n• <Break the ice> - Start a conversation with someone new\n• <A storm in a teacup> - A big reaction to a small problem\n\nExample: <I can't go outside today. It's raining cats and dogs!>\n\nRemember: these are NOT about real cats, dogs, or storms. They describe situations using fun pictures in your mind."
+    },
+    {
+      "id": "food-idioms",
+      "title": "Food Idioms",
+      "type": "theory",
+      "content": "Food idioms are very common and easy to remember:\n\n• <A piece of cake> - Something very easy\n• <Spill the beans> - Tell a secret\n• <Cool as a cucumber> - Very calm, not nervous\n• <In a nutshell> - In a few words, briefly\n\nExample: <The test was a piece of cake! I finished in ten minutes.>\n\nThese idioms use food words but they are NOT about food. <A piece of cake> means easy, not a real cake!"
+    },
+    {
+      "id": "examples-2",
+      "title": "Idioms in Mini Dialogues",
+      "type": "examples",
+      "content": "Example 1: AT SCHOOL - <How was the exam?> <It was a piece of cake! Very easy.>\n\nExample 2: ABOUT A FRIEND - <Is Tom nervous about the presentation?> <No, he's cool as a cucumber. He never worries.>\n\nExample 3: TELLING NEWS - <Don't spill the beans about the surprise party!> <OK, I won't tell anyone.>\n\nExample 4: SUMMARIZING - <In a nutshell, the movie was boring but the popcorn was great.>"
     },
     {
       "id": "summary",

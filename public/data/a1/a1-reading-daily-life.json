@@ -1,6 +1,6 @@
 {
   "title": "Daily Life and Routines",
-  "estimatedReadingTime": 8,
+  "estimatedReadingTime": 20,
   "learningObjectives": [
     "Learn vocabulary for daily activities and routines",
     "Understand how to talk about time and schedules",
@@ -37,6 +37,18 @@
       "title": "Describing Your Routine",
       "type": "examples",
       "content": "Example 1: MORNING ROUTINE - <I wake up at 7 AM, take a shower, and have breakfast.>\n\nExample 2: WORK SCHEDULE - <I have lunch at 1 PM and work until 5 PM.>\n\nExample 3: EVENING ACTIVITIES - <I come home at 6 PM, cook dinner, and watch TV.>"
+    },
+    {
+      "id": "weekend-activities",
+      "title": "Weekend Activities",
+      "type": "theory",
+      "content": "Weekends are different from weekdays. People relax and do fun things:\n\n• Sleep in - Wake up late\n• Go shopping - Buy things at stores\n• Visit friends - Spend time with people you like\n• Cook a meal - Prepare food at home\n• Watch a movie - See a film at home or at the cinema\n• Go for a walk - Walk outside for exercise or fun\n\nExample: <On Saturdays, I usually sleep in and then go shopping. In the afternoon, I visit my friends or watch a movie.>"
+    },
+    {
+      "id": "examples-2",
+      "title": "Talking About Habits",
+      "type": "examples",
+      "content": "Example 1: FREQUENCY - <I always brush my teeth in the morning. I usually have coffee. I sometimes go for a run.>\n\nExample 2: ASKING ABOUT ROUTINES - <What time do you wake up?> <I wake up at 7. What about you?> <I wake up at 6:30 because I live far from work.>\n\nExample 3: WEEKEND PLANS - <What do you usually do on Sundays?> <I go to the park with my family. We have lunch together.>"
     },
     {
       "id": "summary",

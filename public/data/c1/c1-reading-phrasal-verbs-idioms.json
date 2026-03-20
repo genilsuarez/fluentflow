@@ -1,6 +1,6 @@
 {
   "title": "Phrasal Verbs and Idioms in Academic and Professional Discourse",
-  "estimatedReadingTime": 15,
+  "estimatedReadingTime": 20,
   "learningObjectives": [
     "Master sophisticated phrasal verbs in academic writing",
     "Understand idioms used in professional and intellectual discourse",
@@ -37,6 +37,18 @@
       "title": "Register and Appropriateness",
       "type": "theory",
       "content": "Understanding register is crucial at C1:\n\nFormal academic: <The findings call into question previous assumptions.> (appropriate)\nInformal equivalent: <The findings blow holes in what we thought.> (too casual for papers)\n\nFormal professional: <We need to raise the bar on quality.> (appropriate in meetings)\nToo casual: <We need to step up our game.> (acceptable but less professional)\n\nThe key is matching your language to your audience and purpose. In a board meeting, <move the needle> is perfect. In an academic paper, <yield significant results> is more appropriate."
+    },
+    {
+      "id": "nuance-collocations",
+      "title": "Nuance, Collocation, and Pragmatic Competence",
+      "type": "theory",
+      "content": "At the C1 level, mastery of phrasal verbs and idioms extends beyond knowing definitions to understanding <pragmatic competence> — using language appropriately in context.\n\n<Collocational patterns> determine which phrasal verbs sound natural in specific contexts. We <carry out> research but <conduct> an investigation. We <draw up> a plan but <put together> a proposal. These patterns are not governed by strict rules but by convention.\n\n<Hedging> with idiomatic expressions softens assertions in academic and professional discourse: <It could be argued that...>, <There's a case to be made for...>, <By and large, the evidence suggests...>\n\n<Register shifting> — moving between formal and informal language — is a hallmark of advanced proficiency. A skilled speaker might use <elucidate> in a lecture but <spell out> in a team meeting, conveying the same meaning with different levels of formality.\n\nUnderstanding <connotation> is equally important. <Stubborn> and <determined> describe similar behaviour but carry very different evaluative weight. Similarly, <thrifty> versus <stingy>, or <assertive> versus <aggressive>."
+    },
+    {
+      "id": "examples-2",
+      "title": "Advanced Idiomatic Usage",
+      "type": "examples",
+      "content": "Example 1: ACADEMIC HEDGING - <While the data broadly bears out the hypothesis, it would be premature to draw definitive conclusions. By and large, the findings point to a correlation, but further research is needed to tease out the causal mechanisms at play.>\n\nExample 2: REGISTER CONTRAST - In a board meeting: <We need to iron out the remaining contractual issues before we can sign off on the deal.> In an academic paper: <Several methodological inconsistencies must be resolved before the findings can be considered definitive.> (Same meaning, different register.)\n\nExample 3: DIPLOMATIC DISAGREEMENT - <I take your point about the timeline, and there's certainly a case to be made for moving quickly. That said, I'd argue that cutting corners at this stage could come back to haunt us down the line.>"
     },
     {
       "id": "summary",

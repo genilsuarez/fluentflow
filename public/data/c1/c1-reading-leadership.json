@@ -1,6 +1,6 @@
 {
   "title": "Leadership and Organizational Management",
-  "estimatedReadingTime": 18,
+  "estimatedReadingTime": 20,
   "learningObjectives": [
     "Master sophisticated leadership and management vocabulary",
     "Understand contemporary leadership theories and organizational behavior",
@@ -37,6 +37,18 @@
       "title": "Executive Communication Examples",
       "type": "examples",
       "content": "Example 1: ARTICULATING VISION - <Our strategic imperative is to transform customer experience through digital innovation, positioning us as the industry's preeminent provider.>\n\nExample 2: CHANGE MANAGEMENT - <This transformation necessitates not merely structural realignment but a fundamental mindset shift fostering psychological safety.>\n\nExample 3: PERFORMANCE DISCUSSION - <While financial metrics demonstrate robust growth, employee engagement scores reveal concerning trends requiring recalibration.>"
+    },
+    {
+      "id": "change-management",
+      "title": "Change Management and Organizational Resilience",
+      "type": "theory",
+      "content": "Leading organizational change requires understanding both the structural and human dimensions of transformation.\n\n<Change management> frameworks provide structured approaches. Kotter's eight-step model emphasizes creating <urgency>, building <coalitions>, and <institutionalizing> new approaches. Lewin's model describes <unfreezing> existing patterns, <changing> to new ones, and <refreezing> to stabilize.\n\nResistance to change is natural and should be anticipated rather than suppressed. Common sources include fear of the unknown, loss of status or competence, and <organizational inertia>. Effective leaders address resistance through transparent communication, meaningful participation, and demonstrating <quick wins>.\n\n<Organizational resilience> — the capacity to anticipate, prepare for, respond to, and adapt to disruption — has become a critical leadership priority. Resilient organizations cultivate <psychological safety>, encourage <adaptive capacity>, and maintain <strategic flexibility>. They view setbacks not as failures but as opportunities for learning and <iterative improvement>."
+    },
+    {
+      "id": "examples-2",
+      "title": "Leadership Communication",
+      "type": "examples",
+      "content": "Example 1: VISION STATEMENT - <Our transformation isn't merely about adopting new technology — it's about fundamentally reimagining how we create value for our stakeholders. I'm asking each of you to embrace this uncertainty as an opportunity rather than a threat.>\n\nExample 2: CRISIS LEADERSHIP - <During the supply chain disruption, our CEO communicated with remarkable transparency, acknowledging what the company didn't know while outlining concrete steps being taken. This candour actually strengthened employee trust during the most turbulent period.>\n\nExample 3: FEEDBACK CULTURE - <The most effective leaders I've observed don't merely tolerate dissent — they actively cultivate it. They create environments where challenging the status quo is not only permitted but expected, recognizing that intellectual friction produces better decisions.>"
     },
     {
       "id": "summary",

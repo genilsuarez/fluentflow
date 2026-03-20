@@ -1,6 +1,6 @@
 {
   "title": "Education Systems and Learning",
-  "estimatedReadingTime": 12,
+  "estimatedReadingTime": 20,
   "learningObjectives": [
     "Understand different education systems in English-speaking countries",
     "Learn vocabulary related to schools, universities, and academic life",
@@ -37,6 +37,18 @@
       "title": "Academic Conversations",
       "type": "examples",
       "content": "Example 1: DISCUSSING STUDIES - <I'm majoring in Computer Science at university. I'm in my second year.>\n\nExample 2: ASKING ABOUT COURSES - <What subjects are you taking this semester? How many credits is that?>\n\nExample 3: STUDY PLANNING - <I need to revise for my exams next week. Let's form a study group.>"
+    },
+    {
+      "id": "online-learning",
+      "title": "Online Learning and Digital Education",
+      "type": "theory",
+      "content": "The rise of digital technology has transformed education. <Online learning> platforms like Coursera, Khan Academy, and edX offer courses from top universities. <Blended learning> combines traditional classroom teaching with online activities.\n\nKey concepts:\n• <E-learning> - Learning through electronic media\n• <MOOC> (Massive Open Online Course) - Free online courses for large numbers of students\n• <Virtual classroom> - An online space where teachers and students interact in real time\n• <Self-paced learning> - Studying at your own speed\n\nAdvantages include flexibility and access to global resources. However, online learning requires strong <self-discipline> and <time management> skills. Students must be <motivated> to complete courses without the structure of a physical classroom."
+    },
+    {
+      "id": "examples-2",
+      "title": "Education Discussions",
+      "type": "examples",
+      "content": "Example 1: COMPARING SYSTEMS - <In Finland, children don't start school until age seven, and there's very little homework. Despite this, Finnish students consistently perform well in international assessments.>\n\nExample 2: STUDY ABROAD - <I'm considering doing a semester abroad in Canada. The application deadline is in March, and I need to provide my academic transcript and a letter of motivation.>\n\nExample 3: ONLINE VS TRADITIONAL - <While online courses offer flexibility, many students find that they miss the social interaction and immediate feedback that traditional classrooms provide.>"
     },
     {
       "id": "summary",

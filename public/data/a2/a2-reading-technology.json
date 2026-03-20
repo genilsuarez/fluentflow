@@ -1,6 +1,6 @@
 {
   "title": "Technology and Digital Communication",
-  "estimatedReadingTime": 10,
+  "estimatedReadingTime": 20,
   "learningObjectives": [
     "Learn vocabulary related to computers, smartphones, and the internet",
     "Understand how to talk about technology and digital devices",
@@ -37,6 +37,18 @@
       "title": "Technology Conversations",
       "type": "examples",
       "content": "Example 1: TECH PROBLEM - <My computer won't turn on. I think the battery is dead.>\n\nExample 2: ASKING FOR HELP - <Could you help me download this app? I'm not sure how.>\n\nExample 3: SHARING CONTACT - <What's your email address? I'll send you the document.>"
+    },
+    {
+      "id": "online-safety",
+      "title": "Online Safety and Privacy",
+      "type": "theory",
+      "content": "Staying safe online is very important. Here are key concepts:\n\n• <Password> - A secret word to access your accounts. Make it strong!\n• <Privacy settings> - Controls for who can see your information\n• <Phishing> - Fake emails or messages that try to steal your data\n• <Update> - Install new versions of apps to stay safe\n• <Back up> - Save copies of your important files\n\nSafety tips:\n• Don't share your password with anyone\n• Don't click on links from unknown people\n• Use different passwords for different accounts\n• Always <log out> of public computers"
+    },
+    {
+      "id": "examples-2",
+      "title": "Tech Support Conversations",
+      "type": "examples",
+      "content": "Example 1: WIFI PROBLEM - <My internet isn't working.> <Have you tried turning the router off and on again?> <Yes, but it's still not connecting.> <Let me check the settings.>\n\nExample 2: NEW PHONE - <How do I download an app?> <Open the App Store, search for the app, and tap Install.> <Thanks! That was easy.>\n\nExample 3: COMPUTER HELP - <My computer is very slow.> <You should close some programs and restart it.> <OK, I'll try that.>"
     },
     {
       "id": "summary",

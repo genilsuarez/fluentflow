@@ -1,6 +1,6 @@
 {
   "title": "Innovation and Entrepreneurship",
-  "estimatedReadingTime": 15,
+  "estimatedReadingTime": 20,
   "learningObjectives": [
     "Master vocabulary related to startups, innovation, and business development",
     "Understand the entrepreneurial ecosystem and startup lifecycle",
@@ -37,6 +37,18 @@
       "title": "Entrepreneurial Conversations",
       "type": "examples",
       "content": "Example 1: PITCHING IDEA - <We're disrupting education with AI-powered personalized learning. We've achieved product-market fit with 50,000 users.>\n\nExample 2: DISCUSSING FUNDING - <We're raising Series A of $5 million to scale sales and expand to Europe. Current runway is 18 months.>\n\nExample 3: ANALYZING METRICS - <Customer acquisition cost decreased 30% while lifetime value increased 50%, improving unit economics.>"
+    },
+    {
+      "id": "disruption-transformation",
+      "title": "Digital Disruption and Industry Transformation",
+      "type": "theory",
+      "content": "<Digital disruption> occurs when new technologies fundamentally alter how industries operate. Understanding this process is crucial for entrepreneurs and professionals alike.\n\nKey concepts:\n• <Disruptive innovation> - A product or service that initially serves a niche market but eventually displaces established competitors\n• <Platform economy> - Business models built on digital platforms that connect producers and consumers (Uber, Airbnb, Amazon)\n• <Network effects> - The phenomenon where a product becomes more valuable as more people use it\n• <Pivot> - A fundamental change in business strategy when the original approach isn't working\n\nIndustries being transformed:\n• <Fintech> is disrupting traditional banking through mobile payments and cryptocurrency\n• <Edtech> is reshaping education through personalized learning and AI tutoring\n• <Healthtech> is revolutionizing healthcare with telemedicine and wearable devices\n\nSuccessful entrepreneurs anticipate disruption rather than react to it."
+    },
+    {
+      "id": "examples-2",
+      "title": "Innovation Case Studies",
+      "type": "examples",
+      "content": "Example 1: STARTUP PITCH - <Our platform uses machine learning to match freelance professionals with projects based on skills, availability, and work style preferences. We've achieved a 40% higher satisfaction rate compared to traditional recruitment methods.>\n\nExample 2: PIVOT STORY - <We originally built a photo-sharing app for conferences, but user data showed people were using it primarily for everyday photos. We pivoted to become a general social media platform, which proved to be the right decision.>\n\nExample 3: MARKET ANALYSIS - <The subscription economy has grown by over 400% in the past decade. Consumers increasingly prefer access over ownership, which has implications for everything from software to transportation to entertainment.>"
     },
     {
       "id": "summary",

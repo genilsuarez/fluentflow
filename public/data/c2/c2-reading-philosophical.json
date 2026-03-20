@@ -39,6 +39,18 @@
       "content": "Example 1: EPISTEMOLOGICAL ARGUMENT - <The skeptic's challenge cannot be dismissed by appealing to common sense, for the reliability of our cognitive faculties is precisely what stands in question.>\n\nExample 2: ETHICAL REASONING - <While consequentialist frameworks possess intuitive appeal, they face the repugnant conclusion that any suffering could be justified if producing sufficient utility.>\n\nExample 3: METAPHYSICAL ANALYSIS - <The persistence of identity through change presents a profound puzzle. If all constituent parts are replaced, in what sense do I remain the same person?>"
     },
     {
+      "id": "aesthetics-existentialism",
+      "title": "Aesthetics, Existentialism, and Continental Philosophy",
+      "type": "theory",
+      "content": "<Aesthetics> investigates the nature of beauty, art, and taste. Central questions include whether beauty is objective or subjective, what distinguishes art from non-art, and how aesthetic experience relates to other forms of knowledge. Kant distinguished between the <beautiful> (universally pleasing) and the <sublime> (overwhelming, awe-inspiring). The <institutional theory of art> holds that something becomes art when the art world designates it as such.\n\n<Existentialism> emphasizes individual existence, freedom, and choice. Sartre's dictum that <existence precedes essence> means humans have no predetermined nature — we create ourselves through our choices. This radical freedom produces <anguish> (awareness of responsibility), <abandonment> (no divine guidance), and <despair> (uncertainty about outcomes). Heidegger's concept of <Dasein> (being-there) emphasizes our <thrownness> into a world we didn't choose and our orientation toward death as the horizon that gives life meaning.\n\n<Phenomenology>, founded by Husserl, examines the structures of conscious experience. Through <epoché> (bracketing assumptions), phenomenologists describe how objects appear to consciousness. Merleau-Ponty extended this to <embodied cognition>, arguing that perception is fundamentally shaped by our bodily engagement with the world."
+    },
+    {
+      "id": "examples-2",
+      "title": "Philosophical Discourse and Argumentation",
+      "type": "examples",
+      "content": "Example 1: AESTHETIC ARGUMENT - <The claim that Duchamp's \"Fountain\" — a mass-produced urinal — constitutes art precisely because it challenges our preconceptions about what art can be illustrates the paradox at the heart of institutional theories: if anything can be art by institutional fiat, the concept risks becoming vacuous.>\n\nExample 2: EXISTENTIAL ANALYSIS - <Sartre's insistence that we are \"condemned to be free\" is not merely a philosophical proposition but a phenomenological description of the human condition. Every attempt to deny our freedom — through appeals to nature, society, or circumstance — constitutes what Sartre terms \"bad faith,\" a self-deceptive flight from the burden of radical responsibility.>\n\nExample 3: EPISTEMOLOGICAL DEBATE - <The pragmatist rejoinder to the skeptic is not that we can prove the external world exists, but that the question itself presupposes a spectatorial model of knowledge that mischaracterizes our fundamental relationship with reality. We are not detached observers but engaged participants.>"
+    },
+    {
       "id": "summary",
       "title": "Philosophical Sophistication",
       "type": "summary",
