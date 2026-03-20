@@ -189,13 +189,6 @@
     "example_es": "Lávate las manos con <jabón>."
   },
   {
-    "front": "Towel",
-    "back": "Toalla",
-    "ipa": "/ˈtaʊəl/",
-    "example": "Use a <towel> to dry.",
-    "example_es": "Usa una <toalla> para secarte."
-  },
-  {
     "front": "Plate",
     "back": "Plato",
     "ipa": "/pleɪt/",
@@ -278,5 +271,12 @@
     "ipa": "/ˈlʌntʃbɒks/",
     "example": "Pack your <lunchbox> for school.",
     "example_es": ""
+  },
+  {
+    "front": "Tissue",
+    "back": "Pañuelo de papel",
+    "ipa": "/ˈtɪʃuː/",
+    "example": "Can you pass me a <tissue>? I need to blow my nose.",
+    "example_es": "¿Me pasas un <pañuelo>? Necesito sonarme la nariz."
   }
 ]

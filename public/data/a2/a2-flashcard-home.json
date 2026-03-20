@@ -252,13 +252,6 @@
     "example_es": ""
   },
   {
-    "front": "Fridge",
-    "back": "nevera / refrigerador",
-    "ipa": "/frɪdʒ/",
-    "example": "Put the milk in the <fridge>.",
-    "example_es": ""
-  },
-  {
     "front": "Washing machine",
     "back": "lavadora",
     "ipa": "/ˈwɒʃɪŋ məˈʃiːn/",
@@ -278,5 +271,12 @@
     "ipa": "/ˈstɛrkeɪs/",
     "example": "The <staircase> leads to the second floor.",
     "example_es": ""
+  },
+  {
+    "front": "Dishwasher",
+    "back": "lavavajillas",
+    "ipa": "/ˈdɪʃwɒʃər/",
+    "example": "We load the <dishwasher> after dinner every night.",
+    "example_es": "Cargamos el <lavavajillas> después de cenar cada noche."
   }
 ]

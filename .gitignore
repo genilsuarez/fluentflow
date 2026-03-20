@@ -8,6 +8,10 @@ screenshots/
 .kiro/
 bot/
 
+# Temporary scripts (AI-generated, not committed)
+scripts/tmp/*
+!scripts/tmp/.gitkeep
+
 # DevTools test artifacts (keep only reports)
 scripts/devtools/*.png
 scripts/devtools/*.jpg
