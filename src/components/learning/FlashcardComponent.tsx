@@ -21,6 +21,7 @@ interface FlashcardComponentProps {
 const FlashcardComponent: React.FC<FlashcardComponentProps> = ({ module }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
+  const [skipTransition, setSkipTransition] = useState(false);
   const [startTime] = useState(Date.now());
 
   const { updateUserScore } = useUserStore();
@@ -41,8 +42,17 @@ const FlashcardComponent: React.FC<FlashcardComponentProps> = ({ module }) => {
 
   const currentCard = processedFlashcards[currentIndex];
 
+  // Re-enable transition after skip
+  useEffect(() => {
+    if (skipTransition) {
+      const id = requestAnimationFrame(() => setSkipTransition(false));
+      return () => cancelAnimationFrame(id);
+    }
+  }, [skipTransition]);
+
   const handleNext = useCallback(() => {
     if (currentIndex < processedFlashcards.length - 1) {
+      if (isFlipped) setSkipTransition(true);
       setCurrentIndex(currentIndex + 1);
       setIsFlipped(false);
     } else {
@@ -64,6 +74,7 @@ const FlashcardComponent: React.FC<FlashcardComponentProps> = ({ module }) => {
     }
   }, [
     currentIndex,
+    isFlipped,
     processedFlashcards.length,
     startTime,
     addProgressEntry,
@@ -74,10 +85,11 @@ const FlashcardComponent: React.FC<FlashcardComponentProps> = ({ module }) => {
 
   const handlePrev = useCallback(() => {
     if (currentIndex > 0) {
+      if (isFlipped) setSkipTransition(true);
       setCurrentIndex(currentIndex - 1);
       setIsFlipped(false);
     }
-  }, [currentIndex]);
+  }, [currentIndex, isFlipped]);
 
   const handleFlip = useCallback(() => {
     setIsFlipped(!isFlipped);
@@ -145,7 +157,7 @@ const FlashcardComponent: React.FC<FlashcardComponentProps> = ({ module }) => {
       <div
         className={`flashcard-component__card ${
           isFlipped ? 'flashcard-component__card--flipped' : ''
-        }`}
+        } ${skipTransition ? 'flashcard-component__card--no-transition' : ''}`}
         onClick={handleFlip}
       >
         <div className="flashcard-component__card-inner">

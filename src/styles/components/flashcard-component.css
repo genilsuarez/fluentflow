@@ -55,6 +55,10 @@
   transform: rotateY(180deg);
 }
 
+.flashcard-component__card--no-transition .flashcard-component__card-inner {
+  transition: none;
+}
+
 .flashcard-component__card-front,
 .flashcard-component__card-back {
   position: absolute;
