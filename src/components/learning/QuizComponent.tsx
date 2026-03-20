@@ -24,6 +24,7 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [showResult, setShowResult] = useState(false);
   const [startTime] = useState(Date.now());
+  const optionsRef = useRef<HTMLDivElement>(null);
 
   const updateSessionScore = useAppStore(state => state.updateSessionScore);
   const { updateUserScore } = useUserStore();
@@ -32,6 +33,33 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
   // Compute processed questions once on mount — stored in a ref so that
   // re-renders triggered by score updates never re-shuffle the options.
   const processedQuestionsRef = useRef<ReturnType<typeof buildProcessedQuestions> | null>(null);
+
+  // Prevent length-based guessing by padding shorter distractors when the
+  // correct answer is noticeably longer than every other option.
+  const PAD_SUFFIXES = [
+    'in this context', 'in most cases', 'as commonly used', 'in general terms',
+    'by definition', 'in everyday use', 'as typically meant', 'in standard usage',
+    'as generally understood', 'in the usual sense', 'as widely accepted',
+    'in practical terms', 'in conventional terms', 'as commonly defined',
+    'in the standard sense', 'in the broadest sense',
+  ];
+  let padCursor = 0;
+
+  function balanceOptionLengths(options: string[], correctText: string): string[] {
+    const correctLen = correctText.length;
+    const maxDistractorLen = Math.max(
+      ...options.filter(o => o !== correctText).map(o => o.length),
+    );
+    // Only act when correct is clearly the longest (>3 chars gap)
+    if (correctLen - maxDistractorLen <= 3) return options;
+
+    return options.map(opt => {
+      if (opt === correctText || opt.length >= correctLen - 2) return opt;
+      if (/[.!?;:]$/.test(opt)) return opt; // skip punctuated sentences
+      const suffix = PAD_SUFFIXES[padCursor++ % PAD_SUFFIXES.length];
+      return `${opt} ${suffix}`;
+    });
+  }
 
   function buildProcessedQuestions(data: typeof module.data, shuffle: boolean) {
     if (!data) return [];
@@ -44,7 +72,7 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
           ? question.options[question.correct]
           : question.correct;
       const processedOptions = conditionalShuffle([...question.options], shuffle);
-      return { ...question, options: processedOptions, correct: correctText };
+      return { ...question, options: balanceOptionLengths(processedOptions, correctText), correct: correctText };
     });
   }
 
@@ -58,6 +86,16 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
   const { t } = useTranslation(language);
   const { showCorrectAnswer, showIncorrectAnswer, showModuleCompleted } = useToast();
   useLearningCleanup();
+
+  // Equalize option button heights to prevent length-based visual bias
+  useEffect(() => {
+    const container = optionsRef.current;
+    if (!container) return;
+    const buttons = container.querySelectorAll<HTMLButtonElement>('.quiz-component__option');
+    buttons.forEach(b => (b.style.minHeight = ''));
+    const maxH = Math.max(...Array.from(buttons).map(b => b.offsetHeight));
+    if (maxH > 0) buttons.forEach(b => (b.style.minHeight = `${maxH}px`));
+  }, [currentIndex]);
 
   const handleReturnToMenu = () => returnToMenu();
 
@@ -191,7 +229,7 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
         </h3>
 
         {/* Options */}
-        <div className="quiz-component__options">
+        <div ref={optionsRef} className="quiz-component__options">
           {(currentQuestion?.options || []).map((option, index) => {
             let buttonClass = 'quiz-component__option';
 
