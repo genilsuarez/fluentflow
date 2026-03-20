@@ -7,13 +7,6 @@
     "example_es": "Necesito limpiar mi habitación, es un desorden."
   },
   {
-    "front": "Do up",
-    "back": "Reformar / Decorar",
-    "ipa": "/duː ʌp/",
-    "example": "She's been <doing up> the house all day.",
-    "example_es": "Ha estado reformando la casa todo el día."
-  },
-  {
     "front": "Potter about/around",
     "back": "Vagar / Merodear",
     "ipa": "/ˈpɒtər əˈbaʊt/",
@@ -203,13 +196,6 @@
     "example_es": "Necesito <ir a hacer la compra> después del trabajo."
   },
   {
-    "front": "Cook dinner",
-    "back": "Cocinar la cena",
-    "ipa": "/kʊk ˈdɪnər/",
-    "example": "What are we cooking for <dinner> tonight?",
-    "example_es": "¿Qué vamos a <cocinar> para cenar esta noche?"
-  },
-  {
     "front": "Set the table",
     "back": "Poner la mesa",
     "ipa": "/set ðə ˈteɪbl/",
@@ -278,5 +264,19 @@
     "ipa": "/duː ðə ˈɡɑːrdnɪŋ/",
     "example": "My grandmother loves to <do the gardening> on weekends.",
     "example_es": "A mi abuela le encanta <hacer jardinería> los fines de semana."
+  },
+  {
+    "front": "Commuter",
+    "back": "viajero diario",
+    "ipa": "",
+    "example": "<Commuters> face long delays during rush hour.",
+    "example_es": ""
+  },
+  {
+    "front": "Household chores",
+    "back": "tareas del hogar",
+    "ipa": "",
+    "example": "Sharing <household chores> reduces stress.",
+    "example_es": ""
   }
 ]

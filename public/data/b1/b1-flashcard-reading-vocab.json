@@ -147,13 +147,6 @@
     "example_es": "Necesitamos fuentes de energía <sostenibles>."
   },
   {
-    "front": "Curriculum",
-    "back": "Plan de estudios",
-    "ipa": "/kəˈrɪkjələm/",
-    "example": "The school updated its <curriculum>.",
-    "example_es": "La escuela actualizó su <plan de estudios>."
-  },
-  {
     "front": "Biodiversity",
     "back": "Biodiversidad",
     "ipa": "/ˌbaɪoʊdaɪˈvɜːrsəti/",
@@ -173,13 +166,6 @@
     "ipa": "/diːˌfɒrɪˈsteɪʃən/",
     "example": "<Deforestation> destroys animal habitats.",
     "example_es": "La <deforestación> destruye hábitats animales."
-  },
-  {
-    "front": "Scholarship",
-    "back": "Beca",
-    "ipa": "/ˈskɒlərʃɪp/",
-    "example": "She won a <scholarship> to university.",
-    "example_es": "Ella ganó una <beca> para la universidad."
   },
   {
     "front": "Entrepreneur",
@@ -278,5 +264,19 @@
     "ipa": "/ˈempəθi/",
     "example": "<Empathy> helps us understand others.",
     "example_es": "La <empatía> nos ayuda a entender a otros."
+  },
+  {
+    "front": "Enrollment",
+    "back": "inscripción / matrícula",
+    "ipa": "",
+    "example": "<Enrollment> for the new semester starts Monday.",
+    "example_es": ""
+  },
+  {
+    "front": "Infrastructure",
+    "back": "infraestructura",
+    "ipa": "",
+    "example": "The city needs better <infrastructure>.",
+    "example_es": ""
   }
 ]

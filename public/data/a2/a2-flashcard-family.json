@@ -1,33 +1,5 @@
 [
   {
-    "front": "mother",
-    "back": "madre",
-    "ipa": "/ˈmʌðər/",
-    "example": "My <mother> is a teacher.",
-    "example_es": "Mi <madre> es profesora."
-  },
-  {
-    "front": "father",
-    "back": "padre",
-    "ipa": "/ˈfɑːðər/",
-    "example": "My <father> works in an office.",
-    "example_es": "Mi <padre> trabaja en una oficina."
-  },
-  {
-    "front": "sister",
-    "back": "hermana",
-    "ipa": "/ˈsɪstər/",
-    "example": "I have one <sister>.",
-    "example_es": "Tengo una <hermana>."
-  },
-  {
-    "front": "brother",
-    "back": "hermano",
-    "ipa": "/ˈbrʌðər/",
-    "example": "My <brother> is older than me.",
-    "example_es": "Mi <hermano> es mayor que yo."
-  },
-  {
     "front": "grandmother",
     "back": "abuela",
     "ipa": "/ˈɡrænmʌðər/",
@@ -110,20 +82,6 @@
     "ipa": "/ˈɡrænpɛrənts/",
     "example": "My <grandparents> live in the countryside.",
     "example_es": "Mis <abuelos> viven en el campo."
-  },
-  {
-    "front": "family",
-    "back": "familia",
-    "ipa": "/ˈfæməli/",
-    "example": "I love my <family>.",
-    "example_es": "Amo a mi <familia>."
-  },
-  {
-    "front": "baby",
-    "back": "bebé",
-    "ipa": "/ˈbeɪbi/",
-    "example": "The <baby> is sleeping.",
-    "example_es": "El <bebé> está durmiendo."
   },
   {
     "front": "teenager",
@@ -278,5 +236,47 @@
     "ipa": "/riˈjunjən/",
     "example": "We have a family <reunion> every summer.",
     "example_es": "Tenemos una <reunión familiar> cada verano."
+  },
+  {
+    "front": "Mother-in-law",
+    "back": "suegra",
+    "ipa": "",
+    "example": "My <mother-in-law> cooks delicious food.",
+    "example_es": ""
+  },
+  {
+    "front": "Father-in-law",
+    "back": "suegro",
+    "ipa": "",
+    "example": "My <father-in-law> loves fishing.",
+    "example_es": ""
+  },
+  {
+    "front": "Son-in-law",
+    "back": "yerno",
+    "ipa": "",
+    "example": "Their <son-in-law> is an engineer.",
+    "example_es": ""
+  },
+  {
+    "front": "Daughter-in-law",
+    "back": "nuera",
+    "ipa": "",
+    "example": "Their <daughter-in-law> is a teacher.",
+    "example_es": ""
+  },
+  {
+    "front": "Godfather",
+    "back": "padrino",
+    "ipa": "",
+    "example": "My <godfather> gave me a watch for my birthday.",
+    "example_es": ""
+  },
+  {
+    "front": "Godmother",
+    "back": "madrina",
+    "ipa": "",
+    "example": "My <godmother> lives in another city.",
+    "example_es": ""
   }
 ]

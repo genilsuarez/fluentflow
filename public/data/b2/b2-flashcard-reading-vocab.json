@@ -133,20 +133,6 @@
     "example_es": "Ella aboga por la igualdad de derechos."
   },
   {
-    "front": "Sustainable",
-    "back": "Sostenible",
-    "ipa": "/səˈsteɪnəbəl/",
-    "example": "We need <sustainable> solutions for energy.",
-    "example_es": "Necesitamos soluciones sostenibles para la energía."
-  },
-  {
-    "front": "Paradigm",
-    "back": "Paradigma",
-    "ipa": "/ˈpærədaɪm/",
-    "example": "A <paradigm> shift changed the industry.",
-    "example_es": "Un cambio de <paradigma> cambió la industria."
-  },
-  {
     "front": "Pragmatic",
     "back": "Pragmático",
     "ipa": "/præɡˈmætɪk/",
@@ -189,25 +175,11 @@
     "example_es": "El plan fue sometido a intenso <escrutinio>."
   },
   {
-    "front": "Disparity",
-    "back": "Disparidad",
-    "ipa": "/dɪˈspærəti/",
-    "example": "There is a <disparity> in wages.",
-    "example_es": "Hay una <disparidad> en los salarios."
-  },
-  {
     "front": "Prevalent",
     "back": "Prevalente / Predominante",
     "ipa": "/ˈprevələnt/",
     "example": "The disease is <prevalent> in tropical areas.",
     "example_es": "La enfermedad es <prevalente> en áreas tropicales."
-  },
-  {
-    "front": "Mitigate",
-    "back": "Mitigar",
-    "ipa": "/ˈmɪtɪɡeɪt/",
-    "example": "We must <mitigate> the effects of climate change.",
-    "example_es": "Debemos <mitigar> los efectos del cambio climático."
   },
   {
     "front": "Exacerbate",
@@ -278,5 +250,33 @@
     "ipa": "/ɪˈluːsɪv/",
     "example": "Success remained <elusive>.",
     "example_es": "El éxito siguió siendo <elusivo>."
+  },
+  {
+    "front": "Disruptive",
+    "back": "disruptivo",
+    "ipa": "",
+    "example": "<Disruptive> technology changes entire industries.",
+    "example_es": ""
+  },
+  {
+    "front": "Sustainable",
+    "back": "sostenible",
+    "ipa": "",
+    "example": "We need <sustainable> energy sources.",
+    "example_es": ""
+  },
+  {
+    "front": "Trajectory",
+    "back": "trayectoria",
+    "ipa": "",
+    "example": "The company is on an upward <trajectory>.",
+    "example_es": ""
+  },
+  {
+    "front": "Catalyst",
+    "back": "catalizador",
+    "ipa": "",
+    "example": "The protest was a <catalyst> for change.",
+    "example_es": ""
   }
 ]

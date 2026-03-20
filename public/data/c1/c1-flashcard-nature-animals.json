@@ -7,13 +7,6 @@
     "example_es": "El <ecosistema> de la selva tropical es increíblemente diverso."
   },
   {
-    "front": "Biodiversity",
-    "back": "Biodiversidad",
-    "ipa": "/ˌbaɪoʊdaɪˈvɜːrsəti/",
-    "example": "Protecting <biodiversity> is crucial for our planet.",
-    "example_es": "Proteger la <biodiversidad> es crucial para nuestro planeta."
-  },
-  {
     "front": "Habitat",
     "back": "Hábitat",
     "ipa": "/ˈhæbɪtæt/",
@@ -154,13 +147,6 @@
     "example_es": "Las abejas juegan un papel crucial en la <polinización>."
   },
   {
-    "front": "Deforestation",
-    "back": "Deforestación",
-    "ipa": "/diːˌfɔːrɪˈsteɪʃn/",
-    "example": "<Deforestation> contributes to climate change.",
-    "example_es": "La <deforestación> contribuye al cambio climático."
-  },
-  {
     "front": "Reforestation",
     "back": "Reforestación",
     "ipa": "/riːˌfɔːrɪˈsteɪʃn/",
@@ -266,17 +252,31 @@
     "example_es": "Los canguros son nativos de Australia."
   },
   {
-    "front": "Sustainable",
-    "back": "Sostenible",
-    "ipa": "/səˈsteɪnəbl/",
-    "example": "We need <sustainable> practices to protect nature.",
-    "example_es": "Necesitamos prácticas sostenibles para proteger la naturaleza."
+    "front": "Biodiversity",
+    "back": "biodiversidad",
+    "ipa": "",
+    "example": "Protecting <biodiversity> is essential for the planet.",
+    "example_es": ""
   },
   {
-    "front": "Climate change",
-    "back": "Cambio climático",
-    "ipa": "/ˈklaɪmət tʃeɪndʒ/",
-    "example": "<Climate change> affects wildlife worldwide.",
-    "example_es": "El <cambio climático> afecta la vida silvestre en todo el mundo."
+    "front": "Deforestation",
+    "back": "deforestación",
+    "ipa": "",
+    "example": "<Deforestation> threatens many species.",
+    "example_es": ""
+  },
+  {
+    "front": "Migratory",
+    "back": "migratorio",
+    "ipa": "",
+    "example": "<Migratory> birds travel thousands of miles each year.",
+    "example_es": ""
+  },
+  {
+    "front": "Vertebrate",
+    "back": "vertebrado",
+    "ipa": "",
+    "example": "Fish, birds, and mammals are all <vertebrates>.",
+    "example_es": ""
   }
 ]

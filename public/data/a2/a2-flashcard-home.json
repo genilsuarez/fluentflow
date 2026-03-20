@@ -1,26 +1,5 @@
 [
   {
-    "front": "kitchen",
-    "back": "cocina",
-    "ipa": "/ˈkɪtʃən/",
-    "example": "I cook dinner in the <kitchen>.",
-    "example_es": "Cocino la cena en la <cocina>."
-  },
-  {
-    "front": "bedroom",
-    "back": "dormitorio",
-    "ipa": "/ˈbɛdrum/",
-    "example": "My <bedroom> is upstairs.",
-    "example_es": "Mi <dormitorio> está arriba."
-  },
-  {
-    "front": "bathroom",
-    "back": "baño",
-    "ipa": "/ˈbæθrum/",
-    "example": "The <bathroom> is next to the kitchen.",
-    "example_es": "El <baño> está al lado de la cocina."
-  },
-  {
     "front": "living room",
     "back": "sala de estar",
     "ipa": "/ˈlɪvɪŋ rum/",
@@ -40,13 +19,6 @@
     "ipa": "/ɡəˈrɑʒ/",
     "example": "The car is in the <garage>.",
     "example_es": "El coche está en el <garaje>."
-  },
-  {
-    "front": "garden",
-    "back": "jardín",
-    "ipa": "/ˈɡɑrdən/",
-    "example": "We have flowers in our <garden>.",
-    "example_es": "Tenemos flores en nuestro <jardín>."
   },
   {
     "front": "basement",
@@ -70,27 +42,6 @@
     "example_es": "Me gusta sentarme en el <balcón>."
   },
   {
-    "front": "stairs",
-    "back": "escaleras",
-    "ipa": "/stɛrz/",
-    "example": "Be careful on the <stairs>.",
-    "example_es": "Ten cuidado en las <escaleras>."
-  },
-  {
-    "front": "door",
-    "back": "puerta",
-    "ipa": "/dɔr/",
-    "example": "Please close the <door>.",
-    "example_es": "Por favor cierra la <puerta>."
-  },
-  {
-    "front": "window",
-    "back": "ventana",
-    "ipa": "/ˈwɪndoʊ/",
-    "example": "Open the <window> for fresh air.",
-    "example_es": "Abre la <ventana> para aire fresco."
-  },
-  {
     "front": "roof",
     "back": "techo",
     "ipa": "/ruf/",
@@ -103,13 +54,6 @@
     "ipa": "/wɔl/",
     "example": "The <wall> is painted blue.",
     "example_es": "La <pared> está pintada de azul."
-  },
-  {
-    "front": "floor",
-    "back": "suelo/piso",
-    "ipa": "/flɔr/",
-    "example": "The <floor> is made of wood.",
-    "example_es": "El suelo es de madera."
   },
   {
     "front": "ceiling",
@@ -131,27 +75,6 @@
     "ipa": "/ˈsoʊfə/",
     "example": "The <sofa> is very comfortable.",
     "example_es": "El <sofá> es muy cómodo."
-  },
-  {
-    "front": "chair",
-    "back": "silla",
-    "ipa": "/tʃɛr/",
-    "example": "Please sit on this <chair>.",
-    "example_es": "Por favor siéntate en esta <silla>."
-  },
-  {
-    "front": "table",
-    "back": "mesa",
-    "ipa": "/ˈteɪbəl/",
-    "example": "The <table> is in the dining room.",
-    "example_es": "La <mesa> está en el comedor."
-  },
-  {
-    "front": "bed",
-    "back": "cama",
-    "ipa": "/bɛd/",
-    "example": "I sleep in my <bed>.",
-    "example_es": "Duermo en mi <cama>."
   },
   {
     "front": "closet",
@@ -201,20 +124,6 @@
     "ipa": "/ˈbæθˌtʌb/",
     "example": "The children play in the <bathtub>.",
     "example_es": "Los niños juegan en la <bañera>."
-  },
-  {
-    "front": "mirror",
-    "back": "espejo",
-    "ipa": "/ˈmɪrər/",
-    "example": "I look at myself in the <mirror>.",
-    "example_es": "Me miro en el <espejo>."
-  },
-  {
-    "front": "lamp",
-    "back": "lámpara",
-    "ipa": "/læmp/",
-    "example": "Turn on the <lamp>, please.",
-    "example_es": "Enciende la <lámpara>, por favor."
   },
   {
     "front": "curtains",
@@ -278,5 +187,96 @@
     "ipa": "/ki/",
     "example": "I lost my house <key>.",
     "example_es": "Perdí la <llave> de mi casa."
+  },
+  {
+    "front": "Fence",
+    "back": "cerca / valla",
+    "ipa": "",
+    "example": "The <fence> around the garden is wooden.",
+    "example_es": ""
+  },
+  {
+    "front": "Hallway",
+    "back": "pasillo",
+    "ipa": "",
+    "example": "The <hallway> leads to the bedrooms.",
+    "example_es": ""
+  },
+  {
+    "front": "Fireplace",
+    "back": "chimenea",
+    "ipa": "",
+    "example": "We sit by the <fireplace> in winter.",
+    "example_es": ""
+  },
+  {
+    "front": "Curtain",
+    "back": "cortina",
+    "ipa": "",
+    "example": "Close the <curtains>, please.",
+    "example_es": ""
+  },
+  {
+    "front": "Rug",
+    "back": "alfombra",
+    "ipa": "",
+    "example": "There is a <rug> in the living room.",
+    "example_es": ""
+  },
+  {
+    "front": "Drawer",
+    "back": "cajón",
+    "ipa": "",
+    "example": "The keys are in the <drawer>.",
+    "example_es": ""
+  },
+  {
+    "front": "Wardrobe",
+    "back": "armario / ropero",
+    "ipa": "",
+    "example": "My clothes are in the <wardrobe>.",
+    "example_es": ""
+  },
+  {
+    "front": "Pillow",
+    "back": "almohada",
+    "ipa": "",
+    "example": "I need a soft <pillow> to sleep well.",
+    "example_es": ""
+  },
+  {
+    "front": "Blanket",
+    "back": "manta / cobija",
+    "ipa": "",
+    "example": "The <blanket> keeps me warm at night.",
+    "example_es": ""
+  },
+  {
+    "front": "Fridge",
+    "back": "nevera / refrigerador",
+    "ipa": "",
+    "example": "Put the milk in the <fridge>.",
+    "example_es": ""
+  },
+  {
+    "front": "Washing machine",
+    "back": "lavadora",
+    "ipa": "",
+    "example": "The <washing machine> is in the laundry room.",
+    "example_es": ""
+  },
+  {
+    "front": "Doorbell",
+    "back": "timbre",
+    "ipa": "",
+    "example": "Ring the <doorbell> when you arrive.",
+    "example_es": ""
+  },
+  {
+    "front": "Staircase",
+    "back": "escalera",
+    "ipa": "",
+    "example": "The <staircase> leads to the second floor.",
+    "example_es": ""
   }
 ]

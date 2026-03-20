@@ -1,24 +1,10 @@
 [
   {
-    "front": "Time flies",
-    "back": "El tiempo vuela",
-    "ipa": "/taɪm flaɪz/",
-    "example": "<Time flies> when you're having fun.",
-    "example_es": "<El tiempo vuela> cuando te estás divirtiendo."
-  },
-  {
     "front": "In the nick of time",
     "back": "Justo a tiempo",
     "ipa": "/ɪn ðə nɪk əv taɪm/",
     "example": "We arrived <in the nick of time> to catch the train.",
     "example_es": "Llegamos <justo a tiempo> para tomar el tren."
-  },
-  {
-    "front": "Better late than never",
-    "back": "Más vale tarde que nunca",
-    "ipa": "/ˈbetər leɪt ðæn ˈnevər/",
-    "example": "You finally finished it? Well, <better late than never>.",
-    "example_es": "¿Finalmente lo terminaste? Bueno, <más vale tarde que nunca>."
   },
   {
     "front": "Against the clock",
@@ -56,25 +42,11 @@
     "example_es": "No pierdas mi tiempo - ¡<el tiempo es oro>!"
   },
   {
-    "front": "Once in a blue moon",
-    "back": "Muy raramente",
-    "ipa": "/wʌns ɪn ə bluː muːn/",
-    "example": "I only see him <once in a blue moon>.",
-    "example_es": "Solo lo veo <muy raramente>."
-  },
-  {
     "front": "At the eleventh hour",
     "back": "En el último momento",
     "ipa": "/æt ði ɪˈlevnθ aʊər/",
     "example": "They reached an agreement <at the eleventh hour>.",
     "example_es": "Llegaron a un acuerdo <en el último momento>."
-  },
-  {
-    "front": "In the long run",
-    "back": "A la larga",
-    "ipa": "/ɪn ðə lɔːŋ rʌn/",
-    "example": "Investing in education pays off <in the long run>.",
-    "example_es": "Invertir en educación vale la pena <a la larga>."
   },
   {
     "front": "For the time being",
@@ -117,13 +89,6 @@
     "ipa": "/ɪn noʊ taɪm/",
     "example": "Don't worry, we'll be there <in no time>.",
     "example_es": "No te preocupes, estaremos allí <en un abrir y cerrar de ojos>."
-  },
-  {
-    "front": "Take your time",
-    "back": "Tómate tu tiempo",
-    "ipa": "/teɪk jɔːr taɪm/",
-    "example": "There's no rush - <take your time>.",
-    "example_es": "No hay prisa - <tómate tu tiempo>."
   },
   {
     "front": "Run out of time",
@@ -196,25 +161,11 @@
     "example_es": "Necesitamos actuar rápido - <el tiempo es esencial>."
   },
   {
-    "front": "Call it a day",
-    "back": "Dar por terminado el día",
-    "ipa": "/kɔːl ɪt ə deɪ/",
-    "example": "It's getting late, let's <call it a day>.",
-    "example_es": "Se está haciendo tarde, demos por terminado el día."
-  },
-  {
     "front": "The crack of dawn",
     "back": "Al amanecer",
     "ipa": "/ðə kræk əv dɔːn/",
     "example": "We left at <the crack of dawn> to avoid traffic.",
     "example_es": "Salimos <al amanecer> para evitar el tráfico."
-  },
-  {
-    "front": "Around the clock",
-    "back": "Las 24 horas / Sin parar",
-    "ipa": "/əˈraʊnd ðə klɒk/",
-    "example": "The hospital operates <around the clock>.",
-    "example_es": "El hospital opera <las 24 horas>."
   },
   {
     "front": "In due time",
@@ -224,32 +175,11 @@
     "example_es": "Entenderás <a su debido tiempo>."
   },
   {
-    "front": "A matter of time",
-    "back": "Cuestión de tiempo",
-    "ipa": "/ə ˈmætər əv taɪm/",
-    "example": "It's only <a matter of time> before they find out.",
-    "example_es": "Es solo <cuestión de tiempo> antes de que se enteren."
-  },
-  {
     "front": "Time after time",
     "back": "Una y otra vez",
     "ipa": "/taɪm ˈæftər taɪm/",
     "example": "She makes the same mistake <time after time>.",
     "example_es": "Ella comete el mismo error <una y otra vez>."
-  },
-  {
-    "front": "Pressed for time",
-    "back": "Con poco tiempo / Apurado",
-    "ipa": "/prest fɔːr taɪm/",
-    "example": "I'm <pressed for time>, let's be quick.",
-    "example_es": "Estoy <apurado de tiempo>, seamos rápidos."
-  },
-  {
-    "front": "Stand the test of time",
-    "back": "Resistir el paso del tiempo",
-    "ipa": "/stænd ðə test əv taɪm/",
-    "example": "Great art <stands the test of time>.",
-    "example_es": "El gran arte <resiste el paso del tiempo>."
   },
   {
     "front": "Ahead of time",
@@ -278,5 +208,75 @@
     "ipa": "/tɜːrn bæk ðə klɒk/",
     "example": "I wish I could <turn back the clock>.",
     "example_es": "Ojalá pudiera <retroceder en el tiempo>."
+  },
+  {
+    "front": "From time to time",
+    "back": "de vez en cuando",
+    "ipa": "",
+    "example": "I visit my grandparents <from time to time>.",
+    "example_es": ""
+  },
+  {
+    "front": "Race against time",
+    "back": "carrera contra el tiempo",
+    "ipa": "",
+    "example": "It was a <race against time> to finish the project.",
+    "example_es": ""
+  },
+  {
+    "front": "Time flies",
+    "back": "el tiempo vuela",
+    "ipa": "",
+    "example": "<Time flies> when you are having fun.",
+    "example_es": ""
+  },
+  {
+    "front": "Mark time",
+    "back": "esperar sin avanzar",
+    "ipa": "",
+    "example": "We're just <marking time> until the boss decides.",
+    "example_es": ""
+  },
+  {
+    "front": "Have the time of your life",
+    "back": "pasarla increíble",
+    "ipa": "",
+    "example": "We <had the time of our lives> at the concert.",
+    "example_es": ""
+  },
+  {
+    "front": "Better late than never",
+    "back": "más vale tarde que nunca",
+    "ipa": "",
+    "example": "He finally apologized — <better late than never>.",
+    "example_es": ""
+  },
+  {
+    "front": "Once in a blue moon",
+    "back": "muy rara vez",
+    "ipa": "",
+    "example": "He visits us <once in a blue moon>.",
+    "example_es": ""
+  },
+  {
+    "front": "At the crack of dawn",
+    "back": "al amanecer",
+    "ipa": "",
+    "example": "We left <at the crack of dawn>.",
+    "example_es": ""
+  },
+  {
+    "front": "Call it a day",
+    "back": "dar por terminado el día",
+    "ipa": "",
+    "example": "Let's <call it a day> and go home.",
+    "example_es": ""
+  },
+  {
+    "front": "Just in time",
+    "back": "justo a tiempo",
+    "ipa": "",
+    "example": "The delivery arrived <just in time> for the party.",
+    "example_es": ""
   }
 ]

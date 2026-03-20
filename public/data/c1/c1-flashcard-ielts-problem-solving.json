@@ -252,13 +252,6 @@
     "example_es": "Necesito <solucionar problemas> con la conexión de red."
   },
   {
-    "front": "Come up with",
-    "back": "Idear / Ocurrirse",
-    "ipa": "/kʌm ʌp wɪð/",
-    "example": "She came up <with> a brilliant idea.",
-    "example_es": "Se le ocurrió una idea brillante."
-  },
-  {
     "front": "Weigh up",
     "back": "Sopesar / Evaluar",
     "ipa": "/weɪ ʌp/",
@@ -266,17 +259,24 @@
     "example_es": "Necesitamos sopesar los pros y los contras antes de decidir."
   },
   {
-    "front": "Troubleshoot",
-    "back": "Solucionar problemas / Diagnosticar",
-    "ipa": "/ˈtrʌbəlʃuːt/",
-    "example": "We need to <troubleshoot> the system.",
-    "example_es": "Necesitamos <diagnosticar> el sistema."
-  },
-  {
     "front": "Workaround",
     "back": "Solución alternativa",
     "ipa": "/ˈwɜːrkəraʊnd/",
     "example": "We found a <workaround> for the bug.",
     "example_es": "Encontramos una <solución alternativa> para el error."
+  },
+  {
+    "front": "Mitigate",
+    "back": "mitigar / atenuar",
+    "ipa": "",
+    "example": "We must <mitigate> the risks of climate change.",
+    "example_es": ""
+  },
+  {
+    "front": "Alleviate",
+    "back": "aliviar",
+    "ipa": "",
+    "example": "The new policy aims to <alleviate> poverty.",
+    "example_es": ""
   }
 ]

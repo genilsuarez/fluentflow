@@ -96,14 +96,6 @@
     "category": "Emotions"
   },
   {
-    "front": "Blow off steam",
-    "back": "Desahogarse",
-    "ipa": "/bloʊ ɒf stiːm/",
-    "example": "I like to go for a run to <blow off steam>.",
-    "example_es": "Me gusta salir a correr para desahogarme.",
-    "category": "Emotions"
-  },
-  {
     "front": "Bury your head in the sand",
     "back": "Esconder la cabeza bajo tierra",
     "ipa": "/ˈberi jɔːr hed ɪn ðə sænd/",
@@ -125,14 +117,6 @@
     "ipa": "/daʊn ɪn ðə dʌmps/",
     "example": "She's been <down in the dumps> ever since her cat died.",
     "example_es": "Ha estado deprimida desde que murió su gato.",
-    "category": "Emotions"
-  },
-  {
-    "front": "Get cold feet",
-    "back": "Echarse para atrás / Acobardarse",
-    "ipa": "/ɡet koʊld fiːt/",
-    "example": "He got <cold> feet before the wedding.",
-    "example_es": "Se acobardó antes de la boda.",
     "category": "Emotions"
   },
   {
@@ -328,27 +312,11 @@
     "category": "Success"
   },
   {
-    "front": "Hit the nail on the head",
-    "back": "Dar en el clavo",
-    "ipa": "/hɪt ðə neɪl ɒn ðə hed/",
-    "example": "She <hit the nail on the head>.",
-    "example_es": "Dio en el clavo.",
-    "category": "Success"
-  },
-  {
     "front": "Not rocket science",
     "back": "No es ciencia espacial / No es tan difícil",
     "ipa": "/nɒt ˈrɒkɪt ˈsaɪəns/",
     "example": "It's <not rocket science>.",
     "example_es": "No es ciencia espacial.",
-    "category": "Success"
-  },
-  {
-    "front": "Bite off more than you can chew",
-    "back": "Querer abarcar demasiado",
-    "ipa": "/baɪt ɒf mɔːr ðæn juː kæn tʃuː/",
-    "example": "He bit off <more> than he could chew.",
-    "example_es": "Quiso <abarcar> demasiado.",
     "category": "Success"
   },
   {
@@ -544,14 +512,6 @@
     "category": "Success"
   },
   {
-    "front": "Make ends meet",
-    "back": "Llegar a fin de mes",
-    "ipa": "/meɪk endz miːt/",
-    "example": "It's hard to <make ends meet> with a low salary.",
-    "example_es": "Es difícil <llegar a fin de mes> con un salario bajo.",
-    "category": "Success"
-  },
-  {
     "front": "Pull strings",
     "back": "Mover hilos",
     "ipa": "/pʊl strɪŋz/",
@@ -581,14 +541,6 @@
     "ipa": "/stænd ɒn jɔːr oʊn tuː fiːt/",
     "example": "It's time for him to <stand> on his own two feet.",
     "example_es": "Es hora de que se valga por sí <mismo>.",
-    "category": "Success"
-  },
-  {
-    "front": "Take off",
-    "back": "Despegar (negocio)",
-    "ipa": "/teɪk ɒf/",
-    "example": "The business really <took> off after the advertising campaign.",
-    "example_es": "El negocio realmente despegó después de la campaña publicitaria.",
     "category": "Success"
   },
   {
@@ -648,43 +600,11 @@
     "category": "Time"
   },
   {
-    "front": "Kill two birds with one stone",
-    "back": "Matar dos pájaros de un tiro",
-    "ipa": "/kɪl tuː bɜːrdz wɪð wʌn stoʊn/",
-    "example": "<Kill two birds with one stone>.",
-    "example_es": "<Matar dos pájaros de un tiro>.",
-    "category": "Time"
-  },
-  {
-    "front": "The early bird catches the worm",
-    "back": "Al que madruga, Dios le ayuda",
-    "ipa": "/ði ˈɜːrli bɜːrd ˈkætʃɪz ðə wɜːrm/",
-    "example": "<The early bird catches the worm>.",
-    "example_es": "<Al que madruga, Dios le ayuda>.",
-    "category": "Time"
-  },
-  {
     "front": "A stitch in time saves nine",
     "back": "Más vale prevenir que curar",
     "ipa": "/ə stɪtʃ ɪn taɪm seɪvz naɪn/",
     "example": "<A stitch in time saves nine>.",
     "example_es": "<Más vale prevenir que curar>.",
-    "category": "Time"
-  },
-  {
-    "front": "Burn the midnight oil",
-    "back": "Trabajar hasta altas horas de la noche",
-    "ipa": "/bɜːrn ðə ˈmɪdnaɪt ɔɪl/",
-    "example": "<Burn the midnight oil>.",
-    "example_es": "<Trabajar hasta altas horas de la noche>.",
-    "category": "Time"
-  },
-  {
-    "front": "Turn back the clock",
-    "back": "Volver atrás en el tiempo",
-    "ipa": "/tɜːrn bæk ðə klɒk/",
-    "example": "<Turn back the clock>.",
-    "example_es": "<Volver atrás en el tiempo>.",
     "category": "Time"
   },
   {
@@ -709,14 +629,6 @@
     "ipa": "/əˈhed ɒv ɪts taɪm/",
     "example": "<Ahead of its time>.",
     "example_es": "<Avanzado a su tiempo>.",
-    "category": "Time"
-  },
-  {
-    "front": "From time to time",
-    "back": "De vez en cuando",
-    "ipa": "/frɒm taɪm tuː taɪm/",
-    "example": "<From time to time>.",
-    "example_es": "<De vez en cuando>.",
     "category": "Time"
   },
   {
@@ -789,22 +701,6 @@
     "ipa": "/ə bɜːrd ɪn ðə hænd ɪz wɜːrθ tuː ɪn ðə bʊʃ/",
     "example": "<A bird in the hand is worth two in the bush>.",
     "example_es": "<Más vale pájaro en mano que ciento volando>.",
-    "category": "Nature"
-  },
-  {
-    "front": "Let the cat out of the bag",
-    "back": "Revelar un secreto / Irse de la lengua",
-    "ipa": "/let ðə kæt aʊt ɒv ðə bæɡ/",
-    "example": "<Let the cat out of the bag>.",
-    "example_es": "Revelar un secreto.",
-    "category": "Nature"
-  },
-  {
-    "front": "Every cloud has a silver lining",
-    "back": "No hay mal que por bien no venga",
-    "ipa": "/ˈevri klaʊd hæz ə ˈsɪlvər ˈlaɪnɪŋ/",
-    "example": "<Every cloud has a silver lining>.",
-    "example_es": "<No hay mal que por bien no venga>.",
     "category": "Nature"
   },
   {

@@ -288,14 +288,6 @@
     "category": "Technology"
   },
   {
-    "front": "Algorithm",
-    "back": "Algoritmo",
-    "ipa": "/ˈælɡərɪðəm/",
-    "example": "Search engines use a complex <algorithm> to rank pages.",
-    "example_es": "Los motores de búsqueda utilizan un <algoritmo> complejo para clasificar las páginas.",
-    "category": "Technology"
-  },
-  {
     "front": "Automation",
     "back": "Automatización",
     "ipa": "/ˌɔːtəˈmeɪʃn/",
@@ -349,22 +341,6 @@
     "ipa": "/ˈnetwɜːrk/",
     "example": "The office <network> was down for an hour.",
     "example_es": "La <red> de la oficina estuvo caída durante una hora.",
-    "category": "Technology"
-  },
-  {
-    "front": "Upload",
-    "back": "Subir / Cargar",
-    "ipa": "/ˌʌpˈloʊd/",
-    "example": "I need to <upload> these files to the server.",
-    "example_es": "Necesito subir estos archivos al servidor.",
-    "category": "Technology"
-  },
-  {
-    "front": "Download",
-    "back": "Descargar",
-    "ipa": "/ˈdaʊnloʊd/",
-    "example": "You can <download> the document from our website.",
-    "example_es": "Puedes <descargar> el documento desde nuestro sitio web.",
     "category": "Technology"
   },
   {
@@ -744,14 +720,6 @@
     "category": "Clothing"
   },
   {
-    "front": "Get dressed",
-    "back": "Vestirse",
-    "ipa": "/ɡet drest/",
-    "example": "I need to <get dressed> for work.",
-    "example_es": "Necesito vestirme para el trabajo.",
-    "category": "Clothing"
-  },
-  {
     "front": "Get undressed",
     "back": "Desvestirse",
     "ipa": "/ɡet ʌnˈdrest/",
@@ -781,14 +749,6 @@
     "ipa": "/leɪs ʌp/",
     "example": "<Lace up> your boots before you go hiking.",
     "example_es": "Átate las botas antes de ir de excursión.",
-    "category": "Clothing"
-  },
-  {
-    "front": "Match",
-    "back": "Hacer juego / Combinar",
-    "ipa": "/mætʃ/",
-    "example": "Her shoes <match> her bag perfectly.",
-    "example_es": "Sus zapatos combinan perfectamente con su bolso.",
     "category": "Clothing"
   },
   {
@@ -901,14 +861,6 @@
     "ipa": "/ˈsʌbsɪkwənt/",
     "example": "<Subsequent> studies confirmed the initial findings.",
     "example_es": "Estudios posteriores confirmaron los hallazgos iniciales.",
-    "category": "General"
-  },
-  {
-    "front": "Prevalent",
-    "back": "Predominante / Frecuente",
-    "ipa": "/ˈprevələnt/",
-    "example": "Cyberbullying is becoming increasingly <prevalent>.",
-    "example_es": "El ciberacoso se está volviendo cada vez más frecuente.",
     "category": "General"
   },
   {

@@ -133,13 +133,6 @@
     "example_es": "Uso <guantes> cuando hace frío afuera."
   },
   {
-    "front": "Hat",
-    "back": "Sombrero",
-    "ipa": "/hæt/",
-    "example": "He wore a <hat> to protect himself from the sun.",
-    "example_es": "Él llevaba un <sombrero> para protegerse del sol."
-  },
-  {
     "front": "Cap",
     "back": "Gorra",
     "ipa": "/kæp/",
@@ -224,13 +217,6 @@
     "example_es": "Ella lleva sus cosas esenciales en un bolso pequeño."
   },
   {
-    "front": "Backpack",
-    "back": "Mochila",
-    "ipa": "/ˈbækpæk/",
-    "example": "Students often carry <backpacks> to school.",
-    "example_es": "Los estudiantes suelen llevar mochilas a la escuela."
-  },
-  {
     "front": "Wallet",
     "back": "Cartera",
     "ipa": "/ˈwɑːlɪt/",
@@ -278,5 +264,19 @@
     "ipa": "/dɪˈzaɪnər/",
     "example": "She bought a <designer> handbag.",
     "example_es": "Ella compró un bolso <de diseñador>."
+  },
+  {
+    "front": "Cardigan",
+    "back": "cárdigan / chaqueta de punto",
+    "ipa": "",
+    "example": "She wore a cozy <cardigan> over her dress.",
+    "example_es": ""
+  },
+  {
+    "front": "Blazer",
+    "back": "blazer / americana",
+    "ipa": "",
+    "example": "He put on a <blazer> for the meeting.",
+    "example_es": ""
   }
 ]

@@ -7,13 +7,6 @@
     "example_es": "Los <ingresos> de la empresa aumentaron un 20% el año pasado."
   },
   {
-    "front": "Entrepreneur",
-    "back": "Emprendedor",
-    "ipa": "/ˌɒntrəprəˈnɜːr/",
-    "example": "She is a successful <entrepreneur> who started her own business.",
-    "example_es": "Ella es una emprendedora exitosa que comenzó su propio negocio."
-  },
-  {
     "front": "Negotiation",
     "back": "Negociación",
     "ipa": "/nɪˌɡoʊʃiˈeɪʃn/",
@@ -54,13 +47,6 @@
     "ipa": "/ɪnˈvestmənt/",
     "example": "This property is a good long-term <investment>.",
     "example_es": "Esta propiedad es una buena <inversión> a largo plazo."
-  },
-  {
-    "front": "Stakeholder",
-    "back": "Parte interesada",
-    "ipa": "/ˈsteɪkhoʊldər/",
-    "example": "We need to consider all the <stakeholders> in this decision.",
-    "example_es": "Necesitamos considerar a todas las partes interesadas en esta decisión."
   },
   {
     "front": "Supply chain",
@@ -210,13 +196,6 @@
     "example_es": "La <industria> automotriz está experimentando grandes cambios."
   },
   {
-    "front": "Innovation",
-    "back": "Innovación",
-    "ipa": "/ˌɪnəˈveɪʃn/",
-    "example": "<Innovation> is key to staying competitive.",
-    "example_es": "La <innovación> es clave para mantenerse competitivo."
-  },
-  {
     "front": "Management",
     "back": "Gestión / Dirección",
     "ipa": "/ˈmænɪdʒmənt/",
@@ -278,5 +257,26 @@
     "ipa": "/ˈwɜːrkfɔːrs/",
     "example": "The company is expanding its <workforce>.",
     "example_es": "La empresa está expandiendo su <mano de obra>."
+  },
+  {
+    "front": "Procurement",
+    "back": "adquisición / compras",
+    "ipa": "",
+    "example": "The <procurement> department handles supplier contracts.",
+    "example_es": ""
+  },
+  {
+    "front": "Turnover",
+    "back": "facturación / rotación",
+    "ipa": "",
+    "example": "The company has a high employee <turnover> rate.",
+    "example_es": ""
+  },
+  {
+    "front": "Stakeholder",
+    "back": "parte interesada",
+    "ipa": "",
+    "example": "All <stakeholders> were consulted before the merger.",
+    "example_es": ""
   }
 ]

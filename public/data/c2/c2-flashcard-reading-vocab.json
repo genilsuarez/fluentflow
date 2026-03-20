@@ -112,20 +112,6 @@
     "example_es": "La <dialéctica> de Hegel involucra tesis, antítesis y síntesis."
   },
   {
-    "front": "Hermeneutics",
-    "back": "Hermenéutica",
-    "ipa": "/ˌhɜːrməˈnjuːtɪks/",
-    "example": "<Hermeneutics> is the theory of text interpretation.",
-    "example_es": "La <hermenéutica> es la teoría de la interpretación de textos."
-  },
-  {
-    "front": "Phenomenology",
-    "back": "Fenomenología",
-    "ipa": "/fɪˌnɒmɪˈnɒlədʒi/",
-    "example": "<Phenomenology> studies the structures of conscious experience.",
-    "example_es": "La <fenomenología> estudia las estructuras de la experiencia consciente."
-  },
-  {
     "front": "Epistemic",
     "back": "Epistémico",
     "ipa": "/ˌepɪˈstemɪk/",
@@ -140,13 +126,6 @@
     "example_es": "El <solipsismo> sostiene que solo la propia mente es segura."
   },
   {
-    "front": "Tautology",
-    "back": "Tautología",
-    "ipa": "/tɔːˈtɒlədʒi/",
-    "example": "The statement is a <tautology> — true by definition.",
-    "example_es": "La afirmación es una <tautología> — verdadera por definición."
-  },
-  {
     "front": "Axiom",
     "back": "Axioma",
     "ipa": "/ˈæksiəm/",
@@ -154,25 +133,11 @@
     "example_es": "Este <axioma> sustenta toda la teoría."
   },
   {
-    "front": "Paradigm",
-    "back": "Paradigma",
-    "ipa": "/ˈpærədaɪm/",
-    "example": "Kuhn described how a <paradigm> shift transforms science.",
-    "example_es": "Kuhn describió cómo un cambio de <paradigma> transforma la ciencia."
-  },
-  {
     "front": "Praxis",
     "back": "Praxis (práctica informada por teoría)",
     "ipa": "/ˈpræksɪs/",
     "example": "Effective teaching requires both theory and <praxis>.",
     "example_es": "La enseñanza efectiva requiere tanto teoría como <praxis>."
-  },
-  {
-    "front": "Hegemony",
-    "back": "Hegemonía",
-    "ipa": "/hɪˈdʒeməni/",
-    "example": "Gramsci analyzed cultural <hegemony> in modern societies.",
-    "example_es": "Gramsci analizó la <hegemonía> cultural en las sociedades modernas."
   },
   {
     "front": "Reification",
@@ -231,13 +196,6 @@
     "example_es": "La película contiene un <anacronismo> deliberado."
   },
   {
-    "front": "Verisimilitude",
-    "back": "Verosimilitud",
-    "ipa": "/ˌverɪsɪˈmɪlɪtjuːd/",
-    "example": "The novel achieves remarkable <verisimilitude>.",
-    "example_es": "La novela logra una notable <verosimilitud>."
-  },
-  {
     "front": "Didactic",
     "back": "Didáctico",
     "ipa": "/daɪˈdæktɪk/",
@@ -278,5 +236,47 @@
     "ipa": "/ˌeskəˈtɒlədʒi/",
     "example": "The text explores themes of <eschatology> and renewal.",
     "example_es": "El texto explora temas de <escatología> y renovación."
+  },
+  {
+    "front": "Zeitgeist",
+    "back": "espíritu de la época",
+    "ipa": "",
+    "example": "The novel captures the <zeitgeist> of the 1920s.",
+    "example_es": ""
+  },
+  {
+    "front": "Hubris",
+    "back": "arrogancia desmedida",
+    "ipa": "",
+    "example": "His <hubris> led to his downfall.",
+    "example_es": ""
+  },
+  {
+    "front": "Laconic",
+    "back": "lacónico / conciso",
+    "ipa": "",
+    "example": "His <laconic> reply surprised everyone.",
+    "example_es": ""
+  },
+  {
+    "front": "Obfuscate",
+    "back": "ofuscar / confundir",
+    "ipa": "",
+    "example": "The politician tried to <obfuscate> the issue.",
+    "example_es": ""
+  },
+  {
+    "front": "Perspicacious",
+    "back": "perspicaz",
+    "ipa": "",
+    "example": "A <perspicacious> reader will notice the subtle irony.",
+    "example_es": ""
+  },
+  {
+    "front": "Recalcitrant",
+    "back": "recalcitrante / rebelde",
+    "ipa": "",
+    "example": "The <recalcitrant> student refused to follow rules.",
+    "example_es": ""
   }
 ]

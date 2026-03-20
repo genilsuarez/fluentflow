@@ -49,13 +49,6 @@
     "example_es": "Tuvimos que hacer cola en la <aduana>."
   },
   {
-    "front": "passport",
-    "back": "pasaporte",
-    "ipa": "/ˈpæspɔːt/",
-    "example": "Your <passport> must be valid for six months.",
-    "example_es": "Tu <pasaporte> debe ser válido por seis meses."
-  },
-  {
     "front": "visa",
     "back": "Visa / Visado",
     "ipa": "/ˈviːzə/",
@@ -273,10 +266,17 @@
     "example_es": "El <seguro de viaje> es esencial para viajes internacionales."
   },
   {
-    "front": "Souvenir",
-    "back": "Recuerdo / Suvenir",
-    "ipa": "/ˌsuːvəˈnɪər/",
-    "example": "I bought a <souvenir> from the trip.",
-    "example_es": "Compré un <recuerdo> del viaje."
+    "front": "Landmark",
+    "back": "punto de referencia / monumento",
+    "ipa": "",
+    "example": "The Eiffel Tower is a famous <landmark>.",
+    "example_es": ""
+  },
+  {
+    "front": "Layover",
+    "back": "escala / parada",
+    "ipa": "",
+    "example": "We had a 3-hour <layover> in Madrid.",
+    "example_es": ""
   }
 ]

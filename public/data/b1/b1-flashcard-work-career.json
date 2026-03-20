@@ -14,13 +14,6 @@
     "example_es": "Mi colega me ayudó a terminar el informe."
   },
   {
-    "front": "deadline",
-    "back": "fecha límite",
-    "ipa": "/ˈdedlaɪn/",
-    "example": "The <deadline> for the project is next Friday.",
-    "example_es": "La <fecha límite> del proyecto es el próximo viernes."
-  },
-  {
     "front": "interview",
     "back": "entrevista",
     "ipa": "/ˈɪntəvjuː/",
@@ -96,13 +89,6 @@
     "ipa": "/rɪˈtaɪər/",
     "example": "My father plans to <retire> at 65.",
     "example_es": "Mi padre planea <jubilarse> a los 65."
-  },
-  {
-    "front": "commute",
-    "back": "desplazarse al trabajo",
-    "ipa": "/kəˈmjuːt/",
-    "example": "I <commute> by train every day.",
-    "example_es": "Me desplazo en tren todos los días."
   },
   {
     "front": "meeting",
@@ -278,5 +264,19 @@
     "ipa": "/rɪˈməʊt wɜːrk/",
     "example": "Many companies now offer <remote work> options.",
     "example_es": "Muchas empresas ahora ofrecen opciones de trabajo remoto."
+  },
+  {
+    "front": "Internship",
+    "back": "pasantía / prácticas",
+    "ipa": "",
+    "example": "She did an <internship> at a law firm.",
+    "example_es": ""
+  },
+  {
+    "front": "Networking",
+    "back": "crear contactos profesionales",
+    "ipa": "",
+    "example": "<Networking> events help you meet people in your industry.",
+    "example_es": ""
   }
 ]

@@ -140,13 +140,6 @@
     "example_es": "Abrí una cuenta de ahorros en el banco."
   },
   {
-    "front": "relationship",
-    "back": "relación",
-    "ipa": "/rɪˈleɪʃənʃɪp/",
-    "example": "They have a very close <relationship>.",
-    "example_es": "Tienen una <relación> muy cercana."
-  },
-  {
     "front": "trust",
     "back": "confianza / confiar",
     "ipa": "/trʌst/",
@@ -173,13 +166,6 @@
     "ipa": "/səˈpɔːrt/",
     "example": "My family always <supports> my decisions.",
     "example_es": "Mi familia siempre apoya mis decisiones."
-  },
-  {
-    "front": "get along with",
-    "back": "llevarse bien con",
-    "ipa": "/ɡet əˈlɒŋ wɪð/",
-    "example": "I get <along> well with my neighbours.",
-    "example_es": "Me llevo <bien> con mis vecinos."
   },
   {
     "front": "break up",
@@ -278,5 +264,19 @@
     "ipa": "/əʊ/",
     "example": "I <owe> my friend fifty pounds.",
     "example_es": "Le debo a mi amigo cincuenta libras."
+  },
+  {
+    "front": "Installment",
+    "back": "cuota / plazo",
+    "ipa": "",
+    "example": "He pays the car in monthly <installments>.",
+    "example_es": ""
+  },
+  {
+    "front": "Overdraft",
+    "back": "sobregiro",
+    "ipa": "",
+    "example": "She was charged a fee for the <overdraft>.",
+    "example_es": ""
   }
 ]

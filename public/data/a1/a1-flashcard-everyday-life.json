@@ -266,17 +266,17 @@
     "example_es": "¿Qué hay de <cena> esta noche?"
   },
   {
-    "front": "Homework",
-    "back": "Tarea",
-    "ipa": "/ˈhoʊmwɜːrk/",
-    "example": "I do my <homework> after school.",
-    "example_es": "Hago mi <tarea> después de la escuela."
-  },
-  {
     "front": "Weekend",
     "back": "Fin de semana",
     "ipa": "/ˌwiːkˈend/",
     "example": "I rest on the <weekend>.",
     "example_es": "Descanso el <fin de semana>."
+  },
+  {
+    "front": "Pillow",
+    "back": "almohada",
+    "ipa": "",
+    "example": "I need a soft <pillow> to sleep well.",
+    "example_es": ""
   }
 ]

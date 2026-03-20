@@ -105,13 +105,6 @@
     "example_es": "El estudio se basa en evidencia empírica."
   },
   {
-    "front": "Nuance",
-    "back": "Matiz",
-    "ipa": "/ˈnjuːɑːns/",
-    "example": "The argument lacks <nuance>.",
-    "example_es": "El argumento carece de matices."
-  },
-  {
     "front": "Corroborate",
     "back": "Corroborar",
     "ipa": "/kəˈrɒbəreɪt/",
@@ -140,13 +133,6 @@
     "example_es": "Los smartphones se han vuelto omnipresentes."
   },
   {
-    "front": "Ubiquitous",
-    "back": "Ubicuo / Omnipresente",
-    "ipa": "/juːˈbɪkwɪtəs/",
-    "example": "Smartphones have become <ubiquitous>.",
-    "example_es": "Los smartphones se han vuelto <ubicuos>."
-  },
-  {
     "front": "Dichotomy",
     "back": "Dicotomía",
     "ipa": "/daɪˈkɒtəmi/",
@@ -173,13 +159,6 @@
     "ipa": "/ˌræmɪfɪˈkeɪʃən/",
     "example": "Consider the <ramifications> of this decision.",
     "example_es": "Considera las <ramificaciones> de esta decisión."
-  },
-  {
-    "front": "Proliferation",
-    "back": "Proliferación",
-    "ipa": "/prəˌlɪfəˈreɪʃən/",
-    "example": "The <proliferation> of fake news is alarming.",
-    "example_es": "La <proliferación> de noticias falsas es alarmante."
   },
   {
     "front": "Commensurate",
@@ -222,13 +201,6 @@
     "ipa": "/əˈmiːliəreɪt/",
     "example": "Measures to <ameliorate> living conditions.",
     "example_es": "Medidas para <mejorar> las condiciones de vida."
-  },
-  {
-    "front": "Corroborate",
-    "back": "Corroborar",
-    "ipa": "/kəˈrɒbəreɪt/",
-    "example": "Evidence to <corroborate> the theory.",
-    "example_es": "Evidencia para <corroborar> la teoría."
   },
   {
     "front": "Disseminate",
@@ -278,5 +250,33 @@
     "ipa": "/vaɪˈkeəriəs/",
     "example": "She lived <vicariously> through her children.",
     "example_es": "Ella vivía <vicariamente> a través de sus hijos."
+  },
+  {
+    "front": "Pragmatism",
+    "back": "pragmatismo",
+    "ipa": "",
+    "example": "<Pragmatism> values practical results over theory.",
+    "example_es": ""
+  },
+  {
+    "front": "Antithesis",
+    "back": "antítesis",
+    "ipa": "",
+    "example": "His behavior is the <antithesis> of professionalism.",
+    "example_es": ""
+  },
+  {
+    "front": "Extrapolate",
+    "back": "extrapolar",
+    "ipa": "",
+    "example": "We can <extrapolate> future trends from this data.",
+    "example_es": ""
+  },
+  {
+    "front": "Proliferate",
+    "back": "proliferar",
+    "ipa": "",
+    "example": "Fake news sites continue to <proliferate> online.",
+    "example_es": ""
   }
 ]

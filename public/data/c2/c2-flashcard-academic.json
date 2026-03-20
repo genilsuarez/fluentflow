@@ -7,34 +7,6 @@
     "example_es": "Reconoció la importancia de la investigación."
   },
   {
-    "front": "Allocate",
-    "back": "Asignar",
-    "ipa": "/ˈæləkeɪt/",
-    "example": "Resources were <allocated> to the most critical projects.",
-    "example_es": "Los recursos se asignaron a los proyectos más críticos."
-  },
-  {
-    "front": "Apparent",
-    "back": "Aparente / Evidente",
-    "ipa": "/əˈpærənt/",
-    "example": "It was <apparent> that the results were significant.",
-    "example_es": "Era evidente que los resultados eran significativos."
-  },
-  {
-    "front": "Assess",
-    "back": "Evaluar",
-    "ipa": "/əˈses/",
-    "example": "The committee will <assess> the impact of the changes.",
-    "example_es": "El comité <evaluar>á el impacto de los cambios."
-  },
-  {
-    "front": "Bias",
-    "back": "Sesgo",
-    "ipa": "/ˈbaɪəs/",
-    "example": "The study showed a clear <bias> towards certain groups.",
-    "example_es": "El estudio mostró un claro <sesgo> hacia ciertos grupos."
-  },
-  {
     "front": "Cite",
     "back": "Citar",
     "ipa": "/saɪt/",
@@ -47,13 +19,6 @@
     "ipa": "/ˌkɒmprɪˈhend/",
     "example": "It is difficult to <comprehend> the complexity of the issue.",
     "example_es": "Es difícil <comprender> la complejidad del problema."
-  },
-  {
-    "front": "Context",
-    "back": "Contexto",
-    "ipa": "/ˈkɒntekst/",
-    "example": "Understanding the historical <context> is crucial.",
-    "example_es": "Comprender el <contexto> histórico es crucial."
   },
   {
     "front": "Contradict",
@@ -77,13 +42,6 @@
     "example_es": "Fue difícil <discernir> la verdad de las mentiras."
   },
   {
-    "front": "Disseminate",
-    "back": "Diseminar / Difundir",
-    "ipa": "/dɪˈsemɪneɪt/",
-    "example": "The organization aims to <disseminate> knowledge.",
-    "example_es": "La organización tiene como objetivo difundir el conocimiento."
-  },
-  {
     "front": "Enhance",
     "back": "Mejorar",
     "ipa": "/ɪnˈhɑːns/",
@@ -103,13 +61,6 @@
     "ipa": "/ɪˈroʊd/",
     "example": "Trust in institutions can easily <erode>.",
     "example_es": "La confianza en las instituciones puede erosionarse fácilmente."
-  },
-  {
-    "front": "Exacerbate",
-    "back": "Exacerbar / Empeorar",
-    "ipa": "/ɪɡˈzæsərbeɪt/",
-    "example": "Lack of sleep can <exacerbate> stress.",
-    "example_es": "La falta de sueño puede exacerbar el estrés."
   },
   {
     "front": "Examine",
@@ -196,25 +147,11 @@
     "example_es": "El problema reside en la falta de financiación."
   },
   {
-    "front": "Resolve",
-    "back": "Resolver",
-    "ipa": "/rɪˈzɒlv/",
-    "example": "We need to <resolve> this issue quickly.",
-    "example_es": "Necesitamos <resolver> este problema rápidamente."
-  },
-  {
     "front": "Retain",
     "back": "Retener",
     "ipa": "/rɪˈteɪn/",
     "example": "The company managed to <retain> its best employees.",
     "example_es": "La empresa logró <retener> a sus mejores empleados."
-  },
-  {
-    "front": "Scrutinize",
-    "back": "Escudriñar / Examinar",
-    "ipa": "/ˈskruːtɪnaɪz/",
-    "example": "The committee will <scrutinize> the financial records.",
-    "example_es": "El comité escudriñará los registros financieros."
   },
   {
     "front": "Signify",
@@ -278,5 +215,68 @@
     "ipa": "/ˌweərˈbaɪ/",
     "example": "They established a system <whereby> students can access resources online.",
     "example_es": "Establecieron un sistema <por medio del cual> los estudiantes pueden acceder a recursos en línea."
+  },
+  {
+    "front": "Hermeneutics",
+    "back": "hermenéutica",
+    "ipa": "",
+    "example": "<Hermeneutics> is the theory of text interpretation.",
+    "example_es": ""
+  },
+  {
+    "front": "Phenomenology",
+    "back": "fenomenología",
+    "ipa": "",
+    "example": "<Phenomenology> studies structures of conscious experience.",
+    "example_es": ""
+  },
+  {
+    "front": "Semiotics",
+    "back": "semiótica",
+    "ipa": "",
+    "example": "<Semiotics> analyzes signs and symbols in communication.",
+    "example_es": ""
+  },
+  {
+    "front": "Taxonomy",
+    "back": "taxonomía",
+    "ipa": "",
+    "example": "Biological <taxonomy> classifies living organisms.",
+    "example_es": ""
+  },
+  {
+    "front": "Syllogism",
+    "back": "silogismo",
+    "ipa": "",
+    "example": "A <syllogism> is a form of deductive reasoning.",
+    "example_es": ""
+  },
+  {
+    "front": "Reductionism",
+    "back": "reduccionismo",
+    "ipa": "",
+    "example": "<Reductionism> explains complex phenomena through simpler parts.",
+    "example_es": ""
+  },
+  {
+    "front": "Epistemology",
+    "back": "epistemología",
+    "ipa": "",
+    "example": "<Epistemology> studies the nature of knowledge.",
+    "example_es": ""
+  },
+  {
+    "front": "Empiricism",
+    "back": "empirismo",
+    "ipa": "",
+    "example": "<Empiricism> emphasizes evidence from sensory experience.",
+    "example_es": ""
+  },
+  {
+    "front": "Teleology",
+    "back": "teleología",
+    "ipa": "",
+    "example": "<Teleology> explains phenomena by their purpose or end goal.",
+    "example_es": ""
   }
 ]

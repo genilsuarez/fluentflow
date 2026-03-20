@@ -28,13 +28,6 @@
     "example_es": "Me sentí <aliviado> cuando escuché las buenas noticias."
   },
   {
-    "front": "Grateful",
-    "back": "Agradecido",
-    "ipa": "/ˈɡreɪtfl/",
-    "example": "I'm <grateful> for all your help.",
-    "example_es": "Estoy <agradecido> por toda tu ayuda."
-  },
-  {
     "front": "Content",
     "back": "Satisfecho, contento",
     "ipa": "/kənˈtent/",
@@ -133,20 +126,6 @@
     "example_es": "Él se sentía avergonzado de su comportamiento."
   },
   {
-    "front": "Proud",
-    "back": "Orgulloso",
-    "ipa": "/praʊd/",
-    "example": "I'm <proud> of your achievements.",
-    "example_es": "Estoy <orgulloso> de tus logros."
-  },
-  {
-    "front": "Jealous",
-    "back": "Celoso",
-    "ipa": "/ˈdʒeləs/",
-    "example": "She felt <jealous> of her friend's success.",
-    "example_es": "Ella sentía celos del éxito de su amiga."
-  },
-  {
     "front": "Envious",
     "back": "Envidioso",
     "ipa": "/ˈenviəs/",
@@ -231,13 +210,6 @@
     "example_es": "Ella sintió nostalgia del hogar durante su primer año en el extranjero."
   },
   {
-    "front": "Lonely",
-    "back": "Solo, solitario",
-    "ipa": "/ˈloʊnli/",
-    "example": "He felt <lonely> after moving to a new city.",
-    "example_es": "Él se sintió solo después de mudarse a una nueva ciudad."
-  },
-  {
     "front": "Isolated",
     "back": "Aislado",
     "ipa": "/ˈaɪsəleɪtɪd/",
@@ -278,5 +250,33 @@
     "ipa": "/fʊlˈfɪld/",
     "example": "He feels <fulfilled> in his career.",
     "example_es": "Él se siente <realizado> en su carrera."
+  },
+  {
+    "front": "Resentment",
+    "back": "resentimiento",
+    "ipa": "",
+    "example": "She felt <resentment> after being overlooked for the promotion.",
+    "example_es": ""
+  },
+  {
+    "front": "Gratitude",
+    "back": "gratitud",
+    "ipa": "",
+    "example": "He expressed deep <gratitude> for their help.",
+    "example_es": ""
+  },
+  {
+    "front": "Nostalgia",
+    "back": "a sentimental longing for the past",
+    "ipa": "",
+    "example": "The old photos filled her with <nostalgia>.",
+    "example_es": ""
+  },
+  {
+    "front": "Empathy",
+    "back": "empatía",
+    "ipa": "",
+    "example": "Good leaders show <empathy> toward their team.",
+    "example_es": ""
   }
 ]

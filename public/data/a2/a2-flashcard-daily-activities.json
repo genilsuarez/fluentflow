@@ -42,20 +42,6 @@
     "example_es": "Me encanta cocinar comida italiana."
   },
   {
-    "front": "recipe",
-    "back": "receta",
-    "ipa": "/ˈresɪpi/",
-    "example": "Can you give me the <recipe> for this cake?",
-    "example_es": "¿Puedes darme la <receta> de este pastel?"
-  },
-  {
-    "front": "ingredient",
-    "back": "ingrediente",
-    "ipa": "/ɪnˈɡriːdiənt/",
-    "example": "We need fresh <ingredients> for the salad.",
-    "example_es": "Necesitamos ingredientes frescos para la ensalada."
-  },
-  {
     "front": "shopping",
     "back": "compras",
     "ipa": "/ˈʃɒpɪŋ/",
@@ -138,20 +124,6 @@
     "ipa": "/ˈdraɪvər/",
     "example": "The bus <driver> was very friendly.",
     "example_es": "El conductor del autobús fue muy amable."
-  },
-  {
-    "front": "happy",
-    "back": "feliz / contento",
-    "ipa": "/ˈhæpi/",
-    "example": "I'm very <happy> to see you again.",
-    "example_es": "Estoy muy feliz de verte de nuevo."
-  },
-  {
-    "front": "sad",
-    "back": "triste",
-    "ipa": "/sæd/",
-    "example": "She felt <sad> when her friend moved away.",
-    "example_es": "Se sintió <triste> cuando su amiga se mudó."
   },
   {
     "front": "angry",
@@ -278,5 +250,33 @@
     "ipa": "/ˈləʊnli/",
     "example": "She feels <lonely> since she moved to a new city.",
     "example_es": "Se siente sola desde que se mudó a una nueva ciudad."
+  },
+  {
+    "front": "Jogging",
+    "back": "trotar",
+    "ipa": "",
+    "example": "I go <jogging> every morning.",
+    "example_es": ""
+  },
+  {
+    "front": "Hiking",
+    "back": "senderismo",
+    "ipa": "",
+    "example": "We went <hiking> in the mountains.",
+    "example_es": ""
+  },
+  {
+    "front": "Skating",
+    "back": "patinaje",
+    "ipa": "",
+    "example": "The children enjoy <skating> in the park.",
+    "example_es": ""
+  },
+  {
+    "front": "Volunteering",
+    "back": "voluntariado",
+    "ipa": "",
+    "example": "She enjoys <volunteering> at the shelter.",
+    "example_es": ""
   }
 ]

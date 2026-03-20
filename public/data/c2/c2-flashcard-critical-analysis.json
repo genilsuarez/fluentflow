@@ -1,11 +1,5 @@
 [
   {
-    "front": "paradigm shift",
-    "back": "cambio de paradigma / transformación fundamental",
-    "example": "The discovery represented a <paradigm shift> in scientific thinking.",
-    "example_es": "El descubrimiento representó un cambio de paradigma en el pensamiento científico."
-  },
-  {
     "front": "epistemological",
     "back": "epistemológico / relativo al conocimiento",
     "example": "The study raises <epistemological> questions about truth.",
@@ -60,12 +54,6 @@
     "example_es": "El racionalismo prioriza el razonamiento lógico sobre la experiencia sensorial."
   },
   {
-    "front": "reductionism",
-    "back": "reduccionismo / simplificación a elementos básicos",
-    "example": "Critics argue that <reductionism> oversimplifies complex phenomena.",
-    "example_es": "Los críticos argumentan que el reduccionismo simplifica excesivamente fenómenos complejos."
-  },
-  {
     "front": "holistic",
     "back": "holístico / considerando el todo",
     "example": "A <holistic> approach considers all interconnected factors.",
@@ -84,12 +72,6 @@
     "example_es": "El resultado es contingente de múltiples variables."
   },
   {
-    "front": "dichotomy",
-    "back": "dicotomía / división en dos partes",
-    "example": "The <dichotomy> between theory and practice is often overstated.",
-    "example_es": "La dicotomía entre teoría y práctica a menudo se exagera."
-  },
-  {
     "front": "antithesis",
     "back": "antítesis / contraste directo",
     "example": "The new policy is the <antithesis> of previous approaches.",
@@ -100,12 +82,6 @@
     "back": "síntesis / combinación de elementos",
     "example": "The theory represents a <synthesis> of diverse perspectives.",
     "example_es": "La teoría representa una síntesis de perspectivas diversas."
-  },
-  {
-    "front": "juxtaposition",
-    "back": "yuxtaposición / colocación lado a lado",
-    "example": "The <juxtaposition> of images creates powerful meaning.",
-    "example_es": "La yuxtaposición de imágenes crea un significado poderoso."
   },
   {
     "front": "paradox",
@@ -148,12 +124,6 @@
     "back": "presuposición / suposición implícita",
     "example": "The argument rests on questionable <presuppositions>.",
     "example_es": "El argumento se basa en presuposiciones cuestionables."
-  },
-  {
-    "front": "ramification",
-    "back": "ramificación / consecuencia compleja",
-    "example": "The policy has far-reaching <ramifications>.",
-    "example_es": "La política tiene ramificaciones de gran alcance."
   },
   {
     "front": "implication",
@@ -210,12 +180,6 @@
     "example_es": "La declaración es una tautología que no agrega información nueva."
   },
   {
-    "front": "syllogism",
-    "back": "silogismo / razonamiento deductivo",
-    "example": "The classic <syllogism> demonstrates logical reasoning.",
-    "example_es": "El silogismo clásico demuestra razonamiento lógico."
-  },
-  {
     "front": "sophistry",
     "back": "sofisma / razonamiento falaz",
     "example": "The argument relies on <sophistry> rather than sound logic.",
@@ -238,5 +202,41 @@
     "back": "hombre de paja / argumento distorsionado",
     "example": "The <straw man> fallacy misrepresents the opponent's position.",
     "example_es": "La falacia del hombre de paja tergiversa la posición del oponente."
+  },
+  {
+    "front": "Subtext",
+    "back": "subtexto",
+    "example": "The <subtext> of the dialogue reveals hidden tensions.",
+    "example_es": ""
+  },
+  {
+    "front": "Allegory",
+    "back": "alegoría",
+    "example": "Animal Farm is an <allegory> of the Russian Revolution.",
+    "example_es": ""
+  },
+  {
+    "front": "Motif",
+    "back": "motivo / tema recurrente",
+    "example": "Water is a recurring <motif> in the novel.",
+    "example_es": ""
+  },
+  {
+    "front": "Catharsis",
+    "back": "catarsis",
+    "example": "Greek tragedy aims to produce <catharsis> in the audience.",
+    "example_es": ""
+  },
+  {
+    "front": "Pastiche",
+    "back": "pastiche / imitación",
+    "example": "The film is a <pastiche> of classic horror movies.",
+    "example_es": ""
+  },
+  {
+    "front": "Denouement",
+    "back": "desenlace",
+    "example": "The <denouement> of the play was unexpected.",
+    "example_es": ""
   }
 ]

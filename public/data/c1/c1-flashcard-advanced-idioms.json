@@ -1,11 +1,5 @@
 [
   {
-    "front": "The elephant in the room",
-    "back": "El problema obvio que nadie menciona",
-    "example": "Corruption is <the elephant in the room> in this debate.",
-    "example_es": "La corrupción es <el problema obvio que nadie menciona> en este debate."
-  },
-  {
     "front": "Move the goalposts",
     "back": "Cambiar las reglas a conveniencia",
     "example": "They keep moving the <goalposts> on the project requirements.",
@@ -16,12 +10,6 @@
     "back": "Un arma de doble filo",
     "example": "Social media is <a double-edged sword>.",
     "example_es": "Las redes sociales son <un arma de doble filo>."
-  },
-  {
-    "front": "Cut corners",
-    "back": "Tomar atajos / hacer algo mal por ahorrar",
-    "example": "The builder <cut corners> and the roof leaked.",
-    "example_es": "El constructor tomó atajos y el techo goteó."
   },
   {
     "front": "A watershed moment",
@@ -96,12 +84,6 @@
     "example_es": "Todos estamos <en la misma situación> con estos recortes."
   },
   {
-    "front": "Ring a bell",
-    "back": "Sonar familiar",
-    "example": "Does the name 'Smith' <ring a bell>?",
-    "example_es": "¿Te suena el nombre 'Smith'?"
-  },
-  {
     "front": "Bite the hand that feeds you",
     "back": "Morder la mano que te da de comer",
     "example": "Criticizing your sponsor is biting the <hand> that feeds you.",
@@ -168,12 +150,6 @@
     "example_es": "Necesitamos <llegar al fondo de> este asunto."
   },
   {
-    "front": "Hit the ground running",
-    "back": "Empezar con todo / arrancar fuerte",
-    "example": "The new CEO <hit the ground running>.",
-    "example_es": "El nuevo CEO arrancó con todo."
-  },
-  {
     "front": "In the pipeline",
     "back": "En preparación / en camino",
     "example": "Several new products are <in the pipeline>.",
@@ -184,12 +160,6 @@
     "back": "Vigilar / hacer seguimiento",
     "example": "The manager keeps <tabs> on all expenses.",
     "example_es": "El gerente hace <seguimiento> de todos los gastos."
-  },
-  {
-    "front": "Leave no stone unturned",
-    "back": "No dejar piedra sin mover",
-    "example": "The investigators left no <stone> unturned.",
-    "example_es": "Los investigadores no dejaron <piedra> sin mover."
   },
   {
     "front": "Miss the mark",
@@ -222,12 +192,6 @@
     "example_es": "Me gustaría <aclarar las cosas> sobre lo que pasó."
   },
   {
-    "front": "Take the bull by the horns",
-    "back": "Tomar el toro por los cuernos",
-    "example": "It's time to <take the bull by the horns> and fix this.",
-    "example_es": "Es hora de <tomar el toro por los cuernos> y arreglar esto."
-  },
-  {
     "front": "Under the radar",
     "back": "Pasar desapercibido",
     "example": "The startup flew <under the radar> for years.",
@@ -238,5 +202,41 @@
     "back": "Desempeñar muchos roles",
     "example": "In a small company, everyone wears <many> hats.",
     "example_es": "En una empresa pequeña, todos desempeñan <muchos> roles."
+  },
+  {
+    "front": "The elephant in the room",
+    "back": "el tema incómodo que nadie menciona",
+    "example": "Budget cuts are <the elephant in the room>.",
+    "example_es": ""
+  },
+  {
+    "front": "Read between the lines",
+    "back": "leer entre líneas",
+    "example": "You need to <read between the lines> of his email.",
+    "example_es": ""
+  },
+  {
+    "front": "A blessing in disguise",
+    "back": "no hay mal que por bien no venga",
+    "example": "Losing that job was <a blessing in disguise>.",
+    "example_es": ""
+  },
+  {
+    "front": "Barking up the wrong tree",
+    "back": "ir por mal camino",
+    "example": "If you think I did it, you're <barking up the wrong tree>.",
+    "example_es": ""
+  },
+  {
+    "front": "Cut corners",
+    "back": "tomar atajos / hacer chapuzas",
+    "example": "Don't <cut corners> on safety.",
+    "example_es": ""
+  },
+  {
+    "front": "Hit the nail on the head",
+    "back": "dar en el clavo",
+    "example": "You <hit the nail on the head> with that analysis.",
+    "example_es": ""
   }
 ]

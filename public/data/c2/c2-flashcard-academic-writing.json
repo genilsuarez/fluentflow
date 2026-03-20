@@ -7,20 +7,6 @@
     "example_es": "El profesor aclaró la teoría compleja con ejemplos claros."
   },
   {
-    "front": "corroborate",
-    "back": "corroborar / confirmar",
-    "ipa": "/kəˈrɒbəreɪt/",
-    "example": "Multiple studies <corroborate> the initial findings.",
-    "example_es": "Múltiples estudios corroboran los hallazgos iniciales."
-  },
-  {
-    "front": "juxtapose",
-    "back": "yuxtaponer / colocar lado a lado",
-    "ipa": "/ˌdʒʌkstəˈpəʊz/",
-    "example": "The author <juxtaposes> traditional and modern approaches.",
-    "example_es": "El autor yuxtapone enfoques tradicionales y modernos."
-  },
-  {
     "front": "extrapolate",
     "back": "extrapolar / inferir",
     "ipa": "/ɪkˈstræpəleɪt/",
@@ -231,39 +217,11 @@
     "example_es": "El análisis ex post facto reveló varios defectos."
   },
   {
-    "front": "Extrapolate",
-    "back": "Extrapolar",
-    "ipa": "/ɪkˈstræpəleɪt/",
-    "example": "We can <extrapolate> trends from the data.",
-    "example_es": "Podemos <extrapolar> tendencias de los datos."
-  },
-  {
-    "front": "Delineate",
-    "back": "Delinear / Describir con precisión",
-    "ipa": "/dɪˈlɪnieɪt/",
-    "example": "The paper <delineates> the key differences.",
-    "example_es": "El artículo <delinea> las diferencias clave."
-  },
-  {
-    "front": "Postulate",
-    "back": "Postular",
-    "ipa": "/ˈpɒstjʊleɪt/",
-    "example": "The theory <postulates> a new mechanism.",
-    "example_es": "La teoría <postula> un nuevo mecanismo."
-  },
-  {
     "front": "Predicate",
     "back": "Predicar / Basar",
     "ipa": "/ˈpredɪkeɪt/",
     "example": "The argument is <predicated> on false assumptions.",
     "example_es": "El argumento está <basado> en suposiciones falsas."
-  },
-  {
-    "front": "Circumscribe",
-    "back": "Circunscribir / Limitar",
-    "ipa": "/ˈsɜːrkəmskraɪb/",
-    "example": "The study is <circumscribed> by its methodology.",
-    "example_es": "El estudio está <circunscrito> por su metodología."
   },
   {
     "front": "Promulgate",
@@ -278,5 +236,47 @@
     "ipa": "/ˈɒbvieɪt/",
     "example": "This approach <obviates> the need for surgery.",
     "example_es": "Este enfoque <obvia> la necesidad de cirugía."
+  },
+  {
+    "front": "Ameliorate",
+    "back": "mejorar / ameliorar",
+    "ipa": "",
+    "example": "Policies to <ameliorate> living conditions were introduced.",
+    "example_es": ""
+  },
+  {
+    "front": "Obfuscate",
+    "back": "ofuscar / oscurecer",
+    "ipa": "",
+    "example": "The jargon tends to <obfuscate> the main argument.",
+    "example_es": ""
+  },
+  {
+    "front": "Adjudicate",
+    "back": "adjudicar / resolver",
+    "ipa": "",
+    "example": "The court will <adjudicate> the dispute.",
+    "example_es": ""
+  },
+  {
+    "front": "Expunge",
+    "back": "expurgar / borrar",
+    "ipa": "",
+    "example": "The record was <expunged> after the appeal.",
+    "example_es": ""
+  },
+  {
+    "front": "Abrogate",
+    "back": "abrogar / derogar",
+    "ipa": "",
+    "example": "The treaty was <abrogated> by mutual consent.",
+    "example_es": ""
+  },
+  {
+    "front": "Corroborate",
+    "back": "corroborar",
+    "ipa": "",
+    "example": "The findings <corroborate> previous research.",
+    "example_es": ""
   }
 ]

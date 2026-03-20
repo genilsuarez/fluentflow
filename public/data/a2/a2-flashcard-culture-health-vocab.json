@@ -147,25 +147,11 @@
     "example_es": "Tengo un terrible <dolor de cabeza>."
   },
   {
-    "front": "Fever",
-    "back": "Fiebre",
-    "ipa": "/ˈfiːvər/",
-    "example": "She has a high <fever>.",
-    "example_es": "Ella tiene <fiebre> alta."
-  },
-  {
     "front": "Cough",
     "back": "Tos / Toser",
     "ipa": "/kɒf/",
     "example": "I can't stop my <cough>.",
     "example_es": "No puedo parar mi <tos>."
-  },
-  {
-    "front": "Medicine",
-    "back": "Medicina / Medicamento",
-    "ipa": "/ˈmedɪsɪn/",
-    "example": "Take your <medicine> after meals.",
-    "example_es": "Toma tu <medicina> después de comer."
   },
   {
     "front": "Pharmacy",
@@ -175,27 +161,6 @@
     "example_es": "Compra las pastillas en la <farmacia>."
   },
   {
-    "front": "Appointment",
-    "back": "Cita (médica)",
-    "ipa": "/əˈpɔɪntmənt/",
-    "example": "I have a doctor's <appointment>.",
-    "example_es": "Tengo una <cita> con el doctor."
-  },
-  {
-    "front": "Symptom",
-    "back": "Síntoma",
-    "ipa": "/ˈsɪmptəm/",
-    "example": "What are your <symptoms>?",
-    "example_es": "¿Cuáles son tus <síntomas>?"
-  },
-  {
-    "front": "Allergy",
-    "back": "Alergia",
-    "ipa": "/ˈælədʒi/",
-    "example": "I have an <allergy> to pollen.",
-    "example_es": "Tengo <alergia> al polen."
-  },
-  {
     "front": "Museum",
     "back": "Museo",
     "ipa": "/mjuːˈziːəm/",
@@ -203,25 +168,11 @@
     "example_es": "Visitamos el <museo> de arte."
   },
   {
-    "front": "Tradition",
-    "back": "Tradición",
-    "ipa": "/trəˈdɪʃən/",
-    "example": "It's a family <tradition>.",
-    "example_es": "Es una <tradición> familiar."
-  },
-  {
     "front": "Celebration",
     "back": "Celebración",
     "ipa": "/ˌselɪˈbreɪʃən/",
     "example": "The <celebration> was wonderful.",
     "example_es": "La <celebración> fue maravillosa."
-  },
-  {
-    "front": "Custom",
-    "back": "Costumbre",
-    "ipa": "/ˈkʌstəm/",
-    "example": "It's a local <custom>.",
-    "example_es": "Es una <costumbre> local."
   },
   {
     "front": "Recipe",
@@ -278,5 +229,54 @@
     "ipa": "/ˈherɪtɪdʒ/",
     "example": "We must protect our cultural <heritage>.",
     "example_es": "Debemos proteger nuestro <patrimonio> cultural."
+  },
+  {
+    "front": "Diet",
+    "back": "dieta",
+    "ipa": "",
+    "example": "A healthy <diet> includes fruits and vegetables.",
+    "example_es": ""
+  },
+  {
+    "front": "Exercise",
+    "back": "ejercicio",
+    "ipa": "",
+    "example": "Regular <exercise> is good for your health.",
+    "example_es": ""
+  },
+  {
+    "front": "Checkup",
+    "back": "chequeo médico",
+    "ipa": "",
+    "example": "I have a dental <checkup> tomorrow.",
+    "example_es": ""
+  },
+  {
+    "front": "Wellness",
+    "back": "bienestar",
+    "ipa": "",
+    "example": "<Wellness> programs help employees stay healthy.",
+    "example_es": ""
+  },
+  {
+    "front": "Folklore",
+    "back": "folclore",
+    "ipa": "",
+    "example": "The region is known for its rich <folklore>.",
+    "example_es": ""
+  },
+  {
+    "front": "Thermometer",
+    "back": "termómetro",
+    "ipa": "",
+    "example": "Use a <thermometer> to check your temperature.",
+    "example_es": ""
+  },
+  {
+    "front": "Stretcher",
+    "back": "camilla",
+    "ipa": "",
+    "example": "The patient was carried on a <stretcher>.",
+    "example_es": ""
   }
 ]
