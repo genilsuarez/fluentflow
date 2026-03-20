@@ -9,7 +9,8 @@
 
 import { execSync } from 'child_process';
 import { fileURLToPath } from 'url';
-import { dirname } from 'path';
+import { dirname, join } from 'path';
+import { writeFileSync } from 'fs';
 import { colors, log, logHeader, logCompactHeader, logSuccess, logError, logWarning, logInfo } from '../utils/logger.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -228,6 +229,16 @@ async function runWorkflow(workflowKey) {
       let commitSha = 'unknown';
       try {
         commitSha = execSync('git rev-parse --short HEAD', { encoding: 'utf8', cwd: rootDir }).trim();
+      } catch {}
+
+      // Write build metadata for telegram-notify.js
+      try {
+        const metaPath = join(rootDir, 'dist', 'build-meta.json');
+        writeFileSync(metaPath, JSON.stringify({
+          commit: commitSha,
+          duration: totalDuration,
+          buildDate: new Date().toISOString()
+        }));
       } catch {}
 
       console.log('\n' + '='.repeat(50));
