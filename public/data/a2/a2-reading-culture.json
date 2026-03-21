@@ -30,7 +30,19 @@
       "id": "dining-etiquette",
       "title": "Food and Dining Customs",
       "type": "theory",
-      "content": "Dining customs vary by culture. In restaurants, you usually wait to be seated by a host. It's polite to say <please> and <thank you> to servers. Tipping is expected in the USA and Canada (usually 15-20% of the bill), but not always in other countries. When eating with others, wait until everyone has their food before starting. Don't talk with your mouth full. If you're invited to dinner, arriving 5-10 minutes late is acceptable."
+      "content": "Dining customs vary by culture. In restaurants, you usually wait to be seated by a host. It's polite to say <please> and <thank you> to servers. Tipping is expected in the USA and Canada (usually 15-20% of the bill), but not always in other countries. When eating with others, wait until everyone has their food before starting. Don't talk with your mouth full. If you're invited to dinner, arriving 5-10 minutes late is acceptable.\n\nKey terms:\n• <Please> – A polite word used when asking for something\n• <Thank you> – A polite phrase to express gratitude",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "please",
+            "definition": "A polite word used when asking for something"
+          },
+          {
+            "term": "thank you",
+            "definition": "A polite phrase to express gratitude"
+          }
+        ]
+      }
     },
     {
       "id": "examples",
@@ -42,7 +54,35 @@
       "id": "sports-entertainment",
       "title": "Sports and Entertainment",
       "type": "theory",
-      "content": "Sports and entertainment are important parts of English-speaking cultures:\n\nPopular sports:\n• <Football> (soccer in the US) is popular in the UK\n• <American football>, <baseball>, and <basketball> are big in the US\n• <Cricket> is popular in the UK, Australia, and India\n• <Rugby> is loved in the UK, New Zealand, and Australia\n\nEntertainment:\n• Going to the <cinema> (UK) or <movies> (US)\n• Watching <TV shows> and <streaming> services\n• Attending <concerts> and <festivals>\n\nSmall talk about sports is very common: <Did you see the match last night?>"
+      "content": "Sports and entertainment are important parts of English-speaking cultures:\n\nPopular sports:\n• <Football> (soccer in the US) is popular in the UK\n• <American football>, <baseball>, and <basketball> are big in the US\n• <Cricket> is popular in the UK, Australia, and India\n• <Rugby> is loved in the UK, New Zealand, and Australia\n\nEntertainment:\n• Going to the <cinema> (UK) or <movies> (US)\n• Watching <TV shows> and <streaming> services\n• Attending <concerts> and <festivals>\n\nSmall talk about sports is very common: <Did you see the match last night?>\n\nKey terms:\n• <Football> – A team sport played by kicking a ball into a goal\n• <American football> – A team sport played with an oval ball in the US\n• <Baseball> – A bat-and-ball sport with two teams of nine players\n• <Basketball> – A sport where teams throw a ball through a hoop\n• <Cricket> – A bat-and-ball sport popular in England and Asia",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Football",
+            "definition": "A team sport played by kicking a ball into a goal"
+          },
+          {
+            "term": "American football",
+            "definition": "A team sport played with an oval ball in the US"
+          },
+          {
+            "term": "baseball",
+            "definition": "A bat-and-ball sport with two teams of nine players"
+          },
+          {
+            "term": "basketball",
+            "definition": "A sport where teams throw a ball through a hoop"
+          },
+          {
+            "term": "Cricket",
+            "definition": "A bat-and-ball sport popular in England and Asia"
+          },
+          {
+            "term": "Rugby",
+            "definition": "A team sport where players carry and kick an oval ball"
+          }
+        ]
+      }
     },
     {
       "id": "examples-2",

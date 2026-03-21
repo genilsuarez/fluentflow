@@ -30,19 +30,103 @@
       "id": "examples",
       "title": "Multiple Meanings",
       "type": "examples",
-      "content": "Many phrasal verbs have more than one meaning:\n\nExample 1: <Pick up> — a) <Pick up the phone> (answer) b) <Pick up a language> (learn informally) c) <Pick up someone> (collect by car)\n\nExample 2: <Take off> — a) <The plane took off> (left the ground) b) <Take off your coat> (remove) c) <Her career took off> (became successful)\n\nExample 3: <Work out> — a) <I work out at the gym> (exercise) b) <Things worked out well> (had a good result) c) <Work out the answer> (calculate)"
+      "content": "Many phrasal verbs have more than one meaning:\n\nExample 1: <Pick up> — a) <Pick up the phone> (answer) b) <Pick up a language> (learn informally) c) <Pick up someone> (collect by car)\n\nExample 2: <Take off> — a) <The plane took off> (left the ground) b) <Take off your coat> (remove) c) <Her career took off> (became successful)\n\nExample 3: <Work out> — a) <I work out at the gym> (exercise) b) <Things worked out well> (had a good result) c) <Work out the answer> (calculate)",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Pick up",
+            "definition": "To lift something, or to learn something informally."
+          },
+          {
+            "term": "Pick up the phone",
+            "definition": "To answer or make a telephone call."
+          },
+          {
+            "term": "Pick up a language",
+            "definition": "To learn a language naturally without formal study."
+          },
+          {
+            "term": "Pick up someone",
+            "definition": "To collect someone from a place, usually by car."
+          },
+          {
+            "term": "Take off",
+            "definition": "To leave the ground and begin flying, or to become successful."
+          },
+          {
+            "term": "The plane took off",
+            "definition": "The aircraft left the ground and began to fly."
+          }
+        ]
+      }
     },
     {
       "id": "travel-leisure",
       "title": "Travel and Leisure",
       "type": "theory",
-      "content": "Phrasal verbs are essential when talking about travel and free time:\n\nPlanning: <Look into> different destinations before booking. <Set off> early to avoid traffic. <Check in> at the hotel when you arrive.\n\nDuring the trip: <Get around> the city by public transport. <Eat out> at local restaurants. <Hang out> at the beach.\n\nReturning: <Check out> of the hotel before noon. <Set off> for the airport. <Get back> home safely.\n\nPhrasal verbs for travel:\n• Look into - Research or investigate\n• Set off - Begin a journey\n• Check in/out - Register arrival/departure at a hotel\n• Get around - Travel within an area\n• Eat out - Have a meal at a restaurant\n• Get back - Return to a place"
+      "content": "Phrasal verbs are essential when talking about travel and free time:\n\nPlanning: <Look into> different destinations before booking. <Set off> early to avoid traffic. <Check in> at the hotel when you arrive.\n\nDuring the trip: <Get around> the city by public transport. <Eat out> at local restaurants. <Hang out> at the beach.\n\nReturning: <Check out> of the hotel before noon. <Set off> for the airport. <Get back> home safely.\n\nPhrasal verbs for travel:\n• Look into - Research or investigate\n• Set off - Begin a journey\n• Check in/out - Register arrival/departure at a hotel\n• Get around - Travel within an area\n• Eat out - Have a meal at a restaurant\n• Get back - Return to a place",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Look into",
+            "definition": "To investigate or examine something more closely."
+          },
+          {
+            "term": "Set off",
+            "definition": "To begin a journey or to cause something to start."
+          },
+          {
+            "term": "Check in",
+            "definition": "To register your arrival at a hotel, airport, or event."
+          },
+          {
+            "term": "Get around",
+            "definition": "To travel from place to place or to avoid something."
+          },
+          {
+            "term": "Eat out",
+            "definition": "To have a meal at a restaurant instead of at home."
+          },
+          {
+            "term": "Hang out",
+            "definition": "To spend time relaxing in a place or with friends."
+          }
+        ]
+      }
     },
     {
       "id": "emotions-reactions",
       "title": "Emotions and Reactions",
       "type": "theory",
-      "content": "Many phrasal verbs describe how we feel and react:\n\n• <Cheer up> - Become happier or make someone happier\n• <Calm down> - Become less angry or excited\n• <Freak out> - Become very scared or worried (informal)\n• <Open up> - Start to talk about your feelings\n• <Bottle up> - Keep your feelings hidden inside\n• <Let down> - Disappoint someone\n• <Look up to> - Admire and respect someone\n• <Put up with> - Tolerate something unpleasant\n\nExample: <She was really upset after the exam, but her friends cheered her up. She opened up about her worries and felt much better. She really looks up to her older sister, who always knows what to say.>"
+      "content": "Many phrasal verbs describe how we feel and react:\n\n• <Cheer up> - Become happier or make someone happier\n• <Calm down> - Become less angry or excited\n• <Freak out> - Become very scared or worried (informal)\n• <Open up> - Start to talk about your feelings\n• <Bottle up> - Keep your feelings hidden inside\n• <Let down> - Disappoint someone\n• <Look up to> - Admire and respect someone\n• <Put up with> - Tolerate something unpleasant\n\nExample: <She was really upset after the exam, but her friends cheered her up. She opened up about her worries and felt much better. She really looks up to her older sister, who always knows what to say.>",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Cheer up",
+            "definition": "To become happier or make someone feel happier."
+          },
+          {
+            "term": "Calm down",
+            "definition": "To become less upset, angry, or excited."
+          },
+          {
+            "term": "Freak out",
+            "definition": "To become very upset, scared, or excited suddenly."
+          },
+          {
+            "term": "Open up",
+            "definition": "To start talking about your feelings or personal experiences."
+          },
+          {
+            "term": "Bottle up",
+            "definition": "To hide your emotions and not express them."
+          },
+          {
+            "term": "Let down",
+            "definition": "To disappoint someone by failing to do what was expected."
+          }
+        ]
+      }
     },
     {
       "id": "examples-2",

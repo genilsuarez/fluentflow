@@ -36,13 +36,53 @@
       "id": "register-analysis",
       "title": "Register and Appropriateness",
       "type": "theory",
-      "content": "Understanding register is crucial at C1:\n\nFormal academic: <The findings call into question previous assumptions.> (appropriate)\nInformal equivalent: <The findings blow holes in what we thought.> (too casual for papers)\n\nFormal professional: <We need to raise the bar on quality.> (appropriate in meetings)\nToo casual: <We need to step up our game.> (acceptable but less professional)\n\nThe key is matching your language to your audience and purpose. In a board meeting, <move the needle> is perfect. In an academic paper, <yield significant results> is more appropriate."
+      "content": "Understanding register is crucial at C1:\n\nFormal academic: <The findings call into question previous assumptions.> (appropriate)\nInformal equivalent: <The findings blow holes in what we thought.> (too casual for papers)\n\nFormal professional: <We need to raise the bar on quality.> (appropriate in meetings)\nToo casual: <We need to step up our game.> (acceptable but less professional)\n\nThe key is matching your language to your audience and purpose. In a board meeting, <move the needle> is perfect. In an academic paper, <yield significant results> is more appropriate.",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "move the needle",
+            "definition": "To make a noticeable difference or impact"
+          },
+          {
+            "term": "yield significant results",
+            "definition": "To produce meaningful and measurable outcomes from an effort"
+          }
+        ]
+      }
     },
     {
       "id": "nuance-collocations",
       "title": "Nuance, Collocation, and Pragmatic Competence",
       "type": "theory",
-      "content": "At the C1 level, mastery of phrasal verbs and idioms extends beyond knowing definitions to understanding <pragmatic competence> — using language appropriately in context.\n\n<Collocational patterns> determine which phrasal verbs sound natural in specific contexts. We <carry out> research but <conduct> an investigation. We <draw up> a plan but <put together> a proposal. These patterns are not governed by strict rules but by convention.\n\n<Hedging> with idiomatic expressions softens assertions in academic and professional discourse: <It could be argued that...>, <There's a case to be made for...>, <By and large, the evidence suggests...>\n\n<Register shifting> — moving between formal and informal language — is a hallmark of advanced proficiency. A skilled speaker might use <elucidate> in a lecture but <spell out> in a team meeting, conveying the same meaning with different levels of formality.\n\nUnderstanding <connotation> is equally important. <Stubborn> and <determined> describe similar behaviour but carry very different evaluative weight. Similarly, <thrifty> versus <stingy>, or <assertive> versus <aggressive>."
+      "content": "At the C1 level, mastery of phrasal verbs and idioms extends beyond knowing definitions to understanding <pragmatic competence> — using language appropriately in context.\n\n<Collocational patterns> determine which phrasal verbs sound natural in specific contexts. We <carry out> research but <conduct> an investigation. We <draw up> a plan but <put together> a proposal. These patterns are not governed by strict rules but by convention.\n\n<Hedging> with idiomatic expressions softens assertions in academic and professional discourse: <It could be argued that...>, <There's a case to be made for...>, <By and large, the evidence suggests...>\n\n<Register shifting> — moving between formal and informal language — is a hallmark of advanced proficiency. A skilled speaker might use <elucidate> in a lecture but <spell out> in a team meeting, conveying the same meaning with different levels of formality.\n\nUnderstanding <connotation> is equally important. <Stubborn> and <determined> describe similar behaviour but carry very different evaluative weight. Similarly, <thrifty> versus <stingy>, or <assertive> versus <aggressive>.",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "pragmatic competence",
+            "definition": "Ability to use language appropriately in social and cultural contexts"
+          },
+          {
+            "term": "Collocational patterns",
+            "definition": "Words that frequently occur together in natural language use"
+          },
+          {
+            "term": "carry out",
+            "definition": "To perform or complete a task or plan"
+          },
+          {
+            "term": "conduct",
+            "definition": "To organize and carry out research or an activity"
+          },
+          {
+            "term": "draw up",
+            "definition": "To prepare and write a formal document or plan"
+          },
+          {
+            "term": "put together",
+            "definition": "To assemble, organize, or create something from various parts"
+          }
+        ]
+      }
     },
     {
       "id": "examples-2",

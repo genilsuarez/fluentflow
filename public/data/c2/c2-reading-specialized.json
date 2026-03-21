@@ -18,19 +18,103 @@
       "id": "legal-discourse",
       "title": "Legal Language and Jurisprudential Concepts",
       "type": "theory",
-      "content": "Legal discourse exemplifies specialized language's complexity. <Jurisprudence> encompasses legal philosophy and theory. <Precedent> establishes binding authority through prior decisions - <stare decisis> requires courts to follow established precedents. <Statutory interpretation> applies various <canons of construction>: <textualism> focuses on plain meaning, <purposivism> considers legislative intent, <originalism> examines historical understanding. <Common law> evolves through judicial decisions; <civil law> systems rely on comprehensive codes. <Tort law> addresses civil wrongs; <criminal law> prosecutes offenses against society. Legal writing employs <terms of art> with precise meanings: <consideration> (something of value exchanged in contracts), <mens rea> (criminal intent), <res judicata> (matter already judged). <Legalese> - archaic, convoluted legal language - is increasingly criticized, with movements toward <plain language> drafting. Understanding legal reasoning requires grasping <syllogistic logic>, <burden of proof>, <standards of review>, and <rules of evidence>."
+      "content": "Legal discourse exemplifies specialized language's complexity. <Jurisprudence> encompasses legal philosophy and theory. <Precedent> establishes binding authority through prior decisions - <stare decisis> requires courts to follow established precedents. <Statutory interpretation> applies various <canons of construction>: <textualism> focuses on plain meaning, <purposivism> considers legislative intent, <originalism> examines historical understanding. <Common law> evolves through judicial decisions; <civil law> systems rely on comprehensive codes. <Tort law> addresses civil wrongs; <criminal law> prosecutes offenses against society. Legal writing employs <terms of art> with precise meanings: <consideration> (something of value exchanged in contracts), <mens rea> (criminal intent), <res judicata> (matter already judged). <Legalese> - archaic, convoluted legal language - is increasingly criticized, with movements toward <plain language> drafting. Understanding legal reasoning requires grasping <syllogistic logic>, <burden of proof>, <standards of review>, and <rules of evidence>.\n\nKey terms:\n• <Jurisprudence> – The theory and philosophy of law\n• <Precedent> – A legal decision serving as an authoritative rule for future cases\n• <Stare decisis> – Legal principle of following precedents set by earlier court decisions\n• <Statutory interpretation> – The process of determining the meaning of legislation by courts\n• <Canons of construction> – Established rules for interpreting the meaning of legal texts",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Jurisprudence",
+            "definition": "The theory and philosophy of law"
+          },
+          {
+            "term": "Precedent",
+            "definition": "A legal decision serving as an authoritative rule for future cases"
+          },
+          {
+            "term": "stare decisis",
+            "definition": "Legal principle of following precedents set by earlier court decisions"
+          },
+          {
+            "term": "Statutory interpretation",
+            "definition": "The process of determining the meaning of legislation by courts"
+          },
+          {
+            "term": "canons of construction",
+            "definition": "Established rules for interpreting the meaning of legal texts"
+          },
+          {
+            "term": "textualism",
+            "definition": "Legal interpretation based strictly on the ordinary meaning of statutory text"
+          }
+        ]
+      }
     },
     {
       "id": "medical-scientific",
       "title": "Medical and Scientific Terminology",
       "type": "theory",
-      "content": "Medical language derives heavily from Latin and Greek, creating systematic nomenclature. <Pathophysiology> examines disease mechanisms. <Etiology> concerns causation; <prognosis> predicts outcomes. <Differential diagnosis> systematically eliminates possibilities. Medical terms follow patterns: prefixes (hyper-/hypo-, endo-/exo-), roots (cardi-, hepat-, neur-), and suffixes (-itis for inflammation, -oma for tumor, -ectomy for removal). <Pharmacology> encompasses drug mechanisms, interactions, and effects. <Evidence-based medicine> prioritizes rigorous research over anecdote. Scientific discourse employs passive voice for objectivity, precise quantification, and careful hedging. <Peer review> maintains quality standards. <Replication> validates findings. Understanding requires familiarity with statistical concepts: <p-values>, <confidence intervals>, <effect sizes>. <Systematic reviews> and <meta-analyses> synthesize research. The <scientific method> provides epistemological foundation: hypothesis formation, experimental design, data collection, analysis, and conclusion."
+      "content": "Medical language derives heavily from Latin and Greek, creating systematic nomenclature. <Pathophysiology> examines disease mechanisms. <Etiology> concerns causation; <prognosis> predicts outcomes. <Differential diagnosis> systematically eliminates possibilities. Medical terms follow patterns: prefixes (hyper-/hypo-, endo-/exo-), roots (cardi-, hepat-, neur-), and suffixes (-itis for inflammation, -oma for tumor, -ectomy for removal). <Pharmacology> encompasses drug mechanisms, interactions, and effects. <Evidence-based medicine> prioritizes rigorous research over anecdote. Scientific discourse employs passive voice for objectivity, precise quantification, and careful hedging. <Peer review> maintains quality standards. <Replication> validates findings. Understanding requires familiarity with statistical concepts: <p-values>, <confidence intervals>, <effect sizes>. <Systematic reviews> and <meta-analyses> synthesize research. The <scientific method> provides epistemological foundation: hypothesis formation, experimental design, data collection, analysis, and conclusion.\n\nKey terms:\n• <Pathophysiology> – The study of functional changes associated with disease\n• <Etiology> – The study of the causes or origins of a disease\n• <Prognosis> – A forecast of the likely course and outcome of a disease\n• <Differential diagnosis> – Process of distinguishing a disease from others with similar symptoms\n• <Pharmacology> – The science of drugs, their effects, and their therapeutic uses",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Pathophysiology",
+            "definition": "The study of functional changes associated with disease"
+          },
+          {
+            "term": "Etiology",
+            "definition": "The study of the causes or origins of a disease"
+          },
+          {
+            "term": "prognosis",
+            "definition": "A forecast of the likely course and outcome of a disease"
+          },
+          {
+            "term": "Differential diagnosis",
+            "definition": "Process of distinguishing a disease from others with similar symptoms"
+          },
+          {
+            "term": "Pharmacology",
+            "definition": "The science of drugs, their effects, and their therapeutic uses"
+          },
+          {
+            "term": "Evidence-based medicine",
+            "definition": "Clinical practice guided by the best available research evidence"
+          }
+        ]
+      }
     },
     {
       "id": "technical-domains",
       "title": "Engineering, Finance, and Technical Communication",
       "type": "theory",
-      "content": "Engineering disciplines employ domain-specific vocabularies. <Structural engineering> discusses <load-bearing capacity>, <stress-strain relationships>, and <failure modes>. <Electrical engineering> involves <circuit topology>, <impedance matching>, and <signal processing>. Technical specifications demand extreme precision - ambiguity can have catastrophic consequences. Financial discourse includes <derivatives> (financial instruments deriving value from underlying assets), <arbitrage> (exploiting price differentials), <hedging> (risk mitigation), <liquidity> (ease of asset conversion), and <volatility> (price fluctuation). <Quantitative finance> applies mathematical models. <Behavioral finance> examines psychological factors. Understanding requires numerical literacy and conceptual frameworks. Technical writing prioritizes clarity, accuracy, and completeness. <Documentation> must enable replication. <Standards> ensure interoperability. <Protocols> define procedures. Mastery requires not just vocabulary but deep conceptual understanding enabling appropriate application."
+      "content": "Engineering disciplines employ domain-specific vocabularies. <Structural engineering> discusses <load-bearing capacity>, <stress-strain relationships>, and <failure modes>. <Electrical engineering> involves <circuit topology>, <impedance matching>, and <signal processing>. Technical specifications demand extreme precision - ambiguity can have catastrophic consequences. Financial discourse includes <derivatives> (financial instruments deriving value from underlying assets), <arbitrage> (exploiting price differentials), <hedging> (risk mitigation), <liquidity> (ease of asset conversion), and <volatility> (price fluctuation). <Quantitative finance> applies mathematical models. <Behavioral finance> examines psychological factors. Understanding requires numerical literacy and conceptual frameworks. Technical writing prioritizes clarity, accuracy, and completeness. <Documentation> must enable replication. <Standards> ensure interoperability. <Protocols> define procedures. Mastery requires not just vocabulary but deep conceptual understanding enabling appropriate application.\n\nKey terms:\n• <Structural engineering> – Engineering discipline focused on designing structures to withstand loads safely\n• <Load-bearing capacity> – Maximum weight or force a structure can safely support\n• <Stress-strain relationships> – How materials deform and resist forces under applied loads\n• <Failure modes> – The ways in which a system or component can malfunction\n• <Electrical engineering> – Engineering discipline focused on electricity, electronics, and electromagnetism",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Structural engineering",
+            "definition": "Engineering discipline focused on designing structures to withstand loads safely"
+          },
+          {
+            "term": "load-bearing capacity",
+            "definition": "Maximum weight or force a structure can safely support"
+          },
+          {
+            "term": "stress-strain relationships",
+            "definition": "How materials deform and resist forces under applied loads"
+          },
+          {
+            "term": "failure modes",
+            "definition": "The ways in which a system or component can malfunction"
+          },
+          {
+            "term": "Electrical engineering",
+            "definition": "Engineering discipline focused on electricity, electronics, and electromagnetism"
+          },
+          {
+            "term": "circuit topology",
+            "definition": "The arrangement and interconnection of components in an electrical circuit"
+          }
+        ]
+      }
     },
     {
       "id": "examples",
@@ -42,7 +126,35 @@
       "id": "diplomatic-political",
       "title": "Diplomatic Language and Political Discourse",
       "type": "theory",
-      "content": "<Diplomatic language> represents perhaps the most carefully calibrated register in English, where every word carries weight and ambiguity is often intentional rather than accidental.\n\nKey features of diplomatic discourse:\n• <Constructive ambiguity> — deliberately vague language that allows multiple interpretations, enabling parties to agree on text while maintaining different positions\n• <Hedged commitments> — phrases like <shall endeavour to> or <will give due consideration to> that signal intention without binding obligation\n• <Face-saving language> — formulations that allow parties to change position without appearing to concede defeat\n\nPolitical discourse employs distinct rhetorical strategies:\n• <Framing> — presenting issues in ways that favour particular interpretations\n• <Dog-whistle politics> — language that carries one meaning for the general public and another for a specific audience\n• <Euphemism> — substituting mild expressions for harsh realities: <collateral damage> for civilian casualties, <downsizing> for mass layoffs\n• <Weasel words> — qualifiers that hollow out statements: <some people say>, <it has been suggested that>\n\nCritical analysis of political language requires identifying these strategies and evaluating the gap between rhetoric and substance."
+      "content": "<Diplomatic language> represents perhaps the most carefully calibrated register in English, where every word carries weight and ambiguity is often intentional rather than accidental.\n\nKey features of diplomatic discourse:\n• <Constructive ambiguity> — deliberately vague language that allows multiple interpretations, enabling parties to agree on text while maintaining different positions\n• <Hedged commitments> — phrases like <shall endeavour to> or <will give due consideration to> that signal intention without binding obligation\n• <Face-saving language> — formulations that allow parties to change position without appearing to concede defeat\n\nPolitical discourse employs distinct rhetorical strategies:\n• <Framing> — presenting issues in ways that favour particular interpretations\n• <Dog-whistle politics> — language that carries one meaning for the general public and another for a specific audience\n• <Euphemism> — substituting mild expressions for harsh realities: <collateral damage> for civilian casualties, <downsizing> for mass layoffs\n• <Weasel words> — qualifiers that hollow out statements: <some people say>, <it has been suggested that>\n\nCritical analysis of political language requires identifying these strategies and evaluating the gap between rhetoric and substance.",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Diplomatic language",
+            "definition": "Carefully chosen words intended to maintain relations and avoid offense"
+          },
+          {
+            "term": "Constructive ambiguity",
+            "definition": "Deliberately vague language used to enable agreement between opposing parties"
+          },
+          {
+            "term": "Hedged commitments",
+            "definition": "Cautiously worded promises that limit obligation or allow flexibility"
+          },
+          {
+            "term": "shall endeavour to",
+            "definition": "Formal legal phrasing expressing a strong but non-absolute obligation"
+          },
+          {
+            "term": "Face-saving language",
+            "definition": "Expressions used to preserve dignity and avoid embarrassment for others"
+          },
+          {
+            "term": "Framing",
+            "definition": "Presenting information in a way that influences perception and interpretation"
+          }
+        ]
+      }
     },
     {
       "id": "examples-2",

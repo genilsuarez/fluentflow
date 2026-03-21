@@ -18,19 +18,103 @@
       "id": "career-planning",
       "title": "Strategic Career Planning",
       "type": "theory",
-      "content": "Effective career planning requires both short-term and long-term vision. A <career path> outlines progression from entry-level to senior positions. <Career goals> should be SMART: Specific, Measurable, Achievable, Relevant, and Time-bound. <Professional development> includes formal education, certifications, workshops, and on-the-job learning. <Upskilling> means learning new competencies, while <reskilling> involves training for a different role. <Mentorship> provides guidance from experienced professionals. <Networking> builds professional relationships that open opportunities. Consider your <transferable skills> - abilities applicable across different roles. Regular <performance reviews> assess progress and identify areas for improvement. <Career pivots> involve strategic changes in direction, requiring careful planning and often additional training."
+      "content": "Effective career planning requires both short-term and long-term vision. A <career path> outlines progression from entry-level to senior positions. <Career goals> should be SMART: Specific, Measurable, Achievable, Relevant, and Time-bound. <Professional development> includes formal education, certifications, workshops, and on-the-job learning. <Upskilling> means learning new competencies, while <reskilling> involves training for a different role. <Mentorship> provides guidance from experienced professionals. <Networking> builds professional relationships that open opportunities. Consider your <transferable skills> - abilities applicable across different roles. Regular <performance reviews> assess progress and identify areas for improvement. <Career pivots> involve strategic changes in direction, requiring careful planning and often additional training.\n\nKey terms:\n• <Career path> – The progression of jobs and roles throughout a person's working life.\n• <Career goals> – Professional objectives a person aims to achieve over time.\n• <Professional development> – Activities that improve skills and knowledge for your career.\n• <Upskilling> – Learning additional skills to improve in your current role.\n• <Reskilling> – Learning new skills to do a different job.",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "career path",
+            "definition": "The progression of jobs and roles throughout a person's working life."
+          },
+          {
+            "term": "Career goals",
+            "definition": "Professional objectives a person aims to achieve over time."
+          },
+          {
+            "term": "Professional development",
+            "definition": "Activities that improve skills and knowledge for your career."
+          },
+          {
+            "term": "Upskilling",
+            "definition": "Learning additional skills to improve in your current role."
+          },
+          {
+            "term": "reskilling",
+            "definition": "Learning new skills to do a different job."
+          },
+          {
+            "term": "Mentorship",
+            "definition": "A relationship where an experienced person guides someone less experienced."
+          }
+        ]
+      }
     },
     {
       "id": "workplace-dynamics",
       "title": "Understanding Workplace Culture and Dynamics",
       "type": "theory",
-      "content": "<Organizational culture> encompasses values, beliefs, and behaviors within a company. <Corporate hierarchy> defines reporting structures and authority levels. <Stakeholders> are individuals or groups with interest in business outcomes. <Cross-functional collaboration> involves working across departments. <Office politics> refers to power dynamics and interpersonal relationships affecting decisions. <Work-life balance> maintains healthy boundaries between professional and personal life. <Remote work> and <hybrid models> have transformed workplace norms. <Emotional intelligence> (EQ) - understanding and managing emotions - is crucial for professional success. <Conflict resolution> skills help navigate disagreements constructively. <Team dynamics> affect productivity and morale. Understanding these elements helps you navigate complex professional environments effectively."
+      "content": "<Organizational culture> encompasses values, beliefs, and behaviors within a company. <Corporate hierarchy> defines reporting structures and authority levels. <Stakeholders> are individuals or groups with interest in business outcomes. <Cross-functional collaboration> involves working across departments. <Office politics> refers to power dynamics and interpersonal relationships affecting decisions. <Work-life balance> maintains healthy boundaries between professional and personal life. <Remote work> and <hybrid models> have transformed workplace norms. <Emotional intelligence> (EQ) - understanding and managing emotions - is crucial for professional success. <Conflict resolution> skills help navigate disagreements constructively. <Team dynamics> affect productivity and morale. Understanding these elements helps you navigate complex professional environments effectively.\n\nKey terms:\n• <Organizational culture> – Shared values, beliefs, and norms that shape behavior within organizations\n• <Corporate hierarchy> – The system of ranked authority levels within a company.\n• <Stakeholders> – People or groups with an interest in a project or organisation.\n• <Cross-functional collaboration> – Teamwork between people from different departments or specialities.\n• <Office politics> – The use of power and influence within a workplace.",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Organizational culture",
+            "definition": "Shared values, beliefs, and norms that shape behavior within organizations"
+          },
+          {
+            "term": "Corporate hierarchy",
+            "definition": "The system of ranked authority levels within a company."
+          },
+          {
+            "term": "Stakeholders",
+            "definition": "People or groups with an interest in a project or organisation."
+          },
+          {
+            "term": "Cross-functional collaboration",
+            "definition": "Teamwork between people from different departments or specialities."
+          },
+          {
+            "term": "Office politics",
+            "definition": "The use of power and influence within a workplace."
+          },
+          {
+            "term": "Work-life balance",
+            "definition": "A healthy division of time between work and personal activities."
+          }
+        ]
+      }
     },
     {
       "id": "leadership-advancement",
       "title": "Leadership and Career Advancement",
       "type": "theory",
-      "content": "<Leadership> isn't just about managing people - it's about inspiring, influencing, and driving change. Key leadership qualities include <vision> (seeing the big picture), <strategic thinking> (planning long-term), <decision-making> (choosing wisely under pressure), and <accountability> (taking responsibility). <Delegation> empowers team members while freeing leaders for strategic work. <Change management> guides organizations through transitions. To advance, demonstrate <initiative> - proactively solving problems without being asked. Build your <personal brand> - your professional reputation and unique value proposition. <Thought leadership> establishes you as an expert through speaking, writing, or innovative work. <Executive presence> combines confidence, communication skills, and gravitas. Seek <stretch assignments> that challenge you beyond your current role."
+      "content": "<Leadership> isn't just about managing people - it's about inspiring, influencing, and driving change. Key leadership qualities include <vision> (seeing the big picture), <strategic thinking> (planning long-term), <decision-making> (choosing wisely under pressure), and <accountability> (taking responsibility). <Delegation> empowers team members while freeing leaders for strategic work. <Change management> guides organizations through transitions. To advance, demonstrate <initiative> - proactively solving problems without being asked. Build your <personal brand> - your professional reputation and unique value proposition. <Thought leadership> establishes you as an expert through speaking, writing, or innovative work. <Executive presence> combines confidence, communication skills, and gravitas. Seek <stretch assignments> that challenge you beyond your current role.\n\nKey terms:\n• <Leadership> – The ability to guide, motivate, and direct a group of people.\n• <Vision> – A clear idea of what you want to achieve in the future.\n• <Strategic thinking> – The ability to plan long-term actions to achieve important goals.\n• <Decision-making> – The process of choosing between options to reach a conclusion.\n• <Accountability> – Responsibility for one's actions and decisions",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Leadership",
+            "definition": "The ability to guide, motivate, and direct a group of people."
+          },
+          {
+            "term": "vision",
+            "definition": "A clear idea of what you want to achieve in the future."
+          },
+          {
+            "term": "strategic thinking",
+            "definition": "The ability to plan long-term actions to achieve important goals."
+          },
+          {
+            "term": "decision-making",
+            "definition": "The process of choosing between options to reach a conclusion."
+          },
+          {
+            "term": "accountability",
+            "definition": "Responsibility for one's actions and decisions"
+          },
+          {
+            "term": "Delegation",
+            "definition": "Assigning tasks or responsibilities to other people."
+          }
+        ]
+      }
     },
     {
       "id": "examples",
@@ -42,7 +126,35 @@
       "id": "negotiation-conflict",
       "title": "Negotiation and Conflict Resolution",
       "type": "theory",
-      "content": "Effective professionals must navigate <negotiations> and resolve <conflicts> constructively. Key strategies include:\n\n<Principled negotiation> focuses on interests rather than positions. Instead of demanding a specific outcome, explore the underlying needs of all parties. <Active listening> demonstrates respect and helps identify common ground.\n\nConflict resolution approaches:\n• <Collaboration> - Working together to find a mutually beneficial solution\n• <Compromise> - Each party gives up something to reach agreement\n• <Mediation> - A neutral third party facilitates discussion\n• <De-escalation> - Reducing tension before addressing the core issue\n\nProfessional language for disagreement: <I see your point, however...>, <I understand your concern, but perhaps we could consider...>, <While I appreciate your perspective, the data suggests...>"
+      "content": "Effective professionals must navigate <negotiations> and resolve <conflicts> constructively. Key strategies include:\n\n<Principled negotiation> focuses on interests rather than positions. Instead of demanding a specific outcome, explore the underlying needs of all parties. <Active listening> demonstrates respect and helps identify common ground.\n\nConflict resolution approaches:\n• <Collaboration> - Working together to find a mutually beneficial solution\n• <Compromise> - Each party gives up something to reach agreement\n• <Mediation> - A neutral third party facilitates discussion\n• <De-escalation> - Reducing tension before addressing the core issue\n\nProfessional language for disagreement: <I see your point, however...>, <I understand your concern, but perhaps we could consider...>, <While I appreciate your perspective, the data suggests...>",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "negotiations",
+            "definition": "Discussions aimed at reaching an agreement between different parties."
+          },
+          {
+            "term": "conflicts",
+            "definition": "Serious disagreements or arguments between people or groups."
+          },
+          {
+            "term": "Principled negotiation",
+            "definition": "A negotiation method focused on mutual interests rather than positions."
+          },
+          {
+            "term": "Active listening",
+            "definition": "Fully concentrating on and understanding what someone is saying."
+          },
+          {
+            "term": "Collaboration",
+            "definition": "Working together with others to achieve a shared goal."
+          },
+          {
+            "term": "Compromise",
+            "definition": "An agreement where each side gives up something to settle a dispute."
+          }
+        ]
+      }
     },
     {
       "id": "examples-2",

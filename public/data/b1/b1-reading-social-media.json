@@ -18,19 +18,103 @@
       "id": "platforms-features",
       "title": "Social Media Platforms and Features",
       "type": "theory",
-      "content": "Different platforms serve different purposes. Facebook connects friends and family through <posts>, <photos>, and <status updates>. Instagram focuses on visual content - <photos> and <videos>, with <stories> that disappear after 24 hours. Twitter uses short <tweets> (messages) with <hashtags> (#) to categorize topics. TikTok features short-form videos. LinkedIn is for professional networking. Common features across platforms: <like> or <react> to content, <comment> to respond, <share> or <retweet> to spread content, <follow> users you're interested in, <tag> people in posts, and send <direct messages> (DMs) privately. Your <profile> shows your information and content. <Notifications> alert you to activity."
+      "content": "Different platforms serve different purposes. Facebook connects friends and family through <posts>, <photos>, and <status updates>. Instagram focuses on visual content - <photos> and <videos>, with <stories> that disappear after 24 hours. Twitter uses short <tweets> (messages) with <hashtags> (#) to categorize topics. TikTok features short-form videos. LinkedIn is for professional networking. Common features across platforms: <like> or <react> to content, <comment> to respond, <share> or <retweet> to spread content, <follow> users you're interested in, <tag> people in posts, and send <direct messages> (DMs) privately. Your <profile> shows your information and content. <Notifications> alert you to activity.\n\nKey terms:\n• <Posts> – Messages or content shared publicly on social media platforms.\n• <Photos> – Images captured with a camera or phone.\n• <Status updates> – Short messages sharing what someone is doing or thinking online.\n• <Videos> – Recordings of moving images, often shared online.\n• <Stories> – Short photo or video posts that disappear after a set time.",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "posts",
+            "definition": "Messages or content shared publicly on social media platforms."
+          },
+          {
+            "term": "photos",
+            "definition": "Images captured with a camera or phone."
+          },
+          {
+            "term": "status updates",
+            "definition": "Short messages sharing what someone is doing or thinking online."
+          },
+          {
+            "term": "videos",
+            "definition": "Recordings of moving images, often shared online."
+          },
+          {
+            "term": "stories",
+            "definition": "Short photo or video posts that disappear after a set time."
+          },
+          {
+            "term": "tweets",
+            "definition": "Short messages posted on the social media platform X (Twitter)."
+          }
+        ]
+      }
     },
     {
       "id": "content-creation",
       "title": "Creating and Sharing Content",
       "type": "theory",
-      "content": "<Content creators> or <influencers> produce material for audiences. They <post> regularly to maintain <engagement> - likes, comments, and shares. <Viral> content spreads rapidly across the internet. <Algorithms> determine what content users see in their <feed> or <timeline>. <Hashtags> help content reach wider audiences. <Stories> provide temporary, casual updates. <Live streaming> broadcasts video in real-time. <Captions> accompany visual content. <Filters> and <editing tools> enhance photos and videos. Building a <following> or <audience> takes consistent, quality content. <Analytics> track performance metrics like <reach>, <impressions>, and <engagement rate>."
+      "content": "<Content creators> or <influencers> produce material for audiences. They <post> regularly to maintain <engagement> - likes, comments, and shares. <Viral> content spreads rapidly across the internet. <Algorithms> determine what content users see in their <feed> or <timeline>. <Hashtags> help content reach wider audiences. <Stories> provide temporary, casual updates. <Live streaming> broadcasts video in real-time. <Captions> accompany visual content. <Filters> and <editing tools> enhance photos and videos. Building a <following> or <audience> takes consistent, quality content. <Analytics> track performance metrics like <reach>, <impressions>, and <engagement rate>.\n\nKey terms:\n• <Content creators> – People who produce and share material online for an audience.\n• <Influencers> – People with large online followings who affect others' opinions or choices.\n• <Post> – A message or piece of content shared on social media.\n• <Engagement> – Interaction with content through likes, comments, and shares\n• <Viral> – Content that spreads rapidly and widely across the internet",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Content creators",
+            "definition": "People who produce and share material online for an audience."
+          },
+          {
+            "term": "influencers",
+            "definition": "People with large online followings who affect others' opinions or choices."
+          },
+          {
+            "term": "post",
+            "definition": "A message or piece of content shared on social media."
+          },
+          {
+            "term": "engagement",
+            "definition": "Interaction with content through likes, comments, and shares"
+          },
+          {
+            "term": "Viral",
+            "definition": "Content that spreads rapidly and widely across the internet"
+          },
+          {
+            "term": "Algorithms",
+            "definition": "Sets of rules or steps a computer follows to solve problems."
+          }
+        ]
+      }
     },
     {
       "id": "impact-challenges",
       "title": "Social Media's Impact and Challenges",
       "type": "theory",
-      "content": "Social media offers benefits: staying connected, accessing information, building communities, and business opportunities. However, challenges exist. <Cyberbullying> harms people online. <Misinformation> and <fake news> spread quickly. <Privacy concerns> arise from data collection. <Addiction> to social media affects mental health. <FOMO> (fear of missing out) creates anxiety. <Echo chambers> expose users only to similar viewpoints. <Trolls> post inflammatory content. <Doomscrolling> means endlessly consuming negative news. Balance is crucial - set time limits, verify information before sharing, protect privacy, and remember that online personas don't show complete reality."
+      "content": "Social media offers benefits: staying connected, accessing information, building communities, and business opportunities. However, challenges exist. <Cyberbullying> harms people online. <Misinformation> and <fake news> spread quickly. <Privacy concerns> arise from data collection. <Addiction> to social media affects mental health. <FOMO> (fear of missing out) creates anxiety. <Echo chambers> expose users only to similar viewpoints. <Trolls> post inflammatory content. <Doomscrolling> means endlessly consuming negative news. Balance is crucial - set time limits, verify information before sharing, protect privacy, and remember that online personas don't show complete reality.\n\nKey terms:\n• <Cyberbullying> – Bullying that takes place online or through digital devices\n• <Misinformation> – False or inaccurate information spread without intent to deceive.\n• <Fake news> – False information presented as real news to mislead people.\n• <Privacy concerns> – Worries about how personal information is collected and used.\n• <Addiction> – A strong, harmful need to regularly have or do something.",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Cyberbullying",
+            "definition": "Bullying that takes place online or through digital devices"
+          },
+          {
+            "term": "Misinformation",
+            "definition": "False or inaccurate information spread without intent to deceive."
+          },
+          {
+            "term": "fake news",
+            "definition": "False information presented as real news to mislead people."
+          },
+          {
+            "term": "Privacy concerns",
+            "definition": "Worries about how personal information is collected and used."
+          },
+          {
+            "term": "Addiction",
+            "definition": "A strong, harmful need to regularly have or do something."
+          },
+          {
+            "term": "FOMO",
+            "definition": "Fear of missing out; anxiety about missing enjoyable experiences."
+          }
+        ]
+      }
     },
     {
       "id": "examples",
@@ -42,7 +126,35 @@
       "id": "digital-wellbeing",
       "title": "Digital Wellbeing and Screen Time",
       "type": "theory",
-      "content": "As social media becomes central to daily life, <digital wellbeing> has become an important topic. Research suggests that excessive screen time can affect mental health, sleep quality, and real-world relationships.\n\nKey concepts:\n• <Screen time> - The amount of time spent using digital devices\n• <Digital detox> - Taking a break from technology\n• <FOMO> (Fear of Missing Out) - Anxiety that others are having better experiences\n• <Doomscrolling> - Continuously reading negative news online\n• <Notification fatigue> - Feeling overwhelmed by constant alerts\n\nStrategies for healthier use:\n• Set daily <time limits> for social media apps\n• Turn off non-essential <notifications>\n• Avoid screens for one hour before <bedtime>\n• Schedule regular <offline activities>\n• Be mindful of how content makes you <feel>"
+      "content": "As social media becomes central to daily life, <digital wellbeing> has become an important topic. Research suggests that excessive screen time can affect mental health, sleep quality, and real-world relationships.\n\nKey concepts:\n• <Screen time> - The amount of time spent using digital devices\n• <Digital detox> - Taking a break from technology\n• <FOMO> (Fear of Missing Out) - Anxiety that others are having better experiences\n• <Doomscrolling> - Continuously reading negative news online\n• <Notification fatigue> - Feeling overwhelmed by constant alerts\n\nStrategies for healthier use:\n• Set daily <time limits> for social media apps\n• Turn off non-essential <notifications>\n• Avoid screens for one hour before <bedtime>\n• Schedule regular <offline activities>\n• Be mindful of how content makes you <feel>",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "digital wellbeing",
+            "definition": "A healthy relationship with technology and screen-based activities."
+          },
+          {
+            "term": "Screen time",
+            "definition": "The amount of time spent looking at electronic screens."
+          },
+          {
+            "term": "Digital detox",
+            "definition": "A period of time without using electronic devices or social media."
+          },
+          {
+            "term": "FOMO",
+            "definition": "Fear of missing out; anxiety about missing enjoyable experiences."
+          },
+          {
+            "term": "Doomscrolling",
+            "definition": "Continuously reading negative news online even though it causes stress."
+          },
+          {
+            "term": "Notification fatigue",
+            "definition": "Feeling overwhelmed by too many alerts from apps and devices."
+          }
+        ]
+      }
     },
     {
       "id": "examples-2",
@@ -54,7 +166,15 @@
       "id": "summary",
       "title": "Digital Citizenship",
       "type": "summary",
-      "content": "Social media is a powerful tool that requires responsible use. Key vocabulary includes platform names, features (post, like, share, follow), and concepts (viral, algorithm, influencer). Be a good <digital citizen>: think before you post, respect others, verify information, protect your privacy, and maintain healthy boundaries. Remember that social media shows curated versions of reality - don't compare your life to others' highlight reels. Use these platforms to connect meaningfully, learn, and share positively. Balance online and offline life for better well-being."
+      "content": "Social media is a powerful tool that requires responsible use. Key vocabulary includes platform names, features (post, like, share, follow), and concepts (viral, algorithm, influencer). Be a good <digital citizen>: think before you post, respect others, verify information, protect your privacy, and maintain healthy boundaries. Remember that social media shows curated versions of reality - don't compare your life to others' highlight reels. Use these platforms to connect meaningfully, learn, and share positively. Balance online and offline life for better well-being.",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "digital citizen",
+            "definition": "A person who uses technology and the internet responsibly."
+          }
+        ]
+      }
     }
   ],
   "keyVocabulary": [

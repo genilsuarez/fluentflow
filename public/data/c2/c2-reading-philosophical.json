@@ -18,19 +18,103 @@
       "id": "epistemology-metaphysics",
       "title": "Epistemology and Metaphysics",
       "type": "theory",
-      "content": "<Epistemology> examines the nature, sources, and limits of knowledge. <Rationalism> holds that reason is the primary source of knowledge; <empiricism> privileges sensory experience. <Skepticism> questions whether knowledge is possible. <Foundationalism> seeks indubitable foundations for knowledge; <coherentism> emphasizes mutual support among beliefs. <Justified true belief> traditionally defined knowledge, though Gettier problems revealed inadequacies. <A priori> knowledge is independent of experience; <a posteriori> knowledge derives from experience. <Metaphysics> investigates reality's fundamental nature. <Ontology> concerns what exists. <Substance> is that which exists independently. <Universals> are properties shared by particulars - <realism> affirms their existence, <nominalism> denies it. <Dualism> posits mind and matter as distinct; <materialism> reduces everything to physical; <idealism> claims reality is fundamentally mental. <Determinism> holds that all events are causally necessitated; <libertarianism> (metaphysical, not political) affirms free will."
+      "content": "<Epistemology> examines the nature, sources, and limits of knowledge. <Rationalism> holds that reason is the primary source of knowledge; <empiricism> privileges sensory experience. <Skepticism> questions whether knowledge is possible. <Foundationalism> seeks indubitable foundations for knowledge; <coherentism> emphasizes mutual support among beliefs. <Justified true belief> traditionally defined knowledge, though Gettier problems revealed inadequacies. <A priori> knowledge is independent of experience; <a posteriori> knowledge derives from experience. <Metaphysics> investigates reality's fundamental nature. <Ontology> concerns what exists. <Substance> is that which exists independently. <Universals> are properties shared by particulars - <realism> affirms their existence, <nominalism> denies it. <Dualism> posits mind and matter as distinct; <materialism> reduces everything to physical; <idealism> claims reality is fundamentally mental. <Determinism> holds that all events are causally necessitated; <libertarianism> (metaphysical, not political) affirms free will.\n\nKey terms:\n• <Epistemology> – The branch of philosophy concerned with the nature and scope of knowledge\n• <Rationalism> – Philosophical view that reason is the primary source of knowledge\n• <Empiricism> – Philosophical view that knowledge comes primarily from sensory experience\n• <Skepticism> – Philosophical attitude of questioning claims and withholding judgment without evidence\n• <Foundationalism> – Theory that knowledge rests on basic, self-evident beliefs or truths",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Epistemology",
+            "definition": "The branch of philosophy concerned with the nature and scope of knowledge"
+          },
+          {
+            "term": "Rationalism",
+            "definition": "Philosophical view that reason is the primary source of knowledge"
+          },
+          {
+            "term": "empiricism",
+            "definition": "Philosophical view that knowledge comes primarily from sensory experience"
+          },
+          {
+            "term": "Skepticism",
+            "definition": "Philosophical attitude of questioning claims and withholding judgment without evidence"
+          },
+          {
+            "term": "Foundationalism",
+            "definition": "Theory that knowledge rests on basic, self-evident beliefs or truths"
+          },
+          {
+            "term": "coherentism",
+            "definition": "Theory that beliefs are justified by their consistency with other beliefs"
+          }
+        ]
+      }
     },
     {
       "id": "ethics-political",
       "title": "Ethics and Political Philosophy",
       "type": "theory",
-      "content": "<Ethics> or <moral philosophy> examines right action and good life. <Consequentialism> judges actions by outcomes - <utilitarianism> maximizes overall happiness. <Deontology> emphasizes duties and rules regardless of consequences - Kant's <categorical imperative> demands universalizable maxims. <Virtue ethics> focuses on character rather than acts or consequences. <Metaethics> investigates moral language and concepts. <Moral realism> holds that moral facts exist objectively; <moral relativism> denies universal moral truths; <moral nihilism> rejects moral facts entirely. <Applied ethics> addresses practical issues: bioethics, business ethics, environmental ethics. <Political philosophy> examines justice, rights, authority, and the state. <Liberalism> prioritizes individual liberty; <communitarianism> emphasizes community. <Rawls> theory of justice' employs the <original position> and <veil of ignorance> to derive principles. <Libertarianism> (political) minimizes state power. These frameworks generate ongoing debates about fundamental values."
+      "content": "<Ethics> or <moral philosophy> examines right action and good life. <Consequentialism> judges actions by outcomes - <utilitarianism> maximizes overall happiness. <Deontology> emphasizes duties and rules regardless of consequences - Kant's <categorical imperative> demands universalizable maxims. <Virtue ethics> focuses on character rather than acts or consequences. <Metaethics> investigates moral language and concepts. <Moral realism> holds that moral facts exist objectively; <moral relativism> denies universal moral truths; <moral nihilism> rejects moral facts entirely. <Applied ethics> addresses practical issues: bioethics, business ethics, environmental ethics. <Political philosophy> examines justice, rights, authority, and the state. <Liberalism> prioritizes individual liberty; <communitarianism> emphasizes community. <Rawls> theory of justice' employs the <original position> and <veil of ignorance> to derive principles. <Libertarianism> (political) minimizes state power. These frameworks generate ongoing debates about fundamental values.\n\nKey terms:\n• <Ethics> – Branch of philosophy studying moral principles governing right and wrong\n• <Moral philosophy> – The study of what is right, wrong, and ethically justifiable\n• <Consequentialism> – Ethical theory judging actions solely by their outcomes or consequences\n• <Utilitarianism> – Ethical theory that the best action maximizes overall happiness or well-being\n• <Deontology> – Ethical theory based on duty and adherence to moral rules",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Ethics",
+            "definition": "Branch of philosophy studying moral principles governing right and wrong"
+          },
+          {
+            "term": "moral philosophy",
+            "definition": "The study of what is right, wrong, and ethically justifiable"
+          },
+          {
+            "term": "Consequentialism",
+            "definition": "Ethical theory judging actions solely by their outcomes or consequences"
+          },
+          {
+            "term": "utilitarianism",
+            "definition": "Ethical theory that the best action maximizes overall happiness or well-being"
+          },
+          {
+            "term": "Deontology",
+            "definition": "Ethical theory based on duty and adherence to moral rules"
+          },
+          {
+            "term": "categorical imperative",
+            "definition": "Kant's principle that one should act only according to universalizable maxims"
+          }
+        ]
+      }
     },
     {
       "id": "logic-language",
       "title": "Logic, Language, and Philosophy of Mind",
       "type": "theory",
-      "content": "<Logic> studies valid reasoning. <Deductive arguments> guarantee conclusions if premises are true; <inductive arguments> provide probabilistic support. <Formal logic> uses symbolic systems. <Fallacies> are common reasoning errors: <ad hominem> attacks the person, <straw man> misrepresents positions, <false dilemma> presents limited options artificially. <Philosophy of language> examines meaning, reference, and communication. <Descriptivism> holds that names refer through descriptions; <direct reference theory> posits unmediated reference. <Speech act theory> analyzes how language performs actions. <Analytic> statements are true by meaning; <synthetic> statements require empirical verification. <Philosophy of mind> investigates consciousness and mental states. The <mind-body problem> asks how mental and physical relate. <Functionalism> defines mental states by causal roles. <Qualia> are subjective experiential properties. The <hard problem of consciousness> concerns why physical processes produce subjective experience. <Intentionality> is the mind's aboutness or directedness."
+      "content": "<Logic> studies valid reasoning. <Deductive arguments> guarantee conclusions if premises are true; <inductive arguments> provide probabilistic support. <Formal logic> uses symbolic systems. <Fallacies> are common reasoning errors: <ad hominem> attacks the person, <straw man> misrepresents positions, <false dilemma> presents limited options artificially. <Philosophy of language> examines meaning, reference, and communication. <Descriptivism> holds that names refer through descriptions; <direct reference theory> posits unmediated reference. <Speech act theory> analyzes how language performs actions. <Analytic> statements are true by meaning; <synthetic> statements require empirical verification. <Philosophy of mind> investigates consciousness and mental states. The <mind-body problem> asks how mental and physical relate. <Functionalism> defines mental states by causal roles. <Qualia> are subjective experiential properties. The <hard problem of consciousness> concerns why physical processes produce subjective experience. <Intentionality> is the mind's aboutness or directedness.\n\nKey terms:\n• <Logic> – The systematic study of valid reasoning and argumentation principles\n• <Deductive arguments> – Reasoning from general premises to a logically certain conclusion\n• <Inductive arguments> – Reasoning from specific observations to broader generalizations or conclusions\n• <Formal logic> – Study of valid inference using symbolic and mathematical methods\n• <Fallacies> – Errors in reasoning that undermine the logic of an argument",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Logic",
+            "definition": "The systematic study of valid reasoning and argumentation principles"
+          },
+          {
+            "term": "Deductive arguments",
+            "definition": "Reasoning from general premises to a logically certain conclusion"
+          },
+          {
+            "term": "inductive arguments",
+            "definition": "Reasoning from specific observations to broader generalizations or conclusions"
+          },
+          {
+            "term": "Formal logic",
+            "definition": "Study of valid inference using symbolic and mathematical methods"
+          },
+          {
+            "term": "Fallacies",
+            "definition": "Errors in reasoning that undermine the logic of an argument"
+          },
+          {
+            "term": "ad hominem",
+            "definition": "A fallacy attacking the person rather than their argument"
+          }
+        ]
+      }
     },
     {
       "id": "examples",
@@ -42,7 +126,35 @@
       "id": "aesthetics-existentialism",
       "title": "Aesthetics, Existentialism, and Continental Philosophy",
       "type": "theory",
-      "content": "<Aesthetics> investigates the nature of beauty, art, and taste. Central questions include whether beauty is objective or subjective, what distinguishes art from non-art, and how aesthetic experience relates to other forms of knowledge. Kant distinguished between the <beautiful> (universally pleasing) and the <sublime> (overwhelming, awe-inspiring). The <institutional theory of art> holds that something becomes art when the art world designates it as such.\n\n<Existentialism> emphasizes individual existence, freedom, and choice. Sartre's dictum that <existence precedes essence> means humans have no predetermined nature — we create ourselves through our choices. This radical freedom produces <anguish> (awareness of responsibility), <abandonment> (no divine guidance), and <despair> (uncertainty about outcomes). Heidegger's concept of <Dasein> (being-there) emphasizes our <thrownness> into a world we didn't choose and our orientation toward death as the horizon that gives life meaning.\n\n<Phenomenology>, founded by Husserl, examines the structures of conscious experience. Through <epoché> (bracketing assumptions), phenomenologists describe how objects appear to consciousness. Merleau-Ponty extended this to <embodied cognition>, arguing that perception is fundamentally shaped by our bodily engagement with the world."
+      "content": "<Aesthetics> investigates the nature of beauty, art, and taste. Central questions include whether beauty is objective or subjective, what distinguishes art from non-art, and how aesthetic experience relates to other forms of knowledge. Kant distinguished between the <beautiful> (universally pleasing) and the <sublime> (overwhelming, awe-inspiring). The <institutional theory of art> holds that something becomes art when the art world designates it as such.\n\n<Existentialism> emphasizes individual existence, freedom, and choice. Sartre's dictum that <existence precedes essence> means humans have no predetermined nature — we create ourselves through our choices. This radical freedom produces <anguish> (awareness of responsibility), <abandonment> (no divine guidance), and <despair> (uncertainty about outcomes). Heidegger's concept of <Dasein> (being-there) emphasizes our <thrownness> into a world we didn't choose and our orientation toward death as the horizon that gives life meaning.\n\n<Phenomenology>, founded by Husserl, examines the structures of conscious experience. Through <epoché> (bracketing assumptions), phenomenologists describe how objects appear to consciousness. Merleau-Ponty extended this to <embodied cognition>, arguing that perception is fundamentally shaped by our bodily engagement with the world.\n\nKey terms:\n• <Aesthetics> – Branch of philosophy concerned with the nature of beauty and art\n• <Beautiful> – Possessing qualities that give intense pleasure to the senses or mind\n• <Sublime> – An experience of awe-inspiring greatness beyond ordinary beauty or comprehension\n• <Institutional theory of art> – View that art is defined by its acceptance within art institutions\n• <Existentialism> – Philosophy emphasizing individual freedom, choice, and personal responsibility",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Aesthetics",
+            "definition": "Branch of philosophy concerned with the nature of beauty and art"
+          },
+          {
+            "term": "beautiful",
+            "definition": "Possessing qualities that give intense pleasure to the senses or mind"
+          },
+          {
+            "term": "sublime",
+            "definition": "An experience of awe-inspiring greatness beyond ordinary beauty or comprehension"
+          },
+          {
+            "term": "institutional theory of art",
+            "definition": "View that art is defined by its acceptance within art institutions"
+          },
+          {
+            "term": "Existentialism",
+            "definition": "Philosophy emphasizing individual freedom, choice, and personal responsibility"
+          },
+          {
+            "term": "existence precedes essence",
+            "definition": "Existentialist idea that humans define themselves through choices, not nature"
+          }
+        ]
+      }
     },
     {
       "id": "examples-2",

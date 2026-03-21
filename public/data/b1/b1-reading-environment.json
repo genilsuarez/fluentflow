@@ -18,19 +18,103 @@
       "id": "climate-change",
       "title": "Climate Change and Global Warming",
       "type": "theory",
-      "content": "<Climate change> refers to long-term changes in Earth's weather patterns. <Global warming> is the increase in Earth's average temperature, primarily caused by <greenhouse gases> like carbon dioxide (CO2) and methane. These gases trap heat in the atmosphere, creating a <greenhouse effect>. Human activities, especially burning <fossil fuels> (coal, oil, gas), release massive amounts of CO2. Consequences include melting ice caps, rising sea levels, extreme weather events, and disrupted ecosystems. Scientists measure climate change through <carbon footprint> - the total greenhouse gases produced by human activities."
+      "content": "<Climate change> refers to long-term changes in Earth's weather patterns. <Global warming> is the increase in Earth's average temperature, primarily caused by <greenhouse gases> like carbon dioxide (CO2) and methane. These gases trap heat in the atmosphere, creating a <greenhouse effect>. Human activities, especially burning <fossil fuels> (coal, oil, gas), release massive amounts of CO2. Consequences include melting ice caps, rising sea levels, extreme weather events, and disrupted ecosystems. Scientists measure climate change through <carbon footprint> - the total greenhouse gases produced by human activities.\n\nKey terms:\n• <Climate change> – Long-term shifts in global temperatures and weather patterns.\n• <Global warming> – The gradual increase in Earth's average surface temperature.\n• <Greenhouse gases> – Gases like CO2 that trap heat in the atmosphere.\n• <Greenhouse effect> – The trapping of heat in Earth's atmosphere by certain gases.\n• <Fossil fuels> – Energy sources like coal, oil, and gas formed from ancient organisms.",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Climate change",
+            "definition": "Long-term shifts in global temperatures and weather patterns."
+          },
+          {
+            "term": "Global warming",
+            "definition": "The gradual increase in Earth's average surface temperature."
+          },
+          {
+            "term": "greenhouse gases",
+            "definition": "Gases like CO2 that trap heat in the atmosphere."
+          },
+          {
+            "term": "greenhouse effect",
+            "definition": "The trapping of heat in Earth's atmosphere by certain gases."
+          },
+          {
+            "term": "fossil fuels",
+            "definition": "Energy sources like coal, oil, and gas formed from ancient organisms."
+          },
+          {
+            "term": "carbon footprint",
+            "definition": "Total greenhouse gases produced by human activities"
+          }
+        ]
+      }
     },
     {
       "id": "environmental-problems",
       "title": "Major Environmental Challenges",
       "type": "theory",
-      "content": "Beyond climate change, we face multiple environmental threats. <Pollution> contaminates air, water, and soil - from industrial waste, plastic, and chemicals. <Deforestation> destroys forests, eliminating habitats and reducing oxygen production. <Biodiversity loss> means species are becoming extinct at alarming rates. <Ocean acidification> harms marine life. <Plastic pollution> fills oceans and landfills - plastic takes hundreds of years to decompose. <Air pollution> from vehicles and factories causes health problems. <Water scarcity> affects billions of people. These interconnected problems require urgent action."
+      "content": "Beyond climate change, we face multiple environmental threats. <Pollution> contaminates air, water, and soil - from industrial waste, plastic, and chemicals. <Deforestation> destroys forests, eliminating habitats and reducing oxygen production. <Biodiversity loss> means species are becoming extinct at alarming rates. <Ocean acidification> harms marine life. <Plastic pollution> fills oceans and landfills - plastic takes hundreds of years to decompose. <Air pollution> from vehicles and factories causes health problems. <Water scarcity> affects billions of people. These interconnected problems require urgent action.\n\nKey terms:\n• <Pollution> – The introduction of harmful substances into the natural environment.\n• <Deforestation> – The clearing or removal of forests from land.\n• <Biodiversity loss> – The decline in the variety of plant and animal species.\n• <Ocean acidification> – The decrease in ocean pH caused by absorbing excess carbon dioxide.\n• <Plastic pollution> – Environmental damage caused by the accumulation of plastic waste.",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Pollution",
+            "definition": "The introduction of harmful substances into the natural environment."
+          },
+          {
+            "term": "Deforestation",
+            "definition": "The clearing or removal of forests from land."
+          },
+          {
+            "term": "Biodiversity loss",
+            "definition": "The decline in the variety of plant and animal species."
+          },
+          {
+            "term": "Ocean acidification",
+            "definition": "The decrease in ocean pH caused by absorbing excess carbon dioxide."
+          },
+          {
+            "term": "Plastic pollution",
+            "definition": "Environmental damage caused by the accumulation of plastic waste."
+          },
+          {
+            "term": "Air pollution",
+            "definition": "Harmful substances released into the air that damage health and environment."
+          }
+        ]
+      }
     },
     {
       "id": "solutions",
       "title": "Sustainable Solutions",
       "type": "theory",
-      "content": "<Sustainability> means meeting present needs without compromising future generations. Solutions include: <Renewable energy> (solar, wind, hydro) replaces fossil fuels. <Recycling> and <composting> reduce waste. <Conservation> protects natural resources and wildlife. <Reforestation> plants new trees. <Green technology> develops eco-friendly innovations. Individual actions matter: reduce consumption, use public transport, eat less meat, avoid single-use plastics, conserve water and energy. <Carbon neutral> means balancing emissions with removal. Many countries set <emission targets> to limit pollution. <Circular economy> reuses materials instead of discarding them."
+      "content": "<Sustainability> means meeting present needs without compromising future generations. Solutions include: <Renewable energy> (solar, wind, hydro) replaces fossil fuels. <Recycling> and <composting> reduce waste. <Conservation> protects natural resources and wildlife. <Reforestation> plants new trees. <Green technology> develops eco-friendly innovations. Individual actions matter: reduce consumption, use public transport, eat less meat, avoid single-use plastics, conserve water and energy. <Carbon neutral> means balancing emissions with removal. Many countries set <emission targets> to limit pollution. <Circular economy> reuses materials instead of discarding them.\n\nKey terms:\n• <Sustainability> – Meeting present needs without harming future generations\n• <Renewable energy> – Energy from sources that don't run out, like sun and wind\n• <Recycling> – Converting waste materials into new products to reduce pollution.\n• <Composting> – The process of recycling organic waste into natural fertilizer.\n• <Conservation> – Protection and preservation of natural resources",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Sustainability",
+            "definition": "Meeting present needs without harming future generations"
+          },
+          {
+            "term": "Renewable energy",
+            "definition": "Energy from sources that don't run out, like sun and wind"
+          },
+          {
+            "term": "Recycling",
+            "definition": "Converting waste materials into new products to reduce pollution."
+          },
+          {
+            "term": "composting",
+            "definition": "The process of recycling organic waste into natural fertilizer."
+          },
+          {
+            "term": "Conservation",
+            "definition": "Protection and preservation of natural resources"
+          },
+          {
+            "term": "Reforestation",
+            "definition": "Planting trees in areas where forests have been cut down."
+          }
+        ]
+      }
     },
     {
       "id": "examples",
@@ -42,7 +126,35 @@
       "id": "renewable-energy",
       "title": "Renewable Energy and Green Technology",
       "type": "theory",
-      "content": "Transitioning to <renewable energy> is essential for combating climate change. The main sources include:\n\n• <Solar power> - Energy from sunlight using photovoltaic panels\n• <Wind energy> - Electricity generated by wind turbines\n• <Hydroelectric power> - Energy from flowing water\n• <Geothermal energy> - Heat from inside the Earth\n• <Biomass> - Energy from organic materials\n\nMany countries are setting ambitious targets. The European Union aims to generate 42.5% of its energy from renewable sources by 2030. <Electric vehicles> are replacing petrol cars, and <energy-efficient> buildings reduce consumption.\n\nHowever, challenges remain: renewable energy can be <intermittent> (the sun doesn't always shine), and building infrastructure requires significant <investment>."
+      "content": "Transitioning to <renewable energy> is essential for combating climate change. The main sources include:\n\n• <Solar power> - Energy from sunlight using photovoltaic panels\n• <Wind energy> - Electricity generated by wind turbines\n• <Hydroelectric power> - Energy from flowing water\n• <Geothermal energy> - Heat from inside the Earth\n• <Biomass> - Energy from organic materials\n\nMany countries are setting ambitious targets. The European Union aims to generate 42.5% of its energy from renewable sources by 2030. <Electric vehicles> are replacing petrol cars, and <energy-efficient> buildings reduce consumption.\n\nHowever, challenges remain: renewable energy can be <intermittent> (the sun doesn't always shine), and building infrastructure requires significant <investment>.",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "renewable energy",
+            "definition": "Energy from sources that don't run out, like sun and wind"
+          },
+          {
+            "term": "Solar power",
+            "definition": "Energy from sunlight converted into electricity or heat."
+          },
+          {
+            "term": "Wind energy",
+            "definition": "Power generated by converting the force of wind into electricity."
+          },
+          {
+            "term": "Hydroelectric power",
+            "definition": "Electricity generated by the force of flowing water."
+          },
+          {
+            "term": "Geothermal energy",
+            "definition": "Heat energy generated and stored inside the Earth."
+          },
+          {
+            "term": "Biomass",
+            "definition": "Organic material from plants or animals used as energy."
+          }
+        ]
+      }
     },
     {
       "id": "examples-2",

@@ -18,19 +18,103 @@
       "id": "economic-inequality",
       "title": "Economic Inequality and Development",
       "type": "theory",
-      "content": "<Economic inequality> refers to unequal distribution of wealth and income. The <wealth gap> between rich and poor continues widening in many countries. <Poverty> exists in both <developing nations> and <developed countries>. The <poverty line> defines minimum income for basic needs. <Income disparity> affects access to education, healthcare, and opportunities. <Social mobility> - the ability to improve one's economic status - has decreased in many societies. <Systemic inequality> results from historical and structural factors, not just individual circumstances. <Universal basic income> (UBI) is proposed as one solution. <Fair trade> ensures producers in developing countries receive fair compensation. <Microfinance> provides small loans to entrepreneurs in poor communities. <Sustainable development goals> (SDGs) address poverty, hunger, and inequality globally."
+      "content": "<Economic inequality> refers to unequal distribution of wealth and income. The <wealth gap> between rich and poor continues widening in many countries. <Poverty> exists in both <developing nations> and <developed countries>. The <poverty line> defines minimum income for basic needs. <Income disparity> affects access to education, healthcare, and opportunities. <Social mobility> - the ability to improve one's economic status - has decreased in many societies. <Systemic inequality> results from historical and structural factors, not just individual circumstances. <Universal basic income> (UBI) is proposed as one solution. <Fair trade> ensures producers in developing countries receive fair compensation. <Microfinance> provides small loans to entrepreneurs in poor communities. <Sustainable development goals> (SDGs) address poverty, hunger, and inequality globally.\n\nKey terms:\n• <Economic inequality> – The uneven distribution of income and wealth in a society.\n• <Wealth gap> – The difference in assets and income between rich and poor groups.\n• <Poverty> – The state of being extremely poor and lacking basic needs.\n• <Developing nations> – Countries with lower income levels working toward economic growth.\n• <Developed countries> – Nations with advanced economies and high standards of living.",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Economic inequality",
+            "definition": "The uneven distribution of income and wealth in a society."
+          },
+          {
+            "term": "wealth gap",
+            "definition": "The difference in assets and income between rich and poor groups."
+          },
+          {
+            "term": "Poverty",
+            "definition": "The state of being extremely poor and lacking basic needs."
+          },
+          {
+            "term": "developing nations",
+            "definition": "Countries with lower income levels working toward economic growth."
+          },
+          {
+            "term": "developed countries",
+            "definition": "Nations with advanced economies and high standards of living."
+          },
+          {
+            "term": "poverty line",
+            "definition": "The minimum income level needed to meet basic living needs."
+          }
+        ]
+      }
     },
     {
       "id": "migration-refugees",
       "title": "Migration and Refugee Crises",
       "type": "theory",
-      "content": "<Migration> involves people moving between countries for various reasons. <Economic migrants> seek better opportunities, while <refugees> flee persecution or conflict. <Asylum seekers> request protection in another country. <Internally displaced persons> (IDPs) are forced from homes but remain within their country. <Brain drain> occurs when skilled workers leave developing countries. <Integration> challenges include language barriers, cultural differences, and discrimination. <Xenophobia> - fear or hatred of foreigners - fuels anti-immigrant sentiment. <Humanitarian crises> create mass displacement. <Border security> versus <humanitarian obligations> creates policy tensions. <Remittances> - money sent home by migrants - significantly impact developing economies. Solutions require balancing security concerns, economic needs, and humanitarian values."
+      "content": "<Migration> involves people moving between countries for various reasons. <Economic migrants> seek better opportunities, while <refugees> flee persecution or conflict. <Asylum seekers> request protection in another country. <Internally displaced persons> (IDPs) are forced from homes but remain within their country. <Brain drain> occurs when skilled workers leave developing countries. <Integration> challenges include language barriers, cultural differences, and discrimination. <Xenophobia> - fear or hatred of foreigners - fuels anti-immigrant sentiment. <Humanitarian crises> create mass displacement. <Border security> versus <humanitarian obligations> creates policy tensions. <Remittances> - money sent home by migrants - significantly impact developing economies. Solutions require balancing security concerns, economic needs, and humanitarian values.\n\nKey terms:\n• <Migration> – The movement of people from one place to another to live.\n• <Economic migrants> – People who move to another country to improve their financial situation.\n• <Refugees> – People forced to leave their country to escape danger or persecution.\n• <Asylum seekers> – People who have fled their country and applied for international protection.\n• <Internally displaced persons> – People forced to flee their homes but remaining in their country.",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Migration",
+            "definition": "The movement of people from one place to another to live."
+          },
+          {
+            "term": "Economic migrants",
+            "definition": "People who move to another country to improve their financial situation."
+          },
+          {
+            "term": "refugees",
+            "definition": "People forced to leave their country to escape danger or persecution."
+          },
+          {
+            "term": "Asylum seekers",
+            "definition": "People who have fled their country and applied for international protection."
+          },
+          {
+            "term": "Internally displaced persons",
+            "definition": "People forced to flee their homes but remaining in their country."
+          },
+          {
+            "term": "Brain drain",
+            "definition": "The emigration of highly skilled people from a country."
+          }
+        ]
+      }
     },
     {
       "id": "health-pandemics",
       "title": "Public Health and Pandemic Preparedness",
       "type": "theory",
-      "content": "The COVID-19 pandemic highlighted global health vulnerabilities. <Pandemics> are disease outbreaks affecting multiple countries. <Epidemiology> studies disease patterns. <Infectious diseases> spread between people, while <non-communicable diseases> (NCDs) like heart disease and diabetes don't. <Healthcare infrastructure> varies dramatically worldwide. <Health equity> means everyone has fair opportunity for health. <Social determinants of health> - factors like income, education, environment - significantly impact outcomes. <Vaccine hesitancy> complicates disease prevention. <Antimicrobial resistance> threatens modern medicine. <Mental health> receives increasing attention as a global priority. <Universal healthcare> debates continue in many countries. <Global health security> requires international cooperation, early warning systems, and coordinated responses."
+      "content": "The COVID-19 pandemic highlighted global health vulnerabilities. <Pandemics> are disease outbreaks affecting multiple countries. <Epidemiology> studies disease patterns. <Infectious diseases> spread between people, while <non-communicable diseases> (NCDs) like heart disease and diabetes don't. <Healthcare infrastructure> varies dramatically worldwide. <Health equity> means everyone has fair opportunity for health. <Social determinants of health> - factors like income, education, environment - significantly impact outcomes. <Vaccine hesitancy> complicates disease prevention. <Antimicrobial resistance> threatens modern medicine. <Mental health> receives increasing attention as a global priority. <Universal healthcare> debates continue in many countries. <Global health security> requires international cooperation, early warning systems, and coordinated responses.\n\nKey terms:\n• <Pandemics> – Outbreaks of disease that spread across countries or the whole world.\n• <Epidemiology> – The study of how diseases spread and can be controlled.\n• <Infectious diseases> – Illnesses caused by organisms that spread between people.\n• <Non-communicable diseases> – Chronic illnesses like diabetes or heart disease that are not contagious.\n• <Healthcare infrastructure> – The facilities, systems, and resources that deliver health services.",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Pandemics",
+            "definition": "Outbreaks of disease that spread across countries or the whole world."
+          },
+          {
+            "term": "Epidemiology",
+            "definition": "The study of how diseases spread and can be controlled."
+          },
+          {
+            "term": "Infectious diseases",
+            "definition": "Illnesses caused by organisms that spread between people."
+          },
+          {
+            "term": "non-communicable diseases",
+            "definition": "Chronic illnesses like diabetes or heart disease that are not contagious."
+          },
+          {
+            "term": "Healthcare infrastructure",
+            "definition": "The facilities, systems, and resources that deliver health services."
+          },
+          {
+            "term": "Health equity",
+            "definition": "The fair opportunity for everyone to achieve their best possible health."
+          }
+        ]
+      }
     },
     {
       "id": "examples",
@@ -42,7 +126,35 @@
       "id": "technology-ethics",
       "title": "Technology, Ethics, and Digital Rights",
       "type": "theory",
-      "content": "Technological advancement raises profound ethical questions that societies must address:\n\n<Artificial intelligence> presents both opportunities and risks. While AI can improve healthcare diagnostics and optimize resource allocation, concerns about <algorithmic bias>, <job displacement>, and <surveillance> are growing.\n\n<Data privacy> has become a fundamental rights issue. The tension between <national security> and <individual privacy> continues to generate debate. Regulations like the GDPR attempt to balance innovation with protection.\n\n<Digital divide> refers to the gap between those with access to technology and those without. This inequality affects education, employment, and civic participation. Bridging this divide requires investment in <infrastructure>, <digital literacy>, and <affordable access>.\n\nThe question of <content moderation> on social platforms highlights the tension between <free speech> and preventing <misinformation> and <hate speech>."
+      "content": "Technological advancement raises profound ethical questions that societies must address:\n\n<Artificial intelligence> presents both opportunities and risks. While AI can improve healthcare diagnostics and optimize resource allocation, concerns about <algorithmic bias>, <job displacement>, and <surveillance> are growing.\n\n<Data privacy> has become a fundamental rights issue. The tension between <national security> and <individual privacy> continues to generate debate. Regulations like the GDPR attempt to balance innovation with protection.\n\n<Digital divide> refers to the gap between those with access to technology and those without. This inequality affects education, employment, and civic participation. Bridging this divide requires investment in <infrastructure>, <digital literacy>, and <affordable access>.\n\nThe question of <content moderation> on social platforms highlights the tension between <free speech> and preventing <misinformation> and <hate speech>.\n\nKey terms:\n• <Artificial intelligence> – Computer systems designed to perform tasks that normally require human intelligence.\n• <Algorithmic bias> – Unfair outcomes produced by flawed assumptions in computer algorithms.\n• <Job displacement> – The loss of jobs due to technology, automation, or economic changes.\n• <Surveillance> – Close observation of a person, group, or area, often by authorities.\n• <Data privacy> – The right to control how personal information is collected and used.",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Artificial intelligence",
+            "definition": "Computer systems designed to perform tasks that normally require human intelligence."
+          },
+          {
+            "term": "algorithmic bias",
+            "definition": "Unfair outcomes produced by flawed assumptions in computer algorithms."
+          },
+          {
+            "term": "job displacement",
+            "definition": "The loss of jobs due to technology, automation, or economic changes."
+          },
+          {
+            "term": "surveillance",
+            "definition": "Close observation of a person, group, or area, often by authorities."
+          },
+          {
+            "term": "Data privacy",
+            "definition": "The right to control how personal information is collected and used."
+          },
+          {
+            "term": "national security",
+            "definition": "The protection of a country and its citizens from threats."
+          }
+        ]
+      }
     },
     {
       "id": "examples-2",

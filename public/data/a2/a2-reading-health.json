@@ -18,19 +18,103 @@
       "id": "body-symptoms",
       "title": "Body Parts and Common Symptoms",
       "type": "theory",
-      "content": "Important body parts: head, neck, chest, stomach, back, arm, leg, hand, foot. Common symptoms include: <headache> (pain in your head), <fever> (high temperature), <cough> (to force air from your lungs with a sudden sound), <sore throat> (painful throat), <stomachache> (pain in stomach), <runny nose> (liquid from nose), and <dizzy> (feeling like everything is spinning). To describe pain, say <My [body part] hurts> or <I have a pain in my [body part]>."
+      "content": "Important body parts: head, neck, chest, stomach, back, arm, leg, hand, foot. Common symptoms include: <headache> (pain in your head), <fever> (high temperature), <cough> (to force air from your lungs with a sudden sound), <sore throat> (painful throat), <stomachache> (pain in stomach), <runny nose> (liquid from nose), and <dizzy> (feeling like everything is spinning). To describe pain, say <My [body part] hurts> or <I have a pain in my [body part]>.\n\nKey terms:\n• <Headache> – A pain in your head\n• <Fever> – A high body temperature when you're sick\n• <Cough> – Push air from your lungs with a sudden sound\n• <Sore throat> – A pain or irritation in your throat\n• <Stomachache> – A pain in your stomach area",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "headache",
+            "definition": "A pain in your head"
+          },
+          {
+            "term": "fever",
+            "definition": "A high body temperature when you're sick"
+          },
+          {
+            "term": "cough",
+            "definition": "Push air from your lungs with a sudden sound"
+          },
+          {
+            "term": "sore throat",
+            "definition": "A pain or irritation in your throat"
+          },
+          {
+            "term": "stomachache",
+            "definition": "A pain in your stomach area"
+          },
+          {
+            "term": "runny nose",
+            "definition": "When liquid keeps coming out of your nose"
+          }
+        ]
+      }
     },
     {
       "id": "doctor-pharmacy",
       "title": "At the Doctor and Pharmacy",
       "type": "theory",
-      "content": "When you're sick, you <see a doctor> or <go to the doctor>. The doctor will <examine> you and ask about your symptoms. They might <prescribe> medicine - give you a written order for medication. You take this <prescription> to a <pharmacy> or <drugstore> to get your medicine. Common medicines: <pain reliever> (for pain), <cough syrup> (for coughs), <antibiotics> (for infections). Always follow the <dosage> - how much medicine to take."
+      "content": "When you're sick, you <see a doctor> or <go to the doctor>. The doctor will <examine> you and ask about your symptoms. They might <prescribe> medicine - give you a written order for medication. You take this <prescription> to a <pharmacy> or <drugstore> to get your medicine. Common medicines: <pain reliever> (for pain), <cough syrup> (for coughs), <antibiotics> (for infections). Always follow the <dosage> - how much medicine to take.\n\nKey terms:\n• <See a doctor> – Visit a medical professional when you feel ill\n• <Go to the doctor> – Visit a medical professional for health advice\n• <Examine> – Look at something carefully to check it\n• <Prescribe> – A doctor tells you which medicine to take\n• <Prescription> – A doctor's written order for medicine",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "see a doctor",
+            "definition": "Visit a medical professional when you feel ill"
+          },
+          {
+            "term": "go to the doctor",
+            "definition": "Visit a medical professional for health advice"
+          },
+          {
+            "term": "examine",
+            "definition": "Look at something carefully to check it"
+          },
+          {
+            "term": "prescribe",
+            "definition": "A doctor tells you which medicine to take"
+          },
+          {
+            "term": "prescription",
+            "definition": "A doctor's written order for medicine"
+          },
+          {
+            "term": "pharmacy",
+            "definition": "A store where you buy medicine"
+          }
+        ]
+      }
     },
     {
       "id": "healthy-habits",
       "title": "Staying Healthy",
       "type": "theory",
-      "content": "Prevention is better than cure! Healthy habits include: <exercise> or <work out> regularly, <eat a balanced diet> with fruits and vegetables, <drink plenty of water>, <get enough sleep> (7-8 hours), <wash your hands> frequently, and <avoid stress>. Regular <check-ups> with your doctor help catch problems early. Don't smoke, and limit alcohol. A healthy lifestyle helps you feel better and prevents illness."
+      "content": "Prevention is better than cure! Healthy habits include: <exercise> or <work out> regularly, <eat a balanced diet> with fruits and vegetables, <drink plenty of water>, <get enough sleep> (7-8 hours), <wash your hands> frequently, and <avoid stress>. Regular <check-ups> with your doctor help catch problems early. Don't smoke, and limit alcohol. A healthy lifestyle helps you feel better and prevents illness.\n\nKey terms:\n• <Exercise> – Physical activity to stay healthy\n• <Work out> – Exercise to keep your body fit and healthy\n• <Eat a balanced diet> – Eat a variety of healthy foods regularly\n• <Drink plenty of water> – Consume a lot of water to stay healthy\n• <Get enough sleep> – Sleep the right amount to feel rested",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "exercise",
+            "definition": "Physical activity to stay healthy"
+          },
+          {
+            "term": "work out",
+            "definition": "Exercise to keep your body fit and healthy"
+          },
+          {
+            "term": "eat a balanced diet",
+            "definition": "Eat a variety of healthy foods regularly"
+          },
+          {
+            "term": "drink plenty of water",
+            "definition": "Consume a lot of water to stay healthy"
+          },
+          {
+            "term": "get enough sleep",
+            "definition": "Sleep the right amount to feel rested"
+          },
+          {
+            "term": "wash your hands",
+            "definition": "Clean your hands with soap and water"
+          }
+        ]
+      }
     },
     {
       "id": "examples",
@@ -42,7 +126,35 @@
       "id": "mental-wellbeing",
       "title": "Mental Health and Wellbeing",
       "type": "theory",
-      "content": "Mental health is as important as physical health. Here are useful words:\n\n• <Stress> - Feeling worried or under pressure\n• <Anxiety> - Feeling nervous or worried about the future\n• <Relax> - To become calm and less worried\n• <Mindfulness> - Paying attention to the present moment\n• <Self-care> - Taking care of your own health and happiness\n\nWays to feel better:\n• Get enough <sleep> (7-8 hours)\n• <Exercise> regularly\n• Talk to <friends> and <family>\n• Take <breaks> during work\n• Spend time <outdoors> in nature\n\nExample: <I feel stressed about my exams. I need to relax and take a break.>"
+      "content": "Mental health is as important as physical health. Here are useful words:\n\n• <Stress> - Feeling worried or under pressure\n• <Anxiety> - Feeling nervous or worried about the future\n• <Relax> - To become calm and less worried\n• <Mindfulness> - Paying attention to the present moment\n• <Self-care> - Taking care of your own health and happiness\n\nWays to feel better:\n• Get enough <sleep> (7-8 hours)\n• <Exercise> regularly\n• Talk to <friends> and <family>\n• Take <breaks> during work\n• Spend time <outdoors> in nature\n\nExample: <I feel stressed about my exams. I need to relax and take a break.>",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Stress",
+            "definition": "A feeling of pressure or worry from difficult situations"
+          },
+          {
+            "term": "Anxiety",
+            "definition": "A feeling of worry or nervousness"
+          },
+          {
+            "term": "Relax",
+            "definition": "Rest and become calm; stop worrying"
+          },
+          {
+            "term": "Mindfulness",
+            "definition": "Paying full attention to the present moment calmly"
+          },
+          {
+            "term": "Self-care",
+            "definition": "Actions you take to look after your own health"
+          },
+          {
+            "term": "sleep",
+            "definition": "Rest with your eyes closed and body inactive"
+          }
+        ]
+      }
     },
     {
       "id": "examples-2",
@@ -54,7 +166,19 @@
       "id": "summary",
       "title": "Health and Wellness Summary",
       "type": "summary",
-      "content": "Remember these key points: Learn body parts and common symptoms so you can describe problems. Know how to ask for help: <I need to see a doctor> or <Where is the nearest pharmacy?> Use <should> for health advice: <You should rest>. Take care of your health with good habits. In emergencies, call emergency services (911 in USA/Canada, 999 in UK). Don't be afraid to ask for help when you're sick!"
+      "content": "Remember these key points: Learn body parts and common symptoms so you can describe problems. Know how to ask for help: <I need to see a doctor> or <Where is the nearest pharmacy?> Use <should> for health advice: <You should rest>. Take care of your health with good habits. In emergencies, call emergency services (911 in USA/Canada, 999 in UK). Don't be afraid to ask for help when you're sick!",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "should",
+            "definition": "Used to give advice or say what is right to do"
+          },
+          {
+            "term": "You should rest",
+            "definition": "Advice telling someone to relax and recover"
+          }
+        ]
+      }
     }
   ],
   "keyVocabulary": [

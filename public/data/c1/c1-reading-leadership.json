@@ -18,19 +18,103 @@
       "id": "leadership-theories",
       "title": "Contemporary Leadership Paradigms",
       "type": "theory",
-      "content": "<Transformational leadership> inspires followers to transcend self-interest for collective goals, contrasting with <transactional leadership> based on exchanges and rewards. <Servant leadership> prioritizes follower development and well-being. <Authentic leadership> emphasizes self-awareness, transparency, and ethical behavior. <Adaptive leadership> navigates complex, ambiguous challenges requiring learning and change. <Distributed leadership> recognizes that leadership emerges throughout organizations, not just from formal authority. <Situational leadership> adapts style to follower readiness and context. <Charismatic leadership> relies on personal magnetism and vision. <Ethical leadership> demonstrates moral conduct and decision-making. Each paradigm offers distinct insights, and effective leaders often integrate multiple approaches contextually. Understanding these frameworks enables sophisticated analysis of leadership effectiveness and organizational dynamics."
+      "content": "<Transformational leadership> inspires followers to transcend self-interest for collective goals, contrasting with <transactional leadership> based on exchanges and rewards. <Servant leadership> prioritizes follower development and well-being. <Authentic leadership> emphasizes self-awareness, transparency, and ethical behavior. <Adaptive leadership> navigates complex, ambiguous challenges requiring learning and change. <Distributed leadership> recognizes that leadership emerges throughout organizations, not just from formal authority. <Situational leadership> adapts style to follower readiness and context. <Charismatic leadership> relies on personal magnetism and vision. <Ethical leadership> demonstrates moral conduct and decision-making. Each paradigm offers distinct insights, and effective leaders often integrate multiple approaches contextually. Understanding these frameworks enables sophisticated analysis of leadership effectiveness and organizational dynamics.\n\nKey terms:\n• <Transformational leadership> – Leadership that inspires followers to exceed expectations through shared vision\n• <Transactional leadership> – Leadership based on exchanges of rewards for performance and compliance\n• <Servant leadership> – Leadership focused on serving others' needs before one's own\n• <Authentic leadership> – Leading by aligning actions with genuine personal values and beliefs\n• <Adaptive leadership> – Leadership that adjusts strategies based on changing circumstances and challenges",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Transformational leadership",
+            "definition": "Leadership that inspires followers to exceed expectations through shared vision"
+          },
+          {
+            "term": "transactional leadership",
+            "definition": "Leadership based on exchanges of rewards for performance and compliance"
+          },
+          {
+            "term": "Servant leadership",
+            "definition": "Leadership focused on serving others' needs before one's own"
+          },
+          {
+            "term": "Authentic leadership",
+            "definition": "Leading by aligning actions with genuine personal values and beliefs"
+          },
+          {
+            "term": "Adaptive leadership",
+            "definition": "Leadership that adjusts strategies based on changing circumstances and challenges"
+          },
+          {
+            "term": "Distributed leadership",
+            "definition": "Sharing leadership responsibilities across multiple people in an organization"
+          }
+        ]
+      }
     },
     {
       "id": "organizational-dynamics",
       "title": "Organizational Behavior and Culture",
       "type": "theory",
-      "content": "<Organizational culture> encompasses shared values, beliefs, and norms shaping behavior. <Strong cultures> align members around core values; <weak cultures> lack cohesion. <Subcultures> emerge within departments or teams. <Organizational climate> reflects members' perceptions of the work environment. <Change management> guides organizations through transitions, addressing resistance and building commitment. <Organizational development> (OD) systematically improves effectiveness through planned interventions. <Systems thinking> views organizations as interconnected components where changes ripple throughout. <Organizational learning> creates capacity to adapt and innovate. <Knowledge management> captures and leverages intellectual capital. <Psychological safety> enables risk-taking and candor without fear of punishment. <Organizational justice> concerns fairness in procedures, outcomes, and interpersonal treatment. These dynamics profoundly influence performance, innovation, and employee engagement."
+      "content": "<Organizational culture> encompasses shared values, beliefs, and norms shaping behavior. <Strong cultures> align members around core values; <weak cultures> lack cohesion. <Subcultures> emerge within departments or teams. <Organizational climate> reflects members' perceptions of the work environment. <Change management> guides organizations through transitions, addressing resistance and building commitment. <Organizational development> (OD) systematically improves effectiveness through planned interventions. <Systems thinking> views organizations as interconnected components where changes ripple throughout. <Organizational learning> creates capacity to adapt and innovate. <Knowledge management> captures and leverages intellectual capital. <Psychological safety> enables risk-taking and candor without fear of punishment. <Organizational justice> concerns fairness in procedures, outcomes, and interpersonal treatment. These dynamics profoundly influence performance, innovation, and employee engagement.\n\nKey terms:\n• <Organizational culture> – Shared values, beliefs, and norms that shape behavior within organizations\n• <Strong cultures> – Organizations where core values are widely shared and deeply held\n• <Weak cultures> – Organizations where core values are not widely shared or enforced\n• <Subcultures> – Distinct groups within a larger culture with their own values\n• <Organizational climate> – Shared perceptions of workplace atmosphere and day-to-day environment",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Organizational culture",
+            "definition": "Shared values, beliefs, and norms that shape behavior within organizations"
+          },
+          {
+            "term": "Strong cultures",
+            "definition": "Organizations where core values are widely shared and deeply held"
+          },
+          {
+            "term": "weak cultures",
+            "definition": "Organizations where core values are not widely shared or enforced"
+          },
+          {
+            "term": "Subcultures",
+            "definition": "Distinct groups within a larger culture with their own values"
+          },
+          {
+            "term": "Organizational climate",
+            "definition": "Shared perceptions of workplace atmosphere and day-to-day environment"
+          },
+          {
+            "term": "Change management",
+            "definition": "Systematic approach to transitioning organizations through significant transformations"
+          }
+        ]
+      }
     },
     {
       "id": "strategic-management",
       "title": "Strategic Planning and Execution",
       "type": "theory",
-      "content": "<Strategic management> aligns organizational resources with long-term objectives. <Vision statements> articulate aspirational futures; <mission statements> define purpose and scope. <Strategic objectives> translate vision into measurable goals. <SWOT analysis> examines Strengths, Weaknesses, Opportunities, and Threats. <Competitive advantage> provides superior value or lower costs than rivals. <Core competencies> are distinctive capabilities difficult for competitors to replicate. <Strategic positioning> differentiates organizations in the marketplace. <Blue ocean strategy> creates uncontested market space rather than competing in existing markets. <Balanced scorecard> measures performance across financial, customer, internal process, and learning perspectives. <Key performance indicators> (KPIs) track progress toward objectives. <Strategic alignment> ensures all organizational elements support strategy. <Execution> - translating strategy into action - often determines success more than strategy formulation itself."
+      "content": "<Strategic management> aligns organizational resources with long-term objectives. <Vision statements> articulate aspirational futures; <mission statements> define purpose and scope. <Strategic objectives> translate vision into measurable goals. <SWOT analysis> examines Strengths, Weaknesses, Opportunities, and Threats. <Competitive advantage> provides superior value or lower costs than rivals. <Core competencies> are distinctive capabilities difficult for competitors to replicate. <Strategic positioning> differentiates organizations in the marketplace. <Blue ocean strategy> creates uncontested market space rather than competing in existing markets. <Balanced scorecard> measures performance across financial, customer, internal process, and learning perspectives. <Key performance indicators> (KPIs) track progress toward objectives. <Strategic alignment> ensures all organizational elements support strategy. <Execution> - translating strategy into action - often determines success more than strategy formulation itself.\n\nKey terms:\n• <Strategic management> – Planning and directing an organization's long-term goals and resources\n• <Vision statements> – Aspirational declarations of what an organization aims to become\n• <Mission statements> – Formal declarations of an organization's core purpose and focus\n• <Strategic objectives> – Specific, measurable goals aligned with an organization's overall strategy\n• <SWOT analysis> – Framework evaluating strengths, weaknesses, opportunities, and threats of an organization",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Strategic management",
+            "definition": "Planning and directing an organization's long-term goals and resources"
+          },
+          {
+            "term": "Vision statements",
+            "definition": "Aspirational declarations of what an organization aims to become"
+          },
+          {
+            "term": "mission statements",
+            "definition": "Formal declarations of an organization's core purpose and focus"
+          },
+          {
+            "term": "Strategic objectives",
+            "definition": "Specific, measurable goals aligned with an organization's overall strategy"
+          },
+          {
+            "term": "SWOT analysis",
+            "definition": "Framework evaluating strengths, weaknesses, opportunities, and threats of an organization"
+          },
+          {
+            "term": "Competitive advantage",
+            "definition": "A condition that allows a company to outperform its rivals"
+          }
+        ]
+      }
     },
     {
       "id": "examples",
@@ -42,7 +126,35 @@
       "id": "change-management",
       "title": "Change Management and Organizational Resilience",
       "type": "theory",
-      "content": "Leading organizational change requires understanding both the structural and human dimensions of transformation.\n\n<Change management> frameworks provide structured approaches. Kotter's eight-step model emphasizes creating <urgency>, building <coalitions>, and <institutionalizing> new approaches. Lewin's model describes <unfreezing> existing patterns, <changing> to new ones, and <refreezing> to stabilize.\n\nResistance to change is natural and should be anticipated rather than suppressed. Common sources include fear of the unknown, loss of status or competence, and <organizational inertia>. Effective leaders address resistance through transparent communication, meaningful participation, and demonstrating <quick wins>.\n\n<Organizational resilience> — the capacity to anticipate, prepare for, respond to, and adapt to disruption — has become a critical leadership priority. Resilient organizations cultivate <psychological safety>, encourage <adaptive capacity>, and maintain <strategic flexibility>. They view setbacks not as failures but as opportunities for learning and <iterative improvement>."
+      "content": "Leading organizational change requires understanding both the structural and human dimensions of transformation.\n\n<Change management> frameworks provide structured approaches. Kotter's eight-step model emphasizes creating <urgency>, building <coalitions>, and <institutionalizing> new approaches. Lewin's model describes <unfreezing> existing patterns, <changing> to new ones, and <refreezing> to stabilize.\n\nResistance to change is natural and should be anticipated rather than suppressed. Common sources include fear of the unknown, loss of status or competence, and <organizational inertia>. Effective leaders address resistance through transparent communication, meaningful participation, and demonstrating <quick wins>.\n\n<Organizational resilience> — the capacity to anticipate, prepare for, respond to, and adapt to disruption — has become a critical leadership priority. Resilient organizations cultivate <psychological safety>, encourage <adaptive capacity>, and maintain <strategic flexibility>. They view setbacks not as failures but as opportunities for learning and <iterative improvement>.\n\nKey terms:\n• <Change management> – Systematic approach to transitioning organizations through significant transformations\n• <Urgency> – A compelling sense that immediate action is necessary for change\n• <Coalitions> – Temporary alliances of groups united to achieve a common goal\n• <Institutionalizing> – Embedding new practices into an organization's permanent structures and routines\n• <Unfreezing> – Preparing an organization for change by challenging existing assumptions",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Change management",
+            "definition": "Systematic approach to transitioning organizations through significant transformations"
+          },
+          {
+            "term": "urgency",
+            "definition": "A compelling sense that immediate action is necessary for change"
+          },
+          {
+            "term": "coalitions",
+            "definition": "Temporary alliances of groups united to achieve a common goal"
+          },
+          {
+            "term": "institutionalizing",
+            "definition": "Embedding new practices into an organization's permanent structures and routines"
+          },
+          {
+            "term": "unfreezing",
+            "definition": "Preparing an organization for change by challenging existing assumptions"
+          },
+          {
+            "term": "changing",
+            "definition": "The phase of implementing new processes or behaviors in an organization"
+          }
+        ]
+      }
     },
     {
       "id": "examples-2",

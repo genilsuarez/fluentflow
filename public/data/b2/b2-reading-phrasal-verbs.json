@@ -36,13 +36,69 @@
       "id": "media-communication",
       "title": "In Media and Communication",
       "type": "theory",
-      "content": "Media and communication contexts use sophisticated phrasal verbs:\n\n• <Bring up> - Introduce a topic for discussion\n• <Play down> - Make something seem less important than it is\n• <Point out> - Draw attention to something\n• <Touch on> - Briefly mention a topic\n• <Spell out> - Explain something clearly and in detail\n• <Talk someone into/out of> - Persuade someone to do/not do something\n• <Come across as> - Give a particular impression\n\nIn journalism: <The article pointed out several inconsistencies in the government's report. The spokesperson tried to play down the significance of the findings, but the journalist pressed for answers.>\n\nIn presentations: <I'd like to bring up an issue that we only touched on in the last meeting. Let me spell out the implications for our Q3 targets.>"
+      "content": "Media and communication contexts use sophisticated phrasal verbs:\n\n• <Bring up> - Introduce a topic for discussion\n• <Play down> - Make something seem less important than it is\n• <Point out> - Draw attention to something\n• <Touch on> - Briefly mention a topic\n• <Spell out> - Explain something clearly and in detail\n• <Talk someone into/out of> - Persuade someone to do/not do something\n• <Come across as> - Give a particular impression\n\nIn journalism: <The article pointed out several inconsistencies in the government's report. The spokesperson tried to play down the significance of the findings, but the journalist pressed for answers.>\n\nIn presentations: <I'd like to bring up an issue that we only touched on in the last meeting. Let me spell out the implications for our Q3 targets.>",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Bring up",
+            "definition": "To mention a topic or to raise a child."
+          },
+          {
+            "term": "Play down",
+            "definition": "To make something seem less important or serious than it is."
+          },
+          {
+            "term": "Point out",
+            "definition": "To draw attention to something or mention a fact."
+          },
+          {
+            "term": "Touch on",
+            "definition": "To briefly mention or deal with a subject."
+          },
+          {
+            "term": "Spell out",
+            "definition": "To explain something clearly and in detail."
+          },
+          {
+            "term": "Talk someone into/out of",
+            "definition": "To persuade someone to do or not do something."
+          }
+        ]
+      }
     },
     {
       "id": "problem-solving",
       "title": "Problem Solving and Decision Making",
       "type": "theory",
-      "content": "When discussing problems and solutions, these phrasal verbs are essential:\n\n• <Figure out> - Solve or understand something through thinking\n• <Come up with> - Think of an idea or plan\n• <Rule out> - Eliminate as a possibility\n• <Narrow down> - Reduce the number of options\n• <Follow through> - Complete something you started or promised\n• <Fall through> - Fail to happen as planned\n• <Work out> - Develop successfully; calculate\n\nExample: <We need to figure out why sales dropped last quarter. The team came up with several hypotheses. We've ruled out seasonal factors and narrowed it down to two possible causes. If this strategy doesn't work out, we'll need to go back to the drawing board. The key is to follow through on whatever we decide.>"
+      "content": "When discussing problems and solutions, these phrasal verbs are essential:\n\n• <Figure out> - Solve or understand something through thinking\n• <Come up with> - Think of an idea or plan\n• <Rule out> - Eliminate as a possibility\n• <Narrow down> - Reduce the number of options\n• <Follow through> - Complete something you started or promised\n• <Fall through> - Fail to happen as planned\n• <Work out> - Develop successfully; calculate\n\nExample: <We need to figure out why sales dropped last quarter. The team came up with several hypotheses. We've ruled out seasonal factors and narrowed it down to two possible causes. If this strategy doesn't work out, we'll need to go back to the drawing board. The key is to follow through on whatever we decide.>",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Figure out",
+            "definition": "To understand or solve something after thinking about it."
+          },
+          {
+            "term": "Come up with",
+            "definition": "To think of or produce an idea or plan."
+          },
+          {
+            "term": "Rule out",
+            "definition": "To decide that something is not possible or suitable."
+          },
+          {
+            "term": "Narrow down",
+            "definition": "To reduce the number of options or possibilities."
+          },
+          {
+            "term": "Follow through",
+            "definition": "To complete something you have started or promised to do."
+          },
+          {
+            "term": "Fall through",
+            "definition": "To fail to happen or be completed as planned."
+          }
+        ]
+      }
     },
     {
       "id": "examples-2",

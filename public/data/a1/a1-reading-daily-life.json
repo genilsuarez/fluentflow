@@ -18,19 +18,103 @@
       "id": "morning-routine",
       "title": "Morning Activities",
       "type": "theory",
-      "content": "Most people start their day in the morning. First, you <wake up> and <get up> from bed. Then you <take a shower> or <wash your face>. You <brush your teeth> and <get dressed>. Many people <have breakfast> before they <go to work> or <go to school>. Common breakfast foods are cereal, toast, eggs, and coffee."
+      "content": "Most people start their day in the morning. First, you <wake up> and <get up> from bed. Then you <take a shower> or <wash your face>. You <brush your teeth> and <get dressed>. Many people <have breakfast> before they <go to work> or <go to school>. Common breakfast foods are cereal, toast, eggs, and coffee.\n\nKey terms:\n• <Wake up> – To stop sleeping and become conscious\n• <Get up> – Rise from bed after sleeping\n• <Take a shower> – Wash your body under running water\n• <Wash your face> – Clean your face with water\n• <Brush your teeth> – Clean your teeth with a toothbrush and toothpaste",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "wake up",
+            "definition": "To stop sleeping and become conscious"
+          },
+          {
+            "term": "get up",
+            "definition": "Rise from bed after sleeping"
+          },
+          {
+            "term": "take a shower",
+            "definition": "Wash your body under running water"
+          },
+          {
+            "term": "wash your face",
+            "definition": "Clean your face with water"
+          },
+          {
+            "term": "brush your teeth",
+            "definition": "Clean your teeth with a toothbrush and toothpaste"
+          },
+          {
+            "term": "get dressed",
+            "definition": "To put on clothes"
+          }
+        ]
+      }
     },
     {
       "id": "daily-activities",
       "title": "Throughout the Day",
       "type": "theory",
-      "content": "During the day, people do different activities. You might <work> in an office, <study> at school, or <take care of> children at home. At lunchtime, you <have lunch> or <eat lunch>. In the afternoon, you might <run errands> (do tasks like shopping), <exercise> at the gym, or <meet friends> for coffee. We use time expressions like <in the morning>, <in the afternoon>, and <in the evening>."
+      "content": "During the day, people do different activities. You might <work> in an office, <study> at school, or <take care of> children at home. At lunchtime, you <have lunch> or <eat lunch>. In the afternoon, you might <run errands> (do tasks like shopping), <exercise> at the gym, or <meet friends> for coffee. We use time expressions like <in the morning>, <in the afternoon>, and <in the evening>.\n\nKey terms:\n• <Work> – Do a job or task; a place of employment\n• <Study> – Spend time learning about a subject\n• <Take care of> – Look after someone or something\n• <Have lunch> – Eat the midday meal\n• <Eat lunch> – Have your midday meal",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "work",
+            "definition": "Do a job or task; a place of employment"
+          },
+          {
+            "term": "study",
+            "definition": "Spend time learning about a subject"
+          },
+          {
+            "term": "take care of",
+            "definition": "Look after someone or something"
+          },
+          {
+            "term": "have lunch",
+            "definition": "Eat the midday meal"
+          },
+          {
+            "term": "eat lunch",
+            "definition": "Have your midday meal"
+          },
+          {
+            "term": "run errands",
+            "definition": "To do small tasks like shopping or going to the bank."
+          }
+        ]
+      }
     },
     {
       "id": "evening-routine",
       "title": "Evening and Night",
       "type": "theory",
-      "content": "In the evening, many people <come home> from work, <cook dinner> or <have dinner> with family. After dinner, you might <watch TV>, <read a book>, <do homework>, or <relax>. Before bed, you <brush your teeth> again and <go to bed>. Most people <go to sleep> between 10 PM and midnight. A good night's sleep is important!"
+      "content": "In the evening, many people <come home> from work, <cook dinner> or <have dinner> with family. After dinner, you might <watch TV>, <read a book>, <do homework>, or <relax>. Before bed, you <brush your teeth> again and <go to bed>. Most people <go to sleep> between 10 PM and midnight. A good night's sleep is important!\n\nKey terms:\n• <Come home> – To return to your house\n• <Cook dinner> – Prepare the evening meal\n• <Have dinner> – Eat the evening meal\n• <Watch TV> – Look at programs on a television\n• <Read a book> – Look at and understand written words in a book",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "come home",
+            "definition": "To return to your house"
+          },
+          {
+            "term": "cook dinner",
+            "definition": "Prepare the evening meal"
+          },
+          {
+            "term": "have dinner",
+            "definition": "Eat the evening meal"
+          },
+          {
+            "term": "watch TV",
+            "definition": "Look at programs on a television"
+          },
+          {
+            "term": "read a book",
+            "definition": "Look at and understand written words in a book"
+          },
+          {
+            "term": "do homework",
+            "definition": "Complete school assignments given by a teacher"
+          }
+        ]
+      }
     },
     {
       "id": "examples",
@@ -54,7 +138,35 @@
       "id": "summary",
       "title": "Daily Life Summary",
       "type": "summary",
-      "content": "Everyone has a daily routine. Use simple present tense to describe regular activities: <I wake up>, <I go to work>, <I have dinner>. Use time expressions to say when: <at 7 AM>, <in the morning>, <after work>. Practice talking about your routine every day. This will help you become more comfortable with English!"
+      "content": "Everyone has a daily routine. Use simple present tense to describe regular activities: <I wake up>, <I go to work>, <I have dinner>. Use time expressions to say when: <at 7 AM>, <in the morning>, <after work>. Practice talking about your routine every day. This will help you become more comfortable with English!",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "I wake up",
+            "definition": "I stop sleeping and open my eyes"
+          },
+          {
+            "term": "I go to work",
+            "definition": "I travel to my job"
+          },
+          {
+            "term": "I have dinner",
+            "definition": "I eat my evening meal"
+          },
+          {
+            "term": "at 7 AM",
+            "definition": "At seven o'clock in the morning"
+          },
+          {
+            "term": "in the morning",
+            "definition": "During the early part of the day"
+          },
+          {
+            "term": "after work",
+            "definition": "After finishing your job for the day"
+          }
+        ]
+      }
     }
   ],
   "keyVocabulary": [

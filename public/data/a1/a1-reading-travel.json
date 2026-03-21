@@ -18,13 +18,61 @@
       "id": "airport",
       "title": "At the Airport",
       "type": "theory",
-      "content": "The airport has many important places. <Check-in> is where you show your ticket and get your boarding pass. <Security> checks your bags for safety. The <gate> is where you wait for your plane. <Baggage claim> is where you get your luggage after landing. Important words: passport, ticket, boarding pass, flight, departure, arrival."
+      "content": "The airport has many important places. <Check-in> is where you show your ticket and get your boarding pass. <Security> checks your bags for safety. The <gate> is where you wait for your plane. <Baggage claim> is where you get your luggage after landing. Important words: passport, ticket, boarding pass, flight, departure, arrival.\n\nKey terms:\n• <Check-in> – Register when you arrive at a hotel or airport\n• <Security> – The department that keeps a place safe\n• <Gate> – The door or entrance to board a plane\n• <Baggage claim> – Airport area where you collect your luggage",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Check-in",
+            "definition": "Register when you arrive at a hotel or airport"
+          },
+          {
+            "term": "Security",
+            "definition": "The department that keeps a place safe"
+          },
+          {
+            "term": "gate",
+            "definition": "The door or entrance to board a plane"
+          },
+          {
+            "term": "Baggage claim",
+            "definition": "Airport area where you collect your luggage"
+          }
+        ]
+      }
     },
     {
       "id": "hotel",
       "title": "At the Hotel",
       "type": "theory",
-      "content": "When you arrive at a hotel, you go to the <reception> or <front desk> to check in. You need to show your <reservation> (booking). Your <room key> opens your room. If you need something, call <room service>. When you leave, you <check out> and pay your bill. The hotel staff can help you with directions and recommendations."
+      "content": "When you arrive at a hotel, you go to the <reception> or <front desk> to check in. You need to show your <reservation> (booking). Your <room key> opens your room. If you need something, call <room service>. When you leave, you <check out> and pay your bill. The hotel staff can help you with directions and recommendations.\n\nKey terms:\n• <Reception> – The area where guests are welcomed in a building\n• <Front desk> – The reception area in a hotel or office\n• <Reservation> – A booking made in advance\n• <Room key> – A key or card used to open your hotel room\n• <Room service> – Hotel service that brings food to your room",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "reception",
+            "definition": "The area where guests are welcomed in a building"
+          },
+          {
+            "term": "front desk",
+            "definition": "The reception area in a hotel or office"
+          },
+          {
+            "term": "reservation",
+            "definition": "A booking made in advance"
+          },
+          {
+            "term": "room key",
+            "definition": "A key or card used to open your hotel room"
+          },
+          {
+            "term": "room service",
+            "definition": "Hotel service that brings food to your room"
+          },
+          {
+            "term": "check out",
+            "definition": "Leave a hotel and pay the bill"
+          }
+        ]
+      }
     },
     {
       "id": "transportation",
@@ -54,7 +102,23 @@
       "id": "summary",
       "title": "Travel Tips",
       "type": "summary",
-      "content": "Remember these key points: Always carry your passport and important documents. Learn basic phrases like <Where is...?>, <How much?>, and <I need help>. Be polite and say <please> and <thank you>. Don't be afraid to ask people to speak slowly. Keep a translation app on your phone for emergencies. Most importantly, enjoy your trip!"
+      "content": "Remember these key points: Always carry your passport and important documents. Learn basic phrases like <Where is...?>, <How much?>, and <I need help>. Be polite and say <please> and <thank you>. Don't be afraid to ask people to speak slowly. Keep a translation app on your phone for emergencies. Most importantly, enjoy your trip!",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "I need help",
+            "definition": "A phrase to ask for assistance"
+          },
+          {
+            "term": "please",
+            "definition": "A polite word used when asking for something"
+          },
+          {
+            "term": "thank you",
+            "definition": "A polite phrase to express gratitude"
+          }
+        ]
+      }
     }
   ],
   "keyVocabulary": [

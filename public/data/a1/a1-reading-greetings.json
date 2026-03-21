@@ -12,7 +12,31 @@
       "id": "intro",
       "title": "Saying Hello",
       "type": "introduction",
-      "content": "Greetings are the first words we say when we meet someone. In English, we have different ways to say hello. The most common greeting is <Hello> or <Hi>. We can also say <Good morning>, <Good afternoon>, or <Good evening> depending on the time of day."
+      "content": "Greetings are the first words we say when we meet someone. In English, we have different ways to say hello. The most common greeting is <Hello> or <Hi>. We can also say <Good morning>, <Good afternoon>, or <Good evening> depending on the time of day.\n\nKey terms:\n• <Hello> – A greeting used when meeting someone\n• <Hi> – An informal greeting\n• <Good morning> – A polite greeting used in the morning\n• <Good afternoon> – A polite greeting used after midday\n• <Good evening> – A polite greeting used in the evening",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Hello",
+            "definition": "A greeting used when meeting someone"
+          },
+          {
+            "term": "Hi",
+            "definition": "An informal greeting"
+          },
+          {
+            "term": "Good morning",
+            "definition": "A polite greeting used in the morning"
+          },
+          {
+            "term": "Good afternoon",
+            "definition": "A polite greeting used after midday"
+          },
+          {
+            "term": "Good evening",
+            "definition": "A polite greeting used in the evening"
+          }
+        ]
+      }
     },
     {
       "id": "basic-greetings",
@@ -24,7 +48,19 @@
       "id": "introductions",
       "title": "Introducing Yourself",
       "type": "theory",
-      "content": "When you meet someone new, you introduce yourself. Here's how:\n\n• My name is [your name]\n• I'm [your name]\n• Nice to meet you\n• Pleased to meet you\n\nExample: <Hello, my name is Maria. Nice to meet you.>\n\nYou can also say where you're from: <I'm from Spain> or <I'm Spanish>."
+      "content": "When you meet someone new, you introduce yourself. Here's how:\n\n• My name is [your name]\n• I'm [your name]\n• Nice to meet you\n• Pleased to meet you\n\nExample: <Hello, my name is Maria. Nice to meet you.>\n\nYou can also say where you're from: <I'm from Spain> or <I'm Spanish>.\n\nKey terms:\n• <I'm from Spain> – A phrase to say your country is Spain\n• <I'm Spanish> – A phrase to say your nationality is Spanish",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "I'm from Spain",
+            "definition": "A phrase to say your country is Spain"
+          },
+          {
+            "term": "I'm Spanish",
+            "definition": "A phrase to say your nationality is Spanish"
+          }
+        ]
+      }
     },
     {
       "id": "examples",
@@ -36,13 +72,29 @@
       "id": "polite-words",
       "title": "Polite Expressions",
       "type": "theory",
-      "content": "Being polite is important in English. Here are essential polite words:\n\n• Please - When you ask for something\n• Thank you / Thanks - When someone helps you\n• You're welcome - Response to <thank you>\n• Excuse me - To get attention or apologize\n• Sorry - To apologize\n\nExample: <Excuse me, can you help me, please?> <Yes, of course!> <Thank you!> <You're welcome!>"
+      "content": "Being polite is important in English. Here are essential polite words:\n\n• Please - When you ask for something\n• Thank you / Thanks - When someone helps you\n• You're welcome - Response to <thank you>\n• Excuse me - To get attention or apologize\n• Sorry - To apologize\n\nExample: <Excuse me, can you help me, please?> <Yes, of course!> <Thank you!> <You're welcome!>",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "thank you",
+            "definition": "Words used to show gratitude"
+          }
+        ]
+      }
     },
     {
       "id": "saying-goodbye",
       "title": "Saying Goodbye",
       "type": "theory",
-      "content": "Just as greetings open a conversation, farewells close it. Here are common ways to say goodbye:\n\n• Goodbye / Bye - Standard farewell\n• See you later / See you soon - When you expect to meet again\n• Have a nice day - A friendly wish\n• Take care - Showing you care about the person\n• Good night - Only used in the evening or before bed\n\nExample: <See you later! Have a nice day!>\n\nNote: <Good night> is a farewell, not a greeting. We don't say \"Good night\" when we arrive somewhere."
+      "content": "Just as greetings open a conversation, farewells close it. Here are common ways to say goodbye:\n\n• Goodbye / Bye - Standard farewell\n• See you later / See you soon - When you expect to meet again\n• Have a nice day - A friendly wish\n• Take care - Showing you care about the person\n• Good night - Only used in the evening or before bed\n\nExample: <See you later! Have a nice day!>\n\nNote: <Good night> is a farewell, not a greeting. We don't say \"Good night\" when we arrive somewhere.",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Good night",
+            "definition": "A farewell said before going to sleep"
+          }
+        ]
+      }
     },
     {
       "id": "examples-2",
@@ -54,7 +106,31 @@
       "id": "summary",
       "title": "Key Takeaways",
       "type": "summary",
-      "content": "Remember:\n• Use <Hello> or <Hi> to greet people\n• Say <My name is...> to introduce yourself\n• Ask <How are you?> to be friendly\n• Always use <please> and <thank you>\n• Say <Nice to meet you> when meeting someone new\n\nPractice these greetings every day and you'll feel more confident speaking English!"
+      "content": "Remember:\n• Use <Hello> or <Hi> to greet people\n• Say <My name is...> to introduce yourself\n• Ask <How are you?> to be friendly\n• Always use <please> and <thank you>\n• Say <Nice to meet you> when meeting someone new\n\nPractice these greetings every day and you'll feel more confident speaking English!",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Hello",
+            "definition": "A greeting used when meeting someone"
+          },
+          {
+            "term": "Hi",
+            "definition": "An informal greeting"
+          },
+          {
+            "term": "please",
+            "definition": "A polite word used when asking for something"
+          },
+          {
+            "term": "thank you",
+            "definition": "Words used to show gratitude"
+          },
+          {
+            "term": "Nice to meet you",
+            "definition": "A polite phrase when meeting someone for the first time"
+          }
+        ]
+      }
     }
   ],
   "keyVocabulary": [

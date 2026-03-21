@@ -36,13 +36,57 @@
       "id": "social-idioms",
       "title": "Idioms in Social Situations",
       "type": "theory",
-      "content": "These idioms are commonly used in social conversations:\n\n• <Break the ice> - Do something to make people feel more comfortable in a new situation\n• <Hit it off> - Immediately get along well with someone\n• <On the same wavelength> - Think in a similar way to someone\n• <Rub someone the wrong way> - Annoy or irritate someone\n• <Bend over backwards> - Try very hard to help someone\n• <Bite your tongue> - Stop yourself from saying something\n\nExample: <At the conference, I didn't know anyone, so I tried to break the ice by asking about their work. I hit it off with a woman from Brazil — we were completely on the same wavelength about education reform.>"
+      "content": "These idioms are commonly used in social conversations:\n\n• <Break the ice> - Do something to make people feel more comfortable in a new situation\n• <Hit it off> - Immediately get along well with someone\n• <On the same wavelength> - Think in a similar way to someone\n• <Rub someone the wrong way> - Annoy or irritate someone\n• <Bend over backwards> - Try very hard to help someone\n• <Bite your tongue> - Stop yourself from saying something\n\nExample: <At the conference, I didn't know anyone, so I tried to break the ice by asking about their work. I hit it off with a woman from Brazil — we were completely on the same wavelength about education reform.>",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Break the ice",
+            "definition": "To do something to reduce tension in a social situation."
+          },
+          {
+            "term": "Hit it off",
+            "definition": "To quickly become good friends with someone you just met."
+          },
+          {
+            "term": "On the same wavelength",
+            "definition": "Thinking in a similar way and understanding each other easily."
+          },
+          {
+            "term": "Bend over backwards",
+            "definition": "To try extremely hard to help or please someone."
+          },
+          {
+            "term": "Bite your tongue",
+            "definition": "To stop yourself from saying something you want to say."
+          }
+        ]
+      }
     },
     {
       "id": "money-idioms",
       "title": "Idioms About Money and Success",
       "type": "theory",
-      "content": "Money and success idioms appear frequently in everyday English:\n\n• <Cost an arm and a leg> - Be very expensive\n• <Break the bank> - Spend more money than you can afford\n• <Make ends meet> - Earn just enough money to live\n• <Hit the jackpot> - Have great luck or success\n• <Go from rags to riches> - Become wealthy after being poor\n• <Cut corners> - Do something cheaply or with less effort\n\nExample: <The new apartment costs an arm and a leg, but it's in a great location. We're trying to make ends meet by cooking at home instead of eating out. My uncle went from rags to riches — he started with nothing and now owns three restaurants.>"
+      "content": "Money and success idioms appear frequently in everyday English:\n\n• <Cost an arm and a leg> - Be very expensive\n• <Break the bank> - Spend more money than you can afford\n• <Make ends meet> - Earn just enough money to live\n• <Hit the jackpot> - Have great luck or success\n• <Go from rags to riches> - Become wealthy after being poor\n• <Cut corners> - Do something cheaply or with less effort\n\nExample: <The new apartment costs an arm and a leg, but it's in a great location. We're trying to make ends meet by cooking at home instead of eating out. My uncle went from rags to riches — he started with nothing and now owns three restaurants.>",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Break the bank",
+            "definition": "To cost too much money."
+          },
+          {
+            "term": "Make ends meet",
+            "definition": "To earn just enough money to cover basic living expenses."
+          },
+          {
+            "term": "Hit the jackpot",
+            "definition": "To have great luck or sudden success."
+          },
+          {
+            "term": "Cut corners",
+            "definition": "To do something in the cheapest or easiest way, reducing quality."
+          }
+        ]
+      }
     },
     {
       "id": "examples-2",

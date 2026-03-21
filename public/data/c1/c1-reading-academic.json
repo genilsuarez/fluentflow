@@ -18,19 +18,103 @@
       "id": "research-methodology",
       "title": "Research Paradigms and Methodological Approaches",
       "type": "theory",
-      "content": "Research methodology encompasses the systematic approaches scholars employ to investigate phenomena. <Epistemology> examines the nature and limits of knowledge itself. <Ontology> concerns the nature of reality and existence. <Positivist> approaches emphasize empirical observation and quantifiable data, while <interpretivist> paradigms focus on understanding meaning and context. <Quantitative research> employs statistical analysis of numerical data; <qualitative research> explores complex phenomena through interviews, observations, and textual analysis. <Mixed methods> integrate both approaches. <Empirical studies> gather original data, whereas <theoretical papers> develop conceptual frameworks. <Longitudinal studies> track changes over time; <cross-sectional> research examines a moment. <Validity> ensures research measures what it claims; <reliability> means results are consistent. <Generalizability> indicates findings apply beyond the specific study context."
+      "content": "Research methodology encompasses the systematic approaches scholars employ to investigate phenomena. <Epistemology> examines the nature and limits of knowledge itself. <Ontology> concerns the nature of reality and existence. <Positivist> approaches emphasize empirical observation and quantifiable data, while <interpretivist> paradigms focus on understanding meaning and context. <Quantitative research> employs statistical analysis of numerical data; <qualitative research> explores complex phenomena through interviews, observations, and textual analysis. <Mixed methods> integrate both approaches. <Empirical studies> gather original data, whereas <theoretical papers> develop conceptual frameworks. <Longitudinal studies> track changes over time; <cross-sectional> research examines a moment. <Validity> ensures research measures what it claims; <reliability> means results are consistent. <Generalizability> indicates findings apply beyond the specific study context.\n\nKey terms:\n• <Epistemology> – The theory of knowledge and how we know what we know\n• <Ontology> – The philosophical study of the nature of being and existence\n• <Positivist> – Research approach based on observable, measurable facts and objective analysis\n• <Interpretivist> – Research approach emphasizing subjective meaning and social context understanding\n• <Quantitative research> – Research using numerical data and statistical analysis to test hypotheses",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Epistemology",
+            "definition": "The theory of knowledge and how we know what we know"
+          },
+          {
+            "term": "Ontology",
+            "definition": "The philosophical study of the nature of being and existence"
+          },
+          {
+            "term": "Positivist",
+            "definition": "Research approach based on observable, measurable facts and objective analysis"
+          },
+          {
+            "term": "interpretivist",
+            "definition": "Research approach emphasizing subjective meaning and social context understanding"
+          },
+          {
+            "term": "Quantitative research",
+            "definition": "Research using numerical data and statistical analysis to test hypotheses"
+          },
+          {
+            "term": "qualitative research",
+            "definition": "Research using non-numerical data to understand meanings and experiences"
+          }
+        ]
+      }
     },
     {
       "id": "critical-analysis",
       "title": "Critical Analysis and Scholarly Argumentation",
       "type": "theory",
-      "content": "Academic discourse demands rigorous critical analysis. <Critical thinking> involves systematic evaluation of arguments, evidence, and assumptions. Scholars must <interrogate> claims, examining underlying premises and potential biases. <Analytical frameworks> provide structured approaches to understanding complex phenomena. <Theoretical lenses> - such as feminist theory, postcolonial theory, or systems theory - offer distinct perspectives for interpretation. <Synthesis> integrates multiple sources to develop new insights. <Dialectical reasoning> explores tensions between opposing viewpoints. Arguments require <substantiation> through credible evidence. <Counterarguments> must be acknowledged and addressed. <Nuance> recognizes complexity and avoids oversimplification. <Hedging> expresses appropriate caution: <suggests>, <indicates>, <appears to>. <Rhetoric> - the art of persuasion - operates even in objective academic writing through structure, evidence selection, and framing."
+      "content": "Academic discourse demands rigorous critical analysis. <Critical thinking> involves systematic evaluation of arguments, evidence, and assumptions. Scholars must <interrogate> claims, examining underlying premises and potential biases. <Analytical frameworks> provide structured approaches to understanding complex phenomena. <Theoretical lenses> - such as feminist theory, postcolonial theory, or systems theory - offer distinct perspectives for interpretation. <Synthesis> integrates multiple sources to develop new insights. <Dialectical reasoning> explores tensions between opposing viewpoints. Arguments require <substantiation> through credible evidence. <Counterarguments> must be acknowledged and addressed. <Nuance> recognizes complexity and avoids oversimplification. <Hedging> expresses appropriate caution: <suggests>, <indicates>, <appears to>. <Rhetoric> - the art of persuasion - operates even in objective academic writing through structure, evidence selection, and framing.\n\nKey terms:\n• <Critical thinking> – Disciplined analysis and evaluation of information to form reasoned judgments\n• <Interrogate> – To examine or question critically and thoroughly\n• <Analytical frameworks> – Structured approaches used to examine and interpret complex information\n• <Theoretical lenses> – Conceptual perspectives used to analyze and interpret phenomena\n• <Synthesis> – Combining multiple ideas or sources into a coherent whole",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Critical thinking",
+            "definition": "Disciplined analysis and evaluation of information to form reasoned judgments"
+          },
+          {
+            "term": "interrogate",
+            "definition": "To examine or question critically and thoroughly"
+          },
+          {
+            "term": "Analytical frameworks",
+            "definition": "Structured approaches used to examine and interpret complex information"
+          },
+          {
+            "term": "Theoretical lenses",
+            "definition": "Conceptual perspectives used to analyze and interpret phenomena"
+          },
+          {
+            "term": "Synthesis",
+            "definition": "Combining multiple ideas or sources into a coherent whole"
+          },
+          {
+            "term": "Dialectical reasoning",
+            "definition": "Resolving contradictions between opposing ideas through logical argumentation"
+          }
+        ]
+      }
     },
     {
       "id": "scholarly-communication",
       "title": "Publication, Citation, and Academic Integrity",
       "type": "theory",
-      "content": "Scholarly communication follows established conventions. <Peer review> subjects manuscripts to expert evaluation before publication. <Impact factor> measures journal influence. <Citation practices> acknowledge intellectual debts and enable readers to trace ideas. Common styles include APA (social sciences), MLA (humanities), and Chicago. <Primary sources> are original materials; <secondary sources> analyze primary materials. <Literature reviews> synthesize existing research, identifying gaps and establishing context. <Academic integrity> demands honesty and ethical conduct. <Plagiarism> - presenting others' work as your own - is a serious violation. <Self-plagiarism> involves republishing your own work without disclosure. <Research ethics> govern treatment of human subjects, data management, and conflicts of interest. <Open access> movements challenge traditional publishing models. <Preprints> disseminate findings before formal peer review."
+      "content": "Scholarly communication follows established conventions. <Peer review> subjects manuscripts to expert evaluation before publication. <Impact factor> measures journal influence. <Citation practices> acknowledge intellectual debts and enable readers to trace ideas. Common styles include APA (social sciences), MLA (humanities), and Chicago. <Primary sources> are original materials; <secondary sources> analyze primary materials. <Literature reviews> synthesize existing research, identifying gaps and establishing context. <Academic integrity> demands honesty and ethical conduct. <Plagiarism> - presenting others' work as your own - is a serious violation. <Self-plagiarism> involves republishing your own work without disclosure. <Research ethics> govern treatment of human subjects, data management, and conflicts of interest. <Open access> movements challenge traditional publishing models. <Preprints> disseminate findings before formal peer review.\n\nKey terms:\n• <Peer review> – Evaluation of work by experts in the same field\n• <Impact factor> – A metric measuring how often a journal's articles are cited\n• <Citation practices> – Conventions for referencing sources in academic or professional writing\n• <Primary sources> – Original, firsthand materials such as documents, data, or artifacts\n• <Secondary sources> – Works that analyze, interpret, or summarize primary source material",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Peer review",
+            "definition": "Evaluation of work by experts in the same field"
+          },
+          {
+            "term": "Impact factor",
+            "definition": "A metric measuring how often a journal's articles are cited"
+          },
+          {
+            "term": "Citation practices",
+            "definition": "Conventions for referencing sources in academic or professional writing"
+          },
+          {
+            "term": "Primary sources",
+            "definition": "Original, firsthand materials such as documents, data, or artifacts"
+          },
+          {
+            "term": "secondary sources",
+            "definition": "Works that analyze, interpret, or summarize primary source material"
+          },
+          {
+            "term": "Literature reviews",
+            "definition": "Comprehensive surveys of existing research on a specific topic"
+          }
+        ]
+      }
     },
     {
       "id": "examples",
@@ -42,7 +126,35 @@
       "id": "peer-review-ethics",
       "title": "Peer Review, Reproducibility, and Research Ethics",
       "type": "theory",
-      "content": "The integrity of academic research depends on robust systems of quality control and ethical conduct.\n\n<Peer review> is the cornerstone of scholarly validation. Manuscripts undergo evaluation by experts who assess methodological rigour, originality, and significance. <Single-blind> review conceals reviewer identity; <double-blind> conceals both reviewer and author identities; <open review> makes the process transparent. Critics argue that peer review can be slow, biased, and resistant to genuinely innovative work.\n\nThe <reproducibility crisis> has shaken confidence in published findings, particularly in psychology and biomedical sciences. Studies suggest that a significant proportion of published results cannot be replicated. Contributing factors include <publication bias> (journals preferring positive results), <p-hacking> (manipulating statistical analyses), and insufficient <sample sizes>.\n\n<Research ethics> encompasses informed consent, data integrity, conflict of interest disclosure, and responsible authorship. <Institutional Review Boards> (IRBs) oversee research involving human subjects. <Predatory journals> that publish without genuine peer review pose a growing threat to scholarly credibility."
+      "content": "The integrity of academic research depends on robust systems of quality control and ethical conduct.\n\n<Peer review> is the cornerstone of scholarly validation. Manuscripts undergo evaluation by experts who assess methodological rigour, originality, and significance. <Single-blind> review conceals reviewer identity; <double-blind> conceals both reviewer and author identities; <open review> makes the process transparent. Critics argue that peer review can be slow, biased, and resistant to genuinely innovative work.\n\nThe <reproducibility crisis> has shaken confidence in published findings, particularly in psychology and biomedical sciences. Studies suggest that a significant proportion of published results cannot be replicated. Contributing factors include <publication bias> (journals preferring positive results), <p-hacking> (manipulating statistical analyses), and insufficient <sample sizes>.\n\n<Research ethics> encompasses informed consent, data integrity, conflict of interest disclosure, and responsible authorship. <Institutional Review Boards> (IRBs) oversee research involving human subjects. <Predatory journals> that publish without genuine peer review pose a growing threat to scholarly credibility.\n\nKey terms:\n• <Peer review> – Evaluation of work by experts in the same field\n• <Single-blind> – A study where participants do not know their group assignment\n• <Double-blind> – A study where neither participants nor researchers know group assignments\n• <Open review> – Peer review process where reviewer and author identities are disclosed\n• <Reproducibility crisis> – Widespread failure to replicate results of published scientific studies",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Peer review",
+            "definition": "Evaluation of work by experts in the same field"
+          },
+          {
+            "term": "Single-blind",
+            "definition": "A study where participants do not know their group assignment"
+          },
+          {
+            "term": "double-blind",
+            "definition": "A study where neither participants nor researchers know group assignments"
+          },
+          {
+            "term": "open review",
+            "definition": "Peer review process where reviewer and author identities are disclosed"
+          },
+          {
+            "term": "reproducibility crisis",
+            "definition": "Widespread failure to replicate results of published scientific studies"
+          },
+          {
+            "term": "publication bias",
+            "definition": "Tendency to publish studies with positive results over negative ones"
+          }
+        ]
+      }
     },
     {
       "id": "examples-2",

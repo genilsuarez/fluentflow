@@ -18,19 +18,103 @@
       "id": "devices",
       "title": "Common Devices and Hardware",
       "type": "theory",
-      "content": "A <computer> or <laptop> is used for work and browsing the internet. A <smartphone> is a mobile phone with internet access. A <tablet> is between a phone and computer in size. Important parts include: the <screen> (display), <keyboard> (for typing), <mouse> (for clicking), and <charger> (for battery power). You <turn on> or <power on> devices, and <turn off> or <shut down> when finished."
+      "content": "A <computer> or <laptop> is used for work and browsing the internet. A <smartphone> is a mobile phone with internet access. A <tablet> is between a phone and computer in size. Important parts include: the <screen> (display), <keyboard> (for typing), <mouse> (for clicking), and <charger> (for battery power). You <turn on> or <power on> devices, and <turn off> or <shut down> when finished.\n\nKey terms:\n• <Computer> – An electronic machine that processes information\n• <Laptop> – A small portable computer you can carry\n• <Smartphone> – A mobile phone with internet and apps\n• <Tablet> – A flat portable computer with a touchscreen\n• <Screen> – The flat surface on a device that shows images",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "computer",
+            "definition": "An electronic machine that processes information"
+          },
+          {
+            "term": "laptop",
+            "definition": "A small portable computer you can carry"
+          },
+          {
+            "term": "smartphone",
+            "definition": "A mobile phone with internet and apps"
+          },
+          {
+            "term": "tablet",
+            "definition": "A flat portable computer with a touchscreen"
+          },
+          {
+            "term": "screen",
+            "definition": "The flat surface on a device that shows images"
+          },
+          {
+            "term": "keyboard",
+            "definition": "A set of keys used to type on a computer"
+          }
+        ]
+      }
     },
     {
       "id": "internet-apps",
       "title": "Internet and Applications",
       "type": "theory",
-      "content": "The <internet> or <web> connects computers worldwide. A <website> is a page on the internet. A <browser> (like Chrome or Safari) lets you visit websites. An <app> or <application> is a program on your phone or computer. You <download> apps from an app store. <Wi-Fi> is wireless internet. When you <log in>, you enter your username and password. <Email> is electronic mail for sending messages."
+      "content": "The <internet> or <web> connects computers worldwide. A <website> is a page on the internet. A <browser> (like Chrome or Safari) lets you visit websites. An <app> or <application> is a program on your phone or computer. You <download> apps from an app store. <Wi-Fi> is wireless internet. When you <log in>, you enter your username and password. <Email> is electronic mail for sending messages.\n\nKey terms:\n• <Internet> – A global network connecting computers worldwide\n• <Web> – Short for World Wide Web; the internet\n• <Website> – A set of pages on the internet with information\n• <Browser> – A program used to access the internet\n• <App> – A software program on a phone or computer",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "internet",
+            "definition": "A global network connecting computers worldwide"
+          },
+          {
+            "term": "web",
+            "definition": "Short for World Wide Web; the internet"
+          },
+          {
+            "term": "website",
+            "definition": "A set of pages on the internet with information"
+          },
+          {
+            "term": "browser",
+            "definition": "A program used to access the internet"
+          },
+          {
+            "term": "app",
+            "definition": "A software program on a phone or computer"
+          },
+          {
+            "term": "application",
+            "definition": "A software program or a formal request"
+          }
+        ]
+      }
     },
     {
       "id": "social-media",
       "title": "Social Media and Communication",
       "type": "theory",
-      "content": "Social media platforms like Facebook, Instagram, and Twitter let people share photos, videos, and messages. You <post> content, <like> or <comment> on others' posts, and <follow> people you're interested in. <Messaging apps> like WhatsApp let you send instant messages. A <video call> lets you see and talk to someone online. Remember to be careful about <privacy> - don't share personal information with strangers online."
+      "content": "Social media platforms like Facebook, Instagram, and Twitter let people share photos, videos, and messages. You <post> content, <like> or <comment> on others' posts, and <follow> people you're interested in. <Messaging apps> like WhatsApp let you send instant messages. A <video call> lets you see and talk to someone online. Remember to be careful about <privacy> - don't share personal information with strangers online.\n\nKey terms:\n• <Post> – A message or piece of content shared on social media.\n• <Like> – Show approval on social media; enjoy something\n• <Comment> – A written remark or opinion about something\n• <Follow> – Subscribe to someone's updates on social media\n• <Messaging apps> – Applications used to send text messages to others",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "post",
+            "definition": "A message or piece of content shared on social media."
+          },
+          {
+            "term": "like",
+            "definition": "Show approval on social media; enjoy something"
+          },
+          {
+            "term": "comment",
+            "definition": "A written remark or opinion about something"
+          },
+          {
+            "term": "follow",
+            "definition": "Subscribe to someone's updates on social media"
+          },
+          {
+            "term": "Messaging apps",
+            "definition": "Applications used to send text messages to others"
+          },
+          {
+            "term": "video call",
+            "definition": "A phone call where you can see the other person"
+          }
+        ]
+      }
     },
     {
       "id": "examples",
@@ -42,7 +126,35 @@
       "id": "online-safety",
       "title": "Online Safety and Privacy",
       "type": "theory",
-      "content": "Staying safe online is very important. Here are key concepts:\n\n• <Password> - A secret word to access your accounts. Make it strong!\n• <Privacy settings> - Controls for who can see your information\n• <Phishing> - Fake emails or messages that try to steal your data\n• <Update> - Install new versions of apps to stay safe\n• <Back up> - Save copies of your important files\n\nSafety tips:\n• Don't share your password with anyone\n• Don't click on links from unknown people\n• Use different passwords for different accounts\n• Always <log out> of public computers"
+      "content": "Staying safe online is very important. Here are key concepts:\n\n• <Password> - A secret word to access your accounts. Make it strong!\n• <Privacy settings> - Controls for who can see your information\n• <Phishing> - Fake emails or messages that try to steal your data\n• <Update> - Install new versions of apps to stay safe\n• <Back up> - Save copies of your important files\n\nSafety tips:\n• Don't share your password with anyone\n• Don't click on links from unknown people\n• Use different passwords for different accounts\n• Always <log out> of public computers",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Password",
+            "definition": "A secret code to access your accounts"
+          },
+          {
+            "term": "Privacy settings",
+            "definition": "Controls that decide who can see your information online"
+          },
+          {
+            "term": "Phishing",
+            "definition": "A scam that tricks people into sharing personal information"
+          },
+          {
+            "term": "Update",
+            "definition": "Make something newer or more current"
+          },
+          {
+            "term": "Back up",
+            "definition": "Make a copy of data to keep it safe"
+          },
+          {
+            "term": "log out",
+            "definition": "Exit your account on a computer or website"
+          }
+        ]
+      }
     },
     {
       "id": "examples-2",
@@ -54,7 +166,15 @@
       "id": "summary",
       "title": "Digital Literacy",
       "type": "summary",
-      "content": "Technology vocabulary is important in today's world. Learn the names of devices and their parts. Practice talking about apps, websites, and social media. When you have a tech problem, describe it clearly: <My phone won't charge> or <I can't connect to Wi-Fi>. Remember to stay safe online - use strong passwords and protect your privacy. Technology changes fast, so keep learning new terms!"
+      "content": "Technology vocabulary is important in today's world. Learn the names of devices and their parts. Practice talking about apps, websites, and social media. When you have a tech problem, describe it clearly: <My phone won't charge> or <I can't connect to Wi-Fi>. Remember to stay safe online - use strong passwords and protect your privacy. Technology changes fast, so keep learning new terms!",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "My phone won't charge",
+            "definition": "My phone battery is not getting power"
+          }
+        ]
+      }
     }
   ],
   "keyVocabulary": [

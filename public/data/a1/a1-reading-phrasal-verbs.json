@@ -12,7 +12,27 @@
       "id": "intro",
       "title": "What Are Phrasal Verbs?",
       "type": "introduction",
-      "content": "Phrasal verbs are very common in English. They are verbs with a small word after them, like <get up>, <look for>, or <turn on>. The small word changes the meaning of the verb. For example, <look> means to see, but <look for> means to search. Let's see how people use phrasal verbs every day."
+      "content": "Phrasal verbs are very common in English. They are verbs with a small word after them, like <get up>, <look for>, or <turn on>. The small word changes the meaning of the verb. For example, <look> means to see, but <look for> means to search. Let's see how people use phrasal verbs every day.",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "get up",
+            "definition": "To leave the bed and stand"
+          },
+          {
+            "term": "look for",
+            "definition": "Try to find something"
+          },
+          {
+            "term": "turn on",
+            "definition": "To start a machine or light"
+          },
+          {
+            "term": "look",
+            "definition": "Direct your eyes to see something"
+          }
+        ]
+      }
     },
     {
       "id": "morning-routine",
@@ -36,7 +56,35 @@
       "id": "at-home",
       "title": "At Home",
       "type": "theory",
-      "content": "We use many phrasal verbs at home:\n\nIn the kitchen: <Put away> the dishes after washing them. <Take out> the rubbish every evening. <Clean up> the table after dinner.\n\nIn the living room: <Turn on> the TV to watch your favourite show. <Turn off> the lights when you leave. <Sit down> on the sofa to relax.\n\nPhrasal verbs at home:\n• Put away - Place something where it belongs\n• Take out - Remove from inside\n• Clean up - Make a place tidy\n• Turn on/off - Start or stop a device"
+      "content": "We use many phrasal verbs at home:\n\nIn the kitchen: <Put away> the dishes after washing them. <Take out> the rubbish every evening. <Clean up> the table after dinner.\n\nIn the living room: <Turn on> the TV to watch your favourite show. <Turn off> the lights when you leave. <Sit down> on the sofa to relax.\n\nPhrasal verbs at home:\n• Put away - Place something where it belongs\n• Take out - Remove from inside\n• Clean up - Make a place tidy\n• Turn on/off - Start or stop a device",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Put away",
+            "definition": "Return something to its proper place"
+          },
+          {
+            "term": "Take out",
+            "definition": "Remove something from a place"
+          },
+          {
+            "term": "Clean up",
+            "definition": "Make a place tidy by removing dirt or mess"
+          },
+          {
+            "term": "Turn on",
+            "definition": "To start a machine or light"
+          },
+          {
+            "term": "Turn off",
+            "definition": "To stop a machine or light"
+          },
+          {
+            "term": "Sit down",
+            "definition": "Lower your body into a seated position"
+          }
+        ]
+      }
     },
     {
       "id": "with-friends",

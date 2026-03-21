@@ -36,13 +36,49 @@
       "id": "work-idioms",
       "title": "Idioms About Work and Effort",
       "type": "theory",
-      "content": "These idioms describe work and effort:\n\n• <Burn the midnight oil> - Work or study very late at night\n• <Go the extra mile> - Do more than expected\n• <Learn the ropes> - Learn how to do a new job\n• <Call it a day> - Stop working for today\n• <Get the ball rolling> - Start an activity or project\n\nExample: <It's my first week at the new job. I'm still learning the ropes, but my colleagues are very helpful.>\n\nThese idioms are very common in everyday English. You will hear them at work, at school, and in conversations with friends."
+      "content": "These idioms describe work and effort:\n\n• <Burn the midnight oil> - Work or study very late at night\n• <Go the extra mile> - Do more than expected\n• <Learn the ropes> - Learn how to do a new job\n• <Call it a day> - Stop working for today\n• <Get the ball rolling> - Start an activity or project\n\nExample: <It's my first week at the new job. I'm still learning the ropes, but my colleagues are very helpful.>\n\nThese idioms are very common in everyday English. You will hear them at work, at school, and in conversations with friends.",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Burn the midnight oil",
+            "definition": "Work or study very late at night"
+          },
+          {
+            "term": "Go the extra mile",
+            "definition": "Make more effort than expected"
+          },
+          {
+            "term": "Learn the ropes",
+            "definition": "Learn how to do a new job or activity"
+          },
+          {
+            "term": "Call it a day",
+            "definition": "Stop working and finish for the day"
+          },
+          {
+            "term": "Get the ball rolling",
+            "definition": "Start an activity or process"
+          }
+        ]
+      }
     },
     {
       "id": "relationship-idioms",
       "title": "Idioms About Relationships",
       "type": "theory",
-      "content": "People use idioms to talk about relationships:\n\n• <Get on like a house on fire> - Become friends very quickly\n• <See eye to eye> - Agree with someone\n• <Give someone the cold shoulder> - Ignore someone deliberately\n• <Hit it off> - Like someone immediately when you meet\n• <Be on the same page> - Have the same understanding\n\nExample: <I met my new neighbour yesterday. We hit it off immediately and talked for hours!>\n\nNote: <Give someone the cold shoulder> is negative — it means you are being unfriendly on purpose."
+      "content": "People use idioms to talk about relationships:\n\n• <Get on like a house on fire> - Become friends very quickly\n• <See eye to eye> - Agree with someone\n• <Give someone the cold shoulder> - Ignore someone deliberately\n• <Hit it off> - Like someone immediately when you meet\n• <Be on the same page> - Have the same understanding\n\nExample: <I met my new neighbour yesterday. We hit it off immediately and talked for hours!>\n\nNote: <Give someone the cold shoulder> is negative — it means you are being unfriendly on purpose.",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "See eye to eye",
+            "definition": "Agree with someone completely"
+          },
+          {
+            "term": "Hit it off",
+            "definition": "To quickly become good friends with someone you just met."
+          }
+        ]
+      }
     },
     {
       "id": "examples-2",

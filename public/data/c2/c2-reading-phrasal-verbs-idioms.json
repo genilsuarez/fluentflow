@@ -36,13 +36,61 @@
       "id": "rhetorical-function",
       "title": "The Rhetorical Power of Figurative Language",
       "type": "theory",
-      "content": "At the C2 level, understanding why a writer chooses a phrasal verb or idiom is as important as understanding what it means:\n\n<Tease out> implies patience and delicacy — the writer is handling fragile ideas.\n<Push back against> implies intellectual courage — the writer is challenging authority.\n<Grapple with> implies honest struggle — the writer acknowledges difficulty.\n<Do away with> implies decisive action — the writer is making a bold claim.\n\nThese choices are never accidental. They signal the writer's stance, confidence, and relationship to the material."
+      "content": "At the C2 level, understanding why a writer chooses a phrasal verb or idiom is as important as understanding what it means:\n\n<Tease out> implies patience and delicacy — the writer is handling fragile ideas.\n<Push back against> implies intellectual courage — the writer is challenging authority.\n<Grapple with> implies honest struggle — the writer acknowledges difficulty.\n<Do away with> implies decisive action — the writer is making a bold claim.\n\nThese choices are never accidental. They signal the writer's stance, confidence, and relationship to the material.",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Tease out",
+            "definition": "To carefully extract or identify subtle elements"
+          },
+          {
+            "term": "Push back against",
+            "definition": "To resist or challenge an idea or authority"
+          },
+          {
+            "term": "Grapple with",
+            "definition": "To struggle intellectually with a complex problem"
+          },
+          {
+            "term": "Do away with",
+            "definition": "To eliminate or abolish something"
+          }
+        ]
+      }
     },
     {
       "id": "cognitive-metaphor",
       "title": "Cognitive Metaphor and Conceptual Frameworks",
       "type": "theory",
-      "content": "At the C2 level, understanding figurative language requires engaging with <cognitive linguistics> and the theory of <conceptual metaphor>.\n\nLakoff and Johnson's seminal work demonstrated that metaphor is not merely a literary device but a fundamental cognitive mechanism. We don't just talk in metaphors — we <think> in them. The metaphor ARGUMENT IS WAR structures how we conceptualize disagreement: we <attack> positions, <defend> claims, <shoot down> arguments, and <win> debates. Alternative metaphors (ARGUMENT IS DANCE, ARGUMENT IS CONSTRUCTION) would fundamentally alter how we engage with disagreement.\n\n<Dead metaphors> — expressions whose figurative origins have been forgotten — reveal how deeply metaphorical thinking is embedded in language. We <grasp> concepts, <see> the point, <weigh> options, and <build> arguments without conscious awareness of the physical metaphors underlying these abstractions.\n\n<Catachresis> — the deliberate misuse or extension of metaphor — is a powerful literary and rhetorical device. Derrida argued that all language is ultimately catachrestic, since words never perfectly capture the concepts they represent.\n\nMastery at this level means not only using figurative language fluently but recognizing how it shapes thought itself."
+      "content": "At the C2 level, understanding figurative language requires engaging with <cognitive linguistics> and the theory of <conceptual metaphor>.\n\nLakoff and Johnson's seminal work demonstrated that metaphor is not merely a literary device but a fundamental cognitive mechanism. We don't just talk in metaphors — we <think> in them. The metaphor ARGUMENT IS WAR structures how we conceptualize disagreement: we <attack> positions, <defend> claims, <shoot down> arguments, and <win> debates. Alternative metaphors (ARGUMENT IS DANCE, ARGUMENT IS CONSTRUCTION) would fundamentally alter how we engage with disagreement.\n\n<Dead metaphors> — expressions whose figurative origins have been forgotten — reveal how deeply metaphorical thinking is embedded in language. We <grasp> concepts, <see> the point, <weigh> options, and <build> arguments without conscious awareness of the physical metaphors underlying these abstractions.\n\n<Catachresis> — the deliberate misuse or extension of metaphor — is a powerful literary and rhetorical device. Derrida argued that all language is ultimately catachrestic, since words never perfectly capture the concepts they represent.\n\nMastery at this level means not only using figurative language fluently but recognizing how it shapes thought itself.",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "cognitive linguistics",
+            "definition": "Study of language as it reflects and shapes human cognition"
+          },
+          {
+            "term": "conceptual metaphor",
+            "definition": "Understanding one abstract domain through the structure of another"
+          },
+          {
+            "term": "think",
+            "definition": "To use the mind to form ideas, opinions, or judgments"
+          },
+          {
+            "term": "attack",
+            "definition": "To strongly criticize or argue against an idea or position"
+          },
+          {
+            "term": "defend",
+            "definition": "To support or justify an idea or position with arguments"
+          },
+          {
+            "term": "shoot down",
+            "definition": "To reject or dismiss an idea or proposal forcefully"
+          }
+        ]
+      }
     },
     {
       "id": "examples-2",

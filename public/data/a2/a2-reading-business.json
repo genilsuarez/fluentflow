@@ -18,19 +18,99 @@
       "id": "greetings",
       "title": "Professional Greetings",
       "type": "theory",
-      "content": "In business, we use formal greetings. Instead of <Hi> or <Hey>, we say <Good morning>, <Good afternoon>, or <Good evening>. When meeting someone for the first time, we say <Nice to meet you> or <Pleased to meet you>. We also use titles like Mr., Ms., or Dr. with last names to show respect."
+      "content": "In business, we use formal greetings. Instead of <Hi> or <Hey>, we say <Good morning>, <Good afternoon>, or <Good evening>. When meeting someone for the first time, we say <Nice to meet you> or <Pleased to meet you>. We also use titles like Mr., Ms., or Dr. with last names to show respect.\n\nKey terms:\n• <Hi> – An informal greeting\n• <Hey> – An informal way to say hello\n• <Good morning> – A polite greeting used in the morning\n• <Good afternoon> – A polite greeting used after midday\n• <Good evening> – A polite greeting used in the evening",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Hi",
+            "definition": "An informal greeting"
+          },
+          {
+            "term": "Hey",
+            "definition": "An informal way to say hello"
+          },
+          {
+            "term": "Good morning",
+            "definition": "A polite greeting used in the morning"
+          },
+          {
+            "term": "Good afternoon",
+            "definition": "A polite greeting used after midday"
+          },
+          {
+            "term": "Good evening",
+            "definition": "A polite greeting used in the evening"
+          },
+          {
+            "term": "Nice to meet you",
+            "definition": "A polite phrase when meeting someone for the first time"
+          }
+        ]
+      }
     },
     {
       "id": "workplace-vocab",
       "title": "Common Workplace Words",
       "type": "theory",
-      "content": "Every workplace has special words. An <office> is where people work. A <meeting> is when people talk about work together. A <deadline> is the time when work must be finished. Your <colleague> is someone who works with you. The <manager> or <boss> is the person who leads the team."
+      "content": "Every workplace has special words. An <office> is where people work. A <meeting> is when people talk about work together. A <deadline> is the time when work must be finished. Your <colleague> is someone who works with you. The <manager> or <boss> is the person who leads the team.\n\nKey terms:\n• <Office> – A place where people work\n• <Meeting> – A gathering of people to discuss work topics\n• <Deadline> – The time by which work must be completed\n• <Colleague> – A person you work with\n• <Manager> – A person who leads and supervises a team",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "office",
+            "definition": "A place where people work"
+          },
+          {
+            "term": "meeting",
+            "definition": "A gathering of people to discuss work topics"
+          },
+          {
+            "term": "deadline",
+            "definition": "The time by which work must be completed"
+          },
+          {
+            "term": "colleague",
+            "definition": "A person you work with"
+          },
+          {
+            "term": "manager",
+            "definition": "A person who leads and supervises a team"
+          },
+          {
+            "term": "boss",
+            "definition": "The person in charge at work"
+          }
+        ]
+      }
     },
     {
       "id": "email-etiquette",
       "title": "Email Etiquette",
       "type": "theory",
-      "content": "Emails are one of the most common forms of business communication. A professional email has three main parts: a greeting, a body, and a closing. Start with <Dear Mr./Ms. [Last Name]> for formal emails or <Hello [First Name]> for semi-formal ones. Keep the body short and clear. Use phrases like <I am writing to inform you...> or <Please find attached...> to sound professional. End with <Kind regards>, <Best regards>, or <Yours sincerely> followed by your full name. Always check your email for spelling mistakes before sending it. Remember: never use slang, emojis, or ALL CAPS in professional emails."
+      "content": "Emails are one of the most common forms of business communication. A professional email has three main parts: a greeting, a body, and a closing. Start with <Dear Mr./Ms. [Last Name]> for formal emails or <Hello [First Name]> for semi-formal ones. Keep the body short and clear. Use phrases like <I am writing to inform you...> or <Please find attached...> to sound professional. End with <Kind regards>, <Best regards>, or <Yours sincerely> followed by your full name. Always check your email for spelling mistakes before sending it. Remember: never use slang, emojis, or ALL CAPS in professional emails.\n\nKey terms:\n• <Dear Mr./Ms. [Last Name]> – A formal greeting at the start of a letter\n• <Hello [First Name]> – A semi-formal greeting using someone's first name\n• <Kind regards> – A polite closing phrase in emails or letters\n• <Best regards> – A polite closing phrase in letters or emails\n• <Yours sincerely> – A formal closing phrase in letters",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Dear Mr./Ms. [Last Name]",
+            "definition": "A formal greeting at the start of a letter"
+          },
+          {
+            "term": "Hello [First Name]",
+            "definition": "A semi-formal greeting using someone's first name"
+          },
+          {
+            "term": "Kind regards",
+            "definition": "A polite closing phrase in emails or letters"
+          },
+          {
+            "term": "Best regards",
+            "definition": "A polite closing phrase in letters or emails"
+          },
+          {
+            "term": "Yours sincerely",
+            "definition": "A formal closing phrase in letters"
+          }
+        ]
+      }
     },
     {
       "id": "examples",
@@ -42,7 +122,19 @@
       "id": "meetings-calls",
       "title": "Meetings and Phone Calls",
       "type": "theory",
-      "content": "Meetings and phone calls are important in business. Here are useful phrases:\n\nStarting a meeting:\n• <Let's get started> - Begin the meeting\n• <The purpose of this meeting is...> - Explain why you are meeting\n• <Does everyone have the agenda?> - Check everyone has the plan\n\nPhone calls:\n• <Good morning, this is [name] speaking> - Answering professionally\n• <May I speak to...?> - Asking for someone\n• <I'll call you back> - Promise to phone again later\n• <Could you repeat that, please?> - Asking to hear again\n\nExample: <Good morning, this is Anna speaking. How can I help you?>"
+      "content": "Meetings and phone calls are important in business. Here are useful phrases:\n\nStarting a meeting:\n• <Let's get started> - Begin the meeting\n• <The purpose of this meeting is...> - Explain why you are meeting\n• <Does everyone have the agenda?> - Check everyone has the plan\n\nPhone calls:\n• <Good morning, this is [name] speaking> - Answering professionally\n• <May I speak to...?> - Asking for someone\n• <I'll call you back> - Promise to phone again later\n• <Could you repeat that, please?> - Asking to hear again\n\nExample: <Good morning, this is Anna speaking. How can I help you?>",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Let's get started",
+            "definition": "A phrase to begin an activity"
+          },
+          {
+            "term": "I'll call you back",
+            "definition": "I will phone you again later"
+          }
+        ]
+      }
     },
     {
       "id": "examples-2",
@@ -54,7 +146,31 @@
       "id": "summary",
       "title": "Key Takeaways",
       "type": "summary",
-      "content": "Remember: Business English is formal and polite. Use proper greetings like <Good morning> instead of <Hi>. Learn workplace vocabulary like <meeting>, <deadline>, and <colleague>. Always be respectful and professional in your communication. Practice makes perfect!"
+      "content": "Remember: Business English is formal and polite. Use proper greetings like <Good morning> instead of <Hi>. Learn workplace vocabulary like <meeting>, <deadline>, and <colleague>. Always be respectful and professional in your communication. Practice makes perfect!",
+      "interactive": {
+        "tooltips": [
+          {
+            "term": "Good morning",
+            "definition": "A polite greeting used in the morning"
+          },
+          {
+            "term": "Hi",
+            "definition": "An informal greeting"
+          },
+          {
+            "term": "meeting",
+            "definition": "A gathering of people to discuss work topics"
+          },
+          {
+            "term": "deadline",
+            "definition": "The time by which work must be completed"
+          },
+          {
+            "term": "colleague",
+            "definition": "A person you work with"
+          }
+        ]
+      }
     }
   ],
   "keyVocabulary": [
