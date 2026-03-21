@@ -91,9 +91,9 @@
     "question": "What does \"break new ground\" mean?",
     "options": [
       "To destroy something",
-      "To start farming within the conventional framework",
+      "To start farming",
       "To do something innovative",
-      "To dig a hole in this context"
+      "To dig a hole"
     ],
     "correct": "To do something innovative",
     "explanation": "<Break new ground> means to do something that has not been done before."
@@ -134,8 +134,8 @@
   {
     "question": "What does \"cut corners\" mean in a professional context?",
     "options": [
-      "To turn around a corner in ordinary cases",
-      "To cut paper into shapes for the most part",
+      "To turn around a corner",
+      "To cut paper into shapes",
       "To reduce the size of something",
       "To take shortcuts, often reducing quality"
     ],
@@ -167,7 +167,7 @@
   {
     "question": "What does \"dress down\" mean?",
     "options": [
-      "To feel sad when considering the broader context",
+      "To feel sad",
       "To put on a dress",
       "To wear casual clothes",
       "To go downstairs"
@@ -200,10 +200,10 @@
   {
     "question": "What does \"owing to\" express?",
     "options": [
-      "Contrast when considering the broader context",
+      "Contrast",
       "Cause or reason",
-      "Emphasis based on common understanding",
-      "Addition within the conventional framework"
+      "Emphasis",
+      "Addition"
     ],
     "correct": "Cause or reason",
     "explanation": "<Owing to> indicates the reason or cause for something, similar to <due to>."
@@ -223,9 +223,9 @@
     "question": "What does \"hit the ground running\" mean?",
     "options": [
       "To start something with great energy and enthusiasm",
-      "To run very fast in conventional terms in this context",
-      "To fall while running in conventional terms",
-      "To start exercising by common definition"
+      "To run very fast",
+      "To fall while running",
+      "To start exercising"
     ],
     "correct": "To start something with great energy and enthusiasm",
     "explanation": "<Hit the ground running> means to begin a task or project with immediate effort and energy."
@@ -235,8 +235,8 @@
     "options": [
       "On the other hand",
       "Consequently",
-      "In addition when considering the broader context",
-      "Indeed in the most widely accepted sense"
+      "In addition",
+      "Indeed"
     ],
     "correct": "On the other hand",
     "explanation": "<On the other hand> presents a contrasting or alternative perspective."
@@ -244,9 +244,9 @@
   {
     "question": "What does the phrasal verb \"figure out\" mean?",
     "options": [
-      "To go outside in a typical scenario",
+      "To go outside",
       "To understand or solve something",
-      "To draw a figure in most situations",
+      "To draw a figure",
       "To calculate a number"
     ],
     "correct": "To understand or solve something",
@@ -268,8 +268,8 @@
     "options": [
       "To earn just enough money to live on",
       "To reach the end of a road",
-      "To meet new people in most situations",
-      "To finish a project for the most part"
+      "To meet new people",
+      "To finish a project"
     ],
     "correct": "To earn just enough money to live on",
     "explanation": "<Make ends meet> means to have just enough money to pay for basic necessities."
@@ -288,10 +288,10 @@
   {
     "question": "What does \"try on\" mean?",
     "options": [
-      "To attempt something as a general rule",
-      "To turn on a device in a typical scenario",
+      "To attempt something",
+      "To turn on a device",
       "To put on clothing to see if it fits",
-      "To start a new job in this context"
+      "To start a new job"
     ],
     "correct": "To put on clothing to see if it fits",
     "explanation": "<Try on> means to put on a piece of clothing to check the fit or appearance."
@@ -332,9 +332,9 @@
   {
     "question": "What does \"pull strings\" mean?",
     "options": [
-      "To untangle something in common practice",
-      "To play a musical instrument in common practice",
-      "To pull a rope under normal circumstances",
+      "To untangle something",
+      "To play a musical instrument",
+      "To pull a rope",
       "To use influence or connections to get something done"
     ],
     "correct": "To use influence or connections to get something done",
@@ -368,7 +368,7 @@
       "At the end of a race",
       "Over a long period of time",
       "During a marathon",
-      "In a hurry as widely accepted"
+      "In a hurry"
     ],
     "correct": "Over a long period of time",
     "explanation": "<In the long run> means considering a long period of time or the final result."
@@ -388,7 +388,7 @@
     "question": "What does \"state-of-the-art\" mean?",
     "options": [
       "Related to art museums",
-      "Very old-fashioned in this context",
+      "Very old-fashioned",
       "In a state of confusion",
       "Using the most modern technology"
     ],
@@ -421,8 +421,8 @@
     "question": "What does \"win-win situation\" mean?",
     "options": [
       "A situation with no losers",
-      "Winning twice in a row in ordinary cases",
-      "A competitive game in common practice",
+      "Winning twice in a row",
+      "A competitive game",
       "A situation where everyone benefits"
     ],
     "correct": "A situation where everyone benefits",

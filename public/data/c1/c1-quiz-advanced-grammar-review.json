@@ -186,7 +186,7 @@
     "options": [
       "Having walked through the park, I felt refreshed.",
       "Walking through the park, I heard the birds singing.",
-      "Exhausted from the hike, she sat down to rest in ordinary everyday cases.",
+      "Exhausted from the hike, she sat down to rest",
       "Walking through the park, the birds were singing beautifully."
     ],
     "correct": "Walking through the park, the birds were singing beautifully.",

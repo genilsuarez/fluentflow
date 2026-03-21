@@ -13,10 +13,10 @@
   {
     "question": "Where do you <check in> at an airport?",
     "options": [
-      "on the plane according to standard definitions",
+      "on the plane",
       "at the check-in counter",
-      "at the gate when considering the broader context",
-      "at customs in this context"
+      "at the gate",
+      "at customs"
     ],
     "correct": "at the check-in counter",
     "explanation": "You check in <at the check-in counter> to get your boarding pass."
@@ -25,9 +25,9 @@
     "question": "What does <boarding pass> mean?",
     "options": [
       "a ticket to board the plane",
-      "a visa in a typical scenario",
-      "luggage tag in most situations",
-      "a passport in this context"
+      "a visa",
+      "luggage tag",
+      "a passport"
     ],
     "correct": "a ticket to board the plane",
     "explanation": "A <boarding pass> is the document that allows you to board your flight."
@@ -35,8 +35,8 @@
   {
     "question": "What is <carry-on luggage>?",
     "options": [
-      "heavy luggage as a general rule",
-      "lost luggage in this context",
+      "heavy luggage",
+      "lost luggage",
       "luggage you carry on the plane",
       "luggage you check in"
     ],
@@ -47,8 +47,8 @@
     "question": "Where do you go through <customs>?",
     "options": [
       "when entering a country",
-      "at the hotel based on common understanding",
-      "at the beach in the most widely accepted sense",
+      "at the hotel",
+      "at the beach",
       "at the restaurant"
     ],
     "correct": "when entering a country",
@@ -60,7 +60,7 @@
       "only dinner included",
       "all meals and drinks included",
       "only breakfast included",
-      "no meals included in this context"
+      "no meals included"
     ],
     "correct": "all meals and drinks included",
     "explanation": "<All-inclusive> means all meals, drinks, and activities are included in the price."
@@ -90,10 +90,10 @@
   {
     "question": "What is <jet lag>?",
     "options": [
-      "lost luggage by common definition",
+      "lost luggage",
       "tiredness from time zone changes",
-      "fear of flying in everyday usage",
-      "missing a flight in this context"
+      "fear of flying",
+      "missing a flight"
     ],
     "correct": "tiredness from time zone changes",
     "explanation": "<Jet lag> is fatigue caused by traveling across different time zones."
@@ -101,10 +101,10 @@
   {
     "question": "Where do you find <tourist attractions>?",
     "options": [
-      "at home in the usual sense",
-      "in offices in this context",
+      "at home",
+      "in offices",
       "in popular destinations",
-      "at the airport when considering the broader context"
+      "at the airport"
     ],
     "correct": "in popular destinations",
     "explanation": "<Tourist attractions> are interesting places that visitors want to see."
@@ -113,8 +113,8 @@
     "question": "What does <off-season> mean?",
     "options": [
       "peak tourist time",
-      "holiday season when considering the broader context",
-      "summer time in regular usage",
+      "holiday season",
+      "summer time",
       "when fewer tourists visit"
     ],
     "correct": "when fewer tourists visit",
@@ -145,10 +145,10 @@
   {
     "question": "What is <backpacking>?",
     "options": [
-      "luxury travel in this context",
-      "cruise travel in standard terms",
+      "luxury travel",
+      "cruise travel",
       "budget travel with a backpack",
-      "business travel in standard terms"
+      "business travel"
     ],
     "correct": "budget travel with a backpack",
     "explanation": "<Backpacking> is traveling cheaply, often staying in hostels and carrying your belongings in a backpack."
@@ -156,10 +156,10 @@
   {
     "question": "What does <sightseeing> mean?",
     "options": [
-      "eating in the usual sense",
+      "eating",
       "visiting tourist attractions",
-      "sleeping for the most part",
-      "shopping in most situations"
+      "sleeping",
+      "shopping"
     ],
     "correct": "visiting tourist attractions",
     "explanation": "<Sightseeing> is the activity of visiting interesting places as a tourist."
@@ -168,9 +168,9 @@
     "question": "What is a <souvenir>?",
     "options": [
       "a memory item from a trip",
-      "a ticket in the usual sense",
-      "a passport as a general rule",
-      "a map as generally defined"
+      "a ticket",
+      "a passport",
+      "a map"
     ],
     "correct": "a memory item from a trip",
     "explanation": "A <souvenir> is something you buy to remember your trip."
@@ -179,9 +179,9 @@
     "question": "What does <fully booked> mean?",
     "options": [
       "no rooms available",
-      "expensive according to standard definitions",
-      "empty based on common understanding",
-      "cheap within the conventional framework"
+      "expensive",
+      "empty",
+      "cheap"
     ],
     "correct": "no rooms available",
     "explanation": "<Fully booked> means all rooms or seats are reserved."
@@ -190,9 +190,9 @@
     "question": "What is a <travel itinerary>?",
     "options": [
       "a planned route or schedule",
-      "a passport for the most part",
-      "a ticket by common definition",
-      "a suitcase in the usual sense"
+      "a passport",
+      "a ticket",
+      "a suitcase"
     ],
     "correct": "a planned route or schedule",
     "explanation": "An itinerary is a detailed plan of your trip including dates and places."
@@ -211,10 +211,10 @@
   {
     "question": "What is a <package tour>?",
     "options": [
-      "solo travel in everyday usage",
-      "business trip in this context",
+      "solo travel",
+      "business trip",
       "organized trip with everything included",
-      "sending a package in regular usage"
+      "sending a package"
     ],
     "correct": "organized trip with everything included",
     "explanation": "A <package tour> includes transportation, accommodation, and activities in one price."

@@ -2,10 +2,10 @@
   {
     "question": "A <curriculum> is...",
     "options": [
-      "a teacher's salary as typically understood",
+      "a teacher's salary",
       "a plan of subjects taught at a school",
-      "a type of exam by common definition",
-      "a school building for the most part"
+      "a type of exam",
+      "a school building"
     ],
     "correct": "a plan of subjects taught at a school",
     "explanation": "A <curriculum> is the set of courses and content taught at a school or university."
@@ -13,10 +13,10 @@
   {
     "question": "When you <graduate>, you...",
     "options": [
-      "change schools in ordinary cases",
-      "start a new course in standard terms",
+      "change schools",
+      "start a new course",
       "complete your studies and receive a degree",
-      "fail an exam in ordinary cases for the most part"
+      "fail an exam"
     ],
     "correct": "complete your studies and receive a degree",
     "explanation": "To <graduate> means to successfully finish a course of study."
@@ -24,8 +24,8 @@
   {
     "question": "<Tuition> refers to...",
     "options": [
-      "the school bus for the most part",
-      "the textbooks in standard terms",
+      "the school bus",
+      "the textbooks",
       "the money paid for education",
       "the school uniform as recognized by most authorities"
     ],
@@ -35,9 +35,9 @@
   {
     "question": "A <semester> is...",
     "options": [
-      "a single class based on common understanding",
+      "a single class",
       "half of an academic year",
-      "a type of exam within the conventional framework",
+      "a type of exam",
       "a full academic year"
     ],
     "correct": "half of an academic year",
@@ -46,10 +46,10 @@
   {
     "question": "<Renewable energy> comes from...",
     "options": [
-      "natural gas under normal circumstances",
+      "natural gas",
       "sources that won't run out, like sun and wind",
-      "coal and oil in a typical scenario",
-      "nuclear power only in this context"
+      "coal and oil",
+      "nuclear power only"
     ],
     "correct": "sources that won't run out, like sun and wind",
     "explanation": "<Renewable energy> comes from natural sources that are constantly replenished."
@@ -59,8 +59,8 @@
     "options": [
       "the amount of CO2 you produce",
       "the size of your shoes",
-      "your weight by common definition",
-      "how far you walk in this context"
+      "your weight",
+      "how far you walk"
     ],
     "correct": "the amount of CO2 you produce",
     "explanation": "Your <carbon footprint> is the total amount of greenhouse gases you produce."
@@ -69,9 +69,9 @@
     "question": "<Emissions> are...",
     "options": [
       "gases released into the atmosphere",
-      "recycling methods for the most part",
-      "weather patterns as widely accepted",
-      "types of energy as typically understood"
+      "recycling methods",
+      "weather patterns",
+      "types of energy"
     ],
     "correct": "gases released into the atmosphere",
     "explanation": "<Emissions> are substances, especially gases, released into the air."
@@ -79,10 +79,10 @@
   {
     "question": "An <influencer> is someone who...",
     "options": [
-      "teaches at a university by common definition",
-      "works in a factory under normal circumstances",
+      "teaches at a university",
+      "works in a factory",
       "has many followers and affects people's opinions online",
-      "writes for a newspaper in common practice by common definition"
+      "writes for a newspaper"
     ],
     "correct": "has many followers and affects people's opinions online",
     "explanation": "An <influencer> is a person with a large social media following who can affect others' decisions."
@@ -90,9 +90,9 @@
   {
     "question": "When something goes <viral>, it...",
     "options": [
-      "becomes very expensive in practical terms",
+      "becomes very expensive",
       "spreads very quickly on the internet",
-      "becomes illegal in standard terms",
+      "becomes illegal",
       "disappears from the internet"
     ],
     "correct": "spreads very quickly on the internet",
@@ -103,8 +103,8 @@
     "options": [
       "the number of friends you have",
       "likes, comments, and shares on a post",
-      "the cost of advertising in regular usage",
-      "the time you spend online in this context"
+      "the cost of advertising",
+      "the time you spend online"
     ],
     "correct": "likes, comments, and shares on a post",
     "explanation": "<Engagement> measures how much people interact with content through likes, comments, and shares."
@@ -113,9 +113,9 @@
     "question": "A <hashtag> is used to...",
     "options": [
       "categorize content on social media",
-      "send private messages in standard terms",
-      "delete posts in this context",
-      "block other users in this context"
+      "send private messages",
+      "delete posts",
+      "block other users"
     ],
     "correct": "categorize content on social media",
     "explanation": "A <hashtag> (#) is used to label and find content about specific topics."
@@ -124,9 +124,9 @@
     "question": "<Cyberbullying> is...",
     "options": [
       "bullying that happens online",
-      "online shopping in this context",
+      "online shopping",
       "a type of video game",
-      "a computer virus in this context"
+      "a computer virus"
     ],
     "correct": "bullying that happens online",
     "explanation": "<Cyberbullying> is the use of technology to harass, threaten, or embarrass someone."
@@ -134,9 +134,9 @@
   {
     "question": "A <scholarship> is...",
     "options": [
-      "a student's grade for the most part in regular usage",
-      "a type of exam under normal circumstances",
-      "a school subject in most situations in standard terms",
+      "a student's grade",
+      "a type of exam",
+      "a school subject",
       "money given to a student to help pay for education"
     ],
     "correct": "money given to a student to help pay for education",
@@ -145,9 +145,9 @@
   {
     "question": "<Sustainability> means...",
     "options": [
-      "building bigger cities by common definition",
-      "spending more money for the most part",
-      "making things faster in everyday usage",
+      "building bigger cities",
+      "spending more money",
+      "making things faster",
       "using resources without harming the future"
     ],
     "correct": "using resources without harming the future",
@@ -156,10 +156,10 @@
   {
     "question": "<Pollution> is...",
     "options": [
-      "clean air in standard terms",
+      "clean air",
       "harmful substances in the environment",
-      "natural resources in everyday usage",
-      "recycled materials for the most part"
+      "natural resources",
+      "recycled materials"
     ],
     "correct": "harmful substances in the environment",
     "explanation": "<Pollution> is the presence of harmful substances that damage the environment."
@@ -167,10 +167,10 @@
   {
     "question": "An <algorithm> is...",
     "options": [
-      "a type of social media in standard terms",
+      "a type of social media",
       "a set of rules a computer follows to solve problems",
-      "a computer screen in common practice in this context",
-      "an internet connection in a typical scenario"
+      "a computer screen",
+      "an internet connection"
     ],
     "correct": "a set of rules a computer follows to solve problems",
     "explanation": "An <algorithm> is a process or set of rules followed by a computer to perform calculations."
@@ -179,9 +179,9 @@
     "question": "A <content creator> is someone who...",
     "options": [
       "makes videos, articles, or posts for the internet",
-      "designs websites only in this context",
-      "repairs computers as generally defined",
-      "sells phones under normal circumstances"
+      "designs websites only",
+      "repairs computers",
+      "sells phones"
     ],
     "correct": "makes videos, articles, or posts for the internet",
     "explanation": "A <content creator> produces digital content like videos, blogs, or social media posts."
@@ -190,9 +190,9 @@
     "question": "<Climate change> refers to...",
     "options": [
       "long-term changes in global temperatures and weather",
-      "daily weather forecasts in this context",
-      "local temperature as generally defined in the usual sense",
-      "seasonal changes under normal circumstances"
+      "daily weather forecasts",
+      "local temperature",
+      "seasonal changes"
     ],
     "correct": "long-term changes in global temperatures and weather",
     "explanation": "<Climate change> refers to significant, long-term shifts in global climate patterns."
@@ -200,10 +200,10 @@
   {
     "question": "A university <degree> is...",
     "options": [
-      "a type of exam by common definition",
+      "a type of exam",
       "a qualification awarded after completing studies",
-      "a school subject under normal circumstances",
-      "a student ID card in ordinary cases"
+      "a school subject",
+      "a student ID card"
     ],
     "correct": "a qualification awarded after completing studies",
     "explanation": "A <degree> is an academic qualification given by a university after completing a program."
@@ -211,10 +211,10 @@
   {
     "question": "To <recycle> means to...",
     "options": [
-      "buy new products as generally defined",
-      "throw things away for the most part",
+      "buy new products",
+      "throw things away",
       "convert waste into reusable material",
-      "burn garbage as a general rule"
+      "burn garbage"
     ],
     "correct": "convert waste into reusable material",
     "explanation": "To <recycle> means to process used materials so they can be used again."

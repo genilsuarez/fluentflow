@@ -214,7 +214,7 @@
       "Nice to meet you",
       "See you later",
       "Goodbye as recognized by most authorities",
-      "Good night when considering the broader context"
+      "Good night"
     ],
     "correct": "Nice to meet you",
     "explanation": "<Nice to meet you> is a polite greeting when meeting someone for the first time."
@@ -267,7 +267,7 @@
     "question": "How do you ask for help politely?",
     "options": [
       "Can you help me?",
-      "Help me! when considering the broader context",
+      "Help me!",
       "Help me now",
       "You help me"
     ],

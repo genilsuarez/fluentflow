@@ -2,10 +2,10 @@
   {
     "question": "An <aporia> is...",
     "options": [
-      "a rhetorical device for persuasion as widely accepted",
+      "a rhetorical device for persuasion",
       "an irresolvable internal contradiction in a text or argument",
-      "a logical proof under normal circumstances",
-      "a type of literary genre as typically understood"
+      "a logical proof",
+      "a type of literary genre"
     ],
     "correct": "an irresolvable internal contradiction in a text or argument",
     "explanation": "An <aporia> is a state of puzzlement or an irresolvable contradiction, often in philosophical texts."
@@ -13,10 +13,10 @@
   {
     "question": "A <palimpsest> metaphorically refers to...",
     "options": [
-      "an ancient language in standard terms",
-      "a single clear message under normal circumstances",
+      "an ancient language",
+      "a single clear message",
       "something with multiple layers of meaning or history",
-      "a type of manuscript in standard terms"
+      "a type of manuscript"
     ],
     "correct": "something with multiple layers of meaning or history",
     "explanation": "A <palimpsest> originally meant a manuscript written over earlier text; metaphorically, it refers to layered meanings."
@@ -25,9 +25,9 @@
     "question": "<Heteroglossia> describes...",
     "options": [
       "the coexistence of multiple voices or perspectives in a text",
-      "grammatical errors under normal circumstances in ordinary everyday cases",
-      "a single authoritative voice as widely accepted in common daily practice",
-      "translation between languages in most situations"
+      "grammatical errors",
+      "a single authoritative voice",
+      "translation between languages"
     ],
     "correct": "the coexistence of multiple voices or perspectives in a text",
     "explanation": "<Heteroglossia>, coined by Bakhtin, refers to the diversity of voices and social languages within a text."
@@ -35,9 +35,9 @@
   {
     "question": "The <subaltern> refers to...",
     "options": [
-      "military officers by common definition",
-      "political leaders by common definition",
-      "academic professors in this context by common definition",
+      "military officers",
+      "political leaders",
+      "academic professors",
       "marginalized groups excluded from power structures"
     ],
     "correct": "marginalized groups excluded from power structures",
@@ -46,10 +46,10 @@
   {
     "question": "<Ekphrasis> is...",
     "options": [
-      "a type of poetry meter by common definition",
-      "a grammatical structure in regular usage",
+      "a type of poetry meter",
+      "a grammatical structure",
       "a literary description of a visual work of art",
-      "a philosophical argument as widely accepted"
+      "a philosophical argument"
     ],
     "correct": "a literary description of a visual work of art",
     "explanation": "<Ekphrasis> is the literary representation or description of visual art."
@@ -57,10 +57,10 @@
   {
     "question": "<Ontology> is concerned with...",
     "options": [
-      "mathematical proofs as a general rule",
+      "mathematical proofs",
       "the nature of being and existence",
-      "historical events for the most part",
-      "the study of language in this context"
+      "historical events",
+      "the study of language"
     ],
     "correct": "the nature of being and existence",
     "explanation": "<Ontology> is the philosophical study of the nature of being, becoming, and reality."
@@ -69,9 +69,9 @@
     "question": "Kant's <categorical imperative> is...",
     "options": [
       "a universal moral law that applies regardless of circumstances",
-      "a suggestion for good behavior in everyday usage",
-      "a scientific hypothesis in conventional terms as widely accepted",
-      "a legal requirement under normal circumstances in standard terms"
+      "a suggestion for good behavior",
+      "a scientific hypothesis",
+      "a legal requirement"
     ],
     "correct": "a universal moral law that applies regardless of circumstances",
     "explanation": "The <categorical imperative> is Kant's principle that one should act only according to rules one could will to be universal laws."
@@ -79,10 +79,10 @@
   {
     "question": "<Qualia> are...",
     "options": [
-      "scientific measurements for the most part as a general rule",
-      "logical propositions by common definition in common practice",
+      "scientific measurements",
+      "logical propositions",
       "subjective, conscious experiences like the redness of red",
-      "mathematical constants under normal circumstances"
+      "mathematical constants"
     ],
     "correct": "subjective, conscious experiences like the redness of red",
     "explanation": "<Qualia> are the subjective, phenomenal qualities of conscious experience."
@@ -92,7 +92,7 @@
     "options": [
       "the argument uses many examples",
       "the argument is well-structured",
-      "the argument is very long in a typical scenario",
+      "the argument is very long",
       "the conclusion is assumed in the premises"
     ],
     "correct": "the conclusion is assumed in the premises",
@@ -101,10 +101,10 @@
   {
     "question": "<Inviolability> means...",
     "options": [
-      "conditional rights under normal circumstances",
+      "conditional rights",
       "the quality of being sacred and not to be transgressed",
-      "temporary protection in common practice in everyday usage",
-      "flexibility under normal circumstances as a general rule"
+      "temporary protection",
+      "flexibility"
     ],
     "correct": "the quality of being sacred and not to be transgressed",
     "explanation": "<Inviolability> means the quality of being too important to be broken or violated."
@@ -112,10 +112,10 @@
   {
     "question": "<Jurisprudence> is...",
     "options": [
-      "a type of crime as generally defined",
+      "a type of crime",
       "the theory and philosophy of law",
-      "a court verdict for the most part",
-      "a legal document in most situations"
+      "a court verdict",
+      "a legal document"
     ],
     "correct": "the theory and philosophy of law",
     "explanation": "<Jurisprudence> is the theoretical study of law and legal systems."
@@ -123,10 +123,10 @@
   {
     "question": "<Pathophysiology> studies...",
     "options": [
-      "surgical techniques in everyday usage",
-      "pharmaceutical production as generally defined",
+      "surgical techniques",
+      "pharmaceutical production",
       "the functional changes associated with disease",
-      "healthy body functions in practical terms"
+      "healthy body functions"
     ],
     "correct": "the functional changes associated with disease",
     "explanation": "<Pathophysiology> examines the disordered physiological processes that cause or result from disease."
@@ -135,9 +135,9 @@
     "question": "<Arbitrage> in an intellectual context means...",
     "options": [
       "exploiting differences between frameworks for new insights",
-      "financial trading only as widely accepted in the usual sense",
-      "legal mediation under normal circumstances in this context",
-      "random selection under normal circumstances in regular usage"
+      "financial trading only",
+      "legal mediation",
+      "random selection"
     ],
     "correct": "exploiting differences between frameworks for new insights",
     "explanation": "<Arbitrage> metaphorically means leveraging differences between systems or frameworks productively."
@@ -145,10 +145,10 @@
   {
     "question": "<Topology> in discourse analysis refers to...",
     "options": [
-      "geographical features as typically understood in this context",
+      "geographical features",
       "the structural arrangement and connections within an argument",
-      "the study of maps under normal circumstances in regular usage",
-      "surface textures under normal circumstances for the most part"
+      "the study of maps",
+      "surface textures"
     ],
     "correct": "the structural arrangement and connections within an argument",
     "explanation": "<Topology> metaphorically refers to the shape and structure of relationships within a system of ideas."
@@ -156,10 +156,10 @@
   {
     "question": "<Requisite> means...",
     "options": [
-      "optional under normal circumstances",
+      "optional",
       "necessary or required for a particular purpose",
-      "excessive as typically understood in practical terms",
-      "irrelevant as typically understood for the most part"
+      "excessive",
+      "irrelevant"
     ],
     "correct": "necessary or required for a particular purpose",
     "explanation": "<Requisite> means made necessary by particular circumstances; essential."
@@ -167,10 +167,10 @@
   {
     "question": "<Dialectic> involves...",
     "options": [
-      "emotional persuasion as generally defined by common definition",
+      "emotional persuasion",
       "the resolution of opposing ideas through reasoned argument",
-      "a single perspective by common definition in the usual sense",
-      "statistical analysis as generally defined in most situations"
+      "a single perspective",
+      "statistical analysis"
     ],
     "correct": "the resolution of opposing ideas through reasoned argument",
     "explanation": "The <dialectic> is a method of argument involving thesis, antithesis, and synthesis."
@@ -178,10 +178,10 @@
   {
     "question": "<Hermeneutics> is the study of...",
     "options": [
-      "mathematical symbols in common practice",
-      "ancient languages by common definition",
+      "mathematical symbols",
+      "ancient languages",
       "interpretation, especially of texts",
-      "chemical compounds by common definition"
+      "chemical compounds"
     ],
     "correct": "interpretation, especially of texts",
     "explanation": "<Hermeneutics> is the theory and methodology of interpretation, particularly of texts."
@@ -200,10 +200,10 @@
   {
     "question": "<Phenomenology> examines...",
     "options": [
-      "political structures in a typical scenario",
-      "physical phenomena only under normal circumstances",
+      "political structures",
+      "physical phenomena only",
       "the structures of subjective experience and consciousness",
-      "economic systems as typically understood"
+      "economic systems"
     ],
     "correct": "the structures of subjective experience and consciousness",
     "explanation": "<Phenomenology> is the philosophical study of the structures of experience and consciousness."
@@ -211,10 +211,10 @@
   {
     "question": "<Epistemic> relates to...",
     "options": [
-      "emotions under normal circumstances in the usual sense",
-      "physical strength in ordinary cases in ordinary cases",
+      "emotions",
+      "physical strength",
       "knowledge and the conditions for its possibility",
-      "artistic expression in most situations"
+      "artistic expression"
     ],
     "correct": "knowledge and the conditions for its possibility",
     "explanation": "<Epistemic> pertains to knowledge or the degree of its validation."

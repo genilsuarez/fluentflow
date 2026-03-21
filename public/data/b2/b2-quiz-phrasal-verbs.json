@@ -46,10 +46,10 @@
   {
     "question": "What does \"take on\" mean in a professional context?",
     "options": [
-      "To travel by transport in this context",
-      "To remove clothing in this context",
+      "To travel by transport",
+      "To remove clothing",
       "To accept responsibility or a new challenge",
-      "To attack someone in most situations"
+      "To attack someone"
     ],
     "correct": "To accept responsibility or a new challenge",
     "explanation": "<Take on> means to accept a new responsibility, task, or employee."
@@ -68,10 +68,10 @@
   {
     "question": "What does \"go through\" mean when talking about a difficult experience?",
     "options": [
-      "To finish a task by common definition",
+      "To finish a task",
       "To pass a physical space",
       "To experience or endure something",
-      "To read quickly in this context"
+      "To read quickly"
     ],
     "correct": "To experience or endure something",
     "explanation": "<Go through> means to experience something difficult or unpleasant."
@@ -90,10 +90,10 @@
   {
     "question": "What does \"back down\" mean?",
     "options": [
-      "To reduce speed for the most part",
+      "To reduce speed",
       "To withdraw from a position or argument",
-      "To move backwards by common definition",
-      "To support someone by common definition"
+      "To move backwards",
+      "To support someone"
     ],
     "correct": "To withdraw from a position or argument",
     "explanation": "<Back down> means to stop insisting on something or to withdraw from a confrontation."
@@ -112,9 +112,9 @@
   {
     "question": "What does \"keep up with\" mean?",
     "options": [
-      "To support someone emotionally as a general rule",
-      "To store something above in everyday usage",
-      "To continue a habit for the most part",
+      "To support someone emotionally",
+      "To store something above",
+      "To continue a habit",
       "To maintain the same pace or level as someone"
     ],
     "correct": "To maintain the same pace or level as someone",
@@ -134,10 +134,10 @@
   {
     "question": "What does \"wear off\" mean?",
     "options": [
-      "To become tired in this context",
+      "To become tired",
       "To gradually disappear or lose effect",
-      "To remove clothing in common practice",
-      "To damage through use in common practice"
+      "To remove clothing",
+      "To damage through use"
     ],
     "correct": "To gradually disappear or lose effect",
     "explanation": "<Wear off> means for an effect or feeling to gradually diminish or disappear."
@@ -156,10 +156,10 @@
   {
     "question": "What does \"stand out\" mean?",
     "options": [
-      "To resist something in standard terms",
-      "To leave a building in standard terms",
+      "To resist something",
+      "To leave a building",
       "To be noticeably different or better",
-      "To wait outside in regular usage"
+      "To wait outside"
     ],
     "correct": "To be noticeably different or better",
     "explanation": "<Stand out> means to be clearly noticeable or superior compared to others."
@@ -200,10 +200,10 @@
   {
     "question": "What does \"come across\" mean?",
     "options": [
-      "To cross a road as generally defined",
+      "To cross a road",
       "To find something by chance or make an impression",
-      "To disagree with someone by common definition",
-      "To arrive from another country as a general rule"
+      "To disagree with someone",
+      "To arrive from another country"
     ],
     "correct": "To find something by chance or make an impression",
     "explanation": "<Come across> means to find something unexpectedly, or to appear a certain way to others."
@@ -223,9 +223,9 @@
     "question": "What does \"break through\" mean?",
     "options": [
       "To achieve success after overcoming obstacles",
-      "To escape from somewhere for the most part",
-      "To physically break a wall by common definition",
-      "To interrupt a conversation in this context"
+      "To escape from somewhere",
+      "To physically break a wall",
+      "To interrupt a conversation"
     ],
     "correct": "To achieve success after overcoming obstacles",
     "explanation": "<Break through> means to make a significant advance or overcome a barrier."
@@ -266,9 +266,9 @@
   {
     "question": "What does \"step up\" mean?",
     "options": [
-      "To climb stairs in the usual sense",
-      "To improve appearance in this context",
-      "To move forward physically in most situations",
+      "To climb stairs",
+      "To improve appearance",
+      "To move forward physically",
       "To increase effort or take more responsibility"
     ],
     "correct": "To increase effort or take more responsibility",

@@ -4,8 +4,8 @@
     "options": [
       "cousin as recognized by most authorities",
       "grandmother",
-      "aunt according to standard definitions",
-      "sister within the conventional framework"
+      "aunt",
+      "sister"
     ],
     "correct": "grandmother",
     "explanation": "Your mother's mother is your <grandmother>."
@@ -124,9 +124,9 @@
     "question": "Which is used in a <classroom>?",
     "options": [
       "blackboard",
-      "bed when considering the broader context",
-      "stove within the conventional framework",
-      "shower when considering the broader context"
+      "bed",
+      "stove",
+      "shower"
     ],
     "correct": "blackboard",
     "explanation": "A <blackboard> is used in a classroom for teaching."

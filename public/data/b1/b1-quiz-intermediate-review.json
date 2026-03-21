@@ -101,10 +101,10 @@
   {
     "question": "What does <look forward to> mean?",
     "options": [
-      "to face forward in this context",
+      "to look in front of you",
       "to anticipate with pleasure",
-      "to look ahead for the most part",
-      "to search for for the most part"
+      "to look ahead",
+      "to search for something"
     ],
     "correct": "to anticipate with pleasure",
     "explanation": "<Look forward to> means to anticipate something with excitement."
@@ -300,7 +300,7 @@
     "question": "What does the idiom <break the ice> mean?",
     "options": [
       "to make ice cubes",
-      "to cool down when considering the broader context",
+      "to cool down a room",
       "to start a conversation",
       "to break something"
     ],
@@ -310,8 +310,8 @@
   {
     "question": "Which sentence uses the present perfect continuous correctly?",
     "options": [
-      "I study English for 3 years in practical terms",
-      "I studied English for 3 years in this context",
+      "I study English for 3 years",
+      "I studied English for 3 years",
       "I am studying English for 3 years",
       "I have been studying English for 3 years"
     ],

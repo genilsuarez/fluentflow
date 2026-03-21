@@ -3,7 +3,7 @@
     "question": "What does <a Pyrrhic victory> mean?",
     "options": [
       "a military strategy",
-      "an easy win in ordinary cases",
+      "an easy win",
       "a victory that costs too much",
       "a Greek celebration"
     ],
@@ -13,9 +13,9 @@
   {
     "question": "If someone <grasps at straws>, they:",
     "options": [
-      "work on a farm as widely accepted in regular usage",
-      "collect straw in a typical scenario",
-      "drink through a straw as a general rule",
+      "work on a farm",
+      "collect straw",
+      "drink through a straw",
       "try desperate measures in a hopeless situation"
     ],
     "correct": "try desperate measures in a hopeless situation",
@@ -24,10 +24,10 @@
   {
     "question": "What does <a red herring> mean?",
     "options": [
-      "a cooking ingredient under normal circumstances",
-      "a type of fish under normal circumstances in everyday usage",
+      "a cooking ingredient",
+      "a type of fish",
       "something misleading that distracts from the real issue",
-      "a warning sign under normal circumstances as generally defined"
+      "a warning sign"
     ],
     "correct": "something misleading that distracts from the real issue",
     "explanation": "This idiom describes something that diverts attention from the main topic."
@@ -35,10 +35,10 @@
   {
     "question": "If you <rest on your laurels>, you:",
     "options": [
-      "win a prize in ordinary cases",
+      "win a prize",
       "stop trying because of past success",
-      "sleep on leaves for the most part",
-      "plant a garden in ordinary cases"
+      "sleep on leaves",
+      "plant a garden"
     ],
     "correct": "stop trying because of past success",
     "explanation": "This idiom means to be satisfied with past achievements and stop making effort."
@@ -46,9 +46,9 @@
   {
     "question": "What does <a Catch-22> mean?",
     "options": [
-      "a ball game in a typical scenario",
-      "a lucky number in this context",
-      "catching something in a typical scenario",
+      "a ball game",
+      "a lucky number",
+      "catching something",
       "a paradoxical situation with no escape"
     ],
     "correct": "a paradoxical situation with no escape",
@@ -70,8 +70,8 @@
     "options": [
       "a debatable or irrelevant issue",
       "an important argument",
-      "a strong opinion as widely accepted",
-      "a legal term in standard terms"
+      "a strong opinion",
+      "a legal term"
     ],
     "correct": "a debatable or irrelevant issue",
     "explanation": "This idiom describes a point that is no longer relevant or is purely academic."
@@ -80,9 +80,9 @@
     "question": "If you <throw the baby out with the bathwater>, you:",
     "options": [
       "discard something valuable along with something unwanted",
-      "waste water within the conventional framework",
-      "clean the house under normal circumstances",
-      "give a baby a bath in conventional terms in this context"
+      "waste water",
+      "clean the house",
+      "give a baby a bath"
     ],
     "correct": "discard something valuable along with something unwanted",
     "explanation": "This idiom means to lose something good while trying to get rid of something bad."
@@ -90,10 +90,10 @@
   {
     "question": "What does <a fait accompli> mean?",
     "options": [
-      "a diplomatic meeting in most situations",
-      "a legal document for the most part",
+      "a diplomatic meeting",
+      "a legal document",
       "something already done that cannot be changed",
-      "a French dessert as widely accepted"
+      "a French dessert"
     ],
     "correct": "something already done that cannot be changed",
     "explanation": "This idiom describes an action that has already been completed and is irreversible."
@@ -102,9 +102,9 @@
     "question": "If someone <plays devil's advocate>, they:",
     "options": [
       "argue the opposite side for the sake of debate",
-      "support evil in conventional terms in this context",
-      "act in a play as generally defined in this context",
-      "practice law as typically understood"
+      "support evil",
+      "act in a play",
+      "practice law"
     ],
     "correct": "argue the opposite side for the sake of debate",
     "explanation": "This idiom means to argue against something you may agree with to test the strength of the argument."
@@ -113,9 +113,9 @@
     "question": "What does <a Sisyphean task> mean?",
     "options": [
       "an endless and futile task",
-      "an easy job in regular usage",
+      "an easy job",
       "a Greek holiday as recognized by most authorities",
-      "a team project according to standard definitions"
+      "a team project"
     ],
     "correct": "an endless and futile task",
     "explanation": "This idiom refers to a task that is never-ending and ultimately pointless, from Greek mythology."
@@ -123,10 +123,10 @@
   {
     "question": "If you <gild the lily>, you:",
     "options": [
-      "grow plants based on common understanding in this context",
+      "grow plants",
       "add unnecessary decoration to something already beautiful",
-      "paint flowers under normal circumstances as typically understood",
-      "buy jewelry when considering the broader context"
+      "paint flowers",
+      "buy jewelry"
     ],
     "correct": "add unnecessary decoration to something already beautiful",
     "explanation": "This idiom means to embellish something that is already perfect, making it excessive."
@@ -134,9 +134,9 @@
   {
     "question": "What does <a Hobson's choice> mean?",
     "options": [
-      "a difficult decision under normal circumstances",
-      "a good selection in conventional terms",
-      "a horse race as typically understood",
+      "a difficult decision",
+      "a good selection",
+      "a horse race",
       "an apparent choice that offers no real alternative"
     ],
     "correct": "an apparent choice that offers no real alternative",
@@ -145,10 +145,10 @@
   {
     "question": "If something is <beyond the pale>, it is:",
     "options": [
-      "very far away in most situations in this context",
+      "very far away",
       "unacceptable or outside the bounds of decency",
-      "very pale in color in ordinary cases",
-      "behind a fence in standard terms as widely accepted"
+      "very pale in color",
+      "behind a fence"
     ],
     "correct": "unacceptable or outside the bounds of decency",
     "explanation": "This idiom means something is considered unacceptable by social standards."
@@ -156,10 +156,10 @@
   {
     "question": "What does <a poisoned chalice> mean?",
     "options": [
-      "a chemistry experiment under normal circumstances",
-      "a toxic drink according to standard definitions as widely accepted today",
+      "a chemistry experiment",
+      "a toxic drink",
       "an assignment that seems good but is likely to cause problems",
-      "an antique cup when considering the broader context"
+      "an antique cup"
     ],
     "correct": "an assignment that seems good but is likely to cause problems",
     "explanation": "This idiom describes something that appears desirable but is actually harmful."
@@ -167,10 +167,10 @@
   {
     "question": "If you <split hairs>, you:",
     "options": [
-      "cut hair under normal circumstances",
+      "cut hair",
       "make unnecessarily fine distinctions",
-      "argue loudly in standard terms",
-      "share equally as a general rule"
+      "argue loudly",
+      "share equally"
     ],
     "correct": "make unnecessarily fine distinctions",
     "explanation": "This idiom means to argue about very small and unimportant differences."
@@ -178,9 +178,9 @@
   {
     "question": "What does <a Pandora's box> mean?",
     "options": [
-      "a gift box in regular usage",
-      "a Greek artifact in the usual sense",
-      "a treasure chest in conventional terms",
+      "a gift box",
+      "a Greek artifact",
+      "a treasure chest",
       "a source of many unforeseen problems"
     ],
     "correct": "a source of many unforeseen problems",
@@ -190,9 +190,9 @@
     "question": "If someone <has an axe to grind>, they:",
     "options": [
       "have a personal motive or grievance",
-      "chop wood under normal circumstances",
-      "sharpen knives in regular usage",
-      "work with tools in most situations"
+      "chop wood",
+      "sharpen knives",
+      "work with tools"
     ],
     "correct": "have a personal motive or grievance",
     "explanation": "This idiom means to have a personal reason for being involved, often a selfish one."
@@ -200,10 +200,10 @@
   {
     "question": "What does <a Faustian bargain> mean?",
     "options": [
-      "a fair trade when considering the broader context in this context",
-      "a good deal when considering the broader context in the usual sense",
+      "a fair trade",
+      "a good deal",
       "a deal where you sacrifice something important for short-term gain",
-      "a German contract when considering the broader context"
+      "a German contract"
     ],
     "correct": "a deal where you sacrifice something important for short-term gain",
     "explanation": "This idiom describes a pact where one trades something of supreme moral value for worldly gain."
@@ -211,10 +211,10 @@
   {
     "question": "If you <cross the Rubicon>, you:",
     "options": [
-      "visit Italy in regular usage",
-      "swim a river in this context",
+      "visit Italy",
+      "swim a river",
       "pass a point of no return",
-      "break a rule in this context"
+      "break a rule"
     ],
     "correct": "pass a point of no return",
     "explanation": "This idiom means to take an irreversible step, from Julius Caesar's crossing of the Rubicon river."

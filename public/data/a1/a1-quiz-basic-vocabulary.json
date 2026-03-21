@@ -101,10 +101,10 @@
   {
     "question": "Which word means <very good>?",
     "options": [
-      "bad based on common understanding",
+      "bad",
       "excellent",
-      "weak when considering the broader context",
-      "poor in the most widely accepted sense"
+      "weak",
+      "poor"
     ],
     "correct": "excellent",
     "explanation": "<Excellent> means very good."

@@ -2,8 +2,8 @@
   {
     "question": "What does <ubiquitous> mean?",
     "options": [
-      "expensive based on common understanding",
-      "rare in this context",
+      "expensive",
+      "rare",
       "present everywhere",
       "ancient as recognized by most authorities"
     ],
@@ -13,10 +13,10 @@
   {
     "question": "What is a <paradigm>?",
     "options": [
-      "a problem in a typical scenario",
+      "a problem",
       "a typical example or pattern",
-      "a mistake in this context",
-      "a solution in standard terms"
+      "a mistake",
+      "a solution"
     ],
     "correct": "a typical example or pattern",
     "explanation": "A <paradigm> is a typical example, pattern, or model of something."
@@ -25,9 +25,9 @@
     "question": "What does <mitigate> mean?",
     "options": [
       "make less severe",
-      "ignore when considering the broader context",
-      "worsen in the most widely accepted sense",
-      "create in the most widely accepted sense"
+      "ignore",
+      "worsen",
+      "create"
     ],
     "correct": "make less severe",
     "explanation": "<Mitigate> means to make something less severe, serious, or painful."
@@ -36,9 +36,9 @@
     "question": "What is <sustainability>?",
     "options": [
       "ability to maintain over time",
-      "temporary state in standard terms",
-      "destruction in regular usage",
-      "quick growth as a general rule"
+      "temporary state",
+      "destruction",
+      "quick growth"
     ],
     "correct": "ability to maintain over time",
     "explanation": "<Sustainability> is the ability to maintain something at a certain rate or level over time."
@@ -46,10 +46,10 @@
   {
     "question": "What does <implement> mean?",
     "options": [
-      "ignore within the conventional framework",
+      "ignore",
       "cancel as recognized by most authorities",
       "put into effect",
-      "discuss within the conventional framework"
+      "discuss"
     ],
     "correct": "put into effect",
     "explanation": "<Implement> means to put a plan or system into operation."
@@ -58,9 +58,9 @@
     "question": "What is <infrastructure>?",
     "options": [
       "basic physical systems",
-      "buildings only when considering the broader context",
-      "furniture in this context",
-      "decoration within the conventional framework"
+      "buildings only",
+      "furniture",
+      "decoration"
     ],
     "correct": "basic physical systems",
     "explanation": "Infrastructure refers to <basic physical systems> like roads, bridges, and utilities."
@@ -68,8 +68,8 @@
   {
     "question": "What does <advocate> mean?",
     "options": [
-      "criticize within the conventional framework",
-      "ignore when considering the broader context",
+      "criticize",
+      "ignore",
       "oppose as recognized by most authorities",
       "publicly support"
     ],
@@ -82,7 +82,7 @@
       "repetition as recognized by most authorities",
       "old practice",
       "new method or idea",
-      "tradition in the most widely accepted sense"
+      "tradition"
     ],
     "correct": "new method or idea",
     "explanation": "<Innovation> is a new method, idea, or product."
@@ -90,10 +90,10 @@
   {
     "question": "What does <comprehensive> mean?",
     "options": [
-      "brief for the most part",
+      "brief",
       "complete and thorough",
       "incomplete as recognized by most authorities",
-      "simple in this context"
+      "simple"
     ],
     "correct": "complete and thorough",
     "explanation": "<Comprehensive> means including all or nearly all elements or aspects."
@@ -101,10 +101,10 @@
   {
     "question": "What is <diversity>?",
     "options": [
-      "uniformity when considering the broader context",
-      "sameness in this context",
+      "uniformity",
+      "sameness",
       "variety and difference",
-      "simplicity when considering the broader context"
+      "simplicity"
     ],
     "correct": "variety and difference",
     "explanation": "<Diversity> means the state of being diverse; variety."
@@ -124,9 +124,9 @@
     "question": "What is <resilience>?",
     "options": [
       "ability to recover quickly",
-      "fragility in this context",
-      "permanence in common practice",
-      "weakness in the usual sense"
+      "fragility",
+      "permanence",
+      "weakness"
     ],
     "correct": "ability to recover quickly",
     "explanation": "<Resilience> is the capacity to recover quickly from difficulties."
@@ -135,9 +135,9 @@
     "question": "What does <enhance> mean?",
     "options": [
       "improve quality",
-      "reduce based on common understanding",
-      "maintain based on common understanding",
-      "damage when considering the broader context"
+      "reduce",
+      "maintain",
+      "damage"
     ],
     "correct": "improve quality",
     "explanation": "<Enhance> means to intensify, increase, or further improve the quality of something."
@@ -156,9 +156,9 @@
   {
     "question": "What does <contemporary> mean?",
     "options": [
-      "historical as widely accepted",
-      "ancient in most situations",
-      "future in a typical scenario",
+      "historical",
+      "ancient",
+      "future",
       "belonging to the present time"
     ],
     "correct": "belonging to the present time",
@@ -167,9 +167,9 @@
   {
     "question": "What is <methodology>?",
     "options": [
-      "problem when considering the broader context",
-      "result within the conventional framework",
-      "conclusion in the most widely accepted sense",
+      "problem",
+      "result",
+      "conclusion",
       "system of methods"
     ],
     "correct": "system of methods",
@@ -179,9 +179,9 @@
     "question": "What does <substantial> mean?",
     "options": [
       "of considerable importance or size",
-      "temporary in practical terms",
-      "insignificant in this context",
-      "small in conventional terms"
+      "temporary",
+      "insignificant",
+      "small"
     ],
     "correct": "of considerable importance or size",
     "explanation": "<Substantial> means of considerable importance, size, or worth."
@@ -189,10 +189,10 @@
   {
     "question": "What is <phenomenon>?",
     "options": [
-      "routine in regular usage",
+      "routine",
       "ordinary event",
       "remarkable occurrence",
-      "mistake in this context"
+      "mistake"
     ],
     "correct": "remarkable occurrence",
     "explanation": "A <phenomenon> is a fact or situation that is observed to exist or happen."
@@ -200,10 +200,10 @@
   {
     "question": "What does <integrate> mean?",
     "options": [
-      "isolate in this context",
-      "divide in regular usage",
+      "isolate",
+      "divide",
       "combine into a whole",
-      "separate in the most widely accepted sense"
+      "separate"
     ],
     "correct": "combine into a whole",
     "explanation": "<Integrate> means to combine one thing with another to form a whole."
@@ -211,10 +211,10 @@
   {
     "question": "What is <perspective>?",
     "options": [
-      "lie in a typical scenario",
-      "truth as widely accepted",
+      "lie",
+      "truth",
       "particular way of viewing things",
-      "fact as typically understood"
+      "fact"
     ],
     "correct": "particular way of viewing things",
     "explanation": "<Perspective> is a particular attitude toward or way of regarding something; a point of view."
@@ -222,9 +222,9 @@
   {
     "question": "What does <significant> mean?",
     "options": [
-      "unimportant in common practice",
-      "irrelevant as typically understood",
-      "tiny in most situations",
+      "unimportant",
+      "irrelevant",
+      "tiny",
       "sufficiently great or important"
     ],
     "correct": "sufficiently great or important",
@@ -235,8 +235,8 @@
     "options": [
       "general agreement",
       "disagreement",
-      "conflict when considering the broader context",
-      "debate in the most widely accepted sense"
+      "conflict",
+      "debate"
     ],
     "correct": "general agreement",
     "explanation": "Consensus is a <general agreement> among a group of people."
@@ -244,10 +244,10 @@
   {
     "question": "What does <analyze> mean?",
     "options": [
-      "guess according to standard definitions",
-      "ignore within the conventional framework",
+      "guess",
+      "ignore",
       "examine in detail",
-      "assume within the conventional framework"
+      "assume"
     ],
     "correct": "examine in detail",
     "explanation": "<Analyze> means to examine something methodically and in detail."
@@ -255,9 +255,9 @@
   {
     "question": "What is <criterion>?",
     "options": [
-      "guess for the most part",
-      "result in regular usage",
-      "opinion in this context",
+      "guess",
+      "result",
+      "opinion",
       "standard for judgment"
     ],
     "correct": "standard for judgment",
@@ -266,10 +266,10 @@
   {
     "question": "What does <fluctuate> mean?",
     "options": [
-      "stay constant within the conventional framework",
+      "stay constant",
       "rise and fall irregularly",
-      "decrease only within the conventional framework",
-      "increase only in the most widely accepted sense"
+      "decrease only",
+      "increase only"
     ],
     "correct": "rise and fall irregularly",
     "explanation": "Fluctuate means to <rise and fall irregularly> in number or amount."

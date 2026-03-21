@@ -2,7 +2,7 @@
   {
     "question": "What does <break the ice> mean?",
     "options": [
-      "to cool down in the most widely accepted sense",
+      "to cool down",
       "to break something",
       "to make ice cubes",
       "to start a conversation"
@@ -35,9 +35,9 @@
   {
     "question": "If you <bite the bullet>, you:",
     "options": [
-      "eat metal in the usual sense",
-      "be aggressive in this context",
-      "shoot a gun as a general rule",
+      "eat metal",
+      "be aggressive",
+      "shoot a gun",
       "face a difficult situation"
     ],
     "correct": "face a difficult situation",
@@ -79,10 +79,10 @@
   {
     "question": "If you <kill two birds with one stone>, you:",
     "options": [
-      "hunt animals in standard terms",
+      "hunt animals",
       "accomplish two things at once",
-      "throw rocks in a typical scenario",
-      "be violent as generally defined"
+      "throw rocks",
+      "be violent"
     ],
     "correct": "accomplish two things at once",
     "explanation": "This idiom means to achieve two goals with a single action."
@@ -91,8 +91,8 @@
     "question": "What does <it's raining cats and dogs> mean?",
     "options": [
       "it's raining very heavily",
-      "it's sunny in this context",
-      "pets are outside when considering the broader context",
+      "it's sunny",
+      "pets are outside",
       "animals are falling"
     ],
     "correct": "it's raining very heavily",
@@ -101,10 +101,10 @@
   {
     "question": "If someone <burns the midnight oil>, they:",
     "options": [
-      "cook dinner in this context",
-      "waste fuel in this context",
+      "cook dinner",
+      "waste fuel",
       "work late into the night",
-      "light candles when considering the broader context"
+      "light candles"
     ],
     "correct": "work late into the night",
     "explanation": "This idiom means to work or study late into the night."
@@ -113,9 +113,9 @@
     "question": "What does <don>t cry over spilled milk' mean?",
     "options": [
       "don't worry about past mistakes",
-      "drink more water in this context",
-      "clean up messes in practical terms",
-      "don't waste food in everyday usage"
+      "drink more water",
+      "clean up messes",
+      "don't waste food"
     ],
     "correct": "don't worry about past mistakes",
     "explanation": "This idiom means <don>'t be upset about something that has already happened and cannot be changed."
@@ -124,8 +124,8 @@
     "question": "If you <jump on the bandwagon>, you:",
     "options": [
       "travel by wagon",
-      "play music when considering the broader context",
-      "exercise based on common understanding",
+      "play music",
+      "exercise",
       "join a popular trend"
     ],
     "correct": "join a popular trend",
@@ -135,7 +135,7 @@
     "question": "What does <the ball is in your court> mean?",
     "options": [
       "you own a ball",
-      "play tennis according to standard definitions",
+      "play tennis",
       "you're at home",
       "it's your turn to act"
     ],
@@ -189,9 +189,9 @@
   {
     "question": "If something is <a blessing in disguise>, it:",
     "options": [
-      "looks religious in everyday usage",
-      "is a gift in a typical scenario",
-      "is hidden in this context",
+      "looks religious",
+      "is a gift",
+      "is hidden",
       "seems bad but is actually good"
     ],
     "correct": "seems bad but is actually good",
@@ -211,10 +211,10 @@
   {
     "question": "If you <go the extra mile>, you:",
     "options": [
-      "travel far in the most widely accepted sense",
+      "travel far",
       "do more than expected",
-      "drive a car according to standard definitions",
-      "exercise in this context"
+      "drive a car",
+      "exercise"
     ],
     "correct": "do more than expected",
     "explanation": "This idiom means to make a special effort to achieve something."
@@ -255,8 +255,8 @@
   {
     "question": "If someone <steals your thunder>, they:",
     "options": [
-      "be loud as generally defined",
-      "make noise in standard terms",
+      "be loud",
+      "make noise",
       "take your weather",
       "take credit for your idea"
     ],
@@ -267,8 +267,8 @@
     "question": "What does <the early bird catches the worm> mean?",
     "options": [
       "birds eat insects",
-      "go fishing in this context",
-      "hunt animals when considering the broader context",
+      "go fishing",
+      "hunt animals",
       "wake up early to succeed"
     ],
     "correct": "wake up early to succeed",
@@ -323,7 +323,7 @@
     "options": [
       "accept consequences",
       "listen to songs",
-      "turn around based on common understanding",
+      "turn around",
       "be brave as recognized by most authorities"
     ],
     "correct": "accept consequences",
@@ -354,10 +354,10 @@
   {
     "question": "What does <time flies> mean?",
     "options": [
-      "travel fast when considering the broader context",
-      "insects fly within the conventional framework",
+      "travel fast",
+      "insects fly",
       "time passes quickly",
-      "clocks move within the conventional framework"
+      "clocks move"
     ],
     "correct": "time passes quickly",
     "explanation": "This idiom means time seems to pass very quickly."
@@ -376,9 +376,9 @@
   {
     "question": "What does <better late than never> mean?",
     "options": [
-      "time is important in this context",
-      "punctuality matters within the conventional framework",
-      "speed is key for the most part",
+      "time is important",
+      "punctuality matters",
+      "speed is key",
       "it's good to arrive eventually"
     ],
     "correct": "it's good to arrive eventually",
@@ -387,9 +387,9 @@
   {
     "question": "If something is <a piece of work>, it:",
     "options": [
-      "needs fixing in this context",
-      "is art in standard terms",
-      "is valuable in regular usage",
+      "needs fixing",
+      "is art",
+      "is valuable",
       "is difficult to deal with"
     ],
     "correct": "is difficult to deal with",
@@ -422,7 +422,7 @@
     "options": [
       "working together",
       "traveling together",
-      "on water in this context",
+      "on water",
       "in the same situation"
     ],
     "correct": "in the same situation",
@@ -454,8 +454,8 @@
     "question": "What does <beat around the bush> mean?",
     "options": [
       "avoid the main topic",
-      "talk loudly in the most widely accepted sense",
-      "hit a bush when considering the broader context",
+      "talk loudly",
+      "hit a bush",
       "speak directly"
     ],
     "correct": "avoid the main topic",
@@ -486,8 +486,8 @@
   {
     "question": "What does <barking up the wrong tree> mean?",
     "options": [
-      "climbing a tree as a general rule",
-      "making a loud noise in standard terms",
+      "climbing a tree",
+      "making a loud noise",
       "pursuing a mistaken course of action",
       "looking in the right place"
     ],
@@ -499,8 +499,8 @@
     "options": [
       "regret something that cannot be undone",
       "be upset about a minor accident",
-      "clean up a mess in everyday usage",
-      "express sadness in this context"
+      "clean up a mess",
+      "express sadness"
     ],
     "correct": "regret something that cannot be undone",
     "explanation": "To <cry over spilled milk> means to be upset about something that has already happened and cannot be changed."
@@ -508,9 +508,9 @@
   {
     "question": "What does <bee in his bonnet> mean?",
     "options": [
-      "a buzzing sound according to standard definitions",
+      "a buzzing sound",
       "an insect in his hat",
-      "a new idea in this context",
+      "a new idea",
       "an obsession or fixation"
     ],
     "correct": "an obsession or fixation",
@@ -541,9 +541,9 @@
   {
     "question": "What does <frog in his throat> mean?",
     "options": [
-      "a sudden cough as a general rule",
-      "a pet frog in common practice",
-      "a sore throat in this context",
+      "a sudden cough",
+      "a pet frog",
+      "a sore throat",
       "difficulty speaking due to hoarseness"
     ],
     "correct": "difficulty speaking due to hoarseness",
@@ -553,8 +553,8 @@
     "question": "What does <head in the clouds> mean?",
     "options": [
       "daydreaming or unrealistic",
-      "thinking clearly based on common understanding",
-      "feeling dizzy in this context",
+      "thinking clearly",
+      "feeling dizzy",
       "looking at the sky"
     ],
     "correct": "daydreaming or unrealistic",
@@ -563,10 +563,10 @@
   {
     "question": "What does <blessing in disguise> mean?",
     "options": [
-      "a fortunate event as a general rule",
+      "a fortunate event",
       "a good thing that seemed bad at first",
-      "a hidden problem in a typical scenario",
-      "a difficult situation in most situations"
+      "a hidden problem",
+      "a difficult situation"
     ],
     "correct": "a good thing that seemed bad at first",
     "explanation": "A <blessing in disguise> is something that seems bad or unlucky at first but results in something good happening later."
@@ -574,10 +574,10 @@
   {
     "question": "What does <screw loose> mean?",
     "options": [
-      "a missing part in regular usage",
+      "a missing part",
       "slightly crazy or eccentric",
-      "a clever idea in standard terms",
-      "a loose bolt in this context"
+      "a clever idea",
+      "a loose bolt"
     ],
     "correct": "slightly crazy or eccentric",
     "explanation": "To have a <screw loose> means to be slightly crazy or eccentric."
@@ -586,9 +586,9 @@
     "question": "What does <storm in a teacup> mean?",
     "options": [
       "a lot of fuss about something unimportant",
-      "a small drink in a typical scenario",
-      "a sudden weather change in this context",
-      "a serious problem as widely accepted"
+      "a small drink",
+      "a sudden weather change",
+      "a serious problem"
     ],
     "correct": "a lot of fuss about something unimportant",
     "explanation": "A <storm in a teacup> refers to a lot of anger or worry about something unimportant."
@@ -597,9 +597,9 @@
     "question": "What does <two left feet> mean?",
     "options": [
       "wearing two left shoes",
-      "a good dancer in this context",
+      "a good dancer",
       "clumsy or awkward at dancing",
-      "missing a foot in this context"
+      "missing a foot"
     ],
     "correct": "clumsy or awkward at dancing",
     "explanation": "To have <two left feet> means to be clumsy or awkward, especially when dancing."
@@ -609,8 +609,8 @@
     "options": [
       "eat an animal",
       "be extremely hungry",
-      "feel sick based on common understanding",
-      "go to sleep when considering the broader context"
+      "feel sick",
+      "go to sleep"
     ],
     "correct": "be extremely hungry",
     "explanation": "To <eat a horse> means to be extremely hungry."
@@ -619,8 +619,8 @@
     "question": "What does <not rocket science> mean?",
     "options": [
       "not difficult to understand",
-      "a space mission in this context",
-      "very complicated based on common understanding",
+      "a space mission",
+      "very complicated",
       "a scientific experiment"
     ],
     "correct": "not difficult to understand",
@@ -630,7 +630,7 @@
     "question": "What does <with flying colors> mean?",
     "options": [
       "very easily and successfully",
-      "with a lot of help based on common understanding",
+      "with a lot of help",
       "with great difficulty",
       "with colorful flags"
     ],
@@ -673,8 +673,8 @@
   {
     "question": "What does <jump to conclusions> mean?",
     "options": [
-      "think carefully in this context",
-      "jump high in a typical scenario",
+      "think carefully",
+      "jump high",
       "make a decision too quickly",
       "avoid making decisions"
     ],
@@ -685,9 +685,9 @@
     "question": "What does <couch potato> mean?",
     "options": [
       "a lazy person who watches a lot of TV",
-      "an active person in this context",
-      "a vegetable on the sofa in standard terms",
-      "a good cook as typically understood"
+      "an active person",
+      "a vegetable on the sofa",
+      "a good cook"
     ],
     "correct": "a lazy person who watches a lot of TV",
     "explanation": "A <couch potato> is a person who spends a lot of time sitting or lying on a couch, watching television."
@@ -696,9 +696,9 @@
     "question": "What does <green thumb> mean?",
     "options": [
       "a natural talent for gardening",
-      "a lucky charm in ordinary cases",
-      "a green finger in regular usage",
-      "a bad habit in ordinary cases"
+      "a lucky charm",
+      "a green finger",
+      "a bad habit"
     ],
     "correct": "a natural talent for gardening",
     "explanation": "To have a <green thumb> means to be good at gardening."
@@ -717,9 +717,9 @@
   {
     "question": "What does <drop in the ocean> mean?",
     "options": [
-      "a significant contribution in everyday usage",
-      "a drop of water in a typical scenario",
-      "a large quantity as typically understood",
+      "a significant contribution",
+      "a drop of water",
+      "a large quantity",
       "a very small amount compared to what is needed"
     ],
     "correct": "a very small amount compared to what is needed",
@@ -741,8 +741,8 @@
     "options": [
       "a strong liking for sweet foods",
       "a sweet taste in mouth",
-      "a healthy diet as a general rule",
-      "a dental problem in the usual sense"
+      "a healthy diet",
+      "a dental problem"
     ],
     "correct": "a strong liking for sweet foods",
     "explanation": "To have a <sweet tooth> means to have a strong liking for sweet foods."
@@ -750,7 +750,7 @@
   {
     "question": "What does <on the ball> mean?",
     "options": [
-      "distracted based on common understanding",
+      "distracted",
       "making mistakes",
       "alert and competent",
       "playing soccer"
@@ -783,10 +783,10 @@
   {
     "question": "What does 'play devil's advocate' mean?",
     "options": [
-      "agree with everyone as widely accepted",
-      "support an idea in common practice in this context",
+      "agree with everyone",
+      "support an idea",
       "argue against an idea for the sake of argument",
-      "avoid conflict as generally defined"
+      "avoid conflict"
     ],
     "correct": "argue against an idea for the sake of argument",
     "explanation": "To 'play devil's advocate' means to argue against an idea or plan that a lot of people support, in order to make people think about the issue in a different way."
@@ -795,8 +795,8 @@
     "question": "What does <on the tip of my tongue> mean?",
     "options": [
       "about to be said or remembered",
-      "easy to remember in ordinary cases",
-      "a secret as generally defined",
+      "easy to remember",
+      "a secret",
       "difficult to pronounce"
     ],
     "correct": "about to be said or remembered",
@@ -805,10 +805,10 @@
   {
     "question": "What does <hot potato> mean?",
     "options": [
-      "a delicious meal in this context",
-      "an easy task for the most part",
+      "a delicious meal",
+      "an easy task",
       "a controversial or difficult issue",
-      "a popular idea in this context"
+      "a popular idea"
     ],
     "correct": "a controversial or difficult issue",
     "explanation": "A <hot potato> is a controversial or difficult issue that is awkward to deal with."
@@ -816,10 +816,10 @@
   {
     "question": "What does <let the cat out of the bag> mean?",
     "options": [
-      "make a mess for the most part",
+      "make a mess",
       "reveal a secret accidentally",
-      "free a pet in common practice",
-      "start a fight in standard terms"
+      "free a pet",
+      "start a fight"
     ],
     "correct": "reveal a secret accidentally",
     "explanation": "To <let the cat out of the bag> means to reveal a secret accidentally."

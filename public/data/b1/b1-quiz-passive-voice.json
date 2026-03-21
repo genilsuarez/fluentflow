@@ -48,7 +48,7 @@
     "options": [
       "is being repaired",
       "was repaired",
-      "repairs according to standard definitions",
+      "repairs",
       "is repairing"
     ],
     "correct": "is being repaired",
@@ -58,7 +58,7 @@
     "question": "The project ______ by next week.",
     "options": [
       "is finished",
-      "finishes within the conventional framework",
+      "finishes",
       "will finish",
       "will be finished"
     ],
@@ -102,7 +102,7 @@
     "question": "The problem ______ soon.",
     "options": [
       "is solving",
-      "solves in the most widely accepted sense",
+      "solves",
       "will be solved",
       "will solve"
     ],
@@ -112,8 +112,8 @@
   {
     "question": "The documents ______ at the moment.",
     "options": [
-      "check based on common understanding",
-      "checked when considering the broader context",
+      "check",
+      "checked",
       "are checking",
       "are being checked"
     ],
@@ -148,7 +148,7 @@
       "is introducing",
       "will be introduced",
       "will introduce",
-      "introduces within the conventional framework"
+      "introduces"
     ],
     "correct": "will be introduced",
     "explanation": "Future passive for scheduled events"
@@ -169,8 +169,8 @@
     "options": [
       "is being written",
       "was written",
-      "writes according to standard definitions",
-      "is writing when considering the broader context"
+      "writes",
+      "is writing"
     ],
     "correct": "is being written",
     "explanation": "Present continuous passive for current actions"
@@ -190,7 +190,7 @@
     "question": "The package ______ tomorrow.",
     "options": [
       "is delivering",
-      "delivers based on common understanding",
+      "delivers",
       "will be delivered",
       "will deliver"
     ],
@@ -200,10 +200,10 @@
   {
     "question": "The room ______ when I arrived.",
     "options": [
-      "cleaned based on common understanding",
+      "cleaned",
       "was being cleaned",
-      "cleans when considering the broader context",
-      "is cleaned when considering the broader context"
+      "cleans",
+      "is cleaned"
     ],
     "correct": "was being cleaned",
     "explanation": "Past continuous passive: was/were being + past participle"

@@ -2,9 +2,9 @@
   {
     "question": "Which sentence correctly uses <used to> to express a past habit?",
     "options": [
-      "I am used to wake up early in a typical scenario.",
-      "I was used to wake up early for the most part.",
-      "I get used to wake up early in this context.",
+      "I am used to wake up early",
+      "I was used to wake up early",
+      "I get used to wake up early",
       "I used to wake up early when I was a student."
     ],
     "correct": "I used to wake up early when I was a student.",
@@ -24,7 +24,7 @@
   {
     "question": "Which sentence shows the process of becoming accustomed to something?",
     "options": [
-      "He used to live in the city in standard terms.",
+      "He used to live in the city",
       "He is getting used to living in the city.",
       "He is used to living in the city.",
       "He didn't use to live in the city."
@@ -79,10 +79,10 @@
   {
     "question": "Which sentence expresses a past state that contrasts with the present?",
     "options": [
-      "She gets used to working late in a typical scenario.",
+      "She gets used to working late",
       "She used to work late, but now she has regular hours.",
-      "She is used to working late in ordinary cases.",
-      "She is getting used to working late in a typical scenario."
+      "She is used to working late",
+      "She is getting used to working late"
     ],
     "correct": "She used to work late, but now she has regular hours.",
     "explanation": "<Used to> expresses past habits or states that no longer exist, often contrasted with the present."
@@ -123,9 +123,9 @@
   {
     "question": "Which sentence shows adaptation to a new environment?",
     "options": [
-      "She is used to living abroad under normal circumstances.",
-      "She didn't use to live abroad in most situations.",
-      "She used to live abroad under normal circumstances.",
+      "She is used to living abroad",
+      "She didn't use to live abroad",
+      "She used to live abroad",
       "She got used to living abroad after a few months."
     ],
     "correct": "She got used to living abroad after a few months.",
@@ -167,10 +167,10 @@
   {
     "question": "Which sentence shows the most complex temporal relationship?",
     "options": [
-      "I used to smoke under normal circumstances.",
-      "I am used to smoking as generally defined.",
+      "I used to smoke",
+      "I am used to smoking",
       "I had gotten used to smoking before I decided to quit.",
-      "I will get used to not smoking in ordinary cases."
+      "I will get used to not smoking"
     ],
     "correct": "I had gotten used to smoking before I decided to quit.",
     "explanation": "Past perfect <had gotten used to> shows a completed adaptation process before another past event, demonstrating complex temporal sequencing typical of B2 level."
@@ -179,9 +179,9 @@
     "question": "Complete: 'The refugees ______ their new country's customs gradually.'",
     "options": [
       "are getting used to",
-      "were used to when considering the broader context",
-      "used to based on common understanding",
-      "had used to within the conventional framework"
+      "were used to",
+      "used to",
+      "had used to"
     ],
     "correct": "are getting used to",
     "explanation": "<Are getting used to> shows the ongoing process of adaptation, appropriate for describing gradual cultural adjustment."
@@ -189,10 +189,10 @@
   {
     "question": "Which sentence demonstrates the most sophisticated use of these structures?",
     "options": [
-      "I am used to living there in conventional terms in ordinary cases.",
+      "I am used to living there",
       "Having gotten used to the lifestyle, I decided to stay permanently.",
-      "I will get used to living there in everyday usage in this context.",
-      "I used to live there under normal circumstances in a typical scenario."
+      "I will get used to living there",
+      "I used to live there"
     ],
     "correct": "Having gotten used to the lifestyle, I decided to stay permanently.",
     "explanation": "The perfect gerund <having gotten used to> shows completed adaptation as the reason for a decision, demonstrating advanced grammatical sophistication."
@@ -214,7 +214,7 @@
       "If I had used to the system, I would understand it.",
       "If I get used to the food, I will enjoy it more.",
       "If I were used to the climate, I wouldn't need warm clothes.",
-      "If I used to live there, I would know the area as widely accepted today."
+      "If I used to live there, I would know the area"
     ],
     "correct": "If I were used to the climate, I wouldn't need warm clothes.",
     "explanation": "The second conditional with <were used to> correctly expresses a hypothetical present situation and its consequence."

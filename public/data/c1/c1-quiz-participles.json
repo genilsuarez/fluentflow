@@ -24,8 +24,8 @@
   {
     "question": "_____ all her homework, she went out to play.",
     "options": [
-      "Finished in the most widely accepted sense",
-      "Finishing when considering the broader context",
+      "Finished",
+      "Finishing",
       "Having finished",
       "To finish as recognized by most authorities"
     ],
@@ -57,7 +57,7 @@
   {
     "question": "_____ lived in Paris for ten years, she speaks French fluently.",
     "options": [
-      "To live when considering the broader context",
+      "To live",
       "Living as recognized by most authorities",
       "Having lived",
       "Lived as recognized by most authorities"
@@ -90,10 +90,10 @@
   {
     "question": "_____ the letter, he put it in an envelope.",
     "options": [
-      "Writing in the most widely accepted sense",
-      "To write when considering the broader context",
+      "Writing",
+      "To write",
       "Having written",
-      "Written within the conventional framework"
+      "Written"
     ],
     "correct": "Having written",
     "explanation": "Having + past participle shows completed action before another."
@@ -157,9 +157,9 @@
     "question": "_____ the exam, students must wait for the results.",
     "options": [
       "Having taken",
-      "To take when considering the broader context",
-      "Taken when considering the broader context",
-      "Taking according to standard definitions"
+      "To take",
+      "Taken",
+      "Taking"
     ],
     "correct": "Having taken",
     "explanation": "Having + past participle shows completed action."
@@ -178,10 +178,10 @@
   {
     "question": "_____ in the rain, we arrived home completely wet.",
     "options": [
-      "Walked in the most widely accepted sense",
-      "Walking in the most widely accepted sense",
+      "Walked",
+      "Walking",
       "Having walked",
-      "To walk when considering the broader context"
+      "To walk"
     ],
     "correct": "Having walked",
     "explanation": "Having + past participle shows the reason for being wet."
@@ -211,7 +211,7 @@
   {
     "question": "_____ the mistake, she apologized immediately.",
     "options": [
-      "Realizing according to standard definitions",
+      "Realizing",
       "Realized as recognized by most authorities",
       "To realize",
       "Having realized"
@@ -233,10 +233,10 @@
   {
     "question": "_____ all the evidence, the jury reached a verdict.",
     "options": [
-      "Considered within the conventional framework",
+      "Considered",
       "Having considered",
-      "To consider when considering the broader context",
-      "Considering when considering the broader context"
+      "To consider",
+      "Considering"
     ],
     "correct": "Having considered",
     "explanation": "Having + past participle shows completed deliberation."

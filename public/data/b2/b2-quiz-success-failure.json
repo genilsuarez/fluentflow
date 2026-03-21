@@ -2,10 +2,10 @@
   {
     "question": "What does <perseverance> mean?",
     "options": [
-      "giving up easily in standard terms",
+      "giving up easily",
       "persistence in doing something",
-      "avoiding challenges when considering the broader context",
-      "quitting in most situations"
+      "avoiding challenges",
+      "quitting"
     ],
     "correct": "persistence in doing something",
     "explanation": "<Perseverance> means continued effort to do or achieve something despite difficulties."
@@ -13,10 +13,10 @@
   {
     "question": "What is a <setback>?",
     "options": [
-      "a reward under normal circumstances",
-      "a success under normal circumstances",
+      "a reward",
+      "a success",
       "a difficulty that delays progress",
-      "an achievement in a typical scenario"
+      "an achievement"
     ],
     "correct": "a difficulty that delays progress",
     "explanation": "A <setback> is a reversal or check in progress."
@@ -25,9 +25,9 @@
     "question": "What does <triumph> mean?",
     "options": [
       "great victory or achievement",
-      "failure in everyday usage",
-      "struggle in most situations",
-      "attempt in the usual sense"
+      "failure",
+      "struggle",
+      "attempt"
     ],
     "correct": "great victory or achievement",
     "explanation": "Triumph means a <great victory or achievement>."
@@ -36,9 +36,9 @@
     "question": "What is <resilience>?",
     "options": [
       "ability to recover from difficulties",
-      "avoiding problems in standard terms",
-      "weakness in ordinary cases",
-      "giving up in the usual sense"
+      "avoiding problems",
+      "weakness",
+      "giving up"
     ],
     "correct": "ability to recover from difficulties",
     "explanation": "<Resilience> is the capacity to recover quickly from difficulties; toughness."
@@ -46,9 +46,9 @@
   {
     "question": "What does <accomplish> mean?",
     "options": [
-      "try under normal circumstances",
-      "abandon in this context",
-      "fail in the usual sense",
+      "try",
+      "abandon",
+      "fail",
       "achieve or complete successfully"
     ],
     "correct": "achieve or complete successfully",
@@ -57,9 +57,9 @@
   {
     "question": "What is a <breakthrough>?",
     "options": [
-      "a delay under normal circumstances",
-      "a mistake in a typical scenario",
-      "a failure as generally defined",
+      "a delay",
+      "a mistake",
+      "a failure",
       "a sudden important development"
     ],
     "correct": "a sudden important development",
@@ -68,10 +68,10 @@
   {
     "question": "What does <determination> mean?",
     "options": [
-      "uncertainty when considering the broader context",
+      "uncertainty",
       "firmness of purpose",
-      "doubt in this context",
-      "hesitation in the most widely accepted sense"
+      "doubt",
+      "hesitation"
     ],
     "correct": "firmness of purpose",
     "explanation": "Determination is <firmness of purpose>; resoluteness."
@@ -79,10 +79,10 @@
   {
     "question": "What is <adversity>?",
     "options": [
-      "success for the most part",
-      "good fortune in this context",
+      "success",
+      "good fortune",
       "difficulties or misfortune",
-      "happiness in the usual sense"
+      "happiness"
     ],
     "correct": "difficulties or misfortune",
     "explanation": "Adversity means <difficulties or misfortune>."
@@ -91,9 +91,9 @@
     "question": "What does <strive> mean?",
     "options": [
       "make great efforts to achieve",
-      "give up as typically understood",
-      "avoid in ordinary cases",
-      "relax in the usual sense"
+      "give up",
+      "avoid",
+      "relax"
     ],
     "correct": "make great efforts to achieve",
     "explanation": "Strive means to <make great efforts to achieve> or obtain something."
@@ -101,10 +101,10 @@
   {
     "question": "What is an <obstacle>?",
     "options": [
-      "help for the most part",
-      "advantage in practical terms",
+      "help",
+      "advantage",
       "something that blocks progress",
-      "support in conventional terms"
+      "support"
     ],
     "correct": "something that blocks progress",
     "explanation": "An <obstacle> is something that blocks one's way or prevents progress."
@@ -112,9 +112,9 @@
   {
     "question": "What does <flourish> mean?",
     "options": [
-      "decline in most situations",
-      "struggle in ordinary cases",
-      "fail as generally defined",
+      "decline",
+      "struggle",
+      "fail",
       "grow or develop successfully"
     ],
     "correct": "grow or develop successfully",
@@ -123,10 +123,10 @@
   {
     "question": "What is a <downfall>?",
     "options": [
-      "victory in a typical scenario",
+      "victory",
       "loss of power or prosperity",
-      "achievement in regular usage",
-      "success for the most part"
+      "achievement",
+      "success"
     ],
     "correct": "loss of power or prosperity",
     "explanation": "<Downfall> is a loss of power, prosperity, or status."
@@ -134,9 +134,9 @@
   {
     "question": "What does <ambitious> mean?",
     "options": [
-      "unmotivated in ordinary cases",
-      "lazy by common definition",
-      "content in this context",
+      "unmotivated",
+      "lazy",
+      "content",
       "having strong desire for success"
     ],
     "correct": "having strong desire for success",
@@ -145,10 +145,10 @@
   {
     "question": "What is a <fiasco>?",
     "options": [
-      "success according to standard definitions",
+      "success",
       "achievement",
       "complete failure",
-      "triumph when considering the broader context"
+      "triumph"
     ],
     "correct": "complete failure",
     "explanation": "A fiasco is a thing that is a <complete failure>, especially in a ludicrous way."
@@ -157,9 +157,9 @@
     "question": "What does <excel> mean?",
     "options": [
       "be exceptionally good at something",
-      "struggle in most situations",
-      "fail in conventional terms",
-      "quit as generally defined"
+      "struggle",
+      "fail",
+      "quit"
     ],
     "correct": "be exceptionally good at something",
     "explanation": "<Excel> means to be exceptionally good at or proficient in an activity or subject."
@@ -167,10 +167,10 @@
   {
     "question": "What is <defeat>?",
     "options": [
-      "victory in common practice",
-      "success in common practice",
+      "victory",
+      "success",
       "instance of being beaten",
-      "achievement in this context"
+      "achievement"
     ],
     "correct": "instance of being beaten",
     "explanation": "<Defeat> is an instance of defeating or being defeated."
@@ -179,9 +179,9 @@
     "question": "What does <aspire> mean?",
     "options": [
       "direct hope toward achieving something",
-      "give up under normal circumstances",
-      "fear under normal circumstances",
-      "avoid under normal circumstances"
+      "give up",
+      "fear",
+      "avoid"
     ],
     "correct": "direct hope toward achieving something",
     "explanation": "<Aspire> means to direct one's hopes or ambitions toward achieving something."
@@ -189,10 +189,10 @@
   {
     "question": "What is a <milestone>?",
     "options": [
-      "mistake in common practice",
-      "problem as widely accepted",
+      "mistake",
+      "problem",
       "significant stage or event",
-      "failure in the usual sense"
+      "failure"
     ],
     "correct": "significant stage or event",
     "explanation": "A milestone is a <significant stage or event> in development or progress."
@@ -201,9 +201,9 @@
     "question": "What does <falter> mean?",
     "options": [
       "lose strength or momentum",
-      "succeed in practical terms",
-      "excel in most situations",
-      "improve in everyday usage"
+      "succeed",
+      "excel",
+      "improve"
     ],
     "correct": "lose strength or momentum",
     "explanation": "Falter means to <lose strength or momentum>; to start to fail."
@@ -212,9 +212,9 @@
     "question": "What is <tenacity>?",
     "options": [
       "quality of being determined",
-      "weakness in this context",
-      "laziness in the usual sense",
-      "giving up in standard terms"
+      "weakness",
+      "laziness",
+      "giving up"
     ],
     "correct": "quality of being determined",
     "explanation": "<Tenacity> is the quality or fact of being very determined; persistence."

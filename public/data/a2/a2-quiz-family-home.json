@@ -36,9 +36,9 @@
     "question": "Which appliance keeps food <cold>?",
     "options": [
       "refrigerator",
-      "oven in the most widely accepted sense",
+      "oven",
       "microwave",
-      "toaster when considering the broader context"
+      "toaster"
     ],
     "correct": "refrigerator",
     "explanation": "A <refrigerator> keeps food cold and fresh."
@@ -90,9 +90,9 @@
   {
     "question": "What do you call your <grandparents' parents>?",
     "options": [
-      "relatives when considering the broader context",
-      "elders when considering the broader context",
-      "ancestors when considering the broader context",
+      "relatives",
+      "elders",
+      "ancestors",
       "great-grandparents"
     ],
     "correct": "great-grandparents",
@@ -113,9 +113,9 @@
     "question": "What is a <sibling>?",
     "options": [
       "your brother or sister",
-      "your parent within the conventional framework",
-      "your friend when considering the broader context",
-      "your cousin when considering the broader context"
+      "your parent",
+      "your friend",
+      "your cousin"
     ],
     "correct": "your brother or sister",
     "explanation": "A sibling is <your brother or sister>."
@@ -157,7 +157,7 @@
     "question": "What is a <nuclear family>?",
     "options": [
       "cousins and aunts",
-      "all relatives in the most widely accepted sense",
+      "all relatives",
       "parents and children only",
       "grandparents only"
     ],
@@ -178,7 +178,7 @@
   {
     "question": "What do you call your <spouse's brother>?",
     "options": [
-      "cousin when considering the broader context",
+      "cousin",
       "stepbrother",
       "nephew as recognized by most authorities",
       "brother-in-law"
@@ -190,9 +190,9 @@
     "question": "Which appliance is used for <cleaning floors>?",
     "options": [
       "vacuum cleaner",
-      "toaster within the conventional framework",
-      "fan when considering the broader context",
-      "iron based on common understanding"
+      "toaster",
+      "fan",
+      "iron"
     ],
     "correct": "vacuum cleaner",
     "explanation": "A <vacuum cleaner> is used to clean floors by sucking up dirt and dust."
@@ -200,10 +200,10 @@
   {
     "question": "What is an <extended family>?",
     "options": [
-      "children only as widely accepted",
+      "children only",
       "parents, children, and other relatives",
-      "parents only in the usual sense",
-      "friends under normal circumstances"
+      "parents only",
+      "friends"
     ],
     "correct": "parents, children, and other relatives",
     "explanation": "An <extended family> includes parents, children, grandparents, aunts, uncles, and cousins."
