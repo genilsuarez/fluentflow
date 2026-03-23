@@ -11,7 +11,7 @@
 .reading-component__container {
   width: 100%;
   max-width: 900px;
-  min-height: clamp(400px, 70vh, 600px);
+  min-height: clamp(405px, 70vh, 600px);
   max-height: 100vh;
   margin: 0 auto;
   padding: 0.375rem;
@@ -1368,18 +1368,17 @@
   .reading-component__container {
     max-width: 100%;
     height: auto;
-    min-height: calc(var(--menu-content-height-mobile) + 5px);
+    min-height: clamp(405px, 70vh, 600px);
     margin: 0;
     padding: 0.25rem;
   }
 
-  /* Mobile: Compact padding, fills available space */
+  /* Mobile: Compact padding */
   .reading-component__content {
-    flex: 1;
-    min-height: 0;
+    flex: 0 0 auto;
     padding: 0.375rem;
     margin-bottom: 0;
-    overflow-y: auto;
+    overflow-y: visible;
   }
 
   /* Push game controls to bottom of container */
