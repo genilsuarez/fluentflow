@@ -522,12 +522,22 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                   })}
                 </div>
               ) : (
-                <ContentRenderer
-                  content={ContentAdapter.ensureStructured(
-                    currentSection?.content || t('common.loading'),
-                    'reading'
-                  )}
-                />
+                <>
+                  {(currentSection?.content || t('common.loading'))
+                    .split('\n\n')
+                    .map((paragraph, idx) => (
+                      <p key={idx}>
+                        {paragraph.split('\n').map((line, lineIdx, arr) => (
+                          <React.Fragment key={lineIdx}>
+                            <ContentRenderer
+                              content={ContentAdapter.ensureStructured(line, 'reading')}
+                            />
+                            {lineIdx < arr.length - 1 && <br />}
+                          </React.Fragment>
+                        ))}
+                      </p>
+                    ))}
+                </>
               )}
             </div>
 
