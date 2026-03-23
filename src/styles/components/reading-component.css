@@ -1368,7 +1368,7 @@
   .reading-component__container {
     max-width: 100%;
     height: auto;
-    min-height: var(--menu-content-height-mobile);
+    min-height: calc(var(--menu-content-height-mobile) + 3px);
     margin: 0;
     padding: 0.25rem;
   }
