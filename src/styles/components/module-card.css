@@ -904,11 +904,8 @@ html.light .module-card--reading .module-card__icon svg {
 /* Current module indicator — highlighted background + glow */
 .module-card--current {
   border: 3px solid rgba(37, 99, 235, 1);
-  background: linear-gradient(
-      135deg,
-      rgba(59, 130, 246, 0.15) 0%,
-      rgba(59, 130, 246, 0.08) 100%
-    ),
+  background:
+    linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(59, 130, 246, 0.08) 100%),
     linear-gradient(135deg, #f0f7ff 0%, #e0edff 100%);
   box-shadow:
     0 0 0 3px rgba(59, 130, 246, 0.3),
@@ -918,11 +915,8 @@ html.light .module-card--reading .module-card__icon svg {
 
 .module-card--current:hover {
   border: 3px solid rgba(37, 99, 235, 1);
-  background: linear-gradient(
-      135deg,
-      rgba(59, 130, 246, 0.2) 0%,
-      rgba(59, 130, 246, 0.1) 100%
-    ),
+  background:
+    linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(59, 130, 246, 0.1) 100%),
     linear-gradient(135deg, #e8f1ff 0%, #d6e6ff 100%);
   box-shadow:
     0 0 0 3px rgba(59, 130, 246, 0.35),
@@ -933,11 +927,8 @@ html.light .module-card--reading .module-card__icon svg {
 /* Dark mode: blue-tinted background for contrast */
 html.dark .module-card--current {
   border: 3px solid #60a5fa;
-  background: linear-gradient(
-      135deg,
-      rgba(96, 165, 250, 0.2) 0%,
-      rgba(59, 130, 246, 0.12) 100%
-    ),
+  background:
+    linear-gradient(135deg, rgba(96, 165, 250, 0.2) 0%, rgba(59, 130, 246, 0.12) 100%),
     linear-gradient(135deg, #1e2a3e 0%, #1a2744 100%);
   box-shadow:
     0 0 0 3px rgba(96, 165, 250, 0.35),
@@ -947,11 +938,8 @@ html.dark .module-card--current {
 
 html.dark .module-card--current:hover {
   border: 3px solid #60a5fa;
-  background: linear-gradient(
-      135deg,
-      rgba(96, 165, 250, 0.25) 0%,
-      rgba(59, 130, 246, 0.15) 100%
-    ),
+  background:
+    linear-gradient(135deg, rgba(96, 165, 250, 0.25) 0%, rgba(59, 130, 246, 0.15) 100%),
     linear-gradient(135deg, #1e2e48 0%, #1c2d4e 100%);
   box-shadow:
     0 0 0 3px rgba(96, 165, 250, 0.4),
