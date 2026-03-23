@@ -444,7 +444,11 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                           <div className="reading-component__example-quote">
                             &ldquo;{quote}&rdquo;
                             {note?.trim() && (
-                              <span className="reading-component__example-note">{note.trim()}</span>
+                              <span className="reading-component__example-note">
+                                <ContentRenderer
+                                  content={ContentAdapter.ensureStructured(note.trim(), 'reading')}
+                                />
+                              </span>
                             )}
                           </div>
                         </div>
@@ -459,7 +463,11 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                             <span className="reading-component__example-number">{number}</span>
                             &ldquo;{quote}&rdquo;
                             {note?.trim() && (
-                              <span className="reading-component__example-note">{note.trim()}</span>
+                              <span className="reading-component__example-note">
+                                <ContentRenderer
+                                  content={ContentAdapter.ensureStructured(note.trim(), 'reading')}
+                                />
+                              </span>
                             )}
                           </div>
                         </div>
@@ -477,7 +485,11 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                           <div className="reading-component__example-quote">
                             &ldquo;{quote}&rdquo;
                             {note?.trim() && (
-                              <span className="reading-component__example-note">{note.trim()}</span>
+                              <span className="reading-component__example-note">
+                                <ContentRenderer
+                                  content={ContentAdapter.ensureStructured(note.trim(), 'reading')}
+                                />
+                              </span>
                             )}
                           </div>
                         </div>
