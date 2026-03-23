@@ -279,7 +279,11 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                     {readingData.keyVocabulary.map((term, index) => (
                       <div key={index} className="reading-component__vocabulary-card">
                         <div className="reading-component__vocabulary-card-header">
-                          <div className="reading-component__vocabulary-term"><ContentRenderer content={ContentAdapter.ensureStructured(term.term, 'reading')} /></div>
+                          <div className="reading-component__vocabulary-term">
+                            <ContentRenderer
+                              content={ContentAdapter.ensureStructured(term.term, 'reading')}
+                            />
+                          </div>
                           {term.pronunciation && (
                             <div className="reading-component__vocabulary-pronunciation">
                               {term.pronunciation}
@@ -292,7 +296,12 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                               {t('reading.component.definition')}
                             </div>
                             <div className="reading-component__vocabulary-definition">
-                              <ContentRenderer content={ContentAdapter.ensureStructured(term.definition, 'reading')} />
+                              <ContentRenderer
+                                content={ContentAdapter.ensureStructured(
+                                  term.definition,
+                                  'reading'
+                                )}
+                              />
                             </div>
                           </div>
                           <div className="reading-component__vocabulary-example-block">
@@ -417,7 +426,11 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
         ) : (
           <>
             {/* Regular content section */}
-            <h3 className="reading-component__section-title"><ContentRenderer content={ContentAdapter.ensureStructured(currentSection?.title || '', 'reading')} /></h3>
+            <h3 className="reading-component__section-title">
+              <ContentRenderer
+                content={ContentAdapter.ensureStructured(currentSection?.title || '', 'reading')}
+              />
+            </h3>
 
             <div className="reading-component__section-content">
               {currentSection?.type === 'examples' ? (
@@ -531,9 +544,15 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                   <div className="reading-component__tooltips-grid">
                     {currentSection.interactive.tooltips.map((tooltip, index) => (
                       <div key={index} className="reading-component__tooltip-card">
-                        <span className="reading-component__tooltip-term"><ContentRenderer content={ContentAdapter.ensureStructured(tooltip.term, 'reading')} /></span>
+                        <span className="reading-component__tooltip-term">
+                          <ContentRenderer
+                            content={ContentAdapter.ensureStructured(tooltip.term, 'reading')}
+                          />
+                        </span>
                         <span className="reading-component__tooltip-definition">
-                          <ContentRenderer content={ContentAdapter.ensureStructured(tooltip.definition, 'reading')} />
+                          <ContentRenderer
+                            content={ContentAdapter.ensureStructured(tooltip.definition, 'reading')}
+                          />
                         </span>
                       </div>
                     ))}
@@ -553,7 +572,9 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                         aria-expanded={expandedItems.has(index)}
                       >
                         <span className="reading-component__expandable-title">
-                          <ContentRenderer content={ContentAdapter.ensureStructured(expandable.title, 'reading')} />
+                          <ContentRenderer
+                            content={ContentAdapter.ensureStructured(expandable.title, 'reading')}
+                          />
                         </span>
                         {expandedItems.has(index) ? (
                           <ChevronUp className="reading-component__expandable-icon" />

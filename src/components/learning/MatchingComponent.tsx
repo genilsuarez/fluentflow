@@ -484,15 +484,23 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
                           {result.isCorrect ? '✓' : '✗'}
                         </span>
 
-                        <h4 className="matching-modal__card-term"><ContentRenderer content={ContentAdapter.ensureStructured(result.left, 'quiz')} /></h4>
+                        <h4 className="matching-modal__card-term">
+                          <ContentRenderer
+                            content={ContentAdapter.ensureStructured(result.left, 'quiz')}
+                          />
+                        </h4>
 
                         <p className="matching-modal__card-value matching-modal__card-value--correct">
-                          <ContentRenderer content={ContentAdapter.ensureStructured(result.right, 'quiz')} />
+                          <ContentRenderer
+                            content={ContentAdapter.ensureStructured(result.right, 'quiz')}
+                          />
                         </p>
 
                         {!result.isCorrect ? (
                           <p className="matching-modal__card-value matching-modal__card-value--incorrect">
-                            <ContentRenderer content={ContentAdapter.ensureStructured(result.userAnswer, 'quiz')} />
+                            <ContentRenderer
+                              content={ContentAdapter.ensureStructured(result.userAnswer, 'quiz')}
+                            />
                           </p>
                         ) : (
                           <span className="matching-modal__card-placeholder"></span>
@@ -519,9 +527,15 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
                     <span className="matching-modal__card-status matching-modal__card-status--correct">
                       ✓
                     </span>
-                    <h4 className="matching-modal__card-term"><ContentRenderer content={ContentAdapter.ensureStructured(selectedTerm.left, 'quiz')} /></h4>
+                    <h4 className="matching-modal__card-term">
+                      <ContentRenderer
+                        content={ContentAdapter.ensureStructured(selectedTerm.left, 'quiz')}
+                      />
+                    </h4>
                     <p className="matching-modal__card-value matching-modal__card-value--correct">
-                      <ContentRenderer content={ContentAdapter.ensureStructured(selectedTerm.right, 'quiz')} />
+                      <ContentRenderer
+                        content={ContentAdapter.ensureStructured(selectedTerm.right, 'quiz')}
+                      />
                     </p>
                   </div>
 
