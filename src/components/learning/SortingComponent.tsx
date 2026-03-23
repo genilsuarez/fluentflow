@@ -677,7 +677,7 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
                         {result.isCorrect ? '✓' : '✗'}
                       </span>
 
-                      <h4 className="sorting-modal__card-word">{result.word}</h4>
+                      <h4 className="sorting-modal__card-word"><ContentRenderer content={ContentAdapter.ensureStructured(result.word, 'quiz')} /></h4>
 
                       <p className="sorting-modal__card-value sorting-modal__card-value--correct">
                         {result.correctCategory}

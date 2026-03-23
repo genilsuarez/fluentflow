@@ -1373,12 +1373,13 @@
     padding: 0.25rem;
   }
 
-  /* Mobile: Compact padding, natural height */
+  /* Mobile: Compact padding, fills available space */
   .reading-component__content {
-    flex: 0 0 auto;
+    flex: 1;
+    min-height: 0;
     padding: 0.375rem;
     margin-bottom: 0;
-    overflow-y: visible;
+    overflow-y: auto;
   }
 
   /* Push game controls to bottom of container */

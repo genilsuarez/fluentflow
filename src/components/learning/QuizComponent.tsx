@@ -273,7 +273,7 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
                       className="quiz-component__option-text dynamic-text-color"
                       style={{ '--dynamic-text-color': textColor } as React.CSSProperties}
                     >
-                      {option}
+                      <ContentRenderer content={ContentAdapter.ensureStructured(option, 'quiz')} />
                     </span>
                   </div>
 
