@@ -256,7 +256,7 @@ const FlashcardComponent: React.FC<FlashcardComponentProps> = ({ module }) => {
           className="game-controls__primary-btn game-controls__primary-btn--blue"
         >
           <RotateCcw className="game-controls__primary-icon" />
-          <span>{isFlipped ? t('learning.flipBack') : t('learning.flip')}</span>
+          <span>{t('learning.flip')}</span>
         </button>
 
         <button
