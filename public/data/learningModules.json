@@ -1317,10 +1317,78 @@
     "category": "Review",
     "unit": 3,
     "prerequisites": [
-      "sorting-phrasal-verbs-particle-b1"
+      "quiz-gerunds-infinitives-b1"
     ],
     "description": "Comprehensive review of B1 level concepts",
     "estimatedTime": 10,
+    "difficulty": 3
+  },
+  {
+    "id": "reading-gerunds-infinitives-b1",
+    "name": "Gerunds & Infinitives",
+    "learningMode": "reading",
+    "dataPath": "data/b1/b1-reading-gerunds-infinitives.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Grammar",
+    "unit": 3,
+    "prerequisites": [
+      "sorting-phrasal-verbs-particle-b1"
+    ],
+    "description": "When to use verb + -ing (gerund) and verb + to (infinitive) after common verbs",
+    "estimatedTime": 18,
+    "difficulty": 3
+  },
+  {
+    "id": "sorting-gerunds-infinitives-b1",
+    "name": "Gerunds & Infinitives Sorting",
+    "learningMode": "sorting",
+    "dataPath": "data/b1/b1-sorting-gerunds-infinitives.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Grammar",
+    "unit": 3,
+    "prerequisites": [
+      "reading-gerunds-infinitives-b1"
+    ],
+    "description": "Sort verbs by pattern: followed by gerund (-ing) or infinitive (to + verb)",
+    "estimatedTime": 6,
+    "difficulty": 3
+  },
+  {
+    "id": "completion-gerunds-infinitives-b1",
+    "name": "Gerunds & Infinitives Practice",
+    "learningMode": "completion",
+    "dataPath": "data/b1/b1-completion-gerunds-infinitives.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Grammar",
+    "unit": 3,
+    "prerequisites": [
+      "sorting-gerunds-infinitives-b1"
+    ],
+    "description": "Complete sentences with the correct gerund or infinitive form",
+    "estimatedTime": 8,
+    "difficulty": 3
+  },
+  {
+    "id": "quiz-gerunds-infinitives-b1",
+    "name": "Gerunds & Infinitives Quiz",
+    "learningMode": "quiz",
+    "dataPath": "data/b1/b1-quiz-gerunds-infinitives.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Grammar",
+    "unit": 3,
+    "prerequisites": [
+      "completion-gerunds-infinitives-b1"
+    ],
+    "description": "Test your knowledge of gerund and infinitive verb patterns",
+    "estimatedTime": 5,
     "difficulty": 3
   },
   {
@@ -1793,10 +1861,44 @@
     "category": "Review",
     "unit": 4,
     "prerequisites": [
-      "quiz-phrasal-verbs-b2"
+      "quiz-gerunds-infinitives-advanced-b2"
     ],
     "description": "Comprehensive review of B2 level concepts: used to, phrasal verbs, connectors, and professional vocabulary",
     "estimatedTime": 10,
+    "difficulty": 4
+  },
+  {
+    "id": "completion-gerunds-infinitives-advanced-b2",
+    "name": "Gerunds & Infinitives: Meaning Changes",
+    "learningMode": "completion",
+    "dataPath": "data/b2/b2-completion-gerunds-infinitives-advanced.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Grammar",
+    "unit": 4,
+    "prerequisites": [
+      "quiz-phrasal-verbs-b2"
+    ],
+    "description": "Verbs that change meaning with gerund vs infinitive: stop, remember, try, forget, regret, go on, mean",
+    "estimatedTime": 8,
+    "difficulty": 4
+  },
+  {
+    "id": "quiz-gerunds-infinitives-advanced-b2",
+    "name": "Gerunds & Infinitives Advanced Quiz",
+    "learningMode": "quiz",
+    "dataPath": "data/b2/b2-quiz-gerunds-infinitives-advanced.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Grammar",
+    "unit": 4,
+    "prerequisites": [
+      "completion-gerunds-infinitives-advanced-b2"
+    ],
+    "description": "Test your understanding of verbs that change meaning with gerund vs infinitive",
+    "estimatedTime": 5,
     "difficulty": 4
   },
   {

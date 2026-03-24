@@ -1,0 +1,132 @@
+[
+  {
+    "question": "'He stopped smoking.' This means:",
+    "options": ["He quit smoking permanently.", "He paused to smoke a cigarette.", "He started smoking.", "He thought about smoking."],
+    "correct": "He quit smoking permanently.",
+    "explanation": "<Stop> + gerund means to cease the activity: he no longer smokes."
+  },
+  {
+    "question": "'He stopped to smoke.' This means:",
+    "options": ["He quit smoking.", "He paused what he was doing in order to smoke.", "He continued smoking.", "He forgot to smoke."],
+    "correct": "He paused what he was doing in order to smoke.",
+    "explanation": "<Stop> + infinitive means to pause one activity in order to do another."
+  },
+  {
+    "question": "'I remember locking the door.' This means:",
+    "options": ["I have a memory of locking it (I did it).", "I must not forget to lock it.", "I forgot to lock it.", "I will lock it later."],
+    "correct": "I have a memory of locking it (I did it).",
+    "explanation": "<Remember> + gerund refers to a memory of a past action."
+  },
+  {
+    "question": "'Remember to lock the door.' This means:",
+    "options": ["You have a memory of locking it.", "Don't forget to lock it (future action).", "You locked it already.", "You regret locking it."],
+    "correct": "Don't forget to lock it (future action).",
+    "explanation": "<Remember> + infinitive means don't forget to do something in the future."
+  },
+  {
+    "question": "'She tried to lift the box.' This means:",
+    "options": ["She experimented with lifting it.", "She made an effort to lift it (it was difficult).", "She successfully lifted it.", "She stopped lifting it."],
+    "correct": "She made an effort to lift it (it was difficult).",
+    "explanation": "<Try> + infinitive means to attempt something that requires effort."
+  },
+  {
+    "question": "'She tried lifting the box from the other side.' This means:",
+    "options": ["She attempted with great effort.", "She experimented with a different method.", "She gave up lifting.", "She refused to lift it."],
+    "correct": "She experimented with a different method.",
+    "explanation": "<Try> + gerund means to experiment with a method or approach."
+  },
+  {
+    "question": "'I forgot to buy milk.' This means:",
+    "options": ["I don't remember the experience of buying milk.", "I failed to buy milk (I should have).", "I have a memory of buying milk.", "I regret buying milk."],
+    "correct": "I failed to buy milk (I should have).",
+    "explanation": "<Forget> + infinitive means you didn't do something you were supposed to do."
+  },
+  {
+    "question": "'I'll never forget meeting the president.' This means:",
+    "options": ["I failed to meet the president.", "The memory of meeting the president is unforgettable.", "I need to meet the president.", "I regret meeting the president."],
+    "correct": "The memory of meeting the president is unforgettable.",
+    "explanation": "<Forget> + gerund refers to a memorable past experience."
+  },
+  {
+    "question": "'We regret to inform you that your application was rejected.' The use of 'regret to inform' indicates:",
+    "options": ["A past mistake.", "A formal announcement of bad news.", "A happy memory.", "An ongoing activity."],
+    "correct": "A formal announcement of bad news.",
+    "explanation": "<Regret> + infinitive is used formally to deliver bad news: we are sorry to say."
+  },
+  {
+    "question": "'She regrets not studying harder.' This means:",
+    "options": ["She is sorry she didn't study more in the past.", "She is about to deliver bad news.", "She plans to study harder.", "She enjoys studying."],
+    "correct": "She is sorry she didn't study more in the past.",
+    "explanation": "<Regret> + gerund means feeling sorry about a past action or inaction."
+  },
+  {
+    "question": "'He went on talking for two hours.' This means:",
+    "options": ["He started a new topic.", "He continued talking (same activity).", "He stopped talking.", "He talked and then did something else."],
+    "correct": "He continued talking (same activity).",
+    "explanation": "<Go on> + gerund means to continue the same activity."
+  },
+  {
+    "question": "'After the break, she went on to discuss the budget.' This means:",
+    "options": ["She continued the same discussion.", "She moved to a new topic (the budget).", "She stopped discussing.", "She repeated the previous topic."],
+    "correct": "She moved to a new topic (the budget).",
+    "explanation": "<Go on> + infinitive means to proceed to the next activity or topic."
+  },
+  {
+    "question": "'This job means working weekends.' The word 'means' here indicates:",
+    "options": ["intention", "involvement / consequence", "desire", "regret"],
+    "correct": "involvement / consequence",
+    "explanation": "<Mean> + gerund = involve or result in: the job involves working weekends."
+  },
+  {
+    "question": "'I didn't mean to offend you.' The word 'mean' here indicates:",
+    "options": ["consequence", "intention", "memory", "experiment"],
+    "correct": "intention",
+    "explanation": "<Mean> + infinitive = intend: I didn't intend to offend you."
+  },
+  {
+    "question": "Which pair shows the correct difference?",
+    "options": [
+      "stop + -ing = pause; stop + to = quit",
+      "stop + -ing = quit the activity; stop + to = pause to do something else",
+      "stop + -ing = future; stop + to = past",
+      "stop + -ing and stop + to have the same meaning"
+    ],
+    "correct": "stop + -ing = quit the activity; stop + to = pause to do something else",
+    "explanation": "<Stop smoking> = quit. <Stop to smoke> = pause another activity to smoke."
+  },
+  {
+    "question": "Complete: 'If you can't sleep, try ______ some warm milk.'",
+    "options": ["to drink", "drinking", "drink", "drank"],
+    "correct": "drinking",
+    "explanation": "<Try> + gerund = experiment with a solution. Try drinking milk as a remedy."
+  },
+  {
+    "question": "Complete: 'I tried ______ the manager, but she was in a meeting.'",
+    "options": ["reaching", "to reach", "reach", "reached"],
+    "correct": "to reach",
+    "explanation": "<Try> + infinitive = attempt something difficult. I made an effort to reach her."
+  },
+  {
+    "question": "Which sentence uses 'remember' correctly for a past memory?",
+    "options": [
+      "I remember to visit Paris in 2019.",
+      "I remember visiting Paris in 2019.",
+      "I remember visit Paris in 2019.",
+      "I remembered to visiting Paris."
+    ],
+    "correct": "I remember visiting Paris in 2019.",
+    "explanation": "<Remember> + gerund = recall a past experience: I remember visiting Paris."
+  },
+  {
+    "question": "'Moving to a new city means ______ new friends.' Choose the correct form.",
+    "options": ["to make", "making", "make", "made"],
+    "correct": "making",
+    "explanation": "<Mean> + gerund = involve as a consequence. Moving involves making new friends."
+  },
+  {
+    "question": "Which verb changes meaning depending on whether it's followed by gerund or infinitive?",
+    "options": ["enjoy", "want", "stop", "refuse"],
+    "correct": "stop",
+    "explanation": "<Stop> changes meaning: stop doing (quit) vs stop to do (pause for a purpose). Enjoy and want only take one form each."
+  }
+]

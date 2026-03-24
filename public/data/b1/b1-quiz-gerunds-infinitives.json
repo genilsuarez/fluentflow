@@ -1,0 +1,122 @@
+[
+  {
+    "question": "Which is correct? 'I enjoy ______.'",
+    "options": ["to swim", "swimming", "swim", "swam"],
+    "correct": "swimming",
+    "explanation": "<Enjoy> is always followed by the gerund (-ing form): enjoy swimming."
+  },
+  {
+    "question": "Which is correct? 'She decided ______ abroad.'",
+    "options": ["studying", "to study", "study", "studied"],
+    "correct": "to study",
+    "explanation": "<Decide> is always followed by the infinitive: decided to study."
+  },
+  {
+    "question": "Which verb is followed by the gerund (-ing)?",
+    "options": ["want", "hope", "avoid", "decide"],
+    "correct": "avoid",
+    "explanation": "<Avoid> is followed by the gerund: avoid doing something."
+  },
+  {
+    "question": "Which verb is followed by the infinitive (to)?",
+    "options": ["enjoy", "mind", "finish", "plan"],
+    "correct": "plan",
+    "explanation": "<Plan> is followed by the infinitive: plan to do something."
+  },
+  {
+    "question": "'Do you mind ______ me?' — Choose the correct form.",
+    "options": ["to help", "helping", "help", "helped"],
+    "correct": "helping",
+    "explanation": "<Mind> is always followed by the gerund: mind helping."
+  },
+  {
+    "question": "'He promised ______ on time.' — Choose the correct form.",
+    "options": ["arriving", "to arrive", "arrive", "arrived"],
+    "correct": "to arrive",
+    "explanation": "<Promise> is always followed by the infinitive: promised to arrive."
+  },
+  {
+    "question": "After prepositions (in, at, of, about), we use:",
+    "options": ["the infinitive (to + verb)", "the gerund (-ing form)", "the base form", "the past tense"],
+    "correct": "the gerund (-ing form)",
+    "explanation": "After prepositions, always use the <gerund>: interested in learning, good at cooking."
+  },
+  {
+    "question": "'I look forward to ______ you.' — Choose the correct form.",
+    "options": ["see", "to see", "seeing", "saw"],
+    "correct": "seeing",
+    "explanation": "In <look forward to>, the word 'to' is a preposition, so use the gerund: seeing."
+  },
+  {
+    "question": "Which sentence is correct?",
+    "options": ["She suggested to go home.", "She suggested going home.", "She suggested go home.", "She suggested went home."],
+    "correct": "She suggested going home.",
+    "explanation": "<Suggest> is followed by the gerund: suggested going."
+  },
+  {
+    "question": "Which sentence is correct?",
+    "options": ["He refused helping.", "He refused to help.", "He refused help.", "He refused helped."],
+    "correct": "He refused to help.",
+    "explanation": "<Refuse> is followed by the infinitive: refused to help."
+  },
+  {
+    "question": "'She can't afford ______ a new phone.' — Choose the correct form.",
+    "options": ["buying", "to buy", "buy", "bought"],
+    "correct": "to buy",
+    "explanation": "<Afford> is always followed by the infinitive: afford to buy."
+  },
+  {
+    "question": "'He admitted ______ the window.' — Choose the correct form.",
+    "options": ["to break", "breaking", "break", "broke"],
+    "correct": "breaking",
+    "explanation": "<Admit> is always followed by the gerund: admitted breaking."
+  },
+  {
+    "question": "Which group of verbs takes the gerund (-ing)?",
+    "options": ["want, hope, plan", "enjoy, avoid, mind", "decide, agree, refuse", "learn, offer, promise"],
+    "correct": "enjoy, avoid, mind",
+    "explanation": "<Enjoy>, <avoid>, and <mind> are all followed by the gerund (-ing form)."
+  },
+  {
+    "question": "Which group of verbs takes the infinitive (to)?",
+    "options": ["finish, keep, miss", "suggest, consider, deny", "want, decide, hope", "enjoy, avoid, risk"],
+    "correct": "want, decide, hope",
+    "explanation": "<Want>, <decide>, and <hope> are all followed by the infinitive (to + verb)."
+  },
+  {
+    "question": "'I'm tired of ______ the same thing every day.' — Choose the correct form.",
+    "options": ["to do", "doing", "do", "did"],
+    "correct": "doing",
+    "explanation": "After the preposition <of>, always use the gerund: tired of doing."
+  },
+  {
+    "question": "'She offered ______ dinner for everyone.' — Choose the correct form.",
+    "options": ["cooking", "to cook", "cook", "cooked"],
+    "correct": "to cook",
+    "explanation": "<Offer> is always followed by the infinitive: offered to cook."
+  },
+  {
+    "question": "'He keeps ______ about his holiday.' — Choose the correct form.",
+    "options": ["to talk", "talking", "talk", "talked"],
+    "correct": "talking",
+    "explanation": "<Keep> is always followed by the gerund: keeps talking."
+  },
+  {
+    "question": "With verbs like 'like', 'love', 'hate', we can use:",
+    "options": ["only the gerund", "only the infinitive", "both gerund and infinitive", "only the base form"],
+    "correct": "both gerund and infinitive",
+    "explanation": "Verbs like <like>, <love>, <hate> accept both forms: I like swimming / I like to swim."
+  },
+  {
+    "question": "'We managed ______ the project on time.' — Choose the correct form.",
+    "options": ["finishing", "to finish", "finish", "finished"],
+    "correct": "to finish",
+    "explanation": "<Manage> is always followed by the infinitive: managed to finish."
+  },
+  {
+    "question": "'She postponed ______ her decision.' — Choose the correct form.",
+    "options": ["to make", "making", "make", "made"],
+    "correct": "making",
+    "explanation": "<Postpone> is always followed by the gerund: postponed making."
+  }
+]

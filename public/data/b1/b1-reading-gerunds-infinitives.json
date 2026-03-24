@@ -1,0 +1,60 @@
+{
+  "title": "Gerunds and Infinitives",
+  "sections": [
+    {
+      "id": "intro",
+      "title": "Introduction",
+      "type": "introduction",
+      "content": "In English, when two verbs appear together, the second verb takes a specific form. Some verbs are followed by the <gerund> (-ing form), others by the <infinitive> (to + verb), and some accept both. Learning which pattern each verb follows is essential for natural English.\n\nFor example:\n• I enjoy <reading> books. (gerund)\n• I want <to read> a book. (infinitive)\n\nThere is no simple rule to predict the pattern — you need to learn them. But there are useful groups and patterns that make it easier."
+    },
+    {
+      "id": "gerund-verbs",
+      "title": "Verbs Followed by Gerund (-ing)",
+      "type": "theory",
+      "content": "These common verbs are always followed by the <gerund> (-ing form):\n\n<Enjoy>: I enjoy cooking Italian food.\n<Avoid>: She avoids eating late at night.\n<Mind>: Do you mind waiting a few minutes?\n<Suggest>: He suggested going to the cinema.\n<Finish>: We finished cleaning the house.\n<Practice>: They practice speaking English every day.\n<Consider>: I'm considering changing jobs.\n<Imagine>: Can you imagine living in another country?\n<Keep>: She keeps forgetting her keys.\n<Miss>: I miss seeing my old friends.\n<Deny>: He denied stealing the money.\n<Risk>: Don't risk losing your job.\n\nA helpful memory trick: many of these verbs describe reactions to actions or ongoing situations."
+    },
+    {
+      "id": "infinitive-verbs",
+      "title": "Verbs Followed by Infinitive (to + verb)",
+      "type": "theory",
+      "content": "These common verbs are always followed by the <infinitive> (to + verb):\n\n<Want>: I want to travel the world.\n<Decide>: She decided to study medicine.\n<Hope>: We hope to see you soon.\n<Plan>: They plan to move next year.\n<Agree>: He agreed to help us.\n<Refuse>: She refused to answer the question.\n<Learn>: I'm learning to drive.\n<Offer>: He offered to carry my bags.\n<Promise>: She promised to call me.\n<Expect>: I expect to arrive by 6pm.\n<Afford>: We can't afford to buy a new car.\n<Pretend>: He pretended to be asleep.\n\nA helpful pattern: many of these verbs express intentions, desires, or future-oriented actions."
+    },
+    {
+      "id": "both-forms",
+      "title": "Verbs That Accept Both Forms",
+      "type": "theory",
+      "content": "Some verbs can be followed by either the gerund or the infinitive with little or no change in meaning:\n\n<Like>: I like swimming. / I like to swim.\n<Love>: She loves dancing. / She loves to dance.\n<Hate>: He hates waiting. / He hates to wait.\n<Start>: It started raining. / It started to rain.\n<Begin>: She began crying. / She began to cry.\n<Continue>: They continued talking. / They continued to talk.\n<Prefer>: I prefer walking. / I prefer to walk.\n\nWith these verbs, both forms are correct and natural. However, the gerund often sounds slightly more informal and the infinitive slightly more formal."
+    },
+    {
+      "id": "prepositions",
+      "title": "Prepositions + Gerund",
+      "type": "theory",
+      "content": "After prepositions, we always use the <gerund>, never the infinitive:\n\n<Interested in>: She's interested in learning French.\n<Good at>: He's good at solving problems.\n<Tired of>: I'm tired of waiting.\n<Instead of>: Instead of complaining, do something.\n<Before>: Before leaving, check your bags.\n<After>: After finishing work, I went home.\n<Without>: He left without saying goodbye.\n<Look forward to>: I look forward to meeting you.\n\nNote: <look forward to> uses the gerund because <to> here is a preposition, not part of an infinitive. This is a common mistake for learners."
+    },
+    {
+      "id": "examples",
+      "title": "Gerunds and Infinitives in Context",
+      "type": "examples",
+      "content": "Example 1: JOB INTERVIEW\nInterviewer: Why do you want <to work> here?\nCandidate: I enjoy <working> with people and I'm considering <changing> my career path. I decided <to apply> because I hope <to grow> professionally.\n\nExample 2: MAKING PLANS\nA: I suggest <going> to the beach this weekend.\nB: I'd prefer <to stay> home. I don't mind <relaxing> here.\nA: OK, but I refuse <to spend> the whole weekend watching TV.\n\nExample 3: DAILY LIFE\nI finished <eating> breakfast and started <to get> ready for work. I avoid <driving> during rush hour, so I plan <to take> the bus. I keep <forgetting> my umbrella, so I need <to remember> it today."
+    },
+    {
+      "id": "summary",
+      "title": "Summary",
+      "type": "summary",
+      "content": "Key points to remember:\n\n• Verbs like enjoy, avoid, mind, suggest, finish, consider are followed by the <gerund> (-ing).\n• Verbs like want, decide, hope, plan, agree, refuse are followed by the <infinitive> (to + verb).\n• Verbs like like, love, hate, start, begin, continue accept both forms with similar meaning.\n• After prepositions (interested in, good at, tired of, look forward to), always use the <gerund>.\n• There is no universal rule — learning the patterns through practice is the most effective approach.\n• When in doubt, check a dictionary: it will show whether a verb takes -ing, to, or both."
+    }
+  ],
+  "learningObjectives": [
+    "Identify verbs followed by gerund (-ing form)",
+    "Identify verbs followed by infinitive (to + verb)",
+    "Recognize verbs that accept both forms",
+    "Use gerunds after prepositions correctly",
+    "Apply gerund and infinitive patterns in context"
+  ],
+  "keyVocabulary": [
+    { "term": "gerund", "definition": "The -ing form of a verb used as a noun (e.g., swimming, reading)", "example": "Swimming is good exercise." },
+    { "term": "infinitive", "definition": "The base form of a verb with 'to' (e.g., to swim, to read)", "example": "I want to swim." },
+    { "term": "verb pattern", "definition": "The grammatical structure that follows a verb", "example": "Enjoy + gerund: enjoy reading" }
+  ],
+  "estimatedReadingTime": 5
+}
