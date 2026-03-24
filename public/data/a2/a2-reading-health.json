@@ -18,19 +18,19 @@
       "id": "body-symptoms",
       "title": "Body Parts and Common Symptoms",
       "type": "theory",
-      "content": "Important body parts: head, neck, chest, stomach, back, arm, leg, hand, foot. Common symptoms include: <headache> (pain in your head), <fever> (high temperature), <cough> (to force air from your lungs with a sudden sound), <sore throat> (painful throat), <stomachache> (pain in stomach), <runny nose> (liquid from nose), and <dizzy> (feeling like everything is spinning). To describe pain, say <My [body part] hurts> or <I have a pain in my [body part]>."
+      "content": "Important body parts: head, neck, chest, stomach, back, arm, leg, hand, foot. Common symptoms include: headache (pain in your head), fever (high temperature), cough (to force air from your lungs with a sudden sound), <sore throat> (painful throat), <stomachache> (pain in stomach), <runny nose> (liquid from nose), and dizzy (feeling like everything is spinning). To describe pain, say <My [body part] hurts> or <I have a pain in my [body part]>."
     },
     {
       "id": "doctor-pharmacy",
       "title": "At the Doctor and Pharmacy",
       "type": "theory",
-      "content": "When you're sick, you <see a doctor> or <go to the doctor>. The doctor will <examine> you and ask about your symptoms. They might <prescribe> medicine - give you a written order for medication.\n\nYou take this <prescription> to a <pharmacy> or <drugstore> to get your medicine. Common medicines: <pain reliever> (for pain), <cough syrup> (for coughs), <antibiotics> (for infections). Always follow the <dosage> - how much medicine to take."
+      "content": "When you're sick, you <see a doctor> or <go to the doctor>. The doctor will examine you and ask about your symptoms. They might prescribe medicine - give you a written order for medication.\n\nYou take this prescription to a pharmacy or drugstore to get your medicine. Common medicines: <pain reliever> (for pain), <cough syrup> (for coughs), <antibiotics> (for infections). Always follow the dosage - how much medicine to take."
     },
     {
       "id": "healthy-habits",
       "title": "Staying Healthy",
       "type": "theory",
-      "content": "Prevention is better than cure! Healthy habits include: <exercise> or <work out> regularly, <eat a balanced diet> with fruits and vegetables, <drink plenty of water>, <get enough sleep> (7-8 hours), <wash your hands> frequently, and <avoid stress>. Regular <check-ups> with your doctor help catch problems early.\n\nDon't smoke, and limit alcohol. A healthy lifestyle helps you feel better and prevents illness."
+      "content": "Prevention is better than cure! Healthy habits include: exercise or work out regularly, eat a balanced diet with fruits and vegetables, <drink plenty of water>, <get enough sleep> (7-8 hours), <wash your hands> frequently, and <avoid stress>. Regular check-ups with your doctor help catch problems early.\n\nDon't smoke, and limit alcohol. A healthy lifestyle helps you feel better and prevents illness."
     },
     {
       "id": "examples",
@@ -42,7 +42,7 @@
       "id": "mental-wellbeing",
       "title": "Mental Health and Wellbeing",
       "type": "theory",
-      "content": "Mental health is as important as physical health. Here are useful words:\n\n• <Stress> - Feeling worried or under pressure\n• <Anxiety> - Feeling nervous or worried about the future\n• <Relax> - To become calm and less worried\n• <Mindfulness> - Paying attention to the present moment\n• <Self-care> - Taking care of your own health and happiness\n\nWays to feel better:\n• Get enough <sleep> (7-8 hours)\n• <Exercise> regularly\n• Talk to <friends> and <family>\n• Take <breaks> during work\n• Spend time <outdoors> in nature\n\nExample: <I feel stressed about my exams. I need to relax and take a break.>"
+      "content": "Mental health is as important as physical health. Here are useful words:\n\n• <Stress> - Feeling worried or under pressure\n• <Anxiety> - Feeling nervous or worried about the future\n• <Relax> - To become calm and less worried\n• <Mindfulness> - Paying attention to the present moment\n• <Self-care> - Taking care of your own health and happiness\n\nWays to feel better:\n• Get enough sleep (7-8 hours)\n• <Exercise> regularly\n• Talk to friends and family\n• Take breaks during work\n• Spend time <outdoors> in nature\n\nExample: <I feel stressed about my exams. I need to relax and take a break.>"
     },
     {
       "id": "examples-2",

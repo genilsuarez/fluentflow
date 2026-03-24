@@ -24,7 +24,7 @@
       "id": "hotel",
       "title": "At the Hotel",
       "type": "theory",
-      "content": "When you arrive at a hotel, you go to the <reception> or <front desk> to check in. You need to show your <reservation> (booking). Your <room key> opens your room.\n\nIf you need something, call <room service>. When you leave, you <check out> and pay your bill. The hotel staff can help you with directions and recommendations."
+      "content": "When you arrive at a hotel, you go to the reception or <front desk> to check in. You need to show your reservation (booking). Your <room key> opens your room.\n\nIf you need something, call <room service>. When you leave, you <check out> and pay your bill. The hotel staff can help you with directions and recommendations."
     },
     {
       "id": "transportation",
@@ -42,7 +42,7 @@
       "id": "restaurant",
       "title": "At a Restaurant",
       "type": "theory",
-      "content": "Eating out is common when traveling. Here are useful phrases:\n\n• <A table for two, please> - Asking for a seat\n• <Can I see the menu?> - Asking for the food list\n• <I'd like... / I'll have...> - Ordering food\n• <The bill, please> - Asking to pay\n• <Is service included?> - Asking about the tip\n\nExample: <Good evening. A table for two, please.> <Of course, follow me.> <Can I see the menu?> <Here you are.> <I'd like the chicken, please.>"
+      "content": "Eating out is common when traveling. Here are useful phrases:\n\n• <A table for two, please> - Asking for a seat\n• <Can I see the menu?> - Asking for the food list\n• I'd like... / I'll have... - Ordering food\n• The bill, please - Asking to pay\n• Is service included? - Asking about the tip\n\nExample: Good evening. A table for two, please. <Of course, follow me.> <Can I see the menu?> <Here you are.> <I'd like the chicken, please.>"
     },
     {
       "id": "examples-2",
@@ -54,7 +54,7 @@
       "id": "summary",
       "title": "Travel Tips",
       "type": "summary",
-      "content": "Remember these key points: Always carry your passport and important documents. Learn basic phrases like <Where is...?>, <How much?>, and <I need help>. Be polite and say <please> and <thank you>.\n\nDon't be afraid to ask people to speak slowly. Keep a translation app on your phone for emergencies. Most importantly, enjoy your trip!"
+      "content": "Remember these key points: Always carry your passport and important documents. Learn basic phrases like <Where is...?>, <How much?>, and <I need help>. Be polite and say please and <thank you>.\n\nDon't be afraid to ask people to speak slowly. Keep a translation app on your phone for emergencies. Most importantly, enjoy your trip!"
     }
   ],
   "keyVocabulary": [
