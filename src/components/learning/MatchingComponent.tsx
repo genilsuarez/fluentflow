@@ -446,21 +446,21 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
       {showExplanation && selectedTerm && (
         <div className="matching-modal">
           <div className="matching-modal__container">
-            <div className="matching-modal__content">
-              <div className="matching-modal__header">
-                <h3 className="matching-modal__title">
-                  {selectedTerm.pairs
-                    ? t('learning.exerciseSummary')
-                    : t('learning.explanation').replace(':', '')}
-                </h3>
-                <button
-                  onClick={() => setShowExplanation(false)}
-                  className="matching-modal__close-btn"
-                >
-                  <X className="matching-modal__close-icon" />
-                </button>
-              </div>
+            <div className="matching-modal__header">
+              <h3 className="matching-modal__title">
+                {selectedTerm.pairs
+                  ? t('learning.exerciseSummary')
+                  : t('learning.explanation').replace(':', '')}
+              </h3>
+              <button
+                onClick={() => setShowExplanation(false)}
+                className="matching-modal__close-btn"
+              >
+                <X className="matching-modal__close-icon" />
+              </button>
+            </div>
 
+            <div className="matching-modal__content">
               {selectedTerm.pairs ? (
                 /* Summary View */
                 <div className="matching-modal__summary">
@@ -551,15 +551,15 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
                   )}
                 </div>
               )}
+            </div>
 
-              <div className="matching-modal__actions">
-                <button
-                  onClick={() => setShowExplanation(false)}
-                  className="matching-modal__close-button"
-                >
-                  Close
-                </button>
-              </div>
+            <div className="matching-modal__actions">
+              <button
+                onClick={() => setShowExplanation(false)}
+                className="matching-modal__close-button"
+              >
+                Close
+              </button>
             </div>
           </div>
         </div>
