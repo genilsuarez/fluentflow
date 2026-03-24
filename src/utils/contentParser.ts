@@ -24,9 +24,10 @@ export class ContentParser {
     let currentIndex = 0;
 
     // Patterns to match (order matters for precedence)
+    const hasAngleBrackets = /<[^>]+>/.test(text);
     const patterns = [
       { regex: /<([^>]+)>/g, type: 'term' as const }, // Modern: angle brackets (primary)
-      { regex: /"([^"]+)"/g, type: 'term' as const }, // Legacy: double quotes
+      { regex: /"([^"]+)"/g, type: 'term' as const, validator: hasAngleBrackets ? (c: string) => !/<[^>]+>/.test(c) : undefined }, // Legacy: double quotes (skip if contains angle brackets)
       { regex: /'([^']+)'/g, type: 'term' as const, validator: ContentParser.isValidTerm }, // Legacy: single quotes
       { regex: /\*\*([^*]+)\*\*/g, type: 'emphasis' as const },
       { regex: /`([^`]+)`/g, type: 'code' as const },
@@ -60,11 +61,13 @@ export class ContentParser {
       }
     });
 
-    // Sort matches by position
-    matches.sort((a, b) => a.start - b.start);
+    // Sort by position; for overlapping matches prefer shorter (more specific)
+    matches.sort((a, b) => a.start - b.start || (a.end - a.start) - (b.end - b.start));
 
-    // Build segments
+    // Build segments, skipping overlapping matches
     matches.forEach(match => {
+      if (match.start < currentIndex) return; // Skip overlapping match
+
       // Add text before this match
       if (currentIndex < match.start) {
         const textContent = text.slice(currentIndex, match.start);
@@ -217,9 +220,10 @@ export class ContentParser {
     let currentIndex = 0;
 
     // Reading uses only double quotes for terms (single quotes are apostrophes)
+    const hasAngleBrackets = /<[^>]+>/.test(text);
     const patterns = [
       { regex: /<([^>]+)>/g, type: 'term' as const },
-      { regex: /"([^"]+)"/g, type: 'term' as const },
+      { regex: /"([^"]+)"/g, type: 'term' as const, validator: hasAngleBrackets ? (c: string) => !/<[^>]+>/.test(c) : undefined },
       { regex: /\*\*([^*]+)\*\*/g, type: 'emphasis' as const },
       { regex: /`([^`]+)`/g, type: 'code' as const },
       { regex: /\{\{([^}]+)\}\}/g, type: 'variable' as const },
@@ -232,21 +236,26 @@ export class ContentParser {
       type: ContentSegment['type'];
     }> = [];
 
-    patterns.forEach(({ regex, type }) => {
+    patterns.forEach(({ regex, type, validator }) => {
       let match;
       while ((match = regex.exec(text)) !== null) {
+        const content = match[1];
+        if (validator && !validator(content)) continue;
         matches.push({
           start: match.index,
           end: match.index + match[0].length,
-          content: match[1],
+          content,
           type,
         });
       }
     });
 
-    matches.sort((a, b) => a.start - b.start);
+    matches.sort((a, b) => a.start - b.start || (a.end - a.start) - (b.end - b.start));
 
+    // Build segments, skipping overlapping matches
     matches.forEach(match => {
+      if (match.start < currentIndex) return; // Skip overlapping match
+
       if (currentIndex < match.start) {
         const textContent = text.slice(currentIndex, match.start);
         if (textContent) {
