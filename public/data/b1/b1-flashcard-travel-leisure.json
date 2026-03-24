@@ -270,13 +270,13 @@
     "back": "punto de referencia / monumento",
     "ipa": "/ˈlændmɑːrk/",
     "example": "The Eiffel Tower is a famous <landmark>.",
-    "example_es": ""
+    "example_es": "La Torre Eiffel es un <monumento> famoso."
   },
   {
     "front": "Layover",
     "back": "escala / parada",
     "ipa": "/ˈleɪoʊvər/",
     "example": "We had a 3-hour <layover> in Madrid.",
-    "example_es": ""
+    "example_es": "Tuvimos una <escala> de 3 horas en Madrid."
   }
 ]

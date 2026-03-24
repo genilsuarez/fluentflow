@@ -269,14 +269,14 @@
     "front": "Piece of cake",
     "back": "pan comido / muy fácil",
     "example": "The test was a <piece of cake>.",
-    "example_es": "",
+    "example_es": "El examen fue <pan comido>.",
     "ipa": "/piːs əv keɪk/"
   },
   {
     "front": "On cloud nine",
     "back": "estar en las nubes de felicidad",
     "example": "She was <on cloud nine> after getting the job.",
-    "example_es": "",
+    "example_es": "Ella estaba <en las nubes de felicidad> después de conseguir el trabajo.",
     "ipa": "/ɒn klaʊd naɪn/"
   }
 ]
