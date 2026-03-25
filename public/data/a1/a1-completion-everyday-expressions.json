@@ -6,10 +6,10 @@
     "tip": "Complete with the verb for eating meals"
   },
   {
-    "sentence": "After work, I ______ home at 6 PM.",
+    "sentence": "After work, I ______ home at 6 PM. My family is waiting.",
     "correct": "come",
     "explanation": "We use <come home> to talk about returning to our house.",
-    "tip": "Complete with the verb for returning"
+    "tip": "Complete with the verb for returning to your house"
   },
   {
     "sentence": "Excuse me, can you give me ______ to the train station?",
@@ -123,13 +123,13 @@
     "sentence": "Can I ______ you a question?",
     "correct": "ask",
     "explanation": "Use <ask> to request information",
-    "tip": "Complete with the correct verb"
+    "tip": "Complete with the verb used before 'a question'"
   },
   {
     "sentence": "I don't ______ that word.",
     "correct": "understand",
     "explanation": "Use <understand> when something is not clear",
-    "tip": "Complete with a verb of comprehension"
+    "tip": "Complete with the verb that means 'to comprehend'"
   },
   {
     "sentence": "What ______ is it?",
@@ -138,15 +138,15 @@
     "tip": "Complete with the correct noun"
   },
   {
-    "sentence": "I ______ to go now.",
+    "sentence": "I ______ to go now. It's getting late.",
     "correct": "need",
-    "explanation": "Use <need> to express necessity",
-    "tip": "Complete with a verb"
+    "explanation": "Use <need> to express that something is necessary.",
+    "tip": "Complete with the verb that expresses necessity (I ___ to...)"
   },
   {
     "sentence": "Let me ______ about it.",
     "correct": "think",
     "explanation": "Use <think> when you need time to decide",
-    "tip": "Complete with a mental verb"
+    "tip": "Complete with the verb for using your mind to consider something"
   }
 ]
