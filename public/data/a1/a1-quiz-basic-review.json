@@ -121,7 +121,7 @@
     "explanation": "Use '<What is your name?>' to ask for someone's name."
   },
   {
-    "question": "Which preposition goes with <in the morning>?",
+    "question": "Which preposition completes: ___ the morning?",
     "options": [
       "by",
       "in",
