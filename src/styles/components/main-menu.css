@@ -399,6 +399,13 @@
   margin: 1rem 0;
 }
 
+.main-menu__no-results-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--theme-text-tertiary, #9ca3af);
+  margin-bottom: 0.75rem;
+}
+
 .main-menu__no-results-text {
   color: var(--theme-text-primary, #374151);
   font-size: 1.125rem;
@@ -411,6 +418,43 @@
   color: var(--theme-text-secondary, #6b7280);
   margin-top: 0.5rem;
   line-height: 1.5;
+}
+
+/* Search Results Header */
+.main-menu__results-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  margin: 0.5rem 0;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--theme-text-secondary, #6b7280);
+  background: var(--theme-bg-subtle, #fafafa);
+  border-radius: var(--radius-md, 0.375rem);
+  border: 1px solid var(--theme-border-soft, #f3f4f6);
+}
+
+.main-menu__results-header-icon {
+  width: 0.875rem;
+  height: 0.875rem;
+  color: var(--theme-primary-blue, #3b82f6);
+  flex-shrink: 0;
+}
+
+.main-menu__results-header-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+html.dark .main-menu__results-header {
+  background: var(--theme-bg-elevated, #1f2937);
+  border-color: var(--theme-border-soft, #4b5563);
+}
+
+html.dark .main-menu__no-results-icon {
+  color: var(--theme-text-tertiary, #6b7280);
 }
 /* Error State - UX Enhanced */
 .main-menu__error {
@@ -723,7 +767,8 @@ html.dark .main-menu__grid::-webkit-scrollbar-thumb:hover {
 .main-menu__grid,
 .main-menu__no-results,
 .main-menu__error,
-.main-menu__results-count {
+.main-menu__results-count,
+.main-menu__results-header {
   /* Perfect alignment system */
   margin-left: auto;
   margin-right: auto;

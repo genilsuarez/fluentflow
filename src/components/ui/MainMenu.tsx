@@ -10,7 +10,7 @@ import { useAppStore } from '../../stores/appStore';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useTranslation } from '../../utils/i18n';
 import { toast } from '../../stores/toastStore';
-import { List, BarChart3 } from 'lucide-react';
+import { List, BarChart3, Search as SearchIcon } from 'lucide-react';
 import '../../styles/components/main-menu.css';
 
 export const MainMenu: React.FC = () => {
@@ -255,6 +255,7 @@ export const MainMenu: React.FC = () => {
         // Search results view
         results.length === 0 ? (
           <div className="main-menu__no-results" role="status" aria-live="polite">
+            <SearchIcon className="main-menu__no-results-icon" aria-hidden="true" />
             <p className="main-menu__no-results-text">
               {t('mainMenu.noModulesFound', undefined, { query })}
             </p>
@@ -262,6 +263,15 @@ export const MainMenu: React.FC = () => {
           </div>
         ) : (
           <>
+            <div className="main-menu__results-header" role="status" aria-live="polite">
+              <SearchIcon className="main-menu__results-header-icon" aria-hidden="true" />
+              <span className="main-menu__results-header-text">
+                {t('mainMenu.showingResults', undefined, {
+                  count: results.length,
+                  total: modules.length,
+                })}
+              </span>
+            </div>
             <div className="main-menu__grid">
               <div
                 className="main-menu__grid-container"
@@ -281,12 +291,6 @@ export const MainMenu: React.FC = () => {
                   />
                 ))}
               </div>
-            </div>
-            <div className="main-menu__results-count" role="status" aria-live="polite">
-              {t('mainMenu.showingResults', undefined, {
-                count: results.length,
-                total: modules.length,
-              })}
             </div>
           </>
         )
