@@ -305,13 +305,18 @@ html.dark {
   .header-redesigned__title {
     display: none;
   }
+
+  .header-redesigned__logo {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 /* Compact logo on mobile */
 @media (max-width: 519px) {
   .header-redesigned__logo {
-    width: 24px;
-    height: 24px;
+    width: 38px;
+    height: 38px;
   }
 
   .header-redesigned__brand {

@@ -42,17 +42,17 @@
   }
 
   .fluent-flow-logo--md {
-    width: 1.75rem;
-    height: 1.75rem;
-    min-width: 1.75rem;
-    min-height: 1.75rem;
-  }
-
-  .fluent-flow-logo--lg {
     width: 2.5rem;
     height: 2.5rem;
     min-width: 2.5rem;
     min-height: 2.5rem;
+  }
+
+  .fluent-flow-logo--lg {
+    width: 3.5rem;
+    height: 3.5rem;
+    min-width: 3.5rem;
+    min-height: 3.5rem;
   }
 }
 
