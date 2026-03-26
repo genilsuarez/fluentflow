@@ -34,9 +34,12 @@ function executeCommand(command, description, options = {}) {
       // In quiet mode, only show warnings/errors from output
       if (output) {
         const lines = output.split('\n');
-        const important = lines.filter(l => /warning|error|fail|⚠|❌/i.test(l) && !/^✅|^ℹ️/.test(l));
+        const important = lines.filter(l => 
+          /\b(error|fail(ed)?|fatal|exception)\b/i.test(l) && 
+          !/^✅|^ℹ️|found 0 vulnerabilities/.test(l)
+        );
         if (important.length > 0) {
-          important.slice(0, 5).forEach(l => logInfo(l.trim()));
+          important.slice(0, 5).forEach(l => logWarning(l.trim()));
         }
       }
     } else {
