@@ -48,7 +48,7 @@
       "id": "examples-2",
       "title": "Tech Support Conversations",
       "type": "examples",
-      "content": "Example 1: WIFI PROBLEM - <My internet isn't working. — Have you tried turning the router off and on again? — Yes, but it's still not connecting. — Let me check the settings.>\n\nExample 2: NEW PHONE - <How do I download an app? — Open the App Store, search for the app, and tap Install. — Thanks! That was easy.>\n\nExample 3: COMPUTER HELP - <My computer is very slow. — You should close some programs and restart it. — OK, I'll try that.>"
+      "content": "Example 1: WIFI PROBLEM - <A: My internet isn't working.\nB: Have you tried turning the router off and on again?\nA: Yes, but it's still not connecting.\nB: Let me check the settings.>\n\nExample 2: NEW PHONE - <A: How do I download an app?\nB: Open the App Store, search for the app, and tap Install.\nA: Thanks! That was easy.>\n\nExample 3: COMPUTER HELP - <A: My computer is very slow.\nB: You should close some programs and restart it.\nA: OK, I'll try that.>"
     },
     {
       "id": "summary",

@@ -48,7 +48,7 @@
       "id": "examples-2",
       "title": "Idioms in Mini Dialogues",
       "type": "examples",
-      "content": "Example 1: AT SCHOOL - <How was the exam? — It was a piece of cake! Very easy.>\n\nExample 2: ABOUT A FRIEND - <Is Tom nervous about the presentation? — No, he's cool as a cucumber. He never worries.>\n\nExample 3: TELLING NEWS - <Don't spill the beans about the surprise party! — OK, I won't tell anyone.>\n\nExample 4: SUMMARIZING - <In a nutshell, the movie was boring but the popcorn was great.>"
+      "content": "Example 1: AT SCHOOL - <A: How was the exam?\nB: It was a piece of cake! Very easy.>\n\nExample 2: ABOUT A FRIEND - <A: Is Tom nervous about the presentation?\nB: No, he's cool as a cucumber. He never worries.>\n\nExample 3: TELLING NEWS - <A: Don't spill the beans about the surprise party!\nB: OK, I won't tell anyone.>\n\nExample 4: SUMMARIZING - <In a nutshell, the movie was boring but the popcorn was great.>"
     },
     {
       "id": "summary",

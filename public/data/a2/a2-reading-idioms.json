@@ -30,7 +30,7 @@
       "id": "examples",
       "title": "Idioms in Conversations",
       "type": "examples",
-      "content": "Example 1: ON CLOUD NINE - <How was your holiday? — Amazing! I was on cloud nine the whole time.>\n\nExample 2: ONCE IN A BLUE MOON - <Do you often go to the cinema? — Once in a blue moon. I prefer watching movies at home.>\n\nExample 3: BETTER LATE THAN NEVER - <Sorry I'm late! — Better late than never! Come in.>"
+      "content": "Example 1: ON CLOUD NINE - <A: How was your holiday?\nB: Amazing! I was on cloud nine the whole time.>\n\nExample 2: ONCE IN A BLUE MOON - <A: Do you often go to the cinema?\nB: Once in a blue moon. I prefer watching movies at home.>\n\nExample 3: BETTER LATE THAN NEVER - <A: Sorry I'm late!\nB: Better late than never! Come in.>"
     },
     {
       "id": "work-idioms",
@@ -48,7 +48,7 @@
       "id": "examples-2",
       "title": "Idioms in Everyday Situations",
       "type": "examples",
-      "content": "Example 1: AT WORK - <I've been burning the midnight oil all week to finish this project. — You should call it a day and get some rest.>\n\nExample 2: NEW COLLEAGUE - <How's the new team member? — She's great! We get on like a house on fire.>\n\nExample 3: DISAGREEMENT - <Do you see eye to eye with your boss? — Not always, but we respect each other's opinions.>\n\nExample 4: STARTING A PROJECT - <Let's get the ball rolling on the new marketing campaign.>"
+      "content": "Example 1: AT WORK - <A: I've been burning the midnight oil all week to finish this project.\nB: You should call it a day and get some rest.>\n\nExample 2: NEW COLLEAGUE - <A: How's the new team member?\nB: She's great! We get on like a house on fire.>\n\nExample 3: DISAGREEMENT - <A: Do you see eye to eye with your boss?\nB: Not always, but we respect each other's opinions.>\n\nExample 4: STARTING A PROJECT - <Let's get the ball rolling on the new marketing campaign.>"
     },
     {
       "id": "summary",

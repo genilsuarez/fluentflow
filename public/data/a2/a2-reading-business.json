@@ -48,7 +48,7 @@
       "id": "examples-2",
       "title": "Workplace Dialogues",
       "type": "examples",
-      "content": "Example 1: ASKING FOR HELP - <Excuse me, could you help me with this report? — Of course. What do you need? — I'm not sure how to format the table.>\n\nExample 2: SCHEDULING - <Are you free on Thursday afternoon? — Let me check my calendar. Yes, 2 PM works for me. — Great, I'll send a meeting invitation.>\n\nExample 3: PHONE CALL - <Hello, may I speak to Mr. Johnson? — I'm sorry, he's in a meeting. Can I take a message? — Yes, please ask him to call me back.>"
+      "content": "Example 1: ASKING FOR HELP - <A: Excuse me, could you help me with this report?\nB: Of course. What do you need?\nA: I'm not sure how to format the table.>\n\nExample 2: SCHEDULING - <A: Are you free on Thursday afternoon?\nB: Let me check my calendar. Yes, 2 PM works for me.\nA: Great, I'll send a meeting invitation.>\n\nExample 3: PHONE CALL - <A: Hello, may I speak to Mr. Johnson?\nB: I'm sorry, he's in a meeting. Can I take a message?\nA: Yes, please ask him to call me back.>"
     },
     {
       "id": "summary",

@@ -48,7 +48,7 @@
       "id": "examples-2",
       "title": "Health Advice Dialogues",
       "type": "examples",
-      "content": "Example 1: FEELING ILL - <I have a terrible headache. — You should take some paracetamol and drink water. — Thanks, I'll do that.>\n\nExample 2: AT THE PHARMACY - <I need something for a cough. — This cough syrup is very good. Take it three times a day. — Thank you. How much is it?>\n\nExample 3: HEALTHY HABITS - <How do you stay healthy? — I try to eat fruit every day and I walk to work. — That's a great habit!>"
+      "content": "Example 1: FEELING ILL - <A: I have a terrible headache.\nB: You should take some paracetamol and drink water.\nA: Thanks, I'll do that.>\n\nExample 2: AT THE PHARMACY - <A: I need something for a cough.\nB: This cough syrup is very good. Take it three times a day.\nA: Thank you. How much is it?>\n\nExample 3: HEALTHY HABITS - <A: How do you stay healthy?\nB: I try to eat fruit every day and I walk to work.\nA: That's a great habit!>"
     },
     {
       "id": "summary",

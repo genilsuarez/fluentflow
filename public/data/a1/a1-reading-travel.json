@@ -48,7 +48,7 @@
       "id": "examples-2",
       "title": "Travel Problem Solving",
       "type": "examples",
-      "content": "Example 1: LOST - <Excuse me, I'm lost. Where is the train station? — Go straight and turn left. It's next to the park. — Thank you very much!>\n\nExample 2: AT A SHOP - <How much is this? — It's fifteen euros. — Can I pay by card? — Yes, of course.>\n\nExample 3: EMERGENCY - <I need help, please. I lost my passport. — Don't worry. Go to the police station on Main Street.>"
+      "content": "Example 1: LOST - <A: Excuse me, I'm lost. Where is the train station?\nB: Go straight and turn left. It's next to the park.\nA: Thank you very much!>\n\nExample 2: AT A SHOP - <A: How much is this?\nB: It's fifteen euros.\nA: Can I pay by card?\nB: Yes, of course.>\n\nExample 3: EMERGENCY - <A: I need help, please. I lost my passport.\nB: Don't worry. Go to the police station on Main Street.>"
     },
     {
       "id": "summary",
