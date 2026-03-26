@@ -25,7 +25,7 @@
   border: 1px solid var(--theme-border-modal, rgba(0, 0, 0, 0.1));
   border-radius: var(--radius-lg, 0.5rem);
   color: var(--reading-text-primary);
-  font-family: var(--theme-font-family, system-ui, -apple-system, sans-serif);
+  font-family: inherit;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -1592,6 +1592,19 @@
 }
 
 /* === THEME SUPPORT - Local light/dark themes === */
+
+/* Light theme - Base variables */
+.reading-component__container {
+  --reading-bg-primary: var(--theme-bg-elevated, #ffffff);
+  --reading-bg-secondary: var(--theme-bg-subtle, #f9fafb);
+  --reading-bg-tertiary: var(--theme-bg-soft, #f3f4f6);
+  --reading-text-primary: var(--theme-text-primary, #111827);
+  --reading-text-secondary: var(--theme-text-secondary, #6b7280);
+  --reading-accent-primary: var(--theme-primary-blue, #3b82f6);
+  --reading-accent-secondary: #8b5cf6;
+  --reading-border-primary: var(--theme-border-soft, #e5e7eb);
+  --reading-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
 
 /* Dark theme - Local overrides */
 html.dark .reading-component__container {
