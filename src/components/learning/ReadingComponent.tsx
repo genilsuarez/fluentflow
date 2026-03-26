@@ -291,28 +291,18 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                           )}
                         </div>
                         <div className="reading-component__vocabulary-content">
-                          <div className="reading-component__vocabulary-definition-block">
-                            <div className="reading-component__vocabulary-label">
-                              {t('reading.component.definition')}
-                            </div>
-                            <div className="reading-component__vocabulary-definition">
-                              <ContentRenderer
-                                content={ContentAdapter.ensureStructured(
-                                  term.definition,
-                                  'reading'
-                                )}
-                              />
-                            </div>
+                          <div className="reading-component__vocabulary-definition">
+                            <ContentRenderer
+                              content={ContentAdapter.ensureStructured(
+                                term.definition,
+                                'reading'
+                              )}
+                            />
                           </div>
-                          <div className="reading-component__vocabulary-example-block">
-                            <div className="reading-component__vocabulary-label">
-                              {t('reading.component.example')}
-                            </div>
-                            <div className="reading-component__vocabulary-example">
-                              <ContentRenderer
-                                content={ContentAdapter.ensureStructured(term.example, 'reading')}
-                              />
-                            </div>
+                          <div className="reading-component__vocabulary-example">
+                            <ContentRenderer
+                              content={ContentAdapter.ensureStructured(term.example, 'reading')}
+                            />
                           </div>
                         </div>
                       </div>
