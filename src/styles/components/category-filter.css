@@ -40,11 +40,11 @@
   line-height: 1;
 }
 
-/* Inline mode: compact square icon-only button — matches search bar height */
+/* Inline mode: compact square icon-only button — matches view-toggle height */
 .category-filter--inline .category-filter__toggle-btn {
   padding: 0;
-  width: 3rem;
-  height: 3rem;
+  width: 2.8125rem;
+  height: 2.8125rem;
   border-radius: 0.75rem;
   margin: 0;
   gap: 0;
@@ -248,8 +248,8 @@
   }
 
   .category-filter--inline .category-filter__toggle-btn {
-    width: 3rem;
-    height: 3rem;
+    width: 2.8125rem;
+    height: 2.8125rem;
     padding: 0;
   }
 
