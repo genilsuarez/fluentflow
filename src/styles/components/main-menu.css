@@ -409,6 +409,8 @@
 }
 
 .main-menu__no-results-icon {
+  display: block;
+  margin-inline: auto;
   width: 2.5rem;
   height: 2.5rem;
   color: var(--theme-text-tertiary, #9ca3af);
@@ -1020,6 +1022,8 @@ html.dark .main-menu__search {
   min-width: 0;
   max-width: 100%;
   overflow: hidden;
+  /* Reset margin to ensure vertical centering inside header */
+  margin-bottom: 0;
 }
 
 .main-menu__header .search-bar {
