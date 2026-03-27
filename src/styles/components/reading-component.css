@@ -381,7 +381,8 @@
 .reading-component__objectives-centered-item::before {
   content: '✓';
   position: absolute;
-  left: 0.375rem;
+  left: 0.25rem;
+  top: 0.375rem;
   color: var(--reading-accent-primary);
   font-weight: bold;
   font-size: 1.1em;
@@ -1382,7 +1383,7 @@
   .reading-component__objectives-centered-item {
     font-size: var(--reading-font-size-base);
     padding: var(--reading-spacing-xs, 0.25rem) 0;
-    padding-left: var(--reading-spacing-xl);
+    padding-left: 1.75rem;
   }
 
   .reading-component__objectives-cta-text {
