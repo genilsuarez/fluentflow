@@ -249,6 +249,7 @@ export const MainMenu: React.FC = () => {
               clearLabel={t('common.clearSearch')}
             />
           </div>
+          <CategoryFilter inline />
         </div>
 
         <div className="main-menu__view-toggle">
@@ -270,8 +271,6 @@ export const MainMenu: React.FC = () => {
           </button>
         </div>
       </div>
-
-      <CategoryFilter />
 
       {/* Content based on view mode and search */}
       {query ? (

@@ -256,8 +256,7 @@
   /* Mobile: center popover relative to viewport, not button */
   .category-filter--inline .category-filter__panel {
     position: fixed;
-    top: auto;
-    bottom: 1rem;
+    top: 6.5rem;
     left: 50%;
     right: auto;
     transform: translateX(-50%) scale(0.95);
