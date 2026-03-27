@@ -210,11 +210,16 @@
   }
 
   .search-bar__input::placeholder {
-    font-size: 0.6875rem; /* Smaller on mobile */
+    font-size: 0; /* Hide on mobile - icon is enough */
   }
 
   .search-bar__input:focus::placeholder {
-    font-size: 0.6875rem; /* Consistent on mobile */
+    font-size: 0; /* Hide on mobile - icon is enough */
+  }
+
+  /* Hide contentEditable placeholder on mobile */
+  .search-bar__input:empty::before {
+    font-size: 0;
   }
 
   .search-bar__icon {
