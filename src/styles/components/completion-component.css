@@ -242,14 +242,16 @@ html.dark .completion-component__sentence {
 }
 
 .completion-component__input--neutral {
-  border-color: #93c5fd;
-  background-color: #eff6ff;
+  border-color: var(--theme-primary-blue, #3b82f6);
+  background-color: #ffffff;
   color: var(--theme-text-primary, #374151);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .completion-component__input--neutral:focus {
   border-color: var(--theme-primary-blue, #3b82f6);
-  background-color: white;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25), 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 /* Dark mode input states */
@@ -277,11 +279,13 @@ html.dark .completion-component__input--neutral {
   background-color: var(--theme-bg-elevated, #1f2937);
   color: var(--theme-text-primary, #ffffff);
   border-color: var(--theme-primary-blue, #60a5fa);
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.2), 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 html.dark .completion-component__input--neutral:focus {
   background-color: var(--theme-bg-subtle, #374151);
   border-color: var(--theme-primary-blue, #3b82f6);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3), 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 /* === RESULT SECTION === */

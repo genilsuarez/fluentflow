@@ -18,7 +18,6 @@ const _baseProfileSchema = z.object({
   preferences: z.object({
     language: z.enum(['en', 'es']),
     dailyGoal: z.number().min(1).max(100),
-    categories: z.array(z.string()).min(1),
     difficulty: z.number().min(1).max(5),
     notifications: z.boolean(),
   }),
@@ -32,7 +31,6 @@ const createProfileSchema = (t: (_key: string, _defaultValue?: string) => string
     preferences: z.object({
       language: z.enum(['en', 'es']),
       dailyGoal: z.number().min(1).max(100),
-      categories: z.array(z.string()).min(1, t('profile.categoriesRequired')),
       difficulty: z.number().min(1).max(5),
       notifications: z.boolean(),
     }),
@@ -70,14 +68,12 @@ export const CompactProfile: React.FC<CompactProfileProps> = ({ isOpen, onClose 
       preferences: {
         language: 'en',
         dailyGoal: 10,
-        categories: ['Vocabulary', 'Grammar', 'PhrasalVerbs', 'Idioms'],
         difficulty: 3,
         notifications: true,
       },
     },
   });
 
-  const categories = ['Vocabulary', 'Grammar', 'PhrasalVerbs', 'Idioms'] as const;
   const watchedDifficulty = watch('preferences.difficulty');
   const watchedName = watch('name');
 
@@ -89,7 +85,7 @@ export const CompactProfile: React.FC<CompactProfileProps> = ({ isOpen, onClose 
       createdAt: user?.createdAt || new Date().toISOString(),
       preferences: {
         ...data.preferences,
-        categories: data.preferences.categories as any,
+        categories: user?.preferences?.categories || ['Vocabulary', 'Grammar', 'PhrasalVerbs', 'Idioms'],
       },
     };
     setUser(newUser);
@@ -259,37 +255,6 @@ export const CompactProfile: React.FC<CompactProfileProps> = ({ isOpen, onClose 
                   className="compact-profile__range"
                 />
               </div>
-            </div>
-
-            {/* Categories */}
-            <div className="compact-profile__section">
-              <h3 className="compact-profile__section-title">
-                🎯 {t('profile.interestedCategories')}{' '}
-                <span className="compact-profile__required-mark">*</span>
-              </h3>
-              <div className="compact-profile__categories">
-                {categories.map(category => (
-                  <label key={category} className="compact-profile__category">
-                    <input
-                      type="checkbox"
-                      {...register('preferences.categories')}
-                      value={category}
-                      className="compact-profile__checkbox"
-                    />
-                    <span className="compact-profile__category-label">
-                      {category === 'Vocabulary' && `📚 ${t('categories.vocabulary')}`}
-                      {category === 'Grammar' && `📝 ${t('categories.grammar')}`}
-                      {category === 'PhrasalVerbs' && `🔗 ${t('categories.phrasalverbs')}`}
-                      {category === 'Idioms' && `💭 ${t('categories.idioms')}`}
-                    </span>
-                  </label>
-                ))}
-              </div>
-              {errors.preferences?.categories && (
-                <span className="compact-profile__error">
-                  {errors.preferences.categories.message}
-                </span>
-              )}
             </div>
 
             {/* Notifications */}
