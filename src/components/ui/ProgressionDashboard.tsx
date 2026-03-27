@@ -331,7 +331,8 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
             // Use filtered module count for display; completed count from filtered modules
             const filteredTotal = modules.length;
             const filteredCompleted = modules.filter(m => isModuleCompleted(m.id)).length;
-            const filteredPercentage = filteredTotal > 0 ? Math.round((filteredCompleted / filteredTotal) * 100) : 0;
+            const filteredPercentage =
+              filteredTotal > 0 ? Math.round((filteredCompleted / filteredTotal) * 100) : 0;
 
             const isExpanded = expandedUnits.has(unit);
             const hasNextModule = modules.some(m => nextRecommended?.id === m.id);
