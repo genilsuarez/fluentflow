@@ -328,7 +328,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
           .sort(([a], [b]) => Number(a) - Number(b))
           .map(([unitStr, modules]) => {
             const unit = Number(unitStr);
-            const unitStatus = progression.getUnitCompletionStatus(unit);
+            const _unitStatus = progression.getUnitCompletionStatus(unit);
             // Use filtered module count for display; completed count from filtered modules
             const filteredTotal = modules.length;
             const filteredCompleted = modules.filter(m => isModuleCompleted(m.id)).length;
