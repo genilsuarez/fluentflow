@@ -160,8 +160,14 @@ export const DownloadManagerModal: React.FC<DownloadManagerModalProps> = ({ isOp
         }
         message={
           confirmTarget === 'all'
-            ? t('offline.deleteAllConfirmMessage', 'This will remove all downloaded content. You will need to re-download levels for offline use.')
-            : t('offline.deleteLevelConfirmMessage', `Are you sure you want to delete the downloaded content for level ${confirmTarget?.toUpperCase()}?`)
+            ? t(
+                'offline.deleteAllConfirmMessage',
+                'This will remove all downloaded content. You will need to re-download levels for offline use.'
+              )
+            : t(
+                'offline.deleteLevelConfirmMessage',
+                `Are you sure you want to delete the downloaded content for level ${confirmTarget?.toUpperCase()}?`
+              )
         }
         confirmLabel={t('common.delete', 'Delete')}
         cancelLabel={t('common.cancel', 'Cancel')}
