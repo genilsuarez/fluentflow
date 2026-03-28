@@ -50,7 +50,7 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
   const isExpanded = controlledExpanded ?? internalExpanded;
   const handleToggle = onToggle ?? (() => setInternalExpanded(prev => !prev));
 
-  const isFiltered = categories.length > 0 && categories.length < ALL_CATEGORIES.length;
+  const isFiltered = categories.length > 0;
 
   const handleToggleCategory = (category: Category) => {
     const isActive = categories.includes(category);
@@ -62,9 +62,9 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
       next = [...categories, category];
     }
 
-    // Req 1.4: if all deselected, auto-select all
-    if (next.length === 0) {
-      next = [...ALL_CATEGORIES];
+    // If all selected, clear to "no filter" state
+    if (next.length === ALL_CATEGORIES.length) {
+      next = [];
     }
 
     setCategories(next);

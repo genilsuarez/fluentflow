@@ -59,7 +59,7 @@ export const ModeFilter: React.FC<ModeFilterProps> = ({
   const isExpanded = controlledExpanded ?? internalExpanded;
   const handleToggle = onToggle ?? (() => setInternalExpanded(prev => !prev));
 
-  const isFiltered = learningModes.length > 0 && learningModes.length < ALL_MODES.length;
+  const isFiltered = learningModes.length > 0;
 
   const handleToggleMode = (mode: LearningMode) => {
     const isActive = learningModes.includes(mode);
@@ -71,9 +71,9 @@ export const ModeFilter: React.FC<ModeFilterProps> = ({
       next = [...learningModes, mode];
     }
 
-    // If all deselected, auto-select all
-    if (next.length === 0) {
-      next = [...ALL_MODES];
+    // If all selected, clear to "no filter" state
+    if (next.length === ALL_MODES.length) {
+      next = [];
     }
 
     setLearningModes(next);

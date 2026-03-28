@@ -253,9 +253,9 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
 
     filteredModules.forEach(module => {
       if (seen.has(module.id)) return;
-      // Apply category filter — only show modules whose category is selected
+      // Apply category filter — empty array means no filter (show all)
       if (categories.length > 0 && module.category && !categories.includes(module.category)) return;
-      // Apply learning mode filter
+      // Apply learning mode filter — empty array means no filter (show all)
       if (
         learningModes?.length > 0 &&
         module.learningMode &&

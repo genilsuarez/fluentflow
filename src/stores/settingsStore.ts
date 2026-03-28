@@ -75,8 +75,8 @@ export const useSettingsStore = create<SettingsState>()(
       level: 'all',
       developmentMode: false,
       randomizeItems: true, // Default: randomization enabled
-      categories: DEFAULT_CATEGORIES,
-      learningModes: DEFAULT_LEARNING_MODES,
+      categories: [],
+      learningModes: [],
       gameSettings: {
         flashcardMode: { wordCount: 10 },
         quizMode: { questionCount: 10 },
@@ -130,7 +130,7 @@ export const useSettingsStore = create<SettingsState>()(
     }),
     {
       name: 'settings-storage',
-      version: 8,
+      version: 9,
       migrate: (persistedState: any, version: number) => {
         // Migration from version 1 to version 2
         if (version < 2) {
@@ -192,6 +192,19 @@ export const useSettingsStore = create<SettingsState>()(
             ...persistedState,
             learningModes: DEFAULT_LEARNING_MODES,
           };
+        }
+        // Migration from version 8 to version 9: invert filter logic
+        // Old: all selected = no filter. New: empty array = no filter.
+        if (version < 9) {
+          const cats: string[] = persistedState.categories || [];
+          const modes: string[] = persistedState.learningModes || [];
+          // If all were selected (old "no filter"), convert to empty (new "no filter")
+          if (cats.length >= DEFAULT_CATEGORIES.length) {
+            persistedState = { ...persistedState, categories: [] };
+          }
+          if (modes.length >= DEFAULT_LEARNING_MODES.length) {
+            persistedState = { ...persistedState, learningModes: [] };
+          }
         }
         return persistedState;
       },
