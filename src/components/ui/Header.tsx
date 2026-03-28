@@ -19,6 +19,7 @@ import { CompactProgressDashboard } from './CompactProgressDashboard';
 import { CompactLearningPath } from './CompactLearningPath';
 import { ScoreDisplay } from './ScoreDisplay';
 import { FluentFlowLogo } from './FluentFlowLogo';
+import { ConfirmModal } from './ConfirmModal';
 
 interface HeaderProps {
   onMenuToggle?: () => void;
@@ -38,6 +39,7 @@ export const Header: React.FC<HeaderProps> = () => {
   const [showProgressDashboard, setShowProgressDashboard] = useState(false);
   const [showModuleProgression, setShowModuleProgression] = useState(false);
   const [showBadge, setShowBadge] = useState(false);
+  const [showLogoutConfirm, setShowLogoutConfirm] = useState(false);
 
   // Offline badge: show immediately when offline+enabled, hide with 3s delay on reconnect
   useEffect(() => {
@@ -198,6 +200,24 @@ export const Header: React.FC<HeaderProps> = () => {
         document.body
       )}
 
+      {createPortal(
+        <ConfirmModal
+          isOpen={showLogoutConfirm}
+          onClose={() => setShowLogoutConfirm(false)}
+          onConfirm={() => {
+            try { localStorage.clear(); } catch { /* */ }
+            try { sessionStorage.clear(); } catch { /* */ }
+            window.location.reload();
+          }}
+          title={t('auth.logoutConfirmTitle', 'Confirm Logout')}
+          message={t('auth.logoutConfirmMessage', 'This will clear all your local data and reload the application. Your progress will be lost. Are you sure?')}
+          confirmLabel={t('auth.logoutConfirmButton', 'Logout')}
+          cancelLabel={t('auth.cancelButton', 'Cancel')}
+          variant="danger"
+        />,
+        document.body
+      )}
+
       {showSideMenu && (
         <div
           className="header-side-menu-overlay"
@@ -306,17 +326,8 @@ export const Header: React.FC<HeaderProps> = () => {
 
                     <button
                       onClick={() => {
-                        try {
-                          localStorage.clear();
-                        } catch {
-                          /* */
-                        }
-                        try {
-                          sessionStorage.clear();
-                        } catch {
-                          /* */
-                        }
-                        window.location.reload();
+                        setShowLogoutConfirm(true);
+                        setShowSideMenu(false);
                       }}
                       className="header-side-menu__item header-side-menu__item--logout"
                       aria-label={t('auth.logout', 'Logout')}
