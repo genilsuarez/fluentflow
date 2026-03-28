@@ -23,7 +23,11 @@ export function getHiddenDependencies(
 
     if (selectedCategories.length > 0 && !selectedCategories.includes(prereq.category)) {
       hiddenReasons.add(prereq.category);
-    } else if (selectedModes && selectedModes.length > 0 && !selectedModes.includes(prereq.learningMode)) {
+    } else if (
+      selectedModes &&
+      selectedModes.length > 0 &&
+      !selectedModes.includes(prereq.learningMode)
+    ) {
       hiddenReasons.add(prereq.learningMode);
     }
   }
