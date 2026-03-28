@@ -20,7 +20,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
   const { setPreviousMenuContext } = useAppStore();
   const { isModuleCompleted } = useProgressStore();
   const progression = useProgression();
-  const { language, categories } = useSettingsStore();
+  const { language, categories, learningModes } = useSettingsStore();
   const { t } = useTranslation(language);
   const [expandedUnits, setExpandedUnits] = React.useState<Set<number>>(new Set());
   const [isDarkMode, setIsDarkMode] = React.useState(false);
@@ -240,6 +240,13 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
       if (seen.has(module.id)) return;
       // Apply category filter — only show modules whose category is selected
       if (categories.length > 0 && module.category && !categories.includes(module.category)) return;
+      // Apply learning mode filter
+      if (
+        learningModes?.length > 0 &&
+        module.learningMode &&
+        !learningModes.includes(module.learningMode)
+      )
+        return;
       seen.add(module.id);
       if (!units[module.unit]) {
         units[module.unit] = [];
@@ -271,7 +278,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
       units[Number(unitKey)] = sorted;
     });
     return units;
-  }, [progression.unlockedModules, progression.lockedModules, categories]);
+  }, [progression.unlockedModules, progression.lockedModules, categories, learningModes]);
 
   return (
     <div
