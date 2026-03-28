@@ -15,6 +15,25 @@
   color: var(--theme-text-primary, #ffffff);
 }
 
+/* === SEARCH RESULTS HEADER === */
+.progression-dashboard--dark-theme .progression-dashboard__search-results {
+  background: rgba(59, 130, 246, 0.15);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.progression-dashboard--dark-theme .progression-dashboard__search-text {
+  color: #60a5fa;
+}
+
+/* === NO RESULTS STATE === */
+.progression-dashboard--dark-theme .progression-dashboard__no-results-text {
+  color: var(--theme-text-primary, #ffffff);
+}
+
+.progression-dashboard--dark-theme .progression-dashboard__no-results-hint {
+  color: var(--theme-text-secondary, #9ca3af);
+}
+
 /* === TEXT ELEMENTS === */
 .progression-dashboard--dark-theme .progression-dashboard__unit-title {
   color: var(--theme-text-primary, #ffffff);

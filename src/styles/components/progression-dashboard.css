@@ -11,6 +11,48 @@
   align-self: stretch;
 }
 
+/* Search Results Header */
+.progression-dashboard__search-results {
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.progression-dashboard__search-text {
+  color: #1e40af;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* No Results State */
+.progression-dashboard__no-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.progression-dashboard__no-results-text {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #374151;
+  margin: 0 0 0.5rem 0;
+}
+
+.progression-dashboard__no-results-hint {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+}
+
 /* Continue Learning Section - HERO CTA - ULTRA COMPACT */
 .progression-dashboard__hero {
   background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #2563eb 100%);

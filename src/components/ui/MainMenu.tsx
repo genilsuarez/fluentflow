@@ -301,8 +301,8 @@ export const MainMenu: React.FC = () => {
       </div>
 
       {/* Content based on view mode and search */}
-      {query ? (
-        // Search results view
+      {query && viewMode === 'list' ? (
+        // Search results view (All Modules)
         results.length === 0 ? (
           <div className="main-menu__no-results" role="status" aria-live="polite">
             <SearchIcon className="main-menu__no-results-icon" aria-hidden="true" />
@@ -352,7 +352,7 @@ export const MainMenu: React.FC = () => {
         )
       ) : viewMode === 'progression' ? (
         // Progression dashboard view
-        <ProgressionDashboard onModuleSelect={handleModuleClick} />
+        <ProgressionDashboard onModuleSelect={handleModuleClick} searchQuery={query} />
       ) : (
         // List view (original grid)
         <div className="main-menu__grid" ref={gridRef}>

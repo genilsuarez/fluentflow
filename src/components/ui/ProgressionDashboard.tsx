@@ -7,15 +7,18 @@ import { useTranslation } from '../../utils/i18n';
 import { toast } from '../../stores/toastStore';
 import { CheckCircle, Lock, Play, ChevronDown, ChevronRight } from 'lucide-react';
 import type { LearningModule } from '../../types';
+import Fuse from 'fuse.js';
 import '../../styles/components/progression-dashboard.css';
 import '../../styles/components/progression-dashboard-dark-theme.css';
 
 interface ProgressionDashboardProps {
   onModuleSelect: (module: LearningModule) => void;
+  searchQuery?: string;
 }
 
 export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
   onModuleSelect: _onModuleSelect,
+  searchQuery = '',
 }) => {
   const { setPreviousMenuContext } = useAppStore();
   const { isModuleCompleted } = useProgressStore();
@@ -98,14 +101,22 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
     }
   }, [completedModulesCount, progression]);
 
+  // Auto-expand units with search results
+  React.useEffect(() => {
+    if (searchQuery.trim()) {
+      const unitsWithResults = Object.keys(modulesByUnit).map(Number);
+      setExpandedUnits(new Set(unitsWithResults));
+    }
+  }, [searchQuery, modulesByUnit]);
+
   // Auto-expand unit with next recommended module on initial load only
   const hasAutoExpanded = React.useRef(false);
   React.useEffect(() => {
-    if (nextRecommended && !hasAutoExpanded.current) {
+    if (nextRecommended && !hasAutoExpanded.current && !searchQuery.trim()) {
       hasAutoExpanded.current = true;
       setExpandedUnits(prev => new Set([...prev, nextRecommended.unit]));
     }
-  }, [nextRecommended]);
+  }, [nextRecommended, searchQuery]);
 
   // Scroll to next module after initial auto-expand
   React.useEffect(() => {
@@ -236,7 +247,19 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
     // Combine all modules and deduplicate by id
     const allModules = [...progression.unlockedModules, ...progression.lockedModules];
     const seen = new Set<string>();
-    allModules.forEach(module => {
+    
+    // Apply search filter if query exists
+    let filteredModules = allModules;
+    if (searchQuery.trim()) {
+      const fuse = new Fuse(allModules, {
+        keys: ['name', 'description', 'category', 'tags'],
+        threshold: 0.3,
+        includeScore: true,
+      });
+      filteredModules = fuse.search(searchQuery).map(result => result.item);
+    }
+    
+    filteredModules.forEach(module => {
       if (seen.has(module.id)) return;
       // Apply category filter — only show modules whose category is selected
       if (categories.length > 0 && module.category && !categories.includes(module.category)) return;
@@ -278,14 +301,26 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
       units[Number(unitKey)] = sorted;
     });
     return units;
-  }, [progression.unlockedModules, progression.lockedModules, categories, learningModes]);
+  }, [progression.unlockedModules, progression.lockedModules, categories, learningModes, searchQuery]);
 
   return (
     <div
       className={`progression-dashboard ${isDarkMode ? 'progression-dashboard--dark-theme' : ''}`}
     >
+      {/* Search Results Header */}
+      {searchQuery.trim() && (
+        <div className="progression-dashboard__search-results">
+          <p className="progression-dashboard__search-text">
+            {t('mainMenu.showingResults', undefined, {
+              count: Object.values(modulesByUnit).flat().length,
+              total: [...progression.unlockedModules, ...progression.lockedModules].length,
+            })}
+          </p>
+        </div>
+      )}
+
       {/* Continue Learning Section */}
-      {nextRecommended && (
+      {nextRecommended && !searchQuery.trim() && (
         <div className="progression-dashboard__hero">
           <div className="progression-dashboard__continue">
             <div className="progression-dashboard__next-module">
@@ -331,131 +366,141 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
 
       {/* Units Progress */}
       <div className="progression-dashboard__units">
-        {Object.entries(modulesByUnit)
-          .sort(([a], [b]) => Number(a) - Number(b))
-          .map(([unitStr, modules]) => {
-            const unit = Number(unitStr);
-            // Use filtered module count for display; completed count from filtered modules
-            const filteredTotal = modules.length;
-            const filteredCompleted = modules.filter(m => isModuleCompleted(m.id)).length;
-            const filteredPercentage =
-              filteredTotal > 0 ? Math.round((filteredCompleted / filteredTotal) * 100) : 0;
+        {Object.keys(modulesByUnit).length === 0 && searchQuery.trim() ? (
+          // No search results
+          <div className="progression-dashboard__no-results">
+            <p className="progression-dashboard__no-results-text">
+              {t('mainMenu.noModulesFound', undefined, { query: searchQuery })}
+            </p>
+            <p className="progression-dashboard__no-results-hint">{t('mainMenu.searchHint')}</p>
+          </div>
+        ) : (
+          Object.entries(modulesByUnit)
+            .sort(([a], [b]) => Number(a) - Number(b))
+            .map(([unitStr, modules]) => {
+              const unit = Number(unitStr);
+              // Use filtered module count for display; completed count from filtered modules
+              const filteredTotal = modules.length;
+              const filteredCompleted = modules.filter(m => isModuleCompleted(m.id)).length;
+              const filteredPercentage =
+                filteredTotal > 0 ? Math.round((filteredCompleted / filteredTotal) * 100) : 0;
 
-            const isExpanded = expandedUnits.has(unit);
-            const hasNextModule = modules.some(m => nextRecommended?.id === m.id);
+              const isExpanded = expandedUnits.has(unit);
+              const hasNextModule = modules.some(m => nextRecommended?.id === m.id);
 
-            return (
-              <div key={unit} className="progression-dashboard__unit">
-                <div
-                  className={`progression-dashboard__unit-header progression-dashboard__unit-header--clickable ${filteredPercentage === 100 ? 'progression-dashboard__unit-header--completed' : ''}`}
-                  onClick={() => toggleUnit(unit)}
-                >
-                  <div className="progression-dashboard__unit-info">
-                    <div
-                      className={`progression-dashboard__unit-expand ${filteredPercentage === 100 ? 'progression-dashboard__unit-expand--completed' : ''}`}
-                    >
-                      {filteredPercentage === 100 ? (
-                        <CheckCircle className="progression-dashboard__expand-icon progression-dashboard__expand-icon--completed" />
-                      ) : isExpanded ? (
-                        <ChevronDown className="progression-dashboard__expand-icon" />
-                      ) : (
-                        <ChevronRight className="progression-dashboard__expand-icon" />
+              return (
+                <div key={unit} className="progression-dashboard__unit">
+                  <div
+                    className={`progression-dashboard__unit-header progression-dashboard__unit-header--clickable ${filteredPercentage === 100 ? 'progression-dashboard__unit-header--completed' : ''}`}
+                    onClick={() => toggleUnit(unit)}
+                  >
+                    <div className="progression-dashboard__unit-info">
+                      <div
+                        className={`progression-dashboard__unit-expand ${filteredPercentage === 100 ? 'progression-dashboard__unit-expand--completed' : ''}`}
+                      >
+                        {filteredPercentage === 100 ? (
+                          <CheckCircle className="progression-dashboard__expand-icon progression-dashboard__expand-icon--completed" />
+                        ) : isExpanded ? (
+                          <ChevronDown className="progression-dashboard__expand-icon" />
+                        ) : (
+                          <ChevronRight className="progression-dashboard__expand-icon" />
+                        )}
+                      </div>
+                      <h3 className="progression-dashboard__unit-title">{getUnitTitle(unit)}</h3>
+                      {hasNextModule && !isExpanded && (
+                        <div className="progression-dashboard__unit-next-indicator">
+                          <span className="progression-dashboard__unit-next-label">
+                            {t('learningPath.nextRecommended')}
+                          </span>
+                        </div>
                       )}
                     </div>
-                    <h3 className="progression-dashboard__unit-title">{getUnitTitle(unit)}</h3>
-                    {hasNextModule && !isExpanded && (
-                      <div className="progression-dashboard__unit-next-indicator">
-                        <span className="progression-dashboard__unit-next-label">
-                          {t('learningPath.nextRecommended')}
-                        </span>
+                    <div className="progression-dashboard__unit-progress">
+                      <span className="progression-dashboard__unit-stats">
+                        {filteredCompleted}/{filteredTotal}
+                      </span>
+                      <div className="progression-dashboard__progress-bar">
+                        <div
+                          className="progression-dashboard__progress-fill"
+                          style={
+                            { '--progress-width': `${filteredPercentage}%` } as React.CSSProperties
+                          }
+                        />
                       </div>
-                    )}
-                  </div>
-                  <div className="progression-dashboard__unit-progress">
-                    <span className="progression-dashboard__unit-stats">
-                      {filteredCompleted}/{filteredTotal}
-                    </span>
-                    <div className="progression-dashboard__progress-bar">
-                      <div
-                        className="progression-dashboard__progress-fill"
-                        style={
-                          { '--progress-width': `${filteredPercentage}%` } as React.CSSProperties
-                        }
-                      />
                     </div>
                   </div>
-                </div>
 
-                {isExpanded && (
-                  <div className="progression-dashboard__modules">
-                    {modules.map(module => {
-                      const status = progression.getModuleStatus(module.id);
-                      const isCompleted = isModuleCompleted(module.id);
-                      const isNext = nextRecommended?.id === module.id;
+                  {isExpanded && (
+                    <div className="progression-dashboard__modules">
+                      {modules.map(module => {
+                        const status = progression.getModuleStatus(module.id);
+                        const isCompleted = isModuleCompleted(module.id);
+                        const isNext = nextRecommended?.id === module.id;
 
-                      return (
-                        <div
-                          key={module.id}
-                          className={`progression-dashboard__module progression-dashboard__module--${status} ${isNext ? 'progression-dashboard__module--next' : ''}`}
-                          onClick={
-                            status !== 'locked' ? () => handleModuleClick(module) : undefined
-                          }
-                          aria-disabled={status === 'locked'}
-                        >
-                          <div className="progression-dashboard__module-icon">
-                            {isCompleted ? (
-                              <CheckCircle className="progression-dashboard__icon progression-dashboard__icon--completed" />
-                            ) : status === 'locked' ? (
-                              <Lock className="progression-dashboard__icon progression-dashboard__icon--locked" />
-                            ) : (
-                              <Play className="progression-dashboard__icon progression-dashboard__icon--available" />
+                        return (
+                          <div
+                            key={module.id}
+                            className={`progression-dashboard__module progression-dashboard__module--${status} ${isNext ? 'progression-dashboard__module--next' : ''}`}
+                            onClick={
+                              status !== 'locked' ? () => handleModuleClick(module) : undefined
+                            }
+                            aria-disabled={status === 'locked'}
+                          >
+                            <div className="progression-dashboard__module-icon">
+                              {isCompleted ? (
+                                <CheckCircle className="progression-dashboard__icon progression-dashboard__icon--completed" />
+                              ) : status === 'locked' ? (
+                                <Lock className="progression-dashboard__icon progression-dashboard__icon--locked" />
+                              ) : (
+                                <Play className="progression-dashboard__icon progression-dashboard__icon--available" />
+                              )}
+                            </div>
+
+                            <div className="progression-dashboard__module-content">
+                              <h4 className="progression-dashboard__module-name">{module.name}</h4>
+                              <p className="progression-dashboard__module-desc">
+                                {module.description}
+                              </p>
+                              <div className="progression-dashboard__module-meta">
+                                <span
+                                  className="progression-dashboard__level-badge"
+                                  style={
+                                    {
+                                      '--level-color': getLevelColor(
+                                        Array.isArray(module.level) ? module.level[0] : module.level
+                                      ),
+                                    } as React.CSSProperties
+                                  }
+                                >
+                                  {Array.isArray(module.level)
+                                    ? module.level[0].toUpperCase()
+                                    : module.level.toUpperCase()}
+                                </span>
+                                <span className="progression-dashboard__module-type">
+                                  {module.learningMode}
+                                </span>
+                                <span className="progression-dashboard__module-time">
+                                  {module.estimatedTime}min
+                                </span>
+                              </div>
+                            </div>
+
+                            {isNext && (
+                              <div className="progression-dashboard__next-indicator">
+                                <span className="progression-dashboard__next-label">
+                                  {t('learningPath.nextRecommended')}
+                                </span>
+                              </div>
                             )}
                           </div>
-
-                          <div className="progression-dashboard__module-content">
-                            <h4 className="progression-dashboard__module-name">{module.name}</h4>
-                            <p className="progression-dashboard__module-desc">
-                              {module.description}
-                            </p>
-                            <div className="progression-dashboard__module-meta">
-                              <span
-                                className="progression-dashboard__level-badge"
-                                style={
-                                  {
-                                    '--level-color': getLevelColor(
-                                      Array.isArray(module.level) ? module.level[0] : module.level
-                                    ),
-                                  } as React.CSSProperties
-                                }
-                              >
-                                {Array.isArray(module.level)
-                                  ? module.level[0].toUpperCase()
-                                  : module.level.toUpperCase()}
-                              </span>
-                              <span className="progression-dashboard__module-type">
-                                {module.learningMode}
-                              </span>
-                              <span className="progression-dashboard__module-time">
-                                {module.estimatedTime}min
-                              </span>
-                            </div>
-                          </div>
-
-                          {isNext && (
-                            <div className="progression-dashboard__next-indicator">
-                              <span className="progression-dashboard__next-label">
-                                {t('learningPath.nextRecommended')}
-                              </span>
-                            </div>
-                          )}
-                        </div>
-                      );
-                    })}
-                  </div>
-                )}
-              </div>
-            );
-          })}
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
+              );
+            })
+        )}
       </div>
     </div>
   );
