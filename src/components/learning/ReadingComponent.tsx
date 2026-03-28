@@ -129,10 +129,22 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
     });
   }, []);
 
-  // Scroll expanded summary section into view
+  // Scroll expanded summary section into view after content renders
   useEffect(() => {
-    const ref = vocabularyExpanded ? vocabularyRef : grammarExpanded ? grammarRef : null;
-    ref?.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (!vocabularyExpanded && !grammarExpanded) return;
+    const ref = vocabularyExpanded ? vocabularyRef : grammarRef;
+    const el = ref?.current;
+    const scrollContainer = contentRef.current;
+    if (!el || !scrollContainer) return;
+    // Wait for the expanded content to render and animate before scrolling
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        const containerRect = scrollContainer.getBoundingClientRect();
+        const elRect = el.getBoundingClientRect();
+        const scrollTop = scrollContainer.scrollTop + (elRect.top - containerRect.top);
+        scrollContainer.scrollTo({ top: scrollTop, behavior: 'smooth' });
+      });
+    });
   }, [vocabularyExpanded, grammarExpanded]);
 
   // Keyboard navigation
