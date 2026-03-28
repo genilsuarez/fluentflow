@@ -104,13 +104,43 @@
   }
 }
 
-/* Search row: search bar + inline category filter button */
+/* Search row: search bar + inline filter buttons */
 .main-menu__search-row {
   display: flex;
   align-items: center;
   gap: 0.375rem;
   flex: 1;
   min-width: 0;
+}
+
+/* === MOBILE SEARCH EXPAND BEHAVIOR === */
+/* On mobile, when search is focused, expand to full width and hide filter buttons */
+@media (max-width: 639px) {
+  .main-menu__search-row {
+    position: relative;
+  }
+
+  /* Filter buttons: visible by default, hidden when search expands */
+  .main-menu__search-row > .category-filter,
+  .main-menu__search-row > .mode-filter {
+    flex-shrink: 0;
+    transition: opacity 0.2s ease, width 0.2s ease, margin 0.2s ease;
+    overflow: hidden;
+  }
+
+  .main-menu__search-row--search-expanded > .category-filter,
+  .main-menu__search-row--search-expanded > .mode-filter {
+    width: 0;
+    opacity: 0;
+    margin: 0;
+    pointer-events: none;
+  }
+
+  /* Search bar expands to fill the row */
+  .main-menu__search-row--search-expanded .main-menu__search {
+    flex: 1;
+    max-width: 100%;
+  }
 }
 
 /* Header with search and view toggle - COMPACT */
@@ -556,7 +586,7 @@ html.dark .main-menu__no-results-icon {
   .main-menu__header .main-menu__search-row {
     flex: 1;
     min-width: 0;
-    max-width: calc(100% - 180px);
+    max-width: 100%;
   }
 
   .main-menu__search {

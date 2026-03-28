@@ -34,12 +34,17 @@ const CATEGORY_I18N_KEYS: Record<Category, string> = {
 
 interface CategoryFilterProps {
   inline?: boolean;
+  isExpanded?: boolean;
+  onToggle?: () => void;
 }
 
-export const CategoryFilter: React.FC<CategoryFilterProps> = ({ inline = false }) => {
+export const CategoryFilter: React.FC<CategoryFilterProps> = ({ inline = false, isExpanded: controlledExpanded, onToggle }) => {
   const { categories, setCategories, language } = useSettingsStore();
   const { t } = useTranslation(language);
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [internalExpanded, setInternalExpanded] = useState(false);
+
+  const isExpanded = controlledExpanded ?? internalExpanded;
+  const handleToggle = onToggle ?? (() => setInternalExpanded(prev => !prev));
 
   const isFiltered = categories.length > 0 && categories.length < ALL_CATEGORIES.length;
 
@@ -65,7 +70,7 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({ inline = false }
     <div className={`category-filter${inline ? ' category-filter--inline' : ''}`}>
       <button
         className={`category-filter__toggle-btn${isFiltered ? ' category-filter__toggle-btn--filtered' : ''}`}
-        onClick={() => setIsExpanded(prev => !prev)}
+        onClick={handleToggle}
         aria-expanded={isExpanded}
         aria-label={isExpanded ? t('categoryFilter.collapse') : t('categoryFilter.expand')}
         type="button"

@@ -25,6 +25,9 @@ interface SettingsState {
   // Categories
   categories: string[];
 
+  // Learning Modes
+  learningModes: string[];
+
   // Game Settings
   gameSettings: GameSettings;
 
@@ -40,6 +43,7 @@ interface SettingsState {
   setDevelopmentMode: (enabled: boolean) => void;
   setRandomizeItems: (enabled: boolean) => void;
   setCategories: (categories: string[]) => void;
+  setLearningModes: (modes: string[]) => void;
   setGameSetting: (mode: keyof GameSettings, setting: string, value: number) => void;
   setOfflineEnabled: (enabled: boolean) => void;
   setDownloadedLevels: (levels: string[]) => void;
@@ -48,6 +52,9 @@ interface SettingsState {
 
 // Default categories for fallback and migration
 const DEFAULT_CATEGORIES = ['Vocabulary', 'Grammar', 'PhrasalVerbs', 'Idioms', 'Reading', 'Review'];
+
+// Default learning modes
+const DEFAULT_LEARNING_MODES = ['flashcard', 'quiz', 'completion', 'sorting', 'matching', 'reading'];
 
 // Categories removed in v4 migration
 const REMOVED_CATEGORIES = ['Pronunciation', 'Listening', 'Writing', 'Speaking'];
@@ -62,6 +69,7 @@ export const useSettingsStore = create<SettingsState>()(
       developmentMode: false,
       randomizeItems: true, // Default: randomization enabled
       categories: DEFAULT_CATEGORIES,
+      learningModes: DEFAULT_LEARNING_MODES,
       gameSettings: {
         flashcardMode: { wordCount: 10 },
         quizMode: { questionCount: 10 },
@@ -92,6 +100,8 @@ export const useSettingsStore = create<SettingsState>()(
 
       setCategories: categories => set({ categories }),
 
+      setLearningModes: modes => set({ learningModes: modes }),
+
       setGameSetting: (mode, setting, value) => {
         const currentSettings = get().gameSettings;
         set({
@@ -113,7 +123,7 @@ export const useSettingsStore = create<SettingsState>()(
     }),
     {
       name: 'settings-storage',
-      version: 7,
+      version: 8,
       migrate: (persistedState: any, version: number) => {
         // Migration from version 1 to version 2
         if (version < 2) {
@@ -168,6 +178,13 @@ export const useSettingsStore = create<SettingsState>()(
               categories: [...currentCategories, ...toAdd],
             };
           }
+        }
+        // Migration from version 7 to version 8: add learningModes filter
+        if (version < 8) {
+          persistedState = {
+            ...persistedState,
+            learningModes: DEFAULT_LEARNING_MODES,
+          };
         }
         return persistedState;
       },

@@ -344,6 +344,11 @@ const translations = {
       expand: 'Show categories',
       dependencyWarning: 'Requires modules from {{categories}}',
     },
+    modeFilter: {
+      title: 'Learning Modes',
+      collapse: 'Hide learning modes',
+      expand: 'Show learning modes',
+    },
     levels: {
       all: 'All Levels',
       a1: 'Beginner (A1)',
@@ -865,6 +870,11 @@ const translations = {
       collapse: 'Ocultar categorías',
       expand: 'Mostrar categorías',
       dependencyWarning: 'Requiere módulos de {{categories}}',
+    },
+    modeFilter: {
+      title: 'Modos de Aprendizaje',
+      collapse: 'Ocultar modos',
+      expand: 'Mostrar modos',
     },
     levels: {
       all: 'Todos los Niveles',

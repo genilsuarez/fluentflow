@@ -10,6 +10,8 @@ interface SearchBarProps {
   description?: string;
   clearLabel?: string;
   disabled?: boolean;
+  onSearchFocus?: () => void;
+  onSearchBlur?: () => void;
 }
 
 export const SearchBar: React.FC<SearchBarProps> = ({
@@ -20,6 +22,8 @@ export const SearchBar: React.FC<SearchBarProps> = ({
   description = 'Search learning modules by name, category, or topic',
   clearLabel,
   disabled = false,
+  onSearchFocus,
+  onSearchBlur,
 }) => {
   const searchId = useId();
   const clearButtonId = useId();
@@ -68,6 +72,8 @@ export const SearchBar: React.FC<SearchBarProps> = ({
         contentEditable={!disabled}
         onInput={handleInput}
         onPaste={handlePaste}
+        onFocus={onSearchFocus}
+        onBlur={onSearchBlur}
         className="search-bar__input"
         data-placeholder={!query ? placeholder : ''}
         role="searchbox"

@@ -5,25 +5,30 @@ import { apiService, fetchModules, fetchModuleData } from '../services/api';
 import type { LearningModule } from '../types';
 
 /**
- * Pure function that returns the unselected categories containing prerequisites of a module.
- * Used to show dependency indicators when categories are filtered out.
+ * Pure function that returns the unselected categories (or modes) containing prerequisites of a module.
+ * Used to show dependency indicators when categories or learning modes are filtered out.
  */
 export function getHiddenDependencies(
   module: LearningModule,
   allModules: LearningModule[],
-  selectedCategories: string[]
+  selectedCategories: string[],
+  selectedModes?: string[]
 ): string[] {
-  const hiddenCategories = new Set<string>();
+  const hiddenReasons = new Set<string>();
   const moduleMap = new Map(allModules.map(m => [m.id, m]));
 
   for (const prereqId of module.prerequisites) {
     const prereq = moduleMap.get(prereqId);
-    if (prereq && !selectedCategories.includes(prereq.category)) {
-      hiddenCategories.add(prereq.category);
+    if (!prereq) continue;
+
+    if (!selectedCategories.includes(prereq.category)) {
+      hiddenReasons.add(prereq.category);
+    } else if (selectedModes && !selectedModes.includes(prereq.learningMode)) {
+      hiddenReasons.add(prereq.learningMode);
     }
   }
 
-  return Array.from(hiddenCategories);
+  return Array.from(hiddenReasons);
 }
 
 export const useModuleData = (moduleId: string) => {
@@ -119,7 +124,7 @@ export const useModuleData = (moduleId: string) => {
 };
 
 export const useAllModules = () => {
-  const { categories, level, developmentMode } = useSettingsStore();
+  const { categories, learningModes, level, developmentMode } = useSettingsStore();
 
   return useQuery({
     queryKey: ['modules'],
@@ -142,6 +147,13 @@ export const useAllModules = () => {
         // Filter by categories
         if (categories.length > 0 && module.category) {
           if (!categories.includes(module.category)) {
+            return false;
+          }
+        }
+
+        // Filter by learning modes
+        if (learningModes?.length > 0 && module.learningMode) {
+          if (!learningModes.includes(module.learningMode)) {
             return false;
           }
         }

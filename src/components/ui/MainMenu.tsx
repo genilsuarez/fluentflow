@@ -14,6 +14,7 @@ import type { LearningModule } from '../../types';
 import { toast } from '../../stores/toastStore';
 import { List, BarChart3, Search as SearchIcon } from 'lucide-react';
 import { CategoryFilter } from './CategoryFilter';
+import { ModeFilter } from './ModeFilter';
 import '../../styles/components/main-menu.css';
 
 export const MainMenu: React.FC = () => {
@@ -21,11 +22,13 @@ export const MainMenu: React.FC = () => {
   const progression = useProgression();
   const { query, setQuery, results } = useSearch(modules);
   const { setPreviousMenuContext, previousMenuContext } = useAppStore();
-  const { language, categories } = useSettingsStore();
+  const { language, categories, learningModes } = useSettingsStore();
   const { t } = useTranslation(language);
   const queryClient = useQueryClient();
   const [viewMode, setViewMode] = useState<'progression' | 'list'>(previousMenuContext);
   const [highlightedModuleId, setHighlightedModuleId] = useState<string | null>(null);
+  const [expandedFilter, setExpandedFilter] = useState<'category' | 'mode' | null>(null);
+  const [isSearchExpanded, setIsSearchExpanded] = useState(false);
   const gridRef = useRef<HTMLDivElement>(null);
   const hasScrolledToNext = useRef(false);
 
@@ -238,18 +241,41 @@ export const MainMenu: React.FC = () => {
     <div className="main-menu">
       {/* Header with view toggle */}
       <div className="main-menu__header">
-        <div className="main-menu__search-row">
+        <div className={`main-menu__search-row${isSearchExpanded ? ' main-menu__search-row--search-expanded' : ''}`}>
           <div className="main-menu__search">
             <SearchBar
               query={query}
-              onQueryChange={setQuery}
+              onQueryChange={(val) => {
+                setQuery(val);
+                if (!val) setIsSearchExpanded(false);
+              }}
               placeholder={t('common.searchPlaceholder')}
               label={t('common.searchLabel')}
               description={t('common.searchDescription')}
               clearLabel={t('common.clearSearch')}
+              onSearchFocus={() => {
+                setIsSearchExpanded(true);
+                setExpandedFilter(null);
+              }}
+              onSearchBlur={() => {
+                // Delay collapse so clear button click registers
+                // Only collapse if query is empty — keep expanded while text is visible
+                setTimeout(() => {
+                  if (!query) setIsSearchExpanded(false);
+                }, 150);
+              }}
             />
           </div>
-          <CategoryFilter inline />
+          <CategoryFilter
+            inline
+            isExpanded={expandedFilter === 'category'}
+            onToggle={() => setExpandedFilter(prev => prev === 'category' ? null : 'category')}
+          />
+          <ModeFilter
+            inline
+            isExpanded={expandedFilter === 'mode'}
+            onToggle={() => setExpandedFilter(prev => prev === 'mode' ? null : 'mode')}
+          />
         </div>
 
         <div className="main-menu__view-toggle">
@@ -310,7 +336,7 @@ export const MainMenu: React.FC = () => {
                     aria-posinset={index + 1}
                     aria-setsize={results.length}
                     isCurrentModule={currentModuleId === module.id}
-                    hiddenDependencies={getHiddenDependencies(module, allModulesRaw, categories)}
+                    hiddenDependencies={getHiddenDependencies(module, allModulesRaw, categories, learningModes)}
                   />
                 ))}
               </div>
@@ -339,7 +365,7 @@ export const MainMenu: React.FC = () => {
                 aria-setsize={modules.length}
                 isNextRecommended={highlightedModuleId === module.id}
                 isCurrentModule={currentModuleId === module.id}
-                hiddenDependencies={getHiddenDependencies(module, allModulesRaw, categories)}
+                hiddenDependencies={getHiddenDependencies(module, allModulesRaw, categories, learningModes)}
               />
             ))}
           </div>
