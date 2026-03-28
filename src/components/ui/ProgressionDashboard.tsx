@@ -5,7 +5,7 @@ import { useProgressStore } from '../../stores/progressStore';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useTranslation } from '../../utils/i18n';
 import { toast } from '../../stores/toastStore';
-import { CheckCircle, Lock, Play, ChevronDown, ChevronRight } from 'lucide-react';
+import { CheckCircle, Lock, Play, ChevronDown, ChevronRight, X as XIcon } from 'lucide-react';
 import type { LearningModule } from '../../types';
 import Fuse from 'fuse.js';
 import '../../styles/components/progression-dashboard.css';
@@ -23,7 +23,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
   const { setPreviousMenuContext } = useAppStore();
   const { isModuleCompleted } = useProgressStore();
   const progression = useProgression();
-  const { language, categories, learningModes } = useSettingsStore();
+  const { language, categories, learningModes, setCategories, setLearningModes } = useSettingsStore();
   const { t } = useTranslation(language);
   const [expandedUnits, setExpandedUnits] = React.useState<Set<number>>(new Set());
   const [isDarkMode, setIsDarkMode] = React.useState(false);
@@ -322,6 +322,20 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
               total: [...progression.unlockedModules, ...progression.lockedModules].length,
             })}
           </p>
+          {(categories.length > 0 || (learningModes?.length ?? 0) > 0) && (
+            <button
+              className="progression-dashboard__clear-filters-btn"
+              type="button"
+              onClick={() => {
+                setCategories([]);
+                setLearningModes([]);
+              }}
+              aria-label={t('mainMenu.clearFilters')}
+            >
+              <XIcon size={14} aria-hidden="true" />
+              {t('mainMenu.clearFilters')}
+            </button>
+          )}
         </div>
       )}
 
