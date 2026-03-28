@@ -42,20 +42,21 @@ export const ConfirmModal: React.FC<ConfirmModalProps> = ({
         <div className="confirm-modal__header">
           <div className="confirm-modal__title-section">
             <AlertTriangle className={`confirm-modal__icon confirm-modal__icon--${variant}`} />
-            <h2 id="confirm-modal-title" className="confirm-modal__title">{title}</h2>
+            <h2 id="confirm-modal-title" className="confirm-modal__title">
+              {title}
+            </h2>
           </div>
           <button onClick={onClose} className="modal__close-btn" aria-label="Close">
             <X className="modal__close-icon" />
           </button>
         </div>
         <div className="confirm-modal__body">
-          <p id="confirm-modal-message" className="confirm-modal__message">{message}</p>
+          <p id="confirm-modal-message" className="confirm-modal__message">
+            {message}
+          </p>
         </div>
         <div className="confirm-modal__actions">
-          <button
-            onClick={onClose}
-            className="confirm-modal__btn confirm-modal__btn--cancel"
-          >
+          <button onClick={onClose} className="confirm-modal__btn confirm-modal__btn--cancel">
             {cancelLabel}
           </button>
           <button

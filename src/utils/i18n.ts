@@ -87,7 +87,8 @@ const translations = {
       login: 'Login',
       logout: 'Logout',
       logoutConfirmTitle: 'Confirm Logout',
-      logoutConfirmMessage: 'This will clear all your local data and reload the application. Your progress will be lost. Are you sure?',
+      logoutConfirmMessage:
+        'This will clear all your local data and reload the application. Your progress will be lost. Are you sure?',
       logoutConfirmButton: 'Logout',
       cancelButton: 'Cancel',
       userAccount: 'User Account',
@@ -620,7 +621,8 @@ const translations = {
       login: 'Iniciar Sesión',
       logout: 'Cerrar Sesión',
       logoutConfirmTitle: 'Confirmar Cierre de Sesión',
-      logoutConfirmMessage: 'Esto eliminará todos tus datos locales y recargará la aplicación. Tu progreso se perderá. ¿Estás seguro?',
+      logoutConfirmMessage:
+        'Esto eliminará todos tus datos locales y recargará la aplicación. Tu progreso se perderá. ¿Estás seguro?',
       logoutConfirmButton: 'Cerrar Sesión',
       cancelButton: 'Cancelar',
       userAccount: 'Cuenta de Usuario',

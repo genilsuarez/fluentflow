@@ -205,12 +205,23 @@ export const Header: React.FC<HeaderProps> = () => {
           isOpen={showLogoutConfirm}
           onClose={() => setShowLogoutConfirm(false)}
           onConfirm={() => {
-            try { localStorage.clear(); } catch { /* */ }
-            try { sessionStorage.clear(); } catch { /* */ }
+            try {
+              localStorage.clear();
+            } catch {
+              /* */
+            }
+            try {
+              sessionStorage.clear();
+            } catch {
+              /* */
+            }
             window.location.reload();
           }}
           title={t('auth.logoutConfirmTitle', 'Confirm Logout')}
-          message={t('auth.logoutConfirmMessage', 'This will clear all your local data and reload the application. Your progress will be lost. Are you sure?')}
+          message={t(
+            'auth.logoutConfirmMessage',
+            'This will clear all your local data and reload the application. Your progress will be lost. Are you sure?'
+          )}
           confirmLabel={t('auth.logoutConfirmButton', 'Logout')}
           cancelLabel={t('auth.cancelButton', 'Cancel')}
           variant="danger"
