@@ -26,6 +26,8 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
   const contentRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const initialHeightRef = useRef<number>(0);
+  const vocabularyRef = useRef<HTMLDivElement>(null);
+  const grammarRef = useRef<HTMLDivElement>(null);
 
   const { updateUserScore } = useUserStore();
   const { language } = useSettingsStore();
@@ -126,6 +128,12 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
       return newSet;
     });
   }, []);
+
+  // Scroll expanded summary section into view
+  useEffect(() => {
+    const ref = vocabularyExpanded ? vocabularyRef : grammarExpanded ? grammarRef : null;
+    ref?.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, [vocabularyExpanded, grammarExpanded]);
 
   // Keyboard navigation
   useEffect(() => {
@@ -240,7 +248,7 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
 
             {/* Key Vocabulary Section - Enhanced Collapsible */}
             {readingData.keyVocabulary?.length > 0 && (
-              <div className="reading-component__vocabulary">
+              <div ref={vocabularyRef} className="reading-component__vocabulary">
                 <button
                   className="reading-component__summary-section-trigger"
                   onClick={() => {
@@ -324,7 +332,7 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
 
             {/* Grammar Points Section - Enhanced Collapsible */}
             {readingData.grammarPoints && readingData.grammarPoints.length > 0 && (
-              <div className="reading-component__grammar-points">
+              <div ref={grammarRef} className="reading-component__grammar-points">
                 <button
                   className="reading-component__summary-section-trigger"
                   onClick={() => {
