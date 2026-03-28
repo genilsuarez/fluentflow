@@ -129,22 +129,21 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
     });
   }, []);
 
-  // Scroll expanded summary section into view after content renders
+  // Scroll expanded summary section so its trigger is at the top of the scroll area
   useEffect(() => {
     if (!vocabularyExpanded && !grammarExpanded) return;
     const ref = vocabularyExpanded ? vocabularyRef : grammarRef;
     const el = ref?.current;
     const scrollContainer = contentRef.current;
     if (!el || !scrollContainer) return;
-    // Wait for the expanded content to render and animate before scrolling
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        const containerRect = scrollContainer.getBoundingClientRect();
-        const elRect = el.getBoundingClientRect();
-        const scrollTop = scrollContainer.scrollTop + (elRect.top - containerRect.top);
-        scrollContainer.scrollTo({ top: scrollTop, behavior: 'smooth' });
-      });
-    });
+    // Use setTimeout to let the DOM settle after expand/collapse animations
+    const timer = setTimeout(() => {
+      const containerRect = scrollContainer.getBoundingClientRect();
+      const elRect = el.getBoundingClientRect();
+      const offset = elRect.top - containerRect.top + scrollContainer.scrollTop;
+      scrollContainer.scrollTo({ top: offset, behavior: 'smooth' });
+    }, 50);
+    return () => clearTimeout(timer);
   }, [vocabularyExpanded, grammarExpanded]);
 
   // Keyboard navigation
