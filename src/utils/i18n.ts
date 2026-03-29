@@ -112,6 +112,7 @@ const translations = {
       userProfileDesc: 'Personal configuration and preferences',
       aboutFluentFlow: 'About FluentFlow',
       editProfile: 'Edit Profile',
+      myProgress: 'My Progress',
     },
     settings: {
       settings: 'Settings',
@@ -646,6 +647,7 @@ const translations = {
       userProfileDesc: 'Configuración personal y preferencias',
       aboutFluentFlow: 'Acerca de FluentFlow',
       editProfile: 'Editar Perfil',
+      myProgress: 'Mi Progreso',
     },
     settings: {
       settings: 'Configuración',
