@@ -170,8 +170,9 @@ async function getUrlsForLevels(
  * - Downloads each file sequentially with retries (1 original + 2 retries, backoff 1s/2s)
  * - Calls onProgress with monotonically increasing completed count
  *
- * NOTE: JS/CSS assets are NOT pre-cached. Browser's native HTTP cache handles them.
- * This prevents issues with stale cached assets after new deployments with different hashes.
+ * JS/CSS app assets are pre-cached by the Service Worker on every HTML navigation.
+ * This function additionally ensures they are cached during explicit offline downloads
+ * to guarantee all chunks are available even if the SW precache hasn't run yet.
  */
 export async function downloadLevels(
   levels: string[],
@@ -206,7 +207,7 @@ export async function downloadLevels(
     }
     logDebug('Including app assets for offline', { count: silentUrls.length }, 'OfflineManager');
   } catch {
-    // Non-critical: app shell may already be cached by SW during normal navigation
+    // Non-critical: SW handles asset precaching on navigation
   }
 
   const origin = typeof window !== 'undefined' ? window.location.origin : '';
@@ -243,13 +244,17 @@ export async function downloadLevels(
     onProgress({ total, completed, failed: [...failed] });
   }
 
-  // 2. Download app assets silently (no progress updates)
+  // 2. Download infrastructure + app assets silently (no progress updates)
+  //    Only fetch assets not already in cache to avoid redundant downloads
   for (const url of silentUrls) {
     try {
-      const response = await fetchWithRetries(url);
-      await cache.put(url, response);
+      const existing = await cache.match(url);
+      if (!existing) {
+        const response = await fetchWithRetries(url);
+        await cache.put(url, response);
+      }
     } catch {
-      // Non-critical: SW may already have these cached from normal navigation
+      // Non-critical: SW handles asset precaching on navigation
     }
   }
 
