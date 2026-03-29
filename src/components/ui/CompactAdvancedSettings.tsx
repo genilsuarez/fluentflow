@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { X, Settings, Save, Gamepad2, Palette, WifiOff, RotateCcw } from 'lucide-react';
+import { X, Settings, Save, Gamepad2, Palette, WifiOff } from 'lucide-react';
 import { useSettingsStore } from '../../stores/settingsStore';
-import { useProgressStore } from '../../stores/progressStore';
 import { useTranslation } from '../../utils/i18n';
 import { validateGameSettings } from '../../utils/inputValidation';
 import { useEscapeKey } from '../../hooks/useEscapeKey';
@@ -13,10 +12,8 @@ import {
   formatStorageSize,
   getTotalCacheSize,
 } from '../../services/offlineManager';
-import { progressionService } from '../../services/progressionService';
 import type { DownloadProgress } from '../../services/offlineManager';
 import { DownloadManagerModal } from './DownloadManagerModal';
-import { ConfirmModal } from './ConfirmModal';
 import '../../styles/components/compact-advanced-settings.css';
 import '../../styles/components/modal-buttons.css';
 
@@ -63,13 +60,8 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
   const [totalCacheSize, setTotalCacheSize] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Reset confirm modals
-  const [showResetDashboard, setShowResetDashboard] = useState(false);
-  const [showResetAgent, setShowResetAgent] = useState(false);
-  const resetProgress = useProgressStore(s => s.resetProgress);
-
   // Handle escape key to close modal (disabled when download manager is open)
-  useEscapeKey(isOpen && !isModalOpen && !showResetDashboard && !showResetAgent, onClose);
+  useEscapeKey(isOpen && !isModalOpen, onClose);
 
   // Local state for editing
   const [localTheme, setLocalTheme] = useState(theme);
@@ -408,22 +400,7 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
                     </div>
                   </div>
 
-                  <div className="compact-settings__reset-section">
-                    <button
-                      className="compact-settings__reset-btn"
-                      onClick={() => setShowResetDashboard(true)}
-                    >
-                      <RotateCcw className="compact-settings__reset-btn-icon" />
-                      {t('settings.resetDashboard')}
-                    </button>
-                    <button
-                      className="compact-settings__reset-btn"
-                      onClick={() => setShowResetAgent(true)}
-                    >
-                      <RotateCcw className="compact-settings__reset-btn-icon" />
-                      {t('settings.resetAgent')}
-                    </button>
-                  </div>
+
                 </div>
               </div>
             )}
@@ -757,34 +734,6 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
       </div>
 
       <DownloadManagerModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
-
-      <ConfirmModal
-        isOpen={showResetDashboard}
-        onClose={() => setShowResetDashboard(false)}
-        onConfirm={() => {
-          resetProgress();
-          setShowResetDashboard(false);
-        }}
-        title={t('settings.resetDashboard')}
-        message={t('settings.resetDashboardConfirm')}
-        confirmLabel={t('common.reset')}
-        cancelLabel={t('common.cancel')}
-        variant="danger"
-      />
-
-      <ConfirmModal
-        isOpen={showResetAgent}
-        onClose={() => setShowResetAgent(false)}
-        onConfirm={() => {
-          progressionService.reset();
-          setShowResetAgent(false);
-        }}
-        title={t('settings.resetAgent')}
-        message={t('settings.resetAgentConfirm')}
-        confirmLabel={t('common.reset')}
-        cancelLabel={t('common.cancel')}
-        variant="warning"
-      />
     </>
   );
 };

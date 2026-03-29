@@ -170,13 +170,6 @@ const translations = {
       increaseSortingCount: 'Increase sorting count',
       decreaseMatchingCount: 'Decrease matching count',
       increaseMatchingCount: 'Increase matching count',
-      resetDashboard: 'Reset Dashboard',
-      resetDashboardConfirm:
-        'This will erase all your progress history, daily stats and completed modules. This action cannot be undone.',
-      resetAgent: 'Reset Agent',
-      resetAgentConfirm:
-        'This will reset the learning progression agent. All unlocked modules will be locked again based on prerequisites.',
-      resetSuccess: 'Reset completed',
     },
     about: {
       title: 'About FluentFlow',
@@ -711,13 +704,6 @@ const translations = {
       increaseSortingCount: 'Aumentar cantidad de clasificación',
       decreaseMatchingCount: 'Disminuir cantidad de emparejamiento',
       increaseMatchingCount: 'Aumentar cantidad de emparejamiento',
-      resetDashboard: 'Reiniciar Dashboard',
-      resetDashboardConfirm:
-        'Esto borrará todo tu historial de progreso, estadísticas diarias y módulos completados. Esta acción no se puede deshacer.',
-      resetAgent: 'Reiniciar Agente',
-      resetAgentConfirm:
-        'Esto reiniciará el agente de progresión de aprendizaje. Todos los módulos desbloqueados se bloquearán según los prerrequisitos.',
-      resetSuccess: 'Reinicio completado',
     },
     about: {
       title: 'Acerca de FluentFlow',
