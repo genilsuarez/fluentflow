@@ -1,5 +1,6 @@
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 import { fetchModules, fetchModuleData, filterModuleData, apiService } from '../src/services/api';
+import { ModuleNotAvailableOfflineError } from '../src/utils/secureHttp';
 
 vi.mock('../src/utils/pathUtils', () => ({
   getLearningModulesPath: () => 'http://localhost/data/learningModules.json',
@@ -150,10 +151,9 @@ describe('API Service Integration Tests', () => {
         .mockResolvedValueOnce(new Response(JSON.stringify(moduleWithPath), { status: 200 }))
         .mockResolvedValueOnce(swResponse) as typeof fetch;
 
-      const result = await fetchModuleData('test-module-1');
-
-      expect(result.success).toBe(false);
-      expect(result.error).toContain('offline');
+      await expect(fetchModuleData('test-module-1')).rejects.toThrow(
+        ModuleNotAvailableOfflineError
+      );
     });
   });
 
