@@ -10,18 +10,18 @@
   --grid-padding-desktop: 2px;
   --grid-padding-large-desktop: 2px;
 
-  /* Heights optimized for 4 columns grid with exactly 4 visible rows - COMPACT */
-  /* Mobile: 2 cols, 4 rows visible = 8 modules */
-  --grid-height-mobile: calc(var(--card-height-mobile) * 4 + 0.5rem * 3 + 0.5rem);
+  /* Heights optimized for 4 columns grid - reduced 20% for compactness */
+  /* Mobile: 2 cols, ~3.2 rows visible */
+  --grid-height-mobile: calc((var(--card-height-mobile) * 4 + 0.5rem * 3 + 0.5rem) * 0.8);
 
-  /* Tablet: 3 cols, 4 rows visible = 12 modules - reduced for compactness */
-  --grid-height-tablet: calc(var(--card-height-tablet) * 4 + 0.625rem * 3 + 0.625rem);
+  /* Tablet: 3 cols, ~3.2 rows visible */
+  --grid-height-tablet: calc((var(--card-height-tablet) * 4 + 0.625rem * 3 + 0.625rem) * 0.8);
 
-  /* Desktop: 4 cols, 4 rows visible = 16 modules - reduced for compactness */
-  --grid-height-desktop: calc(var(--card-height-desktop) * 4 + 0.75rem * 3 + 0.75rem);
+  /* Desktop: 4 cols, ~3.2 rows visible */
+  --grid-height-desktop: calc((var(--card-height-desktop) * 4 + 0.75rem * 3 + 0.75rem) * 0.8);
 
   /* Large Desktop: same as desktop */
-  --grid-height-large-desktop: calc(var(--card-height-desktop) * 4 + 0.75rem * 3 + 0.75rem);
+  --grid-height-large-desktop: calc((var(--card-height-desktop) * 4 + 0.75rem * 3 + 0.75rem) * 0.8);
 
   /* Fixed content area height — shared by grid AND progression dashboard to prevent resize on tab switch */
   --menu-content-height-mobile: var(--grid-height-mobile);
