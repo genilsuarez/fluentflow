@@ -1,0 +1,110 @@
+{
+  "title": "Be vs Go: Location, State and Movement",
+  "estimatedReadingTime": 15,
+  "learningObjectives": [
+    "Understand when to use 'be' for location, states and identity",
+    "Understand when to use 'go' for movement and activities",
+    "Learn common expressions with 'be' and 'go'",
+    "Avoid common mistakes mixing 'be' and 'go'"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "title": "Why Be and Go Are Confusing",
+      "type": "introduction",
+      "content": "Many Spanish speakers confuse <be> and <go> because in Spanish, <estar> and <ir> work differently. In English, <be> describes WHERE you are or HOW you are, while <go> describes movement FROM one place TO another. This lesson will help you understand the difference clearly."
+    },
+    {
+      "id": "be-location",
+      "title": "Be for Location (Where You Are)",
+      "type": "theory",
+      "content": "Use <be> to say WHERE someone or something is right now. You are NOT moving — you are already there.\n\n• <I am at home.> — Estoy en casa (ya estoy ahí)\n• <She is in the office.> — Ella está en la oficina\n• <The book is on the table.> — El libro está en la mesa\n• <They are at school.> — Ellos están en la escuela\n\nKey prepositions with <be>: at, in, on, near, next to, between."
+    },
+    {
+      "id": "be-states",
+      "title": "Be for States and Feelings",
+      "type": "theory",
+      "content": "Use <be> to describe HOW someone feels or what state they are in. No movement is involved.\n\n• <I am tired.> — Estoy cansado\n• <She is happy.> — Ella está feliz\n• <We are ready.> — Estamos listos\n• <It is cold today.> — Hace frío hoy\n• <He is a teacher.> — Él es profesor (identity)\n• <The party is at 8pm.> — La fiesta es a las 8pm (schedule)\n\nRemember: <be> = no movement, just describing a situation."
+    },
+    {
+      "id": "go-movement",
+      "title": "Go for Movement (Where You Are Going)",
+      "type": "theory",
+      "content": "Use <go> when someone MOVES from one place to another. There is direction or destination.\n\n• <I go home.> — Voy a casa (me muevo hacia casa)\n• <She goes to the office.> — Ella va a la oficina\n• <They go to school every day.> — Van a la escuela todos los días\n• <The bus goes to the station.> — El autobús va a la estación\n\nKey prepositions with <go>: to, towards, back to, out, away."
+    },
+    {
+      "id": "go-activities",
+      "title": "Go + -ing for Activities",
+      "type": "theory",
+      "content": "A special pattern: use <go + verb-ing> for sports and leisure activities.\n\n• <I go swimming every day.> — Voy a nadar todos los días\n• <He goes running in the morning.> — Él va a correr por la mañana\n• <We go shopping on weekends.> — Vamos de compras los fines de semana\n• <They go hiking in summer.> — Van de excursión en verano\n\nCommon: go swimming, go running, go shopping, go fishing, go camping, go dancing."
+    },
+    {
+      "id": "examples",
+      "title": "Be vs Go Side by Side",
+      "type": "examples",
+      "content": "Example 1: LOCATION vs MOVEMENT\n<I am at the park.> (I'm already there) vs <I go to the park.> (I'm moving there)\n\nExample 2: STATE vs ACTION\n<She is tired.> (describing her state) vs <She goes to bed.> (movement to bed)\n\nExample 3: PRESENCE vs ROUTINE\n<We are at the gym.> (we're there now) vs <We go to the gym every Monday.> (regular movement)\n\nExample 4: COMMON MISTAKE\n❌ <I go at home.> → ✓ <I am at home.> (location, no movement)\n❌ <I am to school every day.> → ✓ <I go to school every day.> (movement)"
+    },
+    {
+      "id": "summary",
+      "title": "Quick Reference",
+      "type": "summary",
+      "content": "Use <BE> when: you describe WHERE something is (location), HOW someone feels (state), WHAT someone is (identity), or WHEN something happens (time/schedule).\n\nUse <GO> when: someone MOVES to a place (movement), someone does an activity (<go + -ing>), or you talk about regular trips (routine movement).\n\nSimple test: Is there movement? → Use <go>. No movement? → Use <be>."
+    }
+  ],
+  "keyVocabulary": [
+    {
+      "term": "be (am/is/are)",
+      "definition": "Used for location, states, identity, and descriptions",
+      "example": "I am at home. She is happy.",
+      "pronunciation": "/biː/"
+    },
+    {
+      "term": "go (go/goes)",
+      "definition": "Used for movement towards a place or doing activities",
+      "example": "I go to school. He goes running.",
+      "pronunciation": "/ɡoʊ/"
+    },
+    {
+      "term": "at",
+      "definition": "Preposition used with 'be' for specific locations",
+      "example": "I am at the office.",
+      "pronunciation": "/æt/"
+    },
+    {
+      "term": "to",
+      "definition": "Preposition used with 'go' for destinations",
+      "example": "I go to the park.",
+      "pronunciation": "/tuː/"
+    }
+  ],
+  "grammarPoints": [
+    {
+      "rule": "Be for Location and State",
+      "explanation": "Use <be> (am/is/are) when there is NO movement. You describe where something IS or how someone FEELS.",
+      "examples": [
+        "I am at home. (location — already there)",
+        "She is in the kitchen. (location)",
+        "He is tired. (state/feeling)",
+        "We are ready. (state)"
+      ],
+      "commonMistakes": [
+        "\"I am to school\" ❌ → \"I am at school\" ✓ (use 'at' not 'to' with be)",
+        "\"She is to the office\" ❌ → \"She is in the office\" ✓"
+      ]
+    },
+    {
+      "rule": "Go for Movement and Activities",
+      "explanation": "Use <go> (go/goes) when there IS movement from one place to another, or for activities with go + -ing.",
+      "examples": [
+        "I go to school every day. (movement)",
+        "She goes to the gym. (movement)",
+        "We go shopping on Saturdays. (activity)",
+        "He goes running in the park. (activity)"
+      ],
+      "commonMistakes": [
+        "\"I go at home\" ❌ → \"I go home\" ✓ (no preposition with 'home' after go)",
+        "\"I go to swim\" ❌ → \"I go swimming\" ✓ (use go + -ing for activities)"
+      ]
+    }
+  ]
+}

@@ -678,6 +678,40 @@
     "difficulty": 2
   },
   {
+    "id": "reading-be-vs-go-a2",
+    "name": "Be vs Go",
+    "learningMode": "reading",
+    "dataPath": "data/a2/a2-reading-be-vs-go.json",
+    "level": [
+      "a2"
+    ],
+    "category": "Grammar",
+    "unit": 2,
+    "prerequisites": [
+      "sorting-past-tense-a2"
+    ],
+    "description": "Learn when to use be (location/state) vs go (movement/activities)",
+    "estimatedTime": 11,
+    "difficulty": 2
+  },
+  {
+    "id": "quiz-be-vs-go-a2",
+    "name": "Be vs Go",
+    "learningMode": "quiz",
+    "dataPath": "data/a2/a2-quiz-be-vs-go.json",
+    "level": [
+      "a2"
+    ],
+    "category": "Grammar",
+    "unit": 2,
+    "prerequisites": [
+      "reading-be-vs-go-a2"
+    ],
+    "description": "Test your understanding of be vs go usage",
+    "estimatedTime": 3,
+    "difficulty": 2
+  },
+  {
     "id": "matching-be-vs-go-a2",
     "name": "Be vs Go",
     "learningMode": "matching",
@@ -688,9 +722,9 @@
     "category": "Grammar",
     "unit": 2,
     "prerequisites": [
-      "sorting-past-tense-a2"
+      "quiz-be-vs-go-a2"
     ],
-    "description": "Understand the difference between be and go",
+    "description": "Match be and go sentences with their Spanish translations",
     "estimatedTime": 1,
     "difficulty": 2
   },
