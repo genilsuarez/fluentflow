@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import { User, Settings, Menu, BarChart3, BookOpen, LogOut, WifiOff } from 'lucide-react';
+import { User, Settings, Menu, BarChart3, LogOut, WifiOff } from 'lucide-react';
 import '../../styles/components/header.css';
 import { useAppStore } from '../../stores/appStore';
 import { useUserStore } from '../../stores/userStore';
@@ -15,8 +15,7 @@ import { useOfflineStatus } from '../../hooks/useOfflineStatus';
 import { CompactProfile } from './CompactProfile';
 import { CompactAdvancedSettings } from './CompactAdvancedSettings';
 import { CompactAbout } from './CompactAbout';
-import { CompactProgressDashboard } from './CompactProgressDashboard';
-import { CompactLearningPath } from './CompactLearningPath';
+import { CompactMyProgress } from './CompactMyProgress';
 import { ScoreDisplay } from './ScoreDisplay';
 import { FluentFlowLogo } from './FluentFlowLogo';
 import { ConfirmModal } from './ConfirmModal';
@@ -36,8 +35,8 @@ export const Header: React.FC<HeaderProps> = () => {
   const [showSettings, setShowSettings] = useState(false);
   const [showAbout, setShowAbout] = useState(false);
   const [showSideMenu, setShowSideMenu] = useState(false);
-  const [showProgressDashboard, setShowProgressDashboard] = useState(false);
-  const [showModuleProgression, setShowModuleProgression] = useState(false);
+  const [showMyProgress, setShowMyProgress] = useState(false);
+  const [showMyProgressTab, setShowMyProgressTab] = useState<'dashboard' | 'path'>('dashboard');
   const [showBadge, setShowBadge] = useState(false);
   const [showLogoutConfirm, setShowLogoutConfirm] = useState(false);
 
@@ -185,17 +184,10 @@ export const Header: React.FC<HeaderProps> = () => {
       )}
 
       {createPortal(
-        <CompactProgressDashboard
-          isOpen={showProgressDashboard}
-          onClose={() => setShowProgressDashboard(false)}
-        />,
-        document.body
-      )}
-
-      {createPortal(
-        <CompactLearningPath
-          isOpen={showModuleProgression}
-          onClose={() => setShowModuleProgression(false)}
+        <CompactMyProgress
+          isOpen={showMyProgress}
+          onClose={() => setShowMyProgress(false)}
+          initialTab={showMyProgressTab}
         />,
         document.body
       )}
@@ -263,25 +255,15 @@ export const Header: React.FC<HeaderProps> = () => {
                 </button>
                 <button
                   onClick={() => {
-                    setShowProgressDashboard(true);
+                    setShowMyProgressTab('dashboard');
+                    setShowMyProgress(true);
                     setShowSideMenu(false);
                   }}
                   className="header-side-menu__item"
                   aria-label={t('auth.viewProgressDashboard')}
                 >
                   <BarChart3 className="header-side-menu__icon" aria-hidden="true" />
-                  <span className="header-side-menu__text">{t('modals.progressDashboard')}</span>
-                </button>
-                <button
-                  onClick={() => {
-                    setShowModuleProgression(true);
-                    setShowSideMenu(false);
-                  }}
-                  className="header-side-menu__item"
-                  aria-label={t('auth.viewLearningPath')}
-                >
-                  <BookOpen className="header-side-menu__icon" aria-hidden="true" />
-                  <span className="header-side-menu__text">{t('modals.learningPath')}</span>
+                  <span className="header-side-menu__text">{t('modals.myProgress', 'Mi Progreso')}</span>
                 </button>
               </div>
 
