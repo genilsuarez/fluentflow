@@ -180,62 +180,58 @@ export async function downloadLevels(
   const allModules = await fetchModulesList();
   const urlsByLevel = await getUrlsForLevels(levels, allModules);
 
-  // Collect all unique URLs to download
-  const allUrls: string[] = [];
+  // Collect content URLs (modules only) — these are user-visible in progress
+  const contentUrls: string[] = [];
   for (const urls of urlsByLevel.values()) {
     for (const url of urls) {
-      if (!allUrls.includes(url)) {
-        allUrls.push(url);
+      if (!contentUrls.includes(url)) {
+        contentUrls.push(url);
       }
     }
   }
 
-  // Also cache learningModules.json itself
-  const modulesUrl = getLearningModulesPath();
-  if (!allUrls.includes(modulesUrl)) {
-    allUrls.unshift(modulesUrl);
-  }
+  // Infrastructure URLs — downloaded but not shown in progress
+  const silentUrls: string[] = [];
 
-  // Pre-cache app assets (JS/CSS chunks) so lazy-loaded components work offline
+  const modulesUrl = getLearningModulesPath();
+  if (!contentUrls.includes(modulesUrl)) {
+    silentUrls.push(modulesUrl);
+  }
   try {
     const assetUrls = await getAppAssetUrls();
     for (const url of assetUrls) {
-      if (!allUrls.includes(url)) {
-        allUrls.push(url);
+      if (!contentUrls.includes(url) && !silentUrls.includes(url)) {
+        silentUrls.push(url);
       }
     }
-    logDebug('Including app assets for offline', { count: assetUrls.length }, 'OfflineManager');
+    logDebug('Including app assets for offline', { count: silentUrls.length }, 'OfflineManager');
   } catch {
     // Non-critical: app shell may already be cached by SW during normal navigation
   }
 
-  // Also cache the HTML shell for offline navigation
   const origin = typeof window !== 'undefined' ? window.location.origin : '';
   const base = import.meta.env.BASE_URL || '/';
   const htmlUrl = `${origin}${base}`;
-  if (!allUrls.includes(htmlUrl)) {
-    allUrls.push(htmlUrl);
+  if (!contentUrls.includes(htmlUrl) && !silentUrls.includes(htmlUrl)) {
+    silentUrls.push(htmlUrl);
   }
 
-  const total = allUrls.length;
+  // Progress only tracks content URLs — what the user cares about
+  const total = contentUrls.length;
   const failed: string[] = [];
   let completed = 0;
 
-  // Report initial progress
   onProgress({ total, completed, failed: [] });
 
   const cache = await caches.open(CACHE_NAME);
 
-  // Download sequentially
-  for (const url of allUrls) {
+  // 1. Download content (modules) with progress reporting
+  for (const url of contentUrls) {
     try {
       const response = await fetchWithRetries(url);
-      // Store with the same URL the SW uses (no normalization needed)
       await cache.put(url, response);
       completed++;
-      logDebug('Downloaded and cached', { url }, 'OfflineManager');
     } catch (error) {
-      console.error('[OfflineManager] ❌ Failed:', url, error);
       failed.push(url);
       completed++;
       logError(
@@ -244,12 +240,24 @@ export async function downloadLevels(
         'OfflineManager'
       );
     }
-
-    // Monotonically increasing progress callback
     onProgress({ total, completed, failed: [...failed] });
   }
 
-  logDebug('Download complete', { total, completed, failedCount: failed.length }, 'OfflineManager');
+  // 2. Download app assets silently (no progress updates)
+  for (const url of silentUrls) {
+    try {
+      const response = await fetchWithRetries(url);
+      await cache.put(url, response);
+    } catch {
+      // Non-critical: SW may already have these cached from normal navigation
+    }
+  }
+
+  logDebug(
+    'Download complete',
+    { contentTotal: total, silentTotal: silentUrls.length, failedCount: failed.length },
+    'OfflineManager'
+  );
 
   return { total, completed, failed };
 }
@@ -417,6 +425,42 @@ export async function verifyCacheIntegrity(
     missingLevels,
     partialLevels,
   };
+}
+
+/**
+ * Retry downloading only specific failed URLs into the Cache API.
+ * Unlike downloadLevels, this does NOT re-download everything — only the given URLs.
+ */
+export async function retryFailedUrls(
+  urls: string[],
+  onProgress: (progress: DownloadProgress) => void
+): Promise<DownloadProgress> {
+  const total = urls.length;
+  const failed: string[] = [];
+  let completed = 0;
+
+  onProgress({ total, completed, failed: [] });
+
+  const cache = await caches.open(CACHE_NAME);
+
+  for (const url of urls) {
+    try {
+      const response = await fetchWithRetries(url);
+      await cache.put(url, response);
+      completed++;
+    } catch (error) {
+      failed.push(url);
+      completed++;
+      logError(
+        `Retry failed for ${url}`,
+        { error: error instanceof Error ? error.message : String(error) },
+        'OfflineManager'
+      );
+    }
+    onProgress({ total, completed, failed: [...failed] });
+  }
+
+  return { total, completed, failed };
 }
 
 /**
