@@ -1353,8 +1353,25 @@
     "prerequisites": [
       "reading-gerunds-infinitives-b1"
     ],
-    "description": "Sort verbs by pattern: followed by gerund (-ing) or infinitive (to + verb)",
+    "description": "Sort verbs into three groups: followed by gerund (-ing), infinitive (to + verb), or both",
     "estimatedTime": 2,
+    "difficulty": 3
+  },
+  {
+    "id": "reading-gerunds-infinitives-context-b1",
+    "name": "Gerunds & Infinitives in Context",
+    "learningMode": "reading",
+    "dataPath": "data/b1/b1-reading-gerunds-infinitives-context.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Grammar",
+    "unit": 3,
+    "prerequisites": [
+      "sorting-gerunds-infinitives-b1"
+    ],
+    "description": "Learn gerund and infinitive patterns through real-life conversations, emails, and everyday situations",
+    "estimatedTime": 6,
     "difficulty": 3
   },
   {
@@ -1368,7 +1385,7 @@
     "category": "Grammar",
     "unit": 3,
     "prerequisites": [
-      "sorting-gerunds-infinitives-b1"
+      "reading-gerunds-infinitives-context-b1"
     ],
     "description": "Complete sentences with the correct gerund or infinitive form",
     "estimatedTime": 3,

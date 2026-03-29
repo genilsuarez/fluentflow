@@ -1,0 +1,55 @@
+{
+  "title": "Gerunds and Infinitives in Everyday Life",
+  "sections": [
+    {
+      "id": "intro",
+      "title": "Introduction",
+      "type": "introduction",
+      "content": "One of the trickiest parts of English grammar is knowing when to use the <gerund> (-ing form) and when to use the <infinitive> (to + verb) after another verb. Native speakers use these patterns naturally, but for learners, it requires practice.\n\nIn this reading, we'll explore gerunds and infinitives through real-life situations — conversations, emails, and everyday decisions — so you can see how these patterns work in context."
+    },
+    {
+      "id": "situation-1",
+      "title": "Situation 1: Planning a Weekend",
+      "type": "theory",
+      "content": "Read this conversation between two friends:\n\nSarah: I <suggest> going to the new Italian restaurant on Saturday.\nMark: Sounds good! I <enjoy> eating Italian food. But I <want> to go early — I <hate> waiting for a table.\nSarah: I <agree> to meet at 7pm. After dinner, do you <fancy> watching a film?\nMark: I'd <prefer> to go for a walk instead. I <need> to get more exercise.\nSarah: OK, I don't <mind> walking. I'll <avoid> wearing heels then!\n\nNotice the patterns:\n• <suggest>, <enjoy>, <fancy>, <mind>, <avoid> → followed by <gerund> (-ing)\n• <want>, <agree>, <prefer>, <need> → followed by <infinitive> (to + verb)\n• <hate> → can take both forms (hate waiting / hate to wait)"
+    },
+    {
+      "id": "situation-2",
+      "title": "Situation 2: A Work Email",
+      "type": "theory",
+      "content": "Read this professional email:\n\nDear Team,\n\nI <hope> to share some updates about our project. We <managed> to complete the first phase on time. I <appreciate> everyone working so hard.\n\nHowever, we <need> to discuss the timeline. I <suggest> scheduling a meeting this week. Please <avoid> booking anything for Thursday afternoon.\n\nI <look forward to> hearing your thoughts. Don't <hesitate> to contact me if you have questions.\n\nBest regards,\nLisa\n\nKey patterns in professional English:\n• <hope>, <manage>, <need>, <hesitate> → <infinitive> (to + verb)\n• <appreciate>, <suggest>, <avoid> → <gerund> (-ing)\n• <look forward to> → <gerund> (because <to> is a preposition here, not part of an infinitive)"
+    },
+    {
+      "id": "situation-3",
+      "title": "Situation 3: Talking About Habits",
+      "type": "theory",
+      "content": "Read how people describe their daily habits:\n\nTom: I <tend> to wake up early. I <enjoy> running before work. I <can't stand> sitting at a desk all day, so I <try> to take breaks.\n\nAna: I <love> cooking dinner for my family. I <keep> trying new recipes. I <refuse> to eat fast food during the week.\n\nJames: I <admit> spending too much time on my phone. I <need> to stop checking social media. I <plan> to read more books this year.\n\nUseful patterns for talking about habits:\n• <tend>, <try>, <refuse>, <plan>, <need> → <infinitive>\n• <enjoy>, <can't stand>, <keep>, <admit> → <gerund>\n• <love> → both forms work (love cooking / love to cook)\n• <stop> → changes meaning! <stop checking> = quit the habit; <stop to check> = pause in order to check"
+    },
+    {
+      "id": "meaning-changes",
+      "title": "Verbs That Change Meaning",
+      "type": "theory",
+      "content": "Some verbs change their meaning depending on whether they are followed by a gerund or an infinitive. This is an important distinction:\n\n<Remember>:\n• I <remember> locking the door. (= I have a memory of doing it)\n• I <remembered> to lock the door. (= I didn't forget to do it)\n\n<Stop>:\n• She <stopped> smoking. (= She quit the habit)\n• She <stopped> to smoke. (= She paused what she was doing in order to smoke)\n\n<Try>:\n• <Try> opening the window. (= experiment with this method)\n• <Try> to open the window. (= make an effort/attempt)\n\n<Forget>:\n• I'll never <forget> meeting you. (= I have a memory of the event)\n• I <forgot> to meet you. (= I didn't remember the appointment)\n\nThese verbs require extra attention because the wrong form can communicate the opposite of what you mean!"
+    },
+    {
+      "id": "summary",
+      "title": "Summary",
+      "type": "summary",
+      "content": "Key takeaways from this reading:\n\n• <Gerund> verbs (enjoy, avoid, suggest, mind, keep, finish, consider, deny, admit, imagine) often describe reactions, feelings, or ongoing situations.\n• <Infinitive> verbs (want, decide, hope, plan, agree, refuse, offer, promise, manage, expect) often express intentions, desires, or future-oriented actions.\n• Some verbs (like, love, hate, start, begin, continue, prefer) accept <both> forms with similar meaning.\n• After <prepositions> (interested in, good at, look forward to), always use the gerund.\n• A few verbs (remember, stop, try, forget) <change meaning> depending on the form used.\n• The best way to learn these patterns is through exposure and practice in real contexts."
+    }
+  ],
+  "learningObjectives": [
+    "Recognize gerund and infinitive patterns in real-life contexts",
+    "Understand how these patterns appear in conversations and emails",
+    "Identify verbs that change meaning with gerund vs. infinitive",
+    "Apply gerund and infinitive rules to describe habits and plans",
+    "Distinguish between preposition + gerund and infinitive structures"
+  ],
+  "keyVocabulary": [
+    { "term": "gerund", "definition": "The -ing form of a verb used as a noun (e.g., swimming, reading)", "example": "I enjoy swimming." },
+    { "term": "infinitive", "definition": "The base form of a verb with 'to' (e.g., to swim, to read)", "example": "I want to swim." },
+    { "term": "verb pattern", "definition": "The grammatical structure that follows a verb", "example": "Enjoy + gerund: enjoy reading" },
+    { "term": "meaning change", "definition": "When a verb has different meanings with gerund vs. infinitive", "example": "Stop smoking (quit) vs. stop to smoke (pause)" }
+  ],
+  "estimatedReadingTime": 6
+}
