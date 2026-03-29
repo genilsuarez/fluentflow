@@ -57,7 +57,7 @@
 
             // Safari iOS: reload when page is restored from bfcache
             window.addEventListener('pageshow', function(e) {
-                if (e.persisted) {
+                if (e.persisted && navigator.onLine !== false) {
                     window.location.reload();
                 }
             });
@@ -69,7 +69,10 @@
                     var elapsed = Date.now() - lastActive;
                     var root = document.getElementById('root');
                     if (elapsed > 30000 && root && (!root.firstChild || !window.__REACT_ALIVE)) {
-                        window.location.reload();
+                        // Only reload if online — offline reload would fail and show error
+                        if (navigator.onLine !== false) {
+                            window.location.reload();
+                        }
                     }
                 }
                 lastActive = Date.now();
