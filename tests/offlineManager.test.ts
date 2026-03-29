@@ -178,9 +178,9 @@ describe('offlineManager', () => {
       const progressCalls: DownloadProgress[] = [];
       const result = await downloadLevels(['a1'], (p) => progressCalls.push({ ...p }));
 
-      // a1 has 2 modules + learningModules.json = 3 files
-      expect(result.total).toBe(3);
-      expect(result.completed).toBe(3);
+      // a1 has 2 modules + learningModules.json + HTML shell = 4 files
+      expect(result.total).toBe(4);
+      expect(result.completed).toBe(4);
       expect(result.failed).toEqual([]);
     });
 
@@ -234,9 +234,9 @@ describe('offlineManager', () => {
       const progressCalls: DownloadProgress[] = [];
       await downloadLevels(['a1', 'b1'], (p) => progressCalls.push({ ...p }));
 
-      // a1: 2 files, b1: 1 file, + learningModules.json = 4 unique files
+      // a1: 2 files, b1: 1 file, + learningModules.json + HTML shell = 5 unique files
       const lastProgress = progressCalls[progressCalls.length - 1];
-      expect(lastProgress.total).toBe(4);
+      expect(lastProgress.total).toBe(5);
     });
   });
 
