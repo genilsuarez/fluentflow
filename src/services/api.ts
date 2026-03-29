@@ -55,6 +55,7 @@ export async function fetchModules(): Promise<ApiResponse<LearningModule[]>> {
     const modules = await fetchJson<LearningModule[]>(getLearningModulesPath());
     return { data: enhanceModules(modules), success: true };
   } catch (error) {
+    if (error instanceof ModuleNotAvailableOfflineError) throw error;
     const msg = error instanceof Error ? error.message : 'Unknown error';
     return { data: [], success: false, error: msg };
   }
@@ -100,6 +101,8 @@ export async function fetchModuleData(moduleId: string): Promise<ApiResponse<Lea
 
     return { data: { ...moduleInfo, data: processedData }, success: true };
   } catch (error) {
+    // Re-throw offline errors so the UI can show the offline modal
+    if (error instanceof ModuleNotAvailableOfflineError) throw error;
     const msg = error instanceof Error ? error.message : 'Unknown error';
     return { data: {} as LearningModule, success: false, error: msg };
   }

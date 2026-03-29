@@ -121,6 +121,9 @@ export const useModuleData = (moduleId: string) => {
       if (error instanceof Error && error.message.includes('parse JSON')) {
         return false; // Don't retry parse errors
       }
+      if (error instanceof Error && error.message.includes('not available offline')) {
+        return false; // Don't retry offline errors — show modal immediately
+      }
       return failureCount < 2; // Aligned with QueryClient global config
     },
     refetchOnWindowFocus: false,
