@@ -264,27 +264,15 @@ const PathTab: React.FC<PathTabProps> = ({ stats, nextRecommended, unitInfo, t }
     {/* Next Recommended */}
     {nextRecommended && (
       <div className="my-progress__next">
-        <h3 className="my-progress__section-title">
-          <Star className="my-progress__section-icon" />
-          {t('learningPath.nextRecommended', 'Siguiente Recomendado')}
-        </h3>
-        <div className="my-progress__next-card">
-          <div className="my-progress__next-badge">
-            <Star className="my-progress__next-badge-icon" />
-            <span>{t('learningPath.recommended', 'Recomendado')}</span>
-          </div>
-          <div className="my-progress__next-info">
-            <div className="my-progress__next-header">
-              <span
-                className={`my-progress__next-level my-progress__next-level--${unitInfo[nextRecommended.unit as keyof typeof unitInfo]?.color}`}
-              >
-                {unitInfo[nextRecommended.unit as keyof typeof unitInfo]?.code}
-              </span>
-              <span className="my-progress__next-type">{nextRecommended.learningMode}</span>
-            </div>
-            <h4 className="my-progress__next-name">{nextRecommended.name}</h4>
-          </div>
-        </div>
+        <Star className="my-progress__next-star" />
+        <span className="my-progress__next-label">{t('learningPath.nextRecommended', 'Next')}</span>
+        <span
+          className={`my-progress__next-level my-progress__next-level--${unitInfo[nextRecommended.unit as keyof typeof unitInfo]?.color}`}
+        >
+          {unitInfo[nextRecommended.unit as keyof typeof unitInfo]?.code}
+        </span>
+        <span className="my-progress__next-type">{nextRecommended.learningMode}</span>
+        <span className="my-progress__next-name">{nextRecommended.name}</span>
       </div>
     )}
 

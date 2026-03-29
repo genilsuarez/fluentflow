@@ -105,7 +105,7 @@
 }
 
 .my-progress__tab {
-  flex: 1;
+  flex: 1 1 0%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,7 +114,7 @@
   font-size: 0.8125rem;
   font-weight: 600;
   color: var(--theme-text-secondary, #6b7280);
-  background: transparent;
+  background: rgba(0, 0, 0, 0.03);
   border: none;
   border-radius: 0.375rem;
   cursor: pointer;
@@ -126,6 +126,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   min-height: 2.5rem;
+  min-width: 0;
 }
 
 .my-progress__tab:hover {
@@ -413,77 +414,44 @@
 
 /* === PATH TAB: NEXT RECOMMENDED === */
 .my-progress__next {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
   background-color: var(--theme-bg-subtle, #f9fafb);
-  border: 2px solid var(--theme-border-soft, #e5e7eb);
+  border: 1px solid var(--theme-border-soft, #e5e7eb);
   border-radius: var(--radius-md, 0.375rem);
-  padding: 0.375rem 0.5rem;
+  padding: 0.3rem 0.5rem;
   margin-top: 0.25rem;
   transition: all 0.2s ease;
 }
 
 .my-progress__next:hover {
   border-color: var(--theme-primary-blue, #3b82f6);
-  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.1);
+  box-shadow: 0 1px 4px rgba(59, 130, 246, 0.1);
 }
 
-.my-progress__next-card {
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(5, 150, 105, 0.1) 100%);
-  border: 2px solid rgba(16, 185, 129, 0.4);
-  border-radius: var(--radius-md, 0.375rem);
-  padding: 0.375rem 0.5rem;
-  position: relative;
-  transition: all 0.2s ease;
-  margin-top: 0.25rem;
-  box-shadow: 0 2px 4px rgba(16, 185, 129, 0.1);
-  text-align: center;
+.my-progress__next-star {
+  width: 0.7rem;
+  height: 0.7rem;
+  color: #10b981;
+  flex-shrink: 0;
 }
 
-.my-progress__next-card:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
-  border-color: rgba(16, 185, 129, 0.6);
-}
-
-.my-progress__next-badge {
-  position: absolute;
-  top: -0.25rem;
-  right: -0.25rem;
-  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-  color: white;
-  border-radius: 9999px;
-  padding: 0.125rem 0.375rem;
-  font-size: 0.5rem;
+.my-progress__next-label {
+  font-size: 0.65rem;
   font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 0.125rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.my-progress__next-badge-icon {
-  width: 0.5rem;
-  height: 0.5rem;
-}
-
-.my-progress__next-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.125rem;
-}
-
-.my-progress__next-header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.25rem;
+  color: var(--theme-text-secondary, #6b7280);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  flex-shrink: 0;
 }
 
 .my-progress__next-level {
-  padding: 0.125rem 0.375rem;
+  padding: 0.0625rem 0.3rem;
   border-radius: 9999px;
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   font-weight: 600;
+  flex-shrink: 0;
 }
 
 .my-progress__next-level--emerald {
@@ -512,18 +480,23 @@
 }
 
 .my-progress__next-type {
-  font-size: 0.625rem;
+  font-size: 0.6rem;
   color: var(--theme-text-secondary, #6b7280);
   background-color: var(--theme-bg-soft, #f3f4f6);
   padding: 0.0625rem 0.25rem;
   border-radius: 9999px;
+  flex-shrink: 0;
 }
 
 .my-progress__next-name {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 500;
   color: var(--theme-text-primary, #111827);
   line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
 }
 
 /* === PATH TAB: UNIT CIRCLES === */
@@ -879,17 +852,11 @@ html.dark .my-progress__next {
 
 html.dark .my-progress__next:hover {
   border-color: var(--theme-accent-primary, #60a5fa);
-  box-shadow: 0 2px 8px rgba(96, 165, 250, 0.15);
+  box-shadow: 0 1px 4px rgba(96, 165, 250, 0.15);
 }
 
-html.dark .my-progress__next-card {
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(5, 150, 105, 0.15) 100%);
-  border-color: rgba(16, 185, 129, 0.5);
-}
-
-html.dark .my-progress__next-card:hover {
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
-  border-color: rgba(16, 185, 129, 0.7);
+html.dark .my-progress__next-star {
+  color: #34d399;
 }
 
 html.dark .my-progress__next-level--emerald {
@@ -1108,17 +1075,9 @@ html.dark .my-progress__unit-count:hover {
 
   /* Next compact */
   .my-progress__next {
-    padding: 0.25rem;
+    padding: 0.2rem 0.375rem;
+    gap: 0.25rem;
   }
-
-  .my-progress__next-card {
-    padding: 0.25rem;
-    margin-top: 0.125rem;
-  }
-
-  .my-progress__next-name {
-    font-size: 0.6875rem;
-    font-weight: 600;
   }
 
   /* Units compact */
