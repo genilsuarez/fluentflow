@@ -36,7 +36,7 @@ export function getHiddenDependencies(
 }
 
 export const useModuleData = (moduleId: string) => {
-  const { level, gameSettings, developmentMode } = useSettingsStore();
+  const { gameSettings } = useSettingsStore();
 
   // Session key ensures a fresh shuffle each time the hook mounts (new game session).
   // We use a ref-like approach via a module-level map so the key is stable within
@@ -99,7 +99,7 @@ export const useModuleData = (moduleId: string) => {
         const filteredData = apiService.filterModuleData(
           module.data,
           {
-            level: developmentMode ? 'all' : level,
+            level: 'all', // Module is already level-specific; don't filter items by level
             limit,
           },
           moduleId
