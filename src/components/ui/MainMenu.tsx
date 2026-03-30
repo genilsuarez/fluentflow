@@ -19,9 +19,7 @@ import {
   X as XIcon,
   Filter as FilterIcon,
 } from 'lucide-react';
-import { CategoryFilter } from './CategoryFilter';
-import { ModeFilter } from './ModeFilter';
-import { LevelFilter } from './LevelFilter';
+import { UnifiedFilter } from './UnifiedFilter';
 import '../../styles/components/main-menu.css';
 
 export const MainMenu: React.FC = () => {
@@ -35,7 +33,7 @@ export const MainMenu: React.FC = () => {
   const queryClient = useQueryClient();
   const [viewMode, setViewMode] = useState<'progression' | 'list'>(previousMenuContext);
   const [highlightedModuleId, setHighlightedModuleId] = useState<string | null>(null);
-  const [expandedFilter, setExpandedFilter] = useState<'category' | 'mode' | 'level' | null>(null);
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [isSearchExpanded, setIsSearchExpanded] = useState(false);
   const gridRef = useRef<HTMLDivElement>(null);
   const hasScrolledToNext = useRef(false);
@@ -264,7 +262,7 @@ export const MainMenu: React.FC = () => {
               clearLabel={t('common.clearSearch')}
               onSearchFocus={() => {
                 setIsSearchExpanded(true);
-                setExpandedFilter(null);
+                setIsFilterOpen(false);
               }}
               onSearchBlur={() => {
                 // Delay collapse so clear button click registers
@@ -281,7 +279,6 @@ export const MainMenu: React.FC = () => {
               onClick={() => {
                 setQuery('');
                 setIsSearchExpanded(false);
-                // Blur the search input to remove focus ring
                 const input = document.querySelector('.search-bar__input') as HTMLElement;
                 input?.blur();
               }}
@@ -291,20 +288,9 @@ export const MainMenu: React.FC = () => {
               <XIcon size={16} />
             </button>
           )}
-          <CategoryFilter
-            inline
-            isExpanded={expandedFilter === 'category'}
-            onToggle={() => setExpandedFilter(prev => (prev === 'category' ? null : 'category'))}
-          />
-          <ModeFilter
-            inline
-            isExpanded={expandedFilter === 'mode'}
-            onToggle={() => setExpandedFilter(prev => (prev === 'mode' ? null : 'mode'))}
-          />
-          <LevelFilter
-            inline
-            isExpanded={expandedFilter === 'level'}
-            onToggle={() => setExpandedFilter(prev => (prev === 'level' ? null : 'level'))}
+          <UnifiedFilter
+            isOpen={isFilterOpen}
+            onToggle={() => setIsFilterOpen(prev => !prev)}
           />
         </div>
 
@@ -408,7 +394,7 @@ export const MainMenu: React.FC = () => {
                   setCategories([]);
                   setLearningModes([]);
                   setLevel('all');
-                  setExpandedFilter(null);
+                  setIsFilterOpen(false);
                   setQuery('');
                   setIsSearchExpanded(false);
                 }}

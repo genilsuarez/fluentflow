@@ -125,10 +125,8 @@
     position: relative;
   }
 
-  /* Filter buttons: visible by default, hidden when search expands */
-  .main-menu__search-row > .category-filter,
-  .main-menu__search-row > .mode-filter,
-  .main-menu__search-row > .level-filter {
+  /* Filter button: visible by default, hidden when search expands */
+  .main-menu__search-row > .unified-filter {
     flex-shrink: 0;
     transition:
       opacity 0.2s ease,
@@ -137,9 +135,7 @@
     overflow: hidden;
   }
 
-  .main-menu__search-row--search-expanded > .category-filter,
-  .main-menu__search-row--search-expanded > .mode-filter,
-  .main-menu__search-row--search-expanded > .level-filter {
+  .main-menu__search-row--search-expanded > .unified-filter {
     width: 0;
     opacity: 0;
     margin: 0;
