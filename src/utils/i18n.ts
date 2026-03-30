@@ -357,6 +357,11 @@ const translations = {
       collapse: 'Hide learning modes',
       expand: 'Show learning modes',
     },
+    levelFilter: {
+      title: 'CEFR Level',
+      collapse: 'Hide levels',
+      expand: 'Show levels',
+    },
     levels: {
       all: 'All Levels',
       a1: 'Beginner (A1)',
@@ -891,6 +896,11 @@ const translations = {
       title: 'Modos de Aprendizaje',
       collapse: 'Ocultar modos',
       expand: 'Mostrar modos',
+    },
+    levelFilter: {
+      title: 'Nivel CEFR',
+      collapse: 'Ocultar niveles',
+      expand: 'Mostrar niveles',
     },
     levels: {
       all: 'Todos los Niveles',

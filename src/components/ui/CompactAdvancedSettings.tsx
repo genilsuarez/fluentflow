@@ -339,23 +339,6 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
                     </select>
                   </div>
 
-                  <div className="compact-settings__field">
-                    <label className="compact-settings__label">{t('settings.level')}</label>
-                    <select
-                      className="compact-settings__select"
-                      value={localLevel}
-                      onChange={e => setLocalLevel(e.target.value as any)}
-                    >
-                      <option value="all">🌟 {t('settings.all')}</option>
-                      <option value="a1">🟢 A1</option>
-                      <option value="a2">🟡 A2</option>
-                      <option value="b1">🟠 B1</option>
-                      <option value="b2">🔴 B2</option>
-                      <option value="c1">🟣 C1</option>
-                      <option value="c2">⚫ C2</option>
-                    </select>
-                  </div>
-
                   <div className="compact-settings__toggles-row">
                     <div className="compact-settings__field compact-settings__field--dev">
                       <div className="compact-settings__toggle-container">

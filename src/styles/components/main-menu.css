@@ -127,7 +127,8 @@
 
   /* Filter buttons: visible by default, hidden when search expands */
   .main-menu__search-row > .category-filter,
-  .main-menu__search-row > .mode-filter {
+  .main-menu__search-row > .mode-filter,
+  .main-menu__search-row > .level-filter {
     flex-shrink: 0;
     transition:
       opacity 0.2s ease,
@@ -137,7 +138,8 @@
   }
 
   .main-menu__search-row--search-expanded > .category-filter,
-  .main-menu__search-row--search-expanded > .mode-filter {
+  .main-menu__search-row--search-expanded > .mode-filter,
+  .main-menu__search-row--search-expanded > .level-filter {
     width: 0;
     opacity: 0;
     margin: 0;

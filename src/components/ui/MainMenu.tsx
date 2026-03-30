@@ -21,6 +21,7 @@ import {
 } from 'lucide-react';
 import { CategoryFilter } from './CategoryFilter';
 import { ModeFilter } from './ModeFilter';
+import { LevelFilter } from './LevelFilter';
 import '../../styles/components/main-menu.css';
 
 export const MainMenu: React.FC = () => {
@@ -28,13 +29,13 @@ export const MainMenu: React.FC = () => {
   const progression = useProgression();
   const { query, setQuery, results } = useSearch(modules);
   const { setPreviousMenuContext, previousMenuContext } = useAppStore();
-  const { language, categories, learningModes, setCategories, setLearningModes } =
+  const { language, categories, learningModes, level, setCategories, setLearningModes, setLevel } =
     useSettingsStore();
   const { t } = useTranslation(language);
   const queryClient = useQueryClient();
   const [viewMode, setViewMode] = useState<'progression' | 'list'>(previousMenuContext);
   const [highlightedModuleId, setHighlightedModuleId] = useState<string | null>(null);
-  const [expandedFilter, setExpandedFilter] = useState<'category' | 'mode' | null>(null);
+  const [expandedFilter, setExpandedFilter] = useState<'category' | 'mode' | 'level' | null>(null);
   const [isSearchExpanded, setIsSearchExpanded] = useState(false);
   const gridRef = useRef<HTMLDivElement>(null);
   const hasScrolledToNext = useRef(false);
@@ -300,6 +301,11 @@ export const MainMenu: React.FC = () => {
             isExpanded={expandedFilter === 'mode'}
             onToggle={() => setExpandedFilter(prev => (prev === 'mode' ? null : 'mode'))}
           />
+          <LevelFilter
+            inline
+            isExpanded={expandedFilter === 'level'}
+            onToggle={() => setExpandedFilter(prev => (prev === 'level' ? null : 'level'))}
+          />
         </div>
 
         <div className="main-menu__view-toggle">
@@ -386,7 +392,7 @@ export const MainMenu: React.FC = () => {
       ) : (
         // List view (original grid)
         <>
-          {!query && (categories.length > 0 || learningModes?.length > 0) && (
+          {!query && (categories.length > 0 || learningModes?.length > 0 || level !== 'all') && (
             <div className="main-menu__results-header" role="status" aria-live="polite">
               <FilterIcon className="main-menu__results-header-icon" aria-hidden="true" />
               <span className="main-menu__results-header-text">
@@ -401,6 +407,7 @@ export const MainMenu: React.FC = () => {
                 onClick={() => {
                   setCategories([]);
                   setLearningModes([]);
+                  setLevel('all');
                   setExpandedFilter(null);
                   setQuery('');
                   setIsSearchExpanded(false);
