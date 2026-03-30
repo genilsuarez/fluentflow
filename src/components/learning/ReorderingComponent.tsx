@@ -339,11 +339,11 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
 
       {/* Answer Zone */}
       <div className="reordering__zone reordering__zone--answer">
-        <label className="reordering__zone-label">{t('learning.yourAnswer')}</label>
+        <label className="reordering__zone-label">{t('learning.reorderingYourAnswer')}</label>
         <div
           className="reordering__zone-content"
           role="listbox"
-          aria-label={t('learning.yourAnswer')}
+          aria-label={t('learning.reorderingYourAnswer')}
           aria-dropeffect={!showResult ? 'move' : 'none'}
         >
           {answerWords.length === 0 && !showResult && (
