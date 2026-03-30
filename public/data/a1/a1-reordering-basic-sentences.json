@@ -98,9 +98,10 @@
   },
   {
     "id": "reord-a1-015",
-    "sentence": "I have two brothers and one sister",
-    "words": ["I", "have", "two", "brothers", "and", "one", "sister"],
-    "explanation": "Numbers go before nouns: 'two brothers', 'one sister'."
+    "sentence": "She has three cats at home",
+    "words": ["She", "has", "three", "cats", "at", "home"],
+    "hint": "Third person singular: 'has', not 'have'",
+    "explanation": "Numbers go before nouns: 'three cats'. Use 'has' with he/she/it."
   },
   {
     "id": "reord-a1-016",
