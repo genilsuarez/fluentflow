@@ -11,13 +11,12 @@ import {
   CheckCircle,
   AlertTriangle,
 } from 'lucide-react';
-import { useModuleProgression } from '../../hooks/useProgression';
 import { useProgressStore } from '../../stores/progressStore';
 import { useTranslation } from '../../utils/i18n';
 import { useSettingsStore } from '../../stores/settingsStore';
 import type { LearningModule } from '../../types';
 
-interface ModuleCardProps {
+export interface ModuleCardProps {
   module: LearningModule;
   onClick: (module: LearningModule) => void;
   tabIndex?: number;
@@ -27,6 +26,10 @@ interface ModuleCardProps {
   isNextRecommended?: boolean;
   isCurrentModule?: boolean;
   hiddenDependencies?: string[];
+  /** Pre-computed module status — avoids per-card useProgression() call */
+  moduleStatus?: 'completed' | 'unlocked' | 'locked';
+  /** Pre-computed missing prerequisites count */
+  missingPrerequisitesCount?: number;
 }
 
 const getIcon = (learningMode: string) => {
@@ -55,7 +58,7 @@ const getLearningModeLabel = (learningMode: string, t: (key: string) => string):
   return labels[learningMode] || t('common.exercise');
 };
 
-export const ModuleCard: React.FC<ModuleCardProps> = ({
+export const ModuleCard: React.FC<ModuleCardProps> = React.memo(({
   module,
   onClick,
   tabIndex,
@@ -65,11 +68,16 @@ export const ModuleCard: React.FC<ModuleCardProps> = ({
   isNextRecommended = false,
   isCurrentModule = false,
   hiddenDependencies,
+  moduleStatus = 'locked',
+  missingPrerequisitesCount = 0,
 }) => {
-  const progression = useModuleProgression(module.id);
   const { getModuleCompletion } = useProgressStore();
   const { language } = useSettingsStore();
   const { t } = useTranslation(language);
+
+  // Use pre-computed status from parent instead of per-card hook
+  const status = moduleStatus;
+  const canAccess = status !== 'locked';
 
   // Get progress data for this module
   const moduleCompletion = getModuleCompletion(module.id);
@@ -85,30 +93,21 @@ export const ModuleCard: React.FC<ModuleCardProps> = ({
   const handleKeyDown = (event: React.KeyboardEvent) => {
     if (event.key === 'Enter' || event.key === ' ') {
       event.preventDefault();
-      if (progression.canAccess) {
+      if (canAccess) {
         onClick(module);
       }
     }
   };
 
   const handleClick = () => {
-    if (progression.canAccess) {
+    if (canAccess) {
       onClick(module);
     }
   };
 
   // Get status-specific styling and content
   const getStatusInfo = () => {
-    if (progression.isLoading) {
-      return {
-        className: 'module-card--loading',
-        statusIcon: null,
-        statusText: t('common.loading'),
-        disabled: true,
-      };
-    }
-
-    switch (progression.status) {
+    switch (status) {
       case 'completed':
         return {
           className: 'module-card--completed',
@@ -128,8 +127,8 @@ export const ModuleCard: React.FC<ModuleCardProps> = ({
           className: 'module-card--locked',
           statusIcon: <Lock size={12} className="text-white" />,
           statusText: t('learning.requiresPrerequisites', undefined, {
-            count: progression.missingPrerequisites.length,
-            plural: progression.missingPrerequisites.length !== 1 ? 's' : '',
+            count: missingPrerequisitesCount,
+            plural: missingPrerequisitesCount !== 1 ? 's' : '',
           }),
           disabled: true,
         };
@@ -194,7 +193,7 @@ export const ModuleCard: React.FC<ModuleCardProps> = ({
         {/* Status indicators - Consistent positioning for all states */}
         {statusInfo.statusIcon && (
           <div
-            className={`module-card__status-indicator module-card__status-indicator--${progression.status}`}
+            className={`module-card__status-indicator module-card__status-indicator--${status}`}
             aria-hidden="true"
           >
             {statusInfo.statusIcon}
@@ -217,7 +216,7 @@ export const ModuleCard: React.FC<ModuleCardProps> = ({
         )}
 
         {/* Progress indicator for unlocked/completed modules */}
-        {(progression.status === 'unlocked' || progression.status === 'completed') &&
+        {(status === 'unlocked' || status === 'completed') &&
           progressPercentage > 0 && (
             <div className="module-card__progress" aria-hidden="true">
               <div
@@ -229,4 +228,4 @@ export const ModuleCard: React.FC<ModuleCardProps> = ({
       </div>
     </button>
   );
-};
+});

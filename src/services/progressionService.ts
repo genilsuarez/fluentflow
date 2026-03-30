@@ -6,6 +6,7 @@ import type { LearningModule } from '../types';
  */
 export class ProgressionService {
   private modules: LearningModule[] = [];
+  private moduleMap: Map<string, LearningModule> = new Map();
   private completedModules: Set<string> = new Set();
 
   /**
@@ -13,6 +14,7 @@ export class ProgressionService {
    */
   initialize(modules: LearningModule[], completedModuleIds: string[] = []): void {
     this.modules = modules;
+    this.moduleMap = new Map(modules.map(m => [m.id, m]));
     this.completedModules = new Set(completedModuleIds);
 
     logDebug(
@@ -119,7 +121,7 @@ export class ProgressionService {
    * Get module by ID
    */
   private getModule(moduleId: string): LearningModule | undefined {
-    return this.modules.find(module => module.id === moduleId);
+    return this.moduleMap.get(moduleId);
   }
 
   /**

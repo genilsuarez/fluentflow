@@ -56,36 +56,9 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
     return () => observer.disconnect();
   }, []);
 
-  // Emergency function to force white text (only if CSS fails)
-  const forceWhiteTextIfNeeded = React.useCallback(() => {
-    if (isDarkMode) {
-      // Only run this as last resort if CSS isn't working
-      const dashboardElement = document.querySelector('.progression-dashboard');
-      if (dashboardElement) {
-        const textElements = dashboardElement.querySelectorAll('*');
-        textElements.forEach(element => {
-          // Skip elements inside locked modules — they should stay dimmed
-          if ((element as HTMLElement).closest?.('.progression-dashboard__module--locked')) {
-            return;
-          }
-          const computedStyle = window.getComputedStyle(element);
-          const textColor = computedStyle.color;
-
-          // If text is still dark in dark mode, force it to white
-          if (textColor.includes('rgb(55, 65, 81)') || textColor.includes('rgb(107, 114, 128)')) {
-            (element as HTMLElement).style.color = '#ffffff';
-          }
-        });
-      }
-    }
-  }, [isDarkMode]);
-
-  // Run emergency fix after component mounts (only if needed)
-  React.useEffect(() => {
-    // Small delay to let CSS apply first
-    const timer = setTimeout(forceWhiteTextIfNeeded, 100);
-    return () => clearTimeout(timer);
-  }, [isDarkMode, forceWhiteTextIfNeeded]);
+  // Dark mode text is handled entirely via CSS (progression-dashboard-dark-theme.css).
+  // The previous JS-based "emergency fix" iterated all DOM elements with getComputedStyle(),
+  // causing forced reflows and ~50ms+ layout thrashing on every theme change. Removed.
 
   const nextRecommended = progression.getNextRecommendedModule();
 
@@ -103,30 +76,79 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
     }
   }, [completedModulesCount, progression]);
 
-  // Auto-expand unit with next recommended module on initial load only
-  const hasAutoExpanded = React.useRef(false);
-  React.useEffect(() => {
-    if (nextRecommended && !hasAutoExpanded.current && !searchQuery.trim()) {
-      hasAutoExpanded.current = true;
-      setExpandedUnits(prev => new Set([...prev, nextRecommended.unit]));
-    }
-  }, [nextRecommended, searchQuery]);
+  // Scroll the .progression-dashboard__units container so the --next module is centered
+  const scrollToNextModule = React.useCallback((behavior: ScrollBehavior = 'smooth') => {
+    const nextEl = document.querySelector('.progression-dashboard__module--next');
+    if (!nextEl) return;
 
-  // Scroll to next module after initial auto-expand
-  React.useEffect(() => {
-    if (nextRecommended && hasAutoExpanded.current) {
-      const timer = setTimeout(() => {
-        const nextModuleElement = document.querySelector('.progression-dashboard__module--next');
-        if (nextModuleElement) {
-          nextModuleElement.scrollIntoView({
-            behavior: 'smooth',
-            block: 'center',
-          });
-        }
-      }, 300);
-      return () => clearTimeout(timer);
+    // Find the scrollable ancestor (.progression-dashboard__units)
+    const container = nextEl.closest('.progression-dashboard__units');
+    if (!container) {
+      // Fallback: let the browser figure it out
+      nextEl.scrollIntoView({ behavior, block: 'center' });
+      return;
     }
-  }, [nextRecommended]);
+
+    // Calculate scroll position to center the element in the container
+    const containerRect = container.getBoundingClientRect();
+    const elRect = nextEl.getBoundingClientRect();
+    const elOffsetInContainer = container.scrollTop + (elRect.top - containerRect.top);
+    const scrollTop = elOffsetInContainer - container.clientHeight / 2 + elRect.height / 2;
+
+    container.scrollTo({
+      top: Math.max(0, scrollTop),
+      behavior,
+    });
+  }, []);
+
+  // Auto-expand unit with next recommended module and scroll to it
+  React.useEffect(() => {
+    if (!nextRecommended || searchQuery.trim()) return;
+
+    // Expand the unit containing the next recommended module
+    setExpandedUnits(prev => {
+      if (prev.has(nextRecommended.unit)) return prev;
+      return new Set([...prev, nextRecommended.unit]);
+    });
+  }, [nextRecommended, searchQuery, completedModulesCount]);
+
+  // Helper: schedule scroll after the browser has completed layout
+  const scheduleScroll = React.useCallback(() => {
+    // Use a small timeout to ensure the browser has completed layout
+    // after React's DOM updates. rAF alone isn't sufficient because
+    // React may batch multiple state updates before the browser paints.
+    setTimeout(() => {
+      requestAnimationFrame(() => scrollToNextModule('smooth'));
+    }, 100);
+  }, [scrollToNextModule]);
+
+  // Scroll to the --next module once it appears in the DOM
+  React.useEffect(() => {
+    if (!nextRecommended) return;
+
+    // Check if the element already exists
+    const existing = document.querySelector('.progression-dashboard__module--next');
+    if (existing) {
+      scheduleScroll();
+      return;
+    }
+
+    // Otherwise, observe for it to appear
+    const container = document.querySelector('.progression-dashboard__units');
+    if (!container) return;
+
+    const observer = new MutationObserver(() => {
+      const el = document.querySelector('.progression-dashboard__module--next');
+      if (el) {
+        observer.disconnect();
+        scheduleScroll();
+      }
+    });
+
+    observer.observe(container, { childList: true, subtree: true });
+    return () => observer.disconnect();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [nextRecommended?.id, scheduleScroll]);
 
   const toggleUnit = (unit: number) => {
     const newExpanded = new Set(expandedUnits);
@@ -141,15 +163,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
 
     // If expanding a unit with the next module, scroll to it
     if (isExpanding && nextRecommended && nextRecommended.unit === unit) {
-      setTimeout(() => {
-        const nextModuleElement = document.querySelector('.progression-dashboard__module--next');
-        if (nextModuleElement) {
-          nextModuleElement.scrollIntoView({
-            behavior: 'smooth',
-            block: 'center',
-          });
-        }
-      }, 300);
+      setTimeout(() => scrollToNextModule('smooth'), 300);
     }
   };
 

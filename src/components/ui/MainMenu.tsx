@@ -42,6 +42,30 @@ export const MainMenu: React.FC = () => {
   // Access raw (unfiltered) modules from the query cache for dependency calculations
   const allModulesRaw = queryClient.getQueryData<LearningModule[]>(['modules']) ?? [];
 
+  // Pre-compute module statuses and hidden dependencies once for all cards
+  // instead of each ModuleCard calling useProgression() individually
+  const moduleStatusMap = React.useMemo(() => {
+    const map = new Map<string, { status: 'completed' | 'unlocked' | 'locked'; missingCount: number }>();
+    for (const m of modules) {
+      map.set(m.id, {
+        status: progression.getModuleStatus(m.id),
+        missingCount: progression.getMissingPrerequisites(m.id).length,
+      });
+    }
+    return map;
+  }, [modules, progression]);
+
+  // Pre-compute hidden dependencies map once (avoids creating a new Map per card)
+  const hiddenDepsMap = React.useMemo(() => {
+    if (categories.length === 0 && (!learningModes || learningModes.length === 0)) return null;
+    const map = new Map<string, string[]>();
+    for (const m of modules) {
+      const deps = getHiddenDependencies(m, allModulesRaw, categories, learningModes);
+      if (deps.length > 0) map.set(m.id, deps);
+    }
+    return map;
+  }, [modules, allModulesRaw, categories, learningModes]);
+
   // Shared module navigation logic
   const { navigateToModule } = useModuleNavigation(viewMode);
 
@@ -320,12 +344,9 @@ export const MainMenu: React.FC = () => {
                     aria-posinset={index + 1}
                     aria-setsize={results.length}
                     isCurrentModule={currentModuleId === module.id}
-                    hiddenDependencies={getHiddenDependencies(
-                      module,
-                      allModulesRaw,
-                      categories,
-                      learningModes
-                    )}
+                    moduleStatus={moduleStatusMap.get(module.id)?.status ?? 'locked'}
+                    missingPrerequisitesCount={moduleStatusMap.get(module.id)?.missingCount ?? 0}
+                    hiddenDependencies={hiddenDepsMap?.get(module.id)}
                   />
                 ))}
               </div>
@@ -390,12 +411,9 @@ export const MainMenu: React.FC = () => {
                   aria-setsize={modules.length}
                   isNextRecommended={highlightedModuleId === module.id}
                   isCurrentModule={currentModuleId === module.id}
-                  hiddenDependencies={getHiddenDependencies(
-                    module,
-                    allModulesRaw,
-                    categories,
-                    learningModes
-                  )}
+                  moduleStatus={moduleStatusMap.get(module.id)?.status ?? 'locked'}
+                  missingPrerequisitesCount={moduleStatusMap.get(module.id)?.missingCount ?? 0}
+                  hiddenDependencies={hiddenDepsMap?.get(module.id)}
                 />
               ))}
             </div>
