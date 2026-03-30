@@ -28,6 +28,8 @@
   flex-direction: column;
   overflow: hidden;
   contain: layout style;
+  content-visibility: auto;
+  contain-intrinsic-size: var(--card-width-mobile) var(--card-height-mobile);
   touch-action: manipulation;
 }
 

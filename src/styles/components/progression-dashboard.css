@@ -406,6 +406,8 @@
 .progression-dashboard__module {
   background: linear-gradient(135deg, #ffffff 0%, #f5f6f8 100%);
   border: 1px solid #c5cad3;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 70px;
   border-radius: var(--radius-sm, 0.25rem);
   padding: 0.1875rem;
   margin: 0;

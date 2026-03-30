@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef, useTransition } from 'react';
 import { SearchBar } from './SearchBar';
 import { ModuleCard } from './ModuleCard';
 import { ModuleGridSkeleton } from './LoadingSkeleton';
@@ -32,7 +32,13 @@ export const MainMenu: React.FC = () => {
     useSettingsStore();
   const { t } = useTranslation(language);
   const queryClient = useQueryClient();
-  const [viewMode, setViewMode] = useState<'progression' | 'list'>(previousMenuContext);
+  const [viewMode, setViewModeRaw] = useState<'progression' | 'list'>(previousMenuContext);
+  const [isPending, startTransition] = useTransition();
+  const setViewMode = React.useCallback((mode: 'progression' | 'list') => {
+    startTransition(() => {
+      setViewModeRaw(mode);
+    });
+  }, []);
   const [highlightedModuleId, setHighlightedModuleId] = useState<string | null>(null);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [isSearchExpanded, setIsSearchExpanded] = useState(false);
