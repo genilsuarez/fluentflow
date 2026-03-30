@@ -359,6 +359,16 @@ html.dark .level-filter__chip:hover {
 }
 
 html.dark .level-filter__chip--active {
+  background: var(--level-color, #3b82f6);
+  border-color: var(--level-color, #3b82f6);
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+html.dark .level-filter__chip--active:hover {
+  background: var(--level-color, #3b82f6);
+  border-color: var(--level-color, #3b82f6);
+  filter: brightness(0.85);
   color: #ffffff;
 }
 
