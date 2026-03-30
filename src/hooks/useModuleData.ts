@@ -144,28 +144,24 @@ export const useAllModules = () => {
     },
     networkMode: 'always', // Allow queries offline - service worker handles caching
     select: (modules: LearningModule[]) => {
-      // In development mode, show all modules without filtering
-      if (developmentMode) {
-        return modules;
-      }
-
       // Filter modules based on settings
+      // Development mode only bypasses progression locks, not filters
       return modules.filter(module => {
-        // Filter by categories
-        if (categories.length > 0 && module.category) {
+        // Filter by categories (skip in dev mode)
+        if (!developmentMode && categories.length > 0 && module.category) {
           if (!categories.includes(module.category)) {
             return false;
           }
         }
 
-        // Filter by learning modes
-        if (learningModes?.length > 0 && module.learningMode) {
+        // Filter by learning modes (skip in dev mode)
+        if (!developmentMode && learningModes?.length > 0 && module.learningMode) {
           if (!learningModes.includes(module.learningMode)) {
             return false;
           }
         }
 
-        // Filter by level - module.level can be array or string
+        // Filter by level - always applied (even in dev mode)
         if (level !== 'all' && module.level) {
           const moduleLevels = Array.isArray(module.level) ? module.level : [module.level];
           if (!moduleLevels.includes(level as any)) {
