@@ -1,4 +1,5 @@
 import React from 'react';
+import { Trophy } from 'lucide-react';
 import { useAppStore } from '../../stores/appStore';
 import { useUserStore } from '../../stores/userStore';
 import { useSettingsStore } from '../../stores/settingsStore';
@@ -70,11 +71,11 @@ export const ScoreDisplay: React.FC = () => {
           <div className="score-display-compact__global">
             <div className="score-display-compact__main">
               <div
-                className="score-display-compact__icon"
+                className="score-display-compact__icon score-display-compact__icon--trophy"
                 role="img"
                 aria-label={t('scores.globalScore')}
               >
-                �
+                <Trophy size={16} aria-hidden="true" />
               </div>
               <span
                 className="score-display-compact__total-score"

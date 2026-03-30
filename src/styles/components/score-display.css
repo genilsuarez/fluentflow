@@ -107,6 +107,12 @@
   line-height: 1;
 }
 
+.score-display-compact__icon--trophy {
+  color: var(--warning, #f59e0b);
+  display: flex;
+  align-items: center;
+}
+
 .score-display-compact__progress {
   display: flex;
   align-items: center;
