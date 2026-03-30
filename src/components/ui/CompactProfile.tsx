@@ -95,7 +95,9 @@ export const CompactProfile: React.FC<CompactProfileProps> = ({ isOpen, onClose 
                   </div>
                   <div className="compact-profile__stat-info">
                     <span className="compact-profile__stat-value">{stats.totalScore}</span>
-                    <span className="compact-profile__stat-label">{t('profile.statScore', 'Score')}</span>
+                    <span className="compact-profile__stat-label">
+                      {t('profile.statScore', 'Score')}
+                    </span>
                   </div>
                 </div>
                 <div className="compact-profile__stat">
@@ -104,7 +106,9 @@ export const CompactProfile: React.FC<CompactProfileProps> = ({ isOpen, onClose 
                   </div>
                   <div className="compact-profile__stat-info">
                     <span className="compact-profile__stat-value">{stats.totalModules}</span>
-                    <span className="compact-profile__stat-label">{t('profile.statModules', 'Modules')}</span>
+                    <span className="compact-profile__stat-label">
+                      {t('profile.statModules', 'Modules')}
+                    </span>
                   </div>
                 </div>
                 <div className="compact-profile__stat">
@@ -113,7 +117,9 @@ export const CompactProfile: React.FC<CompactProfileProps> = ({ isOpen, onClose 
                   </div>
                   <div className="compact-profile__stat-info">
                     <span className="compact-profile__stat-value">{stats.bestStreak}</span>
-                    <span className="compact-profile__stat-label">{t('profile.statStreak', 'Streak')}</span>
+                    <span className="compact-profile__stat-label">
+                      {t('profile.statStreak', 'Streak')}
+                    </span>
                   </div>
                 </div>
                 <div className="compact-profile__stat">
@@ -122,7 +128,9 @@ export const CompactProfile: React.FC<CompactProfileProps> = ({ isOpen, onClose 
                   </div>
                   <div className="compact-profile__stat-info">
                     <span className="compact-profile__stat-value">{stats.avgScore}%</span>
-                    <span className="compact-profile__stat-label">{t('profile.statAvg', 'Average')}</span>
+                    <span className="compact-profile__stat-label">
+                      {t('profile.statAvg', 'Average')}
+                    </span>
                   </div>
                 </div>
               </div>
