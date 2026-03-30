@@ -269,13 +269,6 @@
   margin-bottom: 0.125rem;
 }
 
-.my-progress__section-icon {
-  width: 0.625rem;
-  height: 0.625rem;
-  margin-right: 0.1875rem;
-  color: #3b82f6;
-}
-
 .my-progress__weekly-content {
   background-color: var(--theme-bg-subtle, #fafafa);
   border: 1px solid var(--theme-border-soft, #e5e7eb);
@@ -1108,11 +1101,6 @@ html.dark .my-progress__unit-count:hover {
 
   .my-progress__unit-pct {
     font-size: 0.375rem;
-  }
-
-  .my-progress__section-icon {
-    width: 0.5625rem;
-    height: 0.5625rem;
   }
 }
 

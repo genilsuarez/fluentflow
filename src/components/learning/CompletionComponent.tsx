@@ -11,6 +11,7 @@ import { useLearningCleanup } from '../../hooks/useLearningCleanup';
 import { conditionalShuffle } from '../../utils/randomUtils';
 import '../../styles/components/completion-component.css';
 import '../../styles/components/editable-input.css';
+// BEM classes applied dynamically via .replace(): 'editable-input--correct' 'editable-input--incorrect' 'editable-input--neutral' 'editable-input--disabled'
 import { ContentAdapter } from '../../utils/contentAdapter';
 import ContentRenderer from '../ui/ContentRenderer';
 import LearningProgressHeader from '../ui/LearningProgressHeader';

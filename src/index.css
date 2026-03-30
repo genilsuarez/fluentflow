@@ -123,12 +123,6 @@ body:has(.my-progress) {
   transform: scale(0.95);
 }
 
-.nav-btn__icon {
-  width: 1rem;
-  height: 1rem;
-  flex-shrink: 0;
-}
-
 /* Dark mode variants */
 .dark .nav-btn {
   background-color: #1f2937;

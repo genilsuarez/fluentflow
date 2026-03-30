@@ -879,7 +879,6 @@ html.dark .main-menu__grid::-webkit-scrollbar-thumb:hover {
 .main-menu__grid,
 .main-menu__no-results,
 .main-menu__error,
-.main-menu__results-count,
 .main-menu__results-header {
   /* Perfect alignment system */
   margin-left: auto;
@@ -907,14 +906,6 @@ html.dark .main-menu__grid::-webkit-scrollbar-thumb:hover {
 .main-menu__grid {
   /* Ensure grid never exceeds container */
   max-width: 100%;
-}
-
-/* Results count alignment */
-.main-menu__results-count {
-  /* Center align with search proportions */
-  width: auto;
-  max-width: 280px;
-  margin: 1.5rem auto 0 auto;
 }
 
 /* No results and error state alignment */
@@ -1197,12 +1188,6 @@ html.dark .main-menu__error {
 
 html.dark .main-menu__error-text {
   color: var(--theme-error, #f87171);
-}
-
-html.dark .main-menu__results-count {
-  background-color: var(--theme-bg-elevated, #1f2937);
-  border-color: var(--theme-border-soft, #4b5563);
-  color: var(--theme-text-primary, #ffffff);
 }
 
 /* Ultra-wide screen safety */
