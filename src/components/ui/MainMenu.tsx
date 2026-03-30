@@ -288,10 +288,7 @@ export const MainMenu: React.FC = () => {
               <XIcon size={16} />
             </button>
           )}
-          <UnifiedFilter
-            isOpen={isFilterOpen}
-            onToggle={() => setIsFilterOpen(prev => !prev)}
-          />
+          <UnifiedFilter isOpen={isFilterOpen} onToggle={() => setIsFilterOpen(prev => !prev)} />
         </div>
 
         <div className="main-menu__view-toggle">

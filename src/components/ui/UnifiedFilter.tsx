@@ -21,19 +21,37 @@ type FilterTab = 'category' | 'mode' | 'level';
 type Level = 'a1' | 'a2' | 'b1' | 'b2' | 'c1' | 'c2';
 
 const ALL_CATEGORIES: Category[] = [
-  'Vocabulary', 'Grammar', 'PhrasalVerbs', 'Idioms', 'Reading', 'Review',
+  'Vocabulary',
+  'Grammar',
+  'PhrasalVerbs',
+  'Idioms',
+  'Reading',
+  'Review',
 ];
 const CATEGORY_EMOJIS: Record<Category, string> = {
-  Vocabulary: '📚', Grammar: '📝', PhrasalVerbs: '🔗', Idioms: '💭', Reading: '📖', Review: '🔄',
+  Vocabulary: '📚',
+  Grammar: '📝',
+  PhrasalVerbs: '🔗',
+  Idioms: '💭',
+  Reading: '📖',
+  Review: '🔄',
 };
 const CATEGORY_I18N_KEYS: Record<Category, string> = {
-  Vocabulary: 'categories.vocabulary', Grammar: 'categories.grammar',
-  PhrasalVerbs: 'categories.phrasalverbs', Idioms: 'categories.idioms',
-  Reading: 'categories.reading', Review: 'categories.review',
+  Vocabulary: 'categories.vocabulary',
+  Grammar: 'categories.grammar',
+  PhrasalVerbs: 'categories.phrasalverbs',
+  Idioms: 'categories.idioms',
+  Reading: 'categories.reading',
+  Review: 'categories.review',
 };
 
 const ALL_MODES: LearningMode[] = [
-  'flashcard', 'quiz', 'completion', 'sorting', 'matching', 'reading',
+  'flashcard',
+  'quiz',
+  'completion',
+  'sorting',
+  'matching',
+  'reading',
 ];
 const MODE_ICONS: Record<LearningMode, React.ReactElement> = {
   flashcard: <CreditCard size={13} strokeWidth={2} />,
@@ -44,17 +62,30 @@ const MODE_ICONS: Record<LearningMode, React.ReactElement> = {
   reading: <BookOpen size={13} strokeWidth={2} />,
 };
 const MODE_I18N_KEYS: Record<LearningMode, string> = {
-  flashcard: 'learning.flashcardMode', quiz: 'learning.quizMode',
-  completion: 'learning.completionMode', sorting: 'learning.sortingMode',
-  matching: 'learning.matchingMode', reading: 'learning.readingMode',
+  flashcard: 'learning.flashcardMode',
+  quiz: 'learning.quizMode',
+  completion: 'learning.completionMode',
+  sorting: 'learning.sortingMode',
+  matching: 'learning.matchingMode',
+  reading: 'learning.readingMode',
 };
 
 const ALL_LEVELS: Level[] = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'];
 const LEVEL_COLORS: Record<Level, string> = {
-  a1: '#22c55e', a2: '#eab308', b1: '#f97316', b2: '#ef4444', c1: '#a855f7', c2: '#374151',
+  a1: '#22c55e',
+  a2: '#eab308',
+  b1: '#f97316',
+  b2: '#ef4444',
+  c1: '#a855f7',
+  c2: '#374151',
 };
 const LEVEL_EMOJIS: Record<Level, string> = {
-  a1: '🟢', a2: '🟡', b1: '🟠', b2: '🔴', c1: '🟣', c2: '⚫',
+  a1: '🟢',
+  a2: '🟡',
+  b1: '🟠',
+  b2: '🔴',
+  c1: '🟣',
+  c2: '⚫',
 };
 
 interface UnifiedFilterProps {
@@ -67,9 +98,13 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
   onToggle,
 }) => {
   const {
-    categories, setCategories,
-    learningModes = [] as string[], setLearningModes,
-    level, setLevel, language,
+    categories,
+    setCategories,
+    learningModes = [] as string[],
+    setLearningModes,
+    level,
+    setLevel,
+    language,
   } = useSettingsStore();
   const { t } = useTranslation(language);
   const [internalOpen, setInternalOpen] = useState(false);
@@ -79,8 +114,7 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
   const isOpen = controlledOpen ?? internalOpen;
   const handleToggle = onToggle ?? (() => setInternalOpen(prev => !prev));
 
-  const activeFilterCount =
-    categories.length + learningModes.length + (level !== 'all' ? 1 : 0);
+  const activeFilterCount = categories.length + learningModes.length + (level !== 'all' ? 1 : 0);
 
   // Close on outside click
   useEffect(() => {
@@ -114,9 +148,24 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
   };
 
   const tabs: { key: FilterTab; icon: React.ReactElement; label: string; count: number }[] = [
-    { key: 'category', icon: <Tags size={14} />, label: t('categoryFilter.title'), count: categories.length },
-    { key: 'mode', icon: <Layers size={14} />, label: t('modeFilter.title'), count: learningModes.length },
-    { key: 'level', icon: <GraduationCap size={14} />, label: t('levelFilter.title'), count: level !== 'all' ? 1 : 0 },
+    {
+      key: 'category',
+      icon: <Tags size={14} />,
+      label: t('categoryFilter.title'),
+      count: categories.length,
+    },
+    {
+      key: 'mode',
+      icon: <Layers size={14} />,
+      label: t('modeFilter.title'),
+      count: learningModes.length,
+    },
+    {
+      key: 'level',
+      icon: <GraduationCap size={14} />,
+      label: t('levelFilter.title'),
+      count: level !== 'all' ? 1 : 0,
+    },
   ];
 
   return (
@@ -149,9 +198,7 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
                 >
                   {tab.icon}
                   <span className="unified-filter__tab-label">{tab.label}</span>
-                  {tab.count > 0 && (
-                    <span className="unified-filter__tab-count">{tab.count}</span>
-                  )}
+                  {tab.count > 0 && <span className="unified-filter__tab-count">{tab.count}</span>}
                 </button>
               ))}
             </div>
@@ -223,7 +270,11 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
                       onClick={() => handleSelectLevel(lvl)}
                       aria-pressed={isActive}
                       type="button"
-                      style={isActive ? ({ '--level-color': LEVEL_COLORS[lvl] } as React.CSSProperties) : undefined}
+                      style={
+                        isActive
+                          ? ({ '--level-color': LEVEL_COLORS[lvl] } as React.CSSProperties)
+                          : undefined
+                      }
                     >
                       <span className="unified-filter__chip-emoji" aria-hidden="true">
                         {LEVEL_EMOJIS[lvl]}
