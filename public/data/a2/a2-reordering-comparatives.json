@@ -1,0 +1,135 @@
+[
+  {
+    "id": "reord-a2-cmp-001",
+    "sentence": "This book is more interesting than that one",
+    "words": ["This", "book", "is", "more", "interesting", "than", "that", "one"],
+    "hint": "Long adjectives: more + adjective + than",
+    "explanation": "For long adjectives (3+ syllables), use 'more...than': 'more interesting than'."
+  },
+  {
+    "id": "reord-a2-cmp-002",
+    "sentence": "She is taller than her brother",
+    "words": ["She", "is", "taller", "than", "her", "brother"],
+    "distractors": ["more"],
+    "hint": "Short adjectives: adjective + -er + than",
+    "explanation": "Short adjectives add -er: 'taller than'. Don't use 'more' with short adjectives."
+  },
+  {
+    "id": "reord-a2-cmp-003",
+    "sentence": "This is the best restaurant in the city",
+    "words": ["This", "is", "the", "best", "restaurant", "in", "the", "city"],
+    "hint": "Superlative of 'good' is 'best'",
+    "explanation": "'Good' has an irregular superlative: 'the best'. Always use 'the' before superlatives."
+  },
+  {
+    "id": "reord-a2-cmp-004",
+    "sentence": "My house is bigger than yours",
+    "words": ["My", "house", "is", "bigger", "than", "yours"],
+    "distractors": ["more"],
+    "explanation": "'Big' is short: bigger (not 'more big'). Double the consonant: big → bigger."
+  },
+  {
+    "id": "reord-a2-cmp-005",
+    "sentence": "English is easier than Chinese",
+    "words": ["English", "is", "easier", "than", "Chinese"],
+    "distractors": ["more"],
+    "explanation": "'Easy' ends in -y: change to -ier. 'Easier', not 'more easy'."
+  },
+  {
+    "id": "reord-a2-cmp-006",
+    "sentence": "He is the tallest student in the class",
+    "words": ["He", "is", "the", "tallest", "student", "in", "the", "class"],
+    "hint": "Superlative: the + adjective-est",
+    "explanation": "Superlative of short adjectives: 'the tallest'. Always with 'the'."
+  },
+  {
+    "id": "reord-a2-cmp-007",
+    "sentence": "Summer is hotter than spring",
+    "words": ["Summer", "is", "hotter", "than", "spring"],
+    "distractors": ["more"],
+    "explanation": "'Hot' is short: hotter (not 'more hot'). Double consonant: hot → hotter."
+  },
+  {
+    "id": "reord-a2-cmp-008",
+    "sentence": "This is the most expensive phone in the store",
+    "words": ["This", "is", "the", "most", "expensive", "phone", "in", "the", "store"],
+    "hint": "Long adjectives: the most + adjective",
+    "explanation": "Superlative of long adjectives: 'the most expensive'."
+  },
+  {
+    "id": "reord-a2-cmp-009",
+    "sentence": "Cats are smaller than dogs",
+    "words": ["Cats", "are", "smaller", "than", "dogs"],
+    "explanation": "Comparative with plural subjects uses 'are': 'Cats are smaller than dogs'."
+  },
+  {
+    "id": "reord-a2-cmp-010",
+    "sentence": "This movie is worse than the last one",
+    "words": ["This", "movie", "is", "worse", "than", "the", "last", "one"],
+    "distractors": ["badder"],
+    "explanation": "'Bad' is irregular: worse (not 'badder')."
+  },
+  {
+    "id": "reord-a2-cmp-011",
+    "sentence": "She runs faster than her friends",
+    "words": ["She", "runs", "faster", "than", "her", "friends"],
+    "explanation": "Comparative adverbs also use -er for short words: 'faster than'."
+  },
+  {
+    "id": "reord-a2-cmp-012",
+    "sentence": "This is the cheapest hotel near the beach",
+    "words": ["This", "is", "the", "cheapest", "hotel", "near", "the", "beach"],
+    "explanation": "Superlative: 'the cheapest'. Place description at the end."
+  },
+  {
+    "id": "reord-a2-cmp-013",
+    "sentence": "The blue car is more comfortable than the red one",
+    "words": ["The", "blue", "car", "is", "more", "comfortable", "than", "the", "red", "one"],
+    "explanation": "'Comfortable' is long: 'more comfortable than'."
+  },
+  {
+    "id": "reord-a2-cmp-014",
+    "sentence": "He is the youngest person in the office",
+    "words": ["He", "is", "the", "youngest", "person", "in", "the", "office"],
+    "explanation": "'Young' → 'the youngest'. Change -g to -gest."
+  },
+  {
+    "id": "reord-a2-cmp-015",
+    "sentence": "Today is colder than yesterday",
+    "words": ["Today", "is", "colder", "than", "yesterday"],
+    "distractors": ["more"],
+    "explanation": "'Cold' is short: 'colder' (not 'more cold')."
+  },
+  {
+    "id": "reord-a2-cmp-016",
+    "sentence": "This exercise is the most difficult of all",
+    "words": ["This", "exercise", "is", "the", "most", "difficult", "of", "all"],
+    "explanation": "Superlative of long adjective: 'the most difficult'. 'Of all' at the end."
+  },
+  {
+    "id": "reord-a2-cmp-017",
+    "sentence": "My sister is older than me",
+    "words": ["My", "sister", "is", "older", "than", "me"],
+    "distractors": ["more"],
+    "explanation": "'Old' is short: 'older' (not 'more old')."
+  },
+  {
+    "id": "reord-a2-cmp-018",
+    "sentence": "This is the longest river in the country",
+    "words": ["This", "is", "the", "longest", "river", "in", "the", "country"],
+    "explanation": "Superlative: 'the longest'. 'In the country' specifies the group."
+  },
+  {
+    "id": "reord-a2-cmp-019",
+    "sentence": "Learning online is more convenient than going to class",
+    "words": ["Learning", "online", "is", "more", "convenient", "than", "going", "to", "class"],
+    "explanation": "Gerund as subject + comparative of long adjective + than + gerund phrase."
+  },
+  {
+    "id": "reord-a2-cmp-020",
+    "sentence": "He is the best player on the team",
+    "words": ["He", "is", "the", "best", "player", "on", "the", "team"],
+    "distractors": ["goodest"],
+    "explanation": "'Good' → 'the best' (irregular). Never 'goodest'."
+  }
+]

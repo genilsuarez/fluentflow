@@ -440,6 +440,40 @@
     "difficulty": 1
   },
   {
+    "id": "a1-reordering-basic-sentences",
+    "name": "Basic Sentence Order",
+    "learningMode": "reordering",
+    "dataPath": "data/a1/a1-reordering-basic-sentences.json",
+    "level": [
+      "a1"
+    ],
+    "category": "Grammar",
+    "unit": 1,
+    "prerequisites": [
+      "quiz-basic-review-a1"
+    ],
+    "description": "Practice basic English word order",
+    "estimatedTime": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "a1-reordering-questions-negatives",
+    "name": "Questions & Negatives",
+    "learningMode": "reordering",
+    "dataPath": "data/a1/a1-reordering-questions-negatives.json",
+    "level": [
+      "a1"
+    ],
+    "category": "Grammar",
+    "unit": 1,
+    "prerequisites": [
+      "a1-reordering-basic-sentences"
+    ],
+    "description": "Practice forming questions and negative sentences in English",
+    "estimatedTime": 2,
+    "difficulty": 1
+  },
+  {
     "id": "reading-business-a2",
     "name": "Business Reading",
     "learningMode": "reading",
@@ -450,7 +484,7 @@
     "category": "Reading",
     "unit": 2,
     "prerequisites": [
-      "quiz-basic-review-a1"
+      "a1-reordering-questions-negatives"
     ],
     "description": "Introduction to business English concepts and vocabulary",
     "estimatedTime": 12,
@@ -746,6 +780,23 @@
     "difficulty": 2
   },
   {
+    "id": "a2-reordering-past-tense",
+    "name": "Past Tense Word Order",
+    "learningMode": "reordering",
+    "dataPath": "data/a2/a2-reordering-past-tense.json",
+    "level": [
+      "a2"
+    ],
+    "category": "Grammar",
+    "unit": 2,
+    "prerequisites": [
+      "completion-past-stories-a2"
+    ],
+    "description": "Reorder sentences using past simple with regular and irregular verbs",
+    "estimatedTime": 2,
+    "difficulty": 2
+  },
+  {
     "id": "completion-comparatives-superlatives-a2",
     "name": "Comparatives & Superlatives",
     "learningMode": "completion",
@@ -756,10 +807,27 @@
     "category": "Grammar",
     "unit": 2,
     "prerequisites": [
-      "completion-past-stories-a2"
+      "a2-reordering-past-tense"
     ],
     "description": "Comparative and superlative forms",
     "estimatedTime": 3,
+    "difficulty": 2
+  },
+  {
+    "id": "a2-reordering-comparatives",
+    "name": "Comparatives & Superlatives Word Order",
+    "learningMode": "reordering",
+    "dataPath": "data/a2/a2-reordering-comparatives.json",
+    "level": [
+      "a2"
+    ],
+    "category": "Grammar",
+    "unit": 2,
+    "prerequisites": [
+      "completion-comparatives-superlatives-a2"
+    ],
+    "description": "Reorder sentences with comparative and superlative structures",
+    "estimatedTime": 2,
     "difficulty": 2
   },
   {
@@ -773,10 +841,27 @@
     "category": "Grammar",
     "unit": 2,
     "prerequisites": [
-      "completion-comparatives-superlatives-a2"
+      "a2-reordering-comparatives"
     ],
     "description": "Present Perfect Simple for experiences and recent actions",
     "estimatedTime": 3,
+    "difficulty": 2
+  },
+  {
+    "id": "a2-reordering-present-perfect",
+    "name": "Present Perfect Word Order",
+    "learningMode": "reordering",
+    "dataPath": "data/a2/a2-reordering-present-perfect.json",
+    "level": [
+      "a2"
+    ],
+    "category": "Grammar",
+    "unit": 2,
+    "prerequisites": [
+      "completion-present-perfect-a2"
+    ],
+    "description": "Reorder sentences with present perfect and adverb placement",
+    "estimatedTime": 2,
     "difficulty": 2
   },
   {
@@ -790,7 +875,7 @@
     "category": "PhrasalVerbs",
     "unit": 2,
     "prerequisites": [
-      "completion-present-perfect-a2"
+      "a2-reordering-present-perfect"
     ],
     "description": "Learn phrasal verbs used in work, shopping and social situations",
     "estimatedTime": 12,
@@ -1120,6 +1205,23 @@
     "difficulty": 3
   },
   {
+    "id": "b1-reordering-future-modals",
+    "name": "Future & Modals Word Order",
+    "learningMode": "reordering",
+    "dataPath": "data/b1/b1-reordering-future-modals.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Grammar",
+    "unit": 3,
+    "prerequisites": [
+      "completion-future-forms-b1"
+    ],
+    "description": "Reorder sentences with will, going to, modals, and future forms",
+    "estimatedTime": 2,
+    "difficulty": 3
+  },
+  {
     "id": "completion-conditionals-b1",
     "name": "First & Second Conditionals",
     "learningMode": "completion",
@@ -1133,7 +1235,7 @@
     "estimatedTime": 3,
     "difficulty": 3,
     "prerequisites": [
-      "completion-future-forms-b1"
+      "b1-reordering-future-modals"
     ]
   },
   {
@@ -1154,6 +1256,23 @@
     "difficulty": 3
   },
   {
+    "id": "b1-reordering-conditionals",
+    "name": "Conditionals Word Order",
+    "learningMode": "reordering",
+    "dataPath": "data/b1/b1-reordering-conditionals.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Grammar",
+    "unit": 3,
+    "prerequisites": [
+      "sorting-conditionals-b1"
+    ],
+    "description": "Reorder first and second conditional sentences",
+    "estimatedTime": 2,
+    "difficulty": 3
+  },
+  {
     "id": "flashcard-money-life-b1",
     "name": "Money & Relationships",
     "learningMode": "flashcard",
@@ -1167,7 +1286,7 @@
     "estimatedTime": 1,
     "difficulty": 3,
     "prerequisites": [
-      "sorting-conditionals-b1"
+      "b1-reordering-conditionals"
     ]
   },
   {
@@ -1205,6 +1324,23 @@
     "difficulty": 3
   },
   {
+    "id": "b1-reordering-passive-voice",
+    "name": "Passive Voice Word Order",
+    "learningMode": "reordering",
+    "dataPath": "data/b1/b1-reordering-passive-voice.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Grammar",
+    "unit": 3,
+    "prerequisites": [
+      "quiz-passive-voice-b1"
+    ],
+    "description": "Reorder passive voice sentences in present, past, and modal forms",
+    "estimatedTime": 2,
+    "difficulty": 3
+  },
+  {
     "id": "reading-phrasal-verbs-b1",
     "name": "Phrasal Verbs in Professional Life",
     "learningMode": "reading",
@@ -1215,7 +1351,7 @@
     "category": "PhrasalVerbs",
     "unit": 3,
     "prerequisites": [
-      "quiz-passive-voice-b1"
+      "b1-reordering-passive-voice"
     ],
     "description": "Master phrasal verbs for professional and social contexts",
     "estimatedTime": 12,
@@ -1426,6 +1562,23 @@
     "difficulty": 3
   },
   {
+    "id": "b1-reordering-gerunds-infinitives",
+    "name": "Gerunds & Infinitives Word Order",
+    "learningMode": "reordering",
+    "dataPath": "data/b1/b1-reordering-gerunds-infinitives.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Grammar",
+    "unit": 3,
+    "prerequisites": [
+      "completion-gerunds-infinitives-b1"
+    ],
+    "description": "Reorder sentences with gerund and infinitive verb patterns",
+    "estimatedTime": 2,
+    "difficulty": 3
+  },
+  {
     "id": "quiz-gerunds-infinitives-b1",
     "name": "Gerunds & Infinitives Quiz",
     "learningMode": "quiz",
@@ -1436,7 +1589,7 @@
     "category": "Grammar",
     "unit": 3,
     "prerequisites": [
-      "completion-gerunds-infinitives-b1"
+      "b1-reordering-gerunds-infinitives"
     ],
     "description": "Test your knowledge of gerund and infinitive verb patterns",
     "estimatedTime": 3,
@@ -1715,6 +1868,23 @@
     ]
   },
   {
+    "id": "b2-reordering-conditionals-wish",
+    "name": "Conditionals & Wish Word Order",
+    "learningMode": "reordering",
+    "dataPath": "data/b2/b2-reordering-conditionals-wish.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Grammar",
+    "unit": 4,
+    "prerequisites": [
+      "completion-wish-if-only-b2"
+    ],
+    "description": "Reorder third conditional, mixed conditional, and wish sentences",
+    "estimatedTime": 2,
+    "difficulty": 4
+  },
+  {
     "id": "matching-collocations-b2",
     "name": "Collocations & Expressions",
     "learningMode": "matching",
@@ -1725,7 +1895,7 @@
     "category": "Vocabulary",
     "unit": 4,
     "prerequisites": [
-      "completion-wish-if-only-b2"
+      "b2-reordering-conditionals-wish"
     ],
     "description": "Common English collocations matched with Spanish equivalents (40 pairs)",
     "estimatedTime": 1,
@@ -1749,6 +1919,23 @@
     ]
   },
   {
+    "id": "b2-reordering-passive-causative",
+    "name": "Passive & Causative Word Order",
+    "learningMode": "reordering",
+    "dataPath": "data/b2/b2-reordering-passive-causative.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Grammar",
+    "unit": 4,
+    "prerequisites": [
+      "completion-passive-advanced-b2"
+    ],
+    "description": "Reorder advanced passive, impersonal passive, and causative sentences",
+    "estimatedTime": 2,
+    "difficulty": 4
+  },
+  {
     "id": "reading-idioms-b2",
     "name": "Idioms in Professional Contexts",
     "learningMode": "reading",
@@ -1759,7 +1946,7 @@
     "category": "Idioms",
     "unit": 4,
     "prerequisites": [
-      "completion-passive-advanced-b2"
+      "b2-reordering-passive-causative"
     ],
     "description": "Business and global issue idioms for upper-intermediate learners",
     "estimatedTime": 12,
@@ -1936,6 +2123,23 @@
     "difficulty": 4
   },
   {
+    "id": "b2-reordering-used-to-connectors",
+    "name": "Used To & Connectors Word Order",
+    "learningMode": "reordering",
+    "dataPath": "data/b2/b2-reordering-used-to-connectors.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Grammar",
+    "unit": 4,
+    "prerequisites": [
+      "completion-gerunds-infinitives-advanced-b2"
+    ],
+    "description": "Reorder sentences with used to structures and discourse connectors",
+    "estimatedTime": 2,
+    "difficulty": 4
+  },
+  {
     "id": "quiz-gerunds-infinitives-advanced-b2",
     "name": "Gerunds & Infinitives Advanced Quiz",
     "learningMode": "quiz",
@@ -1946,7 +2150,7 @@
     "category": "Grammar",
     "unit": 4,
     "prerequisites": [
-      "completion-gerunds-infinitives-advanced-b2"
+      "b2-reordering-used-to-connectors"
     ],
     "description": "Test your understanding of verbs that change meaning with gerund vs infinitive",
     "estimatedTime": 3,
@@ -2225,6 +2429,23 @@
     "difficulty": 5
   },
   {
+    "id": "c1-reordering-inversions",
+    "name": "Inversions Word Order",
+    "learningMode": "reordering",
+    "dataPath": "data/c1/c1-reordering-inversions.json",
+    "level": [
+      "c1"
+    ],
+    "category": "Grammar",
+    "unit": 5,
+    "prerequisites": [
+      "quiz-grammar-inversions-c1"
+    ],
+    "description": "Reorder sentences with negative adverbial inversions",
+    "estimatedTime": 2,
+    "difficulty": 5
+  },
+  {
     "id": "quiz-participles-c1",
     "name": "Participles Quiz",
     "learningMode": "quiz",
@@ -2235,7 +2456,7 @@
     "category": "Grammar",
     "unit": 5,
     "prerequisites": [
-      "quiz-grammar-inversions-c1"
+      "c1-reordering-inversions"
     ],
     "description": "Test your knowledge of advanced participle constructions",
     "estimatedTime": 3,
@@ -2259,6 +2480,23 @@
     "difficulty": 5
   },
   {
+    "id": "c1-reordering-complex-prepositions",
+    "name": "Complex Prepositions Word Order",
+    "learningMode": "reordering",
+    "dataPath": "data/c1/c1-reordering-complex-prepositions.json",
+    "level": [
+      "c1"
+    ],
+    "category": "Grammar",
+    "unit": 5,
+    "prerequisites": [
+      "completion-complex-prepositions-practice-c1"
+    ],
+    "description": "Reorder sentences with complex prepositional phrases",
+    "estimatedTime": 2,
+    "difficulty": 5
+  },
+  {
     "id": "completion-advanced-grammar-participles-c1",
     "name": "Participles",
     "learningMode": "completion",
@@ -2269,7 +2507,7 @@
     "category": "Grammar",
     "unit": 5,
     "prerequisites": [
-      "completion-complex-prepositions-practice-c1"
+      "c1-reordering-complex-prepositions"
     ],
     "description": "Advanced participle constructions",
     "estimatedTime": 3,
@@ -2310,6 +2548,23 @@
     "difficulty": 5
   },
   {
+    "id": "c1-reordering-participles-subjunctive",
+    "name": "Participles & Subjunctive Word Order",
+    "learningMode": "reordering",
+    "dataPath": "data/c1/c1-reordering-participles-subjunctive.json",
+    "level": [
+      "c1"
+    ],
+    "category": "Grammar",
+    "unit": 5,
+    "prerequisites": [
+      "completion-advanced-grammar-subjunctive-c1"
+    ],
+    "description": "Reorder participle clauses and subjunctive structures",
+    "estimatedTime": 2,
+    "difficulty": 5
+  },
+  {
     "id": "reading-phrasal-verbs-idioms-c1",
     "name": "Phrasal Verbs & Idioms in Discourse",
     "learningMode": "reading",
@@ -2320,7 +2575,7 @@
     "category": "Reading",
     "unit": 5,
     "prerequisites": [
-      "completion-advanced-grammar-subjunctive-c1"
+      "c1-reordering-participles-subjunctive"
     ],
     "description": "Sophisticated phrasal verbs and idioms in academic and professional discourse",
     "estimatedTime": 12,
@@ -2667,6 +2922,23 @@
     "difficulty": 5
   },
   {
+    "id": "c2-reordering-advanced-structures",
+    "name": "Advanced Structures Word Order",
+    "learningMode": "reordering",
+    "dataPath": "data/c2/c2-reordering-advanced-structures.json",
+    "level": [
+      "c2"
+    ],
+    "category": "Grammar",
+    "unit": 6,
+    "prerequisites": [
+      "completion-advanced-grammatical-structures-c2"
+    ],
+    "description": "Reorder cleft sentences, fronted adverbials, and formal inversions",
+    "estimatedTime": 2,
+    "difficulty": 5
+  },
+  {
     "id": "completion-formal-vocabulary-nuance-c2",
     "name": "Formal & Nuance",
     "learningMode": "completion",
@@ -2677,7 +2949,7 @@
     "category": "Vocabulary",
     "unit": 6,
     "prerequisites": [
-      "completion-advanced-grammatical-structures-c2"
+      "c2-reordering-advanced-structures"
     ],
     "description": "Formal vocabulary and subtle nuances",
     "estimatedTime": 3,
@@ -2854,6 +3126,23 @@
     ]
   },
   {
+    "id": "c2-reordering-discourse-register",
+    "name": "Discourse & Register Word Order",
+    "learningMode": "reordering",
+    "dataPath": "data/c2/c2-reordering-discourse-register.json",
+    "level": [
+      "c2"
+    ],
+    "category": "Grammar",
+    "unit": 6,
+    "prerequisites": [
+      "sorting-discourse-markers-c2"
+    ],
+    "description": "Reorder sentences with formal discourse markers and academic register",
+    "estimatedTime": 2,
+    "difficulty": 5
+  },
+  {
     "id": "quiz-mastery-assessment-c2",
     "name": "Mastery Assessment",
     "learningMode": "quiz",
@@ -2864,7 +3153,7 @@
     "category": "Review",
     "unit": 6,
     "prerequisites": [
-      "sorting-discourse-markers-c2"
+      "c2-reordering-discourse-register"
     ],
     "description": "Comprehensive mastery assessment",
     "estimatedTime": 3,

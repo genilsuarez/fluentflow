@@ -1,0 +1,128 @@
+[
+  {
+    "id": "reord-b2-pc-001",
+    "sentence": "The project is believed to have been completed on time",
+    "words": ["The", "project", "is", "believed", "to", "have", "been", "completed", "on", "time"],
+    "hint": "Impersonal passive: subject + is believed/said + to have + pp",
+    "explanation": "Impersonal passive: 'is believed to have been completed' — reporting structure."
+  },
+  {
+    "id": "reord-b2-pc-002",
+    "sentence": "She had her car repaired at the garage last week",
+    "words": ["She", "had", "her", "car", "repaired", "at", "the", "garage", "last", "week"],
+    "hint": "Causative: have + object + past participle",
+    "explanation": "Causative 'have': subject + had + object + past participle. Someone else did it."
+  },
+  {
+    "id": "reord-b2-pc-003",
+    "sentence": "The suspect is thought to be hiding in the mountains",
+    "words": ["The", "suspect", "is", "thought", "to", "be", "hiding", "in", "the", "mountains"],
+    "explanation": "Impersonal passive: 'is thought to be hiding' — ongoing reported action."
+  },
+  {
+    "id": "reord-b2-pc-004",
+    "sentence": "He got his phone screen replaced yesterday",
+    "words": ["He", "got", "his", "phone", "screen", "replaced", "yesterday"],
+    "hint": "Causative with 'get': get + object + past participle",
+    "explanation": "Causative 'get': more informal than 'have'. 'Got his screen replaced'."
+  },
+  {
+    "id": "reord-b2-pc-005",
+    "sentence": "The new policy is expected to reduce costs significantly",
+    "words": ["The", "new", "policy", "is", "expected", "to", "reduce", "costs", "significantly"],
+    "explanation": "Impersonal passive: 'is expected to reduce'."
+  },
+  {
+    "id": "reord-b2-pc-006",
+    "sentence": "We are having the house painted this weekend",
+    "words": ["We", "are", "having", "the", "house", "painted", "this", "weekend"],
+    "explanation": "Causative present continuous: 'are having the house painted'."
+  },
+  {
+    "id": "reord-b2-pc-007",
+    "sentence": "The company is reported to have lost millions last year",
+    "words": ["The", "company", "is", "reported", "to", "have", "lost", "millions", "last", "year"],
+    "explanation": "Impersonal passive: 'is reported to have lost' — past reported event."
+  },
+  {
+    "id": "reord-b2-pc-008",
+    "sentence": "She needs to get her passport renewed before the trip",
+    "words": ["She", "needs", "to", "get", "her", "passport", "renewed", "before", "the", "trip"],
+    "explanation": "Causative with 'get': 'get her passport renewed'."
+  },
+  {
+    "id": "reord-b2-pc-009",
+    "sentence": "The building was being renovated when the earthquake struck",
+    "words": ["The", "building", "was", "being", "renovated", "when", "the", "earthquake", "struck"],
+    "hint": "Past continuous passive: was/were + being + past participle",
+    "explanation": "Past continuous passive: 'was being renovated' — ongoing past action."
+  },
+  {
+    "id": "reord-b2-pc-010",
+    "sentence": "He is said to be one of the best doctors in the country",
+    "words": ["He", "is", "said", "to", "be", "one", "of", "the", "best", "doctors", "in", "the", "country"],
+    "explanation": "Impersonal passive: 'is said to be'."
+  },
+  {
+    "id": "reord-b2-pc-011",
+    "sentence": "They had their luggage checked at the airport security",
+    "words": ["They", "had", "their", "luggage", "checked", "at", "the", "airport", "security"],
+    "explanation": "Causative 'have': 'had their luggage checked'."
+  },
+  {
+    "id": "reord-b2-pc-012",
+    "sentence": "The results have not been published yet",
+    "words": ["The", "results", "have", "not", "been", "published", "yet"],
+    "hint": "Present perfect passive: have/has + been + past participle",
+    "explanation": "Present perfect passive: 'have not been published'. 'Yet' at the end."
+  },
+  {
+    "id": "reord-b2-pc-013",
+    "sentence": "She is getting her hair done for the wedding tomorrow",
+    "words": ["She", "is", "getting", "her", "hair", "done", "for", "the", "wedding", "tomorrow"],
+    "explanation": "Causative 'get' in present continuous: 'is getting her hair done'."
+  },
+  {
+    "id": "reord-b2-pc-014",
+    "sentence": "The ancient city is known to have been destroyed by a volcano",
+    "words": ["The", "ancient", "city", "is", "known", "to", "have", "been", "destroyed", "by", "a", "volcano"],
+    "explanation": "Impersonal passive + passive infinitive: 'is known to have been destroyed'."
+  },
+  {
+    "id": "reord-b2-pc-015",
+    "sentence": "We should have the contract reviewed by a lawyer",
+    "words": ["We", "should", "have", "the", "contract", "reviewed", "by", "a", "lawyer"],
+    "explanation": "Causative with modal: 'should have the contract reviewed'."
+  },
+  {
+    "id": "reord-b2-pc-016",
+    "sentence": "The bridge had been closed for repairs since January",
+    "words": ["The", "bridge", "had", "been", "closed", "for", "repairs", "since", "January"],
+    "hint": "Past perfect passive: had + been + past participle",
+    "explanation": "Past perfect passive: 'had been closed'. 'Since' for point in time."
+  },
+  {
+    "id": "reord-b2-pc-017",
+    "sentence": "He got his suit dry-cleaned before the interview",
+    "words": ["He", "got", "his", "suit", "dry-cleaned", "before", "the", "interview"],
+    "explanation": "Causative 'get': 'got his suit dry-cleaned'."
+  },
+  {
+    "id": "reord-b2-pc-018",
+    "sentence": "The medicine is supposed to be taken twice a day",
+    "words": ["The", "medicine", "is", "supposed", "to", "be", "taken", "twice", "a", "day"],
+    "explanation": "'Is supposed to be taken' — passive obligation."
+  },
+  {
+    "id": "reord-b2-pc-019",
+    "sentence": "They are having a new security system installed next week",
+    "words": ["They", "are", "having", "a", "new", "security", "system", "installed", "next", "week"],
+    "explanation": "Causative present continuous: 'are having...installed'."
+  },
+  {
+    "id": "reord-b2-pc-020",
+    "sentence": "The painting is believed to have been stolen during the war",
+    "words": ["The", "painting", "is", "believed", "to", "have", "been", "stolen", "during", "the", "war"],
+    "explanation": "Impersonal passive + passive perfect infinitive: 'is believed to have been stolen'."
+  }
+]

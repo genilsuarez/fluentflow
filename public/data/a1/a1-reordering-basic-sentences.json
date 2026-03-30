@@ -1,0 +1,175 @@
+[
+  {
+    "id": "reord-a1-001",
+    "sentence": "I am a student",
+    "words": ["I", "am", "a", "student"],
+    "hint": "Subject + verb to be + article + noun",
+    "explanation": "In English, the basic sentence order is Subject + Verb + Object. 'I am a student' follows this pattern."
+  },
+  {
+    "id": "reord-a1-002",
+    "sentence": "She likes red apples",
+    "words": ["She", "likes", "red", "apples"],
+    "explanation": "The adjective 'red' goes before the noun 'apples' in English."
+  },
+  {
+    "id": "reord-a1-003",
+    "sentence": "The cat is on the table",
+    "words": ["The", "cat", "is", "on", "the", "table"],
+    "distractors": ["are"],
+    "hint": "Subject + verb to be + preposition + place",
+    "explanation": "'The cat is on the table' uses 'is' (singular) because there is one cat. 'Are' is for plural subjects."
+  },
+  {
+    "id": "reord-a1-004",
+    "sentence": "We go to school every day",
+    "words": ["We", "go", "to", "school", "every", "day"],
+    "explanation": "Time expressions like 'every day' go at the end of the sentence."
+  },
+  {
+    "id": "reord-a1-005",
+    "sentence": "He has a big dog",
+    "words": ["He", "has", "a", "big", "dog"],
+    "distractors": ["have"],
+    "explanation": "With 'He' we use 'has', not 'have'. 'Have' is used with I/you/we/they."
+  },
+  {
+    "id": "reord-a1-006",
+    "sentence": "They are from Spain",
+    "words": ["They", "are", "from", "Spain"],
+    "hint": "Subject + verb to be + preposition + country"
+  },
+  {
+    "id": "reord-a1-007",
+    "sentence": "I drink water every morning",
+    "words": ["I", "drink", "water", "every", "morning"],
+    "distractors": ["drinks"],
+    "hint": "Use the base form of the verb with 'I'",
+    "explanation": "With 'I', we use the base form 'drink', not 'drinks'. 'Drinks' is for he/she/it."
+  },
+  {
+    "id": "reord-a1-008",
+    "sentence": "My name is Maria",
+    "words": ["My", "name", "is", "Maria"],
+    "explanation": "This is a common way to introduce yourself in English."
+  },
+  {
+    "id": "reord-a1-009",
+    "sentence": "Do you like coffee",
+    "words": ["Do", "you", "like", "coffee"],
+    "hint": "Questions start with an auxiliary verb"
+  },
+  {
+    "id": "reord-a1-010",
+    "sentence": "There are two books on the desk",
+    "words": ["There", "are", "two", "books", "on", "the", "desk"],
+    "distractors": ["is"],
+    "hint": "Use 'are' with plural nouns",
+    "explanation": "We use 'there are' with plural nouns like 'books'. 'There is' is for singular nouns."
+  },
+  {
+    "id": "reord-a1-011",
+    "sentence": "She is a good teacher",
+    "words": ["She", "is", "a", "good", "teacher"],
+    "explanation": "Adjectives go before the noun in English: 'good teacher', not 'teacher good'."
+  },
+  {
+    "id": "reord-a1-012",
+    "sentence": "We live in a small house",
+    "words": ["We", "live", "in", "a", "small", "house"],
+    "distractors": ["lives"],
+    "hint": "Use 'live' with we/they/I/you",
+    "explanation": "'Lives' is for he/she/it. With 'we', use the base form 'live'."
+  },
+  {
+    "id": "reord-a1-013",
+    "sentence": "The children play in the park",
+    "words": ["The", "children", "play", "in", "the", "park"],
+    "distractors": ["plays"],
+    "explanation": "'Children' is plural, so we use 'play', not 'plays'."
+  },
+  {
+    "id": "reord-a1-014",
+    "sentence": "He works at a hospital",
+    "words": ["He", "works", "at", "a", "hospital"],
+    "distractors": ["work"],
+    "hint": "Third person singular needs -s",
+    "explanation": "With 'he/she/it', add -s to the verb: 'works', not 'work'."
+  },
+  {
+    "id": "reord-a1-015",
+    "sentence": "I have two brothers and one sister",
+    "words": ["I", "have", "two", "brothers", "and", "one", "sister"],
+    "explanation": "Numbers go before nouns: 'two brothers', 'one sister'."
+  },
+  {
+    "id": "reord-a1-016",
+    "sentence": "The book is under the chair",
+    "words": ["The", "book", "is", "under", "the", "chair"],
+    "hint": "Subject + be + preposition of place + location",
+    "explanation": "Prepositions of place (under, on, in, next to) go between the verb and the location."
+  },
+  {
+    "id": "reord-a1-017",
+    "sentence": "My mother cooks dinner every night",
+    "words": ["My", "mother", "cooks", "dinner", "every", "night"],
+    "distractors": ["cook"],
+    "explanation": "'My mother' is third person singular (she), so we use 'cooks' with -s."
+  },
+  {
+    "id": "reord-a1-018",
+    "sentence": "They eat lunch at school",
+    "words": ["They", "eat", "lunch", "at", "school"],
+    "explanation": "The pattern is: Subject + verb + object + place."
+  },
+  {
+    "id": "reord-a1-019",
+    "sentence": "It is very cold today",
+    "words": ["It", "is", "very", "cold", "today"],
+    "hint": "We use 'it is' to talk about weather",
+    "explanation": "In English, we use 'it' as the subject for weather: 'It is cold', not just 'Is cold'."
+  },
+  {
+    "id": "reord-a1-020",
+    "sentence": "She reads books in the library",
+    "words": ["She", "reads", "books", "in", "the", "library"],
+    "distractors": ["read"],
+    "explanation": "With 'she', the verb needs -s: 'reads'. 'Read' is for I/you/we/they."
+  },
+  {
+    "id": "reord-a1-021",
+    "sentence": "There is a park near my house",
+    "words": ["There", "is", "a", "park", "near", "my", "house"],
+    "distractors": ["are"],
+    "hint": "Use 'is' with singular nouns",
+    "explanation": "'Park' is singular, so we use 'there is'. 'There are' is for plural nouns."
+  },
+  {
+    "id": "reord-a1-022",
+    "sentence": "I always wake up at seven",
+    "words": ["I", "always", "wake", "up", "at", "seven"],
+    "hint": "Adverbs of frequency go before the main verb",
+    "explanation": "Frequency adverbs (always, usually, never) go before the main verb: 'I always wake up'."
+  },
+  {
+    "id": "reord-a1-023",
+    "sentence": "He is ten years old",
+    "words": ["He", "is", "ten", "years", "old"],
+    "hint": "In English we use 'be' for age, not 'have'",
+    "explanation": "English uses 'is' for age: 'He is ten years old', unlike Spanish which uses 'tiene'."
+  },
+  {
+    "id": "reord-a1-024",
+    "sentence": "The dog sleeps on the sofa",
+    "words": ["The", "dog", "sleeps", "on", "the", "sofa"],
+    "distractors": ["sleep"],
+    "explanation": "'The dog' is singular (it), so we use 'sleeps' with -s."
+  },
+  {
+    "id": "reord-a1-025",
+    "sentence": "We usually have breakfast at eight",
+    "words": ["We", "usually", "have", "breakfast", "at", "eight"],
+    "hint": "Adverb of frequency before the main verb",
+    "explanation": "'Usually' goes before the main verb 'have': 'We usually have breakfast'."
+  }
+]

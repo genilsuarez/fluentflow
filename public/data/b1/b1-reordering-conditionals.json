@@ -1,0 +1,134 @@
+[
+  {
+    "id": "reord-b1-cond-001",
+    "sentence": "If it rains tomorrow, we will stay at home",
+    "words": ["If", "it", "rains", "tomorrow,", "we", "will", "stay", "at", "home"],
+    "hint": "First conditional: If + present, will + base verb",
+    "explanation": "First conditional for real possibilities: If + present simple, will + base form."
+  },
+  {
+    "id": "reord-b1-cond-002",
+    "sentence": "I would travel the world if I had more money",
+    "words": ["I", "would", "travel", "the", "world", "if", "I", "had", "more", "money"],
+    "distractors": ["will"],
+    "hint": "Second conditional: would + base verb, if + past simple",
+    "explanation": "Second conditional for hypothetical: would + base (not 'will'). If + past simple."
+  },
+  {
+    "id": "reord-b1-cond-003",
+    "sentence": "If you study hard, you will pass the exam",
+    "words": ["If", "you", "study", "hard,", "you", "will", "pass", "the", "exam"],
+    "explanation": "First conditional: real possibility. If + present, will + base."
+  },
+  {
+    "id": "reord-b1-cond-004",
+    "sentence": "She would buy a house if she earned more",
+    "words": ["She", "would", "buy", "a", "house", "if", "she", "earned", "more"],
+    "distractors": ["will"],
+    "explanation": "Second conditional: hypothetical. 'Would' (not 'will') + if + past simple."
+  },
+  {
+    "id": "reord-b1-cond-005",
+    "sentence": "If we leave now, we will arrive on time",
+    "words": ["If", "we", "leave", "now,", "we", "will", "arrive", "on", "time"],
+    "explanation": "First conditional: real possibility about leaving now."
+  },
+  {
+    "id": "reord-b1-cond-006",
+    "sentence": "If I were you, I would accept the job offer",
+    "words": ["If", "I", "were", "you,", "I", "would", "accept", "the", "job", "offer"],
+    "distractors": ["was"],
+    "hint": "Use 'were' (not 'was') in second conditional with I/he/she",
+    "explanation": "In formal second conditional, use 'were' for all subjects: 'If I were you'."
+  },
+  {
+    "id": "reord-b1-cond-007",
+    "sentence": "We will miss the bus if we do not hurry",
+    "words": ["We", "will", "miss", "the", "bus", "if", "we", "do", "not", "hurry"],
+    "explanation": "First conditional with result clause first: 'We will miss...if we don't hurry'."
+  },
+  {
+    "id": "reord-b1-cond-008",
+    "sentence": "If he spoke better English, he would get the promotion",
+    "words": ["If", "he", "spoke", "better", "English,", "he", "would", "get", "the", "promotion"],
+    "distractors": ["will"],
+    "explanation": "Second conditional: If + past simple ('spoke'), would + base form."
+  },
+  {
+    "id": "reord-b1-cond-009",
+    "sentence": "If the weather is nice, we will have a picnic",
+    "words": ["If", "the", "weather", "is", "nice,", "we", "will", "have", "a", "picnic"],
+    "explanation": "First conditional: If + present simple, will + base form."
+  },
+  {
+    "id": "reord-b1-cond-010",
+    "sentence": "I would learn to play the piano if I had time",
+    "words": ["I", "would", "learn", "to", "play", "the", "piano", "if", "I", "had", "time"],
+    "explanation": "Second conditional with result clause first."
+  },
+  {
+    "id": "reord-b1-cond-011",
+    "sentence": "If she calls me, I will tell her the news",
+    "words": ["If", "she", "calls", "me,", "I", "will", "tell", "her", "the", "news"],
+    "explanation": "First conditional: If + present ('calls'), will + base ('tell')."
+  },
+  {
+    "id": "reord-b1-cond-012",
+    "sentence": "They would move to the countryside if they could",
+    "words": ["They", "would", "move", "to", "the", "countryside", "if", "they", "could"],
+    "distractors": ["will", "can"],
+    "explanation": "Second conditional: 'would move' + 'if they could' (not 'can' — past form needed)."
+  },
+  {
+    "id": "reord-b1-cond-013",
+    "sentence": "If you do not water the plants, they will die",
+    "words": ["If", "you", "do", "not", "water", "the", "plants,", "they", "will", "die"],
+    "explanation": "First conditional with negative if-clause."
+  },
+  {
+    "id": "reord-b1-cond-014",
+    "sentence": "If I lived near the beach, I would swim every day",
+    "words": ["If", "I", "lived", "near", "the", "beach,", "I", "would", "swim", "every", "day"],
+    "distractors": ["will"],
+    "explanation": "Second conditional: If + past ('lived'), would + base ('swim')."
+  },
+  {
+    "id": "reord-b1-cond-015",
+    "sentence": "We will go to the park if it stops raining",
+    "words": ["We", "will", "go", "to", "the", "park", "if", "it", "stops", "raining"],
+    "explanation": "First conditional with result clause first."
+  },
+  {
+    "id": "reord-b1-cond-016",
+    "sentence": "If they offered me the position, I would take it",
+    "words": ["If", "they", "offered", "me", "the", "position,", "I", "would", "take", "it"],
+    "distractors": ["will"],
+    "explanation": "Second conditional: If + past ('offered'), would + base ('take')."
+  },
+  {
+    "id": "reord-b1-cond-017",
+    "sentence": "If you eat too much, you will feel sick",
+    "words": ["If", "you", "eat", "too", "much,", "you", "will", "feel", "sick"],
+    "explanation": "First conditional for general consequences."
+  },
+  {
+    "id": "reord-b1-cond-018",
+    "sentence": "She would be happier if she changed her job",
+    "words": ["She", "would", "be", "happier", "if", "she", "changed", "her", "job"],
+    "distractors": ["will"],
+    "explanation": "Second conditional: 'would be' + if + past ('changed')."
+  },
+  {
+    "id": "reord-b1-cond-019",
+    "sentence": "If I see him at the meeting, I will give him your message",
+    "words": ["If", "I", "see", "him", "at", "the", "meeting,", "I", "will", "give", "him", "your", "message"],
+    "explanation": "First conditional: If + present ('see'), will + base ('give')."
+  },
+  {
+    "id": "reord-b1-cond-020",
+    "sentence": "If we had a bigger house, we would invite more friends",
+    "words": ["If", "we", "had", "a", "bigger", "house,", "we", "would", "invite", "more", "friends"],
+    "distractors": ["will"],
+    "explanation": "Second conditional: If + past ('had'), would + base ('invite')."
+  }
+]

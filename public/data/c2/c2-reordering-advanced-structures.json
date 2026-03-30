@@ -1,0 +1,156 @@
+[
+  {
+    "id": "reord-c2-as-001",
+    "sentence": "It was the manager who made the final decision about the project",
+    "words": ["It", "was", "the", "manager", "who", "made", "the", "final", "decision", "about", "the", "project"],
+    "hint": "Cleft sentence: It was + focus + who/that + clause",
+    "explanation": "Cleft sentence for emphasis: 'It was the manager who' focuses on the agent."
+  },
+  {
+    "id": "reord-c2-as-002",
+    "sentence": "Were it not for the intervention of the committee, the proposal would have failed",
+    "words": ["Were", "it", "not", "for", "the", "intervention", "of", "the", "committee,", "the", "proposal", "would", "have", "failed"],
+    "hint": "Formal conditional inversion: Were it not for...",
+    "explanation": "Formal inverted conditional: 'Were it not for' = 'If it were not for'."
+  },
+  {
+    "id": "reord-c2-as-003",
+    "sentence": "What concerns me most is the lack of transparency in the process",
+    "words": ["What", "concerns", "me", "most", "is", "the", "lack", "of", "transparency", "in", "the", "process"],
+    "hint": "Pseudo-cleft: What + clause + is + focus",
+    "explanation": "Pseudo-cleft for emphasis: 'What concerns me most is...' focuses on the concern."
+  },
+  {
+    "id": "reord-c2-as-004",
+    "sentence": "Had the government acted sooner, the crisis could have been averted",
+    "words": ["Had", "the", "government", "acted", "sooner,", "the", "crisis", "could", "have", "been", "averted"],
+    "explanation": "Formal inverted conditional: 'Had they acted' = 'If they had acted'."
+  },
+  {
+    "id": "reord-c2-as-005",
+    "sentence": "Under no circumstances should the data be shared without authorization",
+    "words": ["Under", "no", "circumstances", "should", "the", "data", "be", "shared", "without", "authorization"],
+    "explanation": "Negative fronting triggers inversion: 'should the data be shared'."
+  },
+  {
+    "id": "reord-c2-as-006",
+    "sentence": "It is imperative that the findings be replicated before publication",
+    "words": ["It", "is", "imperative", "that", "the", "findings", "be", "replicated", "before", "publication"],
+    "distractors": ["are"],
+    "explanation": "Subjunctive: 'be replicated' (not 'are replicated') after 'it is imperative that'."
+  },
+  {
+    "id": "reord-c2-as-007",
+    "sentence": "So profound was the impact that the entire industry was transformed",
+    "words": ["So", "profound", "was", "the", "impact", "that", "the", "entire", "industry", "was", "transformed"],
+    "explanation": "'So + adjective' triggers inversion: 'So profound was the impact'."
+  },
+  {
+    "id": "reord-c2-as-008",
+    "sentence": "What the research ultimately revealed was a fundamental flaw in the theory",
+    "words": ["What", "the", "research", "ultimately", "revealed", "was", "a", "fundamental", "flaw", "in", "the", "theory"],
+    "explanation": "Pseudo-cleft: 'What the research revealed was...' for emphasis."
+  },
+  {
+    "id": "reord-c2-as-009",
+    "sentence": "Should you require any further assistance, please do not hesitate to contact us",
+    "words": ["Should", "you", "require", "any", "further", "assistance,", "please", "do", "not", "hesitate", "to", "contact", "us"],
+    "explanation": "Formal inverted conditional: 'Should you require' = 'If you should require'."
+  },
+  {
+    "id": "reord-c2-as-010",
+    "sentence": "It was not until the twentieth century that women gained the right to vote",
+    "words": ["It", "was", "not", "until", "the", "twentieth", "century", "that", "women", "gained", "the", "right", "to", "vote"],
+    "explanation": "Cleft with 'not until': 'It was not until...that' for temporal emphasis."
+  },
+  {
+    "id": "reord-c2-as-011",
+    "sentence": "Such was the complexity of the problem that no single solution could be found",
+    "words": ["Such", "was", "the", "complexity", "of", "the", "problem", "that", "no", "single", "solution", "could", "be", "found"],
+    "explanation": "'Such + be' triggers inversion: 'Such was the complexity'."
+  },
+  {
+    "id": "reord-c2-as-012",
+    "sentence": "Were the proposal to be accepted, it would fundamentally change the organization",
+    "words": ["Were", "the", "proposal", "to", "be", "accepted,", "it", "would", "fundamentally", "change", "the", "organization"],
+    "explanation": "Formal inverted conditional: 'Were X to be' = 'If X were to be'."
+  },
+  {
+    "id": "reord-c2-as-013",
+    "sentence": "What distinguishes this approach from others is its emphasis on collaboration",
+    "words": ["What", "distinguishes", "this", "approach", "from", "others", "is", "its", "emphasis", "on", "collaboration"],
+    "explanation": "Pseudo-cleft: 'What distinguishes...is' for emphasis on the key difference."
+  },
+  {
+    "id": "reord-c2-as-014",
+    "sentence": "Not only was the experiment successful, but it also opened new avenues of research",
+    "words": ["Not", "only", "was", "the", "experiment", "successful,", "but", "it", "also", "opened", "new", "avenues", "of", "research"],
+    "explanation": "'Not only' triggers inversion: 'was the experiment successful'."
+  },
+  {
+    "id": "reord-c2-as-015",
+    "sentence": "It is the quality of the argument, not its length, that determines its persuasiveness",
+    "words": ["It", "is", "the", "quality", "of", "the", "argument,", "not", "its", "length,", "that", "determines", "its", "persuasiveness"],
+    "explanation": "Cleft with contrast: 'It is X, not Y, that...' for emphatic contrast."
+  },
+  {
+    "id": "reord-c2-as-016",
+    "sentence": "Had it not been for her determination, the project would never have succeeded",
+    "words": ["Had", "it", "not", "been", "for", "her", "determination,", "the", "project", "would", "never", "have", "succeeded"],
+    "explanation": "Formal inverted conditional: 'Had it not been for' = 'If it had not been for'."
+  },
+  {
+    "id": "reord-c2-as-017",
+    "sentence": "Rarely has a single discovery had such a profound effect on society",
+    "words": ["Rarely", "has", "a", "single", "discovery", "had", "such", "a", "profound", "effect", "on", "society"],
+    "explanation": "'Rarely' triggers inversion: 'has a single discovery had'."
+  },
+  {
+    "id": "reord-c2-as-018",
+    "sentence": "What remains to be seen is whether the policy will achieve its intended goals",
+    "words": ["What", "remains", "to", "be", "seen", "is", "whether", "the", "policy", "will", "achieve", "its", "intended", "goals"],
+    "explanation": "Pseudo-cleft: 'What remains to be seen is whether...' for suspense."
+  },
+  {
+    "id": "reord-c2-as-019",
+    "sentence": "Only through sustained effort and collaboration can meaningful change be achieved",
+    "words": ["Only", "through", "sustained", "effort", "and", "collaboration", "can", "meaningful", "change", "be", "achieved"],
+    "explanation": "'Only through' triggers inversion: 'can meaningful change be achieved'."
+  },
+  {
+    "id": "reord-c2-as-020",
+    "sentence": "It was precisely this lack of foresight that led to the eventual collapse",
+    "words": ["It", "was", "precisely", "this", "lack", "of", "foresight", "that", "led", "to", "the", "eventual", "collapse"],
+    "explanation": "Cleft with intensifier: 'It was precisely X that...' for strong emphasis."
+  },
+  {
+    "id": "reord-c2-as-021",
+    "sentence": "So rapidly did the situation deteriorate that emergency measures were required",
+    "words": ["So", "rapidly", "did", "the", "situation", "deteriorate", "that", "emergency", "measures", "were", "required"],
+    "explanation": "'So + adverb' triggers inversion: 'did the situation deteriorate'."
+  },
+  {
+    "id": "reord-c2-as-022",
+    "sentence": "Were one to examine the evidence more closely, a different conclusion might emerge",
+    "words": ["Were", "one", "to", "examine", "the", "evidence", "more", "closely,", "a", "different", "conclusion", "might", "emerge"],
+    "explanation": "Formal inverted conditional with impersonal 'one': 'Were one to examine'."
+  },
+  {
+    "id": "reord-c2-as-023",
+    "sentence": "What the author fails to acknowledge is the role of cultural context",
+    "words": ["What", "the", "author", "fails", "to", "acknowledge", "is", "the", "role", "of", "cultural", "context"],
+    "explanation": "Pseudo-cleft for academic critique: 'What X fails to acknowledge is...'."
+  },
+  {
+    "id": "reord-c2-as-024",
+    "sentence": "At no time during the negotiations was any compromise offered by either side",
+    "words": ["At", "no", "time", "during", "the", "negotiations", "was", "any", "compromise", "offered", "by", "either", "side"],
+    "explanation": "'At no time' triggers inversion: 'was any compromise offered'."
+  },
+  {
+    "id": "reord-c2-as-025",
+    "sentence": "It is only by questioning our assumptions that we can arrive at the truth",
+    "words": ["It", "is", "only", "by", "questioning", "our", "assumptions", "that", "we", "can", "arrive", "at", "the", "truth"],
+    "explanation": "Cleft with 'only by': 'It is only by X that...' for emphasis on method."
+  }
+]

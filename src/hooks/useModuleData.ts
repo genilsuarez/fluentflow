@@ -96,6 +96,9 @@ export const useModuleData = (moduleId: string) => {
             case 'matching':
               limit = gameSettings.matchingMode.wordCount;
               break;
+            case 'reordering':
+              limit = gameSettings.reorderingMode?.itemCount ?? 10;
+              break;
           }
         }
 

@@ -1,5 +1,5 @@
 // Core Types
-export type LearningMode = 'flashcard' | 'quiz' | 'completion' | 'sorting' | 'matching' | 'reading';
+export type LearningMode = 'flashcard' | 'quiz' | 'completion' | 'sorting' | 'matching' | 'reading' | 'reordering';
 type DifficultyLevel = 'a1' | 'a2' | 'b1' | 'b2' | 'c1' | 'c2';
 export type Category = 'Vocabulary' | 'Grammar' | 'PhrasalVerbs' | 'Idioms' | 'Reading' | 'Review';
 
@@ -117,6 +117,14 @@ interface GrammarPoint {
   commonMistakes?: string[];
 }
 
+export interface ReorderingData extends BaseLearningData {
+  sentence: string;
+  words: string[];
+  distractors?: string[];
+  hint?: string;
+  explanation?: string;
+}
+
 // Union type for all learning data
 type LearningData =
   | FlashcardData
@@ -124,7 +132,8 @@ type LearningData =
   | CompletionData
   | SortingData
   | MatchingData
-  | ReadingData;
+  | ReadingData
+  | ReorderingData;
 
 // Language and Theme types
 export type Language = 'en' | 'es';

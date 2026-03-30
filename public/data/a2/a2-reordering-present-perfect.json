@@ -1,0 +1,136 @@
+[
+  {
+    "id": "reord-a2-pp-001",
+    "sentence": "I have never been to London",
+    "words": ["I", "have", "never", "been", "to", "London"],
+    "hint": "have + never + past participle",
+    "explanation": "'Never' goes between 'have' and the past participle: 'have never been'."
+  },
+  {
+    "id": "reord-a2-pp-002",
+    "sentence": "She has already finished her homework",
+    "words": ["She", "has", "already", "finished", "her", "homework"],
+    "distractors": ["have"],
+    "hint": "'Already' goes between has/have and the past participle",
+    "explanation": "With 'she', use 'has' (not 'have'). 'Already' goes before the past participle."
+  },
+  {
+    "id": "reord-a2-pp-003",
+    "sentence": "Have you ever visited Paris",
+    "words": ["Have", "you", "ever", "visited", "Paris"],
+    "hint": "Questions: Have/Has + subject + ever + past participle",
+    "explanation": "Present perfect questions: Have + subject + ever + past participle."
+  },
+  {
+    "id": "reord-a2-pp-004",
+    "sentence": "They have just arrived at the hotel",
+    "words": ["They", "have", "just", "arrived", "at", "the", "hotel"],
+    "explanation": "'Just' goes between 'have' and the past participle for recent actions."
+  },
+  {
+    "id": "reord-a2-pp-005",
+    "sentence": "He has not eaten anything today",
+    "words": ["He", "has", "not", "eaten", "anything", "today"],
+    "distractors": ["have"],
+    "explanation": "With 'he', use 'has not' (not 'have not'). 'Eat' → 'eaten' (irregular)."
+  },
+  {
+    "id": "reord-a2-pp-006",
+    "sentence": "We have lived here for five years",
+    "words": ["We", "have", "lived", "here", "for", "five", "years"],
+    "hint": "'For' is used with periods of time",
+    "explanation": "'For' + period of time: 'for five years'. Place at the end."
+  },
+  {
+    "id": "reord-a2-pp-007",
+    "sentence": "Has she ever tried Japanese food",
+    "words": ["Has", "she", "ever", "tried", "Japanese", "food"],
+    "distractors": ["Have"],
+    "explanation": "With 'she', use 'Has' (not 'Have') in questions."
+  },
+  {
+    "id": "reord-a2-pp-008",
+    "sentence": "I have already seen that movie twice",
+    "words": ["I", "have", "already", "seen", "that", "movie", "twice"],
+    "explanation": "'Already' between have and past participle. 'Twice' at the end."
+  },
+  {
+    "id": "reord-a2-pp-009",
+    "sentence": "They have not finished the project yet",
+    "words": ["They", "have", "not", "finished", "the", "project", "yet"],
+    "hint": "'Yet' goes at the end in negatives",
+    "explanation": "'Yet' goes at the end of negative sentences: 'have not finished...yet'."
+  },
+  {
+    "id": "reord-a2-pp-010",
+    "sentence": "She has worked here since January",
+    "words": ["She", "has", "worked", "here", "since", "January"],
+    "distractors": ["have"],
+    "hint": "'Since' is used with a specific point in time",
+    "explanation": "'Since' + specific time: 'since January'. 'Has' with 'she', not 'have'."
+  },
+  {
+    "id": "reord-a2-pp-011",
+    "sentence": "Have they ever been to a concert",
+    "words": ["Have", "they", "ever", "been", "to", "a", "concert"],
+    "explanation": "Question: Have + subject + ever + past participle."
+  },
+  {
+    "id": "reord-a2-pp-012",
+    "sentence": "He has just left the office",
+    "words": ["He", "has", "just", "left", "the", "office"],
+    "distractors": ["have"],
+    "explanation": "'He' uses 'has'. 'Just' for very recent actions: 'has just left'."
+  },
+  {
+    "id": "reord-a2-pp-013",
+    "sentence": "I have not spoken to her recently",
+    "words": ["I", "have", "not", "spoken", "to", "her", "recently"],
+    "explanation": "'Speak' → 'spoken' (irregular). 'Recently' at the end."
+  },
+  {
+    "id": "reord-a2-pp-014",
+    "sentence": "We have known each other for ten years",
+    "words": ["We", "have", "known", "each", "other", "for", "ten", "years"],
+    "explanation": "'Know' → 'known' (irregular). 'For' + duration at the end."
+  },
+  {
+    "id": "reord-a2-pp-015",
+    "sentence": "Has he already read the new book",
+    "words": ["Has", "he", "already", "read", "the", "new", "book"],
+    "distractors": ["Have"],
+    "explanation": "'He' uses 'Has' in questions. 'Already' before past participle."
+  },
+  {
+    "id": "reord-a2-pp-016",
+    "sentence": "She has never forgotten her first day at school",
+    "words": ["She", "has", "never", "forgotten", "her", "first", "day", "at", "school"],
+    "explanation": "'Forget' → 'forgotten'. 'Never' between has and past participle."
+  },
+  {
+    "id": "reord-a2-pp-017",
+    "sentence": "I have always wanted to learn French",
+    "words": ["I", "have", "always", "wanted", "to", "learn", "French"],
+    "explanation": "'Always' between have and past participle: 'have always wanted'."
+  },
+  {
+    "id": "reord-a2-pp-018",
+    "sentence": "They have not decided where to go yet",
+    "words": ["They", "have", "not", "decided", "where", "to", "go", "yet"],
+    "explanation": "Negative + 'yet' at the end. 'Where to go' is an embedded question."
+  },
+  {
+    "id": "reord-a2-pp-019",
+    "sentence": "He has traveled to many countries",
+    "words": ["He", "has", "traveled", "to", "many", "countries"],
+    "distractors": ["have"],
+    "explanation": "'He' uses 'has', not 'have'."
+  },
+  {
+    "id": "reord-a2-pp-020",
+    "sentence": "Have you finished your dinner yet",
+    "words": ["Have", "you", "finished", "your", "dinner", "yet"],
+    "hint": "'Yet' at the end in questions",
+    "explanation": "'Yet' goes at the end of questions: 'Have you finished...yet?'"
+  }
+]

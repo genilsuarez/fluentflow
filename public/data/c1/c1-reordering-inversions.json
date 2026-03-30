@@ -1,0 +1,127 @@
+[
+  {
+    "id": "reord-c1-inv-001",
+    "sentence": "Not only did she finish the project, but she also exceeded expectations",
+    "words": ["Not", "only", "did", "she", "finish", "the", "project,", "but", "she", "also", "exceeded", "expectations"],
+    "hint": "Not only + auxiliary + subject (inversion)",
+    "explanation": "'Not only' triggers inversion: 'did she finish' (not 'she did finish')."
+  },
+  {
+    "id": "reord-c1-inv-002",
+    "sentence": "Hardly had he arrived when the meeting started",
+    "words": ["Hardly", "had", "he", "arrived", "when", "the", "meeting", "started"],
+    "hint": "Hardly + had + subject + pp + when",
+    "explanation": "'Hardly' triggers inversion: 'had he arrived'. Followed by 'when'."
+  },
+  {
+    "id": "reord-c1-inv-003",
+    "sentence": "Never have I seen such a beautiful sunset",
+    "words": ["Never", "have", "I", "seen", "such", "a", "beautiful", "sunset"],
+    "explanation": "'Never' at the start triggers inversion: 'have I seen'."
+  },
+  {
+    "id": "reord-c1-inv-004",
+    "sentence": "Seldom does he take a day off from work",
+    "words": ["Seldom", "does", "he", "take", "a", "day", "off", "from", "work"],
+    "explanation": "'Seldom' triggers inversion: 'does he take'."
+  },
+  {
+    "id": "reord-c1-inv-005",
+    "sentence": "No sooner had they left than it started to rain",
+    "words": ["No", "sooner", "had", "they", "left", "than", "it", "started", "to", "rain"],
+    "hint": "No sooner + had + subject + pp + than",
+    "explanation": "'No sooner' triggers inversion: 'had they left'. Followed by 'than'."
+  },
+  {
+    "id": "reord-c1-inv-006",
+    "sentence": "Only after reading the report did she understand the problem",
+    "words": ["Only", "after", "reading", "the", "report", "did", "she", "understand", "the", "problem"],
+    "explanation": "'Only after' triggers inversion in the main clause: 'did she understand'."
+  },
+  {
+    "id": "reord-c1-inv-007",
+    "sentence": "Under no circumstances should you share this information",
+    "words": ["Under", "no", "circumstances", "should", "you", "share", "this", "information"],
+    "explanation": "'Under no circumstances' triggers inversion: 'should you share'."
+  },
+  {
+    "id": "reord-c1-inv-008",
+    "sentence": "Rarely do we get the chance to work with such talented people",
+    "words": ["Rarely", "do", "we", "get", "the", "chance", "to", "work", "with", "such", "talented", "people"],
+    "explanation": "'Rarely' triggers inversion: 'do we get'."
+  },
+  {
+    "id": "reord-c1-inv-009",
+    "sentence": "Not until the results were published did the public react",
+    "words": ["Not", "until", "the", "results", "were", "published", "did", "the", "public", "react"],
+    "hint": "Not until + clause + inversion in main clause",
+    "explanation": "'Not until' triggers inversion in the main clause: 'did the public react'."
+  },
+  {
+    "id": "reord-c1-inv-010",
+    "sentence": "Little did they know that the company was about to close",
+    "words": ["Little", "did", "they", "know", "that", "the", "company", "was", "about", "to", "close"],
+    "explanation": "'Little' triggers inversion: 'did they know'."
+  },
+  {
+    "id": "reord-c1-inv-011",
+    "sentence": "Only when she apologized did he agree to continue the discussion",
+    "words": ["Only", "when", "she", "apologized", "did", "he", "agree", "to", "continue", "the", "discussion"],
+    "explanation": "'Only when' triggers inversion in the main clause: 'did he agree'."
+  },
+  {
+    "id": "reord-c1-inv-012",
+    "sentence": "At no point during the trial was the defendant allowed to speak",
+    "words": ["At", "no", "point", "during", "the", "trial", "was", "the", "defendant", "allowed", "to", "speak"],
+    "explanation": "'At no point' triggers inversion: 'was the defendant allowed'."
+  },
+  {
+    "id": "reord-c1-inv-013",
+    "sentence": "So impressed was the jury that they gave her the highest score",
+    "words": ["So", "impressed", "was", "the", "jury", "that", "they", "gave", "her", "the", "highest", "score"],
+    "hint": "So + adjective + be + subject (inversion)",
+    "explanation": "'So + adjective' triggers inversion: 'So impressed was the jury'."
+  },
+  {
+    "id": "reord-c1-inv-014",
+    "sentence": "In no way does this decision reflect our personal opinions",
+    "words": ["In", "no", "way", "does", "this", "decision", "reflect", "our", "personal", "opinions"],
+    "explanation": "'In no way' triggers inversion: 'does this decision reflect'."
+  },
+  {
+    "id": "reord-c1-inv-015",
+    "sentence": "Only by working together can we solve this complex problem",
+    "words": ["Only", "by", "working", "together", "can", "we", "solve", "this", "complex", "problem"],
+    "explanation": "'Only by' triggers inversion: 'can we solve'."
+  },
+  {
+    "id": "reord-c1-inv-016",
+    "sentence": "Not once did he complain about the difficult conditions",
+    "words": ["Not", "once", "did", "he", "complain", "about", "the", "difficult", "conditions"],
+    "explanation": "'Not once' triggers inversion: 'did he complain'."
+  },
+  {
+    "id": "reord-c1-inv-017",
+    "sentence": "Scarcely had the concert begun when the power went out",
+    "words": ["Scarcely", "had", "the", "concert", "begun", "when", "the", "power", "went", "out"],
+    "explanation": "'Scarcely' triggers inversion: 'had the concert begun'. Followed by 'when'."
+  },
+  {
+    "id": "reord-c1-inv-018",
+    "sentence": "On no account must this document be shared with outsiders",
+    "words": ["On", "no", "account", "must", "this", "document", "be", "shared", "with", "outsiders"],
+    "explanation": "'On no account' triggers inversion: 'must this document be shared'."
+  },
+  {
+    "id": "reord-c1-inv-019",
+    "sentence": "Only if you complete the training will you receive the certificate",
+    "words": ["Only", "if", "you", "complete", "the", "training", "will", "you", "receive", "the", "certificate"],
+    "explanation": "'Only if' triggers inversion in the main clause: 'will you receive'."
+  },
+  {
+    "id": "reord-c1-inv-020",
+    "sentence": "Nowhere in the city will you find a better restaurant than this",
+    "words": ["Nowhere", "in", "the", "city", "will", "you", "find", "a", "better", "restaurant", "than", "this"],
+    "explanation": "'Nowhere' triggers inversion: 'will you find'."
+  }
+]

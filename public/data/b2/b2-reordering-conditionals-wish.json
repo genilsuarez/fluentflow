@@ -1,0 +1,164 @@
+[
+  {
+    "id": "reord-b2-cw-001",
+    "sentence": "If she had studied harder, she would have passed the exam",
+    "words": ["If", "she", "had", "studied", "harder,", "she", "would", "have", "passed", "the", "exam"],
+    "distractors": ["would had"],
+    "hint": "Third conditional: If + had + pp, would have + pp",
+    "explanation": "Third conditional: If + past perfect, would have + past participle. Never 'would had'."
+  },
+  {
+    "id": "reord-b2-cw-002",
+    "sentence": "I wish I had known about the deadline earlier",
+    "words": ["I", "wish", "I", "had", "known", "about", "the", "deadline", "earlier"],
+    "hint": "Wish + past perfect for past regrets",
+    "explanation": "Wish + past perfect for regrets about the past: 'wish I had known'."
+  },
+  {
+    "id": "reord-b2-cw-003",
+    "sentence": "If they had left earlier, they would not have missed the flight",
+    "words": ["If", "they", "had", "left", "earlier,", "they", "would", "not", "have", "missed", "the", "flight"],
+    "explanation": "Third conditional negative: 'would not have missed'."
+  },
+  {
+    "id": "reord-b2-cw-004",
+    "sentence": "I wish I could speak Japanese fluently",
+    "words": ["I", "wish", "I", "could", "speak", "Japanese", "fluently"],
+    "hint": "Wish + could for present wishes about ability",
+    "explanation": "Wish + could + base form for wishes about present ability."
+  },
+  {
+    "id": "reord-b2-cw-005",
+    "sentence": "If I had accepted that job, I would be living in London now",
+    "words": ["If", "I", "had", "accepted", "that", "job,", "I", "would", "be", "living", "in", "London", "now"],
+    "hint": "Mixed conditional: past condition, present result",
+    "explanation": "Mixed conditional: If + past perfect (past), would + be + -ing (present result)."
+  },
+  {
+    "id": "reord-b2-cw-006",
+    "sentence": "If only I had listened to my parents' advice",
+    "words": ["If", "only", "I", "had", "listened", "to", "my", "parents'", "advice"],
+    "explanation": "'If only' + past perfect for strong regret about the past."
+  },
+  {
+    "id": "reord-b2-cw-007",
+    "sentence": "He would have been promoted if he had worked harder",
+    "words": ["He", "would", "have", "been", "promoted", "if", "he", "had", "worked", "harder"],
+    "distractors": ["would had"],
+    "explanation": "Third conditional with result first. 'Would have been' (not 'would had been')."
+  },
+  {
+    "id": "reord-b2-cw-008",
+    "sentence": "I wish people would stop using so much plastic",
+    "words": ["I", "wish", "people", "would", "stop", "using", "so", "much", "plastic"],
+    "hint": "Wish + would for complaints about others",
+    "explanation": "Wish + would for annoyance or complaints about other people's behavior."
+  },
+  {
+    "id": "reord-b2-cw-009",
+    "sentence": "If we had not taken that shortcut, we would still be lost",
+    "words": ["If", "we", "had", "not", "taken", "that", "shortcut,", "we", "would", "still", "be", "lost"],
+    "explanation": "Mixed conditional: past condition (had not taken), present result (would be lost)."
+  },
+  {
+    "id": "reord-b2-cw-010",
+    "sentence": "She wishes she had not said those things to him",
+    "words": ["She", "wishes", "she", "had", "not", "said", "those", "things", "to", "him"],
+    "explanation": "Wish + past perfect negative for regretting past actions."
+  },
+  {
+    "id": "reord-b2-cw-011",
+    "sentence": "If he were more confident, he would have applied for the position",
+    "words": ["If", "he", "were", "more", "confident,", "he", "would", "have", "applied", "for", "the", "position"],
+    "distractors": ["was"],
+    "hint": "Mixed conditional: present condition, past result",
+    "explanation": "Mixed: If + were (present), would have + pp (past result). Use 'were' not 'was'."
+  },
+  {
+    "id": "reord-b2-cw-012",
+    "sentence": "I wish I did not have to work this weekend",
+    "words": ["I", "wish", "I", "did", "not", "have", "to", "work", "this", "weekend"],
+    "explanation": "Wish + past simple for present wishes: 'wish I didn't have to'."
+  },
+  {
+    "id": "reord-b2-cw-013",
+    "sentence": "If they had invested in that company, they would be rich now",
+    "words": ["If", "they", "had", "invested", "in", "that", "company,", "they", "would", "be", "rich", "now"],
+    "explanation": "Mixed conditional: past condition, present result."
+  },
+  {
+    "id": "reord-b2-cw-014",
+    "sentence": "If only she had told us the truth from the beginning",
+    "words": ["If", "only", "she", "had", "told", "us", "the", "truth", "from", "the", "beginning"],
+    "explanation": "'If only' + past perfect for strong past regret."
+  },
+  {
+    "id": "reord-b2-cw-015",
+    "sentence": "We would not have gotten lost if we had used the map",
+    "words": ["We", "would", "not", "have", "gotten", "lost", "if", "we", "had", "used", "the", "map"],
+    "distractors": ["would had"],
+    "explanation": "Third conditional negative with result first. 'Would not have' (never 'would had')."
+  },
+  {
+    "id": "reord-b2-cw-016",
+    "sentence": "I wish the weather were better today",
+    "words": ["I", "wish", "the", "weather", "were", "better", "today"],
+    "distractors": ["was"],
+    "explanation": "Wish + were (subjunctive) for present wishes. Formal: 'were' not 'was'."
+  },
+  {
+    "id": "reord-b2-cw-017",
+    "sentence": "If she had not missed the interview, she might have gotten the job",
+    "words": ["If", "she", "had", "not", "missed", "the", "interview,", "she", "might", "have", "gotten", "the", "job"],
+    "explanation": "Third conditional with 'might' instead of 'would' for less certainty."
+  },
+  {
+    "id": "reord-b2-cw-018",
+    "sentence": "He wishes he had traveled more when he was younger",
+    "words": ["He", "wishes", "he", "had", "traveled", "more", "when", "he", "was", "younger"],
+    "explanation": "Wish + past perfect for past regret with time clause."
+  },
+  {
+    "id": "reord-b2-cw-019",
+    "sentence": "If I had known you were coming, I would have prepared dinner",
+    "words": ["If", "I", "had", "known", "you", "were", "coming,", "I", "would", "have", "prepared", "dinner"],
+    "explanation": "Third conditional with embedded clause: 'had known you were coming'."
+  },
+  {
+    "id": "reord-b2-cw-020",
+    "sentence": "I wish I were taller so I could reach the top shelf",
+    "words": ["I", "wish", "I", "were", "taller", "so", "I", "could", "reach", "the", "top", "shelf"],
+    "distractors": ["was"],
+    "explanation": "Wish + were for present wish + 'so' clause for purpose."
+  },
+  {
+    "id": "reord-b2-cw-021",
+    "sentence": "If we had booked the tickets earlier, they would have been cheaper",
+    "words": ["If", "we", "had", "booked", "the", "tickets", "earlier,", "they", "would", "have", "been", "cheaper"],
+    "explanation": "Third conditional: past perfect condition, would have + pp result."
+  },
+  {
+    "id": "reord-b2-cw-022",
+    "sentence": "She wishes her neighbors would not play loud music at night",
+    "words": ["She", "wishes", "her", "neighbors", "would", "not", "play", "loud", "music", "at", "night"],
+    "explanation": "Wish + would for complaints about others' behavior."
+  },
+  {
+    "id": "reord-b2-cw-023",
+    "sentence": "If only we had more time to finish the project",
+    "words": ["If", "only", "we", "had", "more", "time", "to", "finish", "the", "project"],
+    "explanation": "'If only' + past simple for present wishes (like 'wish')."
+  },
+  {
+    "id": "reord-b2-cw-024",
+    "sentence": "If he had not been so careless, the accident would not have happened",
+    "words": ["If", "he", "had", "not", "been", "so", "careless,", "the", "accident", "would", "not", "have", "happened"],
+    "explanation": "Third conditional: double negative — 'had not been' and 'would not have happened'."
+  },
+  {
+    "id": "reord-b2-cw-025",
+    "sentence": "I wish I had started learning English when I was a child",
+    "words": ["I", "wish", "I", "had", "started", "learning", "English", "when", "I", "was", "a", "child"],
+    "explanation": "Wish + past perfect for past regret with time clause."
+  }
+]

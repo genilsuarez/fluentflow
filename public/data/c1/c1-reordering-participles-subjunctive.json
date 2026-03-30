@@ -1,0 +1,136 @@
+[
+  {
+    "id": "reord-c1-ps-001",
+    "sentence": "Having completed the research, the team published their findings",
+    "words": ["Having", "completed", "the", "research,", "the", "team", "published", "their", "findings"],
+    "hint": "Perfect participle clause: Having + pp, main clause",
+    "explanation": "Perfect participle: 'Having completed' shows the first action was finished before the second."
+  },
+  {
+    "id": "reord-c1-ps-002",
+    "sentence": "It is essential that every employee attend the training session",
+    "words": ["It", "is", "essential", "that", "every", "employee", "attend", "the", "training", "session"],
+    "distractors": ["attends"],
+    "hint": "Subjunctive: base form after 'it is essential that'",
+    "explanation": "Subjunctive: 'attend' (base form, not 'attends') after 'it is essential that'."
+  },
+  {
+    "id": "reord-c1-ps-003",
+    "sentence": "Surrounded by mountains, the village looked incredibly peaceful",
+    "words": ["Surrounded", "by", "mountains,", "the", "village", "looked", "incredibly", "peaceful"],
+    "explanation": "Past participle clause: 'Surrounded by mountains' describes the village."
+  },
+  {
+    "id": "reord-c1-ps-004",
+    "sentence": "The manager insisted that the report be submitted by Friday",
+    "words": ["The", "manager", "insisted", "that", "the", "report", "be", "submitted", "by", "Friday"],
+    "distractors": ["was"],
+    "hint": "Subjunctive: 'be' (not 'was') after 'insisted that'",
+    "explanation": "Subjunctive after 'insist': 'be submitted' (not 'was submitted')."
+  },
+  {
+    "id": "reord-c1-ps-005",
+    "sentence": "Walking through the park, she noticed the first signs of spring",
+    "words": ["Walking", "through", "the", "park,", "she", "noticed", "the", "first", "signs", "of", "spring"],
+    "explanation": "Present participle clause: 'Walking through the park' — simultaneous action."
+  },
+  {
+    "id": "reord-c1-ps-006",
+    "sentence": "It is vital that the government take immediate action",
+    "words": ["It", "is", "vital", "that", "the", "government", "take", "immediate", "action"],
+    "distractors": ["takes"],
+    "explanation": "Subjunctive: 'take' (not 'takes') after 'it is vital that'."
+  },
+  {
+    "id": "reord-c1-ps-007",
+    "sentence": "Having been warned about the storm, they decided to stay home",
+    "words": ["Having", "been", "warned", "about", "the", "storm,", "they", "decided", "to", "stay", "home"],
+    "hint": "Passive perfect participle: Having been + pp",
+    "explanation": "Passive perfect participle: 'Having been warned' — they received the warning first."
+  },
+  {
+    "id": "reord-c1-ps-008",
+    "sentence": "The doctor recommended that she rest for at least a week",
+    "words": ["The", "doctor", "recommended", "that", "she", "rest", "for", "at", "least", "a", "week"],
+    "distractors": ["rests"],
+    "explanation": "Subjunctive after 'recommend': 'rest' (not 'rests')."
+  },
+  {
+    "id": "reord-c1-ps-009",
+    "sentence": "Exhausted from the long journey, the travelers fell asleep immediately",
+    "words": ["Exhausted", "from", "the", "long", "journey,", "the", "travelers", "fell", "asleep", "immediately"],
+    "explanation": "Past participle clause: 'Exhausted from the journey' describes the travelers' state."
+  },
+  {
+    "id": "reord-c1-ps-010",
+    "sentence": "They proposed that the meeting be postponed until next week",
+    "words": ["They", "proposed", "that", "the", "meeting", "be", "postponed", "until", "next", "week"],
+    "distractors": ["was"],
+    "explanation": "Subjunctive after 'propose': 'be postponed' (not 'was postponed')."
+  },
+  {
+    "id": "reord-c1-ps-011",
+    "sentence": "Not knowing what to say, he remained silent throughout the meeting",
+    "words": ["Not", "knowing", "what", "to", "say,", "he", "remained", "silent", "throughout", "the", "meeting"],
+    "explanation": "Negative participle clause: 'Not knowing' — reason for the main action."
+  },
+  {
+    "id": "reord-c1-ps-012",
+    "sentence": "It is imperative that all passengers fasten their seatbelts",
+    "words": ["It", "is", "imperative", "that", "all", "passengers", "fasten", "their", "seatbelts"],
+    "distractors": ["fastens"],
+    "explanation": "Subjunctive: 'fasten' (not 'fastens') after 'it is imperative that'."
+  },
+  {
+    "id": "reord-c1-ps-013",
+    "sentence": "Built in the nineteenth century, the cathedral attracts millions of visitors",
+    "words": ["Built", "in", "the", "nineteenth", "century,", "the", "cathedral", "attracts", "millions", "of", "visitors"],
+    "explanation": "Past participle clause: 'Built in the 19th century' gives background about the cathedral."
+  },
+  {
+    "id": "reord-c1-ps-014",
+    "sentence": "The committee demanded that the director resign immediately",
+    "words": ["The", "committee", "demanded", "that", "the", "director", "resign", "immediately"],
+    "distractors": ["resigns"],
+    "explanation": "Subjunctive after 'demand': 'resign' (not 'resigns')."
+  },
+  {
+    "id": "reord-c1-ps-015",
+    "sentence": "Having lived abroad for years, she speaks four languages fluently",
+    "words": ["Having", "lived", "abroad", "for", "years,", "she", "speaks", "four", "languages", "fluently"],
+    "explanation": "Perfect participle: 'Having lived abroad' — past experience leading to present ability."
+  },
+  {
+    "id": "reord-c1-ps-016",
+    "sentence": "It is crucial that the data be analyzed before making any decisions",
+    "words": ["It", "is", "crucial", "that", "the", "data", "be", "analyzed", "before", "making", "any", "decisions"],
+    "distractors": ["is"],
+    "explanation": "Subjunctive: 'be analyzed' (not 'is analyzed') after 'it is crucial that'."
+  },
+  {
+    "id": "reord-c1-ps-017",
+    "sentence": "Inspired by her grandmother, she decided to become a doctor",
+    "words": ["Inspired", "by", "her", "grandmother,", "she", "decided", "to", "become", "a", "doctor"],
+    "explanation": "Past participle clause: 'Inspired by her grandmother' — motivation."
+  },
+  {
+    "id": "reord-c1-ps-018",
+    "sentence": "The professor suggested that each student write a research proposal",
+    "words": ["The", "professor", "suggested", "that", "each", "student", "write", "a", "research", "proposal"],
+    "distractors": ["writes"],
+    "explanation": "Subjunctive after 'suggest': 'write' (not 'writes')."
+  },
+  {
+    "id": "reord-c1-ps-019",
+    "sentence": "Realizing his mistake, the student quickly corrected the answer",
+    "words": ["Realizing", "his", "mistake,", "the", "student", "quickly", "corrected", "the", "answer"],
+    "explanation": "Present participle clause: 'Realizing his mistake' — simultaneous realization."
+  },
+  {
+    "id": "reord-c1-ps-020",
+    "sentence": "It is necessary that every applicant provide two references",
+    "words": ["It", "is", "necessary", "that", "every", "applicant", "provide", "two", "references"],
+    "distractors": ["provides"],
+    "explanation": "Subjunctive: 'provide' (not 'provides') after 'it is necessary that'."
+  }
+]

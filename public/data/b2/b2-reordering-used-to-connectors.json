@@ -1,0 +1,134 @@
+[
+  {
+    "id": "reord-b2-uc-001",
+    "sentence": "She used to live in Paris before moving to London",
+    "words": ["She", "used", "to", "live", "in", "Paris", "before", "moving", "to", "London"],
+    "hint": "Used to + base verb for past habits",
+    "explanation": "'Used to' + base form for past habits that no longer happen."
+  },
+  {
+    "id": "reord-b2-uc-002",
+    "sentence": "He is not used to working long hours yet",
+    "words": ["He", "is", "not", "used", "to", "working", "long", "hours", "yet"],
+    "distractors": ["work"],
+    "hint": "Be used to + gerund for being accustomed",
+    "explanation": "'Be used to' + gerund (not base form): 'is used to working'."
+  },
+  {
+    "id": "reord-b2-uc-003",
+    "sentence": "Although the weather was terrible, we enjoyed the trip",
+    "words": ["Although", "the", "weather", "was", "terrible,", "we", "enjoyed", "the", "trip"],
+    "hint": "Although introduces a contrast clause",
+    "explanation": "'Although' + contrast clause, then main clause."
+  },
+  {
+    "id": "reord-b2-uc-004",
+    "sentence": "I am getting used to the new schedule gradually",
+    "words": ["I", "am", "getting", "used", "to", "the", "new", "schedule", "gradually"],
+    "distractors": ["get"],
+    "hint": "Get used to + noun/gerund for becoming accustomed",
+    "explanation": "'Getting used to' for the process of becoming accustomed."
+  },
+  {
+    "id": "reord-b2-uc-005",
+    "sentence": "However, the results were not as expected",
+    "words": ["However,", "the", "results", "were", "not", "as", "expected"],
+    "explanation": "'However' at the start introduces contrast with the previous idea."
+  },
+  {
+    "id": "reord-b2-uc-006",
+    "sentence": "They used to go camping every summer when they were children",
+    "words": ["They", "used", "to", "go", "camping", "every", "summer", "when", "they", "were", "children"],
+    "explanation": "'Used to' for past habits with time clause."
+  },
+  {
+    "id": "reord-b2-uc-007",
+    "sentence": "Despite the high cost, many students choose to study abroad",
+    "words": ["Despite", "the", "high", "cost,", "many", "students", "choose", "to", "study", "abroad"],
+    "hint": "Despite + noun phrase (no clause)",
+    "explanation": "'Despite' + noun phrase (not a clause): 'despite the high cost'."
+  },
+  {
+    "id": "reord-b2-uc-008",
+    "sentence": "She did not use to like vegetables as a child",
+    "words": ["She", "did", "not", "use", "to", "like", "vegetables", "as", "a", "child"],
+    "distractors": ["used"],
+    "hint": "Negative: did not use to (not 'used to')",
+    "explanation": "In negatives: 'did not use to' (base form), not 'did not used to'."
+  },
+  {
+    "id": "reord-b2-uc-009",
+    "sentence": "Furthermore, the company plans to expand into new markets",
+    "words": ["Furthermore,", "the", "company", "plans", "to", "expand", "into", "new", "markets"],
+    "explanation": "'Furthermore' adds information to the previous point."
+  },
+  {
+    "id": "reord-b2-uc-010",
+    "sentence": "He has finally got used to driving on the left side",
+    "words": ["He", "has", "finally", "got", "used", "to", "driving", "on", "the", "left", "side"],
+    "distractors": ["drive"],
+    "explanation": "'Got used to' + gerund: 'got used to driving' (not 'drive')."
+  },
+  {
+    "id": "reord-b2-uc-011",
+    "sentence": "Nevertheless, the team managed to finish the project on time",
+    "words": ["Nevertheless,", "the", "team", "managed", "to", "finish", "the", "project", "on", "time"],
+    "explanation": "'Nevertheless' introduces a surprising result despite previous difficulties."
+  },
+  {
+    "id": "reord-b2-uc-012",
+    "sentence": "I used to think that learning English was impossible",
+    "words": ["I", "used", "to", "think", "that", "learning", "English", "was", "impossible"],
+    "explanation": "'Used to' for past beliefs that have changed."
+  },
+  {
+    "id": "reord-b2-uc-013",
+    "sentence": "In addition to the salary, the job offers excellent benefits",
+    "words": ["In", "addition", "to", "the", "salary,", "the", "job", "offers", "excellent", "benefits"],
+    "explanation": "'In addition to' adds extra information."
+  },
+  {
+    "id": "reord-b2-uc-014",
+    "sentence": "She is used to dealing with difficult customers at work",
+    "words": ["She", "is", "used", "to", "dealing", "with", "difficult", "customers", "at", "work"],
+    "distractors": ["deal"],
+    "explanation": "'Be used to' + gerund: 'is used to dealing' (not 'deal')."
+  },
+  {
+    "id": "reord-b2-uc-015",
+    "sentence": "On the other hand, working from home can be isolating",
+    "words": ["On", "the", "other", "hand,", "working", "from", "home", "can", "be", "isolating"],
+    "explanation": "'On the other hand' presents the opposite perspective."
+  },
+  {
+    "id": "reord-b2-uc-016",
+    "sentence": "Did you use to play any sports when you were at school",
+    "words": ["Did", "you", "use", "to", "play", "any", "sports", "when", "you", "were", "at", "school"],
+    "distractors": ["used"],
+    "explanation": "Question form: 'Did you use to' (not 'used to')."
+  },
+  {
+    "id": "reord-b2-uc-017",
+    "sentence": "As a result, the company decided to change its strategy",
+    "words": ["As", "a", "result,", "the", "company", "decided", "to", "change", "its", "strategy"],
+    "explanation": "'As a result' introduces a consequence."
+  },
+  {
+    "id": "reord-b2-uc-018",
+    "sentence": "We are slowly getting used to the colder climate here",
+    "words": ["We", "are", "slowly", "getting", "used", "to", "the", "colder", "climate", "here"],
+    "explanation": "'Getting used to' + noun for gradual adaptation."
+  },
+  {
+    "id": "reord-b2-uc-019",
+    "sentence": "Even though he apologized, she was still upset with him",
+    "words": ["Even", "though", "he", "apologized,", "she", "was", "still", "upset", "with", "him"],
+    "explanation": "'Even though' introduces a stronger contrast than 'although'."
+  },
+  {
+    "id": "reord-b2-uc-020",
+    "sentence": "There used to be a cinema on this street years ago",
+    "words": ["There", "used", "to", "be", "a", "cinema", "on", "this", "street", "years", "ago"],
+    "explanation": "'There used to be' for things that existed in the past but no longer do."
+  }
+]

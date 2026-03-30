@@ -1,0 +1,123 @@
+[
+  {
+    "id": "reord-c1-cp-001",
+    "sentence": "In spite of the difficulties, the project was delivered on time",
+    "words": ["In", "spite", "of", "the", "difficulties,", "the", "project", "was", "delivered", "on", "time"],
+    "hint": "In spite of + noun phrase",
+    "explanation": "'In spite of' + noun phrase introduces contrast: 'in spite of the difficulties'."
+  },
+  {
+    "id": "reord-c1-cp-002",
+    "sentence": "With regard to your application, we will contact you next week",
+    "words": ["With", "regard", "to", "your", "application,", "we", "will", "contact", "you", "next", "week"],
+    "explanation": "'With regard to' introduces the topic being addressed."
+  },
+  {
+    "id": "reord-c1-cp-003",
+    "sentence": "On behalf of the entire team, I would like to thank you",
+    "words": ["On", "behalf", "of", "the", "entire", "team,", "I", "would", "like", "to", "thank", "you"],
+    "explanation": "'On behalf of' means representing someone: 'on behalf of the team'."
+  },
+  {
+    "id": "reord-c1-cp-004",
+    "sentence": "In accordance with the regulations, all employees must wear badges",
+    "words": ["In", "accordance", "with", "the", "regulations,", "all", "employees", "must", "wear", "badges"],
+    "explanation": "'In accordance with' means following rules: formal register."
+  },
+  {
+    "id": "reord-c1-cp-005",
+    "sentence": "As a consequence of the budget cuts, several programs were canceled",
+    "words": ["As", "a", "consequence", "of", "the", "budget", "cuts,", "several", "programs", "were", "canceled"],
+    "explanation": "'As a consequence of' introduces a result of something."
+  },
+  {
+    "id": "reord-c1-cp-006",
+    "sentence": "By means of advanced technology, scientists discovered new species",
+    "words": ["By", "means", "of", "advanced", "technology,", "scientists", "discovered", "new", "species"],
+    "explanation": "'By means of' describes the method or instrument used."
+  },
+  {
+    "id": "reord-c1-cp-007",
+    "sentence": "In the event of an emergency, please follow the evacuation procedures",
+    "words": ["In", "the", "event", "of", "an", "emergency,", "please", "follow", "the", "evacuation", "procedures"],
+    "explanation": "'In the event of' means 'if something happens': conditional formal register."
+  },
+  {
+    "id": "reord-c1-cp-008",
+    "sentence": "With reference to our previous conversation, I am writing to confirm",
+    "words": ["With", "reference", "to", "our", "previous", "conversation,", "I", "am", "writing", "to", "confirm"],
+    "explanation": "'With reference to' introduces the topic in formal correspondence."
+  },
+  {
+    "id": "reord-c1-cp-009",
+    "sentence": "In addition to his teaching duties, he conducts research",
+    "words": ["In", "addition", "to", "his", "teaching", "duties,", "he", "conducts", "research"],
+    "explanation": "'In addition to' adds extra information: 'besides his teaching duties'."
+  },
+  {
+    "id": "reord-c1-cp-010",
+    "sentence": "For the purpose of this study, we interviewed fifty participants",
+    "words": ["For", "the", "purpose", "of", "this", "study,", "we", "interviewed", "fifty", "participants"],
+    "explanation": "'For the purpose of' explains the reason or goal."
+  },
+  {
+    "id": "reord-c1-cp-011",
+    "sentence": "In view of the current situation, we have decided to postpone the event",
+    "words": ["In", "view", "of", "the", "current", "situation,", "we", "have", "decided", "to", "postpone", "the", "event"],
+    "explanation": "'In view of' means 'considering': introduces the reason for a decision."
+  },
+  {
+    "id": "reord-c1-cp-012",
+    "sentence": "On account of the heavy rain, the outdoor concert was moved indoors",
+    "words": ["On", "account", "of", "the", "heavy", "rain,", "the", "outdoor", "concert", "was", "moved", "indoors"],
+    "explanation": "'On account of' means 'because of': formal register."
+  },
+  {
+    "id": "reord-c1-cp-013",
+    "sentence": "In terms of quality, this product is far superior to its competitors",
+    "words": ["In", "terms", "of", "quality,", "this", "product", "is", "far", "superior", "to", "its", "competitors"],
+    "explanation": "'In terms of' specifies the aspect being discussed."
+  },
+  {
+    "id": "reord-c1-cp-014",
+    "sentence": "Prior to the meeting, all participants should review the agenda",
+    "words": ["Prior", "to", "the", "meeting,", "all", "participants", "should", "review", "the", "agenda"],
+    "explanation": "'Prior to' means 'before': formal alternative to 'before'."
+  },
+  {
+    "id": "reord-c1-cp-015",
+    "sentence": "In contrast to the previous model, this version is much more efficient",
+    "words": ["In", "contrast", "to", "the", "previous", "model,", "this", "version", "is", "much", "more", "efficient"],
+    "explanation": "'In contrast to' highlights differences between two things."
+  },
+  {
+    "id": "reord-c1-cp-016",
+    "sentence": "With a view to improving safety, new regulations were introduced",
+    "words": ["With", "a", "view", "to", "improving", "safety,", "new", "regulations", "were", "introduced"],
+    "explanation": "'With a view to' + gerund: expresses purpose or intention."
+  },
+  {
+    "id": "reord-c1-cp-017",
+    "sentence": "In the absence of clear evidence, the case was dismissed",
+    "words": ["In", "the", "absence", "of", "clear", "evidence,", "the", "case", "was", "dismissed"],
+    "explanation": "'In the absence of' means 'without' or 'lacking'."
+  },
+  {
+    "id": "reord-c1-cp-018",
+    "sentence": "On the grounds that it was unsafe, the building was demolished",
+    "words": ["On", "the", "grounds", "that", "it", "was", "unsafe,", "the", "building", "was", "demolished"],
+    "explanation": "'On the grounds that' introduces the reason or justification."
+  },
+  {
+    "id": "reord-c1-cp-019",
+    "sentence": "In light of recent developments, the company revised its strategy",
+    "words": ["In", "light", "of", "recent", "developments,", "the", "company", "revised", "its", "strategy"],
+    "explanation": "'In light of' means 'considering' or 'because of new information'."
+  },
+  {
+    "id": "reord-c1-cp-020",
+    "sentence": "For the sake of clarity, let me explain the process step by step",
+    "words": ["For", "the", "sake", "of", "clarity,", "let", "me", "explain", "the", "process", "step", "by", "step"],
+    "explanation": "'For the sake of' means 'in order to achieve or preserve something'."
+  }
+]

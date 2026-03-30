@@ -1,0 +1,139 @@
+[
+  {
+    "id": "reord-a2-pt-001",
+    "sentence": "She visited her grandmother last weekend",
+    "words": ["She", "visited", "her", "grandmother", "last", "weekend"],
+    "hint": "Subject + past verb + object + time expression",
+    "explanation": "Regular past tense: add -ed. Time expressions go at the end."
+  },
+  {
+    "id": "reord-a2-pt-002",
+    "sentence": "They went to the beach yesterday",
+    "words": ["They", "went", "to", "the", "beach", "yesterday"],
+    "distractors": ["goed"],
+    "explanation": "'Go' is irregular: went (not 'goed'). 'Yesterday' goes at the end."
+  },
+  {
+    "id": "reord-a2-pt-003",
+    "sentence": "I ate a sandwich for lunch",
+    "words": ["I", "ate", "a", "sandwich", "for", "lunch"],
+    "distractors": ["eated"],
+    "explanation": "'Eat' is irregular: ate (not 'eated')."
+  },
+  {
+    "id": "reord-a2-pt-004",
+    "sentence": "He did not go to work yesterday",
+    "words": ["He", "did", "not", "go", "to", "work", "yesterday"],
+    "distractors": ["went"],
+    "hint": "Negative past: did not + base form",
+    "explanation": "After 'did not', use the base form 'go', not 'went'."
+  },
+  {
+    "id": "reord-a2-pt-005",
+    "sentence": "We watched a movie last night",
+    "words": ["We", "watched", "a", "movie", "last", "night"],
+    "explanation": "Regular past: watch → watched. Time at the end."
+  },
+  {
+    "id": "reord-a2-pt-006",
+    "sentence": "Did you see the new teacher",
+    "words": ["Did", "you", "see", "the", "new", "teacher"],
+    "distractors": ["saw"],
+    "hint": "Past questions: Did + subject + base form",
+    "explanation": "After 'Did', use the base form 'see', not 'saw'."
+  },
+  {
+    "id": "reord-a2-pt-007",
+    "sentence": "She bought a new dress at the mall",
+    "words": ["She", "bought", "a", "new", "dress", "at", "the", "mall"],
+    "distractors": ["buyed"],
+    "explanation": "'Buy' is irregular: bought (not 'buyed')."
+  },
+  {
+    "id": "reord-a2-pt-008",
+    "sentence": "The children played in the garden all afternoon",
+    "words": ["The", "children", "played", "in", "the", "garden", "all", "afternoon"],
+    "explanation": "Subject + past verb + place + time duration."
+  },
+  {
+    "id": "reord-a2-pt-009",
+    "sentence": "I did not understand the question",
+    "words": ["I", "did", "not", "understand", "the", "question"],
+    "distractors": ["understood"],
+    "explanation": "After 'did not', use base form 'understand', not 'understood'."
+  },
+  {
+    "id": "reord-a2-pt-010",
+    "sentence": "He wrote a letter to his friend",
+    "words": ["He", "wrote", "a", "letter", "to", "his", "friend"],
+    "distractors": ["writed"],
+    "explanation": "'Write' is irregular: wrote (not 'writed')."
+  },
+  {
+    "id": "reord-a2-pt-011",
+    "sentence": "We arrived at the airport two hours early",
+    "words": ["We", "arrived", "at", "the", "airport", "two", "hours", "early"],
+    "explanation": "Subject + past verb + place + time."
+  },
+  {
+    "id": "reord-a2-pt-012",
+    "sentence": "Did they finish the homework on time",
+    "words": ["Did", "they", "finish", "the", "homework", "on", "time"],
+    "distractors": ["finished"],
+    "explanation": "After 'Did', use base form 'finish', not 'finished'."
+  },
+  {
+    "id": "reord-a2-pt-013",
+    "sentence": "She made a cake for her birthday",
+    "words": ["She", "made", "a", "cake", "for", "her", "birthday"],
+    "distractors": ["maked"],
+    "explanation": "'Make' is irregular: made (not 'maked')."
+  },
+  {
+    "id": "reord-a2-pt-014",
+    "sentence": "I took the bus to school this morning",
+    "words": ["I", "took", "the", "bus", "to", "school", "this", "morning"],
+    "distractors": ["taked"],
+    "explanation": "'Take' is irregular: took (not 'taked')."
+  },
+  {
+    "id": "reord-a2-pt-015",
+    "sentence": "They did not want to leave the party",
+    "words": ["They", "did", "not", "want", "to", "leave", "the", "party"],
+    "distractors": ["wanted"],
+    "explanation": "After 'did not', use base form 'want', not 'wanted'."
+  },
+  {
+    "id": "reord-a2-pt-016",
+    "sentence": "He ran five kilometers in the park",
+    "words": ["He", "ran", "five", "kilometers", "in", "the", "park"],
+    "distractors": ["runned"],
+    "explanation": "'Run' is irregular: ran (not 'runned')."
+  },
+  {
+    "id": "reord-a2-pt-017",
+    "sentence": "We had a great time at the concert",
+    "words": ["We", "had", "a", "great", "time", "at", "the", "concert"],
+    "explanation": "'Have' is irregular: had. Adjective before noun: 'great time'."
+  },
+  {
+    "id": "reord-a2-pt-018",
+    "sentence": "Did she call you after the meeting",
+    "words": ["Did", "she", "call", "you", "after", "the", "meeting"],
+    "distractors": ["called"],
+    "explanation": "After 'Did', use base form 'call', not 'called'."
+  },
+  {
+    "id": "reord-a2-pt-019",
+    "sentence": "The train left the station ten minutes ago",
+    "words": ["The", "train", "left", "the", "station", "ten", "minutes", "ago"],
+    "explanation": "'Leave' is irregular: left. 'Ago' goes at the very end."
+  },
+  {
+    "id": "reord-a2-pt-020",
+    "sentence": "I found my keys under the sofa",
+    "words": ["I", "found", "my", "keys", "under", "the", "sofa"],
+    "distractors": ["finded"],
+    "explanation": "'Find' is irregular: found (not 'finded')."
+  }
+]

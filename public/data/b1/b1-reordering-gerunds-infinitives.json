@@ -1,0 +1,127 @@
+[
+  {
+    "id": "reord-b1-gi-001",
+    "sentence": "She enjoys reading books before going to bed",
+    "words": ["She", "enjoys", "reading", "books", "before", "going", "to", "bed"],
+    "hint": "Enjoy + gerund (-ing)",
+    "explanation": "'Enjoy' is always followed by gerund: 'enjoys reading'."
+  },
+  {
+    "id": "reord-b1-gi-002",
+    "sentence": "He decided to apply for the job last week",
+    "words": ["He", "decided", "to", "apply", "for", "the", "job", "last", "week"],
+    "hint": "Decide + to + infinitive",
+    "explanation": "'Decide' is followed by infinitive: 'decided to apply'."
+  },
+  {
+    "id": "reord-b1-gi-003",
+    "sentence": "I avoid eating fast food as much as possible",
+    "words": ["I", "avoid", "eating", "fast", "food", "as", "much", "as", "possible"],
+    "explanation": "'Avoid' + gerund: 'avoid eating'."
+  },
+  {
+    "id": "reord-b1-gi-004",
+    "sentence": "They agreed to meet at the restaurant at seven",
+    "words": ["They", "agreed", "to", "meet", "at", "the", "restaurant", "at", "seven"],
+    "explanation": "'Agree' + infinitive: 'agreed to meet'."
+  },
+  {
+    "id": "reord-b1-gi-005",
+    "sentence": "She suggested going to the cinema instead",
+    "words": ["She", "suggested", "going", "to", "the", "cinema", "instead"],
+    "explanation": "'Suggest' + gerund: 'suggested going'."
+  },
+  {
+    "id": "reord-b1-gi-006",
+    "sentence": "He promised to help me with the project",
+    "words": ["He", "promised", "to", "help", "me", "with", "the", "project"],
+    "explanation": "'Promise' + infinitive: 'promised to help'."
+  },
+  {
+    "id": "reord-b1-gi-007",
+    "sentence": "I do not mind waiting for a few minutes",
+    "words": ["I", "do", "not", "mind", "waiting", "for", "a", "few", "minutes"],
+    "explanation": "'Mind' + gerund: 'mind waiting'."
+  },
+  {
+    "id": "reord-b1-gi-008",
+    "sentence": "She wants to learn how to play the guitar",
+    "words": ["She", "wants", "to", "learn", "how", "to", "play", "the", "guitar"],
+    "explanation": "'Want' + infinitive: 'wants to learn'. 'How to play' is an embedded question."
+  },
+  {
+    "id": "reord-b1-gi-009",
+    "sentence": "They finished painting the house last weekend",
+    "words": ["They", "finished", "painting", "the", "house", "last", "weekend"],
+    "explanation": "'Finish' + gerund: 'finished painting'."
+  },
+  {
+    "id": "reord-b1-gi-010",
+    "sentence": "He refused to answer any more questions",
+    "words": ["He", "refused", "to", "answer", "any", "more", "questions"],
+    "explanation": "'Refuse' + infinitive: 'refused to answer'."
+  },
+  {
+    "id": "reord-b1-gi-011",
+    "sentence": "Swimming in the ocean is my favorite activity",
+    "words": ["Swimming", "in", "the", "ocean", "is", "my", "favorite", "activity"],
+    "hint": "Gerund as subject of the sentence",
+    "explanation": "Gerund as subject: 'Swimming in the ocean' is the subject of 'is'."
+  },
+  {
+    "id": "reord-b1-gi-012",
+    "sentence": "She offered to drive us to the airport",
+    "words": ["She", "offered", "to", "drive", "us", "to", "the", "airport"],
+    "explanation": "'Offer' + infinitive: 'offered to drive'."
+  },
+  {
+    "id": "reord-b1-gi-013",
+    "sentence": "I keep forgetting to bring my umbrella",
+    "words": ["I", "keep", "forgetting", "to", "bring", "my", "umbrella"],
+    "explanation": "'Keep' + gerund: 'keep forgetting'. Then 'to bring' is the infinitive after 'forget'."
+  },
+  {
+    "id": "reord-b1-gi-014",
+    "sentence": "He expects to receive the results next week",
+    "words": ["He", "expects", "to", "receive", "the", "results", "next", "week"],
+    "explanation": "'Expect' + infinitive: 'expects to receive'."
+  },
+  {
+    "id": "reord-b1-gi-015",
+    "sentence": "They considered moving to a different city",
+    "words": ["They", "considered", "moving", "to", "a", "different", "city"],
+    "explanation": "'Consider' + gerund: 'considered moving'."
+  },
+  {
+    "id": "reord-b1-gi-016",
+    "sentence": "It is important to eat a balanced diet",
+    "words": ["It", "is", "important", "to", "eat", "a", "balanced", "diet"],
+    "hint": "It is + adjective + to + infinitive",
+    "explanation": "Pattern: It is + adjective + to + infinitive: 'It is important to eat'."
+  },
+  {
+    "id": "reord-b1-gi-017",
+    "sentence": "She admitted making a mistake in the report",
+    "words": ["She", "admitted", "making", "a", "mistake", "in", "the", "report"],
+    "explanation": "'Admit' + gerund: 'admitted making'."
+  },
+  {
+    "id": "reord-b1-gi-018",
+    "sentence": "He managed to fix the computer by himself",
+    "words": ["He", "managed", "to", "fix", "the", "computer", "by", "himself"],
+    "explanation": "'Manage' + infinitive: 'managed to fix'."
+  },
+  {
+    "id": "reord-b1-gi-019",
+    "sentence": "I look forward to hearing from you soon",
+    "words": ["I", "look", "forward", "to", "hearing", "from", "you", "soon"],
+    "hint": "Look forward to + gerund (not infinitive)",
+    "explanation": "'Look forward to' + gerund: 'look forward to hearing'. The 'to' here is a preposition."
+  },
+  {
+    "id": "reord-b1-gi-020",
+    "sentence": "They plan to open a new store next year",
+    "words": ["They", "plan", "to", "open", "a", "new", "store", "next", "year"],
+    "explanation": "'Plan' + infinitive: 'plan to open'."
+  }
+]

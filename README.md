@@ -10,7 +10,7 @@ React 18 · TypeScript strict · Vite + esbuild · Zustand · TanStack Query · 
 
 ## Features
 
-6 learning modes (Flashcards, Quiz, Completion, Sorting, Matching, Reading) · Dark/light theme · Progress tracking · Bilingual EN/ES · CEFR A1-C2
+7 learning modes (Flashcards, Quiz, Completion, Sorting, Matching, Reading, Reordering) · Dark/light theme · Progress tracking · Bilingual EN/ES · CEFR A1-C2
 
 ## Setup
 

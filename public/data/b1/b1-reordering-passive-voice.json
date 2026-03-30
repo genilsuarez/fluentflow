@@ -1,0 +1,133 @@
+[
+  {
+    "id": "reord-b1-pv-001",
+    "sentence": "The report was written by the manager",
+    "words": ["The", "report", "was", "written", "by", "the", "manager"],
+    "hint": "Passive: subject + was/were + past participle + by agent",
+    "explanation": "Past passive: 'was written'. The agent comes after 'by'."
+  },
+  {
+    "id": "reord-b1-pv-002",
+    "sentence": "English is spoken in many countries around the world",
+    "words": ["English", "is", "spoken", "in", "many", "countries", "around", "the", "world"],
+    "distractors": ["speaks"],
+    "explanation": "Present passive: 'is spoken' (not active 'speaks'). No agent needed here."
+  },
+  {
+    "id": "reord-b1-pv-003",
+    "sentence": "The new hospital was built last year",
+    "words": ["The", "new", "hospital", "was", "built", "last", "year"],
+    "distractors": ["builded"],
+    "explanation": "Past passive: 'was built'. 'Build' is irregular: built (not 'builded')."
+  },
+  {
+    "id": "reord-b1-pv-004",
+    "sentence": "The students are taught by experienced teachers",
+    "words": ["The", "students", "are", "taught", "by", "experienced", "teachers"],
+    "distractors": ["is"],
+    "explanation": "'Students' is plural: 'are taught' (not 'is taught')."
+  },
+  {
+    "id": "reord-b1-pv-005",
+    "sentence": "The window was broken during the storm",
+    "words": ["The", "window", "was", "broken", "during", "the", "storm"],
+    "explanation": "Past passive without agent: 'was broken during the storm'."
+  },
+  {
+    "id": "reord-b1-pv-006",
+    "sentence": "The cake was made by my grandmother",
+    "words": ["The", "cake", "was", "made", "by", "my", "grandmother"],
+    "distractors": ["maked"],
+    "explanation": "Past passive: 'was made'. 'Make' is irregular: made (not 'maked')."
+  },
+  {
+    "id": "reord-b1-pv-007",
+    "sentence": "These cars are manufactured in Germany",
+    "words": ["These", "cars", "are", "manufactured", "in", "Germany"],
+    "distractors": ["is"],
+    "explanation": "'Cars' is plural: 'are manufactured' (not 'is manufactured')."
+  },
+  {
+    "id": "reord-b1-pv-008",
+    "sentence": "The meeting was canceled due to bad weather",
+    "words": ["The", "meeting", "was", "canceled", "due", "to", "bad", "weather"],
+    "explanation": "Past passive: 'was canceled'. 'Due to' introduces the reason."
+  },
+  {
+    "id": "reord-b1-pv-009",
+    "sentence": "The letter was sent to the wrong address",
+    "words": ["The", "letter", "was", "sent", "to", "the", "wrong", "address"],
+    "distractors": ["sended"],
+    "explanation": "'Send' is irregular: sent (not 'sended')."
+  },
+  {
+    "id": "reord-b1-pv-010",
+    "sentence": "Coffee is grown in tropical countries",
+    "words": ["Coffee", "is", "grown", "in", "tropical", "countries"],
+    "explanation": "Present passive for general facts: 'is grown'."
+  },
+  {
+    "id": "reord-b1-pv-011",
+    "sentence": "The homework must be completed before Friday",
+    "words": ["The", "homework", "must", "be", "completed", "before", "Friday"],
+    "hint": "Modal passive: modal + be + past participle",
+    "explanation": "Modal passive: 'must be completed'. Modal + be + past participle."
+  },
+  {
+    "id": "reord-b1-pv-012",
+    "sentence": "The children were taken to the hospital by ambulance",
+    "words": ["The", "children", "were", "taken", "to", "the", "hospital", "by", "ambulance"],
+    "distractors": ["was"],
+    "explanation": "'Children' is plural: 'were taken' (not 'was taken')."
+  },
+  {
+    "id": "reord-b1-pv-013",
+    "sentence": "This song was recorded in a famous studio",
+    "words": ["This", "song", "was", "recorded", "in", "a", "famous", "studio"],
+    "explanation": "Past passive: 'was recorded'. Place at the end."
+  },
+  {
+    "id": "reord-b1-pv-014",
+    "sentence": "The rules should be followed by all employees",
+    "words": ["The", "rules", "should", "be", "followed", "by", "all", "employees"],
+    "explanation": "Modal passive: 'should be followed'. Agent after 'by'."
+  },
+  {
+    "id": "reord-b1-pv-015",
+    "sentence": "The bridge was designed by a famous architect",
+    "words": ["The", "bridge", "was", "designed", "by", "a", "famous", "architect"],
+    "explanation": "Past passive with agent: 'was designed by'."
+  },
+  {
+    "id": "reord-b1-pv-016",
+    "sentence": "Tickets can be purchased online or at the door",
+    "words": ["Tickets", "can", "be", "purchased", "online", "or", "at", "the", "door"],
+    "explanation": "Modal passive: 'can be purchased'. Two options joined by 'or'."
+  },
+  {
+    "id": "reord-b1-pv-017",
+    "sentence": "The exam results were announced this morning",
+    "words": ["The", "exam", "results", "were", "announced", "this", "morning"],
+    "distractors": ["was"],
+    "explanation": "'Results' is plural: 'were announced' (not 'was announced')."
+  },
+  {
+    "id": "reord-b1-pv-018",
+    "sentence": "The food is prepared fresh every day",
+    "words": ["The", "food", "is", "prepared", "fresh", "every", "day"],
+    "explanation": "Present passive for routines: 'is prepared'."
+  },
+  {
+    "id": "reord-b1-pv-019",
+    "sentence": "The project will be finished by the end of the month",
+    "words": ["The", "project", "will", "be", "finished", "by", "the", "end", "of", "the", "month"],
+    "hint": "Future passive: will + be + past participle",
+    "explanation": "Future passive: 'will be finished'. 'By' for deadline."
+  },
+  {
+    "id": "reord-b1-pv-020",
+    "sentence": "The museum was visited by thousands of tourists last summer",
+    "words": ["The", "museum", "was", "visited", "by", "thousands", "of", "tourists", "last", "summer"],
+    "explanation": "Past passive with agent and time expression at the end."
+  }
+]

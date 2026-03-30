@@ -11,6 +11,7 @@ import {
   BarChart3,
   Link,
   BookOpen,
+  ListOrdered,
 } from 'lucide-react';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useTranslation } from '../../utils/i18n';
@@ -52,6 +53,7 @@ const ALL_MODES: LearningMode[] = [
   'sorting',
   'matching',
   'reading',
+  'reordering',
 ];
 const MODE_ICONS: Record<LearningMode, React.ReactElement> = {
   flashcard: <CreditCard size={13} strokeWidth={2} />,
@@ -60,6 +62,7 @@ const MODE_ICONS: Record<LearningMode, React.ReactElement> = {
   sorting: <BarChart3 size={13} strokeWidth={2} />,
   matching: <Link size={13} strokeWidth={2} />,
   reading: <BookOpen size={13} strokeWidth={2} />,
+  reordering: <ListOrdered size={13} strokeWidth={2} />,
 };
 const MODE_I18N_KEYS: Record<LearningMode, string> = {
   flashcard: 'learning.flashcardMode',
@@ -68,6 +71,7 @@ const MODE_I18N_KEYS: Record<LearningMode, string> = {
   sorting: 'learning.sortingMode',
   matching: 'learning.matchingMode',
   reading: 'learning.readingMode',
+  reordering: 'learning.reorderingMode',
 };
 
 const ALL_LEVELS: Level[] = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'];
