@@ -26,23 +26,6 @@ interface ThemeState {
 }
 
 /**
- * Detects the user's system theme preference
- */
-function detectSystemTheme(): ThemeMode {
-  // Check if we're in a browser environment
-  if (typeof window === 'undefined') {
-    return 'light';
-  }
-
-  // Check for system preference
-  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    return 'dark';
-  }
-
-  return 'light';
-}
-
-/**
  * Gets the stored theme preference or falls back to system preference
  */
 function getInitialTheme(): ThemeState {
