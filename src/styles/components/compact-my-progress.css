@@ -306,7 +306,7 @@
 
 .my-progress__weekly-bar {
   width: 100%;
-  height: calc(4.5rem + 1px);
+  height: calc(4.5rem + 3px);
   background-color: var(--theme-bg-soft, #f3f4f6);
   border: 1px solid var(--theme-border-soft, #e5e7eb);
   border-radius: 0.1875rem;
