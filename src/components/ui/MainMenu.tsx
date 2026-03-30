@@ -33,7 +33,7 @@ export const MainMenu: React.FC = () => {
   const { t } = useTranslation(language);
   const queryClient = useQueryClient();
   const [viewMode, setViewModeRaw] = useState<'progression' | 'list'>(previousMenuContext);
-  const [isPending, startTransition] = useTransition();
+  const [_isPending, startTransition] = useTransition();
   const setViewMode = React.useCallback((mode: 'progression' | 'list') => {
     startTransition(() => {
       setViewModeRaw(mode);
