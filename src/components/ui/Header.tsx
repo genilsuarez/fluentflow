@@ -282,9 +282,7 @@ export const Header: React.FC<HeaderProps> = () => {
 
               {/* Settings Section */}
               <div className="header-side-menu__section">
-                <h3 className="header-side-menu__section-title">
-                  {t('navigation.configuration')}
-                </h3>
+                <h3 className="header-side-menu__section-title">{t('navigation.configuration')}</h3>
                 <button
                   onClick={() => {
                     setShowSettings(true);
