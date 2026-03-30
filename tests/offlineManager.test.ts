@@ -150,8 +150,8 @@ describe('offlineManager', () => {
   });
 
   describe('CACHE_NAME', () => {
-    it('should be "fluentflow-v2"', () => {
-      expect(CACHE_NAME).toBe('fluentflow-v2');
+    it('should match the service worker cache name', () => {
+      expect(CACHE_NAME).toBe('fluentflow-v3');
     });
   });
 

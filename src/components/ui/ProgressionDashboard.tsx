@@ -1,10 +1,9 @@
 import React from 'react';
 import { useProgression } from '../../hooks/useProgression';
-import { useAppStore } from '../../stores/appStore';
 import { useProgressStore } from '../../stores/progressStore';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useTranslation } from '../../utils/i18n';
-import { toast } from '../../stores/toastStore';
+import { useModuleNavigation } from '../../hooks/useModuleNavigation';
 import { CheckCircle, Lock, Play, ChevronDown, ChevronRight, X as XIcon } from 'lucide-react';
 import type { LearningModule } from '../../types';
 import Fuse from 'fuse.js';
@@ -22,12 +21,12 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
   searchQuery = '',
   onClearSearch,
 }) => {
-  const { setPreviousMenuContext } = useAppStore();
   const { isModuleCompleted } = useProgressStore();
   const progression = useProgression();
   const { language, categories, learningModes, level, setCategories, setLearningModes, setLevel } =
     useSettingsStore();
   const { t } = useTranslation(language);
+  const { navigateToModule } = useModuleNavigation('progression');
   const [expandedUnits, setExpandedUnits] = React.useState<Set<number>>(new Set());
   const [isDarkMode, setIsDarkMode] = React.useState(false);
 
@@ -156,60 +155,12 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
 
   const handleContinueLearning = () => {
     if (nextRecommended) {
-      const modeLabels: Record<string, string> = {
-        flashcard: t('mainMenu.modeFlashcard'),
-        quiz: t('mainMenu.modeQuiz'),
-        completion: t('mainMenu.modeCompletion'),
-        sorting: t('mainMenu.modeSorting'),
-        matching: t('mainMenu.modeMatching'),
-      };
-
-      toast.info(
-        t('mainMenu.startingModule'),
-        `${nextRecommended.name} - ${modeLabels[nextRecommended.learningMode] || t('mainMenu.modeDefault')}`,
-        { duration: 1500 }
-      );
-
-      // Save that user came from progression dashboard
-      setPreviousMenuContext('progression');
-
-      // Update URL hash FIRST - let App.tsx useEffect handle Zustand updates
-      window.location.hash = `#/learn/${nextRecommended.id}`;
+      navigateToModule(nextRecommended);
     }
   };
 
   const handleModuleClick = (module: LearningModule) => {
-    if (!progression.canAccessModule(module.id)) {
-      const missingPrereqs = progression.getMissingPrerequisites(module.id);
-      const prereqNames = missingPrereqs.map(p => p.name).join(', ');
-
-      toast.warning(
-        t('mainMenu.moduleBlocked'),
-        t('mainMenu.moduleBlockedDesc', undefined, { prereqs: prereqNames }),
-        { duration: 3000 }
-      );
-      return;
-    }
-
-    const modeLabels: Record<string, string> = {
-      flashcard: t('mainMenu.modeFlashcard'),
-      quiz: t('mainMenu.modeQuiz'),
-      completion: t('mainMenu.modeCompletion'),
-      sorting: t('mainMenu.modeSorting'),
-      matching: t('mainMenu.modeMatching'),
-    };
-
-    toast.info(
-      t('mainMenu.startingModule'),
-      `${module.name} - ${modeLabels[module.learningMode] || t('mainMenu.modeDefault')}`,
-      { duration: 1500 }
-    );
-
-    // Save that user came from progression dashboard
-    setPreviousMenuContext('progression');
-
-    // Update URL hash FIRST - let App.tsx useEffect handle Zustand updates
-    window.location.hash = `#/learn/${module.id}`;
+    navigateToModule(module);
   };
 
   const getUnitTitle = (unit: number): string => {

@@ -1,13 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { Check, X, ArrowRight, Home } from 'lucide-react';
-import { useAppStore } from '../../stores/appStore';
-import { useUserStore } from '../../stores/userStore';
-import { useSettingsStore } from '../../stores/settingsStore';
-import { useMenuNavigation } from '../../hooks/useMenuNavigation';
-import { useProgressStore } from '../../stores/progressStore';
-import { useTranslation } from '../../utils/i18n';
-import { useToast } from '../../hooks/useToast';
-import { useLearningCleanup } from '../../hooks/useLearningCleanup';
+import { useLearningSession } from '../../hooks/useLearningSession';
 import { conditionalShuffle } from '../../utils/randomUtils';
 import '../../styles/components/completion-component.css';
 import '../../styles/components/editable-input.css';
@@ -255,15 +248,16 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answer, setAnswer] = useState('');
   const [showResult, setShowResult] = useState(false);
-  const [startTime] = useState(Date.now());
   const inputRef = useRef<EditableInputHandle>(null);
   // Flag to ignore Enter key briefly after advancing to next question
   const ignoreEnterRef = useRef(false);
 
-  const updateSessionScore = useAppStore(state => state.updateSessionScore);
-  const { updateUserScore } = useUserStore();
-  const { language, randomizeItems } = useSettingsStore();
-  const { returnToMenu } = useMenuNavigation();
+  const { t, randomizeItems, markCorrect, markIncorrect, finishExercise, handleReturnToMenu } =
+    useLearningSession({
+      moduleId: module.id,
+      moduleName: module.name,
+      learningMode: 'completion',
+    });
 
   // Compute exercises once on mount — ref prevents re-shuffling on score updates
   const processedExercisesRef = useRef<CompletionData[] | null>(null);
@@ -273,13 +267,6 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
       : [];
   }
   const processedExercises = processedExercisesRef.current;
-
-  const { addProgressEntry } = useProgressStore();
-  const { t } = useTranslation(language);
-  const { showCorrectAnswer, showIncorrectAnswer, showModuleCompleted } = useToast();
-  useLearningCleanup();
-
-  const handleReturnToMenu = () => returnToMenu();
 
   const currentExercise = processedExercises[currentIndex];
 
@@ -295,22 +282,18 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
     const correctAnswer = currentExercise?.correct?.toLowerCase().trim() || '';
     const isCorrect = userAnswer === correctAnswer;
 
-    updateSessionScore(isCorrect ? { correct: 1 } : { incorrect: 1 });
-    setShowResult(true);
-
-    // Show toast feedback
     if (isCorrect) {
-      showCorrectAnswer();
+      markCorrect();
     } else {
-      showIncorrectAnswer();
+      markIncorrect();
     }
+    setShowResult(true);
   }, [
     showResult,
     answer,
     currentExercise?.correct,
-    updateSessionScore,
-    showCorrectAnswer,
-    showIncorrectAnswer,
+    markCorrect,
+    markIncorrect,
   ]);
 
   const handleNext = useCallback(() => {
@@ -329,35 +312,12 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
         requestAnimationFrame(() => inputRef.current?.focus());
       }, 150);
     } else {
-      const timeSpent = Math.floor((Date.now() - startTime) / 1000);
-      const { sessionScore } = useAppStore.getState();
-      const finalScore = Math.round((sessionScore.correct / sessionScore.total) * 100);
-
-      // Register progress
-      addProgressEntry({
-        score: finalScore,
-        totalQuestions: sessionScore.total,
-        correctAnswers: sessionScore.correct,
-        moduleId: module.id,
-        learningMode: 'completion',
-        timeSpent: timeSpent,
-      });
-
-      const accuracy = sessionScore.accuracy;
-      showModuleCompleted(module.name, finalScore, accuracy);
-      updateUserScore(module.id, finalScore, timeSpent);
-      returnToMenu({ autoScrollToNext: true });
+      finishExercise();
     }
   }, [
     currentIndex,
     processedExercises.length,
-    startTime,
-    addProgressEntry,
-    module.id,
-    module.name,
-    showModuleCompleted,
-    updateUserScore,
-    returnToMenu,
+    finishExercise,
   ]);
 
   useEffect(() => {
@@ -371,14 +331,12 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
         }
       } else if (e.key === 'Enter' && showResult) {
         handleNext();
-      } else if (e.key === 'Escape') {
-        returnToMenu();
       }
     };
 
     window.addEventListener('keydown', handleKeyPress);
     return () => window.removeEventListener('keydown', handleKeyPress);
-  }, [answer, showResult, processedExercises.length, checkAnswer, handleNext, returnToMenu]);
+  }, [answer, showResult, processedExercises.length, checkAnswer, handleNext]);
 
   // Early return if no data
   if (!processedExercises.length) {

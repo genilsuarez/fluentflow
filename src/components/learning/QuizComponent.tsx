@@ -1,13 +1,7 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { CheckCircle, XCircle, ArrowRight, Home } from 'lucide-react';
-import { useAppStore } from '../../stores/appStore';
-import { useUserStore } from '../../stores/userStore';
+import { useLearningSession } from '../../hooks/useLearningSession';
 import { useSettingsStore } from '../../stores/settingsStore';
-import { useMenuNavigation } from '../../hooks/useMenuNavigation';
-import { useProgressStore } from '../../stores/progressStore';
-import { useTranslation } from '../../utils/i18n';
-import { useToast } from '../../hooks/useToast';
-import { useLearningCleanup } from '../../hooks/useLearningCleanup';
 import { conditionalShuffle } from '../../utils/randomUtils';
 import { ContentAdapter } from '../../utils/contentAdapter';
 import ContentRenderer from '../ui/ContentRenderer';
@@ -23,12 +17,16 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [showResult, setShowResult] = useState(false);
-  const [startTime] = useState(Date.now());
   const optionsRef = useRef<HTMLDivElement>(null);
 
-  const updateSessionScore = useAppStore(state => state.updateSessionScore);
-  const { updateUserScore } = useUserStore();
-  const { theme, language, randomizeItems } = useSettingsStore();
+  const { t, randomizeItems, markCorrect, markIncorrect, finishExercise, handleReturnToMenu } =
+    useLearningSession({
+      moduleId: module.id,
+      moduleName: module.name,
+      learningMode: 'quiz',
+    });
+
+  const { theme } = useSettingsStore();
 
   // Compute processed questions once on mount — stored in a ref so that
   // re-renders triggered by score updates never re-shuffle the options.
@@ -94,11 +92,6 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
   }
 
   const processedQuestions = processedQuestionsRef.current;
-  const { returnToMenu } = useMenuNavigation();
-  const { addProgressEntry } = useProgressStore();
-  const { t } = useTranslation(language);
-  const { showCorrectAnswer, showIncorrectAnswer, showModuleCompleted } = useToast();
-  useLearningCleanup();
 
   // Equalize option button heights to prevent length-based visual bias
   useEffect(() => {
@@ -109,8 +102,6 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
     const maxH = Math.max(...Array.from(buttons).map(b => b.offsetHeight));
     if (maxH > 0) buttons.forEach(b => (b.style.minHeight = `${maxH}px`));
   }, [currentIndex]);
-
-  const handleReturnToMenu = () => returnToMenu();
 
   const isDark = theme === 'dark';
   const textColor = isDark ? 'white' : '#111827';
@@ -127,15 +118,13 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
       setSelectedAnswer(optionIndex);
       setShowResult(true);
 
-      updateSessionScore(isCorrect ? { correct: 1 } : { incorrect: 1 });
-
       if (isCorrect) {
-        showCorrectAnswer();
+        markCorrect();
       } else {
-        showIncorrectAnswer();
+        markIncorrect();
       }
     },
-    [showResult, currentQuestion, updateSessionScore, showCorrectAnswer, showIncorrectAnswer]
+    [showResult, currentQuestion, markCorrect, markIncorrect]
   );
 
   const handleNext = useCallback(() => {
@@ -144,36 +133,9 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
       setSelectedAnswer(null);
       setShowResult(false);
     } else {
-      const timeSpent = Math.floor((Date.now() - startTime) / 1000);
-      const { sessionScore } = useAppStore.getState();
-      const finalScore = Math.round((sessionScore.correct / sessionScore.total) * 100);
-      const accuracy = sessionScore.accuracy;
-
-      // Register progress
-      addProgressEntry({
-        score: finalScore,
-        totalQuestions: sessionScore.total,
-        correctAnswers: sessionScore.correct,
-        moduleId: module.id,
-        learningMode: 'quiz',
-        timeSpent: timeSpent,
-      });
-
-      showModuleCompleted(module.name, finalScore, accuracy);
-      updateUserScore(module.id, finalScore, timeSpent);
-      returnToMenu({ autoScrollToNext: true });
+      finishExercise();
     }
-  }, [
-    currentIndex,
-    processedQuestions.length,
-    startTime,
-    addProgressEntry,
-    module.id,
-    module.name,
-    showModuleCompleted,
-    updateUserScore,
-    returnToMenu,
-  ]);
+  }, [currentIndex, processedQuestions.length, finishExercise]);
 
   useEffect(() => {
     if (processedQuestions.length === 0) return;
@@ -186,8 +148,6 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
         }
       } else if (e.key === 'Enter' && showResult) {
         handleNext();
-      } else if (e.key === 'Escape') {
-        returnToMenu();
       }
     };
 
@@ -199,7 +159,6 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
     processedQuestions.length,
     handleAnswerSelect,
     handleNext,
-    returnToMenu,
   ]);
 
   // Early return if no data

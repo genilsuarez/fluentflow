@@ -43,7 +43,7 @@ const getIcon = (learningMode: string) => {
   return icons[learningMode] || <CreditCard {...iconProps} />;
 };
 
-const getLearningModeLabel = (learningMode: string, t: any): string => {
+const getLearningModeLabel = (learningMode: string, t: (key: string) => string): string => {
   const labels: Record<string, string> = {
     flashcard: t('learning.flashcardMode'),
     quiz: t('learning.quizMode'),

@@ -1,37 +1,59 @@
 /**
- * Minimal logging utility - no dependencies, no complex initialization
+ * Minimal logging utility.
+ * Logs are active in development mode only; no-ops in production.
  */
 
-// Simple no-op functions to avoid any initialization issues
-export function logDebug(message: string, data?: any, component?: string) {
-  // Disabled to prevent initialization issues
-  void message;
-  void data;
-  void component;
+const isDev = typeof import.meta !== 'undefined' && import.meta.env?.DEV;
+
+function formatPrefix(component?: string): string {
+  return component ? `[${component}]` : '';
 }
 
-function logInfo(message: string, data?: any, component?: string) {
-  // Disabled to prevent initialization issues
-  void message;
-  void data;
-  void component;
-}
-
-function logWarn(message: string, data?: any, component?: string) {
-  void data;
-  void component;
+export function logDebug(message: string, data?: unknown, component?: string) {
+  if (!isDev) return;
   try {
-    console.warn(message);
+    if (data !== undefined) {
+      console.debug(formatPrefix(component), message, data);
+    } else {
+      console.debug(formatPrefix(component), message);
+    }
   } catch {
     // Silent fail
   }
 }
 
-export function logError(message: string, data?: any, component?: string) {
-  void data;
-  void component;
+function logInfo(message: string, data?: unknown, component?: string) {
+  if (!isDev) return;
   try {
-    console.error(message);
+    if (data !== undefined) {
+      console.info(formatPrefix(component), message, data);
+    } else {
+      console.info(formatPrefix(component), message);
+    }
+  } catch {
+    // Silent fail
+  }
+}
+
+function logWarn(message: string, data?: unknown, component?: string) {
+  try {
+    if (data !== undefined) {
+      console.warn(formatPrefix(component), message, data);
+    } else {
+      console.warn(formatPrefix(component), message);
+    }
+  } catch {
+    // Silent fail
+  }
+}
+
+export function logError(message: string, data?: unknown, component?: string) {
+  try {
+    if (data !== undefined) {
+      console.error(formatPrefix(component), message, data);
+    } else {
+      console.error(formatPrefix(component), message);
+    }
   } catch {
     // Silent fail
   }

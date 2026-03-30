@@ -7,6 +7,7 @@ import { useQueryClient } from '@tanstack/react-query';
 import { useAllModules, getHiddenDependencies } from '../../hooks/useModuleData';
 import { useProgression } from '../../hooks/useProgression';
 import { useSearch } from '../../hooks/useSearch';
+import { useModuleNavigation } from '../../hooks/useModuleNavigation';
 import { useAppStore } from '../../stores/appStore';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useTranslation } from '../../utils/i18n';
@@ -40,6 +41,9 @@ export const MainMenu: React.FC = () => {
 
   // Access raw (unfiltered) modules from the query cache for dependency calculations
   const allModulesRaw = queryClient.getQueryData<LearningModule[]>(['modules']) ?? [];
+
+  // Shared module navigation logic
+  const { navigateToModule } = useModuleNavigation(viewMode);
 
   // Persistent current module ID (next recommended).
   // If the recommended module is hidden by the category filter, fall back to the
@@ -155,20 +159,7 @@ export const MainMenu: React.FC = () => {
     }
   }, [error, t]);
 
-  const handleModuleClick = (module: any) => {
-    // Check if module is accessible
-    if (!progression.canAccessModule(module.id)) {
-      const missingPrereqs = progression.getMissingPrerequisites(module.id);
-      const prereqNames = missingPrereqs.map(p => p.name).join(', ');
-
-      toast.warning(
-        t('mainMenu.moduleBlocked'),
-        t('mainMenu.moduleBlockedDesc', undefined, { prereqs: prereqNames }),
-        { duration: 3000 }
-      );
-      return;
-    }
-
+  const handleModuleClick = (module: LearningModule) => {
     // Save scroll position before changing view
     const gridElement = document.querySelector('.main-menu__grid');
     if (gridElement) {
@@ -182,27 +173,7 @@ export const MainMenu: React.FC = () => {
     // Reset auto-scroll flag when user manually selects a module
     hasScrolledToNext.current = false;
 
-    // Show toast when starting a module
-    const modeLabels: Record<string, string> = {
-      flashcard: t('mainMenu.modeFlashcard'),
-      quiz: t('mainMenu.modeQuiz'),
-      completion: t('mainMenu.modeCompletion'),
-      sorting: t('mainMenu.modeSorting'),
-      matching: t('mainMenu.modeMatching'),
-      reading: t('mainMenu.modeReading'),
-    };
-
-    toast.info(
-      t('mainMenu.startingModule'),
-      `${module.name} - ${modeLabels[module.learningMode] || t('mainMenu.modeDefault')}`,
-      { duration: 1500 }
-    );
-
-    // Save current menu context before navigating to learning mode
-    setPreviousMenuContext(viewMode);
-
-    // Navigate to the module
-    window.location.hash = `#/learn/${module.id}`;
+    navigateToModule(module);
   };
 
   if (isLoading) {

@@ -1,11 +1,6 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { ChevronLeft, ChevronRight, RotateCcw, Home } from 'lucide-react';
-import { useUserStore } from '../../stores/userStore';
-import { useSettingsStore } from '../../stores/settingsStore';
-import { useMenuNavigation } from '../../hooks/useMenuNavigation';
-import { useProgressStore } from '../../stores/progressStore';
-import { useTranslation } from '../../utils/i18n';
-import { useLearningCleanup } from '../../hooks/useLearningCleanup';
+import { useLearningSession } from '../../hooks/useLearningSession';
 import { conditionalShuffle } from '../../utils/randomUtils';
 import { ContentAdapter } from '../../utils/contentAdapter';
 import ContentRenderer from '../ui/ContentRenderer';
@@ -22,16 +17,13 @@ const FlashcardComponent: React.FC<FlashcardComponentProps> = ({ module }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [skipTransition, setSkipTransition] = useState(false);
-  const [startTime] = useState(Date.now());
 
-  const { updateUserScore } = useUserStore();
-  const { language, randomizeItems } = useSettingsStore();
-  const { returnToMenu } = useMenuNavigation();
-  const { addProgressEntry } = useProgressStore();
-  const { t } = useTranslation(language);
-  useLearningCleanup();
-
-  const handleReturnToMenu = () => returnToMenu();
+  const { t, randomizeItems, handleReturnToMenu, finishExercise } =
+    useLearningSession({
+      moduleId: module.id,
+      moduleName: module.name,
+      learningMode: 'flashcard',
+    });
 
   // Generate set with optional randomization based on settings
   const processedFlashcards = useMemo(() => {
@@ -56,31 +48,18 @@ const FlashcardComponent: React.FC<FlashcardComponentProps> = ({ module }) => {
       setCurrentIndex(currentIndex + 1);
       setIsFlipped(false);
     } else {
-      // End of flashcards
-      const timeSpent = Math.floor((Date.now() - startTime) / 1000);
-
-      // Register progress (assuming all flashcards were "correct" for completion)
-      addProgressEntry({
-        score: 100, // Flashcards are completion-based, so 100% for finishing
-        totalQuestions: processedFlashcards.length,
-        correctAnswers: processedFlashcards.length,
-        moduleId: module.id,
-        learningMode: 'flashcard',
-        timeSpent: timeSpent,
+      // End of flashcards — 100% completion for finishing all cards
+      finishExercise({
+        correct: processedFlashcards.length,
+        total: processedFlashcards.length,
+        accuracy: 100,
       });
-
-      updateUserScore(module.id, 100, timeSpent); // 100% completion for finishing all flashcards
-      returnToMenu({ autoScrollToNext: true });
     }
   }, [
     currentIndex,
     isFlipped,
     processedFlashcards.length,
-    startTime,
-    addProgressEntry,
-    module.id,
-    updateUserScore,
-    returnToMenu,
+    finishExercise,
   ]);
 
   const handlePrev = useCallback(() => {
@@ -120,15 +99,12 @@ const FlashcardComponent: React.FC<FlashcardComponentProps> = ({ module }) => {
           e.preventDefault();
           handlePrev();
           break;
-        case 'Escape':
-          returnToMenu();
-          break;
       }
     };
 
     window.addEventListener('keydown', handleKeyPress);
     return () => window.removeEventListener('keydown', handleKeyPress);
-  }, [processedFlashcards.length, handleRevealOrNext, handlePrev, returnToMenu]);
+  }, [processedFlashcards.length, handleRevealOrNext, handlePrev]);
 
   // Early return if no data
   if (!processedFlashcards.length) {

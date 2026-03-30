@@ -62,13 +62,25 @@ export async function fetchModules(): Promise<ApiResponse<LearningModule[]>> {
 
 /**
  * Fetch a specific module's data by ID.
+ * Accepts an optional pre-fetched modules list to avoid redundant network requests
+ * when the caller already has the list (e.g. from TanStack Query cache).
  */
-export async function fetchModuleData(moduleId: string): Promise<ApiResponse<LearningModule>> {
+export async function fetchModuleData(
+  moduleId: string,
+  cachedModules?: LearningModule[]
+): Promise<ApiResponse<LearningModule>> {
   try {
-    const modulesRes = await fetchModules();
-    if (!modulesRes.success) throw new Error('Failed to fetch modules list');
+    let modulesList: LearningModule[];
 
-    const moduleInfo = modulesRes.data.find((m: LearningModule) => m.id === moduleId);
+    if (cachedModules && cachedModules.length > 0) {
+      modulesList = cachedModules;
+    } else {
+      const modulesRes = await fetchModules();
+      if (!modulesRes.success) throw new Error('Failed to fetch modules list');
+      modulesList = modulesRes.data;
+    }
+
+    const moduleInfo = modulesList.find((m: LearningModule) => m.id === moduleId);
     if (!moduleInfo) throw new Error(`Module ${moduleId} not found`);
 
     if (!moduleInfo.dataPath) {
