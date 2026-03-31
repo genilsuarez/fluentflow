@@ -32,7 +32,6 @@
 }
 
 .editable-input[contenteditable='false'] {
-  opacity: 0.6;
   cursor: not-allowed;
   background: var(--color-bg-secondary, #f9fafb);
 }
@@ -69,7 +68,6 @@
 
 /* Disabled state */
 .editable-input--disabled {
-  opacity: 0.6;
   cursor: not-allowed;
   background: var(--color-bg-secondary, #f9fafb);
 }

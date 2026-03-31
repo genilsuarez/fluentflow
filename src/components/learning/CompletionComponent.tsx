@@ -391,7 +391,7 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
             onChange={value => setAnswer(value.toLowerCase())}
             disabled={showResult}
             placeholder={placeholderHint}
-            className={`editable-input ${inputClass.replace('completion-component__input', 'editable-input')}`}
+            className={`editable-input ${inputClass.replaceAll('completion-component__input', 'editable-input')}`}
             style={
               {
                 '--dynamic-width': `${Math.max(120, (answer?.length || 3) * 12 + 60)}px`,
