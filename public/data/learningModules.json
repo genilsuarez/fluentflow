@@ -10,7 +10,7 @@
     "category": "Reading",
     "prerequisites": [],
     "description": "Learn basic greetings and how to introduce yourself",
-    "estimatedTime": 12,
+    "estimatedTime": 6,
     "difficulty": 1
   },
   {
@@ -26,7 +26,7 @@
       "reading-greetings-a1"
     ],
     "description": "Complete dialogues with greetings and introductions",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 1
   },
   {
@@ -58,7 +58,7 @@
       "flashcard-basic-vocabulary-a1"
     ],
     "description": "Test your knowledge of basic English vocabulary",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 1
   },
   {
@@ -74,7 +74,7 @@
       "quiz-basic-vocabulary-a1"
     ],
     "description": "Match common English verbs with Spanish translations",
-    "estimatedTime": 1,
+    "estimatedTime": 2,
     "difficulty": 1
   },
   {
@@ -90,7 +90,7 @@
       "matching-common-verbs-a1"
     ],
     "description": "Daily routines and activities vocabulary",
-    "estimatedTime": 12,
+    "estimatedTime": 7,
     "difficulty": 1
   },
   {
@@ -106,7 +106,7 @@
       "reading-daily-life-a1"
     ],
     "description": "Sort words into categories: Animals, Food, Colors, Days, Months",
-    "estimatedTime": 2,
+    "estimatedTime": 3,
     "difficulty": 1
   },
   {
@@ -138,7 +138,7 @@
       "flashcard-everyday-life-a1"
     ],
     "description": "Test your knowledge of everyday life vocabulary",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 1
   },
   {
@@ -154,7 +154,7 @@
       "quiz-everyday-life-a1"
     ],
     "description": "Essential travel vocabulary and phrases",
-    "estimatedTime": 12,
+    "estimatedTime": 7,
     "difficulty": 1
   },
   {
@@ -170,7 +170,7 @@
       "reading-travel-a1"
     ],
     "description": "Fundamental grammar concepts and structures",
-    "estimatedTime": 1,
+    "estimatedTime": 2,
     "difficulty": 1
   },
   {
@@ -186,7 +186,7 @@
       "matching-basic-grammar-a1"
     ],
     "description": "Numbers, quantities and basic measurements",
-    "estimatedTime": 1,
+    "estimatedTime": 2,
     "difficulty": 1
   },
   {
@@ -202,7 +202,7 @@
       "matching-numbers-quantities-a1"
     ],
     "description": "Simple sentence completion exercises",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 1
   },
   {
@@ -218,7 +218,7 @@
       "completion-basic-sentences-a1"
     ],
     "description": "Sort verbs by tense: present, past, future",
-    "estimatedTime": 2,
+    "estimatedTime": 3,
     "difficulty": 1
   },
   {
@@ -234,7 +234,7 @@
       "sorting-verb-tenses-a1"
     ],
     "description": "Learn basic phrasal verbs through everyday stories and examples",
-    "estimatedTime": 12,
+    "estimatedTime": 7,
     "difficulty": 1
   },
   {
@@ -250,7 +250,7 @@
       "reading-phrasal-verbs-a1"
     ],
     "description": "Match basic phrasal verbs with Spanish translations",
-    "estimatedTime": 1,
+    "estimatedTime": 2,
     "difficulty": 1
   },
   {
@@ -266,7 +266,7 @@
       "matching-basic-phrasal-verbs-a1"
     ],
     "description": "Complete sentences with basic phrasal verbs (20 items)",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 1
   },
   {
@@ -282,7 +282,7 @@
       "completion-basic-phrasal-verbs-a1"
     ],
     "description": "Test your knowledge of basic phrasal verbs",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 1
   },
   {
@@ -298,7 +298,7 @@
       "quiz-phrasal-verbs-a1"
     ],
     "description": "Discover common English idioms through simple stories",
-    "estimatedTime": 12,
+    "estimatedTime": 7,
     "difficulty": 1
   },
   {
@@ -330,7 +330,7 @@
       "flashcard-basic-idioms-a1"
     ],
     "description": "Common English idioms for beginners (20 idioms)",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 1
   },
   {
@@ -362,7 +362,7 @@
       "flashcard-daily-life-vocab-a1"
     ],
     "description": "Test your knowledge of daily life vocabulary",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 1
   },
   {
@@ -378,7 +378,7 @@
       "quiz-daily-life-vocab-a1"
     ],
     "description": "Complete sentences with everyday expressions, phrasal verbs and idioms",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 1
   },
   {
@@ -391,7 +391,7 @@
     ],
     "category": "Vocabulary",
     "description": "Sort expressions into categories: Phrasal Verbs, Idioms, Greetings, Polite Expressions",
-    "estimatedTime": 2,
+    "estimatedTime": 3,
     "difficulty": 1,
     "prerequisites": [
       "completion-everyday-expressions-a1"
@@ -410,7 +410,7 @@
       "sorting-expressions-type-a1"
     ],
     "description": "Practice basic English word order",
-    "estimatedTime": 2,
+    "estimatedTime": 4,
     "difficulty": 1
   },
   {
@@ -426,7 +426,7 @@
       "a1-reordering-basic-sentences"
     ],
     "description": "Practice forming questions and negative sentences in English",
-    "estimatedTime": 2,
+    "estimatedTime": 4,
     "difficulty": 1
   },
   {
@@ -442,7 +442,7 @@
       "a1-reordering-questions-negatives"
     ],
     "description": "Practice word order with basic phrasal verbs",
-    "estimatedTime": 2,
+    "estimatedTime": 4,
     "difficulty": 1
   },
   {
@@ -458,7 +458,7 @@
       "a1-reordering-phrasal-verbs"
     ],
     "description": "Practice word order with common English idioms",
-    "estimatedTime": 2,
+    "estimatedTime": 4,
     "difficulty": 1
   },
   {
@@ -506,7 +506,7 @@
       "a1-sorting-phrasal-verbs-particle"
     ],
     "description": "Practice phrasal verbs, idioms, word formation and transformations from A1",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 1
   },
   {
@@ -522,7 +522,7 @@
       "completion-review-a1"
     ],
     "description": "Comprehensive review of A1 level concepts",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 1
   },
   {
@@ -538,7 +538,7 @@
       "quiz-basic-review-a1"
     ],
     "description": "Introduction to business English concepts and vocabulary",
-    "estimatedTime": 12,
+    "estimatedTime": 7,
     "difficulty": 2
   },
   {
@@ -554,7 +554,7 @@
       "reading-business-a2"
     ],
     "description": "Time expressions and temporal phrases",
-    "estimatedTime": 1,
+    "estimatedTime": 2,
     "difficulty": 2
   },
   {
@@ -570,7 +570,7 @@
       "matching-time-expressions-a2"
     ],
     "description": "Understanding English-speaking cultures and customs",
-    "estimatedTime": 12,
+    "estimatedTime": 7,
     "difficulty": 2
   },
   {
@@ -602,7 +602,7 @@
       "flashcard-family-a2"
     ],
     "description": "Technology and digital communication vocabulary",
-    "estimatedTime": 12,
+    "estimatedTime": 7,
     "difficulty": 2
   },
   {
@@ -634,7 +634,7 @@
       "flashcard-home-a2"
     ],
     "description": "Test your knowledge of family and home vocabulary",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 2
   },
   {
@@ -650,7 +650,7 @@
       "quiz-family-home-a2"
     ],
     "description": "Health, wellness, and medical vocabulary",
-    "estimatedTime": 12,
+    "estimatedTime": 7,
     "difficulty": 2
   },
   {
@@ -682,7 +682,7 @@
       "flashcard-culture-health-vocab-a2"
     ],
     "description": "Test your knowledge of culture, health and technology vocabulary",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 2
   },
   {
@@ -698,7 +698,7 @@
       "quiz-culture-health-vocab-a2"
     ],
     "description": "Complete sentences reinforcing reading vocabulary",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 2
   },
   {
@@ -730,7 +730,7 @@
       "flashcard-daily-activities-a2"
     ],
     "description": "Complete sentences using daily activities vocabulary",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 2
   },
   {
@@ -746,7 +746,7 @@
       "completion-daily-activities-a2"
     ],
     "description": "Regular and irregular past tense verbs",
-    "estimatedTime": 2,
+    "estimatedTime": 3,
     "difficulty": 2
   },
   {
@@ -762,7 +762,7 @@
       "sorting-past-tense-a2"
     ],
     "description": "Learn when to use be (location/state) vs go (movement/activities)",
-    "estimatedTime": 11,
+    "estimatedTime": 6,
     "difficulty": 2
   },
   {
@@ -778,7 +778,7 @@
       "reading-be-vs-go-a2"
     ],
     "description": "Test your understanding of be vs go usage",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 2
   },
   {
@@ -794,7 +794,7 @@
       "quiz-be-vs-go-a2"
     ],
     "description": "Match be and go sentences with their Spanish translations",
-    "estimatedTime": 1,
+    "estimatedTime": 2,
     "difficulty": 2
   },
   {
@@ -810,7 +810,7 @@
       "matching-be-vs-go-a2"
     ],
     "description": "Complete stories using past tense",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 2
   },
   {
@@ -826,7 +826,7 @@
       "completion-past-stories-a2"
     ],
     "description": "Reorder sentences using past simple with regular and irregular verbs",
-    "estimatedTime": 2,
+    "estimatedTime": 4,
     "difficulty": 2
   },
   {
@@ -842,7 +842,7 @@
       "a2-reordering-past-tense"
     ],
     "description": "Comparative and superlative forms",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 2
   },
   {
@@ -858,7 +858,7 @@
       "completion-comparatives-superlatives-a2"
     ],
     "description": "Reorder sentences with comparative and superlative structures",
-    "estimatedTime": 2,
+    "estimatedTime": 4,
     "difficulty": 2
   },
   {
@@ -874,7 +874,7 @@
       "a2-reordering-comparatives"
     ],
     "description": "Present Perfect Simple for experiences and recent actions",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 2
   },
   {
@@ -890,7 +890,7 @@
       "completion-present-perfect-a2"
     ],
     "description": "Reorder sentences with present perfect and adverb placement",
-    "estimatedTime": 2,
+    "estimatedTime": 4,
     "difficulty": 2
   },
   {
@@ -906,7 +906,7 @@
       "a2-reordering-present-perfect"
     ],
     "description": "Learn phrasal verbs used in work, shopping and social situations",
-    "estimatedTime": 12,
+    "estimatedTime": 8,
     "difficulty": 2
   },
   {
@@ -922,7 +922,7 @@
       "reading-phrasal-verbs-a2"
     ],
     "description": "Match elementary phrasal verbs with Spanish translations (25 pairs)",
-    "estimatedTime": 1,
+    "estimatedTime": 2,
     "difficulty": 2
   },
   {
@@ -938,7 +938,7 @@
       "matching-elementary-phrasal-verbs-a2"
     ],
     "description": "Complete sentences with elementary phrasal verbs (20 items)",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 2
   },
   {
@@ -954,7 +954,7 @@
       "completion-elementary-phrasal-verbs-a2"
     ],
     "description": "Reorder sentences with elementary phrasal verbs",
-    "estimatedTime": 2,
+    "estimatedTime": 4,
     "difficulty": 2
   },
   {
@@ -970,7 +970,7 @@
       "a2-reordering-phrasal-verbs"
     ],
     "description": "Discover idioms about feelings, time and common situations",
-    "estimatedTime": 12,
+    "estimatedTime": 8,
     "difficulty": 2
   },
   {
@@ -1002,7 +1002,7 @@
       "flashcard-elementary-idioms-a2"
     ],
     "description": "Common English idioms for elementary learners (20 idioms)",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 2
   },
   {
@@ -1018,7 +1018,7 @@
       "quiz-elementary-idioms-a2"
     ],
     "description": "Reorder sentences with common English idioms",
-    "estimatedTime": 2,
+    "estimatedTime": 4,
     "difficulty": 2
   },
   {
@@ -1031,7 +1031,7 @@
     ],
     "category": "Vocabulary",
     "description": "Sort vocabulary into contexts: Home, Health, Technology, Work",
-    "estimatedTime": 2,
+    "estimatedTime": 3,
     "difficulty": 2,
     "prerequisites": [
       "a2-reordering-idioms"
@@ -1050,7 +1050,7 @@
       "a2-matching-elementary-idioms"
     ],
     "description": "Practice phrasal verbs, transformations, error correction and word formation from A2",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 2
   },
   {
@@ -1066,7 +1066,7 @@
       "completion-review-a2"
     ],
     "description": "Comprehensive review of A2 level concepts",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 2
   },
   {
@@ -1082,7 +1082,7 @@
       "quiz-elementary-review-a2"
     ],
     "description": "Education systems and academic vocabulary",
-    "estimatedTime": 12,
+    "estimatedTime": 8,
     "difficulty": 3
   },
   {
@@ -1114,7 +1114,7 @@
       "flashcard-travel-leisure-b1"
     ],
     "description": "Test your knowledge of travel and leisure vocabulary",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 3
   },
   {
@@ -1130,7 +1130,7 @@
       "quiz-travel-leisure-b1"
     ],
     "description": "Environmental issues and sustainability",
-    "estimatedTime": 12,
+    "estimatedTime": 8,
     "difficulty": 3
   },
   {
@@ -1146,7 +1146,7 @@
       "reading-environment-b1"
     ],
     "description": "Modal verbs and their uses",
-    "estimatedTime": 2,
+    "estimatedTime": 3,
     "difficulty": 3
   },
   {
@@ -1162,7 +1162,7 @@
       "sorting-modal-verbs-b1"
     ],
     "description": "Prepositions of place, time and movement",
-    "estimatedTime": 2,
+    "estimatedTime": 3,
     "difficulty": 3
   },
   {
@@ -1178,7 +1178,7 @@
       "sorting-prepositions-b1"
     ],
     "description": "Social media and modern communication",
-    "estimatedTime": 12,
+    "estimatedTime": 8,
     "difficulty": 3
   },
   {
@@ -1226,7 +1226,7 @@
       "flashcard-reading-vocab-b1"
     ],
     "description": "Test your knowledge of intermediate reading vocabulary",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 3
   },
   {
@@ -1242,7 +1242,7 @@
       "quiz-reading-vocab-b1"
     ],
     "description": "Match intermediate vocabulary with Spanish translations",
-    "estimatedTime": 1,
+    "estimatedTime": 2,
     "difficulty": 3
   },
   {
@@ -1258,7 +1258,7 @@
       "matching-reading-vocab-b1"
     ],
     "description": "Different ways to express future",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 3
   },
   {
@@ -1274,7 +1274,7 @@
       "completion-future-forms-b1"
     ],
     "description": "Reorder sentences with will, going to, modals, and future forms",
-    "estimatedTime": 2,
+    "estimatedTime": 4,
     "difficulty": 3
   },
   {
@@ -1287,7 +1287,7 @@
     ],
     "category": "Grammar",
     "description": "First conditional for real possibilities and second conditional for hypothetical situations (25 items)",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 3,
     "prerequisites": [
       "b1-reordering-future-modals"
@@ -1306,7 +1306,7 @@
       "completion-conditionals-b1"
     ],
     "description": "Sort sentences by conditional type: first and second conditionals",
-    "estimatedTime": 2,
+    "estimatedTime": 3,
     "difficulty": 3
   },
   {
@@ -1322,7 +1322,7 @@
       "sorting-conditionals-b1"
     ],
     "description": "Reorder first and second conditional sentences",
-    "estimatedTime": 2,
+    "estimatedTime": 4,
     "difficulty": 3
   },
   {
@@ -1351,7 +1351,7 @@
     ],
     "category": "Grammar",
     "description": "Present and past simple passive voice, plus modal passives (25 items)",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 3,
     "prerequisites": [
       "flashcard-money-life-b1"
@@ -1370,7 +1370,7 @@
       "completion-passive-voice-b1"
     ],
     "description": "Test your understanding of passive voice transformations",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 3
   },
   {
@@ -1386,7 +1386,7 @@
       "quiz-passive-voice-b1"
     ],
     "description": "Reorder passive voice sentences in present, past, and modal forms",
-    "estimatedTime": 2,
+    "estimatedTime": 4,
     "difficulty": 3
   },
   {
@@ -1402,7 +1402,7 @@
       "b1-reordering-passive-voice"
     ],
     "description": "Master phrasal verbs for professional and social contexts",
-    "estimatedTime": 12,
+    "estimatedTime": 9,
     "difficulty": 3
   },
   {
@@ -1418,7 +1418,7 @@
       "reading-phrasal-verbs-b1"
     ],
     "description": "Most common phrasal verbs and meanings",
-    "estimatedTime": 1,
+    "estimatedTime": 2,
     "difficulty": 3
   },
   {
@@ -1434,7 +1434,7 @@
       "matching-common-phrasal-verbs-b1"
     ],
     "description": "Complete sentences with common phrasal verbs (20 items)",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 3
   },
   {
@@ -1450,7 +1450,7 @@
       "completion-phrasal-verbs-practice-b1"
     ],
     "description": "Learn idioms for professional and educational settings",
-    "estimatedTime": 12,
+    "estimatedTime": 8,
     "difficulty": 3
   },
   {
@@ -1482,7 +1482,7 @@
       "flashcard-everyday-idioms-b1"
     ],
     "description": "Common idioms for everyday situations (75 unique idioms)",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 3
   },
   {
@@ -1495,7 +1495,7 @@
     ],
     "category": "PhrasalVerbs",
     "description": "Sort phrasal verbs by particle: up, out, off, down",
-    "estimatedTime": 2,
+    "estimatedTime": 3,
     "difficulty": 3,
     "prerequisites": [
       "quiz-idioms-everyday-situations-b1"
@@ -1514,7 +1514,7 @@
       "sorting-phrasal-verbs-particle-b1"
     ],
     "description": "Reorder sentences with common phrasal verbs in professional contexts",
-    "estimatedTime": 2,
+    "estimatedTime": 4,
     "difficulty": 3
   },
   {
@@ -1530,7 +1530,7 @@
       "b1-reordering-phrasal-verbs"
     ],
     "description": "Reorder sentences with work and education idioms",
-    "estimatedTime": 2,
+    "estimatedTime": 4,
     "difficulty": 3
   },
   {
@@ -1546,7 +1546,7 @@
       "b1-reordering-idioms"
     ],
     "description": "When to use verb + -ing (gerund) and verb + to (infinitive) after common verbs",
-    "estimatedTime": 11,
+    "estimatedTime": 8,
     "difficulty": 3
   },
   {
@@ -1562,7 +1562,7 @@
       "reading-gerunds-infinitives-b1"
     ],
     "description": "Sort verbs into three groups: followed by gerund (-ing), infinitive (to + verb), or both",
-    "estimatedTime": 2,
+    "estimatedTime": 3,
     "difficulty": 3
   },
   {
@@ -1578,7 +1578,7 @@
       "sorting-gerunds-infinitives-b1"
     ],
     "description": "Learn gerund and infinitive patterns through real-life conversations, emails, and everyday situations",
-    "estimatedTime": 6,
+    "estimatedTime": 7,
     "difficulty": 3
   },
   {
@@ -1594,7 +1594,7 @@
       "reading-gerunds-infinitives-context-b1"
     ],
     "description": "Complete sentences with the correct gerund or infinitive form",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 3
   },
   {
@@ -1610,7 +1610,7 @@
       "completion-gerunds-infinitives-b1"
     ],
     "description": "Reorder sentences with gerund and infinitive verb patterns",
-    "estimatedTime": 2,
+    "estimatedTime": 4,
     "difficulty": 3
   },
   {
@@ -1626,7 +1626,7 @@
       "b1-reordering-gerunds-infinitives"
     ],
     "description": "Test your knowledge of gerund and infinitive verb patterns",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 3
   },
   {
@@ -1642,7 +1642,7 @@
       "b1-matching-idioms-situations"
     ],
     "description": "Practice conditionals, passive voice, phrasal verbs, idioms and word formation from B1",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 3
   },
   {
@@ -1658,7 +1658,7 @@
       "completion-review-b1"
     ],
     "description": "Comprehensive review of B1 level concepts",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 3
   },
   {
@@ -1674,7 +1674,7 @@
       "quiz-intermediate-review-b1"
     ],
     "description": "Career development and professional growth",
-    "estimatedTime": 12,
+    "estimatedTime": 9,
     "difficulty": 4
   },
   {
@@ -1690,7 +1690,7 @@
       "reading-professional-b2"
     ],
     "description": "Discourse markers and connectors",
-    "estimatedTime": 2,
+    "estimatedTime": 3,
     "difficulty": 4
   },
   {
@@ -1722,7 +1722,7 @@
       "flashcard-ielts-vocabulary-pack1-b2"
     ],
     "description": "Test your knowledge of IELTS vocabulary",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 4
   },
   {
@@ -1738,7 +1738,7 @@
       "quiz-ielts-vocabulary-b2"
     ],
     "description": "Global challenges and societal issues",
-    "estimatedTime": 12,
+    "estimatedTime": 9,
     "difficulty": 4
   },
   {
@@ -1786,7 +1786,7 @@
       "flashcard-emotions-feelings-b2"
     ],
     "description": "Complete sentences using clothing and emotions vocabulary",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 4
   },
   {
@@ -1802,7 +1802,7 @@
       "completion-clothing-emotions-b2"
     ],
     "description": "Startups, innovation, and business development",
-    "estimatedTime": 12,
+    "estimatedTime": 9,
     "difficulty": 4
   },
   {
@@ -1834,7 +1834,7 @@
       "flashcard-success-failure-b2"
     ],
     "description": "Test your knowledge of success and failure vocabulary",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 4
   },
   {
@@ -1866,7 +1866,7 @@
       "flashcard-reading-vocab-b2"
     ],
     "description": "Advanced usage of <used to>, <be used to>, and <get used to>",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 4
   },
   {
@@ -1882,7 +1882,7 @@
       "completion-used-to-b2"
     ],
     "description": "Advanced quiz on complex usage patterns of <used to> structures",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 4
   },
   {
@@ -1895,7 +1895,7 @@
     ],
     "category": "Grammar",
     "description": "Third conditional and mixed conditionals for unreal past and cross-time situations (25 items)",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 4,
     "prerequisites": [
       "quiz-used-to-advanced-b2"
@@ -1911,7 +1911,7 @@
     ],
     "category": "Grammar",
     "description": "Wish and if only for present wishes, past regrets, and complaints (25 items)",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 4,
     "prerequisites": [
       "completion-conditionals-advanced-b2"
@@ -1930,7 +1930,7 @@
       "completion-wish-if-only-b2"
     ],
     "description": "Reorder third conditional, mixed conditional, and wish sentences",
-    "estimatedTime": 2,
+    "estimatedTime": 4,
     "difficulty": 4
   },
   {
@@ -1946,7 +1946,7 @@
       "b2-reordering-conditionals-wish"
     ],
     "description": "Common English collocations matched with Spanish equivalents (40 pairs)",
-    "estimatedTime": 1,
+    "estimatedTime": 2,
     "difficulty": 4
   },
   {
@@ -1959,7 +1959,7 @@
     ],
     "category": "Grammar",
     "description": "Advanced passive voice (all tenses), impersonal passive, and causative have/get (25 items)",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 4,
     "prerequisites": [
       "matching-collocations-b2"
@@ -1978,7 +1978,7 @@
       "completion-passive-advanced-b2"
     ],
     "description": "Reorder advanced passive, impersonal passive, and causative sentences",
-    "estimatedTime": 2,
+    "estimatedTime": 4,
     "difficulty": 4
   },
   {
@@ -1994,7 +1994,7 @@
       "b2-reordering-passive-causative"
     ],
     "description": "Business and global issue idioms for upper-intermediate learners",
-    "estimatedTime": 12,
+    "estimatedTime": 8,
     "difficulty": 4
   },
   {
@@ -2026,7 +2026,7 @@
       "flashcard-time-idioms-b2"
     ],
     "description": "Advanced phrasal verbs in professional and academic contexts",
-    "estimatedTime": 12,
+    "estimatedTime": 9,
     "difficulty": 4
   },
   {
@@ -2042,7 +2042,7 @@
       "reading-phrasal-verbs-b2"
     ],
     "description": "Match upper-intermediate phrasal verbs with Spanish translations (20 pairs)",
-    "estimatedTime": 1,
+    "estimatedTime": 2,
     "difficulty": 4
   },
   {
@@ -2058,7 +2058,7 @@
       "matching-phrasal-verbs-b2"
     ],
     "description": "Advanced phrasal verbs completion",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 4
   },
   {
@@ -2090,7 +2090,7 @@
       "flashcard-ielts-idioms-pack-b2"
     ],
     "description": "Professional and business idioms quiz (20 questions)",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 4
   },
   {
@@ -2106,7 +2106,7 @@
       "quiz-idioms-professional-b2"
     ],
     "description": "Advanced phrasal verbs in professional and everyday contexts",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 4
   },
   {
@@ -2122,7 +2122,7 @@
       "completion-phrasal-verbs-advanced-b2"
     ],
     "description": "Test your knowledge of upper-intermediate phrasal verbs",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 4
   },
   {
@@ -2138,7 +2138,7 @@
       "quiz-phrasal-verbs-b2"
     ],
     "description": "Reorder sentences with advanced phrasal verbs in professional contexts",
-    "estimatedTime": 2,
+    "estimatedTime": 4,
     "difficulty": 4
   },
   {
@@ -2154,7 +2154,7 @@
       "b2-reordering-phrasal-verbs"
     ],
     "description": "Reorder sentences with professional and business idioms",
-    "estimatedTime": 2,
+    "estimatedTime": 4,
     "difficulty": 4
   },
   {
@@ -2170,7 +2170,7 @@
       "b2-reordering-idioms"
     ],
     "description": "Verbs that change meaning with gerund vs infinitive: stop, remember, try, forget, regret, go on, mean",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 4
   },
   {
@@ -2186,7 +2186,7 @@
       "completion-gerunds-infinitives-advanced-b2"
     ],
     "description": "Reorder sentences with used to structures and discourse connectors",
-    "estimatedTime": 2,
+    "estimatedTime": 4,
     "difficulty": 4
   },
   {
@@ -2202,7 +2202,7 @@
       "b2-reordering-used-to-connectors"
     ],
     "description": "Test your understanding of verbs that change meaning with gerund vs infinitive",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 4
   },
   {
@@ -2218,7 +2218,7 @@
       "b2-sorting-professional-idioms"
     ],
     "description": "Practice advanced conditionals, causatives, phrasal verbs, idioms and word formation from B2",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 4
   },
   {
@@ -2234,7 +2234,7 @@
       "completion-review-b2"
     ],
     "description": "Comprehensive review of B2 level concepts: used to, phrasal verbs, connectors, and professional vocabulary",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 4
   },
   {
@@ -2250,7 +2250,7 @@
       "quiz-upper-intermediate-review-b2"
     ],
     "description": "Academic research and scholarly communication",
-    "estimatedTime": 12,
+    "estimatedTime": 9,
     "difficulty": 5
   },
   {
@@ -2282,7 +2282,7 @@
       "flashcard-ielts-business-c1"
     ],
     "description": "Test your knowledge of business vocabulary",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 5
   },
   {
@@ -2298,7 +2298,7 @@
       "quiz-ielts-business-c1"
     ],
     "description": "Leadership theories and organizational management",
-    "estimatedTime": 12,
+    "estimatedTime": 9,
     "difficulty": 5
   },
   {
@@ -2330,7 +2330,7 @@
       "flashcard-ielts-home-daily-life-c1"
     ],
     "description": "Complete sentences using home and daily life vocabulary",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 5
   },
   {
@@ -2346,7 +2346,7 @@
       "completion-ielts-home-life-c1"
     ],
     "description": "Cross-cultural communication and analysis",
-    "estimatedTime": 12,
+    "estimatedTime": 10,
     "difficulty": 5
   },
   {
@@ -2362,7 +2362,7 @@
       "reading-cultural-analysis-c1"
     ],
     "description": "Sort expressions by register: Formal, Neutral, and Informal (40 items)",
-    "estimatedTime": 2,
+    "estimatedTime": 3,
     "difficulty": 5
   },
   {
@@ -2394,7 +2394,7 @@
       "flashcard-ielts-problem-solving-c1"
     ],
     "description": "Test your knowledge of problem-solving vocabulary",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 5
   },
   {
@@ -2426,7 +2426,7 @@
       "flashcard-reading-vocab-c1"
     ],
     "description": "Test your knowledge of advanced academic vocabulary",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 5
   },
   {
@@ -2458,7 +2458,7 @@
       "flashcard-nature-animals-c1"
     ],
     "description": "Advanced conditional structures",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 5
   },
   {
@@ -2474,7 +2474,7 @@
       "completion-advanced-grammar-conditionals-c1"
     ],
     "description": "Advanced grammatical inversions",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 5
   },
   {
@@ -2490,7 +2490,7 @@
       "completion-advanced-grammar-inversions-c1"
     ],
     "description": "Test your knowledge of advanced grammatical inversions",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 5
   },
   {
@@ -2506,7 +2506,7 @@
       "quiz-grammar-inversions-c1"
     ],
     "description": "Reorder sentences with negative adverbial inversions",
-    "estimatedTime": 2,
+    "estimatedTime": 4,
     "difficulty": 5
   },
   {
@@ -2522,7 +2522,7 @@
       "c1-reordering-inversions"
     ],
     "description": "Test your knowledge of advanced participle constructions",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 5
   },
   {
@@ -2538,7 +2538,7 @@
       "quiz-participles-c1"
     ],
     "description": "Practice complex prepositions in context",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 5
   },
   {
@@ -2554,7 +2554,7 @@
       "completion-complex-prepositions-practice-c1"
     ],
     "description": "Reorder sentences with complex prepositional phrases",
-    "estimatedTime": 2,
+    "estimatedTime": 4,
     "difficulty": 5
   },
   {
@@ -2570,7 +2570,7 @@
       "c1-reordering-complex-prepositions"
     ],
     "description": "Advanced participle constructions",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 5
   },
   {
@@ -2586,7 +2586,7 @@
       "completion-advanced-grammar-participles-c1"
     ],
     "description": "Advanced vocabulary matching",
-    "estimatedTime": 1,
+    "estimatedTime": 2,
     "difficulty": 5
   },
   {
@@ -2602,7 +2602,7 @@
       "matching-vocabulary-c1"
     ],
     "description": "Subjunctive mood and usage",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 5
   },
   {
@@ -2618,7 +2618,7 @@
       "completion-advanced-grammar-subjunctive-c1"
     ],
     "description": "Reorder participle clauses and subjunctive structures",
-    "estimatedTime": 2,
+    "estimatedTime": 4,
     "difficulty": 5
   },
   {
@@ -2634,7 +2634,7 @@
       "c1-reordering-participles-subjunctive"
     ],
     "description": "Sophisticated phrasal verbs and idioms in academic and professional discourse",
-    "estimatedTime": 12,
+    "estimatedTime": 9,
     "difficulty": 5
   },
   {
@@ -2650,7 +2650,7 @@
       "reading-phrasal-verbs-idioms-c1"
     ],
     "description": "Match advanced phrasal verbs with Spanish translations (20 pairs)",
-    "estimatedTime": 1,
+    "estimatedTime": 2,
     "difficulty": 5
   },
   {
@@ -2666,7 +2666,7 @@
       "matching-advanced-phrasal-verbs-c1"
     ],
     "description": "Advanced phrasal verbs in professional and academic contexts (25 items)",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 5
   },
   {
@@ -2682,7 +2682,7 @@
       "completion-advanced-phrasal-verbs-c1"
     ],
     "description": "Reorder sentences with sophisticated phrasal verbs and inversions",
-    "estimatedTime": 2,
+    "estimatedTime": 4,
     "difficulty": 5
   },
   {
@@ -2714,7 +2714,7 @@
       "flashcard-advanced-idioms-c1"
     ],
     "description": "Sophisticated idioms for advanced communication (20 idioms)",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 5
   },
   {
@@ -2730,7 +2730,7 @@
       "quiz-advanced-idioms-c1"
     ],
     "description": "Reorder sentences with advanced idioms using inversions and subjunctive",
-    "estimatedTime": 2,
+    "estimatedTime": 4,
     "difficulty": 5
   },
   {
@@ -2746,7 +2746,7 @@
       "c1-reordering-idioms"
     ],
     "description": "Advanced phrasal verbs used in professional and academic contexts",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 5
   },
   {
@@ -2762,7 +2762,7 @@
       "c1-sorting-phrasal-verbs-register"
     ],
     "description": "Practice inversions, subjunctive, phrasal verbs, idioms, vocabulary and word formation from C1",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 5
   },
   {
@@ -2778,7 +2778,7 @@
       "completion-review-c1"
     ],
     "description": "Comprehensive review of C1 grammar: conditionals, inversions, participles, subjunctive",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 5
   },
   {
@@ -2794,7 +2794,7 @@
       "quiz-advanced-grammar-review-c1"
     ],
     "description": "Technical and specialized professional discourse",
-    "estimatedTime": 12,
+    "estimatedTime": 10,
     "difficulty": 5
   },
   {
@@ -2842,7 +2842,7 @@
       "flashcard-academic-writing-c2"
     ],
     "description": "Test your knowledge of academic writing vocabulary",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 5
   },
   {
@@ -2858,7 +2858,7 @@
       "quiz-academic-writing-c2"
     ],
     "description": "Philosophy and abstract reasoning",
-    "estimatedTime": 12,
+    "estimatedTime": 11,
     "difficulty": 5
   },
   {
@@ -2890,7 +2890,7 @@
       "flashcard-critical-analysis-c2"
     ],
     "description": "Test your knowledge of critical analysis vocabulary",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 5
   },
   {
@@ -2906,7 +2906,7 @@
       "quiz-critical-analysis-c2"
     ],
     "description": "Literary criticism and critical theory",
-    "estimatedTime": 12,
+    "estimatedTime": 10,
     "difficulty": 5
   },
   {
@@ -2938,7 +2938,7 @@
       "flashcard-reading-vocab-c2"
     ],
     "description": "Test your knowledge of mastery-level vocabulary",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 5
   },
   {
@@ -2954,7 +2954,7 @@
       "quiz-reading-vocab-c2"
     ],
     "description": "Complete sentences with advanced philosophical and literary terms",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 5
   },
   {
@@ -2970,7 +2970,7 @@
       "completion-reading-vocab-c2"
     ],
     "description": "Match mastery-level vocabulary with Spanish translations",
-    "estimatedTime": 1,
+    "estimatedTime": 2,
     "difficulty": 5
   },
   {
@@ -2986,7 +2986,7 @@
       "matching-reading-vocab-c2"
     ],
     "description": "Sophisticated collocations and idioms",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 5
   },
   {
@@ -3002,7 +3002,7 @@
       "completion-advanced-collocations-idioms-c2"
     ],
     "description": "Complex grammatical structures",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 5
   },
   {
@@ -3018,7 +3018,7 @@
       "completion-advanced-grammatical-structures-c2"
     ],
     "description": "Reorder cleft sentences, fronted adverbials, and formal inversions",
-    "estimatedTime": 2,
+    "estimatedTime": 4,
     "difficulty": 5
   },
   {
@@ -3034,7 +3034,7 @@
       "c2-reordering-advanced-structures"
     ],
     "description": "Formal vocabulary and subtle nuances",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 5
   },
   {
@@ -3050,7 +3050,7 @@
       "completion-formal-vocabulary-nuance-c2"
     ],
     "description": "Advanced formal register transformations and usage",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 5
   },
   {
@@ -3066,7 +3066,7 @@
       "completion-formal-register-advanced-c2"
     ],
     "description": "Subtle vocabulary distinctions",
-    "estimatedTime": 2,
+    "estimatedTime": 3,
     "difficulty": 5
   },
   {
@@ -3082,7 +3082,7 @@
       "sorting-nuance-vocabulary-c2"
     ],
     "description": "Mastery-level phrasal verbs and idioms in philosophical and literary discourse",
-    "estimatedTime": 12,
+    "estimatedTime": 9,
     "difficulty": 5
   },
   {
@@ -3098,7 +3098,7 @@
       "reading-phrasal-verbs-idioms-c2"
     ],
     "description": "Match mastery-level phrasal verbs with Spanish translations (20 pairs)",
-    "estimatedTime": 1,
+    "estimatedTime": 2,
     "difficulty": 5
   },
   {
@@ -3114,7 +3114,7 @@
       "matching-mastery-phrasal-verbs-c2"
     ],
     "description": "Sophisticated phrasal verbs",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 5
   },
   {
@@ -3130,7 +3130,7 @@
       "completion-advanced-phrasal-verbs-c2"
     ],
     "description": "Reorder sentences with mastery-level phrasal verbs in scholarly discourse",
-    "estimatedTime": 2,
+    "estimatedTime": 4,
     "difficulty": 5
   },
   {
@@ -3146,7 +3146,7 @@
       "c2-reordering-phrasal-verbs"
     ],
     "description": "Complex prepositions and conjunctions",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 5
   },
   {
@@ -3162,7 +3162,7 @@
       "completion-complex-prepositions-conjunctions-c2"
     ],
     "description": "Sophisticated verb-noun collocations matched with Spanish equivalents (40 pairs)",
-    "estimatedTime": 1,
+    "estimatedTime": 2,
     "difficulty": 5
   },
   {
@@ -3194,7 +3194,7 @@
       "flashcard-mastery-idioms-c2"
     ],
     "description": "Literary and classical idioms for near-native proficiency (20 idioms)",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 5
   },
   {
@@ -3210,7 +3210,7 @@
       "quiz-mastery-idioms-c2"
     ],
     "description": "Reorder sentences with literary and classical idioms in academic contexts",
-    "estimatedTime": 2,
+    "estimatedTime": 4,
     "difficulty": 5
   },
   {
@@ -3223,7 +3223,7 @@
     ],
     "category": "Grammar",
     "description": "Sort discourse markers by function: Contrast, Addition, Cause, Sequence",
-    "estimatedTime": 2,
+    "estimatedTime": 3,
     "difficulty": 5,
     "prerequisites": [
       "c2-reordering-idioms"
@@ -3242,7 +3242,7 @@
       "sorting-discourse-markers-c2"
     ],
     "description": "Reorder sentences with formal discourse markers and academic register",
-    "estimatedTime": 2,
+    "estimatedTime": 4,
     "difficulty": 5
   },
   {
@@ -3258,7 +3258,7 @@
       "c2-reordering-discourse-register"
     ],
     "description": "Sort mastery-level phrasal verbs by semantic function: causation, discourse, planning, perception, social, discovery",
-    "estimatedTime": 2,
+    "estimatedTime": 3,
     "difficulty": 5
   },
   {
@@ -3274,7 +3274,7 @@
       "c2-matching-literary-idioms-origins"
     ],
     "description": "Practice mastery phrasal verbs, literary idioms, word formation and academic transformations from C2",
-    "estimatedTime": 3,
+    "estimatedTime": 5,
     "difficulty": 5
   },
   {
@@ -3290,7 +3290,7 @@
       "completion-review-c2"
     ],
     "description": "Comprehensive mastery assessment",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 5
   },
   {
@@ -3306,7 +3306,7 @@
       "a1-error-correction-basic-phrasal-verbs"
     ],
     "description": "Transform simple sentences: negatives, questions, tense changes",
-    "estimatedTime": 8,
+    "estimatedTime": 5,
     "difficulty": 1
   },
   {
@@ -3322,7 +3322,7 @@
       "sorting-vocabulary-context-a2"
     ],
     "description": "Rewrite sentences changing tenses, voice, and reported speech",
-    "estimatedTime": 10,
+    "estimatedTime": 5,
     "difficulty": 2
   },
   {
@@ -3338,7 +3338,7 @@
       "quiz-gerunds-infinitives-b1"
     ],
     "description": "Transform sentences using conditionals, passive voice, and indirect speech",
-    "estimatedTime": 12,
+    "estimatedTime": 5,
     "difficulty": 3
   },
   {
@@ -3354,7 +3354,7 @@
       "quiz-gerunds-infinitives-advanced-b2"
     ],
     "description": "Third conditional, cleft sentences, causative, mixed conditionals",
-    "estimatedTime": 15,
+    "estimatedTime": 5,
     "difficulty": 4
   },
   {
@@ -3370,7 +3370,7 @@
       "quiz-phrasal-verbs-c1"
     ],
     "description": "Formal inversions, subjunctive mood, reduced clauses, impersonal passive",
-    "estimatedTime": 15,
+    "estimatedTime": 5,
     "difficulty": 5
   },
   {
@@ -3386,7 +3386,7 @@
       "sorting-mastery-phrasal-verbs-c2"
     ],
     "description": "Literary inversions, nominalization, hedging, absolute participle clauses",
-    "estimatedTime": 18,
+    "estimatedTime": 5,
     "difficulty": 5
   },
   {
@@ -3690,7 +3690,7 @@
       "a1-error-correction-article-errors"
     ],
     "description": "Put words in the correct order to form daily routine sentences",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 1
   },
   {
@@ -3722,7 +3722,7 @@
       "a1-sorting-simple-idioms"
     ],
     "description": "Match basic phrasal verbs to their visual representations",
-    "estimatedTime": 3,
+    "estimatedTime": 2,
     "difficulty": 1
   },
   {
@@ -3850,7 +3850,7 @@
       "a2-error-correction-phrasal-verb-particle"
     ],
     "description": "Put words in the correct order to form comparative and superlative sentences",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 2
   },
   {
@@ -3866,7 +3866,7 @@
       "a2-reordering-comparatives-superlatives"
     ],
     "description": "Put words in the correct order to form daily activity sentences",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 2
   },
   {
@@ -3882,7 +3882,7 @@
       "a2-reordering-daily-activities"
     ],
     "description": "Match elementary idioms to the situations where they are used",
-    "estimatedTime": 3,
+    "estimatedTime": 2,
     "difficulty": 2
   },
   {
@@ -3946,7 +3946,7 @@
       "b1-error-correction-conditional-passive"
     ],
     "description": "Put words in the correct order to form conditional sentences",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 3
   },
   {
@@ -3962,7 +3962,7 @@
       "b1-reordering-conditional-sentences"
     ],
     "description": "Put words in the correct order to form phrasal verb sentences",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 3
   },
   {
@@ -3978,7 +3978,7 @@
       "b1-reordering-phrasal-verb-sentences"
     ],
     "description": "Match idioms to everyday situations where they apply",
-    "estimatedTime": 3,
+    "estimatedTime": 2,
     "difficulty": 3
   },
   {
@@ -4058,7 +4058,7 @@
       "b2-error-correction-advanced-tense-collocation"
     ],
     "description": "Put words in the correct order to form complex compound sentences",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 4
   },
   {
@@ -4074,7 +4074,7 @@
       "b2-reordering-complex-compound"
     ],
     "description": "Put words in the correct order to form advanced phrasal verb sentences",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 4
   },
   {
@@ -4202,7 +4202,7 @@
       "c1-error-correction-advanced-phrasal-verbs"
     ],
     "description": "Put words in the correct order to form inverted and emphatic sentences",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 5
   },
   {
@@ -4218,7 +4218,7 @@
       "c1-reordering-inverted-emphatic"
     ],
     "description": "Put words in the correct order to form academic argument sentences",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 5
   },
   {
@@ -4346,7 +4346,7 @@
       "c2-error-correction-literary-idioms"
     ],
     "description": "Put words in the correct order to form formal academic sentences",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 6
   },
   {
@@ -4362,7 +4362,7 @@
       "c2-reordering-formal-academic"
     ],
     "description": "Put words in the correct order to form literary prose sentences",
-    "estimatedTime": 3,
+    "estimatedTime": 4,
     "difficulty": 6
   },
   {
@@ -4394,7 +4394,7 @@
       "c2-sorting-discourse-markers"
     ],
     "description": "Match mastery-level phrasal verbs to their formal equivalents",
-    "estimatedTime": 3,
+    "estimatedTime": 2,
     "difficulty": 6
   },
   {
@@ -4410,7 +4410,7 @@
       "c2-matching-mastery-phrasal-verbs-formal"
     ],
     "description": "Match literary idioms to their historical origins",
-    "estimatedTime": 3,
+    "estimatedTime": 2,
     "difficulty": 6
   }
 ]
