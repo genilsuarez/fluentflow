@@ -10,6 +10,19 @@ import Fuse from 'fuse.js';
 import '../../styles/components/progression-dashboard.css';
 import '../../styles/components/progression-dashboard-dark-theme.css';
 
+const MODE_I18N_KEYS: Record<string, string> = {
+  flashcard: 'learning.flashcardMode',
+  quiz: 'learning.quizMode',
+  completion: 'learning.completionMode',
+  sorting: 'learning.sortingMode',
+  matching: 'learning.matchingMode',
+  reading: 'learning.readingMode',
+  reordering: 'learning.reorderingMode',
+  transformation: 'learning.transformationMode',
+  'word-formation': 'learning.wordFormationMode',
+  'error-correction': 'learning.errorCorrectionMode',
+};
+
 interface ProgressionDashboardProps {
   onModuleSelect: (module: LearningModule) => void;
   searchQuery?: string;
@@ -345,7 +358,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                       : nextRecommended.level.toUpperCase()}
                   </span>
                   <span className="progression-dashboard__module-type progression-dashboard__module-type--hero">
-                    {nextRecommended.learningMode}
+                    {t(MODE_I18N_KEYS[nextRecommended.learningMode] || 'common.exercise')}
                   </span>
                   <span className="progression-dashboard__time">
                     {nextRecommended.estimatedTime}min
@@ -477,7 +490,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                                     : module.level.toUpperCase()}
                                 </span>
                                 <span className="progression-dashboard__module-type">
-                                  {module.learningMode}
+                                  {t(MODE_I18N_KEYS[module.learningMode] || 'common.exercise')}
                                 </span>
                                 <span className="progression-dashboard__module-time">
                                   {module.estimatedTime}min

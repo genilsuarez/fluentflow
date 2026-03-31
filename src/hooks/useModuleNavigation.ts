@@ -17,6 +17,10 @@ function getModeLabel(learningMode: string, t: (key: string) => string): string 
     sorting: t('mainMenu.modeSorting'),
     matching: t('mainMenu.modeMatching'),
     reading: t('mainMenu.modeReading'),
+    reordering: t('mainMenu.modeReordering'),
+    transformation: t('mainMenu.modeTransformation'),
+    'word-formation': t('mainMenu.modeWordFormation'),
+    'error-correction': t('mainMenu.modeErrorCorrection'),
   };
   return labels[learningMode] || t('mainMenu.modeDefault');
 }
