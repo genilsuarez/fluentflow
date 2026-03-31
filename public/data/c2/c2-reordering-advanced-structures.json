@@ -113,9 +113,9 @@
   },
   {
     "id": "reord-c2-as-019",
-    "sentence": "Only through sustained effort and collaboration can meaningful change be achieved",
-    "words": ["Only", "through", "sustained", "effort", "and", "collaboration", "can", "meaningful", "change", "be", "achieved"],
-    "explanation": "'Only through' triggers inversion: 'can meaningful change be achieved'."
+    "sentence": "Only through sustained collaborative effort can meaningful change be achieved",
+    "words": ["Only", "through", "sustained", "collaborative", "effort", "can", "meaningful", "change", "be", "achieved"],
+    "explanation": "'Only through' triggers inversion: 'can meaningful change be achieved'. 'Sustained collaborative effort' is a noun phrase with stacked adjectives."
   },
   {
     "id": "reord-c2-as-020",

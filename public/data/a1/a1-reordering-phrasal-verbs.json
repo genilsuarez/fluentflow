@@ -31,9 +31,9 @@
   },
   {
     "id": "reord-pv-a1-005",
-    "sentence": "They come in and sit down",
-    "words": ["They", "come", "in", "and", "sit", "down"],
-    "explanation": "'Come in' means to enter. 'Sit down' means to take a seat. Two phrasal verbs joined by 'and'."
+    "sentence": "Please come in before you sit down",
+    "words": ["Please", "come", "in", "before", "you", "sit", "down"],
+    "explanation": "'Come in' means to enter. 'Sit down' means to take a seat. 'Before' establishes the order of actions."
   },
   {
     "id": "reord-pv-a1-006",
@@ -58,10 +58,10 @@
   },
   {
     "id": "reord-pv-a1-009",
-    "sentence": "She picks up the phone and says hello",
-    "words": ["She", "picks", "up", "the", "phone", "and", "says", "hello"],
+    "sentence": "She always picks up the phone very quickly",
+    "words": ["She", "always", "picks", "up", "the", "phone", "very", "quickly"],
     "distractors": ["pick"],
-    "explanation": "'Pick up' means to lift or answer the phone. With 'she', use 'picks up'."
+    "explanation": "'Pick up' means to lift or answer the phone. With 'she', use 'picks up'. Adverbs of frequency go before the main verb."
   },
   {
     "id": "reord-pv-a1-010",

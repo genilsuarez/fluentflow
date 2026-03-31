@@ -594,6 +594,47 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
                       </button>
                     </div>
                   </div>
+
+                  <div className="compact-settings__game">
+                    <label className="compact-settings__game-label">
+                      🔀 {t('settings.reorderingMode')}
+                    </label>
+                    <div className="compact-settings__game-stepper">
+                      <button
+                        type="button"
+                        className="compact-settings__stepper-btn compact-settings__stepper-btn--minus"
+                        onClick={() =>
+                          handleGameSettingChange(
+                            'reorderingMode',
+                            'itemCount',
+                            Math.max(5, (localGameSettings.reorderingMode.itemCount || 10) - 1)
+                          )
+                        }
+                        disabled={(localGameSettings.reorderingMode.itemCount || 10) <= 5}
+                        aria-label={t('settings.decreaseReorderingCount')}
+                      >
+                        −
+                      </button>
+                      <span className="compact-settings__stepper-value">
+                        {localGameSettings.reorderingMode.itemCount || 10}
+                      </span>
+                      <button
+                        type="button"
+                        className="compact-settings__stepper-btn compact-settings__stepper-btn--plus"
+                        onClick={() =>
+                          handleGameSettingChange(
+                            'reorderingMode',
+                            'itemCount',
+                            Math.min(20, (localGameSettings.reorderingMode.itemCount || 10) + 1)
+                          )
+                        }
+                        disabled={(localGameSettings.reorderingMode.itemCount || 10) >= 20}
+                        aria-label={t('settings.increaseReorderingCount')}
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             )}

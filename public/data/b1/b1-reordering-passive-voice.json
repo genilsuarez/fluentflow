@@ -100,9 +100,9 @@
   },
   {
     "id": "reord-b1-pv-016",
-    "sentence": "Tickets can be purchased online or at the door",
-    "words": ["Tickets", "can", "be", "purchased", "online", "or", "at", "the", "door"],
-    "explanation": "Modal passive: 'can be purchased'. Two options joined by 'or'."
+    "sentence": "Tickets can only be purchased online before the event",
+    "words": ["Tickets", "can", "only", "be", "purchased", "online", "before", "the", "event"],
+    "explanation": "Modal passive: 'can be purchased'. 'Only' adds restriction. 'Before the event' specifies the time."
   },
   {
     "id": "reord-b1-pv-017",

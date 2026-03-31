@@ -174,6 +174,8 @@ const translations = {
       increaseSortingCount: 'Increase sorting count',
       decreaseMatchingCount: 'Decrease matching count',
       increaseMatchingCount: 'Increase matching count',
+      decreaseReorderingCount: 'Decrease reordering count',
+      increaseReorderingCount: 'Increase reordering count',
     },
     about: {
       title: 'About FluentFlow',
@@ -732,6 +734,8 @@ const translations = {
       increaseSortingCount: 'Aumentar cantidad de clasificación',
       decreaseMatchingCount: 'Disminuir cantidad de emparejamiento',
       increaseMatchingCount: 'Aumentar cantidad de emparejamiento',
+      decreaseReorderingCount: 'Disminuir cantidad de reordenar',
+      increaseReorderingCount: 'Aumentar cantidad de reordenar',
     },
     about: {
       title: 'Acerca de FluentFlow',
