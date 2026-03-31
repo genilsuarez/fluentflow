@@ -760,7 +760,10 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
                           handleGameSettingChange(
                             'errorCorrectionMode',
                             'itemCount',
-                            Math.min(20, (localGameSettings.errorCorrectionMode.itemCount || 10) + 1)
+                            Math.min(
+                              20,
+                              (localGameSettings.errorCorrectionMode.itemCount || 10) + 1
+                            )
                           )
                         }
                         disabled={(localGameSettings.errorCorrectionMode.itemCount || 10) >= 20}
