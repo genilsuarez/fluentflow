@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Heart, Info, Monitor } from 'lucide-react';
+import { X, Heart, Info, Monitor, Trash2 } from 'lucide-react';
 import { Github } from 'lucide-react';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useTranslation } from '../../utils/i18n';
@@ -17,10 +17,31 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
   const { language } = useSettingsStore();
   const { t } = useTranslation(language);
   const [showScreenInfo, setShowScreenInfo] = useState(false);
+  const [showCacheConfirm, setShowCacheConfirm] = useState(false);
+  const [clearingCache, setClearingCache] = useState(false);
+
+  const handleClearCache = async () => {
+    setClearingCache(true);
+    try {
+      // Delete ALL caches, not just named ones
+      const keys = await caches.keys();
+      await Promise.all(keys.map(k => caches.delete(k)));
+      // Unregister all service workers
+      if ('serviceWorker' in navigator) {
+        const registrations = await navigator.serviceWorker.getRegistrations();
+        await Promise.all(registrations.map(r => r.unregister()));
+      }
+    } catch {
+      // Continue to reload even if cache clearing partially fails
+    }
+    // Always reload to force fresh download
+    window.location.reload();
+  };
 
   // Handle closing both modals
   const handleClose = () => {
     setShowScreenInfo(false);
+    setShowCacheConfirm(false);
     onClose();
   };
 
@@ -160,7 +181,13 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
               >
                 React
               </button>
-              <span className="compact-about__tech-item">TypeScript</span>
+              <button
+                className="compact-about__tech-item compact-about__tech-item--clickable"
+                onClick={() => setShowCacheConfirm(true)}
+                title="Clear cache & reload"
+              >
+                TypeScript
+              </button>
               <span className="compact-about__tech-item">CSS</span>
               <span className="compact-about__tech-item">Zustand</span>
               <span className="compact-about__tech-item">Vite</span>
@@ -231,6 +258,52 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
                   </div>
                 );
               })()}
+            </div>
+          </div>
+        </div>
+      )}
+      {/* Cache Confirm Modal */}
+      {showCacheConfirm && (
+        <div className="screen-info-modal">
+          <div className="screen-info-modal__container cache-confirm">
+            <div className="screen-info-modal__header">
+              <div className="screen-info-modal__title-section">
+                <Trash2 className="screen-info-modal__icon" />
+                <h3 className="screen-info-modal__title">
+                  {t('about.clearCache', 'Clear cache')}
+                </h3>
+              </div>
+              <button
+                onClick={() => setShowCacheConfirm(false)}
+                className="screen-info-modal__close-btn"
+                aria-label={t('common.close')}
+              >
+                <X className="screen-info-modal__close-icon" />
+              </button>
+            </div>
+            <div className="screen-info-modal__content">
+              <p className="cache-confirm__text">
+                {t(
+                  'about.clearCacheDescription',
+                  'This will delete all cached data and reload the app to download the latest version.'
+                )}
+              </p>
+              <div className="cache-confirm__actions">
+                <button
+                  className="cache-confirm__btn cache-confirm__btn--cancel"
+                  onClick={() => setShowCacheConfirm(false)}
+                  disabled={clearingCache}
+                >
+                  {t('common.cancel', 'Cancel')}
+                </button>
+                <button
+                  className="cache-confirm__btn cache-confirm__btn--confirm"
+                  onClick={handleClearCache}
+                  disabled={clearingCache}
+                >
+                  {clearingCache ? '⏳' : t('about.clearCacheConfirm', 'Clear & reload')}
+                </button>
+              </div>
             </div>
           </div>
         </div>
