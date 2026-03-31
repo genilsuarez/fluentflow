@@ -1,0 +1,152 @@
+[
+  {
+    "prompt": "Rewrite using a present participle clause",
+    "source": "Because she felt tired, she went to bed early.",
+    "correct": ["Feeling tired, she went to bed early."],
+    "explanation": "Replace <Because she felt> with the present participle <Feeling> to create a participle clause."
+  },
+  {
+    "prompt": "Rewrite using a present participle clause",
+    "source": "As he didn't know the way, he asked for directions.",
+    "correct": ["Not knowing the way, he asked for directions."],
+    "explanation": "Negative participle clause: <Not knowing> replaces <As he didn't know>."
+  },
+  {
+    "prompt": "Rewrite using a past participle clause",
+    "source": "The letter was written in French, so it was difficult to understand.",
+    "correct": ["Written in French, the letter was difficult to understand."],
+    "explanation": "Past participle clause: <Written in French> replaces the passive clause."
+  },
+  {
+    "prompt": "Rewrite using a present participle clause",
+    "source": "She walked along the beach and collected shells.",
+    "correct": ["Walking along the beach, she collected shells."],
+    "explanation": "When two actions happen simultaneously, use a participle for the first."
+  },
+  {
+    "prompt": "Rewrite using a past participle clause",
+    "source": "The building was damaged by the earthquake and had to be demolished.",
+    "correct": ["Damaged by the earthquake, the building had to be demolished."],
+    "explanation": "Past participle clause: <Damaged by the earthquake> replaces the passive clause."
+  },
+  {
+    "prompt": "Rewrite using a perfect participle clause",
+    "source": "After she had finished her homework, she watched TV.",
+    "correct": ["Having finished her homework, she watched TV."],
+    "explanation": "Perfect participle: <Having finished> shows the first action was completed before the second."
+  },
+  {
+    "prompt": "Rewrite using a present participle clause",
+    "source": "Since he lives near the office, he walks to work.",
+    "correct": ["Living near the office, he walks to work."],
+    "explanation": "Replace <Since he lives> with the participle <Living>."
+  },
+  {
+    "prompt": "Rewrite using a past participle clause",
+    "source": "The painting was stolen from the museum and was later found in a private collection.",
+    "correct": ["Stolen from the museum, the painting was later found in a private collection."],
+    "explanation": "Past participle clause: <Stolen from the museum> replaces the passive clause."
+  },
+  {
+    "prompt": "Rewrite using a perfect participle clause",
+    "source": "After he had read the report, he made his decision.",
+    "correct": ["Having read the report, he made his decision."],
+    "explanation": "Perfect participle: <Having read> shows completion before the main action."
+  },
+  {
+    "prompt": "Rewrite using a present participle clause",
+    "source": "While she was waiting for the bus, she read a book.",
+    "correct": ["Waiting for the bus, she read a book.", "While waiting for the bus, she read a book."],
+    "explanation": "Replace <While she was waiting> with <Waiting> or <While waiting>."
+  },
+  {
+    "prompt": "Rewrite using a past participle clause",
+    "source": "The city was founded in the 12th century and is now a major tourist destination.",
+    "correct": ["Founded in the 12th century, the city is now a major tourist destination."],
+    "explanation": "Past participle clause: <Founded in the 12th century> replaces the passive clause."
+  },
+  {
+    "prompt": "Rewrite using a present participle clause",
+    "source": "Because he realised his mistake, he apologised immediately.",
+    "correct": ["Realising his mistake, he apologised immediately."],
+    "explanation": "Replace <Because he realised> with the participle <Realising>."
+  },
+  {
+    "prompt": "Rewrite using a perfect participle clause",
+    "source": "After they had discussed the matter, they reached an agreement.",
+    "correct": ["Having discussed the matter, they reached an agreement."],
+    "explanation": "Perfect participle: <Having discussed> shows the discussion was completed first."
+  },
+  {
+    "prompt": "Rewrite using a present participle clause",
+    "source": "She opened the door and found a package on the doorstep.",
+    "correct": ["Opening the door, she found a package on the doorstep."],
+    "explanation": "Use a participle for the first of two sequential actions."
+  },
+  {
+    "prompt": "Rewrite using a past participle clause",
+    "source": "The novel was translated into 30 languages and became a worldwide bestseller.",
+    "correct": ["Translated into 30 languages, the novel became a worldwide bestseller."],
+    "explanation": "Past participle clause replaces the passive construction."
+  },
+  {
+    "prompt": "Rewrite using a present participle clause",
+    "source": "As she is an experienced doctor, she handled the emergency calmly.",
+    "correct": ["Being an experienced doctor, she handled the emergency calmly."],
+    "explanation": "Replace <As she is> with <Being> to form a participle clause."
+  },
+  {
+    "prompt": "Rewrite using a perfect participle clause",
+    "source": "After he had been warned twice, he was finally dismissed.",
+    "correct": ["Having been warned twice, he was finally dismissed."],
+    "explanation": "Perfect passive participle: <Having been warned> combines perfect and passive."
+  },
+  {
+    "prompt": "Rewrite using a present participle clause",
+    "source": "He looked out of the window and saw the children playing.",
+    "correct": ["Looking out of the window, he saw the children playing."],
+    "explanation": "Use a participle for the first action in a sequence."
+  },
+  {
+    "prompt": "Rewrite using a past participle clause",
+    "source": "The report was based on extensive research and provided valuable insights.",
+    "correct": ["Based on extensive research, the report provided valuable insights."],
+    "explanation": "Past participle clause: <Based on extensive research> replaces the passive."
+  },
+  {
+    "prompt": "Rewrite using a present participle clause",
+    "source": "Because they wanted to save money, they decided to cook at home.",
+    "correct": ["Wanting to save money, they decided to cook at home."],
+    "explanation": "Replace <Because they wanted> with the participle <Wanting>."
+  },
+  {
+    "prompt": "Rewrite using a past participle clause",
+    "source": "The bridge was built in 1890 and is still in use today.",
+    "correct": ["Built in 1890, the bridge is still in use today."],
+    "explanation": "Past participle clause: <Built in 1890> replaces the passive clause."
+  },
+  {
+    "prompt": "Rewrite using a present participle clause",
+    "source": "She turned the corner and noticed a strange figure in the shadows.",
+    "correct": ["Turning the corner, she noticed a strange figure in the shadows."],
+    "explanation": "Use a participle for the first of two sequential actions."
+  },
+  {
+    "prompt": "Rewrite using a perfect participle clause",
+    "source": "After she had spent all her money, she had to borrow from a friend.",
+    "correct": ["Having spent all her money, she had to borrow from a friend."],
+    "explanation": "Perfect participle: <Having spent> shows the spending was completed first."
+  },
+  {
+    "prompt": "Rewrite using a present participle clause",
+    "source": "As he was the oldest member, he was asked to give a speech.",
+    "correct": ["Being the oldest member, he was asked to give a speech."],
+    "explanation": "Replace <As he was> with <Being> to form a participle clause."
+  },
+  {
+    "prompt": "Rewrite using a past participle clause",
+    "source": "The manuscript was discovered in an attic and turned out to be a lost masterpiece.",
+    "correct": ["Discovered in an attic, the manuscript turned out to be a lost masterpiece."],
+    "explanation": "Past participle clause: <Discovered in an attic> replaces the passive."
+  }
+]

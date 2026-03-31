@@ -64,5 +64,100 @@
     "correct": ["It's time you started looking for a job."],
     "hint": "<It's time> + subject + past simple",
     "explanation": "<It's time> + subject + past simple suggests something should happen now."
+  },
+  {
+    "prompt": "Change to mixed conditional (past → present)",
+    "source": "She didn't take the medicine. She still feels ill.",
+    "correct": ["If she had taken the medicine, she would feel better now.", "If she had taken the medicine, she wouldn't still feel ill."],
+    "hint": "Past condition → present result",
+    "explanation": "Mixed conditional: <If> + past perfect (past condition) + <would> + base verb (present result)."
+  },
+  {
+    "prompt": "Change to advanced passive with <is believed to>",
+    "source": "People believe that the treasure is hidden in the cave.",
+    "correct": ["The treasure is believed to be hidden in the cave.", "It is believed that the treasure is hidden in the cave."],
+    "explanation": "Impersonal passive: subject + <is believed to> + infinitive, or <It is believed that> + clause."
+  },
+  {
+    "prompt": "Rewrite as a cleft sentence with <What ... is>",
+    "source": "I need more time.",
+    "correct": ["What I need is more time."],
+    "explanation": "<What> cleft sentences emphasize the focus element: <What> + subject + verb + <is> + complement."
+  },
+  {
+    "prompt": "Change to formal register using <should> inversion",
+    "source": "If you need any help, please contact us.",
+    "correct": ["Should you need any help, please contact us."],
+    "hint": "Invert <should> and the subject",
+    "explanation": "Formal conditional: <Should> + subject + base verb replaces <If> + subject + present simple."
+  },
+  {
+    "prompt": "Rewrite using a participle clause",
+    "source": "After he finished the report, he went home.",
+    "correct": ["Having finished the report, he went home.", "After finishing the report, he went home."],
+    "explanation": "Perfect participle clause: <Having> + past participle replaces <After> + subject + past simple."
+  },
+  {
+    "prompt": "Change to passive with <get>",
+    "source": "Someone broke into our house last night.",
+    "correct": ["Our house got broken into last night."],
+    "hint": "Use <got> + past participle",
+    "explanation": "Informal passive with <get>: subject + <got> + past participle."
+  },
+  {
+    "prompt": "Rewrite using inversion with <Rarely>",
+    "source": "You rarely see such dedication.",
+    "correct": ["Rarely do you see such dedication."],
+    "explanation": "<Rarely> + inverted auxiliary + subject for emphasis."
+  },
+  {
+    "prompt": "Change to third conditional",
+    "source": "We didn't leave early. We got stuck in traffic.",
+    "correct": ["If we had left early, we wouldn't have got stuck in traffic.", "If we had left early, we would not have gotten stuck in traffic."],
+    "explanation": "Third conditional: <If> + past perfect + <would(n't) have> + past participle for unreal past."
+  },
+  {
+    "prompt": "Rewrite as a cleft sentence with <It was ... that>",
+    "source": "The weather ruined our plans.",
+    "correct": ["It was the weather that ruined our plans."],
+    "explanation": "Cleft sentence: <It was> + focus element + <that> + rest of clause."
+  },
+  {
+    "prompt": "Change to formal register using <were to>",
+    "source": "If the project fails, we will lose funding.",
+    "correct": ["Were the project to fail, we would lose funding.", "If the project were to fail, we would lose funding."],
+    "explanation": "<Were to> + base verb is a formal way to express hypothetical conditions."
+  },
+  {
+    "prompt": "Rewrite using <wish> + <would>",
+    "source": "My neighbor plays loud music every night. It annoys me.",
+    "correct": ["I wish my neighbor would stop playing loud music.", "I wish my neighbor wouldn't play loud music every night."],
+    "hint": "Use <wish> + <would> for complaints about others",
+    "explanation": "<Wish> + subject + <would> expresses annoyance about someone else's behavior."
+  },
+  {
+    "prompt": "Change to passive with reporting verb",
+    "source": "Experts report that the economy is improving.",
+    "correct": ["The economy is reported to be improving.", "It is reported that the economy is improving."],
+    "explanation": "Passive reporting: subject + <is reported to> + infinitive, or <It is reported that> + clause."
+  },
+  {
+    "prompt": "Rewrite using <provided that>",
+    "source": "You can borrow my car if you drive carefully.",
+    "correct": ["You can borrow my car provided that you drive carefully.", "You can borrow my car provided you drive carefully."],
+    "explanation": "<Provided (that)> is a formal alternative to <if> expressing a condition."
+  },
+  {
+    "prompt": "Change to mixed conditional (present → past)",
+    "source": "I am not a doctor. I couldn't help him yesterday.",
+    "correct": ["If I were a doctor, I could have helped him yesterday."],
+    "hint": "Present condition → past result",
+    "explanation": "Mixed conditional: <If> + past simple (present condition) + <could have> + past participle (past result)."
+  },
+  {
+    "prompt": "Rewrite using inversion with <No sooner>",
+    "source": "He arrived and immediately it started to rain.",
+    "correct": ["No sooner had he arrived than it started to rain."],
+    "explanation": "<No sooner> + past perfect inversion + <than> + past simple for sequential events."
   }
 ]

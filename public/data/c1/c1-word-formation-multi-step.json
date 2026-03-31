@@ -1,0 +1,184 @@
+[
+  {
+    "sentence": "The _____ of the data made the research conclusions questionable.",
+    "rootWord": "RELIABLE",
+    "correct": "unreliability",
+    "hint": "The noun form meaning lack of reliability",
+    "explanation": "RELIABLE → unreliability (prefix un- + suffix -ity: the state of not being reliable)"
+  },
+  {
+    "sentence": "His handwriting was completely _____.",
+    "rootWord": "LEGIBLE",
+    "correct": "illegible",
+    "hint": "Not legible — use the negative prefix for words starting with L",
+    "explanation": "LEGIBLE → illegible (prefix il-: not legible, impossible to read)"
+  },
+  {
+    "sentence": "The politician's promises were _____. Nobody believed them.",
+    "rootWord": "REAL",
+    "correct": "unrealistic",
+    "hint": "Not realistic — combine a prefix and a suffix",
+    "explanation": "REAL → unrealistic (prefix un- + suffix -istic: not based in reality)"
+  },
+  {
+    "sentence": "The _____ of the witness damaged the prosecution's case.",
+    "rootWord": "CONSISTENT",
+    "correct": "inconsistency",
+    "hint": "The noun form meaning lack of consistency",
+    "explanation": "CONSISTENT → inconsistency (prefix in- + suffix -cy: the state of not being consistent)"
+  },
+  {
+    "sentence": "The new regulations were deemed _____ by the court.",
+    "rootWord": "LEGAL",
+    "correct": "illegitimate",
+    "hint": "Not legitimate — use the negative prefix for L",
+    "explanation": "LEGAL → illegitimate (prefix il- + suffix -imate: not conforming to the law)"
+  },
+  {
+    "sentence": "The _____ of the old system became increasingly apparent.",
+    "rootWord": "ADEQUATE",
+    "correct": "inadequacy",
+    "hint": "The noun form meaning not being adequate",
+    "explanation": "ADEQUATE → inadequacy (prefix in- + suffix -cy: the state of not being adequate)"
+  },
+  {
+    "sentence": "It would be _____ to proceed without proper authorization.",
+    "rootWord": "MATURE",
+    "correct": "immature",
+    "hint": "Not mature — use the negative prefix for M",
+    "explanation": "MATURE → immature (prefix im-: not mature, lacking maturity)"
+  },
+  {
+    "sentence": "The _____ of the candidate's claims was exposed by journalists.",
+    "rootWord": "PLAUSIBLE",
+    "correct": "implausibility",
+    "hint": "The noun form meaning not being plausible",
+    "explanation": "PLAUSIBLE → implausibility (prefix im- + suffix -ity: the quality of not being believable)"
+  },
+  {
+    "sentence": "The task seemed almost _____ given the time constraints.",
+    "rootWord": "POSSIBLE",
+    "correct": "impossible",
+    "hint": "Not possible — use the negative prefix for P",
+    "explanation": "POSSIBLE → impossible (prefix im-: not possible)"
+  },
+  {
+    "sentence": "The _____ of the new policy affected thousands of workers.",
+    "rootWord": "FAIR",
+    "correct": "unfairness",
+    "hint": "The noun form meaning lack of fairness",
+    "explanation": "FAIR → unfairness (prefix un- + suffix -ness: the quality of not being fair)"
+  },
+  {
+    "sentence": "Her argument was _____ and failed to convince the committee.",
+    "rootWord": "LOGIC",
+    "correct": "illogical",
+    "hint": "Not logical — use the negative prefix for L",
+    "explanation": "LOGIC → illogical (prefix il- + suffix -al: not based on logic)"
+  },
+  {
+    "sentence": "The _____ of the patient's condition required immediate surgery.",
+    "rootWord": "SEVERE",
+    "correct": "severity",
+    "hint": "The noun form of severe",
+    "explanation": "SEVERE → severity (suffix -ity: the quality of being severe)"
+  },
+  {
+    "sentence": "The report highlighted the _____ of the current healthcare system.",
+    "rootWord": "EFFECTIVE",
+    "correct": "ineffectiveness",
+    "hint": "The noun form meaning lack of effectiveness",
+    "explanation": "EFFECTIVE → ineffectiveness (prefix in- + suffix -ness: the quality of not being effective)"
+  },
+  {
+    "sentence": "The company's _____ to adapt led to its downfall.",
+    "rootWord": "ABLE",
+    "correct": "inability",
+    "hint": "The noun form meaning not being able",
+    "explanation": "ABLE → inability (prefix in- + suffix -ity: the state of not being able)"
+  },
+  {
+    "sentence": "The _____ of the evidence made the verdict controversial.",
+    "rootWord": "SUFFICIENT",
+    "correct": "insufficiency",
+    "hint": "The noun form meaning not being sufficient",
+    "explanation": "SUFFICIENT → insufficiency (prefix in- + suffix -cy: the state of not being sufficient)"
+  },
+  {
+    "sentence": "His behaviour at the ceremony was considered _____.",
+    "rootWord": "PROPER",
+    "correct": "improper",
+    "hint": "Not proper — use the negative prefix for P",
+    "explanation": "PROPER → improper (prefix im-: not proper or appropriate)"
+  },
+  {
+    "sentence": "The _____ of the two accounts raised suspicions.",
+    "rootWord": "COMPATIBLE",
+    "correct": "incompatibility",
+    "hint": "The noun form meaning not being compatible",
+    "explanation": "COMPATIBLE → incompatibility (prefix in- + suffix -ity: the state of not being compatible)"
+  },
+  {
+    "sentence": "The damage to the ecosystem was _____.",
+    "rootWord": "REVERSE",
+    "correct": "irreversible",
+    "hint": "Not able to be reversed",
+    "explanation": "REVERSE → irreversible (prefix ir- + suffix -ible: not capable of being reversed)"
+  },
+  {
+    "sentence": "The _____ of the old bridge posed a serious risk to drivers.",
+    "rootWord": "STABLE",
+    "correct": "instability",
+    "hint": "The noun form meaning lack of stability",
+    "explanation": "STABLE → instability (prefix in- + suffix -ity: the state of not being stable)"
+  },
+  {
+    "sentence": "The journalist's report was criticized for its _____.",
+    "rootWord": "ACCURATE",
+    "correct": "inaccuracy",
+    "hint": "The noun form meaning lack of accuracy",
+    "explanation": "ACCURATE → inaccuracy (prefix in- + suffix -cy: the state of not being accurate)"
+  },
+  {
+    "sentence": "The new employee showed a remarkable _____ to learn quickly.",
+    "rootWord": "WILLING",
+    "correct": "willingness",
+    "hint": "The noun form of willing",
+    "explanation": "WILLING → willingness (suffix -ness: the quality of being willing)"
+  },
+  {
+    "sentence": "The _____ of the contract terms was a major concern.",
+    "rootWord": "FLEXIBLE",
+    "correct": "inflexibility",
+    "hint": "The noun form meaning lack of flexibility",
+    "explanation": "FLEXIBLE → inflexibility (prefix in- + suffix -ity: the state of not being flexible)"
+  },
+  {
+    "sentence": "The results were _____ and could not be used in the study.",
+    "rootWord": "RELEVANT",
+    "correct": "irrelevant",
+    "hint": "Not relevant — use the negative prefix for R",
+    "explanation": "RELEVANT → irrelevant (prefix ir-: not relevant or applicable)"
+  },
+  {
+    "sentence": "The _____ of the manager's decisions frustrated the entire team.",
+    "rootWord": "RATIONAL",
+    "correct": "irrationality",
+    "hint": "The noun form meaning lack of rationality",
+    "explanation": "RATIONAL → irrationality (prefix ir- + suffix -ity: the quality of not being rational)"
+  },
+  {
+    "sentence": "The _____ of the new policy was evident from the start.",
+    "rootWord": "PRACTICAL",
+    "correct": "impracticality",
+    "hint": "The noun form meaning not being practical",
+    "explanation": "PRACTICAL → impracticality (prefix im- + suffix -ity: the quality of not being practical)"
+  },
+  {
+    "sentence": "The patient's condition was _____ despite the treatment.",
+    "rootWord": "CHANGE",
+    "correct": "unchangeable",
+    "hint": "Not able to be changed",
+    "explanation": "CHANGE → unchangeable (prefix un- + suffix -able: not capable of being changed)"
+  }
+]

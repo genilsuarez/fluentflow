@@ -1,0 +1,152 @@
+[
+  {
+    "sentence": "The knight showed great _____ in battle.",
+    "rootWord": "VALIANT",
+    "correct": "valiance",
+    "explanation": "VALIANT → valiance (archaic noun form meaning 'great courage or bravery')"
+  },
+  {
+    "sentence": "The _____ of the old castle gave it a mysterious atmosphere.",
+    "rootWord": "HOARY",
+    "correct": "hoariness",
+    "explanation": "HOARY → hoariness (literary: quality of being ancient and grey)"
+  },
+  {
+    "sentence": "She spoke with great _____ about the injustice she had witnessed.",
+    "rootWord": "ELOQUENT",
+    "correct": "eloquence",
+    "explanation": "ELOQUENT → eloquence (change -t to -ce to make a noun meaning 'fluent expression')"
+  },
+  {
+    "sentence": "The _____ of the monarch was celebrated throughout the kingdom.",
+    "rootWord": "BENEVOLENT",
+    "correct": "benevolence",
+    "explanation": "BENEVOLENT → benevolence (change -t to -ce to make a noun meaning 'kindness')"
+  },
+  {
+    "sentence": "His _____ nature made him unsuitable for the harsh realities of politics.",
+    "rootWord": "GUILELESS",
+    "correct": "guilelessness",
+    "explanation": "GUILELESS → guilelessness (add -ness to make a noun meaning 'innocent sincerity')"
+  },
+  {
+    "sentence": "The poet's _____ verse captured the beauty of the natural world.",
+    "rootWord": "LYRIC",
+    "correct": "lyrical",
+    "explanation": "LYRIC → lyrical (add -al to make an adjective meaning 'expressing emotion beautifully')"
+  },
+  {
+    "sentence": "The _____ of the ancient text made it difficult to decipher.",
+    "rootWord": "OBSCURE",
+    "correct": "obscurity",
+    "explanation": "OBSCURE → obscurity (change -e to -ity to make a noun meaning 'state of being unclear')"
+  },
+  {
+    "sentence": "The _____ of the old manuscript was evident in its faded ink.",
+    "rootWord": "ANTIQUE",
+    "correct": "antiquity",
+    "explanation": "ANTIQUE → antiquity (change -e to -ity to make a noun meaning 'great age')"
+  },
+  {
+    "sentence": "She displayed remarkable _____ in her dealings with foreign dignitaries.",
+    "rootWord": "MAGNANIMOUS",
+    "correct": "magnanimity",
+    "explanation": "MAGNANIMOUS → magnanimity (change -ous to -ity to make a noun meaning 'generous spirit')"
+  },
+  {
+    "sentence": "The _____ of the landscape inspired many Romantic poets.",
+    "rootWord": "SUBLIME",
+    "correct": "sublimity",
+    "explanation": "SUBLIME → sublimity (change -e to -ity to make a noun meaning 'awe-inspiring grandeur')"
+  },
+  {
+    "sentence": "His _____ behaviour towards the servants was widely criticised.",
+    "rootWord": "TYRANT",
+    "correct": "tyrannical",
+    "explanation": "TYRANT → tyrannical (change -t to -nical to make an adjective meaning 'despotic')"
+  },
+  {
+    "sentence": "The _____ of the philosopher's arguments was beyond question.",
+    "rootWord": "SAGACIOUS",
+    "correct": "sagacity",
+    "explanation": "SAGACIOUS → sagacity (change -ous to -ity to make a noun meaning 'keen wisdom')"
+  },
+  {
+    "sentence": "The _____ of the old cathedral filled visitors with awe.",
+    "rootWord": "RESPLENDENT",
+    "correct": "resplendence",
+    "explanation": "RESPLENDENT → resplendence (change -t to -ce to make a noun meaning 'dazzling beauty')"
+  },
+  {
+    "sentence": "Her _____ spirit could not be broken by adversity.",
+    "rootWord": "INDOMITABLE",
+    "correct": "indomitability",
+    "explanation": "INDOMITABLE → indomitability (change -le to -lity to make a noun meaning 'unconquerable spirit')"
+  },
+  {
+    "sentence": "The _____ of the courtiers was evident in their elaborate dress.",
+    "rootWord": "OPULENT",
+    "correct": "opulence",
+    "explanation": "OPULENT → opulence (change -t to -ce to make a noun meaning 'great wealth and luxury')"
+  },
+  {
+    "sentence": "The _____ tone of the eulogy moved everyone to tears.",
+    "rootWord": "ELEGY",
+    "correct": "elegiac",
+    "explanation": "ELEGY → elegiac (change -y to -iac to make an adjective meaning 'mournfully poetic')"
+  },
+  {
+    "sentence": "His _____ wit made him the life of every literary salon.",
+    "rootWord": "MORDANT",
+    "correct": "mordancy",
+    "explanation": "MORDANT → mordancy (change -t to -cy to make a noun meaning 'sharp, biting quality')"
+  },
+  {
+    "sentence": "The _____ of the ancient ruins spoke of a once-great civilisation.",
+    "rootWord": "DESOLATE",
+    "correct": "desolation",
+    "explanation": "DESOLATE → desolation (change -e to -ion to make a noun meaning 'bleak emptiness')"
+  },
+  {
+    "sentence": "She wrote with a _____ clarity that illuminated even the most complex ideas.",
+    "rootWord": "LUCID",
+    "correct": "lucidity",
+    "explanation": "LUCID → lucidity (add -ity to make a noun meaning 'clearness of thought')"
+  },
+  {
+    "sentence": "The _____ of the old regime was finally overthrown.",
+    "rootWord": "DESPOTIC",
+    "correct": "despotism",
+    "explanation": "DESPOTIC → despotism (change -ic to -ism to make a noun meaning 'tyrannical rule')"
+  },
+  {
+    "sentence": "His _____ manner concealed a sharp and calculating mind.",
+    "rootWord": "AVUNCULAR",
+    "correct": "avuncularity",
+    "explanation": "AVUNCULAR → avuncularity (add -ity to make a noun meaning 'uncle-like friendliness')"
+  },
+  {
+    "sentence": "The _____ of the medieval tapestry was remarkable for its age.",
+    "rootWord": "PRISTINE",
+    "correct": "pristineness",
+    "explanation": "PRISTINE → pristineness (add -ness to make a noun meaning 'original, unspoiled condition')"
+  },
+  {
+    "sentence": "The _____ of the philosopher's prose style was widely admired.",
+    "rootWord": "PELLUCID",
+    "correct": "pellucidity",
+    "explanation": "PELLUCID → pellucidity (add -ity to make a noun meaning 'translucent clarity')"
+  },
+  {
+    "sentence": "Her _____ devotion to the cause inspired generations of activists.",
+    "rootWord": "UNWAVER",
+    "correct": "unwavering",
+    "explanation": "UNWAVER → unwavering (add -ing to make an adjective meaning 'steady and resolute')"
+  },
+  {
+    "sentence": "The _____ of the ancient oracle was sought by kings and commoners alike.",
+    "rootWord": "PRESCIENT",
+    "correct": "prescience",
+    "explanation": "PRESCIENT → prescience (change -t to -ce to make a noun meaning 'foreknowledge')"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "reord-c2-lp-001",
+    "sentence": "Through the mist-laden valley the solitary figure wandered aimlessly",
+    "words": ["Through", "the", "mist-laden", "valley", "the", "solitary", "figure", "wandered", "aimlessly"],
+    "hint": "Prepositional phrase + subject + verb + adverb",
+    "explanation": "Literary fronting: the prepositional phrase <Through the mist-laden valley> comes before the subject."
+  },
+  {
+    "id": "reord-c2-lp-002",
+    "sentence": "So profound was her grief that words failed to capture its depth",
+    "words": ["So", "profound", "was", "her", "grief", "that", "words", "failed", "to", "capture", "its", "depth"],
+    "hint": "So + adjective + was + subject + that clause",
+    "explanation": "Literary inversion with <So ... that> for dramatic emphasis."
+  },
+  {
+    "id": "reord-c2-lp-003",
+    "sentence": "Beneath the ancient oak tree lay the remnants of a forgotten civilisation",
+    "words": ["Beneath", "the", "ancient", "oak", "tree", "lay", "the", "remnants", "of", "a", "forgotten", "civilisation"],
+    "hint": "Prepositional phrase + verb + subject",
+    "explanation": "Literary inversion: <Beneath ... lay the remnants> places the setting before the subject."
+  },
+  {
+    "id": "reord-c2-lp-004",
+    "sentence": "Not until the final chapter does the true nature of the protagonist emerge",
+    "words": ["Not", "until", "the", "final", "chapter", "does", "the", "true", "nature", "of", "the", "protagonist", "emerge"],
+    "hint": "Not until + noun phrase + auxiliary + subject + verb",
+    "explanation": "Literary inversion after <Not until> creates suspense."
+  },
+  {
+    "id": "reord-c2-lp-005",
+    "sentence": "In the gathering twilight the old house seemed to breathe with memories",
+    "words": ["In", "the", "gathering", "twilight", "the", "old", "house", "seemed", "to", "breathe", "with", "memories"],
+    "hint": "Prepositional phrase + subject + verb + infinitive",
+    "explanation": "Literary fronting: the time phrase creates atmosphere before the main clause."
+  },
+  {
+    "id": "reord-c2-lp-006",
+    "sentence": "Gone were the days of innocence replaced by a weary resignation",
+    "words": ["Gone", "were", "the", "days", "of", "innocence", "replaced", "by", "a", "weary", "resignation"],
+    "hint": "Past participle + were + subject + past participle phrase",
+    "explanation": "Literary inversion: <Gone were the days> is a classic literary construction."
+  },
+  {
+    "id": "reord-c2-lp-007",
+    "sentence": "With each passing season the garden surrendered another fragment of its former glory",
+    "words": ["With", "each", "passing", "season", "the", "garden", "surrendered", "another", "fragment", "of", "its", "former", "glory"],
+    "hint": "Prepositional phrase + subject + verb + object",
+    "explanation": "Literary fronting: <With each passing season> sets the temporal frame."
+  },
+  {
+    "id": "reord-c2-lp-008",
+    "sentence": "Seldom had the village witnessed such an extraordinary display of courage",
+    "words": ["Seldom", "had", "the", "village", "witnessed", "such", "an", "extraordinary", "display", "of", "courage"],
+    "hint": "Seldom + had + subject + past participle + object",
+    "explanation": "Literary inversion after <Seldom> for dramatic emphasis."
+  },
+  {
+    "id": "reord-c2-lp-009",
+    "sentence": "Along the winding river path she walked lost in contemplation of the past",
+    "words": ["Along", "the", "winding", "river", "path", "she", "walked", "lost", "in", "contemplation", "of", "the", "past"],
+    "hint": "Prepositional phrase + subject + verb + participial phrase",
+    "explanation": "Literary fronting: the setting phrase precedes the character's action."
+  },
+  {
+    "id": "reord-c2-lp-010",
+    "sentence": "Such was the power of his words that even his adversaries were moved to silence",
+    "words": ["Such", "was", "the", "power", "of", "his", "words", "that", "even", "his", "adversaries", "were", "moved", "to", "silence"],
+    "hint": "Such + was + subject + that clause",
+    "explanation": "Literary inversion with <Such ... that> for rhetorical emphasis."
+  },
+  {
+    "id": "reord-c2-lp-011",
+    "sentence": "From the ashes of despair there arose an unexpected and luminous hope",
+    "words": ["From", "the", "ashes", "of", "despair", "there", "arose", "an", "unexpected", "and", "luminous", "hope"],
+    "hint": "Prepositional phrase + there + verb + subject",
+    "explanation": "Literary inversion: <there arose> with fronted prepositional phrase."
+  },
+  {
+    "id": "reord-c2-lp-012",
+    "sentence": "Never again would the world seem quite so simple or so full of promise",
+    "words": ["Never", "again", "would", "the", "world", "seem", "quite", "so", "simple", "or", "so", "full", "of", "promise"],
+    "hint": "Never again + would + subject + verb + complement",
+    "explanation": "Literary inversion after <Never again> for elegiac tone."
+  }
+]

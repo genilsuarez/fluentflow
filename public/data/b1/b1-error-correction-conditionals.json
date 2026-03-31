@@ -1,0 +1,164 @@
+[
+  {
+    "sentence": "If I would have more money, I would buy a car.",
+    "correct": ["If I had more money, I would buy a car."],
+    "hint": "Check the verb form in the if-clause",
+    "explanation": "Second conditional uses past simple in the if-clause: 'If I had', not 'If I would have'."
+  },
+  {
+    "sentence": "If it will rain tomorrow, we will stay home.",
+    "correct": ["If it rains tomorrow, we will stay home."],
+    "hint": "Check the verb form in the if-clause",
+    "explanation": "First conditional uses present simple in the if-clause: 'If it rains', not 'If it will rain'."
+  },
+  {
+    "sentence": "If I was you, I would accept the offer.",
+    "correct": ["If I were you, I would accept the offer."],
+    "hint": "Check the verb 'be' in the if-clause",
+    "explanation": "In second conditional with 'I', the subjunctive 'were' is preferred: 'If I were you'."
+  },
+  {
+    "sentence": "If she would study harder, she would pass the exam.",
+    "correct": ["If she studied harder, she would pass the exam."],
+    "hint": "Check the verb form in the if-clause",
+    "explanation": "Second conditional uses past simple in the if-clause: 'If she studied', not 'If she would study'."
+  },
+  {
+    "sentence": "Unless you don't hurry, you will miss the bus.",
+    "correct": ["Unless you hurry, you will miss the bus."],
+    "hint": "Check the negative with 'unless'",
+    "explanation": "'Unless' already means 'if not', so adding 'don't' creates a double negative. Remove 'don't'."
+  },
+  {
+    "sentence": "The cake was make by my grandmother.",
+    "correct": ["The cake was made by my grandmother."],
+    "hint": "Check the past participle in the passive",
+    "explanation": "Passive voice requires 'was' + past participle: 'made', not 'make'."
+  },
+  {
+    "sentence": "The letter was wrote by the manager.",
+    "correct": ["The letter was written by the manager."],
+    "hint": "Check the past participle of 'write'",
+    "explanation": "Passive voice requires 'was' + past participle: 'written', not 'wrote'."
+  },
+  {
+    "sentence": "English is spoke in many countries.",
+    "correct": ["English is spoken in many countries."],
+    "hint": "Check the past participle of 'speak'",
+    "explanation": "Passive voice requires 'is' + past participle: 'spoken', not 'spoke'."
+  },
+  {
+    "sentence": "The window was broke by the children.",
+    "correct": ["The window was broken by the children."],
+    "hint": "Check the past participle of 'break'",
+    "explanation": "Passive voice requires 'was' + past participle: 'broken', not 'broke'."
+  },
+  {
+    "sentence": "The homework must be do before Friday.",
+    "correct": ["The homework must be done before Friday."],
+    "hint": "Check the past participle after 'must be'",
+    "explanation": "Passive with modal: 'must be' + past participle: 'done', not 'do'."
+  },
+  {
+    "sentence": "She is interested for learning new languages.",
+    "correct": ["She is interested in learning new languages."],
+    "hint": "Check the preposition after 'interested'",
+    "explanation": "The correct collocation is 'interested in', not 'interested for'."
+  },
+  {
+    "sentence": "He apologized for arrive late.",
+    "correct": ["He apologized for arriving late."],
+    "hint": "Check the verb form after a preposition",
+    "explanation": "After a preposition, use the gerund (-ing form): 'for arriving', not 'for arrive'."
+  },
+  {
+    "sentence": "I am looking forward to see you.",
+    "correct": ["I am looking forward to seeing you."],
+    "hint": "Check the verb form after 'looking forward to'",
+    "explanation": "'Looking forward to' is followed by a gerund: 'to seeing', not 'to see'."
+  },
+  {
+    "sentence": "She succeeded in pass the exam.",
+    "correct": ["She succeeded in passing the exam."],
+    "hint": "Check the verb form after the preposition 'in'",
+    "explanation": "After a preposition, use the gerund: 'in passing', not 'in pass'."
+  },
+  {
+    "sentence": "He insisted on pay for dinner.",
+    "correct": ["He insisted on paying for dinner."],
+    "hint": "Check the verb form after the preposition 'on'",
+    "explanation": "After a preposition, use the gerund: 'on paying', not 'on pay'."
+  },
+  {
+    "sentence": "If I had knew the answer, I would have told you.",
+    "correct": ["If I had known the answer, I would have told you."],
+    "hint": "Check the past participle after 'had'",
+    "explanation": "Third conditional uses 'had' + past participle: 'had known', not 'had knew'."
+  },
+  {
+    "sentence": "The meeting was cancel due to bad weather.",
+    "correct": ["The meeting was cancelled due to bad weather.", "The meeting was canceled due to bad weather."],
+    "hint": "Check the past participle in the passive",
+    "explanation": "Passive voice requires 'was' + past participle: 'cancelled' (or 'canceled')."
+  },
+  {
+    "sentence": "She is used to live in a big city.",
+    "correct": ["She is used to living in a big city."],
+    "hint": "Check the verb form after 'used to'",
+    "explanation": "'Be used to' is followed by a gerund: 'used to living', not 'used to live'."
+  },
+  {
+    "sentence": "Despite of the rain, we went for a walk.",
+    "correct": ["Despite the rain, we went for a walk."],
+    "hint": "Check the word after 'despite'",
+    "explanation": "'Despite' is not followed by 'of'. Use 'despite the rain' or 'in spite of the rain'."
+  },
+  {
+    "sentence": "He suggested me to apply for the job.",
+    "correct": ["He suggested that I apply for the job.", "He suggested I apply for the job."],
+    "hint": "Check the structure after 'suggested'",
+    "explanation": "'Suggest' is followed by 'that + subject + base verb', not 'someone + to + verb'."
+  },
+  {
+    "sentence": "If I would be rich, I would travel the world.",
+    "correct": ["If I were rich, I would travel the world."],
+    "hint": "Check the verb form in the if-clause",
+    "explanation": "Second conditional uses past simple (or subjunctive 'were') in the if-clause, not 'would be'."
+  },
+  {
+    "sentence": "The new bridge is being build right now.",
+    "correct": ["The new bridge is being built right now."],
+    "hint": "Check the past participle of 'build'",
+    "explanation": "Present continuous passive requires 'is being' + past participle: 'built', not 'build'."
+  },
+  {
+    "sentence": "She prevented him to make a mistake.",
+    "correct": ["She prevented him from making a mistake."],
+    "hint": "Check the preposition and verb form after 'prevented'",
+    "explanation": "'Prevent someone from doing' is the correct pattern, not 'prevent someone to do'."
+  },
+  {
+    "sentence": "I would go if I will have time.",
+    "correct": ["I would go if I had time."],
+    "hint": "Check the verb form in the if-clause",
+    "explanation": "Second conditional uses past simple in the if-clause: 'if I had', not 'if I will have'."
+  },
+  {
+    "sentence": "The report was gave to the director.",
+    "correct": ["The report was given to the director."],
+    "hint": "Check the past participle of 'give'",
+    "explanation": "Passive voice requires 'was' + past participle: 'given', not 'gave'."
+  },
+  {
+    "sentence": "He accused me for stealing his pen.",
+    "correct": ["He accused me of stealing his pen."],
+    "hint": "Check the preposition after 'accused'",
+    "explanation": "The correct collocation is 'accused of', not 'accused for'."
+  },
+  {
+    "sentence": "If you will come early, we can have breakfast together.",
+    "correct": ["If you come early, we can have breakfast together."],
+    "hint": "Check the verb form in the if-clause",
+    "explanation": "First conditional uses present simple in the if-clause: 'If you come', not 'If you will come'."
+  }
+]

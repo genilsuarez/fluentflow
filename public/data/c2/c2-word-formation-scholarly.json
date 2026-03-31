@@ -1,0 +1,184 @@
+[
+  {
+    "sentence": "The _____ of the ancient manuscript required years of painstaking work.",
+    "rootWord": "DECIPHER",
+    "correct": "decipherment",
+    "hint": "The noun form meaning the act of deciphering",
+    "explanation": "DECIPHER → decipherment (suffix -ment: the scholarly process of decoding)"
+  },
+  {
+    "sentence": "The philosopher's _____ on the nature of consciousness remains influential.",
+    "rootWord": "DISCOURSE",
+    "correct": "discourse",
+    "hint": "A formal discussion or treatise",
+    "explanation": "DISCOURSE → discourse (zero derivation: the word serves as both verb and noun in scholarly contexts)"
+  },
+  {
+    "sentence": "The _____ implications of the new technology are still being debated.",
+    "rootWord": "ETHICS",
+    "correct": "ethical",
+    "hint": "The adjective form relating to ethics",
+    "explanation": "ETHICS → ethical (suffix -al: relating to or involving ethics)"
+  },
+  {
+    "sentence": "The author's _____ style made the novel difficult to categorize.",
+    "rootWord": "ENIGMA",
+    "correct": "enigmatic",
+    "hint": "An adjective meaning mysterious or puzzling",
+    "explanation": "ENIGMA → enigmatic (suffix -atic: having the quality of an enigma)"
+  },
+  {
+    "sentence": "The _____ of power in the region led to decades of conflict.",
+    "rootWord": "CENTRE",
+    "correct": "decentralisation",
+    "hint": "The noun form meaning the process of moving power away from the centre",
+    "explanation": "CENTRE → decentralisation (prefix de- + suffix -isation: the process of distributing from a central authority)"
+  },
+  {
+    "sentence": "The critic described the painting as deliberately _____.",
+    "rootWord": "PROVOKE",
+    "correct": "provocative",
+    "hint": "An adjective meaning intended to provoke",
+    "explanation": "PROVOKE → provocative (suffix -ative: tending to provoke a reaction)"
+  },
+  {
+    "sentence": "The _____ of the feudal system transformed European society.",
+    "rootWord": "ABOLISH",
+    "correct": "abolition",
+    "hint": "The noun form meaning the act of abolishing",
+    "explanation": "ABOLISH → abolition (suffix -tion: the formal ending of a system or practice)"
+  },
+  {
+    "sentence": "The researcher's _____ approach yielded unprecedented results.",
+    "rootWord": "METHOD",
+    "correct": "methodological",
+    "hint": "An adjective relating to methodology",
+    "explanation": "METHOD → methodological (suffix -ological: relating to the systematic methods used)"
+  },
+  {
+    "sentence": "The _____ of the two philosophical traditions produced a new school of thought.",
+    "rootWord": "SYNTHESISE",
+    "correct": "synthesis",
+    "hint": "The noun form meaning the combination of ideas",
+    "explanation": "SYNTHESISE → synthesis (noun form: the combining of separate elements into a whole)"
+  },
+  {
+    "sentence": "The treaty was considered _____ by several member states.",
+    "rootWord": "CONSTITUTION",
+    "correct": "unconstitutional",
+    "hint": "Not in accordance with the constitution",
+    "explanation": "CONSTITUTION → unconstitutional (prefix un- + suffix -al: not conforming to the constitution)"
+  },
+  {
+    "sentence": "The _____ of the poet's later works reveals a profound shift in worldview.",
+    "rootWord": "EXAMINE",
+    "correct": "examination",
+    "hint": "The noun form meaning a detailed inspection",
+    "explanation": "EXAMINE → examination (suffix -ation: the act of examining in detail)"
+  },
+  {
+    "sentence": "The historian argued that the revolution was _____.",
+    "rootWord": "AVOID",
+    "correct": "unavoidable",
+    "hint": "Not able to be avoided",
+    "explanation": "AVOID → unavoidable (prefix un- + suffix -able: impossible to prevent)"
+  },
+  {
+    "sentence": "The _____ of the ancient civilization remains one of archaeology's greatest mysteries.",
+    "rootWord": "DISAPPEAR",
+    "correct": "disappearance",
+    "hint": "The noun form of disappear",
+    "explanation": "DISAPPEAR → disappearance (suffix -ance: the act of vanishing)"
+  },
+  {
+    "sentence": "The scholar's _____ of the text challenged centuries of accepted interpretation.",
+    "rootWord": "REINTERPRET",
+    "correct": "reinterpretation",
+    "hint": "The noun form meaning interpreting again",
+    "explanation": "REINTERPRET → reinterpretation (prefix re- + suffix -ation: a new interpretation)"
+  },
+  {
+    "sentence": "The _____ nature of the evidence made definitive conclusions impossible.",
+    "rootWord": "AMBIGUITY",
+    "correct": "ambiguous",
+    "hint": "An adjective meaning open to more than one interpretation",
+    "explanation": "AMBIGUITY → ambiguous (suffix -ous: having multiple possible meanings)"
+  },
+  {
+    "sentence": "The _____ of the monarch's authority was a gradual process.",
+    "rootWord": "LEGITIMATE",
+    "correct": "delegitimisation",
+    "hint": "The noun form meaning the removal of legitimacy",
+    "explanation": "LEGITIMATE → delegitimisation (prefix de- + suffix -isation: the process of undermining legitimacy)"
+  },
+  {
+    "sentence": "The professor's lecture on _____ linguistics was remarkably accessible.",
+    "rootWord": "COMPUTE",
+    "correct": "computational",
+    "hint": "An adjective relating to computation",
+    "explanation": "COMPUTE → computational (suffix -ational: relating to the use of computers or calculation)"
+  },
+  {
+    "sentence": "The _____ of the artist's technique can be traced to Renaissance masters.",
+    "rootWord": "REFINE",
+    "correct": "refinement",
+    "hint": "The noun form meaning the process of improving",
+    "explanation": "REFINE → refinement (suffix -ment: the process of making something more elegant or precise)"
+  },
+  {
+    "sentence": "The committee found the proposal to be fundamentally _____.",
+    "rootWord": "WORK",
+    "correct": "unworkable",
+    "hint": "Not able to be made to work",
+    "explanation": "WORK → unworkable (prefix un- + suffix -able: not capable of being implemented)"
+  },
+  {
+    "sentence": "The _____ of the indigenous language was a tragic consequence of colonialism.",
+    "rootWord": "EXTINCT",
+    "correct": "extinction",
+    "hint": "The noun form meaning the dying out of something",
+    "explanation": "EXTINCT → extinction (suffix -tion: the state of no longer existing)"
+  },
+  {
+    "sentence": "The diplomat's _____ remarks nearly caused an international incident.",
+    "rootWord": "CIRCUMSPECT",
+    "correct": "incircumspect",
+    "hint": "Not circumspect — lacking caution",
+    "explanation": "CIRCUMSPECT → incircumspect (prefix in-: not cautious or prudent)"
+  },
+  {
+    "sentence": "The _____ between the empirical data and the theoretical model was troubling.",
+    "rootWord": "CONGRUENT",
+    "correct": "incongruence",
+    "hint": "The noun form meaning lack of agreement",
+    "explanation": "CONGRUENT → incongruence (prefix in- + suffix -ence: the state of not being in agreement)"
+  },
+  {
+    "sentence": "The _____ of the classical text brought it to a new generation of readers.",
+    "rootWord": "POPULAR",
+    "correct": "popularisation",
+    "hint": "The noun form meaning making something accessible to the general public",
+    "explanation": "POPULAR → popularisation (suffix -isation: the process of making widely accessible)"
+  },
+  {
+    "sentence": "The philosopher questioned the _____ of absolute moral truths.",
+    "rootWord": "DEFEND",
+    "correct": "defensibility",
+    "hint": "The noun form meaning the quality of being defensible",
+    "explanation": "DEFEND → defensibility (suffix -ibility: the quality of being capable of being defended)"
+  },
+  {
+    "sentence": "The _____ of the archaeological site yielded remarkable artefacts.",
+    "rootWord": "EXCAVATE",
+    "correct": "excavation",
+    "hint": "The noun form meaning the process of digging out",
+    "explanation": "EXCAVATE → excavation (suffix -tion: the systematic process of uncovering)"
+  },
+  {
+    "sentence": "The literary critic noted the _____ quality of the author's prose.",
+    "rootWord": "TRANSCEND",
+    "correct": "transcendent",
+    "hint": "An adjective meaning surpassing ordinary limits",
+    "explanation": "TRANSCEND → transcendent (suffix -ent: going beyond normal boundaries)"
+  }
+]

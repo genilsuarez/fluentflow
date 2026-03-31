@@ -1,0 +1,152 @@
+[
+  {
+    "prompt": "Replace the idiom with a formal equivalent",
+    "source": "We need to get to the bottom of this issue.",
+    "correct": ["We need to investigate this issue thoroughly.", "We need to determine the root cause of this issue."],
+    "explanation": "<Get to the bottom of> → <investigate thoroughly> or <determine the root cause> in formal register."
+  },
+  {
+    "prompt": "Replace the idiom with a formal equivalent",
+    "source": "The new policy is a step in the right direction.",
+    "correct": ["The new policy represents a positive development.", "The new policy constitutes a positive advancement."],
+    "explanation": "<A step in the right direction> → <a positive development> in formal register."
+  },
+  {
+    "prompt": "Replace the idiom with a formal equivalent",
+    "source": "We shouldn't put all our eggs in one basket.",
+    "correct": ["We should diversify our approach.", "We should not rely on a single strategy."],
+    "explanation": "<Put all eggs in one basket> → <rely on a single strategy> in formal register."
+  },
+  {
+    "prompt": "Replace the idiom with a formal equivalent",
+    "source": "The project is back to square one.",
+    "correct": ["The project must be restarted from the beginning.", "The project has returned to its initial stage."],
+    "explanation": "<Back to square one> → <restarted from the beginning> in formal register."
+  },
+  {
+    "prompt": "Replace the idiom with a formal equivalent",
+    "source": "She hit the nail on the head with her analysis.",
+    "correct": ["Her analysis was precisely accurate.", "She identified the issue exactly."],
+    "explanation": "<Hit the nail on the head> → <precisely accurate> in formal register."
+  },
+  {
+    "prompt": "Replace the idiom with a formal equivalent",
+    "source": "We need to think outside the box to solve this.",
+    "correct": ["We need to adopt an innovative approach to solve this.", "We need to consider unconventional solutions."],
+    "explanation": "<Think outside the box> → <adopt an innovative approach> in formal register."
+  },
+  {
+    "prompt": "Replace the idiom with a formal equivalent",
+    "source": "The company is in hot water over the scandal.",
+    "correct": ["The company is facing serious difficulties over the scandal.", "The company is in a precarious situation due to the scandal."],
+    "explanation": "<In hot water> → <facing serious difficulties> in formal register."
+  },
+  {
+    "prompt": "Replace the idiom with a formal equivalent",
+    "source": "Let's not beat around the bush — the results are disappointing.",
+    "correct": ["To be direct, the results are disappointing.", "Speaking frankly, the results are disappointing."],
+    "explanation": "<Beat around the bush> → <to be direct/speaking frankly> in formal register."
+  },
+  {
+    "prompt": "Replace the idiom with a formal equivalent",
+    "source": "The new regulations have opened a can of worms.",
+    "correct": ["The new regulations have created unforeseen complications.", "The new regulations have raised numerous complex issues."],
+    "explanation": "<Opened a can of worms> → <created unforeseen complications> in formal register."
+  },
+  {
+    "prompt": "Replace the idiom with a formal equivalent",
+    "source": "We need to keep our eye on the ball during negotiations.",
+    "correct": ["We need to maintain focus during negotiations.", "We need to remain attentive during negotiations."],
+    "explanation": "<Keep our eye on the ball> → <maintain focus> in formal register."
+  },
+  {
+    "prompt": "Replace the idiom with a formal equivalent",
+    "source": "The CEO pulled strings to get the deal approved.",
+    "correct": ["The CEO used his influence to get the deal approved.", "The CEO leveraged his connections to get the deal approved."],
+    "explanation": "<Pull strings> → <use influence/leverage connections> in formal register."
+  },
+  {
+    "prompt": "Replace the idiom with a formal equivalent",
+    "source": "We're barking up the wrong tree with this approach.",
+    "correct": ["We are pursuing an incorrect line of inquiry.", "Our current approach is misguided."],
+    "explanation": "<Barking up the wrong tree> → <pursuing an incorrect line of inquiry> in formal register."
+  },
+  {
+    "prompt": "Replace the idiom with a formal equivalent",
+    "source": "The merger is still up in the air.",
+    "correct": ["The merger remains undecided.", "The merger has not yet been finalised."],
+    "explanation": "<Up in the air> → <remains undecided> in formal register."
+  },
+  {
+    "prompt": "Replace the idiom with a formal equivalent",
+    "source": "She went above and beyond to complete the project.",
+    "correct": ["She exceeded expectations to complete the project.", "She demonstrated exceptional dedication to complete the project."],
+    "explanation": "<Go above and beyond> → <exceed expectations> in formal register."
+  },
+  {
+    "prompt": "Replace the idiom with a formal equivalent",
+    "source": "The team needs to get their act together before the deadline.",
+    "correct": ["The team needs to improve their organisation before the deadline.", "The team must become more coordinated before the deadline."],
+    "explanation": "<Get their act together> → <improve organisation> in formal register."
+  },
+  {
+    "prompt": "Replace the idiom with a formal equivalent",
+    "source": "The budget cuts are just the tip of the iceberg.",
+    "correct": ["The budget cuts represent only a fraction of the larger problem.", "The budget cuts are merely indicative of more extensive issues."],
+    "explanation": "<Tip of the iceberg> → <a fraction of the larger problem> in formal register."
+  },
+  {
+    "prompt": "Replace the idiom with a formal equivalent",
+    "source": "We need to nip this problem in the bud.",
+    "correct": ["We need to address this problem at its earliest stage.", "We need to resolve this issue before it escalates."],
+    "explanation": "<Nip in the bud> → <address at its earliest stage> in formal register."
+  },
+  {
+    "prompt": "Replace the idiom with a formal equivalent",
+    "source": "The new manager has turned the company around.",
+    "correct": ["The new manager has revitalised the company.", "The new manager has transformed the company's fortunes."],
+    "explanation": "<Turn around> → <revitalise/transform> in formal register."
+  },
+  {
+    "prompt": "Replace the idiom with a formal equivalent",
+    "source": "We're all in the same boat regarding the pay freeze.",
+    "correct": ["We are all equally affected by the pay freeze.", "We all face the same circumstances regarding the pay freeze."],
+    "explanation": "<In the same boat> → <equally affected> in formal register."
+  },
+  {
+    "prompt": "Replace the idiom with a formal equivalent",
+    "source": "The proposal was shot down by the board.",
+    "correct": ["The proposal was rejected by the board.", "The board dismissed the proposal."],
+    "explanation": "<Shot down> → <rejected/dismissed> in formal register."
+  },
+  {
+    "prompt": "Replace the idiom with a formal equivalent",
+    "source": "She has a lot on her plate at the moment.",
+    "correct": ["She has numerous responsibilities at the moment.", "She is currently managing a heavy workload."],
+    "explanation": "<A lot on her plate> → <numerous responsibilities> in formal register."
+  },
+  {
+    "prompt": "Replace the idiom with a formal equivalent",
+    "source": "The negotiations have reached a dead end.",
+    "correct": ["The negotiations have reached an impasse.", "The negotiations have stalled."],
+    "explanation": "<Dead end> → <impasse> in formal register."
+  },
+  {
+    "prompt": "Replace the idiom with a formal equivalent",
+    "source": "We need to read between the lines of this report.",
+    "correct": ["We need to interpret the implicit meaning of this report.", "We need to discern the underlying message of this report."],
+    "explanation": "<Read between the lines> → <interpret the implicit meaning> in formal register."
+  },
+  {
+    "prompt": "Replace the idiom with a formal equivalent",
+    "source": "The company is cutting corners to save money.",
+    "correct": ["The company is reducing quality standards to save money.", "The company is compromising on standards to reduce costs."],
+    "explanation": "<Cutting corners> → <reducing quality standards> in formal register."
+  },
+  {
+    "prompt": "Replace the idiom with a formal equivalent",
+    "source": "He always passes the buck when things go wrong.",
+    "correct": ["He always deflects responsibility when things go wrong.", "He consistently avoids accountability when problems arise."],
+    "explanation": "<Pass the buck> → <deflect responsibility> in formal register."
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "prompt": "Rewrite using nominalization (replace the verb with a noun)",
+    "source": "The government decided to reduce taxes, which pleased the public.",
+    "correct": ["The government's decision to reduce taxes pleased the public.", "The decision by the government to reduce taxes pleased the public."],
+    "explanation": "Nominalization: <decided> → <decision>. The verb becomes a noun to create a more formal, academic style."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The researchers discovered that the drug was effective.",
+    "correct": ["The researchers' discovery of the drug's effectiveness was significant.", "The discovery that the drug was effective was made by the researchers."],
+    "explanation": "Nominalization: <discovered> → <discovery>, <effective> → <effectiveness>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The company failed to meet its targets, which disappointed investors.",
+    "correct": ["The company's failure to meet its targets disappointed investors.", "The failure of the company to meet its targets disappointed investors."],
+    "explanation": "Nominalization: <failed> → <failure>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The population grew rapidly, which strained public services.",
+    "correct": ["The rapid growth of the population strained public services.", "Rapid population growth strained public services."],
+    "explanation": "Nominalization: <grew rapidly> → <rapid growth>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The committee recommended that the policy be revised.",
+    "correct": ["The committee's recommendation was that the policy be revised.", "The committee made a recommendation for policy revision."],
+    "explanation": "Nominalization: <recommended> → <recommendation>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The economy declined sharply, which caused widespread unemployment.",
+    "correct": ["The sharp decline of the economy caused widespread unemployment.", "The sharp economic decline caused widespread unemployment."],
+    "explanation": "Nominalization: <declined sharply> → <sharp decline>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The students protested against the new fees.",
+    "correct": ["The students' protest against the new fees was widely reported.", "The protest by students against the new fees gained attention."],
+    "explanation": "Nominalization: <protested> → <protest>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The scientist observed that the cells mutated under certain conditions.",
+    "correct": ["The scientist's observation was that the cells mutated under certain conditions.", "The observation of cell mutation under certain conditions was made."],
+    "explanation": "Nominalization: <observed> → <observation>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The two countries agreed to cooperate on climate change.",
+    "correct": ["The agreement between the two countries to cooperate on climate change was historic.", "An agreement on climate change cooperation was reached between the two countries."],
+    "explanation": "Nominalization: <agreed> → <agreement>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The new technology transformed how people communicate.",
+    "correct": ["The transformation of communication through new technology was profound.", "The new technology brought about a transformation in communication."],
+    "explanation": "Nominalization: <transformed> → <transformation>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The authorities intervened to prevent further violence.",
+    "correct": ["The intervention of the authorities prevented further violence.", "The authorities' intervention prevented further violence."],
+    "explanation": "Nominalization: <intervened> → <intervention>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The patient recovered quickly, which surprised the doctors.",
+    "correct": ["The patient's quick recovery surprised the doctors.", "The rapid recovery of the patient surprised the doctors."],
+    "explanation": "Nominalization: <recovered quickly> → <quick recovery>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The company acquired its rival, which consolidated its market position.",
+    "correct": ["The company's acquisition of its rival consolidated its market position.", "The acquisition of the rival company consolidated its market position."],
+    "explanation": "Nominalization: <acquired> → <acquisition>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The professor argued that the theory was flawed.",
+    "correct": ["The professor's argument was that the theory was flawed.", "The professor put forward an argument that the theory was flawed."],
+    "explanation": "Nominalization: <argued> → <argument>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The bridge collapsed, which disrupted traffic for weeks.",
+    "correct": ["The collapse of the bridge disrupted traffic for weeks.", "The bridge's collapse caused weeks of traffic disruption."],
+    "explanation": "Nominalization: <collapsed> → <collapse>, <disrupted> → <disruption>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The government allocated funds to improve healthcare.",
+    "correct": ["The government's allocation of funds improved healthcare.", "The allocation of government funds to healthcare improvement was announced."],
+    "explanation": "Nominalization: <allocated> → <allocation>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The species evolved over millions of years to adapt to its environment.",
+    "correct": ["The evolution of the species over millions of years led to environmental adaptation.", "The species' evolution over millions of years resulted in environmental adaptation."],
+    "explanation": "Nominalization: <evolved> → <evolution>, <adapt> → <adaptation>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The journalist exposed the corruption, which led to several arrests.",
+    "correct": ["The journalist's exposure of the corruption led to several arrests.", "The exposure of corruption by the journalist led to several arrests."],
+    "explanation": "Nominalization: <exposed> → <exposure>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The two parties negotiated for months before reaching a deal.",
+    "correct": ["Months of negotiation between the two parties preceded the deal.", "The negotiations between the two parties lasted months before a deal was reached."],
+    "explanation": "Nominalization: <negotiated> → <negotiation/negotiations>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The artist interpreted the poem in a unique way.",
+    "correct": ["The artist's interpretation of the poem was unique.", "The unique interpretation of the poem by the artist was praised."],
+    "explanation": "Nominalization: <interpreted> → <interpretation>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The government regulated the industry more strictly.",
+    "correct": ["The government's stricter regulation of the industry was implemented.", "Stricter government regulation of the industry was introduced."],
+    "explanation": "Nominalization: <regulated more strictly> → <stricter regulation>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The volcano erupted violently, which destroyed several villages.",
+    "correct": ["The violent eruption of the volcano destroyed several villages.", "The volcano's violent eruption resulted in the destruction of several villages."],
+    "explanation": "Nominalization: <erupted violently> → <violent eruption>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The committee evaluated the proposals and selected the best one.",
+    "correct": ["The committee's evaluation of the proposals led to the selection of the best one.", "Following evaluation, the committee made its selection."],
+    "explanation": "Nominalization: <evaluated> → <evaluation>, <selected> → <selection>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The currency depreciated, which affected imports.",
+    "correct": ["The depreciation of the currency affected imports.", "Currency depreciation had an effect on imports."],
+    "explanation": "Nominalization: <depreciated> → <depreciation>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The architect designed the building to withstand earthquakes.",
+    "correct": ["The architect's design of the building ensured earthquake resistance.", "The design of the building by the architect incorporated earthquake resistance."],
+    "explanation": "Nominalization: <designed> → <design>."
+  }
+]

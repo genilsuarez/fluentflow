@@ -1,0 +1,158 @@
+[
+  {
+    "sentence": "By the time we arrived, the film already started.",
+    "correct": ["By the time we arrived, the film had already started."],
+    "hint": "Check the tense for the earlier action",
+    "explanation": "'By the time' + past simple requires past perfect for the earlier action: 'had already started'."
+  },
+  {
+    "sentence": "I wish I can speak French fluently.",
+    "correct": ["I wish I could speak French fluently."],
+    "hint": "Check the verb form after 'wish'",
+    "explanation": "'Wish' for present unreal situations requires past tense: 'could', not 'can'."
+  },
+  {
+    "sentence": "She told me that she will come the next day.",
+    "correct": ["She told me that she would come the next day."],
+    "hint": "Check the tense in reported speech",
+    "explanation": "In reported speech with a past reporting verb, 'will' shifts to 'would'."
+  },
+  {
+    "sentence": "If I had studied harder, I would pass the exam.",
+    "correct": ["If I had studied harder, I would have passed the exam."],
+    "hint": "Check the result clause of the third conditional",
+    "explanation": "Third conditional requires 'would have + past participle' in the result clause: 'would have passed'."
+  },
+  {
+    "sentence": "He has been working here since five years.",
+    "correct": ["He has been working here for five years."],
+    "hint": "Check the preposition used with a duration",
+    "explanation": "Use 'for' with a duration (five years) and 'since' with a point in time."
+  },
+  {
+    "sentence": "She made me to clean the entire house.",
+    "correct": ["She made me clean the entire house."],
+    "hint": "Check the verb form after 'made'",
+    "explanation": "'Make' + object is followed by the bare infinitive: 'made me clean', not 'made me to clean'."
+  },
+  {
+    "sentence": "I am used to get up early every morning.",
+    "correct": ["I am used to getting up early every morning."],
+    "hint": "Check the verb form after 'used to'",
+    "explanation": "'Be used to' is followed by a gerund: 'used to getting up', not 'used to get up'."
+  },
+  {
+    "sentence": "He strongly suggested us to reconsider our decision.",
+    "correct": ["He strongly suggested that we reconsider our decision.", "He strongly suggested we reconsider our decision."],
+    "hint": "Check the structure after 'suggested'",
+    "explanation": "'Suggest' takes 'that + subject + base verb', not 'object + to + verb'."
+  },
+  {
+    "sentence": "The more you practice, more you improve.",
+    "correct": ["The more you practice, the more you improve."],
+    "hint": "Check the comparative structure",
+    "explanation": "Double comparative requires 'the' in both parts: 'The more... the more...'."
+  },
+  {
+    "sentence": "Not only she passed the exam, but she also got the highest mark.",
+    "correct": ["Not only did she pass the exam, but she also got the highest mark."],
+    "hint": "Check the word order after 'Not only'",
+    "explanation": "'Not only' at the start of a clause requires inversion: 'Not only did she pass'."
+  },
+  {
+    "sentence": "He denied to have taken the money.",
+    "correct": ["He denied having taken the money.", "He denied taking the money."],
+    "hint": "Check the verb form after 'denied'",
+    "explanation": "'Deny' is followed by a gerund: 'denied having taken' or 'denied taking'."
+  },
+  {
+    "sentence": "I would rather to stay at home tonight.",
+    "correct": ["I would rather stay at home tonight."],
+    "hint": "Check the verb form after 'would rather'",
+    "explanation": "'Would rather' is followed by the bare infinitive: 'rather stay', not 'rather to stay'."
+  },
+  {
+    "sentence": "She is capable to solve complex problems.",
+    "correct": ["She is capable of solving complex problems."],
+    "hint": "Check the preposition and verb form after 'capable'",
+    "explanation": "The correct pattern is 'capable of + gerund': 'capable of solving'."
+  },
+  {
+    "sentence": "He did a big mistake in his calculations.",
+    "correct": ["He made a big mistake in his calculations."],
+    "hint": "Check the verb collocation with 'mistake'",
+    "explanation": "The correct collocation is 'make a mistake', not 'do a mistake'."
+  },
+  {
+    "sentence": "She said me that she was leaving.",
+    "correct": ["She told me that she was leaving."],
+    "hint": "Check the reporting verb",
+    "explanation": "'Say' does not take an indirect object directly. Use 'told me' or 'said to me'."
+  },
+  {
+    "sentence": "Hardly I had sat down when the phone rang.",
+    "correct": ["Hardly had I sat down when the phone rang."],
+    "hint": "Check the word order after 'Hardly'",
+    "explanation": "'Hardly' at the start requires inversion: 'Hardly had I sat down'."
+  },
+  {
+    "sentence": "Despite he was tired, he continued working.",
+    "correct": ["Despite being tired, he continued working.", "Although he was tired, he continued working."],
+    "hint": "Check the structure after 'despite'",
+    "explanation": "'Despite' is followed by a noun or gerund, not a clause. Use 'despite being tired' or 'although he was tired'."
+  },
+  {
+    "sentence": "I look forward to hear from you soon.",
+    "correct": ["I look forward to hearing from you soon."],
+    "hint": "Check the verb form after 'look forward to'",
+    "explanation": "'Look forward to' is followed by a gerund: 'to hearing', not 'to hear'."
+  },
+  {
+    "sentence": "She has a very good command in English.",
+    "correct": ["She has a very good command of English."],
+    "hint": "Check the preposition after 'command'",
+    "explanation": "The correct collocation is 'command of', not 'command in'."
+  },
+  {
+    "sentence": "He recommended me to read that book.",
+    "correct": ["He recommended that I read that book.", "He recommended reading that book."],
+    "hint": "Check the structure after 'recommended'",
+    "explanation": "'Recommend' takes 'that + subject + base verb' or a gerund, not 'object + to + verb'."
+  },
+  {
+    "sentence": "Seldom he arrives on time for meetings.",
+    "correct": ["Seldom does he arrive on time for meetings."],
+    "hint": "Check the word order after 'Seldom'",
+    "explanation": "'Seldom' at the start of a sentence requires inversion: 'Seldom does he arrive'."
+  },
+  {
+    "sentence": "I wish I didn't say that to her yesterday.",
+    "correct": ["I wish I hadn't said that to her yesterday."],
+    "hint": "Check the tense after 'wish' for past regrets",
+    "explanation": "'Wish' for past regrets requires past perfect: 'hadn't said', not 'didn't say'."
+  },
+  {
+    "sentence": "He let her to use his computer.",
+    "correct": ["He let her use his computer."],
+    "hint": "Check the verb form after 'let'",
+    "explanation": "'Let' + object is followed by the bare infinitive: 'let her use', not 'let her to use'."
+  },
+  {
+    "sentence": "The number of students have increased this year.",
+    "correct": ["The number of students has increased this year."],
+    "hint": "Check the subject-verb agreement",
+    "explanation": "'The number of' is singular and requires 'has', not 'have'."
+  },
+  {
+    "sentence": "She avoided to answer the difficult question.",
+    "correct": ["She avoided answering the difficult question."],
+    "hint": "Check the verb form after 'avoided'",
+    "explanation": "'Avoid' is followed by a gerund: 'avoided answering', not 'avoided to answer'."
+  },
+  {
+    "sentence": "No sooner I had left than it started raining.",
+    "correct": ["No sooner had I left than it started raining."],
+    "hint": "Check the word order after 'No sooner'",
+    "explanation": "'No sooner' at the start requires inversion: 'No sooner had I left'."
+  }
+]

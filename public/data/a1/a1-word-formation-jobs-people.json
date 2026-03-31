@@ -1,0 +1,152 @@
+[
+  {
+    "sentence": "My father is a _____ . He drives a truck.",
+    "rootWord": "DRIVE",
+    "correct": "driver",
+    "explanation": "DRIVE → driver (add -r to verbs ending in -e to make a person noun)"
+  },
+  {
+    "sentence": "She is a good _____ . She teaches English.",
+    "rootWord": "TEACH",
+    "correct": "teacher",
+    "explanation": "TEACH → teacher (add -er to make a person who teaches)"
+  },
+  {
+    "sentence": "He is a famous _____ . He sings beautiful songs.",
+    "rootWord": "SING",
+    "correct": "singer",
+    "explanation": "SING → singer (add -er to make a person who sings)"
+  },
+  {
+    "sentence": "The _____ painted a beautiful picture.",
+    "rootWord": "PAINT",
+    "correct": "painter",
+    "explanation": "PAINT → painter (add -er to make a person who paints)"
+  },
+  {
+    "sentence": "My mother is a _____ . She works in a bank.",
+    "rootWord": "BANK",
+    "correct": "banker",
+    "explanation": "BANK → banker (add -er to make a person who works in a bank)"
+  },
+  {
+    "sentence": "The _____ fixed the broken pipe.",
+    "rootWord": "PLUMB",
+    "correct": "plumber",
+    "explanation": "PLUMB → plumber (add -er to make a person who works with pipes)"
+  },
+  {
+    "sentence": "She wants to be a _____ when she grows up. She loves to dance.",
+    "rootWord": "DANCE",
+    "correct": "dancer",
+    "explanation": "DANCE → dancer (add -r to verbs ending in -e)"
+  },
+  {
+    "sentence": "The _____ writes stories for the newspaper.",
+    "rootWord": "WRITE",
+    "correct": "writer",
+    "explanation": "WRITE → writer (add -r to verbs ending in -e)"
+  },
+  {
+    "sentence": "He is a fast _____ . He runs every morning.",
+    "rootWord": "RUN",
+    "correct": "runner",
+    "explanation": "RUN → runner (double the final consonant and add -er)"
+  },
+  {
+    "sentence": "The _____ swims in the pool every day.",
+    "rootWord": "SWIM",
+    "correct": "swimmer",
+    "explanation": "SWIM → swimmer (double the final consonant and add -er)"
+  },
+  {
+    "sentence": "My uncle is an _____ . He acts in movies.",
+    "rootWord": "ACT",
+    "correct": "actor",
+    "explanation": "ACT → actor (add -or to make a person who acts)"
+  },
+  {
+    "sentence": "The _____ visited our school to check our eyes.",
+    "rootWord": "VISIT",
+    "correct": "visitor",
+    "explanation": "VISIT → visitor (add -or to make a person who visits)"
+  },
+  {
+    "sentence": "She is the _____ of the school. She manages everything.",
+    "rootWord": "DIRECT",
+    "correct": "director",
+    "explanation": "DIRECT → director (add -or to make a person who directs)"
+  },
+  {
+    "sentence": "The _____ invented a new machine.",
+    "rootWord": "INVENT",
+    "correct": "inventor",
+    "explanation": "INVENT → inventor (add -or to make a person who invents)"
+  },
+  {
+    "sentence": "He is a good _____ . He plays football very well.",
+    "rootWord": "PLAY",
+    "correct": "player",
+    "explanation": "PLAY → player (add -er to make a person who plays)"
+  },
+  {
+    "sentence": "The _____ cleaned the office after work.",
+    "rootWord": "CLEAN",
+    "correct": "cleaner",
+    "explanation": "CLEAN → cleaner (add -er to make a person who cleans)"
+  },
+  {
+    "sentence": "My sister is a _____ . She bakes cakes and bread.",
+    "rootWord": "BAKE",
+    "correct": "baker",
+    "explanation": "BAKE → baker (add -r to verbs ending in -e)"
+  },
+  {
+    "sentence": "The _____ helped us find our way in the museum.",
+    "rootWord": "GUIDE",
+    "correct": "guide",
+    "explanation": "GUIDE can be both a verb and a noun — the person who guides is also called a guide."
+  },
+  {
+    "sentence": "He is a _____ . He farms vegetables and fruits.",
+    "rootWord": "FARM",
+    "correct": "farmer",
+    "explanation": "FARM → farmer (add -er to make a person who farms)"
+  },
+  {
+    "sentence": "The _____ designed a beautiful building.",
+    "rootWord": "DESIGN",
+    "correct": "designer",
+    "explanation": "DESIGN → designer (add -er to make a person who designs)"
+  },
+  {
+    "sentence": "She is a _____ . She reports the news on TV.",
+    "rootWord": "REPORT",
+    "correct": "reporter",
+    "explanation": "REPORT → reporter (add -er to make a person who reports)"
+  },
+  {
+    "sentence": "The _____ helped me carry my bags at the hotel.",
+    "rootWord": "HELP",
+    "correct": "helper",
+    "explanation": "HELP → helper (add -er to make a person who helps)"
+  },
+  {
+    "sentence": "My brother is a _____ . He builds houses.",
+    "rootWord": "BUILD",
+    "correct": "builder",
+    "explanation": "BUILD → builder (add -er to make a person who builds)"
+  },
+  {
+    "sentence": "The _____ collected the tickets at the door.",
+    "rootWord": "COLLECT",
+    "correct": "collector",
+    "explanation": "COLLECT → collector (add -or to make a person who collects)"
+  },
+  {
+    "sentence": "She is a great _____ . She leads the team very well.",
+    "rootWord": "LEAD",
+    "correct": "leader",
+    "explanation": "LEAD → leader (add -er to make a person who leads)"
+  }
+]

@@ -237,6 +237,22 @@
   /* White text on teal background */
 }
 
+.module-card--word-formation {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  color: #ffffff;
+  /* White text on indigo background */
+}
+
+.module-card--error-correction {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(135deg, #f43f5e 0%, #e11d48 100%);
+  color: #ffffff;
+  /* White text on rose background */
+}
+
 /* Hover States for Variants with Enhanced Gradient Overlays */
 .module-card--flashcard:hover {
   background:
@@ -280,6 +296,18 @@
     linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
 }
 
+.module-card--word-formation:hover {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+}
+
+.module-card--error-correction:hover {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(135deg, #e11d48 0%, #be123c 100%);
+}
+
 /* Ensure all text elements are white on colored backgrounds */
 .module-card--flashcard .module-card__title,
 .module-card--flashcard .module-card__type,
@@ -308,7 +336,15 @@
 .module-card--transformation .module-card__title,
 .module-card--transformation .module-card__type,
 .module-card--transformation .module-card__level,
-.module-card--transformation .module-card__time {
+.module-card--transformation .module-card__time,
+.module-card--word-formation .module-card__title,
+.module-card--word-formation .module-card__type,
+.module-card--word-formation .module-card__level,
+.module-card--word-formation .module-card__time,
+.module-card--error-correction .module-card__title,
+.module-card--error-correction .module-card__type,
+.module-card--error-correction .module-card__level,
+.module-card--error-correction .module-card__time {
   color: var(--theme-text-on-colored, #ffffff);
 }
 
@@ -319,7 +355,9 @@
 .module-card--sorting svg,
 .module-card--matching svg,
 .module-card--reading svg,
-.module-card--transformation svg {
+.module-card--transformation svg,
+.module-card--word-formation svg,
+.module-card--error-correction svg {
   color: var(--theme-text-on-colored, #ffffff) !important;
   stroke: var(--theme-text-on-colored, #ffffff) !important;
   fill: none !important;
@@ -805,7 +843,7 @@
 html.dark
   .module-card:not(.module-card--flashcard):not(.module-card--quiz):not(
     .module-card--completion
-  ):not(.module-card--sorting):not(.module-card--matching):not(.module-card--transformation) {
+  ):not(.module-card--sorting):not(.module-card--matching):not(.module-card--transformation):not(.module-card--word-formation):not(.module-card--error-correction) {
   background: var(--theme-bg-elevated, #1f2937);
   border-color: var(--theme-border-soft, #4b5563);
   color: var(--theme-text-primary, #ffffff);
@@ -814,7 +852,7 @@ html.dark
 html.dark
   .module-card:not(.module-card--flashcard):not(.module-card--quiz):not(
     .module-card--completion
-  ):not(.module-card--sorting):not(.module-card--matching):not(.module-card--transformation):hover {
+  ):not(.module-card--sorting):not(.module-card--matching):not(.module-card--transformation):not(.module-card--word-formation):not(.module-card--error-correction):hover {
   background: var(--theme-bg-soft, #374151);
   border-color: var(--theme-primary-blue, #3b82f6);
 }
@@ -823,7 +861,7 @@ html.dark
 html.dark
   .module-card:not(.module-card--flashcard):not(.module-card--quiz):not(
     .module-card--completion
-  ):not(.module-card--sorting):not(.module-card--matching):not(.module-card--transformation)
+  ):not(.module-card--sorting):not(.module-card--matching):not(.module-card--transformation):not(.module-card--word-formation):not(.module-card--error-correction)
   .module-card__title {
   color: var(--theme-text-primary, #ffffff);
 }
@@ -831,12 +869,12 @@ html.dark
 html.dark
   .module-card:not(.module-card--flashcard):not(.module-card--quiz):not(
     .module-card--completion
-  ):not(.module-card--sorting):not(.module-card--matching):not(.module-card--transformation)
+  ):not(.module-card--sorting):not(.module-card--matching):not(.module-card--transformation):not(.module-card--word-formation):not(.module-card--error-correction)
   .module-card__type,
 html.dark
   .module-card:not(.module-card--flashcard):not(.module-card--quiz):not(
     .module-card--completion
-  ):not(.module-card--sorting):not(.module-card--matching):not(.module-card--transformation)
+  ):not(.module-card--sorting):not(.module-card--matching):not(.module-card--transformation):not(.module-card--word-formation):not(.module-card--error-correction)
   .module-card__level {
   color: var(--theme-text-tertiary, #d1d5db);
 }
@@ -850,7 +888,7 @@ html.dark .module-card--locked {
 html.dark
   .module-card--locked:not(.module-card--flashcard):not(.module-card--quiz):not(
     .module-card--completion
-  ):not(.module-card--sorting):not(.module-card--matching):not(.module-card--transformation) {
+  ):not(.module-card--sorting):not(.module-card--matching):not(.module-card--transformation):not(.module-card--word-formation):not(.module-card--error-correction) {
   background: var(--theme-bg-subtle, #374151);
   border-color: var(--theme-border-medium, #6b7280);
 }
@@ -863,7 +901,7 @@ html.dark .module-card--locked .module-card__title {
 html.dark
   .module-card:not(.module-card--flashcard):not(.module-card--quiz):not(
     .module-card--completion
-  ):not(.module-card--sorting):not(.module-card--matching):not(.module-card--transformation)
+  ):not(.module-card--sorting):not(.module-card--matching):not(.module-card--transformation):not(.module-card--word-formation):not(.module-card--error-correction)
   svg {
   color: var(--theme-text-primary, #ffffff);
   stroke: var(--theme-text-primary, #ffffff);

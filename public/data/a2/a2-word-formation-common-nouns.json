@@ -1,0 +1,184 @@
+[
+  {
+    "sentence": "The _____ of the new building took two years.",
+    "rootWord": "CONSTRUCT",
+    "correct": "construction",
+    "hint": "Think about the noun form with -tion",
+    "explanation": "CONSTRUCT → construction (suffix -tion: the process of constructing)"
+  },
+  {
+    "sentence": "She received an _____ to the party.",
+    "rootWord": "INVITE",
+    "correct": "invitation",
+    "hint": "The noun form of invite",
+    "explanation": "INVITE → invitation (suffix -tion: drop -e, add -ation)"
+  },
+  {
+    "sentence": "I need more _____ about the course.",
+    "rootWord": "INFORM",
+    "correct": "information",
+    "hint": "The noun form meaning facts or details",
+    "explanation": "INFORM → information (suffix -ation: the act of informing)"
+  },
+  {
+    "sentence": "His _____ of the problem was very clear.",
+    "rootWord": "EXPLAIN",
+    "correct": "explanation",
+    "hint": "The noun form of explain",
+    "explanation": "EXPLAIN → explanation (suffix -ation: the act of explaining)"
+  },
+  {
+    "sentence": "The _____ of the project was excellent.",
+    "rootWord": "MANAGE",
+    "correct": "management",
+    "hint": "Think about the noun form with -ment",
+    "explanation": "MANAGE → management (suffix -ment: the act of managing)"
+  },
+  {
+    "sentence": "We watched the _____ on television.",
+    "rootWord": "ADVERTISE",
+    "correct": "advertisement",
+    "hint": "The noun form of advertise",
+    "explanation": "ADVERTISE → advertisement (suffix -ment: the result of advertising)"
+  },
+  {
+    "sentence": "The _____ was very exciting. Everyone enjoyed it.",
+    "rootWord": "ENTERTAIN",
+    "correct": "entertainment",
+    "hint": "The noun form of entertain",
+    "explanation": "ENTERTAIN → entertainment (suffix -ment: the act of entertaining)"
+  },
+  {
+    "sentence": "She felt great _____ when she passed the exam.",
+    "rootWord": "EXCITE",
+    "correct": "excitement",
+    "hint": "The noun form of excite",
+    "explanation": "EXCITE → excitement (suffix -ment: the state of being excited)"
+  },
+  {
+    "sentence": "His _____ made everyone in the room feel better.",
+    "rootWord": "KIND",
+    "correct": "kindness",
+    "hint": "The noun form of kind",
+    "explanation": "KIND → kindness (suffix -ness: the quality of being kind)"
+  },
+  {
+    "sentence": "_____ is very important in life.",
+    "rootWord": "HAPPY",
+    "correct": "happiness",
+    "hint": "The noun form of happy",
+    "explanation": "HAPPY → happiness (suffix -ness: change -y to -i and add -ness)"
+  },
+  {
+    "sentence": "The _____ of the room surprised me.",
+    "rootWord": "DARK",
+    "correct": "darkness",
+    "hint": "The noun form of dark",
+    "explanation": "DARK → darkness (suffix -ness: the state of being dark)"
+  },
+  {
+    "sentence": "She showed great _____ during the difficult time.",
+    "rootWord": "SAD",
+    "correct": "sadness",
+    "hint": "The noun form of sad",
+    "explanation": "SAD → sadness (suffix -ness: the state of being sad)"
+  },
+  {
+    "sentence": "He drives very _____. He never has accidents.",
+    "rootWord": "SAFE",
+    "correct": "safely",
+    "hint": "The adverb form of safe",
+    "explanation": "SAFE → safely (suffix -ly: in a safe manner)"
+  },
+  {
+    "sentence": "She spoke _____ to the children.",
+    "rootWord": "SOFT",
+    "correct": "softly",
+    "hint": "The adverb form of soft",
+    "explanation": "SOFT → softly (suffix -ly: in a soft manner)"
+  },
+  {
+    "sentence": "He finished the test _____. He was the first one done.",
+    "rootWord": "QUICK",
+    "correct": "quickly",
+    "hint": "The adverb form of quick",
+    "explanation": "QUICK → quickly (suffix -ly: in a quick manner)"
+  },
+  {
+    "sentence": "Please close the door _____.",
+    "rootWord": "QUIET",
+    "correct": "quietly",
+    "hint": "The adverb form of quiet",
+    "explanation": "QUIET → quietly (suffix -ly: in a quiet manner)"
+  },
+  {
+    "sentence": "The _____ of the school starts at 9 a.m.",
+    "rootWord": "EDUCATE",
+    "correct": "education",
+    "hint": "The noun form of educate",
+    "explanation": "EDUCATE → education (suffix -tion: the process of educating)"
+  },
+  {
+    "sentence": "We need to make a _____ about where to go.",
+    "rootWord": "DECIDE",
+    "correct": "decision",
+    "hint": "The noun form of decide",
+    "explanation": "DECIDE → decision (suffix -sion: the act of deciding)"
+  },
+  {
+    "sentence": "The _____ of the team was very good this year.",
+    "rootWord": "ACHIEVE",
+    "correct": "achievement",
+    "hint": "The noun form of achieve",
+    "explanation": "ACHIEVE → achievement (suffix -ment: the result of achieving)"
+  },
+  {
+    "sentence": "She walked _____ through the park.",
+    "rootWord": "SLOW",
+    "correct": "slowly",
+    "hint": "The adverb form of slow",
+    "explanation": "SLOW → slowly (suffix -ly: in a slow manner)"
+  },
+  {
+    "sentence": "The _____ of the weather changed our plans.",
+    "rootWord": "MOVE",
+    "correct": "movement",
+    "hint": "The noun form of move",
+    "explanation": "MOVE → movement (suffix -ment: the act of moving)"
+  },
+  {
+    "sentence": "Her _____ was obvious. She could not stop smiling.",
+    "rootWord": "GLAD",
+    "correct": "gladness",
+    "hint": "The noun form of glad",
+    "explanation": "GLAD → gladness (suffix -ness: the state of being glad)"
+  },
+  {
+    "sentence": "The _____ between the two countries improved.",
+    "rootWord": "RELATE",
+    "correct": "relation",
+    "hint": "The noun form of relate",
+    "explanation": "RELATE → relation (suffix -tion: the state of relating)"
+  },
+  {
+    "sentence": "He answered all the questions _____.",
+    "rootWord": "CORRECT",
+    "correct": "correctly",
+    "hint": "The adverb form of correct",
+    "explanation": "CORRECT → correctly (suffix -ly: in a correct manner)"
+  },
+  {
+    "sentence": "The _____ of the new road will start next month.",
+    "rootWord": "DEVELOP",
+    "correct": "development",
+    "hint": "The noun form of develop",
+    "explanation": "DEVELOP → development (suffix -ment: the process of developing)"
+  },
+  {
+    "sentence": "I felt great _____ when I heard the good news.",
+    "rootWord": "WEAK",
+    "correct": "weakness",
+    "hint": "The noun form of weak",
+    "explanation": "WEAK → weakness (suffix -ness: the state of being weak)"
+  }
+]

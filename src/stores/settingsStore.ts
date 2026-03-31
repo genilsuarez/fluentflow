@@ -10,6 +10,8 @@ export interface GameSettings {
   matchingMode: { wordCount: number };
   reorderingMode: { itemCount: number };
   transformationMode: { itemCount: number };
+  wordFormationMode: { itemCount: number };
+  errorCorrectionMode: { itemCount: number };
 }
 
 interface SettingsState {
@@ -65,6 +67,8 @@ const DEFAULT_LEARNING_MODES = [
   'reading',
   'reordering',
   'transformation',
+  'word-formation',
+  'error-correction',
 ];
 
 // Categories removed in v4 migration
@@ -89,6 +93,8 @@ export const useSettingsStore = create<SettingsState>()(
         matchingMode: { wordCount: 6 },
         reorderingMode: { itemCount: 10 },
         transformationMode: { itemCount: 10 },
+        wordFormationMode: { itemCount: 10 },
+        errorCorrectionMode: { itemCount: 10 },
       },
 
       // Offline defaults
@@ -136,7 +142,7 @@ export const useSettingsStore = create<SettingsState>()(
     }),
     {
       name: 'settings-storage',
-      version: 11,
+      version: 12,
       migrate: (persistedState: any, version: number) => {
         // Migration from version 1 to version 2
         if (version < 2) {
@@ -237,6 +243,13 @@ export const useSettingsStore = create<SettingsState>()(
               },
             };
           }
+        }
+        // Migration from version 11 to version 12: add wordFormationMode and errorCorrectionMode to gameSettings
+        if (version < 12) {
+          const gs = persistedState.gameSettings || {};
+          if (!gs.wordFormationMode) gs.wordFormationMode = { itemCount: 10 };
+          if (!gs.errorCorrectionMode) gs.errorCorrectionMode = { itemCount: 10 };
+          persistedState = { ...persistedState, gameSettings: gs };
         }
         return persistedState;
       },

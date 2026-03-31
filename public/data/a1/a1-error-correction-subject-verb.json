@@ -1,0 +1,164 @@
+[
+  {
+    "sentence": "She don't like coffee.",
+    "correct": ["She doesn't like coffee.", "She does not like coffee."],
+    "hint": "Check the subject-verb agreement",
+    "explanation": "Third person singular requires 'doesn't' (does not), not 'don't'."
+  },
+  {
+    "sentence": "He have a big house.",
+    "correct": ["He has a big house."],
+    "hint": "Check the verb form with 'he'",
+    "explanation": "Third person singular 'he' requires 'has', not 'have'."
+  },
+  {
+    "sentence": "They goes to school every day.",
+    "correct": ["They go to school every day."],
+    "hint": "Check the verb form with 'they'",
+    "explanation": "'They' is plural and requires the base form 'go', not 'goes'."
+  },
+  {
+    "sentence": "I wants a new book.",
+    "correct": ["I want a new book."],
+    "hint": "Check the verb form with 'I'",
+    "explanation": "'I' takes the base form 'want', not 'wants'."
+  },
+  {
+    "sentence": "She is a doctor. He is a doctor. They is doctors.",
+    "correct": ["She is a doctor. He is a doctor. They are doctors."],
+    "hint": "Check the verb 'be' with 'they'",
+    "explanation": "'They' requires 'are', not 'is'."
+  },
+  {
+    "sentence": "My mother work in a hospital.",
+    "correct": ["My mother works in a hospital."],
+    "hint": "Check the verb form with a singular subject",
+    "explanation": "'My mother' is third person singular and requires 'works'."
+  },
+  {
+    "sentence": "The children plays in the park.",
+    "correct": ["The children play in the park."],
+    "hint": "Check the verb form with a plural subject",
+    "explanation": "'The children' is plural and requires the base form 'play'."
+  },
+  {
+    "sentence": "I am go to the shop.",
+    "correct": ["I am going to the shop.", "I go to the shop."],
+    "hint": "Check the verb form after 'am'",
+    "explanation": "After 'am', use the -ing form ('going') for present continuous, or remove 'am' for simple present."
+  },
+  {
+    "sentence": "She eat breakfast at seven.",
+    "correct": ["She eats breakfast at seven."],
+    "hint": "Check the verb form with 'she'",
+    "explanation": "Third person singular 'she' requires 'eats', not 'eat'."
+  },
+  {
+    "sentence": "I have a cat. It have green eyes.",
+    "correct": ["I have a cat. It has green eyes."],
+    "hint": "Check the verb form with 'it'",
+    "explanation": "'It' is third person singular and requires 'has', not 'have'."
+  },
+  {
+    "sentence": "He go to the gym on Mondays.",
+    "correct": ["He goes to the gym on Mondays."],
+    "hint": "Check the verb form with 'he'",
+    "explanation": "Third person singular 'he' requires 'goes', not 'go'."
+  },
+  {
+    "sentence": "I like a apples.",
+    "correct": ["I like apples."],
+    "hint": "Check the article before a plural noun",
+    "explanation": "Plural nouns used in a general sense do not need an article. Remove 'a'."
+  },
+  {
+    "sentence": "She is an teacher.",
+    "correct": ["She is a teacher."],
+    "hint": "Check the article before 'teacher'",
+    "explanation": "'Teacher' starts with a consonant sound, so use 'a', not 'an'."
+  },
+  {
+    "sentence": "He is a honest man.",
+    "correct": ["He is an honest man."],
+    "hint": "Check the article before 'honest'",
+    "explanation": "'Honest' starts with a silent 'h' (vowel sound), so use 'an', not 'a'."
+  },
+  {
+    "sentence": "I need a umbrella.",
+    "correct": ["I need an umbrella."],
+    "hint": "Check the article before 'umbrella'",
+    "explanation": "'Umbrella' starts with a vowel sound, so use 'an', not 'a'."
+  },
+  {
+    "sentence": "Him is my best friend.",
+    "correct": ["He is my best friend."],
+    "hint": "Check the pronoun used as a subject",
+    "explanation": "'Him' is an object pronoun. Use the subject pronoun 'He'."
+  },
+  {
+    "sentence": "Me like chocolate.",
+    "correct": ["I like chocolate."],
+    "hint": "Check the pronoun used as a subject",
+    "explanation": "'Me' is an object pronoun. Use the subject pronoun 'I'."
+  },
+  {
+    "sentence": "Her is very tall.",
+    "correct": ["She is very tall."],
+    "hint": "Check the pronoun used as a subject",
+    "explanation": "'Her' is an object or possessive pronoun. Use the subject pronoun 'She'."
+  },
+  {
+    "sentence": "Us go to the park every Sunday.",
+    "correct": ["We go to the park every Sunday."],
+    "hint": "Check the pronoun used as a subject",
+    "explanation": "'Us' is an object pronoun. Use the subject pronoun 'We'."
+  },
+  {
+    "sentence": "The dog wag its tail when it see me.",
+    "correct": ["The dog wags its tail when it sees me."],
+    "hint": "Check the verb forms with singular subjects",
+    "explanation": "'The dog' and 'it' are third person singular — use 'wags' and 'sees'."
+  },
+  {
+    "sentence": "There is many books on the table.",
+    "correct": ["There are many books on the table."],
+    "hint": "Check the verb with a plural noun",
+    "explanation": "'Books' is plural, so use 'There are', not 'There is'."
+  },
+  {
+    "sentence": "My friends is very nice.",
+    "correct": ["My friends are very nice."],
+    "hint": "Check the verb with a plural subject",
+    "explanation": "'My friends' is plural and requires 'are', not 'is'."
+  },
+  {
+    "sentence": "She don't have any brothers.",
+    "correct": ["She doesn't have any brothers.", "She does not have any brothers."],
+    "hint": "Check the negative form with 'she'",
+    "explanation": "Third person singular 'she' requires 'doesn't', not 'don't'."
+  },
+  {
+    "sentence": "The cat sleep on the sofa every day.",
+    "correct": ["The cat sleeps on the sofa every day."],
+    "hint": "Check the verb form with a singular subject",
+    "explanation": "'The cat' is third person singular and requires 'sleeps'."
+  },
+  {
+    "sentence": "Tom and I goes to the same school.",
+    "correct": ["Tom and I go to the same school."],
+    "hint": "Check the verb form with a compound subject",
+    "explanation": "'Tom and I' is a plural subject and requires the base form 'go'."
+  },
+  {
+    "sentence": "She readed a book yesterday.",
+    "correct": ["She read a book yesterday."],
+    "hint": "Check the past tense of 'read'",
+    "explanation": "'Read' is an irregular verb. The past tense is 'read' (pronounced 'red'), not 'readed'."
+  },
+  {
+    "sentence": "I buyed a new phone last week.",
+    "correct": ["I bought a new phone last week."],
+    "hint": "Check the past tense of 'buy'",
+    "explanation": "'Buy' is an irregular verb. The past tense is 'bought', not 'buyed'."
+  }
+]

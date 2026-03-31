@@ -1,0 +1,127 @@
+[
+  {
+    "sentence": "Please turn of the lights before you leave.",
+    "correct": ["Please turn off the lights before you leave."],
+    "explanation": "The correct phrasal verb is <turn off> (not <turn of>). <Off> means to stop."
+  },
+  {
+    "sentence": "She picked on the phone and called her mother.",
+    "correct": ["She picked up the phone and called her mother."],
+    "explanation": "The correct phrasal verb is <pick up> (not <pick on>). <Pick up> means to lift."
+  },
+  {
+    "sentence": "He needs to look of his little sister.",
+    "correct": ["He needs to look after his little sister."],
+    "explanation": "The correct phrasal verb is <look after> (not <look of>). It means to take care of."
+  },
+  {
+    "sentence": "Can you turn in the TV? I want to watch the news.",
+    "correct": ["Can you turn on the TV? I want to watch the news."],
+    "explanation": "The correct phrasal verb is <turn on> (not <turn in>). <On> means to start."
+  },
+  {
+    "sentence": "She put of her jacket because it was cold.",
+    "correct": ["She put on her jacket because it was cold."],
+    "explanation": "The correct phrasal verb is <put on> (not <put of>). <Put on> means to wear."
+  },
+  {
+    "sentence": "I need to look up my keys. I can't find them.",
+    "correct": ["I need to look for my keys. I can't find them."],
+    "explanation": "The correct phrasal verb is <look for> (to search). <Look up> means to search in a reference."
+  },
+  {
+    "sentence": "He took of his shoes at the door.",
+    "correct": ["He took off his shoes at the door."],
+    "explanation": "The correct phrasal verb is <take off> (not <take of>). <Take off> means to remove."
+  },
+  {
+    "sentence": "Please sit up. There is a chair for you.",
+    "correct": ["Please sit down. There is a chair for you."],
+    "explanation": "The correct phrasal verb is <sit down> (not <sit up>). <Sit down> means to take a seat."
+  },
+  {
+    "sentence": "She woke down early this morning.",
+    "correct": ["She woke up early this morning."],
+    "explanation": "The correct phrasal verb is <wake up> (not <wake down>). <Wake up> means to stop sleeping."
+  },
+  {
+    "sentence": "He gave in smoking last year.",
+    "correct": ["He gave up smoking last year."],
+    "explanation": "The correct phrasal verb is <give up> (not <give in>). <Give up> means to stop doing something."
+  },
+  {
+    "sentence": "Can you write up your phone number for me?",
+    "correct": ["Can you write down your phone number for me?"],
+    "explanation": "The correct phrasal verb is <write down> (not <write up>). <Write down> means to note on paper."
+  },
+  {
+    "sentence": "She ran on her old friend at the supermarket.",
+    "correct": ["She ran into her old friend at the supermarket."],
+    "explanation": "The correct phrasal verb is <run into> (not <run on>). It means to meet by chance."
+  },
+  {
+    "sentence": "Please throw out the rubbish before you leave.",
+    "correct": ["Please throw away the rubbish before you leave.", "Please throw out the rubbish before you leave."],
+    "explanation": "Both <throw away> and <throw out> are correct and mean to discard."
+  },
+  {
+    "sentence": "He got of the bus at the wrong stop.",
+    "correct": ["He got off the bus at the wrong stop."],
+    "explanation": "The correct phrasal verb is <get off> (not <get of>). <Get off> means to leave a vehicle."
+  },
+  {
+    "sentence": "She came up home very late last night.",
+    "correct": ["She came back home very late last night."],
+    "explanation": "The correct phrasal verb is <come back> (not <come up>). <Come back> means to return."
+  },
+  {
+    "sentence": "I need to fill up this form for the doctor.",
+    "correct": ["I need to fill in this form for the doctor.", "I need to fill out this form for the doctor."],
+    "explanation": "The correct phrasal verb is <fill in> or <fill out> (not <fill up>). They mean to complete a form."
+  },
+  {
+    "sentence": "He broke up his car on the way to work.",
+    "correct": ["His car broke down on the way to work."],
+    "explanation": "The correct phrasal verb is <break down> (not <break up>). <Break down> means to stop working."
+  },
+  {
+    "sentence": "She looked up the children while their parents were away.",
+    "correct": ["She looked after the children while their parents were away."],
+    "explanation": "The correct phrasal verb is <look after> (not <look up>). It means to take care of."
+  },
+  {
+    "sentence": "Please calm up. Everything will be fine.",
+    "correct": ["Please calm down. Everything will be fine."],
+    "explanation": "The correct phrasal verb is <calm down> (not <calm up>). It means to become less upset."
+  },
+  {
+    "sentence": "He set down a new business last year.",
+    "correct": ["He set up a new business last year."],
+    "explanation": "The correct phrasal verb is <set up> (not <set down>). <Set up> means to establish."
+  },
+  {
+    "sentence": "She carried up with her work despite the noise.",
+    "correct": ["She carried on with her work despite the noise."],
+    "explanation": "The correct phrasal verb is <carry on> (not <carry up>). <Carry on> means to continue."
+  },
+  {
+    "sentence": "I need to sort up this mess in my room.",
+    "correct": ["I need to sort out this mess in my room."],
+    "explanation": "The correct phrasal verb is <sort out> (not <sort up>). <Sort out> means to organize."
+  },
+  {
+    "sentence": "He got in the bus at the station.",
+    "correct": ["He got on the bus at the station."],
+    "explanation": "The correct phrasal verb is <get on> (not <get in>) for buses and trains."
+  },
+  {
+    "sentence": "She stood down when the teacher entered the room.",
+    "correct": ["She stood up when the teacher entered the room."],
+    "explanation": "The correct phrasal verb is <stand up> (not <stand down>). <Stand up> means to rise to your feet."
+  },
+  {
+    "sentence": "He held up the phone. Don't hang up!",
+    "correct": ["He held on the phone. Don't hang up!", "Hold on the phone. Don't hang up!"],
+    "explanation": "The correct phrasal verb is <hold on> (not <hold up>). <Hold on> means to wait."
+  }
+]

@@ -1,0 +1,127 @@
+[
+  {
+    "sentence": "She go to school every day.",
+    "correct": ["She goes to school every day."],
+    "explanation": "Third person singular (she) requires <goes>, not <go>."
+  },
+  {
+    "sentence": "He don't like vegetables.",
+    "correct": ["He doesn't like vegetables.", "He does not like vegetables."],
+    "explanation": "Third person singular (he) requires <doesn't>, not <don't>."
+  },
+  {
+    "sentence": "The children plays in the park.",
+    "correct": ["The children play in the park."],
+    "explanation": "<Children> is plural, so the verb should be <play> without <-s>."
+  },
+  {
+    "sentence": "My friends is very nice.",
+    "correct": ["My friends are very nice."],
+    "explanation": "<Friends> is plural, so use <are> instead of <is>."
+  },
+  {
+    "sentence": "The dog bark at night.",
+    "correct": ["The dog barks at night."],
+    "explanation": "Third person singular (the dog) requires <barks> with <-s>."
+  },
+  {
+    "sentence": "She have two brothers.",
+    "correct": ["She has two brothers."],
+    "explanation": "Third person singular (she) requires <has>, not <have>."
+  },
+  {
+    "sentence": "They goes to the gym on Mondays.",
+    "correct": ["They go to the gym on Mondays."],
+    "explanation": "<They> is plural, so the verb should be <go> without <-s>."
+  },
+  {
+    "sentence": "The cat sleep on the sofa.",
+    "correct": ["The cat sleeps on the sofa."],
+    "explanation": "Third person singular (the cat) requires <sleeps> with <-s>."
+  },
+  {
+    "sentence": "My mother cook dinner every evening.",
+    "correct": ["My mother cooks dinner every evening."],
+    "explanation": "Third person singular (my mother) requires <cooks> with <-s>."
+  },
+  {
+    "sentence": "We doesn't understand the question.",
+    "correct": ["We don't understand the question.", "We do not understand the question."],
+    "explanation": "<We> is plural, so use <don't>, not <doesn't>."
+  },
+  {
+    "sentence": "The birds sings in the morning.",
+    "correct": ["The birds sing in the morning."],
+    "explanation": "<Birds> is plural, so the verb should be <sing> without <-s>."
+  },
+  {
+    "sentence": "He watch TV after dinner.",
+    "correct": ["He watches TV after dinner."],
+    "explanation": "Third person singular (he) requires <watches> with <-es>."
+  },
+  {
+    "sentence": "The teacher explain the lesson clearly.",
+    "correct": ["The teacher explains the lesson clearly."],
+    "explanation": "Third person singular (the teacher) requires <explains> with <-s>."
+  },
+  {
+    "sentence": "My parents works in a hospital.",
+    "correct": ["My parents work in a hospital."],
+    "explanation": "<Parents> is plural, so the verb should be <work> without <-s>."
+  },
+  {
+    "sentence": "She don't know the answer.",
+    "correct": ["She doesn't know the answer.", "She does not know the answer."],
+    "explanation": "Third person singular (she) requires <doesn't>, not <don't>."
+  },
+  {
+    "sentence": "The baby cry every night.",
+    "correct": ["The baby cries every night."],
+    "explanation": "Third person singular (the baby) requires <cries> — change <y> to <ies>."
+  },
+  {
+    "sentence": "Tom and Jerry is best friends.",
+    "correct": ["Tom and Jerry are best friends."],
+    "explanation": "Two subjects joined by <and> are plural, so use <are>."
+  },
+  {
+    "sentence": "There is many books on the table.",
+    "correct": ["There are many books on the table."],
+    "explanation": "<Books> is plural, so use <there are>, not <there is>."
+  },
+  {
+    "sentence": "The water are cold.",
+    "correct": ["The water is cold."],
+    "explanation": "<Water> is an uncountable noun (singular), so use <is>."
+  },
+  {
+    "sentence": "Everybody know the answer.",
+    "correct": ["Everybody knows the answer."],
+    "explanation": "<Everybody> is singular, so the verb needs <-s>: <knows>."
+  },
+  {
+    "sentence": "The news are on TV at 8 pm.",
+    "correct": ["The news is on TV at 8 pm."],
+    "explanation": "<News> looks plural but is actually singular, so use <is>."
+  },
+  {
+    "sentence": "My sister and I goes to the same school.",
+    "correct": ["My sister and I go to the same school."],
+    "explanation": "Two subjects joined by <and> are plural, so use <go>."
+  },
+  {
+    "sentence": "Each student have a textbook.",
+    "correct": ["Each student has a textbook."],
+    "explanation": "<Each> is always singular, so use <has>."
+  },
+  {
+    "sentence": "The information are very useful.",
+    "correct": ["The information is very useful."],
+    "explanation": "<Information> is an uncountable noun (singular), so use <is>."
+  },
+  {
+    "sentence": "Nobody like homework.",
+    "correct": ["Nobody likes homework."],
+    "explanation": "<Nobody> is singular, so the verb needs <-s>: <likes>."
+  }
+]

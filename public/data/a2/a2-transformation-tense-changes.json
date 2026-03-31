@@ -65,5 +65,103 @@
     "correct": ["I used to play every day.", "When I was young, I used to play every day."],
     "hint": "Use <used to> + base verb for past habits",
     "explanation": "<Used to> + base verb describes past habits that no longer happen."
+  },
+  {
+    "prompt": "Change to past continuous",
+    "source": "She cooked dinner.",
+    "correct": ["She was cooking dinner."],
+    "hint": "Use <was> + verb-ing",
+    "explanation": "Past continuous: <was/were> + verb-ing for an action in progress in the past."
+  },
+  {
+    "prompt": "Change to future with <will>",
+    "source": "I visit my grandmother every Sunday.",
+    "correct": ["I will visit my grandmother.", "I'll visit my grandmother."],
+    "explanation": "Future with <will>: subject + <will> + base verb."
+  },
+  {
+    "prompt": "Change to comparative",
+    "source": "This car is fast.",
+    "correct": ["This car is faster."],
+    "hint": "Add <-er> to short adjectives",
+    "explanation": "Short adjectives form comparatives with adjective + <-er>: <fast> → <faster>."
+  },
+  {
+    "prompt": "Change to superlative",
+    "source": "This building is old.",
+    "correct": ["This building is the oldest."],
+    "explanation": "Short adjectives form superlatives with <the> + adjective + <-est>: <old> → <the oldest>."
+  },
+  {
+    "prompt": "Change to reported speech",
+    "source": "He said, \"I like chocolate.\"",
+    "correct": ["He said that he liked chocolate.", "He said he liked chocolate."],
+    "hint": "Shift present simple to past simple",
+    "explanation": "Reported speech: <like> → <liked>, <I> → <he>."
+  },
+  {
+    "prompt": "Change to past continuous",
+    "source": "We watched a movie.",
+    "correct": ["We were watching a movie."],
+    "explanation": "Past continuous: <were> + verb-ing for plural subjects."
+  },
+  {
+    "prompt": "Change to future with <going to>",
+    "source": "She buys a new phone.",
+    "correct": ["She is going to buy a new phone.", "She's going to buy a new phone."],
+    "explanation": "Future with <going to>: subject + <is/are going to> + base verb."
+  },
+  {
+    "prompt": "Change to comparative",
+    "source": "This exercise is difficult.",
+    "correct": ["This exercise is more difficult."],
+    "hint": "Use <more> for long adjectives",
+    "explanation": "Long adjectives use <more> + adjective: <difficult> → <more difficult>."
+  },
+  {
+    "prompt": "Change to reported speech",
+    "source": "She said, \"I can swim.\"",
+    "correct": ["She said that she could swim.", "She said she could swim."],
+    "hint": "Shift <can> to <could>",
+    "explanation": "Reported speech: <can> → <could>, <I> → <she>."
+  },
+  {
+    "prompt": "Change to present perfect",
+    "source": "They finished the project yesterday.",
+    "correct": ["They have finished the project."],
+    "hint": "Remove the specific time reference",
+    "explanation": "Present perfect: <have> + past participle. Remove specific time markers."
+  },
+  {
+    "prompt": "Change to future with <will>",
+    "source": "She works at the hospital.",
+    "correct": ["She will work at the hospital.", "She'll work at the hospital."],
+    "explanation": "Future with <will>: subject + <will> + base verb."
+  },
+  {
+    "prompt": "Change to superlative",
+    "source": "This movie is good.",
+    "correct": ["This movie is the best."],
+    "hint": "<good> has an irregular superlative",
+    "explanation": "Irregular superlative: <good> → <the best>."
+  },
+  {
+    "prompt": "Change to past continuous",
+    "source": "He read a newspaper.",
+    "correct": ["He was reading a newspaper."],
+    "explanation": "Past continuous: <was> + verb-ing."
+  },
+  {
+    "prompt": "Change to comparative",
+    "source": "My house is big.",
+    "correct": ["My house is bigger."],
+    "hint": "Double the final consonant before adding <-er>",
+    "explanation": "Short adjectives ending in consonant-vowel-consonant double the last letter: <big> → <bigger>."
+  },
+  {
+    "prompt": "Change to negative in past simple",
+    "source": "She went to the party.",
+    "correct": ["She didn't go to the party.", "She did not go to the party."],
+    "explanation": "Past simple negative: <didn't> + base verb. <went> → <didn't go>."
   }
 ]

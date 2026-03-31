@@ -1,0 +1,152 @@
+[
+  {
+    "prompt": "Change to past continuous",
+    "source": "She cooked dinner.",
+    "correct": ["She was cooking dinner."],
+    "explanation": "Past continuous: subject + <was/were> + verb-ing. <She was cooking dinner>."
+  },
+  {
+    "prompt": "Change to past continuous",
+    "source": "They played football.",
+    "correct": ["They were playing football."],
+    "explanation": "Past continuous with plural subject: <were> + verb-ing."
+  },
+  {
+    "prompt": "Change to past continuous",
+    "source": "He read a book.",
+    "correct": ["He was reading a book."],
+    "explanation": "Past continuous: <was> + verb-ing for singular subjects."
+  },
+  {
+    "prompt": "Change to future with 'will'",
+    "source": "She studies English.",
+    "correct": ["She will study English."],
+    "explanation": "Future with <will>: subject + will + base verb."
+  },
+  {
+    "prompt": "Change to future with 'will'",
+    "source": "They go to the beach.",
+    "correct": ["They will go to the beach."],
+    "explanation": "Future with <will>: subject + will + base verb."
+  },
+  {
+    "prompt": "Change to future with 'going to'",
+    "source": "I buy a new phone.",
+    "correct": ["I am going to buy a new phone."],
+    "explanation": "Future with <going to>: subject + am/is/are + going to + base verb."
+  },
+  {
+    "prompt": "Change to future with 'going to'",
+    "source": "She visits her grandmother.",
+    "correct": ["She is going to visit her grandmother."],
+    "explanation": "Future with <going to>: <She is going to visit>."
+  },
+  {
+    "prompt": "Change to past continuous",
+    "source": "I watched TV.",
+    "correct": ["I was watching TV."],
+    "explanation": "Past continuous: <I was watching TV>."
+  },
+  {
+    "prompt": "Change to past continuous",
+    "source": "We walked in the park.",
+    "correct": ["We were walking in the park."],
+    "explanation": "Past continuous with <we>: <were> + verb-ing."
+  },
+  {
+    "prompt": "Change to future with 'will'",
+    "source": "He helps his mother.",
+    "correct": ["He will help his mother."],
+    "explanation": "Future with <will>: <He will help his mother>."
+  },
+  {
+    "prompt": "Change to negative past continuous",
+    "source": "She was sleeping.",
+    "correct": ["She was not sleeping.", "She wasn't sleeping."],
+    "explanation": "Negative past continuous: subject + was/were + not + verb-ing."
+  },
+  {
+    "prompt": "Change to negative future",
+    "source": "They will come to the party.",
+    "correct": ["They will not come to the party.", "They won't come to the party."],
+    "explanation": "Negative future: subject + will not (won't) + base verb."
+  },
+  {
+    "prompt": "Change to a question in past continuous",
+    "source": "He was working.",
+    "correct": ["Was he working?"],
+    "explanation": "Question in past continuous: <Was/Were> + subject + verb-ing?"
+  },
+  {
+    "prompt": "Change to a question with 'will'",
+    "source": "She will travel to London.",
+    "correct": ["Will she travel to London?"],
+    "explanation": "Question with <will>: <Will> + subject + base verb?"
+  },
+  {
+    "prompt": "Change to future with 'going to'",
+    "source": "They move to a new house.",
+    "correct": ["They are going to move to a new house."],
+    "explanation": "Future with <going to>: <They are going to move>."
+  },
+  {
+    "prompt": "Change to past continuous",
+    "source": "The children sang a song.",
+    "correct": ["The children were singing a song."],
+    "explanation": "Past continuous: <The children were singing a song>."
+  },
+  {
+    "prompt": "Change to future with 'will'",
+    "source": "I eat pizza for dinner.",
+    "correct": ["I will eat pizza for dinner."],
+    "explanation": "Future with <will>: <I will eat pizza for dinner>."
+  },
+  {
+    "prompt": "Change to past continuous",
+    "source": "She wrote a letter.",
+    "correct": ["She was writing a letter."],
+    "explanation": "Past continuous: <She was writing a letter>."
+  },
+  {
+    "prompt": "Change to future with 'going to'",
+    "source": "He learns to drive.",
+    "correct": ["He is going to learn to drive."],
+    "explanation": "Future with <going to>: <He is going to learn to drive>."
+  },
+  {
+    "prompt": "Change to past continuous",
+    "source": "We ate breakfast.",
+    "correct": ["We were eating breakfast."],
+    "explanation": "Past continuous: <We were eating breakfast>."
+  },
+  {
+    "prompt": "Change to negative future with 'going to'",
+    "source": "I am going to buy a car.",
+    "correct": ["I am not going to buy a car."],
+    "explanation": "Negative: subject + am/is/are + not + going to + base verb."
+  },
+  {
+    "prompt": "Change to a question with 'going to'",
+    "source": "They are going to travel.",
+    "correct": ["Are they going to travel?"],
+    "explanation": "Question: <Are> + subject + going to + base verb?"
+  },
+  {
+    "prompt": "Change to past continuous",
+    "source": "He drove to work.",
+    "correct": ["He was driving to work."],
+    "explanation": "Past continuous: <He was driving to work>."
+  },
+  {
+    "prompt": "Change to future with 'will'",
+    "source": "We visit the museum.",
+    "correct": ["We will visit the museum."],
+    "explanation": "Future with <will>: <We will visit the museum>."
+  },
+  {
+    "prompt": "Change to past continuous",
+    "source": "She danced at the party.",
+    "correct": ["She was dancing at the party."],
+    "explanation": "Past continuous: <She was dancing at the party>."
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "sentence": "The _____ of the research findings was published in a leading journal.",
+    "rootWord": "DISSEMINATE",
+    "correct": "dissemination",
+    "explanation": "DISSEMINATE → dissemination (add -ion to make a noun meaning 'the act of spreading')"
+  },
+  {
+    "sentence": "The study provided _____ evidence to support the hypothesis.",
+    "rootWord": "SUBSTANCE",
+    "correct": "substantial",
+    "explanation": "SUBSTANCE → substantial (change -ce to -tial to make an adjective)"
+  },
+  {
+    "sentence": "The _____ of the two theories led to a new framework.",
+    "rootWord": "CONVERGE",
+    "correct": "convergence",
+    "explanation": "CONVERGE → convergence (change -e to -ence to make a noun)"
+  },
+  {
+    "sentence": "Her _____ approach to the problem yielded innovative results.",
+    "rootWord": "METHOD",
+    "correct": "methodological",
+    "explanation": "METHOD → methodological (add -ological to make an adjective)"
+  },
+  {
+    "sentence": "The _____ of the data revealed significant patterns.",
+    "rootWord": "ANALYSE",
+    "correct": "analysis",
+    "explanation": "ANALYSE → analysis (change -yse to -ysis to make a noun)"
+  },
+  {
+    "sentence": "The researcher demonstrated remarkable _____ in her field.",
+    "rootWord": "PROFICIENT",
+    "correct": "proficiency",
+    "explanation": "PROFICIENT → proficiency (change -t to -cy to make a noun)"
+  },
+  {
+    "sentence": "The _____ implications of the study were far-reaching.",
+    "rootWord": "THEORY",
+    "correct": "theoretical",
+    "explanation": "THEORY → theoretical (change -y to -etical to make an adjective)"
+  },
+  {
+    "sentence": "The _____ between the control and experimental groups was significant.",
+    "rootWord": "DIFFER",
+    "correct": "differentiation",
+    "explanation": "DIFFER → differentiation (add -entiation to make a noun)"
+  },
+  {
+    "sentence": "The findings were _____ consistent across all trials.",
+    "rootWord": "REMARK",
+    "correct": "remarkably",
+    "explanation": "REMARK → remarkably (add -ably to make an adverb)"
+  },
+  {
+    "sentence": "The _____ of the new policy requires careful planning.",
+    "rootWord": "IMPLEMENT",
+    "correct": "implementation",
+    "explanation": "IMPLEMENT → implementation (add -ation to make a noun)"
+  },
+  {
+    "sentence": "The study's _____ was limited by the small sample size.",
+    "rootWord": "GENERALISE",
+    "correct": "generalisability",
+    "explanation": "GENERALISE → generalisability (add -ability to make a noun)"
+  },
+  {
+    "sentence": "The _____ nature of the research made it difficult to replicate.",
+    "rootWord": "EXPLORE",
+    "correct": "exploratory",
+    "explanation": "EXPLORE → exploratory (change -e to -atory to make an adjective)"
+  },
+  {
+    "sentence": "The _____ of the participants was ensured through anonymisation.",
+    "rootWord": "CONFIDE",
+    "correct": "confidentiality",
+    "explanation": "CONFIDE → confidentiality (add -entiality to make a noun)"
+  },
+  {
+    "sentence": "The results were _____ significant at the 0.05 level.",
+    "rootWord": "STATISTIC",
+    "correct": "statistically",
+    "explanation": "STATISTIC → statistically (add -ally to make an adverb)"
+  },
+  {
+    "sentence": "The _____ of the existing literature revealed several gaps.",
+    "rootWord": "SYNTHESISE",
+    "correct": "synthesis",
+    "explanation": "SYNTHESISE → synthesis (change -ise to -is to make a noun)"
+  },
+  {
+    "sentence": "The _____ framework was based on constructivist principles.",
+    "rootWord": "CONCEPT",
+    "correct": "conceptual",
+    "explanation": "CONCEPT → conceptual (add -ual to make an adjective)"
+  },
+  {
+    "sentence": "The _____ of the variables was carefully controlled.",
+    "rootWord": "MANIPULATE",
+    "correct": "manipulation",
+    "explanation": "MANIPULATE → manipulation (change -e to -ion to make a noun)"
+  },
+  {
+    "sentence": "The study adopted a _____ rigorous methodology.",
+    "rootWord": "SCIENCE",
+    "correct": "scientifically",
+    "explanation": "SCIENCE → scientifically (add -tifically to make an adverb)"
+  },
+  {
+    "sentence": "The _____ of the findings to real-world contexts was discussed.",
+    "rootWord": "APPLY",
+    "correct": "applicability",
+    "explanation": "APPLY → applicability (change -y to -icability to make a noun)"
+  },
+  {
+    "sentence": "The _____ review process ensured the quality of the publication.",
+    "rootWord": "EDIT",
+    "correct": "editorial",
+    "explanation": "EDIT → editorial (add -orial to make an adjective)"
+  },
+  {
+    "sentence": "The _____ of the phenomenon required interdisciplinary collaboration.",
+    "rootWord": "COMPLEX",
+    "correct": "complexity",
+    "explanation": "COMPLEX → complexity (add -ity to make a noun)"
+  },
+  {
+    "sentence": "The data was _____ analysed using advanced statistical methods.",
+    "rootWord": "QUANTITY",
+    "correct": "quantitatively",
+    "explanation": "QUANTITY → quantitatively (change -y to -atively to make an adverb)"
+  },
+  {
+    "sentence": "The _____ of the study was to examine the effects of sleep deprivation.",
+    "rootWord": "OBJECT",
+    "correct": "objective",
+    "explanation": "OBJECT → objective (add -ive to make a noun meaning 'aim')"
+  },
+  {
+    "sentence": "The _____ between the two variables was statistically significant.",
+    "rootWord": "CORRELATE",
+    "correct": "correlation",
+    "explanation": "CORRELATE → correlation (change -e to -ion to make a noun)"
+  },
+  {
+    "sentence": "The _____ of the research design was evaluated by external reviewers.",
+    "rootWord": "VALID",
+    "correct": "validity",
+    "explanation": "VALID → validity (add -ity to make a noun)"
+  }
+]

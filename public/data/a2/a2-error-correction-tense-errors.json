@@ -1,0 +1,164 @@
+[
+  {
+    "sentence": "Yesterday I go to the cinema.",
+    "correct": ["Yesterday I went to the cinema."],
+    "hint": "Check the tense — 'yesterday' signals past",
+    "explanation": "'Yesterday' requires the past simple. 'Go' → 'went'."
+  },
+  {
+    "sentence": "She is cooking dinner when the phone rang.",
+    "correct": ["She was cooking dinner when the phone rang."],
+    "hint": "Check the tense consistency with 'rang'",
+    "explanation": "The past continuous 'was cooking' is needed to describe an action in progress when another past event occurred."
+  },
+  {
+    "sentence": "I have seen him yesterday.",
+    "correct": ["I saw him yesterday."],
+    "hint": "Check the tense — 'yesterday' needs a specific tense",
+    "explanation": "Present perfect ('have seen') cannot be used with a specific past time like 'yesterday'. Use past simple 'saw'."
+  },
+  {
+    "sentence": "We will went to the beach tomorrow.",
+    "correct": ["We will go to the beach tomorrow."],
+    "hint": "Check the verb form after 'will'",
+    "explanation": "After 'will', use the base form of the verb: 'go', not 'went'."
+  },
+  {
+    "sentence": "She didn't went to the party.",
+    "correct": ["She didn't go to the party."],
+    "hint": "Check the verb form after 'didn't'",
+    "explanation": "After 'didn't', use the base form: 'go', not 'went'."
+  },
+  {
+    "sentence": "I am living here since 2020.",
+    "correct": ["I have lived here since 2020.", "I have been living here since 2020."],
+    "hint": "Check the tense used with 'since'",
+    "explanation": "'Since' requires present perfect ('have lived') or present perfect continuous ('have been living')."
+  },
+  {
+    "sentence": "He was play football when it started to rain.",
+    "correct": ["He was playing football when it started to rain."],
+    "hint": "Check the verb form after 'was'",
+    "explanation": "Past continuous requires 'was' + verb-ing: 'was playing'."
+  },
+  {
+    "sentence": "They goed to Paris last summer.",
+    "correct": ["They went to Paris last summer."],
+    "hint": "Check the past tense of 'go'",
+    "explanation": "'Go' is irregular. The past tense is 'went', not 'goed'."
+  },
+  {
+    "sentence": "I am study English every day.",
+    "correct": ["I study English every day.", "I am studying English every day."],
+    "hint": "Check the verb form after 'am'",
+    "explanation": "Use simple present 'study' for habits, or present continuous 'am studying' with the -ing form."
+  },
+  {
+    "sentence": "She has ate all the cake.",
+    "correct": ["She has eaten all the cake."],
+    "hint": "Check the past participle of 'eat'",
+    "explanation": "Present perfect requires 'has' + past participle: 'eaten', not 'ate'."
+  },
+  {
+    "sentence": "We are arrive at the hotel at six.",
+    "correct": ["We arrived at the hotel at six.", "We arrive at the hotel at six."],
+    "hint": "Check the verb form",
+    "explanation": "'Are arrive' is not a valid form. Use past simple 'arrived' or simple present 'arrive'."
+  },
+  {
+    "sentence": "I waited for you since three o'clock.",
+    "correct": ["I have waited for you since three o'clock.", "I have been waiting for you since three o'clock."],
+    "hint": "Check the tense used with 'since'",
+    "explanation": "'Since' with a point in time requires present perfect: 'have waited' or 'have been waiting'."
+  },
+  {
+    "sentence": "He is interested on science.",
+    "correct": ["He is interested in science."],
+    "hint": "Check the preposition after 'interested'",
+    "explanation": "The correct collocation is 'interested in', not 'interested on'."
+  },
+  {
+    "sentence": "She is good in mathematics.",
+    "correct": ["She is good at mathematics."],
+    "hint": "Check the preposition after 'good'",
+    "explanation": "The correct collocation is 'good at', not 'good in'."
+  },
+  {
+    "sentence": "I am afraid from spiders.",
+    "correct": ["I am afraid of spiders."],
+    "hint": "Check the preposition after 'afraid'",
+    "explanation": "The correct collocation is 'afraid of', not 'afraid from'."
+  },
+  {
+    "sentence": "We arrived to the airport on time.",
+    "correct": ["We arrived at the airport on time."],
+    "hint": "Check the preposition after 'arrived'",
+    "explanation": "The correct collocation is 'arrived at', not 'arrived to'."
+  },
+  {
+    "sentence": "She depends of her parents for money.",
+    "correct": ["She depends on her parents for money."],
+    "hint": "Check the preposition after 'depends'",
+    "explanation": "The correct collocation is 'depends on', not 'depends of'."
+  },
+  {
+    "sentence": "I was walking home when I see a cat.",
+    "correct": ["I was walking home when I saw a cat."],
+    "hint": "Check the tense consistency",
+    "explanation": "Both actions are in the past. 'See' should be past simple 'saw' to match 'was walking'."
+  },
+  {
+    "sentence": "Last night I watch a great film.",
+    "correct": ["Last night I watched a great film."],
+    "hint": "Check the tense — 'last night' signals past",
+    "explanation": "'Last night' requires past simple: 'watched', not 'watch'."
+  },
+  {
+    "sentence": "She has went to the shop.",
+    "correct": ["She has gone to the shop."],
+    "hint": "Check the past participle of 'go'",
+    "explanation": "Present perfect requires 'has' + past participle: 'gone', not 'went'."
+  },
+  {
+    "sentence": "They didn't came to the meeting.",
+    "correct": ["They didn't come to the meeting."],
+    "hint": "Check the verb form after 'didn't'",
+    "explanation": "After 'didn't', use the base form: 'come', not 'came'."
+  },
+  {
+    "sentence": "I listen to music when she called me.",
+    "correct": ["I was listening to music when she called me."],
+    "hint": "Check the tense for the ongoing action",
+    "explanation": "Use past continuous 'was listening' for the action in progress when another event happened."
+  },
+  {
+    "sentence": "He telled me a funny story.",
+    "correct": ["He told me a funny story."],
+    "hint": "Check the past tense of 'tell'",
+    "explanation": "'Tell' is irregular. The past tense is 'told', not 'telled'."
+  },
+  {
+    "sentence": "We have already ate lunch.",
+    "correct": ["We have already eaten lunch."],
+    "hint": "Check the past participle of 'eat'",
+    "explanation": "Present perfect requires 'have' + past participle: 'eaten', not 'ate'."
+  },
+  {
+    "sentence": "I am knowing the answer.",
+    "correct": ["I know the answer."],
+    "hint": "Check if this verb can be used in continuous form",
+    "explanation": "'Know' is a stative verb and is not normally used in the continuous form. Use simple present 'know'."
+  },
+  {
+    "sentence": "She runned very fast in the race.",
+    "correct": ["She ran very fast in the race."],
+    "hint": "Check the past tense of 'run'",
+    "explanation": "'Run' is irregular. The past tense is 'ran', not 'runned'."
+  },
+  {
+    "sentence": "He is listen to music right now.",
+    "correct": ["He is listening to music right now."],
+    "hint": "Check the verb form after 'is'",
+    "explanation": "Present continuous requires 'is' + verb-ing: 'is listening'."
+  }
+]

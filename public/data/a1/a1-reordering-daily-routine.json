@@ -1,0 +1,86 @@
+[
+  {
+    "id": "reord-a1-dr-001",
+    "sentence": "I wake up at seven o'clock",
+    "words": ["I", "wake", "up", "at", "seven", "o'clock"],
+    "hint": "Subject + phrasal verb + time",
+    "explanation": "The basic pattern is Subject + Verb + Time: <I wake up at seven o'clock>."
+  },
+  {
+    "id": "reord-a1-dr-002",
+    "sentence": "She brushes her teeth every morning",
+    "words": ["She", "brushes", "her", "teeth", "every", "morning"],
+    "hint": "Subject + verb + object + time",
+    "explanation": "Follow the pattern Subject + Verb + Object + Time expression."
+  },
+  {
+    "id": "reord-a1-dr-003",
+    "sentence": "He takes a shower before breakfast",
+    "words": ["He", "takes", "a", "shower", "before", "breakfast"],
+    "hint": "Subject + verb + object + time",
+    "explanation": "The pattern is Subject + Verb + Object + Time: <He takes a shower before breakfast>."
+  },
+  {
+    "id": "reord-a1-dr-004",
+    "sentence": "We have lunch at twelve thirty",
+    "words": ["We", "have", "lunch", "at", "twelve", "thirty"],
+    "hint": "Subject + verb + meal + time",
+    "explanation": "Meals follow the pattern: Subject + have + meal + at + time."
+  },
+  {
+    "id": "reord-a1-dr-005",
+    "sentence": "They go to school by bus",
+    "words": ["They", "go", "to", "school", "by", "bus"],
+    "hint": "Subject + verb + place + transport",
+    "explanation": "The pattern is Subject + go to + place + by + transport."
+  },
+  {
+    "id": "reord-a1-dr-006",
+    "sentence": "I get dressed after my shower",
+    "words": ["I", "get", "dressed", "after", "my", "shower"],
+    "hint": "Subject + phrasal verb + time",
+    "explanation": "<Get dressed> is a phrasal verb meaning to put on clothes."
+  },
+  {
+    "id": "reord-a1-dr-007",
+    "sentence": "She reads a book before bed",
+    "words": ["She", "reads", "a", "book", "before", "bed"],
+    "hint": "Subject + verb + object + time",
+    "explanation": "The pattern is Subject + Verb + Object + Time: <She reads a book before bed>."
+  },
+  {
+    "id": "reord-a1-dr-008",
+    "sentence": "He walks to work every day",
+    "words": ["He", "walks", "to", "work", "every", "day"],
+    "hint": "Subject + verb + place + frequency",
+    "explanation": "The pattern is Subject + Verb + to + place + frequency."
+  },
+  {
+    "id": "reord-a1-dr-009",
+    "sentence": "We eat dinner at seven in the evening",
+    "words": ["We", "eat", "dinner", "at", "seven", "in", "the", "evening"],
+    "hint": "Subject + verb + meal + time",
+    "explanation": "The pattern is Subject + eat + meal + at + time + in the + part of day."
+  },
+  {
+    "id": "reord-a1-dr-010",
+    "sentence": "I go to bed at ten o'clock",
+    "words": ["I", "go", "to", "bed", "at", "ten", "o'clock"],
+    "hint": "Subject + verb + place + time",
+    "explanation": "We say <go to bed> (no article) when talking about sleeping."
+  },
+  {
+    "id": "reord-a1-dr-011",
+    "sentence": "She makes breakfast for her family",
+    "words": ["She", "makes", "breakfast", "for", "her", "family"],
+    "hint": "Subject + verb + object + for whom",
+    "explanation": "The pattern is Subject + Verb + Object + for + person."
+  },
+  {
+    "id": "reord-a1-dr-012",
+    "sentence": "He does his homework after school",
+    "words": ["He", "does", "his", "homework", "after", "school"],
+    "hint": "Subject + verb + object + time",
+    "explanation": "The pattern is Subject + do + possessive + homework + time."
+  }
+]

@@ -1,0 +1,127 @@
+[
+  {
+    "sentence": "She came up to a brilliant idea during the brainstorming session.",
+    "correct": ["She came up with a brilliant idea during the brainstorming session."],
+    "explanation": "The correct phrasal verb is <come up with> (not <come up to>). It means to think of an idea."
+  },
+  {
+    "sentence": "The company needs to crack down at tax evasion.",
+    "correct": ["The company needs to crack down on tax evasion."],
+    "explanation": "The correct phrasal verb is <crack down on> (not <crack down at>). It means to take strict action."
+  },
+  {
+    "sentence": "He has been putting up to his neighbour's noise for months.",
+    "correct": ["He has been putting up with his neighbour's noise for months."],
+    "explanation": "The correct phrasal verb is <put up with> (not <put up to>). It means to tolerate."
+  },
+  {
+    "sentence": "The detective was trying to piece up the evidence.",
+    "correct": ["The detective was trying to piece together the evidence."],
+    "explanation": "The correct phrasal verb is <piece together> (not <piece up>). It means to assemble gradually."
+  },
+  {
+    "sentence": "She couldn't keep on with the pace of the advanced class.",
+    "correct": ["She couldn't keep up with the pace of the advanced class."],
+    "explanation": "The correct phrasal verb is <keep up with> (not <keep on with>). It means to maintain the same level."
+  },
+  {
+    "sentence": "The government plans to phase off fossil fuel subsidies.",
+    "correct": ["The government plans to phase out fossil fuel subsidies."],
+    "explanation": "The correct phrasal verb is <phase out> (not <phase off>). It means to gradually stop."
+  },
+  {
+    "sentence": "He managed to get away from cheating on the test.",
+    "correct": ["He managed to get away with cheating on the test."],
+    "explanation": "The correct phrasal verb is <get away with> (not <get away from>). It means to avoid punishment."
+  },
+  {
+    "sentence": "The new regulations have done up with the old system.",
+    "correct": ["The new regulations have done away with the old system."],
+    "explanation": "The correct phrasal verb is <do away with> (not <do up with>). It means to abolish."
+  },
+  {
+    "sentence": "She was looking forward at starting her new job.",
+    "correct": ["She was looking forward to starting her new job."],
+    "explanation": "The correct phrasal verb is <look forward to> (not <look forward at>). Note: <to> + gerund."
+  },
+  {
+    "sentence": "He finally owned up for making the mistake.",
+    "correct": ["He finally owned up to making the mistake."],
+    "explanation": "The correct phrasal verb is <own up to> (not <own up for>). It means to admit responsibility."
+  },
+  {
+    "sentence": "The manager asked us to cut down at unnecessary expenses.",
+    "correct": ["The manager asked us to cut back on unnecessary expenses.", "The manager asked us to cut down on unnecessary expenses."],
+    "explanation": "The correct phrasal verb is <cut back on> or <cut down on> (not <cut down at>)."
+  },
+  {
+    "sentence": "We need to bear on mind that the deadline is approaching.",
+    "correct": ["We need to bear in mind that the deadline is approaching."],
+    "explanation": "The correct phrasal verb is <bear in mind> (not <bear on mind>). It means to remember."
+  },
+  {
+    "sentence": "She talked him out from accepting the risky deal.",
+    "correct": ["She talked him out of accepting the risky deal."],
+    "explanation": "The correct phrasal verb is <talk out of> (not <talk out from>). It means to persuade not to do."
+  },
+  {
+    "sentence": "The project fell apart because they couldn't see eye on eye.",
+    "correct": ["The project fell apart because they couldn't see eye to eye."],
+    "explanation": "The correct idiom is <see eye to eye> (not <eye on eye>). It means to agree."
+  },
+  {
+    "sentence": "He was taken back by the unexpected news.",
+    "correct": ["He was taken aback by the unexpected news."],
+    "explanation": "The correct expression is <taken aback> (not <taken back>). It means to be surprised."
+  },
+  {
+    "sentence": "She managed to pull off from organising the entire event alone.",
+    "correct": ["She managed to pull off organising the entire event alone."],
+    "explanation": "The correct phrasal verb is <pull off> (not <pull off from>). It means to succeed in doing something difficult."
+  },
+  {
+    "sentence": "The new evidence brought up light on the mystery.",
+    "correct": ["The new evidence brought to light the mystery.", "The new evidence shed light on the mystery."],
+    "explanation": "The correct expressions are <bring to light> or <shed light on>."
+  },
+  {
+    "sentence": "He was let down from his colleagues during the crisis.",
+    "correct": ["He was let down by his colleagues during the crisis."],
+    "explanation": "The correct preposition is <by> (not <from>) with <let down> in passive voice."
+  },
+  {
+    "sentence": "The company needs to branch up into new markets.",
+    "correct": ["The company needs to branch out into new markets."],
+    "explanation": "The correct phrasal verb is <branch out> (not <branch up>). It means to expand."
+  },
+  {
+    "sentence": "She was banking at getting a promotion this year.",
+    "correct": ["She was banking on getting a promotion this year."],
+    "explanation": "The correct phrasal verb is <bank on> (not <bank at>). It means to rely on."
+  },
+  {
+    "sentence": "The scandal blew up in the media and spiralled out from control.",
+    "correct": ["The scandal blew up in the media and spiralled out of control."],
+    "explanation": "The correct expression is <out of control> (not <out from control>)."
+  },
+  {
+    "sentence": "He was called up for his unprofessional behaviour.",
+    "correct": ["He was called out for his unprofessional behaviour."],
+    "explanation": "The correct phrasal verb is <call out> (not <call up>). <Call out> means to criticise publicly."
+  },
+  {
+    "sentence": "The team needs to buckle up and focus on the deadline.",
+    "correct": ["The team needs to buckle down and focus on the deadline."],
+    "explanation": "The correct phrasal verb is <buckle down> (not <buckle up>). <Buckle down> means to work hard."
+  },
+  {
+    "sentence": "She glossed up the mistakes in her report.",
+    "correct": ["She glossed over the mistakes in her report."],
+    "explanation": "The correct phrasal verb is <gloss over> (not <gloss up>). It means to minimise or ignore."
+  },
+  {
+    "sentence": "The new policy has stamped up corruption in the department.",
+    "correct": ["The new policy has stamped out corruption in the department."],
+    "explanation": "The correct phrasal verb is <stamp out> (not <stamp up>). It means to eliminate."
+  }
+]

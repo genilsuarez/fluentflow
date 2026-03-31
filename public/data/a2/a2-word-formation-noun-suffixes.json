@@ -1,0 +1,152 @@
+[
+  {
+    "sentence": "The _____ of the new building took two years.",
+    "rootWord": "CONSTRUCT",
+    "correct": "construction",
+    "explanation": "CONSTRUCT → construction (add -ion to make a noun)"
+  },
+  {
+    "sentence": "She felt great _____ when she won the prize.",
+    "rootWord": "EXCITE",
+    "correct": "excitement",
+    "explanation": "EXCITE → excitement (add -ment to make a noun)"
+  },
+  {
+    "sentence": "His _____ made everyone in the room feel sad.",
+    "rootWord": "SAD",
+    "correct": "sadness",
+    "explanation": "SAD → sadness (add -ness to make a noun from an adjective)"
+  },
+  {
+    "sentence": "The _____ of the problem was very difficult.",
+    "rootWord": "SOLVE",
+    "correct": "solution",
+    "explanation": "SOLVE → solution (change -ve to -ution to make a noun)"
+  },
+  {
+    "sentence": "We need to make a _____ about the holiday.",
+    "rootWord": "DECIDE",
+    "correct": "decision",
+    "explanation": "DECIDE → decision (change -de to -sion to make a noun)"
+  },
+  {
+    "sentence": "The _____ of the team was excellent this season.",
+    "rootWord": "PERFORM",
+    "correct": "performance",
+    "explanation": "PERFORM → performance (add -ance to make a noun)"
+  },
+  {
+    "sentence": "Her _____ at the concert was amazing.",
+    "rootWord": "APPEAR",
+    "correct": "appearance",
+    "explanation": "APPEAR → appearance (add -ance to make a noun)"
+  },
+  {
+    "sentence": "The _____ of the new park made everyone happy.",
+    "rootWord": "DEVELOP",
+    "correct": "development",
+    "explanation": "DEVELOP → development (add -ment to make a noun)"
+  },
+  {
+    "sentence": "She showed great _____ during the difficult exam.",
+    "rootWord": "PATIENT",
+    "correct": "patience",
+    "explanation": "PATIENT → patience (change -t to -ce to make a noun)"
+  },
+  {
+    "sentence": "The _____ between the two countries improved.",
+    "rootWord": "RELATE",
+    "correct": "relation",
+    "explanation": "RELATE → relation (change -e to -ion to make a noun)"
+  },
+  {
+    "sentence": "His _____ to help others is admirable.",
+    "rootWord": "WILLING",
+    "correct": "willingness",
+    "explanation": "WILLING → willingness (add -ness to make a noun)"
+  },
+  {
+    "sentence": "The _____ of the movie was very surprising.",
+    "rootWord": "END",
+    "correct": "ending",
+    "explanation": "END → ending (add -ing to make a noun)"
+  },
+  {
+    "sentence": "We celebrated the _____ of the project.",
+    "rootWord": "COMPLETE",
+    "correct": "completion",
+    "explanation": "COMPLETE → completion (change -e to -ion to make a noun)"
+  },
+  {
+    "sentence": "The _____ of the students improved after the new teacher arrived.",
+    "rootWord": "BEHAVE",
+    "correct": "behaviour",
+    "explanation": "BEHAVE → behaviour (change -e to -iour to make a noun)"
+  },
+  {
+    "sentence": "She expressed her _____ for the beautiful gift.",
+    "rootWord": "GRATEFUL",
+    "correct": "gratitude",
+    "explanation": "GRATEFUL → gratitude (the noun form uses the root GRAT- + -itude)"
+  },
+  {
+    "sentence": "The _____ of the new law caused many protests.",
+    "rootWord": "INTRODUCE",
+    "correct": "introduction",
+    "explanation": "INTRODUCE → introduction (change -ce to -ction to make a noun)"
+  },
+  {
+    "sentence": "His _____ to the team was very important.",
+    "rootWord": "CONTRIBUTE",
+    "correct": "contribution",
+    "explanation": "CONTRIBUTE → contribution (change -e to -ion to make a noun)"
+  },
+  {
+    "sentence": "The _____ of the weather affected our plans.",
+    "rootWord": "MOVE",
+    "correct": "movement",
+    "explanation": "MOVE → movement (add -ment to make a noun)"
+  },
+  {
+    "sentence": "She felt a deep _____ for her lost pet.",
+    "rootWord": "LONELY",
+    "correct": "loneliness",
+    "explanation": "LONELY → loneliness (change -y to -iness to make a noun)"
+  },
+  {
+    "sentence": "The _____ of the children was very loud.",
+    "rootWord": "LAUGH",
+    "correct": "laughter",
+    "explanation": "LAUGH → laughter (add -ter to make a noun)"
+  },
+  {
+    "sentence": "We need more _____ about the new rules.",
+    "rootWord": "INFORM",
+    "correct": "information",
+    "explanation": "INFORM → information (add -ation to make a noun)"
+  },
+  {
+    "sentence": "The _____ of the old house took many months.",
+    "rootWord": "IMPROVE",
+    "correct": "improvement",
+    "explanation": "IMPROVE → improvement (add -ment to make a noun)"
+  },
+  {
+    "sentence": "Her _____ was obvious when she heard the good news.",
+    "rootWord": "HAPPY",
+    "correct": "happiness",
+    "explanation": "HAPPY → happiness (change -y to -iness to make a noun)"
+  },
+  {
+    "sentence": "The _____ of the new product was a big success.",
+    "rootWord": "ADVERTISE",
+    "correct": "advertisement",
+    "explanation": "ADVERTISE → advertisement (add -ment to make a noun)"
+  },
+  {
+    "sentence": "We need to find a _____ to this problem quickly.",
+    "rootWord": "EXPLAIN",
+    "correct": "explanation",
+    "explanation": "EXPLAIN → explanation (change -ain to -anation to make a noun)"
+  }
+]

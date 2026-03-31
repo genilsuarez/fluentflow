@@ -1,0 +1,152 @@
+[
+  {
+    "sentence": "The _____ of the old system caused many problems.",
+    "rootWord": "REGULAR",
+    "correct": "irregularity",
+    "explanation": "REGULAR → irregularity (ir- + regular + -ity = lack of regularity)"
+  },
+  {
+    "sentence": "His _____ to accept criticism was his biggest weakness.",
+    "rootWord": "WILLING",
+    "correct": "unwillingness",
+    "explanation": "WILLING → unwillingness (un- + willing + -ness = not being willing)"
+  },
+  {
+    "sentence": "The _____ of the handwriting made the document hard to read.",
+    "rootWord": "LEGIBLE",
+    "correct": "illegibility",
+    "explanation": "LEGIBLE → illegibility (il- + legibil + -ity = quality of being unreadable)"
+  },
+  {
+    "sentence": "Her _____ behaviour at the meeting shocked everyone.",
+    "rootWord": "PROFESSION",
+    "correct": "unprofessional",
+    "explanation": "PROFESSION → unprofessional (un- + profession + -al = not professional)"
+  },
+  {
+    "sentence": "The _____ of the evidence made the case difficult to prove.",
+    "rootWord": "SUFFICIENT",
+    "correct": "insufficiency",
+    "explanation": "SUFFICIENT → insufficiency (in- + sufficienc + -y = lack of sufficiency)"
+  },
+  {
+    "sentence": "The politician's _____ was exposed by the media.",
+    "rootWord": "SINCERE",
+    "correct": "insincerity",
+    "explanation": "SINCERE → insincerity (in- + sincer + -ity = lack of sincerity)"
+  },
+  {
+    "sentence": "The _____ of the new law was debated in parliament.",
+    "rootWord": "PRACTICE",
+    "correct": "impracticality",
+    "explanation": "PRACTICE → impracticality (im- + practical + -ity = quality of being impractical)"
+  },
+  {
+    "sentence": "His _____ to follow the rules resulted in his dismissal.",
+    "rootWord": "RESPONSIBLE",
+    "correct": "irresponsibility",
+    "explanation": "RESPONSIBLE → irresponsibility (ir- + responsibil + -ity = lack of responsibility)"
+  },
+  {
+    "sentence": "The _____ of the old bridge was a major safety concern.",
+    "rootWord": "STABLE",
+    "correct": "instability",
+    "explanation": "STABLE → instability (in- + stabil + -ity = lack of stability)"
+  },
+  {
+    "sentence": "She showed remarkable _____ in the face of adversity.",
+    "rootWord": "SELF",
+    "correct": "selflessness",
+    "explanation": "SELF → selflessness (self + -less + -ness = quality of being selfless)"
+  },
+  {
+    "sentence": "The _____ of the data led to incorrect conclusions.",
+    "rootWord": "RELIABLE",
+    "correct": "unreliability",
+    "explanation": "RELIABLE → unreliability (un- + reliabil + -ity = lack of reliability)"
+  },
+  {
+    "sentence": "His _____ to the new environment was surprisingly quick.",
+    "rootWord": "ADAPT",
+    "correct": "adaptability",
+    "explanation": "ADAPT → adaptability (adapt + -abil + -ity = quality of being adaptable)"
+  },
+  {
+    "sentence": "The _____ of the situation was not immediately apparent.",
+    "rootWord": "REVERSE",
+    "correct": "irreversibility",
+    "explanation": "REVERSE → irreversibility (ir- + reversibil + -ity = quality of being irreversible)"
+  },
+  {
+    "sentence": "Her _____ towards her colleagues was unacceptable.",
+    "rootWord": "CONSIDER",
+    "correct": "inconsiderateness",
+    "explanation": "CONSIDER → inconsiderateness (in- + considerate + -ness = quality of being inconsiderate)"
+  },
+  {
+    "sentence": "The _____ of the two accounts raised suspicions.",
+    "rootWord": "CONSISTENT",
+    "correct": "inconsistency",
+    "explanation": "CONSISTENT → inconsistency (in- + consistenc + -y = lack of consistency)"
+  },
+  {
+    "sentence": "The _____ of the old machinery was a constant problem.",
+    "rootWord": "PREDICT",
+    "correct": "unpredictability",
+    "explanation": "PREDICT → unpredictability (un- + predictabil + -ity = quality of being unpredictable)"
+  },
+  {
+    "sentence": "His _____ to complete the task on time was disappointing.",
+    "rootWord": "ABLE",
+    "correct": "inability",
+    "explanation": "ABLE → inability (in- + abil + -ity = lack of ability)"
+  },
+  {
+    "sentence": "The _____ of the new policy was questioned by experts.",
+    "rootWord": "ENFORCE",
+    "correct": "unenforceability",
+    "explanation": "ENFORCE → unenforceability (un- + enforceabil + -ity = quality of being unenforceable)"
+  },
+  {
+    "sentence": "She demonstrated great _____ in managing the crisis.",
+    "rootWord": "RESOURCE",
+    "correct": "resourcefulness",
+    "explanation": "RESOURCE → resourcefulness (resource + -ful + -ness = quality of being resourceful)"
+  },
+  {
+    "sentence": "The _____ of the old system was finally acknowledged.",
+    "rootWord": "ADEQUATE",
+    "correct": "inadequacy",
+    "explanation": "ADEQUATE → inadequacy (in- + adequac + -y = state of being inadequate)"
+  },
+  {
+    "sentence": "His _____ to the team's success was widely recognised.",
+    "rootWord": "DISPENSE",
+    "correct": "indispensability",
+    "explanation": "DISPENSE → indispensability (in- + dispensabil + -ity = quality of being indispensable)"
+  },
+  {
+    "sentence": "The _____ of the evidence was challenged in court.",
+    "rootWord": "ADMISSIBLE",
+    "correct": "inadmissibility",
+    "explanation": "ADMISSIBLE → inadmissibility (in- + admissibil + -ity = quality of being inadmissible)"
+  },
+  {
+    "sentence": "Her _____ in dealing with clients was commendable.",
+    "rootWord": "TIRE",
+    "correct": "tirelessness",
+    "explanation": "TIRE → tirelessness (tire + -less + -ness = quality of being tireless)"
+  },
+  {
+    "sentence": "The _____ of the old regulations was long overdue.",
+    "rootWord": "MODERN",
+    "correct": "modernisation",
+    "explanation": "MODERN → modernisation (modern + -isation = the process of making modern)"
+  },
+  {
+    "sentence": "The _____ of the results across different studies was encouraging.",
+    "rootWord": "REPRODUCE",
+    "correct": "reproducibility",
+    "explanation": "REPRODUCE → reproducibility (reproduce + -ibil + -ity = quality of being reproducible)"
+  }
+]

@@ -61,5 +61,96 @@
     "source": "I understand your concern.",
     "correct": ["I do understand your concern."],
     "explanation": "Emphatic <do/does/did> + base verb adds emphasis to an affirmative statement."
+  },
+  {
+    "prompt": "Rewrite using a participle clause",
+    "source": "Because he had been warned, he was careful.",
+    "correct": ["Having been warned, he was careful."],
+    "explanation": "Perfect participle clause: <Having been> + past participle replaces <Because> + subject + past perfect passive."
+  },
+  {
+    "prompt": "Change to subjunctive with <It is vital that>",
+    "source": "She must submit the report on time.",
+    "correct": ["It is vital that she submit the report on time."],
+    "explanation": "Formal subjunctive: <It is vital that> + subject + base verb (no <-s>, no modal)."
+  },
+  {
+    "prompt": "Rewrite using ellipsis",
+    "source": "She can speak French and he can speak French too.",
+    "correct": ["She can speak French and so can he.", "She can speak French and he can too."],
+    "hint": "Avoid repeating <speak French>",
+    "explanation": "Ellipsis avoids repetition: <so can he> or <he can too> replaces the repeated verb phrase."
+  },
+  {
+    "prompt": "Rewrite using fronting for emphasis",
+    "source": "I have never seen such a beautiful sunset.",
+    "correct": ["Never have I seen such a beautiful sunset."],
+    "explanation": "Fronting a negative adverb triggers inversion: <Never> + auxiliary + subject."
+  },
+  {
+    "prompt": "Rewrite using a reduced relative clause (past participle)",
+    "source": "The documents that were signed by the director are on the desk.",
+    "correct": ["The documents signed by the director are on the desk."],
+    "explanation": "Reduced relative clause: remove <that were> and keep the past participle."
+  },
+  {
+    "prompt": "Change to subjunctive with <I suggest that>",
+    "source": "He should apologize immediately.",
+    "correct": ["I suggest that he apologize immediately."],
+    "explanation": "Subjunctive after <suggest>: subject + base verb (no <-s>)."
+  },
+  {
+    "prompt": "Rewrite using inversion with <Little>",
+    "source": "She didn't know that the letter would change her life.",
+    "correct": ["Little did she know that the letter would change her life."],
+    "explanation": "<Little> + inverted auxiliary + subject for dramatic emphasis."
+  },
+  {
+    "prompt": "Rewrite using a participle clause (present)",
+    "source": "Since she lives near the office, she walks to work.",
+    "correct": ["Living near the office, she walks to work."],
+    "explanation": "Present participle clause: <Living> replaces <Since she lives> for conciseness."
+  },
+  {
+    "prompt": "Rewrite using ellipsis with <neither>",
+    "source": "He doesn't like horror movies and she doesn't like horror movies either.",
+    "correct": ["He doesn't like horror movies and neither does she."],
+    "explanation": "Ellipsis with <neither>: <neither> + auxiliary + subject replaces the repeated negative clause."
+  },
+  {
+    "prompt": "Rewrite using fronting with <Only when>",
+    "source": "You will understand the problem only when you experience it yourself.",
+    "correct": ["Only when you experience it yourself will you understand the problem."],
+    "explanation": "<Only when> + clause + inverted auxiliary + subject for emphasis."
+  },
+  {
+    "prompt": "Change to passive with <is thought to>",
+    "source": "Experts think that the painting is a forgery.",
+    "correct": ["The painting is thought to be a forgery.", "It is thought that the painting is a forgery."],
+    "explanation": "Impersonal passive: subject + <is thought to> + infinitive."
+  },
+  {
+    "prompt": "Rewrite using a nominal clause with <The fact that>",
+    "source": "He lied. This disappointed everyone.",
+    "correct": ["The fact that he lied disappointed everyone."],
+    "explanation": "<The fact that> + clause creates a nominal clause functioning as subject."
+  },
+  {
+    "prompt": "Rewrite using inversion with <In no way>",
+    "source": "This decision does not reflect our values.",
+    "correct": ["In no way does this decision reflect our values."],
+    "explanation": "<In no way> + inverted auxiliary + subject for emphatic denial."
+  },
+  {
+    "prompt": "Rewrite using a concessive participle clause",
+    "source": "Although he was exhausted, he continued working.",
+    "correct": ["Despite being exhausted, he continued working.", "Exhausted though he was, he continued working."],
+    "explanation": "Concessive participle: <Despite being> + adjective, or adjective + <though> + subject + <was>."
+  },
+  {
+    "prompt": "Change to subjunctive with <It is imperative that>",
+    "source": "All employees must wear safety equipment.",
+    "correct": ["It is imperative that all employees wear safety equipment."],
+    "explanation": "Formal subjunctive: <It is imperative that> + subject + base verb."
   }
 ]

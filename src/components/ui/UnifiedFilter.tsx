@@ -13,6 +13,8 @@ import {
   BookOpen,
   ListOrdered,
   RefreshCw,
+  Puzzle,
+  AlertTriangle,
 } from 'lucide-react';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useTranslation } from '../../utils/i18n';
@@ -56,6 +58,8 @@ const ALL_MODES: LearningMode[] = [
   'reading',
   'reordering',
   'transformation',
+  'word-formation',
+  'error-correction',
 ];
 const MODE_ICONS: Record<LearningMode, React.ReactElement> = {
   flashcard: <CreditCard size={13} strokeWidth={2} />,
@@ -66,6 +70,8 @@ const MODE_ICONS: Record<LearningMode, React.ReactElement> = {
   reading: <BookOpen size={13} strokeWidth={2} />,
   reordering: <ListOrdered size={13} strokeWidth={2} />,
   transformation: <RefreshCw size={13} strokeWidth={2} />,
+  'word-formation': <Puzzle size={13} strokeWidth={2} />,
+  'error-correction': <AlertTriangle size={13} strokeWidth={2} />,
 };
 const MODE_I18N_KEYS: Record<LearningMode, string> = {
   flashcard: 'learning.flashcardMode',
@@ -76,6 +82,8 @@ const MODE_I18N_KEYS: Record<LearningMode, string> = {
   reading: 'learning.readingMode',
   reordering: 'learning.reorderingMode',
   transformation: 'learning.transformationMode',
+  'word-formation': 'learning.wordFormationMode',
+  'error-correction': 'learning.errorCorrectionMode',
 };
 
 const ALL_LEVELS: Level[] = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'];

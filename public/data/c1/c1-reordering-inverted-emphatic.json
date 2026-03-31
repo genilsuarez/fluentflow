@@ -1,0 +1,86 @@
+[
+  {
+    "id": "reord-c1-ie-001",
+    "sentence": "Never before had the city experienced such a devastating flood",
+    "words": ["Never", "before", "had", "the", "city", "experienced", "such", "a", "devastating", "flood"],
+    "hint": "Negative adverb + had + subject + past participle",
+    "explanation": "Inversion after <Never before>: auxiliary <had> comes before the subject."
+  },
+  {
+    "id": "reord-c1-ie-002",
+    "sentence": "Not only did she win the award but she also broke the record",
+    "words": ["Not", "only", "did", "she", "win", "the", "award", "but", "she", "also", "broke", "the", "record"],
+    "hint": "Not only + auxiliary + subject, but also + clause",
+    "explanation": "<Not only ... but also> with inversion in the first clause."
+  },
+  {
+    "id": "reord-c1-ie-003",
+    "sentence": "Rarely does one encounter such generosity in modern society",
+    "words": ["Rarely", "does", "one", "encounter", "such", "generosity", "in", "modern", "society"],
+    "hint": "Rarely + auxiliary + subject + verb",
+    "explanation": "Inversion after <Rarely>: <does> comes before the subject <one>."
+  },
+  {
+    "id": "reord-c1-ie-004",
+    "sentence": "So profound was the impact that the entire industry was transformed",
+    "words": ["So", "profound", "was", "the", "impact", "that", "the", "entire", "industry", "was", "transformed"],
+    "hint": "So + adjective + was + subject + that clause",
+    "explanation": "Inversion with <So ... that>: <So profound was the impact>."
+  },
+  {
+    "id": "reord-c1-ie-005",
+    "sentence": "Under no circumstances should confidential information be shared externally",
+    "words": ["Under", "no", "circumstances", "should", "confidential", "information", "be", "shared", "externally"],
+    "hint": "Under no circumstances + modal + subject + verb",
+    "explanation": "Inversion after <Under no circumstances>: <should> before subject."
+  },
+  {
+    "id": "reord-c1-ie-006",
+    "sentence": "Only after extensive research did the team discover the root cause",
+    "words": ["Only", "after", "extensive", "research", "did", "the", "team", "discover", "the", "root", "cause"],
+    "hint": "Only after + noun + auxiliary + subject + verb",
+    "explanation": "Inversion after <Only after>: <did> comes before the subject."
+  },
+  {
+    "id": "reord-c1-ie-007",
+    "sentence": "Little did they realise the consequences of their decision",
+    "words": ["Little", "did", "they", "realise", "the", "consequences", "of", "their", "decision"],
+    "hint": "Little + auxiliary + subject + verb",
+    "explanation": "Inversion after <Little>: <did> comes before the subject."
+  },
+  {
+    "id": "reord-c1-ie-008",
+    "sentence": "Such was the demand that the company had to increase production",
+    "words": ["Such", "was", "the", "demand", "that", "the", "company", "had", "to", "increase", "production"],
+    "hint": "Such + was + subject + that clause",
+    "explanation": "Inversion with <Such ... that>: <Such was the demand>."
+  },
+  {
+    "id": "reord-c1-ie-009",
+    "sentence": "No sooner had the announcement been made than protests erupted",
+    "words": ["No", "sooner", "had", "the", "announcement", "been", "made", "than", "protests", "erupted"],
+    "hint": "No sooner + had + subject + past participle + than",
+    "explanation": "<No sooner ... than> with inversion: <had the announcement been made>."
+  },
+  {
+    "id": "reord-c1-ie-010",
+    "sentence": "At no point during the investigation was any evidence of fraud found",
+    "words": ["At", "no", "point", "during", "the", "investigation", "was", "any", "evidence", "of", "fraud", "found"],
+    "hint": "At no point + was + subject + past participle",
+    "explanation": "Inversion after <At no point>: <was> comes before the subject."
+  },
+  {
+    "id": "reord-c1-ie-011",
+    "sentence": "Scarcely had we begun the meeting when the fire alarm went off",
+    "words": ["Scarcely", "had", "we", "begun", "the", "meeting", "when", "the", "fire", "alarm", "went", "off"],
+    "hint": "Scarcely + had + subject + past participle + when",
+    "explanation": "<Scarcely ... when> with inversion: <Scarcely had we begun>."
+  },
+  {
+    "id": "reord-c1-ie-012",
+    "sentence": "Only by working together can we overcome these challenges",
+    "words": ["Only", "by", "working", "together", "can", "we", "overcome", "these", "challenges"],
+    "hint": "Only by + gerund + modal + subject + verb",
+    "explanation": "Inversion after <Only by>: <can> comes before the subject."
+  }
+]

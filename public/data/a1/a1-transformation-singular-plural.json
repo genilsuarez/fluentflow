@@ -1,0 +1,152 @@
+[
+  {
+    "prompt": "Change to plural",
+    "source": "The child is playing.",
+    "correct": ["The children are playing."],
+    "explanation": "<Child> has an irregular plural: <children>. The verb changes from <is> to <are>."
+  },
+  {
+    "prompt": "Change to plural",
+    "source": "The man is tall.",
+    "correct": ["The men are tall."],
+    "explanation": "<Man> has an irregular plural: <men>. The verb changes from <is> to <are>."
+  },
+  {
+    "prompt": "Change to plural",
+    "source": "The woman is a doctor.",
+    "correct": ["The women are doctors."],
+    "explanation": "<Woman> has an irregular plural: <women>. The noun <doctor> also becomes <doctors>."
+  },
+  {
+    "prompt": "Change to plural",
+    "source": "The box is heavy.",
+    "correct": ["The boxes are heavy."],
+    "explanation": "Nouns ending in <-x> add <-es> to form the plural: <boxes>."
+  },
+  {
+    "prompt": "Change to plural",
+    "source": "The bus is late.",
+    "correct": ["The buses are late."],
+    "explanation": "Nouns ending in <-s> add <-es> to form the plural: <buses>."
+  },
+  {
+    "prompt": "Change to singular",
+    "source": "The dogs are hungry.",
+    "correct": ["The dog is hungry."],
+    "explanation": "Remove the <-s> from <dogs> and change <are> to <is>."
+  },
+  {
+    "prompt": "Change to singular",
+    "source": "The babies are sleeping.",
+    "correct": ["The baby is sleeping."],
+    "explanation": "Nouns ending in <-ies> change back to <-y> in singular: <baby>."
+  },
+  {
+    "prompt": "Change to plural",
+    "source": "The city is beautiful.",
+    "correct": ["The cities are beautiful."],
+    "explanation": "Nouns ending in consonant + <y> change <y> to <ies>: <cities>."
+  },
+  {
+    "prompt": "Change to plural",
+    "source": "The knife is sharp.",
+    "correct": ["The knives are sharp."],
+    "explanation": "Nouns ending in <-fe> change to <-ves>: <knives>."
+  },
+  {
+    "prompt": "Change to plural",
+    "source": "The leaf is green.",
+    "correct": ["The leaves are green."],
+    "explanation": "Nouns ending in <-f> change to <-ves>: <leaves>."
+  },
+  {
+    "prompt": "Change to singular",
+    "source": "The mice are small.",
+    "correct": ["The mouse is small."],
+    "explanation": "<Mice> is the irregular plural of <mouse>."
+  },
+  {
+    "prompt": "Change to plural",
+    "source": "The tooth hurts.",
+    "correct": ["The teeth hurt."],
+    "explanation": "<Tooth> has an irregular plural: <teeth>. The verb <hurt> stays the same."
+  },
+  {
+    "prompt": "Change to plural",
+    "source": "The foot is big.",
+    "correct": ["The feet are big."],
+    "explanation": "<Foot> has an irregular plural: <feet>."
+  },
+  {
+    "prompt": "Change to plural",
+    "source": "The fish is in the water.",
+    "correct": ["The fish are in the water."],
+    "explanation": "<Fish> has the same form in singular and plural. Only the verb changes."
+  },
+  {
+    "prompt": "Change to plural",
+    "source": "The sheep is white.",
+    "correct": ["The sheep are white."],
+    "explanation": "<Sheep> has the same form in singular and plural. Only the verb changes."
+  },
+  {
+    "prompt": "Change to singular",
+    "source": "The people are happy.",
+    "correct": ["The person is happy."],
+    "explanation": "<People> is the irregular plural of <person>."
+  },
+  {
+    "prompt": "Change to plural",
+    "source": "The tomato is red.",
+    "correct": ["The tomatoes are red."],
+    "explanation": "Some nouns ending in <-o> add <-es>: <tomatoes>."
+  },
+  {
+    "prompt": "Change to plural",
+    "source": "The potato is on the table.",
+    "correct": ["The potatoes are on the table."],
+    "explanation": "Some nouns ending in <-o> add <-es>: <potatoes>."
+  },
+  {
+    "prompt": "Change to plural",
+    "source": "The photo is nice.",
+    "correct": ["The photos are nice."],
+    "explanation": "Some nouns ending in <-o> just add <-s>: <photos>."
+  },
+  {
+    "prompt": "Change to plural",
+    "source": "The watch is expensive.",
+    "correct": ["The watches are expensive."],
+    "explanation": "Nouns ending in <-ch> add <-es>: <watches>."
+  },
+  {
+    "prompt": "Change to plural",
+    "source": "The dish is clean.",
+    "correct": ["The dishes are clean."],
+    "explanation": "Nouns ending in <-sh> add <-es>: <dishes>."
+  },
+  {
+    "prompt": "Change to singular",
+    "source": "The geese are in the park.",
+    "correct": ["The goose is in the park."],
+    "explanation": "<Geese> is the irregular plural of <goose>."
+  },
+  {
+    "prompt": "Change to plural",
+    "source": "The class is full.",
+    "correct": ["The classes are full."],
+    "explanation": "Nouns ending in <-ss> add <-es>: <classes>."
+  },
+  {
+    "prompt": "Change to plural",
+    "source": "The story is interesting.",
+    "correct": ["The stories are interesting."],
+    "explanation": "Nouns ending in consonant + <y> change <y> to <ies>: <stories>."
+  },
+  {
+    "prompt": "Change to singular",
+    "source": "The wolves are dangerous.",
+    "correct": ["The wolf is dangerous."],
+    "explanation": "<Wolves> changes back to <wolf> in singular. Nouns ending in <-ves> become <-f>."
+  }
+]

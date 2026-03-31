@@ -1,0 +1,152 @@
+[
+  {
+    "prompt": "Change to past simple",
+    "source": "She picks up the phone.",
+    "correct": ["She picked up the phone."],
+    "explanation": "Past simple of <pick up>: <picked up>."
+  },
+  {
+    "prompt": "Change to past simple",
+    "source": "He turns on the light.",
+    "correct": ["He turned on the light."],
+    "explanation": "Past simple of <turn on>: <turned on>."
+  },
+  {
+    "prompt": "Change to present continuous",
+    "source": "They look for their keys.",
+    "correct": ["They are looking for their keys."],
+    "explanation": "Present continuous of <look for>: <are looking for>."
+  },
+  {
+    "prompt": "Change to past simple",
+    "source": "I give up the game.",
+    "correct": ["I gave up the game."],
+    "explanation": "Past simple of <give up>: <gave up> (irregular verb)."
+  },
+  {
+    "prompt": "Change to present continuous",
+    "source": "She puts on her coat.",
+    "correct": ["She is putting on her coat."],
+    "explanation": "Present continuous of <put on>: <is putting on> (double the 't')."
+  },
+  {
+    "prompt": "Change to past simple",
+    "source": "We take off our shoes.",
+    "correct": ["We took off our shoes."],
+    "explanation": "Past simple of <take off>: <took off> (irregular verb)."
+  },
+  {
+    "prompt": "Change to future with 'will'",
+    "source": "He looks after the children.",
+    "correct": ["He will look after the children."],
+    "explanation": "Future of <look after>: <will look after>."
+  },
+  {
+    "prompt": "Change to past simple",
+    "source": "She wakes up early.",
+    "correct": ["She woke up early."],
+    "explanation": "Past simple of <wake up>: <woke up> (irregular verb)."
+  },
+  {
+    "prompt": "Change to present continuous",
+    "source": "He fills in the form.",
+    "correct": ["He is filling in the form."],
+    "explanation": "Present continuous of <fill in>: <is filling in>."
+  },
+  {
+    "prompt": "Change to past simple",
+    "source": "They find out the truth.",
+    "correct": ["They found out the truth."],
+    "explanation": "Past simple of <find out>: <found out> (irregular verb)."
+  },
+  {
+    "prompt": "Change to future with 'going to'",
+    "source": "I throw away the old newspapers.",
+    "correct": ["I am going to throw away the old newspapers."],
+    "explanation": "Future with <going to>: <am going to throw away>."
+  },
+  {
+    "prompt": "Change to past simple",
+    "source": "She comes back home late.",
+    "correct": ["She came back home late."],
+    "explanation": "Past simple of <come back>: <came back> (irregular verb)."
+  },
+  {
+    "prompt": "Change to present continuous",
+    "source": "They carry on with the project.",
+    "correct": ["They are carrying on with the project."],
+    "explanation": "Present continuous of <carry on>: <are carrying on>."
+  },
+  {
+    "prompt": "Change to past simple",
+    "source": "He breaks down the door.",
+    "correct": ["He broke down the door."],
+    "explanation": "Past simple of <break down>: <broke down> (irregular verb)."
+  },
+  {
+    "prompt": "Change to negative past simple",
+    "source": "She turned off the TV.",
+    "correct": ["She didn't turn off the TV.", "She did not turn off the TV."],
+    "explanation": "Negative past: <didn't> + base form of the phrasal verb."
+  },
+  {
+    "prompt": "Change to a question in past simple",
+    "source": "He picked up the children.",
+    "correct": ["Did he pick up the children?"],
+    "explanation": "Question in past: <Did> + subject + base form of phrasal verb?"
+  },
+  {
+    "prompt": "Change to past simple",
+    "source": "I run into my old friend.",
+    "correct": ["I ran into my old friend."],
+    "explanation": "Past simple of <run into>: <ran into> (irregular verb)."
+  },
+  {
+    "prompt": "Change to present continuous",
+    "source": "She cleans up the kitchen.",
+    "correct": ["She is cleaning up the kitchen."],
+    "explanation": "Present continuous of <clean up>: <is cleaning up>."
+  },
+  {
+    "prompt": "Change to past simple",
+    "source": "They set up the tent.",
+    "correct": ["They set up the tent."],
+    "explanation": "<Set> is the same in present and past: <set up> → <set up>."
+  },
+  {
+    "prompt": "Change to future with 'will'",
+    "source": "She gives back the book.",
+    "correct": ["She will give back the book."],
+    "explanation": "Future of <give back>: <will give back>."
+  },
+  {
+    "prompt": "Change to past simple",
+    "source": "He gets on the bus.",
+    "correct": ["He got on the bus."],
+    "explanation": "Past simple of <get on>: <got on> (irregular verb)."
+  },
+  {
+    "prompt": "Change to present continuous",
+    "source": "I look up the word in the dictionary.",
+    "correct": ["I am looking up the word in the dictionary."],
+    "explanation": "Present continuous of <look up>: <am looking up>."
+  },
+  {
+    "prompt": "Change to past simple",
+    "source": "She goes out with her friends.",
+    "correct": ["She went out with her friends."],
+    "explanation": "Past simple of <go out>: <went out> (irregular verb)."
+  },
+  {
+    "prompt": "Change to past simple",
+    "source": "We sit down at the table.",
+    "correct": ["We sat down at the table."],
+    "explanation": "Past simple of <sit down>: <sat down> (irregular verb)."
+  },
+  {
+    "prompt": "Change to future with 'will'",
+    "source": "They sort out the problem.",
+    "correct": ["They will sort out the problem."],
+    "explanation": "Future of <sort out>: <will sort out>."
+  }
+]

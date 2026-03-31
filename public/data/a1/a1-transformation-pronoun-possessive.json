@@ -1,0 +1,155 @@
+[
+  {
+    "prompt": "Change the subject pronoun to a possessive adjective",
+    "source": "I have a book.",
+    "correct": ["My book.", "It is my book."],
+    "explanation": "The subject pronoun <I> becomes the possessive adjective <my>."
+  },
+  {
+    "prompt": "Change the subject pronoun to a possessive adjective",
+    "source": "She has a cat.",
+    "correct": ["Her cat.", "It is her cat."],
+    "explanation": "The subject pronoun <she> becomes the possessive adjective <her>."
+  },
+  {
+    "prompt": "Change the subject pronoun to a possessive adjective",
+    "source": "He has a car.",
+    "correct": ["His car.", "It is his car."],
+    "explanation": "The subject pronoun <he> becomes the possessive adjective <his>."
+  },
+  {
+    "prompt": "Change the subject pronoun to a possessive adjective",
+    "source": "They have a house.",
+    "correct": ["Their house.", "It is their house."],
+    "explanation": "The subject pronoun <they> becomes the possessive adjective <their>."
+  },
+  {
+    "prompt": "Change the subject pronoun to a possessive adjective",
+    "source": "We have a dog.",
+    "correct": ["Our dog.", "It is our dog."],
+    "explanation": "The subject pronoun <we> becomes the possessive adjective <our>."
+  },
+  {
+    "prompt": "Replace the noun with a possessive pronoun",
+    "source": "This is my book.",
+    "correct": ["This book is mine.", "This is mine."],
+    "explanation": "The possessive adjective <my> becomes the possessive pronoun <mine>."
+  },
+  {
+    "prompt": "Replace the noun with a possessive pronoun",
+    "source": "That is her pen.",
+    "correct": ["That pen is hers.", "That is hers."],
+    "explanation": "The possessive adjective <her> becomes the possessive pronoun <hers>."
+  },
+  {
+    "prompt": "Replace the noun with a possessive pronoun",
+    "source": "This is his phone.",
+    "correct": ["This phone is his.", "This is his."],
+    "explanation": "The possessive adjective <his> stays <his> as a possessive pronoun."
+  },
+  {
+    "prompt": "Replace the noun with a possessive pronoun",
+    "source": "That is their car.",
+    "correct": ["That car is theirs.", "That is theirs."],
+    "explanation": "The possessive adjective <their> becomes the possessive pronoun <theirs>."
+  },
+  {
+    "prompt": "Replace the noun with a possessive pronoun",
+    "source": "This is our house.",
+    "correct": ["This house is ours.", "This is ours."],
+    "explanation": "The possessive adjective <our> becomes the possessive pronoun <ours>."
+  },
+  {
+    "prompt": "Change the object pronoun to a subject pronoun",
+    "source": "Give it to me.",
+    "correct": ["I want it."],
+    "explanation": "The object pronoun <me> corresponds to the subject pronoun <I>."
+  },
+  {
+    "prompt": "Change the object pronoun to a subject pronoun",
+    "source": "Tell him the answer.",
+    "correct": ["He knows the answer."],
+    "explanation": "The object pronoun <him> corresponds to the subject pronoun <he>."
+  },
+  {
+    "prompt": "Change the object pronoun to a subject pronoun",
+    "source": "Help her with the homework.",
+    "correct": ["She needs help with the homework."],
+    "explanation": "The object pronoun <her> corresponds to the subject pronoun <she>."
+  },
+  {
+    "prompt": "Change to use a possessive adjective",
+    "source": "The bag belongs to you.",
+    "correct": ["It is your bag.", "This is your bag."],
+    "explanation": "When something belongs to <you>, we use the possessive adjective <your>."
+  },
+  {
+    "prompt": "Change to use a possessive adjective",
+    "source": "The toys belong to them.",
+    "correct": ["They are their toys.", "These are their toys."],
+    "explanation": "When something belongs to <them>, we use the possessive adjective <their>."
+  },
+  {
+    "prompt": "Change the subject pronoun to an object pronoun",
+    "source": "I like the teacher. The teacher helps I.",
+    "correct": ["I like the teacher. The teacher helps me."],
+    "explanation": "After a verb, use the object pronoun <me> instead of <I>."
+  },
+  {
+    "prompt": "Change the subject pronoun to an object pronoun",
+    "source": "She is nice. I talk to she every day.",
+    "correct": ["She is nice. I talk to her every day."],
+    "explanation": "After a preposition, use the object pronoun <her> instead of <she>."
+  },
+  {
+    "prompt": "Rewrite using a possessive 's",
+    "source": "The car of my father is blue.",
+    "correct": ["My father's car is blue."],
+    "explanation": "In English, we use <'s> to show possession: <my father's car>."
+  },
+  {
+    "prompt": "Rewrite using a possessive 's",
+    "source": "The name of the dog is Max.",
+    "correct": ["The dog's name is Max."],
+    "explanation": "Use <'s> after the noun to show possession: <the dog's name>."
+  },
+  {
+    "prompt": "Rewrite using a possessive 's",
+    "source": "The room of my sister is big.",
+    "correct": ["My sister's room is big."],
+    "explanation": "Use <'s> to show possession: <my sister's room>."
+  },
+  {
+    "prompt": "Change the pronoun to match the new subject",
+    "source": "I wash my hands.",
+    "correct": ["She washes her hands."],
+    "hint": "Change <I> to <She>",
+    "explanation": "When the subject changes to <she>, the possessive changes to <her> and the verb adds <-es>."
+  },
+  {
+    "prompt": "Change the pronoun to match the new subject",
+    "source": "He brushes his teeth.",
+    "correct": ["They brush their teeth."],
+    "hint": "Change <He> to <They>",
+    "explanation": "When the subject changes to <they>, the possessive changes to <their> and the verb loses the <-es>."
+  },
+  {
+    "prompt": "Change the pronoun to match the new subject",
+    "source": "We love our parents.",
+    "correct": ["I love my parents."],
+    "hint": "Change <We> to <I>",
+    "explanation": "When the subject changes to <I>, the possessive changes to <my>."
+  },
+  {
+    "prompt": "Rewrite using a possessive pronoun",
+    "source": "This pen is your pen.",
+    "correct": ["This pen is yours."],
+    "explanation": "Replace <your pen> with the possessive pronoun <yours>."
+  },
+  {
+    "prompt": "Rewrite using a possessive pronoun",
+    "source": "That house is our house.",
+    "correct": ["That house is ours."],
+    "explanation": "Replace <our house> with the possessive pronoun <ours>."
+  }
+]

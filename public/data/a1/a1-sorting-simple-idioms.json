@@ -1,0 +1,20 @@
+[
+  {"word": "break a leg", "category": "Good Luck"},
+  {"word": "fingers crossed", "category": "Good Luck"},
+  {"word": "knock on wood", "category": "Good Luck"},
+  {"word": "best of luck", "category": "Good Luck"},
+  {"word": "hit the sack", "category": "Sleep & Rest"},
+  {"word": "call it a day", "category": "Sleep & Rest"},
+  {"word": "take a nap", "category": "Sleep & Rest"},
+  {"word": "sleep like a log", "category": "Sleep & Rest"},
+  {"word": "piece of cake", "category": "Easy"},
+  {"word": "easy as pie", "category": "Easy"},
+  {"word": "no sweat", "category": "Easy"},
+  {"word": "a walk in the park", "category": "Easy"},
+  {"word": "under the weather", "category": "Feeling Bad"},
+  {"word": "feeling blue", "category": "Feeling Bad"},
+  {"word": "down in the dumps", "category": "Feeling Bad"},
+  {"word": "on top of the world", "category": "Feeling Good"},
+  {"word": "over the moon", "category": "Feeling Good"},
+  {"word": "on cloud nine", "category": "Feeling Good"}
+]

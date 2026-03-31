@@ -1,0 +1,152 @@
+[
+  {
+    "prompt": "Rewrite as a cleft sentence starting with 'It was'",
+    "source": "John broke the window.",
+    "correct": ["It was John who broke the window.", "It was John that broke the window."],
+    "explanation": "Cleft sentence: <It was> + focus element + <who/that> + rest of sentence."
+  },
+  {
+    "prompt": "Rewrite as a cleft sentence starting with 'It is'",
+    "source": "The weather ruined our plans.",
+    "correct": ["It is the weather that ruined our plans."],
+    "explanation": "Cleft sentence: <It is> + focus element + <that> + rest of sentence."
+  },
+  {
+    "prompt": "Rewrite as a cleft sentence starting with 'What'",
+    "source": "I need a holiday.",
+    "correct": ["What I need is a holiday."],
+    "explanation": "Pseudo-cleft: <What> + subject + verb + <is> + focus element."
+  },
+  {
+    "prompt": "Rewrite as a cleft sentence starting with 'What'",
+    "source": "She wants to travel the world.",
+    "correct": ["What she wants is to travel the world."],
+    "explanation": "Pseudo-cleft: <What she wants is> + focus element."
+  },
+  {
+    "prompt": "Rewrite as a cleft sentence starting with 'It was'",
+    "source": "She lost her keys in the park.",
+    "correct": ["It was in the park that she lost her keys.", "It was in the park where she lost her keys."],
+    "explanation": "Cleft sentence focusing on place: <It was in the park that/where>."
+  },
+  {
+    "prompt": "Rewrite using 'What ... was' for emphasis",
+    "source": "He said something rude.",
+    "correct": ["What he said was something rude.", "What he said was rude."],
+    "explanation": "Pseudo-cleft: <What he said was> + focus element."
+  },
+  {
+    "prompt": "Rewrite as a cleft sentence starting with 'It was'",
+    "source": "They met at the conference in 2019.",
+    "correct": ["It was at the conference in 2019 that they met.", "It was in 2019 that they met at the conference."],
+    "explanation": "Cleft sentence focusing on time/place."
+  },
+  {
+    "prompt": "Rewrite using 'The reason ... is that' for emphasis",
+    "source": "She left because she was tired.",
+    "correct": ["The reason she left is that she was tired.", "The reason she left was that she was tired."],
+    "explanation": "Emphasis on reason: <The reason ... is/was that>."
+  },
+  {
+    "prompt": "Rewrite as a cleft sentence starting with 'It is'",
+    "source": "Hard work leads to success.",
+    "correct": ["It is hard work that leads to success."],
+    "explanation": "Cleft sentence: <It is hard work that> + rest of sentence."
+  },
+  {
+    "prompt": "Rewrite using 'What ... is' for emphasis",
+    "source": "We need more time to finish.",
+    "correct": ["What we need is more time to finish."],
+    "explanation": "Pseudo-cleft: <What we need is> + focus element."
+  },
+  {
+    "prompt": "Rewrite as a cleft sentence starting with 'It was'",
+    "source": "Maria won the competition.",
+    "correct": ["It was Maria who won the competition.", "It was Maria that won the competition."],
+    "explanation": "Cleft sentence focusing on the person: <It was Maria who/that>."
+  },
+  {
+    "prompt": "Rewrite using 'The thing that ... is' for emphasis",
+    "source": "His attitude annoys me the most.",
+    "correct": ["The thing that annoys me the most is his attitude."],
+    "explanation": "Emphasis structure: <The thing that ... is> + focus element."
+  },
+  {
+    "prompt": "Rewrite as a cleft sentence starting with 'It was'",
+    "source": "The noise kept me awake.",
+    "correct": ["It was the noise that kept me awake."],
+    "explanation": "Cleft sentence: <It was the noise that> + rest of sentence."
+  },
+  {
+    "prompt": "Rewrite using 'What ... did was' for emphasis",
+    "source": "She apologised to everyone.",
+    "correct": ["What she did was apologise to everyone."],
+    "explanation": "Pseudo-cleft with <did>: <What she did was> + base verb."
+  },
+  {
+    "prompt": "Rewrite as a cleft sentence starting with 'It was'",
+    "source": "He proposed to her on Valentine's Day.",
+    "correct": ["It was on Valentine's Day that he proposed to her."],
+    "explanation": "Cleft sentence focusing on time: <It was on Valentine's Day that>."
+  },
+  {
+    "prompt": "Rewrite using 'All ... is' for emphasis",
+    "source": "I want some peace and quiet.",
+    "correct": ["All I want is some peace and quiet."],
+    "explanation": "Emphasis with <All>: <All I want is> + focus element."
+  },
+  {
+    "prompt": "Rewrite as a cleft sentence starting with 'It is'",
+    "source": "Education changes lives.",
+    "correct": ["It is education that changes lives."],
+    "explanation": "Cleft sentence: <It is education that> + rest of sentence."
+  },
+  {
+    "prompt": "Rewrite using 'What ... was' for emphasis",
+    "source": "The lack of communication caused the problem.",
+    "correct": ["What caused the problem was the lack of communication."],
+    "explanation": "Pseudo-cleft: <What caused the problem was> + focus element."
+  },
+  {
+    "prompt": "Rewrite as a cleft sentence starting with 'It was'",
+    "source": "The teacher inspired her to become a writer.",
+    "correct": ["It was the teacher who inspired her to become a writer."],
+    "explanation": "Cleft sentence focusing on the person."
+  },
+  {
+    "prompt": "Rewrite using 'The place where ... is' for emphasis",
+    "source": "We first met at the library.",
+    "correct": ["The place where we first met is the library.", "The place where we first met was the library."],
+    "explanation": "Emphasis on place: <The place where ... is/was>."
+  },
+  {
+    "prompt": "Rewrite using 'What ... is' for emphasis",
+    "source": "I admire her determination.",
+    "correct": ["What I admire is her determination."],
+    "explanation": "Pseudo-cleft: <What I admire is> + focus element."
+  },
+  {
+    "prompt": "Rewrite as a cleft sentence starting with 'It was'",
+    "source": "The storm caused the power outage.",
+    "correct": ["It was the storm that caused the power outage."],
+    "explanation": "Cleft sentence: <It was the storm that> + rest of sentence."
+  },
+  {
+    "prompt": "Rewrite using 'All ... did was' for emphasis",
+    "source": "He just sat there and watched.",
+    "correct": ["All he did was sit there and watch."],
+    "explanation": "Emphasis with <All ... did was>: <All he did was> + base verb."
+  },
+  {
+    "prompt": "Rewrite as a cleft sentence starting with 'It is'",
+    "source": "Teamwork makes the difference.",
+    "correct": ["It is teamwork that makes the difference."],
+    "explanation": "Cleft sentence: <It is teamwork that> + rest of sentence."
+  },
+  {
+    "prompt": "Rewrite using 'What ... is' for emphasis",
+    "source": "She really enjoys cooking for her friends.",
+    "correct": ["What she really enjoys is cooking for her friends."],
+    "explanation": "Pseudo-cleft: <What she really enjoys is> + focus element."
+  }
+]

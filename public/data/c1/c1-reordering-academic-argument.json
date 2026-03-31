@@ -1,0 +1,86 @@
+[
+  {
+    "id": "reord-c1-aa-001",
+    "sentence": "Furthermore the evidence suggests that early intervention is more effective",
+    "words": ["Furthermore", "the", "evidence", "suggests", "that", "early", "intervention", "is", "more", "effective"],
+    "hint": "Discourse marker + subject + verb + that clause",
+    "explanation": "<Furthermore> adds supporting evidence to a previous point."
+  },
+  {
+    "id": "reord-c1-aa-002",
+    "sentence": "It could be argued that the benefits outweigh the potential risks",
+    "words": ["It", "could", "be", "argued", "that", "the", "benefits", "outweigh", "the", "potential", "risks"],
+    "hint": "It could be argued that + clause",
+    "explanation": "Academic hedging: <It could be argued that> introduces a debatable claim."
+  },
+  {
+    "id": "reord-c1-aa-003",
+    "sentence": "Notwithstanding these limitations the study provides valuable insights",
+    "words": ["Notwithstanding", "these", "limitations", "the", "study", "provides", "valuable", "insights"],
+    "hint": "Notwithstanding + noun phrase, main clause",
+    "explanation": "<Notwithstanding> means 'despite' and introduces a concession."
+  },
+  {
+    "id": "reord-c1-aa-004",
+    "sentence": "The findings are consistent with previous research in this field",
+    "words": ["The", "findings", "are", "consistent", "with", "previous", "research", "in", "this", "field"],
+    "hint": "Subject + are consistent with + noun phrase",
+    "explanation": "<Consistent with> is used to show agreement between findings."
+  },
+  {
+    "id": "reord-c1-aa-005",
+    "sentence": "In light of the evidence presented a revision of the current policy is warranted",
+    "words": ["In", "light", "of", "the", "evidence", "presented", "a", "revision", "of", "the", "current", "policy", "is", "warranted"],
+    "hint": "In light of + noun phrase, main clause",
+    "explanation": "<In light of> means 'considering' and introduces the basis for a conclusion."
+  },
+  {
+    "id": "reord-c1-aa-006",
+    "sentence": "Conversely some scholars maintain that the traditional approach remains valid",
+    "words": ["Conversely", "some", "scholars", "maintain", "that", "the", "traditional", "approach", "remains", "valid"],
+    "hint": "Conversely + subject + verb + that clause",
+    "explanation": "<Conversely> introduces an opposing viewpoint."
+  },
+  {
+    "id": "reord-c1-aa-007",
+    "sentence": "The data lends support to the hypothesis that climate change accelerates biodiversity loss",
+    "words": ["The", "data", "lends", "support", "to", "the", "hypothesis", "that", "climate", "change", "accelerates", "biodiversity", "loss"],
+    "hint": "Subject + lends support to + noun + that clause",
+    "explanation": "<Lends support to> is an academic way of saying 'supports'."
+  },
+  {
+    "id": "reord-c1-aa-008",
+    "sentence": "To conclude the research demonstrates a clear correlation between the two variables",
+    "words": ["To", "conclude", "the", "research", "demonstrates", "a", "clear", "correlation", "between", "the", "two", "variables"],
+    "hint": "To conclude + subject + verb + object",
+    "explanation": "<To conclude> signals the final summary of an argument."
+  },
+  {
+    "id": "reord-c1-aa-009",
+    "sentence": "While acknowledging the complexity of the issue this paper proposes a new framework",
+    "words": ["While", "acknowledging", "the", "complexity", "of", "the", "issue", "this", "paper", "proposes", "a", "new", "framework"],
+    "hint": "While + gerund + object, main clause",
+    "explanation": "<While acknowledging> introduces a concession before the main argument."
+  },
+  {
+    "id": "reord-c1-aa-010",
+    "sentence": "The implications of these findings extend beyond the scope of this study",
+    "words": ["The", "implications", "of", "these", "findings", "extend", "beyond", "the", "scope", "of", "this", "study"],
+    "hint": "Subject + verb + beyond + noun phrase",
+    "explanation": "<Extend beyond the scope> means the findings have wider relevance."
+  },
+  {
+    "id": "reord-c1-aa-011",
+    "sentence": "Nevertheless further research is needed to confirm these preliminary results",
+    "words": ["Nevertheless", "further", "research", "is", "needed", "to", "confirm", "these", "preliminary", "results"],
+    "hint": "Nevertheless + subject + is needed + infinitive",
+    "explanation": "<Nevertheless> introduces a contrasting point about limitations."
+  },
+  {
+    "id": "reord-c1-aa-012",
+    "sentence": "A critical examination of the literature reveals several methodological shortcomings",
+    "words": ["A", "critical", "examination", "of", "the", "literature", "reveals", "several", "methodological", "shortcomings"],
+    "hint": "Subject + of + noun + verb + object",
+    "explanation": "<A critical examination reveals> is a formal academic construction."
+  }
+]

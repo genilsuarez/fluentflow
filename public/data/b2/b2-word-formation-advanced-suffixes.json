@@ -1,0 +1,184 @@
+[
+  {
+    "sentence": "The company needs to take _____ action to solve the problem.",
+    "rootWord": "DECIDE",
+    "correct": "decisive",
+    "hint": "An adjective meaning showing the ability to decide",
+    "explanation": "DECIDE → decisive (suffix -ive: having the quality of deciding firmly)"
+  },
+  {
+    "sentence": "Her _____ speech inspired the whole audience.",
+    "rootWord": "IMPRESS",
+    "correct": "impressive",
+    "hint": "An adjective meaning making a strong impression",
+    "explanation": "IMPRESS → impressive (suffix -ive: having the quality of impressing)"
+  },
+  {
+    "sentence": "The new policy was very _____ in reducing costs.",
+    "rootWord": "EFFECT",
+    "correct": "effective",
+    "hint": "An adjective meaning producing the desired effect",
+    "explanation": "EFFECT → effective (suffix -ive: producing the intended result)"
+  },
+  {
+    "sentence": "Climbing that mountain can be extremely _____.",
+    "rootWord": "DANGER",
+    "correct": "dangerous",
+    "hint": "An adjective meaning full of danger",
+    "explanation": "DANGER → dangerous (suffix -ous: full of danger)"
+  },
+  {
+    "sentence": "The scientist made a _____ discovery last year.",
+    "rootWord": "MARVEL",
+    "correct": "marvellous",
+    "hint": "An adjective meaning causing wonder",
+    "explanation": "MARVEL → marvellous (suffix -ous: causing marvel or wonder)"
+  },
+  {
+    "sentence": "She is very _____ about protecting the environment.",
+    "rootWord": "PASSION",
+    "correct": "passionate",
+    "hint": "An adjective meaning having strong passion",
+    "explanation": "PASSION → passionate (suffix -ate: having or showing passion)"
+  },
+  {
+    "sentence": "The _____ of the new employees starts on Monday.",
+    "rootWord": "TRAIN",
+    "correct": "training",
+    "hint": "The noun form meaning the process of being trained",
+    "explanation": "TRAIN → training (suffix -ing: the process of training)"
+  },
+  {
+    "sentence": "There is a growing _____ between the two theories.",
+    "rootWord": "DIFFER",
+    "correct": "difference",
+    "hint": "The noun form of differ",
+    "explanation": "DIFFER → difference (suffix -ence: the state of being different)"
+  },
+  {
+    "sentence": "His _____ at the meeting was not expected.",
+    "rootWord": "ABSENT",
+    "correct": "absence",
+    "hint": "The noun form of absent",
+    "explanation": "ABSENT → absence (suffix -ence: the state of being absent)"
+  },
+  {
+    "sentence": "The government announced new _____ measures.",
+    "rootWord": "SECURE",
+    "correct": "security",
+    "hint": "The noun form of secure",
+    "explanation": "SECURE → security (suffix -ity: the state of being secure)"
+  },
+  {
+    "sentence": "She expressed her _____ with the new regulations.",
+    "rootWord": "AGREE",
+    "correct": "disagreement",
+    "hint": "The noun form meaning lack of agreement",
+    "explanation": "AGREE → disagreement (prefix dis- + suffix -ment: the state of not agreeing)"
+  },
+  {
+    "sentence": "The _____ of the evidence was questioned by the lawyer.",
+    "rootWord": "RELY",
+    "correct": "reliability",
+    "hint": "The noun form of reliable",
+    "explanation": "RELY → reliability (suffix -ability: the quality of being reliable)"
+  },
+  {
+    "sentence": "It would be _____ to ignore the warning signs.",
+    "rootWord": "RESPONSE",
+    "correct": "irresponsible",
+    "hint": "Not responsible — use a negative prefix",
+    "explanation": "RESPONSE → irresponsible (prefix ir- + suffix -ible: not showing responsibility)"
+  },
+  {
+    "sentence": "The results of the experiment were _____.",
+    "rootWord": "CONCLUDE",
+    "correct": "conclusive",
+    "hint": "An adjective meaning providing a definite conclusion",
+    "explanation": "CONCLUDE → conclusive (suffix -ive: providing a firm conclusion)"
+  },
+  {
+    "sentence": "His _____ of the rules led to a penalty.",
+    "rootWord": "VIOLATE",
+    "correct": "violation",
+    "hint": "The noun form of violate",
+    "explanation": "VIOLATE → violation (suffix -tion: the act of violating)"
+  },
+  {
+    "sentence": "The _____ between the two countries has improved.",
+    "rootWord": "CORRESPOND",
+    "correct": "correspondence",
+    "hint": "The noun form of correspond",
+    "explanation": "CORRESPOND → correspondence (suffix -ence: the act of corresponding)"
+  },
+  {
+    "sentence": "She felt a deep sense of _____ after the argument.",
+    "rootWord": "RESENT",
+    "correct": "resentment",
+    "hint": "The noun form of resent",
+    "explanation": "RESENT → resentment (suffix -ment: the feeling of resenting)"
+  },
+  {
+    "sentence": "The politician's speech was deliberately _____.",
+    "rootWord": "MISLEAD",
+    "correct": "misleading",
+    "hint": "An adjective meaning giving a wrong impression",
+    "explanation": "MISLEAD → misleading (prefix mis- already present + suffix -ing: giving a false impression)"
+  },
+  {
+    "sentence": "The new treatment proved to be highly _____.",
+    "rootWord": "INNOVATE",
+    "correct": "innovative",
+    "hint": "An adjective meaning introducing new ideas",
+    "explanation": "INNOVATE → innovative (suffix -ive: introducing new methods or ideas)"
+  },
+  {
+    "sentence": "The _____ of the project depends on adequate funding.",
+    "rootWord": "SUCCEED",
+    "correct": "success",
+    "hint": "The noun form of succeed",
+    "explanation": "SUCCEED → success (noun form: the achievement of a goal)"
+  },
+  {
+    "sentence": "It is _____ to make assumptions without evidence.",
+    "rootWord": "REASON",
+    "correct": "unreasonable",
+    "hint": "Not reasonable",
+    "explanation": "REASON → unreasonable (prefix un- + suffix -able: not based on reason)"
+  },
+  {
+    "sentence": "The _____ landscape stretched for miles.",
+    "rootWord": "MOUNTAIN",
+    "correct": "mountainous",
+    "hint": "An adjective meaning having many mountains",
+    "explanation": "MOUNTAIN → mountainous (suffix -ous: having the quality of mountains)"
+  },
+  {
+    "sentence": "Her _____ to the charity was very generous.",
+    "rootWord": "CONTRIBUTE",
+    "correct": "contribution",
+    "hint": "The noun form of contribute",
+    "explanation": "CONTRIBUTE → contribution (suffix -tion: the act of contributing)"
+  },
+  {
+    "sentence": "The _____ of the old system caused many problems.",
+    "rootWord": "EFFICIENT",
+    "correct": "inefficiency",
+    "hint": "The noun form meaning lack of efficiency",
+    "explanation": "EFFICIENT → inefficiency (prefix in- + suffix -cy: the state of not being efficient)"
+  },
+  {
+    "sentence": "The witness gave a _____ account of the events.",
+    "rootWord": "COMPREHEND",
+    "correct": "comprehensive",
+    "hint": "An adjective meaning including everything",
+    "explanation": "COMPREHEND → comprehensive (suffix -ive: including all or nearly all elements)"
+  },
+  {
+    "sentence": "The _____ of the new law was debated in parliament.",
+    "rootWord": "ENFORCE",
+    "correct": "enforcement",
+    "hint": "The noun form of enforce",
+    "explanation": "ENFORCE → enforcement (suffix -ment: the act of enforcing)"
+  }
+]

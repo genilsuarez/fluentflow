@@ -1,0 +1,127 @@
+[
+  {
+    "sentence": "By the time we arrived, the concert already started.",
+    "correct": ["By the time we arrived, the concert had already started."],
+    "explanation": "Use past perfect <had started> for an action completed before another past action."
+  },
+  {
+    "sentence": "She has been living in London since five years.",
+    "correct": ["She has been living in London for five years."],
+    "explanation": "Use <for> with a duration of time, <since> with a point in time."
+  },
+  {
+    "sentence": "He made a big fault in his calculations.",
+    "correct": ["He made a big mistake in his calculations.", "He made a big error in his calculations."],
+    "explanation": "Collocation: we say <make a mistake/error>, not <make a fault>."
+  },
+  {
+    "sentence": "I am knowing the answer to this question.",
+    "correct": ["I know the answer to this question."],
+    "explanation": "<Know> is a stative verb and is not used in continuous tenses."
+  },
+  {
+    "sentence": "She did a lot of progress in her English studies.",
+    "correct": ["She made a lot of progress in her English studies."],
+    "explanation": "Collocation: we say <make progress>, not <do progress>."
+  },
+  {
+    "sentence": "When I will arrive, I will call you.",
+    "correct": ["When I arrive, I will call you."],
+    "explanation": "After <when> in future time clauses, use present simple, not <will>."
+  },
+  {
+    "sentence": "He has gone to Paris last week.",
+    "correct": ["He went to Paris last week."],
+    "explanation": "Use past simple (not present perfect) with specific past time expressions like <last week>."
+  },
+  {
+    "sentence": "She does always her homework before dinner.",
+    "correct": ["She always does her homework before dinner."],
+    "explanation": "Adverbs of frequency go before the main verb: <always does>."
+  },
+  {
+    "sentence": "I am used to get up early every morning.",
+    "correct": ["I am used to getting up early every morning."],
+    "explanation": "<Be used to> is followed by a gerund (-ing): <used to getting up>."
+  },
+  {
+    "sentence": "He suggested me to apply for the job.",
+    "correct": ["He suggested that I apply for the job.", "He suggested I should apply for the job."],
+    "explanation": "<Suggest> is followed by <that + subject + base verb>, not <someone to do>."
+  },
+  {
+    "sentence": "By next year, I will be working here since ten years.",
+    "correct": ["By next year, I will have been working here for ten years."],
+    "explanation": "Use future perfect continuous with <for> (duration), not <since>."
+  },
+  {
+    "sentence": "She said me that she was tired.",
+    "correct": ["She told me that she was tired."],
+    "explanation": "Use <tell> (not <say>) when there is an indirect object: <told me>."
+  },
+  {
+    "sentence": "I have been to the dentist yesterday.",
+    "correct": ["I went to the dentist yesterday."],
+    "explanation": "Use past simple with <yesterday>, not present perfect."
+  },
+  {
+    "sentence": "He did a decision to change his career.",
+    "correct": ["He made a decision to change his career."],
+    "explanation": "Collocation: we say <make a decision>, not <do a decision>."
+  },
+  {
+    "sentence": "She is believing that everything will be fine.",
+    "correct": ["She believes that everything will be fine."],
+    "explanation": "<Believe> is a stative verb and is not used in continuous tenses."
+  },
+  {
+    "sentence": "I have seen that film three times since I was a child.",
+    "correct": ["I have seen that film three times since I was a child."],
+    "explanation": "This sentence is actually correct — present perfect with <since> and a number of times."
+  },
+  {
+    "sentence": "He made an effort to do his best at the exam.",
+    "correct": ["He made an effort to do his best in the exam."],
+    "explanation": "Collocation: we say <in the exam>, not <at the exam>."
+  },
+  {
+    "sentence": "Before she left, she has already packed her bags.",
+    "correct": ["Before she left, she had already packed her bags."],
+    "explanation": "Use past perfect <had packed> for an action before another past action."
+  },
+  {
+    "sentence": "I am not agreeing with your opinion.",
+    "correct": ["I do not agree with your opinion.", "I don't agree with your opinion."],
+    "explanation": "<Agree> is a stative verb and is not used in continuous tenses."
+  },
+  {
+    "sentence": "She did a phone call to her mother.",
+    "correct": ["She made a phone call to her mother."],
+    "explanation": "Collocation: we say <make a phone call>, not <do a phone call>."
+  },
+  {
+    "sentence": "After I will finish my homework, I will watch TV.",
+    "correct": ["After I finish my homework, I will watch TV."],
+    "explanation": "After <after> in future time clauses, use present simple, not <will>."
+  },
+  {
+    "sentence": "He has been studying English for he was ten years old.",
+    "correct": ["He has been studying English since he was ten years old."],
+    "explanation": "Use <since> with a point in time, not <for>."
+  },
+  {
+    "sentence": "She did a complaint about the service.",
+    "correct": ["She made a complaint about the service."],
+    "explanation": "Collocation: we say <make a complaint>, not <do a complaint>."
+  },
+  {
+    "sentence": "I am owning a car since 2020.",
+    "correct": ["I have owned a car since 2020."],
+    "explanation": "<Own> is a stative verb — use present perfect, not continuous."
+  },
+  {
+    "sentence": "He told that he would come to the party.",
+    "correct": ["He said that he would come to the party."],
+    "explanation": "Use <say> (not <tell>) when there is no indirect object."
+  }
+]

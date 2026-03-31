@@ -1,0 +1,127 @@
+[
+  {
+    "sentence": "He was tilting at windshields, fighting battles that couldn't be won.",
+    "correct": ["He was tilting at windmills, fighting battles that couldn't be won."],
+    "explanation": "The correct idiom is <tilting at windmills> (from Don Quixote), not <windshields>."
+  },
+  {
+    "sentence": "She opened a Pandora's jar of problems with her investigation.",
+    "correct": ["She opened a Pandora's box of problems with her investigation."],
+    "explanation": "The correct idiom is <Pandora's box> (from Greek mythology), not <Pandora's jar>."
+  },
+  {
+    "sentence": "His Achilles' tendon was his inability to delegate tasks.",
+    "correct": ["His Achilles' heel was his inability to delegate tasks."],
+    "explanation": "The correct idiom is <Achilles' heel> (a fatal weakness), not <Achilles' tendon> (anatomy)."
+  },
+  {
+    "sentence": "The politician's speech was a red fish designed to distract from the real issues.",
+    "correct": ["The politician's speech was a red herring designed to distract from the real issues."],
+    "explanation": "The correct idiom is <red herring> (a misleading clue), not <red fish>."
+  },
+  {
+    "sentence": "She had the Midas' hand — everything she invested in turned to gold.",
+    "correct": ["She had the Midas touch — everything she invested in turned to gold."],
+    "explanation": "The correct idiom is <Midas touch> (from Greek mythology), not <Midas' hand>."
+  },
+  {
+    "sentence": "The new evidence was the writing on the floor for the defendant.",
+    "correct": ["The new evidence was the writing on the wall for the defendant."],
+    "explanation": "The correct idiom is <writing on the wall> (from the Book of Daniel), not <on the floor>."
+  },
+  {
+    "sentence": "He was caught between Scylla and Charybdis — a true Catch 21 situation.",
+    "correct": ["He was caught between Scylla and Charybdis — a true Catch-22 situation."],
+    "explanation": "The correct reference is <Catch-22> (from Joseph Heller's novel), not <Catch 21>."
+  },
+  {
+    "sentence": "The company's expansion was a Trojan gift that brought hidden problems.",
+    "correct": ["The company's expansion was a Trojan horse that brought hidden problems."],
+    "explanation": "The correct idiom is <Trojan horse> (from Homer's Iliad), not <Trojan gift>."
+  },
+  {
+    "sentence": "She was a Good Samaritan — always willing to cross the Rubicon for others.",
+    "correct": ["She was a Good Samaritan — always willing to go the extra mile for others."],
+    "explanation": "<Cross the Rubicon> means to pass a point of no return, not to help others. <Go the extra mile> fits."
+  },
+  {
+    "sentence": "The project was his white elephant — a labour of Hercules that consumed all his time.",
+    "correct": ["The project was his labour of Hercules — a Herculean task that consumed all his time.", "The project was a Herculean task that consumed all his time."],
+    "explanation": "A <white elephant> is an unwanted possession. A <labour of Hercules> or <Herculean task> is a difficult undertaking."
+  },
+  {
+    "sentence": "The critic's review was a double-edged blade that both praised and condemned the work.",
+    "correct": ["The critic's review was a double-edged sword that both praised and condemned the work."],
+    "explanation": "The correct idiom is <double-edged sword>, not <double-edged blade>."
+  },
+  {
+    "sentence": "His argument was built on a house of straw — it collapsed under scrutiny.",
+    "correct": ["His argument was built on a house of cards — it collapsed under scrutiny."],
+    "explanation": "The correct idiom is <house of cards> (fragile structure), not <house of straw>."
+  },
+  {
+    "sentence": "She was the proverbial canary in the gold mine, warning of dangers ahead.",
+    "correct": ["She was the proverbial canary in the coal mine, warning of dangers ahead."],
+    "explanation": "The correct idiom is <canary in the coal mine> (early warning), not <gold mine>."
+  },
+  {
+    "sentence": "The discovery was a Eureka moment — he had found the philosopher's rock.",
+    "correct": ["The discovery was a Eureka moment — he had found the philosopher's stone."],
+    "explanation": "The correct reference is <philosopher's stone> (alchemy), not <philosopher's rock>."
+  },
+  {
+    "sentence": "The negotiations were a Sisyphean effort — like pushing a boulder up a mountain.",
+    "correct": ["The negotiations were a Sisyphean task — like pushing a boulder up a hill."],
+    "explanation": "In the myth, Sisyphus pushes a boulder up a <hill> (not mountain), and it's a <task>, not <effort>."
+  },
+  {
+    "sentence": "He was the prodigal daughter who returned home after years of wandering.",
+    "correct": ["He was the prodigal son who returned home after years of wandering."],
+    "explanation": "The biblical parable refers to the <prodigal son>, not <daughter>. For a male subject, use <son>."
+  },
+  {
+    "sentence": "The company's Pyrrhic defeat cost them more than they gained.",
+    "correct": ["The company's Pyrrhic victory cost them more than they gained."],
+    "explanation": "The correct idiom is <Pyrrhic victory> (a win at too great a cost), not <Pyrrhic defeat>."
+  },
+  {
+    "sentence": "She had a Damocles' dagger hanging over her — the threat of redundancy.",
+    "correct": ["She had a sword of Damocles hanging over her — the threat of redundancy."],
+    "explanation": "The correct idiom is <sword of Damocles> (impending danger), not <Damocles' dagger>."
+  },
+  {
+    "sentence": "The whistleblower opened a Pandora's box, but the genie was already out of the lamp.",
+    "correct": ["The whistleblower opened a Pandora's box, but the genie was already out of the bottle."],
+    "explanation": "The correct idiom is <genie out of the bottle> (cannot be undone), not <out of the lamp>."
+  },
+  {
+    "sentence": "His crocodile smiles fooled nobody at the negotiating table.",
+    "correct": ["His crocodile tears fooled nobody at the negotiating table."],
+    "explanation": "The correct idiom is <crocodile tears> (fake sadness), not <crocodile smiles>."
+  },
+  {
+    "sentence": "The new law was a Gordian rope that nobody could untangle.",
+    "correct": ["The new law was a Gordian knot that nobody could untangle."],
+    "explanation": "The correct idiom is <Gordian knot> (an intractable problem), not <Gordian rope>."
+  },
+  {
+    "sentence": "She was burning the midnight candle to finish her dissertation.",
+    "correct": ["She was burning the midnight oil to finish her dissertation."],
+    "explanation": "The correct idiom is <burning the midnight oil> (working late), not <midnight candle>."
+  },
+  {
+    "sentence": "The artist's magnum opus was his swan dive — his final and greatest work.",
+    "correct": ["The artist's magnum opus was his swan song — his final and greatest work."],
+    "explanation": "The correct idiom is <swan song> (final performance), not <swan dive>."
+  },
+  {
+    "sentence": "The politician's promise was a hollow reed — an ivory castle built on sand.",
+    "correct": ["The politician's promise was a hollow reed — a castle built on sand.", "The politician's promise was an ivory tower — a castle built on sand."],
+    "explanation": "The correct idiom is <castle built on sand> (unstable foundation). <Ivory tower> means detachment from reality."
+  },
+  {
+    "sentence": "He was the elephant in the china shop — clumsy and destructive.",
+    "correct": ["He was the bull in a china shop — clumsy and destructive."],
+    "explanation": "The correct idiom is <bull in a china shop> (clumsy person), not <elephant>."
+  }
+]

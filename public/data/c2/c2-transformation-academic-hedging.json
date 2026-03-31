@@ -1,0 +1,152 @@
+[
+  {
+    "prompt": "Rewrite using academic hedging to soften the claim",
+    "source": "Social media causes depression in teenagers.",
+    "correct": ["Social media may contribute to depression in teenagers.", "Social media appears to be associated with depression in teenagers."],
+    "explanation": "Hedging: replace definitive <causes> with tentative <may contribute to> or <appears to be associated with>."
+  },
+  {
+    "prompt": "Rewrite using academic hedging",
+    "source": "This study proves that exercise prevents heart disease.",
+    "correct": ["This study suggests that exercise may help prevent heart disease.", "The findings of this study indicate that exercise could play a role in preventing heart disease."],
+    "explanation": "Hedging: <proves> → <suggests>, <prevents> → <may help prevent>."
+  },
+  {
+    "prompt": "Rewrite using academic hedging",
+    "source": "Climate change will destroy coastal cities by 2100.",
+    "correct": ["Climate change could potentially threaten coastal cities by 2100.", "It is possible that climate change may significantly impact coastal cities by 2100."],
+    "explanation": "Hedging: <will destroy> → <could potentially threaten> or <may significantly impact>."
+  },
+  {
+    "prompt": "Rewrite using academic hedging",
+    "source": "The results show that the treatment is effective.",
+    "correct": ["The results appear to indicate that the treatment may be effective.", "The results suggest that the treatment is likely to be effective."],
+    "explanation": "Hedging: <show> → <appear to indicate>, <is> → <may be> or <is likely to be>."
+  },
+  {
+    "prompt": "Rewrite using academic hedging",
+    "source": "Bilingual children are smarter than monolingual children.",
+    "correct": ["Bilingual children tend to perform better on certain cognitive tasks than monolingual children.", "There is some evidence to suggest that bilingualism may confer cognitive advantages."],
+    "explanation": "Hedging: <are smarter> → <tend to perform better> with qualification."
+  },
+  {
+    "prompt": "Rewrite using academic hedging",
+    "source": "The theory is wrong.",
+    "correct": ["The theory appears to have certain limitations.", "The evidence does not fully support the theory."],
+    "explanation": "Hedging: <is wrong> → <appears to have limitations> or <not fully supported>."
+  },
+  {
+    "prompt": "Rewrite using academic hedging",
+    "source": "Poverty causes crime.",
+    "correct": ["Poverty may be a contributing factor to crime.", "There appears to be a correlation between poverty and crime rates."],
+    "explanation": "Hedging: <causes> → <may be a contributing factor> or <appears to be a correlation>."
+  },
+  {
+    "prompt": "Rewrite using academic hedging",
+    "source": "This method is the best approach to solving the problem.",
+    "correct": ["This method could be considered one of the more promising approaches to solving the problem.", "This method appears to offer a viable approach to addressing the problem."],
+    "explanation": "Hedging: <is the best> → <could be considered one of the more promising>."
+  },
+  {
+    "prompt": "Rewrite using academic hedging",
+    "source": "The data confirms our hypothesis.",
+    "correct": ["The data appears to be consistent with our hypothesis.", "The data lends support to our hypothesis."],
+    "explanation": "Hedging: <confirms> → <appears to be consistent with> or <lends support to>."
+  },
+  {
+    "prompt": "Rewrite using academic hedging",
+    "source": "All students benefit from technology in the classroom.",
+    "correct": ["Many students may benefit from the integration of technology in the classroom.", "Technology in the classroom appears to benefit a significant proportion of students."],
+    "explanation": "Hedging: <All students benefit> → <Many students may benefit>."
+  },
+  {
+    "prompt": "Rewrite using academic hedging",
+    "source": "The experiment failed because of poor methodology.",
+    "correct": ["The experiment's results may have been compromised by methodological limitations.", "It is possible that methodological issues contributed to the unexpected results."],
+    "explanation": "Hedging: <failed because of> → <may have been compromised by>."
+  },
+  {
+    "prompt": "Rewrite using academic hedging",
+    "source": "Remote work increases productivity.",
+    "correct": ["Remote work may be associated with increased productivity in certain contexts.", "There is some evidence to suggest that remote work could enhance productivity."],
+    "explanation": "Hedging: <increases> → <may be associated with increased> with qualification."
+  },
+  {
+    "prompt": "Rewrite using academic hedging",
+    "source": "The previous research is flawed.",
+    "correct": ["The previous research appears to have certain methodological limitations.", "Some aspects of the previous research may warrant further scrutiny."],
+    "explanation": "Hedging: <is flawed> → <appears to have limitations>."
+  },
+  {
+    "prompt": "Rewrite using academic hedging",
+    "source": "Artificial intelligence will replace most human jobs.",
+    "correct": ["Artificial intelligence may potentially transform a significant number of occupations.", "It is conceivable that artificial intelligence could affect a substantial proportion of the workforce."],
+    "explanation": "Hedging: <will replace most> → <may potentially transform a significant number>."
+  },
+  {
+    "prompt": "Rewrite using academic hedging",
+    "source": "The findings prove that the vaccine is safe.",
+    "correct": ["The findings suggest that the vaccine appears to have an acceptable safety profile.", "Based on the available evidence, the vaccine seems to demonstrate a favourable safety profile."],
+    "explanation": "Hedging: <prove ... is safe> → <suggest ... appears to have an acceptable safety profile>."
+  },
+  {
+    "prompt": "Rewrite using academic hedging",
+    "source": "Children who read more are more successful in school.",
+    "correct": ["Children who read more tend to achieve higher academic outcomes.", "There appears to be a positive association between reading frequency and academic performance."],
+    "explanation": "Hedging: <are more successful> → <tend to achieve higher outcomes>."
+  },
+  {
+    "prompt": "Rewrite using academic hedging",
+    "source": "This policy will solve the housing crisis.",
+    "correct": ["This policy may contribute to alleviating the housing crisis.", "This policy could potentially address some aspects of the housing crisis."],
+    "explanation": "Hedging: <will solve> → <may contribute to alleviating>."
+  },
+  {
+    "prompt": "Rewrite using academic hedging",
+    "source": "The correlation between the variables is significant.",
+    "correct": ["The correlation between the variables appears to be statistically significant.", "There seems to be a noteworthy correlation between the variables."],
+    "explanation": "Hedging: <is significant> → <appears to be statistically significant>."
+  },
+  {
+    "prompt": "Rewrite using academic hedging",
+    "source": "Organic food is healthier than conventional food.",
+    "correct": ["Organic food may offer certain nutritional advantages over conventional food.", "Some studies suggest that organic food could be associated with health benefits."],
+    "explanation": "Hedging: <is healthier> → <may offer certain nutritional advantages>."
+  },
+  {
+    "prompt": "Rewrite using academic hedging",
+    "source": "The study demonstrates that meditation reduces anxiety.",
+    "correct": ["The study provides evidence that meditation may help reduce anxiety.", "The findings indicate that meditation could potentially contribute to anxiety reduction."],
+    "explanation": "Hedging: <demonstrates ... reduces> → <provides evidence ... may help reduce>."
+  },
+  {
+    "prompt": "Rewrite using academic hedging",
+    "source": "Immigration always benefits the economy.",
+    "correct": ["Immigration tends to have a positive impact on the economy in many contexts.", "There is considerable evidence suggesting that immigration may benefit the economy."],
+    "explanation": "Hedging: <always benefits> → <tends to have a positive impact in many contexts>."
+  },
+  {
+    "prompt": "Rewrite using academic hedging",
+    "source": "The new drug cures the disease.",
+    "correct": ["The new drug shows promise in treating the disease.", "Preliminary evidence suggests that the new drug may be effective against the disease."],
+    "explanation": "Hedging: <cures> → <shows promise in treating> or <may be effective against>."
+  },
+  {
+    "prompt": "Rewrite using academic hedging",
+    "source": "These results are conclusive.",
+    "correct": ["These results appear to provide strong evidence.", "While promising, these results would benefit from further replication."],
+    "explanation": "Hedging: <are conclusive> → <appear to provide strong evidence>."
+  },
+  {
+    "prompt": "Rewrite using academic hedging",
+    "source": "The author's argument is completely wrong.",
+    "correct": ["The author's argument may not fully account for all relevant factors.", "Certain aspects of the author's argument could be open to alternative interpretation."],
+    "explanation": "Hedging: <is completely wrong> → <may not fully account for all relevant factors>."
+  },
+  {
+    "prompt": "Rewrite using academic hedging",
+    "source": "Globalisation destroys local cultures.",
+    "correct": ["Globalisation may pose challenges to the preservation of local cultures.", "There is some concern that globalisation could potentially impact local cultural practices."],
+    "explanation": "Hedging: <destroys> → <may pose challenges to the preservation of>."
+  }
+]

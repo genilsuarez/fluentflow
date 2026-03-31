@@ -1,0 +1,86 @@
+[
+  {
+    "id": "reord-b1-cond-001",
+    "sentence": "If it rains tomorrow we will stay at home",
+    "words": ["If", "it", "rains", "tomorrow", "we", "will", "stay", "at", "home"],
+    "hint": "If + present simple, will + base verb",
+    "explanation": "First conditional: <If> + present simple, <will> + base verb."
+  },
+  {
+    "id": "reord-b1-cond-002",
+    "sentence": "I would travel the world if I had more money",
+    "words": ["I", "would", "travel", "the", "world", "if", "I", "had", "more", "money"],
+    "hint": "Would + base verb + if + past simple",
+    "explanation": "Second conditional: <would> + base verb, <if> + past simple."
+  },
+  {
+    "id": "reord-b1-cond-003",
+    "sentence": "If she had studied harder she would have passed the exam",
+    "words": ["If", "she", "had", "studied", "harder", "she", "would", "have", "passed", "the", "exam"],
+    "hint": "If + past perfect, would have + past participle",
+    "explanation": "Third conditional: <If> + past perfect, <would have> + past participle."
+  },
+  {
+    "id": "reord-b1-cond-004",
+    "sentence": "Unless you hurry you will miss the train",
+    "words": ["Unless", "you", "hurry", "you", "will", "miss", "the", "train"],
+    "hint": "Unless + present simple, will + base verb",
+    "explanation": "<Unless> means <if not>. <Unless you hurry> = <If you don't hurry>."
+  },
+  {
+    "id": "reord-b1-cond-005",
+    "sentence": "If I were you I would accept the job offer",
+    "words": ["If", "I", "were", "you", "I", "would", "accept", "the", "job", "offer"],
+    "hint": "If I were you + would + base verb",
+    "explanation": "Second conditional advice: <If I were you> uses subjunctive <were>."
+  },
+  {
+    "id": "reord-b1-cond-006",
+    "sentence": "We will go to the beach if the weather is nice",
+    "words": ["We", "will", "go", "to", "the", "beach", "if", "the", "weather", "is", "nice"],
+    "hint": "Will + base verb + if + present simple",
+    "explanation": "First conditional: the <if> clause can come second."
+  },
+  {
+    "id": "reord-b1-cond-007",
+    "sentence": "If you heat ice it melts",
+    "words": ["If", "you", "heat", "ice", "it", "melts"],
+    "hint": "If + present simple, present simple",
+    "explanation": "Zero conditional: both clauses use present simple for facts."
+  },
+  {
+    "id": "reord-b1-cond-008",
+    "sentence": "She would have called you if she had known your number",
+    "words": ["She", "would", "have", "called", "you", "if", "she", "had", "known", "your", "number"],
+    "hint": "Would have + past participle + if + past perfect",
+    "explanation": "Third conditional: <would have called> + <if she had known>."
+  },
+  {
+    "id": "reord-b1-cond-009",
+    "sentence": "If I had a car I would drive to work every day",
+    "words": ["If", "I", "had", "a", "car", "I", "would", "drive", "to", "work", "every", "day"],
+    "hint": "If + past simple, would + base verb",
+    "explanation": "Second conditional: imaginary situation about the present."
+  },
+  {
+    "id": "reord-b1-cond-010",
+    "sentence": "They will be disappointed if we don't come to the party",
+    "words": ["They", "will", "be", "disappointed", "if", "we", "don't", "come", "to", "the", "party"],
+    "hint": "Will + be + adjective + if + present simple negative",
+    "explanation": "First conditional with negative: <if we don't come>."
+  },
+  {
+    "id": "reord-b1-cond-011",
+    "sentence": "If he had left earlier he would not have missed the flight",
+    "words": ["If", "he", "had", "left", "earlier", "he", "would", "not", "have", "missed", "the", "flight"],
+    "hint": "If + past perfect, would not have + past participle",
+    "explanation": "Third conditional negative: <would not have missed>."
+  },
+  {
+    "id": "reord-b1-cond-012",
+    "sentence": "I will lend you the book if you promise to return it",
+    "words": ["I", "will", "lend", "you", "the", "book", "if", "you", "promise", "to", "return", "it"],
+    "hint": "Will + base verb + if + present simple",
+    "explanation": "First conditional: real possibility about the future."
+  }
+]

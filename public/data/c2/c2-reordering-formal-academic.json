@@ -1,0 +1,86 @@
+[
+  {
+    "id": "reord-c2-fa-001",
+    "sentence": "Notwithstanding the methodological limitations the study provides compelling evidence",
+    "words": ["Notwithstanding", "the", "methodological", "limitations", "the", "study", "provides", "compelling", "evidence"],
+    "hint": "Notwithstanding + noun phrase, main clause",
+    "explanation": "<Notwithstanding> is a formal concessive connector meaning 'despite'."
+  },
+  {
+    "id": "reord-c2-fa-002",
+    "sentence": "It is incumbent upon the authorities to address this systemic inequality",
+    "words": ["It", "is", "incumbent", "upon", "the", "authorities", "to", "address", "this", "systemic", "inequality"],
+    "hint": "It is incumbent upon + agent + infinitive + object",
+    "explanation": "<Incumbent upon> is a formal expression meaning 'obligatory for'."
+  },
+  {
+    "id": "reord-c2-fa-003",
+    "sentence": "The ramifications of this policy shift extend far beyond the immediate economic sphere",
+    "words": ["The", "ramifications", "of", "this", "policy", "shift", "extend", "far", "beyond", "the", "immediate", "economic", "sphere"],
+    "hint": "Subject + of + noun phrase + verb + adverb + prepositional phrase",
+    "explanation": "<Ramifications> is a formal word for 'consequences' or 'implications'."
+  },
+  {
+    "id": "reord-c2-fa-004",
+    "sentence": "Insofar as the evidence permits we may tentatively conclude that the hypothesis holds",
+    "words": ["Insofar", "as", "the", "evidence", "permits", "we", "may", "tentatively", "conclude", "that", "the", "hypothesis", "holds"],
+    "hint": "Insofar as + clause, hedged conclusion",
+    "explanation": "<Insofar as> is a formal connector meaning 'to the extent that'."
+  },
+  {
+    "id": "reord-c2-fa-005",
+    "sentence": "The aforementioned findings corroborate the theoretical framework proposed by earlier scholars",
+    "words": ["The", "aforementioned", "findings", "corroborate", "the", "theoretical", "framework", "proposed", "by", "earlier", "scholars"],
+    "hint": "Subject + verb + object + past participle phrase",
+    "explanation": "<Aforementioned> and <corroborate> are formal academic vocabulary."
+  },
+  {
+    "id": "reord-c2-fa-006",
+    "sentence": "Hitherto unexplored dimensions of the phenomenon warrant further scholarly investigation",
+    "words": ["Hitherto", "unexplored", "dimensions", "of", "the", "phenomenon", "warrant", "further", "scholarly", "investigation"],
+    "hint": "Adverb + adjective + subject + verb + object",
+    "explanation": "<Hitherto> is a formal adverb meaning 'until now'."
+  },
+  {
+    "id": "reord-c2-fa-007",
+    "sentence": "The juxtaposition of these two contrasting perspectives illuminates the complexity of the issue",
+    "words": ["The", "juxtaposition", "of", "these", "two", "contrasting", "perspectives", "illuminates", "the", "complexity", "of", "the", "issue"],
+    "hint": "Subject + of + noun phrase + verb + object",
+    "explanation": "<Juxtaposition> and <illuminates> are formal academic vocabulary."
+  },
+  {
+    "id": "reord-c2-fa-008",
+    "sentence": "Pursuant to the recommendations of the review panel the curriculum has been substantially revised",
+    "words": ["Pursuant", "to", "the", "recommendations", "of", "the", "review", "panel", "the", "curriculum", "has", "been", "substantially", "revised"],
+    "hint": "Pursuant to + noun phrase, main clause (passive)",
+    "explanation": "<Pursuant to> is a formal expression meaning 'in accordance with'."
+  },
+  {
+    "id": "reord-c2-fa-009",
+    "sentence": "The epistemological underpinnings of this approach merit careful scrutiny",
+    "words": ["The", "epistemological", "underpinnings", "of", "this", "approach", "merit", "careful", "scrutiny"],
+    "hint": "Subject + of + noun phrase + verb + object",
+    "explanation": "<Epistemological underpinnings> refers to the knowledge-theory foundations."
+  },
+  {
+    "id": "reord-c2-fa-010",
+    "sentence": "Inasmuch as the data is inconclusive any definitive pronouncement would be premature",
+    "words": ["Inasmuch", "as", "the", "data", "is", "inconclusive", "any", "definitive", "pronouncement", "would", "be", "premature"],
+    "hint": "Inasmuch as + clause, main clause",
+    "explanation": "<Inasmuch as> is a formal connector meaning 'since' or 'because'."
+  },
+  {
+    "id": "reord-c2-fa-011",
+    "sentence": "The proliferation of digital technologies has fundamentally altered the pedagogical landscape",
+    "words": ["The", "proliferation", "of", "digital", "technologies", "has", "fundamentally", "altered", "the", "pedagogical", "landscape"],
+    "hint": "Subject + of + noun phrase + has + adverb + past participle + object",
+    "explanation": "<Proliferation> and <pedagogical landscape> are formal academic expressions."
+  },
+  {
+    "id": "reord-c2-fa-012",
+    "sentence": "A comprehensive elucidation of the underlying mechanisms remains an elusive goal",
+    "words": ["A", "comprehensive", "elucidation", "of", "the", "underlying", "mechanisms", "remains", "an", "elusive", "goal"],
+    "hint": "Subject + of + noun phrase + verb + complement",
+    "explanation": "<Elucidation> (explanation) and <elusive> (hard to achieve) are formal vocabulary."
+  }
+]

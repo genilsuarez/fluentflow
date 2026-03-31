@@ -1,0 +1,86 @@
+[
+  {
+    "id": "reord-a2-da-001",
+    "sentence": "She usually goes shopping on Saturday mornings",
+    "words": ["She", "usually", "goes", "shopping", "on", "Saturday", "mornings"],
+    "hint": "Subject + adverb + verb + activity + time",
+    "explanation": "Frequency adverbs like <usually> go before the main verb."
+  },
+  {
+    "id": "reord-a2-da-002",
+    "sentence": "They often play tennis after work",
+    "words": ["They", "often", "play", "tennis", "after", "work"],
+    "hint": "Subject + adverb + verb + sport + time",
+    "explanation": "Frequency adverbs go before the main verb: <often play>."
+  },
+  {
+    "id": "reord-a2-da-003",
+    "sentence": "He always takes the bus to the office",
+    "words": ["He", "always", "takes", "the", "bus", "to", "the", "office"],
+    "hint": "Subject + adverb + verb + transport + destination",
+    "explanation": "<Always> goes before the main verb: <always takes>."
+  },
+  {
+    "id": "reord-a2-da-004",
+    "sentence": "We sometimes eat out at a restaurant on Fridays",
+    "words": ["We", "sometimes", "eat", "out", "at", "a", "restaurant", "on", "Fridays"],
+    "hint": "Subject + adverb + phrasal verb + place + time",
+    "explanation": "<Sometimes> goes before the main verb. <Eat out> means to eat at a restaurant."
+  },
+  {
+    "id": "reord-a2-da-005",
+    "sentence": "I never drink coffee in the evening",
+    "words": ["I", "never", "drink", "coffee", "in", "the", "evening"],
+    "hint": "Subject + adverb + verb + object + time",
+    "explanation": "<Never> goes before the main verb: <never drink>."
+  },
+  {
+    "id": "reord-a2-da-006",
+    "sentence": "She is currently learning to play the guitar",
+    "words": ["She", "is", "currently", "learning", "to", "play", "the", "guitar"],
+    "hint": "Subject + is + adverb + verb-ing + infinitive + object",
+    "explanation": "Present continuous with adverb: <is currently learning>."
+  },
+  {
+    "id": "reord-a2-da-007",
+    "sentence": "They usually have breakfast at eight o'clock",
+    "words": ["They", "usually", "have", "breakfast", "at", "eight", "o'clock"],
+    "hint": "Subject + adverb + verb + meal + time",
+    "explanation": "Frequency adverbs go before the main verb: <usually have>."
+  },
+  {
+    "id": "reord-a2-da-008",
+    "sentence": "He rarely watches television during the week",
+    "words": ["He", "rarely", "watches", "television", "during", "the", "week"],
+    "hint": "Subject + adverb + verb + object + time",
+    "explanation": "<Rarely> goes before the main verb: <rarely watches>."
+  },
+  {
+    "id": "reord-a2-da-009",
+    "sentence": "We always walk to school together in the morning",
+    "words": ["We", "always", "walk", "to", "school", "together", "in", "the", "morning"],
+    "hint": "Subject + adverb + verb + destination + manner + time",
+    "explanation": "<Always> goes before the main verb: <always walk>."
+  },
+  {
+    "id": "reord-a2-da-010",
+    "sentence": "She often reads a book before going to bed",
+    "words": ["She", "often", "reads", "a", "book", "before", "going", "to", "bed"],
+    "hint": "Subject + adverb + verb + object + time clause",
+    "explanation": "<Often> goes before the main verb: <often reads>."
+  },
+  {
+    "id": "reord-a2-da-011",
+    "sentence": "I sometimes go for a walk in the park after lunch",
+    "words": ["I", "sometimes", "go", "for", "a", "walk", "in", "the", "park", "after", "lunch"],
+    "hint": "Subject + adverb + verb + activity + place + time",
+    "explanation": "<Go for a walk> is a common expression for walking as exercise."
+  },
+  {
+    "id": "reord-a2-da-012",
+    "sentence": "He usually does his homework before dinner",
+    "words": ["He", "usually", "does", "his", "homework", "before", "dinner"],
+    "hint": "Subject + adverb + verb + object + time",
+    "explanation": "<Usually> goes before the main verb: <usually does>."
+  }
+]

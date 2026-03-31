@@ -61,5 +61,98 @@
     "source": "One rarely encounters such eloquence in modern discourse.",
     "correct": ["Seldom does one encounter such eloquence in modern discourse."],
     "explanation": "<Seldom> + inverted auxiliary + subject for formal emphasis on rarity."
+  },
+  {
+    "prompt": "Change to a nominalized form",
+    "source": "The committee refused to cooperate, which delayed the project.",
+    "correct": ["The committee's refusal to cooperate delayed the project."],
+    "hint": "Convert the verb <refused> to a noun",
+    "explanation": "Nominalization: <refused> → <refusal> creates a more formal, academic register."
+  },
+  {
+    "prompt": "Rewrite using rhetorical inversion with <Not once>",
+    "source": "He never apologized for his behavior.",
+    "correct": ["Not once did he apologize for his behavior."],
+    "explanation": "<Not once> + inverted auxiliary + subject for emphatic rhetorical effect."
+  },
+  {
+    "prompt": "Change to archaic subjunctive with <be it>",
+    "source": "Whether the reason is personal or professional, the rule applies.",
+    "correct": ["Be it personal or professional, the rule applies."],
+    "hint": "<Be it> = <Whether it be>",
+    "explanation": "Archaic subjunctive: <Be it> + complement expresses <Whether it be> in formal/literary style."
+  },
+  {
+    "prompt": "Rewrite using academic hedging with <tend to>",
+    "source": "Students fail when they don't study.",
+    "correct": ["Students tend to fail when they don't study.", "Students who do not study tend to fail."],
+    "explanation": "Academic hedging: <tend to> softens absolute claims into general tendencies."
+  },
+  {
+    "prompt": "Change to a nominalized form",
+    "source": "The researchers discovered a new species, which excited the scientific community.",
+    "correct": ["The researchers' discovery of a new species excited the scientific community."],
+    "explanation": "Nominalization: <discovered> → <discovery> for formal academic prose."
+  },
+  {
+    "prompt": "Rewrite using inversion with <At no point>",
+    "source": "The defendant never admitted guilt during the trial.",
+    "correct": ["At no point during the trial did the defendant admit guilt."],
+    "explanation": "<At no point> + inverted auxiliary + subject for emphatic formal denial."
+  },
+  {
+    "prompt": "Rewrite using <Such> + inversion",
+    "source": "The damage was so extensive that repairs took months.",
+    "correct": ["Such was the extent of the damage that repairs took months."],
+    "explanation": "<Such> + <was/were> + subject + <that> for literary emphasis."
+  },
+  {
+    "prompt": "Change to hedged academic language with <It would seem>",
+    "source": "The data proves the hypothesis.",
+    "correct": ["It would seem that the data supports the hypothesis.", "The data would seem to support the hypothesis."],
+    "hint": "Use hedging: <would seem>, <supports> instead of <proves>",
+    "explanation": "Academic hedging: <proves> → <would seem to support> avoids absolute claims."
+  },
+  {
+    "prompt": "Rewrite using an absolute participle clause",
+    "source": "Because all the evidence had been examined, the jury reached a verdict.",
+    "correct": ["All the evidence having been examined, the jury reached a verdict."],
+    "explanation": "Absolute participle clause: noun + <having been> + past participle replaces causal clause."
+  },
+  {
+    "prompt": "Change to a nominalized form",
+    "source": "The government implemented the policy, which improved public health.",
+    "correct": ["The government's implementation of the policy improved public health."],
+    "explanation": "Nominalization: <implemented> → <implementation> for formal register."
+  },
+  {
+    "prompt": "Rewrite using rhetorical inversion with <Only by>",
+    "source": "We can achieve lasting peace by working together.",
+    "correct": ["Only by working together can we achieve lasting peace."],
+    "explanation": "<Only by> + gerund + inverted modal + subject for rhetorical emphasis."
+  },
+  {
+    "prompt": "Change to archaic subjunctive with <far be it from me>",
+    "source": "I don't want to criticize, but the plan has flaws.",
+    "correct": ["Far be it from me to criticize, but the plan has flaws."],
+    "explanation": "<Far be it from me to> is an archaic subjunctive formula expressing reluctance to act."
+  },
+  {
+    "prompt": "Rewrite using academic hedging with <arguably>",
+    "source": "This is the most important discovery of the century.",
+    "correct": ["This is arguably the most important discovery of the century.", "Arguably, this is the most significant discovery of the century."],
+    "explanation": "Academic hedging: <arguably> qualifies a superlative claim."
+  },
+  {
+    "prompt": "Rewrite using inversion with <In vain>",
+    "source": "They tried to negotiate, but it was useless.",
+    "correct": ["In vain did they try to negotiate."],
+    "explanation": "<In vain> + inverted auxiliary + subject for literary emphasis on futility."
+  },
+  {
+    "prompt": "Change to a nominalized form with abstract noun",
+    "source": "The artist was able to capture light brilliantly, which made her famous.",
+    "correct": ["The artist's brilliant ability to capture light made her famous.", "The artist's ability to capture light brilliantly made her famous."],
+    "explanation": "Nominalization: converting clauses to noun phrases creates denser, more formal prose."
   }
 ]

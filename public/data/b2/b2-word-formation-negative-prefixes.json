@@ -1,0 +1,152 @@
+[
+  {
+    "sentence": "It would be _____ to ignore the warning signs.",
+    "rootWord": "RESPONSIBLE",
+    "correct": "irresponsible",
+    "explanation": "RESPONSIBLE → irresponsible (ir- before words starting with 'r')"
+  },
+  {
+    "sentence": "The handwriting was completely _____ .",
+    "rootWord": "LEGIBLE",
+    "correct": "illegible",
+    "explanation": "LEGIBLE → illegible (il- before words starting with 'l')"
+  },
+  {
+    "sentence": "She felt a deep sense of _____ after the argument.",
+    "rootWord": "COMFORT",
+    "correct": "discomfort",
+    "explanation": "COMFORT → discomfort (dis- to negate the meaning)"
+  },
+  {
+    "sentence": "His behaviour was _____ for a professional setting.",
+    "rootWord": "APPROPRIATE",
+    "correct": "inappropriate",
+    "explanation": "APPROPRIATE → inappropriate (in- to negate the meaning)"
+  },
+  {
+    "sentence": "The company's _____ of the contract led to a lawsuit.",
+    "rootWord": "MANAGE",
+    "correct": "mismanagement",
+    "explanation": "MANAGE → mismanagement (mis- meaning 'badly' + -ment noun suffix)"
+  },
+  {
+    "sentence": "It is _____ to drive without a seatbelt.",
+    "rootWord": "LEGAL",
+    "correct": "illegal",
+    "explanation": "LEGAL → illegal (il- before words starting with 'l')"
+  },
+  {
+    "sentence": "The results of the experiment were _____ .",
+    "rootWord": "CONCLUSIVE",
+    "correct": "inconclusive",
+    "explanation": "CONCLUSIVE → inconclusive (in- to negate the meaning)"
+  },
+  {
+    "sentence": "She showed great _____ towards her colleagues.",
+    "rootWord": "RESPECT",
+    "correct": "disrespect",
+    "explanation": "RESPECT → disrespect (dis- to negate the meaning)"
+  },
+  {
+    "sentence": "The instructions were _____ and confusing.",
+    "rootWord": "CLEAR",
+    "correct": "unclear",
+    "explanation": "CLEAR → unclear (un- to negate the meaning)"
+  },
+  {
+    "sentence": "His _____ of the facts led to a wrong conclusion.",
+    "rootWord": "INTERPRET",
+    "correct": "misinterpretation",
+    "explanation": "INTERPRET → misinterpretation (mis- meaning 'wrongly' + -ation noun suffix)"
+  },
+  {
+    "sentence": "The patient showed signs of _____ .",
+    "rootWord": "PATIENT",
+    "correct": "impatience",
+    "explanation": "PATIENT → impatience (im- before 'p' + -ence noun suffix)"
+  },
+  {
+    "sentence": "It was _____ to expect her to finish in one day.",
+    "rootWord": "REALISTIC",
+    "correct": "unrealistic",
+    "explanation": "REALISTIC → unrealistic (un- to negate the meaning)"
+  },
+  {
+    "sentence": "The _____ between the two reports was obvious.",
+    "rootWord": "SIMILAR",
+    "correct": "dissimilarity",
+    "explanation": "SIMILAR → dissimilarity (dis- + -ity noun suffix)"
+  },
+  {
+    "sentence": "She was _____ about the outcome of the election.",
+    "rootWord": "CERTAIN",
+    "correct": "uncertain",
+    "explanation": "CERTAIN → uncertain (un- to negate the meaning)"
+  },
+  {
+    "sentence": "The task seemed _____ at first, but we managed.",
+    "rootWord": "POSSIBLE",
+    "correct": "impossible",
+    "explanation": "POSSIBLE → impossible (im- before 'p' to negate)"
+  },
+  {
+    "sentence": "His _____ caused a lot of problems for the team.",
+    "rootWord": "HONEST",
+    "correct": "dishonesty",
+    "explanation": "HONEST → dishonesty (dis- + -y noun suffix)"
+  },
+  {
+    "sentence": "The road was _____ due to heavy flooding.",
+    "rootWord": "PASSABLE",
+    "correct": "impassable",
+    "explanation": "PASSABLE → impassable (im- before 'p' to negate)"
+  },
+  {
+    "sentence": "She expressed her _____ with the new policy.",
+    "rootWord": "SATISFY",
+    "correct": "dissatisfaction",
+    "explanation": "SATISFY → dissatisfaction (dis- + -faction noun suffix)"
+  },
+  {
+    "sentence": "The evidence was _____ to prove his guilt.",
+    "rootWord": "SUFFICIENT",
+    "correct": "insufficient",
+    "explanation": "SUFFICIENT → insufficient (in- to negate the meaning)"
+  },
+  {
+    "sentence": "It was _____ of him to make such a promise.",
+    "rootWord": "MATURE",
+    "correct": "immature",
+    "explanation": "MATURE → immature (im- before 'm' to negate)"
+  },
+  {
+    "sentence": "The _____ of the information caused confusion.",
+    "rootWord": "ACCURATE",
+    "correct": "inaccuracy",
+    "explanation": "ACCURATE → inaccuracy (in- + -acy noun suffix)"
+  },
+  {
+    "sentence": "She felt _____ about speaking in public.",
+    "rootWord": "SECURE",
+    "correct": "insecure",
+    "explanation": "SECURE → insecure (in- to negate the meaning)"
+  },
+  {
+    "sentence": "The _____ of the old bridge was a concern for engineers.",
+    "rootWord": "STABLE",
+    "correct": "instability",
+    "explanation": "STABLE → instability (in- + -ity noun suffix)"
+  },
+  {
+    "sentence": "His _____ to follow instructions caused the accident.",
+    "rootWord": "OBEY",
+    "correct": "disobedience",
+    "explanation": "OBEY → disobedience (dis- + obedi + -ence noun suffix)"
+  },
+  {
+    "sentence": "The new regulation was _____ and needed revision.",
+    "rootWord": "PERFECT",
+    "correct": "imperfect",
+    "explanation": "PERFECT → imperfect (im- before 'p' to negate)"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "left": "wake up",
+    "right": "to stop sleeping and open your eyes",
+    "explanation": "<Wake up> means to stop sleeping, usually in the morning."
+  },
+  {
+    "left": "sit down",
+    "right": "to move from standing to sitting on a chair",
+    "explanation": "<Sit down> means to take a seat."
+  },
+  {
+    "left": "stand up",
+    "right": "to rise from sitting to your feet",
+    "explanation": "<Stand up> means to get on your feet from a sitting position."
+  },
+  {
+    "left": "pick up",
+    "right": "to lift something from the floor with your hand",
+    "explanation": "<Pick up> means to take something from a lower surface."
+  },
+  {
+    "left": "put on",
+    "right": "to place clothing on your body",
+    "explanation": "<Put on> means to dress yourself with a piece of clothing."
+  },
+  {
+    "left": "take off",
+    "right": "to remove clothing from your body",
+    "explanation": "<Take off> means to remove a piece of clothing."
+  },
+  {
+    "left": "turn on",
+    "right": "to start a machine or light by pressing a button",
+    "explanation": "<Turn on> means to activate a device or light."
+  },
+  {
+    "left": "turn off",
+    "right": "to stop a machine or light by pressing a button",
+    "explanation": "<Turn off> means to deactivate a device or light."
+  },
+  {
+    "left": "look at",
+    "right": "to direct your eyes toward something",
+    "explanation": "<Look at> means to focus your eyes on something."
+  },
+  {
+    "left": "write down",
+    "right": "to put words on paper with a pen",
+    "explanation": "<Write down> means to record information on paper."
+  },
+  {
+    "left": "throw away",
+    "right": "to put something in the rubbish bin",
+    "explanation": "<Throw away> means to discard something you don't need."
+  },
+  {
+    "left": "come in",
+    "right": "to enter a room or building",
+    "explanation": "<Come in> means to enter a place."
+  }
+]

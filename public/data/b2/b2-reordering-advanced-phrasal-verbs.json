@@ -1,0 +1,86 @@
+[
+  {
+    "id": "reord-b2-apv-001",
+    "sentence": "She came up with a brilliant solution to the problem",
+    "words": ["She", "came", "up", "with", "a", "brilliant", "solution", "to", "the", "problem"],
+    "hint": "Subject + three-word phrasal verb + object",
+    "explanation": "<Come up with> means to think of or produce an idea."
+  },
+  {
+    "id": "reord-b2-apv-002",
+    "sentence": "The company had to lay off hundreds of workers last year",
+    "words": ["The", "company", "had", "to", "lay", "off", "hundreds", "of", "workers", "last", "year"],
+    "hint": "Subject + had to + phrasal verb + object + time",
+    "explanation": "<Lay off> means to dismiss employees, usually for economic reasons."
+  },
+  {
+    "id": "reord-b2-apv-003",
+    "sentence": "He managed to get away with cheating on the test",
+    "words": ["He", "managed", "to", "get", "away", "with", "cheating", "on", "the", "test"],
+    "hint": "Subject + managed to + phrasal verb + gerund",
+    "explanation": "<Get away with> means to do something wrong without being punished."
+  },
+  {
+    "id": "reord-b2-apv-004",
+    "sentence": "We need to crack down on illegal parking in the city centre",
+    "words": ["We", "need", "to", "crack", "down", "on", "illegal", "parking", "in", "the", "city", "centre"],
+    "hint": "Subject + need to + phrasal verb + object + place",
+    "explanation": "<Crack down on> means to take strict action against something."
+  },
+  {
+    "id": "reord-b2-apv-005",
+    "sentence": "She has been putting up with his bad behaviour for too long",
+    "words": ["She", "has", "been", "putting", "up", "with", "his", "bad", "behaviour", "for", "too", "long"],
+    "hint": "Subject + present perfect continuous + phrasal verb + object",
+    "explanation": "<Put up with> means to tolerate something unpleasant."
+  },
+  {
+    "id": "reord-b2-apv-006",
+    "sentence": "The detective was trying to piece together the evidence from the crime scene",
+    "words": ["The", "detective", "was", "trying", "to", "piece", "together", "the", "evidence", "from", "the", "crime", "scene"],
+    "hint": "Subject + was trying to + phrasal verb + object + place",
+    "explanation": "<Piece together> means to assemble information gradually."
+  },
+  {
+    "id": "reord-b2-apv-007",
+    "sentence": "They decided to do away with the old regulations",
+    "words": ["They", "decided", "to", "do", "away", "with", "the", "old", "regulations"],
+    "hint": "Subject + decided to + phrasal verb + object",
+    "explanation": "<Do away with> means to abolish or eliminate."
+  },
+  {
+    "id": "reord-b2-apv-008",
+    "sentence": "He was looking forward to starting his new job next month",
+    "words": ["He", "was", "looking", "forward", "to", "starting", "his", "new", "job", "next", "month"],
+    "hint": "Subject + was + phrasal verb + to + gerund + object",
+    "explanation": "<Look forward to> is followed by a gerund (-ing form)."
+  },
+  {
+    "id": "reord-b2-apv-009",
+    "sentence": "The government plans to phase out fossil fuel subsidies by 2030",
+    "words": ["The", "government", "plans", "to", "phase", "out", "fossil", "fuel", "subsidies", "by", "2030"],
+    "hint": "Subject + plans to + phrasal verb + object + time",
+    "explanation": "<Phase out> means to gradually stop using or providing something."
+  },
+  {
+    "id": "reord-b2-apv-010",
+    "sentence": "She couldn't keep up with the pace of the advanced class",
+    "words": ["She", "couldn't", "keep", "up", "with", "the", "pace", "of", "the", "advanced", "class"],
+    "hint": "Subject + couldn't + phrasal verb + object",
+    "explanation": "<Keep up with> means to maintain the same speed or level as others."
+  },
+  {
+    "id": "reord-b2-apv-011",
+    "sentence": "The manager asked us to cut back on unnecessary expenses",
+    "words": ["The", "manager", "asked", "us", "to", "cut", "back", "on", "unnecessary", "expenses"],
+    "hint": "Subject + asked + object + to + phrasal verb + object",
+    "explanation": "<Cut back on> means to reduce the amount of something."
+  },
+  {
+    "id": "reord-b2-apv-012",
+    "sentence": "He finally owned up to making the mistake in the report",
+    "words": ["He", "finally", "owned", "up", "to", "making", "the", "mistake", "in", "the", "report"],
+    "hint": "Subject + adverb + phrasal verb + to + gerund",
+    "explanation": "<Own up to> means to admit responsibility for something."
+  }
+]

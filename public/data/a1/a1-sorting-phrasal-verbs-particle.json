@@ -1,0 +1,19 @@
+[
+  {"word": "pick up", "category": "up"},
+  {"word": "wake up", "category": "up"},
+  {"word": "stand up", "category": "up"},
+  {"word": "look up", "category": "up"},
+  {"word": "give up", "category": "up"},
+  {"word": "sit down", "category": "down"},
+  {"word": "write down", "category": "down"},
+  {"word": "calm down", "category": "down"},
+  {"word": "break down", "category": "down"},
+  {"word": "turn on", "category": "on"},
+  {"word": "put on", "category": "on"},
+  {"word": "carry on", "category": "on"},
+  {"word": "hold on", "category": "on"},
+  {"word": "turn off", "category": "off"},
+  {"word": "take off", "category": "off"},
+  {"word": "put off", "category": "off"},
+  {"word": "go off", "category": "off"}
+]

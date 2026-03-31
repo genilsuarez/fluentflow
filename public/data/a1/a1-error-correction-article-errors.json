@@ -1,0 +1,127 @@
+[
+  {
+    "sentence": "I have a umbrella.",
+    "correct": ["I have an umbrella."],
+    "explanation": "Use <an> before words that start with a vowel sound: <an umbrella>."
+  },
+  {
+    "sentence": "She is a honest person.",
+    "correct": ["She is an honest person."],
+    "explanation": "Use <an> before words that start with a silent 'h': <an honest>."
+  },
+  {
+    "sentence": "He wants to be an doctor.",
+    "correct": ["He wants to be a doctor."],
+    "explanation": "Use <a> before words that start with a consonant sound: <a doctor>."
+  },
+  {
+    "sentence": "I ate an banana for breakfast.",
+    "correct": ["I ate a banana for breakfast."],
+    "explanation": "Use <a> before words that start with a consonant sound: <a banana>."
+  },
+  {
+    "sentence": "She is an teacher at my school.",
+    "correct": ["She is a teacher at my school."],
+    "explanation": "Use <a> before words that start with a consonant sound: <a teacher>."
+  },
+  {
+    "sentence": "I saw a elephant at the zoo.",
+    "correct": ["I saw an elephant at the zoo."],
+    "explanation": "Use <an> before words that start with a vowel sound: <an elephant>."
+  },
+  {
+    "sentence": "He is a engineer.",
+    "correct": ["He is an engineer."],
+    "explanation": "Use <an> before words that start with a vowel sound: <an engineer>."
+  },
+  {
+    "sentence": "I need a apple.",
+    "correct": ["I need an apple."],
+    "explanation": "Use <an> before words that start with a vowel sound: <an apple>."
+  },
+  {
+    "sentence": "She bought the new dress yesterday. It was a beautiful dress.",
+    "correct": ["She bought a new dress yesterday. It was a beautiful dress."],
+    "explanation": "Use <a> when mentioning something for the first time (not specific)."
+  },
+  {
+    "sentence": "I like the dogs. Dogs are friendly animals.",
+    "correct": ["I like dogs. Dogs are friendly animals."],
+    "explanation": "Do not use <the> when talking about things in general."
+  },
+  {
+    "sentence": "The water is important for life.",
+    "correct": ["Water is important for life."],
+    "explanation": "Do not use <the> with uncountable nouns when speaking in general."
+  },
+  {
+    "sentence": "I go to the school every day.",
+    "correct": ["I go to school every day."],
+    "explanation": "We say <go to school> (without <the>) when talking about the regular activity."
+  },
+  {
+    "sentence": "She plays the piano. She also plays the football.",
+    "correct": ["She plays the piano. She also plays football."],
+    "explanation": "Use <the> with musical instruments but NOT with sports."
+  },
+  {
+    "sentence": "I had a lunch at noon.",
+    "correct": ["I had lunch at noon."],
+    "explanation": "Do not use articles with meal names: <breakfast>, <lunch>, <dinner>."
+  },
+  {
+    "sentence": "He goes to the bed at 10 pm.",
+    "correct": ["He goes to bed at 10 pm."],
+    "explanation": "We say <go to bed> (without <the>) when talking about sleeping."
+  },
+  {
+    "sentence": "She is at the home now.",
+    "correct": ["She is at home now."],
+    "explanation": "We say <at home> (without <the>) when talking about being in your house."
+  },
+  {
+    "sentence": "I go to the work by bus.",
+    "correct": ["I go to work by bus."],
+    "explanation": "We say <go to work> (without <the>) when talking about the regular activity."
+  },
+  {
+    "sentence": "A sun is very hot today.",
+    "correct": ["The sun is very hot today."],
+    "explanation": "Use <the> with unique things: <the sun>, <the moon>, <the sky>."
+  },
+  {
+    "sentence": "I can see a moon tonight.",
+    "correct": ["I can see the moon tonight."],
+    "explanation": "Use <the> with unique things: there is only one moon."
+  },
+  {
+    "sentence": "She is a best student in the class.",
+    "correct": ["She is the best student in the class."],
+    "explanation": "Use <the> with superlatives: <the best>, <the tallest>, <the most>."
+  },
+  {
+    "sentence": "He is the tall boy. He is taller than me.",
+    "correct": ["He is a tall boy. He is taller than me."],
+    "explanation": "Use <a> when describing someone in general, not as the only one."
+  },
+  {
+    "sentence": "I want to buy the car someday.",
+    "correct": ["I want to buy a car someday."],
+    "explanation": "Use <a> when talking about any car in general, not a specific one."
+  },
+  {
+    "sentence": "She has a orange juice every morning.",
+    "correct": ["She has orange juice every morning."],
+    "explanation": "Do not use <a> with uncountable nouns like <juice>."
+  },
+  {
+    "sentence": "I need an new book for class.",
+    "correct": ["I need a new book for class."],
+    "explanation": "Use <a> before words starting with a consonant sound: <a new>."
+  },
+  {
+    "sentence": "He is a old man.",
+    "correct": ["He is an old man."],
+    "explanation": "Use <an> before words that start with a vowel sound: <an old>."
+  }
+]

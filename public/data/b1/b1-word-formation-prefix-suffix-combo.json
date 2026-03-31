@@ -1,0 +1,152 @@
+[
+  {
+    "sentence": "This old phone is completely _____ now. Nobody uses it.",
+    "rootWord": "USE",
+    "correct": "useless",
+    "explanation": "USE → useless (add -less to mean 'without use')"
+  },
+  {
+    "sentence": "The task was _____ . We finished it in five minutes.",
+    "rootWord": "DO",
+    "correct": "doable",
+    "explanation": "DO → doable (add -able to mean 'can be done')"
+  },
+  {
+    "sentence": "She found the answer _____ . It was not what she expected.",
+    "rootWord": "BELIEVE",
+    "correct": "unbelievable",
+    "explanation": "BELIEVE → unbelievable (un- + believe + -able = not able to be believed)"
+  },
+  {
+    "sentence": "The _____ of the old building was completed last month.",
+    "rootWord": "CONSTRUCT",
+    "correct": "reconstruction",
+    "explanation": "CONSTRUCT → reconstruction (re- + construction = building again)"
+  },
+  {
+    "sentence": "His behaviour was completely _____ at the dinner party.",
+    "rootWord": "ACCEPT",
+    "correct": "unacceptable",
+    "explanation": "ACCEPT → unacceptable (un- + accept + -able = not acceptable)"
+  },
+  {
+    "sentence": "The _____ of the team led to their defeat.",
+    "rootWord": "ABLE",
+    "correct": "inability",
+    "explanation": "ABLE → inability (in- + abil + -ity = lack of ability)"
+  },
+  {
+    "sentence": "She showed great _____ during the crisis.",
+    "rootWord": "RELY",
+    "correct": "reliability",
+    "explanation": "RELY → reliability (rely + -abil + -ity = quality of being reliable)"
+  },
+  {
+    "sentence": "The instructions were _____ . Nobody could follow them.",
+    "rootWord": "READ",
+    "correct": "unreadable",
+    "explanation": "READ → unreadable (un- + read + -able = not able to be read)"
+  },
+  {
+    "sentence": "The _____ of the contract caused many problems.",
+    "rootWord": "RENEW",
+    "correct": "renewal",
+    "explanation": "RENEW → renewal (re- + new + -al = the act of renewing)"
+  },
+  {
+    "sentence": "Her _____ to the team was invaluable.",
+    "rootWord": "CONTRIBUTE",
+    "correct": "contribution",
+    "explanation": "CONTRIBUTE → contribution (change -e to -ion to make a noun)"
+  },
+  {
+    "sentence": "The food was _____ . We couldn't eat it.",
+    "rootWord": "EAT",
+    "correct": "uneatable",
+    "explanation": "EAT → uneatable (un- + eat + -able = not fit to be eaten)"
+  },
+  {
+    "sentence": "The _____ of the old factory created new jobs.",
+    "rootWord": "DEVELOP",
+    "correct": "redevelopment",
+    "explanation": "DEVELOP → redevelopment (re- + develop + -ment = developing again)"
+  },
+  {
+    "sentence": "His _____ to change was frustrating for everyone.",
+    "rootWord": "WILLING",
+    "correct": "unwillingness",
+    "explanation": "WILLING → unwillingness (un- + willing + -ness = not being willing)"
+  },
+  {
+    "sentence": "The situation was _____ . There was nothing we could do.",
+    "rootWord": "AVOID",
+    "correct": "unavoidable",
+    "explanation": "AVOID → unavoidable (un- + avoid + -able = cannot be avoided)"
+  },
+  {
+    "sentence": "The _____ of the old system was necessary.",
+    "rootWord": "PLACE",
+    "correct": "replacement",
+    "explanation": "PLACE → replacement (re- + place + -ment = putting something new in place)"
+  },
+  {
+    "sentence": "She felt a sense of _____ after finishing the marathon.",
+    "rootWord": "ACHIEVE",
+    "correct": "achievement",
+    "explanation": "ACHIEVE → achievement (add -ment to make a noun)"
+  },
+  {
+    "sentence": "The _____ of the data was a serious problem.",
+    "rootWord": "SECURE",
+    "correct": "insecurity",
+    "explanation": "SECURE → insecurity (in- + secur + -ity = lack of security)"
+  },
+  {
+    "sentence": "The new policy was _____ to many employees.",
+    "rootWord": "FAIR",
+    "correct": "unfair",
+    "explanation": "FAIR → unfair (un- + fair = not fair)"
+  },
+  {
+    "sentence": "The _____ of the project was ahead of schedule.",
+    "rootWord": "COMPLETE",
+    "correct": "completion",
+    "explanation": "COMPLETE → completion (change -e to -ion to make a noun)"
+  },
+  {
+    "sentence": "His _____ was clear from the way he spoke.",
+    "rootWord": "HAPPY",
+    "correct": "unhappiness",
+    "explanation": "HAPPY → unhappiness (un- + happi + -ness = state of not being happy)"
+  },
+  {
+    "sentence": "The bridge was _____ after the earthquake.",
+    "rootWord": "PASS",
+    "correct": "impassable",
+    "explanation": "PASS → impassable (im- + pass + -able = cannot be passed)"
+  },
+  {
+    "sentence": "The _____ of the old park brought the community together.",
+    "rootWord": "STORE",
+    "correct": "restoration",
+    "explanation": "STORE → restoration (re- + stor + -ation = the act of restoring)"
+  },
+  {
+    "sentence": "Her _____ to learn new things is impressive.",
+    "rootWord": "EAGER",
+    "correct": "eagerness",
+    "explanation": "EAGER → eagerness (add -ness to make a noun)"
+  },
+  {
+    "sentence": "The problem was _____ without more information.",
+    "rootWord": "SOLVE",
+    "correct": "unsolvable",
+    "explanation": "SOLVE → unsolvable (un- + solv + -able = cannot be solved)"
+  },
+  {
+    "sentence": "The _____ of the old documents took several weeks.",
+    "rootWord": "DISCOVER",
+    "correct": "rediscovery",
+    "explanation": "DISCOVER → rediscovery (re- + discover + -y = discovering again)"
+  }
+]

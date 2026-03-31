@@ -1,152 +1,21 @@
 [
-  {
-    "word": "Notwithstanding the evidence, the jury acquitted him.",
-    "category": "Contrast/Concession",
-    "explanation": "<Notwithstanding> introduces a concession — despite the evidence"
-  },
-  {
-    "word": "Be that as it may, we must proceed with caution.",
-    "category": "Contrast/Concession",
-    "explanation": "<Be that as it may> acknowledges a point while pivoting to a contrasting stance"
-  },
-  {
-    "word": "Albeit controversial, the policy proved effective.",
-    "category": "Contrast/Concession",
-    "explanation": "<Albeit> introduces a concessive clause in formal register"
-  },
-  {
-    "word": "The plan succeeded, albeit at considerable cost.",
-    "category": "Contrast/Concession",
-    "explanation": "<Albeit> concedes a negative aspect while maintaining the main assertion"
-  },
-  {
-    "word": "Conversely, the opposing faction argued for restraint.",
-    "category": "Contrast/Concession",
-    "explanation": "<Conversely> signals a direct contrast with the previous statement"
-  },
-  {
-    "word": "Paradoxically, increased regulation led to more innovation.",
-    "category": "Contrast/Concession",
-    "explanation": "<Paradoxically> highlights an unexpected, contradictory outcome"
-  },
-  {
-    "word": "Furthermore, the data corroborates our initial hypothesis.",
-    "category": "Addition/Emphasis",
-    "explanation": "<Furthermore> adds supporting evidence to strengthen the argument"
-  },
-  {
-    "word": "What is more, the implications extend beyond our field.",
-    "category": "Addition/Emphasis",
-    "explanation": "<What is more> adds an even stronger point to the argument"
-  },
-  {
-    "word": "Indeed, the findings surpassed all expectations.",
-    "category": "Addition/Emphasis",
-    "explanation": "<Indeed> emphasizes and confirms the significance of the statement"
-  },
-  {
-    "word": "By the same token, we cannot ignore the ethical dimensions.",
-    "category": "Addition/Emphasis",
-    "explanation": "<By the same token> adds a parallel point using the same reasoning"
-  },
-  {
-    "word": "Not only did revenues increase, but morale improved markedly.",
-    "category": "Addition/Emphasis",
-    "explanation": "<Not only...but> adds emphasis through correlative conjunction"
-  },
-  {
-    "word": "To say nothing of the environmental repercussions.",
-    "category": "Addition/Emphasis",
-    "explanation": "<To say nothing of> adds an additional significant point, often understated"
-  },
-  {
-    "word": "Consequently, the board revised its strategic priorities.",
-    "category": "Cause/Result",
-    "explanation": "<Consequently> signals a direct result of the preceding information"
-  },
-  {
-    "word": "Owing to unprecedented demand, production was scaled up.",
-    "category": "Cause/Result",
-    "explanation": "<Owing to> introduces the cause in formal register"
-  },
-  {
-    "word": "Hence the need for a comprehensive review of procedures.",
-    "category": "Cause/Result",
-    "explanation": "<Hence> draws a logical conclusion from the preceding argument"
-  },
-  {
-    "word": "The merger fell through, thereby jeopardising the expansion.",
-    "category": "Cause/Result",
-    "explanation": "<Thereby> indicates the resulting consequence of the action"
-  },
-  {
-    "word": "Inasmuch as the evidence is compelling, we must act.",
-    "category": "Cause/Result",
-    "explanation": "<Inasmuch as> introduces a causal reason in highly formal register"
-  },
-  {
-    "word": "This, in turn, precipitated a crisis of confidence.",
-    "category": "Cause/Result",
-    "explanation": "<In turn> signals a chain reaction or sequential causation"
-  },
-  {
-    "word": "In the first instance, we must establish the facts.",
-    "category": "Sequence/Time",
-    "explanation": "<In the first instance> marks the initial step in a formal sequence"
-  },
-  {
-    "word": "Subsequently, the committee convened an emergency session.",
-    "category": "Sequence/Time",
-    "explanation": "<Subsequently> indicates what happened next in chronological order"
-  },
-  {
-    "word": "Hitherto, no viable alternative had been proposed.",
-    "category": "Sequence/Time",
-    "explanation": "<Hitherto> refers to the period up to the present moment (formal)"
-  },
-  {
-    "word": "Henceforth, all submissions must comply with the new guidelines.",
-    "category": "Sequence/Time",
-    "explanation": "<Henceforth> marks a point from which new rules apply going forward"
-  },
-  {
-    "word": "In the interim, provisional measures were implemented.",
-    "category": "Sequence/Time",
-    "explanation": "<In the interim> refers to the period between two events"
-  },
-  {
-    "word": "Ultimately, the initiative achieved its stated objectives.",
-    "category": "Sequence/Time",
-    "explanation": "<Ultimately> signals the final outcome after a process"
-  },
-  {
-    "word": "In the final analysis, the project was deemed a success.",
-    "category": "Sequence/Time",
-    "explanation": "<In the final analysis> signals a concluding assessment after deliberation"
-  },
-  {
-    "word": "To put it another way, the results were far from conclusive.",
-    "category": "Addition/Emphasis",
-    "explanation": "<To put it another way> rephrases a point for clarity or emphasis"
-  },
-  {
-    "word": "On the whole, the experiment yielded positive results.",
-    "category": "Addition/Emphasis",
-    "explanation": "<On the whole> introduces a general, balanced assessment"
-  },
-  {
-    "word": "For all intents and purposes, the law is now obsolete.",
-    "category": "Cause/Result",
-    "explanation": "<For all intents and purposes> means effectively or in practical terms"
-  },
-  {
-    "word": "That said, there are notable exceptions to this trend.",
-    "category": "Contrast/Concession",
-    "explanation": "<That said> acknowledges a point before introducing a contrasting view"
-  },
-  {
-    "word": "As a consequence, funding was redirected to other projects.",
-    "category": "Cause/Result",
-    "explanation": "<As a consequence> signals a direct result of the preceding situation"
-  }
+  {"word": "furthermore", "category": "Addition"},
+  {"word": "moreover", "category": "Addition"},
+  {"word": "in addition", "category": "Addition"},
+  {"word": "besides", "category": "Addition"},
+  {"word": "however", "category": "Contrast"},
+  {"word": "nevertheless", "category": "Contrast"},
+  {"word": "on the other hand", "category": "Contrast"},
+  {"word": "conversely", "category": "Contrast"},
+  {"word": "consequently", "category": "Cause & Effect"},
+  {"word": "therefore", "category": "Cause & Effect"},
+  {"word": "as a result", "category": "Cause & Effect"},
+  {"word": "hence", "category": "Cause & Effect"},
+  {"word": "to conclude", "category": "Summary"},
+  {"word": "in summary", "category": "Summary"},
+  {"word": "to sum up", "category": "Summary"},
+  {"word": "all in all", "category": "Summary"},
+  {"word": "for instance", "category": "Exemplification"},
+  {"word": "namely", "category": "Exemplification"},
+  {"word": "that is to say", "category": "Exemplification"}
 ]

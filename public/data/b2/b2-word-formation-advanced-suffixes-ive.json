@@ -1,0 +1,152 @@
+[
+  {
+    "sentence": "The new advertising campaign was very _____ .",
+    "rootWord": "EFFECT",
+    "correct": "effective",
+    "explanation": "EFFECT → effective (add -ive to make an adjective meaning 'having an effect')"
+  },
+  {
+    "sentence": "She gave a very _____ speech at the conference.",
+    "rootWord": "PERSUADE",
+    "correct": "persuasive",
+    "explanation": "PERSUADE → persuasive (change -de to -sive to make an adjective)"
+  },
+  {
+    "sentence": "The _____ nature of the chemical made it dangerous.",
+    "rootWord": "EXPLODE",
+    "correct": "explosive",
+    "explanation": "EXPLODE → explosive (change -de to -sive to make an adjective)"
+  },
+  {
+    "sentence": "His _____ behaviour at the party embarrassed everyone.",
+    "rootWord": "OUTRAGE",
+    "correct": "outrageous",
+    "explanation": "OUTRAGE → outrageous (add -ous to make an adjective)"
+  },
+  {
+    "sentence": "The _____ of the new employee was remarkable.",
+    "rootWord": "COMPETENT",
+    "correct": "competence",
+    "explanation": "COMPETENT → competence (change -t to -ce to make a noun)"
+  },
+  {
+    "sentence": "She showed great _____ in handling the crisis.",
+    "rootWord": "CONFIDENT",
+    "correct": "confidence",
+    "explanation": "CONFIDENT → confidence (change -t to -ce to make a noun)"
+  },
+  {
+    "sentence": "The _____ landscape of the mountains was breathtaking.",
+    "rootWord": "MOUNTAIN",
+    "correct": "mountainous",
+    "explanation": "MOUNTAIN → mountainous (add -ous to make an adjective)"
+  },
+  {
+    "sentence": "The _____ of the new technology was impressive.",
+    "rootWord": "INNOVATE",
+    "correct": "innovation",
+    "explanation": "INNOVATE → innovation (change -e to -ion to make a noun)"
+  },
+  {
+    "sentence": "His _____ approach to problem-solving was admired.",
+    "rootWord": "CREATE",
+    "correct": "creative",
+    "explanation": "CREATE → creative (change -e to -ive to make an adjective)"
+  },
+  {
+    "sentence": "The _____ of the old building was a major concern.",
+    "rootWord": "MAINTAIN",
+    "correct": "maintenance",
+    "explanation": "MAINTAIN → maintenance (change -tain to -tenance to make a noun)"
+  },
+  {
+    "sentence": "She received a _____ response from the audience.",
+    "rootWord": "FAVOUR",
+    "correct": "favourable",
+    "explanation": "FAVOUR → favourable (add -able to make an adjective)"
+  },
+  {
+    "sentence": "The _____ of the new drug was tested in clinical trials.",
+    "rootWord": "SAFE",
+    "correct": "safety",
+    "explanation": "SAFE → safety (change -e to -ety to make a noun)"
+  },
+  {
+    "sentence": "His _____ remarks offended many people.",
+    "rootWord": "PROVOKE",
+    "correct": "provocative",
+    "explanation": "PROVOKE → provocative (change -ke to -cative to make an adjective)"
+  },
+  {
+    "sentence": "The _____ of the project depended on good teamwork.",
+    "rootWord": "SUCCEED",
+    "correct": "success",
+    "explanation": "SUCCEED → success (change -eed to -ess to make a noun)"
+  },
+  {
+    "sentence": "She made a _____ decision that changed her career.",
+    "rootWord": "COURAGE",
+    "correct": "courageous",
+    "explanation": "COURAGE → courageous (add -ous to make an adjective)"
+  },
+  {
+    "sentence": "The _____ of the evidence was questioned by the defence.",
+    "rootWord": "RELEVANT",
+    "correct": "relevance",
+    "explanation": "RELEVANT → relevance (change -t to -ce to make a noun)"
+  },
+  {
+    "sentence": "The company adopted a more _____ strategy.",
+    "rootWord": "COMPETE",
+    "correct": "competitive",
+    "explanation": "COMPETE → competitive (change -e to -itive to make an adjective)"
+  },
+  {
+    "sentence": "The _____ of the new policy was debated in parliament.",
+    "rootWord": "IMPLEMENT",
+    "correct": "implementation",
+    "explanation": "IMPLEMENT → implementation (add -ation to make a noun)"
+  },
+  {
+    "sentence": "She has an _____ personality that attracts people.",
+    "rootWord": "ATTRACT",
+    "correct": "attractive",
+    "explanation": "ATTRACT → attractive (add -ive to make an adjective)"
+  },
+  {
+    "sentence": "The _____ of the old system was no longer acceptable.",
+    "rootWord": "DEPEND",
+    "correct": "dependence",
+    "explanation": "DEPEND → dependence (add -ence to make a noun)"
+  },
+  {
+    "sentence": "His _____ attitude made him popular with colleagues.",
+    "rootWord": "COOPERATE",
+    "correct": "cooperative",
+    "explanation": "COOPERATE → cooperative (change -e to -ive to make an adjective)"
+  },
+  {
+    "sentence": "The _____ of the new museum attracted many visitors.",
+    "rootWord": "MAGNIFICENT",
+    "correct": "magnificence",
+    "explanation": "MAGNIFICENT → magnificence (change -t to -ce to make a noun)"
+  },
+  {
+    "sentence": "She gave a _____ performance in the play.",
+    "rootWord": "MARVEL",
+    "correct": "marvellous",
+    "explanation": "MARVEL → marvellous (add -lous to make an adjective)"
+  },
+  {
+    "sentence": "The _____ of the new employee exceeded expectations.",
+    "rootWord": "PERFORM",
+    "correct": "performance",
+    "explanation": "PERFORM → performance (add -ance to make a noun)"
+  },
+  {
+    "sentence": "His _____ comments during the meeting were unhelpful.",
+    "rootWord": "DESTRUCT",
+    "correct": "destructive",
+    "explanation": "DESTRUCT → destructive (add -ive to make an adjective)"
+  }
+]

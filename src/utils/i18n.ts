@@ -54,6 +54,8 @@ const translations = {
       modeSorting: 'Sorting exercise',
       modeMatching: 'Matching exercise',
       modeReading: 'Reading',
+      modeWordFormation: 'Word Formation',
+      modeErrorCorrection: 'Error Correction',
       modeDefault: 'Exercise',
       connectionError: 'Connection error',
       connectionErrorDesc: 'Could not load modules. Check your connection.',
@@ -179,6 +181,12 @@ const translations = {
       increaseReorderingCount: 'Increase reordering count',
       decreaseTransformationCount: 'Decrease transformation count',
       increaseTransformationCount: 'Increase transformation count',
+      wordFormationMode: 'Word Formation',
+      decreaseWordFormationCount: 'Decrease word formation count',
+      increaseWordFormationCount: 'Increase word formation count',
+      errorCorrectionMode: 'Error Correction',
+      decreaseErrorCorrectionCount: 'Decrease error correction count',
+      increaseErrorCorrectionCount: 'Increase error correction count',
     },
     about: {
       title: 'About FluentFlow',
@@ -227,6 +235,8 @@ const translations = {
       readingMode: 'Reading',
       reorderingMode: 'Reorder',
       transformationMode: 'Transform',
+      wordFormationMode: 'Word Formation',
+      errorCorrectionMode: 'Error Correction',
       startLearning: 'Start Learning',
       continueSession: 'Continue Session',
       newSession: 'New Session',
@@ -312,6 +322,13 @@ const translations = {
       // Transformation mode
       transformInstruction: 'Rewrite the sentence following the instruction',
       noTransformationExercisesAvailable: 'No transformation exercises available',
+      // Word Formation mode
+      wordFormationInstruction: 'Type the correct form of the word in CAPITALS',
+      noWordFormationExercisesAvailable: 'No word formation exercises available',
+      rootWord: 'Root word',
+      // Error Correction mode
+      errorCorrectionInstruction: 'Rewrite the sentence correcting the error',
+      noErrorCorrectionExercisesAvailable: 'No error correction exercises available',
     },
     scores: {
       correct: 'Correct',
@@ -621,6 +638,8 @@ const translations = {
       modeSorting: 'Ejercicio de clasificación',
       modeMatching: 'Ejercicio de emparejamiento',
       modeReading: 'Lectura',
+      modeWordFormation: 'Formación de Palabras',
+      modeErrorCorrection: 'Corrección de Errores',
       modeDefault: 'Ejercicio',
       connectionError: 'Error de conexión',
       connectionErrorDesc: 'No se pudieron cargar los módulos. Verifica tu conexión.',
@@ -746,6 +765,12 @@ const translations = {
       increaseReorderingCount: 'Aumentar cantidad de reordenar',
       decreaseTransformationCount: 'Disminuir cantidad de transformar',
       increaseTransformationCount: 'Aumentar cantidad de transformar',
+      wordFormationMode: 'Formación de Palabras',
+      decreaseWordFormationCount: 'Disminuir cantidad de formación de palabras',
+      increaseWordFormationCount: 'Aumentar cantidad de formación de palabras',
+      errorCorrectionMode: 'Corrección de Errores',
+      decreaseErrorCorrectionCount: 'Disminuir cantidad de corrección de errores',
+      increaseErrorCorrectionCount: 'Aumentar cantidad de corrección de errores',
     },
     about: {
       title: 'Acerca de FluentFlow',
@@ -794,6 +819,8 @@ const translations = {
       readingMode: 'Lectura',
       reorderingMode: 'Reordenar',
       transformationMode: 'Transformar',
+      wordFormationMode: 'Formación de Palabras',
+      errorCorrectionMode: 'Corrección de Errores',
       startLearning: 'Comenzar Aprendizaje',
       continueSession: 'Continuar Sesión',
       newSession: 'Nueva Sesión',
@@ -879,6 +906,13 @@ const translations = {
       // Transformation mode
       transformInstruction: 'Reescribe la oración siguiendo la instrucción',
       noTransformationExercisesAvailable: 'No hay ejercicios de transformación disponibles',
+      // Word Formation mode
+      wordFormationInstruction: 'Escribe la forma correcta de la palabra en MAYÚSCULAS',
+      noWordFormationExercisesAvailable: 'No hay ejercicios de formación de palabras disponibles',
+      rootWord: 'Palabra raíz',
+      // Error Correction mode
+      errorCorrectionInstruction: 'Reescribe la oración corrigiendo el error',
+      noErrorCorrectionExercisesAvailable: 'No hay ejercicios de corrección de errores disponibles',
     },
     scores: {
       correct: 'Correctas',

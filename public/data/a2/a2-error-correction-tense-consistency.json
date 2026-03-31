@@ -1,0 +1,127 @@
+[
+  {
+    "sentence": "Yesterday I go to the supermarket and bought some fruit.",
+    "correct": ["Yesterday I went to the supermarket and bought some fruit."],
+    "explanation": "<Yesterday> signals past tense. <Go> should be <went> to match <bought>."
+  },
+  {
+    "sentence": "She was watching TV when the phone rings.",
+    "correct": ["She was watching TV when the phone rang."],
+    "explanation": "Both actions are in the past. <Rings> should be <rang> (past simple)."
+  },
+  {
+    "sentence": "Last week we visit the museum and saw many paintings.",
+    "correct": ["Last week we visited the museum and saw many paintings."],
+    "explanation": "<Last week> signals past tense. <Visit> should be <visited>."
+  },
+  {
+    "sentence": "He studied all night and then he goes to bed.",
+    "correct": ["He studied all night and then he went to bed."],
+    "explanation": "Both actions are in the past. <Goes> should be <went>."
+  },
+  {
+    "sentence": "I am eating dinner when my friend called me.",
+    "correct": ["I was eating dinner when my friend called me."],
+    "explanation": "The action was in the past. <Am eating> should be <was eating>."
+  },
+  {
+    "sentence": "They played football and then they are going home.",
+    "correct": ["They played football and then they went home."],
+    "explanation": "Both actions are in the past. <Are going> should be <went>."
+  },
+  {
+    "sentence": "She cooked dinner while he is watching TV.",
+    "correct": ["She cooked dinner while he was watching TV.", "She was cooking dinner while he was watching TV."],
+    "explanation": "Both actions happened at the same time in the past. <Is watching> should be <was watching>."
+  },
+  {
+    "sentence": "We will go to the beach tomorrow and we swam all day.",
+    "correct": ["We will go to the beach tomorrow and we will swim all day."],
+    "explanation": "<Tomorrow> signals future. <Swam> should be <will swim>."
+  },
+  {
+    "sentence": "He walks to school every day last year.",
+    "correct": ["He walked to school every day last year."],
+    "explanation": "<Last year> signals past tense. <Walks> should be <walked>."
+  },
+  {
+    "sentence": "I was reading a book when the lights go out.",
+    "correct": ["I was reading a book when the lights went out."],
+    "explanation": "The interrupting action should be in past simple: <went out>."
+  },
+  {
+    "sentence": "She finished her homework and then she watches a movie.",
+    "correct": ["She finished her homework and then she watched a movie."],
+    "explanation": "Both actions are in the past. <Watches> should be <watched>."
+  },
+  {
+    "sentence": "They are playing in the park when it started to rain.",
+    "correct": ["They were playing in the park when it started to rain."],
+    "explanation": "The ongoing action was in the past. <Are playing> should be <were playing>."
+  },
+  {
+    "sentence": "Last summer I travel to Spain and I visited Barcelona.",
+    "correct": ["Last summer I travelled to Spain and I visited Barcelona."],
+    "explanation": "<Last summer> signals past. <Travel> should be <travelled>."
+  },
+  {
+    "sentence": "He is sleeping when the alarm clock rang.",
+    "correct": ["He was sleeping when the alarm clock rang."],
+    "explanation": "The ongoing action was in the past. <Is sleeping> should be <was sleeping>."
+  },
+  {
+    "sentence": "We had a great time and we are very happy.",
+    "correct": ["We had a great time and we were very happy."],
+    "explanation": "Both parts describe the past. <Are> should be <were>."
+  },
+  {
+    "sentence": "She buys a new dress and wore it to the party.",
+    "correct": ["She bought a new dress and wore it to the party."],
+    "explanation": "Both actions are in the past. <Buys> should be <bought>."
+  },
+  {
+    "sentence": "I will call you when I arrive yesterday.",
+    "correct": ["I called you when I arrived yesterday."],
+    "explanation": "<Yesterday> signals past. Both verbs should be in past tense."
+  },
+  {
+    "sentence": "The children were playing outside and their mother calls them for dinner.",
+    "correct": ["The children were playing outside and their mother called them for dinner."],
+    "explanation": "Both actions are in the past. <Calls> should be <called>."
+  },
+  {
+    "sentence": "He ran to the bus stop but the bus already leaves.",
+    "correct": ["He ran to the bus stop but the bus had already left.", "He ran to the bus stop but the bus already left."],
+    "explanation": "Both actions are in the past. <Leaves> should be <left> or <had already left>."
+  },
+  {
+    "sentence": "Next week I visited my grandmother.",
+    "correct": ["Next week I will visit my grandmother."],
+    "explanation": "<Next week> signals future. <Visited> should be <will visit>."
+  },
+  {
+    "sentence": "She was walking home when she sees a cat.",
+    "correct": ["She was walking home when she saw a cat."],
+    "explanation": "The interrupting action should be past simple: <saw>."
+  },
+  {
+    "sentence": "They danced all night and have a wonderful time.",
+    "correct": ["They danced all night and had a wonderful time."],
+    "explanation": "Both actions are in the past. <Have> should be <had>."
+  },
+  {
+    "sentence": "I wake up early this morning and went for a run.",
+    "correct": ["I woke up early this morning and went for a run."],
+    "explanation": "<This morning> (past context). <Wake> should be <woke>."
+  },
+  {
+    "sentence": "She is studying when the doorbell rang last night.",
+    "correct": ["She was studying when the doorbell rang last night."],
+    "explanation": "<Last night> signals past. <Is studying> should be <was studying>."
+  },
+  {
+    "sentence": "We eat pizza and then we watched a film.",
+    "correct": ["We ate pizza and then we watched a film."],
+    "explanation": "Both actions are in the past. <Eat> should be <ate>."
+  }
+]

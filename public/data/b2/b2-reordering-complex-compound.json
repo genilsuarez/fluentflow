@@ -1,0 +1,86 @@
+[
+  {
+    "id": "reord-b2-cc-001",
+    "sentence": "Although the weather was terrible we decided to go hiking",
+    "words": ["Although", "the", "weather", "was", "terrible", "we", "decided", "to", "go", "hiking"],
+    "hint": "Although + clause, main clause",
+    "explanation": "<Although> introduces a contrast: despite the bad weather, they went hiking."
+  },
+  {
+    "id": "reord-b2-cc-002",
+    "sentence": "Not only did she pass the exam but she also got the highest mark",
+    "words": ["Not", "only", "did", "she", "pass", "the", "exam", "but", "she", "also", "got", "the", "highest", "mark"],
+    "hint": "Not only + inversion, but also + clause",
+    "explanation": "<Not only ... but also> requires inversion in the first clause."
+  },
+  {
+    "id": "reord-b2-cc-003",
+    "sentence": "Had I known about the delay I would have taken a different route",
+    "words": ["Had", "I", "known", "about", "the", "delay", "I", "would", "have", "taken", "a", "different", "route"],
+    "hint": "Had + subject + past participle, would have + past participle",
+    "explanation": "Inverted third conditional: <Had I known> = <If I had known>."
+  },
+  {
+    "id": "reord-b2-cc-004",
+    "sentence": "The project was completed on time despite the many challenges we faced",
+    "words": ["The", "project", "was", "completed", "on", "time", "despite", "the", "many", "challenges", "we", "faced"],
+    "hint": "Main clause + despite + noun phrase",
+    "explanation": "<Despite> is followed by a noun phrase, not a clause with a verb."
+  },
+  {
+    "id": "reord-b2-cc-005",
+    "sentence": "No sooner had we arrived than it started to rain heavily",
+    "words": ["No", "sooner", "had", "we", "arrived", "than", "it", "started", "to", "rain", "heavily"],
+    "hint": "No sooner + had + subject + past participle + than",
+    "explanation": "<No sooner ... than> requires inversion and means 'immediately after'."
+  },
+  {
+    "id": "reord-b2-cc-006",
+    "sentence": "Whereas some people prefer city life others enjoy living in the countryside",
+    "words": ["Whereas", "some", "people", "prefer", "city", "life", "others", "enjoy", "living", "in", "the", "countryside"],
+    "hint": "Whereas + clause, contrasting clause",
+    "explanation": "<Whereas> introduces a contrast between two different preferences."
+  },
+  {
+    "id": "reord-b2-cc-007",
+    "sentence": "The more you practise the better you will become at speaking English",
+    "words": ["The", "more", "you", "practise", "the", "better", "you", "will", "become", "at", "speaking", "English"],
+    "hint": "The more + clause, the better + clause",
+    "explanation": "<The more ... the better> is a comparative correlative structure."
+  },
+  {
+    "id": "reord-b2-cc-008",
+    "sentence": "She not only speaks French fluently but also has a good command of German",
+    "words": ["She", "not", "only", "speaks", "French", "fluently", "but", "also", "has", "a", "good", "command", "of", "German"],
+    "hint": "Subject + not only + verb, but also + verb",
+    "explanation": "<Not only ... but also> without inversion when the subject comes first."
+  },
+  {
+    "id": "reord-b2-cc-009",
+    "sentence": "However hard she tried she could not solve the problem",
+    "words": ["However", "hard", "she", "tried", "she", "could", "not", "solve", "the", "problem"],
+    "hint": "However + adjective/adverb + clause, main clause",
+    "explanation": "<However hard> means 'no matter how hard'."
+  },
+  {
+    "id": "reord-b2-cc-010",
+    "sentence": "Neither the manager nor the employees were aware of the changes",
+    "words": ["Neither", "the", "manager", "nor", "the", "employees", "were", "aware", "of", "the", "changes"],
+    "hint": "Neither + noun + nor + noun + verb",
+    "explanation": "<Neither ... nor> connects two negative elements. The verb agrees with the nearest subject."
+  },
+  {
+    "id": "reord-b2-cc-011",
+    "sentence": "Only after reading the report did he understand the full extent of the problem",
+    "words": ["Only", "after", "reading", "the", "report", "did", "he", "understand", "the", "full", "extent", "of", "the", "problem"],
+    "hint": "Only after + gerund, inversion",
+    "explanation": "<Only after> at the start requires inversion: <did he understand>."
+  },
+  {
+    "id": "reord-b2-cc-012",
+    "sentence": "Much as I appreciate your help I think I can manage on my own",
+    "words": ["Much", "as", "I", "appreciate", "your", "help", "I", "think", "I", "can", "manage", "on", "my", "own"],
+    "hint": "Much as + clause, main clause",
+    "explanation": "<Much as> means 'although I very much' — it introduces a concession."
+  }
+]

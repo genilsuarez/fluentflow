@@ -3368,10 +3368,14 @@
     "name": "Basic Sentence Transformations",
     "learningMode": "transformation",
     "dataPath": "data/a1/a1-transformation-basic-sentences.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Grammar",
     "unit": 2,
-    "prerequisites": ["completion-basic-sentences-a1"],
+    "prerequisites": [
+      "completion-basic-sentences-a1"
+    ],
     "description": "Transform simple sentences: negatives, questions, tense changes",
     "estimatedTime": 8,
     "difficulty": 1
@@ -3381,10 +3385,14 @@
     "name": "Tense Transformations",
     "learningMode": "transformation",
     "dataPath": "data/a2/a2-transformation-tense-changes.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Grammar",
     "unit": 3,
-    "prerequisites": ["completion-present-perfect-a2"],
+    "prerequisites": [
+      "completion-present-perfect-a2"
+    ],
     "description": "Rewrite sentences changing tenses, voice, and reported speech",
     "estimatedTime": 10,
     "difficulty": 2
@@ -3394,10 +3402,14 @@
     "name": "Conditionals & Passive Transformations",
     "learningMode": "transformation",
     "dataPath": "data/b1/b1-transformation-conditionals-passive.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
     "unit": 4,
-    "prerequisites": ["completion-conditionals-b1"],
+    "prerequisites": [
+      "completion-conditionals-b1"
+    ],
     "description": "Transform sentences using conditionals, passive voice, and indirect speech",
     "estimatedTime": 12,
     "difficulty": 3
@@ -3407,10 +3419,14 @@
     "name": "Advanced Grammar Transformations",
     "learningMode": "transformation",
     "dataPath": "data/b2/b2-transformation-advanced-grammar.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Grammar",
     "unit": 5,
-    "prerequisites": ["completion-conditionals-advanced-b2"],
+    "prerequisites": [
+      "completion-conditionals-advanced-b2"
+    ],
     "description": "Third conditional, cleft sentences, causative, mixed conditionals",
     "estimatedTime": 15,
     "difficulty": 4
@@ -3420,10 +3436,14 @@
     "name": "Inversions & Subjunctive Transformations",
     "learningMode": "transformation",
     "dataPath": "data/c1/c1-transformation-inversions-subjunctive.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Grammar",
     "unit": 5,
-    "prerequisites": ["completion-advanced-grammar-inversions-c1"],
+    "prerequisites": [
+      "completion-advanced-grammar-inversions-c1"
+    ],
     "description": "Formal inversions, subjunctive mood, reduced clauses, impersonal passive",
     "estimatedTime": 15,
     "difficulty": 5
@@ -3433,12 +3453,1104 @@
     "name": "Formal & Academic Transformations",
     "learningMode": "transformation",
     "dataPath": "data/c2/c2-transformation-formal-structures.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Grammar",
     "unit": 6,
-    "prerequisites": ["completion-advanced-grammatical-structures-c2"],
+    "prerequisites": [
+      "completion-advanced-grammatical-structures-c2"
+    ],
     "description": "Literary inversions, nominalization, hedging, absolute participle clauses",
     "estimatedTime": 18,
     "difficulty": 5
+  },
+  {
+    "id": "a1-word-formation-basic-suffixes",
+    "name": "Basic Suffixes — Jobs & People (-er, -or)",
+    "learningMode": "word-formation",
+    "dataPath": "data/a1/a1-word-formation-basic-suffixes.json",
+    "level": [
+      "a1"
+    ],
+    "category": "Vocabulary",
+    "unit": 1,
+    "prerequisites": [
+      "transformation-basic-sentences-a1"
+    ],
+    "description": "Practice forming nouns for jobs and people using -er and -or suffixes",
+    "estimatedTime": 5,
+    "difficulty": 1
+  },
+  {
+    "id": "a2-word-formation-common-nouns",
+    "name": "Common Noun Suffixes (-tion, -ment, -ness)",
+    "learningMode": "word-formation",
+    "dataPath": "data/a2/a2-word-formation-common-nouns.json",
+    "level": [
+      "a2"
+    ],
+    "category": "Vocabulary",
+    "unit": 2,
+    "prerequisites": [
+      "transformation-tense-changes-a2"
+    ],
+    "description": "Practice forming nouns using common suffixes like -tion, -ment, and -ness",
+    "estimatedTime": 5,
+    "difficulty": 2
+  },
+  {
+    "id": "b1-word-formation-prefix-suffix",
+    "name": "Prefix & Suffix Combinations (un-, re-, -able, -ity)",
+    "learningMode": "word-formation",
+    "dataPath": "data/b1/b1-word-formation-prefix-suffix.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Vocabulary",
+    "unit": 3,
+    "prerequisites": [
+      "transformation-conditionals-passive-b1"
+    ],
+    "description": "Practice combining prefixes and suffixes to form new words",
+    "estimatedTime": 5,
+    "difficulty": 3
+  },
+  {
+    "id": "b2-word-formation-advanced-suffixes",
+    "name": "Advanced Suffixes (-ive, -ous, -ment, -ence)",
+    "learningMode": "word-formation",
+    "dataPath": "data/b2/b2-word-formation-advanced-suffixes.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Vocabulary",
+    "unit": 4,
+    "prerequisites": [
+      "transformation-advanced-grammar-b2"
+    ],
+    "description": "Practice advanced word formation with suffixes like -ive, -ous, -ment, and -ence",
+    "estimatedTime": 5,
+    "difficulty": 4
+  },
+  {
+    "id": "c1-word-formation-multi-step",
+    "name": "Multi-step Derivations (ir-, il-, im- + -ity, -ness)",
+    "learningMode": "word-formation",
+    "dataPath": "data/c1/c1-word-formation-multi-step.json",
+    "level": [
+      "c1"
+    ],
+    "category": "Grammar",
+    "unit": 5,
+    "prerequisites": [
+      "transformation-inversions-subjunctive-c1"
+    ],
+    "description": "Practice complex multi-step word derivations with negative prefixes and abstract suffixes",
+    "estimatedTime": 5,
+    "difficulty": 5
+  },
+  {
+    "id": "c2-word-formation-scholarly",
+    "name": "Scholarly Word Families",
+    "learningMode": "word-formation",
+    "dataPath": "data/c2/c2-word-formation-scholarly.json",
+    "level": [
+      "c2"
+    ],
+    "category": "Vocabulary",
+    "unit": 6,
+    "prerequisites": [
+      "transformation-formal-structures-c2"
+    ],
+    "description": "Practice scholarly and literary word formation with archaic and academic derivations",
+    "estimatedTime": 5,
+    "difficulty": 6
+  },
+  {
+    "id": "a1-error-correction-subject-verb",
+    "name": "Fix Basic Subject-Verb Agreement",
+    "learningMode": "error-correction",
+    "dataPath": "data/a1/a1-error-correction-subject-verb.json",
+    "level": [
+      "a1"
+    ],
+    "category": "Grammar",
+    "unit": 1,
+    "prerequisites": [
+      "a1-word-formation-basic-suffixes"
+    ],
+    "description": "Identify and correct basic subject-verb agreement errors",
+    "estimatedTime": 5,
+    "difficulty": 1
+  },
+  {
+    "id": "a2-error-correction-tense-errors",
+    "name": "Fix Tense Consistency Errors",
+    "learningMode": "error-correction",
+    "dataPath": "data/a2/a2-error-correction-tense-errors.json",
+    "level": [
+      "a2"
+    ],
+    "category": "Grammar",
+    "unit": 2,
+    "prerequisites": [
+      "a2-word-formation-common-nouns"
+    ],
+    "description": "Identify and correct tense consistency and basic preposition errors",
+    "estimatedTime": 5,
+    "difficulty": 2
+  },
+  {
+    "id": "b1-error-correction-conditionals",
+    "name": "Fix Conditional & Passive Errors",
+    "learningMode": "error-correction",
+    "dataPath": "data/b1/b1-error-correction-conditionals.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Grammar",
+    "unit": 3,
+    "prerequisites": [
+      "b1-word-formation-prefix-suffix"
+    ],
+    "description": "Identify and correct conditional, passive voice, and preposition errors",
+    "estimatedTime": 5,
+    "difficulty": 3
+  },
+  {
+    "id": "b2-error-correction-advanced-tense",
+    "name": "Fix Advanced Tense & Collocation Errors",
+    "learningMode": "error-correction",
+    "dataPath": "data/b2/b2-error-correction-advanced-tense.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Grammar",
+    "unit": 4,
+    "prerequisites": [
+      "b2-word-formation-advanced-suffixes"
+    ],
+    "description": "Identify and correct advanced tense, collocation, and word order errors",
+    "estimatedTime": 5,
+    "difficulty": 4
+  },
+  {
+    "id": "c1-error-correction-inversion",
+    "name": "Fix Inversion & Subjunctive Errors",
+    "learningMode": "error-correction",
+    "dataPath": "data/c1/c1-error-correction-inversion.json",
+    "level": [
+      "c1"
+    ],
+    "category": "Grammar",
+    "unit": 5,
+    "prerequisites": [
+      "c1-word-formation-multi-step"
+    ],
+    "description": "Identify and correct inversion, subjunctive, and advanced phrasal verb errors",
+    "estimatedTime": 5,
+    "difficulty": 5
+  },
+  {
+    "id": "c2-error-correction-register",
+    "name": "Fix Subtle Register & Collocation Errors",
+    "learningMode": "error-correction",
+    "dataPath": "data/c2/c2-error-correction-register.json",
+    "level": [
+      "c2"
+    ],
+    "category": "Grammar",
+    "unit": 6,
+    "prerequisites": [
+      "c2-word-formation-scholarly"
+    ],
+    "description": "Identify and correct subtle register, collocation, and literary idiom errors",
+    "estimatedTime": 5,
+    "difficulty": 6
+  },
+  {
+    "id": "a1-transformation-pronoun-possessive",
+    "name": "Pronoun & Possessive Transformations",
+    "learningMode": "transformation",
+    "dataPath": "data/a1/a1-transformation-pronoun-possessive.json",
+    "level": [
+      "a1"
+    ],
+    "category": "Grammar",
+    "unit": 1,
+    "prerequisites": [
+      "a1-error-correction-subject-verb"
+    ],
+    "description": "Practice transforming sentences by changing pronouns and possessive forms",
+    "estimatedTime": 5,
+    "difficulty": 1
+  },
+  {
+    "id": "a1-transformation-singular-plural",
+    "name": "Singular to Plural Transformations",
+    "learningMode": "transformation",
+    "dataPath": "data/a1/a1-transformation-singular-plural.json",
+    "level": [
+      "a1"
+    ],
+    "category": "Vocabulary",
+    "unit": 1,
+    "prerequisites": [
+      "a1-transformation-pronoun-possessive"
+    ],
+    "description": "Practice transforming sentences from singular to plural forms",
+    "estimatedTime": 5,
+    "difficulty": 1
+  },
+  {
+    "id": "a1-word-formation-jobs-people",
+    "name": "Basic Suffixes — Jobs & People (-er, -or)",
+    "learningMode": "word-formation",
+    "dataPath": "data/a1/a1-word-formation-jobs-people.json",
+    "level": [
+      "a1"
+    ],
+    "category": "Vocabulary",
+    "unit": 1,
+    "prerequisites": [
+      "a1-transformation-singular-plural"
+    ],
+    "description": "Form nouns for jobs and people using -er and -or suffixes",
+    "estimatedTime": 5,
+    "difficulty": 1
+  },
+  {
+    "id": "a1-word-formation-adjective-formation",
+    "name": "Simple Adjective Formation (-y, -ful)",
+    "learningMode": "word-formation",
+    "dataPath": "data/a1/a1-word-formation-adjective-formation.json",
+    "level": [
+      "a1"
+    ],
+    "category": "Grammar",
+    "unit": 1,
+    "prerequisites": [
+      "a1-word-formation-jobs-people"
+    ],
+    "description": "Form simple adjectives using -y and -ful suffixes",
+    "estimatedTime": 5,
+    "difficulty": 1
+  },
+  {
+    "id": "a1-error-correction-subject-verb-agreement",
+    "name": "Fix Basic Subject-Verb Agreement",
+    "learningMode": "error-correction",
+    "dataPath": "data/a1/a1-error-correction-subject-verb-agreement.json",
+    "level": [
+      "a1"
+    ],
+    "category": "Grammar",
+    "unit": 1,
+    "prerequisites": [
+      "a1-word-formation-adjective-formation"
+    ],
+    "description": "Identify and fix basic subject-verb agreement errors",
+    "estimatedTime": 5,
+    "difficulty": 1
+  },
+  {
+    "id": "a1-error-correction-article-errors",
+    "name": "Fix Common Article Errors",
+    "learningMode": "error-correction",
+    "dataPath": "data/a1/a1-error-correction-article-errors.json",
+    "level": [
+      "a1"
+    ],
+    "category": "Vocabulary",
+    "unit": 1,
+    "prerequisites": [
+      "a1-error-correction-subject-verb-agreement"
+    ],
+    "description": "Identify and fix common article usage errors (a, an, the)",
+    "estimatedTime": 5,
+    "difficulty": 1
+  },
+  {
+    "id": "a1-reordering-daily-routine",
+    "name": "Reorder Daily Routine Sentences",
+    "learningMode": "reordering",
+    "dataPath": "data/a1/a1-reordering-daily-routine.json",
+    "level": [
+      "a1"
+    ],
+    "category": "Vocabulary",
+    "unit": 1,
+    "prerequisites": [
+      "a1-error-correction-article-errors"
+    ],
+    "description": "Put words in the correct order to form daily routine sentences",
+    "estimatedTime": 3,
+    "difficulty": 1
+  },
+  {
+    "id": "a1-sorting-simple-idioms",
+    "name": "Sort Simple Idioms by Meaning",
+    "learningMode": "sorting",
+    "dataPath": "data/a1/a1-sorting-simple-idioms.json",
+    "level": [
+      "a1"
+    ],
+    "category": "Idioms",
+    "unit": 1,
+    "prerequisites": [
+      "a1-reordering-daily-routine"
+    ],
+    "description": "Sort simple English idioms into categories by their meaning",
+    "estimatedTime": 3,
+    "difficulty": 1
+  },
+  {
+    "id": "a1-matching-basic-phrasal-verbs",
+    "name": "Match Basic Phrasal Verbs to Pictures",
+    "learningMode": "matching",
+    "dataPath": "data/a1/a1-matching-basic-phrasal-verbs.json",
+    "level": [
+      "a1"
+    ],
+    "category": "PhrasalVerbs",
+    "unit": 1,
+    "prerequisites": [
+      "a1-sorting-simple-idioms"
+    ],
+    "description": "Match basic phrasal verbs to their visual representations",
+    "estimatedTime": 3,
+    "difficulty": 1
+  },
+  {
+    "id": "a1-sorting-phrasal-verbs-particle",
+    "name": "Sort Phrasal Verbs by Particle (up/down/on/off)",
+    "learningMode": "sorting",
+    "dataPath": "data/a1/a1-sorting-phrasal-verbs-particle.json",
+    "level": [
+      "a1"
+    ],
+    "category": "PhrasalVerbs",
+    "unit": 1,
+    "prerequisites": [
+      "a1-matching-basic-phrasal-verbs"
+    ],
+    "description": "Sort phrasal verbs by their particle (up, down, on, off)",
+    "estimatedTime": 3,
+    "difficulty": 1
+  },
+  {
+    "id": "a2-transformation-past-continuous-future",
+    "name": "Past Continuous & Future Transformations",
+    "learningMode": "transformation",
+    "dataPath": "data/a2/a2-transformation-past-continuous-future.json",
+    "level": [
+      "a2"
+    ],
+    "category": "Grammar",
+    "unit": 2,
+    "prerequisites": [
+      "a2-error-correction-tense-errors"
+    ],
+    "description": "Transform sentences between past continuous and future tenses",
+    "estimatedTime": 5,
+    "difficulty": 2
+  },
+  {
+    "id": "a2-transformation-phrasal-verb-tense",
+    "name": "Phrasal Verb Tense Transformations",
+    "learningMode": "transformation",
+    "dataPath": "data/a2/a2-transformation-phrasal-verb-tense.json",
+    "level": [
+      "a2"
+    ],
+    "category": "PhrasalVerbs",
+    "unit": 2,
+    "prerequisites": [
+      "a2-transformation-past-continuous-future"
+    ],
+    "description": "Transform phrasal verb sentences across different tenses",
+    "estimatedTime": 5,
+    "difficulty": 2
+  },
+  {
+    "id": "a2-word-formation-noun-suffixes",
+    "name": "Common Noun Suffixes (-tion, -ment, -ness)",
+    "learningMode": "word-formation",
+    "dataPath": "data/a2/a2-word-formation-noun-suffixes.json",
+    "level": [
+      "a2"
+    ],
+    "category": "Vocabulary",
+    "unit": 2,
+    "prerequisites": [
+      "a2-transformation-phrasal-verb-tense"
+    ],
+    "description": "Form nouns using common suffixes -tion, -ment, and -ness",
+    "estimatedTime": 5,
+    "difficulty": 2
+  },
+  {
+    "id": "a2-word-formation-adverb-formation",
+    "name": "Adverb Formation (-ly)",
+    "learningMode": "word-formation",
+    "dataPath": "data/a2/a2-word-formation-adverb-formation.json",
+    "level": [
+      "a2"
+    ],
+    "category": "Grammar",
+    "unit": 2,
+    "prerequisites": [
+      "a2-word-formation-noun-suffixes"
+    ],
+    "description": "Form adverbs from adjectives using the -ly suffix",
+    "estimatedTime": 5,
+    "difficulty": 2
+  },
+  {
+    "id": "a2-error-correction-tense-consistency",
+    "name": "Fix Tense Consistency Errors",
+    "learningMode": "error-correction",
+    "dataPath": "data/a2/a2-error-correction-tense-consistency.json",
+    "level": [
+      "a2"
+    ],
+    "category": "Grammar",
+    "unit": 2,
+    "prerequisites": [
+      "a2-word-formation-adverb-formation"
+    ],
+    "description": "Identify and fix tense consistency errors in sentences",
+    "estimatedTime": 5,
+    "difficulty": 2
+  },
+  {
+    "id": "a2-error-correction-phrasal-verb-particle",
+    "name": "Fix Phrasal Verb Particle Errors",
+    "learningMode": "error-correction",
+    "dataPath": "data/a2/a2-error-correction-phrasal-verb-particle.json",
+    "level": [
+      "a2"
+    ],
+    "category": "PhrasalVerbs",
+    "unit": 2,
+    "prerequisites": [
+      "a2-error-correction-tense-consistency"
+    ],
+    "description": "Identify and fix incorrect particles in phrasal verbs",
+    "estimatedTime": 5,
+    "difficulty": 2
+  },
+  {
+    "id": "a2-reordering-comparatives-superlatives",
+    "name": "Reorder Comparative & Superlative Sentences",
+    "learningMode": "reordering",
+    "dataPath": "data/a2/a2-reordering-comparatives-superlatives.json",
+    "level": [
+      "a2"
+    ],
+    "category": "Grammar",
+    "unit": 2,
+    "prerequisites": [
+      "a2-error-correction-phrasal-verb-particle"
+    ],
+    "description": "Put words in the correct order to form comparative and superlative sentences",
+    "estimatedTime": 3,
+    "difficulty": 2
+  },
+  {
+    "id": "a2-reordering-daily-activities",
+    "name": "Reorder Daily Activity Sentences",
+    "learningMode": "reordering",
+    "dataPath": "data/a2/a2-reordering-daily-activities.json",
+    "level": [
+      "a2"
+    ],
+    "category": "Vocabulary",
+    "unit": 2,
+    "prerequisites": [
+      "a2-reordering-comparatives-superlatives"
+    ],
+    "description": "Put words in the correct order to form daily activity sentences",
+    "estimatedTime": 3,
+    "difficulty": 2
+  },
+  {
+    "id": "a2-matching-elementary-idioms",
+    "name": "Match Elementary Idioms to Situations",
+    "learningMode": "matching",
+    "dataPath": "data/a2/a2-matching-elementary-idioms.json",
+    "level": [
+      "a2"
+    ],
+    "category": "Idioms",
+    "unit": 2,
+    "prerequisites": [
+      "a2-reordering-daily-activities"
+    ],
+    "description": "Match elementary idioms to the situations where they are used",
+    "estimatedTime": 3,
+    "difficulty": 2
+  },
+  {
+    "id": "b1-transformation-phrasal-verb-register",
+    "name": "Phrasal Verb Register Transformations",
+    "learningMode": "transformation",
+    "dataPath": "data/b1/b1-transformation-phrasal-verb-register.json",
+    "level": [
+      "b1"
+    ],
+    "category": "PhrasalVerbs",
+    "unit": 3,
+    "prerequisites": [
+      "b1-error-correction-conditionals"
+    ],
+    "description": "Transform phrasal verbs between informal and formal register",
+    "estimatedTime": 5,
+    "difficulty": 3
+  },
+  {
+    "id": "b1-word-formation-prefix-suffix-combo",
+    "name": "Prefix & Suffix Combinations (un-, re-, -able, -ity)",
+    "learningMode": "word-formation",
+    "dataPath": "data/b1/b1-word-formation-prefix-suffix-combo.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Vocabulary",
+    "unit": 3,
+    "prerequisites": [
+      "b1-transformation-phrasal-verb-register"
+    ],
+    "description": "Form words using prefix and suffix combinations (un-, re-, -able, -ity)",
+    "estimatedTime": 5,
+    "difficulty": 3
+  },
+  {
+    "id": "b1-error-correction-conditional-passive",
+    "name": "Fix Conditional & Passive Errors",
+    "learningMode": "error-correction",
+    "dataPath": "data/b1/b1-error-correction-conditional-passive.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Grammar",
+    "unit": 3,
+    "prerequisites": [
+      "b1-word-formation-prefix-suffix-combo"
+    ],
+    "description": "Identify and fix errors in conditional and passive voice sentences",
+    "estimatedTime": 5,
+    "difficulty": 3
+  },
+  {
+    "id": "b1-reordering-conditional-sentences",
+    "name": "Reorder Conditional Sentences",
+    "learningMode": "reordering",
+    "dataPath": "data/b1/b1-reordering-conditional-sentences.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Grammar",
+    "unit": 3,
+    "prerequisites": [
+      "b1-error-correction-conditional-passive"
+    ],
+    "description": "Put words in the correct order to form conditional sentences",
+    "estimatedTime": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "b1-reordering-phrasal-verb-sentences",
+    "name": "Reorder Phrasal Verb Sentences",
+    "learningMode": "reordering",
+    "dataPath": "data/b1/b1-reordering-phrasal-verb-sentences.json",
+    "level": [
+      "b1"
+    ],
+    "category": "PhrasalVerbs",
+    "unit": 3,
+    "prerequisites": [
+      "b1-reordering-conditional-sentences"
+    ],
+    "description": "Put words in the correct order to form phrasal verb sentences",
+    "estimatedTime": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "b1-matching-idioms-situations",
+    "name": "Match Idioms to Everyday Situations",
+    "learningMode": "matching",
+    "dataPath": "data/b1/b1-matching-idioms-situations.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Idioms",
+    "unit": 3,
+    "prerequisites": [
+      "b1-reordering-phrasal-verb-sentences"
+    ],
+    "description": "Match idioms to everyday situations where they apply",
+    "estimatedTime": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "b2-transformation-cleft-emphasis",
+    "name": "Cleft Sentence & Emphasis Transformations",
+    "learningMode": "transformation",
+    "dataPath": "data/b2/b2-transformation-cleft-emphasis.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Grammar",
+    "unit": 4,
+    "prerequisites": [
+      "b2-error-correction-advanced-tense"
+    ],
+    "description": "Transform sentences using cleft structures for emphasis",
+    "estimatedTime": 5,
+    "difficulty": 4
+  },
+  {
+    "id": "b2-word-formation-advanced-suffixes-ive",
+    "name": "Advanced Suffixes (-ive, -ous, -ment, -ence)",
+    "learningMode": "word-formation",
+    "dataPath": "data/b2/b2-word-formation-advanced-suffixes-ive.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Vocabulary",
+    "unit": 4,
+    "prerequisites": [
+      "b2-transformation-cleft-emphasis"
+    ],
+    "description": "Form words using advanced suffixes -ive, -ous, -ment, and -ence",
+    "estimatedTime": 5,
+    "difficulty": 4
+  },
+  {
+    "id": "b2-word-formation-negative-prefixes",
+    "name": "Negative Prefixes (dis-, mis-, un-, in-)",
+    "learningMode": "word-formation",
+    "dataPath": "data/b2/b2-word-formation-negative-prefixes.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Grammar",
+    "unit": 4,
+    "prerequisites": [
+      "b2-word-formation-advanced-suffixes-ive"
+    ],
+    "description": "Form words using negative prefixes dis-, mis-, un-, and in-",
+    "estimatedTime": 5,
+    "difficulty": 4
+  },
+  {
+    "id": "b2-error-correction-advanced-tense-collocation",
+    "name": "Fix Advanced Tense & Collocation Errors",
+    "learningMode": "error-correction",
+    "dataPath": "data/b2/b2-error-correction-advanced-tense-collocation.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Grammar",
+    "unit": 4,
+    "prerequisites": [
+      "b2-word-formation-negative-prefixes"
+    ],
+    "description": "Identify and fix advanced tense and collocation errors",
+    "estimatedTime": 5,
+    "difficulty": 4
+  },
+  {
+    "id": "b2-reordering-complex-compound",
+    "name": "Reorder Complex Compound Sentences",
+    "learningMode": "reordering",
+    "dataPath": "data/b2/b2-reordering-complex-compound.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Grammar",
+    "unit": 4,
+    "prerequisites": [
+      "b2-error-correction-advanced-tense-collocation"
+    ],
+    "description": "Put words in the correct order to form complex compound sentences",
+    "estimatedTime": 3,
+    "difficulty": 4
+  },
+  {
+    "id": "b2-reordering-advanced-phrasal-verbs",
+    "name": "Reorder Advanced Phrasal Verb Sentences",
+    "learningMode": "reordering",
+    "dataPath": "data/b2/b2-reordering-advanced-phrasal-verbs.json",
+    "level": [
+      "b2"
+    ],
+    "category": "PhrasalVerbs",
+    "unit": 4,
+    "prerequisites": [
+      "b2-reordering-complex-compound"
+    ],
+    "description": "Put words in the correct order to form advanced phrasal verb sentences",
+    "estimatedTime": 3,
+    "difficulty": 4
+  },
+  {
+    "id": "b2-sorting-professional-idioms",
+    "name": "Sort Professional Idioms by Context",
+    "learningMode": "sorting",
+    "dataPath": "data/b2/b2-sorting-professional-idioms.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Idioms",
+    "unit": 4,
+    "prerequisites": [
+      "b2-reordering-advanced-phrasal-verbs"
+    ],
+    "description": "Sort professional idioms into categories by their context of use",
+    "estimatedTime": 3,
+    "difficulty": 4
+  },
+  {
+    "id": "c1-transformation-participle-clauses",
+    "name": "Participle Clause Transformations",
+    "learningMode": "transformation",
+    "dataPath": "data/c1/c1-transformation-participle-clauses.json",
+    "level": [
+      "c1"
+    ],
+    "category": "Grammar",
+    "unit": 5,
+    "prerequisites": [
+      "c1-error-correction-inversion"
+    ],
+    "description": "Transform sentences using participle clause constructions",
+    "estimatedTime": 5,
+    "difficulty": 5
+  },
+  {
+    "id": "c1-transformation-formal-register-idioms",
+    "name": "Formal Register Idiom Transformations",
+    "learningMode": "transformation",
+    "dataPath": "data/c1/c1-transformation-formal-register-idioms.json",
+    "level": [
+      "c1"
+    ],
+    "category": "Idioms",
+    "unit": 5,
+    "prerequisites": [
+      "c1-transformation-participle-clauses"
+    ],
+    "description": "Transform idioms between informal and formal register",
+    "estimatedTime": 5,
+    "difficulty": 5
+  },
+  {
+    "id": "c1-word-formation-multi-step-derivations",
+    "name": "Multi-step Derivations (ir-, il-, im- + -ity, -ness)",
+    "learningMode": "word-formation",
+    "dataPath": "data/c1/c1-word-formation-multi-step-derivations.json",
+    "level": [
+      "c1"
+    ],
+    "category": "Grammar",
+    "unit": 5,
+    "prerequisites": [
+      "c1-transformation-formal-register-idioms"
+    ],
+    "description": "Form words using multi-step derivations with ir-, il-, im- prefixes and -ity, -ness suffixes",
+    "estimatedTime": 5,
+    "difficulty": 5
+  },
+  {
+    "id": "c1-word-formation-academic",
+    "name": "Academic Word Formation",
+    "learningMode": "word-formation",
+    "dataPath": "data/c1/c1-word-formation-academic.json",
+    "level": [
+      "c1"
+    ],
+    "category": "Vocabulary",
+    "unit": 5,
+    "prerequisites": [
+      "c1-word-formation-multi-step-derivations"
+    ],
+    "description": "Form academic vocabulary through complex word derivation",
+    "estimatedTime": 5,
+    "difficulty": 5
+  },
+  {
+    "id": "c1-error-correction-inversion-subjunctive",
+    "name": "Fix Inversion & Subjunctive Errors",
+    "learningMode": "error-correction",
+    "dataPath": "data/c1/c1-error-correction-inversion-subjunctive.json",
+    "level": [
+      "c1"
+    ],
+    "category": "Grammar",
+    "unit": 5,
+    "prerequisites": [
+      "c1-word-formation-academic"
+    ],
+    "description": "Identify and fix errors in inverted and subjunctive constructions",
+    "estimatedTime": 5,
+    "difficulty": 5
+  },
+  {
+    "id": "c1-error-correction-advanced-phrasal-verbs",
+    "name": "Fix Advanced Phrasal Verb Errors",
+    "learningMode": "error-correction",
+    "dataPath": "data/c1/c1-error-correction-advanced-phrasal-verbs.json",
+    "level": [
+      "c1"
+    ],
+    "category": "PhrasalVerbs",
+    "unit": 5,
+    "prerequisites": [
+      "c1-error-correction-inversion-subjunctive"
+    ],
+    "description": "Identify and fix errors in advanced phrasal verb usage",
+    "estimatedTime": 5,
+    "difficulty": 5
+  },
+  {
+    "id": "c1-reordering-inverted-emphatic",
+    "name": "Reorder Inverted & Emphatic Sentences",
+    "learningMode": "reordering",
+    "dataPath": "data/c1/c1-reordering-inverted-emphatic.json",
+    "level": [
+      "c1"
+    ],
+    "category": "Grammar",
+    "unit": 5,
+    "prerequisites": [
+      "c1-error-correction-advanced-phrasal-verbs"
+    ],
+    "description": "Put words in the correct order to form inverted and emphatic sentences",
+    "estimatedTime": 3,
+    "difficulty": 5
+  },
+  {
+    "id": "c1-reordering-academic-argument",
+    "name": "Reorder Academic Argument Sentences",
+    "learningMode": "reordering",
+    "dataPath": "data/c1/c1-reordering-academic-argument.json",
+    "level": [
+      "c1"
+    ],
+    "category": "Vocabulary",
+    "unit": 5,
+    "prerequisites": [
+      "c1-reordering-inverted-emphatic"
+    ],
+    "description": "Put words in the correct order to form academic argument sentences",
+    "estimatedTime": 3,
+    "difficulty": 5
+  },
+  {
+    "id": "c1-sorting-phrasal-verbs-register",
+    "name": "Sort Phrasal Verbs by Formal Register",
+    "learningMode": "sorting",
+    "dataPath": "data/c1/c1-sorting-phrasal-verbs-register.json",
+    "level": [
+      "c1"
+    ],
+    "category": "PhrasalVerbs",
+    "unit": 5,
+    "prerequisites": [
+      "c1-reordering-academic-argument"
+    ],
+    "description": "Sort phrasal verbs by their level of formality",
+    "estimatedTime": 3,
+    "difficulty": 5
+  },
+  {
+    "id": "c2-transformation-nominalization",
+    "name": "Complex Nominalization Transformations",
+    "learningMode": "transformation",
+    "dataPath": "data/c2/c2-transformation-nominalization.json",
+    "level": [
+      "c2"
+    ],
+    "category": "Grammar",
+    "unit": 6,
+    "prerequisites": [
+      "c2-error-correction-register"
+    ],
+    "description": "Transform sentences using complex nominalization structures",
+    "estimatedTime": 5,
+    "difficulty": 6
+  },
+  {
+    "id": "c2-transformation-academic-hedging",
+    "name": "Academic Hedging Transformations",
+    "learningMode": "transformation",
+    "dataPath": "data/c2/c2-transformation-academic-hedging.json",
+    "level": [
+      "c2"
+    ],
+    "category": "Vocabulary",
+    "unit": 6,
+    "prerequisites": [
+      "c2-transformation-nominalization"
+    ],
+    "description": "Transform sentences using academic hedging expressions",
+    "estimatedTime": 5,
+    "difficulty": 6
+  },
+  {
+    "id": "c2-word-formation-archaic-literary",
+    "name": "Archaic & Literary Derivations",
+    "learningMode": "word-formation",
+    "dataPath": "data/c2/c2-word-formation-archaic-literary.json",
+    "level": [
+      "c2"
+    ],
+    "category": "Grammar",
+    "unit": 6,
+    "prerequisites": [
+      "c2-transformation-academic-hedging"
+    ],
+    "description": "Form words using archaic and literary derivation patterns",
+    "estimatedTime": 5,
+    "difficulty": 6
+  },
+  {
+    "id": "c2-word-formation-scholarly-families",
+    "name": "Scholarly Word Families",
+    "learningMode": "word-formation",
+    "dataPath": "data/c2/c2-word-formation-scholarly-families.json",
+    "level": [
+      "c2"
+    ],
+    "category": "Vocabulary",
+    "unit": 6,
+    "prerequisites": [
+      "c2-word-formation-archaic-literary"
+    ],
+    "description": "Explore scholarly word families and their derivational relationships",
+    "estimatedTime": 5,
+    "difficulty": 6
+  },
+  {
+    "id": "c2-error-correction-register-collocation",
+    "name": "Fix Subtle Register & Collocation Errors",
+    "learningMode": "error-correction",
+    "dataPath": "data/c2/c2-error-correction-register-collocation.json",
+    "level": [
+      "c2"
+    ],
+    "category": "Grammar",
+    "unit": 6,
+    "prerequisites": [
+      "c2-word-formation-scholarly-families"
+    ],
+    "description": "Identify and fix subtle register and collocation errors",
+    "estimatedTime": 5,
+    "difficulty": 6
+  },
+  {
+    "id": "c2-error-correction-literary-idioms",
+    "name": "Fix Misused Literary Idioms",
+    "learningMode": "error-correction",
+    "dataPath": "data/c2/c2-error-correction-literary-idioms.json",
+    "level": [
+      "c2"
+    ],
+    "category": "Idioms",
+    "unit": 6,
+    "prerequisites": [
+      "c2-error-correction-register-collocation"
+    ],
+    "description": "Identify and fix misused literary idioms in context",
+    "estimatedTime": 5,
+    "difficulty": 6
+  },
+  {
+    "id": "c2-reordering-formal-academic",
+    "name": "Reorder Formal Academic Sentences",
+    "learningMode": "reordering",
+    "dataPath": "data/c2/c2-reordering-formal-academic.json",
+    "level": [
+      "c2"
+    ],
+    "category": "Grammar",
+    "unit": 6,
+    "prerequisites": [
+      "c2-error-correction-literary-idioms"
+    ],
+    "description": "Put words in the correct order to form formal academic sentences",
+    "estimatedTime": 3,
+    "difficulty": 6
+  },
+  {
+    "id": "c2-reordering-literary-prose",
+    "name": "Reorder Literary Prose Sentences",
+    "learningMode": "reordering",
+    "dataPath": "data/c2/c2-reordering-literary-prose.json",
+    "level": [
+      "c2"
+    ],
+    "category": "Vocabulary",
+    "unit": 6,
+    "prerequisites": [
+      "c2-reordering-formal-academic"
+    ],
+    "description": "Put words in the correct order to form literary prose sentences",
+    "estimatedTime": 3,
+    "difficulty": 6
+  },
+  {
+    "id": "c2-sorting-discourse-markers",
+    "name": "Sort Discourse Markers by Rhetorical Function",
+    "learningMode": "sorting",
+    "dataPath": "data/c2/c2-sorting-discourse-markers.json",
+    "level": [
+      "c2"
+    ],
+    "category": "Grammar",
+    "unit": 6,
+    "prerequisites": [
+      "c2-reordering-literary-prose"
+    ],
+    "description": "Sort discourse markers by their rhetorical function",
+    "estimatedTime": 3,
+    "difficulty": 6
+  },
+  {
+    "id": "c2-matching-mastery-phrasal-verbs-formal",
+    "name": "Match Mastery Phrasal Verbs to Formal Equivalents",
+    "learningMode": "matching",
+    "dataPath": "data/c2/c2-matching-mastery-phrasal-verbs-formal.json",
+    "level": [
+      "c2"
+    ],
+    "category": "PhrasalVerbs",
+    "unit": 6,
+    "prerequisites": [
+      "c2-sorting-discourse-markers"
+    ],
+    "description": "Match mastery-level phrasal verbs to their formal equivalents",
+    "estimatedTime": 3,
+    "difficulty": 6
+  },
+  {
+    "id": "c2-matching-literary-idioms-origins",
+    "name": "Match Literary Idioms to Origins",
+    "learningMode": "matching",
+    "dataPath": "data/c2/c2-matching-literary-idioms-origins.json",
+    "level": [
+      "c2"
+    ],
+    "category": "Idioms",
+    "unit": 6,
+    "prerequisites": [
+      "c2-matching-mastery-phrasal-verbs-formal"
+    ],
+    "description": "Match literary idioms to their historical origins",
+    "estimatedTime": 3,
+    "difficulty": 6
   }
 ]

@@ -1,0 +1,127 @@
+[
+  {
+    "sentence": "The committee made a decision to implement the new policy with immediate affect.",
+    "correct": ["The committee made a decision to implement the new policy with immediate effect."],
+    "explanation": "Collocation error: <with immediate effect> (noun), not <affect> (verb)."
+  },
+  {
+    "sentence": "The research paper was comprised of five chapters.",
+    "correct": ["The research paper comprised five chapters.", "The research paper was composed of five chapters."],
+    "explanation": "Register: <comprise> does not take <of>. Use <comprised five chapters> or <was composed of>."
+  },
+  {
+    "sentence": "She did a significant contribution to the field of linguistics.",
+    "correct": ["She made a significant contribution to the field of linguistics."],
+    "explanation": "Collocation: <make a contribution>, not <do a contribution>."
+  },
+  {
+    "sentence": "The findings are in accordance to the previous research.",
+    "correct": ["The findings are in accordance with the previous research."],
+    "explanation": "Collocation: <in accordance with>, not <in accordance to>."
+  },
+  {
+    "sentence": "The professor inferred that the students should submit their essays by Friday.",
+    "correct": ["The professor implied that the students should submit their essays by Friday."],
+    "explanation": "Register: <imply> means to suggest indirectly; <infer> means to deduce. The professor <implied>."
+  },
+  {
+    "sentence": "The data supports the hypothesis that economic growth is dependant on education.",
+    "correct": ["The data supports the hypothesis that economic growth is dependent on education."],
+    "explanation": "Spelling: <dependent> (adjective), not <dependant> (noun in British English)."
+  },
+  {
+    "sentence": "The principle reason for the decline was insufficient funding.",
+    "correct": ["The principal reason for the decline was insufficient funding."],
+    "explanation": "Confusable: <principal> (main/chief), not <principle> (rule/belief)."
+  },
+  {
+    "sentence": "The study's methodology was complementary to that of earlier research.",
+    "correct": ["The study's methodology was comparable to that of earlier research."],
+    "explanation": "Register: <complementary> means 'completing each other'; <comparable> means 'similar to'."
+  },
+  {
+    "sentence": "Irregardless of the challenges, the team completed the project on time.",
+    "correct": ["Regardless of the challenges, the team completed the project on time."],
+    "explanation": "Register: <irregardless> is non-standard. Use <regardless>."
+  },
+  {
+    "sentence": "The continuous decline in biodiversity is a matter of grave concern.",
+    "correct": ["The continual decline in biodiversity is a matter of grave concern."],
+    "explanation": "Register: <continual> (repeated, with interruptions) vs <continuous> (without stopping). Biodiversity loss is <continual>."
+  },
+  {
+    "sentence": "The report highlighted the need to mitigate against climate change.",
+    "correct": ["The report highlighted the need to mitigate climate change.", "The report highlighted the need to mitigate the effects of climate change."],
+    "explanation": "Collocation: <mitigate> does not take <against>. Use <mitigate climate change> directly."
+  },
+  {
+    "sentence": "She was disinterested in the topic and fell asleep during the lecture.",
+    "correct": ["She was uninterested in the topic and fell asleep during the lecture."],
+    "explanation": "Register: <disinterested> means 'impartial'; <uninterested> means 'not interested'."
+  },
+  {
+    "sentence": "The amount of students who passed the exam exceeded expectations.",
+    "correct": ["The number of students who passed the exam exceeded expectations."],
+    "explanation": "Register: <number> for countable nouns (students), <amount> for uncountable nouns."
+  },
+  {
+    "sentence": "The government's economic policy had a profound affect on employment rates.",
+    "correct": ["The government's economic policy had a profound effect on employment rates."],
+    "explanation": "Confusable: <effect> (noun), not <affect> (verb)."
+  },
+  {
+    "sentence": "The author eluded to several classical texts in her novel.",
+    "correct": ["The author alluded to several classical texts in her novel."],
+    "explanation": "Confusable: <allude> (refer to indirectly), not <elude> (escape from)."
+  },
+  {
+    "sentence": "The criteria for selection was clearly defined in the guidelines.",
+    "correct": ["The criteria for selection were clearly defined in the guidelines."],
+    "explanation": "Grammar: <criteria> is plural (singular: <criterion>), so use <were>."
+  },
+  {
+    "sentence": "The phenomena was observed across multiple experimental conditions.",
+    "correct": ["The phenomenon was observed across multiple experimental conditions.", "The phenomena were observed across multiple experimental conditions."],
+    "explanation": "Grammar: <phenomena> is plural (use <were>); <phenomenon> is singular (use <was>)."
+  },
+  {
+    "sentence": "She literally died of embarrassment when she realised her mistake.",
+    "correct": ["She was mortified when she realised her mistake.", "She was extremely embarrassed when she realised her mistake."],
+    "explanation": "Register: <literally> should not be used for hyperbole in formal writing."
+  },
+  {
+    "sentence": "The less people who attend, the more intimate the event will be.",
+    "correct": ["The fewer people who attend, the more intimate the event will be."],
+    "explanation": "Register: <fewer> for countable nouns (people), <less> for uncountable nouns."
+  },
+  {
+    "sentence": "The company's profits have raised significantly over the past decade.",
+    "correct": ["The company's profits have risen significantly over the past decade."],
+    "explanation": "Grammar: <rise> (intransitive, no object) vs <raise> (transitive, needs object). Profits <rise>."
+  },
+  {
+    "sentence": "The media is responsible for shaping public opinion.",
+    "correct": ["The media are responsible for shaping public opinion."],
+    "explanation": "Grammar: <media> is the plural of <medium>, so use <are> in formal register."
+  },
+  {
+    "sentence": "The study aimed to illicit responses from participants through structured interviews.",
+    "correct": ["The study aimed to elicit responses from participants through structured interviews."],
+    "explanation": "Confusable: <elicit> (draw out), not <illicit> (illegal)."
+  },
+  {
+    "sentence": "The council gave their ascent to the proposed development plan.",
+    "correct": ["The council gave their assent to the proposed development plan."],
+    "explanation": "Confusable: <assent> (agreement), not <ascent> (climbing)."
+  },
+  {
+    "sentence": "The stationery position of the satellite allows continuous monitoring.",
+    "correct": ["The stationary position of the satellite allows continuous monitoring."],
+    "explanation": "Confusable: <stationary> (not moving), not <stationery> (writing materials)."
+  },
+  {
+    "sentence": "The therapist's discrete approach ensured patient confidentiality.",
+    "correct": ["The therapist's discreet approach ensured patient confidentiality."],
+    "explanation": "Confusable: <discreet> (careful, tactful), not <discrete> (separate, distinct)."
+  }
+]

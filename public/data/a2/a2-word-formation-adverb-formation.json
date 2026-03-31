@@ -1,0 +1,152 @@
+[
+  {
+    "sentence": "She sings _____ . Everyone loves her voice.",
+    "rootWord": "BEAUTIFUL",
+    "correct": "beautifully",
+    "explanation": "BEAUTIFUL → beautifully (add -ly to make an adverb)"
+  },
+  {
+    "sentence": "He drives very _____ . He never has accidents.",
+    "rootWord": "CAREFUL",
+    "correct": "carefully",
+    "explanation": "CAREFUL → carefully (add -ly to make an adverb)"
+  },
+  {
+    "sentence": "The children played _____ in the garden.",
+    "rootWord": "HAPPY",
+    "correct": "happily",
+    "explanation": "HAPPY → happily (change -y to -ily to make an adverb)"
+  },
+  {
+    "sentence": "Please speak _____ . The baby is sleeping.",
+    "rootWord": "QUIET",
+    "correct": "quietly",
+    "explanation": "QUIET → quietly (add -ly to make an adverb)"
+  },
+  {
+    "sentence": "She finished the test _____ and left the room.",
+    "rootWord": "QUICK",
+    "correct": "quickly",
+    "explanation": "QUICK → quickly (add -ly to make an adverb)"
+  },
+  {
+    "sentence": "He _____ forgot his keys at home.",
+    "rootWord": "UNFORTUNATE",
+    "correct": "unfortunately",
+    "explanation": "UNFORTUNATE → unfortunately (add -ly to make an adverb)"
+  },
+  {
+    "sentence": "The dog barked _____ at the stranger.",
+    "rootWord": "LOUD",
+    "correct": "loudly",
+    "explanation": "LOUD → loudly (add -ly to make an adverb)"
+  },
+  {
+    "sentence": "She _____ agreed to help us with the project.",
+    "rootWord": "GLAD",
+    "correct": "gladly",
+    "explanation": "GLAD → gladly (add -ly to make an adverb)"
+  },
+  {
+    "sentence": "He walked _____ because his leg hurt.",
+    "rootWord": "SLOW",
+    "correct": "slowly",
+    "explanation": "SLOW → slowly (add -ly to make an adverb)"
+  },
+  {
+    "sentence": "The teacher explained the lesson very _____ .",
+    "rootWord": "CLEAR",
+    "correct": "clearly",
+    "explanation": "CLEAR → clearly (add -ly to make an adverb)"
+  },
+  {
+    "sentence": "She danced _____ across the stage.",
+    "rootWord": "GRACEFUL",
+    "correct": "gracefully",
+    "explanation": "GRACEFUL → gracefully (add -ly to make an adverb)"
+  },
+  {
+    "sentence": "He _____ opened the door and looked inside.",
+    "rootWord": "NERVOUS",
+    "correct": "nervously",
+    "explanation": "NERVOUS → nervously (add -ly to make an adverb)"
+  },
+  {
+    "sentence": "The cat moved _____ through the garden.",
+    "rootWord": "SILENT",
+    "correct": "silently",
+    "explanation": "SILENT → silently (add -ly to make an adverb)"
+  },
+  {
+    "sentence": "She smiled _____ at the camera.",
+    "rootWord": "BRIGHT",
+    "correct": "brightly",
+    "explanation": "BRIGHT → brightly (add -ly to make an adverb)"
+  },
+  {
+    "sentence": "He answered all the questions _____ .",
+    "rootWord": "CORRECT",
+    "correct": "correctly",
+    "explanation": "CORRECT → correctly (add -ly to make an adverb)"
+  },
+  {
+    "sentence": "The rain fell _____ all night long.",
+    "rootWord": "HEAVY",
+    "correct": "heavily",
+    "explanation": "HEAVY → heavily (change -y to -ily to make an adverb)"
+  },
+  {
+    "sentence": "She _____ waited for the bus in the cold.",
+    "rootWord": "PATIENT",
+    "correct": "patiently",
+    "explanation": "PATIENT → patiently (add -ly to make an adverb)"
+  },
+  {
+    "sentence": "He spoke _____ about his childhood memories.",
+    "rootWord": "SOFT",
+    "correct": "softly",
+    "explanation": "SOFT → softly (add -ly to make an adverb)"
+  },
+  {
+    "sentence": "The bird flew _____ over the trees.",
+    "rootWord": "EASY",
+    "correct": "easily",
+    "explanation": "EASY → easily (change -y to -ily to make an adverb)"
+  },
+  {
+    "sentence": "She _____ accepted the invitation to the party.",
+    "rootWord": "EAGER",
+    "correct": "eagerly",
+    "explanation": "EAGER → eagerly (add -ly to make an adverb)"
+  },
+  {
+    "sentence": "He looked at her _____ before speaking.",
+    "rootWord": "SERIOUS",
+    "correct": "seriously",
+    "explanation": "SERIOUS → seriously (add -ly to make an adverb)"
+  },
+  {
+    "sentence": "The children ran _____ to the playground.",
+    "rootWord": "EXCITED",
+    "correct": "excitedly",
+    "explanation": "EXCITED → excitedly (add -ly to make an adverb)"
+  },
+  {
+    "sentence": "She _____ completed all her homework before dinner.",
+    "rootWord": "SUCCESSFUL",
+    "correct": "successfully",
+    "explanation": "SUCCESSFUL → successfully (add -ly to make an adverb)"
+  },
+  {
+    "sentence": "He _____ closed the door behind him.",
+    "rootWord": "GENTLE",
+    "correct": "gently",
+    "explanation": "GENTLE → gently (change -le to -ly to make an adverb)"
+  },
+  {
+    "sentence": "The team worked _____ to finish the project on time.",
+    "rootWord": "HARD",
+    "correct": "hard",
+    "explanation": "HARD → hard (this word is the same as adjective and adverb — <hardly> means 'almost not')"
+  }
+]

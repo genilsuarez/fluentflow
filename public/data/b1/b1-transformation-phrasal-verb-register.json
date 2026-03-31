@@ -1,0 +1,152 @@
+[
+  {
+    "prompt": "Replace the phrasal verb with a formal equivalent",
+    "source": "We need to find out what happened.",
+    "correct": ["We need to discover what happened.", "We need to determine what happened."],
+    "explanation": "<Find out> → <discover/determine> in formal register."
+  },
+  {
+    "prompt": "Replace the phrasal verb with a formal equivalent",
+    "source": "The meeting was put off until next week.",
+    "correct": ["The meeting was postponed until next week."],
+    "explanation": "<Put off> → <postpone> in formal register."
+  },
+  {
+    "prompt": "Replace the phrasal verb with a formal equivalent",
+    "source": "She turned down the job offer.",
+    "correct": ["She rejected the job offer.", "She declined the job offer."],
+    "explanation": "<Turn down> → <reject/decline> in formal register."
+  },
+  {
+    "prompt": "Replace the formal verb with a phrasal verb",
+    "source": "The company had to reduce its workforce.",
+    "correct": ["The company had to cut down its workforce.", "The company had to cut back its workforce."],
+    "explanation": "<Reduce> → <cut down/cut back> in informal register."
+  },
+  {
+    "prompt": "Replace the phrasal verb with a formal equivalent",
+    "source": "They called off the event due to rain.",
+    "correct": ["They cancelled the event due to rain."],
+    "explanation": "<Call off> → <cancel> in formal register."
+  },
+  {
+    "prompt": "Replace the phrasal verb with a formal equivalent",
+    "source": "He came up with a brilliant idea.",
+    "correct": ["He devised a brilliant idea.", "He conceived a brilliant idea."],
+    "explanation": "<Come up with> → <devise/conceive> in formal register."
+  },
+  {
+    "prompt": "Replace the formal verb with a phrasal verb",
+    "source": "She investigated the problem thoroughly.",
+    "correct": ["She looked into the problem thoroughly."],
+    "explanation": "<Investigate> → <look into> in informal register."
+  },
+  {
+    "prompt": "Replace the phrasal verb with a formal equivalent",
+    "source": "We need to sort out this problem quickly.",
+    "correct": ["We need to resolve this problem quickly."],
+    "explanation": "<Sort out> → <resolve> in formal register."
+  },
+  {
+    "prompt": "Replace the phrasal verb with a formal equivalent",
+    "source": "The plane took off at 3 pm.",
+    "correct": ["The plane departed at 3 pm."],
+    "explanation": "<Take off> → <depart> in formal register."
+  },
+  {
+    "prompt": "Replace the formal verb with a phrasal verb",
+    "source": "He tolerated the noise for hours.",
+    "correct": ["He put up with the noise for hours."],
+    "explanation": "<Tolerate> → <put up with> in informal register."
+  },
+  {
+    "prompt": "Replace the phrasal verb with a formal equivalent",
+    "source": "She brought up an important point in the meeting.",
+    "correct": ["She raised an important point in the meeting.", "She mentioned an important point in the meeting."],
+    "explanation": "<Bring up> → <raise/mention> in formal register."
+  },
+  {
+    "prompt": "Replace the phrasal verb with a formal equivalent",
+    "source": "They had to give up the project.",
+    "correct": ["They had to abandon the project."],
+    "explanation": "<Give up> → <abandon> in formal register."
+  },
+  {
+    "prompt": "Replace the formal verb with a phrasal verb",
+    "source": "She resembles her mother.",
+    "correct": ["She takes after her mother."],
+    "explanation": "<Resemble> → <take after> in informal register."
+  },
+  {
+    "prompt": "Replace the phrasal verb with a formal equivalent",
+    "source": "He set up a new company last year.",
+    "correct": ["He established a new company last year."],
+    "explanation": "<Set up> → <establish> in formal register."
+  },
+  {
+    "prompt": "Replace the phrasal verb with a formal equivalent",
+    "source": "We ran out of time during the exam.",
+    "correct": ["We exhausted our time during the exam."],
+    "explanation": "<Run out of> → <exhaust> in formal register."
+  },
+  {
+    "prompt": "Replace the formal verb with a phrasal verb",
+    "source": "The factory produces 500 units per day.",
+    "correct": ["The factory turns out 500 units per day."],
+    "explanation": "<Produce> → <turn out> in informal register."
+  },
+  {
+    "prompt": "Replace the phrasal verb with a formal equivalent",
+    "source": "She looked after the children while we were away.",
+    "correct": ["She cared for the children while we were away."],
+    "explanation": "<Look after> → <care for> in formal register."
+  },
+  {
+    "prompt": "Replace the phrasal verb with a formal equivalent",
+    "source": "He broke down during the interview.",
+    "correct": ["He collapsed during the interview."],
+    "explanation": "<Break down> (emotionally) → <collapse> in formal register."
+  },
+  {
+    "prompt": "Replace the formal verb with a phrasal verb",
+    "source": "She continued working despite the difficulties.",
+    "correct": ["She carried on working despite the difficulties.", "She kept on working despite the difficulties."],
+    "explanation": "<Continue> → <carry on/keep on> in informal register."
+  },
+  {
+    "prompt": "Replace the phrasal verb with a formal equivalent",
+    "source": "They turned up late to the meeting.",
+    "correct": ["They arrived late to the meeting.", "They appeared late to the meeting."],
+    "explanation": "<Turn up> → <arrive/appear> in formal register."
+  },
+  {
+    "prompt": "Replace the phrasal verb with a formal equivalent",
+    "source": "She pointed out the mistakes in the report.",
+    "correct": ["She identified the mistakes in the report.", "She indicated the mistakes in the report."],
+    "explanation": "<Point out> → <identify/indicate> in formal register."
+  },
+  {
+    "prompt": "Replace the formal verb with a phrasal verb",
+    "source": "He demolished the old building.",
+    "correct": ["He pulled down the old building.", "He tore down the old building."],
+    "explanation": "<Demolish> → <pull down/tear down> in informal register."
+  },
+  {
+    "prompt": "Replace the phrasal verb with a formal equivalent",
+    "source": "We need to cut down on expenses.",
+    "correct": ["We need to reduce expenses."],
+    "explanation": "<Cut down on> → <reduce> in formal register."
+  },
+  {
+    "prompt": "Replace the phrasal verb with a formal equivalent",
+    "source": "He made up an excuse for being late.",
+    "correct": ["He invented an excuse for being late.", "He fabricated an excuse for being late."],
+    "explanation": "<Make up> → <invent/fabricate> in formal register."
+  },
+  {
+    "prompt": "Replace the formal verb with a phrasal verb",
+    "source": "She distributed the papers to the students.",
+    "correct": ["She handed out the papers to the students.", "She gave out the papers to the students."],
+    "explanation": "<Distribute> → <hand out/give out> in informal register."
+  }
+]

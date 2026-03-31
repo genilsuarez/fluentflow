@@ -1,0 +1,184 @@
+[
+  {
+    "sentence": "My father is a _____ at the local school.",
+    "rootWord": "TEACH",
+    "correct": "teacher",
+    "hint": "A person who teaches",
+    "explanation": "TEACH → teacher (suffix -er: person who does the action)"
+  },
+  {
+    "sentence": "The _____ fixed our car yesterday.",
+    "rootWord": "DRIVE",
+    "correct": "driver",
+    "hint": "A person who drives",
+    "explanation": "DRIVE → driver (suffix -er: person who does the action)"
+  },
+  {
+    "sentence": "She wants to be a _____ when she grows up.",
+    "rootWord": "SING",
+    "correct": "singer",
+    "hint": "A person who sings",
+    "explanation": "SING → singer (suffix -er: person who does the action)"
+  },
+  {
+    "sentence": "The _____ brought us our food quickly.",
+    "rootWord": "WAIT",
+    "correct": "waiter",
+    "hint": "A person who serves food in a restaurant",
+    "explanation": "WAIT → waiter (suffix -er: person who serves)"
+  },
+  {
+    "sentence": "He is a good _____. He swims every day.",
+    "rootWord": "SWIM",
+    "correct": "swimmer",
+    "hint": "A person who swims",
+    "explanation": "SWIM → swimmer (suffix -er: double the final consonant + -er)"
+  },
+  {
+    "sentence": "The _____ painted a beautiful picture.",
+    "rootWord": "PAINT",
+    "correct": "painter",
+    "hint": "A person who paints",
+    "explanation": "PAINT → painter (suffix -er: person who does the action)"
+  },
+  {
+    "sentence": "My sister is a fast _____.",
+    "rootWord": "READ",
+    "correct": "reader",
+    "hint": "A person who reads",
+    "explanation": "READ → reader (suffix -er: person who does the action)"
+  },
+  {
+    "sentence": "The _____ visited our school today.",
+    "rootWord": "ACT",
+    "correct": "actor",
+    "hint": "A person who acts in films or plays",
+    "explanation": "ACT → actor (suffix -or: person who does the action)"
+  },
+  {
+    "sentence": "She works as a _____ at the hospital.",
+    "rootWord": "VISIT",
+    "correct": "visitor",
+    "hint": "A person who visits a place",
+    "explanation": "VISIT → visitor (suffix -or: person who visits)"
+  },
+  {
+    "sentence": "It is a _____ day today. The sun is shining.",
+    "rootWord": "SUN",
+    "correct": "sunny",
+    "hint": "An adjective describing weather with sun",
+    "explanation": "SUN → sunny (suffix -y: having the quality of sun)"
+  },
+  {
+    "sentence": "Be careful! The road is very _____.",
+    "rootWord": "ICE",
+    "correct": "icy",
+    "hint": "Covered with ice",
+    "explanation": "ICE → icy (suffix -y: having the quality of ice)"
+  },
+  {
+    "sentence": "The children are very _____ today.",
+    "rootWord": "NOISE",
+    "correct": "noisy",
+    "hint": "Making a lot of noise",
+    "explanation": "NOISE → noisy (suffix -y: replace -e and add -y)"
+  },
+  {
+    "sentence": "It was a _____ night. The wind was blowing hard.",
+    "rootWord": "STORM",
+    "correct": "stormy",
+    "hint": "Having storms",
+    "explanation": "STORM → stormy (suffix -y: having the quality of storms)"
+  },
+  {
+    "sentence": "The room is very _____. Please clean it.",
+    "rootWord": "DIRT",
+    "correct": "dirty",
+    "hint": "Not clean",
+    "explanation": "DIRT → dirty (suffix -y: having the quality of dirt)"
+  },
+  {
+    "sentence": "She is a _____ person. She always helps others.",
+    "rootWord": "HELP",
+    "correct": "helpful",
+    "hint": "Willing to help",
+    "explanation": "HELP → helpful (suffix -ful: full of help)"
+  },
+  {
+    "sentence": "The garden looks _____. There are many flowers.",
+    "rootWord": "BEAUTY",
+    "correct": "beautiful",
+    "hint": "Full of beauty",
+    "explanation": "BEAUTY → beautiful (suffix -ful: change -y to -i and add -ful)"
+  },
+  {
+    "sentence": "Be _____ when you cross the road.",
+    "rootWord": "CARE",
+    "correct": "careful",
+    "hint": "Full of care and attention",
+    "explanation": "CARE → careful (suffix -ful: full of care)"
+  },
+  {
+    "sentence": "I am _____ for your help. Thank you!",
+    "rootWord": "THANK",
+    "correct": "thankful",
+    "hint": "Feeling thanks",
+    "explanation": "THANK → thankful (suffix -ful: full of thanks)"
+  },
+  {
+    "sentence": "The movie was very _____. I enjoyed it a lot.",
+    "rootWord": "WONDER",
+    "correct": "wonderful",
+    "hint": "Full of wonder",
+    "explanation": "WONDER → wonderful (suffix -ful: full of wonder)"
+  },
+  {
+    "sentence": "He is a good _____. He plays football every day.",
+    "rootWord": "PLAY",
+    "correct": "player",
+    "hint": "A person who plays",
+    "explanation": "PLAY → player (suffix -er: person who does the action)"
+  },
+  {
+    "sentence": "The _____ cleaned all the rooms in the hotel.",
+    "rootWord": "WORK",
+    "correct": "worker",
+    "hint": "A person who works",
+    "explanation": "WORK → worker (suffix -er: person who does the action)"
+  },
+  {
+    "sentence": "It is very _____ outside. Take an umbrella.",
+    "rootWord": "RAIN",
+    "correct": "rainy",
+    "hint": "Having rain",
+    "explanation": "RAIN → rainy (suffix -y: having the quality of rain)"
+  },
+  {
+    "sentence": "The soup is very _____. I like it.",
+    "rootWord": "TASTE",
+    "correct": "tasty",
+    "hint": "Having a good taste",
+    "explanation": "TASTE → tasty (suffix -y: replace -e and add -y)"
+  },
+  {
+    "sentence": "She is always _____. She smiles a lot.",
+    "rootWord": "CHEER",
+    "correct": "cheerful",
+    "hint": "Full of cheer and happiness",
+    "explanation": "CHEER → cheerful (suffix -ful: full of cheer)"
+  },
+  {
+    "sentence": "The baby is very _____. She sleeps a lot.",
+    "rootWord": "SLEEP",
+    "correct": "sleepy",
+    "hint": "Wanting to sleep",
+    "explanation": "SLEEP → sleepy (suffix -y: having the quality of sleep)"
+  },
+  {
+    "sentence": "My brother is a _____ in a big company.",
+    "rootWord": "MANAGE",
+    "correct": "manager",
+    "hint": "A person who manages",
+    "explanation": "MANAGE → manager (suffix -er: person who manages, drop -e and add -er)"
+  }
+]

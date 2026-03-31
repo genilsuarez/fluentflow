@@ -1,0 +1,86 @@
+[
+  {
+    "id": "reord-b1-pv-001",
+    "sentence": "She looked up the word in the dictionary",
+    "words": ["She", "looked", "up", "the", "word", "in", "the", "dictionary"],
+    "hint": "Subject + phrasal verb + object + place",
+    "explanation": "<Look up> means to search for information in a reference."
+  },
+  {
+    "id": "reord-b1-pv-002",
+    "sentence": "He came across an old photo in the drawer",
+    "words": ["He", "came", "across", "an", "old", "photo", "in", "the", "drawer"],
+    "hint": "Subject + phrasal verb + object + place",
+    "explanation": "<Come across> means to find something by chance."
+  },
+  {
+    "id": "reord-b1-pv-003",
+    "sentence": "They put off the meeting until next Monday",
+    "words": ["They", "put", "off", "the", "meeting", "until", "next", "Monday"],
+    "hint": "Subject + phrasal verb + object + time",
+    "explanation": "<Put off> means to postpone or delay."
+  },
+  {
+    "id": "reord-b1-pv-004",
+    "sentence": "We need to figure out a solution to this problem",
+    "words": ["We", "need", "to", "figure", "out", "a", "solution", "to", "this", "problem"],
+    "hint": "Subject + need to + phrasal verb + object",
+    "explanation": "<Figure out> means to find the answer or understand something."
+  },
+  {
+    "id": "reord-b1-pv-005",
+    "sentence": "She turned down the invitation to the party",
+    "words": ["She", "turned", "down", "the", "invitation", "to", "the", "party"],
+    "hint": "Subject + phrasal verb + object",
+    "explanation": "<Turn down> means to refuse or reject."
+  },
+  {
+    "id": "reord-b1-pv-006",
+    "sentence": "He ran into his old teacher at the supermarket",
+    "words": ["He", "ran", "into", "his", "old", "teacher", "at", "the", "supermarket"],
+    "hint": "Subject + phrasal verb + object + place",
+    "explanation": "<Run into> means to meet someone unexpectedly."
+  },
+  {
+    "id": "reord-b1-pv-007",
+    "sentence": "They called off the football match because of the rain",
+    "words": ["They", "called", "off", "the", "football", "match", "because", "of", "the", "rain"],
+    "hint": "Subject + phrasal verb + object + reason",
+    "explanation": "<Call off> means to cancel."
+  },
+  {
+    "id": "reord-b1-pv-008",
+    "sentence": "She takes after her mother in many ways",
+    "words": ["She", "takes", "after", "her", "mother", "in", "many", "ways"],
+    "hint": "Subject + phrasal verb + object + manner",
+    "explanation": "<Take after> means to resemble a family member."
+  },
+  {
+    "id": "reord-b1-pv-009",
+    "sentence": "We should look into this matter more carefully",
+    "words": ["We", "should", "look", "into", "this", "matter", "more", "carefully"],
+    "hint": "Subject + modal + phrasal verb + object + adverb",
+    "explanation": "<Look into> means to investigate or examine."
+  },
+  {
+    "id": "reord-b1-pv-010",
+    "sentence": "He brought up an interesting point during the discussion",
+    "words": ["He", "brought", "up", "an", "interesting", "point", "during", "the", "discussion"],
+    "hint": "Subject + phrasal verb + object + time",
+    "explanation": "<Bring up> means to mention or introduce a topic."
+  },
+  {
+    "id": "reord-b1-pv-011",
+    "sentence": "She got over her cold after a few days of rest",
+    "words": ["She", "got", "over", "her", "cold", "after", "a", "few", "days", "of", "rest"],
+    "hint": "Subject + phrasal verb + object + time",
+    "explanation": "<Get over> means to recover from an illness or difficulty."
+  },
+  {
+    "id": "reord-b1-pv-012",
+    "sentence": "They set up a new business in the city centre",
+    "words": ["They", "set", "up", "a", "new", "business", "in", "the", "city", "centre"],
+    "hint": "Subject + phrasal verb + object + place",
+    "explanation": "<Set up> means to establish or start something new."
+  }
+]

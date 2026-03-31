@@ -1,0 +1,164 @@
+[
+  {
+    "sentence": "The findings of the study are pretty interesting and could change how we think about climate.",
+    "correct": ["The findings of the study are remarkably interesting and could change how we think about climate.", "The findings of the study are highly significant and could transform our understanding of climate."],
+    "hint": "Check the register — is 'pretty' appropriate for academic writing?",
+    "explanation": "'Pretty' is informal. In academic register, use 'remarkably', 'highly', or 'significantly'."
+  },
+  {
+    "sentence": "The author makes a good point about the decline of biodiversity.",
+    "correct": ["The author makes a compelling point about the decline of biodiversity.", "The author raises a valid point about the decline of biodiversity."],
+    "hint": "Check the register — is 'good' precise enough for formal analysis?",
+    "explanation": "In formal academic writing, 'good' is vague. Use 'compelling', 'valid', or 'cogent' for precision."
+  },
+  {
+    "sentence": "The government should do something about the rising unemployment rate.",
+    "correct": ["The government should take measures to address the rising unemployment rate.", "The government should implement policies to address the rising unemployment rate."],
+    "hint": "Check the register — is 'do something' appropriate for formal writing?",
+    "explanation": "'Do something' is vague and informal. Use 'take measures', 'implement policies', or 'intervene' in formal contexts."
+  },
+  {
+    "sentence": "The experiment's results were got by using a double-blind methodology.",
+    "correct": ["The experiment's results were obtained by using a double-blind methodology.", "The experiment's results were obtained through a double-blind methodology."],
+    "hint": "Check the verb — is 'got' appropriate for academic register?",
+    "explanation": "'Got' is informal. In academic writing, use 'obtained', 'acquired', or 'derived'."
+  },
+  {
+    "sentence": "The CEO did a speech at the annual shareholders' meeting.",
+    "correct": ["The CEO delivered a speech at the annual shareholders' meeting.", "The CEO gave a speech at the annual shareholders' meeting."],
+    "hint": "Check the verb collocation with 'speech'",
+    "explanation": "The correct collocations are 'deliver a speech' or 'give a speech', not 'do a speech'."
+  },
+  {
+    "sentence": "The committee reached to a consensus after lengthy deliberations.",
+    "correct": ["The committee reached a consensus after lengthy deliberations."],
+    "hint": "Check the verb pattern with 'consensus'",
+    "explanation": "'Reach a consensus' is the correct collocation — 'reach' is transitive here and does not take 'to'."
+  },
+  {
+    "sentence": "The new policy has had a profound affect on employee morale.",
+    "correct": ["The new policy has had a profound effect on employee morale."],
+    "hint": "Check the noun — 'affect' or 'effect'?",
+    "explanation": "'Effect' is the noun meaning 'result or impact'. 'Affect' is typically a verb meaning 'to influence'."
+  },
+  {
+    "sentence": "The data suggests that there is a strong correlation among income and education.",
+    "correct": ["The data suggest that there is a strong correlation between income and education.", "The data suggests that there is a strong correlation between income and education."],
+    "hint": "Check the preposition with 'correlation'",
+    "explanation": "'Correlation between X and Y' is the correct collocation, not 'correlation among' (which implies more than two)."
+  },
+  {
+    "sentence": "Lots of researchers have studied this phenomenon over the past decade.",
+    "correct": ["Numerous researchers have studied this phenomenon over the past decade.", "A considerable number of researchers have studied this phenomenon over the past decade."],
+    "hint": "Check the register — is 'lots of' appropriate for academic writing?",
+    "explanation": "'Lots of' is informal. In academic register, use 'numerous', 'a considerable number of', or 'many'."
+  },
+  {
+    "sentence": "The protagonist's hubris was, so to say, the catalyst for his downfall.",
+    "correct": ["The protagonist's hubris was, so to speak, the catalyst for his downfall."],
+    "hint": "Check the idiomatic expression",
+    "explanation": "The correct idiom is 'so to speak', not 'so to say'."
+  },
+  {
+    "sentence": "She took the opportunity by the horns and launched her own business.",
+    "correct": ["She took the bull by the horns and launched her own business."],
+    "hint": "Check the idiom",
+    "explanation": "The correct idiom is 'take the bull by the horns' (face a challenge boldly), not 'take the opportunity by the horns'."
+  },
+  {
+    "sentence": "His argument doesn't hold ground when examined closely.",
+    "correct": ["His argument doesn't hold water when examined closely."],
+    "hint": "Check the idiom meaning 'remain valid'",
+    "explanation": "The correct idiom is 'hold water' (be logically sound), not 'hold ground'. 'Hold one's ground' means 'maintain position'."
+  },
+  {
+    "sentence": "The new evidence throws a different light into the case.",
+    "correct": ["The new evidence throws a different light on the case.", "The new evidence sheds a different light on the case."],
+    "hint": "Check the preposition in the idiom",
+    "explanation": "The correct idiom is 'throw/shed light on' (illuminate), not 'throw light into'."
+  },
+  {
+    "sentence": "The minister's comments were taken out from context by the media.",
+    "correct": ["The minister's comments were taken out of context by the media."],
+    "hint": "Check the preposition in the idiom",
+    "explanation": "The correct idiom is 'taken out of context', not 'taken out from context'."
+  },
+  {
+    "sentence": "The report underlines the need for farther research into renewable energy.",
+    "correct": ["The report underlines the need for further research into renewable energy."],
+    "hint": "Check the word — 'farther' or 'further'?",
+    "explanation": "'Further' means 'additional' or 'more'. 'Farther' refers to physical distance."
+  },
+  {
+    "sentence": "The economic downturn has effected millions of workers worldwide.",
+    "correct": ["The economic downturn has affected millions of workers worldwide."],
+    "hint": "Check the verb — 'effected' or 'affected'?",
+    "explanation": "'Affected' (verb) means 'influenced'. 'Effected' means 'brought about' — a much rarer usage."
+  },
+  {
+    "sentence": "The principle reason for the delay was a lack of funding.",
+    "correct": ["The principal reason for the delay was a lack of funding."],
+    "hint": "Check the adjective — 'principle' or 'principal'?",
+    "explanation": "'Principal' (adjective) means 'main' or 'most important'. 'Principle' is a noun meaning 'rule' or 'belief'."
+  },
+  {
+    "sentence": "The professor's lecture comprised of three main sections.",
+    "correct": ["The professor's lecture comprised three main sections.", "The professor's lecture was composed of three main sections."],
+    "hint": "Check the verb pattern with 'comprised'",
+    "explanation": "'Comprise' means 'consist of' and does not take 'of'. Use 'comprised three sections' or 'was composed of'."
+  },
+  {
+    "sentence": "She poured over the ancient manuscripts for hours.",
+    "correct": ["She pored over the ancient manuscripts for hours."],
+    "hint": "Check the verb — 'poured' or 'pored'?",
+    "explanation": "'Pore over' means 'study intently'. 'Pour' means 'to flow or cause to flow'."
+  },
+  {
+    "sentence": "The novel is a thinly veiled illusion to the author's own childhood.",
+    "correct": ["The novel is a thinly veiled allusion to the author's own childhood."],
+    "hint": "Check the noun — 'illusion' or 'allusion'?",
+    "explanation": "'Allusion' means 'an indirect reference'. 'Illusion' means 'a false perception or deception'."
+  },
+  {
+    "sentence": "The judge was completely disinterested in the proceedings and kept checking his phone.",
+    "correct": ["The judge was completely uninterested in the proceedings and kept checking his phone."],
+    "hint": "Check the adjective — 'disinterested' or 'uninterested'?",
+    "explanation": "'Uninterested' means 'not interested'. 'Disinterested' means 'impartial' — a positive quality for a judge."
+  },
+  {
+    "sentence": "The continuous interruptions made it impossible to concentrate.",
+    "correct": ["The continual interruptions made it impossible to concentrate."],
+    "hint": "Check the adjective — 'continuous' or 'continual'?",
+    "explanation": "'Continual' means 'repeated frequently'. 'Continuous' means 'without interruption' — contradicting 'interruptions'."
+  },
+  {
+    "sentence": "For all intensive purposes, the project has been abandoned.",
+    "correct": ["For all intents and purposes, the project has been abandoned."],
+    "hint": "Check the idiomatic expression",
+    "explanation": "The correct idiom is 'for all intents and purposes', not 'for all intensive purposes' (a common eggcorn)."
+  },
+  {
+    "sentence": "The author's magnum opus is widely considered as a masterpiece of modernist literature.",
+    "correct": ["The author's magnum opus is widely considered a masterpiece of modernist literature.", "The author's magnum opus is widely regarded as a masterpiece of modernist literature."],
+    "hint": "Check the verb pattern with 'considered'",
+    "explanation": "'Consider' takes a direct complement: 'considered a masterpiece'. Use 'regarded as' if you want the preposition."
+  },
+  {
+    "sentence": "The diplomat's faux pas literally caused an international incident.",
+    "correct": ["The diplomat's faux pas virtually caused an international incident.", "The diplomat's faux pas practically caused an international incident."],
+    "hint": "Check the adverb — is 'literally' used correctly?",
+    "explanation": "If no actual international incident occurred, 'literally' is misused. Use 'virtually' or 'practically' for emphasis without literal truth."
+  },
+  {
+    "sentence": "The sculpture harkens back at the classical Greek tradition.",
+    "correct": ["The sculpture harkens back to the classical Greek tradition.", "The sculpture harks back to the classical Greek tradition."],
+    "hint": "Check the preposition in the phrasal verb",
+    "explanation": "The correct expression is 'harken/hark back to', not 'harken back at'."
+  },
+  {
+    "sentence": "The treatise offers a fulsome analysis of post-colonial discourse.",
+    "correct": ["The treatise offers a thorough analysis of post-colonial discourse.", "The treatise offers a comprehensive analysis of post-colonial discourse."],
+    "hint": "Check the adjective — does 'fulsome' mean what you think?",
+    "explanation": "'Fulsome' traditionally means 'excessively flattering' or 'insincere', not 'full' or 'thorough'. Use 'thorough' or 'comprehensive'."
+  }
+]

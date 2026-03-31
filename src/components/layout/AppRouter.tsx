@@ -22,6 +22,8 @@ const MatchingComponent = lazyWithRetry(() => import('../learning/MatchingCompon
 const ReadingComponent = lazyWithRetry(() => import('../learning/ReadingComponent'));
 const ReorderingComponent = lazyWithRetry(() => import('../learning/ReorderingComponent'));
 const TransformationComponent = lazyWithRetry(() => import('../learning/TransformationComponent'));
+const WordFormationComponent = lazyWithRetry(() => import('../learning/WordFormationComponent'));
+const ErrorCorrectionComponent = lazyWithRetry(() => import('../learning/ErrorCorrectionComponent'));
 
 // Enhanced loading component
 const ComponentLoader: React.FC = () => (
@@ -187,6 +189,10 @@ export const AppRouter: React.FC = () => {
               return <ReorderingComponent module={module} />;
             case 'transformation':
               return <TransformationComponent module={module} />;
+            case 'word-formation':
+              return <WordFormationComponent module={module} />;
+            case 'error-correction':
+              return <ErrorCorrectionComponent module={module} />;
             default:
               return (
                 <div className="app-router__unknown-view">

@@ -1,0 +1,127 @@
+[
+  {
+    "sentence": "If I would know the answer, I would tell you.",
+    "correct": ["If I knew the answer, I would tell you."],
+    "explanation": "Second conditional: <If> + past simple, not <would>. Use <If I knew>."
+  },
+  {
+    "sentence": "The cake was make by my grandmother.",
+    "correct": ["The cake was made by my grandmother."],
+    "explanation": "Passive voice requires the past participle: <was made>, not <was make>."
+  },
+  {
+    "sentence": "If she will study harder, she will pass the exam.",
+    "correct": ["If she studies harder, she will pass the exam."],
+    "explanation": "First conditional: <If> + present simple (not <will>). Use <If she studies>."
+  },
+  {
+    "sentence": "The letter was wrote by the manager.",
+    "correct": ["The letter was written by the manager."],
+    "explanation": "Passive voice requires the past participle: <was written>, not <was wrote>."
+  },
+  {
+    "sentence": "If I had more time, I will learn to play the piano.",
+    "correct": ["If I had more time, I would learn to play the piano."],
+    "explanation": "Second conditional: <If> + past simple, <would> + base verb. Not <will>."
+  },
+  {
+    "sentence": "The window was broke by the children.",
+    "correct": ["The window was broken by the children."],
+    "explanation": "Passive voice requires the past participle: <was broken>, not <was broke>."
+  },
+  {
+    "sentence": "If it will rain tomorrow, we will stay at home.",
+    "correct": ["If it rains tomorrow, we will stay at home."],
+    "explanation": "First conditional: <If> + present simple. Use <If it rains>, not <If it will rain>."
+  },
+  {
+    "sentence": "The homework has been did by all the students.",
+    "correct": ["The homework has been done by all the students."],
+    "explanation": "Present perfect passive: <has been> + past participle. <Done>, not <did>."
+  },
+  {
+    "sentence": "If I was you, I would accept the offer.",
+    "correct": ["If I were you, I would accept the offer."],
+    "explanation": "In second conditional with <I>, use <were> (subjunctive): <If I were you>."
+  },
+  {
+    "sentence": "The car is being repair at the garage.",
+    "correct": ["The car is being repaired at the garage."],
+    "explanation": "Present continuous passive: <is being> + past participle. <Repaired>, not <repair>."
+  },
+  {
+    "sentence": "If they would arrive earlier, they wouldn't miss the train.",
+    "correct": ["If they arrived earlier, they wouldn't miss the train."],
+    "explanation": "Second conditional: <If> + past simple. Use <If they arrived>, not <would arrive>."
+  },
+  {
+    "sentence": "English is spoke in many countries.",
+    "correct": ["English is spoken in many countries."],
+    "explanation": "Passive voice: <is> + past participle. <Spoken>, not <spoke>."
+  },
+  {
+    "sentence": "If you heat water to 100 degrees, it will boil.",
+    "correct": ["If you heat water to 100 degrees, it boils."],
+    "explanation": "Zero conditional (facts): <If> + present simple, present simple. Not <will boil>."
+  },
+  {
+    "sentence": "The new hospital will be build next year.",
+    "correct": ["The new hospital will be built next year."],
+    "explanation": "Future passive: <will be> + past participle. <Built>, not <build>."
+  },
+  {
+    "sentence": "If I would have studied harder, I would have passed.",
+    "correct": ["If I had studied harder, I would have passed."],
+    "explanation": "Third conditional: <If> + past perfect. Use <If I had studied>, not <would have studied>."
+  },
+  {
+    "sentence": "The food was ate by the dog.",
+    "correct": ["The food was eaten by the dog."],
+    "explanation": "Passive voice: <was> + past participle. <Eaten>, not <ate>."
+  },
+  {
+    "sentence": "If she would be taller, she could reach the shelf.",
+    "correct": ["If she were taller, she could reach the shelf."],
+    "explanation": "Second conditional: <If> + past simple. Use <If she were>, not <would be>."
+  },
+  {
+    "sentence": "The report must be finish by Friday.",
+    "correct": ["The report must be finished by Friday."],
+    "explanation": "Modal passive: <must be> + past participle. <Finished>, not <finish>."
+  },
+  {
+    "sentence": "If we don't hurry, we would miss the bus.",
+    "correct": ["If we don't hurry, we will miss the bus."],
+    "explanation": "First conditional: <If> + present simple, <will> + base verb. Not <would>."
+  },
+  {
+    "sentence": "The books were stole from the library.",
+    "correct": ["The books were stolen from the library."],
+    "explanation": "Passive voice: <were> + past participle. <Stolen>, not <stole>."
+  },
+  {
+    "sentence": "If I had known about the party, I would came.",
+    "correct": ["If I had known about the party, I would have come."],
+    "explanation": "Third conditional: <would have> + past participle. <Would have come>, not <would came>."
+  },
+  {
+    "sentence": "The house was build in 1920.",
+    "correct": ["The house was built in 1920."],
+    "explanation": "Passive voice: <was> + past participle. <Built>, not <build>."
+  },
+  {
+    "sentence": "If you mix blue and yellow, you will get green.",
+    "correct": ["If you mix blue and yellow, you get green."],
+    "explanation": "Zero conditional (facts): both clauses use present simple. <You get>, not <will get>."
+  },
+  {
+    "sentence": "The song was sang by a famous singer.",
+    "correct": ["The song was sung by a famous singer."],
+    "explanation": "Passive voice: <was> + past participle. <Sung>, not <sang>."
+  },
+  {
+    "sentence": "If she studied more, she will get better grades.",
+    "correct": ["If she studied more, she would get better grades.", "If she studies more, she will get better grades."],
+    "explanation": "Don't mix conditionals: either first (studies/will) or second (studied/would)."
+  }
+]

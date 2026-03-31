@@ -1,0 +1,164 @@
+[
+  {
+    "sentence": "Never I have seen such a beautiful sunset.",
+    "correct": ["Never have I seen such a beautiful sunset."],
+    "hint": "Check the word order after 'Never'",
+    "explanation": "Negative adverbs at the start of a sentence require subject-auxiliary inversion: 'Never have I seen'."
+  },
+  {
+    "sentence": "Not until she spoke I realised who she was.",
+    "correct": ["Not until she spoke did I realise who she was.", "Not until she spoke did I realize who she was."],
+    "hint": "Check the word order in the main clause after 'Not until'",
+    "explanation": "'Not until' triggers inversion in the main clause: 'did I realise', not 'I realised'."
+  },
+  {
+    "sentence": "Under no circumstances you should reveal this information.",
+    "correct": ["Under no circumstances should you reveal this information."],
+    "hint": "Check the word order after 'Under no circumstances'",
+    "explanation": "Negative fronted adverbials require inversion: 'should you reveal'."
+  },
+  {
+    "sentence": "Only after the meeting finished we understood the problem.",
+    "correct": ["Only after the meeting finished did we understand the problem."],
+    "hint": "Check the word order in the main clause",
+    "explanation": "'Only after' triggers inversion in the main clause: 'did we understand'."
+  },
+  {
+    "sentence": "Little they knew about the dangers ahead.",
+    "correct": ["Little did they know about the dangers ahead."],
+    "hint": "Check the word order after 'Little'",
+    "explanation": "'Little' as a negative adverb at the start requires inversion: 'Little did they know'."
+  },
+  {
+    "sentence": "It is essential that he arrives on time.",
+    "correct": ["It is essential that he arrive on time."],
+    "hint": "Check the verb form in the that-clause",
+    "explanation": "The subjunctive mood after 'essential that' requires the base form: 'arrive', not 'arrives'."
+  },
+  {
+    "sentence": "The committee demanded that the report is submitted by Friday.",
+    "correct": ["The committee demanded that the report be submitted by Friday."],
+    "hint": "Check the verb form in the that-clause",
+    "explanation": "The subjunctive after 'demanded that' requires 'be submitted', not 'is submitted'."
+  },
+  {
+    "sentence": "I suggest that she takes a different approach.",
+    "correct": ["I suggest that she take a different approach."],
+    "hint": "Check the verb form after 'suggest that'",
+    "explanation": "The subjunctive after 'suggest that' requires the base form: 'take', not 'takes'."
+  },
+  {
+    "sentence": "It is vital that every student understands the rules.",
+    "correct": ["It is vital that every student understand the rules."],
+    "hint": "Check the verb form in the that-clause",
+    "explanation": "The subjunctive after 'vital that' requires the base form: 'understand', not 'understands'."
+  },
+  {
+    "sentence": "The doctor recommended that he takes the medication daily.",
+    "correct": ["The doctor recommended that he take the medication daily."],
+    "hint": "Check the verb form after 'recommended that'",
+    "explanation": "The subjunctive after 'recommended that' requires the base form: 'take', not 'takes'."
+  },
+  {
+    "sentence": "She came up the idea during the brainstorming session.",
+    "correct": ["She came up with the idea during the brainstorming session."],
+    "hint": "Check the phrasal verb particle",
+    "explanation": "The correct phrasal verb is 'come up with' (an idea), not 'come up'."
+  },
+  {
+    "sentence": "He turned up to be a very talented musician.",
+    "correct": ["He turned out to be a very talented musician."],
+    "hint": "Check the phrasal verb",
+    "explanation": "'Turn out to be' means 'prove to be'. 'Turn up' means 'arrive' or 'appear'."
+  },
+  {
+    "sentence": "The company has been putting up with the losses for too long and decided to cut off some departments.",
+    "correct": ["The company has been putting up with the losses for too long and decided to cut back on some departments."],
+    "hint": "Check the second phrasal verb",
+    "explanation": "'Cut off' means 'disconnect'. 'Cut back on' means 'reduce' — which fits the context of reducing departments."
+  },
+  {
+    "sentence": "We need to look into this matter before we can get on a conclusion.",
+    "correct": ["We need to look into this matter before we can come to a conclusion."],
+    "hint": "Check the phrasal verb with 'conclusion'",
+    "explanation": "The correct collocation is 'come to a conclusion', not 'get on a conclusion'."
+  },
+  {
+    "sentence": "She broke up the news to him very gently.",
+    "correct": ["She broke the news to him very gently."],
+    "hint": "Check the phrasal verb",
+    "explanation": "'Break the news' (deliver bad news) does not use 'up'. 'Break up' means 'end a relationship'."
+  },
+  {
+    "sentence": "Rarely the government has taken such drastic measures.",
+    "correct": ["Rarely has the government taken such drastic measures."],
+    "hint": "Check the word order after 'Rarely'",
+    "explanation": "'Rarely' at the start requires inversion: 'Rarely has the government taken'."
+  },
+  {
+    "sentence": "At no time the suspect was seen near the building.",
+    "correct": ["At no time was the suspect seen near the building."],
+    "hint": "Check the word order after 'At no time'",
+    "explanation": "'At no time' requires inversion: 'was the suspect seen'."
+  },
+  {
+    "sentence": "It is imperative that the project is completed on schedule.",
+    "correct": ["It is imperative that the project be completed on schedule."],
+    "hint": "Check the verb form in the that-clause",
+    "explanation": "The subjunctive after 'imperative that' requires 'be completed', not 'is completed'."
+  },
+  {
+    "sentence": "He ran into with an old friend at the conference.",
+    "correct": ["He ran into an old friend at the conference."],
+    "hint": "Check the phrasal verb",
+    "explanation": "'Run into' (meet by chance) does not take 'with'. Remove 'with'."
+  },
+  {
+    "sentence": "So serious was the situation that the president called up an emergency meeting.",
+    "correct": ["So serious was the situation that the president called an emergency meeting."],
+    "hint": "Check the phrasal verb with 'meeting'",
+    "explanation": "'Call a meeting' is the correct collocation. 'Call up' means 'phone someone' or 'summon for military service'."
+  },
+  {
+    "sentence": "In no way this decision should affect your daily routine.",
+    "correct": ["In no way should this decision affect your daily routine."],
+    "hint": "Check the word order after 'In no way'",
+    "explanation": "'In no way' requires inversion: 'should this decision affect'."
+  },
+  {
+    "sentence": "The board insisted that the CEO resigns immediately.",
+    "correct": ["The board insisted that the CEO resign immediately."],
+    "hint": "Check the verb form after 'insisted that'",
+    "explanation": "The subjunctive after 'insisted that' requires the base form: 'resign', not 'resigns'."
+  },
+  {
+    "sentence": "She put off with his rude behaviour for years.",
+    "correct": ["She put up with his rude behaviour for years."],
+    "hint": "Check the phrasal verb meaning 'tolerate'",
+    "explanation": "'Put up with' means 'tolerate'. 'Put off' means 'postpone'."
+  },
+  {
+    "sentence": "Only when the results were announced the students celebrated.",
+    "correct": ["Only when the results were announced did the students celebrate."],
+    "hint": "Check the word order in the main clause",
+    "explanation": "'Only when' triggers inversion in the main clause: 'did the students celebrate'."
+  },
+  {
+    "sentence": "It is crucial that the data remains confidential at all times.",
+    "correct": ["It is crucial that the data remain confidential at all times."],
+    "hint": "Check the verb form in the that-clause",
+    "explanation": "The subjunctive after 'crucial that' requires the base form: 'remain', not 'remains'."
+  },
+  {
+    "sentence": "Not only he failed the test, but he also lost his scholarship.",
+    "correct": ["Not only did he fail the test, but he also lost his scholarship."],
+    "hint": "Check the word order after 'Not only'",
+    "explanation": "'Not only' at the start requires inversion: 'Not only did he fail'."
+  },
+  {
+    "sentence": "She looked down at her colleagues because of their lack of experience.",
+    "correct": ["She looked down on her colleagues because of their lack of experience."],
+    "hint": "Check the phrasal verb particle",
+    "explanation": "'Look down on' means 'regard with contempt'. 'Look down at' means physically looking downward."
+  }
+]

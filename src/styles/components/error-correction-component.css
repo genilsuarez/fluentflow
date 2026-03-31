@@ -1,0 +1,235 @@
+/**
+ * Error Correction Component - Pure BEM Implementation
+ * Cloned from transformation-component.css, adapted for error-correction mode.
+ * Adds error-sentence with red-tinted background and rose theme.
+ */
+
+/* === CONTAINER === */
+.error-correction__container {
+  max-width: 42rem;
+  width: 100%;
+  margin: 0.125rem auto;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    135deg,
+    var(--theme-bg-elevated, #ffffff) 0%,
+    var(--theme-bg-subtle, #f9fafb) 100%
+  );
+  border: 1px solid var(--theme-border-modal, rgba(0, 0, 0, 0.1));
+  border-radius: var(--radius-lg, 0.5rem);
+}
+@media (min-width: 640px) {
+  .error-correction__container {
+    padding: 0.75rem;
+  }
+}
+
+/* === NO DATA === */
+.error-correction__no-data {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0.75rem;
+  text-align: center;
+}
+.error-correction__no-data-text {
+  color: var(--theme-text-secondary, #6b7280);
+  margin-bottom: 1rem;
+}
+html.dark .error-correction__no-data-text {
+  color: var(--theme-text-secondary, #e5e7eb);
+}
+.error-correction__no-data-btn {
+  padding: var(--padding-md, 1rem) var(--padding-xl, 2rem);
+  background-color: var(--theme-primary-blue, #3b82f6);
+  color: white;
+  border-radius: var(--radius-md, 0.375rem);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.error-correction__no-data-btn:hover {
+  background-color: #2563eb;
+}
+
+/* === EXERCISE CARD === */
+.error-correction__exercise-card {
+  background-color: var(--theme-bg-elevated, #ffffff);
+  border-radius: 1rem;
+  box-shadow: var(--shadow-subtle, 0 1px 3px rgba(0, 0, 0, 0.1));
+  padding: 1rem;
+  margin: 0;
+  border: 1px solid var(--theme-border-soft, #f3f4f6);
+  width: 100%;
+  box-sizing: border-box;
+}
+html.dark .error-correction__exercise-card {
+  background-color: var(--theme-bg-elevated, #1f2937);
+  border-color: var(--theme-border-soft, #374151);
+}
+
+/* === INSTRUCTION === */
+.error-correction__instruction {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--theme-text-primary, #111827);
+  margin: 0 0 0.75rem;
+  line-height: 1.4;
+}
+html.dark .error-correction__instruction {
+  color: var(--theme-text-primary, #f3f4f6);
+}
+
+/* === HINT === */
+.error-correction__hint {
+  background-color: var(--theme-bg-subtle, #fffbeb);
+  border: 1px solid #fde68a;
+  border-radius: var(--radius-md, 0.375rem);
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.75rem;
+}
+html.dark .error-correction__hint {
+  background-color: rgba(251, 191, 36, 0.1);
+  border-color: rgba(251, 191, 36, 0.3);
+}
+.error-correction__hint-text {
+  font-size: 0.85rem;
+  color: var(--theme-text-secondary, #92400e);
+  margin: 0;
+}
+html.dark .error-correction__hint-text {
+  color: #fbbf24;
+}
+
+/* === ERROR SENTENCE — Red-tinted background to signal "this has an error" (rose theme) === */
+.error-correction__error-sentence {
+  background-color: rgba(244, 63, 94, 0.06);
+  border: 1px solid rgba(244, 63, 94, 0.25);
+  border-radius: var(--radius-md, 0.375rem);
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--theme-text-primary, #111827);
+  line-height: 1.5;
+  border-left: 3px solid #f43f5e;
+}
+html.dark .error-correction__error-sentence {
+  background-color: rgba(244, 63, 94, 0.1);
+  border-color: rgba(244, 63, 94, 0.3);
+  border-left-color: #f43f5e;
+  color: var(--theme-text-primary, #f3f4f6);
+}
+
+/* === ANSWER AREA === */
+.error-correction__answer-area {
+  border: 2px solid var(--theme-border-soft, #e5e7eb);
+  border-radius: var(--radius-md, 0.375rem);
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  transition: border-color 0.2s ease;
+}
+.error-correction__answer-area:focus-within {
+  border-color: #f43f5e;
+}
+.error-correction__answer-area--correct {
+  border-color: #22c55e;
+  background-color: rgba(34, 197, 94, 0.05);
+}
+.error-correction__answer-area--incorrect {
+  border-color: #ef4444;
+  background-color: rgba(239, 68, 68, 0.05);
+}
+html.dark .error-correction__answer-area {
+  border-color: var(--theme-border-soft, #4b5563);
+}
+html.dark .error-correction__answer-area--correct {
+  background-color: rgba(34, 197, 94, 0.1);
+}
+html.dark .error-correction__answer-area--incorrect {
+  background-color: rgba(239, 68, 68, 0.1);
+}
+
+.error-correction__input {
+  width: 100%;
+  min-height: 2.5rem;
+  font-size: 1rem;
+}
+
+/* === RESULT === */
+.error-correction__result-container {
+  overflow: hidden;
+  transition:
+    max-height 0.3s ease,
+    opacity 0.3s ease;
+}
+.error-correction__result-container--hidden {
+  max-height: 0;
+  opacity: 0;
+}
+.error-correction__result-container--visible {
+  max-height: 20rem;
+  opacity: 1;
+}
+.error-correction__result {
+  padding-top: 0.5rem;
+}
+.error-correction__feedback-row {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  flex-wrap: wrap;
+}
+.error-correction__feedback-icon {
+  width: 1.125rem;
+  height: 1.125rem;
+  flex-shrink: 0;
+}
+.error-correction__feedback-icon--correct {
+  color: #22c55e;
+}
+.error-correction__feedback-icon--incorrect {
+  color: #ef4444;
+}
+html.dark .error-correction__feedback-icon--correct {
+  color: #4ade80;
+}
+html.dark .error-correction__feedback-icon--incorrect {
+  color: #f87171;
+}
+.error-correction__feedback {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.error-correction__correct-answer {
+  font-size: 0.85rem;
+  color: var(--theme-text-secondary, #6b7280);
+}
+html.dark .error-correction__correct-answer {
+  color: var(--theme-text-secondary, #d1d5db);
+}
+
+/* === EXPLANATION === */
+.error-correction__explanation {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background-color: var(--theme-bg-subtle, #f9fafb);
+  border-radius: var(--radius-sm, 0.25rem);
+  border-left: 3px solid #f43f5e;
+}
+html.dark .error-correction__explanation {
+  background-color: rgba(244, 63, 94, 0.08);
+}
+.error-correction__explanation-text {
+  font-size: 0.85rem;
+  color: var(--theme-text-secondary, #4b5563);
+  line-height: 1.5;
+}
+html.dark .error-correction__explanation-text {
+  color: var(--theme-text-secondary, #d1d5db);
+}
+.error-correction__explanation-label {
+  font-weight: 600;
+  color: #f43f5e;
+}

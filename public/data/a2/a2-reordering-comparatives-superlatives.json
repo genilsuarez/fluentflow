@@ -1,0 +1,86 @@
+[
+  {
+    "id": "reord-a2-cs-001",
+    "sentence": "This book is more interesting than that one",
+    "words": ["This", "book", "is", "more", "interesting", "than", "that", "one"],
+    "hint": "Subject + is + more + adjective + than + object",
+    "explanation": "Comparatives with long adjectives use <more ... than>."
+  },
+  {
+    "id": "reord-a2-cs-002",
+    "sentence": "She is taller than her brother",
+    "words": ["She", "is", "taller", "than", "her", "brother"],
+    "hint": "Subject + is + adjective-er + than + person",
+    "explanation": "Short adjectives add <-er> for comparatives: <taller than>."
+  },
+  {
+    "id": "reord-a2-cs-003",
+    "sentence": "This is the most expensive restaurant in the city",
+    "words": ["This", "is", "the", "most", "expensive", "restaurant", "in", "the", "city"],
+    "hint": "Subject + is + the most + adjective + noun + place",
+    "explanation": "Superlatives with long adjectives use <the most>."
+  },
+  {
+    "id": "reord-a2-cs-004",
+    "sentence": "He is the fastest runner in the school",
+    "words": ["He", "is", "the", "fastest", "runner", "in", "the", "school"],
+    "hint": "Subject + is + the + adjective-est + noun + place",
+    "explanation": "Short adjectives add <-est> for superlatives: <the fastest>."
+  },
+  {
+    "id": "reord-a2-cs-005",
+    "sentence": "My house is bigger than yours",
+    "words": ["My", "house", "is", "bigger", "than", "yours"],
+    "hint": "Possessive + noun + is + adjective-er + than + pronoun",
+    "explanation": "Short adjectives double the consonant and add <-er>: <bigger>."
+  },
+  {
+    "id": "reord-a2-cs-006",
+    "sentence": "English is easier than Chinese",
+    "words": ["English", "is", "easier", "than", "Chinese"],
+    "hint": "Subject + is + adjective-er + than + subject",
+    "explanation": "Adjectives ending in <-y> change to <-ier>: <easier>."
+  },
+  {
+    "id": "reord-a2-cs-007",
+    "sentence": "This is the best pizza I have ever eaten",
+    "words": ["This", "is", "the", "best", "pizza", "I", "have", "ever", "eaten"],
+    "hint": "Subject + is + the best + noun + present perfect",
+    "explanation": "<Best> is the superlative of <good>. We often use it with present perfect."
+  },
+  {
+    "id": "reord-a2-cs-008",
+    "sentence": "Summer is hotter than spring",
+    "words": ["Summer", "is", "hotter", "than", "spring"],
+    "hint": "Subject + is + adjective-er + than + subject",
+    "explanation": "Short adjectives double the consonant and add <-er>: <hotter>."
+  },
+  {
+    "id": "reord-a2-cs-009",
+    "sentence": "She is the most beautiful girl in the class",
+    "words": ["She", "is", "the", "most", "beautiful", "girl", "in", "the", "class"],
+    "hint": "Subject + is + the most + adjective + noun + place",
+    "explanation": "Long adjectives use <the most> for superlatives."
+  },
+  {
+    "id": "reord-a2-cs-010",
+    "sentence": "This exercise is less difficult than the last one",
+    "words": ["This", "exercise", "is", "less", "difficult", "than", "the", "last", "one"],
+    "hint": "Subject + is + less + adjective + than + object",
+    "explanation": "Use <less ... than> for the opposite of <more ... than>."
+  },
+  {
+    "id": "reord-a2-cs-011",
+    "sentence": "My cat is lazier than my dog",
+    "words": ["My", "cat", "is", "lazier", "than", "my", "dog"],
+    "hint": "Possessive + noun + is + adjective-er + than + possessive + noun",
+    "explanation": "Adjectives ending in <-y> change to <-ier>: <lazier>."
+  },
+  {
+    "id": "reord-a2-cs-012",
+    "sentence": "That was the worst film I have ever seen",
+    "words": ["That", "was", "the", "worst", "film", "I", "have", "ever", "seen"],
+    "hint": "Subject + was + the worst + noun + present perfect",
+    "explanation": "<Worst> is the superlative of <bad>."
+  }
+]

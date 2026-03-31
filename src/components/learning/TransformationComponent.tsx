@@ -10,31 +10,11 @@ import LearningProgressHeader from '../ui/LearningProgressHeader';
 import { EditableInput } from '../ui/EditableInput';
 import type { EditableInputHandle } from '../ui/EditableInput';
 import { ContentAdapter } from '../../utils/contentAdapter';
-import type { LearningModule } from '../../types';
-
-interface TransformationData {
-  prompt: string;
-  source: string;
-  correct: string[];
-  hint?: string;
-  explanation?: string;
-}
+import { normalizeAnswer } from '../../utils/answerUtils';
+import type { LearningModule, TransformationData } from '../../types';
 
 interface TransformationComponentProps {
   module: LearningModule;
-}
-
-/**
- * Normalize answer for comparison: lowercase, collapse whitespace, trim,
- * strip trailing period/punctuation for leniency.
- */
-function normalize(s: string): string {
-  return s
-    .toLowerCase()
-    .replace(/\s+/g, ' ')
-    .trim()
-    .replace(/[.!?]+$/, '')
-    .trim();
 }
 
 const TransformationComponent: React.FC<TransformationComponentProps> = ({ module }) => {
@@ -67,8 +47,8 @@ const TransformationComponent: React.FC<TransformationComponentProps> = ({ modul
   const isCorrectAnswer = useCallback(
     (userAnswer: string): boolean => {
       if (!currentExercise?.correct) return false;
-      const norm = normalize(userAnswer);
-      return currentExercise.correct.some(c => normalize(c) === norm);
+      const norm = normalizeAnswer(userAnswer);
+      return currentExercise.correct.some(c => normalizeAnswer(c) === norm);
     },
     [currentExercise]
   );

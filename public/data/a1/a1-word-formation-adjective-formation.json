@@ -1,0 +1,152 @@
+[
+  {
+    "sentence": "Be careful! The road is very _____ when it rains.",
+    "rootWord": "RAIN",
+    "correct": "rainy",
+    "explanation": "RAIN → rainy (add -y to make an adjective meaning 'having rain')"
+  },
+  {
+    "sentence": "It is a _____ day. The sun is shining.",
+    "rootWord": "SUN",
+    "correct": "sunny",
+    "explanation": "SUN → sunny (double the consonant and add -y)"
+  },
+  {
+    "sentence": "The sky is very _____ today. I think it will rain.",
+    "rootWord": "CLOUD",
+    "correct": "cloudy",
+    "explanation": "CLOUD → cloudy (add -y to make an adjective meaning 'full of clouds')"
+  },
+  {
+    "sentence": "It is very _____ outside. Take a jacket.",
+    "rootWord": "WIND",
+    "correct": "windy",
+    "explanation": "WIND → windy (add -y to make an adjective meaning 'having wind')"
+  },
+  {
+    "sentence": "The room is very _____ . Please clean it.",
+    "rootWord": "DIRT",
+    "correct": "dirty",
+    "explanation": "DIRT → dirty (add -y to make an adjective meaning 'covered in dirt')"
+  },
+  {
+    "sentence": "She is a very _____ person. She always helps others.",
+    "rootWord": "HELP",
+    "correct": "helpful",
+    "explanation": "HELP → helpful (add -ful to make an adjective meaning 'full of help')"
+  },
+  {
+    "sentence": "The garden is _____ in spring with many flowers.",
+    "rootWord": "BEAUTY",
+    "correct": "beautiful",
+    "explanation": "BEAUTY → beautiful (change -y to -iful to make an adjective)"
+  },
+  {
+    "sentence": "He is very _____ for your gift.",
+    "rootWord": "THANK",
+    "correct": "thankful",
+    "explanation": "THANK → thankful (add -ful to make an adjective meaning 'full of thanks')"
+  },
+  {
+    "sentence": "The movie was very _____ . I laughed a lot.",
+    "rootWord": "FUN",
+    "correct": "funny",
+    "explanation": "FUN → funny (double the consonant and add -y)"
+  },
+  {
+    "sentence": "She is a _____ girl. She always tells the truth.",
+    "rootWord": "TRUTH",
+    "correct": "truthful",
+    "explanation": "TRUTH → truthful (add -ful to make an adjective meaning 'full of truth')"
+  },
+  {
+    "sentence": "The children are very _____ . They play all day.",
+    "rootWord": "PLAY",
+    "correct": "playful",
+    "explanation": "PLAY → playful (add -ful to make an adjective meaning 'full of play')"
+  },
+  {
+    "sentence": "My hands are _____ . I need to wash them.",
+    "rootWord": "STICK",
+    "correct": "sticky",
+    "explanation": "STICK → sticky (add -y to make an adjective)"
+  },
+  {
+    "sentence": "The soup is very _____ . It has a lot of salt.",
+    "rootWord": "SALT",
+    "correct": "salty",
+    "explanation": "SALT → salty (add -y to make an adjective meaning 'having salt')"
+  },
+  {
+    "sentence": "Be _____ when you cross the road.",
+    "rootWord": "CARE",
+    "correct": "careful",
+    "explanation": "CARE → careful (add -ful to make an adjective meaning 'full of care')"
+  },
+  {
+    "sentence": "The cake is very _____ . It has a lot of sugar.",
+    "rootWord": "SUGAR",
+    "correct": "sugary",
+    "explanation": "SUGAR → sugary (add -y to make an adjective meaning 'having sugar')"
+  },
+  {
+    "sentence": "I am _____ that you passed the exam!",
+    "rootWord": "JOY",
+    "correct": "joyful",
+    "explanation": "JOY → joyful (add -ful to make an adjective meaning 'full of joy')"
+  },
+  {
+    "sentence": "The floor is _____ . Someone spilled water.",
+    "rootWord": "SLIP",
+    "correct": "slippery",
+    "explanation": "SLIP → slippery (add -pery to make an adjective meaning 'easy to slip on')"
+  },
+  {
+    "sentence": "It was a _____ night. The snow covered everything.",
+    "rootWord": "SNOW",
+    "correct": "snowy",
+    "explanation": "SNOW → snowy (add -y to make an adjective meaning 'having snow')"
+  },
+  {
+    "sentence": "She gave me a _____ smile.",
+    "rootWord": "CHEER",
+    "correct": "cheerful",
+    "explanation": "CHEER → cheerful (add -ful to make an adjective meaning 'full of cheer')"
+  },
+  {
+    "sentence": "The baby has _____ skin.",
+    "rootWord": "SILK",
+    "correct": "silky",
+    "explanation": "SILK → silky (add -y to make an adjective meaning 'like silk')"
+  },
+  {
+    "sentence": "He is a _____ boy. He always says 'please' and 'thank you'.",
+    "rootWord": "RESPECT",
+    "correct": "respectful",
+    "explanation": "RESPECT → respectful (add -ful to make an adjective meaning 'full of respect')"
+  },
+  {
+    "sentence": "The weather is _____ today. There is a lot of fog.",
+    "rootWord": "FOG",
+    "correct": "foggy",
+    "explanation": "FOG → foggy (double the consonant and add -y)"
+  },
+  {
+    "sentence": "This book is very _____ . I learned a lot.",
+    "rootWord": "USE",
+    "correct": "useful",
+    "explanation": "USE → useful (add -ful to make an adjective meaning 'full of use')"
+  },
+  {
+    "sentence": "The road is very _____ . There are many rocks.",
+    "rootWord": "ROCK",
+    "correct": "rocky",
+    "explanation": "ROCK → rocky (add -y to make an adjective meaning 'full of rocks')"
+  },
+  {
+    "sentence": "She is a _____ student. She studies hard every day.",
+    "rootWord": "WONDER",
+    "correct": "wonderful",
+    "explanation": "WONDER → wonderful (add -ful to make an adjective meaning 'full of wonder')"
+  }
+]
