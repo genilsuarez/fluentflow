@@ -83,8 +83,8 @@
   },
   {
     "id": "reord-a2-cmp-013",
-    "sentence": "The blue car is more comfortable than the red one",
-    "words": ["The", "blue", "car", "is", "more", "comfortable", "than", "the", "red", "one"],
+    "sentence": "This sofa is more comfortable than that chair",
+    "words": ["This", "sofa", "is", "more", "comfortable", "than", "that", "chair"],
     "explanation": "'Comfortable' is long: 'more comfortable than'."
   },
   {
