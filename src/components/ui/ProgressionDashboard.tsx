@@ -36,7 +36,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
 }) => {
   const { isModuleCompleted } = useProgressStore();
   const progression = useProgression();
-  const { language, categories, learningModes, level, setCategories, setLearningModes, setLevel } =
+  const { language, categories, learningModes, level, developmentMode, setCategories, setLearningModes, setLevel } =
     useSettingsStore();
   const { t } = useTranslation(language);
   const { navigateToModule } = useModuleNavigation('progression');
@@ -238,15 +238,18 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
     filteredModules.forEach(module => {
       if (seen.has(module.id)) return;
       // Apply category filter — empty array means no filter (show all)
-      if (categories.length > 0 && module.category && !categories.includes(module.category)) return;
+      // Skip in dev mode (matches useAllModules behavior)
+      if (!developmentMode && categories.length > 0 && module.category && !categories.includes(module.category)) return;
       // Apply learning mode filter — empty array means no filter (show all)
+      // Skip in dev mode (matches useAllModules behavior)
       if (
+        !developmentMode &&
         learningModes?.length > 0 &&
         module.learningMode &&
         !learningModes.includes(module.learningMode)
       )
         return;
-      // Apply level filter
+      // Apply level filter — always applied (even in dev mode)
       if (level !== 'all' && module.level) {
         const moduleLevels = Array.isArray(module.level) ? module.level : [module.level];
         if (!moduleLevels.includes(level as any)) return;
@@ -288,6 +291,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
     categories,
     learningModes,
     level,
+    developmentMode,
     searchQuery,
   ]);
 

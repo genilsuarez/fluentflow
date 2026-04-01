@@ -95,28 +95,29 @@
     "explanation": "The possessive adjective <our> becomes the possessive pronoun <ours>."
   },
   {
-    "prompt": "Change the object pronoun to a subject pronoun",
-    "source": "Give it to me.",
+    "prompt": "Fix the pronoun: use the subject form",
+    "source": "Me is hungry.",
     "correct": [
-      "I want it."
+      "I am hungry.",
+      "I'm hungry."
     ],
-    "explanation": "The object pronoun <me> corresponds to the subject pronoun <I>."
+    "explanation": "The object pronoun <me> should be the subject pronoun <I> when used as the subject of a sentence."
   },
   {
-    "prompt": "Change the object pronoun to a subject pronoun",
-    "source": "Tell him the answer.",
+    "prompt": "Fix the pronoun: use the subject form",
+    "source": "Him likes the answer.",
     "correct": [
-      "He knows the answer."
+      "He likes the answer."
     ],
-    "explanation": "The object pronoun <him> corresponds to the subject pronoun <he>."
+    "explanation": "The object pronoun <him> should be the subject pronoun <he> when used as the subject of a sentence."
   },
   {
-    "prompt": "Change the object pronoun to a subject pronoun",
-    "source": "Help her with the homework.",
+    "prompt": "Fix the pronoun: use the subject form",
+    "source": "Her does the homework.",
     "correct": [
-      "She needs help with the homework."
+      "She does the homework."
     ],
-    "explanation": "The object pronoun <her> corresponds to the subject pronoun <she>."
+    "explanation": "The object pronoun <her> should be the subject pronoun <she> when used as the subject of a sentence."
   },
   {
     "prompt": "Change to use a possessive adjective",

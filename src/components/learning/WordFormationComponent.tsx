@@ -21,6 +21,7 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answer, setAnswer] = useState('');
   const [showResult, setShowResult] = useState(false);
+  const [streak, setStreak] = useState(0);
   const inputRef = useRef<EditableInputHandle>(null);
   const ignoreEnterRef = useRef(false);
 
@@ -56,8 +57,10 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
     if (showResult) return;
     if (isCorrectAnswer(answer)) {
       markCorrect();
+      setStreak(s => s + 1);
     } else {
       markIncorrect();
+      setStreak(0);
     }
     setShowResult(true);
   }, [showResult, answer, isCorrectAnswer, markCorrect, markIncorrect]);
@@ -120,7 +123,14 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
         }
       />
 
-      <div className="word-formation__exercise-card">
+      <div className="word-formation__exercise-card" key={currentIndex}>
+        {/* Streak badge */}
+        {streak >= 2 && (
+          <div className="word-formation__streak" key={streak}>
+            🔥 {streak}
+          </div>
+        )}
+
         {/* Sentence with blank */}
         <h3 className="word-formation__sentence">
           <ContentRenderer
