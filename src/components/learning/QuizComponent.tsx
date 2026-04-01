@@ -7,6 +7,8 @@ import { ContentAdapter } from '../../utils/contentAdapter';
 import ContentRenderer from '../ui/ContentRenderer';
 import LearningProgressHeader from '../ui/LearningProgressHeader';
 
+import '../../styles/components/quiz-component.css';
+
 import type { LearningModule, QuizData } from '../../types';
 
 interface QuizComponentProps {
