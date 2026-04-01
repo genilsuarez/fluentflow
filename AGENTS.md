@@ -44,6 +44,8 @@ Antes de proponer soluciones o crear specs, explorar el código existente.
   - Loops, pipes, subshells, one-liners con lógica
   - Cualquier comando con template literals, comillas anidadas o interpolación
   - `jq`, `sed`, `awk` con expresiones complejas
+  - Heredocs (`cat > file << 'EOF'`, `cat << EOF`) — sobrepasan el buffer de la shell y fallan
+  - Cualquier forma de escribir archivos desde la shell (`cat >`, `echo >`, `printf >`) — usar siempre las herramientas de escritura de archivos del IDE (fsWrite, strReplace, etc.)
 - **Comandos permitidos directamente** (no requieren script):
   - `npm run <script>` (scripts ya definidos en package.json)
   - `wc -l`, `cat`, `ls`, `find` (comandos simples sin lógica)

@@ -1,4 +1,4 @@
-import { useEffect, useMemo } from 'react';
+import { useMemo } from 'react';
 import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { progressionService } from '../services/progressionService';
 import { useProgressStore } from '../stores/progressStore';
@@ -19,20 +19,21 @@ export const useProgression = () => {
   // and must not affect prerequisite chains or module unlock status
   const rawModules = queryClient.getQueryData<LearningModule[]>(['modules']) ?? [];
 
-  // Initialize progression service with ALL modules (unfiltered)
-  useEffect(() => {
+  // Track completed modules for query invalidation
+  // Using completedModules object directly ensures React detects changes
+  const completedModulesCount = Object.keys(completedModules || {}).length;
+
+  // Initialize progression service synchronously (during render, not in useEffect)
+  // so that helpers like getModuleStatus() work immediately without a timing gap.
+  useMemo(() => {
     if (rawModules.length > 0) {
       const completedIds = getCompletedModuleIds();
       progressionService.initialize(rawModules, completedIds);
     }
   }, [rawModules, getCompletedModuleIds]);
 
-  // Track completed modules for query invalidation
-  // Using completedModules object directly ensures React detects changes
-  const completedModulesCount = Object.keys(completedModules || {}).length;
-
   // Force re-initialization when completed modules change
-  useEffect(() => {
+  useMemo(() => {
     if (rawModules.length > 0 && completedModulesCount > 0) {
       const completedIds = getCompletedModuleIds();
       progressionService.setCompletedModules(completedIds);

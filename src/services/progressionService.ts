@@ -8,6 +8,14 @@ export class ProgressionService {
   private modules: LearningModule[] = [];
   private moduleMap: Map<string, LearningModule> = new Map();
   private completedModules: Set<string> = new Set();
+  private _initialized = false;
+
+  /**
+   * Whether the service has been initialized with modules
+   */
+  get initialized(): boolean {
+    return this._initialized;
+  }
 
   /**
    * Initialize the service with modules and completed modules
@@ -16,6 +24,7 @@ export class ProgressionService {
     this.modules = modules;
     this.moduleMap = new Map(modules.map(m => [m.id, m]));
     this.completedModules = new Set(completedModuleIds);
+    this._initialized = true;
 
     logDebug(
       'ProgressionService initialized',
@@ -33,7 +42,11 @@ export class ProgressionService {
   isModuleUnlocked(moduleId: string): boolean {
     const module = this.getModule(moduleId);
     if (!module) {
-      logError('Module not found', { moduleId }, 'ProgressionService');
+      // Only log error if service is initialized — before initialization,
+      // callers may query modules that haven't been loaded yet (race condition)
+      if (this._initialized) {
+        logError('Module not found', { moduleId }, 'ProgressionService');
+      }
       return false;
     }
 
@@ -261,6 +274,7 @@ export class ProgressionService {
    */
   reset(): void {
     this.completedModules.clear();
+    this._initialized = false;
     logDebug('Progression reset', {}, 'ProgressionService');
   }
 
