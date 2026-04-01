@@ -140,7 +140,7 @@ export const useModuleData = (moduleId: string) => {
 };
 
 export const useAllModules = () => {
-  const { categories, learningModes, level, developmentMode } = useSettingsStore();
+  const { categories, learningModes, level } = useSettingsStore();
 
   return useQuery({
     queryKey: ['modules'],
@@ -156,21 +156,21 @@ export const useAllModules = () => {
       // Filter modules based on settings
       // Development mode only bypasses progression locks, not filters
       return modules.filter(module => {
-        // Filter by categories (skip in dev mode)
-        if (!developmentMode && categories.length > 0 && module.category) {
+        // Filter by categories
+        if (categories.length > 0 && module.category) {
           if (!categories.includes(module.category)) {
             return false;
           }
         }
 
-        // Filter by learning modes (skip in dev mode)
-        if (!developmentMode && learningModes?.length > 0 && module.learningMode) {
+        // Filter by learning modes
+        if (learningModes?.length > 0 && module.learningMode) {
           if (!learningModes.includes(module.learningMode)) {
             return false;
           }
         }
 
-        // Filter by level - always applied (even in dev mode)
+        // Filter by level
         if (level !== 'all' && module.level) {
           const moduleLevels = Array.isArray(module.level) ? module.level : [module.level];
           if (!moduleLevels.includes(level as any)) {
