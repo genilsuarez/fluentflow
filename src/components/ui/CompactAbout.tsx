@@ -86,7 +86,9 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
           <div className="compact-about__title-section">
             <FluentFlowLogo size="sm" />
             <div className="compact-about__header-text">
-              <h2 className="compact-about__title">{t('about.title')} <span className="compact-about__version">v2.0</span></h2>
+              <h2 className="compact-about__title">
+                {t('about.title')} <span className="compact-about__version">v2.0</span>
+              </h2>
             </div>
           </div>
           <button onClick={handleClose} className="modal__close-btn" aria-label={t('common.close')}>
@@ -130,9 +132,7 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
             <div className="compact-about__developer">
               <div className="compact-about__developer-info">
                 <span className="compact-about__developer-name">👨‍💻 Genil Suárez</span>
-                <span className="compact-about__developer-title">
-                  {t('about.developerTitle')}
-                </span>
+                <span className="compact-about__developer-title">{t('about.developerTitle')}</span>
               </div>
               <a
                 href="https://github.com/genilsuarez"
@@ -172,7 +172,9 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
 
           {/* Actions */}
           <div className="modal__actions modal__actions--single">
-            <span className="compact-about__build-time">{t('about.build')} {buildString}</span>
+            <span className="compact-about__build-time">
+              {t('about.build')} {buildString}
+            </span>
             <button onClick={handleClose} className="modal__btn modal__btn--primary">
               {t('common.close')}
             </button>
@@ -181,110 +183,118 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
       </div>
 
       {/* Screen Info Modal */}
-      {showScreenInfo && createPortal(
-        <div className="screen-info-modal">
-          <div className="screen-info-modal__container">
-            <div className="screen-info-modal__header">
-              <div className="screen-info-modal__title-section">
-                <Monitor className="screen-info-modal__icon" />
-                <h3 className="screen-info-modal__title">{t('about.screenInformation')}</h3>
+      {showScreenInfo &&
+        createPortal(
+          <div className="screen-info-modal">
+            <div className="screen-info-modal__container">
+              <div className="screen-info-modal__header">
+                <div className="screen-info-modal__title-section">
+                  <Monitor className="screen-info-modal__icon" />
+                  <h3 className="screen-info-modal__title">{t('about.screenInformation')}</h3>
+                </div>
+                <button
+                  onClick={() => setShowScreenInfo(false)}
+                  className="screen-info-modal__close-btn"
+                  aria-label={t('about.closeScreenInfo')}
+                >
+                  <X className="screen-info-modal__close-icon" />
+                </button>
               </div>
-              <button
-                onClick={() => setShowScreenInfo(false)}
-                className="screen-info-modal__close-btn"
-                aria-label={t('about.closeScreenInfo')}
-              >
-                <X className="screen-info-modal__close-icon" />
-              </button>
+              <div className="screen-info-modal__content">
+                {(() => {
+                  const screenInfo = getScreenInfo();
+                  return (
+                    <div className="screen-info-modal__grid">
+                      <div className="screen-info-modal__item">
+                        <span className="screen-info-modal__label">
+                          {t('about.screenResolution')}
+                        </span>
+                        <span className="screen-info-modal__value">{screenInfo.resolution}</span>
+                      </div>
+                      <div className="screen-info-modal__item">
+                        <span className="screen-info-modal__label">
+                          {t('about.screenViewport')}
+                        </span>
+                        <span className="screen-info-modal__value">{screenInfo.viewport}</span>
+                      </div>
+                      <div className="screen-info-modal__item">
+                        <span className="screen-info-modal__label">
+                          {t('about.screenPixelRatio')}
+                        </span>
+                        <span className="screen-info-modal__value">
+                          {screenInfo.devicePixelRatio}x
+                        </span>
+                      </div>
+                      <div className="screen-info-modal__item">
+                        <span className="screen-info-modal__label">
+                          {t('about.screenColorDepth')}
+                        </span>
+                        <span className="screen-info-modal__value">
+                          {screenInfo.colorDepth} bits
+                        </span>
+                      </div>
+                      <div className="screen-info-modal__item">
+                        <span className="screen-info-modal__label">
+                          {t('about.screenOrientation')}
+                        </span>
+                        <span className="screen-info-modal__value">{screenInfo.orientation}</span>
+                      </div>
+                    </div>
+                  );
+                })()}
+              </div>
             </div>
-            <div className="screen-info-modal__content">
-              {(() => {
-                const screenInfo = getScreenInfo();
-                return (
-                  <div className="screen-info-modal__grid">
-                    <div className="screen-info-modal__item">
-                      <span className="screen-info-modal__label">
-                        {t('about.screenResolution')}
-                      </span>
-                      <span className="screen-info-modal__value">{screenInfo.resolution}</span>
-                    </div>
-                    <div className="screen-info-modal__item">
-                      <span className="screen-info-modal__label">{t('about.screenViewport')}</span>
-                      <span className="screen-info-modal__value">{screenInfo.viewport}</span>
-                    </div>
-                    <div className="screen-info-modal__item">
-                      <span className="screen-info-modal__label">
-                        {t('about.screenPixelRatio')}
-                      </span>
-                      <span className="screen-info-modal__value">
-                        {screenInfo.devicePixelRatio}x
-                      </span>
-                    </div>
-                    <div className="screen-info-modal__item">
-                      <span className="screen-info-modal__label">
-                        {t('about.screenColorDepth')}
-                      </span>
-                      <span className="screen-info-modal__value">{screenInfo.colorDepth} bits</span>
-                    </div>
-                    <div className="screen-info-modal__item">
-                      <span className="screen-info-modal__label">
-                        {t('about.screenOrientation')}
-                      </span>
-                      <span className="screen-info-modal__value">{screenInfo.orientation}</span>
-                    </div>
-                  </div>
-                );
-              })()}
-            </div>
-          </div>
-        </div>,
-        document.body
-      )}
+          </div>,
+          document.body
+        )}
       {/* Cache Confirm Modal */}
-      {showCacheConfirm && createPortal(
-        <div className="screen-info-modal">
-          <div className="screen-info-modal__container cache-confirm">
-            <div className="screen-info-modal__header">
-              <div className="screen-info-modal__title-section">
-                <Trash2 className="screen-info-modal__icon" />
-                <h3 className="screen-info-modal__title">{t('about.clearCache', 'Clear cache')}</h3>
-              </div>
-              <button
-                onClick={() => setShowCacheConfirm(false)}
-                className="screen-info-modal__close-btn"
-                aria-label={t('common.close')}
-              >
-                <X className="screen-info-modal__close-icon" />
-              </button>
-            </div>
-            <div className="screen-info-modal__content">
-              <p className="cache-confirm__text">
-                {t(
-                  'about.clearCacheDescription',
-                  'This will delete all cached data and reload the app to download the latest version.'
-                )}
-              </p>
-              <div className="cache-confirm__actions">
+      {showCacheConfirm &&
+        createPortal(
+          <div className="screen-info-modal">
+            <div className="screen-info-modal__container cache-confirm">
+              <div className="screen-info-modal__header">
+                <div className="screen-info-modal__title-section">
+                  <Trash2 className="screen-info-modal__icon" />
+                  <h3 className="screen-info-modal__title">
+                    {t('about.clearCache', 'Clear cache')}
+                  </h3>
+                </div>
                 <button
-                  className="cache-confirm__btn cache-confirm__btn--cancel"
                   onClick={() => setShowCacheConfirm(false)}
-                  disabled={clearingCache}
+                  className="screen-info-modal__close-btn"
+                  aria-label={t('common.close')}
                 >
-                  {t('common.cancel', 'Cancel')}
-                </button>
-                <button
-                  className="cache-confirm__btn cache-confirm__btn--confirm"
-                  onClick={handleClearCache}
-                  disabled={clearingCache}
-                >
-                  {clearingCache ? '⏳' : t('about.clearCacheConfirm', 'Clear & reload')}
+                  <X className="screen-info-modal__close-icon" />
                 </button>
               </div>
+              <div className="screen-info-modal__content">
+                <p className="cache-confirm__text">
+                  {t(
+                    'about.clearCacheDescription',
+                    'This will delete all cached data and reload the app to download the latest version.'
+                  )}
+                </p>
+                <div className="cache-confirm__actions">
+                  <button
+                    className="cache-confirm__btn cache-confirm__btn--cancel"
+                    onClick={() => setShowCacheConfirm(false)}
+                    disabled={clearingCache}
+                  >
+                    {t('common.cancel', 'Cancel')}
+                  </button>
+                  <button
+                    className="cache-confirm__btn cache-confirm__btn--confirm"
+                    onClick={handleClearCache}
+                    disabled={clearingCache}
+                  >
+                    {clearingCache ? '⏳' : t('about.clearCacheConfirm', 'Clear & reload')}
+                  </button>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>,
-        document.body
-      )}
+          </div>,
+          document.body
+        )}
     </div>
   );
 };
