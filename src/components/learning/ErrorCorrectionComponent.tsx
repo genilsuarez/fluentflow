@@ -26,12 +26,22 @@ const ErrorCorrectionComponent: React.FC<ErrorCorrectionComponentProps> = ({ mod
   const inputRef = useRef<EditableInputHandle>(null);
   const ignoreEnterRef = useRef(false);
 
-  const { t, randomizeItems, markCorrect, markIncorrect, finishExercise, handleReturnToMenu, exerciseResult, setExerciseResult, handleResultContinue, resetSession } =
-    useLearningSession({
-      moduleId: module.id,
-      moduleName: module.name,
-      learningMode: 'error-correction',
-    });
+  const {
+    t,
+    randomizeItems,
+    markCorrect,
+    markIncorrect,
+    finishExercise,
+    handleReturnToMenu,
+    exerciseResult,
+    setExerciseResult,
+    handleResultContinue,
+    resetSession,
+  } = useLearningSession({
+    moduleId: module.id,
+    moduleName: module.name,
+    learningMode: 'error-correction',
+  });
 
   const processedExercisesRef = useRef<ErrorCorrectionData[] | null>(null);
   if (processedExercisesRef.current === null) {

@@ -26,12 +26,22 @@ const TransformationComponent: React.FC<TransformationComponentProps> = ({ modul
   const inputRef = useRef<EditableInputHandle>(null);
   const ignoreEnterRef = useRef(false);
 
-  const { t, randomizeItems, markCorrect, markIncorrect, finishExercise, handleReturnToMenu, exerciseResult, setExerciseResult, handleResultContinue, resetSession } =
-    useLearningSession({
-      moduleId: module.id,
-      moduleName: module.name,
-      learningMode: 'transformation',
-    });
+  const {
+    t,
+    randomizeItems,
+    markCorrect,
+    markIncorrect,
+    finishExercise,
+    handleReturnToMenu,
+    exerciseResult,
+    setExerciseResult,
+    handleResultContinue,
+    resetSession,
+  } = useLearningSession({
+    moduleId: module.id,
+    moduleName: module.name,
+    learningMode: 'transformation',
+  });
 
   const processedExercisesRef = useRef<TransformationData[] | null>(null);
   if (processedExercisesRef.current === null) {

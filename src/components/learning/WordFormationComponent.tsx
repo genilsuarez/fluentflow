@@ -26,12 +26,22 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
   const inputRef = useRef<EditableInputHandle>(null);
   const ignoreEnterRef = useRef(false);
 
-  const { t, randomizeItems, markCorrect, markIncorrect, finishExercise, handleReturnToMenu, exerciseResult, setExerciseResult, handleResultContinue, resetSession } =
-    useLearningSession({
-      moduleId: module.id,
-      moduleName: module.name,
-      learningMode: 'word-formation',
-    });
+  const {
+    t,
+    randomizeItems,
+    markCorrect,
+    markIncorrect,
+    finishExercise,
+    handleReturnToMenu,
+    exerciseResult,
+    setExerciseResult,
+    handleResultContinue,
+    resetSession,
+  } = useLearningSession({
+    moduleId: module.id,
+    moduleName: module.name,
+    learningMode: 'word-formation',
+  });
 
   const processedExercisesRef = useRef<WordFormationData[] | null>(null);
   if (processedExercisesRef.current === null) {

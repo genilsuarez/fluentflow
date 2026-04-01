@@ -51,46 +51,62 @@ const ExerciseResultScreen: React.FC<ExerciseResultScreenProps> = ({
         <p className="exercise-result__module">{result.moduleName}</p>
 
         <div className="exercise-result__score">
-          <span className={`exercise-result__percentage exercise-result__percentage--${passed ? 'pass' : 'fail'}`}>
+          <span
+            className={`exercise-result__percentage exercise-result__percentage--${passed ? 'pass' : 'fail'}`}
+          >
             {result.accuracy.toFixed(0)}%
           </span>
         </div>
 
         <div className="exercise-result__stats">
           <div className="exercise-result__stat">
-            <span className="exercise-result__stat-value exercise-result__stat-value--correct">{result.correct}</span>
+            <span className="exercise-result__stat-value exercise-result__stat-value--correct">
+              {result.correct}
+            </span>
             <span className="exercise-result__stat-label">{t('exerciseResult.correct')}</span>
           </div>
           <div className="exercise-result__stat-divider" />
           <div className="exercise-result__stat">
-            <span className="exercise-result__stat-value exercise-result__stat-value--incorrect">{result.total - result.correct}</span>
+            <span className="exercise-result__stat-value exercise-result__stat-value--incorrect">
+              {result.total - result.correct}
+            </span>
             <span className="exercise-result__stat-label">{t('exerciseResult.incorrect')}</span>
           </div>
         </div>
 
-        {!passed && (
-          <p className="exercise-result__hint">{t('exerciseResult.retryHint')}</p>
-        )}
+        {!passed && <p className="exercise-result__hint">{t('exerciseResult.retryHint')}</p>}
 
         <div className="exercise-result__actions">
           {!passed ? (
             <>
-              <button onClick={onRetry} className="exercise-result__btn exercise-result__btn--primary">
+              <button
+                onClick={onRetry}
+                className="exercise-result__btn exercise-result__btn--primary"
+              >
                 <RotateCcw className="exercise-result__btn-icon" />
                 <span>{t('exerciseResult.retry')}</span>
               </button>
-              <button onClick={onContinue} className="exercise-result__btn exercise-result__btn--secondary">
+              <button
+                onClick={onContinue}
+                className="exercise-result__btn exercise-result__btn--secondary"
+              >
                 <Home className="exercise-result__btn-icon" />
                 <span>{t('exerciseResult.backToMenu')}</span>
               </button>
             </>
           ) : (
             <>
-              <button onClick={onContinue} className="exercise-result__btn exercise-result__btn--primary exercise-result__btn--success">
+              <button
+                onClick={onContinue}
+                className="exercise-result__btn exercise-result__btn--primary exercise-result__btn--success"
+              >
                 <ArrowRight className="exercise-result__btn-icon" />
                 <span>{t('exerciseResult.continue')}</span>
               </button>
-              <button onClick={onRetry} className="exercise-result__btn exercise-result__btn--secondary">
+              <button
+                onClick={onRetry}
+                className="exercise-result__btn exercise-result__btn--secondary"
+              >
                 <RotateCcw className="exercise-result__btn-icon" />
                 <span>{t('exerciseResult.retry')}</span>
               </button>

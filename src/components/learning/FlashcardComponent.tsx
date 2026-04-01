@@ -19,7 +19,16 @@ const FlashcardComponent: React.FC<FlashcardComponentProps> = ({ module }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [skipTransition, setSkipTransition] = useState(false);
 
-  const { t, randomizeItems, handleReturnToMenu, finishExercise, exerciseResult, setExerciseResult, handleResultContinue, resetSession } = useLearningSession({
+  const {
+    t,
+    randomizeItems,
+    handleReturnToMenu,
+    finishExercise,
+    exerciseResult,
+    setExerciseResult,
+    handleResultContinue,
+    resetSession,
+  } = useLearningSession({
     moduleId: module.id,
     moduleName: module.name,
     learningMode: 'flashcard',

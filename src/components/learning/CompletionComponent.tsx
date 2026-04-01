@@ -253,12 +253,22 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
   // Flag to ignore Enter key briefly after advancing to next question
   const ignoreEnterRef = useRef(false);
 
-  const { t, randomizeItems, markCorrect, markIncorrect, finishExercise, handleReturnToMenu, exerciseResult, setExerciseResult, handleResultContinue, resetSession } =
-    useLearningSession({
-      moduleId: module.id,
-      moduleName: module.name,
-      learningMode: 'completion',
-    });
+  const {
+    t,
+    randomizeItems,
+    markCorrect,
+    markIncorrect,
+    finishExercise,
+    handleReturnToMenu,
+    exerciseResult,
+    setExerciseResult,
+    handleResultContinue,
+    resetSession,
+  } = useLearningSession({
+    moduleId: module.id,
+    moduleName: module.name,
+    learningMode: 'completion',
+  });
 
   // Compute exercises once on mount — ref prevents re-shuffling on score updates
   const processedExercisesRef = useRef<CompletionData[] | null>(null);

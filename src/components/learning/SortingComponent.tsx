@@ -449,7 +449,9 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
           const allWords = exercise.categories.flatMap(cat => cat.items);
           setAvailableWords(conditionalShuffle(allWords, randomizeItems));
           const initialSorted: Record<string, string[]> = {};
-          exercise.categories.forEach(cat => { initialSorted[cat.name] = []; });
+          exercise.categories.forEach(cat => {
+            initialSorted[cat.name] = [];
+          });
           setSortedItems(initialSorted);
         }}
         onContinue={() => returnToMenu({ autoScrollToNext: true })}

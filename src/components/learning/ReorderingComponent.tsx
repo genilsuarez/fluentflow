@@ -26,12 +26,22 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
   const [focusedIndex, setFocusedIndex] = useState(0);
   const [keyboardSelected, setKeyboardSelected] = useState(false);
 
-  const { t, randomizeItems, markCorrect, markIncorrect, finishExercise, handleReturnToMenu, exerciseResult, setExerciseResult, handleResultContinue, resetSession } =
-    useLearningSession({
-      moduleId: module.id,
-      moduleName: module.name,
-      learningMode: 'reordering',
-    });
+  const {
+    t,
+    randomizeItems,
+    markCorrect,
+    markIncorrect,
+    finishExercise,
+    handleReturnToMenu,
+    exerciseResult,
+    setExerciseResult,
+    handleResultContinue,
+    resetSession,
+  } = useLearningSession({
+    moduleId: module.id,
+    moduleName: module.name,
+    learningMode: 'reordering',
+  });
 
   // Compute exercises once on mount to avoid re-shuffling on score updates
   const processedExercisesRef = useRef<ReorderingData[] | null>(null);

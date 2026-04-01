@@ -10,8 +10,14 @@
 }
 
 @keyframes exerciseResultFadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .exercise-result__card {
@@ -174,7 +180,11 @@
 }
 
 .exercise-result__btn--primary.exercise-result__btn--success {
-  background: linear-gradient(135deg, var(--theme-success, #10b981) 0%, var(--theme-primary-blue, #3b82f6) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--theme-success, #10b981) 0%,
+    var(--theme-primary-blue, #3b82f6) 100%
+  );
 }
 
 .exercise-result__btn--secondary {

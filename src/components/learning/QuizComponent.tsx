@@ -22,12 +22,22 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
   const [showResult, setShowResult] = useState(false);
   const optionsRef = useRef<HTMLDivElement>(null);
 
-  const { t, randomizeItems, markCorrect, markIncorrect, finishExercise, handleReturnToMenu, exerciseResult, setExerciseResult, handleResultContinue, resetSession } =
-    useLearningSession({
-      moduleId: module.id,
-      moduleName: module.name,
-      learningMode: 'quiz',
-    });
+  const {
+    t,
+    randomizeItems,
+    markCorrect,
+    markIncorrect,
+    finishExercise,
+    handleReturnToMenu,
+    exerciseResult,
+    setExerciseResult,
+    handleResultContinue,
+    resetSession,
+  } = useLearningSession({
+    moduleId: module.id,
+    moduleName: module.name,
+    learningMode: 'quiz',
+  });
 
   const { theme } = useSettingsStore();
 
