@@ -21,7 +21,8 @@ const ErrorCorrectionComponent: React.FC<ErrorCorrectionComponentProps> = ({ mod
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answer, setAnswer] = useState('');
   const [showResult, setShowResult] = useState(false);
-  const [_streak, setStreak] = useState(0);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [streak, setStreak] = useState(0);
   const inputRef = useRef<EditableInputHandle>(null);
   const ignoreEnterRef = useRef(false);
 
