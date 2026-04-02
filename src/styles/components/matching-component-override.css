@@ -1,174 +1,26 @@
-/* EMERGENCY OVERRIDE - Compact Matching Design */
-/* This file forces compact design with maximum CSS specificity */
+/**
+ * Matching Component - Mobile & State Overrides
+ * Compact layout for mobile and guaranteed correct/incorrect visibility.
+ */
 
-/* Force compact items - ALL possible selectors EXCEPT correct incorrect states */
-.matching-component
-  .matching-component__item:not(.matching-component__item--correct):not(
-    .matching-component__item--incorrect
-  ),
-.matching-component
-  button.matching-component__item:not(.matching-component__item--correct):not(
-    .matching-component__item--incorrect
-  ),
-.matching-component
-  .matching-component__item.matching-component__button:not(.matching-component__item--correct):not(
-    .matching-component__item--incorrect
-  ),
-.matching-component
-  button.matching-component__item.matching-component__button:not(
-    .matching-component__item--correct
-  ):not(.matching-component__item--incorrect),
-.matching-component .matching-component__item--default,
-.matching-component .matching-component__item--selected,
-.matching-component .matching-component__item--matched,
-.matching-component .matching-component__item--matched-inactive,
-.matching-component .matching-component__item--unmatched {
-  padding: 0.4375rem 0.5rem !important;
-  min-height: 2.25rem !important;
-  height: auto !important;
-  margin: 0.0625rem 0 !important;
-  border-radius: 0.75rem !important;
-  border-width: 1px !important;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
-  font-size: 0.8125rem !important;
-  line-height: 1.25 !important;
-}
-
-/* SPECIAL HANDLING FOR CORRECT INCORRECT STATES - DO NOT OVERRIDE THEIR STYLING */
-.matching-component .matching-component__item--correct,
-.matching-component button.matching-component__item--correct,
-.matching-component
-  .matching-component__item.matching-component__button.matching-component__item--correct,
-.matching-component
-  button.matching-component__item.matching-component__button.matching-component__item--correct {
-  padding: 0.4375rem 0.5rem !important;
-  min-height: 2.25rem !important;
-  height: auto !important;
-  margin: 0.0625rem 0 !important;
-  border-radius: 0.75rem !important;
-  font-size: 0.8125rem !important;
-  line-height: 1.25 !important;
-  /* DO NOT override border-width, box-shadow, background, or color for correct state */
-}
-
-.matching-component .matching-component__item--incorrect,
-.matching-component button.matching-component__item--incorrect,
-.matching-component
-  .matching-component__item.matching-component__button.matching-component__item--incorrect,
-.matching-component
-  button.matching-component__item.matching-component__button.matching-component__item--incorrect {
-  padding: 0.4375rem 0.5rem !important;
-  min-height: 2.25rem !important;
-  height: auto !important;
-  margin: 0.0625rem 0 !important;
-  border-radius: 0.75rem !important;
-  font-size: 0.8125rem !important;
-  line-height: 1.25 !important;
-  /* DO NOT override border-width, box-shadow, background, or color for incorrect state */
-}
-
-/* Force compact columns */
-.matching-component .matching-component__columns {
-  gap: 0.375rem !important;
-  padding: 0.375rem !important;
-  border-radius: 1rem !important;
-  background-color: rgba(59, 130, 246, 0.08) !important;
-  border: 1px solid rgba(59, 130, 246, 0.15) !important;
-}
-
-.matching-component .matching-component__column {
-  gap: 0.125rem !important;
-  padding: 0.25rem !important;
-  border-radius: 0.75rem !important;
-  background-color: rgba(255, 255, 255, 0.8) !important;
-  border: 1px solid rgba(226, 232, 240, 0.6) !important;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03) !important;
-}
-
-.matching-component .matching-component__column-header {
-  font-size: 0.75rem !important;
-  padding: 0.25rem 0.375rem !important;
-  margin-bottom: 0.25rem !important;
-  border-radius: 0.5rem !important;
-  height: auto !important;
-  min-height: auto !important;
-}
-
-/* Force compact item content */
+/* === COMPACT LAYOUT ENFORCEMENT === */
 .matching-component .matching-component__item-content {
   gap: 0.5rem !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  height: auto !important;
-  min-height: auto !important;
+  padding: 0;
+  margin: 0;
 }
 
-/* Force compact letters */
-.matching-component .matching-component__item-letter {
-  width: 1.25rem !important;
-  height: 1.25rem !important;
-  font-size: 0.75rem !important;
-  margin-right: 0.375rem !important;
-}
-
-/* Force compact text */
-.matching-component .matching-component__item-text {
-  font-size: 0.8125rem !important;
-  line-height: 1.25 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* Dark mode compact overrides */
-.dark .matching-component .matching-component__columns {
-  background-color: rgba(15, 23, 42, 0.8) !important;
-  border: 1px solid rgba(51, 65, 85, 0.5) !important;
-}
-
-.dark .matching-component .matching-component__column {
-  background-color: rgba(30, 41, 59, 0.95) !important;
-  border: 1px solid rgba(71, 85, 105, 0.6) !important;
-}
-
-/* 
-COMPACT SPACING AND CONTRAST FIXES */
-
-/* Force better spacing from modal header */
+/* Modal spacing */
 .matching-modal .matching-component__columns {
   margin-top: 0.75rem !important;
   padding-top: 0.5rem !important;
 }
 
-/* Force compact background contrast */
-.matching-component__columns {
-  background-color: rgba(59, 130, 246, 0.08) !important;
-  border: 1px solid rgba(59, 130, 246, 0.15) !important;
-}
+/* === CORRECT/INCORRECT STATE GUARANTEES === */
+/* These ensure white text on colored backgrounds regardless of cascade order */
 
-.matching-component__column {
-  background-color: rgba(255, 255, 255, 0.8) !important;
-  border: 1px solid rgba(226, 232, 240, 0.6) !important;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03) !important;
-}
-
-/* Dark mode compact fixes */
-html.dark .matching-component__columns {
-  background-color: rgba(15, 23, 42, 0.8) !important;
-  border: 1px solid rgba(51, 65, 85, 0.5) !important;
-}
-
-html.dark .matching-component__column {
-  background-color: rgba(30, 41, 59, 0.95) !important;
-  border: 1px solid rgba(71, 85, 105, 0.6) !important;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) !important;
-}
-
-/* ===== FINAL - CORRECT ANSWER VISIBILITY (Homologated with quiz) ===== */
-
-/* CORRECT ANSWERS - Homologated */
-html body div.matching-component .matching-component__item--correct,
-html body .matching-component .matching-component__item--correct,
-.matching-component__item--correct {
+.matching-component__item--correct,
+html body .matching-component .matching-component__item--correct {
   background-color: var(--theme-success, #10b981) !important;
   border-color: transparent !important;
   color: #ffffff !important;
@@ -177,35 +29,20 @@ html body .matching-component .matching-component__item--correct,
   transform: none !important;
 }
 
-/* CORRECT ANSWER TEXT - Homologated */
-html body div.matching-component .matching-component__item--correct .matching-component__item-text,
-html body .matching-component .matching-component__item--correct .matching-component__item-text,
 .matching-component__item--correct .matching-component__item-text,
 .matching-component__item--correct .matching-component__item-text * {
   color: #ffffff !important;
   font-weight: 700 !important;
-  text-shadow: none !important;
 }
 
-/* CORRECT ANSWER LETTER - Homologated */
-html
-  body
-  div.matching-component
-  .matching-component__item--correct
-  .matching-component__item-letter,
-html body .matching-component .matching-component__item--correct .matching-component__item-letter,
 .matching-component__item--correct .matching-component__item-letter {
   background-color: rgba(255, 255, 255, 0.2) !important;
   color: #ffffff !important;
-  font-weight: 700 !important;
   border: 1px solid rgba(255, 255, 255, 0.3) !important;
-  box-shadow: none !important;
 }
 
-/* INCORRECT ANSWERS - Homologated */
-html body div.matching-component .matching-component__item--incorrect,
-html body .matching-component .matching-component__item--incorrect,
-.matching-component__item--incorrect {
+.matching-component__item--incorrect,
+html body .matching-component .matching-component__item--incorrect {
   background-color: var(--theme-error, #ef4444) !important;
   border-color: transparent !important;
   color: #ffffff !important;
@@ -214,44 +51,25 @@ html body .matching-component .matching-component__item--incorrect,
   transform: none !important;
 }
 
-/* INCORRECT ANSWER TEXT - Homologated */
-html
-  body
-  div.matching-component
-  .matching-component__item--incorrect
-  .matching-component__item-text,
-html body .matching-component .matching-component__item--incorrect .matching-component__item-text,
 .matching-component__item--incorrect .matching-component__item-text,
 .matching-component__item--incorrect .matching-component__item-text * {
   color: #ffffff !important;
   font-weight: 700 !important;
-  text-shadow: none !important;
 }
 
-/* DARK MODE - Homologated */
-html.dark body div.matching-component .matching-component__item--correct,
+/* Dark mode state guarantees */
 html.dark .matching-component__item--correct {
   background-color: var(--theme-success, #10b981) !important;
-  border-color: transparent !important;
-  color: #ffffff !important;
   box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3) !important;
 }
 
-html.dark
-  body
-  div.matching-component
-  .matching-component__item--correct
-  .matching-component__item-text,
 html.dark .matching-component__item--correct .matching-component__item-text,
 html.dark .matching-component__item--correct .matching-component__item-text * {
   color: #ffffff !important;
-  font-weight: 700 !important;
-  text-shadow: none !important;
 }
 
 /* === MOBILE RESPONSIVE === */
 @media (max-width: 767px) {
-  /* 2-column layout: compact touch targets */
   .matching-component .matching-component__item {
     min-height: 2.25rem !important;
     padding: 0.375rem 0.4375rem !important;
@@ -260,13 +78,11 @@ html.dark .matching-component__item--correct .matching-component__item-text * {
     overflow: hidden !important;
   }
 
-  /* Fixed height for item-content so info button/match number don't expand the item */
   .matching-component .matching-component__item-content {
     position: relative !important;
     overflow: hidden !important;
   }
 
-  /* Item actions (info button + match number) overlay on the right, no layout impact */
   .matching-component .matching-component__item-actions {
     position: absolute !important;
     right: 0 !important;
@@ -293,94 +109,34 @@ html.dark .matching-component__item--correct .matching-component__item-text * {
     font-size: 0.5625rem !important;
   }
 
-  .matching-component .matching-component__item-letter {
-    width: 1.125rem !important;
-    height: 1.125rem !important;
-    font-size: 0.625rem !important;
-    margin-right: 0.25rem !important;
-  }
-
   .matching-component .matching-component__item-text {
-    font-size: 0.75rem !important;
-    line-height: 1.2 !important;
     padding-right: 2rem !important;
   }
 
-  .matching-component .matching-component__columns {
-    grid-template-columns: 1fr 1fr !important;
-    gap: 0.375rem !important;
-    padding: 0.25rem !important;
-  }
-
-  .matching-component .matching-component__column {
-    padding: 0.25rem !important;
-  }
-
-  .matching-component .matching-component__column-header {
-    font-size: 0.6875rem !important;
-    padding: 0.25rem 0.375rem !important;
-    margin-bottom: 0.25rem !important;
-  }
-
-  /* Correct/incorrect states: keep visual feedback but compact */
-  html body div.matching-component .matching-component__item--correct,
-  html body div.matching-component .matching-component__item--incorrect,
-  html body .matching-component .matching-component__item--correct,
-  html body .matching-component .matching-component__item--incorrect,
-  html.dark body div.matching-component .matching-component__item--correct,
-  html.dark body .matching-component .matching-component__item--correct,
-  html.dark body div.matching-component .matching-component__item--incorrect,
-  html.dark body .matching-component .matching-component__item--incorrect {
+  /* Correct/incorrect compact on mobile */
+  .matching-component .matching-component__item--correct,
+  .matching-component .matching-component__item--incorrect {
     min-height: 2.25rem !important;
     padding: 0.375rem 0.4375rem !important;
     transform: none !important;
-    overflow: hidden !important;
-    border-color: transparent !important;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
-    background-color: var(--theme-success, #10b981) !important;
   }
 
-  /* Incorrect items: solid red on mobile */
-  html body div.matching-component .matching-component__item--incorrect,
-  html body .matching-component .matching-component__item--incorrect,
-  html.dark body div.matching-component .matching-component__item--incorrect,
-  html.dark body .matching-component .matching-component__item--incorrect {
-    background-color: var(--theme-error, #ef4444) !important;
-  }
-
-  /* Letters inside correct/incorrect must stay same size */
-  html
-    body
-    div.matching-component
-    .matching-component__item--correct
-    .matching-component__item-letter,
-  html
-    body
-    div.matching-component
-    .matching-component__item--incorrect
-    .matching-component__item-letter,
-  html body .matching-component .matching-component__item--correct .matching-component__item-letter,
-  html
-    body
-    .matching-component
-    .matching-component__item--incorrect
-    .matching-component__item-letter {
+  .matching-component .matching-component__item--correct .matching-component__item-letter,
+  .matching-component .matching-component__item--incorrect .matching-component__item-letter {
     width: 1.125rem !important;
     height: 1.125rem !important;
     font-size: 0.625rem !important;
     margin-right: 0.25rem !important;
-    border-width: 1px !important;
     box-shadow: none !important;
   }
 }
 
 @media (max-width: 419px) {
-  /* Ultra compact for small screens */
   .matching-component .matching-component__item {
     min-height: 2rem !important;
     padding: 0.3125rem 0.375rem !important;
     font-size: 0.6875rem !important;
-    overflow: hidden !important;
   }
 
   .matching-component .matching-component__item-letter {
@@ -400,56 +156,9 @@ html.dark .matching-component__item--correct .matching-component__item-text * {
     padding: 0.1875rem !important;
   }
 
-  .matching-component .matching-component__item--correct,
-  .matching-component .matching-component__item--incorrect,
-  html body div.matching-component .matching-component__item--correct,
-  html body div.matching-component .matching-component__item--incorrect,
-  html body .matching-component .matching-component__item--correct,
-  html body .matching-component .matching-component__item--incorrect {
-    min-height: 2rem !important;
-    padding: 0.3125rem 0.375rem !important;
-    transform: none !important;
-    overflow: hidden !important;
-    border-width: 1px !important;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
-    background-color: var(--theme-success, #10b981) !important;
-  }
-
-  /* Incorrect items: solid red on small mobile */
-  html body div.matching-component .matching-component__item--incorrect,
-  html body .matching-component .matching-component__item--incorrect {
-    background-color: var(--theme-error, #ef4444) !important;
-  }
-
-  /* Letters inside correct/incorrect */
-  html
-    body
-    div.matching-component
-    .matching-component__item--correct
-    .matching-component__item-letter,
-  html
-    body
-    div.matching-component
-    .matching-component__item--incorrect
-    .matching-component__item-letter,
-  html body .matching-component .matching-component__item--correct .matching-component__item-letter,
-  html
-    body
-    .matching-component
-    .matching-component__item--incorrect
-    .matching-component__item-letter {
-    width: 1rem !important;
-    height: 1rem !important;
-    font-size: 0.5625rem !important;
-    margin-right: 0.1875rem !important;
-    border-width: 1px !important;
-    box-shadow: none !important;
-  }
-
   .matching-component .matching-component__info-button {
     width: 1rem !important;
     height: 1rem !important;
-    min-width: 1rem !important;
   }
 
   .matching-component .matching-component__match-number {

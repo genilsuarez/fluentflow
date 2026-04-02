@@ -1,4 +1,4 @@
-import { logDebug, logError } from '../utils/logger';
+import { logDebug } from '../utils/logger';
 import type { LearningModule } from '../types';
 
 /**
@@ -23,7 +23,10 @@ export class ProgressionService {
   initialize(modules: LearningModule[], completedModuleIds: string[] = []): void {
     this.modules = modules;
     this.moduleMap = new Map(modules.map(m => [m.id, m]));
-    this.completedModules = new Set(completedModuleIds);
+    // Filter out stale IDs that don't exist in the current module set
+    // (e.g. renamed/removed modules still in persisted progress)
+    const validCompletedIds = completedModuleIds.filter(id => this.moduleMap.has(id));
+    this.completedModules = new Set(validCompletedIds);
     this._initialized = true;
 
     logDebug(
@@ -42,10 +45,11 @@ export class ProgressionService {
   isModuleUnlocked(moduleId: string): boolean {
     const module = this.getModule(moduleId);
     if (!module) {
-      // Only log error if service is initialized — before initialization,
-      // callers may query modules that haven't been loaded yet (race condition)
+      // Module not in current set — either not loaded yet (race condition)
+      // or a stale ID from persisted progress. Only log in dev to avoid
+      // flooding production console (was causing ~138 errors per session).
       if (this._initialized) {
-        logError('Module not found', { moduleId }, 'ProgressionService');
+        logDebug('Module not in current set', { moduleId }, 'ProgressionService');
       }
       return false;
     }
@@ -289,11 +293,16 @@ export class ProgressionService {
    * Set completed modules (for initialization from storage)
    */
   setCompletedModules(completedModuleIds: string[]): void {
-    this.completedModules = new Set(completedModuleIds);
+    // Filter out stale IDs not in current module set
+    const validIds = this._initialized
+      ? completedModuleIds.filter(id => this.moduleMap.has(id))
+      : completedModuleIds;
+    this.completedModules = new Set(validIds);
     logDebug(
       'Completed modules updated',
       {
-        count: completedModuleIds.length,
+        count: validIds.length,
+        filtered: completedModuleIds.length - validIds.length,
       },
       'ProgressionService'
     );

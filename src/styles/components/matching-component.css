@@ -1,11 +1,12 @@
 /**
- * Matching Component - BEM Implementation
- * 
- * Clean semantic styles for matching learning mode
- * Uses design system tokens and eliminates inline styles
+ * Matching Component - BEM Implementation (Consolidated)
+ *
+ * Clean semantic styles for matching learning mode.
+ * Uses design system tokens. Specificity kept minimal — state
+ * selectors use !important only where needed to override base styles.
  */
 
-/* === MATCHING COMPONENT BLOCK === */
+/* === BLOCK === */
 .matching-component {
   max-width: 42rem;
   width: 100%;
@@ -22,9 +23,6 @@
   border-radius: var(--radius-lg, 0.5rem);
 }
 
-/* === HEADER - Now using unified LearningProgressHeader === */
-/* Header styles removed - using LearningProgressHeader component */
-
 /* === LOADING === */
 .matching-component__loading {
   text-align: center;
@@ -34,9 +32,6 @@
 .matching-component__loading-text {
   color: var(--theme-text-secondary, #6b7280);
 }
-
-/* === BUTTONS === */
-/* Button styles are defined in the MATCHING BUTTONS section below */
 
 /* === ITEM ACTIONS === */
 .matching-component__item-actions {
@@ -63,158 +58,54 @@
   flex-shrink: 0;
 }
 
-/* === CONTROLS === */
-/* === CONTROLS - Using Unified Game Controls === */
-/* All control styles moved to game-controls.css */
-
-/* === MODAL STYLES === */
-/* All modal styles have been moved to matching-modal.css to avoid conflicts and maintain consistency */
-
-@media (min-width: 640px) {
-  .matching-component {
-    padding: 0.75rem;
-  }
-}
-
-/* === MATCHING HEADER - Now using unified LearningProgressHeader === */
-
-/* === MATCHING GRID === */
+/* === GRID === */
 .matching-component__grid {
   margin-bottom: 0.625rem;
-}
-
-@media (max-width: 768px) {
-  .matching-component__grid {
-    margin-bottom: 0.375rem;
-  }
 }
 
 .matching-component__columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  padding: 0.5rem;
-  background-color: rgba(59, 130, 246, 0.02);
+  gap: 0.375rem;
+  padding: 0.375rem;
+  background-color: rgba(59, 130, 246, 0.08);
   border-radius: 1rem;
-  border: 1px solid rgba(59, 130, 246, 0.08);
+  border: 1px solid rgba(59, 130, 246, 0.15);
+  margin-top: 0.375rem;
 }
 
-@media (max-width: 768px) {
-  .matching-component__columns {
-    grid-template-columns: 1fr 1fr;
-    gap: 0.375rem;
-    padding: 0.375rem;
-  }
-}
-.matching-component__column-header {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--theme-text-primary, #111827);
-  margin-bottom: 0.5rem;
-  text-align: center;
-  padding: 0.375rem 0.5rem;
-  background-color: var(--theme-bg-subtle, #f9fafb);
-  border: 1px solid var(--theme-border-subtle, #e5e7eb);
+.matching-component__column {
+  padding: 0.25rem;
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 0.75rem;
-} /* HOVER STATE - Enhanced for non-selected cards (NO LAYOUT SHIFT) */
-.matching-component__item:hover:not(.matching-component__item--selected):not(
-    .matching-component__item--matched
-  ):not(.matching-component__item--correct):not(.matching-component__item--incorrect):not(
-    .matching-component__item--matched-inactive
-  ) {
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-  border-color: #3b82f6;
-  /* Professional hover: scale from center (no layout shift) */
-  transform: scale(1.02);
-  box-shadow:
-    0 4px 12px rgba(59, 130, 246, 0.15),
-    0 0 0 2px rgba(59, 130, 246, 0.1);
-  transition: var(--transition-interactive);
+  border: 1px solid rgba(226, 232, 240, 0.6);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
 }
 
-/* DEFAULT STATE - Improved design for non-selected cards */
-.matching-component__item:not(.matching-component__item--selected):not(
-    .matching-component__item--matched
-  ):not(.matching-component__item--correct):not(.matching-component__item--incorrect):not(
-    .matching-component__item--matched-inactive
-  ):not(.matching-component__item--unmatched) {
+.matching-component__column-header {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgba(30, 58, 138, 1);
+  margin-bottom: 0.25rem;
+  text-align: center;
+  padding: 0.25rem 0.375rem;
+  background-color: rgba(59, 130, 246, 0.15);
+  border-radius: 0.5rem;
+}
+
+/* === ITEM BASE === */
+.matching-component__item {
+  padding: 0.4375rem 0.5rem;
+  min-height: 2.25rem;
+  margin: 0.0625rem 0;
+  border-radius: 0.75rem;
+  border: 1px solid #d1d5db;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-  border: 2px solid #d1d5db;
-  box-shadow: var(--shadow-card-default);
   color: #374151;
   font-weight: 500;
   transition: var(--transition-interactive);
-}
-
-/* SELECTED STATE - Clear selection with strong border (NO LAYOUT SHIFT) */
-html body .matching-component .matching-component__item--selected {
-  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%) !important;
-  border: 3px solid #1e40af !important;
-  color: #ffffff !important;
-  /* Professional selection: scale from center (no layout shift) */
-  transform: scale(1.03) !important;
-  box-shadow:
-    0 8px 20px rgba(59, 130, 246, 0.3),
-    0 0 0 3px rgba(59, 130, 246, 0.2) !important;
-  font-weight: 600 !important;
-  transition: var(--transition-interactive) !important;
-}
-
-/* MATCHED STATE - Improved contrast with animation */
-.matching-component__item--matched {
-  background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
-  border: 2px solid #0284c7;
-  color: #0c4a6e;
-  cursor: default;
-  box-shadow: var(--shadow-card-default);
-  font-weight: 600;
-  transition: var(--transition-interactive);
-  animation: pulse-success var(--animation-normal) ease-out;
-}
-
-/* MATCHED INACTIVE STATE - Better readability */
-.matching-component__item--matched-inactive {
-  background-color: #f8fafc;
-  border: 2px solid #cbd5e1;
-  color: #475569;
-  cursor: not-allowed;
-  opacity: 0.8;
-  box-shadow: none;
-  font-weight: 500;
-  transition: var(--transition-interactive);
-}
-
-/* UNMATCHED STATE - Clear warning with border */
-.matching-component__item--unmatched {
-  background-color: #fef3c7;
-  border: 2px solid #f59e0b;
-  color: #92400e;
-  box-shadow: var(--shadow-card-default);
-  font-weight: 500;
-  transition: var(--transition-interactive);
-}
-
-/* CORRECT STATE - Homologated with quiz component */
-.matching-component__item--correct {
-  background-color: var(--theme-success, #10b981) !important;
-  border-color: transparent !important;
-  color: #ffffff !important;
-  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.35) !important;
-  font-weight: 600 !important;
-  transition: var(--transition-interactive) !important;
-  animation: pulse-success var(--animation-normal) ease-out !important;
-  transform: scale(1.02) !important;
-}
-
-/* INCORRECT STATE - Homologated with quiz component */
-.matching-component__item--incorrect {
-  background-color: var(--theme-error, #ef4444) !important;
-  border-color: transparent !important;
-  color: #ffffff !important;
-  box-shadow: 0 4px 16px rgba(239, 68, 68, 0.35) !important;
-  font-weight: 600 !important;
-  transition: var(--transition-interactive) !important;
-  transform: scale(1.02) !important;
+  cursor: pointer;
 }
 
 .matching-component__item:disabled {
@@ -222,6 +113,79 @@ html body .matching-component .matching-component__item--selected {
   cursor: not-allowed;
 }
 
+/* HOVER - non-state items only */
+.matching-component__item:hover:not(.matching-component__item--selected):not(
+    .matching-component__item--matched
+  ):not(.matching-component__item--correct):not(.matching-component__item--incorrect):not(
+    .matching-component__item--matched-inactive
+  ) {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-color: #3b82f6;
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15), 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+/* === ITEM STATES === */
+
+/* SELECTED */
+.matching-component__item--selected {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%) !important;
+  border: 3px solid #1e40af !important;
+  color: #ffffff !important;
+  transform: scale(1.03) !important;
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3), 0 0 0 3px rgba(59, 130, 246, 0.2) !important;
+  font-weight: 600 !important;
+}
+
+/* MATCHED */
+.matching-component__item--matched {
+  background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+  border: 2px solid #0284c7;
+  color: #0c4a6e;
+  cursor: default;
+  font-weight: 600;
+  animation: pulse-success var(--animation-normal) ease-out;
+}
+
+/* MATCHED INACTIVE */
+.matching-component__item--matched-inactive {
+  background-color: #f8fafc;
+  border: 2px solid #cbd5e1;
+  color: #475569;
+  cursor: not-allowed;
+  opacity: 0.8;
+  box-shadow: none;
+}
+
+/* UNMATCHED */
+.matching-component__item--unmatched {
+  background-color: #fef3c7;
+  border: 2px solid #f59e0b;
+  color: #92400e;
+}
+
+/* CORRECT */
+.matching-component__item--correct {
+  background-color: var(--theme-success, #10b981) !important;
+  border-color: transparent !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2) !important;
+  font-weight: 700 !important;
+  transform: none !important;
+  animation: pulse-success var(--animation-normal) ease-out;
+}
+
+/* INCORRECT */
+.matching-component__item--incorrect {
+  background-color: var(--theme-error, #ef4444) !important;
+  border-color: transparent !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2) !important;
+  font-weight: 700 !important;
+  transform: none !important;
+}
+
+/* === ITEM CONTENT === */
 .matching-component__item-content {
   display: flex;
   align-items: center;
@@ -231,86 +195,65 @@ html body .matching-component .matching-component__item--selected {
   position: relative;
 }
 
-html body .matching-component .matching-component__item-letter {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 1.5rem !important;
-  height: 1.5rem !important;
-  background-color: #e5e7eb !important;
-  color: #374151 !important;
-  border-radius: 50% !important;
-  font-size: 0.875rem !important;
-  font-weight: 700 !important;
-  flex-shrink: 0 !important;
-  margin-right: 0.75rem !important;
-  transition: var(--transition-interactive) !important;
-  border: 1px solid #d1d5db !important;
+/* === ITEM LETTER === */
+.matching-component__item-letter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #e5e7eb;
+  color: #374151;
+  border-radius: 50%;
+  font-size: 0.875rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-right: 0.75rem;
+  border: 1px solid #d1d5db;
+  transition: var(--transition-interactive);
 }
 
-.matching-component__item-letter--orange {
-  background-color: #f97316;
-  color: #ffffff;
-}
-
-/* Letter states - matching quiz component pattern */
-html body .matching-component .matching-component__item--selected .matching-component__item-letter {
+.matching-component__item--selected .matching-component__item-letter {
   background-color: #2563eb !important;
   color: #ffffff !important;
   border: 2px solid #1d4ed8 !important;
-  font-weight: 700 !important;
   box-shadow: 0 2px 4px rgba(37, 99, 235, 0.3) !important;
 }
 
-/* SELECTED TEXT - High specificity to ensure white text */
-html body .matching-component .matching-component__item--selected,
-html body .matching-component .matching-component__item--selected *,
-html body .matching-component button.matching-component__item--selected,
-html body .matching-component button.matching-component__item--selected * {
-  color: #ffffff !important;
-  font-weight: 600 !important;
-}
-
-html body .matching-component .matching-component__item--matched .matching-component__item-letter {
-  background-color: #ffffff !important;
-  color: #0c4a6e !important;
-  border: 2px solid #0284c7 !important;
-  font-weight: 700 !important;
+.matching-component__item--matched .matching-component__item-letter {
+  background-color: #ffffff;
+  color: #0c4a6e;
+  border: 2px solid #0284c7;
 }
 
 .matching-component__item--matched-inactive .matching-component__item-letter {
   background-color: #f3f4f6;
   color: #6b7280;
   border: 1px solid #d1d5db;
-  font-weight: 600;
 }
 
 .matching-component__item--unmatched .matching-component__item-letter {
   background-color: #ffffff;
   color: #92400e;
   border: 2px solid #f59e0b;
-  font-weight: 700;
 }
 
-html body .matching-component .matching-component__item--correct .matching-component__item-letter {
-  background-color: #22c55e !important;
+.matching-component__item--correct .matching-component__item-letter {
+  background-color: rgba(255, 255, 255, 0.2) !important;
   color: #ffffff !important;
-  font-weight: 700 !important;
-  border: 2px solid #16a34a !important;
-  box-shadow: 0 2px 6px rgba(34, 197, 94, 0.3) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
 }
 
 .matching-component__item--incorrect .matching-component__item-letter {
-  background-color: #ef4444 !important;
+  background-color: rgba(255, 255, 255, 0.2) !important;
   color: #ffffff !important;
-  font-weight: 700 !important;
-  border: 2px solid #dc2626 !important;
-  box-shadow: 0 2px 6px rgba(239, 68, 68, 0.3) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
 }
 
+/* === ITEM TEXT === */
 .matching-component__item-text {
   flex: 1;
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   color: var(--theme-text-primary, #111827);
   line-height: 1.25rem;
   min-height: 1.25rem;
@@ -318,113 +261,43 @@ html body .matching-component .matching-component__item--correct .matching-compo
   align-items: center;
   margin-right: 0.5rem;
   overflow: visible;
-  /* CHANGED: was 'hidden' - could be cutting off text */
   word-wrap: break-word;
   white-space: normal;
 }
 
-/* IMMEDIATE OVERRIDE - Applied right after base selector */
-/* NUCLEAR OPTION: Force white text with maximum possible specificity */
-
-/* Correct state - ALL possible selectors */
-.matching-component__item--correct .matching-component__item-text,
-.matching-component__item--correct .matching-component__item-text *,
-.matching-component__item--correct * .matching-component__item-text,
-.matching-component__item.matching-component__item--correct .matching-component__item-text,
-button.matching-component__item--correct .matching-component__item-text,
-div.matching-component__item--correct .matching-component__item-text,
-span.matching-component__item--correct .matching-component__item-text,
-[class*='matching-component__item--correct'] .matching-component__item-text {
-  color: #ffffff;
-  /* FORCE WHITE TEXT ON CORRECT STATE */
-}
-
-/* Incorrect state - ALL possible selectors */
-.matching-component__item--incorrect .matching-component__item-text,
-.matching-component__item--incorrect .matching-component__item-text *,
-.matching-component__item--incorrect * .matching-component__item-text,
-.matching-component__item.matching-component__item--incorrect .matching-component__item-text,
-button.matching-component__item--incorrect .matching-component__item-text,
-div.matching-component__item--incorrect .matching-component__item-text,
-span.matching-component__item--incorrect .matching-component__item-text,
-[class*='matching-component__item--incorrect'] .matching-component__item-text {
-  color: #ffffff;
-  /* FORCE WHITE TEXT ON INCORRECT STATE */
-}
-
-/* Selected state - ALL possible selectors */
+/* State text colors — single declaration per state */
 .matching-component__item--selected .matching-component__item-text,
-.matching-component__item--selected .matching-component__item-text *,
-.matching-component__item--selected * .matching-component__item-text,
-.matching-component__item.matching-component__item--selected .matching-component__item-text,
-button.matching-component__item--selected .matching-component__item-text,
-div.matching-component__item--selected .matching-component__item-text,
-span.matching-component__item--selected .matching-component__item-text,
-[class*='matching-component__item--selected'] .matching-component__item-text {
-  color: #ffffff;
-  /* FORCE WHITE TEXT ON SELECTED STATE */
+.matching-component__item--selected .matching-component__item-text * {
+  color: #ffffff !important;
+  font-weight: 600 !important;
 }
 
-/* CRITICAL: Override base color for state-specific items */
-.matching-component__item--correct .matching-component__item-text,
-.matching-component__item--incorrect .matching-component__item-text,
-.matching-component__item--selected .matching-component__item-text {
-  color: #ffffff;
-}
-
-/* STATE TEXT COLORS - Light Mode - Matching quiz component pattern */
-/* CRITICAL: Maximum specificity selectors to ensure white text on correction states */
-
-/* Button + Item + State + Text - Maximum specificity */
-button.matching-component__item.matching-component__item--selected .matching-component__item-text,
-.matching-component__button.matching-component__item.matching-component__item--selected
-  .matching-component__item-text,
-.matching-component__item.matching-component__item--selected .matching-component__item-text {
-  color: #ffffff;
-}
-
-button.matching-component__item.matching-component__item--matched .matching-component__item-text,
-.matching-component__button.matching-component__item.matching-component__item--matched
-  .matching-component__item-text,
-.matching-component__item.matching-component__item--matched .matching-component__item-text {
+.matching-component__item--matched .matching-component__item-text {
   color: #374151;
 }
 
-button.matching-component__item.matching-component__item--matched-inactive
-  .matching-component__item-text,
-.matching-component__button.matching-component__item.matching-component__item--matched-inactive
-  .matching-component__item-text,
-.matching-component__item.matching-component__item--matched-inactive
-  .matching-component__item-text {
+.matching-component__item--matched-inactive .matching-component__item-text {
   color: #6b7280;
 }
 
-button.matching-component__item.matching-component__item--unmatched .matching-component__item-text,
-.matching-component__button.matching-component__item.matching-component__item--unmatched
-  .matching-component__item-text,
-.matching-component__item.matching-component__item--unmatched .matching-component__item-text {
+.matching-component__item--unmatched .matching-component__item-text {
   color: #a16207;
 }
 
-button.matching-component__item.matching-component__item--correct .matching-component__item-text,
-.matching-component__button.matching-component__item.matching-component__item--correct
-  .matching-component__item-text,
-.matching-component__item.matching-component__item--correct .matching-component__item-text {
-  color: #ffffff;
+.matching-component__item--correct .matching-component__item-text,
+.matching-component__item--correct .matching-component__item-text * {
+  color: #ffffff !important;
+  font-weight: 700 !important;
 }
 
-button.matching-component__item.matching-component__item--incorrect .matching-component__item-text,
-.matching-component__button.matching-component__item.matching-component__item--incorrect
-  .matching-component__item-text,
-.matching-component__item.matching-component__item--incorrect .matching-component__item-text {
-  color: #ffffff;
+.matching-component__item--incorrect .matching-component__item-text,
+.matching-component__item--incorrect .matching-component__item-text * {
+  color: #ffffff !important;
+  font-weight: 700 !important;
 }
 
-/* === MATCHING BUTTONS === */
-/* CRITICAL FIX: Button styles must NOT override item layout */
-
+/* === BUTTONS === */
 .matching-component__button {
-  /* Reset button defaults */
   border: none;
   background: none;
   padding: 0;
@@ -432,15 +305,12 @@ button.matching-component__item.matching-component__item--incorrect .matching-co
   font: inherit;
   cursor: pointer;
   outline: none;
-
-  /* Inherit item layout */
   display: flex;
   align-items: center;
   width: 100%;
   text-align: left;
 }
 
-/* Button modifiers should NOT affect layout - only used for non-item buttons */
 .matching-component__button--primary:not(.matching-component__item) {
   background: linear-gradient(
     135deg,
@@ -458,7 +328,6 @@ button.matching-component__item.matching-component__item--incorrect .matching-co
   overflow: hidden;
 }
 
-/* Ripple effect for primary buttons */
 .matching-component__button--primary:not(.matching-component__item)::after {
   content: '';
   position: absolute;
@@ -489,6 +358,7 @@ button.matching-component__item.matching-component__item--incorrect .matching-co
   color: var(--theme-text-secondary, #6b7280);
 }
 
+/* === INFO BUTTON === */
 .matching-component__info-button {
   display: inline-flex;
   align-items: center;
@@ -514,7 +384,6 @@ button.matching-component__item.matching-component__item--incorrect .matching-co
 
 .matching-component__info-button:active {
   transform: scale(1.05);
-  box-shadow: var(--shadow-button-active);
 }
 
 .matching-component__info-button:focus-visible {
@@ -534,30 +403,151 @@ button.matching-component__item.matching-component__item--incorrect .matching-co
   font-weight: 600;
 }
 
-/* Info button states for different item states */
-.matching-component__item--correct .matching-component__info-button {
-  background-color: rgba(255, 255, 255, 0.25);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
-}
-
-.matching-component__item--correct .matching-component__info-icon {
-  color: #ffffff;
-  font-weight: 700;
-}
-
+.matching-component__item--correct .matching-component__info-button,
 .matching-component__item--incorrect .matching-component__info-button {
   background-color: rgba(255, 255, 255, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.4);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 }
 
+.matching-component__item--correct .matching-component__info-icon,
 .matching-component__item--incorrect .matching-component__info-icon {
   color: #ffffff;
   font-weight: 700;
 }
 
-/* Dark mode info button styles */
+/* === DARK MODE === */
+html.dark .matching-component {
+  border-color: var(--theme-border-modal-dark, rgba(255, 255, 255, 0.15));
+}
+
+html.dark .matching-component__columns {
+  background-color: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(51, 65, 85, 0.5);
+}
+
+html.dark .matching-component__column {
+  background-color: rgba(30, 41, 59, 0.95);
+  border: 1px solid rgba(71, 85, 105, 0.6);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+html.dark .matching-component__column-header {
+  background-color: rgba(59, 130, 246, 0.3);
+  color: rgba(147, 197, 253, 1);
+}
+
+html.dark .matching-component__item {
+  background: #1e293b;
+  color: #f1f5f9;
+  border-color: #334155;
+}
+
+html.dark .matching-component__item .matching-component__item-text {
+  color: #f1f5f9;
+}
+
+html.dark .matching-component__item .matching-component__item-letter {
+  background: #475569;
+  color: #f1f5f9;
+}
+
+html.dark .matching-component__item:hover:not(.matching-component__item--selected):not(
+    .matching-component__item--matched
+  ):not(.matching-component__item--correct):not(.matching-component__item--incorrect) {
+  background-color: rgba(14, 165, 233, 0.2);
+  border-color: #0ea5e9;
+}
+
+/* Dark mode states */
+html.dark .matching-component__item--selected {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%) !important;
+  color: #ffffff !important;
+  border: 3px solid #fbbf24 !important;
+  box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.4), 0 6px 20px rgba(245, 158, 11, 0.5) !important;
+  transform: scale(1.02) !important;
+}
+
+html.dark .matching-component__item--selected .matching-component__item-letter {
+  background: #ffffff !important;
+  color: #d97706 !important;
+  border: 2px solid #ffffff !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+}
+
+html.dark .matching-component__item--selected .matching-component__item-text {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+html.dark .matching-component__item--matched {
+  background: #0f172a !important;
+  color: #38bdf8 !important;
+}
+
+html.dark .matching-component__item--matched .matching-component__item-letter {
+  background-color: #0ea5e9;
+  color: #ffffff;
+}
+
+html.dark .matching-component__item--matched .matching-component__item-text {
+  color: var(--gray-200, #e5e7eb);
+}
+
+html.dark .matching-component__item--matched-inactive {
+  background: #0f172a !important;
+  color: #64748b !important;
+}
+
+html.dark .matching-component__item--matched-inactive .matching-component__item-text {
+  color: #64748b !important;
+}
+
+html.dark .matching-component__item--unmatched {
+  background-color: #92400e;
+  border-color: #f59e0b;
+  color: #fef3c7;
+}
+
+html.dark .matching-component__item--correct {
+  background-color: var(--theme-success, #10b981) !important;
+  border-color: transparent !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3) !important;
+}
+
+html.dark .matching-component__item--correct .matching-component__item-letter {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  color: #ffffff !important;
+  border: 2px solid rgba(255, 255, 255, 0.4) !important;
+}
+
+html.dark .matching-component__item--correct .matching-component__item-text,
+html.dark .matching-component__item--correct .matching-component__item-text * {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+html.dark .matching-component__item--incorrect {
+  background-color: var(--theme-error, #ef4444) !important;
+  border-color: transparent !important;
+  color: #ffffff !important;
+}
+
+html.dark .matching-component__item--incorrect .matching-component__item-letter {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  color: #ffffff !important;
+  border: 2px solid rgba(255, 255, 255, 0.4) !important;
+}
+
+html.dark .matching-component__item--incorrect .matching-component__item-text,
+html.dark .matching-component__item--incorrect .matching-component__item-text * {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+/* Dark mode info button */
 .dark .matching-component__info-button {
   background-color: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.2);
@@ -573,117 +563,15 @@ button.matching-component__item.matching-component__item--incorrect .matching-co
   color: var(--gray-300, #d1d5db);
 }
 
-.dark .matching-component__item--correct .matching-component__info-button {
-  background-color: rgba(255, 255, 255, 0.15);
-  border-color: rgba(255, 255, 255, 0.3);
-}
-
-.dark .matching-component__item--correct .matching-component__info-icon {
-  color: #ffffff;
-}
-
+.dark .matching-component__item--correct .matching-component__info-button,
 .dark .matching-component__item--incorrect .matching-component__info-button {
   background-color: rgba(255, 255, 255, 0.15);
   border-color: rgba(255, 255, 255, 0.3);
 }
 
+.dark .matching-component__item--correct .matching-component__info-icon,
 .dark .matching-component__item--incorrect .matching-component__info-icon {
   color: #ffffff;
-}
-
-/* === MATCHING NAVIGATION === */
-
-/* === DARK MODE === */
-
-.dark .matching-component__column-header {
-  background-color: var(--gray-800, #1f2937);
-  color: var(--gray-200, #e5e7eb);
-}
-.dark .matching-component__item-letter {
-  background-color: #475569;
-  color: #f1f5f9;
-  transition: var(--transition-interactive);
-}
-
-.dark .matching-component__item-text {
-  color: #f1f5f9;
-}
-
-.dark
-  .matching-component__item:hover:not(.matching-component__item--selected):not(
-    .matching-component__item--matched
-  ):not(.matching-component__item--correct):not(.matching-component__item--incorrect) {
-  background-color: rgba(14, 165, 233, 0.2);
-  border-color: #0ea5e9;
-  box-shadow: var(--shadow-card-hover);
-  transition: var(--transition-interactive);
-} /* Dark mode - Maximum specificity for selected text */
-.dark
-  button.matching-component__item.matching-component__item--selected
-  .matching-component__item-text,
-.dark
-  .matching-component__button.matching-component__item.matching-component__item--selected
-  .matching-component__item-text,
-.dark .matching-component__item--selected .matching-component__item-text {
-  color: white;
-}
-.dark .matching-component__item--matched .matching-component__item-letter {
-  background-color: #0ea5e9;
-  color: #ffffff;
-}
-
-/* Dark mode - Maximum specificity for matched text */
-.dark
-  button.matching-component__item.matching-component__item--matched
-  .matching-component__item-text,
-.dark
-  .matching-component__button.matching-component__item.matching-component__item--matched
-  .matching-component__item-text,
-.dark .matching-component__item--matched .matching-component__item-text {
-  color: var(--gray-200, #e5e7eb);
-}
-.dark .matching-component__item--correct .matching-component__item-letter {
-  background-color: rgba(255, 255, 255, 0.3) !important;
-  color: #ffffff !important;
-  font-weight: 800 !important;
-  border: 2px solid rgba(255, 255, 255, 0.4) !important;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
-}
-
-/* Dark mode - Maximum specificity for correct text */
-.dark
-  button.matching-component__item.matching-component__item--correct
-  .matching-component__item-text,
-.dark
-  .matching-component__button.matching-component__item.matching-component__item--correct
-  .matching-component__item-text,
-.dark .matching-component__item--correct .matching-component__item-text {
-  color: white;
-}
-.dark .matching-component__item--incorrect .matching-component__item-letter {
-  background-color: rgba(255, 255, 255, 0.3) !important;
-  color: #ffffff !important;
-  font-weight: 800 !important;
-  border: 2px solid rgba(255, 255, 255, 0.4) !important;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
-}
-
-/* Dark mode - Maximum specificity for incorrect text */
-.dark
-  button.matching-component__item.matching-component__item--incorrect
-  .matching-component__item-text,
-.dark
-  .matching-component__button.matching-component__item.matching-component__item--incorrect
-  .matching-component__item-text,
-.dark .matching-component__item--incorrect .matching-component__item-text {
-  color: white;
-}
-
-.dark .matching-component__item--unmatched {
-  background-color: #92400e;
-  border-color: #f59e0b;
-  color: #fef3c7;
-  transition: var(--transition-interactive);
 }
 
 /* === MOBILE OPTIMIZATIONS === */
@@ -696,9 +584,12 @@ button.matching-component__item.matching-component__item--incorrect .matching-co
     border-radius: 0;
   }
 
-  /* Push game controls to bottom of viewport */
   .matching-component > .game-controls {
     margin-top: auto;
+  }
+
+  .matching-component__grid {
+    margin-bottom: 0.375rem;
   }
 
   .matching-component__column-header {
@@ -721,7 +612,6 @@ button.matching-component__item.matching-component__item--incorrect .matching-co
     height: 1.25rem !important;
     font-size: 0.6875rem !important;
     margin-right: 0.375rem !important;
-    flex-shrink: 0 !important;
   }
 
   .matching-component__match-number {
@@ -738,6 +628,15 @@ button.matching-component__item.matching-component__item--incorrect .matching-co
   .matching-component__info-icon {
     width: 0.75rem;
     height: 0.75rem;
+  }
+
+  .matching-component__columns {
+    background-color: rgba(59, 130, 246, 0.08);
+  }
+
+  .matching-component__column {
+    padding: 0.25rem;
+    background-color: rgba(255, 255, 255, 0.8);
   }
 }
 
@@ -758,182 +657,10 @@ button.matching-component__item.matching-component__item--incorrect .matching-co
   }
 }
 
-.matching-component__column {
-  padding: 0.5rem;
-  background-color: rgba(248, 250, 252, 0.3);
-  border-radius: 0.75rem;
-  border: 1px solid rgba(16, 185, 129, 0.1);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
-}
-
-/* Dark mode columns - Sophisticated dark theme */
-.dark .matching-component__columns {
-  background-color: rgba(15, 23, 42, 0.8);
-  border-color: rgba(51, 65, 85, 0.3);
-}
-
-.dark .matching-component__column {
-  background-color: rgba(30, 41, 59, 0.6);
-  border-color: rgba(71, 85, 105, 0.3);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-/* Compact margin for items */
-.matching-component__item {
-  margin: 0.125rem 0;
-}
-
-/* Specific padding for ALL button item states - Terms and Definitions */
-.matching-component__item.matching-component__button {
-  padding: 0.75rem;
-}
-
-/* Ensure consistent padding for all states */
-.matching-component__item.matching-component__button.matching-component__button--primary,
-.matching-component__item.matching-component__button.matching-component__button--secondary {
-  padding: 0.75rem;
-}
-
-/* All matching item states get consistent padding */
-.matching-component__item--selected.matching-component__button,
-.matching-component__item--matched.matching-component__button,
-.matching-component__item--matched-inactive.matching-component__button,
-.matching-component__item--unmatched.matching-component__button,
-.matching-component__item--correct.matching-component__button,
-.matching-component__item--incorrect.matching-component__button {
-  padding: 0.75rem;
-}
-
-@media (max-width: 768px) {
-  .matching-component__columns {
-    background-color: rgba(59, 130, 246, 0.08);
+@media (min-width: 640px) {
+  .matching-component {
+    padding: 0.75rem;
   }
-
-  .matching-component__column {
-    padding: 0.25rem;
-    background-color: rgba(255, 255, 255, 0.8);
-  }
-
-  .matching-component__item {
-    margin: 0.0625rem;
-  }
-
-  /* Specific padding for ALL button item states on mobile */
-  .matching-component__item.matching-component__button {
-    padding: 0.4375rem 0.5rem;
-  }
-
-  .matching-component__item.matching-component__button.matching-component__button--primary,
-  .matching-component__item.matching-component__button.matching-component__button--secondary {
-    padding: 0.4375rem 0.5rem;
-  }
-
-  .matching-component__item--selected.matching-component__button,
-  .matching-component__item--matched.matching-component__button,
-  .matching-component__item--matched-inactive.matching-component__button,
-  .matching-component__item--unmatched.matching-component__button,
-  .matching-component__item--correct.matching-component__button,
-  .matching-component__item--incorrect.matching-component__button {
-    padding: 0.4375rem 0.5rem;
-  }
-}
-
-/* MODAL STYLES MOVED TO matching-modal.css */
-
-/* === CRITICAL FIX: FINAL OVERRIDE FOR WHITE TEXT === */
-/* These selectors have maximum priority and are placed at the end to ensure they override everything */
-
-/* ULTRA HIGH SPECIFICITY - FINAL OVERRIDE */
-.matching-component
-  button.matching-component__item.matching-component__button.matching-component__item--correct
-  .matching-component__item-text,
-.matching-component
-  .matching-component__item.matching-component__button.matching-component__item--correct
-  .matching-component__item-text,
-button.matching-component__item.matching-component__item--correct .matching-component__item-text,
-.matching-component__item.matching-component__item--correct .matching-component__item-text,
-.matching-component__item--correct .matching-component__item-text {
-  color: #ffffff !important;
-  font-weight: 700 !important;
-  text-shadow: none !important;
-  /* Force white text on correct state */
-}
-
-.matching-component
-  button.matching-component__item.matching-component__button.matching-component__item--incorrect
-  .matching-component__item-text,
-.matching-component
-  .matching-component__item.matching-component__button.matching-component__item--incorrect
-  .matching-component__item-text,
-button.matching-component__item.matching-component__item--incorrect .matching-component__item-text,
-.matching-component__item.matching-component__item--incorrect .matching-component__item-text,
-.matching-component__item--incorrect .matching-component__item-text {
-  color: #ffffff !important;
-  font-weight: 700 !important;
-  text-shadow: none !important;
-  /* Force white text on incorrect state */
-}
-
-.matching-component
-  button.matching-component__item.matching-component__button.matching-component__item--selected
-  .matching-component__item-text,
-.matching-component
-  .matching-component__item.matching-component__button.matching-component__item--selected
-  .matching-component__item-text,
-button.matching-component__item.matching-component__item--selected .matching-component__item-text,
-.matching-component__item.matching-component__item--selected .matching-component__item-text,
-.matching-component__item--selected .matching-component__item-text {
-  color: #ffffff;
-  /* Force white text on selected state */
-}
-
-/* Dark mode final overrides */
-.dark
-  .matching-component
-  button.matching-component__item.matching-component__button.matching-component__item--correct
-  .matching-component__item-text,
-.dark
-  .matching-component
-  .matching-component__item.matching-component__button.matching-component__item--correct
-  .matching-component__item-text,
-.dark
-  button.matching-component__item.matching-component__item--correct
-  .matching-component__item-text,
-.dark .matching-component__item.matching-component__item--correct .matching-component__item-text,
-.dark .matching-component__item--correct .matching-component__item-text {
-  color: #ffffff;
-}
-
-.dark
-  .matching-component
-  button.matching-component__item.matching-component__button.matching-component__item--incorrect
-  .matching-component__item-text,
-.dark
-  .matching-component
-  .matching-component__item.matching-component__button.matching-component__item--incorrect
-  .matching-component__item-text,
-.dark
-  button.matching-component__item.matching-component__item--incorrect
-  .matching-component__item-text,
-.dark .matching-component__item.matching-component__item--incorrect .matching-component__item-text,
-.dark .matching-component__item--incorrect .matching-component__item-text {
-  color: #ffffff;
-}
-
-.dark
-  .matching-component
-  button.matching-component__item.matching-component__button.matching-component__item--selected
-  .matching-component__item-text,
-.dark
-  .matching-component
-  .matching-component__item.matching-component__button.matching-component__item--selected
-  .matching-component__item-text,
-.dark
-  button.matching-component__item.matching-component__item--selected
-  .matching-component__item-text,
-.dark .matching-component__item.matching-component__item--selected .matching-component__item-text,
-.dark .matching-component__item--selected .matching-component__item-text {
-  color: #ffffff;
 }
 
 /* === ACCESSIBILITY === */
@@ -956,324 +683,4 @@ button.matching-component__item.matching-component__item--selected .matching-com
     border-width: 3px;
     font-weight: 600;
   }
-}
-
-/* EMERGENCY FIX: Force dark backgrounds in dark mode */
-.dark .matching-component__item--selected {
-  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%) !important;
-  color: #ffffff !important;
-  border: 3px solid #fbbf24 !important;
-  box-shadow:
-    0 0 0 3px rgba(251, 191, 36, 0.4),
-    0 6px 20px rgba(245, 158, 11, 0.5) !important;
-  transform: scale(1.02) !important;
-}
-
-.dark .matching-component__item--matched {
-  background: #0f172a !important;
-  color: #38bdf8 !important;
-}
-
-.dark .matching-component__item--matched-inactive {
-  background: #0f172a !important;
-  color: #64748b !important;
-}
-
-.dark .matching-component__item--correct {
-  background-color: var(--theme-success, #10b981) !important;
-  border-color: transparent !important;
-  color: #ffffff !important;
-}
-
-.dark .matching-component__item--incorrect {
-  background-color: var(--theme-error, #ef4444) !important;
-  border-color: transparent !important;
-  color: #ffffff !important;
-}
-
-/* Force text colors */
-.dark .matching-component__item--selected .matching-component__item-text {
-  color: #ffffff !important;
-  font-weight: 600 !important;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
-}
-
-.dark .matching-component__item--matched .matching-component__item-text {
-  color: #38bdf8 !important;
-}
-
-.dark .matching-component__item--matched-inactive .matching-component__item-text {
-  color: #64748b !important;
-}
-
-.dark .matching-component__item--correct .matching-component__item-text {
-  color: #ffffff !important;
-}
-
-.dark .matching-component__item--incorrect .matching-component__item-text {
-  color: #ffffff !important;
-}
-
-/* 
-NUCLEAR OPTION: Override ALL matching items in dark mode */
-.dark .matching-component__item {
-  background: #1e293b !important;
-  color: #f1f5f9 !important;
-  border-color: #334155 !important;
-}
-
-.dark .matching-component__item .matching-component__item-text {
-  color: #f1f5f9 !important;
-}
-
-.dark .matching-component__item .matching-component__item-letter {
-  background: #475569 !important;
-  color: #f1f5f9 !important;
-}
-
-/* Override specific states with higher specificity */
-html.dark .matching-component__item {
-  background: #1e293b !important;
-  color: #f1f5f9 !important;
-}
-
-html.dark .matching-component__item .matching-component__item-text {
-  color: #f1f5f9 !important;
-}
-
-html.dark .matching-component__item .matching-component__item-letter {
-  background: #475569 !important;
-  color: #f1f5f9 !important;
-} /*
- Override selected letter with high contrast */
-.dark .matching-component__item--selected .matching-component__item-letter {
-  background: #ffffff !important;
-  color: #d97706 !important;
-  border: 2px solid #ffffff !important;
-  font-weight: 700 !important;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
-}
-
-/* FORCE COMPACT DESIGN - Match mobile compactness at all viewports */
-html body .matching-component__item {
-  padding: 0.4375rem 0.5rem !important;
-  min-height: 2.25rem !important;
-  margin: 0.0625rem 0 !important;
-  border-radius: 0.75rem !important;
-  border-width: 1px !important;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
-}
-
-html body .matching-component__columns {
-  gap: 0.375rem !important;
-  padding: 0.375rem !important;
-  border-radius: 1rem !important;
-  background-color: rgba(59, 130, 246, 0.08) !important;
-  margin-top: 0.375rem !important;
-  border: 1px solid rgba(59, 130, 246, 0.15) !important;
-}
-
-html body .matching-component__column {
-  gap: 0.125rem !important;
-  padding: 0.25rem !important;
-  border-radius: 0.75rem !important;
-  background-color: rgba(255, 255, 255, 0.8) !important;
-  border: 1px solid rgba(226, 232, 240, 0.6) !important;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03) !important;
-}
-
-html body .matching-component__column-header {
-  font-size: 0.75rem !important;
-  padding: 0.25rem 0.375rem !important;
-  margin-bottom: 0.25rem !important;
-  margin-top: 0 !important;
-  border-radius: 0.5rem !important;
-  background-color: rgba(59, 130, 246, 0.15) !important;
-  color: rgba(30, 58, 138, 1) !important;
-  font-weight: 600 !important;
-}
-
-/* Dark mode compact overrides */
-html.dark body .matching-component__columns {
-  background-color: rgba(15, 23, 42, 0.8) !important;
-  border: 1px solid rgba(51, 65, 85, 0.5) !important;
-}
-
-html.dark body .matching-component__column {
-  background-color: rgba(30, 41, 59, 0.95) !important;
-  border: 1px solid rgba(71, 85, 105, 0.6) !important;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) !important;
-}
-
-html.dark body .matching-component__column-header {
-  background-color: rgba(59, 130, 246, 0.3) !important;
-  color: rgba(147, 197, 253, 1) !important;
-}
-
-/* ULTIMATE COMPACT OVERRIDE - All button combinations */
-button.matching-component__item.matching-component__button.matching-component__button--primary,
-button.matching-component__item.matching-component__button.matching-component__button--secondary,
-button.matching-component__item.matching-component__button,
-.matching-component__item.matching-component__button,
-.matching-component__item--default.matching-component__button,
-.matching-component__item--selected.matching-component__button,
-.matching-component__item--matched.matching-component__button,
-.matching-component__item--matched-inactive.matching-component__button,
-.matching-component__item--correct.matching-component__button,
-.matching-component__item--incorrect.matching-component__button,
-.matching-component__item--unmatched.matching-component__button {
-  padding: 0.4375rem 0.5rem !important;
-  min-height: 2.25rem !important;
-  margin: 0.0625rem 0 !important;
-  border-radius: 0.75rem !important;
-  border-width: 1px !important;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
-  font-size: 0.8125rem !important;
-}
-
-/* Force compact columns - consolidated into html body selectors above */
-
-/* ===== FINAL OVERRIDE - MAXIMUM SPECIFICITY FOR CORRECT ANSWERS ===== */
-
-/* CORRECT ANSWER - Homologated with quiz */
-html body .matching-component .matching-component__item.matching-component__item--correct,
-html body .matching-component button.matching-component__item.matching-component__item--correct,
-html body .matching-component .matching-component__button.matching-component__item--correct,
-html body button.matching-component__item--correct,
-html body .matching-component__item--correct {
-  background-color: var(--theme-success, #10b981) !important;
-  border-color: transparent !important;
-  color: #ffffff !important;
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2) !important;
-  font-weight: 700 !important;
-  transform: none !important;
-}
-
-/* CORRECT ANSWER TEXT - ULTRA HIGH SPECIFICITY */
-html
-  body
-  .matching-component
-  .matching-component__item.matching-component__item--correct
-  .matching-component__item-text,
-html
-  body
-  .matching-component
-  button.matching-component__item.matching-component__item--correct
-  .matching-component__item-text,
-html
-  body
-  .matching-component
-  .matching-component__button.matching-component__item--correct
-  .matching-component__item-text,
-html body button.matching-component__item--correct .matching-component__item-text,
-html body .matching-component__item--correct .matching-component__item-text,
-html body .matching-component__item--correct .matching-component__item-text * {
-  color: #ffffff !important;
-  font-weight: 700 !important;
-  text-shadow: none !important;
-}
-
-/* CORRECT ANSWER LETTER - ULTRA HIGH SPECIFICITY */
-html
-  body
-  .matching-component
-  .matching-component__item.matching-component__item--correct
-  .matching-component__item-letter,
-html
-  body
-  .matching-component
-  button.matching-component__item.matching-component__item--correct
-  .matching-component__item-letter,
-html
-  body
-  .matching-component
-  .matching-component__button.matching-component__item--correct
-  .matching-component__item-letter,
-html body button.matching-component__item--correct .matching-component__item-letter,
-html body .matching-component__item--correct .matching-component__item-letter {
-  background-color: rgba(255, 255, 255, 0.2) !important;
-  color: #ffffff !important;
-  font-weight: 700 !important;
-  border: 1px solid rgba(255, 255, 255, 0.3) !important;
-  box-shadow: none !important;
-}
-
-/* INCORRECT ANSWER - Homologated with quiz */
-html body .matching-component .matching-component__item.matching-component__item--incorrect,
-html body .matching-component button.matching-component__item.matching-component__item--incorrect,
-html body .matching-component .matching-component__button.matching-component__item--incorrect,
-html body button.matching-component__item--incorrect,
-html body .matching-component__item--incorrect {
-  background-color: var(--theme-error, #ef4444) !important;
-  border-color: transparent !important;
-  color: #ffffff !important;
-  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2) !important;
-  font-weight: 700 !important;
-  transform: none !important;
-}
-
-/* INCORRECT ANSWER TEXT - ULTRA HIGH SPECIFICITY */
-html
-  body
-  .matching-component
-  .matching-component__item.matching-component__item--incorrect
-  .matching-component__item-text,
-html
-  body
-  .matching-component
-  button.matching-component__item.matching-component__item--incorrect
-  .matching-component__item-text,
-html
-  body
-  .matching-component
-  .matching-component__button.matching-component__item--incorrect
-  .matching-component__item-text,
-html body button.matching-component__item--incorrect .matching-component__item-text,
-html body .matching-component__item--incorrect .matching-component__item-text,
-html body .matching-component__item--incorrect .matching-component__item-text * {
-  color: #ffffff !important;
-  font-weight: 700 !important;
-  text-shadow: none !important;
-}
-
-/* DARK MODE OVERRIDES - Homologated */
-html.dark body .matching-component .matching-component__item.matching-component__item--correct,
-html.dark
-  body
-  .matching-component
-  button.matching-component__item.matching-component__item--correct,
-html.dark body .matching-component .matching-component__button.matching-component__item--correct,
-html.dark body button.matching-component__item--correct,
-html.dark body .matching-component__item--correct {
-  background-color: var(--theme-success, #10b981) !important;
-  border-color: transparent !important;
-  color: #ffffff !important;
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3) !important;
-}
-
-html.dark
-  body
-  .matching-component
-  .matching-component__item.matching-component__item--correct
-  .matching-component__item-text,
-html.dark
-  body
-  .matching-component
-  button.matching-component__item.matching-component__item--correct
-  .matching-component__item-text,
-html.dark
-  body
-  .matching-component
-  .matching-component__button.matching-component__item--correct
-  .matching-component__item-text,
-html.dark body button.matching-component__item--correct .matching-component__item-text,
-html.dark body .matching-component__item--correct .matching-component__item-text,
-html.dark body .matching-component__item--correct .matching-component__item-text * {
-  color: #ffffff !important;
-  font-weight: 700 !important;
-  text-shadow: none !important;
-}
-/* === LEARNING COMPONENT BORDER - DARK MODE === */
-html.dark .matching-component {
-  border-color: var(--theme-border-modal-dark, rgba(255, 255, 255, 0.15));
 }

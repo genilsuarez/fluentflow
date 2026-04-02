@@ -1,32 +1,49 @@
 /**
  * Progression Dashboard Dark Theme - Component-Specific Overrides
- * 
- * Component-specific dark theme styles that can override global theme
- * BEM_DARK_THEME - Semantic classes for component-level theming
- * Use .progression-dashboard--dark-theme for component-specific overrides
- * 
- * This file provides component-level dark theme overrides that have higher
- * specificity than global theme files, allowing for fine-grained control
+ * Semantic classes for component-level dark theming.
  */
 
-/* === COMPONENT DARK THEME BASE === */
+/* === BASE === */
 .progression-dashboard--dark-theme {
   background-color: var(--theme-bg-primary, #111827);
   color: var(--theme-text-primary, #ffffff);
 }
 
-/* === SEARCH RESULTS HEADER === */
+/* === TEXT ELEMENTS === */
+.progression-dashboard--dark-theme .progression-dashboard__unit-title,
+.progression-dashboard--dark-theme .progression-dashboard__unit-stats,
+.progression-dashboard--dark-theme .progression-dashboard__module-name,
+.progression-dashboard--dark-theme .progression-dashboard__next-name,
+.progression-dashboard--dark-theme .progression-dashboard__unit-next-label,
+.progression-dashboard--dark-theme .progression-dashboard__next-label {
+  color: var(--theme-text-primary, #ffffff);
+}
+
+.progression-dashboard--dark-theme .progression-dashboard__module-desc,
+.progression-dashboard--dark-theme .progression-dashboard__next-desc {
+  color: var(--theme-text-primary, #ffffff);
+  opacity: 0.9;
+}
+
+.progression-dashboard--dark-theme .progression-dashboard__module-type,
+.progression-dashboard--dark-theme .progression-dashboard__module-time,
+.progression-dashboard--dark-theme .progression-dashboard__time {
+  color: var(--theme-text-primary, #ffffff);
+  opacity: 0.7;
+}
+
+/* === SEARCH === */
 .progression-dashboard--dark-theme .progression-dashboard__search-results {
   background: rgba(59, 130, 246, 0.15);
   border-color: rgba(59, 130, 246, 0.3);
 }
 
-.progression-dashboard--dark-theme .progression-dashboard__search-text {
+.progression-dashboard--dark-theme .progression-dashboard__search-text,
+.progression-dashboard--dark-theme .progression-dashboard__clear-filters-btn {
   color: #60a5fa;
 }
 
 .progression-dashboard--dark-theme .progression-dashboard__clear-filters-btn {
-  color: #60a5fa;
   border-color: rgba(96, 165, 250, 0.4);
 }
 
@@ -35,7 +52,7 @@
   color: #fff;
 }
 
-/* === NO RESULTS STATE === */
+/* === NO RESULTS === */
 .progression-dashboard--dark-theme .progression-dashboard__no-results-text {
   color: var(--theme-text-primary, #ffffff);
 }
@@ -44,50 +61,7 @@
   color: var(--theme-text-secondary, #9ca3af);
 }
 
-/* === TEXT ELEMENTS === */
-.progression-dashboard--dark-theme .progression-dashboard__unit-title {
-  color: var(--theme-text-primary, #ffffff);
-}
-
-.progression-dashboard--dark-theme .progression-dashboard__unit-stats {
-  color: var(--theme-text-primary, #ffffff);
-}
-
-.progression-dashboard--dark-theme .progression-dashboard__module-name {
-  color: var(--theme-text-primary, #ffffff);
-}
-
-.progression-dashboard--dark-theme .progression-dashboard__module-desc {
-  color: var(--theme-text-primary, #ffffff);
-  opacity: 0.9;
-}
-
-.progression-dashboard--dark-theme .progression-dashboard__module-type,
-.progression-dashboard--dark-theme .progression-dashboard__module-time {
-  color: var(--theme-text-primary, #ffffff);
-  opacity: 0.7;
-}
-
-.progression-dashboard--dark-theme .progression-dashboard__next-name {
-  color: var(--theme-text-primary, #ffffff);
-}
-
-.progression-dashboard--dark-theme .progression-dashboard__next-desc {
-  color: var(--theme-text-primary, #ffffff);
-  opacity: 0.95;
-}
-
-.progression-dashboard--dark-theme .progression-dashboard__time {
-  color: var(--theme-text-primary, #ffffff);
-  opacity: 0.8;
-}
-
-.progression-dashboard--dark-theme .progression-dashboard__unit-next-label,
-.progression-dashboard--dark-theme .progression-dashboard__next-label {
-  color: var(--theme-text-primary, #ffffff);
-}
-
-/* === EXPAND ICON (unit chevron) === */
+/* === EXPAND ICON === */
 .progression-dashboard--dark-theme .progression-dashboard__unit-expand {
   background: var(--theme-bg-soft, #374151);
 }
@@ -97,11 +71,7 @@
 }
 
 /* === BACKGROUND ELEMENTS === */
-.progression-dashboard--dark-theme .progression-dashboard__unit {
-  background-color: var(--theme-bg-elevated, #1f2937);
-  border-color: var(--theme-border-soft, #4b5563);
-}
-
+.progression-dashboard--dark-theme .progression-dashboard__unit,
 .progression-dashboard--dark-theme .progression-dashboard__module {
   background-color: var(--theme-bg-elevated, #1f2937);
   border-color: var(--theme-border-soft, #4b5563);
@@ -117,12 +87,7 @@
   border-color: rgba(96, 165, 250, 0.6);
 }
 
-/* Softer next badge in dark mode */
-.progression-dashboard--dark-theme .progression-dashboard__next-indicator {
-  background: rgba(96, 165, 250, 0.25);
-  color: #93c5fd;
-}
-
+.progression-dashboard--dark-theme .progression-dashboard__next-indicator,
 .progression-dashboard--dark-theme .progression-dashboard__unit-next-indicator {
   background: rgba(96, 165, 250, 0.25);
   color: #93c5fd;
@@ -133,7 +98,7 @@
   border-color: var(--theme-border-medium, #6b7280);
 }
 
-/* === HERO SECTION === */
+/* === HERO === */
 .progression-dashboard--dark-theme .progression-dashboard__hero {
   background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
   color: var(--theme-text-primary, #ffffff);
@@ -153,15 +118,13 @@
 
 .progression-dashboard--dark-theme .progression-dashboard__continue-btn:hover {
   background-color: var(--theme-primary-blue-hover, #3b82f6);
-  color: var(--theme-text-primary, #ffffff);
   border-color: var(--theme-primary-blue-hover, #60a5fa);
 }
 
-/* === UNLOCKED MODULES (active, accessible) === */
+/* === UNLOCKED MODULES === */
 .progression-dashboard--dark-theme .progression-dashboard__module--unlocked {
   background-color: #1e293b;
   border: 1px solid #475569;
-  opacity: 1;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -171,56 +134,34 @@
   box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
 }
 
-/* === LOCKED MODULES (dimmed, inaccessible) === */
+/* === LOCKED MODULES === */
 .progression-dashboard--dark-theme .progression-dashboard__module--locked {
   background-color: #1a2332;
   border: 1px solid #2d3a4a;
   opacity: 0.8;
 }
 
-.progression-dashboard--dark-theme
-  .progression-dashboard__module--locked
-  .progression-dashboard__module-name {
+.progression-dashboard--dark-theme .progression-dashboard__module--locked .progression-dashboard__module-name {
   color: #9ca3af;
 }
 
-.progression-dashboard--dark-theme
-  .progression-dashboard__module--locked
-  .progression-dashboard__module-desc {
+.progression-dashboard--dark-theme .progression-dashboard__module--locked .progression-dashboard__module-desc,
+.progression-dashboard--dark-theme .progression-dashboard__module--locked .progression-dashboard__module-type,
+.progression-dashboard--dark-theme .progression-dashboard__module--locked .progression-dashboard__module-time,
+.progression-dashboard--dark-theme .progression-dashboard__module--locked .progression-dashboard__icon--locked {
   color: #6b7280;
 }
 
-.progression-dashboard--dark-theme
-  .progression-dashboard__module--locked
-  .progression-dashboard__module-type,
-.progression-dashboard--dark-theme
-  .progression-dashboard__module--locked
-  .progression-dashboard__module-time {
-  color: #6b7280;
-}
-
-.progression-dashboard--dark-theme
-  .progression-dashboard__module--locked
-  .progression-dashboard__module-icon {
+.progression-dashboard--dark-theme .progression-dashboard__module--locked .progression-dashboard__module-icon {
   background-color: #1f2937;
   border-color: #374151;
 }
 
-.progression-dashboard--dark-theme
-  .progression-dashboard__module--locked
-  .progression-dashboard__icon--locked {
-  color: #6b7280;
-}
-
-.progression-dashboard--dark-theme
-  .progression-dashboard__module--locked
-  .progression-dashboard__level-badge {
+.progression-dashboard--dark-theme .progression-dashboard__module--locked .progression-dashboard__level-badge {
   opacity: 0.5;
 }
 
-/* === COMPONENT-SPECIFIC MODIFIERS === */
-/* These can override global theme styles for specific use cases */
-
+/* === PROGRESS BAR === */
 .progression-dashboard--dark-theme .progression-dashboard__progress-bar {
   background: #4b5563;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -230,20 +171,11 @@
   background: linear-gradient(90deg, #60a5fa, #818cf8);
 }
 
-/* === MOBILE RESPONSIVE === */
+/* === MOBILE === */
 @media (max-width: 767px) {
-  /* Increase touch targets and readability */
   .progression-dashboard--dark-theme .progression-dashboard__module {
     padding: 0.875rem;
     min-height: 44px;
-  }
-
-  .progression-dashboard--dark-theme .progression-dashboard__unit-title {
-    font-size: 1.125rem;
-  }
-
-  .progression-dashboard--dark-theme .progression-dashboard__module-name {
-    font-size: 1rem;
   }
 
   .progression-dashboard--dark-theme .progression-dashboard__continue-btn {
@@ -251,20 +183,5 @@
     min-width: 48px;
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
-  }
-}
-
-@media (max-width: 419px) {
-  /* Ultra compact for small screens */
-  .progression-dashboard--dark-theme .progression-dashboard__module {
-    padding: 0.75rem;
-  }
-
-  .progression-dashboard--dark-theme .progression-dashboard__unit-title {
-    font-size: 1rem;
-  }
-
-  .progression-dashboard--dark-theme .progression-dashboard__module-name {
-    font-size: 0.9375rem;
   }
 }
