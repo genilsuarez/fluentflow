@@ -141,23 +141,37 @@
   opacity: 0.8;
 }
 
-.progression-dashboard--dark-theme .progression-dashboard__module--locked .progression-dashboard__module-name {
+.progression-dashboard--dark-theme
+  .progression-dashboard__module--locked
+  .progression-dashboard__module-name {
   color: #9ca3af;
 }
 
-.progression-dashboard--dark-theme .progression-dashboard__module--locked .progression-dashboard__module-desc,
-.progression-dashboard--dark-theme .progression-dashboard__module--locked .progression-dashboard__module-type,
-.progression-dashboard--dark-theme .progression-dashboard__module--locked .progression-dashboard__module-time,
-.progression-dashboard--dark-theme .progression-dashboard__module--locked .progression-dashboard__icon--locked {
+.progression-dashboard--dark-theme
+  .progression-dashboard__module--locked
+  .progression-dashboard__module-desc,
+.progression-dashboard--dark-theme
+  .progression-dashboard__module--locked
+  .progression-dashboard__module-type,
+.progression-dashboard--dark-theme
+  .progression-dashboard__module--locked
+  .progression-dashboard__module-time,
+.progression-dashboard--dark-theme
+  .progression-dashboard__module--locked
+  .progression-dashboard__icon--locked {
   color: #6b7280;
 }
 
-.progression-dashboard--dark-theme .progression-dashboard__module--locked .progression-dashboard__module-icon {
+.progression-dashboard--dark-theme
+  .progression-dashboard__module--locked
+  .progression-dashboard__module-icon {
   background-color: #1f2937;
   border-color: #374151;
 }
 
-.progression-dashboard--dark-theme .progression-dashboard__module--locked .progression-dashboard__level-badge {
+.progression-dashboard--dark-theme
+  .progression-dashboard__module--locked
+  .progression-dashboard__level-badge {
   opacity: 0.5;
 }
 

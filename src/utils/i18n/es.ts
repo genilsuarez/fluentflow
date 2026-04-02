@@ -40,8 +40,7 @@ export const es = {
     showingResults: '{{count}} de {{total}} módulos',
     clearFilters: 'Limpiar',
     noModulesFound: 'No se encontraron módulos para "{{query}}"',
-    searchHint:
-      'Intenta ajustar los términos de búsqueda o explora todos los módulos disponibles.',
+    searchHint: 'Intenta ajustar los términos de búsqueda o explora todos los módulos disponibles.',
     retryLoading: 'Reintentar carga de módulos',
     tryAgain: 'Intentar de Nuevo',
     modulesAvailable: '{{count}} módulos de aprendizaje disponibles',
