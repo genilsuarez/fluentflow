@@ -12,7 +12,7 @@
       "id": "intro",
       "title": "Why Be and Go Are Confusing",
       "type": "introduction",
-      "content": "Many Spanish speakers confuse <be> and <go> because in Spanish, <estar> and <ir> work differently. In English, <be> describes WHERE you are or HOW you are, while <go> describes movement FROM one place TO another. This lesson will help you understand the difference clearly."
+      "content": "Many Spanish speakers confuse <be> and <go> because in Spanish, <estar> and <ir> work differently. In English, <be> describes WHERE you are or HOW you are, while <go> describes movement FROM one place TO another. This lesson will help you understand the difference clearly. The verb <be> (am/is/are) describes states and locations: \"I am at home,\" \"She is happy.\" The verb <go> (go/goes) describes movement: \"I go to school,\" \"He goes to work.\""
     },
     {
       "id": "be-location",
@@ -53,13 +53,13 @@
   ],
   "keyVocabulary": [
     {
-      "term": "be (am/is/are)",
+      "term": "be",
       "definition": "Used for location, states, identity, and descriptions",
       "example": "I am at home. She is happy.",
       "pronunciation": "/biː/"
     },
     {
-      "term": "go (go/goes)",
+      "term": "go",
       "definition": "Used for movement towards a place or doing activities",
       "example": "I go to school. He goes running.",
       "pronunciation": "/ɡoʊ/"

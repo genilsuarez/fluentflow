@@ -11,7 +11,7 @@
       "id": "gerund-verbs",
       "title": "Verbs Followed by Gerund (-ing)",
       "type": "theory",
-      "content": "These common verbs are always followed by the <gerund> (-ing form):\n\n<Enjoy>: I enjoy cooking Italian food.\n<Avoid>: She avoids eating late at night.\n<Mind>: Do you mind waiting a few minutes?\n<Suggest>: He suggested going to the cinema.\n<Finish>: We finished cleaning the house.\n<Practice>: They practice speaking English every day.\n<Consider>: I'm considering changing jobs.\n<Imagine>: Can you imagine living in another country?\n<Keep>: She keeps forgetting her keys.\n<Miss>: I miss seeing my old friends.\n<Deny>: He denied stealing the money.\n<Risk>: Don't risk losing your job.\n\nA helpful memory trick: many of these verbs describe reactions to actions or ongoing situations."
+      "content": "These common verbs are always followed by the <gerund> (-ing form):\n\n<Enjoy>: I enjoy cooking Italian food.\n<Avoid>: She avoids eating late at night.\n<Mind>: Do you mind waiting a few minutes?\n<Suggest>: He suggested going to the cinema.\n<Finish>: We finished cleaning the house.\n<Practice>: They practice speaking English every day.\n<Consider>: I'm considering changing jobs.\n<Imagine>: Can you imagine living in another country?\n<Keep>: She keeps forgetting her keys.\n<Miss>: I miss seeing my old friends.\n<Deny>: He denied stealing the money.\n<Risk>: Don't risk losing your job.\n\nA helpful memory trick: many of these verbs describe reactions to actions or ongoing situations. Understanding the correct <verb pattern> — whether a verb takes a gerund or infinitive — is essential for natural English."
     },
     {
       "id": "infinitive-verbs",
@@ -52,9 +52,21 @@
     "Apply gerund and infinitive patterns in context"
   ],
   "keyVocabulary": [
-    { "term": "gerund", "definition": "The -ing form of a verb used as a noun (e.g., swimming, reading)", "example": "Swimming is good exercise." },
-    { "term": "infinitive", "definition": "The base form of a verb with 'to' (e.g., to swim, to read)", "example": "I want to swim." },
-    { "term": "verb pattern", "definition": "The grammatical structure that follows a verb", "example": "Enjoy + gerund: enjoy reading" }
+    {
+      "term": "gerund",
+      "definition": "The -ing form of a verb used as a noun (e.g., swimming, reading)",
+      "example": "Swimming is good exercise."
+    },
+    {
+      "term": "infinitive",
+      "definition": "The base form of a verb with 'to' (e.g., to swim, to read)",
+      "example": "I want to swim."
+    },
+    {
+      "term": "verb pattern",
+      "definition": "The grammatical structure that follows a verb",
+      "example": "Enjoy + gerund: enjoy reading"
+    }
   ],
   "estimatedReadingTime": 8
 }

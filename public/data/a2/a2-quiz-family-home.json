@@ -2,8 +2,8 @@
   {
     "question": "What do you call your <spouse's parents>?",
     "options": [
-      "cousins",
       "in-laws",
+      "cousins",
       "siblings",
       "relatives"
     ],
@@ -15,8 +15,8 @@
     "options": [
       "table",
       "sofa",
-      "chair",
-      "bed"
+      "bed",
+      "chair"
     ],
     "correct": "bed",
     "explanation": "A <bed> is furniture used for sleeping."
@@ -24,10 +24,10 @@
   {
     "question": "What is a <stepmother>?",
     "options": [
-      "your grandmother",
-      "your mother's sister",
       "your father's new wife",
-      "your aunt"
+      "your aunt",
+      "your mother's sister",
+      "your grandmother"
     ],
     "correct": "your father's new wife",
     "explanation": "A <stepmother> is your father's wife who is not your biological mother."
@@ -35,10 +35,10 @@
   {
     "question": "Which appliance keeps food <cold>?",
     "options": [
-      "toaster",
       "microwave",
-      "oven",
-      "refrigerator"
+      "refrigerator",
+      "toaster",
+      "oven"
     ],
     "correct": "refrigerator",
     "explanation": "A <refrigerator> keeps food cold and fresh."
@@ -47,9 +47,9 @@
     "question": "What do you call your <aunt's children>?",
     "options": [
       "nieces",
-      "nephews",
+      "siblings",
       "cousins",
-      "siblings"
+      "nephews"
     ],
     "correct": "cousins",
     "explanation": "Your aunt's children are your <cousins>."
@@ -58,9 +58,9 @@
     "question": "Which room item is used to <sit and relax>?",
     "options": [
       "lamp",
+      "curtain",
       "bookshelf",
-      "armchair",
-      "curtain"
+      "armchair"
     ],
     "correct": "armchair",
     "explanation": "An <armchair> is a comfortable chair used for sitting and relaxing."
@@ -68,9 +68,9 @@
   {
     "question": "What is an <only child>?",
     "options": [
+      "the oldest child, overall speaking",
       "a child with no siblings",
       "the youngest child",
-      "the oldest child, overall speaking",
       "an adopted child, overall speaking"
     ],
     "correct": "a child with no siblings",
@@ -80,9 +80,9 @@
     "question": "Which appliance is used for <washing clothes>?",
     "options": [
       "washing machine",
-      "dishwasher",
       "dryer",
-      "vacuum cleaner"
+      "vacuum cleaner",
+      "dishwasher"
     ],
     "correct": "washing machine",
     "explanation": "A <washing machine> is used to wash clothes."
@@ -90,10 +90,10 @@
   {
     "question": "What do you call your <grandparents' parents>?",
     "options": [
-      "elders",
       "great-grandparents",
-      "ancestors",
-      "relatives"
+      "relatives",
+      "elders",
+      "ancestors"
     ],
     "correct": "great-grandparents",
     "explanation": "Your grandparents' parents are your <great-grandparents>."
@@ -101,9 +101,9 @@
   {
     "question": "Which item is used to <cover windows>?",
     "options": [
-      "blanket",
       "pillow",
       "carpet",
+      "blanket",
       "curtains"
     ],
     "correct": "curtains",
@@ -112,10 +112,10 @@
   {
     "question": "What is a <sibling>?",
     "options": [
-      "your cousin",
       "your friend",
-      "your parent",
-      "your brother or sister"
+      "your cousin",
+      "your brother or sister",
+      "your parent"
     ],
     "correct": "your brother or sister",
     "explanation": "A sibling is <your brother or sister>."
@@ -123,10 +123,10 @@
   {
     "question": "Which appliance is used for <cooking food quickly>?",
     "options": [
-      "blender",
+      "microwave",
       "freezer",
       "refrigerator",
-      "microwave"
+      "blender"
     ],
     "correct": "microwave",
     "explanation": "A <microwave> cooks or heats food quickly using electromagnetic waves."
@@ -134,10 +134,10 @@
   {
     "question": "What do you call your <children's children>?",
     "options": [
+      "grandchildren",
       "cousins",
       "nephews",
-      "descendants",
-      "grandchildren"
+      "descendants"
     ],
     "correct": "grandchildren",
     "explanation": "Your children's children are your <grandchildren>."
@@ -145,10 +145,10 @@
   {
     "question": "Which furniture is used for <storing clothes>?",
     "options": [
-      "coffee table",
+      "bookcase",
       "wardrobe",
-      "desk",
-      "bookcase"
+      "coffee table",
+      "desk"
     ],
     "correct": "wardrobe",
     "explanation": "A <wardrobe> is furniture used for storing clothes."
@@ -157,9 +157,9 @@
     "question": "What is a <nuclear family>?",
     "options": [
       "all relatives",
-      "cousins and aunts",
+      "grandparents only",
       "parents and children only",
-      "grandparents only"
+      "cousins and aunts"
     ],
     "correct": "parents and children only",
     "explanation": "A <nuclear family> consists of parents and their children living together."
@@ -167,9 +167,9 @@
   {
     "question": "Which item is used to <cover the floor>?",
     "options": [
-      "door",
-      "ceiling",
       "wallpaper",
+      "ceiling",
+      "door",
       "rug"
     ],
     "correct": "rug",
@@ -178,10 +178,10 @@
   {
     "question": "What do you call your <spouse's brother>?",
     "options": [
-      "stepbrother",
-      "nephew as recognized by most authorities",
+      "brother-in-law",
       "cousin",
-      "brother-in-law"
+      "nephew as recognized by most authorities",
+      "stepbrother"
     ],
     "correct": "brother-in-law",
     "explanation": "Your spouse's brother is your <brother-in-law>."
@@ -190,9 +190,9 @@
     "question": "Which appliance is used for <cleaning floors>?",
     "options": [
       "toaster",
-      "vacuum cleaner",
+      "fan",
       "iron",
-      "fan"
+      "vacuum cleaner"
     ],
     "correct": "vacuum cleaner",
     "explanation": "A <vacuum cleaner> is used to clean floors by sucking up dirt and dust."
@@ -200,10 +200,10 @@
   {
     "question": "What is an <extended family>?",
     "options": [
-      "parents only",
       "children only",
-      "friends",
-      "parents, children, and other relatives"
+      "parents only",
+      "parents, children, and other relatives",
+      "friends"
     ],
     "correct": "parents, children, and other relatives",
     "explanation": "An <extended family> includes parents, children, grandparents, aunts, uncles, and cousins."
@@ -211,10 +211,10 @@
   {
     "question": "Which item provides <light in a room>?",
     "options": [
-      "vase",
-      "mirror",
+      "picture frame",
       "lamp",
-      "picture frame"
+      "vase",
+      "mirror"
     ],
     "correct": "lamp",
     "explanation": "A <lamp> provides artificial light in a room."

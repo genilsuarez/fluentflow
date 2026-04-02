@@ -3,9 +3,9 @@
     "question": "What does <troubleshoot> mean?",
     "options": [
       "complicate matters",
-      "create problems",
       "identify and solve problems",
-      "ignore issues"
+      "ignore issues",
+      "create problems"
     ],
     "correct": "identify and solve problems",
     "explanation": "<Troubleshoot> means to analyze and solve problems in a system or process."
@@ -13,10 +13,10 @@
   {
     "question": "What is a <workaround>?",
     "options": [
-      "creating problems",
       "avoiding work",
+      "permanent solution as recognized by most authorities",
       "temporary solution to problem",
-      "permanent solution as recognized by most authorities"
+      "creating problems"
     ],
     "correct": "temporary solution to problem",
     "explanation": "A <workaround> is a method for overcoming a problem temporarily when a direct approach is not possible."
@@ -24,10 +24,10 @@
   {
     "question": "What does <diagnose> mean?",
     "options": [
-      "ignore",
-      "create",
       "identify nature of problem",
-      "worsen"
+      "create",
+      "worsen",
+      "ignore"
     ],
     "correct": "identify nature of problem",
     "explanation": "<Diagnose> means to identify the nature of an illness or problem by examination."
@@ -36,9 +36,9 @@
     "question": "What is <root cause>?",
     "options": [
       "fundamental reason for problem",
-      "symptom",
+      "solution",
       "effect",
-      "solution"
+      "symptom"
     ],
     "correct": "fundamental reason for problem",
     "explanation": "<Root cause> is the fundamental reason for the occurrence of a problem."
@@ -46,10 +46,10 @@
   {
     "question": "What does <mitigate> mean?",
     "options": [
+      "ignore",
       "worsen",
-      "create",
       "make less severe",
-      "ignore"
+      "create"
     ],
     "correct": "make less severe",
     "explanation": "<Mitigate> means to make something less severe, serious, or painful."
@@ -57,10 +57,10 @@
   {
     "question": "What is <contingency plan>?",
     "options": [
-      "main plan",
-      "no plan",
+      "backup plan for emergencies",
       "old plan",
-      "backup plan for emergencies"
+      "main plan",
+      "no plan"
     ],
     "correct": "backup plan for emergencies",
     "explanation": "A <contingency plan> is a course of action designed to help respond effectively to unexpected events."
@@ -68,10 +68,10 @@
   {
     "question": "What does <prioritize> mean?",
     "options": [
-      "arrange by importance",
-      "ignore",
       "randomize",
-      "delay"
+      "delay",
+      "arrange by importance",
+      "ignore"
     ],
     "correct": "arrange by importance",
     "explanation": "<Prioritize> means to designate or treat something as more important than other things."
@@ -80,8 +80,8 @@
     "question": "What is <bottleneck>?",
     "options": [
       "point of congestion",
-      "improvement",
       "expansion",
+      "improvement",
       "solution"
     ],
     "correct": "point of congestion",
@@ -90,10 +90,10 @@
   {
     "question": "What does <optimize> mean?",
     "options": [
-      "make best use of",
-      "worsen",
       "complicate",
-      "reduce"
+      "reduce",
+      "make best use of",
+      "worsen"
     ],
     "correct": "make best use of",
     "explanation": "<Optimize> means to make the best or most effective use of a situation or resource."
@@ -101,10 +101,10 @@
   {
     "question": "What is <critical thinking>?",
     "options": [
-      "objective analysis to form judgment",
       "criticizing",
-      "complaining",
-      "accepting everything"
+      "objective analysis to form judgment",
+      "accepting everything",
+      "complaining"
     ],
     "correct": "objective analysis to form judgment",
     "explanation": "<Critical thinking> is the objective analysis and evaluation of an issue to form a judgment."
@@ -112,10 +112,10 @@
   {
     "question": "What does <brainstorm> mean?",
     "options": [
-      "avoid thinking",
       "generate ideas in group",
-      "think alone",
-      "criticize ideas"
+      "criticize ideas",
+      "avoid thinking",
+      "think alone"
     ],
     "correct": "generate ideas in group",
     "explanation": "<Brainstorm> means to produce an idea or way of solving a problem through group discussion."
@@ -123,9 +123,9 @@
   {
     "question": "What is <feasibility>?",
     "options": [
-      "impossibility",
       "state of being possible",
       "complexity",
+      "impossibility",
       "difficulty"
     ],
     "correct": "state of being possible",
@@ -134,10 +134,10 @@
   {
     "question": "What does <implement> mean?",
     "options": [
-      "plan only",
-      "discuss",
+      "put into effect",
       "cancel",
-      "put into effect"
+      "discuss",
+      "plan only"
     ],
     "correct": "put into effect",
     "explanation": "<Implement> means to put a decision or plan into effect."
@@ -145,10 +145,10 @@
   {
     "question": "What is <trade-off>?",
     "options": [
-      "balance between two things",
-      "no compromise",
+      "complete win",
       "perfect solution as recognized by most authorities",
-      "complete win"
+      "no compromise",
+      "balance between two things"
     ],
     "correct": "balance between two things",
     "explanation": "A <trade-off> is a balance achieved between two desirable but incompatible features."
@@ -156,10 +156,10 @@
   {
     "question": "What does <assess> mean?",
     "options": [
-      "assume",
-      "guess",
       "ignore",
-      "evaluate nature or quality"
+      "guess",
+      "evaluate nature or quality",
+      "assume"
     ],
     "correct": "evaluate nature or quality",
     "explanation": "<Assess> means to evaluate or estimate the nature, ability, or quality of something."
@@ -167,9 +167,9 @@
   {
     "question": "What is <proactive>?",
     "options": [
-      "delayed",
       "reactive",
       "passive",
+      "delayed",
       "acting in anticipation"
     ],
     "correct": "acting in anticipation",
@@ -178,10 +178,10 @@
   {
     "question": "What does <escalate> mean?",
     "options": [
-      "decrease",
-      "increase in intensity",
       "maintain",
-      "resolve"
+      "resolve",
+      "decrease",
+      "increase in intensity"
     ],
     "correct": "increase in intensity",
     "explanation": "<Escalate> means to increase rapidly in intensity or seriousness."
@@ -189,8 +189,8 @@
   {
     "question": "What is <resolution>?",
     "options": [
-      "delay",
       "problem",
+      "delay",
       "firm decision or solution",
       "confusion"
     ],
@@ -200,10 +200,10 @@
   {
     "question": "What does <collaborate> mean?",
     "options": [
-      "work jointly with others",
-      "avoid",
+      "work alone",
       "compete",
-      "work alone"
+      "avoid",
+      "work jointly with others"
     ],
     "correct": "work jointly with others",
     "explanation": "<Collaborate> means to work jointly on an activity, especially to produce something."
@@ -211,10 +211,10 @@
   {
     "question": "What is <systematic approach>?",
     "options": [
-      "guessing",
-      "chaotic process",
       "methodical procedure",
-      "random method"
+      "guessing",
+      "random method",
+      "chaotic process"
     ],
     "correct": "methodical procedure",
     "explanation": "A <systematic approach> is done or acting according to a fixed plan or system; methodical."

@@ -2,10 +2,10 @@
   {
     "question": "Which is correct? 'I enjoy ______.'",
     "options": [
-      "swim",
       "swam",
-      "to swim",
-      "swimming"
+      "swimming",
+      "swim",
+      "to swim"
     ],
     "correct": "swimming",
     "explanation": "<Enjoy> is always followed by the gerund (-ing form): enjoy swimming."
@@ -14,8 +14,8 @@
     "question": "Which is correct? 'She decided ______ abroad.'",
     "options": [
       "studying",
-      "studied",
       "study",
+      "studied",
       "to study"
     ],
     "correct": "to study",
@@ -24,10 +24,10 @@
   {
     "question": "Which verb is followed by the gerund (-ing)?",
     "options": [
+      "want",
       "hope",
       "avoid",
-      "decide",
-      "want"
+      "decide"
     ],
     "correct": "avoid",
     "explanation": "<Avoid> is followed by the gerund: avoid doing something."
@@ -46,10 +46,10 @@
   {
     "question": "'Do you mind ______ me?' — Choose the correct form.",
     "options": [
+      "helped",
       "help",
-      "helping",
       "to help",
-      "helped"
+      "helping"
     ],
     "correct": "helping",
     "explanation": "<Mind> is always followed by the gerund: mind helping."
@@ -58,9 +58,9 @@
     "question": "'He promised ______ on time.' — Choose the correct form.",
     "options": [
       "arriving",
+      "arrived",
       "to arrive",
-      "arrive",
-      "arrived"
+      "arrive"
     ],
     "correct": "to arrive",
     "explanation": "<Promise> is always followed by the infinitive: promised to arrive."
@@ -79,10 +79,10 @@
   {
     "question": "'I look forward to ______ you.' — Choose the correct form.",
     "options": [
+      "see",
       "to see",
-      "seeing",
       "saw",
-      "see"
+      "seeing"
     ],
     "correct": "seeing",
     "explanation": "In <look forward to>, the word 'to' is a preposition, so use the gerund: seeing."
@@ -90,10 +90,10 @@
   {
     "question": "Which sentence is correct?",
     "options": [
-      "She suggested to go home.",
-      "She suggested going home.",
+      "She suggested go home.",
       "She suggested went home.",
-      "She suggested go home."
+      "She suggested to go home.",
+      "She suggested going home."
     ],
     "correct": "She suggested going home.",
     "explanation": "<Suggest> is followed by the gerund: suggested going."
@@ -101,9 +101,9 @@
   {
     "question": "Which sentence is correct?",
     "options": [
-      "He refused help.",
-      "He refused to help.",
       "He refused helping.",
+      "He refused to help.",
+      "He refused help.",
       "He refused helped."
     ],
     "correct": "He refused to help.",
@@ -112,10 +112,10 @@
   {
     "question": "'She can't afford ______ a new phone.' — Choose the correct form.",
     "options": [
-      "buying",
-      "buy",
       "bought",
-      "to buy"
+      "to buy",
+      "buy",
+      "buying"
     ],
     "correct": "to buy",
     "explanation": "<Afford> is always followed by the infinitive: afford to buy."
@@ -123,10 +123,10 @@
   {
     "question": "'He admitted ______ the window.' — Choose the correct form.",
     "options": [
-      "to break",
       "broke",
+      "breaking",
       "break",
-      "breaking"
+      "to break"
     ],
     "correct": "breaking",
     "explanation": "<Admit> is always followed by the gerund: admitted breaking."
@@ -134,10 +134,10 @@
   {
     "question": "Which group of verbs takes the gerund (-ing)?",
     "options": [
-      "decide, agree, refuse",
-      "want, hope, plan",
+      "enjoy, avoid, mind",
       "learn, offer, promise",
-      "enjoy, avoid, mind"
+      "want, hope, plan",
+      "decide, agree, refuse"
     ],
     "correct": "enjoy, avoid, mind",
     "explanation": "<Enjoy>, <avoid>, and <mind> are all followed by the gerund (-ing form)."
@@ -145,10 +145,10 @@
   {
     "question": "Which group of verbs takes the infinitive (to)?",
     "options": [
-      "suggest, consider, deny",
+      "enjoy, avoid, risk",
       "want, decide, hope",
-      "finish, keep, miss",
-      "enjoy, avoid, risk"
+      "suggest, consider, deny",
+      "finish, keep, miss"
     ],
     "correct": "want, decide, hope",
     "explanation": "<Want>, <decide>, and <hope> are all followed by the infinitive (to + verb)."
@@ -157,8 +157,8 @@
     "question": "'I'm tired of ______ the same thing every day.' — Choose the correct form.",
     "options": [
       "did",
-      "to do",
       "do",
+      "to do",
       "doing"
     ],
     "correct": "doing",
@@ -167,9 +167,9 @@
   {
     "question": "'She offered ______ dinner for everyone.' — Choose the correct form.",
     "options": [
-      "cooking",
       "cook",
       "cooked",
+      "cooking",
       "to cook"
     ],
     "correct": "to cook",
@@ -178,10 +178,10 @@
   {
     "question": "'He keeps ______ about his holiday.' — Choose the correct form.",
     "options": [
-      "talked",
       "talk",
-      "talking",
-      "to talk"
+      "to talk",
+      "talked",
+      "talking"
     ],
     "correct": "talking",
     "explanation": "<Keep> is always followed by the gerund: keeps talking."
@@ -189,10 +189,10 @@
   {
     "question": "With verbs like 'like', 'love', 'hate', we can use:",
     "options": [
-      "only the infinitive",
+      "only the gerund",
       "only the base form",
       "both gerund and infinitive",
-      "only the gerund"
+      "only the infinitive"
     ],
     "correct": "both gerund and infinitive",
     "explanation": "Verbs like <like>, <love>, <hate> accept both forms: I like swimming / I like to swim."
@@ -201,9 +201,9 @@
     "question": "'We managed ______ the project on time.' — Choose the correct form.",
     "options": [
       "finished",
-      "to finish",
+      "finishing",
       "finish",
-      "finishing"
+      "to finish"
     ],
     "correct": "to finish",
     "explanation": "<Manage> is always followed by the infinitive: managed to finish."
@@ -211,10 +211,10 @@
   {
     "question": "'She postponed ______ her decision.' — Choose the correct form.",
     "options": [
-      "made",
       "making",
-      "to make",
-      "make"
+      "made",
+      "make",
+      "to make"
     ],
     "correct": "making",
     "explanation": "<Postpone> is always followed by the gerund: postponed making."

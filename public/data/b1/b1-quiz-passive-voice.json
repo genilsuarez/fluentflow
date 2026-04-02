@@ -2,10 +2,10 @@
   {
     "question": "The book ______ by millions of people.",
     "options": [
-      "read",
-      "reads",
       "is read",
-      "is reading"
+      "reads",
+      "is reading",
+      "read"
     ],
     "correct": "is read",
     "explanation": "Present simple passive: is/are + past participle"
@@ -13,10 +13,10 @@
   {
     "question": "The house ______ in 1920.",
     "options": [
-      "is built",
+      "built",
       "was built",
-      "builds",
-      "built"
+      "is built",
+      "builds"
     ],
     "correct": "was built",
     "explanation": "Past simple passive: was/were + past participle"
@@ -25,8 +25,8 @@
     "question": "English ______ all over the world.",
     "options": [
       "is speaking",
-      "speaks",
       "spoke",
+      "speaks",
       "is spoken"
     ],
     "correct": "is spoken",
@@ -35,9 +35,9 @@
   {
     "question": "The letter ______ yesterday.",
     "options": [
-      "was sent",
-      "sent",
       "sends",
+      "sent",
+      "was sent",
       "is sent"
     ],
     "correct": "was sent",
@@ -46,10 +46,10 @@
   {
     "question": "The car ______ right now.",
     "options": [
-      "repairs",
-      "was repaired",
+      "is repairing",
       "is being repaired",
-      "is repairing"
+      "was repaired",
+      "repairs"
     ],
     "correct": "is being repaired",
     "explanation": "Present continuous passive: is/are being + past participle"
@@ -57,10 +57,10 @@
   {
     "question": "The project ______ by next week.",
     "options": [
-      "is finished",
+      "will be finished",
       "finishes",
-      "will finish",
-      "will be finished"
+      "is finished",
+      "will finish"
     ],
     "correct": "will be finished",
     "explanation": "Future simple passive: will be + past participle"
@@ -68,9 +68,9 @@
   {
     "question": "The cake ______ by my mother.",
     "options": [
-      "made",
-      "was made",
       "makes",
+      "was made",
+      "made",
       "is making"
     ],
     "correct": "was made",
@@ -80,8 +80,8 @@
     "question": "The windows ______ every week.",
     "options": [
       "are cleaned",
-      "clean",
       "is cleaned",
+      "clean",
       "cleaned"
     ],
     "correct": "are cleaned",
@@ -90,9 +90,9 @@
   {
     "question": "The movie ______ in 2010.",
     "options": [
+      "releases",
       "was released",
       "released",
-      "releases",
       "is released"
     ],
     "correct": "was released",
@@ -101,10 +101,10 @@
   {
     "question": "The problem ______ soon.",
     "options": [
-      "solves",
-      "is solving",
       "will solve",
-      "will be solved"
+      "will be solved",
+      "is solving",
+      "solves"
     ],
     "correct": "will be solved",
     "explanation": "Future passive for predictions"
@@ -112,10 +112,10 @@
   {
     "question": "The documents ______ at the moment.",
     "options": [
-      "check",
+      "are checking",
       "checked",
-      "are being checked",
-      "are checking"
+      "check",
+      "are being checked"
     ],
     "correct": "are being checked",
     "explanation": "Present continuous passive for actions in progress"
@@ -124,8 +124,8 @@
     "question": "The bridge ______ last year.",
     "options": [
       "was destroyed",
-      "destroys",
       "is destroyed",
+      "destroys",
       "destroyed"
     ],
     "correct": "was destroyed",
@@ -134,10 +134,10 @@
   {
     "question": "The email ______ to all employees.",
     "options": [
-      "is sending",
-      "sent",
       "was sent",
-      "sends"
+      "sends",
+      "is sending",
+      "sent"
     ],
     "correct": "was sent",
     "explanation": "Past simple passive with indirect object"
@@ -145,10 +145,10 @@
   {
     "question": "The new policy ______ next month.",
     "options": [
-      "will be introduced",
       "is introducing",
+      "will introduce",
       "introduces",
-      "will introduce"
+      "will be introduced"
     ],
     "correct": "will be introduced",
     "explanation": "Future passive for scheduled events"
@@ -156,10 +156,10 @@
   {
     "question": "The song ______ by everyone at the party.",
     "options": [
-      "was sung",
-      "sang",
+      "sings",
       "is singing",
-      "sings"
+      "was sung",
+      "sang"
     ],
     "correct": "was sung",
     "explanation": "Past simple passive with 'by' phrase"
@@ -169,8 +169,8 @@
     "options": [
       "writes",
       "is being written",
-      "was written",
-      "is writing"
+      "is writing",
+      "was written"
     ],
     "correct": "is being written",
     "explanation": "Present continuous passive for current actions"
@@ -178,9 +178,9 @@
   {
     "question": "The building ______ in the earthquake.",
     "options": [
+      "was damaged",
       "is damaging",
       "damages",
-      "was damaged",
       "damaged"
     ],
     "correct": "was damaged",
@@ -189,10 +189,10 @@
   {
     "question": "The package ______ tomorrow.",
     "options": [
-      "will deliver",
       "delivers",
-      "will be delivered",
-      "is delivering"
+      "is delivering",
+      "will deliver",
+      "will be delivered"
     ],
     "correct": "will be delivered",
     "explanation": "Future passive for future actions"
@@ -200,10 +200,10 @@
   {
     "question": "The room ______ when I arrived.",
     "options": [
-      "cleaned",
-      "is cleaned",
       "cleans",
-      "was being cleaned"
+      "was being cleaned",
+      "cleaned",
+      "is cleaned"
     ],
     "correct": "was being cleaned",
     "explanation": "Past continuous passive: was/were being + past participle"
@@ -212,9 +212,9 @@
     "question": "The decision ______ by the committee.",
     "options": [
       "is making",
-      "made",
       "was made",
-      "makes"
+      "makes",
+      "made"
     ],
     "correct": "was made",
     "explanation": "Past simple passive with agent"

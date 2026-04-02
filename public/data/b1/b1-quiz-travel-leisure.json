@@ -2,10 +2,10 @@
   {
     "question": "What is a <round-trip ticket>?",
     "options": [
-      "a free ticket",
-      "a circular ticket",
+      "a ticket for one direction",
       "a ticket to go and return",
-      "a ticket for one direction"
+      "a circular ticket",
+      "a free ticket"
     ],
     "correct": "a ticket to go and return",
     "explanation": "A <round-trip ticket> allows you to travel to a destination and return."
@@ -13,10 +13,10 @@
   {
     "question": "Where do you <check in> at an airport?",
     "options": [
+      "at the check-in counter",
       "at customs",
       "at the gate",
-      "on the plane",
-      "at the check-in counter"
+      "on the plane"
     ],
     "correct": "at the check-in counter",
     "explanation": "You check in <at the check-in counter> to get your boarding pass."
@@ -24,10 +24,10 @@
   {
     "question": "What does <boarding pass> mean?",
     "options": [
-      "a ticket to board the plane",
-      "a passport",
       "luggage tag",
-      "a visa"
+      "a visa",
+      "a ticket to board the plane",
+      "a passport"
     ],
     "correct": "a ticket to board the plane",
     "explanation": "A <boarding pass> is the document that allows you to board your flight."
@@ -35,9 +35,9 @@
   {
     "question": "What is <carry-on luggage>?",
     "options": [
-      "luggage you carry on the plane",
       "heavy luggage",
       "luggage you check in",
+      "luggage you carry on the plane",
       "lost luggage"
     ],
     "correct": "luggage you carry on the plane",
@@ -46,10 +46,10 @@
   {
     "question": "Where do you go through <customs>?",
     "options": [
+      "at the restaurant",
       "at the hotel",
-      "at the beach",
       "when entering a country",
-      "at the restaurant"
+      "at the beach"
     ],
     "correct": "when entering a country",
     "explanation": "<Customs> is where officials check what you're bringing into a country."
@@ -58,8 +58,8 @@
     "question": "What does <all-inclusive> mean for a hotel?",
     "options": [
       "only breakfast included",
-      "only dinner included",
       "no meals included",
+      "only dinner included",
       "all meals and drinks included"
     ],
     "correct": "all meals and drinks included",
@@ -69,9 +69,9 @@
     "question": "What is a <layover>?",
     "options": [
       "cancelled flight",
-      "delayed flight",
       "direct flight, overall speaking",
-      "stop between flights"
+      "stop between flights",
+      "delayed flight"
     ],
     "correct": "stop between flights",
     "explanation": "A <layover> is a stop at an intermediate airport before reaching your final destination."
@@ -79,10 +79,10 @@
   {
     "question": "What does <book a room> mean?",
     "options": [
-      "clean a room",
       "leave a room",
+      "read in a room",
       "reserve a room",
-      "read in a room"
+      "clean a room"
     ],
     "correct": "reserve a room",
     "explanation": "Booking a room means to reserve accommodation in advance."
@@ -90,10 +90,10 @@
   {
     "question": "What is <jet lag>?",
     "options": [
-      "lost luggage",
-      "fear of flying",
+      "missing a flight",
       "tiredness from time zone changes",
-      "missing a flight"
+      "lost luggage",
+      "fear of flying"
     ],
     "correct": "tiredness from time zone changes",
     "explanation": "<Jet lag> is fatigue caused by traveling across different time zones."
@@ -102,9 +102,9 @@
     "question": "Where do you find <tourist attractions>?",
     "options": [
       "at the airport",
-      "in offices",
+      "at home",
       "in popular destinations",
-      "at home"
+      "in offices"
     ],
     "correct": "in popular destinations",
     "explanation": "<Tourist attractions> are interesting places that visitors want to see."
@@ -112,10 +112,10 @@
   {
     "question": "What does <off-season> mean?",
     "options": [
-      "holiday season",
+      "when fewer tourists visit",
       "summer time",
-      "peak tourist time",
-      "when fewer tourists visit"
+      "holiday season",
+      "peak tourist time"
     ],
     "correct": "when fewer tourists visit",
     "explanation": "<Off-season> is the time of year when there are fewer tourists and lower prices."
@@ -124,8 +124,8 @@
     "question": "What is a <guided tour>?",
     "options": [
       "tour alone",
-      "virtual tour",
       "cancelled tour",
+      "virtual tour",
       "tour with a guide"
     ],
     "correct": "tour with a guide",
@@ -134,9 +134,9 @@
   {
     "question": "What does <check out> mean at a hotel?",
     "options": [
-      "complain",
       "arrive at hotel",
       "book a room",
+      "complain",
       "leave the hotel"
     ],
     "correct": "leave the hotel",
@@ -145,10 +145,10 @@
   {
     "question": "What is <backpacking>?",
     "options": [
+      "luxury travel",
       "budget travel with a backpack",
-      "business travel",
       "cruise travel",
-      "luxury travel"
+      "business travel"
     ],
     "correct": "budget travel with a backpack",
     "explanation": "<Backpacking> is traveling cheaply, often staying in hostels and carrying your belongings in a backpack."
@@ -156,10 +156,10 @@
   {
     "question": "What does <sightseeing> mean?",
     "options": [
-      "visiting tourist attractions",
-      "shopping",
+      "sleeping",
       "eating",
-      "sleeping"
+      "shopping",
+      "visiting tourist attractions"
     ],
     "correct": "visiting tourist attractions",
     "explanation": "<Sightseeing> is the activity of visiting interesting places as a tourist."
@@ -167,9 +167,9 @@
   {
     "question": "What is a <souvenir>?",
     "options": [
-      "a memory item from a trip",
-      "a map",
       "a passport",
+      "a map",
+      "a memory item from a trip",
       "a ticket"
     ],
     "correct": "a memory item from a trip",
@@ -178,10 +178,10 @@
   {
     "question": "What does <fully booked> mean?",
     "options": [
+      "expensive",
       "no rooms available",
       "cheap",
-      "empty",
-      "expensive"
+      "empty"
     ],
     "correct": "no rooms available",
     "explanation": "<Fully booked> means all rooms or seats are reserved."
@@ -189,10 +189,10 @@
   {
     "question": "What is a <travel itinerary>?",
     "options": [
-      "a passport",
       "a suitcase",
-      "a planned route or schedule",
-      "a ticket"
+      "a passport",
+      "a ticket",
+      "a planned route or schedule"
     ],
     "correct": "a planned route or schedule",
     "explanation": "An itinerary is a detailed plan of your trip including dates and places."
@@ -200,10 +200,10 @@
   {
     "question": "What does <duty-free> mean?",
     "options": [
-      "free items",
-      "used items",
       "expensive items",
-      "items without tax"
+      "items without tax",
+      "free items",
+      "used items"
     ],
     "correct": "items without tax",
     "explanation": "<Duty-free> means goods sold without local taxes, usually at airports."
@@ -211,10 +211,10 @@
   {
     "question": "What is a <package tour>?",
     "options": [
+      "solo travel",
       "sending a package",
-      "business trip",
       "organized trip with everything included",
-      "solo travel"
+      "business trip"
     ],
     "correct": "organized trip with everything included",
     "explanation": "A <package tour> includes transportation, accommodation, and activities in one price."

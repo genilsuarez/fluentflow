@@ -2,10 +2,10 @@
   {
     "question": "I need to ______ early tomorrow.",
     "options": [
-      "wake up",
-      "wake down",
+      "wake in",
       "wake out",
-      "wake in"
+      "wake down",
+      "wake up"
     ],
     "correct": "wake up",
     "explanation": "<Wake up> means to stop sleeping and become awake."
@@ -13,9 +13,9 @@
   {
     "question": "Please ______ the TV. It's too loud.",
     "options": [
-      "turn at",
       "turn up",
       "turn in",
+      "turn at",
       "turn down"
     ],
     "correct": "turn down",
@@ -35,8 +35,8 @@
   {
     "question": "I ______ at 7 AM every day.",
     "options": [
-      "get at",
       "get down",
+      "get at",
       "get in",
       "get up"
     ],
@@ -46,10 +46,10 @@
   {
     "question": "Please ______ your shoes before entering.",
     "options": [
-      "take up",
-      "take off",
+      "take on",
       "take down",
-      "take on"
+      "take up",
+      "take off"
     ],
     "correct": "take off",
     "explanation": "<Take off> means to remove clothing or shoes."
@@ -57,10 +57,10 @@
   {
     "question": "I need to ______ my homework.",
     "options": [
-      "hand in",
-      "hand up",
+      "give in",
       "give up",
-      "give in"
+      "hand up",
+      "hand in"
     ],
     "correct": "hand in",
     "explanation": "<Hand in> means to submit or deliver something."
@@ -68,10 +68,10 @@
   {
     "question": "Let's ______ the meeting until tomorrow.",
     "options": [
-      "put up",
       "put down",
+      "put off",
       "put on",
-      "put off"
+      "put up"
     ],
     "correct": "put off",
     "explanation": "<Put off> means to postpone or delay."
@@ -79,10 +79,10 @@
   {
     "question": "Can you ______ the lights, please?",
     "options": [
-      "turn off",
+      "turn up",
       "turn down",
       "turn at",
-      "turn up"
+      "turn off"
     ],
     "correct": "turn off",
     "explanation": "<Turn off> means to stop a device from operating."
@@ -90,10 +90,10 @@
   {
     "question": "I ______ my old friend yesterday.",
     "options": [
-      "ran into",
       "ran off",
-      "ran up",
-      "ran down"
+      "ran into",
+      "ran down",
+      "ran up"
     ],
     "correct": "ran into",
     "explanation": "Run into means to meet someone by chance. <Ran into> is the past simple form of <Run into>."
@@ -101,10 +101,10 @@
   {
     "question": "Please ______ the form.",
     "options": [
-      "fill down",
-      "fill in",
       "fill up",
-      "fill at"
+      "fill down",
+      "fill at",
+      "fill in"
     ],
     "correct": "fill in",
     "explanation": "<Fill in> means to complete a form with information."
@@ -112,10 +112,10 @@
   {
     "question": "I need to ______ some money from the bank.",
     "options": [
-      "take down",
-      "take in",
       "take out",
-      "take up"
+      "take up",
+      "take down",
+      "take in"
     ],
     "correct": "take out",
     "explanation": "<Take out> means to withdraw money."
@@ -124,9 +124,9 @@
     "question": "Let's ______ this problem together.",
     "options": [
       "work down",
+      "work in",
       "work up",
-      "work out",
-      "work in"
+      "work out"
     ],
     "correct": "work out",
     "explanation": "<Work out> means to solve or resolve."
@@ -134,10 +134,10 @@
   {
     "question": "I ______ my jacket because it was cold.",
     "options": [
-      "put off",
+      "put up",
       "put on",
-      "put down",
-      "put up"
+      "put off",
+      "put down"
     ],
     "correct": "put on",
     "explanation": "<Put on> means to dress yourself in clothing."
@@ -145,8 +145,8 @@
   {
     "question": "Can you ______ the music? I can't hear it.",
     "options": [
-      "turn down",
       "turn up",
+      "turn down",
       "turn in",
       "turn off"
     ],
@@ -156,10 +156,10 @@
   {
     "question": "I need to ______ my room.",
     "options": [
-      "clean down",
       "clean up",
+      "clean at",
       "clean in",
-      "clean at"
+      "clean down"
     ],
     "correct": "clean up",
     "explanation": "<Clean up> means to tidy or organize."
@@ -167,9 +167,9 @@
   {
     "question": "Please ______ for a moment.",
     "options": [
-      "sit in",
       "sit up",
       "sit at",
+      "sit in",
       "sit down"
     ],
     "correct": "sit down",
@@ -178,10 +178,10 @@
   {
     "question": "I ______ smoking last year.",
     "options": [
-      "gave in",
-      "gave out",
       "gave off",
-      "gave up"
+      "gave up",
+      "gave in",
+      "gave out"
     ],
     "correct": "gave up",
     "explanation": "Give up means to stop doing something. <Gave up> is the past simple form of <Give up>."
@@ -190,9 +190,9 @@
     "question": "Let's ______ the party at 10 PM.",
     "options": [
       "go out",
-      "go on",
+      "go away",
       "go off",
-      "go away"
+      "go on"
     ],
     "correct": "go away",
     "explanation": "<Go away> means to leave a place."
@@ -200,10 +200,10 @@
   {
     "question": "I need to ______ my email.",
     "options": [
-      "check up",
-      "check in",
       "check on",
-      "check out"
+      "check out",
+      "check in",
+      "check up"
     ],
     "correct": "check out",
     "explanation": "<Check out> means to examine or review."
@@ -212,8 +212,8 @@
     "question": "Please ______ the door when you leave.",
     "options": [
       "close down",
-      "close in",
       "close off",
+      "close in",
       "close up"
     ],
     "correct": "close up",

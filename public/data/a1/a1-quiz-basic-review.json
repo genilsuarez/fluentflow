@@ -2,9 +2,9 @@
   {
     "question": "What is the correct form: 'She _____ to school every day.'",
     "options": [
+      "goes",
       "go",
       "goed",
-      "goes",
       "going"
     ],
     "correct": "goes",
@@ -14,9 +14,9 @@
     "question": "Which article is correct: '_____ apple'?",
     "options": [
       "the",
-      "a",
       "an",
-      "no article"
+      "no article",
+      "a"
     ],
     "correct": "an",
     "explanation": "Use <an> before words starting with a vowel sound: <an apple>."
@@ -24,10 +24,10 @@
   {
     "question": "What is the plural of 'child'?",
     "options": [
-      "childes",
+      "childrens",
       "children",
-      "childs",
-      "childrens"
+      "childes",
+      "childs"
     ],
     "correct": "children",
     "explanation": "<Child> has an irregular plural: <children>."
@@ -35,10 +35,10 @@
   {
     "question": "Which pronoun replaces 'the book'?",
     "options": [
+      "she",
       "it",
-      "he",
       "they",
-      "she"
+      "he"
     ],
     "correct": "it",
     "explanation": "Use <it> for objects and things: <the book> → <it>."
@@ -46,10 +46,10 @@
   {
     "question": "What is the past tense of 'eat'?",
     "options": [
+      "eaten",
       "eating",
       "eated",
-      "ate",
-      "eaten"
+      "ate"
     ],
     "correct": "ate",
     "explanation": "<Eat> is irregular: past simple is <ate>."
@@ -57,10 +57,10 @@
   {
     "question": "Which is correct: 'There _____ three cats.'",
     "options": [
-      "am",
-      "be",
       "are",
-      "is"
+      "is",
+      "be",
+      "am"
     ],
     "correct": "are",
     "explanation": "Use <are> with plural subjects: <There are three cats>."
@@ -68,9 +68,9 @@
   {
     "question": "How do you say 'buenos días' in English?",
     "options": [
+      "Good night",
       "Good evening",
       "Good afternoon",
-      "Good night",
       "Good morning"
     ],
     "correct": "Good morning",
@@ -79,10 +79,10 @@
   {
     "question": "Which definition best matches <nephew>?",
     "options": [
-      "cousin",
+      "son of your brother or sister",
       "uncle",
       "grandfather",
-      "son of your brother or sister"
+      "cousin"
     ],
     "correct": "son of your brother or sister",
     "explanation": "A <nephew> is the son of your brother or sister."
@@ -90,10 +90,10 @@
   {
     "question": "Which word means a place where you cook?",
     "options": [
-      "garden",
-      "bedroom",
       "bathroom",
-      "kitchen"
+      "kitchen",
+      "garden",
+      "bedroom"
     ],
     "correct": "kitchen",
     "explanation": "The <kitchen> is the room where you cook food."
@@ -101,8 +101,8 @@
   {
     "question": "What is the comparative form of 'big'?",
     "options": [
-      "biggest",
       "bigger",
+      "biggest",
       "biger",
       "more big"
     ],
@@ -112,10 +112,10 @@
   {
     "question": "What does the phrasal verb 'wake up' mean?",
     "options": [
-      "to rest",
-      "to go to sleep",
+      "to dream",
       "to stop sleeping",
-      "to dream"
+      "to rest",
+      "to go to sleep"
     ],
     "correct": "to stop sleeping",
     "explanation": "<Wake up> means to stop sleeping and become conscious."
@@ -124,9 +124,9 @@
     "question": "Choose the correct meaning of <turn off>:",
     "options": [
       "to start a device",
-      "to stop a device",
       "to repair",
-      "to buy"
+      "to buy",
+      "to stop a device"
     ],
     "correct": "to stop a device",
     "explanation": "<Turn off> means to stop a device from working."
@@ -134,10 +134,10 @@
   {
     "question": "Which phrasal verb means 'to remove clothing'?",
     "options": [
+      "get up",
       "put on",
       "take off",
-      "sit down",
-      "get up"
+      "sit down"
     ],
     "correct": "take off",
     "explanation": "<Take off> means to remove clothing or shoes."
@@ -145,10 +145,10 @@
   {
     "question": "<give up> — select the right definition:",
     "options": [
-      "to continue",
-      "to stop doing something",
       "to try harder",
-      "to start"
+      "to continue",
+      "to start",
+      "to stop doing something"
     ],
     "correct": "to stop doing something",
     "explanation": "<Give up> means to stop doing something, to quit."
@@ -156,10 +156,10 @@
   {
     "question": "Which phrasal verb means 'to search for information'?",
     "options": [
-      "look after",
-      "look up",
       "look down",
-      "look out"
+      "look out",
+      "look up",
+      "look after"
     ],
     "correct": "look up",
     "explanation": "<Look up> means to search for information in a dictionary or online."
@@ -167,10 +167,10 @@
   {
     "question": "What is the meaning of <pick up>?",
     "options": [
-      "to drop",
-      "to lift from the ground",
       "to push",
-      "to throw"
+      "to lift from the ground",
+      "to throw",
+      "to drop"
     ],
     "correct": "to lift from the ground",
     "explanation": "<Pick up> means to lift something from a surface."
@@ -178,9 +178,9 @@
   {
     "question": "Which option describes <run out of>?",
     "options": [
-      "to buy more",
       "to save",
       "to have plenty",
+      "to buy more",
       "to have none left"
     ],
     "correct": "to have none left",
@@ -189,9 +189,9 @@
   {
     "question": "What does the idiom 'a piece of cake' mean?",
     "options": [
-      "something expensive",
       "a type of dessert",
       "a celebration",
+      "something expensive",
       "something very easy"
     ],
     "correct": "something very easy",
@@ -200,10 +200,10 @@
   {
     "question": "Pick the best definition for <break a leg>:",
     "options": [
-      "to run fast",
       "to be careful",
       "to get injured",
-      "good luck"
+      "good luck",
+      "to run fast"
     ],
     "correct": "good luck",
     "explanation": "<Break a leg> is used to wish someone good luck, especially before a performance."
@@ -211,10 +211,10 @@
   {
     "question": "How would you define <under the weather>?",
     "options": [
-      "very happy",
       "outside in the rain",
+      "feeling sick",
       "confused",
-      "feeling sick"
+      "very happy"
     ],
     "correct": "feeling sick",
     "explanation": "The idiom <under the weather> means feeling ill or unwell."
@@ -222,10 +222,10 @@
   {
     "question": "<raining cats and dogs> is closest in meaning to:",
     "options": [
-      "animals falling",
-      "a sunny day",
+      "light rain",
       "raining very heavily",
-      "light rain"
+      "animals falling",
+      "a sunny day"
     ],
     "correct": "raining very heavily",
     "explanation": "The idiom <raining cats and dogs> means it's raining very heavily."
@@ -235,8 +235,8 @@
     "options": [
       "to buy books",
       "to read for fun",
-      "to throw books",
-      "to study hard"
+      "to study hard",
+      "to throw books"
     ],
     "correct": "to study hard",
     "explanation": "The idiom <hit the books> means to study intensively."
@@ -244,10 +244,10 @@
   {
     "question": "The term <let the cat out of the bag> refers to:",
     "options": [
-      "to free an animal",
       "to make a mistake",
+      "to be surprised",
       "to reveal a secret",
-      "to be surprised"
+      "to free an animal"
     ],
     "correct": "to reveal a secret",
     "explanation": "The idiom <let the cat out of the bag> means to reveal a secret accidentally."
@@ -255,10 +255,10 @@
   {
     "question": "What suffix do we add to 'teach' to make a person who teaches?",
     "options": [
-      "-ful",
+      "-er",
       "-ness",
       "-tion",
-      "-er"
+      "-ful"
     ],
     "correct": "-er",
     "explanation": "Adding <-er> to <teach> forms <teacher> — a person who teaches."
@@ -267,9 +267,9 @@
     "question": "What does the prefix 'un-' mean in 'unhappy'?",
     "options": [
       "very",
+      "again",
       "not",
-      "before",
-      "again"
+      "before"
     ],
     "correct": "not",
     "explanation": "The prefix <un-> means 'not': <unhappy> = not happy."
@@ -277,10 +277,10 @@
   {
     "question": "Which word means 'full of beauty'?",
     "options": [
+      "beautiful",
       "beautiless",
       "beautyful",
-      "beautiness",
-      "beautiful"
+      "beautiness"
     ],
     "correct": "beautiful",
     "explanation": "Adding <-ful> to <beauty> (changing y to i) forms <beautiful>."
@@ -288,10 +288,10 @@
   {
     "question": "What is the negative of 'She likes coffee'?",
     "options": [
-      "She no like coffee",
-      "She don't like coffee",
       "She not likes coffee",
-      "She doesn't like coffee"
+      "She doesn't like coffee",
+      "She don't like coffee",
+      "She no like coffee"
     ],
     "correct": "She doesn't like coffee",
     "explanation": "Negative with she/he: <doesn't> + base form: <She doesn't like>."
@@ -299,10 +299,10 @@
   {
     "question": "Transform to a question: 'They play football.'",
     "options": [
-      "Are they play football?",
       "Does they play football?",
-      "Do they play football?",
-      "They do play football?"
+      "Are they play football?",
+      "They do play football?",
+      "Do they play football?"
     ],
     "correct": "Do they play football?",
     "explanation": "Question with they: <Do> + subject + base form: <Do they play?>."
@@ -310,10 +310,10 @@
   {
     "question": "What is the past simple of 'go'?",
     "options": [
-      "gone",
-      "goed",
+      "going",
       "went",
-      "going"
+      "goed",
+      "gone"
     ],
     "correct": "went",
     "explanation": "<Go> is irregular: past simple is <went>."
@@ -322,9 +322,9 @@
     "question": "Transform to past: 'She writes a letter.'",
     "options": [
       "She written a letter",
-      "She writing a letter",
       "She wrote a letter",
-      "She writed a letter"
+      "She writed a letter",
+      "She writing a letter"
     ],
     "correct": "She wrote a letter",
     "explanation": "<Write> is irregular: past simple is <wrote>."
@@ -332,10 +332,10 @@
   {
     "question": "Which sentence is correct?",
     "options": [
-      "He don't like fish",
       "He doesn't like fish",
       "He not like fish",
-      "He doesn't likes fish"
+      "He doesn't likes fish",
+      "He don't like fish"
     ],
     "correct": "He doesn't like fish",
     "explanation": "Correct negative: <doesn't> + base form (no -s on the verb)."
@@ -344,9 +344,9 @@
     "question": "Find the error: 'She have a cat.'",
     "options": [
       "She haves a cat",
+      "She having a cat",
       "She has a cat",
-      "No error",
-      "She having a cat"
+      "No error"
     ],
     "correct": "She has a cat",
     "explanation": "Third person singular uses <has>, not <have>: <She has a cat>."
@@ -354,10 +354,10 @@
   {
     "question": "Find the error: 'I goed to the park.'",
     "options": [
-      "I went to the park",
+      "No error",
       "I going to the park",
-      "I go to the park",
-      "No error"
+      "I went to the park",
+      "I go to the park"
     ],
     "correct": "I went to the park",
     "explanation": "<Go> is irregular: past tense is <went>, not <goed>."
@@ -365,10 +365,10 @@
   {
     "question": "Which is correct?",
     "options": [
-      "an umbrella",
-      "the umbrella always",
+      "a umbrella",
       "umbrella a",
-      "a umbrella"
+      "the umbrella always",
+      "an umbrella"
     ],
     "correct": "an umbrella",
     "explanation": "Use <an> before vowel sounds: <an umbrella>."
@@ -376,10 +376,10 @@
   {
     "question": "What suffix makes 'care' mean 'without care'?",
     "options": [
-      "-er",
-      "-less",
       "-ness",
-      "-ful"
+      "-er",
+      "-ful",
+      "-less"
     ],
     "correct": "-less",
     "explanation": "The suffix <-less> means 'without': <careless> = without care."
@@ -388,9 +388,9 @@
     "question": "A person who plays music is a ______.",
     "options": [
       "musicker",
-      "musician",
+      "musicer",
       "musicist",
-      "musicer"
+      "musician"
     ],
     "correct": "musician",
     "explanation": "Adding <-ian> to <music> forms <musician>."
@@ -399,8 +399,8 @@
     "question": "Which word means 'a person who acts'?",
     "options": [
       "actor",
-      "actist",
       "acting",
+      "actist",
       "acter"
     ],
     "correct": "actor",
@@ -409,10 +409,10 @@
   {
     "question": "Which definition best matches <get up>?",
     "options": [
-      "to sit",
-      "to rise from bed",
       "to fall down",
-      "to go to bed"
+      "to rise from bed",
+      "to go to bed",
+      "to sit"
     ],
     "correct": "to rise from bed",
     "explanation": "<Get up> means to rise from bed, to stand up."
@@ -422,8 +422,8 @@
     "options": [
       "Happy always she is",
       "She always is happy",
-      "Always she is happy",
-      "She is always happy"
+      "She is always happy",
+      "Always she is happy"
     ],
     "correct": "She is always happy",
     "explanation": "Adverbs of frequency go after <be>: <She is always happy>."
@@ -431,10 +431,10 @@
   {
     "question": "What time expression means 'the day before today'?",
     "options": [
-      "next week",
-      "yesterday",
       "tomorrow",
-      "today"
+      "yesterday",
+      "today",
+      "next week"
     ],
     "correct": "yesterday",
     "explanation": "<Yesterday> means the day before today."

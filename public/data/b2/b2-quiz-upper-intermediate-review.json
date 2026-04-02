@@ -3,9 +3,9 @@
     "question": "Choose the correct form: 'I _____ play the piano when I was a child.'",
     "options": [
       "use to",
-      "am used to",
+      "was used to",
       "used to",
-      "was used to"
+      "am used to"
     ],
     "correct": "used to",
     "explanation": "<Used to> + base form describes past habits that no longer happen."
@@ -13,10 +13,10 @@
   {
     "question": "Which sentence uses 'used to' correctly?",
     "options": [
+      "She use to live in Paris",
       "She used to live in Paris",
-      "She used to living in Paris",
       "She is used to live in Paris",
-      "She use to live in Paris"
+      "She used to living in Paris"
     ],
     "correct": "She used to live in Paris",
     "explanation": "<Used to> + base form for past states: <She used to live in Paris>."
@@ -26,8 +26,8 @@
     "options": [
       "would have passed",
       "would pass",
-      "will have passed",
-      "had passed"
+      "had passed",
+      "will have passed"
     ],
     "correct": "would have passed",
     "explanation": "Third conditional: <If> + past perfect, <would have> + past participle."
@@ -35,9 +35,9 @@
   {
     "question": "Which sentence with 'wish' is correct?",
     "options": [
-      "I wish I will fly",
-      "I wish I could fly",
       "I wish I am flying",
+      "I wish I could fly",
+      "I wish I will fly",
       "I wish I can fly"
     ],
     "correct": "I wish I could fly",
@@ -46,10 +46,10 @@
   {
     "question": "Complete: 'If only I _____ more time to prepare.'",
     "options": [
+      "had",
       "am having",
-      "have",
       "will have",
-      "had"
+      "have"
     ],
     "correct": "had",
     "explanation": "<If only> + past simple expresses regret about the present: <If only I had>."
@@ -57,10 +57,10 @@
   {
     "question": "Which passive construction is correct? 'The report is believed _____ accurate.'",
     "options": [
-      "being",
-      "was",
+      "to be",
       "is",
-      "to be"
+      "was",
+      "being"
     ],
     "correct": "to be",
     "explanation": "Impersonal passive: subject + <is believed to be> + complement."
@@ -68,10 +68,10 @@
   {
     "question": "Choose the correct causative: 'She _____ her hair cut yesterday.'",
     "options": [
-      "had",
       "made",
-      "got to",
-      "has"
+      "has",
+      "had",
+      "got to"
     ],
     "correct": "had",
     "explanation": "Causative <have>: <had> + object + past participle: <had her hair cut>."
@@ -80,9 +80,9 @@
     "question": "Which causative sentence is correct?",
     "options": [
       "I got my car repair",
-      "I got my car repairing",
       "I got my car repaired",
-      "I got repaired my car"
+      "I got repaired my car",
+      "I got my car repairing"
     ],
     "correct": "I got my car repaired",
     "explanation": "Causative <get>: <got> + object + past participle: <got my car repaired>."
@@ -90,9 +90,9 @@
   {
     "question": "Choose the correct connector: 'She passed the exam _____ she hadn't studied much.'",
     "options": [
+      "although",
       "therefore",
       "because",
-      "although",
       "so"
     ],
     "correct": "although",
@@ -102,9 +102,9 @@
     "question": "Which connector is correct: '_____ the rain, the match continued.'",
     "options": [
       "However",
-      "Because of",
       "Although",
-      "Despite"
+      "Despite",
+      "Because of"
     ],
     "correct": "Despite",
     "explanation": "<Despite> + noun phrase: <Despite the rain> (no clause follows)."
@@ -112,10 +112,10 @@
   {
     "question": "Choose the correct meaning of <make a commitment>:",
     "options": [
+      "to change your mind",
       "to break a promise",
       "to avoid responsibility",
-      "to dedicate yourself to something",
-      "to change your mind"
+      "to dedicate yourself to something"
     ],
     "correct": "to dedicate yourself to something",
     "explanation": "The collocation <make a commitment> means to pledge or dedicate yourself."
@@ -124,8 +124,8 @@
     "question": "Which collocation is correct?",
     "options": [
       "do a mistake",
-      "have a mistake",
       "take a mistake",
+      "have a mistake",
       "make a mistake"
     ],
     "correct": "make a mistake",
@@ -134,10 +134,10 @@
   {
     "question": "What does 'sustainable' mean in an IELTS context?",
     "options": [
-      "modern",
-      "temporary",
+      "able to be maintained over time",
       "expensive",
-      "able to be maintained over time"
+      "temporary",
+      "modern"
     ],
     "correct": "able to be maintained over time",
     "explanation": "<Sustainable> means able to continue or be maintained at a certain level over time."
@@ -156,10 +156,10 @@
   {
     "question": "What does the phrasal verb 'turn down' mean?",
     "options": [
-      "to arrive",
-      "to increase volume",
+      "to turn around",
       "to reject or refuse",
-      "to turn around"
+      "to increase volume",
+      "to arrive"
     ],
     "correct": "to reject or refuse",
     "explanation": "<Turn down> means to reject an offer or request."
@@ -167,10 +167,10 @@
   {
     "question": "<iron out> — select the right definition:",
     "options": [
-      "to resolve problems or difficulties",
-      "to remove metal",
       "to flatten paper",
-      "to press clothes"
+      "to remove metal",
+      "to press clothes",
+      "to resolve problems or difficulties"
     ],
     "correct": "to resolve problems or difficulties",
     "explanation": "<Iron out> means to resolve or eliminate problems and difficulties."
@@ -178,10 +178,10 @@
   {
     "question": "What is the meaning of <phase out>?",
     "options": [
-      "to gradually stop using something",
       "to introduce suddenly",
-      "to start a new phase",
-      "to speed up"
+      "to gradually stop using something",
+      "to speed up",
+      "to start a new phase"
     ],
     "correct": "to gradually stop using something",
     "explanation": "<Phase out> means to gradually discontinue or withdraw something."
@@ -190,9 +190,9 @@
     "question": "Which option describes <come across>?",
     "options": [
       "to be angry",
-      "to cross a road",
       "to communicate clearly",
-      "to find or encounter by chance"
+      "to find or encounter by chance",
+      "to cross a road"
     ],
     "correct": "to find or encounter by chance",
     "explanation": "<Come across> means to find something or someone unexpectedly."
@@ -200,10 +200,10 @@
   {
     "question": "Pick the best definition for <rule out>:",
     "options": [
-      "to govern",
       "to include",
+      "to draw a line",
       "to exclude or eliminate as a possibility",
-      "to draw a line"
+      "to govern"
     ],
     "correct": "to exclude or eliminate as a possibility",
     "explanation": "<Rule out> means to exclude something as a possibility."
@@ -211,9 +211,9 @@
   {
     "question": "How would you define <fall through>?",
     "options": [
-      "to succeed unexpectedly",
-      "to fall down",
       "to fail to happen as planned",
+      "to fall down",
+      "to succeed unexpectedly",
       "to pass through"
     ],
     "correct": "to fail to happen as planned",
@@ -233,9 +233,9 @@
   {
     "question": "<barking up the wrong tree> is closest in meaning to:",
     "options": [
-      "pursuing a mistaken course of action",
       "a dog making noise",
       "being lost in a forest",
+      "pursuing a mistaken course of action",
       "climbing a tree"
     ],
     "correct": "pursuing a mistaken course of action",
@@ -244,10 +244,10 @@
   {
     "question": "Select what <the ball is in your court> means:",
     "options": [
+      "the situation is unfair",
       "it's your turn to make a decision",
       "playing tennis",
-      "you lost the game",
-      "the situation is unfair"
+      "you lost the game"
     ],
     "correct": "it's your turn to make a decision",
     "explanation": "<The ball is in your court> means it's your responsibility to act next."
@@ -255,10 +255,10 @@
   {
     "question": "The term <sit on the fence> refers to:",
     "options": [
-      "to avoid making a decision",
-      "to watch a game",
       "to be comfortable",
-      "to rest outdoors"
+      "to avoid making a decision",
+      "to rest outdoors",
+      "to watch a game"
     ],
     "correct": "to avoid making a decision",
     "explanation": "<Sit on the fence> means to remain neutral and not take sides."
@@ -266,10 +266,10 @@
   {
     "question": "Which definition best matches <cut corners>?",
     "options": [
-      "to drive carefully",
       "to save time wisely",
+      "to use scissors",
       "to do something in the cheapest or easiest way",
-      "to use scissors"
+      "to drive carefully"
     ],
     "correct": "to do something in the cheapest or easiest way",
     "explanation": "<Cut corners> means to do something poorly to save time or money."
@@ -278,8 +278,8 @@
     "question": "Transform to a cleft sentence: 'John broke the window.'",
     "options": [
       "The window was broken it was John",
-      "It was John who broke the window",
       "Who broke the window was John",
+      "It was John who broke the window",
       "John it was who broke the window"
     ],
     "correct": "It was John who broke the window",
@@ -288,10 +288,10 @@
   {
     "question": "Transform using 'wish': 'I don't speak Japanese.'",
     "options": [
-      "I wish I speaking Japanese",
-      "I wish I speak Japanese",
       "I wish I spoke Japanese",
-      "I wish I will speak Japanese"
+      "I wish I will speak Japanese",
+      "I wish I speak Japanese",
+      "I wish I speaking Japanese"
     ],
     "correct": "I wish I spoke Japanese",
     "explanation": "<Wish> + past simple for unreal present: <I wish I spoke Japanese>."
@@ -299,10 +299,10 @@
   {
     "question": "Transform to third conditional: 'I didn't bring an umbrella. I got wet.'",
     "options": [
-      "If I would bring an umbrella, I didn't get wet",
       "If I had brought an umbrella, I wouldn't have got wet",
-      "If I brought an umbrella, I wouldn't get wet",
-      "If I bring an umbrella, I won't get wet"
+      "If I would bring an umbrella, I didn't get wet",
+      "If I bring an umbrella, I won't get wet",
+      "If I brought an umbrella, I wouldn't get wet"
     ],
     "correct": "If I had brought an umbrella, I wouldn't have got wet",
     "explanation": "Third conditional: <If> + past perfect, <would have> + past participle."
@@ -310,10 +310,10 @@
   {
     "question": "Transform to passive with reporting verb: 'People say he is a genius.'",
     "options": [
-      "He is said to be a genius",
-      "He was said being a genius",
+      "He is saying to be a genius",
       "He said to be a genius",
-      "He is saying to be a genius"
+      "He was said being a genius",
+      "He is said to be a genius"
     ],
     "correct": "He is said to be a genius",
     "explanation": "Impersonal passive: <He is said to be> a genius."
@@ -322,9 +322,9 @@
     "question": "Transform using causative: 'A mechanic fixed my car.'",
     "options": [
       "I have my car fix",
+      "I had my car fixed",
       "I had fixed my car",
-      "My car had fixed",
-      "I had my car fixed"
+      "My car had fixed"
     ],
     "correct": "I had my car fixed",
     "explanation": "Causative: <had> + object + past participle: <I had my car fixed>."
@@ -333,9 +333,9 @@
     "question": "What is the adjective form of 'success' with a suffix?",
     "options": [
       "successful",
-      "successive",
       "succeed",
-      "succession"
+      "succession",
+      "successive"
     ],
     "correct": "successful",
     "explanation": "Adding <-ful> to <success> forms the adjective <successful>."
@@ -343,10 +343,10 @@
   {
     "question": "What is the negative form of 'possible' using a prefix?",
     "options": [
-      "dispossible",
-      "unpossible",
       "impossible",
-      "inpossible"
+      "inpossible",
+      "dispossible",
+      "unpossible"
     ],
     "correct": "impossible",
     "explanation": "The prefix <im-> before <p> and <m>: <possible> → <impossible>."
@@ -354,10 +354,10 @@
   {
     "question": "Which prefix makes 'legal' negative?",
     "options": [
-      "in-",
       "dis-",
-      "il-",
-      "un-"
+      "un-",
+      "in-",
+      "il-"
     ],
     "correct": "il-",
     "explanation": "Before <l>, use the prefix <il->: <legal> → <illegal>."
@@ -365,10 +365,10 @@
   {
     "question": "Form a noun from 'responsible' using a suffix.",
     "options": [
-      "responsibilize",
+      "responsiblement",
       "responsibleness",
-      "responsibility",
-      "responsiblement"
+      "responsibilize",
+      "responsibility"
     ],
     "correct": "responsibility",
     "explanation": "Change <-ble> to <-bility>: <responsible> → <responsibility>."
@@ -376,9 +376,9 @@
   {
     "question": "Find the error: 'If I would have known, I would have helped.'",
     "options": [
+      "If I have known, I would have helped",
       "If I had known, I would have helped",
       "No error",
-      "If I have known, I would have helped",
       "If I knew, I would have helped"
     ],
     "correct": "If I had known, I would have helped",
@@ -409,10 +409,10 @@
   {
     "question": "Find the error: 'I wish I can speak more languages.'",
     "options": [
-      "I wish I could speak more languages",
-      "I wish I am speaking more languages",
+      "I wish I will speak more languages",
       "No error",
-      "I wish I will speak more languages"
+      "I wish I am speaking more languages",
+      "I wish I could speak more languages"
     ],
     "correct": "I wish I could speak more languages",
     "explanation": "After <wish>, use past forms: <I wish I could speak>, not <can speak>."
@@ -420,9 +420,9 @@
   {
     "question": "Choose the correct meaning of <take for granted>:",
     "options": [
+      "to appreciate deeply",
       "to accept an offer",
       "to fail to appreciate something",
-      "to appreciate deeply",
       "to give a grant"
     ],
     "correct": "to fail to appreciate something",
@@ -431,10 +431,10 @@
   {
     "question": "What does the idiom 'miss the boat' mean?",
     "options": [
-      "to feel seasick",
-      "to miss an opportunity",
       "to cancel a trip",
-      "to arrive late at a port"
+      "to arrive late at a port",
+      "to miss an opportunity",
+      "to feel seasick"
     ],
     "correct": "to miss an opportunity",
     "explanation": "<Miss the boat> means to be too slow to take advantage of an opportunity."

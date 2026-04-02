@@ -11,7 +11,7 @@
       "id": "situation-1",
       "title": "Situation 1: Planning a Weekend",
       "type": "theory",
-      "content": "Read this conversation between two friends:\n\nSarah: I <suggest> going to the new Italian restaurant on Saturday.\nMark: Sounds good! I <enjoy> eating Italian food. But I <want> to go early — I <hate> waiting for a table.\nSarah: I <agree> to meet at 7pm. After dinner, do you <fancy> watching a film?\nMark: I'd <prefer> to go for a walk instead. I <need> to get more exercise.\nSarah: OK, I don't <mind> walking. I'll <avoid> wearing heels then!\n\nNotice the patterns:\n• <suggest>, <enjoy>, <fancy>, <mind>, <avoid> → followed by <gerund> (-ing)\n• <want>, <agree>, <prefer>, <need> → followed by <infinitive> (to + verb)\n• <hate> → can take both forms (hate waiting / hate to wait)"
+      "content": "Read this conversation between two friends:\n\nSarah: I <suggest> going to the new Italian restaurant on Saturday.\nMark: Sounds good! I <enjoy> eating Italian food. But I <want> to go early — I <hate> waiting for a table.\nSarah: I <agree> to meet at 7pm. After dinner, do you <fancy> watching a film?\nMark: I'd <prefer> to go for a walk instead. I <need> to get more exercise.\nSarah: OK, I don't <mind> walking. I'll <avoid> wearing heels then!\n\nNotice the patterns:\n• <suggest>, <enjoy>, <fancy>, <mind>, <avoid> → followed by <gerund> (-ing)\n• <want>, <agree>, <prefer>, <need> → followed by <infinitive> (to + verb)\n• <hate> → can take both forms (hate waiting / hate to wait) Each <verb pattern> determines whether the following verb takes the -ing form or the to-infinitive."
     },
     {
       "id": "situation-2",
@@ -29,7 +29,7 @@
       "id": "meaning-changes",
       "title": "Verbs That Change Meaning",
       "type": "theory",
-      "content": "Some verbs change their meaning depending on whether they are followed by a gerund or an infinitive. This is an important distinction:\n\n<Remember>:\n• I <remember> locking the door. (= I have a memory of doing it)\n• I <remembered> to lock the door. (= I didn't forget to do it)\n\n<Stop>:\n• She <stopped> smoking. (= She quit the habit)\n• She <stopped> to smoke. (= She paused what she was doing in order to smoke)\n\n<Try>:\n• <Try> opening the window. (= experiment with this method)\n• <Try> to open the window. (= make an effort/attempt)\n\n<Forget>:\n• I'll never <forget> meeting you. (= I have a memory of the event)\n• I <forgot> to meet you. (= I didn't remember the appointment)\n\nThese verbs require extra attention because the wrong form can communicate the opposite of what you mean!"
+      "content": "Some verbs change their meaning depending on whether they are followed by a gerund or an infinitive. This is an important distinction:\n\n<Remember>:\n• I <remember> locking the door. (= I have a memory of doing it)\n• I <remembered> to lock the door. (= I didn't forget to do it)\n\n<Stop>:\n• She <stopped> smoking. (= She quit the habit)\n• She <stopped> to smoke. (= She paused what she was doing in order to smoke)\n\n<Try>:\n• <Try> opening the window. (= experiment with this method)\n• <Try> to open the window. (= make an effort/attempt)\n\n<Forget>:\n• I'll never <forget> meeting you. (= I have a memory of the event)\n• I <forgot> to meet you. (= I didn't remember the appointment)\n\nThese verbs require extra attention because the wrong form can communicate the opposite of what you mean! Some verbs show a <meaning change> depending on whether they are followed by a gerund or infinitive. For example, \"stop smoking\" (quit the habit) vs \"stop to smoke\" (pause in order to smoke)."
     },
     {
       "id": "summary",
@@ -46,10 +46,26 @@
     "Distinguish between preposition + gerund and infinitive structures"
   ],
   "keyVocabulary": [
-    { "term": "gerund", "definition": "The -ing form of a verb used as a noun (e.g., swimming, reading)", "example": "I enjoy swimming." },
-    { "term": "infinitive", "definition": "The base form of a verb with 'to' (e.g., to swim, to read)", "example": "I want to swim." },
-    { "term": "verb pattern", "definition": "The grammatical structure that follows a verb", "example": "Enjoy + gerund: enjoy reading" },
-    { "term": "meaning change", "definition": "When a verb has different meanings with gerund vs. infinitive", "example": "Stop smoking (quit) vs. stop to smoke (pause)" }
+    {
+      "term": "gerund",
+      "definition": "The -ing form of a verb used as a noun (e.g., swimming, reading)",
+      "example": "I enjoy swimming."
+    },
+    {
+      "term": "infinitive",
+      "definition": "The base form of a verb with 'to' (e.g., to swim, to read)",
+      "example": "I want to swim."
+    },
+    {
+      "term": "verb pattern",
+      "definition": "The grammatical structure that follows a verb",
+      "example": "Enjoy + gerund: enjoy reading"
+    },
+    {
+      "term": "meaning change",
+      "definition": "When a verb has different meanings with gerund vs. infinitive",
+      "example": "Stop smoking (quit) vs. stop to smoke (pause)"
+    }
   ],
   "estimatedReadingTime": 7
 }

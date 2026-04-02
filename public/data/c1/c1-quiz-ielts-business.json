@@ -2,8 +2,8 @@
   {
     "question": "What does <leverage> mean in business?",
     "options": [
-      "ignore",
       "use something to maximum advantage",
+      "ignore",
       "avoid",
       "destroy"
     ],
@@ -13,8 +13,8 @@
   {
     "question": "What is <stakeholder>?",
     "options": [
-      "person with interest in business",
       "competitor",
+      "person with interest in business",
       "employee only",
       "customer only"
     ],
@@ -35,10 +35,10 @@
   {
     "question": "What is <synergy>?",
     "options": [
-      "competition",
-      "isolation",
+      "conflict",
       "combined effect greater than sum",
-      "conflict"
+      "isolation",
+      "competition"
     ],
     "correct": "combined effect greater than sum",
     "explanation": "<Synergy> is the interaction of elements that when combined produce a total effect greater than the sum of individual elements."
@@ -46,9 +46,9 @@
   {
     "question": "What does <scalable> mean?",
     "options": [
-      "shrinking",
-      "unstable",
       "able to grow proportionally",
+      "unstable",
+      "shrinking",
       "fixed size"
     ],
     "correct": "able to grow proportionally",
@@ -69,9 +69,9 @@
     "question": "What does <benchmark> mean?",
     "options": [
       "guess",
+      "standard for comparison",
       "mistake",
-      "failure",
-      "standard for comparison"
+      "failure"
     ],
     "correct": "standard for comparison",
     "explanation": "A <benchmark> is a standard or point of reference against which things may be compared or assessed."
@@ -80,9 +80,9 @@
     "question": "What is <ROI>?",
     "options": [
       "rate of interest",
+      "risk only",
       "revenue only",
-      "return on investment",
-      "risk only"
+      "return on investment"
     ],
     "correct": "return on investment",
     "explanation": "ROI (<Return on Investment>) is a measure of the profitability of an investment."
@@ -90,10 +90,10 @@
   {
     "question": "What does <disruptive> mean in business?",
     "options": [
-      "traditional",
       "conservative",
-      "causing radical change",
-      "maintaining status quo"
+      "traditional",
+      "maintaining status quo",
+      "causing radical change"
     ],
     "correct": "causing radical change",
     "explanation": "<Disruptive> in business refers to innovation that significantly alters the way industries or markets function."
@@ -101,10 +101,10 @@
   {
     "question": "What is <market penetration>?",
     "options": [
-      "leaving market",
-      "market closure",
+      "avoiding market",
       "extent of product sales in market",
-      "avoiding market"
+      "market closure",
+      "leaving market"
     ],
     "correct": "extent of product sales in market",
     "explanation": "<Market penetration> is the extent to which a product is recognized and bought by customers in a particular market."
@@ -112,10 +112,10 @@
   {
     "question": "What does <pivot> mean in business?",
     "options": [
-      "stay same",
-      "expand slowly",
+      "close down",
       "change strategy fundamentally",
-      "close down"
+      "stay same",
+      "expand slowly"
     ],
     "correct": "change strategy fundamentally",
     "explanation": "To <pivot> means to change the fundamental direction or strategy of a business."
@@ -123,10 +123,10 @@
   {
     "question": "What is <value proposition>?",
     "options": [
-      "cost",
-      "price only",
+      "promise of value to customer",
       "expense",
-      "promise of value to customer"
+      "price only",
+      "cost"
     ],
     "correct": "promise of value to customer",
     "explanation": "A <value proposition> is an innovation, service, or feature intended to make a company attractive to customers."
@@ -135,9 +135,9 @@
     "question": "What does <monetize> mean?",
     "options": [
       "earn revenue from",
+      "give away free",
       "lose money",
-      "spend money",
-      "give away free"
+      "spend money"
     ],
     "correct": "earn revenue from",
     "explanation": "Monetize means to <earn revenue from> an asset, business, or activity."
@@ -145,10 +145,10 @@
   {
     "question": "What is <equity>?",
     "options": [
-      "ownership value in company",
       "expense",
       "loan",
-      "debt"
+      "debt",
+      "ownership value in company"
     ],
     "correct": "ownership value in company",
     "explanation": "<Equity> is the value of shares issued by a company; ownership interest."
@@ -156,10 +156,10 @@
   {
     "question": "What does <outsource> mean?",
     "options": [
-      "do internally",
+      "obtain from external supplier",
       "hire employees",
-      "expand",
-      "obtain from external supplier"
+      "do internally",
+      "expand"
     ],
     "correct": "obtain from external supplier",
     "explanation": "<Outsource> means to obtain goods or services from an outside or foreign supplier."
@@ -168,9 +168,9 @@
     "question": "What is <cash flow>?",
     "options": [
       "revenue only",
-      "profit",
       "total money moving in/out",
-      "expenses only"
+      "expenses only",
+      "profit"
     ],
     "correct": "total money moving in/out",
     "explanation": "<Cash flow> is the total amount of money being transferred into and out of a business."
@@ -178,10 +178,10 @@
   {
     "question": "What does <diversify> mean?",
     "options": [
-      "focus on one thing",
-      "shrink",
       "expand into different areas",
-      "specialize"
+      "specialize",
+      "shrink",
+      "focus on one thing"
     ],
     "correct": "expand into different areas",
     "explanation": "<Diversify> means to enlarge or vary the range of products or field of operation."
@@ -190,9 +190,9 @@
     "question": "What is <intellectual property>?",
     "options": [
       "physical assets",
-      "equipment",
+      "creations of the mind",
       "real estate as recognized by most authorities",
-      "creations of the mind"
+      "equipment"
     ],
     "correct": "creations of the mind",
     "explanation": "Intellectual property refers to <creations of the mind>, such as inventions, designs, and artistic works."
@@ -200,10 +200,10 @@
   {
     "question": "What does <acquisition> mean?",
     "options": [
-      "buying another company",
       "selling",
+      "closing",
       "merging equally",
-      "closing"
+      "buying another company"
     ],
     "correct": "buying another company",
     "explanation": "<Acquisition> is the act of buying or obtaining an asset or object, especially another company."
@@ -211,10 +211,10 @@
   {
     "question": "What is <competitive advantage>?",
     "options": [
-      "condition giving superior position",
-      "equality",
       "weakness",
-      "disadvantage"
+      "condition giving superior position",
+      "disadvantage",
+      "equality"
     ],
     "correct": "condition giving superior position",
     "explanation": "<Competitive advantage> is a condition or circumstance that puts a company in a favorable business position."
