@@ -572,18 +572,44 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                 <>
                   {(currentSection?.content || t('common.loading'))
                     .split('\n\n')
-                    .map((paragraph, idx) => (
-                      <p key={idx}>
-                        {paragraph.split('\n').map((line, lineIdx, arr) => (
-                          <React.Fragment key={lineIdx}>
-                            <ContentRenderer
-                              content={ContentAdapter.ensureStructured(line, 'reading')}
-                            />
-                            {lineIdx < arr.length - 1 && <br />}
-                          </React.Fragment>
-                        ))}
-                      </p>
-                    ))}
+                    .map((paragraph, idx) => {
+                      const lines = paragraph.split('\n');
+                      // If all non-empty lines in this paragraph start with a bullet, render as list
+                      const nonEmpty = lines.filter(l => l.trim());
+                      const isBulletList =
+                        nonEmpty.length > 0 && nonEmpty.every(l => /^[•·]\s/.test(l.trim()));
+                      if (isBulletList) {
+                        return (
+                          <ul key={idx} className="reading-component__bullet-list">
+                            {lines
+                              .filter(l => l.trim())
+                              .map((line, lineIdx) => {
+                                // Strip the bullet character
+                                const text = line.trim().replace(/^[•·]\s*/, '');
+                                return (
+                                  <li key={lineIdx} className="reading-component__bullet-item">
+                                    <ContentRenderer
+                                      content={ContentAdapter.ensureStructured(text, 'reading')}
+                                    />
+                                  </li>
+                                );
+                              })}
+                          </ul>
+                        );
+                      }
+                      return (
+                        <p key={idx}>
+                          {lines.map((line, lineIdx, arr) => (
+                            <React.Fragment key={lineIdx}>
+                              <ContentRenderer
+                                content={ContentAdapter.ensureStructured(line, 'reading')}
+                              />
+                              {lineIdx < arr.length - 1 && <br />}
+                            </React.Fragment>
+                          ))}
+                        </p>
+                      );
+                    })}
                 </>
               )}
             </div>
