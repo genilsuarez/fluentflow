@@ -47,7 +47,7 @@
     "gh:watch": "node scripts/git/github-actions-status.js watch",
     "gh:logs": "node scripts/git/github-actions-status.js logs",
     "deploy:status": "node scripts/git/validate-pages-deployment.js",
-    "deploy:ping": "curl -s -o /dev/null -w 'HTTP Status: %{http_code}\\nResponse Time: %{time_total}s\\nURL: %{url_effective}\\n' https://gsphome.github.io/englishgame6/"
+    "deploy:ping": "curl -s -o /dev/null -w 'HTTP Status: %{http_code}\\nResponse Time: %{time_total}s\\nURL: %{url_effective}\\n' https://genilsuarez.github.io/fluentflow/"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.62.7",

@@ -2,7 +2,7 @@
 
 English learning app (CEFR A1-C2) — React 18, TypeScript, Pure CSS/BEM.
 
-**Live**: https://gsphome.github.io/englishgame6/
+**Live**: https://genilsuarez.github.io/fluentflow/
 
 ## Stack
 
@@ -15,7 +15,7 @@ React 18 · TypeScript strict · Vite + esbuild · Zustand · TanStack Query · 
 ## Setup
 
 ```bash
-git clone https://github.com/gsphome/englishgame6.git && cd englishgame6
+git clone https://github.com/genilsuarez/fluentflow.git && cd fluentflow
 npm install && npm run dev
 ```
 
