@@ -16,6 +16,28 @@ Antes de proponer soluciones o crear specs, explorar el código existente.
 - GitHub Actions → GitHub Pages
 - Playwright MCP para análisis UI/UX (headless)
 - Chrome DevTools MCP para debugging técnico (network, console, performance)
+- Context7 MCP para documentación actualizada de librerías (React, Vite, TanStack Query, Zustand, Zod, etc.)
+
+## Context7 — Documentación de librerías
+
+Usar Context7 cuando necesites documentación actualizada o ejemplos de código de cualquier librería del stack. Evita hallucinations y APIs desactualizadas.
+
+**Cuándo usar:**
+- Consultar API de TanStack Query, Zustand, Zod, React Hook Form, Vite, Vitest, Playwright
+- Verificar sintaxis o configuración de una versión específica
+- Generar código con APIs correctas y actualizadas
+
+**Cómo usar:**
+1. `resolve-library-id` — busca el ID de la librería (ej: `/tanstack/query`, `/colinhacks/zod`)
+2. `query-docs` — trae la documentación relevante para tu query
+
+**Ejemplo:**
+```
+resolve-library-id: libraryName="TanStack Query", query="useQuery options"
+query-docs: libraryId="/tanstack/query", query="useQuery options and staleTime"
+```
+
+**Regla**: Usar Context7 proactivamente para cualquier librería del stack antes de generar código que dependa de su API.
 
 ## Browser tools — Cuándo usar cada una
 
