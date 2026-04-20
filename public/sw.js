@@ -117,8 +117,8 @@ self.addEventListener('fetch', event => {
   const isHtml =
     url.pathname.endsWith('.html') ||
     url.pathname === '/' ||
-    url.pathname.endsWith('/englishgame6/') ||
-    url.pathname === '/englishgame6';
+    url.pathname.endsWith('/fluentflow/') ||
+    url.pathname === '/fluentflow';
   const isAsset = /\.(js|css|woff2?|ttf|svg|png|ico|webp)$/.test(url.pathname);
   const isManifest = url.pathname.endsWith('asset-manifest.json');
 

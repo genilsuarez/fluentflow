@@ -351,7 +351,7 @@ async function runWorkflow(workflowKey) {
 
       console.log('\n' + '='.repeat(50));
       log('✅ Build exitoso', colors.bright + colors.green);
-      log(`  🔗 https://gsphome.github.io/englishgame6/`, colors.cyan);
+      log(`  🔗 https://genilsuarez.github.io/fluentflow/`, colors.cyan);
       log(`  📝 Commit: ${commitSha}`, colors.white);
       log(`  ⏱️ Tiempo: ${totalDuration}s`, colors.white);
       console.log('='.repeat(50));

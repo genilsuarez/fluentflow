@@ -1,6 +1,6 @@
 # DevTools E2E Testing
 
-Pruebas E2E con Chrome DevTools MCP contra producción: `https://gsphome.github.io/englishgame6/`
+Pruebas E2E con Chrome DevTools MCP contra producción: `https://genilsuarez.github.io/fluentflow/`
 
 ## Scripts de test
 
@@ -24,7 +24,7 @@ Dev Mode desbloquea todos los módulos sin completar prerequisites. Ejecutar sie
 
 ```
 mcp_chrome_devtools_new_page
-url: "https://gsphome.github.io/englishgame6/"
+url: "https://genilsuarez.github.io/fluentflow/"
 timeout: 10000
 
 mcp_chrome_devtools_evaluate_script
@@ -145,7 +145,7 @@ function: "async () => {
 | Problema | Solución |
 |----------|----------|
 | Chrome no conecta | `lsof -i :9222`, reiniciar Chrome con `--remote-debugging-port=9222` |
-| Service Worker no registra | `curl -I https://gsphome.github.io/englishgame6/service-worker.js` |
+| Service Worker no registra | `curl -I https://genilsuarez.github.io/fluentflow/service-worker.js` |
 | Módulos no se cachean | Revisar estrategia en `service-worker.js` |
 | Next-module no actualiza | Verificar `useProgression.ts` (`refetchOnMount: true`) |
 | Snapshot muestra contenido oculto | Normal: a11y tree expone `opacity:0`. Verificar `aria-hidden` |

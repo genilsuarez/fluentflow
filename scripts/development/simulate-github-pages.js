@@ -36,7 +36,7 @@ function createGitHubPagesServer() {
   });
 
   // Simulate GitHub Pages base path behavior
-  app.use('/englishgame6', express.static(distPath, {
+  app.use('/fluentflow', express.static(distPath, {
     // GitHub Pages headers simulation
     setHeaders: (res, filePath) => {
       // Simulate GitHub Pages cache headers
@@ -58,13 +58,13 @@ function createGitHubPagesServer() {
 
   // Root redirect (like GitHub Pages)
   app.get('/', (req, res) => {
-    res.redirect('/englishgame6/');
+    res.redirect('/fluentflow/');
   });
 
   // Handle SPA routing (GitHub Pages behavior for 404s)
   app.use((req, res, next) => {
-    // Only handle requests that start with /englishgame6
-    if (!req.path.startsWith('/englishgame6')) {
+    // Only handle requests that start with /fluentflow
+    if (!req.path.startsWith('/fluentflow')) {
       return next();
     }
 
@@ -73,7 +73,7 @@ function createGitHubPagesServer() {
       return next();
     }
 
-    const filePath = path.join(distPath, req.path.replace('/englishgame6', ''));
+    const filePath = path.join(distPath, req.path.replace('/fluentflow', ''));
 
     // If file exists, serve it
     if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
@@ -108,13 +108,13 @@ function startServer() {
     console.log('');
     log('🚀 GitHub Pages Simulation Server', colors.cyan);
     log('='.repeat(50), colors.cyan);
-    log(`📍 Local URL:    http://localhost:${port}/englishgame6/`, colors.green);
-    log(`🌐 Simulates:    https://gsphome.github.io/englishgame6/`, colors.blue);
+    log(`📍 Local URL:    http://localhost:${port}/fluentflow/`, colors.green);
+    log(`🌐 Simulates:    https://genilsuarez.github.io/fluentflow/`, colors.blue);
     log(`📁 Serving:      dist/`, colors.yellow);
     log('='.repeat(50), colors.cyan);
     log('');
     log('💡 This server simulates GitHub Pages exactly:', colors.blue);
-    log('  • Same base path (/englishgame6/)', colors.blue);
+    log('  • Same base path (/fluentflow/)', colors.blue);
     log('  • Same static file serving', colors.blue);
     log('  • Same cache headers', colors.blue);
     log('  • Same SPA fallback behavior', colors.blue);

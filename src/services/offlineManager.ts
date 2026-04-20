@@ -15,7 +15,7 @@ export const CACHE_NAME = 'fluentflow-v3';
 const ASSETS_CACHE = 'fluentflow-v3'; // unified cache
 
 /**
- * Get the base URL for the app (e.g. /englishgame6/)
+ * Get the base URL for the app (e.g. /fluentflow/)
  */
 function getBaseUrl(): string {
   return import.meta.env.BASE_URL || '/';

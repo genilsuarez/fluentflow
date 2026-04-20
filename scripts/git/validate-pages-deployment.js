@@ -11,8 +11,8 @@ import { execSync } from 'child_process';
 import { colors, log, logHeader, logSuccess, logError, logWarning, logInfo } from '../utils/logger.js';
 
 // Repository configuration
-const REPO_OWNER = 'gsphome';
-const REPO_NAME = 'englishgame6';
+const REPO_OWNER = 'genilsuarez';
+const REPO_NAME = 'fluentflow';
 const PAGES_URL = `https://${REPO_OWNER}.github.io/${REPO_NAME}/`;
 
 /**
@@ -372,7 +372,7 @@ async function validateDeployment() {
   console.log('='.repeat(40));
 
   // Enhanced final message with temporal context
-  logInfo('🌐 https://gsphome.github.io/englishgame6/');
+  logInfo(`🌐 ${PAGES_URL}`);
   
   // Add deployment timing context
   if (deploymentInfo?.deployment) {

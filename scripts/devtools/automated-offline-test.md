@@ -28,7 +28,7 @@ function: "async () => {
 ```
 
 - [ ] `active: true`
-- [ ] `scope` incluye `/englishgame6/`
+- [ ] `scope` incluye `/fluentflow/`
 
 ---
 
@@ -198,7 +198,7 @@ networkConditions: "Offline"
 
 mcp_chrome_devtools_navigate_page
 type: "url"
-url: "https://gsphome.github.io/englishgame6/"
+url: "https://genilsuarez.github.io/fluentflow/"
 timeout: 10000
 
 mcp_chrome_devtools_take_snapshot
@@ -235,7 +235,7 @@ mcp_chrome_devtools_emulate
 
 mcp_chrome_devtools_navigate_page
 type: "url"
-url: "https://gsphome.github.io/englishgame6/"
+url: "https://genilsuarez.github.io/fluentflow/"
 timeout: 10000
 
 # Offline + trace
