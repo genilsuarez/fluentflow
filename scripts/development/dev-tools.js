@@ -194,12 +194,9 @@ const workflows = {
       { type: 'command', cmd: 'git pull --rebase', desc: 'Sync with remote' },
       { type: 'pipeline', target: 'quality' },
       { type: 'pipeline', target: 'security' },
-      // Skip tsc here — quality pipeline already validated types.
-      // Run vite build directly to avoid compiling TypeScript twice.
       { type: 'command', cmd: 'npx vite build --mode production --config config/vite.config.ts', desc: 'Build application (vite only)' },
-      { type: 'command', cmd: 'node scripts/git/smart-commit.js --stage-all --push --auto --allow-empty', desc: 'Post-build commit & push (with formatting fixes)' },
-      { type: 'command', cmd: 'node scripts/git/github-actions-status.js ci-wait', desc: 'Wait for CI (Build + Quality)' },
-      { type: 'command', cmd: 'node scripts/git/validate-pages-deployment.js', desc: 'Validate deployment status' }
+      { type: 'command', cmd: 'node scripts/git/smart-commit.js --stage-all --push --auto --allow-empty', desc: 'Post-build commit & push' },
+      { type: 'command', cmd: 'node scripts/git/github-actions-status.js watch-all', desc: 'Monitor pipeline (CI + CD)' },
     ]
   },
   fix: {

@@ -95,19 +95,8 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
   }, []);
 
   // Auto-expand unit with next recommended module and scroll to it
-  // For new users (no progress), default to B1 (unit 3) instead of A1
-  const DEFAULT_UNIT = 3; // B1 — Intermediate
   React.useEffect(() => {
-    if (searchQuery.trim()) return;
-
-    // If no progress yet, expand B1 by default
-    if (!nextRecommended || completedModulesCount === 0) {
-      setExpandedUnits(prev => {
-        if (prev.has(DEFAULT_UNIT)) return prev;
-        return new Set([DEFAULT_UNIT]);
-      });
-      return;
-    }
+    if (!nextRecommended || searchQuery.trim()) return;
 
     // Expand the unit containing the next recommended module
     setExpandedUnits(prev => {

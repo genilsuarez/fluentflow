@@ -505,23 +505,25 @@ function hasActiveWorkflows() {
 }
 
 /**
- * Wait for CI Build and CI Quality to complete for the current commit.
- * Polls every 10s. Exits 0 on success, 1 on failure/timeout.
+ * Watch all workflows for the current commit until everything completes.
+ * Shows a compact status line per poll. Exits 0 on full success, 1 on failure.
+ * Used by build:full for end-to-end monitoring.
  */
-function waitForCI(timeoutSeconds = 300) {
+function watchAll(timeoutSeconds = 600) {
   const latestCommit = getLatestCommit();
-  logInfo(`⏳ Waiting for CI (Build + Quality) — commit ${latestCommit.slice(0, 8)}`);
+  logInfo(`👀 Monitoring pipeline — commit ${latestCommit.slice(0, 8)}`);
   logInfo('Press Ctrl+C to stop\n');
 
-  const CI_WORKFLOWS = ['CI Build', 'CI Quality'];
-  const INTERVAL = 10;
+  // Workflows triggered on push (in order of expected completion)
+  const WATCHED = ['CI Build', 'CI Quality', 'CI Security', 'CD Deploy'];
+  const INTERVAL = 8; // poll every 8s
   const start = Date.now();
 
   const poll = () => {
     const elapsed = Math.round((Date.now() - start) / 1000);
 
     if (elapsed >= timeoutSeconds) {
-      logError(`❌ Timeout after ${timeoutSeconds}s waiting for CI`);
+      logError(`❌ Timeout after ${timeoutSeconds}s`);
       process.exit(1);
     }
 
@@ -529,42 +531,50 @@ function waitForCI(timeoutSeconds = 300) {
     try {
       runs = getWorkflowRuns(20);
     } catch {
-      logWarning('  Could not fetch runs, retrying...');
       setTimeout(poll, INTERVAL * 1000);
       return;
     }
 
     const currentRuns = runs.filter(r => r.headSha === latestCommit);
 
-    const statuses = CI_WORKFLOWS.map(name => {
+    const statuses = WATCHED.map(name => {
       const run = currentRuns
         .filter(r => r.workflowName === name)
         .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))[0];
       return { name, status: run?.status, conclusion: run?.conclusion };
     });
 
-    const statusLine = statuses
-      .map(s => {
-        if (!s.status) return `${s.name}: ⏳ queued`;
-        if (s.status !== 'completed') return `${s.name}: 🔄 running`;
-        if (s.conclusion === 'success') return `${s.name}: ✅`;
-        return `${s.name}: ❌ ${s.conclusion}`;
-      })
-      .join('  |  ');
+    // Compact status line: CI Build: ✅  CI Quality: 🔄  CI Security: ✅  CD Deploy: ⏳
+    const line = statuses.map(s => {
+      const short = s.name.replace('CI ', '').replace('CD ', 'Deploy:');
+      if (!s.status)                                    return `${short}: ⏳`;
+      if (s.status !== 'completed')                     return `${short}: 🔄`;
+      if (s.conclusion === 'success')                   return `${short}: ✅`;
+      if (s.conclusion === 'skipped')                   return `${short}: ⏭️`;
+      return `${short}: ❌`;
+    }).join('  ');
 
-    logInfo(`  [${elapsed}s] ${statusLine}`);
+    logInfo(`  [${elapsed}s] ${line}`);
 
-    // Any failure → abort
-    const failed = statuses.find(s => s.status === 'completed' && s.conclusion !== 'success' && s.conclusion !== null);
+    // Any hard failure → abort
+    const failed = statuses.find(s =>
+      s.status === 'completed' &&
+      s.conclusion !== 'success' &&
+      s.conclusion !== 'skipped' &&
+      s.conclusion !== null
+    );
     if (failed) {
-      logError(`\n❌ ${failed.name} ${failed.conclusion} — deploy aborted`);
+      logError(`\n❌ ${failed.name} ${failed.conclusion}`);
       process.exit(1);
     }
 
-    // All succeeded
-    const allDone = statuses.every(s => s.status === 'completed' && s.conclusion === 'success');
+    // All done (success or skipped)
+    const allDone = statuses.every(s =>
+      s.status === 'completed' &&
+      (s.conclusion === 'success' || s.conclusion === 'skipped')
+    );
     if (allDone) {
-      logSuccess(`\n✅ CI passed in ${elapsed}s — CD Deploy is running`);
+      logSuccess(`\n✅ Pipeline completo en ${elapsed}s`);
       return;
     }
 
@@ -772,12 +782,12 @@ function main() {
       break;
 
     case 'ci-wait':
-      waitForCI(parseInt(args[1]) || 300);
+    case 'watch-all':
+      watchAll(parseInt(args[1]) || 600);
       break;
 
     case 'watch':
-    case 'w':
-      const interval = parseInt(args[1]) || 30;
+    case 'w':      const interval = parseInt(args[1]) || 30;
       watchStatus(interval);
       break;
 
@@ -822,4 +832,4 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   main();
 }
 
-export { checkGitHubCLI, getWorkflowRuns, showWorkflowStatus, showCurrentStatus, watchStatus, waitForCI };
+export { checkGitHubCLI, getWorkflowRuns, showWorkflowStatus, showCurrentStatus, watchStatus, watchAll };

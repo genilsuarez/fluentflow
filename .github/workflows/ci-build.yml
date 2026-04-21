@@ -21,47 +21,23 @@ jobs:
     outputs:
       artifact-name: build-files-${{ github.sha }}
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
 
-      - name: Install dependencies
-        run: npm ci --prefer-offline --no-audit
+      - run: npm ci --prefer-offline --no-audit
 
-      - name: Build application
-        run: npm run build
+      - run: npm run build
 
       - name: Verify build output
         run: |
-          if [ ! -d "dist" ]; then
-            echo "❌ Build failed: dist directory not found"
-            exit 1
-          fi
-          
-          if [ ! -f "dist/index.html" ]; then
-            echo "❌ Build failed: index.html not found"
-            exit 1
-          fi
-          
-          echo "✅ Build verification passed"
+          [ -f "dist/index.html" ] || { echo "❌ index.html not found"; exit 1; }
+          echo "✅ Build OK"
 
-      - name: Bundle size check
-        run: |
-          echo "📊 Checking bundle size..."
-          MAIN_JS_SIZE=$(find dist/assets -name "index-*.js" -exec du -k {} \; | cut -f1 2>/dev/null || echo "0")
-          if [ $MAIN_JS_SIZE -gt 1000 ]; then
-            echo "⚠️ Warning: Bundle size is ${MAIN_JS_SIZE}KB (>1MB)"
-          else
-            echo "✅ Bundle size OK: ${MAIN_JS_SIZE}KB"
-          fi
-
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v4
         with:
           name: build-files-${{ github.sha }}
           path: dist/

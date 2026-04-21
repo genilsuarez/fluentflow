@@ -39,7 +39,7 @@ jobs:
           # Poll every 15s, timeout after 10 min
           TIMEOUT=600
           ELAPSED=0
-          INTERVAL=15
+          INTERVAL=8
 
           while [ $ELAPSED -lt $TIMEOUT ]; do
             BUILD_STATUS=$(gh api repos/${{ github.repository }}/actions/runs \
@@ -71,6 +71,7 @@ jobs:
             sleep $INTERVAL
             ELAPSED=$((ELAPSED + INTERVAL))
           done
+
 
           if [ $ELAPSED -ge $TIMEOUT ]; then
             echo "❌ Timeout waiting for CI pipelines"

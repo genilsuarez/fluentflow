@@ -53,6 +53,23 @@ query-docs: libraryId="/tanstack/query", query="useQuery options and staleTime"
 
 Regla: Playwright primero para UI/UX. Chrome DevTools solo para debugging técnico de bajo nivel.
 
+## Inyectar estado en el browser del usuario
+
+**Playwright** corre en su propio contexto — su `localStorage` NO es el del usuario. No sirve para esto.
+
+**Chrome DevTools MCP** se conecta al Chrome real del usuario (vía `--remote-debugging-port=9222`) — comparte el mismo localStorage. Usar siempre Chrome DevTools MCP para ejecutar JS en el browser del usuario.
+
+Si Chrome DevTools MCP no está disponible, fallback: crear script en `scripts/tmp/` que use WebSocket CDP directo (`ws://localhost:9222/devtools/page/<id>`) con `Runtime.evaluate` + `Page.reload`.
+
+Ver detalle completo en `docs/browser-localstorage-mcp.md`.
+
+**Script set-progress.js** (`scripts/utils/set-progress.js`) — simular progreso por nivel:
+- `--level a2` → completa A1+A2 (91 módulos) → desbloquea B1 como NEXT
+- `--level b1` → completa A1+A2+B1 → desbloquea B2
+- `--reset` → borra todo el progreso
+- `--dry` → muestra qué módulos se marcarían sin ejecutar
+- Modifica `progress-storage`, `user-storage` y `app-storage` en localStorage
+
 ## Antes de cualquier cambio
 
 1. Leer `src/types/index.ts` para interfaces existentes
