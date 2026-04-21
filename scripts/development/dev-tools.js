@@ -134,13 +134,14 @@ const pipelines = {
     name: '🎯 Quality',
     description: 'ESLint, TypeScript, Tests, Formatting (parallel)',
     commands: [
-      // All checks are read-only and independent — run fully in parallel
+      // ESLint + TypeScript + Format in parallel (CPU-light, no conflicts)
       [
         { cmd: 'npm run lint', desc: 'ESLint check' },
         { cmd: 'npm run type-check', desc: 'TypeScript check' },
         { cmd: 'npm run format:check', desc: 'Format check' },
-        { cmd: 'npm test', desc: 'Tests' },
       ],
+      // Tests run after — vitest is CPU-heavy and slows everything when competing
+      { cmd: 'npm test', desc: 'Tests' },
     ],
     color: colors.blue
   },
