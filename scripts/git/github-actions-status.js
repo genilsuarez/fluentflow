@@ -546,7 +546,7 @@ function watchAll(timeoutSeconds = 600) {
 
     // Compact status line: CI Build: ✅  CI Quality: 🔄  CI Security: ✅  CD Deploy: ⏳
     const line = statuses.map(s => {
-      const short = s.name.replace('CI ', '').replace('CD ', 'Deploy:');
+      const short = s.name.replace('CI ', '').replace('CD Deploy', 'Deploy');
       if (!s.status)                                    return `${short}: ⏳`;
       if (s.status !== 'completed')                     return `${short}: 🔄`;
       if (s.conclusion === 'success')                   return `${short}: ✅`;
@@ -567,7 +567,6 @@ function watchAll(timeoutSeconds = 600) {
       logError(`\n❌ ${failed.name} ${failed.conclusion}`);
       process.exit(1);
     }
-
     // All done (success or skipped)
     const allDone = statuses.every(s =>
       s.status === 'completed' &&

@@ -36,6 +36,7 @@ jobs:
           TIMEOUT=600
           ELAPSED=0
           INTERVAL=8
+          CI_OK=false
 
           while [ $ELAPSED -lt $TIMEOUT ]; do
             # Fetch both statuses in parallel using temp files
@@ -54,11 +55,11 @@ jobs:
 
             if [[ "$BUILD_STATUS" == "success" && "$QUALITY_STATUS" == "success" ]]; then
               echo "✅ CI passed"
+              CI_OK=true
               break
             fi
 
-            if [[ "$BUILD_STATUS" == "failure" || "$BUILD_STATUS" == "cancelled" ||
-                  "$QUALITY_STATUS" == "failure" || "$QUALITY_STATUS" == "cancelled" ]]; then
+            if [[ "$BUILD_STATUS" == "failure" || "$BUILD_STATUS" == "cancelled" || "$QUALITY_STATUS" == "failure" || "$QUALITY_STATUS" == "cancelled" ]]; then
               echo "❌ CI failed — aborting deploy"
               exit 1
             fi
@@ -67,7 +68,7 @@ jobs:
             ELAPSED=$((ELAPSED + INTERVAL))
           done
 
-          [ $ELAPSED -ge $TIMEOUT ] && { echo "❌ Timeout"; exit 1; }
+          [ "$CI_OK" = "true" ] || { echo "❌ Timeout waiting for CI"; exit 1; }
         env:
           GH_TOKEN: ${{ github.token }}
 
