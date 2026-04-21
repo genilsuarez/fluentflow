@@ -193,7 +193,16 @@ const workflows = {
     steps: [
       { type: 'command', cmd: 'node scripts/git/smart-commit.js --stage-all --auto --allow-empty', desc: 'Pre-build commit (clean working directory)' },
       { type: 'command', cmd: 'git pull --rebase', desc: 'Sync with remote' },
-      { type: 'parallel-pipelines', targets: ['quality', 'security'] },
+      // Phase 1: lint + types + format + security all at once (all CPU-light)
+      { type: 'parallel', cmds: [
+        { cmd: 'npm run lint',             desc: 'ESLint' },
+        { cmd: 'npm run type-check',       desc: 'TypeScript' },
+        { cmd: 'npm run format:check',     desc: 'Format' },
+        { cmd: 'npm run security:audit',   desc: 'Audit' },
+        { cmd: 'npm run security:scan',    desc: 'Security scan' },
+      ]},
+      // Phase 2: tests alone (CPU-heavy, needs full cores)
+      { type: 'command', cmd: 'npm test', desc: 'Tests' },
       { type: 'command', cmd: 'npx vite build --mode production --config config/vite.config.ts', desc: 'Build application (vite only)' },
       { type: 'command', cmd: 'node scripts/git/smart-commit.js --stage-all --push --auto --allow-empty', desc: 'Post-build commit & push' },
       { type: 'command', cmd: 'node scripts/git/github-actions-status.js watch-all', desc: 'Monitor pipeline (CI + CD)' },
@@ -312,6 +321,13 @@ async function runWorkflow(workflowKey) {
       log(`⚡ Running pipelines in parallel: ${step.targets.join(', ')}`, colors.cyan);
       const results = await Promise.all(step.targets.map(t => runPipeline(t)));
       if (!results.every(Boolean)) {
+        allSuccess = false;
+        break;
+      }
+    } else if (step.type === 'parallel') {
+      // Run a flat list of commands in parallel
+      const success = await executeParallel(step.cmds);
+      if (!success) {
         allSuccess = false;
         break;
       }
