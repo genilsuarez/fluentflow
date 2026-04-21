@@ -134,14 +134,13 @@ const pipelines = {
     name: '🎯 Quality',
     description: 'ESLint, TypeScript, Tests, Formatting (parallel)',
     commands: [
-      // ESLint + TypeScript + Format run in parallel (all read-only, no conflicts)
+      // All checks are read-only and independent — run fully in parallel
       [
         { cmd: 'npm run lint', desc: 'ESLint check' },
         { cmd: 'npm run type-check', desc: 'TypeScript check' },
         { cmd: 'npm run format:check', desc: 'Format check' },
+        { cmd: 'npm test', desc: 'Tests' },
       ],
-      // Tests run after — they may depend on type correctness
-      { cmd: 'npm test', desc: 'Tests' },
     ],
     color: colors.blue
   },
@@ -200,7 +199,6 @@ const workflows = {
       { type: 'command', cmd: 'npx vite build --mode production --config config/vite.config.ts', desc: 'Build application (vite only)' },
       { type: 'command', cmd: 'node scripts/git/smart-commit.js --stage-all --push --auto --allow-empty', desc: 'Post-build commit & push (with formatting fixes)' },
       { type: 'command', cmd: 'node scripts/git/github-actions-status.js watch', desc: 'Monitor GitHub Actions' },
-      { type: 'command', cmd: 'node scripts/git/github-actions-status.js current', desc: 'Final GitHub Actions status' },
       { type: 'command', cmd: 'node scripts/git/validate-pages-deployment.js', desc: 'Validate deployment status' }
     ]
   },

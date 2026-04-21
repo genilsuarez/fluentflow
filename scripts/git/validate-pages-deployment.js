@@ -92,17 +92,9 @@ function getCurrentBranch() {
  */
 async function fetchPagesDeployment() {
   try {
-    logInfo('Fetching GitHub Pages configuration...');
-
-    // Use gh CLI which handles authentication properly
-    const ghCommand = `gh api repos/${REPO_OWNER}/${REPO_NAME}/pages`;
-
-    const response = execSync(ghCommand, { encoding: 'utf8' });
-    const pagesInfo = JSON.parse(response);
-
-    return pagesInfo;
+    const response = execSync(`gh api repos/${REPO_OWNER}/${REPO_NAME}/pages`, { encoding: 'utf8' });
+    return JSON.parse(response);
   } catch (error) {
-    // Check if it's a 404 (Pages not configured) or authentication issue
     if (error.message.includes('404') || error.message.includes('Not Found')) {
       logWarning('GitHub Pages not configured for this repository');
     } else if (error.message.includes('401') || error.message.includes('403')) {
@@ -119,46 +111,40 @@ async function fetchPagesDeployment() {
  */
 async function fetchLatestDeployment() {
   try {
-    logInfo('Fetching latest deployment information...');
-
-    // Try both production and github-pages environments
     const environments = ['production', 'github-pages'];
     let latestDeployment = null;
     let deploymentStatus = null;
 
-    for (const env of environments) {
+    // Fetch both environments in parallel
+    const results = await Promise.all(environments.map(env => {
       try {
-        const ghCommand = `gh api repos/${REPO_OWNER}/${REPO_NAME}/deployments --jq '[.[] | select(.environment == "${env}")] | .[0]'`;
-        const response = execSync(ghCommand, { encoding: 'utf8' }).trim();
+        const response = execSync(
+          `gh api repos/${REPO_OWNER}/${REPO_NAME}/deployments --jq '[.[] | select(.environment == "${env}")] | .[0]'`,
+          { encoding: 'utf8' }
+        ).trim();
+        return response && response !== 'null' ? JSON.parse(response) : null;
+      } catch {
+        return null;
+      }
+    }));
 
-        if (response && response !== 'null') {
-          const deployment = JSON.parse(response);
-
-          // Use the most recent deployment across all environments
-          if (!latestDeployment || new Date(deployment.created_at) > new Date(latestDeployment.created_at)) {
-            latestDeployment = deployment;
-
-            // Fetch deployment status
-            const statusCommand = `gh api repos/${REPO_OWNER}/${REPO_NAME}/deployments/${deployment.id}/statuses --jq '.[0]'`;
-            const statusResponse = execSync(statusCommand, { encoding: 'utf8' }).trim();
-
-            deploymentStatus = statusResponse && statusResponse !== 'null' ? JSON.parse(statusResponse) : null;
-          }
-        }
-      } catch (envError) {
-        // Continue to next environment if this one fails
-        continue;
+    for (const deployment of results) {
+      if (deployment && (!latestDeployment || new Date(deployment.created_at) > new Date(latestDeployment.created_at))) {
+        latestDeployment = deployment;
       }
     }
 
-    if (!latestDeployment) {
-      return null;
-    }
+    if (!latestDeployment) return null;
 
-    return {
-      deployment: latestDeployment,
-      status: deploymentStatus
-    };
+    try {
+      const statusResponse = execSync(
+        `gh api repos/${REPO_OWNER}/${REPO_NAME}/deployments/${latestDeployment.id}/statuses --jq '.[0]'`,
+        { encoding: 'utf8' }
+      ).trim();
+      deploymentStatus = statusResponse && statusResponse !== 'null' ? JSON.parse(statusResponse) : null;
+    } catch { /* ignore */ }
+
+    return { deployment: latestDeployment, status: deploymentStatus };
   } catch (error) {
     logError(`Failed to fetch deployment: ${error.message}`);
     return null;
@@ -170,17 +156,11 @@ async function fetchLatestDeployment() {
  */
 async function checkActiveWorkflows() {
   try {
-    const ghCommand = `gh api repos/${REPO_OWNER}/${REPO_NAME}/actions/runs --jq '.workflow_runs[] | select(.status == "in_progress" or .status == "queued") | {name: .name, status: .status, html_url: .html_url, head_sha: .head_sha}'`;
-
-    const response = execSync(ghCommand, { encoding: 'utf8' }).trim();
-
-    if (!response) {
-      return [];
-    }
-
-    // Parse multiple JSON objects (one per line)
-    const lines = response.split('\n').filter(line => line.trim());
-    return lines.map(line => JSON.parse(line));
+    const response = execSync(
+      `gh run list --limit 10 --json status,name --jq '[.[] | select(.status == "in_progress" or .status == "queued")]'`,
+      { encoding: 'utf8', cwd: rootDir }
+    ).trim();
+    return response ? JSON.parse(response) : [];
   } catch (error) {
     logWarning(`Could not check GitHub Actions status: ${error.message}`);
     return [];
@@ -259,14 +239,19 @@ async function validateDeployment() {
     logInfo(`📍 ${currentBranch}@${currentCommit.substring(0, 8)}`);
   }
 
-  // Fetch Pages configuration
-  const pagesInfo = await fetchPagesDeployment();
+  // Run all checks in parallel
+  const [pagesInfo, deploymentInfo, activeWorkflows, accessibility] = await Promise.all([
+    fetchPagesDeployment(),
+    fetchLatestDeployment(),
+    checkActiveWorkflows(),
+    testSiteAccessibility(),
+  ]);
+
+  // Pages config
   if (pagesInfo) {
-    // Detect deployment method
     if (pagesInfo.build_type === 'workflow') {
       logSuccess('✨ GitHub Actions deployment (Modern)');
       if (pagesInfo.source?.branch === 'gh-pages') {
-        // Attempt to fix the configuration silently
         await fixPagesConfiguration(pagesInfo);
       }
     } else if (pagesInfo.source?.branch) {
@@ -274,11 +259,9 @@ async function validateDeployment() {
     }
   }
 
-  // Fetch latest deployment
-  const deploymentInfo = await fetchLatestDeployment();
+  // Deployment info
   if (deploymentInfo) {
     const { deployment, status } = deploymentInfo;
-
     const deployedSha = deployment.sha?.substring(0, 8) || 'Unknown';
     const deploymentTime = formatTimestamp(deployment.created_at);
 
@@ -286,23 +269,18 @@ async function validateDeployment() {
       const statusColor = status.state === 'success' ? colors.green :
         status.state === 'failure' ? colors.red :
           status.state === 'pending' ? colors.yellow : colors.white;
-
       log(`\n📦 Deployment: ${status.state} | ${deployedSha} | ${deploymentTime}`, statusColor);
     } else {
       logInfo(`\n📦 Deployment: ${deployedSha} | ${deploymentTime}`);
     }
 
-    // Check if current commit matches deployed commit
     if (currentCommit && deployment.sha) {
       const isCurrentDeployed = currentCommit.startsWith(deployment.sha) || deployment.sha.startsWith(currentCommit);
-
       if (isCurrentDeployed) {
         logSuccess('✅ Current commit deployed');
       } else {
-        const deploymentTime = new Date(deployment.created_at);
-        const now = new Date();
-        const diffMinutes = (now - deploymentTime) / (1000 * 60);
-
+        const depTime = new Date(deployment.created_at);
+        const diffMinutes = (Date.now() - depTime) / (1000 * 60);
         if (diffMinutes < 10 && status?.state === 'pending') {
           logInfo('🚀 Deployment in progress');
         } else if (diffMinutes < 10 && status?.state === 'success') {
@@ -314,16 +292,12 @@ async function validateDeployment() {
     }
   }
 
-  // Check for active workflows
-  const activeWorkflows = await checkActiveWorkflows();
+  // Active workflows
   if (activeWorkflows.length > 0) {
-    const workflowNames = activeWorkflows.map(w => w.name).join(', ');
-    logInfo(`⚡ Active: ${workflowNames}`);
+    logInfo(`⚡ Active: ${activeWorkflows.map(w => w.name).join(', ')}`);
   }
 
-  // Test site accessibility with performance metrics
-  const accessibility = await testSiteAccessibility();
-
+  // Site accessibility
   if (accessibility.accessible) {
     const perfInfo = accessibility.responseTime ? ` | ${accessibility.responseTime}ms` : '';
     const sizeInfo = accessibility.size ? ` | ${accessibility.size}KB` : '';
@@ -332,62 +306,46 @@ async function validateDeployment() {
     logError(`🌐 Site not accessible (HTTP ${accessibility.httpCode})`);
   }
 
-  // Final summary
+  // Overall status
   let overallStatus = 'UNKNOWN';
   let statusColor = colors.white;
 
-  // Determine status based on available information
   if (accessibility.accessible) {
     if (deploymentInfo?.status?.state === 'success') {
       if (activeWorkflows.length > 0 && currentCommit && deploymentInfo?.deployment?.sha &&
         !currentCommit.startsWith(deploymentInfo.deployment.sha)) {
-        overallStatus = 'UPDATING';
-        statusColor = colors.yellow;
+        overallStatus = 'UPDATING'; statusColor = colors.yellow;
       } else {
-        overallStatus = 'HEALTHY';
-        statusColor = colors.green;
+        overallStatus = 'HEALTHY'; statusColor = colors.green;
       }
     } else if (deploymentInfo?.status?.state === 'pending' || activeWorkflows.length > 0) {
-      overallStatus = 'DEPLOYING';
-      statusColor = colors.yellow;
+      overallStatus = 'DEPLOYING'; statusColor = colors.yellow;
     } else if (deploymentInfo?.status?.state === 'failure') {
-      overallStatus = 'FAILED';
-      statusColor = colors.red;
+      overallStatus = 'FAILED'; statusColor = colors.red;
     } else {
-      overallStatus = 'ACCESSIBLE';
-      statusColor = colors.green;
+      overallStatus = 'ACCESSIBLE'; statusColor = colors.green;
     }
   } else {
-    if (activeWorkflows.length > 0) {
-      overallStatus = 'DEPLOYING';
-      statusColor = colors.yellow;
-    } else {
-      overallStatus = 'INACCESSIBLE';
-      statusColor = colors.red;
-    }
+    overallStatus = activeWorkflows.length > 0 ? 'DEPLOYING' : 'INACCESSIBLE';
+    statusColor = activeWorkflows.length > 0 ? colors.yellow : colors.red;
   }
 
   log(`\n📊 Status: ${overallStatus}`, colors.bright + statusColor);
-
   console.log('='.repeat(40));
-
-  // Enhanced final message with temporal context
   logInfo(`🌐 ${PAGES_URL}`);
-  
-  // Add deployment timing context
+
   if (deploymentInfo?.deployment) {
     const deployTime = formatTimestamp(deploymentInfo.deployment.created_at);
     const timeAgo = deployTime.split('(')[1]?.replace(')', '') || 'recently';
     logInfo(`⏰ Last deploy: ${timeAgo}`);
   }
-  
-  // Add performance context if available
+
   if (accessibility.accessible && accessibility.responseTime) {
-    const perfStatus = accessibility.responseTime < 200 ? '⚡ Fast' : 
-                      accessibility.responseTime < 500 ? '🟡 Good' : '🔴 Slow';
+    const perfStatus = accessibility.responseTime < 200 ? '⚡ Fast' :
+      accessibility.responseTime < 500 ? '🟡 Good' : '🔴 Slow';
     logInfo(`${perfStatus} response: ${accessibility.responseTime}ms`);
   }
-  
+
   console.log('='.repeat(40));
 
   return overallStatus === 'HEALTHY' || overallStatus === 'ACCESSIBLE' || overallStatus === 'UPDATING' || overallStatus === 'DEPLOYING';
