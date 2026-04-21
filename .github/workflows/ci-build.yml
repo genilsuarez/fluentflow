@@ -18,8 +18,6 @@ jobs:
   build:
     name: Build Application
     runs-on: ubuntu-latest
-    outputs:
-      artifact-name: build-files-${{ github.sha }}
     steps:
       - uses: actions/checkout@v4
 
@@ -28,11 +26,13 @@ jobs:
           node-version: '20'
           cache: 'npm'
 
-      - run: npm ci --prefer-offline --no-audit
+      - name: Install dependencies
+        run: npm ci --prefer-offline --no-audit
 
-      - run: npm run build
+      - name: Build
+        run: npm run build
 
-      - name: Verify build output
+      - name: Verify
         run: |
           [ -f "dist/index.html" ] || { echo "❌ index.html not found"; exit 1; }
           echo "✅ Build OK"
@@ -42,3 +42,4 @@ jobs:
           name: build-files-${{ github.sha }}
           path: dist/
           retention-days: 7
+          compression-level: 1

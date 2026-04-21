@@ -27,44 +27,39 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
       - name: Wait for CI pipelines
         if: inputs.force-deploy != true
         run: |
           COMMIT_SHA="${{ github.sha }}"
-          echo "⏳ Waiting for CI Build and CI Quality to complete for $COMMIT_SHA..."
+          echo "⏳ Waiting for CI Build + CI Quality ($COMMIT_SHA)..."
 
-          # Poll every 15s, timeout after 10 min
           TIMEOUT=600
           ELAPSED=0
           INTERVAL=8
 
           while [ $ELAPSED -lt $TIMEOUT ]; do
-            BUILD_STATUS=$(gh api repos/${{ github.repository }}/actions/runs \
+            # Fetch both statuses in parallel using temp files
+            gh api repos/${{ github.repository }}/actions/runs \
               --jq "[.workflow_runs[] | select(.head_sha == \"$COMMIT_SHA\" and .name == \"CI Build\")] | .[0].conclusion" \
-              2>/dev/null | tr -d '"')
-
-            QUALITY_STATUS=$(gh api repos/${{ github.repository }}/actions/runs \
+              2>/dev/null | tr -d '"' > /tmp/build_status &
+            gh api repos/${{ github.repository }}/actions/runs \
               --jq "[.workflow_runs[] | select(.head_sha == \"$COMMIT_SHA\" and .name == \"CI Quality\")] | .[0].conclusion" \
-              2>/dev/null | tr -d '"')
+              2>/dev/null | tr -d '"' > /tmp/quality_status &
+            wait
 
-            echo "  CI Build: ${BUILD_STATUS:-running...}  |  CI Quality: ${QUALITY_STATUS:-running...}  (${ELAPSED}s)"
+            BUILD_STATUS=$(cat /tmp/build_status)
+            QUALITY_STATUS=$(cat /tmp/quality_status)
 
-            # Both succeeded
+            echo "  [${ELAPSED}s] CI Build: ${BUILD_STATUS:-running}  |  CI Quality: ${QUALITY_STATUS:-running}"
+
             if [[ "$BUILD_STATUS" == "success" && "$QUALITY_STATUS" == "success" ]]; then
-              echo "✅ All CI pipelines passed"
+              echo "✅ CI passed"
               break
             fi
 
-            # Any failure → abort immediately
-            if [[ "$BUILD_STATUS" == "failure" || "$BUILD_STATUS" == "cancelled" ]]; then
-              echo "❌ CI Build failed — aborting deploy"
-              exit 1
-            fi
-            if [[ "$QUALITY_STATUS" == "failure" || "$QUALITY_STATUS" == "cancelled" ]]; then
-              echo "❌ CI Quality failed — aborting deploy"
+            if [[ "$BUILD_STATUS" == "failure" || "$BUILD_STATUS" == "cancelled" ||
+                  "$QUALITY_STATUS" == "failure" || "$QUALITY_STATUS" == "cancelled" ]]; then
+              echo "❌ CI failed — aborting deploy"
               exit 1
             fi
 
@@ -72,11 +67,7 @@ jobs:
             ELAPSED=$((ELAPSED + INTERVAL))
           done
 
-
-          if [ $ELAPSED -ge $TIMEOUT ]; then
-            echo "❌ Timeout waiting for CI pipelines"
-            exit 1
-          fi
+          [ $ELAPSED -ge $TIMEOUT ] && { echo "❌ Timeout"; exit 1; }
         env:
           GH_TOKEN: ${{ github.token }}
 
@@ -85,51 +76,25 @@ jobs:
           COMMIT_SHA="${{ github.sha }}"
           ARTIFACT_NAME="build-files-$COMMIT_SHA"
 
-          echo "🔍 Looking for build artifacts for commit: $COMMIT_SHA"
-
           BUILD_RUN_ID=$(gh api repos/${{ github.repository }}/actions/runs \
             --jq "[.workflow_runs[] | select(.head_sha == \"$COMMIT_SHA\" and .name == \"CI Build\" and .conclusion == \"success\")] | .[0].id" \
             | tr -d '"')
 
-          if [ -z "$BUILD_RUN_ID" ] || [ "$BUILD_RUN_ID" = "null" ]; then
-            echo "❌ No successful CI Build run found for commit $COMMIT_SHA"
-            exit 1
-          fi
-
-          echo "✅ Found CI Build run: $BUILD_RUN_ID"
+          [ -z "$BUILD_RUN_ID" ] || [ "$BUILD_RUN_ID" = "null" ] && { echo "❌ No CI Build run found"; exit 1; }
 
           ARTIFACT_URL=$(gh api repos/${{ github.repository }}/actions/runs/$BUILD_RUN_ID/artifacts \
             --jq ".artifacts[] | select(.name == \"$ARTIFACT_NAME\") | .archive_download_url")
 
-          if [ -z "$ARTIFACT_URL" ] || [ "$ARTIFACT_URL" = "null" ]; then
-            echo "❌ Artifact '$ARTIFACT_NAME' not found or expired"
-            exit 1
-          fi
+          [ -z "$ARTIFACT_URL" ] || [ "$ARTIFACT_URL" = "null" ] && { echo "❌ Artifact not found"; exit 1; }
 
-          echo "✅ Found artifact, downloading..."
           mkdir -p dist
-          curl -L -H "Authorization: token ${{ github.token }}" \
+          curl -fsSL -H "Authorization: token ${{ github.token }}" \
             -H "Accept: application/vnd.github.v3+json" \
             "$ARTIFACT_URL" -o artifact.zip
 
-          if [ ! -f artifact.zip ] || [ ! -s artifact.zip ]; then
-            echo "❌ Failed to download artifact"
-            exit 1
-          fi
-
-          if ! unzip -q artifact.zip -d dist/; then
-            echo "❌ Failed to extract artifact"
-            exit 1
-          fi
-
-          rm artifact.zip
-
-          if [ ! -f "dist/index.html" ]; then
-            echo "❌ Extracted artifact is missing index.html"
-            exit 1
-          fi
-
-          echo "✅ Artifacts downloaded and verified"
+          unzip -q artifact.zip -d dist/ && rm artifact.zip
+          [ -f "dist/index.html" ] || { echo "❌ Missing index.html"; exit 1; }
+          echo "✅ Artifacts ready"
         env:
           GH_TOKEN: ${{ github.token }}
 
@@ -146,6 +111,4 @@ jobs:
         uses: actions/deploy-pages@v4
 
       - name: Deployment success
-        run: |
-          echo "🎉 Deployment successful!"
-          echo "📍 URL: ${{ steps.deployment.outputs.page_url }}"
+        run: echo "🎉 ${{ steps.deployment.outputs.page_url }}"
