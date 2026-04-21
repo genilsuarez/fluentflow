@@ -1,10 +1,7 @@
 name: CD Deploy
 
 on:
-  workflow_run:
-    workflows: ["CI Build", "CI Quality", "CI Security"]
-    types:
-      - completed
+  push:
     branches: [main]
   workflow_dispatch:
     inputs:
@@ -25,171 +22,113 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  check-pipelines:
-    name: Check All Pipelines
-    runs-on: ubuntu-latest
-    if: github.event.workflow_run.conclusion == 'success' || inputs.force-deploy == true
-    outputs:
-      should-deploy: ${{ steps.pipeline-check.outputs.should_deploy }}
-      commit-sha: ${{ steps.commit-details.outputs.commit_sha }}
-    steps:
-      - name: Get commit details
-        id: commit-details
-        run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            COMMIT_SHA="${{ github.sha }}"
-          else
-            COMMIT_SHA="${{ github.event.workflow_run.head_sha }}"
-          fi
-          echo "commit_sha=$COMMIT_SHA" >> $GITHUB_OUTPUT
-
-      - name: Check pipeline status
-        id: pipeline-check
-        run: |
-          COMMIT_SHA="${{ steps.commit-details.outputs.commit_sha }}"
-          
-          if [ "${{ inputs.force-deploy }}" = "true" ]; then
-            echo "🚀 Force deploy enabled"
-            echo "should_deploy=true" >> $GITHUB_OUTPUT
-            exit 0
-          fi
-          
-          echo "🔍 Checking all CI pipelines for commit: $COMMIT_SHA"
-          echo "🎯 Triggered by: ${{ github.event.workflow_run.name }}"
-          
-          # Wait a moment for API consistency
-          sleep 5
-          
-          # Get workflow runs for this commit with retry logic
-          for i in {1..5}; do
-            echo "📡 API call attempt $i/5..."
-            
-            QUALITY_STATUS=$(gh api repos/${{ github.repository }}/actions/runs --jq ".workflow_runs[] | select(.head_sha == \"$COMMIT_SHA\" and .name == \"CI Quality\") | .conclusion" | head -1)
-            SECURITY_STATUS=$(gh api repos/${{ github.repository }}/actions/runs --jq ".workflow_runs[] | select(.head_sha == \"$COMMIT_SHA\" and .name == \"CI Security\") | .conclusion" | head -1)
-            BUILD_STATUS=$(gh api repos/${{ github.repository }}/actions/runs --jq ".workflow_runs[] | select(.head_sha == \"$COMMIT_SHA\" and .name == \"CI Build\") | .conclusion" | head -1)
-            
-            echo "📊 Pipeline Status (attempt $i):"
-            echo "- Quality: ${QUALITY_STATUS:-❓ not found}"
-            echo "- Security: ${SECURITY_STATUS:-❓ not found}"
-            echo "- Build: ${BUILD_STATUS:-❓ not found}"
-            
-            # Check if all pipelines are found and successfully completed
-            if [[ "$QUALITY_STATUS" == "success" && "$SECURITY_STATUS" == "success" && "$BUILD_STATUS" == "success" ]]; then
-              echo "✅ All pipelines found and succeeded"
-              break
-            fi
-            
-            # If any pipeline failed, exit immediately
-            if [[ "$QUALITY_STATUS" == "failure" || "$SECURITY_STATUS" == "failure" || "$BUILD_STATUS" == "failure" ]]; then
-              echo "❌ At least one pipeline failed - stopping deployment"
-              echo "should_deploy=false" >> $GITHUB_OUTPUT
-              exit 1
-            fi
-            
-            if [ $i -lt 5 ]; then
-              echo "⏳ Waiting 15s before retry..."
-              sleep 15
-            fi
-          done
-          
-          # Final status check
-          echo "🔍 Final pipeline status:"
-          echo "- Quality: $QUALITY_STATUS"
-          echo "- Security: $SECURITY_STATUS" 
-          echo "- Build: $BUILD_STATUS"
-          
-          if [[ "$QUALITY_STATUS" == "success" && "$SECURITY_STATUS" == "success" && "$BUILD_STATUS" == "success" ]]; then
-            echo "should_deploy=true" >> $GITHUB_OUTPUT
-            echo "✅ All CI pipelines succeeded - deployment approved"
-          else
-            echo "should_deploy=false" >> $GITHUB_OUTPUT
-            echo "❌ Deployment blocked - not all pipelines succeeded"
-            echo "📋 This will cause the workflow to be skipped (expected behavior)"
-            exit 1
-          fi
-        env:
-          GH_TOKEN: ${{ github.token }}
-
   deploy:
     name: Deploy to Production
     runs-on: ubuntu-latest
-    needs: check-pipelines
-    if: needs.check-pipelines.outputs.should-deploy == 'true'
     environment: production
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Wait for CI pipelines
+        if: inputs.force-deploy != true
+        run: |
+          COMMIT_SHA="${{ github.sha }}"
+          echo "⏳ Waiting for CI Build and CI Quality to complete for $COMMIT_SHA..."
+
+          # Poll every 15s, timeout after 10 min
+          TIMEOUT=600
+          ELAPSED=0
+          INTERVAL=15
+
+          while [ $ELAPSED -lt $TIMEOUT ]; do
+            BUILD_STATUS=$(gh api repos/${{ github.repository }}/actions/runs \
+              --jq "[.workflow_runs[] | select(.head_sha == \"$COMMIT_SHA\" and .name == \"CI Build\")] | .[0].conclusion" \
+              2>/dev/null | tr -d '"')
+
+            QUALITY_STATUS=$(gh api repos/${{ github.repository }}/actions/runs \
+              --jq "[.workflow_runs[] | select(.head_sha == \"$COMMIT_SHA\" and .name == \"CI Quality\")] | .[0].conclusion" \
+              2>/dev/null | tr -d '"')
+
+            echo "  CI Build: ${BUILD_STATUS:-running...}  |  CI Quality: ${QUALITY_STATUS:-running...}  (${ELAPSED}s)"
+
+            # Both succeeded
+            if [[ "$BUILD_STATUS" == "success" && "$QUALITY_STATUS" == "success" ]]; then
+              echo "✅ All CI pipelines passed"
+              break
+            fi
+
+            # Any failure → abort immediately
+            if [[ "$BUILD_STATUS" == "failure" || "$BUILD_STATUS" == "cancelled" ]]; then
+              echo "❌ CI Build failed — aborting deploy"
+              exit 1
+            fi
+            if [[ "$QUALITY_STATUS" == "failure" || "$QUALITY_STATUS" == "cancelled" ]]; then
+              echo "❌ CI Quality failed — aborting deploy"
+              exit 1
+            fi
+
+            sleep $INTERVAL
+            ELAPSED=$((ELAPSED + INTERVAL))
+          done
+
+          if [ $ELAPSED -ge $TIMEOUT ]; then
+            echo "❌ Timeout waiting for CI pipelines"
+            exit 1
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}
+
       - name: Get build artifacts
         run: |
-          COMMIT_SHA="${{ needs.check-pipelines.outputs.commit-sha }}"
+          COMMIT_SHA="${{ github.sha }}"
           ARTIFACT_NAME="build-files-$COMMIT_SHA"
-          
+
           echo "🔍 Looking for build artifacts for commit: $COMMIT_SHA"
-          
-          # Get the build run ID
+
           BUILD_RUN_ID=$(gh api repos/${{ github.repository }}/actions/runs \
-            --jq ".workflow_runs[] | select(.head_sha == \"$COMMIT_SHA\" and .name == \"CI Build\" and .conclusion == \"success\") | .id" \
-            | head -1)
-          
-          if [ -z "$BUILD_RUN_ID" ]; then
+            --jq "[.workflow_runs[] | select(.head_sha == \"$COMMIT_SHA\" and .name == \"CI Build\" and .conclusion == \"success\")] | .[0].id" \
+            | tr -d '"')
+
+          if [ -z "$BUILD_RUN_ID" ] || [ "$BUILD_RUN_ID" = "null" ]; then
             echo "❌ No successful CI Build run found for commit $COMMIT_SHA"
-            echo "💡 This usually means:"
-            echo "   - The artifact expired (>7 days old)"
-            echo "   - The CI Build workflow didn't run for this commit"
-            echo ""
-            echo "🔧 To fix: Trigger a new build with:"
-            echo "   git commit --allow-empty -m 'chore: refresh build artifacts'"
-            echo "   git push"
             exit 1
           fi
-          
+
           echo "✅ Found CI Build run: $BUILD_RUN_ID"
-          
-          # Check if artifact exists
+
           ARTIFACT_URL=$(gh api repos/${{ github.repository }}/actions/runs/$BUILD_RUN_ID/artifacts \
             --jq ".artifacts[] | select(.name == \"$ARTIFACT_NAME\") | .archive_download_url")
-          
-          if [ -z "$ARTIFACT_URL" ]; then
+
+          if [ -z "$ARTIFACT_URL" ] || [ "$ARTIFACT_URL" = "null" ]; then
             echo "❌ Artifact '$ARTIFACT_NAME' not found or expired"
-            echo "💡 Artifacts are retained for 7 days only"
-            echo ""
-            echo "🔧 To fix: Trigger a new build with:"
-            echo "   git commit --allow-empty -m 'chore: refresh build artifacts'"
-            echo "   git push"
             exit 1
           fi
-          
+
           echo "✅ Found artifact, downloading..."
-          
-          # Download artifacts
           mkdir -p dist
           curl -L -H "Authorization: token ${{ github.token }}" \
             -H "Accept: application/vnd.github.v3+json" \
             "$ARTIFACT_URL" -o artifact.zip
-          
-          # Verify download
+
           if [ ! -f artifact.zip ] || [ ! -s artifact.zip ]; then
-            echo "❌ Failed to download artifact or file is empty"
+            echo "❌ Failed to download artifact"
             exit 1
           fi
-          
-          # Unzip with error handling
+
           if ! unzip -q artifact.zip -d dist/; then
-            echo "❌ Failed to extract artifact (corrupted or invalid zip)"
-            echo "📋 Artifact may be corrupted or expired"
+            echo "❌ Failed to extract artifact"
             exit 1
           fi
-          
+
           rm artifact.zip
-          
-          # Verify extracted files
+
           if [ ! -f "dist/index.html" ]; then
             echo "❌ Extracted artifact is missing index.html"
             exit 1
           fi
-          
-          echo "✅ Artifacts downloaded and verified successfully"
+
+          echo "✅ Artifacts downloaded and verified"
         env:
           GH_TOKEN: ${{ github.token }}
 

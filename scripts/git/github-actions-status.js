@@ -505,6 +505,76 @@ function hasActiveWorkflows() {
 }
 
 /**
+ * Wait for CI Build and CI Quality to complete for the current commit.
+ * Polls every 10s. Exits 0 on success, 1 on failure/timeout.
+ */
+function waitForCI(timeoutSeconds = 300) {
+  const latestCommit = getLatestCommit();
+  logInfo(`⏳ Waiting for CI (Build + Quality) — commit ${latestCommit.slice(0, 8)}`);
+  logInfo('Press Ctrl+C to stop\n');
+
+  const CI_WORKFLOWS = ['CI Build', 'CI Quality'];
+  const INTERVAL = 10;
+  const start = Date.now();
+
+  const poll = () => {
+    const elapsed = Math.round((Date.now() - start) / 1000);
+
+    if (elapsed >= timeoutSeconds) {
+      logError(`❌ Timeout after ${timeoutSeconds}s waiting for CI`);
+      process.exit(1);
+    }
+
+    let runs;
+    try {
+      runs = getWorkflowRuns(20);
+    } catch {
+      logWarning('  Could not fetch runs, retrying...');
+      setTimeout(poll, INTERVAL * 1000);
+      return;
+    }
+
+    const currentRuns = runs.filter(r => r.headSha === latestCommit);
+
+    const statuses = CI_WORKFLOWS.map(name => {
+      const run = currentRuns
+        .filter(r => r.workflowName === name)
+        .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))[0];
+      return { name, status: run?.status, conclusion: run?.conclusion };
+    });
+
+    const statusLine = statuses
+      .map(s => {
+        if (!s.status) return `${s.name}: ⏳ queued`;
+        if (s.status !== 'completed') return `${s.name}: 🔄 running`;
+        if (s.conclusion === 'success') return `${s.name}: ✅`;
+        return `${s.name}: ❌ ${s.conclusion}`;
+      })
+      .join('  |  ');
+
+    logInfo(`  [${elapsed}s] ${statusLine}`);
+
+    // Any failure → abort
+    const failed = statuses.find(s => s.status === 'completed' && s.conclusion !== 'success' && s.conclusion !== null);
+    if (failed) {
+      logError(`\n❌ ${failed.name} ${failed.conclusion} — deploy aborted`);
+      process.exit(1);
+    }
+
+    // All succeeded
+    const allDone = statuses.every(s => s.status === 'completed' && s.conclusion === 'success');
+    if (allDone) {
+      logSuccess(`\n✅ CI passed in ${elapsed}s — CD Deploy is running`);
+      return;
+    }
+
+    setTimeout(poll, INTERVAL * 1000);
+  };
+
+  poll();
+}
+
+/**
  * Watch workflow status (polling) - stops automatically when all workflows complete
  */
 function watchStatus(baseInterval = 30) {
@@ -701,6 +771,10 @@ function main() {
       showCurrentStatus();
       break;
 
+    case 'ci-wait':
+      waitForCI(parseInt(args[1]) || 300);
+      break;
+
     case 'watch':
     case 'w':
       const interval = parseInt(args[1]) || 30;
@@ -748,4 +822,4 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   main();
 }
 
-export { checkGitHubCLI, getWorkflowRuns, showWorkflowStatus, showCurrentStatus, watchStatus };
+export { checkGitHubCLI, getWorkflowRuns, showWorkflowStatus, showCurrentStatus, watchStatus, waitForCI };
