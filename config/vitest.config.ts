@@ -8,19 +8,12 @@ export default defineConfig({
   },
   test: { 
     globals: true,
-    environment: 'jsdom',
+    environment: 'node',  // Default: node (fast). jsdom only where needed via @vitest-environment
     setupFiles: [resolve(__dirname, '../tests/setup.ts')],
     // CSS testing support
     css: {
       modules: {
         classNameStrategy: 'stable'
-      }
-    },
-    // Environment configuration for CSS testing
-    environmentOptions: {
-      jsdom: {
-        resources: 'usable',
-        runScripts: 'dangerously'
       }
     },
     // Test patterns
