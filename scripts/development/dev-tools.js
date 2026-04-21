@@ -193,8 +193,7 @@ const workflows = {
     steps: [
       { type: 'command', cmd: 'node scripts/git/smart-commit.js --stage-all --auto --allow-empty', desc: 'Pre-build commit (clean working directory)' },
       { type: 'command', cmd: 'git pull --rebase', desc: 'Sync with remote' },
-      { type: 'pipeline', target: 'quality' },
-      { type: 'pipeline', target: 'security' },
+      { type: 'parallel-pipelines', targets: ['quality', 'security'] },
       { type: 'command', cmd: 'npx vite build --mode production --config config/vite.config.ts', desc: 'Build application (vite only)' },
       { type: 'command', cmd: 'node scripts/git/smart-commit.js --stage-all --push --auto --allow-empty', desc: 'Post-build commit & push' },
       { type: 'command', cmd: 'node scripts/git/github-actions-status.js watch-all', desc: 'Monitor pipeline (CI + CD)' },
@@ -305,6 +304,14 @@ async function runWorkflow(workflowKey) {
     if (step.type === 'pipeline') {
       const success = await runPipeline(step.target);
       if (!success) {
+        allSuccess = false;
+        break;
+      }
+    } else if (step.type === 'parallel-pipelines') {
+      // Run multiple pipelines concurrently
+      log(`⚡ Running pipelines in parallel: ${step.targets.join(', ')}`, colors.cyan);
+      const results = await Promise.all(step.targets.map(t => runPipeline(t)));
+      if (!results.every(Boolean)) {
         allSuccess = false;
         break;
       }
