@@ -373,8 +373,8 @@ html.dark {
   display: flex;
   align-items: center;
   gap: 4px;
-  padding: 3px 8px;
-  height: 26px;
+  padding: 0 10px;
+  height: 40px;
   background: transparent;
   color: #f59e0b;
   border-radius: 5px;
@@ -385,6 +385,8 @@ html.dark {
   letter-spacing: 0.08em;
   margin-left: var(--header-spacing-sm);
   animation: devPulse 3s ease-in-out infinite;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .dark .header-redesigned__dev-indicator {
