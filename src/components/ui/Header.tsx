@@ -1,6 +1,17 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import { createPortal } from 'react-dom';
-import { User, Settings, Menu, BarChart3, LogOut, WifiOff, Info, X, Home, Wrench } from 'lucide-react';
+import {
+  User,
+  Settings,
+  Menu,
+  BarChart3,
+  LogOut,
+  WifiOff,
+  Info,
+  X,
+  Home,
+  Wrench,
+} from 'lucide-react';
 import '../../styles/components/header.css';
 import { useAppStore } from '../../stores/appStore';
 import { useUserStore } from '../../stores/userStore';
