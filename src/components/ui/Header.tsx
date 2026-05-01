@@ -143,13 +143,15 @@ export const Header: React.FC<HeaderProps> = () => {
             </div>
           )}
           {developmentMode && (
-            <div
+            <button
               className="header-redesigned__dev-indicator"
               title={t('common.developmentModeActive')}
+              onClick={() => setShowSettings(true)}
+              aria-label={t('common.developmentModeActive')}
             >
               <Wrench size={11} className="header-redesigned__dev-icon" aria-hidden="true" />
               <span className="header-redesigned__dev-text">DEV</span>
-            </div>
+            </button>
           )}
         </div>
 
