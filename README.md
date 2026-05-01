@@ -62,3 +62,4 @@ tests/           setup.ts + 4 test files (api-service, progressionService, offli
 - No PostCSS, no autoprefixer (Vite handles it)
 - Data-driven: all content in `public/data/` JSON, no external APIs
 - CSS variables for light/dark theming
+- agregada por ClaudeCode
