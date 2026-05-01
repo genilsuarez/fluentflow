@@ -1,6 +1,6 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import { createPortal } from 'react-dom';
-import { User, Settings, Menu, BarChart3, LogOut, WifiOff, Info, X, Home } from 'lucide-react';
+import { User, Settings, Menu, BarChart3, LogOut, WifiOff, Info, X, Home, Wrench } from 'lucide-react';
 import '../../styles/components/header.css';
 import { useAppStore } from '../../stores/appStore';
 import { useUserStore } from '../../stores/userStore';
@@ -136,7 +136,7 @@ export const Header: React.FC<HeaderProps> = () => {
               className="header-redesigned__dev-indicator"
               title={t('common.developmentModeActive')}
             >
-              <span className="header-redesigned__dev-icon">🔧</span>
+              <Wrench size={11} className="header-redesigned__dev-icon" aria-hidden="true" />
               <span className="header-redesigned__dev-text">DEV</span>
             </div>
           )}
