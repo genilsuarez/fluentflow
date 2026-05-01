@@ -45,30 +45,43 @@ Sin esto, `build`, `validate:content`, `lint`, tests y cualquier script con deps
 2. Si existe: reportar al usuario y preguntar si quiere modificarlo, no duplicar
 3. Si no existe: seguir el flujo normal (leer tipos, extender interfaces, etc. — ver `AGENTS.md`)
 
-## Validaciones en sesiones cloud
+## Validaciones en sesiones cloud — modo express
 
-**Ejecutar (después del Paso 0):**
-- `npm run build` — compilación TypeScript + Vite (confirma que el código compile)
-- `npm run validate:content` — solo si se modificaron archivos en `public/data/`
+Filosofía: validar local lo suficiente para que CI no falle. No monitorear CI. Si pasa local, se pushea y se abre PR. Fin.
 
-**NO ejecutar en cloud (ya corren en CI al pushear):**
-- `npm run build:full` — pipeline completo, redundante con CI
-- `npm run lint`, `npm run test` — corren en `CI Quality`
-- `npm run security:audit`, `npm run security:scan` — corren en `CI Security`
-- `npm run analyze:unused`, `npm run analyze:deep` — solo bajo petición explícita
+**Obligatorio antes de commit, en este orden:**
 
-Razón: ahorra tiempo de sesión y rate limits. Si el `npm run build` pasa, CI validará el resto al pushear.
+1. `npx prettier --write <archivos tocados>` — CI Quality corre `prettier --check`; si no aplica esto, el PR falla.
+2. `npx eslint <archivos tocados> --max-warnings=0 --no-error-on-unmatched-pattern` — mismo criterio que CI.
+3. `npm run build` — TS + Vite compilation check.
+4. `npm run validate:content` — solo si se tocó `public/data/`.
 
-## Flujo esperado
+Si el archivo tocado es `.md`, `.json` o config que no pasa por ESLint, omitir el paso 2.
 
-1. Verificar `node_modules/`, correr `npm ci` si falta (Paso 0)
-2. Si la tarea es crear contenido: chequear primero que no exista
-3. Leer código relevante antes de cambiar (reglas de `AGENTS.md`)
-4. Hacer cambios acotados al alcance de la tarea
-5. Correr `npm run build` (y `validate:content` si aplica)
-6. Si compila, pushear la rama
-7. Abrir PR para que el usuario revise y mergee
-8. El deploy a Pages ocurre solo al mergear a `main`
+**NO ejecutar nunca en cloud:**
+
+- `npm run build:full`, `npm run test`, `npm run security:*`, `npm run analyze:*` — corren en CI o son pesados.
+- `gh pr checks --watch`, `gh run watch`, sondeo de CI — **prohibido monitorear**. Gasta tokens y no aporta.
+
+Razón: la prevención local (1-4) elimina >95% de fallos de CI. El resto se maneja solo: si CI falla por algo que no se pudo prevenir, el usuario abre una nueva sesión con el log.
+
+## Flujo esperado — express
+
+1. Verificar `node_modules/`, correr `npm ci` si falta (Paso 0).
+2. Si la tarea es crear contenido: chequear primero que no exista (grep en `learningModules.json`).
+3. Leer código relevante antes de cambiar (reglas de `AGENTS.md`).
+4. Hacer cambios acotados al alcance de la tarea.
+5. Correr las validaciones locales (prettier → eslint → build → validate:content si aplica).
+6. Commit + push del branch.
+7. Abrir PR con `gh pr create`.
+8. Activar auto-merge: `gh pr merge <num> --auto --squash --delete-branch`.
+   - GitHub mergeará solo cuando los 3 checks requeridos (`Build Application`, `Code Quality`, `Security Scan`) estén verdes.
+   - Si el comando falla por permisos del token (GitHub App de Anthropic sin `pull_requests: write`), reportarlo pero continuar. El PR queda abierto y el usuario mergea manualmente.
+   - **No monitorear** el estado del auto-merge ni los checks. GitHub hace el trabajo.
+9. Reportar al usuario: link del PR + resumen 1-2 líneas. **Terminar la sesión**.
+10. El merge (auto o manual) dispara `CD Deploy` → Pages. Nada más que hacer.
+
+Si alguna validación local falla en el paso 5: arreglar y repetir el paso 5 (no pushear con errores). Si un fallo es irresoluble en esta sesión, reportar al usuario con el error exacto y terminar.
 
 ## Boundaries — qué NO tocar sin permiso explícito
 
@@ -82,6 +95,7 @@ No modificar estos archivos salvo que el usuario lo pida directamente:
 - `bot/` completo (infra local separada)
 
 Si encuentras un error en estos archivos durante una tarea:
+
 1. Reportar el error al usuario
 2. Proponer el cambio
 3. Esperar confirmación antes de aplicarlo
