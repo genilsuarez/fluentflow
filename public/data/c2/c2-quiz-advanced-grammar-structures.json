@@ -1,0 +1,222 @@
+[
+  {
+    "question": "Which sentence uses correct negative inversion?",
+    "options": [
+      "Never I have seen such complexity in a legal argument.",
+      "Never have I seen such complexity in a legal argument.",
+      "Never I seen have such complexity in a legal argument.",
+      "Never seen have I such complexity in a legal argument."
+    ],
+    "correct": "Never have I seen such complexity in a legal argument.",
+    "explanation": "Negative adverbials like <Never> trigger subject-auxiliary inversion: <Never have I seen>."
+  },
+  {
+    "question": "Choose the correct cleft sentence: 'John submitted the report late.'",
+    "options": [
+      "It was John who submitted the report late.",
+      "It was John that he submitted the report late.",
+      "It was John which submitted the report late.",
+      "It was John whom submitted the report late."
+    ],
+    "correct": "It was John who submitted the report late.",
+    "explanation": "Cleft sentences use <It was + NP + who/that + clause>. For people, <who> is preferred."
+  },
+  {
+    "question": "Which sentence contains the correct formal subjunctive?",
+    "options": [
+      "It is imperative that she attends the hearing.",
+      "It is imperative that she attend the hearing.",
+      "It is imperative that she attended the hearing.",
+      "It is imperative that she is attending the hearing."
+    ],
+    "correct": "It is imperative that she attend the hearing.",
+    "explanation": "The mandative subjunctive uses the base form: <that she attend>, not the third-person -s form."
+  },
+  {
+    "question": "Identify the correct inverted conditional: 'If the data had been accurate, the conclusion would differ.'",
+    "options": [
+      "Has the data been accurate, the conclusion would differ.",
+      "Were the data to have been accurate, the conclusion would differ.",
+      "Had the data been accurate, the conclusion would differ.",
+      "Should the data had been accurate, the conclusion would differ."
+    ],
+    "correct": "Had the data been accurate, the conclusion would differ.",
+    "explanation": "<Had + subject + past participle> is the standard inverted form replacing <If + past perfect> in formal register."
+  },
+  {
+    "question": "Which sentence illustrates correct fronting for emphasis?",
+    "options": [
+      "The irony of the situation we did not appreciate until later.",
+      "The irony of the situation is that we did not appreciate until later.",
+      "We the irony did not appreciate of the situation until later.",
+      "Until later the irony of the situation we did not appreciate."
+    ],
+    "correct": "The irony of the situation we did not appreciate until later.",
+    "explanation": "<Fronting> moves the object to sentence-initial position for emphasis, with the subject and verb in normal order: <The irony... we did not appreciate>."
+  },
+  {
+    "question": "Choose the correct mixed conditional: 'She didn't study law, so she is not a barrister today.'",
+    "options": [
+      "If she had studied law, she would be a barrister today.",
+      "If she studied law, she would have been a barrister today.",
+      "If she had studied law, she would have been a barrister today.",
+      "If she studies law, she would be a barrister today."
+    ],
+    "correct": "If she had studied law, she would be a barrister today.",
+    "explanation": "A <mixed conditional> combines a past hypothetical (<had studied>) with a present result (<would be>), showing past cause and present consequence."
+  },
+  {
+    "question": "Which sentence uses an absolute participle clause correctly?",
+    "options": [
+      "The negotiations having concluded, the delegates departed.",
+      "Having concluded the negotiations, the delegates were departed.",
+      "The negotiations having been concluded the delegates, departed.",
+      "Having been the negotiations concluded, the delegates departed."
+    ],
+    "correct": "The negotiations having concluded, the delegates departed.",
+    "explanation": "An <absolute clause> has its own subject (<the negotiations>) + participial verb (<having concluded>), separate from the main clause subject."
+  },
+  {
+    "question": "Which option correctly uses ellipsis in formal discourse?",
+    "options": [
+      "She argued for reform; her colleague argued against it.",
+      "She argued for reform; her colleague argued against reform.",
+      "She argued for reform; her colleague did argue against.",
+      "She argued for reform; her colleague argued against reform did."
+    ],
+    "correct": "She argued for reform; her colleague argued against it.",
+    "explanation": "<Ellipsis> avoids repeating <reform> by substituting <it>; full repetition is stylistically weak at C2 level."
+  },
+  {
+    "question": "Select the correct sentence with a non-finite nominal clause as subject:",
+    "options": [
+      "To have dismissed the evidence without scrutiny was a serious oversight.",
+      "Having dismissed the evidence without scrutiny it was a serious oversight.",
+      "That dismissed the evidence without scrutiny was a serious oversight.",
+      "To dismissed the evidence without scrutiny was a serious oversight."
+    ],
+    "correct": "To have dismissed the evidence without scrutiny was a serious oversight.",
+    "explanation": "<To have + past participle> functions as a perfect infinitive subject clause, referring to a completed past action."
+  },
+  {
+    "question": "Which sentence correctly uses <scarcely ... when> to express immediacy?",
+    "options": [
+      "Scarcely the proposal had been submitted when objections arose.",
+      "Scarcely had the proposal been submitted when objections arose.",
+      "Scarcely had the proposal been submitted than objections arose.",
+      "Scarcely the proposal was submitted when objections arose."
+    ],
+    "correct": "Scarcely had the proposal been submitted when objections arose.",
+    "explanation": "<Scarcely ... when> triggers inversion (<had the proposal been>) and pairs with <when>, not <than> (which follows <no sooner>)."
+  },
+  {
+    "question": "Identify the grammatically correct formal passive construction:",
+    "options": [
+      "The hypothesis is considered to be supported by the evidence.",
+      "The hypothesis is considered that it is supported by the evidence.",
+      "The hypothesis is considered being supported by the evidence.",
+      "The hypothesis considers to be supported by the evidence."
+    ],
+    "correct": "The hypothesis is considered to be supported by the evidence.",
+    "explanation": "The <complex passive + infinitive> structure (<is considered to be>) is standard in academic and formal writing."
+  },
+  {
+    "question": "Which sentence demonstrates correct use of a <wh->-cleft for focus?",
+    "options": [
+      "What the committee recommended was a full independent inquiry.",
+      "What the committee recommended it was a full independent inquiry.",
+      "What recommended the committee was a full independent inquiry.",
+      "Which the committee recommended was a full independent inquiry."
+    ],
+    "correct": "What the committee recommended was a full independent inquiry.",
+    "explanation": "A <wh->-cleft (<What + clause + be + focus element>) highlights the new information at the end."
+  },
+  {
+    "question": "Choose the correct use of the mandative subjunctive in formal writing:",
+    "options": [
+      "The board proposed that the CEO resigns immediately.",
+      "The board proposed that the CEO resigned immediately.",
+      "The board proposed that the CEO resign immediately.",
+      "The board proposed that the CEO has resigned immediately."
+    ],
+    "correct": "The board proposed that the CEO resign immediately.",
+    "explanation": "Verbs of proposal (<propose>, <recommend>, <move>) trigger the mandative subjunctive: base form <resign>, not <resigns> or <resigned>."
+  },
+  {
+    "question": "Which sentence correctly uses a <participle clause> to condense information formally?",
+    "options": [
+      "Written in haste, the report contained several factual errors.",
+      "Being written in haste, the report it contained several factual errors.",
+      "The report written in haste and contained several factual errors.",
+      "Having written in haste, the report contained several factual errors."
+    ],
+    "correct": "Written in haste, the report contained several factual errors.",
+    "explanation": "A <passive participle clause> (<Written in haste>) modifies the subject (<the report>) concisely and correctly."
+  },
+  {
+    "question": "Select the sentence with correct use of <so ... as to> in formal register:",
+    "options": [
+      "The evidence was so compelling as to render further debate unnecessary.",
+      "The evidence was so compelling as to rendered further debate unnecessary.",
+      "The evidence was so compelling so as to render further debate unnecessary.",
+      "The evidence was such compelling as to render further debate unnecessary."
+    ],
+    "correct": "The evidence was so compelling as to render further debate unnecessary.",
+    "explanation": "<So + adjective + as to + infinitive> expresses result in formal register: <so compelling as to render>."
+  },
+  {
+    "question": "Which is the correct formal construction using <were + subject + to-infinitive>?",
+    "options": [
+      "Were the treaty to collapse, the entire framework would be at risk.",
+      "Were the treaty to collapsing, the entire framework would be at risk.",
+      "Were the treaty collapsing, the entire framework would be at risk.",
+      "Should the treaty were to collapse, the entire framework would be at risk."
+    ],
+    "correct": "Were the treaty to collapse, the entire framework would be at risk.",
+    "explanation": "<Were + subject + to + infinitive> is a formal conditional structure equivalent to <If + subject + were to>."
+  },
+  {
+    "question": "Identify the correct use of apposition in formal prose:",
+    "options": [
+      "The principal investigator, a leading authority on biomechanics, presented her findings.",
+      "The principal investigator who is a leading authority on biomechanics, she presented her findings.",
+      "The principal investigator, being a leading authority on biomechanics, she presented her findings.",
+      "The principal investigator and a leading authority on biomechanics presented her findings."
+    ],
+    "correct": "The principal investigator, a leading authority on biomechanics, presented her findings.",
+    "explanation": "<Apposition> places a noun phrase directly after another to identify or describe it, set off by commas, without a linking verb."
+  },
+  {
+    "question": "Which sentence uses the emphatic <do> correctly in formal written English?",
+    "options": [
+      "The researchers do acknowledge the limitations of the study.",
+      "The researchers does acknowledge the limitations of the study.",
+      "The researchers did acknowledged the limitations of the study.",
+      "The researchers do acknowledged the limitations of the study."
+    ],
+    "correct": "The researchers do acknowledge the limitations of the study.",
+    "explanation": "Emphatic <do> precedes the base form of the main verb (<do acknowledge>), providing contrastive or concessive stress in formal prose."
+  },
+  {
+    "question": "Choose the correct use of <not only ... but also> with inversion:",
+    "options": [
+      "Not only did the report identify flaws, but it also proposed solutions.",
+      "Not only the report identified flaws, but it also proposed solutions.",
+      "Not only did the report identified flaws, but it also proposed solutions.",
+      "Not only identified the report flaws, but it also proposed solutions."
+    ],
+    "correct": "Not only did the report identify flaws, but it also proposed solutions.",
+    "explanation": "<Not only> at the start of a clause triggers inversion: <did the report identify> (auxiliary + subject + base verb)."
+  },
+  {
+    "question": "Which sentence correctly employs a <nominalized> structure typical of formal academic writing?",
+    "options": [
+      "The analysis of the data led to a reassessment of the original hypothesis.",
+      "When they analysed the data, they reassessed the original hypothesis.",
+      "Analysing the data, they were led to reassess the original hypothesis.",
+      "After analysing the data, a reassessment of the original hypothesis occurred."
+    ],
+    "correct": "The analysis of the data led to a reassessment of the original hypothesis.",
+    "explanation": "<Nominalization> converts verbs into nouns (<analyse → analysis>, <reassess → reassessment>), creating the dense, impersonal style of formal academic prose."
+  }
+]
