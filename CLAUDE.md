@@ -74,15 +74,37 @@ Razón: la prevención local (1-4) elimina >95% de fallos de CI. El resto se man
 5. Correr las validaciones locales (prettier → eslint → build → validate:content si aplica).
 6. Commit + push del branch.
 7. Abrir PR con `gh pr create`.
-8. Mergear el PR inmediatamente: `gh pr merge <num> --squash --delete-branch`.
-   - Las validaciones locales del paso 5 ya confirmaron que el código está listo. No tiene sentido esperar a CI para volver a confirmar lo mismo.
-   - `main` está protegida con 3 checks (`Build Application`, `Code Quality`, `Security Scan`) y `strict: true` (rama debe estar al día). El merge se dispara cuando los checks completen.
-   - Si el PR queda bloqueado por `BEHIND` (rama detrás de main porque otro PR mergeó en paralelo): `gh api -X PUT repos/<owner>/<repo>/pulls/<num>/update-branch` y volver a intentar `gh pr merge`.
-   - **No monitorear** el estado ni los checks. Si falla el merge por permisos o bloqueos no resueltos, reportarlo al usuario y terminar. El PR queda abierto.
-9. Reportar al usuario: link del PR + resumen 1-2 líneas. **Terminar la sesión**.
-10. El merge dispara `CD Deploy` → Pages. Nada más que hacer.
+8. **Mergear el PR** — elegir la estrategia automáticamente según el estado:
 
-**Nota sobre `--auto`**: El flag `--auto` de `gh pr merge` arma un merge diferido ("auto-merge when ready"). En la práctica falla con `strict: true` porque no actualiza la rama cuando queda `BEHIND`, requiere intervención manual y genera fricción en el flujo express. **Preferir merge inmediato** (sin `--auto`). Usar `--auto` solo si el usuario lo pide explícitamente.
+   **a) Consultar estado una vez**:
+   ```bash
+   gh pr view <num> --json mergeStateStatus,statusCheckRollup
+   ```
+
+   **b) Decidir según el resultado** (orden de prioridad):
+
+   | Estado del PR | Acción |
+   |---|---|
+   | `CLEAN` (checks verdes, rama al día) | `gh pr merge <num> --squash --delete-branch` → mergea al instante |
+   | `BLOCKED` con checks `IN_PROGRESS` y otros PRs abiertos | `gh pr merge <num> --squash --delete-branch` tras esperar 60s y volver a consultar (evita quedar `BEHIND` por merges paralelos) |
+   | `BLOCKED` con checks `IN_PROGRESS` y ningún otro PR abierto | `gh pr merge <num> --auto --squash --delete-branch` (auto-merge seguro, nadie mergeará en paralelo) |
+   | `BEHIND` (otro PR mergeó antes) | `gh api -X PUT repos/<owner>/<repo>/pulls/<num>/update-branch` → esperar CI → mergear |
+   | `DIRTY` (conflicto) | reportar al usuario y terminar |
+
+   **c) Detección de concurrencia**:
+   ```bash
+   gh pr list --state open --json number --jq 'length'
+   ```
+   - `1` → este PR está solo → auto-merge es seguro si hace falta esperar
+   - `>1` → hay concurrencia → preferir merge inmediato tras esperar CI, evitar `--auto`
+
+   **Reglas invariantes**:
+   - Las validaciones locales del paso 5 ya confirmaron el código. El wait por CI es formalidad de branch protection.
+   - `main` está protegida con 3 checks y `strict: true`.
+   - **No polling**. Máximo un `sleep 60` + una reconsulta. Si sigue sin mergear, reportar y terminar.
+   - Si falla por permisos o conflicto, reportar y terminar. No insistir.
+9. Reportar al usuario: link del PR + resumen 1-2 líneas + método usado (`merged #N` / `auto-merge armado en #N` / `waiting CI en #N`). **Terminar la sesión**.
+10. El merge dispara `CD Deploy` → Pages. Nada más que hacer.
 
 ## Atajos en lenguaje natural (desde chat del celular)
 
@@ -90,22 +112,22 @@ Mapear frases cortas del usuario a comandos `gh` directamente, sin pedir confirm
 
 | Frase del usuario | Acción |
 |---|---|
-| `merge` | `gh pr merge <PR_actual> --squash --delete-branch` |
+| `merge` | Ejecutar lógica del paso 8 (elige `merge` o `auto-merge` según estado y concurrencia) |
+| `merge ya` / `merge ahora` | Forzar `gh pr merge <PR_actual> --squash --delete-branch` sin `--auto`. Si falla por `BLOCKED`/`BEHIND`, esperar 60s / `actualiza` y reintentar una vez. |
+| `auto-merge` | Forzar `gh pr merge <PR_actual> --auto --squash --delete-branch` (ignora concurrencia) |
 | `actualiza` | `gh api -X PUT repos/<owner>/<repo>/pulls/<PR_actual>/update-branch` |
-| `auto-merge` | `gh pr merge <PR_actual> --auto --squash --delete-branch` (solo si lo pide explícito) |
 | `cerrar` | `gh pr close <PR_actual> --delete-branch` |
 | `estado` | `gh pr view <PR_actual> --json state,mergeStateStatus,statusCheckRollup` resumido en 2 líneas |
 
-Variantes equivalentes aceptadas (mismo comando):
-- `merge` ≡ `mergea` ≡ `mergea ya` ≡ `merge ahora`
-- `actualiza` ≡ `update branch` ≡ `desbloquea` (para PRs `BEHIND`)
+Variantes equivalentes:
+- `merge` ≡ `mergea` (auto-decide estrategia)
+- `merge ya` ≡ `mergea ya` ≡ `merge ahora` ≡ `merge directo` (fuerza inmediato)
+- `actualiza` ≡ `update branch` ≡ `desbloquea`
 - `cerrar` ≡ `cierra el PR` ≡ `descarta`
 
 `<PR_actual>` = el PR abierto en la sesión actual. Si hay ambigüedad, el más reciente del branch activo.
 
-Si `merge` falla con `BEHIND`: ejecutar `actualiza` y reintentar `merge` sin preguntar.
-
-Regla: **un comando, una línea de respuesta**. Ejemplo: `✅ merged #5`. No explicar, no monitorear.
+Regla: **un comando, una línea de respuesta**. Ejemplo: `✅ merged #5` o `⏳ auto-merge armado en #5 (solo en cola)`. No explicar, no monitorear más allá de un reintento.
 
 Si alguna validación local falla en el paso 5: arreglar y repetir el paso 5 (no pushear con errores). Si un fallo es irresoluble en esta sesión, reportar al usuario con el error exacto y terminar.
 
