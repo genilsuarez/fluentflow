@@ -81,6 +81,26 @@ Razón: la prevención local (1-4) elimina >95% de fallos de CI. El resto se man
 9. Reportar al usuario: link del PR + resumen 1-2 líneas. **Terminar la sesión**.
 10. El merge (auto o manual) dispara `CD Deploy` → Pages. Nada más que hacer.
 
+## Atajos en lenguaje natural (desde chat del celular)
+
+Mapear frases cortas del usuario a comandos `gh` directamente, sin pedir confirmación ni explicar. Ejecutar y reportar en una línea.
+
+| Frase del usuario | Acción |
+|---|---|
+| `auto-merge` | `gh pr merge <PR_actual> --auto --squash --delete-branch` |
+| `merge` | `gh pr merge <PR_actual> --squash --delete-branch` |
+| `cerrar` | `gh pr close <PR_actual> --delete-branch` |
+| `estado` | `gh pr view <PR_actual> --json state,mergeStateStatus,statusCheckRollup` resumido en 2 líneas |
+
+Variantes equivalentes aceptadas (mismo comando):
+- `auto-merge` ≡ `activa auto-merge` ≡ `mergea cuando pase CI`
+- `merge` ≡ `mergea ya` ≡ `merge ahora`
+- `cerrar` ≡ `cierra el PR` ≡ `descarta`
+
+`<PR_actual>` = el PR abierto en la sesión actual. Si hay ambigüedad, el más reciente del branch activo.
+
+Regla: **un comando, una línea de respuesta**. Ejemplo: `✅ auto-merge activado en #5`. No explicar, no monitorear.
+
 Si alguna validación local falla en el paso 5: arreglar y repetir el paso 5 (no pushear con errores). Si un fallo es irresoluble en esta sesión, reportar al usuario con el error exacto y terminar.
 
 ## Boundaries — qué NO tocar sin permiso explícito
