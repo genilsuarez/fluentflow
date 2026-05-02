@@ -74,12 +74,15 @@ Razón: la prevención local (1-4) elimina >95% de fallos de CI. El resto se man
 5. Correr las validaciones locales (prettier → eslint → build → validate:content si aplica).
 6. Commit + push del branch.
 7. Abrir PR con `gh pr create`.
-8. Activar auto-merge: `gh pr merge <num> --auto --squash --delete-branch`.
-   - GitHub mergeará solo cuando los 3 checks requeridos (`Build Application`, `Code Quality`, `Security Scan`) estén verdes.
-   - Si el comando falla por permisos del token (GitHub App de Anthropic sin `pull_requests: write`), reportarlo pero continuar. El PR queda abierto y el usuario mergea manualmente.
-   - **No monitorear** el estado del auto-merge ni los checks. GitHub hace el trabajo.
+8. Mergear el PR inmediatamente: `gh pr merge <num> --squash --delete-branch`.
+   - Las validaciones locales del paso 5 ya confirmaron que el código está listo. No tiene sentido esperar a CI para volver a confirmar lo mismo.
+   - `main` está protegida con 3 checks (`Build Application`, `Code Quality`, `Security Scan`) y `strict: true` (rama debe estar al día). El merge se dispara cuando los checks completen.
+   - Si el PR queda bloqueado por `BEHIND` (rama detrás de main porque otro PR mergeó en paralelo): `gh api -X PUT repos/<owner>/<repo>/pulls/<num>/update-branch` y volver a intentar `gh pr merge`.
+   - **No monitorear** el estado ni los checks. Si falla el merge por permisos o bloqueos no resueltos, reportarlo al usuario y terminar. El PR queda abierto.
 9. Reportar al usuario: link del PR + resumen 1-2 líneas. **Terminar la sesión**.
-10. El merge (auto o manual) dispara `CD Deploy` → Pages. Nada más que hacer.
+10. El merge dispara `CD Deploy` → Pages. Nada más que hacer.
+
+**Nota sobre `--auto`**: El flag `--auto` de `gh pr merge` arma un merge diferido ("auto-merge when ready"). En la práctica falla con `strict: true` porque no actualiza la rama cuando queda `BEHIND`, requiere intervención manual y genera fricción en el flujo express. **Preferir merge inmediato** (sin `--auto`). Usar `--auto` solo si el usuario lo pide explícitamente.
 
 ## Atajos en lenguaje natural (desde chat del celular)
 
@@ -87,19 +90,22 @@ Mapear frases cortas del usuario a comandos `gh` directamente, sin pedir confirm
 
 | Frase del usuario | Acción |
 |---|---|
-| `auto-merge` | `gh pr merge <PR_actual> --auto --squash --delete-branch` |
 | `merge` | `gh pr merge <PR_actual> --squash --delete-branch` |
+| `actualiza` | `gh api -X PUT repos/<owner>/<repo>/pulls/<PR_actual>/update-branch` |
+| `auto-merge` | `gh pr merge <PR_actual> --auto --squash --delete-branch` (solo si lo pide explícito) |
 | `cerrar` | `gh pr close <PR_actual> --delete-branch` |
 | `estado` | `gh pr view <PR_actual> --json state,mergeStateStatus,statusCheckRollup` resumido en 2 líneas |
 
 Variantes equivalentes aceptadas (mismo comando):
-- `auto-merge` ≡ `activa auto-merge` ≡ `mergea cuando pase CI`
-- `merge` ≡ `mergea ya` ≡ `merge ahora`
+- `merge` ≡ `mergea` ≡ `mergea ya` ≡ `merge ahora`
+- `actualiza` ≡ `update branch` ≡ `desbloquea` (para PRs `BEHIND`)
 - `cerrar` ≡ `cierra el PR` ≡ `descarta`
 
 `<PR_actual>` = el PR abierto en la sesión actual. Si hay ambigüedad, el más reciente del branch activo.
 
-Regla: **un comando, una línea de respuesta**. Ejemplo: `✅ auto-merge activado en #5`. No explicar, no monitorear.
+Si `merge` falla con `BEHIND`: ejecutar `actualiza` y reintentar `merge` sin preguntar.
+
+Regla: **un comando, una línea de respuesta**. Ejemplo: `✅ merged #5`. No explicar, no monitorear.
 
 Si alguna validación local falla en el paso 5: arreglar y repetir el paso 5 (no pushear con errores). Si un fallo es irresoluble en esta sesión, reportar al usuario con el error exacto y terminar.
 
