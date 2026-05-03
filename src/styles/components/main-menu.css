@@ -10,9 +10,9 @@
   --grid-padding-desktop: 2px;
   --grid-padding-large-desktop: 2px;
 
-  /* Heights optimized for 4 columns grid - reduced 20% for compactness */
-  /* Mobile: 2 cols, ~3.2 rows visible */
-  --grid-height-mobile: calc((var(--card-height-mobile) * 4 + 0.5rem * 3 + 0.5rem) * 0.8);
+  /* Heights optimized for 4 columns grid */
+  /* Mobile: 2 cols, 4 rows fully visible */
+  --grid-height-mobile: calc(var(--card-height-mobile) * 4 + 0.5rem * 3 + 0.5rem);
 
   /* Tablet: 3 cols, ~3.2 rows visible */
   --grid-height-tablet: calc((var(--card-height-tablet) * 4 + 0.625rem * 3 + 0.625rem) * 0.8);
