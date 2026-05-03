@@ -28,13 +28,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          # PAT from repo owner — needed to bypass branch protection on main.
+          # Falls back to GITHUB_TOKEN if MAINTENANCE_PAT is not set (push
+          # will then fail with a clear "protected branch hook declined"
+          # message in the job summary instead of silently skipping).
+          token: ${{ secrets.MAINTENANCE_PAT || secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
       - name: Configure git identity
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # Use repo owner identity so the commit matches the PAT and
+          # passes branch protection (if configured to allow admin bypass).
+          git config user.name "genilsuarez"
+          git config user.email "genilsuarez@users.noreply.github.com"
 
       - name: Create maintenance commit
         id: commit
@@ -70,6 +76,8 @@ jobs:
 
       - name: Job summary
         if: always()
+        env:
+          HAS_PAT: ${{ secrets.MAINTENANCE_PAT != '' && 'yes' || 'no' }}
         run: |
           {
             echo "# Maintenance Run"
@@ -80,9 +88,16 @@ jobs:
             echo "| Branch | \`${{ github.ref_name }}\` |"
             echo "| Status | \`${{ steps.commit.outputs.status || 'failed' }}\` |"
             echo "| Commit | \`${{ steps.commit.outputs.sha || 'n/a' }}\` |"
+            echo "| PAT configured | \`$HAS_PAT\` |"
             echo "| Next run | ~5 days (cron \`0 0 */5 * *\`) |"
             echo ""
             echo "## Purpose"
             echo "Creates an empty commit to trigger CI Build, regenerating artifacts that GitHub"
             echo "expires after 7 days. Without this, CD Deploy cannot find artifacts for deploy."
+            echo ""
+            if [ "$HAS_PAT" = "no" ]; then
+              echo "## ⚠️ Missing PAT"
+              echo "\`MAINTENANCE_PAT\` secret is not set. Pushes to protected branches will fail."
+              echo "See: Settings → Secrets and variables → Actions → New repository secret."
+            fi
           } >> "$GITHUB_STEP_SUMMARY"
