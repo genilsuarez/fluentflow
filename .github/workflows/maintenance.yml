@@ -1,69 +1,88 @@
-name: Maintenance
+name: Maintenance - Refresh Artifacts
 
+# Run every 5 days to keep CI/CD artifacts fresh (GitHub expires them at 7 days)
 on:
   schedule:
-    # Runs every 5 days at 00:00 UTC to keep artifacts fresh
     - cron: '0 0 */5 * *'
   workflow_dispatch:
 
 permissions:
   contents: write
 
+concurrency:
+  group: maintenance-refresh
+  cancel-in-progress: false
+
 jobs:
-  keep-artifacts-fresh:
-    name: Keep Artifacts Fresh
+  refresh-artifacts:
+    name: Refresh CI/CD Artifacts
     runs-on: ubuntu-latest
+    # Guard: only run on schedule or manual dispatch. Prevents ghost runs that
+    # GitHub creates when this file is modified in a push (which would show as
+    # "No jobs were run" failures and send noisy emails).
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    outputs:
+      commit-sha: ${{ steps.commit.outputs.sha }}
+      status: ${{ steps.commit.outputs.status }}
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
 
-      - name: Configure git
+      - name: Configure git identity
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Create maintenance commit
+        id: commit
         run: |
-          echo "🔄 Creating maintenance commit to refresh artifacts..."
-          
-          # Check if there are any uncommitted changes
+          # Abort if working tree dirty (should not happen after fresh checkout)
           if ! git diff-index --quiet HEAD --; then
-            echo "⚠️ Uncommitted changes detected, skipping maintenance commit"
+            echo "::warning::Uncommitted changes detected, skipping maintenance commit"
+            echo "status=skipped" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          
-          # Create empty commit
+
           git commit --allow-empty -m "chore(maintenance): refresh build artifacts
 
-This automated commit keeps CI/CD artifacts fresh (7-day retention).
-Triggered by scheduled maintenance workflow every 5 days."
-          
-          echo "✅ Maintenance commit created"
+          Automated commit to keep CI/CD artifacts within the 7-day retention window.
+          Triggered by: ${{ github.event_name }}
+          Run: ${{ github.run_id }}"
 
-      - name: Push changes
+          SHA=$(git rev-parse --short HEAD)
+          echo "sha=$SHA" >> "$GITHUB_OUTPUT"
+          echo "status=created" >> "$GITHUB_OUTPUT"
+          echo "Created empty commit $SHA"
+
+      - name: Push commit
+        if: steps.commit.outputs.status == 'created'
         run: |
-          echo "🚀 Pushing maintenance commit..."
-          
-          # Try to push, handle rejection if remote has changes
-          if ! git push 2>&1; then
-            echo "⚠️ Push rejected - remote has new commits"
-            echo "🔄 Pulling remote changes and retrying..."
-            
-            # Pull with rebase to avoid merge commits
+          # Retry push if remote advanced during run
+          if ! git push; then
+            echo "Push rejected, pulling with rebase and retrying..."
             git pull --rebase
-            
-            # Try push again
             git push
           fi
-          
-          echo "✅ Maintenance commit pushed successfully"
+          echo "Pushed ${{ steps.commit.outputs.sha }} to ${{ github.ref_name }}"
 
-      - name: Summary
+      - name: Job summary
+        if: always()
         run: |
-          echo "📊 Maintenance Summary"
-          echo "===================="
-          echo "✅ Artifacts will be refreshed by CI/CD pipelines"
-          echo "⏰ Next maintenance: 5 days from now"
-          echo "🌐 Deployment will be updated automatically"
+          {
+            echo "# Maintenance Run"
+            echo ""
+            echo "| Field | Value |"
+            echo "|-------|-------|"
+            echo "| Trigger | \`${{ github.event_name }}\` |"
+            echo "| Branch | \`${{ github.ref_name }}\` |"
+            echo "| Status | \`${{ steps.commit.outputs.status || 'failed' }}\` |"
+            echo "| Commit | \`${{ steps.commit.outputs.sha || 'n/a' }}\` |"
+            echo "| Next run | ~5 days (cron \`0 0 */5 * *\`) |"
+            echo ""
+            echo "## Purpose"
+            echo "Creates an empty commit to trigger CI Build, regenerating artifacts that GitHub"
+            echo "expires after 7 days. Without this, CD Deploy cannot find artifacts for deploy."
+          } >> "$GITHUB_STEP_SUMMARY"
