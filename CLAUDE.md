@@ -3,6 +3,8 @@
 Fuente de verdad principal: `AGENTS.md` (reglas generales del proyecto, stack, arquitectura, BEM, validaciones).
 Este archivo solo contiene **ajustes específicos** cuando Claude Code corre en la nube (claude.ai/code).
 
+Convenciones compartidas con Kiro en `.kiro/steering/`: `app.md` (reglas de la app — complementa AGENTS.md), `tools.md` (browser tools y slash commands del CoderBot), `coderbot.md` (solo si se trabaja en `bot/`). Leer el que aplique a la tarea.
+
 ## Mapa rápido del repo
 
 - `src/` — código React + TypeScript (componentes, stores, hooks, utils)
