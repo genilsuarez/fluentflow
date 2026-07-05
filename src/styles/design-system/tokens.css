@@ -9,62 +9,62 @@
 /* === LEARN PLATFORM TOKENS — LIGHT === */
 :root {
   /* ─── Surface & Paper ─── */
-  --lp-bg: #FAF7F2;
-  --lp-bg-paper: #F5F1EB;
-  --lp-surface: #FFFFFF;
-  --lp-surface-raised: #FFFFFF;
-  --lp-surface-sunken: #F0EDE7;
+  --lp-bg: #faf7f2;
+  --lp-bg-paper: #f5f1eb;
+  --lp-surface: #ffffff;
+  --lp-surface-raised: #ffffff;
+  --lp-surface-sunken: #f0ede7;
 
   /* ─── Borders ─── */
-  --lp-border: #E8E0D4;
-  --lp-border-strong: #D4CABB;
-  --lp-border-subtle: #F0EBE3;
+  --lp-border: #e8e0d4;
+  --lp-border-strong: #d4cabb;
+  --lp-border-subtle: #f0ebe3;
 
   /* ─── Ink (Text) ─── */
-  --lp-ink: #2C2418;
-  --lp-ink-soft: #5E5041;
-  --lp-muted: #9C8E7C;
-  --lp-ink-inverse: #FFFFFF;
+  --lp-ink: #2c2418;
+  --lp-ink-soft: #5e5041;
+  --lp-muted: #9c8e7c;
+  --lp-ink-inverse: #ffffff;
 
   /* ─── Accent — warm terracotta ─── */
-  --lp-accent: #D4764E;
-  --lp-accent-soft: #FDF0EA;
-  --lp-accent-dark: #A8543A;
-  --lp-accent-hover: #C0663F;
+  --lp-accent: #d4764e;
+  --lp-accent-soft: #fdf0ea;
+  --lp-accent-dark: #a8543a;
+  --lp-accent-hover: #c0663f;
 
   /* ─── Primary action (maintained for interactive elements) ─── */
-  --lp-primary: #3D6B9F;
-  --lp-primary-soft: #EBF2FA;
-  --lp-primary-dark: #2C4F75;
-  --lp-primary-hover: #345D8A;
+  --lp-primary: #3d6b9f;
+  --lp-primary-soft: #ebf2fa;
+  --lp-primary-dark: #2c4f75;
+  --lp-primary-hover: #345d8a;
 
   /* ─── Semantic: Status ─── */
-  --lp-success: #27865A;
-  --lp-success-soft: #E8F6EF;
-  --lp-success-dark: #1B5E3F;
+  --lp-success: #27865a;
+  --lp-success-soft: #e8f6ef;
+  --lp-success-dark: #1b5e3f;
 
-  --lp-error: #C0392B;
-  --lp-error-soft: #FDEDEB;
-  --lp-error-dark: #922B21;
+  --lp-error: #c0392b;
+  --lp-error-soft: #fdedeb;
+  --lp-error-dark: #922b21;
 
-  --lp-warning: #C87D0A;
-  --lp-warning-soft: #FDF5E0;
+  --lp-warning: #c87d0a;
+  --lp-warning-soft: #fdf5e0;
 
-  --lp-info: #3D6B9F;
-  --lp-info-soft: #EBF2FA;
-  --lp-info-dark: #2C4F75;
+  --lp-info: #3d6b9f;
+  --lp-info-soft: #ebf2fa;
+  --lp-info-dark: #2c4f75;
 
   /* ─── Category Colors (CEFR levels / module types) ─── */
-  --lp-cat-blue: #3D6B9F;
-  --lp-cat-blue-soft: #EBF2FA;
-  --lp-cat-amber: #B8860B;
-  --lp-cat-amber-soft: #FDF5E0;
-  --lp-cat-green: #4A8C5C;
-  --lp-cat-green-soft: #EAF5ED;
-  --lp-cat-purple: #7B5EA7;
-  --lp-cat-purple-soft: #F3EDF9;
-  --lp-cat-teal: #3D7F7F;
-  --lp-cat-teal-soft: #E8F4F4;
+  --lp-cat-blue: #3d6b9f;
+  --lp-cat-blue-soft: #ebf2fa;
+  --lp-cat-amber: #b8860b;
+  --lp-cat-amber-soft: #fdf5e0;
+  --lp-cat-green: #4a8c5c;
+  --lp-cat-green-soft: #eaf5ed;
+  --lp-cat-purple: #7b5ea7;
+  --lp-cat-purple-soft: #f3edf9;
+  --lp-cat-teal: #3d7f7f;
+  --lp-cat-teal-soft: #e8f4f4;
 
   /* ─── Elevation (Shadows) ─── */
   --lp-shadow-xs: 0 1px 2px rgba(44, 36, 24, 0.03);
@@ -121,34 +121,34 @@
 
 /* === LEARN PLATFORM TOKENS — DARK === */
 html.dark {
-  --lp-bg: #1A1714;
-  --lp-bg-paper: #211D18;
+  --lp-bg: #1a1714;
+  --lp-bg-paper: #211d18;
   --lp-surface: #282420;
-  --lp-surface-raised: #2E2A22;
+  --lp-surface-raised: #2e2a22;
   --lp-surface-sunken: #151210;
 
-  --lp-border: #3D362C;
+  --lp-border: #3d362c;
   --lp-border-strong: #504839;
-  --lp-border-subtle: #2E2820;
+  --lp-border-subtle: #2e2820;
 
-  --lp-ink: #EDE8E0;
-  --lp-ink-soft: #B5ADA2;
-  --lp-muted: #998E84;
-  --lp-ink-inverse: #1A1714;
+  --lp-ink: #ede8e0;
+  --lp-ink-soft: #b5ada2;
+  --lp-muted: #998e84;
+  --lp-ink-inverse: #1a1714;
 
-  --lp-accent-soft: #2E2018;
-  --lp-primary-soft: #1A2A3D;
+  --lp-accent-soft: #2e2018;
+  --lp-primary-soft: #1a2a3d;
 
-  --lp-success-soft: #1A2D20;
-  --lp-error-soft: #3D1A1A;
-  --lp-warning-soft: #2D2510;
-  --lp-info-soft: #1A2A3D;
+  --lp-success-soft: #1a2d20;
+  --lp-error-soft: #3d1a1a;
+  --lp-warning-soft: #2d2510;
+  --lp-info-soft: #1a2a3d;
 
-  --lp-cat-blue-soft: #1A2A3D;
-  --lp-cat-amber-soft: #2D2510;
-  --lp-cat-green-soft: #1A2D20;
-  --lp-cat-purple-soft: #221A30;
-  --lp-cat-teal-soft: #1A2D2D;
+  --lp-cat-blue-soft: #1a2a3d;
+  --lp-cat-amber-soft: #2d2510;
+  --lp-cat-green-soft: #1a2d20;
+  --lp-cat-purple-soft: #221a30;
+  --lp-cat-teal-soft: #1a2d2d;
 
   --lp-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.15);
   --lp-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.15);

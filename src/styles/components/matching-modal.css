@@ -115,7 +115,7 @@
 }
 
 .dark .matching-modal__content {
-  background-color: var(--theme-bg-elevated, #211D18);
+  background-color: var(--theme-bg-elevated, #211d18);
 }
 .matching-modal__summary {
   display: flex;
@@ -126,7 +126,7 @@
 }
 
 .dark .matching-modal__summary {
-  background-color: var(--theme-bg-elevated, #211D18);
+  background-color: var(--theme-bg-elevated, #211d18);
 }
 
 .matching-modal__results-grid {
@@ -306,7 +306,7 @@
 }
 
 .dark .matching-modal__individual {
-  background-color: var(--theme-bg-elevated, #211D18);
+  background-color: var(--theme-bg-elevated, #211d18);
 }
 
 .matching-modal__detail-explanation {

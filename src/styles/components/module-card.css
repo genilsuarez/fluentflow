@@ -218,7 +218,7 @@
 .module-card--reading {
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%),
-    linear-gradient(135deg, #5E5041 0%, #5E5041 100%);
+    linear-gradient(135deg, #5e5041 0%, #5e5041 100%);
   color: #ffffff;
   /* White text on gray background */
 }
@@ -281,7 +281,7 @@
 .module-card--reading:hover {
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%),
-    linear-gradient(135deg, #5E5041 0%, #2C2418 100%);
+    linear-gradient(135deg, #5e5041 0%, #2c2418 100%);
 }
 
 .module-card--transformation:hover {
@@ -774,7 +774,7 @@
 
 /* === MODULE CARD ICONS === */
 .module-card__status-icon {
-  color: var(--theme-text-tertiary, #9C8E7C);
+  color: var(--theme-text-tertiary, #9c8e7c);
 }
 
 /* Dark Mode for non-variant cards */
@@ -784,8 +784,8 @@ html.dark
   ):not(.module-card--sorting):not(.module-card--matching):not(.module-card--reading):not(
     .module-card--transformation
   ):not(.module-card--word-formation):not(.module-card--error-correction) {
-  background: var(--theme-bg-elevated, #211D18);
-  border-color: var(--theme-border-soft, #5E5041);
+  background: var(--theme-bg-elevated, #211d18);
+  border-color: var(--theme-border-soft, #5e5041);
   color: var(--theme-text-primary, #ffffff);
 }
 
@@ -795,7 +795,7 @@ html.dark
   ):not(.module-card--sorting):not(.module-card--matching):not(.module-card--reading):not(
     .module-card--transformation
   ):not(.module-card--word-formation):not(.module-card--error-correction):hover {
-  background: var(--theme-bg-soft, #2C2418);
+  background: var(--theme-bg-soft, #2c2418);
   border-color: var(--theme-primary-blue, #3b82f6);
 }
 
@@ -823,7 +823,7 @@ html.dark
     .module-card--transformation
   ):not(.module-card--word-formation):not(.module-card--error-correction)
   .module-card__level {
-  color: var(--theme-text-tertiary, #D4CABB);
+  color: var(--theme-text-tertiary, #d4cabb);
 }
 
 /* Dark mode for locked cards - IMPROVED CONTRAST */
@@ -833,7 +833,7 @@ html.dark .module-card--locked {
 }
 
 html.dark .module-card--locked .module-card__title {
-  color: var(--theme-text-secondary, #D4CABB);
+  color: var(--theme-text-secondary, #d4cabb);
 }
 
 /* Ensure reading mode icons are visible in all states */

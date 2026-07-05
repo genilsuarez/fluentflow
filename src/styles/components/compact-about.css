@@ -140,7 +140,7 @@
 .compact-about__section-title {
   font-size: 0.6875rem;
   font-weight: 600;
-  color: var(--theme-text-secondary, #5E5041);
+  color: var(--theme-text-secondary, #5e5041);
   display: flex;
   align-items: center;
   text-transform: uppercase;
@@ -170,11 +170,11 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 0.625rem;
-  background-color: var(--theme-bg-subtle, #FAF7F2);
-  border: 1px solid var(--theme-border-soft, #E8E0D4);
+  background-color: var(--theme-bg-subtle, #faf7f2);
+  border: 1px solid var(--theme-border-soft, #e8e0d4);
   border-radius: 10px;
   font-size: 0.75rem;
-  color: var(--theme-text-secondary, #5E5041);
+  color: var(--theme-text-secondary, #5e5041);
   transition:
     border-color 0.2s ease,
     box-shadow 0.2s ease;
@@ -203,8 +203,8 @@
   justify-content: space-between;
   gap: 0.75rem;
   padding: 0.625rem 0.75rem;
-  background-color: var(--theme-bg-subtle, #FAF7F2);
-  border: 1px solid var(--theme-border-soft, #E8E0D4);
+  background-color: var(--theme-bg-subtle, #faf7f2);
+  border: 1px solid var(--theme-border-soft, #e8e0d4);
   border-radius: 10px;
   position: relative;
   overflow: hidden;
@@ -241,12 +241,12 @@
 .compact-about__developer-name {
   font-size: 0.8125rem;
   font-weight: 700;
-  color: var(--theme-text-primary, #1A1714);
+  color: var(--theme-text-primary, #1a1714);
 }
 
 .compact-about__developer-title {
   font-size: 0.6875rem;
-  color: var(--theme-text-secondary, #5E5041);
+  color: var(--theme-text-secondary, #5e5041);
   line-height: 1.35;
 }
 
@@ -304,8 +304,8 @@
   justify-content: center;
   gap: 0.375rem;
   padding: 0.5rem 0.75rem;
-  background-color: var(--theme-bg-subtle, #FAF7F2);
-  border: 1px solid var(--theme-border-soft, #E8E0D4);
+  background-color: var(--theme-bg-subtle, #faf7f2);
+  border: 1px solid var(--theme-border-soft, #e8e0d4);
   border-radius: 10px;
 }
 
@@ -365,7 +365,7 @@
   display: block;
   text-align: right;
   font-size: 0.5rem;
-  color: var(--theme-text-tertiary, #9C8E7C);
+  color: var(--theme-text-tertiary, #9c8e7c);
   font-family: ui-monospace, monospace;
   letter-spacing: 0.02em;
   line-height: 1;
@@ -430,7 +430,7 @@
 }
 
 .compact-about__content::-webkit-scrollbar-track {
-  background-color: var(--theme-bg-subtle, #FAF7F2);
+  background-color: var(--theme-bg-subtle, #faf7f2);
   border-radius: 9999px;
 }
 
@@ -445,7 +445,7 @@
 
 /* === DARK MODE === */
 html.dark .compact-about .compact-about__container {
-  background-color: var(--theme-bg-elevated, #211D18) !important;
+  background-color: var(--theme-bg-elevated, #211d18) !important;
   border-color: var(--glass-border-dark) !important;
   color: var(--theme-text-primary, #ffffff) !important;
 }
@@ -464,11 +464,11 @@ html.dark .compact-about__version {
 }
 
 html.dark .compact-about__build-time {
-  color: var(--theme-text-tertiary, #5E5041);
+  color: var(--theme-text-tertiary, #5e5041);
 }
 
 html.dark .compact-about__section-title {
-  color: var(--theme-text-secondary, #9C8E7C);
+  color: var(--theme-text-secondary, #9c8e7c);
 }
 
 html.dark .compact-about__section-icon {
@@ -476,14 +476,14 @@ html.dark .compact-about__section-icon {
 }
 
 html.dark .compact-about__feature {
-  background-color: var(--theme-bg-subtle, #2C2418) !important;
-  border-color: var(--theme-border-soft, #5E5041) !important;
-  color: var(--theme-text-secondary, #D4CABB) !important;
+  background-color: var(--theme-bg-subtle, #2c2418) !important;
+  border-color: var(--theme-border-soft, #5e5041) !important;
+  color: var(--theme-text-secondary, #d4cabb) !important;
 }
 
 html.dark .compact-about .compact-about__developer {
-  background-color: var(--theme-bg-subtle, #2C2418) !important;
-  border-color: var(--theme-border-soft, #5E5041) !important;
+  background-color: var(--theme-bg-subtle, #2c2418) !important;
+  border-color: var(--theme-border-soft, #5e5041) !important;
 }
 
 html.dark .compact-about .compact-about__developer-name {
@@ -491,21 +491,21 @@ html.dark .compact-about .compact-about__developer-name {
 }
 
 html.dark .compact-about__developer-title {
-  color: var(--theme-text-tertiary, #9C8E7C);
+  color: var(--theme-text-tertiary, #9c8e7c);
 }
 
 html.dark .compact-about__developer-link {
-  background: linear-gradient(135deg, #2C2418 0%, #5E5041 100%) !important;
+  background: linear-gradient(135deg, #2c2418 0%, #5e5041 100%) !important;
   color: var(--theme-text-primary, #ffffff) !important;
 }
 
 html.dark .compact-about__developer-link:hover {
-  background: linear-gradient(135deg, #5E5041 0%, #5E5041 100%) !important;
+  background: linear-gradient(135deg, #5e5041 0%, #5e5041 100%) !important;
 }
 
 html.dark .compact-about__tech-stack {
-  background-color: var(--theme-bg-subtle, #2C2418) !important;
-  border-color: var(--theme-border-soft, #5E5041) !important;
+  background-color: var(--theme-bg-subtle, #2c2418) !important;
+  border-color: var(--theme-border-soft, #5e5041) !important;
 }
 
 html.dark .compact-about__tech-item {
@@ -522,7 +522,7 @@ html.dark .compact-about__tech-item--clickable:hover {
 }
 
 html.dark .compact-about__content::-webkit-scrollbar-track {
-  background-color: var(--theme-bg-subtle, #2C2418);
+  background-color: var(--theme-bg-subtle, #2c2418);
 }
 
 html.dark .compact-about__content::-webkit-scrollbar-thumb {
@@ -536,7 +536,7 @@ html.dark .compact-about__content::-webkit-scrollbar-thumb:hover {
 /* === LIGHT MODE OVERRIDES === */
 html.light .compact-about .compact-about__developer-name,
 html:not(.dark) .compact-about .compact-about__developer-name {
-  color: var(--theme-text-primary, #1A1714);
+  color: var(--theme-text-primary, #1a1714);
 }
 
 /* === ACCESSIBILITY === */
@@ -783,25 +783,25 @@ html.dark .compact-about__container {
 
 /* Dark mode - screen info */
 html.dark .screen-info-modal__container {
-  background-color: var(--theme-bg-elevated, #211D18);
+  background-color: var(--theme-bg-elevated, #211d18);
   border-color: var(--glass-border-dark);
 }
 
 html.dark .screen-info-modal__content {
-  background-color: var(--theme-bg-elevated, #211D18);
+  background-color: var(--theme-bg-elevated, #211d18);
 }
 
 html.dark .screen-info-modal__item {
-  background-color: var(--theme-bg-subtle, #2C2418);
-  border-color: var(--theme-border-soft, #5E5041);
+  background-color: var(--theme-bg-subtle, #2c2418);
+  border-color: var(--theme-border-soft, #5e5041);
 }
 
 html.dark .screen-info-modal__label {
-  color: var(--theme-text-secondary, #9C8E7C);
+  color: var(--theme-text-secondary, #9c8e7c);
 }
 
 html.dark .screen-info-modal__value {
-  color: var(--theme-text-primary, #FAF7F2);
+  color: var(--theme-text-primary, #faf7f2);
 }
 
 /* Mobile responsive - screen info */
@@ -841,7 +841,7 @@ html.dark .screen-info-modal__value {
 .cache-confirm__text {
   font-size: 0.8125rem;
   line-height: 1.5;
-  color: var(--theme-text-secondary, #5E5041);
+  color: var(--theme-text-secondary, #5e5041);
   margin: 0 0 1rem;
 }
 
@@ -867,13 +867,13 @@ html.dark .screen-info-modal__value {
 }
 
 .cache-confirm__btn--cancel {
-  background-color: var(--theme-bg-subtle, #F5F1EB);
-  color: var(--theme-text-secondary, #5E5041);
-  border-color: var(--theme-border-soft, #E8E0D4);
+  background-color: var(--theme-bg-subtle, #f5f1eb);
+  color: var(--theme-text-secondary, #5e5041);
+  border-color: var(--theme-border-soft, #e8e0d4);
 }
 
 .cache-confirm__btn--cancel:hover:not(:disabled) {
-  background-color: var(--theme-bg-hover, #E8E0D4);
+  background-color: var(--theme-bg-hover, #e8e0d4);
 }
 
 .cache-confirm__btn--confirm {
@@ -889,15 +889,15 @@ html.dark .screen-info-modal__value {
 
 /* Dark mode - cache confirm */
 html.dark .cache-confirm__text {
-  color: var(--theme-text-secondary, #9C8E7C);
+  color: var(--theme-text-secondary, #9c8e7c);
 }
 
 html.dark .cache-confirm__btn--cancel {
-  background-color: var(--theme-bg-subtle, #2C2418);
-  color: var(--theme-text-secondary, #9C8E7C);
-  border-color: var(--theme-border-soft, #5E5041);
+  background-color: var(--theme-bg-subtle, #2c2418);
+  color: var(--theme-text-secondary, #9c8e7c);
+  border-color: var(--theme-border-soft, #5e5041);
 }
 
 html.dark .cache-confirm__btn--cancel:hover:not(:disabled) {
-  background-color: var(--theme-bg-hover, #5E5041);
+  background-color: var(--theme-bg-hover, #5e5041);
 }

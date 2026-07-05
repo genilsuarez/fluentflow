@@ -149,7 +149,7 @@
 .header-redesigned__menu-btn--primary,
 .header-redesigned__user-btn--primary,
 .header-redesigned__login-btn--primary {
-  background: linear-gradient(135deg, #FAF7F2 0%, #F5F1EB 100%);
+  background: linear-gradient(135deg, #faf7f2 0%, #f5f1eb 100%);
   border: 1px solid var(--header-border);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   color: var(--header-text-primary);
@@ -168,7 +168,7 @@
 .header-redesigned__menu-btn--primary:hover,
 .header-redesigned__user-btn--primary:hover,
 .header-redesigned__login-btn--primary:hover {
-  background: linear-gradient(135deg, #F5F1EB 0%, #E8E0D4 100%);
+  background: linear-gradient(135deg, #f5f1eb 0%, #e8e0d4 100%);
   border-color: var(--lp-muted);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   transform: translateY(-1px);

@@ -28,7 +28,9 @@ body {
   font-size: var(--text-base, 1rem);
   color: var(--lp-ink);
   -webkit-font-smoothing: antialiased;
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 }
 
 /* Mobile menu view: match body bg to avoid gray space below menu */

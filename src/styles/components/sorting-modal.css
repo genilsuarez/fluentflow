@@ -384,7 +384,7 @@ html.dark .sorting-modal {
 }
 
 html.dark .sorting-modal__container {
-  background-color: var(--theme-bg-elevated, #211D18);
+  background-color: var(--theme-bg-elevated, #211d18);
   border-color: var(--theme-border-modal-dark, rgba(255, 255, 255, 0.15));
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
@@ -402,7 +402,7 @@ html.dark .sorting-modal__close-btn:hover {
 }
 
 html.dark .sorting-modal__content {
-  background-color: var(--theme-bg-elevated, #211D18);
+  background-color: var(--theme-bg-elevated, #211d18);
 }
 
 html.dark .sorting-modal__content::-webkit-scrollbar-thumb {
@@ -410,7 +410,7 @@ html.dark .sorting-modal__content::-webkit-scrollbar-thumb {
 }
 
 html.dark .sorting-modal__summary {
-  background-color: var(--theme-bg-elevated, #211D18);
+  background-color: var(--theme-bg-elevated, #211d18);
 }
 
 /* Result cards - correct */
@@ -459,7 +459,7 @@ html.dark .sorting-modal__card-value--incorrect {
 
 /* Actions footer */
 html.dark .sorting-modal__actions {
-  background-color: var(--theme-bg-elevated, #211D18);
+  background-color: var(--theme-bg-elevated, #211d18);
   border-top-color: rgba(255, 255, 255, 0.1);
 }
 

@@ -117,8 +117,8 @@
 
 .compact-settings__tabs {
   display: flex;
-  border-bottom: 2px solid var(--theme-border-soft, #E8E0D4);
-  background-color: var(--theme-bg-subtle, #FAF7F2);
+  border-bottom: 2px solid var(--theme-border-soft, #e8e0d4);
+  background-color: var(--theme-bg-subtle, #faf7f2);
 }
 
 .compact-settings__tab {
@@ -131,14 +131,14 @@
   background: none;
   border: none;
   cursor: pointer;
-  color: var(--theme-text-secondary, #5E5041);
+  color: var(--theme-text-secondary, #5e5041);
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   font-weight: 500;
 }
 
 .compact-settings__tab:hover:not(.compact-settings__tab--active) {
-  color: var(--theme-text-primary, #2C2418);
+  color: var(--theme-text-primary, #2c2418);
   background-color: var(--theme-bg-elevated, #ffffff);
 }
 
@@ -201,7 +201,7 @@
 .compact-settings__label {
   font-size: 0.75rem;
   font-weight: 500;
-  color: var(--theme-text-primary, #2C2418);
+  color: var(--theme-text-primary, #2c2418);
   white-space: nowrap;
   min-width: 6rem;
 }
@@ -211,7 +211,7 @@
   border: 1.5px solid var(--theme-primary-blue, #3b82f6);
   border-radius: 10px;
   background-color: var(--theme-bg-elevated, #ffffff);
-  color: var(--theme-text-primary, #2C2418);
+  color: var(--theme-text-primary, #2c2418);
   font-size: 0.8125rem;
   flex: 1;
   transition: all 0.2s ease;
@@ -287,7 +287,7 @@
 }
 
 .compact-settings__label--dev {
-  color: var(--theme-text-primary, #2C2418);
+  color: var(--theme-text-primary, #2c2418);
   font-size: 0.6875rem;
   font-weight: 600;
   cursor: help;
@@ -309,8 +309,8 @@
   height: 1.25rem;
   min-width: 2.5rem;
   flex-shrink: 0;
-  background-color: var(--theme-bg-soft, #E8E0D4);
-  border: 2px solid var(--theme-border-soft, #D4CABB);
+  background-color: var(--theme-bg-soft, #e8e0d4);
+  border: 2px solid var(--theme-border-soft, #d4cabb);
   border-radius: 9999px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -375,7 +375,7 @@
 .compact-settings__game-label {
   font-size: 0.6875rem;
   font-weight: 600;
-  color: var(--theme-text-primary, #2C2418);
+  color: var(--theme-text-primary, #2c2418);
   line-height: 1.2;
   text-align: center;
 }
@@ -398,7 +398,7 @@
   width: 2.25rem;
   height: 2.25rem;
   border: none;
-  background: linear-gradient(135deg, #E8E0D4 0%, #D4CABB 100%);
+  background: linear-gradient(135deg, #e8e0d4 0%, #d4cabb 100%);
   color: var(--lp-ink-soft);
   font-size: 1.125rem;
   font-weight: 400;
@@ -417,7 +417,7 @@
 }
 
 .compact-settings__stepper-btn:hover:not(:disabled) {
-  background: linear-gradient(135deg, #D4CABB 0%, #9C8E7C 100%);
+  background: linear-gradient(135deg, #d4cabb 0%, #9c8e7c 100%);
   color: var(--lp-ink);
   transform: translateY(-1px);
   box-shadow:
@@ -435,7 +435,7 @@
 .compact-settings__stepper-btn:disabled {
   opacity: 0.3;
   cursor: not-allowed;
-  background: linear-gradient(135deg, #F5F1EB 0%, #E8E0D4 100%);
+  background: linear-gradient(135deg, #f5f1eb 0%, #e8e0d4 100%);
   color: var(--lp-border-strong);
   box-shadow: none;
 }
@@ -716,14 +716,14 @@
 /* === DARK MODE IMPROVEMENTS === */
 html.dark .compact-settings__container {
   border-color: var(--theme-border-modal-dark, rgba(255, 255, 255, 0.2));
-  background-color: var(--theme-bg-primary, #1A1714);
+  background-color: var(--theme-bg-primary, #1a1714);
 }
 
 /* Dark mode game cards, dev toggle cards, and offline toggle */
 html.dark .compact-settings__game,
 html.dark .compact-settings__field--dev,
 html.dark .compact-settings__offline-toggle {
-  background-color: var(--theme-bg-elevated, #211D18);
+  background-color: var(--theme-bg-elevated, #211d18);
   border: 1.5px solid var(--theme-accent-primary, #60a5fa);
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
 }
@@ -746,12 +746,12 @@ html.dark .compact-settings__offline-toggle:has(input:checked) {
 }
 
 html.dark .compact-settings__label--dev {
-  color: var(--theme-text-primary, #FAF7F2);
+  color: var(--theme-text-primary, #faf7f2);
 }
 
 /* Dark mode game labels */
 html.dark .compact-settings__game-label {
-  color: var(--theme-text-primary, #FAF7F2);
+  color: var(--theme-text-primary, #faf7f2);
 }
 
 /* Dark mode game stepper */
@@ -761,7 +761,7 @@ html.dark .compact-settings__game-stepper {
 }
 
 html.dark .compact-settings__stepper-btn {
-  background: linear-gradient(135deg, #2C2418 0%, #211D18 100%);
+  background: linear-gradient(135deg, #2c2418 0%, #211d18 100%);
   color: var(--lp-muted);
   box-shadow:
     0 2px 4px rgba(0, 0, 0, 0.3),
@@ -769,7 +769,7 @@ html.dark .compact-settings__stepper-btn {
 }
 
 html.dark .compact-settings__stepper-btn:hover:not(:disabled) {
-  background: linear-gradient(135deg, #5E5041 0%, #2C2418 100%);
+  background: linear-gradient(135deg, #5e5041 0%, #2c2418 100%);
   color: var(--lp-border-strong);
   box-shadow:
     0 4px 8px rgba(0, 0, 0, 0.4),
@@ -783,7 +783,7 @@ html.dark .compact-settings__stepper-btn:active:not(:disabled) {
 }
 
 html.dark .compact-settings__stepper-btn:disabled {
-  background: linear-gradient(135deg, #211D18 0%, #1A1714 100%);
+  background: linear-gradient(135deg, #211d18 0%, #1a1714 100%);
   color: var(--lp-ink-soft);
   box-shadow: none;
 }
@@ -798,15 +798,15 @@ html.dark .compact-settings__stepper-value {
 }
 
 html.dark .compact-settings__select {
-  background-color: var(--theme-bg-elevated, #211D18);
+  background-color: var(--theme-bg-elevated, #211d18);
   border: 1.5px solid var(--theme-accent-primary, #60a5fa);
-  color: var(--theme-text-primary, #FAF7F2);
+  color: var(--theme-text-primary, #faf7f2);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%239ca3af' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
 }
 
 html.dark .compact-settings__select:hover {
   border-color: var(--theme-accent-primary, #60a5fa);
-  background-color: var(--theme-bg-subtle, #2C2418);
+  background-color: var(--theme-bg-subtle, #2c2418);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -816,7 +816,7 @@ html.dark .compact-settings__select:focus {
 }
 
 html.dark .compact-settings__content {
-  background-color: var(--theme-bg-primary, #1A1714);
+  background-color: var(--theme-bg-primary, #1a1714);
 }
 
 /* === DARK MODE TOGGLE IMPROVEMENTS === */
@@ -840,18 +840,18 @@ html.dark .compact-settings__toggle:focus {
 
 /* === DARK MODE TAB IMPROVEMENTS === */
 html.dark .compact-settings__tabs {
-  background-color: var(--theme-bg-subtle, #1A1714);
+  background-color: var(--theme-bg-subtle, #1a1714);
   border-bottom-color: rgba(255, 255, 255, 0.1);
 }
 
 html.dark .compact-settings__tab:hover:not(.compact-settings__tab--active) {
-  color: var(--theme-text-primary, #FAF7F2);
-  background-color: var(--theme-bg-elevated, #211D18);
+  color: var(--theme-text-primary, #faf7f2);
+  background-color: var(--theme-bg-elevated, #211d18);
 }
 
 html.dark .compact-settings__tab--active {
   color: var(--theme-accent-primary, #60a5fa);
-  background-color: var(--theme-bg-elevated, #211D18);
+  background-color: var(--theme-bg-elevated, #211d18);
   border-bottom-color: var(--theme-accent-primary, #60a5fa);
 }
 
@@ -883,7 +883,7 @@ html.dark .compact-settings__tab--active {
 .compact-settings__offline-levels-label {
   font-size: 0.6875rem;
   font-weight: 500;
-  color: var(--theme-text-secondary, #5E5041);
+  color: var(--theme-text-secondary, #5e5041);
 }
 
 .compact-settings__offline-levels-grid {
@@ -898,7 +898,7 @@ html.dark .compact-settings__tab--active {
   gap: 0.375rem;
   font-size: 0.75rem;
   font-weight: 500;
-  color: var(--theme-text-primary, #2C2418);
+  color: var(--theme-text-primary, #2c2418);
   cursor: pointer;
   padding: 0.25rem 0.375rem;
   border-radius: var(--radius-sm, 0.25rem);
@@ -949,7 +949,7 @@ html.dark .compact-settings__tab--active {
 .compact-settings__offline-progress-bar {
   flex: 1;
   height: 0.375rem;
-  background-color: var(--theme-bg-soft, #E8E0D4);
+  background-color: var(--theme-bg-soft, #e8e0d4);
   border-radius: 9999px;
   overflow: hidden;
 }
@@ -964,7 +964,7 @@ html.dark .compact-settings__tab--active {
 .compact-settings__offline-progress-text {
   font-size: 0.6875rem;
   font-weight: 600;
-  color: var(--theme-text-secondary, #5E5041);
+  color: var(--theme-text-secondary, #5e5041);
   white-space: nowrap;
 }
 
@@ -1003,7 +1003,7 @@ html.dark .compact-settings__tab--active {
   width: 100%;
   max-width: 22rem;
   font-size: 0.6875rem;
-  color: var(--theme-text-secondary, #5E5041);
+  color: var(--theme-text-secondary, #5e5041);
 }
 
 .compact-settings__offline-manage-btn {
@@ -1024,7 +1024,7 @@ html.dark .compact-settings__tab--active {
 
 /* === DARK MODE - OFFLINE SECTION === */
 html.dark .compact-settings__offline-level-item {
-  color: var(--theme-text-primary, #FAF7F2);
+  color: var(--theme-text-primary, #faf7f2);
 }
 
 html.dark .compact-settings__offline-level-item:hover {

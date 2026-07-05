@@ -11,7 +11,7 @@
   background: linear-gradient(
     135deg,
     var(--theme-bg-elevated, #ffffff) 0%,
-    var(--theme-bg-subtle, #FAF7F2) 100%
+    var(--theme-bg-subtle, #faf7f2) 100%
   );
   border: 1px solid var(--theme-border-modal, rgba(0, 0, 0, 0.1));
   border-radius: var(--radius-lg, 0.5rem);
@@ -24,7 +24,7 @@
 }
 
 .sorting-component__loading-text {
-  color: var(--theme-text-secondary, #5E5041);
+  color: var(--theme-text-secondary, #5e5041);
 }
 
 /* === WORKSPACE === */
@@ -33,7 +33,7 @@
   border-radius: 1rem;
   padding: 1rem;
   box-shadow: var(--shadow-subtle, 0 1px 3px rgba(0, 0, 0, 0.1));
-  border: 1px solid var(--theme-border-soft, #F5F1EB);
+  border: 1px solid var(--theme-border-soft, #f5f1eb);
   margin-bottom: 0.625rem;
 }
 
@@ -45,12 +45,12 @@
 .sorting-component__section-header {
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: var(--theme-text-primary, #2C2418);
+  color: var(--theme-text-primary, #2c2418);
 }
 
 .sorting-component__available-area {
   background-color: var(--theme-bg-subtle, #fafafa);
-  border: 2px dashed var(--theme-border-soft, #F5F1EB);
+  border: 2px dashed var(--theme-border-soft, #f5f1eb);
   border-radius: var(--radius-md, 0.375rem);
   padding: 0.75rem;
   min-height: 2.5rem;
@@ -90,7 +90,7 @@
 }
 
 .sorting-component__empty-message {
-  color: var(--theme-text-tertiary, #9C8E7C);
+  color: var(--theme-text-tertiary, #9c8e7c);
   font-style: italic;
   text-align: center;
   width: 100%;
@@ -106,8 +106,8 @@
 }
 
 .sorting-component__drop-zone {
-  background-color: var(--theme-bg-subtle, #FAF7F2);
-  border: 2px dashed var(--theme-border-soft, #F5F1EB);
+  background-color: var(--theme-bg-subtle, #faf7f2);
+  border: 2px dashed var(--theme-border-soft, #f5f1eb);
   border-radius: var(--radius-md, 0.375rem);
   padding: 0.75rem;
   min-height: 7.5rem;
@@ -150,8 +150,8 @@
 }
 
 .sorting-component__drop-zone--neutral {
-  border-color: var(--theme-border-soft, #F5F1EB);
-  background-color: var(--theme-bg-subtle, #FAF7F2);
+  border-color: var(--theme-border-soft, #f5f1eb);
+  background-color: var(--theme-bg-subtle, #faf7f2);
 }
 
 /* In result state, allow height to grow to show feedback */
@@ -194,7 +194,7 @@
   margin-bottom: 0.5rem;
   font-size: 0.875rem;
   font-weight: 600;
-  color: var(--theme-text-primary, #2C2418);
+  color: var(--theme-text-primary, #2c2418);
 }
 
 .sorting-component__category-status {
@@ -236,9 +236,9 @@
 }
 
 .sorting-component__sorted-item--default {
-  background-color: var(--theme-bg-subtle, #FAF7F2);
-  color: var(--theme-text-primary, #1A1714);
-  border: 1px solid var(--theme-border-soft, #F5F1EB);
+  background-color: var(--theme-bg-subtle, #faf7f2);
+  color: var(--theme-text-primary, #1a1714);
+  border: 1px solid var(--theme-border-soft, #f5f1eb);
 }
 
 .sorting-component__sorted-item--correct {
@@ -255,11 +255,11 @@
 
 .sorting-component__feedback-label {
   font-weight: 600;
-  color: var(--theme-text-primary, #2C2418);
+  color: var(--theme-text-primary, #2c2418);
 }
 
 .sorting-component__feedback-text {
-  color: var(--theme-text-secondary, #5E5041);
+  color: var(--theme-text-secondary, #5e5041);
   font-size: 0.875rem;
 }
 
@@ -299,19 +299,19 @@
   border: 1px solid var(--theme-error, #ef4444);
 }
 html.dark .sorting-component__workspace {
-  background-color: var(--theme-bg-elevated, #211D18);
-  border-color: var(--theme-border-soft, #5E5041);
+  background-color: var(--theme-bg-elevated, #211d18);
+  border-color: var(--theme-border-soft, #5e5041);
 }
 
 html.dark .sorting-component__sorted-item--default {
-  background-color: var(--theme-bg-elevated, #211D18);
-  border-color: var(--theme-border-soft, #5E5041);
+  background-color: var(--theme-bg-elevated, #211d18);
+  border-color: var(--theme-border-soft, #5e5041);
   color: var(--theme-text-primary, #ffffff);
 }
 
 html.dark .sorting-component__drop-zone {
-  background-color: var(--theme-bg-subtle, #2C2418);
-  border-color: var(--theme-border-soft, #5E5041);
+  background-color: var(--theme-bg-subtle, #2c2418);
+  border-color: var(--theme-border-soft, #5e5041);
 }
 
 html.dark .sorting-component__drop-zone--drag-over {
@@ -355,7 +355,7 @@ html.dark .sorting-component__sorted-item--incorrect {
 }
 
 html.dark .sorting-component__category-header {
-  color: var(--theme-text-primary, #F5F1EB);
+  color: var(--theme-text-primary, #f5f1eb);
 }
 
 /* === RESPONSIVE === */

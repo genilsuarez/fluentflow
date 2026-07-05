@@ -17,7 +17,7 @@
   background: linear-gradient(
     135deg,
     var(--theme-bg-elevated, #ffffff) 0%,
-    var(--theme-bg-subtle, #FAF7F2) 100%
+    var(--theme-bg-subtle, #faf7f2) 100%
   );
   border: 1px solid var(--theme-border-modal, rgba(0, 0, 0, 0.1));
   border-radius: var(--radius-lg, 0.5rem);
@@ -30,7 +30,7 @@
 }
 
 .matching-component__loading-text {
-  color: var(--theme-text-secondary, #5E5041);
+  color: var(--theme-text-secondary, #5e5041);
 }
 
 /* === ITEM ACTIONS === */
@@ -99,7 +99,7 @@
   min-height: 2.25rem;
   margin: 0.0625rem 0;
   border-radius: 0.75rem;
-  border: 1px solid #D4CABB;
+  border: 1px solid #d4cabb;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
   color: var(--lp-ink);
@@ -213,7 +213,7 @@
   font-weight: 700;
   flex-shrink: 0;
   margin-right: 0.75rem;
-  border: 1px solid #D4CABB;
+  border: 1px solid #d4cabb;
   transition: var(--transition-interactive);
 }
 
@@ -233,7 +233,7 @@
 .matching-component__item--matched-inactive .matching-component__item-letter {
   background-color: var(--lp-bg-paper);
   color: var(--lp-ink-soft);
-  border: 1px solid #D4CABB;
+  border: 1px solid #d4cabb;
 }
 
 .matching-component__item--unmatched .matching-component__item-letter {
@@ -258,7 +258,7 @@
 .matching-component__item-text {
   flex: 1;
   font-size: 0.8125rem;
-  color: var(--theme-text-primary, #1A1714);
+  color: var(--theme-text-primary, #1a1714);
   line-height: 1.25rem;
   min-height: 1.25rem;
   display: flex;
@@ -356,10 +356,10 @@
   justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: var(--theme-bg-subtle, #FAF7F2);
-  border: 1px solid var(--theme-border-soft, #F5F1EB);
+  background-color: var(--theme-bg-subtle, #faf7f2);
+  border: 1px solid var(--theme-border-soft, #f5f1eb);
   border-radius: 50%;
-  color: var(--theme-text-secondary, #5E5041);
+  color: var(--theme-text-secondary, #5e5041);
 }
 
 /* === INFO BUTTON === */
@@ -499,7 +499,7 @@ html.dark .matching-component__item--matched .matching-component__item-letter {
 }
 
 html.dark .matching-component__item--matched .matching-component__item-text {
-  color: var(--gray-200, #E8E0D4);
+  color: var(--gray-200, #e8e0d4);
 }
 
 html.dark .matching-component__item--matched-inactive {
@@ -567,7 +567,7 @@ html.dark .matching-component__item--incorrect .matching-component__item-text * 
 }
 
 .dark .matching-component__info-icon {
-  color: var(--gray-300, #D4CABB);
+  color: var(--gray-300, #d4cabb);
 }
 
 .dark .matching-component__item--correct .matching-component__info-button,

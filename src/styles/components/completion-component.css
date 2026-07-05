@@ -16,7 +16,7 @@
   background: linear-gradient(
     135deg,
     var(--theme-bg-elevated, #ffffff) 0%,
-    var(--theme-bg-subtle, #FAF7F2) 100%
+    var(--theme-bg-subtle, #faf7f2) 100%
   );
   border: 1px solid var(--theme-border-modal, rgba(0, 0, 0, 0.1));
   border-radius: var(--radius-lg, 0.5rem);
@@ -42,13 +42,13 @@
 }
 
 .completion-component__no-data-text {
-  color: var(--theme-text-secondary, #5E5041);
+  color: var(--theme-text-secondary, #5e5041);
   margin-bottom: 1rem;
 }
 
 /* Dark mode no data text */
 html.dark .completion-component__no-data-text {
-  color: var(--theme-text-secondary, #E8E0D4);
+  color: var(--theme-text-secondary, #e8e0d4);
 }
 
 .completion-component__no-data-btn {
@@ -74,7 +74,7 @@ html.dark .completion-component__no-data-text {
   box-shadow: var(--shadow-subtle, 0 1px 3px rgba(0, 0, 0, 0.1));
   padding: 1rem;
   margin: 0;
-  border: 1px solid var(--theme-border-soft, #F5F1EB);
+  border: 1px solid var(--theme-border-soft, #f5f1eb);
   width: 100%;
   max-width: none;
   box-sizing: border-box;
@@ -89,7 +89,7 @@ html.dark .completion-component__no-data-text {
 .completion-component__instruction {
   font-size: 1rem;
   font-weight: 600;
-  color: var(--theme-text-primary, #2C2418);
+  color: var(--theme-text-primary, #2c2418);
   margin-bottom: 1rem;
 }
 
@@ -134,9 +134,9 @@ html.dark .completion-component__tip-text {
   line-height: 1.625;
   margin-bottom: 1rem;
   padding: 1.25rem;
-  background: linear-gradient(to right, #FAF7F2, #F5F1EB);
+  background: linear-gradient(to right, #faf7f2, #f5f1eb);
   border-radius: 1rem;
-  border: 1px solid var(--theme-border-primary, #E8E0D4);
+  border: 1px solid var(--theme-border-primary, #e8e0d4);
   box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
   width: 100%;
   box-sizing: border-box;
@@ -148,12 +148,12 @@ html.dark .completion-component__tip-text {
 .completion-component__sentence {
   display: inline;
   line-height: 2.2; /* Extra line-height so input doesn't overlap text above/below */
-  color: var(--theme-text-primary, #2C2418);
+  color: var(--theme-text-primary, #2c2418);
   font-weight: 500;
 }
 
 .completion-component__text {
-  color: var(--theme-text-primary, #2C2418);
+  color: var(--theme-text-primary, #2c2418);
 }
 
 /* Dark mode sentence container */
@@ -233,15 +233,15 @@ html.dark .completion-component__sentence {
 }
 
 .completion-component__input--disabled {
-  border-color: var(--theme-border-soft, #F5F1EB);
-  background-color: var(--theme-bg-subtle, #FAF7F2);
-  color: var(--theme-text-secondary, #5E5041);
+  border-color: var(--theme-border-soft, #f5f1eb);
+  background-color: var(--theme-bg-subtle, #faf7f2);
+  color: var(--theme-text-secondary, #5e5041);
 }
 
 .completion-component__input--neutral {
   border-color: var(--theme-primary-blue, #3b82f6);
   background-color: #ffffff;
-  color: var(--theme-text-primary, #2C2418);
+  color: var(--theme-text-primary, #2c2418);
   box-shadow:
     0 0 0 3px rgba(59, 130, 246, 0.15),
     0 1px 3px rgba(0, 0, 0, 0.08);
@@ -273,13 +273,13 @@ html.dark .completion-component__input--incorrect {
 }
 
 html.dark .completion-component__input--disabled {
-  background-color: var(--theme-bg-subtle, #2C2418);
-  color: var(--theme-text-secondary, #E8E0D4);
-  border-color: var(--theme-border-soft, #5E5041);
+  background-color: var(--theme-bg-subtle, #2c2418);
+  color: var(--theme-text-secondary, #e8e0d4);
+  border-color: var(--theme-border-soft, #5e5041);
 }
 
 html.dark .completion-component__input--neutral {
-  background-color: var(--theme-bg-elevated, #211D18);
+  background-color: var(--theme-bg-elevated, #211d18);
   color: var(--theme-text-primary, #ffffff);
   border-color: var(--theme-primary-blue, #60a5fa);
   box-shadow:
@@ -288,7 +288,7 @@ html.dark .completion-component__input--neutral {
 }
 
 html.dark .completion-component__input--neutral:focus {
-  background-color: var(--theme-bg-subtle, #2C2418);
+  background-color: var(--theme-bg-subtle, #2c2418);
   border-color: var(--theme-primary-blue, #3b82f6);
   box-shadow:
     0 0 0 3px rgba(59, 130, 246, 0.3),
@@ -362,12 +362,12 @@ html.dark .completion-component__feedback-icon--incorrect {
 .completion-component__feedback {
   font-weight: 500;
   font-size: 0.75rem;
-  color: var(--theme-text-primary, #2C2418);
+  color: var(--theme-text-primary, #2c2418);
 }
 
 .completion-component__correct-answer {
   font-size: 0.75rem;
-  color: var(--theme-text-secondary, #5E5041);
+  color: var(--theme-text-secondary, #5e5041);
 }
 
 /* Dark mode feedback text */
@@ -414,7 +414,7 @@ html.dark .completion-component__tense-hint-text {
 
 .completion-component__explanation-text {
   font-size: 0.75rem;
-  color: var(--theme-text-secondary, #5E5041);
+  color: var(--theme-text-secondary, #5e5041);
   line-height: 1.625;
 }
 
@@ -511,7 +511,7 @@ html.dark .completion-component__explanation-label {
   }
 }
 html.dark .completion-component__exercise-card {
-  background-color: var(--theme-bg-elevated, #211D18);
+  background-color: var(--theme-bg-elevated, #211d18);
   border-color: rgba(255, 255, 255, 0.12);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 }
@@ -531,6 +531,6 @@ html.dark .completion-component__exercise-card {
 }
 /* === LEARNING COMPONENT BORDER - DARK MODE === */
 html.dark .completion-component__container {
-  background: linear-gradient(135deg, var(--theme-bg-elevated, #211D18) 0%, #1a2332 100%);
+  background: linear-gradient(135deg, var(--theme-bg-elevated, #211d18) 0%, #1a2332 100%);
   border-color: rgba(255, 255, 255, 0.1);
 }

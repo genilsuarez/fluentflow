@@ -11,7 +11,10 @@ INTERVAL=10
 echo "📦 FluentFlow — running full build pipeline..."
 
 # Full local build (lint, type-check, tests, vite build)
-npm run build:full
+if ! npm run build:full; then
+  echo "❌ FluentFlow — local build failed"
+  exit 1
+fi
 echo "✅ Local build passed"
 
 echo "🔍 Monitoring deploy workflow on GitHub Actions..."
