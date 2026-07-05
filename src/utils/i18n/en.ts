@@ -85,6 +85,7 @@ export const en = {
     notifications: 'Notifications',
     closeNotification: 'Close notification',
     loadingModules: 'Loading modules',
+    backToPortal: 'Back to Portal',
   },
   auth: {
     login: 'Login',

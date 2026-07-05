@@ -55,3 +55,46 @@
     background-color: transparent;
   }
 }
+
+/* ─── APP FOOTER ─── */
+.app-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  margin-top: auto;
+  border-top: 1px solid var(--lp-border);
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 1;
+}
+
+.app-footer__sig {
+  font-family: var(--lp-font-display);
+  font-style: italic;
+  font-size: 0.78rem;
+  line-height: 1;
+  color: var(--lp-ink-soft, var(--lp-muted));
+}
+
+.app-footer__meta {
+  font-family: var(--lp-font-mono);
+  font-size: 0.52rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--lp-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Hide footer in learning views (only show on menu/dashboard) */
+.layout-container:not([data-view='menu']) .app-footer {
+  display: none;
+}
+
+@media (max-width: 639px) {
+  .app-footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

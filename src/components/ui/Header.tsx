@@ -11,6 +11,7 @@ import {
   X,
   Home,
   Wrench,
+  ExternalLink,
 } from 'lucide-react';
 import '../../styles/components/header.css';
 import { useAppStore } from '../../stores/appStore';
@@ -351,6 +352,19 @@ export const Header: React.FC<HeaderProps> = () => {
 
               {/* Spacer + bottom actions */}
               <div className="header-side-menu__spacer" />
+
+              <a
+                href={
+                  location.hostname === 'localhost' || location.hostname === '127.0.0.1'
+                    ? 'http://localhost:3000/'
+                    : 'https://genilsuarez.github.io/deskflow/'
+                }
+                className="header-side-menu__item header-side-menu__item--portal"
+                aria-label={t('navigation.backToPortal')}
+              >
+                <ExternalLink className="header-side-menu__icon" aria-hidden="true" />
+                <span className="header-side-menu__text">{t('navigation.backToPortal')}</span>
+              </a>
 
               {user ? (
                 <button

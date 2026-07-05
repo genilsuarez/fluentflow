@@ -550,6 +550,20 @@
   color: #ef4444;
 }
 
+.header-side-menu__item--portal {
+  border-top: 1px solid var(--theme-border-soft);
+  margin-top: 8px;
+  padding-top: 12px;
+  color: var(--lp-accent);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.header-side-menu__item--portal:hover {
+  background-color: var(--lp-accent-soft);
+  color: var(--lp-accent-dark);
+}
+
 .header-side-menu__item--login {
   border-top: 1px solid var(--theme-border-soft);
   margin-top: 8px;

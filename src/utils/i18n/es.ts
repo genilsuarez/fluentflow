@@ -85,6 +85,7 @@ export const es = {
     notifications: 'Notificaciones',
     closeNotification: 'Cerrar notificación',
     loadingModules: 'Cargando módulos',
+    backToPortal: 'Volver al Portal',
   },
   auth: {
     login: 'Iniciar Sesión',
