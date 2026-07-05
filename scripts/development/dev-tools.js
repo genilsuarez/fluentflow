@@ -20,17 +20,21 @@ const rootDir = dirname(dirname(__dirname));
 function executeCommand(command, description, options = {}) {
   const startTime = Date.now();
   const quiet = options.quiet || process.env.BUILD_QUIET === '1';
+  const timeout = options.timeout || 0; // 0 = no timeout
   try {
     log(`🔄 ${description}...`, colors.cyan);
 
+    const execOptions = {
+      cwd: rootDir,
+      encoding: 'utf8',
+      maxBuffer: 10 * 1024 * 1024
+    };
+    if (timeout > 0) execOptions.timeout = timeout;
+
     if (quiet) {
-      const output = execSync(command, {
-        stdio: 'pipe',
-        cwd: rootDir,
-        env: { ...process.env, FORCE_COLOR: '0' },
-        encoding: 'utf8',
-        maxBuffer: 10 * 1024 * 1024
-      });
+      execOptions.stdio = 'pipe';
+      execOptions.env = { ...process.env, FORCE_COLOR: '0' };
+      const output = execSync(command, execOptions);
       // In quiet mode, only show actual errors from output
       if (output) {
         const lines = output.split('\n');
@@ -48,11 +52,13 @@ function executeCommand(command, description, options = {}) {
         }
       }
     } else {
-      execSync(command, {
+      const inheritOptions = {
         stdio: options.silent ? 'pipe' : 'inherit',
         cwd: rootDir,
         env: { ...process.env, FORCE_COLOR: '1' }
-      });
+      };
+      if (timeout > 0) inheritOptions.timeout = timeout;
+      execSync(command, inheritOptions);
     }
 
     const duration = ((Date.now() - startTime) / 1000).toFixed(1);
@@ -333,7 +339,8 @@ async function runWorkflow(workflowKey) {
         break;
       }
     } else if (step.type === 'command') {
-      const success = executeCommand(step.cmd, step.desc);
+      const cmdOpts = step.nonBlocking ? { timeout: 120000 } : {};
+      const success = executeCommand(step.cmd, step.desc, cmdOpts);
       if (!success) {
         if (step.nonBlocking) {
           warnings.push(step.desc);
