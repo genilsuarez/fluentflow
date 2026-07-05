@@ -211,7 +211,6 @@ const workflows = {
       { type: 'command', cmd: 'npm test', desc: 'Tests' },
       { type: 'command', cmd: 'npx vite build --mode production --config config/vite.config.ts', desc: 'Build application (vite only)' },
       { type: 'command', cmd: 'node scripts/git/smart-commit.js --stage-all --push --auto --allow-empty', desc: 'Post-build commit & push' },
-      { type: 'command', cmd: 'node scripts/git/github-actions-status.js watch-all 180', desc: 'Monitor pipeline (CI + CD)', nonBlocking: true },
     ]
   },
   fix: {
