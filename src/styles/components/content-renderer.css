@@ -36,15 +36,15 @@
 /* Code segments */
 .content-renderer__segment--code {
   font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
-  background-color: #f3f4f6;
+  background-color: var(--lp-bg-paper);
   padding: 0.125rem 0.25rem;
   border-radius: var(--radius-sm, 0.25rem);
   font-size: 0.875em;
 }
 
 .dark .content-renderer__segment--code {
-  background-color: #374151;
-  color: #e5e7eb;
+  background-color: var(--lp-ink);
+  color: var(--lp-border);
 }
 
 /* Variable segments */
@@ -154,7 +154,7 @@
 .content-renderer__segment--term[title]:hover::after {
   content: attr(title);
   position: absolute;
-  background: #1f2937;
+  background: var(--lp-bg-paper);
   color: white;
   padding: var(--padding-xs, 0.25rem) var(--padding-md, 1rem);
   border-radius: var(--radius-sm, 0.25rem);
@@ -166,7 +166,7 @@
 }
 
 .dark .content-renderer__segment--term[title]:hover::after {
-  background: #374151;
+  background: var(--lp-ink);
 }
 
 /* Override colors for selected matched states in matching component */
@@ -178,7 +178,7 @@
 
 .matching-component__item--matched .content-renderer__segment--term,
 .matching-component__item--matched .content-renderer {
-  color: var(--theme-text-primary, #374151);
+  color: var(--theme-text-primary, #2C2418);
 }
 
 .matching-component__item--correct .content-renderer__segment--term,
@@ -194,7 +194,7 @@
 }
 
 .matching-component__item--matched-inactive .content-renderer__segment--term {
-  color: var(--theme-text-tertiary, #9ca3af);
+  color: var(--theme-text-tertiary, #9C8E7C);
 }
 
 /* Light mode override for matched items content */
@@ -202,12 +202,12 @@ html:not(.dark) .matching-component__item--matched .content-renderer__segment--t
 html:not(.dark) .matching-component__item--matched .content-renderer__segment--emphasis,
 html:not(.dark) .matching-component__item--matched .content-renderer__segment--variable,
 html:not(.dark) .matching-component__item--matched .content-renderer__segment--code {
-  color: var(--theme-text-primary, #374151);
+  color: var(--theme-text-primary, #2C2418);
 }
 
 html:not(.dark) .matching-component__item--matched .content-renderer,
 html:not(.dark) .matching-component__item--matched .content-renderer * {
-  color: var(--theme-text-primary, #374151);
+  color: var(--theme-text-primary, #2C2418);
 }
 
 /* Ensure hover states don't override ContentRenderer colors */
@@ -227,7 +227,7 @@ html:not(.dark)
   .content-renderer__segment--variable,
 html:not(.dark) .matching-component__item--matched:hover .content-renderer__segment--code,
 html:not(.dark) .matching-component__item--matched-inactive:hover .content-renderer__segment--code {
-  color: #111827;
+  color: var(--lp-bg);
 }
 
 /* Override for correct incorrect states in light mode - WHITE TEXT FOR CONTRAST */
@@ -258,7 +258,7 @@ html:not(.dark) .matching-component__item--unmatched .content-renderer__segment-
 html:not(.dark) .matching-component__item--unmatched .content-renderer__segment--emphasis,
 html:not(.dark) .matching-component__item--unmatched .content-renderer__segment--variable,
 html:not(.dark) .matching-component__item--unmatched .content-renderer__segment--code {
-  color: #6b7280;
+  color: var(--lp-ink-soft);
 }
 
 /* Ensure selected items maintain white text in ContentRenderer on hover */
@@ -282,7 +282,7 @@ html:not(.dark) .matching-component__item--unmatched .content-renderer__segment-
 }
 
 .matching-component__item--matched-inactive .content-renderer__segment--emphasis {
-  color: var(--theme-text-disabled, #9ca3af);
+  color: var(--theme-text-disabled, #9C8E7C);
 }
 
 .matching-component__item--selected .content-renderer__segment--variable,
@@ -294,7 +294,7 @@ html:not(.dark) .matching-component__item--unmatched .content-renderer__segment-
 }
 
 .matching-component__item--matched-inactive .content-renderer__segment--variable {
-  color: var(--theme-text-disabled, #9ca3af);
+  color: var(--theme-text-disabled, #9C8E7C);
 }
 
 .matching-component__item--selected .content-renderer__segment--code,
@@ -307,8 +307,8 @@ html:not(.dark) .matching-component__item--unmatched .content-renderer__segment-
 }
 
 .matching-component__item--matched-inactive .content-renderer__segment--code {
-  color: var(--theme-text-disabled, #9ca3af);
-  background-color: var(--theme-bg-subtle, #f9fafb);
+  color: var(--theme-text-disabled, #9C8E7C);
+  background-color: var(--theme-bg-subtle, #FAF7F2);
 }
 
 /* Override colors for other components */
@@ -332,7 +332,7 @@ html:not(.dark) .matching-component__item--unmatched .content-renderer__segment-
 }
 
 .dark .matching-component__item--matched-inactive .content-renderer__segment--term {
-  color: #6b7280;
+  color: var(--lp-ink-soft);
 }
 
 /* Dark mode - Force all text content in matched-inactive items to be visible */
@@ -341,7 +341,7 @@ html:not(.dark) .matching-component__item--unmatched .content-renderer__segment-
 .dark .matching-component__item--matched-inactive span,
 .dark .matching-component__item--matched-inactive p,
 .dark .matching-component__item--matched-inactive div {
-  color: #6b7280;
+  color: var(--lp-ink-soft);
 }
 
 .dark .sorting-component__sorted-item--correct .content-renderer__segment--term,

@@ -12,7 +12,7 @@
 
   .main-menu__view-btn:not(.main-menu__view-btn--active) {
     background: #ffffff;
-    color: #374151;
+    color: var(--lp-ink);
     border: none;
   }
 

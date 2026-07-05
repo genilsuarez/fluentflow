@@ -6,6 +6,8 @@ Antes de proponer soluciones o crear specs, explorar el código existente.
 
 - React 18 + TypeScript strict + Vite + Vitest
 - Pure CSS con BEM (NO Tailwind, NO CSS modules)
+- Design tokens: `--lp-*` prefix (Learn Platform) — warm editorial palette shared with LearnHub & LyricFlow
+- Typography: Newsreader (display/serif) + Manrope (body/UI) + JetBrains Mono (code)
 - Zustand para estado global con persistencia
 - TanStack Query para data fetching
 - Fuse.js para búsqueda fuzzy
@@ -72,11 +74,12 @@ Ver detalle completo en `docs/browser-localstorage-mcp.md`.
 
 ## Antes de cualquier cambio
 
-1. Leer `src/types/index.ts` para interfaces existentes
-2. Revisar `src/styles/` para patrones BEM
-3. Revisar `src/components/` para componentes reutilizables
-4. Revisar `src/stores/` para estado global
-5. Revisar `public/data/` para estructura de datos JSON
+1. Leer `src/styles/design-system/tokens.css` para design tokens (--lp-*)
+2. Leer `src/types/index.ts` para interfaces existentes
+3. Revisar `src/styles/` para patrones BEM
+4. Revisar `src/components/` para componentes reutilizables
+5. Revisar `src/stores/` para estado global
+6. Revisar `public/data/` para estructura de datos JSON
 
 ## Reglas
 

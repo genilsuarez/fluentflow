@@ -1,18 +1,7 @@
 /* === HEADER VARIABLES === */
+/* Color tokens and theme variables are now provided by design-system/tokens.css */
+/* Only header-specific layout tokens remain here */
 :root {
-  /* Color tokens */
-  --header-bg: #ffffff;
-  --header-border: #e5e7eb;
-  --header-text-primary: #111827;
-  --header-text-secondary: #6b7280;
-  --header-button-hover-bg: #f3f4f6;
-  --header-button-active-bg: #e5e7eb;
-  --header-focus-ring: #3b82f6;
-  --menu-bg: #ffffff;
-  --menu-border: #e5e7eb;
-  --menu-item-hover: #f3f4f6;
-  --menu-item-active: #e5e7eb;
-
   /* Height tokens - Compact & Uniform */
   --header-height-mobile: 46px;
   --header-height-tablet: 48px;
@@ -30,42 +19,6 @@
   --button-size-desktop: 40px;
   --icon-size-mobile: 20px;
   --icon-size-desktop: 20px;
-
-  /* Theme variables needed by other components */
-  --theme-bg-elevated: #ffffff;
-  --theme-bg-subtle: #f9fafb;
-  --theme-bg-soft: #f3f4f6;
-  --theme-border-soft: #e5e7eb;
-  --theme-border-medium: #d1d5db;
-  --theme-text-primary: #111827;
-  --theme-text-secondary: #6b7280;
-  --theme-primary-blue: #3b82f6;
-  --theme-primary-blue-hover: #2563eb;
-}
-
-html.dark {
-  --header-bg: #1f2937;
-  --header-border: #4b5563;
-  --header-text-primary: #ffffff;
-  --header-text-secondary: #e5e7eb;
-  --header-button-hover-bg: #374151;
-  --header-button-active-bg: #4b5563;
-  --header-focus-ring: #60a5fa;
-  --menu-bg: #1f2937;
-  --menu-border: #4b5563;
-  --menu-item-hover: #374151;
-  --menu-item-active: #4b5563;
-
-  /* Theme variables for dark mode */
-  --theme-bg-elevated: #1f2937;
-  --theme-bg-subtle: #374151;
-  --theme-bg-soft: #4b5563;
-  --theme-border-soft: #4b5563;
-  --theme-border-medium: #6b7280;
-  --theme-text-primary: #ffffff;
-  --theme-text-secondary: #e5e7eb;
-  --theme-primary-blue: #3b82f6;
-  --theme-primary-blue-hover: #2563eb;
 }
 
 /* === HEADER BASE - MOBILE FIRST === */
@@ -196,7 +149,7 @@ html.dark {
 .header-redesigned__menu-btn--primary,
 .header-redesigned__user-btn--primary,
 .header-redesigned__login-btn--primary {
-  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+  background: linear-gradient(135deg, #FAF7F2 0%, #F5F1EB 100%);
   border: 1px solid var(--header-border);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   color: var(--header-text-primary);
@@ -215,8 +168,8 @@ html.dark {
 .header-redesigned__menu-btn--primary:hover,
 .header-redesigned__user-btn--primary:hover,
 .header-redesigned__login-btn--primary:hover {
-  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
-  border-color: #9ca3af;
+  background: linear-gradient(135deg, #F5F1EB 0%, #E8E0D4 100%);
+  border-color: var(--lp-muted);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   transform: translateY(-1px);
 }
@@ -650,7 +603,7 @@ html.dark {
 .dark .header-redesigned__user-btn--primary:hover,
 .dark .header-redesigned__login-btn--primary:hover {
   background: linear-gradient(135deg, rgba(107, 114, 128, 0.7) 0%, rgba(75, 85, 99, 0.5) 100%);
-  border-color: #6b7280;
+  border-color: var(--lp-ink-soft);
   box-shadow:
     0 4px 12px rgba(0, 0, 0, 0.3),
     inset 0 1px 0 rgba(255, 255, 255, 0.15);
