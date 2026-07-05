@@ -205,7 +205,7 @@ const workflows = {
       { type: 'command', cmd: 'npm test', desc: 'Tests' },
       { type: 'command', cmd: 'npx vite build --mode production --config config/vite.config.ts', desc: 'Build application (vite only)' },
       { type: 'command', cmd: 'node scripts/git/smart-commit.js --stage-all --push --auto --allow-empty', desc: 'Post-build commit & push' },
-      { type: 'command', cmd: 'node scripts/git/github-actions-status.js watch-all', desc: 'Monitor pipeline (CI + CD)' },
+      { type: 'command', cmd: 'node scripts/git/github-actions-status.js watch-all 180', desc: 'Monitor pipeline (CI + CD)', nonBlocking: true },
     ]
   },
   fix: {
@@ -308,6 +308,7 @@ async function runWorkflow(workflowKey) {
 
   const startTime = Date.now();
   let allSuccess = true;
+  const warnings = []; // Non-blocking failures reported at the end
 
   for (const step of workflow.steps) {
     if (step.type === 'pipeline') {
@@ -334,12 +335,11 @@ async function runWorkflow(workflowKey) {
     } else if (step.type === 'command') {
       const success = executeCommand(step.cmd, step.desc);
       if (!success) {
-        allSuccess = false;
-        // For GitHub Actions monitoring, don't fail the entire workflow
-        if (step.desc.includes('GitHub Actions')) {
-          logWarning('GitHub Actions monitoring failed, but continuing...');
-          allSuccess = true;
+        if (step.nonBlocking) {
+          warnings.push(step.desc);
+          logWarning(`${step.desc} failed (non-blocking) — will be reported`);
         } else {
+          allSuccess = false;
           break;
         }
       }
@@ -364,7 +364,8 @@ async function runWorkflow(workflowKey) {
         writeFileSync(metaPath, JSON.stringify({
           commit: commitSha,
           duration: totalDuration,
-          buildDate: new Date().toISOString()
+          buildDate: new Date().toISOString(),
+          warnings: warnings.length > 0 ? warnings : undefined
         }));
       } catch {}
 
@@ -373,6 +374,10 @@ async function runWorkflow(workflowKey) {
       log(`  🔗 https://genilsuarez.github.io/fluentflow/`, colors.cyan);
       log(`  📝 Commit: ${commitSha}`, colors.white);
       log(`  ⏱️ Tiempo: ${totalDuration}s`, colors.white);
+      if (warnings.length > 0) {
+        log(`  ⚠️  Warnings (${warnings.length}):`, colors.yellow);
+        warnings.forEach(w => log(`     • ${w}`, colors.yellow));
+      }
       console.log('='.repeat(50));
     }
   } else {
