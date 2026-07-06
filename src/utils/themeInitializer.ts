@@ -36,11 +36,16 @@ function getInitialTheme(): ThemeState {
 
   try {
     // Check URL query param first (cross-app theme propagation in local dev)
-    const urlTheme = typeof window !== 'undefined'
-      ? new URLSearchParams(window.location.search).get('theme')
-      : null;
+    const urlTheme =
+      typeof window !== 'undefined'
+        ? new URLSearchParams(window.location.search).get('theme')
+        : null;
     if (urlTheme === 'dark' || urlTheme === 'light') {
-      try { localStorage.setItem('lp-theme', urlTheme); } catch {}
+      try {
+        localStorage.setItem('lp-theme', urlTheme);
+      } catch {
+        /* noop */
+      }
       return { theme: urlTheme, isSystemPreference: false };
     }
 
@@ -60,7 +65,11 @@ function getInitialTheme(): ThemeState {
 
       if (storeTheme) {
         // Sync store value to shared key
-        try { localStorage.setItem('lp-theme', storeTheme); } catch {}
+        try {
+          localStorage.setItem('lp-theme', storeTheme);
+        } catch {
+          /* noop */
+        }
         return { theme: storeTheme, isSystemPreference: false };
       }
     }

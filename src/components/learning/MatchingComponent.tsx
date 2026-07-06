@@ -29,7 +29,11 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
   const [selectedLeft, setSelectedLeft] = useState<string | null>(null);
   const [selectedRight, setSelectedRight] = useState<string | null>(null);
   const [matches, setMatches] = useState<Record<string, string>>({});
-  const [feedbackPair, setFeedbackPair] = useState<{ left: string; right: string; correct: boolean } | null>(null);
+  const [feedbackPair, setFeedbackPair] = useState<{
+    left: string;
+    right: string;
+    correct: boolean;
+  } | null>(null);
   const [showResult, setShowResult] = useState(false);
   const [startTime] = useState(Date.now());
   const [showExplanation, setShowExplanation] = useState(false);
@@ -161,9 +165,7 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
   };
 
   const createMatch = (left: string, right: string) => {
-    const correctPair = pairs.find(
-      (pair: { left: string; right: string }) => pair.left === left
-    );
+    const correctPair = pairs.find((pair: { left: string; right: string }) => pair.left === left);
     const isCorrect = correctPair?.right === right;
 
     // Show visual feedback

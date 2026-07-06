@@ -108,7 +108,11 @@ export const useSettingsStore = create<SettingsState>()(
         // Apply theme to DOM and update meta theme-color
         applyThemeToDOM(theme);
         // Sync shared cross-app theme key
-        try { localStorage.setItem('lp-theme', theme); } catch {}
+        try {
+          localStorage.setItem('lp-theme', theme);
+        } catch {
+          /* noop */
+        }
         // Update URL query param if present (prevents stale ?theme= on reload)
         if (typeof window !== 'undefined' && window.location.search.includes('theme=')) {
           const url = new URL(window.location.href);
@@ -274,12 +278,14 @@ export const useSettingsStore = create<SettingsState>()(
       },
       onRehydrateStorage: () => state => {
         // Check URL param first, then shared lp-theme key
-        const urlTheme = typeof window !== 'undefined'
-          ? new URLSearchParams(window.location.search).get('theme') as 'light' | 'dark' | null
-          : null;
-        const sharedTheme = typeof window !== 'undefined'
-          ? localStorage.getItem('lp-theme') as 'light' | 'dark' | null
-          : null;
+        const urlTheme =
+          typeof window !== 'undefined'
+            ? (new URLSearchParams(window.location.search).get('theme') as 'light' | 'dark' | null)
+            : null;
+        const sharedTheme =
+          typeof window !== 'undefined'
+            ? (localStorage.getItem('lp-theme') as 'light' | 'dark' | null)
+            : null;
 
         // Determine authoritative theme: URL > lp-theme > store
         const authoritative = urlTheme || sharedTheme;
@@ -288,7 +294,11 @@ export const useSettingsStore = create<SettingsState>()(
           if (state && state.theme !== authoritative) {
             state.theme = authoritative;
           }
-          try { localStorage.setItem('lp-theme', authoritative); } catch {}
+          try {
+            localStorage.setItem('lp-theme', authoritative);
+          } catch {
+            /* noop */
+          }
           applyThemeToDOM(authoritative);
         } else if (state?.theme) {
           applyThemeToDOM(state.theme);
