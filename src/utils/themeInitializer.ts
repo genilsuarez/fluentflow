@@ -44,22 +44,28 @@ function getInitialTheme(): ThemeState {
       return { theme: urlTheme, isSystemPreference: false };
     }
 
-    // Try to get stored preference from localStorage
+    // Shared cross-app key takes priority (another app may have changed it)
+    const sharedTheme = localStorage.getItem('lp-theme') as ThemeMode | null;
+
+    // Check Zustand persisted settings
     const storedSettings = localStorage.getItem('settings-storage');
     if (storedSettings) {
       const parsed = JSON.parse(storedSettings);
-      if (parsed.state && parsed.state.theme) {
-        // Sync to shared cross-app key
-        try { localStorage.setItem('lp-theme', parsed.state.theme); } catch {}
-        return {
-          theme: parsed.state.theme,
-          isSystemPreference: false,
-        };
+      const storeTheme = parsed?.state?.theme as ThemeMode | undefined;
+
+      if (sharedTheme && (sharedTheme === 'dark' || sharedTheme === 'light')) {
+        // lp-theme wins — another app may have updated it
+        return { theme: sharedTheme, isSystemPreference: false };
+      }
+
+      if (storeTheme) {
+        // Sync store value to shared key
+        try { localStorage.setItem('lp-theme', storeTheme); } catch {}
+        return { theme: storeTheme, isSystemPreference: false };
       }
     }
 
-    // Check shared cross-app theme key as fallback
-    const sharedTheme = localStorage.getItem('lp-theme');
+    // Fallback to shared key alone
     if (sharedTheme === 'dark' || sharedTheme === 'light') {
       return { theme: sharedTheme, isSystemPreference: false };
     }

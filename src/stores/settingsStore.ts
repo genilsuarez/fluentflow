@@ -273,17 +273,23 @@ export const useSettingsStore = create<SettingsState>()(
         return merged;
       },
       onRehydrateStorage: () => state => {
-        // Check if URL has a theme override (cross-app propagation)
+        // Check URL param first, then shared lp-theme key
         const urlTheme = typeof window !== 'undefined'
           ? new URLSearchParams(window.location.search).get('theme') as 'light' | 'dark' | null
           : null;
-        if (urlTheme === 'dark' || urlTheme === 'light') {
-          // URL param takes priority — update store to match
-          if (state && state.theme !== urlTheme) {
-            state.theme = urlTheme;
-            try { localStorage.setItem('lp-theme', urlTheme); } catch {}
+        const sharedTheme = typeof window !== 'undefined'
+          ? localStorage.getItem('lp-theme') as 'light' | 'dark' | null
+          : null;
+
+        // Determine authoritative theme: URL > lp-theme > store
+        const authoritative = urlTheme || sharedTheme;
+
+        if (authoritative && (authoritative === 'dark' || authoritative === 'light')) {
+          if (state && state.theme !== authoritative) {
+            state.theme = authoritative;
           }
-          applyThemeToDOM(urlTheme);
+          try { localStorage.setItem('lp-theme', authoritative); } catch {}
+          applyThemeToDOM(authoritative);
         } else if (state?.theme) {
           applyThemeToDOM(state.theme);
         }
