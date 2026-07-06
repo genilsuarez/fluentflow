@@ -35,16 +35,33 @@ function getInitialTheme(): ThemeState {
   }
 
   try {
+    // Check URL query param first (cross-app theme propagation in local dev)
+    const urlTheme = typeof window !== 'undefined'
+      ? new URLSearchParams(window.location.search).get('theme')
+      : null;
+    if (urlTheme === 'dark' || urlTheme === 'light') {
+      try { localStorage.setItem('lp-theme', urlTheme); } catch {}
+      return { theme: urlTheme, isSystemPreference: false };
+    }
+
     // Try to get stored preference from localStorage
     const storedSettings = localStorage.getItem('settings-storage');
     if (storedSettings) {
       const parsed = JSON.parse(storedSettings);
       if (parsed.state && parsed.state.theme) {
+        // Sync to shared cross-app key
+        try { localStorage.setItem('lp-theme', parsed.state.theme); } catch {}
         return {
           theme: parsed.state.theme,
           isSystemPreference: false,
         };
       }
+    }
+
+    // Check shared cross-app theme key as fallback
+    const sharedTheme = localStorage.getItem('lp-theme');
+    if (sharedTheme === 'dark' || sharedTheme === 'light') {
+      return { theme: sharedTheme, isSystemPreference: false };
     }
   } catch (error) {
     console.warn('Failed to parse stored theme preference:', error);

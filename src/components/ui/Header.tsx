@@ -361,6 +361,14 @@ export const Header: React.FC<HeaderProps> = () => {
                 }
                 className="header-side-menu__item header-side-menu__item--portal"
                 aria-label={t('navigation.backToPortal')}
+                onClick={(e) => {
+                  if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
+                    const theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+                    const url = new URL(e.currentTarget.href);
+                    url.searchParams.set('theme', theme);
+                    e.currentTarget.href = url.toString();
+                  }
+                }}
               >
                 <ExternalLink className="header-side-menu__icon" aria-hidden="true" />
                 <span className="header-side-menu__text">{t('navigation.backToPortal')}</span>

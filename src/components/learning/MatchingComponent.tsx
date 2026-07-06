@@ -29,6 +29,7 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
   const [selectedLeft, setSelectedLeft] = useState<string | null>(null);
   const [selectedRight, setSelectedRight] = useState<string | null>(null);
   const [matches, setMatches] = useState<Record<string, string>>({});
+  const [feedbackPair, setFeedbackPair] = useState<{ left: string; right: string; correct: boolean } | null>(null);
   const [showResult, setShowResult] = useState(false);
   const [startTime] = useState(Date.now());
   const [showExplanation, setShowExplanation] = useState(false);
@@ -41,7 +42,7 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
   const { updateUserScore } = useUserStore();
   const { language, randomizeItems } = useSettingsStore();
   const { returnToMenu } = useMenuNavigation();
-  const { showCorrectAnswer, showIncorrectAnswer } = useToast();
+  const { showCorrectAnswer } = useToast();
   const { t } = useTranslation(language);
   useLearningCleanup();
 
@@ -134,7 +135,7 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
   const pairs = pairsRef.current;
 
   const handleLeftClick = (item: string) => {
-    if (showResult || matches[item]) return;
+    if (showResult || matches[item] || feedbackPair) return;
 
     if (selectedLeft === item) {
       setSelectedLeft(null);
@@ -147,7 +148,7 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
   };
 
   const handleRightClick = (item: string) => {
-    if (showResult || Object.values(matches).includes(item)) return;
+    if (showResult || Object.values(matches).includes(item) || feedbackPair) return;
 
     if (selectedRight === item) {
       setSelectedRight(null);
@@ -160,9 +161,28 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
   };
 
   const createMatch = (left: string, right: string) => {
-    setMatches(prev => ({ ...prev, [left]: right }));
+    const correctPair = pairs.find(
+      (pair: { left: string; right: string }) => pair.left === left
+    );
+    const isCorrect = correctPair?.right === right;
+
+    // Show visual feedback
+    setFeedbackPair({ left, right, correct: isCorrect });
     setSelectedLeft(null);
     setSelectedRight(null);
+
+    if (isCorrect) {
+      // Correct: save match after brief feedback
+      setTimeout(() => {
+        setMatches(prev => ({ ...prev, [left]: right }));
+        setFeedbackPair(null);
+      }, 600);
+    } else {
+      // Incorrect: show red feedback then clear
+      setTimeout(() => {
+        setFeedbackPair(null);
+      }, 1000);
+    }
   };
 
   const removeMatch = (leftItem: string) => {
@@ -175,23 +195,14 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
   };
 
   const checkAnswers = () => {
-    let correctMatches = 0;
-
-    pairs.forEach((pair: { left: string; right: string }) => {
-      if (matches[pair.left] === pair.right) {
-        correctMatches++;
-      }
-    });
-
+    // All stored matches are already correct (validated in createMatch)
+    const correctMatches = Object.keys(matches).length;
     const isAllCorrect = correctMatches === pairs.length;
     updateSessionScore(isAllCorrect ? { correct: 1 } : { incorrect: 1 });
     setShowResult(true);
 
-    // Show toast feedback
     if (isAllCorrect) {
       showCorrectAnswer();
-    } else {
-      showIncorrectAnswer();
     }
   };
 
@@ -202,6 +213,7 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
     setLeftItems(conditionalShuffle(terms, randomizeItems));
     setRightItems(conditionalShuffle(definitions, randomizeItems));
     setMatches({});
+    setFeedbackPair(null);
     setSelectedLeft(null);
     setSelectedRight(null);
     setShowResult(false);
@@ -274,6 +286,7 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
         onRetry={() => {
           setExerciseResultData(null);
           setMatches({});
+          setFeedbackPair(null);
           setSelectedLeft(null);
           setSelectedRight(null);
           setShowResult(false);
@@ -311,6 +324,7 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
               const isMatched = matches[item];
               const isSelected = selectedLeft === item;
               const status = getItemStatus(item, true);
+              const isFeedback = feedbackPair?.left === item;
 
               let className = 'matching-component__item ';
 
@@ -319,6 +333,10 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
                   status === 'correct'
                     ? 'matching-component__item--correct'
                     : 'matching-component__item--incorrect';
+              } else if (isFeedback) {
+                className += feedbackPair.correct
+                  ? 'matching-component__item--correct'
+                  : 'matching-component__item--incorrect';
               } else if (isMatched) {
                 className += 'matching-component__item--matched';
               } else if (isSelected) {
@@ -376,6 +394,7 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
               const isMatched = Object.values(matches).includes(item);
               const isSelected = selectedRight === item;
               const status = getItemStatus(item, false);
+              const isFeedback = feedbackPair?.right === item;
 
               let className = 'matching-component__item ';
 
@@ -386,6 +405,10 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
                     : status === 'incorrect'
                       ? 'matching-component__item--incorrect'
                       : 'matching-component__item--unmatched';
+              } else if (isFeedback) {
+                className += feedbackPair.correct
+                  ? 'matching-component__item--correct'
+                  : 'matching-component__item--incorrect';
               } else if (isMatched) {
                 className += 'matching-component__item--matched-inactive';
               } else if (isSelected) {

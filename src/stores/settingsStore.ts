@@ -107,6 +107,14 @@ export const useSettingsStore = create<SettingsState>()(
         set({ theme });
         // Apply theme to DOM and update meta theme-color
         applyThemeToDOM(theme);
+        // Sync shared cross-app theme key
+        try { localStorage.setItem('lp-theme', theme); } catch {}
+        // Update URL query param if present (prevents stale ?theme= on reload)
+        if (typeof window !== 'undefined' && window.location.search.includes('theme=')) {
+          const url = new URL(window.location.href);
+          url.searchParams.set('theme', theme);
+          window.history.replaceState(null, '', url.toString());
+        }
       },
 
       setLanguage: language => set({ language }),
@@ -265,8 +273,18 @@ export const useSettingsStore = create<SettingsState>()(
         return merged;
       },
       onRehydrateStorage: () => state => {
-        // Ensure theme is applied after rehydration
-        if (state?.theme) {
+        // Check if URL has a theme override (cross-app propagation)
+        const urlTheme = typeof window !== 'undefined'
+          ? new URLSearchParams(window.location.search).get('theme') as 'light' | 'dark' | null
+          : null;
+        if (urlTheme === 'dark' || urlTheme === 'light') {
+          // URL param takes priority — update store to match
+          if (state && state.theme !== urlTheme) {
+            state.theme = urlTheme;
+            try { localStorage.setItem('lp-theme', urlTheme); } catch {}
+          }
+          applyThemeToDOM(urlTheme);
+        } else if (state?.theme) {
           applyThemeToDOM(state.theme);
         }
       },
