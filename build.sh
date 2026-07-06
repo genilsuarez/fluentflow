@@ -13,7 +13,7 @@ echo "📦 FluentFlow — running full pipeline..."
 
 # ─── Build (quality + security + build + push) ──────────────────────────────────
 
-if ! npm run build:full; then
+if ! node scripts/development/dev-tools.js full; then
   if [ -d "dist" ] && [ -f "dist/index.html" ]; then
     echo "⚠️  Pipeline script exited non-zero but dist exists — continuing"
   else
