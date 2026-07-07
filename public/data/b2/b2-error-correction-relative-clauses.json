@@ -1,0 +1,92 @@
+[
+  {
+    "sentence": "My brother, that lives in New York, is visiting us next week.",
+    "correct": ["My brother, who lives in New York, is visiting us next week."],
+    "hint": "Check the relative pronoun in a non-defining clause",
+    "explanation": "Non-defining clauses (with commas) NEVER use 'that'. Use 'who' for people."
+  },
+  {
+    "sentence": "The house which I grew up is being demolished.",
+    "correct": ["The house where I grew up is being demolished.", "The house in which I grew up is being demolished."],
+    "hint": "Check the relative pronoun for a place",
+    "explanation": "For places, use 'where' or 'in which', not just 'which' without a preposition."
+  },
+  {
+    "sentence": "She's the woman which won the competition.",
+    "correct": ["She's the woman who won the competition."],
+    "hint": "Check the pronoun used for people",
+    "explanation": "Use 'who' (or 'that') for people, never 'which'. 'Which' is only for things."
+  },
+  {
+    "sentence": "The car who was parked outside has been towed.",
+    "correct": ["The car which was parked outside has been towed.", "The car that was parked outside has been towed."],
+    "hint": "Check the pronoun used for things",
+    "explanation": "Use 'which' or 'that' for things, never 'who'. 'Who' is only for people."
+  },
+  {
+    "sentence": "Paris, where is the capital of France, attracts millions of tourists.",
+    "correct": ["Paris, which is the capital of France, attracts millions of tourists."],
+    "hint": "Check if 'where' is correct here — is it referring to a location or giving a fact?",
+    "explanation": "'Where' is for location clauses. Here we're stating a fact about Paris → use 'which'."
+  },
+  {
+    "sentence": "The man who's car was blocking the entrance was very rude.",
+    "correct": ["The man whose car was blocking the entrance was very rude."],
+    "hint": "Check the possessive form",
+    "explanation": "'Whose' = possession (the man's car). 'Who's' = 'who is' — not the same thing."
+  },
+  {
+    "sentence": "I met someone who he works at Google.",
+    "correct": ["I met someone who works at Google."],
+    "hint": "Check for a repeated subject",
+    "explanation": "Don't repeat the subject. 'Who' already replaces 'he': 'someone who works', not 'who he works'."
+  },
+  {
+    "sentence": "The book, that I bought yesterday, is very interesting.",
+    "correct": ["The book, which I bought yesterday, is very interesting.", "The book that I bought yesterday is very interesting."],
+    "hint": "Can 'that' be used in non-defining clauses?",
+    "explanation": "Never use 'that' with commas. Either: 'which' + commas (non-defining) or 'that' without commas (defining)."
+  },
+  {
+    "sentence": "She has a dog who is very friendly.",
+    "correct": ["She has a dog which is very friendly.", "She has a dog that is very friendly."],
+    "hint": "Check the pronoun for an animal",
+    "explanation": "For animals, use 'which' or 'that', not 'who' (unless personified/named)."
+  },
+  {
+    "sentence": "The reason because I left was personal.",
+    "correct": ["The reason why I left was personal.", "The reason that I left was personal.", "The reason I left was personal."],
+    "hint": "Check the word after 'reason'",
+    "explanation": "Use 'why', 'that', or omit after 'reason'. Never 'because' — it's redundant (reason already implies cause)."
+  },
+  {
+    "sentence": "The hotel in where we stayed was beautiful.",
+    "correct": ["The hotel where we stayed was beautiful.", "The hotel in which we stayed was beautiful."],
+    "hint": "Check 'in where' — is this correct?",
+    "explanation": "Use 'where' (alone) or 'in which', but never 'in where'. They mean the same thing."
+  },
+  {
+    "sentence": "Tom, whose is very tall, plays basketball.",
+    "correct": ["Tom, who is very tall, plays basketball."],
+    "hint": "Check if 'whose' makes sense here",
+    "explanation": "'Whose' = possession (whose + noun). Here we describe Tom → use 'who' (who is tall)."
+  },
+  {
+    "sentence": "The people which I work with are great.",
+    "correct": ["The people who I work with are great.", "The people that I work with are great.", "The people I work with are great."],
+    "hint": "Check the pronoun for people",
+    "explanation": "For people use 'who' or 'that', not 'which'. Since it's the object, it can also be omitted."
+  },
+  {
+    "sentence": "I visited the museum, where was closed on Mondays.",
+    "correct": ["I visited the museum, which was closed on Mondays."],
+    "hint": "Is this about location or giving information about the museum?",
+    "explanation": "'Where' = at which place. Here we say something about the museum → use 'which'."
+  },
+  {
+    "sentence": "The girl which bag was stolen went to the police.",
+    "correct": ["The girl whose bag was stolen went to the police."],
+    "hint": "Check how to show possession",
+    "explanation": "'Whose' = the girl's bag. 'Which' doesn't show possession."
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "prompt": "Report this statement using 'said'",
+    "source": "\"I love this city,\" Maria said.",
+    "correct": ["Maria said she loved that city.", "Maria said that she loved that city."],
+    "hint": "Backshift: love → loved. Shift: this → that",
+    "explanation": "Reported speech: backshift present → past, this → that."
+  },
+  {
+    "prompt": "Report this statement using 'told me'",
+    "source": "\"I will help you tomorrow,\" John said.",
+    "correct": ["John told me he would help me the next day.", "John told me that he would help me the next day."],
+    "hint": "will → would, you → me, tomorrow → the next day",
+    "explanation": "Backshift will → would. Pronoun and time shifts apply."
+  },
+  {
+    "prompt": "Report this yes/no question using 'asked'",
+    "source": "\"Are you coming to the party?\" she asked.",
+    "correct": ["She asked if I was coming to the party.", "She asked whether I was coming to the party.", "She asked me if I was coming to the party."],
+    "hint": "Yes/No question → if/whether + statement order",
+    "explanation": "Reported yes/no questions use if/whether + subject + verb (statement order)."
+  },
+  {
+    "prompt": "Report this wh-question using 'asked'",
+    "source": "\"Where did you buy that jacket?\" he asked.",
+    "correct": ["He asked where I had bought that jacket.", "He asked me where I had bought that jacket."],
+    "hint": "Keep 'where' + statement order + backshift",
+    "explanation": "Wh-questions keep the question word but switch to statement order with backshift."
+  },
+  {
+    "prompt": "Report this command using 'told'",
+    "source": "\"Close the window,\" the teacher said to us.",
+    "correct": ["The teacher told us to close the window."],
+    "hint": "Commands → told + object + to-infinitive",
+    "explanation": "Reported commands: told + person + to + base verb."
+  },
+  {
+    "prompt": "Report this negative command using 'told'",
+    "source": "\"Don't be late!\" my mother said.",
+    "correct": ["My mother told me not to be late."],
+    "hint": "Negative commands → told + object + not to",
+    "explanation": "Reported negative commands: told + person + not + to + base verb."
+  },
+  {
+    "prompt": "Report this request using 'asked'",
+    "source": "\"Could you open the door, please?\" she said.",
+    "correct": ["She asked me to open the door.", "She asked us to open the door."],
+    "hint": "Requests → asked + object + to-infinitive",
+    "explanation": "Reported requests: asked + person + to + base verb."
+  },
+  {
+    "prompt": "Report this statement using 'said'",
+    "source": "\"I have never been to London,\" he said.",
+    "correct": ["He said he had never been to London.", "He said that he had never been to London."],
+    "hint": "have been → had been (present perfect → past perfect)",
+    "explanation": "Backshift: present perfect → past perfect."
+  },
+  {
+    "prompt": "Report this statement with time/place shifts",
+    "source": "\"I'm working here today,\" she said.",
+    "correct": ["She said she was working there that day.", "She said that she was working there that day."],
+    "hint": "here → there, today → that day, am → was",
+    "explanation": "Backshift + place shift (here → there) + time shift (today → that day)."
+  },
+  {
+    "prompt": "Report this statement using 'told'",
+    "source": "\"I can't come to the meeting,\" he said to me.",
+    "correct": ["He told me he couldn't come to the meeting.", "He told me that he couldn't come to the meeting."],
+    "hint": "can't → couldn't",
+    "explanation": "Backshift: can → could (negative form: can't → couldn't)."
+  },
+  {
+    "prompt": "Report this wh-question using 'asked'",
+    "source": "\"What are you doing now?\" she asked me.",
+    "correct": ["She asked me what I was doing then.", "She asked me what I was doing at that moment."],
+    "hint": "now → then/at that moment, are → was",
+    "explanation": "Time shift: now → then. Backshift: are → was. Statement order."
+  },
+  {
+    "prompt": "Report this suggestion using 'suggested'",
+    "source": "\"Let's go to the cinema,\" Tom said.",
+    "correct": ["Tom suggested going to the cinema.", "Tom suggested that we go to the cinema.", "Tom suggested we should go to the cinema."],
+    "hint": "Let's → suggested + -ing or that + subject + go",
+    "explanation": "Reported suggestions: suggested + -ing or suggested that + subject + base verb."
+  },
+  {
+    "prompt": "Report this statement using 'said'",
+    "source": "\"I was sleeping when you called,\" she said.",
+    "correct": ["She said she had been sleeping when I called.", "She said that she had been sleeping when I called."],
+    "hint": "was sleeping → had been sleeping (past continuous → past perfect continuous)",
+    "explanation": "Backshift: past continuous → past perfect continuous."
+  },
+  {
+    "prompt": "Report this yes/no question using 'wanted to know'",
+    "source": "\"Have you finished the report?\" my boss asked.",
+    "correct": ["My boss wanted to know if I had finished the report.", "My boss wanted to know whether I had finished the report."],
+    "hint": "if/whether + had finished (present perfect → past perfect)",
+    "explanation": "Reporting verb variation: wanted to know = asked. Backshift applies."
+  },
+  {
+    "prompt": "Report this statement using 'admitted'",
+    "source": "\"I forgot to send the email,\" he said.",
+    "correct": ["He admitted that he had forgotten to send the email.", "He admitted he had forgotten to send the email.", "He admitted forgetting to send the email."],
+    "hint": "Different reporting verb. forgot → had forgotten",
+    "explanation": "Reported speech with 'admitted': admits + that-clause or + -ing form."
+  }
+]

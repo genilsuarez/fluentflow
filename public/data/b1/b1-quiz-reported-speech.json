@@ -1,0 +1,92 @@
+[
+  {
+    "question": "\"I am happy,\" she said. → She said she _____ happy.",
+    "options": ["is", "was", "were", "has been"],
+    "correct": 1,
+    "explanation": "Backshift rule: present simple 'am' → past simple 'was'."
+  },
+  {
+    "question": "\"We will come,\" they said. → They said they _____ come.",
+    "options": ["will", "would", "could", "should"],
+    "correct": 1,
+    "explanation": "Backshift: 'will' → 'would' in reported speech."
+  },
+  {
+    "question": "\"Do you like tea?\" → She asked me _____ I liked tea.",
+    "options": ["that", "what", "if", "do"],
+    "correct": 2,
+    "explanation": "Yes/No questions in reported speech use 'if' or 'whether'."
+  },
+  {
+    "question": "\"I have seen that film,\" he said. → He said he _____ that film.",
+    "options": ["has seen", "had seen", "saw", "would see"],
+    "correct": 1,
+    "explanation": "Backshift: present perfect 'have seen' → past perfect 'had seen'."
+  },
+  {
+    "question": "\"Close the door!\" she said. → She told me _____ the door.",
+    "options": ["close", "to close", "closing", "closed"],
+    "correct": 1,
+    "explanation": "Reported commands: told + object + to-infinitive."
+  },
+  {
+    "question": "\"I'm studying now,\" he said. → He said he _____ studying then.",
+    "options": ["is", "was", "has been", "had been"],
+    "correct": 1,
+    "explanation": "Backshift: present continuous 'am' → past continuous 'was'. 'now' → 'then'."
+  },
+  {
+    "question": "'Tomorrow' in direct speech becomes _____ in reported speech.",
+    "options": ["yesterday", "the next day", "that day", "today"],
+    "correct": 1,
+    "explanation": "Time shift: tomorrow → the next day / the following day."
+  },
+  {
+    "question": "\"Don't run!\" → He told the children _____ run.",
+    "options": ["don't", "to not", "not to", "didn't"],
+    "correct": 2,
+    "explanation": "Reported negative commands: told + object + not to + base verb."
+  },
+  {
+    "question": "\"Where do you live?\" → She asked me where I _____.",
+    "options": ["live", "lived", "do live", "living"],
+    "correct": 1,
+    "explanation": "Wh-questions use statement order + backshift: live → lived."
+  },
+  {
+    "question": "'Here' in direct speech becomes _____ in reported speech.",
+    "options": ["here", "there", "then", "that place"],
+    "correct": 1,
+    "explanation": "Place shift: here → there."
+  },
+  {
+    "question": "\"I can drive,\" she said. → She said she _____ drive.",
+    "options": ["can", "could", "was able", "would"],
+    "correct": 1,
+    "explanation": "Backshift: 'can' → 'could'."
+  },
+  {
+    "question": "\"I must go,\" he said. → He said he _____ go.",
+    "options": ["must", "had to", "should", "would have to"],
+    "correct": 1,
+    "explanation": "Backshift: 'must' → 'had to'."
+  },
+  {
+    "question": "Which reporting verb is used for requests?",
+    "options": ["told", "said", "asked", "ordered"],
+    "correct": 2,
+    "explanation": "Requests use 'asked' + object + to-infinitive. 'Told' is for commands."
+  },
+  {
+    "question": "\"This is my book,\" she said. → She said _____ was her book.",
+    "options": ["this", "that", "it", "the"],
+    "correct": 1,
+    "explanation": "Demonstrative shift: 'this' → 'that' in reported speech."
+  },
+  {
+    "question": "\"Let's go swimming,\" he said. → He suggested _____.",
+    "options": ["to go swimming", "going swimming", "we go swimming", "go swimming"],
+    "correct": 1,
+    "explanation": "Reported suggestions: suggested + -ing form."
+  }
+]

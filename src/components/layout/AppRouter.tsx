@@ -26,6 +26,15 @@ const WordFormationComponent = lazyWithRetry(() => import('../learning/WordForma
 const ErrorCorrectionComponent = lazyWithRetry(
   () => import('../learning/ErrorCorrectionComponent')
 );
+const ListeningQuizComponent = lazyWithRetry(
+  () => import('../learning/ListeningQuizComponent')
+);
+const DictationComponent = lazyWithRetry(
+  () => import('../learning/DictationComponent')
+);
+const ListenCompleteComponent = lazyWithRetry(
+  () => import('../learning/ListenCompleteComponent')
+);
 
 // Enhanced loading component
 const ComponentLoader: React.FC = () => (
@@ -195,6 +204,12 @@ export const AppRouter: React.FC = () => {
               return <WordFormationComponent module={module} />;
             case 'error-correction':
               return <ErrorCorrectionComponent module={module} />;
+            case 'listening-quiz':
+              return <ListeningQuizComponent module={module} />;
+            case 'dictation':
+              return <DictationComponent module={module} />;
+            case 'listen-complete':
+              return <ListenCompleteComponent module={module} />;
             default:
               return (
                 <div className="app-router__unknown-view">

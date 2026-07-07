@@ -1,0 +1,92 @@
+[
+  {
+    "sentence": "The findings ______ that further research is warranted.",
+    "correct": "suggest",
+    "explanation": "Academic hedging: 'suggest' is softer than 'prove' or 'show'.",
+    "tip": "Hedging verb (weaker than 'prove')"
+  },
+  {
+    "sentence": "Not until the results were published ______ the implications become clear.",
+    "correct": "did",
+    "explanation": "Negative inversion: Not until X + did + subject + base verb.",
+    "tip": "Inverted auxiliary"
+  },
+  {
+    "sentence": "It is imperative that all participants ______ their data before the deadline.",
+    "correct": "submit",
+    "explanation": "Subjunctive: 'It is imperative that' + subject + base verb (no -s).",
+    "tip": "Subjunctive form (base verb)"
+  },
+  {
+    "sentence": "______ the government to implement these policies, significant savings could be made.",
+    "correct": "Were",
+    "explanation": "Formal conditional: Were + subject + to + infinitive = If the government implemented.",
+    "tip": "Formal conditional opener"
+  },
+  {
+    "sentence": "Such is the ______ of the issue that a multidisciplinary approach is required.",
+    "correct": "complexity",
+    "explanation": "Fronted 'such' + inversion: Such is the X that...",
+    "tip": "Noun meaning 'how complex something is'"
+  },
+  {
+    "sentence": "Little ______ the researchers anticipate the magnitude of the response.",
+    "correct": "did",
+    "explanation": "'Little' (negative) at the start → auxiliary inversion: Little did + subject.",
+    "tip": "Inverted auxiliary after negative"
+  },
+  {
+    "sentence": "The phenomenon, ______ unexplained, has now been attributed to new factors.",
+    "correct": "hitherto",
+    "explanation": "'Hitherto' = until now. Formal adverb modifying 'unexplained'.",
+    "tip": "Formal word meaning 'until now'"
+  },
+  {
+    "sentence": "The hypothesis, ______ plausible, lacks empirical support.",
+    "correct": "whilst",
+    "explanation": "'Whilst' = while (formal BrE). Introduces concession.",
+    "tip": "Formal BrE word meaning 'while'"
+  },
+  {
+    "sentence": "Only by adopting a collaborative framework ______ we hope to address these challenges.",
+    "correct": "can",
+    "explanation": "'Only by + -ing' → inversion in main clause: can + subject.",
+    "tip": "Modal of ability (inverted)"
+  },
+  {
+    "sentence": "The extent ______ which cultural factors influence outcomes remains debatable.",
+    "correct": "to",
+    "explanation": "'The extent to which' = formal way of saying 'how much'.",
+    "tip": "Preposition in 'the extent __ which'"
+  },
+  {
+    "sentence": "It would ______ that the correlation is stronger than previously assumed.",
+    "correct": "appear",
+    "explanation": "'It would appear that' = tentative reporting (academic hedging).",
+    "tip": "Hedging verb after 'would'"
+  },
+  {
+    "sentence": "The data, ______ as they are reliable, support the initial hypothesis.",
+    "correct": "insofar",
+    "explanation": "'Insofar as' = to the degree that. Formal conditional qualifier.",
+    "tip": "Formal qualifier meaning 'to the degree that'"
+  },
+  {
+    "sentence": "______ the methodological limitations, the study provides valuable insights.",
+    "correct": "Notwithstanding",
+    "explanation": "'Notwithstanding' = despite. Formal academic concession.",
+    "tip": "Formal word meaning 'despite'"
+  },
+  {
+    "sentence": "The participants were asked to ______ from discussing the experiment.",
+    "correct": "refrain",
+    "explanation": "'Refrain from' + -ing = formal way of saying 'not do something'.",
+    "tip": "Formal verb meaning 'stop oneself from'"
+  },
+  {
+    "sentence": "Suffice it to ______ that the implications extend far beyond the immediate context.",
+    "correct": "say",
+    "explanation": "'Suffice it to say' = it's enough to say. Fixed formal expression.",
+    "tip": "Fixed phrase: suffice it to ___"
+  }
+]

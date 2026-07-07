@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Had I known about the problem, I would have acted sooner. What conditional is this?",
+    "options": ["Third conditional with inversion", "Second conditional", "Mixed conditional", "Zero conditional"],
+    "correct": 0,
+    "explanation": "Third conditional: Had + subject + past participle = If I had known. Formal inversion."
+  },
+  {
+    "question": "The CEO is believed to have resigned last week. What structure is this?",
+    "options": ["Impersonal passive", "Active voice", "Reported speech", "Relative clause"],
+    "correct": 0,
+    "explanation": "Subject + is believed/thought/said + to have + past participle = impersonal passive reporting."
+  },
+  {
+    "question": "It's high time we addressed climate change. What does 'it's high time' express?",
+    "options": ["Something that should already have happened", "A future prediction", "A past habit", "A conditional situation"],
+    "correct": 0,
+    "explanation": "'It's high time' + past simple = expressing impatience that something should already be happening."
+  },
+  {
+    "question": "No sooner had we arrived than it started raining. What is this structure?",
+    "options": ["Inversion with 'no sooner...than'", "Reported speech", "Relative clause", "Passive voice"],
+    "correct": 0,
+    "explanation": "No sooner + had + subject + past participle + than = immediately after."
+  },
+  {
+    "question": "Were it not for his help, we wouldn't have succeeded. What is 'were it not for'?",
+    "options": ["Formal conditional (= if it weren't for)", "Past simple question", "Passive construction", "Relative clause"],
+    "correct": 0,
+    "explanation": "'Were it not for' = formal inversion of 'if it were not for' (unreal condition)."
+  },
+  {
+    "question": "Under no circumstances should you reveal this information. Why is 'should' before 'you'?",
+    "options": ["Negative fronting causes inversion", "It's a question", "It's passive voice", "It's reported speech"],
+    "correct": 0,
+    "explanation": "When negative adverbials (under no circumstances, never, rarely) start a sentence, subject-auxiliary inversion occurs."
+  },
+  {
+    "question": "He denied having taken the money. What form follows 'deny'?",
+    "options": ["Perfect gerund (having + past participle)", "To-infinitive", "Base form", "Past simple"],
+    "correct": 0,
+    "explanation": "'Deny' + -ing. Perfect gerund 'having taken' = the action happened before the denial."
+  },
+  {
+    "question": "She would rather we hadn't mentioned the incident. What structure is 'would rather + past perfect'?",
+    "options": ["Expressing regret about a past action by others", "Making a suggestion", "Reporting speech", "Describing a habit"],
+    "correct": 0,
+    "explanation": "'Would rather' + subject + past perfect = wish that someone hadn't done something."
+  },
+  {
+    "question": "So complex was the problem that no one could solve it. What triggers the inversion?",
+    "options": ["'So + adjective' at the start of the sentence", "A question word", "Passive voice", "Reported speech"],
+    "correct": 0,
+    "explanation": "'So + adjective/adverb' fronted for emphasis → subject-auxiliary inversion."
+  },
+  {
+    "question": "The committee is to meet on Monday. What does 'be to + infinitive' express?",
+    "options": ["A formal arrangement or plan", "An ability", "A past habit", "A permission"],
+    "correct": 0,
+    "explanation": "'Be to + infinitive' = formal/official arrangements, often in news/formal contexts."
+  },
+  {
+    "question": "Notwithstanding the criticism, the company proceeded. What does 'notwithstanding' mean?",
+    "options": ["Despite / in spite of", "Because of", "In addition to", "As a result of"],
+    "correct": 0,
+    "explanation": "'Notwithstanding' = despite. Formal register linking word."
+  },
+  {
+    "question": "By the time the ambulance arrived, the patient had already been transferred. What tenses interact here?",
+    "options": ["Past simple + past perfect passive", "Present perfect + past simple", "Future perfect + present", "Past continuous + past simple"],
+    "correct": 0,
+    "explanation": "Time clause (past simple) + main clause (past perfect passive) = earlier action completed before the time reference."
+  }
+]

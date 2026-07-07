@@ -1,0 +1,17 @@
+[
+  { "text": "Hello, my name is Maria.", "hint": "A greeting and introduction" },
+  { "text": "I am a student.", "hint": "Talking about your job" },
+  { "text": "She lives in a small house.", "hint": "Where someone lives" },
+  { "text": "He drinks coffee every morning.", "hint": "A daily habit" },
+  { "text": "We go to school by bus.", "hint": "Transportation to school" },
+  { "text": "They are from Spain.", "hint": "Talking about nationality" },
+  { "text": "The cat is on the table.", "hint": "Position of an animal" },
+  { "text": "I like reading books.", "hint": "A hobby" },
+  { "text": "She has two brothers.", "hint": "Family members" },
+  { "text": "It is cold today.", "hint": "Talking about weather" },
+  { "text": "Can you help me, please?", "hint": "Asking for help" },
+  { "text": "My favourite colour is blue.", "hint": "Personal preference" },
+  { "text": "He plays football on Saturdays.", "hint": "A weekend activity" },
+  { "text": "We have dinner at eight.", "hint": "Mealtime" },
+  { "text": "The dog is very friendly.", "hint": "Describing a pet" }
+]

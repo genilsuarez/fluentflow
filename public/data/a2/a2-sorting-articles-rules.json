@@ -1,0 +1,22 @@
+[
+  {"word": "She is a doctor", "category": "a/an — professions"},
+  {"word": "He wants to be a pilot", "category": "a/an — professions"},
+  {"word": "I'm an engineer", "category": "a/an — professions"},
+  {"word": "She works as a nurse", "category": "a/an — professions"},
+  {"word": "the longest river", "category": "the — superlatives/ordinals"},
+  {"word": "the first person", "category": "the — superlatives/ordinals"},
+  {"word": "the most beautiful", "category": "the — superlatives/ordinals"},
+  {"word": "the best student", "category": "the — superlatives/ordinals"},
+  {"word": "the second floor", "category": "the — superlatives/ordinals"},
+  {"word": "the United Kingdom", "category": "the — geographic names"},
+  {"word": "the Amazon river", "category": "the — geographic names"},
+  {"word": "the Pacific Ocean", "category": "the — geographic names"},
+  {"word": "the Sahara Desert", "category": "the — geographic names"},
+  {"word": "by bus", "category": "∅ — fixed expressions"},
+  {"word": "at work", "category": "∅ — fixed expressions"},
+  {"word": "at home", "category": "∅ — fixed expressions"},
+  {"word": "go to bed", "category": "∅ — fixed expressions"},
+  {"word": "play football", "category": "∅ — fixed expressions"},
+  {"word": "have lunch", "category": "∅ — fixed expressions"},
+  {"word": "by car", "category": "∅ — fixed expressions"}
+]

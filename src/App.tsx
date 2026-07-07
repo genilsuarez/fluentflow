@@ -12,6 +12,7 @@ import { useSystemTheme } from './hooks/useSystemTheme';
 import { useTranslation } from './utils/i18n';
 import { verifyCacheIntegrity } from './services/offlineManager';
 import { toast } from './stores/toastStore';
+import { preloadVoices } from './utils/speech';
 
 // Optimized QueryClient configuration
 const queryClient = new QueryClient({
@@ -59,6 +60,9 @@ const AppContent: React.FC = () => {
   const integrityChecked = useRef(false);
   // Set up system theme listener
   useSystemTheme();
+
+  // Preload TTS voices for listening modes (Chrome loads async)
+  useEffect(() => { preloadVoices(); }, []);
 
   // Verify cache integrity on app mount when offline mode is enabled
   useEffect(() => {

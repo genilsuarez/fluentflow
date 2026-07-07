@@ -1,0 +1,92 @@
+[
+  {
+    "sentence": "Had I ______ about the delay, I would have taken an earlier flight.",
+    "correct": "known",
+    "explanation": "Third conditional inversion: Had + subject + past participle.",
+    "tip": "Past participle of 'know'"
+  },
+  {
+    "sentence": "No sooner ______ we arrived than it started raining.",
+    "correct": "had",
+    "explanation": "No sooner + had + subject + past participle + than.",
+    "tip": "Auxiliary for past perfect"
+  },
+  {
+    "sentence": "It's high time we ______ something about pollution.",
+    "correct": "did",
+    "explanation": "'It's high time' + past simple = urgent action needed now.",
+    "tip": "What tense follows 'it's high time'?"
+  },
+  {
+    "sentence": "Under no circumstances ______ you open this door.",
+    "correct": "should",
+    "explanation": "Negative fronting: Under no circumstances + auxiliary + subject.",
+    "tip": "Inversion — what auxiliary fits with prohibition?"
+  },
+  {
+    "sentence": "He denied ______ taken the documents from the office.",
+    "correct": "having",
+    "explanation": "'Deny' + perfect gerund: having + past participle.",
+    "tip": "Perfect gerund form"
+  },
+  {
+    "sentence": "She ______ rather we hadn't mentioned it.",
+    "correct": "would",
+    "explanation": "'Would rather' + subject + past perfect = preference about past action.",
+    "tip": "Modal for preference"
+  },
+  {
+    "sentence": "So complex ______ the problem that no one could find a solution.",
+    "correct": "was",
+    "explanation": "Inversion: So + adj + be + subject + that.",
+    "tip": "Inverted verb for 'the problem'"
+  },
+  {
+    "sentence": "______ it not for your support, I would have given up.",
+    "correct": "Were",
+    "explanation": "Formal conditional inversion: Were it not for = if it weren't for.",
+    "tip": "Formal 'if' replacement"
+  },
+  {
+    "sentence": "The results are ______ to have been fabricated.",
+    "correct": "believed",
+    "explanation": "Impersonal passive: subject + be + believed/thought + to have + pp.",
+    "tip": "Passive reporting verb"
+  },
+  {
+    "sentence": "______ the criticism, the project continued as planned.",
+    "correct": "Notwithstanding",
+    "explanation": "'Notwithstanding' = despite. Formal contrast linker.",
+    "tip": "Formal word meaning 'despite'"
+  },
+  {
+    "sentence": "Not until the results ______ published did the problem become clear.",
+    "correct": "were",
+    "explanation": "'Not until' + past event: Not until X were/was done + did + subject.",
+    "tip": "Past passive auxiliary"
+  },
+  {
+    "sentence": "The committee is ______ meet on the first Monday of each month.",
+    "correct": "to",
+    "explanation": "'Be to + infinitive' = formal arrangement.",
+    "tip": "Formal future marker (one word)"
+  },
+  {
+    "sentence": "By the time we arrived, the concert had already ______.",
+    "correct": "started",
+    "explanation": "Past perfect: had + past participle. Action completed before our arrival.",
+    "tip": "Past participle of 'start'"
+  },
+  {
+    "sentence": "She ______ thought to have been working on it for over a year.",
+    "correct": "is",
+    "explanation": "Passive reporting: She is thought to have been + -ing.",
+    "tip": "Present passive auxiliary (she)"
+  },
+  {
+    "sentence": "Only by working together ______ we solve this problem.",
+    "correct": "can",
+    "explanation": "Inversion with 'only by': Only by + -ing + auxiliary + subject.",
+    "tip": "Modal of ability"
+  }
+]

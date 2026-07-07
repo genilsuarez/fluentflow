@@ -15,6 +15,9 @@ import {
   RefreshCw,
   Puzzle,
   AlertTriangle,
+  Headphones,
+  Mic,
+  Volume2,
 } from 'lucide-react';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useTranslation } from '../../utils/i18n';
@@ -60,6 +63,9 @@ const ALL_MODES: LearningMode[] = [
   'transformation',
   'word-formation',
   'error-correction',
+  'listening-quiz',
+  'dictation',
+  'listen-complete',
 ];
 const MODE_ICONS: Record<LearningMode, React.ReactElement> = {
   flashcard: <CreditCard size={13} strokeWidth={2} />,
@@ -72,6 +78,9 @@ const MODE_ICONS: Record<LearningMode, React.ReactElement> = {
   transformation: <RefreshCw size={13} strokeWidth={2} />,
   'word-formation': <Puzzle size={13} strokeWidth={2} />,
   'error-correction': <AlertTriangle size={13} strokeWidth={2} />,
+  'listening-quiz': <Headphones size={13} strokeWidth={2} />,
+  dictation: <Mic size={13} strokeWidth={2} />,
+  'listen-complete': <Volume2 size={13} strokeWidth={2} />,
 };
 const MODE_I18N_KEYS: Record<LearningMode, string> = {
   flashcard: 'learning.flashcardMode',
@@ -84,6 +93,9 @@ const MODE_I18N_KEYS: Record<LearningMode, string> = {
   transformation: 'learning.transformationMode',
   'word-formation': 'learning.wordFormationMode',
   'error-correction': 'learning.errorCorrectionMode',
+  'listening-quiz': 'learning.listeningQuizMode',
+  dictation: 'learning.dictationMode',
+  'listen-complete': 'learning.listenCompleteMode',
 };
 
 const ALL_LEVELS: Level[] = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'];

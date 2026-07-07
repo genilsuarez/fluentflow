@@ -1,0 +1,122 @@
+[
+  {
+    "sentence": "I went to ______ cinema last night. ______ film was excellent.",
+    "correct": "the, The",
+    "explanation": "Use <the> when both people know which cinema (the usual one). Second mention of 'film' → <the>.",
+    "tip": "Two gaps: specific place + second mention"
+  },
+  {
+    "sentence": "She works as ______ doctor in ______ hospital near our house.",
+    "correct": "a, a",
+    "explanation": "Use <a> with jobs: 'She is a doctor.' Use <a> for first mention of the hospital.",
+    "tip": "Article with professions + first mention"
+  },
+  {
+    "sentence": "______ children in my class are very clever.",
+    "correct": "The",
+    "explanation": "Use <the> with a specific group that is defined (in my class = specific children).",
+    "tip": "General group or specific group?"
+  },
+  {
+    "sentence": "I usually have ______ sandwich for ______ lunch.",
+    "correct": "a, ∅",
+    "explanation": "Use <a> for a countable singular item. No article with meal names.",
+    "tip": "Countable item + meal name"
+  },
+  {
+    "sentence": "______ Mount Everest is ______ highest mountain in the world.",
+    "correct": "∅, the",
+    "explanation": "No article with most mountain names. Use <the> with superlatives.",
+    "tip": "Mountain name + superlative"
+  },
+  {
+    "sentence": "She lives in ______ United Kingdom.",
+    "correct": "the",
+    "explanation": "Use <the> with country names that include 'Kingdom', 'States', 'Republic': <the UK>, <the USA>.",
+    "tip": "Country with Kingdom/States/Republic"
+  },
+  {
+    "sentence": "I'm reading ______ interesting book about ______ history of Spain.",
+    "correct": "an, the",
+    "explanation": "Use <an> for first mention (non-specific book). Use <the> with 'of' phrases that define something specific.",
+    "tip": "First mention + defined by 'of' phrase"
+  },
+  {
+    "sentence": "______ life is short, so enjoy every moment.",
+    "correct": "∅",
+    "explanation": "No article with abstract/uncountable nouns in general statements.",
+    "tip": "Abstract noun in general statement"
+  },
+  {
+    "sentence": "Can you pass me ______ salt, please?",
+    "correct": "the",
+    "explanation": "Use <the> when both people can see/identify the specific item (the salt on the table).",
+    "tip": "Shared knowledge of specific item"
+  },
+  {
+    "sentence": "They went to ______ beach by ______ bus.",
+    "correct": "the, ∅",
+    "explanation": "Use <the> with 'beach' (typically one nearby). No article with 'by + transport': by bus, by car, by train.",
+    "tip": "Specific place + transport expression"
+  },
+  {
+    "sentence": "I have ______ headache. I need to take ______ aspirin.",
+    "correct": "a, an",
+    "explanation": "Use <a> with ailments: 'a headache', 'a cold'. Use <an> before vowel sound.",
+    "tip": "Ailment + medicine"
+  },
+  {
+    "sentence": "______ Amazon is ______ longest river in South America.",
+    "correct": "The, the",
+    "explanation": "Use <the> with river names. Use <the> with superlatives.",
+    "tip": "River name + superlative"
+  },
+  {
+    "sentence": "My brother is at ______ work right now.",
+    "correct": "∅",
+    "explanation": "No article with fixed expressions: at work, at home, at school (as activity).",
+    "tip": "Fixed expression"
+  },
+  {
+    "sentence": "I saw ______ old woman in ______ park. ______ woman was feeding birds.",
+    "correct": "an, the, The",
+    "explanation": "First mention → <an> (vowel sound). Specific park (nearby/known) → <the>. Second mention → <The>.",
+    "tip": "First mention / known place / second mention"
+  },
+  {
+    "sentence": "She plays ______ violin in ______ orchestra.",
+    "correct": "the, an",
+    "explanation": "Use <the> with instruments. Use <an> for non-specific orchestra (first mention).",
+    "tip": "Musical instrument + first mention"
+  },
+  {
+    "sentence": "______ English is spoken all over ______ world.",
+    "correct": "∅, the",
+    "explanation": "No article with language names. Use <the> with 'world' (unique).",
+    "tip": "Language name + unique noun"
+  },
+  {
+    "sentence": "I'd like ______ glass of water, please.",
+    "correct": "a",
+    "explanation": "Use <a> with 'a glass of', 'a cup of', 'a piece of' — quantity expressions.",
+    "tip": "Quantity expression"
+  },
+  {
+    "sentence": "He was ______ first person to arrive at ______ party.",
+    "correct": "the, the",
+    "explanation": "Use <the> with ordinals (first, second, third). Use <the> with a specific event (the party we're talking about).",
+    "tip": "Ordinal number + specific event"
+  },
+  {
+    "sentence": "______ happiness is more important than ______ money.",
+    "correct": "∅, ∅",
+    "explanation": "No articles with abstract/uncountable nouns in general philosophical statements.",
+    "tip": "Two abstract nouns in a general statement"
+  },
+  {
+    "sentence": "I went to ______ Sahara Desert last summer.",
+    "correct": "the",
+    "explanation": "Use <the> with deserts, oceans, seas, and mountain ranges: <the Sahara>, <the Pacific>.",
+    "tip": "Desert / ocean / sea names"
+  }
+]

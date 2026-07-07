@@ -1,0 +1,92 @@
+[
+  {
+    "sentence": "How much friends do you have?",
+    "correct": ["How many friends do you have?"],
+    "hint": "Check the quantifier — are 'friends' countable or uncountable?",
+    "explanation": "Friends are countable → use 'many', not 'much'. 'Much' is for uncountable nouns."
+  },
+  {
+    "sentence": "I don't have many money.",
+    "correct": ["I don't have much money."],
+    "hint": "Is 'money' countable or uncountable?",
+    "explanation": "Money is uncountable → use 'much', not 'many'. 'Many' is for countable nouns."
+  },
+  {
+    "sentence": "She ate too many rice.",
+    "correct": ["She ate too much rice."],
+    "hint": "Is 'rice' countable or uncountable?",
+    "explanation": "Rice is uncountable → 'too much rice', not 'too many rice'."
+  },
+  {
+    "sentence": "Do you have some questions?",
+    "correct": ["Do you have any questions?"],
+    "hint": "Check: do we use 'some' or 'any' in questions?",
+    "explanation": "In general questions, use 'any'. 'Some' is for positive statements or offers."
+  },
+  {
+    "sentence": "I didn't see some people at the party.",
+    "correct": ["I didn't see any people at the party.", "I didn't see many people at the party."],
+    "hint": "Check: what do we use in negative sentences?",
+    "explanation": "In negatives, use 'any' (or 'many'), not 'some'. 'Some' is for positives."
+  },
+  {
+    "sentence": "There is few milk in the fridge.",
+    "correct": ["There is little milk in the fridge."],
+    "hint": "Is 'milk' countable or uncountable?",
+    "explanation": "Milk is uncountable → use 'little', not 'few'. 'Few' is for countable plural."
+  },
+  {
+    "sentence": "He has very little friends.",
+    "correct": ["He has very few friends."],
+    "hint": "Are 'friends' countable?",
+    "explanation": "Friends are countable → 'few friends'. 'Little' is for uncountable nouns."
+  },
+  {
+    "sentence": "She needs a few water.",
+    "correct": ["She needs a little water."],
+    "hint": "Is 'water' countable or uncountable?",
+    "explanation": "Water is uncountable → 'a little water'. 'A few' is for countable things."
+  },
+  {
+    "sentence": "How many luggage do you have?",
+    "correct": ["How much luggage do you have?"],
+    "hint": "Is 'luggage' countable or uncountable?",
+    "explanation": "Luggage is uncountable (no plural!) → 'how much luggage', not 'how many'."
+  },
+  {
+    "sentence": "I have a lot of informations about this topic.",
+    "correct": ["I have a lot of information about this topic."],
+    "hint": "Check the noun — can 'information' be plural?",
+    "explanation": "'Information' is uncountable — it has no plural form. Remove the 's'."
+  },
+  {
+    "sentence": "There are much cars in the parking lot.",
+    "correct": ["There are many cars in the parking lot.", "There are a lot of cars in the parking lot."],
+    "hint": "Cars are countable — which quantifier?",
+    "explanation": "Cars are countable → 'many cars' or 'a lot of cars', not 'much cars'."
+  },
+  {
+    "sentence": "Would you like any coffee?",
+    "correct": ["Would you like some coffee?"],
+    "hint": "Is this an offer? What do we use in offers?",
+    "explanation": "Offers use 'some' even in question form (we expect a positive answer)."
+  },
+  {
+    "sentence": "She gave me many advice.",
+    "correct": ["She gave me a lot of advice.", "She gave me much advice."],
+    "hint": "Is 'advice' countable?",
+    "explanation": "'Advice' is uncountable (no plural). Use 'a lot of' or 'much', not 'many'."
+  },
+  {
+    "sentence": "There isn't many time left.",
+    "correct": ["There isn't much time left."],
+    "hint": "Is 'time' countable?",
+    "explanation": "Time (in this sense) is uncountable → 'much time', not 'many time'."
+  },
+  {
+    "sentence": "I bought a few furniture for the new apartment.",
+    "correct": ["I bought some furniture for the new apartment.", "I bought a little furniture for the new apartment."],
+    "hint": "Is 'furniture' countable?",
+    "explanation": "'Furniture' is uncountable (no plural). Use 'some' or 'a little', not 'a few'."
+  }
+]

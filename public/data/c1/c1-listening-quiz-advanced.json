@@ -1,0 +1,74 @@
+[
+  {
+    "question": "The findings suggest that further research is warranted. What does 'warranted' mean here?",
+    "options": ["Justified / necessary", "Prohibited", "Already completed", "Unlikely"],
+    "correct": 0,
+    "explanation": "'Warranted' = justified, necessary, deserved. Common in academic hedging."
+  },
+  {
+    "question": "Not until the data were analysed did the pattern emerge. What grammar is used?",
+    "options": ["Negative inversion with 'not until'", "Passive voice", "Reported speech", "Third conditional"],
+    "correct": 0,
+    "explanation": "'Not until' + clause → inversion in main clause: did the pattern emerge."
+  },
+  {
+    "question": "Were the government to implement this policy, significant changes would follow. What is 'were...to'?",
+    "options": ["Formal conditional (= if the government implemented)", "Past tense question", "Subjunctive command", "Passive structure"],
+    "correct": 0,
+    "explanation": "'Were + subject + to + infinitive' = formal/hypothetical conditional."
+  },
+  {
+    "question": "It is imperative that all participants submit their data. What mood is 'submit'?",
+    "options": ["Subjunctive", "Indicative", "Imperative", "Conditional"],
+    "correct": 0,
+    "explanation": "'It is imperative/essential/vital that' + subject + base verb (subjunctive)."
+  },
+  {
+    "question": "The phenomenon, hitherto unexplained, has now been attributed to quantum effects. What does 'hitherto' mean?",
+    "options": ["Until now / up to this point", "In the future", "Perhaps", "Definitely"],
+    "correct": 0,
+    "explanation": "'Hitherto' = until now. Formal/academic adverb indicating something was true before but has changed."
+  },
+  {
+    "question": "Such is the complexity that a multidisciplinary approach is required. What triggers inversion here?",
+    "options": ["'Such' fronted for emphasis", "A question", "Negative adverb", "Passive structure"],
+    "correct": 0,
+    "explanation": "'Such + be + noun + that...' with fronted 'such' causes inversion for emphasis."
+  },
+  {
+    "question": "Little did they anticipate the magnitude of the response. What does 'little did they' express?",
+    "options": ["They hardly/barely anticipated it", "They fully expected it", "They always knew", "They planned it"],
+    "correct": 0,
+    "explanation": "'Little' as a negative fronted adverb = hardly, barely. Causes inversion."
+  },
+  {
+    "question": "The extent to which cultural factors influence behaviour remains debatable. What is 'the extent to which'?",
+    "options": ["A formal noun phrase meaning 'how much'", "A relative clause", "A conditional", "An imperative"],
+    "correct": 0,
+    "explanation": "'The extent to which' = formal way of saying 'how much / how far something affects'."
+  },
+  {
+    "question": "Insofar as the data are reliable, the conclusions hold. What does 'insofar as' mean?",
+    "options": ["To the degree that / as long as", "Despite the fact that", "In addition to", "As a result of"],
+    "correct": 0,
+    "explanation": "'Insofar as' = to the degree/extent that. Formal qualifier setting a condition."
+  },
+  {
+    "question": "It would appear that the correlation is stronger than previously thought. Why 'it would appear'?",
+    "options": ["Tentative/hedged reporting — avoiding absolute claims", "Past tense narrative", "Conditional result", "Formal request"],
+    "correct": 0,
+    "explanation": "'It would appear' = academic hedging. Softer than 'it appears' — avoids certainty."
+  },
+  {
+    "question": "Only by adopting a collaborative framework can we address these challenges. What is inverted?",
+    "options": ["'Can we' (auxiliary before subject)", "The object", "The participle", "The preposition"],
+    "correct": 0,
+    "explanation": "'Only by + -ing' at the start → auxiliary-subject inversion in main clause."
+  },
+  {
+    "question": "Notwithstanding the limitations, the study provides valuable insights. What register is 'notwithstanding'?",
+    "options": ["Formal / academic", "Informal / colloquial", "Legal only", "Archaic / obsolete"],
+    "correct": 0,
+    "explanation": "'Notwithstanding' = despite. Formal register, common in academic and legal writing."
+  }
+]

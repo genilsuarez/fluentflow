@@ -1,0 +1,74 @@
+[
+  {
+    "question": "The ostensible rationale notwithstanding, the decision was perceived as politically motivated. What does 'ostensible' mean?",
+    "options": ["Apparent / seeming (but possibly not real)", "Obvious and undeniable", "Secret and hidden", "Temporary"],
+    "correct": 0,
+    "explanation": "'Ostensible' = appearing to be true but possibly not. The stated reason may hide the real one."
+  },
+  {
+    "question": "Rarely has a single publication engendered such protracted debate. What does 'engendered' mean?",
+    "options": ["Caused / produced", "Ended", "Summarised", "Avoided"],
+    "correct": 0,
+    "explanation": "'Engender' = to cause, produce, give rise to. Formal/academic verb."
+  },
+  {
+    "question": "The epistemological underpinnings of the theory have been called into question. What are 'epistemological underpinnings'?",
+    "options": ["The foundations related to knowledge and how we know things", "The financial basis", "The historical origins", "The practical applications"],
+    "correct": 0,
+    "explanation": "'Epistemological' = relating to knowledge/how we know. 'Underpinnings' = foundations."
+  },
+  {
+    "question": "In contradistinction to prevailing orthodoxy, the author posits a different mechanism. What does 'in contradistinction to' mean?",
+    "options": ["In contrast to / as opposed to", "In agreement with", "As a result of", "In addition to"],
+    "correct": 0,
+    "explanation": "'In contradistinction to' = formal way of saying 'in contrast with', emphasizing the difference."
+  },
+  {
+    "question": "Be that as it may, the empirical evidence remains inconclusive. What does 'be that as it may' express?",
+    "options": ["Concession: accepting something but moving on regardless", "Agreement with the previous point", "A conditional situation", "A causal relationship"],
+    "correct": 0,
+    "explanation": "'Be that as it may' = concessive fixed phrase: even so / nevertheless."
+  },
+  {
+    "question": "Suffice it to say that the ramifications are significant. What does 'suffice it to say' mean?",
+    "options": ["It's enough to say / I'll just say this much", "It's difficult to say", "It's impossible to know", "It's too early to tell"],
+    "correct": 0,
+    "explanation": "'Suffice it to say' = it's enough to mention (without elaborating further)."
+  },
+  {
+    "question": "One cannot but acknowledge the prescience of her observations. What does 'prescience' mean?",
+    "options": ["Foresight / ability to predict the future", "Carelessness", "Precision", "Simplicity"],
+    "correct": 0,
+    "explanation": "'Prescience' = foreknowledge, the ability to foresee what will happen."
+  },
+  {
+    "question": "Lest we forget, the consequences of inaction may prove costly. What does 'lest' mean?",
+    "options": ["For fear that / in case (we forget)", "Because", "Although", "Until"],
+    "correct": 0,
+    "explanation": "'Lest' = for fear that / in order to prevent. Formal/literary. Followed by subjunctive."
+  },
+  {
+    "question": "Inasmuch as the methodology is sound, the conclusions warrant consideration. What does 'inasmuch as' mean?",
+    "options": ["To the extent that / given that", "In spite of the fact that", "Regardless of whether", "As a result of"],
+    "correct": 0,
+    "explanation": "'Inasmuch as' = to the degree that / considering that. Formal qualifier."
+  },
+  {
+    "question": "The sheer breadth of the undertaking necessitated unprecedented collaboration. What does 'sheer breadth' emphasise?",
+    "options": ["The enormous scope/scale", "The narrow focus", "The short duration", "The low cost"],
+    "correct": 0,
+    "explanation": "'Sheer' = pure/absolute (intensifier). 'Breadth' = width/scope. Together: the enormous scale."
+  },
+  {
+    "question": "It is precisely this tension that renders the debate intellectually stimulating. What is 'renders' here?",
+    "options": ["Makes / causes something to be", "Translates", "Destroys", "Questions"],
+    "correct": 0,
+    "explanation": "'Render' = to make/cause to become (formal). 'Renders X stimulating' = makes X stimulating."
+  },
+  {
+    "question": "The author's contention, however compelling, is predicated on a contentious assumption. What does 'predicated on' mean?",
+    "options": ["Based on / founded upon", "Contradicted by", "Unrelated to", "Proven by"],
+    "correct": 0,
+    "explanation": "'Predicated on' = based upon, resting on (a particular foundation or assumption)."
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "question": "You're coming tonight, ___?",
+    "options": ["aren't you", "isn't it", "don't you", "won't you"],
+    "correct": 0,
+    "explanation": "Positive 'are' → negative tag 'aren't you'. Match the auxiliary + reverse polarity."
+  },
+  {
+    "question": "She can drive, ___?",
+    "options": ["can she", "can't she", "doesn't she", "isn't she"],
+    "correct": 1,
+    "explanation": "Positive modal 'can' → negative tag 'can't she'."
+  },
+  {
+    "question": "Nobody knows the answer, ___?",
+    "options": ["don't they", "do they", "doesn't nobody", "does he"],
+    "correct": 1,
+    "explanation": "'Nobody' = negative meaning → positive tag. Use 'they' for indefinite subjects."
+  },
+  {
+    "question": "Let's have lunch, ___?",
+    "options": ["don't we", "shall we", "will we", "can we"],
+    "correct": 1,
+    "explanation": "Special rule: 'Let's' always takes 'shall we' as the question tag."
+  },
+  {
+    "question": "I'm right, ___?",
+    "options": ["am I", "aren't I", "amn't I", "don't I"],
+    "correct": 1,
+    "explanation": "Special case: 'I am' → 'aren't I' (irregular but standard in English)."
+  },
+  {
+    "question": "They had never been there, ___?",
+    "options": ["hadn't they", "had they", "didn't they", "have they"],
+    "correct": 1,
+    "explanation": "'Never' makes it negative → positive tag. Auxiliary 'had' → 'had they'."
+  },
+  {
+    "question": "He won't mind, ___?",
+    "options": ["won't he", "will he", "does he", "would he"],
+    "correct": 1,
+    "explanation": "Negative 'won't' → positive tag 'will he'."
+  },
+  {
+    "question": "There isn't much time, ___?",
+    "options": ["isn't there", "is there", "is it", "isn't it"],
+    "correct": 1,
+    "explanation": "Negative 'isn't' → positive tag. 'There' is the subject: 'is there'."
+  },
+  {
+    "question": "You'd rather stay, ___?",
+    "options": ["hadn't you", "wouldn't you", "didn't you", "would you"],
+    "correct": 1,
+    "explanation": "'You'd rather' = 'You would rather' → 'wouldn't you'."
+  },
+  {
+    "question": "She rarely visits, ___?",
+    "options": ["doesn't she", "does she", "is she", "has she"],
+    "correct": 1,
+    "explanation": "'Rarely' = negative adverb → positive tag. Present simple → 'does she'."
+  },
+  {
+    "question": "We ought to help, ___?",
+    "options": ["oughtn't we", "shouldn't we", "don't we", "mustn't we"],
+    "correct": 1,
+    "explanation": "'Ought to' → tag is 'shouldn't we' (more common than 'oughtn't we')."
+  },
+  {
+    "question": "Everyone enjoyed the party, ___?",
+    "options": ["didn't they", "didn't everyone", "don't they", "haven't they"],
+    "correct": 0,
+    "explanation": "'Everyone' uses 'they' as pronoun in tags. Past simple → 'didn't they'."
+  },
+  {
+    "question": "You used to live here, ___?",
+    "options": ["usedn't you", "didn't you", "don't you", "wouldn't you"],
+    "correct": 1,
+    "explanation": "'Used to' → tag with 'didn't you' (standard modern English)."
+  },
+  {
+    "question": "Nothing happened, ___?",
+    "options": ["didn't it", "did it", "didn't they", "did nothing"],
+    "correct": 1,
+    "explanation": "'Nothing' = negative → positive tag. Use 'it' for 'nothing': 'did it'."
+  },
+  {
+    "question": "She'd been waiting long, ___?",
+    "options": ["had she", "hadn't she", "hasn't she", "wouldn't she"],
+    "correct": 1,
+    "explanation": "'She'd been' = past perfect continuous. Positive → negative tag: 'hadn't she'."
+  }
+]

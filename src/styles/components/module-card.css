@@ -904,9 +904,6 @@ html.dark .module-card--locked .module-card__title {
 /* Current module indicator — highlighted background + glow */
 .module-card--current {
   border: 3px solid rgba(37, 99, 235, 1);
-  background:
-    linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(59, 130, 246, 0.08) 100%),
-    linear-gradient(135deg, #f0f7ff 0%, #e0edff 100%);
   box-shadow:
     0 0 0 3px rgba(59, 130, 246, 0.3),
     0 0 16px rgba(59, 130, 246, 0.25),
@@ -915,9 +912,6 @@ html.dark .module-card--locked .module-card__title {
 
 .module-card--current:hover {
   border: 3px solid rgba(37, 99, 235, 1);
-  background:
-    linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(59, 130, 246, 0.1) 100%),
-    linear-gradient(135deg, #e8f1ff 0%, #d6e6ff 100%);
   box-shadow:
     0 0 0 3px rgba(59, 130, 246, 0.35),
     0 0 20px rgba(59, 130, 246, 0.3),
@@ -927,9 +921,6 @@ html.dark .module-card--locked .module-card__title {
 /* Dark mode: blue-tinted background for contrast */
 html.dark .module-card--current {
   border: 3px solid #60a5fa;
-  background:
-    linear-gradient(135deg, rgba(96, 165, 250, 0.2) 0%, rgba(59, 130, 246, 0.12) 100%),
-    linear-gradient(135deg, #1e2a3e 0%, #1a2744 100%);
   box-shadow:
     0 0 0 3px rgba(96, 165, 250, 0.35),
     0 0 16px rgba(96, 165, 250, 0.3),
@@ -938,9 +929,6 @@ html.dark .module-card--current {
 
 html.dark .module-card--current:hover {
   border: 3px solid #60a5fa;
-  background:
-    linear-gradient(135deg, rgba(96, 165, 250, 0.25) 0%, rgba(59, 130, 246, 0.15) 100%),
-    linear-gradient(135deg, #1e2e48 0%, #1c2d4e 100%);
   box-shadow:
     0 0 0 3px rgba(96, 165, 250, 0.4),
     0 0 20px rgba(96, 165, 250, 0.35),
@@ -975,4 +963,44 @@ html.dark .module-card--current:hover {
   .dark .module-card--next-recommended {
     border-color: rgba(96, 165, 250, 0.4);
   }
+}
+
+/* === TTS/LISTENING MODE CARDS === */
+.module-card--listening-quiz {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+  color: #ffffff;
+}
+
+.module-card--listening-quiz:hover {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+}
+
+.module-card--dictation {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(135deg, #6d28d9 0%, #5b21b6 100%);
+  color: #ffffff;
+}
+
+.module-card--dictation:hover {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(135deg, #5b21b6 0%, #4c1d95 100%);
+}
+
+.module-card--listen-complete {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(135deg, #0891b2 0%, #0e7490 100%);
+  color: #ffffff;
+}
+
+.module-card--listen-complete:hover {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(135deg, #0e7490 0%, #155e75 100%);
 }

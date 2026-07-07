@@ -1,0 +1,98 @@
+[
+  {
+    "id": "reord-b1-rc-001",
+    "sentence": "The woman who lives next door is a doctor",
+    "words": ["The", "woman", "who", "lives", "next", "door", "is", "a", "doctor"],
+    "explanation": "Defining relative clause: 'who lives next door' identifies which woman."
+  },
+  {
+    "id": "reord-b1-rc-002",
+    "sentence": "I bought the book which you recommended",
+    "words": ["I", "bought", "the", "book", "which", "you", "recommended"],
+    "distractors": ["whose"],
+    "explanation": "'Which' for things — it's the object (you recommended it)."
+  },
+  {
+    "id": "reord-b1-rc-003",
+    "sentence": "That is the school where I studied as a child",
+    "words": ["That", "is", "the", "school", "where", "I", "studied", "as", "a", "child"],
+    "explanation": "'Where' introduces a relative clause about a place."
+  },
+  {
+    "id": "reord-b1-rc-004",
+    "sentence": "The man whose car was stolen called the police",
+    "words": ["The", "man", "whose", "car", "was", "stolen", "called", "the", "police"],
+    "distractors": ["who"],
+    "explanation": "'Whose' shows possession — the man's car. Not 'who' (which doesn't show possession)."
+  },
+  {
+    "id": "reord-b1-rc-005",
+    "sentence": "She is the teacher who inspired me to study English",
+    "words": ["She", "is", "the", "teacher", "who", "inspired", "me", "to", "study", "English"],
+    "explanation": "'Who' for people as subject of the relative clause."
+  },
+  {
+    "id": "reord-b1-rc-006",
+    "sentence": "The restaurant where we had dinner was expensive",
+    "words": ["The", "restaurant", "where", "we", "had", "dinner", "was", "expensive"],
+    "distractors": ["which"],
+    "hint": "Use 'where' for places, not 'which' (unless you add 'in which')",
+    "explanation": "'Where' = in which. More natural for places."
+  },
+  {
+    "id": "reord-b1-rc-007",
+    "sentence": "I have a friend whose mother speaks five languages",
+    "words": ["I", "have", "a", "friend", "whose", "mother", "speaks", "five", "languages"],
+    "explanation": "'Whose' = my friend's mother. Shows possession."
+  },
+  {
+    "id": "reord-b1-rc-008",
+    "sentence": "The film that we watched last night was really boring",
+    "words": ["The", "film", "that", "we", "watched", "last", "night", "was", "really", "boring"],
+    "explanation": "'That' for things in defining clauses (object — 'we' is the subject)."
+  },
+  {
+    "id": "reord-b1-rc-009",
+    "sentence": "The children who are playing in the park are my neighbours",
+    "words": ["The", "children", "who", "are", "playing", "in", "the", "park", "are", "my", "neighbours"],
+    "distractors": ["which"],
+    "explanation": "'Who' for people (not 'which'). Subject of the relative clause."
+  },
+  {
+    "id": "reord-b1-rc-010",
+    "sentence": "This is the house where Shakespeare was born",
+    "words": ["This", "is", "the", "house", "where", "Shakespeare", "was", "born"],
+    "explanation": "'Where' for places — the house is a place."
+  },
+  {
+    "id": "reord-b1-rc-011",
+    "sentence": "The company which offered me a job is in Madrid",
+    "words": ["The", "company", "which", "offered", "me", "a", "job", "is", "in", "Madrid"],
+    "explanation": "'Which' for things as subject of the relative clause."
+  },
+  {
+    "id": "reord-b1-rc-012",
+    "sentence": "The student whose essay was the best won a prize",
+    "words": ["The", "student", "whose", "essay", "was", "the", "best", "won", "a", "prize"],
+    "distractors": ["who"],
+    "explanation": "'Whose' for possession (the student's essay), not 'who'."
+  },
+  {
+    "id": "reord-b1-rc-013",
+    "sentence": "People who exercise regularly tend to live longer",
+    "words": ["People", "who", "exercise", "regularly", "tend", "to", "live", "longer"],
+    "explanation": "Defining clause: identifies which people (those who exercise)."
+  },
+  {
+    "id": "reord-b1-rc-014",
+    "sentence": "The cake that my mother made was absolutely delicious",
+    "words": ["The", "cake", "that", "my", "mother", "made", "was", "absolutely", "delicious"],
+    "explanation": "'That' for things. Object of the clause (my mother made it)."
+  },
+  {
+    "id": "reord-b1-rc-015",
+    "sentence": "I want to visit the city where my grandparents grew up",
+    "words": ["I", "want", "to", "visit", "the", "city", "where", "my", "grandparents", "grew", "up"],
+    "explanation": "'Where' for places — the city is a location."
+  }
+]

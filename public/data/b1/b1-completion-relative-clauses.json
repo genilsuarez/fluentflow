@@ -1,0 +1,92 @@
+[
+  {
+    "sentence": "The woman ______ lives next door is a teacher.",
+    "correct": "who",
+    "explanation": "'Who' is used for people in <defining> relative clauses. Here it's the subject of the clause.",
+    "tip": "We're talking about a person — which relative pronoun do we use?"
+  },
+  {
+    "sentence": "That's the book ______ I told you about.",
+    "correct": "which",
+    "explanation": "'Which' (or 'that') is used for things. Here it's the object of the clause (I told you about it).",
+    "tip": "We're referring to a thing — 'which' or 'that' works here."
+  },
+  {
+    "sentence": "I know a man ______ brother is a famous actor.",
+    "correct": "whose",
+    "explanation": "'Whose' shows possession — the man's brother. It replaces 'his/her/their' in relative clauses.",
+    "tip": "We're talking about the man's brother — which word shows possession?"
+  },
+  {
+    "sentence": "This is the restaurant ______ we had our first date.",
+    "correct": "where",
+    "explanation": "'Where' is used for places. It replaces 'in which' or 'at which'.",
+    "tip": "We're referring to a place — which relative pronoun?"
+  },
+  {
+    "sentence": "The students ______ passed the exam will go to the next level.",
+    "correct": "who",
+    "explanation": "'Who' for people, subject of the relative clause (the students passed).",
+    "tip": "Which students? The ones that passed — use the pronoun for people."
+  },
+  {
+    "sentence": "The car ______ he bought last week has already broken down.",
+    "correct": "that",
+    "explanation": "'That' (or 'which') for things in defining clauses. It's the object here (he bought it).",
+    "tip": "Referring to a specific car — 'that' or 'which' are both correct."
+  },
+  {
+    "sentence": "She's the colleague ______ helped me with the project.",
+    "correct": "who",
+    "explanation": "'Who' for a person, subject of the relative clause (she helped me).",
+    "tip": "A person helped — which pronoun introduces information about people?"
+  },
+  {
+    "sentence": "The hotel ______ we stayed was right on the beach.",
+    "correct": "where",
+    "explanation": "'Where' for places — the hotel is a place where we stayed.",
+    "tip": "A hotel is a place — which pronoun do we use for locations?"
+  },
+  {
+    "sentence": "I met a girl ______ father works at NASA.",
+    "correct": "whose",
+    "explanation": "'Whose' = the girl's father. Shows possession in relative clauses.",
+    "tip": "The father belongs to the girl — which word shows this possession?"
+  },
+  {
+    "sentence": "The film ______ won the Oscar was directed by a newcomer.",
+    "correct": "that",
+    "explanation": "'That' (or 'which') for things, subject of the clause (the film won).",
+    "tip": "Which film? The one that won — pronoun for things as subject."
+  },
+  {
+    "sentence": "My sister, ______ is a doctor, lives in Barcelona.",
+    "correct": "who",
+    "explanation": "Non-defining clause (commas!) giving extra info about 'my sister'. Use 'who' for people. Never 'that'.",
+    "tip": "Commas = non-defining. Person = 'who'. Never use 'that' here."
+  },
+  {
+    "sentence": "The report, ______ was published yesterday, shows alarming data.",
+    "correct": "which",
+    "explanation": "Non-defining clause (commas!) about a thing — use 'which', never 'that'.",
+    "tip": "Commas + thing = always 'which' in non-defining clauses."
+  },
+  {
+    "sentence": "That's the reason ______ I left early.",
+    "correct": "why",
+    "explanation": "'Why' can introduce relative clauses about reasons (the reason why…).",
+    "tip": "We're explaining a reason — 'why' is the relative adverb for reasons."
+  },
+  {
+    "sentence": "The people ______ I work with are very friendly.",
+    "correct": "who",
+    "explanation": "'Who' for people (object: I work with them). Could also omit the pronoun here.",
+    "tip": "People = 'who'. It's the object, so it could even be omitted."
+  },
+  {
+    "sentence": "London, ______ is the capital of England, has over 8 million people.",
+    "correct": "which",
+    "explanation": "Non-defining (commas, extra info about London). Thing/place as subject → 'which'.",
+    "tip": "Extra info about a place with commas → 'which', never 'that'."
+  }
+]

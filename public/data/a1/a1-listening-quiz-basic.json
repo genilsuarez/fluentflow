@@ -1,0 +1,74 @@
+[
+  {
+    "question": "What is the correct greeting for the morning?",
+    "options": ["Good morning", "Good evening", "Good night", "Goodbye"],
+    "correct": 0,
+    "explanation": "'Good morning' is used from sunrise until noon."
+  },
+  {
+    "question": "How do you ask someone's name?",
+    "options": ["What is your name?", "Where are you from?", "How old are you?", "What do you do?"],
+    "correct": 0,
+    "explanation": "'What is your name?' asks for someone's name."
+  },
+  {
+    "question": "Which sentence is a polite request?",
+    "options": ["Can I have some water, please?", "Give me water.", "I want water now.", "Water!"],
+    "correct": 0,
+    "explanation": "Using 'Can I have... please?' is polite."
+  },
+  {
+    "question": "What does 'I'm fine, thank you' mean?",
+    "options": ["I am well", "I am hungry", "I am lost", "I am sorry"],
+    "correct": 0,
+    "explanation": "'Fine' means well/OK in this context."
+  },
+  {
+    "question": "Which word means the opposite of 'hot'?",
+    "options": ["cold", "warm", "cool", "nice"],
+    "correct": 0,
+    "explanation": "'Cold' is the opposite of 'hot'."
+  },
+  {
+    "question": "She ___ to school every day.",
+    "options": ["goes", "go", "going", "gone"],
+    "correct": 0,
+    "explanation": "Third person singular: she goes."
+  },
+  {
+    "question": "I ___ coffee in the morning.",
+    "options": ["drink", "drinks", "drinking", "drank"],
+    "correct": 0,
+    "explanation": "First person: I drink (base form)."
+  },
+  {
+    "question": "They ___ from Mexico.",
+    "options": ["are", "is", "am", "be"],
+    "correct": 0,
+    "explanation": "'They' uses 'are'."
+  },
+  {
+    "question": "What colour is the sky?",
+    "options": ["blue", "green", "red", "yellow"],
+    "correct": 0,
+    "explanation": "The sky is typically blue."
+  },
+  {
+    "question": "How many days are in a week?",
+    "options": ["seven", "five", "six", "ten"],
+    "correct": 0,
+    "explanation": "A week has seven days."
+  },
+  {
+    "question": "Which is a fruit?",
+    "options": ["apple", "bread", "cheese", "water"],
+    "correct": 0,
+    "explanation": "An apple is a fruit."
+  },
+  {
+    "question": "Where do you sleep?",
+    "options": ["in a bed", "in a car", "at school", "in a shop"],
+    "correct": 0,
+    "explanation": "We sleep in a bed."
+  }
+]

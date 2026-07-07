@@ -9,7 +9,10 @@ export type LearningMode =
   | 'reordering'
   | 'transformation'
   | 'word-formation'
-  | 'error-correction';
+  | 'error-correction'
+  | 'listening-quiz'
+  | 'dictation'
+  | 'listen-complete';
 type DifficultyLevel = 'a1' | 'a2' | 'b1' | 'b2' | 'c1' | 'c2';
 export type Category = 'Vocabulary' | 'Grammar' | 'PhrasalVerbs' | 'Idioms' | 'Reading' | 'Review';
 

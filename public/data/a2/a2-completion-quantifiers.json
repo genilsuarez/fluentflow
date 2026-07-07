@@ -1,0 +1,92 @@
+[
+  {
+    "sentence": "There isn't ______ milk in the fridge.",
+    "correct": "much",
+    "explanation": "'Much' is used with <uncountable> nouns in negative sentences and questions.",
+    "tip": "Milk is uncountable — which quantifier works with uncountable nouns in negatives?"
+  },
+  {
+    "sentence": "How ______ books do you have?",
+    "correct": "many",
+    "explanation": "'Many' is used with <countable> plural nouns in questions and negatives.",
+    "tip": "Books are countable — which quantifier do we use with countable nouns?"
+  },
+  {
+    "sentence": "I have ______ friends in this city.",
+    "correct": "some",
+    "explanation": "'Some' is used in <positive> sentences with both countable and uncountable nouns.",
+    "tip": "Positive sentence + plural noun = 'some' (an unspecified number)."
+  },
+  {
+    "sentence": "Is there ______ sugar in the cupboard?",
+    "correct": "any",
+    "explanation": "'Any' is used in <questions> with both countable and uncountable nouns.",
+    "tip": "This is a question — which word replaces 'some' in questions?"
+  },
+  {
+    "sentence": "She doesn't have ______ time today.",
+    "correct": "much",
+    "explanation": "'Much' with uncountable nouns in negatives. Time is uncountable.",
+    "tip": "Negative + uncountable (time) — which quantifier?"
+  },
+  {
+    "sentence": "There are ______ people waiting outside.",
+    "correct": "a lot of",
+    "explanation": "'A lot of' works with both countable and uncountable nouns in positive sentences.",
+    "tip": "Positive sentence, many people — 'a lot of' is the most natural choice."
+  },
+  {
+    "sentence": "He doesn't have ______ experience.",
+    "correct": "much",
+    "explanation": "'Much' with uncountable nouns in negatives. Experience is uncountable.",
+    "tip": "Negative + uncountable = 'much'."
+  },
+  {
+    "sentence": "Would you like ______ water?",
+    "correct": "some",
+    "explanation": "'Some' is used in offers and requests (even though they're questions).",
+    "tip": "Offers use 'some' even in question form — we expect 'yes'."
+  },
+  {
+    "sentence": "I didn't buy ______ eggs at the shop.",
+    "correct": "any",
+    "explanation": "'Any' is used in <negative> sentences with countable and uncountable nouns.",
+    "tip": "Negative + countable plural = 'any' (zero quantity)."
+  },
+  {
+    "sentence": "There is very ______ water left in the bottle.",
+    "correct": "little",
+    "explanation": "'Little' (not much) is used with <uncountable> nouns to mean 'not enough'.",
+    "tip": "Uncountable + 'not enough' = 'little'. With 'very' it emphasizes scarcity."
+  },
+  {
+    "sentence": "______ students passed the exam — only three.",
+    "correct": "Few",
+    "explanation": "'Few' (not many) is used with <countable> plural nouns to mean 'not enough'.",
+    "tip": "Countable + 'not many' = 'few'. Only three = a small number."
+  },
+  {
+    "sentence": "I need ______ help with this exercise.",
+    "correct": "some",
+    "explanation": "'Some' in a positive statement with uncountable noun (help).",
+    "tip": "Positive statement asking for an unspecified amount of help."
+  },
+  {
+    "sentence": "How ______ money do you need?",
+    "correct": "much",
+    "explanation": "'How much' for uncountable nouns (money). 'How many' for countable.",
+    "tip": "Money is uncountable — 'how much' or 'how many'?"
+  },
+  {
+    "sentence": "There are a ______ good restaurants near here.",
+    "correct": "few",
+    "explanation": "'A few' (some, enough) with countable plural nouns. Positive meaning.",
+    "tip": "'A few' = some, it's positive. 'Few' (without 'a') = not enough."
+  },
+  {
+    "sentence": "She has ______ patience with rude people.",
+    "correct": "little",
+    "explanation": "'Little' with uncountable nouns = not much / not enough.",
+    "tip": "Patience is uncountable. She doesn't have enough → 'little'."
+  }
+]

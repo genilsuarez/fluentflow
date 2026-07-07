@@ -1,0 +1,94 @@
+{
+  "title": "Relative Clauses: Who, Which, That, Whose, Where",
+  "estimatedReadingTime": 8,
+  "learningObjectives": [
+    "Understand the difference between defining and non-defining relative clauses",
+    "Use who, which, that, whose, and where correctly",
+    "Know when to use commas with relative clauses",
+    "Identify when the relative pronoun can be omitted"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "title": "What Are Relative Clauses?",
+      "type": "introduction",
+      "content": "Relative clauses give us extra information about a noun. They act like adjectives — they describe or identify which person or thing we're talking about. Understanding relative clauses will make your English more natural and your sentences more complex and connected."
+    },
+    {
+      "id": "defining",
+      "title": "Defining Relative Clauses",
+      "type": "theory",
+      "content": "<Defining relative clauses> tell us exactly which person or thing we mean. Without them, the sentence doesn't make complete sense.\n\nWe use:\n• <who> for people: The woman <who> lives next door is a doctor.\n• <which> for things/animals: The book <which> you recommended is excellent.\n• <that> for people or things (informal): The car <that> he bought is red.\n• <whose> for possession: The student <whose> laptop was stolen reported it.\n• <where> for places: The restaurant <where> we had dinner is closing.\n\nImportant: Defining relative clauses have NO commas. They are essential to the meaning."
+    },
+    {
+      "id": "non-defining",
+      "title": "Non-Defining Relative Clauses",
+      "type": "theory",
+      "content": "<Non-defining relative clauses> add extra information that is NOT essential. If you remove them, the sentence still makes complete sense.\n\nRules:\n• Always use COMMAS: My sister, <who> lives in London, is visiting next week.\n• NEVER use <that>: Paris, <which> is the capital of France, is beautiful. (NOT 'that')\n• The information is bonus detail, like a parenthetical note.\n\nExamples:\n• My car, <which> I bought last year, has already broken down.\n• Tom, <whose> father is a pilot, wants to fly planes.\n• Barcelona, <where> I spent my holiday, is a fascinating city.\n\nCompare:\n• The students who passed the exam celebrated. (defining — tells us WHICH students)\n• The students, who had studied hard, passed the exam. (non-defining — ALL students passed)"
+    },
+    {
+      "id": "omission",
+      "title": "When Can We Omit the Relative Pronoun?",
+      "type": "theory",
+      "content": "In <defining> relative clauses, we can omit <who>, <which>, or <that> when they are the OBJECT of the clause (not the subject).\n\nObject (can omit):\n• The film (that) we watched was boring. ← 'we' is the subject, 'that' is the object → can omit\n• The man (who) I met yesterday is my cousin.\n\nSubject (cannot omit):\n• The woman who called you is my boss. ← 'who' is the subject → cannot omit\n• The train which arrives at 9 is always late.\n\nTip: If there's already a subject after the relative pronoun, you can omit it."
+    },
+    {
+      "id": "examples",
+      "title": "More Examples in Context",
+      "type": "examples",
+      "content": "Example 1: DEFINING - <The people who work in that office are very friendly.> (tells us which people)\n\nExample 2: NON-DEFINING - <My phone, which I only bought last month, is already crashing.> (extra info about my phone — I only have one)\n\nExample 3: OMISSION - <The cake you made was delicious.> (we can omit 'that/which' because 'you' is the subject)\n\nExample 4: WHOSE - <I know a woman whose son won the competition.> (possession — the woman's son)\n\nExample 5: WHERE - <This is the park where I used to play as a child.> (the place)"
+    },
+    {
+      "id": "summary",
+      "title": "Key Points to Remember",
+      "type": "summary",
+      "content": "1. Defining = essential info, no commas, can use 'that'\n2. Non-defining = extra info, with commas, NEVER 'that'\n3. Who = people, which = things, whose = possession, where = places\n4. You can omit the pronoun when it's the object (not subject) of a defining clause\n5. Practice identifying whether information is essential (defining) or extra (non-defining)"
+    }
+  ],
+  "keyVocabulary": [
+    {
+      "term": "relative clause",
+      "definition": "A clause that gives information about a noun, introduced by who/which/that/whose/where",
+      "example": "The man who called is my uncle.",
+      "pronunciation": "/ˈrelətɪv klɔːz/"
+    },
+    {
+      "term": "defining",
+      "definition": "Essential information that identifies which noun we mean",
+      "example": "The book that I need is on the shelf.",
+      "pronunciation": "/dɪˈfaɪnɪŋ/"
+    },
+    {
+      "term": "non-defining",
+      "definition": "Extra, non-essential information added between commas",
+      "example": "My car, which is blue, is parked outside.",
+      "pronunciation": "/nɒn dɪˈfaɪnɪŋ/"
+    },
+    {
+      "term": "relative pronoun",
+      "definition": "Words like who, which, that, whose, where used to introduce relative clauses",
+      "example": "She's the teacher whose classes are always full.",
+      "pronunciation": "/ˈrelətɪv ˈprəʊnaʊn/"
+    },
+    {
+      "term": "omit",
+      "definition": "To leave out or not include something",
+      "example": "You can omit 'that' when it's the object.",
+      "pronunciation": "/əˈmɪt/"
+    }
+  ],
+  "grammarPoints": [
+    {
+      "rule": "Defining vs Non-Defining",
+      "explanation": "Defining = no commas, essential. Non-defining = commas, extra info. Never use 'that' in non-defining.",
+      "examples": ["The car that I want is expensive.", "My car, which is old, still works well."],
+      "commonMistakes": ["Using 'that' in non-defining clauses", "Forgetting commas in non-defining clauses"]
+    },
+    {
+      "rule": "Pronoun Omission",
+      "explanation": "Omit who/which/that only in defining clauses when the pronoun is the object (another subject follows).",
+      "examples": ["The film (that) we saw was great.", "The man who lives here is kind. (cannot omit)"],
+      "commonMistakes": ["Omitting the pronoun when it's the subject", "Omitting in non-defining clauses"]
+    }
+  ]
+}
