@@ -24,7 +24,7 @@ export interface ContentSegment {
 
 export interface StructuredContent {
   segments: ContentSegment[];
-  format?: 'quiz' | 'flashcard' | 'explanation' | 'plain' | 'reading';
+  format?: 'quiz' | 'flashcard' | 'explanation' | 'plain' | 'reading' | 'completion';
   metadata?: {
     difficulty?: number;
     focus?: string[];

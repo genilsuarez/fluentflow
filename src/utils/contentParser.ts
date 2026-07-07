@@ -293,7 +293,7 @@ export class ContentParser {
    */
   static fromLegacyString(
     text: string,
-    format: 'quiz' | 'flashcard' | 'explanation' | 'reading' = 'quiz'
+    format: 'quiz' | 'flashcard' | 'explanation' | 'reading' | 'completion' = 'quiz'
   ): StructuredContent {
     switch (format) {
       case 'quiz':

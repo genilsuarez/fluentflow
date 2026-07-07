@@ -26,15 +26,9 @@ const WordFormationComponent = lazyWithRetry(() => import('../learning/WordForma
 const ErrorCorrectionComponent = lazyWithRetry(
   () => import('../learning/ErrorCorrectionComponent')
 );
-const ListeningQuizComponent = lazyWithRetry(
-  () => import('../learning/ListeningQuizComponent')
-);
-const DictationComponent = lazyWithRetry(
-  () => import('../learning/DictationComponent')
-);
-const ListenCompleteComponent = lazyWithRetry(
-  () => import('../learning/ListenCompleteComponent')
-);
+const ListeningQuizComponent = lazyWithRetry(() => import('../learning/ListeningQuizComponent'));
+const DictationComponent = lazyWithRetry(() => import('../learning/DictationComponent'));
+const ListenCompleteComponent = lazyWithRetry(() => import('../learning/ListenCompleteComponent'));
 
 // Enhanced loading component
 const ComponentLoader: React.FC = () => (

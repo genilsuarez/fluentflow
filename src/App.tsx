@@ -62,7 +62,9 @@ const AppContent: React.FC = () => {
   useSystemTheme();
 
   // Preload TTS voices for listening modes (Chrome loads async)
-  useEffect(() => { preloadVoices(); }, []);
+  useEffect(() => {
+    preloadVoices();
+  }, []);
 
   // Verify cache integrity on app mount when offline mode is enabled
   useEffect(() => {

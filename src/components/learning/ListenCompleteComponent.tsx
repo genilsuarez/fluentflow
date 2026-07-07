@@ -60,13 +60,16 @@ const ListenCompleteComponent: React.FC<ListenCompleteComponentProps> = ({ modul
     return currentItem.sentence.replace(/_{2,}/, currentItem.correct);
   }, [currentItem]);
 
-  const playAudio = useCallback((rate = 0.85) => {
-    const text = getFullSentence();
-    if (!text) return;
-    setIsPlaying(true);
-    speak(text, { rate });
-    setTimeout(() => setIsPlaying(false), Math.max(text.length * 80, 2000));
-  }, [getFullSentence]);
+  const playAudio = useCallback(
+    (rate = 0.85) => {
+      const text = getFullSentence();
+      if (!text) return;
+      setIsPlaying(true);
+      speak(text, { rate });
+      setTimeout(() => setIsPlaying(false), Math.max(text.length * 80, 2000));
+    },
+    [getFullSentence]
+  );
 
   // Auto-play on new item
   useEffect(() => {
@@ -142,7 +145,10 @@ const ListenCompleteComponent: React.FC<ListenCompleteComponentProps> = ({ modul
           setUserInput('');
           setShowResult(false);
           setIsCorrect(false);
-          itemsRef.current = conditionalShuffle((module.data || []) as CompletionData[], randomizeItems);
+          itemsRef.current = conditionalShuffle(
+            (module.data || []) as CompletionData[],
+            randomizeItems
+          );
         }}
         onContinue={handleResultContinue}
         t={t}
@@ -165,23 +171,45 @@ const ListenCompleteComponent: React.FC<ListenCompleteComponentProps> = ({ modul
       <div className="quiz-component__question-card" style={{ gap: '1rem' }}>
         {/* Listen button */}
         {ttsAvailable && (
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', padding: '0.5rem 0' }}>
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              gap: '0.5rem',
+              padding: '0.5rem 0',
+            }}
+          >
             <button
               onClick={() => playAudio()}
               aria-label="Play audio"
               style={{
-                width: '64px', height: '64px', borderRadius: '50%',
+                width: '64px',
+                height: '64px',
+                borderRadius: '50%',
                 border: '2.5px solid var(--theme-primary-blue, #3b82f6)',
-                background: 'rgba(59,130,246,0.08)', cursor: 'pointer',
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                transition: 'all 0.2s', transform: isPlaying ? 'scale(1.06)' : 'scale(1)',
+                background: 'rgba(59,130,246,0.08)',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                transition: 'all 0.2s',
+                transform: isPlaying ? 'scale(1.06)' : 'scale(1)',
               }}
             >
               <Volume2 size={28} color="var(--theme-primary-blue, #3b82f6)" />
             </button>
             <button
               onClick={() => playAudio(0.65)}
-              style={{ fontSize: '0.6rem', fontWeight: 700, color: 'var(--theme-text-tertiary)', background: 'none', border: 'none', cursor: 'pointer', textDecoration: 'underline' }}
+              style={{
+                fontSize: '0.6rem',
+                fontWeight: 700,
+                color: 'var(--theme-text-tertiary)',
+                background: 'none',
+                border: 'none',
+                cursor: 'pointer',
+                textDecoration: 'underline',
+              }}
             >
               🐢 Slower
             </button>
@@ -189,13 +217,30 @@ const ListenCompleteComponent: React.FC<ListenCompleteComponentProps> = ({ modul
         )}
 
         {/* Sentence with blank */}
-        <div style={{ fontSize: '1.05rem', fontWeight: 500, color: isDark ? '#e5e7eb' : '#1f2937', textAlign: 'center', lineHeight: 1.6 }}>
-          <ContentRenderer content={ContentAdapter.ensureStructured(currentItem.sentence, 'completion')} />
+        <div
+          style={{
+            fontSize: '1.05rem',
+            fontWeight: 500,
+            color: isDark ? '#e5e7eb' : '#1f2937',
+            textAlign: 'center',
+            lineHeight: 1.6,
+          }}
+        >
+          <ContentRenderer
+            content={ContentAdapter.ensureStructured(currentItem.sentence, 'completion')}
+          />
         </div>
 
         {/* Tip */}
         {currentItem?.tip && !showResult && (
-          <p style={{ fontSize: '0.72rem', color: 'var(--theme-text-tertiary)', textAlign: 'center', fontStyle: 'italic' }}>
+          <p
+            style={{
+              fontSize: '0.72rem',
+              color: 'var(--theme-text-tertiary)',
+              textAlign: 'center',
+              fontStyle: 'italic',
+            }}
+          >
             💡 {currentItem.tip}
           </p>
         )}
@@ -213,26 +258,54 @@ const ListenCompleteComponent: React.FC<ListenCompleteComponentProps> = ({ modul
             autoCorrect="off"
             spellCheck={false}
             style={{
-              width: '100%', padding: '12px 14px', fontSize: '1rem', textAlign: 'center',
-              borderRadius: '0.5rem', border: `2px solid ${showResult ? (isCorrect ? '#10b981' : '#ef4444') : 'var(--theme-border, #e5e7eb)'}`,
+              width: '100%',
+              padding: '12px 14px',
+              fontSize: '1rem',
+              textAlign: 'center',
+              borderRadius: '0.5rem',
+              border: `2px solid ${showResult ? (isCorrect ? '#10b981' : '#ef4444') : 'var(--theme-border, #e5e7eb)'}`,
               background: isDark ? 'var(--theme-bg-elevated, #1f2937)' : '#fff',
               color: isDark ? '#fff' : '#111827',
-              outline: 'none', transition: 'border-color 0.2s',
+              outline: 'none',
+              transition: 'border-color 0.2s',
             }}
           />
         </div>
 
         {/* Feedback */}
         {showResult && (
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              gap: '0.5rem',
+            }}
+          >
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-              {isCorrect ? <CheckCircle size={18} color="#10b981" /> : <XCircle size={18} color="#ef4444" />}
-              <span style={{ fontWeight: 600, fontSize: '0.85rem', color: isCorrect ? '#10b981' : '#ef4444' }}>
+              {isCorrect ? (
+                <CheckCircle size={18} color="#10b981" />
+              ) : (
+                <XCircle size={18} color="#ef4444" />
+              )}
+              <span
+                style={{
+                  fontWeight: 600,
+                  fontSize: '0.85rem',
+                  color: isCorrect ? '#10b981' : '#ef4444',
+                }}
+              >
                 {isCorrect ? 'Correct!' : `Answer: ${currentItem.correct}`}
               </span>
             </div>
             {currentItem.explanation && (
-              <p style={{ fontSize: '0.75rem', color: 'var(--theme-text-tertiary)', textAlign: 'center' }}>
+              <p
+                style={{
+                  fontSize: '0.75rem',
+                  color: 'var(--theme-text-tertiary)',
+                  textAlign: 'center',
+                }}
+              >
                 {currentItem.explanation}
               </p>
             )}
@@ -242,11 +315,25 @@ const ListenCompleteComponent: React.FC<ListenCompleteComponentProps> = ({ modul
 
       {/* Unified Control Bar */}
       <div className="game-controls">
-        <button onClick={handleReturnToMenu} className="game-controls__home-btn" title={t('learning.returnToMainMenu')}>
+        <button
+          onClick={handleReturnToMenu}
+          className="game-controls__home-btn"
+          title={t('learning.returnToMainMenu')}
+        >
           <Home className="game-controls__home-icon" />
         </button>
-        <button onClick={showResult ? handleNext : handleSubmit} disabled={!showResult && !userInput.trim()} className="game-controls__primary-btn game-controls__primary-btn--green">
-          <span>{showResult ? (currentIndex < items.length - 1 ? t('learning.nextQuestion') : t('learning.finishQuiz')) : t('learning.checkAnswer')}</span>
+        <button
+          onClick={showResult ? handleNext : handleSubmit}
+          disabled={!showResult && !userInput.trim()}
+          className="game-controls__primary-btn game-controls__primary-btn--green"
+        >
+          <span>
+            {showResult
+              ? currentIndex < items.length - 1
+                ? t('learning.nextQuestion')
+                : t('learning.finishQuiz')
+              : t('learning.checkAnswer')}
+          </span>
           <ArrowRight className="game-controls__primary-icon" />
         </button>
       </div>
