@@ -1,0 +1,217 @@
+[
+  {
+    "prompt": "Rewrite using a gerund as subject",
+    "source": "It is relaxing to read before bed.",
+    "correct": [
+      "Reading before bed is relaxing."
+    ],
+    "explanation": "Gerund as subject: <verb-ing> replaces <It is ... to + verb>."
+  },
+  {
+    "prompt": "Rewrite using <to + infinitive> after the adjective",
+    "source": "Running a marathon is difficult.",
+    "correct": [
+      "It is difficult to run a marathon."
+    ],
+    "explanation": "<It is + adjective + to + infinitive> is an alternative to gerund as subject."
+  },
+  {
+    "prompt": "Change the verb pattern to gerund",
+    "source": "I stopped and I bought some milk.",
+    "correct": [
+      "I stopped to buy some milk."
+    ],
+    "hint": "<Stop to + verb> = stop in order to do something",
+    "explanation": "<Stop to + infinitive> means to pause one activity in order to do another."
+  },
+  {
+    "prompt": "Rewrite using <remember + gerund>",
+    "source": "I locked the door. I remember it clearly.",
+    "correct": [
+      "I remember locking the door."
+    ],
+    "hint": "<Remember + gerund> = recall a past action",
+    "explanation": "<Remember + gerund> means you recall doing something in the past."
+  },
+  {
+    "prompt": "Rewrite using <remember + infinitive>",
+    "source": "Don't forget: you need to call your mother.",
+    "correct": [
+      "Remember to call your mother."
+    ],
+    "explanation": "<Remember + to + infinitive> means don't forget to do something in the future."
+  },
+  {
+    "prompt": "Change to gerund after preposition",
+    "source": "She is good at languages. She speaks them well.",
+    "correct": [
+      "She is good at speaking languages."
+    ],
+    "hint": "After prepositions, always use gerund",
+    "explanation": "After prepositions (at, in, of, about, for), always use the gerund form."
+  },
+  {
+    "prompt": "Rewrite using <avoid + gerund>",
+    "source": "Try not to make the same mistake again.",
+    "correct": [
+      "Avoid making the same mistake again."
+    ],
+    "explanation": "<Avoid> is always followed by a gerund, never an infinitive."
+  },
+  {
+    "prompt": "Rewrite using <suggest + gerund>",
+    "source": "\"Why don't we go to the beach?\" he said.",
+    "correct": [
+      "He suggested going to the beach."
+    ],
+    "explanation": "<Suggest> is followed by a gerund (not infinitive) when there's no indirect object."
+  },
+  {
+    "prompt": "Rewrite using <try + gerund>",
+    "source": "You could take an aspirin. Maybe it will help your headache.",
+    "correct": [
+      "Try taking an aspirin for your headache."
+    ],
+    "hint": "<Try + gerund> = experiment with something",
+    "explanation": "<Try + gerund> means to experiment or test something as a possible solution."
+  },
+  {
+    "prompt": "Rewrite using <try + infinitive>",
+    "source": "He made an effort to open the jar, but he couldn't.",
+    "correct": [
+      "He tried to open the jar, but he couldn't."
+    ],
+    "explanation": "<Try + to + infinitive> means to make an effort/attempt to do something."
+  },
+  {
+    "prompt": "Rewrite using <regret + gerund>",
+    "source": "I told her the truth. Now I'm sorry about it.",
+    "correct": [
+      "I regret telling her the truth."
+    ],
+    "explanation": "<Regret + gerund> expresses regret about a past action."
+  },
+  {
+    "prompt": "Rewrite using infinitive of purpose",
+    "source": "She went to the library because she wanted to study.",
+    "correct": [
+      "She went to the library to study.",
+      "She went to the library in order to study."
+    ],
+    "explanation": "Infinitive of purpose: <to + verb> or <in order to + verb> expresses reason/purpose."
+  },
+  {
+    "prompt": "Rewrite using <look forward to + gerund>",
+    "source": "I can't wait to see you next week.",
+    "correct": [
+      "I look forward to seeing you next week.",
+      "I'm looking forward to seeing you next week."
+    ],
+    "hint": "<To> here is a preposition, not part of infinitive",
+    "explanation": "<Look forward to> is a phrasal verb where <to> is a preposition → followed by gerund."
+  },
+  {
+    "prompt": "Rewrite using <used to + infinitive>",
+    "source": "When I was a child, I played outside every day.",
+    "correct": [
+      "I used to play outside every day."
+    ],
+    "explanation": "<Used to + infinitive> describes past habits or states that no longer exist."
+  },
+  {
+    "prompt": "Rewrite using <be used to + gerund>",
+    "source": "Living alone is normal for me now.",
+    "correct": [
+      "I am used to living alone.",
+      "I'm used to living alone."
+    ],
+    "hint": "<Be used to> + gerund = be accustomed to",
+    "explanation": "<Be used to + gerund> means to be accustomed to something."
+  },
+  {
+    "prompt": "Rewrite using <get used to + gerund>",
+    "source": "At first the noise bothered me, but now it doesn't.",
+    "correct": [
+      "I got used to the noise.",
+      "I've got used to the noise.",
+      "I got used to hearing the noise."
+    ],
+    "explanation": "<Get used to + gerund/noun> means to become accustomed to something over time."
+  },
+  {
+    "prompt": "Rewrite using <allow + object + to + infinitive>",
+    "source": "Students can use calculators in the exam.",
+    "correct": [
+      "The teacher allows students to use calculators in the exam.",
+      "Students are allowed to use calculators in the exam."
+    ],
+    "explanation": "<Allow + object + to + infinitive> or passive <be allowed to + infinitive>."
+  },
+  {
+    "prompt": "Rewrite using <make + object + bare infinitive>",
+    "source": "The teacher obliged us to rewrite the essay.",
+    "correct": [
+      "The teacher made us rewrite the essay."
+    ],
+    "hint": "<Make> + object + base form (no <to>)",
+    "explanation": "<Make> + object + bare infinitive (no <to>) expresses forced obligation."
+  },
+  {
+    "prompt": "Rewrite using <let + object + bare infinitive>",
+    "source": "My parents allowed me to go to the concert.",
+    "correct": [
+      "My parents let me go to the concert."
+    ],
+    "explanation": "<Let> + object + bare infinitive expresses permission."
+  },
+  {
+    "prompt": "Rewrite using <deny + gerund>",
+    "source": "\"I didn't steal the money,\" he said.",
+    "correct": [
+      "He denied stealing the money."
+    ],
+    "explanation": "<Deny> is followed by gerund. It means to say something is not true."
+  },
+  {
+    "prompt": "Rewrite using <mind + gerund>",
+    "source": "Would it bother you if I opened the window?",
+    "correct": [
+      "Would you mind me opening the window?",
+      "Do you mind if I open the window?"
+    ],
+    "explanation": "<Mind> is followed by gerund. <Would you mind + gerund?> = polite request."
+  },
+  {
+    "prompt": "Rewrite using <can't help + gerund>",
+    "source": "I laugh every time I see that video. I can't control it.",
+    "correct": [
+      "I can't help laughing every time I see that video."
+    ],
+    "explanation": "<Can't help + gerund> means unable to stop/control doing something."
+  },
+  {
+    "prompt": "Rewrite using <worth + gerund>",
+    "source": "You should see that film. It's very good.",
+    "correct": [
+      "That film is worth seeing.",
+      "That film is worth watching."
+    ],
+    "explanation": "<Be worth + gerund> means something deserves time/effort."
+  },
+  {
+    "prompt": "Rewrite using <spend time + gerund>",
+    "source": "She studied for three hours yesterday.",
+    "correct": [
+      "She spent three hours studying yesterday."
+    ],
+    "explanation": "<Spend + time + gerund> describes how time was used."
+  },
+  {
+    "prompt": "Rewrite using <go on + gerund>",
+    "source": "He continued talking despite the interruption.",
+    "correct": [
+      "He went on talking despite the interruption."
+    ],
+    "explanation": "<Go on + gerund> means to continue the same activity."
+  }
+]

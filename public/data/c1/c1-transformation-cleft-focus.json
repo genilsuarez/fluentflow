@@ -1,0 +1,213 @@
+[
+  {
+    "prompt": "Rewrite as a cleft sentence with <It was ... who>",
+    "source": "Maria organized the whole event.",
+    "correct": [
+      "It was Maria who organized the whole event."
+    ],
+    "explanation": "Cleft with <It was ... who> emphasizes the agent (person)."
+  },
+  {
+    "prompt": "Rewrite as a cleft sentence with <It was ... that>",
+    "source": "The heavy rain caused the flooding.",
+    "correct": [
+      "It was the heavy rain that caused the flooding."
+    ],
+    "explanation": "Cleft with <It was ... that> emphasizes the cause."
+  },
+  {
+    "prompt": "Rewrite using <What ... is/was>",
+    "source": "I admire her courage.",
+    "correct": [
+      "What I admire is her courage.",
+      "What I admire about her is her courage."
+    ],
+    "explanation": "<What> cleft: <What> + subject + verb + <is> + focused element."
+  },
+  {
+    "prompt": "Rewrite using <What ... did was>",
+    "source": "He resigned immediately.",
+    "correct": [
+      "What he did was resign immediately.",
+      "What he did was to resign immediately."
+    ],
+    "hint": "After <What ... did was>, use base form or <to> + infinitive",
+    "explanation": "<What ... did was> + base verb/to-infinitive focuses on the action."
+  },
+  {
+    "prompt": "Rewrite as a cleft sentence with <It is ... where>",
+    "source": "They met at a conference in Berlin.",
+    "correct": [
+      "It was at a conference in Berlin where they met.",
+      "It was in Berlin where they met at a conference."
+    ],
+    "explanation": "Cleft with <It was ... where> emphasizes the location."
+  },
+  {
+    "prompt": "Rewrite using <The reason ... is that>",
+    "source": "He quit because the salary was too low.",
+    "correct": [
+      "The reason he quit is that the salary was too low.",
+      "The reason why he quit is that the salary was too low."
+    ],
+    "explanation": "<The reason (why) ... is that> focuses on the cause/motivation."
+  },
+  {
+    "prompt": "Rewrite using <What ... need(s) is>",
+    "source": "The country needs economic reform.",
+    "correct": [
+      "What the country needs is economic reform."
+    ],
+    "explanation": "<What ... needs is> cleft emphasizes the required solution."
+  },
+  {
+    "prompt": "Rewrite as a cleft sentence with <It was ... when>",
+    "source": "I realized the mistake only after submitting the report.",
+    "correct": [
+      "It was only after submitting the report that I realized the mistake.",
+      "It was after submitting the report when I realized the mistake."
+    ],
+    "explanation": "Cleft with time focus: <It was ... that/when> emphasizes timing."
+  },
+  {
+    "prompt": "Rewrite using <What happened was>",
+    "source": "The system crashed and we lost all the data.",
+    "correct": [
+      "What happened was that the system crashed and we lost all the data.",
+      "What happened was the system crashed and we lost all the data."
+    ],
+    "explanation": "<What happened was (that)> introduces an explanation of events."
+  },
+  {
+    "prompt": "Rewrite using <All ... is/was>",
+    "source": "I just want a quiet evening at home.",
+    "correct": [
+      "All I want is a quiet evening at home."
+    ],
+    "hint": "<All> + subject + verb + <is> + complement",
+    "explanation": "<All ... is> cleft minimizes and focuses: <the only thing I want is>."
+  },
+  {
+    "prompt": "Rewrite using <The thing that ... is>",
+    "source": "His arrogance bothers me most.",
+    "correct": [
+      "The thing that bothers me most is his arrogance."
+    ],
+    "explanation": "<The thing that ... is> defers the focus element to the end."
+  },
+  {
+    "prompt": "Rewrite as a cleft with <It is ... who>",
+    "source": "You should apologize, not me.",
+    "correct": [
+      "It is you who should apologize, not me."
+    ],
+    "explanation": "Cleft for contrast: <It is you who> emphasizes the responsible person."
+  },
+  {
+    "prompt": "Rewrite using <What ... made ... was>",
+    "source": "The plot twist made the film memorable.",
+    "correct": [
+      "What made the film memorable was the plot twist."
+    ],
+    "explanation": "<What made X [adjective] was Y> focuses on the cause of a quality."
+  },
+  {
+    "prompt": "Rewrite using <The person who>",
+    "source": "The CEO approved the merger.",
+    "correct": [
+      "The person who approved the merger was the CEO."
+    ],
+    "explanation": "<The person/thing who/that ... was> pseudo-cleft defers focus to the end."
+  },
+  {
+    "prompt": "Rewrite using <It was not until ... that>",
+    "source": "She didn't understand the problem until she read the report.",
+    "correct": [
+      "It was not until she read the report that she understood the problem.",
+      "It wasn't until she read the report that she understood the problem."
+    ],
+    "explanation": "<It was not until ... that> emphasizes lateness or delay."
+  },
+  {
+    "prompt": "Rewrite using <Where ... is>",
+    "source": "I grew up in a small village by the sea.",
+    "correct": [
+      "Where I grew up is a small village by the sea.",
+      "Where I grew up was a small village by the sea."
+    ],
+    "explanation": "<Where ... is> pseudo-cleft focuses on a place."
+  },
+  {
+    "prompt": "Rewrite using <What ... is> with abstract focus",
+    "source": "We lack proper communication.",
+    "correct": [
+      "What we lack is proper communication."
+    ],
+    "explanation": "<What we lack/need/want is> focuses on what is missing."
+  },
+  {
+    "prompt": "Rewrite as a cleft with <It is ... that> (negative)",
+    "source": "Money doesn't make you happy.",
+    "correct": [
+      "It is not money that makes you happy.",
+      "It isn't money that makes you happy."
+    ],
+    "explanation": "Negative cleft: <It is not X that ...> denies a cause/factor."
+  },
+  {
+    "prompt": "Rewrite using <The way ... is>",
+    "source": "She handled the crisis brilliantly.",
+    "correct": [
+      "The way she handled the crisis was brilliant."
+    ],
+    "explanation": "<The way ... is/was> + adjective focuses on manner."
+  },
+  {
+    "prompt": "Rewrite using <What ... should do is>",
+    "source": "They should invest in renewable energy.",
+    "correct": [
+      "What they should do is invest in renewable energy."
+    ],
+    "explanation": "<What ... should do is> + base verb focuses on the recommended action."
+  },
+  {
+    "prompt": "Rewrite as a cleft with focus on the object",
+    "source": "I bought the blue dress, not the red one.",
+    "correct": [
+      "It was the blue dress that I bought, not the red one."
+    ],
+    "explanation": "Cleft focusing on the object: <It was [object] that I [verb]>."
+  },
+  {
+    "prompt": "Rewrite using <The place where>",
+    "source": "We first met at the university library.",
+    "correct": [
+      "The place where we first met was the university library."
+    ],
+    "explanation": "<The place where ... was> pseudo-cleft focuses on location."
+  },
+  {
+    "prompt": "Rewrite using <All ... did was>",
+    "source": "He only smiled and walked away.",
+    "correct": [
+      "All he did was smile and walk away."
+    ],
+    "explanation": "<All ... did was> + base verb emphasizes the simplicity/minimality of the action."
+  },
+  {
+    "prompt": "Rewrite using <It was because of ... that>",
+    "source": "His hard work got him promoted.",
+    "correct": [
+      "It was because of his hard work that he got promoted."
+    ],
+    "explanation": "<It was because of ... that> cleft focuses on the reason."
+  },
+  {
+    "prompt": "Rewrite using <What ... want(s) is>",
+    "source": "The employees want better working conditions.",
+    "correct": [
+      "What the employees want is better working conditions."
+    ],
+    "explanation": "<What ... want is> pseudo-cleft focuses on the desired outcome."
+  }
+]

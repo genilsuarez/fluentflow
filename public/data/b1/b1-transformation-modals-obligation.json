@@ -1,0 +1,215 @@
+[
+  {
+    "prompt": "Rewrite using <have to>",
+    "source": "It is necessary for students to wear uniforms.",
+    "correct": [
+      "Students have to wear uniforms."
+    ],
+    "explanation": "<Have to> expresses external obligation or necessity."
+  },
+  {
+    "prompt": "Rewrite using <must>",
+    "source": "It is essential that you arrive on time.",
+    "correct": [
+      "You must arrive on time."
+    ],
+    "explanation": "<Must> expresses strong obligation, often from the speaker."
+  },
+  {
+    "prompt": "Change to past obligation with <had to>",
+    "source": "We must finish the report by Friday.",
+    "correct": [
+      "We had to finish the report by Friday."
+    ],
+    "hint": "<Must> has no past form — use <had to>",
+    "explanation": "Past obligation: <had to> replaces <must> because <must> has no past tense form."
+  },
+  {
+    "prompt": "Rewrite using <don't have to>",
+    "source": "It isn't necessary for you to come tomorrow.",
+    "correct": [
+      "You don't have to come tomorrow."
+    ],
+    "explanation": "<Don't have to> = no obligation, not necessary."
+  },
+  {
+    "prompt": "Rewrite using <mustn't>",
+    "source": "It is prohibited to use phones during the exam.",
+    "correct": [
+      "You mustn't use phones during the exam."
+    ],
+    "explanation": "<Mustn't> = prohibition (you are not allowed to)."
+  },
+  {
+    "prompt": "Rewrite using <should have> + past participle",
+    "source": "You didn't study. That was a mistake.",
+    "correct": [
+      "You should have studied."
+    ],
+    "hint": "Use <should have> for past regret/advice",
+    "explanation": "<Should have> + past participle expresses advice about a past action (it didn't happen but it was the right thing)."
+  },
+  {
+    "prompt": "Rewrite using <ought to>",
+    "source": "It would be a good idea to call her.",
+    "correct": [
+      "You ought to call her."
+    ],
+    "explanation": "<Ought to> gives advice/recommendation, similar to <should>."
+  },
+  {
+    "prompt": "Rewrite using <needn't have> + past participle",
+    "source": "She brought an umbrella, but it didn't rain.",
+    "correct": [
+      "She needn't have brought an umbrella."
+    ],
+    "hint": "The action happened but was unnecessary",
+    "explanation": "<Needn't have> + past participle means the action was done but turned out to be unnecessary."
+  },
+  {
+    "prompt": "Rewrite using <be allowed to>",
+    "source": "Students can leave early on Fridays.",
+    "correct": [
+      "Students are allowed to leave early on Fridays."
+    ],
+    "explanation": "<Be allowed to> is a formal/explicit way to express permission."
+  },
+  {
+    "prompt": "Rewrite using <had better>",
+    "source": "I strongly advise you to see a doctor.",
+    "correct": [
+      "You had better see a doctor.",
+      "You'd better see a doctor."
+    ],
+    "hint": "<Had better> implies a warning or consequence",
+    "explanation": "<Had better> gives strong advice with an implied negative consequence if not followed."
+  },
+  {
+    "prompt": "Change to past with <wasn't allowed to>",
+    "source": "Children can't enter this area.",
+    "correct": [
+      "Children weren't allowed to enter that area.",
+      "Children were not allowed to enter that area."
+    ],
+    "explanation": "Past of <can't> (prohibition) = <wasn't/weren't allowed to>."
+  },
+  {
+    "prompt": "Rewrite using <could have> + past participle",
+    "source": "He had the ability to win, but he didn't try.",
+    "correct": [
+      "He could have won.",
+      "He could have won if he had tried."
+    ],
+    "explanation": "<Could have> + past participle expresses an unrealized past ability or possibility."
+  },
+  {
+    "prompt": "Rewrite using <be supposed to>",
+    "source": "The rule says employees start at 9 AM.",
+    "correct": [
+      "Employees are supposed to start at 9 AM."
+    ],
+    "explanation": "<Be supposed to> expresses what is expected or required by rules/arrangements."
+  },
+  {
+    "prompt": "Rewrite using <must> for deduction",
+    "source": "I'm sure she is at home. Her car is in the driveway.",
+    "correct": [
+      "She must be at home."
+    ],
+    "hint": "<Must> for logical deduction (present)",
+    "explanation": "<Must> + base verb expresses a strong logical deduction about the present."
+  },
+  {
+    "prompt": "Rewrite using <can't> for deduction",
+    "source": "I'm sure that isn't true.",
+    "correct": [
+      "That can't be true."
+    ],
+    "explanation": "<Can't> + base verb expresses a negative deduction (impossible/unbelievable)."
+  },
+  {
+    "prompt": "Rewrite using <must have> for past deduction",
+    "source": "I'm sure he left early. His desk is empty.",
+    "correct": [
+      "He must have left early."
+    ],
+    "explanation": "<Must have> + past participle is a strong deduction about the past."
+  },
+  {
+    "prompt": "Rewrite using <might>",
+    "source": "Perhaps she will come to the party.",
+    "correct": [
+      "She might come to the party."
+    ],
+    "explanation": "<Might> expresses possibility (less certain than <may>)."
+  },
+  {
+    "prompt": "Rewrite using <didn't need to>",
+    "source": "It wasn't necessary to book in advance, so we didn't.",
+    "correct": [
+      "We didn't need to book in advance."
+    ],
+    "hint": "The action did NOT happen",
+    "explanation": "<Didn't need to> = it wasn't necessary AND the action was not done."
+  },
+  {
+    "prompt": "Rewrite using <shouldn't have>",
+    "source": "He ate the whole cake. Now he feels sick.",
+    "correct": [
+      "He shouldn't have eaten the whole cake."
+    ],
+    "explanation": "<Shouldn't have> + past participle expresses criticism about a past action."
+  },
+  {
+    "prompt": "Rewrite using <may> for permission (formal)",
+    "source": "Is it OK if I open the window?",
+    "correct": [
+      "May I open the window?"
+    ],
+    "explanation": "<May I...?> is a formal way to ask for permission."
+  },
+  {
+    "prompt": "Rewrite using <would rather>",
+    "source": "I prefer to stay at home tonight.",
+    "correct": [
+      "I would rather stay at home tonight.",
+      "I'd rather stay at home tonight."
+    ],
+    "explanation": "<Would rather> + base verb expresses preference."
+  },
+  {
+    "prompt": "Rewrite using <can't have> for past deduction",
+    "source": "I'm sure she didn't say that. She's very polite.",
+    "correct": [
+      "She can't have said that."
+    ],
+    "explanation": "<Can't have> + past participle expresses disbelief about a past event."
+  },
+  {
+    "prompt": "Rewrite using <be bound to>",
+    "source": "I'm certain he will succeed.",
+    "correct": [
+      "He is bound to succeed.",
+      "He's bound to succeed."
+    ],
+    "explanation": "<Be bound to> = be certain/sure to (strong prediction)."
+  },
+  {
+    "prompt": "Rewrite using <might have> for past possibility",
+    "source": "Perhaps she took the wrong bus.",
+    "correct": [
+      "She might have taken the wrong bus."
+    ],
+    "explanation": "<Might have> + past participle expresses possibility about a past event."
+  },
+  {
+    "prompt": "Rewrite using <was/were to>",
+    "source": "The meeting was scheduled for 3 PM.",
+    "correct": [
+      "The meeting was to take place at 3 PM.",
+      "The meeting was to be at 3 PM."
+    ],
+    "hint": "<Was/were to> = formal scheduled arrangement",
+    "explanation": "<Was/were to> + base verb expresses a formal plan or arrangement in the past."
+  }
+]

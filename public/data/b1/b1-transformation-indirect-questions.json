@@ -1,0 +1,211 @@
+[
+  {
+    "prompt": "Change to an indirect question with <Do you know>",
+    "source": "Where is the nearest bank?",
+    "correct": [
+      "Do you know where the nearest bank is?"
+    ],
+    "explanation": "Indirect questions use statement word order: <where the bank is> (not <where is the bank>)."
+  },
+  {
+    "prompt": "Change to an indirect question with <Could you tell me>",
+    "source": "What time does the train leave?",
+    "correct": [
+      "Could you tell me what time the train leaves?"
+    ],
+    "explanation": "Indirect question: no auxiliary inversion. <What time the train leaves> (not <does the train leave>)."
+  },
+  {
+    "prompt": "Change to an indirect question with <I'd like to know>",
+    "source": "How much does this shirt cost?",
+    "correct": [
+      "I'd like to know how much this shirt costs.",
+      "I would like to know how much this shirt costs."
+    ],
+    "explanation": "Indirect question with statement order: <how much this shirt costs>."
+  },
+  {
+    "prompt": "Change to an indirect yes/no question with <Do you know>",
+    "source": "Is the museum open on Sundays?",
+    "correct": [
+      "Do you know if the museum is open on Sundays?",
+      "Do you know whether the museum is open on Sundays?"
+    ],
+    "hint": "Use <if> or <whether> for yes/no questions",
+    "explanation": "Indirect yes/no questions use <if/whether> + statement word order."
+  },
+  {
+    "prompt": "Change to a direct question",
+    "source": "I wonder where she lives.",
+    "correct": [
+      "Where does she live?"
+    ],
+    "explanation": "Direct question: use auxiliary inversion. <Where does she live?>"
+  },
+  {
+    "prompt": "Change to an indirect question with <Can you tell me>",
+    "source": "Who wrote this book?",
+    "correct": [
+      "Can you tell me who wrote this book?"
+    ],
+    "hint": "When <who> is the subject, word order doesn't change",
+    "explanation": "When the question word is the subject, the word order is the same in direct and indirect."
+  },
+  {
+    "prompt": "Change to a direct question",
+    "source": "Could you tell me how I can get to the station?",
+    "correct": [
+      "How can I get to the station?"
+    ],
+    "explanation": "Direct question uses inverted auxiliary order: <How can I get...?>"
+  },
+  {
+    "prompt": "Change to an indirect question with <I was wondering>",
+    "source": "Why did she leave early?",
+    "correct": [
+      "I was wondering why she left early."
+    ],
+    "hint": "No <did> in indirect questions — use past simple directly",
+    "explanation": "Indirect question: remove <did> and change the verb to past simple."
+  },
+  {
+    "prompt": "Change to an indirect question with <Do you happen to know>",
+    "source": "When does the next bus arrive?",
+    "correct": [
+      "Do you happen to know when the next bus arrives?"
+    ],
+    "explanation": "<Do you happen to know> is a polite way to ask. Use statement order after it."
+  },
+  {
+    "prompt": "Change to a direct question",
+    "source": "I'd like to know whether they have vegetarian options.",
+    "correct": [
+      "Do they have vegetarian options?"
+    ],
+    "explanation": "Direct yes/no question: auxiliary + subject. <Do they have...?>"
+  },
+  {
+    "prompt": "Change to an indirect question with <I'm not sure>",
+    "source": "What is her phone number?",
+    "correct": [
+      "I'm not sure what her phone number is."
+    ],
+    "explanation": "Indirect statement with embedded question: <what her phone number is>."
+  },
+  {
+    "prompt": "Change to an indirect question with <Would you mind telling me>",
+    "source": "Where did you buy that jacket?",
+    "correct": [
+      "Would you mind telling me where you bought that jacket?"
+    ],
+    "explanation": "Indirect: remove <did>, use past simple directly. Very polite register."
+  },
+  {
+    "prompt": "Change to a direct question",
+    "source": "Do you know if she speaks French?",
+    "correct": [
+      "Does she speak French?"
+    ],
+    "explanation": "Direct yes/no: auxiliary + subject + base verb. <Does she speak...?>"
+  },
+  {
+    "prompt": "Change to an indirect question with <I have no idea>",
+    "source": "How long has he been waiting?",
+    "correct": [
+      "I have no idea how long he has been waiting."
+    ],
+    "explanation": "Indirect: <how long he has been waiting> (no inversion of <has>)."
+  },
+  {
+    "prompt": "Change to an indirect question with <Could you explain>",
+    "source": "Why is this word underlined?",
+    "correct": [
+      "Could you explain why this word is underlined?"
+    ],
+    "explanation": "Indirect: <why this word is underlined> (statement order)."
+  },
+  {
+    "prompt": "Change to a direct question",
+    "source": "I was wondering if you could help me.",
+    "correct": [
+      "Could you help me?",
+      "Can you help me?"
+    ],
+    "explanation": "Direct request: modal + subject + base verb."
+  },
+  {
+    "prompt": "Change to an indirect question with <I don't remember>",
+    "source": "What did he say?",
+    "correct": [
+      "I don't remember what he said."
+    ],
+    "explanation": "Indirect: remove <did>, use past simple. <What he said>."
+  },
+  {
+    "prompt": "Change to an indirect question with <Do you know>",
+    "source": "Has the meeting been cancelled?",
+    "correct": [
+      "Do you know if the meeting has been cancelled?",
+      "Do you know whether the meeting has been cancelled?"
+    ],
+    "explanation": "Indirect yes/no: <if/whether> + subject + auxiliary. <If the meeting has been...>"
+  },
+  {
+    "prompt": "Change to an indirect question with <I wonder>",
+    "source": "What will happen next?",
+    "correct": [
+      "I wonder what will happen next."
+    ],
+    "hint": "When <what> is the subject, order stays the same",
+    "explanation": "When the question word is the subject, word order doesn't change in indirect form."
+  },
+  {
+    "prompt": "Change to a direct question",
+    "source": "Can you tell me how much this costs?",
+    "correct": [
+      "How much does this cost?"
+    ],
+    "explanation": "Direct: <How much does this cost?> with auxiliary inversion."
+  },
+  {
+    "prompt": "Change to an indirect question with <I'd like to find out>",
+    "source": "Where can I park my car?",
+    "correct": [
+      "I'd like to find out where I can park my car."
+    ],
+    "explanation": "Indirect: <where I can park> (subject before modal)."
+  },
+  {
+    "prompt": "Change to a direct question",
+    "source": "Do you have any idea what time it starts?",
+    "correct": [
+      "What time does it start?"
+    ],
+    "explanation": "Direct: <What time does it start?> with <does> + base form."
+  },
+  {
+    "prompt": "Change to an indirect question with <I'm curious>",
+    "source": "How often do you exercise?",
+    "correct": [
+      "I'm curious how often you exercise.",
+      "I'm curious about how often you exercise."
+    ],
+    "explanation": "Indirect: <how often you exercise> (remove <do>, keep base form)."
+  },
+  {
+    "prompt": "Change to an indirect question with <Nobody knows>",
+    "source": "Where did the money go?",
+    "correct": [
+      "Nobody knows where the money went."
+    ],
+    "explanation": "Indirect: remove <did>, use past simple. <Where the money went>."
+  },
+  {
+    "prompt": "Change to a direct question",
+    "source": "I can't remember whether he was there or not.",
+    "correct": [
+      "Was he there?"
+    ],
+    "explanation": "Direct yes/no: auxiliary + subject. <Was he there?>"
+  }
+]

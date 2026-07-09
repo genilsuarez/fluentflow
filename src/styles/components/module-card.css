@@ -1004,3 +1004,17 @@ html.dark .module-card--current:hover {
     linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%),
     linear-gradient(135deg, #0e7490 0%, #155e75 100%);
 }
+
+/* === REORDERING MODE CARDS === */
+.module-card--reordering {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(135deg, #64748b 0%, #475569 100%);
+  color: #ffffff;
+}
+
+.module-card--reordering:hover {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(135deg, #475569 0%, #334155 100%);
+}

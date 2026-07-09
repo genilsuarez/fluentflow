@@ -4,7 +4,9 @@
     "name": "Greetings & Introductions",
     "learningMode": "reading",
     "dataPath": "data/a1/a1-reading-greetings.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Reading",
     "prerequisites": [],
     "description": "Learn basic greetings and how to introduce yourself",
@@ -16,9 +18,13 @@
     "name": "Greetings Practice",
     "learningMode": "completion",
     "dataPath": "data/a1/a1-completion-greetings-practice.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["reading-greetings-a1"],
+    "prerequisites": [
+      "reading-greetings-a1"
+    ],
     "description": "Complete dialogues with greetings and introductions",
     "estimatedTime": 5,
     "difficulty": 1
@@ -28,9 +34,13 @@
     "name": "Basic Vocabulary",
     "learningMode": "flashcard",
     "dataPath": "data/a1/a1-flashcard-basic-vocabulary.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["completion-greetings-practice-a1"],
+    "prerequisites": [
+      "completion-greetings-practice-a1"
+    ],
     "description": "Essential everyday vocabulary for beginners",
     "estimatedTime": 3,
     "difficulty": 1
@@ -40,9 +50,13 @@
     "name": "Basic Vocabulary Quiz",
     "learningMode": "quiz",
     "dataPath": "data/a1/a1-quiz-basic-vocabulary.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["flashcard-basic-vocabulary-a1"],
+    "prerequisites": [
+      "flashcard-basic-vocabulary-a1"
+    ],
     "description": "Test your knowledge of basic English vocabulary",
     "estimatedTime": 5,
     "difficulty": 1
@@ -52,9 +66,13 @@
     "name": "Common Verbs",
     "learningMode": "matching",
     "dataPath": "data/a1/a1-matching-common-verbs.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["quiz-basic-vocabulary-a1"],
+    "prerequisites": [
+      "quiz-basic-vocabulary-a1"
+    ],
     "description": "Match common English verbs with Spanish translations",
     "estimatedTime": 3,
     "difficulty": 1
@@ -64,9 +82,13 @@
     "name": "Daily Life Reading",
     "learningMode": "reading",
     "dataPath": "data/a1/a1-reading-daily-life.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Reading",
-    "prerequisites": ["matching-common-verbs-a1"],
+    "prerequisites": [
+      "matching-common-verbs-a1"
+    ],
     "description": "Daily routines and activities vocabulary",
     "estimatedTime": 7,
     "difficulty": 1
@@ -76,9 +98,13 @@
     "name": "Word Categories",
     "learningMode": "sorting",
     "dataPath": "data/a1/a1-sorting-word-categories.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["reading-daily-life-a1"],
+    "prerequisites": [
+      "reading-daily-life-a1"
+    ],
     "description": "Sort words into categories: Animals, Food, Colors, Days, Months",
     "estimatedTime": 3,
     "difficulty": 1
@@ -88,21 +114,29 @@
     "name": "Everyday Life",
     "learningMode": "flashcard",
     "dataPath": "data/a1/a1-flashcard-everyday-life.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Vocabulary",
     "description": "Family, body parts, clothes, weather, home rooms and classroom vocabulary (40 words)",
     "estimatedTime": 3,
     "difficulty": 1,
-    "prerequisites": ["sorting-word-categories-a1"]
+    "prerequisites": [
+      "sorting-word-categories-a1"
+    ]
   },
   {
     "id": "quiz-everyday-life-a1",
     "name": "Everyday Life Quiz",
     "learningMode": "quiz",
     "dataPath": "data/a1/a1-quiz-everyday-life.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["flashcard-everyday-life-a1"],
+    "prerequisites": [
+      "flashcard-everyday-life-a1"
+    ],
     "description": "Test your knowledge of everyday life vocabulary",
     "estimatedTime": 5,
     "difficulty": 1
@@ -112,9 +146,13 @@
     "name": "Travel Reading",
     "learningMode": "reading",
     "dataPath": "data/a1/a1-reading-travel.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Reading",
-    "prerequisites": ["quiz-everyday-life-a1"],
+    "prerequisites": [
+      "quiz-everyday-life-a1"
+    ],
     "description": "Essential travel vocabulary and phrases",
     "estimatedTime": 7,
     "difficulty": 1
@@ -124,9 +162,13 @@
     "name": "Basic Grammar",
     "learningMode": "matching",
     "dataPath": "data/a1/a1-matching-basic-grammar.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["reading-travel-a1"],
+    "prerequisites": [
+      "reading-travel-a1"
+    ],
     "description": "Fundamental grammar concepts and structures",
     "estimatedTime": 3,
     "difficulty": 1
@@ -136,9 +178,13 @@
     "name": "Numbers & Quantities",
     "learningMode": "matching",
     "dataPath": "data/a1/a1-matching-numbers-quantities.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["matching-basic-grammar-a1"],
+    "prerequisites": [
+      "matching-basic-grammar-a1"
+    ],
     "description": "Numbers, quantities and basic measurements",
     "estimatedTime": 3,
     "difficulty": 1
@@ -148,9 +194,13 @@
     "name": "Basic Sentences",
     "learningMode": "completion",
     "dataPath": "data/a1/a1-completion-basic-sentences.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["matching-numbers-quantities-a1"],
+    "prerequisites": [
+      "matching-numbers-quantities-a1"
+    ],
     "description": "Simple sentence completion exercises",
     "estimatedTime": 5,
     "difficulty": 1
@@ -160,9 +210,13 @@
     "name": "Verb Tenses",
     "learningMode": "sorting",
     "dataPath": "data/a1/a1-sorting-verb-tenses.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["completion-basic-sentences-a1"],
+    "prerequisites": [
+      "completion-basic-sentences-a1"
+    ],
     "description": "Sort verbs by tense: present, past, future",
     "estimatedTime": 3,
     "difficulty": 1
@@ -172,9 +226,13 @@
     "name": "Phrasal Verbs in Everyday Life",
     "learningMode": "reading",
     "dataPath": "data/a1/a1-reading-phrasal-verbs.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["sorting-verb-tenses-a1"],
+    "prerequisites": [
+      "sorting-verb-tenses-a1"
+    ],
     "description": "Learn basic phrasal verbs through everyday stories and examples",
     "estimatedTime": 7,
     "difficulty": 1
@@ -184,9 +242,13 @@
     "name": "Basic Phrasal Verbs",
     "learningMode": "matching",
     "dataPath": "data/a1/a1-matching-basic-phrasal-verbs.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["reading-phrasal-verbs-a1"],
+    "prerequisites": [
+      "reading-phrasal-verbs-a1"
+    ],
     "description": "Match basic phrasal verbs with Spanish translations",
     "estimatedTime": 3,
     "difficulty": 1
@@ -196,9 +258,13 @@
     "name": "Basic Phrasal Verbs Practice",
     "learningMode": "completion",
     "dataPath": "data/a1/a1-completion-basic-phrasal-verbs.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["matching-basic-phrasal-verbs-a1"],
+    "prerequisites": [
+      "matching-basic-phrasal-verbs-a1"
+    ],
     "description": "Complete sentences with basic phrasal verbs (20 items)",
     "estimatedTime": 5,
     "difficulty": 1
@@ -208,9 +274,13 @@
     "name": "A1 Phrasal Verbs Quiz",
     "learningMode": "quiz",
     "dataPath": "data/a1/a1-quiz-phrasal-verbs.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["completion-basic-phrasal-verbs-a1"],
+    "prerequisites": [
+      "completion-basic-phrasal-verbs-a1"
+    ],
     "description": "Test your knowledge of basic phrasal verbs",
     "estimatedTime": 5,
     "difficulty": 1
@@ -220,9 +290,13 @@
     "name": "Common Idioms in Daily Life",
     "learningMode": "reading",
     "dataPath": "data/a1/a1-reading-idioms.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Idioms",
-    "prerequisites": ["quiz-phrasal-verbs-a1"],
+    "prerequisites": [
+      "quiz-phrasal-verbs-a1"
+    ],
     "description": "Discover common English idioms through simple stories",
     "estimatedTime": 7,
     "difficulty": 1
@@ -232,9 +306,13 @@
     "name": "Basic Idioms Flashcards",
     "learningMode": "flashcard",
     "dataPath": "data/a1/a1-flashcard-basic-idioms.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Idioms",
-    "prerequisites": ["reading-idioms-a1"],
+    "prerequisites": [
+      "reading-idioms-a1"
+    ],
     "description": "Learn common English idioms with Spanish translations (20 idioms)",
     "estimatedTime": 3,
     "difficulty": 1
@@ -244,9 +322,13 @@
     "name": "Basic Idioms",
     "learningMode": "quiz",
     "dataPath": "data/a1/a1-quiz-basic-idioms.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Idioms",
-    "prerequisites": ["flashcard-basic-idioms-a1"],
+    "prerequisites": [
+      "flashcard-basic-idioms-a1"
+    ],
     "description": "Common English idioms for beginners (20 idioms)",
     "estimatedTime": 5,
     "difficulty": 1
@@ -256,9 +338,13 @@
     "name": "Daily Life Vocabulary",
     "learningMode": "flashcard",
     "dataPath": "data/a1/a1-flashcard-daily-life-vocab.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["quiz-basic-idioms-a1"],
+    "prerequisites": [
+      "quiz-basic-idioms-a1"
+    ],
     "description": "Essential daily routines and activities vocabulary (20 words)",
     "estimatedTime": 3,
     "difficulty": 1
@@ -268,9 +354,13 @@
     "name": "Daily Life Vocabulary Quiz",
     "learningMode": "quiz",
     "dataPath": "data/a1/a1-quiz-daily-life-vocab.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["flashcard-daily-life-vocab-a1"],
+    "prerequisites": [
+      "flashcard-daily-life-vocab-a1"
+    ],
     "description": "Test your knowledge of daily life vocabulary",
     "estimatedTime": 5,
     "difficulty": 1
@@ -280,9 +370,13 @@
     "name": "Everyday Expressions Practice",
     "learningMode": "completion",
     "dataPath": "data/a1/a1-completion-everyday-expressions.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["quiz-daily-life-vocab-a1"],
+    "prerequisites": [
+      "quiz-daily-life-vocab-a1"
+    ],
     "description": "Complete sentences with everyday expressions, phrasal verbs and idioms",
     "estimatedTime": 5,
     "difficulty": 1
@@ -292,21 +386,29 @@
     "name": "Expressions by Type",
     "learningMode": "sorting",
     "dataPath": "data/a1/a1-sorting-expressions-type.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Vocabulary",
     "description": "Sort expressions into categories: Phrasal Verbs, Idioms, Greetings, Polite Expressions",
     "estimatedTime": 3,
     "difficulty": 1,
-    "prerequisites": ["completion-everyday-expressions-a1"]
+    "prerequisites": [
+      "completion-everyday-expressions-a1"
+    ]
   },
   {
     "id": "reordering-basic-sentences-a1",
     "name": "Basic Sentence Order",
     "learningMode": "reordering",
     "dataPath": "data/a1/a1-reordering-basic-sentences.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["sorting-expressions-type-a1"],
+    "prerequisites": [
+      "sorting-expressions-type-a1"
+    ],
     "description": "Practice basic English word order",
     "estimatedTime": 3,
     "difficulty": 1
@@ -316,9 +418,13 @@
     "name": "Questions & Negatives",
     "learningMode": "reordering",
     "dataPath": "data/a1/a1-reordering-questions-negatives.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["reordering-phrasal-verbs-a1"],
+    "prerequisites": [
+      "reordering-phrasal-verbs-a1"
+    ],
     "description": "Practice forming questions and negative sentences in English",
     "estimatedTime": 3,
     "difficulty": 1
@@ -328,9 +434,13 @@
     "name": "A1 Phrasal Verbs Word Order",
     "learningMode": "reordering",
     "dataPath": "data/a1/a1-reordering-phrasal-verbs.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["reordering-basic-sentences-a1"],
+    "prerequisites": [
+      "reordering-basic-sentences-a1"
+    ],
     "description": "Practice word order with basic phrasal verbs",
     "estimatedTime": 3,
     "difficulty": 1
@@ -340,9 +450,13 @@
     "name": "A1 Idioms Word Order",
     "learningMode": "reordering",
     "dataPath": "data/a1/a1-reordering-idioms.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Idioms",
-    "prerequisites": ["reordering-questions-negatives-a1"],
+    "prerequisites": [
+      "reordering-questions-negatives-a1"
+    ],
     "description": "Practice word order with common English idioms",
     "estimatedTime": 3,
     "difficulty": 1
@@ -352,9 +466,13 @@
     "name": "Daily Routines Transformations",
     "learningMode": "transformation",
     "dataPath": "data/a1/a1-transformation-daily-routines.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["reordering-idioms-a1"],
+    "prerequisites": [
+      "reordering-idioms-a1"
+    ],
     "description": "Transform daily routine sentences: negatives, questions, past tense",
     "estimatedTime": 4,
     "difficulty": 1
@@ -364,9 +482,13 @@
     "name": "Fix Basic Phrasal Verb Errors",
     "learningMode": "error-correction",
     "dataPath": "data/a1/a1-error-correction-basic-phrasal-verbs.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["transformation-daily-routines-a1"],
+    "prerequisites": [
+      "transformation-daily-routines-a1"
+    ],
     "description": "Find and correct errors in sentences with basic phrasal verbs",
     "estimatedTime": 4,
     "difficulty": 1
@@ -376,9 +498,13 @@
     "name": "Listening Quiz: Basics",
     "learningMode": "listening-quiz",
     "dataPath": "data/a1/a1-listening-quiz-basic.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["sorting-articles-usage-a1"],
+    "prerequisites": [
+      "sorting-articles-usage-a1"
+    ],
     "description": "Listen to questions via TTS and choose the correct answer (no text shown)",
     "estimatedTime": 4,
     "difficulty": 1
@@ -388,9 +514,13 @@
     "name": "Dictation: Basic Sentences",
     "learningMode": "dictation",
     "dataPath": "data/a1/a1-dictation-basic.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["listening-quiz-basic-a1"],
+    "prerequisites": [
+      "listening-quiz-basic-a1"
+    ],
     "description": "Listen to simple sentences and type exactly what you hear",
     "estimatedTime": 5,
     "difficulty": 1
@@ -400,9 +530,13 @@
     "name": "Articles: Basics (a/an/the/∅)",
     "learningMode": "completion",
     "dataPath": "data/a1/a1-completion-articles-basics.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["sorting-phrasal-verbs-particle-a1"],
+    "prerequisites": [
+      "sorting-phrasal-verbs-particle-a1"
+    ],
     "description": "Choose the correct article (a, an, the, or no article) in everyday sentences. Drill more in HubFlow → Articles.",
     "estimatedTime": 5,
     "difficulty": 1
@@ -412,9 +546,13 @@
     "name": "Articles: Sort by Rule",
     "learningMode": "sorting",
     "dataPath": "data/a1/a1-sorting-articles-usage.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["completion-articles-basics-a1"],
+    "prerequisites": [
+      "completion-articles-basics-a1"
+    ],
     "description": "Sort expressions into article categories: a/an, the, or no article",
     "estimatedTime": 3,
     "difficulty": 1
@@ -424,9 +562,13 @@
     "name": "A1 Review Practice",
     "learningMode": "completion",
     "dataPath": "data/a1/a1-completion-review.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Review",
-    "prerequisites": ["sorting-articles-usage-a1"],
+    "prerequisites": [
+      "sorting-articles-usage-a1"
+    ],
     "description": "Practice phrasal verbs, idioms, word formation and transformations from A1",
     "estimatedTime": 5,
     "difficulty": 1
@@ -436,9 +578,13 @@
     "name": "Basic Review",
     "learningMode": "quiz",
     "dataPath": "data/a1/a1-quiz-basic-review.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Review",
-    "prerequisites": ["completion-review-a1"],
+    "prerequisites": [
+      "completion-review-a1"
+    ],
     "description": "Comprehensive review of A1 level concepts",
     "estimatedTime": 5,
     "difficulty": 1
@@ -448,9 +594,13 @@
     "name": "Business Reading",
     "learningMode": "reading",
     "dataPath": "data/a2/a2-reading-business.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Reading",
-    "prerequisites": ["quiz-basic-review-a1"],
+    "prerequisites": [
+      "quiz-basic-review-a1"
+    ],
     "description": "Introduction to business English concepts and vocabulary",
     "estimatedTime": 7,
     "difficulty": 2
@@ -460,9 +610,13 @@
     "name": "Time Expressions",
     "learningMode": "matching",
     "dataPath": "data/a2/a2-matching-time-expressions.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["reading-business-a2"],
+    "prerequisites": [
+      "reading-business-a2"
+    ],
     "description": "Time expressions and temporal phrases",
     "estimatedTime": 3,
     "difficulty": 2
@@ -472,9 +626,13 @@
     "name": "Culture Reading",
     "learningMode": "reading",
     "dataPath": "data/a2/a2-reading-culture.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Reading",
-    "prerequisites": ["matching-time-expressions-a2"],
+    "prerequisites": [
+      "matching-time-expressions-a2"
+    ],
     "description": "Understanding English-speaking cultures and customs",
     "estimatedTime": 7,
     "difficulty": 2
@@ -484,9 +642,13 @@
     "name": "Family",
     "learningMode": "flashcard",
     "dataPath": "data/a2/a2-flashcard-family.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["reading-culture-a2"],
+    "prerequisites": [
+      "reading-culture-a2"
+    ],
     "description": "Family members and relationships vocabulary",
     "estimatedTime": 3,
     "difficulty": 2
@@ -496,9 +658,13 @@
     "name": "Technology Reading",
     "learningMode": "reading",
     "dataPath": "data/a2/a2-reading-technology.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Reading",
-    "prerequisites": ["flashcard-family-a2"],
+    "prerequisites": [
+      "flashcard-family-a2"
+    ],
     "description": "Technology and digital communication vocabulary",
     "estimatedTime": 7,
     "difficulty": 2
@@ -508,9 +674,13 @@
     "name": "Home",
     "learningMode": "flashcard",
     "dataPath": "data/a2/a2-flashcard-home.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["reading-technology-a2"],
+    "prerequisites": [
+      "reading-technology-a2"
+    ],
     "description": "Home, furniture and household items",
     "estimatedTime": 3,
     "difficulty": 2
@@ -520,9 +690,13 @@
     "name": "Family & Home Quiz",
     "learningMode": "quiz",
     "dataPath": "data/a2/a2-quiz-family-home.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["flashcard-home-a2"],
+    "prerequisites": [
+      "flashcard-home-a2"
+    ],
     "description": "Test your knowledge of family and home vocabulary",
     "estimatedTime": 5,
     "difficulty": 2
@@ -532,9 +706,13 @@
     "name": "Health Reading",
     "learningMode": "reading",
     "dataPath": "data/a2/a2-reading-health.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Reading",
-    "prerequisites": ["quiz-family-home-a2"],
+    "prerequisites": [
+      "quiz-family-home-a2"
+    ],
     "description": "Health, wellness, and medical vocabulary",
     "estimatedTime": 7,
     "difficulty": 2
@@ -544,9 +722,13 @@
     "name": "Culture & Health Vocabulary",
     "learningMode": "flashcard",
     "dataPath": "data/a2/a2-flashcard-culture-health-vocab.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["reading-health-a2"],
+    "prerequisites": [
+      "reading-health-a2"
+    ],
     "description": "Culture, health and technology vocabulary (20 words)",
     "estimatedTime": 3,
     "difficulty": 2
@@ -556,9 +738,13 @@
     "name": "Culture & Health Quiz",
     "learningMode": "quiz",
     "dataPath": "data/a2/a2-quiz-culture-health-vocab.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["flashcard-culture-health-vocab-a2"],
+    "prerequisites": [
+      "flashcard-culture-health-vocab-a2"
+    ],
     "description": "Test your knowledge of culture, health and technology vocabulary",
     "estimatedTime": 5,
     "difficulty": 2
@@ -568,9 +754,13 @@
     "name": "A2 Reading Vocabulary Practice",
     "learningMode": "completion",
     "dataPath": "data/a2/a2-completion-reading-vocab.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["quiz-culture-health-vocab-a2"],
+    "prerequisites": [
+      "quiz-culture-health-vocab-a2"
+    ],
     "description": "Complete sentences reinforcing reading vocabulary",
     "estimatedTime": 5,
     "difficulty": 2
@@ -580,21 +770,29 @@
     "name": "Daily Activities & Feelings",
     "learningMode": "flashcard",
     "dataPath": "data/a2/a2-flashcard-daily-activities.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Vocabulary",
     "description": "Hobbies, sports, shopping, jobs, feelings, and transport vocabulary (40 words)",
     "estimatedTime": 3,
     "difficulty": 2,
-    "prerequisites": ["completion-reading-vocab-a2"]
+    "prerequisites": [
+      "completion-reading-vocab-a2"
+    ]
   },
   {
     "id": "completion-daily-activities-a2",
     "name": "Daily Activities Practice",
     "learningMode": "completion",
     "dataPath": "data/a2/a2-completion-daily-activities.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["flashcard-daily-activities-a2"],
+    "prerequisites": [
+      "flashcard-daily-activities-a2"
+    ],
     "description": "Complete sentences using daily activities vocabulary",
     "estimatedTime": 5,
     "difficulty": 2
@@ -604,9 +802,13 @@
     "name": "Past Tense",
     "learningMode": "sorting",
     "dataPath": "data/a2/a2-sorting-past-tense.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["completion-daily-activities-a2"],
+    "prerequisites": [
+      "completion-daily-activities-a2"
+    ],
     "description": "Regular and irregular past tense verbs",
     "estimatedTime": 3,
     "difficulty": 2
@@ -616,9 +818,13 @@
     "name": "Be vs Go",
     "learningMode": "reading",
     "dataPath": "data/a2/a2-reading-be-vs-go.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["sorting-past-tense-a2"],
+    "prerequisites": [
+      "sorting-past-tense-a2"
+    ],
     "description": "Learn when to use be (location/state) vs go (movement/activities)",
     "estimatedTime": 6,
     "difficulty": 2
@@ -628,9 +834,13 @@
     "name": "Be vs Go",
     "learningMode": "quiz",
     "dataPath": "data/a2/a2-quiz-be-vs-go.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["reading-be-vs-go-a2"],
+    "prerequisites": [
+      "reading-be-vs-go-a2"
+    ],
     "description": "Test your understanding of be vs go usage",
     "estimatedTime": 5,
     "difficulty": 2
@@ -640,9 +850,13 @@
     "name": "Be vs Go",
     "learningMode": "matching",
     "dataPath": "data/a2/a2-matching-be-vs-go.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["quiz-be-vs-go-a2"],
+    "prerequisites": [
+      "quiz-be-vs-go-a2"
+    ],
     "description": "Match be and go sentences with their Spanish translations",
     "estimatedTime": 3,
     "difficulty": 2
@@ -652,9 +866,13 @@
     "name": "Past Stories",
     "learningMode": "completion",
     "dataPath": "data/a2/a2-completion-past-stories.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["matching-be-vs-go-a2"],
+    "prerequisites": [
+      "matching-be-vs-go-a2"
+    ],
     "description": "Complete stories using past tense",
     "estimatedTime": 5,
     "difficulty": 2
@@ -664,9 +882,13 @@
     "name": "Past Tense Word Order",
     "learningMode": "reordering",
     "dataPath": "data/a2/a2-reordering-past-tense.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["completion-past-stories-a2"],
+    "prerequisites": [
+      "completion-past-stories-a2"
+    ],
     "description": "Reorder sentences using past simple with regular and irregular verbs",
     "estimatedTime": 3,
     "difficulty": 2
@@ -676,9 +898,13 @@
     "name": "Comparatives & Superlatives",
     "learningMode": "completion",
     "dataPath": "data/a2/a2-completion-comparatives-superlatives.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["reordering-past-tense-a2"],
+    "prerequisites": [
+      "reordering-past-tense-a2"
+    ],
     "description": "Comparative and superlative forms",
     "estimatedTime": 5,
     "difficulty": 2
@@ -688,9 +914,13 @@
     "name": "Comparatives & Superlatives Word Order",
     "learningMode": "reordering",
     "dataPath": "data/a2/a2-reordering-comparatives.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["completion-comparatives-superlatives-a2"],
+    "prerequisites": [
+      "completion-comparatives-superlatives-a2"
+    ],
     "description": "Reorder sentences with comparative and superlative structures",
     "estimatedTime": 3,
     "difficulty": 2
@@ -700,9 +930,13 @@
     "name": "Present Perfect",
     "learningMode": "completion",
     "dataPath": "data/a2/a2-completion-present-perfect.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["reordering-comparatives-a2"],
+    "prerequisites": [
+      "reordering-comparatives-a2"
+    ],
     "description": "Present Perfect Simple for experiences and recent actions",
     "estimatedTime": 5,
     "difficulty": 2
@@ -712,9 +946,13 @@
     "name": "Present Perfect Word Order",
     "learningMode": "reordering",
     "dataPath": "data/a2/a2-reordering-present-perfect.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["completion-present-perfect-a2"],
+    "prerequisites": [
+      "completion-present-perfect-a2"
+    ],
     "description": "Reorder sentences with present perfect and adverb placement",
     "estimatedTime": 3,
     "difficulty": 2
@@ -724,9 +962,13 @@
     "name": "Phrasal Verbs in Daily Situations",
     "learningMode": "reading",
     "dataPath": "data/a2/a2-reading-phrasal-verbs.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["reordering-present-perfect-a2"],
+    "prerequisites": [
+      "reordering-present-perfect-a2"
+    ],
     "description": "Learn phrasal verbs used in work, shopping and social situations",
     "estimatedTime": 7,
     "difficulty": 2
@@ -736,9 +978,13 @@
     "name": "Elementary Phrasal Verbs",
     "learningMode": "matching",
     "dataPath": "data/a2/a2-matching-elementary-phrasal-verbs.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["reading-phrasal-verbs-a2"],
+    "prerequisites": [
+      "reading-phrasal-verbs-a2"
+    ],
     "description": "Match elementary phrasal verbs with Spanish translations (25 pairs)",
     "estimatedTime": 3,
     "difficulty": 2
@@ -748,9 +994,13 @@
     "name": "Elementary Phrasal Verbs Practice",
     "learningMode": "completion",
     "dataPath": "data/a2/a2-completion-elementary-phrasal-verbs.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["matching-elementary-phrasal-verbs-a2"],
+    "prerequisites": [
+      "matching-elementary-phrasal-verbs-a2"
+    ],
     "description": "Complete sentences with elementary phrasal verbs (20 items)",
     "estimatedTime": 5,
     "difficulty": 2
@@ -760,9 +1010,13 @@
     "name": "A2 Phrasal Verbs Word Order",
     "learningMode": "reordering",
     "dataPath": "data/a2/a2-reordering-phrasal-verbs.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["completion-elementary-phrasal-verbs-a2"],
+    "prerequisites": [
+      "completion-elementary-phrasal-verbs-a2"
+    ],
     "description": "Reorder sentences with elementary phrasal verbs",
     "estimatedTime": 3,
     "difficulty": 2
@@ -772,9 +1026,13 @@
     "name": "Idioms for Everyday Conversations",
     "learningMode": "reading",
     "dataPath": "data/a2/a2-reading-idioms.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Idioms",
-    "prerequisites": ["reordering-phrasal-verbs-a2"],
+    "prerequisites": [
+      "reordering-phrasal-verbs-a2"
+    ],
     "description": "Discover idioms about feelings, time and common situations",
     "estimatedTime": 7,
     "difficulty": 2
@@ -784,9 +1042,13 @@
     "name": "Elementary Idioms Flashcards",
     "learningMode": "flashcard",
     "dataPath": "data/a2/a2-flashcard-elementary-idioms.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Idioms",
-    "prerequisites": ["reading-idioms-a2"],
+    "prerequisites": [
+      "reading-idioms-a2"
+    ],
     "description": "Common English idioms for elementary learners (20 idioms)",
     "estimatedTime": 3,
     "difficulty": 2
@@ -796,9 +1058,13 @@
     "name": "Elementary Idioms",
     "learningMode": "quiz",
     "dataPath": "data/a2/a2-quiz-elementary-idioms.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Idioms",
-    "prerequisites": ["flashcard-elementary-idioms-a2"],
+    "prerequisites": [
+      "flashcard-elementary-idioms-a2"
+    ],
     "description": "Common English idioms for elementary learners (20 idioms)",
     "estimatedTime": 5,
     "difficulty": 2
@@ -808,9 +1074,13 @@
     "name": "A2 Idioms Word Order",
     "learningMode": "reordering",
     "dataPath": "data/a2/a2-reordering-idioms.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Idioms",
-    "prerequisites": ["quiz-elementary-idioms-a2"],
+    "prerequisites": [
+      "quiz-elementary-idioms-a2"
+    ],
     "description": "Reorder sentences with common English idioms",
     "estimatedTime": 3,
     "difficulty": 2
@@ -820,21 +1090,29 @@
     "name": "Vocabulary by Context",
     "learningMode": "sorting",
     "dataPath": "data/a2/a2-sorting-vocabulary-context.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Vocabulary",
     "description": "Sort vocabulary into contexts: Home, Health, Technology, Work",
     "estimatedTime": 3,
     "difficulty": 2,
-    "prerequisites": ["reordering-idioms-a2"]
+    "prerequisites": [
+      "reordering-idioms-a2"
+    ]
   },
   {
     "id": "completion-articles-advanced-a2",
     "name": "Articles: Advanced Usage",
     "learningMode": "completion",
     "dataPath": "data/a2/a2-completion-articles-advanced.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["matching-elementary-idioms-a2"],
+    "prerequisites": [
+      "matching-elementary-idioms-a2"
+    ],
     "description": "Choose correct articles in complex contexts: geographic names, superlatives, fixed expressions, zero article",
     "estimatedTime": 5,
     "difficulty": 2
@@ -844,9 +1122,13 @@
     "name": "Articles: Sort by Category",
     "learningMode": "sorting",
     "dataPath": "data/a2/a2-sorting-articles-rules.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["completion-articles-advanced-a2"],
+    "prerequisites": [
+      "completion-articles-advanced-a2"
+    ],
     "description": "Sort phrases by article rule: professions, superlatives, geographic names, fixed expressions",
     "estimatedTime": 3,
     "difficulty": 2
@@ -856,9 +1138,13 @@
     "name": "Listen & Complete: Daily Life",
     "learningMode": "listen-complete",
     "dataPath": "data/a2/a2-listen-complete-daily.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["sorting-articles-rules-a2"],
+    "prerequisites": [
+      "sorting-articles-rules-a2"
+    ],
     "description": "Listen to a sentence via TTS, then fill in the missing word",
     "estimatedTime": 5,
     "difficulty": 2
@@ -868,9 +1154,13 @@
     "name": "Dictation: Everyday English",
     "learningMode": "dictation",
     "dataPath": "data/a2/a2-dictation-everyday.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["listen-complete-daily-a2"],
+    "prerequisites": [
+      "listen-complete-daily-a2"
+    ],
     "description": "Listen to sentences and type exactly what you hear — daily routines, past tense, offers",
     "estimatedTime": 5,
     "difficulty": 2
@@ -880,9 +1170,13 @@
     "name": "Question Tags",
     "learningMode": "completion",
     "dataPath": "data/a2/a2-completion-question-tags.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["sorting-articles-rules-a2"],
+    "prerequisites": [
+      "sorting-articles-rules-a2"
+    ],
     "description": "Complete sentences with the correct question tag: aren't you, doesn't she, etc.",
     "estimatedTime": 5,
     "difficulty": 2
@@ -892,9 +1186,13 @@
     "name": "Minimal Pairs & Phonics",
     "learningMode": "quiz",
     "dataPath": "data/a2/a2-quiz-minimal-pairs.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["completion-question-tags-a2"],
+    "prerequisites": [
+      "completion-question-tags-a2"
+    ],
     "description": "Identify vowel sounds, consonant pairs, and phonetic differences between similar words",
     "estimatedTime": 5,
     "difficulty": 2
@@ -904,9 +1202,13 @@
     "name": "A2 Review Practice",
     "learningMode": "completion",
     "dataPath": "data/a2/a2-completion-review.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Review",
-    "prerequisites": ["quiz-minimal-pairs-a2"],
+    "prerequisites": [
+      "quiz-minimal-pairs-a2"
+    ],
     "description": "Practice phrasal verbs, transformations, error correction and word formation from A2",
     "estimatedTime": 5,
     "difficulty": 2
@@ -916,9 +1218,13 @@
     "name": "Elementary Review",
     "learningMode": "quiz",
     "dataPath": "data/a2/a2-quiz-elementary-review.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Review",
-    "prerequisites": ["completion-review-a2"],
+    "prerequisites": [
+      "completion-review-a2"
+    ],
     "description": "Comprehensive review of A2 level concepts",
     "estimatedTime": 5,
     "difficulty": 2
@@ -928,9 +1234,13 @@
     "name": "Education Reading",
     "learningMode": "reading",
     "dataPath": "data/b1/b1-reading-education.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Reading",
-    "prerequisites": ["quiz-elementary-review-a2"],
+    "prerequisites": [
+      "quiz-elementary-review-a2"
+    ],
     "description": "Education systems and academic vocabulary",
     "estimatedTime": 7,
     "difficulty": 3
@@ -940,9 +1250,13 @@
     "name": "Travel & Leisure",
     "learningMode": "flashcard",
     "dataPath": "data/b1/b1-flashcard-travel-leisure.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["reading-education-b1"],
+    "prerequisites": [
+      "reading-education-b1"
+    ],
     "description": "Travel, leisure and vacation vocabulary",
     "estimatedTime": 3,
     "difficulty": 3
@@ -952,9 +1266,13 @@
     "name": "Travel & Leisure Quiz",
     "learningMode": "quiz",
     "dataPath": "data/b1/b1-quiz-travel-leisure.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["flashcard-travel-leisure-b1"],
+    "prerequisites": [
+      "flashcard-travel-leisure-b1"
+    ],
     "description": "Test your knowledge of travel and leisure vocabulary",
     "estimatedTime": 5,
     "difficulty": 3
@@ -964,9 +1282,13 @@
     "name": "Environment Reading",
     "learningMode": "reading",
     "dataPath": "data/b1/b1-reading-environment.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Reading",
-    "prerequisites": ["quiz-travel-leisure-b1"],
+    "prerequisites": [
+      "quiz-travel-leisure-b1"
+    ],
     "description": "Environmental issues and sustainability",
     "estimatedTime": 7,
     "difficulty": 3
@@ -976,9 +1298,13 @@
     "name": "Modal Verbs",
     "learningMode": "sorting",
     "dataPath": "data/b1/b1-sorting-modal-verbs.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["reading-environment-b1"],
+    "prerequisites": [
+      "reading-environment-b1"
+    ],
     "description": "Modal verbs and their uses",
     "estimatedTime": 3,
     "difficulty": 3
@@ -988,9 +1314,13 @@
     "name": "Basic Prepositions",
     "learningMode": "sorting",
     "dataPath": "data/b1/b1-sorting-prepositions.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["reading-social-media-b1"],
+    "prerequisites": [
+      "reading-social-media-b1"
+    ],
     "description": "Prepositions of place, time and movement",
     "estimatedTime": 3,
     "difficulty": 3
@@ -1000,9 +1330,13 @@
     "name": "Social Media Reading",
     "learningMode": "reading",
     "dataPath": "data/b1/b1-reading-social-media.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Reading",
-    "prerequisites": ["sorting-modal-verbs-b1"],
+    "prerequisites": [
+      "sorting-modal-verbs-b1"
+    ],
     "description": "Social media and modern communication",
     "estimatedTime": 7,
     "difficulty": 3
@@ -1012,21 +1346,29 @@
     "name": "Work & Career",
     "learningMode": "flashcard",
     "dataPath": "data/b1/b1-flashcard-work-career.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Vocabulary",
     "description": "Essential work, career, and professional vocabulary (40 words)",
     "estimatedTime": 3,
     "difficulty": 3,
-    "prerequisites": ["sorting-prepositions-b1"]
+    "prerequisites": [
+      "sorting-prepositions-b1"
+    ]
   },
   {
     "id": "flashcard-reading-vocab-b1",
     "name": "B1 Reading Vocabulary",
     "learningMode": "flashcard",
     "dataPath": "data/b1/b1-flashcard-reading-vocab.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["quiz-reading-vocab-b1"],
+    "prerequisites": [
+      "quiz-reading-vocab-b1"
+    ],
     "description": "Education, environment and social media vocabulary (20 words)",
     "estimatedTime": 3,
     "difficulty": 3
@@ -1036,9 +1378,13 @@
     "name": "B1 Reading Vocabulary Quiz",
     "learningMode": "quiz",
     "dataPath": "data/b1/b1-quiz-reading-vocab.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["flashcard-work-career-b1"],
+    "prerequisites": [
+      "flashcard-work-career-b1"
+    ],
     "description": "Test your knowledge of intermediate reading vocabulary",
     "estimatedTime": 5,
     "difficulty": 3
@@ -1048,9 +1394,13 @@
     "name": "B1 Reading Vocabulary Matching",
     "learningMode": "matching",
     "dataPath": "data/b1/b1-matching-reading-vocab.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["flashcard-reading-vocab-b1"],
+    "prerequisites": [
+      "flashcard-reading-vocab-b1"
+    ],
     "description": "Match intermediate vocabulary with Spanish translations",
     "estimatedTime": 3,
     "difficulty": 3
@@ -1060,9 +1410,13 @@
     "name": "Future Forms",
     "learningMode": "completion",
     "dataPath": "data/b1/b1-completion-future-forms.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["matching-reading-vocab-b1"],
+    "prerequisites": [
+      "matching-reading-vocab-b1"
+    ],
     "description": "Different ways to express future",
     "estimatedTime": 5,
     "difficulty": 3
@@ -1072,9 +1426,13 @@
     "name": "Future & Modals Word Order",
     "learningMode": "reordering",
     "dataPath": "data/b1/b1-reordering-future-modals.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["completion-future-forms-b1"],
+    "prerequisites": [
+      "completion-future-forms-b1"
+    ],
     "description": "Reorder sentences with will, going to, modals, and future forms",
     "estimatedTime": 3,
     "difficulty": 3
@@ -1084,21 +1442,29 @@
     "name": "First & Second Conditionals",
     "learningMode": "completion",
     "dataPath": "data/b1/b1-completion-conditionals.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
     "description": "First conditional for real possibilities and second conditional for hypothetical situations (25 items)",
     "estimatedTime": 5,
     "difficulty": 3,
-    "prerequisites": ["reordering-future-modals-b1"]
+    "prerequisites": [
+      "reordering-future-modals-b1"
+    ]
   },
   {
     "id": "sorting-conditionals-b1",
     "name": "Conditionals Sorting",
     "learningMode": "sorting",
     "dataPath": "data/b1/b1-sorting-conditionals.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["completion-conditionals-b1"],
+    "prerequisites": [
+      "completion-conditionals-b1"
+    ],
     "description": "Sort sentences by conditional type: first and second conditionals",
     "estimatedTime": 3,
     "difficulty": 3
@@ -1108,9 +1474,13 @@
     "name": "Conditionals Word Order",
     "learningMode": "reordering",
     "dataPath": "data/b1/b1-reordering-conditionals.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["sorting-conditionals-b1"],
+    "prerequisites": [
+      "sorting-conditionals-b1"
+    ],
     "description": "Reorder first and second conditional sentences",
     "estimatedTime": 3,
     "difficulty": 3
@@ -1120,33 +1490,45 @@
     "name": "Money & Relationships",
     "learningMode": "flashcard",
     "dataPath": "data/b1/b1-flashcard-money-life.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Vocabulary",
     "description": "Money, banking, relationships, and personal qualities vocabulary (40 words)",
     "estimatedTime": 3,
     "difficulty": 3,
-    "prerequisites": ["reordering-conditionals-b1"]
+    "prerequisites": [
+      "reordering-conditionals-b1"
+    ]
   },
   {
     "id": "completion-passive-voice-b1",
     "name": "Passive Voice",
     "learningMode": "completion",
     "dataPath": "data/b1/b1-completion-passive-voice.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
     "description": "Present and past simple passive voice, plus modal passives (25 items)",
     "estimatedTime": 5,
     "difficulty": 3,
-    "prerequisites": ["flashcard-money-life-b1"]
+    "prerequisites": [
+      "flashcard-money-life-b1"
+    ]
   },
   {
     "id": "quiz-passive-voice-b1",
     "name": "Passive Voice Quiz",
     "learningMode": "quiz",
     "dataPath": "data/b1/b1-quiz-passive-voice.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["completion-passive-voice-b1"],
+    "prerequisites": [
+      "completion-passive-voice-b1"
+    ],
     "description": "Test your understanding of passive voice transformations",
     "estimatedTime": 5,
     "difficulty": 3
@@ -1156,9 +1538,13 @@
     "name": "Passive Voice Word Order",
     "learningMode": "reordering",
     "dataPath": "data/b1/b1-reordering-passive-voice.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["quiz-passive-voice-b1"],
+    "prerequisites": [
+      "quiz-passive-voice-b1"
+    ],
     "description": "Reorder passive voice sentences in present, past, and modal forms",
     "estimatedTime": 3,
     "difficulty": 3
@@ -1168,9 +1554,13 @@
     "name": "Phrasal Verbs in Professional Life",
     "learningMode": "reading",
     "dataPath": "data/b1/b1-reading-phrasal-verbs.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["reordering-passive-voice-b1"],
+    "prerequisites": [
+      "reordering-passive-voice-b1"
+    ],
     "description": "Master phrasal verbs for professional and social contexts",
     "estimatedTime": 7,
     "difficulty": 3
@@ -1180,9 +1570,13 @@
     "name": "Common Phrasal Verbs",
     "learningMode": "matching",
     "dataPath": "data/b1/b1-matching-common-phrasal-verbs.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["reading-phrasal-verbs-b1"],
+    "prerequisites": [
+      "reading-phrasal-verbs-b1"
+    ],
     "description": "Most common phrasal verbs and meanings",
     "estimatedTime": 3,
     "difficulty": 3
@@ -1192,9 +1586,13 @@
     "name": "Phrasal Verbs Practice",
     "learningMode": "completion",
     "dataPath": "data/b1/b1-completion-phrasal-verbs-practice.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["matching-common-phrasal-verbs-b1"],
+    "prerequisites": [
+      "matching-common-phrasal-verbs-b1"
+    ],
     "description": "Complete sentences with common phrasal verbs (20 items)",
     "estimatedTime": 5,
     "difficulty": 3
@@ -1204,9 +1602,13 @@
     "name": "Idioms in Work and Education",
     "learningMode": "reading",
     "dataPath": "data/b1/b1-reading-idioms.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Idioms",
-    "prerequisites": ["completion-phrasal-verbs-practice-b1"],
+    "prerequisites": [
+      "completion-phrasal-verbs-practice-b1"
+    ],
     "description": "Learn idioms for professional and educational settings",
     "estimatedTime": 7,
     "difficulty": 3
@@ -1216,9 +1618,13 @@
     "name": "Everyday Idioms Flashcards",
     "learningMode": "flashcard",
     "dataPath": "data/b1/b1-flashcard-everyday-idioms.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Idioms",
-    "prerequisites": ["reading-idioms-b1"],
+    "prerequisites": [
+      "reading-idioms-b1"
+    ],
     "description": "Common idioms for everyday situations with translations (20 idioms)",
     "estimatedTime": 3,
     "difficulty": 3
@@ -1228,9 +1634,13 @@
     "name": "Everyday Idioms",
     "learningMode": "quiz",
     "dataPath": "data/b1/b1-quiz-idioms-everyday-situations.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Idioms",
-    "prerequisites": ["flashcard-everyday-idioms-b1"],
+    "prerequisites": [
+      "flashcard-everyday-idioms-b1"
+    ],
     "description": "Common idioms for everyday situations (75 unique idioms)",
     "estimatedTime": 5,
     "difficulty": 3
@@ -1240,21 +1650,29 @@
     "name": "Phrasal Verbs by Particle",
     "learningMode": "sorting",
     "dataPath": "data/b1/b1-sorting-phrasal-verbs-particle.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "PhrasalVerbs",
     "description": "Sort phrasal verbs by particle: up, out, off, down",
     "estimatedTime": 3,
     "difficulty": 3,
-    "prerequisites": ["quiz-idioms-everyday-situations-b1"]
+    "prerequisites": [
+      "quiz-idioms-everyday-situations-b1"
+    ]
   },
   {
     "id": "reordering-phrasal-verbs-b1",
     "name": "B1 Phrasal Verbs Word Order",
     "learningMode": "reordering",
     "dataPath": "data/b1/b1-reordering-phrasal-verbs.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["sorting-phrasal-verbs-particle-b1"],
+    "prerequisites": [
+      "sorting-phrasal-verbs-particle-b1"
+    ],
     "description": "Reorder sentences with common phrasal verbs in professional contexts",
     "estimatedTime": 3,
     "difficulty": 3
@@ -1264,9 +1682,13 @@
     "name": "B1 Idioms Word Order",
     "learningMode": "reordering",
     "dataPath": "data/b1/b1-reordering-idioms.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Idioms",
-    "prerequisites": ["reordering-phrasal-verbs-b1"],
+    "prerequisites": [
+      "reordering-phrasal-verbs-b1"
+    ],
     "description": "Reorder sentences with work and education idioms",
     "estimatedTime": 3,
     "difficulty": 3
@@ -1276,9 +1698,13 @@
     "name": "Gerunds & Infinitives",
     "learningMode": "reading",
     "dataPath": "data/b1/b1-reading-gerunds-infinitives.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["reordering-idioms-b1"],
+    "prerequisites": [
+      "reordering-idioms-b1"
+    ],
     "description": "When to use verb + -ing (gerund) and verb + to (infinitive) after common verbs",
     "estimatedTime": 6,
     "difficulty": 3
@@ -1288,9 +1714,13 @@
     "name": "Gerunds & Infinitives Sorting",
     "learningMode": "sorting",
     "dataPath": "data/b1/b1-sorting-gerunds-infinitives.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["reading-gerunds-infinitives-b1"],
+    "prerequisites": [
+      "reading-gerunds-infinitives-b1"
+    ],
     "description": "Sort verbs into three groups: followed by gerund (-ing), infinitive (to + verb), or both",
     "estimatedTime": 3,
     "difficulty": 3
@@ -1300,9 +1730,13 @@
     "name": "Gerunds & Infinitives in Context",
     "learningMode": "reading",
     "dataPath": "data/b1/b1-reading-gerunds-infinitives-context.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["sorting-gerunds-infinitives-b1"],
+    "prerequisites": [
+      "sorting-gerunds-infinitives-b1"
+    ],
     "description": "Learn gerund and infinitive patterns through real-life conversations, emails, and everyday situations",
     "estimatedTime": 5,
     "difficulty": 3
@@ -1312,9 +1746,13 @@
     "name": "Gerunds & Infinitives Practice",
     "learningMode": "completion",
     "dataPath": "data/b1/b1-completion-gerunds-infinitives.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["reading-gerunds-infinitives-context-b1"],
+    "prerequisites": [
+      "reading-gerunds-infinitives-context-b1"
+    ],
     "description": "Complete sentences with the correct gerund or infinitive form",
     "estimatedTime": 5,
     "difficulty": 3
@@ -1324,9 +1762,13 @@
     "name": "Gerunds & Infinitives Word Order",
     "learningMode": "reordering",
     "dataPath": "data/b1/b1-reordering-gerunds-infinitives.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["completion-gerunds-infinitives-b1"],
+    "prerequisites": [
+      "completion-gerunds-infinitives-b1"
+    ],
     "description": "Reorder sentences with gerund and infinitive verb patterns",
     "estimatedTime": 3,
     "difficulty": 3
@@ -1336,9 +1778,13 @@
     "name": "Gerunds & Infinitives Quiz",
     "learningMode": "quiz",
     "dataPath": "data/b1/b1-quiz-gerunds-infinitives.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["reordering-gerunds-infinitives-b1"],
+    "prerequisites": [
+      "reordering-gerunds-infinitives-b1"
+    ],
     "description": "Test your knowledge of gerund and infinitive verb patterns",
     "estimatedTime": 5,
     "difficulty": 3
@@ -1348,9 +1794,13 @@
     "name": "Reported Speech: Completion",
     "learningMode": "completion",
     "dataPath": "data/b1/b1-completion-reported-speech.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["matching-idioms-situations-b1"],
+    "prerequisites": [
+      "matching-idioms-situations-b1"
+    ],
     "description": "Complete reported speech sentences applying backshift rules, pronoun and time/place shifts",
     "estimatedTime": 5,
     "difficulty": 3
@@ -1360,9 +1810,13 @@
     "name": "Reported Speech: Transformations",
     "learningMode": "transformation",
     "dataPath": "data/b1/b1-transformation-reported-speech.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["completion-reported-speech-b1"],
+    "prerequisites": [
+      "completion-reported-speech-b1"
+    ],
     "description": "Transform direct speech into reported speech: statements, questions, commands, and suggestions",
     "estimatedTime": 5,
     "difficulty": 3
@@ -1372,9 +1826,13 @@
     "name": "Reported Speech: Quiz",
     "learningMode": "quiz",
     "dataPath": "data/b1/b1-quiz-reported-speech.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["transformation-reported-speech-b1"],
+    "prerequisites": [
+      "transformation-reported-speech-b1"
+    ],
     "description": "Test your knowledge of reported speech rules: backshift, question formation, commands",
     "estimatedTime": 5,
     "difficulty": 3
@@ -1384,9 +1842,13 @@
     "name": "Question Tags: Advanced",
     "learningMode": "quiz",
     "dataPath": "data/b1/b1-quiz-question-tags.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["quiz-reported-speech-b1"],
+    "prerequisites": [
+      "quiz-reported-speech-b1"
+    ],
     "description": "Advanced question tags: negative adverbs, special cases (Let's, I am, nobody), modals",
     "estimatedTime": 5,
     "difficulty": 3
@@ -1396,9 +1858,13 @@
     "name": "Listening Quiz: Intermediate Grammar",
     "learningMode": "listening-quiz",
     "dataPath": "data/b1/b1-listening-quiz-intermediate.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["quiz-question-tags-b1"],
+    "prerequisites": [
+      "quiz-question-tags-b1"
+    ],
     "description": "Listen to grammar questions via TTS: conditionals, passive, reported speech, relative clauses",
     "estimatedTime": 5,
     "difficulty": 3
@@ -1408,9 +1874,13 @@
     "name": "Listen & Complete: Grammar",
     "learningMode": "listen-complete",
     "dataPath": "data/b1/b1-listen-complete-grammar.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["listening-quiz-intermediate-b1"],
+    "prerequisites": [
+      "listening-quiz-intermediate-b1"
+    ],
     "description": "Listen to the full sentence, then fill the blank: conditionals, modals, inversions, wish",
     "estimatedTime": 5,
     "difficulty": 3
@@ -1420,9 +1890,13 @@
     "name": "Dictation: Intermediate",
     "learningMode": "dictation",
     "dataPath": "data/b1/b1-dictation-intermediate.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["quiz-question-tags-b1"],
+    "prerequisites": [
+      "quiz-question-tags-b1"
+    ],
     "description": "Listen and write: conditionals, passive voice, reported speech, relative clauses (TTS)",
     "estimatedTime": 5,
     "difficulty": 3
@@ -1432,9 +1906,13 @@
     "name": "B1 Review Practice",
     "learningMode": "completion",
     "dataPath": "data/b1/b1-completion-review.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Review",
-    "prerequisites": ["quiz-question-tags-b1"],
+    "prerequisites": [
+      "quiz-question-tags-b1"
+    ],
     "description": "Practice conditionals, passive voice, phrasal verbs, idioms and word formation from B1",
     "estimatedTime": 5,
     "difficulty": 3
@@ -1444,9 +1922,13 @@
     "name": "Intermediate Review",
     "learningMode": "quiz",
     "dataPath": "data/b1/b1-quiz-intermediate-review.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Review",
-    "prerequisites": ["completion-review-b1"],
+    "prerequisites": [
+      "completion-review-b1"
+    ],
     "description": "Comprehensive review of B1 level concepts",
     "estimatedTime": 5,
     "difficulty": 3
@@ -1456,9 +1938,13 @@
     "name": "Professional Development",
     "learningMode": "reading",
     "dataPath": "data/b2/b2-reading-professional.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Reading",
-    "prerequisites": ["quiz-intermediate-review-b1"],
+    "prerequisites": [
+      "quiz-intermediate-review-b1"
+    ],
     "description": "Career development and professional growth",
     "estimatedTime": 7,
     "difficulty": 4
@@ -1468,9 +1954,13 @@
     "name": "Connector Words",
     "learningMode": "sorting",
     "dataPath": "data/b2/b2-sorting-connector-words.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["reading-professional-b2"],
+    "prerequisites": [
+      "reading-professional-b2"
+    ],
     "description": "Discourse markers and connectors",
     "estimatedTime": 3,
     "difficulty": 4
@@ -1480,9 +1970,13 @@
     "name": "IELTS Vocabulary Pack 1",
     "learningMode": "flashcard",
     "dataPath": "data/b2/b2-flashcard-ielts-vocabulary-pack1.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["sorting-connector-words-b2"],
+    "prerequisites": [
+      "sorting-connector-words-b2"
+    ],
     "description": "Essential IELTS vocabulary: General, Technology, and Clothing (120 words)",
     "estimatedTime": 9,
     "difficulty": 4
@@ -1492,9 +1986,13 @@
     "name": "IELTS Vocabulary Quiz",
     "learningMode": "quiz",
     "dataPath": "data/b2/b2-quiz-ielts-vocabulary.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["flashcard-ielts-vocabulary-pack1-b2"],
+    "prerequisites": [
+      "flashcard-ielts-vocabulary-pack1-b2"
+    ],
     "description": "Test your knowledge of IELTS vocabulary",
     "estimatedTime": 5,
     "difficulty": 4
@@ -1504,9 +2002,13 @@
     "name": "Global Issues",
     "learningMode": "reading",
     "dataPath": "data/b2/b2-reading-global-issues.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Reading",
-    "prerequisites": ["quiz-ielts-vocabulary-b2"],
+    "prerequisites": [
+      "quiz-ielts-vocabulary-b2"
+    ],
     "description": "Global challenges and societal issues",
     "estimatedTime": 7,
     "difficulty": 4
@@ -1516,9 +2018,13 @@
     "name": "Clothing & Style",
     "learningMode": "flashcard",
     "dataPath": "data/b2/b2-flashcard-clothing-style.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["reading-global-issues-b2"],
+    "prerequisites": [
+      "reading-global-issues-b2"
+    ],
     "description": "Fashion, clothing, accessories, and style vocabulary",
     "estimatedTime": 3,
     "difficulty": 4
@@ -1528,9 +2034,13 @@
     "name": "Emotions & Feelings",
     "learningMode": "flashcard",
     "dataPath": "data/b2/b2-flashcard-emotions-feelings.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["completion-clothing-emotions-b2"],
+    "prerequisites": [
+      "completion-clothing-emotions-b2"
+    ],
     "description": "Complex emotions, moods, and feelings vocabulary",
     "estimatedTime": 3,
     "difficulty": 4
@@ -1540,9 +2050,13 @@
     "name": "Clothing & Emotions Practice",
     "learningMode": "completion",
     "dataPath": "data/b2/b2-completion-clothing-emotions.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["flashcard-clothing-style-b2"],
+    "prerequisites": [
+      "flashcard-clothing-style-b2"
+    ],
     "description": "Complete sentences using clothing and emotions vocabulary",
     "estimatedTime": 5,
     "difficulty": 4
@@ -1552,9 +2066,13 @@
     "name": "Innovation & Entrepreneurship",
     "learningMode": "reading",
     "dataPath": "data/b2/b2-reading-innovation.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Reading",
-    "prerequisites": ["flashcard-emotions-feelings-b2"],
+    "prerequisites": [
+      "flashcard-emotions-feelings-b2"
+    ],
     "description": "Startups, innovation, and business development",
     "estimatedTime": 7,
     "difficulty": 4
@@ -1564,9 +2082,13 @@
     "name": "Success & Failure",
     "learningMode": "flashcard",
     "dataPath": "data/b2/b2-flashcard-success-failure.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["reading-innovation-b2"],
+    "prerequisites": [
+      "reading-innovation-b2"
+    ],
     "description": "Achievement, perseverance, ambition, and adversity vocabulary",
     "estimatedTime": 3,
     "difficulty": 4
@@ -1576,9 +2098,13 @@
     "name": "Success & Failure Quiz",
     "learningMode": "quiz",
     "dataPath": "data/b2/b2-quiz-success-failure.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["flashcard-success-failure-b2"],
+    "prerequisites": [
+      "flashcard-success-failure-b2"
+    ],
     "description": "Test your knowledge of success and failure vocabulary",
     "estimatedTime": 5,
     "difficulty": 4
@@ -1588,9 +2114,13 @@
     "name": "B2 Reading Vocabulary",
     "learningMode": "flashcard",
     "dataPath": "data/b2/b2-flashcard-reading-vocab.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["quiz-success-failure-b2"],
+    "prerequisites": [
+      "quiz-success-failure-b2"
+    ],
     "description": "Professional, innovation and global issues vocabulary (20 words)",
     "estimatedTime": 3,
     "difficulty": 4
@@ -1600,9 +2130,13 @@
     "name": "Used To",
     "learningMode": "completion",
     "dataPath": "data/b2/b2-completion-used-to.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["flashcard-reading-vocab-b2"],
+    "prerequisites": [
+      "flashcard-reading-vocab-b2"
+    ],
     "description": "Advanced usage of <used to>, <be used to>, and <get used to>",
     "estimatedTime": 5,
     "difficulty": 4
@@ -1612,9 +2146,13 @@
     "name": "Used To - Advanced",
     "learningMode": "quiz",
     "dataPath": "data/b2/b2-quiz-used-to-advanced.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["completion-used-to-b2"],
+    "prerequisites": [
+      "completion-used-to-b2"
+    ],
     "description": "Advanced quiz on complex usage patterns of <used to> structures",
     "estimatedTime": 5,
     "difficulty": 4
@@ -1624,33 +2162,45 @@
     "name": "Advanced Conditionals",
     "learningMode": "completion",
     "dataPath": "data/b2/b2-completion-conditionals-advanced.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Grammar",
     "description": "Third conditional and mixed conditionals for unreal past and cross-time situations (25 items)",
     "estimatedTime": 5,
     "difficulty": 4,
-    "prerequisites": ["quiz-used-to-advanced-b2"]
+    "prerequisites": [
+      "quiz-used-to-advanced-b2"
+    ]
   },
   {
     "id": "completion-wish-if-only-b2",
     "name": "Wish & If Only",
     "learningMode": "completion",
     "dataPath": "data/b2/b2-completion-wish-if-only.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Grammar",
     "description": "Wish and if only for present wishes, past regrets, and complaints (25 items)",
     "estimatedTime": 5,
     "difficulty": 4,
-    "prerequisites": ["reordering-conditionals-wish-b2"]
+    "prerequisites": [
+      "reordering-conditionals-wish-b2"
+    ]
   },
   {
     "id": "reordering-conditionals-wish-b2",
     "name": "Conditionals & Wish Word Order",
     "learningMode": "reordering",
     "dataPath": "data/b2/b2-reordering-conditionals-wish.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["completion-conditionals-advanced-b2"],
+    "prerequisites": [
+      "completion-conditionals-advanced-b2"
+    ],
     "description": "Reorder third conditional, mixed conditional, and wish sentences",
     "estimatedTime": 3,
     "difficulty": 4
@@ -1660,9 +2210,13 @@
     "name": "Collocations & Expressions",
     "learningMode": "matching",
     "dataPath": "data/b2/b2-matching-collocations.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["completion-wish-if-only-b2"],
+    "prerequisites": [
+      "completion-wish-if-only-b2"
+    ],
     "description": "Common English collocations matched with Spanish equivalents (40 pairs)",
     "estimatedTime": 3,
     "difficulty": 4
@@ -1672,21 +2226,29 @@
     "name": "Advanced Passive & Causative",
     "learningMode": "completion",
     "dataPath": "data/b2/b2-completion-passive-advanced.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Grammar",
     "description": "Advanced passive voice (all tenses), impersonal passive, and causative have/get (25 items)",
     "estimatedTime": 5,
     "difficulty": 4,
-    "prerequisites": ["matching-collocations-b2"]
+    "prerequisites": [
+      "matching-collocations-b2"
+    ]
   },
   {
     "id": "reordering-passive-causative-b2",
     "name": "Passive & Causative Word Order",
     "learningMode": "reordering",
     "dataPath": "data/b2/b2-reordering-passive-causative.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["completion-passive-advanced-b2"],
+    "prerequisites": [
+      "completion-passive-advanced-b2"
+    ],
     "description": "Reorder advanced passive, impersonal passive, and causative sentences",
     "estimatedTime": 3,
     "difficulty": 4
@@ -1696,9 +2258,13 @@
     "name": "Idioms in Professional Contexts",
     "learningMode": "reading",
     "dataPath": "data/b2/b2-reading-idioms.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Idioms",
-    "prerequisites": ["reordering-passive-causative-b2"],
+    "prerequisites": [
+      "reordering-passive-causative-b2"
+    ],
     "description": "Business and global issue idioms for upper-intermediate learners",
     "estimatedTime": 7,
     "difficulty": 4
@@ -1708,9 +2274,13 @@
     "name": "Time Idioms",
     "learningMode": "flashcard",
     "dataPath": "data/b2/b2-flashcard-time-idioms.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Idioms",
-    "prerequisites": ["reading-idioms-b2"],
+    "prerequisites": [
+      "reading-idioms-b2"
+    ],
     "description": "Common idioms related to time expressions",
     "estimatedTime": 3,
     "difficulty": 4
@@ -1720,9 +2290,13 @@
     "name": "Phrasal Verbs in Academic Discourse",
     "learningMode": "reading",
     "dataPath": "data/b2/b2-reading-phrasal-verbs.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["flashcard-time-idioms-b2"],
+    "prerequisites": [
+      "flashcard-time-idioms-b2"
+    ],
     "description": "Advanced phrasal verbs in professional and academic contexts",
     "estimatedTime": 7,
     "difficulty": 4
@@ -1732,9 +2306,13 @@
     "name": "Phrasal Verbs Matching",
     "learningMode": "matching",
     "dataPath": "data/b2/b2-matching-phrasal-verbs.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["reading-phrasal-verbs-b2"],
+    "prerequisites": [
+      "reading-phrasal-verbs-b2"
+    ],
     "description": "Match upper-intermediate phrasal verbs with Spanish translations (20 pairs)",
     "estimatedTime": 3,
     "difficulty": 4
@@ -1744,9 +2322,13 @@
     "name": "Phrasal Verbs",
     "learningMode": "completion",
     "dataPath": "data/b2/b2-completion-phrasal-verbs.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["matching-phrasal-verbs-b2"],
+    "prerequisites": [
+      "matching-phrasal-verbs-b2"
+    ],
     "description": "Advanced phrasal verbs completion",
     "estimatedTime": 5,
     "difficulty": 4
@@ -1756,9 +2338,13 @@
     "name": "IELTS Idioms Pack",
     "learningMode": "flashcard",
     "dataPath": "data/b2/b2-flashcard-ielts-idioms-pack.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Idioms",
-    "prerequisites": ["completion-phrasal-verbs-b2"],
+    "prerequisites": [
+      "completion-phrasal-verbs-b2"
+    ],
     "description": "Common idioms: Emotions, Success, Time, and Nature (160 idioms)",
     "estimatedTime": 10,
     "difficulty": 4
@@ -1768,9 +2354,13 @@
     "name": "Professional Idioms Quiz",
     "learningMode": "quiz",
     "dataPath": "data/b2/b2-quiz-idioms-professional.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Idioms",
-    "prerequisites": ["flashcard-ielts-idioms-pack-b2"],
+    "prerequisites": [
+      "flashcard-ielts-idioms-pack-b2"
+    ],
     "description": "Professional and business idioms quiz (20 questions)",
     "estimatedTime": 5,
     "difficulty": 4
@@ -1780,9 +2370,13 @@
     "name": "Phrasal Verbs Advanced",
     "learningMode": "completion",
     "dataPath": "data/b2/b2-completion-phrasal-verbs-advanced.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["quiz-idioms-professional-b2"],
+    "prerequisites": [
+      "quiz-idioms-professional-b2"
+    ],
     "description": "Advanced phrasal verbs in professional and everyday contexts",
     "estimatedTime": 5,
     "difficulty": 4
@@ -1792,9 +2386,13 @@
     "name": "B2 Phrasal Verbs Quiz",
     "learningMode": "quiz",
     "dataPath": "data/b2/b2-quiz-phrasal-verbs.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["completion-phrasal-verbs-advanced-b2"],
+    "prerequisites": [
+      "completion-phrasal-verbs-advanced-b2"
+    ],
     "description": "Test your knowledge of upper-intermediate phrasal verbs",
     "estimatedTime": 5,
     "difficulty": 4
@@ -1804,9 +2402,13 @@
     "name": "B2 Phrasal Verbs Word Order",
     "learningMode": "reordering",
     "dataPath": "data/b2/b2-reordering-phrasal-verbs.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["quiz-phrasal-verbs-b2"],
+    "prerequisites": [
+      "quiz-phrasal-verbs-b2"
+    ],
     "description": "Reorder sentences with advanced phrasal verbs in professional contexts",
     "estimatedTime": 3,
     "difficulty": 4
@@ -1816,9 +2418,13 @@
     "name": "B2 Idioms Word Order",
     "learningMode": "reordering",
     "dataPath": "data/b2/b2-reordering-idioms.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Idioms",
-    "prerequisites": ["reordering-phrasal-verbs-b2"],
+    "prerequisites": [
+      "reordering-phrasal-verbs-b2"
+    ],
     "description": "Reorder sentences with professional and business idioms",
     "estimatedTime": 3,
     "difficulty": 4
@@ -1828,9 +2434,13 @@
     "name": "Gerunds & Infinitives: Meaning Changes",
     "learningMode": "completion",
     "dataPath": "data/b2/b2-completion-gerunds-infinitives-advanced.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["reordering-idioms-b2"],
+    "prerequisites": [
+      "reordering-idioms-b2"
+    ],
     "description": "Verbs that change meaning with gerund vs infinitive: stop, remember, try, forget, regret, go on, mean",
     "estimatedTime": 5,
     "difficulty": 4
@@ -1840,9 +2450,13 @@
     "name": "Used To & Connectors Word Order",
     "learningMode": "reordering",
     "dataPath": "data/b2/b2-reordering-used-to-connectors.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["completion-gerunds-infinitives-advanced-b2"],
+    "prerequisites": [
+      "completion-gerunds-infinitives-advanced-b2"
+    ],
     "description": "Reorder sentences with used to structures and discourse connectors",
     "estimatedTime": 3,
     "difficulty": 4
@@ -1852,9 +2466,13 @@
     "name": "Gerunds & Infinitives Advanced Quiz",
     "learningMode": "quiz",
     "dataPath": "data/b2/b2-quiz-gerunds-infinitives-advanced.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["reordering-used-to-connectors-b2"],
+    "prerequisites": [
+      "reordering-used-to-connectors-b2"
+    ],
     "description": "Test your understanding of verbs that change meaning with gerund vs infinitive",
     "estimatedTime": 5,
     "difficulty": 4
@@ -1864,9 +2482,13 @@
     "name": "Listening Quiz: Advanced Grammar",
     "learningMode": "listening-quiz",
     "dataPath": "data/b2/b2-listening-quiz-advanced.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["sorting-professional-idioms-b2"],
+    "prerequisites": [
+      "sorting-professional-idioms-b2"
+    ],
     "description": "Listen to advanced grammar questions: inversions, impersonal passive, formal conditionals",
     "estimatedTime": 5,
     "difficulty": 4
@@ -1876,9 +2498,13 @@
     "name": "Listen & Complete: Advanced",
     "learningMode": "listen-complete",
     "dataPath": "data/b2/b2-listen-complete-advanced.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["listening-quiz-advanced-b2"],
+    "prerequisites": [
+      "listening-quiz-advanced-b2"
+    ],
     "description": "Listen and fill: third conditionals, formal inversions, modal perfects, negative fronting",
     "estimatedTime": 5,
     "difficulty": 4
@@ -1888,9 +2514,13 @@
     "name": "Dictation: Advanced",
     "learningMode": "dictation",
     "dataPath": "data/b2/b2-dictation-advanced.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["sorting-professional-idioms-b2"],
+    "prerequisites": [
+      "sorting-professional-idioms-b2"
+    ],
     "description": "Listen and write: inversions, third conditionals, complex passives, formal linkers (TTS)",
     "estimatedTime": 5,
     "difficulty": 4
@@ -1900,9 +2530,13 @@
     "name": "B2 Review Practice",
     "learningMode": "completion",
     "dataPath": "data/b2/b2-completion-review.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Review",
-    "prerequisites": ["dictation-advanced-b2"],
+    "prerequisites": [
+      "dictation-advanced-b2"
+    ],
     "description": "Practice advanced conditionals, causatives, phrasal verbs, idioms and word formation from B2",
     "estimatedTime": 5,
     "difficulty": 4
@@ -1912,9 +2546,13 @@
     "name": "Upper-Intermediate Review",
     "learningMode": "quiz",
     "dataPath": "data/b2/b2-quiz-upper-intermediate-review.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Review",
-    "prerequisites": ["completion-review-b2"],
+    "prerequisites": [
+      "completion-review-b2"
+    ],
     "description": "Comprehensive review of B2 level concepts: used to, phrasal verbs, connectors, and professional vocabulary",
     "estimatedTime": 5,
     "difficulty": 4
@@ -1924,9 +2562,13 @@
     "name": "Academic Research",
     "learningMode": "reading",
     "dataPath": "data/c1/c1-reading-academic.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Reading",
-    "prerequisites": ["quiz-upper-intermediate-review-b2"],
+    "prerequisites": [
+      "quiz-upper-intermediate-review-b2"
+    ],
     "description": "Academic research and scholarly communication",
     "estimatedTime": 7,
     "difficulty": 5
@@ -1936,9 +2578,13 @@
     "name": "Business",
     "learningMode": "flashcard",
     "dataPath": "data/c1/c1-flashcard-ielts-business.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["reading-academic-c1"],
+    "prerequisites": [
+      "reading-academic-c1"
+    ],
     "description": "Business and professional vocabulary",
     "estimatedTime": 3,
     "difficulty": 5
@@ -1948,9 +2594,13 @@
     "name": "IELTS Business Quiz",
     "learningMode": "quiz",
     "dataPath": "data/c1/c1-quiz-ielts-business.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["flashcard-ielts-business-c1"],
+    "prerequisites": [
+      "flashcard-ielts-business-c1"
+    ],
     "description": "Test your knowledge of business vocabulary",
     "estimatedTime": 5,
     "difficulty": 5
@@ -1960,9 +2610,13 @@
     "name": "Leadership & Management",
     "learningMode": "reading",
     "dataPath": "data/c1/c1-reading-leadership.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Reading",
-    "prerequisites": ["quiz-ielts-business-c1"],
+    "prerequisites": [
+      "quiz-ielts-business-c1"
+    ],
     "description": "Leadership theories and organizational management",
     "estimatedTime": 7,
     "difficulty": 5
@@ -1972,9 +2626,13 @@
     "name": "Home & Daily Life",
     "learningMode": "flashcard",
     "dataPath": "data/c1/c1-flashcard-ielts-home-daily-life.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["reading-leadership-c1"],
+    "prerequisites": [
+      "reading-leadership-c1"
+    ],
     "description": "Advanced home and daily life vocabulary",
     "estimatedTime": 3,
     "difficulty": 5
@@ -1984,9 +2642,13 @@
     "name": "IELTS Home & Life Practice",
     "learningMode": "completion",
     "dataPath": "data/c1/c1-completion-ielts-home-life.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["flashcard-ielts-home-daily-life-c1"],
+    "prerequisites": [
+      "flashcard-ielts-home-daily-life-c1"
+    ],
     "description": "Complete sentences using home and daily life vocabulary",
     "estimatedTime": 5,
     "difficulty": 5
@@ -1996,9 +2658,13 @@
     "name": "Cultural Analysis",
     "learningMode": "reading",
     "dataPath": "data/c1/c1-reading-cultural-analysis.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Reading",
-    "prerequisites": ["completion-ielts-home-life-c1"],
+    "prerequisites": [
+      "completion-ielts-home-life-c1"
+    ],
     "description": "Cross-cultural communication and analysis",
     "estimatedTime": 7,
     "difficulty": 5
@@ -2008,9 +2674,13 @@
     "name": "Formal Register",
     "learningMode": "sorting",
     "dataPath": "data/c1/c1-sorting-formal-register.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["reading-cultural-analysis-c1"],
+    "prerequisites": [
+      "reading-cultural-analysis-c1"
+    ],
     "description": "Sort expressions by register: Formal, Neutral, and Informal (40 items)",
     "estimatedTime": 3,
     "difficulty": 5
@@ -2020,9 +2690,13 @@
     "name": "Problem Solving",
     "learningMode": "flashcard",
     "dataPath": "data/c1/c1-flashcard-ielts-problem-solving.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["sorting-formal-register-c1"],
+    "prerequisites": [
+      "sorting-formal-register-c1"
+    ],
     "description": "Advanced problem solving vocabulary",
     "estimatedTime": 3,
     "difficulty": 5
@@ -2032,9 +2706,13 @@
     "name": "Problem Solving Quiz",
     "learningMode": "quiz",
     "dataPath": "data/c1/c1-quiz-problem-solving.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["flashcard-ielts-problem-solving-c1"],
+    "prerequisites": [
+      "flashcard-ielts-problem-solving-c1"
+    ],
     "description": "Test your knowledge of problem-solving vocabulary",
     "estimatedTime": 5,
     "difficulty": 5
@@ -2044,9 +2722,13 @@
     "name": "C1 Reading Vocabulary",
     "learningMode": "flashcard",
     "dataPath": "data/c1/c1-flashcard-reading-vocab.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["quiz-problem-solving-c1"],
+    "prerequisites": [
+      "quiz-problem-solving-c1"
+    ],
     "description": "Advanced academic and scholarly vocabulary (20 words)",
     "estimatedTime": 3,
     "difficulty": 5
@@ -2056,9 +2738,13 @@
     "name": "C1 Reading Vocabulary Quiz",
     "learningMode": "quiz",
     "dataPath": "data/c1/c1-quiz-reading-vocab.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["flashcard-reading-vocab-c1"],
+    "prerequisites": [
+      "flashcard-reading-vocab-c1"
+    ],
     "description": "Test your knowledge of advanced academic vocabulary",
     "estimatedTime": 5,
     "difficulty": 5
@@ -2068,9 +2754,13 @@
     "name": "Nature & Animals",
     "learningMode": "flashcard",
     "dataPath": "data/c1/c1-flashcard-nature-animals.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["quiz-reading-vocab-c1"],
+    "prerequisites": [
+      "quiz-reading-vocab-c1"
+    ],
     "description": "Advanced nature, fauna, flora, and ecosystem vocabulary",
     "estimatedTime": 3,
     "difficulty": 5
@@ -2080,9 +2770,13 @@
     "name": "Conditionals",
     "learningMode": "completion",
     "dataPath": "data/c1/c1-completion-advanced-grammar-conditionals.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["flashcard-nature-animals-c1"],
+    "prerequisites": [
+      "flashcard-nature-animals-c1"
+    ],
     "description": "Advanced conditional structures",
     "estimatedTime": 5,
     "difficulty": 5
@@ -2092,9 +2786,13 @@
     "name": "Grammar Inversions",
     "learningMode": "completion",
     "dataPath": "data/c1/c1-completion-advanced-grammar-inversions.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["quiz-grammar-inversions-c1"],
+    "prerequisites": [
+      "quiz-grammar-inversions-c1"
+    ],
     "description": "Advanced grammatical inversions",
     "estimatedTime": 5,
     "difficulty": 5
@@ -2104,9 +2802,13 @@
     "name": "Grammar Inversions Quiz",
     "learningMode": "quiz",
     "dataPath": "data/c1/c1-quiz-grammar-inversions.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["completion-advanced-grammar-conditionals-c1"],
+    "prerequisites": [
+      "completion-advanced-grammar-conditionals-c1"
+    ],
     "description": "Test your knowledge of advanced grammatical inversions",
     "estimatedTime": 5,
     "difficulty": 5
@@ -2116,9 +2818,13 @@
     "name": "Inversions Word Order",
     "learningMode": "reordering",
     "dataPath": "data/c1/c1-reordering-inversions.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["completion-advanced-grammar-inversions-c1"],
+    "prerequisites": [
+      "completion-advanced-grammar-inversions-c1"
+    ],
     "description": "Reorder sentences with negative adverbial inversions",
     "estimatedTime": 3,
     "difficulty": 5
@@ -2128,9 +2834,13 @@
     "name": "Participles Quiz",
     "learningMode": "quiz",
     "dataPath": "data/c1/c1-quiz-participles.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["reordering-inversions-c1"],
+    "prerequisites": [
+      "reordering-inversions-c1"
+    ],
     "description": "Test your knowledge of advanced participle constructions",
     "estimatedTime": 5,
     "difficulty": 5
@@ -2140,9 +2850,13 @@
     "name": "Complex Prepositions Practice",
     "learningMode": "completion",
     "dataPath": "data/c1/c1-completion-complex-prepositions-practice.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["quiz-participles-c1"],
+    "prerequisites": [
+      "quiz-participles-c1"
+    ],
     "description": "Practice complex prepositions in context",
     "estimatedTime": 5,
     "difficulty": 5
@@ -2152,9 +2866,13 @@
     "name": "Complex Prepositions Word Order",
     "learningMode": "reordering",
     "dataPath": "data/c1/c1-reordering-complex-prepositions.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["completion-complex-prepositions-practice-c1"],
+    "prerequisites": [
+      "completion-complex-prepositions-practice-c1"
+    ],
     "description": "Reorder sentences with complex prepositional phrases",
     "estimatedTime": 3,
     "difficulty": 5
@@ -2164,9 +2882,13 @@
     "name": "Participles",
     "learningMode": "completion",
     "dataPath": "data/c1/c1-completion-advanced-grammar-participles.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["reordering-complex-prepositions-c1"],
+    "prerequisites": [
+      "reordering-complex-prepositions-c1"
+    ],
     "description": "Advanced participle constructions",
     "estimatedTime": 5,
     "difficulty": 5
@@ -2176,9 +2898,13 @@
     "name": "Advanced Vocabulary",
     "learningMode": "matching",
     "dataPath": "data/c1/c1-matching-sample.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["completion-advanced-grammar-participles-c1"],
+    "prerequisites": [
+      "completion-advanced-grammar-participles-c1"
+    ],
     "description": "Advanced vocabulary matching",
     "estimatedTime": 3,
     "difficulty": 5
@@ -2188,9 +2914,13 @@
     "name": "Subjunctive",
     "learningMode": "completion",
     "dataPath": "data/c1/c1-completion-advanced-grammar-subjunctive.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["matching-vocabulary-c1"],
+    "prerequisites": [
+      "matching-vocabulary-c1"
+    ],
     "description": "Subjunctive mood and usage",
     "estimatedTime": 5,
     "difficulty": 5
@@ -2200,9 +2930,13 @@
     "name": "Participles & Subjunctive Word Order",
     "learningMode": "reordering",
     "dataPath": "data/c1/c1-reordering-participles-subjunctive.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["completion-advanced-grammar-subjunctive-c1"],
+    "prerequisites": [
+      "completion-advanced-grammar-subjunctive-c1"
+    ],
     "description": "Reorder participle clauses and subjunctive structures",
     "estimatedTime": 3,
     "difficulty": 5
@@ -2212,9 +2946,13 @@
     "name": "Phrasal Verbs & Idioms in Discourse",
     "learningMode": "reading",
     "dataPath": "data/c1/c1-reading-phrasal-verbs-idioms.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Reading",
-    "prerequisites": ["reordering-participles-subjunctive-c1"],
+    "prerequisites": [
+      "reordering-participles-subjunctive-c1"
+    ],
     "description": "Sophisticated phrasal verbs and idioms in academic and professional discourse",
     "estimatedTime": 7,
     "difficulty": 5
@@ -2224,9 +2962,13 @@
     "name": "Advanced Phrasal Verbs Matching",
     "learningMode": "matching",
     "dataPath": "data/c1/c1-matching-advanced-phrasal-verbs.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["reading-phrasal-verbs-idioms-c1"],
+    "prerequisites": [
+      "reading-phrasal-verbs-idioms-c1"
+    ],
     "description": "Match advanced phrasal verbs with Spanish translations (20 pairs)",
     "estimatedTime": 3,
     "difficulty": 5
@@ -2236,9 +2978,13 @@
     "name": "C1 Advanced Phrasal Verbs",
     "learningMode": "completion",
     "dataPath": "data/c1/c1-completion-advanced-phrasal-verbs.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["matching-advanced-phrasal-verbs-c1"],
+    "prerequisites": [
+      "matching-advanced-phrasal-verbs-c1"
+    ],
     "description": "Advanced phrasal verbs in professional and academic contexts (25 items)",
     "estimatedTime": 5,
     "difficulty": 5
@@ -2248,9 +2994,13 @@
     "name": "C1 Phrasal Verbs Word Order",
     "learningMode": "reordering",
     "dataPath": "data/c1/c1-reordering-phrasal-verbs.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["completion-advanced-phrasal-verbs-c1"],
+    "prerequisites": [
+      "completion-advanced-phrasal-verbs-c1"
+    ],
     "description": "Reorder sentences with sophisticated phrasal verbs and inversions",
     "estimatedTime": 3,
     "difficulty": 5
@@ -2260,9 +3010,13 @@
     "name": "Advanced Idioms Flashcards",
     "learningMode": "flashcard",
     "dataPath": "data/c1/c1-flashcard-advanced-idioms.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Idioms",
-    "prerequisites": ["reordering-phrasal-verbs-c1"],
+    "prerequisites": [
+      "reordering-phrasal-verbs-c1"
+    ],
     "description": "Sophisticated idioms with Spanish translations (20 idioms)",
     "estimatedTime": 3,
     "difficulty": 5
@@ -2272,9 +3026,13 @@
     "name": "Advanced Idioms",
     "learningMode": "quiz",
     "dataPath": "data/c1/c1-quiz-advanced-idioms.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Idioms",
-    "prerequisites": ["flashcard-advanced-idioms-c1"],
+    "prerequisites": [
+      "flashcard-advanced-idioms-c1"
+    ],
     "description": "Sophisticated idioms for advanced communication (20 idioms)",
     "estimatedTime": 5,
     "difficulty": 5
@@ -2284,9 +3042,13 @@
     "name": "C1 Idioms Word Order",
     "learningMode": "reordering",
     "dataPath": "data/c1/c1-reordering-idioms.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Idioms",
-    "prerequisites": ["quiz-advanced-idioms-c1"],
+    "prerequisites": [
+      "quiz-advanced-idioms-c1"
+    ],
     "description": "Reorder sentences with advanced idioms using inversions and subjunctive",
     "estimatedTime": 3,
     "difficulty": 5
@@ -2296,9 +3058,13 @@
     "name": "C1 Phrasal Verbs Quiz",
     "learningMode": "quiz",
     "dataPath": "data/c1/c1-quiz-phrasal-verbs.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["reordering-idioms-c1"],
+    "prerequisites": [
+      "reordering-idioms-c1"
+    ],
     "description": "Advanced phrasal verbs used in professional and academic contexts",
     "estimatedTime": 5,
     "difficulty": 5
@@ -2308,9 +3074,13 @@
     "name": "Listening Quiz: Academic English",
     "learningMode": "listening-quiz",
     "dataPath": "data/c1/c1-listening-quiz-advanced.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["sorting-phrasal-verbs-register-c1"],
+    "prerequisites": [
+      "sorting-phrasal-verbs-register-c1"
+    ],
     "description": "Listen to academic English questions: inversions, subjunctive, hedging, formal qualifiers",
     "estimatedTime": 5,
     "difficulty": 5
@@ -2320,9 +3090,13 @@
     "name": "Listen & Complete: Academic",
     "learningMode": "listen-complete",
     "dataPath": "data/c1/c1-listen-complete-academic.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["listening-quiz-advanced-c1"],
+    "prerequisites": [
+      "listening-quiz-advanced-c1"
+    ],
     "description": "Listen and fill: academic hedging, formal conditionals, inversions, formal qualifiers",
     "estimatedTime": 6,
     "difficulty": 5
@@ -2332,9 +3106,13 @@
     "name": "Dictation: Academic",
     "learningMode": "dictation",
     "dataPath": "data/c1/c1-dictation-academic.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["sorting-phrasal-verbs-register-c1"],
+    "prerequisites": [
+      "sorting-phrasal-verbs-register-c1"
+    ],
     "description": "Listen and write: academic hedging, inversions, subjunctive, formal qualifiers (TTS)",
     "estimatedTime": 6,
     "difficulty": 5
@@ -2344,9 +3122,13 @@
     "name": "C1 Review Practice",
     "learningMode": "completion",
     "dataPath": "data/c1/c1-completion-review.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Review",
-    "prerequisites": ["dictation-academic-c1"],
+    "prerequisites": [
+      "dictation-academic-c1"
+    ],
     "description": "Practice inversions, subjunctive, phrasal verbs, idioms, vocabulary and word formation from C1",
     "estimatedTime": 5,
     "difficulty": 5
@@ -2356,9 +3138,13 @@
     "name": "Advanced Grammar Review",
     "learningMode": "quiz",
     "dataPath": "data/c1/c1-quiz-advanced-grammar-review.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Review",
-    "prerequisites": ["completion-review-c1"],
+    "prerequisites": [
+      "completion-review-c1"
+    ],
     "description": "Comprehensive review of C1 grammar: conditionals, inversions, participles, subjunctive",
     "estimatedTime": 5,
     "difficulty": 5
@@ -2368,9 +3154,13 @@
     "name": "Specialized Domains",
     "learningMode": "reading",
     "dataPath": "data/c2/c2-reading-specialized.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Reading",
-    "prerequisites": ["quiz-advanced-grammar-review-c1"],
+    "prerequisites": [
+      "quiz-advanced-grammar-review-c1"
+    ],
     "description": "Technical and specialized professional discourse",
     "estimatedTime": 7,
     "difficulty": 5
@@ -2380,9 +3170,13 @@
     "name": "Academic Vocabulary",
     "learningMode": "flashcard",
     "dataPath": "data/c2/c2-flashcard-academic.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["reading-specialized-c2"],
+    "prerequisites": [
+      "reading-specialized-c2"
+    ],
     "description": "Advanced academic and scholarly vocabulary",
     "estimatedTime": 3,
     "difficulty": 5
@@ -2392,9 +3186,13 @@
     "name": "Academic Writing",
     "learningMode": "flashcard",
     "dataPath": "data/c2/c2-flashcard-academic-writing.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["quiz-academic-writing-c2"],
+    "prerequisites": [
+      "quiz-academic-writing-c2"
+    ],
     "description": "Advanced academic writing vocabulary and Latin expressions",
     "estimatedTime": 3,
     "difficulty": 5
@@ -2404,9 +3202,13 @@
     "name": "Academic Writing Quiz",
     "learningMode": "quiz",
     "dataPath": "data/c2/c2-quiz-academic-writing.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["flashcard-academic-c2"],
+    "prerequisites": [
+      "flashcard-academic-c2"
+    ],
     "description": "Test your knowledge of academic writing vocabulary",
     "estimatedTime": 5,
     "difficulty": 5
@@ -2416,9 +3218,13 @@
     "name": "Philosophical Thought",
     "learningMode": "reading",
     "dataPath": "data/c2/c2-reading-philosophical.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Reading",
-    "prerequisites": ["flashcard-academic-writing-c2"],
+    "prerequisites": [
+      "flashcard-academic-writing-c2"
+    ],
     "description": "Philosophy and abstract reasoning",
     "estimatedTime": 7,
     "difficulty": 5
@@ -2428,9 +3234,13 @@
     "name": "Critical Analysis",
     "learningMode": "flashcard",
     "dataPath": "data/c2/c2-flashcard-critical-analysis.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["reading-philosophical-c2"],
+    "prerequisites": [
+      "reading-philosophical-c2"
+    ],
     "description": "Advanced critical thinking and philosophical vocabulary",
     "estimatedTime": 3,
     "difficulty": 5
@@ -2440,9 +3250,13 @@
     "name": "Critical Analysis Quiz",
     "learningMode": "quiz",
     "dataPath": "data/c2/c2-quiz-critical-analysis.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["flashcard-critical-analysis-c2"],
+    "prerequisites": [
+      "flashcard-critical-analysis-c2"
+    ],
     "description": "Test your knowledge of critical analysis vocabulary",
     "estimatedTime": 5,
     "difficulty": 5
@@ -2452,9 +3266,13 @@
     "name": "Literary Analysis",
     "learningMode": "reading",
     "dataPath": "data/c2/c2-reading-literary.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Reading",
-    "prerequisites": ["quiz-critical-analysis-c2"],
+    "prerequisites": [
+      "quiz-critical-analysis-c2"
+    ],
     "description": "Literary criticism and critical theory",
     "estimatedTime": 7,
     "difficulty": 5
@@ -2464,9 +3282,13 @@
     "name": "C2 Reading Vocabulary",
     "learningMode": "flashcard",
     "dataPath": "data/c2/c2-flashcard-reading-vocab.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["reading-literary-c2"],
+    "prerequisites": [
+      "reading-literary-c2"
+    ],
     "description": "Philosophical and literary vocabulary for near-native proficiency (20 words)",
     "estimatedTime": 3,
     "difficulty": 5
@@ -2476,9 +3298,13 @@
     "name": "C2 Reading Vocabulary Quiz",
     "learningMode": "quiz",
     "dataPath": "data/c2/c2-quiz-reading-vocab.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["flashcard-reading-vocab-c2"],
+    "prerequisites": [
+      "flashcard-reading-vocab-c2"
+    ],
     "description": "Test your knowledge of mastery-level vocabulary",
     "estimatedTime": 5,
     "difficulty": 5
@@ -2488,9 +3314,13 @@
     "name": "C2 Reading Vocabulary Practice",
     "learningMode": "completion",
     "dataPath": "data/c2/c2-completion-reading-vocab.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["quiz-reading-vocab-c2"],
+    "prerequisites": [
+      "quiz-reading-vocab-c2"
+    ],
     "description": "Complete sentences with advanced philosophical and literary terms",
     "estimatedTime": 5,
     "difficulty": 5
@@ -2500,9 +3330,13 @@
     "name": "C2 Reading Vocabulary Matching",
     "learningMode": "matching",
     "dataPath": "data/c2/c2-matching-reading-vocab.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["completion-reading-vocab-c2"],
+    "prerequisites": [
+      "completion-reading-vocab-c2"
+    ],
     "description": "Match mastery-level vocabulary with Spanish translations",
     "estimatedTime": 3,
     "difficulty": 5
@@ -2512,9 +3346,13 @@
     "name": "Advanced Collocations",
     "learningMode": "completion",
     "dataPath": "data/c2/c2-completion-advanced-collocations-idioms.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["matching-reading-vocab-c2"],
+    "prerequisites": [
+      "matching-reading-vocab-c2"
+    ],
     "description": "Sophisticated collocations and idioms",
     "estimatedTime": 5,
     "difficulty": 5
@@ -2524,9 +3362,13 @@
     "name": "Advanced Structures",
     "learningMode": "completion",
     "dataPath": "data/c2/c2-completion-advanced-grammatical-structures.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["completion-advanced-collocations-idioms-c2"],
+    "prerequisites": [
+      "completion-advanced-collocations-idioms-c2"
+    ],
     "description": "Complex grammatical structures",
     "estimatedTime": 5,
     "difficulty": 5
@@ -2536,9 +3378,13 @@
     "name": "Advanced Structures Word Order",
     "learningMode": "reordering",
     "dataPath": "data/c2/c2-reordering-advanced-structures.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["completion-advanced-grammatical-structures-c2"],
+    "prerequisites": [
+      "completion-advanced-grammatical-structures-c2"
+    ],
     "description": "Reorder cleft sentences, fronted adverbials, and formal inversions",
     "estimatedTime": 3,
     "difficulty": 5
@@ -2548,9 +3394,13 @@
     "name": "Formal & Nuance",
     "learningMode": "completion",
     "dataPath": "data/c2/c2-completion-formal-vocabulary-nuance.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["reordering-advanced-structures-c2"],
+    "prerequisites": [
+      "reordering-advanced-structures-c2"
+    ],
     "description": "Formal vocabulary and subtle nuances",
     "estimatedTime": 5,
     "difficulty": 5
@@ -2560,9 +3410,13 @@
     "name": "Formal Register Advanced",
     "learningMode": "completion",
     "dataPath": "data/c2/c2-completion-formal-register-advanced.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["sorting-nuance-vocabulary-c2"],
+    "prerequisites": [
+      "sorting-nuance-vocabulary-c2"
+    ],
     "description": "Advanced formal register transformations and usage",
     "estimatedTime": 5,
     "difficulty": 5
@@ -2572,9 +3426,13 @@
     "name": "Vocabulary Nuance",
     "learningMode": "sorting",
     "dataPath": "data/c2/c2-sorting-nuance-vocabulary.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["completion-formal-vocabulary-nuance-c2"],
+    "prerequisites": [
+      "completion-formal-vocabulary-nuance-c2"
+    ],
     "description": "Subtle vocabulary distinctions",
     "estimatedTime": 3,
     "difficulty": 5
@@ -2584,9 +3442,13 @@
     "name": "Figurative Language in Scholarly Discourse",
     "learningMode": "reading",
     "dataPath": "data/c2/c2-reading-phrasal-verbs-idioms.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Reading",
-    "prerequisites": ["completion-formal-register-advanced-c2"],
+    "prerequisites": [
+      "completion-formal-register-advanced-c2"
+    ],
     "description": "Mastery-level phrasal verbs and idioms in philosophical and literary discourse",
     "estimatedTime": 7,
     "difficulty": 5
@@ -2596,9 +3458,13 @@
     "name": "Mastery Phrasal Verbs Matching",
     "learningMode": "matching",
     "dataPath": "data/c2/c2-matching-mastery-phrasal-verbs.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["reading-phrasal-verbs-idioms-c2"],
+    "prerequisites": [
+      "reading-phrasal-verbs-idioms-c2"
+    ],
     "description": "Match mastery-level phrasal verbs with Spanish translations (20 pairs)",
     "estimatedTime": 3,
     "difficulty": 5
@@ -2608,9 +3474,13 @@
     "name": "C2 Advanced Phrasal Verbs",
     "learningMode": "completion",
     "dataPath": "data/c2/c2-completion-advanced-phrasal-verbs.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["matching-mastery-phrasal-verbs-c2"],
+    "prerequisites": [
+      "matching-mastery-phrasal-verbs-c2"
+    ],
     "description": "Sophisticated phrasal verbs",
     "estimatedTime": 5,
     "difficulty": 5
@@ -2620,9 +3490,13 @@
     "name": "C2 Phrasal Verbs Word Order",
     "learningMode": "reordering",
     "dataPath": "data/c2/c2-reordering-phrasal-verbs.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["completion-advanced-phrasal-verbs-c2"],
+    "prerequisites": [
+      "completion-advanced-phrasal-verbs-c2"
+    ],
     "description": "Reorder sentences with mastery-level phrasal verbs in scholarly discourse",
     "estimatedTime": 3,
     "difficulty": 5
@@ -2632,9 +3506,13 @@
     "name": "Complex Prepositions",
     "learningMode": "completion",
     "dataPath": "data/c2/c2-completion-complex-prepositions-conjunctions.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["reordering-phrasal-verbs-c2"],
+    "prerequisites": [
+      "reordering-phrasal-verbs-c2"
+    ],
     "description": "Complex prepositions and conjunctions",
     "estimatedTime": 5,
     "difficulty": 5
@@ -2644,9 +3522,13 @@
     "name": "Advanced Collocations",
     "learningMode": "matching",
     "dataPath": "data/c2/c2-matching-advanced-collocations.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["completion-complex-prepositions-conjunctions-c2"],
+    "prerequisites": [
+      "completion-complex-prepositions-conjunctions-c2"
+    ],
     "description": "Sophisticated verb-noun collocations matched with Spanish equivalents (40 pairs)",
     "estimatedTime": 3,
     "difficulty": 5
@@ -2656,9 +3538,13 @@
     "name": "Mastery Idioms Flashcards",
     "learningMode": "flashcard",
     "dataPath": "data/c2/c2-flashcard-mastery-idioms.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Idioms",
-    "prerequisites": ["matching-advanced-collocations-c2"],
+    "prerequisites": [
+      "matching-advanced-collocations-c2"
+    ],
     "description": "Literary and classical idioms with Spanish translations (20 idioms)",
     "estimatedTime": 3,
     "difficulty": 5
@@ -2668,9 +3554,13 @@
     "name": "Mastery Idioms",
     "learningMode": "quiz",
     "dataPath": "data/c2/c2-quiz-mastery-idioms.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Idioms",
-    "prerequisites": ["flashcard-mastery-idioms-c2"],
+    "prerequisites": [
+      "flashcard-mastery-idioms-c2"
+    ],
     "description": "Literary and classical idioms for near-native proficiency (20 idioms)",
     "estimatedTime": 5,
     "difficulty": 5
@@ -2680,9 +3570,13 @@
     "name": "C2 Idioms Word Order",
     "learningMode": "reordering",
     "dataPath": "data/c2/c2-reordering-idioms.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Idioms",
-    "prerequisites": ["quiz-mastery-idioms-c2"],
+    "prerequisites": [
+      "quiz-mastery-idioms-c2"
+    ],
     "description": "Reorder sentences with literary and classical idioms in academic contexts",
     "estimatedTime": 3,
     "difficulty": 5
@@ -2692,21 +3586,29 @@
     "name": "Discourse Markers",
     "learningMode": "sorting",
     "dataPath": "data/c2/c2-sorting-discourse-markers.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Grammar",
     "description": "Sort discourse markers by function: Contrast, Addition, Cause, Sequence",
     "estimatedTime": 3,
     "difficulty": 5,
-    "prerequisites": ["reordering-idioms-c2"]
+    "prerequisites": [
+      "reordering-idioms-c2"
+    ]
   },
   {
     "id": "reordering-discourse-register-c2",
     "name": "Discourse & Register Word Order",
     "learningMode": "reordering",
     "dataPath": "data/c2/c2-reordering-discourse-register.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["sorting-discourse-markers-c2"],
+    "prerequisites": [
+      "sorting-discourse-markers-c2"
+    ],
     "description": "Reorder sentences with formal discourse markers and academic register",
     "estimatedTime": 3,
     "difficulty": 5
@@ -2716,9 +3618,13 @@
     "name": "Mastery Phrasal Verbs by Function",
     "learningMode": "sorting",
     "dataPath": "data/c2/c2-sorting-mastery-phrasal-verbs.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["reordering-discourse-register-c2"],
+    "prerequisites": [
+      "reordering-discourse-register-c2"
+    ],
     "description": "Sort mastery-level phrasal verbs by semantic function: causation, discourse, planning, perception, social, discovery",
     "estimatedTime": 3,
     "difficulty": 5
@@ -2728,9 +3634,13 @@
     "name": "Listening Quiz: Mastery Vocabulary",
     "learningMode": "listening-quiz",
     "dataPath": "data/c2/c2-listening-quiz-mastery.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["matching-literary-idioms-origins-c2"],
+    "prerequisites": [
+      "matching-literary-idioms-origins-c2"
+    ],
     "description": "Listen to complex academic vocabulary in context: ostensible, engender, prescience, render",
     "estimatedTime": 5,
     "difficulty": 5
@@ -2740,9 +3650,13 @@
     "name": "Listen & Complete: Mastery",
     "learningMode": "listen-complete",
     "dataPath": "data/c2/c2-listen-complete-mastery.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["listening-quiz-mastery-c2"],
+    "prerequisites": [
+      "listening-quiz-mastery-c2"
+    ],
     "description": "Listen and fill: nominalization, formal double negatives, lest, emergent, predicated on",
     "estimatedTime": 6,
     "difficulty": 5
@@ -2752,9 +3666,13 @@
     "name": "Dictation: Mastery",
     "learningMode": "dictation",
     "dataPath": "data/c2/c2-dictation-mastery.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["matching-literary-idioms-origins-c2"],
+    "prerequisites": [
+      "matching-literary-idioms-origins-c2"
+    ],
     "description": "Listen and write: nominalization, formal subjunctive, complex academic prose, hedging (TTS)",
     "estimatedTime": 6,
     "difficulty": 5
@@ -2764,9 +3682,13 @@
     "name": "C2 Review Practice",
     "learningMode": "completion",
     "dataPath": "data/c2/c2-completion-review.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Review",
-    "prerequisites": ["dictation-mastery-c2"],
+    "prerequisites": [
+      "dictation-mastery-c2"
+    ],
     "description": "Practice mastery phrasal verbs, literary idioms, word formation and academic transformations from C2",
     "estimatedTime": 5,
     "difficulty": 5
@@ -2776,9 +3698,13 @@
     "name": "Mastery Assessment",
     "learningMode": "quiz",
     "dataPath": "data/c2/c2-quiz-mastery-assessment.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Review",
-    "prerequisites": ["completion-review-c2"],
+    "prerequisites": [
+      "completion-review-c2"
+    ],
     "description": "Comprehensive mastery assessment",
     "estimatedTime": 5,
     "difficulty": 5
@@ -2788,9 +3714,13 @@
     "name": "Basic Sentence Transformations",
     "learningMode": "transformation",
     "dataPath": "data/a1/a1-transformation-basic-sentences.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["error-correction-basic-phrasal-verbs-a1"],
+    "prerequisites": [
+      "error-correction-basic-phrasal-verbs-a1"
+    ],
     "description": "Transform simple sentences: negatives, questions, tense changes",
     "estimatedTime": 4,
     "difficulty": 1
@@ -2800,9 +3730,13 @@
     "name": "Tense Transformations",
     "learningMode": "transformation",
     "dataPath": "data/a2/a2-transformation-tense-changes.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["sorting-vocabulary-context-a2"],
+    "prerequisites": [
+      "sorting-vocabulary-context-a2"
+    ],
     "description": "Rewrite sentences changing tenses, voice, and reported speech",
     "estimatedTime": 4,
     "difficulty": 2
@@ -2812,9 +3746,13 @@
     "name": "Conditionals & Passive Transformations",
     "learningMode": "transformation",
     "dataPath": "data/b1/b1-transformation-conditionals-passive.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["quiz-gerunds-infinitives-b1"],
+    "prerequisites": [
+      "quiz-gerunds-infinitives-b1"
+    ],
     "description": "Transform sentences using conditionals, passive voice, and indirect speech",
     "estimatedTime": 4,
     "difficulty": 3
@@ -2824,9 +3762,13 @@
     "name": "Advanced Grammar Transformations",
     "learningMode": "transformation",
     "dataPath": "data/b2/b2-transformation-advanced-grammar.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["quiz-gerunds-infinitives-advanced-b2"],
+    "prerequisites": [
+      "quiz-gerunds-infinitives-advanced-b2"
+    ],
     "description": "Third conditional, cleft sentences, causative, mixed conditionals",
     "estimatedTime": 4,
     "difficulty": 4
@@ -2836,9 +3778,13 @@
     "name": "Inversions & Subjunctive Transformations",
     "learningMode": "transformation",
     "dataPath": "data/c1/c1-transformation-inversions-subjunctive.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["quiz-phrasal-verbs-c1"],
+    "prerequisites": [
+      "quiz-phrasal-verbs-c1"
+    ],
     "description": "Formal inversions, subjunctive mood, reduced clauses, impersonal passive",
     "estimatedTime": 4,
     "difficulty": 5
@@ -2848,9 +3794,13 @@
     "name": "Formal & Academic Transformations",
     "learningMode": "transformation",
     "dataPath": "data/c2/c2-transformation-formal-structures.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["sorting-mastery-phrasal-verbs-c2"],
+    "prerequisites": [
+      "sorting-mastery-phrasal-verbs-c2"
+    ],
     "description": "Literary inversions, nominalization, hedging, absolute participle clauses",
     "estimatedTime": 4,
     "difficulty": 5
@@ -2860,9 +3810,13 @@
     "name": "Basic Suffixes — Jobs & People (-er, -or)",
     "learningMode": "word-formation",
     "dataPath": "data/a1/a1-word-formation-basic-suffixes.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["transformation-basic-sentences-a1"],
+    "prerequisites": [
+      "transformation-basic-sentences-a1"
+    ],
     "description": "Practice forming nouns for jobs and people using -er and -or suffixes",
     "estimatedTime": 3,
     "difficulty": 1
@@ -2872,9 +3826,13 @@
     "name": "Common Noun Suffixes (-tion, -ment, -ness)",
     "learningMode": "word-formation",
     "dataPath": "data/a2/a2-word-formation-common-nouns.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["transformation-tense-changes-a2"],
+    "prerequisites": [
+      "transformation-tense-changes-a2"
+    ],
     "description": "Practice forming nouns using common suffixes like -tion, -ment, and -ness",
     "estimatedTime": 3,
     "difficulty": 2
@@ -2884,9 +3842,13 @@
     "name": "Prefix & Suffix Combinations (un-, re-, -able, -ity)",
     "learningMode": "word-formation",
     "dataPath": "data/b1/b1-word-formation-prefix-suffix.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["transformation-conditionals-passive-b1"],
+    "prerequisites": [
+      "transformation-conditionals-passive-b1"
+    ],
     "description": "Practice combining prefixes and suffixes to form new words",
     "estimatedTime": 3,
     "difficulty": 3
@@ -2896,9 +3858,13 @@
     "name": "Advanced Suffixes (-ive, -ous, -ment, -ence)",
     "learningMode": "word-formation",
     "dataPath": "data/b2/b2-word-formation-advanced-suffixes.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["transformation-advanced-grammar-b2"],
+    "prerequisites": [
+      "transformation-advanced-grammar-b2"
+    ],
     "description": "Practice advanced word formation with suffixes like -ive, -ous, -ment, and -ence",
     "estimatedTime": 3,
     "difficulty": 4
@@ -2908,9 +3874,13 @@
     "name": "Multi-step Derivations (ir-, il-, im- + -ity, -ness)",
     "learningMode": "word-formation",
     "dataPath": "data/c1/c1-word-formation-multi-step.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["transformation-inversions-subjunctive-c1"],
+    "prerequisites": [
+      "transformation-inversions-subjunctive-c1"
+    ],
     "description": "Practice complex multi-step word derivations with negative prefixes and abstract suffixes",
     "estimatedTime": 3,
     "difficulty": 5
@@ -2920,9 +3890,13 @@
     "name": "Scholarly Word Families",
     "learningMode": "word-formation",
     "dataPath": "data/c2/c2-word-formation-scholarly.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["transformation-formal-structures-c2"],
+    "prerequisites": [
+      "transformation-formal-structures-c2"
+    ],
     "description": "Practice scholarly and literary word formation with archaic and academic derivations",
     "estimatedTime": 3,
     "difficulty": 6
@@ -2932,9 +3906,13 @@
     "name": "Fix Basic Subject-Verb Agreement",
     "learningMode": "error-correction",
     "dataPath": "data/a1/a1-error-correction-subject-verb.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["word-formation-basic-suffixes-a1"],
+    "prerequisites": [
+      "word-formation-basic-suffixes-a1"
+    ],
     "description": "Identify and correct basic subject-verb agreement errors",
     "estimatedTime": 4,
     "difficulty": 1
@@ -2944,9 +3922,13 @@
     "name": "Fix Tense Consistency Errors",
     "learningMode": "error-correction",
     "dataPath": "data/a2/a2-error-correction-tense-errors.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["word-formation-common-nouns-a2"],
+    "prerequisites": [
+      "word-formation-common-nouns-a2"
+    ],
     "description": "Identify and correct tense consistency and basic preposition errors",
     "estimatedTime": 4,
     "difficulty": 2
@@ -2956,9 +3938,13 @@
     "name": "Fix Conditional & Passive Errors",
     "learningMode": "error-correction",
     "dataPath": "data/b1/b1-error-correction-conditionals.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["word-formation-prefix-suffix-b1"],
+    "prerequisites": [
+      "word-formation-prefix-suffix-b1"
+    ],
     "description": "Identify and correct conditional, passive voice, and preposition errors",
     "estimatedTime": 4,
     "difficulty": 3
@@ -2968,9 +3954,13 @@
     "name": "Fix Advanced Tense & Collocation Errors",
     "learningMode": "error-correction",
     "dataPath": "data/b2/b2-error-correction-advanced-tense.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["word-formation-advanced-suffixes-b2"],
+    "prerequisites": [
+      "word-formation-advanced-suffixes-b2"
+    ],
     "description": "Identify and correct advanced tense, collocation, and word order errors",
     "estimatedTime": 4,
     "difficulty": 4
@@ -2980,9 +3970,13 @@
     "name": "Fix Inversion & Subjunctive Errors",
     "learningMode": "error-correction",
     "dataPath": "data/c1/c1-error-correction-inversion.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["word-formation-multi-step-c1"],
+    "prerequisites": [
+      "word-formation-multi-step-c1"
+    ],
     "description": "Identify and correct inversion, subjunctive, and advanced phrasal verb errors",
     "estimatedTime": 4,
     "difficulty": 5
@@ -2992,9 +3986,13 @@
     "name": "Fix Subtle Register & Collocation Errors",
     "learningMode": "error-correction",
     "dataPath": "data/c2/c2-error-correction-register.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["word-formation-scholarly-c2"],
+    "prerequisites": [
+      "word-formation-scholarly-c2"
+    ],
     "description": "Identify and correct subtle register, collocation, and literary idiom errors",
     "estimatedTime": 4,
     "difficulty": 6
@@ -3004,9 +4002,13 @@
     "name": "Pronoun & Possessive Transformations",
     "learningMode": "transformation",
     "dataPath": "data/a1/a1-transformation-pronoun-possessive.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["error-correction-subject-verb-a1"],
+    "prerequisites": [
+      "error-correction-subject-verb-a1"
+    ],
     "description": "Practice transforming sentences by changing pronouns and possessive forms",
     "estimatedTime": 4,
     "difficulty": 1
@@ -3016,9 +4018,13 @@
     "name": "Singular to Plural Transformations",
     "learningMode": "transformation",
     "dataPath": "data/a1/a1-transformation-singular-plural.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["transformation-pronoun-possessive-a1"],
+    "prerequisites": [
+      "transformation-pronoun-possessive-a1"
+    ],
     "description": "Practice transforming sentences from singular to plural forms",
     "estimatedTime": 4,
     "difficulty": 1
@@ -3028,9 +4034,13 @@
     "name": "Basic Suffixes — Jobs & People (-er, -or)",
     "learningMode": "word-formation",
     "dataPath": "data/a1/a1-word-formation-jobs-people.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["transformation-singular-plural-a1"],
+    "prerequisites": [
+      "transformation-singular-plural-a1"
+    ],
     "description": "Form nouns for jobs and people using -er and -or suffixes",
     "estimatedTime": 3,
     "difficulty": 1
@@ -3040,9 +4050,13 @@
     "name": "Simple Adjective Formation (-y, -ful)",
     "learningMode": "word-formation",
     "dataPath": "data/a1/a1-word-formation-adjective-formation.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["word-formation-jobs-people-a1"],
+    "prerequisites": [
+      "word-formation-jobs-people-a1"
+    ],
     "description": "Form simple adjectives using -y and -ful suffixes",
     "estimatedTime": 3,
     "difficulty": 1
@@ -3052,9 +4066,13 @@
     "name": "Fix Basic Subject-Verb Agreement",
     "learningMode": "error-correction",
     "dataPath": "data/a1/a1-error-correction-subject-verb-agreement.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["word-formation-adjective-formation-a1"],
+    "prerequisites": [
+      "word-formation-adjective-formation-a1"
+    ],
     "description": "Identify and fix basic subject-verb agreement errors",
     "estimatedTime": 4,
     "difficulty": 1
@@ -3064,9 +4082,13 @@
     "name": "Fix Common Article Errors",
     "learningMode": "error-correction",
     "dataPath": "data/a1/a1-error-correction-article-errors.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["error-correction-subject-verb-agreement-a1"],
+    "prerequisites": [
+      "error-correction-subject-verb-agreement-a1"
+    ],
     "description": "Identify and fix common article usage errors (a, an, the)",
     "estimatedTime": 4,
     "difficulty": 1
@@ -3076,9 +4098,13 @@
     "name": "Reorder Daily Routine Sentences",
     "learningMode": "reordering",
     "dataPath": "data/a1/a1-reordering-daily-routine.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["error-correction-article-errors-a1"],
+    "prerequisites": [
+      "error-correction-article-errors-a1"
+    ],
     "description": "Put words in the correct order to form daily routine sentences",
     "estimatedTime": 3,
     "difficulty": 1
@@ -3088,9 +4114,13 @@
     "name": "Sort Simple Idioms by Meaning",
     "learningMode": "sorting",
     "dataPath": "data/a1/a1-sorting-simple-idioms.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "Idioms",
-    "prerequisites": ["reordering-daily-routine-a1"],
+    "prerequisites": [
+      "reordering-daily-routine-a1"
+    ],
     "description": "Sort simple English idioms into categories by their meaning",
     "estimatedTime": 3,
     "difficulty": 1
@@ -3100,9 +4130,13 @@
     "name": "Sort Phrasal Verbs by Particle (up/down/on/off)",
     "learningMode": "sorting",
     "dataPath": "data/a1/a1-sorting-phrasal-verbs-particle.json",
-    "level": ["a1"],
+    "level": [
+      "a1"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["matching-basic-phrasal-verbs-a1"],
+    "prerequisites": [
+      "matching-basic-phrasal-verbs-a1"
+    ],
     "description": "Sort phrasal verbs by their particle (up, down, on, off)",
     "estimatedTime": 3,
     "difficulty": 1
@@ -3112,9 +4146,13 @@
     "name": "Past Continuous & Future Transformations",
     "learningMode": "transformation",
     "dataPath": "data/a2/a2-transformation-past-continuous-future.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["error-correction-tense-errors-a2"],
+    "prerequisites": [
+      "error-correction-tense-errors-a2"
+    ],
     "description": "Transform sentences between past continuous and future tenses",
     "estimatedTime": 4,
     "difficulty": 2
@@ -3124,9 +4162,13 @@
     "name": "Phrasal Verb Tense Transformations",
     "learningMode": "transformation",
     "dataPath": "data/a2/a2-transformation-phrasal-verb-tense.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["transformation-past-continuous-future-a2"],
+    "prerequisites": [
+      "transformation-past-continuous-future-a2"
+    ],
     "description": "Transform phrasal verb sentences across different tenses",
     "estimatedTime": 4,
     "difficulty": 2
@@ -3136,9 +4178,13 @@
     "name": "Common Noun Suffixes (-tion, -ment, -ness)",
     "learningMode": "word-formation",
     "dataPath": "data/a2/a2-word-formation-noun-suffixes.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["transformation-phrasal-verb-tense-a2"],
+    "prerequisites": [
+      "transformation-phrasal-verb-tense-a2"
+    ],
     "description": "Form nouns using common suffixes -tion, -ment, and -ness",
     "estimatedTime": 3,
     "difficulty": 2
@@ -3148,9 +4194,13 @@
     "name": "Adverb Formation (-ly)",
     "learningMode": "word-formation",
     "dataPath": "data/a2/a2-word-formation-adverb-formation.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["word-formation-noun-suffixes-a2"],
+    "prerequisites": [
+      "word-formation-noun-suffixes-a2"
+    ],
     "description": "Form adverbs from adjectives using the -ly suffix",
     "estimatedTime": 3,
     "difficulty": 2
@@ -3160,9 +4210,13 @@
     "name": "Fix Tense Consistency Errors",
     "learningMode": "error-correction",
     "dataPath": "data/a2/a2-error-correction-tense-consistency.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["word-formation-adverb-formation-a2"],
+    "prerequisites": [
+      "word-formation-adverb-formation-a2"
+    ],
     "description": "Identify and fix tense consistency errors in sentences",
     "estimatedTime": 4,
     "difficulty": 2
@@ -3172,9 +4226,13 @@
     "name": "Fix Phrasal Verb Particle Errors",
     "learningMode": "error-correction",
     "dataPath": "data/a2/a2-error-correction-phrasal-verb-particle.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["error-correction-tense-consistency-a2"],
+    "prerequisites": [
+      "error-correction-tense-consistency-a2"
+    ],
     "description": "Identify and fix incorrect particles in phrasal verbs",
     "estimatedTime": 4,
     "difficulty": 2
@@ -3184,9 +4242,13 @@
     "name": "Reorder Comparative & Superlative Sentences",
     "learningMode": "reordering",
     "dataPath": "data/a2/a2-reordering-comparatives-superlatives.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["error-correction-phrasal-verb-particle-a2"],
+    "prerequisites": [
+      "error-correction-phrasal-verb-particle-a2"
+    ],
     "description": "Put words in the correct order to form comparative and superlative sentences",
     "estimatedTime": 3,
     "difficulty": 2
@@ -3196,9 +4258,13 @@
     "name": "Reorder Daily Activity Sentences",
     "learningMode": "reordering",
     "dataPath": "data/a2/a2-reordering-daily-activities.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["reordering-comparatives-superlatives-a2"],
+    "prerequisites": [
+      "reordering-comparatives-superlatives-a2"
+    ],
     "description": "Put words in the correct order to form daily activity sentences",
     "estimatedTime": 3,
     "difficulty": 2
@@ -3208,9 +4274,13 @@
     "name": "Match Elementary Idioms to Situations",
     "learningMode": "matching",
     "dataPath": "data/a2/a2-matching-elementary-idioms.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Idioms",
-    "prerequisites": ["reordering-daily-activities-a2"],
+    "prerequisites": [
+      "reordering-daily-activities-a2"
+    ],
     "description": "Match elementary idioms to the situations where they are used",
     "estimatedTime": 3,
     "difficulty": 2
@@ -3220,9 +4290,13 @@
     "name": "Quantifiers Practice",
     "learningMode": "completion",
     "dataPath": "data/a2/a2-completion-quantifiers.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["matching-elementary-idioms-a2"],
+    "prerequisites": [
+      "matching-elementary-idioms-a2"
+    ],
     "description": "Complete sentences with some, any, much, many, a few, a little",
     "estimatedTime": 5,
     "difficulty": 2
@@ -3232,9 +4306,13 @@
     "name": "Sort Quantifier Sentences",
     "learningMode": "sorting",
     "dataPath": "data/a2/a2-sorting-quantifiers.json",
-    "level": ["a2"],
+    "level": [
+      "a2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["completion-quantifiers-a2"],
+    "prerequisites": [
+      "completion-quantifiers-a2"
+    ],
     "description": "Sort sentences by whether they use countable or uncountable nouns",
     "estimatedTime": 4,
     "difficulty": 2
@@ -3244,11 +4322,79 @@
     "name": "Phrasal Verb Register Transformations",
     "learningMode": "transformation",
     "dataPath": "data/b1/b1-transformation-phrasal-verb-register.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["error-correction-conditionals-b1"],
+    "prerequisites": [
+      "error-correction-conditionals-b1"
+    ],
     "description": "Transform phrasal verbs between informal and formal register",
     "estimatedTime": 4,
+    "difficulty": 3
+  },
+  {
+    "id": "transformation-relative-clauses-b1",
+    "name": "Relative Clause Transformations",
+    "learningMode": "transformation",
+    "dataPath": "data/b1/b1-transformation-relative-clauses.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Grammar",
+    "prerequisites": [
+      "transformation-phrasal-verb-register-b1"
+    ],
+    "description": "Combine, reduce, and manipulate relative clauses: who, which, whose, where, when",
+    "estimatedTime": 5,
+    "difficulty": 3
+  },
+  {
+    "id": "transformation-gerunds-infinitives-b1",
+    "name": "Gerund & Infinitive Transformations",
+    "learningMode": "transformation",
+    "dataPath": "data/b1/b1-transformation-gerunds-infinitives.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Grammar",
+    "prerequisites": [
+      "transformation-relative-clauses-b1"
+    ],
+    "description": "Transform sentences between gerund and infinitive patterns: remember, stop, try, used to",
+    "estimatedTime": 5,
+    "difficulty": 3
+  },
+  {
+    "id": "transformation-indirect-questions-b1",
+    "name": "Indirect Question Transformations",
+    "learningMode": "transformation",
+    "dataPath": "data/b1/b1-transformation-indirect-questions.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Grammar",
+    "prerequisites": [
+      "transformation-gerunds-infinitives-b1"
+    ],
+    "description": "Transform between direct and indirect questions: word order, if/whether, polite forms",
+    "estimatedTime": 5,
+    "difficulty": 3
+  },
+  {
+    "id": "transformation-modals-obligation-b1",
+    "name": "Modal Verb Transformations",
+    "learningMode": "transformation",
+    "dataPath": "data/b1/b1-transformation-modals-obligation.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Grammar",
+    "prerequisites": [
+      "transformation-indirect-questions-b1"
+    ],
+    "description": "Transform sentences using modals for obligation, deduction, ability, and permission",
+    "estimatedTime": 5,
     "difficulty": 3
   },
   {
@@ -3256,9 +4402,13 @@
     "name": "Prefix & Suffix Combinations (un-, re-, -able, -ity)",
     "learningMode": "word-formation",
     "dataPath": "data/b1/b1-word-formation-prefix-suffix-combo.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["transformation-phrasal-verb-register-b1"],
+    "prerequisites": [
+      "transformation-modals-obligation-b1"
+    ],
     "description": "Form words using prefix and suffix combinations (un-, re-, -able, -ity)",
     "estimatedTime": 3,
     "difficulty": 3
@@ -3268,9 +4418,13 @@
     "name": "Fix Conditional & Passive Errors",
     "learningMode": "error-correction",
     "dataPath": "data/b1/b1-error-correction-conditional-passive.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["word-formation-prefix-suffix-combo-b1"],
+    "prerequisites": [
+      "word-formation-prefix-suffix-combo-b1"
+    ],
     "description": "Identify and fix errors in conditional and passive voice sentences",
     "estimatedTime": 4,
     "difficulty": 3
@@ -3280,9 +4434,13 @@
     "name": "Reorder Conditional Sentences",
     "learningMode": "reordering",
     "dataPath": "data/b1/b1-reordering-conditional-sentences.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["error-correction-conditional-passive-b1"],
+    "prerequisites": [
+      "error-correction-conditional-passive-b1"
+    ],
     "description": "Put words in the correct order to form conditional sentences",
     "estimatedTime": 3,
     "difficulty": 3
@@ -3292,9 +4450,13 @@
     "name": "Reorder Phrasal Verb Sentences",
     "learningMode": "reordering",
     "dataPath": "data/b1/b1-reordering-phrasal-verb-sentences.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["reordering-conditional-sentences-b1"],
+    "prerequisites": [
+      "reordering-conditional-sentences-b1"
+    ],
     "description": "Put words in the correct order to form phrasal verb sentences",
     "estimatedTime": 3,
     "difficulty": 3
@@ -3304,9 +4466,13 @@
     "name": "Match Idioms to Everyday Situations",
     "learningMode": "matching",
     "dataPath": "data/b1/b1-matching-idioms-situations.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Idioms",
-    "prerequisites": ["reordering-phrasal-verb-sentences-b1"],
+    "prerequisites": [
+      "reordering-phrasal-verb-sentences-b1"
+    ],
     "description": "Match idioms to everyday situations where they apply",
     "estimatedTime": 3,
     "difficulty": 3
@@ -3316,9 +4482,13 @@
     "name": "Relative Clauses: Who, Which, That, Whose, Where",
     "learningMode": "reading",
     "dataPath": "data/b1/b1-reading-relative-clauses.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["matching-idioms-situations-b1"],
+    "prerequisites": [
+      "matching-idioms-situations-b1"
+    ],
     "description": "Learn defining and non-defining relative clauses with who, which, that, whose, where",
     "estimatedTime": 8,
     "difficulty": 3
@@ -3328,9 +4498,13 @@
     "name": "Relative Clauses Practice",
     "learningMode": "completion",
     "dataPath": "data/b1/b1-completion-relative-clauses.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["reading-relative-clauses-b1"],
+    "prerequisites": [
+      "reading-relative-clauses-b1"
+    ],
     "description": "Complete sentences with who, which, that, whose, where, or why",
     "estimatedTime": 5,
     "difficulty": 3
@@ -3340,9 +4514,13 @@
     "name": "Reorder Relative Clause Sentences",
     "learningMode": "reordering",
     "dataPath": "data/b1/b1-reordering-relative-clauses.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["completion-relative-clauses-b1"],
+    "prerequisites": [
+      "completion-relative-clauses-b1"
+    ],
     "description": "Put words in the correct order to form sentences with relative clauses",
     "estimatedTime": 4,
     "difficulty": 3
@@ -3352,9 +4530,13 @@
     "name": "Fix Quantifier Errors",
     "learningMode": "error-correction",
     "dataPath": "data/b1/b1-error-correction-quantifiers.json",
-    "level": ["b1"],
+    "level": [
+      "b1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["reordering-relative-clauses-b1"],
+    "prerequisites": [
+      "reordering-relative-clauses-b1"
+    ],
     "description": "Identify and correct errors with much/many, some/any, few/little, and uncountable nouns",
     "estimatedTime": 4,
     "difficulty": 3
@@ -3364,11 +4546,79 @@
     "name": "Cleft Sentence & Emphasis Transformations",
     "learningMode": "transformation",
     "dataPath": "data/b2/b2-transformation-cleft-emphasis.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["error-correction-advanced-tense-b2"],
+    "prerequisites": [
+      "error-correction-advanced-tense-b2"
+    ],
     "description": "Transform sentences using cleft structures for emphasis",
     "estimatedTime": 4,
+    "difficulty": 4
+  },
+  {
+    "id": "transformation-passive-advanced-b2",
+    "name": "Advanced Passive Transformations",
+    "learningMode": "transformation",
+    "dataPath": "data/b2/b2-transformation-passive-advanced.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Grammar",
+    "prerequisites": [
+      "transformation-cleft-emphasis-b2"
+    ],
+    "description": "Advanced passive: causative have/get, impersonal passive, modal passive, double object",
+    "estimatedTime": 5,
+    "difficulty": 4
+  },
+  {
+    "id": "transformation-conditionals-mixed-b2",
+    "name": "Mixed Conditional Transformations",
+    "learningMode": "transformation",
+    "dataPath": "data/b2/b2-transformation-conditionals-mixed.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Grammar",
+    "prerequisites": [
+      "transformation-passive-advanced-b2"
+    ],
+    "description": "Mixed conditionals, formal inversions, unless, provided that, as long as",
+    "estimatedTime": 5,
+    "difficulty": 4
+  },
+  {
+    "id": "transformation-reported-speech-advanced-b2",
+    "name": "Advanced Reported Speech Transformations",
+    "learningMode": "transformation",
+    "dataPath": "data/b2/b2-transformation-reported-speech-advanced.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Grammar",
+    "prerequisites": [
+      "transformation-conditionals-mixed-b2"
+    ],
+    "description": "Reported speech with advanced verbs: deny, insist, accuse, threaten, recommend",
+    "estimatedTime": 5,
+    "difficulty": 4
+  },
+  {
+    "id": "transformation-connectors-emphasis-b2",
+    "name": "Connector & Emphasis Transformations",
+    "learningMode": "transformation",
+    "dataPath": "data/b2/b2-transformation-connectors-emphasis.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Grammar",
+    "prerequisites": [
+      "transformation-reported-speech-advanced-b2"
+    ],
+    "description": "Transform using discourse connectors: concession, result, purpose, contrast, addition",
+    "estimatedTime": 5,
     "difficulty": 4
   },
   {
@@ -3376,9 +4626,13 @@
     "name": "Advanced Suffixes (-ive, -ous, -ment, -ence)",
     "learningMode": "word-formation",
     "dataPath": "data/b2/b2-word-formation-advanced-suffixes-ive.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["transformation-cleft-emphasis-b2"],
+    "prerequisites": [
+      "transformation-connectors-emphasis-b2"
+    ],
     "description": "Form words using advanced suffixes -ive, -ous, -ment, and -ence",
     "estimatedTime": 3,
     "difficulty": 4
@@ -3388,9 +4642,13 @@
     "name": "Negative Prefixes (dis-, mis-, un-, in-)",
     "learningMode": "word-formation",
     "dataPath": "data/b2/b2-word-formation-negative-prefixes.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["word-formation-advanced-suffixes-ive-b2"],
+    "prerequisites": [
+      "word-formation-advanced-suffixes-ive-b2"
+    ],
     "description": "Form words using negative prefixes dis-, mis-, un-, and in-",
     "estimatedTime": 3,
     "difficulty": 4
@@ -3400,9 +4658,13 @@
     "name": "Fix Advanced Tense & Collocation Errors",
     "learningMode": "error-correction",
     "dataPath": "data/b2/b2-error-correction-advanced-tense-collocation.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["word-formation-negative-prefixes-b2"],
+    "prerequisites": [
+      "word-formation-negative-prefixes-b2"
+    ],
     "description": "Identify and fix advanced tense and collocation errors",
     "estimatedTime": 4,
     "difficulty": 4
@@ -3412,9 +4674,13 @@
     "name": "Reorder Complex Compound Sentences",
     "learningMode": "reordering",
     "dataPath": "data/b2/b2-reordering-complex-compound.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["error-correction-advanced-tense-collocation-b2"],
+    "prerequisites": [
+      "error-correction-advanced-tense-collocation-b2"
+    ],
     "description": "Put words in the correct order to form complex compound sentences",
     "estimatedTime": 3,
     "difficulty": 4
@@ -3424,9 +4690,13 @@
     "name": "Reorder Advanced Phrasal Verb Sentences",
     "learningMode": "reordering",
     "dataPath": "data/b2/b2-reordering-advanced-phrasal-verbs.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["reordering-complex-compound-b2"],
+    "prerequisites": [
+      "reordering-complex-compound-b2"
+    ],
     "description": "Put words in the correct order to form advanced phrasal verb sentences",
     "estimatedTime": 3,
     "difficulty": 4
@@ -3436,9 +4706,13 @@
     "name": "Sort Professional Idioms by Context",
     "learningMode": "sorting",
     "dataPath": "data/b2/b2-sorting-professional-idioms.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Idioms",
-    "prerequisites": ["reordering-advanced-phrasal-verbs-b2"],
+    "prerequisites": [
+      "reordering-advanced-phrasal-verbs-b2"
+    ],
     "description": "Sort professional idioms into categories by their context of use",
     "estimatedTime": 3,
     "difficulty": 4
@@ -3448,9 +4722,13 @@
     "name": "Fix Relative Clause Errors",
     "learningMode": "error-correction",
     "dataPath": "data/b2/b2-error-correction-relative-clauses.json",
-    "level": ["b2"],
+    "level": [
+      "b2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["sorting-professional-idioms-b2"],
+    "prerequisites": [
+      "sorting-professional-idioms-b2"
+    ],
     "description": "Identify and correct common errors in relative clauses (who/which/that, defining/non-defining)",
     "estimatedTime": 4,
     "difficulty": 4
@@ -3460,9 +4738,13 @@
     "name": "Participle Clause Transformations",
     "learningMode": "transformation",
     "dataPath": "data/c1/c1-transformation-participle-clauses.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["error-correction-inversion-c1"],
+    "prerequisites": [
+      "error-correction-inversion-c1"
+    ],
     "description": "Transform sentences using participle clause constructions",
     "estimatedTime": 4,
     "difficulty": 5
@@ -3472,11 +4754,79 @@
     "name": "Formal Register Idiom Transformations",
     "learningMode": "transformation",
     "dataPath": "data/c1/c1-transformation-formal-register-idioms.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Idioms",
-    "prerequisites": ["transformation-participle-clauses-c1"],
+    "prerequisites": [
+      "transformation-participle-clauses-c1"
+    ],
     "description": "Transform idioms between informal and formal register",
     "estimatedTime": 4,
+    "difficulty": 5
+  },
+  {
+    "id": "transformation-cleft-focus-c1",
+    "name": "Cleft & Focus Transformations",
+    "learningMode": "transformation",
+    "dataPath": "data/c1/c1-transformation-cleft-focus.json",
+    "level": [
+      "c1"
+    ],
+    "category": "Grammar",
+    "prerequisites": [
+      "transformation-formal-register-idioms-c1"
+    ],
+    "description": "Cleft sentences, pseudo-clefts, and focus structures for emphasis",
+    "estimatedTime": 5,
+    "difficulty": 5
+  },
+  {
+    "id": "transformation-concession-contrast-c1",
+    "name": "Concession & Contrast Transformations",
+    "learningMode": "transformation",
+    "dataPath": "data/c1/c1-transformation-concession-contrast.json",
+    "level": [
+      "c1"
+    ],
+    "category": "Grammar",
+    "prerequisites": [
+      "transformation-cleft-focus-c1"
+    ],
+    "description": "Advanced concessive structures: much as, albeit, notwithstanding, however + adj",
+    "estimatedTime": 5,
+    "difficulty": 5
+  },
+  {
+    "id": "transformation-nominalization-c1",
+    "name": "Nominalization Transformations",
+    "learningMode": "transformation",
+    "dataPath": "data/c1/c1-transformation-nominalization.json",
+    "level": [
+      "c1"
+    ],
+    "category": "Grammar",
+    "prerequisites": [
+      "transformation-concession-contrast-c1"
+    ],
+    "description": "Convert verbal to nominal constructions and vice versa for academic register",
+    "estimatedTime": 5,
+    "difficulty": 5
+  },
+  {
+    "id": "transformation-hedging-stance-c1",
+    "name": "Hedging & Stance Transformations",
+    "learningMode": "transformation",
+    "dataPath": "data/c1/c1-transformation-hedging-stance.json",
+    "level": [
+      "c1"
+    ],
+    "category": "Grammar",
+    "prerequisites": [
+      "transformation-nominalization-c1"
+    ],
+    "description": "Academic hedging: tend to, it appears, arguably, to some extent, may well",
+    "estimatedTime": 5,
     "difficulty": 5
   },
   {
@@ -3484,9 +4834,13 @@
     "name": "Multi-step Derivations (ir-, il-, im- + -ity, -ness)",
     "learningMode": "word-formation",
     "dataPath": "data/c1/c1-word-formation-multi-step-derivations.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["transformation-formal-register-idioms-c1"],
+    "prerequisites": [
+      "transformation-hedging-stance-c1"
+    ],
     "description": "Form words using multi-step derivations with ir-, il-, im- prefixes and -ity, -ness suffixes",
     "estimatedTime": 3,
     "difficulty": 5
@@ -3496,9 +4850,13 @@
     "name": "Academic Word Formation",
     "learningMode": "word-formation",
     "dataPath": "data/c1/c1-word-formation-academic.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["word-formation-multi-step-derivations-c1"],
+    "prerequisites": [
+      "word-formation-multi-step-derivations-c1"
+    ],
     "description": "Form academic vocabulary through complex word derivation",
     "estimatedTime": 3,
     "difficulty": 5
@@ -3508,9 +4866,13 @@
     "name": "Fix Inversion & Subjunctive Errors",
     "learningMode": "error-correction",
     "dataPath": "data/c1/c1-error-correction-inversion-subjunctive.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["word-formation-academic-c1"],
+    "prerequisites": [
+      "word-formation-academic-c1"
+    ],
     "description": "Identify and fix errors in inverted and subjunctive constructions",
     "estimatedTime": 4,
     "difficulty": 5
@@ -3520,9 +4882,13 @@
     "name": "Fix Advanced Phrasal Verb Errors",
     "learningMode": "error-correction",
     "dataPath": "data/c1/c1-error-correction-advanced-phrasal-verbs.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["error-correction-inversion-subjunctive-c1"],
+    "prerequisites": [
+      "error-correction-inversion-subjunctive-c1"
+    ],
     "description": "Identify and fix errors in advanced phrasal verb usage",
     "estimatedTime": 4,
     "difficulty": 5
@@ -3532,9 +4898,13 @@
     "name": "Reorder Inverted & Emphatic Sentences",
     "learningMode": "reordering",
     "dataPath": "data/c1/c1-reordering-inverted-emphatic.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Grammar",
-    "prerequisites": ["error-correction-advanced-phrasal-verbs-c1"],
+    "prerequisites": [
+      "error-correction-advanced-phrasal-verbs-c1"
+    ],
     "description": "Put words in the correct order to form inverted and emphatic sentences",
     "estimatedTime": 3,
     "difficulty": 5
@@ -3544,9 +4914,13 @@
     "name": "Reorder Academic Argument Sentences",
     "learningMode": "reordering",
     "dataPath": "data/c1/c1-reordering-academic-argument.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["reordering-inverted-emphatic-c1"],
+    "prerequisites": [
+      "reordering-inverted-emphatic-c1"
+    ],
     "description": "Put words in the correct order to form academic argument sentences",
     "estimatedTime": 3,
     "difficulty": 5
@@ -3556,9 +4930,13 @@
     "name": "Sort Phrasal Verbs by Formal Register",
     "learningMode": "sorting",
     "dataPath": "data/c1/c1-sorting-phrasal-verbs-register.json",
-    "level": ["c1"],
+    "level": [
+      "c1"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["reordering-academic-argument-c1"],
+    "prerequisites": [
+      "reordering-academic-argument-c1"
+    ],
     "description": "Sort phrasal verbs by their level of formality",
     "estimatedTime": 3,
     "difficulty": 5
@@ -3568,9 +4946,13 @@
     "name": "Complex Nominalization Transformations",
     "learningMode": "transformation",
     "dataPath": "data/c2/c2-transformation-nominalization.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["error-correction-register-c2"],
+    "prerequisites": [
+      "error-correction-register-c2"
+    ],
     "description": "Transform sentences using complex nominalization structures",
     "estimatedTime": 4,
     "difficulty": 6
@@ -3580,9 +4962,13 @@
     "name": "Academic Hedging Transformations",
     "learningMode": "transformation",
     "dataPath": "data/c2/c2-transformation-academic-hedging.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["transformation-nominalization-c2"],
+    "prerequisites": [
+      "transformation-nominalization-c2"
+    ],
     "description": "Transform sentences using academic hedging expressions",
     "estimatedTime": 4,
     "difficulty": 6
@@ -3592,9 +4978,13 @@
     "name": "Archaic & Literary Derivations",
     "learningMode": "word-formation",
     "dataPath": "data/c2/c2-word-formation-archaic-literary.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["transformation-academic-hedging-c2"],
+    "prerequisites": [
+      "transformation-academic-hedging-c2"
+    ],
     "description": "Form words using archaic and literary derivation patterns",
     "estimatedTime": 3,
     "difficulty": 6
@@ -3604,9 +4994,13 @@
     "name": "Scholarly Word Families",
     "learningMode": "word-formation",
     "dataPath": "data/c2/c2-word-formation-scholarly-families.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["word-formation-archaic-literary-c2"],
+    "prerequisites": [
+      "word-formation-archaic-literary-c2"
+    ],
     "description": "Explore scholarly word families and their derivational relationships",
     "estimatedTime": 3,
     "difficulty": 6
@@ -3616,9 +5010,13 @@
     "name": "Fix Subtle Register & Collocation Errors",
     "learningMode": "error-correction",
     "dataPath": "data/c2/c2-error-correction-register-collocation.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["word-formation-scholarly-families-c2"],
+    "prerequisites": [
+      "word-formation-scholarly-families-c2"
+    ],
     "description": "Identify and fix subtle register and collocation errors",
     "estimatedTime": 4,
     "difficulty": 6
@@ -3628,9 +5026,13 @@
     "name": "Fix Misused Literary Idioms",
     "learningMode": "error-correction",
     "dataPath": "data/c2/c2-error-correction-literary-idioms.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Idioms",
-    "prerequisites": ["error-correction-register-collocation-c2"],
+    "prerequisites": [
+      "error-correction-register-collocation-c2"
+    ],
     "description": "Identify and fix misused literary idioms in context",
     "estimatedTime": 4,
     "difficulty": 6
@@ -3640,9 +5042,13 @@
     "name": "Reorder Formal Academic Sentences",
     "learningMode": "reordering",
     "dataPath": "data/c2/c2-reordering-formal-academic.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["error-correction-literary-idioms-c2"],
+    "prerequisites": [
+      "error-correction-literary-idioms-c2"
+    ],
     "description": "Put words in the correct order to form formal academic sentences",
     "estimatedTime": 3,
     "difficulty": 6
@@ -3652,9 +5058,13 @@
     "name": "Reorder Literary Prose Sentences",
     "learningMode": "reordering",
     "dataPath": "data/c2/c2-reordering-literary-prose.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Vocabulary",
-    "prerequisites": ["reordering-formal-academic-c2"],
+    "prerequisites": [
+      "reordering-formal-academic-c2"
+    ],
     "description": "Put words in the correct order to form literary prose sentences",
     "estimatedTime": 3,
     "difficulty": 6
@@ -3664,9 +5074,13 @@
     "name": "Match Mastery Phrasal Verbs to Formal Equivalents",
     "learningMode": "matching",
     "dataPath": "data/c2/c2-matching-mastery-phrasal-verbs-formal.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "PhrasalVerbs",
-    "prerequisites": ["sorting-discourse-markers-c2"],
+    "prerequisites": [
+      "sorting-discourse-markers-c2"
+    ],
     "description": "Match mastery-level phrasal verbs to their formal equivalents",
     "estimatedTime": 3,
     "difficulty": 6
@@ -3676,9 +5090,13 @@
     "name": "Match Literary Idioms to Origins",
     "learningMode": "matching",
     "dataPath": "data/c2/c2-matching-literary-idioms-origins.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Idioms",
-    "prerequisites": ["matching-mastery-phrasal-verbs-formal-c2"],
+    "prerequisites": [
+      "matching-mastery-phrasal-verbs-formal-c2"
+    ],
     "description": "Match literary idioms to their historical origins",
     "estimatedTime": 3,
     "difficulty": 6
@@ -3688,9 +5106,13 @@
     "name": "Advanced Grammar Structures Quiz",
     "learningMode": "quiz",
     "dataPath": "data/c2/c2-quiz-advanced-grammar-structures.json",
-    "level": ["c2"],
+    "level": [
+      "c2"
+    ],
     "category": "Grammar",
-    "prerequisites": ["reordering-advanced-structures-c2"],
+    "prerequisites": [
+      "reordering-advanced-structures-c2"
+    ],
     "description": "Test your mastery of advanced syntactic structures: inversion, cleft sentences, subjunctive, mixed conditionals, and nominalization",
     "estimatedTime": 5,
     "difficulty": 5

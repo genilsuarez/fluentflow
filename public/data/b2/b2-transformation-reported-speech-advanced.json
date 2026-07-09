@@ -1,0 +1,218 @@
+[
+  {
+    "prompt": "Change to reported speech using <told>",
+    "source": "\"I'll pick you up at 8,\" he said to me.",
+    "correct": [
+      "He told me he would pick me up at 8.",
+      "He told me that he would pick me up at 8."
+    ],
+    "explanation": "Reported speech: <will> → <would>, <you> → <me>, <I> → <he>."
+  },
+  {
+    "prompt": "Change to reported command using <ordered>",
+    "source": "\"Leave the building immediately!\" the officer said to us.",
+    "correct": [
+      "The officer ordered us to leave the building immediately."
+    ],
+    "explanation": "Reported commands: reporting verb + object + <to> + infinitive."
+  },
+  {
+    "prompt": "Change to reported request using <asked>",
+    "source": "\"Could you please close the door?\" she said to him.",
+    "correct": [
+      "She asked him to close the door."
+    ],
+    "explanation": "Reported requests: <asked> + object + <to> + infinitive."
+  },
+  {
+    "prompt": "Change to reported speech using <admitted>",
+    "source": "\"Yes, I broke the vase,\" she said.",
+    "correct": [
+      "She admitted breaking the vase.",
+      "She admitted that she had broken the vase."
+    ],
+    "explanation": "<Admit> + gerund or <that> clause for confessions."
+  },
+  {
+    "prompt": "Change to reported speech using <denied>",
+    "source": "\"I didn't take the money,\" he said.",
+    "correct": [
+      "He denied taking the money.",
+      "He denied having taken the money."
+    ],
+    "explanation": "<Deny> + gerund for negative claims. Never: <deny to + infinitive>."
+  },
+  {
+    "prompt": "Change to reported speech using <suggested>",
+    "source": "\"Why don't we eat out tonight?\" she said.",
+    "correct": [
+      "She suggested eating out that night.",
+      "She suggested that they eat out that night."
+    ],
+    "explanation": "<Suggest> + gerund or <that> + subjunctive for proposals."
+  },
+  {
+    "prompt": "Change to reported speech using <warned>",
+    "source": "\"Don't touch that wire! It's dangerous,\" Dad said to me.",
+    "correct": [
+      "Dad warned me not to touch that wire.",
+      "Dad warned me not to touch the wire because it was dangerous."
+    ],
+    "explanation": "<Warn> + object + <not to> + infinitive for negative warnings."
+  },
+  {
+    "prompt": "Change to reported speech using <promised>",
+    "source": "\"I won't tell anyone your secret,\" she said.",
+    "correct": [
+      "She promised not to tell anyone my secret.",
+      "She promised she wouldn't tell anyone my secret."
+    ],
+    "explanation": "<Promise> + <(not) to> + infinitive or <that> + clause."
+  },
+  {
+    "prompt": "Change to reported speech using <recommended>",
+    "source": "\"You should try the seafood restaurant,\" he said.",
+    "correct": [
+      "He recommended trying the seafood restaurant.",
+      "He recommended that I try the seafood restaurant."
+    ],
+    "explanation": "<Recommend> + gerund or <that> + subjunctive."
+  },
+  {
+    "prompt": "Change to reported speech using <reminded>",
+    "source": "\"Don't forget to lock the door,\" Mum said to me.",
+    "correct": [
+      "Mum reminded me to lock the door."
+    ],
+    "explanation": "<Remind> + object + <to> + infinitive."
+  },
+  {
+    "prompt": "Change to reported speech using <accused>",
+    "source": "\"You stole my idea!\" she said to him.",
+    "correct": [
+      "She accused him of stealing her idea."
+    ],
+    "hint": "<Accuse> + object + <of> + gerund",
+    "explanation": "<Accuse> + object + <of> + gerund for allegations."
+  },
+  {
+    "prompt": "Change to reported speech using <apologized>",
+    "source": "\"I'm sorry I forgot your birthday,\" he said.",
+    "correct": [
+      "He apologized for forgetting my birthday.",
+      "He apologized for having forgotten my birthday."
+    ],
+    "explanation": "<Apologize for> + gerund."
+  },
+  {
+    "prompt": "Change to reported speech using <insisted>",
+    "source": "\"I'll pay for dinner. I insist,\" she said.",
+    "correct": [
+      "She insisted on paying for dinner."
+    ],
+    "hint": "<Insist on> + gerund",
+    "explanation": "<Insist on> + gerund for strong declarations."
+  },
+  {
+    "prompt": "Change to reported speech using <offered>",
+    "source": "\"Shall I carry your bags?\" he said.",
+    "correct": [
+      "He offered to carry my bags."
+    ],
+    "explanation": "<Offer> + <to> + infinitive."
+  },
+  {
+    "prompt": "Change to reported speech using <refused>",
+    "source": "\"No, I won't sign the contract,\" she said.",
+    "correct": [
+      "She refused to sign the contract."
+    ],
+    "explanation": "<Refuse> + <to> + infinitive for declining."
+  },
+  {
+    "prompt": "Change to reported speech using <agreed>",
+    "source": "\"OK, I'll work overtime this weekend,\" he said.",
+    "correct": [
+      "He agreed to work overtime that weekend."
+    ],
+    "explanation": "<Agree> + <to> + infinitive."
+  },
+  {
+    "prompt": "Change to reported speech using <complained>",
+    "source": "\"The food here is always cold,\" she said.",
+    "correct": [
+      "She complained that the food there was always cold.",
+      "She complained about the food always being cold."
+    ],
+    "explanation": "<Complain that> + clause or <complain about> + gerund."
+  },
+  {
+    "prompt": "Change to reported speech using <encouraged>",
+    "source": "\"Go on, you can do it!\" she said to him.",
+    "correct": [
+      "She encouraged him to do it.",
+      "She encouraged him to go on."
+    ],
+    "explanation": "<Encourage> + object + <to> + infinitive."
+  },
+  {
+    "prompt": "Change to reported speech using <threatened>",
+    "source": "\"If you're late again, I'll fire you,\" the boss said.",
+    "correct": [
+      "The boss threatened to fire me if I was late again.",
+      "The boss threatened to fire him if he was late again."
+    ],
+    "explanation": "<Threaten> + <to> + infinitive for warnings with consequences."
+  },
+  {
+    "prompt": "Change to reported speech using <congratulated>",
+    "source": "\"Well done on passing your exam!\" she said to me.",
+    "correct": [
+      "She congratulated me on passing my exam."
+    ],
+    "hint": "<Congratulate> + object + <on> + gerund",
+    "explanation": "<Congratulate> + object + <on> + gerund/noun."
+  },
+  {
+    "prompt": "Change to reported question",
+    "source": "\"Where are you going tonight?\" she asked me.",
+    "correct": [
+      "She asked me where I was going that night."
+    ],
+    "explanation": "Reported question: statement word order, tense shift, time reference changes."
+  },
+  {
+    "prompt": "Change to reported speech using <claimed>",
+    "source": "\"I've never been to that place before,\" he said.",
+    "correct": [
+      "He claimed that he had never been to that place before.",
+      "He claimed he had never been to that place before."
+    ],
+    "explanation": "<Claim> + <that> clause for statements of dubious truth."
+  },
+  {
+    "prompt": "Change to reported speech using <begged>",
+    "source": "\"Please, please don't leave me!\" she said.",
+    "correct": [
+      "She begged me not to leave her."
+    ],
+    "explanation": "<Beg> + object + <(not) to> + infinitive for desperate requests."
+  },
+  {
+    "prompt": "Change to reported speech using <invited>",
+    "source": "\"Would you like to come to my party on Saturday?\" she said.",
+    "correct": [
+      "She invited me to her party on Saturday.",
+      "She invited me to come to her party on Saturday."
+    ],
+    "explanation": "<Invite> + object + <to> + infinitive/noun."
+  },
+  {
+    "prompt": "Change to reported speech using <advised>",
+    "source": "\"If I were you, I'd see a specialist,\" the doctor said.",
+    "correct": [
+      "The doctor advised me to see a specialist."
+    ],
+    "explanation": "<Advise> + object + <to> + infinitive."
+  }
+]

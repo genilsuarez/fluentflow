@@ -1,0 +1,220 @@
+[
+  {
+    "prompt": "Combine using a defining relative clause with <who>",
+    "source": "The woman is my teacher. She speaks three languages.",
+    "correct": [
+      "The woman who speaks three languages is my teacher."
+    ],
+    "explanation": "Defining relative clause with <who> for people: identifies which woman."
+  },
+  {
+    "prompt": "Combine using a defining relative clause with <which>",
+    "source": "I bought a book. It was on sale.",
+    "correct": [
+      "I bought a book which was on sale.",
+      "I bought a book that was on sale."
+    ],
+    "explanation": "Defining relative clause with <which/that> for things."
+  },
+  {
+    "prompt": "Rewrite using a non-defining relative clause",
+    "source": "My brother lives in London. He is a doctor.",
+    "correct": [
+      "My brother, who is a doctor, lives in London.",
+      "My brother, who lives in London, is a doctor."
+    ],
+    "hint": "Non-defining clauses use commas",
+    "explanation": "Non-defining relative clauses add extra information and are set off by commas."
+  },
+  {
+    "prompt": "Combine using <whose>",
+    "source": "I met a girl. Her father is a pilot.",
+    "correct": [
+      "I met a girl whose father is a pilot."
+    ],
+    "explanation": "<Whose> replaces possessives (her, his, their) in relative clauses."
+  },
+  {
+    "prompt": "Combine using <where>",
+    "source": "That's the restaurant. We had dinner there last week.",
+    "correct": [
+      "That's the restaurant where we had dinner last week."
+    ],
+    "explanation": "<Where> replaces place adverbs (there, here) in relative clauses."
+  },
+  {
+    "prompt": "Combine using <when>",
+    "source": "I remember the day. We first met on that day.",
+    "correct": [
+      "I remember the day when we first met.",
+      "I remember the day we first met."
+    ],
+    "explanation": "<When> replaces time expressions in relative clauses. It can also be omitted."
+  },
+  {
+    "prompt": "Reduce the relative clause",
+    "source": "The man who is talking to the receptionist is my boss.",
+    "correct": [
+      "The man talking to the receptionist is my boss."
+    ],
+    "hint": "Remove <who is> and keep the participle",
+    "explanation": "Reduced relative clause: remove <who/which + is> and keep the present participle."
+  },
+  {
+    "prompt": "Reduce the relative clause (passive)",
+    "source": "The cake which was made by my grandmother was delicious.",
+    "correct": [
+      "The cake made by my grandmother was delicious."
+    ],
+    "explanation": "Reduced relative clause (passive): remove <which was> and keep the past participle."
+  },
+  {
+    "prompt": "Rewrite omitting the relative pronoun",
+    "source": "The movie that we watched yesterday was boring.",
+    "correct": [
+      "The movie we watched yesterday was boring."
+    ],
+    "hint": "Object relative pronouns can be omitted",
+    "explanation": "When the relative pronoun is the object of the verb, it can be omitted in defining clauses."
+  },
+  {
+    "prompt": "Combine using a non-defining clause with <which> (referring to the whole sentence)",
+    "source": "He passed all his exams. This surprised everyone.",
+    "correct": [
+      "He passed all his exams, which surprised everyone."
+    ],
+    "explanation": "Non-defining <which> can refer to the entire previous clause."
+  },
+  {
+    "prompt": "Combine using <whose>",
+    "source": "That's the company. Its products are sold worldwide.",
+    "correct": [
+      "That's the company whose products are sold worldwide."
+    ],
+    "explanation": "<Whose> works for both people and things to show possession."
+  },
+  {
+    "prompt": "Rewrite using a relative clause with <in which>",
+    "source": "She described the situation. She found herself in that situation.",
+    "correct": [
+      "She described the situation in which she found herself.",
+      "She described the situation which she found herself in.",
+      "She described the situation she found herself in."
+    ],
+    "explanation": "Formal: preposition + <which>. Informal: <which> ... preposition at end."
+  },
+  {
+    "prompt": "Combine using a defining relative clause",
+    "source": "I need a friend. I can trust that friend.",
+    "correct": [
+      "I need a friend who I can trust.",
+      "I need a friend that I can trust.",
+      "I need a friend I can trust."
+    ],
+    "explanation": "Object relative pronoun (who/that) can be included or omitted in defining clauses."
+  },
+  {
+    "prompt": "Reduce the relative clause to an infinitive",
+    "source": "He was the first person who arrived at the party.",
+    "correct": [
+      "He was the first person to arrive at the party."
+    ],
+    "hint": "After ordinals (first, last) use <to + infinitive>",
+    "explanation": "After superlatives and ordinals, relative clauses can be reduced to <to + infinitive>."
+  },
+  {
+    "prompt": "Combine using a non-defining clause",
+    "source": "Paris is a beautiful city. It attracts millions of tourists every year.",
+    "correct": [
+      "Paris, which attracts millions of tourists every year, is a beautiful city."
+    ],
+    "explanation": "Non-defining clause adds extra info about Paris. Cannot use <that> here."
+  },
+  {
+    "prompt": "Combine using <where>",
+    "source": "I want to visit the village. My grandparents grew up in that village.",
+    "correct": [
+      "I want to visit the village where my grandparents grew up.",
+      "I want to visit the village my grandparents grew up in.",
+      "I want to visit the village in which my grandparents grew up."
+    ],
+    "explanation": "<Where> = <in which> for places. Preposition can also go at the end informally."
+  },
+  {
+    "prompt": "Rewrite using a non-defining clause with <who>",
+    "source": "My neighbor is very friendly. She moved here last month.",
+    "correct": [
+      "My neighbor, who moved here last month, is very friendly."
+    ],
+    "explanation": "Non-defining clause with <who> adds extra information about the subject."
+  },
+  {
+    "prompt": "Reduce the relative clause",
+    "source": "The students who are sitting in the front row are from Japan.",
+    "correct": [
+      "The students sitting in the front row are from Japan."
+    ],
+    "explanation": "Remove <who are> and keep the present participle for reduction."
+  },
+  {
+    "prompt": "Combine using <whose>",
+    "source": "I helped a woman. Her car had broken down.",
+    "correct": [
+      "I helped a woman whose car had broken down."
+    ],
+    "explanation": "<Whose> replaces possessive <her> to connect the two sentences."
+  },
+  {
+    "prompt": "Combine using <which> referring to the whole clause",
+    "source": "She arrived late. That made the teacher angry.",
+    "correct": [
+      "She arrived late, which made the teacher angry."
+    ],
+    "explanation": "Non-defining <which> can refer to the entire previous idea/event."
+  },
+  {
+    "prompt": "Rewrite using a reduced relative clause (infinitive)",
+    "source": "She was the only student who solved the problem.",
+    "correct": [
+      "She was the only student to solve the problem."
+    ],
+    "hint": "After <only>, <first>, <last> → use <to + infinitive>",
+    "explanation": "After <the only/first/last>, relative clauses reduce to <to + infinitive>."
+  },
+  {
+    "prompt": "Combine using <in which> or <where>",
+    "source": "We live in a city. Public transport is excellent in this city.",
+    "correct": [
+      "We live in a city where public transport is excellent.",
+      "We live in a city in which public transport is excellent."
+    ],
+    "explanation": "<Where> or <in which> introduces a relative clause about a place."
+  },
+  {
+    "prompt": "Rewrite the non-defining clause as a separate sentence",
+    "source": "The Eiffel Tower, which was built in 1889, is the most visited monument in Paris.",
+    "correct": [
+      "The Eiffel Tower is the most visited monument in Paris. It was built in 1889."
+    ],
+    "explanation": "Non-defining clauses can be separated into independent sentences."
+  },
+  {
+    "prompt": "Combine using <the reason why>",
+    "source": "She quit her job. The reason was low salary.",
+    "correct": [
+      "The reason why she quit her job was low salary.",
+      "The reason she quit her job was low salary."
+    ],
+    "explanation": "<The reason why/that> or simply <the reason> introduces a reason clause."
+  },
+  {
+    "prompt": "Combine using a defining relative clause",
+    "source": "The hotel was expensive. We stayed at that hotel.",
+    "correct": [
+      "The hotel where we stayed was expensive.",
+      "The hotel that we stayed at was expensive.",
+      "The hotel we stayed at was expensive."
+    ],
+    "explanation": "Use <where> or <that ... preposition> for places in defining clauses."
+  }
+]

@@ -11,6 +11,10 @@ import {
   CheckCircle,
   AlertTriangle,
   RefreshCw,
+  ArrowUpDown,
+  Headphones,
+  Mic,
+  AudioLines,
 } from 'lucide-react';
 import { useTranslation } from '../../utils/i18n';
 import type { LearningModule } from '../../types';
@@ -47,6 +51,10 @@ const getIcon = (learningMode: string) => {
     reading: <BookOpen {...iconProps} />,
     transformation: <RefreshCw {...iconProps} />,
     'error-correction': <AlertTriangle {...iconProps} />,
+    reordering: <ArrowUpDown {...iconProps} />,
+    'listening-quiz': <Headphones {...iconProps} />,
+    dictation: <Mic {...iconProps} />,
+    'listen-complete': <AudioLines {...iconProps} />,
   };
   return icons[learningMode] || <CreditCard {...iconProps} />;
 };
@@ -61,6 +69,10 @@ const getLearningModeLabel = (learningMode: string, t: (key: string) => string):
     reading: t('learning.readingMode'),
     transformation: t('learning.transformationMode'),
     'error-correction': t('learning.errorCorrectionMode'),
+    reordering: t('learning.reorderingMode'),
+    'listening-quiz': t('learning.listeningQuizMode'),
+    dictation: t('learning.dictationMode'),
+    'listen-complete': t('learning.listenCompleteMode'),
   };
   return labels[learningMode] || t('common.exercise');
 };

@@ -1,0 +1,214 @@
+[
+  {
+    "prompt": "Rewrite using <Although>",
+    "source": "The weather was terrible, but we had a great time.",
+    "correct": [
+      "Although the weather was terrible, we had a great time."
+    ],
+    "explanation": "<Although> + clause introduces a concession (unexpected contrast)."
+  },
+  {
+    "prompt": "Rewrite using <Despite> + gerund",
+    "source": "Although he worked overtime, he didn't finish the project.",
+    "correct": [
+      "Despite working overtime, he didn't finish the project."
+    ],
+    "explanation": "<Despite> + gerund/noun replaces <Although> + full clause."
+  },
+  {
+    "prompt": "Rewrite using <In spite of the fact that>",
+    "source": "Despite being exhausted, she continued running.",
+    "correct": [
+      "In spite of the fact that she was exhausted, she continued running."
+    ],
+    "explanation": "<In spite of the fact that> + clause is a more formal version of <despite>."
+  },
+  {
+    "prompt": "Rewrite using <However>",
+    "source": "The hotel was expensive. The service was poor.",
+    "correct": [
+      "The hotel was expensive. However, the service was poor.",
+      "The hotel was expensive; however, the service was poor."
+    ],
+    "explanation": "<However> links contrasting sentences. It's followed by a comma."
+  },
+  {
+    "prompt": "Rewrite using <Nevertheless>",
+    "source": "The critics hated the film, but it was a commercial success.",
+    "correct": [
+      "The critics hated the film. Nevertheless, it was a commercial success.",
+      "The critics hated the film; nevertheless, it was a commercial success."
+    ],
+    "explanation": "<Nevertheless> = <Despite that>, more formal than <however>."
+  },
+  {
+    "prompt": "Rewrite using <so ... that>",
+    "source": "The lecture was very boring. Half the audience fell asleep.",
+    "correct": [
+      "The lecture was so boring that half the audience fell asleep."
+    ],
+    "explanation": "<So> + adjective/adverb + <that> + result clause."
+  },
+  {
+    "prompt": "Rewrite using <such ... that>",
+    "source": "It was a very long meeting. Everyone got frustrated.",
+    "correct": [
+      "It was such a long meeting that everyone got frustrated."
+    ],
+    "hint": "<Such> + (a/an) + adjective + noun + <that>",
+    "explanation": "<Such> + (a/an) + adjective + noun + <that> + result clause."
+  },
+  {
+    "prompt": "Rewrite using <Not only ... but also> with inversion",
+    "source": "She is talented. She is also very hardworking.",
+    "correct": [
+      "Not only is she talented, but she is also very hardworking.",
+      "Not only is she talented but also very hardworking."
+    ],
+    "explanation": "<Not only> + inverted auxiliary + subject emphasizes both qualities."
+  },
+  {
+    "prompt": "Rewrite using <Whereas>",
+    "source": "My brother loves sports. I prefer reading.",
+    "correct": [
+      "Whereas my brother loves sports, I prefer reading.",
+      "My brother loves sports, whereas I prefer reading."
+    ],
+    "explanation": "<Whereas> introduces a direct contrast between two things/people."
+  },
+  {
+    "prompt": "Rewrite using <On the other hand>",
+    "source": "Working from home saves commuting time. You miss social interaction at the office.",
+    "correct": [
+      "Working from home saves commuting time. On the other hand, you miss social interaction at the office."
+    ],
+    "explanation": "<On the other hand> introduces the opposite perspective."
+  },
+  {
+    "prompt": "Rewrite using <As a result>",
+    "source": "It rained heavily all week. The river flooded.",
+    "correct": [
+      "It rained heavily all week. As a result, the river flooded."
+    ],
+    "explanation": "<As a result> introduces a consequence of the previous statement."
+  },
+  {
+    "prompt": "Rewrite using <Due to> + noun",
+    "source": "The flight was cancelled because of the storm.",
+    "correct": [
+      "The flight was cancelled due to the storm.",
+      "Due to the storm, the flight was cancelled."
+    ],
+    "explanation": "<Due to> + noun/gerund expresses cause (more formal than <because of>)."
+  },
+  {
+    "prompt": "Rewrite using <Consequently>",
+    "source": "He didn't follow the instructions. He made several errors.",
+    "correct": [
+      "He didn't follow the instructions. Consequently, he made several errors."
+    ],
+    "explanation": "<Consequently> = formal <as a result>."
+  },
+  {
+    "prompt": "Rewrite using <In order to>",
+    "source": "She left early because she wanted to catch the first train.",
+    "correct": [
+      "She left early in order to catch the first train.",
+      "In order to catch the first train, she left early."
+    ],
+    "explanation": "<In order to> + infinitive expresses purpose (more formal than just <to>)."
+  },
+  {
+    "prompt": "Rewrite using <so as not to>",
+    "source": "He whispered because he didn't want to wake the baby.",
+    "correct": [
+      "He whispered so as not to wake the baby."
+    ],
+    "hint": "Negative purpose: <so as not to> + infinitive",
+    "explanation": "<So as not to> + infinitive expresses a negative purpose."
+  },
+  {
+    "prompt": "Rewrite using <Furthermore>",
+    "source": "The product is affordable. It also comes with a two-year warranty.",
+    "correct": [
+      "The product is affordable. Furthermore, it comes with a two-year warranty."
+    ],
+    "explanation": "<Furthermore> adds supporting information. More formal than <also>."
+  },
+  {
+    "prompt": "Rewrite using <What's more>",
+    "source": "The apartment is spacious. It has a beautiful view too.",
+    "correct": [
+      "The apartment is spacious. What's more, it has a beautiful view."
+    ],
+    "explanation": "<What's more> adds an additional positive point. Semi-formal register."
+  },
+  {
+    "prompt": "Rewrite using <Rather than> + gerund",
+    "source": "He decided to walk. He didn't take a taxi.",
+    "correct": [
+      "Rather than taking a taxi, he decided to walk.",
+      "He decided to walk rather than take a taxi."
+    ],
+    "explanation": "<Rather than> + gerund/base verb expresses a preference or alternative."
+  },
+  {
+    "prompt": "Rewrite using <No matter how>",
+    "source": "He tried very hard, but he couldn't solve the puzzle.",
+    "correct": [
+      "No matter how hard he tried, he couldn't solve the puzzle."
+    ],
+    "explanation": "<No matter how> + adjective/adverb + clause expresses concession regardless of degree."
+  },
+  {
+    "prompt": "Rewrite using <Even though>",
+    "source": "He knew it was wrong. He did it anyway.",
+    "correct": [
+      "Even though he knew it was wrong, he did it anyway."
+    ],
+    "explanation": "<Even though> = stronger version of <although>, emphasizes the contrast."
+  },
+  {
+    "prompt": "Rewrite using <Provided that>",
+    "source": "You can use my laptop if you return it by Friday.",
+    "correct": [
+      "You can use my laptop provided that you return it by Friday.",
+      "You can use my laptop provided you return it by Friday."
+    ],
+    "explanation": "<Provided (that)> = conditional connector meaning <only if>."
+  },
+  {
+    "prompt": "Rewrite using <Whether ... or not>",
+    "source": "It doesn't matter if it rains. We'll go hiking.",
+    "correct": [
+      "Whether it rains or not, we'll go hiking."
+    ],
+    "explanation": "<Whether ... or not> expresses that the result is unchanged regardless."
+  },
+  {
+    "prompt": "Rewrite using <As well as> + gerund",
+    "source": "She sings. She also plays the piano.",
+    "correct": [
+      "As well as singing, she plays the piano.",
+      "She plays the piano as well as singing."
+    ],
+    "explanation": "<As well as> + gerund adds an additional fact."
+  },
+  {
+    "prompt": "Rewrite using <Seeing that>",
+    "source": "Everyone has arrived. Let's start the meeting.",
+    "correct": [
+      "Seeing that everyone has arrived, let's start the meeting."
+    ],
+    "explanation": "<Seeing that> = <given that>, introduces a reason."
+  },
+  {
+    "prompt": "Rewrite using <It is ... that> (cleft for emphasis)",
+    "source": "The deadline caused all the stress.",
+    "correct": [
+      "It is the deadline that caused all the stress.",
+      "It was the deadline that caused all the stress."
+    ],
+    "explanation": "Cleft sentence: <It is/was> + focus + <that> + rest for emphasis."
+  }
+]

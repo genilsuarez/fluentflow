@@ -1,0 +1,230 @@
+[
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The government decided to cut taxes.",
+    "correct": [
+      "The government's decision to cut taxes was announced.",
+      "The government made a decision to cut taxes."
+    ],
+    "hint": "Verb → noun: <decided> → <decision>",
+    "explanation": "Nominalization converts a verb into a noun: <decided> → <decision>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "They failed to deliver the project on time.",
+    "correct": [
+      "Their failure to deliver the project on time was noted.",
+      "The failure to deliver the project on time caused problems."
+    ],
+    "hint": "<Failed> → <failure>",
+    "explanation": "Nominalization: <failed> → <failure>. More formal and impersonal."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The population grew rapidly in the 20th century.",
+    "correct": [
+      "The rapid growth of the population occurred in the 20th century.",
+      "There was rapid growth in the population during the 20th century."
+    ],
+    "explanation": "Nominalization: <grew> → <growth>, adverb → adjective (<rapidly> → <rapid>)."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "Scientists discovered a new species of fish.",
+    "correct": [
+      "The discovery of a new species of fish was made by scientists.",
+      "Scientists made the discovery of a new species of fish."
+    ],
+    "explanation": "Nominalization: <discovered> → <discovery>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The factory pollutes the river heavily.",
+    "correct": [
+      "The heavy pollution of the river by the factory is a concern.",
+      "The factory's heavy pollution of the river is problematic."
+    ],
+    "hint": "<Pollutes> → <pollution>, <heavily> → <heavy>",
+    "explanation": "Nominalization: verb → noun, adverb → adjective."
+  },
+  {
+    "prompt": "Rewrite using a verbal form (de-nominalize)",
+    "source": "The arrival of the delegation caused a disruption.",
+    "correct": [
+      "When the delegation arrived, it caused a disruption.",
+      "The delegation's arriving caused a disruption."
+    ],
+    "explanation": "De-nominalization: <arrival> → <arrived>. Converts back to a verbal clause."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "We need to improve public transport urgently.",
+    "correct": [
+      "There is an urgent need for the improvement of public transport.",
+      "The urgent improvement of public transport is necessary."
+    ],
+    "explanation": "Nominalization: <improve> → <improvement>, <urgently> → <urgent>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The company developed new software for hospitals.",
+    "correct": [
+      "The development of new software for hospitals was carried out by the company.",
+      "The company's development of new software for hospitals was successful."
+    ],
+    "explanation": "Nominalization: <developed> → <development>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "Employees complained frequently about working conditions.",
+    "correct": [
+      "Frequent complaints about working conditions were made by employees.",
+      "There were frequent complaints from employees about working conditions."
+    ],
+    "explanation": "Nominalization: <complained> → <complaints>, <frequently> → <frequent>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The president refused to comment on the allegations.",
+    "correct": [
+      "The president's refusal to comment on the allegations was noted.",
+      "There was a refusal by the president to comment on the allegations."
+    ],
+    "explanation": "Nominalization: <refused> → <refusal>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "Researchers investigated the causes of the disease thoroughly.",
+    "correct": [
+      "A thorough investigation of the causes of the disease was conducted.",
+      "The thorough investigation into the causes of the disease yielded results."
+    ],
+    "explanation": "Nominalization: <investigated> → <investigation>, <thoroughly> → <thorough>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The bridge collapsed unexpectedly during rush hour.",
+    "correct": [
+      "The unexpected collapse of the bridge occurred during rush hour.",
+      "The unexpected collapse of the bridge during rush hour shocked everyone."
+    ],
+    "explanation": "Nominalization: <collapsed> → <collapse>, <unexpectedly> → <unexpected>."
+  },
+  {
+    "prompt": "Rewrite using a verbal form (de-nominalize)",
+    "source": "The acquisition of the company was completed last month.",
+    "correct": [
+      "The company was acquired last month.",
+      "They acquired the company last month."
+    ],
+    "explanation": "De-nominalization: <acquisition> → <acquired>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "Students participated enthusiastically in the competition.",
+    "correct": [
+      "The enthusiastic participation of students in the competition was noted.",
+      "Students' enthusiastic participation in the competition was impressive."
+    ],
+    "explanation": "Nominalization: <participated> → <participation>, <enthusiastically> → <enthusiastic>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The authorities responded quickly to the crisis.",
+    "correct": [
+      "The quick response of the authorities to the crisis was effective.",
+      "There was a quick response by the authorities to the crisis."
+    ],
+    "explanation": "Nominalization: <responded> → <response>, <quickly> → <quick>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "Technology has advanced significantly in recent years.",
+    "correct": [
+      "The significant advancement of technology in recent years is evident.",
+      "There has been significant advancement in technology in recent years."
+    ],
+    "explanation": "Nominalization: <advanced> → <advancement>, <significantly> → <significant>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The committee recommended that they hire more staff.",
+    "correct": [
+      "The committee's recommendation was to hire more staff.",
+      "The committee made a recommendation to hire more staff."
+    ],
+    "explanation": "Nominalization: <recommended> → <recommendation>."
+  },
+  {
+    "prompt": "Rewrite using a verbal form (de-nominalize)",
+    "source": "The implementation of the new policy faced resistance.",
+    "correct": [
+      "Implementing the new policy faced resistance.",
+      "When they implemented the new policy, they faced resistance."
+    ],
+    "explanation": "De-nominalization: <implementation> → <implementing/implemented>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "Sales increased dramatically after the advertising campaign.",
+    "correct": [
+      "There was a dramatic increase in sales after the advertising campaign.",
+      "The dramatic increase in sales followed the advertising campaign."
+    ],
+    "explanation": "Nominalization: <increased> → <increase>, <dramatically> → <dramatic>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The two companies collaborated on the project successfully.",
+    "correct": [
+      "The successful collaboration between the two companies on the project was praised.",
+      "There was successful collaboration between the two companies on the project."
+    ],
+    "explanation": "Nominalization: <collaborated> → <collaboration>, <successfully> → <successful>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The mayor announced that the festival would be cancelled.",
+    "correct": [
+      "The mayor's announcement of the festival's cancellation surprised residents.",
+      "The announcement of the cancellation of the festival was made by the mayor."
+    ],
+    "explanation": "Nominalization: <announced> → <announcement>, <cancelled> → <cancellation>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The patient recovered remarkably after surgery.",
+    "correct": [
+      "The patient's remarkable recovery after surgery surprised doctors.",
+      "The remarkable recovery of the patient after surgery was noted."
+    ],
+    "explanation": "Nominalization: <recovered> → <recovery>, <remarkably> → <remarkable>."
+  },
+  {
+    "prompt": "Rewrite using a verbal form (de-nominalize)",
+    "source": "The reduction in staff led to widespread dissatisfaction.",
+    "correct": [
+      "Reducing staff led to widespread dissatisfaction.",
+      "When they reduced staff, it led to widespread dissatisfaction."
+    ],
+    "explanation": "De-nominalization: <reduction> → <reducing/reduced>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The government intervened to prevent the bank from collapsing.",
+    "correct": [
+      "The government's intervention prevented the bank from collapsing.",
+      "Government intervention prevented the collapse of the bank."
+    ],
+    "explanation": "Nominalization: <intervened> → <intervention>."
+  },
+  {
+    "prompt": "Rewrite using nominalization",
+    "source": "The company expanded into Asian markets aggressively.",
+    "correct": [
+      "The aggressive expansion of the company into Asian markets was controversial.",
+      "The company's aggressive expansion into Asian markets drew attention."
+    ],
+    "explanation": "Nominalization: <expanded> → <expansion>, <aggressively> → <aggressive>."
+  }
+]

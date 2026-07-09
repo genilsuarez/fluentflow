@@ -1,0 +1,217 @@
+[
+  {
+    "prompt": "Change to passive with <have something done>",
+    "source": "A professional cleaned our carpets.",
+    "correct": [
+      "We had our carpets cleaned."
+    ],
+    "explanation": "Causative <have something done>: subject + <had> + object + past participle."
+  },
+  {
+    "prompt": "Change to passive with <get something done>",
+    "source": "A stylist cut her hair yesterday.",
+    "correct": [
+      "She got her hair cut yesterday."
+    ],
+    "explanation": "Informal causative: <get> + object + past participle."
+  },
+  {
+    "prompt": "Change to passive using present continuous",
+    "source": "They are renovating the old library.",
+    "correct": [
+      "The old library is being renovated."
+    ],
+    "explanation": "Present continuous passive: subject + <is/are being> + past participle."
+  },
+  {
+    "prompt": "Change to passive using past continuous",
+    "source": "Workers were repairing the road when I arrived.",
+    "correct": [
+      "The road was being repaired when I arrived."
+    ],
+    "explanation": "Past continuous passive: subject + <was/were being> + past participle."
+  },
+  {
+    "prompt": "Change to passive using present perfect",
+    "source": "Someone has stolen my laptop.",
+    "correct": [
+      "My laptop has been stolen."
+    ],
+    "explanation": "Present perfect passive: subject + <has/have been> + past participle."
+  },
+  {
+    "prompt": "Change to passive using future",
+    "source": "They will announce the results tomorrow.",
+    "correct": [
+      "The results will be announced tomorrow."
+    ],
+    "explanation": "Future passive: subject + <will be> + past participle."
+  },
+  {
+    "prompt": "Change to passive with modal",
+    "source": "You must submit the application before Friday.",
+    "correct": [
+      "The application must be submitted before Friday."
+    ],
+    "explanation": "Modal passive: subject + modal + <be> + past participle."
+  },
+  {
+    "prompt": "Change to passive using <is expected to>",
+    "source": "People expect that the prices will rise.",
+    "correct": [
+      "Prices are expected to rise.",
+      "It is expected that prices will rise.",
+      "It's expected that prices will rise."
+    ],
+    "explanation": "Impersonal passive: subject + <is expected to> + infinitive."
+  },
+  {
+    "prompt": "Change to passive with <is reported to>",
+    "source": "Journalists report that the CEO has resigned.",
+    "correct": [
+      "The CEO is reported to have resigned.",
+      "It is reported that the CEO has resigned.",
+      "It's reported that the CEO has resigned."
+    ],
+    "hint": "Past reference → <to have> + past participle",
+    "explanation": "Impersonal passive with past reference: subject + <is reported to have> + past participle."
+  },
+  {
+    "prompt": "Change to active voice",
+    "source": "The proposal was rejected by the committee.",
+    "correct": [
+      "The committee rejected the proposal."
+    ],
+    "explanation": "Active voice: agent becomes subject + verb in active form + object."
+  },
+  {
+    "prompt": "Change to passive with double object",
+    "source": "They offered me a job.",
+    "correct": [
+      "I was offered a job.",
+      "A job was offered to me."
+    ],
+    "hint": "Double-object verbs allow two passive forms",
+    "explanation": "With double-object verbs (offer, give, tell), either object can become the passive subject."
+  },
+  {
+    "prompt": "Change to passive with <need + gerund>",
+    "source": "Someone needs to repair the roof.",
+    "correct": [
+      "The roof needs repairing.",
+      "The roof needs to be repaired."
+    ],
+    "explanation": "<Need + gerund> is a passive-meaning construction: <needs repairing> = <needs to be repaired>."
+  },
+  {
+    "prompt": "Change to passive using <is supposed to>",
+    "source": "People say you should arrive 15 minutes early.",
+    "correct": [
+      "You are supposed to arrive 15 minutes early.",
+      "You're supposed to arrive 15 minutes early."
+    ],
+    "explanation": "<Be supposed to> expresses what is expected, often from external norms or rules."
+  },
+  {
+    "prompt": "Change to causative <have> in present",
+    "source": "A dentist checks my teeth every six months.",
+    "correct": [
+      "I have my teeth checked every six months."
+    ],
+    "explanation": "Present causative: subject + <have> + object + past participle."
+  },
+  {
+    "prompt": "Change to causative <get> in future",
+    "source": "A photographer will take our family portrait.",
+    "correct": [
+      "We're going to get our family portrait taken.",
+      "We will get our family portrait taken."
+    ],
+    "explanation": "Future causative with <get>: subject + <will get/be going to get> + object + past participle."
+  },
+  {
+    "prompt": "Change to passive with <is known to>",
+    "source": "Everyone knows that she is an excellent musician.",
+    "correct": [
+      "She is known to be an excellent musician.",
+      "It is known that she is an excellent musician."
+    ],
+    "explanation": "Impersonal passive: subject + <is known to> + infinitive."
+  },
+  {
+    "prompt": "Change to passive with <is considered to be>",
+    "source": "Most people consider this the best restaurant in town.",
+    "correct": [
+      "This is considered to be the best restaurant in town.",
+      "This is considered the best restaurant in town."
+    ],
+    "explanation": "Impersonal passive: subject + <is considered (to be)> + complement."
+  },
+  {
+    "prompt": "Change to active voice with agent",
+    "source": "The windows are cleaned by a professional team every week.",
+    "correct": [
+      "A professional team cleans the windows every week."
+    ],
+    "explanation": "Active: agent becomes subject, verb in active form, object."
+  },
+  {
+    "prompt": "Change to passive with infinitive",
+    "source": "They expect the company to announce the merger.",
+    "correct": [
+      "The company is expected to announce the merger."
+    ],
+    "explanation": "Complex passive: subject + <is expected to> + infinitive."
+  },
+  {
+    "prompt": "Change to causative <have> in past",
+    "source": "An electrician installed new wiring in our house.",
+    "correct": [
+      "We had new wiring installed in our house."
+    ],
+    "explanation": "Past causative: subject + <had> + object + past participle."
+  },
+  {
+    "prompt": "Change to passive with <is thought to>",
+    "source": "Scientists think that this species is endangered.",
+    "correct": [
+      "This species is thought to be endangered.",
+      "It is thought that this species is endangered."
+    ],
+    "explanation": "Impersonal passive: subject + <is thought to> + infinitive."
+  },
+  {
+    "prompt": "Change to passive with <is alleged to have>",
+    "source": "Witnesses allege that the driver ran the red light.",
+    "correct": [
+      "The driver is alleged to have run the red light.",
+      "It is alleged that the driver ran the red light."
+    ],
+    "hint": "Past reference → <to have> + past participle",
+    "explanation": "Impersonal passive with past reference: <is alleged to have> + past participle."
+  },
+  {
+    "prompt": "Change to active voice",
+    "source": "The new policy has been approved by the board.",
+    "correct": [
+      "The board has approved the new policy."
+    ],
+    "explanation": "Active present perfect: agent + <has/have> + past participle + object."
+  },
+  {
+    "prompt": "Change to passive with <want + object + past participle>",
+    "source": "I want someone to deliver the package before noon.",
+    "correct": [
+      "I want the package delivered before noon."
+    ],
+    "explanation": "<Want + object + past participle> is an informal way to express desired action by others."
+  },
+  {
+    "prompt": "Change to passive using <it + passive + that clause>",
+    "source": "Researchers have shown that exercise improves memory.",
+    "correct": [
+      "It has been shown that exercise improves memory."
+    ],
+    "explanation": "Impersonal passive: <It has been shown/proven/demonstrated that> + clause."
+  }
+]
