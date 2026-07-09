@@ -2,35 +2,35 @@
   {
     "question": "Choose the correct modal: 'You _____ wear a seatbelt in the car.'",
     "options": [
-      "would",
       "must",
+      "would",
       "might",
       "can"
     ],
     "correct": "must",
-    "explanation": "<Must> expresses obligation or necessity: <You must wear a seatbelt>."
+    "explanation": "<Must> expresa obligación o necesidad: <You must wear a seatbelt>."
   },
   {
     "question": "Which modal verb expresses possibility? 'She _____ come to the party tonight.'",
     "options": [
       "has to",
-      "should",
       "might",
+      "should",
       "must"
     ],
     "correct": "might",
-    "explanation": "<Might> expresses possibility or uncertainty: <She might come>."
+    "explanation": "<Might> expresa posibilidad o incertidumbre: <She might come>."
   },
   {
     "question": "Choose the correct preposition: 'I'm interested _____ learning French.'",
     "options": [
-      "in",
       "at",
       "on",
+      "in",
       "for"
     ],
     "correct": "in",
-    "explanation": "The correct collocation is <interested in> + gerund."
+    "explanation": "La colocación correcta es <interested in> + gerundio."
   },
   {
     "question": "Which preposition is correct: 'She depends _____ her parents for money.'",
@@ -41,40 +41,40 @@
       "on"
     ],
     "correct": "on",
-    "explanation": "The correct collocation is <depend on> someone or something."
+    "explanation": "La colocación correcta es <depend on> alguien o algo."
   },
   {
     "question": "Which future form is correct for a planned arrangement? 'I _____ the dentist at 3 pm tomorrow.'",
     "options": [
+      "am seeing",
       "see",
       "will see",
-      "am seeing",
       "would see"
     ],
     "correct": "am seeing",
-    "explanation": "Use <present continuous> for fixed personal arrangements: <I am seeing the dentist>."
+    "explanation": "Se usa el <present continuous> para planes personales fijos: <I am seeing the dentist>."
   },
   {
     "question": "Choose the correct future form for a prediction: 'I think it _____ rain later.'",
     "options": [
       "is raining",
-      "is going to rain",
       "will rain",
+      "is going to rain",
       "rains"
     ],
     "correct": "will rain",
-    "explanation": "Use <will> for predictions based on opinion: <I think it will rain>."
+    "explanation": "Se usa <will> para predicciones basadas en una opinión: <I think it will rain>."
   },
   {
     "question": "Complete the first conditional: 'If it rains, we _____ stay at home.'",
     "options": [
-      "will",
       "are",
       "can",
+      "will",
       "would"
     ],
     "correct": "will",
-    "explanation": "First conditional: <If> + present simple, <will> + base form."
+    "explanation": "Primer condicional: <If> + presente simple, <will> + forma base."
   },
   {
     "question": "Which second conditional is correct?",
@@ -85,29 +85,29 @@
       "If I was rich, I would travel"
     ],
     "correct": "If I was rich, I would travel",
-    "explanation": "Second conditional: <If> + past simple, <would> + base form: <If I was rich, I would travel>."
+    "explanation": "Segundo condicional: <If> + pasado simple, <would> + forma base: <If I was rich, I would travel>."
   },
   {
     "question": "Transform to passive: 'Someone stole my bike.'",
     "options": [
+      "My bike was stolen",
       "My bike stolen was",
       "My bike is stolen",
-      "My bike were stolen",
-      "My bike was stolen"
+      "My bike were stolen"
     ],
     "correct": "My bike was stolen",
-    "explanation": "Passive voice: subject + <was/were> + past participle: <My bike was stolen>."
+    "explanation": "Voz pasiva: sujeto + <was/were> + participio pasado: <My bike was stolen>."
   },
   {
     "question": "Which passive sentence is correct?",
     "options": [
       "The cake made by my mum",
-      "The cake was make by my mum",
       "The cake was made by my mum",
+      "The cake was make by my mum",
       "The cake is make by my mum"
     ],
     "correct": "The cake was made by my mum",
-    "explanation": "Passive: <was> + past participle (<made>): <The cake was made by my mum>."
+    "explanation": "Pasiva: <was> + participio pasado (<made>): <The cake was made by my mum>."
   },
   {
     "question": "Choose the correct form: 'She enjoys _____ in the park.'",
@@ -118,29 +118,29 @@
       "run"
     ],
     "correct": "running",
-    "explanation": "<Enjoy> is followed by a gerund (<-ing> form): <enjoys running>."
+    "explanation": "<Enjoy> va seguido de un gerundio (forma <-ing>): <enjoys running>."
   },
   {
     "question": "Which is correct: 'He decided _____ a new car.'",
     "options": [
       "buy",
       "buying",
-      "to buy",
-      "bought"
+      "bought",
+      "to buy"
     ],
     "correct": "to buy",
-    "explanation": "<Decide> is followed by <to> + infinitive: <decided to buy>."
+    "explanation": "<Decide> va seguido de <to> + infinitivo: <decided to buy>."
   },
   {
     "question": "Which definition best matches <boarding pass>?",
     "options": [
-      "a bus ticket",
       "a document to get on a plane",
+      "a bus ticket",
       "a passport stamp",
       "a hotel key"
     ],
     "correct": "a document to get on a plane",
-    "explanation": "A <boarding pass> is the document you need to board an airplane."
+    "explanation": "Un <boarding pass> es el documento que necesitas para abordar un avión."
   },
   {
     "question": "Which word means 'a person who works for a company'?",
@@ -151,7 +151,7 @@
       "employ"
     ],
     "correct": "employee",
-    "explanation": "An <employee> is a person who works for a company or employer."
+    "explanation": "Un <employee> es una persona que trabaja para una empresa o empleador."
   },
   {
     "question": "Choose the correct meaning of <withdraw money>:",
@@ -162,18 +162,18 @@
       "to save money"
     ],
     "correct": "to take money out of a bank account",
-    "explanation": "To <withdraw money> means to take money out of your bank account."
+    "explanation": "<Withdraw money> significa sacar dinero de tu cuenta bancaria."
   },
   {
     "question": "<salary> — select the right definition:",
     "options": [
       "a bank loan",
-      "money paid regularly for work",
       "a type of food",
-      "a tax payment"
+      "a tax payment",
+      "money paid regularly for work"
     ],
     "correct": "money paid regularly for work",
-    "explanation": "A <salary> is the fixed amount of money paid regularly for work."
+    "explanation": "Un <salary> es la cantidad fija de dinero que se paga regularmente por un trabajo."
   },
   {
     "question": "What does the phrasal verb 'carry on' mean?",
@@ -184,40 +184,40 @@
       "to go back"
     ],
     "correct": "to continue",
-    "explanation": "<Carry on> means to continue doing something."
+    "explanation": "<Carry on> significa continuar haciendo algo."
   },
   {
     "question": "What is the meaning of <bring up>?",
     "options": [
-      "to raise a child or mention a topic",
       "to wake up",
+      "to raise a child or mention a topic",
       "to bring a gift",
       "to carry upstairs"
     ],
     "correct": "to raise a child or mention a topic",
-    "explanation": "<Bring up> means to raise a child or to mention a topic in conversation."
+    "explanation": "<Bring up> significa criar a un niño o mencionar un tema en una conversación."
   },
   {
     "question": "Which phrasal verb means 'to tolerate'?",
     "options": [
       "put off",
-      "put up with",
       "put away",
+      "put up with",
       "put on"
     ],
     "correct": "put up with",
-    "explanation": "<Put up with> means to tolerate or endure something unpleasant."
+    "explanation": "<Put up with> significa tolerar o soportar algo desagradable."
   },
   {
     "question": "Which option describes <work out>?",
     "options": [
       "to work overtime",
       "to quit a job",
-      "to exercise or to solve a problem",
-      "to go to work"
+      "to go to work",
+      "to exercise or to solve a problem"
     ],
     "correct": "to exercise or to solve a problem",
-    "explanation": "<Work out> means to exercise physically or to find a solution to a problem."
+    "explanation": "<Work out> significa hacer ejercicio físico o encontrar la solución a un problema."
   },
   {
     "question": "Pick the best definition for <set up>:",
@@ -228,40 +228,40 @@
       "to destroy"
     ],
     "correct": "to establish or arrange",
-    "explanation": "<Set up> means to establish, create, or arrange something."
+    "explanation": "<Set up> significa establecer, crear u organizar algo."
   },
   {
     "question": "How would you define <look forward to>?",
     "options": [
-      "to be excited about something in the future",
       "to look for something",
+      "to be excited about something in the future",
       "to look ahead physically",
       "to remember the past"
     ],
     "correct": "to be excited about something in the future",
-    "explanation": "<Look forward to> means to feel excited about something that will happen."
+    "explanation": "<Look forward to> significa sentirse emocionado por algo que va a suceder."
   },
   {
     "question": "What does the idiom 'break the ice' mean?",
     "options": [
       "to break something frozen",
       "to cause a problem",
-      "to end a friendship",
-      "to start a conversation in a social situation"
+      "to start a conversation in a social situation",
+      "to end a friendship"
     ],
     "correct": "to start a conversation in a social situation",
-    "explanation": "<Break the ice> means to do something to relieve tension or start conversation."
+    "explanation": "<Break the ice> significa hacer algo para aliviar la tensión o iniciar una conversación."
   },
   {
     "question": "<get cold feet> is closest in meaning to:",
     "options": [
       "to feel cold",
-      "to become nervous and hesitant about something",
       "to catch a cold",
-      "to walk barefoot"
+      "to walk barefoot",
+      "to become nervous and hesitant about something"
     ],
     "correct": "to become nervous and hesitant about something",
-    "explanation": "<Get cold feet> means to become nervous or afraid before doing something."
+    "explanation": "<Get cold feet> significa ponerse nervioso o tener miedo antes de hacer algo."
   },
   {
     "question": "Select what <kill two birds with one stone> means:",
@@ -272,62 +272,62 @@
       "to hunt birds"
     ],
     "correct": "to achieve two things with one action",
-    "explanation": "<Kill two birds with one stone> means to accomplish two goals with a single action."
+    "explanation": "<Kill two birds with one stone> significa lograr dos objetivos con una sola acción."
   },
   {
     "question": "The term <on the same page> refers to:",
     "options": [
-      "in agreement or having the same understanding",
       "in the same place",
+      "in agreement or having the same understanding",
       "reading the same book",
       "at the same time"
     ],
     "correct": "in agreement or having the same understanding",
-    "explanation": "<On the same page> means everyone agrees or has the same understanding."
+    "explanation": "<On the same page> significa que todos están de acuerdo o tienen el mismo entendimiento."
   },
   {
     "question": "Which definition best matches <call it a day>?",
     "options": [
       "to start a new day",
       "to make a phone call",
-      "to name something",
-      "to stop working for the day"
+      "to stop working for the day",
+      "to name something"
     ],
     "correct": "to stop working for the day",
-    "explanation": "<Call it a day> means to decide to stop working or doing an activity."
+    "explanation": "<Call it a day> significa decidir dejar de trabajar o de hacer una actividad."
   },
   {
     "question": "Transform to second conditional: 'I don't have a car. I can't drive to work.'",
     "options": [
-      "If I had a car, I would drive to work",
       "If I have a car, I would drive to work",
       "If I have a car, I will drive to work",
-      "If I had a car, I will drive to work"
+      "If I had a car, I will drive to work",
+      "If I had a car, I would drive to work"
     ],
     "correct": "If I had a car, I would drive to work",
-    "explanation": "Second conditional: <If> + past simple, <would> + base form: <If I had, I would drive>."
+    "explanation": "Segundo condicional: <If> + pasado simple, <would> + forma base: <If I had, I would drive>."
   },
   {
     "question": "Transform to passive: 'They build houses every year.'",
     "options": [
+      "Houses are built every year",
       "Houses were built every year",
       "Houses is built every year",
-      "Houses built every year",
-      "Houses are built every year"
+      "Houses built every year"
     ],
     "correct": "Houses are built every year",
-    "explanation": "Present passive: subject + <are> + past participle: <Houses are built>."
+    "explanation": "Pasiva presente: sujeto + <are> + participio pasado: <Houses are built>."
   },
   {
     "question": "Transform to first conditional: 'Study hard. You will pass the exam.'",
     "options": [
-      "If you study hard, you will pass the exam",
       "If you will study hard, you pass",
+      "If you study hard, you will pass the exam",
       "If you study hard, you pass",
       "If you studied hard, you would pass"
     ],
     "correct": "If you study hard, you will pass the exam",
-    "explanation": "First conditional: <If> + present simple, <will> + base form."
+    "explanation": "Primer condicional: <If> + presente simple, <will> + forma base."
   },
   {
     "question": "Transform to reported speech: 'I am tired,' she said.",
@@ -338,73 +338,73 @@
       "She said she is tired"
     ],
     "correct": "She said she was tired",
-    "explanation": "Reported speech shifts tense back: <am> → <was>: <She said she was tired>."
+    "explanation": "El estilo indirecto retrocede el tiempo verbal: <am> → <was>: <She said she was tired>."
   },
   {
     "question": "Transform to passive: 'The teacher corrected the exams.'",
     "options": [
-      "The exams were corrected by the teacher",
       "The exams was corrected by the teacher",
       "The exams corrected by the teacher",
-      "The exams are corrected by the teacher"
+      "The exams are corrected by the teacher",
+      "The exams were corrected by the teacher"
     ],
     "correct": "The exams were corrected by the teacher",
-    "explanation": "Past passive: <were> + past participle: <The exams were corrected>."
+    "explanation": "Pasiva en pasado: <were> + participio pasado: <The exams were corrected>."
   },
   {
     "question": "What is the noun form of 'employ' using a prefix and suffix?",
     "options": [
+      "unemployment",
       "employment",
       "employer",
-      "employable",
-      "unemployment"
+      "employable"
     ],
     "correct": "unemployment",
-    "explanation": "Adding prefix <un-> and suffix <-ment>: <employ> → <unemployment>."
+    "explanation": "Se agrega el prefijo <un-> y el sufijo <-ment>: <employ> → <unemployment>."
   },
   {
     "question": "Which word uses both a prefix and suffix: 'disagree + ment'?",
     "options": [
       "agreeable",
+      "disagreement",
       "agreement",
-      "disagree",
-      "disagreement"
+      "disagree"
     ],
     "correct": "disagreement",
-    "explanation": "Prefix <dis-> + root <agree> + suffix <-ment> = <disagreement>."
+    "explanation": "Prefijo <dis-> + raíz <agree> + sufijo <-ment> = <disagreement>."
   },
   {
     "question": "What is the adjective form of 'comfort' with a prefix?",
     "options": [
       "comfortable",
       "comforting",
-      "discomfort",
-      "uncomfortable"
+      "uncomfortable",
+      "discomfort"
     ],
     "correct": "uncomfortable",
-    "explanation": "Root <comfort> + suffix <-able> + prefix <un-> = <uncomfortable>."
+    "explanation": "Raíz <comfort> + sufijo <-able> + prefijo <un-> = <uncomfortable>."
   },
   {
     "question": "Form a noun from 'achieve' using a suffix.",
     "options": [
       "achievable",
       "achieving",
-      "achievement",
-      "achiever"
+      "achiever",
+      "achievement"
     ],
     "correct": "achievement",
-    "explanation": "Adding <-ment> to <achieve> forms the noun <achievement>."
+    "explanation": "Al agregar <-ment> a <achieve> se forma el sustantivo <achievement>."
   },
   {
     "question": "Find the error: 'If I will study, I will pass the exam.'",
     "options": [
+      "If I study, I will pass the exam",
       "If I studied, I will pass the exam",
       "If I will study, I pass the exam",
-      "No error",
-      "If I study, I will pass the exam"
+      "No error"
     ],
     "correct": "If I study, I will pass the exam",
-    "explanation": "In first conditionals, don't use <will> in the if-clause: <If I study>, not <If I will study>."
+    "explanation": "En el primer condicional no se usa <will> en la cláusula con if: <If I study>, no <If I will study>."
   },
   {
     "question": "Find the error: 'The letter was wrote by my friend.'",
@@ -415,28 +415,28 @@
       "No error"
     ],
     "correct": "The letter was written by my friend",
-    "explanation": "Passive requires the past participle: <was written>, not <was wrote>."
+    "explanation": "La voz pasiva requiere el participio pasado: <was written>, no <was wrote>."
   },
   {
     "question": "Find the error: 'She suggested me to go home.'",
     "options": [
       "She suggested I to go home",
       "She suggested me going home",
-      "No error",
-      "She suggested that I go home"
+      "She suggested that I go home",
+      "No error"
     ],
     "correct": "She suggested that I go home",
-    "explanation": "<Suggest> is followed by <that> + subject + base form, not <suggest someone to do>."
+    "explanation": "<Suggest> va seguido de <that> + sujeto + forma base, no de <suggest someone to do>."
   },
   {
     "question": "Find the error: 'He must to finish his homework.'",
     "options": [
       "No error",
       "He must finishing his homework",
-      "He must finish his homework",
-      "He musts finish his homework"
+      "He musts finish his homework",
+      "He must finish his homework"
     ],
     "correct": "He must finish his homework",
-    "explanation": "Modal verbs like <must> are followed directly by the base form, without <to>."
+    "explanation": "Los verbos modales como <must> van seguidos directamente de la forma base, sin <to>."
   }
 ]

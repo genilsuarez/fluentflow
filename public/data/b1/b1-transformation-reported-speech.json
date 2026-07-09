@@ -2,106 +2,201 @@
   {
     "prompt": "Report this statement using 'said'",
     "source": "\"I love this city,\" Maria said.",
-    "correct": ["Maria said she loved that city.", "Maria said that she loved that city."],
+    "correct": [
+      "Maria said she loved that city.",
+      "Maria said that she loved that city."
+    ],
     "hint": "Backshift: love → loved. Shift: this → that",
-    "explanation": "Reported speech: backshift present → past, this → that."
+    "explanation": "Estilo indirecto: retroceso verbal de presente → pasado, this → that."
   },
   {
     "prompt": "Report this statement using 'told me'",
     "source": "\"I will help you tomorrow,\" John said.",
-    "correct": ["John told me he would help me the next day.", "John told me that he would help me the next day."],
+    "correct": [
+      "John told me he would help me the next day.",
+      "John told me that he would help me the next day."
+    ],
     "hint": "will → would, you → me, tomorrow → the next day",
-    "explanation": "Backshift will → would. Pronoun and time shifts apply."
+    "explanation": "Retroceso verbal: will → would. También se aplican cambios de pronombre y de tiempo."
   },
   {
     "prompt": "Report this yes/no question using 'asked'",
     "source": "\"Are you coming to the party?\" she asked.",
-    "correct": ["She asked if I was coming to the party.", "She asked whether I was coming to the party.", "She asked me if I was coming to the party."],
+    "correct": [
+      "She asked if I was coming to the party.",
+      "She asked whether I was coming to the party.",
+      "She asked me if I was coming to the party."
+    ],
     "hint": "Yes/No question → if/whether + statement order",
-    "explanation": "Reported yes/no questions use if/whether + subject + verb (statement order)."
+    "explanation": "Las preguntas de sí/no en estilo indirecto usan if/whether + sujeto + verbo (orden de afirmación)."
   },
   {
     "prompt": "Report this wh-question using 'asked'",
     "source": "\"Where did you buy that jacket?\" he asked.",
-    "correct": ["He asked where I had bought that jacket.", "He asked me where I had bought that jacket."],
+    "correct": [
+      "He asked where I had bought that jacket.",
+      "He asked me where I had bought that jacket."
+    ],
     "hint": "Keep 'where' + statement order + backshift",
-    "explanation": "Wh-questions keep the question word but switch to statement order with backshift."
+    "explanation": "Las preguntas con wh- conservan la palabra interrogativa pero cambian a orden de afirmación con retroceso verbal."
   },
   {
     "prompt": "Report this command using 'told'",
     "source": "\"Close the window,\" the teacher said to us.",
-    "correct": ["The teacher told us to close the window."],
+    "correct": [
+      "The teacher told us to close the window."
+    ],
     "hint": "Commands → told + object + to-infinitive",
-    "explanation": "Reported commands: told + person + to + base verb."
+    "explanation": "Órdenes en estilo indirecto: told + persona + to + verbo base."
   },
   {
     "prompt": "Report this negative command using 'told'",
     "source": "\"Don't be late!\" my mother said.",
-    "correct": ["My mother told me not to be late."],
+    "correct": [
+      "My mother told me not to be late."
+    ],
     "hint": "Negative commands → told + object + not to",
-    "explanation": "Reported negative commands: told + person + not + to + base verb."
+    "explanation": "Órdenes negativas en estilo indirecto: told + persona + not + to + verbo base."
   },
   {
     "prompt": "Report this request using 'asked'",
     "source": "\"Could you open the door, please?\" she said.",
-    "correct": ["She asked me to open the door.", "She asked us to open the door."],
+    "correct": [
+      "She asked me to open the door.",
+      "She asked us to open the door."
+    ],
     "hint": "Requests → asked + object + to-infinitive",
-    "explanation": "Reported requests: asked + person + to + base verb."
+    "explanation": "Peticiones en estilo indirecto: asked + persona + to + verbo base."
   },
   {
     "prompt": "Report this statement using 'said'",
     "source": "\"I have never been to London,\" he said.",
-    "correct": ["He said he had never been to London.", "He said that he had never been to London."],
+    "correct": [
+      "He said he had never been to London.",
+      "He said that he had never been to London."
+    ],
     "hint": "have been → had been (present perfect → past perfect)",
-    "explanation": "Backshift: present perfect → past perfect."
+    "explanation": "Retroceso verbal: presente perfecto → pasado perfecto."
   },
   {
     "prompt": "Report this statement with time/place shifts",
     "source": "\"I'm working here today,\" she said.",
-    "correct": ["She said she was working there that day.", "She said that she was working there that day."],
+    "correct": [
+      "She said she was working there that day.",
+      "She said that she was working there that day."
+    ],
     "hint": "here → there, today → that day, am → was",
-    "explanation": "Backshift + place shift (here → there) + time shift (today → that day)."
+    "explanation": "Retroceso verbal + cambio de lugar (here → there) + cambio de tiempo (today → that day)."
   },
   {
     "prompt": "Report this statement using 'told'",
     "source": "\"I can't come to the meeting,\" he said to me.",
-    "correct": ["He told me he couldn't come to the meeting.", "He told me that he couldn't come to the meeting."],
+    "correct": [
+      "He told me he couldn't come to the meeting.",
+      "He told me that he couldn't come to the meeting."
+    ],
     "hint": "can't → couldn't",
-    "explanation": "Backshift: can → could (negative form: can't → couldn't)."
+    "explanation": "Retroceso verbal: can → could (forma negativa: can't → couldn't)."
   },
   {
     "prompt": "Report this wh-question using 'asked'",
     "source": "\"What are you doing now?\" she asked me.",
-    "correct": ["She asked me what I was doing then.", "She asked me what I was doing at that moment."],
+    "correct": [
+      "She asked me what I was doing then.",
+      "She asked me what I was doing at that moment."
+    ],
     "hint": "now → then/at that moment, are → was",
-    "explanation": "Time shift: now → then. Backshift: are → was. Statement order."
+    "explanation": "Cambio de tiempo: now → then. Retroceso verbal: are → was. Orden de afirmación."
   },
   {
     "prompt": "Report this suggestion using 'suggested'",
     "source": "\"Let's go to the cinema,\" Tom said.",
-    "correct": ["Tom suggested going to the cinema.", "Tom suggested that we go to the cinema.", "Tom suggested we should go to the cinema."],
+    "correct": [
+      "Tom suggested going to the cinema.",
+      "Tom suggested that we go to the cinema.",
+      "Tom suggested we should go to the cinema."
+    ],
     "hint": "Let's → suggested + -ing or that + subject + go",
-    "explanation": "Reported suggestions: suggested + -ing or suggested that + subject + base verb."
+    "explanation": "Sugerencias en estilo indirecto: suggested + gerundio o suggested that + sujeto + verbo base."
   },
   {
     "prompt": "Report this statement using 'said'",
     "source": "\"I was sleeping when you called,\" she said.",
-    "correct": ["She said she had been sleeping when I called.", "She said that she had been sleeping when I called."],
+    "correct": [
+      "She said she had been sleeping when I called.",
+      "She said that she had been sleeping when I called."
+    ],
     "hint": "was sleeping → had been sleeping (past continuous → past perfect continuous)",
-    "explanation": "Backshift: past continuous → past perfect continuous."
+    "explanation": "Retroceso verbal: pasado continuo → pasado perfecto continuo."
   },
   {
     "prompt": "Report this yes/no question using 'wanted to know'",
     "source": "\"Have you finished the report?\" my boss asked.",
-    "correct": ["My boss wanted to know if I had finished the report.", "My boss wanted to know whether I had finished the report."],
+    "correct": [
+      "My boss wanted to know if I had finished the report.",
+      "My boss wanted to know whether I had finished the report."
+    ],
     "hint": "if/whether + had finished (present perfect → past perfect)",
-    "explanation": "Reporting verb variation: wanted to know = asked. Backshift applies."
+    "explanation": "Variación del verbo introductorio: wanted to know = asked. Se aplica el retroceso verbal."
   },
   {
     "prompt": "Report this statement using 'admitted'",
     "source": "\"I forgot to send the email,\" he said.",
-    "correct": ["He admitted that he had forgotten to send the email.", "He admitted he had forgotten to send the email.", "He admitted forgetting to send the email."],
+    "correct": [
+      "He admitted that he had forgotten to send the email.",
+      "He admitted he had forgotten to send the email.",
+      "He admitted forgetting to send the email."
+    ],
     "hint": "Different reporting verb. forgot → had forgotten",
-    "explanation": "Reported speech with 'admitted': admits + that-clause or + -ing form."
+    "explanation": "Estilo indirecto con 'admitted': admitted + cláusula con that o + gerundio."
+  },
+  {
+    "prompt": "Report this statement using 'said'",
+    "source": "\"I don't understand this exercise,\" she said.",
+    "correct": [
+      "She said she didn't understand that exercise.",
+      "She said that she didn't understand that exercise."
+    ],
+    "hint": "don't → didn't, this → that",
+    "explanation": "Retroceso verbal: presente negativo → pasado negativo. this → that."
+  },
+  {
+    "prompt": "Report this statement using 'explained'",
+    "source": "\"I missed the bus because I woke up late,\" he said.",
+    "correct": [
+      "He explained that he had missed the bus because he had woken up late.",
+      "He explained he had missed the bus because he had woken up late."
+    ],
+    "hint": "Different reporting verb. missed → had missed, woke up → had woken up",
+    "explanation": "Retroceso verbal doble: pasado simple → pasado perfecto en ambas cláusulas."
+  },
+  {
+    "prompt": "Report this promise using 'promised'",
+    "source": "\"I will call you tonight,\" he said.",
+    "correct": [
+      "He promised he would call me that night.",
+      "He promised that he would call me that night."
+    ],
+    "hint": "will → would, tonight → that night",
+    "explanation": "Estilo indirecto con 'promised': will → would, tonight → that night."
+  },
+  {
+    "prompt": "Report this wh-question using 'wondered'",
+    "source": "\"Why is she crying?\" he said.",
+    "correct": [
+      "He wondered why she was crying."
+    ],
+    "hint": "Keep 'why' + statement order + backshift",
+    "explanation": "'Wondered' introduce preguntas indirectas sin necesidad de 'asked'. Se mantiene el orden de afirmación."
+  },
+  {
+    "prompt": "Report this warning using 'warned'",
+    "source": "\"Don't touch that wire!\" the electrician said.",
+    "correct": [
+      "The electrician warned me not to touch that wire.",
+      "The electrician warned us not to touch that wire."
+    ],
+    "hint": "Warnings → warned + object + not to",
+    "explanation": "Advertencias en estilo indirecto: warned + persona + not + to + verbo base."
   }
 ]

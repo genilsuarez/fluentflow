@@ -6,7 +6,7 @@
       "He told me he would pick me up at 8.",
       "He told me that he would pick me up at 8."
     ],
-    "explanation": "Reported speech: <will> → <would>, <you> → <me>, <I> → <he>."
+    "explanation": "Estilo indirecto: <will> → <would>, <you> → <me>, <I> → <he>."
   },
   {
     "prompt": "Change to reported command using <ordered>",
@@ -14,7 +14,7 @@
     "correct": [
       "The officer ordered us to leave the building immediately."
     ],
-    "explanation": "Reported commands: reporting verb + object + <to> + infinitive."
+    "explanation": "Órdenes en estilo indirecto: verbo introductorio + objeto + <to> + infinitivo."
   },
   {
     "prompt": "Change to reported request using <asked>",
@@ -22,7 +22,7 @@
     "correct": [
       "She asked him to close the door."
     ],
-    "explanation": "Reported requests: <asked> + object + <to> + infinitive."
+    "explanation": "Peticiones en estilo indirecto: <asked> + objeto + <to> + infinitivo."
   },
   {
     "prompt": "Change to reported speech using <admitted>",
@@ -31,7 +31,7 @@
       "She admitted breaking the vase.",
       "She admitted that she had broken the vase."
     ],
-    "explanation": "<Admit> + gerund or <that> clause for confessions."
+    "explanation": "<Admit> + gerundio o cláusula con <that> para confesiones."
   },
   {
     "prompt": "Change to reported speech using <denied>",
@@ -40,7 +40,7 @@
       "He denied taking the money.",
       "He denied having taken the money."
     ],
-    "explanation": "<Deny> + gerund for negative claims. Never: <deny to + infinitive>."
+    "explanation": "<Deny> + gerundio para negar algo. Nunca: <deny to + infinitivo>."
   },
   {
     "prompt": "Change to reported speech using <suggested>",
@@ -49,7 +49,7 @@
       "She suggested eating out that night.",
       "She suggested that they eat out that night."
     ],
-    "explanation": "<Suggest> + gerund or <that> + subjunctive for proposals."
+    "explanation": "<Suggest> + gerundio o <that> + subjuntivo para propuestas."
   },
   {
     "prompt": "Change to reported speech using <warned>",
@@ -58,7 +58,7 @@
       "Dad warned me not to touch that wire.",
       "Dad warned me not to touch the wire because it was dangerous."
     ],
-    "explanation": "<Warn> + object + <not to> + infinitive for negative warnings."
+    "explanation": "<Warn> + objeto + <not to> + infinitivo para advertencias negativas."
   },
   {
     "prompt": "Change to reported speech using <promised>",
@@ -67,7 +67,7 @@
       "She promised not to tell anyone my secret.",
       "She promised she wouldn't tell anyone my secret."
     ],
-    "explanation": "<Promise> + <(not) to> + infinitive or <that> + clause."
+    "explanation": "<Promise> + <(not) to> + infinitivo o cláusula con <that>."
   },
   {
     "prompt": "Change to reported speech using <recommended>",
@@ -76,7 +76,7 @@
       "He recommended trying the seafood restaurant.",
       "He recommended that I try the seafood restaurant."
     ],
-    "explanation": "<Recommend> + gerund or <that> + subjunctive."
+    "explanation": "<Recommend> + gerundio o <that> + subjuntivo."
   },
   {
     "prompt": "Change to reported speech using <reminded>",
@@ -84,7 +84,7 @@
     "correct": [
       "Mum reminded me to lock the door."
     ],
-    "explanation": "<Remind> + object + <to> + infinitive."
+    "explanation": "<Remind> + objeto + <to> + infinitivo."
   },
   {
     "prompt": "Change to reported speech using <accused>",
@@ -93,7 +93,7 @@
       "She accused him of stealing her idea."
     ],
     "hint": "<Accuse> + object + <of> + gerund",
-    "explanation": "<Accuse> + object + <of> + gerund for allegations."
+    "explanation": "<Accuse> + objeto + <of> + gerundio para acusaciones."
   },
   {
     "prompt": "Change to reported speech using <apologized>",
@@ -102,7 +102,7 @@
       "He apologized for forgetting my birthday.",
       "He apologized for having forgotten my birthday."
     ],
-    "explanation": "<Apologize for> + gerund."
+    "explanation": "<Apologize for> + gerundio."
   },
   {
     "prompt": "Change to reported speech using <insisted>",
@@ -111,7 +111,7 @@
       "She insisted on paying for dinner."
     ],
     "hint": "<Insist on> + gerund",
-    "explanation": "<Insist on> + gerund for strong declarations."
+    "explanation": "<Insist on> + gerundio para declaraciones enfáticas."
   },
   {
     "prompt": "Change to reported speech using <offered>",
@@ -119,7 +119,7 @@
     "correct": [
       "He offered to carry my bags."
     ],
-    "explanation": "<Offer> + <to> + infinitive."
+    "explanation": "<Offer> + <to> + infinitivo."
   },
   {
     "prompt": "Change to reported speech using <refused>",
@@ -127,7 +127,7 @@
     "correct": [
       "She refused to sign the contract."
     ],
-    "explanation": "<Refuse> + <to> + infinitive for declining."
+    "explanation": "<Refuse> + <to> + infinitivo para rechazar algo."
   },
   {
     "prompt": "Change to reported speech using <agreed>",
@@ -135,7 +135,7 @@
     "correct": [
       "He agreed to work overtime that weekend."
     ],
-    "explanation": "<Agree> + <to> + infinitive."
+    "explanation": "<Agree> + <to> + infinitivo."
   },
   {
     "prompt": "Change to reported speech using <complained>",
@@ -144,7 +144,7 @@
       "She complained that the food there was always cold.",
       "She complained about the food always being cold."
     ],
-    "explanation": "<Complain that> + clause or <complain about> + gerund."
+    "explanation": "<Complain that> + cláusula o <complain about> + gerundio."
   },
   {
     "prompt": "Change to reported speech using <encouraged>",
@@ -153,7 +153,7 @@
       "She encouraged him to do it.",
       "She encouraged him to go on."
     ],
-    "explanation": "<Encourage> + object + <to> + infinitive."
+    "explanation": "<Encourage> + objeto + <to> + infinitivo."
   },
   {
     "prompt": "Change to reported speech using <threatened>",
@@ -162,7 +162,7 @@
       "The boss threatened to fire me if I was late again.",
       "The boss threatened to fire him if he was late again."
     ],
-    "explanation": "<Threaten> + <to> + infinitive for warnings with consequences."
+    "explanation": "<Threaten> + <to> + infinitivo para advertencias con consecuencias."
   },
   {
     "prompt": "Change to reported speech using <congratulated>",
@@ -171,7 +171,7 @@
       "She congratulated me on passing my exam."
     ],
     "hint": "<Congratulate> + object + <on> + gerund",
-    "explanation": "<Congratulate> + object + <on> + gerund/noun."
+    "explanation": "<Congratulate> + objeto + <on> + gerundio/sustantivo."
   },
   {
     "prompt": "Change to reported question",
@@ -179,7 +179,7 @@
     "correct": [
       "She asked me where I was going that night."
     ],
-    "explanation": "Reported question: statement word order, tense shift, time reference changes."
+    "explanation": "Pregunta en estilo indirecto: orden de palabras de enunciado, cambio de tiempo verbal, cambio de referencias temporales."
   },
   {
     "prompt": "Change to reported speech using <claimed>",
@@ -188,7 +188,7 @@
       "He claimed that he had never been to that place before.",
       "He claimed he had never been to that place before."
     ],
-    "explanation": "<Claim> + <that> clause for statements of dubious truth."
+    "explanation": "<Claim> + cláusula con <that> para afirmaciones de veracidad dudosa."
   },
   {
     "prompt": "Change to reported speech using <begged>",
@@ -196,7 +196,7 @@
     "correct": [
       "She begged me not to leave her."
     ],
-    "explanation": "<Beg> + object + <(not) to> + infinitive for desperate requests."
+    "explanation": "<Beg> + objeto + <(not) to> + infinitivo para peticiones desesperadas."
   },
   {
     "prompt": "Change to reported speech using <invited>",
@@ -205,7 +205,7 @@
       "She invited me to her party on Saturday.",
       "She invited me to come to her party on Saturday."
     ],
-    "explanation": "<Invite> + object + <to> + infinitive/noun."
+    "explanation": "<Invite> + objeto + <to> + infinitivo/sustantivo."
   },
   {
     "prompt": "Change to reported speech using <advised>",
@@ -213,6 +213,6 @@
     "correct": [
       "The doctor advised me to see a specialist."
     ],
-    "explanation": "<Advise> + object + <to> + infinitive."
+    "explanation": "<Advise> + objeto + <to> + infinitivo."
   }
 ]

@@ -2,69 +2,280 @@
   {
     "id": "reord-pv-b2-001",
     "sentence": "The expenses accounted for nearly half of the total budget",
-    "words": ["The", "expenses", "accounted", "for", "nearly", "half", "of", "the", "total", "budget"],
-    "explanation": "'Account for' means to represent a proportion. Past simple in a factual statement."
+    "words": [
+      "The",
+      "expenses",
+      "accounted",
+      "for",
+      "nearly",
+      "half",
+      "of",
+      "the",
+      "total",
+      "budget"
+    ],
+    "explanation": "'Account for' significa representar una proporción. Pasado simple en una afirmación de hecho."
   },
   {
     "id": "reord-pv-b2-002",
     "sentence": "She needs to brush up on her French before the trip",
-    "words": ["She", "needs", "to", "brush", "up", "on", "her", "French", "before", "the", "trip"],
-    "distractors": ["need"],
+    "words": [
+      "She",
+      "needs",
+      "to",
+      "brush",
+      "up",
+      "on",
+      "her",
+      "French",
+      "before",
+      "the",
+      "trip"
+    ],
+    "distractors": [
+      "need"
+    ],
     "hint": "Third person singular: needs to + base form",
-    "explanation": "'Brush up on' means to review and improve. With 'she', use 'needs', not 'need'."
+    "explanation": "'Brush up on' significa repasar y mejorar. Con 'she', se usa 'needs', no 'need'."
   },
   {
     "id": "reord-pv-b2-003",
     "sentence": "We cannot do without reliable internet in the modern workplace",
-    "words": ["We", "cannot", "do", "without", "reliable", "internet", "in", "the", "modern", "workplace"],
-    "explanation": "'Do without' means to manage without something. 'Cannot' + base form for impossibility."
+    "words": [
+      "We",
+      "cannot",
+      "do",
+      "without",
+      "reliable",
+      "internet",
+      "in",
+      "the",
+      "modern",
+      "workplace"
+    ],
+    "explanation": "'Do without' significa arreglárselas sin algo. 'Cannot' + forma base para expresar imposibilidad."
   },
   {
     "id": "reord-pv-b2-004",
     "sentence": "The analyst broke down the data into three main categories",
-    "words": ["The", "analyst", "broke", "down", "the", "data", "into", "three", "main", "categories"],
-    "distractors": ["breaked"],
-    "explanation": "'Break down' means to analyze in parts. Past: 'broke down'. 'Into' introduces the result."
+    "words": [
+      "The",
+      "analyst",
+      "broke",
+      "down",
+      "the",
+      "data",
+      "into",
+      "three",
+      "main",
+      "categories"
+    ],
+    "distractors": [
+      "breaked"
+    ],
+    "explanation": "'Break down' significa analizar por partes. Pasado: 'broke down'. 'Into' introduce el resultado."
   },
   {
     "id": "reord-pv-b2-005",
     "sentence": "If you had backed up your files you would not have lost them",
-    "words": ["If", "you", "had", "backed", "up", "your", "files", "you", "would", "not", "have", "lost", "them"],
+    "words": [
+      "If",
+      "you",
+      "had",
+      "backed",
+      "up",
+      "your",
+      "files",
+      "you",
+      "would",
+      "not",
+      "have",
+      "lost",
+      "them"
+    ],
     "hint": "Third conditional: If + past perfect, would have + past participle",
-    "explanation": "'Back up' means to make a copy. Third conditional for unreal past situations."
+    "explanation": "'Back up' significa hacer una copia. Tercera condicional para situaciones irreales en el pasado."
   },
   {
     "id": "reord-pv-b2-006",
     "sentence": "The company is phasing out the old software by the end of the year",
-    "words": ["The", "company", "is", "phasing", "out", "the", "old", "software", "by", "the", "end", "of", "the", "year"],
-    "explanation": "'Phase out' means to gradually stop using. Present continuous for planned future action."
+    "words": [
+      "The",
+      "company",
+      "is",
+      "phasing",
+      "out",
+      "the",
+      "old",
+      "software",
+      "by",
+      "the",
+      "end",
+      "of",
+      "the",
+      "year"
+    ],
+    "explanation": "'Phase out' significa dejar de usar algo gradualmente. Presente continuo para una acción futura planeada."
   },
   {
     "id": "reord-pv-b2-007",
     "sentence": "She talked him into applying for the management position",
-    "words": ["She", "talked", "him", "into", "applying", "for", "the", "management", "position"],
+    "words": [
+      "She",
+      "talked",
+      "him",
+      "into",
+      "applying",
+      "for",
+      "the",
+      "management",
+      "position"
+    ],
     "hint": "Talk someone into + gerund",
-    "explanation": "'Talk someone into' means to persuade. 'Into' is followed by a gerund."
+    "explanation": "'Talk someone into' significa persuadir. 'Into' va seguido de un gerundio."
   },
   {
     "id": "reord-pv-b2-008",
     "sentence": "They have been putting up with the noise for over a year",
-    "words": ["They", "have", "been", "putting", "up", "with", "the", "noise", "for", "over", "a", "year"],
+    "words": [
+      "They",
+      "have",
+      "been",
+      "putting",
+      "up",
+      "with",
+      "the",
+      "noise",
+      "for",
+      "over",
+      "a",
+      "year"
+    ],
     "hint": "Present perfect continuous: have been + -ing",
-    "explanation": "'Put up with' means to tolerate. Present perfect continuous for duration."
+    "explanation": "'Put up with' significa tolerar. Presente perfecto continuo para expresar duración."
   },
   {
     "id": "reord-pv-b2-009",
     "sentence": "The CEO stepped down after the scandal came to light",
-    "words": ["The", "CEO", "stepped", "down", "after", "the", "scandal", "came", "to", "light"],
-    "distractors": ["comed"],
-    "explanation": "'Step down' means to resign. 'Come to light' means to become known. Both in past tense."
+    "words": [
+      "The",
+      "CEO",
+      "stepped",
+      "down",
+      "after",
+      "the",
+      "scandal",
+      "came",
+      "to",
+      "light"
+    ],
+    "distractors": [
+      "comed"
+    ],
+    "explanation": "'Step down' significa renunciar. 'Come to light' significa salir a la luz. Ambos en pasado."
   },
   {
     "id": "reord-pv-b2-010",
     "sentence": "I wish I had not turned down that job offer last month",
-    "words": ["I", "wish", "I", "had", "not", "turned", "down", "that", "job", "offer", "last", "month"],
+    "words": [
+      "I",
+      "wish",
+      "I",
+      "had",
+      "not",
+      "turned",
+      "down",
+      "that",
+      "job",
+      "offer",
+      "last",
+      "month"
+    ],
     "hint": "Wish + past perfect for past regrets",
-    "explanation": "'Turn down' means to reject. 'Wish + had not + past participle' expresses past regret."
+    "explanation": "'Turn down' significa rechazar. 'Wish + had not + participio pasado' expresa arrepentimiento en el pasado."
+  },
+  {
+    "id": "reord-pv-b2-011",
+    "sentence": "The team came up with a brilliant solution overnight",
+    "words": [
+      "The",
+      "team",
+      "came",
+      "up",
+      "with",
+      "a",
+      "brilliant",
+      "solution",
+      "overnight"
+    ],
+    "hint": "Subject + phrasal verb + object + time expression",
+    "explanation": "'Come up with' significa idear un plan o una solución."
+  },
+  {
+    "id": "reord-pv-b2-012",
+    "sentence": "He thought he could get away with the mistake",
+    "words": [
+      "He",
+      "thought",
+      "he",
+      "could",
+      "get",
+      "away",
+      "with",
+      "the",
+      "mistake"
+    ],
+    "hint": "Subject + verb + modal + phrasal verb + object",
+    "explanation": "'Get away with' significa evitar el castigo o las consecuencias de algo indebido."
+  },
+  {
+    "id": "reord-pv-b2-013",
+    "sentence": "She never looks down on her colleagues",
+    "words": [
+      "She",
+      "never",
+      "looks",
+      "down",
+      "on",
+      "her",
+      "colleagues"
+    ],
+    "hint": "Subject + adverb + phrasal verb + object",
+    "explanation": "'Look down on' significa considerar a alguien inferior."
+  },
+  {
+    "id": "reord-pv-b2-014",
+    "sentence": "Extra training will make up for the lost time",
+    "words": [
+      "Extra",
+      "training",
+      "will",
+      "make",
+      "up",
+      "for",
+      "the",
+      "lost",
+      "time"
+    ],
+    "hint": "Subject + will + phrasal verb + object",
+    "explanation": "'Make up for' significa compensar algo."
+  },
+  {
+    "id": "reord-pv-b2-015",
+    "sentence": "They refused to settle for anything less than the best",
+    "words": [
+      "They",
+      "refused",
+      "to",
+      "settle",
+      "for",
+      "anything",
+      "less",
+      "than",
+      "the",
+      "best"
+    ],
+    "hint": "Subject + verb + infinitive + phrasal verb + object",
+    "explanation": "'Settle for' significa conformarse con algo menos de lo que originalmente se quería."
   }
 ]

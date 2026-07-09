@@ -6,7 +6,7 @@
       "She has visited Paris."
     ],
     "hint": "Use <has> + past participle",
-    "explanation": "Present perfect: <has/have> + past participle. Remove the specific time reference."
+    "explanation": "Presente perfecto: <has/have> + participio pasado. Se elimina la referencia temporal específica."
   },
   {
     "prompt": "Change to passive voice",
@@ -15,7 +15,7 @@
       "The cake was eaten by the dog."
     ],
     "hint": "Object becomes subject + <was> + past participle",
-    "explanation": "Passive: object + <was/were> + past participle + <by> + agent."
+    "explanation": "Voz pasiva: objeto + <was/were> + participio pasado + <by> + agente."
   },
   {
     "prompt": "Change to reported speech",
@@ -25,7 +25,7 @@
       "She said she was tired."
     ],
     "hint": "Change pronouns and tense",
-    "explanation": "Reported speech: shift tense back (<am> → <was>) and change pronouns."
+    "explanation": "Estilo indirecto: se retrocede el tiempo verbal (<am> → <was>) y se cambian los pronombres."
   },
   {
     "prompt": "Change to comparative",
@@ -34,7 +34,7 @@
       "This book is more interesting."
     ],
     "hint": "Use <more> for long adjectives",
-    "explanation": "Adjectives with 3+ syllables use <more> + adjective for comparatives."
+    "explanation": "Los adjetivos de 3 o más sílabas usan <more> + adjetivo para el comparativo."
   },
   {
     "prompt": "Change to past continuous",
@@ -43,7 +43,7 @@
       "They were playing tennis."
     ],
     "hint": "Use <were> + verb-ing",
-    "explanation": "Past continuous: <was/were> + verb-ing. Shows an action in progress in the past."
+    "explanation": "Pasado continuo: <was/were> + verbo-ing. Muestra una acción en progreso en el pasado."
   },
   {
     "prompt": "Change to superlative",
@@ -53,7 +53,7 @@
       "She's the tallest."
     ],
     "hint": "Add <the> + adjective + <-est>",
-    "explanation": "Short adjectives form superlatives with <the> + adjective + <-est>."
+    "explanation": "Los adjetivos cortos forman el superlativo con <the> + adjetivo + <-est>."
   },
   {
     "prompt": "Change to future with <going to>",
@@ -62,7 +62,7 @@
       "I am going to study English.",
       "I'm going to study English."
     ],
-    "explanation": "Future with <going to>: subject + <am/is/are going to> + base verb."
+    "explanation": "Futuro con <going to>: sujeto + <am/is/are going to> + verbo base."
   },
   {
     "prompt": "Change to negative",
@@ -71,7 +71,7 @@
       "He hasn't finished his homework.",
       "He has not finished his homework."
     ],
-    "explanation": "Present perfect negative: <has not> (hasn't) + past participle."
+    "explanation": "Presente perfecto negativo: <has not> (hasn't) + participio pasado."
   },
   {
     "prompt": "Change to a question",
@@ -79,7 +79,7 @@
     "correct": [
       "Were they watching TV?"
     ],
-    "explanation": "Past continuous questions: invert <were> and the subject."
+    "explanation": "Preguntas en pasado continuo: se invierte <were> y el sujeto."
   },
   {
     "prompt": "Rewrite using <used to>",
@@ -89,7 +89,7 @@
       "When I was young, I used to play every day."
     ],
     "hint": "Use <used to> + base verb for past habits",
-    "explanation": "<Used to> + base verb describes past habits that no longer happen."
+    "explanation": "<Used to> + verbo base describe hábitos pasados que ya no ocurren."
   },
   {
     "prompt": "Change to past continuous",
@@ -98,7 +98,7 @@
       "She was cooking dinner."
     ],
     "hint": "Use <was> + verb-ing",
-    "explanation": "Past continuous: <was/were> + verb-ing for an action in progress in the past."
+    "explanation": "Pasado continuo: <was/were> + verbo-ing para una acción en progreso en el pasado."
   },
   {
     "prompt": "Change to future with <will>",
@@ -107,7 +107,7 @@
       "I will visit my grandmother.",
       "I'll visit my grandmother."
     ],
-    "explanation": "Future with <will>: subject + <will> + base verb."
+    "explanation": "Futuro con <will>: sujeto + <will> + verbo base."
   },
   {
     "prompt": "Change to comparative",
@@ -116,7 +116,7 @@
       "This car is faster."
     ],
     "hint": "Add <-er> to short adjectives",
-    "explanation": "Short adjectives form comparatives with adjective + <-er>: <fast> → <faster>."
+    "explanation": "Los adjetivos cortos forman el comparativo con adjetivo + <-er>: <fast> → <faster>."
   },
   {
     "prompt": "Change to superlative",
@@ -124,7 +124,7 @@
     "correct": [
       "This building is the oldest."
     ],
-    "explanation": "Short adjectives form superlatives with <the> + adjective + <-est>: <old> → <the oldest>."
+    "explanation": "Los adjetivos cortos forman el superlativo con <the> + adjetivo + <-est>: <old> → <the oldest>."
   },
   {
     "prompt": "Change to reported speech",
@@ -134,7 +134,7 @@
       "He said he liked chocolate."
     ],
     "hint": "Shift present simple to past simple",
-    "explanation": "Reported speech: <like> → <liked>, <I> → <he>."
+    "explanation": "Estilo indirecto: <like> → <liked>, <I> → <he>."
   },
   {
     "prompt": "Change to past continuous",
@@ -142,7 +142,7 @@
     "correct": [
       "We were watching a movie."
     ],
-    "explanation": "Past continuous: <were> + verb-ing for plural subjects."
+    "explanation": "Pasado continuo: <were> + verbo-ing para sujetos en plural."
   },
   {
     "prompt": "Change to future with <going to>",
@@ -151,7 +151,7 @@
       "She is going to buy a new phone.",
       "She's going to buy a new phone."
     ],
-    "explanation": "Future with <going to>: subject + <is/are going to> + base verb."
+    "explanation": "Futuro con <going to>: sujeto + <is/are going to> + verbo base."
   },
   {
     "prompt": "Change to comparative",
@@ -160,7 +160,7 @@
       "This exercise is more difficult."
     ],
     "hint": "Use <more> for long adjectives",
-    "explanation": "Long adjectives use <more> + adjective: <difficult> → <more difficult>."
+    "explanation": "Los adjetivos largos usan <more> + adjetivo: <difficult> → <more difficult>."
   },
   {
     "prompt": "Change to reported speech",
@@ -170,7 +170,7 @@
       "She said she could swim."
     ],
     "hint": "Shift <can> to <could>",
-    "explanation": "Reported speech: <can> → <could>, <I> → <she>."
+    "explanation": "Estilo indirecto: <can> → <could>, <I> → <she>."
   },
   {
     "prompt": "Change to present perfect",
@@ -180,7 +180,7 @@
       "They've finished the project."
     ],
     "hint": "Remove the specific time reference",
-    "explanation": "Present perfect: <have> + past participle. Remove specific time markers."
+    "explanation": "Presente perfecto: <have> + participio pasado. Se eliminan los marcadores temporales específicos."
   },
   {
     "prompt": "Change to future with <will>",
@@ -189,7 +189,7 @@
       "She will work at the hospital.",
       "She'll work at the hospital."
     ],
-    "explanation": "Future with <will>: subject + <will> + base verb."
+    "explanation": "Futuro con <will>: sujeto + <will> + verbo base."
   },
   {
     "prompt": "Change to superlative",
@@ -198,7 +198,7 @@
       "This movie is the best."
     ],
     "hint": "<good> has an irregular superlative",
-    "explanation": "Irregular superlative: <good> → <the best>."
+    "explanation": "Superlativo irregular: <good> → <the best>."
   },
   {
     "prompt": "Change to past continuous",
@@ -206,7 +206,7 @@
     "correct": [
       "He was reading a newspaper."
     ],
-    "explanation": "Past continuous: <was> + verb-ing."
+    "explanation": "Pasado continuo: <was> + verbo-ing."
   },
   {
     "prompt": "Change to comparative",
@@ -215,7 +215,7 @@
       "My house is bigger."
     ],
     "hint": "Double the final consonant before adding <-er>",
-    "explanation": "Short adjectives ending in consonant-vowel-consonant double the last letter: <big> → <bigger>."
+    "explanation": "Los adjetivos cortos terminados en consonante-vocal-consonante duplican la última letra: <big> → <bigger>."
   },
   {
     "prompt": "Change to negative in past simple",
@@ -224,6 +224,6 @@
       "She didn't go to the party.",
       "She did not go to the party."
     ],
-    "explanation": "Past simple negative: <didn't> + base verb. <went> → <didn't go>."
+    "explanation": "Pasado simple negativo: <didn't> + verbo base. <went> → <didn't go>."
   }
 ]

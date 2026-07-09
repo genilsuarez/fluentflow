@@ -5,7 +5,7 @@
     "correct": [
       "Much as I respect his opinion, I disagree with his conclusion."
     ],
-    "explanation": "<Much as> + clause expresses strong concession: acknowledging something while contrasting."
+    "explanation": "<Much as> + cláusula expresa una concesión fuerte: reconocer algo mientras se contrasta."
   },
   {
     "prompt": "Rewrite using <However + adjective + subject + verb>",
@@ -13,7 +13,7 @@
     "correct": [
       "However hard she tries, she can't please everyone."
     ],
-    "explanation": "<However> + adjective/adverb + clause = <No matter how> + adjective/adverb."
+    "explanation": "<However> + adjetivo/adverbio + cláusula = <No matter how> + adjetivo/adverbio."
   },
   {
     "prompt": "Rewrite using <Adjective + as/though + subject + verb>",
@@ -23,7 +23,7 @@
       "Difficult though the task was, we managed to complete it."
     ],
     "hint": "Fronted adjective + <as/though>",
-    "explanation": "Fronted concessive: adjective + <as/though> + subject + verb."
+    "explanation": "Concesión antepuesta: adjetivo + <as/though> + sujeto + verbo."
   },
   {
     "prompt": "Rewrite using <Be that as it may>",
@@ -31,7 +31,7 @@
     "correct": [
       "I understand your point. Be that as it may, my decision is final."
     ],
-    "explanation": "<Be that as it may> = formal <regardless of that>. Acknowledges then dismisses."
+    "explanation": "<Be that as it may> = <regardless of that> de forma formal. Se reconoce algo y luego se descarta."
   },
   {
     "prompt": "Rewrite using <Notwithstanding>",
@@ -40,7 +40,7 @@
       "Notwithstanding the financial difficulties, the company continued to grow.",
       "The company continued to grow notwithstanding the financial difficulties."
     ],
-    "explanation": "<Notwithstanding> = very formal <despite>. Can precede or follow the noun."
+    "explanation": "<Notwithstanding> = <despite> muy formal. Puede ir antes o después del sustantivo."
   },
   {
     "prompt": "Rewrite using <Whereas>",
@@ -49,7 +49,7 @@
       "Whereas the north of the country is industrial, the south is mostly agricultural.",
       "The north of the country is industrial, whereas the south is mostly agricultural."
     ],
-    "explanation": "<Whereas> introduces a direct factual contrast between two situations."
+    "explanation": "<Whereas> introduce un contraste factual directo entre dos situaciones."
   },
   {
     "prompt": "Rewrite using <While> (concessive)",
@@ -58,7 +58,7 @@
       "While I accept that his theory has merits, it has significant flaws too.",
       "While his theory has merits, it has significant flaws."
     ],
-    "explanation": "<While> (concessive) = <Although>. Acknowledges one point before contrasting."
+    "explanation": "<While> (concesivo) = <Although>. Reconoce un punto antes de contrastarlo."
   },
   {
     "prompt": "Rewrite using <For all>",
@@ -67,7 +67,7 @@
       "For all his experience, he still made basic errors."
     ],
     "hint": "<For all> + noun = <Despite all>",
-    "explanation": "<For all> + noun/gerund = <despite>. Formal and emphatic."
+    "explanation": "<For all> + sustantivo/gerundio = <despite>. Formal y enfático."
   },
   {
     "prompt": "Rewrite using <Hard as>",
@@ -76,7 +76,7 @@
       "Hard as she tried, she couldn't find a solution.",
       "Try as she might, she couldn't find a solution."
     ],
-    "explanation": "<Hard as + subject + verb> or <Verb as + subject + might> for emphatic concession."
+    "explanation": "<Hard as + sujeto + verbo> o <Verbo as + sujeto + might> para una concesión enfática."
   },
   {
     "prompt": "Rewrite using <All the same>",
@@ -84,7 +84,7 @@
     "correct": [
       "I know it's risky. All the same, I'm going to do it."
     ],
-    "explanation": "<All the same> = <nevertheless>, but less formal."
+    "explanation": "<All the same> = <nevertheless>, pero menos formal."
   },
   {
     "prompt": "Rewrite using <Even so>",
@@ -92,7 +92,7 @@
     "correct": [
       "The weather was perfect. Even so, we decided to stay indoors."
     ],
-    "explanation": "<Even so> = <Despite that/Nevertheless>. Introduces an unexpected contrast."
+    "explanation": "<Even so> = <Despite that/Nevertheless>. Introduce un contraste inesperado."
   },
   {
     "prompt": "Rewrite using <Admittedly ... but>",
@@ -100,7 +100,7 @@
     "correct": [
       "Admittedly, the plan has flaws, but it's the best we have."
     ],
-    "explanation": "<Admittedly> concedes a point before the main argument with <but>."
+    "explanation": "<Admittedly> concede un punto antes del argumento principal, con <but>."
   },
   {
     "prompt": "Rewrite using <Granted (that) ... but>",
@@ -109,7 +109,7 @@
       "Granted, the cost is high, but the benefits outweigh it.",
       "Granted that the cost is high, the benefits outweigh it."
     ],
-    "explanation": "<Granted (that)> = <I accept that>, then introduces a counter-argument."
+    "explanation": "<Granted (that)> = <I accept that>, y luego introduce un contraargumento."
   },
   {
     "prompt": "Rewrite using <However much>",
@@ -118,7 +118,7 @@
       "However much money you offer, I won't sell the house.",
       "However much you offer, I won't sell the house."
     ],
-    "explanation": "<However much> + noun/clause = <No matter how much>."
+    "explanation": "<However much> + sustantivo/cláusula = <No matter how much>."
   },
   {
     "prompt": "Rewrite using <Nonetheless>",
@@ -127,7 +127,7 @@
       "The evidence against him was strong. Nonetheless, he was acquitted.",
       "The evidence against him was strong; nonetheless, he was acquitted."
     ],
-    "explanation": "<Nonetheless> = <Nevertheless>. Very formal connector."
+    "explanation": "<Nonetheless> = <Nevertheless>. Conector muy formal."
   },
   {
     "prompt": "Rewrite using <As opposed to>",
@@ -135,7 +135,7 @@
     "correct": [
       "She prefers working remotely, as opposed to her colleagues who prefer the office."
     ],
-    "explanation": "<As opposed to> draws a direct contrast between two entities/preferences."
+    "explanation": "<As opposed to> establece un contraste directo entre dos entidades/preferencias."
   },
   {
     "prompt": "Rewrite using <In contrast>",
@@ -143,7 +143,7 @@
     "correct": [
       "The first experiment succeeded. In contrast, the second one failed completely."
     ],
-    "explanation": "<In contrast> introduces an opposing situation or result."
+    "explanation": "<In contrast> introduce una situación o resultado opuesto."
   },
   {
     "prompt": "Rewrite using <On the contrary>",
@@ -151,7 +151,7 @@
     "correct": [
       "He didn't find the work boring. On the contrary, he found it fascinating."
     ],
-    "explanation": "<On the contrary> corrects a false assumption and states the opposite."
+    "explanation": "<On the contrary> corrige una suposición falsa y plantea lo opuesto."
   },
   {
     "prompt": "Rewrite using <Conversely>",
@@ -159,7 +159,7 @@
     "correct": [
       "Higher temperatures increase evaporation. Conversely, lower temperatures reduce it."
     ],
-    "explanation": "<Conversely> introduces the reverse or opposite relationship."
+    "explanation": "<Conversely> introduce la relación inversa u opuesta."
   },
   {
     "prompt": "Rewrite using <Still>",
@@ -167,7 +167,7 @@
     "correct": [
       "She was warned about the risks. Still, she went ahead with the plan."
     ],
-    "explanation": "<Still> = <Nevertheless> in an informal register. Shows unexpected continuation."
+    "explanation": "<Still> = <Nevertheless> en un registro informal. Muestra una continuación inesperada."
   },
   {
     "prompt": "Rewrite using <Tired as he was>",
@@ -175,7 +175,7 @@
     "correct": [
       "Tired as he was, he kept working until midnight."
     ],
-    "explanation": "Fronted adjective + <as> + subject + <was> for literary concession."
+    "explanation": "Adjetivo antepuesto + <as> + sujeto + <was> para una concesión literaria."
   },
   {
     "prompt": "Rewrite using <Yet>",
@@ -184,7 +184,7 @@
       "The evidence was compelling, yet the jury was not convinced.",
       "The evidence was compelling. Yet the jury was not convinced."
     ],
-    "explanation": "<Yet> = <but/however> for unexpected contrast. More literary."
+    "explanation": "<Yet> = <but/however> para un contraste inesperado. Más literario."
   },
   {
     "prompt": "Rewrite using <Whoever/Whatever>",
@@ -192,7 +192,7 @@
     "correct": [
       "Whoever asks, the answer is no."
     ],
-    "explanation": "<Whoever/Whatever/Wherever> + clause = <It doesn't matter who/what/where>."
+    "explanation": "<Whoever/Whatever/Wherever> + cláusula = <It doesn't matter who/what/where>."
   },
   {
     "prompt": "Rewrite using <No matter what>",
@@ -200,7 +200,7 @@
     "correct": [
       "No matter what happens, I'll support you."
     ],
-    "explanation": "<No matter what> = <whatever>. Emphatic concession about unknown future."
+    "explanation": "<No matter what> = <whatever>. Concesión enfática sobre un futuro desconocido."
   },
   {
     "prompt": "Rewrite using <Albeit>",
@@ -210,6 +210,6 @@
       "There was progress, albeit slow."
     ],
     "hint": "<Albeit> = formal <although it was>",
-    "explanation": "<Albeit> is a formal, concise concessive conjunction: <although (it was)>."
+    "explanation": "<Albeit> es una conjunción concesiva formal y concisa: <although (it was)>."
   }
 ]

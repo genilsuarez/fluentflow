@@ -5,7 +5,7 @@
     "correct": [
       "Women tend to live longer than men."
     ],
-    "explanation": "<Tend to> softens a generalization, making it less absolute."
+    "explanation": "<Tend to> suaviza una generalización, haciéndola menos absoluta."
   },
   {
     "prompt": "Rewrite using hedging with <It appears that>",
@@ -14,7 +14,7 @@
       "It appears that the experiment was a failure.",
       "It would appear that the experiment was a failure."
     ],
-    "explanation": "<It appears/seems that> introduces uncertainty and avoids categorical claims."
+    "explanation": "<It appears/seems that> introduce incertidumbre y evita afirmaciones categóricas."
   },
   {
     "prompt": "Rewrite using hedging with <somewhat>",
@@ -22,7 +22,7 @@
     "correct": [
       "The results were somewhat disappointing."
     ],
-    "explanation": "<Somewhat> weakens an adjective, suggesting degree rather than absolute truth."
+    "explanation": "<Somewhat> debilita un adjetivo, sugiriendo un grado en lugar de una verdad absoluta."
   },
   {
     "prompt": "Rewrite using hedging with <It could be argued that>",
@@ -31,7 +31,7 @@
       "It could be argued that social media causes mental health problems."
     ],
     "hint": "Distance yourself from a strong claim",
-    "explanation": "<It could be argued that> presents a viewpoint without committing to it."
+    "explanation": "<It could be argued that> presenta un punto de vista sin comprometerse con él."
   },
   {
     "prompt": "Rewrite using hedging with <There is evidence to suggest>",
@@ -40,7 +40,7 @@
       "There is evidence to suggest that coffee prevents certain types of cancer.",
       "There is evidence to suggest coffee may prevent certain types of cancer."
     ],
-    "explanation": "<There is evidence to suggest> hedges by attributing the claim to data rather than asserting it directly."
+    "explanation": "<There is evidence to suggest> atenúa la afirmación al atribuirla a los datos en lugar de afirmarla directamente."
   },
   {
     "prompt": "Rewrite using hedging with <may well>",
@@ -48,7 +48,7 @@
     "correct": [
       "This approach may well succeed."
     ],
-    "explanation": "<May well> expresses probability with some reservation."
+    "explanation": "<May well> expresa probabilidad con cierta reserva."
   },
   {
     "prompt": "Rewrite using hedging with <to some extent>",
@@ -57,7 +57,7 @@
       "The government is, to some extent, responsible for the crisis.",
       "To some extent, the government is responsible for the crisis."
     ],
-    "explanation": "<To some extent> limits the scope of a claim."
+    "explanation": "<To some extent> limita el alcance de una afirmación."
   },
   {
     "prompt": "Rewrite using stance with <I am inclined to believe>",
@@ -66,7 +66,7 @@
       "I am inclined to believe that he is guilty.",
       "I'm inclined to believe that he is guilty."
     ],
-    "explanation": "<I am inclined to believe> expresses a personal tendency without asserting fact."
+    "explanation": "<I am inclined to believe> expresa una tendencia personal sin afirmar un hecho."
   },
   {
     "prompt": "Rewrite using hedging with <arguably>",
@@ -74,7 +74,7 @@
     "correct": [
       "Shakespeare is arguably the greatest writer in the English language."
     ],
-    "explanation": "<Arguably> signals that a claim is debatable rather than universally accepted."
+    "explanation": "<Arguably> señala que una afirmación es discutible en lugar de universalmente aceptada."
   },
   {
     "prompt": "Rewrite making the claim less absolute",
@@ -84,7 +84,7 @@
       "Homework may not always be the most effective method for learning."
     ],
     "hint": "Avoid absolute terms like <useless>, <always>, <never>",
-    "explanation": "Academic hedging replaces absolutes with qualified statements."
+    "explanation": "El hedging académico reemplaza los absolutos con afirmaciones matizadas."
   },
   {
     "prompt": "Rewrite using <It is widely believed that>",
@@ -92,7 +92,7 @@
     "correct": [
       "It is widely believed that exercise improves mental health."
     ],
-    "explanation": "<It is widely believed/accepted/acknowledged that> attributes to consensus."
+    "explanation": "<It is widely believed/accepted/acknowledged that> atribuye la afirmación a un consenso."
   },
   {
     "prompt": "Rewrite using hedging with <in many cases>",
@@ -100,7 +100,7 @@
     "correct": [
       "In many cases, students struggle with academic writing."
     ],
-    "explanation": "<In many cases> limits generalization to a subset rather than all."
+    "explanation": "<In many cases> limita la generalización a un subconjunto en lugar de a todos los casos."
   },
   {
     "prompt": "Rewrite using <One possible explanation is>",
@@ -109,7 +109,7 @@
       "One possible explanation for the decline is climate change.",
       "One possible explanation is that the decline is caused by climate change."
     ],
-    "explanation": "<One possible explanation> presents causality as hypothesis rather than fact."
+    "explanation": "<One possible explanation> presenta la causalidad como hipótesis en lugar de hecho."
   },
   {
     "prompt": "Rewrite using <appears to> instead of <is>",
@@ -117,7 +117,7 @@
     "correct": [
       "The new policy appears to be ineffective."
     ],
-    "explanation": "<Appears to be> is less categorical than <is>."
+    "explanation": "<Appears to be> es menos categórico que <is>."
   },
   {
     "prompt": "Rewrite using <It is plausible that>",
@@ -125,7 +125,7 @@
     "correct": [
       "It is plausible that the virus originated in wild animals."
     ],
-    "explanation": "<It is plausible/conceivable that> presents a reasonable possibility."
+    "explanation": "<It is plausible/conceivable that> presenta una posibilidad razonable."
   },
   {
     "prompt": "Rewrite using <would seem to>",
@@ -134,7 +134,7 @@
       "The data would seem to confirm our hypothesis."
     ],
     "hint": "<Would seem to> adds tentativeness",
-    "explanation": "<Would seem to> adds distance and tentativeness to a conclusion."
+    "explanation": "<Would seem to> añade distancia y provisionalidad a una conclusión."
   },
   {
     "prompt": "Rewrite making the claim more tentative",
@@ -143,7 +143,7 @@
       "Technology often improves productivity.",
       "Technology can improve productivity in many contexts."
     ],
-    "explanation": "Replace <always> with <often/can/in many contexts> to avoid overgeneralization."
+    "explanation": "Se reemplaza <always> por <often/can/in many contexts> para evitar la sobregeneralización."
   },
   {
     "prompt": "Rewrite using <This suggests that>",
@@ -152,7 +152,7 @@
       "The results suggest that the treatment works.",
       "This suggests that the treatment may work."
     ],
-    "explanation": "<Suggests> is weaker than <proves>. Academic writing avoids claiming proof."
+    "explanation": "<Suggests> es más débil que <proves>. La escritura académica evita afirmar una prueba concluyente."
   },
   {
     "prompt": "Rewrite using <a significant number of> instead of <most>",
@@ -161,7 +161,7 @@
       "A significant number of participants reported side effects.",
       "A considerable number of participants reported side effects."
     ],
-    "explanation": "<A significant/considerable number of> is more precise than <most>."
+    "explanation": "<A significant/considerable number of> es más preciso que <most>."
   },
   {
     "prompt": "Rewrite using hedging with <on balance>",
@@ -170,7 +170,7 @@
       "On balance, the advantages outweigh the disadvantages.",
       "On balance, the advantages would seem to outweigh the disadvantages."
     ],
-    "explanation": "<On balance> signals that both sides were considered before reaching a conclusion."
+    "explanation": "<On balance> indica que se consideraron ambos lados antes de llegar a una conclusión."
   },
   {
     "prompt": "Rewrite using <It remains to be seen whether>",
@@ -178,7 +178,7 @@
     "correct": [
       "It remains to be seen whether the policy will reduce inequality."
     ],
-    "explanation": "<It remains to be seen whether> expresses uncertainty about future outcomes."
+    "explanation": "<It remains to be seen whether> expresa incertidumbre sobre resultados futuros."
   },
   {
     "prompt": "Rewrite using <is/are likely to>",
@@ -186,7 +186,7 @@
     "correct": [
       "Prices are likely to increase next year."
     ],
-    "explanation": "<Is/are likely to> expresses probability without certainty."
+    "explanation": "<Is/are likely to> expresa probabilidad sin certeza."
   },
   {
     "prompt": "Rewrite using <It is generally accepted that>",
@@ -194,7 +194,7 @@
     "correct": [
       "It is generally accepted that climate change is caused by human activity."
     ],
-    "explanation": "<It is generally accepted that> attributes to scientific consensus."
+    "explanation": "<It is generally accepted that> atribuye la afirmación a un consenso científico."
   },
   {
     "prompt": "Rewrite using <might be considered>",
@@ -202,7 +202,7 @@
     "correct": [
       "This behavior might be considered unacceptable."
     ],
-    "explanation": "<Might be considered> introduces subjectivity and avoids imposing judgment."
+    "explanation": "<Might be considered> introduce subjetividad y evita imponer un juicio."
   },
   {
     "prompt": "Rewrite using <To a certain degree>",
@@ -211,6 +211,6 @@
       "To a certain degree, education determines future success.",
       "Education determines future success to a certain degree."
     ],
-    "explanation": "<To a certain degree> qualifies the extent of a causal claim."
+    "explanation": "<To a certain degree> matiza el alcance de una afirmación causal."
   }
 ]

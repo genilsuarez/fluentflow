@@ -2,135 +2,303 @@
   {
     "id": "reord-a2-pp-001",
     "sentence": "I have never been to London",
-    "words": ["I", "have", "never", "been", "to", "London"],
+    "words": [
+      "I",
+      "have",
+      "never",
+      "been",
+      "to",
+      "London"
+    ],
     "hint": "have + never + past participle",
-    "explanation": "'Never' goes between 'have' and the past participle: 'have never been'."
+    "explanation": "'Never' va entre 'have' y el participio pasado: 'have never been'."
   },
   {
     "id": "reord-a2-pp-002",
     "sentence": "She has already finished her homework",
-    "words": ["She", "has", "already", "finished", "her", "homework"],
-    "distractors": ["have"],
+    "words": [
+      "She",
+      "has",
+      "already",
+      "finished",
+      "her",
+      "homework"
+    ],
+    "distractors": [
+      "have"
+    ],
     "hint": "'Already' goes between has/have and the past participle",
-    "explanation": "With 'she', use 'has' (not 'have'). 'Already' goes before the past participle."
+    "explanation": "Con 'she' se usa 'has' (no 'have'). 'Already' va antes del participio pasado."
   },
   {
     "id": "reord-a2-pp-003",
     "sentence": "Have you ever visited Paris",
-    "words": ["Have", "you", "ever", "visited", "Paris"],
+    "words": [
+      "Have",
+      "you",
+      "ever",
+      "visited",
+      "Paris"
+    ],
     "hint": "Questions: Have/Has + subject + ever + past participle",
-    "explanation": "Present perfect questions: Have + subject + ever + past participle."
+    "explanation": "Preguntas en presente perfecto: Have + sujeto + ever + participio pasado."
   },
   {
     "id": "reord-a2-pp-004",
     "sentence": "They have just arrived at the hotel",
-    "words": ["They", "have", "just", "arrived", "at", "the", "hotel"],
-    "explanation": "'Just' goes between 'have' and the past participle for recent actions."
+    "words": [
+      "They",
+      "have",
+      "just",
+      "arrived",
+      "at",
+      "the",
+      "hotel"
+    ],
+    "explanation": "'Just' va entre 'have' y el participio pasado para acciones recientes."
   },
   {
     "id": "reord-a2-pp-005",
     "sentence": "He has not eaten anything today",
-    "words": ["He", "has", "not", "eaten", "anything", "today"],
-    "distractors": ["have"],
-    "explanation": "With 'he', use 'has not' (not 'have not'). 'Eat' → 'eaten' (irregular)."
+    "words": [
+      "He",
+      "has",
+      "not",
+      "eaten",
+      "anything",
+      "today"
+    ],
+    "distractors": [
+      "have"
+    ],
+    "explanation": "Con 'he' se usa 'has not' (no 'have not'). 'Eat' → 'eaten' (irregular)."
   },
   {
     "id": "reord-a2-pp-006",
     "sentence": "We have lived here for five years",
-    "words": ["We", "have", "lived", "here", "for", "five", "years"],
+    "words": [
+      "We",
+      "have",
+      "lived",
+      "here",
+      "for",
+      "five",
+      "years"
+    ],
     "hint": "'For' is used with periods of time",
-    "explanation": "'For' + period of time: 'for five years'. Place at the end."
+    "explanation": "'For' + período de tiempo: 'for five years'. Se coloca al final."
   },
   {
     "id": "reord-a2-pp-007",
     "sentence": "Has she ever tried Japanese food",
-    "words": ["Has", "she", "ever", "tried", "Japanese", "food"],
-    "distractors": ["Have"],
-    "explanation": "With 'she', use 'Has' (not 'Have') in questions."
+    "words": [
+      "Has",
+      "she",
+      "ever",
+      "tried",
+      "Japanese",
+      "food"
+    ],
+    "distractors": [
+      "Have"
+    ],
+    "explanation": "Con 'she' se usa 'Has' (no 'Have') en las preguntas."
   },
   {
     "id": "reord-a2-pp-008",
     "sentence": "I have already seen that movie twice",
-    "words": ["I", "have", "already", "seen", "that", "movie", "twice"],
-    "explanation": "'Already' between have and past participle. 'Twice' at the end."
+    "words": [
+      "I",
+      "have",
+      "already",
+      "seen",
+      "that",
+      "movie",
+      "twice"
+    ],
+    "explanation": "'Already' va entre have y el participio pasado. 'Twice' va al final."
   },
   {
     "id": "reord-a2-pp-009",
     "sentence": "They have not finished the project yet",
-    "words": ["They", "have", "not", "finished", "the", "project", "yet"],
+    "words": [
+      "They",
+      "have",
+      "not",
+      "finished",
+      "the",
+      "project",
+      "yet"
+    ],
     "hint": "'Yet' goes at the end in negatives",
-    "explanation": "'Yet' goes at the end of negative sentences: 'have not finished...yet'."
+    "explanation": "'Yet' va al final de las oraciones negativas: 'have not finished...yet'."
   },
   {
     "id": "reord-a2-pp-010",
     "sentence": "She has worked here since January",
-    "words": ["She", "has", "worked", "here", "since", "January"],
-    "distractors": ["have"],
+    "words": [
+      "She",
+      "has",
+      "worked",
+      "here",
+      "since",
+      "January"
+    ],
+    "distractors": [
+      "have"
+    ],
     "hint": "'Since' is used with a specific point in time",
-    "explanation": "'Since' + specific time: 'since January'. 'Has' with 'she', not 'have'."
+    "explanation": "'Since' + momento específico: 'since January'. Se usa 'has' con 'she', no 'have'."
   },
   {
     "id": "reord-a2-pp-011",
     "sentence": "Have they ever been to a concert",
-    "words": ["Have", "they", "ever", "been", "to", "a", "concert"],
-    "explanation": "Question: Have + subject + ever + past participle."
+    "words": [
+      "Have",
+      "they",
+      "ever",
+      "been",
+      "to",
+      "a",
+      "concert"
+    ],
+    "explanation": "Pregunta: Have + sujeto + ever + participio pasado."
   },
   {
     "id": "reord-a2-pp-012",
     "sentence": "He has just left the office",
-    "words": ["He", "has", "just", "left", "the", "office"],
-    "distractors": ["have"],
-    "explanation": "'He' uses 'has'. 'Just' for very recent actions: 'has just left'."
+    "words": [
+      "He",
+      "has",
+      "just",
+      "left",
+      "the",
+      "office"
+    ],
+    "distractors": [
+      "have"
+    ],
+    "explanation": "Con 'he' se usa 'has'. 'Just' se usa para acciones muy recientes: 'has just left'."
   },
   {
     "id": "reord-a2-pp-013",
     "sentence": "I have not spoken to her recently",
-    "words": ["I", "have", "not", "spoken", "to", "her", "recently"],
-    "explanation": "'Speak' → 'spoken' (irregular). 'Recently' at the end."
+    "words": [
+      "I",
+      "have",
+      "not",
+      "spoken",
+      "to",
+      "her",
+      "recently"
+    ],
+    "explanation": "'Speak' → 'spoken' (irregular). 'Recently' va al final."
   },
   {
     "id": "reord-a2-pp-014",
     "sentence": "We have known each other for ten years",
-    "words": ["We", "have", "known", "each", "other", "for", "ten", "years"],
-    "explanation": "'Know' → 'known' (irregular). 'For' + duration at the end."
+    "words": [
+      "We",
+      "have",
+      "known",
+      "each",
+      "other",
+      "for",
+      "ten",
+      "years"
+    ],
+    "explanation": "'Know' → 'known' (irregular). 'For' + duración va al final."
   },
   {
     "id": "reord-a2-pp-015",
     "sentence": "Has he already read the new book",
-    "words": ["Has", "he", "already", "read", "the", "new", "book"],
-    "distractors": ["Have"],
-    "explanation": "'He' uses 'Has' in questions. 'Already' before past participle."
+    "words": [
+      "Has",
+      "he",
+      "already",
+      "read",
+      "the",
+      "new",
+      "book"
+    ],
+    "distractors": [
+      "Have"
+    ],
+    "explanation": "Con 'he' se usa 'Has' en las preguntas. 'Already' va antes del participio pasado."
   },
   {
     "id": "reord-a2-pp-016",
     "sentence": "She has never forgotten her first day at school",
-    "words": ["She", "has", "never", "forgotten", "her", "first", "day", "at", "school"],
-    "explanation": "'Forget' → 'forgotten'. 'Never' between has and past participle."
+    "words": [
+      "She",
+      "has",
+      "never",
+      "forgotten",
+      "her",
+      "first",
+      "day",
+      "at",
+      "school"
+    ],
+    "explanation": "'Forget' → 'forgotten'. 'Never' va entre has y el participio pasado."
   },
   {
     "id": "reord-a2-pp-017",
     "sentence": "I have always wanted to learn French",
-    "words": ["I", "have", "always", "wanted", "to", "learn", "French"],
-    "explanation": "'Always' between have and past participle: 'have always wanted'."
+    "words": [
+      "I",
+      "have",
+      "always",
+      "wanted",
+      "to",
+      "learn",
+      "French"
+    ],
+    "explanation": "'Always' va entre have y el participio pasado: 'have always wanted'."
   },
   {
     "id": "reord-a2-pp-018",
     "sentence": "They have not decided where to go yet",
-    "words": ["They", "have", "not", "decided", "where", "to", "go", "yet"],
-    "explanation": "Negative + 'yet' at the end. 'Where to go' is an embedded question."
+    "words": [
+      "They",
+      "have",
+      "not",
+      "decided",
+      "where",
+      "to",
+      "go",
+      "yet"
+    ],
+    "explanation": "El negativo + 'yet' va al final. 'Where to go' es una pregunta incrustada (embedded question)."
   },
   {
     "id": "reord-a2-pp-019",
     "sentence": "He has traveled to many countries",
-    "words": ["He", "has", "traveled", "to", "many", "countries"],
-    "distractors": ["have"],
-    "explanation": "'He' uses 'has', not 'have'."
+    "words": [
+      "He",
+      "has",
+      "traveled",
+      "to",
+      "many",
+      "countries"
+    ],
+    "distractors": [
+      "have"
+    ],
+    "explanation": "Con 'he' se usa 'has', no 'have'."
   },
   {
     "id": "reord-a2-pp-020",
     "sentence": "Have you finished your dinner yet",
-    "words": ["Have", "you", "finished", "your", "dinner", "yet"],
+    "words": [
+      "Have",
+      "you",
+      "finished",
+      "your",
+      "dinner",
+      "yet"
+    ],
     "hint": "'Yet' at the end in questions",
-    "explanation": "'Yet' goes at the end of questions: 'Have you finished...yet?'"
+    "explanation": "'Yet' va al final de las preguntas: 'Have you finished...yet?'"
   }
 ]

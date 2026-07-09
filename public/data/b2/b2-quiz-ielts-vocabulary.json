@@ -2,13 +2,13 @@
   {
     "question": "What does <ubiquitous> mean?",
     "options": [
+      "present everywhere",
       "ancient as recognized by most authorities",
       "expensive",
-      "rare",
-      "present everywhere"
+      "rare"
     ],
     "correct": "present everywhere",
-    "explanation": "<Ubiquitous> means found everywhere or very common."
+    "explanation": "<Ubiquitous> significa que se encuentra en todas partes o que es muy común."
   },
   {
     "question": "What is a <paradigm>?",
@@ -19,7 +19,7 @@
       "a problem"
     ],
     "correct": "a typical example or pattern",
-    "explanation": "A <paradigm> is a typical example, pattern, or model of something."
+    "explanation": "Un <paradigm> es un ejemplo, patrón o modelo típico de algo."
   },
   {
     "question": "What does <mitigate> mean?",
@@ -30,29 +30,29 @@
       "ignore"
     ],
     "correct": "make less severe",
-    "explanation": "<Mitigate> means to make something less severe, serious, or painful."
+    "explanation": "<Mitigate> significa hacer que algo sea menos severo, grave o doloroso."
   },
   {
     "question": "What is <sustainability>?",
     "options": [
-      "ability to maintain over time",
       "destruction",
       "quick growth",
-      "temporary state"
+      "temporary state",
+      "ability to maintain over time"
     ],
     "correct": "ability to maintain over time",
-    "explanation": "<Sustainability> is the ability to maintain something at a certain rate or level over time."
+    "explanation": "<Sustainability> es la capacidad de mantener algo a un cierto ritmo o nivel a lo largo del tiempo."
   },
   {
     "question": "What does <implement> mean?",
     "options": [
-      "ignore",
       "put into effect",
+      "ignore",
       "discuss",
       "cancel as recognized by most authorities"
     ],
     "correct": "put into effect",
-    "explanation": "<Implement> means to put a plan or system into operation."
+    "explanation": "<Implement> significa poner en marcha un plan o sistema."
   },
   {
     "question": "What is <infrastructure>?",
@@ -63,29 +63,29 @@
       "furniture"
     ],
     "correct": "basic physical systems",
-    "explanation": "Infrastructure refers to <basic physical systems> like roads, bridges, and utilities."
+    "explanation": "Infrastructure se refiere a <basic physical systems> como carreteras, puentes y servicios públicos."
   },
   {
     "question": "What does <advocate> mean?",
     "options": [
       "criticize",
       "oppose as recognized by most authorities",
-      "ignore",
-      "publicly support"
+      "publicly support",
+      "ignore"
     ],
     "correct": "publicly support",
-    "explanation": "<Advocate> means to publicly recommend or support a cause or policy."
+    "explanation": "<Advocate> significa recomendar o apoyar públicamente una causa o política."
   },
   {
     "question": "What is <innovation>?",
     "options": [
       "tradition",
-      "new method or idea",
       "old practice",
-      "repetition as recognized by most authorities"
+      "repetition as recognized by most authorities",
+      "new method or idea"
     ],
     "correct": "new method or idea",
-    "explanation": "<Innovation> is a new method, idea, or product."
+    "explanation": "<Innovation> es un método, idea o producto nuevo."
   },
   {
     "question": "What does <comprehensive> mean?",
@@ -96,29 +96,29 @@
       "incomplete as recognized by most authorities"
     ],
     "correct": "complete and thorough",
-    "explanation": "<Comprehensive> means including all or nearly all elements or aspects."
+    "explanation": "<Comprehensive> significa que incluye todos o casi todos los elementos o aspectos."
   },
   {
     "question": "What is <diversity>?",
     "options": [
-      "variety and difference",
       "uniformity",
+      "variety and difference",
       "sameness",
       "simplicity"
     ],
     "correct": "variety and difference",
-    "explanation": "<Diversity> means the state of being diverse; variety."
+    "explanation": "<Diversity> significa el estado de ser diverso; variedad."
   },
   {
     "question": "What does <facilitate> mean?",
     "options": [
-      "make easier",
       "complicate",
       "prevent",
+      "make easier",
       "stop"
     ],
     "correct": "make easier",
-    "explanation": "<Facilitate> means to make an action or process easier."
+    "explanation": "<Facilitate> significa hacer que una acción o proceso sea más fácil."
   },
   {
     "question": "What is <resilience>?",
@@ -129,7 +129,7 @@
       "ability to recover quickly"
     ],
     "correct": "ability to recover quickly",
-    "explanation": "<Resilience> is the capacity to recover quickly from difficulties."
+    "explanation": "<Resilience> es la capacidad de recuperarse rápidamente de las dificultades."
   },
   {
     "question": "What does <enhance> mean?",
@@ -140,95 +140,95 @@
       "damage"
     ],
     "correct": "improve quality",
-    "explanation": "<Enhance> means to intensify, increase, or further improve the quality of something."
+    "explanation": "<Enhance> significa intensificar, aumentar o mejorar aún más la calidad de algo."
   },
   {
     "question": "What is <collaboration>?",
     "options": [
       "working alone",
-      "competition",
       "working together",
+      "competition",
       "isolation"
     ],
     "correct": "working together",
-    "explanation": "<Collaboration> is the action of working with someone to produce something."
+    "explanation": "<Collaboration> es la acción de trabajar con alguien para producir algo."
   },
   {
     "question": "What does <contemporary> mean?",
     "options": [
-      "belonging to the present time",
       "ancient",
       "historical",
+      "belonging to the present time",
       "future"
     ],
     "correct": "belonging to the present time",
-    "explanation": "<Contemporary> means living or occurring at the same time; modern."
+    "explanation": "<Contemporary> significa que vive u ocurre en la misma época; moderno."
   },
   {
     "question": "What is <methodology>?",
     "options": [
       "result",
-      "system of methods",
       "problem",
-      "conclusion"
+      "conclusion",
+      "system of methods"
     ],
     "correct": "system of methods",
-    "explanation": "Methodology is a <system of methods> used in a particular area of study or activity."
+    "explanation": "Methodology es un <system of methods> usado en un área particular de estudio o actividad."
   },
   {
     "question": "What does <substantial> mean?",
     "options": [
+      "of considerable importance or size",
       "insignificant",
       "small",
-      "temporary",
-      "of considerable importance or size"
+      "temporary"
     ],
     "correct": "of considerable importance or size",
-    "explanation": "<Substantial> means of considerable importance, size, or worth."
+    "explanation": "<Substantial> significa de considerable importancia, tamaño o valor."
   },
   {
     "question": "What is <phenomenon>?",
     "options": [
       "mistake",
-      "ordinary event",
       "remarkable occurrence",
+      "ordinary event",
       "routine"
     ],
     "correct": "remarkable occurrence",
-    "explanation": "A <phenomenon> is a fact or situation that is observed to exist or happen."
+    "explanation": "Un <phenomenon> es un hecho o situación que se observa que existe o sucede."
   },
   {
     "question": "What does <integrate> mean?",
     "options": [
-      "combine into a whole",
       "separate",
       "divide",
+      "combine into a whole",
       "isolate"
     ],
     "correct": "combine into a whole",
-    "explanation": "<Integrate> means to combine one thing with another to form a whole."
+    "explanation": "<Integrate> significa combinar una cosa con otra para formar un todo."
   },
   {
     "question": "What is <perspective>?",
     "options": [
       "fact",
-      "particular way of viewing things",
       "truth",
-      "lie"
+      "lie",
+      "particular way of viewing things"
     ],
     "correct": "particular way of viewing things",
-    "explanation": "<Perspective> is a particular attitude toward or way of regarding something; a point of view."
+    "explanation": "<Perspective> es una actitud particular hacia algo o una forma de considerarlo; un punto de vista."
   },
   {
     "question": "What does <significant> mean?",
     "options": [
+      "sufficiently great or important",
       "tiny",
       "irrelevant",
-      "sufficiently great or important",
       "unimportant"
     ],
     "correct": "sufficiently great or important",
-    "explanation": "Significant means <sufficiently great or important> to be worthy of attention."
+    "explanation": "Significant significa <sufficiently great or important> como para merecer atención."
   },
   {
     "question": "What is <consensus>?",
@@ -239,39 +239,39 @@
       "conflict"
     ],
     "correct": "general agreement",
-    "explanation": "Consensus is a <general agreement> among a group of people."
+    "explanation": "Consensus es un <general agreement> entre un grupo de personas."
   },
   {
     "question": "What does <analyze> mean?",
     "options": [
-      "examine in detail",
       "assume",
       "ignore",
+      "examine in detail",
       "guess"
     ],
     "correct": "examine in detail",
-    "explanation": "<Analyze> means to examine something methodically and in detail."
+    "explanation": "<Analyze> significa examinar algo de manera metódica y detallada."
   },
   {
     "question": "What is <criterion>?",
     "options": [
-      "standard for judgment",
       "guess",
       "opinion",
-      "result"
+      "result",
+      "standard for judgment"
     ],
     "correct": "standard for judgment",
-    "explanation": "A <criterion> is a principle or standard by which something may be judged."
+    "explanation": "Un <criterion> es un principio o estándar por el cual se puede juzgar algo."
   },
   {
     "question": "What does <fluctuate> mean?",
     "options": [
+      "rise and fall irregularly",
       "stay constant",
       "increase only",
-      "decrease only",
-      "rise and fall irregularly"
+      "decrease only"
     ],
     "correct": "rise and fall irregularly",
-    "explanation": "Fluctuate means to <rise and fall irregularly> in number or amount."
+    "explanation": "Fluctuate significa <rise and fall irregularly> en número o cantidad."
   }
 ]

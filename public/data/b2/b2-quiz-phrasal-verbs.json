@@ -8,7 +8,7 @@
       "To return something"
     ],
     "correct": "To cause something to happen",
-    "explanation": "<Bring about> means to cause something to happen, often a change or result."
+    "explanation": "<Bring about> significa causar que algo suceda, a menudo un cambio o resultado."
   },
   {
     "question": "Choose the correct sentence using \"run out of\":",
@@ -19,7 +19,7 @@
       "We ran out for time before finishing the project."
     ],
     "correct": "We ran out of time before finishing the project.",
-    "explanation": "<Run out of> means to have no more of something. It always takes <of> before the noun."
+    "explanation": "<Run out of> significa quedarse sin algo. Siempre lleva <of> antes del sustantivo."
   },
   {
     "question": "Choose the correct meaning of <fall back on>:",
@@ -30,40 +30,40 @@
       "To fall behind schedule"
     ],
     "correct": "To rely on something as a backup",
-    "explanation": "<Fall back on> means to use something as a last resort or backup option."
+    "explanation": "<Fall back on> significa recurrir a algo como último recurso u opción de respaldo."
   },
   {
     "question": "Which phrasal verb means \"to delay or postpone\"?",
     "options": [
       "Put out",
       "Put forward",
-      "Put off",
-      "Put through"
+      "Put through",
+      "Put off"
     ],
     "correct": "Put off",
-    "explanation": "<Put off> means to postpone or delay something to a later time."
+    "explanation": "<Put off> significa posponer o aplazar algo para más tarde."
   },
   {
     "question": "What does \"take on\" mean in a professional context?",
     "options": [
-      "To remove clothing",
       "To accept responsibility or a new challenge",
+      "To remove clothing",
       "To attack someone",
       "To travel by transport"
     ],
     "correct": "To accept responsibility or a new challenge",
-    "explanation": "<Take on> means to accept a new responsibility, task, or employee."
+    "explanation": "<Take on> significa aceptar una nueva responsabilidad, tarea o empleado."
   },
   {
     "question": "Complete: \"She decided to ______ her own business after years of working for others.\"",
     "options": [
-      "set up",
       "set off",
+      "set up",
       "set out",
       "set back"
     ],
     "correct": "set up",
-    "explanation": "<Set up> means to establish or start something, like a business or organisation."
+    "explanation": "<Set up> significa establecer o iniciar algo, como un negocio u organización."
   },
   {
     "question": "What does \"go through\" mean when talking about a difficult experience?",
@@ -74,95 +74,95 @@
       "To read quickly"
     ],
     "correct": "To experience or endure something",
-    "explanation": "<Go through> means to experience something difficult or unpleasant."
+    "explanation": "<Go through> significa experimentar algo difícil o desagradable."
   },
   {
     "question": "Which phrasal verb means \"to discover information\"?",
     "options": [
       "Find over",
       "Find up",
-      "Find out",
-      "Find off"
+      "Find off",
+      "Find out"
     ],
     "correct": "Find out",
-    "explanation": "<Find out> means to discover information or learn the truth about something."
+    "explanation": "<Find out> significa descubrir información o averiguar la verdad sobre algo."
   },
   {
     "question": "<back down> — select the right definition:",
     "options": [
-      "To move backwards",
       "To withdraw from a position or argument",
+      "To move backwards",
       "To support someone",
       "To reduce speed"
     ],
     "correct": "To withdraw from a position or argument",
-    "explanation": "<Back down> means to stop insisting on something or to withdraw from a confrontation."
+    "explanation": "<Back down> significa dejar de insistir en algo o retirarse de una confrontación."
   },
   {
     "question": "Complete: \"The company had to ______ several employees due to budget cuts.\"",
     "options": [
       "lay down",
-      "lay out",
       "lay off",
+      "lay out",
       "lay up"
     ],
     "correct": "lay off",
-    "explanation": "<Lay off> means to dismiss employees, usually due to financial reasons. <Lay off> is the past simple form of <Lie off>."
+    "explanation": "<Lay off> significa despedir empleados, generalmente por razones financieras. <Lay off> es la forma de pasado simple de <Lie off>."
   },
   {
     "question": "What is the meaning of <keep up with>?",
     "options": [
-      "To maintain the same pace or level as someone",
       "To store something above",
       "To support someone emotionally",
+      "To maintain the same pace or level as someone",
       "To continue a habit"
     ],
     "correct": "To maintain the same pace or level as someone",
-    "explanation": "<Keep up with> means to stay at the same level or pace as someone or something."
+    "explanation": "<Keep up with> significa mantenerse al mismo nivel o ritmo que alguien o algo."
   },
   {
     "question": "Which phrasal verb means \"to submit or present formally\"?",
     "options": [
       "Put away",
-      "Put forward",
       "Put across",
-      "Put aside"
+      "Put aside",
+      "Put forward"
     ],
     "correct": "Put forward",
-    "explanation": "<Put forward> means to propose or present an idea, plan, or candidate formally."
+    "explanation": "<Put forward> significa proponer o presentar formalmente una idea, plan o candidato."
   },
   {
     "question": "Which option describes <wear off>?",
     "options": [
+      "To gradually disappear or lose effect",
       "To damage through use",
       "To become tired",
-      "To remove clothing",
-      "To gradually disappear or lose effect"
+      "To remove clothing"
     ],
     "correct": "To gradually disappear or lose effect",
-    "explanation": "<Wear off> means for an effect or feeling to gradually diminish or disappear."
+    "explanation": "<Wear off> significa que un efecto o sensación disminuye gradualmente hasta desaparecer."
   },
   {
     "question": "Complete: \"He managed to ______ the difficult situation with humour.\"",
     "options": [
-      "get through",
       "get over",
+      "get through",
       "get by",
       "get around"
     ],
     "correct": "get through",
-    "explanation": "<Get through> means to successfully deal with or survive a difficult situation."
+    "explanation": "<Get through> significa afrontar con éxito o sobrevivir a una situación difícil."
   },
   {
     "question": "Pick the best definition for <stand out>:",
     "options": [
-      "To be noticeably different or better",
       "To leave a building",
       "To resist something",
+      "To be noticeably different or better",
       "To wait outside"
     ],
     "correct": "To be noticeably different or better",
-    "explanation": "<Stand out> means to be clearly noticeable or superior compared to others."
+    "explanation": "<Stand out> significa ser claramente notorio o superior en comparación con los demás."
   },
   {
     "question": "Which phrasal verb means \"to tolerate or endure\"?",
@@ -173,7 +173,7 @@
       "Put up with"
     ],
     "correct": "Put up with",
-    "explanation": "<Put up with> means to tolerate something or someone unpleasant without complaining."
+    "explanation": "<Put up with> significa tolerar a alguien o algo desagradable sin quejarse."
   },
   {
     "question": "How would you define <draw on>?",
@@ -184,62 +184,62 @@
       "To sketch something"
     ],
     "correct": "To use a resource or experience",
-    "explanation": "<Draw on> means to make use of a skill, experience, or resource."
+    "explanation": "<Draw on> significa hacer uso de una habilidad, experiencia o recurso."
   },
   {
     "question": "Complete: \"The new manager ______ a lot of changes in the first month.\"",
     "options": [
-      "brought in",
       "brought out",
+      "brought in",
       "brought over",
       "brought up"
     ],
     "correct": "brought in",
-    "explanation": "<Bring in> means to introduce something new, such as a policy, rule, or person. <Brought in> is the past simple form of <Bring in>."
+    "explanation": "<Bring in> significa introducir algo nuevo, como una política, una norma o una persona. <Brought in> es la forma de pasado simple de <Bring in>."
   },
   {
     "question": "<come across> is closest in meaning to:",
     "options": [
-      "To find something by chance or make an impression",
       "To arrive from another country",
       "To disagree with someone",
+      "To find something by chance or make an impression",
       "To cross a road"
     ],
     "correct": "To find something by chance or make an impression",
-    "explanation": "<Come across> means to find something unexpectedly, or to appear a certain way to others."
+    "explanation": "<Come across> significa encontrar algo por casualidad, o parecer de cierta manera a los demás."
   },
   {
     "question": "Which phrasal verb means \"to investigate something\"?",
     "options": [
       "Look over",
-      "Look into",
       "Look through",
-      "Look up"
+      "Look up",
+      "Look into"
     ],
     "correct": "Look into",
-    "explanation": "<Look into> means to investigate or examine something carefully."
+    "explanation": "<Look into> significa investigar o examinar algo cuidadosamente."
   },
   {
     "question": "Select what <break through> means:",
     "options": [
-      "To escape from somewhere",
       "To achieve success after overcoming obstacles",
+      "To escape from somewhere",
       "To interrupt a conversation",
       "To physically break a wall"
     ],
     "correct": "To achieve success after overcoming obstacles",
-    "explanation": "<Break through> means to make a significant advance or overcome a barrier."
+    "explanation": "<Break through> significa lograr un avance significativo o superar una barrera."
   },
   {
     "question": "Complete: \"She ______ her nerves and delivered a brilliant presentation.\"",
     "options": [
-      "got over",
       "got around",
+      "got over",
       "got through",
       "got by"
     ],
     "correct": "got over",
-    "explanation": "<Get over> means to recover from or overcome something, such as fear or illness. <Got over> is the past simple form of <Get over>."
+    "explanation": "<Get over> significa recuperarse o superar algo, como un miedo o una enfermedad. <Got over> es la forma de pasado simple de <Get over>."
   },
   {
     "question": "The term <hold back> refers to:",
@@ -250,28 +250,28 @@
       "To support from behind"
     ],
     "correct": "To restrain or prevent progress",
-    "explanation": "<Hold back> means to restrain someone or something, or to prevent progress."
+    "explanation": "<Hold back> significa contener a alguien o algo, o impedir el progreso."
   },
   {
     "question": "Which phrasal verb means \"to make something public or available\"?",
     "options": [
       "Roll back",
       "Roll over",
-      "Roll out",
-      "Roll up"
+      "Roll up",
+      "Roll out"
     ],
     "correct": "Roll out",
-    "explanation": "<Roll out> means to launch or make something available to the public, often a product or service."
+    "explanation": "<Roll out> significa lanzar o poner algo a disposición del público, a menudo un producto o servicio."
   },
   {
     "question": "Which definition best matches <step up>?",
     "options": [
+      "To increase effort or take more responsibility",
       "To climb stairs",
       "To move forward physically",
-      "To improve appearance",
-      "To increase effort or take more responsibility"
+      "To improve appearance"
     ],
     "correct": "To increase effort or take more responsibility",
-    "explanation": "<Step up> means to increase one's efforts or to take on greater responsibility."
+    "explanation": "<Step up> significa aumentar el esfuerzo propio o asumir mayor responsabilidad."
   }
 ]

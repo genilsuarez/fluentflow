@@ -2,151 +2,151 @@
   {
     "sentence": "Hello! My ______ is Maria.",
     "correct": "name",
-    "explanation": "Use <name> to introduce yourself",
+    "explanation": "Se usa <name> para presentarte.",
     "tip": "Complete with the word for how people identify you"
   },
   {
     "sentence": "Nice to ______ you!",
     "correct": "meet",
-    "explanation": "Use <meet> when meeting someone for the first time",
+    "explanation": "Se usa <meet> cuando conoces a alguien por primera vez.",
     "tip": "Complete with the verb used after 'Nice to'"
   },
   {
     "sentence": "How ______ you?",
     "correct": "are",
-    "explanation": "Use <are> to ask about someone's state",
+    "explanation": "Se usa <are> para preguntar cómo está alguien.",
     "tip": "Complete with the correct form of <be>"
   },
   {
     "sentence": "I'm ______, thank you.",
     "correct": "fine",
-    "explanation": "Use <fine> to say you are well",
+    "explanation": "Se usa <fine> para decir que estás bien.",
     "tip": "Complete with an adjective"
   },
   {
     "sentence": "What's your ______?",
     "correct": "name",
-    "explanation": "Use <name> to ask someone's name",
+    "explanation": "Se usa <name> para preguntar el nombre de alguien.",
     "tip": "Complete with the word that means 'how you are called'"
   },
   {
     "sentence": "Where are you ______?",
     "correct": "from",
-    "explanation": "Use <from> to ask about origin",
+    "explanation": "Se usa <from> para preguntar por el origen.",
     "tip": "Complete with the correct preposition"
   },
   {
     "sentence": "I'm from ______.",
     "correct": "Spain",
-    "explanation": "Use a country name to say where you're from",
+    "explanation": "Se usa el nombre de un país para decir de dónde eres.",
     "tip": "Complete with a country name"
   },
   {
     "sentence": "Good ______, everyone!",
     "correct": "morning",
-    "explanation": "Use <morning> for greetings before noon",
+    "explanation": "Se usa <morning> para saludar antes del mediodía.",
     "tip": "Complete with a time of day"
   },
   {
     "sentence": "See you ______!",
     "correct": "later",
-    "explanation": "Use <later> to say goodbye informally",
+    "explanation": "Se usa <later> para despedirse de manera informal.",
     "tip": "Complete with a time expression"
   },
   {
     "sentence": "Have a nice ______!",
     "correct": "day",
-    "explanation": "Use <day> to wish someone well",
+    "explanation": "Se usa <day> para desearle algo bueno a alguien.",
     "tip": "Complete with a time period"
   },
   {
     "sentence": "Good ______, sir.",
     "correct": "afternoon",
-    "explanation": "Use <afternoon> for greetings after noon",
+    "explanation": "Se usa <afternoon> para saludar después del mediodía.",
     "tip": "Complete with a time of day"
   },
   {
     "sentence": "Good ______, sleep well!",
     "correct": "night",
-    "explanation": "Use <night> for evening farewells",
+    "explanation": "Se usa <night> para despedidas por la noche.",
     "tip": "Complete with a time of day"
   },
   {
     "sentence": "How do you ______?",
     "correct": "do",
-    "explanation": "Use <do> for formal greetings",
+    "explanation": "Se usa <do> en saludos formales.",
     "tip": "Formal greeting — use the same verb twice"
   },
   {
     "sentence": "Pleased to ______ you.",
     "correct": "meet",
-    "explanation": "Use <meet> for formal introductions",
+    "explanation": "Se usa <meet> en presentaciones formales.",
     "tip": "Complete with the verb used after 'Pleased to'"
   },
   {
     "sentence": "This is my ______ John.",
     "correct": "friend",
-    "explanation": "Use <friend> to introduce someone",
+    "explanation": "Se usa <friend> para presentar a alguien.",
     "tip": "Complete with a relationship word"
   },
   {
     "sentence": "I ______ in Madrid.",
     "correct": "live",
-    "explanation": "Use <live> to say where you reside",
+    "explanation": "Se usa <live> para decir dónde vives.",
     "tip": "Complete with the verb that means 'to reside in a place'"
   },
   {
     "sentence": "I'm a ______.",
     "correct": "student",
-    "explanation": "Use <student> or another occupation",
+    "explanation": "Se usa <student> u otra ocupación.",
     "tip": "Complete with an occupation"
   },
   {
     "sentence": "What do you ______?",
     "correct": "do",
-    "explanation": "Use <do> to ask about occupation",
+    "explanation": "Se usa <do> para preguntar por la ocupación.",
     "tip": "Ask about someone's job or occupation"
   },
   {
     "sentence": "I ______ English.",
     "correct": "speak",
-    "explanation": "Use <speak> to talk about languages",
+    "explanation": "Se usa <speak> para hablar sobre idiomas.",
     "tip": "Complete with the verb for using a language"
   },
   {
     "sentence": "Goodbye! Take ______!",
     "correct": "care",
-    "explanation": "Use <care> in the expression <take care>",
+    "explanation": "Se usa <care> en la expresión <take care>.",
     "tip": "Complete with the noun in 'Take ___!' (a farewell expression)"
   },
   {
     "sentence": "Have a ______ day!",
     "correct": "nice",
-    "explanation": "Use <nice> to wish someone well",
+    "explanation": "Se usa <nice> para desearle algo bueno a alguien.",
     "tip": "Complete with an adjective"
   },
   {
     "sentence": "I ______ English and Spanish.",
     "correct": "speak",
-    "explanation": "Use <speak> to talk about languages",
+    "explanation": "Se usa <speak> para hablar sobre idiomas.",
     "tip": "Complete with the verb for using a language"
   },
   {
     "sentence": "It's ______ to meet you.",
     "correct": "nice",
-    "explanation": "Use <nice> in the expression <nice to meet you>",
+    "explanation": "Se usa <nice> en la expresión <nice to meet you>.",
     "tip": "Complete with an adjective"
   },
   {
     "sentence": "______, I'm from Spain.",
     "correct": "Hello",
-    "explanation": "We use \"Hello\" to introduce ourselves.",
+    "explanation": "Usamos \"Hello\" para presentarnos.",
     "tip": "Think about common ways to greet someone."
   },
   {
     "sentence": "It was nice to meet you. ______!",
     "correct": "Goodbye",
-    "explanation": "We say \"Goodbye\" when leaving.",
+    "explanation": "Decimos \"Goodbye\" al despedirnos.",
     "tip": "Think about how to say farewell."
   }
 ]

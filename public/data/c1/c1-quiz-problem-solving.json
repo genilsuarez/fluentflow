@@ -2,68 +2,68 @@
   {
     "question": "What does <troubleshoot> mean?",
     "options": [
-      "complicate matters",
       "identify and solve problems",
+      "complicate matters",
       "ignore issues",
       "create problems"
     ],
     "correct": "identify and solve problems",
-    "explanation": "<Troubleshoot> means to analyze and solve problems in a system or process."
+    "explanation": "<Troubleshoot> significa analizar y resolver problemas en un sistema o proceso."
   },
   {
     "question": "What is a <workaround>?",
     "options": [
       "avoiding work",
-      "permanent solution as recognized by most authorities",
       "temporary solution to problem",
+      "permanent solution as recognized by most authorities",
       "creating problems"
     ],
     "correct": "temporary solution to problem",
-    "explanation": "A <workaround> is a method for overcoming a problem temporarily when a direct approach is not possible."
+    "explanation": "Un <workaround> es un método para superar un problema de forma temporal cuando un enfoque directo no es posible."
   },
   {
     "question": "What does <diagnose> mean?",
     "options": [
-      "identify nature of problem",
       "create",
       "worsen",
+      "identify nature of problem",
       "ignore"
     ],
     "correct": "identify nature of problem",
-    "explanation": "<Diagnose> means to identify the nature of an illness or problem by examination."
+    "explanation": "<Diagnose> significa identificar la naturaleza de una enfermedad o problema mediante examen."
   },
   {
     "question": "What is <root cause>?",
     "options": [
-      "fundamental reason for problem",
       "solution",
       "effect",
-      "symptom"
+      "symptom",
+      "fundamental reason for problem"
     ],
     "correct": "fundamental reason for problem",
-    "explanation": "<Root cause> is the fundamental reason for the occurrence of a problem."
+    "explanation": "<Root cause> es la razón fundamental de la ocurrencia de un problema."
   },
   {
     "question": "What does <mitigate> mean?",
     "options": [
+      "make less severe",
       "ignore",
       "worsen",
-      "make less severe",
       "create"
     ],
     "correct": "make less severe",
-    "explanation": "<Mitigate> means to make something less severe, serious, or painful."
+    "explanation": "<Mitigate> significa hacer que algo sea menos severo, grave o doloroso."
   },
   {
     "question": "What is <contingency plan>?",
     "options": [
-      "backup plan for emergencies",
       "old plan",
+      "backup plan for emergencies",
       "main plan",
       "no plan"
     ],
     "correct": "backup plan for emergencies",
-    "explanation": "A <contingency plan> is a course of action designed to help respond effectively to unexpected events."
+    "explanation": "Un <contingency plan> es un curso de acción diseñado para responder eficazmente a eventos inesperados."
   },
   {
     "question": "What does <prioritize> mean?",
@@ -74,29 +74,29 @@
       "ignore"
     ],
     "correct": "arrange by importance",
-    "explanation": "<Prioritize> means to designate or treat something as more important than other things."
+    "explanation": "<Prioritize> significa designar o tratar algo como más importante que otras cosas."
   },
   {
     "question": "What is <bottleneck>?",
     "options": [
-      "point of congestion",
       "expansion",
       "improvement",
-      "solution"
+      "solution",
+      "point of congestion"
     ],
     "correct": "point of congestion",
-    "explanation": "A bottleneck is a <point of congestion> in a system that slows overall progress."
+    "explanation": "Un bottleneck es un <point of congestion> (punto de congestión) en un sistema que ralentiza el progreso general."
   },
   {
     "question": "What does <optimize> mean?",
     "options": [
+      "make best use of",
       "complicate",
       "reduce",
-      "make best use of",
       "worsen"
     ],
     "correct": "make best use of",
-    "explanation": "<Optimize> means to make the best or most effective use of a situation or resource."
+    "explanation": "<Optimize> significa hacer el mejor uso o el uso más eficaz de una situación o recurso."
   },
   {
     "question": "What is <critical thinking>?",
@@ -107,29 +107,29 @@
       "complaining"
     ],
     "correct": "objective analysis to form judgment",
-    "explanation": "<Critical thinking> is the objective analysis and evaluation of an issue to form a judgment."
+    "explanation": "<Critical thinking> es el análisis y la evaluación objetiva de un asunto para formar un juicio."
   },
   {
     "question": "What does <brainstorm> mean?",
     "options": [
-      "generate ideas in group",
       "criticize ideas",
       "avoid thinking",
+      "generate ideas in group",
       "think alone"
     ],
     "correct": "generate ideas in group",
-    "explanation": "<Brainstorm> means to produce an idea or way of solving a problem through group discussion."
+    "explanation": "<Brainstorm> significa generar una idea o una forma de resolver un problema mediante discusión en grupo."
   },
   {
     "question": "What is <feasibility>?",
     "options": [
-      "state of being possible",
       "complexity",
       "impossibility",
-      "difficulty"
+      "difficulty",
+      "state of being possible"
     ],
     "correct": "state of being possible",
-    "explanation": "<Feasibility> is the state or degree of being easily or conveniently done."
+    "explanation": "<Feasibility> es el estado o grado de ser fácil o convenientemente realizable (viabilidad)."
   },
   {
     "question": "What does <implement> mean?",
@@ -140,18 +140,18 @@
       "plan only"
     ],
     "correct": "put into effect",
-    "explanation": "<Implement> means to put a decision or plan into effect."
+    "explanation": "<Implement> significa poner en práctica una decisión o un plan."
   },
   {
     "question": "What is <trade-off>?",
     "options": [
       "complete win",
+      "balance between two things",
       "perfect solution as recognized by most authorities",
-      "no compromise",
-      "balance between two things"
+      "no compromise"
     ],
     "correct": "balance between two things",
-    "explanation": "A <trade-off> is a balance achieved between two desirable but incompatible features."
+    "explanation": "Un <trade-off> es un equilibrio logrado entre dos características deseables pero incompatibles."
   },
   {
     "question": "What does <assess> mean?",
@@ -162,7 +162,7 @@
       "assume"
     ],
     "correct": "evaluate nature or quality",
-    "explanation": "<Assess> means to evaluate or estimate the nature, ability, or quality of something."
+    "explanation": "<Assess> significa evaluar o estimar la naturaleza, capacidad o calidad de algo."
   },
   {
     "question": "What is <proactive>?",
@@ -173,50 +173,50 @@
       "acting in anticipation"
     ],
     "correct": "acting in anticipation",
-    "explanation": "<Proactive> means creating or controlling a situation by causing something to happen rather than responding after it happens."
+    "explanation": "<Proactive> significa crear o controlar una situación haciendo que algo suceda en lugar de reaccionar después de que sucede."
   },
   {
     "question": "What does <escalate> mean?",
     "options": [
+      "increase in intensity",
       "maintain",
       "resolve",
-      "decrease",
-      "increase in intensity"
+      "decrease"
     ],
     "correct": "increase in intensity",
-    "explanation": "<Escalate> means to increase rapidly in intensity or seriousness."
+    "explanation": "<Escalate> significa aumentar rápidamente en intensidad o gravedad."
   },
   {
     "question": "What is <resolution>?",
     "options": [
       "problem",
-      "delay",
       "firm decision or solution",
+      "delay",
       "confusion"
     ],
     "correct": "firm decision or solution",
-    "explanation": "<Resolution> is a firm decision to do or not do something; the action of solving a problem."
+    "explanation": "<Resolution> es una decisión firme de hacer o no hacer algo; la acción de resolver un problema."
   },
   {
     "question": "What does <collaborate> mean?",
     "options": [
       "work alone",
       "compete",
-      "avoid",
-      "work jointly with others"
+      "work jointly with others",
+      "avoid"
     ],
     "correct": "work jointly with others",
-    "explanation": "<Collaborate> means to work jointly on an activity, especially to produce something."
+    "explanation": "<Collaborate> significa trabajar conjuntamente en una actividad, especialmente para producir algo."
   },
   {
     "question": "What is <systematic approach>?",
     "options": [
-      "methodical procedure",
       "guessing",
       "random method",
-      "chaotic process"
+      "chaotic process",
+      "methodical procedure"
     ],
     "correct": "methodical procedure",
-    "explanation": "A <systematic approach> is done or acting according to a fixed plan or system; methodical."
+    "explanation": "Un <systematic approach> es algo hecho o realizado según un plan o sistema fijo; metódico."
   }
 ]

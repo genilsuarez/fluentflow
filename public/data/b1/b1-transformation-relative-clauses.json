@@ -5,7 +5,7 @@
     "correct": [
       "The woman who speaks three languages is my teacher."
     ],
-    "explanation": "Defining relative clause with <who> for people: identifies which woman."
+    "explanation": "Cláusula relativa especificativa con <who> para personas: identifica de qué mujer se trata."
   },
   {
     "prompt": "Combine using a defining relative clause with <which>",
@@ -14,7 +14,7 @@
       "I bought a book which was on sale.",
       "I bought a book that was on sale."
     ],
-    "explanation": "Defining relative clause with <which/that> for things."
+    "explanation": "Cláusula relativa especificativa con <which/that> para cosas."
   },
   {
     "prompt": "Rewrite using a non-defining relative clause",
@@ -24,7 +24,7 @@
       "My brother, who lives in London, is a doctor."
     ],
     "hint": "Non-defining clauses use commas",
-    "explanation": "Non-defining relative clauses add extra information and are set off by commas."
+    "explanation": "Las cláusulas relativas explicativas añaden información adicional y van separadas por comas."
   },
   {
     "prompt": "Combine using <whose>",
@@ -32,7 +32,7 @@
     "correct": [
       "I met a girl whose father is a pilot."
     ],
-    "explanation": "<Whose> replaces possessives (her, his, their) in relative clauses."
+    "explanation": "<Whose> reemplaza a los posesivos (her, his, their) en las cláusulas relativas."
   },
   {
     "prompt": "Combine using <where>",
@@ -40,7 +40,7 @@
     "correct": [
       "That's the restaurant where we had dinner last week."
     ],
-    "explanation": "<Where> replaces place adverbs (there, here) in relative clauses."
+    "explanation": "<Where> reemplaza a los adverbios de lugar (there, here) en las cláusulas relativas."
   },
   {
     "prompt": "Combine using <when>",
@@ -49,7 +49,7 @@
       "I remember the day when we first met.",
       "I remember the day we first met."
     ],
-    "explanation": "<When> replaces time expressions in relative clauses. It can also be omitted."
+    "explanation": "<When> reemplaza expresiones de tiempo en las cláusulas relativas. También se puede omitir."
   },
   {
     "prompt": "Reduce the relative clause",
@@ -58,7 +58,7 @@
       "The man talking to the receptionist is my boss."
     ],
     "hint": "Remove <who is> and keep the participle",
-    "explanation": "Reduced relative clause: remove <who/which + is> and keep the present participle."
+    "explanation": "Cláusula relativa reducida: se elimina <who/which + is> y se mantiene el participio presente."
   },
   {
     "prompt": "Reduce the relative clause (passive)",
@@ -66,7 +66,7 @@
     "correct": [
       "The cake made by my grandmother was delicious."
     ],
-    "explanation": "Reduced relative clause (passive): remove <which was> and keep the past participle."
+    "explanation": "Cláusula relativa reducida (voz pasiva): se elimina <which was> y se mantiene el participio pasado."
   },
   {
     "prompt": "Rewrite omitting the relative pronoun",
@@ -75,7 +75,7 @@
       "The movie we watched yesterday was boring."
     ],
     "hint": "Object relative pronouns can be omitted",
-    "explanation": "When the relative pronoun is the object of the verb, it can be omitted in defining clauses."
+    "explanation": "Cuando el pronombre relativo es el objeto del verbo, puede omitirse en las cláusulas especificativas."
   },
   {
     "prompt": "Combine using a non-defining clause with <which> (referring to the whole sentence)",
@@ -83,7 +83,7 @@
     "correct": [
       "He passed all his exams, which surprised everyone."
     ],
-    "explanation": "Non-defining <which> can refer to the entire previous clause."
+    "explanation": "El <which> explicativo puede referirse a toda la cláusula anterior."
   },
   {
     "prompt": "Combine using <whose>",
@@ -91,7 +91,7 @@
     "correct": [
       "That's the company whose products are sold worldwide."
     ],
-    "explanation": "<Whose> works for both people and things to show possession."
+    "explanation": "<Whose> se usa tanto para personas como para cosas para indicar posesión."
   },
   {
     "prompt": "Rewrite using a relative clause with <in which>",
@@ -101,7 +101,7 @@
       "She described the situation which she found herself in.",
       "She described the situation she found herself in."
     ],
-    "explanation": "Formal: preposition + <which>. Informal: <which> ... preposition at end."
+    "explanation": "Formal: preposición + <which>. Informal: <which> ... preposición al final."
   },
   {
     "prompt": "Combine using a defining relative clause",
@@ -111,7 +111,7 @@
       "I need a friend that I can trust.",
       "I need a friend I can trust."
     ],
-    "explanation": "Object relative pronoun (who/that) can be included or omitted in defining clauses."
+    "explanation": "El pronombre relativo de objeto (who/that) puede incluirse u omitirse en las cláusulas especificativas."
   },
   {
     "prompt": "Reduce the relative clause to an infinitive",
@@ -120,7 +120,7 @@
       "He was the first person to arrive at the party."
     ],
     "hint": "After ordinals (first, last) use <to + infinitive>",
-    "explanation": "After superlatives and ordinals, relative clauses can be reduced to <to + infinitive>."
+    "explanation": "Después de superlativos y ordinales, las cláusulas relativas pueden reducirse a <to + infinitivo>."
   },
   {
     "prompt": "Combine using a non-defining clause",
@@ -128,7 +128,7 @@
     "correct": [
       "Paris, which attracts millions of tourists every year, is a beautiful city."
     ],
-    "explanation": "Non-defining clause adds extra info about Paris. Cannot use <that> here."
+    "explanation": "La cláusula explicativa añade información adicional sobre París. Aquí no se puede usar <that>."
   },
   {
     "prompt": "Combine using <where>",
@@ -138,7 +138,7 @@
       "I want to visit the village my grandparents grew up in.",
       "I want to visit the village in which my grandparents grew up."
     ],
-    "explanation": "<Where> = <in which> for places. Preposition can also go at the end informally."
+    "explanation": "<Where> = <in which> para lugares. La preposición también puede ir al final en un registro informal."
   },
   {
     "prompt": "Rewrite using a non-defining clause with <who>",
@@ -146,7 +146,7 @@
     "correct": [
       "My neighbor, who moved here last month, is very friendly."
     ],
-    "explanation": "Non-defining clause with <who> adds extra information about the subject."
+    "explanation": "La cláusula explicativa con <who> añade información adicional sobre el sujeto."
   },
   {
     "prompt": "Reduce the relative clause",
@@ -154,7 +154,7 @@
     "correct": [
       "The students sitting in the front row are from Japan."
     ],
-    "explanation": "Remove <who are> and keep the present participle for reduction."
+    "explanation": "Se elimina <who are> y se mantiene el participio presente para reducir la cláusula."
   },
   {
     "prompt": "Combine using <whose>",
@@ -162,7 +162,7 @@
     "correct": [
       "I helped a woman whose car had broken down."
     ],
-    "explanation": "<Whose> replaces possessive <her> to connect the two sentences."
+    "explanation": "<Whose> reemplaza al posesivo <her> para conectar las dos oraciones."
   },
   {
     "prompt": "Combine using <which> referring to the whole clause",
@@ -170,7 +170,7 @@
     "correct": [
       "She arrived late, which made the teacher angry."
     ],
-    "explanation": "Non-defining <which> can refer to the entire previous idea/event."
+    "explanation": "El <which> explicativo puede referirse a toda la idea/evento anterior."
   },
   {
     "prompt": "Rewrite using a reduced relative clause (infinitive)",
@@ -179,7 +179,7 @@
       "She was the only student to solve the problem."
     ],
     "hint": "After <only>, <first>, <last> → use <to + infinitive>",
-    "explanation": "After <the only/first/last>, relative clauses reduce to <to + infinitive>."
+    "explanation": "Después de <the only/first/last>, las cláusulas relativas se reducen a <to + infinitivo>."
   },
   {
     "prompt": "Combine using <in which> or <where>",
@@ -188,7 +188,7 @@
       "We live in a city where public transport is excellent.",
       "We live in a city in which public transport is excellent."
     ],
-    "explanation": "<Where> or <in which> introduces a relative clause about a place."
+    "explanation": "<Where> o <in which> introducen una cláusula relativa sobre un lugar."
   },
   {
     "prompt": "Rewrite the non-defining clause as a separate sentence",
@@ -196,7 +196,7 @@
     "correct": [
       "The Eiffel Tower is the most visited monument in Paris. It was built in 1889."
     ],
-    "explanation": "Non-defining clauses can be separated into independent sentences."
+    "explanation": "Las cláusulas explicativas pueden separarse en oraciones independientes."
   },
   {
     "prompt": "Combine using <the reason why>",
@@ -205,7 +205,7 @@
       "The reason why she quit her job was low salary.",
       "The reason she quit her job was low salary."
     ],
-    "explanation": "<The reason why/that> or simply <the reason> introduces a reason clause."
+    "explanation": "<The reason why/that> o simplemente <the reason> introduce una cláusula de razón."
   },
   {
     "prompt": "Combine using a defining relative clause",
@@ -215,6 +215,6 @@
       "The hotel that we stayed at was expensive.",
       "The hotel we stayed at was expensive."
     ],
-    "explanation": "Use <where> or <that ... preposition> for places in defining clauses."
+    "explanation": "Se usa <where> o <that ... preposición> para lugares en las cláusulas especificativas."
   }
 ]

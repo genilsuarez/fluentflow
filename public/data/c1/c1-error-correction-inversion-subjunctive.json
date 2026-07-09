@@ -1,127 +1,177 @@
 [
   {
     "sentence": "Never I have seen such a beautiful sunset.",
-    "correct": ["Never have I seen such a beautiful sunset."],
-    "explanation": "After negative adverbs at the start (<Never>), use inversion: <Never have I seen>."
+    "correct": [
+      "Never have I seen such a beautiful sunset."
+    ],
+    "explanation": "Cuando un adverbio negativo va al inicio (<Never>), se usa inversión: <Never have I seen>."
   },
   {
     "sentence": "It is essential that he comes to the meeting on time.",
-    "correct": ["It is essential that he come to the meeting on time."],
-    "explanation": "Subjunctive after <essential that>: use base form <come>, not <comes>."
+    "correct": [
+      "It is essential that he come to the meeting on time."
+    ],
+    "explanation": "Subjuntivo después de <essential that>: se usa la forma base <come>, no <comes>."
   },
   {
     "sentence": "Hardly she had finished speaking when the audience applauded.",
-    "correct": ["Hardly had she finished speaking when the audience applauded."],
-    "explanation": "After <Hardly> at the start, use inversion: <Hardly had she finished>."
+    "correct": [
+      "Hardly had she finished speaking when the audience applauded."
+    ],
+    "explanation": "Cuando <Hardly> va al inicio, se usa inversión: <Hardly had she finished>."
   },
   {
     "sentence": "The committee recommended that the proposal is accepted.",
-    "correct": ["The committee recommended that the proposal be accepted."],
-    "explanation": "Subjunctive after <recommended that>: use <be accepted>, not <is accepted>."
+    "correct": [
+      "The committee recommended that the proposal be accepted."
+    ],
+    "explanation": "Subjuntivo después de <recommended that>: se usa <be accepted>, no <is accepted>."
   },
   {
     "sentence": "Not only she speaks French, but she also speaks German.",
-    "correct": ["Not only does she speak French, but she also speaks German."],
-    "explanation": "After <Not only> at the start, use inversion: <Not only does she speak>."
+    "correct": [
+      "Not only does she speak French, but she also speaks German."
+    ],
+    "explanation": "Cuando <Not only> va al inicio, se usa inversión: <Not only does she speak>."
   },
   {
     "sentence": "It is vital that the patient takes the medication regularly.",
-    "correct": ["It is vital that the patient take the medication regularly."],
-    "explanation": "Subjunctive after <vital that>: use base form <take>, not <takes>."
+    "correct": [
+      "It is vital that the patient take the medication regularly."
+    ],
+    "explanation": "Subjuntivo después de <vital that>: se usa la forma base <take>, no <takes>."
   },
   {
     "sentence": "Seldom we see such dedication in young employees.",
-    "correct": ["Seldom do we see such dedication in young employees."],
-    "explanation": "After <Seldom> at the start, use inversion: <Seldom do we see>."
+    "correct": [
+      "Seldom do we see such dedication in young employees."
+    ],
+    "explanation": "Cuando <Seldom> va al inicio, se usa inversión: <Seldom do we see>."
   },
   {
     "sentence": "The doctor insisted that she stays in bed for a week.",
-    "correct": ["The doctor insisted that she stay in bed for a week."],
-    "explanation": "Subjunctive after <insisted that>: use base form <stay>, not <stays>."
+    "correct": [
+      "The doctor insisted that she stay in bed for a week."
+    ],
+    "explanation": "Subjuntivo después de <insisted that>: se usa la forma base <stay>, no <stays>."
   },
   {
     "sentence": "No sooner he had arrived than the meeting started.",
-    "correct": ["No sooner had he arrived than the meeting started."],
-    "explanation": "After <No sooner> at the start, use inversion: <No sooner had he arrived>."
+    "correct": [
+      "No sooner had he arrived than the meeting started."
+    ],
+    "explanation": "Cuando <No sooner> va al inicio, se usa inversión: <No sooner had he arrived>."
   },
   {
     "sentence": "It is important that every student submits the assignment on time.",
-    "correct": ["It is important that every student submit the assignment on time."],
-    "explanation": "Subjunctive after <important that>: use base form <submit>, not <submits>."
+    "correct": [
+      "It is important that every student submit the assignment on time."
+    ],
+    "explanation": "Subjuntivo después de <important that>: se usa la forma base <submit>, no <submits>."
   },
   {
     "sentence": "Under no circumstances you should reveal this information.",
-    "correct": ["Under no circumstances should you reveal this information."],
-    "explanation": "After <Under no circumstances>, use inversion: <should you reveal>."
+    "correct": [
+      "Under no circumstances should you reveal this information."
+    ],
+    "explanation": "Después de <Under no circumstances>, se usa inversión: <should you reveal>."
   },
   {
     "sentence": "She demanded that he apologises immediately.",
-    "correct": ["She demanded that he apologise immediately."],
-    "explanation": "Subjunctive after <demanded that>: use base form <apologise>, not <apologises>."
+    "correct": [
+      "She demanded that he apologise immediately."
+    ],
+    "explanation": "Subjuntivo después de <demanded that>: se usa la forma base <apologise>, no <apologises>."
   },
   {
     "sentence": "Only after the exam I realised my mistake.",
-    "correct": ["Only after the exam did I realise my mistake."],
-    "explanation": "After <Only after> at the start, use inversion: <did I realise>."
+    "correct": [
+      "Only after the exam did I realise my mistake."
+    ],
+    "explanation": "Cuando <Only after> va al inicio, se usa inversión: <did I realise>."
   },
   {
     "sentence": "The manager suggested that the meeting is postponed.",
-    "correct": ["The manager suggested that the meeting be postponed."],
-    "explanation": "Subjunctive after <suggested that>: use <be postponed>, not <is postponed>."
+    "correct": [
+      "The manager suggested that the meeting be postponed."
+    ],
+    "explanation": "Subjuntivo después de <suggested that>: se usa <be postponed>, no <is postponed>."
   },
   {
     "sentence": "At no time the suspect was seen near the building.",
-    "correct": ["At no time was the suspect seen near the building."],
-    "explanation": "After <At no time>, use inversion: <was the suspect seen>."
+    "correct": [
+      "At no time was the suspect seen near the building."
+    ],
+    "explanation": "Después de <At no time>, se usa inversión: <was the suspect seen>."
   },
   {
     "sentence": "It is crucial that the government acts quickly.",
-    "correct": ["It is crucial that the government act quickly."],
-    "explanation": "Subjunctive after <crucial that>: use base form <act>, not <acts>."
+    "correct": [
+      "It is crucial that the government act quickly."
+    ],
+    "explanation": "Subjuntivo después de <crucial that>: se usa la forma base <act>, no <acts>."
   },
   {
     "sentence": "Rarely you find such quality at this price.",
-    "correct": ["Rarely do you find such quality at this price."],
-    "explanation": "After <Rarely> at the start, use inversion: <Rarely do you find>."
+    "correct": [
+      "Rarely do you find such quality at this price."
+    ],
+    "explanation": "Cuando <Rarely> va al inicio, se usa inversión: <Rarely do you find>."
   },
   {
     "sentence": "The board proposed that the CEO resigns.",
-    "correct": ["The board proposed that the CEO resign."],
-    "explanation": "Subjunctive after <proposed that>: use base form <resign>, not <resigns>."
+    "correct": [
+      "The board proposed that the CEO resign."
+    ],
+    "explanation": "Subjuntivo después de <proposed that>: se usa la forma base <resign>, no <resigns>."
   },
   {
     "sentence": "Not until midnight the storm finally subsided.",
-    "correct": ["Not until midnight did the storm finally subside."],
-    "explanation": "After <Not until> at the start, use inversion: <did the storm subside>."
+    "correct": [
+      "Not until midnight did the storm finally subside."
+    ],
+    "explanation": "Cuando <Not until> va al inicio, se usa inversión: <did the storm subside>."
   },
   {
     "sentence": "It is necessary that each participant signs the consent form.",
-    "correct": ["It is necessary that each participant sign the consent form."],
-    "explanation": "Subjunctive after <necessary that>: use base form <sign>, not <signs>."
+    "correct": [
+      "It is necessary that each participant sign the consent form."
+    ],
+    "explanation": "Subjuntivo después de <necessary that>: se usa la forma base <sign>, no <signs>."
   },
   {
     "sentence": "Little they knew about the surprise that awaited them.",
-    "correct": ["Little did they know about the surprise that awaited them."],
-    "explanation": "After <Little> at the start, use inversion: <Little did they know>."
+    "correct": [
+      "Little did they know about the surprise that awaited them."
+    ],
+    "explanation": "Cuando <Little> va al inicio, se usa inversión: <Little did they know>."
   },
   {
     "sentence": "She requested that the report is completed by Friday.",
-    "correct": ["She requested that the report be completed by Friday."],
-    "explanation": "Subjunctive after <requested that>: use <be completed>, not <is completed>."
+    "correct": [
+      "She requested that the report be completed by Friday."
+    ],
+    "explanation": "Subjuntivo después de <requested that>: se usa <be completed>, no <is completed>."
   },
   {
     "sentence": "In no way this decision should affect your work.",
-    "correct": ["In no way should this decision affect your work."],
-    "explanation": "After <In no way>, use inversion: <should this decision affect>."
+    "correct": [
+      "In no way should this decision affect your work."
+    ],
+    "explanation": "Después de <In no way>, se usa inversión: <should this decision affect>."
   },
   {
     "sentence": "The law requires that every driver has insurance.",
-    "correct": ["The law requires that every driver have insurance."],
-    "explanation": "Subjunctive after <requires that>: use base form <have>, not <has>."
+    "correct": [
+      "The law requires that every driver have insurance."
+    ],
+    "explanation": "Subjuntivo después de <requires that>: se usa la forma base <have>, no <has>."
   },
   {
     "sentence": "Only when she left I understood how much she meant to me.",
-    "correct": ["Only when she left did I understand how much she meant to me."],
-    "explanation": "After <Only when> at the start, use inversion: <did I understand>."
+    "correct": [
+      "Only when she left did I understand how much she meant to me."
+    ],
+    "explanation": "Cuando <Only when> va al inicio, se usa inversión: <did I understand>."
   }
 ]

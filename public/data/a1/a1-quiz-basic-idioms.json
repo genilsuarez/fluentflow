@@ -8,18 +8,18 @@
       "cats and dogs are playing"
     ],
     "correct": "it is raining very hard",
-    "explanation": "This idiom means it is raining very heavily."
+    "explanation": "Este modismo significa que está lloviendo muy fuerte."
   },
   {
     "question": "What does <a piece of cake> mean?",
     "options": [
       "a type of dessert",
-      "something expensive",
       "something very easy",
+      "something expensive",
       "a birthday party"
     ],
     "correct": "something very easy",
-    "explanation": "This idiom means something is very easy to do."
+    "explanation": "Este modismo significa que algo es muy fácil de hacer."
   },
   {
     "question": "If you <break a leg>, someone is wishing you:",
@@ -30,51 +30,51 @@
       "bad luck"
     ],
     "correct": "good luck",
-    "explanation": "This idiom is used to wish someone <good luck>, especially before a performance."
+    "explanation": "Este modismo se usa para desearle a alguien <good luck>, especialmente antes de una presentación."
   },
   {
     "question": "What does <it's not my cup of tea> mean?",
     "options": [
       "the tea is cold",
-      "it's not something I enjoy",
       "I prefer coffee",
-      "I don't like tea"
+      "I don't like tea",
+      "it's not something I enjoy"
     ],
     "correct": "it's not something I enjoy",
-    "explanation": "This idiom means something is not to your liking or interest."
+    "explanation": "Este modismo significa que algo no es de tu agrado o interés."
   },
   {
     "question": "If someone says <hold on>, they want you to:",
     "options": [
+      "wait a moment",
       "grab something",
       "sit down",
-      "run away",
-      "wait a moment"
+      "run away"
     ],
     "correct": "wait a moment",
-    "explanation": "This idiom means to wait for a short time."
+    "explanation": "Este modismo significa esperar un momento."
   },
   {
     "question": "What does <once in a blue moon> mean?",
     "options": [
-      "very rarely",
       "every month",
+      "very rarely",
       "when the moon is blue",
       "every night"
     ],
     "correct": "very rarely",
-    "explanation": "This idiom means something happens very infrequently."
+    "explanation": "Este modismo significa que algo sucede muy pocas veces."
   },
   {
     "question": "If you are <under the weather>, you are:",
     "options": [
       "very happy",
-      "feeling sick",
       "cold",
+      "feeling sick",
       "outside in rain"
     ],
     "correct": "feeling sick",
-    "explanation": "This idiom means you are not feeling well."
+    "explanation": "Este modismo significa que no te sientes bien."
   },
   {
     "question": "What does <time flies> mean?",
@@ -85,18 +85,18 @@
       "time passes quickly"
     ],
     "correct": "time passes quickly",
-    "explanation": "This idiom means time seems to pass very fast."
+    "explanation": "Este modismo significa que el tiempo parece pasar muy rápido."
   },
   {
     "question": "If something costs <an arm and a leg>, it is:",
     "options": [
-      "painful",
       "very expensive",
+      "painful",
       "cheap",
       "free"
     ],
     "correct": "very expensive",
-    "explanation": "This idiom means something is <very expensive>."
+    "explanation": "Este modismo significa que algo es <very expensive>."
   },
   {
     "question": "What does <keep an eye on> mean?",
@@ -107,62 +107,62 @@
       "sleep"
     ],
     "correct": "watch carefully",
-    "explanation": "This idiom means to watch something or someone carefully."
+    "explanation": "Este modismo significa vigilar algo o a alguien con cuidado."
   },
   {
     "question": "If you <hit the books>, you:",
     "options": [
       "go to a library",
       "throw books",
-      "read a novel",
-      "study hard"
+      "study hard",
+      "read a novel"
     ],
     "correct": "study hard",
-    "explanation": "This idiom means to study intensively."
+    "explanation": "Este modismo significa estudiar intensamente."
   },
   {
     "question": "What does <let the cat out of the bag> mean?",
     "options": [
       "open a bag",
-      "reveal a secret",
       "go shopping",
-      "free a cat"
+      "free a cat",
+      "reveal a secret"
     ],
     "correct": "reveal a secret",
-    "explanation": "This idiom means to accidentally <reveal a secret>."
+    "explanation": "Este modismo significa <reveal a secret> por accidente."
   },
   {
     "question": "If someone says <no pain, no gain>, they mean:",
     "options": [
+      "you must suffer to succeed",
       "life is easy",
       "don't exercise",
-      "you must suffer to succeed",
       "pain is bad"
     ],
     "correct": "you must suffer to succeed",
-    "explanation": "This idiom means you need to work hard to achieve results."
+    "explanation": "Este modismo significa que hay que esforzarse para lograr algo."
   },
   {
     "question": "What does <so far, so good> mean?",
     "options": [
       "it is far away",
+      "everything is fine until now",
       "it is finished",
-      "keep going",
-      "everything is fine until now"
+      "keep going"
     ],
     "correct": "everything is fine until now",
-    "explanation": "This idiom means things are going well up to this point."
+    "explanation": "Este modismo significa que las cosas van bien hasta este momento."
   },
   {
     "question": "If you <call it a day>, you:",
     "options": [
-      "stop working",
       "start early",
       "name the day",
+      "stop working",
       "make a phone call"
     ],
     "correct": "stop working",
-    "explanation": "This idiom means to <stop working> for the day."
+    "explanation": "Este modismo significa <stop working> por el día."
   },
   {
     "question": "What does <better late than never> mean?",
@@ -173,7 +173,7 @@
       "it's good to arrive even if late"
     ],
     "correct": "it's good to arrive even if late",
-    "explanation": "This idiom means it is better to do something late than not at all."
+    "explanation": "Este modismo significa que es mejor hacer algo tarde que no hacerlo."
   },
   {
     "question": "If you <get the ball rolling>, you:",
@@ -184,18 +184,18 @@
       "play football"
     ],
     "correct": "start an activity",
-    "explanation": "This idiom means to begin or start something."
+    "explanation": "Este modismo significa comenzar o iniciar algo."
   },
   {
     "question": "What does <sleep on it> mean?",
     "options": [
       "sleep well",
-      "use a pillow",
       "think about it overnight",
+      "use a pillow",
       "go to bed early"
     ],
     "correct": "think about it overnight",
-    "explanation": "This idiom means to wait until the next day before making a decision."
+    "explanation": "Este modismo significa esperar hasta el día siguiente antes de tomar una decisión."
   },
   {
     "question": "If something is <a long shot>, it is:",
@@ -206,7 +206,7 @@
       "a photograph"
     ],
     "correct": "unlikely to succeed",
-    "explanation": "This idiom means something has a small chance of success."
+    "explanation": "Este modismo significa que algo tiene pocas probabilidades de éxito."
   },
   {
     "question": "What does <hang in there> mean?",
@@ -217,6 +217,6 @@
       "don't give up"
     ],
     "correct": "don't give up",
-    "explanation": "This idiom is used to encourage someone to keep trying."
+    "explanation": "Este modismo se usa para animar a alguien a seguir intentándolo."
   }
 ]

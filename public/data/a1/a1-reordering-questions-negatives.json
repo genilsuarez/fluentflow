@@ -2,139 +2,288 @@
   {
     "id": "reord-a1-q-001",
     "sentence": "Do you speak English",
-    "words": ["Do", "you", "speak", "English"],
+    "words": [
+      "Do",
+      "you",
+      "speak",
+      "English"
+    ],
     "hint": "Yes/no questions: Do/Does + subject + base verb",
-    "explanation": "Questions with 'do' follow: Do + subject + base verb. 'Do you speak English?'"
+    "explanation": "Las preguntas con 'do' siguen: Do + sujeto + verbo base. 'Do you speak English?'"
   },
   {
     "id": "reord-a1-q-002",
     "sentence": "Does she like chocolate",
-    "words": ["Does", "she", "like", "chocolate"],
-    "distractors": ["Do"],
-    "explanation": "With 'she' we use 'Does', not 'Do'. 'Do' is for I/you/we/they."
+    "words": [
+      "Does",
+      "she",
+      "like",
+      "chocolate"
+    ],
+    "distractors": [
+      "Do"
+    ],
+    "explanation": "Con 'she' se usa 'Does', no 'Do'. 'Do' es para I/you/we/they."
   },
   {
     "id": "reord-a1-q-003",
     "sentence": "Where is the train station",
-    "words": ["Where", "is", "the", "train", "station"],
+    "words": [
+      "Where",
+      "is",
+      "the",
+      "train",
+      "station"
+    ],
     "hint": "Wh-questions: question word + be + subject",
-    "explanation": "Questions with 'where' and 'be': Where + is + the subject."
+    "explanation": "Preguntas con 'where' y 'be': Where + is + el sujeto."
   },
   {
     "id": "reord-a1-q-004",
     "sentence": "I do not like spicy food",
-    "words": ["I", "do", "not", "like", "spicy", "food"],
-    "distractors": ["does"],
+    "words": [
+      "I",
+      "do",
+      "not",
+      "like",
+      "spicy",
+      "food"
+    ],
+    "distractors": [
+      "does"
+    ],
     "hint": "Negatives with 'I': do not + base verb",
-    "explanation": "With 'I', use 'do not' (don't), not 'does not'. 'Does' is for he/she/it."
+    "explanation": "Con 'I', se usa 'do not' (don't), no 'does not'. 'Does' es para he/she/it."
   },
   {
     "id": "reord-a1-q-005",
     "sentence": "She does not have a car",
-    "words": ["She", "does", "not", "have", "a", "car"],
-    "distractors": ["do", "has"],
-    "explanation": "With 'she': does not + base form 'have'. Not 'do not' and not 'has' after 'does not'."
+    "words": [
+      "She",
+      "does",
+      "not",
+      "have",
+      "a",
+      "car"
+    ],
+    "distractors": [
+      "do",
+      "has"
+    ],
+    "explanation": "Con 'she': does not + forma base 'have'. No 'do not' ni 'has' después de 'does not'."
   },
   {
     "id": "reord-a1-q-006",
     "sentence": "What time do you wake up",
-    "words": ["What", "time", "do", "you", "wake", "up"],
-    "explanation": "Question word + auxiliary 'do' + subject + verb."
+    "words": [
+      "What",
+      "time",
+      "do",
+      "you",
+      "wake",
+      "up"
+    ],
+    "explanation": "Palabra interrogativa + auxiliar 'do' + sujeto + verbo."
   },
   {
     "id": "reord-a1-q-007",
     "sentence": "Is he your brother",
-    "words": ["Is", "he", "your", "brother"],
+    "words": [
+      "Is",
+      "he",
+      "your",
+      "brother"
+    ],
     "hint": "Yes/no questions with 'be': be + subject",
-    "explanation": "Questions with 'be' invert subject and verb: 'Is he...?' not 'He is...?'"
+    "explanation": "Las preguntas con 'be' invierten sujeto y verbo: 'Is he...?' y no 'He is...?'"
   },
   {
     "id": "reord-a1-q-008",
     "sentence": "They are not at home",
-    "words": ["They", "are", "not", "at", "home"],
-    "distractors": ["is"],
-    "explanation": "'They' uses 'are not'. 'Is not' is for he/she/it."
+    "words": [
+      "They",
+      "are",
+      "not",
+      "at",
+      "home"
+    ],
+    "distractors": [
+      "is"
+    ],
+    "explanation": "'They' usa 'are not'. 'Is not' es para he/she/it."
   },
   {
     "id": "reord-a1-q-009",
     "sentence": "How old are you",
-    "words": ["How", "old", "are", "you"],
-    "explanation": "'How old' is a fixed question phrase followed by 'are you'."
+    "words": [
+      "How",
+      "old",
+      "are",
+      "you"
+    ],
+    "explanation": "'How old' es una frase interrogativa fija seguida de 'are you'."
   },
   {
     "id": "reord-a1-q-010",
     "sentence": "He does not work on Sundays",
-    "words": ["He", "does", "not", "work", "on", "Sundays"],
-    "distractors": ["do", "works"],
-    "explanation": "After 'does not', use the base form 'work', not 'works'. 'Do' is not used with 'he'."
+    "words": [
+      "He",
+      "does",
+      "not",
+      "work",
+      "on",
+      "Sundays"
+    ],
+    "distractors": [
+      "do",
+      "works"
+    ],
+    "explanation": "Después de 'does not', se usa la forma base 'work', no 'works'. 'Do' no se usa con 'he'."
   },
   {
     "id": "reord-a1-q-011",
     "sentence": "Where do they live",
-    "words": ["Where", "do", "they", "live"],
-    "distractors": ["does"],
-    "explanation": "'They' uses 'do', not 'does'. 'Does' is for he/she/it."
+    "words": [
+      "Where",
+      "do",
+      "they",
+      "live"
+    ],
+    "distractors": [
+      "does"
+    ],
+    "explanation": "'They' usa 'do', no 'does'. 'Does' es para he/she/it."
   },
   {
     "id": "reord-a1-q-012",
     "sentence": "I am not hungry right now",
-    "words": ["I", "am", "not", "hungry", "right", "now"],
+    "words": [
+      "I",
+      "am",
+      "not",
+      "hungry",
+      "right",
+      "now"
+    ],
     "hint": "Negatives with 'be': subject + be + not",
-    "explanation": "With 'be', put 'not' after the verb: 'I am not hungry'."
+    "explanation": "Con 'be', se coloca 'not' después del verbo: 'I am not hungry'."
   },
   {
     "id": "reord-a1-q-013",
     "sentence": "Are they coming to the party",
-    "words": ["Are", "they", "coming", "to", "the", "party"],
-    "distractors": ["Is"],
-    "explanation": "'They' uses 'Are', not 'Is'. 'Is' is for he/she/it."
+    "words": [
+      "Are",
+      "they",
+      "coming",
+      "to",
+      "the",
+      "party"
+    ],
+    "distractors": [
+      "Is"
+    ],
+    "explanation": "'They' usa 'Are', no 'Is'. 'Is' es para he/she/it."
   },
   {
     "id": "reord-a1-q-014",
     "sentence": "We do not eat meat",
-    "words": ["We", "do", "not", "eat", "meat"],
-    "distractors": ["does"],
-    "explanation": "'We' uses 'do not', not 'does not'."
+    "words": [
+      "We",
+      "do",
+      "not",
+      "eat",
+      "meat"
+    ],
+    "distractors": [
+      "does"
+    ],
+    "explanation": "'We' usa 'do not', no 'does not'."
   },
   {
     "id": "reord-a1-q-015",
     "sentence": "What is your favorite color",
-    "words": ["What", "is", "your", "favorite", "color"],
-    "explanation": "Question word + 'is' + possessive + noun."
+    "words": [
+      "What",
+      "is",
+      "your",
+      "favorite",
+      "color"
+    ],
+    "explanation": "Palabra interrogativa + 'is' + posesivo + sustantivo."
   },
   {
     "id": "reord-a1-q-016",
     "sentence": "Does he play football on weekends",
-    "words": ["Does", "he", "play", "football", "on", "weekends"],
-    "distractors": ["Do", "plays"],
-    "explanation": "With 'he', use 'Does' + base form 'play'. Not 'Do' and not 'plays' after 'Does'."
+    "words": [
+      "Does",
+      "he",
+      "play",
+      "football",
+      "on",
+      "weekends"
+    ],
+    "distractors": [
+      "Do",
+      "plays"
+    ],
+    "explanation": "Con 'he', se usa 'Does' + forma base 'play'. No 'Do' ni 'plays' después de 'Does'."
   },
   {
     "id": "reord-a1-q-017",
     "sentence": "The store is not open today",
-    "words": ["The", "store", "is", "not", "open", "today"],
-    "explanation": "Negative with 'be': subject + is + not + adjective."
+    "words": [
+      "The",
+      "store",
+      "is",
+      "not",
+      "open",
+      "today"
+    ],
+    "explanation": "Negación con 'be': sujeto + is + not + adjetivo."
   },
   {
     "id": "reord-a1-q-018",
     "sentence": "How many brothers do you have",
-    "words": ["How", "many", "brothers", "do", "you", "have"],
-    "distractors": ["does"],
+    "words": [
+      "How",
+      "many",
+      "brothers",
+      "do",
+      "you",
+      "have"
+    ],
+    "distractors": [
+      "does"
+    ],
     "hint": "'How many' asks about quantity",
-    "explanation": "'How many' + plural noun + do + subject + verb."
+    "explanation": "'How many' + sustantivo plural + do + sujeto + verbo."
   },
   {
     "id": "reord-a1-q-019",
     "sentence": "She is not from Mexico",
-    "words": ["She", "is", "not", "from", "Mexico"],
-    "distractors": ["are"],
-    "explanation": "'She' uses 'is not'. 'Are not' is for you/we/they."
+    "words": [
+      "She",
+      "is",
+      "not",
+      "from",
+      "Mexico"
+    ],
+    "distractors": [
+      "are"
+    ],
+    "explanation": "'She' usa 'is not'. 'Are not' es para you/we/they."
   },
   {
     "id": "reord-a1-q-020",
     "sentence": "Why do you study English",
-    "words": ["Why", "do", "you", "study", "English"],
+    "words": [
+      "Why",
+      "do",
+      "you",
+      "study",
+      "English"
+    ],
     "hint": "Wh-question: Why + do + subject + verb",
-    "explanation": "Question structure: question word + auxiliary + subject + base verb."
+    "explanation": "Estructura de pregunta: palabra interrogativa + auxiliar + sujeto + verbo base."
   }
 ]

@@ -2,70 +2,266 @@
   {
     "id": "reord-id-a2-001",
     "sentence": "She was on cloud nine after passing the exam",
-    "words": ["She", "was", "on", "cloud", "nine", "after", "passing", "the", "exam"],
+    "words": [
+      "She",
+      "was",
+      "on",
+      "cloud",
+      "nine",
+      "after",
+      "passing",
+      "the",
+      "exam"
+    ],
     "hint": "Subject + was + idiom + after + gerund",
-    "explanation": "'On cloud nine' means extremely happy. 'After' is followed by a gerund (-ing form)."
+    "explanation": "'On cloud nine' significa extremadamente feliz. 'After' va seguido de un gerundio (forma -ing)."
   },
   {
     "id": "reord-id-a2-002",
     "sentence": "He always gets cold feet before important meetings",
-    "words": ["He", "always", "gets", "cold", "feet", "before", "important", "meetings"],
-    "distractors": ["get"],
+    "words": [
+      "He",
+      "always",
+      "gets",
+      "cold",
+      "feet",
+      "before",
+      "important",
+      "meetings"
+    ],
+    "distractors": [
+      "get"
+    ],
     "hint": "Adverb of frequency before the main verb",
-    "explanation": "'Get cold feet' means to become nervous. With 'he', use 'gets'. 'Always' goes before the verb."
+    "explanation": "'Get cold feet' significa ponerse nervioso. Con 'he', usa 'gets'. 'Always' va antes del verbo."
   },
   {
     "id": "reord-id-a2-003",
     "sentence": "We had to bite the bullet and sell the car",
-    "words": ["We", "had", "to", "bite", "the", "bullet", "and", "sell", "the", "car"],
-    "explanation": "'Bite the bullet' means to face a difficult situation bravely. 'Had to' expresses past obligation."
+    "words": [
+      "We",
+      "had",
+      "to",
+      "bite",
+      "the",
+      "bullet",
+      "and",
+      "sell",
+      "the",
+      "car"
+    ],
+    "explanation": "'Bite the bullet' significa enfrentar una situación difícil con valentía. 'Had to' expresa obligación en el pasado."
   },
   {
     "id": "reord-id-a2-004",
     "sentence": "The news spread like wildfire across the town",
-    "words": ["The", "news", "spread", "like", "wildfire", "across", "the", "town"],
-    "distractors": ["spreaded"],
+    "words": [
+      "The",
+      "news",
+      "spread",
+      "like",
+      "wildfire",
+      "across",
+      "the",
+      "town"
+    ],
+    "distractors": [
+      "spreaded"
+    ],
     "hint": "Past tense of 'spread' is 'spread' (irregular)",
-    "explanation": "'Spread like wildfire' means to spread very quickly. 'Spread' is the same in all tenses."
+    "explanation": "'Spread like wildfire' significa propagarse muy rápido. 'Spread' es igual en todos los tiempos verbales."
   },
   {
     "id": "reord-id-a2-005",
     "sentence": "She has been burning the midnight oil all week",
-    "words": ["She", "has", "been", "burning", "the", "midnight", "oil", "all", "week"],
+    "words": [
+      "She",
+      "has",
+      "been",
+      "burning",
+      "the",
+      "midnight",
+      "oil",
+      "all",
+      "week"
+    ],
     "hint": "Present perfect continuous: has been + -ing",
-    "explanation": "'Burn the midnight oil' means to work late at night. Present perfect continuous shows ongoing action."
+    "explanation": "'Burn the midnight oil' significa trabajar hasta muy tarde en la noche. El presente perfecto continuo muestra una acción en curso."
   },
   {
     "id": "reord-id-a2-006",
     "sentence": "They decided to call it a day after lunch",
-    "words": ["They", "decided", "to", "call", "it", "a", "day", "after", "lunch"],
-    "explanation": "'Call it a day' means to stop working. 'Decided to' is followed by the base form."
+    "words": [
+      "They",
+      "decided",
+      "to",
+      "call",
+      "it",
+      "a",
+      "day",
+      "after",
+      "lunch"
+    ],
+    "explanation": "'Call it a day' significa dejar de trabajar. 'Decided to' va seguido de la forma base."
   },
   {
     "id": "reord-id-a2-007",
     "sentence": "I think we should not beat around the bush",
-    "words": ["I", "think", "we", "should", "not", "beat", "around", "the", "bush"],
+    "words": [
+      "I",
+      "think",
+      "we",
+      "should",
+      "not",
+      "beat",
+      "around",
+      "the",
+      "bush"
+    ],
     "hint": "Subject + think + clause with should not",
-    "explanation": "'Beat around the bush' means to avoid the main topic. 'Should not' goes before the verb."
+    "explanation": "'Beat around the bush' significa evitar el tema principal. 'Should not' va antes del verbo."
   },
   {
     "id": "reord-id-a2-008",
     "sentence": "He was feeling blue because he missed his family",
-    "words": ["He", "was", "feeling", "blue", "because", "he", "missed", "his", "family"],
-    "explanation": "'Feeling blue' means feeling sad. 'Because' introduces the reason."
+    "words": [
+      "He",
+      "was",
+      "feeling",
+      "blue",
+      "because",
+      "he",
+      "missed",
+      "his",
+      "family"
+    ],
+    "explanation": "'Feeling blue' significa sentirse triste. 'Because' introduce la razón."
   },
   {
     "id": "reord-id-a2-009",
     "sentence": "The project cost us an arm and a leg last year",
-    "words": ["The", "project", "cost", "us", "an", "arm", "and", "a", "leg", "last", "year"],
-    "distractors": ["costed"],
+    "words": [
+      "The",
+      "project",
+      "cost",
+      "us",
+      "an",
+      "arm",
+      "and",
+      "a",
+      "leg",
+      "last",
+      "year"
+    ],
+    "distractors": [
+      "costed"
+    ],
     "hint": "Past tense of 'cost' is 'cost' (irregular)",
-    "explanation": "'Cost an arm and a leg' means to be very expensive. 'Cost' is the same in all tenses."
+    "explanation": "'Cost an arm and a leg' significa ser muy caro. 'Cost' es igual en todos los tiempos verbales."
   },
   {
     "id": "reord-id-a2-010",
     "sentence": "You should not put all your eggs in one basket",
-    "words": ["You", "should", "not", "put", "all", "your", "eggs", "in", "one", "basket"],
-    "explanation": "'Put all your eggs in one basket' means to risk everything on one option. 'Should not' goes before the base form."
+    "words": [
+      "You",
+      "should",
+      "not",
+      "put",
+      "all",
+      "your",
+      "eggs",
+      "in",
+      "one",
+      "basket"
+    ],
+    "explanation": "'Put all your eggs in one basket' significa arriesgarlo todo en una sola opción. 'Should not' va antes de la forma base."
+  },
+  {
+    "id": "reord-id-a2-011",
+    "sentence": "He told a joke to break the ice",
+    "words": [
+      "He",
+      "told",
+      "a",
+      "joke",
+      "to",
+      "break",
+      "the",
+      "ice"
+    ],
+    "hint": "Clause + infinitive of purpose + idiom",
+    "explanation": "'Break the ice' significa hacer que la gente se sienta más cómoda en una situación social."
+  },
+  {
+    "id": "reord-id-a2-012",
+    "sentence": "If you wait too long you will miss the boat",
+    "words": [
+      "If",
+      "you",
+      "wait",
+      "too",
+      "long",
+      "you",
+      "will",
+      "miss",
+      "the",
+      "boat"
+    ],
+    "hint": "If-clause + will + idiom",
+    "explanation": "'Miss the boat' significa perder una oportunidad por actuar demasiado lento."
+  },
+  {
+    "id": "reord-id-a2-013",
+    "sentence": "Let us make sure we are on the same page",
+    "words": [
+      "Let",
+      "us",
+      "make",
+      "sure",
+      "we",
+      "are",
+      "on",
+      "the",
+      "same",
+      "page"
+    ],
+    "hint": "Imperative + that-clause + idiom",
+    "explanation": "'On the same page' significa estar de acuerdo con alguien o entender algo de la misma manera."
+  },
+  {
+    "id": "reord-id-a2-014",
+    "sentence": "We should hit the road before it gets dark",
+    "words": [
+      "We",
+      "should",
+      "hit",
+      "the",
+      "road",
+      "before",
+      "it",
+      "gets",
+      "dark"
+    ],
+    "hint": "Modal + idiom + before-clause",
+    "explanation": "'Hit the road' significa partir o comenzar un viaje."
+  },
+  {
+    "id": "reord-id-a2-015",
+    "sentence": "She wanted to get the ball rolling on the new project",
+    "words": [
+      "She",
+      "wanted",
+      "to",
+      "get",
+      "the",
+      "ball",
+      "rolling",
+      "on",
+      "the",
+      "new",
+      "project"
+    ],
+    "hint": "Subject + verb + infinitive + idiom",
+    "explanation": "'Get the ball rolling' significa poner algo en marcha."
   }
 ]

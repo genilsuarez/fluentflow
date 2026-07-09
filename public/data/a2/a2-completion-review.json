@@ -2,126 +2,126 @@
   {
     "sentence": "She ______ her jacket before going outside.",
     "correct": "put on",
-    "explanation": "The phrasal verb <put on> means to wear a piece of clothing."
+    "explanation": "El phrasal verb <put on> significa ponerse una prenda de ropa."
   },
   {
     "sentence": "I need to ______ the answer to this question.",
     "correct": "find out",
-    "explanation": "The phrasal verb <find out> means to discover information."
+    "explanation": "El phrasal verb <find out> significa descubrir información."
   },
   {
     "sentence": "He ______ the form at the doctor's office.",
     "correct": "filled in",
-    "explanation": "The phrasal verb <fill in> means to complete a form with information."
+    "explanation": "El phrasal verb <fill in> significa completar un formulario con información."
   },
   {
     "sentence": "We ______ at the hotel at 3 pm.",
     "correct": "checked in",
-    "explanation": "The phrasal verb <check in> means to register at a hotel."
+    "explanation": "El phrasal verb <check in> significa registrarse en un hotel."
   },
   {
     "sentence": "Can you ______ the music? I can't hear you.",
     "correct": "turn down",
-    "explanation": "The phrasal verb <turn down> means to reduce the volume."
+    "explanation": "El phrasal verb <turn down> significa bajar el volumen."
   },
   {
     "sentence": "She ______ her old clothes to charity.",
     "correct": "gave away",
-    "explanation": "The phrasal verb <give away> means to donate or give for free."
+    "explanation": "El phrasal verb <give away> significa donar o regalar algo."
   },
   {
     "sentence": "They ______ the meeting until next week.",
     "correct": "put off",
-    "explanation": "The phrasal verb <put off> means to postpone or delay."
+    "explanation": "El phrasal verb <put off> significa posponer o aplazar."
   },
   {
     "sentence": "She was walking on air after getting the job. This means she was very ______.",
     "correct": "happy",
-    "explanation": "The idiom <walking on air> means feeling extremely happy."
+    "explanation": "El modismo <walking on air> significa sentirse extremadamente feliz."
   },
   {
     "sentence": "He's feeling blue today. This means he's feeling ______.",
     "correct": "sad",
-    "explanation": "The idiom <feeling blue> means feeling sad or depressed."
+    "explanation": "El modismo <feeling blue> significa sentirse triste o deprimido."
   },
   {
     "sentence": "She ______ to the park yesterday. (Change: 'She goes' → past continuous)",
     "correct": "was going",
-    "explanation": "Past continuous: <was/were> + verb-ing. She <was going>."
+    "explanation": "Pasado continuo: <was/were> + verbo-ing. She <was going>."
   },
   {
     "sentence": "They ______ dinner when the phone rang. (past continuous)",
     "correct": "were having",
-    "explanation": "Past continuous with they: <were> + verb-ing: <were having>."
+    "explanation": "Pasado continuo con they: <were> + verbo-ing: <were having>."
   },
   {
     "sentence": "I ______ to the cinema tomorrow. (Change: present → future with 'will')",
     "correct": "will go",
-    "explanation": "Future simple: <will> + base form: <will go>."
+    "explanation": "Futuro simple: <will> + forma base: <will go>."
   },
   {
     "sentence": "He ______ the homework yet. (Change: 'He finishes' → present perfect negative)",
     "correct": "hasn't finished",
-    "explanation": "Present perfect negative: <hasn't> + past participle: <hasn't finished>."
+    "explanation": "Presente perfecto negativo: <hasn't> + participio pasado: <hasn't finished>."
   },
   {
     "sentence": "______ you ever been to London? (present perfect question)",
     "correct": "Have",
-    "explanation": "Present perfect question: <Have> + subject + past participle."
+    "explanation": "Pregunta en presente perfecto: <Have> + sujeto + participio pasado."
   },
   {
     "sentence": "The act of moving to a new country is called ______.",
     "correct": "migration",
-    "explanation": "Adding <-tion> to the verb <migrate> forms the noun <migration>."
+    "explanation": "Agregar <-tion> al verbo <migrate> forma el sustantivo <migration>."
   },
   {
     "sentence": "The state of being happy is called ______.",
     "correct": "happiness",
-    "explanation": "Adding <-ness> to <happy> forms the noun <happiness>."
+    "explanation": "Agregar <-ness> a <happy> forma el sustantivo <happiness>."
   },
   {
     "sentence": "Something done in a quick way is done ______.",
     "correct": "quickly",
-    "explanation": "Adding <-ly> to the adjective <quick> forms the adverb <quickly>."
+    "explanation": "Agregar <-ly> al adjetivo <quick> forma el adverbio <quickly>."
   },
   {
     "sentence": "A person who manages is a ______.",
     "correct": "manager",
-    "explanation": "Adding <-er> to <manage> forms the noun <manager>."
+    "explanation": "Agregar <-er> a <manage> forma el sustantivo <manager>."
   },
   {
     "sentence": "The improve______ of the road took two months.",
     "correct": "improvement",
-    "explanation": "Adding <-ment> to <improve> forms the noun <improvement>."
+    "explanation": "Agregar <-ment> a <improve> forma el sustantivo <improvement>."
   },
   {
     "sentence": "She ______ to the party last night. (Correct: 'She goed' → fix the error)",
     "correct": "went",
-    "explanation": "<Go> is irregular. The past tense is <went>, not <goed>."
+    "explanation": "<Go> es irregular. El pasado es <went>, no <goed>."
   },
   {
     "sentence": "He ______ his homework every day. (Correct: 'He do his homework' → fix)",
     "correct": "does",
-    "explanation": "Third person singular uses <does>, not <do>: <He does>."
+    "explanation": "La tercera persona singular usa <does>, no <do>: <He does>."
   },
   {
     "sentence": "They ______ playing football now. (Correct: 'They is playing' → fix)",
     "correct": "are",
-    "explanation": "With <they>, use <are>: <They are playing>."
+    "explanation": "Con <they>, usa <are>: <They are playing>."
   },
   {
     "sentence": "I have ______ to Paris twice. (Correct: 'I have went' → fix)",
     "correct": "been",
-    "explanation": "Present perfect uses past participle: <have been>, not <have went>."
+    "explanation": "El presente perfecto usa el participio pasado: <have been>, no <have went>."
   },
   {
     "sentence": "She ______ up the phone quickly. (Correct: 'She hanged up' → fix)",
     "correct": "hung",
-    "explanation": "The past tense of <hang up> (phone) is <hung up>, not <hanged up>."
+    "explanation": "El pasado de <hang up> (colgar el teléfono) es <hung up>, no <hanged up>."
   },
   {
     "sentence": "He turned ______ the job offer because the salary was too low.",
     "correct": "down",
-    "explanation": "The phrasal verb <turn down> means to reject or refuse an offer."
+    "explanation": "El phrasal verb <turn down> significa rechazar una oferta."
   }
 ]

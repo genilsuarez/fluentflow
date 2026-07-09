@@ -1,127 +1,178 @@
 [
   {
     "sentence": "Please turn of the light.",
-    "correct": ["Please turn off the light."],
-    "explanation": "The phrasal verb is <turn off> (two f's), not <turn of>."
+    "correct": [
+      "Please turn off the light."
+    ],
+    "explanation": "El phrasal verb correcto es <turn off> (con dos efes), no <turn of>."
   },
   {
     "sentence": "I need to wake in early tomorrow.",
-    "correct": ["I need to wake up early tomorrow."],
-    "explanation": "The correct phrasal verb is <wake up>, not <wake in>."
+    "correct": [
+      "I need to wake up early tomorrow."
+    ],
+    "explanation": "El phrasal verb correcto es <wake up>, no <wake in>."
   },
   {
     "sentence": "She picked on the phone.",
-    "correct": ["She picked up the phone."],
-    "explanation": "The correct phrasal verb is <pick up> (to answer), not <pick on>."
+    "correct": [
+      "She picked up the phone."
+    ],
+    "explanation": "El phrasal verb correcto es <pick up> (contestar), no <pick on>."
   },
   {
     "sentence": "Can you look out this word in the dictionary?",
-    "correct": ["Can you look up this word in the dictionary?"],
-    "explanation": "The correct phrasal verb is <look up> (to search for information), not <look out>."
+    "correct": [
+      "Can you look up this word in the dictionary?"
+    ],
+    "explanation": "El phrasal verb correcto es <look up> (buscar información), no <look out>."
   },
   {
     "sentence": "He put in his jacket because it was cold.",
-    "correct": ["He put on his jacket because it was cold."],
-    "explanation": "The correct phrasal verb is <put on> (to wear), not <put in>."
+    "correct": [
+      "He put on his jacket because it was cold."
+    ],
+    "explanation": "El phrasal verb correcto es <put on> (ponerse ropa), no <put in>."
   },
   {
     "sentence": "Please sit up. The class is starting.",
-    "correct": ["Please sit down. The class is starting."],
-    "explanation": "The correct phrasal verb is <sit down> (to take a seat), not <sit up>."
+    "correct": [
+      "Please sit down. The class is starting."
+    ],
+    "explanation": "El phrasal verb correcto es <sit down> (sentarse), no <sit up>."
   },
   {
     "sentence": "I get in at 7 am every day.",
-    "correct": ["I get up at 7 am every day."],
-    "explanation": "The correct phrasal verb is <get up> (to rise from bed), not <get in>."
+    "correct": [
+      "I get up at 7 am every day."
+    ],
+    "explanation": "El phrasal verb correcto es <get up> (levantarse de la cama), no <get in>."
   },
   {
     "sentence": "She takes of her shoes at the door.",
-    "correct": ["She takes off her shoes at the door."],
-    "explanation": "The correct phrasal verb is <take off> (to remove), not <take of>."
+    "correct": [
+      "She takes off her shoes at the door."
+    ],
+    "explanation": "El phrasal verb correcto es <take off> (quitarse), no <take of>."
   },
   {
     "sentence": "Turn up the TV, please. It's too loud.",
-    "correct": ["Turn down the TV, please. It's too loud."],
-    "explanation": "Use <turn down> to reduce volume. <Turn up> means to increase volume."
+    "correct": [
+      "Turn down the TV, please. It's too loud."
+    ],
+    "explanation": "Usa <turn down> para bajar el volumen. <Turn up> significa subir el volumen."
   },
   {
     "sentence": "I look forward to see you soon.",
-    "correct": ["I look forward to seeing you soon."],
-    "explanation": "After <look forward to>, use the -ing form: <to seeing>, not <to see>."
+    "correct": [
+      "I look forward to seeing you soon."
+    ],
+    "explanation": "Después de <look forward to>, usa la forma -ing: <to seeing>, no <to see>."
   },
   {
     "sentence": "He gave in smoking last year.",
-    "correct": ["He gave up smoking last year."],
-    "explanation": "The correct phrasal verb is <give up> (to stop doing), not <give in>."
+    "correct": [
+      "He gave up smoking last year."
+    ],
+    "explanation": "El phrasal verb correcto es <give up> (dejar de hacer algo), no <give in>."
   },
   {
     "sentence": "Please come on. The door is open.",
-    "correct": ["Please come in. The door is open."],
-    "explanation": "The correct phrasal verb is <come in> (to enter), not <come on>."
+    "correct": [
+      "Please come in. The door is open."
+    ],
+    "explanation": "El phrasal verb correcto es <come in> (entrar), no <come on>."
   },
   {
     "sentence": "She goes in for a run every morning.",
-    "correct": ["She goes out for a run every morning."],
-    "explanation": "The correct phrasal verb is <go out> (to leave the house), not <go in>."
+    "correct": [
+      "She goes out for a run every morning."
+    ],
+    "explanation": "El phrasal verb correcto es <go out> (salir de casa), no <go in>."
   },
   {
     "sentence": "I need to find up the answer.",
-    "correct": ["I need to find out the answer."],
-    "explanation": "The correct phrasal verb is <find out> (to discover), not <find up>."
+    "correct": [
+      "I need to find out the answer."
+    ],
+    "explanation": "El phrasal verb correcto es <find out> (descubrir), no <find up>."
   },
   {
     "sentence": "Can you help me clean on the kitchen?",
-    "correct": ["Can you help me clean up the kitchen?"],
-    "explanation": "The correct phrasal verb is <clean up> (to tidy), not <clean on>."
+    "correct": [
+      "Can you help me clean up the kitchen?"
+    ],
+    "explanation": "El phrasal verb correcto es <clean up> (ordenar), no <clean on>."
   },
   {
     "sentence": "He ran up of milk, so he went to the shop.",
-    "correct": ["He ran out of milk, so he went to the shop."],
-    "explanation": "The correct phrasal verb is <run out of> (to have none left), not <run up of>."
+    "correct": [
+      "He ran out of milk, so he went to the shop."
+    ],
+    "explanation": "El phrasal verb correcto es <run out of> (quedarse sin algo), no <run up of>."
   },
   {
     "sentence": "She looks up to her older sister. She wants to be like her.",
-    "correct": ["She looks up to her older sister. She wants to be like her."],
-    "explanation": "This sentence is correct. <Look up to> means to admire someone."
+    "correct": [
+      "She looks up to her older sister. She wants to be like her."
+    ],
+    "explanation": "Esta oración es correcta. <Look up to> significa admirar a alguien."
   },
   {
     "sentence": "I need to throw out these old shoes.",
-    "correct": ["I need to throw out these old shoes."],
-    "explanation": "This sentence is correct. <Throw out> means to discard or get rid of."
+    "correct": [
+      "I need to throw out these old shoes."
+    ],
+    "explanation": "Esta oración es correcta. <Throw out> significa desechar o deshacerse de algo."
   },
   {
     "sentence": "Please write up your name on the paper.",
-    "correct": ["Please write down your name on the paper."],
-    "explanation": "The correct phrasal verb is <write down> (to note), not <write up>."
+    "correct": [
+      "Please write down your name on the paper."
+    ],
+    "explanation": "El phrasal verb correcto es <write down> (anotar), no <write up>."
   },
   {
     "sentence": "He turned off the TV and went to sleep.",
-    "correct": ["He turned off the TV and went to sleep."],
-    "explanation": "This sentence is correct. <Turn off> means to switch off a device."
+    "correct": [
+      "He turned off the TV and went to sleep."
+    ],
+    "explanation": "Esta oración es correcta. <Turn off> significa apagar un dispositivo."
   },
   {
     "sentence": "She set on the alarm for 6 am.",
-    "correct": ["She set up the alarm for 6 am."],
-    "explanation": "The correct phrasal verb is <set up> (to prepare/configure), not <set on>."
+    "correct": [
+      "She set up the alarm for 6 am."
+    ],
+    "explanation": "El phrasal verb correcto es <set up> (preparar/configurar), no <set on>."
   },
   {
     "sentence": "I always mix on the ingredients before cooking.",
-    "correct": ["I always mix up the ingredients before cooking."],
-    "explanation": "The correct phrasal verb is <mix up> (to combine), not <mix on>."
+    "correct": [
+      "I always mix up the ingredients before cooking."
+    ],
+    "explanation": "El phrasal verb correcto es <mix up> (combinar/confundir), no <mix on>."
   },
   {
     "sentence": "He hanged up the phone quickly.",
-    "correct": ["He hung up the phone quickly."],
-    "explanation": "The past tense of <hang up> (phone) is <hung up>, not <hanged up>."
+    "correct": [
+      "He hung up the phone quickly."
+    ],
+    "explanation": "El pasado de <hang up> (colgar el teléfono) es <hung up>, no <hanged up>."
   },
   {
     "sentence": "She filled up the form at the office.",
-    "correct": ["She filled in the form at the office.", "She filled out the form at the office."],
-    "explanation": "The correct phrasal verb is <fill in> or <fill out> (a form), not <fill up>."
+    "correct": [
+      "She filled in the form at the office.",
+      "She filled out the form at the office."
+    ],
+    "explanation": "El phrasal verb correcto es <fill in> o <fill out> (rellenar un formulario), no <fill up>."
   },
   {
     "sentence": "I need to check on of the hotel by noon.",
-    "correct": ["I need to check out of the hotel by noon."],
-    "explanation": "The correct phrasal verb is <check out of> (to leave a hotel), not <check on of>."
+    "correct": [
+      "I need to check out of the hotel by noon."
+    ],
+    "explanation": "El phrasal verb correcto es <check out of> (dejar un hotel), no <check on of>."
   }
 ]

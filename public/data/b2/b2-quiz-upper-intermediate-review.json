@@ -2,13 +2,13 @@
   {
     "question": "Choose the correct form: 'I _____ play the piano when I was a child.'",
     "options": [
+      "used to",
       "use to",
       "was used to",
-      "used to",
       "am used to"
     ],
     "correct": "used to",
-    "explanation": "<Used to> + base form describes past habits that no longer happen."
+    "explanation": "<Used to> + forma base describe hábitos pasados que ya no ocurren."
   },
   {
     "question": "Which sentence uses 'used to' correctly?",
@@ -19,29 +19,29 @@
       "She used to living in Paris"
     ],
     "correct": "She used to live in Paris",
-    "explanation": "<Used to> + base form for past states: <She used to live in Paris>."
+    "explanation": "<Used to> + forma base para estados pasados: <She used to live in Paris>."
   },
   {
     "question": "Complete the third conditional: 'If she had studied harder, she _____ the exam.'",
     "options": [
-      "would have passed",
       "would pass",
       "had passed",
+      "would have passed",
       "will have passed"
     ],
     "correct": "would have passed",
-    "explanation": "Third conditional: <If> + past perfect, <would have> + past participle."
+    "explanation": "Tercer condicional: <If> + pasado perfecto, <would have> + participio pasado."
   },
   {
     "question": "Which sentence with 'wish' is correct?",
     "options": [
       "I wish I am flying",
-      "I wish I could fly",
       "I wish I will fly",
-      "I wish I can fly"
+      "I wish I can fly",
+      "I wish I could fly"
     ],
     "correct": "I wish I could fly",
-    "explanation": "<Wish> + past simple/could for unreal present situations: <I wish I could fly>."
+    "explanation": "<Wish> + pasado simple/could para situaciones presentes irreales: <I wish I could fly>."
   },
   {
     "question": "Complete: 'If only I _____ more time to prepare.'",
@@ -52,18 +52,18 @@
       "have"
     ],
     "correct": "had",
-    "explanation": "<If only> + past simple expresses regret about the present: <If only I had>."
+    "explanation": "<If only> + pasado simple expresa arrepentimiento sobre el presente: <If only I had>."
   },
   {
     "question": "Which passive construction is correct? 'The report is believed _____ accurate.'",
     "options": [
-      "to be",
       "is",
+      "to be",
       "was",
       "being"
     ],
     "correct": "to be",
-    "explanation": "Impersonal passive: subject + <is believed to be> + complement."
+    "explanation": "Voz pasiva impersonal: sujeto + <is believed to be> + complemento."
   },
   {
     "question": "Choose the correct causative: 'She _____ her hair cut yesterday.'",
@@ -74,18 +74,18 @@
       "got to"
     ],
     "correct": "had",
-    "explanation": "Causative <have>: <had> + object + past participle: <had her hair cut>."
+    "explanation": "Causativo con <have>: <had> + objeto + participio pasado: <had her hair cut>."
   },
   {
     "question": "Which causative sentence is correct?",
     "options": [
       "I got my car repair",
-      "I got my car repaired",
       "I got repaired my car",
-      "I got my car repairing"
+      "I got my car repairing",
+      "I got my car repaired"
     ],
     "correct": "I got my car repaired",
-    "explanation": "Causative <get>: <got> + object + past participle: <got my car repaired>."
+    "explanation": "Causativo con <get>: <got> + objeto + participio pasado: <got my car repaired>."
   },
   {
     "question": "Choose the correct connector: 'She passed the exam _____ she hadn't studied much.'",
@@ -96,29 +96,29 @@
       "so"
     ],
     "correct": "although",
-    "explanation": "<Although> introduces a contrast: she passed <although> she hadn't studied."
+    "explanation": "<Although> introduce un contraste: ella aprobó <although> no había estudiado mucho."
   },
   {
     "question": "Which connector is correct: '_____ the rain, the match continued.'",
     "options": [
       "However",
-      "Although",
       "Despite",
+      "Although",
       "Because of"
     ],
     "correct": "Despite",
-    "explanation": "<Despite> + noun phrase: <Despite the rain> (no clause follows)."
+    "explanation": "<Despite> + frase nominal: <Despite the rain> (no le sigue una cláusula)."
   },
   {
     "question": "Choose the correct meaning of <make a commitment>:",
     "options": [
       "to change your mind",
       "to break a promise",
-      "to avoid responsibility",
-      "to dedicate yourself to something"
+      "to dedicate yourself to something",
+      "to avoid responsibility"
     ],
     "correct": "to dedicate yourself to something",
-    "explanation": "The collocation <make a commitment> means to pledge or dedicate yourself."
+    "explanation": "La colocación <make a commitment> significa comprometerte o dedicarte a algo."
   },
   {
     "question": "Which collocation is correct?",
@@ -129,7 +129,7 @@
       "make a mistake"
     ],
     "correct": "make a mistake",
-    "explanation": "The correct collocation is <make a mistake>, not <do a mistake>."
+    "explanation": "La colocación correcta es <make a mistake>, no <do a mistake>."
   },
   {
     "question": "What does 'sustainable' mean in an IELTS context?",
@@ -140,29 +140,29 @@
       "modern"
     ],
     "correct": "able to be maintained over time",
-    "explanation": "<Sustainable> means able to continue or be maintained at a certain level over time."
+    "explanation": "<Sustainable> significa que puede continuar o mantenerse en un cierto nivel a lo largo del tiempo."
   },
   {
     "question": "What does 'infrastructure' refer to?",
     "options": [
       "a government policy",
-      "a type of building",
       "basic physical systems of a society",
+      "a type of building",
       "a financial plan"
     ],
     "correct": "basic physical systems of a society",
-    "explanation": "<Infrastructure> refers to the basic systems like roads, bridges, and utilities."
+    "explanation": "<Infrastructure> se refiere a los sistemas básicos como carreteras, puentes y servicios públicos."
   },
   {
     "question": "What does the phrasal verb 'turn down' mean?",
     "options": [
       "to turn around",
-      "to reject or refuse",
       "to increase volume",
+      "to reject or refuse",
       "to arrive"
     ],
     "correct": "to reject or refuse",
-    "explanation": "<Turn down> means to reject an offer or request."
+    "explanation": "<Turn down> significa rechazar una oferta o petición."
   },
   {
     "question": "<iron out> — select the right definition:",
@@ -173,29 +173,29 @@
       "to resolve problems or difficulties"
     ],
     "correct": "to resolve problems or difficulties",
-    "explanation": "<Iron out> means to resolve or eliminate problems and difficulties."
+    "explanation": "<Iron out> significa resolver o eliminar problemas y dificultades."
   },
   {
     "question": "What is the meaning of <phase out>?",
     "options": [
-      "to introduce suddenly",
       "to gradually stop using something",
+      "to introduce suddenly",
       "to speed up",
       "to start a new phase"
     ],
     "correct": "to gradually stop using something",
-    "explanation": "<Phase out> means to gradually discontinue or withdraw something."
+    "explanation": "<Phase out> significa discontinuar o retirar algo gradualmente."
   },
   {
     "question": "Which option describes <come across>?",
     "options": [
       "to be angry",
-      "to communicate clearly",
       "to find or encounter by chance",
+      "to communicate clearly",
       "to cross a road"
     ],
     "correct": "to find or encounter by chance",
-    "explanation": "<Come across> means to find something or someone unexpectedly."
+    "explanation": "<Come across> significa encontrar algo o a alguien de manera inesperada."
   },
   {
     "question": "Pick the best definition for <rule out>:",
@@ -206,117 +206,117 @@
       "to govern"
     ],
     "correct": "to exclude or eliminate as a possibility",
-    "explanation": "<Rule out> means to exclude something as a possibility."
+    "explanation": "<Rule out> significa excluir algo como posibilidad."
   },
   {
     "question": "How would you define <fall through>?",
     "options": [
-      "to fail to happen as planned",
       "to fall down",
       "to succeed unexpectedly",
-      "to pass through"
+      "to pass through",
+      "to fail to happen as planned"
     ],
     "correct": "to fail to happen as planned",
-    "explanation": "<Fall through> means a plan or arrangement fails to happen."
+    "explanation": "<Fall through> significa que un plan o acuerdo no llega a realizarse."
   },
   {
     "question": "What does the idiom 'the elephant in the room' mean?",
     "options": [
+      "an obvious problem nobody wants to discuss",
       "a large animal",
       "a big room",
-      "a surprise guest",
-      "an obvious problem nobody wants to discuss"
+      "a surprise guest"
     ],
     "correct": "an obvious problem nobody wants to discuss",
-    "explanation": "<The elephant in the room> is an obvious problem that everyone ignores."
+    "explanation": "<The elephant in the room> es un problema obvio que todos ignoran."
   },
   {
     "question": "<barking up the wrong tree> is closest in meaning to:",
     "options": [
       "a dog making noise",
-      "being lost in a forest",
       "pursuing a mistaken course of action",
+      "being lost in a forest",
       "climbing a tree"
     ],
     "correct": "pursuing a mistaken course of action",
-    "explanation": "<Barking up the wrong tree> means pursuing a wrong or misguided approach."
+    "explanation": "<Barking up the wrong tree> significa seguir un enfoque equivocado o mal dirigido."
   },
   {
     "question": "Select what <the ball is in your court> means:",
     "options": [
       "the situation is unfair",
-      "it's your turn to make a decision",
       "playing tennis",
+      "it's your turn to make a decision",
       "you lost the game"
     ],
     "correct": "it's your turn to make a decision",
-    "explanation": "<The ball is in your court> means it's your responsibility to act next."
+    "explanation": "<The ball is in your court> significa que ahora es tu responsabilidad actuar."
   },
   {
     "question": "The term <sit on the fence> refers to:",
     "options": [
       "to be comfortable",
-      "to avoid making a decision",
       "to rest outdoors",
-      "to watch a game"
+      "to watch a game",
+      "to avoid making a decision"
     ],
     "correct": "to avoid making a decision",
-    "explanation": "<Sit on the fence> means to remain neutral and not take sides."
+    "explanation": "<Sit on the fence> significa mantenerse neutral y no tomar partido."
   },
   {
     "question": "Which definition best matches <cut corners>?",
     "options": [
+      "to do something in the cheapest or easiest way",
       "to save time wisely",
       "to use scissors",
-      "to do something in the cheapest or easiest way",
       "to drive carefully"
     ],
     "correct": "to do something in the cheapest or easiest way",
-    "explanation": "<Cut corners> means to do something poorly to save time or money."
+    "explanation": "<Cut corners> significa hacer algo de forma descuidada para ahorrar tiempo o dinero."
   },
   {
     "question": "Transform to a cleft sentence: 'John broke the window.'",
     "options": [
       "The window was broken it was John",
-      "Who broke the window was John",
       "It was John who broke the window",
+      "Who broke the window was John",
       "John it was who broke the window"
     ],
     "correct": "It was John who broke the window",
-    "explanation": "Cleft sentence: <It was> + focus + <who/that>: <It was John who broke the window>."
+    "explanation": "Oración hendida (cleft sentence): <It was> + foco + <who/that>: <It was John who broke the window>."
   },
   {
     "question": "Transform using 'wish': 'I don't speak Japanese.'",
     "options": [
-      "I wish I spoke Japanese",
       "I wish I will speak Japanese",
       "I wish I speak Japanese",
+      "I wish I spoke Japanese",
       "I wish I speaking Japanese"
     ],
     "correct": "I wish I spoke Japanese",
-    "explanation": "<Wish> + past simple for unreal present: <I wish I spoke Japanese>."
+    "explanation": "<Wish> + pasado simple para el presente irreal: <I wish I spoke Japanese>."
   },
   {
     "question": "Transform to third conditional: 'I didn't bring an umbrella. I got wet.'",
     "options": [
-      "If I had brought an umbrella, I wouldn't have got wet",
       "If I would bring an umbrella, I didn't get wet",
       "If I bring an umbrella, I won't get wet",
-      "If I brought an umbrella, I wouldn't get wet"
+      "If I brought an umbrella, I wouldn't get wet",
+      "If I had brought an umbrella, I wouldn't have got wet"
     ],
     "correct": "If I had brought an umbrella, I wouldn't have got wet",
-    "explanation": "Third conditional: <If> + past perfect, <would have> + past participle."
+    "explanation": "Tercer condicional: <If> + pasado perfecto, <would have> + participio pasado."
   },
   {
     "question": "Transform to passive with reporting verb: 'People say he is a genius.'",
     "options": [
+      "He is said to be a genius",
       "He is saying to be a genius",
       "He said to be a genius",
-      "He was said being a genius",
-      "He is said to be a genius"
+      "He was said being a genius"
     ],
     "correct": "He is said to be a genius",
-    "explanation": "Impersonal passive: <He is said to be> a genius."
+    "explanation": "Voz pasiva impersonal: <He is said to be> un genio."
   },
   {
     "question": "Transform using causative: 'A mechanic fixed my car.'",
@@ -327,62 +327,62 @@
       "My car had fixed"
     ],
     "correct": "I had my car fixed",
-    "explanation": "Causative: <had> + object + past participle: <I had my car fixed>."
+    "explanation": "Causativo: <had> + objeto + participio pasado: <I had my car fixed>."
   },
   {
     "question": "What is the adjective form of 'success' with a suffix?",
     "options": [
-      "successful",
       "succeed",
       "succession",
+      "successful",
       "successive"
     ],
     "correct": "successful",
-    "explanation": "Adding <-ful> to <success> forms the adjective <successful>."
+    "explanation": "Agregar <-ful> a <success> forma el adjetivo <successful>."
   },
   {
     "question": "What is the negative form of 'possible' using a prefix?",
     "options": [
-      "impossible",
       "inpossible",
       "dispossible",
-      "unpossible"
+      "unpossible",
+      "impossible"
     ],
     "correct": "impossible",
-    "explanation": "The prefix <im-> before <p> and <m>: <possible> → <impossible>."
+    "explanation": "El prefijo <im-> se usa antes de <p> y <m>: <possible> → <impossible>."
   },
   {
     "question": "Which prefix makes 'legal' negative?",
     "options": [
+      "il-",
       "dis-",
       "un-",
-      "in-",
-      "il-"
+      "in-"
     ],
     "correct": "il-",
-    "explanation": "Before <l>, use the prefix <il->: <legal> → <illegal>."
+    "explanation": "Antes de <l>, se usa el prefijo <il->: <legal> → <illegal>."
   },
   {
     "question": "Form a noun from 'responsible' using a suffix.",
     "options": [
       "responsiblement",
+      "responsibility",
       "responsibleness",
-      "responsibilize",
-      "responsibility"
+      "responsibilize"
     ],
     "correct": "responsibility",
-    "explanation": "Change <-ble> to <-bility>: <responsible> → <responsibility>."
+    "explanation": "Cambia <-ble> por <-bility>: <responsible> → <responsibility>."
   },
   {
     "question": "Find the error: 'If I would have known, I would have helped.'",
     "options": [
       "If I have known, I would have helped",
-      "If I had known, I would have helped",
       "No error",
+      "If I had known, I would have helped",
       "If I knew, I would have helped"
     ],
     "correct": "If I had known, I would have helped",
-    "explanation": "Third conditional: use <If I had known>, not <If I would have known>."
+    "explanation": "Tercer condicional: usa <If I had known>, no <If I would have known>."
   },
   {
     "question": "Find the error: 'Despite of the bad weather, we went out.'",
@@ -393,7 +393,7 @@
       "Despite the bad weather, we went out"
     ],
     "correct": "Despite the bad weather, we went out",
-    "explanation": "<Despite> is used without <of>: <Despite the bad weather>."
+    "explanation": "<Despite> se usa sin <of>: <Despite the bad weather>."
   },
   {
     "question": "Find the error: 'She suggested him to apply for the job.'",
@@ -404,18 +404,18 @@
       "No error"
     ],
     "correct": "She suggested that he apply for the job",
-    "explanation": "<Suggest> takes <that> + subject + base form: <suggested that he apply>."
+    "explanation": "<Suggest> va seguido de <that> + sujeto + forma base: <suggested that he apply>."
   },
   {
     "question": "Find the error: 'I wish I can speak more languages.'",
     "options": [
       "I wish I will speak more languages",
+      "I wish I could speak more languages",
       "No error",
-      "I wish I am speaking more languages",
-      "I wish I could speak more languages"
+      "I wish I am speaking more languages"
     ],
     "correct": "I wish I could speak more languages",
-    "explanation": "After <wish>, use past forms: <I wish I could speak>, not <can speak>."
+    "explanation": "Después de <wish>, usa formas de pasado: <I wish I could speak>, no <can speak>."
   },
   {
     "question": "Choose the correct meaning of <take for granted>:",
@@ -426,17 +426,17 @@
       "to give a grant"
     ],
     "correct": "to fail to appreciate something",
-    "explanation": "<Take for granted> means to not appreciate the value of something or someone."
+    "explanation": "<Take for granted> significa no apreciar el valor de algo o de alguien."
   },
   {
     "question": "What does the idiom 'miss the boat' mean?",
     "options": [
       "to cancel a trip",
       "to arrive late at a port",
-      "to miss an opportunity",
-      "to feel seasick"
+      "to feel seasick",
+      "to miss an opportunity"
     ],
     "correct": "to miss an opportunity",
-    "explanation": "<Miss the boat> means to be too slow to take advantage of an opportunity."
+    "explanation": "<Miss the boat> significa ser demasiado lento para aprovechar una oportunidad."
   }
 ]

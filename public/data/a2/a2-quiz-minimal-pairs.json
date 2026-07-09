@@ -1,92 +1,222 @@
 [
   {
     "question": "Which word has the vowel sound /ɪ/ (short i)?",
-    "options": ["ship", "sheep", "shape", "shop"],
+    "options": [
+      "ship",
+      "sheep",
+      "shape",
+      "shop"
+    ],
     "correct": 0,
-    "explanation": "'Ship' /ʃɪp/ has the short /ɪ/. 'Sheep' /ʃiːp/ has the long /iː/."
+    "explanation": "'Ship' /ʃɪp/ tiene la vocal corta /ɪ/. 'Sheep' /ʃiːp/ tiene la vocal larga /iː/."
   },
   {
     "question": "Which word has the vowel sound /iː/ (long ee)?",
-    "options": ["sit", "seat", "set", "sat"],
+    "options": [
+      "sit",
+      "seat",
+      "set",
+      "sat"
+    ],
     "correct": 1,
-    "explanation": "'Seat' /siːt/ has the long /iː/. 'Sit' /sɪt/ has the short /ɪ/."
+    "explanation": "'Seat' /siːt/ tiene la vocal larga /iː/. 'Sit' /sɪt/ tiene la vocal corta /ɪ/."
   },
   {
     "question": "Which word rhymes with 'cat'?",
-    "options": ["cut", "bat", "cot", "kit"],
-    "correct": 1,
-    "explanation": "'Bat' /bæt/ rhymes with 'cat' /kæt/ — both have /æ/."
+    "options": [
+      "cut",
+      "cot",
+      "bat",
+      "kit"
+    ],
+    "correct": 2,
+    "explanation": "'Bat' /bæt/ rima con 'cat' /kæt/ — ambas tienen /æ/."
   },
   {
     "question": "Which pair are minimal pairs (differ by one sound)?",
-    "options": ["bit / beat", "cat / dog", "run / fast", "big / small"],
-    "correct": 0,
-    "explanation": "'Bit' /bɪt/ and 'beat' /biːt/ differ only in the vowel: /ɪ/ vs /iː/."
+    "options": [
+      "cat / dog",
+      "run / fast",
+      "big / small",
+      "bit / beat"
+    ],
+    "correct": 3,
+    "explanation": "'Bit' /bɪt/ y 'beat' /biːt/ se diferencian solo en la vocal: /ɪ/ frente a /iː/."
   },
   {
     "question": "Which word has /θ/ (voiceless 'th' as in 'think')?",
-    "options": ["the", "three", "there", "then"],
-    "correct": 1,
-    "explanation": "'Three' /θriː/ has voiceless /θ/. The others have voiced /ð/."
+    "options": [
+      "three",
+      "the",
+      "there",
+      "then"
+    ],
+    "correct": 0,
+    "explanation": "'Three' /θriː/ tiene el sonido sordo /θ/. Las demás tienen el sonido sonoro /ð/."
   },
   {
     "question": "Which word has the sound /æ/ (as in 'cat')?",
-    "options": ["cup", "cop", "cap", "cape"],
-    "correct": 2,
-    "explanation": "'Cap' /kæp/ has /æ/. 'Cup' /kʌp/, 'cop' /kɒp/, 'cape' /keɪp/."
+    "options": [
+      "cup",
+      "cap",
+      "cop",
+      "cape"
+    ],
+    "correct": 1,
+    "explanation": "'Cap' /kæp/ tiene /æ/. 'Cup' /kʌp/, 'cop' /kɒp/, 'cape' /keɪp/."
   },
   {
     "question": "Which word ends with a voiced consonant?",
-    "options": ["back", "bag", "bat", "bath"],
-    "correct": 1,
-    "explanation": "'Bag' /bæɡ/ ends with voiced /ɡ/. The others end with voiceless sounds."
+    "options": [
+      "back",
+      "bat",
+      "bag",
+      "bath"
+    ],
+    "correct": 2,
+    "explanation": "'Bag' /bæɡ/ termina con el sonido sonoro /ɡ/. Las demás terminan con sonidos sordos."
   },
   {
     "question": "Which pair differ only in the first consonant?",
-    "options": ["pin / bin", "pin / pan", "bin / bean", "fan / fin"],
-    "correct": 0,
-    "explanation": "'Pin' /pɪn/ vs 'bin' /bɪn/ — only /p/ (voiceless) vs /b/ (voiced) differs."
+    "options": [
+      "pin / pan",
+      "bin / bean",
+      "fan / fin",
+      "pin / bin"
+    ],
+    "correct": 3,
+    "explanation": "'Pin' /pɪn/ frente a 'bin' /bɪn/ — solo se diferencian en /p/ (sordo) frente a /b/ (sonoro)."
   },
   {
     "question": "Which word has /ʌ/ (as in 'cup')?",
-    "options": ["look", "luck", "lake", "lick"],
-    "correct": 1,
-    "explanation": "'Luck' /lʌk/ has /ʌ/. 'Look' /lʊk/ has /ʊ/."
+    "options": [
+      "luck",
+      "look",
+      "lake",
+      "lick"
+    ],
+    "correct": 0,
+    "explanation": "'Luck' /lʌk/ tiene /ʌ/. 'Look' /lʊk/ tiene /ʊ/."
   },
   {
     "question": "Which word has /ɒ/ (short 'o' as in 'hot')?",
-    "options": ["hope", "hop", "hoop", "heap"],
+    "options": [
+      "hope",
+      "hop",
+      "hoop",
+      "heap"
+    ],
     "correct": 1,
-    "explanation": "'Hop' /hɒp/ has short /ɒ/. 'Hope' /həʊp/ has the diphthong /əʊ/."
+    "explanation": "'Hop' /hɒp/ tiene la vocal corta /ɒ/. 'Hope' /həʊp/ tiene el diptongo /əʊ/."
   },
   {
     "question": "Which pair shows /s/ vs /z/?",
-    "options": ["rice / rise", "race / lace", "mice / nice", "price / twice"],
-    "correct": 0,
-    "explanation": "'Rice' /raɪs/ ends in /s/, 'rise' /raɪz/ ends in /z/."
+    "options": [
+      "race / lace",
+      "mice / nice",
+      "rice / rise",
+      "price / twice"
+    ],
+    "correct": 2,
+    "explanation": "'Rice' /raɪs/ termina en /s/, 'rise' /raɪz/ termina en /z/."
   },
   {
     "question": "Which word has a silent letter?",
-    "options": ["lamb", "lamp", "land", "lend"],
-    "correct": 0,
-    "explanation": "'Lamb' /læm/ — the 'b' is silent. All other letters are pronounced."
+    "options": [
+      "lamp",
+      "land",
+      "lend",
+      "lamb"
+    ],
+    "correct": 3,
+    "explanation": "'Lamb' /læm/ — la 'b' es muda. Todas las demás letras se pronuncian."
   },
   {
     "question": "Which pair differ in vowel length?",
-    "options": ["ship / sheep", "cat / cut", "bin / ban", "dog / dig"],
+    "options": [
+      "ship / sheep",
+      "cat / cut",
+      "bin / ban",
+      "dog / dig"
+    ],
     "correct": 0,
-    "explanation": "'Ship' /ɪ/ (short) vs 'sheep' /iː/ (long) — same quality, different length."
+    "explanation": "'Ship' /ɪ/ (corta) frente a 'sheep' /iː/ (larga) — mismo timbre, distinta duración."
   },
   {
     "question": "Which word has the diphthong /aɪ/ (as in 'my')?",
-    "options": ["bit", "bet", "bite", "but"],
-    "correct": 2,
-    "explanation": "'Bite' /baɪt/ has the diphthong /aɪ/. 'Bit' /bɪt/ has short /ɪ/."
+    "options": [
+      "bit",
+      "bite",
+      "bet",
+      "but"
+    ],
+    "correct": 1,
+    "explanation": "'Bite' /baɪt/ tiene el diptongo /aɪ/. 'Bit' /bɪt/ tiene la vocal corta /ɪ/."
   },
   {
     "question": "Which word starts with /w/?",
-    "options": ["write", "one", "hour", "honest"],
+    "options": [
+      "write",
+      "hour",
+      "one",
+      "honest"
+    ],
+    "correct": 2,
+    "explanation": "'One' /wʌn/ empieza con /w/ a pesar de su ortografía. 'Write' empieza con /r/ (la w es muda)."
+  },
+  {
+    "question": "Which word has the vowel sound /e/ (as in 'bed')?",
+    "options": [
+      "pan",
+      "pen",
+      "pin",
+      "pun"
+    ],
     "correct": 1,
-    "explanation": "'One' /wʌn/ starts with /w/ despite spelling. 'Write' starts with /r/ (w is silent)."
+    "explanation": "'Pen' /pen/ tiene la vocal /e/. 'Pan' /pæn/ tiene /æ/."
+  },
+  {
+    "question": "Which pair shows /f/ vs /v/?",
+    "options": [
+      "fan / van",
+      "fine / vine",
+      "fault / vault",
+      "safe / save"
+    ],
+    "correct": 0,
+    "explanation": "'Fan' /fæn/ empieza con /f/ (sorda), 'van' /væn/ empieza con /v/ (sonora)."
+  },
+  {
+    "question": "Which word has the sound /tʃ/ (as in 'chair')?",
+    "options": [
+      "share",
+      "chair",
+      "care",
+      "hair"
+    ],
+    "correct": 1,
+    "explanation": "'Chair' /tʃeər/ tiene el sonido /tʃ/. Las demás empiezan con otros sonidos."
+  },
+  {
+    "question": "Which word has the diphthong /aʊ/ (as in 'how')?",
+    "options": [
+      "hoe",
+      "who",
+      "cow",
+      "coo"
+    ],
+    "correct": 2,
+    "explanation": "'Cow' /kaʊ/ tiene el diptongo /aʊ/."
+  },
+  {
+    "question": "Which pair differ only in the final consonant?",
+    "options": [
+      "cat / cap",
+      "cat / bat",
+      "run / ran",
+      "sit / sat"
+    ],
+    "correct": 0,
+    "explanation": "'Cat' /kæt/ y 'cap' /kæp/ se diferencian solo en la consonante final: /t/ frente a /p/."
   }
 ]

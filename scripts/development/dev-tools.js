@@ -209,6 +209,7 @@ const workflows = {
       ]},
       // Phase 2: tests alone (CPU-heavy, needs full cores)
       { type: 'command', cmd: 'npm test', desc: 'Tests' },
+      { type: 'command', cmd: 'npm run validate:content:errors', desc: 'Content validation' },
       { type: 'command', cmd: 'npx vite build --mode production --config config/vite.config.ts', desc: 'Build application (vite only)' },
       { type: 'command', cmd: 'node scripts/git/smart-commit.js --stage-all --push --auto --allow-empty', desc: 'Post-build commit & push' },
     ]

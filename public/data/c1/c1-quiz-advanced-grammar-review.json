@@ -8,40 +8,40 @@
       "Barely"
     ],
     "correct": "No sooner",
-    "explanation": "<No sooner> + <had> + subject + past participle + <when>: <No sooner had I arrived when...>."
+    "explanation": "<No sooner> + <had> + sujeto + participio pasado + <when>: <No sooner had I arrived when...>."
   },
   {
     "question": "Which inverted sentence is correct?",
     "options": [
       "Never I have seen such beauty",
-      "Never I seen have such beauty",
       "Never have I seen such beauty",
+      "Never I seen have such beauty",
       "Have never I seen such beauty"
     ],
     "correct": "Never have I seen such beauty",
-    "explanation": "Negative adverb inversion: <Never> + auxiliary + subject: <Never have I seen>."
+    "explanation": "Inversión con adverbio negativo: <Never> + auxiliar + sujeto: <Never have I seen>."
   },
   {
     "question": "Choose the correct subjunctive: 'The committee recommended that he _____ the proposal.'",
     "options": [
       "reviewed",
-      "review",
       "reviewing",
+      "review",
       "reviews"
     ],
     "correct": "review",
-    "explanation": "Subjunctive after <recommend>: base form without -s: <that he review>."
+    "explanation": "Subjuntivo después de <recommend>: forma base sin -s: <that he review>."
   },
   {
     "question": "Which subjunctive form is correct? 'It is essential that she _____ on time.'",
     "options": [
       "were",
-      "be",
       "is",
-      "was"
+      "was",
+      "be"
     ],
     "correct": "be",
-    "explanation": "Subjunctive after <it is essential that>: use <be>: <that she be on time>."
+    "explanation": "Subjuntivo después de <it is essential that>: se usa <be>: <that she be on time>."
   },
   {
     "question": "Choose the correct participle clause: '_____ the door, she noticed a letter on the floor.'",
@@ -52,29 +52,29 @@
       "Having open"
     ],
     "correct": "Opening",
-    "explanation": "Present participle clause for simultaneous actions: <Opening the door, she noticed...>."
+    "explanation": "Cláusula de participio presente para acciones simultáneas: <Opening the door, she noticed...>."
   },
   {
     "question": "Which participle clause is correct?",
     "options": [
-      "Having finished the report, he went home",
       "To have finished the report, he went home",
+      "Having finished the report, he went home",
       "Finished the report, he went home",
       "Having finish the report, he went home"
     ],
     "correct": "Having finished the report, he went home",
-    "explanation": "Perfect participle: <Having> + past participle for completed prior action."
+    "explanation": "Participio perfecto: <Having> + participio pasado para una acción previa completada."
   },
   {
     "question": "Choose the correct complex preposition: 'The decision was made _____ the manager's wishes.'",
     "options": [
       "in terms",
-      "contrary to",
       "in spite",
+      "contrary to",
       "according"
     ],
     "correct": "contrary to",
-    "explanation": "<Contrary to> means in opposition to: <contrary to the manager's wishes>."
+    "explanation": "<Contrary to> significa en oposición a: <contrary to the manager's wishes>."
   },
   {
     "question": "Complete: '_____ further notice, the office will remain closed.'",
@@ -85,18 +85,18 @@
       "Until"
     ],
     "correct": "Until",
-    "explanation": "<Until further notice> means the situation continues indefinitely."
+    "explanation": "<Until further notice> significa que la situación continúa indefinidamente."
   },
   {
     "question": "Which advanced conditional is correct?",
     "options": [
+      "Were it not for his help, I would have failed",
       "Not were it for his help, I would have failed",
       "If it not were for his help, I would have failed",
-      "Were it not for his help, I would have failed",
       "Was it not for his help, I would have failed"
     ],
     "correct": "Were it not for his help, I would have failed",
-    "explanation": "Formal inverted conditional: <Were it not for> replaces <If it were not for>."
+    "explanation": "Condicional invertida formal: <Were it not for> reemplaza a <If it were not for>."
   },
   {
     "question": "Choose the correct form: 'Had I known about the delay, I _____ earlier.'",
@@ -107,51 +107,51 @@
       "had left"
     ],
     "correct": "would have left",
-    "explanation": "Inverted third conditional: <Had I known>, <I would have left>."
+    "explanation": "Tercera condicional invertida: <Had I known>, <I would have left>."
   },
   {
     "question": "What does 'benchmark' mean in a business context?",
     "options": [
       "a park bench",
       "a financial penalty",
-      "a type of meeting",
-      "a standard for comparison"
+      "a standard for comparison",
+      "a type of meeting"
     ],
     "correct": "a standard for comparison",
-    "explanation": "A <benchmark> is a standard or point of reference for measuring performance."
+    "explanation": "Un <benchmark> es un estándar o punto de referencia para medir el rendimiento."
   },
   {
     "question": "Choose the correct meaning of <stakeholder>:",
     "options": [
       "a shareholder only",
       "a company director",
-      "a person with an interest in a project or company",
-      "a person who holds a steak"
+      "a person who holds a steak",
+      "a person with an interest in a project or company"
     ],
     "correct": "a person with an interest in a project or company",
-    "explanation": "A <stakeholder> is anyone with an interest or concern in a business or project."
+    "explanation": "Un <stakeholder> es cualquier persona con interés o participación en un negocio o proyecto."
   },
   {
     "question": "What does 'carbon footprint' refer to?",
     "options": [
+      "total greenhouse gas emissions caused by an individual or organization",
       "a type of shoe",
       "a fossil discovery",
-      "total greenhouse gas emissions caused by an individual or organization",
       "a measurement of walking distance"
     ],
     "correct": "total greenhouse gas emissions caused by an individual or organization",
-    "explanation": "<Carbon footprint> refers to the total amount of greenhouse gases produced."
+    "explanation": "<Carbon footprint> se refiere a la cantidad total de gases de efecto invernadero producidos."
   },
   {
     "question": "<biodiversity> — select the right definition:",
     "options": [
       "biological research",
+      "the variety of life in a particular habitat",
       "a diverse team",
-      "a type of energy",
-      "the variety of life in a particular habitat"
+      "a type of energy"
     ],
     "correct": "the variety of life in a particular habitat",
-    "explanation": "<Biodiversity> is the variety of plant and animal life in a particular environment."
+    "explanation": "<Biodiversity> es la variedad de vida vegetal y animal en un entorno determinado."
   },
   {
     "question": "What is the meaning of <mortgage>?",
@@ -162,18 +162,18 @@
       "a type of insurance"
     ],
     "correct": "a loan to buy property",
-    "explanation": "A <mortgage> is a loan used to purchase real estate, repaid over time."
+    "explanation": "Una <mortgage> es un préstamo usado para comprar bienes raíces, que se paga a lo largo del tiempo."
   },
   {
     "question": "What does 'renovation' mean in a home context?",
     "options": [
       "moving to a new house",
-      "restoring or improving a building",
       "decorating with flowers",
-      "demolition"
+      "demolition",
+      "restoring or improving a building"
     ],
     "correct": "restoring or improving a building",
-    "explanation": "<Renovation> means restoring or improving a building to good condition."
+    "explanation": "<Renovation> significa restaurar o mejorar un edificio para dejarlo en buen estado."
   },
   {
     "question": "What does the phrasal verb 'bring about' mean?",
@@ -184,7 +184,7 @@
       "to carry something"
     ],
     "correct": "to cause something to happen",
-    "explanation": "<Bring about> means to cause something to happen or to produce change."
+    "explanation": "<Bring about> significa causar que algo suceda o producir un cambio."
   },
   {
     "question": "Which option describes <set aside>?",
@@ -195,7 +195,7 @@
       "to place next to"
     ],
     "correct": "to reserve or save for a particular purpose",
-    "explanation": "<Set aside> means to reserve something for a specific purpose or to disregard."
+    "explanation": "<Set aside> significa reservar algo para un propósito específico o dejarlo de lado."
   },
   {
     "question": "Pick the best definition for <take into account>:",
@@ -206,128 +206,128 @@
       "to open a bank account"
     ],
     "correct": "to consider something when making a decision",
-    "explanation": "<Take into account> means to consider or factor in when making a decision."
+    "explanation": "<Take into account> significa considerar o tener en cuenta algo al tomar una decisión."
   },
   {
     "question": "How would you define <come up against>?",
     "options": [
-      "to face a difficulty or opposition",
       "to stand up",
       "to agree with",
-      "to approach someone"
+      "to approach someone",
+      "to face a difficulty or opposition"
     ],
     "correct": "to face a difficulty or opposition",
-    "explanation": "<Come up against> means to encounter a problem or opposition."
+    "explanation": "<Come up against> significa encontrarse con un problema u oposición."
   },
   {
     "question": "<do away with> is closest in meaning to:",
     "options": [
-      "to clean up",
       "to abolish or get rid of",
+      "to clean up",
       "to finish quickly",
       "to move away"
     ],
     "correct": "to abolish or get rid of",
-    "explanation": "<Do away with> means to abolish, eliminate, or get rid of something."
+    "explanation": "<Do away with> significa abolir, eliminar o deshacerse de algo."
   },
   {
     "question": "Select what <account for> means:",
     "options": [
       "to blame someone",
+      "to explain or represent a proportion of",
       "to open an account",
-      "to count money",
-      "to explain or represent a proportion of"
+      "to count money"
     ],
     "correct": "to explain or represent a proportion of",
-    "explanation": "<Account for> means to explain the reason for something or to constitute a portion."
+    "explanation": "<Account for> significa explicar la razón de algo o constituir una parte de algo."
   },
   {
     "question": "What does the idiom 'burning the candle at both ends' mean?",
     "options": [
       "wasting candles",
       "celebrating too much",
-      "being very bright",
-      "working excessively hard with little rest"
+      "working excessively hard with little rest",
+      "being very bright"
     ],
     "correct": "working excessively hard with little rest",
-    "explanation": "<Burning the candle at both ends> means exhausting yourself by overworking."
+    "explanation": "<Burning the candle at both ends> significa agotarse por trabajar en exceso."
   },
   {
     "question": "The term <hit the nail on the head> refers to:",
     "options": [
       "to make a mistake",
       "to hurt yourself",
-      "to describe something exactly right",
-      "to use a hammer"
+      "to use a hammer",
+      "to describe something exactly right"
     ],
     "correct": "to describe something exactly right",
-    "explanation": "<Hit the nail on the head> means to be exactly right about something."
+    "explanation": "<Hit the nail on the head> significa acertar exactamente en algo."
   },
   {
     "question": "Which definition best matches <open a can of worms>?",
     "options": [
+      "to create a complicated situation",
       "to cook something",
       "to go fishing",
-      "to create a complicated situation",
       "to discover treasure"
     ],
     "correct": "to create a complicated situation",
-    "explanation": "<Open a can of worms> means to create a complex, problematic situation."
+    "explanation": "<Open a can of worms> significa crear una situación compleja y problemática."
   },
   {
     "question": "Choose the correct meaning of <the tip of the iceberg>:",
     "options": [
-      "a small visible part of a much larger problem",
       "a frozen drink",
+      "a small visible part of a much larger problem",
       "a cold place",
       "the top of a mountain"
     ],
     "correct": "a small visible part of a much larger problem",
-    "explanation": "<The tip of the iceberg> means only a small part of a much bigger issue is visible."
+    "explanation": "<The tip of the iceberg> significa que solo se ve una pequeña parte de un problema mucho más grande."
   },
   {
     "question": "<go the extra mile> — select the right definition:",
     "options": [
       "to run further",
       "to exercise more",
-      "to travel far",
-      "to make more effort than expected"
+      "to make more effort than expected",
+      "to travel far"
     ],
     "correct": "to make more effort than expected",
-    "explanation": "<Go the extra mile> means to put in more effort than what is required."
+    "explanation": "<Go the extra mile> significa esforzarse más de lo requerido."
   },
   {
     "question": "Transform using inversion: 'I have never seen such a performance.'",
     "options": [
-      "Never have I seen such a performance",
       "I never have seen such a performance",
       "Never I have seen such a performance",
-      "Have never I seen such a performance"
+      "Have never I seen such a performance",
+      "Never have I seen such a performance"
     ],
     "correct": "Never have I seen such a performance",
-    "explanation": "Inversion with <never>: <Never> + auxiliary + subject: <Never have I seen>."
+    "explanation": "Inversión con <never>: <Never> + auxiliar + sujeto: <Never have I seen>."
   },
   {
     "question": "Transform using inversion: 'She not only sings but also dances.'",
     "options": [
-      "She not only does sing but also dances",
       "Not only does she sing but she also dances",
+      "She not only does sing but also dances",
       "Not only she sings but also dances",
       "Does not only she sing but also dance"
     ],
     "correct": "Not only does she sing but she also dances",
-    "explanation": "Inversion with <not only>: <Not only does she sing> + <but she also dances>."
+    "explanation": "Inversión con <not only>: <Not only does she sing> + <but she also dances>."
   },
   {
     "question": "Transform to participle clause: 'Because he had finished his work, he left early.'",
     "options": [
-      "Having finished his work, he left early",
       "Finished his work, he left early",
+      "Having finished his work, he left early",
       "To finish his work, he left early",
       "Finishing his work, he left early"
     ],
     "correct": "Having finished his work, he left early",
-    "explanation": "Perfect participle for prior completed action: <Having finished his work>."
+    "explanation": "Participio perfecto para una acción previa completada: <Having finished his work>."
   },
   {
     "question": "Transform using subjunctive: 'The doctor insists. The patient must rest.'",
@@ -338,18 +338,18 @@
       "The doctor insists the patient to rest"
     ],
     "correct": "The doctor insists that the patient rest",
-    "explanation": "Subjunctive: <insists that> + subject + base form: <that the patient rest>."
+    "explanation": "Subjuntivo: <insists that> + sujeto + forma base: <that the patient rest>."
   },
   {
     "question": "Transform using inverted conditional: 'If I had been there, I would have helped.'",
     "options": [
-      "Had I been there, I would have helped",
       "Being there, I would have helped",
       "Were I been there, I would have helped",
-      "Should I been there, I would have helped"
+      "Should I been there, I would have helped",
+      "Had I been there, I would have helped"
     ],
     "correct": "Had I been there, I would have helped",
-    "explanation": "Inverted conditional: <Had I been there> replaces <If I had been there>."
+    "explanation": "Condicional invertida: <Had I been there> reemplaza a <If I had been there>."
   },
   {
     "question": "What is the noun form of 'analyze' through multi-step formation?",
@@ -360,18 +360,18 @@
       "analyzation"
     ],
     "correct": "analysis",
-    "explanation": "The noun form of <analyze> is <analysis> (Greek-origin word formation)."
+    "explanation": "La forma sustantiva de <analyze> es <analysis> (formación de palabra de origen griego)."
   },
   {
     "question": "Form an adjective from 'economy' using suffixes.",
     "options": [
-      "economical",
       "economize",
+      "economical",
       "economic",
       "economist"
     ],
     "correct": "economical",
-    "explanation": "<Economy> → <economical> (meaning cost-effective) using the suffix <-ical>."
+    "explanation": "<Economy> → <economical> (que significa rentable/económico) usando el sufijo <-ical>."
   },
   {
     "question": "What is the academic noun form of 'imply'?",
@@ -382,61 +382,61 @@
       "implying"
     ],
     "correct": "implication",
-    "explanation": "The academic noun of <imply> is <implication> using the suffix <-ation>."
+    "explanation": "El sustantivo académico de <imply> es <implication>, usando el sufijo <-ation>."
   },
   {
     "question": "Form a verb from the noun 'priority'.",
     "options": [
-      "prioritize",
       "priorize",
       "priorityze",
-      "priorify"
+      "priorify",
+      "prioritize"
     ],
     "correct": "prioritize",
-    "explanation": "Adding <-ize> to the root: <priority> → <prioritize>."
+    "explanation": "Se agrega <-ize> a la raíz: <priority> → <prioritize>."
   },
   {
     "question": "Find the error: 'Seldom she arrives on time for meetings.'",
     "options": [
+      "Seldom does she arrive on time for meetings",
       "She seldom does arrives on time",
       "No error",
-      "Seldom she does arrive on time",
-      "Seldom does she arrive on time for meetings"
+      "Seldom she does arrive on time"
     ],
     "correct": "Seldom does she arrive on time for meetings",
-    "explanation": "Negative adverb inversion: <Seldom does she arrive>, not <Seldom she arrives>."
+    "explanation": "Inversión con adverbio negativo: <Seldom does she arrive>, no <Seldom she arrives>."
   },
   {
     "question": "Find the error: 'The manager demanded that he leaves immediately.'",
     "options": [
       "No error",
-      "The manager demanded him to leave immediately",
       "The manager demanded that he leave immediately",
+      "The manager demanded him to leave immediately",
       "The manager demanded that he left immediately"
     ],
     "correct": "The manager demanded that he leave immediately",
-    "explanation": "Subjunctive after <demand>: base form <leave>, not <leaves>."
+    "explanation": "Subjuntivo después de <demand>: forma base <leave>, no <leaves>."
   },
   {
     "question": "Find the error: 'Not only he passed the exam but also got the highest score.'",
     "options": [
       "Not only he did pass the exam but also got the highest score",
-      "Not only did he pass the exam but he also got the highest score",
       "He not only passed the exam but also he got the highest score",
+      "Not only did he pass the exam but he also got the highest score",
       "No error"
     ],
     "correct": "Not only did he pass the exam but he also got the highest score",
-    "explanation": "Inversion with <not only>: <Not only did he pass> requires auxiliary before subject."
+    "explanation": "Inversión con <not only>: <Not only did he pass> requiere el auxiliar antes del sujeto."
   },
   {
     "question": "Find the error: 'Having been arrived late, she missed the introduction.'",
     "options": [
       "Had arrived late, she missed the introduction",
       "Being arrived late, she missed the introduction",
-      "Having arrived late, she missed the introduction",
-      "No error"
+      "No error",
+      "Having arrived late, she missed the introduction"
     ],
     "correct": "Having arrived late, she missed the introduction",
-    "explanation": "<Arrive> is intransitive: use <Having arrived>, not <Having been arrived>."
+    "explanation": "<Arrive> es intransitivo: se usa <Having arrived>, no <Having been arrived>."
   }
 ]

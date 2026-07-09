@@ -8,7 +8,7 @@
       "going"
     ],
     "correct": "goes",
-    "explanation": "Third person singular (she/he/it) adds <-s> to the verb: <goes>."
+    "explanation": "La tercera persona del singular (she/he/it) añade <-s> al verbo: <goes>."
   },
   {
     "question": "Which article is correct: '_____ apple'?",
@@ -19,106 +19,106 @@
       "a"
     ],
     "correct": "an",
-    "explanation": "Use <an> before words starting with a vowel sound: <an apple>."
+    "explanation": "Se usa <an> antes de palabras que comienzan con sonido vocálico: <an apple>."
   },
   {
     "question": "What is the plural of 'child'?",
     "options": [
       "childrens",
-      "children",
       "childes",
+      "children",
       "childs"
     ],
     "correct": "children",
-    "explanation": "<Child> has an irregular plural: <children>."
+    "explanation": "<Child> tiene un plural irregular: <children>."
   },
   {
     "question": "Which pronoun replaces 'the book'?",
     "options": [
       "she",
-      "it",
       "they",
-      "he"
+      "he",
+      "it"
     ],
     "correct": "it",
-    "explanation": "Use <it> for objects and things: <the book> → <it>."
+    "explanation": "Se usa <it> para objetos y cosas: <the book> → <it>."
   },
   {
     "question": "What is the past tense of 'eat'?",
     "options": [
+      "ate",
       "eaten",
       "eating",
-      "eated",
-      "ate"
+      "eated"
     ],
     "correct": "ate",
-    "explanation": "<Eat> is irregular: past simple is <ate>."
+    "explanation": "<Eat> es irregular: el pasado simple es <ate>."
   },
   {
     "question": "Which is correct: 'There _____ three cats.'",
     "options": [
-      "are",
       "is",
+      "are",
       "be",
       "am"
     ],
     "correct": "are",
-    "explanation": "Use <are> with plural subjects: <There are three cats>."
+    "explanation": "Se usa <are> con sujetos plurales: <There are three cats>."
   },
   {
     "question": "How do you say 'buenos días' in English?",
     "options": [
       "Good night",
       "Good evening",
-      "Good afternoon",
-      "Good morning"
+      "Good morning",
+      "Good afternoon"
     ],
     "correct": "Good morning",
-    "explanation": "<Good morning> is used as a greeting in the morning hours."
+    "explanation": "<Good morning> se usa como saludo durante las horas de la mañana."
   },
   {
     "question": "Which definition best matches <nephew>?",
     "options": [
-      "son of your brother or sister",
       "uncle",
       "grandfather",
-      "cousin"
+      "cousin",
+      "son of your brother or sister"
     ],
     "correct": "son of your brother or sister",
-    "explanation": "A <nephew> is the son of your brother or sister."
+    "explanation": "Un <nephew> es el hijo de tu hermano o hermana (sobrino)."
   },
   {
     "question": "Which word means a place where you cook?",
     "options": [
-      "bathroom",
       "kitchen",
+      "bathroom",
       "garden",
       "bedroom"
     ],
     "correct": "kitchen",
-    "explanation": "The <kitchen> is the room where you cook food."
+    "explanation": "La <kitchen> es la habitación donde se cocina."
   },
   {
     "question": "What is the comparative form of 'big'?",
     "options": [
-      "bigger",
       "biggest",
+      "bigger",
       "biger",
       "more big"
     ],
     "correct": "bigger",
-    "explanation": "Short adjectives double the final consonant and add <-er>: <bigger>."
+    "explanation": "Los adjetivos cortos duplican la consonante final y añaden <-er>: <bigger>."
   },
   {
     "question": "What does the phrasal verb 'wake up' mean?",
     "options": [
       "to dream",
-      "to stop sleeping",
       "to rest",
+      "to stop sleeping",
       "to go to sleep"
     ],
     "correct": "to stop sleeping",
-    "explanation": "<Wake up> means to stop sleeping and become conscious."
+    "explanation": "<Wake up> significa dejar de dormir y despertarse."
   },
   {
     "question": "Choose the correct meaning of <turn off>:",
@@ -129,29 +129,29 @@
       "to stop a device"
     ],
     "correct": "to stop a device",
-    "explanation": "<Turn off> means to stop a device from working."
+    "explanation": "<Turn off> significa apagar un dispositivo, hacer que deje de funcionar."
   },
   {
     "question": "Which phrasal verb means 'to remove clothing'?",
     "options": [
+      "take off",
       "get up",
       "put on",
-      "take off",
       "sit down"
     ],
     "correct": "take off",
-    "explanation": "<Take off> means to remove clothing or shoes."
+    "explanation": "<Take off> significa quitarse la ropa o los zapatos."
   },
   {
     "question": "<give up> — select the right definition:",
     "options": [
       "to try harder",
+      "to stop doing something",
       "to continue",
-      "to start",
-      "to stop doing something"
+      "to start"
     ],
     "correct": "to stop doing something",
-    "explanation": "<Give up> means to stop doing something, to quit."
+    "explanation": "<Give up> significa dejar de hacer algo, rendirse."
   },
   {
     "question": "Which phrasal verb means 'to search for information'?",
@@ -162,40 +162,40 @@
       "look after"
     ],
     "correct": "look up",
-    "explanation": "<Look up> means to search for information in a dictionary or online."
+    "explanation": "<Look up> significa buscar información en un diccionario o en internet."
   },
   {
     "question": "What is the meaning of <pick up>?",
     "options": [
       "to push",
-      "to lift from the ground",
       "to throw",
-      "to drop"
+      "to drop",
+      "to lift from the ground"
     ],
     "correct": "to lift from the ground",
-    "explanation": "<Pick up> means to lift something from a surface."
+    "explanation": "<Pick up> significa levantar algo de una superficie."
   },
   {
     "question": "Which option describes <run out of>?",
     "options": [
+      "to have none left",
       "to save",
       "to have plenty",
-      "to buy more",
-      "to have none left"
+      "to buy more"
     ],
     "correct": "to have none left",
-    "explanation": "<Run out of> means to have no more of something."
+    "explanation": "<Run out of> significa quedarse sin algo."
   },
   {
     "question": "What does the idiom 'a piece of cake' mean?",
     "options": [
       "a type of dessert",
+      "something very easy",
       "a celebration",
-      "something expensive",
-      "something very easy"
+      "something expensive"
     ],
     "correct": "something very easy",
-    "explanation": "The idiom <a piece of cake> means something is very easy to do."
+    "explanation": "El modismo <a piece of cake> significa que algo es muy fácil de hacer."
   },
   {
     "question": "Pick the best definition for <break a leg>:",
@@ -206,40 +206,40 @@
       "to run fast"
     ],
     "correct": "good luck",
-    "explanation": "<Break a leg> is used to wish someone good luck, especially before a performance."
+    "explanation": "<Break a leg> se usa para desearle buena suerte a alguien, especialmente antes de una actuación."
   },
   {
     "question": "How would you define <under the weather>?",
     "options": [
       "outside in the rain",
-      "feeling sick",
       "confused",
-      "very happy"
+      "very happy",
+      "feeling sick"
     ],
     "correct": "feeling sick",
-    "explanation": "The idiom <under the weather> means feeling ill or unwell."
+    "explanation": "El modismo <under the weather> significa sentirse enfermo o mal."
   },
   {
     "question": "<raining cats and dogs> is closest in meaning to:",
     "options": [
-      "light rain",
       "raining very heavily",
+      "light rain",
       "animals falling",
       "a sunny day"
     ],
     "correct": "raining very heavily",
-    "explanation": "The idiom <raining cats and dogs> means it's raining very heavily."
+    "explanation": "El modismo <raining cats and dogs> significa que está lloviendo muy fuerte."
   },
   {
     "question": "Select what <hit the books> means:",
     "options": [
       "to buy books",
-      "to read for fun",
       "to study hard",
+      "to read for fun",
       "to throw books"
     ],
     "correct": "to study hard",
-    "explanation": "The idiom <hit the books> means to study intensively."
+    "explanation": "El modismo <hit the books> significa estudiar intensamente."
   },
   {
     "question": "The term <let the cat out of the bag> refers to:",
@@ -250,51 +250,51 @@
       "to free an animal"
     ],
     "correct": "to reveal a secret",
-    "explanation": "The idiom <let the cat out of the bag> means to reveal a secret accidentally."
+    "explanation": "El modismo <let the cat out of the bag> significa revelar un secreto por accidente."
   },
   {
     "question": "What suffix do we add to 'teach' to make a person who teaches?",
     "options": [
-      "-er",
       "-ness",
       "-tion",
-      "-ful"
+      "-ful",
+      "-er"
     ],
     "correct": "-er",
-    "explanation": "Adding <-er> to <teach> forms <teacher> — a person who teaches."
+    "explanation": "Al añadir <-er> a <teach> se forma <teacher> — una persona que enseña."
   },
   {
     "question": "What does the prefix 'un-' mean in 'unhappy'?",
     "options": [
+      "not",
       "very",
       "again",
-      "not",
       "before"
     ],
     "correct": "not",
-    "explanation": "The prefix <un-> means 'not': <unhappy> = not happy."
+    "explanation": "El prefijo <un-> significa 'no': <unhappy> = no feliz."
   },
   {
     "question": "Which word means 'full of beauty'?",
     "options": [
-      "beautiful",
       "beautiless",
+      "beautiful",
       "beautyful",
       "beautiness"
     ],
     "correct": "beautiful",
-    "explanation": "Adding <-ful> to <beauty> (changing y to i) forms <beautiful>."
+    "explanation": "Al añadir <-ful> a <beauty> (cambiando la y por i) se forma <beautiful>."
   },
   {
     "question": "What is the negative of 'She likes coffee'?",
     "options": [
       "She not likes coffee",
-      "She doesn't like coffee",
       "She don't like coffee",
+      "She doesn't like coffee",
       "She no like coffee"
     ],
     "correct": "She doesn't like coffee",
-    "explanation": "Negative with she/he: <doesn't> + base form: <She doesn't like>."
+    "explanation": "Negativo con she/he: <doesn't> + forma base: <She doesn't like>."
   },
   {
     "question": "Transform to a question: 'They play football.'",
@@ -305,18 +305,18 @@
       "Do they play football?"
     ],
     "correct": "Do they play football?",
-    "explanation": "Question with they: <Do> + subject + base form: <Do they play?>."
+    "explanation": "Pregunta con they: <Do> + sujeto + forma base: <Do they play?>."
   },
   {
     "question": "What is the past simple of 'go'?",
     "options": [
-      "going",
       "went",
+      "going",
       "goed",
       "gone"
     ],
     "correct": "went",
-    "explanation": "<Go> is irregular: past simple is <went>."
+    "explanation": "<Go> es irregular: el pasado simple es <went>."
   },
   {
     "question": "Transform to past: 'She writes a letter.'",
@@ -327,62 +327,62 @@
       "She writing a letter"
     ],
     "correct": "She wrote a letter",
-    "explanation": "<Write> is irregular: past simple is <wrote>."
+    "explanation": "<Write> es irregular: el pasado simple es <wrote>."
   },
   {
     "question": "Which sentence is correct?",
     "options": [
-      "He doesn't like fish",
       "He not like fish",
       "He doesn't likes fish",
+      "He doesn't like fish",
       "He don't like fish"
     ],
     "correct": "He doesn't like fish",
-    "explanation": "Correct negative: <doesn't> + base form (no -s on the verb)."
+    "explanation": "Negativo correcto: <doesn't> + forma base (sin -s en el verbo)."
   },
   {
     "question": "Find the error: 'She have a cat.'",
     "options": [
       "She haves a cat",
       "She having a cat",
-      "She has a cat",
-      "No error"
+      "No error",
+      "She has a cat"
     ],
     "correct": "She has a cat",
-    "explanation": "Third person singular uses <has>, not <have>: <She has a cat>."
+    "explanation": "La tercera persona del singular usa <has>, no <have>: <She has a cat>."
   },
   {
     "question": "Find the error: 'I goed to the park.'",
     "options": [
+      "I went to the park",
       "No error",
       "I going to the park",
-      "I went to the park",
       "I go to the park"
     ],
     "correct": "I went to the park",
-    "explanation": "<Go> is irregular: past tense is <went>, not <goed>."
+    "explanation": "<Go> es irregular: el pasado es <went>, no <goed>."
   },
   {
     "question": "Which is correct?",
     "options": [
       "a umbrella",
+      "an umbrella",
       "umbrella a",
-      "the umbrella always",
-      "an umbrella"
+      "the umbrella always"
     ],
     "correct": "an umbrella",
-    "explanation": "Use <an> before vowel sounds: <an umbrella>."
+    "explanation": "Se usa <an> antes de sonidos vocálicos: <an umbrella>."
   },
   {
     "question": "What suffix makes 'care' mean 'without care'?",
     "options": [
       "-ness",
       "-er",
-      "-ful",
-      "-less"
+      "-less",
+      "-ful"
     ],
     "correct": "-less",
-    "explanation": "The suffix <-less> means 'without': <careless> = without care."
+    "explanation": "El sufijo <-less> significa 'sin': <careless> = sin cuidado."
   },
   {
     "question": "A person who plays music is a ______.",
@@ -393,7 +393,7 @@
       "musician"
     ],
     "correct": "musician",
-    "explanation": "Adding <-ian> to <music> forms <musician>."
+    "explanation": "Al añadir <-ian> a <music> se forma <musician>."
   },
   {
     "question": "Which word means 'a person who acts'?",
@@ -404,7 +404,7 @@
       "acter"
     ],
     "correct": "actor",
-    "explanation": "Adding <-or> to <act> forms <actor>."
+    "explanation": "Al añadir <-or> a <act> se forma <actor>."
   },
   {
     "question": "Which definition best matches <get up>?",
@@ -415,7 +415,7 @@
       "to sit"
     ],
     "correct": "to rise from bed",
-    "explanation": "<Get up> means to rise from bed, to stand up."
+    "explanation": "<Get up> significa levantarse de la cama, ponerse de pie."
   },
   {
     "question": "Which sentence uses the correct word order?",
@@ -426,17 +426,17 @@
       "Always she is happy"
     ],
     "correct": "She is always happy",
-    "explanation": "Adverbs of frequency go after <be>: <She is always happy>."
+    "explanation": "Los adverbios de frecuencia van después del verbo <be>: <She is always happy>."
   },
   {
     "question": "What time expression means 'the day before today'?",
     "options": [
       "tomorrow",
-      "yesterday",
       "today",
-      "next week"
+      "next week",
+      "yesterday"
     ],
     "correct": "yesterday",
-    "explanation": "<Yesterday> means the day before today."
+    "explanation": "<Yesterday> significa el día antes de hoy (ayer)."
   }
 ]

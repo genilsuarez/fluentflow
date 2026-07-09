@@ -2,91 +2,91 @@
   {
     "sentence": "The findings ______ that further research is warranted.",
     "correct": "suggest",
-    "explanation": "Academic hedging: 'suggest' is softer than 'prove' or 'show'.",
+    "explanation": "Cobertura académica (hedging): 'suggest' es más suave que 'prove' o 'show'.",
     "tip": "Hedging verb (weaker than 'prove')"
   },
   {
     "sentence": "Not until the results were published ______ the implications become clear.",
     "correct": "did",
-    "explanation": "Negative inversion: Not until X + did + subject + base verb.",
+    "explanation": "Inversión negativa: Not until X + did + sujeto + verbo base.",
     "tip": "Inverted auxiliary"
   },
   {
     "sentence": "It is imperative that all participants ______ their data before the deadline.",
     "correct": "submit",
-    "explanation": "Subjunctive: 'It is imperative that' + subject + base verb (no -s).",
+    "explanation": "Subjuntivo: 'It is imperative that' + sujeto + verbo base (sin -s).",
     "tip": "Subjunctive form (base verb)"
   },
   {
     "sentence": "______ the government to implement these policies, significant savings could be made.",
     "correct": "Were",
-    "explanation": "Formal conditional: Were + subject + to + infinitive = If the government implemented.",
+    "explanation": "Condicional formal: Were + sujeto + to + infinitivo = If the government implemented.",
     "tip": "Formal conditional opener"
   },
   {
     "sentence": "Such is the ______ of the issue that a multidisciplinary approach is required.",
     "correct": "complexity",
-    "explanation": "Fronted 'such' + inversion: Such is the X that...",
+    "explanation": "'Such' al inicio + inversión: Such is the X that...",
     "tip": "Noun meaning 'how complex something is'"
   },
   {
     "sentence": "Little ______ the researchers anticipate the magnitude of the response.",
     "correct": "did",
-    "explanation": "'Little' (negative) at the start → auxiliary inversion: Little did + subject.",
+    "explanation": "'Little' (negativo) al inicio → inversión del auxiliar: Little did + sujeto.",
     "tip": "Inverted auxiliary after negative"
   },
   {
     "sentence": "The phenomenon, ______ unexplained, has now been attributed to new factors.",
     "correct": "hitherto",
-    "explanation": "'Hitherto' = until now. Formal adverb modifying 'unexplained'.",
+    "explanation": "'Hitherto' = hasta ahora. Adverbio formal que modifica a 'unexplained'.",
     "tip": "Formal word meaning 'until now'"
   },
   {
     "sentence": "The hypothesis, ______ plausible, lacks empirical support.",
     "correct": "whilst",
-    "explanation": "'Whilst' = while (formal BrE). Introduces concession.",
+    "explanation": "'Whilst' = while (forma formal británica). Introduce una concesión.",
     "tip": "Formal BrE word meaning 'while'"
   },
   {
     "sentence": "Only by adopting a collaborative framework ______ we hope to address these challenges.",
     "correct": "can",
-    "explanation": "'Only by + -ing' → inversion in main clause: can + subject.",
+    "explanation": "'Only by + -ing' → inversión en la cláusula principal: can + sujeto.",
     "tip": "Modal of ability (inverted)"
   },
   {
     "sentence": "The extent ______ which cultural factors influence outcomes remains debatable.",
     "correct": "to",
-    "explanation": "'The extent to which' = formal way of saying 'how much'.",
+    "explanation": "'The extent to which' es la manera formal de decir 'cuánto'.",
     "tip": "Preposition in 'the extent __ which'"
   },
   {
     "sentence": "It would ______ that the correlation is stronger than previously assumed.",
     "correct": "appear",
-    "explanation": "'It would appear that' = tentative reporting (academic hedging).",
+    "explanation": "'It would appear that' = manera tentativa de reportar algo (cobertura académica).",
     "tip": "Hedging verb after 'would'"
   },
   {
     "sentence": "The data, ______ as they are reliable, support the initial hypothesis.",
     "correct": "insofar",
-    "explanation": "'Insofar as' = to the degree that. Formal conditional qualifier.",
+    "explanation": "'Insofar as' = en la medida en que. Calificador condicional formal.",
     "tip": "Formal qualifier meaning 'to the degree that'"
   },
   {
     "sentence": "______ the methodological limitations, the study provides valuable insights.",
     "correct": "Notwithstanding",
-    "explanation": "'Notwithstanding' = despite. Formal academic concession.",
+    "explanation": "'Notwithstanding' = a pesar de. Concesión académica formal.",
     "tip": "Formal word meaning 'despite'"
   },
   {
     "sentence": "The participants were asked to ______ from discussing the experiment.",
     "correct": "refrain",
-    "explanation": "'Refrain from' + -ing = formal way of saying 'not do something'.",
+    "explanation": "'Refrain from' + -ing = manera formal de decir 'no hacer algo'.",
     "tip": "Formal verb meaning 'stop oneself from'"
   },
   {
     "sentence": "Suffice it to ______ that the implications extend far beyond the immediate context.",
     "correct": "say",
-    "explanation": "'Suffice it to say' = it's enough to say. Fixed formal expression.",
+    "explanation": "'Suffice it to say' = es suficiente decir. Expresión formal fija.",
     "tip": "Fixed phrase: suffice it to ___"
   }
 ]

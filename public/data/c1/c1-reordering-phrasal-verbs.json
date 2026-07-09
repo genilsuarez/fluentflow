@@ -2,68 +2,289 @@
   {
     "id": "reord-pv-c1-001",
     "sentence": "The committee has been grappling with the implications of the new regulation",
-    "words": ["The", "committee", "has", "been", "grappling", "with", "the", "implications", "of", "the", "new", "regulation"],
+    "words": [
+      "The",
+      "committee",
+      "has",
+      "been",
+      "grappling",
+      "with",
+      "the",
+      "implications",
+      "of",
+      "the",
+      "new",
+      "regulation"
+    ],
     "hint": "Present perfect continuous: has been + -ing",
-    "explanation": "'Grapple with' means to struggle with a complex issue. Present perfect continuous for ongoing effort."
+    "explanation": "'Grapple with' significa lidiar con un tema complejo. Presente perfecto continuo para un esfuerzo en curso."
   },
   {
     "id": "reord-pv-c1-002",
     "sentence": "Not only did the report gloss over the key findings but it also misrepresented the data",
-    "words": ["Not", "only", "did", "the", "report", "gloss", "over", "the", "key", "findings", "but", "it", "also", "misrepresented", "the", "data"],
+    "words": [
+      "Not",
+      "only",
+      "did",
+      "the",
+      "report",
+      "gloss",
+      "over",
+      "the",
+      "key",
+      "findings",
+      "but",
+      "it",
+      "also",
+      "misrepresented",
+      "the",
+      "data"
+    ],
     "hint": "Inversion after 'Not only': Not only + auxiliary + subject",
-    "explanation": "'Gloss over' means to treat superficially. 'Not only...but also' with inversion for emphasis."
+    "explanation": "'Gloss over' significa tratar algo de manera superficial. 'Not only...but also' con inversión para dar énfasis."
   },
   {
     "id": "reord-pv-c1-003",
     "sentence": "Had the researchers not stumbled upon the anomaly the discovery would never have been made",
-    "words": ["Had", "the", "researchers", "not", "stumbled", "upon", "the", "anomaly", "the", "discovery", "would", "never", "have", "been", "made"],
+    "words": [
+      "Had",
+      "the",
+      "researchers",
+      "not",
+      "stumbled",
+      "upon",
+      "the",
+      "anomaly",
+      "the",
+      "discovery",
+      "would",
+      "never",
+      "have",
+      "been",
+      "made"
+    ],
     "hint": "Inverted conditional: Had + subject + not + past participle",
-    "explanation": "'Stumble upon' means to discover by accident. Inverted third conditional without 'if'."
+    "explanation": "'Stumble upon' significa descubrir algo por accidente. Tercer condicional invertido sin 'if'."
   },
   {
     "id": "reord-pv-c1-004",
     "sentence": "The professor urged the students to delve into the primary sources more thoroughly",
-    "words": ["The", "professor", "urged", "the", "students", "to", "delve", "into", "the", "primary", "sources", "more", "thoroughly"],
-    "explanation": "'Delve into' means to investigate deeply. 'Urged someone to' + base form."
+    "words": [
+      "The",
+      "professor",
+      "urged",
+      "the",
+      "students",
+      "to",
+      "delve",
+      "into",
+      "the",
+      "primary",
+      "sources",
+      "more",
+      "thoroughly"
+    ],
+    "explanation": "'Delve into' significa investigar a fondo. 'Urged someone to' + forma base."
   },
   {
     "id": "reord-pv-c1-005",
     "sentence": "Seldom does the board touch on such controversial matters in public sessions",
-    "words": ["Seldom", "does", "the", "board", "touch", "on", "such", "controversial", "matters", "in", "public", "sessions"],
+    "words": [
+      "Seldom",
+      "does",
+      "the",
+      "board",
+      "touch",
+      "on",
+      "such",
+      "controversial",
+      "matters",
+      "in",
+      "public",
+      "sessions"
+    ],
     "hint": "Inversion after 'Seldom': Seldom + auxiliary + subject",
-    "explanation": "'Touch on' means to mention briefly. Negative adverb 'seldom' triggers subject-auxiliary inversion."
+    "explanation": "'Touch on' significa mencionar brevemente. El adverbio negativo 'seldom' provoca inversión sujeto-auxiliar."
   },
   {
     "id": "reord-pv-c1-006",
     "sentence": "The government is cracking down on tax evasion with unprecedented measures",
-    "words": ["The", "government", "is", "cracking", "down", "on", "tax", "evasion", "with", "unprecedented", "measures"],
-    "explanation": "'Crack down on' means to take strict action against. Present continuous for current policy."
+    "words": [
+      "The",
+      "government",
+      "is",
+      "cracking",
+      "down",
+      "on",
+      "tax",
+      "evasion",
+      "with",
+      "unprecedented",
+      "measures"
+    ],
+    "explanation": "'Crack down on' significa tomar medidas estrictas contra algo. Presente continuo para una política actual."
   },
   {
     "id": "reord-pv-c1-007",
     "sentence": "Were the company to phase out the legacy system productivity would initially drop",
-    "words": ["Were", "the", "company", "to", "phase", "out", "the", "legacy", "system", "productivity", "would", "initially", "drop"],
+    "words": [
+      "Were",
+      "the",
+      "company",
+      "to",
+      "phase",
+      "out",
+      "the",
+      "legacy",
+      "system",
+      "productivity",
+      "would",
+      "initially",
+      "drop"
+    ],
     "hint": "Formal conditional: Were + subject + to + base form",
-    "explanation": "'Phase out' means to gradually discontinue. 'Were...to' is a formal conditional structure."
+    "explanation": "'Phase out' significa eliminar gradualmente. 'Were...to' es una estructura condicional formal."
   },
   {
     "id": "reord-pv-c1-008",
     "sentence": "The author draws on extensive fieldwork to substantiate her argument",
-    "words": ["The", "author", "draws", "on", "extensive", "fieldwork", "to", "substantiate", "her", "argument"],
-    "distractors": ["draw"],
-    "explanation": "'Draw on' means to use as a resource. With 'the author' (singular), use 'draws'."
+    "words": [
+      "The",
+      "author",
+      "draws",
+      "on",
+      "extensive",
+      "fieldwork",
+      "to",
+      "substantiate",
+      "her",
+      "argument"
+    ],
+    "distractors": [
+      "draw"
+    ],
+    "explanation": "'Draw on' significa usar algo como recurso. Con 'the author' (singular), se usa 'draws'."
   },
   {
     "id": "reord-pv-c1-009",
     "sentence": "Never before had the institution embarked on such an ambitious undertaking",
-    "words": ["Never", "before", "had", "the", "institution", "embarked", "on", "such", "an", "ambitious", "undertaking"],
+    "words": [
+      "Never",
+      "before",
+      "had",
+      "the",
+      "institution",
+      "embarked",
+      "on",
+      "such",
+      "an",
+      "ambitious",
+      "undertaking"
+    ],
     "hint": "Inversion after 'Never before': Never before + had + subject",
-    "explanation": "'Embark on' means to begin a significant project. 'Never before' triggers inversion."
+    "explanation": "'Embark on' significa emprender un proyecto importante. 'Never before' provoca inversión."
   },
   {
     "id": "reord-pv-c1-010",
     "sentence": "The panel called for a comprehensive overhaul of the existing framework",
-    "words": ["The", "panel", "called", "for", "a", "comprehensive", "overhaul", "of", "the", "existing", "framework"],
-    "explanation": "'Call for' means to demand or require. Past simple for a completed action."
+    "words": [
+      "The",
+      "panel",
+      "called",
+      "for",
+      "a",
+      "comprehensive",
+      "overhaul",
+      "of",
+      "the",
+      "existing",
+      "framework"
+    ],
+    "explanation": "'Call for' significa exigir o requerir. Pasado simple para una acción completada."
+  },
+  {
+    "id": "reord-pv-c1-011",
+    "sentence": "The report fails to account for the recent budget shortfall",
+    "words": [
+      "The",
+      "report",
+      "fails",
+      "to",
+      "account",
+      "for",
+      "the",
+      "recent",
+      "budget",
+      "shortfall"
+    ],
+    "hint": "Subject + verb + infinitive + phrasal verb + object",
+    "explanation": "'Account for' significa explicar la causa de algo."
+  },
+  {
+    "id": "reord-pv-c1-012",
+    "sentence": "The reforms are expected to bring about significant change",
+    "words": [
+      "The",
+      "reforms",
+      "are",
+      "expected",
+      "to",
+      "bring",
+      "about",
+      "significant",
+      "change"
+    ],
+    "hint": "Subject + passive verb + infinitive + phrasal verb + object",
+    "explanation": "'Bring about' significa causar que algo suceda."
+  },
+  {
+    "id": "reord-pv-c1-013",
+    "sentence": "Researchers carried out an extensive review of the literature",
+    "words": [
+      "Researchers",
+      "carried",
+      "out",
+      "an",
+      "extensive",
+      "review",
+      "of",
+      "the",
+      "literature"
+    ],
+    "hint": "Subject + phrasal verb + object",
+    "explanation": "'Carry out' significa realizar o completar una tarea."
+  },
+  {
+    "id": "reord-pv-c1-014",
+    "sentence": "The committee has not ruled out further investigation",
+    "words": [
+      "The",
+      "committee",
+      "has",
+      "not",
+      "ruled",
+      "out",
+      "further",
+      "investigation"
+    ],
+    "hint": "Subject + auxiliary + negative + phrasal verb + object",
+    "explanation": "'Rule out' significa descartar una posibilidad."
+  },
+  {
+    "id": "reord-pv-c1-015",
+    "sentence": "The auditors singled out three departments for closer scrutiny",
+    "words": [
+      "The",
+      "auditors",
+      "singled",
+      "out",
+      "three",
+      "departments",
+      "for",
+      "closer",
+      "scrutiny"
+    ],
+    "hint": "Subject + phrasal verb + object + prepositional phrase",
+    "explanation": "'Single out' significa seleccionar a alguien o algo de un grupo para darle atención especial."
   }
 ]

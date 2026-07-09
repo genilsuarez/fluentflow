@@ -2,138 +2,327 @@
   {
     "id": "reord-a2-pt-001",
     "sentence": "She visited her grandmother last weekend",
-    "words": ["She", "visited", "her", "grandmother", "last", "weekend"],
+    "words": [
+      "She",
+      "visited",
+      "her",
+      "grandmother",
+      "last",
+      "weekend"
+    ],
     "hint": "Subject + past verb + object + time expression",
-    "explanation": "Regular past tense: add -ed. Time expressions go at the end."
+    "explanation": "Pasado regular: se añade -ed. Las expresiones de tiempo van al final."
   },
   {
     "id": "reord-a2-pt-002",
     "sentence": "They went to the beach yesterday",
-    "words": ["They", "went", "to", "the", "beach", "yesterday"],
-    "distractors": ["goed"],
-    "explanation": "'Go' is irregular: went (not 'goed'). 'Yesterday' goes at the end."
+    "words": [
+      "They",
+      "went",
+      "to",
+      "the",
+      "beach",
+      "yesterday"
+    ],
+    "distractors": [
+      "goed"
+    ],
+    "explanation": "'Go' es irregular: went (no 'goed'). 'Yesterday' va al final."
   },
   {
     "id": "reord-a2-pt-003",
     "sentence": "I ate a sandwich for lunch",
-    "words": ["I", "ate", "a", "sandwich", "for", "lunch"],
-    "distractors": ["eated"],
-    "explanation": "'Eat' is irregular: ate (not 'eated')."
+    "words": [
+      "I",
+      "ate",
+      "a",
+      "sandwich",
+      "for",
+      "lunch"
+    ],
+    "distractors": [
+      "eated"
+    ],
+    "explanation": "'Eat' es irregular: ate (no 'eated')."
   },
   {
     "id": "reord-a2-pt-004",
     "sentence": "He did not go to work yesterday",
-    "words": ["He", "did", "not", "go", "to", "work", "yesterday"],
-    "distractors": ["went"],
+    "words": [
+      "He",
+      "did",
+      "not",
+      "go",
+      "to",
+      "work",
+      "yesterday"
+    ],
+    "distractors": [
+      "went"
+    ],
     "hint": "Negative past: did not + base form",
-    "explanation": "After 'did not', use the base form 'go', not 'went'."
+    "explanation": "Después de 'did not', se usa la forma base 'go', no 'went'."
   },
   {
     "id": "reord-a2-pt-005",
     "sentence": "We watched a movie last night",
-    "words": ["We", "watched", "a", "movie", "last", "night"],
-    "explanation": "Regular past: watch → watched. Time at the end."
+    "words": [
+      "We",
+      "watched",
+      "a",
+      "movie",
+      "last",
+      "night"
+    ],
+    "explanation": "Pasado regular: watch → watched. El tiempo va al final."
   },
   {
     "id": "reord-a2-pt-006",
     "sentence": "Did you see the new teacher",
-    "words": ["Did", "you", "see", "the", "new", "teacher"],
-    "distractors": ["saw"],
+    "words": [
+      "Did",
+      "you",
+      "see",
+      "the",
+      "new",
+      "teacher"
+    ],
+    "distractors": [
+      "saw"
+    ],
     "hint": "Past questions: Did + subject + base form",
-    "explanation": "After 'Did', use the base form 'see', not 'saw'."
+    "explanation": "Después de 'Did', se usa la forma base 'see', no 'saw'."
   },
   {
     "id": "reord-a2-pt-007",
     "sentence": "She bought a new dress at the mall",
-    "words": ["She", "bought", "a", "new", "dress", "at", "the", "mall"],
-    "distractors": ["buyed"],
-    "explanation": "'Buy' is irregular: bought (not 'buyed')."
+    "words": [
+      "She",
+      "bought",
+      "a",
+      "new",
+      "dress",
+      "at",
+      "the",
+      "mall"
+    ],
+    "distractors": [
+      "buyed"
+    ],
+    "explanation": "'Buy' es irregular: bought (no 'buyed')."
   },
   {
     "id": "reord-a2-pt-008",
     "sentence": "The children played in the garden all afternoon",
-    "words": ["The", "children", "played", "in", "the", "garden", "all", "afternoon"],
-    "explanation": "Subject + past verb + place + time duration."
+    "words": [
+      "The",
+      "children",
+      "played",
+      "in",
+      "the",
+      "garden",
+      "all",
+      "afternoon"
+    ],
+    "explanation": "Sujeto + verbo en pasado + lugar + duración de tiempo."
   },
   {
     "id": "reord-a2-pt-009",
     "sentence": "I did not understand the question",
-    "words": ["I", "did", "not", "understand", "the", "question"],
-    "distractors": ["understood"],
-    "explanation": "After 'did not', use base form 'understand', not 'understood'."
+    "words": [
+      "I",
+      "did",
+      "not",
+      "understand",
+      "the",
+      "question"
+    ],
+    "distractors": [
+      "understood"
+    ],
+    "explanation": "Después de 'did not', se usa la forma base 'understand', no 'understood'."
   },
   {
     "id": "reord-a2-pt-010",
     "sentence": "He wrote a letter to his friend",
-    "words": ["He", "wrote", "a", "letter", "to", "his", "friend"],
-    "distractors": ["writed"],
-    "explanation": "'Write' is irregular: wrote (not 'writed')."
+    "words": [
+      "He",
+      "wrote",
+      "a",
+      "letter",
+      "to",
+      "his",
+      "friend"
+    ],
+    "distractors": [
+      "writed"
+    ],
+    "explanation": "'Write' es irregular: wrote (no 'writed')."
   },
   {
     "id": "reord-a2-pt-011",
     "sentence": "We arrived at the airport two hours early",
-    "words": ["We", "arrived", "at", "the", "airport", "two", "hours", "early"],
-    "explanation": "Subject + past verb + place + time."
+    "words": [
+      "We",
+      "arrived",
+      "at",
+      "the",
+      "airport",
+      "two",
+      "hours",
+      "early"
+    ],
+    "explanation": "Sujeto + verbo en pasado + lugar + tiempo."
   },
   {
     "id": "reord-a2-pt-012",
     "sentence": "Did they finish the homework on time",
-    "words": ["Did", "they", "finish", "the", "homework", "on", "time"],
-    "distractors": ["finished"],
-    "explanation": "After 'Did', use base form 'finish', not 'finished'."
+    "words": [
+      "Did",
+      "they",
+      "finish",
+      "the",
+      "homework",
+      "on",
+      "time"
+    ],
+    "distractors": [
+      "finished"
+    ],
+    "explanation": "Después de 'Did', se usa la forma base 'finish', no 'finished'."
   },
   {
     "id": "reord-a2-pt-013",
     "sentence": "She made a cake for her birthday",
-    "words": ["She", "made", "a", "cake", "for", "her", "birthday"],
-    "distractors": ["maked"],
-    "explanation": "'Make' is irregular: made (not 'maked')."
+    "words": [
+      "She",
+      "made",
+      "a",
+      "cake",
+      "for",
+      "her",
+      "birthday"
+    ],
+    "distractors": [
+      "maked"
+    ],
+    "explanation": "'Make' es irregular: made (no 'maked')."
   },
   {
     "id": "reord-a2-pt-014",
     "sentence": "I took the bus to school this morning",
-    "words": ["I", "took", "the", "bus", "to", "school", "this", "morning"],
-    "distractors": ["taked"],
-    "explanation": "'Take' is irregular: took (not 'taked')."
+    "words": [
+      "I",
+      "took",
+      "the",
+      "bus",
+      "to",
+      "school",
+      "this",
+      "morning"
+    ],
+    "distractors": [
+      "taked"
+    ],
+    "explanation": "'Take' es irregular: took (no 'taked')."
   },
   {
     "id": "reord-a2-pt-015",
     "sentence": "They did not want to leave the party",
-    "words": ["They", "did", "not", "want", "to", "leave", "the", "party"],
-    "distractors": ["wanted"],
-    "explanation": "After 'did not', use base form 'want', not 'wanted'."
+    "words": [
+      "They",
+      "did",
+      "not",
+      "want",
+      "to",
+      "leave",
+      "the",
+      "party"
+    ],
+    "distractors": [
+      "wanted"
+    ],
+    "explanation": "Después de 'did not', se usa la forma base 'want', no 'wanted'."
   },
   {
     "id": "reord-a2-pt-016",
     "sentence": "He ran five kilometers in the park",
-    "words": ["He", "ran", "five", "kilometers", "in", "the", "park"],
-    "distractors": ["runned"],
-    "explanation": "'Run' is irregular: ran (not 'runned')."
+    "words": [
+      "He",
+      "ran",
+      "five",
+      "kilometers",
+      "in",
+      "the",
+      "park"
+    ],
+    "distractors": [
+      "runned"
+    ],
+    "explanation": "'Run' es irregular: ran (no 'runned')."
   },
   {
     "id": "reord-a2-pt-017",
     "sentence": "We had a great time at the concert",
-    "words": ["We", "had", "a", "great", "time", "at", "the", "concert"],
-    "explanation": "'Have' is irregular: had. Adjective before noun: 'great time'."
+    "words": [
+      "We",
+      "had",
+      "a",
+      "great",
+      "time",
+      "at",
+      "the",
+      "concert"
+    ],
+    "explanation": "'Have' es irregular: had. El adjetivo va antes del sustantivo: 'great time'."
   },
   {
     "id": "reord-a2-pt-018",
     "sentence": "Did she call you after the meeting",
-    "words": ["Did", "she", "call", "you", "after", "the", "meeting"],
-    "distractors": ["called"],
-    "explanation": "After 'Did', use base form 'call', not 'called'."
+    "words": [
+      "Did",
+      "she",
+      "call",
+      "you",
+      "after",
+      "the",
+      "meeting"
+    ],
+    "distractors": [
+      "called"
+    ],
+    "explanation": "Después de 'Did', se usa la forma base 'call', no 'called'."
   },
   {
     "id": "reord-a2-pt-019",
     "sentence": "The train left the station ten minutes ago",
-    "words": ["The", "train", "left", "the", "station", "ten", "minutes", "ago"],
-    "explanation": "'Leave' is irregular: left. 'Ago' goes at the very end."
+    "words": [
+      "The",
+      "train",
+      "left",
+      "the",
+      "station",
+      "ten",
+      "minutes",
+      "ago"
+    ],
+    "explanation": "'Leave' es irregular: left. 'Ago' va al final de todo."
   },
   {
     "id": "reord-a2-pt-020",
     "sentence": "I found my keys under the sofa",
-    "words": ["I", "found", "my", "keys", "under", "the", "sofa"],
-    "distractors": ["finded"],
-    "explanation": "'Find' is irregular: found (not 'finded')."
+    "words": [
+      "I",
+      "found",
+      "my",
+      "keys",
+      "under",
+      "the",
+      "sofa"
+    ],
+    "distractors": [
+      "finded"
+    ],
+    "explanation": "'Find' es irregular: found (no 'finded')."
   }
 ]

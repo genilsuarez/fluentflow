@@ -2,24 +2,24 @@
   {
     "question": "I need to ______ early tomorrow.",
     "options": [
+      "wake up",
       "wake in",
       "wake out",
-      "wake down",
-      "wake up"
+      "wake down"
     ],
     "correct": "wake up",
-    "explanation": "<Wake up> means to stop sleeping and become awake."
+    "explanation": "El phrasal verb <Wake up> significa dejar de dormir y despertarse."
   },
   {
     "question": "Please ______ the TV. It's too loud.",
     "options": [
       "turn up",
+      "turn down",
       "turn in",
-      "turn at",
-      "turn down"
+      "turn at"
     ],
     "correct": "turn down",
-    "explanation": "<Turn down> means to reduce the volume."
+    "explanation": "El phrasal verb <Turn down> significa bajar el volumen."
   },
   {
     "question": "Can you ______ this word in the dictionary?",
@@ -30,7 +30,7 @@
       "look down"
     ],
     "correct": "look up",
-    "explanation": "<Look up> means to search for information."
+    "explanation": "El phrasal verb <Look up> significa buscar información."
   },
   {
     "question": "I ______ at 7 AM every day.",
@@ -41,40 +41,40 @@
       "get up"
     ],
     "correct": "get up",
-    "explanation": "<Get up> means to rise from bed."
+    "explanation": "El phrasal verb <Get up> significa levantarse de la cama."
   },
   {
     "question": "Please ______ your shoes before entering.",
     "options": [
+      "take off",
       "take on",
       "take down",
-      "take up",
-      "take off"
+      "take up"
     ],
     "correct": "take off",
-    "explanation": "<Take off> means to remove clothing or shoes."
+    "explanation": "El phrasal verb <Take off> significa quitarse la ropa o los zapatos."
   },
   {
     "question": "I need to ______ my homework.",
     "options": [
       "give in",
+      "hand in",
       "give up",
-      "hand up",
-      "hand in"
+      "hand up"
     ],
     "correct": "hand in",
-    "explanation": "<Hand in> means to submit or deliver something."
+    "explanation": "El phrasal verb <Hand in> significa entregar algo."
   },
   {
     "question": "Let's ______ the meeting until tomorrow.",
     "options": [
       "put down",
-      "put off",
       "put on",
+      "put off",
       "put up"
     ],
     "correct": "put off",
-    "explanation": "<Put off> means to postpone or delay."
+    "explanation": "El phrasal verb <Put off> significa posponer o aplazar."
   },
   {
     "question": "Can you ______ the lights, please?",
@@ -85,40 +85,40 @@
       "turn off"
     ],
     "correct": "turn off",
-    "explanation": "<Turn off> means to stop a device from operating."
+    "explanation": "El phrasal verb <Turn off> significa apagar un aparato."
   },
   {
     "question": "I ______ my old friend yesterday.",
     "options": [
-      "ran off",
       "ran into",
+      "ran off",
       "ran down",
       "ran up"
     ],
     "correct": "ran into",
-    "explanation": "Run into means to meet someone by chance. <Ran into> is the past simple form of <Run into>."
+    "explanation": "El phrasal verb <Run into> significa encontrarse con alguien por casualidad. <Ran into> es la forma del pasado simple de <Run into>."
   },
   {
     "question": "Please ______ the form.",
     "options": [
       "fill up",
+      "fill in",
       "fill down",
-      "fill at",
-      "fill in"
+      "fill at"
     ],
     "correct": "fill in",
-    "explanation": "<Fill in> means to complete a form with information."
+    "explanation": "El phrasal verb <Fill in> significa completar un formulario con información."
   },
   {
     "question": "I need to ______ some money from the bank.",
     "options": [
-      "take out",
       "take up",
       "take down",
+      "take out",
       "take in"
     ],
     "correct": "take out",
-    "explanation": "<Take out> means to withdraw money."
+    "explanation": "El phrasal verb <Take out> significa retirar dinero."
   },
   {
     "question": "Let's ______ this problem together.",
@@ -129,40 +129,40 @@
       "work out"
     ],
     "correct": "work out",
-    "explanation": "<Work out> means to solve or resolve."
+    "explanation": "El phrasal verb <Work out> significa resolver o solucionar."
   },
   {
     "question": "I ______ my jacket because it was cold.",
     "options": [
-      "put up",
       "put on",
+      "put up",
       "put off",
       "put down"
     ],
     "correct": "put on",
-    "explanation": "<Put on> means to dress yourself in clothing."
+    "explanation": "El phrasal verb <Put on> significa ponerse ropa."
   },
   {
     "question": "Can you ______ the music? I can't hear it.",
     "options": [
-      "turn up",
       "turn down",
+      "turn up",
       "turn in",
       "turn off"
     ],
     "correct": "turn up",
-    "explanation": "<Turn up> means to increase the volume."
+    "explanation": "El phrasal verb <Turn up> significa subir el volumen."
   },
   {
     "question": "I need to ______ my room.",
     "options": [
-      "clean up",
       "clean at",
       "clean in",
+      "clean up",
       "clean down"
     ],
     "correct": "clean up",
-    "explanation": "<Clean up> means to tidy or organize."
+    "explanation": "El phrasal verb <Clean up> significa ordenar o limpiar."
   },
   {
     "question": "Please ______ for a moment.",
@@ -173,18 +173,18 @@
       "sit down"
     ],
     "correct": "sit down",
-    "explanation": "<Sit down> means to take a seat."
+    "explanation": "El phrasal verb <Sit down> significa sentarse."
   },
   {
     "question": "I ______ smoking last year.",
     "options": [
-      "gave off",
       "gave up",
+      "gave off",
       "gave in",
       "gave out"
     ],
     "correct": "gave up",
-    "explanation": "Give up means to stop doing something. <Gave up> is the past simple form of <Give up>."
+    "explanation": "El phrasal verb <Give up> significa dejar de hacer algo. <Gave up> es la forma del pasado simple de <Give up>."
   },
   {
     "question": "Let's ______ the party at 10 PM.",
@@ -195,18 +195,18 @@
       "go on"
     ],
     "correct": "go away",
-    "explanation": "<Go away> means to leave a place."
+    "explanation": "El phrasal verb <Go away> significa irse de un lugar."
   },
   {
     "question": "I need to ______ my email.",
     "options": [
       "check on",
-      "check out",
       "check in",
+      "check out",
       "check up"
     ],
     "correct": "check out",
-    "explanation": "<Check out> means to examine or review."
+    "explanation": "El phrasal verb <Check out> significa examinar o revisar."
   },
   {
     "question": "Please ______ the door when you leave.",
@@ -217,6 +217,6 @@
       "close up"
     ],
     "correct": "close up",
-    "explanation": "<Close up> means to shut completely."
+    "explanation": "El phrasal verb <Close up> significa cerrar por completo."
   }
 ]

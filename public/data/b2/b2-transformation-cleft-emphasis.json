@@ -6,7 +6,7 @@
       "It was John who broke the window.",
       "It was John that broke the window."
     ],
-    "explanation": "Cleft sentence: <It was> + focus element + <who/that> + rest of sentence."
+    "explanation": "Oración hendida (cleft sentence): <It was> + elemento enfatizado + <who/that> + resto de la oración."
   },
   {
     "prompt": "Rewrite as a cleft sentence starting with 'It is'",
@@ -15,7 +15,7 @@
       "It is the weather that ruined our plans.",
       "It's the weather that ruined our plans."
     ],
-    "explanation": "Cleft sentence: <It is> + focus element + <that> + rest of sentence."
+    "explanation": "Oración hendida: <It is> + elemento enfatizado + <that> + resto de la oración."
   },
   {
     "prompt": "Rewrite as a cleft sentence starting with 'What'",
@@ -23,7 +23,7 @@
     "correct": [
       "What I need is a holiday."
     ],
-    "explanation": "Pseudo-cleft: <What> + subject + verb + <is> + focus element."
+    "explanation": "Pseudo-hendida (pseudo-cleft): <What> + sujeto + verbo + <is> + elemento enfatizado."
   },
   {
     "prompt": "Rewrite as a cleft sentence starting with 'What'",
@@ -31,7 +31,7 @@
     "correct": [
       "What she wants is to travel the world."
     ],
-    "explanation": "Pseudo-cleft: <What she wants is> + focus element."
+    "explanation": "Pseudo-hendida: <What she wants is> + elemento enfatizado."
   },
   {
     "prompt": "Rewrite as a cleft sentence starting with 'It was'",
@@ -40,7 +40,7 @@
       "It was in the park that she lost her keys.",
       "It was in the park where she lost her keys."
     ],
-    "explanation": "Cleft sentence focusing on place: <It was in the park that/where>."
+    "explanation": "Oración hendida que enfatiza el lugar: <It was in the park that/where>."
   },
   {
     "prompt": "Rewrite using 'What ... was' for emphasis",
@@ -49,7 +49,7 @@
       "What he said was something rude.",
       "What he said was rude."
     ],
-    "explanation": "Pseudo-cleft: <What he said was> + focus element."
+    "explanation": "Pseudo-hendida: <What he said was> + elemento enfatizado."
   },
   {
     "prompt": "Rewrite as a cleft sentence starting with 'It was'",
@@ -58,7 +58,7 @@
       "It was at the conference in 2019 that they met.",
       "It was in 2019 that they met at the conference."
     ],
-    "explanation": "Cleft sentence focusing on time/place."
+    "explanation": "Oración hendida que enfatiza el tiempo o el lugar."
   },
   {
     "prompt": "Rewrite using 'The reason ... is that' for emphasis",
@@ -67,7 +67,7 @@
       "The reason she left is that she was tired.",
       "The reason she left was that she was tired."
     ],
-    "explanation": "Emphasis on reason: <The reason ... is/was that>."
+    "explanation": "Énfasis en la razón: <The reason ... is/was that>."
   },
   {
     "prompt": "Rewrite as a cleft sentence starting with 'It is'",
@@ -76,7 +76,7 @@
       "It is hard work that leads to success.",
       "It's hard work that leads to success."
     ],
-    "explanation": "Cleft sentence: <It is hard work that> + rest of sentence."
+    "explanation": "Oración hendida: <It is hard work that> + resto de la oración."
   },
   {
     "prompt": "Rewrite using 'What ... is' for emphasis",
@@ -84,7 +84,7 @@
     "correct": [
       "What we need is more time to finish."
     ],
-    "explanation": "Pseudo-cleft: <What we need is> + focus element."
+    "explanation": "Pseudo-hendida: <What we need is> + elemento enfatizado."
   },
   {
     "prompt": "Rewrite as a cleft sentence starting with 'It was'",
@@ -93,7 +93,7 @@
       "It was Maria who won the competition.",
       "It was Maria that won the competition."
     ],
-    "explanation": "Cleft sentence focusing on the person: <It was Maria who/that>."
+    "explanation": "Oración hendida que enfatiza a la persona: <It was Maria who/that>."
   },
   {
     "prompt": "Rewrite using 'The thing that ... is' for emphasis",
@@ -101,7 +101,7 @@
     "correct": [
       "The thing that annoys me the most is his attitude."
     ],
-    "explanation": "Emphasis structure: <The thing that ... is> + focus element."
+    "explanation": "Estructura de énfasis: <The thing that ... is> + elemento enfatizado."
   },
   {
     "prompt": "Rewrite as a cleft sentence starting with 'It was'",
@@ -109,7 +109,7 @@
     "correct": [
       "It was the noise that kept me awake."
     ],
-    "explanation": "Cleft sentence: <It was the noise that> + rest of sentence."
+    "explanation": "Oración hendida: <It was the noise that> + resto de la oración."
   },
   {
     "prompt": "Rewrite using 'What ... did was' for emphasis",
@@ -117,7 +117,7 @@
     "correct": [
       "What she did was apologise to everyone."
     ],
-    "explanation": "Pseudo-cleft with <did>: <What she did was> + base verb."
+    "explanation": "Pseudo-hendida con <did>: <What she did was> + verbo en forma base."
   },
   {
     "prompt": "Rewrite as a cleft sentence starting with 'It was'",
@@ -125,7 +125,7 @@
     "correct": [
       "It was on Valentine's Day that he proposed to her."
     ],
-    "explanation": "Cleft sentence focusing on time: <It was on Valentine's Day that>."
+    "explanation": "Oración hendida que enfatiza el tiempo: <It was on Valentine's Day that>."
   },
   {
     "prompt": "Rewrite using 'All ... is' for emphasis",
@@ -133,7 +133,7 @@
     "correct": [
       "All I want is some peace and quiet."
     ],
-    "explanation": "Emphasis with <All>: <All I want is> + focus element."
+    "explanation": "Énfasis con <All>: <All I want is> + elemento enfatizado."
   },
   {
     "prompt": "Rewrite as a cleft sentence starting with 'It is'",
@@ -142,7 +142,7 @@
       "It is education that changes lives.",
       "It's education that changes lives."
     ],
-    "explanation": "Cleft sentence: <It is education that> + rest of sentence."
+    "explanation": "Oración hendida: <It is education that> + resto de la oración."
   },
   {
     "prompt": "Rewrite using 'What ... was' for emphasis",
@@ -150,7 +150,7 @@
     "correct": [
       "What caused the problem was the lack of communication."
     ],
-    "explanation": "Pseudo-cleft: <What caused the problem was> + focus element."
+    "explanation": "Pseudo-hendida: <What caused the problem was> + elemento enfatizado."
   },
   {
     "prompt": "Rewrite as a cleft sentence starting with 'It was'",
@@ -158,7 +158,7 @@
     "correct": [
       "It was the teacher who inspired her to become a writer."
     ],
-    "explanation": "Cleft sentence focusing on the person."
+    "explanation": "Oración hendida que enfatiza a la persona."
   },
   {
     "prompt": "Rewrite using 'The place where ... is' for emphasis",
@@ -167,7 +167,7 @@
       "The place where we first met is the library.",
       "The place where we first met was the library."
     ],
-    "explanation": "Emphasis on place: <The place where ... is/was>."
+    "explanation": "Énfasis en el lugar: <The place where ... is/was>."
   },
   {
     "prompt": "Rewrite using 'What ... is' for emphasis",
@@ -175,7 +175,7 @@
     "correct": [
       "What I admire is her determination."
     ],
-    "explanation": "Pseudo-cleft: <What I admire is> + focus element."
+    "explanation": "Pseudo-hendida: <What I admire is> + elemento enfatizado."
   },
   {
     "prompt": "Rewrite as a cleft sentence starting with 'It was'",
@@ -183,7 +183,7 @@
     "correct": [
       "It was the storm that caused the power outage."
     ],
-    "explanation": "Cleft sentence: <It was the storm that> + rest of sentence."
+    "explanation": "Oración hendida: <It was the storm that> + resto de la oración."
   },
   {
     "prompt": "Rewrite using 'All ... did was' for emphasis",
@@ -191,7 +191,7 @@
     "correct": [
       "All he did was sit there and watch."
     ],
-    "explanation": "Emphasis with <All ... did was>: <All he did was> + base verb."
+    "explanation": "Énfasis con <All ... did was>: <All he did was> + verbo en forma base."
   },
   {
     "prompt": "Rewrite as a cleft sentence starting with 'It is'",
@@ -200,7 +200,7 @@
       "It is teamwork that makes the difference.",
       "It's teamwork that makes the difference."
     ],
-    "explanation": "Cleft sentence: <It is teamwork that> + rest of sentence."
+    "explanation": "Oración hendida: <It is teamwork that> + resto de la oración."
   },
   {
     "prompt": "Rewrite using 'What ... is' for emphasis",
@@ -208,6 +208,6 @@
     "correct": [
       "What she really enjoys is cooking for her friends."
     ],
-    "explanation": "Pseudo-cleft: <What she really enjoys is> + focus element."
+    "explanation": "Pseudo-hendida: <What she really enjoys is> + elemento enfatizado."
   }
 ]

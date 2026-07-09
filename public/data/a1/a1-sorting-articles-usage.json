@@ -1,22 +1,102 @@
 [
-  {"word": "a cat", "category": "a/an (indefinite)"},
-  {"word": "an apple", "category": "a/an (indefinite)"},
-  {"word": "a house", "category": "a/an (indefinite)"},
-  {"word": "an hour", "category": "a/an (indefinite)"},
-  {"word": "a university", "category": "a/an (indefinite)"},
-  {"word": "an umbrella", "category": "a/an (indefinite)"},
-  {"word": "the sun", "category": "the (definite)"},
-  {"word": "the moon", "category": "the (definite)"},
-  {"word": "the best one", "category": "the (definite)"},
-  {"word": "the door (known)", "category": "the (definite)"},
-  {"word": "the second time", "category": "the (definite)"},
-  {"word": "the piano", "category": "the (definite)"},
-  {"word": "go to school", "category": "∅ (no article)"},
-  {"word": "play football", "category": "∅ (no article)"},
-  {"word": "have breakfast", "category": "∅ (no article)"},
-  {"word": "at home", "category": "∅ (no article)"},
-  {"word": "go to bed", "category": "∅ (no article)"},
-  {"word": "Water is vital", "category": "∅ (no article)"},
-  {"word": "Dogs are loyal", "category": "∅ (no article)"},
-  {"word": "I like music", "category": "∅ (no article)"}
+  {
+    "word": "a cat",
+    "category": "a/an (indefinite)"
+  },
+  {
+    "word": "an apple",
+    "category": "a/an (indefinite)"
+  },
+  {
+    "word": "a house",
+    "category": "a/an (indefinite)"
+  },
+  {
+    "word": "an hour",
+    "category": "a/an (indefinite)"
+  },
+  {
+    "word": "a university",
+    "category": "a/an (indefinite)"
+  },
+  {
+    "word": "an umbrella",
+    "category": "a/an (indefinite)"
+  },
+  {
+    "word": "the sun",
+    "category": "the (definite)"
+  },
+  {
+    "word": "the moon",
+    "category": "the (definite)"
+  },
+  {
+    "word": "the best one",
+    "category": "the (definite)"
+  },
+  {
+    "word": "the door (known)",
+    "category": "the (definite)"
+  },
+  {
+    "word": "the second time",
+    "category": "the (definite)"
+  },
+  {
+    "word": "the piano",
+    "category": "the (definite)"
+  },
+  {
+    "word": "go to school",
+    "category": "∅ (no article)"
+  },
+  {
+    "word": "play football",
+    "category": "∅ (no article)"
+  },
+  {
+    "word": "have breakfast",
+    "category": "∅ (no article)"
+  },
+  {
+    "word": "at home",
+    "category": "∅ (no article)"
+  },
+  {
+    "word": "go to bed",
+    "category": "∅ (no article)"
+  },
+  {
+    "word": "Water is vital",
+    "category": "∅ (no article)"
+  },
+  {
+    "word": "Dogs are loyal",
+    "category": "∅ (no article)"
+  },
+  {
+    "word": "I like music",
+    "category": "∅ (no article)"
+  },
+  {
+    "word": "an orange",
+    "category": "a/an (indefinite)"
+  },
+  {
+    "word": "a book",
+    "category": "a/an (indefinite)"
+  },
+  {
+    "word": "the earth",
+    "category": "the (definite)"
+  },
+  {
+    "word": "the teacher (we know)",
+    "category": "the (definite)"
+  },
+  {
+    "word": "go to work",
+    "category": "∅ (no article)"
+  }
 ]

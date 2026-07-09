@@ -6,7 +6,7 @@
       "Under no circumstances must you reveal this information.",
       "Under no circumstances should you reveal this information."
     ],
-    "explanation": "<Under no circumstances> + inverted modal + subject for emphatic prohibition."
+    "explanation": "<Under no circumstances> + modal invertido + sujeto para una prohibición enfática."
   },
   {
     "prompt": "Rewrite using a fronted adverbial with inversion",
@@ -14,7 +14,7 @@
     "correct": [
       "On the hill stood a magnificent castle."
     ],
-    "explanation": "Fronted adverbial of place + inverted verb + subject creates literary emphasis."
+    "explanation": "El adverbial de lugar antepuesto + verbo invertido + sujeto crea un énfasis literario."
   },
   {
     "prompt": "Change to subjunctive with <lest>",
@@ -24,7 +24,7 @@
       "Speak quietly lest you should wake the baby."
     ],
     "hint": "<Lest> = <in order that ... not>",
-    "explanation": "<Lest> + subjunctive (base form) or <lest> + <should> + base verb expresses purpose of avoidance."
+    "explanation": "<Lest> + subjuntivo (forma base) o <lest> + <should> + verbo base expresa un propósito de evitación."
   },
   {
     "prompt": "Rewrite using a cleft sentence with <What ... was>",
@@ -32,7 +32,7 @@
     "correct": [
       "What caused the failure was his arrogance."
     ],
-    "explanation": "<What> cleft sentences: <What> + verb + <was/is> + focus element for emphasis."
+    "explanation": "Oraciones hendidas con <What>: <What> + verbo + <was/is> + elemento en foco, para dar énfasis."
   },
   {
     "prompt": "Rewrite using <So> + adjective + inversion",
@@ -40,7 +40,7 @@
     "correct": [
       "So impressive was the performance that the audience gave a standing ovation."
     ],
-    "explanation": "<So> + adjective + inverted <be> + subject + <that> for literary emphasis."
+    "explanation": "<So> + adjetivo + <be> invertido + sujeto + <that> para énfasis literario."
   },
   {
     "prompt": "Change to a nominalized form",
@@ -49,7 +49,7 @@
       "The government's decision to withdraw the troops surprised everyone."
     ],
     "hint": "Convert the verb <decided> to a noun",
-    "explanation": "Nominalization: converting verbs to nouns (<decided> → <decision>) creates more formal, academic style."
+    "explanation": "Nominalización: convertir verbos en sustantivos (<decided> → <decision>) crea un estilo más formal y académico."
   },
   {
     "prompt": "Rewrite using <No sooner ... than>",
@@ -57,7 +57,7 @@
     "correct": [
       "No sooner had he finished his speech than the audience started clapping."
     ],
-    "explanation": "<No sooner> + past perfect inversion + <than> + past simple for sequential events."
+    "explanation": "<No sooner> + inversión con pluscuamperfecto + <than> + pasado simple para eventos secuenciales."
   },
   {
     "prompt": "Rewrite using <It being> (absolute participle clause)",
@@ -65,7 +65,7 @@
     "correct": [
       "It being a holiday, the office was closed."
     ],
-    "explanation": "Absolute participle clauses with <It being> replace causal clauses in formal writing."
+    "explanation": "Las cláusulas de participio absoluto con <It being> reemplazan cláusulas causales en la escritura formal."
   },
   {
     "prompt": "Change to hedged academic language",
@@ -76,7 +76,7 @@
       "It could be argued that this theory is flawed."
     ],
     "hint": "Use hedging: <would appear>, <could be argued>, <seems>",
-    "explanation": "Academic hedging softens claims: <is wrong> → <would appear to be flawed> / <could be argued to be flawed>."
+    "explanation": "El 'hedging' académico suaviza las afirmaciones: <is wrong> → <would appear to be flawed> / <could be argued to be flawed>."
   },
   {
     "prompt": "Rewrite using <Seldom> with inversion",
@@ -84,7 +84,7 @@
     "correct": [
       "Seldom does one encounter such eloquence in modern discourse."
     ],
-    "explanation": "<Seldom> + inverted auxiliary + subject for formal emphasis on rarity."
+    "explanation": "<Seldom> + auxiliar invertido + sujeto para dar énfasis formal a la rareza de algo."
   },
   {
     "prompt": "Change to a nominalized form",
@@ -93,7 +93,7 @@
       "The committee's refusal to cooperate delayed the project."
     ],
     "hint": "Convert the verb <refused> to a noun",
-    "explanation": "Nominalization: <refused> → <refusal> creates a more formal, academic register."
+    "explanation": "Nominalización: <refused> → <refusal> crea un registro más formal y académico."
   },
   {
     "prompt": "Rewrite using rhetorical inversion with <Not once>",
@@ -101,7 +101,7 @@
     "correct": [
       "Not once did he apologize for his behavior."
     ],
-    "explanation": "<Not once> + inverted auxiliary + subject for emphatic rhetorical effect."
+    "explanation": "<Not once> + auxiliar invertido + sujeto para un efecto retórico enfático."
   },
   {
     "prompt": "Change to archaic subjunctive with <be it>",
@@ -110,7 +110,7 @@
       "Be it personal or professional, the rule applies."
     ],
     "hint": "<Be it> = <Whether it be>",
-    "explanation": "Archaic subjunctive: <Be it> + complement expresses <Whether it be> in formal/literary style."
+    "explanation": "Subjuntivo arcaico: <Be it> + complemento expresa <Whether it be> en un estilo formal/literario."
   },
   {
     "prompt": "Rewrite using academic hedging with <tend to>",
@@ -120,7 +120,7 @@
       "Students who do not study tend to fail.",
       "Students who don't study tend to fail."
     ],
-    "explanation": "Academic hedging: <tend to> softens absolute claims into general tendencies."
+    "explanation": "'Hedging' académico: <tend to> suaviza afirmaciones absolutas convirtiéndolas en tendencias generales."
   },
   {
     "prompt": "Change to a nominalized form",
@@ -128,7 +128,7 @@
     "correct": [
       "The researchers' discovery of a new species excited the scientific community."
     ],
-    "explanation": "Nominalization: <discovered> → <discovery> for formal academic prose."
+    "explanation": "Nominalización: <discovered> → <discovery> para prosa académica formal."
   },
   {
     "prompt": "Rewrite using inversion with <At no point>",
@@ -136,7 +136,7 @@
     "correct": [
       "At no point during the trial did the defendant admit guilt."
     ],
-    "explanation": "<At no point> + inverted auxiliary + subject for emphatic formal denial."
+    "explanation": "<At no point> + auxiliar invertido + sujeto para una negación formal enfática."
   },
   {
     "prompt": "Rewrite using <Such> + inversion",
@@ -144,7 +144,7 @@
     "correct": [
       "Such was the extent of the damage that repairs took months."
     ],
-    "explanation": "<Such> + <was/were> + subject + <that> for literary emphasis."
+    "explanation": "<Such> + <was/were> + sujeto + <that> para énfasis literario."
   },
   {
     "prompt": "Change to hedged academic language with <It would seem>",
@@ -154,7 +154,7 @@
       "The data would seem to support the hypothesis."
     ],
     "hint": "Use hedging: <would seem>, <supports> instead of <proves>",
-    "explanation": "Academic hedging: <proves> → <would seem to support> avoids absolute claims."
+    "explanation": "'Hedging' académico: <proves> → <would seem to support> evita afirmaciones absolutas."
   },
   {
     "prompt": "Rewrite using an absolute participle clause",
@@ -162,7 +162,7 @@
     "correct": [
       "All the evidence having been examined, the jury reached a verdict."
     ],
-    "explanation": "Absolute participle clause: noun + <having been> + past participle replaces causal clause."
+    "explanation": "Cláusula de participio absoluto: sustantivo + <having been> + participio pasado reemplaza una cláusula causal."
   },
   {
     "prompt": "Change to a nominalized form",
@@ -170,7 +170,7 @@
     "correct": [
       "The government's implementation of the policy improved public health."
     ],
-    "explanation": "Nominalization: <implemented> → <implementation> for formal register."
+    "explanation": "Nominalización: <implemented> → <implementation> para un registro formal."
   },
   {
     "prompt": "Rewrite using rhetorical inversion with <Only by>",
@@ -178,7 +178,7 @@
     "correct": [
       "Only by working together can we achieve lasting peace."
     ],
-    "explanation": "<Only by> + gerund + inverted modal + subject for rhetorical emphasis."
+    "explanation": "<Only by> + gerundio + modal invertido + sujeto para énfasis retórico."
   },
   {
     "prompt": "Change to archaic subjunctive with <far be it from me>",
@@ -186,7 +186,7 @@
     "correct": [
       "Far be it from me to criticize, but the plan has flaws."
     ],
-    "explanation": "<Far be it from me to> is an archaic subjunctive formula expressing reluctance to act."
+    "explanation": "<Far be it from me to> es una fórmula subjuntiva arcaica que expresa reticencia a actuar."
   },
   {
     "prompt": "Rewrite using academic hedging with <arguably>",
@@ -195,7 +195,7 @@
       "This is arguably the most important discovery of the century.",
       "Arguably, this is the most significant discovery of the century."
     ],
-    "explanation": "Academic hedging: <arguably> qualifies a superlative claim."
+    "explanation": "'Hedging' académico: <arguably> matiza una afirmación superlativa."
   },
   {
     "prompt": "Rewrite using inversion with <In vain>",
@@ -203,7 +203,7 @@
     "correct": [
       "In vain did they try to negotiate."
     ],
-    "explanation": "<In vain> + inverted auxiliary + subject for literary emphasis on futility."
+    "explanation": "<In vain> + auxiliar invertido + sujeto para énfasis literario sobre la futilidad de algo."
   },
   {
     "prompt": "Change to a nominalized form with abstract noun",
@@ -212,6 +212,6 @@
       "The artist's brilliant ability to capture light made her famous.",
       "The artist's ability to capture light brilliantly made her famous."
     ],
-    "explanation": "Nominalization: converting clauses to noun phrases creates denser, more formal prose."
+    "explanation": "Nominalización: convertir cláusulas en frases nominales crea una prosa más densa y formal."
   }
 ]

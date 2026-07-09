@@ -2,70 +2,307 @@
   {
     "id": "reord-pv-c2-001",
     "sentence": "Not only does the treatise draw upon classical philosophy but it also engages with contemporary discourse",
-    "words": ["Not", "only", "does", "the", "treatise", "draw", "upon", "classical", "philosophy", "but", "it", "also", "engages", "with", "contemporary", "discourse"],
+    "words": [
+      "Not",
+      "only",
+      "does",
+      "the",
+      "treatise",
+      "draw",
+      "upon",
+      "classical",
+      "philosophy",
+      "but",
+      "it",
+      "also",
+      "engages",
+      "with",
+      "contemporary",
+      "discourse"
+    ],
     "hint": "Inversion after 'Not only': Not only + auxiliary + subject",
-    "explanation": "'Draw upon' means to use as a source. 'Engage with' means to interact intellectually. Correlative conjunction with inversion."
+    "explanation": "'Draw upon' significa usar como fuente. 'Engage with' significa interactuar intelectualmente. Conjunción correlativa con inversión."
   },
   {
     "id": "reord-pv-c2-002",
     "sentence": "Were one to pore over the archival records the discrepancies would become self-evident",
-    "words": ["Were", "one", "to", "pore", "over", "the", "archival", "records", "the", "discrepancies", "would", "become", "self-evident"],
+    "words": [
+      "Were",
+      "one",
+      "to",
+      "pore",
+      "over",
+      "the",
+      "archival",
+      "records",
+      "the",
+      "discrepancies",
+      "would",
+      "become",
+      "self-evident"
+    ],
     "hint": "Formal conditional: Were + subject + to + base form",
-    "explanation": "'Pore over' means to study carefully. 'Were one to' is a highly formal conditional with impersonal 'one'."
+    "explanation": "'Pore over' significa estudiar detenidamente. 'Were one to' es un condicional muy formal con el 'one' impersonal."
   },
   {
     "id": "reord-pv-c2-003",
     "sentence": "The dissertation sets out to dismantle the prevailing orthodoxy on cognitive development",
-    "words": ["The", "dissertation", "sets", "out", "to", "dismantle", "the", "prevailing", "orthodoxy", "on", "cognitive", "development"],
-    "distractors": ["set"],
-    "explanation": "'Set out to' means to intend or aim. Present tense with singular subject: 'sets out'."
+    "words": [
+      "The",
+      "dissertation",
+      "sets",
+      "out",
+      "to",
+      "dismantle",
+      "the",
+      "prevailing",
+      "orthodoxy",
+      "on",
+      "cognitive",
+      "development"
+    ],
+    "distractors": [
+      "set"
+    ],
+    "explanation": "'Set out to' significa tener la intención de o proponerse. Presente con sujeto singular: 'sets out'."
   },
   {
     "id": "reord-pv-c2-004",
     "sentence": "Never before had a single publication brought about such a paradigm shift in the field",
-    "words": ["Never", "before", "had", "a", "single", "publication", "brought", "about", "such", "a", "paradigm", "shift", "in", "the", "field"],
+    "words": [
+      "Never",
+      "before",
+      "had",
+      "a",
+      "single",
+      "publication",
+      "brought",
+      "about",
+      "such",
+      "a",
+      "paradigm",
+      "shift",
+      "in",
+      "the",
+      "field"
+    ],
     "hint": "Inversion after 'Never before'",
-    "explanation": "'Bring about' means to cause. 'Never before' triggers inversion with past perfect."
+    "explanation": "'Bring about' significa causar. 'Never before' provoca inversión con el pasado perfecto."
   },
   {
     "id": "reord-pv-c2-005",
     "sentence": "The critic took issue with the author's tendency to gloss over methodological limitations",
-    "words": ["The", "critic", "took", "issue", "with", "the", "author's", "tendency", "to", "gloss", "over", "methodological", "limitations"],
-    "explanation": "'Take issue with' means to disagree. 'Gloss over' means to treat superficially."
+    "words": [
+      "The",
+      "critic",
+      "took",
+      "issue",
+      "with",
+      "the",
+      "author's",
+      "tendency",
+      "to",
+      "gloss",
+      "over",
+      "methodological",
+      "limitations"
+    ],
+    "explanation": "'Take issue with' significa estar en desacuerdo. 'Gloss over' significa tratar algo de forma superficial."
   },
   {
     "id": "reord-pv-c2-006",
     "sentence": "Only through sustained inquiry can scholars tease out the nuances of such complex phenomena",
-    "words": ["Only", "through", "sustained", "inquiry", "can", "scholars", "tease", "out", "the", "nuances", "of", "such", "complex", "phenomena"],
+    "words": [
+      "Only",
+      "through",
+      "sustained",
+      "inquiry",
+      "can",
+      "scholars",
+      "tease",
+      "out",
+      "the",
+      "nuances",
+      "of",
+      "such",
+      "complex",
+      "phenomena"
+    ],
     "hint": "Inversion after 'Only through'",
-    "explanation": "'Tease out' means to extract with care. 'Only through' triggers subject-auxiliary inversion."
+    "explanation": "'Tease out' significa extraer con cuidado. 'Only through' provoca la inversión sujeto-auxiliar."
   },
   {
     "id": "reord-pv-c2-007",
     "sentence": "It is essential that the peer reviewers not shy away from rigorous scrutiny",
-    "words": ["It", "is", "essential", "that", "the", "peer", "reviewers", "not", "shy", "away", "from", "rigorous", "scrutiny"],
+    "words": [
+      "It",
+      "is",
+      "essential",
+      "that",
+      "the",
+      "peer",
+      "reviewers",
+      "not",
+      "shy",
+      "away",
+      "from",
+      "rigorous",
+      "scrutiny"
+    ],
     "hint": "Subjunctive: It is essential that + subject + base form",
-    "explanation": "'Shy away from' means to avoid. Subjunctive mood after 'it is essential that'."
+    "explanation": "'Shy away from' significa evitar. Modo subjuntivo después de 'it is essential that'."
   },
   {
     "id": "reord-pv-c2-008",
     "sentence": "The monograph builds on decades of empirical research to put forward a unified theory",
-    "words": ["The", "monograph", "builds", "on", "decades", "of", "empirical", "research", "to", "put", "forward", "a", "unified", "theory"],
-    "distractors": ["build"],
-    "explanation": "'Build on' means to use as a foundation. 'Put forward' means to propose. Singular subject: 'builds'."
+    "words": [
+      "The",
+      "monograph",
+      "builds",
+      "on",
+      "decades",
+      "of",
+      "empirical",
+      "research",
+      "to",
+      "put",
+      "forward",
+      "a",
+      "unified",
+      "theory"
+    ],
+    "distractors": [
+      "build"
+    ],
+    "explanation": "'Build on' significa usar como base. 'Put forward' significa proponer. Sujeto singular: 'builds'."
   },
   {
     "id": "reord-pv-c2-009",
     "sentence": "Under no circumstances should the findings be passed off as conclusive without replication",
-    "words": ["Under", "no", "circumstances", "should", "the", "findings", "be", "passed", "off", "as", "conclusive", "without", "replication"],
+    "words": [
+      "Under",
+      "no",
+      "circumstances",
+      "should",
+      "the",
+      "findings",
+      "be",
+      "passed",
+      "off",
+      "as",
+      "conclusive",
+      "without",
+      "replication"
+    ],
     "hint": "Inversion after 'Under no circumstances'",
-    "explanation": "'Pass off as' means to present falsely. Negative phrase triggers inversion with passive voice."
+    "explanation": "'Pass off as' significa presentar algo de forma engañosa. La frase negativa provoca inversión con voz pasiva."
   },
   {
     "id": "reord-pv-c2-010",
     "sentence": "Had the theorist not zeroed in on the anomalous data the breakthrough would have remained elusive",
-    "words": ["Had", "the", "theorist", "not", "zeroed", "in", "on", "the", "anomalous", "data", "the", "breakthrough", "would", "have", "remained", "elusive"],
+    "words": [
+      "Had",
+      "the",
+      "theorist",
+      "not",
+      "zeroed",
+      "in",
+      "on",
+      "the",
+      "anomalous",
+      "data",
+      "the",
+      "breakthrough",
+      "would",
+      "have",
+      "remained",
+      "elusive"
+    ],
     "hint": "Inverted third conditional",
-    "explanation": "'Zero in on' means to focus precisely. Inverted conditional for unreal past."
+    "explanation": "'Zero in on' significa enfocarse con precisión. Condicional invertida para un pasado irreal."
+  },
+  {
+    "id": "reord-pv-c2-011",
+    "sentence": "The validity of the argument hinges on a single contested premise",
+    "words": [
+      "The",
+      "validity",
+      "of",
+      "the",
+      "argument",
+      "hinges",
+      "on",
+      "a",
+      "single",
+      "contested",
+      "premise"
+    ],
+    "hint": "Subject + phrasal verb + object",
+    "explanation": "'Hinge on' significa depender por completo de un único factor."
+  },
+  {
+    "id": "reord-pv-c2-012",
+    "sentence": "The ambiguous phrasing gave rise to conflicting interpretations",
+    "words": [
+      "The",
+      "ambiguous",
+      "phrasing",
+      "gave",
+      "rise",
+      "to",
+      "conflicting",
+      "interpretations"
+    ],
+    "hint": "Subject + phrasal verb + object",
+    "explanation": "'Give rise to' significa causar o dar lugar a algo."
+  },
+  {
+    "id": "reord-pv-c2-013",
+    "sentence": "Much of the controversy stems from methodological inconsistencies",
+    "words": [
+      "Much",
+      "of",
+      "the",
+      "controversy",
+      "stems",
+      "from",
+      "methodological",
+      "inconsistencies"
+    ],
+    "hint": "Subject + phrasal verb + object",
+    "explanation": "'Stem from' significa originarse o resultar de algo."
+  },
+  {
+    "id": "reord-pv-c2-014",
+    "sentence": "Subsequent findings bore out the theorist's original conjecture",
+    "words": [
+      "Subsequent",
+      "findings",
+      "bore",
+      "out",
+      "the",
+      "theorist's",
+      "original",
+      "conjecture"
+    ],
+    "hint": "Subject + phrasal verb + object",
+    "explanation": "'Bear out' significa confirmar o respaldar una afirmación."
+  },
+  {
+    "id": "reord-pv-c2-015",
+    "sentence": "The discrepancy calls into question the study's overall validity",
+    "words": [
+      "The",
+      "discrepancy",
+      "calls",
+      "into",
+      "question",
+      "the",
+      "study's",
+      "overall",
+      "validity"
+    ],
+    "hint": "Subject + phrasal verb + object",
+    "explanation": "'Call into question' significa poner en duda algo."
   }
 ]

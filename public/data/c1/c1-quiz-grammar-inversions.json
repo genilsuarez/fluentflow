@@ -8,7 +8,7 @@
       "Seldom"
     ],
     "correct": "Hardly",
-    "explanation": "Hardly/Scarcely/Barely + had + subject + past participle is used for inversion with past perfect."
+    "explanation": "Hardly/Scarcely/Barely + had + sujeto + participio pasado se usa para la inversión con el pasado perfecto (past perfect)."
   },
   {
     "question": "_____ does she complain about her workload.",
@@ -19,29 +19,29 @@
       "Often"
     ],
     "correct": "Rarely",
-    "explanation": "Negative adverbs like rarely, seldom, hardly require inversion: Rarely + auxiliary + subject + verb."
+    "explanation": "Los adverbios negativos como rarely, seldom, hardly requieren inversión: Rarely + auxiliar + sujeto + verbo."
   },
   {
     "question": "Not only _____ the exam, but he also got the highest score.",
     "options": [
       "he passed",
       "passed he",
-      "he did pass",
-      "did he pass"
+      "did he pass",
+      "he did pass"
     ],
     "correct": "did he pass",
-    "explanation": "Not only requires inversion: Not only + auxiliary + subject + verb."
+    "explanation": "Not only requiere inversión: Not only + auxiliar + sujeto + verbo."
   },
   {
     "question": "Under no circumstances _____ this door unlocked.",
     "options": [
       "you should leave",
-      "should you leave",
       "you leave should",
-      "leave you should"
+      "leave you should",
+      "should you leave"
     ],
     "correct": "should you leave",
-    "explanation": "Negative expressions require inversion: Under no circumstances + auxiliary + subject + verb."
+    "explanation": "Las expresiones negativas requieren inversión: Under no circumstances + auxiliar + sujeto + verbo."
   },
   {
     "question": "_____ had we started the meeting when the fire alarm went off.",
@@ -52,29 +52,29 @@
       "Just"
     ],
     "correct": "No sooner",
-    "explanation": "No sooner + had + subject + past participle + than is used for immediate succession."
+    "explanation": "No sooner + had + sujeto + participio pasado + than se usa para expresar sucesión inmediata."
   },
   {
     "question": "Little _____ that this decision would change everything.",
     "options": [
-      "did he know",
       "knew he",
+      "did he know",
       "he did know",
       "he knew"
     ],
     "correct": "did he know",
-    "explanation": "Little (meaning 'not much') requires inversion: Little + auxiliary + subject + verb."
+    "explanation": "Little (que significa 'not much') requiere inversión: Little + auxiliar + sujeto + verbo."
   },
   {
     "question": "Never before _____ such a beautiful sunset.",
     "options": [
       "I seen have",
-      "have I seen",
       "seen I have",
+      "have I seen",
       "I have seen"
     ],
     "correct": "have I seen",
-    "explanation": "Never requires inversion: Never + auxiliary + subject + verb."
+    "explanation": "Never requiere inversión: Never + auxiliar + sujeto + verbo."
   },
   {
     "question": "Only after finishing the project _____ how difficult it was.",
@@ -85,18 +85,18 @@
       "did I realize"
     ],
     "correct": "did I realize",
-    "explanation": "Only + time expression requires inversion: Only after + auxiliary + subject + verb."
+    "explanation": "Only + expresión de tiempo requiere inversión: Only after + auxiliar + sujeto + verbo."
   },
   {
     "question": "_____ will I agree to such unreasonable terms.",
     "options": [
-      "Some way",
       "In no way",
+      "Some way",
       "Anyway",
       "This way"
     ],
     "correct": "In no way",
-    "explanation": "In no way is a negative expression requiring inversion."
+    "explanation": "In no way es una expresión negativa que requiere inversión."
   },
   {
     "question": "Seldom _____ such dedication in a young employee.",
@@ -107,7 +107,7 @@
       "see we"
     ],
     "correct": "do we see",
-    "explanation": "Seldom requires inversion: Seldom + auxiliary + subject + verb."
+    "explanation": "Seldom requiere inversión: Seldom + auxiliar + sujeto + verbo."
   },
   {
     "question": "Not until midnight _____ working on the report.",
@@ -118,29 +118,29 @@
       "she did finish"
     ],
     "correct": "did she finish",
-    "explanation": "Not until requires inversion: Not until + time + auxiliary + subject + verb."
+    "explanation": "Not until requiere inversión: Not until + tiempo + auxiliar + sujeto + verbo."
   },
   {
     "question": "_____ the door than the lights went out.",
     "options": [
       "No sooner I had opened",
       "Had I no sooner opened",
-      "No sooner had I opened",
-      "I had no sooner opened"
+      "I had no sooner opened",
+      "No sooner had I opened"
     ],
     "correct": "No sooner had I opened",
-    "explanation": "No sooner + had + subject + past participle + than."
+    "explanation": "No sooner + had + sujeto + participio pasado + than."
   },
   {
     "question": "At no time _____ that the project would fail.",
     "options": [
-      "thought I",
       "did I think",
+      "thought I",
       "I did think",
       "I thought"
     ],
     "correct": "did I think",
-    "explanation": "At no time requires inversion: At no time + auxiliary + subject + verb."
+    "explanation": "At no time requiere inversión: At no time + auxiliar + sujeto + verbo."
   },
   {
     "question": "Only when you lose something _____ its true value.",
@@ -151,7 +151,7 @@
       "you do appreciate"
     ],
     "correct": "do you appreciate",
-    "explanation": "Only when requires inversion in the main clause."
+    "explanation": "Only when requiere inversión en la cláusula principal."
   },
   {
     "question": "_____ such a talented musician.",
@@ -162,7 +162,7 @@
       "Have I rarely met"
     ],
     "correct": "Rarely have I met",
-    "explanation": "Rarely at the beginning requires inversion: Rarely + auxiliary + subject + verb."
+    "explanation": "Rarely al inicio de la oración requiere inversión: Rarely + auxiliar + sujeto + verbo."
   },
   {
     "question": "Not a word _____ during the entire meeting.",
@@ -173,73 +173,73 @@
       "did he say"
     ],
     "correct": 3,
-    "explanation": "Not a + noun requires inversion: Not a word + auxiliary + subject + verb."
+    "explanation": "Not a + sustantivo requiere inversión: Not a word + auxiliar + sujeto + verbo."
   },
   {
     "question": "_____ the importance of this decision.",
     "options": [
-      "They little realized",
       "Little did they realize",
+      "They little realized",
       "Little they realized",
       "Did they little realize"
     ],
     "correct": "Little did they realize",
-    "explanation": "Little + auxiliary + subject + verb for emphasis."
+    "explanation": "Little + auxiliar + sujeto + verbo para dar énfasis."
   },
   {
     "question": "Only by working together _____ this challenge.",
     "options": [
       "we overcome can",
-      "we can overcome",
       "can we overcome",
+      "we can overcome",
       "overcome we can"
     ],
     "correct": "can we overcome",
-    "explanation": "Only by + -ing requires inversion: Only by + auxiliary + subject + verb."
+    "explanation": "Only by + -ing requiere inversión: Only by + auxiliar + sujeto + verbo."
   },
   {
     "question": "_____ to such a ridiculous proposal.",
     "options": [
       "Never I will agree",
-      "Never will I agree",
       "Will I never agree",
+      "Never will I agree",
       "I will never agree"
     ],
     "correct": "Never will I agree",
-    "explanation": "Never at the beginning requires inversion for emphasis."
+    "explanation": "Never al inicio de la oración requiere inversión para dar énfasis."
   },
   {
     "question": "Not only _____ late, but he also forgot the documents.",
     "options": [
-      "was he",
       "he was",
       "he did be",
-      "did he be"
+      "did he be",
+      "was he"
     ],
     "correct": "was he",
-    "explanation": "Not only + be verb + subject (inversion with be)."
+    "explanation": "Not only + verbo 'be' + sujeto (inversión con 'be')."
   },
   {
     "question": "_____ such poor customer service.",
     "options": [
+      "Seldom have I experienced",
       "I have seldom experienced",
       "Seldom I have experienced",
-      "Seldom have I experienced",
       "Have I seldom experienced"
     ],
     "correct": "Seldom have I experienced",
-    "explanation": "Seldom at the beginning requires inversion."
+    "explanation": "Seldom al inicio de la oración requiere inversión."
   },
   {
     "question": "Under no circumstances _____ your password with anyone.",
     "options": [
       "you share should",
+      "should you share",
       "you should share",
-      "share you should",
-      "should you share"
+      "share you should"
     ],
     "correct": "should you share",
-    "explanation": "Under no circumstances + modal + subject + verb."
+    "explanation": "Under no circumstances + modal + sujeto + verbo."
   },
   {
     "question": "_____ the truth about what happened that night.",
@@ -250,28 +250,28 @@
       "Little anyone knew"
     ],
     "correct": "Little did anyone know",
-    "explanation": "Little + auxiliary + subject + verb."
+    "explanation": "Little + auxiliar + sujeto + verbo."
   },
   {
     "question": "Only in emergencies _____ this button.",
     "options": [
-      "should you press",
       "press you should",
       "you press should",
-      "you should press"
+      "you should press",
+      "should you press"
     ],
     "correct": "should you press",
-    "explanation": "Only in + place/situation requires inversion."
+    "explanation": "Only in + lugar/situación requiere inversión."
   },
   {
     "question": "_____ such a complex problem in such a short time.",
     "options": [
+      "Rarely can one solve",
       "One can rarely solve",
       "Can one rarely solve",
-      "Rarely one can solve",
-      "Rarely can one solve"
+      "Rarely one can solve"
     ],
     "correct": "Rarely can one solve",
-    "explanation": "Rarely + modal + subject + verb for emphasis."
+    "explanation": "Rarely + modal + sujeto + verbo para dar énfasis."
   }
 ]

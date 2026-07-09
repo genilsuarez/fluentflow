@@ -8,73 +8,73 @@
       "a type of exam"
     ],
     "correct": "a plan of subjects taught at a school",
-    "explanation": "A <curriculum> is the set of courses and content taught at a school or university."
+    "explanation": "Un <curriculum> es el conjunto de cursos y contenidos que se enseñan en una escuela o universidad."
   },
   {
     "question": "When you <graduate>, you...",
     "options": [
       "change schools",
-      "fail an exam",
       "complete your studies and receive a degree",
+      "fail an exam",
       "start a new course"
     ],
     "correct": "complete your studies and receive a degree",
-    "explanation": "To <graduate> means to successfully finish a course of study."
+    "explanation": "<Graduate> significa terminar con éxito un programa de estudios."
   },
   {
     "question": "<Tuition> refers to...",
     "options": [
       "the school bus",
-      "the money paid for education",
       "the textbooks",
+      "the money paid for education",
       "the school uniform as recognized by most authorities"
     ],
     "correct": "the money paid for education",
-    "explanation": "<Tuition> is the fee charged for instruction at a school or university."
+    "explanation": "La <tuition> es el costo que se cobra por la instrucción en una escuela o universidad."
   },
   {
     "question": "A <semester> is...",
     "options": [
       "a single class",
-      "half of an academic year",
       "a type of exam",
-      "a full academic year"
+      "a full academic year",
+      "half of an academic year"
     ],
     "correct": "half of an academic year",
-    "explanation": "A <semester> is one of the two periods that divide the academic year."
+    "explanation": "Un <semester> es uno de los dos períodos en que se divide el año académico."
   },
   {
     "question": "<Renewable energy> comes from...",
     "options": [
-      "natural gas",
       "sources that won't run out, like sun and wind",
+      "natural gas",
       "nuclear power only",
       "coal and oil"
     ],
     "correct": "sources that won't run out, like sun and wind",
-    "explanation": "<Renewable energy> comes from natural sources that are constantly replenished."
+    "explanation": "La <renewable energy> proviene de fuentes naturales que se renuevan constantemente."
   },
   {
     "question": "Your <carbon footprint> measures...",
     "options": [
       "the size of your shoes",
-      "how far you walk",
       "the amount of CO2 you produce",
+      "how far you walk",
       "your weight"
     ],
     "correct": "the amount of CO2 you produce",
-    "explanation": "Your <carbon footprint> is the total amount of greenhouse gases you produce."
+    "explanation": "Tu <carbon footprint> es la cantidad total de gases de efecto invernadero que produces."
   },
   {
     "question": "<Emissions> are...",
     "options": [
       "recycling methods",
       "types of energy",
-      "weather patterns",
-      "gases released into the atmosphere"
+      "gases released into the atmosphere",
+      "weather patterns"
     ],
     "correct": "gases released into the atmosphere",
-    "explanation": "<Emissions> are substances, especially gases, released into the air."
+    "explanation": "Las <emissions> son sustancias, especialmente gases, liberadas al aire."
   },
   {
     "question": "An <influencer> is someone who...",
@@ -85,29 +85,29 @@
       "has many followers and affects people's opinions online"
     ],
     "correct": "has many followers and affects people's opinions online",
-    "explanation": "An <influencer> is a person with a large social media following who can affect others' decisions."
+    "explanation": "Un <influencer> es una persona con muchos seguidores en redes sociales que puede influir en las decisiones de otros."
   },
   {
     "question": "When something goes <viral>, it...",
     "options": [
+      "spreads very quickly on the internet",
       "becomes very expensive",
       "becomes illegal",
-      "spreads very quickly on the internet",
       "disappears from the internet"
     ],
     "correct": "spreads very quickly on the internet",
-    "explanation": "When content goes <viral>, it is shared rapidly by many people online."
+    "explanation": "Cuando un contenido se vuelve <viral>, mucha gente lo comparte rápidamente en internet."
   },
   {
     "question": "<Engagement> on social media means...",
     "options": [
       "the time you spend online",
+      "likes, comments, and shares on a post",
       "the number of friends you have",
-      "the cost of advertising",
-      "likes, comments, and shares on a post"
+      "the cost of advertising"
     ],
     "correct": "likes, comments, and shares on a post",
-    "explanation": "<Engagement> measures how much people interact with content through likes, comments, and shares."
+    "explanation": "El <engagement> mide cuánto interactúa la gente con un contenido a través de likes, comentarios y compartidos."
   },
   {
     "question": "A <hashtag> is used to...",
@@ -118,18 +118,18 @@
       "delete posts"
     ],
     "correct": "categorize content on social media",
-    "explanation": "A <hashtag> (#) is used to label and find content about specific topics."
+    "explanation": "Un <hashtag> (#) se usa para etiquetar y encontrar contenido sobre temas específicos."
   },
   {
     "question": "<Cyberbullying> is...",
     "options": [
-      "bullying that happens online",
       "online shopping",
       "a computer virus",
-      "a type of video game"
+      "a type of video game",
+      "bullying that happens online"
     ],
     "correct": "bullying that happens online",
-    "explanation": "<Cyberbullying> is the use of technology to harass, threaten, or embarrass someone."
+    "explanation": "El <cyberbullying> es el uso de la tecnología para acosar, amenazar o humillar a alguien."
   },
   {
     "question": "A <scholarship> is...",
@@ -140,29 +140,29 @@
       "a type of exam"
     ],
     "correct": "money given to a student to help pay for education",
-    "explanation": "A <scholarship> is financial aid awarded to students based on merit or need."
+    "explanation": "Una <scholarship> es una ayuda económica que se otorga a los estudiantes según su mérito o necesidad."
   },
   {
     "question": "<Sustainability> means...",
     "options": [
       "making things faster",
+      "using resources without harming the future",
       "spending more money",
-      "building bigger cities",
-      "using resources without harming the future"
+      "building bigger cities"
     ],
     "correct": "using resources without harming the future",
-    "explanation": "<Sustainability> is the practice of using resources responsibly for future generations."
+    "explanation": "La <sustainability> es la práctica de usar los recursos de manera responsable para las futuras generaciones."
   },
   {
     "question": "<Pollution> is...",
     "options": [
       "clean air",
-      "harmful substances in the environment",
       "recycled materials",
+      "harmful substances in the environment",
       "natural resources"
     ],
     "correct": "harmful substances in the environment",
-    "explanation": "<Pollution> is the presence of harmful substances that damage the environment."
+    "explanation": "La <pollution> es la presencia de sustancias nocivas que dañan el medio ambiente."
   },
   {
     "question": "An <algorithm> is...",
@@ -173,29 +173,29 @@
       "a set of rules a computer follows to solve problems"
     ],
     "correct": "a set of rules a computer follows to solve problems",
-    "explanation": "An <algorithm> is a process or set of rules followed by a computer to perform calculations."
+    "explanation": "Un <algorithm> es un proceso o conjunto de reglas que sigue una computadora para realizar cálculos."
   },
   {
     "question": "A <content creator> is someone who...",
     "options": [
-      "designs websites only",
       "makes videos, articles, or posts for the internet",
+      "designs websites only",
       "repairs computers",
       "sells phones"
     ],
     "correct": "makes videos, articles, or posts for the internet",
-    "explanation": "A <content creator> produces digital content like videos, blogs, or social media posts."
+    "explanation": "Un <content creator> produce contenido digital como videos, blogs o publicaciones en redes sociales."
   },
   {
     "question": "<Climate change> refers to...",
     "options": [
       "daily weather forecasts",
+      "long-term changes in global temperatures and weather",
       "local temperature",
-      "seasonal changes",
-      "long-term changes in global temperatures and weather"
+      "seasonal changes"
     ],
     "correct": "long-term changes in global temperatures and weather",
-    "explanation": "<Climate change> refers to significant, long-term shifts in global climate patterns."
+    "explanation": "El <climate change> se refiere a cambios significativos y de largo plazo en los patrones climáticos globales."
   },
   {
     "question": "A university <degree> is...",
@@ -206,17 +206,17 @@
       "a student ID card"
     ],
     "correct": "a qualification awarded after completing studies",
-    "explanation": "A <degree> is an academic qualification given by a university after completing a program."
+    "explanation": "Un <degree> es un título académico que otorga una universidad al completar un programa de estudios."
   },
   {
     "question": "To <recycle> means to...",
     "options": [
-      "convert waste into reusable material",
       "throw things away",
       "burn garbage",
-      "buy new products"
+      "buy new products",
+      "convert waste into reusable material"
     ],
     "correct": "convert waste into reusable material",
-    "explanation": "To <recycle> means to process used materials so they can be used again."
+    "explanation": "<Recycle> significa procesar materiales usados para que puedan volver a utilizarse."
   }
 ]

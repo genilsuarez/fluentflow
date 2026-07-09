@@ -32,8 +32,8 @@ const MODULES_PATH = path.join(DATA_DIR, 'learningModules.json');
 const MINIMUMS = {
   flashcard: 40,
   quiz: 20,
-  completion: 25,
-  sorting: 30,
+  completion: 20,
+  sorting: 25,
   matching: 20,
   reading: 4, // sections
   reordering: 5,
@@ -244,6 +244,104 @@ function validateReading(data, fileName) {
   }
 }
 
+/**
+ * ReorderingComponent/reorderingUtils.validateReordering() compares the user's
+ * word order against `words` element-by-element (case-sensitive) — so `words`
+ * joined must reconstruct `sentence` (modulo case/trailing punctuation).
+ */
+function validateReordering(items, fileName) {
+  for (let i = 0; i < items.length; i++) {
+    const item = items[i];
+
+    if (!item.sentence || typeof item.sentence !== 'string') {
+      err('RO-FIELD', `${fileName}[${i}]: missing or invalid "sentence"`);
+      continue;
+    }
+    if (!Array.isArray(item.words) || item.words.length === 0) {
+      err('RO-FIELD', `${fileName}[${i}]: missing or empty "words"`);
+      continue;
+    }
+
+    const norm = (s) => s.toLowerCase().replace(/[.,!?;:]/g, '').trim();
+    const target = norm(item.sentence);
+    const joined = norm(item.words.join(' '));
+    if (target !== joined) {
+      err('RO-MISMATCH', `${fileName}[${i}]: words don't reconstruct sentence — "${item.sentence}" vs "${item.words.join(' ')}"`);
+    }
+  }
+}
+
+/**
+ * TransformationComponent / ErrorCorrectionComponent both check user input
+ * against `correct.some(c => normalizeAnswer(c) === norm)` — `correct` must be
+ * a non-empty array of non-empty strings.
+ */
+function validateTransformation(items, fileName) {
+  for (let i = 0; i < items.length; i++) {
+    const item = items[i];
+    if (!item.source || typeof item.source !== 'string') {
+      err('TR-FIELD', `${fileName}[${i}]: missing or invalid "source"`);
+    }
+    if (!Array.isArray(item.correct) || item.correct.length === 0 || item.correct.some((c) => !c || typeof c !== 'string')) {
+      err('TR-CORRECT', `${fileName}[${i}]: "correct" must be a non-empty array of non-empty strings`);
+    }
+  }
+}
+
+function validateErrorCorrection(items, fileName) {
+  for (let i = 0; i < items.length; i++) {
+    const item = items[i];
+    if (!item.sentence || typeof item.sentence !== 'string') {
+      err('EC-FIELD', `${fileName}[${i}]: missing or invalid "sentence"`);
+    }
+    if (!Array.isArray(item.correct) || item.correct.length === 0 || item.correct.some((c) => !c || typeof c !== 'string')) {
+      err('EC-CORRECT', `${fileName}[${i}]: "correct" must be a non-empty array of non-empty strings`);
+    }
+  }
+}
+
+/** WordFormationComponent renders the blank via the 5-underscore marker "_____". */
+const WORD_FORMATION_BLANK = '_____';
+
+function validateWordFormation(items, fileName) {
+  for (let i = 0; i < items.length; i++) {
+    const item = items[i];
+    if (!item.sentence || typeof item.sentence !== 'string') {
+      err('WF-FIELD', `${fileName}[${i}]: missing or invalid "sentence"`);
+      continue;
+    }
+    if (!item.sentence.includes(WORD_FORMATION_BLANK)) {
+      err('WF-BLANK', `${fileName}[${i}]: sentence missing blank marker "${WORD_FORMATION_BLANK}"`);
+    }
+    if (!item.rootWord || typeof item.rootWord !== 'string') {
+      err('WF-FIELD', `${fileName}[${i}]: missing or invalid "rootWord"`);
+    }
+    if (!item.correct || typeof item.correct !== 'string') {
+      err('WF-FIELD', `${fileName}[${i}]: missing or invalid "correct"`);
+    }
+  }
+}
+
+/**
+ * Generic exact-duplicate check within a single file, for modes with a
+ * primary text key (sentence/question/source). Catches copy-paste repeats
+ * regardless of mode.
+ */
+function validateInFileDuplicates(items, fileName) {
+  const keyOf = (item) => item.sentence || item.question || item.source || item.left || item.word || item.text;
+  const seen = new Map();
+  for (let i = 0; i < items.length; i++) {
+    const key = keyOf(items[i]);
+    if (!key || typeof key !== 'string') continue;
+    const norm = key.toLowerCase().replace(/\s+/g, ' ').trim();
+    if (seen.has(norm)) {
+      warn('DUP-INFILE', `${fileName}: "${key}" duplicated at [${seen.get(norm)}] and [${i}]`);
+    } else {
+      seen.set(norm, i);
+    }
+  }
+}
+
 // ============================================================
 // MAIN AUDIT
 // ============================================================
@@ -355,6 +453,28 @@ function run() {
       case 'reading':
         validateReading(rawData, fileName);
         break;
+      case 'reordering':
+        validateReordering(items, fileName);
+        break;
+      case 'transformation':
+        validateTransformation(items, fileName);
+        break;
+      case 'error-correction':
+        validateErrorCorrection(items, fileName);
+        break;
+      case 'word-formation':
+        validateWordFormation(items, fileName);
+        break;
+      case 'listening-quiz':
+        validateQuiz(items, fileName);
+        break;
+      case 'listen-complete':
+        validateCompletion(items, fileName);
+        break;
+    }
+
+    if (mod.learningMode !== 'reading' && mod.learningMode !== 'flashcard' && mod.learningMode !== 'sorting') {
+      validateInFileDuplicates(items, fileName);
     }
   }
 

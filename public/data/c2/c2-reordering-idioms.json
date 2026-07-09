@@ -2,69 +2,324 @@
   {
     "id": "reord-id-c2-001",
     "sentence": "Not until the epistemological foundations were laid bare did the house of cards collapse",
-    "words": ["Not", "until", "the", "epistemological", "foundations", "were", "laid", "bare", "did", "the", "house", "of", "cards", "collapse"],
+    "words": [
+      "Not",
+      "until",
+      "the",
+      "epistemological",
+      "foundations",
+      "were",
+      "laid",
+      "bare",
+      "did",
+      "the",
+      "house",
+      "of",
+      "cards",
+      "collapse"
+    ],
     "hint": "Inversion after 'Not until'",
-    "explanation": "'House of cards' means a fragile structure. 'Laid bare' means exposed. 'Not until' triggers inversion."
+    "explanation": "'House of cards' significa una estructura frágil. 'Laid bare' significa expuesto. 'Not until' desencadena la inversión."
   },
   {
     "id": "reord-id-c2-002",
     "sentence": "Were the academy to rest on its laurels the intellectual stagnation would be irreversible",
-    "words": ["Were", "the", "academy", "to", "rest", "on", "its", "laurels", "the", "intellectual", "stagnation", "would", "be", "irreversible"],
+    "words": [
+      "Were",
+      "the",
+      "academy",
+      "to",
+      "rest",
+      "on",
+      "its",
+      "laurels",
+      "the",
+      "intellectual",
+      "stagnation",
+      "would",
+      "be",
+      "irreversible"
+    ],
     "hint": "Formal conditional: Were + subject + to + base form",
-    "explanation": "'Rest on one's laurels' means to be complacent. Formal conditional with 'were...to'."
+    "explanation": "'Rest on one's laurels' significa dormirse en los laureles, quedarse conforme. Condicional formal con 'were...to'."
   },
   {
     "id": "reord-id-c2-003",
     "sentence": "The philosopher's magnum opus opened a Pandora's box of ontological questions that remain unresolved",
-    "words": ["The", "philosopher's", "magnum", "opus", "opened", "a", "Pandora's", "box", "of", "ontological", "questions", "that", "remain", "unresolved"],
-    "explanation": "'Open a Pandora's box' means to unleash unforeseen problems. Relative clause with 'that'."
+    "words": [
+      "The",
+      "philosopher's",
+      "magnum",
+      "opus",
+      "opened",
+      "a",
+      "Pandora's",
+      "box",
+      "of",
+      "ontological",
+      "questions",
+      "that",
+      "remain",
+      "unresolved"
+    ],
+    "explanation": "'Open a Pandora's box' significa desatar problemas imprevistos. Cláusula relativa con 'that'."
   },
   {
     "id": "reord-id-c2-004",
     "sentence": "Only by reading between the lines can one discern the author's true ideological commitments",
-    "words": ["Only", "by", "reading", "between", "the", "lines", "can", "one", "discern", "the", "author's", "true", "ideological", "commitments"],
+    "words": [
+      "Only",
+      "by",
+      "reading",
+      "between",
+      "the",
+      "lines",
+      "can",
+      "one",
+      "discern",
+      "the",
+      "author's",
+      "true",
+      "ideological",
+      "commitments"
+    ],
     "hint": "Inversion after 'Only by + gerund'",
-    "explanation": "'Read between the lines' means to understand hidden meaning. 'Only by' triggers inversion."
+    "explanation": "'Read between the lines' significa entender el significado oculto. 'Only by' desencadena la inversión."
   },
   {
     "id": "reord-id-c2-005",
     "sentence": "It is imperative that scholars not throw the baby out with the bathwater when revising established theories",
-    "words": ["It", "is", "imperative", "that", "scholars", "not", "throw", "the", "baby", "out", "with", "the", "bathwater", "when", "revising", "established", "theories"],
+    "words": [
+      "It",
+      "is",
+      "imperative",
+      "that",
+      "scholars",
+      "not",
+      "throw",
+      "the",
+      "baby",
+      "out",
+      "with",
+      "the",
+      "bathwater",
+      "when",
+      "revising",
+      "established",
+      "theories"
+    ],
     "hint": "Subjunctive: It is imperative that + subject + base form",
-    "explanation": "'Throw the baby out with the bathwater' means to discard the good with the bad. Subjunctive mood."
+    "explanation": "'Throw the baby out with the bathwater' significa descartar lo bueno junto con lo malo. Modo subjuntivo."
   },
   {
     "id": "reord-id-c2-006",
     "sentence": "Never before had a hermeneutic approach so thoroughly turned the tables on positivist methodology",
-    "words": ["Never", "before", "had", "a", "hermeneutic", "approach", "so", "thoroughly", "turned", "the", "tables", "on", "positivist", "methodology"],
+    "words": [
+      "Never",
+      "before",
+      "had",
+      "a",
+      "hermeneutic",
+      "approach",
+      "so",
+      "thoroughly",
+      "turned",
+      "the",
+      "tables",
+      "on",
+      "positivist",
+      "methodology"
+    ],
     "hint": "Inversion after 'Never before'",
-    "explanation": "'Turn the tables' means to reverse a situation. 'Never before' triggers inversion with past perfect."
+    "explanation": "'Turn the tables' significa invertir una situación. 'Never before' desencadena la inversión con el pasado perfecto."
   },
   {
     "id": "reord-id-c2-007",
     "sentence": "The dialectical tension between the two schools of thought proved to be a double-edged sword",
-    "words": ["The", "dialectical", "tension", "between", "the", "two", "schools", "of", "thought", "proved", "to", "be", "a", "double-edged", "sword"],
-    "explanation": "'Double-edged sword' means something with both advantages and disadvantages. 'Proved to be' for outcome."
+    "words": [
+      "The",
+      "dialectical",
+      "tension",
+      "between",
+      "the",
+      "two",
+      "schools",
+      "of",
+      "thought",
+      "proved",
+      "to",
+      "be",
+      "a",
+      "double-edged",
+      "sword"
+    ],
+    "explanation": "'Double-edged sword' significa algo que tiene tanto ventajas como desventajas. 'Proved to be' se usa para el resultado."
   },
   {
     "id": "reord-id-c2-008",
     "sentence": "Under no circumstances should the academy sweep systemic inequities under the rug",
-    "words": ["Under", "no", "circumstances", "should", "the", "academy", "sweep", "systemic", "inequities", "under", "the", "rug"],
+    "words": [
+      "Under",
+      "no",
+      "circumstances",
+      "should",
+      "the",
+      "academy",
+      "sweep",
+      "systemic",
+      "inequities",
+      "under",
+      "the",
+      "rug"
+    ],
     "hint": "Inversion after 'Under no circumstances'",
-    "explanation": "'Sweep under the rug' means to hide problems. Negative phrase triggers inversion."
+    "explanation": "'Sweep under the rug' significa ocultar problemas. Una frase negativa desencadena la inversión."
   },
   {
     "id": "reord-id-c2-009",
     "sentence": "Had the paradigm not been a sacred cow for so long the field would have evolved sooner",
-    "words": ["Had", "the", "paradigm", "not", "been", "a", "sacred", "cow", "for", "so", "long", "the", "field", "would", "have", "evolved", "sooner"],
+    "words": [
+      "Had",
+      "the",
+      "paradigm",
+      "not",
+      "been",
+      "a",
+      "sacred",
+      "cow",
+      "for",
+      "so",
+      "long",
+      "the",
+      "field",
+      "would",
+      "have",
+      "evolved",
+      "sooner"
+    ],
     "hint": "Inverted third conditional",
-    "explanation": "'Sacred cow' means something exempt from criticism. Inverted conditional for unreal past."
+    "explanation": "'Sacred cow' significa algo exento de críticas. Condicional invertida para un pasado irreal."
   },
   {
     "id": "reord-id-c2-010",
     "sentence": "Rarely does a single monograph succeed in killing two birds with one stone across disciplines",
-    "words": ["Rarely", "does", "a", "single", "monograph", "succeed", "in", "killing", "two", "birds", "with", "one", "stone", "across", "disciplines"],
+    "words": [
+      "Rarely",
+      "does",
+      "a",
+      "single",
+      "monograph",
+      "succeed",
+      "in",
+      "killing",
+      "two",
+      "birds",
+      "with",
+      "one",
+      "stone",
+      "across",
+      "disciplines"
+    ],
     "hint": "Inversion after 'Rarely'",
-    "explanation": "'Kill two birds with one stone' means to achieve two goals at once. 'Rarely' triggers inversion."
+    "explanation": "'Kill two birds with one stone' significa lograr dos objetivos a la vez. 'Rarely' desencadena la inversión."
+  },
+  {
+    "id": "reord-id-c2-011",
+    "sentence": "Such bureaucratic delays are par for the course in academic publishing",
+    "words": [
+      "Such",
+      "bureaucratic",
+      "delays",
+      "are",
+      "par",
+      "for",
+      "the",
+      "course",
+      "in",
+      "academic",
+      "publishing"
+    ],
+    "hint": "Subject + verb + idiom + prepositional phrase",
+    "explanation": "'Par for the course' significa típico o esperado, dadas las circunstancias."
+  },
+  {
+    "id": "reord-id-c2-012",
+    "sentence": "No one addressed the elephant in the room during the symposium",
+    "words": [
+      "No",
+      "one",
+      "addressed",
+      "the",
+      "elephant",
+      "in",
+      "the",
+      "room",
+      "during",
+      "the",
+      "symposium"
+    ],
+    "hint": "Subject + verb + idiom + time expression",
+    "explanation": "'The elephant in the room' se refiere a un problema evidente que todos evitan discutir."
+  },
+  {
+    "id": "reord-id-c2-013",
+    "sentence": "Critics argued the reform was little more than a Trojan horse for deregulation",
+    "words": [
+      "Critics",
+      "argued",
+      "the",
+      "reform",
+      "was",
+      "little",
+      "more",
+      "than",
+      "a",
+      "Trojan",
+      "horse",
+      "for",
+      "deregulation"
+    ],
+    "hint": "Subject + verb + that-clause + idiom",
+    "explanation": "'A Trojan horse' se refiere a algo que parece inofensivo pero que oculta un propósito dañino."
+  },
+  {
+    "id": "reord-id-c2-014",
+    "sentence": "The scandal continued to cast a long shadow over the institution's credibility",
+    "words": [
+      "The",
+      "scandal",
+      "continued",
+      "to",
+      "cast",
+      "a",
+      "long",
+      "shadow",
+      "over",
+      "the",
+      "institution's",
+      "credibility"
+    ],
+    "hint": "Subject + verb + infinitive + idiom",
+    "explanation": "'Cast a long shadow' significa tener un efecto negativo duradero sobre algo."
+  },
+  {
+    "id": "reord-id-c2-015",
+    "sentence": "To gild the lily further would only weaken the argument's austere elegance",
+    "words": [
+      "To",
+      "gild",
+      "the",
+      "lily",
+      "further",
+      "would",
+      "only",
+      "weaken",
+      "the",
+      "argument's",
+      "austere",
+      "elegance"
+    ],
+    "hint": "Idiom + conditional clause",
+    "explanation": "'Gild the lily' significa añadir una decoración innecesaria a algo que ya es bueno, arruinando su efecto."
   }
 ]

@@ -8,51 +8,51 @@
       "He started smoking."
     ],
     "correct": "He quit smoking permanently.",
-    "explanation": "<Stop> + gerund means to cease the activity: he no longer smokes."
+    "explanation": "<Stop> + gerundio significa dejar de hacer la actividad: ya no fuma."
   },
   {
     "question": "'He stopped to smoke.' This means:",
     "options": [
-      "He paused what he was doing in order to smoke.",
       "He forgot to smoke.",
+      "He paused what he was doing in order to smoke.",
       "He continued smoking.",
       "He quit smoking."
     ],
     "correct": "He paused what he was doing in order to smoke.",
-    "explanation": "<Stop> + infinitive means to pause one activity in order to do another."
+    "explanation": "<Stop> + infinitivo significa pausar una actividad para hacer otra."
   },
   {
     "question": "'I remember locking the door.' This means:",
     "options": [
       "I forgot to lock it.",
-      "I have a memory of locking it (I did it).",
       "I will lock it later.",
+      "I have a memory of locking it (I did it).",
       "I must not forget to lock it."
     ],
     "correct": "I have a memory of locking it (I did it).",
-    "explanation": "<Remember> + gerund refers to a memory of a past action."
+    "explanation": "<Remember> + gerundio se refiere al recuerdo de una acción pasada."
   },
   {
     "question": "'Remember to lock the door.' This means:",
     "options": [
-      "Don't forget to lock it (future action).",
       "You regret locking it.",
       "You locked it already.",
-      "You have a memory of locking it."
+      "You have a memory of locking it.",
+      "Don't forget to lock it (future action)."
     ],
     "correct": "Don't forget to lock it (future action).",
-    "explanation": "<Remember> + infinitive means don't forget to do something in the future."
+    "explanation": "<Remember> + infinitivo significa no olvidar hacer algo en el futuro."
   },
   {
     "question": "'She tried to lift the box.' This means:",
     "options": [
-      "She experimented with lifting it.",
       "She made an effort to lift it (it was difficult).",
+      "She experimented with lifting it.",
       "She stopped lifting it.",
       "She successfully lifted it."
     ],
     "correct": "She made an effort to lift it (it was difficult).",
-    "explanation": "<Try> + infinitive means to attempt something that requires effort."
+    "explanation": "<Try> + infinitivo significa intentar algo que requiere esfuerzo."
   },
   {
     "question": "'She tried lifting the box from the other side.' This means:",
@@ -63,160 +63,160 @@
       "She attempted with great effort."
     ],
     "correct": "She experimented with a different method.",
-    "explanation": "<Try> + gerund means to experiment with a method or approach."
+    "explanation": "<Try> + gerundio significa experimentar con un método o enfoque."
   },
   {
     "question": "'I forgot to buy milk.' This means:",
     "options": [
       "I don't remember the experience of buying milk.",
       "I have a memory of buying milk.",
-      "I regret buying milk.",
-      "I failed to buy milk (I should have)."
+      "I failed to buy milk (I should have).",
+      "I regret buying milk."
     ],
     "correct": "I failed to buy milk (I should have).",
-    "explanation": "<Forget> + infinitive means you didn't do something you were supposed to do."
+    "explanation": "<Forget> + infinitivo significa que no hiciste algo que se suponía debías hacer."
   },
   {
     "question": "'I'll never forget meeting the president.' This means:",
     "options": [
       "I need to meet the president.",
       "I regret meeting the president.",
-      "The memory of meeting the president is unforgettable.",
-      "I failed to meet the president."
+      "I failed to meet the president.",
+      "The memory of meeting the president is unforgettable."
     ],
     "correct": "The memory of meeting the president is unforgettable.",
-    "explanation": "<Forget> + gerund refers to a memorable past experience."
+    "explanation": "<Forget> + gerundio se refiere a una experiencia pasada memorable."
   },
   {
     "question": "'We regret to inform you that your application was rejected.' The use of 'regret to inform' indicates:",
     "options": [
-      "An ongoing activity.",
       "A formal announcement of bad news.",
+      "An ongoing activity.",
       "A past mistake.",
       "A happy memory."
     ],
     "correct": "A formal announcement of bad news.",
-    "explanation": "<Regret> + infinitive is used formally to deliver bad news: we are sorry to say."
+    "explanation": "<Regret> + infinitivo se usa formalmente para dar malas noticias: lamentamos informar."
   },
   {
     "question": "'She regrets not studying harder.' This means:",
     "options": [
-      "She is sorry she didn't study more in the past.",
       "She enjoys studying.",
+      "She is sorry she didn't study more in the past.",
       "She is about to deliver bad news.",
       "She plans to study harder."
     ],
     "correct": "She is sorry she didn't study more in the past.",
-    "explanation": "<Regret> + gerund means feeling sorry about a past action or inaction."
+    "explanation": "<Regret> + gerundio significa arrepentirse de una acción u omisión pasada."
   },
   {
     "question": "'He went on talking for two hours.' This means:",
     "options": [
       "He started a new topic.",
-      "He continued talking (same activity).",
       "He stopped talking.",
+      "He continued talking (same activity).",
       "He talked and then did something else."
     ],
     "correct": "He continued talking (same activity).",
-    "explanation": "<Go on> + gerund means to continue the same activity."
+    "explanation": "<Go on> + gerundio significa continuar con la misma actividad."
   },
   {
     "question": "'After the break, she went on to discuss the budget.' This means:",
     "options": [
       "She stopped discussing.",
       "She continued the same discussion.",
-      "She moved to a new topic (the budget).",
-      "She repeated the previous topic."
+      "She repeated the previous topic.",
+      "She moved to a new topic (the budget)."
     ],
     "correct": "She moved to a new topic (the budget).",
-    "explanation": "<Go on> + infinitive means to proceed to the next activity or topic."
+    "explanation": "<Go on> + infinitivo significa pasar a la siguiente actividad o tema."
   },
   {
     "question": "'This job means working weekends.' The word 'means' here indicates:",
     "options": [
-      "regret",
       "involvement / consequence",
+      "regret",
       "intention",
       "desire"
     ],
     "correct": "involvement / consequence",
-    "explanation": "<Mean> + gerund = involve or result in: the job involves working weekends."
+    "explanation": "<Mean> + gerundio = implicar o tener como consecuencia: el trabajo implica trabajar los fines de semana."
   },
   {
     "question": "'I didn't mean to offend you.' The word 'mean' here indicates:",
     "options": [
-      "intention",
       "experiment",
+      "intention",
       "consequence",
       "memory"
     ],
     "correct": "intention",
-    "explanation": "<Mean> + infinitive = intend: I didn't intend to offend you."
+    "explanation": "<Mean> + infinitivo = tener la intención: no tuve la intención de ofenderte."
   },
   {
     "question": "Which pair shows the correct difference?",
     "options": [
       "stop + -ing = future; stop + to = past",
-      "stop + -ing = quit the activity; stop + to = pause to do something else",
       "stop + -ing and stop + to have the same meaning",
+      "stop + -ing = quit the activity; stop + to = pause to do something else",
       "stop + -ing = pause; stop + to = quit"
     ],
     "correct": "stop + -ing = quit the activity; stop + to = pause to do something else",
-    "explanation": "<Stop smoking> = quit. <Stop to smoke> = pause another activity to smoke."
+    "explanation": "<Stop smoking> = dejar de fumar. <Stop to smoke> = pausar otra actividad para fumar."
   },
   {
     "question": "Complete: 'If you can't sleep, try ______ some warm milk.'",
     "options": [
       "drank",
-      "drinking",
       "to drink",
-      "drink"
+      "drink",
+      "drinking"
     ],
     "correct": "drinking",
-    "explanation": "<Try> + gerund = experiment with a solution. Try drinking milk as a remedy."
+    "explanation": "<Try> + gerundio = experimentar con una solución. Probar a beber leche como remedio."
   },
   {
     "question": "Complete: 'I tried ______ the manager, but she was in a meeting.'",
     "options": [
-      "reach",
       "to reach",
+      "reach",
       "reaching",
       "reached"
     ],
     "correct": "to reach",
-    "explanation": "<Try> + infinitive = attempt something difficult. I made an effort to reach her."
+    "explanation": "<Try> + infinitivo = intentar algo difícil. Hice un esfuerzo por comunicarme con ella."
   },
   {
     "question": "Which sentence uses 'remember' correctly for a past memory?",
     "options": [
       "I remembered to visiting Paris.",
+      "I remember visiting Paris in 2019.",
       "I remember visit Paris in 2019.",
-      "I remember to visit Paris in 2019.",
-      "I remember visiting Paris in 2019."
+      "I remember to visit Paris in 2019."
     ],
     "correct": "I remember visiting Paris in 2019.",
-    "explanation": "<Remember> + gerund = recall a past experience: I remember visiting Paris."
+    "explanation": "<Remember> + gerundio = recordar una experiencia pasada: recuerdo haber visitado París."
   },
   {
     "question": "'Moving to a new city means ______ new friends.' Choose the correct form.",
     "options": [
       "make",
-      "making",
       "to make",
+      "making",
       "made"
     ],
     "correct": "making",
-    "explanation": "<Mean> + gerund = involve as a consequence. Moving involves making new friends."
+    "explanation": "<Mean> + gerundio = implicar como consecuencia. Mudarse implica hacer nuevos amigos."
   },
   {
     "question": "Which verb changes meaning depending on whether it's followed by gerund or infinitive?",
     "options": [
-      "stop",
       "enjoy",
       "refuse",
-      "want"
+      "want",
+      "stop"
     ],
     "correct": "stop",
-    "explanation": "<Stop> changes meaning: stop doing (quit) vs stop to do (pause for a purpose). Enjoy and want only take one form each."
+    "explanation": "<Stop> cambia de significado: stop doing (dejar de hacer) frente a stop to do (pausar con un propósito). Enjoy y want solo admiten una forma cada uno."
   }
 ]

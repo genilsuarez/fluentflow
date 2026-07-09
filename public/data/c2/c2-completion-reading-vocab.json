@@ -2,121 +2,121 @@
   {
     "sentence": "The text reveals an ______ at the heart of the deconstructionist argument.",
     "correct": "aporia",
-    "explanation": "An <aporia> is an irresolvable internal contradiction in a philosophical argument.",
+    "explanation": "Una <aporia> es una contradicción interna irresoluble en un argumento filosófico.",
     "tip": "Complete with the term for an irresolvable contradiction"
   },
   {
     "sentence": "The city's architecture is a ______ of colonial, modern, and postmodern layers.",
     "correct": "palimpsest",
-    "explanation": "A <palimpsest> metaphorically describes something with multiple overlapping layers of history.",
+    "explanation": "Un <palimpsest> describe metafóricamente algo con múltiples capas superpuestas de historia.",
     "tip": "Complete with the term for layered historical traces"
   },
   {
     "sentence": "Bakhtin's concept of ______ emphasizes the multiplicity of voices in any text.",
     "correct": "heteroglossia",
-    "explanation": "<Heteroglossia> refers to the coexistence of diverse social languages within a single text.",
+    "explanation": "<Heteroglossia> se refiere a la coexistencia de diversos lenguajes sociales dentro de un mismo texto.",
     "tip": "Complete with Bakhtin's term for multiple voices"
   },
   {
     "sentence": "Spivak's question about whether the ______ can speak remains central to postcolonial studies.",
     "correct": "subaltern",
-    "explanation": "The <subaltern> refers to marginalized populations excluded from hegemonic power structures.",
+    "explanation": "El <subaltern> se refiere a poblaciones marginadas excluidas de las estructuras de poder hegemónicas.",
     "tip": "Complete with the term for marginalized groups"
   },
   {
     "sentence": "The poem's vivid ______ brings the painting to life through language.",
     "correct": "ekphrasis",
-    "explanation": "<Ekphrasis> is the literary description or representation of a visual work of art.",
+    "explanation": "La <ekphrasis> es la descripción o representación literaria de una obra de arte visual.",
     "tip": "Complete with the term for literary description of visual art"
   },
   {
     "sentence": "Questions of ______ — what exists and what it means to exist — underpin the entire philosophical tradition.",
     "correct": "ontology",
-    "explanation": "<Ontology> is the branch of philosophy dealing with the nature of being and existence.",
+    "explanation": "La <ontology> es la rama de la filosofía que trata la naturaleza del ser y la existencia.",
     "tip": "Complete with the philosophical study of being"
   },
   {
     "sentence": "Kant's ______ demands that we act only according to universalizable principles.",
     "correct": "categorical imperative",
-    "explanation": "The <categorical imperative> is Kant's foundational principle of moral philosophy.",
+    "explanation": "El <categorical imperative> es el principio fundamental de la filosofía moral de Kant.",
     "tip": "Complete with Kant's universal moral law (two words)"
   },
   {
     "sentence": "The hard problem of consciousness centers on explaining subjective ______.",
     "correct": "qualia",
-    "explanation": "<Qualia> are the subjective, phenomenal qualities of conscious experience.",
+    "explanation": "Los <qualia> son las cualidades subjetivas y fenoménicas de la experiencia consciente.",
     "tip": "Complete with the term for subjective conscious experiences"
   },
   {
     "sentence": "The argument suffers from ______, assuming what it sets out to prove.",
     "correct": "vicious circularity",
-    "explanation": "<Vicious circularity> occurs when an argument's conclusion is presupposed in its premises.",
+    "explanation": "La <vicious circularity> ocurre cuando la conclusión de un argumento ya está presupuesta en sus premisas.",
     "tip": "Complete with the term for circular reasoning (two words)"
   },
   {
     "sentence": "The ______ of human dignity is a cornerstone of international law.",
     "correct": "inviolability",
-    "explanation": "<Inviolability> means the quality of being sacred and not to be transgressed.",
+    "explanation": "<Inviolability> significa la cualidad de ser sagrado e intransgredible.",
     "tip": "Complete with the term for being untouchable/sacred"
   },
   {
     "sentence": "Legal ______ has evolved significantly since the Enlightenment.",
     "correct": "jurisprudence",
-    "explanation": "<Jurisprudence> is the theory and philosophy of law.",
+    "explanation": "La <jurisprudence> es la teoría y filosofía del derecho.",
     "tip": "Complete with the term for the philosophy of law"
   },
   {
     "sentence": "Understanding the ______ of the disease is essential for developing effective treatments.",
     "correct": "pathophysiology",
-    "explanation": "<Pathophysiology> studies the functional changes associated with disease.",
+    "explanation": "La <pathophysiology> estudia los cambios funcionales asociados con la enfermedad.",
     "tip": "Complete with the study of disease mechanisms"
   },
   {
     "sentence": "Intellectual ______ between competing theories can yield unexpected insights.",
     "correct": "arbitrage",
-    "explanation": "<Arbitrage> metaphorically means exploiting differences between frameworks productively.",
+    "explanation": "<Arbitrage> significa, metafóricamente, aprovechar de forma productiva las diferencias entre marcos teóricos.",
     "tip": "Complete with the term for exploiting differences between systems"
   },
   {
     "sentence": "The ______ of the argument reveals connections invisible at the surface level.",
     "correct": "topology",
-    "explanation": "<Topology> metaphorically refers to the structural arrangement within a system of ideas.",
+    "explanation": "<Topology> se refiere metafóricamente a la disposición estructural dentro de un sistema de ideas.",
     "tip": "Complete with the term for structural arrangement"
   },
   {
     "sentence": "The ______ interdisciplinary expertise is rarely found in a single researcher.",
     "correct": "requisite",
-    "explanation": "<Requisite> means necessary or required for a particular purpose.",
+    "explanation": "<Requisite> significa necesario o requerido para un propósito particular.",
     "tip": "Complete with the adjective meaning 'necessary'"
   },
   {
     "sentence": "Hegel's ______ proceeds through thesis, antithesis, and synthesis.",
     "correct": "dialectic",
-    "explanation": "The <dialectic> is a method of resolving opposing ideas through reasoned argument.",
+    "explanation": "La <dialectic> es un método para resolver ideas opuestas mediante un argumento razonado.",
     "tip": "Complete with Hegel's method of reasoning"
   },
   {
     "sentence": "Biblical ______ has a long tradition in Western scholarship.",
     "correct": "hermeneutics",
-    "explanation": "<Hermeneutics> is the theory and methodology of interpretation.",
+    "explanation": "La <hermeneutics> es la teoría y metodología de la interpretación.",
     "tip": "Complete with the study of interpretation"
   },
   {
     "sentence": "A ______ explanation accounts for phenomena by reference to their purpose.",
     "correct": "teleological",
-    "explanation": "<Teleological> relates to explaining things by their purpose or end goals.",
+    "explanation": "<Teleological> se relaciona con explicar las cosas por su propósito o fin último.",
     "tip": "Complete with the adjective meaning 'purpose-based'"
   },
   {
     "sentence": "Husserl's ______ seeks to describe experience as it presents itself to consciousness.",
     "correct": "phenomenology",
-    "explanation": "<Phenomenology> studies the structures of subjective experience.",
+    "explanation": "La <phenomenology> estudia las estructuras de la experiencia subjetiva.",
     "tip": "Complete with Husserl's philosophical method"
   },
   {
     "sentence": "There remains a significant ______ gap in our understanding of consciousness.",
     "correct": "epistemic",
-    "explanation": "<Epistemic> relates to knowledge and the conditions for its possibility.",
+    "explanation": "<Epistemic> se relaciona con el conocimiento y las condiciones de su posibilidad.",
     "tip": "Complete with the adjective relating to knowledge"
   },
   {
@@ -128,7 +128,7 @@
       "clear",
       "direct"
     ],
-    "explanation": "<Convoluted> means extremely complex and difficult to follow",
+    "explanation": "<Convoluted> significa extremadamente complejo y difícil de seguir",
     "tip": "Choose the word for overly complex"
   },
   {
@@ -140,7 +140,7 @@
       "vague",
       "gentle"
     ],
-    "explanation": "<Trenchant> means vigorous, incisive, and effective",
+    "explanation": "<Trenchant> significa vigoroso, incisivo y eficaz",
     "tip": "Choose the word for sharp, penetrating criticism"
   },
   {
@@ -152,7 +152,7 @@
       "debatable",
       "questionable"
     ],
-    "explanation": "<Irrefutable> means impossible to deny or disprove",
+    "explanation": "<Irrefutable> significa imposible de negar o refutar",
     "tip": "Choose the strongest word"
   },
   {
@@ -164,7 +164,7 @@
       "logical",
       "valid"
     ],
-    "explanation": "<Specious> means superficially plausible but actually wrong",
+    "explanation": "<Specious> significa superficialmente plausible pero en realidad incorrecto",
     "tip": "Choose the word for misleadingly attractive reasoning"
   },
   {
@@ -176,7 +176,7 @@
       "lacking",
       "empty"
     ],
-    "explanation": "<Replete> means filled or well-supplied with",
+    "explanation": "<Replete> significa lleno o bien provisto de",
     "tip": "Choose the word meaning 'full of'"
   }
 ]

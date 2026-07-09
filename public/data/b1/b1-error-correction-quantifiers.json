@@ -1,92 +1,166 @@
 [
   {
     "sentence": "How much friends do you have?",
-    "correct": ["How many friends do you have?"],
+    "correct": [
+      "How many friends do you have?"
+    ],
     "hint": "Check the quantifier — are 'friends' countable or uncountable?",
-    "explanation": "Friends are countable → use 'many', not 'much'. 'Much' is for uncountable nouns."
+    "explanation": "'Friends' es contable → se usa 'many', no 'much'. 'Much' se usa con sustantivos incontables."
   },
   {
     "sentence": "I don't have many money.",
-    "correct": ["I don't have much money."],
+    "correct": [
+      "I don't have much money."
+    ],
     "hint": "Is 'money' countable or uncountable?",
-    "explanation": "Money is uncountable → use 'much', not 'many'. 'Many' is for countable nouns."
+    "explanation": "'Money' es incontable → se usa 'much', no 'many'. 'Many' se usa con sustantivos contables."
   },
   {
     "sentence": "She ate too many rice.",
-    "correct": ["She ate too much rice."],
+    "correct": [
+      "She ate too much rice."
+    ],
     "hint": "Is 'rice' countable or uncountable?",
-    "explanation": "Rice is uncountable → 'too much rice', not 'too many rice'."
+    "explanation": "'Rice' es incontable → 'too much rice', no 'too many rice'."
   },
   {
     "sentence": "Do you have some questions?",
-    "correct": ["Do you have any questions?"],
+    "correct": [
+      "Do you have any questions?"
+    ],
     "hint": "Check: do we use 'some' or 'any' in questions?",
-    "explanation": "In general questions, use 'any'. 'Some' is for positive statements or offers."
+    "explanation": "En preguntas generales, se usa 'any'. 'Some' se usa en afirmaciones u ofrecimientos."
   },
   {
     "sentence": "I didn't see some people at the party.",
-    "correct": ["I didn't see any people at the party.", "I didn't see many people at the party."],
+    "correct": [
+      "I didn't see any people at the party.",
+      "I didn't see many people at the party."
+    ],
     "hint": "Check: what do we use in negative sentences?",
-    "explanation": "In negatives, use 'any' (or 'many'), not 'some'. 'Some' is for positives."
+    "explanation": "En oraciones negativas, se usa 'any' (o 'many'), no 'some'. 'Some' se usa en afirmaciones."
   },
   {
     "sentence": "There is few milk in the fridge.",
-    "correct": ["There is little milk in the fridge."],
+    "correct": [
+      "There is little milk in the fridge."
+    ],
     "hint": "Is 'milk' countable or uncountable?",
-    "explanation": "Milk is uncountable → use 'little', not 'few'. 'Few' is for countable plural."
+    "explanation": "'Milk' es incontable → se usa 'little', no 'few'. 'Few' se usa con plurales contables."
   },
   {
     "sentence": "He has very little friends.",
-    "correct": ["He has very few friends."],
+    "correct": [
+      "He has very few friends."
+    ],
     "hint": "Are 'friends' countable?",
-    "explanation": "Friends are countable → 'few friends'. 'Little' is for uncountable nouns."
+    "explanation": "'Friends' es contable → 'few friends'. 'Little' se usa con sustantivos incontables."
   },
   {
     "sentence": "She needs a few water.",
-    "correct": ["She needs a little water."],
+    "correct": [
+      "She needs a little water."
+    ],
     "hint": "Is 'water' countable or uncountable?",
-    "explanation": "Water is uncountable → 'a little water'. 'A few' is for countable things."
+    "explanation": "'Water' es incontable → 'a little water'. 'A few' se usa con cosas contables."
   },
   {
     "sentence": "How many luggage do you have?",
-    "correct": ["How much luggage do you have?"],
+    "correct": [
+      "How much luggage do you have?"
+    ],
     "hint": "Is 'luggage' countable or uncountable?",
-    "explanation": "Luggage is uncountable (no plural!) → 'how much luggage', not 'how many'."
+    "explanation": "'Luggage' es incontable (¡no tiene plural!) → 'how much luggage', no 'how many'."
   },
   {
     "sentence": "I have a lot of informations about this topic.",
-    "correct": ["I have a lot of information about this topic."],
+    "correct": [
+      "I have a lot of information about this topic."
+    ],
     "hint": "Check the noun — can 'information' be plural?",
-    "explanation": "'Information' is uncountable — it has no plural form. Remove the 's'."
+    "explanation": "'Information' es incontable — no tiene forma plural. Se elimina la 's'."
   },
   {
     "sentence": "There are much cars in the parking lot.",
-    "correct": ["There are many cars in the parking lot.", "There are a lot of cars in the parking lot."],
+    "correct": [
+      "There are many cars in the parking lot.",
+      "There are a lot of cars in the parking lot."
+    ],
     "hint": "Cars are countable — which quantifier?",
-    "explanation": "Cars are countable → 'many cars' or 'a lot of cars', not 'much cars'."
+    "explanation": "'Cars' es contable → 'many cars' o 'a lot of cars', no 'much cars'."
   },
   {
     "sentence": "Would you like any coffee?",
-    "correct": ["Would you like some coffee?"],
+    "correct": [
+      "Would you like some coffee?"
+    ],
     "hint": "Is this an offer? What do we use in offers?",
-    "explanation": "Offers use 'some' even in question form (we expect a positive answer)."
+    "explanation": "En los ofrecimientos se usa 'some' incluso en preguntas (se espera una respuesta afirmativa)."
   },
   {
     "sentence": "She gave me many advice.",
-    "correct": ["She gave me a lot of advice.", "She gave me much advice."],
+    "correct": [
+      "She gave me a lot of advice.",
+      "She gave me much advice."
+    ],
     "hint": "Is 'advice' countable?",
-    "explanation": "'Advice' is uncountable (no plural). Use 'a lot of' or 'much', not 'many'."
+    "explanation": "'Advice' es incontable (no tiene plural). Se usa 'a lot of' o 'much', no 'many'."
   },
   {
     "sentence": "There isn't many time left.",
-    "correct": ["There isn't much time left."],
+    "correct": [
+      "There isn't much time left."
+    ],
     "hint": "Is 'time' countable?",
-    "explanation": "Time (in this sense) is uncountable → 'much time', not 'many time'."
+    "explanation": "'Time' (en este sentido) es incontable → 'much time', no 'many time'."
   },
   {
     "sentence": "I bought a few furniture for the new apartment.",
-    "correct": ["I bought some furniture for the new apartment.", "I bought a little furniture for the new apartment."],
+    "correct": [
+      "I bought some furniture for the new apartment.",
+      "I bought a little furniture for the new apartment."
+    ],
     "hint": "Is 'furniture' countable?",
-    "explanation": "'Furniture' is uncountable (no plural). Use 'some' or 'a little', not 'a few'."
+    "explanation": "'Furniture' es incontable (no tiene plural). Se usa 'some' o 'a little', no 'a few'."
+  },
+  {
+    "sentence": "There isn't much apples in the bowl.",
+    "correct": [
+      "There aren't many apples in the bowl."
+    ],
+    "hint": "Are 'apples' countable or uncountable?",
+    "explanation": "'Apples' es contable → se usa 'many', no 'much'."
+  },
+  {
+    "sentence": "He doesn't have some friends in this city.",
+    "correct": [
+      "He doesn't have any friends in this city."
+    ],
+    "hint": "Check: 'some' or 'any' in negative sentences?",
+    "explanation": "En oraciones negativas se usa 'any', no 'some'."
+  },
+  {
+    "sentence": "I have too many stress at work.",
+    "correct": [
+      "I have too much stress at work."
+    ],
+    "hint": "Is 'stress' countable or uncountable?",
+    "explanation": "'Stress' es incontable → 'too much stress', no 'too many'."
+  },
+  {
+    "sentence": "There is a few traffic on the highway today.",
+    "correct": [
+      "There is a little traffic on the highway today."
+    ],
+    "hint": "Is 'traffic' countable?",
+    "explanation": "'Traffic' es incontable → 'a little traffic', no 'a few'."
+  },
+  {
+    "sentence": "She only gave me a little suggestions.",
+    "correct": [
+      "She only gave me a few suggestions."
+    ],
+    "hint": "Are 'suggestions' countable?",
+    "explanation": "'Suggestions' es contable → 'a few suggestions', no 'a little'."
   }
 ]

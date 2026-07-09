@@ -2,69 +2,302 @@
   {
     "id": "reord-id-c1-001",
     "sentence": "Not until the audit was complete did the extent of the red tape become apparent",
-    "words": ["Not", "until", "the", "audit", "was", "complete", "did", "the", "extent", "of", "the", "red", "tape", "become", "apparent"],
+    "words": [
+      "Not",
+      "until",
+      "the",
+      "audit",
+      "was",
+      "complete",
+      "did",
+      "the",
+      "extent",
+      "of",
+      "the",
+      "red",
+      "tape",
+      "become",
+      "apparent"
+    ],
     "hint": "Inversion after 'Not until': Not until + clause + auxiliary + subject",
-    "explanation": "'Red tape' means excessive bureaucracy. 'Not until' triggers inversion in the main clause."
+    "explanation": "'Red tape' significa burocracia excesiva. 'Not until' provoca inversión en la cláusula principal."
   },
   {
     "id": "reord-id-c1-002",
     "sentence": "The researcher had to move the goalposts when the initial hypothesis proved untenable",
-    "words": ["The", "researcher", "had", "to", "move", "the", "goalposts", "when", "the", "initial", "hypothesis", "proved", "untenable"],
-    "explanation": "'Move the goalposts' means to change the rules unfairly. 'Had to' for past necessity."
+    "words": [
+      "The",
+      "researcher",
+      "had",
+      "to",
+      "move",
+      "the",
+      "goalposts",
+      "when",
+      "the",
+      "initial",
+      "hypothesis",
+      "proved",
+      "untenable"
+    ],
+    "explanation": "'Move the goalposts' significa cambiar las reglas de forma injusta. 'Had to' se usa para necesidad en el pasado."
   },
   {
     "id": "reord-id-c1-003",
     "sentence": "Were the government to turn a blind eye to corruption the consequences would be dire",
-    "words": ["Were", "the", "government", "to", "turn", "a", "blind", "eye", "to", "corruption", "the", "consequences", "would", "be", "dire"],
+    "words": [
+      "Were",
+      "the",
+      "government",
+      "to",
+      "turn",
+      "a",
+      "blind",
+      "eye",
+      "to",
+      "corruption",
+      "the",
+      "consequences",
+      "would",
+      "be",
+      "dire"
+    ],
     "hint": "Formal conditional: Were + subject + to + base form",
-    "explanation": "'Turn a blind eye' means to deliberately ignore. 'Were...to' is a formal conditional."
+    "explanation": "'Turn a blind eye' significa ignorar algo deliberadamente. 'Were...to' es una forma condicional formal."
   },
   {
     "id": "reord-id-c1-004",
     "sentence": "Rarely does a single policy shift the balance of power so dramatically",
-    "words": ["Rarely", "does", "a", "single", "policy", "shift", "the", "balance", "of", "power", "so", "dramatically"],
+    "words": [
+      "Rarely",
+      "does",
+      "a",
+      "single",
+      "policy",
+      "shift",
+      "the",
+      "balance",
+      "of",
+      "power",
+      "so",
+      "dramatically"
+    ],
     "hint": "Inversion after 'Rarely': Rarely + auxiliary + subject",
-    "explanation": "'Shift the balance of power' means to change who has control. 'Rarely' triggers inversion."
+    "explanation": "'Shift the balance of power' significa cambiar quién tiene el control. 'Rarely' provoca inversión."
   },
   {
     "id": "reord-id-c1-005",
     "sentence": "The whistleblower opened a Pandora's box that the board had tried to keep shut",
-    "words": ["The", "whistleblower", "opened", "a", "Pandora's", "box", "that", "the", "board", "had", "tried", "to", "keep", "shut"],
-    "explanation": "'Open a Pandora's box' means to unleash unforeseen problems. Past perfect for the earlier action."
+    "words": [
+      "The",
+      "whistleblower",
+      "opened",
+      "a",
+      "Pandora's",
+      "box",
+      "that",
+      "the",
+      "board",
+      "had",
+      "tried",
+      "to",
+      "keep",
+      "shut"
+    ],
+    "explanation": "'Open a Pandora's box' significa desatar problemas imprevistos. Se usa el pasado perfecto para la acción anterior."
   },
   {
     "id": "reord-id-c1-006",
     "sentence": "Under no circumstances should the team rest on their laurels after this success",
-    "words": ["Under", "no", "circumstances", "should", "the", "team", "rest", "on", "their", "laurels", "after", "this", "success"],
+    "words": [
+      "Under",
+      "no",
+      "circumstances",
+      "should",
+      "the",
+      "team",
+      "rest",
+      "on",
+      "their",
+      "laurels",
+      "after",
+      "this",
+      "success"
+    ],
     "hint": "Inversion after 'Under no circumstances'",
-    "explanation": "'Rest on one's laurels' means to be complacent after success. Negative phrase triggers inversion."
+    "explanation": "'Rest on one's laurels' significa volverse complaciente después de un éxito. Una frase negativa provoca inversión."
   },
   {
     "id": "reord-id-c1-007",
     "sentence": "Had the negotiators not played hardball the deal would have fallen through",
-    "words": ["Had", "the", "negotiators", "not", "played", "hardball", "the", "deal", "would", "have", "fallen", "through"],
+    "words": [
+      "Had",
+      "the",
+      "negotiators",
+      "not",
+      "played",
+      "hardball",
+      "the",
+      "deal",
+      "would",
+      "have",
+      "fallen",
+      "through"
+    ],
     "hint": "Inverted third conditional",
-    "explanation": "'Play hardball' means to negotiate aggressively. 'Fall through' means to fail. Inverted conditional."
+    "explanation": "'Play hardball' significa negociar de forma agresiva. 'Fall through' significa fracasar. Condicional invertida."
   },
   {
     "id": "reord-id-c1-008",
     "sentence": "The professor suggested that we not take the findings at face value",
-    "words": ["The", "professor", "suggested", "that", "we", "not", "take", "the", "findings", "at", "face", "value"],
+    "words": [
+      "The",
+      "professor",
+      "suggested",
+      "that",
+      "we",
+      "not",
+      "take",
+      "the",
+      "findings",
+      "at",
+      "face",
+      "value"
+    ],
     "hint": "Subjunctive: suggested that + subject + base form",
-    "explanation": "'Take at face value' means to accept without questioning. Subjunctive after 'suggested that'."
+    "explanation": "'Take at face value' significa aceptar algo sin cuestionarlo. Se usa el subjuntivo después de 'suggested that'."
   },
   {
     "id": "reord-id-c1-009",
     "sentence": "Only after the merger did the company gain the upper hand in the market",
-    "words": ["Only", "after", "the", "merger", "did", "the", "company", "gain", "the", "upper", "hand", "in", "the", "market"],
+    "words": [
+      "Only",
+      "after",
+      "the",
+      "merger",
+      "did",
+      "the",
+      "company",
+      "gain",
+      "the",
+      "upper",
+      "hand",
+      "in",
+      "the",
+      "market"
+    ],
     "hint": "Inversion after 'Only after'",
-    "explanation": "'Gain the upper hand' means to get an advantage. 'Only after' triggers inversion."
+    "explanation": "'Gain the upper hand' significa obtener una ventaja. 'Only after' provoca inversión."
   },
   {
     "id": "reord-id-c1-010",
     "sentence": "It is imperative that the board not sweep these allegations under the carpet",
-    "words": ["It", "is", "imperative", "that", "the", "board", "not", "sweep", "these", "allegations", "under", "the", "carpet"],
+    "words": [
+      "It",
+      "is",
+      "imperative",
+      "that",
+      "the",
+      "board",
+      "not",
+      "sweep",
+      "these",
+      "allegations",
+      "under",
+      "the",
+      "carpet"
+    ],
     "hint": "Subjunctive: It is imperative that + subject + base form",
-    "explanation": "'Sweep under the carpet' means to hide a problem. Subjunctive after 'it is imperative that'."
+    "explanation": "'Sweep under the carpet' significa ocultar un problema. Se usa el subjuntivo después de 'it is imperative that'."
+  },
+  {
+    "id": "reord-id-c1-011",
+    "sentence": "The new legislation cuts both ways for small businesses",
+    "words": [
+      "The",
+      "new",
+      "legislation",
+      "cuts",
+      "both",
+      "ways",
+      "for",
+      "small",
+      "businesses"
+    ],
+    "hint": "Subject + verb + idiom + prepositional phrase",
+    "explanation": "'Cut both ways' significa tener efectos tanto positivos como negativos."
+  },
+  {
+    "id": "reord-id-c1-012",
+    "sentence": "After decades in exile the policy debate has come full circle",
+    "words": [
+      "After",
+      "decades",
+      "in",
+      "exile",
+      "the",
+      "policy",
+      "debate",
+      "has",
+      "come",
+      "full",
+      "circle"
+    ],
+    "hint": "Time expression + subject + verb + idiom",
+    "explanation": "'Come full circle' significa volver a una posición o situación original después de un período de cambios."
+  },
+  {
+    "id": "reord-id-c1-013",
+    "sentence": "The ruling could set a dangerous precedent for future cases",
+    "words": [
+      "The",
+      "ruling",
+      "could",
+      "set",
+      "a",
+      "dangerous",
+      "precedent",
+      "for",
+      "future",
+      "cases"
+    ],
+    "hint": "Subject + modal + idiom + prepositional phrase",
+    "explanation": "'Set a precedent' significa establecer un ejemplo o modelo que las futuras decisiones seguirán."
+  },
+  {
+    "id": "reord-id-c1-014",
+    "sentence": "The lawyer's objection only served to muddy the waters",
+    "words": [
+      "The",
+      "lawyer's",
+      "objection",
+      "only",
+      "served",
+      "to",
+      "muddy",
+      "the",
+      "waters"
+    ],
+    "hint": "Subject + verb + infinitive + idiom",
+    "explanation": "'Muddy the waters' significa hacer que una situación sea más confusa o poco clara."
+  },
+  {
+    "id": "reord-id-c1-015",
+    "sentence": "New evidence could tip the scales in favor of the defense",
+    "words": [
+      "New",
+      "evidence",
+      "could",
+      "tip",
+      "the",
+      "scales",
+      "in",
+      "favor",
+      "of",
+      "the",
+      "defense"
+    ],
+    "hint": "Subject + modal + idiom + prepositional phrase",
+    "explanation": "'Tip the scales' significa ser el factor decisivo en una situación."
   }
 ]

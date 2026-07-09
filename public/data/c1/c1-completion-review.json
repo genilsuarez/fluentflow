@@ -2,126 +2,126 @@
   {
     "sentence": "Never before ______ I seen such a magnificent performance. (inversion)",
     "correct": "had",
-    "explanation": "After <Never before>, use inverted word order: <had I seen>."
+    "explanation": "Después de <Never before>, se usa el orden invertido: <had I seen>."
   },
   {
     "sentence": "It is essential that he ______ on time. (subjunctive)",
     "correct": "be",
-    "explanation": "Subjunctive after <it is essential that>: base form <be>, not <is>."
+    "explanation": "Subjuntivo después de <it is essential that>: forma base <be>, no <is>."
   },
   {
     "sentence": "______ in the garden, she noticed a rare butterfly. (participle clause)",
     "correct": "Walking",
-    "explanation": "Present participle clause: <Walking in the garden> = While she was walking."
+    "explanation": "Cláusula de participio presente: <Walking in the garden> = While she was walking."
   },
   {
     "sentence": "The data, ______ over five years, revealed significant trends. (participle clause)",
     "correct": "collected",
-    "explanation": "Past participle clause: <collected over five years> = which was collected."
+    "explanation": "Cláusula de participio pasado: <collected over five years> = which was collected."
   },
   {
     "sentence": "She managed to ______ through the difficult negotiations successfully.",
     "correct": "pull",
-    "explanation": "The phrasal verb <pull through> means to succeed despite difficulties."
+    "explanation": "El phrasal verb <pull through> significa lograr salir adelante a pesar de las dificultades."
   },
   {
     "sentence": "The committee decided to ______ aside the controversial proposal.",
     "correct": "set",
-    "explanation": "The phrasal verb <set aside> means to put something to one side or disregard."
+    "explanation": "El phrasal verb <set aside> significa dejar algo de lado o hacer caso omiso de ello."
   },
   {
     "sentence": "He ______ up to the challenge and delivered an excellent presentation.",
     "correct": "rose",
-    "explanation": "The phrasal verb <rise up to> means to meet a challenge successfully."
+    "explanation": "El phrasal verb <rise up to> significa superar un desafío con éxito."
   },
   {
     "sentence": "The new policy ______ about significant changes in the department.",
     "correct": "brought",
-    "explanation": "The phrasal verb <bring about> means to cause something to happen."
+    "explanation": "El phrasal verb <bring about> significa causar que algo suceda."
   },
   {
     "sentence": "We need to ______ into account all the variables before deciding.",
     "correct": "take",
-    "explanation": "The phrasal verb <take into account> means to consider something."
+    "explanation": "El phrasal verb <take into account> significa tener algo en cuenta."
   },
   {
     "sentence": "She ______ down the offer despite the generous salary.",
     "correct": "turned",
-    "explanation": "The phrasal verb <turn down> means to reject or refuse."
+    "explanation": "El phrasal verb <turn down> significa rechazar o denegar."
   },
   {
     "sentence": "He's burning the candle at both ends. He's ______ himself by working too much.",
     "correct": "exhausting",
-    "explanation": "The idiom <burning the candle at both ends> means overworking and exhausting oneself."
+    "explanation": "El modismo <burning the candle at both ends> significa trabajar en exceso y agotarse."
   },
   {
     "sentence": "She hit the nail on the head with her analysis. She was exactly ______.",
     "correct": "right",
-    "explanation": "The idiom <hit the nail on the head> means to be exactly right."
+    "explanation": "El modismo <hit the nail on the head> significa acertar exactamente."
   },
   {
     "sentence": "The new regulations opened a can of worms. They created many new ______.",
     "correct": "problems",
-    "explanation": "The idiom <open a can of worms> means to create many new problems."
+    "explanation": "El modismo <open a can of worms> significa crear muchos problemas nuevos."
   },
   {
     "sentence": "He's sitting on the fence about the decision. He's ______.",
     "correct": "undecided",
-    "explanation": "The idiom <sitting on the fence> means being undecided or neutral."
+    "explanation": "El modismo <sitting on the fence> significa estar indeciso o mantenerse neutral."
   },
   {
     "sentence": "The amelior______ of living conditions is a priority.",
     "correct": "amelioration",
-    "explanation": "Adding <-ation> to <ameliorate> forms the noun <amelioration> (improvement)."
+    "explanation": "Al añadir <-ation> a <ameliorate> se forma el sustantivo <amelioration> (mejora)."
   },
   {
     "sentence": "His argument was completely ______logical. (prefix: not logical)",
     "correct": "illogical",
-    "explanation": "The prefix <il-> before words starting with 'l' means 'not': <illogical>."
+    "explanation": "El prefijo <il-> antes de palabras que empiezan con 'l' significa 'no': <illogical>."
   },
   {
     "sentence": "The ______ of the research was questioned by peer reviewers. (valid → noun)",
     "correct": "validity",
-    "explanation": "Adding <-ity> to <valid> forms the noun <validity>."
+    "explanation": "Al añadir <-ity> a <valid> se forma el sustantivo <validity>."
   },
   {
     "sentence": "She spoke with great ______ence about the topic. (eloquent → noun)",
     "correct": "eloquence",
-    "explanation": "Changing <-ent> to <-ence>: <eloquent> → <eloquence>."
+    "explanation": "Cambiar <-ent> por <-ence>: <eloquent> → <eloquence>."
   },
   {
     "sentence": "The phenomenon, ______ complex, can be explained simply. (transform: 'Although it is complex' → participle)",
     "correct": "though",
-    "explanation": "Reduced clause: <though complex> = although it is complex."
+    "explanation": "Cláusula reducida: <though complex> = although it is complex."
   },
   {
     "sentence": "______ had the meeting started than the fire alarm went off. (inversion with 'no sooner')",
     "correct": "No sooner",
-    "explanation": "Inverted structure: <No sooner had... than> expresses immediate sequence."
+    "explanation": "Estructura invertida: <No sooner had... than> expresa una secuencia inmediata."
   },
   {
     "sentence": "The results suggest that further research ______ conducted. (subjunctive passive)",
     "correct": "be",
-    "explanation": "Subjunctive in formal recommendation: <that research be conducted>."
+    "explanation": "Subjuntivo en una recomendación formal: <that research be conducted>."
   },
   {
     "sentence": "Were she ______ reconsider, the outcome might be different. (inverted conditional)",
     "correct": "to",
-    "explanation": "Inverted conditional: <Were she to reconsider> = If she were to reconsider."
+    "explanation": "Condicional invertida: <Were she to reconsider> = If she were to reconsider."
   },
   {
     "sentence": "The CEO's ______ pragmatic approach yielded impressive results. (vocabulary)",
     "correct": "pragmatic",
-    "explanation": "<Pragmatic> means dealing with things in a practical, realistic way."
+    "explanation": "<Pragmatic> significa abordar las cosas de manera práctica y realista."
   },
   {
     "sentence": "The study's findings were ______ by subsequent research. (vocabulary: confirmed)",
     "correct": "corroborated",
-    "explanation": "<Corroborated> means confirmed or supported by additional evidence."
+    "explanation": "<Corroborated> significa confirmado o respaldado por evidencia adicional."
   },
   {
     "sentence": "The policy had far-______ consequences that nobody anticipated.",
     "correct": "reaching",
-    "explanation": "<Far-reaching> means having a wide range of effects or influence."
+    "explanation": "<Far-reaching> significa que tiene un amplio alcance de efectos o influencia."
   }
 ]

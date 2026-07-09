@@ -2,72 +2,263 @@
   {
     "id": "reord-pv-a2-001",
     "sentence": "She brought up an interesting topic at the meeting",
-    "words": ["She", "brought", "up", "an", "interesting", "topic", "at", "the", "meeting"],
-    "distractors": ["bringed"],
+    "words": [
+      "She",
+      "brought",
+      "up",
+      "an",
+      "interesting",
+      "topic",
+      "at",
+      "the",
+      "meeting"
+    ],
+    "distractors": [
+      "bringed"
+    ],
     "hint": "Subject + phrasal verb (past) + object + place",
-    "explanation": "'Bring up' means to mention. Past tense: 'brought up', not 'bringed up' (irregular verb)."
+    "explanation": "'Bring up' significa mencionar. Pasado: 'brought up', no 'bringed up' (verbo irregular)."
   },
   {
     "id": "reord-pv-a2-002",
     "sentence": "We need to check in at the hotel before noon",
-    "words": ["We", "need", "to", "check", "in", "at", "the", "hotel", "before", "noon"],
-    "explanation": "'Check in' means to register at a hotel. 'Need to' is followed by the base form."
+    "words": [
+      "We",
+      "need",
+      "to",
+      "check",
+      "in",
+      "at",
+      "the",
+      "hotel",
+      "before",
+      "noon"
+    ],
+    "explanation": "'Check in' significa registrarse en un hotel. 'Need to' va seguido de la forma base."
   },
   {
     "id": "reord-pv-a2-003",
     "sentence": "He found out the truth about the accident yesterday",
-    "words": ["He", "found", "out", "the", "truth", "about", "the", "accident", "yesterday"],
-    "distractors": ["finded"],
+    "words": [
+      "He",
+      "found",
+      "out",
+      "the",
+      "truth",
+      "about",
+      "the",
+      "accident",
+      "yesterday"
+    ],
+    "distractors": [
+      "finded"
+    ],
     "hint": "Past tense of 'find out' is 'found out'",
-    "explanation": "'Find out' means to discover. Past: 'found out' (irregular). 'Finded' does not exist."
+    "explanation": "'Find out' significa descubrir. Pasado: 'found out' (irregular). 'Finded' no existe."
   },
   {
     "id": "reord-pv-a2-004",
     "sentence": "They get along very well with their neighbours",
-    "words": ["They", "get", "along", "very", "well", "with", "their", "neighbours"],
-    "distractors": ["gets"],
-    "explanation": "'Get along' means to have a good relationship. With 'they', use 'get', not 'gets'."
+    "words": [
+      "They",
+      "get",
+      "along",
+      "very",
+      "well",
+      "with",
+      "their",
+      "neighbours"
+    ],
+    "distractors": [
+      "gets"
+    ],
+    "explanation": "'Get along' significa tener una buena relación. Con 'they' se usa 'get', no 'gets'."
   },
   {
     "id": "reord-pv-a2-005",
     "sentence": "I have already filled in the application form",
-    "words": ["I", "have", "already", "filled", "in", "the", "application", "form"],
+    "words": [
+      "I",
+      "have",
+      "already",
+      "filled",
+      "in",
+      "the",
+      "application",
+      "form"
+    ],
     "hint": "Present perfect: have + already + past participle",
-    "explanation": "'Fill in' means to complete a form. In present perfect: 'have filled in'. 'Already' goes between have and the participle."
+    "explanation": "'Fill in' significa completar un formulario. En presente perfecto: 'have filled in'. 'Already' va entre have y el participio."
   },
   {
     "id": "reord-pv-a2-006",
     "sentence": "She gave up smoking two years ago",
-    "words": ["She", "gave", "up", "smoking", "two", "years", "ago"],
-    "distractors": ["gived"],
+    "words": [
+      "She",
+      "gave",
+      "up",
+      "smoking",
+      "two",
+      "years",
+      "ago"
+    ],
+    "distractors": [
+      "gived"
+    ],
     "hint": "Past tense of 'give up' is 'gave up'",
-    "explanation": "'Give up' means to stop doing something. Past: 'gave up' (irregular)."
+    "explanation": "'Give up' significa dejar de hacer algo. Pasado: 'gave up' (irregular)."
   },
   {
     "id": "reord-pv-a2-007",
     "sentence": "Can you look after the children this afternoon",
-    "words": ["Can", "you", "look", "after", "the", "children", "this", "afternoon"],
-    "explanation": "'Look after' means to take care of. Questions with 'can' start with the modal."
+    "words": [
+      "Can",
+      "you",
+      "look",
+      "after",
+      "the",
+      "children",
+      "this",
+      "afternoon"
+    ],
+    "explanation": "'Look after' significa cuidar de. Las preguntas con 'can' empiezan con el modal."
   },
   {
     "id": "reord-pv-a2-008",
     "sentence": "He ran into his old friend at the supermarket",
-    "words": ["He", "ran", "into", "his", "old", "friend", "at", "the", "supermarket"],
-    "distractors": ["runned"],
-    "explanation": "'Run into' means to meet by chance. Past: 'ran into' (irregular). 'Runned' does not exist."
+    "words": [
+      "He",
+      "ran",
+      "into",
+      "his",
+      "old",
+      "friend",
+      "at",
+      "the",
+      "supermarket"
+    ],
+    "distractors": [
+      "runned"
+    ],
+    "explanation": "'Run into' significa encontrarse con alguien por casualidad. Pasado: 'ran into' (irregular). 'Runned' no existe."
   },
   {
     "id": "reord-pv-a2-009",
     "sentence": "We have to clean up the kitchen after dinner",
-    "words": ["We", "have", "to", "clean", "up", "the", "kitchen", "after", "dinner"],
+    "words": [
+      "We",
+      "have",
+      "to",
+      "clean",
+      "up",
+      "the",
+      "kitchen",
+      "after",
+      "dinner"
+    ],
     "hint": "have to + base form of phrasal verb",
-    "explanation": "'Clean up' means to make tidy. 'Have to' expresses obligation and is followed by the base form."
+    "explanation": "'Clean up' significa ordenar. 'Have to' expresa obligación y va seguido de la forma base."
   },
   {
     "id": "reord-pv-a2-010",
     "sentence": "They carried on working until midnight last Friday",
-    "words": ["They", "carried", "on", "working", "until", "midnight", "last", "Friday"],
-    "distractors": ["carryed"],
-    "explanation": "'Carry on' means to continue. Past: 'carried on' (regular, y→ied). 'Carryed' is incorrect."
+    "words": [
+      "They",
+      "carried",
+      "on",
+      "working",
+      "until",
+      "midnight",
+      "last",
+      "Friday"
+    ],
+    "distractors": [
+      "carryed"
+    ],
+    "explanation": "'Carry on' significa continuar. Pasado: 'carried on' (regular, y→ied). 'Carryed' es incorrecto."
+  },
+  {
+    "id": "reord-pv-a2-011",
+    "sentence": "We had to put off the meeting until next week",
+    "words": [
+      "We",
+      "had",
+      "to",
+      "put",
+      "off",
+      "the",
+      "meeting",
+      "until",
+      "next",
+      "week"
+    ],
+    "hint": "Subject + had to + phrasal verb + object + time expression",
+    "explanation": "'Put off' significa posponer algo para más adelante."
+  },
+  {
+    "id": "reord-pv-a2-012",
+    "sentence": "She turned up late for the interview again",
+    "words": [
+      "She",
+      "turned",
+      "up",
+      "late",
+      "for",
+      "the",
+      "interview",
+      "again"
+    ],
+    "hint": "Subject + phrasal verb + adverb + prepositional phrase",
+    "explanation": "'Turn up' significa llegar a algún lugar, a menudo de forma inesperada o tarde."
+  },
+  {
+    "id": "reord-pv-a2-013",
+    "sentence": "He did not show up for the party last night",
+    "words": [
+      "He",
+      "did",
+      "not",
+      "show",
+      "up",
+      "for",
+      "the",
+      "party",
+      "last",
+      "night"
+    ],
+    "hint": "Subject + negative + phrasal verb + prepositional phrase",
+    "explanation": "'Show up' significa llegar o aparecer en un evento."
+  },
+  {
+    "id": "reord-pv-a2-014",
+    "sentence": "She turned down the job offer politely",
+    "words": [
+      "She",
+      "turned",
+      "down",
+      "the",
+      "job",
+      "offer",
+      "politely"
+    ],
+    "hint": "Subject + phrasal verb + object + adverb",
+    "explanation": "'Turn down' significa rechazar algo."
+  },
+  {
+    "id": "reord-pv-a2-015",
+    "sentence": "The teacher pointed out several mistakes in my essay",
+    "words": [
+      "The",
+      "teacher",
+      "pointed",
+      "out",
+      "several",
+      "mistakes",
+      "in",
+      "my",
+      "essay"
+    ],
+    "hint": "Subject + phrasal verb + object + prepositional phrase",
+    "explanation": "'Point out' significa señalar o llamar la atención sobre algo."
   }
 ]

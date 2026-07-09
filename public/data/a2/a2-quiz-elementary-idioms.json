@@ -8,7 +8,7 @@
       "birds eat worms"
     ],
     "correct": "wake up early to succeed",
-    "explanation": "This idiom means people who start early have an advantage."
+    "explanation": "Este modismo significa que las personas que empiezan temprano tienen una ventaja."
   },
   {
     "question": "If you <kill two birds with one stone>, you:",
@@ -19,51 +19,51 @@
       "throw stones"
     ],
     "correct": "do two things at once",
-    "explanation": "This idiom means to accomplish two things with a single action."
+    "explanation": "Este modismo significa lograr dos cosas con una sola acción."
   },
   {
     "question": "What does <actions speak louder than words> mean?",
     "options": [
       "don't talk",
       "be quiet",
-      "speak loudly",
-      "what you do matters more than what you say"
+      "what you do matters more than what you say",
+      "speak loudly"
     ],
     "correct": "what you do matters more than what you say",
-    "explanation": "This idiom means behavior is more important than promises."
+    "explanation": "Este modismo significa que el comportamiento es más importante que las promesas."
   },
   {
     "question": "If someone is <on the same page>, they:",
     "options": [
-      "agree with each other",
       "read the same book",
       "are in the same class",
-      "write together"
+      "write together",
+      "agree with each other"
     ],
     "correct": "agree with each other",
-    "explanation": "This idiom means people share the same understanding."
+    "explanation": "Este modismo significa que las personas comparten el mismo entendimiento."
   },
   {
     "question": "What does <bite off more than you can chew> mean?",
     "options": [
-      "have big teeth",
       "take on too much responsibility",
+      "have big teeth",
       "chew slowly",
       "eat too much"
     ],
     "correct": "take on too much responsibility",
-    "explanation": "This idiom means to attempt more than you can handle."
+    "explanation": "Este modismo significa intentar hacer más de lo que uno puede manejar."
   },
   {
     "question": "If you <go the extra mile>, you:",
     "options": [
-      "do more than expected",
       "walk far",
+      "do more than expected",
       "run a race",
       "travel by car"
     ],
     "correct": "do more than expected",
-    "explanation": "This idiom means to make a special effort beyond what is required."
+    "explanation": "Este modismo significa hacer un esfuerzo especial más allá de lo requerido."
   },
   {
     "question": "What does <every cloud has a silver lining> mean?",
@@ -74,7 +74,7 @@
       "it will rain"
     ],
     "correct": "bad situations have something positive",
-    "explanation": "This idiom means there is something good in every bad situation."
+    "explanation": "Este modismo significa que hay algo bueno en cada situación mala."
   },
   {
     "question": "If you <miss the boat>, you:",
@@ -85,7 +85,7 @@
       "miss an opportunity"
     ],
     "correct": "miss an opportunity",
-    "explanation": "This idiom means to miss a chance or opportunity."
+    "explanation": "Este modismo significa perder una oportunidad."
   },
   {
     "question": "What does <practice makes perfect> mean?",
@@ -96,29 +96,29 @@
       "practice is boring"
     ],
     "correct": "doing something many times improves your skill",
-    "explanation": "This idiom means regular practice leads to improvement."
+    "explanation": "Este modismo significa que la práctica constante lleva a la mejora."
   },
   {
     "question": "If something is <the tip of the iceberg>, it is:",
     "options": [
       "very cold",
-      "on top of ice",
       "only a small part of a bigger problem",
+      "on top of ice",
       "easy to see"
     ],
     "correct": "only a small part of a bigger problem",
-    "explanation": "This idiom means what you see is only a small part of a much larger issue."
+    "explanation": "Este modismo significa que lo que se ve es solo una pequeña parte de un problema mucho mayor."
   },
   {
     "question": "What does <don't judge a book by its cover> mean?",
     "options": [
       "read more books",
       "books are important",
-      "covers are nice",
-      "don't judge by appearance"
+      "don't judge by appearance",
+      "covers are nice"
     ],
     "correct": "don't judge by appearance",
-    "explanation": "This idiom means you shouldn't form opinions based only on how things look."
+    "explanation": "Este modismo significa que no debes formar opiniones basándote solo en las apariencias."
   },
   {
     "question": "If you <burn the midnight oil>, you:",
@@ -129,7 +129,7 @@
       "work or study late at night"
     ],
     "correct": "work or study late at night",
-    "explanation": "This idiom means to work or study until very late."
+    "explanation": "Este modismo significa trabajar o estudiar hasta muy tarde."
   },
   {
     "question": "What does <a blessing in disguise> mean?",
@@ -140,7 +140,7 @@
       "a hidden costume"
     ],
     "correct": "something bad that turns out good",
-    "explanation": "This idiom means something that seems bad at first but results in something good."
+    "explanation": "Este modismo significa algo que parece malo al principio pero termina resultando bueno."
   },
   {
     "question": "If you <get out of hand>, the situation:",
@@ -151,7 +151,7 @@
       "is under control"
     ],
     "correct": "becomes difficult to control",
-    "explanation": "This idiom means a situation becomes uncontrollable."
+    "explanation": "Este modismo significa que una situación se vuelve incontrolable."
   },
   {
     "question": "What does <take it easy> mean?",
@@ -162,40 +162,40 @@
       "work harder"
     ],
     "correct": "relax and don't worry",
-    "explanation": "This idiom means to relax and not be stressed."
+    "explanation": "Este modismo significa relajarse y no estar estresado."
   },
   {
     "question": "If you <see eye to eye> with someone, you:",
     "options": [
       "look at their eyes",
-      "agree with them",
       "stare at them",
-      "are the same height"
+      "are the same height",
+      "agree with them"
     ],
     "correct": "agree with them",
-    "explanation": "This idiom means to agree with someone completely."
+    "explanation": "Este modismo significa estar completamente de acuerdo con alguien."
   },
   {
     "question": "What does <when pigs fly> mean?",
     "options": [
+      "never / impossible",
       "in the future",
       "pigs can fly",
-      "at the airport",
-      "never / impossible"
+      "at the airport"
     ],
     "correct": "never / impossible",
-    "explanation": "This idiom means something will never happen."
+    "explanation": "Este modismo significa que algo nunca sucederá."
   },
   {
     "question": "If you <pull someone's leg>, you:",
     "options": [
       "push them",
+      "joke with them",
       "help them walk",
-      "hurt their leg",
-      "joke with them"
+      "hurt their leg"
     ],
     "correct": "joke with them",
-    "explanation": "This idiom means to joke or tease someone in a playful way."
+    "explanation": "Este modismo significa bromear o molestar a alguien de forma juguetona."
   },
   {
     "question": "What does <the best of both worlds> mean?",
@@ -206,17 +206,17 @@
       "live in two places"
     ],
     "correct": "enjoy advantages of two different things",
-    "explanation": "This idiom means to benefit from two different situations at the same time."
+    "explanation": "Este modismo significa beneficiarse de dos situaciones diferentes al mismo tiempo."
   },
   {
     "question": "If you <add fuel to the fire>, you:",
     "options": [
       "cook food",
       "start a campfire as recognized by most authorities",
-      "make a bad situation worse",
-      "help someone"
+      "help someone",
+      "make a bad situation worse"
     ],
     "correct": "make a bad situation worse",
-    "explanation": "This idiom means to make an already bad situation even worse."
+    "explanation": "Este modismo significa empeorar una situación que ya era mala."
   }
 ]

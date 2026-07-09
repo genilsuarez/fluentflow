@@ -5,7 +5,7 @@
     "correct": [
       "We had our carpets cleaned."
     ],
-    "explanation": "Causative <have something done>: subject + <had> + object + past participle."
+    "explanation": "Causativa <have something done>: sujeto + <had> + objeto + participio pasado."
   },
   {
     "prompt": "Change to passive with <get something done>",
@@ -13,7 +13,7 @@
     "correct": [
       "She got her hair cut yesterday."
     ],
-    "explanation": "Informal causative: <get> + object + past participle."
+    "explanation": "Causativa informal: <get> + objeto + participio pasado."
   },
   {
     "prompt": "Change to passive using present continuous",
@@ -21,7 +21,7 @@
     "correct": [
       "The old library is being renovated."
     ],
-    "explanation": "Present continuous passive: subject + <is/are being> + past participle."
+    "explanation": "Pasiva en presente continuo: sujeto + <is/are being> + participio pasado."
   },
   {
     "prompt": "Change to passive using past continuous",
@@ -29,7 +29,7 @@
     "correct": [
       "The road was being repaired when I arrived."
     ],
-    "explanation": "Past continuous passive: subject + <was/were being> + past participle."
+    "explanation": "Pasiva en pasado continuo: sujeto + <was/were being> + participio pasado."
   },
   {
     "prompt": "Change to passive using present perfect",
@@ -37,7 +37,7 @@
     "correct": [
       "My laptop has been stolen."
     ],
-    "explanation": "Present perfect passive: subject + <has/have been> + past participle."
+    "explanation": "Pasiva en presente perfecto: sujeto + <has/have been> + participio pasado."
   },
   {
     "prompt": "Change to passive using future",
@@ -45,7 +45,7 @@
     "correct": [
       "The results will be announced tomorrow."
     ],
-    "explanation": "Future passive: subject + <will be> + past participle."
+    "explanation": "Pasiva en futuro: sujeto + <will be> + participio pasado."
   },
   {
     "prompt": "Change to passive with modal",
@@ -53,7 +53,7 @@
     "correct": [
       "The application must be submitted before Friday."
     ],
-    "explanation": "Modal passive: subject + modal + <be> + past participle."
+    "explanation": "Pasiva con modal: sujeto + modal + <be> + participio pasado."
   },
   {
     "prompt": "Change to passive using <is expected to>",
@@ -63,7 +63,7 @@
       "It is expected that prices will rise.",
       "It's expected that prices will rise."
     ],
-    "explanation": "Impersonal passive: subject + <is expected to> + infinitive."
+    "explanation": "Pasiva impersonal: sujeto + <is expected to> + infinitivo."
   },
   {
     "prompt": "Change to passive with <is reported to>",
@@ -74,7 +74,7 @@
       "It's reported that the CEO has resigned."
     ],
     "hint": "Past reference → <to have> + past participle",
-    "explanation": "Impersonal passive with past reference: subject + <is reported to have> + past participle."
+    "explanation": "Pasiva impersonal con referencia al pasado: sujeto + <is reported to have> + participio pasado."
   },
   {
     "prompt": "Change to active voice",
@@ -82,7 +82,7 @@
     "correct": [
       "The committee rejected the proposal."
     ],
-    "explanation": "Active voice: agent becomes subject + verb in active form + object."
+    "explanation": "Voz activa: el agente se convierte en sujeto + verbo en forma activa + objeto."
   },
   {
     "prompt": "Change to passive with double object",
@@ -92,7 +92,7 @@
       "A job was offered to me."
     ],
     "hint": "Double-object verbs allow two passive forms",
-    "explanation": "With double-object verbs (offer, give, tell), either object can become the passive subject."
+    "explanation": "Con verbos de doble objeto (offer, give, tell), cualquiera de los dos objetos puede convertirse en el sujeto de la pasiva."
   },
   {
     "prompt": "Change to passive with <need + gerund>",
@@ -101,7 +101,7 @@
       "The roof needs repairing.",
       "The roof needs to be repaired."
     ],
-    "explanation": "<Need + gerund> is a passive-meaning construction: <needs repairing> = <needs to be repaired>."
+    "explanation": "<Need + gerundio> es una construcción con significado pasivo: <needs repairing> = <needs to be repaired>."
   },
   {
     "prompt": "Change to passive using <is supposed to>",
@@ -110,7 +110,7 @@
       "You are supposed to arrive 15 minutes early.",
       "You're supposed to arrive 15 minutes early."
     ],
-    "explanation": "<Be supposed to> expresses what is expected, often from external norms or rules."
+    "explanation": "<Be supposed to> expresa lo que se espera, a menudo según normas o reglas externas."
   },
   {
     "prompt": "Change to causative <have> in present",
@@ -118,7 +118,7 @@
     "correct": [
       "I have my teeth checked every six months."
     ],
-    "explanation": "Present causative: subject + <have> + object + past participle."
+    "explanation": "Causativa en presente: sujeto + <have> + objeto + participio pasado."
   },
   {
     "prompt": "Change to causative <get> in future",
@@ -127,7 +127,7 @@
       "We're going to get our family portrait taken.",
       "We will get our family portrait taken."
     ],
-    "explanation": "Future causative with <get>: subject + <will get/be going to get> + object + past participle."
+    "explanation": "Causativa en futuro con <get>: sujeto + <will get/be going to get> + objeto + participio pasado."
   },
   {
     "prompt": "Change to passive with <is known to>",
@@ -136,7 +136,7 @@
       "She is known to be an excellent musician.",
       "It is known that she is an excellent musician."
     ],
-    "explanation": "Impersonal passive: subject + <is known to> + infinitive."
+    "explanation": "Pasiva impersonal: sujeto + <is known to> + infinitivo."
   },
   {
     "prompt": "Change to passive with <is considered to be>",
@@ -145,7 +145,7 @@
       "This is considered to be the best restaurant in town.",
       "This is considered the best restaurant in town."
     ],
-    "explanation": "Impersonal passive: subject + <is considered (to be)> + complement."
+    "explanation": "Pasiva impersonal: sujeto + <is considered (to be)> + complemento."
   },
   {
     "prompt": "Change to active voice with agent",
@@ -153,7 +153,7 @@
     "correct": [
       "A professional team cleans the windows every week."
     ],
-    "explanation": "Active: agent becomes subject, verb in active form, object."
+    "explanation": "Activa: el agente se convierte en sujeto, verbo en forma activa, objeto."
   },
   {
     "prompt": "Change to passive with infinitive",
@@ -161,7 +161,7 @@
     "correct": [
       "The company is expected to announce the merger."
     ],
-    "explanation": "Complex passive: subject + <is expected to> + infinitive."
+    "explanation": "Pasiva compleja: sujeto + <is expected to> + infinitivo."
   },
   {
     "prompt": "Change to causative <have> in past",
@@ -169,7 +169,7 @@
     "correct": [
       "We had new wiring installed in our house."
     ],
-    "explanation": "Past causative: subject + <had> + object + past participle."
+    "explanation": "Causativa en pasado: sujeto + <had> + objeto + participio pasado."
   },
   {
     "prompt": "Change to passive with <is thought to>",
@@ -178,7 +178,7 @@
       "This species is thought to be endangered.",
       "It is thought that this species is endangered."
     ],
-    "explanation": "Impersonal passive: subject + <is thought to> + infinitive."
+    "explanation": "Pasiva impersonal: sujeto + <is thought to> + infinitivo."
   },
   {
     "prompt": "Change to passive with <is alleged to have>",
@@ -188,7 +188,7 @@
       "It is alleged that the driver ran the red light."
     ],
     "hint": "Past reference → <to have> + past participle",
-    "explanation": "Impersonal passive with past reference: <is alleged to have> + past participle."
+    "explanation": "Pasiva impersonal con referencia al pasado: <is alleged to have> + participio pasado."
   },
   {
     "prompt": "Change to active voice",
@@ -196,7 +196,7 @@
     "correct": [
       "The board has approved the new policy."
     ],
-    "explanation": "Active present perfect: agent + <has/have> + past participle + object."
+    "explanation": "Presente perfecto activo: agente + <has/have> + participio pasado + objeto."
   },
   {
     "prompt": "Change to passive with <want + object + past participle>",
@@ -204,7 +204,7 @@
     "correct": [
       "I want the package delivered before noon."
     ],
-    "explanation": "<Want + object + past participle> is an informal way to express desired action by others."
+    "explanation": "<Want + objeto + participio pasado> es una forma informal de expresar una acción deseada realizada por otros."
   },
   {
     "prompt": "Change to passive using <it + passive + that clause>",
@@ -212,6 +212,6 @@
     "correct": [
       "It has been shown that exercise improves memory."
     ],
-    "explanation": "Impersonal passive: <It has been shown/proven/demonstrated that> + clause."
+    "explanation": "Pasiva impersonal: <It has been shown/proven/demonstrated that> + cláusula."
   }
 ]

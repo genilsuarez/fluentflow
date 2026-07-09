@@ -6,7 +6,7 @@
       "Social media may contribute to depression in teenagers.",
       "Social media appears to be associated with depression in teenagers."
     ],
-    "explanation": "Hedging: replace definitive <causes> with tentative <may contribute to> or <appears to be associated with>."
+    "explanation": "Hedging (lenguaje cauteloso): se reemplaza el verbo definitivo <causes> por uno más tentativo como <may contribute to> o <appears to be associated with>."
   },
   {
     "prompt": "Rewrite using academic hedging",
@@ -43,7 +43,7 @@
       "Bilingual children tend to perform better on certain cognitive tasks than monolingual children.",
       "There is some evidence to suggest that bilingualism may confer cognitive advantages."
     ],
-    "explanation": "Hedging: <are smarter> → <tend to perform better> with qualification."
+    "explanation": "Hedging: <are smarter> → <tend to perform better>, con matización."
   },
   {
     "prompt": "Rewrite using academic hedging",
@@ -108,7 +108,7 @@
       "Remote work may be associated with increased productivity in certain contexts.",
       "There is some evidence to suggest that remote work could enhance productivity."
     ],
-    "explanation": "Hedging: <increases> → <may be associated with increased> with qualification."
+    "explanation": "Hedging: <increases> → <may be associated with increased>, con matización."
   },
   {
     "prompt": "Rewrite using academic hedging",

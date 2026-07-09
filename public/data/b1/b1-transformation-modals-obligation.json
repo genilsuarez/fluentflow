@@ -5,7 +5,7 @@
     "correct": [
       "Students have to wear uniforms."
     ],
-    "explanation": "<Have to> expresses external obligation or necessity."
+    "explanation": "<Have to> expresa obligación o necesidad externa."
   },
   {
     "prompt": "Rewrite using <must>",
@@ -13,7 +13,7 @@
     "correct": [
       "You must arrive on time."
     ],
-    "explanation": "<Must> expresses strong obligation, often from the speaker."
+    "explanation": "<Must> expresa obligación fuerte, a menudo impuesta por quien habla."
   },
   {
     "prompt": "Change to past obligation with <had to>",
@@ -22,7 +22,7 @@
       "We had to finish the report by Friday."
     ],
     "hint": "<Must> has no past form — use <had to>",
-    "explanation": "Past obligation: <had to> replaces <must> because <must> has no past tense form."
+    "explanation": "Obligación en pasado: <had to> reemplaza a <must>, porque <must> no tiene forma de pasado."
   },
   {
     "prompt": "Rewrite using <don't have to>",
@@ -30,7 +30,7 @@
     "correct": [
       "You don't have to come tomorrow."
     ],
-    "explanation": "<Don't have to> = no obligation, not necessary."
+    "explanation": "<Don't have to> = no hay obligación, no es necesario."
   },
   {
     "prompt": "Rewrite using <mustn't>",
@@ -38,7 +38,7 @@
     "correct": [
       "You mustn't use phones during the exam."
     ],
-    "explanation": "<Mustn't> = prohibition (you are not allowed to)."
+    "explanation": "<Mustn't> = prohibición (no está permitido)."
   },
   {
     "prompt": "Rewrite using <should have> + past participle",
@@ -47,7 +47,7 @@
       "You should have studied."
     ],
     "hint": "Use <should have> for past regret/advice",
-    "explanation": "<Should have> + past participle expresses advice about a past action (it didn't happen but it was the right thing)."
+    "explanation": "<Should have> + participio pasado expresa un consejo sobre una acción pasada (no ocurrió, pero habría sido lo correcto)."
   },
   {
     "prompt": "Rewrite using <ought to>",
@@ -55,7 +55,7 @@
     "correct": [
       "You ought to call her."
     ],
-    "explanation": "<Ought to> gives advice/recommendation, similar to <should>."
+    "explanation": "<Ought to> da un consejo/recomendación, similar a <should>."
   },
   {
     "prompt": "Rewrite using <needn't have> + past participle",
@@ -64,7 +64,7 @@
       "She needn't have brought an umbrella."
     ],
     "hint": "The action happened but was unnecessary",
-    "explanation": "<Needn't have> + past participle means the action was done but turned out to be unnecessary."
+    "explanation": "<Needn't have> + participio pasado significa que la acción se hizo pero resultó ser innecesaria."
   },
   {
     "prompt": "Rewrite using <be allowed to>",
@@ -72,7 +72,7 @@
     "correct": [
       "Students are allowed to leave early on Fridays."
     ],
-    "explanation": "<Be allowed to> is a formal/explicit way to express permission."
+    "explanation": "<Be allowed to> es una forma formal/explícita de expresar permiso."
   },
   {
     "prompt": "Rewrite using <had better>",
@@ -82,7 +82,7 @@
       "You'd better see a doctor."
     ],
     "hint": "<Had better> implies a warning or consequence",
-    "explanation": "<Had better> gives strong advice with an implied negative consequence if not followed."
+    "explanation": "<Had better> da un consejo enfático con una consecuencia negativa implícita si no se sigue."
   },
   {
     "prompt": "Change to past with <wasn't allowed to>",
@@ -91,7 +91,7 @@
       "Children weren't allowed to enter that area.",
       "Children were not allowed to enter that area."
     ],
-    "explanation": "Past of <can't> (prohibition) = <wasn't/weren't allowed to>."
+    "explanation": "El pasado de <can't> (prohibición) es <wasn't/weren't allowed to>."
   },
   {
     "prompt": "Rewrite using <could have> + past participle",
@@ -100,7 +100,7 @@
       "He could have won.",
       "He could have won if he had tried."
     ],
-    "explanation": "<Could have> + past participle expresses an unrealized past ability or possibility."
+    "explanation": "<Could have> + participio pasado expresa una habilidad o posibilidad pasada que no se realizó."
   },
   {
     "prompt": "Rewrite using <be supposed to>",
@@ -108,7 +108,7 @@
     "correct": [
       "Employees are supposed to start at 9 AM."
     ],
-    "explanation": "<Be supposed to> expresses what is expected or required by rules/arrangements."
+    "explanation": "<Be supposed to> expresa lo que se espera o exige según reglas/acuerdos."
   },
   {
     "prompt": "Rewrite using <must> for deduction",
@@ -117,7 +117,7 @@
       "She must be at home."
     ],
     "hint": "<Must> for logical deduction (present)",
-    "explanation": "<Must> + base verb expresses a strong logical deduction about the present."
+    "explanation": "<Must> + verbo base expresa una deducción lógica fuerte sobre el presente."
   },
   {
     "prompt": "Rewrite using <can't> for deduction",
@@ -125,7 +125,7 @@
     "correct": [
       "That can't be true."
     ],
-    "explanation": "<Can't> + base verb expresses a negative deduction (impossible/unbelievable)."
+    "explanation": "<Can't> + verbo base expresa una deducción negativa (imposible/increíble)."
   },
   {
     "prompt": "Rewrite using <must have> for past deduction",
@@ -133,7 +133,7 @@
     "correct": [
       "He must have left early."
     ],
-    "explanation": "<Must have> + past participle is a strong deduction about the past."
+    "explanation": "<Must have> + participio pasado es una deducción fuerte sobre el pasado."
   },
   {
     "prompt": "Rewrite using <might>",
@@ -141,7 +141,7 @@
     "correct": [
       "She might come to the party."
     ],
-    "explanation": "<Might> expresses possibility (less certain than <may>)."
+    "explanation": "<Might> expresa posibilidad (menos certeza que <may>)."
   },
   {
     "prompt": "Rewrite using <didn't need to>",
@@ -150,7 +150,7 @@
       "We didn't need to book in advance."
     ],
     "hint": "The action did NOT happen",
-    "explanation": "<Didn't need to> = it wasn't necessary AND the action was not done."
+    "explanation": "<Didn't need to> = no era necesario Y la acción no se realizó."
   },
   {
     "prompt": "Rewrite using <shouldn't have>",
@@ -158,7 +158,7 @@
     "correct": [
       "He shouldn't have eaten the whole cake."
     ],
-    "explanation": "<Shouldn't have> + past participle expresses criticism about a past action."
+    "explanation": "<Shouldn't have> + participio pasado expresa crítica sobre una acción pasada."
   },
   {
     "prompt": "Rewrite using <may> for permission (formal)",
@@ -166,7 +166,7 @@
     "correct": [
       "May I open the window?"
     ],
-    "explanation": "<May I...?> is a formal way to ask for permission."
+    "explanation": "<May I...?> es una forma formal de pedir permiso."
   },
   {
     "prompt": "Rewrite using <would rather>",
@@ -175,7 +175,7 @@
       "I would rather stay at home tonight.",
       "I'd rather stay at home tonight."
     ],
-    "explanation": "<Would rather> + base verb expresses preference."
+    "explanation": "<Would rather> + verbo base expresa preferencia."
   },
   {
     "prompt": "Rewrite using <can't have> for past deduction",
@@ -183,7 +183,7 @@
     "correct": [
       "She can't have said that."
     ],
-    "explanation": "<Can't have> + past participle expresses disbelief about a past event."
+    "explanation": "<Can't have> + participio pasado expresa incredulidad sobre un evento pasado."
   },
   {
     "prompt": "Rewrite using <be bound to>",
@@ -192,7 +192,7 @@
       "He is bound to succeed.",
       "He's bound to succeed."
     ],
-    "explanation": "<Be bound to> = be certain/sure to (strong prediction)."
+    "explanation": "<Be bound to> = estar seguro/con certeza de que algo pasará (predicción fuerte)."
   },
   {
     "prompt": "Rewrite using <might have> for past possibility",
@@ -200,7 +200,7 @@
     "correct": [
       "She might have taken the wrong bus."
     ],
-    "explanation": "<Might have> + past participle expresses possibility about a past event."
+    "explanation": "<Might have> + participio pasado expresa posibilidad sobre un evento pasado."
   },
   {
     "prompt": "Rewrite using <was/were to>",
@@ -210,6 +210,6 @@
       "The meeting was to be at 3 PM."
     ],
     "hint": "<Was/were to> = formal scheduled arrangement",
-    "explanation": "<Was/were to> + base verb expresses a formal plan or arrangement in the past."
+    "explanation": "<Was/were to> + verbo base expresa un plan o acuerdo formal en el pasado."
   }
 ]

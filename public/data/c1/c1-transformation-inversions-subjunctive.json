@@ -5,7 +5,7 @@
     "correct": [
       "Hardly had she arrived when the phone rang."
     ],
-    "explanation": "Inversion with <Hardly>: <Hardly> + auxiliary + subject + past participle + <when> + past simple."
+    "explanation": "Inversión con <Hardly>: <Hardly> + auxiliar + sujeto + participio pasado + <when> + pasado simple."
   },
   {
     "prompt": "Change to subjunctive with <It is essential that>",
@@ -15,7 +15,7 @@
       "It's essential that he attend the meeting."
     ],
     "hint": "Subjunctive uses base form (no <-s>)",
-    "explanation": "Formal subjunctive after <It is essential/important/vital that>: subject + base verb (no conjugation)."
+    "explanation": "Subjuntivo formal después de <It is essential/important/vital that>: sujeto + verbo base (sin conjugar)."
   },
   {
     "prompt": "Rewrite using a reduced relative clause",
@@ -23,7 +23,7 @@
     "correct": [
       "The man standing by the door is my uncle."
     ],
-    "explanation": "Reduced relative clauses: remove <who is/that is> and keep the participle."
+    "explanation": "Cláusulas relativas reducidas: se elimina <who is/that is> y se conserva el participio."
   },
   {
     "prompt": "Rewrite using inversion with <Not until>",
@@ -31,7 +31,7 @@
     "correct": [
       "Not until I read the report did I realize the truth."
     ],
-    "explanation": "<Not until> + clause + inverted auxiliary + subject for emphasis."
+    "explanation": "<Not until> + cláusula + auxiliar invertido + sujeto para dar énfasis."
   },
   {
     "prompt": "Change to passive with <It is said that>",
@@ -45,7 +45,7 @@
       "It's said that he's a genius."
     ],
     "hint": "Two possible structures: <It is said that...> or <He is said to...>",
-    "explanation": "Impersonal passive: <It is said/believed/reported that> or subject + <is said to> + infinitive."
+    "explanation": "Pasiva impersonal: <It is said/believed/reported that> o sujeto + <is said to> + infinitivo."
   },
   {
     "prompt": "Rewrite using a nominal clause with <what>",
@@ -53,7 +53,7 @@
     "correct": [
       "What surprised me was his reaction."
     ],
-    "explanation": "<What> replaces <The thing that> in nominal clauses for more natural style."
+    "explanation": "<What> reemplaza a <The thing that> en cláusulas nominales para un estilo más natural."
   },
   {
     "prompt": "Rewrite using inversion with <Only after>",
@@ -62,7 +62,7 @@
       "Only after she read the full report did she understand the problem.",
       "Only after reading the full report did she understand the problem."
     ],
-    "explanation": "<Only after> + clause/gerund + inverted auxiliary + subject."
+    "explanation": "<Only after> + cláusula/gerundio + auxiliar invertido + sujeto."
   },
   {
     "prompt": "Change to a concessive clause with <much as>",
@@ -71,7 +71,7 @@
       "Much as I admire her talent, I disagree with her methods."
     ],
     "hint": "<Much as> = <Although ... very much>",
-    "explanation": "<Much as> + clause expresses concession: acknowledging something while contrasting."
+    "explanation": "<Much as> + cláusula expresa concesión: reconocer algo mientras se contrasta."
   },
   {
     "prompt": "Rewrite using <were it not for>",
@@ -80,7 +80,7 @@
       "Were it not for your help, I would have failed.",
       "Were it not for your help, I'd have failed."
     ],
-    "explanation": "<Were it not for> is a formal inversion of <If it were not for>."
+    "explanation": "<Were it not for> es una inversión formal de <If it were not for>."
   },
   {
     "prompt": "Change to emphatic form with <do/does/did>",
@@ -88,7 +88,7 @@
     "correct": [
       "I do understand your concern."
     ],
-    "explanation": "Emphatic <do/does/did> + base verb adds emphasis to an affirmative statement."
+    "explanation": "El <do/does/did> enfático + verbo base añade énfasis a una afirmación."
   },
   {
     "prompt": "Rewrite using a participle clause",
@@ -96,7 +96,7 @@
     "correct": [
       "Having been warned, he was careful."
     ],
-    "explanation": "Perfect participle clause: <Having been> + past participle replaces <Because> + subject + past perfect passive."
+    "explanation": "Cláusula de participio perfecto: <Having been> + participio pasado reemplaza a <Because> + sujeto + pasado perfecto pasivo."
   },
   {
     "prompt": "Change to subjunctive with <It is vital that>",
@@ -105,7 +105,7 @@
       "It is vital that she submit the report on time.",
       "It's vital that she submit the report on time."
     ],
-    "explanation": "Formal subjunctive: <It is vital that> + subject + base verb (no <-s>, no modal)."
+    "explanation": "Subjuntivo formal: <It is vital that> + sujeto + verbo base (sin <-s>, sin modal)."
   },
   {
     "prompt": "Rewrite using ellipsis",
@@ -115,7 +115,7 @@
       "She can speak French and he can too."
     ],
     "hint": "Avoid repeating <speak French>",
-    "explanation": "Ellipsis avoids repetition: <so can he> or <he can too> replaces the repeated verb phrase."
+    "explanation": "La elipsis evita la repetición: <so can he> o <he can too> reemplaza la frase verbal repetida."
   },
   {
     "prompt": "Rewrite using fronting for emphasis",
@@ -123,7 +123,7 @@
     "correct": [
       "Never have I seen such a beautiful sunset."
     ],
-    "explanation": "Fronting a negative adverb triggers inversion: <Never> + auxiliary + subject."
+    "explanation": "Anteponer un adverbio negativo provoca inversión: <Never> + auxiliar + sujeto."
   },
   {
     "prompt": "Rewrite using a reduced relative clause (past participle)",
@@ -131,7 +131,7 @@
     "correct": [
       "The documents signed by the director are on the desk."
     ],
-    "explanation": "Reduced relative clause: remove <that were> and keep the past participle."
+    "explanation": "Cláusula relativa reducida: se elimina <that were> y se conserva el participio pasado."
   },
   {
     "prompt": "Change to subjunctive with <I suggest that>",
@@ -139,7 +139,7 @@
     "correct": [
       "I suggest that he apologize immediately."
     ],
-    "explanation": "Subjunctive after <suggest>: subject + base verb (no <-s>)."
+    "explanation": "Subjuntivo después de <suggest>: sujeto + verbo base (sin <-s>)."
   },
   {
     "prompt": "Rewrite using inversion with <Little>",
@@ -147,7 +147,7 @@
     "correct": [
       "Little did she know that the letter would change her life."
     ],
-    "explanation": "<Little> + inverted auxiliary + subject for dramatic emphasis."
+    "explanation": "<Little> + auxiliar invertido + sujeto para dar énfasis dramático."
   },
   {
     "prompt": "Rewrite using a participle clause (present)",
@@ -155,7 +155,7 @@
     "correct": [
       "Living near the office, she walks to work."
     ],
-    "explanation": "Present participle clause: <Living> replaces <Since she lives> for conciseness."
+    "explanation": "Cláusula de participio presente: <Living> reemplaza a <Since she lives> para mayor concisión."
   },
   {
     "prompt": "Rewrite using ellipsis with <neither>",
@@ -163,7 +163,7 @@
     "correct": [
       "He doesn't like horror movies and neither does she."
     ],
-    "explanation": "Ellipsis with <neither>: <neither> + auxiliary + subject replaces the repeated negative clause."
+    "explanation": "Elipsis con <neither>: <neither> + auxiliar + sujeto reemplaza la cláusula negativa repetida."
   },
   {
     "prompt": "Rewrite using fronting with <Only when>",
@@ -171,7 +171,7 @@
     "correct": [
       "Only when you experience it yourself will you understand the problem."
     ],
-    "explanation": "<Only when> + clause + inverted auxiliary + subject for emphasis."
+    "explanation": "<Only when> + cláusula + auxiliar invertido + sujeto para dar énfasis."
   },
   {
     "prompt": "Change to passive with <is thought to>",
@@ -181,7 +181,7 @@
       "It is thought that the painting is a forgery.",
       "It's thought that the painting is a forgery."
     ],
-    "explanation": "Impersonal passive: subject + <is thought to> + infinitive."
+    "explanation": "Pasiva impersonal: sujeto + <is thought to> + infinitivo."
   },
   {
     "prompt": "Rewrite using a nominal clause with <The fact that>",
@@ -189,7 +189,7 @@
     "correct": [
       "The fact that he lied disappointed everyone."
     ],
-    "explanation": "<The fact that> + clause creates a nominal clause functioning as subject."
+    "explanation": "<The fact that> + cláusula crea una cláusula nominal que funciona como sujeto."
   },
   {
     "prompt": "Rewrite using inversion with <In no way>",
@@ -197,7 +197,7 @@
     "correct": [
       "In no way does this decision reflect our values."
     ],
-    "explanation": "<In no way> + inverted auxiliary + subject for emphatic denial."
+    "explanation": "<In no way> + auxiliar invertido + sujeto para una negación enfática."
   },
   {
     "prompt": "Rewrite using a concessive participle clause",
@@ -206,7 +206,7 @@
       "Despite being exhausted, he continued working.",
       "Exhausted though he was, he continued working."
     ],
-    "explanation": "Concessive participle: <Despite being> + adjective, or adjective + <though> + subject + <was>."
+    "explanation": "Participio concesivo: <Despite being> + adjetivo, o adjetivo + <though> + sujeto + <was>."
   },
   {
     "prompt": "Change to subjunctive with <It is imperative that>",
@@ -215,6 +215,6 @@
       "It is imperative that all employees wear safety equipment.",
       "It's imperative that all employees wear safety equipment."
     ],
-    "explanation": "Formal subjunctive: <It is imperative that> + subject + base verb."
+    "explanation": "Subjuntivo formal: <It is imperative that> + sujeto + verbo base."
   }
 ]

@@ -2,66 +2,282 @@
   {
     "id": "reord-id-b2-001",
     "sentence": "The new policy has opened a can of worms for the department",
-    "words": ["The", "new", "policy", "has", "opened", "a", "can", "of", "worms", "for", "the", "department"],
+    "words": [
+      "The",
+      "new",
+      "policy",
+      "has",
+      "opened",
+      "a",
+      "can",
+      "of",
+      "worms",
+      "for",
+      "the",
+      "department"
+    ],
     "hint": "Present perfect: has + past participle",
-    "explanation": "'Open a can of worms' means to create unexpected problems. Present perfect for recent result."
+    "explanation": "'Open a can of worms' significa crear problemas inesperados. Presente perfecto para un resultado reciente."
   },
   {
     "id": "reord-id-b2-002",
     "sentence": "If she had not jumped on the bandwagon the project would have failed",
-    "words": ["If", "she", "had", "not", "jumped", "on", "the", "bandwagon", "the", "project", "would", "have", "failed"],
+    "words": [
+      "If",
+      "she",
+      "had",
+      "not",
+      "jumped",
+      "on",
+      "the",
+      "bandwagon",
+      "the",
+      "project",
+      "would",
+      "have",
+      "failed"
+    ],
     "hint": "Third conditional: If + past perfect, would have + past participle",
-    "explanation": "'Jump on the bandwagon' means to join a popular trend. Third conditional for unreal past."
+    "explanation": "'Jump on the bandwagon' significa sumarse a una tendencia popular. Tercer condicional para un pasado irreal."
   },
   {
     "id": "reord-id-b2-003",
     "sentence": "The CEO has been pulling strings behind the scenes for months",
-    "words": ["The", "CEO", "has", "been", "pulling", "strings", "behind", "the", "scenes", "for", "months"],
-    "explanation": "'Pull strings' means to use influence secretly. 'Behind the scenes' means in private."
+    "words": [
+      "The",
+      "CEO",
+      "has",
+      "been",
+      "pulling",
+      "strings",
+      "behind",
+      "the",
+      "scenes",
+      "for",
+      "months"
+    ],
+    "explanation": "'Pull strings' significa usar influencias en secreto. 'Behind the scenes' significa en privado."
   },
   {
     "id": "reord-id-b2-004",
     "sentence": "We need to get to the bottom of this financial discrepancy",
-    "words": ["We", "need", "to", "get", "to", "the", "bottom", "of", "this", "financial", "discrepancy"],
-    "explanation": "'Get to the bottom of' means to find the true cause. 'Need to' + base form."
+    "words": [
+      "We",
+      "need",
+      "to",
+      "get",
+      "to",
+      "the",
+      "bottom",
+      "of",
+      "this",
+      "financial",
+      "discrepancy"
+    ],
+    "explanation": "'Get to the bottom of' significa descubrir la causa real. 'Need to' + forma base del verbo."
   },
   {
     "id": "reord-id-b2-005",
     "sentence": "I wish they would stop beating a dead horse about the old strategy",
-    "words": ["I", "wish", "they", "would", "stop", "beating", "a", "dead", "horse", "about", "the", "old", "strategy"],
+    "words": [
+      "I",
+      "wish",
+      "they",
+      "would",
+      "stop",
+      "beating",
+      "a",
+      "dead",
+      "horse",
+      "about",
+      "the",
+      "old",
+      "strategy"
+    ],
     "hint": "Wish + would + base form for complaints",
-    "explanation": "'Beat a dead horse' means to waste time on a settled issue. 'Wish + would' for complaints."
+    "explanation": "'Beat a dead horse' significa perder el tiempo en un asunto ya resuelto. 'Wish + would' para quejas."
   },
   {
     "id": "reord-id-b2-006",
     "sentence": "The startup managed to weather the storm during the economic crisis",
-    "words": ["The", "startup", "managed", "to", "weather", "the", "storm", "during", "the", "economic", "crisis"],
-    "explanation": "'Weather the storm' means to survive a difficult period. 'Managed to' + base form."
+    "words": [
+      "The",
+      "startup",
+      "managed",
+      "to",
+      "weather",
+      "the",
+      "storm",
+      "during",
+      "the",
+      "economic",
+      "crisis"
+    ],
+    "explanation": "'Weather the storm' significa superar un período difícil. 'Managed to' + forma base del verbo."
   },
   {
     "id": "reord-id-b2-007",
     "sentence": "Had he not cut corners the product would have been safer",
-    "words": ["Had", "he", "not", "cut", "corners", "the", "product", "would", "have", "been", "safer"],
+    "words": [
+      "Had",
+      "he",
+      "not",
+      "cut",
+      "corners",
+      "the",
+      "product",
+      "would",
+      "have",
+      "been",
+      "safer"
+    ],
     "hint": "Inverted third conditional: Had + subject + not + past participle",
-    "explanation": "'Cut corners' means to do something cheaply or poorly. Inverted conditional omits 'if'."
+    "explanation": "'Cut corners' significa hacer algo de forma barata o descuidada. El condicional invertido omite 'if'."
   },
   {
     "id": "reord-id-b2-008",
     "sentence": "She was barking up the wrong tree by blaming the intern",
-    "words": ["She", "was", "barking", "up", "the", "wrong", "tree", "by", "blaming", "the", "intern"],
-    "explanation": "'Bark up the wrong tree' means to pursue a mistaken approach. 'By' + gerund explains how."
+    "words": [
+      "She",
+      "was",
+      "barking",
+      "up",
+      "the",
+      "wrong",
+      "tree",
+      "by",
+      "blaming",
+      "the",
+      "intern"
+    ],
+    "explanation": "'Bark up the wrong tree' significa seguir un enfoque equivocado. 'By' + gerundio explica cómo."
   },
   {
     "id": "reord-id-b2-009",
     "sentence": "The team has been bending over backwards to meet the deadline",
-    "words": ["The", "team", "has", "been", "bending", "over", "backwards", "to", "meet", "the", "deadline"],
+    "words": [
+      "The",
+      "team",
+      "has",
+      "been",
+      "bending",
+      "over",
+      "backwards",
+      "to",
+      "meet",
+      "the",
+      "deadline"
+    ],
     "hint": "Present perfect continuous for ongoing effort",
-    "explanation": "'Bend over backwards' means to try extremely hard. Present perfect continuous for duration."
+    "explanation": "'Bend over backwards' significa esforzarse al máximo. Presente perfecto continuo para indicar duración."
   },
   {
     "id": "reord-id-b2-010",
     "sentence": "They would rather not rock the boat before the merger is complete",
-    "words": ["They", "would", "rather", "not", "rock", "the", "boat", "before", "the", "merger", "is", "complete"],
-    "explanation": "'Rock the boat' means to cause trouble. 'Would rather not' expresses preference to avoid."
+    "words": [
+      "They",
+      "would",
+      "rather",
+      "not",
+      "rock",
+      "the",
+      "boat",
+      "before",
+      "the",
+      "merger",
+      "is",
+      "complete"
+    ],
+    "explanation": "'Rock the boat' significa causar problemas. 'Would rather not' expresa preferencia por evitar algo."
+  },
+  {
+    "id": "reord-id-b2-011",
+    "sentence": "We will cross that bridge when we come to it",
+    "words": [
+      "We",
+      "will",
+      "cross",
+      "that",
+      "bridge",
+      "when",
+      "we",
+      "come",
+      "to",
+      "it"
+    ],
+    "hint": "Subject + will + idiom + time clause",
+    "explanation": "'Cross that bridge when we come to it' significa ocuparse de un problema solo cuando realmente ocurre."
+  },
+  {
+    "id": "reord-id-b2-012",
+    "sentence": "After three failed attempts she decided to throw in the towel",
+    "words": [
+      "After",
+      "three",
+      "failed",
+      "attempts",
+      "she",
+      "decided",
+      "to",
+      "throw",
+      "in",
+      "the",
+      "towel"
+    ],
+    "hint": "Time expression + subject + verb + infinitive + idiom",
+    "explanation": "'Throw in the towel' significa rendirse o admitir la derrota."
+  },
+  {
+    "id": "reord-id-b2-013",
+    "sentence": "The manager should have read the writing on the wall",
+    "words": [
+      "The",
+      "manager",
+      "should",
+      "have",
+      "read",
+      "the",
+      "writing",
+      "on",
+      "the",
+      "wall"
+    ],
+    "hint": "Subject + modal perfect + idiom",
+    "explanation": "'Read the writing on the wall' significa reconocer señales claras de que algo malo está por suceder."
+  },
+  {
+    "id": "reord-id-b2-014",
+    "sentence": "The negotiations collapsed and we had to go back to square one",
+    "words": [
+      "The",
+      "negotiations",
+      "collapsed",
+      "and",
+      "we",
+      "had",
+      "to",
+      "go",
+      "back",
+      "to",
+      "square",
+      "one"
+    ],
+    "hint": "Clause + and + subject + had to + idiom",
+    "explanation": "'Go back to square one' significa volver a empezar desde el principio después de un contratiempo."
+  },
+  {
+    "id": "reord-id-b2-015",
+    "sentence": "Regular exercise helps keep stress at bay",
+    "words": [
+      "Regular",
+      "exercise",
+      "helps",
+      "keep",
+      "stress",
+      "at",
+      "bay"
+    ],
+    "hint": "Subject + verb + infinitive + idiom",
+    "explanation": "'Keep something at bay' significa evitar que algo te afecte o se acerque a ti."
   }
 ]

@@ -7,7 +7,7 @@
       "She does not like coffee."
     ],
     "hint": "Use <doesn't> + base verb",
-    "explanation": "For third person singular negatives in present simple, use <doesn't> + base form of the verb."
+    "explanation": "Para negaciones en tercera persona singular en presente simple, se usa <doesn't> + verbo en forma base."
   },
   {
     "prompt": "Change to a question",
@@ -16,7 +16,7 @@
       "Does he play football?"
     ],
     "hint": "Use <Does> at the beginning",
-    "explanation": "For third person singular questions in present simple, use <Does> + subject + base verb."
+    "explanation": "Para preguntas en tercera persona singular en presente simple, se usa <Does> + sujeto + verbo base."
   },
   {
     "prompt": "Change to plural subject",
@@ -25,7 +25,7 @@
       "The cats are sleeping."
     ],
     "hint": "Change <cat> to <cats> and <is> to <are>",
-    "explanation": "Plural subjects use <are> instead of <is> in present continuous."
+    "explanation": "Los sujetos plurales usan <are> en lugar de <is> en el presente continuo."
   },
   {
     "prompt": "Change to past simple",
@@ -34,7 +34,7 @@
       "I walked to school."
     ],
     "hint": "Add <-ed> to regular verbs",
-    "explanation": "Regular verbs form the past simple by adding <-ed>: walk → walked."
+    "explanation": "Los verbos regulares forman el pasado simple añadiendo <-ed>: walk → walked."
   },
   {
     "prompt": "Change to negative",
@@ -43,7 +43,7 @@
       "They don't have a car.",
       "They do not have a car."
     ],
-    "explanation": "For plural subjects in present simple, use <don't> + base verb."
+    "explanation": "Para sujetos plurales en presente simple, se usa <don't> + verbo base."
   },
   {
     "prompt": "Change to a question",
@@ -51,7 +51,7 @@
     "correct": [
       "Do you like pizza?"
     ],
-    "explanation": "For questions with <you>, use <Do> + subject + base verb."
+    "explanation": "Para preguntas con <you>, se usa <Do> + sujeto + verbo base."
   },
   {
     "prompt": "Change <he> to <they>",
@@ -61,7 +61,7 @@
       "They're teachers."
     ],
     "hint": "Change the verb and make the noun plural",
-    "explanation": "When changing from singular to plural: <he is> → <they are>, and <teacher> → <teachers>."
+    "explanation": "Al cambiar de singular a plural: <he is> → <they are>, y <teacher> → <teachers>."
   },
   {
     "prompt": "Change to present continuous",
@@ -71,7 +71,7 @@
       "She's reading a book."
     ],
     "hint": "Use <is> + verb-ing",
-    "explanation": "Present continuous: subject + <is/are> + verb-ing. <reads> → <is reading>."
+    "explanation": "Presente continuo: sujeto + <is/are> + verbo-ing. <reads> → <is reading>."
   },
   {
     "prompt": "Change to past simple",
@@ -80,7 +80,7 @@
       "They went to the park."
     ],
     "hint": "<go> is an irregular verb",
-    "explanation": "Irregular verb: <go> → <went> in past simple."
+    "explanation": "Verbo irregular: <go> → <went> en pasado simple."
   },
   {
     "prompt": "Change to negative",
@@ -89,7 +89,7 @@
       "I am not happy.",
       "I'm not happy."
     ],
-    "explanation": "With <be>, add <not> after the verb: <am> → <am not>."
+    "explanation": "Con <be>, se añade <not> después del verbo: <am> → <am not>."
   },
   {
     "prompt": "Change to present continuous",
@@ -99,7 +99,7 @@
       "They're playing in the garden."
     ],
     "hint": "Use <are> + verb-ing",
-    "explanation": "Present continuous with plural subjects: <are> + verb-ing."
+    "explanation": "Presente continuo con sujetos plurales: <are> + verbo-ing."
   },
   {
     "prompt": "Change to possessive form",
@@ -109,7 +109,7 @@
       "It's Maria's dog."
     ],
     "hint": "Use apostrophe + s",
-    "explanation": "Possessive: add <'s> to the owner's name: <Maria's dog>."
+    "explanation": "Posesivo: se añade <'s> al nombre del propietario: <Maria's dog>."
   },
   {
     "prompt": "Change to plural",
@@ -118,7 +118,7 @@
       "There are children in the room."
     ],
     "hint": "<child> has an irregular plural",
-    "explanation": "Irregular plural: <child> → <children>. Also <is> → <are> for plural."
+    "explanation": "Plural irregular: <child> → <children>. También <is> → <are> para el plural."
   },
   {
     "prompt": "Change to a question",
@@ -126,7 +126,7 @@
     "correct": [
       "Is she reading a book?"
     ],
-    "explanation": "For present continuous questions, invert the subject and <is/are>."
+    "explanation": "Para preguntas en presente continuo, se invierte el orden del sujeto y <is/are>."
   },
   {
     "prompt": "Change to present continuous",
@@ -136,7 +136,7 @@
       "He's eating lunch."
     ],
     "hint": "Use <is> + verb-ing",
-    "explanation": "Present continuous: <is> + verb-ing for actions happening now."
+    "explanation": "Presente continuo: <is> + verbo-ing para acciones que ocurren ahora."
   },
   {
     "prompt": "Change <I> to <she>",
@@ -145,7 +145,7 @@
       "She has a red bag."
     ],
     "hint": "Change the verb form too",
-    "explanation": "Third person singular: <I have> → <She has>."
+    "explanation": "Tercera persona singular: <I have> → <She has>."
   },
   {
     "prompt": "Change to possessive pronoun",
@@ -154,7 +154,7 @@
       "This is my book.",
       "This book is mine."
     ],
-    "explanation": "Possessive pronouns: <belongs to me> → <my> (adjective) or <mine> (pronoun)."
+    "explanation": "Pronombres posesivos: <belongs to me> → <my> (adjetivo) o <mine> (pronombre)."
   },
   {
     "prompt": "Change to plural",
@@ -163,7 +163,7 @@
       "The men are tall."
     ],
     "hint": "<man> has an irregular plural",
-    "explanation": "Irregular plural: <man> → <men>, <is> → <are>."
+    "explanation": "Plural irregular: <man> → <men>, <is> → <are>."
   },
   {
     "prompt": "Change to a question",
@@ -171,7 +171,7 @@
     "correct": [
       "Do they have two dogs?"
     ],
-    "explanation": "For present simple questions with plural subjects, use <Do> + subject + base verb."
+    "explanation": "Para preguntas en presente simple con sujetos plurales, se usa <Do> + sujeto + verbo base."
   },
   {
     "prompt": "Change to present continuous",
@@ -180,7 +180,7 @@
       "We are walking to school.",
       "We're walking to school."
     ],
-    "explanation": "Present continuous: subject + <are> + verb-ing."
+    "explanation": "Presente continuo: sujeto + <are> + verbo-ing."
   },
   {
     "prompt": "Change to negative",
@@ -190,7 +190,7 @@
       "He isn't at home.",
       "He's not at home."
     ],
-    "explanation": "With <be>, add <not> after the verb: <is> → <is not> / <isn't>."
+    "explanation": "Con <be>, se añade <not> después del verbo: <is> → <is not> / <isn't>."
   },
   {
     "prompt": "Change to possessive form",
@@ -199,7 +199,7 @@
       "It is the baby's toy.",
       "It's the baby's toy."
     ],
-    "explanation": "Possessive with <'s>: <the baby's toy>."
+    "explanation": "Posesivo con <'s>: <the baby's toy>."
   },
   {
     "prompt": "Change to plural",
@@ -208,7 +208,7 @@
       "The women are doctors."
     ],
     "hint": "<woman> has an irregular plural",
-    "explanation": "Irregular plural: <woman> → <women>, <is> → <are>, <doctor> → <doctors>."
+    "explanation": "Plural irregular: <woman> → <women>, <is> → <are>, <doctor> → <doctors>."
   },
   {
     "prompt": "Change to a question with <Where>",
@@ -217,7 +217,7 @@
       "Where does she live?"
     ],
     "hint": "Use <Where> + <does> + subject + base verb",
-    "explanation": "Wh-questions in present simple: <Where> + <does> + subject + base verb."
+    "explanation": "Preguntas con wh- en presente simple: <Where> + <does> + sujeto + verbo base."
   },
   {
     "prompt": "Change to past simple",
@@ -225,6 +225,6 @@
     "correct": [
       "She had a cat."
     ],
-    "explanation": "Past simple of <have>: <has> → <had>."
+    "explanation": "Pasado simple de <have>: <has> → <had>."
   }
 ]

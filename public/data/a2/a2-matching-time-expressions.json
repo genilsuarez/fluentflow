@@ -2,201 +2,201 @@
   {
     "left": "yesterday",
     "right": "ayer",
-    "explanation": "Used to refer to the day before today"
+    "explanation": "Se usa para referirse al día anterior a hoy"
   },
   {
     "left": "today",
     "right": "hoy",
-    "explanation": "Used to refer to the current day"
+    "explanation": "Se usa para referirse al día actual"
   },
   {
     "left": "tomorrow",
     "right": "mañana",
-    "explanation": "Used to refer to the day after today"
+    "explanation": "Se usa para referirse al día siguiente a hoy"
   },
   {
     "left": "last week",
     "right": "la semana pasada",
-    "explanation": "Used to refer to the week before this one"
+    "explanation": "Se usa para referirse a la semana anterior a esta"
   },
   {
     "left": "this week",
     "right": "esta semana",
-    "explanation": "Used to refer to the current week"
+    "explanation": "Se usa para referirse a la semana actual"
   },
   {
     "left": "next week",
     "right": "la próxima semana",
-    "explanation": "Used to refer to the week after this one"
+    "explanation": "Se usa para referirse a la semana siguiente a esta"
   },
   {
     "left": "last month",
     "right": "el mes pasado",
-    "explanation": "Used to refer to the month before this one"
+    "explanation": "Se usa para referirse al mes anterior a este"
   },
   {
     "left": "this month",
     "right": "este mes",
-    "explanation": "Used to refer to the current month"
+    "explanation": "Se usa para referirse al mes actual"
   },
   {
     "left": "next month",
     "right": "el próximo mes",
-    "explanation": "Used to refer to the month after this one"
+    "explanation": "Se usa para referirse al mes siguiente a este"
   },
   {
     "left": "last year",
     "right": "el año pasado",
-    "explanation": "Used to refer to the year before this one"
+    "explanation": "Se usa para referirse al año anterior a este"
   },
   {
     "left": "this year",
     "right": "este año",
-    "explanation": "Used to refer to the current year"
+    "explanation": "Se usa para referirse al año actual"
   },
   {
     "left": "next year",
     "right": "el próximo año",
-    "explanation": "Used to refer to the year after this one"
+    "explanation": "Se usa para referirse al año siguiente a este"
   },
   {
     "left": "in the morning",
     "right": "por la mañana",
-    "explanation": "Used to refer to the early part of the day"
+    "explanation": "Se usa para referirse a la primera parte del día"
   },
   {
     "left": "in the afternoon",
     "right": "por la tarde",
-    "explanation": "Used to refer to the middle part of the day"
+    "explanation": "Se usa para referirse a la parte media del día"
   },
   {
     "left": "in the evening",
     "right": "por la noche",
-    "explanation": "Used to refer to the later part of the day"
+    "explanation": "Se usa para referirse a la última parte del día"
   },
   {
     "left": "at night",
     "right": "en la noche",
-    "explanation": "Used to refer to the dark hours of the day"
+    "explanation": "Se usa para referirse a las horas oscuras del día"
   },
   {
     "left": "at midnight",
     "right": "a medianoche",
-    "explanation": "Used to refer to 12:00 AM"
+    "explanation": "Se usa para referirse a las 12:00 a. m."
   },
   {
     "left": "at noon",
     "right": "al mediodía",
-    "explanation": "Used to refer to 12:00 PM"
+    "explanation": "Se usa para referirse a las 12:00 p. m."
   },
   {
     "left": "early",
     "right": "temprano",
-    "explanation": "Used to refer to a time before the usual time"
+    "explanation": "Se usa para referirse a un momento antes de la hora habitual"
   },
   {
     "left": "late",
     "right": "tarde",
-    "explanation": "Used to refer to a time after the usual time"
+    "explanation": "Se usa para referirse a un momento después de la hora habitual"
   },
   {
     "left": "on time",
     "right": "a tiempo",
-    "explanation": "Used to refer to arriving at the correct time"
+    "explanation": "Se usa para referirse a llegar a la hora correcta"
   },
   {
     "left": "before",
     "right": "antes",
-    "explanation": "Used to refer to an earlier time"
+    "explanation": "Se usa para referirse a un momento anterior"
   },
   {
     "left": "after",
     "right": "después",
-    "explanation": "Used to refer to a later time"
+    "explanation": "Se usa para referirse a un momento posterior"
   },
   {
     "left": "during",
     "right": "durante",
-    "explanation": "Used to refer to the time when something happens"
+    "explanation": "Se usa para referirse al momento en que ocurre algo"
   },
   {
     "left": "while",
     "right": "mientras",
-    "explanation": "Used to refer to the same time as something else"
+    "explanation": "Se usa para referirse al mismo momento que otra cosa"
   },
   {
     "left": "since",
     "right": "desde",
-    "explanation": "Used to refer to a starting point in time"
+    "explanation": "Se usa para referirse a un punto de partida en el tiempo"
   },
   {
     "left": "until",
     "right": "hasta",
-    "explanation": "Used to refer to an ending point in time"
+    "explanation": "Se usa para referirse a un punto final en el tiempo"
   },
   {
     "left": "for",
     "right": "por/durante",
-    "explanation": "Used to refer to a period of time"
+    "explanation": "Se usa para referirse a un período de tiempo"
   },
   {
     "left": "ago",
     "right": "hace",
-    "explanation": "Used to refer to time in the past"
+    "explanation": "Se usa para referirse a un momento en el pasado"
   },
   {
     "left": "already",
     "right": "ya",
-    "explanation": "Used to refer to something that happened earlier than expected"
+    "explanation": "Se usa para referirse a algo que ocurrió antes de lo esperado"
   },
   {
     "left": "still",
     "right": "todavía",
-    "explanation": "Used to refer to something continuing"
+    "explanation": "Se usa para referirse a algo que continúa"
   },
   {
     "left": "yet",
     "right": "aún/todavía",
-    "explanation": "Used in questions and negatives about expected events"
+    "explanation": "Se usa en preguntas y oraciones negativas sobre eventos esperados"
   },
   {
     "left": "just",
     "right": "apenas/justo",
-    "explanation": "Used to refer to something that happened very recently"
+    "explanation": "Se usa para referirse a algo que ocurrió hace muy poco"
   },
   {
     "left": "recently",
     "right": "recientemente",
-    "explanation": "Used to refer to something that happened not long ago"
+    "explanation": "Se usa para referirse a algo que ocurrió no hace mucho"
   },
   {
     "left": "soon",
     "right": "pronto",
-    "explanation": "Used to refer to something that will happen in the near future"
+    "explanation": "Se usa para referirse a algo que ocurrirá en el futuro cercano"
   },
   {
     "left": "later",
     "right": "más tarde",
-    "explanation": "Used to refer to a time after now or after another time"
+    "explanation": "Se usa para referirse a un momento después de ahora o de otro momento"
   },
   {
     "left": "earlier",
     "right": "más temprano",
-    "explanation": "Used to refer to a time before now or before another time"
+    "explanation": "Se usa para referirse a un momento antes de ahora o de otro momento"
   },
   {
     "left": "always",
     "right": "siempre",
-    "explanation": "Used to refer to all the time"
+    "explanation": "Se usa para referirse a todo el tiempo"
   },
   {
     "left": "never",
     "right": "nunca",
-    "explanation": "Used to refer to not at any time"
+    "explanation": "Se usa para referirse a ningún momento"
   },
   {
     "left": "sometimes",
     "right": "a veces",
-    "explanation": "Used to refer to some of the time"
+    "explanation": "Se usa para referirse a parte del tiempo"
   }
 ]

@@ -5,7 +5,7 @@
     "correct": [
       "It was Maria who organized the whole event."
     ],
-    "explanation": "Cleft with <It was ... who> emphasizes the agent (person)."
+    "explanation": "La oración hendida (cleft) con <It was ... who> enfatiza al agente (la persona)."
   },
   {
     "prompt": "Rewrite as a cleft sentence with <It was ... that>",
@@ -13,7 +13,7 @@
     "correct": [
       "It was the heavy rain that caused the flooding."
     ],
-    "explanation": "Cleft with <It was ... that> emphasizes the cause."
+    "explanation": "La oración hendida con <It was ... that> enfatiza la causa."
   },
   {
     "prompt": "Rewrite using <What ... is/was>",
@@ -22,7 +22,7 @@
       "What I admire is her courage.",
       "What I admire about her is her courage."
     ],
-    "explanation": "<What> cleft: <What> + subject + verb + <is> + focused element."
+    "explanation": "Oración hendida con <What>: <What> + sujeto + verbo + <is> + elemento enfocado."
   },
   {
     "prompt": "Rewrite using <What ... did was>",
@@ -32,7 +32,7 @@
       "What he did was to resign immediately."
     ],
     "hint": "After <What ... did was>, use base form or <to> + infinitive",
-    "explanation": "<What ... did was> + base verb/to-infinitive focuses on the action."
+    "explanation": "<What ... did was> + verbo base/infinitivo con <to> enfoca la acción."
   },
   {
     "prompt": "Rewrite as a cleft sentence with <It is ... where>",
@@ -41,7 +41,7 @@
       "It was at a conference in Berlin where they met.",
       "It was in Berlin where they met at a conference."
     ],
-    "explanation": "Cleft with <It was ... where> emphasizes the location."
+    "explanation": "La oración hendida con <It was ... where> enfatiza el lugar."
   },
   {
     "prompt": "Rewrite using <The reason ... is that>",
@@ -50,7 +50,7 @@
       "The reason he quit is that the salary was too low.",
       "The reason why he quit is that the salary was too low."
     ],
-    "explanation": "<The reason (why) ... is that> focuses on the cause/motivation."
+    "explanation": "<The reason (why) ... is that> enfoca la causa/motivación."
   },
   {
     "prompt": "Rewrite using <What ... need(s) is>",
@@ -58,7 +58,7 @@
     "correct": [
       "What the country needs is economic reform."
     ],
-    "explanation": "<What ... needs is> cleft emphasizes the required solution."
+    "explanation": "La oración hendida <What ... needs is> enfatiza la solución necesaria."
   },
   {
     "prompt": "Rewrite as a cleft sentence with <It was ... when>",
@@ -67,7 +67,7 @@
       "It was only after submitting the report that I realized the mistake.",
       "It was after submitting the report when I realized the mistake."
     ],
-    "explanation": "Cleft with time focus: <It was ... that/when> emphasizes timing."
+    "explanation": "Oración hendida con foco temporal: <It was ... that/when> enfatiza el momento."
   },
   {
     "prompt": "Rewrite using <What happened was>",
@@ -76,7 +76,7 @@
       "What happened was that the system crashed and we lost all the data.",
       "What happened was the system crashed and we lost all the data."
     ],
-    "explanation": "<What happened was (that)> introduces an explanation of events."
+    "explanation": "<What happened was (that)> introduce una explicación de los hechos."
   },
   {
     "prompt": "Rewrite using <All ... is/was>",
@@ -85,7 +85,7 @@
       "All I want is a quiet evening at home."
     ],
     "hint": "<All> + subject + verb + <is> + complement",
-    "explanation": "<All ... is> cleft minimizes and focuses: <the only thing I want is>."
+    "explanation": "La oración hendida <All ... is> minimiza y enfoca: equivale a <the only thing I want is> (lo único que quiero es)."
   },
   {
     "prompt": "Rewrite using <The thing that ... is>",
@@ -93,7 +93,7 @@
     "correct": [
       "The thing that bothers me most is his arrogance."
     ],
-    "explanation": "<The thing that ... is> defers the focus element to the end."
+    "explanation": "<The thing that ... is> pospone el elemento enfocado hasta el final."
   },
   {
     "prompt": "Rewrite as a cleft with <It is ... who>",
@@ -101,7 +101,7 @@
     "correct": [
       "It is you who should apologize, not me."
     ],
-    "explanation": "Cleft for contrast: <It is you who> emphasizes the responsible person."
+    "explanation": "Oración hendida de contraste: <It is you who> enfatiza a la persona responsable."
   },
   {
     "prompt": "Rewrite using <What ... made ... was>",
@@ -109,7 +109,7 @@
     "correct": [
       "What made the film memorable was the plot twist."
     ],
-    "explanation": "<What made X [adjective] was Y> focuses on the cause of a quality."
+    "explanation": "<What made X [adjetivo] was Y> enfoca la causa de una cualidad."
   },
   {
     "prompt": "Rewrite using <The person who>",
@@ -117,7 +117,7 @@
     "correct": [
       "The person who approved the merger was the CEO."
     ],
-    "explanation": "<The person/thing who/that ... was> pseudo-cleft defers focus to the end."
+    "explanation": "La pseudo-hendida <The person/thing who/that ... was> pospone el foco hasta el final."
   },
   {
     "prompt": "Rewrite using <It was not until ... that>",
@@ -126,7 +126,7 @@
       "It was not until she read the report that she understood the problem.",
       "It wasn't until she read the report that she understood the problem."
     ],
-    "explanation": "<It was not until ... that> emphasizes lateness or delay."
+    "explanation": "<It was not until ... that> enfatiza la tardanza o el retraso."
   },
   {
     "prompt": "Rewrite using <Where ... is>",
@@ -135,7 +135,7 @@
       "Where I grew up is a small village by the sea.",
       "Where I grew up was a small village by the sea."
     ],
-    "explanation": "<Where ... is> pseudo-cleft focuses on a place."
+    "explanation": "La pseudo-hendida <Where ... is> enfoca un lugar."
   },
   {
     "prompt": "Rewrite using <What ... is> with abstract focus",
@@ -143,7 +143,7 @@
     "correct": [
       "What we lack is proper communication."
     ],
-    "explanation": "<What we lack/need/want is> focuses on what is missing."
+    "explanation": "<What we lack/need/want is> enfoca lo que falta."
   },
   {
     "prompt": "Rewrite as a cleft with <It is ... that> (negative)",
@@ -152,7 +152,7 @@
       "It is not money that makes you happy.",
       "It isn't money that makes you happy."
     ],
-    "explanation": "Negative cleft: <It is not X that ...> denies a cause/factor."
+    "explanation": "Oración hendida negativa: <It is not X that ...> niega una causa/factor."
   },
   {
     "prompt": "Rewrite using <The way ... is>",
@@ -160,7 +160,7 @@
     "correct": [
       "The way she handled the crisis was brilliant."
     ],
-    "explanation": "<The way ... is/was> + adjective focuses on manner."
+    "explanation": "<The way ... is/was> + adjetivo enfoca la manera/el modo."
   },
   {
     "prompt": "Rewrite using <What ... should do is>",
@@ -168,7 +168,7 @@
     "correct": [
       "What they should do is invest in renewable energy."
     ],
-    "explanation": "<What ... should do is> + base verb focuses on the recommended action."
+    "explanation": "<What ... should do is> + verbo base enfoca la acción recomendada."
   },
   {
     "prompt": "Rewrite as a cleft with focus on the object",
@@ -176,7 +176,7 @@
     "correct": [
       "It was the blue dress that I bought, not the red one."
     ],
-    "explanation": "Cleft focusing on the object: <It was [object] that I [verb]>."
+    "explanation": "Oración hendida que enfoca el objeto: <It was [objeto] that I [verbo]>."
   },
   {
     "prompt": "Rewrite using <The place where>",
@@ -184,7 +184,7 @@
     "correct": [
       "The place where we first met was the university library."
     ],
-    "explanation": "<The place where ... was> pseudo-cleft focuses on location."
+    "explanation": "La pseudo-hendida <The place where ... was> enfoca el lugar."
   },
   {
     "prompt": "Rewrite using <All ... did was>",
@@ -192,7 +192,7 @@
     "correct": [
       "All he did was smile and walk away."
     ],
-    "explanation": "<All ... did was> + base verb emphasizes the simplicity/minimality of the action."
+    "explanation": "<All ... did was> + verbo base enfatiza la simplicidad/minimalidad de la acción."
   },
   {
     "prompt": "Rewrite using <It was because of ... that>",
@@ -200,7 +200,7 @@
     "correct": [
       "It was because of his hard work that he got promoted."
     ],
-    "explanation": "<It was because of ... that> cleft focuses on the reason."
+    "explanation": "La oración hendida <It was because of ... that> enfoca la razón."
   },
   {
     "prompt": "Rewrite using <What ... want(s) is>",
@@ -208,6 +208,6 @@
     "correct": [
       "What the employees want is better working conditions."
     ],
-    "explanation": "<What ... want is> pseudo-cleft focuses on the desired outcome."
+    "explanation": "La pseudo-hendida <What ... want is> enfoca el resultado deseado."
   }
 ]

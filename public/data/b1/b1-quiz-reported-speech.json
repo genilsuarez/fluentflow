@@ -1,92 +1,222 @@
 [
   {
     "question": "\"I am happy,\" she said. → She said she _____ happy.",
-    "options": ["is", "was", "were", "has been"],
-    "correct": 1,
-    "explanation": "Backshift rule: present simple 'am' → past simple 'was'."
+    "options": [
+      "was",
+      "is",
+      "were",
+      "has been"
+    ],
+    "correct": 0,
+    "explanation": "Regla de backshift: presente simple 'am' → pasado simple 'was'."
   },
   {
     "question": "\"We will come,\" they said. → They said they _____ come.",
-    "options": ["will", "would", "could", "should"],
+    "options": [
+      "will",
+      "would",
+      "could",
+      "should"
+    ],
     "correct": 1,
-    "explanation": "Backshift: 'will' → 'would' in reported speech."
+    "explanation": "Backshift: 'will' → 'would' en el estilo indirecto."
   },
   {
     "question": "\"Do you like tea?\" → She asked me _____ I liked tea.",
-    "options": ["that", "what", "if", "do"],
+    "options": [
+      "that",
+      "what",
+      "if",
+      "do"
+    ],
     "correct": 2,
-    "explanation": "Yes/No questions in reported speech use 'if' or 'whether'."
+    "explanation": "Las preguntas de sí/no en estilo indirecto usan 'if' o 'whether'."
   },
   {
     "question": "\"I have seen that film,\" he said. → He said he _____ that film.",
-    "options": ["has seen", "had seen", "saw", "would see"],
-    "correct": 1,
-    "explanation": "Backshift: present perfect 'have seen' → past perfect 'had seen'."
+    "options": [
+      "has seen",
+      "saw",
+      "would see",
+      "had seen"
+    ],
+    "correct": 3,
+    "explanation": "Backshift: presente perfecto 'have seen' → pasado perfecto 'had seen'."
   },
   {
     "question": "\"Close the door!\" she said. → She told me _____ the door.",
-    "options": ["close", "to close", "closing", "closed"],
-    "correct": 1,
-    "explanation": "Reported commands: told + object + to-infinitive."
+    "options": [
+      "to close",
+      "close",
+      "closing",
+      "closed"
+    ],
+    "correct": 0,
+    "explanation": "Órdenes en estilo indirecto: told + objeto + to-infinitivo."
   },
   {
     "question": "\"I'm studying now,\" he said. → He said he _____ studying then.",
-    "options": ["is", "was", "has been", "had been"],
+    "options": [
+      "is",
+      "was",
+      "has been",
+      "had been"
+    ],
     "correct": 1,
-    "explanation": "Backshift: present continuous 'am' → past continuous 'was'. 'now' → 'then'."
+    "explanation": "Backshift: presente continuo 'am' → pasado continuo 'was'. 'now' → 'then'."
   },
   {
     "question": "'Tomorrow' in direct speech becomes _____ in reported speech.",
-    "options": ["yesterday", "the next day", "that day", "today"],
-    "correct": 1,
-    "explanation": "Time shift: tomorrow → the next day / the following day."
+    "options": [
+      "yesterday",
+      "that day",
+      "the next day",
+      "today"
+    ],
+    "correct": 2,
+    "explanation": "Cambio temporal: tomorrow → the next day / the following day."
   },
   {
     "question": "\"Don't run!\" → He told the children _____ run.",
-    "options": ["don't", "to not", "not to", "didn't"],
-    "correct": 2,
-    "explanation": "Reported negative commands: told + object + not to + base verb."
+    "options": [
+      "don't",
+      "to not",
+      "didn't",
+      "not to"
+    ],
+    "correct": 3,
+    "explanation": "Órdenes negativas en estilo indirecto: told + objeto + not to + verbo base."
   },
   {
     "question": "\"Where do you live?\" → She asked me where I _____.",
-    "options": ["live", "lived", "do live", "living"],
-    "correct": 1,
-    "explanation": "Wh-questions use statement order + backshift: live → lived."
+    "options": [
+      "lived",
+      "live",
+      "do live",
+      "living"
+    ],
+    "correct": 0,
+    "explanation": "Las preguntas con Wh- usan el orden de una afirmación + backshift: live → lived."
   },
   {
     "question": "'Here' in direct speech becomes _____ in reported speech.",
-    "options": ["here", "there", "then", "that place"],
+    "options": [
+      "here",
+      "there",
+      "then",
+      "that place"
+    ],
     "correct": 1,
-    "explanation": "Place shift: here → there."
+    "explanation": "Cambio de lugar: here → there."
   },
   {
     "question": "\"I can drive,\" she said. → She said she _____ drive.",
-    "options": ["can", "could", "was able", "would"],
-    "correct": 1,
+    "options": [
+      "can",
+      "was able",
+      "could",
+      "would"
+    ],
+    "correct": 2,
     "explanation": "Backshift: 'can' → 'could'."
   },
   {
     "question": "\"I must go,\" he said. → He said he _____ go.",
-    "options": ["must", "had to", "should", "would have to"],
-    "correct": 1,
+    "options": [
+      "must",
+      "should",
+      "would have to",
+      "had to"
+    ],
+    "correct": 3,
     "explanation": "Backshift: 'must' → 'had to'."
   },
   {
     "question": "Which reporting verb is used for requests?",
-    "options": ["told", "said", "asked", "ordered"],
-    "correct": 2,
-    "explanation": "Requests use 'asked' + object + to-infinitive. 'Told' is for commands."
+    "options": [
+      "asked",
+      "told",
+      "said",
+      "ordered"
+    ],
+    "correct": 0,
+    "explanation": "Las peticiones usan 'asked' + objeto + to-infinitivo. 'Told' se usa para órdenes."
   },
   {
     "question": "\"This is my book,\" she said. → She said _____ was her book.",
-    "options": ["this", "that", "it", "the"],
+    "options": [
+      "this",
+      "that",
+      "it",
+      "the"
+    ],
     "correct": 1,
-    "explanation": "Demonstrative shift: 'this' → 'that' in reported speech."
+    "explanation": "Cambio de demostrativo: 'this' → 'that' en estilo indirecto."
   },
   {
     "question": "\"Let's go swimming,\" he said. → He suggested _____.",
-    "options": ["to go swimming", "going swimming", "we go swimming", "go swimming"],
+    "options": [
+      "to go swimming",
+      "we go swimming",
+      "going swimming",
+      "go swimming"
+    ],
+    "correct": 2,
+    "explanation": "Sugerencias en estilo indirecto: suggested + forma en -ing."
+  },
+  {
+    "question": "\"I'm going to visit my grandmother,\" she said. → She said she _____ going to visit her grandmother.",
+    "options": [
+      "is",
+      "was",
+      "has been",
+      "would be"
+    ],
     "correct": 1,
-    "explanation": "Reported suggestions: suggested + -ing form."
+    "explanation": "Backshift: presente continuo 'am' → pasado continuo 'was'."
+  },
+  {
+    "question": "\"I saw him yesterday,\" she said. → She said she _____ him the day before.",
+    "options": [
+      "saw",
+      "had seen",
+      "has seen",
+      "sees"
+    ],
+    "correct": 1,
+    "explanation": "Backshift: pasado simple 'saw' → pasado perfecto 'had seen'."
+  },
+  {
+    "question": "'Yesterday' in direct speech becomes _____ in reported speech.",
+    "options": [
+      "the day before",
+      "tomorrow",
+      "that day",
+      "the next day"
+    ],
+    "correct": 0,
+    "explanation": "Cambio temporal: yesterday → the day before."
+  },
+  {
+    "question": "\"Please help me,\" she said. → She _____ me to help her.",
+    "options": [
+      "told",
+      "asked",
+      "said",
+      "ordered"
+    ],
+    "correct": 1,
+    "explanation": "Las peticiones corteses usan 'asked', no 'told'."
+  },
+  {
+    "question": "\"I might come later,\" he said. → He said he _____ come later.",
+    "options": [
+      "might",
+      "may",
+      "could",
+      "will"
+    ],
+    "correct": 0,
+    "explanation": "'Might' no cambia en estilo indirecto — ya es una forma pasada/modal."
   }
 ]

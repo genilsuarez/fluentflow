@@ -2,126 +2,126 @@
   {
     "sentence": "If I ______ more time, I would travel the world. (second conditional)",
     "correct": "had",
-    "explanation": "Second conditional: If + past simple. <If I had> expresses an unreal present situation."
+    "explanation": "Segunda condicional: If + pasado simple. <If I had> expresa una situación irreal en el presente."
   },
   {
     "sentence": "The report ______ by the manager yesterday. (passive voice)",
     "correct": "was written",
-    "explanation": "Past simple passive: <was/were> + past participle: <was written>."
+    "explanation": "Voz pasiva en pasado simple: <was/were> + participio pasado: <was written>."
   },
   {
     "sentence": "She suggested ______ to the new restaurant. (gerund or infinitive)",
     "correct": "going",
-    "explanation": "After <suggest>, use the gerund (-ing form): <suggested going>."
+    "explanation": "Después de <suggest>, se usa el gerundio (forma -ing): <suggested going>."
   },
   {
     "sentence": "He promised ______ me with the project. (gerund or infinitive)",
     "correct": "to help",
-    "explanation": "After <promise>, use the infinitive: <promised to help>."
+    "explanation": "Después de <promise>, se usa el infinitivo: <promised to help>."
   },
   {
     "sentence": "The meeting was ______ until next Monday. (phrasal verb: postpone)",
     "correct": "put off",
-    "explanation": "The phrasal verb <put off> means to postpone or delay."
+    "explanation": "El phrasal verb <put off> significa posponer o aplazar."
   },
   {
     "sentence": "She ______ the problem after hours of work. (phrasal verb: solve)",
     "correct": "figured out",
-    "explanation": "The phrasal verb <figure out> means to solve or understand something."
+    "explanation": "El phrasal verb <figure out> significa resolver o entender algo."
   },
   {
     "sentence": "We need to ______ a solution before the deadline. (phrasal verb: think of)",
     "correct": "come up with",
-    "explanation": "The phrasal verb <come up with> means to think of or produce an idea."
+    "explanation": "El phrasal verb <come up with> significa pensar en o producir una idea."
   },
   {
     "sentence": "He ______ his father. They look exactly the same. (phrasal verb: resemble)",
     "correct": "takes after",
-    "explanation": "The phrasal verb <take after> means to resemble a family member."
+    "explanation": "El phrasal verb <take after> significa parecerse a un familiar."
   },
   {
     "sentence": "Don't ______ the opportunity to study abroad. (phrasal verb: miss)",
     "correct": "pass up",
-    "explanation": "The phrasal verb <pass up> means to miss or not take an opportunity."
+    "explanation": "El phrasal verb <pass up> significa perder o no aprovechar una oportunidad."
   },
   {
     "sentence": "The whole project was a wild goose chase. This means it was a ______ effort.",
     "correct": "wasted",
-    "explanation": "The idiom <a wild goose chase> means a pointless or wasted search."
+    "explanation": "El modismo <a wild goose chase> significa una búsqueda inútil o infructuosa."
   },
   {
     "sentence": "She spilled the beans about the surprise party. She ______ the secret.",
     "correct": "revealed",
-    "explanation": "The idiom <spill the beans> means to reveal a secret."
+    "explanation": "El modismo <spill the beans> significa revelar un secreto."
   },
   {
     "sentence": "He's been burning the midnight oil. He's been ______ very late.",
     "correct": "working",
-    "explanation": "The idiom <burn the midnight oil> means to work or study late at night."
+    "explanation": "El modismo <burn the midnight oil> significa trabajar o estudiar hasta muy tarde."
   },
   {
     "sentence": "Don't beat around the bush. Just say it ______.",
     "correct": "directly",
-    "explanation": "The idiom <beat around the bush> means to avoid saying something directly."
+    "explanation": "El modismo <beat around the bush> significa evitar decir algo directamente."
   },
   {
     "sentence": "She's on the ball. She's very ______ and efficient.",
     "correct": "alert",
-    "explanation": "The idiom <on the ball> means being alert, competent, and quick to act."
+    "explanation": "El modismo <on the ball> significa estar alerta, ser competente y actuar con rapidez."
   },
   {
     "sentence": "It cost an arm and a leg. It was very ______.",
     "correct": "expensive",
-    "explanation": "The idiom <cost an arm and a leg> means something is very expensive."
+    "explanation": "El modismo <cost an arm and a leg> significa que algo es muy caro."
   },
   {
     "sentence": "The develop______ of the new software took six months.",
     "correct": "development",
-    "explanation": "Adding <-ment> to <develop> forms the noun <development>."
+    "explanation": "Al agregar <-ment> a <develop> se forma el sustantivo <development>."
   },
   {
     "sentence": "Her kind______ made everyone feel welcome.",
     "correct": "kindness",
-    "explanation": "Adding <-ness> to <kind> forms the noun <kindness>."
+    "explanation": "Al agregar <-ness> a <kind> se forma el sustantivo <kindness>."
   },
   {
     "sentence": "The ______ of the word 'un-' means 'not'. (prefix meaning)",
     "correct": "prefix",
-    "explanation": "A <prefix> is added to the beginning of a word to change its meaning."
+    "explanation": "Un <prefix> se agrega al principio de una palabra para cambiar su significado."
   },
   {
     "sentence": "Adding 're-' to 'write' gives us ______, meaning to write again.",
     "correct": "rewrite",
-    "explanation": "The prefix <re-> means 'again': <rewrite> = write again."
+    "explanation": "El prefijo <re-> significa 'otra vez': <rewrite> = escribir de nuevo."
   },
   {
     "sentence": "If she studied harder, she ______ pass the exam. (transform to conditional)",
     "correct": "would",
-    "explanation": "Second conditional result clause: <would> + base form."
+    "explanation": "Cláusula de resultado de la segunda condicional: <would> + forma base."
   },
   {
     "sentence": "The letter ______ by the secretary. (transform: 'The secretary wrote the letter' → passive)",
     "correct": "was written",
-    "explanation": "Passive voice: object becomes subject + <was> + past participle."
+    "explanation": "Voz pasiva: el objeto se convierte en sujeto + <was> + participio pasado."
   },
   {
     "sentence": "He told me that he ______ tired. (transform: 'I am tired' → reported speech)",
     "correct": "was",
-    "explanation": "In reported speech, present <am> changes to past <was>."
+    "explanation": "En el estilo indirecto, el presente <am> cambia a pasado <was>."
   },
   {
     "sentence": "She said she ______ help me the next day. (reported speech: 'I will help you tomorrow')",
     "correct": "would",
-    "explanation": "In reported speech, <will> changes to <would> and <tomorrow> to <the next day>."
+    "explanation": "En el estilo indirecto, <will> cambia a <would> y <tomorrow> a <the next day>."
   },
   {
     "sentence": "The cake ______ eaten by the children. (transform to passive: 'The children ate the cake')",
     "correct": "was",
-    "explanation": "Past simple passive: subject + <was/were> + past participle."
+    "explanation": "Voz pasiva en pasado simple: sujeto + <was/were> + participio pasado."
   },
   {
     "sentence": "If it ______ tomorrow, we'll stay home. (first conditional)",
     "correct": "rains",
-    "explanation": "First conditional: If + present simple. <If it rains> expresses a real possibility."
+    "explanation": "Primera condicional: If + presente simple. <If it rains> expresa una posibilidad real."
   }
 ]

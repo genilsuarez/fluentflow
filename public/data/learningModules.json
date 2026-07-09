@@ -4238,22 +4238,6 @@
     "difficulty": 2
   },
   {
-    "id": "reordering-comparatives-superlatives-a2",
-    "name": "Reorder Comparative & Superlative Sentences",
-    "learningMode": "reordering",
-    "dataPath": "data/a2/a2-reordering-comparatives-superlatives.json",
-    "level": [
-      "a2"
-    ],
-    "category": "Grammar",
-    "prerequisites": [
-      "error-correction-phrasal-verb-particle-a2"
-    ],
-    "description": "Put words in the correct order to form comparative and superlative sentences",
-    "estimatedTime": 3,
-    "difficulty": 2
-  },
-  {
     "id": "reordering-daily-activities-a2",
     "name": "Reorder Daily Activity Sentences",
     "learningMode": "reordering",
@@ -4263,7 +4247,7 @@
     ],
     "category": "Vocabulary",
     "prerequisites": [
-      "reordering-comparatives-superlatives-a2"
+      "reordering-comparatives-a2"
     ],
     "description": "Put words in the correct order to form daily activity sentences",
     "estimatedTime": 3,

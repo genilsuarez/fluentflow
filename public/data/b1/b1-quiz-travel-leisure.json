@@ -2,24 +2,24 @@
   {
     "question": "What is a <round-trip ticket>?",
     "options": [
-      "a ticket for one direction",
       "a ticket to go and return",
+      "a ticket for one direction",
       "a circular ticket",
       "a free ticket"
     ],
     "correct": "a ticket to go and return",
-    "explanation": "A <round-trip ticket> allows you to travel to a destination and return."
+    "explanation": "Un <round-trip ticket> te permite viajar a un destino y regresar."
   },
   {
     "question": "Where do you <check in> at an airport?",
     "options": [
-      "at the check-in counter",
       "at customs",
+      "at the check-in counter",
       "at the gate",
       "on the plane"
     ],
     "correct": "at the check-in counter",
-    "explanation": "You check in <at the check-in counter> to get your boarding pass."
+    "explanation": "Haces el check in <at the check-in counter> para obtener tu tarjeta de embarque."
   },
   {
     "question": "What does <boarding pass> mean?",
@@ -30,40 +30,40 @@
       "a passport"
     ],
     "correct": "a ticket to board the plane",
-    "explanation": "A <boarding pass> is the document that allows you to board your flight."
+    "explanation": "Un <boarding pass> es el documento que te permite abordar tu vuelo."
   },
   {
     "question": "What is <carry-on luggage>?",
     "options": [
       "heavy luggage",
       "luggage you check in",
-      "luggage you carry on the plane",
-      "lost luggage"
+      "lost luggage",
+      "luggage you carry on the plane"
     ],
     "correct": "luggage you carry on the plane",
-    "explanation": "<Carry-on luggage> is small bags you can take with you on the plane."
+    "explanation": "El <carry-on luggage> son las maletas pequeñas que puedes llevar contigo en el avión."
   },
   {
     "question": "Where do you go through <customs>?",
     "options": [
+      "when entering a country",
       "at the restaurant",
       "at the hotel",
-      "when entering a country",
       "at the beach"
     ],
     "correct": "when entering a country",
-    "explanation": "<Customs> is where officials check what you're bringing into a country."
+    "explanation": "<Customs> (aduana) es donde los funcionarios revisan lo que traes a un país."
   },
   {
     "question": "What does <all-inclusive> mean for a hotel?",
     "options": [
       "only breakfast included",
+      "all meals and drinks included",
       "no meals included",
-      "only dinner included",
-      "all meals and drinks included"
+      "only dinner included"
     ],
     "correct": "all meals and drinks included",
-    "explanation": "<All-inclusive> means all meals, drinks, and activities are included in the price."
+    "explanation": "<All-inclusive> significa que todas las comidas, bebidas y actividades están incluidas en el precio."
   },
   {
     "question": "What is a <layover>?",
@@ -74,51 +74,51 @@
       "delayed flight"
     ],
     "correct": "stop between flights",
-    "explanation": "A <layover> is a stop at an intermediate airport before reaching your final destination."
+    "explanation": "Un <layover> es una escala en un aeropuerto intermedio antes de llegar a tu destino final."
   },
   {
     "question": "What does <book a room> mean?",
     "options": [
       "leave a room",
       "read in a room",
-      "reserve a room",
-      "clean a room"
+      "clean a room",
+      "reserve a room"
     ],
     "correct": "reserve a room",
-    "explanation": "Booking a room means to reserve accommodation in advance."
+    "explanation": "<Book a room> significa reservar alojamiento con anticipación."
   },
   {
     "question": "What is <jet lag>?",
     "options": [
-      "missing a flight",
       "tiredness from time zone changes",
+      "missing a flight",
       "lost luggage",
       "fear of flying"
     ],
     "correct": "tiredness from time zone changes",
-    "explanation": "<Jet lag> is fatigue caused by traveling across different time zones."
+    "explanation": "El <jet lag> es el cansancio causado por viajar entre diferentes zonas horarias."
   },
   {
     "question": "Where do you find <tourist attractions>?",
     "options": [
       "at the airport",
-      "at home",
       "in popular destinations",
+      "at home",
       "in offices"
     ],
     "correct": "in popular destinations",
-    "explanation": "<Tourist attractions> are interesting places that visitors want to see."
+    "explanation": "Las <tourist attractions> son lugares interesantes que los visitantes quieren ver."
   },
   {
     "question": "What does <off-season> mean?",
     "options": [
-      "when fewer tourists visit",
       "summer time",
       "holiday season",
+      "when fewer tourists visit",
       "peak tourist time"
     ],
     "correct": "when fewer tourists visit",
-    "explanation": "<Off-season> is the time of year when there are fewer tourists and lower prices."
+    "explanation": "<Off-season> es la época del año en la que hay menos turistas y precios más bajos."
   },
   {
     "question": "What is a <guided tour>?",
@@ -129,18 +129,18 @@
       "tour with a guide"
     ],
     "correct": "tour with a guide",
-    "explanation": "A <guided tour> is led by someone who explains the sights and history."
+    "explanation": "Un <guided tour> está a cargo de alguien que explica los lugares y la historia."
   },
   {
     "question": "What does <check out> mean at a hotel?",
     "options": [
+      "leave the hotel",
       "arrive at hotel",
       "book a room",
-      "complain",
-      "leave the hotel"
+      "complain"
     ],
     "correct": "leave the hotel",
-    "explanation": "Checking out means to officially <leave the hotel> and pay your bill."
+    "explanation": "<Check out> significa dejar oficialmente el hotel y pagar la cuenta."
   },
   {
     "question": "What is <backpacking>?",
@@ -151,72 +151,72 @@
       "business travel"
     ],
     "correct": "budget travel with a backpack",
-    "explanation": "<Backpacking> is traveling cheaply, often staying in hostels and carrying your belongings in a backpack."
+    "explanation": "<Backpacking> es viajar de forma económica, generalmente alojándose en hostales y llevando tus pertenencias en una mochila."
   },
   {
     "question": "What does <sightseeing> mean?",
     "options": [
       "sleeping",
       "eating",
-      "shopping",
-      "visiting tourist attractions"
+      "visiting tourist attractions",
+      "shopping"
     ],
     "correct": "visiting tourist attractions",
-    "explanation": "<Sightseeing> is the activity of visiting interesting places as a tourist."
+    "explanation": "<Sightseeing> es la actividad de visitar lugares interesantes como turista."
   },
   {
     "question": "What is a <souvenir>?",
     "options": [
       "a passport",
       "a map",
-      "a memory item from a trip",
-      "a ticket"
+      "a ticket",
+      "a memory item from a trip"
     ],
     "correct": "a memory item from a trip",
-    "explanation": "A <souvenir> is something you buy to remember your trip."
+    "explanation": "Un <souvenir> es algo que compras para recordar tu viaje."
   },
   {
     "question": "What does <fully booked> mean?",
     "options": [
-      "expensive",
       "no rooms available",
+      "expensive",
       "cheap",
       "empty"
     ],
     "correct": "no rooms available",
-    "explanation": "<Fully booked> means all rooms or seats are reserved."
+    "explanation": "<Fully booked> significa que todas las habitaciones o asientos están reservados."
   },
   {
     "question": "What is a <travel itinerary>?",
     "options": [
       "a suitcase",
+      "a planned route or schedule",
       "a passport",
-      "a ticket",
-      "a planned route or schedule"
+      "a ticket"
     ],
     "correct": "a planned route or schedule",
-    "explanation": "An itinerary is a detailed plan of your trip including dates and places."
+    "explanation": "Un itinerario es un plan detallado de tu viaje que incluye fechas y lugares."
   },
   {
     "question": "What does <duty-free> mean?",
     "options": [
       "expensive items",
-      "items without tax",
       "free items",
+      "items without tax",
       "used items"
     ],
     "correct": "items without tax",
-    "explanation": "<Duty-free> means goods sold without local taxes, usually at airports."
+    "explanation": "<Duty-free> significa productos vendidos sin impuestos locales, generalmente en aeropuertos."
   },
   {
     "question": "What is a <package tour>?",
     "options": [
       "solo travel",
       "sending a package",
-      "organized trip with everything included",
-      "business trip"
+      "business trip",
+      "organized trip with everything included"
     ],
     "correct": "organized trip with everything included",
-    "explanation": "A <package tour> includes transportation, accommodation, and activities in one price."
+    "explanation": "Un <package tour> incluye transporte, alojamiento y actividades en un solo precio."
   }
 ]

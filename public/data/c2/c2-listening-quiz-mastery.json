@@ -1,74 +1,134 @@
 [
   {
     "question": "The ostensible rationale notwithstanding, the decision was perceived as politically motivated. What does 'ostensible' mean?",
-    "options": ["Apparent / seeming (but possibly not real)", "Obvious and undeniable", "Secret and hidden", "Temporary"],
+    "options": [
+      "Apparent / seeming (but possibly not real)",
+      "Obvious and undeniable",
+      "Secret and hidden",
+      "Temporary"
+    ],
     "correct": 0,
-    "explanation": "'Ostensible' = appearing to be true but possibly not. The stated reason may hide the real one."
+    "explanation": "'Ostensible' = que aparenta ser cierto pero puede que no lo sea. La razón declarada puede ocultar la verdadera."
   },
   {
     "question": "Rarely has a single publication engendered such protracted debate. What does 'engendered' mean?",
-    "options": ["Caused / produced", "Ended", "Summarised", "Avoided"],
-    "correct": 0,
-    "explanation": "'Engender' = to cause, produce, give rise to. Formal/academic verb."
+    "options": [
+      "Ended",
+      "Caused / produced",
+      "Summarised",
+      "Avoided"
+    ],
+    "correct": 1,
+    "explanation": "'Engender' = causar, producir, dar lugar a. Verbo formal/académico."
   },
   {
     "question": "The epistemological underpinnings of the theory have been called into question. What are 'epistemological underpinnings'?",
-    "options": ["The foundations related to knowledge and how we know things", "The financial basis", "The historical origins", "The practical applications"],
-    "correct": 0,
-    "explanation": "'Epistemological' = relating to knowledge/how we know. 'Underpinnings' = foundations."
+    "options": [
+      "The financial basis",
+      "The historical origins",
+      "The foundations related to knowledge and how we know things",
+      "The practical applications"
+    ],
+    "correct": 2,
+    "explanation": "'Epistemological' = relativo al conocimiento/a cómo sabemos las cosas. 'Underpinnings' = fundamentos."
   },
   {
     "question": "In contradistinction to prevailing orthodoxy, the author posits a different mechanism. What does 'in contradistinction to' mean?",
-    "options": ["In contrast to / as opposed to", "In agreement with", "As a result of", "In addition to"],
-    "correct": 0,
-    "explanation": "'In contradistinction to' = formal way of saying 'in contrast with', emphasizing the difference."
+    "options": [
+      "In agreement with",
+      "As a result of",
+      "In addition to",
+      "In contrast to / as opposed to"
+    ],
+    "correct": 3,
+    "explanation": "'In contradistinction to' = forma formal de decir 'en contraste con', enfatizando la diferencia."
   },
   {
     "question": "Be that as it may, the empirical evidence remains inconclusive. What does 'be that as it may' express?",
-    "options": ["Concession: accepting something but moving on regardless", "Agreement with the previous point", "A conditional situation", "A causal relationship"],
+    "options": [
+      "Concession: accepting something but moving on regardless",
+      "Agreement with the previous point",
+      "A conditional situation",
+      "A causal relationship"
+    ],
     "correct": 0,
-    "explanation": "'Be that as it may' = concessive fixed phrase: even so / nevertheless."
+    "explanation": "'Be that as it may' = frase fija concesiva: aun así / no obstante."
   },
   {
     "question": "Suffice it to say that the ramifications are significant. What does 'suffice it to say' mean?",
-    "options": ["It's enough to say / I'll just say this much", "It's difficult to say", "It's impossible to know", "It's too early to tell"],
-    "correct": 0,
-    "explanation": "'Suffice it to say' = it's enough to mention (without elaborating further)."
+    "options": [
+      "It's difficult to say",
+      "It's enough to say / I'll just say this much",
+      "It's impossible to know",
+      "It's too early to tell"
+    ],
+    "correct": 1,
+    "explanation": "'Suffice it to say' = basta con decir (sin entrar en más detalles)."
   },
   {
     "question": "One cannot but acknowledge the prescience of her observations. What does 'prescience' mean?",
-    "options": ["Foresight / ability to predict the future", "Carelessness", "Precision", "Simplicity"],
-    "correct": 0,
-    "explanation": "'Prescience' = foreknowledge, the ability to foresee what will happen."
+    "options": [
+      "Carelessness",
+      "Precision",
+      "Foresight / ability to predict the future",
+      "Simplicity"
+    ],
+    "correct": 2,
+    "explanation": "'Prescience' = presciencia, la capacidad de prever lo que va a suceder."
   },
   {
     "question": "Lest we forget, the consequences of inaction may prove costly. What does 'lest' mean?",
-    "options": ["For fear that / in case (we forget)", "Because", "Although", "Until"],
-    "correct": 0,
-    "explanation": "'Lest' = for fear that / in order to prevent. Formal/literary. Followed by subjunctive."
+    "options": [
+      "Because",
+      "Although",
+      "Until",
+      "For fear that / in case (we forget)"
+    ],
+    "correct": 3,
+    "explanation": "'Lest' = por temor a que / para evitar que. Formal/literario. Va seguido de subjuntivo."
   },
   {
     "question": "Inasmuch as the methodology is sound, the conclusions warrant consideration. What does 'inasmuch as' mean?",
-    "options": ["To the extent that / given that", "In spite of the fact that", "Regardless of whether", "As a result of"],
+    "options": [
+      "To the extent that / given that",
+      "In spite of the fact that",
+      "Regardless of whether",
+      "As a result of"
+    ],
     "correct": 0,
-    "explanation": "'Inasmuch as' = to the degree that / considering that. Formal qualifier."
+    "explanation": "'Inasmuch as' = en la medida en que / considerando que. Matizador formal."
   },
   {
     "question": "The sheer breadth of the undertaking necessitated unprecedented collaboration. What does 'sheer breadth' emphasise?",
-    "options": ["The enormous scope/scale", "The narrow focus", "The short duration", "The low cost"],
-    "correct": 0,
-    "explanation": "'Sheer' = pure/absolute (intensifier). 'Breadth' = width/scope. Together: the enormous scale."
+    "options": [
+      "The narrow focus",
+      "The enormous scope/scale",
+      "The short duration",
+      "The low cost"
+    ],
+    "correct": 1,
+    "explanation": "'Sheer' = puro/absoluto (intensificador). 'Breadth' = amplitud/alcance. Juntos: la enorme escala."
   },
   {
     "question": "It is precisely this tension that renders the debate intellectually stimulating. What is 'renders' here?",
-    "options": ["Makes / causes something to be", "Translates", "Destroys", "Questions"],
-    "correct": 0,
-    "explanation": "'Render' = to make/cause to become (formal). 'Renders X stimulating' = makes X stimulating."
+    "options": [
+      "Translates",
+      "Destroys",
+      "Makes / causes something to be",
+      "Questions"
+    ],
+    "correct": 2,
+    "explanation": "'Render' = hacer/causar que algo se convierta en (formal). 'Renders X stimulating' = hace que X sea estimulante."
   },
   {
     "question": "The author's contention, however compelling, is predicated on a contentious assumption. What does 'predicated on' mean?",
-    "options": ["Based on / founded upon", "Contradicted by", "Unrelated to", "Proven by"],
-    "correct": 0,
-    "explanation": "'Predicated on' = based upon, resting on (a particular foundation or assumption)."
+    "options": [
+      "Contradicted by",
+      "Unrelated to",
+      "Proven by",
+      "Based on / founded upon"
+    ],
+    "correct": 3,
+    "explanation": "'Predicated on' = basado en, que se apoya en (un fundamento o supuesto particular)."
   }
 ]

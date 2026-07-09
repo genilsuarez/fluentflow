@@ -2,216 +2,216 @@
   {
     "left": "1",
     "right": "one",
-    "explanation": "The number <one> written as a word"
+    "explanation": "El número <one> escrito con letras"
   },
   {
     "left": "2",
     "right": "two",
-    "explanation": "The number <two> written as a word"
+    "explanation": "El número <two> escrito con letras"
   },
   {
     "left": "3",
     "right": "three",
-    "explanation": "The number <three> written as a word"
+    "explanation": "El número <three> escrito con letras"
   },
   {
     "left": "4",
     "right": "four",
-    "explanation": "The number <four> written as a word"
+    "explanation": "El número <four> escrito con letras"
   },
   {
     "left": "5",
     "right": "five",
-    "explanation": "The number <five> written as a word"
+    "explanation": "El número <five> escrito con letras"
   },
   {
     "left": "6",
     "right": "six",
-    "explanation": "The number <six> written as a word"
+    "explanation": "El número <six> escrito con letras"
   },
   {
     "left": "7",
     "right": "seven",
-    "explanation": "The number <seven> written as a word"
+    "explanation": "El número <seven> escrito con letras"
   },
   {
     "left": "8",
     "right": "eight",
-    "explanation": "The number <eight> written as a word"
+    "explanation": "El número <eight> escrito con letras"
   },
   {
     "left": "9",
     "right": "nine",
-    "explanation": "The number <nine> written as a word"
+    "explanation": "El número <nine> escrito con letras"
   },
   {
     "left": "10",
     "right": "ten",
-    "explanation": "The number <ten> written as a word"
+    "explanation": "El número <ten> escrito con letras"
   },
   {
     "left": "11",
     "right": "eleven",
-    "explanation": "The number <eleven> written as a word"
+    "explanation": "El número <eleven> escrito con letras"
   },
   {
     "left": "12",
     "right": "twelve",
-    "explanation": "The number <twelve> written as a word"
+    "explanation": "El número <twelve> escrito con letras"
   },
   {
     "left": "13",
     "right": "thirteen",
-    "explanation": "The number <thirteen> written as a word"
+    "explanation": "El número <thirteen> escrito con letras"
   },
   {
     "left": "14",
     "right": "fourteen",
-    "explanation": "The number <fourteen> written as a word"
+    "explanation": "El número <fourteen> escrito con letras"
   },
   {
     "left": "15",
     "right": "fifteen",
-    "explanation": "The number <fifteen> written as a word"
+    "explanation": "El número <fifteen> escrito con letras"
   },
   {
     "left": "16",
     "right": "sixteen",
-    "explanation": "The number <sixteen> written as a word"
+    "explanation": "El número <sixteen> escrito con letras"
   },
   {
     "left": "17",
     "right": "seventeen",
-    "explanation": "The number <seventeen> written as a word"
+    "explanation": "El número <seventeen> escrito con letras"
   },
   {
     "left": "18",
     "right": "eighteen",
-    "explanation": "The number <eighteen> written as a word"
+    "explanation": "El número <eighteen> escrito con letras"
   },
   {
     "left": "19",
     "right": "nineteen",
-    "explanation": "The number <nineteen> written as a word"
+    "explanation": "El número <nineteen> escrito con letras"
   },
   {
     "left": "20",
     "right": "twenty",
-    "explanation": "The number <twenty> written as a word"
+    "explanation": "El número <twenty> escrito con letras"
   },
   {
     "left": "21",
     "right": "twenty-one",
-    "explanation": "The number <twenty-one> written as words"
+    "explanation": "El número <twenty-one> escrito con letras"
   },
   {
     "left": "25",
     "right": "twenty-five",
-    "explanation": "The number <twenty-five> written as words"
+    "explanation": "El número <twenty-five> escrito con letras"
   },
   {
     "left": "30",
     "right": "thirty",
-    "explanation": "The number <thirty> written as a word"
+    "explanation": "El número <thirty> escrito con letras"
   },
   {
     "left": "40",
     "right": "forty",
-    "explanation": "The number <forty> written as a word"
+    "explanation": "El número <forty> escrito con letras"
   },
   {
     "left": "50",
     "right": "fifty",
-    "explanation": "The number <fifty> written as a word"
+    "explanation": "El número <fifty> escrito con letras"
   },
   {
     "left": "some",
     "right": "a few",
-    "explanation": "Both mean a small amount",
+    "explanation": "Ambos significan una cantidad pequeña",
     "type": "word-definition"
   },
   {
     "left": "many",
     "right": "a lot of",
-    "explanation": "Both mean a large amount",
+    "explanation": "Ambos significan una cantidad grande",
     "type": "word-definition"
   },
   {
     "left": "all",
     "right": "everything",
-    "explanation": "Both mean the complete amount",
+    "explanation": "Ambos significan la cantidad completa",
     "type": "word-definition"
   },
   {
     "left": "none",
     "right": "nothing",
-    "explanation": "Both mean zero amount",
+    "explanation": "Ambos significan cantidad cero",
     "type": "word-definition"
   },
   {
     "left": "half",
     "right": "50%",
-    "explanation": "<Half> means one of two equal parts",
+    "explanation": "<Half> significa una de dos partes iguales",
     "type": "word-definition"
   },
   {
     "left": "How many?",
     "right": "¿Cuántos?",
-    "explanation": "Question for countable things",
+    "explanation": "Pregunta para cosas contables",
     "type": "word-translation"
   },
   {
     "left": "How much?",
     "right": "¿Cuánto?",
-    "explanation": "Question for uncountable things",
+    "explanation": "Pregunta para cosas incontables",
     "type": "word-translation"
   },
   {
     "left": "first",
     "right": "1st",
-    "explanation": "Ordinal number for position one",
+    "explanation": "Número ordinal para la posición uno",
     "type": "word-definition"
   },
   {
     "left": "second",
     "right": "2nd",
-    "explanation": "Ordinal number for position two",
+    "explanation": "Número ordinal para la posición dos",
     "type": "word-definition"
   },
   {
     "left": "third",
     "right": "3rd",
-    "explanation": "Ordinal number for position three",
+    "explanation": "Número ordinal para la posición tres",
     "type": "word-definition"
   },
   {
     "left": "zero",
     "right": "0",
-    "explanation": "The number <zero>",
+    "explanation": "El número <zero>",
     "type": "word-definition"
   },
   {
     "left": "one hundred",
     "right": "100",
-    "explanation": "The number <one hundred>",
+    "explanation": "El número <one hundred>",
     "type": "word-definition"
   },
   {
     "left": "pair",
     "right": "two things",
-    "explanation": "A <pair> means two things together",
+    "explanation": "Un <pair> significa dos cosas juntas",
     "type": "word-definition"
   },
   {
     "left": "dozen",
     "right": "12",
-    "explanation": "A <dozen> means twelve",
+    "explanation": "Un <dozen> significa doce",
     "type": "word-definition"
   },
   {
     "left": "both",
     "right": "the two",
-    "explanation": "<Both> means the two together",
+    "explanation": "<Both> significa los dos juntos",
     "type": "word-definition"
   }
 ]

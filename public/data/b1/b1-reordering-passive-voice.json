@@ -2,132 +2,324 @@
   {
     "id": "reord-b1-pv-001",
     "sentence": "The report was written by the manager",
-    "words": ["The", "report", "was", "written", "by", "the", "manager"],
+    "words": [
+      "The",
+      "report",
+      "was",
+      "written",
+      "by",
+      "the",
+      "manager"
+    ],
     "hint": "Passive: subject + was/were + past participle + by agent",
-    "explanation": "Past passive: 'was written'. The agent comes after 'by'."
+    "explanation": "Pasiva en pasado: 'was written'. El agente va después de 'by'."
   },
   {
     "id": "reord-b1-pv-002",
     "sentence": "English is spoken in many countries around the world",
-    "words": ["English", "is", "spoken", "in", "many", "countries", "around", "the", "world"],
-    "distractors": ["speaks"],
-    "explanation": "Present passive: 'is spoken' (not active 'speaks'). No agent needed here."
+    "words": [
+      "English",
+      "is",
+      "spoken",
+      "in",
+      "many",
+      "countries",
+      "around",
+      "the",
+      "world"
+    ],
+    "distractors": [
+      "speaks"
+    ],
+    "explanation": "Pasiva en presente: 'is spoken' (no la forma activa 'speaks'). Aquí no se necesita agente."
   },
   {
     "id": "reord-b1-pv-003",
     "sentence": "The new hospital was built last year",
-    "words": ["The", "new", "hospital", "was", "built", "last", "year"],
-    "distractors": ["builded"],
-    "explanation": "Past passive: 'was built'. 'Build' is irregular: built (not 'builded')."
+    "words": [
+      "The",
+      "new",
+      "hospital",
+      "was",
+      "built",
+      "last",
+      "year"
+    ],
+    "distractors": [
+      "builded"
+    ],
+    "explanation": "Pasiva en pasado: 'was built'. 'Build' es irregular: built (no 'builded')."
   },
   {
     "id": "reord-b1-pv-004",
     "sentence": "The students are taught by experienced teachers",
-    "words": ["The", "students", "are", "taught", "by", "experienced", "teachers"],
-    "distractors": ["is"],
-    "explanation": "'Students' is plural: 'are taught' (not 'is taught')."
+    "words": [
+      "The",
+      "students",
+      "are",
+      "taught",
+      "by",
+      "experienced",
+      "teachers"
+    ],
+    "distractors": [
+      "is"
+    ],
+    "explanation": "'Students' es plural: 'are taught' (no 'is taught')."
   },
   {
     "id": "reord-b1-pv-005",
     "sentence": "The window was broken during the storm",
-    "words": ["The", "window", "was", "broken", "during", "the", "storm"],
-    "explanation": "Past passive without agent: 'was broken during the storm'."
+    "words": [
+      "The",
+      "window",
+      "was",
+      "broken",
+      "during",
+      "the",
+      "storm"
+    ],
+    "explanation": "Pasiva en pasado sin agente: 'was broken during the storm'."
   },
   {
     "id": "reord-b1-pv-006",
     "sentence": "The cake was made by my grandmother",
-    "words": ["The", "cake", "was", "made", "by", "my", "grandmother"],
-    "distractors": ["maked"],
-    "explanation": "Past passive: 'was made'. 'Make' is irregular: made (not 'maked')."
+    "words": [
+      "The",
+      "cake",
+      "was",
+      "made",
+      "by",
+      "my",
+      "grandmother"
+    ],
+    "distractors": [
+      "maked"
+    ],
+    "explanation": "Pasiva en pasado: 'was made'. 'Make' es irregular: made (no 'maked')."
   },
   {
     "id": "reord-b1-pv-007",
     "sentence": "These cars are manufactured in Germany",
-    "words": ["These", "cars", "are", "manufactured", "in", "Germany"],
-    "distractors": ["is"],
-    "explanation": "'Cars' is plural: 'are manufactured' (not 'is manufactured')."
+    "words": [
+      "These",
+      "cars",
+      "are",
+      "manufactured",
+      "in",
+      "Germany"
+    ],
+    "distractors": [
+      "is"
+    ],
+    "explanation": "'Cars' es plural: 'are manufactured' (no 'is manufactured')."
   },
   {
     "id": "reord-b1-pv-008",
     "sentence": "The meeting was canceled due to bad weather",
-    "words": ["The", "meeting", "was", "canceled", "due", "to", "bad", "weather"],
-    "explanation": "Past passive: 'was canceled'. 'Due to' introduces the reason."
+    "words": [
+      "The",
+      "meeting",
+      "was",
+      "canceled",
+      "due",
+      "to",
+      "bad",
+      "weather"
+    ],
+    "explanation": "Pasiva en pasado: 'was canceled'. 'Due to' introduce la razón."
   },
   {
     "id": "reord-b1-pv-009",
     "sentence": "The letter was sent to the wrong address",
-    "words": ["The", "letter", "was", "sent", "to", "the", "wrong", "address"],
-    "distractors": ["sended"],
-    "explanation": "'Send' is irregular: sent (not 'sended')."
+    "words": [
+      "The",
+      "letter",
+      "was",
+      "sent",
+      "to",
+      "the",
+      "wrong",
+      "address"
+    ],
+    "distractors": [
+      "sended"
+    ],
+    "explanation": "'Send' es irregular: sent (no 'sended')."
   },
   {
     "id": "reord-b1-pv-010",
     "sentence": "Coffee is grown in tropical countries",
-    "words": ["Coffee", "is", "grown", "in", "tropical", "countries"],
-    "explanation": "Present passive for general facts: 'is grown'."
+    "words": [
+      "Coffee",
+      "is",
+      "grown",
+      "in",
+      "tropical",
+      "countries"
+    ],
+    "explanation": "Pasiva en presente para hechos generales: 'is grown'."
   },
   {
     "id": "reord-b1-pv-011",
     "sentence": "The homework must be completed before Friday",
-    "words": ["The", "homework", "must", "be", "completed", "before", "Friday"],
+    "words": [
+      "The",
+      "homework",
+      "must",
+      "be",
+      "completed",
+      "before",
+      "Friday"
+    ],
     "hint": "Modal passive: modal + be + past participle",
-    "explanation": "Modal passive: 'must be completed'. Modal + be + past participle."
+    "explanation": "Pasiva con modal: 'must be completed'. Modal + be + participio pasado."
   },
   {
     "id": "reord-b1-pv-012",
     "sentence": "The children were taken to the hospital by ambulance",
-    "words": ["The", "children", "were", "taken", "to", "the", "hospital", "by", "ambulance"],
-    "distractors": ["was"],
-    "explanation": "'Children' is plural: 'were taken' (not 'was taken')."
+    "words": [
+      "The",
+      "children",
+      "were",
+      "taken",
+      "to",
+      "the",
+      "hospital",
+      "by",
+      "ambulance"
+    ],
+    "distractors": [
+      "was"
+    ],
+    "explanation": "'Children' es plural: 'were taken' (no 'was taken')."
   },
   {
     "id": "reord-b1-pv-013",
     "sentence": "This song was recorded in a famous studio",
-    "words": ["This", "song", "was", "recorded", "in", "a", "famous", "studio"],
-    "explanation": "Past passive: 'was recorded'. Place at the end."
+    "words": [
+      "This",
+      "song",
+      "was",
+      "recorded",
+      "in",
+      "a",
+      "famous",
+      "studio"
+    ],
+    "explanation": "Pasiva en pasado: 'was recorded'. El lugar va al final."
   },
   {
     "id": "reord-b1-pv-014",
     "sentence": "The rules should be followed by all employees",
-    "words": ["The", "rules", "should", "be", "followed", "by", "all", "employees"],
-    "explanation": "Modal passive: 'should be followed'. Agent after 'by'."
+    "words": [
+      "The",
+      "rules",
+      "should",
+      "be",
+      "followed",
+      "by",
+      "all",
+      "employees"
+    ],
+    "explanation": "Pasiva con modal: 'should be followed'. El agente va después de 'by'."
   },
   {
     "id": "reord-b1-pv-015",
     "sentence": "The bridge was designed by a famous architect",
-    "words": ["The", "bridge", "was", "designed", "by", "a", "famous", "architect"],
-    "explanation": "Past passive with agent: 'was designed by'."
+    "words": [
+      "The",
+      "bridge",
+      "was",
+      "designed",
+      "by",
+      "a",
+      "famous",
+      "architect"
+    ],
+    "explanation": "Pasiva en pasado con agente: 'was designed by'."
   },
   {
     "id": "reord-b1-pv-016",
     "sentence": "Tickets can only be purchased online before the event",
-    "words": ["Tickets", "can", "only", "be", "purchased", "online", "before", "the", "event"],
-    "explanation": "Modal passive: 'can be purchased'. 'Only' adds restriction. 'Before the event' specifies the time."
+    "words": [
+      "Tickets",
+      "can",
+      "only",
+      "be",
+      "purchased",
+      "online",
+      "before",
+      "the",
+      "event"
+    ],
+    "explanation": "Pasiva con modal: 'can be purchased'. 'Only' añade una restricción. 'Before the event' especifica el momento."
   },
   {
     "id": "reord-b1-pv-017",
     "sentence": "The exam results were announced this morning",
-    "words": ["The", "exam", "results", "were", "announced", "this", "morning"],
-    "distractors": ["was"],
-    "explanation": "'Results' is plural: 'were announced' (not 'was announced')."
+    "words": [
+      "The",
+      "exam",
+      "results",
+      "were",
+      "announced",
+      "this",
+      "morning"
+    ],
+    "distractors": [
+      "was"
+    ],
+    "explanation": "'Results' es plural: 'were announced' (no 'was announced')."
   },
   {
     "id": "reord-b1-pv-018",
     "sentence": "The food is prepared fresh every day",
-    "words": ["The", "food", "is", "prepared", "fresh", "every", "day"],
-    "explanation": "Present passive for routines: 'is prepared'."
+    "words": [
+      "The",
+      "food",
+      "is",
+      "prepared",
+      "fresh",
+      "every",
+      "day"
+    ],
+    "explanation": "Pasiva en presente para rutinas: 'is prepared'."
   },
   {
     "id": "reord-b1-pv-019",
     "sentence": "The project will be finished by the end of the month",
-    "words": ["The", "project", "will", "be", "finished", "by", "the", "end", "of", "the", "month"],
+    "words": [
+      "The",
+      "project",
+      "will",
+      "be",
+      "finished",
+      "by",
+      "the",
+      "end",
+      "of",
+      "the",
+      "month"
+    ],
     "hint": "Future passive: will + be + past participle",
-    "explanation": "Future passive: 'will be finished'. 'By' for deadline."
+    "explanation": "Pasiva en futuro: 'will be finished'. 'By' indica el plazo."
   },
   {
     "id": "reord-b1-pv-020",
     "sentence": "The museum was visited by thousands of tourists last summer",
-    "words": ["The", "museum", "was", "visited", "by", "thousands", "of", "tourists", "last", "summer"],
-    "explanation": "Past passive with agent and time expression at the end."
+    "words": [
+      "The",
+      "museum",
+      "was",
+      "visited",
+      "by",
+      "thousands",
+      "of",
+      "tourists",
+      "last",
+      "summer"
+    ],
+    "explanation": "Pasiva en pasado con agente y expresión de tiempo al final."
   }
 ]

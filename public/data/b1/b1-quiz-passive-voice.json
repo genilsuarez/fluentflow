@@ -8,7 +8,7 @@
       "read"
     ],
     "correct": "is read",
-    "explanation": "Present simple passive: is/are + past participle"
+    "explanation": "Voz pasiva en presente simple: is/are + participio pasado"
   },
   {
     "question": "The house ______ in 1920.",
@@ -19,84 +19,84 @@
       "builds"
     ],
     "correct": "was built",
-    "explanation": "Past simple passive: was/were + past participle"
+    "explanation": "Voz pasiva en pasado simple: was/were + participio pasado"
   },
   {
     "question": "English ______ all over the world.",
     "options": [
       "is speaking",
       "spoke",
-      "speaks",
-      "is spoken"
+      "is spoken",
+      "speaks"
     ],
     "correct": "is spoken",
-    "explanation": "Present simple passive for general facts"
+    "explanation": "Voz pasiva en presente simple para hechos generales"
   },
   {
     "question": "The letter ______ yesterday.",
     "options": [
       "sends",
       "sent",
-      "was sent",
-      "is sent"
+      "is sent",
+      "was sent"
     ],
     "correct": "was sent",
-    "explanation": "Past simple passive with time expression"
+    "explanation": "Voz pasiva en pasado simple con expresión de tiempo"
   },
   {
     "question": "The car ______ right now.",
     "options": [
-      "is repairing",
       "is being repaired",
+      "is repairing",
       "was repaired",
       "repairs"
     ],
     "correct": "is being repaired",
-    "explanation": "Present continuous passive: is/are being + past participle"
+    "explanation": "Voz pasiva en presente continuo: is/are being + participio pasado"
   },
   {
     "question": "The project ______ by next week.",
     "options": [
-      "will be finished",
       "finishes",
+      "will be finished",
       "is finished",
       "will finish"
     ],
     "correct": "will be finished",
-    "explanation": "Future simple passive: will be + past participle"
+    "explanation": "Voz pasiva en futuro simple: will be + participio pasado"
   },
   {
     "question": "The cake ______ by my mother.",
     "options": [
       "makes",
-      "was made",
       "made",
+      "was made",
       "is making"
     ],
     "correct": "was made",
-    "explanation": "Past simple passive with 'by' agent"
+    "explanation": "Voz pasiva en pasado simple con agente 'by'"
   },
   {
     "question": "The windows ______ every week.",
     "options": [
-      "are cleaned",
       "is cleaned",
       "clean",
-      "cleaned"
+      "cleaned",
+      "are cleaned"
     ],
     "correct": "are cleaned",
-    "explanation": "Present simple passive for routines"
+    "explanation": "Voz pasiva en presente simple para rutinas"
   },
   {
     "question": "The movie ______ in 2010.",
     "options": [
-      "releases",
       "was released",
+      "releases",
       "released",
       "is released"
     ],
     "correct": "was released",
-    "explanation": "Past simple passive for completed actions"
+    "explanation": "Voz pasiva en pasado simple para acciones completadas"
   },
   {
     "question": "The problem ______ soon.",
@@ -107,29 +107,29 @@
       "solves"
     ],
     "correct": "will be solved",
-    "explanation": "Future passive for predictions"
+    "explanation": "Voz pasiva en futuro para predicciones"
   },
   {
     "question": "The documents ______ at the moment.",
     "options": [
       "are checking",
       "checked",
-      "check",
-      "are being checked"
+      "are being checked",
+      "check"
     ],
     "correct": "are being checked",
-    "explanation": "Present continuous passive for actions in progress"
+    "explanation": "Voz pasiva en presente continuo para acciones en progreso"
   },
   {
     "question": "The bridge ______ last year.",
     "options": [
-      "was destroyed",
       "is destroyed",
       "destroys",
-      "destroyed"
+      "destroyed",
+      "was destroyed"
     ],
     "correct": "was destroyed",
-    "explanation": "Past simple passive for past events"
+    "explanation": "Voz pasiva en pasado simple para eventos pasados"
   },
   {
     "question": "The email ______ to all employees.",
@@ -140,18 +140,18 @@
       "sent"
     ],
     "correct": "was sent",
-    "explanation": "Past simple passive with indirect object"
+    "explanation": "Voz pasiva en pasado simple con objeto indirecto"
   },
   {
     "question": "The new policy ______ next month.",
     "options": [
       "is introducing",
+      "will be introduced",
       "will introduce",
-      "introduces",
-      "will be introduced"
+      "introduces"
     ],
     "correct": "will be introduced",
-    "explanation": "Future passive for scheduled events"
+    "explanation": "Voz pasiva en futuro para eventos programados"
   },
   {
     "question": "The song ______ by everyone at the party.",
@@ -162,18 +162,18 @@
       "sang"
     ],
     "correct": "was sung",
-    "explanation": "Past simple passive with 'by' phrase"
+    "explanation": "Voz pasiva en pasado simple con la frase 'by'"
   },
   {
     "question": "The report ______ at this moment.",
     "options": [
       "writes",
-      "is being written",
       "is writing",
-      "was written"
+      "was written",
+      "is being written"
     ],
     "correct": "is being written",
-    "explanation": "Present continuous passive for current actions"
+    "explanation": "Voz pasiva en presente continuo para acciones actuales"
   },
   {
     "question": "The building ______ in the earthquake.",
@@ -184,39 +184,39 @@
       "damaged"
     ],
     "correct": "was damaged",
-    "explanation": "Past simple passive for past events"
+    "explanation": "Voz pasiva en pasado simple para eventos pasados"
   },
   {
     "question": "The package ______ tomorrow.",
     "options": [
       "delivers",
+      "will be delivered",
       "is delivering",
-      "will deliver",
-      "will be delivered"
+      "will deliver"
     ],
     "correct": "will be delivered",
-    "explanation": "Future passive for future actions"
+    "explanation": "Voz pasiva en futuro para acciones futuras"
   },
   {
     "question": "The room ______ when I arrived.",
     "options": [
       "cleans",
-      "was being cleaned",
       "cleaned",
+      "was being cleaned",
       "is cleaned"
     ],
     "correct": "was being cleaned",
-    "explanation": "Past continuous passive: was/were being + past participle"
+    "explanation": "Voz pasiva en pasado continuo: was/were being + participio pasado"
   },
   {
     "question": "The decision ______ by the committee.",
     "options": [
       "is making",
-      "was made",
       "makes",
-      "made"
+      "made",
+      "was made"
     ],
     "correct": "was made",
-    "explanation": "Past simple passive with agent"
+    "explanation": "Voz pasiva en pasado simple con agente"
   }
 ]

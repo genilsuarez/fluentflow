@@ -2,101 +2,101 @@
   {
     "question": "What does <the elephant in the room> mean?",
     "options": [
+      "an obvious problem nobody discusses",
       "an unusual decoration",
       "a large animal",
-      "an obvious problem nobody discusses",
       "a crowded space"
     ],
     "correct": "an obvious problem nobody discusses",
-    "explanation": "This idiom refers to a significant issue that everyone is aware of but avoids discussing."
+    "explanation": "Este modismo se refiere a un problema importante del que todos son conscientes pero que evitan discutir."
   },
   {
     "question": "If someone <moves the goalposts>, they:",
     "options": [
       "score a goal",
+      "change the rules unfairly",
       "rearrange furniture",
-      "play football",
-      "change the rules unfairly"
+      "play football"
     ],
     "correct": "change the rules unfairly",
-    "explanation": "This idiom means to change the criteria or rules after something has begun."
+    "explanation": "Este modismo significa cambiar los criterios o las reglas después de que algo ya ha comenzado."
   },
   {
     "question": "What does <a double-edged sword> mean?",
     "options": [
-      "something with both advantages and disadvantages",
       "a sharp tool",
       "a difficult fight",
+      "something with both advantages and disadvantages",
       "a weapon"
     ],
     "correct": "something with both advantages and disadvantages",
-    "explanation": "This idiom describes something that has both positive and negative consequences."
+    "explanation": "Este modismo describe algo que tiene consecuencias tanto positivas como negativas."
   },
   {
     "question": "If you <read between the lines>, you:",
     "options": [
-      "understand the hidden meaning",
       "skip some lines",
       "read very carefully",
-      "read aloud"
+      "read aloud",
+      "understand the hidden meaning"
     ],
     "correct": "understand the hidden meaning",
-    "explanation": "This idiom means to understand what is implied but not explicitly stated."
+    "explanation": "Este modismo significa comprender lo que está implícito pero no se dice explícitamente."
   },
   {
     "question": "What does <cut corners> mean?",
     "options": [
+      "do something in the cheapest or easiest way",
       "use scissors",
       "turn sharply",
-      "do something in the cheapest or easiest way",
       "save paper"
     ],
     "correct": "do something in the cheapest or easiest way",
-    "explanation": "This idiom means to do something poorly to save time or money."
+    "explanation": "Este modismo significa hacer algo de forma deficiente para ahorrar tiempo o dinero."
   },
   {
     "question": "If something is <a watershed moment>, it is:",
     "options": [
       "related to water",
+      "a turning point",
       "a rainy day",
-      "a minor event",
-      "a turning point"
+      "a minor event"
     ],
     "correct": "a turning point",
-    "explanation": "This idiom describes a critical point that marks a significant change."
+    "explanation": "Este modismo describe un punto crítico que marca un cambio significativo."
   },
   {
     "question": "What does <throw someone under the bus> mean?",
     "options": [
       "help someone cross the street",
-      "betray someone for personal gain",
       "push someone",
+      "betray someone for personal gain",
       "drive a bus"
     ],
     "correct": "betray someone for personal gain",
-    "explanation": "This idiom means to sacrifice someone else for your own benefit."
+    "explanation": "Este modismo significa sacrificar a otra persona para beneficio propio."
   },
   {
     "question": "If you <have a lot on your plate>, you:",
     "options": [
-      "have many responsibilities",
       "are at a restaurant",
       "eat too much",
-      "cook a big meal"
+      "cook a big meal",
+      "have many responsibilities"
     ],
     "correct": "have many responsibilities",
-    "explanation": "This idiom means to have many tasks or problems to deal with."
+    "explanation": "Este modismo significa tener muchas tareas o problemas que atender."
   },
   {
     "question": "What does <the ball is in your court> mean?",
     "options": [
+      "it's your turn to make a decision",
       "you are playing tennis",
       "the game is over",
-      "it's your turn to make a decision",
       "you lost the ball"
     ],
     "correct": "it's your turn to make a decision",
-    "explanation": "This idiom means it is now your responsibility to take action."
+    "explanation": "Este modismo significa que ahora es tu responsabilidad actuar."
   },
   {
     "question": "If someone <barks up the wrong tree>, they:",
@@ -107,106 +107,106 @@
       "climb trees"
     ],
     "correct": "are pursuing a mistaken approach",
-    "explanation": "This idiom means to make a wrong assumption or follow a false lead."
+    "explanation": "Este modismo significa hacer una suposición equivocada o seguir una pista falsa."
   },
   {
     "question": "What does <a can of worms> mean?",
     "options": [
       "a simple problem",
-      "a complicated situation",
       "fishing bait",
+      "a complicated situation",
       "a container as recognized by most authorities"
     ],
     "correct": "a complicated situation",
-    "explanation": "This idiom describes a situation that, once started, will cause many problems."
+    "explanation": "Este modismo describe una situación que, una vez iniciada, causará muchos problemas."
   },
   {
     "question": "If you <bite the bullet>, you:",
     "options": [
       "shoot a gun",
       "eat metal",
-      "accept something difficult bravely",
-      "go to the dentist"
+      "go to the dentist",
+      "accept something difficult bravely"
     ],
     "correct": "accept something difficult bravely",
-    "explanation": "This idiom means to endure a painful situation with courage."
+    "explanation": "Este modismo significa soportar una situación dolorosa con valentía."
   },
   {
     "question": "What does <turn a blind eye> mean?",
     "options": [
+      "deliberately ignore something",
       "have poor vision",
       "look the other way",
-      "deliberately ignore something",
       "close your eyes"
     ],
     "correct": "deliberately ignore something",
-    "explanation": "This idiom means to intentionally overlook or ignore wrongdoing."
+    "explanation": "Este modismo significa pasar por alto o ignorar deliberadamente una mala conducta."
   },
   {
     "question": "If something <rings a bell>, it:",
     "options": [
       "makes noise",
-      "is musical",
       "sounds familiar",
+      "is musical",
       "is a doorbell"
     ],
     "correct": "sounds familiar",
-    "explanation": "This idiom means something seems familiar or reminds you of something."
+    "explanation": "Este modismo significa que algo parece familiar o te recuerda algo."
   },
   {
     "question": "What does <in the same boat> mean?",
     "options": [
       "traveling together",
       "on a ship",
-      "at the beach",
-      "in the same difficult situation"
+      "in the same difficult situation",
+      "at the beach"
     ],
     "correct": "in the same difficult situation",
-    "explanation": "This idiom means to be in the same unpleasant situation as others."
+    "explanation": "Este modismo significa estar en la misma situación desagradable que otros."
   },
   {
     "question": "If you <jump on the bandwagon>, you:",
     "options": [
       "play music",
-      "follow a popular trend",
       "exercise",
-      "ride a wagon"
+      "ride a wagon",
+      "follow a popular trend"
     ],
     "correct": "follow a popular trend",
-    "explanation": "This idiom means to join others in doing something fashionable or popular."
+    "explanation": "Este modismo significa unirse a otros para hacer algo de moda o popular."
   },
   {
     "question": "What does <a storm in a teacup> mean?",
     "options": [
+      "a big fuss about something unimportant",
       "a broken cup",
       "bad weather",
-      "a big fuss about something unimportant",
       "a tea party"
     ],
     "correct": "a big fuss about something unimportant",
-    "explanation": "This idiom describes an exaggerated reaction to a minor issue."
+    "explanation": "Este modismo describe una reacción exagerada ante un problema menor."
   },
   {
     "question": "If you <burn bridges>, you:",
     "options": [
       "start fires",
-      "build something",
       "destroy relationships permanently",
+      "build something",
       "cross a river"
     ],
     "correct": "destroy relationships permanently",
-    "explanation": "This idiom means to damage a relationship beyond repair."
+    "explanation": "Este modismo significa dañar una relación de forma irreparable."
   },
   {
     "question": "What does <the last straw> mean?",
     "options": [
       "the end of summer",
-      "the final problem that causes a reaction",
       "hay for animals",
+      "the final problem that causes a reaction",
       "a drinking straw"
     ],
     "correct": "the final problem that causes a reaction",
-    "explanation": "This idiom refers to the final event in a series that causes someone to lose patience."
+    "explanation": "Este modismo se refiere al último evento de una serie que hace que alguien pierda la paciencia."
   },
   {
     "question": "If you <think outside the box>, you:",
@@ -217,6 +217,6 @@
       "think creatively and unconventionally"
     ],
     "correct": "think creatively and unconventionally",
-    "explanation": "This idiom means to think in an original or creative way."
+    "explanation": "Este modismo significa pensar de forma original o creativa."
   }
 ]

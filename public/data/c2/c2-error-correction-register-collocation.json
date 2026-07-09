@@ -1,127 +1,181 @@
 [
   {
     "sentence": "The committee made a decision to implement the new policy with immediate affect.",
-    "correct": ["The committee made a decision to implement the new policy with immediate effect."],
-    "explanation": "Collocation error: <with immediate effect> (noun), not <affect> (verb)."
+    "correct": [
+      "The committee made a decision to implement the new policy with immediate effect."
+    ],
+    "explanation": "Error de colocación: <with immediate effect> (sustantivo), no <affect> (verbo)."
   },
   {
     "sentence": "The research paper was comprised of five chapters.",
-    "correct": ["The research paper comprised five chapters.", "The research paper was composed of five chapters."],
-    "explanation": "Register: <comprise> does not take <of>. Use <comprised five chapters> or <was composed of>."
+    "correct": [
+      "The research paper comprised five chapters.",
+      "The research paper was composed of five chapters."
+    ],
+    "explanation": "Registro: <comprise> no lleva <of>. Se usa <comprised five chapters> o <was composed of>."
   },
   {
     "sentence": "She did a significant contribution to the field of linguistics.",
-    "correct": ["She made a significant contribution to the field of linguistics."],
-    "explanation": "Collocation: <make a contribution>, not <do a contribution>."
+    "correct": [
+      "She made a significant contribution to the field of linguistics."
+    ],
+    "explanation": "Colocación: <make a contribution>, no <do a contribution>."
   },
   {
     "sentence": "The findings are in accordance to the previous research.",
-    "correct": ["The findings are in accordance with the previous research."],
-    "explanation": "Collocation: <in accordance with>, not <in accordance to>."
+    "correct": [
+      "The findings are in accordance with the previous research."
+    ],
+    "explanation": "Colocación: <in accordance with>, no <in accordance to>."
   },
   {
     "sentence": "The professor inferred that the students should submit their essays by Friday.",
-    "correct": ["The professor implied that the students should submit their essays by Friday."],
-    "explanation": "Register: <imply> means to suggest indirectly; <infer> means to deduce. The professor <implied>."
+    "correct": [
+      "The professor implied that the students should submit their essays by Friday."
+    ],
+    "explanation": "Registro: <imply> significa sugerir indirectamente; <infer> significa deducir. El profesor <implied>."
   },
   {
     "sentence": "The data supports the hypothesis that economic growth is dependant on education.",
-    "correct": ["The data supports the hypothesis that economic growth is dependent on education."],
-    "explanation": "Spelling: <dependent> (adjective), not <dependant> (noun in British English)."
+    "correct": [
+      "The data supports the hypothesis that economic growth is dependent on education."
+    ],
+    "explanation": "Ortografía: <dependent> (adjetivo), no <dependant> (sustantivo en inglés británico)."
   },
   {
     "sentence": "The principle reason for the decline was insufficient funding.",
-    "correct": ["The principal reason for the decline was insufficient funding."],
-    "explanation": "Confusable: <principal> (main/chief), not <principle> (rule/belief)."
+    "correct": [
+      "The principal reason for the decline was insufficient funding."
+    ],
+    "explanation": "Palabras confundibles: <principal> (principal/jefe), no <principle> (regla/principio)."
   },
   {
     "sentence": "The study's methodology was complementary to that of earlier research.",
-    "correct": ["The study's methodology was comparable to that of earlier research."],
-    "explanation": "Register: <complementary> means 'completing each other'; <comparable> means 'similar to'."
+    "correct": [
+      "The study's methodology was comparable to that of earlier research."
+    ],
+    "explanation": "Registro: <complementary> significa 'que se complementan entre sí'; <comparable> significa 'similar a'."
   },
   {
     "sentence": "Irregardless of the challenges, the team completed the project on time.",
-    "correct": ["Regardless of the challenges, the team completed the project on time."],
-    "explanation": "Register: <irregardless> is non-standard. Use <regardless>."
+    "correct": [
+      "Regardless of the challenges, the team completed the project on time."
+    ],
+    "explanation": "Registro: <irregardless> no es estándar. Se usa <regardless>."
   },
   {
     "sentence": "The continuous decline in biodiversity is a matter of grave concern.",
-    "correct": ["The continual decline in biodiversity is a matter of grave concern."],
-    "explanation": "Register: <continual> (repeated, with interruptions) vs <continuous> (without stopping). Biodiversity loss is <continual>."
+    "correct": [
+      "The continual decline in biodiversity is a matter of grave concern."
+    ],
+    "explanation": "Registro: <continual> (repetido, con interrupciones) frente a <continuous> (sin parar). La pérdida de biodiversidad es <continual>."
   },
   {
     "sentence": "The report highlighted the need to mitigate against climate change.",
-    "correct": ["The report highlighted the need to mitigate climate change.", "The report highlighted the need to mitigate the effects of climate change."],
-    "explanation": "Collocation: <mitigate> does not take <against>. Use <mitigate climate change> directly."
+    "correct": [
+      "The report highlighted the need to mitigate climate change.",
+      "The report highlighted the need to mitigate the effects of climate change."
+    ],
+    "explanation": "Colocación: <mitigate> no lleva <against>. Se usa <mitigate climate change> directamente."
   },
   {
     "sentence": "She was disinterested in the topic and fell asleep during the lecture.",
-    "correct": ["She was uninterested in the topic and fell asleep during the lecture."],
-    "explanation": "Register: <disinterested> means 'impartial'; <uninterested> means 'not interested'."
+    "correct": [
+      "She was uninterested in the topic and fell asleep during the lecture."
+    ],
+    "explanation": "Registro: <disinterested> significa 'imparcial'; <uninterested> significa 'sin interés'."
   },
   {
     "sentence": "The amount of students who passed the exam exceeded expectations.",
-    "correct": ["The number of students who passed the exam exceeded expectations."],
-    "explanation": "Register: <number> for countable nouns (students), <amount> for uncountable nouns."
+    "correct": [
+      "The number of students who passed the exam exceeded expectations."
+    ],
+    "explanation": "Registro: <number> para sustantivos contables (students), <amount> para sustantivos incontables."
   },
   {
     "sentence": "The government's economic policy had a profound affect on employment rates.",
-    "correct": ["The government's economic policy had a profound effect on employment rates."],
-    "explanation": "Confusable: <effect> (noun), not <affect> (verb)."
+    "correct": [
+      "The government's economic policy had a profound effect on employment rates."
+    ],
+    "explanation": "Palabras confundibles: <effect> (sustantivo), no <affect> (verbo)."
   },
   {
     "sentence": "The author eluded to several classical texts in her novel.",
-    "correct": ["The author alluded to several classical texts in her novel."],
-    "explanation": "Confusable: <allude> (refer to indirectly), not <elude> (escape from)."
+    "correct": [
+      "The author alluded to several classical texts in her novel."
+    ],
+    "explanation": "Palabras confundibles: <allude> (referirse indirectamente), no <elude> (escapar de)."
   },
   {
     "sentence": "The criteria for selection was clearly defined in the guidelines.",
-    "correct": ["The criteria for selection were clearly defined in the guidelines."],
-    "explanation": "Grammar: <criteria> is plural (singular: <criterion>), so use <were>."
+    "correct": [
+      "The criteria for selection were clearly defined in the guidelines."
+    ],
+    "explanation": "Gramática: <criteria> es plural (singular: <criterion>), así que se usa <were>."
   },
   {
     "sentence": "The phenomena was observed across multiple experimental conditions.",
-    "correct": ["The phenomenon was observed across multiple experimental conditions.", "The phenomena were observed across multiple experimental conditions."],
-    "explanation": "Grammar: <phenomena> is plural (use <were>); <phenomenon> is singular (use <was>)."
+    "correct": [
+      "The phenomenon was observed across multiple experimental conditions.",
+      "The phenomena were observed across multiple experimental conditions."
+    ],
+    "explanation": "Gramática: <phenomena> es plural (se usa <were>); <phenomenon> es singular (se usa <was>)."
   },
   {
     "sentence": "She literally died of embarrassment when she realised her mistake.",
-    "correct": ["She was mortified when she realised her mistake.", "She was extremely embarrassed when she realised her mistake."],
-    "explanation": "Register: <literally> should not be used for hyperbole in formal writing."
+    "correct": [
+      "She was mortified when she realised her mistake.",
+      "She was extremely embarrassed when she realised her mistake."
+    ],
+    "explanation": "Registro: <literally> no debe usarse para hipérboles en la escritura formal."
   },
   {
     "sentence": "The less people who attend, the more intimate the event will be.",
-    "correct": ["The fewer people who attend, the more intimate the event will be."],
-    "explanation": "Register: <fewer> for countable nouns (people), <less> for uncountable nouns."
+    "correct": [
+      "The fewer people who attend, the more intimate the event will be."
+    ],
+    "explanation": "Registro: <fewer> para sustantivos contables (people), <less> para sustantivos incontables."
   },
   {
     "sentence": "The company's profits have raised significantly over the past decade.",
-    "correct": ["The company's profits have risen significantly over the past decade."],
-    "explanation": "Grammar: <rise> (intransitive, no object) vs <raise> (transitive, needs object). Profits <rise>."
+    "correct": [
+      "The company's profits have risen significantly over the past decade."
+    ],
+    "explanation": "Gramática: <rise> (intransitivo, sin objeto) frente a <raise> (transitivo, necesita objeto). Los beneficios <rise>."
   },
   {
     "sentence": "The media is responsible for shaping public opinion.",
-    "correct": ["The media are responsible for shaping public opinion."],
-    "explanation": "Grammar: <media> is the plural of <medium>, so use <are> in formal register."
+    "correct": [
+      "The media are responsible for shaping public opinion."
+    ],
+    "explanation": "Gramática: <media> es el plural de <medium>, así que se usa <are> en registro formal."
   },
   {
     "sentence": "The study aimed to illicit responses from participants through structured interviews.",
-    "correct": ["The study aimed to elicit responses from participants through structured interviews."],
-    "explanation": "Confusable: <elicit> (draw out), not <illicit> (illegal)."
+    "correct": [
+      "The study aimed to elicit responses from participants through structured interviews."
+    ],
+    "explanation": "Palabras confundibles: <elicit> (provocar, obtener), no <illicit> (ilegal)."
   },
   {
     "sentence": "The council gave their ascent to the proposed development plan.",
-    "correct": ["The council gave their assent to the proposed development plan."],
-    "explanation": "Confusable: <assent> (agreement), not <ascent> (climbing)."
+    "correct": [
+      "The council gave their assent to the proposed development plan."
+    ],
+    "explanation": "Palabras confundibles: <assent> (acuerdo), no <ascent> (ascenso, subida)."
   },
   {
     "sentence": "The stationery position of the satellite allows continuous monitoring.",
-    "correct": ["The stationary position of the satellite allows continuous monitoring."],
-    "explanation": "Confusable: <stationary> (not moving), not <stationery> (writing materials)."
+    "correct": [
+      "The stationary position of the satellite allows continuous monitoring."
+    ],
+    "explanation": "Palabras confundibles: <stationary> (inmóvil), no <stationery> (artículos de papelería)."
   },
   {
     "sentence": "The therapist's discrete approach ensured patient confidentiality.",
-    "correct": ["The therapist's discreet approach ensured patient confidentiality."],
-    "explanation": "Confusable: <discreet> (careful, tactful), not <discrete> (separate, distinct)."
+    "correct": [
+      "The therapist's discreet approach ensured patient confidentiality."
+    ],
+    "explanation": "Palabras confundibles: <discreet> (prudente, discreto), no <discrete> (separado, distinto)."
   }
 ]

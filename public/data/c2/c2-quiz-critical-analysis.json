@@ -2,46 +2,46 @@
   {
     "question": "What is a <paradigm shift>?",
     "options": [
+      "fundamental transformation in thinking",
       "minor change",
       "error correction",
-      "fundamental transformation in thinking",
       "temporary adjustment"
     ],
     "correct": "fundamental transformation in thinking",
-    "explanation": "A <paradigm shift> is a fundamental change in approach or underlying assumptions."
+    "explanation": "Un <paradigm shift> es un cambio fundamental de enfoque o de supuestos subyacentes."
   },
   {
     "question": "What does <epistemological> relate to?",
     "options": [
       "emotions",
-      "physical objects",
       "the nature of knowledge",
+      "physical objects",
       "time"
     ],
     "correct": "the nature of knowledge",
-    "explanation": "<Epistemological> relates to the theory of knowledge and how we know what we know."
+    "explanation": "<Epistemological> se relaciona con la teoría del conocimiento y cómo sabemos lo que sabemos."
   },
   {
     "question": "What is <ontological> concerned with?",
     "options": [
       "history",
-      "the nature of being",
       "mathematics",
+      "the nature of being",
       "language"
     ],
     "correct": "the nature of being",
-    "explanation": "Ontological relates to the branch of philosophy dealing with <the nature of being>."
+    "explanation": "Ontological se relaciona con la rama de la filosofía que trata <the nature of being> (la naturaleza del ser)."
   },
   {
     "question": "What is a <dialectical> approach?",
     "options": [
       "one-sided",
       "random",
-      "based on examining contradictions",
-      "purely emotional"
+      "purely emotional",
+      "based on examining contradictions"
     ],
     "correct": "based on examining contradictions",
-    "explanation": "<Dialectical> refers to a method of examining ideas through contradictions and their resolution."
+    "explanation": "<Dialectical> se refiere a un método de examinar ideas a través de contradicciones y su resolución."
   },
   {
     "question": "What does <heuristic> mean?",
@@ -52,29 +52,29 @@
       "definitive answer"
     ],
     "correct": "method enabling discovery",
-    "explanation": "<Heuristic> refers to a method that enables learning or problem-solving through experimentation."
+    "explanation": "<Heuristic> se refiere a un método que permite aprender o resolver problemas mediante la experimentación."
   },
   {
     "question": "What is <empiricism>?",
     "options": [
-      "knowledge based on experience",
       "pure logic",
+      "knowledge based on experience",
       "religious belief",
       "mathematical proof"
     ],
     "correct": "knowledge based on experience",
-    "explanation": "<Empiricism> is the theory that knowledge comes primarily from sensory experience."
+    "explanation": "<Empiricism> es la teoría de que el conocimiento proviene principalmente de la experiencia sensorial."
   },
   {
     "question": "What is <rationalism>?",
     "options": [
       "sensory experience",
-      "knowledge based on reason",
       "random guessing",
+      "knowledge based on reason",
       "emotional thinking"
     ],
     "correct": "knowledge based on reason",
-    "explanation": "<Rationalism> is the theory that reason is the chief source of knowledge."
+    "explanation": "<Rationalism> es la teoría de que la razón es la principal fuente de conocimiento."
   },
   {
     "question": "What is <reductionism>?",
@@ -85,7 +85,7 @@
       "simplifying to basic elements"
     ],
     "correct": "simplifying to basic elements",
-    "explanation": "<Reductionism> is the practice of analyzing complex things by reducing them to simpler components."
+    "explanation": "<Reductionism> es la práctica de analizar cosas complejas reduciéndolas a componentes más simples."
   },
   {
     "question": "What does <holistic> mean?",
@@ -96,73 +96,73 @@
       "focusing on parts"
     ],
     "correct": "considering the whole system",
-    "explanation": "<Holistic> means characterized by the belief that parts are interconnected and should be viewed as a whole."
+    "explanation": "<Holistic> significa caracterizado por la creencia de que las partes están interconectadas y deben verse como un todo."
   },
   {
     "question": "What is a <dichotomy>?",
     "options": [
       "gradual change",
+      "division into two parts",
       "multiple options",
-      "unity",
-      "division into two parts"
+      "unity"
     ],
     "correct": "division into two parts",
-    "explanation": "A <dichotomy> is a division into two mutually exclusive or contradictory groups."
+    "explanation": "Una <dichotomy> es una división en dos grupos mutuamente excluyentes o contradictorios."
   },
   {
     "question": "What is an <antithesis>?",
     "options": [
-      "direct opposite",
       "compromise",
       "similarity",
+      "direct opposite",
       "agreement"
     ],
     "correct": "direct opposite",
-    "explanation": "Antithesis is a person or thing that is the <direct opposite> of someone or something else."
+    "explanation": "Antithesis es una persona o cosa que es <direct opposite> (lo opuesto directo) de otra persona o cosa."
   },
   {
     "question": "What is a <paradox>?",
     "options": [
-      "apparent contradiction",
       "simple truth",
       "obvious fact",
-      "clear solution"
+      "clear solution",
+      "apparent contradiction"
     ],
     "correct": "apparent contradiction",
-    "explanation": "A <paradox> is a seemingly absurd or contradictory statement that may nonetheless be true."
+    "explanation": "Una <paradox> es una afirmación aparentemente absurda o contradictoria que, sin embargo, puede ser verdadera."
   },
   {
     "question": "What is a <corollary>?",
     "options": [
+      "natural consequence",
       "opposite",
       "contradiction",
-      "unrelated fact",
-      "natural consequence"
+      "unrelated fact"
     ],
     "correct": "natural consequence",
-    "explanation": "A <corollary> is a proposition that follows from one already proved."
+    "explanation": "Un <corollary> es una proposición que se deriva de otra ya demostrada."
   },
   {
     "question": "What is a <caveat>?",
     "options": [
-      "warning or qualification",
       "promise",
+      "warning or qualification",
       "conclusion",
       "guarantee"
     ],
     "correct": "warning or qualification",
-    "explanation": "A <caveat> is a warning or proviso of specific conditions or limitations."
+    "explanation": "Un <caveat> es una advertencia o salvedad sobre condiciones o limitaciones específicas."
   },
   {
     "question": "What is a <presupposition>?",
     "options": [
       "random guess",
-      "implicit assumption",
       "proven fact",
+      "implicit assumption",
       "final conclusion"
     ],
     "correct": "implicit assumption",
-    "explanation": "A <presupposition> is a thing tacitly assumed beforehand as the basis of an argument."
+    "explanation": "Una <presupposition> es algo que se asume tácitamente de antemano como base de un argumento."
   },
   {
     "question": "What is <deduction>?",
@@ -173,7 +173,7 @@
       "general to specific"
     ],
     "correct": "general to specific",
-    "explanation": "<Deduction> is reasoning from general principles to specific cases."
+    "explanation": "<Deduction> es el razonamiento que va de principios generales a casos específicos."
   },
   {
     "question": "What is <induction>?",
@@ -184,29 +184,29 @@
       "circular reasoning"
     ],
     "correct": "specific to general",
-    "explanation": "<Induction> is reasoning from specific observations to general principles."
+    "explanation": "<Induction> es el razonamiento que va de observaciones específicas a principios generales."
   },
   {
     "question": "What is <falsifiability>?",
     "options": [
-      "capable of being proven false",
       "never testable",
+      "capable of being proven false",
       "purely subjective",
       "always true"
     ],
     "correct": "capable of being proven false",
-    "explanation": "<Falsifiability> is the capacity for a statement or theory to be proven false by observation."
+    "explanation": "<Falsifiability> es la capacidad de que una afirmación o teoría pueda demostrarse falsa mediante la observación."
   },
   {
     "question": "What is a <tautology>?",
     "options": [
       "complex idea",
       "false claim",
-      "new information",
-      "redundant statement"
+      "redundant statement",
+      "new information"
     ],
     "correct": "redundant statement",
-    "explanation": "A <tautology> is a statement that is true by necessity or by virtue of its logical form."
+    "explanation": "Una <tautology> es una afirmación que es verdadera por necesidad o en virtud de su forma lógica."
   },
   {
     "question": "What is <ad hominem>?",
@@ -217,6 +217,6 @@
       "personal attack"
     ],
     "correct": "personal attack",
-    "explanation": "<Ad hominem> is an argument directed against a person rather than their position."
+    "explanation": "<Ad hominem> es un argumento dirigido contra una persona en lugar de contra su postura."
   }
 ]

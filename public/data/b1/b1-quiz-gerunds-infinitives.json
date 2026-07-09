@@ -2,24 +2,24 @@
   {
     "question": "Which is correct? 'I enjoy ______.'",
     "options": [
-      "swam",
       "swimming",
+      "swam",
       "swim",
       "to swim"
     ],
     "correct": "swimming",
-    "explanation": "<Enjoy> is always followed by the gerund (-ing form): enjoy swimming."
+    "explanation": "<Enjoy> siempre va seguido del gerundio (forma -ing): enjoy swimming."
   },
   {
     "question": "Which is correct? 'She decided ______ abroad.'",
     "options": [
       "studying",
+      "to study",
       "study",
-      "studied",
-      "to study"
+      "studied"
     ],
     "correct": "to study",
-    "explanation": "<Decide> is always followed by the infinitive: decided to study."
+    "explanation": "<Decide> siempre va seguido del infinitivo: decided to study."
   },
   {
     "question": "Which verb is followed by the gerund (-ing)?",
@@ -30,40 +30,40 @@
       "decide"
     ],
     "correct": "avoid",
-    "explanation": "<Avoid> is followed by the gerund: avoid doing something."
+    "explanation": "<Avoid> va seguido del gerundio: avoid doing something."
   },
   {
     "question": "Which verb is followed by the infinitive (to)?",
     "options": [
       "finish",
       "enjoy",
-      "plan",
-      "mind"
+      "mind",
+      "plan"
     ],
     "correct": "plan",
-    "explanation": "<Plan> is followed by the infinitive: plan to do something."
+    "explanation": "<Plan> va seguido del infinitivo: plan to do something."
   },
   {
     "question": "'Do you mind ______ me?' — Choose the correct form.",
     "options": [
+      "helping",
       "helped",
       "help",
-      "to help",
-      "helping"
+      "to help"
     ],
     "correct": "helping",
-    "explanation": "<Mind> is always followed by the gerund: mind helping."
+    "explanation": "<Mind> siempre va seguido del gerundio: mind helping."
   },
   {
     "question": "'He promised ______ on time.' — Choose the correct form.",
     "options": [
       "arriving",
-      "arrived",
       "to arrive",
+      "arrived",
       "arrive"
     ],
     "correct": "to arrive",
-    "explanation": "<Promise> is always followed by the infinitive: promised to arrive."
+    "explanation": "<Promise> siempre va seguido del infinitivo: promised to arrive."
   },
   {
     "question": "After prepositions (in, at, of, about), we use:",
@@ -74,7 +74,7 @@
       "the infinitive (to + verb)"
     ],
     "correct": "the gerund (-ing form)",
-    "explanation": "After prepositions, always use the <gerund>: interested in learning, good at cooking."
+    "explanation": "Después de una preposición, siempre se usa el <gerund>: interested in learning, good at cooking."
   },
   {
     "question": "'I look forward to ______ you.' — Choose the correct form.",
@@ -85,18 +85,18 @@
       "seeing"
     ],
     "correct": "seeing",
-    "explanation": "In <look forward to>, the word 'to' is a preposition, so use the gerund: seeing."
+    "explanation": "En <look forward to>, la palabra 'to' es una preposición, por lo que se usa el gerundio: seeing."
   },
   {
     "question": "Which sentence is correct?",
     "options": [
+      "She suggested going home.",
       "She suggested go home.",
       "She suggested went home.",
-      "She suggested to go home.",
-      "She suggested going home."
+      "She suggested to go home."
     ],
     "correct": "She suggested going home.",
-    "explanation": "<Suggest> is followed by the gerund: suggested going."
+    "explanation": "<Suggest> va seguido del gerundio: suggested going."
   },
   {
     "question": "Which sentence is correct?",
@@ -107,29 +107,29 @@
       "He refused helped."
     ],
     "correct": "He refused to help.",
-    "explanation": "<Refuse> is followed by the infinitive: refused to help."
+    "explanation": "<Refuse> va seguido del infinitivo: refused to help."
   },
   {
     "question": "'She can't afford ______ a new phone.' — Choose the correct form.",
     "options": [
       "bought",
-      "to buy",
       "buy",
+      "to buy",
       "buying"
     ],
     "correct": "to buy",
-    "explanation": "<Afford> is always followed by the infinitive: afford to buy."
+    "explanation": "<Afford> siempre va seguido del infinitivo: afford to buy."
   },
   {
     "question": "'He admitted ______ the window.' — Choose the correct form.",
     "options": [
       "broke",
-      "breaking",
       "break",
-      "to break"
+      "to break",
+      "breaking"
     ],
     "correct": "breaking",
-    "explanation": "<Admit> is always followed by the gerund: admitted breaking."
+    "explanation": "<Admit> siempre va seguido del gerundio: admitted breaking."
   },
   {
     "question": "Which group of verbs takes the gerund (-ing)?",
@@ -140,7 +140,7 @@
       "decide, agree, refuse"
     ],
     "correct": "enjoy, avoid, mind",
-    "explanation": "<Enjoy>, <avoid>, and <mind> are all followed by the gerund (-ing form)."
+    "explanation": "<Enjoy>, <avoid> y <mind> van todos seguidos del gerundio (forma -ing)."
   },
   {
     "question": "Which group of verbs takes the infinitive (to)?",
@@ -151,18 +151,18 @@
       "finish, keep, miss"
     ],
     "correct": "want, decide, hope",
-    "explanation": "<Want>, <decide>, and <hope> are all followed by the infinitive (to + verb)."
+    "explanation": "<Want>, <decide> y <hope> van todos seguidos del infinitivo (to + verbo)."
   },
   {
     "question": "'I'm tired of ______ the same thing every day.' — Choose the correct form.",
     "options": [
       "did",
       "do",
-      "to do",
-      "doing"
+      "doing",
+      "to do"
     ],
     "correct": "doing",
-    "explanation": "After the preposition <of>, always use the gerund: tired of doing."
+    "explanation": "Después de la preposición <of>, siempre se usa el gerundio: tired of doing."
   },
   {
     "question": "'She offered ______ dinner for everyone.' — Choose the correct form.",
@@ -173,50 +173,50 @@
       "to cook"
     ],
     "correct": "to cook",
-    "explanation": "<Offer> is always followed by the infinitive: offered to cook."
+    "explanation": "<Offer> siempre va seguido del infinitivo: offered to cook."
   },
   {
     "question": "'He keeps ______ about his holiday.' — Choose the correct form.",
     "options": [
+      "talking",
       "talk",
       "to talk",
-      "talked",
-      "talking"
+      "talked"
     ],
     "correct": "talking",
-    "explanation": "<Keep> is always followed by the gerund: keeps talking."
+    "explanation": "<Keep> siempre va seguido del gerundio: keeps talking."
   },
   {
     "question": "With verbs like 'like', 'love', 'hate', we can use:",
     "options": [
       "only the gerund",
-      "only the base form",
       "both gerund and infinitive",
+      "only the base form",
       "only the infinitive"
     ],
     "correct": "both gerund and infinitive",
-    "explanation": "Verbs like <like>, <love>, <hate> accept both forms: I like swimming / I like to swim."
+    "explanation": "Verbos como <like>, <love> y <hate> aceptan ambas formas: I like swimming / I like to swim."
   },
   {
     "question": "'We managed ______ the project on time.' — Choose the correct form.",
     "options": [
       "finished",
       "finishing",
-      "finish",
-      "to finish"
+      "to finish",
+      "finish"
     ],
     "correct": "to finish",
-    "explanation": "<Manage> is always followed by the infinitive: managed to finish."
+    "explanation": "<Manage> siempre va seguido del infinitivo: managed to finish."
   },
   {
     "question": "'She postponed ______ her decision.' — Choose the correct form.",
     "options": [
-      "making",
       "made",
       "make",
-      "to make"
+      "to make",
+      "making"
     ],
     "correct": "making",
-    "explanation": "<Postpone> is always followed by the gerund: postponed making."
+    "explanation": "<Postpone> siempre va seguido del gerundio: postponed making."
   }
 ]

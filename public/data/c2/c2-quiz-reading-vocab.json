@@ -2,68 +2,68 @@
   {
     "question": "An <aporia> is...",
     "options": [
+      "an irresolvable internal contradiction in a text or argument",
       "a rhetorical device for persuasion",
       "a logical proof",
-      "an irresolvable internal contradiction in a text or argument",
       "a type of literary genre"
     ],
     "correct": "an irresolvable internal contradiction in a text or argument",
-    "explanation": "An <aporia> is a state of puzzlement or an irresolvable contradiction, often in philosophical texts."
+    "explanation": "Una <aporia> es un estado de perplejidad o una contradicción irresoluble, a menudo en textos filosóficos."
   },
   {
     "question": "A <palimpsest> metaphorically refers to...",
     "options": [
-      "something with multiple layers of meaning or history",
       "a single clear message",
+      "something with multiple layers of meaning or history",
       "an ancient language",
       "a type of manuscript"
     ],
     "correct": "something with multiple layers of meaning or history",
-    "explanation": "A <palimpsest> originally meant a manuscript written over earlier text; metaphorically, it refers to layered meanings."
+    "explanation": "Un <palimpsest> originalmente significaba un manuscrito escrito sobre un texto anterior; metafóricamente, se refiere a significados superpuestos."
   },
   {
     "question": "<Heteroglossia> describes...",
     "options": [
       "a single authoritative voice",
-      "the coexistence of multiple voices or perspectives in a text",
       "translation between languages",
+      "the coexistence of multiple voices or perspectives in a text",
       "grammatical errors"
     ],
     "correct": "the coexistence of multiple voices or perspectives in a text",
-    "explanation": "<Heteroglossia>, coined by Bakhtin, refers to the diversity of voices and social languages within a text."
+    "explanation": "<Heteroglossia>, término acuñado por Bajtín, se refiere a la diversidad de voces y lenguajes sociales dentro de un texto."
   },
   {
     "question": "The <subaltern> refers to...",
     "options": [
       "academic professors",
       "military officers",
-      "marginalized groups excluded from power structures",
-      "political leaders"
+      "political leaders",
+      "marginalized groups excluded from power structures"
     ],
     "correct": "marginalized groups excluded from power structures",
-    "explanation": "The <subaltern> refers to populations socially, politically, and geographically outside hegemonic power."
+    "explanation": "El <subaltern> se refiere a poblaciones social, política y geográficamente excluidas del poder hegemónico."
   },
   {
     "question": "<Ekphrasis> is...",
     "options": [
+      "a literary description of a visual work of art",
       "a type of poetry meter",
       "a grammatical structure",
-      "a literary description of a visual work of art",
       "a philosophical argument"
     ],
     "correct": "a literary description of a visual work of art",
-    "explanation": "<Ekphrasis> is the literary representation or description of visual art."
+    "explanation": "La <ekphrasis> es la representación o descripción literaria de una obra de arte visual."
   },
   {
     "question": "<Ontology> is concerned with...",
     "options": [
-      "the nature of being and existence",
       "the study of language",
+      "the nature of being and existence",
       "mathematical proofs",
       "historical events"
     ],
     "correct": "the nature of being and existence",
-    "explanation": "<Ontology> is the philosophical study of the nature of being, becoming, and reality."
+    "explanation": "La <ontology> es el estudio filosófico de la naturaleza del ser, el devenir y la realidad."
   },
   {
     "question": "Kant's <categorical imperative> is...",
@@ -74,18 +74,18 @@
       "a suggestion for good behavior"
     ],
     "correct": "a universal moral law that applies regardless of circumstances",
-    "explanation": "The <categorical imperative> is Kant's principle that one should act only according to rules one could will to be universal laws."
+    "explanation": "El <categorical imperative> es el principio kantiano según el cual uno debe actuar solo conforme a reglas que pudiera querer convertir en leyes universales."
   },
   {
     "question": "<Qualia> are...",
     "options": [
       "mathematical constants",
-      "subjective, conscious experiences like the redness of red",
       "scientific measurements",
-      "logical propositions"
+      "logical propositions",
+      "subjective, conscious experiences like the redness of red"
     ],
     "correct": "subjective, conscious experiences like the redness of red",
-    "explanation": "<Qualia> are the subjective, phenomenal qualities of conscious experience."
+    "explanation": "Los <qualia> son las cualidades subjetivas y fenoménicas de la experiencia consciente."
   },
   {
     "question": "<Vicious circularity> in an argument means...",
@@ -96,18 +96,18 @@
       "the argument uses many examples"
     ],
     "correct": "the conclusion is assumed in the premises",
-    "explanation": "<Vicious circularity> occurs when an argument's conclusion is presupposed by its premises."
+    "explanation": "La <vicious circularity> ocurre cuando la conclusión de un argumento ya está presupuesta en sus premisas."
   },
   {
     "question": "<Inviolability> means...",
     "options": [
-      "the quality of being sacred and not to be transgressed",
       "temporary protection",
+      "the quality of being sacred and not to be transgressed",
       "conditional rights",
       "flexibility"
     ],
     "correct": "the quality of being sacred and not to be transgressed",
-    "explanation": "<Inviolability> means the quality of being too important to be broken or violated."
+    "explanation": "<Inviolability> significa la cualidad de ser demasiado importante como para ser quebrantado o violado."
   },
   {
     "question": "<Jurisprudence> is...",
@@ -118,40 +118,40 @@
       "a type of crime"
     ],
     "correct": "the theory and philosophy of law",
-    "explanation": "<Jurisprudence> is the theoretical study of law and legal systems."
+    "explanation": "La <jurisprudence> es el estudio teórico del derecho y los sistemas jurídicos."
   },
   {
     "question": "<Pathophysiology> studies...",
     "options": [
       "healthy body functions",
-      "the functional changes associated with disease",
       "pharmaceutical production",
-      "surgical techniques"
+      "surgical techniques",
+      "the functional changes associated with disease"
     ],
     "correct": "the functional changes associated with disease",
-    "explanation": "<Pathophysiology> examines the disordered physiological processes that cause or result from disease."
+    "explanation": "La <pathophysiology> examina los procesos fisiológicos alterados que causan o resultan de una enfermedad."
   },
   {
     "question": "<Arbitrage> in an intellectual context means...",
     "options": [
-      "legal mediation",
       "exploiting differences between frameworks for new insights",
+      "legal mediation",
       "financial trading only",
       "random selection"
     ],
     "correct": "exploiting differences between frameworks for new insights",
-    "explanation": "<Arbitrage> metaphorically means leveraging differences between systems or frameworks productively."
+    "explanation": "<Arbitrage> significa, en sentido metafórico, aprovechar de manera productiva las diferencias entre sistemas o marcos."
   },
   {
     "question": "<Topology> in discourse analysis refers to...",
     "options": [
-      "the structural arrangement and connections within an argument",
       "the study of maps",
+      "the structural arrangement and connections within an argument",
       "geographical features",
       "surface textures"
     ],
     "correct": "the structural arrangement and connections within an argument",
-    "explanation": "<Topology> metaphorically refers to the shape and structure of relationships within a system of ideas."
+    "explanation": "<Topology> se refiere, en sentido metafórico, a la forma y estructura de las relaciones dentro de un sistema de ideas."
   },
   {
     "question": "<Requisite> means...",
@@ -162,29 +162,29 @@
       "optional"
     ],
     "correct": "necessary or required for a particular purpose",
-    "explanation": "<Requisite> means made necessary by particular circumstances; essential."
+    "explanation": "<Requisite> significa aquello que resulta necesario por circunstancias particulares; esencial."
   },
   {
     "question": "<Dialectic> involves...",
     "options": [
-      "the resolution of opposing ideas through reasoned argument",
       "a single perspective",
       "emotional persuasion",
-      "statistical analysis"
+      "statistical analysis",
+      "the resolution of opposing ideas through reasoned argument"
     ],
     "correct": "the resolution of opposing ideas through reasoned argument",
-    "explanation": "The <dialectic> is a method of argument involving thesis, antithesis, and synthesis."
+    "explanation": "La <dialectic> es un método de argumentación que involucra tesis, antítesis y síntesis."
   },
   {
     "question": "<Hermeneutics> is the study of...",
     "options": [
-      "ancient languages",
       "interpretation, especially of texts",
+      "ancient languages",
       "mathematical symbols",
       "chemical compounds"
     ],
     "correct": "interpretation, especially of texts",
-    "explanation": "<Hermeneutics> is the theory and methodology of interpretation, particularly of texts."
+    "explanation": "La <hermeneutics> es la teoría y metodología de la interpretación, especialmente de textos."
   },
   {
     "question": "A <teleological> explanation focuses on...",
@@ -195,7 +195,7 @@
       "statistical probability"
     ],
     "correct": "purpose or end goals",
-    "explanation": "<Teleological> relates to explaining phenomena by their purpose or design."
+    "explanation": "<Teleological> se relaciona con explicar los fenómenos según su propósito o diseño."
   },
   {
     "question": "<Phenomenology> examines...",
@@ -206,7 +206,7 @@
       "economic systems"
     ],
     "correct": "the structures of subjective experience and consciousness",
-    "explanation": "<Phenomenology> is the philosophical study of the structures of experience and consciousness."
+    "explanation": "La <phenomenology> es el estudio filosófico de las estructuras de la experiencia y la conciencia."
   },
   {
     "question": "<Epistemic> relates to...",
@@ -217,6 +217,6 @@
       "knowledge and the conditions for its possibility"
     ],
     "correct": "knowledge and the conditions for its possibility",
-    "explanation": "<Epistemic> pertains to knowledge or the degree of its validation."
+    "explanation": "<Epistemic> se relaciona con el conocimiento o el grado de su validación."
   }
 ]

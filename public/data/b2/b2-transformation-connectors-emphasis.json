@@ -5,7 +5,7 @@
     "correct": [
       "Although the weather was terrible, we had a great time."
     ],
-    "explanation": "<Although> + clause introduces a concession (unexpected contrast)."
+    "explanation": "<Although> + cláusula introduce una concesión (un contraste inesperado)."
   },
   {
     "prompt": "Rewrite using <Despite> + gerund",
@@ -13,7 +13,7 @@
     "correct": [
       "Despite working overtime, he didn't finish the project."
     ],
-    "explanation": "<Despite> + gerund/noun replaces <Although> + full clause."
+    "explanation": "<Despite> + gerundio/sustantivo reemplaza a <Although> + la cláusula completa."
   },
   {
     "prompt": "Rewrite using <In spite of the fact that>",
@@ -21,7 +21,7 @@
     "correct": [
       "In spite of the fact that she was exhausted, she continued running."
     ],
-    "explanation": "<In spite of the fact that> + clause is a more formal version of <despite>."
+    "explanation": "<In spite of the fact that> + cláusula es una versión más formal de <despite>."
   },
   {
     "prompt": "Rewrite using <However>",
@@ -30,7 +30,7 @@
       "The hotel was expensive. However, the service was poor.",
       "The hotel was expensive; however, the service was poor."
     ],
-    "explanation": "<However> links contrasting sentences. It's followed by a comma."
+    "explanation": "<However> conecta oraciones que contrastan. Va seguido de una coma."
   },
   {
     "prompt": "Rewrite using <Nevertheless>",
@@ -39,7 +39,7 @@
       "The critics hated the film. Nevertheless, it was a commercial success.",
       "The critics hated the film; nevertheless, it was a commercial success."
     ],
-    "explanation": "<Nevertheless> = <Despite that>, more formal than <however>."
+    "explanation": "<Nevertheless> = <Despite that> (a pesar de eso), más formal que <however>."
   },
   {
     "prompt": "Rewrite using <so ... that>",
@@ -47,7 +47,7 @@
     "correct": [
       "The lecture was so boring that half the audience fell asleep."
     ],
-    "explanation": "<So> + adjective/adverb + <that> + result clause."
+    "explanation": "<So> + adjetivo/adverbio + <that> + cláusula de resultado."
   },
   {
     "prompt": "Rewrite using <such ... that>",
@@ -56,7 +56,7 @@
       "It was such a long meeting that everyone got frustrated."
     ],
     "hint": "<Such> + (a/an) + adjective + noun + <that>",
-    "explanation": "<Such> + (a/an) + adjective + noun + <that> + result clause."
+    "explanation": "<Such> + (a/an) + adjetivo + sustantivo + <that> + cláusula de resultado."
   },
   {
     "prompt": "Rewrite using <Not only ... but also> with inversion",
@@ -65,7 +65,7 @@
       "Not only is she talented, but she is also very hardworking.",
       "Not only is she talented but also very hardworking."
     ],
-    "explanation": "<Not only> + inverted auxiliary + subject emphasizes both qualities."
+    "explanation": "<Not only> + auxiliar invertido + sujeto enfatiza ambas cualidades."
   },
   {
     "prompt": "Rewrite using <Whereas>",
@@ -74,7 +74,7 @@
       "Whereas my brother loves sports, I prefer reading.",
       "My brother loves sports, whereas I prefer reading."
     ],
-    "explanation": "<Whereas> introduces a direct contrast between two things/people."
+    "explanation": "<Whereas> introduce un contraste directo entre dos cosas/personas."
   },
   {
     "prompt": "Rewrite using <On the other hand>",
@@ -82,7 +82,7 @@
     "correct": [
       "Working from home saves commuting time. On the other hand, you miss social interaction at the office."
     ],
-    "explanation": "<On the other hand> introduces the opposite perspective."
+    "explanation": "<On the other hand> introduce la perspectiva opuesta."
   },
   {
     "prompt": "Rewrite using <As a result>",
@@ -90,7 +90,7 @@
     "correct": [
       "It rained heavily all week. As a result, the river flooded."
     ],
-    "explanation": "<As a result> introduces a consequence of the previous statement."
+    "explanation": "<As a result> introduce una consecuencia de lo dicho anteriormente."
   },
   {
     "prompt": "Rewrite using <Due to> + noun",
@@ -99,7 +99,7 @@
       "The flight was cancelled due to the storm.",
       "Due to the storm, the flight was cancelled."
     ],
-    "explanation": "<Due to> + noun/gerund expresses cause (more formal than <because of>)."
+    "explanation": "<Due to> + sustantivo/gerundio expresa causa (más formal que <because of>)."
   },
   {
     "prompt": "Rewrite using <Consequently>",
@@ -107,7 +107,7 @@
     "correct": [
       "He didn't follow the instructions. Consequently, he made several errors."
     ],
-    "explanation": "<Consequently> = formal <as a result>."
+    "explanation": "<Consequently> = versión formal de <as a result>."
   },
   {
     "prompt": "Rewrite using <In order to>",
@@ -116,7 +116,7 @@
       "She left early in order to catch the first train.",
       "In order to catch the first train, she left early."
     ],
-    "explanation": "<In order to> + infinitive expresses purpose (more formal than just <to>)."
+    "explanation": "<In order to> + infinitivo expresa propósito (más formal que usar solo <to>)."
   },
   {
     "prompt": "Rewrite using <so as not to>",
@@ -125,7 +125,7 @@
       "He whispered so as not to wake the baby."
     ],
     "hint": "Negative purpose: <so as not to> + infinitive",
-    "explanation": "<So as not to> + infinitive expresses a negative purpose."
+    "explanation": "<So as not to> + infinitivo expresa un propósito negativo."
   },
   {
     "prompt": "Rewrite using <Furthermore>",
@@ -133,7 +133,7 @@
     "correct": [
       "The product is affordable. Furthermore, it comes with a two-year warranty."
     ],
-    "explanation": "<Furthermore> adds supporting information. More formal than <also>."
+    "explanation": "<Furthermore> añade información de apoyo. Más formal que <also>."
   },
   {
     "prompt": "Rewrite using <What's more>",
@@ -141,7 +141,7 @@
     "correct": [
       "The apartment is spacious. What's more, it has a beautiful view."
     ],
-    "explanation": "<What's more> adds an additional positive point. Semi-formal register."
+    "explanation": "<What's more> añade un punto positivo adicional. Registro semi-formal."
   },
   {
     "prompt": "Rewrite using <Rather than> + gerund",
@@ -150,7 +150,7 @@
       "Rather than taking a taxi, he decided to walk.",
       "He decided to walk rather than take a taxi."
     ],
-    "explanation": "<Rather than> + gerund/base verb expresses a preference or alternative."
+    "explanation": "<Rather than> + gerundio/verbo base expresa una preferencia o alternativa."
   },
   {
     "prompt": "Rewrite using <No matter how>",
@@ -158,7 +158,7 @@
     "correct": [
       "No matter how hard he tried, he couldn't solve the puzzle."
     ],
-    "explanation": "<No matter how> + adjective/adverb + clause expresses concession regardless of degree."
+    "explanation": "<No matter how> + adjetivo/adverbio + cláusula expresa concesión sin importar el grado."
   },
   {
     "prompt": "Rewrite using <Even though>",
@@ -166,7 +166,7 @@
     "correct": [
       "Even though he knew it was wrong, he did it anyway."
     ],
-    "explanation": "<Even though> = stronger version of <although>, emphasizes the contrast."
+    "explanation": "<Even though> = versión más enfática de <although>, resalta el contraste."
   },
   {
     "prompt": "Rewrite using <Provided that>",
@@ -175,7 +175,7 @@
       "You can use my laptop provided that you return it by Friday.",
       "You can use my laptop provided you return it by Friday."
     ],
-    "explanation": "<Provided (that)> = conditional connector meaning <only if>."
+    "explanation": "<Provided (that)> = conector condicional que significa <only if> (solo si)."
   },
   {
     "prompt": "Rewrite using <Whether ... or not>",
@@ -183,7 +183,7 @@
     "correct": [
       "Whether it rains or not, we'll go hiking."
     ],
-    "explanation": "<Whether ... or not> expresses that the result is unchanged regardless."
+    "explanation": "<Whether ... or not> expresa que el resultado no cambia sin importar la circunstancia."
   },
   {
     "prompt": "Rewrite using <As well as> + gerund",
@@ -192,7 +192,7 @@
       "As well as singing, she plays the piano.",
       "She plays the piano as well as singing."
     ],
-    "explanation": "<As well as> + gerund adds an additional fact."
+    "explanation": "<As well as> + gerundio añade un hecho adicional."
   },
   {
     "prompt": "Rewrite using <Seeing that>",
@@ -200,7 +200,7 @@
     "correct": [
       "Seeing that everyone has arrived, let's start the meeting."
     ],
-    "explanation": "<Seeing that> = <given that>, introduces a reason."
+    "explanation": "<Seeing that> = <given that> (dado que), introduce una razón."
   },
   {
     "prompt": "Rewrite using <It is ... that> (cleft for emphasis)",
@@ -209,6 +209,6 @@
       "It is the deadline that caused all the stress.",
       "It was the deadline that caused all the stress."
     ],
-    "explanation": "Cleft sentence: <It is/was> + focus + <that> + rest for emphasis."
+    "explanation": "Oración hendida: <It is/was> + elemento enfocado + <that> + el resto, para dar énfasis."
   }
 ]

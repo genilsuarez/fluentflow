@@ -2,68 +2,281 @@
   {
     "id": "reord-id-b1-001",
     "sentence": "She decided to go the extra mile to impress her boss",
-    "words": ["She", "decided", "to", "go", "the", "extra", "mile", "to", "impress", "her", "boss"],
-    "explanation": "'Go the extra mile' means to make more effort than expected. 'Decided to' + base form."
+    "words": [
+      "She",
+      "decided",
+      "to",
+      "go",
+      "the",
+      "extra",
+      "mile",
+      "to",
+      "impress",
+      "her",
+      "boss"
+    ],
+    "explanation": "'Go the extra mile' significa hacer más esfuerzo del esperado. 'Decided to' + forma base."
   },
   {
     "id": "reord-id-b1-002",
     "sentence": "He has been sitting on the fence about the job offer",
-    "words": ["He", "has", "been", "sitting", "on", "the", "fence", "about", "the", "job", "offer"],
+    "words": [
+      "He",
+      "has",
+      "been",
+      "sitting",
+      "on",
+      "the",
+      "fence",
+      "about",
+      "the",
+      "job",
+      "offer"
+    ],
     "hint": "Present perfect continuous: has been + -ing",
-    "explanation": "'Sit on the fence' means to avoid making a decision. Present perfect continuous for ongoing indecision."
+    "explanation": "'Sit on the fence' significa evitar tomar una decisión. Presente perfecto continuo para una indecisión que persiste."
   },
   {
     "id": "reord-id-b1-003",
     "sentence": "If you burn the candle at both ends you will get sick",
-    "words": ["If", "you", "burn", "the", "candle", "at", "both", "ends", "you", "will", "get", "sick"],
+    "words": [
+      "If",
+      "you",
+      "burn",
+      "the",
+      "candle",
+      "at",
+      "both",
+      "ends",
+      "you",
+      "will",
+      "get",
+      "sick"
+    ],
     "hint": "First conditional: If + present, will + base form",
-    "explanation": "'Burn the candle at both ends' means to overwork. First conditional for real possibility."
+    "explanation": "'Burn the candle at both ends' significa trabajar en exceso. Primer condicional para una posibilidad real."
   },
   {
     "id": "reord-id-b1-004",
     "sentence": "The manager told us to think outside the box",
-    "words": ["The", "manager", "told", "us", "to", "think", "outside", "the", "box"],
-    "explanation": "'Think outside the box' means to think creatively. 'Told us to' + base form."
+    "words": [
+      "The",
+      "manager",
+      "told",
+      "us",
+      "to",
+      "think",
+      "outside",
+      "the",
+      "box"
+    ],
+    "explanation": "'Think outside the box' significa pensar de forma creativa. 'Told us to' + forma base."
   },
   {
     "id": "reord-id-b1-005",
     "sentence": "We should not cry over spilt milk about the lost contract",
-    "words": ["We", "should", "not", "cry", "over", "spilt", "milk", "about", "the", "lost", "contract"],
+    "words": [
+      "We",
+      "should",
+      "not",
+      "cry",
+      "over",
+      "spilt",
+      "milk",
+      "about",
+      "the",
+      "lost",
+      "contract"
+    ],
     "hint": "Should not + base form",
-    "explanation": "'Cry over spilt milk' means to regret something that cannot be changed."
+    "explanation": "'Cry over spilt milk' significa lamentarse por algo que no se puede cambiar."
   },
   {
     "id": "reord-id-b1-006",
     "sentence": "They were killing two birds with one stone by combining the trips",
-    "words": ["They", "were", "killing", "two", "birds", "with", "one", "stone", "by", "combining", "the", "trips"],
-    "explanation": "'Kill two birds with one stone' means to achieve two things with one action. 'By' + gerund explains how."
+    "words": [
+      "They",
+      "were",
+      "killing",
+      "two",
+      "birds",
+      "with",
+      "one",
+      "stone",
+      "by",
+      "combining",
+      "the",
+      "trips"
+    ],
+    "explanation": "'Kill two birds with one stone' significa lograr dos cosas con una sola acción. 'By' + gerundio explica cómo."
   },
   {
     "id": "reord-id-b1-007",
     "sentence": "I would not touch that topic with a ten foot pole",
-    "words": ["I", "would", "not", "touch", "that", "topic", "with", "a", "ten", "foot", "pole"],
+    "words": [
+      "I",
+      "would",
+      "not",
+      "touch",
+      "that",
+      "topic",
+      "with",
+      "a",
+      "ten",
+      "foot",
+      "pole"
+    ],
     "hint": "Would not + base form for hypothetical refusal",
-    "explanation": "'Touch with a ten foot pole' means to avoid completely. 'Would not' for hypothetical situations."
+    "explanation": "'Touch with a ten foot pole' significa evitar por completo. 'Would not' para situaciones hipotéticas."
   },
   {
     "id": "reord-id-b1-008",
     "sentence": "She let the cat out of the bag about the surprise party",
-    "words": ["She", "let", "the", "cat", "out", "of", "the", "bag", "about", "the", "surprise", "party"],
-    "distractors": ["letted"],
-    "explanation": "'Let the cat out of the bag' means to reveal a secret. Past of 'let' is 'let' (irregular)."
+    "words": [
+      "She",
+      "let",
+      "the",
+      "cat",
+      "out",
+      "of",
+      "the",
+      "bag",
+      "about",
+      "the",
+      "surprise",
+      "party"
+    ],
+    "distractors": [
+      "letted"
+    ],
+    "explanation": "'Let the cat out of the bag' significa revelar un secreto. El pasado de 'let' es 'let' (irregular)."
   },
   {
     "id": "reord-id-b1-009",
     "sentence": "The new employee is learning the ropes very quickly",
-    "words": ["The", "new", "employee", "is", "learning", "the", "ropes", "very", "quickly"],
+    "words": [
+      "The",
+      "new",
+      "employee",
+      "is",
+      "learning",
+      "the",
+      "ropes",
+      "very",
+      "quickly"
+    ],
     "hint": "Present continuous: is + -ing",
-    "explanation": "'Learn the ropes' means to learn how things work. Present continuous for current action."
+    "explanation": "'Learn the ropes' significa aprender cómo funcionan las cosas. Presente continuo para una acción actual."
   },
   {
     "id": "reord-id-b1-010",
     "sentence": "If we play our cards right we could get the promotion",
-    "words": ["If", "we", "play", "our", "cards", "right", "we", "could", "get", "the", "promotion"],
+    "words": [
+      "If",
+      "we",
+      "play",
+      "our",
+      "cards",
+      "right",
+      "we",
+      "could",
+      "get",
+      "the",
+      "promotion"
+    ],
     "hint": "Conditional: If + present, could + base form",
-    "explanation": "'Play your cards right' means to act wisely. Mixed conditional with 'could' for possibility."
+    "explanation": "'Play your cards right' significa actuar con inteligencia. Condicional mixto con 'could' para expresar posibilidad."
+  },
+  {
+    "id": "reord-id-b1-011",
+    "sentence": "After the failure we went back to the drawing board",
+    "words": [
+      "After",
+      "the",
+      "failure",
+      "we",
+      "went",
+      "back",
+      "to",
+      "the",
+      "drawing",
+      "board"
+    ],
+    "hint": "Time expression + subject + verb + idiom",
+    "explanation": "'Back to the drawing board' significa volver a planificar algo desde el principio después de un fracaso."
+  },
+  {
+    "id": "reord-id-b1-012",
+    "sentence": "I cannot remember the number off the top of my head",
+    "words": [
+      "I",
+      "cannot",
+      "remember",
+      "the",
+      "number",
+      "off",
+      "the",
+      "top",
+      "of",
+      "my",
+      "head"
+    ],
+    "hint": "Subject + modal + verb + object + idiom",
+    "explanation": "'Off the top of my head' significa decir algo de memoria sin verificar los datos."
+  },
+  {
+    "id": "reord-id-b1-013",
+    "sentence": "These complaints are just the tip of the iceberg",
+    "words": [
+      "These",
+      "complaints",
+      "are",
+      "just",
+      "the",
+      "tip",
+      "of",
+      "the",
+      "iceberg"
+    ],
+    "hint": "Subject + verb + idiom",
+    "explanation": "'The tip of the iceberg' significa una parte pequeña y visible de un problema mucho mayor."
+  },
+  {
+    "id": "reord-id-b1-014",
+    "sentence": "It took a while but I finally got the hang of it",
+    "words": [
+      "It",
+      "took",
+      "a",
+      "while",
+      "but",
+      "I",
+      "finally",
+      "got",
+      "the",
+      "hang",
+      "of",
+      "it"
+    ],
+    "hint": "Clause + but + subject + verb + idiom",
+    "explanation": "'Get the hang of it' significa aprender a hacer algo."
+  },
+  {
+    "id": "reord-id-b1-015",
+    "sentence": "To make a long story short we missed the flight",
+    "words": [
+      "To",
+      "make",
+      "a",
+      "long",
+      "story",
+      "short",
+      "we",
+      "missed",
+      "the",
+      "flight"
+    ],
+    "hint": "Idiom + subject + verb",
+    "explanation": "'To make a long story short' se usa para resumir algo rápidamente."
   }
 ]

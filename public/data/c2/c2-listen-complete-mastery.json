@@ -2,91 +2,91 @@
   {
     "sentence": "The ______ rationale notwithstanding, the decision was widely perceived as politically motivated.",
     "correct": "ostensible",
-    "explanation": "'Ostensible' = apparent/seeming (but possibly not real).",
+    "explanation": "'Ostensible' = aparente (pero posiblemente no real).",
     "tip": "Adjective meaning 'appearing to be true'"
   },
   {
     "sentence": "Rarely has a single publication ______ such a protracted debate.",
     "correct": "engendered",
-    "explanation": "'Engender' = cause, produce, give rise to.",
+    "explanation": "'Engender' = causar, producir, dar lugar a.",
     "tip": "Formal verb meaning 'caused'"
   },
   {
     "sentence": "The epistemological ______ of the theory have been called into question.",
     "correct": "underpinnings",
-    "explanation": "'Underpinnings' = foundations, basic elements supporting something.",
+    "explanation": "'Underpinnings' = fundamentos, elementos básicos que sostienen algo.",
     "tip": "Noun meaning 'foundations'"
   },
   {
     "sentence": "In ______ to prevailing orthodoxy, the author posits a fundamentally different mechanism.",
     "correct": "contradistinction",
-    "explanation": "'In contradistinction to' = in contrast to (emphasizing difference).",
+    "explanation": "'In contradistinction to' = en contraste con (enfatizando la diferencia).",
     "tip": "Formal word meaning 'contrast'"
   },
   {
     "sentence": "Be that as it ______, the empirical evidence remains inconclusive.",
     "correct": "may",
-    "explanation": "'Be that as it may' = fixed concessive phrase (even so, nevertheless).",
+    "explanation": "'Be that as it may' = frase concesiva fija (aun así, no obstante).",
     "tip": "Fixed phrase: be that as it ___"
   },
   {
     "sentence": "One cannot ______ acknowledge the prescience of her earlier observations.",
     "correct": "but",
-    "explanation": "'Cannot but' = formal double negative meaning 'can only' / 'must'.",
+    "explanation": "'Cannot but' = doble negación formal que significa 'solo puede' / 'debe'.",
     "tip": "Formal double negative (one word)"
   },
   {
     "sentence": "The sheer ______ of the undertaking necessitated an unprecedented degree of collaboration.",
     "correct": "breadth",
-    "explanation": "'Breadth' = width, scope, scale of something.",
+    "explanation": "'Breadth' = amplitud, alcance, escala de algo.",
     "tip": "Noun meaning 'scope/scale'"
   },
   {
     "sentence": "______ we forget, the consequences of inaction may prove far more costly.",
     "correct": "Lest",
-    "explanation": "'Lest' = for fear that / in case. Formal/literary, followed by subjunctive.",
+    "explanation": "'Lest' = por temor a que / en caso de que. Formal/literario, seguido de subjuntivo.",
     "tip": "Formal conjunction meaning 'for fear that'"
   },
   {
     "sentence": "It is precisely this tension that ______ the debate so intellectually stimulating.",
     "correct": "renders",
-    "explanation": "'Render' = make/cause to be. Formal: renders X stimulating = makes X stimulating.",
+    "explanation": "'Render' = hacer que algo sea. Forma formal: renders X stimulating = hace que X sea estimulante.",
     "tip": "Formal verb meaning 'makes'"
   },
   {
     "sentence": "The author's contention is ______ on a somewhat contentious assumption.",
     "correct": "predicated",
-    "explanation": "'Predicated on' = based on, founded upon.",
+    "explanation": "'Predicated on' = basado en, fundamentado en.",
     "tip": "Formal verb meaning 'based'"
   },
   {
     "sentence": "______ it to say that the implications extend far beyond the immediate context.",
     "correct": "Suffice",
-    "explanation": "'Suffice it to say' = it's enough to say (fixed formal expression).",
+    "explanation": "'Suffice it to say' = es suficiente decir (expresión formal fija).",
     "tip": "Fixed phrase: ___ it to say"
   },
   {
     "sentence": "The ______ between socioeconomic factors and health outcomes defies simplistic characterisation.",
     "correct": "interplay",
-    "explanation": "'Interplay' = interaction, mutual influence between factors.",
+    "explanation": "'Interplay' = interacción, influencia mutua entre factores.",
     "tip": "Noun meaning 'interaction between'"
   },
   {
     "sentence": "______ as the methodology is sound, the conclusions warrant serious consideration.",
     "correct": "Inasmuch",
-    "explanation": "'Inasmuch as' = to the degree that / given that.",
+    "explanation": "'Inasmuch as' = en la medida en que / dado que.",
     "tip": "Formal qualifier (one word before 'as')"
   },
   {
     "sentence": "The ramifications of this paradigm shift are only now beginning to be fully ______.",
     "correct": "appreciated",
-    "explanation": "'Appreciated' = understood, recognised (formal sense).",
+    "explanation": "'Appreciated' = comprendido, reconocido (sentido formal).",
     "tip": "Formal verb meaning 'understood/recognised'"
   },
   {
     "sentence": "The phenomenon is best understood as an ______ property of complex adaptive systems.",
     "correct": "emergent",
-    "explanation": "'Emergent' = arising from complexity, not predictable from individual parts.",
+    "explanation": "'Emergent' = que surge de la complejidad, no predecible a partir de las partes individuales.",
     "tip": "Adjective: a property that arises from the whole"
   }
 ]

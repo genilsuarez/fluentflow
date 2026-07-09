@@ -2,162 +2,393 @@
   {
     "id": "reord-b1-fm-001",
     "sentence": "She is going to start a new job next month",
-    "words": ["She", "is", "going", "to", "start", "a", "new", "job", "next", "month"],
+    "words": [
+      "She",
+      "is",
+      "going",
+      "to",
+      "start",
+      "a",
+      "new",
+      "job",
+      "next",
+      "month"
+    ],
     "hint": "be + going to + base verb for plans",
-    "explanation": "Going to for planned future: subject + be + going to + base verb."
+    "explanation": "Going to para el futuro planeado: sujeto + be + going to + verbo base."
   },
   {
     "id": "reord-b1-fm-002",
     "sentence": "I will call you when I arrive",
-    "words": ["I", "will", "call", "you", "when", "I", "arrive"],
-    "distractors": ["am going to"],
+    "words": [
+      "I",
+      "will",
+      "call",
+      "you",
+      "when",
+      "I",
+      "arrive"
+    ],
+    "distractors": [
+      "am going to"
+    ],
     "hint": "Will for promises and spontaneous decisions",
-    "explanation": "'Will' for promises. Note: after 'when', use present tense 'arrive', not future."
+    "explanation": "'Will' para promesas. Nota: después de 'when', se usa el presente 'arrive', no el futuro."
   },
   {
     "id": "reord-b1-fm-003",
     "sentence": "You should see a doctor about that cough",
-    "words": ["You", "should", "see", "a", "doctor", "about", "that", "cough"],
+    "words": [
+      "You",
+      "should",
+      "see",
+      "a",
+      "doctor",
+      "about",
+      "that",
+      "cough"
+    ],
     "hint": "Should + base verb for advice",
-    "explanation": "Modal 'should' + base form for advice: 'should see'."
+    "explanation": "El modal 'should' + forma base para dar consejos: 'should see'."
   },
   {
     "id": "reord-b1-fm-004",
     "sentence": "They might come to the party tonight",
-    "words": ["They", "might", "come", "to", "the", "party", "tonight"],
-    "explanation": "'Might' + base form for possibility: 'might come'."
+    "words": [
+      "They",
+      "might",
+      "come",
+      "to",
+      "the",
+      "party",
+      "tonight"
+    ],
+    "explanation": "'Might' + forma base para posibilidad: 'might come'."
   },
   {
     "id": "reord-b1-fm-005",
     "sentence": "We are meeting the clients at three tomorrow",
-    "words": ["We", "are", "meeting", "the", "clients", "at", "three", "tomorrow"],
+    "words": [
+      "We",
+      "are",
+      "meeting",
+      "the",
+      "clients",
+      "at",
+      "three",
+      "tomorrow"
+    ],
     "hint": "Present continuous for fixed arrangements",
-    "explanation": "Present continuous for scheduled future: 'are meeting'."
+    "explanation": "Presente continuo para el futuro programado: 'are meeting'."
   },
   {
     "id": "reord-b1-fm-006",
     "sentence": "He must finish the report before Friday",
-    "words": ["He", "must", "finish", "the", "report", "before", "Friday"],
-    "explanation": "'Must' + base form for obligation: 'must finish'."
+    "words": [
+      "He",
+      "must",
+      "finish",
+      "the",
+      "report",
+      "before",
+      "Friday"
+    ],
+    "explanation": "'Must' + forma base para obligación: 'must finish'."
   },
   {
     "id": "reord-b1-fm-007",
     "sentence": "You should not eat so much sugar",
-    "words": ["You", "should", "not", "eat", "so", "much", "sugar"],
-    "distractors": ["must"],
-    "explanation": "'Should not' for negative advice. 'Must' would be too strong here."
+    "words": [
+      "You",
+      "should",
+      "not",
+      "eat",
+      "so",
+      "much",
+      "sugar"
+    ],
+    "distractors": [
+      "must"
+    ],
+    "explanation": "'Should not' para consejo negativo. 'Must' sería demasiado fuerte aquí."
   },
   {
     "id": "reord-b1-fm-008",
     "sentence": "I am going to travel to Japan next summer",
-    "words": ["I", "am", "going", "to", "travel", "to", "Japan", "next", "summer"],
-    "explanation": "Going to for planned future: 'am going to travel'."
+    "words": [
+      "I",
+      "am",
+      "going",
+      "to",
+      "travel",
+      "to",
+      "Japan",
+      "next",
+      "summer"
+    ],
+    "explanation": "Going to para el futuro planeado: 'am going to travel'."
   },
   {
     "id": "reord-b1-fm-009",
     "sentence": "She can speak three languages fluently",
-    "words": ["She", "can", "speak", "three", "languages", "fluently"],
-    "explanation": "'Can' + base form for ability. Adverb 'fluently' at the end."
+    "words": [
+      "She",
+      "can",
+      "speak",
+      "three",
+      "languages",
+      "fluently"
+    ],
+    "explanation": "'Can' + forma base para habilidad. El adverbio 'fluently' va al final."
   },
   {
     "id": "reord-b1-fm-010",
     "sentence": "It will probably rain this afternoon",
-    "words": ["It", "will", "probably", "rain", "this", "afternoon"],
+    "words": [
+      "It",
+      "will",
+      "probably",
+      "rain",
+      "this",
+      "afternoon"
+    ],
     "hint": "Adverbs go between will and the main verb",
-    "explanation": "'Probably' goes between 'will' and the verb: 'will probably rain'."
+    "explanation": "'Probably' se coloca entre 'will' y el verbo: 'will probably rain'."
   },
   {
     "id": "reord-b1-fm-011",
     "sentence": "You must not use your phone during the exam",
-    "words": ["You", "must", "not", "use", "your", "phone", "during", "the", "exam"],
-    "explanation": "'Must not' for prohibition: 'must not use'."
+    "words": [
+      "You",
+      "must",
+      "not",
+      "use",
+      "your",
+      "phone",
+      "during",
+      "the",
+      "exam"
+    ],
+    "explanation": "'Must not' para prohibición: 'must not use'."
   },
   {
     "id": "reord-b1-fm-012",
     "sentence": "They could arrive late because of the traffic",
-    "words": ["They", "could", "arrive", "late", "because", "of", "the", "traffic"],
-    "explanation": "'Could' + base form for possibility: 'could arrive'."
+    "words": [
+      "They",
+      "could",
+      "arrive",
+      "late",
+      "because",
+      "of",
+      "the",
+      "traffic"
+    ],
+    "explanation": "'Could' + forma base para posibilidad: 'could arrive'."
   },
   {
     "id": "reord-b1-fm-013",
     "sentence": "We will have finished the project by December",
-    "words": ["We", "will", "have", "finished", "the", "project", "by", "December"],
+    "words": [
+      "We",
+      "will",
+      "have",
+      "finished",
+      "the",
+      "project",
+      "by",
+      "December"
+    ],
     "hint": "Future perfect: will + have + past participle",
-    "explanation": "Future perfect for completion before a deadline: 'will have finished'."
+    "explanation": "Futuro perfecto para indicar que algo estará terminado antes de un plazo: 'will have finished'."
   },
   {
     "id": "reord-b1-fm-014",
     "sentence": "She might not be able to come tomorrow",
-    "words": ["She", "might", "not", "be", "able", "to", "come", "tomorrow"],
-    "explanation": "'Might not' for negative possibility. 'Be able to' replaces 'can' after modals."
+    "words": [
+      "She",
+      "might",
+      "not",
+      "be",
+      "able",
+      "to",
+      "come",
+      "tomorrow"
+    ],
+    "explanation": "'Might not' para posibilidad negativa. 'Be able to' reemplaza a 'can' después de otro modal."
   },
   {
     "id": "reord-b1-fm-015",
     "sentence": "You should have told me about the problem earlier",
-    "words": ["You", "should", "have", "told", "me", "about", "the", "problem", "earlier"],
+    "words": [
+      "You",
+      "should",
+      "have",
+      "told",
+      "me",
+      "about",
+      "the",
+      "problem",
+      "earlier"
+    ],
     "hint": "Should have + past participle for past regret",
-    "explanation": "'Should have + past participle' for things that were advisable but didn't happen."
+    "explanation": "'Should have + participio pasado' para cosas que era aconsejable hacer pero no ocurrieron."
   },
   {
     "id": "reord-b1-fm-016",
     "sentence": "I will definitely be there on time",
-    "words": ["I", "will", "definitely", "be", "there", "on", "time"],
-    "explanation": "Adverb 'definitely' between 'will' and the verb: 'will definitely be'."
+    "words": [
+      "I",
+      "will",
+      "definitely",
+      "be",
+      "there",
+      "on",
+      "time"
+    ],
+    "explanation": "El adverbio 'definitely' va entre 'will' y el verbo: 'will definitely be'."
   },
   {
     "id": "reord-b1-fm-017",
     "sentence": "He is going to apply for the scholarship next week",
-    "words": ["He", "is", "going", "to", "apply", "for", "the", "scholarship", "next", "week"],
-    "explanation": "Going to for intentions: 'is going to apply'."
+    "words": [
+      "He",
+      "is",
+      "going",
+      "to",
+      "apply",
+      "for",
+      "the",
+      "scholarship",
+      "next",
+      "week"
+    ],
+    "explanation": "Going to para intenciones: 'is going to apply'."
   },
   {
     "id": "reord-b1-fm-018",
     "sentence": "We must leave now or we will miss the train",
-    "words": ["We", "must", "leave", "now", "or", "we", "will", "miss", "the", "train"],
-    "explanation": "Two clauses: 'must leave now' (obligation) + 'will miss' (consequence)."
+    "words": [
+      "We",
+      "must",
+      "leave",
+      "now",
+      "or",
+      "we",
+      "will",
+      "miss",
+      "the",
+      "train"
+    ],
+    "explanation": "Dos cláusulas: 'must leave now' (obligación) + 'will miss' (consecuencia)."
   },
   {
     "id": "reord-b1-fm-019",
     "sentence": "She could have been a professional dancer",
-    "words": ["She", "could", "have", "been", "a", "professional", "dancer"],
+    "words": [
+      "She",
+      "could",
+      "have",
+      "been",
+      "a",
+      "professional",
+      "dancer"
+    ],
     "hint": "Could have + past participle for unrealized past ability",
-    "explanation": "'Could have been' for something possible in the past that didn't happen."
+    "explanation": "'Could have been' para algo posible en el pasado que no ocurrió."
   },
   {
     "id": "reord-b1-fm-020",
     "sentence": "They are not going to accept the offer",
-    "words": ["They", "are", "not", "going", "to", "accept", "the", "offer"],
-    "explanation": "Negative going to: 'are not going to accept'."
+    "words": [
+      "They",
+      "are",
+      "not",
+      "going",
+      "to",
+      "accept",
+      "the",
+      "offer"
+    ],
+    "explanation": "Going to en negativo: 'are not going to accept'."
   },
   {
     "id": "reord-b1-fm-021",
     "sentence": "You may use the computer after lunch",
-    "words": ["You", "may", "use", "the", "computer", "after", "lunch"],
-    "explanation": "'May' + base form for permission: 'may use'."
+    "words": [
+      "You",
+      "may",
+      "use",
+      "the",
+      "computer",
+      "after",
+      "lunch"
+    ],
+    "explanation": "'May' + forma base para permiso: 'may use'."
   },
   {
     "id": "reord-b1-fm-022",
     "sentence": "I will be working at the office all day tomorrow",
-    "words": ["I", "will", "be", "working", "at", "the", "office", "all", "day", "tomorrow"],
+    "words": [
+      "I",
+      "will",
+      "be",
+      "working",
+      "at",
+      "the",
+      "office",
+      "all",
+      "day",
+      "tomorrow"
+    ],
     "hint": "Future continuous: will + be + verb-ing",
-    "explanation": "Future continuous for ongoing future actions: 'will be working'."
+    "explanation": "Futuro continuo para acciones futuras en desarrollo: 'will be working'."
   },
   {
     "id": "reord-b1-fm-023",
     "sentence": "He should not have spent all his money",
-    "words": ["He", "should", "not", "have", "spent", "all", "his", "money"],
-    "explanation": "'Should not have + past participle' for past regret about something that happened."
+    "words": [
+      "He",
+      "should",
+      "not",
+      "have",
+      "spent",
+      "all",
+      "his",
+      "money"
+    ],
+    "explanation": "'Should not have + participio pasado' para arrepentimiento sobre algo que sí ocurrió."
   },
   {
     "id": "reord-b1-fm-024",
     "sentence": "We might go to the mountains this weekend",
-    "words": ["We", "might", "go", "to", "the", "mountains", "this", "weekend"],
-    "explanation": "'Might' for uncertain plans: 'might go'."
+    "words": [
+      "We",
+      "might",
+      "go",
+      "to",
+      "the",
+      "mountains",
+      "this",
+      "weekend"
+    ],
+    "explanation": "'Might' para planes inciertos: 'might go'."
   },
   {
     "id": "reord-b1-fm-025",
     "sentence": "You will need to bring your passport to the airport",
-    "words": ["You", "will", "need", "to", "bring", "your", "passport", "to", "the", "airport"],
-    "explanation": "'Will need to' for future necessity."
+    "words": [
+      "You",
+      "will",
+      "need",
+      "to",
+      "bring",
+      "your",
+      "passport",
+      "to",
+      "the",
+      "airport"
+    ],
+    "explanation": "'Will need to' para necesidad futura."
   }
 ]

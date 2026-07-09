@@ -2,35 +2,35 @@
   {
     "question": "Which formal structure is correct? 'The findings, _____ were published last year, have been widely cited.'",
     "options": [
-      "that",
       "which",
+      "that",
       "whom",
       "what"
     ],
     "correct": "which",
-    "explanation": "Non-defining relative clauses use <which> (with commas), not <that>."
+    "explanation": "Las cláusulas relativas no especificativas (explicativas) usan <which> (con comas), no <that>."
   },
   {
     "question": "Choose the correct academic hedging: 'The data _____ that there is a correlation between the two variables.'",
     "options": [
-      "suggests",
       "confirms absolutely",
+      "suggests",
       "proves",
       "shows definitely"
     ],
     "correct": "suggests",
-    "explanation": "Academic writing uses hedging language like <suggests> rather than absolute claims."
+    "explanation": "La escritura académica usa lenguaje atenuado (hedging) como <suggests> en lugar de afirmaciones absolutas."
   },
   {
     "question": "Which discourse marker best fits? '_____, the study has several limitations that must be acknowledged.'",
     "options": [
-      "Nevertheless",
       "Moreover",
       "In addition",
+      "Nevertheless",
       "Furthermore"
     ],
     "correct": "Nevertheless",
-    "explanation": "<Nevertheless> introduces a contrasting point, acknowledging limitations despite findings."
+    "explanation": "<Nevertheless> introduce un punto de contraste, reconociendo limitaciones a pesar de los hallazgos."
   },
   {
     "question": "Choose the correct formal structure: 'Under no circumstances _____ this information be disclosed.'",
@@ -41,84 +41,84 @@
       "should"
     ],
     "correct": "should",
-    "explanation": "Formal prohibition with inversion: <Under no circumstances should> + subject + verb."
+    "explanation": "Prohibición formal con inversión: <Under no circumstances should> + sujeto + verbo."
   },
   {
     "question": "Which sentence demonstrates correct academic register?",
     "options": [
+      "The results are remarkably promising",
       "The results are awesome",
       "The results are really good",
-      "The results are super impressive",
-      "The results are remarkably promising"
+      "The results are super impressive"
     ],
     "correct": "The results are remarkably promising",
-    "explanation": "Academic register uses precise, formal language: <remarkably promising> over colloquial terms."
+    "explanation": "El registro académico usa lenguaje preciso y formal: <remarkably promising> en vez de términos coloquiales."
   },
   {
     "question": "Choose the correct literary analysis term: 'The author employs _____ to create a sense of unease throughout the narrative.'",
     "options": [
-      "foreshadowing",
       "foretelling",
+      "foreshadowing",
       "forwarding",
       "forecasting"
     ],
     "correct": "foreshadowing",
-    "explanation": "<Foreshadowing> is a literary device that hints at events to come in a narrative."
+    "explanation": "<Foreshadowing> es un recurso literario que insinúa eventos que ocurrirán más adelante en una narración."
   },
   {
     "question": "Which sentence uses the correct discourse marker for concession?",
     "options": [
       "Since the method has flaws, it remains the most reliable",
       "Because the method has flaws, it remains the most reliable",
-      "Due to the method has flaws, it remains the most reliable",
-      "Granted that the method has flaws, it remains the most reliable"
+      "Granted that the method has flaws, it remains the most reliable",
+      "Due to the method has flaws, it remains the most reliable"
     ],
     "correct": "Granted that the method has flaws, it remains the most reliable",
-    "explanation": "<Granted that> is a formal concessive marker acknowledging a point before countering."
+    "explanation": "<Granted that> es un marcador concesivo formal que reconoce un punto antes de refutarlo."
   },
   {
     "question": "Which is the most nuanced vocabulary choice? 'The politician's speech was deliberately _____.'",
     "options": [
       "unclear",
       "confusing",
-      "ambiguous",
-      "vague"
+      "vague",
+      "ambiguous"
     ],
     "correct": "ambiguous",
-    "explanation": "<Ambiguous> implies deliberate double meaning, more precise than simply <unclear> or <vague>."
+    "explanation": "<Ambiguous> implica un doble sentido deliberado, más preciso que simplemente <unclear> o <vague>."
   },
   {
     "question": "What does 'paradigm shift' mean in critical analysis?",
     "options": [
-      "a temporary trend",
       "a fundamental change in approach or underlying assumptions",
+      "a temporary trend",
       "a return to tradition",
       "a minor change"
     ],
     "correct": "a fundamental change in approach or underlying assumptions",
-    "explanation": "A <paradigm shift> is a fundamental change in the basic concepts and practices of a discipline."
+    "explanation": "Un <paradigm shift> es un cambio fundamental en los conceptos y prácticas básicas de una disciplina."
   },
   {
     "question": "Which word best completes: 'The researcher's argument is _____, lacking sufficient evidence.'",
     "options": [
       "strong",
+      "tenuous",
       "obvious",
-      "simple",
-      "tenuous"
+      "simple"
     ],
     "correct": "tenuous",
-    "explanation": "<Tenuous> means weak or slight, used in academic critique of poorly supported arguments."
+    "explanation": "<Tenuous> significa débil o escaso, se usa en crítica académica para argumentos poco sustentados."
   },
   {
     "question": "What does 'juxtaposition' mean in literary analysis?",
     "options": [
       "a type of metaphor",
-      "placing contrasting elements side by side for effect",
       "a form of repetition",
+      "placing contrasting elements side by side for effect",
       "a narrative technique"
     ],
     "correct": "placing contrasting elements side by side for effect",
-    "explanation": "<Juxtaposition> is placing two contrasting things close together to highlight differences."
+    "explanation": "<Juxtaposition> es colocar dos elementos contrastantes uno junto al otro para resaltar sus diferencias."
   },
   {
     "question": "What is the meaning of <ubiquitous>?",
@@ -129,18 +129,18 @@
       "present everywhere"
     ],
     "correct": "present everywhere",
-    "explanation": "<Ubiquitous> means found everywhere, omnipresent."
+    "explanation": "<Ubiquitous> significa que se encuentra en todas partes, omnipresente."
   },
   {
     "question": "Which option describes <perfunctory>?",
     "options": [
+      "carried out with minimal effort",
       "thorough and detailed",
       "functional and practical",
-      "carried out with minimal effort",
       "perfect in every way"
     ],
     "correct": "carried out with minimal effort",
-    "explanation": "<Perfunctory> means done routinely and with little interest or care."
+    "explanation": "<Perfunctory> significa hecho de forma rutinaria y con poco interés o cuidado."
   },
   {
     "question": "Pick the best definition for <equivocate>:",
@@ -151,7 +151,7 @@
       "to translate accurately"
     ],
     "correct": "to use ambiguous language to conceal the truth",
-    "explanation": "<Equivocate> means to use deliberately vague or ambiguous language."
+    "explanation": "<Equivocate> significa usar un lenguaje deliberadamente vago o ambiguo."
   },
   {
     "question": "What does the phrasal verb 'stumble upon' mean?",
@@ -162,73 +162,73 @@
       "to trip and fall"
     ],
     "correct": "to discover something by chance",
-    "explanation": "<Stumble upon> means to find or discover something unexpectedly."
+    "explanation": "<Stumble upon> significa encontrar o descubrir algo de forma inesperada."
   },
   {
     "question": "How would you define <smooth over>?",
     "options": [
       "to move gracefully",
-      "to make a problem seem less serious",
       "to polish a surface",
-      "to iron clothes"
+      "to iron clothes",
+      "to make a problem seem less serious"
     ],
     "correct": "to make a problem seem less serious",
-    "explanation": "<Smooth over> means to minimize or reduce the severity of a disagreement or problem."
+    "explanation": "<Smooth over> significa minimizar o reducir la gravedad de un desacuerdo o problema."
   },
   {
     "question": "<thrash out> is closest in meaning to:",
     "options": [
+      "to discuss thoroughly until reaching agreement",
       "to beat violently",
       "to exercise vigorously",
-      "to throw away",
-      "to discuss thoroughly until reaching agreement"
+      "to throw away"
     ],
     "correct": "to discuss thoroughly until reaching agreement",
-    "explanation": "<Thrash out> means to discuss something exhaustively until a resolution is reached."
+    "explanation": "<Thrash out> significa discutir algo exhaustivamente hasta llegar a una resolución."
   },
   {
     "question": "Select what <hone in on> means:",
     "options": [
-      "to focus closely on something specific",
       "to return home",
+      "to focus closely on something specific",
       "to sharpen a blade",
       "to call someone"
     ],
     "correct": "to focus closely on something specific",
-    "explanation": "<Hone in on> means to direct attention or focus precisely on something."
+    "explanation": "<Hone in on> significa dirigir la atención o enfocarse con precisión en algo."
   },
   {
     "question": "The term <prevail upon> refers to:",
     "options": [
-      "to persuade someone to do something",
       "to succeed eventually",
       "to win a competition",
+      "to persuade someone to do something",
       "to dominate others"
     ],
     "correct": "to persuade someone to do something",
-    "explanation": "<Prevail upon> means to persuade or convince someone, often with difficulty."
+    "explanation": "<Prevail upon> significa persuadir o convencer a alguien, a menudo con dificultad."
   },
   {
     "question": "Which definition best matches <gloss over>?",
     "options": [
       "to apply a shiny coating",
       "to translate text",
-      "to treat something as less important than it is",
-      "to explain in detail"
+      "to explain in detail",
+      "to treat something as less important than it is"
     ],
     "correct": "to treat something as less important than it is",
-    "explanation": "<Gloss over> means to deal with something superficially, avoiding the real issues."
+    "explanation": "<Gloss over> significa tratar algo de forma superficial, evitando los problemas reales."
   },
   {
     "question": "What does the idiom 'a Pyrrhic victory' mean?",
     "options": [
-      "a great triumph",
       "a victory that comes at too great a cost",
+      "a great triumph",
       "an unexpected win",
       "a military strategy"
     ],
     "correct": "a victory that comes at too great a cost",
-    "explanation": "A <Pyrrhic victory> is a win that inflicts such devastating losses that it is tantamount to defeat."
+    "explanation": "Una <Pyrrhic victory> es una victoria que provoca pérdidas tan devastadoras que equivale a una derrota."
   },
   {
     "question": "What does 'Pandora's box' refer to?",
@@ -239,106 +239,106 @@
       "a gift box"
     ],
     "correct": "a source of many unforeseen troubles",
-    "explanation": "<Pandora's box> refers to an action that creates many complicated, unforeseen problems."
+    "explanation": "<Pandora's box> se refiere a una acción que genera muchos problemas complicados e imprevistos."
   },
   {
     "question": "Choose the correct meaning of <Achilles heel>:",
     "options": [
-      "a person's fatal weakness or vulnerable point",
       "a foot injury",
       "great strength",
+      "a person's fatal weakness or vulnerable point",
       "a type of shoe"
     ],
     "correct": "a person's fatal weakness or vulnerable point",
-    "explanation": "An <Achilles heel> is a weakness or vulnerable point despite overall strength."
+    "explanation": "Un <Achilles heel> es una debilidad o punto vulnerable a pesar de una fortaleza general."
   },
   {
     "question": "<a double-edged sword> — select the right definition:",
     "options": [
       "a medieval weapon",
-      "something with both advantages and disadvantages",
       "a difficult choice",
-      "a sharp criticism"
+      "a sharp criticism",
+      "something with both advantages and disadvantages"
     ],
     "correct": "something with both advantages and disadvantages",
-    "explanation": "A <double-edged sword> is something that has both positive and negative consequences."
+    "explanation": "Una <double-edged sword> es algo que tiene consecuencias tanto positivas como negativas."
   },
   {
     "question": "What is the meaning of <the Midas touch>?",
     "options": [
-      "a healing power",
       "the ability to make money from anything",
+      "a healing power",
       "a curse",
       "a golden color"
     ],
     "correct": "the ability to make money from anything",
-    "explanation": "<The Midas touch> means the ability to turn everything into a financial success."
+    "explanation": "<The Midas touch> significa la habilidad de convertir todo en un éxito financiero."
   },
   {
     "question": "Transform using nominalization: 'The government decided to implement the policy.'",
     "options": [
       "The policy was implemented by decision",
+      "The government's implementation of the policy",
       "The deciding of the government to implement",
-      "The government's decision to implement the policy",
-      "The government's implementation of the policy"
+      "The government's decision to implement the policy"
     ],
     "correct": "The government's implementation of the policy",
-    "explanation": "Nominalization converts verbs to nouns: <implement> → <implementation>."
+    "explanation": "La nominalización convierte verbos en sustantivos: <implement> → <implementation>."
   },
   {
     "question": "Transform using academic hedging: 'This proves the theory is correct.'",
     "options": [
       "This kind of proves the theory",
-      "This would appear to lend support to the theory",
       "This might prove the theory",
+      "This would appear to lend support to the theory",
       "This basically shows the theory is right"
     ],
     "correct": "This would appear to lend support to the theory",
-    "explanation": "Academic hedging: <would appear to lend support to> avoids absolute claims."
+    "explanation": "Atenuación académica (hedging): <would appear to lend support to> evita afirmaciones absolutas."
   },
   {
     "question": "Transform using nominalization: 'Researchers discovered that the drug was effective.'",
     "options": [
       "The drug was discovered effective by researchers",
       "Researchers made a discovery of effectiveness",
-      "The discovery of the drug's effectiveness by researchers",
-      "Researchers' discovering that the drug was effective"
+      "Researchers' discovering that the drug was effective",
+      "The discovery of the drug's effectiveness by researchers"
     ],
     "correct": "The discovery of the drug's effectiveness by researchers",
-    "explanation": "Nominalization: <discovered> → <discovery>, <effective> → <effectiveness>."
+    "explanation": "Nominalización: <discovered> → <discovery>, <effective> → <effectiveness>."
   },
   {
     "question": "Transform to formal register: 'We can't ignore this problem any longer.'",
     "options": [
-      "This problem can't be ignored no more",
       "This issue can no longer be disregarded",
+      "This problem can't be ignored no more",
       "It is not possible to ignore this problem",
       "We shouldn't ignore this problem anymore"
     ],
     "correct": "This issue can no longer be disregarded",
-    "explanation": "Formal register: <issue> for <problem>, <disregarded> for <ignored>, passive voice."
+    "explanation": "Registro formal: <issue> en vez de <problem>, <disregarded> en vez de <ignored>, voz pasiva."
   },
   {
     "question": "Transform using cleft + nominalization: 'The lack of funding caused the project to fail.'",
     "options": [
-      "It was the lack of funding that led to the project's failure",
       "The project failed because of no funding",
+      "It was the lack of funding that led to the project's failure",
       "What caused failure was not having funds",
       "Funding lack made the project fail"
     ],
     "correct": "It was the lack of funding that led to the project's failure",
-    "explanation": "Cleft sentence with nominalization: <It was... that led to the project's failure>."
+    "explanation": "Oración hendida (cleft sentence) con nominalización: <It was... that led to the project's failure>."
   },
   {
     "question": "What is the archaic/literary form of 'you'?",
     "options": [
       "ye",
       "thine",
-      "thee",
-      "thou"
+      "thou",
+      "thee"
     ],
     "correct": "thou",
-    "explanation": "<Thou> is the archaic subject pronoun for <you> in literary and biblical English."
+    "explanation": "<Thou> es el pronombre sujeto arcaico para <you> en el inglés literario y bíblico."
   },
   {
     "question": "Form an academic noun from 'proceed' using a suffix.",
@@ -349,18 +349,18 @@
       "procedure"
     ],
     "correct": "procedure",
-    "explanation": "<Proceed> → <procedure> using the suffix <-ure> for a formal method or process."
+    "explanation": "<Proceed> → <procedure> usando el sufijo <-ure> para un método o proceso formal."
   },
   {
     "question": "What is the literary adjective form of 'labyrinth'?",
     "options": [
+      "labyrinthine",
       "labyrinthful",
       "labyrinthous",
-      "labyrinthine",
       "labyrinthic"
     ],
     "correct": "labyrinthine",
-    "explanation": "<Labyrinth> → <labyrinthine> using the literary suffix <-ine> meaning maze-like."
+    "explanation": "<Labyrinth> → <labyrinthine> usando el sufijo literario <-ine> que significa laberíntico."
   },
   {
     "question": "Form an academic verb from the noun 'hypothesis'.",
@@ -371,7 +371,7 @@
       "hypothesify"
     ],
     "correct": "hypothesize",
-    "explanation": "<Hypothesis> → <hypothesize> using the suffix <-ize> to form the verb."
+    "explanation": "<Hypothesis> → <hypothesize> usando el sufijo <-ize> para formar el verbo."
   },
   {
     "question": "Find the error: 'The data supports the hypothesis that climate change are accelerating.'",
@@ -382,51 +382,51 @@
       "The data support the hypothesis that climate change are accelerating"
     ],
     "correct": "The data support the hypothesis that climate change is accelerating",
-    "explanation": "<Data> is formally plural (<data support>), and <climate change> is singular (<is accelerating>)."
+    "explanation": "<Data> es formalmente plural (<data support>), y <climate change> es singular (<is accelerating>)."
   },
   {
     "question": "Find the error: 'The phenomena is well documented in academic literature.'",
     "options": [
-      "The phenomenon is well documented in academic literature",
       "The phenomenons are well documented in academic literature",
       "The phenomena are well documented in academic literature",
-      "No error"
+      "No error",
+      "The phenomenon is well documented in academic literature"
     ],
     "correct": "The phenomenon is well documented in academic literature",
-    "explanation": "<Phenomena> is plural; the singular form is <phenomenon>: <The phenomenon is>."
+    "explanation": "<Phenomena> es plural; la forma singular es <phenomenon>: <The phenomenon is>."
   },
   {
     "question": "Find the error: 'Less participants attended the conference than expected.'",
     "options": [
-      "No error",
       "Fewer participants attended the conference than expected",
+      "No error",
       "A less number of participants attended",
       "Lesser participants attended the conference than expected"
     ],
     "correct": "Fewer participants attended the conference than expected",
-    "explanation": "Use <fewer> with countable nouns (<participants>), not <less>."
+    "explanation": "Se usa <fewer> con sustantivos contables (<participants>), no <less>."
   },
   {
     "question": "Find the error: 'The report, along with its appendices, were submitted on time.'",
     "options": [
       "No error",
+      "The report, along with its appendices, was submitted on time",
       "The report, along with its appendices, have been submitted on time",
-      "The reports, along with its appendices, were submitted on time",
-      "The report, along with its appendices, was submitted on time"
+      "The reports, along with its appendices, were submitted on time"
     ],
     "correct": "The report, along with its appendices, was submitted on time",
-    "explanation": "The subject is <the report> (singular); <along with> doesn't change subject-verb agreement: <was submitted>."
+    "explanation": "El sujeto es <the report> (singular); <along with> no cambia la concordancia sujeto-verbo: <was submitted>."
   },
   {
     "question": "What does 'carte blanche' mean in formal English?",
     "options": [
-      "complete freedom to act as one wishes",
       "a blank document",
       "a formal invitation",
+      "complete freedom to act as one wishes",
       "a white card"
     ],
     "correct": "complete freedom to act as one wishes",
-    "explanation": "<Carte blanche> is a literary/formal expression meaning complete freedom or authority to act."
+    "explanation": "<Carte blanche> es una expresión literaria/formal que significa libertad o autoridad total para actuar."
   },
   {
     "question": "What does the idiom 'a Sisyphean task' mean?",
@@ -437,6 +437,6 @@
       "a task that is endlessly laborious and futile"
     ],
     "correct": "a task that is endlessly laborious and futile",
-    "explanation": "A <Sisyphean task> refers to an endless, futile effort, from the myth of Sisyphus."
+    "explanation": "Una <Sisyphean task> se refiere a un esfuerzo interminable e inútil, proveniente del mito de Sísifo."
   }
 ]

@@ -4,181 +4,181 @@
     "rootWord": "LEGAL",
     "correct": "illegal",
     "hint": "Think about the negative prefix for words starting with L",
-    "explanation": "LEGAL → illegal (prefix il-: not legal)"
+    "explanation": "LEGAL → illegal (prefijo il-: que no es legal)"
   },
   {
     "sentence": "The instructions were _____. Nobody could understand them.",
     "rootWord": "CLEAR",
     "correct": "unclear",
     "hint": "Think about the negative prefix meaning 'not'",
-    "explanation": "CLEAR → unclear (prefix un-: not clear)"
+    "explanation": "CLEAR → unclear (prefijo un-: que no es claro)"
   },
   {
     "sentence": "She was _____ to finish the project on time.",
     "rootWord": "ABLE",
     "correct": "unable",
     "hint": "The opposite of able",
-    "explanation": "ABLE → unable (prefix un-: not able)"
+    "explanation": "ABLE → unable (prefijo un-: que no es capaz)"
   },
   {
     "sentence": "I need to _____ my essay before submitting it.",
     "rootWord": "WRITE",
     "correct": "rewrite",
     "hint": "Think about doing something again",
-    "explanation": "WRITE → rewrite (prefix re-: to write again)"
+    "explanation": "WRITE → rewrite (prefijo re-: volver a escribir)"
   },
   {
     "sentence": "The company decided to _____ the old building.",
     "rootWord": "BUILD",
     "correct": "rebuild",
     "hint": "To build something again",
-    "explanation": "BUILD → rebuild (prefix re-: to build again)"
+    "explanation": "BUILD → rebuild (prefijo re-: volver a construir)"
   },
   {
     "sentence": "I _____ with your opinion on this matter.",
     "rootWord": "AGREE",
     "correct": "disagree",
     "hint": "The opposite of agree",
-    "explanation": "AGREE → disagree (prefix dis-: the opposite of agreeing)"
+    "explanation": "AGREE → disagree (prefijo dis-: lo opuesto de estar de acuerdo)"
   },
   {
     "sentence": "The old bridge has _____. We need a new one.",
     "rootWord": "APPEAR",
     "correct": "disappeared",
     "hint": "The opposite of appear, in past tense",
-    "explanation": "APPEAR → disappeared (prefix dis-: to stop appearing, + past tense -ed)"
+    "explanation": "APPEAR → disappeared (prefijo dis-: dejar de aparecer, + pasado -ed)"
   },
   {
     "sentence": "This chair is very _____. You can sit in it for hours.",
     "rootWord": "COMFORT",
     "correct": "comfortable",
     "hint": "Having comfort",
-    "explanation": "COMFORT → comfortable (suffix -able: having the quality of comfort)"
+    "explanation": "COMFORT → comfortable (sufijo -able: que tiene la cualidad de ser cómodo)"
   },
   {
     "sentence": "The food at that restaurant is always _____.",
     "rootWord": "ENJOY",
     "correct": "enjoyable",
     "hint": "Something that can be enjoyed",
-    "explanation": "ENJOY → enjoyable (suffix -able: capable of being enjoyed)"
+    "explanation": "ENJOY → enjoyable (sufijo -able: que se puede disfrutar)"
   },
   {
     "sentence": "Is this water _____? I am very thirsty.",
     "rootWord": "DRINK",
     "correct": "drinkable",
     "hint": "Safe to drink",
-    "explanation": "DRINK → drinkable (suffix -able: capable of being drunk)"
+    "explanation": "DRINK → drinkable (sufijo -able: que se puede beber)"
   },
   {
     "sentence": "The _____ of the city has grown a lot in recent years.",
     "rootWord": "POPULAR",
     "correct": "popularity",
     "hint": "The noun form of popular",
-    "explanation": "POPULAR → popularity (suffix -ity: the state of being popular)"
+    "explanation": "POPULAR → popularity (sufijo -ity: el estado de ser popular)"
   },
   {
     "sentence": "We need to use _____ when we drive.",
     "rootWord": "ELECTRIC",
     "correct": "electricity",
     "hint": "The noun form of electric",
-    "explanation": "ELECTRIC → electricity (suffix -ity: the quality or state)"
+    "explanation": "ELECTRIC → electricity (sufijo -ity: la cualidad o el estado)"
   },
   {
     "sentence": "The _____ of the situation made everyone nervous.",
     "rootWord": "SERIOUS",
     "correct": "seriousness",
     "hint": "The noun form of serious",
-    "explanation": "SERIOUS → seriousness (suffix -ness: the quality of being serious)"
+    "explanation": "SERIOUS → seriousness (sufijo -ness: la cualidad de ser serio)"
   },
   {
     "sentence": "His behaviour was completely _____. I could not believe it.",
     "rootWord": "ACCEPT",
     "correct": "unacceptable",
     "hint": "Not acceptable — combine a prefix and a suffix",
-    "explanation": "ACCEPT → unacceptable (prefix un- + suffix -able: not capable of being accepted)"
+    "explanation": "ACCEPT → unacceptable (prefijo un- + sufijo -able: que no se puede aceptar)"
   },
   {
     "sentence": "The damage to the car was _____. It could not be fixed.",
     "rootWord": "REPAIR",
     "correct": "irreparable",
     "hint": "Not able to be repaired",
-    "explanation": "REPAIR → irreparable (prefix ir- + suffix -able: not capable of being repaired)"
+    "explanation": "REPAIR → irreparable (prefijo ir- + sufijo -able: que no se puede reparar)"
   },
   {
     "sentence": "She showed great _____ during the competition.",
     "rootWord": "CREATIVE",
     "correct": "creativity",
     "hint": "The noun form of creative",
-    "explanation": "CREATIVE → creativity (suffix -ity: the quality of being creative)"
+    "explanation": "CREATIVE → creativity (sufijo -ity: la cualidad de ser creativo)"
   },
   {
     "sentence": "The weather is very _____ this week. It changes every hour.",
     "rootWord": "PREDICT",
     "correct": "unpredictable",
     "hint": "Not able to be predicted",
-    "explanation": "PREDICT → unpredictable (prefix un- + suffix -able: not capable of being predicted)"
+    "explanation": "PREDICT → unpredictable (prefijo un- + sufijo -able: que no se puede predecir)"
   },
   {
     "sentence": "They plan to _____ the kitchen next summer.",
     "rootWord": "DECORATE",
     "correct": "redecorate",
     "hint": "To decorate again",
-    "explanation": "DECORATE → redecorate (prefix re-: to decorate again)"
+    "explanation": "DECORATE → redecorate (prefijo re-: volver a decorar)"
   },
   {
     "sentence": "The _____ of the new product was a great success.",
     "rootWord": "AVAILABLE",
     "correct": "availability",
     "hint": "The noun form of available",
-    "explanation": "AVAILABLE → availability (suffix -ity: the state of being available)"
+    "explanation": "AVAILABLE → availability (sufijo -ity: el estado de estar disponible)"
   },
   {
     "sentence": "He felt a sense of _____ after losing the match.",
     "rootWord": "DISAPPOINT",
     "correct": "disappointment",
     "hint": "The noun form of disappoint",
-    "explanation": "DISAPPOINT → disappointment (suffix -ment: the state of being disappointed)"
+    "explanation": "DISAPPOINT → disappointment (sufijo -ment: el estado de estar decepcionado)"
   },
   {
     "sentence": "The old sofa was very _____. We had to replace it.",
     "rootWord": "COMFORT",
     "correct": "uncomfortable",
     "hint": "Not comfortable",
-    "explanation": "COMFORT → uncomfortable (prefix un- + suffix -able: not having comfort)"
+    "explanation": "COMFORT → uncomfortable (prefijo un- + sufijo -able: que no tiene comodidad)"
   },
   {
     "sentence": "She made a _____ recovery after her illness.",
     "rootWord": "REMARK",
     "correct": "remarkable",
     "hint": "Worth remarking on",
-    "explanation": "REMARK → remarkable (suffix -able: worthy of being remarked upon)"
+    "explanation": "REMARK → remarkable (sufijo -able: digno de ser destacado)"
   },
   {
     "sentence": "The _____ of the team depends on good communication.",
     "rootWord": "ABLE",
     "correct": "ability",
     "hint": "The noun form of able",
-    "explanation": "ABLE → ability (suffix -ity: the quality of being able)"
+    "explanation": "ABLE → ability (sufijo -ity: la cualidad de ser capaz)"
   },
   {
     "sentence": "I was _____ with the service at the restaurant.",
     "rootWord": "SATISFY",
     "correct": "dissatisfied",
     "hint": "Not satisfied",
-    "explanation": "SATISFY → dissatisfied (prefix dis- + suffix -ed: not satisfied)"
+    "explanation": "SATISFY → dissatisfied (prefijo dis- + sufijo -ed: que no está satisfecho)"
   },
   {
     "sentence": "The _____ of the old factory created many new jobs.",
     "rootWord": "DISCOVER",
     "correct": "discovery",
     "hint": "The noun form of discover",
-    "explanation": "DISCOVER → discovery (suffix -y: the act of discovering)"
+    "explanation": "DISCOVER → discovery (sufijo -y: el acto de descubrir)"
   },
   {
     "sentence": "We need to _____ the importance of education.",
     "rootWord": "COVER",
     "correct": "discover",
     "hint": "To find something for the first time",
-    "explanation": "COVER → discover (prefix dis-: to uncover or find)"
+    "explanation": "COVER → discover (prefijo dis-: descubrir o encontrar)"
   }
 ]

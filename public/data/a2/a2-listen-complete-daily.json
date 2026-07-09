@@ -2,91 +2,91 @@
   {
     "sentence": "I usually ______ up at seven in the morning.",
     "correct": "wake",
-    "explanation": "Phrasal verb: 'wake up' means to stop sleeping.",
+    "explanation": "Phrasal verb: 'wake up' significa dejar de dormir.",
     "tip": "What do you do when the alarm rings?"
   },
   {
     "sentence": "She ______ to work by bus every day.",
     "correct": "goes",
-    "explanation": "Third person singular: she goes.",
+    "explanation": "Tercera persona singular: she goes.",
     "tip": "Transportation verb (3rd person)"
   },
   {
     "sentence": "We ______ dinner at eight o'clock.",
     "correct": "have",
-    "explanation": "'Have dinner' = eat the evening meal.",
+    "explanation": "'Have dinner' = comer la cena.",
     "tip": "Verb used with meals"
   },
   {
     "sentence": "He ______ English very well.",
     "correct": "speaks",
-    "explanation": "'Speak' + language (3rd person → speaks).",
+    "explanation": "'Speak' + idioma (tercera persona → speaks).",
     "tip": "A language skill (3rd person)"
   },
   {
     "sentence": "They ______ in a big house near the park.",
     "correct": "live",
-    "explanation": "'Live' = reside/inhabit.",
+    "explanation": "'Live' = residir/habitar.",
     "tip": "Where do they reside?"
   },
   {
     "sentence": "I ______ like vegetables very much.",
     "correct": "don't",
-    "explanation": "Negative with 'don't' for I/you/we/they.",
+    "explanation": "Negación con 'don't' para I/you/we/they.",
     "tip": "Negative auxiliary"
   },
   {
     "sentence": "She ______ been waiting for an hour.",
     "correct": "has",
-    "explanation": "Present perfect continuous: has been + -ing.",
+    "explanation": "Presente perfecto continuo: has been + -ing.",
     "tip": "Present perfect auxiliary (3rd person)"
   },
   {
     "sentence": "Could you ______ me the time, please?",
     "correct": "tell",
-    "explanation": "'Tell me the time' = ask what time it is.",
+    "explanation": "'Tell me the time' = preguntar qué hora es.",
     "tip": "Verb for giving information"
   },
   {
     "sentence": "We ______ to the cinema last night.",
     "correct": "went",
-    "explanation": "Past simple of 'go' → went.",
+    "explanation": "Pasado simple de 'go' → went.",
     "tip": "Past of 'go'"
   },
   {
     "sentence": "I'm ______ to visit my friends tomorrow.",
     "correct": "going",
-    "explanation": "'Going to' + verb = future plans.",
+    "explanation": "'Going to' + verbo = planes futuros.",
     "tip": "Future intention structure"
   },
   {
     "sentence": "There ______ some milk in the fridge.",
     "correct": "is",
-    "explanation": "'There is' for uncountable nouns (milk).",
+    "explanation": "'There is' se usa con sustantivos incontables (milk).",
     "tip": "Existential 'there' + singular/uncountable"
   },
   {
     "sentence": "He ______ football on Saturdays.",
     "correct": "plays",
-    "explanation": "Third person singular: he plays.",
+    "explanation": "Tercera persona singular: he plays.",
     "tip": "Sport activity (3rd person)"
   },
   {
     "sentence": "I haven't ______ that film yet.",
     "correct": "seen",
-    "explanation": "Present perfect: haven't + past participle (see → seen).",
+    "explanation": "Presente perfecto: haven't + participio pasado (see → seen).",
     "tip": "Past participle of 'see'"
   },
   {
     "sentence": "She ______ working here for five years.",
     "correct": "has been",
-    "explanation": "Present perfect continuous: has been + -ing.",
+    "explanation": "Presente perfecto continuo: has been + -ing.",
     "tip": "Duration expression (she + present perfect)"
   },
   {
     "sentence": "Would you ______ a cup of coffee?",
     "correct": "like",
-    "explanation": "'Would you like...?' = polite offer.",
+    "explanation": "'Would you like...?' = ofrecimiento cortés.",
     "tip": "Polite offer verb"
   }
 ]

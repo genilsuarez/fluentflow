@@ -2,57 +2,57 @@
   {
     "question": "What does <break the ice> mean?",
     "options": [
-      "to make ice cubes",
       "to start a conversation",
+      "to make ice cubes",
       "to cool down",
       "to break something"
     ],
     "correct": "to start a conversation",
-    "explanation": "This idiom means to initiate conversation in a social situation."
+    "explanation": "Este modismo significa iniciar una conversación en una situación social."
   },
   {
     "question": "If someone <spills the beans>, they:",
     "options": [
       "cook badly",
+      "reveal a secret",
       "make a mess",
-      "plant vegetables",
-      "reveal a secret"
+      "plant vegetables"
     ],
     "correct": "reveal a secret",
-    "explanation": "This idiom means to accidentally or intentionally reveal secret information."
+    "explanation": "Este modismo significa revelar información secreta, ya sea accidental o intencionalmente."
   },
   {
     "question": "What does <hit the hay> mean?",
     "options": [
-      "go to sleep",
       "exercise",
       "work on a farm",
+      "go to sleep",
       "get angry"
     ],
     "correct": "go to sleep",
-    "explanation": "This idiom means to go to bed or <go to sleep>."
+    "explanation": "Este modismo significa irse a la cama o <go to sleep>."
   },
   {
-    "question": "If you <bite the bullet>, you:",
+    "question": "What does <get back on track> mean?",
     "options": [
-      "be aggressive",
-      "shoot a gun",
-      "face a difficult situation",
-      "eat metal"
+      "to return to the right path or plan",
+      "to buy a train ticket",
+      "to repair a vehicle",
+      "to start running"
     ],
-    "correct": "face a difficult situation",
-    "explanation": "This idiom means to courageously face a difficult or unpleasant situation."
+    "correct": "to return to the right path or plan",
+    "explanation": "Este modismo significa retomar el progreso después de una demora o distracción."
   },
   {
     "question": "What does <piece of cake> mean?",
     "options": [
-      "birthday party",
       "very easy",
+      "birthday party",
       "dessert",
       "sweet food"
     ],
     "correct": "very easy",
-    "explanation": "This idiom means something that is <very easy> to do."
+    "explanation": "Este modismo describe algo que es <very easy> de hacer."
   },
   {
     "question": "If someone <lets the cat out of the bag>, they:",
@@ -63,29 +63,29 @@
       "free an animal"
     ],
     "correct": "reveal a secret",
-    "explanation": "This idiom means to accidentally <reveal a secret> or surprise."
+    "explanation": "Este modismo significa revelar accidentalmente <reveal a secret> o dar una sorpresa."
   },
   {
     "question": "What does <cost an arm and a leg> mean?",
     "options": [
-      "be very expensive",
       "be dangerous",
       "be painful",
+      "be very expensive",
       "require surgery"
     ],
     "correct": "be very expensive",
-    "explanation": "This idiom means something is extremely expensive."
+    "explanation": "Este modismo significa que algo es extremadamente caro."
   },
   {
-    "question": "If you <kill two birds with one stone>, you:",
+    "question": "If you <get the wrong end of the stick>, you:",
     "options": [
-      "accomplish two things at once",
-      "be violent",
-      "hunt animals",
-      "throw rocks"
+      "misunderstand a situation completely",
+      "hold something incorrectly",
+      "win an argument",
+      "break a rule"
     ],
-    "correct": "accomplish two things at once",
-    "explanation": "This idiom means to achieve two goals with a single action."
+    "correct": "misunderstand a situation completely",
+    "explanation": "Este modismo significa malinterpretar algo."
   },
   {
     "question": "What does <it's raining cats and dogs> mean?",
@@ -96,128 +96,128 @@
       "pets are outside"
     ],
     "correct": "it's raining very heavily",
-    "explanation": "This idiom means it's raining very hard."
+    "explanation": "Este modismo significa que está lloviendo muy fuerte."
   },
   {
     "question": "If someone <burns the midnight oil>, they:",
     "options": [
       "cook dinner",
-      "waste fuel",
       "work late into the night",
+      "waste fuel",
       "light candles"
     ],
     "correct": "work late into the night",
-    "explanation": "This idiom means to work or study late into the night."
+    "explanation": "Este modismo significa trabajar o estudiar hasta muy tarde en la noche."
   },
   {
     "question": "What does <don>t cry over spilled milk' mean?",
     "options": [
-      "don't worry about past mistakes",
       "clean up messes",
       "don't waste food",
+      "don't worry about past mistakes",
       "drink more water"
     ],
     "correct": "don't worry about past mistakes",
-    "explanation": "This idiom means <don>'t be upset about something that has already happened and cannot be changed."
+    "explanation": "Este modismo significa <don>'t enfadarte por algo que ya pasó y no se puede cambiar."
   },
   {
-    "question": "If you <jump on the bandwagon>, you:",
+    "question": "What does <put your foot in it> mean?",
     "options": [
-      "join a popular trend",
-      "play music",
-      "exercise",
-      "travel by wagon"
+      "to say something embarrassing by mistake",
+      "to step carefully",
+      "to make a strong decision",
+      "to join a team"
     ],
-    "correct": "join a popular trend",
-    "explanation": "This idiom means to join others in doing something that has become popular."
+    "correct": "to say something embarrassing by mistake",
+    "explanation": "Este modismo significa decir algo indiscreto o vergonzoso sin querer."
   },
   {
-    "question": "What does <the ball is in your court> mean?",
+    "question": "What does <keep your fingers crossed> mean?",
     "options": [
-      "you own a ball",
-      "you're at home",
-      "play tennis",
-      "it's your turn to act"
+      "to hope for good luck",
+      "to be nervous",
+      "to lie to someone",
+      "to count something"
     ],
-    "correct": "it's your turn to act",
-    "explanation": "This idiom means it's your turn to make a decision or take action."
+    "correct": "to hope for good luck",
+    "explanation": "Este modismo significa esperar que algo suceda como uno quiere."
   },
   {
     "question": "If someone <pulls your leg>, they:",
     "options": [
       "exercise with you",
-      "help you walk",
       "joke with you",
+      "help you walk",
       "hurt you"
     ],
     "correct": "joke with you",
-    "explanation": "This idiom means to tease someone or tell them something untrue as a joke."
+    "explanation": "Este modismo significa tomarle el pelo a alguien o decirle algo falso como broma."
   },
   {
-    "question": "What does <when pigs fly> mean?",
+    "question": "If you are <on thin ice>, you:",
     "options": [
-      "in the future",
-      "never",
-      "on a farm",
-      "at the airport"
+      "are in a risky situation and could get in trouble",
+      "are very cold",
+      "are skating well",
+      "have made a good decision"
     ],
-    "correct": "never",
-    "explanation": "This idiom means something will <never> happen."
+    "correct": "are in a risky situation and could get in trouble",
+    "explanation": "Este modismo significa estar en una situación arriesgada o precaria."
   },
   {
     "question": "If you <get cold feet>, you:",
     "options": [
       "feel cold",
-      "become nervous",
       "need socks",
-      "go outside"
+      "go outside",
+      "become nervous"
     ],
     "correct": "become nervous",
-    "explanation": "This idiom means to <become nervous> or afraid about doing something."
+    "explanation": "Este modismo significa <become nervous> o tener miedo de hacer algo."
   },
   {
     "question": "What does <break a leg> mean?",
     "options": [
+      "good luck",
       "get injured",
       "run fast",
-      "good luck",
       "dance badly"
     ],
     "correct": "good luck",
-    "explanation": "This idiom is used to wish someone <good luck>, especially before a performance."
+    "explanation": "Este modismo se usa para desearle <good luck> a alguien, especialmente antes de una actuación."
   },
   {
     "question": "If something is <a blessing in disguise>, it:",
     "options": [
-      "seems bad but is actually good",
       "looks religious",
+      "seems bad but is actually good",
       "is a gift",
       "is hidden"
     ],
     "correct": "seems bad but is actually good",
-    "explanation": "This idiom means something that initially seems bad but turns out to be good."
+    "explanation": "Este modismo describe algo que al principio parece malo pero termina siendo bueno."
   },
   {
     "question": "What does <cut to the chase> mean?",
     "options": [
       "use scissors",
-      "get to the point",
       "run after someone",
+      "get to the point",
       "watch a movie"
     ],
     "correct": "get to the point",
-    "explanation": "This idiom means to skip the details and get straight to the important part."
+    "explanation": "Este modismo significa saltarse los detalles e ir directo a la parte importante."
   },
   {
-    "question": "If you <go the extra mile>, you:",
+    "question": "What does <give it a shot> mean?",
     "options": [
-      "travel far",
-      "exercise",
-      "drive a car",
-      "do more than expected"
+      "to try something",
+      "to shoot a photograph",
+      "to give up",
+      "to celebrate"
     ],
-    "correct": "do more than expected",
-    "explanation": "This idiom means to make a special effort to achieve something."
+    "correct": "to try something",
+    "explanation": "Este modismo significa intentar hacer algo."
   },
   {
     "question": "What does 'it's not rocket science' mean?",
@@ -228,62 +228,62 @@
       "it's scientific"
     ],
     "correct": "it's not complicated",
-    "explanation": "This idiom means something is not difficult to understand or do."
+    "explanation": "Este modismo significa que algo no es difícil de entender o hacer."
   },
   {
     "question": "If you <keep your chin up>, you:",
     "options": [
       "look up",
-      "be proud",
       "stay positive",
+      "be proud",
       "exercise your neck"
     ],
     "correct": "stay positive",
-    "explanation": "This idiom means to remain cheerful and optimistic during difficult times."
+    "explanation": "Este modismo significa mantenerse alegre y optimista durante momentos difíciles."
   },
   {
-    "question": "What does <once in a blue moon> mean?",
+    "question": "What does <stay under the radar> mean?",
     "options": [
-      "very rarely",
-      "at night",
-      "every month",
-      "when it's cold"
+      "to avoid being noticed",
+      "to fly an airplane",
+      "to hide underground",
+      "to work very hard"
     ],
-    "correct": "very rarely",
-    "explanation": "This idiom means something happens very infrequently."
+    "correct": "to avoid being noticed",
+    "explanation": "Este modismo significa evitar llamar la atención."
   },
   {
     "question": "If someone <steals your thunder>, they:",
     "options": [
-      "take credit for your idea",
       "take your weather",
       "make noise",
-      "be loud"
+      "be loud",
+      "take credit for your idea"
     ],
     "correct": "take credit for your idea",
-    "explanation": "This idiom means someone takes attention away from you or takes credit for your work."
+    "explanation": "Este modismo significa que alguien te quita protagonismo o se atribuye el mérito de tu trabajo."
   },
   {
-    "question": "What does <the early bird catches the worm> mean?",
+    "question": "What does <up in the air> mean?",
     "options": [
-      "hunt animals",
-      "wake up early to succeed",
-      "birds eat insects",
-      "go fishing"
+      "undecided or uncertain",
+      "very happy",
+      "flying somewhere",
+      "confused about directions"
     ],
-    "correct": "wake up early to succeed",
-    "explanation": "This idiom means people who start early or arrive first have the best chance of success."
+    "correct": "undecided or uncertain",
+    "explanation": "Este modismo significa que algo todavía no se ha decidido."
   },
   {
     "question": "If you <throw in the towel>, you:",
     "options": [
       "do laundry",
+      "give up",
       "play sports",
-      "clean up",
-      "give up"
+      "clean up"
     ],
     "correct": "give up",
-    "explanation": "This idiom means to quit or surrender."
+    "explanation": "Este modismo significa rendirse o darse por vencido."
   },
   {
     "question": "What does <under the weather> mean?",
@@ -294,106 +294,106 @@
       "cold"
     ],
     "correct": "feeling sick",
-    "explanation": "This idiom means to feel ill or unwell."
+    "explanation": "Este modismo significa sentirse enfermo o mal."
   },
   {
-    "question": "If something <rings a bell>, it:",
+    "question": "If you <call the shots>, you:",
     "options": [
-      "makes noise",
-      "is musical",
-      "sounds familiar",
-      "calls someone"
+      "are in charge and make the decisions",
+      "take photographs",
+      "play a game",
+      "give advice reluctantly"
     ],
-    "correct": "sounds familiar",
-    "explanation": "This idiom means something <sounds familiar> or reminds you of something."
+    "correct": "are in charge and make the decisions",
+    "explanation": "Este modismo significa ser la persona que toma las decisiones."
   },
   {
     "question": "What does <get your act together> mean?",
     "options": [
+      "organize yourself",
       "work with others",
       "perform on stage",
-      "act in a play",
-      "organize yourself"
+      "act in a play"
     ],
     "correct": "organize yourself",
-    "explanation": "This idiom means to <organize yourself> and start behaving responsibly."
+    "explanation": "Este modismo significa <organize yourself> y empezar a comportarse de manera responsable."
   },
   {
     "question": "If you <face the music>, you:",
     "options": [
       "be brave as recognized by most authorities",
+      "accept consequences",
       "turn around",
-      "listen to songs",
-      "accept consequences"
+      "listen to songs"
     ],
     "correct": "accept consequences",
-    "explanation": "This idiom means to accept responsibility for something you have done wrong."
+    "explanation": "Este modismo significa asumir la responsabilidad de algo que hiciste mal."
   },
   {
-    "question": "What does <hang in there> mean?",
+    "question": "What does <make ends meet> mean?",
     "options": [
-      "hold something",
-      "don't give up",
-      "wait somewhere",
-      "climb up"
+      "to earn just enough money to live on",
+      "to finish a project on time",
+      "to reach an agreement",
+      "to tie two ropes together"
     ],
-    "correct": "don't give up",
-    "explanation": "This idiom means to persevere and not give up during difficult times."
+    "correct": "to earn just enough money to live on",
+    "explanation": "Este modismo significa tener el dinero justo para cubrir los gastos básicos."
   },
   {
     "question": "If you <play it by ear>, you:",
     "options": [
-      "improvise",
       "use your ears",
       "make music",
-      "listen carefully"
+      "listen carefully",
+      "improvise"
     ],
     "correct": "improvise",
-    "explanation": "This idiom means to handle a situation without a plan, adapting as you go."
+    "explanation": "Este modismo significa manejar una situación sin un plan, adaptándose sobre la marcha."
   },
   {
-    "question": "What does <time flies> mean?",
+    "question": "What does <take it with a grain of salt> mean?",
     "options": [
-      "travel fast",
-      "insects fly",
-      "time passes quickly",
-      "clocks move"
+      "to not believe something completely",
+      "to add flavor to food",
+      "to accept something readily",
+      "to ignore someone completely"
     ],
-    "correct": "time passes quickly",
-    "explanation": "This idiom means time seems to pass very quickly."
+    "correct": "to not believe something completely",
+    "explanation": "Este modismo significa ser escéptico sobre algo que se escucha."
   },
   {
     "question": "If you <bite off more than you can chew>, you:",
     "options": [
-      "take on too much",
       "eat too much",
+      "take on too much",
       "have big teeth",
       "be hungry"
     ],
     "correct": "take on too much",
-    "explanation": "This idiom means to attempt to do more than you are capable of."
+    "explanation": "Este modismo significa intentar hacer más de lo que uno es capaz de manejar."
   },
   {
-    "question": "What does <better late than never> mean?",
+    "question": "If someone is <on a roll>, they:",
     "options": [
-      "it's good to arrive eventually",
-      "time is important",
-      "speed is key",
-      "punctuality matters"
+      "are having a lot of success in a row",
+      "are eating bread",
+      "are traveling by car",
+      "are very tired"
     ],
-    "correct": "it's good to arrive eventually",
-    "explanation": "This idiom means it's better to do something late than not do it at all."
+    "correct": "are having a lot of success in a row",
+    "explanation": "Este modismo significa estar atravesando un período de éxito continuo."
   },
   {
     "question": "If something is <a piece of work>, it:",
     "options": [
       "needs fixing",
-      "is difficult to deal with",
       "is art",
-      "is valuable"
+      "is valuable",
+      "is difficult to deal with"
     ],
     "correct": "is difficult to deal with",
-    "explanation": "This idiom describes someone who is difficult, annoying, or problematic."
+    "explanation": "Este modismo describe a alguien que es difícil, molesto o problemático."
   },
   {
     "question": "What does <call it a day> mean?",
@@ -404,95 +404,95 @@
       "plan ahead"
     ],
     "correct": "stop working",
-    "explanation": "This idiom means to <stop working> or end an activity for the day."
+    "explanation": "Este modismo significa <stop working> o terminar una actividad por el día."
   },
   {
     "question": "If you <get the hang of it>, you:",
     "options": [
       "hold something",
-      "hang up clothes",
       "learn how to do it",
+      "hang up clothes",
       "understand hanging"
     ],
     "correct": "learn how to do it",
-    "explanation": "This idiom means to learn how to do something or understand how something works."
+    "explanation": "Este modismo significa aprender a hacer algo o entender cómo funciona."
   },
   {
-    "question": "What does <in the same boat> mean?",
+    "question": "What does <come to terms with> mean?",
     "options": [
-      "in the same situation",
-      "traveling together",
-      "on water",
-      "working together"
+      "to accept a difficult situation",
+      "to sign a contract",
+      "to negotiate a price",
+      "to finish a conversation"
     ],
-    "correct": "in the same situation",
-    "explanation": "This idiom means to be in the same difficult situation as someone else."
+    "correct": "to accept a difficult situation",
+    "explanation": "Este modismo significa aceptar algo difícil después de un período de lucha."
   },
   {
     "question": "If you <keep your eyes peeled>, you:",
     "options": [
       "hurt your eyes",
-      "watch carefully",
       "close your eyes",
-      "eat fruit"
+      "eat fruit",
+      "watch carefully"
     ],
     "correct": "watch carefully",
-    "explanation": "This idiom means to <watch carefully> and be alert for something."
+    "explanation": "Este modismo significa <watch carefully> y estar alerta ante algo."
   },
   {
     "question": "What does <raining cats and dogs> mean?",
     "options": [
+      "raining heavily",
       "raining lightly",
       "raining intermittently",
-      "raining heavily",
       "raining animals"
     ],
     "correct": "raining heavily",
-    "explanation": "The idiom <raining cats and dogs> means it's raining very heavily."
+    "explanation": "El modismo <raining cats and dogs> significa que está lloviendo muy fuerte."
   },
   {
     "question": "What does <beat around the bush> mean?",
     "options": [
       "speak directly",
+      "avoid the main topic",
       "talk loudly",
-      "hit a bush",
-      "avoid the main topic"
+      "hit a bush"
     ],
     "correct": "avoid the main topic",
-    "explanation": "To <beat around the bush> means to avoid coming to the point."
+    "explanation": "<Beat around the bush> significa evitar ir directo al punto."
   },
   {
     "question": "What does <spill the beans> mean?",
     "options": [
-      "reveal a secret",
       "clean up a mess",
       "cook a meal",
+      "reveal a secret",
       "drop some food"
     ],
     "correct": "reveal a secret",
-    "explanation": "To <spill the beans> means to reveal a secret or disclose confidential information."
+    "explanation": "<Spill the beans> significa revelar un secreto o divulgar información confidencial."
   },
   {
     "question": "What does <not my cup of tea> mean?",
     "options": [
-      "not something I enjoy",
       "something I do often",
       "my favorite drink",
-      "a type of tea"
+      "a type of tea",
+      "not something I enjoy"
     ],
     "correct": "not something I enjoy",
-    "explanation": "If something is <not your cup of tea>, it is not something you like or are interested in."
+    "explanation": "Si algo <not your cup of tea>, significa que no es algo que te guste o te interese."
   },
   {
     "question": "What does <barking up the wrong tree> mean?",
     "options": [
+      "pursuing a mistaken course of action",
       "looking in the right place",
       "climbing a tree",
-      "pursuing a mistaken course of action",
       "making a loud noise"
     ],
     "correct": "pursuing a mistaken course of action",
-    "explanation": "To be <barking up the wrong tree> means to be pursuing a mistaken course of action or making a wrong assumption."
+    "explanation": "Estar <barking up the wrong tree> significa seguir un curso de acción equivocado o hacer una suposición incorrecta."
   },
   {
     "question": "What does <cry over spilled milk> mean?",
@@ -503,18 +503,18 @@
       "be upset about a minor accident"
     ],
     "correct": "regret something that cannot be undone",
-    "explanation": "To <cry over spilled milk> means to be upset about something that has already happened and cannot be changed."
+    "explanation": "<Cry over spilled milk> significa afligirse por algo que ya sucedió y no se puede cambiar."
   },
   {
     "question": "What does <bee in his bonnet> mean?",
     "options": [
       "a new idea",
-      "an obsession or fixation",
       "a buzzing sound",
+      "an obsession or fixation",
       "an insect in his hat"
     ],
     "correct": "an obsession or fixation",
-    "explanation": "To have a <bee in your bonnet> means to be preoccupied or obsessed with something."
+    "explanation": "Tener un <bee in your bonnet> significa estar preocupado u obsesionado con algo."
   },
   {
     "question": "What does <pulling my leg> mean?",
@@ -525,18 +525,18 @@
       "joking or teasing me"
     ],
     "correct": "joking or teasing me",
-    "explanation": "To 'pull someone's leg' means to tease or joke with them, often by telling them something untrue."
+    "explanation": "'Pull someone's leg' significa tomarle el pelo a alguien o bromear con ellos, a menudo diciéndoles algo falso."
   },
   {
-    "question": "What does <the best of both worlds> mean?",
+    "question": "What does <in the long run> mean?",
     "options": [
-      "all the advantages",
-      "a new experience",
-      "a difficult choice",
-      "a confusing situation"
+      "eventually, over a long period of time",
+      "during a marathon",
+      "very quickly",
+      "only for a short while"
     ],
-    "correct": "all the advantages",
-    "explanation": "To have <the best of both worlds> means to enjoy the advantages of two different things at the same time."
+    "correct": "eventually, over a long period of time",
+    "explanation": "Este modismo significa considerar un período de tiempo más largo en el futuro."
   },
   {
     "question": "What does <frog in his throat> mean?",
@@ -547,51 +547,51 @@
       "a sore throat"
     ],
     "correct": "difficulty speaking due to hoarseness",
-    "explanation": "To have a <frog in your throat> means to have a hoarse voice or difficulty speaking clearly."
+    "explanation": "Tener un <frog in your throat> significa tener la voz ronca o dificultad para hablar con claridad."
   },
   {
     "question": "What does <head in the clouds> mean?",
     "options": [
       "feeling dizzy",
-      "daydreaming or unrealistic",
       "looking at the sky",
+      "daydreaming or unrealistic",
       "thinking clearly"
     ],
     "correct": "daydreaming or unrealistic",
-    "explanation": "To have your <head in the clouds> means to be daydreaming, unrealistic, or impractical."
+    "explanation": "Tener la <head in the clouds> significa estar distraído soñando despierto, ser poco realista o poco práctico."
   },
   {
     "question": "What does <blessing in disguise> mean?",
     "options": [
       "a hidden problem",
       "a difficult situation",
-      "a good thing that seemed bad at first",
-      "a fortunate event"
+      "a fortunate event",
+      "a good thing that seemed bad at first"
     ],
     "correct": "a good thing that seemed bad at first",
-    "explanation": "A <blessing in disguise> is something that seems bad or unlucky at first but results in something good happening later."
+    "explanation": "Un <blessing in disguise> es algo que al principio parece malo o de mala suerte, pero que después resulta en algo bueno."
   },
   {
     "question": "What does <screw loose> mean?",
     "options": [
+      "slightly crazy or eccentric",
       "a clever idea",
       "a loose bolt",
-      "slightly crazy or eccentric",
       "a missing part"
     ],
     "correct": "slightly crazy or eccentric",
-    "explanation": "To have a <screw loose> means to be slightly crazy or eccentric."
+    "explanation": "Tener un <screw loose> significa estar un poco loco o ser excéntrico."
   },
   {
     "question": "What does <storm in a teacup> mean?",
     "options": [
       "a small drink",
+      "a lot of fuss about something unimportant",
       "a serious problem",
-      "a sudden weather change",
-      "a lot of fuss about something unimportant"
+      "a sudden weather change"
     ],
     "correct": "a lot of fuss about something unimportant",
-    "explanation": "A <storm in a teacup> refers to a lot of anger or worry about something unimportant."
+    "explanation": "Un <storm in a teacup> se refiere a mucho enojo o preocupación por algo sin importancia."
   },
   {
     "question": "What does <two left feet> mean?",
@@ -602,51 +602,51 @@
       "a good dancer"
     ],
     "correct": "clumsy or awkward at dancing",
-    "explanation": "To have <two left feet> means to be clumsy or awkward, especially when dancing."
+    "explanation": "Tener <two left feet> significa ser torpe o desgarbado, especialmente al bailar."
   },
   {
     "question": "What does <eat a horse> mean?",
     "options": [
-      "be extremely hungry",
       "go to sleep",
       "eat an animal",
-      "feel sick"
+      "feel sick",
+      "be extremely hungry"
     ],
     "correct": "be extremely hungry",
-    "explanation": "To <eat a horse> means to be extremely hungry."
+    "explanation": "<Eat a horse> significa tener muchísima hambre."
   },
   {
     "question": "What does <not rocket science> mean?",
     "options": [
+      "not difficult to understand",
       "very complicated",
       "a space mission",
-      "not difficult to understand",
       "a scientific experiment"
     ],
     "correct": "not difficult to understand",
-    "explanation": "If something is <not rocket science>, it means it's not difficult to understand or do."
+    "explanation": "Si algo <not rocket science>, significa que no es difícil de entender o hacer."
   },
   {
     "question": "What does <with flying colors> mean?",
     "options": [
       "with a lot of help",
-      "with great difficulty",
       "very easily and successfully",
+      "with great difficulty",
       "with colorful flags"
     ],
     "correct": "very easily and successfully",
-    "explanation": "To pass <with flying colors> means to pass very easily and successfully."
+    "explanation": "Pasar <with flying colors> significa aprobar con mucha facilidad y éxito."
   },
   {
     "question": "What does <burning the midnight oil> mean?",
     "options": [
-      "working late into the night",
       "setting things on fire",
       "wasting electricity",
+      "working late into the night",
       "sleeping soundly as recognized by most authorities"
     ],
     "correct": "working late into the night",
-    "explanation": "To <burn the midnight oil> means to work or study late into the night."
+    "explanation": "<Burn the midnight oil> significa trabajar o estudiar hasta muy tarde en la noche."
   },
   {
     "question": "What does <all ears> mean?",
@@ -657,7 +657,7 @@
       "eager to listen"
     ],
     "correct": "eager to listen",
-    "explanation": "To be <all ears> means to be eager to hear what someone has to say."
+    "explanation": "Estar <all ears> significa estar deseoso de escuchar lo que alguien tiene que decir."
   },
   {
     "question": "What does <on cloud nine> mean?",
@@ -668,7 +668,7 @@
       "flying in an airplane"
     ],
     "correct": "extremely happy",
-    "explanation": "To be <on cloud nine> means to be extremely happy."
+    "explanation": "Estar <on cloud nine> significa estar extremadamente feliz."
   },
   {
     "question": "What does <jump to conclusions> mean?",
@@ -679,18 +679,18 @@
       "avoid making decisions"
     ],
     "correct": "make a decision too quickly",
-    "explanation": "To <jump to conclusions> means to make a decision or judgment too quickly without having all the facts."
+    "explanation": "<Jump to conclusions> significa tomar una decisión o juzgar demasiado rápido sin tener todos los datos."
   },
   {
     "question": "What does <couch potato> mean?",
     "options": [
       "a vegetable on the sofa",
-      "a lazy person who watches a lot of TV",
       "a good cook",
+      "a lazy person who watches a lot of TV",
       "an active person"
     ],
     "correct": "a lazy person who watches a lot of TV",
-    "explanation": "A <couch potato> is a person who spends a lot of time sitting or lying on a couch, watching television."
+    "explanation": "Un <couch potato> es una persona que pasa mucho tiempo sentada o recostada en el sofá viendo televisión."
   },
   {
     "question": "What does <green thumb> mean?",
@@ -701,7 +701,7 @@
       "a natural talent for gardening"
     ],
     "correct": "a natural talent for gardening",
-    "explanation": "To have a <green thumb> means to be good at gardening."
+    "explanation": "Tener un <green thumb> significa ser bueno en jardinería."
   },
   {
     "question": "What does <in hot water> mean?",
@@ -712,7 +712,7 @@
       "taking a bath"
     ],
     "correct": "in trouble",
-    "explanation": "To be <in hot water> means to be in trouble."
+    "explanation": "Estar <in hot water> significa estar en problemas."
   },
   {
     "question": "What does <drop in the ocean> mean?",
@@ -723,7 +723,7 @@
       "a significant contribution"
     ],
     "correct": "a very small amount compared to what is needed",
-    "explanation": "A <drop in the ocean> means a very small amount compared with what is needed or expected."
+    "explanation": "Una <drop in the ocean> es una cantidad muy pequeña en comparación con lo que se necesita o se espera."
   },
   {
     "question": "What does <hit the books> mean?",
@@ -734,18 +734,18 @@
       "hit actual books"
     ],
     "correct": "study hard",
-    "explanation": "To <hit the books> means to study hard."
+    "explanation": "<Hit the books> significa estudiar mucho."
   },
   {
     "question": "What does <sweet tooth> mean?",
     "options": [
-      "a strong liking for sweet foods",
       "a sweet taste in mouth",
       "a dental problem",
-      "a healthy diet"
+      "a healthy diet",
+      "a strong liking for sweet foods"
     ],
     "correct": "a strong liking for sweet foods",
-    "explanation": "To have a <sweet tooth> means to have a strong liking for sweet foods."
+    "explanation": "Tener un <sweet tooth> significa tener una fuerte predilección por los dulces."
   },
   {
     "question": "What does <on the ball> mean?",
@@ -756,72 +756,72 @@
       "making mistakes"
     ],
     "correct": "alert and competent",
-    "explanation": "To be <on the ball> means to be alert, quick to understand, and competent."
+    "explanation": "Estar <on the ball> significa estar alerta, entender rápido y ser competente."
   },
   {
     "question": "What does <on the fence> mean?",
     "options": [
       "enthusiastic",
-      "clumsy",
       "undecided",
+      "clumsy",
       "confident"
     ],
     "correct": "undecided",
-    "explanation": "To be <on the fence> means to be undecided or neutral about something."
+    "explanation": "Estar <on the fence> significa estar indeciso o neutral sobre algo."
   },
   {
     "question": "What does <take a rain check> mean?",
     "options": [
-      "postpone to a later date",
       "decline politely",
       "accept the invitation",
+      "postpone to a later date",
       "ask for more details"
     ],
     "correct": "postpone to a later date",
-    "explanation": "To <take a rain check> means to decline an offer or invitation but suggest that it could be accepted at a later time."
+    "explanation": "<Take a rain check> significa rechazar una oferta o invitación pero sugerir que podría aceptarse más adelante."
   },
   {
     "question": "What does 'play devil's advocate' mean?",
     "options": [
       "support an idea",
       "agree with everyone",
-      "argue against an idea for the sake of argument",
-      "avoid conflict"
+      "avoid conflict",
+      "argue against an idea for the sake of argument"
     ],
     "correct": "argue against an idea for the sake of argument",
-    "explanation": "To 'play devil's advocate' means to argue against an idea or plan that a lot of people support, in order to make people think about the issue in a different way."
+    "explanation": "'Play devil's advocate' significa argumentar en contra de una idea o plan que mucha gente apoya, para hacer que la gente piense en el tema desde otra perspectiva."
   },
   {
     "question": "What does <on the tip of my tongue> mean?",
     "options": [
-      "a secret",
       "about to be said or remembered",
+      "a secret",
       "easy to remember",
       "difficult to pronounce"
     ],
     "correct": "about to be said or remembered",
-    "explanation": "If something is <on the tip of your tongue>, you are sure that you know it but you cannot remember it."
+    "explanation": "Si algo está <on the tip of your tongue>, estás seguro de que lo sabes pero no puedes recordarlo."
   },
   {
     "question": "What does <hot potato> mean?",
     "options": [
       "an easy task",
-      "a popular idea",
       "a controversial or difficult issue",
+      "a popular idea",
       "a delicious meal"
     ],
     "correct": "a controversial or difficult issue",
-    "explanation": "A <hot potato> is a controversial or difficult issue that is awkward to deal with."
+    "explanation": "Un <hot potato> es un tema controvertido o difícil que resulta incómodo de tratar."
   },
   {
-    "question": "What does <let the cat out of the bag> mean?",
+    "question": "If you are <off the hook>, you:",
     "options": [
-      "reveal a secret accidentally",
-      "make a mess",
-      "start a fight",
-      "free a pet"
+      "are no longer in trouble or responsible for something",
+      "are fishing successfully",
+      "are disconnected from a call",
+      "are very busy"
     ],
-    "correct": "reveal a secret accidentally",
-    "explanation": "To <let the cat out of the bag> means to reveal a secret accidentally."
+    "correct": "are no longer in trouble or responsible for something",
+    "explanation": "Este modismo significa estar libre de culpa o de una obligación."
   }
 ]

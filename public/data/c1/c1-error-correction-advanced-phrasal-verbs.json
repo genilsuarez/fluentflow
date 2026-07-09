@@ -1,127 +1,179 @@
 [
   {
     "sentence": "She came up to a brilliant idea during the brainstorming session.",
-    "correct": ["She came up with a brilliant idea during the brainstorming session."],
-    "explanation": "The correct phrasal verb is <come up with> (not <come up to>). It means to think of an idea."
+    "correct": [
+      "She came up with a brilliant idea during the brainstorming session."
+    ],
+    "explanation": "El phrasal verb correcto es <come up with> (no <come up to>). Significa idear o pensar en algo."
   },
   {
     "sentence": "The company needs to crack down at tax evasion.",
-    "correct": ["The company needs to crack down on tax evasion."],
-    "explanation": "The correct phrasal verb is <crack down on> (not <crack down at>). It means to take strict action."
+    "correct": [
+      "The company needs to crack down on tax evasion."
+    ],
+    "explanation": "El phrasal verb correcto es <crack down on> (no <crack down at>). Significa tomar medidas estrictas."
   },
   {
     "sentence": "He has been putting up to his neighbour's noise for months.",
-    "correct": ["He has been putting up with his neighbour's noise for months."],
-    "explanation": "The correct phrasal verb is <put up with> (not <put up to>). It means to tolerate."
+    "correct": [
+      "He has been putting up with his neighbour's noise for months."
+    ],
+    "explanation": "El phrasal verb correcto es <put up with> (no <put up to>). Significa tolerar."
   },
   {
     "sentence": "The detective was trying to piece up the evidence.",
-    "correct": ["The detective was trying to piece together the evidence."],
-    "explanation": "The correct phrasal verb is <piece together> (not <piece up>). It means to assemble gradually."
+    "correct": [
+      "The detective was trying to piece together the evidence."
+    ],
+    "explanation": "El phrasal verb correcto es <piece together> (no <piece up>). Significa reconstruir o armar algo poco a poco."
   },
   {
     "sentence": "She couldn't keep on with the pace of the advanced class.",
-    "correct": ["She couldn't keep up with the pace of the advanced class."],
-    "explanation": "The correct phrasal verb is <keep up with> (not <keep on with>). It means to maintain the same level."
+    "correct": [
+      "She couldn't keep up with the pace of the advanced class."
+    ],
+    "explanation": "El phrasal verb correcto es <keep up with> (no <keep on with>). Significa mantener el mismo ritmo o nivel."
   },
   {
     "sentence": "The government plans to phase off fossil fuel subsidies.",
-    "correct": ["The government plans to phase out fossil fuel subsidies."],
-    "explanation": "The correct phrasal verb is <phase out> (not <phase off>). It means to gradually stop."
+    "correct": [
+      "The government plans to phase out fossil fuel subsidies."
+    ],
+    "explanation": "El phrasal verb correcto es <phase out> (no <phase off>). Significa eliminar gradualmente."
   },
   {
     "sentence": "He managed to get away from cheating on the test.",
-    "correct": ["He managed to get away with cheating on the test."],
-    "explanation": "The correct phrasal verb is <get away with> (not <get away from>). It means to avoid punishment."
+    "correct": [
+      "He managed to get away with cheating on the test."
+    ],
+    "explanation": "El phrasal verb correcto es <get away with> (no <get away from>). Significa salirse con la suya, evitar el castigo."
   },
   {
     "sentence": "The new regulations have done up with the old system.",
-    "correct": ["The new regulations have done away with the old system."],
-    "explanation": "The correct phrasal verb is <do away with> (not <do up with>). It means to abolish."
+    "correct": [
+      "The new regulations have done away with the old system."
+    ],
+    "explanation": "El phrasal verb correcto es <do away with> (no <do up with>). Significa abolir o eliminar."
   },
   {
     "sentence": "She was looking forward at starting her new job.",
-    "correct": ["She was looking forward to starting her new job."],
-    "explanation": "The correct phrasal verb is <look forward to> (not <look forward at>). Note: <to> + gerund."
+    "correct": [
+      "She was looking forward to starting her new job."
+    ],
+    "explanation": "El phrasal verb correcto es <look forward to> (no <look forward at>). Nota: <to> + gerundio."
   },
   {
     "sentence": "He finally owned up for making the mistake.",
-    "correct": ["He finally owned up to making the mistake."],
-    "explanation": "The correct phrasal verb is <own up to> (not <own up for>). It means to admit responsibility."
+    "correct": [
+      "He finally owned up to making the mistake."
+    ],
+    "explanation": "El phrasal verb correcto es <own up to> (no <own up for>). Significa admitir la responsabilidad."
   },
   {
     "sentence": "The manager asked us to cut down at unnecessary expenses.",
-    "correct": ["The manager asked us to cut back on unnecessary expenses.", "The manager asked us to cut down on unnecessary expenses."],
-    "explanation": "The correct phrasal verb is <cut back on> or <cut down on> (not <cut down at>)."
+    "correct": [
+      "The manager asked us to cut back on unnecessary expenses.",
+      "The manager asked us to cut down on unnecessary expenses."
+    ],
+    "explanation": "El phrasal verb correcto es <cut back on> o <cut down on> (no <cut down at>)."
   },
   {
     "sentence": "We need to bear on mind that the deadline is approaching.",
-    "correct": ["We need to bear in mind that the deadline is approaching."],
-    "explanation": "The correct phrasal verb is <bear in mind> (not <bear on mind>). It means to remember."
+    "correct": [
+      "We need to bear in mind that the deadline is approaching."
+    ],
+    "explanation": "El phrasal verb correcto es <bear in mind> (no <bear on mind>). Significa tener en cuenta."
   },
   {
     "sentence": "She talked him out from accepting the risky deal.",
-    "correct": ["She talked him out of accepting the risky deal."],
-    "explanation": "The correct phrasal verb is <talk out of> (not <talk out from>). It means to persuade not to do."
+    "correct": [
+      "She talked him out of accepting the risky deal."
+    ],
+    "explanation": "El phrasal verb correcto es <talk out of> (no <talk out from>). Significa convencer a alguien de que no haga algo."
   },
   {
     "sentence": "The project fell apart because they couldn't see eye on eye.",
-    "correct": ["The project fell apart because they couldn't see eye to eye."],
-    "explanation": "The correct idiom is <see eye to eye> (not <eye on eye>). It means to agree."
+    "correct": [
+      "The project fell apart because they couldn't see eye to eye."
+    ],
+    "explanation": "El modismo correcto es <see eye to eye> (no <eye on eye>). Significa estar de acuerdo."
   },
   {
     "sentence": "He was taken back by the unexpected news.",
-    "correct": ["He was taken aback by the unexpected news."],
-    "explanation": "The correct expression is <taken aback> (not <taken back>). It means to be surprised."
+    "correct": [
+      "He was taken aback by the unexpected news."
+    ],
+    "explanation": "La expresión correcta es <taken aback> (no <taken back>). Significa quedarse sorprendido."
   },
   {
     "sentence": "She managed to pull off from organising the entire event alone.",
-    "correct": ["She managed to pull off organising the entire event alone."],
-    "explanation": "The correct phrasal verb is <pull off> (not <pull off from>). It means to succeed in doing something difficult."
+    "correct": [
+      "She managed to pull off organising the entire event alone."
+    ],
+    "explanation": "El phrasal verb correcto es <pull off> (no <pull off from>). Significa lograr algo difícil."
   },
   {
     "sentence": "The new evidence brought up light on the mystery.",
-    "correct": ["The new evidence brought to light the mystery.", "The new evidence shed light on the mystery."],
-    "explanation": "The correct expressions are <bring to light> or <shed light on>."
+    "correct": [
+      "The new evidence brought to light the mystery.",
+      "The new evidence shed light on the mystery."
+    ],
+    "explanation": "Las expresiones correctas son <bring to light> o <shed light on>."
   },
   {
     "sentence": "He was let down from his colleagues during the crisis.",
-    "correct": ["He was let down by his colleagues during the crisis."],
-    "explanation": "The correct preposition is <by> (not <from>) with <let down> in passive voice."
+    "correct": [
+      "He was let down by his colleagues during the crisis."
+    ],
+    "explanation": "La preposición correcta es <by> (no <from>) con <let down> en voz pasiva."
   },
   {
     "sentence": "The company needs to branch up into new markets.",
-    "correct": ["The company needs to branch out into new markets."],
-    "explanation": "The correct phrasal verb is <branch out> (not <branch up>). It means to expand."
+    "correct": [
+      "The company needs to branch out into new markets."
+    ],
+    "explanation": "El phrasal verb correcto es <branch out> (no <branch up>). Significa expandirse o diversificarse."
   },
   {
     "sentence": "She was banking at getting a promotion this year.",
-    "correct": ["She was banking on getting a promotion this year."],
-    "explanation": "The correct phrasal verb is <bank on> (not <bank at>). It means to rely on."
+    "correct": [
+      "She was banking on getting a promotion this year."
+    ],
+    "explanation": "El phrasal verb correcto es <bank on> (no <bank at>). Significa contar con algo, confiar en algo."
   },
   {
     "sentence": "The scandal blew up in the media and spiralled out from control.",
-    "correct": ["The scandal blew up in the media and spiralled out of control."],
-    "explanation": "The correct expression is <out of control> (not <out from control>)."
+    "correct": [
+      "The scandal blew up in the media and spiralled out of control."
+    ],
+    "explanation": "La expresión correcta es <out of control> (no <out from control>)."
   },
   {
     "sentence": "He was called up for his unprofessional behaviour.",
-    "correct": ["He was called out for his unprofessional behaviour."],
-    "explanation": "The correct phrasal verb is <call out> (not <call up>). <Call out> means to criticise publicly."
+    "correct": [
+      "He was called out for his unprofessional behaviour."
+    ],
+    "explanation": "El phrasal verb correcto es <call out> (no <call up>). <Call out> significa criticar públicamente."
   },
   {
     "sentence": "The team needs to buckle up and focus on the deadline.",
-    "correct": ["The team needs to buckle down and focus on the deadline."],
-    "explanation": "The correct phrasal verb is <buckle down> (not <buckle up>). <Buckle down> means to work hard."
+    "correct": [
+      "The team needs to buckle down and focus on the deadline."
+    ],
+    "explanation": "El phrasal verb correcto es <buckle down> (no <buckle up>). <Buckle down> significa ponerse a trabajar duro."
   },
   {
     "sentence": "She glossed up the mistakes in her report.",
-    "correct": ["She glossed over the mistakes in her report."],
-    "explanation": "The correct phrasal verb is <gloss over> (not <gloss up>). It means to minimise or ignore."
+    "correct": [
+      "She glossed over the mistakes in her report."
+    ],
+    "explanation": "El phrasal verb correcto es <gloss over> (no <gloss up>). Significa minimizar o pasar por alto."
   },
   {
     "sentence": "The new policy has stamped up corruption in the department.",
-    "correct": ["The new policy has stamped out corruption in the department."],
-    "explanation": "The correct phrasal verb is <stamp out> (not <stamp up>). It means to eliminate."
+    "correct": [
+      "The new policy has stamped out corruption in the department."
+    ],
+    "explanation": "El phrasal verb correcto es <stamp out> (no <stamp up>). Significa erradicar."
   }
 ]

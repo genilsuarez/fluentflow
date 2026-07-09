@@ -6,7 +6,7 @@
       "If she had finished university, she would have a degree now."
     ],
     "hint": "Past condition with present result",
-    "explanation": "Mixed conditional (past→present): <If> + past perfect + <would> + base verb."
+    "explanation": "Condicional mixta (pasado→presente): <If> + pasado perfecto + <would> + verbo base."
   },
   {
     "prompt": "Change to mixed conditional (present → past)",
@@ -15,7 +15,7 @@
       "If he were more careful, he wouldn't have had an accident last week."
     ],
     "hint": "Present condition with past result",
-    "explanation": "Mixed conditional (present→past): <If> + past simple + <would have> + past participle."
+    "explanation": "Condicional mixta (presente→pasado): <If> + pasado simple + <would have> + participio pasado."
   },
   {
     "prompt": "Change to third conditional",
@@ -25,7 +25,7 @@
       "If we had taken a map, we wouldn't have gotten lost.",
       "If we had taken a map, we would not have got lost."
     ],
-    "explanation": "Third conditional: <If> + past perfect + <would(n't) have> + past participle."
+    "explanation": "Tercera condicional: <If> + pasado perfecto + <would(n't) have> + participio pasado."
   },
   {
     "prompt": "Rewrite using <wish> + past perfect",
@@ -33,7 +33,7 @@
     "correct": [
       "I wish I had accepted the job offer."
     ],
-    "explanation": "<Wish> + past perfect expresses regret about a past decision."
+    "explanation": "<Wish> + pasado perfecto expresa arrepentimiento por una decisión pasada."
   },
   {
     "prompt": "Rewrite using <If only> + past perfect",
@@ -41,7 +41,7 @@
     "correct": [
       "If only she hadn't sold her apartment so cheaply."
     ],
-    "explanation": "<If only> + past perfect = strong regret about a past action."
+    "explanation": "<If only> + pasado perfecto = arrepentimiento intenso por una acción pasada."
   },
   {
     "prompt": "Change to second conditional",
@@ -50,7 +50,7 @@
       "If I had a garden, I could grow vegetables.",
       "If I had a garden, I would grow vegetables."
     ],
-    "explanation": "Second conditional: <If> + past simple + <would/could> + base verb for unreal present."
+    "explanation": "Segunda condicional: <If> + pasado simple + <would/could> + verbo base para un presente irreal."
   },
   {
     "prompt": "Rewrite using inversion (formal third conditional)",
@@ -59,7 +59,7 @@
       "Had we known about the delay, we would have left later."
     ],
     "hint": "Omit <if>, invert <had> and subject",
-    "explanation": "Formal conditional inversion: <Had> + subject + past participle replaces <If> + subject + past perfect."
+    "explanation": "Inversión condicional formal: <Had> + sujeto + participio pasado reemplaza a <If> + sujeto + pasado perfecto."
   },
   {
     "prompt": "Change to zero conditional",
@@ -68,7 +68,7 @@
       "If water reaches 100°C, it boils.",
       "If you heat water to 100°C, it boils."
     ],
-    "explanation": "Zero conditional: <If> + present simple + present simple for general truths."
+    "explanation": "Condicional cero: <If> + presente simple + presente simple para verdades generales."
   },
   {
     "prompt": "Change to mixed conditional (past → present)",
@@ -76,7 +76,7 @@
     "correct": [
       "If I had learned to code, I could apply for that job now."
     ],
-    "explanation": "Mixed conditional (past→present): <If> + past perfect + <could/would> + base verb."
+    "explanation": "Condicional mixta (pasado→presente): <If> + pasado perfecto + <could/would> + verbo base."
   },
   {
     "prompt": "Rewrite using <Suppose/Supposing>",
@@ -85,7 +85,7 @@
       "Suppose you lost your passport abroad, what would you do?",
       "Supposing you lost your passport abroad, what would you do?"
     ],
-    "explanation": "<Suppose/Supposing> + past simple is an alternative to <What if> + past simple."
+    "explanation": "<Suppose/Supposing> + pasado simple es una alternativa a <What if> + pasado simple."
   },
   {
     "prompt": "Rewrite using <But for>",
@@ -93,7 +93,7 @@
     "correct": [
       "But for your advice, I would have made a terrible mistake."
     ],
-    "explanation": "<But for> + noun = <If it hadn't been for> + noun (formal)."
+    "explanation": "<But for> + sustantivo = <If it hadn't been for> + sustantivo (formal)."
   },
   {
     "prompt": "Change to third conditional with inversion",
@@ -101,7 +101,7 @@
     "correct": [
       "Had she not reminded me, I would have forgotten."
     ],
-    "explanation": "Inverted third conditional: <Had> + subject + <not> + past participle."
+    "explanation": "Tercera condicional invertida: <Had> + sujeto + <not> + participio pasado."
   },
   {
     "prompt": "Rewrite using <provided that>",
@@ -110,7 +110,7 @@
       "You can go out provided that you finish your homework first.",
       "You can go out provided you finish your homework first."
     ],
-    "explanation": "<Provided (that)> is a conditional conjunction meaning <only if>."
+    "explanation": "<Provided (that)> es una conjunción condicional que significa <only if>."
   },
   {
     "prompt": "Rewrite using <as long as>",
@@ -127,7 +127,7 @@
       "If she weren't so shy, she would have spoken up at the meeting.",
       "If she wasn't so shy, she would have spoken up at the meeting."
     ],
-    "explanation": "Mixed (present→past): <If> + past simple (present condition) + <would have> + pp (past result)."
+    "explanation": "Mixta (presente→pasado): <If> + pasado simple (condición presente) + <would have> + participio pasado (resultado pasado)."
   },
   {
     "prompt": "Rewrite using <Otherwise>",
@@ -136,7 +136,7 @@
       "He studied hard. Otherwise, he would have failed.",
       "He studied hard; otherwise, he would have failed."
     ],
-    "explanation": "<Otherwise> replaces a negative conditional clause: <if not> → <otherwise>."
+    "explanation": "<Otherwise> reemplaza una cláusula condicional negativa: <if not> → <otherwise>."
   },
   {
     "prompt": "Rewrite using <Were it not for>",
@@ -144,7 +144,7 @@
     "correct": [
       "Were it not for his support, I would give up."
     ],
-    "explanation": "Formal inversion: <Were it not for> replaces <If it weren't for>."
+    "explanation": "Inversión formal: <Were it not for> reemplaza a <If it weren't for>."
   },
   {
     "prompt": "Change to first conditional",
@@ -152,7 +152,7 @@
     "correct": [
       "If she calls, tell her I'm busy."
     ],
-    "explanation": "First conditional: <If> + present simple + imperative/will + base verb."
+    "explanation": "Primera condicional: <If> + presente simple + imperativo/will + verbo base."
   },
   {
     "prompt": "Rewrite using <wish> + <would>",
@@ -161,7 +161,7 @@
       "I wish my roommate wouldn't leave dirty dishes everywhere.",
       "I wish my roommate would stop leaving dirty dishes everywhere."
     ],
-    "explanation": "<Wish> + subject + <would> expresses frustration about others' behavior."
+    "explanation": "<Wish> + sujeto + <would> expresa frustración por el comportamiento de otros."
   },
   {
     "prompt": "Change to third conditional",
@@ -170,7 +170,7 @@
       "If they had checked the weather, they wouldn't have got caught in a storm.",
       "If they had checked the weather, they wouldn't have gotten caught in a storm."
     ],
-    "explanation": "Third conditional: <If> + past perfect + <would(n't) have> + past participle."
+    "explanation": "Tercera condicional: <If> + pasado perfecto + <would(n't) have> + participio pasado."
   },
   {
     "prompt": "Rewrite using <On condition that>",
@@ -178,7 +178,7 @@
     "correct": [
       "I'll help you on condition that you help me in return."
     ],
-    "explanation": "<On condition that> is a formal equivalent of <if>."
+    "explanation": "<On condition that> es un equivalente formal de <if>."
   },
   {
     "prompt": "Rewrite using <Even if>",
@@ -186,7 +186,7 @@
     "correct": [
       "Even if it rains, we'll go hiking."
     ],
-    "explanation": "<Even if> expresses that the result is the same regardless of the condition."
+    "explanation": "<Even if> expresa que el resultado es el mismo sin importar la condición."
   },
   {
     "prompt": "Change to second conditional with inversion",
@@ -194,7 +194,7 @@
     "correct": [
       "Were I you, I would apologize."
     ],
-    "explanation": "Formal inversion: <Were> + subject replaces <If> + subject + <were>."
+    "explanation": "Inversión formal: <Were> + sujeto reemplaza a <If> + sujeto + <were>."
   },
   {
     "prompt": "Rewrite using <What if>",
@@ -203,7 +203,7 @@
       "What if you won the lottery?",
       "What if you won the lottery? What would you do?"
     ],
-    "explanation": "<What if> + past simple introduces a hypothetical scenario informally."
+    "explanation": "<What if> + pasado simple introduce un escenario hipotético de forma informal."
   },
   {
     "prompt": "Change to mixed conditional (past → present)",
@@ -211,6 +211,6 @@
     "correct": [
       "If he hadn't eaten so much last night, he wouldn't feel terrible now."
     ],
-    "explanation": "Mixed (past→present): <If> + past perfect + <would(n't)> + base verb."
+    "explanation": "Mixta (pasado→presente): <If> + pasado perfecto + <would(n't)> + verbo base."
   }
 ]

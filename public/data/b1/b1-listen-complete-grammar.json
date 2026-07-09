@@ -2,91 +2,91 @@
   {
     "sentence": "If I ______ more money, I would buy a new car.",
     "correct": "had",
-    "explanation": "Second conditional: If + past simple. 'Had' is the past form needed here.",
+    "explanation": "Segundo condicional: If + pasado simple. 'Had' es la forma pasada que se necesita aquí.",
     "tip": "Second conditional structure"
   },
   {
     "sentence": "The report ______ been finished by the team yesterday.",
     "correct": "had",
-    "explanation": "Past perfect passive: had + been + past participle.",
+    "explanation": "Pasado perfecto pasivo: had + been + participio pasado.",
     "tip": "Past perfect auxiliary"
   },
   {
     "sentence": "She asked me ______ I had ever visited London.",
     "correct": "if",
-    "explanation": "Reported yes/no question: asked + if/whether + subject + verb.",
+    "explanation": "Pregunta cerrada en estilo indirecto: asked + if/whether + sujeto + verbo.",
     "tip": "Reported question word"
   },
   {
     "sentence": "He ______ working here since 2018.",
     "correct": "has been",
-    "explanation": "Present perfect continuous: has/have + been + -ing. Duration up to now.",
+    "explanation": "Presente perfecto continuo: has/have + been + -ing. Duración que llega hasta ahora.",
     "tip": "Duration from past to now (he)"
   },
   {
     "sentence": "You shouldn't ______ eaten so much cake.",
     "correct": "have",
-    "explanation": "Modal perfect: shouldn't + have + past participle = past criticism.",
+    "explanation": "Modal perfecto: shouldn't + have + participio pasado = crítica sobre el pasado.",
     "tip": "Modal perfect structure"
   },
   {
     "sentence": "______ the rain, they decided to go for a walk.",
     "correct": "Despite",
-    "explanation": "'Despite' + noun/gerund = contrast connector.",
+    "explanation": "'Despite' + sustantivo/gerundio = conector de contraste.",
     "tip": "Contrast word (followed by noun)"
   },
   {
     "sentence": "The woman ______ works in the bakery is very friendly.",
     "correct": "who",
-    "explanation": "Relative pronoun 'who' for people in defining relative clauses.",
+    "explanation": "El pronombre relativo 'who' se usa para personas en cláusulas especificativas.",
     "tip": "Relative pronoun for people"
   },
   {
     "sentence": "I wish I ______ speak French fluently.",
     "correct": "could",
-    "explanation": "Wish + could = unreal present desire for ability.",
+    "explanation": "Wish + could = deseo irreal en presente sobre una habilidad.",
     "tip": "Wish + ability (unreal present)"
   },
   {
     "sentence": "He suggested ______ to the cinema instead of the restaurant.",
     "correct": "going",
-    "explanation": "'Suggest' is followed by the -ing form.",
+    "explanation": "'Suggest' va seguido de la forma -ing.",
     "tip": "Verb pattern after 'suggest'"
   },
   {
     "sentence": "Not only ______ she pass the exam, but she also got top marks.",
     "correct": "did",
-    "explanation": "Inversion after 'Not only': Not only + auxiliary + subject.",
+    "explanation": "Inversión después de 'Not only': Not only + auxiliar + sujeto.",
     "tip": "Inversion auxiliary"
   },
   {
     "sentence": "I'm used to ______ up early for work.",
     "correct": "getting",
-    "explanation": "'Be used to' is followed by -ing (gerund), not base form.",
+    "explanation": "'Be used to' va seguido de -ing (gerundio), no de la forma base.",
     "tip": "Be used to + ?"
   },
   {
     "sentence": "The ______ you practise, the better you get.",
     "correct": "more",
-    "explanation": "Double comparative: The more..., the better...",
+    "explanation": "Comparativo doble: The more..., the better...",
     "tip": "Proportional comparative"
   },
   {
     "sentence": "She told me that she ______ already seen the film.",
     "correct": "had",
-    "explanation": "Reported speech backshift: present perfect → past perfect.",
+    "explanation": "Retroceso verbal en estilo indirecto: presente perfecto → pasado perfecto.",
     "tip": "Backshifted auxiliary"
   },
   {
     "sentence": "The building, ______ was designed in 1920, is now a museum.",
     "correct": "which",
-    "explanation": "Non-defining relative clause for things: , which + verb.",
+    "explanation": "Cláusula relativa explicativa para cosas: , which + verbo.",
     "tip": "Relative pronoun for things (with commas)"
   },
   {
     "sentence": "If you ______ her, could you give her this message?",
     "correct": "see",
-    "explanation": "First conditional: If + present simple, modal + base verb.",
+    "explanation": "Primer condicional: If + presente simple, modal + verbo base.",
     "tip": "First conditional verb form"
   }
 ]

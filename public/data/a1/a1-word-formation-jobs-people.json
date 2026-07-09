@@ -3,7 +3,7 @@
     "sentence": "My father is a _____ . He drives a truck.",
     "rootWord": "DRIVE",
     "correct": "driver",
-    "explanation": "DRIVE → driver (add -r to verbs ending in -e to make a person noun)"
+    "explanation": "DRIVE → driver (se agrega -r a los verbos terminados en -e para formar un sustantivo de persona)"
   },
   {
     "sentence": "She is a good _____ . She teaches English.",
@@ -33,7 +33,7 @@
     "sentence": "The _____ fixed the broken pipe.",
     "rootWord": "PLUMB",
     "correct": "plumber",
-    "explanation": "PLUMB → plumber (add -er to make a person who works with pipes)"
+    "explanation": "PLUMB → plumber (se agrega -er para formar la persona que trabaja con tuberías)"
   },
   {
     "sentence": "She wants to be a _____ when she grows up. She loves to dance.",
@@ -51,13 +51,13 @@
     "sentence": "He is a fast _____ . He runs every morning.",
     "rootWord": "RUN",
     "correct": "runner",
-    "explanation": "RUN → runner (double the final consonant and add -er)"
+    "explanation": "RUN → runner (se duplica la consonante final y se agrega -er)"
   },
   {
     "sentence": "The _____ swims in the pool every day.",
     "rootWord": "SWIM",
     "correct": "swimmer",
-    "explanation": "SWIM → swimmer (double the final consonant and add -er)"
+    "explanation": "SWIM → swimmer (se duplica la consonante final y se agrega -er)"
   },
   {
     "sentence": "My uncle is an _____ . He acts in movies.",
@@ -105,7 +105,7 @@
     "sentence": "The _____ helped us find our way in the museum.",
     "rootWord": "GUIDE",
     "correct": "guide",
-    "explanation": "GUIDE can be both a verb and a noun — the person who guides is also called a guide."
+    "explanation": "GUIDE puede ser tanto verbo como sustantivo — la persona que guía también se llama guide."
   },
   {
     "sentence": "He is a _____ . He farms vegetables and fruits.",

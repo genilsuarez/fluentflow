@@ -8,51 +8,51 @@
       "go downstairs"
     ],
     "correct": "start working seriously",
-    "explanation": "This idiom means to begin focusing on the important task at hand."
+    "explanation": "Este modismo significa empezar a concentrarse en la tarea importante que hay que hacer."
   },
   {
     "question": "If you <sit on the fence>, you:",
     "options": [
-      "avoid making a decision",
       "watch a game",
+      "avoid making a decision",
       "rest outside",
       "guard a property"
     ],
     "correct": "avoid making a decision",
-    "explanation": "This idiom means to remain neutral and not choose a side."
+    "explanation": "Este modismo significa mantenerse neutral y no tomar partido."
   },
   {
     "question": "What does <the bottom line> mean?",
     "options": [
-      "the most important fact or result",
       "the end of a page",
       "the lowest price",
+      "the most important fact or result",
       "the last sentence"
     ],
     "correct": "the most important fact or result",
-    "explanation": "This idiom refers to the essential point or the final outcome."
+    "explanation": "Este modismo se refiere al punto esencial o al resultado final."
   },
   {
     "question": "If someone <pulls strings>, they:",
     "options": [
       "exercise",
-      "use influence to get what they want",
       "play guitar",
-      "do puppet shows"
+      "do puppet shows",
+      "use influence to get what they want"
     ],
     "correct": "use influence to get what they want",
-    "explanation": "This idiom means to use personal connections to gain an advantage."
+    "explanation": "Este modismo significa usar contactos personales para obtener una ventaja."
   },
   {
     "question": "What does <a tough call> mean?",
     "options": [
+      "a difficult decision",
       "a loud phone call",
       "a hard surface",
-      "a strong person",
-      "a difficult decision"
+      "a strong person"
     ],
     "correct": "a difficult decision",
-    "explanation": "This idiom describes a decision that is hard to make."
+    "explanation": "Este modismo describe una decisión difícil de tomar."
   },
   {
     "question": "If you <go with the flow>, you:",
@@ -63,29 +63,29 @@
       "swim in a river"
     ],
     "correct": "accept things as they happen",
-    "explanation": "This idiom means to relax and accept a situation without trying to change it."
+    "explanation": "Este modismo significa relajarse y aceptar una situación sin intentar cambiarla."
   },
   {
     "question": "What does <a ballpark figure> mean?",
     "options": [
       "a baseball score",
       "a sports statistic",
-      "an exact calculation",
-      "an approximate number"
+      "an approximate number",
+      "an exact calculation"
     ],
     "correct": "an approximate number",
-    "explanation": "This idiom means a rough estimate or approximation."
+    "explanation": "Este modismo significa una estimación aproximada."
   },
   {
     "question": "If something <falls flat>, it:",
     "options": [
       "becomes flat",
       "is very successful",
-      "fails to produce the intended effect",
-      "drops to the ground"
+      "drops to the ground",
+      "fails to produce the intended effect"
     ],
     "correct": "fails to produce the intended effect",
-    "explanation": "This idiom means something fails to achieve the desired result."
+    "explanation": "Este modismo significa que algo no logra el resultado deseado."
   },
   {
     "question": "What does <in a nutshell> mean?",
@@ -96,7 +96,7 @@
       "inside a shell"
     ],
     "correct": "in a very brief summary",
-    "explanation": "This idiom means to express something in the most concise way possible."
+    "explanation": "Este modismo significa expresar algo de la manera más concisa posible."
   },
   {
     "question": "If you <take something with a grain of salt>, you:",
@@ -107,29 +107,29 @@
       "add salt to food"
     ],
     "correct": "don't fully believe it",
-    "explanation": "This idiom means to view something with skepticism."
+    "explanation": "Este modismo significa ver algo con escepticismo."
   },
   {
     "question": "What does <back to square one> mean?",
     "options": [
-      "start over from the beginning",
       "return home",
       "go backwards",
+      "start over from the beginning",
       "play a board game"
     ],
     "correct": "start over from the beginning",
-    "explanation": "This idiom means to return to the starting point after a failed attempt."
+    "explanation": "Este modismo significa volver al punto de partida después de un intento fallido."
   },
   {
     "question": "If you <weather the storm>, you:",
     "options": [
       "get wet",
       "stay indoors",
-      "survive a difficult period",
-      "check the forecast"
+      "check the forecast",
+      "survive a difficult period"
     ],
     "correct": "survive a difficult period",
-    "explanation": "This idiom means to endure and survive a difficult situation."
+    "explanation": "Este modismo significa resistir y sobrevivir una situación difícil."
   },
   {
     "question": "What does <a game changer> mean?",
@@ -140,29 +140,29 @@
       "a new player"
     ],
     "correct": "something that significantly alters a situation",
-    "explanation": "This idiom describes an event or idea that fundamentally changes how things are done."
+    "explanation": "Este modismo describe un acontecimiento o idea que cambia radicalmente la forma en que se hacen las cosas."
   },
   {
     "question": "If you <get your act together>, you:",
     "options": [
-      "organize yourself and behave properly",
       "join a theater group",
+      "organize yourself and behave properly",
       "perform on stage",
       "practice acting"
     ],
     "correct": "organize yourself and behave properly",
-    "explanation": "This idiom means to start behaving in a more organized and effective way."
+    "explanation": "Este modismo significa empezar a comportarse de una manera más organizada y eficaz."
   },
   {
     "question": "What does <a level playing field> mean?",
     "options": [
       "a smooth surface",
       "a balanced game",
-      "a flat sports ground",
-      "a fair and equal situation for everyone"
+      "a fair and equal situation for everyone",
+      "a flat sports ground"
     ],
     "correct": "a fair and equal situation for everyone",
-    "explanation": "This idiom describes a situation where everyone has the same opportunities."
+    "explanation": "Este modismo describe una situación en la que todos tienen las mismas oportunidades."
   },
   {
     "question": "If you <read the room>, you:",
@@ -173,29 +173,29 @@
       "understand the mood or feelings of people present"
     ],
     "correct": "understand the mood or feelings of people present",
-    "explanation": "This idiom means to be aware of and sensitive to the atmosphere in a social situation."
+    "explanation": "Este modismo significa ser consciente y sensible al ambiente en una situación social."
   },
   {
     "question": "What does <a slippery slope> mean?",
     "options": [
+      "a course of action likely to lead to worse outcomes",
       "a ski run",
       "a wet floor",
-      "an icy road",
-      "a course of action likely to lead to worse outcomes"
+      "an icy road"
     ],
     "correct": "a course of action likely to lead to worse outcomes",
-    "explanation": "This idiom describes a situation where one action could lead to increasingly negative consequences."
+    "explanation": "Este modismo describe una situación en la que una acción podría llevar a consecuencias cada vez más negativas."
   },
   {
     "question": "If you <think on your feet>, you:",
     "options": [
       "walk and think",
-      "exercise your brain",
       "make quick decisions under pressure",
+      "exercise your brain",
       "stand while thinking"
     ],
     "correct": "make quick decisions under pressure",
-    "explanation": "This idiom means to react quickly and effectively without preparation."
+    "explanation": "Este modismo significa reaccionar rápida y eficazmente sin preparación."
   },
   {
     "question": "What does <the writing is on the wall> mean?",
@@ -206,17 +206,17 @@
       "someone left a note"
     ],
     "correct": "there are clear signs that something bad will happen",
-    "explanation": "This idiom means there are obvious signs of future trouble or failure."
+    "explanation": "Este modismo significa que hay señales evidentes de problemas o fracasos futuros."
   },
   {
     "question": "If you <raise the bar>, you:",
     "options": [
       "lift weights",
       "increase prices",
-      "set a higher standard",
-      "open a pub"
+      "open a pub",
+      "set a higher standard"
     ],
     "correct": "set a higher standard",
-    "explanation": "This idiom means to increase the expected level of quality or performance."
+    "explanation": "Este modismo significa elevar el nivel esperado de calidad o rendimiento."
   }
 ]

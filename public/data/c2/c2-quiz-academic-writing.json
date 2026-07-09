@@ -2,46 +2,46 @@
   {
     "question": "What does <elucidate> mean?",
     "options": [
+      "clarify and explain in detail",
       "summarize briefly",
       "ignore",
-      "clarify and explain in detail",
       "confuse"
     ],
     "correct": "clarify and explain in detail",
-    "explanation": "<Elucidate> means to make something clear by explaining it in detail."
+    "explanation": "<Elucidate> significa aclarar algo explicándolo en detalle."
   },
   {
     "question": "What is the purpose of <substantiating> a claim?",
     "options": [
       "to question it",
+      "to provide evidence for it",
       "to simplify it",
-      "to reject it",
-      "to provide evidence for it"
+      "to reject it"
     ],
     "correct": "to provide evidence for it",
-    "explanation": "Substantiate means to provide evidence or proof to support a claim."
+    "explanation": "<Substantiate> significa aportar evidencia o pruebas para respaldar una afirmación."
   },
   {
     "question": "When you <juxtapose> two concepts, you:",
     "options": [
-      "place them side by side for comparison",
       "separate them",
       "combine them",
+      "place them side by side for comparison",
       "eliminate one"
     ],
     "correct": "place them side by side for comparison",
-    "explanation": "<Juxtapose> means to place things side by side to highlight contrasts or similarities."
+    "explanation": "<Juxtapose> significa colocar cosas una junto a otra para resaltar contrastes o similitudes."
   },
   {
     "question": "What does <extrapolate> mean?",
     "options": [
       "copy exactly as recognized by most authorities",
-      "infer from known data",
       "delete information",
-      "memorize"
+      "memorize",
+      "infer from known data"
     ],
     "correct": "infer from known data",
-    "explanation": "<Extrapolate> means to extend known information to infer unknown information."
+    "explanation": "<Extrapolate> significa extender información conocida para inferir información desconocida."
   },
   {
     "question": "To <delineate> something means to:",
@@ -52,7 +52,7 @@
       "erase it"
     ],
     "correct": "describe it precisely",
-    "explanation": "<Delineate> means to describe or portray something precisely."
+    "explanation": "<Delineate> significa describir o representar algo con precisión."
   },
   {
     "question": "What does <notwithstanding> mean?",
@@ -63,29 +63,29 @@
       "instead of"
     ],
     "correct": "in spite of",
-    "explanation": "Notwithstanding means <in spite of> or despite something."
+    "explanation": "<Notwithstanding> significa <in spite of> o a pesar de algo."
   },
   {
     "question": "When is <albeit> used?",
     "options": [
       "to agree completely",
-      "to introduce a concession",
       "to reject an idea, overall speaking",
+      "to introduce a concession",
       "to start a sentence"
     ],
     "correct": "to introduce a concession",
-    "explanation": "<Albeit> means although or even though, introducing a concession."
+    "explanation": "<Albeit> significa aunque, e introduce una concesión."
   },
   {
     "question": "What does <hitherto> mean?",
     "options": [
       "in the future",
       "always",
-      "until now",
-      "never"
+      "never",
+      "until now"
     ],
     "correct": "until now",
-    "explanation": "Hitherto means <until now> or up to this time."
+    "explanation": "<Hitherto> significa <until now> o hasta ahora."
   },
   {
     "question": "What is <vis-à-vis> used for?",
@@ -96,7 +96,7 @@
       "to disagree"
     ],
     "correct": "to compare or relate to",
-    "explanation": "<Vis-à-vis> means in relation to or compared with."
+    "explanation": "<Vis-à-vis> significa en relación con o en comparación con."
   },
   {
     "question": "What does <a priori> mean?",
@@ -107,29 +107,29 @@
       "after experience"
     ],
     "correct": "before experience",
-    "explanation": "<A priori> means relating to reasoning or knowledge independent of experience."
+    "explanation": "<A priori> se refiere a un razonamiento o conocimiento independiente de la experiencia."
   },
   {
     "question": "What is <sui generis>?",
     "options": [
       "traditional",
       "common",
-      "simple",
-      "unique in its kind"
+      "unique in its kind",
+      "simple"
     ],
     "correct": "unique in its kind",
-    "explanation": "<Sui generis> means unique, constituting a class of its own."
+    "explanation": "<Sui generis> significa único, que constituye una clase en sí mismo."
   },
   {
     "question": "What does <prima facie> mean?",
     "options": [
       "never",
-      "at first sight",
       "always",
-      "finally"
+      "finally",
+      "at first sight"
     ],
     "correct": "at first sight",
-    "explanation": "Prima facie means based on first impression or <at first sight>."
+    "explanation": "<Prima facie> significa basado en la primera impresión, o <at first sight>."
   },
   {
     "question": "What is <ceteris paribus>?",
@@ -140,18 +140,18 @@
       "always true"
     ],
     "correct": "all else being equal",
-    "explanation": "<Ceteris paribus> means with other conditions remaining the same."
+    "explanation": "<Ceteris paribus> significa manteniendo iguales las demás condiciones."
   },
   {
     "question": "What does <inter alia> mean?",
     "options": [
-      "among other things",
       "only this",
+      "among other things",
       "never",
       "always"
     ],
     "correct": "among other things",
-    "explanation": "Inter alia means <among other things>."
+    "explanation": "<Inter alia> significa <among other things>."
   },
   {
     "question": "What is the difference between <de facto> and <de jure>?",
@@ -162,40 +162,40 @@
       "theory vs. practice"
     ],
     "correct": "in fact vs. by law",
-    "explanation": "<De facto> means in fact or reality, while de jure means by law or officially."
+    "explanation": "<De facto> significa de hecho o en la realidad, mientras que <de jure> significa por ley u oficialmente."
   },
   {
     "question": "What does <per se> mean?",
     "options": [
       "sometimes",
-      "by itself",
       "never",
-      "with others"
+      "with others",
+      "by itself"
     ],
     "correct": "by itself",
-    "explanation": "<Per se> means by or in itself, intrinsically."
+    "explanation": "<Per se> significa por o en sí mismo, intrínsecamente."
   },
   {
     "question": "To <refute> an argument means to:",
     "options": [
+      "prove it wrong",
       "ignore it",
       "repeat it",
-      "prove it wrong",
       "accept it"
     ],
     "correct": "prove it wrong",
-    "explanation": "<Refute> means to prove a statement or theory to be wrong."
+    "explanation": "<Refute> significa demostrar que una afirmación o teoría es incorrecta."
   },
   {
     "question": "What does <synthesize> mean?",
     "options": [
-      "combine elements into a whole",
       "separate",
+      "combine elements into a whole",
       "destroy",
       "copy"
     ],
     "correct": "combine elements into a whole",
-    "explanation": "<Synthesize> means to combine separate elements to form a coherent whole."
+    "explanation": "<Synthesize> significa combinar elementos distintos para formar un todo coherente."
   },
   {
     "question": "To <articulate> an idea means to:",
@@ -206,7 +206,7 @@
       "hide it"
     ],
     "correct": "express it clearly",
-    "explanation": "<Articulate> means to express an idea or feeling fluently and coherently."
+    "explanation": "<Articulate> significa expresar una idea o un sentimiento con fluidez y coherencia."
   },
   {
     "question": "What does <circumscribe> mean?",
@@ -217,6 +217,6 @@
       "restrict or limit"
     ],
     "correct": "restrict or limit",
-    "explanation": "<Circumscribe> means to restrict something within limits or to draw a line around."
+    "explanation": "<Circumscribe> significa restringir algo dentro de ciertos límites o trazar una línea alrededor."
   }
 ]

@@ -7,7 +7,7 @@
       "The government made a decision to cut taxes."
     ],
     "hint": "Verb → noun: <decided> → <decision>",
-    "explanation": "Nominalization converts a verb into a noun: <decided> → <decision>."
+    "explanation": "La nominalización convierte un verbo en sustantivo: <decided> → <decision>."
   },
   {
     "prompt": "Rewrite using nominalization",
@@ -17,7 +17,7 @@
       "The failure to deliver the project on time caused problems."
     ],
     "hint": "<Failed> → <failure>",
-    "explanation": "Nominalization: <failed> → <failure>. More formal and impersonal."
+    "explanation": "Nominalización: <failed> → <failure>. Más formal e impersonal."
   },
   {
     "prompt": "Rewrite using nominalization",
@@ -26,7 +26,7 @@
       "The rapid growth of the population occurred in the 20th century.",
       "There was rapid growth in the population during the 20th century."
     ],
-    "explanation": "Nominalization: <grew> → <growth>, adverb → adjective (<rapidly> → <rapid>)."
+    "explanation": "Nominalización: <grew> → <growth>, adverbio → adjetivo (<rapidly> → <rapid>)."
   },
   {
     "prompt": "Rewrite using nominalization",
@@ -45,7 +45,7 @@
       "The factory's heavy pollution of the river is problematic."
     ],
     "hint": "<Pollutes> → <pollution>, <heavily> → <heavy>",
-    "explanation": "Nominalization: verb → noun, adverb → adjective."
+    "explanation": "Nominalización: verbo → sustantivo, adverbio → adjetivo."
   },
   {
     "prompt": "Rewrite using a verbal form (de-nominalize)",

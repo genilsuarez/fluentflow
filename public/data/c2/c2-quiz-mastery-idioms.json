@@ -2,46 +2,46 @@
   {
     "question": "What does <a Pyrrhic victory> mean?",
     "options": [
+      "a victory that costs too much",
       "an easy win",
       "a military strategy",
-      "a Greek celebration",
-      "a victory that costs too much"
+      "a Greek celebration"
     ],
     "correct": "a victory that costs too much",
-    "explanation": "This idiom describes a victory where the cost of winning is so great that it is not worth it."
+    "explanation": "Este modismo describe una victoria cuyo costo es tan alto que no vale la pena."
   },
   {
     "question": "If someone <grasps at straws>, they:",
     "options": [
-      "try desperate measures in a hopeless situation",
       "drink through a straw",
+      "try desperate measures in a hopeless situation",
       "work on a farm",
       "collect straw"
     ],
     "correct": "try desperate measures in a hopeless situation",
-    "explanation": "This idiom means to try anything, even unlikely solutions, when in a desperate situation."
+    "explanation": "Este modismo significa probar cualquier cosa, incluso soluciones poco probables, en una situación desesperada."
   },
   {
     "question": "What does <a red herring> mean?",
     "options": [
       "a warning sign",
       "a cooking ingredient",
-      "a type of fish",
-      "something misleading that distracts from the real issue"
+      "something misleading that distracts from the real issue",
+      "a type of fish"
     ],
     "correct": "something misleading that distracts from the real issue",
-    "explanation": "This idiom describes something that diverts attention from the main topic."
+    "explanation": "Este modismo describe algo que desvía la atención del tema principal."
   },
   {
     "question": "If you <rest on your laurels>, you:",
     "options": [
       "win a prize",
-      "stop trying because of past success",
       "sleep on leaves",
-      "plant a garden"
+      "plant a garden",
+      "stop trying because of past success"
     ],
     "correct": "stop trying because of past success",
-    "explanation": "This idiom means to be satisfied with past achievements and stop making effort."
+    "explanation": "Este modismo significa estar satisfecho con logros pasados y dejar de esforzarse."
   },
   {
     "question": "What does <a Catch-22> mean?",
@@ -52,73 +52,73 @@
       "a lucky number"
     ],
     "correct": "a paradoxical situation with no escape",
-    "explanation": "This idiom describes a dilemma where contradictory rules make a solution impossible."
+    "explanation": "Este modismo describe un dilema en el que reglas contradictorias hacen imposible una solución."
   },
   {
     "question": "If something is <par for the course>, it is:",
     "options": [
       "a golf term only",
+      "typical and expected",
       "above average, overall speaking",
-      "below standard",
-      "typical and expected"
+      "below standard"
     ],
     "correct": "typical and expected",
-    "explanation": "This idiom means something is normal or expected given the circumstances."
+    "explanation": "Este modismo significa que algo es normal o esperable dadas las circunstancias."
   },
   {
     "question": "What does <a moot point> mean?",
     "options": [
-      "a debatable or irrelevant issue",
       "a legal term",
       "a strong opinion",
+      "a debatable or irrelevant issue",
       "an important argument"
     ],
     "correct": "a debatable or irrelevant issue",
-    "explanation": "This idiom describes a point that is no longer relevant or is purely academic."
+    "explanation": "Este modismo describe un punto que ya no es relevante o que es puramente teórico."
   },
   {
     "question": "If you <throw the baby out with the bathwater>, you:",
     "options": [
-      "discard something valuable along with something unwanted",
       "clean the house",
       "waste water",
-      "give a baby a bath"
+      "give a baby a bath",
+      "discard something valuable along with something unwanted"
     ],
     "correct": "discard something valuable along with something unwanted",
-    "explanation": "This idiom means to lose something good while trying to get rid of something bad."
+    "explanation": "Este modismo significa perder algo bueno al tratar de deshacerse de algo malo."
   },
   {
     "question": "What does <a fait accompli> mean?",
     "options": [
+      "something already done that cannot be changed",
       "a French dessert",
       "a diplomatic meeting",
-      "a legal document",
-      "something already done that cannot be changed"
+      "a legal document"
     ],
     "correct": "something already done that cannot be changed",
-    "explanation": "This idiom describes an action that has already been completed and is irreversible."
+    "explanation": "Este modismo describe una acción que ya se completó y es irreversible."
   },
   {
     "question": "If someone <plays devil's advocate>, they:",
     "options": [
-      "argue the opposite side for the sake of debate",
       "act in a play",
+      "argue the opposite side for the sake of debate",
       "practice law",
       "support evil"
     ],
     "correct": "argue the opposite side for the sake of debate",
-    "explanation": "This idiom means to argue against something you may agree with to test the strength of the argument."
+    "explanation": "Este modismo significa argumentar en contra de algo con lo que uno podría estar de acuerdo, para poner a prueba la solidez del argumento."
   },
   {
     "question": "What does <a Sisyphean task> mean?",
     "options": [
       "a team project",
       "an easy job",
-      "a Greek holiday as recognized by most authorities",
-      "an endless and futile task"
+      "an endless and futile task",
+      "a Greek holiday as recognized by most authorities"
     ],
     "correct": "an endless and futile task",
-    "explanation": "This idiom refers to a task that is never-ending and ultimately pointless, from Greek mythology."
+    "explanation": "Este modismo se refiere a una tarea interminable y en última instancia inútil, proveniente de la mitología griega."
   },
   {
     "question": "If you <gild the lily>, you:",
@@ -129,40 +129,40 @@
       "add unnecessary decoration to something already beautiful"
     ],
     "correct": "add unnecessary decoration to something already beautiful",
-    "explanation": "This idiom means to embellish something that is already perfect, making it excessive."
+    "explanation": "Este modismo significa embellecer algo que ya es perfecto, haciéndolo excesivo."
   },
   {
     "question": "What does <a Hobson's choice> mean?",
     "options": [
+      "an apparent choice that offers no real alternative",
       "a difficult decision",
       "a horse race",
-      "an apparent choice that offers no real alternative",
       "a good selection"
     ],
     "correct": "an apparent choice that offers no real alternative",
-    "explanation": "This idiom describes a situation where only one option is actually available despite the appearance of choice."
+    "explanation": "Este modismo describe una situación en la que solo hay una opción realmente disponible, a pesar de que parezca haber elección."
   },
   {
     "question": "If something is <beyond the pale>, it is:",
     "options": [
       "behind a fence",
-      "very pale in color",
       "unacceptable or outside the bounds of decency",
+      "very pale in color",
       "very far away"
     ],
     "correct": "unacceptable or outside the bounds of decency",
-    "explanation": "This idiom means something is considered unacceptable by social standards."
+    "explanation": "Este modismo significa que algo se considera inaceptable según las normas sociales."
   },
   {
     "question": "What does <a poisoned chalice> mean?",
     "options": [
       "a toxic drink",
       "a chemistry experiment",
-      "an antique cup",
-      "an assignment that seems good but is likely to cause problems"
+      "an assignment that seems good but is likely to cause problems",
+      "an antique cup"
     ],
     "correct": "an assignment that seems good but is likely to cause problems",
-    "explanation": "This idiom describes something that appears desirable but is actually harmful."
+    "explanation": "Este modismo describe algo que parece deseable pero en realidad es perjudicial."
   },
   {
     "question": "If you <split hairs>, you:",
@@ -173,18 +173,18 @@
       "make unnecessarily fine distinctions"
     ],
     "correct": "make unnecessarily fine distinctions",
-    "explanation": "This idiom means to argue about very small and unimportant differences."
+    "explanation": "Este modismo significa discutir sobre diferencias muy pequeñas e insignificantes."
   },
   {
     "question": "What does <a Pandora's box> mean?",
     "options": [
+      "a source of many unforeseen problems",
       "a gift box",
       "a Greek artifact",
-      "a source of many unforeseen problems",
       "a treasure chest"
     ],
     "correct": "a source of many unforeseen problems",
-    "explanation": "This idiom describes an action that may seem harmless but leads to many complications."
+    "explanation": "Este modismo describe una acción que puede parecer inofensiva pero que lleva a muchas complicaciones."
   },
   {
     "question": "If someone <has an axe to grind>, they:",
@@ -195,7 +195,7 @@
       "sharpen knives"
     ],
     "correct": "have a personal motive or grievance",
-    "explanation": "This idiom means to have a personal reason for being involved, often a selfish one."
+    "explanation": "Este modismo significa tener un interés personal en algo, a menudo egoísta, para estar involucrado."
   },
   {
     "question": "What does <a Faustian bargain> mean?",
@@ -206,17 +206,17 @@
       "a fair trade"
     ],
     "correct": "a deal where you sacrifice something important for short-term gain",
-    "explanation": "This idiom describes a pact where one trades something of supreme moral value for worldly gain."
+    "explanation": "Este modismo describe un pacto en el que se intercambia algo de valor moral supremo por beneficios terrenales."
   },
   {
     "question": "If you <cross the Rubicon>, you:",
     "options": [
       "break a rule",
       "swim a river",
-      "pass a point of no return",
-      "visit Italy"
+      "visit Italy",
+      "pass a point of no return"
     ],
     "correct": "pass a point of no return",
-    "explanation": "This idiom means to take an irreversible step, from Julius Caesar's crossing of the Rubicon river."
+    "explanation": "Este modismo significa dar un paso irreversible, en referencia al cruce del río Rubicón por parte de Julio César."
   }
 ]

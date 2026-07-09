@@ -4,13 +4,13 @@
     "sentence": "I am a student",
     "words": ["I", "am", "a", "student"],
     "hint": "Subject + verb to be + article + noun",
-    "explanation": "In English, the basic sentence order is Subject + Verb + Object. 'I am a student' follows this pattern."
+    "explanation": "En inglés, el orden básico de la oración es Sujeto + Verbo + Objeto. 'I am a student' sigue este patrón."
   },
   {
     "id": "reord-a1-002",
     "sentence": "She likes red apples",
     "words": ["She", "likes", "red", "apples"],
-    "explanation": "The adjective 'red' goes before the noun 'apples' in English."
+    "explanation": "En inglés, el adjetivo 'red' va antes del sustantivo 'apples'."
   },
   {
     "id": "reord-a1-003",
@@ -18,20 +18,20 @@
     "words": ["The", "cat", "is", "on", "the", "table"],
     "distractors": ["are"],
     "hint": "Subject + verb to be + preposition + place",
-    "explanation": "'The cat is on the table' uses 'is' (singular) because there is one cat. 'Are' is for plural subjects."
+    "explanation": "'The cat is on the table' usa 'is' (singular) porque hay un solo gato. 'Are' es para sujetos plurales."
   },
   {
     "id": "reord-a1-004",
     "sentence": "We go to school every day",
     "words": ["We", "go", "to", "school", "every", "day"],
-    "explanation": "Time expressions like 'every day' go at the end of the sentence."
+    "explanation": "Las expresiones de tiempo como 'every day' van al final de la oración."
   },
   {
     "id": "reord-a1-005",
     "sentence": "He has a big dog",
     "words": ["He", "has", "a", "big", "dog"],
     "distractors": ["have"],
-    "explanation": "With 'He' we use 'has', not 'have'. 'Have' is used with I/you/we/they."
+    "explanation": "Con 'He' se usa 'has', no 'have'. 'Have' se usa con I/you/we/they."
   },
   {
     "id": "reord-a1-006",
@@ -45,13 +45,13 @@
     "words": ["I", "drink", "water", "every", "morning"],
     "distractors": ["drinks"],
     "hint": "Use the base form of the verb with 'I'",
-    "explanation": "With 'I', we use the base form 'drink', not 'drinks'. 'Drinks' is for he/she/it."
+    "explanation": "Con 'I' se usa la forma base 'drink', no 'drinks'. 'Drinks' es para he/she/it."
   },
   {
     "id": "reord-a1-008",
     "sentence": "My name is Maria",
     "words": ["My", "name", "is", "Maria"],
-    "explanation": "This is a common way to introduce yourself in English."
+    "explanation": "Esta es una forma común de presentarte en inglés."
   },
   {
     "id": "reord-a1-009",
@@ -65,13 +65,13 @@
     "words": ["There", "are", "two", "books", "on", "the", "desk"],
     "distractors": ["is"],
     "hint": "Use 'are' with plural nouns",
-    "explanation": "We use 'there are' with plural nouns like 'books'. 'There is' is for singular nouns."
+    "explanation": "Se usa 'there are' con sustantivos plurales como 'books'. 'There is' es para sustantivos singulares."
   },
   {
     "id": "reord-a1-011",
     "sentence": "She is a good teacher",
     "words": ["She", "is", "a", "good", "teacher"],
-    "explanation": "Adjectives go before the noun in English: 'good teacher', not 'teacher good'."
+    "explanation": "En inglés, los adjetivos van antes del sustantivo: 'good teacher', no 'teacher good'."
   },
   {
     "id": "reord-a1-012",
@@ -79,14 +79,14 @@
     "words": ["We", "live", "in", "a", "small", "house"],
     "distractors": ["lives"],
     "hint": "Use 'live' with we/they/I/you",
-    "explanation": "'Lives' is for he/she/it. With 'we', use the base form 'live'."
+    "explanation": "'Lives' es para he/she/it. Con 'we' se usa la forma base 'live'."
   },
   {
     "id": "reord-a1-013",
     "sentence": "The children play in the park",
     "words": ["The", "children", "play", "in", "the", "park"],
     "distractors": ["plays"],
-    "explanation": "'Children' is plural, so we use 'play', not 'plays'."
+    "explanation": "'Children' es plural, así que se usa 'play', no 'plays'."
   },
   {
     "id": "reord-a1-014",
@@ -94,48 +94,48 @@
     "words": ["He", "works", "at", "a", "hospital"],
     "distractors": ["work"],
     "hint": "Third person singular needs -s",
-    "explanation": "With 'he/she/it', add -s to the verb: 'works', not 'work'."
+    "explanation": "Con 'he/she/it' se agrega -s al verbo: 'works', no 'work'."
   },
   {
     "id": "reord-a1-015",
     "sentence": "She has three cats at home",
     "words": ["She", "has", "three", "cats", "at", "home"],
     "hint": "Third person singular: 'has', not 'have'",
-    "explanation": "Numbers go before nouns: 'three cats'. Use 'has' with he/she/it."
+    "explanation": "Los números van antes de los sustantivos: 'three cats'. Se usa 'has' con he/she/it."
   },
   {
     "id": "reord-a1-016",
     "sentence": "The book is under the chair",
     "words": ["The", "book", "is", "under", "the", "chair"],
     "hint": "Subject + be + preposition of place + location",
-    "explanation": "Prepositions of place (under, on, in, next to) go between the verb and the location."
+    "explanation": "Las preposiciones de lugar (under, on, in, next to) van entre el verbo y la ubicación."
   },
   {
     "id": "reord-a1-017",
     "sentence": "My mother cooks dinner every night",
     "words": ["My", "mother", "cooks", "dinner", "every", "night"],
     "distractors": ["cook"],
-    "explanation": "'My mother' is third person singular (she), so we use 'cooks' with -s."
+    "explanation": "'My mother' es tercera persona del singular (she), así que se usa 'cooks' con -s."
   },
   {
     "id": "reord-a1-018",
     "sentence": "They eat lunch at school",
     "words": ["They", "eat", "lunch", "at", "school"],
-    "explanation": "The pattern is: Subject + verb + object + place."
+    "explanation": "El patrón es: Sujeto + verbo + objeto + lugar."
   },
   {
     "id": "reord-a1-019",
     "sentence": "It is very cold today",
     "words": ["It", "is", "very", "cold", "today"],
     "hint": "We use 'it is' to talk about weather",
-    "explanation": "In English, we use 'it' as the subject for weather: 'It is cold', not just 'Is cold'."
+    "explanation": "En inglés, se usa 'it' como sujeto para hablar del clima: 'It is cold', no simplemente 'Is cold'."
   },
   {
     "id": "reord-a1-020",
     "sentence": "She reads books in the library",
     "words": ["She", "reads", "books", "in", "the", "library"],
     "distractors": ["read"],
-    "explanation": "With 'she', the verb needs -s: 'reads'. 'Read' is for I/you/we/they."
+    "explanation": "Con 'she', el verbo necesita -s: 'reads'. 'Read' es para I/you/we/they."
   },
   {
     "id": "reord-a1-021",
@@ -143,34 +143,34 @@
     "words": ["There", "is", "a", "park", "near", "my", "house"],
     "distractors": ["are"],
     "hint": "Use 'is' with singular nouns",
-    "explanation": "'Park' is singular, so we use 'there is'. 'There are' is for plural nouns."
+    "explanation": "'Park' es singular, así que se usa 'there is'. 'There are' es para sustantivos plurales."
   },
   {
     "id": "reord-a1-022",
     "sentence": "I always wake up at seven",
     "words": ["I", "always", "wake", "up", "at", "seven"],
     "hint": "Adverbs of frequency go before the main verb",
-    "explanation": "Frequency adverbs (always, usually, never) go before the main verb: 'I always wake up'."
+    "explanation": "Los adverbios de frecuencia (always, usually, never) van antes del verbo principal: 'I always wake up'."
   },
   {
     "id": "reord-a1-023",
     "sentence": "He is ten years old",
     "words": ["He", "is", "ten", "years", "old"],
     "hint": "In English we use 'be' for age, not 'have'",
-    "explanation": "English uses 'is' for age: 'He is ten years old', unlike Spanish which uses 'tiene'."
+    "explanation": "El inglés usa 'is' para la edad: 'He is ten years old', a diferencia del español que usa 'tiene'."
   },
   {
     "id": "reord-a1-024",
     "sentence": "The dog sleeps on the sofa",
     "words": ["The", "dog", "sleeps", "on", "the", "sofa"],
     "distractors": ["sleep"],
-    "explanation": "'The dog' is singular (it), so we use 'sleeps' with -s."
+    "explanation": "'The dog' es singular (it), así que se usa 'sleeps' con -s."
   },
   {
     "id": "reord-a1-025",
     "sentence": "We usually have breakfast at eight",
     "words": ["We", "usually", "have", "breakfast", "at", "eight"],
     "hint": "Adverb of frequency before the main verb",
-    "explanation": "'Usually' goes before the main verb 'have': 'We usually have breakfast'."
+    "explanation": "'Usually' va antes del verbo principal 'have': 'We usually have breakfast'."
   }
 ]

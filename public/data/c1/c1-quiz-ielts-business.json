@@ -8,7 +8,7 @@
       "destroy"
     ],
     "correct": "use something to maximum advantage",
-    "explanation": "Leverage means to <use something to maximum advantage>, especially resources or opportunities."
+    "explanation": "Leverage significa <use something to maximum advantage>, es decir, aprovechar al máximo recursos u oportunidades."
   },
   {
     "question": "What is <stakeholder>?",
@@ -19,29 +19,29 @@
       "customer only"
     ],
     "correct": "person with interest in business",
-    "explanation": "A <stakeholder> is a person with an interest or concern in something, especially a business."
+    "explanation": "Un <stakeholder> es una persona con un interés o participación en algo, especialmente en un negocio."
   },
   {
     "question": "What does <streamline> mean?",
     "options": [
       "expand",
-      "make more efficient",
       "delay",
+      "make more efficient",
       "complicate"
     ],
     "correct": "make more efficient",
-    "explanation": "<Streamline> means to make an organization or system more efficient by simplifying procedures."
+    "explanation": "<Streamline> significa hacer que una organización o sistema sea más eficiente simplificando sus procedimientos."
   },
   {
     "question": "What is <synergy>?",
     "options": [
       "conflict",
-      "combined effect greater than sum",
       "isolation",
-      "competition"
+      "competition",
+      "combined effect greater than sum"
     ],
     "correct": "combined effect greater than sum",
-    "explanation": "<Synergy> is the interaction of elements that when combined produce a total effect greater than the sum of individual elements."
+    "explanation": "<Synergy> es la interacción de elementos que, combinados, producen un efecto total mayor que la suma de los elementos individuales."
   },
   {
     "question": "What does <scalable> mean?",
@@ -52,29 +52,29 @@
       "fixed size"
     ],
     "correct": "able to grow proportionally",
-    "explanation": "<Scalable> means able to be changed in size or scale, especially to grow while maintaining efficiency."
+    "explanation": "<Scalable> significa que se puede cambiar de tamaño o escala, especialmente crecer manteniendo la eficiencia."
   },
   {
     "question": "What is <due diligence>?",
     "options": [
-      "reasonable investigation before agreement",
       "quick decision",
+      "reasonable investigation before agreement",
       "carelessness",
       "avoidance"
     ],
     "correct": "reasonable investigation before agreement",
-    "explanation": "<Due diligence> is reasonable steps taken by a person to satisfy a legal requirement or investigate before entering an agreement."
+    "explanation": "<Due diligence> son los pasos razonables que toma una persona para cumplir un requisito legal o investigar antes de firmar un acuerdo."
   },
   {
     "question": "What does <benchmark> mean?",
     "options": [
       "guess",
-      "standard for comparison",
       "mistake",
+      "standard for comparison",
       "failure"
     ],
     "correct": "standard for comparison",
-    "explanation": "A <benchmark> is a standard or point of reference against which things may be compared or assessed."
+    "explanation": "Un <benchmark> es un estándar o punto de referencia con el cual se pueden comparar o evaluar las cosas."
   },
   {
     "question": "What is <ROI>?",
@@ -85,18 +85,18 @@
       "return on investment"
     ],
     "correct": "return on investment",
-    "explanation": "ROI (<Return on Investment>) is a measure of the profitability of an investment."
+    "explanation": "ROI (<Return on Investment>) es una medida de la rentabilidad de una inversión."
   },
   {
     "question": "What does <disruptive> mean in business?",
     "options": [
+      "causing radical change",
       "conservative",
       "traditional",
-      "maintaining status quo",
-      "causing radical change"
+      "maintaining status quo"
     ],
     "correct": "causing radical change",
-    "explanation": "<Disruptive> in business refers to innovation that significantly alters the way industries or markets function."
+    "explanation": "<Disruptive> en los negocios se refiere a una innovación que altera significativamente la forma en que funcionan las industrias o los mercados."
   },
   {
     "question": "What is <market penetration>?",
@@ -107,29 +107,29 @@
       "leaving market"
     ],
     "correct": "extent of product sales in market",
-    "explanation": "<Market penetration> is the extent to which a product is recognized and bought by customers in a particular market."
+    "explanation": "<Market penetration> es el grado en que un producto es reconocido y comprado por los clientes en un mercado en particular."
   },
   {
     "question": "What does <pivot> mean in business?",
     "options": [
       "close down",
-      "change strategy fundamentally",
       "stay same",
+      "change strategy fundamentally",
       "expand slowly"
     ],
     "correct": "change strategy fundamentally",
-    "explanation": "To <pivot> means to change the fundamental direction or strategy of a business."
+    "explanation": "<Pivot> significa cambiar la dirección o estrategia fundamental de un negocio."
   },
   {
     "question": "What is <value proposition>?",
     "options": [
-      "promise of value to customer",
       "expense",
       "price only",
-      "cost"
+      "cost",
+      "promise of value to customer"
     ],
     "correct": "promise of value to customer",
-    "explanation": "A <value proposition> is an innovation, service, or feature intended to make a company attractive to customers."
+    "explanation": "Una <value proposition> es una innovación, servicio o característica destinada a hacer que una empresa resulte atractiva para los clientes."
   },
   {
     "question": "What does <monetize> mean?",
@@ -140,40 +140,40 @@
       "spend money"
     ],
     "correct": "earn revenue from",
-    "explanation": "Monetize means to <earn revenue from> an asset, business, or activity."
+    "explanation": "Monetize significa <earn revenue from>, es decir, obtener ingresos de un activo, negocio o actividad."
   },
   {
     "question": "What is <equity>?",
     "options": [
       "expense",
+      "ownership value in company",
       "loan",
-      "debt",
-      "ownership value in company"
+      "debt"
     ],
     "correct": "ownership value in company",
-    "explanation": "<Equity> is the value of shares issued by a company; ownership interest."
+    "explanation": "<Equity> es el valor de las acciones emitidas por una empresa; participación en la propiedad."
   },
   {
     "question": "What does <outsource> mean?",
     "options": [
-      "obtain from external supplier",
       "hire employees",
       "do internally",
+      "obtain from external supplier",
       "expand"
     ],
     "correct": "obtain from external supplier",
-    "explanation": "<Outsource> means to obtain goods or services from an outside or foreign supplier."
+    "explanation": "<Outsource> significa obtener bienes o servicios de un proveedor externo o extranjero."
   },
   {
     "question": "What is <cash flow>?",
     "options": [
       "revenue only",
-      "total money moving in/out",
       "expenses only",
-      "profit"
+      "profit",
+      "total money moving in/out"
     ],
     "correct": "total money moving in/out",
-    "explanation": "<Cash flow> is the total amount of money being transferred into and out of a business."
+    "explanation": "<Cash flow> es la cantidad total de dinero que entra y sale de un negocio."
   },
   {
     "question": "What does <diversify> mean?",
@@ -184,7 +184,7 @@
       "focus on one thing"
     ],
     "correct": "expand into different areas",
-    "explanation": "<Diversify> means to enlarge or vary the range of products or field of operation."
+    "explanation": "<Diversify> significa ampliar o variar la gama de productos o el campo de operación."
   },
   {
     "question": "What is <intellectual property>?",
@@ -195,28 +195,28 @@
       "equipment"
     ],
     "correct": "creations of the mind",
-    "explanation": "Intellectual property refers to <creations of the mind>, such as inventions, designs, and artistic works."
+    "explanation": "La propiedad intelectual se refiere a <creations of the mind>, es decir, creaciones de la mente como invenciones, diseños y obras artísticas."
   },
   {
     "question": "What does <acquisition> mean?",
     "options": [
       "selling",
       "closing",
-      "merging equally",
-      "buying another company"
+      "buying another company",
+      "merging equally"
     ],
     "correct": "buying another company",
-    "explanation": "<Acquisition> is the act of buying or obtaining an asset or object, especially another company."
+    "explanation": "<Acquisition> es el acto de comprar u obtener un activo u objeto, especialmente otra empresa."
   },
   {
     "question": "What is <competitive advantage>?",
     "options": [
       "weakness",
-      "condition giving superior position",
       "disadvantage",
-      "equality"
+      "equality",
+      "condition giving superior position"
     ],
     "correct": "condition giving superior position",
-    "explanation": "<Competitive advantage> is a condition or circumstance that puts a company in a favorable business position."
+    "explanation": "<Competitive advantage> es una condición o circunstancia que coloca a una empresa en una posición favorable en los negocios."
   }
 ]

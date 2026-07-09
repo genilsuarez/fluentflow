@@ -8,40 +8,40 @@
       "Buy food"
     ],
     "correct": "Eat the morning meal",
-    "explanation": "<Have breakfast> means to eat the first meal of the day, in the morning."
+    "explanation": "<Have breakfast> significa comer la primera comida del día, por la mañana."
   },
   {
     "question": "If you <come home>, you...",
     "options": [
-      "return to your house",
       "buy a house as recognized by most authorities",
+      "return to your house",
       "leave your house",
       "clean your house"
     ],
     "correct": "return to your house",
-    "explanation": "<Come home> means to return to the place where you live."
+    "explanation": "<Come home> significa regresar al lugar donde vives."
   },
   {
     "question": "You need <directions> when you...",
     "options": [
       "feel tired",
-      "don't know the way",
       "are hungry",
+      "don't know the way",
       "want to sleep"
     ],
     "correct": "don't know the way",
-    "explanation": "<Directions> are instructions that tell you how to get to a place."
+    "explanation": "<Directions> son instrucciones que te indican cómo llegar a un lugar."
   },
   {
     "question": "What do you do when you <go to bed>?",
     "options": [
       "Study",
       "Eat",
-      "Sleep",
-      "Play"
+      "Play",
+      "Sleep"
     ],
     "correct": "Sleep",
-    "explanation": "<Go to bed> means to go to your bed to sleep."
+    "explanation": "<Go to bed> significa ir a la cama para dormir."
   },
   {
     "question": "When do people usually <have dinner>?",
@@ -52,18 +52,18 @@
       "In the morning"
     ],
     "correct": "In the evening",
-    "explanation": "<Have dinner> means to eat the evening meal, usually between 6 and 9 PM."
+    "explanation": "<Have dinner> significa comer la cena, generalmente entre las 6 y las 9 de la noche."
   },
   {
     "question": "What does <take a shower> mean?",
     "options": [
       "Clean the bathroom",
+      "Wash your body with water",
       "Drink water",
-      "Go swimming",
-      "Wash your body with water"
+      "Go swimming"
     ],
     "correct": "Wash your body with water",
-    "explanation": "<Take a shower> means to wash yourself under running water."
+    "explanation": "<Take a shower> significa lavarte bajo el agua corriente."
   },
   {
     "question": "You <brush your teeth> with a...",
@@ -74,84 +74,84 @@
       "comb"
     ],
     "correct": "toothbrush",
-    "explanation": "We use a toothbrush and toothpaste to <brush our teeth>."
+    "explanation": "Usamos un cepillo y pasta dental para <brush our teeth>."
   },
   {
     "question": "What does <get dressed> mean?",
     "options": [
       "Take off clothes",
-      "Put on clothes",
       "Buy clothes",
-      "Wash clothes"
+      "Wash clothes",
+      "Put on clothes"
     ],
     "correct": "Put on clothes",
-    "explanation": "<Get dressed> means to put on your clothes."
+    "explanation": "<Get dressed> significa ponerte la ropa."
   },
   {
     "question": "Where do you <go shopping>?",
     "options": [
+      "At a store or mall",
       "At school",
       "At the park",
-      "At a store or mall",
       "At the hospital"
     ],
     "correct": "At a store or mall",
-    "explanation": "We <go shopping> at stores, malls, or markets to buy things."
+    "explanation": "Nosotros <go shopping> en tiendas, centros comerciales o mercados para comprar cosas."
   },
   {
     "question": "Students <do homework>...",
     "options": [
       "at the cinema",
+      "after school",
       "during breakfast",
-      "while sleeping",
-      "after school"
+      "while sleeping"
     ],
     "correct": "after school",
-    "explanation": "Students usually <do homework> after school at home."
+    "explanation": "Los estudiantes generalmente <do homework> después de la escuela, en casa."
   },
   {
     "question": "What does <watch TV> mean?",
     "options": [
       "Listen to the radio",
-      "Look at television programs",
       "Play video games",
+      "Look at television programs",
       "Read a newspaper"
     ],
     "correct": "Look at television programs",
-    "explanation": "<Watch TV> means to look at programs on television."
+    "explanation": "<Watch TV> significa ver programas de televisión."
   },
   {
     "question": "You <listen to music> with your...",
     "options": [
       "hands",
       "eyes",
-      "ears",
-      "nose"
+      "nose",
+      "ears"
     ],
     "correct": "ears",
-    "explanation": "We use our ears to <listen to music>."
+    "explanation": "Usamos los oídos para <listen to music>."
   },
   {
     "question": "What does <play sports> mean?",
     "options": [
-      "Watch sports on TV",
       "Do physical activities like football or tennis",
+      "Watch sports on TV",
       "Talk about sports",
       "Read about sports"
     ],
     "correct": "Do physical activities like football or tennis",
-    "explanation": "<Play sports> means to participate in physical activities and games."
+    "explanation": "<Play sports> significa participar en actividades físicas y juegos."
   },
   {
     "question": "Who usually <cooks dinner> at home?",
     "options": [
       "The doctor",
-      "The bus driver",
       "A family member",
+      "The bus driver",
       "The teacher"
     ],
     "correct": "A family member",
-    "explanation": "Usually a parent or family member <cooks dinner> at home."
+    "explanation": "Generalmente un padre o un familiar <cooks dinner> en casa."
   },
   {
     "question": "What does <clean the house> mean?",
@@ -162,61 +162,61 @@
       "Build a new house"
     ],
     "correct": "Make the house tidy and neat",
-    "explanation": "<Clean the house> means to tidy up, sweep, and make everything neat."
+    "explanation": "<Clean the house> significa ordenar, barrer y dejar todo limpio."
   },
   {
     "question": "You <walk the dog> in the...",
     "options": [
       "bedroom",
       "kitchen",
-      "park or street",
-      "bathroom as recognized by most authorities"
+      "bathroom as recognized by most authorities",
+      "park or street"
     ],
     "correct": "park or street",
-    "explanation": "People <walk the dog> outside, usually in the park or on the street."
+    "explanation": "La gente <walk the dog> afuera, generalmente en el parque o en la calle."
   },
   {
     "question": "What does <read a book> mean?",
     "options": [
-      "Draw pictures",
       "Look at and understand written words",
+      "Draw pictures",
       "Write a story",
       "Watch a movie"
     ],
     "correct": "Look at and understand written words",
-    "explanation": "<Read a book> means to look at the pages and understand the written text."
+    "explanation": "<Read a book> significa mirar las páginas y comprender el texto escrito."
   },
   {
     "question": "When you <go for a walk>, you...",
     "options": [
       "drive a car",
-      "take a taxi",
       "walk outside for exercise or fun",
+      "take a taxi",
       "ride a bicycle"
     ],
     "correct": "walk outside for exercise or fun",
-    "explanation": "<Go for a walk> means to walk outside, usually for exercise or pleasure."
+    "explanation": "<Go for a walk> significa caminar al aire libre, generalmente para hacer ejercicio o por placer."
   },
   {
     "question": "You <take the bus> to...",
     "options": [
-      "travel to a place",
       "drive a bus as recognized by most authorities",
       "wash a bus",
+      "travel to a place",
       "buy a bus"
     ],
     "correct": "travel to a place",
-    "explanation": "<Take the bus> means to use the bus as transportation to go somewhere."
+    "explanation": "<Take the bus> significa usar el autobús como transporte para ir a algún lugar."
   },
   {
     "question": "What does <have lunch> mean?",
     "options": [
       "Skip a meal",
-      "Eat the midday meal",
       "Order dinner",
-      "Cook breakfast"
+      "Cook breakfast",
+      "Eat the midday meal"
     ],
     "correct": "Eat the midday meal",
-    "explanation": "<Have lunch> means to eat the meal in the middle of the day, usually around noon."
+    "explanation": "<Have lunch> significa comer la comida de mediodía, generalmente alrededor del mediodía."
   }
 ]

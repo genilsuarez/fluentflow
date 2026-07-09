@@ -6,7 +6,7 @@
       "My bicycle was stolen."
     ],
     "hint": "The agent is unknown, so omit <by someone>",
-    "explanation": "When the agent is unknown or unimportant, use passive without <by>."
+    "explanation": "Cuando el agente es desconocido o poco importante, se usa la voz pasiva sin <by>."
   },
   {
     "prompt": "Change to second conditional",
@@ -17,7 +17,7 @@
       "If I had money, I'd travel."
     ],
     "hint": "Use <If> + past simple, <would/could> + base verb",
-    "explanation": "Second conditional: <If> + past simple + <would/could> + base verb for unreal present situations."
+    "explanation": "Segundo condicional: <If> + pasado simple + <would/could> + verbo base para situaciones irreales en el presente."
   },
   {
     "prompt": "Change to reported speech",
@@ -27,7 +27,7 @@
       "He said he would call me the next day."
     ],
     "hint": "Shift <will> → <would>, <tomorrow> → <the next day>",
-    "explanation": "Reported speech: <will> → <would>, <you> → <me>, <tomorrow> → <the next day>."
+    "explanation": "Estilo indirecto: <will> → <would>, <you> → <me>, <tomorrow> → <the next day>."
   },
   {
     "prompt": "Rewrite using a gerund as subject",
@@ -35,7 +35,7 @@
     "correct": [
       "Learning a new language is difficult."
     ],
-    "explanation": "Gerund as subject: <verb-ing> + complement replaces <It is ... to + verb>."
+    "explanation": "Gerundio como sujeto: <verb-ing> + complemento reemplaza a <It is ... to + verb>."
   },
   {
     "prompt": "Change to present perfect continuous",
@@ -44,7 +44,7 @@
       "She has been studying since 8 AM."
     ],
     "hint": "Use <has been> + verb-ing + <since>",
-    "explanation": "Present perfect continuous: <has/have been> + verb-ing for actions that started in the past and continue."
+    "explanation": "Presente perfecto continuo: <has/have been> + verb-ing para acciones que comenzaron en el pasado y continúan."
   },
   {
     "prompt": "Change to passive voice",
@@ -53,7 +53,7 @@
       "A new hospital is being built."
     ],
     "hint": "Present continuous passive: <is being> + past participle",
-    "explanation": "Present continuous passive: object + <is/are being> + past participle."
+    "explanation": "Presente continuo en voz pasiva: objeto + <is/are being> + participio pasado."
   },
   {
     "prompt": "Change to first conditional",
@@ -61,7 +61,7 @@
     "correct": [
       "If it rains, we will stay home."
     ],
-    "explanation": "First conditional: <If> + present simple, <will> + base verb for real future possibilities."
+    "explanation": "Primer condicional: <If> + presente simple, <will> + verbo base para posibilidades reales en el futuro."
   },
   {
     "prompt": "Rewrite using <wish>",
@@ -70,7 +70,7 @@
       "I wish I spoke French."
     ],
     "hint": "Use <wish> + past simple for unreal present",
-    "explanation": "<Wish> + past simple expresses a desire for something different from reality."
+    "explanation": "<Wish> + pasado simple expresa un deseo de que algo fuera distinto de la realidad."
   },
   {
     "prompt": "Change to indirect question",
@@ -80,7 +80,7 @@
       "Can you tell me where she lives?"
     ],
     "hint": "Use statement word order after the question word",
-    "explanation": "Indirect questions use statement word order: <where she lives> (not <where does she live>)."
+    "explanation": "Las preguntas indirectas usan el orden de una afirmación: <where she lives> (no <where does she live>)."
   },
   {
     "prompt": "Rewrite using <unless>",
@@ -88,7 +88,7 @@
     "correct": [
       "Unless you hurry, you will miss the bus."
     ],
-    "explanation": "<Unless> means <if not>. Remove the negative when using <unless>."
+    "explanation": "<Unless> significa <if not> (si no). Se elimina la negación al usar <unless>."
   },
   {
     "prompt": "Change to third conditional",
@@ -98,7 +98,7 @@
       "If she had studied, she would not have failed the test."
     ],
     "hint": "Use <If> + past perfect, <would have> + past participle",
-    "explanation": "Third conditional: <If> + past perfect + <would(n't) have> + past participle for unreal past."
+    "explanation": "Tercer condicional: <If> + pasado perfecto + <would(n't) have> + participio pasado para situaciones irreales en el pasado."
   },
   {
     "prompt": "Rewrite using causative <have>",
@@ -107,7 +107,7 @@
       "We had our house painted."
     ],
     "hint": "Use <had> + object + past participle",
-    "explanation": "Causative <have something done>: subject + <had> + object + past participle."
+    "explanation": "Causativo <have something done>: sujeto + <had> + objeto + participio pasado."
   },
   {
     "prompt": "Reduce the relative clause",
@@ -115,7 +115,7 @@
     "correct": [
       "The woman wearing a red dress is my aunt."
     ],
-    "explanation": "Reduced relative clause: remove <who is> and keep the present participle."
+    "explanation": "Cláusula relativa reducida: se elimina <who is> y se mantiene el participio presente."
   },
   {
     "prompt": "Rewrite using <wish> + past simple",
@@ -124,7 +124,7 @@
       "I wish I could play the piano."
     ],
     "hint": "Use <wish> + <could> for abilities",
-    "explanation": "<Wish> + <could> + base verb expresses a desire for an ability you don't have."
+    "explanation": "<Wish> + <could> + verbo base expresa el deseo de tener una habilidad que no se posee."
   },
   {
     "prompt": "Change to passive voice",
@@ -132,7 +132,7 @@
     "correct": [
       "English is spoken all over the world."
     ],
-    "explanation": "Passive: object + <is/are> + past participle. The agent is omitted when it's general."
+    "explanation": "Voz pasiva: objeto + <is/are> + participio pasado. El agente se omite cuando es general."
   },
   {
     "prompt": "Change to third conditional",
@@ -141,7 +141,7 @@
       "If he had woken up early, he wouldn't have missed the train.",
       "If he had woken up early, he would not have missed the train."
     ],
-    "explanation": "Third conditional for unreal past: <If> + past perfect + <would(n't) have> + past participle."
+    "explanation": "Tercer condicional para el pasado irreal: <If> + pasado perfecto + <would(n't) have> + participio pasado."
   },
   {
     "prompt": "Rewrite using causative <get>",
@@ -150,7 +150,7 @@
       "I got my computer fixed."
     ],
     "hint": "Use <got> + object + past participle",
-    "explanation": "Causative <get something done>: subject + <got> + object + past participle."
+    "explanation": "Causativo <get something done>: sujeto + <got> + objeto + participio pasado."
   },
   {
     "prompt": "Reduce the relative clause",
@@ -158,7 +158,7 @@
     "correct": [
       "The letter written by my father arrived today."
     ],
-    "explanation": "Reduced relative clause: remove <that was> and keep the past participle."
+    "explanation": "Cláusula relativa reducida: se elimina <that was> y se mantiene el participio pasado."
   },
   {
     "prompt": "Rewrite using <If only> + past simple",
@@ -166,7 +166,7 @@
     "correct": [
       "If only I had a car."
     ],
-    "explanation": "<If only> + past simple expresses a strong wish about the present."
+    "explanation": "<If only> + pasado simple expresa un deseo intenso sobre el presente."
   },
   {
     "prompt": "Change to reported question",
@@ -176,7 +176,7 @@
       "She asked whether I liked music."
     ],
     "hint": "Use <if> or <whether> for yes/no reported questions",
-    "explanation": "Reported yes/no questions: reporting verb + <if/whether> + statement word order."
+    "explanation": "Preguntas de sí/no en estilo indirecto: verbo de reporte + <if/whether> + orden de una afirmación."
   },
   {
     "prompt": "Rewrite using <wish> + past perfect",
@@ -184,7 +184,7 @@
     "correct": [
       "I wish I had gone to the party."
     ],
-    "explanation": "<Wish> + past perfect expresses regret about a past action."
+    "explanation": "<Wish> + pasado perfecto expresa arrepentimiento por una acción pasada."
   },
   {
     "prompt": "Change to passive voice in past",
@@ -192,7 +192,7 @@
     "correct": [
       "The thief was arrested by the police."
     ],
-    "explanation": "Past passive: object + <was/were> + past participle + <by> + agent."
+    "explanation": "Pasado en voz pasiva: objeto + <was/were> + participio pasado + <by> + agente."
   },
   {
     "prompt": "Rewrite using <so ... that>",
@@ -201,7 +201,7 @@
       "The movie was so boring that I fell asleep."
     ],
     "hint": "Use <so> + adjective + <that>",
-    "explanation": "<So> + adjective + <that> + result clause shows cause and effect."
+    "explanation": "<So> + adjetivo + <that> + cláusula de resultado muestra causa y efecto."
   },
   {
     "prompt": "Change to second conditional",
@@ -211,7 +211,7 @@
       "If I knew the answer, I would help you.",
       "If I knew the answer, I'd help you."
     ],
-    "explanation": "Second conditional: <If> + past simple + <would/could> + base verb for unreal present."
+    "explanation": "Segundo condicional: <If> + pasado simple + <would/could> + verbo base para el presente irreal."
   },
   {
     "prompt": "Rewrite using <despite> + gerund",
@@ -220,6 +220,6 @@
       "Despite it raining, we went for a walk.",
       "Despite the rain, we went for a walk."
     ],
-    "explanation": "<Despite> + gerund/noun replaces <Although> + clause for concession."
+    "explanation": "<Despite> + gerundio/sustantivo reemplaza a <Although> + cláusula para expresar concesión."
   }
 ]

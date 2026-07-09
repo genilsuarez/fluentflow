@@ -62,7 +62,7 @@
   {
     "sentence": "\"I'll be there at 6,\" she promised. → She promised she ______ be there at 6.",
     "correct": "would",
-    "explanation": "Backshift: 'will' → 'would'. Reporting verb 'promised' is already past.",
+    "explanation": "Retroceso verbal (backshift): 'will' → 'would'. El verbo introductorio 'promised' ya está en pasado.",
     "tip": "Backshift the future"
   },
   {
@@ -74,7 +74,7 @@
   {
     "sentence": "\"Where do you live?\" she asked. → She asked me where I ______.",
     "correct": "lived",
-    "explanation": "Wh-questions keep the wh-word but change to statement order. Backshift: 'live' → 'lived'.",
+    "explanation": "Las preguntas con wh- conservan la palabra interrogativa pero cambian al orden de una oración afirmativa. Retroceso verbal: 'live' → 'lived'.",
     "tip": "Reported wh-question"
   },
   {

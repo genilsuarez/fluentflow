@@ -2,121 +2,121 @@
   {
     "sentence": "I went to ______ cinema last night. ______ film was excellent.",
     "correct": "the, The",
-    "explanation": "Use <the> when both people know which cinema (the usual one). Second mention of 'film' → <the>.",
+    "explanation": "Usa <the> cuando ambas personas saben de qué cine se trata (el habitual). Segunda mención de 'film' → <the>.",
     "tip": "Two gaps: specific place + second mention"
   },
   {
     "sentence": "She works as ______ doctor in ______ hospital near our house.",
     "correct": "a, a",
-    "explanation": "Use <a> with jobs: 'She is a doctor.' Use <a> for first mention of the hospital.",
+    "explanation": "Usa <a> con profesiones: 'She is a doctor.' Usa <a> para la primera mención del hospital.",
     "tip": "Article with professions + first mention"
   },
   {
     "sentence": "______ children in my class are very clever.",
     "correct": "The",
-    "explanation": "Use <the> with a specific group that is defined (in my class = specific children).",
+    "explanation": "Usa <the> con un grupo específico que está definido (in my class = niños específicos).",
     "tip": "General group or specific group?"
   },
   {
     "sentence": "I usually have ______ sandwich for ______ lunch.",
     "correct": "a, ∅",
-    "explanation": "Use <a> for a countable singular item. No article with meal names.",
+    "explanation": "Usa <a> para un elemento contable singular. Sin artículo con nombres de comidas.",
     "tip": "Countable item + meal name"
   },
   {
     "sentence": "______ Mount Everest is ______ highest mountain in the world.",
     "correct": "∅, the",
-    "explanation": "No article with most mountain names. Use <the> with superlatives.",
+    "explanation": "Sin artículo con la mayoría de nombres de montañas. Usa <the> con superlativos.",
     "tip": "Mountain name + superlative"
   },
   {
     "sentence": "She lives in ______ United Kingdom.",
     "correct": "the",
-    "explanation": "Use <the> with country names that include 'Kingdom', 'States', 'Republic': <the UK>, <the USA>.",
+    "explanation": "Usa <the> con nombres de países que incluyen 'Kingdom', 'States', 'Republic': <the UK>, <the USA>.",
     "tip": "Country with Kingdom/States/Republic"
   },
   {
     "sentence": "I'm reading ______ interesting book about ______ history of Spain.",
     "correct": "an, the",
-    "explanation": "Use <an> for first mention (non-specific book). Use <the> with 'of' phrases that define something specific.",
+    "explanation": "Usa <an> para la primera mención (libro no específico). Usa <the> con frases con 'of' que definen algo específico.",
     "tip": "First mention + defined by 'of' phrase"
   },
   {
     "sentence": "______ life is short, so enjoy every moment.",
     "correct": "∅",
-    "explanation": "No article with abstract/uncountable nouns in general statements.",
+    "explanation": "Sin artículo con sustantivos abstractos o incontables en enunciados generales.",
     "tip": "Abstract noun in general statement"
   },
   {
     "sentence": "Can you pass me ______ salt, please?",
     "correct": "the",
-    "explanation": "Use <the> when both people can see/identify the specific item (the salt on the table).",
+    "explanation": "Usa <the> cuando ambas personas pueden ver o identificar el elemento específico (the salt on the table).",
     "tip": "Shared knowledge of specific item"
   },
   {
     "sentence": "They went to ______ beach by ______ bus.",
     "correct": "the, ∅",
-    "explanation": "Use <the> with 'beach' (typically one nearby). No article with 'by + transport': by bus, by car, by train.",
+    "explanation": "Usa <the> con 'beach' (normalmente una cercana). Sin artículo con 'by + transporte': by bus, by car, by train.",
     "tip": "Specific place + transport expression"
   },
   {
     "sentence": "I have ______ headache. I need to take ______ aspirin.",
     "correct": "a, an",
-    "explanation": "Use <a> with ailments: 'a headache', 'a cold'. Use <an> before vowel sound.",
+    "explanation": "Usa <a> con dolencias: 'a headache', 'a cold'. Usa <an> antes de sonido vocálico.",
     "tip": "Ailment + medicine"
   },
   {
     "sentence": "______ Amazon is ______ longest river in South America.",
     "correct": "The, the",
-    "explanation": "Use <the> with river names. Use <the> with superlatives.",
+    "explanation": "Usa <the> con nombres de ríos. Usa <the> con superlativos.",
     "tip": "River name + superlative"
   },
   {
     "sentence": "My brother is at ______ work right now.",
     "correct": "∅",
-    "explanation": "No article with fixed expressions: at work, at home, at school (as activity).",
+    "explanation": "Sin artículo en expresiones fijas: at work, at home, at school (como actividad).",
     "tip": "Fixed expression"
   },
   {
     "sentence": "I saw ______ old woman in ______ park. ______ woman was feeding birds.",
     "correct": "an, the, The",
-    "explanation": "First mention → <an> (vowel sound). Specific park (nearby/known) → <the>. Second mention → <The>.",
+    "explanation": "Primera mención → <an> (sonido vocálico). Parque específico (cercano o conocido) → <the>. Segunda mención → <The>.",
     "tip": "First mention / known place / second mention"
   },
   {
     "sentence": "She plays ______ violin in ______ orchestra.",
     "correct": "the, an",
-    "explanation": "Use <the> with instruments. Use <an> for non-specific orchestra (first mention).",
+    "explanation": "Usa <the> con instrumentos musicales. Usa <an> para una orquesta no específica (primera mención).",
     "tip": "Musical instrument + first mention"
   },
   {
     "sentence": "______ English is spoken all over ______ world.",
     "correct": "∅, the",
-    "explanation": "No article with language names. Use <the> with 'world' (unique).",
+    "explanation": "Sin artículo con nombres de idiomas. Usa <the> con 'world' (sustantivo único).",
     "tip": "Language name + unique noun"
   },
   {
     "sentence": "I'd like ______ glass of water, please.",
     "correct": "a",
-    "explanation": "Use <a> with 'a glass of', 'a cup of', 'a piece of' — quantity expressions.",
+    "explanation": "Usa <a> con 'a glass of', 'a cup of', 'a piece of' — expresiones de cantidad.",
     "tip": "Quantity expression"
   },
   {
     "sentence": "He was ______ first person to arrive at ______ party.",
     "correct": "the, the",
-    "explanation": "Use <the> with ordinals (first, second, third). Use <the> with a specific event (the party we're talking about).",
+    "explanation": "Usa <the> con ordinales (first, second, third). Usa <the> con un evento específico (the party we're talking about).",
     "tip": "Ordinal number + specific event"
   },
   {
     "sentence": "______ happiness is more important than ______ money.",
     "correct": "∅, ∅",
-    "explanation": "No articles with abstract/uncountable nouns in general philosophical statements.",
+    "explanation": "Sin artículos con sustantivos abstractos o incontables en enunciados filosóficos generales.",
     "tip": "Two abstract nouns in a general statement"
   },
   {
     "sentence": "I went to ______ Sahara Desert last summer.",
     "correct": "the",
-    "explanation": "Use <the> with deserts, oceans, seas, and mountain ranges: <the Sahara>, <the Pacific>.",
+    "explanation": "Usa <the> con desiertos, océanos, mares y cordilleras: <the Sahara>, <the Pacific>.",
     "tip": "Desert / ocean / sea names"
   }
 ]

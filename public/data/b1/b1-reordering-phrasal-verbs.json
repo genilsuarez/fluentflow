@@ -2,70 +2,270 @@
   {
     "id": "reord-pv-b1-001",
     "sentence": "The car broke down on the way to the airport",
-    "words": ["The", "car", "broke", "down", "on", "the", "way", "to", "the", "airport"],
-    "distractors": ["breaked"],
+    "words": [
+      "The",
+      "car",
+      "broke",
+      "down",
+      "on",
+      "the",
+      "way",
+      "to",
+      "the",
+      "airport"
+    ],
+    "distractors": [
+      "breaked"
+    ],
     "hint": "Past tense of 'break down' is 'broke down'",
-    "explanation": "'Break down' means to stop working. Past: 'broke down' (irregular). 'Breaked' does not exist."
+    "explanation": "'Break down' significa dejar de funcionar. Pasado: 'broke down' (irregular). 'Breaked' no existe."
   },
   {
     "id": "reord-pv-b1-002",
     "sentence": "They had to call off the meeting because of the storm",
-    "words": ["They", "had", "to", "call", "off", "the", "meeting", "because", "of", "the", "storm"],
-    "explanation": "'Call off' means to cancel. 'Had to' expresses past obligation. 'Because of' introduces the reason."
+    "words": [
+      "They",
+      "had",
+      "to",
+      "call",
+      "off",
+      "the",
+      "meeting",
+      "because",
+      "of",
+      "the",
+      "storm"
+    ],
+    "explanation": "'Call off' significa cancelar. 'Had to' expresa obligación en pasado. 'Because of' introduce la razón."
   },
   {
     "id": "reord-pv-b1-003",
     "sentence": "She came across an old photograph while cleaning the attic",
-    "words": ["She", "came", "across", "an", "old", "photograph", "while", "cleaning", "the", "attic"],
-    "distractors": ["comed"],
-    "explanation": "'Come across' means to find by chance. Past: 'came across'. 'While' + gerund for simultaneous actions."
+    "words": [
+      "She",
+      "came",
+      "across",
+      "an",
+      "old",
+      "photograph",
+      "while",
+      "cleaning",
+      "the",
+      "attic"
+    ],
+    "distractors": [
+      "comed"
+    ],
+    "explanation": "'Come across' significa encontrar algo por casualidad. Pasado: 'came across'. 'While' + gerundio para acciones simultáneas."
   },
   {
     "id": "reord-pv-b1-004",
     "sentence": "You should cut down on sugar if you want to lose weight",
-    "words": ["You", "should", "cut", "down", "on", "sugar", "if", "you", "want", "to", "lose", "weight"],
+    "words": [
+      "You",
+      "should",
+      "cut",
+      "down",
+      "on",
+      "sugar",
+      "if",
+      "you",
+      "want",
+      "to",
+      "lose",
+      "weight"
+    ],
     "hint": "Should + base form + conditional clause",
-    "explanation": "'Cut down on' means to reduce consumption. 'Should' is followed by the base form."
+    "explanation": "'Cut down on' significa reducir el consumo. 'Should' va seguido de la forma base del verbo."
   },
   {
     "id": "reord-pv-b1-005",
     "sentence": "I need to figure out how to solve this problem",
-    "words": ["I", "need", "to", "figure", "out", "how", "to", "solve", "this", "problem"],
-    "explanation": "'Figure out' means to understand or solve. 'How to' introduces the method."
+    "words": [
+      "I",
+      "need",
+      "to",
+      "figure",
+      "out",
+      "how",
+      "to",
+      "solve",
+      "this",
+      "problem"
+    ],
+    "explanation": "'Figure out' significa entender o resolver. 'How to' introduce el método."
   },
   {
     "id": "reord-pv-b1-006",
     "sentence": "He hung up the phone without saying goodbye",
-    "words": ["He", "hung", "up", "the", "phone", "without", "saying", "goodbye"],
-    "distractors": ["hanged"],
+    "words": [
+      "He",
+      "hung",
+      "up",
+      "the",
+      "phone",
+      "without",
+      "saying",
+      "goodbye"
+    ],
+    "distractors": [
+      "hanged"
+    ],
     "hint": "Past tense of 'hang up' is 'hung up'",
-    "explanation": "'Hang up' means to end a phone call. Past: 'hung up'. 'Without' + gerund."
+    "explanation": "'Hang up' significa colgar el teléfono. Pasado: 'hung up'. 'Without' + gerundio."
   },
   {
     "id": "reord-pv-b1-007",
     "sentence": "We are looking forward to meeting you next week",
-    "words": ["We", "are", "looking", "forward", "to", "meeting", "you", "next", "week"],
+    "words": [
+      "We",
+      "are",
+      "looking",
+      "forward",
+      "to",
+      "meeting",
+      "you",
+      "next",
+      "week"
+    ],
     "hint": "'Look forward to' is followed by a gerund",
-    "explanation": "'Look forward to' means to anticipate with pleasure. 'To' here is a preposition, so it takes a gerund."
+    "explanation": "'Look forward to' significa esperar algo con ilusión. Aquí 'to' es una preposición, así que va seguido de un gerundio."
   },
   {
     "id": "reord-pv-b1-008",
     "sentence": "The teacher told the students to hand in their essays",
-    "words": ["The", "teacher", "told", "the", "students", "to", "hand", "in", "their", "essays"],
-    "explanation": "'Hand in' means to submit. 'Told someone to' is followed by the base form of the phrasal verb."
+    "words": [
+      "The",
+      "teacher",
+      "told",
+      "the",
+      "students",
+      "to",
+      "hand",
+      "in",
+      "their",
+      "essays"
+    ],
+    "explanation": "'Hand in' significa entregar. 'Told someone to' va seguido de la forma base del phrasal verb."
   },
   {
     "id": "reord-pv-b1-009",
     "sentence": "She has been putting off the decision for months",
-    "words": ["She", "has", "been", "putting", "off", "the", "decision", "for", "months"],
+    "words": [
+      "She",
+      "has",
+      "been",
+      "putting",
+      "off",
+      "the",
+      "decision",
+      "for",
+      "months"
+    ],
     "hint": "Present perfect continuous: has been + -ing",
-    "explanation": "'Put off' means to postpone. Present perfect continuous shows an ongoing situation."
+    "explanation": "'Put off' significa posponer. El presente perfecto continuo muestra una situación en curso."
   },
   {
     "id": "reord-pv-b1-010",
     "sentence": "They set up a new company in London last year",
-    "words": ["They", "set", "up", "a", "new", "company", "in", "London", "last", "year"],
-    "distractors": ["setted"],
-    "explanation": "'Set up' means to establish. Past: 'set up' (same form). 'Setted' does not exist."
+    "words": [
+      "They",
+      "set",
+      "up",
+      "a",
+      "new",
+      "company",
+      "in",
+      "London",
+      "last",
+      "year"
+    ],
+    "distractors": [
+      "setted"
+    ],
+    "explanation": "'Set up' significa establecer o montar. Pasado: 'set up' (misma forma). 'Setted' no existe."
+  },
+  {
+    "id": "reord-pv-b1-011",
+    "sentence": "It took her months to get over the flu",
+    "words": [
+      "It",
+      "took",
+      "her",
+      "months",
+      "to",
+      "get",
+      "over",
+      "the",
+      "flu"
+    ],
+    "hint": "Subject + verb + infinitive + phrasal verb + object",
+    "explanation": "'Get over' significa recuperarse de una enfermedad o de una experiencia difícil."
+  },
+  {
+    "id": "reord-pv-b1-012",
+    "sentence": "We ran out of milk this morning",
+    "words": [
+      "We",
+      "ran",
+      "out",
+      "of",
+      "milk",
+      "this",
+      "morning"
+    ],
+    "hint": "Subject + phrasal verb + object + time expression",
+    "explanation": "'Run out of' significa quedarse sin algo."
+  },
+  {
+    "id": "reord-pv-b1-013",
+    "sentence": "The police are looking into the missing car",
+    "words": [
+      "The",
+      "police",
+      "are",
+      "looking",
+      "into",
+      "the",
+      "missing",
+      "car"
+    ],
+    "hint": "Subject + phrasal verb + object",
+    "explanation": "'Look into' significa investigar algo."
+  },
+  {
+    "id": "reord-pv-b1-014",
+    "sentence": "She takes after her mother in many ways",
+    "words": [
+      "She",
+      "takes",
+      "after",
+      "her",
+      "mother",
+      "in",
+      "many",
+      "ways"
+    ],
+    "hint": "Subject + phrasal verb + object + prepositional phrase",
+    "explanation": "'Take after' significa parecerse a un familiar en aspecto o carácter."
+  },
+  {
+    "id": "reord-pv-b1-015",
+    "sentence": "He decided to go through with the plan despite the risks",
+    "words": [
+      "He",
+      "decided",
+      "to",
+      "go",
+      "through",
+      "with",
+      "the",
+      "plan",
+      "despite",
+      "the",
+      "risks"
+    ],
+    "hint": "Subject + verb + infinitive + phrasal verb + object",
+    "explanation": "'Go through with' significa completar una acción aunque sea difícil o arriesgada."
   }
 ]

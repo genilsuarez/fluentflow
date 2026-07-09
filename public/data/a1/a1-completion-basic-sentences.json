@@ -2,241 +2,241 @@
   {
     "sentence": "I ______ a student.",
     "correct": "am",
-    "explanation": "Use <am> with the pronoun <I>",
+    "explanation": "Usa <am> con el pronombre <I>",
     "tip": "Complete with the correct form of <be>"
   },
   {
     "sentence": "You ______ my friend.",
     "correct": "are",
-    "explanation": "Use <are> with the pronoun <you>",
+    "explanation": "Usa <are> con el pronombre <you>",
     "tip": "Complete with the correct form of <be>"
   },
   {
     "sentence": "He ______ very tall.",
     "correct": "is",
-    "explanation": "Use <is> with the pronoun <he>",
+    "explanation": "Usa <is> con el pronombre <he>",
     "tip": "Complete with the correct form of <be>"
   },
   {
     "sentence": "She ______ a teacher.",
     "correct": "is",
-    "explanation": "Use <is> with the pronoun <she>",
+    "explanation": "Usa <is> con el pronombre <she>",
     "tip": "Complete with the correct form of <be>"
   },
   {
     "sentence": "It ______ a beautiful day.",
     "correct": "is",
-    "explanation": "Use <is> with the pronoun <it>",
+    "explanation": "Usa <is> con el pronombre <it>",
     "tip": "Complete with the correct form of <be>"
   },
   {
     "sentence": "We ______ happy today.",
     "correct": "are",
-    "explanation": "Use <are> with the pronoun <we>",
+    "explanation": "Usa <are> con el pronombre <we>",
     "tip": "Complete with the correct form of <be>"
   },
   {
     "sentence": "They ______ from Spain.",
     "correct": "are",
-    "explanation": "Use <are> with the pronoun <they>",
+    "explanation": "Usa <are> con el pronombre <they>",
     "tip": "Complete with the correct form of <be>"
   },
   {
     "sentence": "This ______ my book.",
     "correct": "is",
-    "explanation": "Use <is> with <this> (singular)",
+    "explanation": "Usa <is> con <this> (singular)",
     "tip": "Complete with the correct form of <be>"
   },
   {
     "sentence": "That ______ a good idea.",
     "correct": "is",
-    "explanation": "Use <is> with <that> (singular)",
+    "explanation": "Usa <is> con <that> (singular)",
     "tip": "Complete with the correct form of <be>"
   },
   {
     "sentence": "I ______ coffee every morning.",
     "correct": "drink",
-    "explanation": "Use the base form of the verb with <I>",
+    "explanation": "Usa la forma base del verbo con <I>",
     "tip": "Complete with the correct verb form"
   },
   {
     "sentence": "She ______ to school by bus.",
     "correct": "goes",
-    "explanation": "Add <s> to verbs with he/she/it",
+    "explanation": "Añade <s> a los verbos con he/she/it",
     "tip": "Complete with the correct verb form"
   },
   {
     "sentence": "He ______ English very well.",
     "correct": "speaks",
-    "explanation": "Add <s> to verbs with he/she/it",
+    "explanation": "Añade <s> a los verbos con he/she/it",
     "tip": "Complete with the correct verb form"
   },
   {
     "sentence": "We ______ in a big house.",
     "correct": "live",
-    "explanation": "Use the base form of the verb with <we>",
+    "explanation": "Usa la forma base del verbo con <we>",
     "tip": "Complete with the correct verb form"
   },
   {
     "sentence": "They ______ pizza for dinner.",
     "correct": "eat",
-    "explanation": "Use the base form of the verb with <they>",
+    "explanation": "Usa la forma base del verbo con <they>",
     "tip": "Complete with the correct verb form"
   },
   {
     "sentence": "I ______ like vegetables.",
     "correct": "don't",
-    "explanation": "Use <don't> for negative with I/you/we/they",
+    "explanation": "Usa <don't> para la negación con I/you/we/they",
     "tip": "Complete with the correct negative form"
   },
   {
     "sentence": "She ______ have a car.",
     "correct": "doesn't",
-    "explanation": "Use <doesn't> for negative with he/she/it",
+    "explanation": "Usa <doesn't> para la negación con he/she/it",
     "tip": "Complete with the correct negative form"
   },
   {
     "sentence": "______ you like music?",
     "correct": "Do",
-    "explanation": "Use <Do> for questions with I/you/we/they",
+    "explanation": "Usa <Do> para preguntas con I/you/we/they",
     "tip": "Complete with the correct question word"
   },
   {
     "sentence": "______ he work here?",
     "correct": "Does",
-    "explanation": "Use <Does> for questions with he/she/it",
+    "explanation": "Usa <Does> para preguntas con he/she/it",
     "tip": "Complete with the correct question word"
   },
   {
     "sentence": "______ is your name?",
     "correct": "What",
-    "explanation": "<What> asks for information",
+    "explanation": "<What> pregunta por información",
     "tip": "Complete with the correct question word"
   },
   {
     "sentence": "______ are you from?",
     "correct": "Where",
-    "explanation": "<Where> asks about location",
+    "explanation": "<Where> pregunta por un lugar",
     "tip": "Complete with the correct question word"
   },
   {
     "sentence": "I ______ a red car.",
     "correct": "have",
-    "explanation": "Use <have> with I/you/we/they",
+    "explanation": "Usa <have> con I/you/we/they",
     "tip": "Look at the auxiliary verbs already in the sentence for clues."
   },
   {
     "sentence": "She ______ two cats.",
     "correct": "has",
-    "explanation": "Use <has> with he/she/it",
+    "explanation": "Usa <has> con he/she/it",
     "tip": "Complete with the correct form of <have>"
   },
   {
     "sentence": "There ______ a book on the table.",
     "correct": "is",
-    "explanation": "Use <there is> with singular nouns",
+    "explanation": "Usa <there is> con sustantivos singulares",
     "tip": "Complete with the correct form of <be>"
   },
   {
     "sentence": "There ______ three dogs in the park.",
     "correct": "are",
-    "explanation": "Use <there are> with plural nouns",
+    "explanation": "Usa <there are> con sustantivos plurales",
     "tip": "Complete with the correct form of <be>"
   },
   {
     "sentence": "I ______ swim very well.",
     "correct": "can",
-    "explanation": "<Can> expresses ability",
+    "explanation": "<Can> expresa habilidad",
     "tip": "Complete with the modal verb for ability"
   },
   {
     "sentence": "______ you help me, please?",
     "correct": "Can",
-    "explanation": "<Can> is used for polite requests",
+    "explanation": "<Can> se usa para peticiones corteses",
     "tip": "Complete with the modal verb for requests"
   },
   {
     "sentence": "My ______ is John.",
     "correct": "name",
-    "explanation": "We use <name> to identify ourselves",
+    "explanation": "Usamos <name> para identificarnos",
     "tip": "Complete with the word for identification"
   },
   {
     "sentence": "I am 25 ______ old.",
     "correct": "years",
-    "explanation": "We say <years old> to express age",
+    "explanation": "Decimos <years old> para expresar la edad",
     "tip": "Complete with the word for age"
   },
   {
     "sentence": "The cat is ______ the table.",
     "correct": "on",
-    "explanation": "<On> shows position on top of something",
+    "explanation": "<On> indica posición sobre algo",
     "tip": "Complete with the correct preposition"
   },
   {
     "sentence": "The book is ______ the bag.",
     "correct": "in",
-    "explanation": "<In> shows position inside something",
+    "explanation": "<In> indica posición dentro de algo",
     "tip": "Complete with the correct preposition"
   },
   {
     "sentence": "I go to work ______ car.",
     "correct": "by",
-    "explanation": "<By> shows the method of transportation",
+    "explanation": "<By> indica el medio de transporte",
     "tip": "Complete with the correct preposition"
   },
   {
     "sentence": "She lives ______ London.",
     "correct": "in",
-    "explanation": "<In> is used with cities and countries",
+    "explanation": "<In> se usa con ciudades y países",
     "tip": "Complete with the correct preposition"
   },
   {
     "sentence": "The meeting is ______ 3 o'clock.",
     "correct": "at",
-    "explanation": "<At> is used with specific times",
+    "explanation": "<At> se usa con horas específicas",
     "tip": "Complete with the correct preposition"
   },
   {
     "sentence": "I wake up ______ the morning.",
     "correct": "in",
-    "explanation": "<In> is used with parts of the day",
+    "explanation": "<In> se usa con partes del día",
     "tip": "Complete with the correct preposition"
   },
   {
     "sentence": "This is ______ apple.",
     "correct": "an",
-    "explanation": "Use <an> before vowel sounds",
+    "explanation": "Usa <an> antes de sonidos vocálicos",
     "tip": "Complete with the correct article"
   },
   {
     "sentence": "That is ______ dog.",
     "correct": "a",
-    "explanation": "Use <a> before consonant sounds",
+    "explanation": "Usa <a> antes de sonidos consonánticos",
     "tip": "Complete with the correct article"
   },
   {
     "sentence": "______ sun is bright today.",
     "correct": "The",
-    "explanation": "Use <the> for unique things",
+    "explanation": "Usa <the> para cosas únicas",
     "tip": "Complete with the correct article"
   },
   {
     "sentence": "I like ______ music.",
     "correct": "listening to",
-    "explanation": "We <listen to> music",
+    "explanation": "Usamos <listen to> para la música",
     "tip": "Complete with the correct verb phrase"
   },
   {
     "sentence": "She ______ TV every evening.",
     "correct": "watches",
-    "explanation": "We <watch> TV, and add <s> with she",
+    "explanation": "Usamos <watch> para la TV, y añadimos <s> con she",
     "tip": "Complete with the correct verb form"
   },
   {
     "sentence": "Good ______, how are you?",
     "correct": "morning",
-    "explanation": "<Good morning> is a common greeting",
+    "explanation": "<Good morning> es un saludo común",
     "tip": "Complete with the time of day"
   }
 ]

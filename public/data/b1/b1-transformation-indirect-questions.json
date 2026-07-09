@@ -5,7 +5,7 @@
     "correct": [
       "Do you know where the nearest bank is?"
     ],
-    "explanation": "Indirect questions use statement word order: <where the bank is> (not <where is the bank>)."
+    "explanation": "Las preguntas indirectas usan el orden de una afirmación: <where the bank is> (no <where is the bank>)."
   },
   {
     "prompt": "Change to an indirect question with <Could you tell me>",
@@ -13,7 +13,7 @@
     "correct": [
       "Could you tell me what time the train leaves?"
     ],
-    "explanation": "Indirect question: no auxiliary inversion. <What time the train leaves> (not <does the train leave>)."
+    "explanation": "Pregunta indirecta: sin inversión del auxiliar. <What time the train leaves> (no <does the train leave>)."
   },
   {
     "prompt": "Change to an indirect question with <I'd like to know>",
@@ -22,7 +22,7 @@
       "I'd like to know how much this shirt costs.",
       "I would like to know how much this shirt costs."
     ],
-    "explanation": "Indirect question with statement order: <how much this shirt costs>."
+    "explanation": "Pregunta indirecta con orden de afirmación: <how much this shirt costs>."
   },
   {
     "prompt": "Change to an indirect yes/no question with <Do you know>",
@@ -32,7 +32,7 @@
       "Do you know whether the museum is open on Sundays?"
     ],
     "hint": "Use <if> or <whether> for yes/no questions",
-    "explanation": "Indirect yes/no questions use <if/whether> + statement word order."
+    "explanation": "Las preguntas indirectas de sí/no usan <if/whether> + orden de afirmación."
   },
   {
     "prompt": "Change to a direct question",
@@ -40,7 +40,7 @@
     "correct": [
       "Where does she live?"
     ],
-    "explanation": "Direct question: use auxiliary inversion. <Where does she live?>"
+    "explanation": "Pregunta directa: se usa inversión del auxiliar. <Where does she live?>"
   },
   {
     "prompt": "Change to an indirect question with <Can you tell me>",
@@ -49,7 +49,7 @@
       "Can you tell me who wrote this book?"
     ],
     "hint": "When <who> is the subject, word order doesn't change",
-    "explanation": "When the question word is the subject, the word order is the same in direct and indirect."
+    "explanation": "Cuando la palabra interrogativa es el sujeto, el orden es el mismo en la forma directa e indirecta."
   },
   {
     "prompt": "Change to a direct question",
@@ -57,7 +57,7 @@
     "correct": [
       "How can I get to the station?"
     ],
-    "explanation": "Direct question uses inverted auxiliary order: <How can I get...?>"
+    "explanation": "La pregunta directa usa el orden invertido del auxiliar: <How can I get...?>"
   },
   {
     "prompt": "Change to an indirect question with <I was wondering>",
@@ -66,7 +66,7 @@
       "I was wondering why she left early."
     ],
     "hint": "No <did> in indirect questions — use past simple directly",
-    "explanation": "Indirect question: remove <did> and change the verb to past simple."
+    "explanation": "Pregunta indirecta: se elimina <did> y el verbo cambia a pasado simple."
   },
   {
     "prompt": "Change to an indirect question with <Do you happen to know>",
@@ -74,7 +74,7 @@
     "correct": [
       "Do you happen to know when the next bus arrives?"
     ],
-    "explanation": "<Do you happen to know> is a polite way to ask. Use statement order after it."
+    "explanation": "<Do you happen to know> es una forma educada de preguntar. Se usa orden de afirmación después."
   },
   {
     "prompt": "Change to a direct question",
@@ -82,7 +82,7 @@
     "correct": [
       "Do they have vegetarian options?"
     ],
-    "explanation": "Direct yes/no question: auxiliary + subject. <Do they have...?>"
+    "explanation": "Pregunta directa de sí/no: auxiliar + sujeto. <Do they have...?>"
   },
   {
     "prompt": "Change to an indirect question with <I'm not sure>",
@@ -90,7 +90,7 @@
     "correct": [
       "I'm not sure what her phone number is."
     ],
-    "explanation": "Indirect statement with embedded question: <what her phone number is>."
+    "explanation": "Afirmación indirecta con pregunta incrustada: <what her phone number is>."
   },
   {
     "prompt": "Change to an indirect question with <Would you mind telling me>",
@@ -98,7 +98,7 @@
     "correct": [
       "Would you mind telling me where you bought that jacket?"
     ],
-    "explanation": "Indirect: remove <did>, use past simple directly. Very polite register."
+    "explanation": "Indirecta: se elimina <did>, se usa el pasado simple directamente. Registro muy educado."
   },
   {
     "prompt": "Change to a direct question",
@@ -106,7 +106,7 @@
     "correct": [
       "Does she speak French?"
     ],
-    "explanation": "Direct yes/no: auxiliary + subject + base verb. <Does she speak...?>"
+    "explanation": "Directa de sí/no: auxiliar + sujeto + verbo base. <Does she speak...?>"
   },
   {
     "prompt": "Change to an indirect question with <I have no idea>",
@@ -114,7 +114,7 @@
     "correct": [
       "I have no idea how long he has been waiting."
     ],
-    "explanation": "Indirect: <how long he has been waiting> (no inversion of <has>)."
+    "explanation": "Indirecta: <how long he has been waiting> (sin inversión de <has>)."
   },
   {
     "prompt": "Change to an indirect question with <Could you explain>",
@@ -122,7 +122,7 @@
     "correct": [
       "Could you explain why this word is underlined?"
     ],
-    "explanation": "Indirect: <why this word is underlined> (statement order)."
+    "explanation": "Indirecta: <why this word is underlined> (orden de afirmación)."
   },
   {
     "prompt": "Change to a direct question",
@@ -131,7 +131,7 @@
       "Could you help me?",
       "Can you help me?"
     ],
-    "explanation": "Direct request: modal + subject + base verb."
+    "explanation": "Petición directa: modal + sujeto + verbo base."
   },
   {
     "prompt": "Change to an indirect question with <I don't remember>",
@@ -139,7 +139,7 @@
     "correct": [
       "I don't remember what he said."
     ],
-    "explanation": "Indirect: remove <did>, use past simple. <What he said>."
+    "explanation": "Indirecta: se elimina <did>, se usa el pasado simple. <What he said>."
   },
   {
     "prompt": "Change to an indirect question with <Do you know>",
@@ -148,7 +148,7 @@
       "Do you know if the meeting has been cancelled?",
       "Do you know whether the meeting has been cancelled?"
     ],
-    "explanation": "Indirect yes/no: <if/whether> + subject + auxiliary. <If the meeting has been...>"
+    "explanation": "Indirecta de sí/no: <if/whether> + sujeto + auxiliar. <If the meeting has been...>"
   },
   {
     "prompt": "Change to an indirect question with <I wonder>",
@@ -157,7 +157,7 @@
       "I wonder what will happen next."
     ],
     "hint": "When <what> is the subject, order stays the same",
-    "explanation": "When the question word is the subject, word order doesn't change in indirect form."
+    "explanation": "Cuando la palabra interrogativa es el sujeto, el orden no cambia en la forma indirecta."
   },
   {
     "prompt": "Change to a direct question",
@@ -165,7 +165,7 @@
     "correct": [
       "How much does this cost?"
     ],
-    "explanation": "Direct: <How much does this cost?> with auxiliary inversion."
+    "explanation": "Directa: <How much does this cost?> con inversión del auxiliar."
   },
   {
     "prompt": "Change to an indirect question with <I'd like to find out>",
@@ -173,7 +173,7 @@
     "correct": [
       "I'd like to find out where I can park my car."
     ],
-    "explanation": "Indirect: <where I can park> (subject before modal)."
+    "explanation": "Indirecta: <where I can park> (sujeto antes del modal)."
   },
   {
     "prompt": "Change to a direct question",
@@ -181,7 +181,7 @@
     "correct": [
       "What time does it start?"
     ],
-    "explanation": "Direct: <What time does it start?> with <does> + base form."
+    "explanation": "Directa: <What time does it start?> con <does> + forma base."
   },
   {
     "prompt": "Change to an indirect question with <I'm curious>",
@@ -190,7 +190,7 @@
       "I'm curious how often you exercise.",
       "I'm curious about how often you exercise."
     ],
-    "explanation": "Indirect: <how often you exercise> (remove <do>, keep base form)."
+    "explanation": "Indirecta: <how often you exercise> (se elimina <do>, se mantiene la forma base)."
   },
   {
     "prompt": "Change to an indirect question with <Nobody knows>",
@@ -198,7 +198,7 @@
     "correct": [
       "Nobody knows where the money went."
     ],
-    "explanation": "Indirect: remove <did>, use past simple. <Where the money went>."
+    "explanation": "Indirecta: se elimina <did>, se usa el pasado simple. <Where the money went>."
   },
   {
     "prompt": "Change to a direct question",
@@ -206,6 +206,6 @@
     "correct": [
       "Was he there?"
     ],
-    "explanation": "Direct yes/no: auxiliary + subject. <Was he there?>"
+    "explanation": "Directa de sí/no: auxiliar + sujeto. <Was he there?>"
   }
 ]

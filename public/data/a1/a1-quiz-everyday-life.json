@@ -2,123 +2,123 @@
   {
     "question": "What is your <mother's mother> called?",
     "options": [
+      "grandmother",
       "cousin as recognized by most authorities",
       "aunt",
-      "grandmother",
       "sister"
     ],
     "correct": "grandmother",
-    "explanation": "Your mother's mother is your <grandmother>."
+    "explanation": "La madre de tu madre es tu <grandmother> (abuela)."
   },
   {
     "question": "Which body part do you use to <smell>?",
     "options": [
       "eye",
+      "nose",
       "ear",
-      "mouth",
-      "nose"
+      "mouth"
     ],
     "correct": "nose",
-    "explanation": "The <nose> is used for smelling."
+    "explanation": "La <nose> (nariz) se usa para oler."
   },
   {
     "question": "What do you wear on your <feet>?",
     "options": [
-      "shoes",
       "gloves",
       "scarf",
+      "shoes",
       "hat"
     ],
     "correct": "shoes",
-    "explanation": "<Shoes> are worn on the feet."
+    "explanation": "Los <shoes> (zapatos) se usan en los pies."
   },
   {
     "question": "Which weather word means <water falling from the sky>?",
     "options": [
-      "rain",
       "cloudy",
       "windy",
-      "sunny"
+      "sunny",
+      "rain"
     ],
     "correct": "rain",
-    "explanation": "<Rain> is water falling from the sky."
+    "explanation": "La <rain> (lluvia) es agua que cae del cielo."
   },
   {
     "question": "What room do you <sleep> in?",
     "options": [
+      "bedroom",
       "living room",
       "kitchen",
-      "bathroom",
-      "bedroom"
+      "bathroom"
     ],
     "correct": "bedroom",
-    "explanation": "The <bedroom> is where you sleep."
+    "explanation": "El <bedroom> (dormitorio) es donde duermes."
   },
   {
     "question": "Which is a <school subject>?",
     "options": [
       "pencil",
-      "desk",
       "math",
+      "desk",
       "teacher"
     ],
     "correct": "math",
-    "explanation": "<Math> is a school subject."
+    "explanation": "<Math> (matemáticas) es una materia escolar."
   },
   {
     "question": "What is your <father's brother> called?",
     "options": [
       "cousin",
-      "uncle",
       "nephew",
+      "uncle",
       "grandfather"
     ],
     "correct": "uncle",
-    "explanation": "Your father's brother is your <uncle>."
+    "explanation": "El hermano de tu padre es tu <uncle> (tío)."
   },
   {
     "question": "Which body part do you use to <think>?",
     "options": [
       "lungs",
       "heart",
-      "brain",
-      "stomach"
+      "stomach",
+      "brain"
     ],
     "correct": "brain",
-    "explanation": "The <brain> is used for thinking."
+    "explanation": "El <brain> (cerebro) se usa para pensar."
   },
   {
     "question": "What do you wear when it's <cold>?",
     "options": [
+      "jacket",
       "shorts",
       "swimsuit",
-      "jacket",
       "sandals"
     ],
     "correct": "jacket",
-    "explanation": "A <jacket> keeps you warm when it's cold."
+    "explanation": "Una <jacket> (chaqueta) te mantiene abrigado cuando hace frío."
   },
   {
     "question": "Which weather word means <no clouds>?",
     "options": [
-      "sunny",
       "rainy",
+      "sunny",
       "foggy",
       "stormy"
     ],
     "correct": "sunny",
-    "explanation": "<Sunny> means there are no clouds and the sun is shining."
+    "explanation": "<Sunny> (soleado) significa que no hay nubes y brilla el sol."
   },
   {
     "question": "What room do you <cook> in?",
     "options": [
-      "kitchen",
       "bathroom",
       "garage",
+      "kitchen",
       "bedroom"
     ],
     "correct": "kitchen",
-    "explanation": "The <kitchen> is where you cook food."
+    "explanation": "La <kitchen> (cocina) es donde cocinas la comida."
   },
   {
     "question": "Which is used in a <classroom>?",
@@ -129,40 +129,40 @@
       "blackboard"
     ],
     "correct": "blackboard",
-    "explanation": "A <blackboard> is used in a classroom for teaching."
+    "explanation": "Un <blackboard> (pizarra) se usa en un aula para enseñar."
   },
   {
     "question": "What is your <brother's son> called?",
     "options": [
+      "nephew",
       "cousin",
       "son",
-      "uncle",
-      "nephew"
+      "uncle"
     ],
     "correct": "nephew",
-    "explanation": "Your brother's son is your <nephew>."
+    "explanation": "El hijo de tu hermano es tu <nephew> (sobrino)."
   },
   {
     "question": "Which body part connects your <head to your body>?",
     "options": [
-      "neck",
       "leg",
+      "neck",
       "arm",
       "finger"
     ],
     "correct": "neck",
-    "explanation": "The <neck> connects your head to your body."
+    "explanation": "El <neck> (cuello) conecta tu cabeza con tu cuerpo."
   },
   {
     "question": "What do you wear on your <head>?",
     "options": [
       "shoes",
       "gloves",
-      "belt",
-      "hat"
+      "hat",
+      "belt"
     ],
     "correct": "hat",
-    "explanation": "A <hat> is worn on the head."
+    "explanation": "Un <hat> (sombrero) se lleva en la cabeza."
   },
   {
     "question": "Which weather word means <very cold with ice>?",
@@ -173,18 +173,18 @@
       "freezing"
     ],
     "correct": "freezing",
-    "explanation": "<Freezing> means extremely cold, often with ice."
+    "explanation": "<Freezing> significa extremadamente frío, a menudo con hielo."
   },
   {
     "question": "What room do you <wash> in?",
     "options": [
+      "bathroom",
       "living room",
       "dining room",
-      "bathroom",
       "bedroom"
     ],
     "correct": "bathroom",
-    "explanation": "The <bathroom> is where you wash yourself."
+    "explanation": "El <bathroom> (baño) es donde te aseas."
   },
   {
     "question": "Which do you use to <write on paper>?",
@@ -195,28 +195,28 @@
       "ruler"
     ],
     "correct": "pencil",
-    "explanation": "A <pencil> is used to write on paper."
+    "explanation": "Un <pencil> (lápiz) se usa para escribir en papel."
   },
   {
     "question": "What is your <sister's daughter> called?",
     "options": [
       "cousin",
       "aunt",
-      "daughter",
-      "niece"
+      "niece",
+      "daughter"
     ],
     "correct": "niece",
-    "explanation": "Your sister's daughter is your <niece>."
+    "explanation": "La hija de tu hermana es tu <niece> (sobrina)."
   },
   {
     "question": "Which body part do you use to <walk>?",
     "options": [
       "shoulders",
       "hands",
-      "legs",
-      "arms"
+      "arms",
+      "legs"
     ],
     "correct": "legs",
-    "explanation": "<Legs> are used for walking."
+    "explanation": "Las <legs> (piernas) se usan para caminar."
   }
 ]

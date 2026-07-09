@@ -1,92 +1,222 @@
 [
   {
     "question": "You're coming tonight, ___?",
-    "options": ["aren't you", "isn't it", "don't you", "won't you"],
+    "options": [
+      "aren't you",
+      "isn't it",
+      "don't you",
+      "won't you"
+    ],
     "correct": 0,
-    "explanation": "Positive 'are' → negative tag 'aren't you'. Match the auxiliary + reverse polarity."
+    "explanation": "Forma positiva 'are' → coletilla negativa 'aren't you'. Se usa el mismo auxiliar invirtiendo la polaridad."
   },
   {
     "question": "She can drive, ___?",
-    "options": ["can she", "can't she", "doesn't she", "isn't she"],
+    "options": [
+      "can she",
+      "can't she",
+      "doesn't she",
+      "isn't she"
+    ],
     "correct": 1,
-    "explanation": "Positive modal 'can' → negative tag 'can't she'."
+    "explanation": "Modal positivo 'can' → coletilla negativa 'can't she'."
   },
   {
     "question": "Nobody knows the answer, ___?",
-    "options": ["don't they", "do they", "doesn't nobody", "does he"],
-    "correct": 1,
-    "explanation": "'Nobody' = negative meaning → positive tag. Use 'they' for indefinite subjects."
+    "options": [
+      "don't they",
+      "doesn't nobody",
+      "do they",
+      "does he"
+    ],
+    "correct": 2,
+    "explanation": "'Nobody' tiene significado negativo → coletilla positiva. Se usa 'they' para sujetos indefinidos."
   },
   {
     "question": "Let's have lunch, ___?",
-    "options": ["don't we", "shall we", "will we", "can we"],
-    "correct": 1,
-    "explanation": "Special rule: 'Let's' always takes 'shall we' as the question tag."
+    "options": [
+      "don't we",
+      "will we",
+      "can we",
+      "shall we"
+    ],
+    "correct": 3,
+    "explanation": "Regla especial: 'Let's' siempre lleva 'shall we' como coletilla."
   },
   {
     "question": "I'm right, ___?",
-    "options": ["am I", "aren't I", "amn't I", "don't I"],
-    "correct": 1,
-    "explanation": "Special case: 'I am' → 'aren't I' (irregular but standard in English)."
+    "options": [
+      "aren't I",
+      "am I",
+      "amn't I",
+      "don't I"
+    ],
+    "correct": 0,
+    "explanation": "Caso especial: 'I am' → 'aren't I' (irregular pero estándar en inglés)."
   },
   {
     "question": "They had never been there, ___?",
-    "options": ["hadn't they", "had they", "didn't they", "have they"],
+    "options": [
+      "hadn't they",
+      "had they",
+      "didn't they",
+      "have they"
+    ],
     "correct": 1,
-    "explanation": "'Never' makes it negative → positive tag. Auxiliary 'had' → 'had they'."
+    "explanation": "'Never' hace que la oración sea negativa → coletilla positiva. Auxiliar 'had' → 'had they'."
   },
   {
     "question": "He won't mind, ___?",
-    "options": ["won't he", "will he", "does he", "would he"],
-    "correct": 1,
-    "explanation": "Negative 'won't' → positive tag 'will he'."
+    "options": [
+      "won't he",
+      "does he",
+      "will he",
+      "would he"
+    ],
+    "correct": 2,
+    "explanation": "Forma negativa 'won't' → coletilla positiva 'will he'."
   },
   {
     "question": "There isn't much time, ___?",
-    "options": ["isn't there", "is there", "is it", "isn't it"],
-    "correct": 1,
-    "explanation": "Negative 'isn't' → positive tag. 'There' is the subject: 'is there'."
+    "options": [
+      "isn't there",
+      "is it",
+      "isn't it",
+      "is there"
+    ],
+    "correct": 3,
+    "explanation": "Forma negativa 'isn't' → coletilla positiva. 'There' es el sujeto: 'is there'."
   },
   {
     "question": "You'd rather stay, ___?",
-    "options": ["hadn't you", "wouldn't you", "didn't you", "would you"],
-    "correct": 1,
+    "options": [
+      "wouldn't you",
+      "hadn't you",
+      "didn't you",
+      "would you"
+    ],
+    "correct": 0,
     "explanation": "'You'd rather' = 'You would rather' → 'wouldn't you'."
   },
   {
     "question": "She rarely visits, ___?",
-    "options": ["doesn't she", "does she", "is she", "has she"],
+    "options": [
+      "doesn't she",
+      "does she",
+      "is she",
+      "has she"
+    ],
     "correct": 1,
-    "explanation": "'Rarely' = negative adverb → positive tag. Present simple → 'does she'."
+    "explanation": "'Rarely' es un adverbio negativo → coletilla positiva. Presente simple → 'does she'."
   },
   {
     "question": "We ought to help, ___?",
-    "options": ["oughtn't we", "shouldn't we", "don't we", "mustn't we"],
-    "correct": 1,
-    "explanation": "'Ought to' → tag is 'shouldn't we' (more common than 'oughtn't we')."
+    "options": [
+      "oughtn't we",
+      "don't we",
+      "shouldn't we",
+      "mustn't we"
+    ],
+    "correct": 2,
+    "explanation": "'Ought to' → la coletilla es 'shouldn't we' (más común que 'oughtn't we')."
   },
   {
     "question": "Everyone enjoyed the party, ___?",
-    "options": ["didn't they", "didn't everyone", "don't they", "haven't they"],
-    "correct": 0,
-    "explanation": "'Everyone' uses 'they' as pronoun in tags. Past simple → 'didn't they'."
+    "options": [
+      "didn't everyone",
+      "don't they",
+      "haven't they",
+      "didn't they"
+    ],
+    "correct": 3,
+    "explanation": "'Everyone' usa 'they' como pronombre en las coletillas. Pasado simple → 'didn't they'."
   },
   {
     "question": "You used to live here, ___?",
-    "options": ["usedn't you", "didn't you", "don't you", "wouldn't you"],
-    "correct": 1,
-    "explanation": "'Used to' → tag with 'didn't you' (standard modern English)."
+    "options": [
+      "didn't you",
+      "usedn't you",
+      "don't you",
+      "wouldn't you"
+    ],
+    "correct": 0,
+    "explanation": "'Used to' → la coletilla es 'didn't you' (inglés moderno estándar)."
   },
   {
     "question": "Nothing happened, ___?",
-    "options": ["didn't it", "did it", "didn't they", "did nothing"],
+    "options": [
+      "didn't it",
+      "did it",
+      "didn't they",
+      "did nothing"
+    ],
     "correct": 1,
-    "explanation": "'Nothing' = negative → positive tag. Use 'it' for 'nothing': 'did it'."
+    "explanation": "'Nothing' es negativo → coletilla positiva. Se usa 'it' para 'nothing': 'did it'."
   },
   {
     "question": "She'd been waiting long, ___?",
-    "options": ["had she", "hadn't she", "hasn't she", "wouldn't she"],
+    "options": [
+      "had she",
+      "hasn't she",
+      "hadn't she",
+      "wouldn't she"
+    ],
+    "correct": 2,
+    "explanation": "'She'd been' = pasado perfecto continuo. Positivo → coletilla negativa: 'hadn't she'."
+  },
+  {
+    "question": "You haven't finished, ___?",
+    "options": [
+      "haven't you",
+      "have you",
+      "don't you",
+      "didn't you"
+    ],
     "correct": 1,
-    "explanation": "'She'd been' = past perfect continuous. Positive → negative tag: 'hadn't she'."
+    "explanation": "Forma negativa 'haven't' → coletilla positiva 'have you'."
+  },
+  {
+    "question": "He's your brother, ___?",
+    "options": [
+      "is he",
+      "isn't he",
+      "doesn't he",
+      "hasn't he"
+    ],
+    "correct": 1,
+    "explanation": "Forma positiva 'is' → coletilla negativa 'isn't he'."
+  },
+  {
+    "question": "I have to leave now, ___?",
+    "options": [
+      "haven't I",
+      "don't I",
+      "mustn't I",
+      "shouldn't I"
+    ],
+    "correct": 1,
+    "explanation": "'Have to' se comporta como verbo léxico → coletilla con 'do': 'don't I'."
+  },
+  {
+    "question": "Few people came to the meeting, ___?",
+    "options": [
+      "did they",
+      "didn't they",
+      "don't they",
+      "weren't they"
+    ],
+    "correct": 0,
+    "explanation": "'Few' tiene sentido negativo → coletilla positiva: 'did they'."
+  },
+  {
+    "question": "This isn't your coat, ___?",
+    "options": [
+      "isn't it",
+      "is this",
+      "is it",
+      "isn't this"
+    ],
+    "correct": 2,
+    "explanation": "Forma negativa 'isn't' → coletilla positiva. Se usa 'it' para 'this': 'is it'."
   }
 ]

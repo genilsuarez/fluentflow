@@ -8,29 +8,29 @@
       "quitting"
     ],
     "correct": "persistence in doing something",
-    "explanation": "<Perseverance> means continued effort to do or achieve something despite difficulties."
+    "explanation": "<Perseverance> significa esforzarse continuamente para hacer o lograr algo a pesar de las dificultades."
   },
   {
     "question": "What is a <setback>?",
     "options": [
       "an achievement",
-      "a success",
       "a difficulty that delays progress",
+      "a success",
       "a reward"
     ],
     "correct": "a difficulty that delays progress",
-    "explanation": "A <setback> is a reversal or check in progress."
+    "explanation": "Un <setback> es un revés o contratiempo en el progreso."
   },
   {
     "question": "What does <triumph> mean?",
     "options": [
-      "great victory or achievement",
       "failure",
       "attempt",
+      "great victory or achievement",
       "struggle"
     ],
     "correct": "great victory or achievement",
-    "explanation": "Triumph means a <great victory or achievement>."
+    "explanation": "Triumph significa <great victory or achievement> (una gran victoria o logro)."
   },
   {
     "question": "What is <resilience>?",
@@ -41,62 +41,62 @@
       "ability to recover from difficulties"
     ],
     "correct": "ability to recover from difficulties",
-    "explanation": "<Resilience> is the capacity to recover quickly from difficulties; toughness."
+    "explanation": "<Resilience> es la capacidad de recuperarse rápidamente de las dificultades; entereza."
   },
   {
     "question": "What does <accomplish> mean?",
     "options": [
-      "fail",
       "achieve or complete successfully",
+      "fail",
       "try",
       "abandon"
     ],
     "correct": "achieve or complete successfully",
-    "explanation": "<Accomplish> means to achieve or complete something successfully."
+    "explanation": "<Accomplish> significa lograr o completar algo con éxito."
   },
   {
     "question": "What is a <breakthrough>?",
     "options": [
       "a failure",
+      "a sudden important development",
       "a delay",
-      "a mistake",
-      "a sudden important development"
+      "a mistake"
     ],
     "correct": "a sudden important development",
-    "explanation": "A <breakthrough> is a sudden, dramatic, and important discovery or development."
+    "explanation": "Un <breakthrough> es un descubrimiento o avance repentino, notable e importante."
   },
   {
     "question": "What does <determination> mean?",
     "options": [
       "doubt",
       "uncertainty",
-      "hesitation",
-      "firmness of purpose"
+      "firmness of purpose",
+      "hesitation"
     ],
     "correct": "firmness of purpose",
-    "explanation": "Determination is <firmness of purpose>; resoluteness."
+    "explanation": "Determination es <firmness of purpose> (firmeza de propósito); resolución."
   },
   {
     "question": "What is <adversity>?",
     "options": [
       "success",
-      "difficulties or misfortune",
       "good fortune",
-      "happiness"
+      "happiness",
+      "difficulties or misfortune"
     ],
     "correct": "difficulties or misfortune",
-    "explanation": "Adversity means <difficulties or misfortune>."
+    "explanation": "Adversity significa <difficulties or misfortune> (dificultades o infortunio)."
   },
   {
     "question": "What does <strive> mean?",
     "options": [
-      "give up",
       "make great efforts to achieve",
+      "give up",
       "relax",
       "avoid"
     ],
     "correct": "make great efforts to achieve",
-    "explanation": "Strive means to <make great efforts to achieve> or obtain something."
+    "explanation": "Strive significa <make great efforts to achieve> (hacer grandes esfuerzos para lograr) u obtener algo."
   },
   {
     "question": "What is an <obstacle>?",
@@ -107,7 +107,7 @@
       "support"
     ],
     "correct": "something that blocks progress",
-    "explanation": "An <obstacle> is something that blocks one's way or prevents progress."
+    "explanation": "Un <obstacle> es algo que bloquea el camino o impide el progreso."
   },
   {
     "question": "What does <flourish> mean?",
@@ -118,29 +118,29 @@
       "struggle"
     ],
     "correct": "grow or develop successfully",
-    "explanation": "<Flourish> means to grow or develop in a healthy or vigorous way."
+    "explanation": "<Flourish> significa crecer o desarrollarse de forma saludable y vigorosa."
   },
   {
     "question": "What is a <downfall>?",
     "options": [
       "victory",
-      "loss of power or prosperity",
       "achievement",
-      "success"
+      "success",
+      "loss of power or prosperity"
     ],
     "correct": "loss of power or prosperity",
-    "explanation": "<Downfall> is a loss of power, prosperity, or status."
+    "explanation": "<Downfall> es la pérdida de poder, prosperidad o estatus."
   },
   {
     "question": "What does <ambitious> mean?",
     "options": [
-      "content",
       "having strong desire for success",
+      "content",
       "unmotivated",
       "lazy"
     ],
     "correct": "having strong desire for success",
-    "explanation": "<Ambitious> means having or showing a strong desire and determination to succeed."
+    "explanation": "<Ambitious> significa tener o mostrar un fuerte deseo y determinación de triunfar."
   },
   {
     "question": "What is a <fiasco>?",
@@ -151,7 +151,7 @@
       "triumph"
     ],
     "correct": "complete failure",
-    "explanation": "A fiasco is a thing that is a <complete failure>, especially in a ludicrous way."
+    "explanation": "Un fiasco es algo que representa un <complete failure> (fracaso total), a menudo de forma ridícula."
   },
   {
     "question": "What does <excel> mean?",
@@ -162,40 +162,40 @@
       "struggle"
     ],
     "correct": "be exceptionally good at something",
-    "explanation": "<Excel> means to be exceptionally good at or proficient in an activity or subject."
+    "explanation": "<Excel> significa ser excepcionalmente bueno o competente en una actividad o materia."
   },
   {
     "question": "What is <defeat>?",
     "options": [
-      "instance of being beaten",
       "success",
       "achievement",
-      "victory"
+      "victory",
+      "instance of being beaten"
     ],
     "correct": "instance of being beaten",
-    "explanation": "<Defeat> is an instance of defeating or being defeated."
+    "explanation": "<Defeat> es una instancia de derrotar o ser derrotado."
   },
   {
     "question": "What does <aspire> mean?",
     "options": [
-      "avoid",
       "direct hope toward achieving something",
+      "avoid",
       "fear",
       "give up"
     ],
     "correct": "direct hope toward achieving something",
-    "explanation": "<Aspire> means to direct one's hopes or ambitions toward achieving something."
+    "explanation": "<Aspire> significa dirigir las esperanzas o ambiciones propias hacia el logro de algo."
   },
   {
     "question": "What is a <milestone>?",
     "options": [
-      "significant stage or event",
       "problem",
+      "significant stage or event",
       "mistake",
       "failure"
     ],
     "correct": "significant stage or event",
-    "explanation": "A milestone is a <significant stage or event> in development or progress."
+    "explanation": "Un milestone es un <significant stage or event> (etapa o evento significativo) en un desarrollo o progreso."
   },
   {
     "question": "What does <falter> mean?",
@@ -206,17 +206,17 @@
       "succeed"
     ],
     "correct": "lose strength or momentum",
-    "explanation": "Falter means to <lose strength or momentum>; to start to fail."
+    "explanation": "Falter significa <lose strength or momentum> (perder fuerza o impulso); empezar a fallar."
   },
   {
     "question": "What is <tenacity>?",
     "options": [
       "laziness",
       "weakness",
-      "quality of being determined",
-      "giving up"
+      "giving up",
+      "quality of being determined"
     ],
     "correct": "quality of being determined",
-    "explanation": "<Tenacity> is the quality or fact of being very determined; persistence."
+    "explanation": "<Tenacity> es la cualidad de ser muy decidido; persistencia."
   }
 ]

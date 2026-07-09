@@ -5,7 +5,7 @@
     "correct": [
       "She picked up the phone."
     ],
-    "explanation": "Past simple of <pick up>: <picked up>."
+    "explanation": "Pasado simple de <pick up>: <picked up>."
   },
   {
     "prompt": "Change to past simple",
@@ -13,7 +13,7 @@
     "correct": [
       "He turned on the light."
     ],
-    "explanation": "Past simple of <turn on>: <turned on>."
+    "explanation": "Pasado simple de <turn on>: <turned on>."
   },
   {
     "prompt": "Change to present continuous",
@@ -22,7 +22,7 @@
       "They are looking for their keys.",
       "They're looking for their keys."
     ],
-    "explanation": "Present continuous of <look for>: <are looking for>."
+    "explanation": "Presente continuo de <look for>: <are looking for>."
   },
   {
     "prompt": "Change to past simple",
@@ -30,7 +30,7 @@
     "correct": [
       "I gave up the game."
     ],
-    "explanation": "Past simple of <give up>: <gave up> (irregular verb)."
+    "explanation": "Pasado simple de <give up>: <gave up> (verbo irregular)."
   },
   {
     "prompt": "Change to present continuous",
@@ -39,7 +39,7 @@
       "She is putting on her coat.",
       "She's putting on her coat."
     ],
-    "explanation": "Present continuous of <put on>: <is putting on> (double the 't')."
+    "explanation": "Presente continuo de <put on>: <is putting on> (se duplica la 't')."
   },
   {
     "prompt": "Change to past simple",
@@ -47,7 +47,7 @@
     "correct": [
       "We took off our shoes."
     ],
-    "explanation": "Past simple of <take off>: <took off> (irregular verb)."
+    "explanation": "Pasado simple de <take off>: <took off> (verbo irregular)."
   },
   {
     "prompt": "Change to future with 'will'",
@@ -56,7 +56,7 @@
       "He will look after the children.",
       "He'll look after the children."
     ],
-    "explanation": "Future of <look after>: <will look after>."
+    "explanation": "Futuro de <look after>: <will look after>."
   },
   {
     "prompt": "Change to past simple",
@@ -64,7 +64,7 @@
     "correct": [
       "She woke up early."
     ],
-    "explanation": "Past simple of <wake up>: <woke up> (irregular verb)."
+    "explanation": "Pasado simple de <wake up>: <woke up> (verbo irregular)."
   },
   {
     "prompt": "Change to present continuous",
@@ -73,7 +73,7 @@
       "He is filling in the form.",
       "He's filling in the form."
     ],
-    "explanation": "Present continuous of <fill in>: <is filling in>."
+    "explanation": "Presente continuo de <fill in>: <is filling in>."
   },
   {
     "prompt": "Change to past simple",
@@ -81,7 +81,7 @@
     "correct": [
       "They found out the truth."
     ],
-    "explanation": "Past simple of <find out>: <found out> (irregular verb)."
+    "explanation": "Pasado simple de <find out>: <found out> (verbo irregular)."
   },
   {
     "prompt": "Change to future with 'going to'",
@@ -90,7 +90,7 @@
       "I am going to throw away the old newspapers.",
       "I'm going to throw away the old newspapers."
     ],
-    "explanation": "Future with <going to>: <am going to throw away>."
+    "explanation": "Futuro con <going to>: <am going to throw away>."
   },
   {
     "prompt": "Change to past simple",
@@ -98,7 +98,7 @@
     "correct": [
       "She came back home late."
     ],
-    "explanation": "Past simple of <come back>: <came back> (irregular verb)."
+    "explanation": "Pasado simple de <come back>: <came back> (verbo irregular)."
   },
   {
     "prompt": "Change to present continuous",
@@ -107,7 +107,7 @@
       "They are carrying on with the project.",
       "They're carrying on with the project."
     ],
-    "explanation": "Present continuous of <carry on>: <are carrying on>."
+    "explanation": "Presente continuo de <carry on>: <are carrying on>."
   },
   {
     "prompt": "Change to past simple",
@@ -115,7 +115,7 @@
     "correct": [
       "He broke down the door."
     ],
-    "explanation": "Past simple of <break down>: <broke down> (irregular verb)."
+    "explanation": "Pasado simple de <break down>: <broke down> (verbo irregular)."
   },
   {
     "prompt": "Change to negative past simple",
@@ -124,7 +124,7 @@
       "She didn't turn off the TV.",
       "She did not turn off the TV."
     ],
-    "explanation": "Negative past: <didn't> + base form of the phrasal verb."
+    "explanation": "Negativo en pasado: <didn't> + forma base del phrasal verb."
   },
   {
     "prompt": "Change to a question in past simple",
@@ -132,7 +132,7 @@
     "correct": [
       "Did he pick up the children?"
     ],
-    "explanation": "Question in past: <Did> + subject + base form of phrasal verb?"
+    "explanation": "Pregunta en pasado: <Did> + sujeto + forma base del phrasal verb?"
   },
   {
     "prompt": "Change to past simple",
@@ -140,7 +140,7 @@
     "correct": [
       "I ran into my old friend."
     ],
-    "explanation": "Past simple of <run into>: <ran into> (irregular verb)."
+    "explanation": "Pasado simple de <run into>: <ran into> (verbo irregular)."
   },
   {
     "prompt": "Change to present continuous",
@@ -149,7 +149,7 @@
       "She is cleaning up the kitchen.",
       "She's cleaning up the kitchen."
     ],
-    "explanation": "Present continuous of <clean up>: <is cleaning up>."
+    "explanation": "Presente continuo de <clean up>: <is cleaning up>."
   },
   {
     "prompt": "Change to past simple",
@@ -157,7 +157,7 @@
     "correct": [
       "They set up the tent."
     ],
-    "explanation": "<Set> is the same in present and past: <set up> → <set up>."
+    "explanation": "<Set> es igual en presente y pasado: <set up> → <set up>."
   },
   {
     "prompt": "Change to future with 'will'",
@@ -166,7 +166,7 @@
       "She will give back the book.",
       "She'll give back the book."
     ],
-    "explanation": "Future of <give back>: <will give back>."
+    "explanation": "Futuro de <give back>: <will give back>."
   },
   {
     "prompt": "Change to past simple",
@@ -174,7 +174,7 @@
     "correct": [
       "He got on the bus."
     ],
-    "explanation": "Past simple of <get on>: <got on> (irregular verb)."
+    "explanation": "Pasado simple de <get on>: <got on> (verbo irregular)."
   },
   {
     "prompt": "Change to present continuous",
@@ -183,7 +183,7 @@
       "I am looking up the word in the dictionary.",
       "I'm looking up the word in the dictionary."
     ],
-    "explanation": "Present continuous of <look up>: <am looking up>."
+    "explanation": "Presente continuo de <look up>: <am looking up>."
   },
   {
     "prompt": "Change to past simple",
@@ -191,7 +191,7 @@
     "correct": [
       "She went out with her friends."
     ],
-    "explanation": "Past simple of <go out>: <went out> (irregular verb)."
+    "explanation": "Pasado simple de <go out>: <went out> (verbo irregular)."
   },
   {
     "prompt": "Change to past simple",
@@ -199,7 +199,7 @@
     "correct": [
       "We sat down at the table."
     ],
-    "explanation": "Past simple of <sit down>: <sat down> (irregular verb)."
+    "explanation": "Pasado simple de <sit down>: <sat down> (verbo irregular)."
   },
   {
     "prompt": "Change to future with 'will'",
@@ -208,6 +208,6 @@
       "They will sort out the problem.",
       "They'll sort out the problem."
     ],
-    "explanation": "Future of <sort out>: <will sort out>."
+    "explanation": "Futuro de <sort out>: <will sort out>."
   }
 ]

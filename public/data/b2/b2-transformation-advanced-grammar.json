@@ -8,7 +8,7 @@
       "If I had studied, I'd not have failed the exam."
     ],
     "hint": "Use <If> + past perfect, <would have> + past participle",
-    "explanation": "Third conditional: <If> + past perfect + <would(n't) have> + past participle for unreal past situations."
+    "explanation": "Tercera condicional: <If> + pasado perfecto + <would(n't) have> + participio pasado, para situaciones irreales en el pasado."
   },
   {
     "prompt": "Rewrite using a cleft sentence with <It was>",
@@ -16,7 +16,7 @@
     "correct": [
       "It was John who broke the window."
     ],
-    "explanation": "Cleft sentences with <It was ... who/that> emphasize a specific element."
+    "explanation": "Las oraciones hendidas (cleft sentences) con <It was ... who/that> enfatizan un elemento específico."
   },
   {
     "prompt": "Change to passive with <have something done>",
@@ -25,7 +25,7 @@
       "I had my car repaired."
     ],
     "hint": "Use <had> + object + past participle",
-    "explanation": "Causative <have something done>: subject + <had> + object + past participle when someone else does the action."
+    "explanation": "Causativa <have something done>: sujeto + <had> + objeto + participio pasado cuando otra persona realiza la acción."
   },
   {
     "prompt": "Rewrite using <wish> + past perfect",
@@ -33,7 +33,7 @@
     "correct": [
       "I wish I had brought an umbrella."
     ],
-    "explanation": "<Wish> + past perfect expresses regret about a past action."
+    "explanation": "<Wish> + pasado perfecto expresa arrepentimiento por una acción pasada."
   },
   {
     "prompt": "Change to mixed conditional",
@@ -42,7 +42,7 @@
       "If I had learned to drive, I could drive you to the airport now."
     ],
     "hint": "Past condition → present result",
-    "explanation": "Mixed conditional: <If> + past perfect (past condition) + <would/could> + base verb (present result)."
+    "explanation": "Condicional mixta: <If> + pasado perfecto (condición pasada) + <would/could> + verbo base (resultado presente)."
   },
   {
     "prompt": "Rewrite using inversion with <Not only>",
@@ -53,7 +53,7 @@
       "Not only is she intelligent, but she's also hardworking."
     ],
     "hint": "Invert subject and verb after <Not only>",
-    "explanation": "<Not only> + inverted auxiliary + subject emphasizes both qualities."
+    "explanation": "<Not only> + auxiliar invertido + sujeto enfatiza ambas cualidades."
   },
   {
     "prompt": "Change to reported speech with reporting verb",
@@ -62,7 +62,7 @@
       "She warned me not to touch that.",
       "She told me not to touch that."
     ],
-    "explanation": "Reported commands/warnings: reporting verb + object + <(not) to> + base verb."
+    "explanation": "Órdenes/advertencias en estilo indirecto: verbo introductor + objeto + <(not) to> + verbo base."
   },
   {
     "prompt": "Rewrite using a participle clause",
@@ -71,7 +71,7 @@
       "Being tired, she went to bed early."
     ],
     "hint": "Replace <Because she was> with a present participle",
-    "explanation": "Participle clauses replace adverbial clauses: <Being> + adjective replaces <Because + subject + was>."
+    "explanation": "Las cláusulas de participio reemplazan a las cláusulas adverbiales: <Being> + adjetivo reemplaza a <Because + subject + was>."
   },
   {
     "prompt": "Change to formal register using <were to>",
@@ -80,7 +80,7 @@
       "Were the company to lose this contract, it would close.",
       "If the company were to lose this contract, it would close."
     ],
-    "explanation": "<Were to> + base verb is a formal way to express hypothetical conditions."
+    "explanation": "<Were to> + verbo base es una forma formal de expresar condiciones hipotéticas."
   },
   {
     "prompt": "Rewrite using <It's time> + past simple",
@@ -89,7 +89,7 @@
       "It's time you started looking for a job."
     ],
     "hint": "<It's time> + subject + past simple",
-    "explanation": "<It's time> + subject + past simple suggests something should happen now."
+    "explanation": "<It's time> + sujeto + pasado simple sugiere que algo debería suceder ahora."
   },
   {
     "prompt": "Change to mixed conditional (past → present)",
@@ -99,7 +99,7 @@
       "If she had taken the medicine, she wouldn't still feel ill."
     ],
     "hint": "Past condition → present result",
-    "explanation": "Mixed conditional: <If> + past perfect (past condition) + <would> + base verb (present result)."
+    "explanation": "Condicional mixta: <If> + pasado perfecto (condición pasada) + <would> + verbo base (resultado presente)."
   },
   {
     "prompt": "Change to advanced passive with <is believed to>",
@@ -109,7 +109,7 @@
       "It is believed that the treasure is hidden in the cave.",
       "It's believed that the treasure is hidden in the cave."
     ],
-    "explanation": "Impersonal passive: subject + <is believed to> + infinitive, or <It is believed that> + clause."
+    "explanation": "Pasiva impersonal: sujeto + <is believed to> + infinitivo, o <It is believed that> + cláusula."
   },
   {
     "prompt": "Rewrite as a cleft sentence with <What ... is>",
@@ -117,7 +117,7 @@
     "correct": [
       "What I need is more time."
     ],
-    "explanation": "<What> cleft sentences emphasize the focus element: <What> + subject + verb + <is> + complement."
+    "explanation": "Las oraciones hendidas con <What> enfatizan el elemento en foco: <What> + sujeto + verbo + <is> + complemento."
   },
   {
     "prompt": "Change to formal register using <should> inversion",
@@ -126,7 +126,7 @@
       "Should you need any help, please contact us."
     ],
     "hint": "Invert <should> and the subject",
-    "explanation": "Formal conditional: <Should> + subject + base verb replaces <If> + subject + present simple."
+    "explanation": "Condicional formal: <Should> + sujeto + verbo base reemplaza a <If> + sujeto + presente simple."
   },
   {
     "prompt": "Rewrite using a participle clause",
@@ -135,7 +135,7 @@
       "Having finished the report, he went home.",
       "After finishing the report, he went home."
     ],
-    "explanation": "Perfect participle clause: <Having> + past participle replaces <After> + subject + past simple."
+    "explanation": "Cláusula de participio perfecto: <Having> + participio pasado reemplaza a <After> + sujeto + pasado simple."
   },
   {
     "prompt": "Change to passive with <get>",
@@ -144,7 +144,7 @@
       "Our house got broken into last night."
     ],
     "hint": "Use <got> + past participle",
-    "explanation": "Informal passive with <get>: subject + <got> + past participle."
+    "explanation": "Pasiva informal con <get>: sujeto + <got> + participio pasado."
   },
   {
     "prompt": "Rewrite using inversion with <Rarely>",
@@ -152,7 +152,7 @@
     "correct": [
       "Rarely do you see such dedication."
     ],
-    "explanation": "<Rarely> + inverted auxiliary + subject for emphasis."
+    "explanation": "<Rarely> + auxiliar invertido + sujeto para dar énfasis."
   },
   {
     "prompt": "Change to third conditional",
@@ -162,7 +162,7 @@
       "If we had left early, we would not have gotten stuck in traffic.",
       "If we had left early, we wouldn't have gotten stuck in traffic."
     ],
-    "explanation": "Third conditional: <If> + past perfect + <would(n't) have> + past participle for unreal past."
+    "explanation": "Tercera condicional: <If> + pasado perfecto + <would(n't) have> + participio pasado, para situaciones irreales en el pasado."
   },
   {
     "prompt": "Rewrite as a cleft sentence with <It was ... that>",
@@ -170,7 +170,7 @@
     "correct": [
       "It was the weather that ruined our plans."
     ],
-    "explanation": "Cleft sentence: <It was> + focus element + <that> + rest of clause."
+    "explanation": "Oración hendida: <It was> + elemento en foco + <that> + resto de la cláusula."
   },
   {
     "prompt": "Change to formal register using <were to>",
@@ -179,7 +179,7 @@
       "Were the project to fail, we would lose funding.",
       "If the project were to fail, we would lose funding."
     ],
-    "explanation": "<Were to> + base verb is a formal way to express hypothetical conditions."
+    "explanation": "<Were to> + verbo base es una forma formal de expresar condiciones hipotéticas."
   },
   {
     "prompt": "Rewrite using <wish> + <would>",
@@ -189,7 +189,7 @@
       "I wish my neighbor wouldn't play loud music every night."
     ],
     "hint": "Use <wish> + <would> for complaints about others",
-    "explanation": "<Wish> + subject + <would> expresses annoyance about someone else's behavior."
+    "explanation": "<Wish> + sujeto + <would> expresa molestia por el comportamiento de otra persona."
   },
   {
     "prompt": "Change to passive with reporting verb",
@@ -199,7 +199,7 @@
       "It is reported that the economy is improving.",
       "It's reported that the economy is improving."
     ],
-    "explanation": "Passive reporting: subject + <is reported to> + infinitive, or <It is reported that> + clause."
+    "explanation": "Estilo indirecto en pasiva: sujeto + <is reported to> + infinitivo, o <It is reported that> + cláusula."
   },
   {
     "prompt": "Rewrite using <provided that>",
@@ -208,7 +208,7 @@
       "You can borrow my car provided that you drive carefully.",
       "You can borrow my car provided you drive carefully."
     ],
-    "explanation": "<Provided (that)> is a formal alternative to <if> expressing a condition."
+    "explanation": "<Provided (that)> es una alternativa formal a <if> para expresar una condición."
   },
   {
     "prompt": "Change to mixed conditional (present → past)",
@@ -217,7 +217,7 @@
       "If I were a doctor, I could have helped him yesterday."
     ],
     "hint": "Present condition → past result",
-    "explanation": "Mixed conditional: <If> + past simple (present condition) + <could have> + past participle (past result)."
+    "explanation": "Condicional mixta: <If> + pasado simple (condición presente) + <could have> + participio pasado (resultado pasado)."
   },
   {
     "prompt": "Rewrite using inversion with <No sooner>",
@@ -225,6 +225,6 @@
     "correct": [
       "No sooner had he arrived than it started to rain."
     ],
-    "explanation": "<No sooner> + past perfect inversion + <than> + past simple for sequential events."
+    "explanation": "<No sooner> + inversión con pasado perfecto + <than> + pasado simple para eventos secuenciales."
   }
 ]

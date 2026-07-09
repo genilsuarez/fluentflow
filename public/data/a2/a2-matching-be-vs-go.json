@@ -2,101 +2,101 @@
   {
     "left": "I am at home",
     "right": "Estoy en casa (ubicación)",
-    "explanation": "Use 'be' for location/state"
+    "explanation": "Se usa 'be' para indicar ubicación o estado."
   },
   {
     "left": "I go home",
     "right": "Voy a casa (movimiento)",
-    "explanation": "Use 'go' for movement/direction"
+    "explanation": "Se usa 'go' para indicar movimiento o dirección."
   },
   {
     "left": "She is in the office",
     "right": "Ella está en la oficina (ubicación)",
-    "explanation": "Use 'be' for current location"
+    "explanation": "Se usa 'be' para indicar la ubicación actual."
   },
   {
     "left": "She goes to the office",
     "right": "Ella va a la oficina (movimiento)",
-    "explanation": "Use 'go' for movement towards a place"
+    "explanation": "Se usa 'go' para indicar movimiento hacia un lugar."
   },
   {
     "left": "They are at school",
     "right": "Ellos están en la escuela (ubicación)",
-    "explanation": "Use 'be' to indicate presence"
+    "explanation": "Se usa 'be' para indicar presencia."
   },
   {
     "left": "They go to school",
     "right": "Ellos van a la escuela (movimiento)",
-    "explanation": "Use 'go' for regular movement/routine"
+    "explanation": "Se usa 'go' para movimiento o rutina habitual."
   },
   {
     "left": "We are happy",
     "right": "Estamos felices (estado)",
-    "explanation": "Use 'be' for emotional states"
+    "explanation": "Se usa 'be' para estados emocionales."
   },
   {
     "left": "We go shopping",
     "right": "Vamos de compras (actividad)",
-    "explanation": "Use 'go' for activities"
+    "explanation": "Se usa 'go' para actividades."
   },
   {
     "left": "He is tired",
     "right": "Él está cansado (estado)",
-    "explanation": "Use 'be' for physical/mental states"
+    "explanation": "Se usa 'be' para estados físicos o mentales."
   },
   {
     "left": "He goes running",
     "right": "Él va a correr (actividad)",
-    "explanation": "Use 'go' + -ing for sports/activities"
+    "explanation": "Se usa 'go' + -ing para deportes o actividades."
   },
   {
     "left": "I am a teacher",
     "right": "Soy profesor (identidad)",
-    "explanation": "Use 'be' for profession/identity"
+    "explanation": "Se usa 'be' para profesión o identidad."
   },
   {
     "left": "I go to work",
     "right": "Voy al trabajo (movimiento)",
-    "explanation": "Use 'go' for movement to workplace"
+    "explanation": "Se usa 'go' para el movimiento hacia el lugar de trabajo."
   },
   {
     "left": "The book is on the table",
     "right": "El libro está en la mesa (ubicación)",
-    "explanation": "Use 'be' for object location"
+    "explanation": "Se usa 'be' para la ubicación de un objeto."
   },
   {
     "left": "The bus goes to the station",
     "right": "El autobús va a la estación (movimiento)",
-    "explanation": "Use 'go' for vehicle movement"
+    "explanation": "Se usa 'go' para el movimiento de un vehículo."
   },
   {
     "left": "You are ready",
     "right": "Estás listo (estado)",
-    "explanation": "Use 'be' for readiness/state"
+    "explanation": "Se usa 'be' para indicar preparación o estado."
   },
   {
     "left": "You go first",
     "right": "Tú vas primero (acción)",
-    "explanation": "Use 'go' for taking action/turn"
+    "explanation": "Se usa 'go' para tomar acción o turno."
   },
   {
     "left": "It is cold today",
     "right": "Hace frío hoy (estado)",
-    "explanation": "Use 'be' for weather/temperature"
+    "explanation": "Se usa 'be' para el clima o la temperatura."
   },
   {
     "left": "Let's go outside",
     "right": "Vamos afuera (movimiento)",
-    "explanation": "Use 'go' for movement to a place"
+    "explanation": "Se usa 'go' para el movimiento hacia un lugar."
   },
   {
     "left": "The party is at 8pm",
     "right": "La fiesta es a las 8pm (tiempo)",
-    "explanation": "Use 'be' for time/schedule"
+    "explanation": "Se usa 'be' para tiempo u horario."
   },
   {
     "left": "I go swimming every day",
     "right": "Voy a nadar todos los días (actividad)",
-    "explanation": "Use 'go' + -ing for regular activities"
+    "explanation": "Se usa 'go' + -ing para actividades habituales."
   }
 ]

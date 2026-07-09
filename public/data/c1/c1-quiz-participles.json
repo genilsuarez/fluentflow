@@ -8,7 +8,7 @@
       "Shocking"
     ],
     "correct": "Shocked",
-    "explanation": "Past participle (shocked) is used when the subject experiences the feeling."
+    "explanation": "El participio pasado (shocked) se usa cuando el sujeto experimenta el sentimiento."
   },
   {
     "question": "The movie was so _____ that I fell asleep.",
@@ -19,29 +19,29 @@
       "bored"
     ],
     "correct": "boring",
-    "explanation": "Present participle (boring) describes what causes the feeling."
+    "explanation": "El participio presente (boring) describe lo que causa el sentimiento."
   },
   {
     "question": "_____ all her homework, she went out to play.",
     "options": [
       "Finishing",
       "Finished",
-      "To finish as recognized by most authorities",
-      "Having finished"
+      "Having finished",
+      "To finish as recognized by most authorities"
     ],
     "correct": "Having finished",
-    "explanation": "Having + past participle shows an action completed before another action."
+    "explanation": "Having + participio pasado indica una acción completada antes de otra acción."
   },
   {
     "question": "The children, _____ in the park, didn't hear their mother calling.",
     "options": [
       "played",
       "having played",
-      "playing",
-      "to play"
+      "to play",
+      "playing"
     ],
     "correct": "playing",
-    "explanation": "Present participle (playing) describes simultaneous action."
+    "explanation": "El participio presente (playing) describe una acción simultánea."
   },
   {
     "question": "_____ in 1850, the building is now a museum.",
@@ -52,7 +52,7 @@
       "Having built"
     ],
     "correct": "Built",
-    "explanation": "Past participle (built) in passive meaning."
+    "explanation": "Participio pasado (built) con sentido pasivo."
   },
   {
     "question": "_____ lived in Paris for ten years, she speaks French fluently.",
@@ -63,7 +63,7 @@
       "Lived as recognized by most authorities"
     ],
     "correct": "Having lived",
-    "explanation": "Having + past participle shows prior experience affecting the present."
+    "explanation": "Having + participio pasado indica una experiencia previa que afecta el presente."
   },
   {
     "question": "The results were quite _____.",
@@ -74,18 +74,18 @@
       "to disappoint"
     ],
     "correct": "disappointing",
-    "explanation": "Present participle describes what causes the feeling."
+    "explanation": "El participio presente describe lo que causa el sentimiento."
   },
   {
     "question": "_____ by everyone, he felt very lonely.",
     "options": [
       "Having ignored",
-      "Ignored",
       "Ignoring",
-      "To ignore"
+      "To ignore",
+      "Ignored"
     ],
     "correct": "Ignored",
-    "explanation": "Past participle (ignored) shows the subject receives the action."
+    "explanation": "El participio pasado (ignored) indica que el sujeto recibe la acción."
   },
   {
     "question": "_____ the letter, he put it in an envelope.",
@@ -96,7 +96,7 @@
       "Writing"
     ],
     "correct": "Having written",
-    "explanation": "Having + past participle shows completed action before another."
+    "explanation": "Having + participio pasado indica una acción completada antes de otra."
   },
   {
     "question": "The lecture was absolutely _____.",
@@ -107,29 +107,29 @@
       "fascinated"
     ],
     "correct": "fascinating",
-    "explanation": "Present participle describes the quality of the lecture."
+    "explanation": "El participio presente describe la cualidad de la conferencia."
   },
   {
     "question": "_____ no other choice, we decided to accept the offer.",
     "options": [
-      "Having",
       "To have",
       "Had",
+      "Having",
       "Have"
     ],
     "correct": "Having",
-    "explanation": "Having + object shows reason or cause."
+    "explanation": "Having + objeto indica razón o causa."
   },
   {
     "question": "The man _____ next to me is a famous author.",
     "options": [
       "having sat",
       "to sit",
-      "sitting",
-      "sat"
+      "sat",
+      "sitting"
     ],
     "correct": "sitting",
-    "explanation": "Present participle used as adjective describing the man."
+    "explanation": "Participio presente usado como adjetivo que describe al hombre."
   },
   {
     "question": "_____ carefully, the instructions are easy to follow.",
@@ -140,40 +140,40 @@
       "To read"
     ],
     "correct": "Read",
-    "explanation": "Past participle in passive meaning (when read)."
+    "explanation": "Participio pasado con sentido pasivo (when read)."
   },
   {
     "question": "She felt _____ after the long journey.",
     "options": [
-      "exhausted",
       "exhausting",
+      "exhausted",
       "to exhaust",
       "having exhausted"
     ],
     "correct": "exhausted",
-    "explanation": "Past participle describes how she felt."
+    "explanation": "El participio pasado describe cómo se sintió ella."
   },
   {
     "question": "_____ the exam, students must wait for the results.",
     "options": [
-      "Having taken",
       "Taking",
       "Taken",
+      "Having taken",
       "To take"
     ],
     "correct": "Having taken",
-    "explanation": "Having + past participle shows completed action."
+    "explanation": "Having + participio pasado indica una acción completada."
   },
   {
     "question": "The story was very _____.",
     "options": [
       "moved",
       "having moved",
-      "moving",
-      "to move"
+      "to move",
+      "moving"
     ],
     "correct": "moving",
-    "explanation": "Present participle describes the quality of the story."
+    "explanation": "El participio presente describe la cualidad de la historia."
   },
   {
     "question": "_____ in the rain, we arrived home completely wet.",
@@ -184,18 +184,18 @@
       "To walk"
     ],
     "correct": "Having walked",
-    "explanation": "Having + past participle shows the reason for being wet."
+    "explanation": "Having + participio pasado indica la razón por la que está mojado."
   },
   {
     "question": "The news was quite _____.",
     "options": [
-      "surprising",
       "having surprised",
+      "surprising",
       "surprised",
       "to surprise"
     ],
     "correct": "surprising",
-    "explanation": "Present participle describes the nature of the news."
+    "explanation": "El participio presente describe la naturaleza de la noticia."
   },
   {
     "question": "_____ by his parents, he became very successful.",
@@ -206,29 +206,29 @@
       "To encourage"
     ],
     "correct": "Encouraged",
-    "explanation": "Past participle shows he received encouragement."
+    "explanation": "El participio pasado indica que él recibió ánimo."
   },
   {
     "question": "_____ the mistake, she apologized immediately.",
     "options": [
       "Realized as recognized by most authorities",
       "Realizing",
-      "Having realized",
-      "To realize"
+      "To realize",
+      "Having realized"
     ],
     "correct": "Having realized",
-    "explanation": "Having + past participle shows action completed before apologizing."
+    "explanation": "Having + participio pasado indica una acción completada antes de disculparse."
   },
   {
     "question": "The experience was truly _____.",
     "options": [
+      "terrifying",
       "having terrified",
       "to terrify",
-      "terrifying",
       "terrified"
     ],
     "correct": "terrifying",
-    "explanation": "Present participle describes the nature of the experience."
+    "explanation": "El participio presente describe la naturaleza de la experiencia."
   },
   {
     "question": "_____ all the evidence, the jury reached a verdict.",
@@ -239,39 +239,39 @@
       "Considered"
     ],
     "correct": "Having considered",
-    "explanation": "Having + past participle shows completed deliberation."
+    "explanation": "Having + participio pasado indica una deliberación completada."
   },
   {
     "question": "The children were _____ by the clown's performance.",
     "options": [
       "to amuse",
       "having amused",
-      "amusing",
-      "amused"
+      "amused",
+      "amusing"
     ],
     "correct": "amused",
-    "explanation": "Past participle shows the children's reaction."
+    "explanation": "El participio pasado indica la reacción de los niños."
   },
   {
     "question": "_____ in the accident, he couldn't work for months.",
     "options": [
       "Having injured",
       "Injuring",
-      "Injured",
-      "To injure"
+      "To injure",
+      "Injured"
     ],
     "correct": "Injured",
-    "explanation": "Past participle shows he received the injury."
+    "explanation": "El participio pasado indica que él sufrió la lesión."
   },
   {
     "question": "_____ the book three times, I know the story well.",
     "options": [
-      "Read",
       "Having read",
+      "Read",
       "Reading",
       "To read"
     ],
     "correct": "Having read",
-    "explanation": "Having + past participle shows repeated past action affecting present knowledge."
+    "explanation": "Having + participio pasado indica una acción pasada repetida que afecta el conocimiento presente."
   }
 ]

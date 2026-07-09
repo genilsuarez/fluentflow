@@ -2,13 +2,13 @@
   {
     "question": "To <interrogate> in an academic context means to...",
     "options": [
+      "critically examine or question assumptions",
       "translate a text",
       "memorize information",
-      "critically examine or question assumptions",
       "ask someone questions in a police station"
     ],
     "correct": "critically examine or question assumptions",
-    "explanation": "In academic discourse, to <interrogate> means to critically examine or challenge ideas and assumptions."
+    "explanation": "En el discurso académico, <interrogate> significa examinar o cuestionar críticamente ideas y supuestos."
   },
   {
     "question": "A <lacuna> is...",
@@ -19,29 +19,29 @@
       "a university department"
     ],
     "correct": "a gap or missing part in knowledge or research",
-    "explanation": "A <lacuna> is a gap or blank space, especially in knowledge or a manuscript."
+    "explanation": "Un <lacuna> es un vacío o espacio en blanco, especialmente en el conocimiento o en un manuscrito."
   },
   {
     "question": "<Epistemology> is the study of...",
     "options": [
       "biological systems",
       "mathematical equations",
-      "ancient languages",
-      "the nature and scope of knowledge"
+      "the nature and scope of knowledge",
+      "ancient languages"
     ],
     "correct": "the nature and scope of knowledge",
-    "explanation": "<Epistemology> is the branch of philosophy concerned with the theory of knowledge."
+    "explanation": "<Epistemology> es la rama de la filosofía que estudia la teoría del conocimiento."
   },
   {
     "question": "<Ethnocentrism> is the tendency to...",
     "options": [
       "travel to different countries",
       "appreciate cultural diversity",
-      "judge other cultures by the standards of your own",
-      "study multiple languages"
+      "study multiple languages",
+      "judge other cultures by the standards of your own"
     ],
     "correct": "judge other cultures by the standards of your own",
-    "explanation": "<Ethnocentrism> is evaluating other cultures according to the norms of one's own culture."
+    "explanation": "<Ethnocentrism> es evaluar otras culturas según las normas de la propia cultura."
   },
   {
     "question": "To <essentialize> means to...",
@@ -52,18 +52,18 @@
       "improve something"
     ],
     "correct": "reduce something complex to a single characteristic",
-    "explanation": "To <essentialize> means to oversimplify by attributing a fixed essence to something complex."
+    "explanation": "<Essentialize> significa simplificar en exceso al atribuir una esencia fija a algo complejo."
   },
   {
     "question": "<Cosmopolitanism> promotes...",
     "options": [
       "national pride",
-      "local traditions only",
       "the idea that all people belong to a single global community",
+      "local traditions only",
       "economic isolation"
     ],
     "correct": "the idea that all people belong to a single global community",
-    "explanation": "<Cosmopolitanism> is the ideology that all human beings belong to a single community."
+    "explanation": "<Cosmopolitanism> es la ideología según la cual todos los seres humanos pertenecen a una sola comunidad."
   },
   {
     "question": "<Intersectionality> examines...",
@@ -74,18 +74,18 @@
       "mathematical intersections"
     ],
     "correct": "how different social identities overlap and interact",
-    "explanation": "<Intersectionality> studies how categories like race, gender, and class interconnect."
+    "explanation": "<Intersectionality> estudia cómo se interconectan categorías como raza, género y clase social."
   },
   {
     "question": "<Glocalization> refers to...",
     "options": [
       "standardizing products worldwide",
-      "adapting global products or ideas to local contexts",
       "rejecting globalization",
-      "only focusing on local markets"
+      "only focusing on local markets",
+      "adapting global products or ideas to local contexts"
     ],
     "correct": "adapting global products or ideas to local contexts",
-    "explanation": "<Glocalization> is the practice of adapting globally distributed products to local markets."
+    "explanation": "<Glocalization> es la práctica de adaptar productos distribuidos globalmente a los mercados locales."
   },
   {
     "question": "To <recalibrate> means to...",
@@ -96,40 +96,40 @@
       "start from scratch"
     ],
     "correct": "adjust or correct something based on new information",
-    "explanation": "To <recalibrate> means to adjust measurements, expectations, or approaches."
+    "explanation": "<Recalibrate> significa ajustar mediciones, expectativas o enfoques."
   },
   {
     "question": "A <seismic> change is...",
     "options": [
-      "extremely large and significant",
       "predictable",
+      "extremely large and significant",
       "temporary",
       "very small and gradual"
     ],
     "correct": "extremely large and significant",
-    "explanation": "<Seismic> figuratively means having enormous impact or significance."
+    "explanation": "<Seismic>, en sentido figurado, significa que tiene un impacto o una importancia enormes."
   },
   {
     "question": "<Preeminent> means...",
     "options": [
       "controversial",
-      "surpassing all others; most distinguished",
       "unknown",
+      "surpassing all others; most distinguished",
       "average"
     ],
     "correct": "surpassing all others; most distinguished",
-    "explanation": "<Preeminent> means superior to or notable above all others."
+    "explanation": "<Preeminent> significa superior o notablemente destacado por encima de los demás."
   },
   {
     "question": "A <paradigm shift> is...",
     "options": [
       "a return to old methods",
-      "a fundamental change in approach or underlying assumptions",
       "a minor adjustment",
-      "a temporary trend"
+      "a temporary trend",
+      "a fundamental change in approach or underlying assumptions"
     ],
     "correct": "a fundamental change in approach or underlying assumptions",
-    "explanation": "A <paradigm shift> is a fundamental change in the basic concepts and practices of a discipline."
+    "explanation": "Un <paradigm shift> es un cambio fundamental en los conceptos y prácticas básicas de una disciplina."
   },
   {
     "question": "<Discourse> refers to...",
@@ -140,7 +140,7 @@
       "a type of university course"
     ],
     "correct": "written or spoken communication on a topic",
-    "explanation": "<Discourse> is formal discussion or debate, or a connected series of utterances on a topic."
+    "explanation": "<Discourse> es una discusión o debate formal, o una serie conectada de enunciados sobre un tema."
   },
   {
     "question": "<Hegemony> means...",
@@ -151,72 +151,72 @@
       "academic excellence"
     ],
     "correct": "dominance or leadership of one group over others",
-    "explanation": "<Hegemony> is the dominance of one group over others, especially in politics or culture."
+    "explanation": "<Hegemony> es el dominio de un grupo sobre otros, especialmente en política o cultura."
   },
   {
     "question": "<Empirical> evidence is based on...",
     "options": [
-      "observation and experience rather than theory",
       "historical documents only",
       "personal opinions",
+      "observation and experience rather than theory",
       "mathematical proofs only"
     ],
     "correct": "observation and experience rather than theory",
-    "explanation": "<Empirical> means based on verifiable observation or experience rather than theory."
+    "explanation": "<Empirical> significa basado en la observación o la experiencia verificable, más que en la teoría."
   },
   {
     "question": "A <nuance> is...",
     "options": [
-      "a subtle difference in meaning or expression",
       "an obvious error",
       "a simple explanation",
-      "a major difference"
+      "a major difference",
+      "a subtle difference in meaning or expression"
     ],
     "correct": "a subtle difference in meaning or expression",
-    "explanation": "A <nuance> is a subtle distinction or variation in meaning, tone, or color."
+    "explanation": "Un <nuance> es una distinción o variación sutil en el significado, el tono o el color."
   },
   {
     "question": "To <corroborate> means to...",
     "options": [
+      "confirm or support with evidence",
       "contradict",
       "ignore",
-      "confirm or support with evidence",
       "simplify"
     ],
     "correct": "confirm or support with evidence",
-    "explanation": "To <corroborate> means to confirm or give support to a statement or theory."
+    "explanation": "<Corroborate> significa confirmar o respaldar una afirmación o teoría."
   },
   {
     "question": "To <juxtapose> means to...",
     "options": [
-      "place things side by side for comparison",
       "separate completely",
+      "place things side by side for comparison",
       "arrange chronologically",
       "combine into one"
     ],
     "correct": "place things side by side for comparison",
-    "explanation": "To <juxtapose> means to place close together for contrasting effect."
+    "explanation": "<Juxtapose> significa colocar cosas cerca unas de otras para generar un efecto de contraste."
   },
   {
     "question": "<Proliferation> means...",
     "options": [
       "complete elimination",
       "careful selection",
-      "gradual decrease",
-      "rapid increase in number or spread"
+      "rapid increase in number or spread",
+      "gradual decrease"
     ],
     "correct": "rapid increase in number or spread",
-    "explanation": "<Proliferation> is a rapid increase in the number or amount of something."
+    "explanation": "<Proliferation> es un aumento rápido en la cantidad de algo."
   },
   {
     "question": "<Ubiquitous> means...",
     "options": [
       "invisible",
-      "present everywhere; very common",
       "extremely rare",
-      "temporary"
+      "temporary",
+      "present everywhere; very common"
     ],
     "correct": "present everywhere; very common",
-    "explanation": "<Ubiquitous> means found everywhere; omnipresent."
+    "explanation": "<Ubiquitous> significa que se encuentra en todas partes; omnipresente."
   }
 ]

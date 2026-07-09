@@ -2,71 +2,240 @@
   {
     "id": "reord-id-a1-001",
     "sentence": "The test was a piece of cake",
-    "words": ["The", "test", "was", "a", "piece", "of", "cake"],
+    "words": [
+      "The",
+      "test",
+      "was",
+      "a",
+      "piece",
+      "of",
+      "cake"
+    ],
     "hint": "Subject + verb to be + idiom",
-    "explanation": "'A piece of cake' means something very easy. The sentence follows Subject + was + complement."
+    "explanation": "'A piece of cake' significa algo muy fácil. La oración sigue la estructura Sujeto + was + complemento."
   },
   {
     "id": "reord-id-a1-002",
     "sentence": "Break a leg at your concert tonight",
-    "words": ["Break", "a", "leg", "at", "your", "concert", "tonight"],
+    "words": [
+      "Break",
+      "a",
+      "leg",
+      "at",
+      "your",
+      "concert",
+      "tonight"
+    ],
     "hint": "This is an imperative — starts with the verb",
-    "explanation": "'Break a leg' means 'good luck'. Imperatives start directly with the verb."
+    "explanation": "'Break a leg' significa 'buena suerte'. Los imperativos comienzan directamente con el verbo."
   },
   {
     "id": "reord-id-a1-003",
     "sentence": "It is raining cats and dogs outside",
-    "words": ["It", "is", "raining", "cats", "and", "dogs", "outside"],
-    "distractors": ["are"],
+    "words": [
+      "It",
+      "is",
+      "raining",
+      "cats",
+      "and",
+      "dogs",
+      "outside"
+    ],
+    "distractors": [
+      "are"
+    ],
     "hint": "Weather expressions use 'it is'",
-    "explanation": "'Raining cats and dogs' means raining very heavily. Use 'it is', not 'it are'."
+    "explanation": "'Raining cats and dogs' significa que llueve muy fuerte. Se usa 'it is', no 'it are'."
   },
   {
     "id": "reord-id-a1-004",
     "sentence": "Hold on for a moment please",
-    "words": ["Hold", "on", "for", "a", "moment", "please"],
-    "explanation": "'Hold on' means 'wait'. This is an imperative sentence with a polite 'please' at the end."
+    "words": [
+      "Hold",
+      "on",
+      "for",
+      "a",
+      "moment",
+      "please"
+    ],
+    "explanation": "'Hold on' significa 'espera'. Es una oración imperativa con un 'please' cortés al final."
   },
   {
     "id": "reord-id-a1-005",
     "sentence": "She always hits the nail on the head",
-    "words": ["She", "always", "hits", "the", "nail", "on", "the", "head"],
-    "distractors": ["hit"],
+    "words": [
+      "She",
+      "always",
+      "hits",
+      "the",
+      "nail",
+      "on",
+      "the",
+      "head"
+    ],
+    "distractors": [
+      "hit"
+    ],
     "hint": "Adverb of frequency before the main verb",
-    "explanation": "'Hit the nail on the head' means to be exactly right. With 'she', use 'hits'."
+    "explanation": "'Hit the nail on the head' significa dar en el clavo. Con 'she', se usa 'hits'."
   },
   {
     "id": "reord-id-a1-006",
     "sentence": "I feel under the weather today",
-    "words": ["I", "feel", "under", "the", "weather", "today"],
-    "distractors": ["feels"],
+    "words": [
+      "I",
+      "feel",
+      "under",
+      "the",
+      "weather",
+      "today"
+    ],
+    "distractors": [
+      "feels"
+    ],
     "hint": "Subject + verb + idiom + time",
-    "explanation": "'Under the weather' means feeling sick. With 'I', use 'feel', not 'feels'."
+    "explanation": "'Under the weather' significa sentirse enfermo. Con 'I', se usa 'feel', no 'feels'."
   },
   {
     "id": "reord-id-a1-007",
     "sentence": "He is over the moon about his new job",
-    "words": ["He", "is", "over", "the", "moon", "about", "his", "new", "job"],
-    "explanation": "'Over the moon' means very happy. The structure is Subject + be + idiom + about + topic."
+    "words": [
+      "He",
+      "is",
+      "over",
+      "the",
+      "moon",
+      "about",
+      "his",
+      "new",
+      "job"
+    ],
+    "explanation": "'Over the moon' significa muy feliz. La estructura es Sujeto + be + modismo + about + tema."
   },
   {
     "id": "reord-id-a1-008",
     "sentence": "We need to keep an eye on the baby",
-    "words": ["We", "need", "to", "keep", "an", "eye", "on", "the", "baby"],
+    "words": [
+      "We",
+      "need",
+      "to",
+      "keep",
+      "an",
+      "eye",
+      "on",
+      "the",
+      "baby"
+    ],
     "hint": "Subject + need to + idiom + object",
-    "explanation": "'Keep an eye on' means to watch carefully. 'Need to' is followed by the base form."
+    "explanation": "'Keep an eye on' significa vigilar de cerca. 'Need to' va seguido de la forma base del verbo."
   },
   {
     "id": "reord-id-a1-009",
     "sentence": "The homework is a piece of cake for her",
-    "words": ["The", "homework", "is", "a", "piece", "of", "cake", "for", "her"],
-    "explanation": "'A piece of cake' means very easy. 'For her' specifies who finds it easy."
+    "words": [
+      "The",
+      "homework",
+      "is",
+      "a",
+      "piece",
+      "of",
+      "cake",
+      "for",
+      "her"
+    ],
+    "explanation": "'A piece of cake' significa muy fácil. 'For her' especifica para quién es fácil."
   },
   {
     "id": "reord-id-a1-010",
     "sentence": "Do not let the cat out of the bag",
-    "words": ["Do", "not", "let", "the", "cat", "out", "of", "the", "bag"],
+    "words": [
+      "Do",
+      "not",
+      "let",
+      "the",
+      "cat",
+      "out",
+      "of",
+      "the",
+      "bag"
+    ],
     "hint": "Negative imperative: Do not + verb",
-    "explanation": "'Let the cat out of the bag' means to reveal a secret. Negative imperatives use 'Do not + verb'."
+    "explanation": "'Let the cat out of the bag' significa revelar un secreto. Los imperativos negativos usan 'Do not + verbo'."
+  },
+  {
+    "id": "reord-id-a1-011",
+    "sentence": "Everything is so far so good this week",
+    "words": [
+      "Everything",
+      "is",
+      "so",
+      "far",
+      "so",
+      "good",
+      "this",
+      "week"
+    ],
+    "hint": "Subject + verb + idiom + time expression",
+    "explanation": "'So far so good' significa que las cosas van bien hasta ahora."
+  },
+  {
+    "id": "reord-id-a1-012",
+    "sentence": "Remember that practice makes perfect",
+    "words": [
+      "Remember",
+      "that",
+      "practice",
+      "makes",
+      "perfect"
+    ],
+    "hint": "Imperative + that-clause",
+    "explanation": "'Practice makes perfect' significa que la práctica repetida lleva a mejorar."
+  },
+  {
+    "id": "reord-id-a1-013",
+    "sentence": "She believes no pain no gain",
+    "words": [
+      "She",
+      "believes",
+      "no",
+      "pain",
+      "no",
+      "gain"
+    ],
+    "hint": "Subject + verb + idiom",
+    "explanation": "'No pain no gain' significa que hay que esforzarse para lograr resultados."
+  },
+  {
+    "id": "reord-id-a1-014",
+    "sentence": "He lost the money but easy come easy go",
+    "words": [
+      "He",
+      "lost",
+      "the",
+      "money",
+      "but",
+      "easy",
+      "come",
+      "easy",
+      "go"
+    ],
+    "hint": "Clause + but + idiom",
+    "explanation": "'Easy come easy go' significa que lo que se consigue fácilmente, fácilmente se pierde."
+  },
+  {
+    "id": "reord-id-a1-015",
+    "sentence": "Wear a helmet because better safe than sorry",
+    "words": [
+      "Wear",
+      "a",
+      "helmet",
+      "because",
+      "better",
+      "safe",
+      "than",
+      "sorry"
+    ],
+    "hint": "Imperative + because + idiom",
+    "explanation": "'Better safe than sorry' significa que es mejor ser precavido que lamentarse después."
   }
 ]

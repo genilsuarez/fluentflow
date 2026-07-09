@@ -8,84 +8,84 @@
       "goed"
     ],
     "correct": "went",
-    "explanation": "<Go> is irregular: the past simple form is <went>."
+    "explanation": "<Go> es irregular: la forma de pasado simple es <went>."
   },
   {
     "question": "Which sentence uses the past tense correctly?",
     "options": [
       "I buied a new phone",
+      "I bought a new phone",
       "I buying a new phone",
-      "I buyed a new phone",
-      "I bought a new phone"
+      "I buyed a new phone"
     ],
     "correct": "I bought a new phone",
-    "explanation": "<Buy> is irregular: the past simple is <bought>, not <buyed>."
+    "explanation": "<Buy> es irregular: el pasado simple es <bought>, no <buyed>."
   },
   {
     "question": "Complete: 'They _____ dinner at 7 pm yesterday.'",
     "options": [
       "having",
       "has",
-      "have",
-      "had"
+      "had",
+      "have"
     ],
     "correct": "had",
-    "explanation": "The past simple of <have> is <had>: <They had dinner>."
+    "explanation": "El pasado simple de <have> es <had>: <They had dinner>."
   },
   {
     "question": "Which sentence is correct?",
     "options": [
       "She not go home",
-      "She didn't go home",
       "She didn't went home",
-      "She don't went home"
+      "She don't went home",
+      "She didn't go home"
     ],
     "correct": "She didn't go home",
-    "explanation": "In negative past simple, use <didn't> + base form: <didn't go>."
+    "explanation": "En el pasado simple negativo, se usa <didn't> + la forma base: <didn't go>."
   },
   {
     "question": "Choose the correct present perfect: 'I _____ already eaten lunch.'",
     "options": [
+      "have",
       "am",
       "had",
-      "have",
       "has"
     ],
     "correct": "have",
-    "explanation": "With <I>, use <have> for present perfect: <I have already eaten>."
+    "explanation": "Con <I>, se usa <have> para el presente perfecto: <I have already eaten>."
   },
   {
     "question": "Which is the correct comparative: 'This book is _____ than that one.'",
     "options": [
       "more interestinger",
-      "interestinger",
       "more interesting",
+      "interestinger",
       "most interesting"
     ],
     "correct": "more interesting",
-    "explanation": "Long adjectives use <more> + adjective: <more interesting>."
+    "explanation": "Los adjetivos largos usan <more> + adjetivo: <more interesting>."
   },
   {
     "question": "Complete: 'My sister is _____ than me.'",
     "options": [
       "more tall",
       "tall",
-      "tallest",
-      "taller"
+      "taller",
+      "tallest"
     ],
     "correct": "taller",
-    "explanation": "Short adjectives add <-er> for comparatives: <taller>."
+    "explanation": "Los adjetivos cortos añaden <-er> para el comparativo: <taller>."
   },
   {
     "question": "Which is correct: 'She has _____ to Paris twice.'",
     "options": [
-      "been",
       "being",
       "be",
-      "was"
+      "was",
+      "been"
     ],
     "correct": "been",
-    "explanation": "Present perfect of <go/be>: <has been> to express experience."
+    "explanation": "Presente perfecto de <go/be>: <has been> para expresar experiencia."
   },
   {
     "question": "What does 'nephew' and 'niece' have in common?",
@@ -96,29 +96,29 @@
       "They are parents"
     ],
     "correct": "They are children of your siblings",
-    "explanation": "A <nephew> (boy) and <niece> (girl) are children of your brother or sister."
+    "explanation": "Un <nephew> (sobrino) y una <niece> (sobrina) son hijos de tu hermano o hermana."
   },
   {
     "question": "Which word describes a place where you sleep?",
     "options": [
       "garage",
+      "bedroom",
       "balcony",
-      "kitchen",
-      "bedroom"
+      "kitchen"
     ],
     "correct": "bedroom",
-    "explanation": "The <bedroom> is the room in a house where you sleep."
+    "explanation": "El <bedroom> es la habitación de la casa donde duermes."
   },
   {
     "question": "What does 'prescription' mean in a health context?",
     "options": [
       "a hospital room",
       "a type of exercise",
-      "a medical tool",
-      "a doctor's written order for medicine"
+      "a doctor's written order for medicine",
+      "a medical tool"
     ],
     "correct": "a doctor's written order for medicine",
-    "explanation": "A <prescription> is a written order from a doctor for medicine."
+    "explanation": "Una <prescription> es una orden escrita de un médico para obtener medicamentos."
   },
   {
     "question": "Which word means 'a traditional practice of a group of people'?",
@@ -129,7 +129,7 @@
       "custom"
     ],
     "correct": "custom",
-    "explanation": "A <custom> is a traditional practice or behavior of a culture."
+    "explanation": "Un <custom> es una práctica o comportamiento tradicional de una cultura."
   },
   {
     "question": "Choose the correct meaning of <download>:",
@@ -140,62 +140,62 @@
       "to print a document"
     ],
     "correct": "to transfer data to your device",
-    "explanation": "To <download> means to transfer data from the internet to your device."
+    "explanation": "<Download> significa transferir datos de internet a tu dispositivo."
   },
   {
     "question": "Which daily activity do you do first in the morning?",
     "options": [
       "go to bed",
+      "wake up",
       "watch TV",
-      "have dinner",
-      "wake up"
+      "have dinner"
     ],
     "correct": "wake up",
-    "explanation": "The first daily activity is to <wake up> in the morning."
+    "explanation": "La primera actividad diaria es <wake up>, es decir, despertarse por la mañana."
   },
   {
     "question": "Choose the correct option: 'I _____ to the gym every Monday.'",
     "options": [
-      "go",
       "be",
       "am",
+      "go",
       "do"
     ],
     "correct": "go",
-    "explanation": "Use <go> with places: <go to the gym>, <go to school>."
+    "explanation": "Se usa <go> con lugares: <go to the gym>, <go to school>."
   },
   {
     "question": "Which is correct: 'She _____ tired after work.'",
     "options": [
-      "is",
       "goes",
       "go",
-      "do"
+      "do",
+      "is"
     ],
     "correct": "is",
-    "explanation": "Use <be> (is/am/are) with adjectives: <She is tired>."
+    "explanation": "Se usa <be> (is/am/are) con adjetivos: <She is tired>."
   },
   {
     "question": "What does the phrasal verb 'look after' mean?",
     "options": [
-      "to search for",
       "to take care of",
+      "to search for",
       "to watch TV",
       "to look behind"
     ],
     "correct": "to take care of",
-    "explanation": "<Look after> means to take care of someone or something."
+    "explanation": "<Look after> significa cuidar de alguien o algo."
   },
   {
     "question": "<come back> — select the right definition:",
     "options": [
       "to go forward",
-      "to arrive for the first time",
       "to return",
+      "to arrive for the first time",
       "to leave"
     ],
     "correct": "to return",
-    "explanation": "<Come back> means to return to a place."
+    "explanation": "<Come back> significa regresar a un lugar."
   },
   {
     "question": "Which phrasal verb means 'to enter a vehicle'?",
@@ -206,29 +206,29 @@
       "get up"
     ],
     "correct": "get on",
-    "explanation": "<Get on> means to enter a bus, train, or plane."
+    "explanation": "<Get on> significa subirse a un autobús, tren o avión."
   },
   {
     "question": "What is the meaning of <find out>?",
     "options": [
-      "to discover information",
       "to hide",
       "to lose something",
-      "to forget"
+      "to forget",
+      "to discover information"
     ],
     "correct": "to discover information",
-    "explanation": "<Find out> means to discover or learn new information."
+    "explanation": "<Find out> significa descubrir o enterarse de nueva información."
   },
   {
     "question": "Which option describes <throw away>?",
     "options": [
-      "to collect",
       "to put in the rubbish",
+      "to collect",
       "to keep",
       "to recycle"
     ],
     "correct": "to put in the rubbish",
-    "explanation": "<Throw away> means to dispose of something, to put it in the bin."
+    "explanation": "<Throw away> significa desechar algo, tirarlo a la basura."
   },
   {
     "question": "Pick the best definition for <put off>:",
@@ -239,7 +239,7 @@
       "to start early"
     ],
     "correct": "to postpone",
-    "explanation": "<Put off> means to postpone or delay something to a later time."
+    "explanation": "<Put off> significa posponer o aplazar algo para más tarde."
   },
   {
     "question": "What does the idiom 'cost an arm and a leg' mean?",
@@ -250,18 +250,18 @@
       "to cause injury"
     ],
     "correct": "to be very expensive",
-    "explanation": "The idiom <cost an arm and a leg> means something is very expensive."
+    "explanation": "El modismo <cost an arm and a leg> significa que algo es muy caro."
   },
   {
     "question": "How would you define <once in a blue moon>?",
     "options": [
-      "very rarely",
       "during a full moon",
       "every month",
-      "every night"
+      "every night",
+      "very rarely"
     ],
     "correct": "very rarely",
-    "explanation": "<Once in a blue moon> means something happens very rarely."
+    "explanation": "<Once in a blue moon> significa que algo ocurre muy raramente."
   },
   {
     "question": "<the best of both worlds> is closest in meaning to:",
@@ -272,29 +272,29 @@
       "travelling a lot"
     ],
     "correct": "having advantages of two different things",
-    "explanation": "<The best of both worlds> means enjoying the advantages of two different situations."
+    "explanation": "<The best of both worlds> significa disfrutar de las ventajas de dos situaciones diferentes."
   },
   {
     "question": "Select what <speak of the devil> means:",
     "options": [
       "to be scared",
+      "the person you were talking about just appeared",
       "to tell a lie",
-      "to talk about evil",
-      "the person you were talking about just appeared"
+      "to talk about evil"
     ],
     "correct": "the person you were talking about just appeared",
-    "explanation": "<Speak of the devil> is said when the person you were just talking about arrives."
+    "explanation": "<Speak of the devil> se dice cuando aparece la persona de la que se estaba hablando."
   },
   {
     "question": "The term <bite off more than you can chew> refers to:",
     "options": [
       "to eat too much",
       "to be greedy",
-      "to talk too much",
-      "to take on more than you can handle"
+      "to take on more than you can handle",
+      "to talk too much"
     ],
     "correct": "to take on more than you can handle",
-    "explanation": "<Bite off more than you can chew> means to attempt more than you can manage."
+    "explanation": "<Bite off more than you can chew> significa intentar hacer más de lo que se puede manejar."
   },
   {
     "question": "Transform to present perfect: 'She visited London.'",
@@ -305,18 +305,18 @@
       "She has visited London"
     ],
     "correct": "She has visited London",
-    "explanation": "Present perfect with she: <has> + past participle: <She has visited>."
+    "explanation": "Presente perfecto con she: <has> + participio pasado: <She has visited>."
   },
   {
     "question": "Transform to negative past: 'They watched the film.'",
     "options": [
+      "They didn't watch the film",
       "They didn't watched the film",
       "They don't watch the film",
-      "They didn't watch the film",
       "They not watched the film"
     ],
     "correct": "They didn't watch the film",
-    "explanation": "Negative past: <didn't> + base form: <They didn't watch>."
+    "explanation": "Pasado negativo: <didn't> + la forma base: <They didn't watch>."
   },
   {
     "question": "Transform to a question: 'He has finished his homework.'",
@@ -327,7 +327,7 @@
       "Have he finished his homework?"
     ],
     "correct": "Has he finished his homework?",
-    "explanation": "Present perfect question: <Has> + subject + past participle: <Has he finished?>."
+    "explanation": "Pregunta en presente perfecto: <Has> + sujeto + participio pasado: <Has he finished?>."
   },
   {
     "question": "Transform to comparative: 'This car is fast. That car is faster.'",
@@ -338,29 +338,29 @@
       "That car is more fast than this car"
     ],
     "correct": "That car is faster than this car",
-    "explanation": "Short adjectives: add <-er> + <than>: <faster than>."
+    "explanation": "Adjetivos cortos: se añade <-er> + <than>: <faster than>."
   },
   {
     "question": "Transform to past continuous: 'She reads a book.'",
     "options": [
       "She were reading a book",
-      "She was reading a book",
       "She reading a book",
-      "She is reading a book"
+      "She is reading a book",
+      "She was reading a book"
     ],
     "correct": "She was reading a book",
-    "explanation": "Past continuous: <was/were> + verb-ing: <She was reading>."
+    "explanation": "Pasado continuo: <was/were> + verbo-ing: <She was reading>."
   },
   {
     "question": "What noun do we form from 'happy' using a suffix?",
     "options": [
-      "happiful",
       "happiness",
+      "happiful",
       "happily",
       "happier"
     ],
     "correct": "happiness",
-    "explanation": "Adding <-ness> to adjectives forms nouns: <happy> → <happiness>."
+    "explanation": "Añadir <-ness> a los adjetivos forma sustantivos: <happy> → <happiness>."
   },
   {
     "question": "Which suffix turns 'move' into a noun?",
@@ -371,51 +371,51 @@
       "-tion"
     ],
     "correct": "-ment",
-    "explanation": "Adding <-ment> to <move> forms the noun <movement>."
+    "explanation": "Añadir <-ment> a <move> forma el sustantivo <movement>."
   },
   {
     "question": "How do you form the adverb from 'quick'?",
     "options": [
-      "quickly",
       "quickment",
       "quicker",
+      "quickly",
       "quickful"
     ],
     "correct": "quickly",
-    "explanation": "Adding <-ly> to adjectives forms adverbs: <quick> → <quickly>."
+    "explanation": "Añadir <-ly> a los adjetivos forma adverbios: <quick> → <quickly>."
   },
   {
     "question": "Which is the correct adverb form of 'careful'?",
     "options": [
       "carefuler",
-      "carefully",
       "carefulment",
-      "carefulish"
+      "carefulish",
+      "carefully"
     ],
     "correct": "carefully",
-    "explanation": "Adding <-ly> to <careful> forms the adverb <carefully>."
+    "explanation": "Añadir <-ly> a <careful> forma el adverbio <carefully>."
   },
   {
     "question": "Find the error: 'She has went to the shop.'",
     "options": [
+      "She has gone to the shop",
       "She have went to the shop",
       "She has go to the shop",
-      "No error",
-      "She has gone to the shop"
+      "No error"
     ],
     "correct": "She has gone to the shop",
-    "explanation": "Present perfect uses the past participle: <has gone>, not <has went>."
+    "explanation": "El presente perfecto usa el participio pasado: <has gone>, no <has went>."
   },
   {
     "question": "Find the error: 'He is more taller than his brother.'",
     "options": [
       "He is more tall than his brother",
-      "No error",
       "He is taller than his brother",
+      "No error",
       "He is tallest than his brother"
     ],
     "correct": "He is taller than his brother",
-    "explanation": "Don't use <more> with <-er> comparatives. Use only <taller>, not <more taller>."
+    "explanation": "No se usa <more> con comparativos en <-er>. Se usa solo <taller>, no <more taller>."
   },
   {
     "question": "Find the error: 'I didn't saw the movie.'",
@@ -426,17 +426,17 @@
       "I don't saw the movie"
     ],
     "correct": "I didn't see the movie",
-    "explanation": "After <didn't>, use the base form: <didn't see>, not <didn't saw>."
+    "explanation": "Después de <didn't>, se usa la forma base: <didn't see>, no <didn't saw>."
   },
   {
     "question": "Find the error: 'They was playing football yesterday.'",
     "options": [
-      "They were playing football yesterday",
       "No error",
       "They is playing football yesterday",
-      "They been playing football yesterday"
+      "They been playing football yesterday",
+      "They were playing football yesterday"
     ],
     "correct": "They were playing football yesterday",
-    "explanation": "With <they>, use <were> for past continuous: <They were playing>."
+    "explanation": "Con <they>, se usa <were> para el pasado continuo: <They were playing>."
   }
 ]

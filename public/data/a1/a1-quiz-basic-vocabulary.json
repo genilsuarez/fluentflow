@@ -2,46 +2,46 @@
   {
     "question": "What is the opposite of <hot>?",
     "options": [
+      "cold",
       "warm",
       "freezing",
-      "cool",
-      "cold"
+      "cool"
     ],
     "correct": "cold",
-    "explanation": "<Cold> is the direct opposite of hot."
+    "explanation": "<Cold> es el opuesto directo de hot."
   },
   {
     "question": "Which word means <a place where you live>?",
     "options": [
       "office",
+      "house",
       "car",
-      "school",
-      "house"
+      "school"
     ],
     "correct": "house",
-    "explanation": "A <house> is a place where people live."
+    "explanation": "Una <house> es un lugar donde vive la gente."
   },
   {
     "question": "What do you use to <write>?",
     "options": [
       "cup",
       "chair",
-      "plate",
-      "pen"
+      "pen",
+      "plate"
     ],
     "correct": "pen",
-    "explanation": "A <pen> is used for writing."
+    "explanation": "Un <pen> se usa para escribir."
   },
   {
     "question": "Which is a <color>?",
     "options": [
       "door",
       "book",
-      "blue",
-      "table"
+      "table",
+      "blue"
     ],
     "correct": "blue",
-    "explanation": "<Blue> is a color — it describes the sky on a clear day or the ocean."
+    "explanation": "<Blue> es un color — describe el cielo en un día despejado o el océano."
   },
   {
     "question": "What is the opposite of <big>?",
@@ -52,62 +52,62 @@
       "large"
     ],
     "correct": "small",
-    "explanation": "<Small> is the opposite of big."
+    "explanation": "<Small> es el opuesto de big."
   },
   {
     "question": "Which word means <happy>?",
     "options": [
       "sad",
+      "glad",
       "tired",
-      "angry",
-      "glad"
+      "angry"
     ],
     "correct": "glad",
-    "explanation": "<Glad> means happy or pleased."
+    "explanation": "<Glad> significa feliz o contento."
   },
   {
     "question": "What do you use to <eat>?",
     "options": [
       "pen",
-      "fork",
       "key",
+      "fork",
       "phone"
     ],
     "correct": "fork",
-    "explanation": "A <fork> is used for eating."
+    "explanation": "Un <fork> se usa para comer."
   },
   {
     "question": "Which is a <number>?",
     "options": [
       "cat",
-      "seven",
       "fast",
-      "red"
+      "red",
+      "seven"
     ],
     "correct": "seven",
-    "explanation": "<Seven> is a number — it comes between six and eight."
+    "explanation": "<Seven> es un número — va entre el seis y el ocho."
   },
   {
     "question": "What is the opposite of <old>?",
     "options": [
+      "new",
       "dirty",
       "broken",
-      "ancient",
-      "new"
+      "ancient"
     ],
     "correct": "new",
-    "explanation": "<New> is the opposite of old."
+    "explanation": "<New> es el opuesto de old."
   },
   {
     "question": "Which word means <very good>?",
     "options": [
       "weak",
+      "excellent",
       "bad",
-      "poor",
-      "excellent"
+      "poor"
     ],
     "correct": "excellent",
-    "explanation": "<Excellent> means very good."
+    "explanation": "<Excellent> significa muy bueno."
   },
   {
     "question": "What do you use to <see>?",
@@ -118,7 +118,7 @@
       "ears"
     ],
     "correct": "eyes",
-    "explanation": "<Eyes> are used for seeing."
+    "explanation": "Los <eyes> se usan para ver."
   },
   {
     "question": "Which is a <day of the week>?",
@@ -129,18 +129,18 @@
       "Monday"
     ],
     "correct": "Monday",
-    "explanation": "<Monday> is a day of the week."
+    "explanation": "<Monday> es un día de la semana."
   },
   {
     "question": "What is the opposite of <fast>?",
     "options": [
-      "rapid",
       "slow",
+      "rapid",
       "quick",
       "speedy"
     ],
     "correct": "slow",
-    "explanation": "<Slow> is the opposite of fast."
+    "explanation": "<Slow> es el opuesto de fast."
   },
   {
     "question": "Which word means <not difficult>?",
@@ -151,7 +151,7 @@
       "hard"
     ],
     "correct": "easy",
-    "explanation": "<Easy> means not difficult."
+    "explanation": "<Easy> significa no difícil."
   },
   {
     "question": "What do you use to <listen>?",
@@ -162,29 +162,29 @@
       "feet"
     ],
     "correct": "ears",
-    "explanation": "<Ears> are used for listening."
+    "explanation": "Los <ears> se usan para escuchar."
   },
   {
     "question": "Which is a <season>?",
     "options": [
-      "Winter",
       "Monday",
       "Hour",
-      "Morning"
+      "Morning",
+      "Winter"
     ],
     "correct": "Winter",
-    "explanation": "<Winter> is a season of the year."
+    "explanation": "<Winter> es una estación del año."
   },
   {
     "question": "What is the opposite of <up>?",
     "options": [
-      "above",
       "down",
+      "above",
       "top",
       "high"
     ],
     "correct": "down",
-    "explanation": "<Down> is the opposite of up."
+    "explanation": "<Down> es el opuesto de up."
   },
   {
     "question": "Which word means <very tired>?",
@@ -195,7 +195,7 @@
       "active"
     ],
     "correct": "exhausted",
-    "explanation": "<Exhausted> means very tired."
+    "explanation": "<Exhausted> significa muy cansado."
   },
   {
     "question": "What do you use to <open a door>?",
@@ -206,7 +206,7 @@
       "book"
     ],
     "correct": "key",
-    "explanation": "A <key> is used to open a door."
+    "explanation": "Una <key> se usa para abrir una puerta."
   },
   {
     "question": "Which is a <month>?",
@@ -217,6 +217,6 @@
       "April"
     ],
     "correct": "April",
-    "explanation": "<April> is a month of the year."
+    "explanation": "<April> es un mes del año."
   }
 ]

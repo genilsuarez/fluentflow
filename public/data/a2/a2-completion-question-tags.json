@@ -2,121 +2,121 @@
   {
     "sentence": "You are a student, ______?",
     "correct": "aren't you",
-    "explanation": "Positive statement → negative tag. 'are' → 'aren't you'.",
+    "explanation": "Afirmación positiva → question tag negativo. 'are' → 'aren't you'.",
     "tip": "Reverse the polarity of the statement"
   },
   {
     "sentence": "She doesn't like coffee, ______?",
     "correct": "does she",
-    "explanation": "Negative statement → positive tag. 'doesn't' → 'does she'.",
+    "explanation": "Afirmación negativa → question tag positivo. 'doesn't' → 'does she'.",
     "tip": "Reverse the polarity of the statement"
   },
   {
     "sentence": "They went to Paris, ______?",
     "correct": "didn't they",
-    "explanation": "Positive past simple → negative tag with 'did'. 'went' → 'didn't they'.",
+    "explanation": "Pasado simple positivo → question tag negativo con 'did'. 'went' → 'didn't they'.",
     "tip": "Use the auxiliary of the main verb's tense"
   },
   {
     "sentence": "He can swim, ______?",
     "correct": "can't he",
-    "explanation": "Positive modal → negative tag. 'can' → 'can't he'.",
+    "explanation": "Modal positivo → question tag negativo. 'can' → 'can't he'.",
     "tip": "Modals stay the same in the tag"
   },
   {
     "sentence": "It's cold today, ______?",
     "correct": "isn't it",
-    "explanation": "Positive 'is' → negative tag. 'it's' (it is) → 'isn't it'.",
+    "explanation": "'is' positivo → question tag negativo. 'it's' (it is) → 'isn't it'.",
     "tip": "Expand contractions to find the auxiliary"
   },
   {
     "sentence": "We should leave now, ______?",
     "correct": "shouldn't we",
-    "explanation": "Positive 'should' → negative tag 'shouldn't we'.",
+    "explanation": "'should' positivo → question tag negativo 'shouldn't we'.",
     "tip": "Modals stay the same in the tag"
   },
   {
     "sentence": "You haven't finished, ______?",
     "correct": "have you",
-    "explanation": "Negative 'haven't' → positive tag 'have you'.",
+    "explanation": "'haven't' negativo → question tag positivo 'have you'.",
     "tip": "Reverse the polarity"
   },
   {
     "sentence": "I'm late, ______?",
     "correct": "aren't I",
-    "explanation": "Special case: 'I am' → the tag is 'aren't I' (not 'amn't I').",
+    "explanation": "Caso especial: 'I am' → el question tag es 'aren't I' (no 'amn't I').",
     "tip": "Special rule for 'I am'"
   },
   {
     "sentence": "She lives in London, ______?",
     "correct": "doesn't she",
-    "explanation": "Positive present simple (3rd person) → negative tag with 'does'. 'lives' → 'doesn't she'.",
+    "explanation": "Presente simple positivo (tercera persona) → question tag negativo con 'does'. 'lives' → 'doesn't she'.",
     "tip": "Present simple uses do/does in the tag"
   },
   {
     "sentence": "They won't come, ______?",
     "correct": "will they",
-    "explanation": "Negative 'won't' → positive tag 'will they'.",
+    "explanation": "'won't' negativo → question tag positivo 'will they'.",
     "tip": "Reverse the polarity"
   },
   {
     "sentence": "He had lunch already, ______?",
     "correct": "hadn't he",
-    "explanation": "Positive past perfect 'had' → negative tag 'hadn't he'.",
+    "explanation": "Pasado perfecto positivo 'had' → question tag negativo 'hadn't he'.",
     "tip": "Use the same auxiliary (had) in the tag"
   },
   {
     "sentence": "You don't smoke, ______?",
     "correct": "do you",
-    "explanation": "Negative 'don't' → positive tag 'do you'.",
+    "explanation": "'don't' negativo → question tag positivo 'do you'.",
     "tip": "Reverse the polarity"
   },
   {
     "sentence": "She's been working hard, ______?",
     "correct": "hasn't she",
-    "explanation": "Positive present perfect continuous 'has been' → negative tag 'hasn't she'.",
+    "explanation": "Presente perfecto continuo positivo 'has been' → question tag negativo 'hasn't she'.",
     "tip": "Use the first auxiliary (has) in the tag"
   },
   {
     "sentence": "We could try again, ______?",
     "correct": "couldn't we",
-    "explanation": "Positive 'could' → negative tag 'couldn't we'.",
+    "explanation": "'could' positivo → question tag negativo 'couldn't we'.",
     "tip": "Modals stay the same in the tag"
   },
   {
     "sentence": "There are many people here, ______?",
     "correct": "aren't there",
-    "explanation": "'There are' → tag uses 'there' as subject: 'aren't there'.",
+    "explanation": "'There are' → el tag usa 'there' como sujeto: 'aren't there'.",
     "tip": "'There' acts as the subject in the tag"
   },
   {
     "sentence": "Nobody called, ______?",
     "correct": "did they",
-    "explanation": "Negative meaning (nobody) → positive tag. 'Nobody' uses 'they' as pronoun.",
+    "explanation": "Significado negativo (nobody) → question tag positivo. 'Nobody' usa 'they' como pronombre.",
     "tip": "Words like nobody/nothing/never make the statement negative"
   },
   {
     "sentence": "Let's go to the park, ______?",
     "correct": "shall we",
-    "explanation": "Special case: 'Let's' → tag is always 'shall we'.",
+    "explanation": "Caso especial: 'Let's' → el tag siempre es 'shall we'.",
     "tip": "Special rule for 'Let's'"
   },
   {
     "sentence": "You like pizza, ______?",
     "correct": "don't you",
-    "explanation": "Positive present simple → negative tag with 'do'. 'like' → 'don't you'.",
+    "explanation": "Presente simple positivo → question tag negativo con 'do'. 'like' → 'don't you'.",
     "tip": "Present simple uses do/does in the tag"
   },
   {
     "sentence": "She wasn't happy, ______?",
     "correct": "was she",
-    "explanation": "Negative 'wasn't' → positive tag 'was she'.",
+    "explanation": "'wasn't' negativo → question tag positivo 'was she'.",
     "tip": "Reverse the polarity"
   },
   {
     "sentence": "They've already left, ______?",
     "correct": "haven't they",
-    "explanation": "Positive present perfect 'have' → negative tag 'haven't they'.",
+    "explanation": "Presente perfecto positivo 'have' → question tag negativo 'haven't they'.",
     "tip": "Use the first auxiliary in the tag"
   }
 ]
