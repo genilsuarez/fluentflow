@@ -90,12 +90,6 @@
     "tip": "You ate too much (past) and feel sick (now) — negate the present result."
   },
   {
-    "sentence": "If she ______ been more careful, she wouldn't have lost her passport.",
-    "correct": "had",
-    "explanation": "Tercera condicional: <had been> + adjetivo en la cláusula con <if>.",
-    "tip": "She wasn't careful and lost her passport — past perfect in the condition."
-  },
-  {
     "sentence": "If I were taller, I ______ have been selected for the basketball team last year.",
     "correct": "might",
     "explanation": "Condicional mixta con <might>: condición irreal en presente + resultado incierto en pasado.",
@@ -106,12 +100,6 @@
     "correct": "could",
     "explanation": "Condicional mixta (pasado→presente): <could> + verbo base para una capacidad presente derivada de una acción pasada.",
     "tip": "He didn't save (past) so he can't afford it (now) — what modal shows ability?"
-  },
-  {
-    "sentence": "If we ______ taken a taxi, we would have arrived much earlier.",
-    "correct": "had",
-    "explanation": "Tercera condicional: <had taken> en la cláusula con <if> para una acción alternativa en el pasado.",
-    "tip": "You didn't take a taxi — past perfect in the condition."
   },
   {
     "sentence": "If I hadn't met you, my life ______ be completely different now.",
@@ -126,27 +114,9 @@
     "tip": "The weather was bad so the beach wasn't possible — what modal shows past possibility?"
   },
   {
-    "sentence": "If I ______ won the lottery, I would have bought a house by the sea.",
-    "correct": "had",
-    "explanation": "Tercera condicional: <had won> en la cláusula con <if> para un evento irreal en el pasado.",
-    "tip": "You didn't win — past perfect in the condition."
-  },
-  {
     "sentence": "If she hadn't studied medicine, she ______ be a doctor today.",
     "correct": "wouldn't",
     "explanation": "Condicional mixta (pasado→presente): resultado presente negado a partir de un cambio irreal en el pasado.",
     "tip": "She studied medicine (past) and is a doctor (now) — negate the present result."
-  },
-  {
-    "sentence": "If they ______ warned us, we would have been prepared.",
-    "correct": "had",
-    "explanation": "Tercera condicional: <had warned> para la condición irreal en el pasado.",
-    "tip": "They didn't warn you — past perfect in the condition."
-  },
-  {
-    "sentence": "If I hadn't overslept, I ______ have missed the interview.",
-    "correct": "wouldn't",
-    "explanation": "Tercera condicional negativa: <wouldn't have> + participio pasado para el resultado evitado.",
-    "tip": "You overslept and missed it — negate to show what would have been different."
   }
 ]

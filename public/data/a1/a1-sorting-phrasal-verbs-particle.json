@@ -1,32 +1,82 @@
 [
-  {"word": "pick up", "category": "up"},
-  {"word": "wake up", "category": "up"},
-  {"word": "stand up", "category": "up"},
-  {"word": "look up", "category": "up"},
-  {"word": "give up", "category": "up"},
-  {"word": "sit down", "category": "down"},
-  {"word": "write down", "category": "down"},
-  {"word": "calm down", "category": "down"},
-  {"word": "break down", "category": "down"},
-  {"word": "turn on", "category": "on"},
-  {"word": "put on", "category": "on"},
-  {"word": "carry on", "category": "on"},
-  {"word": "hold on", "category": "on"},
-  {"word": "turn off", "category": "off"},
-  {"word": "take off", "category": "off"},
-  {"word": "put off", "category": "off"},
-  {"word": "go off", "category": "off"},
-  {"word": "clean up", "category": "up"},
-  {"word": "hurry up", "category": "up"},
-  {"word": "grow up", "category": "up"},
-  {"word": "slow down", "category": "down"},
-  {"word": "cut down", "category": "down"},
-  {"word": "let down", "category": "down"},
-  {"word": "get on", "category": "on"},
-  {"word": "move on", "category": "on"},
-  {"word": "show off", "category": "off"},
-  {"word": "drop off", "category": "off"},
-  {"word": "set off", "category": "off"},
-  {"word": "keep off", "category": "off"},
-  {"word": "cheer up", "category": "up"}
+  {
+    "word": "pick up",
+    "category": "up"
+  },
+  {
+    "word": "wake up",
+    "category": "up"
+  },
+  {
+    "word": "stand up",
+    "category": "up"
+  },
+  {
+    "word": "look up",
+    "category": "up"
+  },
+  {
+    "word": "give up",
+    "category": "up"
+  },
+  {
+    "word": "sit down",
+    "category": "down"
+  },
+  {
+    "word": "write down",
+    "category": "down"
+  },
+  {
+    "word": "calm down",
+    "category": "down"
+  },
+  {
+    "word": "break down",
+    "category": "down"
+  },
+  {
+    "word": "slow down",
+    "category": "down"
+  },
+  {
+    "word": "turn on",
+    "category": "on"
+  },
+  {
+    "word": "put on",
+    "category": "on"
+  },
+  {
+    "word": "carry on",
+    "category": "on"
+  },
+  {
+    "word": "hold on",
+    "category": "on"
+  },
+  {
+    "word": "get on",
+    "category": "on"
+  },
+  {
+    "word": "turn off",
+    "category": "off"
+  },
+  {
+    "word": "take off",
+    "category": "off"
+  },
+  {
+    "word": "put off",
+    "category": "off"
+  },
+  {
+    "word": "go off",
+    "category": "off"
+  },
+  {
+    "word": "show off",
+    "category": "off"
+  }
 ]

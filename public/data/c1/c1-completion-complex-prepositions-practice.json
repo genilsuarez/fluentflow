@@ -144,18 +144,6 @@
     "tip": "Think about which formal preposition phrase fits the logical relationship."
   },
   {
-    "sentence": "______ the rain, the match continued.",
-    "correct": "In spite of",
-    "options": [
-      "In spite of",
-      "Despite of",
-      "Although",
-      "Even though"
-    ],
-    "explanation": "<In spite of> + sustantivo",
-    "tip": "Think about which formal preposition phrase fits the logical relationship."
-  },
-  {
     "sentence": "The delay was ______ technical problems.",
     "correct": "due to",
     "options": [
@@ -177,18 +165,6 @@
       "Although"
     ],
     "explanation": "<Despite> + gerundio",
-    "tip": "Think about which formal preposition phrase fits the logical relationship."
-  },
-  {
-    "sentence": "She accepted the position ______ the low salary.",
-    "correct": "in spite of",
-    "options": [
-      "in spite of",
-      "despite of",
-      "although",
-      "even though"
-    ],
-    "explanation": "<In spite of> + frase nominal",
     "tip": "Think about which formal preposition phrase fits the logical relationship."
   },
   {
@@ -228,18 +204,6 @@
     "tip": "Think about which formal preposition phrase fits the logical relationship."
   },
   {
-    "sentence": "______ the difficulties, we never gave up.",
-    "correct": "In spite of",
-    "options": [
-      "In spite of",
-      "Despite of",
-      "Although",
-      "Even though"
-    ],
-    "explanation": "<In spite of> + sustantivo",
-    "tip": "Think about which formal preposition phrase fits the logical relationship."
-  },
-  {
     "sentence": "I'm speaking ______ all the employees.",
     "correct": "on behalf of",
     "options": [
@@ -252,18 +216,6 @@
     "tip": "Think about which formal preposition phrase fits the logical relationship."
   },
   {
-    "sentence": "______ being expensive, the product is worth it.",
-    "correct": "Despite",
-    "options": [
-      "Despite",
-      "Despite of",
-      "In despite of",
-      "Although"
-    ],
-    "explanation": "<Despite> + gerundio",
-    "tip": "Think about which formal preposition phrase fits the logical relationship."
-  },
-  {
     "sentence": "The closure was ______ financial losses.",
     "correct": "due to",
     "options": [
@@ -273,18 +225,6 @@
       "as"
     ],
     "explanation": "<Due to> es una forma formal de decir \"because of\" — introduce la causa o razón de algo.",
-    "tip": "Think about which formal preposition phrase fits the logical relationship."
-  },
-  {
-    "sentence": "______ the warnings, he continued with his plan.",
-    "correct": "In spite of",
-    "options": [
-      "In spite of",
-      "Despite of",
-      "Although",
-      "Even though"
-    ],
-    "explanation": "<In spite of> + sustantivo",
     "tip": "Think about which formal preposition phrase fits the logical relationship."
   },
   {

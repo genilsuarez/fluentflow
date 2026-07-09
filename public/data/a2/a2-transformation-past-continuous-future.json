@@ -169,47 +169,5 @@
       "We were eating breakfast."
     ],
     "explanation": "Pasado continuo: <We were eating breakfast>."
-  },
-  {
-    "prompt": "Change to negative future with 'going to'",
-    "source": "I am going to buy a car.",
-    "correct": [
-      "I am not going to buy a car.",
-      "I'm not going to buy a car."
-    ],
-    "explanation": "Negativo: sujeto + am/is/are + not + going to + verbo base."
-  },
-  {
-    "prompt": "Change to a question with 'going to'",
-    "source": "They are going to travel.",
-    "correct": [
-      "Are they going to travel?"
-    ],
-    "explanation": "Pregunta: <Are> + sujeto + going to + verbo base?"
-  },
-  {
-    "prompt": "Change to past continuous",
-    "source": "He drove to work.",
-    "correct": [
-      "He was driving to work."
-    ],
-    "explanation": "Pasado continuo: <He was driving to work>."
-  },
-  {
-    "prompt": "Change to future with 'will'",
-    "source": "We visit the museum.",
-    "correct": [
-      "We will visit the museum.",
-      "We'll visit the museum."
-    ],
-    "explanation": "Futuro con <will>: <We will visit the museum>."
-  },
-  {
-    "prompt": "Change to past continuous",
-    "source": "She danced at the party.",
-    "correct": [
-      "She was dancing at the party."
-    ],
-    "explanation": "Pasado continuo: <She was dancing at the party>."
   }
 ]

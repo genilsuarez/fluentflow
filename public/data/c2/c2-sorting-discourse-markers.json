@@ -1,32 +1,82 @@
 [
-  {"word": "furthermore", "category": "Addition"},
-  {"word": "moreover", "category": "Addition"},
-  {"word": "in addition", "category": "Addition"},
-  {"word": "besides", "category": "Addition"},
-  {"word": "however", "category": "Contrast"},
-  {"word": "nevertheless", "category": "Contrast"},
-  {"word": "on the other hand", "category": "Contrast"},
-  {"word": "conversely", "category": "Contrast"},
-  {"word": "consequently", "category": "Cause & Effect"},
-  {"word": "therefore", "category": "Cause & Effect"},
-  {"word": "as a result", "category": "Cause & Effect"},
-  {"word": "hence", "category": "Cause & Effect"},
-  {"word": "to conclude", "category": "Summary"},
-  {"word": "in summary", "category": "Summary"},
-  {"word": "to sum up", "category": "Summary"},
-  {"word": "all in all", "category": "Summary"},
-  {"word": "for instance", "category": "Exemplification"},
-  {"word": "namely", "category": "Exemplification"},
-  {"word": "that is to say", "category": "Exemplification"},
-  {"word": "to illustrate", "category": "Exemplification"},
-  {"word": "such as", "category": "Exemplification"},
-  {"word": "notwithstanding", "category": "Contrast"},
-  {"word": "albeit", "category": "Contrast"},
-  {"word": "by the same token", "category": "Addition"},
-  {"word": "what is more", "category": "Addition"},
-  {"word": "thus", "category": "Cause & Effect"},
-  {"word": "accordingly", "category": "Cause & Effect"},
-  {"word": "in essence", "category": "Summary"},
-  {"word": "on the whole", "category": "Summary"},
-  {"word": "in other words", "category": "Exemplification"}
+  {
+    "word": "furthermore",
+    "category": "Addition"
+  },
+  {
+    "word": "moreover",
+    "category": "Addition"
+  },
+  {
+    "word": "in addition",
+    "category": "Addition"
+  },
+  {
+    "word": "besides",
+    "category": "Addition"
+  },
+  {
+    "word": "however",
+    "category": "Contrast"
+  },
+  {
+    "word": "nevertheless",
+    "category": "Contrast"
+  },
+  {
+    "word": "on the other hand",
+    "category": "Contrast"
+  },
+  {
+    "word": "conversely",
+    "category": "Contrast"
+  },
+  {
+    "word": "consequently",
+    "category": "Cause & Effect"
+  },
+  {
+    "word": "therefore",
+    "category": "Cause & Effect"
+  },
+  {
+    "word": "as a result",
+    "category": "Cause & Effect"
+  },
+  {
+    "word": "hence",
+    "category": "Cause & Effect"
+  },
+  {
+    "word": "to conclude",
+    "category": "Summary"
+  },
+  {
+    "word": "in summary",
+    "category": "Summary"
+  },
+  {
+    "word": "to sum up",
+    "category": "Summary"
+  },
+  {
+    "word": "all in all",
+    "category": "Summary"
+  },
+  {
+    "word": "for instance",
+    "category": "Exemplification"
+  },
+  {
+    "word": "namely",
+    "category": "Exemplification"
+  },
+  {
+    "word": "that is to say",
+    "category": "Exemplification"
+  },
+  {
+    "word": "to illustrate",
+    "category": "Exemplification"
+  }
 ]

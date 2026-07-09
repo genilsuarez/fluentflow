@@ -84,12 +84,6 @@
     "explanation": "CARE → careful (se agrega -ful para formar un adjetivo que significa 'lleno de cuidado')"
   },
   {
-    "sentence": "The cake is very _____ . It has a lot of sugar.",
-    "rootWord": "SUGAR",
-    "correct": "sugary",
-    "explanation": "SUGAR → sugary (se agrega -y para formar un adjetivo que significa 'que tiene azúcar')"
-  },
-  {
     "sentence": "I am _____ that you passed the exam!",
     "rootWord": "JOY",
     "correct": "joyful",
@@ -124,29 +118,5 @@
     "rootWord": "RESPECT",
     "correct": "respectful",
     "explanation": "RESPECT → respectful (se agrega -ful para formar un adjetivo que significa 'lleno de respeto')"
-  },
-  {
-    "sentence": "The weather is _____ today. There is a lot of fog.",
-    "rootWord": "FOG",
-    "correct": "foggy",
-    "explanation": "FOG → foggy (se duplica la consonante y se agrega -y)"
-  },
-  {
-    "sentence": "This book is very _____ . I learned a lot.",
-    "rootWord": "USE",
-    "correct": "useful",
-    "explanation": "USE → useful (se agrega -ful para formar un adjetivo que significa 'lleno de utilidad')"
-  },
-  {
-    "sentence": "The road is very _____ . There are many rocks.",
-    "rootWord": "ROCK",
-    "correct": "rocky",
-    "explanation": "ROCK → rocky (se agrega -y para formar un adjetivo que significa 'lleno de rocas')"
-  },
-  {
-    "sentence": "She is a _____ student. She studies hard every day.",
-    "rootWord": "WONDER",
-    "correct": "wonderful",
-    "explanation": "WONDER → wonderful (se agrega -ful para formar un adjetivo que significa 'lleno de asombro')"
   }
 ]

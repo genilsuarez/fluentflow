@@ -138,47 +138,5 @@
     "correct": "extinction",
     "hint": "The noun form meaning the dying out of something",
     "explanation": "EXTINCT → extinction (sufijo -tion: el estado de dejar de existir)"
-  },
-  {
-    "sentence": "The diplomat's _____ remarks nearly caused an international incident.",
-    "rootWord": "CIRCUMSPECT",
-    "correct": "incircumspect",
-    "hint": "Not circumspect — lacking caution",
-    "explanation": "CIRCUMSPECT → incircumspect (prefijo in-: que no es cauteloso ni prudente)"
-  },
-  {
-    "sentence": "The _____ between the empirical data and the theoretical model was troubling.",
-    "rootWord": "CONGRUENT",
-    "correct": "incongruence",
-    "hint": "The noun form meaning lack of agreement",
-    "explanation": "CONGRUENT → incongruence (prefijo in- + sufijo -ence: el estado de no estar en concordancia)"
-  },
-  {
-    "sentence": "The _____ of the classical text brought it to a new generation of readers.",
-    "rootWord": "POPULAR",
-    "correct": "popularisation",
-    "hint": "The noun form meaning making something accessible to the general public",
-    "explanation": "POPULAR → popularisation (sufijo -isation: el proceso de hacer algo accesible al público general)"
-  },
-  {
-    "sentence": "The philosopher questioned the _____ of absolute moral truths.",
-    "rootWord": "DEFEND",
-    "correct": "defensibility",
-    "hint": "The noun form meaning the quality of being defensible",
-    "explanation": "DEFEND → defensibility (sufijo -ibility: la cualidad de poder ser defendido)"
-  },
-  {
-    "sentence": "The _____ of the archaeological site yielded remarkable artefacts.",
-    "rootWord": "EXCAVATE",
-    "correct": "excavation",
-    "hint": "The noun form meaning the process of digging out",
-    "explanation": "EXCAVATE → excavation (sufijo -tion: el proceso sistemático de excavar y descubrir)"
-  },
-  {
-    "sentence": "The literary critic noted the _____ quality of the author's prose.",
-    "rootWord": "TRANSCEND",
-    "correct": "transcendent",
-    "hint": "An adjective meaning surpassing ordinary limits",
-    "explanation": "TRANSCEND → transcendent (sufijo -ent: que va más allá de los límites normales)"
   }
 ]

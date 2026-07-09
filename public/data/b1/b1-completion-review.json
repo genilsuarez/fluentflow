@@ -98,30 +98,5 @@
     "sentence": "If she studied harder, she ______ pass the exam. (transform to conditional)",
     "correct": "would",
     "explanation": "Cláusula de resultado de la segunda condicional: <would> + forma base."
-  },
-  {
-    "sentence": "The letter ______ by the secretary. (transform: 'The secretary wrote the letter' → passive)",
-    "correct": "was written",
-    "explanation": "Voz pasiva: el objeto se convierte en sujeto + <was> + participio pasado."
-  },
-  {
-    "sentence": "He told me that he ______ tired. (transform: 'I am tired' → reported speech)",
-    "correct": "was",
-    "explanation": "En el estilo indirecto, el presente <am> cambia a pasado <was>."
-  },
-  {
-    "sentence": "She said she ______ help me the next day. (reported speech: 'I will help you tomorrow')",
-    "correct": "would",
-    "explanation": "En el estilo indirecto, <will> cambia a <would> y <tomorrow> a <the next day>."
-  },
-  {
-    "sentence": "The cake ______ eaten by the children. (transform to passive: 'The children ate the cake')",
-    "correct": "was",
-    "explanation": "Voz pasiva en pasado simple: sujeto + <was/were> + participio pasado."
-  },
-  {
-    "sentence": "If it ______ tomorrow, we'll stay home. (first conditional)",
-    "correct": "rains",
-    "explanation": "Primera condicional: If + presente simple. <If it rains> expresa una posibilidad real."
   }
 ]

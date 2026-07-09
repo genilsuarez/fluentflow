@@ -171,46 +171,5 @@
       "If they had checked the weather, they wouldn't have gotten caught in a storm."
     ],
     "explanation": "Tercera condicional: <If> + pasado perfecto + <would(n't) have> + participio pasado."
-  },
-  {
-    "prompt": "Rewrite using <On condition that>",
-    "source": "I'll help you if you help me in return.",
-    "correct": [
-      "I'll help you on condition that you help me in return."
-    ],
-    "explanation": "<On condition that> es un equivalente formal de <if>."
-  },
-  {
-    "prompt": "Rewrite using <Even if>",
-    "source": "It might rain, but we'll go hiking anyway.",
-    "correct": [
-      "Even if it rains, we'll go hiking."
-    ],
-    "explanation": "<Even if> expresa que el resultado es el mismo sin importar la condición."
-  },
-  {
-    "prompt": "Change to second conditional with inversion",
-    "source": "If I were you, I would apologize.",
-    "correct": [
-      "Were I you, I would apologize."
-    ],
-    "explanation": "Inversión formal: <Were> + sujeto reemplaza a <If> + sujeto + <were>."
-  },
-  {
-    "prompt": "Rewrite using <What if>",
-    "source": "Imagine that you won the lottery. What would you do?",
-    "correct": [
-      "What if you won the lottery?",
-      "What if you won the lottery? What would you do?"
-    ],
-    "explanation": "<What if> + pasado simple introduce un escenario hipotético de forma informal."
-  },
-  {
-    "prompt": "Change to mixed conditional (past → present)",
-    "source": "He ate too much last night. He feels terrible now.",
-    "correct": [
-      "If he hadn't eaten so much last night, he wouldn't feel terrible now."
-    ],
-    "explanation": "Mixta (pasado→presente): <If> + pasado perfecto + <would(n't)> + verbo base."
   }
 ]

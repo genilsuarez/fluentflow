@@ -168,18 +168,6 @@
     "tip": "The time expression suggests a habitual action."
   },
   {
-    "sentence": "We ______ a walk in the evening.",
-    "correct": "take",
-    "options": [
-      "take",
-      "make",
-      "do",
-      "have"
-    ],
-    "explanation": "<Take> a walk es la expresión correcta para dar un paseo.",
-    "tip": "Think about a daily routine or activity that fits the context."
-  },
-  {
     "sentence": "She ______ her hair every morning.",
     "correct": "combs",
     "options": [
@@ -216,18 +204,6 @@
     "tip": "Think about a daily routine or activity that fits the context."
   },
   {
-    "sentence": "They ______ the dog for a walk twice a day.",
-    "correct": "take",
-    "options": [
-      "take",
-      "bring",
-      "carry",
-      "move"
-    ],
-    "explanation": "<Take> the dog for a walk es la expresión correcta para pasear a una mascota.",
-    "tip": "Think about a daily routine or activity that fits the context."
-  },
-  {
     "sentence": "I ______ the lights before leaving the house.",
     "correct": "turn off",
     "options": [
@@ -246,27 +222,9 @@
     "tip": "Complete with the verb for cleaning your teeth"
   },
   {
-    "sentence": "She ______ the bus to work.",
-    "correct": "takes",
-    "explanation": "Usa <takes> con el transporte público.",
-    "tip": "Complete with a transport verb"
-  },
-  {
-    "sentence": "We ______ dinner at 7 PM.",
-    "correct": "have",
-    "explanation": "Usa <have> con las comidas.",
-    "tip": "Complete with the verb used for eating meals (we ___ dinner)"
-  },
-  {
     "sentence": "He ______ to bed at 10 PM.",
     "correct": "goes",
     "explanation": "Usa <goes> con <to bed>.",
     "tip": "Complete with a movement verb"
-  },
-  {
-    "sentence": "They ______ TV after dinner.",
-    "correct": "watch",
-    "explanation": "Usa <watch> con la televisión.",
-    "tip": "Complete with the verb for looking at a screen"
   }
 ]

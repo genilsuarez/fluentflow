@@ -138,40 +138,5 @@
       "It is necessary that each participant sign the consent form."
     ],
     "explanation": "Subjuntivo después de <necessary that>: se usa la forma base <sign>, no <signs>."
-  },
-  {
-    "sentence": "Little they knew about the surprise that awaited them.",
-    "correct": [
-      "Little did they know about the surprise that awaited them."
-    ],
-    "explanation": "Cuando <Little> va al inicio, se usa inversión: <Little did they know>."
-  },
-  {
-    "sentence": "She requested that the report is completed by Friday.",
-    "correct": [
-      "She requested that the report be completed by Friday."
-    ],
-    "explanation": "Subjuntivo después de <requested that>: se usa <be completed>, no <is completed>."
-  },
-  {
-    "sentence": "In no way this decision should affect your work.",
-    "correct": [
-      "In no way should this decision affect your work."
-    ],
-    "explanation": "Después de <In no way>, se usa inversión: <should this decision affect>."
-  },
-  {
-    "sentence": "The law requires that every driver has insurance.",
-    "correct": [
-      "The law requires that every driver have insurance."
-    ],
-    "explanation": "Subjuntivo después de <requires that>: se usa la forma base <have>, no <has>."
-  },
-  {
-    "sentence": "Only when she left I understood how much she meant to me.",
-    "correct": [
-      "Only when she left did I understand how much she meant to me."
-    ],
-    "explanation": "Cuando <Only when> va al inicio, se usa inversión: <did I understand>."
   }
 ]

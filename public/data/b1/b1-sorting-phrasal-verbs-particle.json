@@ -20,14 +20,6 @@
     "category": "Up"
   },
   {
-    "word": "bring up (mention)",
-    "category": "Up"
-  },
-  {
-    "word": "grow up (become adult)",
-    "category": "Up"
-  },
-  {
     "word": "find out (discover)",
     "category": "Out"
   },
@@ -45,14 +37,6 @@
   },
   {
     "word": "run out (exhaust supply)",
-    "category": "Out"
-  },
-  {
-    "word": "figure out (understand)",
-    "category": "Out"
-  },
-  {
-    "word": "turn out (result)",
     "category": "Out"
   },
   {
@@ -76,14 +60,6 @@
     "category": "Off"
   },
   {
-    "word": "go off (explode/ring)",
-    "category": "Off"
-  },
-  {
-    "word": "cut off (disconnect)",
-    "category": "Off"
-  },
-  {
     "word": "look down on (despise)",
     "category": "Down"
   },
@@ -102,21 +78,5 @@
   {
     "word": "let down (disappoint)",
     "category": "Down"
-  },
-  {
-    "word": "settle down (become stable)",
-    "category": "Down"
-  },
-  {
-    "word": "slow down (reduce speed)",
-    "category": "Down"
-  },
-  {
-    "word": "hang out (spend time)",
-    "category": "Out"
-  },
-  {
-    "word": "cheer up (become happier)",
-    "category": "Up"
   }
 ]

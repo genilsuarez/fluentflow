@@ -168,46 +168,5 @@
       "The place where we first met was the library."
     ],
     "explanation": "Énfasis en el lugar: <The place where ... is/was>."
-  },
-  {
-    "prompt": "Rewrite using 'What ... is' for emphasis",
-    "source": "I admire her determination.",
-    "correct": [
-      "What I admire is her determination."
-    ],
-    "explanation": "Pseudo-hendida: <What I admire is> + elemento enfatizado."
-  },
-  {
-    "prompt": "Rewrite as a cleft sentence starting with 'It was'",
-    "source": "The storm caused the power outage.",
-    "correct": [
-      "It was the storm that caused the power outage."
-    ],
-    "explanation": "Oración hendida: <It was the storm that> + resto de la oración."
-  },
-  {
-    "prompt": "Rewrite using 'All ... did was' for emphasis",
-    "source": "He just sat there and watched.",
-    "correct": [
-      "All he did was sit there and watch."
-    ],
-    "explanation": "Énfasis con <All ... did was>: <All he did was> + verbo en forma base."
-  },
-  {
-    "prompt": "Rewrite as a cleft sentence starting with 'It is'",
-    "source": "Teamwork makes the difference.",
-    "correct": [
-      "It is teamwork that makes the difference.",
-      "It's teamwork that makes the difference."
-    ],
-    "explanation": "Oración hendida: <It is teamwork that> + resto de la oración."
-  },
-  {
-    "prompt": "Rewrite using 'What ... is' for emphasis",
-    "source": "She really enjoys cooking for her friends.",
-    "correct": [
-      "What she really enjoys is cooking for her friends."
-    ],
-    "explanation": "Pseudo-hendida: <What she really enjoys is> + elemento enfatizado."
   }
 ]

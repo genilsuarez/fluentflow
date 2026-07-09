@@ -171,50 +171,5 @@
       "She arrived late, which made the teacher angry."
     ],
     "explanation": "El <which> explicativo puede referirse a toda la idea/evento anterior."
-  },
-  {
-    "prompt": "Rewrite using a reduced relative clause (infinitive)",
-    "source": "She was the only student who solved the problem.",
-    "correct": [
-      "She was the only student to solve the problem."
-    ],
-    "hint": "After <only>, <first>, <last> → use <to + infinitive>",
-    "explanation": "Después de <the only/first/last>, las cláusulas relativas se reducen a <to + infinitivo>."
-  },
-  {
-    "prompt": "Combine using <in which> or <where>",
-    "source": "We live in a city. Public transport is excellent in this city.",
-    "correct": [
-      "We live in a city where public transport is excellent.",
-      "We live in a city in which public transport is excellent."
-    ],
-    "explanation": "<Where> o <in which> introducen una cláusula relativa sobre un lugar."
-  },
-  {
-    "prompt": "Rewrite the non-defining clause as a separate sentence",
-    "source": "The Eiffel Tower, which was built in 1889, is the most visited monument in Paris.",
-    "correct": [
-      "The Eiffel Tower is the most visited monument in Paris. It was built in 1889."
-    ],
-    "explanation": "Las cláusulas explicativas pueden separarse en oraciones independientes."
-  },
-  {
-    "prompt": "Combine using <the reason why>",
-    "source": "She quit her job. The reason was low salary.",
-    "correct": [
-      "The reason why she quit her job was low salary.",
-      "The reason she quit her job was low salary."
-    ],
-    "explanation": "<The reason why/that> o simplemente <the reason> introduce una cláusula de razón."
-  },
-  {
-    "prompt": "Combine using a defining relative clause",
-    "source": "The hotel was expensive. We stayed at that hotel.",
-    "correct": [
-      "The hotel where we stayed was expensive.",
-      "The hotel that we stayed at was expensive.",
-      "The hotel we stayed at was expensive."
-    ],
-    "explanation": "Se usa <where> o <that ... preposición> para lugares en las cláusulas especificativas."
   }
 ]

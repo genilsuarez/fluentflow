@@ -178,50 +178,5 @@
       "The unique interpretation of the poem by the artist was praised."
     ],
     "explanation": "Nominalization: <interpreted> → <interpretation>."
-  },
-  {
-    "prompt": "Rewrite using nominalization",
-    "source": "The government regulated the industry more strictly.",
-    "correct": [
-      "The government's stricter regulation of the industry was implemented.",
-      "Stricter government regulation of the industry was introduced."
-    ],
-    "explanation": "Nominalization: <regulated more strictly> → <stricter regulation>."
-  },
-  {
-    "prompt": "Rewrite using nominalization",
-    "source": "The volcano erupted violently, which destroyed several villages.",
-    "correct": [
-      "The violent eruption of the volcano destroyed several villages.",
-      "The volcano's violent eruption resulted in the destruction of several villages."
-    ],
-    "explanation": "Nominalization: <erupted violently> → <violent eruption>."
-  },
-  {
-    "prompt": "Rewrite using nominalization",
-    "source": "The committee evaluated the proposals and selected the best one.",
-    "correct": [
-      "The committee's evaluation of the proposals led to the selection of the best one.",
-      "Following evaluation, the committee made its selection."
-    ],
-    "explanation": "Nominalization: <evaluated> → <evaluation>, <selected> → <selection>."
-  },
-  {
-    "prompt": "Rewrite using nominalization",
-    "source": "The currency depreciated, which affected imports.",
-    "correct": [
-      "The depreciation of the currency affected imports.",
-      "Currency depreciation had an effect on imports."
-    ],
-    "explanation": "Nominalization: <depreciated> → <depreciation>."
-  },
-  {
-    "prompt": "Rewrite using nominalization",
-    "source": "The architect designed the building to withstand earthquakes.",
-    "correct": [
-      "The architect's design of the building ensured earthquake resistance.",
-      "The design of the building by the architect incorporated earthquake resistance."
-    ],
-    "explanation": "Nominalization: <designed> → <design>."
   }
 ]

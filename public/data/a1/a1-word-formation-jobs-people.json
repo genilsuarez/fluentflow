@@ -118,35 +118,5 @@
     "rootWord": "DESIGN",
     "correct": "designer",
     "explanation": "DESIGN → designer (add -er to make a person who designs)"
-  },
-  {
-    "sentence": "She is a _____ . She reports the news on TV.",
-    "rootWord": "REPORT",
-    "correct": "reporter",
-    "explanation": "REPORT → reporter (add -er to make a person who reports)"
-  },
-  {
-    "sentence": "The _____ helped me carry my bags at the hotel.",
-    "rootWord": "HELP",
-    "correct": "helper",
-    "explanation": "HELP → helper (add -er to make a person who helps)"
-  },
-  {
-    "sentence": "My brother is a _____ . He builds houses.",
-    "rootWord": "BUILD",
-    "correct": "builder",
-    "explanation": "BUILD → builder (add -er to make a person who builds)"
-  },
-  {
-    "sentence": "The _____ collected the tickets at the door.",
-    "rootWord": "COLLECT",
-    "correct": "collector",
-    "explanation": "COLLECT → collector (add -or to make a person who collects)"
-  },
-  {
-    "sentence": "She is a great _____ . She leads the team very well.",
-    "rootWord": "LEAD",
-    "correct": "leader",
-    "explanation": "LEAD → leader (add -er to make a person who leads)"
   }
 ]

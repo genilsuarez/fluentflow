@@ -78,18 +78,6 @@
     "tip": "Complete with the present simple form"
   },
   {
-    "sentence": "She ______ have been working here for ten years by December.",
-    "correct": "will",
-    "explanation": "Usa el futuro perfecto continuo para indicar duración hasta un punto futuro",
-    "tip": "Complete with the future perfect auxiliary"
-  },
-  {
-    "sentence": "Don't call me at 7 PM. I ______ watching my favorite show.",
-    "correct": "will be",
-    "explanation": "Usa el futuro continuo para acciones en un momento futuro específico",
-    "tip": "Complete with the future continuous auxiliary"
-  },
-  {
     "sentence": "I promise I ______ be late again.",
     "correct": "won't",
     "explanation": "Usa <will not> para promesas sobre comportamiento futuro",
@@ -108,40 +96,10 @@
     "tip": "Complete with the present simple form"
   },
   {
-    "sentence": "By next summer, they ______ built their new house.",
-    "correct": "will have",
-    "explanation": "Usa el futuro perfecto para indicar que algo se completará antes de un momento futuro",
-    "tip": "Complete with the future perfect auxiliary"
-  },
-  {
-    "sentence": "At 10 AM tomorrow, I ______ sitting in a meeting.",
-    "correct": "will be",
-    "explanation": "Usa el futuro continuo para acciones en un momento futuro específico",
-    "tip": "Complete with the future continuous auxiliary"
-  },
-  {
-    "sentence": "I don't think she ______ come to the party.",
-    "correct": "will",
-    "explanation": "Usa <will> para predicciones en oraciones negativas",
-    "tip": "Complete with the future auxiliary for predictions"
-  },
-  {
-    "sentence": "He ______ going to apply for that job tomorrow.",
-    "correct": "is",
-    "explanation": "Usa <be going to> para acciones que se tienen la intención de hacer",
-    "tip": "Complete with the correct singular form of <be>"
-  },
-  {
     "sentence": "The store ______ at 9 AM and closes at 6 PM.",
     "correct": "opens",
     "explanation": "Usa el presente simple para horarios comerciales",
     "tip": "Complete with the present simple form"
-  },
-  {
-    "sentence": "By the end of this course, you ______ learned 500 new words.",
-    "correct": "will have",
-    "explanation": "Usa el futuro perfecto para un logro alcanzado antes de un punto futuro",
-    "tip": "Complete with the future perfect auxiliary"
   },
   {
     "sentence": "Don't worry, I ______ be working when you call.",
@@ -150,93 +108,15 @@
     "tip": "Complete with the negative future continuous"
   },
   {
-    "sentence": "We ______ definitely going to win this game.",
-    "correct": "are",
-    "explanation": "Usa <be going to> para predicciones firmes",
-    "tip": "Complete with the correct plural form of <be>"
-  },
-  {
     "sentence": "The flight ______ at 6:45 AM sharp.",
     "correct": "departs",
     "explanation": "Usa el presente simple para horarios de transporte",
     "tip": "Complete with the present simple form"
   },
   {
-    "sentence": "She ______ have finished her degree by the time she turns 25.",
-    "correct": "will",
-    "explanation": "Usa el futuro perfecto para indicar que algo se completará antes de cierta edad futura",
-    "tip": "Complete with the future perfect auxiliary"
-  },
-  {
-    "sentence": "This time next week, we ______ relaxing on the beach.",
-    "correct": "will be",
-    "explanation": "Usa el futuro continuo para actividades en un momento futuro",
-    "tip": "Complete with the future continuous auxiliary"
-  },
-  {
-    "sentence": "I ______ call you as soon as I arrive.",
-    "correct": "will",
-    "explanation": "Usa <will> para acciones que ocurrirán después de otra acción futura",
-    "tip": "Complete with the future auxiliary"
-  },
-  {
-    "sentence": "They ______ going to redecorate their living room.",
-    "correct": "are",
-    "explanation": "Usa <be going to> para actividades planeadas",
-    "tip": "Complete with the correct plural form of <be>"
-  },
-  {
-    "sentence": "The museum ______ closed on Mondays.",
-    "correct": "is",
-    "explanation": "Usa el presente simple para cierres regulares",
-    "tip": "Complete with the present simple form of <be>"
-  },
-  {
-    "sentence": "By 2030, scientists ______ discovered a cure for this disease.",
-    "correct": "will have",
-    "explanation": "Usa el futuro perfecto para logros esperados antes de una fecha futura",
-    "tip": "Complete with the future perfect auxiliary"
-  },
-  {
-    "sentence": "At this time tomorrow, she ______ taking her final exam.",
-    "correct": "will be",
-    "explanation": "Usa el futuro continuo para actividades programadas",
-    "tip": "Complete with the future continuous auxiliary"
-  },
-  {
-    "sentence": "I'm sure he ______ understand if you explain it clearly.",
-    "correct": "will",
-    "explanation": "Usa <will> para predicciones con seguridad",
-    "tip": "Complete with the future auxiliary for certainty"
-  },
-  {
-    "sentence": "We ______ going to visit three countries during our vacation.",
-    "correct": "are",
-    "explanation": "Usa <be going to> para planes de viaje",
-    "tip": "Complete with the correct plural form of <be>"
-  },
-  {
     "sentence": "The library ______ at 8 AM on weekdays.",
     "correct": "opens",
     "explanation": "Usa el presente simple para horarios de apertura",
     "tip": "Complete with the present simple form"
-  },
-  {
-    "sentence": "By the time the guests arrive, we ______ prepared everything.",
-    "correct": "will have",
-    "explanation": "Usa el futuro perfecto para indicar que algo se completará antes de que lleguen los invitados",
-    "tip": "Complete with the future perfect auxiliary"
-  },
-  {
-    "sentence": "Don't disturb me at 3 PM. I ______ having an important meeting.",
-    "correct": "will be",
-    "explanation": "Usa el futuro continuo para actividades programadas",
-    "tip": "Complete with the future continuous auxiliary"
-  },
-  {
-    "sentence": "I ______ never forget this amazing experience.",
-    "correct": "will",
-    "explanation": "Usa <will> para afirmaciones firmes sobre el futuro",
-    "tip": "Complete with the future auxiliary for emphasis"
   }
 ]

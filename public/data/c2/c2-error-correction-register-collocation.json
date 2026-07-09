@@ -142,40 +142,5 @@
       "The company's profits have risen significantly over the past decade."
     ],
     "explanation": "Gramática: <rise> (intransitivo, sin objeto) frente a <raise> (transitivo, necesita objeto). Los beneficios <rise>."
-  },
-  {
-    "sentence": "The media is responsible for shaping public opinion.",
-    "correct": [
-      "The media are responsible for shaping public opinion."
-    ],
-    "explanation": "Gramática: <media> es el plural de <medium>, así que se usa <are> en registro formal."
-  },
-  {
-    "sentence": "The study aimed to illicit responses from participants through structured interviews.",
-    "correct": [
-      "The study aimed to elicit responses from participants through structured interviews."
-    ],
-    "explanation": "Palabras confundibles: <elicit> (provocar, obtener), no <illicit> (ilegal)."
-  },
-  {
-    "sentence": "The council gave their ascent to the proposed development plan.",
-    "correct": [
-      "The council gave their assent to the proposed development plan."
-    ],
-    "explanation": "Palabras confundibles: <assent> (acuerdo), no <ascent> (ascenso, subida)."
-  },
-  {
-    "sentence": "The stationery position of the satellite allows continuous monitoring.",
-    "correct": [
-      "The stationary position of the satellite allows continuous monitoring."
-    ],
-    "explanation": "Palabras confundibles: <stationary> (inmóvil), no <stationery> (artículos de papelería)."
-  },
-  {
-    "sentence": "The therapist's discrete approach ensured patient confidentiality.",
-    "correct": [
-      "The therapist's discreet approach ensured patient confidentiality."
-    ],
-    "explanation": "Palabras confundibles: <discreet> (prudente, discreto), no <discrete> (separado, distinto)."
   }
 ]

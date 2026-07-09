@@ -84,12 +84,6 @@
     "tip": "mean + to = intend"
   },
   {
-    "sentence": "The children stopped ______ when the teacher entered.",
-    "correct": "talking",
-    "explanation": "<Stop> + gerundio = cesar la actividad. They stopped talking = se quedaron callados.",
-    "tip": "stop + -ing = cease the activity"
-  },
-  {
     "sentence": "On the way home, we stopped ______ petrol.",
     "correct": "to get",
     "explanation": "<Stop> + infinitivo = detenerse para hacer algo. We stopped to get petrol = nos detuvimos para cargar gasolina.",
@@ -114,12 +108,6 @@
     "tip": "try + -ing = test a method"
   },
   {
-    "sentence": "I tried ______ her, but her phone was off.",
-    "correct": "to call",
-    "explanation": "<Try> + infinitivo = hacer un esfuerzo por hacer algo.",
-    "tip": "try + to = make an effort"
-  },
-  {
     "sentence": "I'll never forget ______ my first car.",
     "correct": "buying",
     "explanation": "<Forget> + gerundio = una experiencia pasada memorable que no olvidarás.",
@@ -130,23 +118,5 @@
     "correct": "to turn off",
     "explanation": "<Forget> + infinitivo = no lograr recordar una tarea.",
     "tip": "forget + to = remember to do it"
-  },
-  {
-    "sentence": "We regret ______ that the flight has been cancelled.",
-    "correct": "to announce",
-    "explanation": "<Regret> + infinitivo = forma formal de dar una mala noticia.",
-    "tip": "regret + to = formal bad news"
-  },
-  {
-    "sentence": "He regrets not ______ harder at university.",
-    "correct": "studying",
-    "explanation": "<Regret> + gerundio = lamentar una acción u omisión pasada.",
-    "tip": "regret + -ing = wish you had done differently"
-  },
-  {
-    "sentence": "Winning the lottery would mean ______ to work.",
-    "correct": "not having",
-    "explanation": "<Mean> + gerundio = implicar como consecuencia.",
-    "tip": "mean + -ing = involve / imply"
   }
 ]

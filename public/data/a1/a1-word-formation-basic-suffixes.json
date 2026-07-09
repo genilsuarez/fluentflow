@@ -138,47 +138,5 @@
     "correct": "player",
     "hint": "A person who plays",
     "explanation": "PLAY → player (sufijo -er: persona que realiza la acción)"
-  },
-  {
-    "sentence": "The _____ cleaned all the rooms in the hotel.",
-    "rootWord": "WORK",
-    "correct": "worker",
-    "hint": "A person who works",
-    "explanation": "WORK → worker (sufijo -er: persona que realiza la acción)"
-  },
-  {
-    "sentence": "It is very _____ outside. Take an umbrella.",
-    "rootWord": "RAIN",
-    "correct": "rainy",
-    "hint": "Having rain",
-    "explanation": "RAIN → rainy (sufijo -y: que tiene la cualidad de la lluvia)"
-  },
-  {
-    "sentence": "The soup is very _____. I like it.",
-    "rootWord": "TASTE",
-    "correct": "tasty",
-    "hint": "Having a good taste",
-    "explanation": "TASTE → tasty (sufijo -y: se elimina la -e final y se agrega -y)"
-  },
-  {
-    "sentence": "She is always _____. She smiles a lot.",
-    "rootWord": "CHEER",
-    "correct": "cheerful",
-    "hint": "Full of cheer and happiness",
-    "explanation": "CHEER → cheerful (sufijo -ful: lleno de alegría)"
-  },
-  {
-    "sentence": "The baby is very _____. She sleeps a lot.",
-    "rootWord": "SLEEP",
-    "correct": "sleepy",
-    "hint": "Wanting to sleep",
-    "explanation": "SLEEP → sleepy (sufijo -y: que tiene la cualidad del sueño)"
-  },
-  {
-    "sentence": "My brother is a _____ in a big company.",
-    "rootWord": "MANAGE",
-    "correct": "manager",
-    "hint": "A person who manages",
-    "explanation": "MANAGE → manager (sufijo -er: persona que gestiona, se elimina la -e y se agrega -er)"
   }
 ]

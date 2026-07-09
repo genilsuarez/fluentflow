@@ -98,30 +98,5 @@
     "sentence": "The data ______ to suggest a correlation between the variables. (hedging: 'seems')",
     "correct": "appears",
     "explanation": "Matización académica (hedging): <appears to suggest> suaviza la afirmación, evitando declaraciones absolutas."
-  },
-  {
-    "sentence": "______ the limitations of the study, the findings remain significant. (concessive)",
-    "correct": "Notwithstanding",
-    "explanation": "<Notwithstanding> es una conjunción concesiva formal que significa 'a pesar de'."
-  },
-  {
-    "sentence": "The phenomenon, ______ previously unexplored, merits further investigation. (participle clause)",
-    "correct": "hitherto",
-    "explanation": "<Hitherto> significa 'hasta ahora' — adverbio formal/literario usado en la escritura académica."
-  },
-  {
-    "sentence": "Were the hypothesis ______ be confirmed, it would revolutionize the field. (inverted conditional)",
-    "correct": "to",
-    "explanation": "Condicional invertida: <Were the hypothesis to be confirmed> = If the hypothesis were confirmed."
-  },
-  {
-    "sentence": "The author's ______ use of irony pervades the entire narrative. (vocabulary: subtle and clever)",
-    "correct": "sardonic",
-    "explanation": "<Sardonic> significa burlón de manera sombría o cínico — un término literario sofisticado."
-  },
-  {
-    "sentence": "The theory, while ______, fails to account for recent empirical evidence. (vocabulary: seemingly correct)",
-    "correct": "ostensibly plausible",
-    "explanation": "<Ostensibly plausible> significa que parece razonable en la superficie, pero que puede tener fallas."
   }
 ]

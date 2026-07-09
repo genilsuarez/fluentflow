@@ -167,49 +167,5 @@
       "May I open the window?"
     ],
     "explanation": "<May I...?> es una forma formal de pedir permiso."
-  },
-  {
-    "prompt": "Rewrite using <would rather>",
-    "source": "I prefer to stay at home tonight.",
-    "correct": [
-      "I would rather stay at home tonight.",
-      "I'd rather stay at home tonight."
-    ],
-    "explanation": "<Would rather> + verbo base expresa preferencia."
-  },
-  {
-    "prompt": "Rewrite using <can't have> for past deduction",
-    "source": "I'm sure she didn't say that. She's very polite.",
-    "correct": [
-      "She can't have said that."
-    ],
-    "explanation": "<Can't have> + participio pasado expresa incredulidad sobre un evento pasado."
-  },
-  {
-    "prompt": "Rewrite using <be bound to>",
-    "source": "I'm certain he will succeed.",
-    "correct": [
-      "He is bound to succeed.",
-      "He's bound to succeed."
-    ],
-    "explanation": "<Be bound to> = estar seguro/con certeza de que algo pasará (predicción fuerte)."
-  },
-  {
-    "prompt": "Rewrite using <might have> for past possibility",
-    "source": "Perhaps she took the wrong bus.",
-    "correct": [
-      "She might have taken the wrong bus."
-    ],
-    "explanation": "<Might have> + participio pasado expresa posibilidad sobre un evento pasado."
-  },
-  {
-    "prompt": "Rewrite using <was/were to>",
-    "source": "The meeting was scheduled for 3 PM.",
-    "correct": [
-      "The meeting was to take place at 3 PM.",
-      "The meeting was to be at 3 PM."
-    ],
-    "hint": "<Was/were to> = formal scheduled arrangement",
-    "explanation": "<Was/were to> + verbo base expresa un plan o acuerdo formal en el pasado."
   }
 ]

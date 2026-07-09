@@ -182,51 +182,5 @@
       "The board dismissed the proposal."
     ],
     "explanation": "<Shot down> → <rejected/dismissed> in formal register."
-  },
-  {
-    "prompt": "Replace the idiom with a formal equivalent",
-    "source": "She has a lot on her plate at the moment.",
-    "correct": [
-      "She has numerous responsibilities at the moment.",
-      "She is currently managing a heavy workload.",
-      "She's currently managing a heavy workload."
-    ],
-    "explanation": "<A lot on her plate> → <numerous responsibilities> in formal register."
-  },
-  {
-    "prompt": "Replace the idiom with a formal equivalent",
-    "source": "The negotiations have reached a dead end.",
-    "correct": [
-      "The negotiations have reached an impasse.",
-      "The negotiations have stalled."
-    ],
-    "explanation": "<Dead end> → <impasse> in formal register."
-  },
-  {
-    "prompt": "Replace the idiom with a formal equivalent",
-    "source": "We need to read between the lines of this report.",
-    "correct": [
-      "We need to interpret the implicit meaning of this report.",
-      "We need to discern the underlying message of this report."
-    ],
-    "explanation": "<Read between the lines> → <interpret the implicit meaning> in formal register."
-  },
-  {
-    "prompt": "Replace the idiom with a formal equivalent",
-    "source": "The company is cutting corners to save money.",
-    "correct": [
-      "The company is reducing quality standards to save money.",
-      "The company is compromising on standards to reduce costs."
-    ],
-    "explanation": "<Cutting corners> → <reducing quality standards> in formal register."
-  },
-  {
-    "prompt": "Replace the idiom with a formal equivalent",
-    "source": "He always passes the buck when things go wrong.",
-    "correct": [
-      "He always deflects responsibility when things go wrong.",
-      "He consistently avoids accountability when problems arise."
-    ],
-    "explanation": "<Pass the buck> → <deflect responsibility> in formal register."
   }
 ]

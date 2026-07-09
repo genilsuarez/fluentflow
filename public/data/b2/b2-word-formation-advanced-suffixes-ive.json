@@ -118,35 +118,5 @@
     "rootWord": "DEPEND",
     "correct": "dependence",
     "explanation": "DEPEND → dependence (se agrega -ence para formar un sustantivo)"
-  },
-  {
-    "sentence": "His _____ attitude made him popular with colleagues.",
-    "rootWord": "COOPERATE",
-    "correct": "cooperative",
-    "explanation": "COOPERATE → cooperative (se cambia -e por -ive para formar un adjetivo)"
-  },
-  {
-    "sentence": "The _____ of the new museum attracted many visitors.",
-    "rootWord": "MAGNIFICENT",
-    "correct": "magnificence",
-    "explanation": "MAGNIFICENT → magnificence (se cambia -t por -ce para formar un sustantivo)"
-  },
-  {
-    "sentence": "She gave a _____ performance in the play.",
-    "rootWord": "MARVEL",
-    "correct": "marvellous",
-    "explanation": "MARVEL → marvellous (se agrega -lous para formar un adjetivo)"
-  },
-  {
-    "sentence": "The _____ of the new employee exceeded expectations.",
-    "rootWord": "PERFORM",
-    "correct": "performance",
-    "explanation": "PERFORM → performance (se agrega -ance para formar un sustantivo)"
-  },
-  {
-    "sentence": "His _____ comments during the meeting were unhelpful.",
-    "rootWord": "DESTRUCT",
-    "correct": "destructive",
-    "explanation": "DESTRUCT → destructive (se agrega -ive para formar un adjetivo)"
   }
 ]

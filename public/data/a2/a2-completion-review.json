@@ -98,30 +98,5 @@
     "sentence": "She ______ to the party last night. (Correct: 'She goed' → fix the error)",
     "correct": "went",
     "explanation": "<Go> es irregular. El pasado es <went>, no <goed>."
-  },
-  {
-    "sentence": "He ______ his homework every day. (Correct: 'He do his homework' → fix)",
-    "correct": "does",
-    "explanation": "La tercera persona singular usa <does>, no <do>: <He does>."
-  },
-  {
-    "sentence": "They ______ playing football now. (Correct: 'They is playing' → fix)",
-    "correct": "are",
-    "explanation": "Con <they>, usa <are>: <They are playing>."
-  },
-  {
-    "sentence": "I have ______ to Paris twice. (Correct: 'I have went' → fix)",
-    "correct": "been",
-    "explanation": "El presente perfecto usa el participio pasado: <have been>, no <have went>."
-  },
-  {
-    "sentence": "She ______ up the phone quickly. (Correct: 'She hanged up' → fix)",
-    "correct": "hung",
-    "explanation": "El pasado de <hang up> (colgar el teléfono) es <hung up>, no <hanged up>."
-  },
-  {
-    "sentence": "He turned ______ the job offer because the salary was too low.",
-    "correct": "down",
-    "explanation": "El phrasal verb <turn down> significa rechazar una oferta."
   }
 ]

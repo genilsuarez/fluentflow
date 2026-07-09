@@ -167,48 +167,5 @@
       "Even though he knew it was wrong, he did it anyway."
     ],
     "explanation": "<Even though> = versión más enfática de <although>, resalta el contraste."
-  },
-  {
-    "prompt": "Rewrite using <Provided that>",
-    "source": "You can use my laptop if you return it by Friday.",
-    "correct": [
-      "You can use my laptop provided that you return it by Friday.",
-      "You can use my laptop provided you return it by Friday."
-    ],
-    "explanation": "<Provided (that)> = conector condicional que significa <only if> (solo si)."
-  },
-  {
-    "prompt": "Rewrite using <Whether ... or not>",
-    "source": "It doesn't matter if it rains. We'll go hiking.",
-    "correct": [
-      "Whether it rains or not, we'll go hiking."
-    ],
-    "explanation": "<Whether ... or not> expresa que el resultado no cambia sin importar la circunstancia."
-  },
-  {
-    "prompt": "Rewrite using <As well as> + gerund",
-    "source": "She sings. She also plays the piano.",
-    "correct": [
-      "As well as singing, she plays the piano.",
-      "She plays the piano as well as singing."
-    ],
-    "explanation": "<As well as> + gerundio añade un hecho adicional."
-  },
-  {
-    "prompt": "Rewrite using <Seeing that>",
-    "source": "Everyone has arrived. Let's start the meeting.",
-    "correct": [
-      "Seeing that everyone has arrived, let's start the meeting."
-    ],
-    "explanation": "<Seeing that> = <given that> (dado que), introduce una razón."
-  },
-  {
-    "prompt": "Rewrite using <It is ... that> (cleft for emphasis)",
-    "source": "The deadline caused all the stress.",
-    "correct": [
-      "It is the deadline that caused all the stress.",
-      "It was the deadline that caused all the stress."
-    ],
-    "explanation": "Oración hendida: <It is/was> + elemento enfocado + <that> + el resto, para dar énfasis."
   }
 ]

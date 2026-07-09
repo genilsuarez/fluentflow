@@ -66,22 +66,10 @@
     "tip": "This describes a current general situation — present passive."
   },
   {
-    "sentence": "The thief ______ caught by the police two hours later.",
-    "correct": "was",
-    "explanation": "Voz pasiva en pasado simple: <was> + participio pasado para un evento pasado y completado.",
-    "tip": "The police caught the thief in the past — past passive."
-  },
-  {
     "sentence": "These products ______ not tested on animals.",
     "correct": "are",
     "explanation": "Voz pasiva negativa en presente simple: <are> + not + participio pasado.",
     "tip": "This is a current policy about the products (plural) — present passive."
-  },
-  {
-    "sentence": "The meeting ______ cancelled because of the bad weather.",
-    "correct": "was",
-    "explanation": "Voz pasiva en pasado simple: <was> + participio pasado para un evento pasado.",
-    "tip": "The meeting was affected by past weather — past passive."
   },
   {
     "sentence": "Rice ______ eaten as a main food in many Asian countries.",
@@ -108,22 +96,10 @@
     "tip": "The children (plural) received books — past passive."
   },
   {
-    "sentence": "Paper ______ invented in China.",
-    "correct": "was",
-    "explanation": "Voz pasiva en pasado simple: <was> + participio pasado para un hecho histórico.",
-    "tip": "Paper was invented long ago — past passive for historical events."
-  },
-  {
     "sentence": "The rooms ______ cleaned every morning by the hotel staff.",
     "correct": "are",
     "explanation": "Voz pasiva en presente simple: <are> + participio pasado para acciones rutinarias.",
     "tip": "'Every morning' signals a routine — present passive with plural subject."
-  },
-  {
-    "sentence": "The film ______ directed by Steven Spielberg in 1993.",
-    "correct": "was",
-    "explanation": "Voz pasiva en pasado simple: <was> + participio pasado con un año específico.",
-    "tip": "1993 is a past date — past passive."
   },
   {
     "sentence": "Cheese ______ made from milk.",
@@ -142,11 +118,5 @@
     "correct": "be",
     "explanation": "Voz pasiva con modal: <should> + <be> + participio pasado para recomendaciones.",
     "tip": "After 'should', what base form completes the passive recommendation?"
-  },
-  {
-    "sentence": "The Olympic Games ______ held every four years.",
-    "correct": "are",
-    "explanation": "Voz pasiva en presente simple: <are> + participio pasado para eventos regulares programados.",
-    "tip": "'Every four years' signals a regular event — present passive."
   }
 ]

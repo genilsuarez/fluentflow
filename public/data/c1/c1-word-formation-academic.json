@@ -118,35 +118,5 @@
     "rootWord": "EDIT",
     "correct": "editorial",
     "explanation": "EDIT → editorial (se agrega -orial para formar un adjetivo)"
-  },
-  {
-    "sentence": "The _____ of the phenomenon required interdisciplinary collaboration.",
-    "rootWord": "COMPLEX",
-    "correct": "complexity",
-    "explanation": "COMPLEX → complexity (se agrega -ity para formar un sustantivo)"
-  },
-  {
-    "sentence": "The data was _____ analysed using advanced statistical methods.",
-    "rootWord": "QUANTITY",
-    "correct": "quantitatively",
-    "explanation": "QUANTITY → quantitatively (se cambia -y por -atively para formar un adverbio)"
-  },
-  {
-    "sentence": "The _____ of the study was to examine the effects of sleep deprivation.",
-    "rootWord": "OBJECT",
-    "correct": "objective",
-    "explanation": "OBJECT → objective (se agrega -ive para formar un sustantivo que significa 'meta' u 'objetivo')"
-  },
-  {
-    "sentence": "The _____ between the two variables was statistically significant.",
-    "rootWord": "CORRELATE",
-    "correct": "correlation",
-    "explanation": "CORRELATE → correlation (se cambia -e por -ion para formar un sustantivo)"
-  },
-  {
-    "sentence": "The _____ of the research design was evaluated by external reviewers.",
-    "rootWord": "VALID",
-    "correct": "validity",
-    "explanation": "VALID → validity (se agrega -ity para formar un sustantivo)"
   }
 ]

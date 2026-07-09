@@ -172,49 +172,5 @@
       "Only when you experience it yourself will you understand the problem."
     ],
     "explanation": "<Only when> + cláusula + auxiliar invertido + sujeto para dar énfasis."
-  },
-  {
-    "prompt": "Change to passive with <is thought to>",
-    "source": "Experts think that the painting is a forgery.",
-    "correct": [
-      "The painting is thought to be a forgery.",
-      "It is thought that the painting is a forgery.",
-      "It's thought that the painting is a forgery."
-    ],
-    "explanation": "Pasiva impersonal: sujeto + <is thought to> + infinitivo."
-  },
-  {
-    "prompt": "Rewrite using a nominal clause with <The fact that>",
-    "source": "He lied. This disappointed everyone.",
-    "correct": [
-      "The fact that he lied disappointed everyone."
-    ],
-    "explanation": "<The fact that> + cláusula crea una cláusula nominal que funciona como sujeto."
-  },
-  {
-    "prompt": "Rewrite using inversion with <In no way>",
-    "source": "This decision does not reflect our values.",
-    "correct": [
-      "In no way does this decision reflect our values."
-    ],
-    "explanation": "<In no way> + auxiliar invertido + sujeto para una negación enfática."
-  },
-  {
-    "prompt": "Rewrite using a concessive participle clause",
-    "source": "Although he was exhausted, he continued working.",
-    "correct": [
-      "Despite being exhausted, he continued working.",
-      "Exhausted though he was, he continued working."
-    ],
-    "explanation": "Participio concesivo: <Despite being> + adjetivo, o adjetivo + <though> + sujeto + <was>."
-  },
-  {
-    "prompt": "Change to subjunctive with <It is imperative that>",
-    "source": "All employees must wear safety equipment.",
-    "correct": [
-      "It is imperative that all employees wear safety equipment.",
-      "It's imperative that all employees wear safety equipment."
-    ],
-    "explanation": "Subjuntivo formal: <It is imperative that> + sujeto + verbo base."
   }
 ]

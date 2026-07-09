@@ -138,47 +138,5 @@
     "correct": "success",
     "hint": "The noun form of succeed",
     "explanation": "SUCCEED → success (forma sustantiva: el logro de un objetivo)"
-  },
-  {
-    "sentence": "It is _____ to make assumptions without evidence.",
-    "rootWord": "REASON",
-    "correct": "unreasonable",
-    "hint": "Not reasonable",
-    "explanation": "REASON → unreasonable (prefijo un- + sufijo -able: que no se basa en la razón)"
-  },
-  {
-    "sentence": "The _____ landscape stretched for miles.",
-    "rootWord": "MOUNTAIN",
-    "correct": "mountainous",
-    "hint": "An adjective meaning having many mountains",
-    "explanation": "MOUNTAIN → mountainous (sufijo -ous: que tiene la cualidad de las montañas)"
-  },
-  {
-    "sentence": "Her _____ to the charity was very generous.",
-    "rootWord": "CONTRIBUTE",
-    "correct": "contribution",
-    "hint": "The noun form of contribute",
-    "explanation": "CONTRIBUTE → contribution (sufijo -tion: el acto de contribuir)"
-  },
-  {
-    "sentence": "The _____ of the old system caused many problems.",
-    "rootWord": "EFFICIENT",
-    "correct": "inefficiency",
-    "hint": "The noun form meaning lack of efficiency",
-    "explanation": "EFFICIENT → inefficiency (prefijo in- + sufijo -cy: el estado de no ser eficiente)"
-  },
-  {
-    "sentence": "The witness gave a _____ account of the events.",
-    "rootWord": "COMPREHEND",
-    "correct": "comprehensive",
-    "hint": "An adjective meaning including everything",
-    "explanation": "COMPREHEND → comprehensive (sufijo -ive: que incluye todos o casi todos los elementos)"
-  },
-  {
-    "sentence": "The _____ of the new law was debated in parliament.",
-    "rootWord": "ENFORCE",
-    "correct": "enforcement",
-    "hint": "The noun form of enforce",
-    "explanation": "ENFORCE → enforcement (sufijo -ment: el acto de hacer cumplir)"
   }
 ]

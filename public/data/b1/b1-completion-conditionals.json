@@ -84,18 +84,6 @@
     "tip": "Being president is hypothetical — use the subjunctive form of 'be'."
   },
   {
-    "sentence": "You will feel better if you ______ some rest.",
-    "correct": "get",
-    "explanation": "Primer condicional: presente simple después de <if> para dar un consejo sobre un resultado probable.",
-    "tip": "Getting rest is a real action you can take — present simple after 'if'."
-  },
-  {
-    "sentence": "If we ______ a garden, we would grow our own vegetables.",
-    "correct": "had",
-    "explanation": "Segundo condicional: pasado simple para algo que no tenemos pero desearíamos tener.",
-    "tip": "We don't have a garden — what past form shows this unreal situation?"
-  },
-  {
     "sentence": "If you ______ that button, the machine will start.",
     "correct": "press",
     "explanation": "Primer condicional: presente simple para una relación real de causa y efecto.",
@@ -120,18 +108,6 @@
     "tip": "You can't speak Chinese — what past modal shows imaginary ability?"
   },
   {
-    "sentence": "If the weather improves, we ______ go hiking this weekend.",
-    "correct": "will",
-    "explanation": "Primer condicional: <will> en la cláusula de resultado para un plan futuro real.",
-    "tip": "The weather might improve — what auxiliary shows the real future result?"
-  },
-  {
-    "sentence": "If I ______ taller, I would play basketball professionally.",
-    "correct": "were",
-    "explanation": "Segundo condicional: <were> para características físicas hipotéticas.",
-    "tip": "You can't change your height — use the hypothetical form of 'be'."
-  },
-  {
     "sentence": "We will save money if we ______ cooking at home.",
     "correct": "start",
     "explanation": "Primer condicional: presente simple para una acción realista con un beneficio real.",
@@ -142,11 +118,5 @@
     "correct": "asked",
     "explanation": "Segundo condicional: pasado simple para una situación que no ha ocurrido (ellos no han <asked>).",
     "tip": "Look for time markers (yesterday, now, always) to guide your choice."
-  },
-  {
-    "sentence": "If you don't hurry, you ______ miss your flight.",
-    "correct": "will",
-    "explanation": "Primer condicional: <will> para una advertencia real sobre una consecuencia probable.",
-    "tip": "Missing the flight is a real risk — what auxiliary shows this warning?"
   }
 ]

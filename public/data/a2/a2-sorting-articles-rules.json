@@ -16,6 +16,10 @@
     "category": "a/an — professions"
   },
   {
+    "word": "She became a teacher",
+    "category": "a/an — professions"
+  },
+  {
     "word": "the longest river",
     "category": "the — superlatives/ordinals"
   },
@@ -52,6 +56,10 @@
     "category": "the — geographic names"
   },
   {
+    "word": "the Rocky Mountains",
+    "category": "the — geographic names"
+  },
+  {
     "word": "by bus",
     "category": "∅ — fixed expressions"
   },
@@ -69,34 +77,6 @@
   },
   {
     "word": "play football",
-    "category": "∅ — fixed expressions"
-  },
-  {
-    "word": "have lunch",
-    "category": "∅ — fixed expressions"
-  },
-  {
-    "word": "by car",
-    "category": "∅ — fixed expressions"
-  },
-  {
-    "word": "She became a teacher",
-    "category": "a/an — professions"
-  },
-  {
-    "word": "the tallest building",
-    "category": "the — superlatives/ordinals"
-  },
-  {
-    "word": "the Rocky Mountains",
-    "category": "the — geographic names"
-  },
-  {
-    "word": "the Netherlands",
-    "category": "the — geographic names"
-  },
-  {
-    "word": "at night",
     "category": "∅ — fixed expressions"
   }
 ]

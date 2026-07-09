@@ -78,12 +78,6 @@
     "tip": "You're not young — what form of 'be' expresses this hypothetical wish?"
   },
   {
-    "sentence": "I wish we ______ gone to the concert. I heard it was amazing.",
-    "correct": "had",
-    "explanation": "Wish + pasado perfecto para oportunidades perdidas en el pasado.",
-    "tip": "You didn't go and now regret it — past perfect for past regret."
-  },
-  {
     "sentence": "He wishes he ______ drive. It would make his commute easier.",
     "correct": "could",
     "explanation": "Wish + <could> para habilidades que la persona no tiene.",
@@ -96,22 +90,10 @@
     "tip": "The neighbours play loud music and you want them to stop — negate 'would'."
   },
   {
-    "sentence": "I wish I ______ known about the sale. I would have bought a new laptop.",
-    "correct": "had",
-    "explanation": "Wish + pasado perfecto para arrepentirse de no haber sabido algo en el pasado.",
-    "tip": "You didn't know about the sale — past perfect for past regret."
-  },
-  {
     "sentence": "She wishes she ______ living in a bigger city.",
     "correct": "were",
     "explanation": "Wish + pasado continuo (<were living>) para situaciones irreales en presente que están en curso.",
     "tip": "Consider whether this describes a real or hypothetical situation."
-  },
-  {
-    "sentence": "If only I ______ brought an umbrella. Now I'm completely wet.",
-    "correct": "had",
-    "explanation": "If only + pasado perfecto para arrepentirse de no haber hecho algo en el pasado.",
-    "tip": "You didn't bring an umbrella — past perfect for past regret."
   },
   {
     "sentence": "I wish the government ______ do more about climate change.",
@@ -126,22 +108,10 @@
     "tip": "He's not rich — what form of 'be' expresses this unreal wish?"
   },
   {
-    "sentence": "If only we ______ started the project earlier.",
-    "correct": "had",
-    "explanation": "If only + pasado perfecto para arrepentirse de haber actuado tarde.",
-    "tip": "You started late — past perfect for past regret."
-  },
-  {
     "sentence": "I wish my phone ______ have such a short battery life.",
     "correct": "didn't",
     "explanation": "Wish + pasado simple (negativo) para quejarse de la realidad presente.",
     "tip": "Look at the subject — is it doing the action or receiving it?"
-  },
-  {
-    "sentence": "If only she ______ told me the truth from the beginning.",
-    "correct": "had",
-    "explanation": "If only + pasado perfecto para arrepentirse de una acción pasada de otra persona.",
-    "tip": "She didn't tell the truth — past perfect for past regret."
   },
   {
     "sentence": "I wish I ______ afford to travel more often.",

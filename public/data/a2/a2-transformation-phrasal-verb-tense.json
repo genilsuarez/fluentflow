@@ -167,47 +167,5 @@
       "She'll give back the book."
     ],
     "explanation": "Futuro de <give back>: <will give back>."
-  },
-  {
-    "prompt": "Change to past simple",
-    "source": "He gets on the bus.",
-    "correct": [
-      "He got on the bus."
-    ],
-    "explanation": "Pasado simple de <get on>: <got on> (verbo irregular)."
-  },
-  {
-    "prompt": "Change to present continuous",
-    "source": "I look up the word in the dictionary.",
-    "correct": [
-      "I am looking up the word in the dictionary.",
-      "I'm looking up the word in the dictionary."
-    ],
-    "explanation": "Presente continuo de <look up>: <am looking up>."
-  },
-  {
-    "prompt": "Change to past simple",
-    "source": "She goes out with her friends.",
-    "correct": [
-      "She went out with her friends."
-    ],
-    "explanation": "Pasado simple de <go out>: <went out> (verbo irregular)."
-  },
-  {
-    "prompt": "Change to past simple",
-    "source": "We sit down at the table.",
-    "correct": [
-      "We sat down at the table."
-    ],
-    "explanation": "Pasado simple de <sit down>: <sat down> (verbo irregular)."
-  },
-  {
-    "prompt": "Change to future with 'will'",
-    "source": "They sort out the problem.",
-    "correct": [
-      "They will sort out the problem.",
-      "They'll sort out the problem."
-    ],
-    "explanation": "Futuro de <sort out>: <will sort out>."
   }
 ]

@@ -21,16 +21,6 @@
   },
   {
     "prompt": "Change the subject pronoun to a possessive adjective",
-    "source": "He has a car.",
-    "correct": [
-      "His car.",
-      "It is his car.",
-      "It's his car."
-    ],
-    "explanation": "El pronombre sujeto <he> se convierte en el adjetivo posesivo <his>."
-  },
-  {
-    "prompt": "Change the subject pronoun to a possessive adjective",
     "source": "They have a house.",
     "correct": [
       "Their house.",
@@ -188,39 +178,5 @@
     ],
     "hint": "Change <I> to <She>",
     "explanation": "Cuando el sujeto cambia a <she>, el posesivo cambia a <her> y el verbo añade <-es>."
-  },
-  {
-    "prompt": "Change the pronoun to match the new subject",
-    "source": "He brushes his teeth.",
-    "correct": [
-      "They brush their teeth."
-    ],
-    "hint": "Change <He> to <They>",
-    "explanation": "Cuando el sujeto cambia a <they>, el posesivo cambia a <their> y el verbo pierde la <-es>."
-  },
-  {
-    "prompt": "Change the pronoun to match the new subject",
-    "source": "We love our parents.",
-    "correct": [
-      "I love my parents."
-    ],
-    "hint": "Change <We> to <I>",
-    "explanation": "Cuando el sujeto cambia a <I>, el posesivo cambia a <my>."
-  },
-  {
-    "prompt": "Rewrite using a possessive pronoun",
-    "source": "This pen is your pen.",
-    "correct": [
-      "This pen is yours."
-    ],
-    "explanation": "Reemplaza <your pen> con el pronombre posesivo <yours>."
-  },
-  {
-    "prompt": "Rewrite using a possessive pronoun",
-    "source": "That house is our house.",
-    "correct": [
-      "That house is ours."
-    ],
-    "explanation": "Reemplaza <our house> con el pronombre posesivo <ours>."
   }
 ]

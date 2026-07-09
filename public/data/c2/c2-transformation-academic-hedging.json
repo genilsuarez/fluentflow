@@ -182,50 +182,5 @@
       "The findings indicate that meditation could potentially contribute to anxiety reduction."
     ],
     "explanation": "Hedging: <demonstrates ... reduces> → <provides evidence ... may help reduce>."
-  },
-  {
-    "prompt": "Rewrite using academic hedging",
-    "source": "Immigration always benefits the economy.",
-    "correct": [
-      "Immigration tends to have a positive impact on the economy in many contexts.",
-      "There is considerable evidence suggesting that immigration may benefit the economy."
-    ],
-    "explanation": "Hedging: <always benefits> → <tends to have a positive impact in many contexts>."
-  },
-  {
-    "prompt": "Rewrite using academic hedging",
-    "source": "The new drug cures the disease.",
-    "correct": [
-      "The new drug shows promise in treating the disease.",
-      "Preliminary evidence suggests that the new drug may be effective against the disease."
-    ],
-    "explanation": "Hedging: <cures> → <shows promise in treating> or <may be effective against>."
-  },
-  {
-    "prompt": "Rewrite using academic hedging",
-    "source": "These results are conclusive.",
-    "correct": [
-      "These results appear to provide strong evidence.",
-      "While promising, these results would benefit from further replication."
-    ],
-    "explanation": "Hedging: <are conclusive> → <appear to provide strong evidence>."
-  },
-  {
-    "prompt": "Rewrite using academic hedging",
-    "source": "The author's argument is completely wrong.",
-    "correct": [
-      "The author's argument may not fully account for all relevant factors.",
-      "Certain aspects of the author's argument could be open to alternative interpretation."
-    ],
-    "explanation": "Hedging: <is completely wrong> → <may not fully account for all relevant factors>."
-  },
-  {
-    "prompt": "Rewrite using academic hedging",
-    "source": "Globalisation destroys local cultures.",
-    "correct": [
-      "Globalisation may pose challenges to the preservation of local cultures.",
-      "There is some concern that globalisation could potentially impact local cultural practices."
-    ],
-    "explanation": "Hedging: <destroys> → <may pose challenges to the preservation of>."
   }
 ]

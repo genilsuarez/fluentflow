@@ -45,11 +45,6 @@
     "explanation": "El phrasal verb <turn down> significa rechazar o negarse."
   },
   {
-    "sentence": "The company is phasing ______ the old software gradually.",
-    "correct": "out",
-    "explanation": "El phrasal verb <phase out> significa eliminar algo gradualmente."
-  },
-  {
     "sentence": "Don't put all your eggs in one ______. Diversify your investments.",
     "correct": "basket",
     "explanation": "El modismo <don't put all your eggs in one basket> significa no arriesgarlo todo en una sola opción."
@@ -103,25 +98,5 @@
     "sentence": "If I ______ you, I would accept the offer. (transform: advice using conditional)",
     "correct": "were",
     "explanation": "Segundo condicional para dar consejos: <If I were you> (forma subjuntiva)."
-  },
-  {
-    "sentence": "The report ______ being prepared when the power went out. (transform to passive continuous)",
-    "correct": "was",
-    "explanation": "Pasado continuo en voz pasiva: <was being> + participio pasado."
-  },
-  {
-    "sentence": "Had I ______ about the delay, I would have left earlier. (inverted conditional)",
-    "correct": "known",
-    "explanation": "Tercer condicional invertido: <Had I known> = If I had known."
-  },
-  {
-    "sentence": "It ______ that the company will announce layoffs. (transform: 'People say the company...' → impersonal passive)",
-    "correct": "is said",
-    "explanation": "Voz pasiva impersonal: <It is said that...> reporta creencias generales."
-  },
-  {
-    "sentence": "She ______ to have left the country. (transform: 'People believe she left' → passive report)",
-    "correct": "is believed",
-    "explanation": "Reporte en voz pasiva: sujeto + <is believed> + to have + participio pasado."
   }
 ]

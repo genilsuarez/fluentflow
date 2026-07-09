@@ -72,12 +72,6 @@
     "tip": "The demolition was in progress when you saw it — past continuous passive."
   },
   {
-    "sentence": "He is thought ______ be one of the best scientists in the field.",
-    "correct": "to",
-    "explanation": "Pasiva impersonal con <thought>: sujeto + <is thought to> + be.",
-    "tip": "People think he is one of the best — what connects 'thought' to 'be'?"
-  },
-  {
     "sentence": "We got our house ______ last summer. It looks much better now.",
     "correct": "painted",
     "explanation": "Causativo <get>: <got> + objeto + participio pasado. Lo hicieron pintores profesionales.",
@@ -88,12 +82,6 @@
     "correct": "is",
     "explanation": "Voz pasiva en presente continuo: <is being> + participio pasado para una prueba actual.",
     "tip": "The testing is happening now — present continuous passive."
-  },
-  {
-    "sentence": "The missing child is reported ______ have been seen near the park.",
-    "correct": "to",
-    "explanation": "Pasiva impersonal con <reported>: sujeto + <is reported to> + have been + participio pasado.",
-    "tip": "People report seeing the child — what connects 'reported' to 'have been seen'?"
   },
   {
     "sentence": "I must get this document ______ before the deadline.",
@@ -120,12 +108,6 @@
     "tip": "The context tells you whether this is active or passive."
   },
   {
-    "sentence": "The concert is expected ______ attract over 50,000 fans.",
-    "correct": "to",
-    "explanation": "Pasiva impersonal con <expected>: sujeto + <is expected to> + verbo base.",
-    "tip": "People expect the concert to attract fans — what connects 'expected' to 'attract'?"
-  },
-  {
     "sentence": "The windows ______ being cleaned when it started to rain.",
     "correct": "were",
     "explanation": "Voz pasiva en pasado continuo: <were being> + participio pasado para sujetos en plural.",
@@ -136,17 +118,5 @@
     "correct": "dry-cleaned",
     "explanation": "Causativo <have>: <have> + objeto + participio pasado para servicios profesionales.",
     "tip": "A professional cleaner will do it — what past participle describes the service?"
-  },
-  {
-    "sentence": "The new regulations could ______ been implemented more gradually.",
-    "correct": "have",
-    "explanation": "Voz pasiva con modal perfecto: <could have been> + participio pasado para posibilidades alternativas en el pasado.",
-    "tip": "There was a better way to implement them — what completes the modal perfect?"
-  },
-  {
-    "sentence": "The company's profits are known ______ have doubled in the last quarter.",
-    "correct": "to",
-    "explanation": "Pasiva impersonal con <known>: sujeto + <is known to> + have + participio pasado.",
-    "tip": "People know the profits doubled — what connects 'known' to 'have doubled'?"
   }
 ]

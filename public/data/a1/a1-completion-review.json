@@ -98,30 +98,5 @@
     "sentence": "She ______ to school every day. (Change: 'She goes to school' → negative)",
     "correct": "doesn't go",
     "explanation": "Para formar el negativo en presente simple con she/he: <doesn't> + verbo en forma base."
-  },
-  {
-    "sentence": "______ you like coffee? (Change: 'You like coffee' → question)",
-    "correct": "Do",
-    "explanation": "Para formar una pregunta en presente simple: <Do> + sujeto + verbo en forma base."
-  },
-  {
-    "sentence": "They ______ to the park yesterday. (Change: 'They go to the park' → past)",
-    "correct": "went",
-    "explanation": "<Go> es irregular: la forma de pasado simple es <went>."
-  },
-  {
-    "sentence": "He ______ breakfast every morning. (Change: 'He eats breakfast' → negative)",
-    "correct": "doesn't eat",
-    "explanation": "Negativo con he/she: <doesn't> + verbo en forma base: <doesn't eat>."
-  },
-  {
-    "sentence": "______ she play tennis? (Change: 'She plays tennis' → question)",
-    "correct": "Does",
-    "explanation": "Preguntas con she/he: <Does> + sujeto + verbo en forma base."
-  },
-  {
-    "sentence": "I ______ a book last night. (Change: 'I read a book' → past)",
-    "correct": "read",
-    "explanation": "<Read> en pasado simple se escribe igual pero se pronuncia /rɛd/."
   }
 ]

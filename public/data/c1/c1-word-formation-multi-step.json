@@ -138,47 +138,5 @@
     "correct": "inaccuracy",
     "hint": "The noun form meaning lack of accuracy",
     "explanation": "ACCURATE → inaccuracy (prefijo in- + sufijo -cy: el estado de no ser preciso)"
-  },
-  {
-    "sentence": "The new employee showed a remarkable _____ to learn quickly.",
-    "rootWord": "WILLING",
-    "correct": "willingness",
-    "hint": "The noun form of willing",
-    "explanation": "WILLING → willingness (sufijo -ness: la cualidad de estar dispuesto)"
-  },
-  {
-    "sentence": "The _____ of the contract terms was a major concern.",
-    "rootWord": "FLEXIBLE",
-    "correct": "inflexibility",
-    "hint": "The noun form meaning lack of flexibility",
-    "explanation": "FLEXIBLE → inflexibility (prefijo in- + sufijo -ity: el estado de no ser flexible)"
-  },
-  {
-    "sentence": "The results were _____ and could not be used in the study.",
-    "rootWord": "RELEVANT",
-    "correct": "irrelevant",
-    "hint": "Not relevant — use the negative prefix for R",
-    "explanation": "RELEVANT → irrelevant (prefijo ir-: no relevante o no aplicable)"
-  },
-  {
-    "sentence": "The _____ of the manager's decisions frustrated the entire team.",
-    "rootWord": "RATIONAL",
-    "correct": "irrationality",
-    "hint": "The noun form meaning lack of rationality",
-    "explanation": "RATIONAL → irrationality (prefijo ir- + sufijo -ity: la cualidad de no ser racional)"
-  },
-  {
-    "sentence": "The _____ of the new policy was evident from the start.",
-    "rootWord": "PRACTICAL",
-    "correct": "impracticality",
-    "hint": "The noun form meaning not being practical",
-    "explanation": "PRACTICAL → impracticality (prefijo im- + sufijo -ity: la cualidad de no ser práctico)"
-  },
-  {
-    "sentence": "The patient's condition was _____ despite the treatment.",
-    "rootWord": "CHANGE",
-    "correct": "unchangeable",
-    "hint": "Not able to be changed",
-    "explanation": "CHANGE → unchangeable (prefijo un- + sufijo -able: que no se puede cambiar)"
   }
 ]

@@ -24,6 +24,10 @@
     "category": "a/an (indefinite)"
   },
   {
+    "word": "an orange",
+    "category": "a/an (indefinite)"
+  },
+  {
     "word": "the sun",
     "category": "the (definite)"
   },
@@ -48,6 +52,10 @@
     "category": "the (definite)"
   },
   {
+    "word": "the earth",
+    "category": "the (definite)"
+  },
+  {
     "word": "go to school",
     "category": "∅ (no article)"
   },
@@ -69,34 +77,6 @@
   },
   {
     "word": "Water is vital",
-    "category": "∅ (no article)"
-  },
-  {
-    "word": "Dogs are loyal",
-    "category": "∅ (no article)"
-  },
-  {
-    "word": "I like music",
-    "category": "∅ (no article)"
-  },
-  {
-    "word": "an orange",
-    "category": "a/an (indefinite)"
-  },
-  {
-    "word": "a book",
-    "category": "a/an (indefinite)"
-  },
-  {
-    "word": "the earth",
-    "category": "the (definite)"
-  },
-  {
-    "word": "the teacher (we know)",
-    "category": "the (definite)"
-  },
-  {
-    "word": "go to work",
     "category": "∅ (no article)"
   }
 ]

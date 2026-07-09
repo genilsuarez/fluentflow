@@ -171,47 +171,5 @@
       "The government's implementation of the policy improved public health."
     ],
     "explanation": "Nominalización: <implemented> → <implementation> para un registro formal."
-  },
-  {
-    "prompt": "Rewrite using rhetorical inversion with <Only by>",
-    "source": "We can achieve lasting peace by working together.",
-    "correct": [
-      "Only by working together can we achieve lasting peace."
-    ],
-    "explanation": "<Only by> + gerundio + modal invertido + sujeto para énfasis retórico."
-  },
-  {
-    "prompt": "Change to archaic subjunctive with <far be it from me>",
-    "source": "I don't want to criticize, but the plan has flaws.",
-    "correct": [
-      "Far be it from me to criticize, but the plan has flaws."
-    ],
-    "explanation": "<Far be it from me to> es una fórmula subjuntiva arcaica que expresa reticencia a actuar."
-  },
-  {
-    "prompt": "Rewrite using academic hedging with <arguably>",
-    "source": "This is the most important discovery of the century.",
-    "correct": [
-      "This is arguably the most important discovery of the century.",
-      "Arguably, this is the most significant discovery of the century."
-    ],
-    "explanation": "'Hedging' académico: <arguably> matiza una afirmación superlativa."
-  },
-  {
-    "prompt": "Rewrite using inversion with <In vain>",
-    "source": "They tried to negotiate, but it was useless.",
-    "correct": [
-      "In vain did they try to negotiate."
-    ],
-    "explanation": "<In vain> + auxiliar invertido + sujeto para énfasis literario sobre la futilidad de algo."
-  },
-  {
-    "prompt": "Change to a nominalized form with abstract noun",
-    "source": "The artist was able to capture light brilliantly, which made her famous.",
-    "correct": [
-      "The artist's brilliant ability to capture light made her famous.",
-      "The artist's ability to capture light brilliantly made her famous."
-    ],
-    "explanation": "Nominalización: convertir cláusulas en frases nominales crea una prosa más densa y formal."
   }
 ]

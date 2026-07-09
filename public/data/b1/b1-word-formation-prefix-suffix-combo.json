@@ -118,35 +118,5 @@
     "rootWord": "HAPPY",
     "correct": "unhappiness",
     "explanation": "HAPPY → unhappiness (un- + happi + -ness = estado de no ser feliz)"
-  },
-  {
-    "sentence": "The bridge was _____ after the earthquake.",
-    "rootWord": "PASS",
-    "correct": "impassable",
-    "explanation": "PASS → impassable (im- + pass + -able = que no se puede atravesar)"
-  },
-  {
-    "sentence": "The _____ of the old park brought the community together.",
-    "rootWord": "STORE",
-    "correct": "restoration",
-    "explanation": "STORE → restoration (re- + stor + -ation = el acto de restaurar)"
-  },
-  {
-    "sentence": "Her _____ to learn new things is impressive.",
-    "rootWord": "EAGER",
-    "correct": "eagerness",
-    "explanation": "EAGER → eagerness (se agrega -ness para formar un sustantivo)"
-  },
-  {
-    "sentence": "The problem was _____ without more information.",
-    "rootWord": "SOLVE",
-    "correct": "unsolvable",
-    "explanation": "SOLVE → unsolvable (un- + solv + -able = que no se puede resolver)"
-  },
-  {
-    "sentence": "The _____ of the old documents took several weeks.",
-    "rootWord": "DISCOVER",
-    "correct": "rediscovery",
-    "explanation": "DISCOVER → rediscovery (re- + discover + -y = descubrir de nuevo)"
   }
 ]

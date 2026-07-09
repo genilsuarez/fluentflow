@@ -24,12 +24,6 @@
     "tip": "Complete with an adjective"
   },
   {
-    "sentence": "What's your ______?",
-    "correct": "name",
-    "explanation": "Se usa <name> para preguntar el nombre de alguien.",
-    "tip": "Complete with the word that means 'how you are called'"
-  },
-  {
     "sentence": "Where are you ______?",
     "correct": "from",
     "explanation": "Se usa <from> para preguntar por el origen.",
@@ -78,12 +72,6 @@
     "tip": "Formal greeting — use the same verb twice"
   },
   {
-    "sentence": "Pleased to ______ you.",
-    "correct": "meet",
-    "explanation": "Se usa <meet> en presentaciones formales.",
-    "tip": "Complete with the verb used after 'Pleased to'"
-  },
-  {
     "sentence": "This is my ______ John.",
     "correct": "friend",
     "explanation": "Se usa <friend> para presentar a alguien.",
@@ -102,12 +90,6 @@
     "tip": "Complete with an occupation"
   },
   {
-    "sentence": "What do you ______?",
-    "correct": "do",
-    "explanation": "Se usa <do> para preguntar por la ocupación.",
-    "tip": "Ask about someone's job or occupation"
-  },
-  {
     "sentence": "I ______ English.",
     "correct": "speak",
     "explanation": "Se usa <speak> para hablar sobre idiomas.",
@@ -123,18 +105,6 @@
     "sentence": "Have a ______ day!",
     "correct": "nice",
     "explanation": "Se usa <nice> para desearle algo bueno a alguien.",
-    "tip": "Complete with an adjective"
-  },
-  {
-    "sentence": "I ______ English and Spanish.",
-    "correct": "speak",
-    "explanation": "Se usa <speak> para hablar sobre idiomas.",
-    "tip": "Complete with the verb for using a language"
-  },
-  {
-    "sentence": "It's ______ to meet you.",
-    "correct": "nice",
-    "explanation": "Se usa <nice> en la expresión <nice to meet you>.",
     "tip": "Complete with an adjective"
   },
   {

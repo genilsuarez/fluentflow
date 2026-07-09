@@ -174,15 +174,6 @@
     "explanation": "Para preguntas en presente simple con sujetos plurales, se usa <Do> + sujeto + verbo base."
   },
   {
-    "prompt": "Change to present continuous",
-    "source": "We walk to school.",
-    "correct": [
-      "We are walking to school.",
-      "We're walking to school."
-    ],
-    "explanation": "Presente continuo: sujeto + <are> + verbo-ing."
-  },
-  {
     "prompt": "Change to negative",
     "source": "He is at home.",
     "correct": [
@@ -191,40 +182,5 @@
       "He's not at home."
     ],
     "explanation": "Con <be>, se añade <not> después del verbo: <is> → <is not> / <isn't>."
-  },
-  {
-    "prompt": "Change to possessive form",
-    "source": "The toy belongs to the baby.",
-    "correct": [
-      "It is the baby's toy.",
-      "It's the baby's toy."
-    ],
-    "explanation": "Posesivo con <'s>: <the baby's toy>."
-  },
-  {
-    "prompt": "Change to plural",
-    "source": "The woman is a doctor.",
-    "correct": [
-      "The women are doctors."
-    ],
-    "hint": "<woman> has an irregular plural",
-    "explanation": "Plural irregular: <woman> → <women>, <is> → <are>, <doctor> → <doctors>."
-  },
-  {
-    "prompt": "Change to a question with <Where>",
-    "source": "She lives in London.",
-    "correct": [
-      "Where does she live?"
-    ],
-    "hint": "Use <Where> + <does> + subject + base verb",
-    "explanation": "Preguntas con wh- en presente simple: <Where> + <does> + sujeto + verbo base."
-  },
-  {
-    "prompt": "Change to past simple",
-    "source": "She has a cat.",
-    "correct": [
-      "She had a cat."
-    ],
-    "explanation": "Pasado simple de <have>: <has> → <had>."
   }
 ]

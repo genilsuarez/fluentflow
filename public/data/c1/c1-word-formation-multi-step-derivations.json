@@ -118,35 +118,5 @@
     "rootWord": "ADEQUATE",
     "correct": "inadequacy",
     "explanation": "ADEQUATE → inadequacy (in- + adequac + -y = state of being inadequate)"
-  },
-  {
-    "sentence": "His _____ to the team's success was widely recognised.",
-    "rootWord": "DISPENSE",
-    "correct": "indispensability",
-    "explanation": "DISPENSE → indispensability (in- + dispensabil + -ity = quality of being indispensable)"
-  },
-  {
-    "sentence": "The _____ of the evidence was challenged in court.",
-    "rootWord": "ADMISSIBLE",
-    "correct": "inadmissibility",
-    "explanation": "ADMISSIBLE → inadmissibility (in- + admissibil + -ity = quality of being inadmissible)"
-  },
-  {
-    "sentence": "Her _____ in dealing with clients was commendable.",
-    "rootWord": "TIRE",
-    "correct": "tirelessness",
-    "explanation": "TIRE → tirelessness (tire + -less + -ness = quality of being tireless)"
-  },
-  {
-    "sentence": "The _____ of the old regulations was long overdue.",
-    "rootWord": "MODERN",
-    "correct": "modernisation",
-    "explanation": "MODERN → modernisation (modern + -isation = el proceso de modernizar)"
-  },
-  {
-    "sentence": "The _____ of the results across different studies was encouraging.",
-    "rootWord": "REPRODUCE",
-    "correct": "reproducibility",
-    "explanation": "REPRODUCE → reproducibility (reproduce + -ibil + -ity = quality of being reproducible)"
   }
 ]

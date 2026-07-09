@@ -138,47 +138,5 @@
     "correct": "disappointment",
     "hint": "The noun form of disappoint",
     "explanation": "DISAPPOINT → disappointment (sufijo -ment: el estado de estar decepcionado)"
-  },
-  {
-    "sentence": "The old sofa was very _____. We had to replace it.",
-    "rootWord": "COMFORT",
-    "correct": "uncomfortable",
-    "hint": "Not comfortable",
-    "explanation": "COMFORT → uncomfortable (prefijo un- + sufijo -able: que no tiene comodidad)"
-  },
-  {
-    "sentence": "She made a _____ recovery after her illness.",
-    "rootWord": "REMARK",
-    "correct": "remarkable",
-    "hint": "Worth remarking on",
-    "explanation": "REMARK → remarkable (sufijo -able: digno de ser destacado)"
-  },
-  {
-    "sentence": "The _____ of the team depends on good communication.",
-    "rootWord": "ABLE",
-    "correct": "ability",
-    "hint": "The noun form of able",
-    "explanation": "ABLE → ability (sufijo -ity: la cualidad de ser capaz)"
-  },
-  {
-    "sentence": "I was _____ with the service at the restaurant.",
-    "rootWord": "SATISFY",
-    "correct": "dissatisfied",
-    "hint": "Not satisfied",
-    "explanation": "SATISFY → dissatisfied (prefijo dis- + sufijo -ed: que no está satisfecho)"
-  },
-  {
-    "sentence": "The _____ of the old factory created many new jobs.",
-    "rootWord": "DISCOVER",
-    "correct": "discovery",
-    "hint": "The noun form of discover",
-    "explanation": "DISCOVER → discovery (sufijo -y: el acto de descubrir)"
-  },
-  {
-    "sentence": "We need to _____ the importance of education.",
-    "rootWord": "COVER",
-    "correct": "discover",
-    "hint": "To find something for the first time",
-    "explanation": "COVER → discover (prefijo dis-: descubrir o encontrar)"
   }
 ]

@@ -162,53 +162,5 @@
     ],
     "hint": "Check the structure after 'recommended'",
     "explanation": "'Recommend' se construye con 'that + sujeto + verbo base' o con gerundio, no con 'objeto + to + verbo'."
-  },
-  {
-    "sentence": "Seldom he arrives on time for meetings.",
-    "correct": [
-      "Seldom does he arrive on time for meetings."
-    ],
-    "hint": "Check the word order after 'Seldom'",
-    "explanation": "'Seldom' al inicio de una oración requiere inversión: 'Seldom does he arrive'."
-  },
-  {
-    "sentence": "I wish I didn't say that to her yesterday.",
-    "correct": [
-      "I wish I hadn't said that to her yesterday."
-    ],
-    "hint": "Check the tense after 'wish' for past regrets",
-    "explanation": "'Wish' para lamentar algo del pasado requiere el pasado perfecto: 'hadn't said', no 'didn't say'."
-  },
-  {
-    "sentence": "He let her to use his computer.",
-    "correct": [
-      "He let her use his computer."
-    ],
-    "hint": "Check the verb form after 'let'",
-    "explanation": "'Let' + objeto va seguido del infinitivo sin 'to': 'let her use', no 'let her to use'."
-  },
-  {
-    "sentence": "The number of students have increased this year.",
-    "correct": [
-      "The number of students has increased this year."
-    ],
-    "hint": "Check the subject-verb agreement",
-    "explanation": "'The number of' es singular y requiere 'has', no 'have'."
-  },
-  {
-    "sentence": "She avoided to answer the difficult question.",
-    "correct": [
-      "She avoided answering the difficult question."
-    ],
-    "hint": "Check the verb form after 'avoided'",
-    "explanation": "'Avoid' va seguido de un gerundio: 'avoided answering', no 'avoided to answer'."
-  },
-  {
-    "sentence": "No sooner I had left than it started raining.",
-    "correct": [
-      "No sooner had I left than it started raining."
-    ],
-    "hint": "Check the word order after 'No sooner'",
-    "explanation": "'No sooner' al inicio requiere inversión: 'No sooner had I left'."
   }
 ]

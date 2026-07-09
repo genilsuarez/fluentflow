@@ -166,46 +166,5 @@
       "How much does this cost?"
     ],
     "explanation": "Directa: <How much does this cost?> con inversión del auxiliar."
-  },
-  {
-    "prompt": "Change to an indirect question with <I'd like to find out>",
-    "source": "Where can I park my car?",
-    "correct": [
-      "I'd like to find out where I can park my car."
-    ],
-    "explanation": "Indirecta: <where I can park> (sujeto antes del modal)."
-  },
-  {
-    "prompt": "Change to a direct question",
-    "source": "Do you have any idea what time it starts?",
-    "correct": [
-      "What time does it start?"
-    ],
-    "explanation": "Directa: <What time does it start?> con <does> + forma base."
-  },
-  {
-    "prompt": "Change to an indirect question with <I'm curious>",
-    "source": "How often do you exercise?",
-    "correct": [
-      "I'm curious how often you exercise.",
-      "I'm curious about how often you exercise."
-    ],
-    "explanation": "Indirecta: <how often you exercise> (se elimina <do>, se mantiene la forma base)."
-  },
-  {
-    "prompt": "Change to an indirect question with <Nobody knows>",
-    "source": "Where did the money go?",
-    "correct": [
-      "Nobody knows where the money went."
-    ],
-    "explanation": "Indirecta: se elimina <did>, se usa el pasado simple. <Where the money went>."
-  },
-  {
-    "prompt": "Change to a direct question",
-    "source": "I can't remember whether he was there or not.",
-    "correct": [
-      "Was he there?"
-    ],
-    "explanation": "Directa de sí/no: auxiliar + sujeto. <Was he there?>"
   }
 ]

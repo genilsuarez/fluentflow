@@ -180,51 +180,5 @@
       "If the project were to fail, we would lose funding."
     ],
     "explanation": "<Were to> + verbo base es una forma formal de expresar condiciones hipotéticas."
-  },
-  {
-    "prompt": "Rewrite using <wish> + <would>",
-    "source": "My neighbor plays loud music every night. It annoys me.",
-    "correct": [
-      "I wish my neighbor would stop playing loud music.",
-      "I wish my neighbor wouldn't play loud music every night."
-    ],
-    "hint": "Use <wish> + <would> for complaints about others",
-    "explanation": "<Wish> + sujeto + <would> expresa molestia por el comportamiento de otra persona."
-  },
-  {
-    "prompt": "Change to passive with reporting verb",
-    "source": "Experts report that the economy is improving.",
-    "correct": [
-      "The economy is reported to be improving.",
-      "It is reported that the economy is improving.",
-      "It's reported that the economy is improving."
-    ],
-    "explanation": "Estilo indirecto en pasiva: sujeto + <is reported to> + infinitivo, o <It is reported that> + cláusula."
-  },
-  {
-    "prompt": "Rewrite using <provided that>",
-    "source": "You can borrow my car if you drive carefully.",
-    "correct": [
-      "You can borrow my car provided that you drive carefully.",
-      "You can borrow my car provided you drive carefully."
-    ],
-    "explanation": "<Provided (that)> es una alternativa formal a <if> para expresar una condición."
-  },
-  {
-    "prompt": "Change to mixed conditional (present → past)",
-    "source": "I am not a doctor. I couldn't help him yesterday.",
-    "correct": [
-      "If I were a doctor, I could have helped him yesterday."
-    ],
-    "hint": "Present condition → past result",
-    "explanation": "Condicional mixta: <If> + pasado simple (condición presente) + <could have> + participio pasado (resultado pasado)."
-  },
-  {
-    "prompt": "Rewrite using inversion with <No sooner>",
-    "source": "He arrived and immediately it started to rain.",
-    "correct": [
-      "No sooner had he arrived than it started to rain."
-    ],
-    "explanation": "<No sooner> + inversión con pasado perfecto + <than> + pasado simple para eventos secuenciales."
   }
 ]

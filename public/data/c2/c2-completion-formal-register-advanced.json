@@ -228,18 +228,6 @@
     "tip": "Think about the formal or academic equivalent that fits this professional context."
   },
   {
-    "sentence": "The study ______ the relationship between variables.",
-    "correct": "elucidates",
-    "options": [
-      "elucidates",
-      "explains",
-      "shows",
-      "clarifies"
-    ],
-    "explanation": "Elucidate es el término formal para aclarar algo mediante una explicación.",
-    "tip": "Think about the formal or academic equivalent that fits this professional context."
-  },
-  {
     "sentence": "We must ______ the scope of the investigation.",
     "correct": "circumscribe",
     "options": [
@@ -250,53 +238,5 @@
     ],
     "explanation": "<Circumscribe> es el término formal para restringir o limitar algo.",
     "tip": "The answer is a formal expression — think about elevated, professional language."
-  },
-  {
-    "sentence": "The report ______ best practices in the industry.",
-    "correct": "delineates",
-    "options": [
-      "delineates",
-      "describes",
-      "shows",
-      "lists"
-    ],
-    "explanation": "Delineate es el término formal para describir o esbozar algo con precisión.",
-    "tip": "Think about academic or report-writing language."
-  },
-  {
-    "sentence": "The framework ______ a systematic approach.",
-    "correct": "propounds",
-    "options": [
-      "propounds",
-      "suggests",
-      "offers",
-      "gives"
-    ],
-    "explanation": "Propound es el término formal para plantear algo para su consideración.",
-    "tip": "Think about the formal or academic equivalent that fits this professional context."
-  },
-  {
-    "sentence": "The institution will ______ transparency in all operations.",
-    "correct": "ensure",
-    "options": [
-      "ensure",
-      "make sure",
-      "guarantee",
-      "check"
-    ],
-    "explanation": "<Ensure> es el término formal para garantizar que algo suceda.",
-    "tip": "Think about the formal or academic equivalent that fits this professional context."
-  },
-  {
-    "sentence": "The analysis ______ several key factors.",
-    "correct": "identifies",
-    "options": [
-      "identifies",
-      "finds",
-      "sees",
-      "spots"
-    ],
-    "explanation": "Identify es el término formal para establecer o reconocer algo.",
-    "tip": "Think about the formal or academic equivalent that fits this professional context."
   }
 ]

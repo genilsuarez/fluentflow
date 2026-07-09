@@ -48,12 +48,6 @@
     "tip": "Complete with the phrasal verb for discovering"
   },
   {
-    "sentence": "Don't forget to ______ off the TV before bed.",
-    "correct": "turn",
-    "explanation": "Se usa <turn off> para apagar un aparato o dispositivo.",
-    "tip": "Complete with the phrasal verb for stopping a device"
-  },
-  {
     "sentence": "He ______ up his bag and left the room.",
     "correct": "picked",
     "explanation": "Se usa <pick up> para referirse a tomar algo con la mano. <Picked> es el pasado.",
@@ -108,12 +102,6 @@
     "tip": "Complete with the verb for washing"
   },
   {
-    "sentence": "We ______ for a walk in the park every Sunday.",
-    "correct": "go",
-    "explanation": "Se usa <go for a walk> para referirse a caminar afuera por placer.",
-    "tip": "Complete with the verb for walking outside"
-  },
-  {
     "sentence": "I ______ the bus to school every day.",
     "correct": "take",
     "explanation": "Se usa <take the bus> para referirse a usar el autobús como transporte.",
@@ -130,23 +118,5 @@
     "correct": "understand",
     "explanation": "Se usa <understand> cuando algo no está claro.",
     "tip": "Complete with the verb that means 'to comprehend'"
-  },
-  {
-    "sentence": "What ______ is it?",
-    "correct": "time",
-    "explanation": "Se usa <time> para preguntar por la hora.",
-    "tip": "Complete with the word for hours and minutes"
-  },
-  {
-    "sentence": "I ______ to go now. It's getting late.",
-    "correct": "need",
-    "explanation": "Se usa <need> para expresar que algo es necesario.",
-    "tip": "Complete with the verb that expresses necessity (I ___ to...)"
-  },
-  {
-    "sentence": "Let me ______ about it.",
-    "correct": "think",
-    "explanation": "Se usa <think> cuando necesitas tiempo para decidir.",
-    "tip": "Complete with the verb for using your mind to consider something"
   }
 ]

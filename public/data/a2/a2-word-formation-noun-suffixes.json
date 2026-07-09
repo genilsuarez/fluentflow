@@ -118,35 +118,5 @@
     "rootWord": "LAUGH",
     "correct": "laughter",
     "explanation": "LAUGH → laughter (se agrega -ter para formar un sustantivo)"
-  },
-  {
-    "sentence": "We need more _____ about the new rules.",
-    "rootWord": "INFORM",
-    "correct": "information",
-    "explanation": "INFORM → information (se agrega -ation para formar un sustantivo)"
-  },
-  {
-    "sentence": "The _____ of the old house took many months.",
-    "rootWord": "IMPROVE",
-    "correct": "improvement",
-    "explanation": "IMPROVE → improvement (se agrega -ment para formar un sustantivo)"
-  },
-  {
-    "sentence": "Her _____ was obvious when she heard the good news.",
-    "rootWord": "HAPPY",
-    "correct": "happiness",
-    "explanation": "HAPPY → happiness (se cambia -y por -iness para formar un sustantivo)"
-  },
-  {
-    "sentence": "The _____ of the new product was a big success.",
-    "rootWord": "ADVERTISE",
-    "correct": "advertisement",
-    "explanation": "ADVERTISE → advertisement (se agrega -ment para formar un sustantivo)"
-  },
-  {
-    "sentence": "We need to find a _____ to this problem quickly.",
-    "rootWord": "EXPLAIN",
-    "correct": "explanation",
-    "explanation": "EXPLAIN → explanation (se cambia -ain por -anation para formar un sustantivo)"
   }
 ]

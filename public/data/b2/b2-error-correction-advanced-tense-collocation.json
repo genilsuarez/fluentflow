@@ -141,40 +141,5 @@
       "She made a phone call to her mother."
     ],
     "explanation": "Colocación: se dice <make a phone call>, no <do a phone call>."
-  },
-  {
-    "sentence": "After I will finish my homework, I will watch TV.",
-    "correct": [
-      "After I finish my homework, I will watch TV."
-    ],
-    "explanation": "Después de <after> en cláusulas de tiempo futuro, se usa el presente simple, no <will>."
-  },
-  {
-    "sentence": "He has been studying English for he was ten years old.",
-    "correct": [
-      "He has been studying English since he was ten years old."
-    ],
-    "explanation": "Se usa <since> con un punto en el tiempo, no <for>."
-  },
-  {
-    "sentence": "She did a complaint about the service.",
-    "correct": [
-      "She made a complaint about the service."
-    ],
-    "explanation": "Colocación: se dice <make a complaint>, no <do a complaint>."
-  },
-  {
-    "sentence": "I am owning a car since 2020.",
-    "correct": [
-      "I have owned a car since 2020."
-    ],
-    "explanation": "<Own> es un verbo de estado; se usa el presente perfecto, no el continuo."
-  },
-  {
-    "sentence": "He told that he would come to the party.",
-    "correct": [
-      "He said that he would come to the party."
-    ],
-    "explanation": "Se usa <say> (no <tell>) cuando no hay objeto indirecto."
   }
 ]

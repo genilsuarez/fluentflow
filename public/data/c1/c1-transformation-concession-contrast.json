@@ -168,48 +168,5 @@
       "She was warned about the risks. Still, she went ahead with the plan."
     ],
     "explanation": "<Still> = <Nevertheless> en un registro informal. Muestra una continuación inesperada."
-  },
-  {
-    "prompt": "Rewrite using <Tired as he was>",
-    "source": "Although he was tired, he kept working until midnight.",
-    "correct": [
-      "Tired as he was, he kept working until midnight."
-    ],
-    "explanation": "Adjetivo antepuesto + <as> + sujeto + <was> para una concesión literaria."
-  },
-  {
-    "prompt": "Rewrite using <Yet>",
-    "source": "The evidence was compelling. The jury was not convinced.",
-    "correct": [
-      "The evidence was compelling, yet the jury was not convinced.",
-      "The evidence was compelling. Yet the jury was not convinced."
-    ],
-    "explanation": "<Yet> = <but/however> para un contraste inesperado. Más literario."
-  },
-  {
-    "prompt": "Rewrite using <Whoever/Whatever>",
-    "source": "It doesn't matter who asks. The answer is no.",
-    "correct": [
-      "Whoever asks, the answer is no."
-    ],
-    "explanation": "<Whoever/Whatever/Wherever> + cláusula = <It doesn't matter who/what/where>."
-  },
-  {
-    "prompt": "Rewrite using <No matter what>",
-    "source": "Whatever happens, I'll support you.",
-    "correct": [
-      "No matter what happens, I'll support you."
-    ],
-    "explanation": "<No matter what> = <whatever>. Concesión enfática sobre un futuro desconocido."
-  },
-  {
-    "prompt": "Rewrite using <Albeit>",
-    "source": "The progress was slow but steady.",
-    "correct": [
-      "The progress was steady, albeit slow.",
-      "There was progress, albeit slow."
-    ],
-    "hint": "<Albeit> = formal <although it was>",
-    "explanation": "<Albeit> es una conjunción concesiva formal y concisa: <although (it was)>."
   }
 ]

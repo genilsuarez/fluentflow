@@ -159,45 +159,5 @@
       "Wanting to save money, they decided to cook at home."
     ],
     "explanation": "Reemplaza <Because they wanted> con el participio <Wanting>."
-  },
-  {
-    "prompt": "Rewrite using a past participle clause",
-    "source": "The bridge was built in 1890 and is still in use today.",
-    "correct": [
-      "Built in 1890, the bridge is still in use today."
-    ],
-    "explanation": "Cláusula de participio pasado: <Built in 1890> reemplaza la cláusula pasiva."
-  },
-  {
-    "prompt": "Rewrite using a present participle clause",
-    "source": "She turned the corner and noticed a strange figure in the shadows.",
-    "correct": [
-      "Turning the corner, she noticed a strange figure in the shadows."
-    ],
-    "explanation": "Usa un participio para la primera de dos acciones secuenciales."
-  },
-  {
-    "prompt": "Rewrite using a perfect participle clause",
-    "source": "After she had spent all her money, she had to borrow from a friend.",
-    "correct": [
-      "Having spent all her money, she had to borrow from a friend."
-    ],
-    "explanation": "Participio perfecto: <Having spent> muestra que el gasto se completó primero."
-  },
-  {
-    "prompt": "Rewrite using a present participle clause",
-    "source": "As he was the oldest member, he was asked to give a speech.",
-    "correct": [
-      "Being the oldest member, he was asked to give a speech."
-    ],
-    "explanation": "Reemplaza <As he was> con <Being> para formar una cláusula de participio."
-  },
-  {
-    "prompt": "Rewrite using a past participle clause",
-    "source": "The manuscript was discovered in an attic and turned out to be a lost masterpiece.",
-    "correct": [
-      "Discovered in an attic, the manuscript turned out to be a lost masterpiece."
-    ],
-    "explanation": "Cláusula de participio pasado: <Discovered in an attic> reemplaza la pasiva."
   }
 ]

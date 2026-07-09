@@ -2,151 +2,161 @@
   {
     "prompt": "Make negative",
     "source": "I wake up at 7 o'clock.",
-    "correct": ["I don't wake up at 7 o'clock."],
+    "correct": [
+      "I don't wake up at 7 o'clock."
+    ],
     "explanation": "Agrega <don't> antes del verbo para formar una oración negativa: <I don't wake up>."
   },
   {
     "prompt": "Make negative",
     "source": "She brushes her teeth every morning.",
-    "correct": ["She doesn't brush her teeth every morning."],
+    "correct": [
+      "She doesn't brush her teeth every morning."
+    ],
     "explanation": "Usa <doesn't> + la forma base para tercera persona: <She doesn't brush>."
   },
   {
     "prompt": "Make a question",
     "source": "He goes to school by bus.",
-    "correct": ["Does he go to school by bus?"],
+    "correct": [
+      "Does he go to school by bus?"
+    ],
     "explanation": "Usa <Does> + sujeto + forma base para preguntas: <Does he go>."
   },
   {
     "prompt": "Make a question",
     "source": "They eat breakfast at 8 am.",
-    "correct": ["Do they eat breakfast at 8 am?"],
+    "correct": [
+      "Do they eat breakfast at 8 am?"
+    ],
     "explanation": "Usa <Do> + sujeto + forma base para preguntas: <Do they eat>."
   },
   {
     "prompt": "Change to past simple",
     "source": "I walk to the park.",
-    "correct": ["I walked to the park."],
+    "correct": [
+      "I walked to the park."
+    ],
     "explanation": "Agrega <-ed> a los verbos regulares para el pasado simple: <walked>."
   },
   {
     "prompt": "Change to past simple",
     "source": "She drinks coffee in the morning.",
-    "correct": ["She drank coffee in the morning."],
+    "correct": [
+      "She drank coffee in the morning."
+    ],
     "explanation": "<Drink> es irregular: <drank> en pasado simple."
   },
   {
     "prompt": "Make negative",
     "source": "We watch TV after dinner.",
-    "correct": ["We don't watch TV after dinner."],
+    "correct": [
+      "We don't watch TV after dinner."
+    ],
     "explanation": "Agrega <don't> antes del verbo: <We don't watch>."
   },
   {
     "prompt": "Make a question",
     "source": "You like reading books.",
-    "correct": ["Do you like reading books?"],
+    "correct": [
+      "Do you like reading books?"
+    ],
     "explanation": "Usa <Do> + sujeto + forma base: <Do you like>."
   },
   {
     "prompt": "Change to past simple",
     "source": "He eats lunch at noon.",
-    "correct": ["He ate lunch at noon."],
+    "correct": [
+      "He ate lunch at noon."
+    ],
     "explanation": "<Eat> es irregular: <ate> en pasado simple."
   },
   {
     "prompt": "Make negative",
     "source": "He plays football on Saturdays.",
-    "correct": ["He doesn't play football on Saturdays."],
+    "correct": [
+      "He doesn't play football on Saturdays."
+    ],
     "explanation": "Usa <doesn't> + forma base: <He doesn't play>."
   },
   {
     "prompt": "Change to past simple",
     "source": "They go to bed at 10 pm.",
-    "correct": ["They went to bed at 10 pm."],
+    "correct": [
+      "They went to bed at 10 pm."
+    ],
     "explanation": "<Go> es irregular: <went> en pasado simple."
   },
   {
     "prompt": "Make a question",
     "source": "She takes a shower every day.",
-    "correct": ["Does she take a shower every day?"],
+    "correct": [
+      "Does she take a shower every day?"
+    ],
     "explanation": "Usa <Does> + sujeto + forma base: <Does she take>."
   },
   {
     "prompt": "Make negative",
     "source": "I have breakfast at home.",
-    "correct": ["I don't have breakfast at home."],
+    "correct": [
+      "I don't have breakfast at home."
+    ],
     "explanation": "Agrega <don't> antes del verbo: <I don't have>."
   },
   {
     "prompt": "Change to past simple",
     "source": "She gets up early.",
-    "correct": ["She got up early."],
+    "correct": [
+      "She got up early."
+    ],
     "explanation": "<Get> es irregular: <got> en pasado simple."
   },
   {
     "prompt": "Make a question",
     "source": "We cook dinner together.",
-    "correct": ["Do we cook dinner together?"],
+    "correct": [
+      "Do we cook dinner together?"
+    ],
     "explanation": "Usa <Do> + sujeto + forma base: <Do we cook>."
   },
   {
     "prompt": "Change to past simple",
     "source": "I read a book before bed.",
-    "correct": ["I read a book before bed."],
+    "correct": [
+      "I read a book before bed."
+    ],
     "explanation": "<Read> es irregular pero se escribe igual en pasado: <read> (se pronuncia /rɛd/)."
   },
   {
     "prompt": "Make negative",
     "source": "They do homework after school.",
-    "correct": ["They don't do homework after school."],
+    "correct": [
+      "They don't do homework after school."
+    ],
     "explanation": "Agrega <don't> antes del verbo: <They don't do>."
   },
   {
     "prompt": "Make a question",
     "source": "He listens to music at night.",
-    "correct": ["Does he listen to music at night?"],
+    "correct": [
+      "Does he listen to music at night?"
+    ],
     "explanation": "Usa <Does> + sujeto + forma base: <Does he listen>."
   },
   {
     "prompt": "Change to past simple",
     "source": "We have dinner at 7 pm.",
-    "correct": ["We had dinner at 7 pm."],
+    "correct": [
+      "We had dinner at 7 pm."
+    ],
     "explanation": "<Have> es irregular: <had> en pasado simple."
   },
   {
     "prompt": "Make negative",
     "source": "She rides her bike to work.",
-    "correct": ["She doesn't ride her bike to work."],
+    "correct": [
+      "She doesn't ride her bike to work."
+    ],
     "explanation": "Usa <doesn't> + forma base: <She doesn't ride>."
-  },
-  {
-    "prompt": "Change to past simple",
-    "source": "I make my bed every morning.",
-    "correct": ["I made my bed every morning."],
-    "explanation": "<Make> es irregular: <made> en pasado simple."
-  },
-  {
-    "prompt": "Make a question",
-    "source": "They clean the house on weekends.",
-    "correct": ["Do they clean the house on weekends?"],
-    "explanation": "Usa <Do> + sujeto + forma base: <Do they clean>."
-  },
-  {
-    "prompt": "Make negative",
-    "source": "He takes the dog for a walk.",
-    "correct": ["He doesn't take the dog for a walk."],
-    "explanation": "Usa <doesn't> + forma base: <He doesn't take>."
-  },
-  {
-    "prompt": "Change to past simple",
-    "source": "She writes in her diary.",
-    "correct": ["She wrote in her diary."],
-    "explanation": "<Write> es irregular: <wrote> en pasado simple."
-  },
-  {
-    "prompt": "Make a question",
-    "source": "I finish work at 5 pm.",
-    "correct": ["Do I finish work at 5 pm?"],
-    "explanation": "Usa <Do> + sujeto + forma base: <Do I finish>."
   }
 ]

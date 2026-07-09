@@ -1,32 +1,82 @@
 [
-  {"word": "ascertain", "category": "Formal"},
-  {"word": "find out", "category": "Informal"},
-  {"word": "investigate", "category": "Formal"},
-  {"word": "look into", "category": "Informal"},
-  {"word": "postpone", "category": "Formal"},
-  {"word": "put off", "category": "Informal"},
-  {"word": "tolerate", "category": "Formal"},
-  {"word": "put up with", "category": "Informal"},
-  {"word": "establish", "category": "Formal"},
-  {"word": "set up", "category": "Informal"},
-  {"word": "abandon", "category": "Formal"},
-  {"word": "give up", "category": "Informal"},
-  {"word": "decline", "category": "Formal"},
-  {"word": "turn down", "category": "Informal"},
-  {"word": "eliminate", "category": "Formal"},
-  {"word": "do away with", "category": "Informal"},
-  {"word": "devise", "category": "Formal"},
-  {"word": "come up with", "category": "Informal"},
-  {"word": "commence", "category": "Formal"},
-  {"word": "kick off", "category": "Informal"},
-  {"word": "terminate", "category": "Formal"},
-  {"word": "wrap up", "category": "Informal"},
-  {"word": "scrutinise", "category": "Formal"},
-  {"word": "go over", "category": "Informal"},
-  {"word": "recuperate", "category": "Formal"},
-  {"word": "get over", "category": "Informal"},
-  {"word": "disseminate", "category": "Formal"},
-  {"word": "hand out", "category": "Informal"},
-  {"word": "expedite", "category": "Formal"},
-  {"word": "speed up", "category": "Informal"}
+  {
+    "word": "ascertain",
+    "category": "Formal"
+  },
+  {
+    "word": "investigate",
+    "category": "Formal"
+  },
+  {
+    "word": "postpone",
+    "category": "Formal"
+  },
+  {
+    "word": "tolerate",
+    "category": "Formal"
+  },
+  {
+    "word": "establish",
+    "category": "Formal"
+  },
+  {
+    "word": "abandon",
+    "category": "Formal"
+  },
+  {
+    "word": "decline",
+    "category": "Formal"
+  },
+  {
+    "word": "eliminate",
+    "category": "Formal"
+  },
+  {
+    "word": "devise",
+    "category": "Formal"
+  },
+  {
+    "word": "commence",
+    "category": "Formal"
+  },
+  {
+    "word": "find out",
+    "category": "Informal"
+  },
+  {
+    "word": "look into",
+    "category": "Informal"
+  },
+  {
+    "word": "put off",
+    "category": "Informal"
+  },
+  {
+    "word": "put up with",
+    "category": "Informal"
+  },
+  {
+    "word": "set up",
+    "category": "Informal"
+  },
+  {
+    "word": "give up",
+    "category": "Informal"
+  },
+  {
+    "word": "turn down",
+    "category": "Informal"
+  },
+  {
+    "word": "do away with",
+    "category": "Informal"
+  },
+  {
+    "word": "come up with",
+    "category": "Informal"
+  },
+  {
+    "word": "kick off",
+    "category": "Informal"
+  }
 ]

@@ -72,12 +72,6 @@
     "tip": "Complete the conjunction."
   },
   {
-    "sentence": "He behaved ______ though nothing had happened.",
-    "correct": "as",
-    "explanation": "<As though> significa como si.",
-    "tip": "Complete the conjunction."
-  },
-  {
     "sentence": "______ as it may seem, he was telling the truth.",
     "correct": "Strange",
     "explanation": "<Strange as it may seem> es una expresión idiomática que significa que puede parecer extraño, pero es verdad.",
@@ -91,12 +85,6 @@
   },
   {
     "sentence": "He studied hard, ______ he might pass the exam.",
-    "correct": "so that",
-    "explanation": "<So that> significa para que.",
-    "tip": "Complete the conjunction."
-  },
-  {
-    "sentence": "She left early ______ she wouldn't miss her flight.",
     "correct": "so that",
     "explanation": "<So that> significa para que.",
     "tip": "Complete the conjunction."
@@ -124,30 +112,6 @@
     "correct": "According",
     "explanation": "<According to> significa según lo declarado por.",
     "tip": "Complete the complex preposition."
-  },
-  {
-    "sentence": "The decision was made ______ consultation with the stakeholders.",
-    "correct": "in",
-    "explanation": "<In consultation with> significa discutir algo con alguien.",
-    "tip": "Complete the complex preposition."
-  },
-  {
-    "sentence": "______ of the weather, we will go for a walk.",
-    "correct": "Regardless",
-    "explanation": "<Regardless of> significa sin tener en cuenta.",
-    "tip": "Complete the complex preposition."
-  },
-  {
-    "sentence": "She behaved ______ though she had no idea what was happening.",
-    "correct": "as",
-    "explanation": "<As though> significa como si.",
-    "tip": "Complete the conjunction."
-  },
-  {
-    "sentence": "______ it may seem, he was telling the truth.",
-    "correct": "Odd as",
-    "explanation": "<Odd as it may seem> es una expresión idiomática que significa que puede parecer extraño, pero es verdad.",
-    "tip": "Complete the conjunction."
   },
   {
     "sentence": "The meeting was cancelled ______ to unforeseen circumstances.",

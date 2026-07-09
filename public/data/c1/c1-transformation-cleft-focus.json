@@ -169,45 +169,5 @@
       "What they should do is invest in renewable energy."
     ],
     "explanation": "<What ... should do is> + verbo base enfoca la acción recomendada."
-  },
-  {
-    "prompt": "Rewrite as a cleft with focus on the object",
-    "source": "I bought the blue dress, not the red one.",
-    "correct": [
-      "It was the blue dress that I bought, not the red one."
-    ],
-    "explanation": "Oración hendida que enfoca el objeto: <It was [objeto] that I [verbo]>."
-  },
-  {
-    "prompt": "Rewrite using <The place where>",
-    "source": "We first met at the university library.",
-    "correct": [
-      "The place where we first met was the university library."
-    ],
-    "explanation": "La pseudo-hendida <The place where ... was> enfoca el lugar."
-  },
-  {
-    "prompt": "Rewrite using <All ... did was>",
-    "source": "He only smiled and walked away.",
-    "correct": [
-      "All he did was smile and walk away."
-    ],
-    "explanation": "<All ... did was> + verbo base enfatiza la simplicidad/minimalidad de la acción."
-  },
-  {
-    "prompt": "Rewrite using <It was because of ... that>",
-    "source": "His hard work got him promoted.",
-    "correct": [
-      "It was because of his hard work that he got promoted."
-    ],
-    "explanation": "La oración hendida <It was because of ... that> enfoca la razón."
-  },
-  {
-    "prompt": "Rewrite using <What ... want(s) is>",
-    "source": "The employees want better working conditions.",
-    "correct": [
-      "What the employees want is better working conditions."
-    ],
-    "explanation": "La pseudo-hendida <What ... want is> enfoca el resultado deseado."
   }
 ]

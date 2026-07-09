@@ -48,18 +48,6 @@
     "tip": "Complete with the past participle of <try>"
   },
   {
-    "sentence": "We haven't ______ to the beach this summer.",
-    "correct": "been",
-    "explanation": "Usa <been> (participio pasado de <be>) para decir que no has ido a la playa este verano.",
-    "tip": "Complete with the past participle of <be>"
-  },
-  {
-    "sentence": "My brother has ______ his new job for three months.",
-    "correct": "had",
-    "explanation": "Usa <had> (participio pasado) con <for> para mostrar duración desde el pasado hasta el presente.",
-    "tip": "Complete with the past participle of <have>"
-  },
-  {
     "sentence": "Have you ever ______ Japanese food?",
     "correct": "eaten",
     "explanation": "Usa <eaten> (participio pasado de <eat>) para preguntar sobre experiencias de vida. <Ever> se usa en preguntas.",
@@ -96,12 +84,6 @@
     "tip": "Complete with the past participle of <wait>"
   },
   {
-    "sentence": "I have never ______ such a beautiful sunset.",
-    "correct": "seen",
-    "explanation": "Usa <seen> (participio pasado de <see>) para hablar de experiencias de vida. <Never> significa 'en ningún momento'.",
-    "tip": "Complete with the past participle of <see>"
-  },
-  {
     "sentence": "She has already ______ three books this month.",
     "correct": "read",
     "explanation": "Usa <read> (participio pasado) con <already> para mostrar acciones completadas.",
@@ -120,12 +102,6 @@
     "tip": "Complete with the past participle of <use>"
   },
   {
-    "sentence": "I have just ______ a great idea!",
-    "correct": "had",
-    "explanation": "Usa <had> (participio pasado de <have>) con <just> para hablar de pensamientos o experiencias muy recientes.",
-    "tip": "Complete with the past participle of <have>"
-  },
-  {
     "sentence": "Have you ever ______ in the snow?",
     "correct": "played",
     "explanation": "Usa <played> (participio pasado) para preguntar sobre experiencias de vida. <Ever> es común en preguntas.",
@@ -142,11 +118,5 @@
     "correct": "gone",
     "explanation": "Usa <gone> (participio pasado de <go>) para hablar de un cambio o movimiento que ocurrió y afecta el presente.",
     "tip": "Complete with the past participle of <go>"
-  },
-  {
-    "sentence": "I have already ______ my friends about the party.",
-    "correct": "told",
-    "explanation": "Usa <told> (participio pasado de <tell>) con <already> para mostrar una acción completada.",
-    "tip": "Complete with the past participle of <tell>"
   }
 ]

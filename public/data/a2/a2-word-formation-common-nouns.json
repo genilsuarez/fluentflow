@@ -138,47 +138,5 @@
     "correct": "slowly",
     "hint": "The adverb form of slow",
     "explanation": "SLOW → slowly (sufijo -ly: de manera lenta)"
-  },
-  {
-    "sentence": "The _____ of the weather changed our plans.",
-    "rootWord": "MOVE",
-    "correct": "movement",
-    "hint": "The noun form of move",
-    "explanation": "MOVE → movement (sufijo -ment: el acto de moverse)"
-  },
-  {
-    "sentence": "Her _____ was obvious. She could not stop smiling.",
-    "rootWord": "GLAD",
-    "correct": "gladness",
-    "hint": "The noun form of glad",
-    "explanation": "GLAD → gladness (sufijo -ness: el estado de estar contento)"
-  },
-  {
-    "sentence": "The _____ between the two countries improved.",
-    "rootWord": "RELATE",
-    "correct": "relation",
-    "hint": "The noun form of relate",
-    "explanation": "RELATE → relation (sufijo -tion: el estado de estar relacionado)"
-  },
-  {
-    "sentence": "He answered all the questions _____.",
-    "rootWord": "CORRECT",
-    "correct": "correctly",
-    "hint": "The adverb form of correct",
-    "explanation": "CORRECT → correctly (sufijo -ly: de manera correcta)"
-  },
-  {
-    "sentence": "The _____ of the new road will start next month.",
-    "rootWord": "DEVELOP",
-    "correct": "development",
-    "hint": "The noun form of develop",
-    "explanation": "DEVELOP → development (sufijo -ment: el proceso de desarrollar)"
-  },
-  {
-    "sentence": "I felt great _____ when I heard the good news.",
-    "rootWord": "WEAK",
-    "correct": "weakness",
-    "hint": "The noun form of weak",
-    "explanation": "WEAK → weakness (sufijo -ness: el estado de ser débil)"
   }
 ]

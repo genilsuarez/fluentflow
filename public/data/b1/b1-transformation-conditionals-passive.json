@@ -177,49 +177,5 @@
     ],
     "hint": "Use <if> or <whether> for yes/no reported questions",
     "explanation": "Preguntas de sí/no en estilo indirecto: verbo de reporte + <if/whether> + orden de una afirmación."
-  },
-  {
-    "prompt": "Rewrite using <wish> + past perfect",
-    "source": "I didn't go to the party. I regret it.",
-    "correct": [
-      "I wish I had gone to the party."
-    ],
-    "explanation": "<Wish> + pasado perfecto expresa arrepentimiento por una acción pasada."
-  },
-  {
-    "prompt": "Change to passive voice in past",
-    "source": "The police arrested the thief.",
-    "correct": [
-      "The thief was arrested by the police."
-    ],
-    "explanation": "Pasado en voz pasiva: objeto + <was/were> + participio pasado + <by> + agente."
-  },
-  {
-    "prompt": "Rewrite using <so ... that>",
-    "source": "The movie was very boring. I fell asleep.",
-    "correct": [
-      "The movie was so boring that I fell asleep."
-    ],
-    "hint": "Use <so> + adjective + <that>",
-    "explanation": "<So> + adjetivo + <that> + cláusula de resultado muestra causa y efecto."
-  },
-  {
-    "prompt": "Change to second conditional",
-    "source": "I don't know the answer. I can't help you.",
-    "correct": [
-      "If I knew the answer, I could help you.",
-      "If I knew the answer, I would help you.",
-      "If I knew the answer, I'd help you."
-    ],
-    "explanation": "Segundo condicional: <If> + pasado simple + <would/could> + verbo base para el presente irreal."
-  },
-  {
-    "prompt": "Rewrite using <despite> + gerund",
-    "source": "Although it was raining, we went for a walk.",
-    "correct": [
-      "Despite it raining, we went for a walk.",
-      "Despite the rain, we went for a walk."
-    ],
-    "explanation": "<Despite> + gerundio/sustantivo reemplaza a <Although> + cláusula para expresar concesión."
   }
 ]

@@ -172,47 +172,5 @@
     ],
     "hint": "<Congratulate> + object + <on> + gerund",
     "explanation": "<Congratulate> + objeto + <on> + gerundio/sustantivo."
-  },
-  {
-    "prompt": "Change to reported question",
-    "source": "\"Where are you going tonight?\" she asked me.",
-    "correct": [
-      "She asked me where I was going that night."
-    ],
-    "explanation": "Pregunta en estilo indirecto: orden de palabras de enunciado, cambio de tiempo verbal, cambio de referencias temporales."
-  },
-  {
-    "prompt": "Change to reported speech using <claimed>",
-    "source": "\"I've never been to that place before,\" he said.",
-    "correct": [
-      "He claimed that he had never been to that place before.",
-      "He claimed he had never been to that place before."
-    ],
-    "explanation": "<Claim> + cláusula con <that> para afirmaciones de veracidad dudosa."
-  },
-  {
-    "prompt": "Change to reported speech using <begged>",
-    "source": "\"Please, please don't leave me!\" she said.",
-    "correct": [
-      "She begged me not to leave her."
-    ],
-    "explanation": "<Beg> + objeto + <(not) to> + infinitivo para peticiones desesperadas."
-  },
-  {
-    "prompt": "Change to reported speech using <invited>",
-    "source": "\"Would you like to come to my party on Saturday?\" she said.",
-    "correct": [
-      "She invited me to her party on Saturday.",
-      "She invited me to come to her party on Saturday."
-    ],
-    "explanation": "<Invite> + objeto + <to> + infinitivo/sustantivo."
-  },
-  {
-    "prompt": "Change to reported speech using <advised>",
-    "source": "\"If I were you, I'd see a specialist,\" the doctor said.",
-    "correct": [
-      "The doctor advised me to see a specialist."
-    ],
-    "explanation": "<Advise> + objeto + <to> + infinitivo."
   }
 ]

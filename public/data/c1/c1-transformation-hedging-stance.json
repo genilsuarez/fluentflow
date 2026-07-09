@@ -171,46 +171,5 @@
       "On balance, the advantages would seem to outweigh the disadvantages."
     ],
     "explanation": "<On balance> indica que se consideraron ambos lados antes de llegar a una conclusión."
-  },
-  {
-    "prompt": "Rewrite using <It remains to be seen whether>",
-    "source": "The policy will reduce inequality.",
-    "correct": [
-      "It remains to be seen whether the policy will reduce inequality."
-    ],
-    "explanation": "<It remains to be seen whether> expresa incertidumbre sobre resultados futuros."
-  },
-  {
-    "prompt": "Rewrite using <is/are likely to>",
-    "source": "Prices will increase next year.",
-    "correct": [
-      "Prices are likely to increase next year."
-    ],
-    "explanation": "<Is/are likely to> expresa probabilidad sin certeza."
-  },
-  {
-    "prompt": "Rewrite using <It is generally accepted that>",
-    "source": "Climate change is caused by human activity.",
-    "correct": [
-      "It is generally accepted that climate change is caused by human activity."
-    ],
-    "explanation": "<It is generally accepted that> atribuye la afirmación a un consenso científico."
-  },
-  {
-    "prompt": "Rewrite using <might be considered>",
-    "source": "This behavior is unacceptable.",
-    "correct": [
-      "This behavior might be considered unacceptable."
-    ],
-    "explanation": "<Might be considered> introduce subjetividad y evita imponer un juicio."
-  },
-  {
-    "prompt": "Rewrite using <To a certain degree>",
-    "source": "Education determines future success.",
-    "correct": [
-      "To a certain degree, education determines future success.",
-      "Education determines future success to a certain degree."
-    ],
-    "explanation": "<To a certain degree> matiza el alcance de una afirmación causal."
   }
 ]

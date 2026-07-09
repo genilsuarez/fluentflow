@@ -1,32 +1,82 @@
 [
-  {"word": "How much water do you drink?", "category": "Uncountable"},
-  {"word": "How many chairs are there?", "category": "Countable"},
-  {"word": "I don't have much time.", "category": "Uncountable"},
-  {"word": "There aren't many students today.", "category": "Countable"},
-  {"word": "She needs some information.", "category": "Uncountable"},
-  {"word": "He bought some apples.", "category": "Countable"},
-  {"word": "There's a little milk left.", "category": "Uncountable"},
-  {"word": "There are a few eggs in the box.", "category": "Countable"},
-  {"word": "We have too much homework.", "category": "Uncountable"},
-  {"word": "Too many people came to the party.", "category": "Countable"},
-  {"word": "She has a lot of experience.", "category": "Uncountable"},
-  {"word": "He has a lot of friends.", "category": "Countable"},
-  {"word": "Is there any bread?", "category": "Uncountable"},
-  {"word": "Are there any tickets left?", "category": "Countable"},
-  {"word": "I need a little help.", "category": "Uncountable"},
-  {"word": "We need a few more minutes.", "category": "Countable"},
-  {"word": "There isn't much traffic today.", "category": "Uncountable"},
-  {"word": "There aren't many options.", "category": "Countable"},
-  {"word": "He ate too much rice.", "category": "Uncountable"},
-  {"word": "She read too many books this month.", "category": "Countable"},
-  {"word": "Do you have any luggage?", "category": "Uncountable"},
-  {"word": "Do you have any questions?", "category": "Countable"},
-  {"word": "Very little progress was made.", "category": "Uncountable"},
-  {"word": "Very few people attended.", "category": "Countable"},
-  {"word": "I don't have much money.", "category": "Uncountable"},
-  {"word": "I don't have many coins.", "category": "Countable"},
-  {"word": "She gave me some advice.", "category": "Uncountable"},
-  {"word": "She gave me some suggestions.", "category": "Countable"},
-  {"word": "There's too much noise here.", "category": "Uncountable"},
-  {"word": "There are too many cars on the road.", "category": "Countable"}
+  {
+    "word": "How much water do you drink?",
+    "category": "Uncountable"
+  },
+  {
+    "word": "I don't have much time.",
+    "category": "Uncountable"
+  },
+  {
+    "word": "She needs some information.",
+    "category": "Uncountable"
+  },
+  {
+    "word": "There's a little milk left.",
+    "category": "Uncountable"
+  },
+  {
+    "word": "We have too much homework.",
+    "category": "Uncountable"
+  },
+  {
+    "word": "She has a lot of experience.",
+    "category": "Uncountable"
+  },
+  {
+    "word": "Is there any bread?",
+    "category": "Uncountable"
+  },
+  {
+    "word": "I need a little help.",
+    "category": "Uncountable"
+  },
+  {
+    "word": "There isn't much traffic today.",
+    "category": "Uncountable"
+  },
+  {
+    "word": "He ate too much rice.",
+    "category": "Uncountable"
+  },
+  {
+    "word": "How many chairs are there?",
+    "category": "Countable"
+  },
+  {
+    "word": "There aren't many students today.",
+    "category": "Countable"
+  },
+  {
+    "word": "He bought some apples.",
+    "category": "Countable"
+  },
+  {
+    "word": "There are a few eggs in the box.",
+    "category": "Countable"
+  },
+  {
+    "word": "Too many people came to the party.",
+    "category": "Countable"
+  },
+  {
+    "word": "He has a lot of friends.",
+    "category": "Countable"
+  },
+  {
+    "word": "Are there any tickets left?",
+    "category": "Countable"
+  },
+  {
+    "word": "We need a few more minutes.",
+    "category": "Countable"
+  },
+  {
+    "word": "There aren't many options.",
+    "category": "Countable"
+  },
+  {
+    "word": "She read too many books this month.",
+    "category": "Countable"
+  }
 ]

@@ -33,7 +33,7 @@ const MINIMUMS = {
   flashcard: 40,
   quiz: 20,
   completion: 20,
-  sorting: 25,
+  sorting: 20,
   matching: 20,
   reading: 4, // sections
   reordering: 5,

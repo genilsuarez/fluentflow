@@ -98,30 +98,5 @@
     "sentence": "______ had the meeting started than the fire alarm went off. (inversion with 'no sooner')",
     "correct": "No sooner",
     "explanation": "Estructura invertida: <No sooner had... than> expresa una secuencia inmediata."
-  },
-  {
-    "sentence": "The results suggest that further research ______ conducted. (subjunctive passive)",
-    "correct": "be",
-    "explanation": "Subjuntivo en una recomendación formal: <that research be conducted>."
-  },
-  {
-    "sentence": "Were she ______ reconsider, the outcome might be different. (inverted conditional)",
-    "correct": "to",
-    "explanation": "Condicional invertida: <Were she to reconsider> = If she were to reconsider."
-  },
-  {
-    "sentence": "The CEO's ______ pragmatic approach yielded impressive results. (vocabulary)",
-    "correct": "pragmatic",
-    "explanation": "<Pragmatic> significa abordar las cosas de manera práctica y realista."
-  },
-  {
-    "sentence": "The study's findings were ______ by subsequent research. (vocabulary: confirmed)",
-    "correct": "corroborated",
-    "explanation": "<Corroborated> significa confirmado o respaldado por evidencia adicional."
-  },
-  {
-    "sentence": "The policy had far-______ consequences that nobody anticipated.",
-    "correct": "reaching",
-    "explanation": "<Far-reaching> significa que tiene un amplio alcance de efectos o influencia."
   }
 ]

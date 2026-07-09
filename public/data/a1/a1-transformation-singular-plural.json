@@ -158,45 +158,5 @@
       "The watches are expensive."
     ],
     "explanation": "Los sustantivos terminados en <-ch> agregan <-es>: <watches>."
-  },
-  {
-    "prompt": "Change to plural",
-    "source": "The dish is clean.",
-    "correct": [
-      "The dishes are clean."
-    ],
-    "explanation": "Los sustantivos terminados en <-sh> agregan <-es>: <dishes>."
-  },
-  {
-    "prompt": "Change to singular",
-    "source": "The geese are in the park.",
-    "correct": [
-      "The goose is in the park."
-    ],
-    "explanation": "<Geese> es el plural irregular de <goose>."
-  },
-  {
-    "prompt": "Change to plural",
-    "source": "The class is full.",
-    "correct": [
-      "The classes are full."
-    ],
-    "explanation": "Los sustantivos terminados en <-ss> agregan <-es>: <classes>."
-  },
-  {
-    "prompt": "Change to plural",
-    "source": "The story is interesting.",
-    "correct": [
-      "The stories are interesting."
-    ],
-    "explanation": "Los sustantivos terminados en consonante + <y> cambian la <y> por <ies>: <stories>."
-  },
-  {
-    "prompt": "Change to singular",
-    "source": "The wolves are dangerous.",
-    "correct": [
-      "The wolf is dangerous."
-    ],
-    "explanation": "<Wolves> vuelve a <wolf> en singular. Los sustantivos terminados en <-ves> se convierten en <-f>."
   }
 ]

@@ -181,50 +181,5 @@
       "There was successful collaboration between the two companies on the project."
     ],
     "explanation": "Nominalization: <collaborated> → <collaboration>, <successfully> → <successful>."
-  },
-  {
-    "prompt": "Rewrite using nominalization",
-    "source": "The mayor announced that the festival would be cancelled.",
-    "correct": [
-      "The mayor's announcement of the festival's cancellation surprised residents.",
-      "The announcement of the cancellation of the festival was made by the mayor."
-    ],
-    "explanation": "Nominalization: <announced> → <announcement>, <cancelled> → <cancellation>."
-  },
-  {
-    "prompt": "Rewrite using nominalization",
-    "source": "The patient recovered remarkably after surgery.",
-    "correct": [
-      "The patient's remarkable recovery after surgery surprised doctors.",
-      "The remarkable recovery of the patient after surgery was noted."
-    ],
-    "explanation": "Nominalization: <recovered> → <recovery>, <remarkably> → <remarkable>."
-  },
-  {
-    "prompt": "Rewrite using a verbal form (de-nominalize)",
-    "source": "The reduction in staff led to widespread dissatisfaction.",
-    "correct": [
-      "Reducing staff led to widespread dissatisfaction.",
-      "When they reduced staff, it led to widespread dissatisfaction."
-    ],
-    "explanation": "De-nominalization: <reduction> → <reducing/reduced>."
-  },
-  {
-    "prompt": "Rewrite using nominalization",
-    "source": "The government intervened to prevent the bank from collapsing.",
-    "correct": [
-      "The government's intervention prevented the bank from collapsing.",
-      "Government intervention prevented the collapse of the bank."
-    ],
-    "explanation": "Nominalization: <intervened> → <intervention>."
-  },
-  {
-    "prompt": "Rewrite using nominalization",
-    "source": "The company expanded into Asian markets aggressively.",
-    "correct": [
-      "The aggressive expansion of the company into Asian markets was controversial.",
-      "The company's aggressive expansion into Asian markets drew attention."
-    ],
-    "explanation": "Nominalization: <expanded> → <expansion>, <aggressively> → <aggressive>."
   }
 ]

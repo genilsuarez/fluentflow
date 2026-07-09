@@ -18,42 +18,6 @@
     "tip": "Complete with the correct form of <be>"
   },
   {
-    "sentence": "She ______ a teacher.",
-    "correct": "is",
-    "explanation": "Usa <is> con el pronombre <she>",
-    "tip": "Complete with the correct form of <be>"
-  },
-  {
-    "sentence": "It ______ a beautiful day.",
-    "correct": "is",
-    "explanation": "Usa <is> con el pronombre <it>",
-    "tip": "Complete with the correct form of <be>"
-  },
-  {
-    "sentence": "We ______ happy today.",
-    "correct": "are",
-    "explanation": "Usa <are> con el pronombre <we>",
-    "tip": "Complete with the correct form of <be>"
-  },
-  {
-    "sentence": "They ______ from Spain.",
-    "correct": "are",
-    "explanation": "Usa <are> con el pronombre <they>",
-    "tip": "Complete with the correct form of <be>"
-  },
-  {
-    "sentence": "This ______ my book.",
-    "correct": "is",
-    "explanation": "Usa <is> con <this> (singular)",
-    "tip": "Complete with the correct form of <be>"
-  },
-  {
-    "sentence": "That ______ a good idea.",
-    "correct": "is",
-    "explanation": "Usa <is> con <that> (singular)",
-    "tip": "Complete with the correct form of <be>"
-  },
-  {
     "sentence": "I ______ coffee every morning.",
     "correct": "drink",
     "explanation": "Usa la forma base del verbo con <I>",
@@ -132,28 +96,10 @@
     "tip": "Complete with the correct form of <have>"
   },
   {
-    "sentence": "There ______ a book on the table.",
-    "correct": "is",
-    "explanation": "Usa <there is> con sustantivos singulares",
-    "tip": "Complete with the correct form of <be>"
-  },
-  {
-    "sentence": "There ______ three dogs in the park.",
-    "correct": "are",
-    "explanation": "Usa <there are> con sustantivos plurales",
-    "tip": "Complete with the correct form of <be>"
-  },
-  {
     "sentence": "I ______ swim very well.",
     "correct": "can",
     "explanation": "<Can> expresa habilidad",
     "tip": "Complete with the modal verb for ability"
-  },
-  {
-    "sentence": "______ you help me, please?",
-    "correct": "Can",
-    "explanation": "<Can> se usa para peticiones corteses",
-    "tip": "Complete with the modal verb for requests"
   },
   {
     "sentence": "My ______ is John.",
@@ -172,71 +118,5 @@
     "correct": "on",
     "explanation": "<On> indica posición sobre algo",
     "tip": "Complete with the correct preposition"
-  },
-  {
-    "sentence": "The book is ______ the bag.",
-    "correct": "in",
-    "explanation": "<In> indica posición dentro de algo",
-    "tip": "Complete with the correct preposition"
-  },
-  {
-    "sentence": "I go to work ______ car.",
-    "correct": "by",
-    "explanation": "<By> indica el medio de transporte",
-    "tip": "Complete with the correct preposition"
-  },
-  {
-    "sentence": "She lives ______ London.",
-    "correct": "in",
-    "explanation": "<In> se usa con ciudades y países",
-    "tip": "Complete with the correct preposition"
-  },
-  {
-    "sentence": "The meeting is ______ 3 o'clock.",
-    "correct": "at",
-    "explanation": "<At> se usa con horas específicas",
-    "tip": "Complete with the correct preposition"
-  },
-  {
-    "sentence": "I wake up ______ the morning.",
-    "correct": "in",
-    "explanation": "<In> se usa con partes del día",
-    "tip": "Complete with the correct preposition"
-  },
-  {
-    "sentence": "This is ______ apple.",
-    "correct": "an",
-    "explanation": "Usa <an> antes de sonidos vocálicos",
-    "tip": "Complete with the correct article"
-  },
-  {
-    "sentence": "That is ______ dog.",
-    "correct": "a",
-    "explanation": "Usa <a> antes de sonidos consonánticos",
-    "tip": "Complete with the correct article"
-  },
-  {
-    "sentence": "______ sun is bright today.",
-    "correct": "The",
-    "explanation": "Usa <the> para cosas únicas",
-    "tip": "Complete with the correct article"
-  },
-  {
-    "sentence": "I like ______ music.",
-    "correct": "listening to",
-    "explanation": "Usamos <listen to> para la música",
-    "tip": "Complete with the correct verb phrase"
-  },
-  {
-    "sentence": "She ______ TV every evening.",
-    "correct": "watches",
-    "explanation": "Usamos <watch> para la TV, y añadimos <s> con she",
-    "tip": "Complete with the correct verb form"
-  },
-  {
-    "sentence": "Good ______, how are you?",
-    "correct": "morning",
-    "explanation": "<Good morning> es un saludo común",
-    "tip": "Complete with the time of day"
   }
 ]

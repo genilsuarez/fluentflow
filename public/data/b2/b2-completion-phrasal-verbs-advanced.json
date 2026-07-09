@@ -54,12 +54,6 @@
     "tip": "He was clearly better or different from the other candidates."
   },
   {
-    "sentence": "The company plans to roll ______ the new app next month.",
-    "correct": "out",
-    "explanation": "El phrasal verb <roll out> significa lanzar o poner a disposición del público.",
-    "tip": "The company will launch the app to the public next month."
-  },
-  {
     "sentence": "She had to get ______ her fear of public speaking.",
     "correct": "over",
     "explanation": "El phrasal verb <get over> significa superar o recuperarse de algo.",
@@ -88,12 +82,6 @@
     "correct": "across",
     "explanation": "El phrasal verb <come across> significa encontrar algo por casualidad.",
     "tip": "She found the letter unexpectedly while sorting things."
-  },
-  {
-    "sentence": "The company had to lay ______ fifty workers due to financial difficulties.",
-    "correct": "off",
-    "explanation": "El phrasal verb <lay off> significa despedir a empleados por razones económicas.",
-    "tip": "The company dismissed workers because of financial problems."
   },
   {
     "sentence": "He found it hard to keep ______ with the pace of the advanced class.",
@@ -130,23 +118,5 @@
     "correct": "back",
     "explanation": "El phrasal verb <hold back> significa retener o reservar algo para más tarde.",
     "tip": "They saved their best players for the most important game."
-  },
-  {
-    "sentence": "He found ______ the truth about the project only after it was too late.",
-    "correct": "out",
-    "explanation": "El phrasal verb <find out> significa descubrir o enterarse de algo.",
-    "tip": "He discovered the truth, but it was already too late."
-  },
-  {
-    "sentence": "The company set ______ a new branch in the city centre.",
-    "correct": "up",
-    "explanation": "El phrasal verb <set up> significa establecer o crear algo nuevo.",
-    "tip": "The company established a new office in the city centre."
-  },
-  {
-    "sentence": "She had to go ______ a lengthy approval process before starting the project.",
-    "correct": "through",
-    "explanation": "El phrasal verb <go through> significa pasar por un proceso o experiencia.",
-    "tip": "She had to complete a long approval process before starting."
   }
 ]

@@ -20,10 +20,6 @@
     "category": "Home"
   },
   {
-    "word": "wardrobe",
-    "category": "Home"
-  },
-  {
     "word": "headache",
     "category": "Health"
   },
@@ -41,10 +37,6 @@
   },
   {
     "word": "appointment",
-    "category": "Health"
-  },
-  {
-    "word": "pharmacy",
     "category": "Health"
   },
   {
@@ -68,10 +60,6 @@
     "category": "Technology"
   },
   {
-    "word": "charger",
-    "category": "Technology"
-  },
-  {
     "word": "colleague",
     "category": "Work"
   },
@@ -90,33 +78,5 @@
   {
     "word": "meeting",
     "category": "Work"
-  },
-  {
-    "word": "resume",
-    "category": "Work"
-  },
-  {
-    "word": "stethoscope",
-    "category": "Health"
-  },
-  {
-    "word": "bandage",
-    "category": "Health"
-  },
-  {
-    "word": "oven",
-    "category": "Home"
-  },
-  {
-    "word": "balcony",
-    "category": "Home"
-  },
-  {
-    "word": "promotion",
-    "category": "Work"
-  },
-  {
-    "word": "bluetooth",
-    "category": "Technology"
   }
 ]

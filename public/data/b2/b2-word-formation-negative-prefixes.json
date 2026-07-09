@@ -118,35 +118,5 @@
     "rootWord": "MATURE",
     "correct": "immature",
     "explanation": "MATURE → immature (im- antes de 'm' para negar)"
-  },
-  {
-    "sentence": "The _____ of the information caused confusion.",
-    "rootWord": "ACCURATE",
-    "correct": "inaccuracy",
-    "explanation": "ACCURATE → inaccuracy (in- + sufijo nominal -acy)"
-  },
-  {
-    "sentence": "She felt _____ about speaking in public.",
-    "rootWord": "SECURE",
-    "correct": "insecure",
-    "explanation": "SECURE → insecure (in- para negar el significado)"
-  },
-  {
-    "sentence": "The _____ of the old bridge was a concern for engineers.",
-    "rootWord": "STABLE",
-    "correct": "instability",
-    "explanation": "STABLE → instability (in- + sufijo nominal -ity)"
-  },
-  {
-    "sentence": "His _____ to follow instructions caused the accident.",
-    "rootWord": "OBEY",
-    "correct": "disobedience",
-    "explanation": "OBEY → disobedience (dis- + obedi + sufijo nominal -ence)"
-  },
-  {
-    "sentence": "The new regulation was _____ and needed revision.",
-    "rootWord": "PERFECT",
-    "correct": "imperfect",
-    "explanation": "PERFECT → imperfect (im- antes de 'p' para negar)"
   }
 ]

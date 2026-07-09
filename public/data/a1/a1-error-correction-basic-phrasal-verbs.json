@@ -138,41 +138,5 @@
       "He turned off the TV and went to sleep."
     ],
     "explanation": "Esta oración es correcta. <Turn off> significa apagar un dispositivo."
-  },
-  {
-    "sentence": "She set on the alarm for 6 am.",
-    "correct": [
-      "She set up the alarm for 6 am."
-    ],
-    "explanation": "El phrasal verb correcto es <set up> (preparar/configurar), no <set on>."
-  },
-  {
-    "sentence": "I always mix on the ingredients before cooking.",
-    "correct": [
-      "I always mix up the ingredients before cooking."
-    ],
-    "explanation": "El phrasal verb correcto es <mix up> (combinar/confundir), no <mix on>."
-  },
-  {
-    "sentence": "He hanged up the phone quickly.",
-    "correct": [
-      "He hung up the phone quickly."
-    ],
-    "explanation": "El pasado de <hang up> (colgar el teléfono) es <hung up>, no <hanged up>."
-  },
-  {
-    "sentence": "She filled up the form at the office.",
-    "correct": [
-      "She filled in the form at the office.",
-      "She filled out the form at the office."
-    ],
-    "explanation": "El phrasal verb correcto es <fill in> o <fill out> (rellenar un formulario), no <fill up>."
-  },
-  {
-    "sentence": "I need to check on of the hotel by noon.",
-    "correct": [
-      "I need to check out of the hotel by noon."
-    ],
-    "explanation": "El phrasal verb correcto es <check out of> (dejar un hotel), no <check on of>."
   }
 ]

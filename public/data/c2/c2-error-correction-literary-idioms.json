@@ -139,41 +139,5 @@
       "His crocodile tears fooled nobody at the negotiating table."
     ],
     "explanation": "El modismo correcto es <crocodile tears> (tristeza falsa), no <crocodile smiles>."
-  },
-  {
-    "sentence": "The new law was a Gordian rope that nobody could untangle.",
-    "correct": [
-      "The new law was a Gordian knot that nobody could untangle."
-    ],
-    "explanation": "El modismo correcto es <Gordian knot> (un problema irresoluble), no <Gordian rope>."
-  },
-  {
-    "sentence": "She was burning the midnight candle to finish her dissertation.",
-    "correct": [
-      "She was burning the midnight oil to finish her dissertation."
-    ],
-    "explanation": "El modismo correcto es <burning the midnight oil> (trabajar hasta tarde), no <midnight candle>."
-  },
-  {
-    "sentence": "The artist's magnum opus was his swan dive — his final and greatest work.",
-    "correct": [
-      "The artist's magnum opus was his swan song — his final and greatest work."
-    ],
-    "explanation": "El modismo correcto es <swan song> (última actuación), no <swan dive>."
-  },
-  {
-    "sentence": "The politician's promise was a hollow reed — an ivory castle built on sand.",
-    "correct": [
-      "The politician's promise was a hollow reed — a castle built on sand.",
-      "The politician's promise was an ivory tower — a castle built on sand."
-    ],
-    "explanation": "El modismo correcto es <castle built on sand> (cimientos inestables). <Ivory tower> significa desapego de la realidad."
-  },
-  {
-    "sentence": "He was the elephant in the china shop — clumsy and destructive.",
-    "correct": [
-      "He was the bull in a china shop — clumsy and destructive."
-    ],
-    "explanation": "El modismo correcto es <bull in a china shop> (persona torpe), no <elephant>."
   }
 ]

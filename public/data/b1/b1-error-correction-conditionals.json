@@ -1,164 +1,164 @@
 [
   {
     "sentence": "If I would have more money, I would buy a car.",
-    "correct": ["If I had more money, I would buy a car."],
+    "correct": [
+      "If I had more money, I would buy a car."
+    ],
     "hint": "Check the verb form in the if-clause",
     "explanation": "El segundo condicional usa el pasado simple en la cláusula 'if': 'If I had', no 'If I would have'."
   },
   {
     "sentence": "If it will rain tomorrow, we will stay home.",
-    "correct": ["If it rains tomorrow, we will stay home."],
+    "correct": [
+      "If it rains tomorrow, we will stay home."
+    ],
     "hint": "Check the verb form in the if-clause",
     "explanation": "El primer condicional usa el presente simple en la cláusula 'if': 'If it rains', no 'If it will rain'."
   },
   {
     "sentence": "If I was you, I would accept the offer.",
-    "correct": ["If I were you, I would accept the offer."],
+    "correct": [
+      "If I were you, I would accept the offer."
+    ],
     "hint": "Check the verb 'be' in the if-clause",
     "explanation": "En el segundo condicional con 'I', se prefiere el subjuntivo 'were': 'If I were you'."
   },
   {
     "sentence": "If she would study harder, she would pass the exam.",
-    "correct": ["If she studied harder, she would pass the exam."],
+    "correct": [
+      "If she studied harder, she would pass the exam."
+    ],
     "hint": "Check the verb form in the if-clause",
     "explanation": "El segundo condicional usa el pasado simple en la cláusula 'if': 'If she studied', no 'If she would study'."
   },
   {
     "sentence": "Unless you don't hurry, you will miss the bus.",
-    "correct": ["Unless you hurry, you will miss the bus."],
+    "correct": [
+      "Unless you hurry, you will miss the bus."
+    ],
     "hint": "Check the negative with 'unless'",
     "explanation": "'Unless' ya significa 'if not', así que agregar 'don't' crea una doble negación. Elimina 'don't'."
   },
   {
     "sentence": "The cake was make by my grandmother.",
-    "correct": ["The cake was made by my grandmother."],
+    "correct": [
+      "The cake was made by my grandmother."
+    ],
     "hint": "Check the past participle in the passive",
     "explanation": "La voz pasiva requiere 'was' + participio pasado: 'made', no 'make'."
   },
   {
     "sentence": "The letter was wrote by the manager.",
-    "correct": ["The letter was written by the manager."],
+    "correct": [
+      "The letter was written by the manager."
+    ],
     "hint": "Check the past participle of 'write'",
     "explanation": "La voz pasiva requiere 'was' + participio pasado: 'written', no 'wrote'."
   },
   {
     "sentence": "English is spoke in many countries.",
-    "correct": ["English is spoken in many countries."],
+    "correct": [
+      "English is spoken in many countries."
+    ],
     "hint": "Check the past participle of 'speak'",
     "explanation": "La voz pasiva requiere 'is' + participio pasado: 'spoken', no 'spoke'."
   },
   {
     "sentence": "The window was broke by the children.",
-    "correct": ["The window was broken by the children."],
+    "correct": [
+      "The window was broken by the children."
+    ],
     "hint": "Check the past participle of 'break'",
     "explanation": "La voz pasiva requiere 'was' + participio pasado: 'broken', no 'broke'."
   },
   {
     "sentence": "The homework must be do before Friday.",
-    "correct": ["The homework must be done before Friday."],
+    "correct": [
+      "The homework must be done before Friday."
+    ],
     "hint": "Check the past participle after 'must be'",
     "explanation": "Voz pasiva con modal: 'must be' + participio pasado: 'done', no 'do'."
   },
   {
     "sentence": "She is interested for learning new languages.",
-    "correct": ["She is interested in learning new languages."],
+    "correct": [
+      "She is interested in learning new languages."
+    ],
     "hint": "Check the preposition after 'interested'",
     "explanation": "La colocación correcta es 'interested in', no 'interested for'."
   },
   {
     "sentence": "He apologized for arrive late.",
-    "correct": ["He apologized for arriving late."],
+    "correct": [
+      "He apologized for arriving late."
+    ],
     "hint": "Check the verb form after a preposition",
     "explanation": "Después de una preposición, se usa el gerundio (forma -ing): 'for arriving', no 'for arrive'."
   },
   {
     "sentence": "I am looking forward to see you.",
-    "correct": ["I am looking forward to seeing you."],
+    "correct": [
+      "I am looking forward to seeing you."
+    ],
     "hint": "Check the verb form after 'looking forward to'",
     "explanation": "'Looking forward to' va seguido de un gerundio: 'to seeing', no 'to see'."
   },
   {
     "sentence": "She succeeded in pass the exam.",
-    "correct": ["She succeeded in passing the exam."],
+    "correct": [
+      "She succeeded in passing the exam."
+    ],
     "hint": "Check the verb form after the preposition 'in'",
     "explanation": "Después de una preposición, se usa el gerundio: 'in passing', no 'in pass'."
   },
   {
     "sentence": "He insisted on pay for dinner.",
-    "correct": ["He insisted on paying for dinner."],
+    "correct": [
+      "He insisted on paying for dinner."
+    ],
     "hint": "Check the verb form after the preposition 'on'",
     "explanation": "Después de una preposición, se usa el gerundio: 'on paying', no 'on pay'."
   },
   {
     "sentence": "If I had knew the answer, I would have told you.",
-    "correct": ["If I had known the answer, I would have told you."],
+    "correct": [
+      "If I had known the answer, I would have told you."
+    ],
     "hint": "Check the past participle after 'had'",
     "explanation": "El tercer condicional usa 'had' + participio pasado: 'had known', no 'had knew'."
   },
   {
     "sentence": "The meeting was cancel due to bad weather.",
-    "correct": ["The meeting was cancelled due to bad weather.", "The meeting was canceled due to bad weather."],
+    "correct": [
+      "The meeting was cancelled due to bad weather.",
+      "The meeting was canceled due to bad weather."
+    ],
     "hint": "Check the past participle in the passive",
     "explanation": "La voz pasiva requiere 'was' + participio pasado: 'cancelled' (o 'canceled')."
   },
   {
     "sentence": "She is used to live in a big city.",
-    "correct": ["She is used to living in a big city."],
+    "correct": [
+      "She is used to living in a big city."
+    ],
     "hint": "Check the verb form after 'used to'",
     "explanation": "'Be used to' va seguido de un gerundio: 'used to living', no 'used to live'."
   },
   {
     "sentence": "Despite of the rain, we went for a walk.",
-    "correct": ["Despite the rain, we went for a walk."],
+    "correct": [
+      "Despite the rain, we went for a walk."
+    ],
     "hint": "Check the word after 'despite'",
     "explanation": "'Despite' no va seguido de 'of'. Usa 'despite the rain' o 'in spite of the rain'."
   },
   {
     "sentence": "He suggested me to apply for the job.",
-    "correct": ["He suggested that I apply for the job.", "He suggested I apply for the job."],
+    "correct": [
+      "He suggested that I apply for the job.",
+      "He suggested I apply for the job."
+    ],
     "hint": "Check the structure after 'suggested'",
     "explanation": "'Suggest' va seguido de 'that + sujeto + verbo base', no de 'someone + to + verb'."
-  },
-  {
-    "sentence": "If I would be rich, I would travel the world.",
-    "correct": ["If I were rich, I would travel the world."],
-    "hint": "Check the verb form in the if-clause",
-    "explanation": "El segundo condicional usa el pasado simple (o el subjuntivo 'were') en la cláusula 'if', no 'would be'."
-  },
-  {
-    "sentence": "The new bridge is being build right now.",
-    "correct": ["The new bridge is being built right now."],
-    "hint": "Check the past participle of 'build'",
-    "explanation": "La voz pasiva en presente continuo requiere 'is being' + participio pasado: 'built', no 'build'."
-  },
-  {
-    "sentence": "She prevented him to make a mistake.",
-    "correct": ["She prevented him from making a mistake."],
-    "hint": "Check the preposition and verb form after 'prevented'",
-    "explanation": "'Prevent someone from doing' es la estructura correcta, no 'prevent someone to do'."
-  },
-  {
-    "sentence": "I would go if I will have time.",
-    "correct": ["I would go if I had time."],
-    "hint": "Check the verb form in the if-clause",
-    "explanation": "El segundo condicional usa el pasado simple en la cláusula 'if': 'if I had', no 'if I will have'."
-  },
-  {
-    "sentence": "The report was gave to the director.",
-    "correct": ["The report was given to the director."],
-    "hint": "Check the past participle of 'give'",
-    "explanation": "La voz pasiva requiere 'was' + participio pasado: 'given', no 'gave'."
-  },
-  {
-    "sentence": "He accused me for stealing his pen.",
-    "correct": ["He accused me of stealing his pen."],
-    "hint": "Check the preposition after 'accused'",
-    "explanation": "La colocación correcta es 'accused of', no 'accused for'."
-  },
-  {
-    "sentence": "If you will come early, we can have breakfast together.",
-    "correct": ["If you come early, we can have breakfast together."],
-    "hint": "Check the verb form in the if-clause",
-    "explanation": "El primer condicional usa el presente simple en la cláusula 'if': 'If you come', no 'If you will come'."
   }
 ]

@@ -118,35 +118,5 @@
     "rootWord": "EAGER",
     "correct": "eagerly",
     "explanation": "EAGER → eagerly (agrega -ly para formar un adverbio)"
-  },
-  {
-    "sentence": "He looked at her _____ before speaking.",
-    "rootWord": "SERIOUS",
-    "correct": "seriously",
-    "explanation": "SERIOUS → seriously (agrega -ly para formar un adverbio)"
-  },
-  {
-    "sentence": "The children ran _____ to the playground.",
-    "rootWord": "EXCITED",
-    "correct": "excitedly",
-    "explanation": "EXCITED → excitedly (agrega -ly para formar un adverbio)"
-  },
-  {
-    "sentence": "She _____ completed all her homework before dinner.",
-    "rootWord": "SUCCESSFUL",
-    "correct": "successfully",
-    "explanation": "SUCCESSFUL → successfully (agrega -ly para formar un adverbio)"
-  },
-  {
-    "sentence": "He _____ closed the door behind him.",
-    "rootWord": "GENTLE",
-    "correct": "gently",
-    "explanation": "GENTLE → gently (cambia -le por -ly para formar un adverbio)"
-  },
-  {
-    "sentence": "The team worked _____ to finish the project on time.",
-    "rootWord": "HARD",
-    "correct": "hard",
-    "explanation": "HARD → hard (esta palabra es igual como adjetivo y como adverbio — <hardly> significa 'casi no')"
   }
 ]

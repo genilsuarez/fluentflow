@@ -170,48 +170,5 @@
       "We had new wiring installed in our house."
     ],
     "explanation": "Causativa en pasado: sujeto + <had> + objeto + participio pasado."
-  },
-  {
-    "prompt": "Change to passive with <is thought to>",
-    "source": "Scientists think that this species is endangered.",
-    "correct": [
-      "This species is thought to be endangered.",
-      "It is thought that this species is endangered."
-    ],
-    "explanation": "Pasiva impersonal: sujeto + <is thought to> + infinitivo."
-  },
-  {
-    "prompt": "Change to passive with <is alleged to have>",
-    "source": "Witnesses allege that the driver ran the red light.",
-    "correct": [
-      "The driver is alleged to have run the red light.",
-      "It is alleged that the driver ran the red light."
-    ],
-    "hint": "Past reference → <to have> + past participle",
-    "explanation": "Pasiva impersonal con referencia al pasado: <is alleged to have> + participio pasado."
-  },
-  {
-    "prompt": "Change to active voice",
-    "source": "The new policy has been approved by the board.",
-    "correct": [
-      "The board has approved the new policy."
-    ],
-    "explanation": "Presente perfecto activo: agente + <has/have> + participio pasado + objeto."
-  },
-  {
-    "prompt": "Change to passive with <want + object + past participle>",
-    "source": "I want someone to deliver the package before noon.",
-    "correct": [
-      "I want the package delivered before noon."
-    ],
-    "explanation": "<Want + objeto + participio pasado> es una forma informal de expresar una acción deseada realizada por otros."
-  },
-  {
-    "prompt": "Change to passive using <it + passive + that clause>",
-    "source": "Researchers have shown that exercise improves memory.",
-    "correct": [
-      "It has been shown that exercise improves memory."
-    ],
-    "explanation": "Pasiva impersonal: <It has been shown/proven/demonstrated that> + cláusula."
   }
 ]

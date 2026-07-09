@@ -171,47 +171,5 @@
       "He denied stealing the money."
     ],
     "explanation": "<Deny> va seguido de gerundio. Significa afirmar que algo no es cierto."
-  },
-  {
-    "prompt": "Rewrite using <mind + gerund>",
-    "source": "Would it bother you if I opened the window?",
-    "correct": [
-      "Would you mind me opening the window?",
-      "Do you mind if I open the window?"
-    ],
-    "explanation": "<Mind> va seguido de gerundio. <Would you mind + gerund?> = petición cortés."
-  },
-  {
-    "prompt": "Rewrite using <can't help + gerund>",
-    "source": "I laugh every time I see that video. I can't control it.",
-    "correct": [
-      "I can't help laughing every time I see that video."
-    ],
-    "explanation": "<Can't help + gerund> significa ser incapaz de dejar de hacer algo, no poder controlarlo."
-  },
-  {
-    "prompt": "Rewrite using <worth + gerund>",
-    "source": "You should see that film. It's very good.",
-    "correct": [
-      "That film is worth seeing.",
-      "That film is worth watching."
-    ],
-    "explanation": "<Be worth + gerund> significa que algo merece tiempo o esfuerzo."
-  },
-  {
-    "prompt": "Rewrite using <spend time + gerund>",
-    "source": "She studied for three hours yesterday.",
-    "correct": [
-      "She spent three hours studying yesterday."
-    ],
-    "explanation": "<Spend + time + gerund> describe cómo se empleó el tiempo."
-  },
-  {
-    "prompt": "Rewrite using <go on + gerund>",
-    "source": "He continued talking despite the interruption.",
-    "correct": [
-      "He went on talking despite the interruption."
-    ],
-    "explanation": "<Go on + gerund> significa continuar con la misma actividad."
   }
 ]
