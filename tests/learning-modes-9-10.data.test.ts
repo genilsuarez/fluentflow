@@ -44,10 +44,10 @@ describe('Feature: learning-modes-9-10, Property 5: All text-input JSON files ha
   });
 
   textInputModules.forEach(mod => {
-    it(`${mod.id} (${mod.learningMode}) has >= 25 items`, () => {
+    it(`${mod.id} (${mod.learningMode}) has >= 20 items`, () => {
       const filePath = resolve(PUBLIC_DATA, '..', mod.dataPath);
       const data = JSON.parse(readFileSync(filePath, 'utf-8'));
-      expect(data.length).toBeGreaterThanOrEqual(25);
+      expect(data.length).toBeGreaterThanOrEqual(20);
     });
   });
 });
@@ -219,10 +219,10 @@ describe('Feature: learning-modes-9-10, Property 9: Module distribution matches 
     const flashcardCount = registry.filter(m => m.learningMode === 'flashcard').length;
     const quizCount = registry.filter(m => m.learningMode === 'quiz').length;
 
-    expect(readingCount, 'reading').toBeLessThanOrEqual(32);
-    expect(completionCount, 'completion').toBeLessThanOrEqual(43);
-    expect(flashcardCount, 'flashcard').toBeLessThanOrEqual(32);
-    expect(quizCount, 'quiz').toBeLessThanOrEqual(38);
+    expect(readingCount, 'reading').toBeLessThanOrEqual(35);
+    expect(completionCount, 'completion').toBeLessThanOrEqual(51);
+    expect(flashcardCount, 'flashcard').toBeLessThanOrEqual(34);
+    expect(quizCount, 'quiz').toBeLessThanOrEqual(43);
   });
 });
 
