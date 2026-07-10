@@ -43,6 +43,8 @@ function executeCommand(command, description, options = {}) {
           if (!trimmed) return false;
           if (/[\u2705\u2713\u2714\u2139]/.test(trimmed)) return false;
           if (trimmed.includes('✅') || trimmed.includes('✓') || trimmed.includes('ℹ️')) return false;
+          // Skip content-validation summary lines (contain exercise type counts)
+          if (/\b(reading|flashcard|quiz|completion|sorting|matching|reordering|transformation|dictation|word-formation|error-correction|listening-quiz|listen-complete):\d+/.test(trimmed)) return false;
           return /\b(error|fail(ed|ure)?|fatal|exception)\b/i.test(trimmed);
         });
         if (important.length > 0) {
