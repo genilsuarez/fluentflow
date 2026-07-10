@@ -1818,7 +1818,7 @@
       "completion-reported-speech-b1"
     ],
     "description": "Transform direct speech into reported speech: statements, questions, commands, and suggestions",
-    "estimatedTime": 5,
+    "estimatedTime": 4,
     "difficulty": 3
   },
   {
@@ -4298,7 +4298,7 @@
       "completion-quantifiers-a2"
     ],
     "description": "Sort sentences by whether they use countable or uncountable nouns",
-    "estimatedTime": 4,
+    "estimatedTime": 3,
     "difficulty": 2
   },
   {
@@ -4330,7 +4330,7 @@
       "transformation-phrasal-verb-register-b1"
     ],
     "description": "Combine, reduce, and manipulate relative clauses: who, which, whose, where, when",
-    "estimatedTime": 5,
+    "estimatedTime": 4,
     "difficulty": 3
   },
   {
@@ -4346,7 +4346,7 @@
       "transformation-relative-clauses-b1"
     ],
     "description": "Transform sentences between gerund and infinitive patterns: remember, stop, try, used to",
-    "estimatedTime": 5,
+    "estimatedTime": 4,
     "difficulty": 3
   },
   {
@@ -4362,7 +4362,7 @@
       "transformation-gerunds-infinitives-b1"
     ],
     "description": "Transform between direct and indirect questions: word order, if/whether, polite forms",
-    "estimatedTime": 5,
+    "estimatedTime": 4,
     "difficulty": 3
   },
   {
@@ -4378,7 +4378,7 @@
       "transformation-indirect-questions-b1"
     ],
     "description": "Transform sentences using modals for obligation, deduction, ability, and permission",
-    "estimatedTime": 5,
+    "estimatedTime": 4,
     "difficulty": 3
   },
   {
@@ -4474,7 +4474,7 @@
       "matching-idioms-situations-b1"
     ],
     "description": "Learn defining and non-defining relative clauses with who, which, that, whose, where",
-    "estimatedTime": 8,
+    "estimatedTime": 5,
     "difficulty": 3
   },
   {
@@ -4506,7 +4506,7 @@
       "completion-relative-clauses-b1"
     ],
     "description": "Put words in the correct order to form sentences with relative clauses",
-    "estimatedTime": 4,
+    "estimatedTime": 3,
     "difficulty": 3
   },
   {
@@ -4554,7 +4554,7 @@
       "transformation-cleft-emphasis-b2"
     ],
     "description": "Advanced passive: causative have/get, impersonal passive, modal passive, double object",
-    "estimatedTime": 5,
+    "estimatedTime": 4,
     "difficulty": 4
   },
   {
@@ -4570,7 +4570,7 @@
       "transformation-passive-advanced-b2"
     ],
     "description": "Mixed conditionals, formal inversions, unless, provided that, as long as",
-    "estimatedTime": 5,
+    "estimatedTime": 4,
     "difficulty": 4
   },
   {
@@ -4586,7 +4586,7 @@
       "transformation-conditionals-mixed-b2"
     ],
     "description": "Reported speech with advanced verbs: deny, insist, accuse, threaten, recommend",
-    "estimatedTime": 5,
+    "estimatedTime": 4,
     "difficulty": 4
   },
   {
@@ -4602,7 +4602,7 @@
       "transformation-reported-speech-advanced-b2"
     ],
     "description": "Transform using discourse connectors: concession, result, purpose, contrast, addition",
-    "estimatedTime": 5,
+    "estimatedTime": 4,
     "difficulty": 4
   },
   {
@@ -4762,7 +4762,7 @@
       "transformation-formal-register-idioms-c1"
     ],
     "description": "Cleft sentences, pseudo-clefts, and focus structures for emphasis",
-    "estimatedTime": 5,
+    "estimatedTime": 4,
     "difficulty": 5
   },
   {
@@ -4778,7 +4778,7 @@
       "transformation-cleft-focus-c1"
     ],
     "description": "Advanced concessive structures: much as, albeit, notwithstanding, however + adj",
-    "estimatedTime": 5,
+    "estimatedTime": 4,
     "difficulty": 5
   },
   {
@@ -4794,7 +4794,7 @@
       "transformation-concession-contrast-c1"
     ],
     "description": "Convert verbal to nominal constructions and vice versa for academic register",
-    "estimatedTime": 5,
+    "estimatedTime": 4,
     "difficulty": 5
   },
   {
@@ -4810,7 +4810,7 @@
       "transformation-nominalization-c1"
     ],
     "description": "Academic hedging: tend to, it appears, arguably, to some extent, may well",
-    "estimatedTime": 5,
+    "estimatedTime": 4,
     "difficulty": 5
   },
   {
