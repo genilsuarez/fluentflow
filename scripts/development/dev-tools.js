@@ -22,7 +22,7 @@ function executeCommand(command, description, options = {}) {
   const quiet = options.quiet || process.env.BUILD_QUIET === '1';
   const timeout = options.timeout || 0; // 0 = no timeout
   try {
-    log(`🔄 ${description}...`, colors.cyan);
+    if (!quiet) log(`🔄 ${description}...`, colors.cyan);
 
     const execOptions = {
       cwd: rootDir,
@@ -41,10 +41,8 @@ function executeCommand(command, description, options = {}) {
         const important = lines.filter(l => {
           const trimmed = l.trim();
           if (!trimmed) return false;
-          // Skip lines with success/info indicators anywhere in the line
           if (/[\u2705\u2713\u2714\u2139]/.test(trimmed)) return false;
           if (trimmed.includes('✅') || trimmed.includes('✓') || trimmed.includes('ℹ️')) return false;
-          // Only show actual error/failure lines
           return /\b(error|fail(ed|ure)?|fatal|exception)\b/i.test(trimmed);
         });
         if (important.length > 0) {
@@ -62,11 +60,19 @@ function executeCommand(command, description, options = {}) {
     }
 
     const duration = ((Date.now() - startTime) / 1000).toFixed(1);
-    logSuccess(`${description} completed in ${duration}s`);
+    if (quiet) {
+      log(`  ✓ ${description} (${duration}s)`, colors.green);
+    } else {
+      logSuccess(`${description} completed in ${duration}s`);
+    }
     return true;
   } catch (error) {
     const duration = ((Date.now() - startTime) / 1000).toFixed(1);
-    logError(`${description} failed after ${duration}s`);
+    if (quiet) {
+      log(`  ✗ ${description} (${duration}s)`, colors.red);
+    } else {
+      logError(`${description} failed after ${duration}s`);
+    }
     // In quiet mode, show the captured output on failure
     if (quiet && error.stdout) console.log(error.stdout);
     if (quiet && error.stderr) console.error(error.stderr);
@@ -81,7 +87,7 @@ function executeCommand(command, description, options = {}) {
 function executeParallel(commands) {
   const quiet = process.env.BUILD_QUIET === '1';
   const descs = commands.map(c => c.desc).join(', ');
-  log(`⚡ Running in parallel: ${descs}`, colors.cyan);
+  if (!quiet) log(`⚡ Running in parallel: ${descs}`, colors.cyan);
 
   const startTime = Date.now();
 
@@ -102,18 +108,20 @@ function executeParallel(commands) {
       child.on('close', (code) => {
         const duration = ((Date.now() - taskStart) / 1000).toFixed(1);
         if (code === 0) {
-          logSuccess(`${desc} completed in ${duration}s`);
+          if (quiet) {
+            log(`  ✓ ${desc} (${duration}s)`, colors.green);
+          } else {
+            logSuccess(`${desc} completed in ${duration}s`);
+          }
           resolve({ success: true, desc });
         } else {
-          logError(`${desc} failed after ${duration}s`);
-          if (!quiet) {
-            if (stdout.trim()) console.log(stdout);
-            if (stderr.trim()) console.error(stderr);
+          if (quiet) {
+            log(`  ✗ ${desc} (${duration}s)`, colors.red);
           } else {
-            // In quiet mode, show captured output on failure
-            if (stdout.trim()) console.log(stdout);
-            if (stderr.trim()) console.error(stderr);
+            logError(`${desc} failed after ${duration}s`);
           }
+          if (stdout.trim()) console.log(stdout);
+          if (stderr.trim()) console.error(stderr);
           resolve({ success: false, desc, stdout, stderr });
         }
       });
@@ -123,11 +131,13 @@ function executeParallel(commands) {
   return Promise.all(promises).then(results => {
     const allOk = results.every(r => r.success);
     const duration = ((Date.now() - startTime) / 1000).toFixed(1);
-    if (allOk) {
-      logSuccess(`Parallel group completed in ${duration}s`);
-    } else {
-      const failed = results.filter(r => !r.success).map(r => r.desc);
-      logError(`Parallel group failed after ${duration}s (${failed.join(', ')})`);
+    if (!quiet) {
+      if (allOk) {
+        logSuccess(`Parallel group completed in ${duration}s`);
+      } else {
+        const failed = results.filter(r => !r.success).map(r => r.desc);
+        logError(`Parallel group failed after ${duration}s (${failed.join(', ')})`);
+      }
     }
     return allOk;
   });
@@ -269,13 +279,13 @@ async function runPipeline(pipelineKey) {
     return false;
   }
 
-  logCompactHeader(`${pipeline.name}`);
+  const quiet = process.env.BUILD_QUIET === '1';
+  if (!quiet) logCompactHeader(`${pipeline.name}`);
 
   const startTime = Date.now();
   let allSuccess = true;
 
   for (const entry of pipeline.commands) {
-    // Array = parallel group, object = sequential command
     if (Array.isArray(entry)) {
       const success = await executeParallel(entry);
       if (!success) {
@@ -293,10 +303,12 @@ async function runPipeline(pipelineKey) {
 
   const totalDuration = ((Date.now() - startTime) / 1000).toFixed(1);
 
-  if (allSuccess) {
-    logSuccess(`${pipeline.name} completed successfully in ${totalDuration}s`);
-  } else {
-    logError(`${pipeline.name} failed after ${totalDuration}s`);
+  if (!quiet) {
+    if (allSuccess) {
+      logSuccess(`${pipeline.name} completed successfully in ${totalDuration}s`);
+    } else {
+      logError(`${pipeline.name} failed after ${totalDuration}s`);
+    }
   }
 
   return allSuccess;
@@ -309,12 +321,16 @@ async function runWorkflow(workflowKey) {
     return false;
   }
 
-  logHeader(`${workflow.name} - Execution`);
-  logInfo(`Description: ${workflow.description}`);
+  const quiet = process.env.BUILD_QUIET === '1';
+
+  if (!quiet) {
+    logHeader(`${workflow.name} - Execution`);
+    logInfo(`Description: ${workflow.description}`);
+  }
 
   const startTime = Date.now();
   let allSuccess = true;
-  const warnings = []; // Non-blocking failures reported at the end
+  const warnings = [];
 
   for (const step of workflow.steps) {
     if (step.type === 'pipeline') {
@@ -356,9 +372,9 @@ async function runWorkflow(workflowKey) {
   const totalDuration = ((Date.now() - startTime) / 1000).toFixed(1);
 
   if (allSuccess) {
-    logSuccess(`${workflow.name} completed successfully in ${totalDuration}s`);
+    if (!quiet) logSuccess(`${workflow.name} completed successfully in ${totalDuration}s`);
 
-    // Concise summary for full workflow (bot-friendly)
+    // Concise summary for full workflow
     if (workflowKey === 'full') {
       let commitSha = 'unknown';
       try {
@@ -380,7 +396,7 @@ async function runWorkflow(workflowKey) {
       log('✅ Build exitoso', colors.bright + colors.green);
       log(`  🔗 https://genilsuarez.github.io/fluentflow/`, colors.cyan);
       log(`  📝 Commit: ${commitSha}`, colors.white);
-      log(`  ⏱️ Tiempo: ${totalDuration}s`, colors.white);
+      log(`  ⏱️  ${totalDuration}s`, colors.white);
       if (warnings.length > 0) {
         log(`  ⚠️  Warnings (${warnings.length}):`, colors.yellow);
         warnings.forEach(w => log(`     • ${w}`, colors.yellow));
@@ -388,7 +404,7 @@ async function runWorkflow(workflowKey) {
       console.log('='.repeat(50));
     }
   } else {
-    logError(`${workflow.name} failed after ${totalDuration}s`);
+    if (!quiet) logError(`${workflow.name} failed after ${totalDuration}s`);
 
     if (workflowKey === 'full') {
       console.log('\n' + '='.repeat(50));
@@ -401,7 +417,8 @@ async function runWorkflow(workflowKey) {
 }
 
 async function runAllPipelines() {
-  logHeader('🚀 All Pipelines - Sequential Execution');
+  const quiet = process.env.BUILD_QUIET === '1';
+  if (!quiet) logHeader('🚀 All Pipelines - Sequential Execution');
 
   const pipelineOrder = ['quality', 'security', 'build'];
   let allSuccess = true;
@@ -566,7 +583,7 @@ async function main() {
 
   // Configure for CI environment
   if (isCIMode) {
-    logInfo('🤖 Running in CI mode');
+    if (!isQuiet) logInfo('🤖 Running in CI mode');
     // Disable interactive features in CI
     process.env.CI_MODE = 'true';
   }
