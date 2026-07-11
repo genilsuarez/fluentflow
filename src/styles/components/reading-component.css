@@ -1444,13 +1444,17 @@
 
 /* === MOBILE SMALL (< 768px) - Responsive dimensions === */
 @media (max-width: 767px) {
-  /* Mobile: natural height but minimum matches the all-modules grid height */
+  /* Mobile: fill viewport so nav bar stays at bottom */
   .reading-component__container {
     max-width: 100%;
     height: auto;
-    min-height: clamp(405px, 70vh, 600px);
+    min-height: 100dvh;
+    max-height: none;
     margin: 0;
     padding: 0.25rem;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
   }
 
   /* Mobile: Compact padding */
@@ -1463,9 +1467,12 @@
     -webkit-overflow-scrolling: touch;
   }
 
-  /* Push game controls to bottom of container */
+  /* Push game controls to bottom — sticky footer pattern */
   .reading-component__container > .game-controls {
     margin-top: auto;
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
   }
 
   /* Mobile: Single column vocabulary */

@@ -383,6 +383,7 @@
   left: 0;
   top: 0;
   height: 100vh;
+  height: 100dvh;
   width: 280px;
   z-index: 50;
   background-color: var(--menu-bg);
@@ -503,6 +504,14 @@
 .header-side-menu__spacer {
   flex: 1;
   min-height: 12px;
+}
+
+/* On short viewports, collapse spacer so bottom items stay visible */
+@media (max-height: 500px) {
+  .header-side-menu__spacer {
+    flex: 0;
+    min-height: 24px;
+  }
 }
 
 .header-side-menu__item {
