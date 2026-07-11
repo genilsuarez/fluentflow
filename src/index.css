@@ -21,6 +21,11 @@ body {
   overflow-x: hidden;
   width: 100%;
   background-color: var(--lp-bg);
+  background-image: radial-gradient(
+    640px 380px at 50% -8%,
+    color-mix(in srgb, var(--lp-accent) 9%, transparent) 0%,
+    transparent 60%
+  );
   font-family: var(--lp-font-body);
   margin: 0;
   padding: 0;
@@ -31,6 +36,14 @@ body {
   transition:
     background-color 0.3s,
     color 0.3s;
+}
+
+html.dark body {
+  background-image: radial-gradient(
+    680px 420px at 50% -10%,
+    color-mix(in srgb, var(--lp-accent) 15%, transparent) 0%,
+    transparent 62%
+  );
 }
 
 /* === PAPER GRAIN TEXTURE === */
