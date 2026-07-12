@@ -17,7 +17,7 @@ const MAX_VERTICAL = 80;
  */
 export function useSwipe<T extends HTMLElement>(
   callbacks: SwipeCallbacks,
-  externalRef?: RefObject<T | null>,
+  externalRef?: RefObject<T | null>
 ) {
   const internalRef = useRef<T | null>(null);
   const ref = externalRef || internalRef;
