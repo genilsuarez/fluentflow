@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { ChevronLeft, ChevronRight, RotateCcw, Home } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
+import { useSwipe } from '../../hooks/useSwipe';
 import { conditionalShuffle } from '../../utils/randomUtils';
 import { ContentAdapter } from '../../utils/contentAdapter';
 import ContentRenderer from '../ui/ContentRenderer';
@@ -110,6 +111,9 @@ const FlashcardComponent: React.FC<FlashcardComponentProps> = ({ module }) => {
     return () => window.removeEventListener('keydown', handleKeyPress);
   }, [processedFlashcards.length, handleRevealOrNext, handlePrev]);
 
+  // Swipe navigation (mobile)
+  const swipeRef = useSwipe<HTMLDivElement>({ onNext: handleRevealOrNext, onPrev: handlePrev });
+
   // Early return if no data
   if (!processedFlashcards.length) {
     return (
@@ -139,7 +143,7 @@ const FlashcardComponent: React.FC<FlashcardComponentProps> = ({ module }) => {
   }
 
   return (
-    <div className="flashcard-component__container">
+    <div ref={swipeRef} className="flashcard-component__container">
       {/* Unified progress header */}
       <LearningProgressHeader
         title={module.name}

@@ -6,6 +6,7 @@ import { useMenuNavigation } from '../../hooks/useMenuNavigation';
 import { useProgressStore } from '../../stores/progressStore';
 import { useTranslation } from '../../utils/i18n';
 import { useLearningCleanup } from '../../hooks/useLearningCleanup';
+import { useSwipe } from '../../hooks/useSwipe';
 import { ContentAdapter } from '../../utils/contentAdapter';
 import ContentRenderer from '../ui/ContentRenderer';
 import LearningProgressHeader from '../ui/LearningProgressHeader';
@@ -168,6 +169,9 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
     window.addEventListener('keydown', handleKeyPress);
     return () => window.removeEventListener('keydown', handleKeyPress);
   }, [currentSectionIndex, readingSections.length, handleNext, handlePrev, returnToMenu]);
+
+  // Swipe navigation (mobile)
+  useSwipe({ onNext: handleNext, onPrev: handlePrev }, containerRef);
 
   // Early return if no data
   if (!readingData || !readingSections.length) {

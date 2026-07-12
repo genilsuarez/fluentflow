@@ -355,14 +355,14 @@ export const Header: React.FC<HeaderProps> = () => {
 
               <a
                 href={
-                  location.hostname === 'localhost' || location.hostname === '127.0.0.1'
-                    ? 'http://localhost:3000/'
+                  location.hostname === 'localhost' || location.hostname === '127.0.0.1' || location.hostname.startsWith('192.168.')
+                    ? `http://${location.hostname}:3000/`
                     : 'https://genilsuarez.github.io/deskflow/'
                 }
                 className="header-side-menu__item header-side-menu__item--portal"
                 aria-label={t('navigation.backToPortal')}
                 onClick={e => {
-                  if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
+                  if (location.hostname === 'localhost' || location.hostname === '127.0.0.1' || location.hostname.startsWith('192.168.')) {
                     const theme = document.documentElement.classList.contains('dark')
                       ? 'dark'
                       : 'light';
