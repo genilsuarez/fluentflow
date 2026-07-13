@@ -35,19 +35,40 @@
         (function() {
             try {
                 var theme = 'light';
-                var stored = localStorage.getItem('settings-storage');
-                if (stored) {
-                    var parsed = JSON.parse(stored);
-                    if (parsed.state && parsed.state.theme) theme = parsed.state.theme;
+
+                // 1. URL query param (cross-app theme propagation in local dev)
+                var urlTheme = new URLSearchParams(window.location.search).get('theme');
+                if (urlTheme === 'dark' || urlTheme === 'light') {
+                    theme = urlTheme;
+                    localStorage.setItem('lp-theme', urlTheme);
+                } else {
+                    // 2. Shared cross-app key
+                    var sharedTheme = localStorage.getItem('lp-theme');
+                    if (sharedTheme === 'dark' || sharedTheme === 'light') {
+                        theme = sharedTheme;
+                    } else {
+                        // 3. Zustand persisted settings (fallback)
+                        var stored = localStorage.getItem('settings-storage');
+                        if (stored) {
+                            var parsed = JSON.parse(stored);
+                            if (parsed.state && parsed.state.theme) theme = parsed.state.theme;
+                        }
+                    }
                 }
+
                 document.documentElement.classList.add(theme);
                 document.documentElement.classList.remove(theme === 'dark' ? 'light' : 'dark');
+                document.documentElement.style.colorScheme = theme;
 
                 var meta = document.getElementById('theme-color-meta');
                 if (meta) meta.setAttribute('content', theme === 'dark' ? '#1f2937' : '#ffffff');
 
+                var colorSchemeMeta = document.querySelector('meta[name="color-scheme"]');
+                if (colorSchemeMeta) colorSchemeMeta.setAttribute('content', theme);
+
                 // Apply dark theme to fallback if needed
                 if (theme === 'dark') {
+                    document.documentElement.style.backgroundColor = '#1f2937';
                     var fb = document.getElementById('app-fallback');
                     if (fb) {
                         fb.style.background = '#1f2937';
