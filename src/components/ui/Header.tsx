@@ -1,6 +1,6 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import { createPortal } from 'react-dom';
-import { User, WifiOff, X, Wrench, PanelLeft, PanelTop } from 'lucide-react';
+import { User, WifiOff, X, Wrench, PanelLeft } from 'lucide-react';
 import '../../styles/components/header.css';
 import { useAppStore } from '../../stores/appStore';
 import { useUserStore } from '../../stores/userStore';
@@ -290,7 +290,7 @@ export const Header: React.FC<HeaderProps> = () => {
               {navigationMode === 'floating' ? (
                 <PanelLeft className="header-side-menu__icon" aria-hidden="true" />
               ) : (
-                <PanelTop className="header-side-menu__icon" aria-hidden="true" />
+                <span className="header-side-menu__icon" aria-hidden="true">◫</span>
               )}
               <span className="header-side-menu__text">
                 {navigationMode === 'floating'
@@ -356,6 +356,19 @@ export const Header: React.FC<HeaderProps> = () => {
                 </span>
                 <span className="header-side-menu__text">About LearnFlow</span>
               </button>
+              <button
+                type="button"
+                className="header-side-menu__item header-side-menu__item--theme"
+                aria-label={theme === 'dark' ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'}
+                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+              >
+                <span className="header-side-menu__icon" aria-hidden="true">
+                  {theme === 'dark' ? '☀️' : '🌙'}
+                </span>
+                <span className="header-side-menu__text">
+                  {theme === 'dark' ? 'Modo claro' : 'Modo oscuro'}
+                </span>
+              </button>
               <a
                 href={portalHref()}
                 className="header-side-menu__item header-side-menu__item--portal"
@@ -376,19 +389,6 @@ export const Header: React.FC<HeaderProps> = () => {
                 </span>
                 <span className="header-side-menu__text">Portal</span>
               </a>
-              <button
-                type="button"
-                className="header-side-menu__item header-side-menu__item--theme"
-                aria-label={theme === 'dark' ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'}
-                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-              >
-                <span className="header-side-menu__icon" aria-hidden="true">
-                  {theme === 'dark' ? '☀️' : '🌙'}
-                </span>
-                <span className="header-side-menu__text">
-                  {theme === 'dark' ? 'Modo claro' : 'Modo oscuro'}
-                </span>
-              </button>
             </div>
           </div>
         </nav>

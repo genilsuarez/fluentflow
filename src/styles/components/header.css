@@ -906,6 +906,14 @@ body {
   margin-bottom: 8px;
 }
 
+.header-side-menu__item--navigation-mode .header-side-menu__icon {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  color: var(--lp-accent);
+  font-size: 1rem;
+}
+
 .header-side-menu__item--theme {
   color: var(--lp-ink);
 }
