@@ -948,7 +948,7 @@ html.dark .compact-settings__tab--active {
 
 .compact-settings__offline-progress-bar {
   flex: 1;
-  height: 0.375rem;
+  height: var(--lp-progress-height);
   background-color: var(--theme-bg-soft, #e8e0d4);
   border-radius: var(--lp-radius-full);
   overflow: hidden;

@@ -503,7 +503,7 @@ html.dark .module-card--locked .module-card__title {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 3px;
+  height: var(--lp-progress-height);
   background: rgba(0, 0, 0, 0.2);
   border-radius: 0 0 var(--card-border-radius) var(--card-border-radius);
   overflow: hidden;

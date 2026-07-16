@@ -117,6 +117,10 @@
   --lp-space-lg: 20px;
   --lp-space-xl: 28px;
   --lp-space-2xl: 40px;
+
+  /* ─── Progress/score bars — homologado entre DeskFlow/HubFlow/FluentFlow/LyricFlow ─── */
+  --lp-progress-height: 4px;
+  --lp-progress-height-compact: 3px;
 }
 
 /* === LEARN PLATFORM TOKENS — DARK === */
