@@ -416,17 +416,18 @@
 }
 
 .progression-dashboard__module {
-  background: linear-gradient(135deg, #ffffff 0%, #f5f6f8 100%);
-  border: 1px solid #c5cad3;
-  content-visibility: auto;
-  contain-intrinsic-size: auto 70px;
+  background: var(--lp-surface, #ffffff);
+  border: 1px solid var(--lp-border, #c5cad3);
   border-radius: var(--radius-sm, 0.25rem);
   padding: 0.1875rem;
   margin: 0;
   display: flex;
   align-items: center;
   gap: 0.1875rem;
-  transition: all 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   position: relative;
   height: 56px;
   min-height: 56px;
@@ -435,6 +436,18 @@
   box-shadow:
     0 1px 2px rgba(0, 0, 0, 0.05),
     inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+/* Colored spine — same accent as the "All Modules" cards, by exercise type */
+.progression-dashboard__module::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--module-accent, var(--lp-accent));
+  border-radius: 3px 0 0 3px;
 }
 
 .progression-dashboard__module--unlocked {
@@ -486,36 +499,32 @@
 }
 
 .progression-dashboard__module-icon {
-  width: 0.875rem;
-  height: 0.875rem;
-  border-radius: 50%;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: var(--lp-radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  background: linear-gradient(135deg, #f5f6f8 0%, #eceef1 100%);
-  border: 1px solid #d0d4db;
-  transition: all 0.2s ease;
+  background: color-mix(in srgb, var(--module-accent, var(--lp-accent)) 14%, transparent);
+  transition: background 0.2s ease;
 }
 
 .progression-dashboard__icon {
-  width: 0.4375rem;
-  height: 0.4375rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 .progression-dashboard__icon--completed {
   color: #10b981;
-  background: rgba(16, 185, 129, 0.1);
 }
 
 .progression-dashboard__icon--locked {
   color: var(--lp-muted);
-  background: rgba(156, 163, 175, 0.1);
 }
 
 .progression-dashboard__icon--available {
   color: var(--theme-accent-primary, #3b82f6);
-  background: rgba(59, 130, 246, 0.1);
 }
 
 .progression-dashboard__module-content {
@@ -740,11 +749,6 @@ html.dark .progression-dashboard__module {
   background: var(--theme-bg-elevated, #211d18);
   border-color: var(--theme-border-soft, #5e5041);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-html.dark .progression-dashboard__module-icon {
-  background: var(--theme-bg-soft, #2c2418);
-  border-color: var(--theme-border-medium, #5e5041);
 }
 
 html.dark .progression-dashboard__unit-expand {
@@ -1018,11 +1022,6 @@ html.dark .progression-dashboard__module--locked .progression-dashboard__level-b
 .progression-dashboard--dark-theme .progression-dashboard__unit-next-indicator {
   background: rgba(96, 165, 250, 0.25);
   color: #93c5fd;
-}
-
-.progression-dashboard--dark-theme .progression-dashboard__module-icon {
-  background-color: var(--theme-bg-soft, #2c2418);
-  border-color: var(--theme-border-medium, #5e5041);
 }
 
 /* Hero */

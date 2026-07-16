@@ -449,7 +449,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                         return (
                           <div
                             key={module.id}
-                            className={`progression-dashboard__module progression-dashboard__module--${status} ${isNext ? 'progression-dashboard__module--next' : ''}`}
+                            className={`progression-dashboard__module progression-dashboard__module--${status} module-card--${module.learningMode} ${isNext ? 'progression-dashboard__module--next' : ''}`}
                             onClick={
                               status !== 'locked' ? () => handleModuleClick(module) : undefined
                             }
