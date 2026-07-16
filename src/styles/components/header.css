@@ -950,6 +950,11 @@ body {
   color: var(--lp-ink);
 }
 
+/* Hide close button in sidebar mode regardless of viewport */
+html[data-navigation-mode='sidebar'] .header-side-menu__close {
+  display: none;
+}
+
 @media (min-width: 1024px) {
   html[data-navigation-mode='sidebar'] body {
     padding-left: 232px;
