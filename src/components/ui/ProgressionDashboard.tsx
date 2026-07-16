@@ -397,7 +397,6 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                           <ChevronRight className="progression-dashboard__expand-icon" />
                         )}
                       </div>
-                      <h3 className="progression-dashboard__unit-title">{getUnitTitle(unit)}</h3>
                       {modules[0] && (
                         <span
                           className="progression-dashboard__level-badge"
@@ -416,6 +415,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                             : modules[0].level.toUpperCase()}
                         </span>
                       )}
+                      <h3 className="progression-dashboard__unit-title">{getUnitTitle(unit)}</h3>
                       {hasNextModule && !isExpanded && (
                         <div className="progression-dashboard__unit-next-indicator">
                           <span className="progression-dashboard__unit-next-label">
