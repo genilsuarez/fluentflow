@@ -290,7 +290,9 @@ export const Header: React.FC<HeaderProps> = () => {
               {navigationMode === 'floating' ? (
                 <PanelLeft className="header-side-menu__icon" aria-hidden="true" />
               ) : (
-                <span className="header-side-menu__icon" aria-hidden="true">◫</span>
+                <span className="header-side-menu__icon" aria-hidden="true">
+                  ◫
+                </span>
               )}
               <span className="header-side-menu__text">
                 {navigationMode === 'floating'
