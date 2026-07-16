@@ -467,12 +467,12 @@
   background: linear-gradient(135deg, #fafbff 0%, #f0f3fa 100%);
 }
 
-.progression-dashboard__module--locked {
+.progression-dashboard__module.progression-dashboard__module--locked {
   cursor: not-allowed;
-  background: linear-gradient(135deg, #f0f1f3 0%, #e8eaed 100%);
-  border: 1px solid #d5d8de;
-  filter: grayscale(0.3);
-  opacity: 0.65;
+  background: var(--lp-surface-sunken);
+  border-color: var(--lp-border-subtle);
+  /* Neutralize the type accent instead of filtering/fading the whole card */
+  --module-accent: var(--lp-muted);
   pointer-events: none;
   box-shadow: none;
 }
@@ -772,13 +772,6 @@ html.dark .progression-dashboard__module--next {
   box-shadow: 0 2px 8px rgba(96, 165, 250, 0.1);
 }
 
-html.dark .progression-dashboard__module--locked {
-  background: #1a2332;
-  border: 1px solid #2d3a4a;
-  box-shadow: none;
-  opacity: 0.6;
-}
-
 /* Dark mode: unlocked modules - visible and interactive */
 html.dark .progression-dashboard__module--unlocked {
   background-color: #1e293b;
@@ -1062,9 +1055,8 @@ html.dark .progression-dashboard__module--locked .progression-dashboard__level-b
 
 /* Locked modules */
 .progression-dashboard--dark-theme .progression-dashboard__module--locked {
-  background-color: #1a2332;
-  border: 1px solid #2d3a4a;
-  opacity: 0.8;
+  background-color: var(--lp-surface-sunken);
+  border-color: var(--lp-border-subtle);
 }
 
 .progression-dashboard--dark-theme
@@ -1086,13 +1078,6 @@ html.dark .progression-dashboard__module--locked .progression-dashboard__level-b
   .progression-dashboard__module--locked
   .progression-dashboard__icon--locked {
   color: var(--lp-ink-soft);
-}
-
-.progression-dashboard--dark-theme
-  .progression-dashboard__module--locked
-  .progression-dashboard__module-icon {
-  background-color: var(--lp-bg-paper);
-  border-color: var(--lp-ink);
 }
 
 .progression-dashboard--dark-theme
