@@ -1,6 +1,6 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import { createPortal } from 'react-dom';
-import { User, WifiOff, X, Wrench } from 'lucide-react';
+import { User, WifiOff, Wrench } from 'lucide-react';
 import '../../styles/components/header.css';
 import { useAppStore } from '../../stores/appStore';
 import { useUserStore } from '../../stores/userStore';
@@ -261,41 +261,32 @@ export const Header: React.FC<HeaderProps> = () => {
                   <p className="header-side-menu__subtitle">LearnFlow</p>
                 </div>
               </div>
-              <div className="header-side-menu__header-actions">
-                <button
-                  type="button"
-                  onClick={handleNavigationModeToggle}
-                  className="header-side-menu__nav-mode-toggle"
-                  aria-pressed={navigationMode === 'floating'}
-                  aria-label={
-                    navigationMode === 'floating'
-                      ? language === 'es'
-                        ? 'Usar barra lateral fija'
-                        : 'Use fixed sidebar'
-                      : language === 'es'
-                        ? 'Usar menú flotante'
-                        : 'Use floating menu'
-                  }
-                  title={
-                    navigationMode === 'floating'
-                      ? language === 'es'
-                        ? 'Muestra la barra lateral fija'
-                        : 'Shows the fixed sidebar'
-                      : language === 'es'
-                        ? 'Oculta la barra lateral y usa un menú flotante'
-                        : 'Hides the sidebar and uses a floating menu'
-                  }
-                >
-                  <span aria-hidden="true">{navigationMode === 'floating' ? '▣' : '◫'}</span>
-                </button>
-                <button
-                  className="header-side-menu__close"
-                  onClick={() => setShowSideMenu(false)}
-                  aria-label={t('navigation.closeMenu', 'Close menu')}
-                >
-                  <X aria-hidden="true" />
-                </button>
-              </div>
+              <button
+                type="button"
+                onClick={handleNavigationModeToggle}
+                className="header-side-menu__nav-mode-toggle"
+                aria-pressed={navigationMode === 'floating'}
+                aria-label={
+                  navigationMode === 'floating'
+                    ? language === 'es'
+                      ? 'Usar barra lateral fija'
+                      : 'Use fixed sidebar'
+                    : language === 'es'
+                      ? 'Usar menú flotante'
+                      : 'Use floating menu'
+                }
+                title={
+                  navigationMode === 'floating'
+                    ? language === 'es'
+                      ? 'Muestra la barra lateral fija'
+                      : 'Shows the fixed sidebar'
+                    : language === 'es'
+                      ? 'Oculta la barra lateral y usa un menú flotante'
+                      : 'Hides the sidebar and uses a floating menu'
+                }
+              >
+                <span aria-hidden="true">{navigationMode === 'floating' ? '▣' : '◫'}</span>
+              </button>
             </div>
           </div>
           {/* Flat menu — no section headers */}
