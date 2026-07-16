@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { Home, RotateCcw } from 'lucide-react';
+import { RotateCcw } from 'lucide-react';
 import { useAppStore } from '../../stores/appStore';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useModuleData } from '../../hooks/useModuleData';
@@ -80,7 +80,7 @@ const ModuleError: React.FC<{ error: Error; moduleId: string; onRetry: () => voi
           className="game-controls__home-btn"
           title={t('learning.returnToMainMenu')}
         >
-          <Home className="game-controls__home-icon" />
+          <span className="game-controls__home-icon" aria-hidden="true">🏠</span>
         </button>
 
         <button

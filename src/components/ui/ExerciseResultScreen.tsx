@@ -1,5 +1,5 @@
 import React from 'react';
-import { RotateCcw, ArrowRight, Home, Trophy, Target, AlertTriangle } from 'lucide-react';
+import { RotateCcw, ArrowRight, Trophy, Target, AlertTriangle } from 'lucide-react';
 import '../../styles/components/exercise-result-screen.css';
 
 export interface ExerciseResult {
@@ -90,7 +90,7 @@ const ExerciseResultScreen: React.FC<ExerciseResultScreenProps> = ({
                 onClick={onContinue}
                 className="exercise-result__btn exercise-result__btn--secondary"
               >
-                <Home className="exercise-result__btn-icon" />
+                <span className="exercise-result__btn-icon" aria-hidden="true">🏠</span>
                 <span>{t('exerciseResult.backToMenu')}</span>
               </button>
             </>

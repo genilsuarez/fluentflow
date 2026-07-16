@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { Check, X, ArrowRight, Home } from 'lucide-react';
+import { Check, X, ArrowRight } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { conditionalShuffle } from '../../utils/randomUtils';
 import { isTenseError, isParticleError } from '../../utils/answerUtils';
@@ -335,7 +335,7 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
           className="game-controls__home-btn"
           title={t('learning.returnToMainMenu')}
         >
-          <Home className="game-controls__home-icon" />
+          <span className="game-controls__home-icon" aria-hidden="true">🏠</span>
         </button>
 
         {!showResult ? (

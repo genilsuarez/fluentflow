@@ -7,6 +7,7 @@ import { useMenuNavigation } from './useMenuNavigation';
 import { useTranslation } from '../utils/i18n';
 import { useToast } from './useToast';
 import { useLearningCleanup } from './useLearningCleanup';
+import { createLearnFlowId } from '../services/learnFlowIntegration';
 import type { ExerciseResult } from '../components/ui/ExerciseResultScreen';
 import type { LearningMode } from '../types';
 
@@ -31,6 +32,7 @@ export const useLearningSession = ({
   learningMode,
 }: UseLearningSessionOptions) => {
   const [startTime] = useState(Date.now());
+  const [runId] = useState(() => createLearnFlowId('run'));
   const [exerciseResult, setExerciseResult] = useState<ExerciseResult | null>(null);
 
   const updateSessionScore = useAppStore(state => state.updateSessionScore);
@@ -71,6 +73,7 @@ export const useLearningSession = ({
       const finalScore = score.total > 0 ? Math.round((score.correct / score.total) * 100) : 0;
 
       addProgressEntry({
+        runId,
         score: finalScore,
         totalQuestions: score.total,
         correctAnswers: score.correct,
@@ -90,7 +93,7 @@ export const useLearningSession = ({
         moduleName,
       });
     },
-    [startTime, moduleId, moduleName, learningMode, addProgressEntry, updateUserScore]
+    [startTime, runId, moduleId, moduleName, learningMode, addProgressEntry, updateUserScore]
   );
 
   const handleResultContinue = useCallback(() => {

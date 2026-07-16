@@ -10,6 +10,19 @@
   overflow-x: hidden;
 }
 
+/* Menu/landing view: lock to viewport, no scroll (all breakpoints) */
+.layout-container[data-view='menu'] {
+  height: 100vh;
+  height: 100dvh;
+  max-height: 100dvh;
+  overflow: hidden;
+}
+
+.layout-container[data-view='menu'] .layout-main {
+  overflow: hidden;
+  min-height: 0;
+}
+
 /* Main content area */
 .layout-main {
   flex: 1;
@@ -61,25 +74,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 16px;
+  padding: 12px clamp(16px, 3vw, 34px);
   margin-top: auto;
-  border-top: 1px solid var(--lp-border);
-  padding-left: 20px;
-  padding-right: 20px;
-  line-height: 1;
+  border-top: 1.5px solid var(--lp-border);
 }
 
 .app-footer__sig {
   font-family: var(--lp-font-display);
   font-style: italic;
-  font-size: 0.78rem;
+  font-size: 13px;
   line-height: 1;
   color: var(--lp-ink-soft, var(--lp-muted));
 }
 
 .app-footer__meta {
   font-family: var(--lp-font-mono);
-  font-size: 0.52rem;
+  font-size: 9px;
   font-weight: 700;
   line-height: 1;
   color: var(--lp-muted);
@@ -90,11 +100,4 @@
 /* Hide footer in learning views (only show on menu/dashboard) */
 .layout-container:not([data-view='menu']) .app-footer {
   display: none;
-}
-
-@media (max-width: 639px) {
-  .app-footer {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
 }

@@ -1,12 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { RotateCcw, Check, Info, X, Home } from 'lucide-react';
+import { RotateCcw, Check, Info, X } from 'lucide-react';
 import { useAppStore } from '../../stores/appStore';
 import { useUserStore } from '../../stores/userStore';
+import { useProgressStore } from '../../stores/progressStore';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useMenuNavigation } from '../../hooks/useMenuNavigation';
 import { useToast } from '../../hooks/useToast';
 import { conditionalShuffle } from '../../utils/randomUtils';
 import { useLearningCleanup } from '../../hooks/useLearningCleanup';
+import { createLearnFlowId } from '../../services/learnFlowIntegration';
 import { useTranslation } from '../../utils/i18n';
 import { ContentAdapter } from '../../utils/contentAdapter';
 import ContentRenderer from '../ui/ContentRenderer';
@@ -36,6 +38,7 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
   } | null>(null);
   const [showResult, setShowResult] = useState(false);
   const [startTime] = useState(Date.now());
+  const [runId] = useState(() => createLearnFlowId('run'));
   const [showExplanation, setShowExplanation] = useState(false);
   const [selectedTerm, setSelectedTerm] = useState<any>(null);
   const [exerciseResultData, setExerciseResultData] = useState<ExerciseResult | null>(null);
@@ -44,6 +47,7 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
 
   const updateSessionScore = useAppStore(state => state.updateSessionScore);
   const { updateUserScore } = useUserStore();
+  const { addProgressEntry } = useProgressStore();
   const { language, randomizeItems } = useSettingsStore();
   const { returnToMenu } = useMenuNavigation();
   const { showCorrectAnswer } = useToast();
@@ -229,6 +233,15 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
     const finalScore = Math.round((correctCount / pairs.length) * 100);
     const accuracy = (correctCount / pairs.length) * 100;
 
+    addProgressEntry({
+      runId,
+      score: finalScore,
+      totalQuestions: pairs.length,
+      correctAnswers: correctCount,
+      moduleId: module.id,
+      learningMode: 'matching',
+      timeSpent,
+    });
     updateUserScore(module.id, finalScore, timeSpent);
 
     setExerciseResultData({
@@ -456,7 +469,7 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
           className="game-controls__home-btn"
           title={t('learning.returnToMainMenu')}
         >
-          <Home className="game-controls__home-icon" />
+          <span className="game-controls__home-icon" aria-hidden="true">🏠</span>
         </button>
 
         {!showResult ? (

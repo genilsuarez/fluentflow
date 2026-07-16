@@ -3,9 +3,9 @@
 /* Only header-specific layout tokens remain here */
 :root {
   /* Height tokens - Compact & Uniform */
-  --header-height-mobile: 46px;
-  --header-height-tablet: 48px;
-  --header-height-desktop: 50px;
+  --header-height-mobile: 64px;
+  --header-height-tablet: 72px;
+  --header-height-desktop: 85px;
 
   /* Spacing tokens - Consistent system */
   --header-spacing-xs: 6px;
@@ -24,8 +24,7 @@
 /* === HEADER BASE - MOBILE FIRST === */
 .header-redesigned {
   background-color: var(--header-bg);
-  border-bottom: 1px solid var(--header-border);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-bottom: 1.5px solid var(--lp-border, var(--header-border));
   height: var(--header-height-mobile);
   min-height: var(--header-height-mobile);
   transition: all 0.2s ease-in-out;
@@ -37,7 +36,7 @@
 
 /* Dark mode enhancements */
 .dark .header-redesigned {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  /* border only, no box-shadow — consistent with other LP apps */
 }
 
 /* === GRID SYSTEM - SIMPLIFIED 3 BREAKPOINTS === */
@@ -145,6 +144,31 @@
   position: relative;
 }
 
+/* Menu button as floating launcher (no --primary) — matches LyricFlow .lp-icon-btn */
+.header-redesigned__menu-btn:not(.header-redesigned__menu-btn--primary) {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1.5px solid var(--lp-border, var(--header-border));
+  background: var(--lp-surface, var(--header-bg));
+  color: var(--lp-ink-soft, var(--header-text-secondary));
+  font-size: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.header-redesigned__menu-btn:not(.header-redesigned__menu-btn--primary):hover {
+  border-color: var(--lp-accent, #6366f1);
+  transform: scale(1.06);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.header-redesigned__menu-btn:not(.header-redesigned__menu-btn--primary):active {
+  transform: scale(0.97);
+}
+
 /* Primary button variant */
 .header-redesigned__menu-btn--primary,
 .header-redesigned__user-btn--primary,
@@ -202,7 +226,13 @@
 }
 
 /* === ICONS - RESPONSIVE SIZES === */
-.header-redesigned__menu-icon,
+.header-redesigned__menu-icon {
+  flex-shrink: 0;
+  color: currentColor;
+  font-size: inherit;
+  line-height: 1;
+}
+
 .header-redesigned__user-icon {
   width: var(--icon-size-mobile);
   height: var(--icon-size-mobile);
@@ -212,7 +242,6 @@
 }
 
 @media (min-width: 1024px) {
-  .header-redesigned__menu-icon,
   .header-redesigned__user-icon {
     width: var(--icon-size-desktop);
     height: var(--icon-size-desktop);
@@ -249,6 +278,13 @@
   line-height: 1;
 }
 
+.header-redesigned__platform {
+  color: var(--header-text-secondary);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
 /* Hide title on mobile */
 @media (max-width: 767px) {
   .header-redesigned__title {
@@ -279,8 +315,8 @@
   .header-redesigned__menu-btn,
   .header-redesigned__user-btn,
   .header-redesigned__login-btn {
-    min-width: 40px;
-    min-height: 40px;
+    min-width: 44px;
+    min-height: 44px;
     padding: var(--header-spacing-xs);
   }
 }
@@ -384,36 +420,37 @@
   top: 0;
   height: 100vh;
   height: 100dvh;
-  width: 280px;
+  width: 232px;
   z-index: 50;
-  background-color: var(--menu-bg);
-  border-right: 1px solid var(--menu-border);
-  box-shadow: 4px 0 25px rgba(0, 0, 0, 0.15);
+  background-color: var(--lp-bg-paper, var(--menu-bg));
+  border-right: 1.5px solid var(--lp-border, var(--menu-border));
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  backdrop-filter: blur(8px);
-  border-radius: 0 16px 16px 0;
   display: flex;
   flex-direction: column;
+  padding: 22px 14px 16px;
+  font-family: 'Manrope', system-ui, sans-serif;
 }
 
 /* Mobile: drawer takes most of the screen width */
 @media (max-width: 767px) {
   .header-side-menu {
-    width: min(85vw, 320px);
+    width: min(232px, 86vw);
   }
 }
 
 .header-side-menu__header {
-  padding: 16px 18px;
-  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #a78bfa 100%);
-  border-radius: 0 16px 0 0;
+  padding: 6px 8px 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--lp-border);
+  border-radius: 0;
   flex-shrink: 0;
 }
 
 .header-side-menu__header-row {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .header-side-menu__identity {
@@ -423,35 +460,29 @@
   background: none;
   border: none;
   padding: 0;
-  cursor: pointer;
   text-align: left;
-  border-radius: 8px;
-  transition: opacity 0.15s ease;
-  color: #fff;
-}
-
-.header-side-menu__identity:hover {
-  opacity: 0.85;
+  color: var(--lp-ink);
 }
 
 .header-side-menu__avatar {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--lp-accent);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-size: 1.05rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--lp-ink-inverse);
   flex-shrink: 0;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 14px color-mix(in srgb, var(--lp-accent) 22%, transparent);
 }
 
 .header-side-menu__close {
-  background: rgba(255, 255, 255, 0.15);
-  border: none;
+  background: var(--lp-surface);
+  border: 1px solid var(--lp-border);
   border-radius: 50%;
   width: 32px;
   height: 32px;
@@ -459,14 +490,15 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--lp-muted);
   transition: all 0.2s ease;
   flex-shrink: 0;
 }
 
 .header-side-menu__close:hover {
-  background: rgba(255, 255, 255, 0.25);
-  color: #fff;
+  background: var(--lp-surface);
+  border-color: var(--lp-accent);
+  color: var(--lp-ink);
 }
 
 .header-side-menu__close svg {
@@ -475,22 +507,25 @@
 }
 
 .header-side-menu__title {
+  font-family: var(--lp-font-display, inherit);
   font-size: 18px;
-  font-weight: 700;
-  color: #fff;
-  letter-spacing: -0.025em;
-  margin: 0 0 2px 0;
+  font-weight: 500;
+  color: var(--lp-ink);
+  margin: 0;
+  line-height: 1;
 }
 
 .header-side-menu__subtitle {
-  font-size: 12px;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.7);
-  margin: 0;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--lp-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 2px 0 0;
 }
 
 .header-side-menu__content {
-  padding: 12px;
+  padding: 14px 0 0;
   flex: 1;
   overflow-y: auto;
   display: flex;
@@ -504,6 +539,18 @@
 .header-side-menu__spacer {
   flex: 1;
   min-height: 12px;
+}
+
+.header-side-menu__footer {
+  display: grid;
+  gap: 2px;
+  padding: 12px 0 0;
+  border-top: 1px solid var(--lp-border);
+  font-family: 'Manrope', system-ui, sans-serif;
+}
+
+.header-side-menu__footer .header-side-menu__icon {
+  color: var(--lp-accent);
 }
 
 /* On short viewports, collapse spacer so bottom items stay visible */
@@ -523,82 +570,58 @@
   align-items: center;
   gap: 10px;
   transition: all 0.15s ease;
-  color: var(--header-text-secondary);
+  color: var(--lp-ink);
   background-color: transparent;
   border: none;
   cursor: pointer;
+  font-family: 'Manrope', system-ui, sans-serif;
   font-weight: 500;
-  min-height: 40px;
+  font-size: 0.82rem;
+  min-height: 44px;
 }
 
 .header-side-menu__item:hover {
-  background-color: var(--menu-item-hover);
-  color: var(--header-text-primary);
+  background-color: var(--lp-surface);
+  color: var(--lp-ink);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .header-side-menu__item:active {
-  background-color: var(--menu-item-active);
   transform: scale(0.98);
 }
 
 .header-side-menu__item:focus-visible {
-  outline: 2px solid var(--header-focus-ring);
+  outline: 2px solid var(--lp-accent);
   outline-offset: 2px;
 }
 
-.header-side-menu__item--logout {
-  border-top: 1px solid var(--theme-border-soft);
-  margin-top: 8px;
-  padding-top: 12px;
-  color: #ef4444;
-}
-
-.header-side-menu__item--logout:hover {
-  background-color: rgba(239, 68, 68, 0.1);
-  color: #ef4444;
+.header-side-menu__item--active {
+  background: var(--lp-accent-soft);
+  color: var(--lp-accent-dark);
+  font-weight: 700;
 }
 
 .header-side-menu__item--portal {
-  border-top: 1px solid var(--theme-border-soft);
-  margin-top: 8px;
-  padding-top: 12px;
-  color: var(--lp-accent);
-  font-weight: 500;
   text-decoration: none;
 }
 
-.header-side-menu__item--portal:hover {
-  background-color: var(--lp-accent-soft);
-  color: var(--lp-accent-dark);
-}
-
-.header-side-menu__item--login {
-  border-top: 1px solid var(--theme-border-soft);
-  margin-top: 8px;
-  padding-top: 12px;
-  color: var(--theme-primary-blue);
-  font-weight: 500;
-}
-
-.header-side-menu__item--login:hover {
-  background-color: rgba(59, 130, 246, 0.1);
-  color: var(--theme-primary-blue-hover);
-}
-
 .header-side-menu__text {
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: inherit;
+  font-size: inherit;
   color: inherit;
-  transition: color 0.2s ease-in-out;
 }
 
 .header-side-menu__icon {
   width: 20px;
   height: 20px;
+  flex: 0 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: currentColor;
   stroke: currentColor;
-  flex-shrink: 0;
+  font-size: 0.9rem;
+  font-weight: 400;
 }
 
 .header-side-menu-overlay {
@@ -633,23 +656,11 @@
 }
 
 .dark .header-side-menu {
-  box-shadow:
-    4px 0 25px rgba(0, 0, 0, 0.5),
-    inset -1px 0 0 rgba(255, 255, 255, 0.05);
-}
-
-.dark .header-side-menu__header {
-  background: linear-gradient(135deg, #312e81 0%, #4c1d95 50%, #6d28d9 100%);
-}
-
-.dark .header-side-menu__item {
-  border: 1px solid transparent;
+  box-shadow: none;
 }
 
 .dark .header-side-menu__item:hover {
-  background: linear-gradient(90deg, rgba(75, 85, 99, 0.5) 0%, rgba(107, 114, 128, 0.3) 100%);
-  border-color: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  background: var(--lp-surface);
 }
 
 .dark .header-side-menu-overlay {
@@ -726,11 +737,11 @@
 /* === SMALL MOBILE ADJUSTMENTS === */
 @media (max-width: 400px) {
   .header-side-menu {
-    width: min(88vw, 320px);
+    width: min(232px, 86vw);
   }
 
   .header-side-menu__header {
-    padding: 14px 16px;
+    padding: 6px 8px 16px;
   }
 
   .header-side-menu__content {
@@ -749,7 +760,7 @@
   }
 
   .header-side-menu__title {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .header-side-menu__subtitle {
@@ -814,10 +825,186 @@
   }
 }
 
-/* === MOBILE LEARNING MODE - HIDE HEADER === */
-/* Hide the main header on mobile during learning; LearningProgressHeader handles navigation */
+/* === MOBILE LEARNING MODE - COMPACT NAVIGATION TRIGGER === */
+/* LearningProgressHeader handles the lesson UI; keep global navigation reachable. */
 @media (max-width: 767px) {
   .header-redesigned--learning-mode {
+    position: fixed;
+    top: max(8px, env(safe-area-inset-top));
+    left: max(8px, env(safe-area-inset-left));
+    z-index: 35;
+    width: 44px;
+    height: 44px;
+    min-height: 44px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .header-redesigned--learning-mode .header-redesigned__container {
+    display: block;
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-redesigned--learning-mode .header-redesigned__left {
+    display: block;
+  }
+
+  .header-redesigned--learning-mode .header-redesigned__brand,
+  .header-redesigned--learning-mode .header-redesigned__center,
+  .header-redesigned--learning-mode .header-redesigned__right {
     display: none;
   }
+}
+
+/* === UNIFIED LEARNFLOW NAVIGATION === */
+body {
+  transition:
+    padding-left 0.3s ease,
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.header-side-menu-overlay {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.header-side-menu {
+  transform: translateX(-102%);
+}
+
+.header-side-menu-overlay--open {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.header-side-menu-overlay--open .header-side-menu {
+  transform: translateX(0);
+}
+
+.header-side-menu__close {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.header-side-menu__item {
+  min-height: 44px;
+}
+
+.header-side-menu__item--navigation-mode {
+  margin-bottom: 8px;
+}
+
+.header-side-menu__item--theme {
+  color: var(--lp-ink);
+}
+
+@media (min-width: 1024px) {
+  html[data-navigation-mode='sidebar'] body {
+    padding-left: 232px;
+  }
+
+  html[data-navigation-mode='sidebar'] .header-side-menu-overlay {
+    right: auto;
+    width: 232px;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: none;
+    background: transparent;
+    backdrop-filter: none;
+  }
+
+  html[data-navigation-mode='sidebar'] .header-side-menu {
+    pointer-events: auto;
+    transform: translateX(0);
+    border-radius: 0;
+  }
+
+  html[data-navigation-mode='sidebar'] .header-side-menu__header {
+    border-radius: 0;
+  }
+
+  html[data-navigation-mode='sidebar'] .header-side-menu__avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 1.05rem;
+  }
+
+  html[data-navigation-mode='sidebar'] .header-side-menu__title {
+    font-size: 18px;
+  }
+
+  html[data-navigation-mode='sidebar'] .header-side-menu__subtitle {
+    font-size: 10px;
+  }
+
+  html[data-navigation-mode='sidebar'] .header-side-menu__close,
+  html[data-navigation-mode='sidebar'] .header-redesigned__menu-btn {
+    display: none;
+  }
+
+  /* Floating launcher positioned like LyricFlow */
+  html[data-navigation-mode='floating'] .header-redesigned__menu-btn {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 35;
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
+    border-radius: 50%;
+    border: 1.5px solid var(--lp-border);
+    background: var(--lp-surface);
+    color: var(--lp-ink-soft);
+    font-size: 1rem;
+    font-weight: 400;
+    box-shadow: var(--lp-shadow-sm);
+    padding: 0;
+  }
+
+  /* Give header space so the fixed launcher doesn't overlap the logo */
+  html[data-navigation-mode='floating'] .header-redesigned__container {
+    padding-left: 88px;
+  }
+
+  html[data-navigation-mode='floating'] body {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 1023px) {
+  body {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .header-side-menu__item {
+    min-height: 44px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body,
+  .header-side-menu,
+  .header-side-menu-overlay {
+    transition: none !important;
+  }
+}
+
+:root {
+  --button-size-mobile: 44px;
+  --button-size-desktop: 44px;
 }

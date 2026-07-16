@@ -139,6 +139,16 @@
   }
 }
 
+/* The mobile learning-mode header collapses to a floating 44px hamburger
+   fixed at top:8px/left:8px (see header.css), so the title needs left
+   clearance to avoid sitting underneath it — matching HubFlow's topbar,
+   which always reserves space next to its own fixed hamburger. */
+@media (max-width: 767px) {
+  .learning-progress-header__title {
+    padding-left: 60px;
+  }
+}
+
 @media (max-width: 480px) {
   .learning-progress-header {
     margin-bottom: 0.375rem;

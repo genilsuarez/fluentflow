@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
-import { ChevronLeft, ChevronRight, RotateCcw, Home } from 'lucide-react';
+import { ChevronLeft, ChevronRight, RotateCcw } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { useSwipe } from '../../hooks/useSwipe';
 import { conditionalShuffle } from '../../utils/randomUtils';
@@ -239,7 +239,7 @@ const FlashcardComponent: React.FC<FlashcardComponentProps> = ({ module }) => {
           className="game-controls__home-btn"
           title={t('learning.returnToMainMenu')}
         >
-          <Home className="game-controls__home-icon" />
+          <span className="game-controls__home-icon" aria-hidden="true">🏠</span>
         </button>
 
         <button

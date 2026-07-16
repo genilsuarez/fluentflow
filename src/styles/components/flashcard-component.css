@@ -9,7 +9,7 @@
 
 /* === MAIN CONTAINER === */
 .flashcard-component__container {
-  max-width: 42rem;
+  max-width: 860px;
   width: 100%;
   margin: 0.125rem auto;
   padding: 0.5rem;

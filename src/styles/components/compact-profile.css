@@ -544,3 +544,31 @@ html.dark .compact-profile__header .modal__close-btn:hover {
     transform: none;
   }
 }
+
+/* Logout button inside profile modal */
+.compact-profile__logout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px;
+  border: none;
+  border-top: 1px solid var(--lp-border, rgba(0, 0, 0, 0.08));
+  background: transparent;
+  color: #ef4444;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 0 0 var(--radius-md, 12px) var(--radius-md, 12px);
+  transition: background 0.15s ease;
+}
+
+.compact-profile__logout:hover {
+  background: rgba(239, 68, 68, 0.08);
+}
+
+.compact-profile__logout:active {
+  transform: scale(0.98);
+}

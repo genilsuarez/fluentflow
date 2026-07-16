@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { CheckCircle, XCircle, Volume2, ArrowRight, Home } from 'lucide-react';
+import { CheckCircle, XCircle, Volume2, ArrowRight } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { conditionalShuffle } from '../../utils/randomUtils';
@@ -331,7 +331,7 @@ const ListeningQuizComponent: React.FC<ListeningQuizComponentProps> = ({ module 
           className="game-controls__home-btn"
           title={t('learning.returnToMainMenu')}
         >
-          <Home className="game-controls__home-icon" />
+          <span className="game-controls__home-icon" aria-hidden="true">🏠</span>
         </button>
         <button
           onClick={handleNext}

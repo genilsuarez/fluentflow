@@ -75,7 +75,7 @@ export const en = {
     settings: 'Settings',
     profile: 'Profile',
     help: 'Help',
-    about: 'About',
+    about: 'About LearnFlow',
     configuration: 'Configuration',
     navigationAndSettings: 'Navigation and Settings',
     mainNavigation: 'Main Navigation',
@@ -85,14 +85,14 @@ export const en = {
     notifications: 'Notifications',
     closeNotification: 'Close notification',
     loadingModules: 'Loading modules',
-    backToPortal: 'Back to Portal',
+    backToPortal: 'Back to LearnFlow',
   },
   auth: {
     login: 'Login',
     logout: 'Logout',
     logoutConfirmTitle: 'Confirm Logout',
     logoutConfirmMessage:
-      'This will clear all your local data and reload the application. Your progress will be lost. Are you sure?',
+      'This closes your local identity session. Your progress, preferences, and LearnFlow data will be preserved.',
     logoutConfirmButton: 'Logout',
     cancelButton: 'Cancel',
     userAccount: 'User Account',
@@ -191,8 +191,16 @@ export const en = {
     increaseErrorCorrectionCount: 'Increase fix it count',
   },
   about: {
-    title: 'About FluentFlow',
-    subtitle: 'Advanced English Learning Platform',
+    title: 'About LearnFlow',
+    subtitle: 'FluentFlow · Part of LearnFlow',
+    learnFlowTitle: 'About LearnFlow',
+    learnFlowDescription:
+      'LearnFlow brings together a structured CEFR path, flexible grammar practice, and language learning through music.',
+    fluentFlowRole:
+      'FluentFlow is the structured A1-C2 route and the primary source for your CEFR progress.',
+    localProgressNote:
+      'Progress is stored in this browser and is not yet synced between devices. A shared account is planned for a future version.',
+    learnFlowLinks: 'LearnFlow applications',
     version: 'Version',
     modules: 'Modules',
     build: 'Build',

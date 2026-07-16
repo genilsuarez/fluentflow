@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Home, RotateCcw } from 'lucide-react';
+import { RotateCcw } from 'lucide-react';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useMenuNavigation } from '../../hooks/useMenuNavigation';
 import { useTranslation } from '../../utils/i18n';
@@ -65,7 +65,7 @@ export const OfflineModal: React.FC<OfflineModalProps> = ({ isOpen, onRetry }) =
           className="game-controls__home-btn"
           title={t('learning.returnToMainMenu')}
         >
-          <Home className="game-controls__home-icon" />
+          <span className="game-controls__home-icon" aria-hidden="true">🏠</span>
         </button>
 
         <button

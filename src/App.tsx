@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { QueryClient, QueryClientProvider, useQuery } from '@tanstack/react-query';
 import { ErrorBoundary } from './components/common/ErrorBoundary';
 import { AppRouter } from './components/layout/AppRouter';
 import { MemoizedHeader, MemoizedToastContainer } from './components/ui/MemoizedComponents';
@@ -11,6 +11,7 @@ import { useSettingsStore } from './stores/settingsStore';
 import { useSystemTheme } from './hooks/useSystemTheme';
 import { useTranslation } from './utils/i18n';
 import { verifyCacheIntegrity } from './services/offlineManager';
+import { publishLearnFlowIntegration } from './services/learnFlowIntegration';
 import { toast } from './stores/toastStore';
 import { preloadVoices } from './utils/speech';
 
@@ -48,6 +49,20 @@ const queryClient = new QueryClient({
 
 const AppContent: React.FC = () => {
   const currentView = useAppStore(state => state.currentView);
+  const progressHistory = useProgressStore(state => state.progressHistory);
+  const completedModules = useProgressStore(state => state.completedModules);
+  const { data: learnFlowCatalog = [] } = useQuery({
+    queryKey: ['modules'],
+    queryFn: async () => {
+      const { fetchModules } = await import('./services/api');
+      const response = await fetchModules();
+      if (!response.success) throw new Error(response.error || 'Failed to fetch modules');
+      return response.data;
+    },
+    networkMode: 'always',
+    staleTime: 15 * 60 * 1000,
+    refetchOnWindowFocus: false,
+  });
   const {
     offlineEnabled,
     downloadedLevels,
@@ -60,6 +75,10 @@ const AppContent: React.FC = () => {
   const integrityChecked = useRef(false);
   // Set up system theme listener
   useSystemTheme();
+
+  useEffect(() => {
+    publishLearnFlowIntegration(learnFlowCatalog, { progressHistory, completedModules });
+  }, [learnFlowCatalog, progressHistory, completedModules]);
 
   // Preload TTS voices for listening modes (Chrome loads async)
   useEffect(() => {
@@ -278,7 +297,7 @@ const AppContent: React.FC = () => {
 
         <footer className="app-footer">
           <span className="app-footer__sig">Genil Suárez</span>
-          <span className="app-footer__meta">FluentFlow · 2026</span>
+          <span className="app-footer__meta">FluentFlow → LearnFlow</span>
         </footer>
 
         <MemoizedToastContainer />

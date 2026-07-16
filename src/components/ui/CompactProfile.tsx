@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, User, Save, Trophy, BookOpen, Flame, TrendingUp } from 'lucide-react';
+import { X, User, Save, Trophy, BookOpen, Flame, TrendingUp, LogOut } from 'lucide-react';
 import { useUserStore } from '../../stores/userStore';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useTranslation } from '../../utils/i18n';
@@ -151,6 +151,27 @@ export const CompactProfile: React.FC<CompactProfileProps> = ({ isOpen, onClose 
               {t('profile.saveProfile')}
             </button>
           </div>
+
+          {/* Logout — only when logged in */}
+          {user && (
+            <button
+              type="button"
+              className="compact-profile__logout"
+              onClick={() => {
+                setUser(null);
+                try {
+                  sessionStorage.removeItem('prevView');
+                  sessionStorage.removeItem('menuGridScrollPosition');
+                } catch {
+                  /* Private browsing */
+                }
+                window.location.reload();
+              }}
+            >
+              <LogOut size={14} />
+              <span>{t('auth.logout', 'Cerrar sesión')}</span>
+            </button>
+          )}
         </form>
       </div>
     </div>

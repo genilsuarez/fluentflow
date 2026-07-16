@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { Check, ArrowRight, Home, RotateCcw, Eye } from 'lucide-react';
+import { Check, ArrowRight, RotateCcw, Eye } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { prepareWords, validateReordering, moveWord } from './reorderingUtils';
 import LearningProgressHeader from '../ui/LearningProgressHeader';
@@ -467,7 +467,7 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
           className="game-controls__home-btn"
           title={t('learning.returnToMainMenu')}
         >
-          <Home className="game-controls__home-icon" />
+          <span className="game-controls__home-icon" aria-hidden="true">🏠</span>
         </button>
 
         {!showResult ? (

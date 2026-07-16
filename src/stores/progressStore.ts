@@ -1,9 +1,13 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import { progressionService } from '../services/progressionService';
+import { createLearnFlowId } from '../services/learnFlowIntegration';
 
-interface ProgressEntry {
+export interface ProgressEntry {
   date: string; // YYYY-MM-DD format
+  eventId: string;
+  runId: string;
+  occurredAt: string;
   score: number;
   totalQuestions: number;
   correctAnswers: number;
@@ -23,7 +27,7 @@ interface DailyProgress {
   modules: string[];
 }
 
-interface ModuleCompletion {
+export interface ModuleCompletion {
   moduleId: string;
   completedAt: string;
   bestScore: number;
@@ -36,7 +40,7 @@ interface ProgressStore {
   completedModules: Record<string, ModuleCompletion>;
 
   // Actions
-  addProgressEntry: (entry: Omit<ProgressEntry, 'date'>) => void;
+  addProgressEntry: (entry: Omit<ProgressEntry, 'date' | 'eventId' | 'occurredAt'>) => void;
   getProgressData: (days?: number) => DailyProgress[];
   getDailyProgress: (date: string) => DailyProgress | null;
   getWeeklyAverage: () => number;
@@ -68,12 +72,17 @@ export const useProgressStore = create<ProgressStore>()(
       dailyProgress: {},
       completedModules: {},
 
-      addProgressEntry: entry =>
+      addProgressEntry: entry => {
+        if (get().progressHistory.some(progress => progress.runId === entry.runId)) return;
+
         set(state => {
           const today = getTodayString();
+          const occurredAt = new Date().toISOString();
           const newEntry: ProgressEntry = {
             ...entry,
             date: today,
+            eventId: createLearnFlowId('event'),
+            occurredAt,
           };
 
           // Add to history
@@ -117,7 +126,8 @@ export const useProgressStore = create<ProgressStore>()(
               [today]: updatedDaily,
             },
           };
-        }),
+        });
+      },
 
       getProgressData: (days = 7) => {
         const { dailyProgress } = get();

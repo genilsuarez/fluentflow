@@ -2,16 +2,11 @@ import React, { useState, useEffect, Suspense } from 'react';
 import { createPortal } from 'react-dom';
 import {
   User,
-  Settings,
-  Menu,
-  BarChart3,
-  LogOut,
   WifiOff,
-  Info,
   X,
-  Home,
   Wrench,
-  ExternalLink,
+  PanelLeft,
+  PanelTop,
 } from 'lucide-react';
 import '../../styles/components/header.css';
 import { useAppStore } from '../../stores/appStore';
@@ -22,7 +17,6 @@ import { useTranslation } from '../../utils/i18n';
 import { useEscapeKey } from '../../hooks/useEscapeKey';
 import { useOfflineStatus } from '../../hooks/useOfflineStatus';
 // import { toast } from '../../stores/toastStore';
-
 // Lazy-loaded modals — only loaded when user opens them
 const CompactProfile = React.lazy(() =>
   import('./CompactProfile').then(m => ({ default: m.CompactProfile }))
@@ -36,20 +30,40 @@ const CompactAbout = React.lazy(() =>
 const CompactMyProgress = React.lazy(() =>
   import('./CompactMyProgress').then(m => ({ default: m.CompactMyProgress }))
 );
-
 // Eagerly loaded — always visible
 import { ScoreDisplay } from './ScoreDisplay';
 import { FluentFlowLogo } from './FluentFlowLogo';
-import { ConfirmModal } from './ConfirmModal';
-
 interface HeaderProps {
   onMenuToggle?: () => void;
 }
-
+function isLocalPlatformHost() {
+  return (
+    location.hostname === 'localhost' ||
+    location.hostname === '127.0.0.1' ||
+    location.hostname.startsWith('192.168.')
+  );
+}
+function isUnifiedLocalPlatform() {
+  return (
+    isLocalPlatformHost() &&
+    location.port === '3000' &&
+    location.pathname.startsWith('/fluentflow/')
+  );
+}
+function portalHref() {
+  if (isUnifiedLocalPlatform()) return '/deskflow/';
+  if (isLocalPlatformHost()) return `http://${location.hostname}:3000/`;
+  return 'https://genilsuarez.github.io/deskflow/';
+}
+const NAVIGATION_MODE_KEY = 'lp-navigation-mode';
+type NavigationMode = 'sidebar' | 'floating';
+function getStoredNavigationMode(): NavigationMode {
+  return localStorage.getItem(NAVIGATION_MODE_KEY) === 'floating' ? 'floating' : 'sidebar';
+}
 export const Header: React.FC<HeaderProps> = () => {
   const currentView = useAppStore(state => state.currentView);
   const { user } = useUserStore();
-  const { developmentMode, language, offlineEnabled } = useSettingsStore();
+  const { developmentMode, language, offlineEnabled, theme, setTheme } = useSettingsStore();
   const { returnToMenu } = useMenuNavigation();
   const { t } = useTranslation(language);
   const { isOnline } = useOfflineStatus();
@@ -57,53 +71,61 @@ export const Header: React.FC<HeaderProps> = () => {
   const [showSettings, setShowSettings] = useState(false);
   const [showAbout, setShowAbout] = useState(false);
   const [showSideMenu, setShowSideMenu] = useState(false);
+  const [navigationMode, setNavigationMode] = useState<NavigationMode>(getStoredNavigationMode);
   const [showMyProgress, setShowMyProgress] = useState(false);
   const [showMyProgressTab, setShowMyProgressTab] = useState<'dashboard' | 'path'>('dashboard');
   const [showBadge, setShowBadge] = useState(false);
-  const [showLogoutConfirm, setShowLogoutConfirm] = useState(false);
-
   // Offline badge: show immediately when offline+enabled, hide with 3s delay on reconnect
   useEffect(() => {
     const shouldShow = !isOnline && offlineEnabled;
-
     if (shouldShow) {
       setShowBadge(true);
       return;
     }
-
     // When going back online, delay hiding by 3 seconds
     if (showBadge && !shouldShow) {
       const timer = setTimeout(() => setShowBadge(false), 3000);
       return () => clearTimeout(timer);
     }
   }, [isOnline, offlineEnabled, showBadge]);
-
+  useEffect(() => {
+    document.documentElement.dataset.navigationMode = navigationMode;
+  }, [navigationMode]);
+  useEffect(() => {
+    const syncNavigationMode = (event: StorageEvent) => {
+      if (event.key !== NAVIGATION_MODE_KEY) return;
+      setNavigationMode(event.newValue === 'floating' ? 'floating' : 'sidebar');
+      setShowSideMenu(false);
+    };
+    window.addEventListener('storage', syncNavigationMode);
+    return () => window.removeEventListener('storage', syncNavigationMode);
+  }, []);
   // Determine header layout mode
   const isInGame = currentView !== 'menu';
   const headerMode = isInGame ? 'learning' : 'menu';
-
   // Theme is now handled by themeInitializer and settingsStore
   // This effect is kept for consistency but theme should already be applied
-
   // Handle escape key for hamburger menu
   useEscapeKey(showSideMenu, () => setShowSideMenu(false));
-
   const handleMenuToggle = () => {
     setShowSideMenu(!showSideMenu);
   };
-
+  const handleNavigationModeToggle = () => {
+    const nextMode: NavigationMode = navigationMode === 'sidebar' ? 'floating' : 'sidebar';
+    localStorage.setItem(NAVIGATION_MODE_KEY, nextMode);
+    setNavigationMode(nextMode);
+    setShowSideMenu(false);
+  };
   const handleGoToMenu = () => {
     returnToMenu();
     setShowSideMenu(false);
   };
-
   // const handleSettings = () => {
   //   setShowSettings(!showSettings);
   //   if (!showSettings) {
   //     toast.info('Configuración', 'Panel de configuración abierto');
   //   }
   // };
-
   return (
     <header
       className={`header-redesigned header-redesigned--${headerMode}${isInGame ? ' header-redesigned--learning-mode' : ''}`}
@@ -113,23 +135,26 @@ export const Header: React.FC<HeaderProps> = () => {
         <div className="header-redesigned__left">
           <button
             onClick={handleMenuToggle}
-            className="header-redesigned__menu-btn header-redesigned__menu-btn--primary"
+            className={`header-redesigned__menu-btn${navigationMode === 'sidebar' ? ' header-redesigned__menu-btn--primary' : ''}`}
             title={t('navigation.openMenu')}
             aria-label={t('navigation.openMenu')}
             aria-expanded={showSideMenu}
             aria-controls="navigation-menu"
           >
-            <Menu className="header-redesigned__menu-icon" />
+            <span className="header-redesigned__menu-icon" aria-hidden="true">
+              ☰
+            </span>
             <span className="sr-only">
               {showSideMenu ? t('navigation.closeMenu') : t('navigation.openMenuShort')}
             </span>
           </button>
           <div className="header-redesigned__brand">
             <FluentFlowLogo size="md" className="header-redesigned__logo" />
-            <h1 className="header-redesigned__title">FluentFlow</h1>
+            <h1 className="header-redesigned__title">
+              FluentFlow
+            </h1>
           </div>
         </div>
-
         {/* Center Section: Score Display */}
         <div className="header-redesigned__center">
           <ScoreDisplay />
@@ -155,7 +180,6 @@ export const Header: React.FC<HeaderProps> = () => {
             </button>
           )}
         </div>
-
         {/* Right Section: Primary Actions Only */}
         <div className="header-redesigned__right">
           {/* User Profile Section - Primary Action */}
@@ -185,11 +209,9 @@ export const Header: React.FC<HeaderProps> = () => {
               </button>
             </div>
           )}
-
           {/* Quick Actions removed - controls moved to hamburger menu */}
         </div>
       </div>
-
       {/* Compact Modals - rendered via portal to avoid event bubbling to header */}
       {showProfileForm &&
         createPortal(
@@ -198,7 +220,6 @@ export const Header: React.FC<HeaderProps> = () => {
           </Suspense>,
           document.body
         )}
-
       {showSettings &&
         createPortal(
           <Suspense fallback={null}>
@@ -206,7 +227,6 @@ export const Header: React.FC<HeaderProps> = () => {
           </Suspense>,
           document.body
         )}
-
       {showAbout &&
         createPortal(
           <Suspense fallback={null}>
@@ -214,7 +234,6 @@ export const Header: React.FC<HeaderProps> = () => {
           </Suspense>,
           document.body
         )}
-
       {showMyProgress &&
         createPortal(
           <Suspense fallback={null}>
@@ -226,149 +245,124 @@ export const Header: React.FC<HeaderProps> = () => {
           </Suspense>,
           document.body
         )}
-
-      {createPortal(
-        <ConfirmModal
-          isOpen={showLogoutConfirm}
-          onClose={() => setShowLogoutConfirm(false)}
-          onConfirm={() => {
-            try {
-              localStorage.clear();
-            } catch {
-              /* */
-            }
-            try {
-              sessionStorage.clear();
-            } catch {
-              /* */
-            }
-            window.location.reload();
-          }}
-          title={t('auth.logoutConfirmTitle', 'Confirm Logout')}
-          message={t(
-            'auth.logoutConfirmMessage',
-            'This will clear all your local data and reload the application. Your progress will be lost. Are you sure?'
-          )}
-          confirmLabel={t('auth.logoutConfirmButton', 'Logout')}
-          cancelLabel={t('auth.cancelButton', 'Cancel')}
-          variant="danger"
-        />,
-        document.body
-      )}
-
-      {showSideMenu && (
-        <div
-          className="header-side-menu-overlay"
-          onClick={() => setShowSideMenu(false)}
-          role="presentation"
+      <div
+        className={`header-side-menu-overlay${showSideMenu ? ' header-side-menu-overlay--open' : ''}`}
+        onClick={event => {
+          if (event.target === event.currentTarget) setShowSideMenu(false);
+        }}
+        role="presentation"
+      >
+        <nav
+          id="navigation-menu"
+          className="header-side-menu"
+          role="navigation"
+          aria-label={t('navigation.navigationAndSettings')}
         >
-          <nav
-            id="navigation-menu"
-            className="header-side-menu"
-            onClick={e => e.stopPropagation()}
-            role="navigation"
-            aria-label={t('navigation.navigationAndSettings')}
-          >
-            {/* Header: Avatar + User identity (clickable to edit profile) */}
-            <div className="header-side-menu__header">
-              <div className="header-side-menu__header-row">
-                <button
-                  className="header-side-menu__identity"
-                  onClick={() => {
-                    if (user) {
-                      setShowProfileForm(true);
-                      setShowSideMenu(false);
-                    }
-                  }}
-                  aria-label={user ? t('auth.editUserProfile') : undefined}
-                  tabIndex={user ? 0 : -1}
-                >
-                  <div className="header-side-menu__avatar" aria-hidden="true">
-                    {user ? user.name.charAt(0).toUpperCase() : '?'}
-                  </div>
-                  <div>
-                    <h2 className="header-side-menu__title">
-                      {user ? user.name : t('auth.guest', 'Guest')}
-                    </h2>
-                    <p className="header-side-menu__subtitle">
-                      {user ? t('auth.tapToEditProfile', 'Tap to edit profile') : 'FluentFlow'}
-                    </p>
-                  </div>
-                </button>
-                <button
-                  className="header-side-menu__close"
-                  onClick={() => setShowSideMenu(false)}
-                  aria-label={t('navigation.closeMenu', 'Close menu')}
-                >
-                  <X aria-hidden="true" />
-                </button>
+          {/* Header: Avatar + User identity (clickable to edit profile) */}
+          <div className="header-side-menu__header">
+            <div className="header-side-menu__header-row">
+              <div className="header-side-menu__identity">
+                <div className="header-side-menu__avatar" aria-hidden="true">
+                  F
+                </div>
+                <div>
+                  <h2 className="header-side-menu__title">FluentFlow</h2>
+                  <p className="header-side-menu__subtitle">LearnFlow</p>
+                </div>
               </div>
+              <button
+                className="header-side-menu__close"
+                onClick={() => setShowSideMenu(false)}
+                aria-label={t('navigation.closeMenu', 'Close menu')}
+              >
+                <X aria-hidden="true" />
+              </button>
             </div>
-
-            {/* Flat menu — no section headers */}
-            <div className="header-side-menu__content">
-              <button
-                onClick={handleGoToMenu}
-                className="header-side-menu__item"
-                aria-label={t('auth.goToMainMenu')}
-              >
-                <Home className="header-side-menu__icon" aria-hidden="true" />
-                <span className="header-side-menu__text">{t('navigation.mainMenu')}</span>
-              </button>
-              <button
-                onClick={() => {
-                  setShowMyProgressTab('dashboard');
-                  setShowMyProgress(true);
-                  setShowSideMenu(false);
-                }}
-                className="header-side-menu__item"
-                aria-label={t('auth.viewProgressDashboard')}
-              >
-                <BarChart3 className="header-side-menu__icon" aria-hidden="true" />
-                <span className="header-side-menu__text">{t('modals.myProgress')}</span>
-              </button>
-              <button
-                onClick={() => {
-                  setShowSettings(true);
-                  setShowSideMenu(false);
-                }}
-                className="header-side-menu__item"
-                aria-label={t('navigation.settings')}
-              >
-                <Settings className="header-side-menu__icon" aria-hidden="true" />
-                <span className="header-side-menu__text">{t('navigation.settings')}</span>
-              </button>
+          </div>
+          {/* Flat menu — no section headers */}
+          <div className="header-side-menu__content">
+            <button
+              type="button"
+              onClick={handleNavigationModeToggle}
+              className="header-side-menu__item header-side-menu__item--navigation-mode"
+              aria-pressed={navigationMode === 'floating'}
+              aria-label={
+                navigationMode === 'floating'
+                  ? language === 'es'
+                    ? 'Usar barra lateral fija'
+                    : 'Use fixed sidebar'
+                  : language === 'es'
+                    ? 'Usar menú flotante'
+                    : 'Use floating menu'
+              }
+            >
+              {navigationMode === 'floating' ? (
+                <PanelLeft className="header-side-menu__icon" aria-hidden="true" />
+              ) : (
+                <PanelTop className="header-side-menu__icon" aria-hidden="true" />
+              )}
+              <span className="header-side-menu__text">
+                {navigationMode === 'floating'
+                  ? language === 'es'
+                    ? 'Usar barra lateral'
+                    : 'Use sidebar'
+                  : language === 'es'
+                    ? 'Usar menú flotante'
+                    : 'Use floating menu'}
+              </span>
+            </button>
+            <button
+              onClick={handleGoToMenu}
+              className={`header-side-menu__item${!isInGame ? ' header-side-menu__item--active' : ''}`}
+              aria-label="Ir al inicio"
+              aria-current={!isInGame ? 'page' : undefined}
+            >
+              <span className="header-side-menu__icon" aria-hidden="true">⌂</span>
+              <span className="header-side-menu__text">Inicio</span>
+            </button>
+            <button
+              onClick={() => {
+                setShowMyProgressTab('dashboard');
+                setShowMyProgress(true);
+                setShowSideMenu(false);
+              }}
+              className="header-side-menu__item"
+              aria-label="Mi progreso"
+            >
+              <span className="header-side-menu__icon" aria-hidden="true">↗</span>
+              <span className="header-side-menu__text">Mi Progreso</span>
+            </button>
+            <button
+              onClick={() => {
+                setShowSettings(true);
+                setShowSideMenu(false);
+              }}
+              className="header-side-menu__item"
+              aria-label="Ajustes"
+            >
+              <span className="header-side-menu__icon" aria-hidden="true">⚙</span>
+              <span className="header-side-menu__text">Ajustes</span>
+            </button>
+            {/* Spacer + bottom actions */}
+            <div className="header-side-menu__spacer" />
+            <div className="header-side-menu__footer">
               <button
                 onClick={() => {
                   setShowAbout(true);
                   setShowSideMenu(false);
                 }}
                 className="header-side-menu__item"
-                aria-label={t('navigation.about')}
+                aria-label="About LearnFlow"
               >
-                <Info className="header-side-menu__icon" aria-hidden="true" />
-                <span className="header-side-menu__text">{t('navigation.about')}</span>
+                <span className="header-side-menu__icon" aria-hidden="true">ⓘ</span>
+                <span className="header-side-menu__text">About LearnFlow</span>
               </button>
-
-              {/* Spacer + bottom actions */}
-              <div className="header-side-menu__spacer" />
-
               <a
-                href={
-                  location.hostname === 'localhost' ||
-                  location.hostname === '127.0.0.1' ||
-                  location.hostname.startsWith('192.168.')
-                    ? `http://${location.hostname}:3000/`
-                    : 'https://genilsuarez.github.io/deskflow/'
-                }
+                href={portalHref()}
                 className="header-side-menu__item header-side-menu__item--portal"
-                aria-label={t('navigation.backToPortal')}
+                aria-label="Portal"
                 onClick={e => {
-                  if (
-                    location.hostname === 'localhost' ||
-                    location.hostname === '127.0.0.1' ||
-                    location.hostname.startsWith('192.168.')
-                  ) {
+                  if (isLocalPlatformHost() && !isUnifiedLocalPlatform()) {
                     const theme = document.documentElement.classList.contains('dark')
                       ? 'dark'
                       : 'light';
@@ -378,39 +372,26 @@ export const Header: React.FC<HeaderProps> = () => {
                   }
                 }}
               >
-                <ExternalLink className="header-side-menu__icon" aria-hidden="true" />
-                <span className="header-side-menu__text">{t('navigation.backToPortal')}</span>
+                <span className="header-side-menu__icon" aria-hidden="true">⌂</span>
+                <span className="header-side-menu__text">Portal</span>
               </a>
-
-              {user ? (
-                <button
-                  onClick={() => {
-                    setShowLogoutConfirm(true);
-                    setShowSideMenu(false);
-                  }}
-                  className="header-side-menu__item header-side-menu__item--logout"
-                  aria-label={t('auth.logout', 'Logout')}
-                >
-                  <LogOut className="header-side-menu__icon" aria-hidden="true" />
-                  <span className="header-side-menu__text">{t('auth.logout', 'Logout')}</span>
-                </button>
-              ) : (
-                <button
-                  onClick={() => {
-                    setShowProfileForm(true);
-                    setShowSideMenu(false);
-                  }}
-                  className="header-side-menu__item header-side-menu__item--login"
-                  aria-label={t('auth.loginToAccount')}
-                >
-                  <User className="header-side-menu__icon" aria-hidden="true" />
-                  <span className="header-side-menu__text">{t('auth.login', 'Login')}</span>
-                </button>
-              )}
+              <button
+                type="button"
+                className="header-side-menu__item header-side-menu__item--theme"
+                aria-label={theme === 'dark' ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'}
+                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+              >
+                <span className="header-side-menu__icon" aria-hidden="true">
+                  {theme === 'dark' ? '☀️' : '🌙'}
+                </span>
+                <span className="header-side-menu__text">
+                  {theme === 'dark' ? 'Modo claro' : 'Modo oscuro'}
+                </span>
+              </button>
             </div>
-          </nav>
-        </div>
-      )}
+          </div>
+        </nav>
+      </div>
     </header>
   );
 };

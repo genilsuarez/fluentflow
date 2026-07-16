@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useLayoutEffect, useMemo, useCallback, useRef } from 'react';
-import { ChevronLeft, ChevronRight, Home, ChevronDown, ChevronUp } from 'lucide-react';
+import { ChevronLeft, ChevronRight, ChevronDown, ChevronUp } from 'lucide-react';
 import { useUserStore } from '../../stores/userStore';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useMenuNavigation } from '../../hooks/useMenuNavigation';
@@ -7,6 +7,7 @@ import { useProgressStore } from '../../stores/progressStore';
 import { useTranslation } from '../../utils/i18n';
 import { useLearningCleanup } from '../../hooks/useLearningCleanup';
 import { useSwipe } from '../../hooks/useSwipe';
+import { createLearnFlowId } from '../../services/learnFlowIntegration';
 import { ContentAdapter } from '../../utils/contentAdapter';
 import ContentRenderer from '../ui/ContentRenderer';
 import LearningProgressHeader from '../ui/LearningProgressHeader';
@@ -21,6 +22,7 @@ interface ReadingComponentProps {
 const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
   const [currentSectionIndex, setCurrentSectionIndex] = useState(-1); // Start at -1 for objectives page
   const [startTime] = useState(Date.now());
+  const [runId] = useState(() => createLearnFlowId('run'));
   const [expandedItems, setExpandedItems] = useState<Set<number>>(new Set());
   const [vocabularyExpanded, setVocabularyExpanded] = useState(false);
   const [grammarExpanded, setGrammarExpanded] = useState(false);
@@ -85,6 +87,7 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
 
       // Register progress (reading is completion-based, so 100% for finishing)
       addProgressEntry({
+        runId,
         score: 100,
         totalQuestions: readingSections.length,
         correctAnswers: readingSections.length,
@@ -100,6 +103,7 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
     readingSections.length,
     hasSummaryContent,
     startTime,
+    runId,
     addProgressEntry,
     module.id,
     updateUserScore,
@@ -709,7 +713,7 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
           className="game-controls__home-btn"
           title={t('reading.navigation.returnToMenu')}
         >
-          <Home className="game-controls__home-icon" />
+          <span className="game-controls__home-icon" aria-hidden="true">🏠</span>
         </button>
 
         <button

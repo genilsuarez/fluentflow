@@ -75,7 +75,7 @@ export const es = {
     settings: 'Configuración',
     profile: 'Perfil',
     help: 'Ayuda',
-    about: 'Acerca de',
+    about: 'About LearnFlow',
     configuration: 'Configuración',
     navigationAndSettings: 'Navegación y Configuración',
     mainNavigation: 'Navegación Principal',
@@ -85,14 +85,14 @@ export const es = {
     notifications: 'Notificaciones',
     closeNotification: 'Cerrar notificación',
     loadingModules: 'Cargando módulos',
-    backToPortal: 'Volver al Portal',
+    backToPortal: 'Volver a LearnFlow',
   },
   auth: {
     login: 'Iniciar Sesión',
     logout: 'Cerrar Sesión',
     logoutConfirmTitle: 'Confirmar Cierre de Sesión',
     logoutConfirmMessage:
-      'Esto eliminará todos tus datos locales y recargará la aplicación. Tu progreso se perderá. ¿Estás seguro?',
+      'Esto cerrará tu sesión de identidad local. Tu progreso, preferencias y datos de LearnFlow se conservarán.',
     logoutConfirmButton: 'Cerrar Sesión',
     cancelButton: 'Cancelar',
     userAccount: 'Cuenta de Usuario',
@@ -191,8 +191,16 @@ export const es = {
     increaseErrorCorrectionCount: 'Aumentar cantidad de corrige',
   },
   about: {
-    title: 'Acerca de FluentFlow',
-    subtitle: 'Plataforma Avanzada de Aprendizaje de Inglés',
+    title: 'About LearnFlow',
+    subtitle: 'FluentFlow · Parte de LearnFlow',
+    learnFlowTitle: 'About LearnFlow',
+    learnFlowDescription:
+      'LearnFlow reúne una ruta CEFR estructurada, práctica flexible de gramática y aprendizaje de idiomas mediante música.',
+    fluentFlowRole:
+      'FluentFlow es la ruta estructurada A1-C2 y la fuente principal de tu progreso CEFR.',
+    localProgressNote:
+      'El progreso se guarda en este navegador y todavía no se sincroniza entre dispositivos. Se prevé una cuenta compartida en una versión futura.',
+    learnFlowLinks: 'Aplicaciones de LearnFlow',
     version: 'Versión',
     modules: 'Módulos',
     build: 'Build',

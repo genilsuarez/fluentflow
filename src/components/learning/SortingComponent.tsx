@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { RotateCcw, Check, Info, X, Home } from 'lucide-react';
+import { RotateCcw, Check, Info, X } from 'lucide-react';
 import { useAppStore } from '../../stores/appStore';
 import { useUserStore } from '../../stores/userStore';
 import { useSettingsStore } from '../../stores/settingsStore';
@@ -9,6 +9,7 @@ import { conditionalShuffle } from '../../utils/randomUtils';
 import { useTranslation } from '../../utils/i18n';
 import { useToast } from '../../hooks/useToast';
 import { useLearningCleanup } from '../../hooks/useLearningCleanup';
+import { createLearnFlowId } from '../../services/learnFlowIntegration';
 import { ContentAdapter } from '../../utils/contentAdapter';
 import ContentRenderer from '../ui/ContentRenderer';
 import LearningProgressHeader from '../ui/LearningProgressHeader';
@@ -35,6 +36,7 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
   const [availableWords, setAvailableWords] = useState<string[]>([]);
   const [showResult, setShowResult] = useState(false);
   const [startTime] = useState(Date.now());
+  const [runId] = useState(() => createLearnFlowId('run'));
   const [dragOverCategory, setDragOverCategory] = useState<string | null>(null);
   const [showExplanation, setShowExplanation] = useState(false);
   const [selectedTerm, setSelectedTerm] = useState<any>(null);
@@ -372,6 +374,7 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
 
     // Register progress
     addProgressEntry({
+      runId,
       score: finalScore,
       totalQuestions: sessionScore.total,
       correctAnswers: sessionScore.correct,
@@ -612,7 +615,7 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
           className="game-controls__home-btn"
           title={t('learning.returnToMainMenu')}
         >
-          <Home className="game-controls__home-icon" />
+          <span className="game-controls__home-icon" aria-hidden="true">🏠</span>
         </button>
 
         {!showResult ? (

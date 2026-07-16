@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { Volume2, CheckCircle, XCircle, ArrowRight, Home } from 'lucide-react';
+import { Volume2, CheckCircle, XCircle, ArrowRight } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { conditionalShuffle } from '../../utils/randomUtils';
@@ -299,7 +299,7 @@ const DictationComponent: React.FC<DictationComponentProps> = ({ module }) => {
           className="game-controls__home-btn"
           title={t('learning.returnToMainMenu')}
         >
-          <Home className="game-controls__home-icon" />
+          <span className="game-controls__home-icon" aria-hidden="true">🏠</span>
         </button>
         <button
           onClick={showResult ? handleNext : handleSubmit}

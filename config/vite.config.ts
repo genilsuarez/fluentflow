@@ -13,6 +13,7 @@ export default defineConfig(({ mode }) => {
 
   // Set NODE_ENV properly based on mode (Vite best practice)
   const isProduction = mode === 'production';
+  const isUnifiedLocal = process.env.LEARN_PLATFORM_UNIFIED === '1';
   const buildTime = new Date().toISOString();
 
   return {
@@ -102,10 +103,15 @@ export default defineConfig(({ mode }) => {
       },
       port: 5173,
       host: true,
-      hmr: {
-        port: 5173,
-        clientPort: 5173
-      }
+      hmr: isUnifiedLocal
+        ? {
+            clientPort: 3000,
+            path: '/fluentflow/'
+          }
+        : {
+            port: 5173,
+            clientPort: 5173
+          }
     },
     define: {
       __APP_VERSION__: JSON.stringify(process.env.npm_package_version),

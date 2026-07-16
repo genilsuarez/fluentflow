@@ -151,8 +151,8 @@ html.dark {
   --lp-cat-teal-soft: #1a2d2d;
 
   --lp-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.15);
-  --lp-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.15);
-  --lp-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.15);
+  --lp-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.22), 0 4px 12px rgba(0, 0, 0, 0.18);
+  --lp-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.22), 0 2px 4px rgba(0, 0, 0, 0.18);
   --lp-shadow-lg: 0 8px 28px rgba(0, 0, 0, 0.25), 0 2px 6px rgba(0, 0, 0, 0.12);
   --lp-shadow-hover: 0 8px 28px rgba(0, 0, 0, 0.3), 0 2px 6px rgba(0, 0, 0, 0.15);
 }
@@ -162,7 +162,7 @@ html.dark {
 /* This bridge ensures zero regressions while the new palette takes effect */
 :root {
   /* Header variables → lp tokens */
-  --header-bg: var(--lp-surface);
+  --header-bg: transparent;
   --header-border: var(--lp-border);
   --header-text-primary: var(--lp-ink);
   --header-text-secondary: var(--lp-ink-soft);
@@ -207,7 +207,7 @@ html.dark {
 }
 
 html.dark {
-  --header-bg: var(--lp-surface);
+  --header-bg: transparent;
   --header-border: var(--lp-border-strong);
   --header-text-primary: var(--lp-ink);
   --header-text-secondary: var(--lp-ink-soft);
