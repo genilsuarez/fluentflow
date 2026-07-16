@@ -87,7 +87,10 @@
   background: var(--lp-surface-sunken);
   color: var(--lp-muted);
   cursor: pointer;
-  transition: border-color 160ms, color 160ms, transform 160ms;
+  transition:
+    border-color 160ms,
+    color 160ms,
+    transform 160ms;
 }
 
 .about-close:hover {
@@ -137,7 +140,9 @@
   background: var(--lp-surface-sunken);
   color: var(--lp-ink);
   text-decoration: none;
-  transition: border-color 0.2s var(--lp-ease), transform 0.2s var(--lp-ease);
+  transition:
+    border-color 0.2s var(--lp-ease),
+    transform 0.2s var(--lp-ease);
 }
 
 .about-modules a:hover {
@@ -211,7 +216,9 @@
   cursor: pointer;
   font-size: var(--lp-text-xs);
   font-weight: var(--lp-weight-semibold);
-  transition: border-color 160ms, color 160ms;
+  transition:
+    border-color 160ms,
+    color 160ms;
 }
 
 .about-dev-actions button:hover {
@@ -325,18 +332,35 @@
 
 /* ─── Animations ─── */
 @keyframes aboutFadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 580px) {
-  .about-modal { padding: 22px; }
-  .about-header h2 { font-size: 1.35rem; }
-  .about-dev-actions { grid-template-columns: 1fr; }
-  .about-footer p { flex-direction: column; gap: 2px; }
-  .about-footer span { text-align: left; }
+  .about-modal {
+    padding: 22px;
+  }
+  .about-header h2 {
+    font-size: 1.35rem;
+  }
+  .about-dev-actions {
+    grid-template-columns: 1fr;
+  }
+  .about-footer p {
+    flex-direction: column;
+    gap: 2px;
+  }
+  .about-footer span {
+    text-align: left;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .about-overlay { animation: none; }
+  .about-overlay {
+    animation: none;
+  }
 }

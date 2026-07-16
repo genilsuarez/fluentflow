@@ -335,7 +335,9 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
           className="game-controls__home-btn"
           title={t('learning.returnToMainMenu')}
         >
-          <span className="game-controls__home-icon" aria-hidden="true">🏠</span>
+          <span className="game-controls__home-icon" aria-hidden="true">
+            🏠
+          </span>
         </button>
 
         {!showResult ? (

@@ -90,7 +90,9 @@ const ExerciseResultScreen: React.FC<ExerciseResultScreenProps> = ({
                 onClick={onContinue}
                 className="exercise-result__btn exercise-result__btn--secondary"
               >
-                <span className="exercise-result__btn-icon" aria-hidden="true">🏠</span>
+                <span className="exercise-result__btn-icon" aria-hidden="true">
+                  🏠
+                </span>
                 <span>{t('exerciseResult.backToMenu')}</span>
               </button>
             </>

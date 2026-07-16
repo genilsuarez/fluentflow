@@ -50,7 +50,9 @@
   font-size: 1.25rem;
   line-height: 1;
   color: var(--lp-ink);
-  transition: transform 0.15s ease, background 0.15s ease;
+  transition:
+    transform 0.15s ease,
+    background 0.15s ease;
   flex-shrink: 0;
   touch-action: manipulation;
 }
@@ -65,7 +67,7 @@
 }
 
 .game-controls__home-btn:focus-visible {
-  outline: 2px solid var(--lp-accent, #D4764E);
+  outline: 2px solid var(--lp-accent, #d4764e);
   outline-offset: 2px;
 }
 
@@ -402,4 +404,3 @@ html.dark .game-controls__icon-btn {
   border-color: var(--theme-border-soft, #4b5563);
   color: var(--theme-text-secondary, #d1d5db);
 }
-

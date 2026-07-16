@@ -713,7 +713,9 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
           className="game-controls__home-btn"
           title={t('reading.navigation.returnToMenu')}
         >
-          <span className="game-controls__home-icon" aria-hidden="true">🏠</span>
+          <span className="game-controls__home-icon" aria-hidden="true">
+            🏠
+          </span>
         </button>
 
         <button

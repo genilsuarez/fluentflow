@@ -320,7 +320,9 @@ const ListenCompleteComponent: React.FC<ListenCompleteComponentProps> = ({ modul
           className="game-controls__home-btn"
           title={t('learning.returnToMainMenu')}
         >
-          <span className="game-controls__home-icon" aria-hidden="true">🏠</span>
+          <span className="game-controls__home-icon" aria-hidden="true">
+            🏠
+          </span>
         </button>
         <button
           onClick={showResult ? handleNext : handleSubmit}

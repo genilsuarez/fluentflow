@@ -147,10 +147,7 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
               <code>B: {buildString}</code>
             </header>
             <div className="about-dev-actions">
-              <button
-                type="button"
-                onClick={handleRecompile}
-              >
+              <button type="button" onClick={handleRecompile}>
                 <RotateCcw aria-hidden="true" />
                 {language === 'es' ? 'Recompilar' : 'Recompile'}
               </button>

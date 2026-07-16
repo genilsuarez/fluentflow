@@ -1,13 +1,6 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import { createPortal } from 'react-dom';
-import {
-  User,
-  WifiOff,
-  X,
-  Wrench,
-  PanelLeft,
-  PanelTop,
-} from 'lucide-react';
+import { User, WifiOff, X, Wrench, PanelLeft, PanelTop } from 'lucide-react';
 import '../../styles/components/header.css';
 import { useAppStore } from '../../stores/appStore';
 import { useUserStore } from '../../stores/userStore';
@@ -150,9 +143,7 @@ export const Header: React.FC<HeaderProps> = () => {
           </button>
           <div className="header-redesigned__brand">
             <FluentFlowLogo size="md" className="header-redesigned__logo" />
-            <h1 className="header-redesigned__title">
-              FluentFlow
-            </h1>
+            <h1 className="header-redesigned__title">FluentFlow</h1>
           </div>
         </div>
         {/* Center Section: Score Display */}
@@ -317,7 +308,9 @@ export const Header: React.FC<HeaderProps> = () => {
               aria-label="Ir al inicio"
               aria-current={!isInGame ? 'page' : undefined}
             >
-              <span className="header-side-menu__icon" aria-hidden="true">⌂</span>
+              <span className="header-side-menu__icon" aria-hidden="true">
+                ⌂
+              </span>
               <span className="header-side-menu__text">Inicio</span>
             </button>
             <button
@@ -329,7 +322,9 @@ export const Header: React.FC<HeaderProps> = () => {
               className="header-side-menu__item"
               aria-label="Mi progreso"
             >
-              <span className="header-side-menu__icon" aria-hidden="true">↗</span>
+              <span className="header-side-menu__icon" aria-hidden="true">
+                ↗
+              </span>
               <span className="header-side-menu__text">Mi Progreso</span>
             </button>
             <button
@@ -340,7 +335,9 @@ export const Header: React.FC<HeaderProps> = () => {
               className="header-side-menu__item"
               aria-label="Ajustes"
             >
-              <span className="header-side-menu__icon" aria-hidden="true">⚙</span>
+              <span className="header-side-menu__icon" aria-hidden="true">
+                ⚙
+              </span>
               <span className="header-side-menu__text">Ajustes</span>
             </button>
             {/* Spacer + bottom actions */}
@@ -354,7 +351,9 @@ export const Header: React.FC<HeaderProps> = () => {
                 className="header-side-menu__item"
                 aria-label="About LearnFlow"
               >
-                <span className="header-side-menu__icon" aria-hidden="true">ⓘ</span>
+                <span className="header-side-menu__icon" aria-hidden="true">
+                  ⓘ
+                </span>
                 <span className="header-side-menu__text">About LearnFlow</span>
               </button>
               <a
@@ -372,7 +371,9 @@ export const Header: React.FC<HeaderProps> = () => {
                   }
                 }}
               >
-                <span className="header-side-menu__icon" aria-hidden="true">⌂</span>
+                <span className="header-side-menu__icon" aria-hidden="true">
+                  ⌂
+                </span>
                 <span className="header-side-menu__text">Portal</span>
               </a>
               <button
