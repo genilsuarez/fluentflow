@@ -195,7 +195,10 @@ export const ModuleCard: React.FC<ModuleCardProps> = React.memo(
           <div className="module-card__info">
             <h3 className="module-card__title">{module.name}</h3>
             <div className="module-card__meta">
-              <span className="module-card__type" aria-label={`Exercise type: ${learningModeLabel}`}>
+              <span
+                className="module-card__type"
+                aria-label={`Exercise type: ${learningModeLabel}`}
+              >
                 {learningModeLabel}
               </span>
               <span
