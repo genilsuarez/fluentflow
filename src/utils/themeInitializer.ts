@@ -35,20 +35,6 @@ function getInitialTheme(): ThemeState {
   }
 
   try {
-    // Check URL query param first (cross-app theme propagation in local dev)
-    const urlTheme =
-      typeof window !== 'undefined'
-        ? new URLSearchParams(window.location.search).get('theme')
-        : null;
-    if (urlTheme === 'dark' || urlTheme === 'light') {
-      try {
-        localStorage.setItem('lp-theme', urlTheme);
-      } catch {
-        /* noop */
-      }
-      return { theme: urlTheme, isSystemPreference: false };
-    }
-
     // Shared cross-app key takes priority (another app may have changed it)
     const sharedTheme = localStorage.getItem('lp-theme') as ThemeMode | null;
 

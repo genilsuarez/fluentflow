@@ -113,12 +113,6 @@ export const useSettingsStore = create<SettingsState>()(
         } catch {
           /* noop */
         }
-        // Update URL query param if present (prevents stale ?theme= on reload)
-        if (typeof window !== 'undefined' && window.location.search.includes('theme=')) {
-          const url = new URL(window.location.href);
-          url.searchParams.set('theme', theme);
-          window.history.replaceState(null, '', url.toString());
-        }
       },
 
       setLanguage: language => set({ language }),
@@ -277,29 +271,17 @@ export const useSettingsStore = create<SettingsState>()(
         return merged;
       },
       onRehydrateStorage: () => state => {
-        // Check URL param first, then shared lp-theme key
-        const urlTheme =
-          typeof window !== 'undefined'
-            ? (new URLSearchParams(window.location.search).get('theme') as 'light' | 'dark' | null)
-            : null;
+        // Shared lp-theme key is the authority
         const sharedTheme =
           typeof window !== 'undefined'
             ? (localStorage.getItem('lp-theme') as 'light' | 'dark' | null)
             : null;
 
-        // Determine authoritative theme: URL > lp-theme > store
-        const authoritative = urlTheme || sharedTheme;
-
-        if (authoritative && (authoritative === 'dark' || authoritative === 'light')) {
-          if (state && state.theme !== authoritative) {
-            state.theme = authoritative;
+        if (sharedTheme && (sharedTheme === 'dark' || sharedTheme === 'light')) {
+          if (state && state.theme !== sharedTheme) {
+            state.theme = sharedTheme;
           }
-          try {
-            localStorage.setItem('lp-theme', authoritative);
-          } catch {
-            /* noop */
-          }
-          applyThemeToDOM(authoritative);
+          applyThemeToDOM(sharedTheme);
         } else if (state?.theme) {
           applyThemeToDOM(state.theme);
         }

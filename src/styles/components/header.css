@@ -501,6 +501,38 @@
   color: var(--lp-ink);
 }
 
+.header-side-menu__header-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.header-side-menu__nav-mode-toggle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--lp-border);
+  background: var(--lp-surface);
+  color: var(--lp-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.9rem;
+  opacity: 0.6;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+.header-side-menu__nav-mode-toggle:hover {
+  opacity: 1;
+  border-color: var(--lp-accent);
+  color: var(--lp-ink);
+}
+.header-side-menu__nav-mode-toggle:focus-visible {
+  outline: 2px solid var(--lp-accent);
+  outline-offset: 2px;
+}
+
 .header-side-menu__close svg {
   width: 18px;
   height: 18px;

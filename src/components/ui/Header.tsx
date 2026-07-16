@@ -1,6 +1,6 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import { createPortal } from 'react-dom';
-import { User, WifiOff, X, Wrench, PanelLeft } from 'lucide-react';
+import { User, WifiOff, X, Wrench } from 'lucide-react';
 import '../../styles/components/header.css';
 import { useAppStore } from '../../stores/appStore';
 import { useUserStore } from '../../stores/userStore';
@@ -261,49 +261,45 @@ export const Header: React.FC<HeaderProps> = () => {
                   <p className="header-side-menu__subtitle">LearnFlow</p>
                 </div>
               </div>
-              <button
-                className="header-side-menu__close"
-                onClick={() => setShowSideMenu(false)}
-                aria-label={t('navigation.closeMenu', 'Close menu')}
-              >
-                <X aria-hidden="true" />
-              </button>
+              <div className="header-side-menu__header-actions">
+                <button
+                  type="button"
+                  onClick={handleNavigationModeToggle}
+                  className="header-side-menu__nav-mode-toggle"
+                  aria-pressed={navigationMode === 'floating'}
+                  aria-label={
+                    navigationMode === 'floating'
+                      ? language === 'es'
+                        ? 'Usar barra lateral fija'
+                        : 'Use fixed sidebar'
+                      : language === 'es'
+                        ? 'Usar menú flotante'
+                        : 'Use floating menu'
+                  }
+                  title={
+                    navigationMode === 'floating'
+                      ? language === 'es'
+                        ? 'Muestra la barra lateral fija'
+                        : 'Shows the fixed sidebar'
+                      : language === 'es'
+                        ? 'Oculta la barra lateral y usa un menú flotante'
+                        : 'Hides the sidebar and uses a floating menu'
+                  }
+                >
+                  <span aria-hidden="true">{navigationMode === 'floating' ? '▣' : '◫'}</span>
+                </button>
+                <button
+                  className="header-side-menu__close"
+                  onClick={() => setShowSideMenu(false)}
+                  aria-label={t('navigation.closeMenu', 'Close menu')}
+                >
+                  <X aria-hidden="true" />
+                </button>
+              </div>
             </div>
           </div>
           {/* Flat menu — no section headers */}
           <div className="header-side-menu__content">
-            <button
-              type="button"
-              onClick={handleNavigationModeToggle}
-              className="header-side-menu__item header-side-menu__item--navigation-mode"
-              aria-pressed={navigationMode === 'floating'}
-              aria-label={
-                navigationMode === 'floating'
-                  ? language === 'es'
-                    ? 'Usar barra lateral fija'
-                    : 'Use fixed sidebar'
-                  : language === 'es'
-                    ? 'Usar menú flotante'
-                    : 'Use floating menu'
-              }
-            >
-              {navigationMode === 'floating' ? (
-                <PanelLeft className="header-side-menu__icon" aria-hidden="true" />
-              ) : (
-                <span className="header-side-menu__icon" aria-hidden="true">
-                  ◫
-                </span>
-              )}
-              <span className="header-side-menu__text">
-                {navigationMode === 'floating'
-                  ? language === 'es'
-                    ? 'Usar barra lateral'
-                    : 'Use sidebar'
-                  : language === 'es'
-                    ? 'Usar menú flotante'
-                    : 'Use floating menu'}
-              </span>
-            </button>
             <button
               onClick={handleGoToMenu}
               className={`header-side-menu__item${!isInGame ? ' header-side-menu__item--active' : ''}`}
@@ -375,16 +371,6 @@ export const Header: React.FC<HeaderProps> = () => {
                 href={portalHref()}
                 className="header-side-menu__item header-side-menu__item--portal"
                 aria-label="Portal"
-                onClick={e => {
-                  if (isLocalPlatformHost() && !isUnifiedLocalPlatform()) {
-                    const theme = document.documentElement.classList.contains('dark')
-                      ? 'dark'
-                      : 'light';
-                    const url = new URL(e.currentTarget.href);
-                    url.searchParams.set('theme', theme);
-                    e.currentTarget.href = url.toString();
-                  }
-                }}
               >
                 <span className="header-side-menu__icon" aria-hidden="true">
                   ⌂
