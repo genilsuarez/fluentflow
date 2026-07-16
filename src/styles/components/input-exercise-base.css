@@ -75,7 +75,7 @@ html.dark .error-correction__no-data-text {
 .word-formation__exercise-card,
 .error-correction__exercise-card {
   background-color: var(--theme-bg-elevated, #ffffff);
-  border-radius: 1rem;
+  border-radius: var(--lp-radius-lg);
   box-shadow: var(--shadow-subtle, 0 1px 3px rgba(0, 0, 0, 0.1));
   padding: 1rem;
   margin: 0;
@@ -109,7 +109,7 @@ html.dark .error-correction__exercise-card {
   align-items: center;
   gap: 0.25rem;
   padding: 0.2rem 0.6rem;
-  border-radius: 999px;
+  border-radius: var(--lp-radius-full);
   font-size: 0.8rem;
   font-weight: 700;
   color: #f59e0b;
@@ -342,7 +342,7 @@ html.dark .error-correction__explanation-text {
   .word-formation__exercise-card,
   .error-correction__exercise-card {
     padding: 0.5rem;
-    border-radius: 0.5rem;
+    border-radius: var(--lp-radius-md);
   }
   .transformation__hint,
   .word-formation__hint,

@@ -72,12 +72,13 @@
   --animation-normal: 300ms;
 
   /* === BORDER RADIUS SYSTEM === */
-  /* RADIUS_SYSTEM - Consistent corner radius across components */
-  --radius-sm: 0.25rem;
+  /* RADIUS_SYSTEM - aliased to the shared --lp-radius-* scale (tokens.css) so
+     FluentFlow uses the same corner-radius system as the rest of the platform */
+  --radius-sm: var(--lp-radius-xs);
   /* 4px - Small elements */
-  --radius-md: 0.5rem;
-  /* 8px - Medium elements */
-  --radius-lg: 1rem;
+  --radius-md: var(--lp-radius-md);
+  /* 10px - Medium elements */
+  --radius-lg: var(--lp-radius-lg);
 
   /* === PADDING SYSTEM === */
   /* PADDING_SYSTEM - Consistent spacing across components */

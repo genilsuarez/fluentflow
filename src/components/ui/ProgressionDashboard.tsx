@@ -398,6 +398,24 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                         )}
                       </div>
                       <h3 className="progression-dashboard__unit-title">{getUnitTitle(unit)}</h3>
+                      {modules[0] && (
+                        <span
+                          className="progression-dashboard__level-badge"
+                          style={
+                            {
+                              '--level-color': getLevelColor(
+                                Array.isArray(modules[0].level)
+                                  ? modules[0].level[0]
+                                  : modules[0].level
+                              ),
+                            } as React.CSSProperties
+                          }
+                        >
+                          {Array.isArray(modules[0].level)
+                            ? modules[0].level[0].toUpperCase()
+                            : modules[0].level.toUpperCase()}
+                        </span>
+                      )}
                       {hasNextModule && !isExpanded && (
                         <div className="progression-dashboard__unit-next-indicator">
                           <span className="progression-dashboard__unit-next-label">
@@ -453,20 +471,6 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                                 {module.description}
                               </p>
                               <div className="progression-dashboard__module-meta">
-                                <span
-                                  className="progression-dashboard__level-badge"
-                                  style={
-                                    {
-                                      '--level-color': getLevelColor(
-                                        Array.isArray(module.level) ? module.level[0] : module.level
-                                      ),
-                                    } as React.CSSProperties
-                                  }
-                                >
-                                  {Array.isArray(module.level)
-                                    ? module.level[0].toUpperCase()
-                                    : module.level.toUpperCase()}
-                                </span>
                                 <span className="progression-dashboard__module-type">
                                   {t(MODE_I18N_KEYS[module.learningMode] || 'common.exercise')}
                                 </span>

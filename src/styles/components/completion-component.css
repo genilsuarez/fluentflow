@@ -70,7 +70,7 @@ html.dark .completion-component__no-data-text {
 /* === EXERCISE CARD === */
 .completion-component__exercise-card {
   background-color: var(--theme-bg-elevated, #ffffff);
-  border-radius: 1rem;
+  border-radius: var(--lp-radius-lg);
   box-shadow: var(--shadow-subtle, 0 1px 3px rgba(0, 0, 0, 0.1));
   padding: 1rem;
   margin: 0;
@@ -135,7 +135,7 @@ html.dark .completion-component__tip-text {
   margin-bottom: 1rem;
   padding: 1.25rem;
   background: linear-gradient(to right, #faf7f2, #f5f1eb);
-  border-radius: 1rem;
+  border-radius: var(--lp-radius-lg);
   border: 1px solid var(--theme-border-primary, #e8e0d4);
   box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
   width: 100%;

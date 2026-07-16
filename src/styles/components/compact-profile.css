@@ -30,7 +30,7 @@
 .compact-profile__container {
   background-color: var(--theme-bg-elevated, #ffffff);
   border: 1px solid var(--theme-border-modal, rgba(0, 0, 0, 0.1));
-  border-radius: 16px;
+  border-radius: var(--lp-radius-lg);
   box-shadow:
     0 20px 60px rgba(0, 0, 0, 0.18),
     0 4px 16px rgba(0, 0, 0, 0.08);
@@ -53,7 +53,7 @@
   background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
   position: relative;
   overflow: hidden;
-  border-radius: 16px 16px 0 0;
+  border-radius: var(--lp-radius-lg) var(--lp-radius-lg) 0 0;
 }
 
 .compact-profile__header::before {
@@ -185,7 +185,7 @@
   padding: 0.5rem 0.75rem;
   background-color: var(--theme-bg-elevated, #ffffff);
   border: 2px solid var(--theme-border-soft, #e5e7eb);
-  border-radius: 10px;
+  border-radius: var(--lp-radius-md);
   font-size: 0.875rem;
   color: var(--theme-text-primary, #111827);
   transition: all 0.2s ease;
@@ -254,7 +254,7 @@
   gap: 0.625rem;
   padding: 0.625rem 0.75rem;
   background: var(--theme-bg-subtle, #f9fafb);
-  border-radius: 12px;
+  border-radius: var(--lp-radius-lg);
   border: 1px solid var(--theme-border-soft, #e5e7eb);
   transition: all 0.2s ease;
 }
@@ -268,7 +268,7 @@
 .compact-profile__stat-icon {
   width: 2rem;
   height: 2rem;
-  border-radius: 8px;
+  border-radius: var(--lp-radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -327,7 +327,7 @@
   gap: 0.5rem;
   padding: 1.25rem 1rem;
   background: var(--theme-bg-subtle, #f9fafb);
-  border-radius: 12px;
+  border-radius: var(--lp-radius-lg);
   border: 1px dashed var(--theme-border-soft, #e5e7eb);
   text-align: center;
 }
@@ -372,12 +372,12 @@
 
 .compact-profile__content::-webkit-scrollbar-track {
   background-color: var(--theme-bg-subtle, #f9fafb);
-  border-radius: 9999px;
+  border-radius: var(--lp-radius-full);
 }
 
 .compact-profile__content::-webkit-scrollbar-thumb {
   background-color: var(--theme-primary-blue-light, #dbeafe);
-  border-radius: 9999px;
+  border-radius: var(--lp-radius-full);
 }
 
 /* === DARK MODE === */

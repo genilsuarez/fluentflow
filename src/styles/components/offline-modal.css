@@ -33,7 +33,7 @@
 
 .offline-modal__container {
   background-color: var(--theme-bg-elevated, #ffffff);
-  border-radius: 14px;
+  border-radius: var(--lp-radius-lg);
   box-shadow: var(--shadow-card, 0 4px 16px rgba(0, 0, 0, 0.08));
   max-width: 18rem;
   width: 100%;

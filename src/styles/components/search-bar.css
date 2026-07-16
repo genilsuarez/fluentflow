@@ -404,7 +404,7 @@ html.dark .main-menu__search .search-bar {
 /* Responsive border-radius */
 @media (min-width: 900px) {
   .main-menu__search .search-bar {
-    border-radius: 1rem;
+    border-radius: var(--lp-radius-lg);
   }
 }
 

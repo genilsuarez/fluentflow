@@ -59,7 +59,7 @@ html.dark .word-formation__root-word-label {
   color: #4f46e5;
   background-color: rgba(99, 102, 241, 0.12);
   padding: 0.25rem 0.75rem;
-  border-radius: 9999px;
+  border-radius: var(--lp-radius-full);
   text-transform: uppercase;
 }
 html.dark .word-formation__root-word-value {

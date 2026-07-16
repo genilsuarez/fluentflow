@@ -34,7 +34,7 @@
 
 .confirm-modal__container {
   background-color: var(--theme-bg-elevated, #ffffff);
-  border-radius: 16px;
+  border-radius: var(--lp-radius-lg);
   box-shadow: var(--shadow-modal, 0 20px 60px rgba(0, 0, 0, 0.3));
   width: min(90vw, 400px);
   max-height: 90vh;
@@ -100,7 +100,7 @@
 
 .confirm-modal__btn {
   padding: 0.5rem 1.25rem;
-  border-radius: 10px;
+  border-radius: var(--lp-radius-md);
   font-weight: 500;
   font-size: 0.8125rem;
   border: none;

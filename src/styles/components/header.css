@@ -135,7 +135,7 @@
   min-width: var(--button-size-mobile);
   min-height: var(--button-size-mobile);
   padding: 6px;
-  border-radius: 8px;
+  border-radius: var(--lp-radius-md);
   border: none;
   background-color: transparent;
   color: var(--header-text-secondary);
@@ -366,7 +366,7 @@
   height: 40px;
   background: transparent;
   color: #f59e0b;
-  border-radius: 5px;
+  border-radius: var(--lp-radius-sm);
   border: 1.5px solid #f59e0b;
   font-size: 10px;
   font-weight: 700;
@@ -597,7 +597,7 @@
   width: 100%;
   text-align: left;
   padding: 10px 12px;
-  border-radius: 10px;
+  border-radius: var(--lp-radius-md);
   display: flex;
   align-items: center;
   gap: 10px;

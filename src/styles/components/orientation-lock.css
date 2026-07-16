@@ -52,7 +52,7 @@
 
   /* Subtle elevation - theme-aware */
   background-color: var(--theme-bg-elevated, #ffffff);
-  border-radius: 1rem;
+  border-radius: var(--lp-radius-lg);
   padding: 3rem 2rem;
 
   /* Light mode shadow */

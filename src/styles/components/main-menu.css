@@ -3,8 +3,8 @@
 /* CSS Variables for Dynamic Height Calculations - ULTRA-COMPACT */
 :root {
   --grid-gap-mobile: 0.5rem;
-  --grid-gap-tablet: 0.625rem;
-  --grid-gap-desktop: 0.75rem;
+  --grid-gap-tablet: 1rem;
+  --grid-gap-desktop: 1.25rem;
   --grid-padding-mobile: 2px;
   --grid-padding-tablet: 2px;
   --grid-padding-desktop: 2px;
@@ -47,9 +47,12 @@
 
 /* === MAIN MENU CONTAINER - ULTRA COMPACT DESIGN === */
 .main-menu {
-  /* Responsive container - normal behavior for desktop */
-  max-width: 43.5rem;
+  /* Responsive container - matches LyricFlow .app-shell sizing (860px/846px) */
+  max-width: 53.75rem;
+  max-height: 52.875rem;
   width: 100%;
+  flex: 1;
+  min-height: 0;
   margin: 0.3125rem auto;
   padding: 0;
   display: flex;
@@ -66,7 +69,8 @@
 
   /* Subtle border for definition without being intrusive */
   border: 1px solid var(--lp-border);
-  border-radius: 0.75rem;
+  /* Matches LyricFlow .app-shell radius exactly (--lp-radius-xl) */
+  border-radius: var(--lp-radius-xl);
 
   /* Smooth transition for theme switching */
   transition:
@@ -161,7 +165,7 @@
     padding: 0;
     background: none;
     border: 1.5px solid var(--theme-border-medium, #e8e0d4);
-    border-radius: 0.5rem;
+    border-radius: var(--lp-radius-md);
     color: var(--theme-text-secondary, #5e5041);
     cursor: pointer;
     transition: all 0.15s ease;
@@ -193,7 +197,7 @@
   /* ENHANCED: Distinct background for visual hierarchy */
   background: var(--theme-bg-secondary, #faf7f2);
 
-  border-radius: 0.75rem;
+  border-radius: var(--lp-radius-lg);
   margin-bottom: 0.125rem;
 
   /* ENHANCED: Visual separation with border */
@@ -229,7 +233,7 @@
   transition: all 0.15s ease-in-out;
   white-space: nowrap;
   font-family: inherit;
-  border-radius: 0.625rem;
+  border-radius: var(--lp-radius-md);
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
@@ -329,18 +333,18 @@
   }
 }
 
-/* Large mobile: 3 columns */
+/* Large mobile / small tablet: 2 wider columns (matches LyricFlow's card proportions) */
 @media (min-width: 480px) and (max-width: 719px) {
   .main-menu__grid-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--grid-gap-tablet);
   }
 }
 
-/* Tablet and Desktop: 4 columns */
+/* Tablet and Desktop: 2 wider columns */
 @media (min-width: 720px) {
   .main-menu__grid-container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--grid-gap-desktop);
   }
 }
@@ -351,19 +355,20 @@
 @media (min-width: 520px) and (max-width: 759px) {
   .main-menu__grid {
     padding: var(--grid-padding-tablet);
-    max-height: var(--menu-content-height-tablet);
-    height: var(--menu-content-height-tablet);
+    flex: 1;
+    min-height: 0;
     overflow-y: auto;
     scrollbar-gutter: stable;
   }
   .main-menu .progression-dashboard {
-    height: var(--menu-content-height-tablet);
-    max-height: var(--menu-content-height-tablet);
-    overflow: hidden;
+    flex: 1;
+    min-height: 0;
     box-sizing: border-box;
   }
   .main-menu .progression-dashboard__units {
-    max-height: calc(var(--menu-content-height-tablet) - 4rem);
+    flex: 1;
+    min-height: 0;
+    max-height: none;
     overflow-y: auto;
   }
 }
@@ -372,21 +377,22 @@
 @media (min-width: 760px) {
   .main-menu__grid {
     padding: var(--grid-padding-desktop);
-    max-height: var(--menu-content-height-desktop);
-    height: var(--menu-content-height-desktop);
+    flex: 1;
+    min-height: 0;
     overflow-y: auto;
     scrollbar-gutter: stable;
     scrollbar-width: thin;
     scrollbar-color: var(--theme-border-medium, #e8e0d4) transparent;
   }
   .main-menu .progression-dashboard {
-    height: var(--menu-content-height-desktop);
-    max-height: var(--menu-content-height-desktop);
-    overflow: hidden;
+    flex: 1;
+    min-height: 0;
     box-sizing: border-box;
   }
   .main-menu .progression-dashboard__units {
-    max-height: calc(var(--menu-content-height-desktop) - 4rem);
+    flex: 1;
+    min-height: 0;
+    max-height: none;
     overflow-y: auto;
   }
 }
@@ -402,7 +408,7 @@
 
   .main-menu__grid::-webkit-scrollbar-thumb {
     background-color: var(--theme-border-medium, #e8e0d4);
-    border-radius: 2px;
+    border-radius: var(--lp-radius-xs);
   }
 
   .main-menu__grid::-webkit-scrollbar-thumb:hover {
@@ -413,8 +419,6 @@
 /* Large Desktop Enhancement - 9+ columns, minimal scrolling */
 @media (min-width: 1140px) {
   .main-menu__grid {
-    max-height: var(--menu-content-height-desktop);
-    height: var(--menu-content-height-desktop);
     padding: var(--grid-padding-large-desktop);
   }
 }
@@ -631,7 +635,7 @@ html.dark .main-menu__no-results-icon {
     scrollbar-width: thin;
     scrollbar-color: var(--theme-border-medium, #e8e0d4) transparent;
     border: 1px solid var(--theme-border-soft, #e8e0d4);
-    border-radius: 0.75rem;
+    border-radius: var(--lp-radius-lg);
     background: var(--theme-bg-elevated, #ffffff);
   }
 
@@ -643,7 +647,7 @@ html.dark .main-menu__no-results-icon {
     box-sizing: border-box;
     flex: none;
     border: 1px solid var(--theme-border-soft, #e8e0d4);
-    border-radius: 0.75rem;
+    border-radius: var(--lp-radius-lg);
     background: var(--theme-bg-elevated, #ffffff);
   }
 
@@ -851,7 +855,7 @@ html.dark .main-menu__grid::-webkit-scrollbar-thumb:hover {
   max-width: 280px;
   display: flex;
   background: var(--lp-border);
-  border-radius: 0.75rem;
+  border-radius: var(--lp-radius-lg);
   padding: 0.25rem;
   gap: 0.125rem;
   height: 2.8125rem;
@@ -1103,6 +1107,6 @@ html.dark .main-menu__error-text {
 /* Ultra-wide screen safety */
 @media (min-width: 1920px) {
   .main-menu {
-    max-width: min(43.5rem, 90vw) !important;
+    max-width: min(53.75rem, 90vw) !important;
   }
 }

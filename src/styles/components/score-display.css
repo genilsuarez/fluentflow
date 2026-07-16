@@ -132,7 +132,7 @@
   width: 50px;
   height: 5px;
   background-color: var(--theme-border-soft, #f3f4f6);
-  border-radius: 3px;
+  border-radius: var(--lp-radius-xs);
   overflow: hidden;
 }
 
@@ -140,7 +140,7 @@
   height: 100%;
   width: var(--progress-width, 0%);
   background-color: var(--success, #10b981);
-  border-radius: 3px;
+  border-radius: var(--lp-radius-xs);
   transition: width 0.3s ease-in-out;
 }
 

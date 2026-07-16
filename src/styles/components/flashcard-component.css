@@ -65,7 +65,7 @@
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border-radius: 1rem;
+  border-radius: var(--lp-radius-lg);
   box-shadow: var(--shadow-flashcard);
   transition: var(--transition-shadow);
   display: flex;

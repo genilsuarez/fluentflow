@@ -39,7 +39,7 @@
   text-align: center;
   background-color: var(--theme-bg-subtle, #f9fafb);
   color: var(--theme-text-secondary, #6b7280);
-  border-radius: 9999px;
+  border-radius: var(--lp-radius-full);
   border: 1px solid var(--theme-border-soft, #f3f4f6);
   flex-shrink: 0;
 }
@@ -48,7 +48,7 @@
   width: 100%;
   height: 6px;
   background-color: var(--theme-bg-soft, #f3f4f6);
-  border-radius: 9999px;
+  border-radius: var(--lp-radius-full);
   overflow: hidden;
   margin-bottom: 0.75rem;
   position: relative;

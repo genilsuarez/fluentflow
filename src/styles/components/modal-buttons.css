@@ -42,7 +42,7 @@
 /* === PRIMARY BUTTON STANDARD === */
 .modal__btn {
   padding: var(--padding-sm, 0.5rem) var(--padding-lg, 1.5rem);
-  border-radius: 10px;
+  border-radius: var(--lp-radius-md);
   font-weight: 500;
   font-size: 0.75rem;
   border: none;

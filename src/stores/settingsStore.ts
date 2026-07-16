@@ -104,6 +104,13 @@ export const useSettingsStore = create<SettingsState>()(
 
       // Actions
       setTheme: theme => {
+        // Smooth cross-app theme transition (matches DeskFlow/HubFlow/LyricFlow)
+        if (typeof document !== 'undefined') {
+          document.documentElement.classList.add('theme-transitioning');
+          setTimeout(() => {
+            document.documentElement.classList.remove('theme-transitioning');
+          }, 350);
+        }
         set({ theme });
         // Apply theme to DOM and update meta theme-color
         applyThemeToDOM(theme);

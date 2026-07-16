@@ -192,18 +192,25 @@ export const ModuleCard: React.FC<ModuleCardProps> = React.memo(
               {getIcon(module.learningMode)}
             </div>
           </div>
-          <h3 className="module-card__title">{module.name}</h3>
-          <div className="module-card__type" aria-label={`Exercise type: ${learningModeLabel}`}>
-            {learningModeLabel}
-          </div>
-          <div className="module-card__level" aria-label={`Difficulty level: ${difficultyLevel}`}>
-            {difficultyLevel}
-          </div>
-          <div
-            className="module-card__time"
-            aria-label={`Estimated time: ${module.estimatedTime || 5} minutes`}
-          >
-            {module.estimatedTime || 5}min
+          <div className="module-card__info">
+            <h3 className="module-card__title">{module.name}</h3>
+            <div className="module-card__meta">
+              <span className="module-card__type" aria-label={`Exercise type: ${learningModeLabel}`}>
+                {learningModeLabel}
+              </span>
+              <span
+                className="module-card__level"
+                aria-label={`Difficulty level: ${difficultyLevel}`}
+              >
+                {difficultyLevel}
+              </span>
+              <span
+                className="module-card__time"
+                aria-label={`Estimated time: ${module.estimatedTime || 5} minutes`}
+              >
+                {module.estimatedTime || 5}min
+              </span>
+            </div>
           </div>
 
           {/* Status indicators - Consistent positioning for all states */}

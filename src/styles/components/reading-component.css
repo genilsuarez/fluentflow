@@ -62,7 +62,7 @@
 
 .reading-component__content::-webkit-scrollbar-thumb {
   background-color: rgba(59, 130, 246, 0.3);
-  border-radius: 3px;
+  border-radius: var(--lp-radius-xs);
 }
 
 .reading-component__content::-webkit-scrollbar-thumb:hover {
@@ -88,7 +88,7 @@
   padding: 0.375rem 0.75rem;
   background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(139, 92, 246, 0.08) 100%);
   border: 1px solid rgba(59, 130, 246, 0.2);
-  border-radius: 9999px;
+  border-radius: var(--lp-radius-full);
   font-size: 0.75rem;
   font-weight: 500;
   color: var(--theme-primary-blue, #3b82f6);
@@ -203,7 +203,7 @@
 .reading-component__example-card {
   background: var(--reading-bg-primary);
   border: 1px solid rgba(59, 130, 246, 0.2);
-  border-radius: 0.5rem;
+  border-radius: var(--lp-radius-md);
   padding: 0.25rem;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 1px 4px rgba(59, 130, 246, 0.08);
@@ -267,7 +267,7 @@
   font-style: italic;
   padding: 0.1875rem 0.5rem;
   background: rgba(59, 130, 246, 0.04);
-  border-radius: 0.375rem;
+  border-radius: var(--lp-radius-sm);
   border-left: 2px solid var(--reading-accent-primary);
   display: flex;
   flex-wrap: wrap;
@@ -291,7 +291,7 @@
   white-space: pre-line;
   padding: 0.875rem 1rem;
   background: rgba(59, 130, 246, 0.05);
-  border-radius: 0.5rem;
+  border-radius: var(--lp-radius-md);
 }
 
 /* === DIALOGUE FORMAT - A:/B: speaker lines === */
@@ -479,7 +479,7 @@
     var(--reading-bg-tertiary) 100%
   );
   border: 2px solid var(--reading-accent-primary);
-  border-radius: 0.5rem;
+  border-radius: var(--lp-radius-md);
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 0.375rem;
@@ -500,7 +500,7 @@
   bottom: 0;
   width: 5px;
   background: var(--reading-accent-primary);
-  border-radius: 0.5rem 0 0 0.5rem;
+  border-radius: var(--lp-radius-md) 0 0 var(--lp-radius-md);
   transition: width 0.3s ease;
 }
 
@@ -584,7 +584,7 @@
   letter-spacing: normal;
   background: rgba(59, 130, 246, 0.15);
   padding: 0.125rem 0.5rem;
-  border-radius: 12px;
+  border-radius: var(--lp-radius-lg);
   margin-left: 0.25rem;
   transition: all 0.3s ease;
   border: 1px solid rgba(59, 130, 246, 0.3);
@@ -691,7 +691,7 @@
 .reading-component__vocabulary-card {
   background: var(--reading-bg-primary);
   border: 2px solid #3b82f6;
-  border-radius: 0.5rem;
+  border-radius: var(--lp-radius-md);
   padding: 0;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
@@ -768,7 +768,7 @@
   font-family: monospace;
   background: var(--reading-bg-secondary);
   padding: 0.0625rem 0.375rem;
-  border-radius: 0.1875rem;
+  border-radius: var(--lp-radius-xs);
   display: inline-block;
 }
 
@@ -793,7 +793,7 @@
   color: var(--reading-text-primary);
   padding: 0.1875rem 0.375rem;
   background: var(--reading-bg-secondary);
-  border-radius: 0.375rem;
+  border-radius: var(--lp-radius-sm);
   border-left: 2px solid var(--reading-accent-primary);
 }
 
@@ -804,7 +804,7 @@
   font-style: italic;
   padding: 0.1875rem 0.375rem;
   background: var(--reading-bg-tertiary);
-  border-radius: 0.5rem;
+  border-radius: var(--lp-radius-md);
   font-family: monospace;
   border-left: 2px solid rgba(139, 92, 246, 0.4);
 }
@@ -832,7 +832,7 @@
   border: 2px solid #3b82f6;
   padding: 0.25rem;
   margin-bottom: 0.25rem;
-  border-radius: 0.5rem;
+  border-radius: var(--lp-radius-md);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
@@ -922,7 +922,7 @@
   margin-top: 0.125rem;
   padding: 0.1875rem 0.3125rem;
   background: var(--reading-bg-secondary);
-  border-radius: 0.375rem;
+  border-radius: var(--lp-radius-sm);
   border-left: 2px solid var(--reading-accent-primary);
 }
 
@@ -957,7 +957,7 @@
   margin-top: 0.125rem;
   padding: 0.1875rem 0.3125rem;
   background: var(--theme-bg-error-subtle, #fef2f2);
-  border-radius: 0.375rem;
+  border-radius: var(--lp-radius-sm);
   border-left: 2px solid var(--theme-error, #ef4444);
 }
 
