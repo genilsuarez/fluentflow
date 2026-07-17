@@ -16,6 +16,8 @@ import { useTranslation } from '../../utils/i18n';
 import type { LearningModule } from '../../types';
 import { toast } from '../../stores/toastStore';
 import {
+  BarChart3,
+  List,
   Search as SearchIcon,
   X as XIcon,
   Filter as FilterIcon,
@@ -46,6 +48,7 @@ export const MainMenu: React.FC = () => {
   const [highlightedModuleId, setHighlightedModuleId] = useState<string | null>(null);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [isSearchExpanded, setIsSearchExpanded] = useState(false);
+  const [modulesView, setModulesView] = useState<'progress' | 'all'>('progress');
   const gridRef = useRef<HTMLDivElement>(null);
   const hasScrolledToNext = useRef(false);
 
@@ -261,7 +264,7 @@ export const MainMenu: React.FC = () => {
         // Home view: hero + stats inline
         <HomeDashboard />
       ) : (
-        // Modules view: search + filters + progression dashboard
+        // Modules view: search + filters + view toggle + content
         <>
           <div className="main-menu__header">
             <div
@@ -305,17 +308,78 @@ export const MainMenu: React.FC = () => {
               )}
               <UnifiedFilter isOpen={isFilterOpen} onToggle={() => setIsFilterOpen(prev => !prev)} />
             </div>
+
+            <div className="main-menu__view-toggle">
+              <button
+                className={`main-menu__view-btn ${modulesView === 'progress' ? 'main-menu__view-btn--active' : ''}`}
+                onClick={() => setModulesView('progress')}
+                aria-label={t('mainMenu.progressViewLabel')}
+              >
+                <BarChart3 className="main-menu__view-icon" />
+                {t('mainMenu.progressView')}
+              </button>
+              <button
+                className={`main-menu__view-btn ${modulesView === 'all' ? 'main-menu__view-btn--active' : ''}`}
+                onClick={() => setModulesView('all')}
+                aria-label={t('mainMenu.listViewLabel')}
+              >
+                <List className="main-menu__view-icon" />
+                {t('mainMenu.allModules')}
+              </button>
+            </div>
           </div>
 
-          <ProgressionDashboard
-            onModuleSelect={handleModuleClick}
-            searchQuery={query}
-            onClearSearch={() => {
-              setQuery('');
-              setIsSearchExpanded(false);
-              setIsFilterOpen(false);
-            }}
-          />
+          {modulesView === 'progress' ? (
+            <ProgressionDashboard
+              onModuleSelect={handleModuleClick}
+              searchQuery={query}
+              onClearSearch={() => {
+                setQuery('');
+                setIsSearchExpanded(false);
+                setIsFilterOpen(false);
+              }}
+            />
+          ) : (
+            // All Modules flat grid
+            <>
+              {query && results.length === 0 ? (
+                <div className="main-menu__no-results" role="status" aria-live="polite">
+                  <SearchIcon className="main-menu__no-results-icon" aria-hidden="true" />
+                  <p className="main-menu__no-results-text">
+                    {t('mainMenu.noModulesFound', undefined, { query })}
+                  </p>
+                  <p className="main-menu__no-results-hint">{t('mainMenu.searchHint')}</p>
+                </div>
+              ) : (
+                <div className="main-menu__grid" ref={gridRef}>
+                  <div
+                    className="main-menu__grid-container"
+                    role="grid"
+                    aria-label={t('mainMenu.modulesAvailable', undefined, { count: (query ? results : modules).length })}
+                  >
+                    {(query ? results : modules).map((module, index) => (
+                      <ModuleCard
+                        key={module.id}
+                        module={module}
+                        onClick={() => handleModuleClick(module)}
+                        tabIndex={0}
+                        role="gridcell"
+                        aria-posinset={index + 1}
+                        aria-setsize={(query ? results : modules).length}
+                        isNextRecommended={highlightedModuleId === module.id}
+                        isCurrentModule={currentModuleId === module.id}
+                        moduleStatus={moduleStatusMap.get(module.id)?.status ?? 'locked'}
+                        missingPrerequisitesCount={moduleStatusMap.get(module.id)?.missingCount ?? 0}
+                        hiddenDependencies={hiddenDepsMap?.get(module.id)}
+                        progressPercentage={moduleStatusMap.get(module.id)?.progressPct ?? 0}
+                        language={language}
+                      />
+                    ))}
+                  </div>
+                </div>
+              )}
+            </>
+          )}
         </>
       )}
     </div>
