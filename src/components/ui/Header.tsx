@@ -113,6 +113,16 @@ export const Header: React.FC<HeaderProps> = () => {
     returnToMenu();
     setShowSideMenu(false);
   };
+  const handleGoToHome = () => {
+    useAppStore.getState().setPreviousMenuContext('progression');
+    returnToMenu();
+    setShowSideMenu(false);
+  };
+  const handleGoToModules = () => {
+    useAppStore.getState().setPreviousMenuContext('list');
+    returnToMenu();
+    setShowSideMenu(false);
+  };
   // const handleSettings = () => {
   //   setShowSettings(!showSettings);
   //   if (!showSettings) {
@@ -292,15 +302,26 @@ export const Header: React.FC<HeaderProps> = () => {
           {/* Flat menu — no section headers */}
           <div className="header-side-menu__content">
             <button
-              onClick={handleGoToMenu}
-              className={`header-side-menu__item${!isInGame ? ' header-side-menu__item--active' : ''}`}
+              onClick={handleGoToHome}
+              className={`header-side-menu__item${!isInGame && useAppStore.getState().previousMenuContext === 'progression' ? ' header-side-menu__item--active' : ''}`}
               aria-label="Ir al inicio"
-              aria-current={!isInGame ? 'page' : undefined}
+              aria-current={!isInGame && useAppStore.getState().previousMenuContext === 'progression' ? 'page' : undefined}
             >
               <span className="header-side-menu__icon" aria-hidden="true">
                 ⌂
               </span>
               <span className="header-side-menu__text">Inicio</span>
+            </button>
+            <button
+              onClick={handleGoToModules}
+              className={`header-side-menu__item${!isInGame && useAppStore.getState().previousMenuContext === 'list' ? ' header-side-menu__item--active' : ''}`}
+              aria-label="Ir a módulos"
+              aria-current={!isInGame && useAppStore.getState().previousMenuContext === 'list' ? 'page' : undefined}
+            >
+              <span className="header-side-menu__icon" aria-hidden="true">
+                📚
+              </span>
+              <span className="header-side-menu__text">Módulos</span>
             </button>
             <button
               onClick={() => {

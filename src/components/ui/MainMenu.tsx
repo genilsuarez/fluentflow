@@ -3,7 +3,7 @@ import { SearchBar } from './SearchBar';
 import { ModuleCard } from './ModuleCard';
 import { ModuleGridSkeleton } from './LoadingSkeleton';
 import { ProgressionDashboard } from './ProgressionDashboard';
-import { ContinueLearningHero } from './ContinueLearningHero';
+import { HomeDashboard } from './HomeDashboard';
 import { useQueryClient } from '@tanstack/react-query';
 import { useAllModules, getHiddenDependencies } from '../../hooks/useModuleData';
 import { useProgression } from '../../hooks/useProgression';
@@ -16,8 +16,6 @@ import { useTranslation } from '../../utils/i18n';
 import type { LearningModule } from '../../types';
 import { toast } from '../../stores/toastStore';
 import {
-  List,
-  BarChart3,
   Search as SearchIcon,
   X as XIcon,
   Filter as FilterIcon,
@@ -34,7 +32,11 @@ export const MainMenu: React.FC = () => {
     useSettingsStore();
   const { t } = useTranslation(language);
   const queryClient = useQueryClient();
-  const [viewMode, setViewModeRaw] = useState<'progression' | 'list'>(previousMenuContext);
+  const [viewMode, setViewModeRaw] = useState<'progression' | 'list'>(() => {
+    // Map legacy stored values to the new semantics
+    // 'progression' now means 'home' tab, 'list' means 'modules' tab
+    return previousMenuContext === 'list' ? 'list' : 'progression';
+  });
   const [_isPending, startTransition] = useTransition();
   const setViewMode = React.useCallback((mode: 'progression' | 'list') => {
     startTransition(() => {
@@ -254,190 +256,66 @@ export const MainMenu: React.FC = () => {
 
   return (
     <div className="main-menu">
-      {viewMode === 'progression' && !query.trim() && <ContinueLearningHero />}
-
-      {/* Header with view toggle */}
-      <div className="main-menu__header">
-        <div
-          className={`main-menu__search-row${isSearchExpanded ? ' main-menu__search-row--search-expanded' : ''}`}
-        >
-          <div className="main-menu__search">
-            <SearchBar
-              query={query}
-              onQueryChange={val => {
-                setQuery(val);
-              }}
-              placeholder={t('common.searchPlaceholder')}
-              label={t('common.searchLabel')}
-              description={t('common.searchDescription')}
-              clearLabel={t('common.clearSearch')}
-              onSearchFocus={() => {
-                setIsSearchExpanded(true);
-                setIsFilterOpen(false);
-              }}
-              onSearchBlur={() => {
-                // Delay collapse so clear button click registers
-                // Only collapse if query is empty — keep expanded while text is visible
-                setTimeout(() => {
-                  if (!query) setIsSearchExpanded(false);
-                }, 150);
-              }}
-            />
-          </div>
-          {isSearchExpanded && (
-            <button
-              className="main-menu__search-close"
-              onClick={() => {
-                setQuery('');
-                setIsSearchExpanded(false);
-                const input = document.querySelector('.search-bar__input') as HTMLElement;
-                input?.blur();
-              }}
-              aria-label={t('common.closeSearch')}
-              type="button"
-            >
-              <XIcon size={16} />
-            </button>
-          )}
-          <UnifiedFilter isOpen={isFilterOpen} onToggle={() => setIsFilterOpen(prev => !prev)} />
-        </div>
-
-        <div className="main-menu__view-toggle">
-          <button
-            className={`main-menu__view-btn ${viewMode === 'progression' ? 'main-menu__view-btn--active' : ''}`}
-            onClick={() => setViewMode('progression')}
-            aria-label={t('mainMenu.progressViewLabel')}
-          >
-            <BarChart3 className="main-menu__view-icon" />
-            {t('mainMenu.progressView')}
-          </button>
-          <button
-            className={`main-menu__view-btn ${viewMode === 'list' ? 'main-menu__view-btn--active' : ''}`}
-            onClick={() => setViewMode('list')}
-            aria-label={t('mainMenu.listViewLabel')}
-          >
-            <List className="main-menu__view-icon" />
-            {t('mainMenu.allModules')}
-          </button>
-        </div>
-      </div>
-
-      {/* Content based on view mode and search */}
-      {query && viewMode === 'list' ? (
-        // Search results view (All Modules)
-        results.length === 0 ? (
-          <div className="main-menu__no-results" role="status" aria-live="polite">
-            <SearchIcon className="main-menu__no-results-icon" aria-hidden="true" />
-            <p className="main-menu__no-results-text">
-              {t('mainMenu.noModulesFound', undefined, { query })}
-            </p>
-            <p className="main-menu__no-results-hint">{t('mainMenu.searchHint')}</p>
-          </div>
-        ) : (
-          <>
-            <div className="main-menu__results-header" role="status" aria-live="polite">
-              <SearchIcon className="main-menu__results-header-icon" aria-hidden="true" />
-              <span className="main-menu__results-header-text">
-                {t('mainMenu.showingResults', undefined, {
-                  count: results.length,
-                  total: modules.length,
-                })}
-              </span>
-            </div>
-            <div className="main-menu__grid">
-              <div
-                className="main-menu__grid-container"
-                role="grid"
-                aria-label={t('mainMenu.modulesAvailable', undefined, { count: results.length })}
-              >
-                {results.map((module, index) => (
-                  <ModuleCard
-                    key={module.id}
-                    module={module}
-                    onClick={() => handleModuleClick(module)}
-                    tabIndex={0}
-                    role="gridcell"
-                    aria-posinset={index + 1}
-                    aria-setsize={results.length}
-                    isCurrentModule={currentModuleId === module.id}
-                    moduleStatus={moduleStatusMap.get(module.id)?.status ?? 'locked'}
-                    missingPrerequisitesCount={moduleStatusMap.get(module.id)?.missingCount ?? 0}
-                    hiddenDependencies={hiddenDepsMap?.get(module.id)}
-                    progressPercentage={moduleStatusMap.get(module.id)?.progressPct ?? 0}
-                    language={language}
-                  />
-                ))}
-              </div>
-            </div>
-          </>
-        )
-      ) : viewMode === 'progression' ? (
-        // Progression dashboard view
-        <ProgressionDashboard
-          onModuleSelect={handleModuleClick}
-          searchQuery={query}
-          onClearSearch={() => {
-            setQuery('');
-            setIsSearchExpanded(false);
-            setIsFilterOpen(false);
-          }}
-        />
+      {/* Content based on menu context */}
+      {viewMode === 'progression' ? (
+        // Home view: hero + stats inline
+        <HomeDashboard />
       ) : (
-        // List view (original grid)
+        // Modules view: search + filters + progression dashboard
         <>
-          {!query && (categories.length > 0 || learningModes?.length > 0 || level !== 'all') && (
-            <div className="main-menu__results-header" role="status" aria-live="polite">
-              <FilterIcon className="main-menu__results-header-icon" aria-hidden="true" />
-              <span className="main-menu__results-header-text">
-                {t('mainMenu.showingResults', undefined, {
-                  count: modules.length,
-                  total: allModulesRaw.length,
-                })}
-              </span>
-              <button
-                className="main-menu__clear-filters-btn"
-                type="button"
-                onClick={() => {
-                  setCategories([]);
-                  setLearningModes([]);
-                  setLevel('all');
-                  setIsFilterOpen(false);
-                  setQuery('');
-                  setIsSearchExpanded(false);
-                }}
-                aria-label={t('mainMenu.clearFilters')}
-              >
-                <XIcon size={14} aria-hidden="true" />
-                {t('mainMenu.clearFilters')}
-              </button>
-            </div>
-          )}
-          <div className="main-menu__grid" ref={gridRef}>
+          <div className="main-menu__header">
             <div
-              className="main-menu__grid-container"
-              role="grid"
-              aria-label={t('mainMenu.modulesAvailable', undefined, { count: modules.length })}
+              className={`main-menu__search-row${isSearchExpanded ? ' main-menu__search-row--search-expanded' : ''}`}
             >
-              {modules.map((module, index) => (
-                <ModuleCard
-                  key={module.id}
-                  module={module}
-                  onClick={() => handleModuleClick(module)}
-                  tabIndex={0}
-                  role="gridcell"
-                  aria-posinset={index + 1}
-                  aria-setsize={modules.length}
-                  isNextRecommended={highlightedModuleId === module.id}
-                  isCurrentModule={currentModuleId === module.id}
-                  moduleStatus={moduleStatusMap.get(module.id)?.status ?? 'locked'}
-                  missingPrerequisitesCount={moduleStatusMap.get(module.id)?.missingCount ?? 0}
-                  hiddenDependencies={hiddenDepsMap?.get(module.id)}
-                  progressPercentage={moduleStatusMap.get(module.id)?.progressPct ?? 0}
-                  language={language}
+              <div className="main-menu__search">
+                <SearchBar
+                  query={query}
+                  onQueryChange={val => {
+                    setQuery(val);
+                  }}
+                  placeholder={t('common.searchPlaceholder')}
+                  label={t('common.searchLabel')}
+                  description={t('common.searchDescription')}
+                  clearLabel={t('common.clearSearch')}
+                  onSearchFocus={() => {
+                    setIsSearchExpanded(true);
+                    setIsFilterOpen(false);
+                  }}
+                  onSearchBlur={() => {
+                    setTimeout(() => {
+                      if (!query) setIsSearchExpanded(false);
+                    }, 150);
+                  }}
                 />
-              ))}
+              </div>
+              {isSearchExpanded && (
+                <button
+                  className="main-menu__search-close"
+                  onClick={() => {
+                    setQuery('');
+                    setIsSearchExpanded(false);
+                    const input = document.querySelector('.search-bar__input') as HTMLElement;
+                    input?.blur();
+                  }}
+                  aria-label={t('common.closeSearch')}
+                  type="button"
+                >
+                  <XIcon size={16} />
+                </button>
+              )}
+              <UnifiedFilter isOpen={isFilterOpen} onToggle={() => setIsFilterOpen(prev => !prev)} />
             </div>
           </div>
+
+          <ProgressionDashboard
+            onModuleSelect={handleModuleClick}
+            searchQuery={query}
+            onClearSearch={() => {
+              setQuery('');
+              setIsSearchExpanded(false);
+              setIsFilterOpen(false);
+            }}
+          />
         </>
       )}
     </div>
