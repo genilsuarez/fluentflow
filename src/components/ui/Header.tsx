@@ -325,20 +325,6 @@ export const Header: React.FC<HeaderProps> = () => {
             </button>
             <button
               onClick={() => {
-                setShowMyProgressTab('dashboard');
-                setShowMyProgress(true);
-                setShowSideMenu(false);
-              }}
-              className="header-side-menu__item"
-              aria-label="Mi progreso"
-            >
-              <span className="header-side-menu__icon" aria-hidden="true">
-                ↗
-              </span>
-              <span className="header-side-menu__text">Mi Progreso</span>
-            </button>
-            <button
-              onClick={() => {
                 setShowSettings(true);
                 setShowSideMenu(false);
               }}
@@ -350,6 +336,22 @@ export const Header: React.FC<HeaderProps> = () => {
               </span>
               <span className="header-side-menu__text">Ajustes</span>
             </button>
+            {developmentMode && (
+              <button
+                onClick={() => {
+                  setShowMyProgressTab('dashboard');
+                  setShowMyProgress(true);
+                  setShowSideMenu(false);
+                }}
+                className="header-side-menu__item"
+                aria-label="Mi progreso"
+              >
+                <span className="header-side-menu__icon" aria-hidden="true">
+                  ↗
+                </span>
+                <span className="header-side-menu__text">Mi Progreso</span>
+              </button>
+            )}
             {/* Spacer + bottom actions */}
             <div className="header-side-menu__spacer" />
             <div className="header-side-menu__footer">
