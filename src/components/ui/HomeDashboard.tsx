@@ -50,7 +50,7 @@ export const HomeDashboard: React.FC = () => {
 
   return (
     <div className="home-dash">
-      {/* Hero Section */}
+      {/* Hero Section — compact: ring + title + CTA in one row */}
       <div className="home-dash__hero">
         <div className="home-dash__hero-ring">
           <svg viewBox="0 0 36 36" className="home-dash__ring-svg">
@@ -66,52 +66,49 @@ export const HomeDashboard: React.FC = () => {
           </svg>
           <div className="home-dash__ring-center">
             <strong>{stats.completionPercentage}%</strong>
-            <span>{t('learningPath.complete', 'complete')}</span>
           </div>
         </div>
         <div className="home-dash__hero-body">
-          <div className="home-dash__hero-headline">
-            <span className="home-dash__hero-kicker">
-              {t('dashboard.yourProgress', 'Your progress')}
-            </span>
-            <h2 className="home-dash__hero-title">
-              {stats.completedModules} {t('common.of', 'of')} {stats.totalModules}{' '}
-              {t('common.modules', 'modules')}
-            </h2>
-          </div>
-          {nextRecommended && (
-            <button className="home-dash__hero-cta" onClick={handleContinue} type="button">
-              <span className="home-dash__cta-module">
-                <span
-                  className="home-dash__cta-level"
-                  style={
-                    {
-                      '--level-color': getLevelColor(
-                        Array.isArray(nextRecommended.level)
-                          ? nextRecommended.level[0]
-                          : nextRecommended.level
-                      ),
-                    } as React.CSSProperties
-                  }
-                >
-                  {Array.isArray(nextRecommended.level)
-                    ? nextRecommended.level[0].toUpperCase()
-                    : nextRecommended.level.toUpperCase()}
-                </span>
-                <span className="home-dash__cta-info">
-                  <span className="home-dash__cta-name">{nextRecommended.name}</span>
-                  <span className="home-dash__cta-type">
-                    {t(MODE_I18N_KEYS[nextRecommended.learningMode] || 'common.exercise')}
-                  </span>
-                </span>
-              </span>
-              <span className="home-dash__cta-play">
-                <Play size={14} />
-                {t('common.continue', 'Continue')}
-              </span>
-            </button>
-          )}
+          <span className="home-dash__hero-kicker">
+            {t('dashboard.yourProgress', 'Your progress')}
+          </span>
+          <h2 className="home-dash__hero-title">
+            {stats.completedModules} {t('common.of', 'of')} {stats.totalModules}{' '}
+            {t('common.modules', 'modules')}
+          </h2>
         </div>
+        {nextRecommended && (
+          <button className="home-dash__hero-cta" onClick={handleContinue} type="button">
+            <span className="home-dash__cta-module">
+              <span
+                className="home-dash__cta-level"
+                style={
+                  {
+                    '--level-color': getLevelColor(
+                      Array.isArray(nextRecommended.level)
+                        ? nextRecommended.level[0]
+                        : nextRecommended.level
+                    ),
+                  } as React.CSSProperties
+                }
+              >
+                {Array.isArray(nextRecommended.level)
+                  ? nextRecommended.level[0].toUpperCase()
+                  : nextRecommended.level.toUpperCase()}
+              </span>
+              <span className="home-dash__cta-info">
+                <span className="home-dash__cta-name">{nextRecommended.name}</span>
+                <span className="home-dash__cta-type">
+                  {t(MODE_I18N_KEYS[nextRecommended.learningMode] || 'common.exercise')}
+                </span>
+              </span>
+            </span>
+            <span className="home-dash__cta-play">
+              <Play size={14} />
+              {t('common.continue', 'Continue')}
+            </span>
+          </button>
+        )}
       </div>
 
       {/* Stats Cards */}
