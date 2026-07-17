@@ -492,9 +492,18 @@
   color: var(--theme-text-tertiary, #9c8e7c);
 }
 
-/* Dark mode for locked cards - IMPROVED CONTRAST */
-html.dark .module-card--locked .module-card__title {
-  color: var(--theme-text-secondary, #d4cabb);
+/* Dark mode for locked cards — clearly inert: no spine, dashed border, dimmed content */
+html.dark .module-card--locked {
+  background: var(--lp-bg, #1a1714);
+  border: 1.5px dashed var(--lp-border, #3d362c);
+}
+
+html.dark .module-card--locked::before {
+  display: none;
+}
+
+html.dark .module-card--locked .module-card__content {
+  opacity: 0.38;
 }
 
 /* === PROGRESS INDICATOR === */
