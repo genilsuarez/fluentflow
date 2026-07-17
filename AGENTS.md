@@ -122,7 +122,7 @@ Ver detalle completo en `docs/browser-localstorage-mcp.md`.
 |---------|-------------|
 | `npm run validate:all` | Validaciones base: data-paths + BEM |
 | `npm run validate:full` | Base + analyze-unused + deep-analysis (47 pasadas) |
-| `npm run validate:content` | Validación profunda de contenido JSON (160 módulos) |
+| `npm run validate:content` | Validación profunda de contenido JSON (300+ módulos) |
 | `npm run validate:content:errors` | Solo errores de contenido |
 | `npm run analyze:unused` | 17 pasadas: archivos huérfanos, exports muertos, CSS sin uso, BEM, !important audit |
 | `npm run analyze:deep` | DA+DB+DC (30 pasadas): CSS quality, cross-file, JSON integrity |

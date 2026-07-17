@@ -7,20 +7,8 @@ import { useModuleNavigation } from '../../hooks/useModuleNavigation';
 import { CheckCircle, Lock, Play, ChevronDown, ChevronRight, X as XIcon } from 'lucide-react';
 import type { LearningModule } from '../../types';
 import Fuse from 'fuse.js';
+import { MODE_I18N_KEYS, getLevelColor } from '../../utils/progressionDisplay';
 import '../../styles/components/progression-dashboard.css';
-
-const MODE_I18N_KEYS: Record<string, string> = {
-  flashcard: 'learning.flashcardMode',
-  quiz: 'learning.quizMode',
-  completion: 'learning.completionMode',
-  sorting: 'learning.sortingMode',
-  matching: 'learning.matchingMode',
-  reading: 'learning.readingMode',
-  reordering: 'learning.reorderingMode',
-  transformation: 'learning.transformationMode',
-  'word-formation': 'learning.wordFormationMode',
-  'error-correction': 'learning.errorCorrectionMode',
-};
 
 interface ProgressionDashboardProps {
   onModuleSelect: (module: LearningModule) => void;
@@ -159,12 +147,6 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
     }
   };
 
-  const handleContinueLearning = () => {
-    if (nextRecommended) {
-      navigateToModule(nextRecommended);
-    }
-  };
-
   const handleModuleClick = (module: LearningModule) => {
     navigateToModule(module);
   };
@@ -179,18 +161,6 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
       6: t('mainMenu.unitMastery'),
     };
     return titles[unit] || t('mainMenu.unit', undefined, { unit });
-  };
-
-  const getLevelColor = (level: string): string => {
-    const colors = {
-      a1: '#10b981', // green
-      a2: '#3b82f6', // blue
-      b1: '#f59e0b', // amber
-      b2: '#ef4444', // red
-      c1: '#8b5cf6', // violet
-      c2: '#ec4899', // pink
-    };
-    return colors[level as keyof typeof colors] || '#6b7280';
   };
 
   // Memoize Fuse instance separately — avoids re-indexing on every filter/level change
@@ -307,51 +277,6 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
             <XIcon size={14} aria-hidden="true" />
             {t('mainMenu.clearFilters')}
           </button>
-        </div>
-      )}
-
-      {/* Continue Learning Section */}
-      {nextRecommended && !searchQuery.trim() && (
-        <div className="progression-dashboard__hero">
-          <div className="progression-dashboard__continue">
-            <div className="progression-dashboard__next-module">
-              <div className="progression-dashboard__next-info">
-                <h3 className="progression-dashboard__next-name">{nextRecommended.name}</h3>
-                <p className="progression-dashboard__next-desc">{nextRecommended.description}</p>
-                <div className="progression-dashboard__next-meta">
-                  <span
-                    className="progression-dashboard__level-badge"
-                    style={
-                      {
-                        '--level-color': getLevelColor(
-                          Array.isArray(nextRecommended.level)
-                            ? nextRecommended.level[0]
-                            : nextRecommended.level
-                        ),
-                      } as React.CSSProperties
-                    }
-                  >
-                    {Array.isArray(nextRecommended.level)
-                      ? nextRecommended.level[0].toUpperCase()
-                      : nextRecommended.level.toUpperCase()}
-                  </span>
-                  <span className="progression-dashboard__module-type progression-dashboard__module-type--hero">
-                    {t(MODE_I18N_KEYS[nextRecommended.learningMode] || 'common.exercise')}
-                  </span>
-                  <span className="progression-dashboard__time">
-                    {nextRecommended.estimatedTime}min
-                  </span>
-                </div>
-              </div>
-              <button
-                className="progression-dashboard__continue-btn"
-                onClick={handleContinueLearning}
-              >
-                <Play className="progression-dashboard__continue-icon" />
-                {t('common.continue')}
-              </button>
-            </div>
-          </div>
         </div>
       )}
 

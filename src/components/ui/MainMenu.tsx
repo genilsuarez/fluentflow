@@ -3,6 +3,7 @@ import { SearchBar } from './SearchBar';
 import { ModuleCard } from './ModuleCard';
 import { ModuleGridSkeleton } from './LoadingSkeleton';
 import { ProgressionDashboard } from './ProgressionDashboard';
+import { ContinueLearningHero } from './ContinueLearningHero';
 import { useQueryClient } from '@tanstack/react-query';
 import { useAllModules, getHiddenDependencies } from '../../hooks/useModuleData';
 import { useProgression } from '../../hooks/useProgression';
@@ -253,6 +254,8 @@ export const MainMenu: React.FC = () => {
 
   return (
     <div className="main-menu">
+      {viewMode === 'progression' && !query.trim() && <ContinueLearningHero />}
+
       {/* Header with view toggle */}
       <div className="main-menu__header">
         <div
