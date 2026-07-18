@@ -1,5 +1,5 @@
 import React, { useEffect, useCallback } from 'react';
-import { Play, Trophy, Target, Clock, TrendingUp, CheckCircle } from 'lucide-react';
+import { Play, Trophy, Target, Clock, TrendingUp } from 'lucide-react';
 import { useProgressStore } from '../../stores/progressStore';
 import { useUserStore } from '../../stores/userStore';
 import { useSettingsStore } from '../../stores/settingsStore';
@@ -131,9 +131,7 @@ export const HomeDashboard: React.FC = () => {
           <Trophy className="home-dash__stat-icon" />
           <div className="home-dash__stat-content">
             <span className="home-dash__stat-value">{totalScore.toLocaleString()}</span>
-            <span className="home-dash__stat-label">
-              {t('dashboard.totalScore', 'Points')}
-            </span>
+            <span className="home-dash__stat-label">{t('dashboard.totalScore', 'Points')}</span>
           </div>
         </div>
         <div className="home-dash__stat home-dash__stat--accuracy">
@@ -158,9 +156,7 @@ export const HomeDashboard: React.FC = () => {
           <TrendingUp className="home-dash__stat-icon" />
           <div className="home-dash__stat-content">
             <span className="home-dash__stat-value">{Math.round(totalTimeSpent / 60)}m</span>
-            <span className="home-dash__stat-label">
-              {t('dashboard.timeSpent', 'Practiced')}
-            </span>
+            <span className="home-dash__stat-label">{t('dashboard.timeSpent', 'Practiced')}</span>
           </div>
         </div>
       </div>
@@ -174,7 +170,9 @@ export const HomeDashboard: React.FC = () => {
           {progressData.length === 0 ? (
             <div className="home-dash__empty">
               <TrendingUp className="home-dash__empty-icon" />
-              <p>{t('dashboard.completeModulesMessage', 'Complete modules to see your progress')}</p>
+              <p>
+                {t('dashboard.completeModulesMessage', 'Complete modules to see your progress')}
+              </p>
             </div>
           ) : (
             <div className="home-dash__bars">
@@ -186,7 +184,11 @@ export const HomeDashboard: React.FC = () => {
                     <div className="home-dash__bar">
                       <div
                         className="home-dash__bar-fill"
-                        style={{ '--bar-h': `${Math.max(day.averageScore || 0, 4)}%` } as React.CSSProperties}
+                        style={
+                          {
+                            '--bar-h': `${Math.max(day.averageScore || 0, 4)}%`,
+                          } as React.CSSProperties
+                        }
                       />
                     </div>
                     <span className="home-dash__bar-label">{dayName}</span>

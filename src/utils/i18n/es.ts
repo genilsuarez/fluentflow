@@ -40,7 +40,8 @@ export const es = {
     showingResults: '{{count}} de {{total}} ejercicios',
     clearFilters: 'Limpiar',
     noModulesFound: 'No se encontraron ejercicios para "{{query}}"',
-    searchHint: 'Intenta ajustar los términos de búsqueda o explora todos los ejercicios disponibles.',
+    searchHint:
+      'Intenta ajustar los términos de búsqueda o explora todos los ejercicios disponibles.',
     retryLoading: 'Reintentar carga de ejercicios',
     tryAgain: 'Intentar de Nuevo',
     modulesAvailable: '{{count}} ejercicios de aprendizaje disponibles',

@@ -109,10 +109,6 @@ export const Header: React.FC<HeaderProps> = () => {
     setNavigationMode(nextMode);
     setShowSideMenu(false);
   };
-  const handleGoToMenu = () => {
-    returnToMenu();
-    setShowSideMenu(false);
-  };
   const handleGoToHome = () => {
     useAppStore.getState().setPreviousMenuContext('progression');
     returnToMenu();
@@ -305,7 +301,11 @@ export const Header: React.FC<HeaderProps> = () => {
               onClick={handleGoToHome}
               className={`header-side-menu__item${!isInGame && useAppStore.getState().previousMenuContext === 'progression' ? ' header-side-menu__item--active' : ''}`}
               aria-label="Ir al inicio"
-              aria-current={!isInGame && useAppStore.getState().previousMenuContext === 'progression' ? 'page' : undefined}
+              aria-current={
+                !isInGame && useAppStore.getState().previousMenuContext === 'progression'
+                  ? 'page'
+                  : undefined
+              }
             >
               <span className="header-side-menu__icon" aria-hidden="true">
                 ⌂
@@ -316,7 +316,11 @@ export const Header: React.FC<HeaderProps> = () => {
               onClick={handleGoToModules}
               className={`header-side-menu__item${!isInGame && useAppStore.getState().previousMenuContext === 'list' ? ' header-side-menu__item--active' : ''}`}
               aria-label="Ir a ejercicios"
-              aria-current={!isInGame && useAppStore.getState().previousMenuContext === 'list' ? 'page' : undefined}
+              aria-current={
+                !isInGame && useAppStore.getState().previousMenuContext === 'list'
+                  ? 'page'
+                  : undefined
+              }
             >
               <span className="header-side-menu__icon" aria-hidden="true">
                 📚

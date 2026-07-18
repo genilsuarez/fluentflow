@@ -15,12 +15,7 @@ import { useProgressStore } from '../../stores/progressStore';
 import { useTranslation } from '../../utils/i18n';
 import type { LearningModule } from '../../types';
 import { toast } from '../../stores/toastStore';
-import {
-  BarChart3,
-  List,
-  Search as SearchIcon,
-  X as XIcon,
-} from 'lucide-react';
+import { BarChart3, List, Search as SearchIcon, X as XIcon } from 'lucide-react';
 import { UnifiedFilter } from './UnifiedFilter';
 import '../../styles/components/main-menu.css';
 
@@ -29,8 +24,7 @@ export const MainMenu: React.FC = () => {
   const progression = useProgression();
   const { query, setQuery, results } = useSearch(modules);
   const { setPreviousMenuContext, previousMenuContext } = useAppStore();
-  const { language, categories, learningModes, level } =
-    useSettingsStore();
+  const { language, categories, learningModes, level: _level } = useSettingsStore();
   const { t } = useTranslation(language);
   const queryClient = useQueryClient();
   const [viewMode, setViewModeRaw] = useState<'progression' | 'list'>(() => {
@@ -298,7 +292,10 @@ export const MainMenu: React.FC = () => {
                   <XIcon size={16} />
                 </button>
               )}
-              <UnifiedFilter isOpen={isFilterOpen} onToggle={() => setIsFilterOpen(prev => !prev)} />
+              <UnifiedFilter
+                isOpen={isFilterOpen}
+                onToggle={() => setIsFilterOpen(prev => !prev)}
+              />
             </div>
 
             <div className="main-menu__view-toggle">
@@ -347,7 +344,9 @@ export const MainMenu: React.FC = () => {
                   <div
                     className="main-menu__grid-container"
                     role="grid"
-                    aria-label={t('mainMenu.modulesAvailable', undefined, { count: (query ? results : modules).length })}
+                    aria-label={t('mainMenu.modulesAvailable', undefined, {
+                      count: (query ? results : modules).length,
+                    })}
                   >
                     {(query ? results : modules).map((module, index) => (
                       <ModuleCard
@@ -361,7 +360,9 @@ export const MainMenu: React.FC = () => {
                         isNextRecommended={highlightedModuleId === module.id}
                         isCurrentModule={currentModuleId === module.id}
                         moduleStatus={moduleStatusMap.get(module.id)?.status ?? 'locked'}
-                        missingPrerequisitesCount={moduleStatusMap.get(module.id)?.missingCount ?? 0}
+                        missingPrerequisitesCount={
+                          moduleStatusMap.get(module.id)?.missingCount ?? 0
+                        }
                         hiddenDependencies={hiddenDepsMap?.get(module.id)}
                         progressPercentage={moduleStatusMap.get(module.id)?.progressPct ?? 0}
                         language={language}
