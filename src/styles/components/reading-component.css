@@ -467,8 +467,6 @@
   letter-spacing: -0.02em;
 }
 
-
-
 /* === SUMMARY SECTION TRIGGER - Clean collapsible === */
 .reading-component__summary-section-trigger {
   width: 100%;
@@ -480,7 +478,9 @@
   border: 1px solid var(--reading-border-primary);
   border-radius: var(--lp-radius-lg);
   cursor: pointer;
-  transition: border-color 0.2s ease, background-color 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease;
   margin-bottom: 0.5rem;
   text-align: left;
   position: relative;
@@ -595,7 +595,9 @@
   border: 1px solid var(--reading-border-primary);
   border-radius: var(--lp-radius-md);
   padding: 0;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
   position: relative;
   overflow: hidden;
 }
