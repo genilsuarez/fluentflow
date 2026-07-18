@@ -28,13 +28,6 @@
     padding-left: 2.5rem;
   }
 
-  /* === CONTINUE BUTTON FIX === */
-  .progression-dashboard__continue-btn {
-    background: #ffffff;
-    color: #1e40af;
-    border: 2px solid #1e40af;
-  }
-
   /* === MODULE CARD: TEXT OVERFLOW === */
   .module-card {
     overflow: hidden;

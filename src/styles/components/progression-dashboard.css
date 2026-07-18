@@ -83,122 +83,6 @@
   margin: 0;
 }
 
-/* Continue Learning Section - HERO CTA */
-.progression-dashboard__hero {
-  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #2563eb 100%);
-  border-radius: var(--lp-radius-lg);
-  padding: 0;
-  margin: 0.75rem 1rem 1rem;
-  color: white;
-  box-shadow:
-    0 4px 16px rgba(30, 64, 175, 0.25),
-    0 1px 3px rgba(0, 0, 0, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
-}
-
-.progression-dashboard__next-module {
-  padding: 0.625rem 0.875rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
-}
-
-.progression-dashboard__next-level-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.25rem;
-  flex-shrink: 0;
-  padding-right: 0.75rem;
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.progression-dashboard__next-info {
-  flex: 1;
-  min-width: 0;
-  text-align: left;
-}
-
-.progression-dashboard__next-name {
-  font-size: 1.125rem;
-  font-weight: 700;
-  margin: 0 0 0.1875rem 0;
-  padding: 0;
-  color: #ffffff;
-  line-height: 1.2;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  line-clamp: 1;
-  -webkit-box-orient: vertical;
-}
-
-.progression-dashboard__next-desc {
-  color: rgba(255, 255, 255, 0.95);
-  margin: 0;
-  line-height: 1.3;
-  font-size: 0.875rem;
-  font-weight: 400;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  line-clamp: 1;
-  -webkit-box-orient: vertical;
-}
-
-.progression-dashboard__level-badge {
-  flex-shrink: 0;
-  padding: 0.0625rem 0.375rem;
-  border-radius: var(--lp-radius-md);
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: white;
-  text-transform: uppercase;
-  background-color: var(--level-color, var(--theme-accent-primary, #3b82f6));
-}
-
-.progression-dashboard__continue-btn {
-  background: rgba(255, 255, 255, 0.95);
-  color: #1e40af;
-  border: 2px solid rgba(255, 255, 255, 0.6);
-  padding: 0.375rem 0.75rem;
-  border-radius: var(--lp-radius-md);
-  font-weight: 700;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.375rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  text-shadow: none;
-  letter-spacing: 0.025em;
-  line-height: 1;
-  backdrop-filter: blur(8px);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  white-space: nowrap;
-  flex-shrink: 0;
-  margin-top: 0.125rem;
-}
-
-.progression-dashboard__continue-btn:hover {
-  background: rgba(255, 255, 255, 1);
-  color: #1e40af;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
-}
-
-.progression-dashboard__continue-icon {
-  width: 1.25rem;
-  height: 1.25rem;
-}
-
 /* Units Section - VERTICAL STACK WITH ELEGANT SCROLL */
 .progression-dashboard__units {
   width: 100%;
@@ -394,21 +278,17 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0.5rem;
-  animation: slideDown 0.3s ease-out;
+  animation: fadeIn 0.15s ease-out;
   overflow: hidden;
 }
 
-@keyframes slideDown {
+@keyframes fadeIn {
   from {
     opacity: 0;
-    max-height: 0;
-    transform: translateY(-10px);
   }
 
   to {
     opacity: 1;
-    max-height: 1000px;
-    transform: translateY(0);
   }
 }
 
@@ -576,14 +456,6 @@
   text-transform: capitalize;
 }
 
-.progression-dashboard__module-type--hero {
-  flex-shrink: 0;
-  white-space: nowrap;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 0.6875rem;
-}
-
 .progression-dashboard__module-time {
   font-size: var(--text-xs, 0.75rem);
   color: var(--theme-text-tertiary, #9c8e7c);
@@ -654,16 +526,6 @@
 }
 
 @media (max-width: 767px) {
-  .progression-dashboard__hero {
-    padding: 0.125rem;
-  }
-
-  .progression-dashboard__next-module {
-    padding: 0.5rem 0.625rem;
-    min-height: auto;
-    height: auto;
-  }
-
   .progression-dashboard__units {
     flex: 1;
     max-height: none;
@@ -819,36 +681,6 @@ html.dark .progression-dashboard__module--locked .progression-dashboard__level-b
     display: none !important;
   }
 
-  .progression-dashboard__hero {
-    margin: 0.375rem 0.375rem 0.625rem;
-    min-height: auto;
-    flex-shrink: 0;
-  }
-
-  .progression-dashboard__next-module {
-    padding: 0.4375rem 0.5625rem;
-    gap: 0.375rem;
-    min-height: auto;
-    height: auto;
-  }
-
-  .progression-dashboard__next-level-col {
-    padding-right: 0.4375rem;
-    gap: 0.125rem;
-  }
-
-  .progression-dashboard__next-name {
-    font-size: 1rem;
-    margin: 0 0 0.0625rem 0;
-    padding: 0;
-  }
-
-  .progression-dashboard__next-desc {
-    font-size: 0.8125rem;
-    margin: 0;
-    padding: 0;
-  }
-
   .progression-dashboard__units {
     flex: 1 1 auto;
     min-height: 0;
@@ -942,14 +774,12 @@ html.dark .progression-dashboard__module--locked .progression-dashboard__level-b
 .progression-dashboard--dark-theme .progression-dashboard__unit-title,
 .progression-dashboard--dark-theme .progression-dashboard__unit-stats,
 .progression-dashboard--dark-theme .progression-dashboard__module-name,
-.progression-dashboard--dark-theme .progression-dashboard__next-name,
 .progression-dashboard--dark-theme .progression-dashboard__unit-next-label,
 .progression-dashboard--dark-theme .progression-dashboard__next-label {
   color: var(--theme-text-primary, #ffffff);
 }
 
-.progression-dashboard--dark-theme .progression-dashboard__module-desc,
-.progression-dashboard--dark-theme .progression-dashboard__next-desc {
+.progression-dashboard--dark-theme .progression-dashboard__module-desc {
   color: var(--theme-text-primary, #ffffff);
   opacity: 0.9;
 }
@@ -1021,27 +851,6 @@ html.dark .progression-dashboard__module--locked .progression-dashboard__level-b
   color: #93c5fd;
 }
 
-/* Hero */
-.progression-dashboard--dark-theme .progression-dashboard__hero {
-  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
-  color: var(--theme-text-primary, #ffffff);
-}
-
-.progression-dashboard--dark-theme .progression-dashboard__next-module {
-  color: var(--theme-text-primary, #ffffff);
-}
-
-.progression-dashboard--dark-theme .progression-dashboard__continue-btn {
-  background-color: var(--theme-primary-blue, #1e40af);
-  color: var(--theme-text-primary, #ffffff);
-  border: 2px solid var(--theme-primary-blue, #3b82f6);
-}
-
-.progression-dashboard--dark-theme .progression-dashboard__continue-btn:hover {
-  background-color: var(--theme-primary-blue-hover, #3b82f6);
-  border-color: var(--theme-primary-blue-hover, #60a5fa);
-}
-
 /* Unlocked modules */
 .progression-dashboard--dark-theme .progression-dashboard__module--unlocked {
   background-color: #1e293b;
@@ -1103,12 +912,5 @@ html.dark .progression-dashboard__module--locked .progression-dashboard__level-b
   .progression-dashboard--dark-theme .progression-dashboard__module {
     padding: 0.875rem;
     min-height: 44px;
-  }
-
-  .progression-dashboard--dark-theme .progression-dashboard__continue-btn {
-    min-height: 48px;
-    min-width: 48px;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
   }
 }

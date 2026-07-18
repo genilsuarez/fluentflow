@@ -95,11 +95,11 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
 
   // Helper: schedule scroll after the browser has completed layout
   const scheduleScroll = React.useCallback(() => {
-    // Wait for the slideDown animation (300ms) to finish so that
+    // Wait for the fadeIn animation (150ms) to finish so that
     // offsetTop values are stable before calculating scroll position.
-    setTimeout(() => {
+    requestAnimationFrame(() => {
       requestAnimationFrame(() => scrollToNextModule('smooth'));
-    }, 350);
+    });
   }, [scrollToNextModule]);
 
   // Scroll to the --next module once it appears in the DOM
@@ -143,7 +143,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
 
     // If expanding a unit with the next module, scroll to it
     if (isExpanding && nextRecommended && nextRecommended.unit === unit) {
-      setTimeout(() => scrollToNextModule('smooth'), 400);
+      requestAnimationFrame(() => scrollToNextModule('smooth'));
     }
   };
 

@@ -315,13 +315,13 @@ export const Header: React.FC<HeaderProps> = () => {
             <button
               onClick={handleGoToModules}
               className={`header-side-menu__item${!isInGame && useAppStore.getState().previousMenuContext === 'list' ? ' header-side-menu__item--active' : ''}`}
-              aria-label="Ir a módulos"
+              aria-label="Ir a ejercicios"
               aria-current={!isInGame && useAppStore.getState().previousMenuContext === 'list' ? 'page' : undefined}
             >
               <span className="header-side-menu__icon" aria-hidden="true">
                 📚
               </span>
-              <span className="header-side-menu__text">Módulos</span>
+              <span className="header-side-menu__text">Ejercicios</span>
             </button>
             <button
               onClick={() => {

@@ -107,7 +107,6 @@
   cursor: pointer;
   font-family: inherit;
   transition:
-    background 0.2s,
     transform 0.15s,
     box-shadow 0.2s;
   min-height: 44px;
@@ -116,9 +115,8 @@
 }
 
 .home-dash__hero-cta:hover {
-  background: linear-gradient(135deg, var(--lp-hero-blue) 0%, var(--lp-hero-blue-light) 100%);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 14px color-mix(in srgb, var(--lp-hero-blue) 40%, transparent);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px color-mix(in srgb, var(--lp-hero-blue) 50%, transparent);
 }
 
 .home-dash__hero-cta:active {
@@ -126,22 +124,7 @@
 }
 
 .home-dash__hero-cta:focus-visible {
-  outline: 2px solid rgba(255, 255, 255, 0.8);
-  outline-offset: 2px;
-}
-
-.home-dash__hero-cta:hover {
-  background: rgba(255, 255, 255, 0.22);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.home-dash__hero-cta:active {
-  transform: scale(0.98);
-}
-
-.home-dash__hero-cta:focus-visible {
-  outline: 2px solid rgba(255, 255, 255, 0.8);
+  outline: 2px solid var(--lp-hero-blue-mid);
   outline-offset: 2px;
 }
 

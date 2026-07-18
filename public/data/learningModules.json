@@ -4142,6 +4142,22 @@
     "difficulty": 1
   },
   {
+    "id": "reading-family-a1",
+    "name": "Family & Relationships",
+    "learningMode": "reading",
+    "dataPath": "data/a1/a1-reading-family.json",
+    "level": [
+      "a1"
+    ],
+    "category": "Vocabulary",
+    "prerequisites": [
+      "sorting-phrasal-verbs-particle-a1"
+    ],
+    "description": "Learn vocabulary for family members and how to describe relationships",
+    "estimatedTime": 7,
+    "difficulty": 1
+  },
+  {
     "id": "transformation-past-continuous-future-a2",
     "name": "Past Continuous & Future Transformations",
     "learningMode": "transformation",

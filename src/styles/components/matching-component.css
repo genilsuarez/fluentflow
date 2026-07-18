@@ -422,6 +422,11 @@
 
 /* === DARK MODE === */
 html.dark .matching-component {
+  background: linear-gradient(
+    135deg,
+    var(--lp-surface, #282420) 0%,
+    var(--lp-bg-paper, #211d18) 100%
+  );
   border-color: var(--theme-border-modal-dark, rgba(255, 255, 255, 0.15));
 }
 
@@ -442,7 +447,7 @@ html.dark .matching-component__column-header {
 }
 
 html.dark .matching-component__item {
-  background: #1e293b;
+  background: #1e293b !important;
   color: #f1f5f9;
   border-color: #334155;
 }
@@ -454,6 +459,7 @@ html.dark .matching-component__item .matching-component__item-text {
 html.dark .matching-component__item .matching-component__item-letter {
   background: #475569;
   color: #f1f5f9;
+  border-color: #64748b;
 }
 
 html.dark
@@ -491,11 +497,13 @@ html.dark .matching-component__item--selected .matching-component__item-text {
 html.dark .matching-component__item--matched {
   background: #0f172a !important;
   color: #38bdf8 !important;
+  border-color: #0ea5e9 !important;
 }
 
 html.dark .matching-component__item--matched .matching-component__item-letter {
   background-color: #0ea5e9;
   color: #ffffff;
+  border-color: #0ea5e9;
 }
 
 html.dark .matching-component__item--matched .matching-component__item-text {
@@ -505,6 +513,7 @@ html.dark .matching-component__item--matched .matching-component__item-text {
 html.dark .matching-component__item--matched-inactive {
   background: #0f172a !important;
   color: #64748b !important;
+  border-color: #1e293b !important;
 }
 
 html.dark .matching-component__item--matched-inactive .matching-component__item-text {
@@ -514,6 +523,16 @@ html.dark .matching-component__item--matched-inactive .matching-component__item-
 html.dark .matching-component__item--unmatched {
   background-color: #92400e;
   border-color: #f59e0b;
+  color: #fef3c7;
+}
+
+html.dark .matching-component__item--unmatched .matching-component__item-letter {
+  background-color: #78350f;
+  color: #fef3c7;
+  border-color: #f59e0b;
+}
+
+html.dark .matching-component__item--unmatched .matching-component__item-text {
   color: #fef3c7;
 }
 
@@ -555,29 +574,29 @@ html.dark .matching-component__item--incorrect .matching-component__item-text * 
 }
 
 /* Dark mode info button */
-.dark .matching-component__info-button {
+html.dark .matching-component__info-button {
   background-color: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(8px);
 }
 
-.dark .matching-component__info-button:hover {
+html.dark .matching-component__info-button:hover {
   background-color: var(--theme-primary-blue, #3b82f6);
   border-color: var(--theme-primary-blue, #3b82f6);
 }
 
-.dark .matching-component__info-icon {
+html.dark .matching-component__info-icon {
   color: var(--gray-300, #d4cabb);
 }
 
-.dark .matching-component__item--correct .matching-component__info-button,
-.dark .matching-component__item--incorrect .matching-component__info-button {
+html.dark .matching-component__item--correct .matching-component__info-button,
+html.dark .matching-component__item--incorrect .matching-component__info-button {
   background-color: rgba(255, 255, 255, 0.15);
   border-color: rgba(255, 255, 255, 0.3);
 }
 
-.dark .matching-component__item--correct .matching-component__info-icon,
-.dark .matching-component__item--incorrect .matching-component__info-icon {
+html.dark .matching-component__item--correct .matching-component__info-icon,
+html.dark .matching-component__item--incorrect .matching-component__info-icon {
   color: #ffffff;
 }
 
@@ -644,6 +663,10 @@ html.dark .matching-component__item--incorrect .matching-component__item-text * 
   .matching-component__column {
     padding: 0.25rem;
     background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  html.dark .matching-component__column {
+    background-color: rgba(30, 41, 59, 0.95);
   }
 }
 

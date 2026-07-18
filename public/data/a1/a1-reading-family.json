@@ -1,0 +1,110 @@
+{
+  "title": "Family & Relationships",
+  "estimatedReadingTime": 7,
+  "learningObjectives": [
+    "Learn vocabulary for family members and relationships",
+    "Understand how to describe your family in English",
+    "Practice talking about ages and physical descriptions",
+    "Recognize possessive structures with family vocabulary"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "title": "Talking About Your Family",
+      "type": "introduction",
+      "content": "Family is one of the first topics you learn in any language. In English, we have specific words for each <family member>. You can describe your family to new friends, fill in forms, or talk about your home life.\n\nThis lesson teaches you the words for family members and how to talk about <relationships> in simple English."
+    },
+    {
+      "id": "immediate-family",
+      "title": "Immediate Family",
+      "type": "theory",
+      "content": "Your <immediate family> is the family you live with or are closest to:\n\n• <Mother> (mom) - Your female parent\n• <Father> (dad) - Your male parent\n• <Parents> - Your mother and father together\n• <Sister> - A girl or woman with the same parents as you\n• <Brother> - A boy or man with the same parents as you\n• <Siblings> - Your brothers and sisters\n\nWe say <I have> to talk about family: <I have two brothers> or <I have one sister>. If you don't have siblings, you say <I'm an only child>."
+    },
+    {
+      "id": "extended-family",
+      "title": "Extended Family",
+      "type": "theory",
+      "content": "Your <extended family> includes people beyond your parents and siblings:\n\n• <Grandparents> - Your parents' parents (<grandmother> and <grandfather>)\n• <Uncle> - Your parent's brother\n• <Aunt> - Your parent's sister\n• <Cousin> - Your uncle's or aunt's child\n• <Nephew> - Your sibling's son\n• <Niece> - Your sibling's daughter\n\nMany families also have <in-laws> (family through marriage): <mother-in-law>, <father-in-law>, <brother-in-law>, <sister-in-law>."
+    },
+    {
+      "id": "describing-family",
+      "title": "Describing Family Members",
+      "type": "theory",
+      "content": "When you talk about family, you often describe them. Use simple sentences:\n\n• Age: <My sister is 25 years old.>\n• Job: <My father is a teacher.>\n• Appearance: <My brother is tall and has brown hair.>\n• Personality: <My grandmother is very kind.>\n\nUse <possessive adjectives> (my, your, his, her) before family words: <my mother>, <his sister>, <her uncle>."
+    },
+    {
+      "id": "examples",
+      "title": "Talking About Your Family",
+      "type": "examples",
+      "content": "Example 1: INTRODUCING FAMILY - <I have a big family. I have two sisters and one brother. My sisters are older than me.>\n\nExample 2: DESCRIBING SOMEONE - <My grandfather is 70 years old. He is tall and has white hair. He is very funny.>\n\nExample 3: ASKING ABOUT FAMILY - <A: Do you have any brothers or sisters?\nB: Yes, I have one brother. He's 18.\nA: What does he do?\nB: He's a university student.>"
+    },
+    {
+      "id": "family-activities",
+      "title": "Family Activities",
+      "type": "theory",
+      "content": "Families do many things together. Common <family activities> include:\n\n• <Have dinner together> - Eat the evening meal as a family\n• <Visit relatives> - Go to see family members\n• <Celebrate holidays> - Enjoy special days like birthdays and Christmas\n• <Go on vacation> - Travel together for fun\n• <Help each other> - Support family members when they need it\n\nExample: On <Sundays>, my family <has lunch together> at my <grandmother's house>. We <talk>, <play games>, and <spend time> together."
+    },
+    {
+      "id": "examples-2",
+      "title": "More Conversations",
+      "type": "examples",
+      "content": "Example 1: AT A PARTY - <A: Who is that woman over there?\nB: That's my aunt Maria. She's my mother's sister.\nA: And the children with her?\nB: Those are my cousins, Pedro and Ana.>\n\nExample 2: FAMILY PHOTO - <This is a photo of my family. My parents are in the middle. My older brother is on the left, and I'm on the right. My dog is in front of us!>\n\nExample 3: MARITAL STATUS - <A: Are you married?\nB: Yes, I am. My husband's name is Carlos.\nA: Do you have children?\nB: Yes, we have a daughter. She's three years old.>"
+    },
+    {
+      "id": "summary",
+      "title": "Family Vocabulary Summary",
+      "type": "summary",
+      "content": "Family vocabulary is essential for everyday English. Remember the <immediate family> (parents, siblings) and <extended family> (grandparents, uncles, aunts, cousins). Use <possessive adjectives> (my, your, his, her) with family words.\n\nPractice describing your own family: their <names>, <ages>, <jobs>, and <personality>. This is a very common topic in conversations with new people!"
+    }
+  ],
+  "keyVocabulary": [
+    {
+      "term": "mother",
+      "definition": "Your female parent",
+      "example": "My mother works at a hospital.",
+      "pronunciation": "/ˈmʌðər/"
+    },
+    {
+      "term": "father",
+      "definition": "Your male parent",
+      "example": "My father drives me to school.",
+      "pronunciation": "/ˈfɑːðər/"
+    },
+    {
+      "term": "siblings",
+      "definition": "Your brothers and sisters",
+      "example": "I have three siblings: two brothers and one sister.",
+      "pronunciation": "/ˈsɪblɪŋz/"
+    },
+    {
+      "term": "grandparents",
+      "definition": "Your parents' parents",
+      "example": "My grandparents live in a small town.",
+      "pronunciation": "/ˈɡrændˌperənts/"
+    },
+    {
+      "term": "uncle",
+      "definition": "Your parent's brother",
+      "example": "My uncle is very funny. He always tells jokes.",
+      "pronunciation": "/ˈʌŋkl/"
+    },
+    {
+      "term": "aunt",
+      "definition": "Your parent's sister",
+      "example": "My aunt lives in another city, but she visits often.",
+      "pronunciation": "/ænt/"
+    },
+    {
+      "term": "cousin",
+      "definition": "Your uncle's or aunt's child",
+      "example": "I have five cousins. We play together on weekends.",
+      "pronunciation": "/ˈkʌzən/"
+    },
+    {
+      "term": "only child",
+      "definition": "A person with no brothers or sisters",
+      "example": "I'm an only child, so I played alone a lot as a kid.",
+      "pronunciation": "/ˈoʊnli tʃaɪld/"
+    }
+  ]
+}

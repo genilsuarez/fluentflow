@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useCallback } from 'react';
 import { Play, Trophy, Target, Clock, TrendingUp, CheckCircle } from 'lucide-react';
 import { useProgressStore } from '../../stores/progressStore';
 import { useUserStore } from '../../stores/userStore';
@@ -44,9 +44,23 @@ export const HomeDashboard: React.FC = () => {
       6: { name: 'Mastery', shortName: 'Mast', code: 'C2', color: 'indigo' },
     };
 
-  const handleContinue = () => {
+  const handleContinue = useCallback(() => {
     if (nextRecommended) navigateToModule(nextRecommended);
-  };
+  }, [nextRecommended, navigateToModule]);
+
+  // Enter key → navigate to current lesson
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Enter' && !e.repeat) {
+        // Don't trigger if user is typing in an input/textarea
+        const tag = (e.target as HTMLElement).tagName;
+        if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+        handleContinue();
+      }
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [handleContinue]);
 
   return (
     <div className="home-dash">
@@ -74,7 +88,7 @@ export const HomeDashboard: React.FC = () => {
           </span>
           <h2 className="home-dash__hero-title">
             {stats.completedModules} {t('common.of', 'of')} {stats.totalModules}{' '}
-            {t('common.modules', 'modules')}
+            {t('common.modules', 'exercises')}
           </h2>
         </div>
         {nextRecommended && (

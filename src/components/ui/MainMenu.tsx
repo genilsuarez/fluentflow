@@ -20,7 +20,6 @@ import {
   List,
   Search as SearchIcon,
   X as XIcon,
-  Filter as FilterIcon,
 } from 'lucide-react';
 import { UnifiedFilter } from './UnifiedFilter';
 import '../../styles/components/main-menu.css';
@@ -30,7 +29,7 @@ export const MainMenu: React.FC = () => {
   const progression = useProgression();
   const { query, setQuery, results } = useSearch(modules);
   const { setPreviousMenuContext, previousMenuContext } = useAppStore();
-  const { language, categories, learningModes, level, setCategories, setLearningModes, setLevel } =
+  const { language, categories, learningModes, level } =
     useSettingsStore();
   const { t } = useTranslation(language);
   const queryClient = useQueryClient();
@@ -50,7 +49,6 @@ export const MainMenu: React.FC = () => {
   const [isSearchExpanded, setIsSearchExpanded] = useState(false);
   const [modulesView, setModulesView] = useState<'progress' | 'all'>('progress');
   const gridRef = useRef<HTMLDivElement>(null);
-  const hasScrolledToNext = useRef(false);
 
   // Access raw (unfiltered) modules from the query cache for dependency calculations
   const allModulesRaw = queryClient.getQueryData<LearningModule[]>(['modules']) ?? [];
@@ -164,24 +162,21 @@ export const MainMenu: React.FC = () => {
   }, [scrollToNextModule]);
 
   // Auto-scroll to next recommended module when entering All Modules view
-  // This covers both: returning from a completed lesson and switching tabs
   useEffect(() => {
-    if (viewMode !== 'list' || isLoading || !modules.length) return;
+    if (viewMode !== 'list' || modulesView !== 'all' || isLoading || !modules.length) return;
 
-    // Clear the post-lesson flag if present (no longer needed as a separate trigger)
     try {
       sessionStorage.removeItem('autoScrollToNext');
     } catch {
       /* */
     }
 
-    // Wait for the grid to mount and cards to render before scrolling
     const timerId = setTimeout(() => {
       scrollFnRef.current('smooth');
-    }, 300);
+    }, 100);
 
     return () => clearTimeout(timerId);
-  }, [viewMode, isLoading, modules.length]);
+  }, [viewMode, modulesView, isLoading, modules.length]);
 
   // Show welcome toast when modules are loaded (only once per session)
   useEffect(() => {
@@ -212,9 +207,6 @@ export const MainMenu: React.FC = () => {
         /* */
       }
     }
-
-    // Reset auto-scroll flag when user manually selects a module
-    hasScrolledToNext.current = false;
 
     navigateToModule(module);
   };

@@ -28,7 +28,7 @@ export const ScoreDisplay: React.FC = () => {
       aria-label={
         isInGame
           ? `Session score: ${sessionScore.correct} correct, ${sessionScore.incorrect} incorrect, ${sessionScore.accuracy.toFixed(0)}% accuracy`
-          : `Total score: ${totalScore} points. Progress: ${completedModules} of ${totalModules} modules completed`
+          : `Total score: ${totalScore} points. Progress: ${completedModules} of ${totalModules} exercises completed`
       }
     >
       <div
@@ -97,7 +97,7 @@ export const ScoreDisplay: React.FC = () => {
                 aria-valuenow={completionPercentage}
                 aria-valuemin={0}
                 aria-valuemax={100}
-                aria-label={`${completionPercentage}% modules completed, ${completedModules} of ${totalModules}`}
+                aria-label={`${completionPercentage}% exercises completed, ${completedModules} of ${totalModules}`}
               >
                 <div
                   className="score-display-compact__progress-fill"
