@@ -86,6 +86,7 @@ export const en = {
     closeNotification: 'Close notification',
     loadingModules: 'Loading exercises',
     backToPortal: 'Back to LearnFlow',
+    backToMenu: 'Back to menu',
   },
   auth: {
     login: 'Login',

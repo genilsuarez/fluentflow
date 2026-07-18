@@ -72,6 +72,49 @@ Ver detalle completo en `docs/browser-localstorage-mcp.md`.
 - `--dry` → muestra qué módulos se marcarían sin ejecutar
 - Modifica `progress-storage`, `user-storage` y `app-storage` en localStorage
 
+## Progression System — Quick Reference
+
+The module progression uses a DAG (prerequisites graph). Key files:
+
+| Concern | File |
+|---------|------|
+| Service (unlock logic, next module) | `src/services/progressionService.ts` |
+| Hook (React integration, dev mode bypass) | `src/hooks/useProgression.ts` |
+| Main Menu (flat grid, `currentModuleId` & `highlightedModuleId`) | `src/components/ui/MainMenu.tsx` |
+| Progression View (unit accordion, `--next` class) | `src/components/ui/ProgressionDashboard.tsx` |
+| Card component | `src/components/ui/ModuleCard.tsx` |
+| Card styles (light/dark, `--current`, `--next-recommended`) | `src/styles/components/module-card.css` |
+| Progression view styles (`--next`, `--unlocked`, `--locked`) | `src/styles/components/progression-dashboard.css` |
+| Module data (prerequisites, units) | `public/data/learningModules.json` |
+
+### How "next recommended" works
+
+1. `progressionService.getNextAvailableModules()` → all unlocked + not-completed modules
+2. `getNextRecommendedModule()` sorts by unit (asc), then by prerequisite count (asc), picks first
+3. Since the sort is not stable beyond those two criteria, **array order in learningModules.json is the tiebreaker**
+
+### Visual indicators
+
+| Class | Where | Behavior |
+|-------|-------|----------|
+| `module-card--current` | MainMenu flat grid | Persistent blue glow on the next-recommended card |
+| `module-card--next-recommended` | MainMenu flat grid | Temporary 2.5s pulse animation (scroll-to) |
+| `progression-dashboard__module--next` | ProgressionDashboard | Persistent highlight + "Sig."/"Next" badge |
+| `progression-dashboard__module--unlocked` | ProgressionDashboard | All unlocked cards show ▶️ icon + visible border |
+
+### Common confusion: "two active cards"
+
+Multiple modules can be `unlocked` simultaneously (parallel prerequisite chains).
+All unlocked modules show the ▶️ icon and active border — but only ONE gets the "SIG." badge.
+This is correct behavior, not a bug. The prerequisite graph has parallel branches
+(e.g. idioms chain vs phrasal verbs chain are independent).
+
+### developmentMode
+
+When `developmentMode: true` (settingsStore), `canAccessModule()` and `getModuleStatus()` return
+`unlocked` for ALL modules regardless of prerequisites. This does NOT change which module is
+"next recommended" — `getNextAvailableModules()` still filters by the real prerequisite graph.
+
 ## Antes de cualquier cambio
 
 1. Leer `src/styles/design-system/tokens.css` para design tokens (--lp-*)

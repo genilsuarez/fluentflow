@@ -87,6 +87,7 @@ export const es = {
     closeNotification: 'Cerrar notificación',
     loadingModules: 'Cargando ejercicios',
     backToPortal: 'Volver a LearnFlow',
+    backToMenu: 'Volver al menú',
   },
   auth: {
     login: 'Iniciar Sesión',

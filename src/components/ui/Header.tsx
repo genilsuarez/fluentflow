@@ -1,6 +1,6 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import { createPortal } from 'react-dom';
-import { User, WifiOff, Wrench } from 'lucide-react';
+import { ArrowLeft, User, WifiOff, Wrench } from 'lucide-react';
 import '../../styles/components/header.css';
 import { useAppStore } from '../../stores/appStore';
 import { useUserStore } from '../../stores/userStore';
@@ -130,8 +130,18 @@ export const Header: React.FC<HeaderProps> = () => {
       className={`header-redesigned header-redesigned--${headerMode}${isInGame ? ' header-redesigned--learning-mode' : ''}`}
     >
       <div className={`header-redesigned__container header-redesigned__container--${headerMode}`}>
-        {/* Left Section: Menu + Brand */}
+        {/* Left Section: Back + Menu + Brand */}
         <div className="header-redesigned__left">
+          {isInGame && (
+            <button
+              onClick={() => returnToMenu()}
+              className="header-redesigned__back-btn"
+              title={t('navigation.backToMenu')}
+              aria-label={t('navigation.backToMenu')}
+            >
+              <ArrowLeft size={20} aria-hidden="true" />
+            </button>
+          )}
           <button
             onClick={handleMenuToggle}
             className={`header-redesigned__menu-btn${navigationMode === 'sidebar' ? ' header-redesigned__menu-btn--primary' : ''}`}

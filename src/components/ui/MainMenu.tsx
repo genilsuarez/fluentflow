@@ -13,9 +13,9 @@ import { useAppStore } from '../../stores/appStore';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useProgressStore } from '../../stores/progressStore';
 import { useTranslation } from '../../utils/i18n';
-import type { LearningModule } from '../../types';
+import type { LearningModule, Category } from '../../types';
 import { toast } from '../../stores/toastStore';
-import { BarChart3, List, Search as SearchIcon, X as XIcon } from 'lucide-react';
+import { BarChart3, List, Search as SearchIcon, X as XIcon, ChevronDown, ChevronRight } from 'lucide-react';
 import { UnifiedFilter } from './UnifiedFilter';
 import '../../styles/components/main-menu.css';
 
@@ -42,6 +42,7 @@ export const MainMenu: React.FC = () => {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [isSearchExpanded, setIsSearchExpanded] = useState(false);
   const [modulesView, setModulesView] = useState<'progress' | 'all'>('progress');
+  const [expandedCategories, setExpandedCategories] = useState<Set<Category>>(() => new Set());
   const gridRef = useRef<HTMLDivElement>(null);
 
   // Access raw (unfiltered) modules from the query cache for dependency calculations
@@ -49,7 +50,7 @@ export const MainMenu: React.FC = () => {
 
   // Pre-compute module statuses and hidden dependencies once for all cards
   // instead of each ModuleCard calling useProgression() individually
-  const { getModuleCompletion } = useProgressStore();
+  const { getModuleCompletion, isModuleCompleted } = useProgressStore();
   const moduleStatusMap = React.useMemo(() => {
     const map = new Map<
       string,
@@ -77,6 +78,77 @@ export const MainMenu: React.FC = () => {
     return map;
   }, [modules, allModulesRaw, categories, learningModes]);
 
+  // Category-grouped view: category → level → toposort within level
+  const CATEGORY_ORDER: Category[] = ['Grammar', 'Vocabulary', 'PhrasalVerbs', 'Idioms', 'Reading', 'Review'];
+  const LEVEL_ORDER = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'] as const;
+  const LEVEL_LABELS: Record<string, string> = { a1: 'A1', a2: 'A2', b1: 'B1', b2: 'B2', c1: 'C1', c2: 'C2' };
+
+  const groupedByCategory = React.useMemo(() => {
+    if (modules.length === 0) return [];
+
+    const groups: Array<{
+      category: Category;
+      levels: Array<{ level: string; label: string; modules: LearningModule[] }>;
+      total: number;
+      completed: number;
+    }> = [];
+
+    for (const category of CATEGORY_ORDER) {
+      const catModules = modules.filter(m => m.category === category);
+      if (catModules.length === 0) continue;
+
+      const levels: Array<{ level: string; label: string; modules: LearningModule[] }> = [];
+
+      for (const level of LEVEL_ORDER) {
+        const levelModules = catModules.filter(m => {
+          const mLevels = Array.isArray(m.level) ? m.level : [m.level];
+          return mLevels.includes(level);
+        });
+        if (levelModules.length === 0) continue;
+
+        // Toposort within level
+        const idToModule = new Map(levelModules.map(m => [m.id, m]));
+        const visited = new Set<string>();
+        const sorted: LearningModule[] = [];
+        const visit = (mod: LearningModule) => {
+          if (visited.has(mod.id)) return;
+          visited.add(mod.id);
+          if (mod.prerequisites) {
+            for (const prereqId of mod.prerequisites) {
+              const prereq = idToModule.get(prereqId);
+              if (prereq) visit(prereq);
+            }
+          }
+          sorted.push(mod);
+        };
+        for (const m of levelModules) visit(m);
+        levels.push({ level, label: LEVEL_LABELS[level], modules: sorted });
+      }
+
+      const completed = catModules.filter(m => isModuleCompleted(m.id)).length;
+      groups.push({ category, levels, total: catModules.length, completed });
+    }
+
+    return groups;
+  }, [modules, isModuleCompleted]);
+
+  const toggleCategory = React.useCallback((category: Category) => {
+    setExpandedCategories(prev => {
+      const isExpanding = !prev.has(category);
+      // Accordion: only one open at a time
+      const next = isExpanding ? new Set([category]) : new Set<Category>();
+
+      if (isExpanding) {
+        requestAnimationFrame(() => {
+          const header = document.getElementById(`cat-${category}`);
+          header?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      }
+
+      return next;
+    });
+  }, []);
+
   // Shared module navigation logic
   const { navigateToModule } = useModuleNavigation(viewMode);
 
@@ -96,6 +168,19 @@ export const MainMenu: React.FC = () => {
     );
     return fallback?.id ?? null;
   }, [progression, modules]);
+
+  // Auto-expand the category with the next recommended module (once)
+  const hasInitializedRef = useRef(false);
+  useEffect(() => {
+    if (hasInitializedRef.current) return;
+    if (modulesView !== 'all' || !currentModuleId || modules.length === 0) return;
+
+    const mod = modules.find(m => m.id === currentModuleId);
+    if (!mod) return;
+
+    hasInitializedRef.current = true;
+    setExpandedCategories(new Set([mod.category]));
+  }, [modulesView, currentModuleId, modules]);
 
   // Sync view mode with stored context when component mounts
   useEffect(() => {
@@ -329,7 +414,7 @@ export const MainMenu: React.FC = () => {
               }}
             />
           ) : (
-            // All Modules flat grid
+            // Category-grouped modules view
             <>
               {query && results.length === 0 ? (
                 <div className="main-menu__no-results" role="status" aria-live="polite">
@@ -339,16 +424,15 @@ export const MainMenu: React.FC = () => {
                   </p>
                   <p className="main-menu__no-results-hint">{t('mainMenu.searchHint')}</p>
                 </div>
-              ) : (
+              ) : query ? (
+                // Search results: flat grid (same as before)
                 <div className="main-menu__grid" ref={gridRef}>
                   <div
                     className="main-menu__grid-container"
                     role="grid"
-                    aria-label={t('mainMenu.modulesAvailable', undefined, {
-                      count: (query ? results : modules).length,
-                    })}
+                    aria-label={t('mainMenu.modulesAvailable', undefined, { count: results.length })}
                   >
-                    {(query ? results : modules).map((module, index) => (
+                    {results.map((module, index) => (
                       <ModuleCard
                         key={module.id}
                         module={module}
@@ -356,19 +440,81 @@ export const MainMenu: React.FC = () => {
                         tabIndex={0}
                         role="gridcell"
                         aria-posinset={index + 1}
-                        aria-setsize={(query ? results : modules).length}
+                        aria-setsize={results.length}
                         isNextRecommended={highlightedModuleId === module.id}
                         isCurrentModule={currentModuleId === module.id}
                         moduleStatus={moduleStatusMap.get(module.id)?.status ?? 'locked'}
-                        missingPrerequisitesCount={
-                          moduleStatusMap.get(module.id)?.missingCount ?? 0
-                        }
+                        missingPrerequisitesCount={moduleStatusMap.get(module.id)?.missingCount ?? 0}
                         hiddenDependencies={hiddenDepsMap?.get(module.id)}
                         progressPercentage={moduleStatusMap.get(module.id)?.progressPct ?? 0}
                         language={language}
                       />
                     ))}
                   </div>
+                </div>
+              ) : (
+                // Category-grouped view
+                <div className="main-menu__categories" ref={gridRef}>
+                  {groupedByCategory.map(({ category, levels, total, completed }) => {
+                    const isExpanded = expandedCategories.has(category);
+                    const pct = total > 0 ? Math.round((completed / total) * 100) : 0;
+
+                    return (
+                      <section key={category} className="category-section" aria-labelledby={`cat-${category}`}>
+                        <button
+                          className={`category-section__header ${isExpanded ? 'category-section__header--expanded' : ''}`}
+                          onClick={() => toggleCategory(category)}
+                          aria-expanded={isExpanded}
+                          type="button"
+                          id={`cat-${category}`}
+                        >
+                          <span className="category-section__expand" aria-hidden="true">
+                            {isExpanded ? <ChevronDown size={14} /> : <ChevronRight size={14} />}
+                          </span>
+                          <span className="category-section__name">
+                            {t(`categories.${category.toLowerCase()}`)}
+                          </span>
+                          <span className="category-section__count">{total}</span>
+                          <span className="category-section__progress">
+                            <span className="category-section__progress-bar" style={{ '--cat-progress': `${pct}%` } as React.CSSProperties} />
+                          </span>
+                          <span className="category-section__pct">{pct}%</span>
+                        </button>
+
+                        {isExpanded && (
+                          <div className="category-section__body">
+                            {levels.map(({ level, label, modules: levelModules }) => (
+                              <div key={level} className="category-section__level">
+                                <div className="category-section__level-tag" aria-label={`Nivel ${label}`}>
+                                  {label}
+                                </div>
+                                <div className="category-section__grid">
+                                  {levelModules.map((module, index) => (
+                                    <ModuleCard
+                                      key={module.id}
+                                      module={module}
+                                      onClick={() => handleModuleClick(module)}
+                                      tabIndex={0}
+                                      role="gridcell"
+                                      aria-posinset={index + 1}
+                                      aria-setsize={levelModules.length}
+                                      isNextRecommended={highlightedModuleId === module.id}
+                                      isCurrentModule={currentModuleId === module.id}
+                                      moduleStatus={moduleStatusMap.get(module.id)?.status ?? 'locked'}
+                                      missingPrerequisitesCount={moduleStatusMap.get(module.id)?.missingCount ?? 0}
+                                      hiddenDependencies={hiddenDepsMap?.get(module.id)}
+                                      progressPercentage={moduleStatusMap.get(module.id)?.progressPct ?? 0}
+                                      language={language}
+                                    />
+                                  ))}
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        )}
+                      </section>
+                    );
+                  })}
                 </div>
               )}
             </>

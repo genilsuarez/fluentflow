@@ -70,25 +70,27 @@
     0 0 0 3px color-mix(in srgb, var(--module-accent, var(--lp-accent)) 40%, transparent);
 }
 
-/* Card Content - icon chip on the left, info stacked on the right */
+/* Card Content - column on mobile (square cards), row on tablet+ */
 .module-card__content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 100%;
   width: 100%;
-  padding: 0;
+  padding: 0.5rem 0.375rem;
   box-sizing: border-box;
   position: relative;
-  text-align: left;
+  text-align: center;
+  gap: 0.25rem;
 }
 
-/* Icon chip - tinted with the module's accent color, not filled solid */
+/* Icon chip - tinted with the module's accent color */
 .module-card__header {
-  width: 2.25rem;
-  height: 2.25rem;
+  width: 2rem;
+  height: 2rem;
   flex-shrink: 0;
-  margin: 0 0.5rem 0 0.75rem;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -120,36 +122,38 @@
 .module-card__info {
   flex: 1;
   min-width: 0;
-  padding: 0.375rem 0.625rem 0.375rem 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 0.125rem;
 }
 
 /* Typography - dark ink on light surface, LyricFlow display font for the title */
 .module-card__title {
   font-family: var(--lp-font-display, inherit);
-  font-size: var(--text-sm, 0.875rem);
+  font-size: 0.8rem;
   font-weight: 500;
   line-height: 1.2;
   color: var(--lp-ink);
   display: -webkit-box;
   width: 100%;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100%;
-  text-align: left;
+  text-align: center;
   transition: color 0.2s ease-in-out;
 }
 
 .module-card__meta {
   display: flex;
   align-items: center;
-  gap: 0.375rem;
+  justify-content: center;
+  gap: 0.25rem;
   margin-top: 0.125rem;
   flex-wrap: wrap;
 }
@@ -390,24 +394,133 @@
   width: 100%;
 }
 
-/* Small mobile: slightly larger title, icon chip stays legible */
+/* Small mobile: keep title compact for square cards */
 @media (max-width: 479px) {
   .module-card__title {
-    font-size: var(--text-base, 1rem);
+    font-size: 0.75rem;
+  }
+
+  .module-card__type {
+    font-size: 0.6rem;
+  }
+
+  .module-card__level,
+  .module-card__time {
+    font-size: 0.6rem;
+  }
+}
+
+/* Medium screens: switch to row layout */
+@media (min-width: 480px) and (max-width: 719px) {
+  .module-card {
+    height: auto;
+    min-height: 72px;
+  }
+
+  .module-card__content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 0.5rem 0;
+    gap: 0;
+  }
+
+  .module-card__header {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0.5rem 0 0.625rem;
+  }
+
+  .module-card__info {
+    align-items: flex-start;
+    padding: 0.25rem 0.5rem 0.25rem 0;
+  }
+
+  .module-card__title {
+    font-size: 0.8rem;
+    text-align: left;
+  }
+
+  .module-card__meta {
+    justify-content: flex-start;
+    gap: 0.25rem;
   }
 }
 
 /* Tablet: matches --card-height-tablet */
 @media (min-width: 720px) {
   .module-card {
-    height: var(--card-height-tablet);
+    height: auto;
+    min-height: var(--card-height-tablet);
+  }
+
+  .module-card__content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 0.5rem 0;
+    gap: 0;
+  }
+
+  .module-card__header {
+    width: 2.25rem;
+    height: 2.25rem;
+    margin: 0 0.5rem 0 0.75rem;
+  }
+
+  .module-card__info {
+    align-items: flex-start;
+    padding: 0.375rem 0.625rem 0.375rem 0;
+  }
+
+  .module-card__title {
+    font-size: var(--text-sm, 0.875rem);
+    text-align: left;
+  }
+
+  .module-card__meta {
+    justify-content: flex-start;
+    gap: 0.375rem;
   }
 }
 
 /* Desktop: matches --card-height-desktop */
 @media (min-width: 900px) {
   .module-card {
-    height: var(--card-height-desktop);
+    height: auto;
+    min-height: var(--card-height-desktop);
+  }
+
+  .module-card__content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 0.5rem 0;
+    gap: 0;
+  }
+
+  .module-card__header {
+    width: 2.25rem;
+    height: 2.25rem;
+    margin: 0 0.5rem 0 0.75rem;
+  }
+
+  .module-card__info {
+    align-items: flex-start;
+    padding: 0.375rem 0.625rem 0.375rem 0;
+  }
+
+  .module-card__title {
+    font-size: var(--text-sm, 0.875rem);
+    text-align: left;
+  }
+
+  .module-card__meta {
+    justify-content: flex-start;
+    gap: 0.375rem;
   }
 }
 
