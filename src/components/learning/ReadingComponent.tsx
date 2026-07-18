@@ -24,7 +24,7 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
   const [startTime] = useState(Date.now());
   const [runId] = useState(() => createLearnFlowId('run'));
   const [expandedItems, setExpandedItems] = useState<Set<number>>(new Set());
-  const [vocabularyExpanded, setVocabularyExpanded] = useState(false);
+  const [vocabularyExpanded, setVocabularyExpanded] = useState(true);
   const [grammarExpanded, setGrammarExpanded] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
