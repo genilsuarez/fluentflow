@@ -93,7 +93,11 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
   const handleCheck = useCallback(() => {
     if (answerWords.length === 0 || showResult) return;
     if (!currentExercise) return;
-    const validation = validateReordering(answerWords, currentExercise.words, currentExercise.alternativeOrders);
+    const validation = validateReordering(
+      answerWords,
+      currentExercise.words,
+      currentExercise.alternativeOrders
+    );
     setIsCorrect(validation.isCorrect);
     setIncorrectPositions(validation.incorrectPositions);
     setShowResult(true);

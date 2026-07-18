@@ -203,8 +203,7 @@ export const en = {
       'LearnFlow brings together a structured CEFR path, flexible grammar practice, and language learning through music.',
     fluentFlowRole:
       'FluentFlow is the structured A1-C2 route and the primary source for your CEFR progress.',
-    localProgressNote:
-      'Saved only in this browser.',
+    localProgressNote: 'Saved only in this browser.',
     learnFlowLinks: 'LearnFlow applications',
     version: 'Version',
     modules: 'Exercises',

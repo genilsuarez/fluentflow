@@ -22,7 +22,8 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
     location.hostname === '127.0.0.1' ||
     location.hostname.startsWith('192.168.');
 
-  const isUnified = isLocal && location.port === '3000' && location.pathname.startsWith('/fluentflow');
+  const isUnified =
+    isLocal && location.port === '3000' && location.pathname.startsWith('/fluentflow');
 
   const getAppHref = (path: string, port: number) => {
     if (isUnified) return `/${path}/`;
@@ -134,11 +135,17 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
           </a>
           <a href={getAppHref('fluentflow', 3001)} onClick={preserveTheme}>
             <strong>FluentFlow</strong>
-            <span>{language === 'es' ? 'Ruta de inglés por niveles CEFR' : 'English path by CEFR levels'}</span>
+            <span>
+              {language === 'es'
+                ? 'Ruta de inglés por niveles CEFR'
+                : 'English path by CEFR levels'}
+            </span>
           </a>
           <a href={getAppHref('hubflow', 3002)} onClick={preserveTheme}>
             <strong>HubFlow</strong>
-            <span>{language === 'es' ? 'Práctica flexible de gramática' : 'Flexible grammar practice'}</span>
+            <span>
+              {language === 'es' ? 'Práctica flexible de gramática' : 'Flexible grammar practice'}
+            </span>
           </a>
           <a href={getAppHref('lyricflow', 3003)} onClick={preserveTheme}>
             <strong>LyricFlow</strong>

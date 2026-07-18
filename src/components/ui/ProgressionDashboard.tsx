@@ -473,8 +473,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                               <div className="progression-dashboard__locked-hidden">
                                 <Lock size={14} aria-hidden="true" />
                                 <span>
-                                  +{lockedHidden}{' '}
-                                  {t('common.lockedModulesHidden')}
+                                  +{lockedHidden} {t('common.lockedModulesHidden')}
                                 </span>
                               </div>
                             )}

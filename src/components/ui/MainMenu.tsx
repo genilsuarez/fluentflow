@@ -353,7 +353,8 @@ export const MainMenu: React.FC = () => {
     }
 
     // In exercises view, modules unlocked by level can bypass prerequisite check
-    const skipPrereqs = modulesView === 'all' && exerciseStatusMap.get(module.id)?.status !== 'locked';
+    const skipPrereqs =
+      modulesView === 'all' && exerciseStatusMap.get(module.id)?.status !== 'locked';
     navigateToModule(module, { skipPrerequisiteCheck: skipPrereqs });
   };
 
