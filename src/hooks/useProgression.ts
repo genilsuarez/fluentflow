@@ -138,15 +138,14 @@ export const useProgression = () => {
           return null;
         }
 
-        // Sort by unit and then by order within unit (based on prerequisites)
+        // Use curriculum order (index in rawModules) as the canonical progression sequence.
+        // The previous sort by unit + prereq count was non-deterministic and caused the same
+        // module to always appear as "next" regardless of what was just completed.
+        const indexMap = new Map(rawModules.map((m, i) => [m.id, i]));
         const sorted = nextAvailable.sort((a, b) => {
-          if (a.unit !== b.unit) {
-            return a.unit - b.unit;
-          }
-          // Within same unit, prioritize modules with fewer prerequisites
-          const aPrereqCount = a.prerequisites?.length || 0;
-          const bPrereqCount = b.prerequisites?.length || 0;
-          return aPrereqCount - bPrereqCount;
+          const aIdx = indexMap.get(a.id) ?? Infinity;
+          const bIdx = indexMap.get(b.id) ?? Infinity;
+          return aIdx - bIdx;
         });
 
         return sorted[0];
