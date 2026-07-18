@@ -51,7 +51,7 @@ export const MainMenu: React.FC = () => {
   const [modulesView, setModulesView] = useState<'progress' | 'all'>('progress');
   const [expandedCategories, setExpandedCategories] = useState<Set<Category>>(() => new Set());
   const [expandedLevels, setExpandedLevels] = useState<Set<string>>(() => new Set());
-  const CARDS_PER_LEVEL = 8;
+  const CARDS_PER_LEVEL = 4;
   const gridRef = useRef<HTMLDivElement>(null);
 
   // Access raw (unfiltered) modules from the query cache for dependency calculations
