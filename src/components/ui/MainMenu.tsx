@@ -532,42 +532,68 @@ export const MainMenu: React.FC = () => {
 
                         {isExpanded && (
                           <div className="category-section__body">
-                            {levels.map(({ level, label, modules: levelModules }) => (
-                              <div key={level} className="category-section__level">
-                                <div
-                                  className="category-section__level-tag"
-                                  aria-label={`Nivel ${label}`}
-                                >
-                                  {label}
+                            {levels.map(({ level, label, modules: levelModules }) => {
+                              const levelKey = `${category}:${level}`;
+                              const isLevelExpanded = expandedLevels.has(levelKey);
+                              const visibleModules = isLevelExpanded
+                                ? levelModules
+                                : levelModules.slice(0, CARDS_PER_LEVEL);
+                              const hasMore = levelModules.length > CARDS_PER_LEVEL;
+                              const remaining = levelModules.length - CARDS_PER_LEVEL;
+
+                              return (
+                                <div key={level} className="category-section__level">
+                                  <div
+                                    className="category-section__level-tag"
+                                    aria-label={`Nivel ${label}`}
+                                  >
+                                    {label}
+                                  </div>
+                                  <div className="category-section__grid">
+                                    {visibleModules.map((module, index) => (
+                                      <ModuleCard
+                                        key={module.id}
+                                        module={module}
+                                        onClick={() => handleModuleClick(module)}
+                                        tabIndex={0}
+                                        role="gridcell"
+                                        aria-posinset={index + 1}
+                                        aria-setsize={levelModules.length}
+                                        isNextRecommended={highlightedModuleId === module.id}
+                                        isCurrentModule={currentModuleId === module.id}
+                                        moduleStatus={
+                                          moduleStatusMap.get(module.id)?.status ?? 'locked'
+                                        }
+                                        missingPrerequisitesCount={
+                                          moduleStatusMap.get(module.id)?.missingCount ?? 0
+                                        }
+                                        hiddenDependencies={hiddenDepsMap?.get(module.id)}
+                                        progressPercentage={
+                                          moduleStatusMap.get(module.id)?.progressPct ?? 0
+                                        }
+                                        language={language}
+                                      />
+                                    ))}
+                                  </div>
+                                  {hasMore && (
+                                    <button
+                                      className="category-section__show-more"
+                                      onClick={() => toggleLevelExpanded(category, level)}
+                                      type="button"
+                                      aria-expanded={isLevelExpanded}
+                                    >
+                                      {isLevelExpanded
+                                        ? t('common.showLess')
+                                        : `${t('common.showMore')} (+${remaining})`}
+                                      <ChevronDown
+                                        size={14}
+                                        className={`category-section__show-more-icon${isLevelExpanded ? ' category-section__show-more-icon--expanded' : ''}`}
+                                      />
+                                    </button>
+                                  )}
                                 </div>
-                                <div className="category-section__grid">
-                                  {levelModules.map((module, index) => (
-                                    <ModuleCard
-                                      key={module.id}
-                                      module={module}
-                                      onClick={() => handleModuleClick(module)}
-                                      tabIndex={0}
-                                      role="gridcell"
-                                      aria-posinset={index + 1}
-                                      aria-setsize={levelModules.length}
-                                      isNextRecommended={highlightedModuleId === module.id}
-                                      isCurrentModule={currentModuleId === module.id}
-                                      moduleStatus={
-                                        moduleStatusMap.get(module.id)?.status ?? 'locked'
-                                      }
-                                      missingPrerequisitesCount={
-                                        moduleStatusMap.get(module.id)?.missingCount ?? 0
-                                      }
-                                      hiddenDependencies={hiddenDepsMap?.get(module.id)}
-                                      progressPercentage={
-                                        moduleStatusMap.get(module.id)?.progressPct ?? 0
-                                      }
-                                      language={language}
-                                    />
-                                  ))}
-                                </div>
-                              </div>
-                            ))}
+                              );
+                            })}
                           </div>
                         )}
                       </section>

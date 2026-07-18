@@ -3,7 +3,6 @@ import { useProgression } from '../../hooks/useProgression';
 import { useProgressStore } from '../../stores/progressStore';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useTranslation } from '../../utils/i18n';
-import { useModuleNavigation } from '../../hooks/useModuleNavigation';
 import { CheckCircle, Lock, Play, ChevronDown, ChevronRight, X as XIcon } from 'lucide-react';
 import type { LearningModule } from '../../types';
 import Fuse from 'fuse.js';
@@ -17,7 +16,7 @@ interface ProgressionDashboardProps {
 }
 
 export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
-  onModuleSelect: _onModuleSelect,
+  onModuleSelect,
   searchQuery = '',
   onClearSearch,
 }) => {
@@ -34,7 +33,6 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
     theme,
   } = useSettingsStore();
   const { t } = useTranslation(language);
-  const { navigateToModule } = useModuleNavigation('progression');
   const [expandedUnits, setExpandedUnits] = React.useState<Set<number>>(new Set());
 
   const nextRecommended = progression.getNextRecommendedModule();
@@ -148,7 +146,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
   };
 
   const handleModuleClick = (module: LearningModule) => {
-    navigateToModule(module);
+    onModuleSelect(module);
   };
 
   const getUnitTitle = (unit: number): string => {

@@ -31,6 +31,8 @@ export const es = {
     clearSearch: 'Limpiar búsqueda: {{query}}',
     closeSearch: 'Cerrar búsqueda',
     loadingContent: 'Cargando contenido',
+    showMore: 'Ver más',
+    showLess: 'Ver menos',
   },
   mainMenu: {
     progressView: 'Progreso',

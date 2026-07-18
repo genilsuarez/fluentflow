@@ -31,6 +31,8 @@ export const en = {
     clearSearch: 'Clear search: {{query}}',
     closeSearch: 'Close search',
     loadingContent: 'Loading content',
+    showMore: 'Show more',
+    showLess: 'Show less',
   },
   mainMenu: {
     progressView: 'Progress',
