@@ -251,8 +251,11 @@
       "the",
       "literature"
     ],
+    "alternativeOrders": [
+      ["Researchers", "carried", "an", "extensive", "review", "out", "of", "the", "literature"]
+    ],
     "hint": "Subject + phrasal verb + object",
-    "explanation": "'Carry out' significa realizar o completar una tarea."
+    "explanation": "'Carry out' significa realizar una tarea. Es separable: 'carried an extensive review out' también es correcto."
   },
   {
     "id": "reord-pv-c1-014",
@@ -267,8 +270,11 @@
       "further",
       "investigation"
     ],
+    "alternativeOrders": [
+      ["The", "committee", "has", "not", "ruled", "further", "investigation", "out"]
+    ],
     "hint": "Subject + auxiliary + negative + phrasal verb + object",
-    "explanation": "'Rule out' significa descartar una posibilidad."
+    "explanation": "'Rule out' significa descartar. Es separable: 'ruled further investigation out' también es correcto."
   },
   {
     "id": "reord-pv-c1-015",
@@ -284,7 +290,10 @@
       "closer",
       "scrutiny"
     ],
+    "alternativeOrders": [
+      ["The", "auditors", "singled", "three", "departments", "out", "for", "closer", "scrutiny"]
+    ],
     "hint": "Subject + phrasal verb + object + prepositional phrase",
-    "explanation": "'Single out' significa seleccionar a alguien o algo de un grupo para darle atención especial."
+    "explanation": "'Single out' significa seleccionar de un grupo. Es separable: 'singled three departments out' también es correcto."
   }
 ]

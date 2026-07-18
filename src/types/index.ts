@@ -133,6 +133,7 @@ interface GrammarPoint {
 export interface ReorderingData extends BaseLearningData {
   sentence: string;
   words: string[];
+  alternativeOrders?: string[][];
   distractors?: string[];
   hint?: string;
   explanation?: string;

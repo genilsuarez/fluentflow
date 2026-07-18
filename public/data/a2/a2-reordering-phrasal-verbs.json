@@ -13,11 +13,14 @@
       "the",
       "meeting"
     ],
+    "alternativeOrders": [
+      ["She", "brought", "an", "interesting", "topic", "up", "at", "the", "meeting"]
+    ],
     "distractors": [
       "bringed"
     ],
     "hint": "Subject + phrasal verb (past) + object + place",
-    "explanation": "'Bring up' significa mencionar. Pasado: 'brought up', no 'bringed up' (verbo irregular)."
+    "explanation": "'Bring up' significa mencionar. Pasado: 'brought up'. Es separable: 'brought an interesting topic up' también es correcto."
   },
   {
     "id": "reord-pv-a2-002",
@@ -87,8 +90,11 @@
       "application",
       "form"
     ],
+    "alternativeOrders": [
+      ["I", "have", "already", "filled", "the", "application", "form", "in"]
+    ],
     "hint": "Present perfect: have + already + past participle",
-    "explanation": "'Fill in' significa completar un formulario. En presente perfecto: 'have filled in'. 'Already' va entre have y el participio."
+    "explanation": "'Fill in' significa completar un formulario. Es separable: 'filled the application form in' también es correcto."
   },
   {
     "id": "reord-pv-a2-006",
@@ -156,8 +162,11 @@
       "after",
       "dinner"
     ],
+    "alternativeOrders": [
+      ["We", "have", "to", "clean", "the", "kitchen", "up", "after", "dinner"]
+    ],
     "hint": "have to + base form of phrasal verb",
-    "explanation": "'Clean up' significa ordenar. 'Have to' expresa obligación y va seguido de la forma base."
+    "explanation": "'Clean up' significa ordenar. Es separable: 'clean the kitchen up' también es correcto."
   },
   {
     "id": "reord-pv-a2-010",
@@ -192,8 +201,11 @@
       "next",
       "week"
     ],
+    "alternativeOrders": [
+      ["We", "had", "to", "put", "the", "meeting", "off", "until", "next", "week"]
+    ],
     "hint": "Subject + had to + phrasal verb + object + time expression",
-    "explanation": "'Put off' significa posponer algo para más adelante."
+    "explanation": "'Put off' significa posponer. Es separable: 'put the meeting off' también es correcto."
   },
   {
     "id": "reord-pv-a2-012",
@@ -241,8 +253,11 @@
       "offer",
       "politely"
     ],
+    "alternativeOrders": [
+      ["She", "turned", "the", "job", "offer", "down", "politely"]
+    ],
     "hint": "Subject + phrasal verb + object + adverb",
-    "explanation": "'Turn down' significa rechazar algo."
+    "explanation": "'Turn down' significa rechazar algo. Es separable: 'turned the job offer down' también es correcto."
   },
   {
     "id": "reord-pv-a2-015",
@@ -258,7 +273,10 @@
       "my",
       "essay"
     ],
+    "alternativeOrders": [
+      ["The", "teacher", "pointed", "several", "mistakes", "out", "in", "my", "essay"]
+    ],
     "hint": "Subject + phrasal verb + object + prepositional phrase",
-    "explanation": "'Point out' significa señalar o llamar la atención sobre algo."
+    "explanation": "'Point out' significa señalar algo. Es separable: 'pointed several mistakes out' también es correcto."
   }
 ]

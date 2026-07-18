@@ -43,10 +43,13 @@
       "every",
       "night"
     ],
+    "alternativeOrders": [
+      ["She", "turns", "the", "light", "on", "every", "night"]
+    ],
     "distractors": [
       "turn"
     ],
-    "explanation": "'Turn on' significa encender un aparato. Con 'she', se agrega -s: 'turns on'."
+    "explanation": "'Turn on' significa encender un aparato. Con 'she', se agrega -s: 'turns on'. Es separable: 'turns the light on' también es correcto."
   },
   {
     "id": "reord-pv-a1-004",
@@ -61,11 +64,14 @@
       "going",
       "out"
     ],
+    "alternativeOrders": [
+      ["He", "puts", "his", "jacket", "on", "before", "going", "out"]
+    ],
     "distractors": [
       "put"
     ],
     "hint": "Subject + phrasal verb + object + time clause",
-    "explanation": "'Put on' significa ponerse ropa. 'Go out' significa salir. Con 'he', se usa 'puts'."
+    "explanation": "'Put on' significa ponerse ropa. 'Go out' significa salir. Con 'he', se usa 'puts'. Es separable: 'puts his jacket on' también es correcto."
   },
   {
     "id": "reord-pv-a1-005",
@@ -108,7 +114,10 @@
       "television",
       "please"
     ],
-    "explanation": "'Turn off' es lo opuesto de 'turn on'. Las preguntas con 'can' comienzan con el verbo modal."
+    "alternativeOrders": [
+      ["Can", "you", "turn", "the", "television", "off", "please"]
+    ],
+    "explanation": "'Turn off' es lo opuesto de 'turn on'. Las preguntas con 'can' comienzan con el verbo modal. Es separable: 'turn the television off' también es correcto."
   },
   {
     "id": "reord-pv-a1-008",
@@ -142,10 +151,13 @@
       "very",
       "quickly"
     ],
+    "alternativeOrders": [
+      ["She", "always", "picks", "the", "phone", "up", "very", "quickly"]
+    ],
     "distractors": [
       "pick"
     ],
-    "explanation": "'Pick up' significa levantar algo o contestar el teléfono. Con 'she', se usa 'picks up'. Los adverbios de frecuencia van antes del verbo principal."
+    "explanation": "'Pick up' significa levantar algo o contestar el teléfono. Con 'she', se usa 'picks up'. Es separable: 'picks the phone up' también es correcto."
   },
   {
     "id": "reord-pv-a1-010",
@@ -194,8 +206,11 @@
       "the",
       "house"
     ],
+    "alternativeOrders": [
+      ["He", "takes", "his", "shoes", "off", "before", "entering", "the", "house"]
+    ],
     "hint": "Subject + phrasal verb + object + time clause",
-    "explanation": "'Take off' significa quitarse la ropa."
+    "explanation": "'Take off' significa quitarse la ropa. Es separable: 'takes his shoes off' también es correcto."
   },
   {
     "id": "reord-pv-a1-013",
@@ -209,8 +224,11 @@
       "every",
       "evening"
     ],
+    "alternativeOrders": [
+      ["She", "puts", "her", "toys", "away", "every", "evening"]
+    ],
     "hint": "Subject + phrasal verb + object + time expression",
-    "explanation": "'Put away' significa guardar algo en su lugar."
+    "explanation": "'Put away' significa guardar algo en su lugar. Es separable: 'puts her toys away' también es correcto."
   },
   {
     "id": "reord-pv-a1-014",

@@ -57,24 +57,52 @@ export const MainMenu: React.FC = () => {
   // Access raw (unfiltered) modules from the query cache for dependency calculations
   const allModulesRaw = queryClient.getQueryData<LearningModule[]>(['modules']) ?? [];
 
-  // Pre-compute module statuses and hidden dependencies once for all cards
-  // instead of each ModuleCard calling useProgression() individually
+  // Pre-compute module statuses for exercises view + progression-based statuses
   const { getModuleCompletion, isModuleCompleted } = useProgressStore();
-  const moduleStatusMap = React.useMemo(() => {
+
+  // Exercises view: unlock all modules at or below the user's highest reached level.
+  // "Reached" = has completed at least one module at that level.
+  const LEVEL_HIERARCHY = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'];
+  const exerciseStatusMap = React.useMemo(() => {
+    // Determine highest level where user has completed at least one module
+    let maxLevelIdx = 0; // Always unlock a1 at minimum
+    for (const m of allModulesRaw) {
+      if (isModuleCompleted(m.id)) {
+        const mLevels = Array.isArray(m.level) ? m.level : [m.level];
+        for (const lvl of mLevels) {
+          const idx = LEVEL_HIERARCHY.indexOf(lvl);
+          if (idx > maxLevelIdx) maxLevelIdx = idx;
+        }
+      }
+    }
+    const unlockedLevels = new Set(LEVEL_HIERARCHY.slice(0, maxLevelIdx + 1));
+
     const map = new Map<
       string,
       { status: 'completed' | 'unlocked' | 'locked'; missingCount: number; progressPct: number }
     >();
     for (const m of modules) {
       const completion = getModuleCompletion(m.id);
+      const mLevels = Array.isArray(m.level) ? m.level : [m.level];
+      const isLevelUnlocked = mLevels.some(lvl => unlockedLevels.has(lvl));
+
+      let status: 'completed' | 'unlocked' | 'locked';
+      if (isModuleCompleted(m.id)) {
+        status = 'completed';
+      } else if (isLevelUnlocked) {
+        status = 'unlocked';
+      } else {
+        status = 'locked';
+      }
+
       map.set(m.id, {
-        status: progression.getModuleStatus(m.id),
-        missingCount: progression.getMissingPrerequisites(m.id).length,
+        status,
+        missingCount: status === 'locked' ? progression.getMissingPrerequisites(m.id).length : 0,
         progressPct: completion?.bestScore || 0,
       });
     }
     return map;
-  }, [modules, progression, getModuleCompletion]);
+  }, [modules, allModulesRaw, isModuleCompleted, getModuleCompletion, progression]);
 
   // Pre-compute hidden dependencies map once (avoids creating a new Map per card)
   const hiddenDepsMap = React.useMemo(() => {
@@ -245,13 +273,12 @@ export const MainMenu: React.FC = () => {
           const gridRect = gridRef.current.getBoundingClientRect();
           const cardRect = moduleCard.getBoundingClientRect();
 
-          // Use actual scrollable height (clientHeight) instead of getBoundingClientRect
-          // to avoid issues on mobile where the grid rect may not reflect the visible area
-          const visibleHeight = gridRef.current.clientHeight;
           const cardOffsetInGrid = gridRef.current.scrollTop + (cardRect.top - gridRect.top);
 
-          // Center the card with a small top padding so it's never clipped
-          const scrollTop = cardOffsetInGrid - visibleHeight / 2 + cardRect.height / 2;
+          // Position the card near the top with ~1 row of context above.
+          // Card height + gap ≈ 140px in exercises view.
+          const ROW_OFFSET = 148;
+          const scrollTop = cardOffsetInGrid - ROW_OFFSET;
 
           gridRef.current.scrollTo({
             top: Math.max(0, scrollTop),
@@ -325,7 +352,9 @@ export const MainMenu: React.FC = () => {
       }
     }
 
-    navigateToModule(module);
+    // In exercises view, modules unlocked by level can bypass prerequisite check
+    const skipPrereqs = modulesView === 'all' && exerciseStatusMap.get(module.id)?.status !== 'locked';
+    navigateToModule(module, { skipPrerequisiteCheck: skipPrereqs });
   };
 
   if (isLoading) {
@@ -483,12 +512,12 @@ export const MainMenu: React.FC = () => {
                         aria-setsize={results.length}
                         isNextRecommended={highlightedModuleId === module.id}
                         isCurrentModule={currentModuleId === module.id}
-                        moduleStatus={moduleStatusMap.get(module.id)?.status ?? 'locked'}
+                        moduleStatus={exerciseStatusMap.get(module.id)?.status ?? 'locked'}
                         missingPrerequisitesCount={
-                          moduleStatusMap.get(module.id)?.missingCount ?? 0
+                          exerciseStatusMap.get(module.id)?.missingCount ?? 0
                         }
                         hiddenDependencies={hiddenDepsMap?.get(module.id)}
-                        progressPercentage={moduleStatusMap.get(module.id)?.progressPct ?? 0}
+                        progressPercentage={exerciseStatusMap.get(module.id)?.progressPct ?? 0}
                         language={language}
                       />
                     ))}
@@ -532,68 +561,108 @@ export const MainMenu: React.FC = () => {
 
                         {isExpanded && (
                           <div className="category-section__body">
-                            {levels.map(({ level, label, modules: levelModules }) => {
-                              const levelKey = `${category}:${level}`;
-                              const isLevelExpanded = expandedLevels.has(levelKey);
-                              const visibleModules = isLevelExpanded
-                                ? levelModules
-                                : levelModules.slice(0, CARDS_PER_LEVEL);
-                              const hasMore = levelModules.length > CARDS_PER_LEVEL;
-                              const remaining = levelModules.length - CARDS_PER_LEVEL;
+                            {(() => {
+                              // Determine which levels to show:
+                              // All unlocked/completed levels + the first fully-locked level.
+                              // Hide subsequent locked levels to reduce visual noise.
+                              let firstLockedFound = false;
+                              let hiddenCount = 0;
+                              let firstLockedLabel = '';
+                              const visibleLevels: typeof levels = [];
+
+                              for (const levelData of levels) {
+                                const allLocked = levelData.modules.every(
+                                  m => exerciseStatusMap.get(m.id)?.status === 'locked'
+                                );
+
+                                if (!allLocked || !firstLockedFound) {
+                                  visibleLevels.push(levelData);
+                                  if (allLocked && !firstLockedFound) {
+                                    firstLockedFound = true;
+                                    firstLockedLabel = levelData.label;
+                                  }
+                                } else {
+                                  hiddenCount++;
+                                }
+                              }
 
                               return (
-                                <div key={level} className="category-section__level">
-                                  <div
-                                    className="category-section__level-tag"
-                                    aria-label={`Nivel ${label}`}
-                                  >
-                                    {label}
-                                  </div>
-                                  <div className="category-section__grid">
-                                    {visibleModules.map((module, index) => (
-                                      <ModuleCard
-                                        key={module.id}
-                                        module={module}
-                                        onClick={() => handleModuleClick(module)}
-                                        tabIndex={0}
-                                        role="gridcell"
-                                        aria-posinset={index + 1}
-                                        aria-setsize={levelModules.length}
-                                        isNextRecommended={highlightedModuleId === module.id}
-                                        isCurrentModule={currentModuleId === module.id}
-                                        moduleStatus={
-                                          moduleStatusMap.get(module.id)?.status ?? 'locked'
-                                        }
-                                        missingPrerequisitesCount={
-                                          moduleStatusMap.get(module.id)?.missingCount ?? 0
-                                        }
-                                        hiddenDependencies={hiddenDepsMap?.get(module.id)}
-                                        progressPercentage={
-                                          moduleStatusMap.get(module.id)?.progressPct ?? 0
-                                        }
-                                        language={language}
-                                      />
-                                    ))}
-                                  </div>
-                                  {hasMore && (
-                                    <button
-                                      className="category-section__show-more"
-                                      onClick={() => toggleLevelExpanded(category, level)}
-                                      type="button"
-                                      aria-expanded={isLevelExpanded}
-                                    >
-                                      {isLevelExpanded
-                                        ? t('common.showLess')
-                                        : `${t('common.showMore')} (+${remaining})`}
-                                      <ChevronDown
-                                        size={14}
-                                        className={`category-section__show-more-icon${isLevelExpanded ? ' category-section__show-more-icon--expanded' : ''}`}
-                                      />
-                                    </button>
+                                <>
+                                  {visibleLevels.map(({ level, label, modules: levelModules }) => {
+                                    const levelKey = `${category}:${level}`;
+                                    const isLevelExpanded = expandedLevels.has(levelKey);
+                                    const visibleModules = isLevelExpanded
+                                      ? levelModules
+                                      : levelModules.slice(0, CARDS_PER_LEVEL);
+                                    const hasMore = levelModules.length > CARDS_PER_LEVEL;
+                                    const remaining = levelModules.length - CARDS_PER_LEVEL;
+
+                                    return (
+                                      <div key={level} className="category-section__level">
+                                        <div
+                                          className="category-section__level-tag"
+                                          aria-label={`Nivel ${label}`}
+                                        >
+                                          {label}
+                                        </div>
+                                        <div className="category-section__grid">
+                                          {visibleModules.map((module, index) => (
+                                            <ModuleCard
+                                              key={module.id}
+                                              module={module}
+                                              onClick={() => handleModuleClick(module)}
+                                              tabIndex={0}
+                                              role="gridcell"
+                                              aria-posinset={index + 1}
+                                              aria-setsize={levelModules.length}
+                                              isNextRecommended={highlightedModuleId === module.id}
+                                              isCurrentModule={currentModuleId === module.id}
+                                              moduleStatus={
+                                                exerciseStatusMap.get(module.id)?.status ?? 'locked'
+                                              }
+                                              missingPrerequisitesCount={
+                                                exerciseStatusMap.get(module.id)?.missingCount ?? 0
+                                              }
+                                              hiddenDependencies={hiddenDepsMap?.get(module.id)}
+                                              progressPercentage={
+                                                exerciseStatusMap.get(module.id)?.progressPct ?? 0
+                                              }
+                                              language={language}
+                                            />
+                                          ))}
+                                        </div>
+                                        {hasMore && (
+                                          <button
+                                            className="category-section__show-more"
+                                            onClick={() => toggleLevelExpanded(category, level)}
+                                            type="button"
+                                            aria-expanded={isLevelExpanded}
+                                          >
+                                            {isLevelExpanded
+                                              ? t('common.showLess')
+                                              : `${t('common.showMore')} (+${remaining})`}
+                                            <ChevronDown
+                                              size={14}
+                                              className={`category-section__show-more-icon${isLevelExpanded ? ' category-section__show-more-icon--expanded' : ''}`}
+                                            />
+                                          </button>
+                                        )}
+                                      </div>
+                                    );
+                                  })}
+                                  {hiddenCount > 0 && (
+                                    <div className="category-section__levels-hidden">
+                                      <span className="category-section__levels-hidden-text">
+                                        {t('common.levelsHidden', undefined, {
+                                          count: hiddenCount,
+                                          level: firstLockedLabel,
+                                        })}
+                                      </span>
+                                    </div>
                                   )}
-                                </div>
+                                </>
                               );
-                            })}
+                            })()}
                           </div>
                         )}
                       </section>

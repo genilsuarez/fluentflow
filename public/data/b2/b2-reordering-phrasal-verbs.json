@@ -70,10 +70,13 @@
       "main",
       "categories"
     ],
+    "alternativeOrders": [
+      ["The", "analyst", "broke", "the", "data", "down", "into", "three", "main", "categories"]
+    ],
     "distractors": [
       "breaked"
     ],
-    "explanation": "'Break down' significa analizar por partes. Pasado: 'broke down'. 'Into' introduce el resultado."
+    "explanation": "'Break down' significa analizar por partes. Pasado: 'broke down'. Es separable: 'broke the data down' también es correcto."
   },
   {
     "id": "reord-pv-b2-005",
@@ -115,7 +118,10 @@
       "the",
       "year"
     ],
-    "explanation": "'Phase out' significa dejar de usar algo gradualmente. Presente continuo para una acción futura planeada."
+    "alternativeOrders": [
+      ["The", "company", "is", "phasing", "the", "old", "software", "out", "by", "the", "end", "of", "the", "year"]
+    ],
+    "explanation": "'Phase out' significa dejar de usar algo gradualmente. Es separable: 'phasing the old software out' también es correcto."
   },
   {
     "id": "reord-pv-b2-007",
@@ -191,8 +197,11 @@
       "last",
       "month"
     ],
+    "alternativeOrders": [
+      ["I", "wish", "I", "had", "not", "turned", "that", "job", "offer", "down", "last", "month"]
+    ],
     "hint": "Wish + past perfect for past regrets",
-    "explanation": "'Turn down' significa rechazar. 'Wish + had not + participio pasado' expresa arrepentimiento en el pasado."
+    "explanation": "'Turn down' significa rechazar. Es separable: 'turned that job offer down' también es correcto."
   },
   {
     "id": "reord-pv-b2-011",

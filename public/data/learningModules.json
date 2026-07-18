@@ -423,7 +423,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "reordering-phrasal-verbs-a1"
+      "reordering-basic-sentences-a1"
     ],
     "description": "Practice forming questions and negative sentences in English",
     "estimatedTime": 3,
@@ -503,7 +503,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "sorting-articles-usage-a1"
+      "error-correction-basic-phrasal-verbs-a1"
     ],
     "description": "Listen to questions via TTS and choose the correct answer (no text shown)",
     "estimatedTime": 4,
@@ -535,7 +535,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "sorting-phrasal-verbs-particle-a1"
+      "dictation-basic-a1"
     ],
     "description": "Choose the correct article (a, an, the, or no article) in everyday sentences. Drill more in HubFlow → Articles.",
     "estimatedTime": 5,
@@ -1111,7 +1111,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "matching-elementary-idioms-a2"
+      "sorting-vocabulary-context-a2"
     ],
     "description": "Choose correct articles in complex contexts: geographic names, superlatives, fixed expressions, zero article",
     "estimatedTime": 5,
@@ -1319,7 +1319,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "reading-social-media-b1"
+      "sorting-modal-verbs-b1"
     ],
     "description": "Prepositions of place, time and movement",
     "estimatedTime": 3,
@@ -1367,7 +1367,7 @@
     ],
     "category": "Vocabulary",
     "prerequisites": [
-      "quiz-reading-vocab-b1"
+      "flashcard-work-career-b1"
     ],
     "description": "Education, environment and social media vocabulary (20 words)",
     "estimatedTime": 3,
@@ -1799,7 +1799,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "matching-idioms-situations-b1"
+      "quiz-gerunds-infinitives-b1"
     ],
     "description": "Complete reported speech sentences applying backshift rules, pronoun and time/place shifts",
     "estimatedTime": 5,
@@ -2039,7 +2039,7 @@
     ],
     "category": "Vocabulary",
     "prerequisites": [
-      "completion-clothing-emotions-b2"
+      "flashcard-clothing-style-b2"
     ],
     "description": "Complex emotions, moods, and feelings vocabulary",
     "estimatedTime": 3,
@@ -2186,7 +2186,7 @@
     "estimatedTime": 5,
     "difficulty": 4,
     "prerequisites": [
-      "reordering-conditionals-wish-b2"
+      "completion-conditionals-advanced-b2"
     ]
   },
   {
@@ -2487,7 +2487,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "sorting-professional-idioms-b2"
+      "quiz-gerunds-infinitives-advanced-b2"
     ],
     "description": "Listen to advanced grammar questions: inversions, impersonal passive, formal conditionals",
     "estimatedTime": 5,
@@ -2519,7 +2519,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "sorting-professional-idioms-b2"
+      "listen-complete-advanced-b2"
     ],
     "description": "Listen and write: inversions, third conditionals, complex passives, formal linkers (TTS)",
     "estimatedTime": 5,
@@ -2791,7 +2791,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "quiz-grammar-inversions-c1"
+      "completion-advanced-grammar-conditionals-c1"
     ],
     "description": "Advanced grammatical inversions",
     "estimatedTime": 5,
@@ -3079,7 +3079,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "sorting-phrasal-verbs-register-c1"
+      "quiz-phrasal-verbs-c1"
     ],
     "description": "Listen to academic English questions: inversions, subjunctive, hedging, formal qualifiers",
     "estimatedTime": 5,
@@ -3111,7 +3111,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "sorting-phrasal-verbs-register-c1"
+      "listen-complete-academic-c1"
     ],
     "description": "Listen and write: academic hedging, inversions, subjunctive, formal qualifiers (TTS)",
     "estimatedTime": 6,
@@ -3191,7 +3191,7 @@
     ],
     "category": "Vocabulary",
     "prerequisites": [
-      "quiz-academic-writing-c2"
+      "flashcard-academic-c2"
     ],
     "description": "Advanced academic writing vocabulary and Latin expressions",
     "estimatedTime": 3,
@@ -3415,7 +3415,7 @@
     ],
     "category": "Vocabulary",
     "prerequisites": [
-      "sorting-nuance-vocabulary-c2"
+      "completion-formal-vocabulary-nuance-c2"
     ],
     "description": "Advanced formal register transformations and usage",
     "estimatedTime": 5,
@@ -3639,7 +3639,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "matching-literary-idioms-origins-c2"
+      "sorting-mastery-phrasal-verbs-c2"
     ],
     "description": "Listen to complex academic vocabulary in context: ostensible, engender, prescience, render",
     "estimatedTime": 5,
@@ -3671,7 +3671,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "matching-literary-idioms-origins-c2"
+      "listen-complete-mastery-c2"
     ],
     "description": "Listen and write: nominalization, formal subjunctive, complex academic prose, hedging (TTS)",
     "estimatedTime": 6,
@@ -4135,7 +4135,7 @@
     ],
     "category": "PhrasalVerbs",
     "prerequisites": [
-      "matching-basic-phrasal-verbs-a1"
+      "sorting-simple-idioms-a1"
     ],
     "description": "Sort phrasal verbs by their particle (up, down, on, off)",
     "estimatedTime": 3,
@@ -4263,7 +4263,7 @@
     ],
     "category": "Vocabulary",
     "prerequisites": [
-      "reordering-comparatives-a2"
+      "error-correction-phrasal-verb-particle-a2"
     ],
     "description": "Put words in the correct order to form daily activity sentences",
     "estimatedTime": 3,
@@ -5079,7 +5079,7 @@
     ],
     "category": "PhrasalVerbs",
     "prerequisites": [
-      "sorting-discourse-markers-c2"
+      "reordering-literary-prose-c2"
     ],
     "description": "Match mastery-level phrasal verbs to their formal equivalents",
     "estimatedTime": 3,
@@ -5111,7 +5111,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "reordering-advanced-structures-c2"
+      "matching-literary-idioms-origins-c2"
     ],
     "description": "Test your mastery of advanced syntactic structures: inversion, cleft sentences, subjunctive, mixed conditionals, and nominalization",
     "estimatedTime": 5,

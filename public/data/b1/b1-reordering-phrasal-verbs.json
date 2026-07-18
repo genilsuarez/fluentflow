@@ -36,7 +36,10 @@
       "the",
       "storm"
     ],
-    "explanation": "'Call off' significa cancelar. 'Had to' expresa obligación en pasado. 'Because of' introduce la razón."
+    "alternativeOrders": [
+      ["They", "had", "to", "call", "the", "meeting", "off", "because", "of", "the", "storm"]
+    ],
+    "explanation": "'Call off' significa cancelar. 'Had to' expresa obligación en pasado. Es separable: 'call the meeting off' también es correcto."
   },
   {
     "id": "reord-pv-b1-003",
@@ -108,11 +111,14 @@
       "saying",
       "goodbye"
     ],
+    "alternativeOrders": [
+      ["He", "hung", "the", "phone", "up", "without", "saying", "goodbye"]
+    ],
     "distractors": [
       "hanged"
     ],
     "hint": "Past tense of 'hang up' is 'hung up'",
-    "explanation": "'Hang up' significa colgar el teléfono. Pasado: 'hung up'. 'Without' + gerundio."
+    "explanation": "'Hang up' significa colgar el teléfono. Pasado: 'hung up'. Es separable: 'hung the phone up' también es correcto."
   },
   {
     "id": "reord-pv-b1-007",
@@ -146,7 +152,10 @@
       "their",
       "essays"
     ],
-    "explanation": "'Hand in' significa entregar. 'Told someone to' va seguido de la forma base del phrasal verb."
+    "alternativeOrders": [
+      ["The", "teacher", "told", "the", "students", "to", "hand", "their", "essays", "in"]
+    ],
+    "explanation": "'Hand in' significa entregar. Es separable: 'hand their essays in' también es correcto."
   },
   {
     "id": "reord-pv-b1-009",
@@ -162,8 +171,11 @@
       "for",
       "months"
     ],
+    "alternativeOrders": [
+      ["She", "has", "been", "putting", "the", "decision", "off", "for", "months"]
+    ],
     "hint": "Present perfect continuous: has been + -ing",
-    "explanation": "'Put off' significa posponer. El presente perfecto continuo muestra una situación en curso."
+    "explanation": "'Put off' significa posponer. Es separable: 'putting the decision off' también es correcto."
   },
   {
     "id": "reord-pv-b1-010",
@@ -180,10 +192,13 @@
       "last",
       "year"
     ],
+    "alternativeOrders": [
+      ["They", "set", "a", "new", "company", "up", "in", "London", "last", "year"]
+    ],
     "distractors": [
       "setted"
     ],
-    "explanation": "'Set up' significa establecer o montar. Pasado: 'set up' (misma forma). 'Setted' no existe."
+    "explanation": "'Set up' significa establecer o montar. Pasado: 'set up' (misma forma). Es separable: 'set a new company up' también es correcto."
   },
   {
     "id": "reord-pv-b1-011",

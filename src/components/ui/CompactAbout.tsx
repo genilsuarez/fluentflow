@@ -22,8 +22,13 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
     location.hostname === '127.0.0.1' ||
     location.hostname.startsWith('192.168.');
 
-  const getAppHref = (path: string, port: number) =>
-    isLocal ? `http://${location.hostname}:${port}/` : `https://genilsuarez.github.io/${path}/`;
+  const isUnified = isLocal && location.port === '3000' && location.pathname.startsWith('/fluentflow');
+
+  const getAppHref = (path: string, port: number) => {
+    if (isUnified) return `/${path}/`;
+    if (isLocal) return `http://${location.hostname}:${port}/`;
+    return `https://genilsuarez.github.io/${path}/`;
+  };
 
   const preserveTheme = (event: React.MouseEvent<HTMLAnchorElement>) => {
     if (!isLocal) return;
@@ -100,10 +105,10 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
       >
         <header className="about-header">
           <div className="about-identity" aria-hidden="true">
-            FF
+            L
           </div>
           <div>
-            <p className="about-eyebrow">{t('about.subtitle')}</p>
+            <p className="about-eyebrow">LearnFlow · Plataforma</p>
             <h2 id="about-title">{t('about.title')}</h2>
           </div>
           <button
@@ -117,7 +122,9 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
         </header>
 
         <p id="about-description" className="about-description">
-          {t('about.fluentFlowRole')}
+          {language === 'es'
+            ? 'Una plataforma para aprender idiomas con estructura, práctica y música.'
+            : 'A platform for learning languages with structure, practice, and music.'}
         </p>
 
         <nav className="about-modules" aria-label={t('about.learnFlowLinks')}>
@@ -125,13 +132,17 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
             <strong>LearnFlow</strong>
             <span>Portal</span>
           </a>
+          <a href={getAppHref('fluentflow', 3001)} onClick={preserveTheme}>
+            <strong>FluentFlow</strong>
+            <span>{language === 'es' ? 'Ruta de inglés por niveles CEFR' : 'English path by CEFR levels'}</span>
+          </a>
           <a href={getAppHref('hubflow', 3002)} onClick={preserveTheme}>
             <strong>HubFlow</strong>
-            <span>{language === 'es' ? 'Práctica' : 'Practice'}</span>
+            <span>{language === 'es' ? 'Práctica flexible de gramática' : 'Flexible grammar practice'}</span>
           </a>
           <a href={getAppHref('lyricflow', 3003)} onClick={preserveTheme}>
             <strong>LyricFlow</strong>
-            <span>{language === 'es' ? 'Música' : 'Music'}</span>
+            <span>{language === 'es' ? 'Aprender con música' : 'Learn with music'}</span>
           </a>
         </nav>
 

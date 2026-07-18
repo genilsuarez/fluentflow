@@ -239,7 +239,7 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
         {currentExercise?.tip && (
           <div className="completion-component__tip">
             <p className="completion-component__tip-text">
-              💡 <strong>{t('learning.tip')}</strong>{' '}
+              <strong>{t('learning.tip')}</strong>{' '}
               <ContentRenderer
                 content={ContentAdapter.ensureStructured(currentExercise.tip, 'explanation')}
               />

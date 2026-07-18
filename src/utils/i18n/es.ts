@@ -33,6 +33,8 @@ export const es = {
     loadingContent: 'Cargando contenido',
     showMore: 'Ver más',
     showLess: 'Ver menos',
+    levelsHidden: '{{count}} niveles más — completa {{level}} para desbloquear',
+    lockedModulesHidden: 'bloqueados — completa los módulos anteriores',
   },
   mainMenu: {
     progressView: 'Progreso',
@@ -203,7 +205,7 @@ export const es = {
     fluentFlowRole:
       'FluentFlow es la ruta estructurada A1-C2 y la fuente principal de tu progreso CEFR.',
     localProgressNote:
-      'El progreso se guarda en este navegador y todavía no se sincroniza entre dispositivos. Se prevé una cuenta compartida en una versión futura.',
+      'Guardado únicamente en este navegador.',
     learnFlowLinks: 'Aplicaciones de LearnFlow',
     version: 'Versión',
     modules: 'Ejercicios',
@@ -290,9 +292,9 @@ export const es = {
     incorrect: 'Incorrecto',
     answer: 'Respuesta:',
     tenseHint:
-      '💡 Usaste la palabra correcta pero en el tiempo verbal equivocado. Revisa el contexto de la oración para saber qué tiempo usar.',
+      '→ Usaste la palabra correcta pero en el tiempo verbal equivocado. Revisa el contexto de la oración para saber qué tiempo usar.',
     particleHint:
-      '💡 Usaste el verbo correcto pero con la partícula equivocada. Relee el consejo y el contexto de la oración — la partícula cambia completamente el significado.',
+      '→ Usaste el verbo correcto pero con la partícula equivocada. Relee el consejo y el contexto de la oración — la partícula cambia completamente el significado.',
     tip: 'Consejo:',
     pressSelectOption: 'Presiona 1-4 para seleccionar o haz clic en una opción',
     nextQuestion: 'Siguiente Pregunta',

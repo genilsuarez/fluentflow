@@ -33,6 +33,8 @@ export const en = {
     loadingContent: 'Loading content',
     showMore: 'Show more',
     showLess: 'Show less',
+    levelsHidden: '{{count}} more levels — complete {{level}} to unlock',
+    lockedModulesHidden: 'locked — complete previous modules to unlock',
   },
   mainMenu: {
     progressView: 'Progress',
@@ -202,7 +204,7 @@ export const en = {
     fluentFlowRole:
       'FluentFlow is the structured A1-C2 route and the primary source for your CEFR progress.',
     localProgressNote:
-      'Progress is stored in this browser and is not yet synced between devices. A shared account is planned for a future version.',
+      'Saved only in this browser.',
     learnFlowLinks: 'LearnFlow applications',
     version: 'Version',
     modules: 'Exercises',
@@ -289,9 +291,9 @@ export const en = {
     incorrect: 'Incorrect',
     answer: 'Answer:',
     tenseHint:
-      '💡 You used the right word but in the wrong tense. Check the sentence context for clues about which tense to use.',
+      '→ You used the right word but in the wrong tense. Check the sentence context for clues about which tense to use.',
     particleHint:
-      '💡 You used the right verb but the wrong particle. Re-read the tip and sentence context — the particle changes the meaning completely.',
+      '→ You used the right verb but the wrong particle. Re-read the tip and sentence context — the particle changes the meaning completely.',
     tip: 'Tip:',
     pressSelectOption: 'Press 1-4 to select or click an option',
     nextQuestion: 'Next Question',

@@ -92,12 +92,12 @@ html.dark .editable-input {
 
 html.dark .editable-input--correct {
   color: #ffffff;
-  background: rgba(16, 185, 129, 0.25);
-  border-color: #34d399;
+  background: rgba(16, 185, 129, 0.05);
+  border-color: rgba(52, 211, 153, 0.22);
 }
 
 html.dark .editable-input--incorrect {
   color: #ffffff;
-  background: rgba(239, 68, 68, 0.2);
-  border-color: #f87171;
+  background: rgba(239, 68, 68, 0.05);
+  border-color: rgba(248, 113, 113, 0.22);
 }

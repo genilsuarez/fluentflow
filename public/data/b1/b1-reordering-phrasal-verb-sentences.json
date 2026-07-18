@@ -12,8 +12,11 @@
       "the",
       "dictionary"
     ],
+    "alternativeOrders": [
+      ["She", "looked", "the", "word", "up", "in", "the", "dictionary"]
+    ],
     "hint": "Subject + phrasal verb + object + place",
-    "explanation": "<Look up> significa buscar información en una fuente de referencia."
+    "explanation": "<Look up> significa buscar información. Es separable: 'looked the word up' también es correcto."
   },
   {
     "id": "reord-b1-pv-002",
@@ -45,8 +48,11 @@
       "next",
       "Monday"
     ],
+    "alternativeOrders": [
+      ["They", "put", "the", "meeting", "off", "until", "next", "Monday"]
+    ],
     "hint": "Subject + phrasal verb + object + time",
-    "explanation": "<Put off> significa posponer o aplazar."
+    "explanation": "<Put off> significa posponer. Es separable: 'put the meeting off' también es correcto."
   },
   {
     "id": "reord-b1-pv-004",
@@ -63,8 +69,11 @@
       "this",
       "problem"
     ],
+    "alternativeOrders": [
+      ["We", "need", "to", "figure", "a", "solution", "out", "to", "this", "problem"]
+    ],
     "hint": "Subject + need to + phrasal verb + object",
-    "explanation": "<Figure out> significa encontrar la respuesta o entender algo."
+    "explanation": "<Figure out> significa encontrar la respuesta. Es separable: 'figure a solution out' también es correcto."
   },
   {
     "id": "reord-b1-pv-005",
@@ -79,8 +88,11 @@
       "the",
       "party"
     ],
+    "alternativeOrders": [
+      ["She", "turned", "the", "invitation", "down", "to", "the", "party"]
+    ],
     "hint": "Subject + phrasal verb + object",
-    "explanation": "<Turn down> significa rechazar o negar."
+    "explanation": "<Turn down> significa rechazar. Es separable: 'turned the invitation down' también es correcto."
   },
   {
     "id": "reord-b1-pv-006",
@@ -114,8 +126,11 @@
       "the",
       "rain"
     ],
+    "alternativeOrders": [
+      ["They", "called", "the", "football", "match", "off", "because", "of", "the", "rain"]
+    ],
     "hint": "Subject + phrasal verb + object + reason",
-    "explanation": "<Call off> significa cancelar."
+    "explanation": "<Call off> significa cancelar. Es separable: 'called the football match off' también es correcto."
   },
   {
     "id": "reord-b1-pv-008",
@@ -163,8 +178,11 @@
       "the",
       "discussion"
     ],
+    "alternativeOrders": [
+      ["He", "brought", "an", "interesting", "point", "up", "during", "the", "discussion"]
+    ],
     "hint": "Subject + phrasal verb + object + time",
-    "explanation": "<Bring up> significa mencionar o introducir un tema."
+    "explanation": "<Bring up> significa mencionar un tema. Es separable: 'brought an interesting point up' también es correcto."
   },
   {
     "id": "reord-b1-pv-011",
@@ -200,7 +218,10 @@
       "city",
       "centre"
     ],
+    "alternativeOrders": [
+      ["They", "set", "a", "new", "business", "up", "in", "the", "city", "centre"]
+    ],
     "hint": "Subject + phrasal verb + object + place",
-    "explanation": "<Set up> significa establecer o comenzar algo nuevo."
+    "explanation": "<Set up> significa establecer algo nuevo. Es separable: 'set a new business up' también es correcto."
   }
 ]

@@ -10,9 +10,31 @@ export interface ValidationResult {
 
 /**
  * Compare user's word array against the correct word array element by element (case-sensitive).
+ * Supports multiple valid orderings (e.g. separable phrasal verbs).
  * If lengths differ, all positions in userWords are marked incorrect.
  */
-export function validateReordering(userWords: string[], correctWords: string[]): ValidationResult {
+export function validateReordering(
+  userWords: string[],
+  correctWords: string[],
+  alternativeOrders?: string[][]
+): ValidationResult {
+  // Check primary answer
+  const primary = compareWordArrays(userWords, correctWords);
+  if (primary.isCorrect) return primary;
+
+  // Check alternative valid orderings
+  if (alternativeOrders?.length) {
+    for (const alt of alternativeOrders) {
+      const result = compareWordArrays(userWords, alt);
+      if (result.isCorrect) return result;
+    }
+  }
+
+  // None matched — return diff against primary answer
+  return primary;
+}
+
+function compareWordArrays(userWords: string[], correctWords: string[]): ValidationResult {
   if (userWords.length !== correctWords.length) {
     return {
       isCorrect: false,

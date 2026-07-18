@@ -914,3 +914,33 @@ html.dark .progression-dashboard__module--locked .progression-dashboard__level-b
     min-height: 44px;
   }
 }
+
+/* Locked modules hidden message */
+.progression-dashboard__locked-hidden {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 10px 16px;
+  font-size: 0.8rem;
+  color: var(--theme-text-tertiary, #9a8e7f);
+  font-style: italic;
+  border-top: 1px dashed var(--theme-border-soft, #e0d8ce);
+  margin-top: 4px;
+}
+
+/* Peek card: last visible locked module is visually clipped to hint continuation */
+.progression-dashboard__module--peek {
+  max-height: 40px;
+  overflow: hidden;
+  opacity: 0.5;
+  mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+  pointer-events: none;
+}
+
+html.dark .progression-dashboard__locked-hidden {
+  color: var(--theme-text-tertiary, #8a7e6f);
+  border-color: var(--theme-border-soft, #3d3529);
+}

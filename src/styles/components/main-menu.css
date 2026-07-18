@@ -1309,6 +1309,28 @@ html.dark .category-section__show-more:hover {
   background: rgba(212, 118, 78, 0.08);
 }
 
+/* Levels hidden message */
+.category-section__levels-hidden {
+  padding: 12px 16px;
+  text-align: center;
+  border-top: 1px dashed var(--theme-border-soft, #e0d8ce);
+  margin-top: 8px;
+}
+
+.category-section__levels-hidden-text {
+  font-size: 0.8rem;
+  color: var(--theme-text-tertiary, #9a8e7f);
+  font-style: italic;
+}
+
+html.dark .category-section__levels-hidden {
+  border-color: var(--theme-border-soft, #3d3529);
+}
+
+html.dark .category-section__levels-hidden-text {
+  color: var(--theme-text-tertiary, #8a7e6f);
+}
+
 /* --- Dark mode --- */
 html.dark .category-section__header {
   background: var(--theme-bg-elevated, #1e1b16);

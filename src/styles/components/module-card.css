@@ -152,10 +152,8 @@
 .module-card__meta {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 0.25rem;
+  gap: 0.375rem;
   margin-top: 0.125rem;
-  flex-wrap: wrap;
 }
 
 .module-card__type {
@@ -165,6 +163,9 @@
   color: var(--lp-ink-soft, var(--lp-muted));
   text-transform: uppercase;
   letter-spacing: var(--tracking-wide, 0.03em);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
 }
 
 .module-card__level {
@@ -443,7 +444,8 @@
   }
 
   .module-card__meta {
-    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
     gap: 0.25rem;
   }
 }
@@ -481,7 +483,8 @@
   }
 
   .module-card__meta {
-    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
     gap: 0.375rem;
   }
 }
@@ -519,7 +522,8 @@
   }
 
   .module-card__meta {
-    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
     gap: 0.375rem;
   }
 }

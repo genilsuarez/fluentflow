@@ -51,7 +51,8 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
     }
   }, [completedModulesCount, progression]);
 
-  // Scroll the .progression-dashboard__units container so the --next module is centered
+  // Scroll the .progression-dashboard__units container so the --next module
+  // appears near the top, with roughly one row of completed modules visible above.
   const scrollToNextModule = React.useCallback((behavior: ScrollBehavior = 'smooth') => {
     const nextEl = document.querySelector('.progression-dashboard__module--next');
     if (!nextEl) return;
@@ -59,20 +60,18 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
     // Find the scrollable ancestor (.progression-dashboard__units)
     const container = nextEl.closest('.progression-dashboard__units');
     if (!container) {
-      nextEl.scrollIntoView({ behavior, block: 'center' });
+      nextEl.scrollIntoView({ behavior, block: 'start' });
       return;
     }
 
-    // Use getBoundingClientRect for the actual rendered position, which is
-    // reliable once CSS animations have completed (we schedule this after
-    // the slideDown animation finishes).
     const containerRect = container.getBoundingClientRect();
     const elRect = nextEl.getBoundingClientRect();
 
-    // Distance from the element's center to the container's visual center
-    const elCenterInContainer =
-      container.scrollTop + (elRect.top - containerRect.top) + elRect.height / 2;
-    const scrollTop = elCenterInContainer - container.clientHeight / 2;
+    // Position the next module with ~1 row height offset from the top.
+    // A row is ~100px (card height + gap). This leaves context above.
+    const ROW_OFFSET = 108;
+    const elTopInContainer = container.scrollTop + (elRect.top - containerRect.top);
+    const scrollTop = elTopInContainer - ROW_OFFSET;
 
     container.scrollTo({
       top: Math.max(0, scrollTop),
@@ -364,55 +363,124 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
 
                   {isExpanded && (
                     <div className="progression-dashboard__modules">
-                      {modules.map(module => {
-                        const status = progression.getModuleStatus(module.id);
-                        const isCompleted = isModuleCompleted(module.id);
-                        const isNext = nextRecommended?.id === module.id;
+                      {(() => {
+                        // Calculate how many locked cards to show:
+                        // Fill the row of the last unlocked card + 1 full row + 1 peek card.
+                        // Based on 4 columns (desktop grid). At smaller breakpoints
+                        // this still produces a reasonable peek effect.
+                        const COLUMNS = 4;
+
+                        // In progress view, only nextRecommended is shown as "unlocked".
+                        // Other technically-unlocked modules display as locked to reinforce
+                        // linear progression UX (avoids confusing multiple active fronts).
+                        const effectiveStatus = (module: LearningModule) => {
+                          const raw = progression.getModuleStatus(module.id);
+                          if (raw === 'unlocked' && module.id !== nextRecommended?.id) {
+                            return 'locked';
+                          }
+                          return raw;
+                        };
+
+                        const unlockedCount = modules.filter(
+                          m => effectiveStatus(m) !== 'locked'
+                        ).length;
+                        const remainder = unlockedCount % COLUMNS;
+                        const toFillRow = remainder === 0 ? 0 : COLUMNS - remainder;
+                        // Show: fill current row + 1 full row + 1 full peek row
+                        const LOCKED_VISIBLE = toFillRow + COLUMNS + COLUMNS;
+
+                        let lockedShown = 0;
+                        let lockedHidden = 0;
+                        const visible: typeof modules = [];
+
+                        for (const module of modules) {
+                          const status = effectiveStatus(module);
+                          if (status === 'locked') {
+                            if (lockedShown < LOCKED_VISIBLE) {
+                              visible.push(module);
+                              lockedShown++;
+                            } else {
+                              lockedHidden++;
+                            }
+                          } else {
+                            visible.push(module);
+                          }
+                        }
 
                         return (
-                          <div
-                            key={module.id}
-                            className={`progression-dashboard__module progression-dashboard__module--${status} module-card--${module.learningMode} ${isNext ? 'progression-dashboard__module--next' : ''}`}
-                            onClick={
-                              status !== 'locked' ? () => handleModuleClick(module) : undefined
-                            }
-                            aria-disabled={status === 'locked'}
-                          >
-                            <div className="progression-dashboard__module-icon">
-                              {isCompleted ? (
-                                <CheckCircle className="progression-dashboard__icon progression-dashboard__icon--completed" />
-                              ) : status === 'locked' ? (
-                                <Lock className="progression-dashboard__icon progression-dashboard__icon--locked" />
-                              ) : (
-                                <Play className="progression-dashboard__icon progression-dashboard__icon--available" />
-                              )}
-                            </div>
+                          <>
+                            {visible.map((module, idx) => {
+                              const status = effectiveStatus(module);
+                              const isCompleted = isModuleCompleted(module.id);
+                              const isNext = nextRecommended?.id === module.id;
+                              // Mark the last row of locked cards as "peek" (visually clipped)
+                              const isPeek =
+                                status === 'locked' &&
+                                lockedHidden > 0 &&
+                                idx >= visible.length - COLUMNS;
 
-                            <div className="progression-dashboard__module-content">
-                              <h4 className="progression-dashboard__module-name">{module.name}</h4>
-                              <p className="progression-dashboard__module-desc">
-                                {module.description}
-                              </p>
-                              <div className="progression-dashboard__module-meta">
-                                <span className="progression-dashboard__module-type">
-                                  {t(MODE_I18N_KEYS[module.learningMode] || 'common.exercise')}
-                                </span>
-                                <span className="progression-dashboard__module-time">
-                                  {module.estimatedTime}min
-                                </span>
-                              </div>
-                            </div>
+                              return (
+                                <div
+                                  key={module.id}
+                                  className={`progression-dashboard__module progression-dashboard__module--${status} module-card--${module.learningMode} ${isNext ? 'progression-dashboard__module--next' : ''} ${isPeek ? 'progression-dashboard__module--peek' : ''}`}
+                                  onClick={
+                                    status !== 'locked'
+                                      ? () => handleModuleClick(module)
+                                      : undefined
+                                  }
+                                  aria-disabled={status === 'locked'}
+                                >
+                                  <div className="progression-dashboard__module-icon">
+                                    {isCompleted ? (
+                                      <CheckCircle className="progression-dashboard__icon progression-dashboard__icon--completed" />
+                                    ) : status === 'locked' ? (
+                                      <Lock className="progression-dashboard__icon progression-dashboard__icon--locked" />
+                                    ) : (
+                                      <Play className="progression-dashboard__icon progression-dashboard__icon--available" />
+                                    )}
+                                  </div>
 
-                            {isNext && (
-                              <div className="progression-dashboard__next-indicator">
-                                <span className="progression-dashboard__next-label">
-                                  {t('learningPath.nextRecommended')}
+                                  <div className="progression-dashboard__module-content">
+                                    <h4 className="progression-dashboard__module-name">
+                                      {module.name}
+                                    </h4>
+                                    <p className="progression-dashboard__module-desc">
+                                      {module.description}
+                                    </p>
+                                    <div className="progression-dashboard__module-meta">
+                                      <span className="progression-dashboard__module-type">
+                                        {t(
+                                          MODE_I18N_KEYS[module.learningMode] || 'common.exercise'
+                                        )}
+                                      </span>
+                                      <span className="progression-dashboard__module-time">
+                                        {module.estimatedTime}min
+                                      </span>
+                                    </div>
+                                  </div>
+
+                                  {isNext && (
+                                    <div className="progression-dashboard__next-indicator">
+                                      <span className="progression-dashboard__next-label">
+                                        {t('learningPath.nextRecommended')}
+                                      </span>
+                                    </div>
+                                  )}
+                                </div>
+                              );
+                            })}
+                            {lockedHidden > 0 && (
+                              <div className="progression-dashboard__locked-hidden">
+                                <Lock size={14} aria-hidden="true" />
+                                <span>
+                                  +{lockedHidden}{' '}
+                                  {t('common.lockedModulesHidden')}
                                 </span>
                               </div>
                             )}
-                          </div>
+                          </>
                         );
-                      })}
+                      })()}
                     </div>
                   )}
                 </div>

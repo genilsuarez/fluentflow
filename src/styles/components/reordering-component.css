@@ -169,7 +169,7 @@
 .reordering__word--correct {
   background-color: var(--theme-success, #10b981);
   color: #ffffff;
-  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+  box-shadow: none;
   cursor: default;
 }
 
@@ -177,7 +177,7 @@
 .reordering__word--incorrect {
   background-color: var(--theme-error, #ef4444);
   color: #ffffff;
-  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.3);
+  box-shadow: none;
   cursor: default;
 }
 
@@ -207,9 +207,10 @@
 }
 
 .reordering__feedback--correct {
-  background-color: #dcfce7;
-  border: 1px solid #16a34a;
-  color: #166534;
+  background-color: transparent;
+  border: none;
+  color: #16a34a;
+  padding: 0.375rem 0;
 }
 
 .reordering__feedback--incorrect {
@@ -221,6 +222,10 @@
 .reordering__feedback-text {
   font-weight: 600;
   margin-bottom: 0.125rem;
+}
+
+.reordering__feedback--correct .reordering__feedback-text::before {
+  content: '✓ ';
 }
 
 /* === SENTENCE (correct sentence in feedback) === */
@@ -327,8 +332,8 @@ html.dark .reordering__zone--words {
 }
 
 html.dark .reordering__zone--answer {
-  border-color: rgba(59, 130, 246, 0.3);
-  background-color: rgba(59, 130, 246, 0.05);
+  border-color: rgba(59, 130, 246, 0.15);
+  background-color: rgba(59, 130, 246, 0.03);
 }
 
 html.dark .reordering__zone-label {
@@ -344,42 +349,48 @@ html.dark .reordering__word {
 }
 
 html.dark .reordering__word--correct {
-  background-color: rgba(16, 185, 129, 0.85);
-  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.06);
+  color: #6ee7b7;
+  border: 1px solid rgba(52, 211, 153, 0.25);
 }
 
 html.dark .reordering__word--incorrect {
-  background-color: rgba(239, 68, 68, 0.85);
-  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.04);
+  color: #e2e8f0;
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 html.dark .reordering__feedback--correct {
-  background-color: rgba(22, 163, 74, 0.15);
-  border-color: #16a34a;
-  color: #86efac;
+  background-color: transparent;
+  border-color: transparent;
+  color: #6ee7b7;
 }
 
 html.dark .reordering__feedback--incorrect {
-  background-color: rgba(220, 38, 38, 0.15);
-  border-color: #dc2626;
+  background-color: transparent;
+  border: none;
+  border-left: 3px solid rgba(248, 113, 113, 0.3);
+  border-radius: 0;
+  padding-left: 0.75rem;
   color: #fca5a5;
 }
 
 html.dark .reordering__feedback-text {
-  color: inherit;
+  color: #e2e8f0;
 }
 
 html.dark .reordering__sentence-label {
-  color: inherit;
+  color: #94a3b8;
 }
 
 html.dark .reordering__sentence-text {
-  color: inherit;
+  color: #e2e8f0;
+  font-style: italic;
 }
 
 html.dark .reordering__explanation {
-  border-top-color: rgba(255, 255, 255, 0.12);
-  color: var(--lp-border-strong);
+  border-top-color: rgba(255, 255, 255, 0.08);
+  color: #94a3b8;
 }
 
 html.dark .reordering__empty {

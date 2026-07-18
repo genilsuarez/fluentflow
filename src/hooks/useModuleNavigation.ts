@@ -36,8 +36,8 @@ export const useModuleNavigation = (menuContext?: MenuContext) => {
   const { t } = useTranslation(language);
 
   const navigateToModule = useCallback(
-    (module: LearningModule) => {
-      if (!progression.canAccessModule(module.id)) {
+    (module: LearningModule, options?: { skipPrerequisiteCheck?: boolean }) => {
+      if (!options?.skipPrerequisiteCheck && !progression.canAccessModule(module.id)) {
         const missingPrereqs = progression.getMissingPrerequisites(module.id);
         const prereqNames = missingPrereqs.map(p => p.name).join(', ');
 

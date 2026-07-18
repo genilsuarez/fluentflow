@@ -112,8 +112,11 @@
       "crime",
       "scene"
     ],
+    "alternativeOrders": [
+      ["The", "detective", "was", "trying", "to", "piece", "the", "evidence", "together", "from", "the", "crime", "scene"]
+    ],
     "hint": "Subject + was trying to + phrasal verb + object + place",
-    "explanation": "<Piece together> significa ir reuniendo información gradualmente."
+    "explanation": "<Piece together> significa ir reuniendo información. Es separable: 'piece the evidence together' también es correcto."
   },
   {
     "id": "reord-b2-apv-007",
@@ -167,8 +170,11 @@
       "by",
       "2030"
     ],
+    "alternativeOrders": [
+      ["The", "government", "plans", "to", "phase", "fossil", "fuel", "subsidies", "out", "by", "2030"]
+    ],
     "hint": "Subject + plans to + phrasal verb + object + time",
-    "explanation": "<Phase out> significa dejar de usar o proporcionar algo de forma gradual."
+    "explanation": "<Phase out> significa eliminar gradualmente. Es separable: 'phase fossil fuel subsidies out' también es correcto."
   },
   {
     "id": "reord-b2-apv-010",

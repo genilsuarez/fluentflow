@@ -325,18 +325,18 @@ html.dark .sorting-component__drop-zone--drag-over {
 }
 
 html.dark .sorting-component__drop-zone--correct {
-  background-color: rgba(22, 163, 74, 0.15);
-  border-color: #16a34a;
+  background-color: rgba(22, 163, 74, 0.05);
+  border-color: rgba(22, 163, 74, 0.22);
 }
 
 html.dark .sorting-component__drop-zone--error {
-  background-color: rgba(220, 38, 38, 0.15);
-  border-color: #dc2626;
+  background-color: rgba(220, 38, 38, 0.05);
+  border-color: rgba(220, 38, 38, 0.22);
 }
 
 html.dark .sorting-component__feedback--error {
-  background-color: rgba(220, 38, 38, 0.1);
-  border-color: #dc2626;
+  background-color: rgba(220, 38, 38, 0.04);
+  border-color: rgba(220, 38, 38, 0.18);
   color: #fca5a5;
 }
 
@@ -349,15 +349,15 @@ html.dark .sorting-component__feedback-text {
 }
 
 html.dark .sorting-component__sorted-item--correct {
-  background-color: rgba(22, 163, 74, 0.2);
+  background-color: rgba(22, 163, 74, 0.05);
   color: #86efac;
-  border-color: #16a34a;
+  border-color: rgba(22, 163, 74, 0.22);
 }
 
 html.dark .sorting-component__sorted-item--incorrect {
-  background-color: rgba(220, 38, 38, 0.2);
+  background-color: rgba(220, 38, 38, 0.05);
   color: #fca5a5;
-  border-color: #dc2626;
+  border-color: rgba(220, 38, 38, 0.22);
 }
 
 html.dark .sorting-component__category-header {

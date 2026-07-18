@@ -128,8 +128,11 @@
       "complex",
       "phenomena"
     ],
+    "alternativeOrders": [
+      ["Only", "through", "sustained", "inquiry", "can", "scholars", "tease", "the", "nuances", "out", "of", "such", "complex", "phenomena"]
+    ],
     "hint": "Inversion after 'Only through'",
-    "explanation": "'Tease out' significa extraer con cuidado. 'Only through' provoca la inversión sujeto-auxiliar."
+    "explanation": "'Tease out' significa extraer con cuidado. Es separable: 'tease the nuances out' también es correcto. 'Only through' provoca inversión."
   },
   {
     "id": "reord-pv-c2-007",
@@ -285,8 +288,11 @@
       "original",
       "conjecture"
     ],
+    "alternativeOrders": [
+      ["Subsequent", "findings", "bore", "the", "theorist's", "original", "conjecture", "out"]
+    ],
     "hint": "Subject + phrasal verb + object",
-    "explanation": "'Bear out' significa confirmar o respaldar una afirmación."
+    "explanation": "'Bear out' significa confirmar una afirmación. Es separable: 'bore the conjecture out' también es correcto."
   },
   {
     "id": "reord-pv-c2-015",
