@@ -15,7 +15,14 @@ import { useProgressStore } from '../../stores/progressStore';
 import { useTranslation } from '../../utils/i18n';
 import type { LearningModule, Category } from '../../types';
 import { toast } from '../../stores/toastStore';
-import { BarChart3, List, Search as SearchIcon, X as XIcon, ChevronDown, ChevronRight } from 'lucide-react';
+import {
+  BarChart3,
+  List,
+  Search as SearchIcon,
+  X as XIcon,
+  ChevronDown,
+  ChevronRight,
+} from 'lucide-react';
 import { UnifiedFilter } from './UnifiedFilter';
 import '../../styles/components/main-menu.css';
 
@@ -43,6 +50,8 @@ export const MainMenu: React.FC = () => {
   const [isSearchExpanded, setIsSearchExpanded] = useState(false);
   const [modulesView, setModulesView] = useState<'progress' | 'all'>('progress');
   const [expandedCategories, setExpandedCategories] = useState<Set<Category>>(() => new Set());
+  const [expandedLevels, setExpandedLevels] = useState<Set<string>>(() => new Set());
+  const CARDS_PER_LEVEL = 8;
   const gridRef = useRef<HTMLDivElement>(null);
 
   // Access raw (unfiltered) modules from the query cache for dependency calculations
@@ -79,9 +88,23 @@ export const MainMenu: React.FC = () => {
   }, [modules, allModulesRaw, categories, learningModes]);
 
   // Category-grouped view: category → level → toposort within level
-  const CATEGORY_ORDER: Category[] = ['Grammar', 'Vocabulary', 'PhrasalVerbs', 'Idioms', 'Reading', 'Review'];
+  const CATEGORY_ORDER: Category[] = [
+    'Grammar',
+    'Vocabulary',
+    'PhrasalVerbs',
+    'Idioms',
+    'Reading',
+    'Review',
+  ];
   const LEVEL_ORDER = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'] as const;
-  const LEVEL_LABELS: Record<string, string> = { a1: 'A1', a2: 'A2', b1: 'B1', b2: 'B2', c1: 'C1', c2: 'C2' };
+  const LEVEL_LABELS: Record<string, string> = {
+    a1: 'A1',
+    a2: 'A2',
+    b1: 'B1',
+    b2: 'B2',
+    c1: 'C1',
+    c2: 'C2',
+  };
 
   const groupedByCategory = React.useMemo(() => {
     if (modules.length === 0) return [];
@@ -145,6 +168,21 @@ export const MainMenu: React.FC = () => {
         });
       }
 
+      return next;
+    });
+    // Reset level expansions when toggling categories
+    setExpandedLevels(new Set());
+  }, []);
+
+  const toggleLevelExpanded = React.useCallback((category: string, level: string) => {
+    const key = `${category}:${level}`;
+    setExpandedLevels(prev => {
+      const next = new Set(prev);
+      if (next.has(key)) {
+        next.delete(key);
+      } else {
+        next.add(key);
+      }
       return next;
     });
   }, []);
@@ -430,7 +468,9 @@ export const MainMenu: React.FC = () => {
                   <div
                     className="main-menu__grid-container"
                     role="grid"
-                    aria-label={t('mainMenu.modulesAvailable', undefined, { count: results.length })}
+                    aria-label={t('mainMenu.modulesAvailable', undefined, {
+                      count: results.length,
+                    })}
                   >
                     {results.map((module, index) => (
                       <ModuleCard
@@ -444,7 +484,9 @@ export const MainMenu: React.FC = () => {
                         isNextRecommended={highlightedModuleId === module.id}
                         isCurrentModule={currentModuleId === module.id}
                         moduleStatus={moduleStatusMap.get(module.id)?.status ?? 'locked'}
-                        missingPrerequisitesCount={moduleStatusMap.get(module.id)?.missingCount ?? 0}
+                        missingPrerequisitesCount={
+                          moduleStatusMap.get(module.id)?.missingCount ?? 0
+                        }
                         hiddenDependencies={hiddenDepsMap?.get(module.id)}
                         progressPercentage={moduleStatusMap.get(module.id)?.progressPct ?? 0}
                         language={language}
@@ -460,7 +502,11 @@ export const MainMenu: React.FC = () => {
                     const pct = total > 0 ? Math.round((completed / total) * 100) : 0;
 
                     return (
-                      <section key={category} className="category-section" aria-labelledby={`cat-${category}`}>
+                      <section
+                        key={category}
+                        className="category-section"
+                        aria-labelledby={`cat-${category}`}
+                      >
                         <button
                           className={`category-section__header ${isExpanded ? 'category-section__header--expanded' : ''}`}
                           onClick={() => toggleCategory(category)}
@@ -476,7 +522,10 @@ export const MainMenu: React.FC = () => {
                           </span>
                           <span className="category-section__count">{total}</span>
                           <span className="category-section__progress">
-                            <span className="category-section__progress-bar" style={{ '--cat-progress': `${pct}%` } as React.CSSProperties} />
+                            <span
+                              className="category-section__progress-bar"
+                              style={{ '--cat-progress': `${pct}%` } as React.CSSProperties}
+                            />
                           </span>
                           <span className="category-section__pct">{pct}%</span>
                         </button>
@@ -485,7 +534,10 @@ export const MainMenu: React.FC = () => {
                           <div className="category-section__body">
                             {levels.map(({ level, label, modules: levelModules }) => (
                               <div key={level} className="category-section__level">
-                                <div className="category-section__level-tag" aria-label={`Nivel ${label}`}>
+                                <div
+                                  className="category-section__level-tag"
+                                  aria-label={`Nivel ${label}`}
+                                >
                                   {label}
                                 </div>
                                 <div className="category-section__grid">
@@ -500,10 +552,16 @@ export const MainMenu: React.FC = () => {
                                       aria-setsize={levelModules.length}
                                       isNextRecommended={highlightedModuleId === module.id}
                                       isCurrentModule={currentModuleId === module.id}
-                                      moduleStatus={moduleStatusMap.get(module.id)?.status ?? 'locked'}
-                                      missingPrerequisitesCount={moduleStatusMap.get(module.id)?.missingCount ?? 0}
+                                      moduleStatus={
+                                        moduleStatusMap.get(module.id)?.status ?? 'locked'
+                                      }
+                                      missingPrerequisitesCount={
+                                        moduleStatusMap.get(module.id)?.missingCount ?? 0
+                                      }
                                       hiddenDependencies={hiddenDepsMap?.get(module.id)}
-                                      progressPercentage={moduleStatusMap.get(module.id)?.progressPct ?? 0}
+                                      progressPercentage={
+                                        moduleStatusMap.get(module.id)?.progressPct ?? 0
+                                      }
                                       language={language}
                                     />
                                   ))}
