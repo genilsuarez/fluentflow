@@ -248,7 +248,7 @@ export const MainMenu: React.FC = () => {
       {/* Content based on menu context */}
       {viewMode === 'progression' ? (
         // Home view: hero + stats inline
-        <HomeDashboard />
+        <HomeDashboard onViewModules={() => setViewMode('list')} />
       ) : (
         // Modules view: search + filters + view toggle + content
         <>

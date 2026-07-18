@@ -1,5 +1,5 @@
 import React, { useEffect, useCallback } from 'react';
-import { Play, Trophy, Target, Clock, TrendingUp } from 'lucide-react';
+import { Play, Trophy, Target, Clock, TrendingUp, ChevronRight } from 'lucide-react';
 import { useProgressStore } from '../../stores/progressStore';
 import { useUserStore } from '../../stores/userStore';
 import { useSettingsStore } from '../../stores/settingsStore';
@@ -9,7 +9,11 @@ import { useModuleNavigation } from '../../hooks/useModuleNavigation';
 import { MODE_I18N_KEYS, getLevelColor } from '../../utils/progressionDisplay';
 import '../../styles/components/home-dashboard.css';
 
-export const HomeDashboard: React.FC = () => {
+interface HomeDashboardProps {
+  onViewModules?: () => void;
+}
+
+export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) => {
   const { getProgressData, getWeeklyAverage } = useProgressStore();
   const { userScores, getTotalScore } = useUserStore();
   const { language } = useSettingsStore();
@@ -159,6 +163,25 @@ export const HomeDashboard: React.FC = () => {
             <span className="home-dash__stat-label">{t('dashboard.timeSpent', 'Practiced')}</span>
           </div>
         </div>
+        {onViewModules && (
+          <button
+            className="home-dash__stat home-dash__stat--depth"
+            onClick={onViewModules}
+            type="button"
+          >
+            <div className="home-dash__stat-content">
+              <span className="home-dash__depth-line">
+                {stats.totalModules} {t('dashboard.depthModules', 'modules')}
+              </span>
+              <span className="home-dash__depth-line">
+                6,700+ {t('dashboard.depthExercises', 'exercises')}
+              </span>
+              <span className="home-dash__depth-cta">
+                {t('dashboard.viewAll', 'View all')} <ChevronRight size={11} />
+              </span>
+            </div>
+          </button>
+        )}
       </div>
 
       {/* Weekly Progress */}

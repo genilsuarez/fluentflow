@@ -449,62 +449,109 @@
   margin: 0;
 }
 
-/* === SUMMARY PAGE - Dedicated summary layout === */
+/* === SUMMARY PAGE - Super Charged Premium Layout === */
 .reading-component__summary-page {
   padding: 0;
+  position: relative;
+}
+
+/* Ambient background glow */
+.reading-component__summary-page::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 120px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(59, 130, 246, 0.12) 0%,
+    rgba(139, 92, 246, 0.06) 40%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: 0;
 }
 
 .reading-component__summary-title {
   font-size: var(--reading-font-size-xl);
-  font-weight: 700;
+  font-weight: 800;
   line-height: var(--reading-line-height-tight, 1.3);
   margin-top: 0;
-  margin-bottom: 0.375rem;
-  color: var(--reading-accent-primary);
+  margin-bottom: 0.625rem;
   text-align: center;
-  padding-bottom: 0.25rem;
-  border-bottom: 2px solid var(--reading-accent-primary);
+  padding-bottom: 0.5rem;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #06b6d4 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.02em;
 }
 
-/* === SUMMARY SECTION TRIGGER - Enhanced Collapsible buttons === */
+/* Animated underline */
+.reading-component__summary-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #3b82f6, #8b5cf6, #06b6d4, transparent);
+  border-radius: var(--lp-radius-full);
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0%, 100% { opacity: 0.6; transform: translateX(-50%) scaleX(0.8); }
+  50% { opacity: 1; transform: translateX(-50%) scaleX(1); }
+}
+
+/* === SUMMARY SECTION TRIGGER - Super Charged Glassmorphism === */
 .reading-component__summary-section-trigger {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.375rem 0.625rem;
+  padding: 0.5rem 0.75rem;
   background: linear-gradient(
     135deg,
-    var(--reading-bg-secondary) 0%,
-    var(--reading-bg-tertiary) 100%
+    rgba(59, 130, 246, 0.06) 0%,
+    rgba(139, 92, 246, 0.04) 50%,
+    rgba(6, 182, 212, 0.06) 100%
   );
-  border: 2px solid var(--reading-accent-primary);
-  border-radius: var(--lp-radius-md);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: var(--lp-radius-lg);
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 0.375rem;
+  transition: all 0.35s cubic-bezier(0.22, 0.9, 0.36, 1);
+  margin-bottom: 0.5rem;
   text-align: left;
   position: relative;
   overflow: hidden;
   box-shadow:
-    0 1px 4px rgba(59, 130, 246, 0.1),
-    0 0 0 1px rgba(59, 130, 246, 0.08) inset;
+    0 2px 8px rgba(59, 130, 246, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
-/* Decorative left accent bar for collapsed state */
+/* Gradient left accent — animated on hover */
 .reading-component__summary-section-trigger::after {
   content: '';
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
-  width: 5px;
-  background: var(--reading-accent-primary);
-  border-radius: var(--lp-radius-md) 0 0 var(--lp-radius-md);
-  transition: width 0.3s ease;
+  width: 4px;
+  background: linear-gradient(180deg, #3b82f6 0%, #8b5cf6 50%, #06b6d4 100%);
+  border-radius: var(--lp-radius-lg) 0 0 var(--lp-radius-lg);
+  transition: width 0.35s cubic-bezier(0.22, 0.9, 0.36, 1);
 }
 
-/* Subtle shine effect on hover */
+/* Sweep light on hover */
 .reading-component__summary-section-trigger::before {
   content: '';
   position: absolute;
@@ -512,8 +559,13 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transition: left 0.5s ease;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.08) 50%,
+    transparent 100%
+  );
+  transition: left 0.6s ease;
   z-index: 1;
 }
 
@@ -522,108 +574,109 @@
 }
 
 .reading-component__summary-section-trigger:hover {
-  background: linear-gradient(
-    135deg,
-    var(--reading-bg-tertiary) 0%,
-    var(--reading-bg-secondary) 100%
-  );
-  border-color: var(--reading-accent-primary);
+  border-color: rgba(139, 92, 246, 0.5);
   transform: translateY(-2px);
   box-shadow:
-    0 4px 16px rgba(59, 130, 246, 0.2),
-    0 0 0 1px rgba(59, 130, 246, 0.15) inset;
+    0 8px 24px rgba(59, 130, 246, 0.15),
+    0 4px 8px rgba(139, 92, 246, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 .reading-component__summary-section-trigger:hover::after {
-  width: 8px;
+  width: 6px;
 }
 
 .reading-component__summary-section-trigger:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transform: translateY(0) scale(0.99);
+  box-shadow: 0 2px 6px rgba(59, 130, 246, 0.1);
 }
 
-/* Expanded state styling */
+/* Expanded state — full glow */
 .reading-component__summary-section-trigger[aria-expanded='true'] {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.12) 0%, rgba(139, 92, 246, 0.12) 100%);
-  border-color: var(--reading-accent-primary);
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.08) 0%,
+    rgba(139, 92, 246, 0.05) 50%,
+    rgba(6, 182, 212, 0.08) 100%
+  );
+  border-color: rgba(99, 102, 241, 0.2);
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  border-bottom: none;
+  border-bottom-color: transparent;
   margin-bottom: 0;
-  box-shadow: 0 -1px 4px rgba(59, 130, 246, 0.1);
+  box-shadow:
+    0 4px 16px rgba(59, 130, 246, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
 }
 
-/* Hide left accent bar when expanded */
 .reading-component__summary-section-trigger[aria-expanded='true']::after {
   width: 0;
 }
 
 .reading-component__summary-section-title {
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   color: var(--reading-text-primary);
   display: flex;
   align-items: center;
-  gap: 0.375rem;
+  gap: 0.5rem;
   flex: 1;
   position: relative;
   z-index: 1;
 }
 
-/* Icon before title for better visual hierarchy */
-/* Icon indicator before title - removed to avoid visual clutter with left bar */
-
 .reading-component__summary-section-count {
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: #1e3a8a;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: #ffffff;
   text-transform: none;
   letter-spacing: normal;
-  background: rgba(59, 130, 246, 0.15);
-  padding: 0.125rem 0.5rem;
-  border-radius: var(--lp-radius-lg);
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  padding: 0.1875rem 0.5rem;
+  border-radius: var(--lp-radius-full);
   margin-left: 0.25rem;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(59, 130, 246, 0.3);
+  transition: all 0.35s cubic-bezier(0.22, 0.9, 0.36, 1);
+  box-shadow: 0 2px 6px rgba(59, 130, 246, 0.3);
+  min-width: 1.5rem;
+  text-align: center;
 }
 
-/* Hover state - must come after base to override */
+/* Hover state — pulse the count badge */
 .reading-component__summary-section-trigger:hover
   .reading-component__summary-section-title
   .reading-component__summary-section-count {
-  background: #3b82f6;
-  color: #ffffff;
-  transform: scale(1.08);
-  border-color: #3b82f6;
-  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+  transform: scale(1.12);
+  box-shadow: 0 3px 10px rgba(139, 92, 246, 0.4);
+  background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
 }
 
-/* Expanded state - must come after base to override */
+/* Expanded state badge */
 .reading-component__summary-section-trigger[aria-expanded='true']
   .reading-component__summary-section-title
   .reading-component__summary-section-count {
-  background: #3b82f6;
-  color: #ffffff;
-  border-color: #3b82f6;
+  background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+  box-shadow: 0 2px 8px rgba(6, 182, 212, 0.3);
 }
 
 .reading-component__summary-section-icon {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   color: var(--reading-accent-primary);
   flex-shrink: 0;
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.35s cubic-bezier(0.22, 0.9, 0.36, 1);
   position: relative;
   z-index: 1;
+  opacity: 0.8;
 }
 
 /* Rotate icon when expanded */
 .reading-component__summary-section-trigger[aria-expanded='true']
   .reading-component__summary-section-icon {
   transform: rotate(180deg);
+  color: #06b6d4;
+  opacity: 1;
 }
 
 /* Focus states for accessibility */
@@ -635,70 +688,94 @@
 .reading-component__summary-section-trigger:focus-visible {
   outline: 3px solid var(--reading-accent-primary);
   outline-offset: 3px;
-  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+  box-shadow: 0 0 0 6px rgba(59, 130, 246, 0.1);
 }
 
-/* === KEY VOCABULARY - Enhanced layout with animations === */
+/* === KEY VOCABULARY - Super Charged Grid === */
 .reading-component__vocabulary {
-  margin: 0 0 var(--reading-spacing-md) 0;
+  margin: 0 0 0.625rem 0;
 }
 
-/* Mobile: Single column grid with smooth animation */
+/* Grid container with glassmorphism panel */
 .reading-component__vocabulary-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.375rem;
-  animation: slideDown 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 2px solid var(--reading-accent-primary);
-  border-top: none;
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-  padding: 0.375rem;
-  background: var(--reading-bg-primary);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  margin-bottom: 0.375rem;
+  gap: 0.5rem;
+  animation: revealGrid 0.5s cubic-bezier(0.22, 0.9, 0.36, 1);
+  border: none;
+  border-radius: 0 0 var(--lp-radius-lg) var(--lp-radius-lg);
+  padding: 0.75rem;
+  background: linear-gradient(
+    180deg,
+    rgba(99, 102, 241, 0.03) 0%,
+    rgba(139, 92, 246, 0.01) 100%
+  );
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 1px rgba(99, 102, 241, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.02);
+  margin-bottom: 0.5rem;
 }
 
 /* Tablet and up: Multi-column layout */
 @media (min-width: 640px) {
   .reading-component__vocabulary-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
+    gap: 0.625rem;
   }
 }
 
 @media (min-width: 1024px) {
   .reading-component__vocabulary-grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem;
+    gap: 0.625rem;
   }
 }
 
-/* Slide down animation for content reveal */
-@keyframes slideDown {
+/* Grid reveal animation */
+@keyframes revealGrid {
   from {
     opacity: 0;
-    transform: translateY(-10px);
-    max-height: 0;
+    transform: translateY(-8px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
-    max-height: 2000px;
   }
 }
 
-.reading-component__vocabulary-card {
-  background: var(--reading-bg-primary);
-  border: 2px solid #3b82f6;
-  border-radius: var(--lp-radius-md);
-  padding: 0;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 1px 6px rgba(59, 130, 246, 0.15);
+/* Card entrance animation */
+@keyframes cardReveal {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
+/* === VOCABULARY CARD - Premium glassmorphic card === */
+.reading-component__vocabulary-card {
+  background: linear-gradient(
+    160deg,
+    rgba(255, 255, 255, 0.03) 0%,
+    rgba(59, 130, 246, 0.02) 100%
+  );
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  border-radius: var(--lp-radius-lg);
+  padding: 0;
+  transition: all 0.35s cubic-bezier(0.22, 0.9, 0.36, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow:
+    0 2px 12px rgba(0, 0, 0, 0.06),
+    0 0 0 0.5px rgba(139, 92, 246, 0.1);
+  animation: cardReveal 0.4s cubic-bezier(0.22, 0.9, 0.36, 1) backwards;
+}
+
+/* Top gradient accent line — thinner and more vibrant */
 .reading-component__vocabulary-card::before {
   content: '';
   position: absolute;
@@ -706,143 +783,166 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 100%);
-}
-
-.reading-component__vocabulary-card-header {
-  padding: 0.1875rem 0.375rem;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(139, 92, 246, 0.08) 100%);
-  border-bottom: 2px solid #3b82f6;
-  display: flex;
-  align-items: baseline;
-  gap: 0.375rem;
-  flex-wrap: wrap;
-}
-
-.reading-component__vocabulary-content {
-  padding: 0.1875rem 0.375rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.1875rem;
+  background: linear-gradient(90deg, #6366f1 0%, #a855f7 40%, #06b6d4 100%);
+  opacity: 0.7;
+  transition: opacity 0.3s ease, height 0.3s ease;
 }
 
 /* Staggered animation for cards */
-.reading-component__vocabulary-card:nth-child(1) {
-  animation-delay: 0.05s;
-}
-.reading-component__vocabulary-card:nth-child(2) {
-  animation-delay: 0.1s;
-}
-.reading-component__vocabulary-card:nth-child(3) {
-  animation-delay: 0.15s;
-}
-.reading-component__vocabulary-card:nth-child(4) {
-  animation-delay: 0.2s;
-}
-.reading-component__vocabulary-card:nth-child(5) {
-  animation-delay: 0.25s;
-}
-.reading-component__vocabulary-card:nth-child(6) {
-  animation-delay: 0.3s;
-}
+.reading-component__vocabulary-card:nth-child(1) { animation-delay: 0.05s; }
+.reading-component__vocabulary-card:nth-child(2) { animation-delay: 0.08s; }
+.reading-component__vocabulary-card:nth-child(3) { animation-delay: 0.11s; }
+.reading-component__vocabulary-card:nth-child(4) { animation-delay: 0.14s; }
+.reading-component__vocabulary-card:nth-child(5) { animation-delay: 0.17s; }
+.reading-component__vocabulary-card:nth-child(6) { animation-delay: 0.2s; }
+.reading-component__vocabulary-card:nth-child(7) { animation-delay: 0.23s; }
+.reading-component__vocabulary-card:nth-child(8) { animation-delay: 0.26s; }
 
 .reading-component__vocabulary-card:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 3px 12px rgba(59, 130, 246, 0.25);
-  border-color: #8b5cf6;
+  transform: translateY(-4px) scale(1.02);
+  border-color: rgba(139, 92, 246, 0.35);
+  box-shadow:
+    0 12px 40px rgba(99, 102, 241, 0.15),
+    0 4px 12px rgba(139, 92, 246, 0.1),
+    0 0 0 1px rgba(139, 92, 246, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.reading-component__vocabulary-card:hover::before {
+  opacity: 1;
+  height: 3px;
+}
+
+/* Card header — term + pronunciation */
+.reading-component__vocabulary-card-header {
+  padding: 0.5rem 0.625rem 0.375rem;
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.06) 0%,
+    rgba(139, 92, 246, 0.03) 100%
+  );
+  border-bottom: 1px solid rgba(99, 102, 241, 0.1);
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* Card body */
+.reading-component__vocabulary-content {
+  padding: 0.5rem 0.625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
 }
 
 .reading-component__vocabulary-term {
-  font-size: 0.875rem;
-  font-weight: 700;
+  font-size: 0.9375rem;
+  font-weight: 800;
   line-height: 1.2;
   color: var(--reading-text-primary);
   margin-bottom: 0;
+  letter-spacing: -0.01em;
 }
 
 .reading-component__vocabulary-pronunciation {
-  font-size: 0.75rem;
+  font-size: 0.6875rem;
   line-height: 1.4;
-  color: var(--reading-text-secondary);
-  font-style: italic;
-  font-family: monospace;
-  background: var(--reading-bg-secondary);
-  padding: 0.0625rem 0.375rem;
-  border-radius: var(--lp-radius-xs);
+  color: var(--reading-accent-primary);
+  font-style: normal;
+  font-family: var(--lp-font-mono);
+  background: rgba(59, 130, 246, 0.08);
+  padding: 0.125rem 0.375rem;
+  border-radius: var(--lp-radius-full);
   display: inline-block;
+  border: 1px solid rgba(59, 130, 246, 0.15);
 }
 
 .reading-component__vocabulary-definition-block,
 .reading-component__vocabulary-example-block {
   display: flex;
   flex-direction: column;
-  gap: 0.0625rem;
+  gap: 0.125rem;
 }
 
 .reading-component__vocabulary-label {
-  font-size: 0.625rem;
-  font-weight: 700;
+  font-size: 0.5625rem;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
   color: var(--reading-accent-primary);
+  opacity: 0.8;
 }
 
 .reading-component__vocabulary-definition {
-  font-size: 0.75rem;
-  line-height: 1.4;
+  font-size: 0.8125rem;
+  line-height: 1.5;
   color: var(--reading-text-primary);
-  padding: 0.1875rem 0.375rem;
-  background: var(--reading-bg-secondary);
+  padding: 0.3125rem 0.5rem;
+  background: rgba(99, 102, 241, 0.04);
   border-radius: var(--lp-radius-sm);
-  border-left: 2px solid var(--reading-accent-primary);
+  border-left: 3px solid #6366f1;
 }
 
 .reading-component__vocabulary-example {
-  font-size: 0.75rem;
-  line-height: 1.4;
+  font-size: 0.8125rem;
+  line-height: 1.5;
   color: var(--reading-text-secondary);
   font-style: italic;
-  padding: 0.1875rem 0.375rem;
-  background: var(--reading-bg-tertiary);
-  border-radius: var(--lp-radius-md);
-  font-family: monospace;
-  border-left: 2px solid rgba(139, 92, 246, 0.4);
+  padding: 0.3125rem 0.5rem;
+  background: rgba(139, 92, 246, 0.04);
+  border-radius: var(--lp-radius-sm);
+  font-family: var(--lp-font-mono);
+  border-left: 3px solid #8b5cf6;
 }
 
-/* === GRAMMAR POINTS - Enhanced layout with animations === */
+/* === GRAMMAR POINTS - Super Charged Premium Cards === */
 .reading-component__grammar-points {
   margin: 0;
 }
 
-/* Container for grammar points with animation */
+/* Container with glassmorphism panel */
 .reading-component__grammar-points > div:not(.reading-component__summary-section-trigger) {
-  animation: slideDown 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 2px solid #3b82f6;
-  border-top: none;
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-  padding: 0.375rem;
-  background: var(--reading-bg-primary);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  margin-bottom: 0.375rem;
+  animation: revealGrid 0.5s cubic-bezier(0.22, 0.9, 0.36, 1);
+  border: none;
+  border-radius: 0 0 var(--lp-radius-lg) var(--lp-radius-lg);
+  padding: 0.75rem;
+  background: linear-gradient(
+    180deg,
+    rgba(139, 92, 246, 0.03) 0%,
+    rgba(99, 102, 241, 0.01) 100%
+  );
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 1px rgba(139, 92, 246, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.02);
+  margin-bottom: 0.5rem;
 }
 
 .reading-component__grammar-point {
-  background: var(--reading-bg-primary);
-  border: 2px solid #3b82f6;
-  padding: 0.25rem;
-  margin-bottom: 0.25rem;
-  border-radius: var(--lp-radius-md);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: linear-gradient(
+    160deg,
+    rgba(255, 255, 255, 0.03) 0%,
+    rgba(139, 92, 246, 0.02) 100%
+  );
+  border: 1px solid rgba(139, 92, 246, 0.15);
+  padding: 0.375rem;
+  margin-bottom: 0.5rem;
+  border-radius: var(--lp-radius-lg);
+  transition: all 0.35s cubic-bezier(0.22, 0.9, 0.36, 1);
   position: relative;
   overflow: hidden;
-  box-shadow: 0 1px 6px rgba(59, 130, 246, 0.15);
+  box-shadow:
+    0 2px 12px rgba(0, 0, 0, 0.06),
+    0 0 0 0.5px rgba(139, 92, 246, 0.08);
+  animation: cardReveal 0.4s cubic-bezier(0.22, 0.9, 0.36, 1) backwards;
 }
 
 .reading-component__grammar-point:last-child {
   margin-bottom: 0;
 }
 
+/* Top gradient accent — purple-dominant for grammar */
 .reading-component__grammar-point::before {
   content: '';
   position: absolute;
@@ -850,37 +950,44 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 100%);
+  background: linear-gradient(90deg, #8b5cf6 0%, #6366f1 40%, #06b6d4 100%);
+  opacity: 0.7;
+  transition: opacity 0.3s ease, height 0.3s ease;
 }
 
 /* Staggered animation for grammar points */
-.reading-component__grammar-point:nth-child(1) {
-  animation-delay: 0.05s;
-}
-.reading-component__grammar-point:nth-child(2) {
-  animation-delay: 0.1s;
-}
-.reading-component__grammar-point:nth-child(3) {
-  animation-delay: 0.15s;
-}
-.reading-component__grammar-point:nth-child(4) {
-  animation-delay: 0.2s;
-}
+.reading-component__grammar-point:nth-child(1) { animation-delay: 0.05s; }
+.reading-component__grammar-point:nth-child(2) { animation-delay: 0.1s; }
+.reading-component__grammar-point:nth-child(3) { animation-delay: 0.15s; }
+.reading-component__grammar-point:nth-child(4) { animation-delay: 0.2s; }
 
 .reading-component__grammar-point:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 3px 12px rgba(59, 130, 246, 0.25);
-  border-color: #8b5cf6;
+  transform: translateY(-4px) scale(1.02);
+  border-color: rgba(99, 102, 241, 0.35);
+  box-shadow:
+    0 12px 40px rgba(139, 92, 246, 0.15),
+    0 4px 12px rgba(99, 102, 241, 0.1),
+    0 0 0 1px rgba(139, 92, 246, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.reading-component__grammar-point:hover::before {
+  opacity: 1;
+  height: 3px;
 }
 
 .reading-component__grammar-point-header {
   display: flex;
   align-items: center;
-  gap: 0.25rem;
-  margin: -0.25rem -0.25rem 0.25rem -0.25rem;
-  padding: 0.1875rem 0.3125rem;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(139, 92, 246, 0.08) 100%);
-  border-bottom: 2px solid #3b82f6;
+  gap: 0.375rem;
+  margin: -0.375rem -0.375rem 0.375rem -0.375rem;
+  padding: 0.375rem 0.5rem;
+  background: linear-gradient(
+    135deg,
+    rgba(139, 92, 246, 0.04) 0%,
+    rgba(99, 102, 241, 0.02) 100%
+  );
+  border-bottom: 1px solid rgba(139, 92, 246, 0.1);
 }
 
 .reading-component__grammar-point-number {
@@ -888,16 +995,18 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 1.375rem;
-  height: 1.375rem;
-  background: linear-gradient(135deg, #7c3aed 0%, #6366f1 100%);
+  width: 1.5rem;
+  height: 1.5rem;
+  background: linear-gradient(135deg, #7c3aed 0%, #6366f1 50%, #06b6d4 100%);
   color: #ffffff;
   border-radius: 50%;
-  font-size: 0.75rem;
+  font-size: 0.6875rem;
   font-weight: 900;
   line-height: 1;
-  box-shadow: 0 1px 4px rgba(124, 58, 237, 0.4);
-  border: 2px solid #ffffff;
+  box-shadow:
+    0 2px 6px rgba(124, 58, 237, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.15);
 }
 
 .reading-component__grammar-rule {
@@ -908,31 +1017,35 @@
   color: var(--reading-text-primary);
   margin: 0;
   padding-top: 0;
+  letter-spacing: -0.01em;
 }
 
 .reading-component__grammar-explanation {
   font-size: 0.75rem;
-  line-height: 1.4;
+  line-height: 1.5;
   color: var(--reading-text-primary);
-  margin-bottom: 0.125rem;
-  padding: 0 0.125rem;
+  margin-bottom: 0.25rem;
+  padding: 0 0.25rem;
+  opacity: 0.9;
 }
 
 .reading-component__grammar-examples {
-  margin-top: 0.125rem;
-  padding: 0.1875rem 0.3125rem;
-  background: var(--reading-bg-secondary);
+  margin-top: 0.25rem;
+  padding: 0.3125rem 0.375rem;
+  background: rgba(59, 130, 246, 0.04);
   border-radius: var(--lp-radius-sm);
-  border-left: 2px solid var(--reading-accent-primary);
+  border-left: 3px solid;
+  border-image: linear-gradient(180deg, #3b82f6, #8b5cf6) 1;
 }
 
 .reading-component__grammar-examples-title {
-  font-size: 0.625rem;
-  font-weight: 700;
-  color: var(--reading-accent-secondary);
-  margin-bottom: 0.125rem;
+  font-size: 0.5625rem;
+  font-weight: 800;
+  color: var(--reading-accent-primary);
+  margin-bottom: 0.1875rem;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
+  opacity: 0.8;
 }
 
 .reading-component__grammar-examples-list {
@@ -942,32 +1055,40 @@
 }
 
 .reading-component__grammar-example-item {
-  padding: 0.0625rem 0.1875rem;
-  background: var(--reading-bg-tertiary);
-  border-radius: var(--reading-border-radius-sm, 0.25rem);
-  margin-bottom: 0.125rem;
+  padding: 0.125rem 0.25rem;
+  background: rgba(59, 130, 246, 0.03);
+  border-radius: var(--lp-radius-xs);
+  margin-bottom: 0.1875rem;
   color: var(--reading-text-primary);
-  font-family: monospace;
+  font-family: var(--lp-font-mono);
   font-size: 0.6875rem;
-  line-height: 1.4;
-  border-left: 2px solid var(--reading-accent-primary);
+  line-height: 1.5;
+  border-left: 2px solid rgba(59, 130, 246, 0.3);
+  transition: all 0.2s ease;
+}
+
+.reading-component__grammar-example-item:hover {
+  background: rgba(59, 130, 246, 0.06);
+  border-left-color: #3b82f6;
 }
 
 .reading-component__grammar-mistakes {
-  margin-top: 0.125rem;
-  padding: 0.1875rem 0.3125rem;
-  background: var(--theme-bg-error-subtle, #fef2f2);
+  margin-top: 0.25rem;
+  padding: 0.3125rem 0.375rem;
+  background: rgba(239, 68, 68, 0.04);
   border-radius: var(--lp-radius-sm);
-  border-left: 2px solid var(--theme-error, #ef4444);
+  border-left: 3px solid;
+  border-image: linear-gradient(180deg, #ef4444, #f97316) 1;
 }
 
 .reading-component__grammar-mistakes-title {
-  font-size: 0.625rem;
-  font-weight: 700;
-  color: var(--theme-error, #ef4444);
-  margin-bottom: 0.125rem;
+  font-size: 0.5625rem;
+  font-weight: 800;
+  color: var(--lp-error, #ef4444);
+  margin-bottom: 0.1875rem;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
+  opacity: 0.8;
 }
 
 .reading-component__grammar-mistakes-list {
@@ -977,14 +1098,20 @@
 }
 
 .reading-component__grammar-mistake-item {
-  padding: 0.0625rem 0.1875rem;
-  background: var(--theme-bg-error-subtle, #fef2f2);
-  border-left: 2px solid var(--theme-error, #ef4444);
-  border-radius: var(--reading-border-radius-sm, 0.25rem);
-  margin-bottom: 0.125rem;
+  padding: 0.125rem 0.25rem;
+  background: rgba(239, 68, 68, 0.03);
+  border-left: 2px solid rgba(239, 68, 68, 0.3);
+  border-radius: var(--lp-radius-xs);
+  margin-bottom: 0.1875rem;
   color: var(--reading-text-primary);
   font-size: 0.6875rem;
-  line-height: 1.4;
+  line-height: 1.5;
+  transition: all 0.2s ease;
+}
+
+.reading-component__grammar-mistake-item:hover {
+  background: rgba(239, 68, 68, 0.06);
+  border-left-color: #ef4444;
 }
 
 /* === INTERACTIVE CONTENT - TOOLTIPS - Always-visible key term cards === */
@@ -1132,12 +1259,12 @@
   /* Tablet: Two-column vocabulary grid */
   .reading-component__vocabulary-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
+    gap: 0.625rem;
   }
 
   /* Tablet: Compact vocabulary margin */
   .reading-component__vocabulary {
-    margin: 0 0 0.375rem 0;
+    margin: 0 0 0.625rem 0;
   }
 
   .reading-component__grammar-point {
@@ -1168,65 +1295,65 @@
 
   /* Tablet: Compact summary title */
   .reading-component__summary-title {
-    margin-bottom: 0.375rem;
-    padding-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.375rem;
   }
 
   /* Tablet: Compact summary trigger */
   .reading-component__summary-section-trigger {
-    padding: 0.375rem 0.625rem;
-    margin-bottom: 0.375rem;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.5rem;
   }
 
   .reading-component__summary-section-title {
-    font-size: 0.75rem;
-    gap: 0.375rem;
+    font-size: 0.8125rem;
+    gap: 0.5rem;
   }
 
   .reading-component__summary-section-count {
-    font-size: 0.75rem;
-    padding: 0.125rem 0.5rem;
+    font-size: 0.6875rem;
+    padding: 0.1875rem 0.5rem;
   }
 
   .reading-component__summary-section-icon {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
   }
 
   /* Tablet: Compact vocabulary cards */
   .reading-component__vocabulary-card-header {
-    padding: 0.1875rem 0.375rem;
+    padding: 0.375rem 0.5rem 0.25rem;
   }
 
   .reading-component__vocabulary-content {
-    padding: 0.1875rem 0.375rem;
-    gap: 0.1875rem;
+    padding: 0.375rem 0.5rem;
+    gap: 0.3125rem;
   }
 
   .reading-component__vocabulary-term {
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
   }
 
   .reading-component__vocabulary-definition,
   .reading-component__vocabulary-example {
-    padding: 0.1875rem 0.375rem;
+    padding: 0.25rem 0.375rem;
     font-size: 0.75rem;
   }
 
   .reading-component__vocabulary-label {
-    font-size: 0.625rem;
+    font-size: 0.5625rem;
   }
 
   /* Tablet: Compact grammar */
   .reading-component__grammar-point-header {
-    padding: 0.1875rem 0.3125rem;
-    margin: -0.25rem -0.25rem 0.25rem -0.25rem;
+    padding: 0.3125rem 0.5rem;
+    margin: -0.375rem -0.375rem 0.375rem -0.375rem;
   }
 
   .reading-component__grammar-point-number {
-    width: 1.375rem;
-    height: 1.375rem;
-    font-size: 0.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0.6875rem;
   }
 
   .reading-component__grammar-rule {
@@ -1235,23 +1362,23 @@
 
   .reading-component__grammar-explanation {
     font-size: 0.75rem;
-    margin-bottom: 0.125rem;
+    margin-bottom: 0.25rem;
   }
 
   .reading-component__grammar-examples,
   .reading-component__grammar-mistakes {
-    padding: 0.1875rem 0.3125rem;
-    margin-top: 0.125rem;
+    padding: 0.3125rem 0.375rem;
+    margin-top: 0.25rem;
   }
 
   .reading-component__grammar-examples-title,
   .reading-component__grammar-mistakes-title {
-    font-size: 0.625rem;
+    font-size: 0.5625rem;
   }
 
   .reading-component__grammar-example-item,
   .reading-component__grammar-mistake-item {
-    padding: 0.0625rem 0.1875rem;
+    padding: 0.125rem 0.25rem;
     font-size: 0.6875rem;
   }
 
@@ -1293,12 +1420,12 @@
   /* Desktop: Three-column vocabulary grid */
   .reading-component__vocabulary-grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem;
+    gap: 0.625rem;
   }
 
   /* Desktop: Compact vocabulary margin */
   .reading-component__vocabulary {
-    margin: 0 0 0.375rem 0;
+    margin: 0 0 0.625rem 0;
   }
 
   .reading-component__grammar-point {
@@ -1311,64 +1438,64 @@
 
   .reading-component__summary-title {
     font-size: var(--reading-font-size-xl);
-    margin-bottom: 0.375rem;
-    padding-bottom: 0.25rem;
+    margin-bottom: 0.625rem;
+    padding-bottom: 0.375rem;
   }
 
   /* Desktop: Compact summary trigger */
   .reading-component__summary-section-trigger {
-    padding: 0.375rem 0.625rem;
-    margin-bottom: 0.375rem;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.5rem;
   }
 
   .reading-component__summary-section-title {
-    font-size: 0.75rem;
-    gap: 0.375rem;
+    font-size: 0.8125rem;
+    gap: 0.5rem;
   }
 
   .reading-component__summary-section-count {
-    font-size: 0.75rem;
-    padding: 0.125rem 0.5rem;
+    font-size: 0.6875rem;
+    padding: 0.1875rem 0.5rem;
   }
 
   .reading-component__summary-section-icon {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
   }
 
   /* Desktop: Compact vocabulary cards */
   .reading-component__vocabulary-card-header {
-    padding: 0.1875rem 0.375rem;
+    padding: 0.375rem 0.5rem 0.25rem;
   }
 
   .reading-component__vocabulary-content {
-    padding: 0.1875rem 0.375rem;
-    gap: 0.1875rem;
+    padding: 0.375rem 0.5rem;
+    gap: 0.3125rem;
   }
 
   .reading-component__vocabulary-term {
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
   }
 
   .reading-component__vocabulary-definition,
   .reading-component__vocabulary-example {
-    padding: 0.125rem 0.25rem;
+    padding: 0.25rem 0.375rem;
     font-size: 0.75rem;
   }
 
   .reading-component__vocabulary-label {
-    font-size: 0.625rem;
+    font-size: 0.5625rem;
   }
 
   /* Desktop: Compact grammar */
   .reading-component__grammar-point-header {
-    padding: 0.1875rem 0.3125rem;
+    padding: 0.3125rem 0.5rem;
   }
 
   .reading-component__grammar-point-number {
-    width: 1.375rem;
-    height: 1.375rem;
-    font-size: 0.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0.6875rem;
   }
 
   .reading-component__grammar-rule {
@@ -1377,23 +1504,23 @@
 
   .reading-component__grammar-explanation {
     font-size: 0.75rem;
-    margin-bottom: 0.125rem;
+    margin-bottom: 0.25rem;
   }
 
   .reading-component__grammar-examples,
   .reading-component__grammar-mistakes {
-    padding: 0.1875rem 0.3125rem;
-    margin-top: 0.125rem;
+    padding: 0.3125rem 0.375rem;
+    margin-top: 0.25rem;
   }
 
   .reading-component__grammar-examples-title,
   .reading-component__grammar-mistakes-title {
-    font-size: 0.625rem;
+    font-size: 0.5625rem;
   }
 
   .reading-component__grammar-example-item,
   .reading-component__grammar-mistake-item {
-    padding: 0.0625rem 0.1875rem;
+    padding: 0.125rem 0.25rem;
     font-size: 0.6875rem;
   }
 
@@ -1478,27 +1605,27 @@
   /* Mobile: Single column vocabulary */
   .reading-component__vocabulary-grid {
     grid-template-columns: 1fr;
-    gap: 0.375rem;
-    padding: 0.375rem;
+    gap: 0.5rem;
+    padding: 0.5rem;
   }
 
   /* Mobile: Compact grammar points */
   .reading-component__grammar-point {
-    padding: 0.25rem;
-    margin-bottom: 0.25rem;
-    border-width: 2px;
+    padding: 0.375rem;
+    margin-bottom: 0.375rem;
+    border-width: 1px;
   }
 
   .reading-component__grammar-point-header {
-    gap: 0.25rem;
-    margin: -0.25rem -0.25rem 0.25rem -0.25rem;
-    padding: 0.1875rem 0.3125rem;
+    gap: 0.375rem;
+    margin: -0.375rem -0.375rem 0.375rem -0.375rem;
+    padding: 0.3125rem 0.5rem;
   }
 
   .reading-component__grammar-point-number {
-    width: 1.375rem;
-    height: 1.375rem;
-    font-size: 0.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0.6875rem;
     border-width: 2px;
   }
 
@@ -1508,40 +1635,40 @@
 
   .reading-component__grammar-explanation {
     font-size: 0.75rem;
-    padding: 0 0.125rem;
-    margin-bottom: 0.125rem;
+    padding: 0 0.25rem;
+    margin-bottom: 0.25rem;
   }
 
   .reading-component__grammar-examples,
   .reading-component__grammar-mistakes {
-    padding: 0.1875rem 0.3125rem;
-    margin-top: 0.125rem;
+    padding: 0.3125rem 0.375rem;
+    margin-top: 0.25rem;
   }
 
   /* Mobile: Compact vocabulary cards */
   .reading-component__vocabulary-card-header {
-    padding: 0.25rem 0.5rem;
+    padding: 0.375rem 0.5rem 0.25rem;
   }
 
   .reading-component__vocabulary-content {
-    padding: 0.25rem 0.5rem;
-    gap: 0.25rem;
+    padding: 0.375rem 0.5rem;
+    gap: 0.3125rem;
   }
 
   .reading-component__vocabulary-term {
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
   }
 
   .reading-component__vocabulary-definition,
   .reading-component__vocabulary-example {
-    padding: 0.125rem 0.25rem;
+    padding: 0.25rem 0.375rem;
     font-size: 0.75rem;
   }
 
   /* Mobile: Compact summary trigger */
   .reading-component__summary-section-trigger {
-    padding: 0.375rem 0.625rem;
-    margin-bottom: 0.375rem;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.5rem;
   }
 
   .reading-component__summary-section-title {
@@ -1554,8 +1681,8 @@
   }
 
   .reading-component__summary-section-icon {
-    width: 14px;
-    height: 14px;
+    width: 16px;
+    height: 16px;
   }
 
   /* Mobile: Compact example cards */
@@ -1670,15 +1797,15 @@ html.dark .reading-component__container {
 /* Dark mode - Time badge */
 html.dark .reading-component__time-badge,
 html.dark .reading-component__sections-badge {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%);
-  border-color: rgba(59, 130, 246, 0.3);
-  color: var(--theme-primary-blue, #60a5fa);
+  background: linear-gradient(135deg, rgba(96, 165, 250, 0.12) 0%, rgba(167, 139, 250, 0.12) 100%);
+  border-color: rgba(96, 165, 250, 0.35);
+  color: #93c5fd;
 }
 
 html.dark .reading-component__sections-badge {
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(59, 130, 246, 0.15) 100%);
-  border-color: rgba(139, 92, 246, 0.3);
-  color: var(--theme-accent-secondary, #a78bfa);
+  background: linear-gradient(135deg, rgba(167, 139, 250, 0.12) 0%, rgba(96, 165, 250, 0.12) 100%);
+  border-color: rgba(167, 139, 250, 0.35);
+  color: #c4b5fd;
 }
 
 html.dark .reading-component__time-badge:hover,

@@ -31,11 +31,6 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
   const [selectedLeft, setSelectedLeft] = useState<string | null>(null);
   const [selectedRight, setSelectedRight] = useState<string | null>(null);
   const [matches, setMatches] = useState<Record<string, string>>({});
-  const [feedbackPair, setFeedbackPair] = useState<{
-    left: string;
-    right: string;
-    correct: boolean;
-  } | null>(null);
   const [showResult, setShowResult] = useState(false);
   const [startTime] = useState(Date.now());
   const [runId] = useState(() => createLearnFlowId('run'));
@@ -143,7 +138,12 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
   const pairs = pairsRef.current;
 
   const handleLeftClick = (item: string) => {
-    if (showResult || matches[item] || feedbackPair) return;
+    if (showResult) return;
+
+    // If already matched, allow re-selection to change the match
+    if (matches[item]) {
+      removeMatch(item);
+    }
 
     if (selectedLeft === item) {
       setSelectedLeft(null);
@@ -156,7 +156,13 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
   };
 
   const handleRightClick = (item: string) => {
-    if (showResult || Object.values(matches).includes(item) || feedbackPair) return;
+    if (showResult) return;
+
+    // If already used in a match, allow re-selection to change
+    const existingLeft = Object.entries(matches).find(([, right]) => right === item)?.[0];
+    if (existingLeft) {
+      removeMatch(existingLeft);
+    }
 
     if (selectedRight === item) {
       setSelectedRight(null);
@@ -169,26 +175,10 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
   };
 
   const createMatch = (left: string, right: string) => {
-    const correctPair = pairs.find((pair: { left: string; right: string }) => pair.left === left);
-    const isCorrect = correctPair?.right === right;
-
-    // Show visual feedback
-    setFeedbackPair({ left, right, correct: isCorrect });
+    // Store the match without validating — validation happens on Check
+    setMatches(prev => ({ ...prev, [left]: right }));
     setSelectedLeft(null);
     setSelectedRight(null);
-
-    if (isCorrect) {
-      // Correct: save match after brief feedback
-      setTimeout(() => {
-        setMatches(prev => ({ ...prev, [left]: right }));
-        setFeedbackPair(null);
-      }, 600);
-    } else {
-      // Incorrect: show red feedback then clear
-      setTimeout(() => {
-        setFeedbackPair(null);
-      }, 1000);
-    }
   };
 
   const removeMatch = (leftItem: string) => {
@@ -201,9 +191,11 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
   };
 
   const checkAnswers = () => {
-    // All stored matches are already correct (validated in createMatch)
-    const correctMatches = Object.keys(matches).length;
-    const isAllCorrect = correctMatches === pairs.length;
+    // Validate all pairs on Check press
+    const correctCount = pairs.filter(
+      (pair: { left: string; right: string }) => matches[pair.left] === pair.right
+    ).length;
+    const isAllCorrect = correctCount === pairs.length;
     updateSessionScore(isAllCorrect ? { correct: 1 } : { incorrect: 1 });
     setShowResult(true);
 
@@ -219,7 +211,6 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
     setLeftItems(conditionalShuffle(terms, randomizeItems));
     setRightItems(conditionalShuffle(definitions, randomizeItems));
     setMatches({});
-    setFeedbackPair(null);
     setSelectedLeft(null);
     setSelectedRight(null);
     setShowResult(false);
@@ -301,7 +292,6 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
         onRetry={() => {
           setExerciseResultData(null);
           setMatches({});
-          setFeedbackPair(null);
           setSelectedLeft(null);
           setSelectedRight(null);
           setShowResult(false);
@@ -339,7 +329,6 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
               const isMatched = matches[item];
               const isSelected = selectedLeft === item;
               const status = getItemStatus(item, true);
-              const isFeedback = feedbackPair?.left === item;
 
               let className = 'matching-component__item ';
 
@@ -348,10 +337,6 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
                   status === 'correct'
                     ? 'matching-component__item--correct'
                     : 'matching-component__item--incorrect';
-              } else if (isFeedback) {
-                className += feedbackPair.correct
-                  ? 'matching-component__item--correct'
-                  : 'matching-component__item--incorrect';
               } else if (isMatched) {
                 className += 'matching-component__item--matched';
               } else if (isSelected) {
@@ -363,7 +348,7 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
               return (
                 <button
                   key={`left-${index}`}
-                  onClick={() => (isMatched ? removeMatch(item) : handleLeftClick(item))}
+                  onClick={() => handleLeftClick(item)}
                   className={`${className} matching-component__button matching-component__button--primary`}
                 >
                   <div className="matching-component__item-content">
@@ -409,7 +394,6 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
               const isMatched = Object.values(matches).includes(item);
               const isSelected = selectedRight === item;
               const status = getItemStatus(item, false);
-              const isFeedback = feedbackPair?.right === item;
 
               let className = 'matching-component__item ';
 
@@ -420,10 +404,6 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
                     : status === 'incorrect'
                       ? 'matching-component__item--incorrect'
                       : 'matching-component__item--unmatched';
-              } else if (isFeedback) {
-                className += feedbackPair.correct
-                  ? 'matching-component__item--correct'
-                  : 'matching-component__item--incorrect';
               } else if (isMatched) {
                 className += 'matching-component__item--matched-inactive';
               } else if (isSelected) {
@@ -436,7 +416,7 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
                 <button
                   key={`right-${index}`}
                   onClick={() => handleRightClick(item)}
-                  disabled={isMatched && !showResult}
+                  disabled={showResult}
                   className={`${className} matching-component__button matching-component__button--secondary`}
                 >
                   <div className="matching-component__item-content">
@@ -555,38 +535,29 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
                           {result.isCorrect ? '✓' : '✗'}
                         </span>
 
-                        <h4 className="matching-modal__card-term">
-                          <ContentRenderer
-                            content={ContentAdapter.ensureStructured(result.left, 'quiz')}
-                          />
-                        </h4>
-
-                        <p className="matching-modal__card-value matching-modal__card-value--correct">
-                          <ContentRenderer
-                            content={ContentAdapter.ensureStructured(result.right, 'quiz')}
-                          />
-                        </p>
-
-                        {!result.isCorrect ? (
-                          <p className="matching-modal__card-value matching-modal__card-value--incorrect">
+                        <div className="matching-modal__card-body">
+                          <h4 className="matching-modal__card-term">
                             <ContentRenderer
-                              content={ContentAdapter.ensureStructured(result.userAnswer, 'quiz')}
+                              content={ContentAdapter.ensureStructured(result.left, 'quiz')}
+                            />
+                          </h4>
+
+                          <span className="matching-modal__card-arrow">→</span>
+
+                          <p className="matching-modal__card-value matching-modal__card-value--correct">
+                            <ContentRenderer
+                              content={ContentAdapter.ensureStructured(result.right, 'quiz')}
                             />
                           </p>
-                        ) : (
-                          <span className="matching-modal__card-placeholder"></span>
-                        )}
 
-                        {result.explanation && (
-                          <span className="matching-modal__card-explanation">
-                            <ContentRenderer
-                              content={ContentAdapter.ensureStructured(
-                                result.explanation,
-                                'explanation'
-                              )}
-                            />
-                          </span>
-                        )}
+                          {!result.isCorrect && (
+                            <p className="matching-modal__card-value matching-modal__card-value--incorrect">
+                              <ContentRenderer
+                                content={ContentAdapter.ensureStructured(result.userAnswer, 'quiz')}
+                              />
+                            </p>
+                          )}
+                        </div>
                       </div>
                     ))}
                   </div>

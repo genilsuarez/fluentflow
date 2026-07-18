@@ -377,6 +377,13 @@ export const es = {
     helpModuleDesc:
       'Tu mejor puntuación en cada ejercicio completado. Enfócate en ejercicios con puntuaciones más bajas para mejorar.',
     closeHelp: '¡Entendido!',
+    yourProgress: 'Tu progreso',
+    depthModules: 'módulos',
+    depthModes: 'modos de aprendizaje',
+    depthExercises: 'ejercicios',
+    depthLevels: 'niveles',
+    depthTo: 'a',
+    viewAll: 'Ver todos',
   },
   categories: {
     vocabulary: 'Vocabulario',
