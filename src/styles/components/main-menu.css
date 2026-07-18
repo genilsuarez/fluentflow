@@ -1272,21 +1272,23 @@ html.dark .main-menu__error-text {
   border: none;
   border-radius: var(--lp-radius-md);
   background: transparent;
-  color: var(--lp-muted, #9C8E7C);
+  color: var(--lp-muted, #9c8e7c);
   font-size: 0.75rem;
   font-weight: 600;
   font-family: var(--lp-font-body);
   cursor: pointer;
-  transition: color 0.15s ease, background 0.15s ease;
+  transition:
+    color 0.15s ease,
+    background 0.15s ease;
 }
 
 .category-section__show-more:hover {
-  color: var(--lp-accent, #D4764E);
-  background: color-mix(in srgb, var(--lp-accent, #D4764E) 6%, transparent);
+  color: var(--lp-accent, #d4764e);
+  background: color-mix(in srgb, var(--lp-accent, #d4764e) 6%, transparent);
 }
 
 .category-section__show-more:focus-visible {
-  outline: 2px solid var(--lp-accent, #D4764E);
+  outline: 2px solid var(--lp-accent, #d4764e);
   outline-offset: 2px;
 }
 
