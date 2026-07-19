@@ -296,7 +296,6 @@ const AppContent: React.FC = () => {
         </main>
 
         <footer className="app-footer">
-          <span className="app-footer__sig">Genil Suárez</span>
           <span className="app-footer__meta">FluentFlow → LearnFlow</span>
         </footer>
 
