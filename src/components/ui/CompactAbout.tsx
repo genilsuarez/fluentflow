@@ -237,10 +237,16 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
 
         <footer className="about-footer">
           <div className="about-author">
-            <div className="about-author__avatar" aria-hidden="true">GS</div>
+            <div className="about-author__avatar" aria-hidden="true">
+              GS
+            </div>
             <div className="about-author__info">
               <strong>{language === 'es' ? 'Genil Suárez' : 'Genil Suárez'}</strong>
-              <span>{language === 'es' ? 'Diseñado y desarrollado como proyecto personal' : 'Designed and built as a personal project'}</span>
+              <span>
+                {language === 'es'
+                  ? 'Diseñado y desarrollado como proyecto personal'
+                  : 'Designed and built as a personal project'}
+              </span>
             </div>
           </div>
         </footer>
