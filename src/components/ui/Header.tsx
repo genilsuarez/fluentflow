@@ -1,9 +1,8 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import { createPortal } from 'react-dom';
-import { ArrowLeft, User, WifiOff, Wrench } from 'lucide-react';
+import { ArrowLeft, WifiOff, Wrench } from 'lucide-react';
 import '../../styles/components/header.css';
 import { useAppStore } from '../../stores/appStore';
-import { useUserStore } from '../../stores/userStore';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useMenuNavigation } from '../../hooks/useMenuNavigation';
 import { useTranslation } from '../../utils/i18n';
@@ -55,7 +54,6 @@ function getStoredNavigationMode(): NavigationMode {
 }
 export const Header: React.FC<HeaderProps> = () => {
   const currentView = useAppStore(state => state.currentView);
-  const { user } = useUserStore();
   const { developmentMode, language, offlineEnabled, theme, setTheme } = useSettingsStore();
   const { returnToMenu } = useMenuNavigation();
   const { t } = useTranslation(language);
@@ -189,34 +187,7 @@ export const Header: React.FC<HeaderProps> = () => {
         </div>
         {/* Right Section: Primary Actions Only */}
         <div className="header-redesigned__right">
-          {/* User Profile Section - Primary Action */}
-          {user ? (
-            <div className="header-redesigned__user-section">
-              <button
-                onClick={() => setShowProfileForm(true)}
-                className="header-redesigned__user-btn header-redesigned__user-btn--primary"
-                title={`${user.name} - Profile`}
-                aria-label={`User profile: ${user.name}. Click to open profile`}
-              >
-                <User className="header-redesigned__user-icon" />
-                <div className="header-redesigned__user-info">
-                  <span className="header-redesigned__username">{user.name}</span>
-                </div>
-              </button>
-            </div>
-          ) : (
-            <div className="header-redesigned__user-section">
-              <button
-                onClick={() => setShowProfileForm(true)}
-                className="header-redesigned__login-btn header-redesigned__login-btn--primary"
-                aria-label={t('auth.loginToAccount')}
-              >
-                <User className="header-redesigned__user-icon" />
-                <span className="header-redesigned__login-text">{t('auth.login')}</span>
-              </button>
-            </div>
-          )}
-          {/* Quick Actions removed - controls moved to hamburger menu */}
+          {/* User Profile Section moved to hamburger menu */}
         </div>
       </div>
       {/* Compact Modals - rendered via portal to avoid event bubbling to header */}
@@ -394,6 +365,20 @@ export const Header: React.FC<HeaderProps> = () => {
                 <span className="header-side-menu__text">
                   {theme === 'dark' ? 'Modo claro' : 'Modo oscuro'}
                 </span>
+              </button>
+              <button
+                type="button"
+                className="header-side-menu__item header-side-menu__item--login"
+                aria-label={t('auth.loginToAccount')}
+                onClick={() => {
+                  setShowProfileForm(true);
+                  setShowSideMenu(false);
+                }}
+              >
+                <span className="header-side-menu__icon" aria-hidden="true">
+                  👤
+                </span>
+                <span className="header-side-menu__text">{t('auth.login')}</span>
               </button>
               <a
                 href={portalHref()}
