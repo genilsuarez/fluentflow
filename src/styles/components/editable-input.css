@@ -14,7 +14,9 @@
   font-family: inherit;
   line-height: 1.5;
   outline: none;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
   cursor: text;
   white-space: nowrap;
   overflow: hidden;
