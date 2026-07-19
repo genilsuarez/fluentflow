@@ -32,6 +32,16 @@ export const useProgression = () => {
     }
   }, [rawModules, getCompletedModuleIds]);
 
+  // Reconcile stale IDs from legacy migrations against the actual module catalog.
+  // Runs once after modules are loaded.
+  useMemo(() => {
+    if (rawModules.length > 0) {
+      const validIds = new Set(rawModules.map(m => m.id));
+      useProgressStore.getState().reconcileModuleIds(validIds);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [rawModules.length]);
+
   // Force re-initialization when completed modules change
   useMemo(() => {
     if (rawModules.length > 0 && completedModulesCount > 0) {
