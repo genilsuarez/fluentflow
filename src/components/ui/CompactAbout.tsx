@@ -237,10 +237,6 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
 
         <footer className="about-footer">
           <p>
-            <strong>{language === 'es' ? 'Progreso local' : 'Local progress'}</strong>
-            <span>{t('about.localProgressNote')}</span>
-          </p>
-          <p>
             <strong>{language === 'es' ? 'Autor' : 'Author'}</strong>
             <span>Genil Suárez</span>
           </p>

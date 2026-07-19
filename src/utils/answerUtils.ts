@@ -1,11 +1,15 @@
 /**
  * Normalize answer for comparison: lowercase, collapse whitespace, trim,
  * strip common punctuation (.!?,;:) anywhere for leniency.
+ * Also normalizes digit–letter boundaries ("7am" → "7 am") so minor
+ * formatting differences in times/units don't penalize the user.
  */
 export function normalizeAnswer(s: string): string {
   return s
     .toLowerCase()
     .replace(/[.!?,;:]+/g, ' ')
+    .replace(/(\d)([a-z])/g, '$1 $2')
+    .replace(/([a-z])(\d)/g, '$1 $2')
     .replace(/\s+/g, ' ')
     .trim();
 }
