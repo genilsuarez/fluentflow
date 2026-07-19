@@ -80,9 +80,7 @@ const getDateString = (daysAgo: number): string => {
  *  3. Stale/unmatchable IDs are preserved as-is — progressionService.initialize()
  *     will filter them out when validating against the loaded module catalog.
  */
-function migrateCompletedModules(
-  raw: unknown
-): Record<string, ModuleCompletion> {
+function migrateCompletedModules(raw: unknown): Record<string, ModuleCompletion> {
   // Already in correct format
   if (raw && typeof raw === 'object' && !Array.isArray(raw)) {
     const record = raw as Record<string, unknown>;
