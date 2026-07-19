@@ -332,7 +332,9 @@ export const en = {
     wordFormationInstruction: 'Type the correct form of the word in CAPITALS',
     noWordFormationExercisesAvailable: 'No word formation exercises available',
     rootWord: 'Root word',
-    errorCorrectionInstruction: 'Rewrite the sentence correcting the error',
+    errorCorrectionInstruction: 'Fix the error or rewrite as-is if already correct',
+    errorCorrectionTrapHint:
+      '→ This sentence was already correct. Not all sentences have errors — read carefully before changing.',
     noErrorCorrectionExercisesAvailable: 'No error correction exercises available',
   },
   scores: {

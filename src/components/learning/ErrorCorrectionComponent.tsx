@@ -66,6 +66,13 @@ const ErrorCorrectionComponent: React.FC<ErrorCorrectionComponentProps> = ({ mod
     [currentExercise]
   );
 
+  // Detect "trap" sentences: original sentence is already correct (no error to fix)
+  const isTrapSentence = currentExercise
+    ? currentExercise.correct.some(
+        c => normalizeAnswer(c) === normalizeAnswer(currentExercise.sentence)
+      )
+    : false;
+
   const checkAnswer = useCallback(() => {
     if (showResult) return;
     if (isCorrectAnswer(answer)) {
@@ -236,6 +243,13 @@ const ErrorCorrectionComponent: React.FC<ErrorCorrectionComponentProps> = ({ mod
                 </span>
               )}
             </div>
+
+            {/* Trap hint: sentence was already correct but user changed it */}
+            {!correct && isTrapSentence && (
+              <div className="error-correction__trap-hint">
+                {t('learning.errorCorrectionTrapHint')}
+              </div>
+            )}
 
             {currentExercise.explanation && (
               <div className="error-correction__explanation">

@@ -16,11 +16,6 @@
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(
-    135deg,
-    var(--theme-bg-elevated, #ffffff) 0%,
-    var(--theme-bg-subtle, #f9fafb) 100%
-  );
   border: 1px solid var(--theme-border-modal, rgba(0, 0, 0, 0.1));
   border-radius: var(--radius-lg, 0.5rem);
 }
@@ -74,12 +69,8 @@ html.dark .error-correction__no-data-text {
 .transformation__exercise-card,
 .word-formation__exercise-card,
 .error-correction__exercise-card {
-  background-color: var(--theme-bg-elevated, #ffffff);
-  border-radius: var(--lp-radius-lg);
-  box-shadow: var(--shadow-subtle, 0 1px 3px rgba(0, 0, 0, 0.1));
-  padding: 1rem;
+  padding: 0;
   margin: 0;
-  border: 1px solid var(--theme-border-soft, #f3f4f6);
   width: 100%;
   box-sizing: border-box;
   animation: input-exercise-slide-in 0.3s ease-out;
@@ -87,8 +78,7 @@ html.dark .error-correction__no-data-text {
 html.dark .transformation__exercise-card,
 html.dark .word-formation__exercise-card,
 html.dark .error-correction__exercise-card {
-  background-color: var(--theme-bg-elevated, #1f2937);
-  border-color: var(--theme-border-soft, #374151);
+  /* no visual decoration */
 }
 @keyframes input-exercise-slide-in {
   from {
@@ -108,13 +98,12 @@ html.dark .error-correction__exercise-card {
   display: inline-flex;
   align-items: center;
   gap: 0.25rem;
-  padding: 0.2rem 0.6rem;
+  padding: 0.2rem 0.5rem;
   border-radius: var(--lp-radius-full);
   font-size: 0.8rem;
   font-weight: 700;
   color: #f59e0b;
-  background: linear-gradient(135deg, rgba(245, 158, 11, 0.12) 0%, rgba(245, 158, 11, 0.06) 100%);
-  border: 1px solid rgba(245, 158, 11, 0.25);
+  background: transparent;
   margin-bottom: 0.5rem;
   animation: input-exercise-streak-pop 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
@@ -122,8 +111,6 @@ html.dark .transformation__streak,
 html.dark .word-formation__streak,
 html.dark .error-correction__streak {
   color: #fbbf24;
-  background: linear-gradient(135deg, rgba(251, 191, 36, 0.15) 0%, rgba(251, 191, 36, 0.06) 100%);
-  border-color: rgba(251, 191, 36, 0.3);
 }
 @keyframes input-exercise-streak-pop {
   from {
@@ -152,8 +139,6 @@ html.dark .transformation__instruction {
 .transformation__hint,
 .word-formation__hint,
 .error-correction__hint {
-  background-color: var(--theme-bg-subtle, #fffbeb);
-  border: 1px solid #fde68a;
   border-radius: var(--radius-md, 0.375rem);
   padding: 0.5rem 0.75rem;
   margin-bottom: 0.75rem;
@@ -161,58 +146,51 @@ html.dark .transformation__instruction {
 html.dark .transformation__hint,
 html.dark .word-formation__hint,
 html.dark .error-correction__hint {
-  background-color: rgba(251, 191, 36, 0.1);
-  border-color: rgba(251, 191, 36, 0.3);
+  /* no decoration */
 }
 .transformation__hint-text,
 .word-formation__hint-text,
 .error-correction__hint-text {
   font-size: 0.85rem;
-  color: var(--theme-text-secondary, #92400e);
+  color: var(--theme-text-secondary, #6b7280);
   margin: 0;
 }
 html.dark .transformation__hint-text,
 html.dark .word-formation__hint-text,
 html.dark .error-correction__hint-text {
-  color: #fbbf24;
+  color: var(--theme-text-secondary, #9ca3af);
 }
 
 /* === ANSWER AREA === */
 .transformation__answer-area,
 .word-formation__answer-area,
 .error-correction__answer-area {
-  border: 2px solid var(--theme-border-soft, #e5e7eb);
-  border-radius: var(--radius-md, 0.375rem);
-  padding: 0.5rem;
   margin-bottom: 0.5rem;
-  transition: border-color 0.2s ease;
 }
 .transformation__answer-area--correct,
 .word-formation__answer-area--correct,
 .error-correction__answer-area--correct {
-  border-color: #22c55e;
-  background-color: rgba(34, 197, 94, 0.05);
+  /* feedback handled by editable-input states */
 }
 .transformation__answer-area--incorrect,
 .word-formation__answer-area--incorrect,
 .error-correction__answer-area--incorrect {
-  border-color: #ef4444;
-  background-color: rgba(239, 68, 68, 0.05);
+  /* feedback handled by editable-input states */
 }
 html.dark .transformation__answer-area,
 html.dark .word-formation__answer-area,
 html.dark .error-correction__answer-area {
-  border-color: var(--theme-border-soft, #4b5563);
+  /* no border to override */
 }
 html.dark .transformation__answer-area--correct,
 html.dark .word-formation__answer-area--correct,
 html.dark .error-correction__answer-area--correct {
-  background-color: rgba(34, 197, 94, 0.1);
+  /* handled by editable-input */
 }
 html.dark .transformation__answer-area--incorrect,
 html.dark .word-formation__answer-area--incorrect,
 html.dark .error-correction__answer-area--incorrect {
-  background-color: rgba(239, 68, 68, 0.1);
+  /* handled by editable-input */
 }
 
 .transformation__input,
@@ -243,10 +221,12 @@ html.dark .error-correction__answer-area--incorrect {
 .error-correction__result-container--visible {
   max-height: 20rem;
   opacity: 1;
+  padding-top: 0.5rem;
 }
 .transformation__result,
 .word-formation__result,
 .error-correction__result {
+  /* kept for backwards compat with word-formation/error-correction */
   padding-top: 0.5rem;
 }
 .transformation__feedback-row,
@@ -307,10 +287,10 @@ html.dark .error-correction__correct-answer {
 .word-formation__explanation,
 .error-correction__explanation {
   margin-top: 0.5rem;
-  padding: 0.5rem 0.75rem;
-  background-color: var(--theme-bg-subtle, #f9fafb);
-  border-radius: var(--radius-sm, 0.25rem);
-  border-left: 3px solid var(--theme-primary-blue, #3b82f6);
+  padding: 0.4rem 0.75rem;
+  border-left: 2px solid var(--theme-border-soft, #d1d5db);
+  border-radius: 0;
+  background: transparent;
 }
 .transformation__explanation-text,
 .word-formation__explanation-text,

@@ -420,7 +420,7 @@
 .home-dash__level-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 0.5rem;
+  gap: 0.575rem;
 }
 
 .home-dash__level-item {
@@ -432,8 +432,8 @@
 
 .home-dash__level-circle {
   position: relative;
-  width: 2.75rem;
-  height: 2.75rem;
+  width: 3.625rem;
+  height: 3.625rem;
 }
 
 .home-dash__level-svg {
@@ -480,7 +480,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   font-weight: var(--lp-weight-extrabold, 800);
   letter-spacing: -0.02em;
 }
@@ -511,13 +511,11 @@
 }
 
 .home-dash__level-name {
-  font-size: 0.55rem;
-  font-weight: var(--lp-weight-semibold, 600);
-  color: var(--lp-ink);
+  display: none;
 }
 
 .home-dash__level-count {
-  font-size: 0.5rem;
+  font-size: 0.575rem;
   font-weight: var(--lp-weight-extrabold, 700);
   color: var(--lp-muted);
 }
@@ -582,8 +580,8 @@ html.dark .home-dash__level-code--indigo {
   }
 
   .home-dash__level-circle {
-    width: 3rem;
-    height: 3rem;
+    width: 3.95rem;
+    height: 3.95rem;
   }
 }
 

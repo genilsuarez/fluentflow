@@ -333,7 +333,9 @@ export const es = {
     wordFormationInstruction: 'Escribe la forma correcta de la palabra en MAYÚSCULAS',
     noWordFormationExercisesAvailable: 'No hay ejercicios de formación de palabras disponibles',
     rootWord: 'Palabra raíz',
-    errorCorrectionInstruction: 'Reescribe la oración corrigiendo el error',
+    errorCorrectionInstruction: 'Corrige el error o reescríbela igual si ya es correcta',
+    errorCorrectionTrapHint:
+      '→ Esta oración ya era correcta. No todas tienen errores — lee con atención antes de modificar.',
     noErrorCorrectionExercisesAvailable: 'No hay ejercicios de corrección de errores disponibles',
   },
   scores: {

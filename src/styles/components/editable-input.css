@@ -6,7 +6,7 @@
   min-width: 120px;
   margin: 0 0.375rem;
   padding: 0.5rem 0.75rem;
-  border: 2px solid var(--color-border, #e5e7eb);
+  border: 1px solid var(--color-border, #e5e7eb);
   border-radius: var(--lp-radius-md);
   background: var(--color-bg-primary, #ffffff);
   color: var(--color-text-primary, #111827);
@@ -14,14 +14,13 @@
   font-family: inherit;
   line-height: 1.5;
   outline: none;
-  transition: all 0.2s ease;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
   cursor: text;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  vertical-align: middle; /* Align with surrounding inline text */
+  vertical-align: middle;
 
-  /* Prevent iOS form navigation bar */
   -webkit-user-select: text;
   user-select: text;
 }
@@ -39,7 +38,7 @@
 
 .editable-input:focus {
   border-color: var(--color-primary, #3b82f6);
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.08);
 }
 
 .editable-input[contenteditable='false'] {
@@ -59,17 +58,13 @@
 /* Correct state */
 .editable-input--correct {
   border-color: var(--color-success, #10b981);
-  background: var(--color-success-bg, #ecfdf5);
-  border-width: 2px;
-  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+  background: transparent;
 }
 
 /* Incorrect state */
 .editable-input--incorrect {
   border-color: var(--color-error, #ef4444);
-  background: var(--color-error-bg, #fef2f2);
-  border-width: 2px;
-  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
+  background: transparent;
 }
 
 /* Neutral state (default) */
@@ -86,18 +81,18 @@
 /* Dark mode */
 html.dark .editable-input {
   color: #ffffff;
-  background: var(--theme-bg-elevated, #1f2937);
-  border-color: var(--theme-border-soft, #4b5563);
+  background: transparent;
+  border-color: var(--theme-border-soft, #374151);
 }
 
 html.dark .editable-input--correct {
   color: #ffffff;
-  background: rgba(16, 185, 129, 0.05);
-  border-color: rgba(52, 211, 153, 0.22);
+  background: transparent;
+  border-color: rgba(52, 211, 153, 0.4);
 }
 
 html.dark .editable-input--incorrect {
   color: #ffffff;
-  background: rgba(239, 68, 68, 0.05);
-  border-color: rgba(248, 113, 113, 0.22);
+  background: transparent;
+  border-color: rgba(248, 113, 113, 0.4);
 }

@@ -7,10 +7,6 @@
   justify-content: center;
   gap: 0.75rem;
   padding: 0.5rem;
-  background-color: var(--theme-bg-elevated, #ffffff);
-  border-radius: var(--radius-lg, 0.5rem);
-  box-shadow: var(--shadow-medium, 0 4px 6px rgba(0, 0, 0, 0.1));
-  border: 1px solid var(--theme-border-soft, #f3f4f6);
   margin-top: 0.5rem;
   flex-wrap: wrap;
   flex-shrink: 0; /* Never compress — always visible */
@@ -394,8 +390,8 @@
 
 /* === DARK MODE === */
 html.dark .game-controls {
-  background-color: var(--theme-bg-elevated, #1f2937);
-  border-color: var(--theme-border-soft, #4b5563);
+  background-color: transparent;
+  border-color: transparent;
 }
 
 html.dark .game-controls__nav-btn,

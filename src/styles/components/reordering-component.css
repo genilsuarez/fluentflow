@@ -167,7 +167,7 @@
 
 /* Correct position (post-validation) */
 .reordering__word--correct {
-  background-color: var(--theme-success, #10b981);
+  background-color: color-mix(in srgb, var(--theme-success, #10b981) 65%, white);
   color: #ffffff;
   box-shadow: none;
   cursor: default;
@@ -175,7 +175,7 @@
 
 /* Incorrect position (post-validation) */
 .reordering__word--incorrect {
-  background-color: var(--theme-error, #ef4444);
+  background-color: color-mix(in srgb, var(--theme-error, #ef4444) 65%, white);
   color: #ffffff;
   box-shadow: none;
   cursor: default;
@@ -183,9 +183,9 @@
 
 /* Keyboard focus indicator */
 .reordering__word--focused {
-  outline: 2px solid var(--color-primary, #7c3aed);
+  outline: 2px solid color-mix(in srgb, var(--color-primary, #7c3aed) 60%, transparent);
   outline-offset: 2px;
-  box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.2);
+  box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.12);
 }
 
 /* Keyboard selected state (word "picked up" for reordering) */
@@ -316,9 +316,9 @@ html.dark .reordering__hint-toggle {
 }
 
 html.dark .reordering__hint {
-  background-color: rgba(59, 130, 246, 0.1);
-  border-color: rgba(59, 130, 246, 0.25);
-  color: var(--lp-border-strong);
+  background-color: rgba(59, 130, 246, 0.12);
+  border-color: rgba(59, 130, 246, 0.3);
+  color: #e2e8f0;
 }
 
 html.dark .reordering__zone {

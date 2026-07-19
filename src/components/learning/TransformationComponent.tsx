@@ -190,31 +190,21 @@ const TransformationComponent: React.FC<TransformationComponentProps> = ({ modul
         </div>
 
         {/* Answer input */}
-        <div
-          className={`transformation__answer-area${
+        <EditableInput
+          ref={inputRef}
+          value={answer}
+          onChange={setAnswer}
+          disabled={showResult}
+          placeholder="..."
+          className={`editable-input editable-input--fullwidth transformation__input${
             showResult
               ? correct
-                ? ' transformation__answer-area--correct'
-                : ' transformation__answer-area--incorrect'
-              : ''
+                ? ' editable-input--correct'
+                : ' editable-input--incorrect'
+              : ' editable-input--neutral'
           }`}
-        >
-          <EditableInput
-            ref={inputRef}
-            value={answer}
-            onChange={setAnswer}
-            disabled={showResult}
-            placeholder="..."
-            className={`editable-input editable-input--fullwidth transformation__input${
-              showResult
-                ? correct
-                  ? ' editable-input--correct'
-                  : ' editable-input--incorrect'
-                : ' editable-input--neutral'
-            }`}
-            autoFocus={!showResult}
-          />
-        </div>
+          autoFocus={!showResult}
+        />
 
         {/* Result feedback */}
         <div
@@ -225,39 +215,37 @@ const TransformationComponent: React.FC<TransformationComponentProps> = ({ modul
           }`}
           aria-hidden={!showResult}
         >
-          <div className="transformation__result">
-            <div className="transformation__feedback-row">
-              {correct ? (
-                <Check className="transformation__feedback-icon transformation__feedback-icon--correct" />
-              ) : (
-                <X className="transformation__feedback-icon transformation__feedback-icon--incorrect" />
-              )}
-              <span className="transformation__feedback">
-                {correct ? t('common.correct') : t('common.incorrect')}
+          <div className="transformation__feedback-row">
+            {correct ? (
+              <Check className="transformation__feedback-icon transformation__feedback-icon--correct" />
+            ) : (
+              <X className="transformation__feedback-icon transformation__feedback-icon--incorrect" />
+            )}
+            <span className="transformation__feedback">
+              {correct ? t('common.correct') : t('common.incorrect')}
+            </span>
+            {!correct && (
+              <span className="transformation__correct-answer">
+                - {t('learning.answer')} <strong>{currentExercise.correct[0]}</strong>
               </span>
-              {!correct && (
-                <span className="transformation__correct-answer">
-                  - {t('learning.answer')} <strong>{currentExercise.correct[0]}</strong>
-                </span>
-              )}
-            </div>
-
-            {currentExercise.explanation && (
-              <div className="transformation__explanation">
-                <div className="transformation__explanation-text">
-                  <span className="transformation__explanation-label">
-                    {t('learning.explanation')}
-                  </span>{' '}
-                  <ContentRenderer
-                    content={ContentAdapter.ensureStructured(
-                      currentExercise.explanation,
-                      'explanation'
-                    )}
-                  />
-                </div>
-              </div>
             )}
           </div>
+
+          {currentExercise.explanation && (
+            <div className="transformation__explanation">
+              <div className="transformation__explanation-text">
+                <span className="transformation__explanation-label">
+                  {t('learning.explanation')}
+                </span>{' '}
+                <ContentRenderer
+                  content={ContentAdapter.ensureStructured(
+                    currentExercise.explanation,
+                    'explanation'
+                  )}
+                />
+              </div>
+            </div>
+          )}
         </div>
       </div>
 

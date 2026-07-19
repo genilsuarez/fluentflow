@@ -3,38 +3,28 @@
  * Base styles in input-exercise-base.css.
  */
 
-/* === FOCUS ACCENT === */
-.transformation__answer-area:focus-within {
-  border-color: var(--theme-primary-blue, #3b82f6);
-}
-
 /* === SOURCE SENTENCE === */
 .transformation__source {
-  background-color: var(--theme-bg-subtle, #f0f9ff);
-  border: 1px solid var(--theme-border-soft, #bae6fd);
-  border-radius: var(--radius-md, 0.375rem);
-  padding: 0.75rem 1rem;
+  padding: 0.5rem 0;
   margin-bottom: 0.75rem;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   font-weight: 500;
-  color: var(--theme-text-primary, #0c4a6e);
+  color: var(--theme-text-primary, #1f2937);
   line-height: 1.5;
 }
 html.dark .transformation__source {
-  background-color: rgba(56, 189, 248, 0.08);
-  border-color: rgba(56, 189, 248, 0.25);
-  color: #7dd3fc;
+  color: var(--theme-text-primary, #e5e7eb);
 }
 
-/* === EXPLANATION ACCENT (blue) === */
+/* === EXPLANATION ACCENT === */
 .transformation__explanation {
-  border-left-color: var(--theme-primary-blue, #3b82f6);
+  border-left-color: var(--theme-border-soft, #d1d5db);
 }
 html.dark .transformation__explanation {
-  background-color: rgba(59, 130, 246, 0.08);
+  border-left-color: var(--theme-border-soft, #4b5563);
 }
 .transformation__explanation-label {
-  color: var(--theme-primary-blue, #3b82f6);
+  color: var(--theme-text-secondary, #6b7280);
 }
 
 /* === COMPACT MOBILE — source sentence === */
