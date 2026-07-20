@@ -18,10 +18,7 @@ export const useProgression = () => {
   // Use raw (unfiltered) modules for progression — category filtering is visual only
   // and must not affect prerequisite chains or module unlock status
   const rawModulesFromCache = queryClient.getQueryData<LearningModule[]>(['modules']);
-  const rawModules = useMemo(
-    () => rawModulesFromCache ?? [],
-    [rawModulesFromCache]
-  );
+  const rawModules = useMemo(() => rawModulesFromCache ?? [], [rawModulesFromCache]);
 
   // Track completed modules for query invalidation
   // Using completedModules object directly ensures React detects changes
