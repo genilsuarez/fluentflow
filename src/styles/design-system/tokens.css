@@ -123,6 +123,10 @@
   --lp-space-xl: 28px;
   --lp-space-2xl: 40px;
 
+  /* ─── Header bars — homologado entre DeskFlow/HubFlow/FluentFlow/LyricFlow ─── */
+  --lp-header-height: 85px;
+  --lp-header-height-compact: 64px;
+
   /* ─── Progress/score bars — homologado entre DeskFlow/HubFlow/FluentFlow/LyricFlow ─── */
   --lp-progress-height: 4px;
   --lp-progress-height-compact: 3px;
@@ -165,6 +169,27 @@
   --lp-navbtn-accent: #d4764e;
   --lp-navbtn-shadow: 0 1px 3px rgba(44, 36, 24, 0.04), 0 4px 10px rgba(44, 36, 24, 0.04);
   --lp-navbtn-shadow-hover: 0 4px 14px rgba(44, 36, 24, 0.08), 0 2px 6px rgba(44, 36, 24, 0.05);
+
+  /* LP HEADER layout + typography — spec v1 */
+  --lp-header-pad-y: 22px;
+  --lp-header-pad-x: clamp(16px, 3vw, 34px);
+  --lp-header-pad-y-compact: 10px;
+  --lp-header-pad-x-compact: 12px;
+  --lp-navbtn-offset-top: calc((var(--lp-header-height) - var(--lp-navbtn-size)) / 2);
+  --lp-navbtn-offset-top-compact: calc((var(--lp-header-height-compact) - var(--lp-navbtn-size)) / 2);
+  --lp-navbtn-offset-left: 16px;
+  --lp-header-floating-pad-left: calc(var(--lp-navbtn-offset-left) + var(--lp-navbtn-size) + 16px);
+  --lp-header-floating-pad-left-compact: calc(var(--lp-navbtn-offset-left) + var(--lp-navbtn-size) + 6px);
+  --lp-header-title-size: 1.25rem;
+  --lp-header-title-weight: 500;
+  --lp-header-title-tracking: -0.02em;
+  --lp-header-title-line-height: 1.1;
+  --lp-header-sub-size: 0.68rem;
+  --lp-header-sub-weight: 400;
+  --lp-header-sub-line-height: 1.35;
+  --lp-header-tag-size: 10px;
+  --lp-header-tag-weight: 600;
+  --lp-header-tag-tracking: 0.06em;
 }
 
 /* === LEARN PLATFORM TOKENS — DARK === */

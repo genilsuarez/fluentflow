@@ -2,10 +2,10 @@
 /* Color tokens and theme variables are now provided by design-system/tokens.css */
 /* Only header-specific layout tokens remain here */
 :root {
-  /* Height tokens - Compact & Uniform */
-  --header-height-mobile: 64px;
-  --header-height-tablet: 72px;
-  --header-height-desktop: 85px;
+  /* Height tokens — alias LP HEADER spec v1 */
+  --header-height-mobile: var(--lp-header-height-compact);
+  --header-height-tablet: var(--lp-header-height);
+  --header-height-desktop: var(--lp-header-height);
 
   /* Spacing tokens - Consistent system */
   --header-spacing-xs: 6px;
@@ -349,22 +349,28 @@
 
 .header-redesigned__title {
   font-family: var(--lp-font-display);
-  font-size: 18px;
-  font-weight: 500;
+  font-size: var(--lp-header-title-size);
+  font-weight: var(--lp-header-title-weight);
   color: var(--header-text-primary);
-  letter-spacing: -0.02em;
+  letter-spacing: var(--lp-header-title-tracking);
   margin: 0;
   padding: 0;
   white-space: nowrap;
-  line-height: 1;
+  line-height: var(--lp-header-title-line-height);
+}
+
+.header-redesigned__title em {
+  font-style: italic;
+  color: var(--lp-accent);
+  font-weight: var(--lp-weight-normal);
 }
 
 .header-redesigned__platform {
   color: var(--header-text-secondary);
-  font-size: 10px;
-  font-weight: 600;
+  font-size: var(--lp-header-tag-size);
+  font-weight: var(--lp-header-tag-weight);
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: var(--lp-header-tag-tracking);
 }
 
 /* Hide title on mobile */
@@ -376,6 +382,45 @@
   .header-redesigned__logo {
     width: 40px;
     height: 40px;
+  }
+
+  /* Menu home: flex en lugar de center absoluto — evita solape ☰ / logo / pill */
+  .header-redesigned--menu .header-redesigned__container {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    padding: 0 var(--lp-header-pad-x-compact, 12px);
+  }
+
+  .header-redesigned--menu .header-redesigned__left {
+    flex: 0 0 auto;
+    z-index: 2;
+  }
+
+  .header-redesigned--menu .header-redesigned__brand {
+    display: none;
+  }
+
+  .header-redesigned--menu .header-redesigned__center {
+    position: static;
+    transform: none;
+    flex: 1 1 auto;
+    min-width: 0;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  .header-redesigned--menu .header-redesigned__right {
+    display: none;
+  }
+
+  /* Floating: ☰ fijo — ocultar columna left y reservar franja */
+  html[data-navigation-mode='floating'] .header-redesigned--menu .header-redesigned__left {
+    display: none;
+  }
+
+  html[data-navigation-mode='floating'] .header-redesigned--menu .header-redesigned__container {
+    padding-left: var(--lp-header-floating-pad-left-compact);
   }
 }
 
@@ -1052,8 +1097,8 @@ body {
   /* Floating launcher — mismo tratamiento que DeskFlow/HubFlow/LyricFlow */
   html[data-navigation-mode='floating'] .header-redesigned__menu-btn {
     position: fixed;
-    top: 16px;
-    left: 16px;
+    top: var(--lp-navbtn-offset-top);
+    left: var(--lp-navbtn-offset-left);
     z-index: var(--lp-navbtn-z);
     width: var(--lp-navbtn-size);
     height: var(--lp-navbtn-size);
@@ -1071,7 +1116,7 @@ body {
 
   /* Give header space so the fixed launcher doesn't overlap the logo */
   html[data-navigation-mode='floating'] .header-redesigned__container {
-    padding-left: 88px;
+    padding-left: var(--lp-header-floating-pad-left);
   }
 
   html[data-navigation-mode='floating'] body {
@@ -1082,6 +1127,14 @@ body {
 @media (max-width: 1023px) {
   body {
     padding-left: 0;
+  }
+
+  html[data-navigation-mode='floating'] .header-redesigned__menu-btn {
+    top: var(--lp-navbtn-offset-top-compact);
+  }
+
+  html[data-navigation-mode='floating'] .header-redesigned__container {
+    padding-left: var(--lp-header-floating-pad-left-compact);
   }
 }
 
