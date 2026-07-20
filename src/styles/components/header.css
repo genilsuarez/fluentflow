@@ -150,29 +150,21 @@
   position: relative;
 }
 
-/* Menu button as floating launcher (no --primary) — matches LyricFlow .lp-icon-btn */
-.header-redesigned__menu-btn:not(.header-redesigned__menu-btn--primary) {
-  width: 44px;
-  height: 44px;
-  min-width: 44px;
-  min-height: 44px;
+/* Botón hamburguesa — mismo círculo neutro homologado con DeskFlow/HubFlow/LyricFlow
+   (tokens --lp-navbtn-*), sin importar el modo de navegación ni el estado --primary. */
+.header-redesigned__menu-btn {
+  width: var(--lp-navbtn-size);
+  height: var(--lp-navbtn-size);
+  min-width: var(--lp-navbtn-size);
+  min-height: var(--lp-navbtn-size);
   padding: 0;
-  border-radius: 50%;
-  border: 1.5px solid var(--lp-border, var(--header-border));
-  background: var(--lp-surface, var(--header-bg));
-  color: var(--lp-ink-soft, var(--header-text-secondary));
+  border-radius: var(--lp-navbtn-radius);
+  border: var(--lp-navbtn-border-width) solid var(--lp-navbtn-border);
+  background: var(--lp-navbtn-bg);
+  color: var(--lp-navbtn-icon-color);
   font-size: 1rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-}
-
-.header-redesigned__menu-btn:not(.header-redesigned__menu-btn--primary):hover {
-  border-color: var(--lp-accent, #6366f1);
-  transform: scale(1.06);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-}
-
-.header-redesigned__menu-btn:not(.header-redesigned__menu-btn--primary):active {
-  transform: scale(0.97);
+  font-weight: 400;
+  box-shadow: var(--lp-navbtn-shadow);
 }
 
 /* Primary button variant */
@@ -229,6 +221,52 @@
     min-width: var(--button-size-desktop);
     min-height: var(--button-size-desktop);
   }
+}
+
+/* Botón hamburguesa: overrides finales — homologado con DeskFlow/HubFlow/LyricFlow
+   (tokens --lp-navbtn-*), simplificado a un único círculo neutro sin skin degradado
+   "--primary" ni foco azul. Van después de los bloques compartidos con user-btn/
+   login-btn (arriba) para ganar por orden de aparición sin tocar esos otros botones. */
+.header-redesigned__menu-btn:hover {
+  background: var(--lp-navbtn-bg);
+  border-color: var(--lp-navbtn-accent);
+  color: var(--lp-navbtn-icon-color);
+  transform: scale(1.06);
+  box-shadow: var(--lp-navbtn-shadow-hover);
+}
+
+.header-redesigned__menu-btn:active {
+  background: var(--lp-navbtn-bg);
+  transform: scale(0.97);
+}
+
+.header-redesigned__menu-btn:focus-visible {
+  outline: 2px solid var(--lp-navbtn-accent);
+  outline-offset: 2px;
+  box-shadow: none;
+}
+
+.header-redesigned__menu-btn--primary {
+  width: var(--lp-navbtn-size);
+  height: var(--lp-navbtn-size);
+  min-width: var(--lp-navbtn-size);
+  min-height: var(--lp-navbtn-size);
+  padding: 0;
+  border-radius: var(--lp-navbtn-radius);
+  border: var(--lp-navbtn-border-width) solid var(--lp-navbtn-border);
+  background: var(--lp-navbtn-bg);
+  color: var(--lp-navbtn-icon-color);
+  font-size: 1rem;
+  font-weight: 400;
+  box-shadow: var(--lp-navbtn-shadow);
+}
+
+.header-redesigned__menu-btn--primary:hover {
+  background: var(--lp-navbtn-bg);
+  border-color: var(--lp-navbtn-accent);
+  color: var(--lp-navbtn-icon-color);
+  transform: scale(1.06);
+  box-shadow: var(--lp-navbtn-shadow-hover);
 }
 
 /* === ICONS - RESPONSIVE SIZES === */
@@ -699,6 +737,21 @@
     inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
+/* Botón hamburguesa (dark): mismo círculo neutro homologado, sin el degradado
+   gris-azulado que sí conservan user-btn/login-btn. */
+.dark .header-redesigned__menu-btn--primary {
+  background: var(--lp-navbtn-bg);
+  border: var(--lp-navbtn-border-width) solid var(--lp-navbtn-border);
+  backdrop-filter: none;
+  box-shadow: var(--lp-navbtn-shadow);
+}
+
+.dark .header-redesigned__menu-btn--primary:hover {
+  background: var(--lp-navbtn-bg);
+  border-color: var(--lp-navbtn-accent);
+  box-shadow: var(--lp-navbtn-shadow-hover);
+}
+
 .dark .header-side-menu {
   box-shadow: none;
 }
@@ -996,23 +1049,23 @@ body {
     display: none;
   }
 
-  /* Floating launcher positioned like LyricFlow */
+  /* Floating launcher — mismo tratamiento que DeskFlow/HubFlow/LyricFlow */
   html[data-navigation-mode='floating'] .header-redesigned__menu-btn {
     position: fixed;
     top: 16px;
     left: 16px;
-    z-index: 35;
-    width: 44px;
-    height: 44px;
-    min-width: 44px;
-    min-height: 44px;
-    border-radius: 50%;
-    border: 1.5px solid var(--lp-border);
-    background: var(--lp-surface);
-    color: var(--lp-ink-soft);
+    z-index: var(--lp-navbtn-z);
+    width: var(--lp-navbtn-size);
+    height: var(--lp-navbtn-size);
+    min-width: var(--lp-navbtn-size);
+    min-height: var(--lp-navbtn-size);
+    border-radius: var(--lp-navbtn-radius);
+    border: var(--lp-navbtn-border-width) solid var(--lp-navbtn-border);
+    background: var(--lp-navbtn-bg);
+    color: var(--lp-navbtn-icon-color);
     font-size: 1rem;
     font-weight: 400;
-    box-shadow: var(--lp-shadow-sm);
+    box-shadow: var(--lp-navbtn-shadow);
     padding: 0;
   }
 

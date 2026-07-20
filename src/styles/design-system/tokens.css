@@ -151,6 +151,20 @@
   --lp-score-icon-color: #c87d0a;
   --lp-score-success-color: #27865a;
   --lp-score-error-color: #c0392b;
+
+  /* Botón de navegación (hamburguesa/ícono circular) — homologado entre las 4 apps.
+     Tokens dedicados, no reutilizan --lp-border/--lp-shadow-sm/etc. directamente para
+     que el botón nunca se desvíe si esos tokens generales cambian en una sola app. */
+  --lp-navbtn-size: 44px;
+  --lp-navbtn-radius: 50%;
+  --lp-navbtn-border-width: 1.5px;
+  --lp-navbtn-z: 35;
+  --lp-navbtn-border: #e8e0d4;
+  --lp-navbtn-bg: #ffffff;
+  --lp-navbtn-icon-color: #5e5041;
+  --lp-navbtn-accent: #d4764e;
+  --lp-navbtn-shadow: 0 1px 3px rgba(44, 36, 24, 0.04), 0 4px 10px rgba(44, 36, 24, 0.04);
+  --lp-navbtn-shadow-hover: 0 4px 14px rgba(44, 36, 24, 0.08), 0 2px 6px rgba(44, 36, 24, 0.05);
 }
 
 /* === LEARN PLATFORM TOKENS — DARK === */
@@ -199,6 +213,14 @@ html.dark {
   --lp-score-icon-color: #e6a832;
   --lp-score-success-color: #4fb07a;
   --lp-score-error-color: #c0392b;
+
+  /* Botón de navegación (dark) — homologado entre las 4 apps */
+  --lp-navbtn-border: #3d362c;
+  --lp-navbtn-bg: #282420;
+  --lp-navbtn-icon-color: #b5ada2;
+  --lp-navbtn-accent: #d4764e;
+  --lp-navbtn-shadow: 0 2px 4px rgba(0, 0, 0, 0.22), 0 4px 12px rgba(0, 0, 0, 0.18);
+  --lp-navbtn-shadow-hover: 0 4px 14px rgba(0, 0, 0, 0.22), 0 2px 6px rgba(0, 0, 0, 0.18);
 }
 
 /* === BRIDGE: Map existing component variables to --lp-* tokens === */

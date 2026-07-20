@@ -97,4 +97,10 @@
   text-transform: uppercase;
 }
 
-/* Footer visible in all views */
+/* Footer visible in all views, except on mobile where it's dropped to reduce
+   secondary chrome — matches DeskFlow/HubFlow/LyricFlow's mobile treatment. */
+@media (max-width: 767px) {
+  .app-footer {
+    display: none;
+  }
+}
