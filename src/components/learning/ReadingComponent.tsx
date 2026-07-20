@@ -441,7 +441,7 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                                   key={mIndex}
                                   className="reading-component__grammar-mistake-item"
                                 >
-                                  {point.commonMistakes.length === 1 && (
+                                  {point.commonMistakes!.length === 1 && (
                                     <span className="reading-component__grammar-inline-label">
                                       ⚠
                                     </span>
