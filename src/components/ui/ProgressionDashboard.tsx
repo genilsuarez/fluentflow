@@ -43,7 +43,8 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
     const handleKeyDown = (e: KeyboardEvent) => {
       // Skip if user is typing in a search input or other editable field
       const tag = (e.target as HTMLElement)?.tagName;
-      if (tag === 'INPUT' || tag === 'TEXTAREA' || (e.target as HTMLElement)?.isContentEditable) return;
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || (e.target as HTMLElement)?.isContentEditable)
+        return;
       if (e.key === 'Enter') {
         e.preventDefault();
         onModuleSelect(nextRecommended);

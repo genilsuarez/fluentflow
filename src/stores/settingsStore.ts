@@ -269,12 +269,17 @@ export const useSettingsStore = create<SettingsState>()(
           const gs = persistedState.gameSettings || {};
           if (gs.flashcardMode && gs.flashcardMode.wordCount === 10) gs.flashcardMode.wordCount = 8;
           if (gs.quizMode && gs.quizMode.questionCount === 10) gs.quizMode.questionCount = 8;
-          if (gs.completionMode && gs.completionMode.itemCount === 10) gs.completionMode.itemCount = 8;
+          if (gs.completionMode && gs.completionMode.itemCount === 10)
+            gs.completionMode.itemCount = 8;
           if (gs.matchingMode && gs.matchingMode.wordCount === 6) gs.matchingMode.wordCount = 5;
-          if (gs.reorderingMode && gs.reorderingMode.itemCount === 10) gs.reorderingMode.itemCount = 8;
-          if (gs.transformationMode && gs.transformationMode.itemCount === 10) gs.transformationMode.itemCount = 8;
-          if (gs.wordFormationMode && gs.wordFormationMode.itemCount === 10) gs.wordFormationMode.itemCount = 8;
-          if (gs.errorCorrectionMode && gs.errorCorrectionMode.itemCount === 10) gs.errorCorrectionMode.itemCount = 8;
+          if (gs.reorderingMode && gs.reorderingMode.itemCount === 10)
+            gs.reorderingMode.itemCount = 8;
+          if (gs.transformationMode && gs.transformationMode.itemCount === 10)
+            gs.transformationMode.itemCount = 8;
+          if (gs.wordFormationMode && gs.wordFormationMode.itemCount === 10)
+            gs.wordFormationMode.itemCount = 8;
+          if (gs.errorCorrectionMode && gs.errorCorrectionMode.itemCount === 10)
+            gs.errorCorrectionMode.itemCount = 8;
           persistedState = { ...persistedState, gameSettings: gs };
         }
         return persistedState;

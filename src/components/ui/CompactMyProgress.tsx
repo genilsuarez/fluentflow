@@ -208,7 +208,10 @@ const DashboardTab: React.FC<DashboardTabProps> = ({
             {(() => {
               // Always show today + 2 previous days with activity
               const today = progressData[progressData.length - 1];
-              const previous = progressData.slice(0, -1).filter(d => d.totalScore > 0).slice(-2);
+              const previous = progressData
+                .slice(0, -1)
+                .filter(d => d.totalScore > 0)
+                .slice(-2);
               const recent = [...previous, today];
               const maxPts = Math.max(...recent.map(d => d.totalScore || 0), 1);
               return recent.map((day, index) => {
@@ -220,7 +223,10 @@ const DashboardTab: React.FC<DashboardTabProps> = ({
                 const pct = Math.max((pts / maxPts) * 100, pts > 0 ? 8 : 0);
                 const isToday = index === recent.length - 1;
                 return (
-                  <div key={index} className={`my-progress__weekly-day${isToday ? ' my-progress__weekly-day--today' : ''}`}>
+                  <div
+                    key={index}
+                    className={`my-progress__weekly-day${isToday ? ' my-progress__weekly-day--today' : ''}`}
+                  >
                     <div className="my-progress__weekly-bar">
                       <div
                         className="my-progress__weekly-fill"
