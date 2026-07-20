@@ -43,8 +43,8 @@
   padding: 0.75rem 1rem;
   background: linear-gradient(
     135deg,
-    var(--lp-accent-dark, #a8543a) 0%,
-    var(--lp-accent, #d4764e) 100%
+    var(--lp-accent-dark, #1e40af) 0%,
+    var(--lp-accent, #2563eb) 100%
   );
   position: relative;
   overflow: visible;

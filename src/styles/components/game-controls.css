@@ -63,7 +63,7 @@
 }
 
 .game-controls__home-btn:focus-visible {
-  outline: 2px solid var(--lp-accent, #d4764e);
+  outline: 2px solid var(--lp-accent, #2563eb);
   outline-offset: 2px;
 }
 
@@ -196,7 +196,7 @@
 }
 
 .game-controls__primary-btn--orange {
-  background: var(--lp-accent, #d4764e);
+  background: var(--lp-accent, #2563eb);
   color: white;
 }
 

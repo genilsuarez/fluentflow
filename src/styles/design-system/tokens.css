@@ -26,11 +26,11 @@
   --lp-muted: #9c8e7c;
   --lp-ink-inverse: #ffffff;
 
-  /* ─── Accent — warm terracotta ─── */
-  --lp-accent: #d4764e;
-  --lp-accent-soft: #fdf0ea;
-  --lp-accent-dark: #a8543a;
-  --lp-accent-hover: #c0663f;
+  /* ─── Accent — vivid blue (alineado con --lp-hero-blue de las tarjetas de progreso) ─── */
+  --lp-accent: #2563eb;
+  --lp-accent-soft: #e8f0fe;
+  --lp-accent-dark: #1e40af;
+  --lp-accent-hover: #1d4ed8;
 
   /* ─── Primary action (maintained for interactive elements) ─── */
   --lp-primary: #3d6b9f;
@@ -184,7 +184,7 @@ html.dark {
   --lp-muted: #998e84;
   --lp-ink-inverse: #1a1714;
 
-  --lp-accent-soft: #2e2018;
+  --lp-accent-soft: #16233d;
   --lp-primary-soft: #1a2a3d;
 
   --lp-success-soft: #1a2d20;
