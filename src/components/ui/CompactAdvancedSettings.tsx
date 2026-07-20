@@ -135,6 +135,7 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
         setSelectedLevels([defaultLevel]);
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isOpen, offlineEnabled, downloadedLevels, level]);
 
   // Load total cache size when modal opens and offline is enabled
@@ -162,7 +163,7 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
         // selectedLevels will be set by the sync useEffect above
       }
     },
-    [level, setOfflineEnabled, setDownloadedLevels, setLastDownloadDate]
+    [setOfflineEnabled, setDownloadedLevels, setLastDownloadDate]
   );
 
   const handleLevelCheckbox = useCallback((lvl: string, checked: boolean) => {
@@ -211,7 +212,7 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
     } finally {
       setIsDownloading(false);
     }
-  }, [selectedLevels, isDownloading, downloadedLevels, setDownloadedLevels, setLastDownloadDate]);
+  }, [selectedLevels, isDownloading, setDownloadedLevels, setLastDownloadDate]);
 
   const handleRetryFailed = useCallback(async () => {
     if (failedUrls.length === 0 || isDownloading) return;

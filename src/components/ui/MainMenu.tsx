@@ -26,6 +26,25 @@ import {
 import { UnifiedFilter } from './UnifiedFilter';
 import '../../styles/components/main-menu.css';
 
+const LEVEL_ORDER_EX = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'] as const;
+const CATEGORY_ORDER: Category[] = [
+  'Grammar',
+  'Vocabulary',
+  'PhrasalVerbs',
+  'Idioms',
+  'Reading',
+  'Review',
+];
+const LEVEL_ORDER = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'] as const;
+const LEVEL_LABELS: Record<string, string> = {
+  a1: 'A1',
+  a2: 'A2',
+  b1: 'B1',
+  b2: 'B2',
+  c1: 'C1',
+  c2: 'C2',
+};
+
 export const MainMenu: React.FC = () => {
   const { data: modules = [], isLoading, error } = useAllModules();
   const progression = useProgression();
@@ -55,16 +74,15 @@ export const MainMenu: React.FC = () => {
   const gridRef = useRef<HTMLDivElement>(null);
 
   // Access raw (unfiltered) modules from the query cache for dependency calculations
-  const allModulesRaw = queryClient.getQueryData<LearningModule[]>(['modules']) ?? [];
+  const allModulesRaw = React.useMemo(
+    () => queryClient.getQueryData<LearningModule[]>(['modules']) ?? [],
+    // Re-derive when visible modules change (proxy for query cache update)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [modules]
+  );
 
   // Pre-compute module statuses for exercises view + progression-based statuses
   const { getModuleCompletion, isModuleCompleted } = useProgressStore();
-
-  // Exercises view: in all_modules mode, unlock every module of the user's current
-  // active level (first level not fully completed). Past levels show as completed,
-  // future levels stay locked. This removes the prerequisite-chain friction from the
-  // browse/exercise view while the progress view keeps strict gating.
-  const LEVEL_ORDER_EX = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'] as const;
 
   const exerciseStatusMap = React.useMemo(() => {
     // Determine the user's active level: first CEFR level that is NOT 100% completed.
@@ -128,23 +146,6 @@ export const MainMenu: React.FC = () => {
   }, [modules, allModulesRaw, categories, learningModes]);
 
   // Category-grouped view: category → level → toposort within level
-  const CATEGORY_ORDER: Category[] = [
-    'Grammar',
-    'Vocabulary',
-    'PhrasalVerbs',
-    'Idioms',
-    'Reading',
-    'Review',
-  ];
-  const LEVEL_ORDER = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'] as const;
-  const LEVEL_LABELS: Record<string, string> = {
-    a1: 'A1',
-    a2: 'A2',
-    b1: 'B1',
-    b2: 'B2',
-    c1: 'C1',
-    c2: 'C2',
-  };
 
   const groupedByCategory = React.useMemo(() => {
     if (modules.length === 0) return [];
@@ -263,7 +264,7 @@ export const MainMenu: React.FC = () => {
   // Sync view mode with stored context when component mounts
   useEffect(() => {
     setViewMode(previousMenuContext);
-  }, [previousMenuContext]);
+  }, [previousMenuContext, setViewMode]);
 
   // Update stored context when view mode changes
   useEffect(() => {

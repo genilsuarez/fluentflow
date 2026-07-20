@@ -1,122 +1,122 @@
 [
   {
-    "sentence": "______ such dedication in young athletes.",
+    "sentence": "______ (seldom / we / see) such dedication in young athletes.",
     "correct": "Seldom do we see",
-    "explanation": "La inversión con \"seldom\" requiere que el verbo auxiliar vaya antes del sujeto.",
-    "tip": "Analyze the grammatical structure — is it inversion, cleft, subjunctive, or participle?"
+    "explanation": "La inversión con \"seldom\" requiere que el verbo auxiliar vaya antes del sujeto: Seldom + aux + subject + verb.",
+    "tip": "Reorder the words using fronted-adverb inversion"
   },
   {
-    "sentence": "______ about the party, I would have attended.",
+    "sentence": "______ (know) about the party, I would have attended.",
     "correct": "Had I known",
-    "explanation": "Esta es una oración condicional invertida, equivalente a \"If I had known\".",
-    "tip": "Analyze the grammatical structure — is it inversion, cleft, subjunctive, or participle?"
+    "explanation": "Condicional invertida de tercer tipo: Had + subject + past participle = If I had known.",
+    "tip": "Third conditional inversion — drop 'if' and invert"
   },
   {
-    "sentence": "______ the race, but he also won it.",
+    "sentence": "______ (not only / he / finish) the race, but he also won it.",
     "correct": "Not only did he finish",
-    "explanation": "La inversión con \"not only\" requiere que el verbo auxiliar vaya antes del sujeto.",
-    "tip": "Analyze the grammatical structure — is it inversion, cleft, subjunctive, or participle?"
+    "explanation": "La inversión con \"not only\" requiere: Not only + aux + subject + verb.",
+    "tip": "Reorder using 'not only' fronted inversion"
   },
   {
-    "sentence": "______ than the phone rang.",
+    "sentence": "______ (no sooner / she / arrive) than the phone rang.",
     "correct": "No sooner had she arrived",
-    "explanation": "La inversión con 'no sooner... than' requiere que el verbo auxiliar vaya antes del sujeto.",
-    "tip": "Analyze the grammatical structure — is it inversion, cleft, subjunctive, or participle?"
+    "explanation": "La inversión con 'no sooner... than': No sooner + had + subject + past participle.",
+    "tip": "Reorder using 'no sooner... than' — past perfect inversion"
   },
   {
-    "sentence": "______ the challenges that lay ahead.",
+    "sentence": "______ (little / he / know) the challenges that lay ahead.",
     "correct": "Little did he know",
-    "explanation": "La inversión con \"little\" (que significa \"not much\") requiere que el verbo auxiliar vaya antes del sujeto.",
-    "tip": "Analyze the grammatical structure — is it inversion, cleft, subjunctive, or participle?"
+    "explanation": "La inversión con \"little\": Little + aux + subject + verb.",
+    "tip": "Reorder using fronted-adverb inversion"
   },
   {
-    "sentence": "______ did they decide to leave.",
+    "sentence": "______ (only when / the sun / set) did they decide to leave.",
     "correct": "Only when the sun set",
-    "explanation": "La inversión con \"only when\" ocurre en la cláusula principal, no en la cláusula que contiene \"only\".",
-    "tip": "Analyze the grammatical structure — is it inversion, cleft, subjunctive, or participle?"
+    "explanation": "Con \"only when\", la inversión ocurre en la cláusula principal (did they decide), no en la subordinada.",
+    "tip": "The inversion is already in the main clause — complete the 'only when' part"
   },
   {
-    "sentence": "______ of the speech that everyone was moved.",
+    "sentence": "______ (such / the impact) of the speech that everyone was moved.",
     "correct": "Such was the impact",
-    "explanation": "La inversión con \"such\" enfatiza el grado de algo.",
-    "tip": "Analyze the grammatical structure — is it inversion, cleft, subjunctive, or participle?"
+    "explanation": "Inversión con \"such\": Such + was/were + subject.",
+    "tip": "Reorder using 'such... that' emphatic inversion"
   },
   {
-    "sentence": "______ that door.",
+    "sentence": "______ (under no circumstances / you / should / open) that door.",
     "correct": "Under no circumstances should you open",
-    "explanation": "La inversión con expresiones negativas como \"under no circumstances\" requiere que el verbo auxiliar vaya antes del sujeto.",
-    "tip": "Analyze the grammatical structure — is it inversion, cleft, subjunctive, or participle?"
+    "explanation": "Con expresiones negativas: negative expression + aux + subject + verb.",
+    "tip": "Reorder the words — negative adverbial goes first, then invert subject and auxiliary"
   },
   {
-    "sentence": "______ such a beautiful painting.",
+    "sentence": "______ (rarely / I / see) such a beautiful painting.",
     "correct": "Rarely have I seen",
-    "explanation": "La inversión con \"rarely\" requiere que el verbo auxiliar vaya antes del sujeto.",
-    "tip": "Analyze the grammatical structure — is it inversion, cleft, subjunctive, or participle?"
+    "explanation": "Inversión con \"rarely\": Rarely + have/has + subject + past participle.",
+    "tip": "Reorder using fronted-adverb inversion — present perfect"
   },
   {
-    "sentence": "______ his work than he went home.",
+    "sentence": "______ (no sooner / he / finish) his work than he went home.",
     "correct": "No sooner had he finished",
-    "explanation": "La inversión con 'no sooner... than' requiere que el verbo auxiliar vaya antes del sujeto.",
-    "tip": "Analyze the grammatical structure — is it inversion, cleft, subjunctive, or participle?"
+    "explanation": "La inversión con 'no sooner... than': No sooner + had + subject + past participle.",
+    "tip": "Reorder using 'no sooner... than' — past perfect inversion"
   },
   {
-    "sentence": "______ when it started to rain.",
+    "sentence": "______ (hardly / she / leave) when it started to rain.",
     "correct": "Hardly had she left",
-    "explanation": "La inversión con 'hardly... when' requiere que el verbo auxiliar vaya antes del sujeto.",
-    "tip": "Analyze the grammatical structure — is it inversion, cleft, subjunctive, or participle?"
+    "explanation": "La inversión con 'hardly... when': Hardly + had + subject + past participle.",
+    "tip": "Reorder using 'hardly... when' — past perfect inversion"
   },
   {
-    "sentence": "______ that it was expanded globally.",
+    "sentence": "______ (so / successful / the project) that it was expanded globally.",
     "correct": "So successful was the project",
-    "explanation": "La inversión con 'so + adjetivo/adverbio' enfatiza el grado de algo.",
-    "tip": "Analyze the grammatical structure — is it inversion, cleft, subjunctive, or participle?"
+    "explanation": "Inversión con 'so + adjective': So + adj + was/were + subject.",
+    "tip": "Reorder using 'so... that' emphatic inversion"
   },
   {
-    "sentence": "______ so rapidly.",
+    "sentence": "______ (never before / technology / advance) so rapidly.",
     "correct": "Never before has technology advanced",
-    "explanation": "La inversión con \"never before\" requiere que el verbo auxiliar vaya antes del sujeto.",
-    "tip": "Analyze the grammatical structure — is it inversion, cleft, subjunctive, or participle?"
+    "explanation": "Inversión con \"never before\": Never before + has/have + subject + past participle.",
+    "tip": "Reorder using fronted-adverb inversion — present perfect"
   },
   {
-    "sentence": "______ this information.",
+    "sentence": "______ (on no account / you / be / to disclose) this information.",
     "correct": "On no account are you to disclose",
-    "explanation": "La inversión con \"on no account\" requiere que el verbo auxiliar vaya antes del sujeto.",
-    "tip": "Analyze the grammatical structure — is it inversion, cleft, subjunctive, or participle?"
+    "explanation": "Con \"on no account\": negative expression + aux + subject + verb.",
+    "tip": "Reorder — negative adverbial goes first, then invert"
   },
   {
-    "sentence": "______ the lottery, I would travel the world.",
+    "sentence": "______ (I / win) the lottery, I would travel the world.",
     "correct": "Were I to win",
-    "explanation": "Esta es una oración condicional invertida, equivalente a \"If I were to win\".",
-    "tip": "Analyze the grammatical structure — is it inversion, cleft, subjunctive, or participle?"
+    "explanation": "Condicional invertida de segundo tipo: Were + subject + to + verb = If I were to win.",
+    "tip": "Second conditional inversion — drop 'if', use 'were... to'"
   },
   {
-    "sentence": "______ our goals.",
+    "sentence": "______ (only by / work / together / we / can / achieve) our goals.",
     "correct": "Only by working together can we achieve",
-    "explanation": "La inversión con \"only by\" ocurre en la cláusula principal.",
-    "tip": "Analyze the grammatical structure — is it inversion, cleft, subjunctive, or participle?"
+    "explanation": "Con \"only by + -ing\", la inversión ocurre en la cláusula principal: Only by + -ing + aux + subject + verb.",
+    "tip": "Reorder — 'only by' phrase first, then invert the main clause"
   },
   {
-    "sentence": "______ did she finally relax.",
+    "sentence": "______ (not until / all the guests / leave) did she finally relax.",
     "correct": "Not until all the guests had left",
-    "explanation": "La inversión con \"not until\" ocurre en la cláusula principal.",
-    "tip": "Analyze the grammatical structure — is it inversion, cleft, subjunctive, or participle?"
+    "explanation": "Con \"not until\", la inversión ocurre en la cláusula principal (did she relax). La subordinada usa past perfect.",
+    "tip": "The inversion is already in the main clause — complete the 'not until' part with past perfect"
   },
   {
-    "sentence": "______ that he broke the world record.",
+    "sentence": "______ (so / quickly / he / run) that he broke the world record.",
     "correct": "So quickly did he run",
-    "explanation": "La inversión con 'so + adverbio' enfatiza el grado de algo.",
-    "tip": "Analyze the grammatical structure — is it inversion, cleft, subjunctive, or participle?"
+    "explanation": "Inversión con 'so + adverb': So + adverb + aux + subject + verb.",
+    "tip": "Reorder using 'so... that' emphatic inversion with an adverb"
   },
   {
-    "sentence": "______ any further assistance, please do not hesitate to ask.",
+    "sentence": "______ (you / require) any further assistance, please do not hesitate to ask.",
     "correct": "Should you require",
-    "explanation": "Esta es una oración condicional invertida, equivalente a \"If you require\".",
-    "tip": "Analyze the grammatical structure — is it inversion, cleft, subjunctive, or participle?"
+    "explanation": "Condicional invertida de primer tipo: Should + subject + verb = If you require.",
+    "tip": "First conditional inversion — drop 'if', use formal inverted form"
   },
   {
-    "sentence": "______ for the accident.",
+    "sentence": "______ (in no way / he / be / responsible) for the accident.",
     "correct": "In no way is he responsible",
-    "explanation": "La inversión con \"in no way\" requiere que el verbo auxiliar vaya antes del sujeto.",
-    "tip": "Analyze the grammatical structure — is it inversion, cleft, subjunctive, or participle?"
+    "explanation": "Con \"in no way\": negative expression + aux + subject + complement.",
+    "tip": "Reorder — negative adverbial goes first, then invert subject and 'be'"
   }
 ]

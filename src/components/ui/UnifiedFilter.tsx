@@ -140,7 +140,13 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
   const panelRef = useRef<HTMLDivElement>(null);
 
   const isOpen = controlledOpen ?? internalOpen;
-  const handleToggle = onToggle ?? (() => setInternalOpen(prev => !prev));
+  const handleToggle = React.useCallback(() => {
+    if (onToggle) {
+      onToggle();
+    } else {
+      setInternalOpen(prev => !prev);
+    }
+  }, [onToggle]);
 
   const activeFilterCount = categories.length + learningModes.length + (level !== 'all' ? 1 : 0);
 

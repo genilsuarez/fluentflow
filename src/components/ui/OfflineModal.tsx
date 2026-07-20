@@ -15,7 +15,7 @@ export const OfflineModal: React.FC<OfflineModalProps> = ({ isOpen, onRetry }) =
   const { t } = useTranslation(language);
   const { returnToMenu } = useMenuNavigation();
 
-  const handleGoToMenu = () => returnToMenu();
+  const handleGoToMenu = React.useCallback(() => returnToMenu(), [returnToMenu]);
 
   // Escape key to go home
   useEffect(() => {
@@ -25,7 +25,7 @@ export const OfflineModal: React.FC<OfflineModalProps> = ({ isOpen, onRetry }) =
     };
     window.addEventListener('keydown', handleKey);
     return () => window.removeEventListener('keydown', handleKey);
-  }, [isOpen]);
+  }, [isOpen, handleGoToMenu]);
 
   if (!isOpen) return null;
 

@@ -189,9 +189,12 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
         }
 
         // Show first-letter hint only when the answer is long enough that it's not a giveaway
+        // Skip first-letter hint if sentence already contains a base-word hint in parentheses
         const correctLen = (currentExercise.correct || '').trim().length;
         const firstLetter = currentExercise.correct?.charAt(0) || '';
-        const placeholderHint = correctLen > 3 && firstLetter ? `${firstLetter}...` : '...';
+        const hasBaseWordInSentence = /\([a-zA-Z]/.test(currentExercise.sentence || '');
+        const placeholderHint =
+          correctLen > 3 && firstLetter && !hasBaseWordInSentence ? `${firstLetter}...` : '...';
 
         // Track which gap index this is (0-based)
         const gapIndex = elements.filter(el => el.key?.toString().startsWith('input-')).length;
