@@ -88,8 +88,7 @@ export const useModuleData = (moduleId: string) => {
           case 'sorting':
             // For sorting mode, we need more data than the final word count
             // because the component will select words from multiple categories
-            limit =
-              gameSettings.sortingMode.wordCount * gameSettings.sortingMode.categoryCount * 2;
+            limit = gameSettings.sortingMode.wordCount * gameSettings.sortingMode.categoryCount * 2;
             break;
           case 'matching':
             limit = gameSettings.matchingMode.wordCount;
