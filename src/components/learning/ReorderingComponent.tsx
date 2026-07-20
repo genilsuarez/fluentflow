@@ -409,34 +409,34 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
 
       {/* Word Bank — hidden when empty post-validation */}
       {!(showResult && availableWords.length === 0) && (
-      <div className="reordering__zone reordering__zone--words">
-        <label className="reordering__zone-label">{t('learning.wordBank')}</label>
-        <div
-          className="reordering__zone-content"
-          role="listbox"
-          aria-label={t('learning.wordBank')}
-          aria-dropeffect={!showResult ? 'move' : 'none'}
-        >
-          {availableWords.map((word, index) => (
-            <button
-              key={`available-${index}-${word}`}
-              className={getWordClass(index, 'available')}
-              onClick={() => handleTapAvailable(index)}
-              disabled={showResult}
-              type="button"
-              role="option"
-              aria-selected={focusedZone === 'available' && focusedIndex === index}
-              aria-grabbed={false}
-              tabIndex={focusedZone === 'available' && focusedIndex === index ? 0 : -1}
-            >
-              {word}
-            </button>
-          ))}
-          {availableWords.length === 0 && !showResult && (
-            <p className="reordering__placeholder">{t('learning.tapToRemove')}</p>
-          )}
+        <div className="reordering__zone reordering__zone--words">
+          <label className="reordering__zone-label">{t('learning.wordBank')}</label>
+          <div
+            className="reordering__zone-content"
+            role="listbox"
+            aria-label={t('learning.wordBank')}
+            aria-dropeffect={!showResult ? 'move' : 'none'}
+          >
+            {availableWords.map((word, index) => (
+              <button
+                key={`available-${index}-${word}`}
+                className={getWordClass(index, 'available')}
+                onClick={() => handleTapAvailable(index)}
+                disabled={showResult}
+                type="button"
+                role="option"
+                aria-selected={focusedZone === 'available' && focusedIndex === index}
+                aria-grabbed={false}
+                tabIndex={focusedZone === 'available' && focusedIndex === index ? 0 : -1}
+              >
+                {word}
+              </button>
+            ))}
+            {availableWords.length === 0 && !showResult && (
+              <p className="reordering__placeholder">{t('learning.tapToRemove')}</p>
+            )}
+          </div>
         </div>
-      </div>
       )}
 
       {/* Result feedback */}
