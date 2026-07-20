@@ -9,9 +9,7 @@ export const ToastContainer: React.FC = () => {
   const { currentToast, isVisible, clearToast } = useToastStore();
   const { language } = useSettingsStore();
   const { t } = useTranslation(language);
-  const isMobile =
-    typeof window !== 'undefined' &&
-    window.matchMedia('(max-width: 767px)').matches;
+  const isMobile = typeof window !== 'undefined' && window.matchMedia('(max-width: 767px)').matches;
 
   // Only render if there's a toast and it's visible (desktop only)
   if (isMobile || !currentToast || !isVisible) {

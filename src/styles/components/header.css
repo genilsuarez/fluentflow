@@ -1089,8 +1089,10 @@
     font-size: 1.0625rem;
   }
 
-  .header-redesigned--learning-mode .header-redesigned__toolbar-btn.header-redesigned__back-btn:hover,
-  .header-redesigned--learning-mode .header-redesigned__toolbar-btn.header-redesigned__menu-btn:hover {
+  .header-redesigned--learning-mode
+    .header-redesigned__toolbar-btn.header-redesigned__back-btn:hover,
+  .header-redesigned--learning-mode
+    .header-redesigned__toolbar-btn.header-redesigned__menu-btn:hover {
     background: color-mix(in srgb, var(--lp-ink) 5%, transparent);
     border-color: transparent;
     box-shadow: none;
@@ -1098,8 +1100,10 @@
     color: var(--lp-ink);
   }
 
-  .header-redesigned--learning-mode .header-redesigned__toolbar-btn.header-redesigned__back-btn:active,
-  .header-redesigned--learning-mode .header-redesigned__toolbar-btn.header-redesigned__menu-btn:active {
+  .header-redesigned--learning-mode
+    .header-redesigned__toolbar-btn.header-redesigned__back-btn:active,
+  .header-redesigned--learning-mode
+    .header-redesigned__toolbar-btn.header-redesigned__menu-btn:active {
     background: color-mix(in srgb, var(--lp-ink) 9%, transparent);
     transform: scale(0.97);
   }
@@ -1110,7 +1114,9 @@
     display: none;
   }
 
-  html[data-navigation-mode='floating'] .header-redesigned--learning-mode .header-redesigned__menu-btn {
+  html[data-navigation-mode='floating']
+    .header-redesigned--learning-mode
+    .header-redesigned__menu-btn {
     position: static;
     top: auto;
     left: auto;
