@@ -45,11 +45,16 @@ export const useModuleData = (moduleId: string) => {
   const sessionKey = React.useRef(Date.now()).current;
 
   // Cache the select result so filterModuleData (which shuffles) only runs once
-  // per raw data identity. Without this, select runs on every render and
+  // per raw data identity + limit. Without this, select runs on every render and
   // produces different shuffled subsets, breaking components that compare
   // against the original data (e.g., MatchingComponent's pair checking).
-  const cachedSelectRef = React.useRef<{ rawData: unknown; result: LearningModule | null }>({
+  const cachedSelectRef = React.useRef<{
+    rawData: unknown;
+    limit: number;
+    result: LearningModule | null;
+  }>({
     rawData: null,
+    limit: 0,
     result: null,
   });
 
@@ -66,45 +71,49 @@ export const useModuleData = (moduleId: string) => {
     },
     networkMode: 'always', // Allow queries offline - service worker handles caching
     select: (module: LearningModule) => {
-      // Return cached result if raw data hasn't changed (same reference)
-      if (cachedSelectRef.current.rawData === module.data && cachedSelectRef.current.result) {
+      // Determine limit based on game settings
+      let limit = 10; // default
+
+      if (module.learningMode) {
+        switch (module.learningMode) {
+          case 'flashcard':
+            limit = gameSettings.flashcardMode.wordCount;
+            break;
+          case 'quiz':
+            limit = gameSettings.quizMode.questionCount;
+            break;
+          case 'completion':
+            limit = gameSettings.completionMode.itemCount;
+            break;
+          case 'sorting':
+            // For sorting mode, we need more data than the final word count
+            // because the component will select words from multiple categories
+            limit =
+              gameSettings.sortingMode.wordCount * gameSettings.sortingMode.categoryCount * 2;
+            break;
+          case 'matching':
+            limit = gameSettings.matchingMode.wordCount;
+            break;
+          case 'reordering':
+            limit = gameSettings.reorderingMode?.itemCount ?? 10;
+            break;
+          case 'transformation':
+            limit = gameSettings.transformationMode?.itemCount ?? 10;
+            break;
+        }
+      }
+
+      // Return cached result if raw data AND limit haven't changed
+      if (
+        cachedSelectRef.current.rawData === module.data &&
+        cachedSelectRef.current.limit === limit &&
+        cachedSelectRef.current.result
+      ) {
         return cachedSelectRef.current.result;
       }
 
       // Apply filtering using the service layer
       if (module.data && Array.isArray(module.data)) {
-        // Determine limit based on game settings
-        let limit = 10; // default
-
-        if (module.learningMode) {
-          switch (module.learningMode) {
-            case 'flashcard':
-              limit = gameSettings.flashcardMode.wordCount;
-              break;
-            case 'quiz':
-              limit = gameSettings.quizMode.questionCount;
-              break;
-            case 'completion':
-              limit = gameSettings.completionMode.itemCount;
-              break;
-            case 'sorting':
-              // For sorting mode, we need more data than the final word count
-              // because the component will select words from multiple categories
-              limit =
-                gameSettings.sortingMode.wordCount * gameSettings.sortingMode.categoryCount * 2;
-              break;
-            case 'matching':
-              limit = gameSettings.matchingMode.wordCount;
-              break;
-            case 'reordering':
-              limit = gameSettings.reorderingMode?.itemCount ?? 10;
-              break;
-            case 'transformation':
-              limit = gameSettings.transformationMode?.itemCount ?? 10;
-              break;
-          }
-        }
-
         const filteredData = apiService.filterModuleData(
           module.data,
           {
@@ -115,11 +124,11 @@ export const useModuleData = (moduleId: string) => {
         );
 
         const result = { ...module, data: filteredData };
-        cachedSelectRef.current = { rawData: module.data, result };
+        cachedSelectRef.current = { rawData: module.data, limit, result };
         return result;
       }
 
-      cachedSelectRef.current = { rawData: module.data, result: module };
+      cachedSelectRef.current = { rawData: module.data, limit, result: module };
       return module;
     },
     staleTime: 10 * 60 * 1000, // 10 minutes
