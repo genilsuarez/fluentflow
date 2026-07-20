@@ -29,6 +29,7 @@ const FlashcardComponent: React.FC<FlashcardComponentProps> = ({ module }) => {
     setExerciseResult,
     handleResultContinue,
     resetSession,
+  triggerRestart,
   } = useLearningSession({
     moduleId: module.id,
     moduleName: module.name,
@@ -242,6 +243,14 @@ const FlashcardComponent: React.FC<FlashcardComponentProps> = ({ module }) => {
           <span className="game-controls__home-icon" aria-hidden="true">
             🏠
           </span>
+        </button>
+
+        <button
+          onClick={triggerRestart}
+          className="game-controls__home-btn"
+          title={t('common.reset')}
+        >
+          <RotateCcw size={16} aria-hidden="true" />
         </button>
 
         <button

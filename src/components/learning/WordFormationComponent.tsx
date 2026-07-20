@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { Check, X, ArrowRight } from 'lucide-react';
+import { Check, X, ArrowRight , RotateCcw } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { conditionalShuffle } from '../../utils/randomUtils';
 import '../../styles/components/input-exercise-base.css';
@@ -12,7 +12,7 @@ import ExerciseResultScreen from '../ui/ExerciseResultScreen';
 import { EditableInput } from '../ui/EditableInput';
 import type { EditableInputHandle } from '../ui/EditableInput';
 import { ContentAdapter } from '../../utils/contentAdapter';
-import { normalizeAnswer } from '../../utils/answerUtils';
+import { matchesAnswer } from '../../utils/answerUtils';
 import type { LearningModule, WordFormationData } from '../../types';
 
 interface WordFormationComponentProps {
@@ -38,6 +38,7 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
     setExerciseResult,
     handleResultContinue,
     resetSession,
+  triggerRestart,
   } = useLearningSession({
     moduleId: module.id,
     moduleName: module.name,
@@ -60,7 +61,7 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
   const isCorrectAnswer = useCallback(
     (userAnswer: string): boolean => {
       if (!currentExercise?.correct) return false;
-      return normalizeAnswer(userAnswer) === normalizeAnswer(currentExercise.correct);
+      return matchesAnswer(userAnswer, [currentExercise.correct]);
     },
     [currentExercise]
   );
@@ -152,7 +153,7 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
         totalItems={processedExercises.length}
         mode="word-formation"
         helpText={
-          showResult ? t('learning.pressEnterNext') : t('learning.wordFormationInstruction')
+        showResult ? t('learning.pressEnterNext') : t('learning.wordFormationInstruction')
         }
       />
 
@@ -164,18 +165,18 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
           </div>
         )}
 
+        {/* Root word first — then sentence closer to input for easier rewriting */}
+        <div className="word-formation__root-word">
+          <span className="word-formation__root-word-label">{t('learning.rootWord')}</span>
+          <span className="word-formation__root-word-value">{currentExercise.rootWord}</span>
+        </div>
+
         {/* Sentence with blank */}
         <h3 className="word-formation__sentence">
           <ContentRenderer
             content={ContentAdapter.ensureStructured(currentExercise.sentence, 'quiz')}
           />
         </h3>
-
-        {/* Root word in CAPITALS */}
-        <div className="word-formation__root-word">
-          <span className="word-formation__root-word-label">{t('learning.rootWord')}</span>
-          <span className="word-formation__root-word-value">{currentExercise.rootWord}</span>
-        </div>
 
         {/* Hint */}
         {currentExercise.hint && (
@@ -271,6 +272,14 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
           <span className="game-controls__home-icon" aria-hidden="true">
             🏠
           </span>
+        </button>
+
+        <button
+          onClick={triggerRestart}
+          className="game-controls__home-btn"
+          title={t('common.reset')}
+        >
+          <RotateCcw size={16} aria-hidden="true" />
         </button>
 
         {!showResult ? (

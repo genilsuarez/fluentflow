@@ -1,32 +1,30 @@
 /**
  * Word Formation Component - Mode-specific overrides only.
  * Base styles in input-exercise-base.css.
+ *
+ * Simplified palette: neutral tones only — no color accent on sentence/root.
+ * The container border is preserved (part of the base design).
  */
 
-/* === FOCUS ACCENT (indigo) === */
-.word-formation__answer-area:focus-within {
-  border-color: #6366f1;
-}
-
-/* === SENTENCE === */
+/* === SENTENCE — neutral, no color accent === */
 .word-formation__sentence {
-  background-color: var(--theme-bg-subtle, #f0f9ff);
-  border: 1px solid var(--theme-border-soft, #bae6fd);
+  background-color: transparent;
+  border: none;
   border-radius: var(--radius-md, 0.375rem);
   padding: var(--lp-space-sm) var(--lp-space-md);
   margin-bottom: var(--lp-space-sm);
   font-size: var(--lp-text-base);
   font-weight: 500;
-  color: var(--theme-text-primary, #0c4a6e);
+  color: var(--theme-text-primary, #374151);
   line-height: 1.5;
 }
 html.dark .word-formation__sentence {
-  background-color: rgba(56, 189, 248, 0.08);
-  border-color: rgba(56, 189, 248, 0.25);
-  color: #7dd3fc;
+  background-color: transparent;
+  border: none;
+  color: var(--theme-text-primary, #e5e7eb);
 }
 
-/* === ROOT WORD — Prominent CAPITALS pill (indigo theme) === */
+/* === ROOT WORD — neutral pill, no purple/indigo === */
 .word-formation__root-word {
   display: flex;
   align-items: center;
@@ -34,13 +32,13 @@ html.dark .word-formation__sentence {
   gap: var(--lp-space-sm);
   margin-bottom: var(--lp-space-sm);
   padding: var(--lp-space-sm) var(--lp-space-md);
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(79, 70, 229, 0.08) 100%);
-  border: 2px solid rgba(99, 102, 241, 0.3);
+  background: var(--theme-bg-subtle, #f9fafb);
+  border: 1px solid var(--theme-border-soft, #e5e7eb);
   border-radius: var(--radius-md, 0.375rem);
 }
 html.dark .word-formation__root-word {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(79, 70, 229, 0.12) 100%);
-  border-color: rgba(99, 102, 241, 0.4);
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.1);
 }
 .word-formation__root-word-label {
   font-size: 0.8rem;
@@ -50,32 +48,32 @@ html.dark .word-formation__root-word {
   letter-spacing: 0.05em;
 }
 html.dark .word-formation__root-word-label {
-  color: var(--theme-text-secondary, #d1d5db);
+  color: var(--theme-text-secondary, #9ca3af);
 }
 .word-formation__root-word-value {
-  font-size: 1.5rem;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  color: #4f46e5;
-  background-color: rgba(99, 102, 241, 0.12);
-  padding: 0.25rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--theme-text-primary, #1f2937);
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.2rem 0.6rem;
   border-radius: var(--lp-radius-full);
   text-transform: uppercase;
 }
 html.dark .word-formation__root-word-value {
-  color: #a5b4fc;
-  background-color: rgba(99, 102, 241, 0.2);
+  color: #f3f4f6;
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
-/* === EXPLANATION ACCENT (indigo) === */
+/* === EXPLANATION — neutral accent === */
 .word-formation__explanation {
-  border-left-color: #6366f1;
+  border-left-color: var(--theme-border-soft, #d1d5db);
 }
 html.dark .word-formation__explanation {
-  background-color: rgba(99, 102, 241, 0.08);
+  background-color: rgba(255, 255, 255, 0.03);
 }
 .word-formation__explanation-label {
-  color: #6366f1;
+  color: var(--theme-text-secondary, #6b7280);
 }
 
 /* === COMPACT MOBILE === */
@@ -90,7 +88,7 @@ html.dark .word-formation__explanation {
     margin-bottom: 0.4rem;
   }
   .word-formation__root-word-value {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     padding: 0.15rem 0.5rem;
   }
 }

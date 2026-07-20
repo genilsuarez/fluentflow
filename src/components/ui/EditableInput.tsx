@@ -101,15 +101,29 @@ export const EditableInput = forwardRef<EditableInputHandle, EditableInputProps>
       const raw = el.textContent || '';
       const clean = raw.replace(/\n/g, '');
       if (raw !== clean || el.innerHTML.includes('<br') || el.innerHTML.includes('<div')) {
+        // Save cursor offset before nuking HTML artifacts
+        const sel = window.getSelection();
+        let cursorOffset = clean.length; // fallback: end
+        if (sel && sel.rangeCount > 0) {
+          const range = sel.getRangeAt(0);
+          // Calculate offset relative to the element's full text
+          const preRange = document.createRange();
+          preRange.selectNodeContents(el);
+          preRange.setEnd(range.startContainer, range.startOffset);
+          cursorOffset = preRange.toString().replace(/\n/g, '').length;
+        }
         // Nuke HTML artifacts and restore clean text
         el.textContent = clean;
-        // Restore cursor to end
-        const range = document.createRange();
-        const sel = window.getSelection();
-        range.selectNodeContents(el);
-        range.collapse(false);
-        sel?.removeAllRanges();
-        sel?.addRange(range);
+        // Restore cursor to saved position (clamped)
+        const textNode = el.firstChild;
+        if (textNode && sel) {
+          const restoredOffset = Math.min(cursorOffset, clean.length);
+          const restoreRange = document.createRange();
+          restoreRange.setStart(textNode, restoredOffset);
+          restoreRange.collapse(true);
+          sel.removeAllRanges();
+          sel.addRange(restoreRange);
+        }
       }
       onChange(clean);
     };

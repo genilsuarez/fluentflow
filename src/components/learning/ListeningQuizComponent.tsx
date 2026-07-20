@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { CheckCircle, XCircle, Volume2, ArrowRight, Lightbulb } from 'lucide-react';
+import { CheckCircle, XCircle, Volume2, ArrowRight, Lightbulb , RotateCcw } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { conditionalShuffle } from '../../utils/randomUtils';
@@ -44,6 +44,7 @@ const ListeningQuizComponent: React.FC<ListeningQuizComponentProps> = ({ module 
     setExerciseResult,
     handleResultContinue,
     resetSession,
+  triggerRestart,
   } = useLearningSession({
     moduleId: module.id,
     moduleName: module.name,
@@ -198,7 +199,7 @@ const ListeningQuizComponent: React.FC<ListeningQuizComponentProps> = ({ module 
         totalItems={processedQuestions.length}
         mode="listening-quiz"
         helpText={
-          showResult ? t('learning.pressEnterNext') : 'Listen and choose the correct answer'
+        showResult ? t('learning.pressEnterNext') : 'Listen and choose the correct answer'
         }
       />
 
@@ -364,6 +365,14 @@ const ListeningQuizComponent: React.FC<ListeningQuizComponentProps> = ({ module 
           <span className="game-controls__home-icon" aria-hidden="true">
             🏠
           </span>
+        </button>
+
+        <button
+          onClick={triggerRestart}
+          className="game-controls__home-btn"
+          title={t('common.reset')}
+        >
+          <RotateCcw size={16} aria-hidden="true" />
         </button>
         <button
           onClick={handleNext}

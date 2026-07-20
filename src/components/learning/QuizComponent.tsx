@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { CheckCircle, XCircle, ArrowRight } from 'lucide-react';
+import { CheckCircle, XCircle, ArrowRight , RotateCcw } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { conditionalShuffle } from '../../utils/randomUtils';
@@ -33,6 +33,7 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
     setExerciseResult,
     handleResultContinue,
     resetSession,
+  triggerRestart,
   } = useLearningSession({
     moduleId: module.id,
     moduleName: module.name,
@@ -320,6 +321,14 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
           <span className="game-controls__home-icon" aria-hidden="true">
             🏠
           </span>
+        </button>
+
+        <button
+          onClick={triggerRestart}
+          className="game-controls__home-btn"
+          title={t('common.reset')}
+        >
+          <RotateCcw size={16} aria-hidden="true" />
         </button>
 
         <button

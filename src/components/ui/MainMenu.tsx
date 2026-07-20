@@ -61,39 +61,17 @@ export const MainMenu: React.FC = () => {
   const { getModuleCompletion, isModuleCompleted } = useProgressStore();
 
   // Exercises view: unlock all modules at or below the user's highest reached level.
-  // "Reached" = has completed at least one module at that level.
-  const LEVEL_HIERARCHY = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'];
   const exerciseStatusMap = React.useMemo(() => {
-    // Determine highest level where user has completed at least one module
-    let maxLevelIdx = 0; // Always unlock a1 at minimum
-    for (const m of allModulesRaw) {
-      if (isModuleCompleted(m.id)) {
-        const mLevels = Array.isArray(m.level) ? m.level : [m.level];
-        for (const lvl of mLevels) {
-          const idx = LEVEL_HIERARCHY.indexOf(lvl);
-          if (idx > maxLevelIdx) maxLevelIdx = idx;
-        }
-      }
-    }
-    const unlockedLevels = new Set(LEVEL_HIERARCHY.slice(0, maxLevelIdx + 1));
-
+    // Use the same progression service logic as the progress view:
+    // a module is only unlocked if ALL modules of the previous level are completed
+    // AND all its direct prerequisites are met.
     const map = new Map<
       string,
       { status: 'completed' | 'unlocked' | 'locked'; missingCount: number; progressPct: number }
     >();
     for (const m of modules) {
       const completion = getModuleCompletion(m.id);
-      const mLevels = Array.isArray(m.level) ? m.level : [m.level];
-      const isLevelUnlocked = mLevels.some(lvl => unlockedLevels.has(lvl));
-
-      let status: 'completed' | 'unlocked' | 'locked';
-      if (isModuleCompleted(m.id)) {
-        status = 'completed';
-      } else if (isLevelUnlocked) {
-        status = 'unlocked';
-      } else {
-        status = 'locked';
-      }
+      const status = progression.getModuleStatus(m.id);
 
       map.set(m.id, {
         status,
@@ -102,7 +80,7 @@ export const MainMenu: React.FC = () => {
       });
     }
     return map;
-  }, [modules, allModulesRaw, isModuleCompleted, getModuleCompletion, progression]);
+  }, [modules, getModuleCompletion, progression]);
 
   // Pre-compute hidden dependencies map once (avoids creating a new Map per card)
   const hiddenDepsMap = React.useMemo(() => {

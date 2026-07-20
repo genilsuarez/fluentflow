@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { Volume2, CheckCircle, XCircle, ArrowRight } from 'lucide-react';
+import { Volume2, CheckCircle, XCircle, ArrowRight , RotateCcw } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { conditionalShuffle } from '../../utils/randomUtils';
-import { normalizeAnswer } from '../../utils/answerUtils';
+import { matchesAnswer } from '../../utils/answerUtils';
 import LearningProgressHeader from '../ui/LearningProgressHeader';
 import ExerciseResultScreen from '../ui/ExerciseResultScreen';
 import { speak, stopSpeaking, isSpeechAvailable } from '../../utils/speech';
@@ -40,6 +40,7 @@ const DictationComponent: React.FC<DictationComponentProps> = ({ module }) => {
     setExerciseResult,
     handleResultContinue,
     resetSession,
+  triggerRestart,
   } = useLearningSession({
     moduleId: module.id,
     moduleName: module.name,
@@ -85,9 +86,7 @@ const DictationComponent: React.FC<DictationComponentProps> = ({ module }) => {
 
   const handleSubmit = useCallback(() => {
     if (showResult || !currentItem || !userInput.trim()) return;
-    const normalized = normalizeAnswer(userInput.trim());
-    const expected = normalizeAnswer(currentItem.text);
-    const correct = normalized === expected;
+    const correct = matchesAnswer(userInput.trim(), [currentItem.text]);
 
     setIsCorrect(correct);
     setShowResult(true);
@@ -302,6 +301,14 @@ const DictationComponent: React.FC<DictationComponentProps> = ({ module }) => {
           <span className="game-controls__home-icon" aria-hidden="true">
             🏠
           </span>
+        </button>
+
+        <button
+          onClick={triggerRestart}
+          className="game-controls__home-btn"
+          title={t('common.reset')}
+        >
+          <RotateCcw size={16} aria-hidden="true" />
         </button>
         <button
           onClick={showResult ? handleNext : handleSubmit}

@@ -6,6 +6,9 @@ interface AppStore extends AppState {
   // Global score that persists across sessions
   globalScore: SessionScore;
 
+  // Key that increments on in-place restart to force component remount
+  restartKey: number;
+
   // Actions
   setCurrentModule: (module: LearningModule | null) => void;
   setCurrentView: (view: AppState['currentView']) => void;
@@ -16,6 +19,7 @@ interface AppStore extends AppState {
   setError: (error: string | null) => void;
   resetSession: () => void;
   resetGlobalScore: () => void;
+  triggerRestart: () => void;
 }
 
 export const useAppStore = create<AppStore>()(
@@ -25,6 +29,7 @@ export const useAppStore = create<AppStore>()(
       currentModule: null,
       currentView: 'menu',
       previousMenuContext: 'progression',
+      restartKey: 0,
       sessionScore: {
         correct: 0,
         incorrect: 0,
@@ -138,6 +143,14 @@ export const useAppStore = create<AppStore>()(
         return set({
           globalScore: { correct: 0, incorrect: 0, total: 0, accuracy: 0 },
         });
+      },
+
+      triggerRestart: () => {
+        return set(state => ({
+          restartKey: state.restartKey + 1,
+          sessionScore: { correct: 0, incorrect: 0, total: 0, accuracy: 0 },
+          error: null,
+        }));
       },
     }),
     {

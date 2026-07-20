@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { Check, X, ArrowRight } from 'lucide-react';
+import { Check, X, ArrowRight , RotateCcw } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { conditionalShuffle } from '../../utils/randomUtils';
 import '../../styles/components/input-exercise-base.css';
@@ -12,7 +12,7 @@ import ExerciseResultScreen from '../ui/ExerciseResultScreen';
 import { EditableInput } from '../ui/EditableInput';
 import type { EditableInputHandle } from '../ui/EditableInput';
 import { ContentAdapter } from '../../utils/contentAdapter';
-import { normalizeAnswer } from '../../utils/answerUtils';
+import { matchesAnswer } from '../../utils/answerUtils';
 import type { LearningModule, ErrorCorrectionData } from '../../types';
 
 interface ErrorCorrectionComponentProps {
@@ -38,6 +38,7 @@ const ErrorCorrectionComponent: React.FC<ErrorCorrectionComponentProps> = ({ mod
     setExerciseResult,
     handleResultContinue,
     resetSession,
+  triggerRestart,
   } = useLearningSession({
     moduleId: module.id,
     moduleName: module.name,
@@ -60,17 +61,14 @@ const ErrorCorrectionComponent: React.FC<ErrorCorrectionComponentProps> = ({ mod
   const isCorrectAnswer = useCallback(
     (userAnswer: string): boolean => {
       if (!currentExercise?.correct) return false;
-      const norm = normalizeAnswer(userAnswer);
-      return currentExercise.correct.some(c => normalizeAnswer(c) === norm);
+      return matchesAnswer(userAnswer, currentExercise.correct);
     },
     [currentExercise]
   );
 
   // Detect "trap" sentences: original sentence is already correct (no error to fix)
   const isTrapSentence = currentExercise
-    ? currentExercise.correct.some(
-        c => normalizeAnswer(c) === normalizeAnswer(currentExercise.sentence)
-      )
+    ? matchesAnswer(currentExercise.sentence, currentExercise.correct)
     : false;
 
   const checkAnswer = useCallback(() => {
@@ -160,7 +158,7 @@ const ErrorCorrectionComponent: React.FC<ErrorCorrectionComponentProps> = ({ mod
         totalItems={processedExercises.length}
         mode="error-correction"
         helpText={
-          showResult ? t('learning.pressEnterNext') : t('learning.errorCorrectionInstruction')
+        showResult ? t('learning.pressEnterNext') : t('learning.errorCorrectionInstruction')
         }
       />
 
@@ -280,6 +278,14 @@ const ErrorCorrectionComponent: React.FC<ErrorCorrectionComponentProps> = ({ mod
           <span className="game-controls__home-icon" aria-hidden="true">
             🏠
           </span>
+        </button>
+
+        <button
+          onClick={triggerRestart}
+          className="game-controls__home-btn"
+          title={t('common.reset')}
+        >
+          <RotateCcw size={16} aria-hidden="true" />
         </button>
 
         {!showResult ? (

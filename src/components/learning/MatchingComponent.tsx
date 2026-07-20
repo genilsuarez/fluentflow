@@ -41,6 +41,7 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
   const pairsRef = useRef<{ left: string; right: string; explanation: string }[]>([]);
 
   const updateSessionScore = useAppStore(state => state.updateSessionScore);
+  const triggerRestart = useAppStore(state => state.triggerRestart);
   const { updateUserScore } = useUserStore();
   const { addProgressEntry } = useProgressStore();
   const { language, randomizeItems } = useSettingsStore();
@@ -452,6 +453,14 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
           <span className="game-controls__home-icon" aria-hidden="true">
             🏠
           </span>
+        </button>
+
+        <button
+          onClick={triggerRestart}
+          className="game-controls__home-btn"
+          title={t('common.reset')}
+        >
+          <RotateCcw size={16} aria-hidden="true" />
         </button>
 
         {!showResult ? (

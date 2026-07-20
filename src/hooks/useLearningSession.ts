@@ -37,6 +37,7 @@ export const useLearningSession = ({
 
   const updateSessionScore = useAppStore(state => state.updateSessionScore);
   const resetSession = useAppStore(state => state.resetSession);
+  const triggerRestart = useAppStore(state => state.triggerRestart);
   const { updateUserScore } = useUserStore();
   const { language, randomizeItems } = useSettingsStore();
   const { returnToMenu } = useMenuNavigation();
@@ -128,5 +129,6 @@ export const useLearningSession = ({
     setExerciseResult,
     handleResultContinue,
     resetSession,
+    triggerRestart,
   };
 };

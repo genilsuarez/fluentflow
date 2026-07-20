@@ -1,5 +1,6 @@
+import { useAppStore } from '../../stores/appStore';
 import React, { useState, useEffect, useLayoutEffect, useMemo, useCallback, useRef } from 'react';
-import { ChevronLeft, ChevronRight, ChevronDown, ChevronUp } from 'lucide-react';
+import { ChevronLeft, ChevronRight, ChevronDown, ChevronUp , RotateCcw } from 'lucide-react';
 import { useUserStore } from '../../stores/userStore';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useMenuNavigation } from '../../hooks/useMenuNavigation';
@@ -20,6 +21,7 @@ interface ReadingComponentProps {
 }
 
 const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
+  const triggerRestart = useAppStore(state => state.triggerRestart);
   const [currentSectionIndex, setCurrentSectionIndex] = useState(-1); // Start at -1 for objectives page
   const [startTime] = useState(Date.now());
   const [runId] = useState(() => createLearnFlowId('run'));
@@ -404,54 +406,40 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                             )}
                           />
                         </div>
-                        {point.examples && point.examples.length > 0 && (
+                        {point.examples && point.examples.length === 1 ? (
+                          <div className="reading-component__grammar-single-line">
+                            <span className="reading-component__grammar-inline-label">Ej:</span>
+                            <span className="reading-component__grammar-example-inline">{point.examples[0]}</span>
+                          </div>
+                        ) : point.examples && point.examples.length > 1 ? (
                           <div className="reading-component__grammar-examples">
-                            {point.examples.length > 1 && (
-                              <div className="reading-component__grammar-examples-title">
-                                {t('reading.component.examples')}
-                              </div>
-                            )}
+                            <div className="reading-component__grammar-examples-title">
+                              {t('reading.component.examples')}
+                            </div>
                             <ul className="reading-component__grammar-examples-list">
                               {point.examples.map((example, exIndex) => (
-                                <li
-                                  key={exIndex}
-                                  className="reading-component__grammar-example-item"
-                                >
-                                  {point.examples.length === 1 && (
-                                    <span className="reading-component__grammar-inline-label">
-                                      Ej:
-                                    </span>
-                                  )}
-                                  {example}
-                                </li>
+                                <li key={exIndex} className="reading-component__grammar-example-item">{example}</li>
                               ))}
                             </ul>
                           </div>
-                        )}
-                        {point.commonMistakes && point.commonMistakes.length > 0 && (
+                        ) : null}
+                        {point.commonMistakes && point.commonMistakes.length === 1 ? (
+                          <div className="reading-component__grammar-single-line reading-component__grammar-single-line--warn">
+                            <span className="reading-component__grammar-inline-label reading-component__grammar-inline-label--warn">✗</span>
+                            <span className="reading-component__grammar-mistake-inline">{point.commonMistakes[0]}</span>
+                          </div>
+                        ) : point.commonMistakes && point.commonMistakes.length > 1 ? (
                           <div className="reading-component__grammar-mistakes">
-                            {point.commonMistakes.length > 1 && (
-                              <div className="reading-component__grammar-mistakes-title">
-                                {t('reading.component.commonMistakes')}
-                              </div>
-                            )}
+                            <div className="reading-component__grammar-mistakes-title">
+                              {t('reading.component.commonMistakes')}
+                            </div>
                             <ul className="reading-component__grammar-mistakes-list">
                               {point.commonMistakes.map((mistake, mIndex) => (
-                                <li
-                                  key={mIndex}
-                                  className="reading-component__grammar-mistake-item"
-                                >
-                                  {point.commonMistakes!.length === 1 && (
-                                    <span className="reading-component__grammar-inline-label">
-                                      ⚠
-                                    </span>
-                                  )}
-                                  {mistake}
-                                </li>
+                                <li key={mIndex} className="reading-component__grammar-mistake-item">{mistake}</li>
                               ))}
                             </ul>
                           </div>
-                        )}
+                        ) : null}
                       </div>
                     ))}
                   </div>
@@ -730,6 +718,14 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
           <span className="game-controls__home-icon" aria-hidden="true">
             🏠
           </span>
+        </button>
+
+        <button
+          onClick={triggerRestart}
+          className="game-controls__home-btn"
+          title={t('common.reset')}
+        >
+          <RotateCcw size={16} aria-hidden="true" />
         </button>
 
         <button

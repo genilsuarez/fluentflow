@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { Check, X, ArrowRight } from 'lucide-react';
+import { Check, X, ArrowRight , RotateCcw } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { conditionalShuffle } from '../../utils/randomUtils';
 import '../../styles/components/input-exercise-base.css';
@@ -12,7 +12,7 @@ import ExerciseResultScreen from '../ui/ExerciseResultScreen';
 import { EditableInput } from '../ui/EditableInput';
 import type { EditableInputHandle } from '../ui/EditableInput';
 import { ContentAdapter } from '../../utils/contentAdapter';
-import { normalizeAnswer } from '../../utils/answerUtils';
+import { matchesAnswer } from '../../utils/answerUtils';
 import type { LearningModule, TransformationData } from '../../types';
 
 interface TransformationComponentProps {
@@ -38,6 +38,7 @@ const TransformationComponent: React.FC<TransformationComponentProps> = ({ modul
     setExerciseResult,
     handleResultContinue,
     resetSession,
+  triggerRestart,
   } = useLearningSession({
     moduleId: module.id,
     moduleName: module.name,
@@ -60,8 +61,7 @@ const TransformationComponent: React.FC<TransformationComponentProps> = ({ modul
   const isCorrectAnswer = useCallback(
     (userAnswer: string): boolean => {
       if (!currentExercise?.correct) return false;
-      const norm = normalizeAnswer(userAnswer);
-      return currentExercise.correct.some(c => normalizeAnswer(c) === norm);
+      return matchesAnswer(userAnswer, currentExercise.correct);
     },
     [currentExercise]
   );
@@ -259,6 +259,14 @@ const TransformationComponent: React.FC<TransformationComponentProps> = ({ modul
           <span className="game-controls__home-icon" aria-hidden="true">
             🏠
           </span>
+        </button>
+
+        <button
+          onClick={triggerRestart}
+          className="game-controls__home-btn"
+          title={t('common.reset')}
+        >
+          <RotateCcw size={16} aria-hidden="true" />
         </button>
 
         {!showResult ? (

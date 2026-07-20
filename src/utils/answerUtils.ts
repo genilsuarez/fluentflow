@@ -6,11 +6,18 @@ const EMPTY_SET_ALIASES = ['-', '0', 'x', 'none', 'ø', 'nothing', 'no article']
  * strip common punctuation (.!?,;:) anywhere for leniency.
  * Also normalizes digit–letter boundaries ("7am" → "7 am") so minor
  * formatting differences in times/units don't penalize the user.
+ * Normalizes apostrophe variants (curly quotes, backtick) to straight ASCII.
+ * Expands the most common missing-apostrophe contractions (don't, doesn't,
+ * didn't, isn't, can't, won't) so typing without apostrophe still matches.
  * Maps common keyboard-friendly aliases to ∅ for article exercises.
  */
 export function normalizeAnswer(s: string): string {
   let result = s
     .toLowerCase()
+    // Normalize all apostrophe-like characters to straight ASCII apostrophe
+    .replace(/['\u2018\u2019\u02BC`]/g, "'")
+    // Expand missing apostrophes only in the most common n't contractions
+    .replace(/\b(doesn|don|didn|isn|can|won|aren|wasn)t\b/g, "$1't")
     .replace(/[.!?,;:]+/g, ' ')
     .replace(/(\d)([a-z])/g, '$1 $2')
     .replace(/([a-z])(\d)/g, '$1 $2')
@@ -23,6 +30,28 @@ export function normalizeAnswer(s: string): string {
   }
 
   return result;
+}
+
+/**
+ * Strip all apostrophes from a normalized string.
+ * Used as fallback to catch remaining contractions (I'm, we'll, they're, etc.)
+ */
+function stripApostrophes(s: string): string {
+  return s.replace(/'/g, '');
+}
+
+/**
+ * Compare user answer against an array of correct answers.
+ * Two-pass: exact match after normalizeAnswer, then fuzzy match stripping apostrophes.
+ */
+export function matchesAnswer(userAnswer: string, correctArray: string[]): boolean {
+  const norm = normalizeAnswer(userAnswer);
+  if (!norm.length) return false;
+  // Exact match (handles n't contractions already expanded by normalizeAnswer)
+  if (correctArray.some(c => normalizeAnswer(c) === norm)) return true;
+  // Fuzzy: strip remaining apostrophes from both sides (handles I'm, we'll, etc.)
+  const stripped = stripApostrophes(norm);
+  return correctArray.some(c => stripApostrophes(normalizeAnswer(c)) === stripped);
 }
 
 /**

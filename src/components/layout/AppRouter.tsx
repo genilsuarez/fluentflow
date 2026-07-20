@@ -139,6 +139,7 @@ const LearningComponentWrapper: React.FC<LearningComponentWrapperProps> = ({
 export const AppRouter: React.FC = () => {
   const currentView = useAppStore(state => state.currentView);
   const currentModule = useAppStore(state => state.currentModule);
+  const restartKey = useAppStore(state => state.restartKey);
   const { language } = useSettingsStore();
   const { t } = useTranslation(language);
 
@@ -177,7 +178,7 @@ export const AppRouter: React.FC = () => {
 
   return (
     <Suspense fallback={<ComponentLoader />}>
-      <LearningComponentWrapper moduleId={moduleId}>
+      <LearningComponentWrapper key={restartKey} moduleId={moduleId}>
         {module => {
           switch (currentView) {
             case 'flashcard':

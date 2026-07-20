@@ -50,6 +50,7 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
   );
 
   const updateSessionScore = useAppStore(state => state.updateSessionScore);
+  const triggerRestart = useAppStore(state => state.triggerRestart);
   const { updateUserScore } = useUserStore();
   const { language, randomizeItems } = useSettingsStore();
   const { returnToMenu } = useMenuNavigation();
@@ -618,6 +619,14 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
           <span className="game-controls__home-icon" aria-hidden="true">
             🏠
           </span>
+        </button>
+
+        <button
+          onClick={triggerRestart}
+          className="game-controls__home-btn"
+          title={t('common.reset')}
+        >
+          <RotateCcw size={16} aria-hidden="true" />
         </button>
 
         {!showResult ? (

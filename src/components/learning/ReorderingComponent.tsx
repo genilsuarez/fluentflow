@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { Check, ArrowRight, RotateCcw, Eye } from 'lucide-react';
+import { Check, ArrowRight, RotateCcw, Eye, Eraser } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { prepareWords, validateReordering, moveWord } from './reorderingUtils';
 import LearningProgressHeader from '../ui/LearningProgressHeader';
@@ -37,6 +37,7 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
     setExerciseResult,
     handleResultContinue,
     resetSession,
+    triggerRestart,
   } = useLearningSession({
     moduleId: module.id,
     moduleName: module.name,
@@ -359,13 +360,7 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
         currentIndex={currentIndex}
         totalItems={exercises.length}
         mode="reordering"
-        helpText={showResult ? t('learning.pressEnterNext') : t('learning.tapToPlace')}
       />
-
-      {/* Instruction */}
-      <div className="reordering__instruction">
-        <p>{t('learning.reorderingInstruction')}</p>
-      </div>
 
       {/* Hint toggle */}
       {currentExercise.hint && (
@@ -392,7 +387,7 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
           aria-dropeffect={!showResult ? 'move' : 'none'}
         >
           {answerWords.length === 0 && !showResult && (
-            <p className="reordering__placeholder">{t('learning.tapToPlace')}</p>
+            <p className="reordering__placeholder">{t('learning.reorderingInstruction')}</p>
           )}
           {answerWords.map((word, index) => (
             <button
@@ -476,6 +471,14 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
           </span>
         </button>
 
+        <button
+          onClick={triggerRestart}
+          className="game-controls__home-btn"
+          title={t('common.reset')}
+        >
+          <RotateCcw size={16} aria-hidden="true" />
+        </button>
+
         {!showResult ? (
           <>
             <button
@@ -483,7 +486,7 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
               className="game-controls__icon-btn"
               title={t('learning.resetExercise')}
             >
-              <RotateCcw className="game-controls__action-icon" />
+              <Eraser className="game-controls__action-icon" />
             </button>
 
             <button

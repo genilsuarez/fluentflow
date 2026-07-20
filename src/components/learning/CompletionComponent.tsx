@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { Check, X, ArrowRight } from 'lucide-react';
+import { Check, X, ArrowRight , RotateCcw } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { conditionalShuffle } from '../../utils/randomUtils';
-import { normalizeAnswer, isTenseError, isParticleError } from '../../utils/answerUtils';
+import { matchesAnswer, isTenseError, isParticleError } from '../../utils/answerUtils';
 import '../../styles/components/completion-component.css';
 import '../../styles/components/editable-input.css';
 // BEM classes applied dynamically via .replace(): 'editable-input--correct' 'editable-input--incorrect' 'editable-input--neutral' 'editable-input--disabled'
@@ -45,6 +45,7 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
     setExerciseResult,
     handleResultContinue,
     resetSession,
+  triggerRestart,
   } = useLearningSession({
     moduleId: module.id,
     moduleName: module.name,
@@ -70,9 +71,7 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
   const checkAnswer = useCallback(() => {
     if (showResult) return;
 
-    const userAnswer = normalizeAnswer(answer);
-    const correctAnswer = normalizeAnswer(currentExercise?.correct || '');
-    const isCorrect = userAnswer === correctAnswer;
+    const isCorrect = matchesAnswer(answer, [currentExercise?.correct || '']);
 
     if (isCorrect) {
       markCorrect();
@@ -174,7 +173,7 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
       // Add input after each part except the last
       if (index < parts.length - 1) {
         const isCorrect =
-          showResult && normalizeAnswer(answer) === normalizeAnswer(currentExercise.correct || '');
+          showResult && matchesAnswer(answer, [currentExercise.correct || '']);
         const isIncorrect = showResult && answer && !isCorrect;
 
         let inputClass = 'completion-component__input';
@@ -224,7 +223,7 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
 
   const hasAnswer = answer.trim().length > 0;
   const isAnswerCorrect =
-    showResult && normalizeAnswer(answer) === normalizeAnswer(currentExercise?.correct || '');
+    showResult && matchesAnswer(answer, [currentExercise?.correct || '']);
 
   return (
     <div className="completion-component__container">
@@ -341,6 +340,14 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
           <span className="game-controls__home-icon" aria-hidden="true">
             🏠
           </span>
+        </button>
+
+        <button
+          onClick={triggerRestart}
+          className="game-controls__home-btn"
+          title={t('common.reset')}
+        >
+          <RotateCcw size={16} aria-hidden="true" />
         </button>
 
         {!showResult ? (
