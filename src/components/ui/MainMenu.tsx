@@ -595,12 +595,8 @@ export const MainMenu: React.FC = () => {
                                 } else {
                                   // Locked level: only show if previous level is expanded
                                   const prevLevel = levels[i - 1];
-                                  const prevKey = prevLevel
-                                    ? `${category}:${prevLevel.level}`
-                                    : '';
-                                  const prevExpanded = prevKey
-                                    ? expandedLevels.has(prevKey)
-                                    : true;
+                                  const prevKey = prevLevel ? `${category}:${prevLevel.level}` : '';
+                                  const prevExpanded = prevKey ? expandedLevels.has(prevKey) : true;
 
                                   if (prevExpanded && hiddenCount === 0) {
                                     // Show only the first locked level (when prev is expanded)
