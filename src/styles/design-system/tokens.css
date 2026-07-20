@@ -176,10 +176,14 @@
   --lp-header-pad-y-compact: 10px;
   --lp-header-pad-x-compact: 12px;
   --lp-navbtn-offset-top: calc((var(--lp-header-height) - var(--lp-navbtn-size)) / 2);
-  --lp-navbtn-offset-top-compact: calc((var(--lp-header-height-compact) - var(--lp-navbtn-size)) / 2);
+  --lp-navbtn-offset-top-compact: calc(
+    (var(--lp-header-height-compact) - var(--lp-navbtn-size)) / 2
+  );
   --lp-navbtn-offset-left: 16px;
   --lp-header-floating-pad-left: calc(var(--lp-navbtn-offset-left) + var(--lp-navbtn-size) + 16px);
-  --lp-header-floating-pad-left-compact: calc(var(--lp-navbtn-offset-left) + var(--lp-navbtn-size) + 6px);
+  --lp-header-floating-pad-left-compact: calc(
+    var(--lp-navbtn-offset-left) + var(--lp-navbtn-size) + 6px
+  );
   --lp-header-title-size: 1.25rem;
   --lp-header-title-weight: 500;
   --lp-header-title-tracking: -0.02em;

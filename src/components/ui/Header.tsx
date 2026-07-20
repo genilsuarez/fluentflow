@@ -155,7 +155,9 @@ export const Header: React.FC<HeaderProps> = () => {
           </button>
           <div className="header-redesigned__brand">
             <FluentFlowLogo size="md" className="header-redesigned__logo" />
-            <h1 className="header-redesigned__title">Fluent<em>Flow</em></h1>
+            <h1 className="header-redesigned__title">
+              Fluent<em>Flow</em>
+            </h1>
           </div>
         </div>
         {/* Center Section: Score Display */}
