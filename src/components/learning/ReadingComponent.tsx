@@ -418,7 +418,9 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                                   className="reading-component__grammar-example-item"
                                 >
                                   {point.examples.length === 1 && (
-                                    <span className="reading-component__grammar-inline-label">Ej:</span>
+                                    <span className="reading-component__grammar-inline-label">
+                                      Ej:
+                                    </span>
                                   )}
                                   {example}
                                 </li>
@@ -440,7 +442,9 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                                   className="reading-component__grammar-mistake-item"
                                 >
                                   {point.commonMistakes.length === 1 && (
-                                    <span className="reading-component__grammar-inline-label">⚠</span>
+                                    <span className="reading-component__grammar-inline-label">
+                                      ⚠
+                                    </span>
                                   )}
                                   {mistake}
                                 </li>
