@@ -1,82 +1,102 @@
 [
   {
-    "word": "pick up",
-    "category": "up"
-  },
-  {
     "word": "wake up",
-    "category": "up"
+    "category": "Daily Routine",
+    "explanation": "Something you do every morning — to stop sleeping"
   },
   {
-    "word": "stand up",
-    "category": "up"
-  },
-  {
-    "word": "look up",
-    "category": "up"
-  },
-  {
-    "word": "give up",
-    "category": "up"
-  },
-  {
-    "word": "sit down",
-    "category": "down"
-  },
-  {
-    "word": "write down",
-    "category": "down"
-  },
-  {
-    "word": "calm down",
-    "category": "down"
-  },
-  {
-    "word": "break down",
-    "category": "down"
-  },
-  {
-    "word": "slow down",
-    "category": "down"
-  },
-  {
-    "word": "turn on",
-    "category": "on"
+    "word": "get up",
+    "category": "Daily Routine",
+    "explanation": "To leave your bed after sleeping"
   },
   {
     "word": "put on",
-    "category": "on"
+    "category": "Daily Routine",
+    "explanation": "To dress yourself — you put on clothes every day"
   },
   {
-    "word": "carry on",
-    "category": "on"
+    "word": "sit down",
+    "category": "Daily Routine",
+    "explanation": "To take a seat — something you do many times a day"
   },
   {
-    "word": "hold on",
-    "category": "on"
+    "word": "turn on",
+    "category": "Daily Routine",
+    "explanation": "To start a device — you turn on the lights, TV, etc."
   },
   {
-    "word": "get on",
-    "category": "on"
+    "word": "give up",
+    "category": "Stopping / Ending",
+    "explanation": "To quit — to stop trying or stop doing something"
   },
   {
     "word": "turn off",
-    "category": "off"
+    "category": "Stopping / Ending",
+    "explanation": "To stop a device — the opposite of turn on"
+  },
+  {
+    "word": "break down",
+    "category": "Stopping / Ending",
+    "explanation": "When a machine stops working — your car broke down"
+  },
+  {
+    "word": "calm down",
+    "category": "Stopping / Ending",
+    "explanation": "To stop being angry or excited — relax!"
+  },
+  {
+    "word": "slow down",
+    "category": "Stopping / Ending",
+    "explanation": "To reduce speed — to go less fast"
+  },
+  {
+    "word": "pick up",
+    "category": "Movement / Direction",
+    "explanation": "To lift something from a surface, or to collect someone"
   },
   {
     "word": "take off",
-    "category": "off"
+    "category": "Movement / Direction",
+    "explanation": "To leave the ground (plane) or to remove (clothes)"
   },
   {
-    "word": "put off",
-    "category": "off"
+    "word": "get on",
+    "category": "Movement / Direction",
+    "explanation": "To enter a bus, train, or plane"
   },
   {
     "word": "go off",
-    "category": "off"
+    "category": "Movement / Direction",
+    "explanation": "To leave a place, or when an alarm sounds"
+  },
+  {
+    "word": "stand up",
+    "category": "Movement / Direction",
+    "explanation": "To rise to your feet from sitting"
+  },
+  {
+    "word": "carry on",
+    "category": "Continuing",
+    "explanation": "To keep doing something — don't stop, carry on!"
+  },
+  {
+    "word": "hold on",
+    "category": "Continuing",
+    "explanation": "To wait a moment — hold on, I'm coming!"
+  },
+  {
+    "word": "look up",
+    "category": "Continuing",
+    "explanation": "To search for information — look it up in the dictionary"
+  },
+  {
+    "word": "write down",
+    "category": "Continuing",
+    "explanation": "To record on paper — write down the homework"
   },
   {
     "word": "show off",
-    "category": "off"
+    "category": "Continuing",
+    "explanation": "To display proudly — showing your skills to impress others"
   }
 ]
