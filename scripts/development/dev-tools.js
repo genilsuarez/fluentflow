@@ -209,8 +209,8 @@ const workflows = {
     name: '🚀 Full Pipeline',
     description: 'Quality + Security + Build + Deploy',
     steps: [
-      { type: 'command', cmd: 'node scripts/git/smart-commit.js --stage-all --auto --allow-empty', desc: 'Pre-build commit (clean working directory)' },
-      { type: 'command', cmd: 'git pull --rebase', desc: 'Sync with remote' },
+      { type: 'command', cmd: 'node scripts/git/smart-commit.js --stage-all --auto --allow-empty', desc: 'Pre-build commit' },
+      { type: 'command', cmd: 'git pull --rebase', desc: 'Sync remote' },
       { type: 'command', cmd: 'npm run format', desc: 'Auto-format' },
       { type: 'command', cmd: 'npm run format:check', desc: 'Format check' },
       // Phase 1: lint + types + security in parallel (all CPU-light)
@@ -223,8 +223,8 @@ const workflows = {
       // Phase 2: tests alone (CPU-heavy, needs full cores)
       { type: 'command', cmd: 'npm test', desc: 'Tests' },
       { type: 'command', cmd: 'npm run validate:content:errors', desc: 'Content validation' },
-      { type: 'command', cmd: 'npx vite build --mode production --config config/vite.config.ts', desc: 'Build application (vite only)' },
-      { type: 'command', cmd: 'node scripts/git/smart-commit.js --stage-all --push --auto --allow-empty', desc: 'Post-build commit & push' },
+      { type: 'command', cmd: 'npx vite build --mode production --config config/vite.config.ts', desc: 'Vite build' },
+      { type: 'command', cmd: 'node scripts/git/smart-commit.js --stage-all --push --auto --allow-empty', desc: 'Commit & push' },
     ]
   },
   fix: {
@@ -395,24 +395,24 @@ async function runWorkflow(workflowKey) {
         }));
       } catch {}
 
-      console.log('\n' + '='.repeat(50));
+      console.log('');
       log('✅ Build exitoso', colors.bright + colors.green);
-      log(`  🔗 https://genilsuarez.github.io/fluentflow/`, colors.cyan);
-      log(`  📝 Commit: ${commitSha}`, colors.white);
-      log(`  ⏱️  ${totalDuration}s`, colors.white);
+      log(`   🔗 https://genilsuarez.github.io/fluentflow/`, colors.cyan);
+      log(`   📝 Commit: ${commitSha}`, colors.white);
+      log(`   ⏱️  ${totalDuration}s`, colors.white);
       if (warnings.length > 0) {
-        log(`  ⚠️  Warnings (${warnings.length}):`, colors.yellow);
-        warnings.forEach(w => log(`     • ${w}`, colors.yellow));
+        log(`   ⚠️  Warnings (${warnings.length}):`, colors.yellow);
+        warnings.forEach(w => log(`      • ${w}`, colors.yellow));
       }
-      console.log('='.repeat(50));
+      console.log('');
     }
   } else {
     if (!quiet) logError(`${workflow.name} failed after ${totalDuration}s`);
 
     if (workflowKey === 'full') {
-      console.log('\n' + '='.repeat(50));
+      console.log('');
       log(`❌ Build falló (${totalDuration}s)`, colors.bright + colors.red);
-      console.log('='.repeat(50));
+      console.log('');
     }
   }
 
