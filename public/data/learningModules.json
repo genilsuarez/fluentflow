@@ -4127,7 +4127,7 @@
   },
   {
     "id": "sorting-phrasal-verbs-particle-a1",
-    "name": "Sort Phrasal Verbs by Particle (up/down/on/off)",
+    "name": "Sort Phrasal Verbs by Meaning",
     "learningMode": "sorting",
     "dataPath": "data/a1/a1-sorting-phrasal-verbs-particle.json",
     "level": [
@@ -4137,7 +4137,7 @@
     "prerequisites": [
       "sorting-simple-idioms-a1"
     ],
-    "description": "Sort phrasal verbs by their particle (up, down, on, off)",
+    "description": "Classify common phrasal verbs into meaning categories: Daily Routine, Stopping, Movement, Continuing",
     "estimatedTime": 3,
     "difficulty": 1
   },
