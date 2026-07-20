@@ -619,7 +619,10 @@ export const MainMenu: React.FC = () => {
                                     const remaining = levelModules.length - defaultVisible;
 
                                     return (
-                                      <div key={level} className={`category-section__level${isLevelPast && !isLevelExpanded ? ' category-section__level--collapsed' : ''}`}>
+                                      <div
+                                        key={level}
+                                        className={`category-section__level${isLevelPast && !isLevelExpanded ? ' category-section__level--collapsed' : ''}`}
+                                      >
                                         <div
                                           className="category-section__level-tag"
                                           aria-label={`Nivel ${label}`}
@@ -642,32 +645,36 @@ export const MainMenu: React.FC = () => {
                                           </button>
                                         )}
                                         {visibleModules.length > 0 && (
-                                        <div className="category-section__grid">
-                                          {visibleModules.map((module, index) => (
-                                            <ModuleCard
-                                              key={module.id}
-                                              module={module}
-                                              onClick={() => handleModuleClick(module)}
-                                              tabIndex={0}
-                                              role="gridcell"
-                                              aria-posinset={index + 1}
-                                              aria-setsize={levelModules.length}
-                                              isNextRecommended={highlightedModuleId === module.id}
-                                              isCurrentModule={currentModuleId === module.id}
-                                              moduleStatus={
-                                                exerciseStatusMap.get(module.id)?.status ?? 'locked'
-                                              }
-                                              missingPrerequisitesCount={
-                                                exerciseStatusMap.get(module.id)?.missingCount ?? 0
-                                              }
-                                              hiddenDependencies={hiddenDepsMap?.get(module.id)}
-                                              progressPercentage={
-                                                exerciseStatusMap.get(module.id)?.progressPct ?? 0
-                                              }
-                                              language={language}
-                                            />
-                                          ))}
-                                        </div>
+                                          <div className="category-section__grid">
+                                            {visibleModules.map((module, index) => (
+                                              <ModuleCard
+                                                key={module.id}
+                                                module={module}
+                                                onClick={() => handleModuleClick(module)}
+                                                tabIndex={0}
+                                                role="gridcell"
+                                                aria-posinset={index + 1}
+                                                aria-setsize={levelModules.length}
+                                                isNextRecommended={
+                                                  highlightedModuleId === module.id
+                                                }
+                                                isCurrentModule={currentModuleId === module.id}
+                                                moduleStatus={
+                                                  exerciseStatusMap.get(module.id)?.status ??
+                                                  'locked'
+                                                }
+                                                missingPrerequisitesCount={
+                                                  exerciseStatusMap.get(module.id)?.missingCount ??
+                                                  0
+                                                }
+                                                hiddenDependencies={hiddenDepsMap?.get(module.id)}
+                                                progressPercentage={
+                                                  exerciseStatusMap.get(module.id)?.progressPct ?? 0
+                                                }
+                                                language={language}
+                                              />
+                                            ))}
+                                          </div>
                                         )}
                                         {hasMore && !(isLevelPast && !isLevelExpanded) && (
                                           <button
