@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { Check, X, ArrowRight , RotateCcw } from 'lucide-react';
+import { Check, X, ArrowRight, RotateCcw } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { conditionalShuffle } from '../../utils/randomUtils';
 import '../../styles/components/input-exercise-base.css';
@@ -38,7 +38,7 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
     setExerciseResult,
     handleResultContinue,
     resetSession,
-  triggerRestart,
+    triggerRestart,
   } = useLearningSession({
     moduleId: module.id,
     moduleName: module.name,
@@ -153,7 +153,7 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
         totalItems={processedExercises.length}
         mode="word-formation"
         helpText={
-        showResult ? t('learning.pressEnterNext') : t('learning.wordFormationInstruction')
+          showResult ? t('learning.pressEnterNext') : t('learning.wordFormationInstruction')
         }
       />
 

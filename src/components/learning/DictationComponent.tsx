@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { Volume2, CheckCircle, XCircle, ArrowRight , RotateCcw } from 'lucide-react';
+import { Volume2, CheckCircle, XCircle, ArrowRight, RotateCcw } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { conditionalShuffle } from '../../utils/randomUtils';
@@ -40,7 +40,7 @@ const DictationComponent: React.FC<DictationComponentProps> = ({ module }) => {
     setExerciseResult,
     handleResultContinue,
     resetSession,
-  triggerRestart,
+    triggerRestart,
   } = useLearningSession({
     moduleId: module.id,
     moduleName: module.name,

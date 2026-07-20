@@ -1,6 +1,6 @@
 import { useAppStore } from '../../stores/appStore';
 import React, { useState, useEffect, useLayoutEffect, useMemo, useCallback, useRef } from 'react';
-import { ChevronLeft, ChevronRight, ChevronDown, ChevronUp , RotateCcw } from 'lucide-react';
+import { ChevronLeft, ChevronRight, ChevronDown, ChevronUp, RotateCcw } from 'lucide-react';
 import { useUserStore } from '../../stores/userStore';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useMenuNavigation } from '../../hooks/useMenuNavigation';
@@ -409,7 +409,9 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                         {point.examples && point.examples.length === 1 ? (
                           <div className="reading-component__grammar-single-line">
                             <span className="reading-component__grammar-inline-label">Ej:</span>
-                            <span className="reading-component__grammar-example-inline">{point.examples[0]}</span>
+                            <span className="reading-component__grammar-example-inline">
+                              {point.examples[0]}
+                            </span>
                           </div>
                         ) : point.examples && point.examples.length > 1 ? (
                           <div className="reading-component__grammar-examples">
@@ -418,15 +420,24 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                             </div>
                             <ul className="reading-component__grammar-examples-list">
                               {point.examples.map((example, exIndex) => (
-                                <li key={exIndex} className="reading-component__grammar-example-item">{example}</li>
+                                <li
+                                  key={exIndex}
+                                  className="reading-component__grammar-example-item"
+                                >
+                                  {example}
+                                </li>
                               ))}
                             </ul>
                           </div>
                         ) : null}
                         {point.commonMistakes && point.commonMistakes.length === 1 ? (
                           <div className="reading-component__grammar-single-line reading-component__grammar-single-line--warn">
-                            <span className="reading-component__grammar-inline-label reading-component__grammar-inline-label--warn">✗</span>
-                            <span className="reading-component__grammar-mistake-inline">{point.commonMistakes[0]}</span>
+                            <span className="reading-component__grammar-inline-label reading-component__grammar-inline-label--warn">
+                              ✗
+                            </span>
+                            <span className="reading-component__grammar-mistake-inline">
+                              {point.commonMistakes[0]}
+                            </span>
                           </div>
                         ) : point.commonMistakes && point.commonMistakes.length > 1 ? (
                           <div className="reading-component__grammar-mistakes">
@@ -435,7 +446,12 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                             </div>
                             <ul className="reading-component__grammar-mistakes-list">
                               {point.commonMistakes.map((mistake, mIndex) => (
-                                <li key={mIndex} className="reading-component__grammar-mistake-item">{mistake}</li>
+                                <li
+                                  key={mIndex}
+                                  className="reading-component__grammar-mistake-item"
+                                >
+                                  {mistake}
+                                </li>
                               ))}
                             </ul>
                           </div>

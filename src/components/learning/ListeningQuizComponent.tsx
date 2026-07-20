@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { CheckCircle, XCircle, Volume2, ArrowRight, Lightbulb , RotateCcw } from 'lucide-react';
+import { CheckCircle, XCircle, Volume2, ArrowRight, Lightbulb, RotateCcw } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { conditionalShuffle } from '../../utils/randomUtils';
@@ -44,7 +44,7 @@ const ListeningQuizComponent: React.FC<ListeningQuizComponentProps> = ({ module 
     setExerciseResult,
     handleResultContinue,
     resetSession,
-  triggerRestart,
+    triggerRestart,
   } = useLearningSession({
     moduleId: module.id,
     moduleName: module.name,
@@ -199,7 +199,7 @@ const ListeningQuizComponent: React.FC<ListeningQuizComponentProps> = ({ module 
         totalItems={processedQuestions.length}
         mode="listening-quiz"
         helpText={
-        showResult ? t('learning.pressEnterNext') : 'Listen and choose the correct answer'
+          showResult ? t('learning.pressEnterNext') : 'Listen and choose the correct answer'
         }
       />
 

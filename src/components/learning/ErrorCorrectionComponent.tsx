@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { Check, X, ArrowRight , RotateCcw } from 'lucide-react';
+import { Check, X, ArrowRight, RotateCcw } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { conditionalShuffle } from '../../utils/randomUtils';
 import '../../styles/components/input-exercise-base.css';
@@ -38,7 +38,7 @@ const ErrorCorrectionComponent: React.FC<ErrorCorrectionComponentProps> = ({ mod
     setExerciseResult,
     handleResultContinue,
     resetSession,
-  triggerRestart,
+    triggerRestart,
   } = useLearningSession({
     moduleId: module.id,
     moduleName: module.name,
@@ -158,7 +158,7 @@ const ErrorCorrectionComponent: React.FC<ErrorCorrectionComponentProps> = ({ mod
         totalItems={processedExercises.length}
         mode="error-correction"
         helpText={
-        showResult ? t('learning.pressEnterNext') : t('learning.errorCorrectionInstruction')
+          showResult ? t('learning.pressEnterNext') : t('learning.errorCorrectionInstruction')
         }
       />
 

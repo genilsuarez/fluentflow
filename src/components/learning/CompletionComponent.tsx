@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { Check, X, ArrowRight , RotateCcw } from 'lucide-react';
+import { Check, X, ArrowRight, RotateCcw } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { conditionalShuffle } from '../../utils/randomUtils';
 import { matchesAnswer, isTenseError, isParticleError } from '../../utils/answerUtils';
@@ -45,7 +45,7 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
     setExerciseResult,
     handleResultContinue,
     resetSession,
-  triggerRestart,
+    triggerRestart,
   } = useLearningSession({
     moduleId: module.id,
     moduleName: module.name,
@@ -172,8 +172,7 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
 
       // Add input after each part except the last
       if (index < parts.length - 1) {
-        const isCorrect =
-          showResult && matchesAnswer(answer, [currentExercise.correct || '']);
+        const isCorrect = showResult && matchesAnswer(answer, [currentExercise.correct || '']);
         const isIncorrect = showResult && answer && !isCorrect;
 
         let inputClass = 'completion-component__input';
@@ -222,8 +221,7 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
   };
 
   const hasAnswer = answer.trim().length > 0;
-  const isAnswerCorrect =
-    showResult && matchesAnswer(answer, [currentExercise?.correct || '']);
+  const isAnswerCorrect = showResult && matchesAnswer(answer, [currentExercise?.correct || '']);
 
   return (
     <div className="completion-component__container">

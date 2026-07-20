@@ -29,7 +29,7 @@ const FlashcardComponent: React.FC<FlashcardComponentProps> = ({ module }) => {
     setExerciseResult,
     handleResultContinue,
     resetSession,
-  triggerRestart,
+    triggerRestart,
   } = useLearningSession({
     moduleId: module.id,
     moduleName: module.name,
