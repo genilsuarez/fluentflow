@@ -206,15 +206,21 @@ const DashboardTab: React.FC<DashboardTabProps> = ({
         ) : (
           <div className="my-progress__weekly-bars">
             {(() => {
-              const recent = progressData.slice(-3);
+              // Always show today + 2 previous days with activity
+              const today = progressData[progressData.length - 1];
+              const previous = progressData.slice(0, -1).filter(d => d.totalScore > 0).slice(-2);
+              const recent = [...previous, today];
               const maxPts = Math.max(...recent.map(d => d.totalScore || 0), 1);
               return recent.map((day, index) => {
-                const date = new Date(day.date);
+                // Parse YYYY-MM-DD as local date (avoid UTC offset bug)
+                const [y, m, d] = day.date.split('-').map(Number);
+                const date = new Date(y, m - 1, d);
                 const dayName = date.toLocaleDateString(language, { weekday: 'short' });
                 const pts = day.totalScore || 0;
                 const pct = Math.max((pts / maxPts) * 100, pts > 0 ? 8 : 0);
+                const isToday = index === recent.length - 1;
                 return (
-                  <div key={index} className="my-progress__weekly-day">
+                  <div key={index} className={`my-progress__weekly-day${isToday ? ' my-progress__weekly-day--today' : ''}`}>
                     <div className="my-progress__weekly-bar">
                       <div
                         className="my-progress__weekly-fill"

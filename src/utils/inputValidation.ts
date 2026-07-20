@@ -21,15 +21,15 @@ const validateMode = (
 };
 
 const DEFAULTS = {
-  flashcardMode: { wordCount: 10 },
-  quizMode: { questionCount: 10 },
-  completionMode: { itemCount: 10 },
+  flashcardMode: { wordCount: 8 },
+  quizMode: { questionCount: 8 },
+  completionMode: { itemCount: 8 },
   sortingMode: { wordCount: 5, categoryCount: 3 },
-  matchingMode: { wordCount: 6 },
-  reorderingMode: { itemCount: 10 },
-  transformationMode: { itemCount: 10 },
-  wordFormationMode: { itemCount: 10 },
-  errorCorrectionMode: { itemCount: 10 },
+  matchingMode: { wordCount: 5 },
+  reorderingMode: { itemCount: 8 },
+  transformationMode: { itemCount: 8 },
+  wordFormationMode: { itemCount: 8 },
+  errorCorrectionMode: { itemCount: 8 },
 };
 
 /**

@@ -16,8 +16,7 @@ export const ScoreDisplay: React.FC = () => {
   const { stats } = useProgression();
 
   const isInGame = currentView !== 'menu';
-  const { completedModules, totalModules, completionPercentage } = stats;
-  const progressWidth = totalModules > 0 ? (completedModules / totalModules) * 100 : 0;
+  const { completedModules, totalModules } = stats;
   const totalScore = getTotalScore();
 
   return (
@@ -85,26 +84,11 @@ export const ScoreDisplay: React.FC = () => {
               </span>
             </div>
 
-            {/* Module completion progress */}
+            {/* Module completion count */}
             <div className="lp-header-stats__divider" aria-hidden="true" />
-            <div className="lp-header-stats__progress">
-              <span className="lp-header-stats__progress-label">
-                {completedModules}/{totalModules}
-              </span>
-              <div
-                className="lp-header-stats__progress-bar"
-                role="progressbar"
-                aria-valuenow={completionPercentage}
-                aria-valuemin={0}
-                aria-valuemax={100}
-                aria-label={`${completionPercentage}% exercises completed, ${completedModules} of ${totalModules}`}
-              >
-                <div
-                  className="lp-header-stats__progress-fill"
-                  style={{ '--progress-width': `${progressWidth}%` } as React.CSSProperties}
-                />
-              </div>
-            </div>
+            <span className="lp-header-stats__progress-label">
+              {completedModules}/{totalModules}
+            </span>
           </div>
         )}
       </div>

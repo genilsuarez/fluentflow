@@ -125,35 +125,12 @@
   align-items: center;
 }
 
-.lp-header-stats__progress {
-  display: flex;
-  align-items: center;
-  gap: 0.375rem;
-  line-height: 1;
-}
-
 .lp-header-stats__progress-label {
   font-size: var(--lp-score-value-size);
   font-weight: var(--lp-score-value-weight);
   color: var(--lp-score-value-color);
   line-height: 1;
   white-space: nowrap;
-}
-
-.lp-header-stats__progress-bar {
-  width: 50px;
-  height: var(--lp-progress-height);
-  background-color: var(--lp-score-border);
-  border-radius: var(--lp-score-radius);
-  overflow: hidden;
-}
-
-.lp-header-stats__progress-fill {
-  height: 100%;
-  width: var(--progress-width, 0%);
-  background-color: var(--lp-score-success-color);
-  border-radius: var(--lp-score-radius);
-  transition: width 0.3s ease-in-out;
 }
 
 /* === RESPONSIVE BREAKPOINTS (Desktop-First) === */
@@ -185,10 +162,6 @@
 
   .lp-header-stats__accuracy {
     min-width: 35px;
-  }
-
-  .lp-header-stats__progress-bar {
-    width: 40px;
   }
 }
 
@@ -240,15 +213,6 @@
     margin: 0 0.25rem;
   }
 
-  .lp-header-stats__progress {
-    gap: 0.25rem;
-  }
-
-  .lp-header-stats__progress-bar {
-    width: 28px;
-    height: var(--lp-progress-height-compact);
-  }
-
   .lp-header-stats__session,
   .lp-header-stats__global,
   .lp-header-stats__main {
@@ -258,7 +222,7 @@
 
 /* MOBILE SMALL: ≤360px - Hide progress */
 @media (max-width: 360px) {
-  .lp-header-stats__progress {
+  .lp-header-stats__progress-label {
     display: none;
   }
 
@@ -306,19 +270,9 @@
 }
 
 /* === ACCESSIBILITY === */
-@media (prefers-reduced-motion: reduce) {
-  .lp-header-stats__progress-fill {
-    transition: none;
-  }
-}
-
 @media (prefers-contrast: high) {
   .lp-header-stats__container {
     border-width: 2px;
     border-color: var(--lp-score-value-color);
-  }
-
-  .lp-header-stats__progress-fill {
-    background-color: var(--lp-score-value-color);
   }
 }

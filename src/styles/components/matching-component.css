@@ -443,9 +443,9 @@ html.dark .matching-component__column {
 }
 
 html.dark .matching-component__column-header {
-  background-color: rgba(59, 130, 246, 0.3);
-  color: #ffffff;
-  font-weight: 700;
+  background-color: rgba(59, 130, 246, 0.12);
+  color: #b0c4de;
+  font-weight: 600;
   letter-spacing: 0.02em;
 }
 
@@ -476,40 +476,46 @@ html.dark
 
 /* Dark mode states */
 html.dark .matching-component__item--selected {
-  background: rgba(59, 130, 246, 0.18) !important;
-  color: #93c5fd !important;
-  border: 2px solid rgba(96, 165, 250, 0.6) !important;
-  box-shadow: 0 0 0 1px rgba(96, 165, 250, 0.15) !important;
+  background: rgba(59, 130, 246, 0.1) !important;
+  color: #93b8e0 !important;
+  border: 1.5px solid rgba(96, 165, 250, 0.35) !important;
+  box-shadow: none !important;
   transform: none !important;
 }
 
 html.dark .matching-component__item--selected .matching-component__item-letter {
-  background: rgba(59, 130, 246, 0.3) !important;
-  color: #93c5fd !important;
-  border: 1px solid rgba(96, 165, 250, 0.5) !important;
+  background: rgba(59, 130, 246, 0.15) !important;
+  color: #93b8e0 !important;
+  border: 1px solid rgba(96, 165, 250, 0.3) !important;
   box-shadow: none !important;
 }
 
 html.dark .matching-component__item--selected .matching-component__item-text {
-  color: #e2e8f0 !important;
+  color: #d1dce8 !important;
   font-weight: 600 !important;
   text-shadow: none !important;
 }
 
 html.dark .matching-component__item--matched {
-  background: #0f172a !important;
-  color: #38bdf8 !important;
-  border-color: #0ea5e9 !important;
+  background: #1e293b !important;
+  color: #94d0e8 !important;
+  border-color: rgba(56, 189, 248, 0.3) !important;
 }
 
 html.dark .matching-component__item--matched .matching-component__item-letter {
-  background-color: #0ea5e9;
-  color: #ffffff;
-  border-color: #0ea5e9;
+  background-color: rgba(14, 165, 233, 0.2);
+  color: #94d0e8;
+  border-color: rgba(56, 189, 248, 0.35);
 }
 
 html.dark .matching-component__item--matched .matching-component__item-text {
-  color: var(--gray-200, #e8e0d4);
+  color: #cbd5e1;
+}
+
+html.dark .matching-component__match-number {
+  background-color: rgba(59, 130, 246, 0.25);
+  color: #93b8e0;
+  border: 1px solid rgba(96, 165, 250, 0.3);
 }
 
 html.dark .matching-component__item--matched-inactive {
@@ -523,56 +529,56 @@ html.dark .matching-component__item--matched-inactive .matching-component__item-
 }
 
 html.dark .matching-component__item--unmatched {
-  background-color: #92400e;
-  border-color: #f59e0b;
-  color: #fef3c7;
+  background-color: rgba(146, 64, 14, 0.15);
+  border-color: rgba(245, 158, 11, 0.3);
+  color: #d4b078;
 }
 
 html.dark .matching-component__item--unmatched .matching-component__item-letter {
-  background-color: #78350f;
-  color: #fef3c7;
-  border-color: #f59e0b;
+  background-color: rgba(120, 53, 15, 0.2);
+  color: #d4b078;
+  border-color: rgba(245, 158, 11, 0.3);
 }
 
 html.dark .matching-component__item--unmatched .matching-component__item-text {
-  color: #fef3c7;
+  color: #c8b89a;
 }
 
 html.dark .matching-component__item--correct {
-  background-color: rgba(39, 134, 90, 0.08) !important;
-  border-color: rgba(39, 134, 90, 0.3) !important;
-  color: #6ee7b7 !important;
+  background-color: rgba(39, 134, 90, 0.06) !important;
+  border-color: rgba(134, 199, 165, 0.25) !important;
+  color: #a7d8be !important;
   box-shadow: none !important;
   opacity: 1 !important;
 }
 
 html.dark .matching-component__item--correct .matching-component__item-letter {
-  background-color: rgba(39, 134, 90, 0.2) !important;
-  color: #6ee7b7 !important;
-  border: 1px solid rgba(39, 134, 90, 0.4) !important;
+  background-color: rgba(39, 134, 90, 0.12) !important;
+  color: #86c4a5 !important;
+  border: 1px solid rgba(134, 199, 165, 0.25) !important;
 }
 
 html.dark .matching-component__item--correct .matching-component__item-text,
 html.dark .matching-component__item--correct .matching-component__item-text * {
-  color: #e2e8f0 !important;
+  color: #b8c9c0 !important;
   font-weight: 600 !important;
 }
 
 html.dark .matching-component__item--incorrect {
-  background-color: rgba(192, 57, 43, 0.06) !important;
-  border-color: rgba(192, 57, 43, 0.3) !important;
-  color: #fca5a5 !important;
+  background-color: rgba(192, 57, 43, 0.05) !important;
+  border-color: rgba(200, 140, 130, 0.2) !important;
+  color: #d4a8a3 !important;
 }
 
 html.dark .matching-component__item--incorrect .matching-component__item-letter {
-  background-color: rgba(192, 57, 43, 0.15) !important;
-  color: #fca5a5 !important;
-  border: 1px solid rgba(192, 57, 43, 0.4) !important;
+  background-color: rgba(192, 57, 43, 0.08) !important;
+  color: #c9948e !important;
+  border: 1px solid rgba(200, 140, 130, 0.2) !important;
 }
 
 html.dark .matching-component__item--incorrect .matching-component__item-text,
 html.dark .matching-component__item--incorrect .matching-component__item-text * {
-  color: #fecaca !important;
+  color: #c4b5b3 !important;
   font-weight: 600 !important;
 }
 
@@ -599,11 +605,11 @@ html.dark .matching-component__item--incorrect .matching-component__info-button 
 }
 
 html.dark .matching-component__item--correct .matching-component__info-icon {
-  color: #6ee7b7;
+  color: #86c4a5;
 }
 
 html.dark .matching-component__item--incorrect .matching-component__info-icon {
-  color: #fca5a5;
+  color: #c9948e;
 }
 
 /* === MOBILE OPTIMIZATIONS === */
@@ -748,9 +754,9 @@ html body .matching-component .matching-component__item--correct {
 }
 
 html.dark body .matching-component .matching-component__item--correct {
-  background-color: rgba(39, 134, 90, 0.08) !important;
-  border-color: rgba(39, 134, 90, 0.3) !important;
-  color: #6ee7b7 !important;
+  background-color: rgba(39, 134, 90, 0.06) !important;
+  border-color: rgba(134, 199, 165, 0.25) !important;
+  color: #a7d8be !important;
   box-shadow: none !important;
   font-weight: 600 !important;
 }
@@ -766,9 +772,9 @@ html body .matching-component .matching-component__item--incorrect {
 }
 
 html.dark body .matching-component .matching-component__item--incorrect {
-  background-color: rgba(192, 57, 43, 0.06) !important;
-  border-color: rgba(192, 57, 43, 0.3) !important;
-  color: #fca5a5 !important;
+  background-color: rgba(192, 57, 43, 0.05) !important;
+  border-color: rgba(200, 140, 130, 0.2) !important;
+  color: #d4a8a3 !important;
   box-shadow: none !important;
   font-weight: 600 !important;
 }

@@ -37,6 +37,22 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
 
   const nextRecommended = progression.getNextRecommendedModule();
 
+  // Enter key activates the next recommended module
+  React.useEffect(() => {
+    if (!nextRecommended) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Skip if user is typing in a search input or other editable field
+      const tag = (e.target as HTMLElement)?.tagName;
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || (e.target as HTMLElement)?.isContentEditable) return;
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        onModuleSelect(nextRecommended);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [nextRecommended, onModuleSelect]);
+
   // Get completed modules from store
   const { completedModules } = useProgressStore();
   const completedModulesCount = Object.keys(completedModules || {}).length;

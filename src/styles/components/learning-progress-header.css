@@ -34,13 +34,15 @@
   justify-content: center;
   min-width: 4rem;
   padding: var(--padding-sm, 0.5rem) var(--padding-lg, 1.5rem);
+  font-family: var(--lp-score-font-family);
   font-size: 0.875rem;
   font-weight: 600;
   text-align: center;
-  background-color: var(--theme-bg-subtle, #f9fafb);
-  color: var(--theme-text-secondary, #6b7280);
-  border-radius: var(--lp-radius-full);
-  border: 1px solid var(--theme-border-soft, #f3f4f6);
+  background-color: var(--lp-score-bg);
+  color: var(--lp-score-value-color);
+  border-radius: var(--lp-score-radius);
+  border: var(--lp-score-border-width) solid var(--lp-score-border);
+  box-shadow: var(--lp-score-shadow);
   flex-shrink: 0;
 }
 
@@ -183,12 +185,6 @@
 /* === DARK MODE === */
 html.dark .learning-progress-header__title {
   color: var(--theme-text-primary, #ffffff);
-}
-
-html.dark .learning-progress-header__counter {
-  background-color: var(--theme-bg-subtle, #374151);
-  border-color: var(--theme-border-soft, #4b5563);
-  color: var(--theme-text-secondary, #d1d5db);
 }
 
 html.dark .learning-progress-header__progress-container {

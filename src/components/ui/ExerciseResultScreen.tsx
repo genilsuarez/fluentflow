@@ -27,6 +27,25 @@ const ExerciseResultScreen: React.FC<ExerciseResultScreenProps> = ({
 }) => {
   const passed = result.accuracy >= PASS_THRESHOLD;
 
+  // Enter key triggers the primary action (Continue if passed, Retry if failed)
+  // Uses capture phase + stopImmediatePropagation to take priority over
+  // parent component keydown listeners that remain active.
+  React.useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        if (passed) {
+          onContinue();
+        } else {
+          onRetry();
+        }
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown, true);
+    return () => window.removeEventListener('keydown', handleKeyDown, true);
+  }, [passed, onContinue, onRetry]);
+
   const getIcon = () => {
     if (result.accuracy >= 90) return <Trophy className="exercise-result__icon-svg" />;
     if (result.accuracy >= PASS_THRESHOLD) return <Target className="exercise-result__icon-svg" />;

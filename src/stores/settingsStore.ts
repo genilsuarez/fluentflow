@@ -86,15 +86,15 @@ export const useSettingsStore = create<SettingsState>()(
       categories: [],
       learningModes: [],
       gameSettings: {
-        flashcardMode: { wordCount: 10 },
-        quizMode: { questionCount: 10 },
-        completionMode: { itemCount: 10 },
+        flashcardMode: { wordCount: 8 },
+        quizMode: { questionCount: 8 },
+        completionMode: { itemCount: 8 },
         sortingMode: { wordCount: 5, categoryCount: 3 },
-        matchingMode: { wordCount: 6 },
-        reorderingMode: { itemCount: 10 },
-        transformationMode: { itemCount: 10 },
-        wordFormationMode: { itemCount: 10 },
-        errorCorrectionMode: { itemCount: 10 },
+        matchingMode: { wordCount: 5 },
+        reorderingMode: { itemCount: 8 },
+        transformationMode: { itemCount: 8 },
+        wordFormationMode: { itemCount: 8 },
+        errorCorrectionMode: { itemCount: 8 },
       },
 
       // Offline defaults
@@ -155,7 +155,7 @@ export const useSettingsStore = create<SettingsState>()(
     }),
     {
       name: 'settings-storage',
-      version: 12,
+      version: 13,
       migrate: (persistedState: any, version: number) => {
         // Migration from version 1 to version 2
         if (version < 2) {
@@ -262,6 +262,19 @@ export const useSettingsStore = create<SettingsState>()(
           const gs = persistedState.gameSettings || {};
           if (!gs.wordFormationMode) gs.wordFormationMode = { itemCount: 10 };
           if (!gs.errorCorrectionMode) gs.errorCorrectionMode = { itemCount: 10 };
+          persistedState = { ...persistedState, gameSettings: gs };
+        }
+        // Migration from version 12 to version 13: adjust defaults (10→8, matching 6→5)
+        if (version < 13) {
+          const gs = persistedState.gameSettings || {};
+          if (gs.flashcardMode && gs.flashcardMode.wordCount === 10) gs.flashcardMode.wordCount = 8;
+          if (gs.quizMode && gs.quizMode.questionCount === 10) gs.quizMode.questionCount = 8;
+          if (gs.completionMode && gs.completionMode.itemCount === 10) gs.completionMode.itemCount = 8;
+          if (gs.matchingMode && gs.matchingMode.wordCount === 6) gs.matchingMode.wordCount = 5;
+          if (gs.reorderingMode && gs.reorderingMode.itemCount === 10) gs.reorderingMode.itemCount = 8;
+          if (gs.transformationMode && gs.transformationMode.itemCount === 10) gs.transformationMode.itemCount = 8;
+          if (gs.wordFormationMode && gs.wordFormationMode.itemCount === 10) gs.wordFormationMode.itemCount = 8;
+          if (gs.errorCorrectionMode && gs.errorCorrectionMode.itemCount === 10) gs.errorCorrectionMode.itemCount = 8;
           persistedState = { ...persistedState, gameSettings: gs };
         }
         return persistedState;
