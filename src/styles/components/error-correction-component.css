@@ -13,9 +13,9 @@
   background-color: rgba(245, 158, 11, 0.06);
   border: 1px solid rgba(245, 158, 11, 0.2);
   border-radius: var(--radius-md, 0.375rem);
-  padding: 0.75rem 1rem;
-  margin-bottom: 0.75rem;
-  font-size: 1.05rem;
+  padding: var(--lp-space-sm) var(--lp-space-md);
+  margin-bottom: var(--lp-space-sm);
+  font-size: var(--lp-text-base);
   font-weight: 500;
   color: var(--theme-text-primary, #111827);
   line-height: 1.5;

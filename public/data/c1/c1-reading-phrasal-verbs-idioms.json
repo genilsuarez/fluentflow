@@ -18,13 +18,13 @@
       "id": "academic-discourse",
       "title": "Phrasal Verbs in Academic Writing",
       "type": "theory",
-      "content": "Academic discourse employs phrasal verbs more than many learners realize:\n\nThe researcher set forth a compelling argument that interrogated prevailing assumptions. Her work built on earlier studies but broke away from conventional epistemology. She delved into the lacuna in existing literature and brought to light several overlooked factors. Her conclusions touched upon ethnocentrism in research methodology and called into question the universality of Western frameworks.\n\nAcademic phrasal verbs:\n\n• <Set forth> - present formally\n• <Build on> - use as a foundation\n• <Break away from> - depart from tradition\n• <Delve into> - investigate deeply\n• <Bring to light> - reveal or discover\n• <Touch upon> - briefly address\n• <Call into question> - challenge the validity of"
+      "content": "Academic discourse employs phrasal verbs extensively:\n\nThe researcher <set forth> a compelling argument. Her work <built on> earlier studies but <broke away from> conventional epistemology. She <delved into> the lacuna in existing literature and <brought to light> overlooked factors, <touching upon> ethnocentrism and <calling into question> Western frameworks.\n\nKey academic phrasal verbs:\n• <Set forth> - present formally\n• <Build on> - use as a foundation\n• <Break away from> - depart from tradition\n• <Delve into> - investigate deeply\n• <Bring to light> - reveal or discover\n• <Touch upon> - briefly address\n• <Call into question> - challenge validity"
     },
     {
       "id": "professional-idioms",
       "title": "Idioms in Professional Leadership",
       "type": "theory",
-      "content": "Leadership and management discourse is rich with idioms:\n\n\n• <Raise the bar> - Set higher standards. The new CEO <raised the bar> for corporate accountability.\n• <Weather the storm> - Survive a difficult period. The company weathered the storm of the recession.\n• Move the needle - Make a significant impact. This initiative will <move the needle> on diversity.\n• <Read the room> - Understand the mood of a group. A good leader knows how to <read the room>.\n• <Throw someone under the bus> - Blame someone unfairly. He <threw his colleague under the bus> to save himself.\n• <Have skin in the game> - Have a personal stake in the outcome. Investors with <skin in the game> make better decisions."
+      "content": "Leadership and management discourse is rich with idioms:\n\n• <Raise the bar> - Set higher standards. The new CEO <raised the bar> for accountability.\n• <Weather the storm> - Survive difficulty. The company weathered the recession.\n• Move the needle - Make significant impact. This will <move the needle> on diversity.\n• <Read the room> - Understand group mood. A good leader <reads the room>.\n• <Have skin in the game> - Have a personal stake. Investors with <skin in the game> decide better."
     },
     {
       "id": "examples",
@@ -36,19 +36,19 @@
       "id": "register-analysis",
       "title": "Register and Appropriateness",
       "type": "theory",
-      "content": "Understanding register is crucial at C1:\n\nFormal academic: The findings <call into question> previous assumptions. (appropriate)\nInformal equivalent: The findings <blow holes in> what we thought. (too casual for papers)\n\nFormal professional: We need to <raise the bar> on quality. (appropriate in meetings)\nToo casual: We need to <step up our game>. (acceptable but less professional)\n\nThe key is matching your language to your audience and purpose. In a board meeting, <move the needle> is perfect. In an academic paper, <yield significant results> is more appropriate."
+      "content": "Understanding register is crucial at C1:\n\nFormal academic: The findings <call into question> previous assumptions. (appropriate)\nInformal: The findings <blow holes in> what we thought. (too casual for papers)\n\nProfessional: We need to <raise the bar> on quality. (appropriate in meetings)\nCasual: We need to <step up our game>. (acceptable but less professional)\n\nMatch language to audience. In a board meeting, <move the needle> works. In a paper, <yield significant results> is more appropriate."
     },
     {
       "id": "nuance-collocations",
       "title": "Nuance, Collocation, and Pragmatic Competence",
       "type": "theory",
-      "content": "At the C1 level, mastery of phrasal verbs and idioms extends beyond knowing definitions to understanding <pragmatic competence> — using language appropriately in context.\n\n<Collocational patterns> determine which phrasal verbs sound natural in specific contexts. We <carry out> research but conduct an investigation. We <draw up> a plan but <put together> a proposal. These patterns are not governed by strict rules but by convention.\n\nHedging with idiomatic expressions softens assertions in academic and professional discourse: <It could be argued that...>, <There's a case to be made for...>, <By and large, the evidence suggests...>\n\n• <Register shifting> — moving between formal and informal language — is a hallmark of advanced proficiency. A skilled speaker might use elucidate in a lecture but <spell out> in a team meeting, conveying the same meaning with different levels of formality.\n\nUnderstanding connotation is equally important. Stubborn and determined describe similar behaviour but carry very different evaluative weight. Similarly, thrifty versus stingy, or <assertive> versus <aggressive>."
+      "content": "At C1, mastery extends to <pragmatic competence> — using language appropriately in context.\n\n<Collocational patterns> determine naturalness: we <carry out> research but conduct an investigation; <draw up> a plan but <put together> a proposal.\n\nHedging softens assertions: <It could be argued that...>, <By and large, the evidence suggests...>\n\n<Register shifting> marks advanced proficiency — elucidate in a lecture, <spell out> in a meeting.\n\nConnotation matters: stubborn vs. determined, <assertive> vs. <aggressive> — similar behaviour, different evaluative weight."
     },
     {
       "id": "examples-2",
       "title": "Advanced Idiomatic Usage",
       "type": "examples",
-      "content": "Example 1: ACADEMIC HEDGING - <While the data broadly bears out the hypothesis, it would be premature to draw definitive conclusions. By and large, the findings point to a correlation, but further research is needed to tease out the causal mechanisms at play.>\n\nExample 2: REGISTER CONTRAST - <Board meeting: We need to iron out the remaining contractual issues before we can sign off on the deal. / Academic paper: Several methodological inconsistencies must be resolved before the findings can be considered definitive.>\n\nExample 3: DIPLOMATIC DISAGREEMENT - <I take your point about the timeline, and there's certainly a case to be made for moving quickly. That said, I'd argue that cutting corners at this stage could come back to haunt us down the line.>"
+      "content": "Example 1: HEDGING - <The data broadly bears out the hypothesis, but it would be premature to draw definitive conclusions. By and large, findings point to correlation; further research is needed to tease out causal mechanisms.>\n\nExample 2: REGISTER - <Board: We need to iron out contractual issues before signing off. / Paper: Methodological inconsistencies must be resolved before findings can be considered definitive.>\n\nExample 3: DIPLOMACY - <I take your point about the timeline. That said, cutting corners now could come back to haunt us down the line.>"
     },
     {
       "id": "summary",
@@ -110,12 +110,10 @@
   "grammarPoints": [
     {
       "rule": "Phrasal Verbs vs Latin-Origin Equivalents",
-      "explanation": "In very formal academic writing, phrasal verbs sometimes have more formal single-word equivalents derived from Latin or French. Both are correct, but the choice affects register.",
+      "explanation": "In very formal academic writing, phrasal verbs sometimes have more formal single-word equivalents.",
       "examples": [
         "set forth = propound/present",
-        "delve into = investigate/examine",
-        "bring to light = reveal/uncover",
-        "call into question = challenge/dispute"
+        "delve into = investigate/examine"
       ],
       "commonMistakes": [
         "Always replacing phrasal verbs with formal equivalents — this can make writing sound stilted and unnatural"

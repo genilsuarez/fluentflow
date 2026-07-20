@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { CheckCircle, XCircle, Volume2, ArrowRight } from 'lucide-react';
+import { CheckCircle, XCircle, Volume2, ArrowRight, Lightbulb } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { conditionalShuffle } from '../../utils/randomUtils';
@@ -22,7 +22,16 @@ const ListeningQuizComponent: React.FC<ListeningQuizComponentProps> = ({ module 
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [showResult, setShowResult] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [showHint, setShowHint] = useState(false);
   const optionsRef = useRef<HTMLDivElement>(null);
+
+  // Generate a written hint: first letter of each word + blanks (e.g. "W___ d_ y__ d_?")
+  function generateHint(text: string): string {
+    return text.replace(/[a-zA-Z]+/g, word => {
+      if (word.length <= 2) return word[0] + '_';
+      return word[0] + '_'.repeat(Math.min(word.length - 1, 3));
+    });
+  }
 
   const {
     t,
@@ -120,6 +129,7 @@ const ListeningQuizComponent: React.FC<ListeningQuizComponentProps> = ({ module 
       setCurrentIndex(currentIndex + 1);
       setSelectedAnswer(null);
       setShowResult(false);
+      setShowHint(false);
     } else {
       finishExercise();
     }
@@ -200,19 +210,19 @@ const ListeningQuizComponent: React.FC<ListeningQuizComponentProps> = ({ module 
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
-              gap: '0.75rem',
-              padding: '1rem 0',
+              gap: '0.4rem',
+              padding: '0.5rem 0',
             }}
           >
             <button
               onClick={playQuestion}
               aria-label="Play audio"
               style={{
-                width: '72px',
-                height: '72px',
+                width: '52px',
+                height: '52px',
                 borderRadius: '50%',
-                border: '2.5px solid var(--theme-primary-blue, #3b82f6)',
-                background: 'rgba(59,130,246,0.08)',
+                border: '2px solid var(--lp-primary, #3d6b9f)',
+                background: 'var(--lp-primary-soft, rgba(59,130,246,0.08))',
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
@@ -221,19 +231,39 @@ const ListeningQuizComponent: React.FC<ListeningQuizComponentProps> = ({ module 
                 transform: isPlaying ? 'scale(1.06)' : 'scale(1)',
               }}
             >
-              <Volume2 size={32} color="var(--theme-primary-blue, #3b82f6)" />
+              <Volume2 size={24} color="var(--lp-primary, #3d6b9f)" />
             </button>
             <span
               style={{
-                fontSize: '0.7rem',
+                fontSize: '0.65rem',
                 fontWeight: 700,
-                color: 'var(--theme-text-tertiary)',
+                color: 'var(--lp-muted)',
                 textTransform: 'uppercase',
                 letterSpacing: '0.05em',
               }}
             >
               {isPlaying ? 'Playing…' : 'Tap to listen'}
             </span>
+
+            {/* Hint toggle — only before answering */}
+            {!showResult && (
+              <button
+                onClick={() => setShowHint(h => !h)}
+                aria-label={showHint ? 'Hide tip' : 'Show tip'}
+                className="quiz-component__hint-toggle"
+              >
+                <Lightbulb size={14} />
+                <span>{showHint ? 'Hide tip' : 'Show tip'}</span>
+              </button>
+            )}
+
+            {/* Hint text */}
+            {showHint && !showResult && (
+              <p className="quiz-component__hint-text">
+                {(currentQuestion as QuizData & { hint?: string })?.hint ||
+                  generateHint(currentQuestion?.question || currentQuestion?.sentence || '')}
+              </p>
+            )}
           </div>
         ) : (
           // Fallback: show text if TTS not available
@@ -254,11 +284,11 @@ const ListeningQuizComponent: React.FC<ListeningQuizComponentProps> = ({ module 
         {showResult && (
           <p
             style={{
-              fontSize: '0.85rem',
+              fontSize: '0.8rem',
               fontWeight: 500,
               color: textColor,
               textAlign: 'center',
-              marginTop: '0.5rem',
+              marginTop: '0.25rem',
               opacity: 0.85,
             }}
           >

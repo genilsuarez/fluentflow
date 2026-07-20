@@ -12,49 +12,49 @@
       "id": "intro",
       "title": "The Language of Expertise",
       "type": "introduction",
-      "content": "Mastery of specialized domains demands not merely vocabulary acquisition but deep understanding of conceptual frameworks, methodological conventions, and the subtle distinctions that characterize expert discourse. Whether in law, medicine, engineering, finance, or other technical fields, professionals employ highly specialized registers that simultaneously enable precise communication among experts and create barriers for outsiders. This lesson examines the characteristics of specialized technical language, explores how expertise manifests linguistically, and develops strategies for navigating complex domain-specific texts.\n\nAt the C2 level, you should be capable of comprehending and producing language at near-native proficiency, including the most sophisticated technical and professional contexts."
+      "content": "Mastery of specialized domains demands deep understanding of conceptual frameworks, methodological conventions, and subtle distinctions characterizing expert discourse. Professionals employ highly specialized registers enabling precise communication among experts while creating barriers for outsiders.\n\nThis lesson examines specialized technical language characteristics and develops strategies for navigating complex domain-specific texts. At C2, you should comprehend and produce language at near-native proficiency, including the most sophisticated technical and professional contexts."
     },
     {
       "id": "legal-discourse",
       "title": "Legal Language and Jurisprudential Concepts",
       "type": "theory",
-      "content": "Legal discourse exemplifies specialized language's complexity. Jurisprudence encompasses legal philosophy and theory. Precedent establishes binding authority through prior decisions - stare decisis requires courts to follow established precedents.\n\n<Statutory interpretation> applies various canons of construction: textualism focuses on plain meaning, purposivism considers legislative intent, originalism examines historical understanding. <Common law> evolves through judicial decisions; civil law systems rely on comprehensive codes. <Tort law> addresses civil wrongs; criminal law prosecutes offenses against society.\n\nLegal writing employs <terms of art> with precise meanings: consideration (something of value exchanged in contracts), mens rea (criminal intent), <res judicata> (matter already judged). Legalese - archaic, convoluted legal language - is increasingly criticized, with movements toward <plain language> drafting. Understanding legal reasoning requires grasping <syllogistic logic>, <burden of proof>, <standards of review>, and <rules of evidence>. Scholars seek to <elucidate> complex phenomena through systematic analysis and theoretical frameworks. The <requisite> expertise for advanced research includes both methodological rigour and deep domain knowledge."
+      "content": "Legal discourse exemplifies specialized complexity. Precedent establishes binding authority — stare decisis requires following established decisions.\n\n<Statutory interpretation> applies canons: textualism (plain meaning), purposivism (intent), originalism (historical understanding). <Common law> evolves through decisions; civil law relies on codes. <Tort law> addresses civil wrongs.\n\nLegal <terms of art> carry precise meanings: consideration, mens rea, <res judicata>. Understanding requires grasping <syllogistic logic>, <burden of proof>, and <rules of evidence>. Scholars seek to <elucidate> complex phenomena. The <requisite> expertise includes rigour and domain knowledge."
     },
     {
       "id": "medical-scientific",
       "title": "Medical and Scientific Terminology",
       "type": "theory",
-      "content": "Medical language derives heavily from Latin and Greek, creating systematic nomenclature. <Pathophysiology> examines disease mechanisms. Etiology concerns causation; prognosis predicts outcomes.\n\n<Differential diagnosis> systematically eliminates possibilities. Medical terms follow patterns: prefixes (hyper-/hypo-, endo-/exo-), roots (cardi-, hepat-, neur-), and suffixes (-itis for inflammation, -oma for tumor, -ectomy for removal). Pharmacology encompasses drug mechanisms, interactions, and effects.\n\n<Evidence-based medicine> prioritizes rigorous research over anecdote. Scientific discourse employs passive voice for objectivity, precise quantification, and careful hedging. <Peer review> maintains quality standards.\n\n<Replication> validates findings. Understanding requires familiarity with statistical concepts: p-values, <confidence intervals>, <effect sizes>. <Systematic reviews> and meta-analyses synthesize research.\n\nThe <scientific method> provides epistemological foundation: hypothesis formation, experimental design, data collection, analysis, and conclusion."
+      "content": "Medical language derives from Latin and Greek. <Pathophysiology> examines disease mechanisms. Etiology concerns causation; prognosis predicts outcomes. <Differential diagnosis> systematically eliminates possibilities.\n\nTerms follow patterns: prefixes (hyper-/hypo-), roots (cardi-, neur-), suffixes (-itis, -oma, -ectomy). <Evidence-based medicine> prioritizes rigorous research over anecdote. <Peer review> maintains quality; <replication> validates findings.\n\nStatistical literacy is essential: p-values, <confidence intervals>, <effect sizes>. <Systematic reviews> and meta-analyses synthesize research. The <scientific method> provides foundation: hypothesis, experiment, analysis, conclusion."
     },
     {
       "id": "technical-domains",
       "title": "Engineering, Finance, and Technical Communication",
       "type": "theory",
-      "content": "Engineering disciplines employ domain-specific vocabularies. <Structural engineering> discusses <load-bearing capacity>, stress-strain relationships, and failure modes. <Electrical engineering> involves circuit topology, impedance matching, and <signal processing>.\n\nTechnical specifications demand extreme precision - ambiguity can have catastrophic consequences. Financial discourse includes derivatives (financial instruments deriving value from underlying assets), arbitrage (exploiting price differentials), hedging (risk mitigation), liquidity (ease of asset conversion), and volatility (price fluctuation). <Quantitative finance> applies mathematical models.\n\n<Behavioral finance> examines psychological factors. Understanding requires numerical literacy and conceptual frameworks. Technical writing prioritizes clarity, accuracy, and completeness.\n\nDocumentation must enable replication. <Standards> ensure interoperability. <Protocols> define procedures.\n\nMastery requires not just vocabulary but deep conceptual understanding enabling appropriate application."
+      "content": "<Structural engineering> discusses <load-bearing capacity>, stress-strain relationships, and failure modes. <Electrical engineering> involves circuit topology, impedance, and <signal processing>. Technical specifications demand extreme precision.\n\nFinancial discourse includes derivatives, arbitrage, hedging, liquidity, and volatility. <Quantitative finance> applies mathematical models; <behavioral finance> examines psychological factors.\n\nTechnical writing prioritizes clarity, accuracy, and completeness. <Standards> ensure interoperability; <protocols> define procedures. Mastery requires deep conceptual understanding enabling appropriate application."
     },
     {
       "id": "examples",
       "title": "Expert-Level Technical Discourse",
       "type": "examples",
-      "content": "Example 1: LEGAL ANALYSIS - <The appellate court's decision hinges on novel interpretation of legislative history, effectively narrowing precedential scope while purporting to distinguish rather than overrule.>\n\nExample 2: MEDICAL CASE - <Patient presents with acute dyspnea, orthopnea, and bilateral edema, consistent with decompensated heart failure, likely precipitated by medication non-compliance.>\n\nExample 3: FINANCIAL ANALYSIS - <The portfolio's Sharpe ratio deteriorated significantly. Rebalancing toward less correlated assets could mitigate downside exposure while preserving upside participation.>"
+      "content": "Example 1: LEGAL - <The appellate court's decision hinges on novel interpretation of legislative history, narrowing precedential scope while purporting to distinguish rather than overrule.>\n\nExample 2: MEDICAL - <Patient presents with acute dyspnea, orthopnea, and bilateral edema — consistent with decompensated heart failure, likely precipitated by medication non-compliance.>\n\nExample 3: FINANCIAL - <The portfolio's Sharpe ratio deteriorated significantly. Rebalancing toward less correlated assets could mitigate downside exposure while preserving upside participation.>"
     },
     {
       "id": "diplomatic-political",
       "title": "Diplomatic Language and Political Discourse",
       "type": "theory",
-      "content": "<Diplomatic language> represents perhaps the most carefully calibrated register in English, where every word carries weight and ambiguity is often intentional rather than accidental.\n\nKey features of diplomatic discourse:\n\n• <Constructive ambiguity> — deliberately vague language that allows multiple interpretations, enabling parties to agree on text while maintaining different positions\n• <Hedged commitments> — phrases like <shall endeavour to> or <will give due consideration to> that signal intention without binding obligation\n• <Face-saving language> — formulations that allow parties to change position without appearing to concede defeat\n\nPolitical discourse employs distinct rhetorical strategies:\n\n• <Framing> — presenting issues in ways that favour particular interpretations\n• <Dog-whistle politics> — language that carries one meaning for the general public and another for a specific audience\n• <Euphemism> — substituting mild expressions for harsh realities: <collateral damage> for civilian casualties, <downsizing> for mass layoffs\n• <Weasel words> — qualifiers that hollow out statements: <some people say>, <it has been suggested that>\n\nCritical analysis of political language requires identifying these strategies and evaluating the gap between rhetoric and substance."
+      "content": "<Diplomatic language> is the most carefully calibrated register — every word carries weight, ambiguity often intentional.\n\n• <Constructive ambiguity> — vague language enabling multiple interpretations\n• <Hedged commitments> — <shall endeavour to> signals intention without obligation\n• <Face-saving language> — allows position changes without conceding\n\nPolitical strategies:\n\n• <Framing> — presenting issues to favour interpretations\n• <Dog-whistle politics> — dual-meaning language\n• <Euphemism> — <collateral damage>, <downsizing>\n• <Weasel words> — <some people say>, <it has been suggested>"
     },
     {
       "id": "examples-2",
       "title": "Expert Discourse Across Domains",
       "type": "examples",
-      "content": "Example 1: LEGAL PRECISION - <The defendant's liability is contingent upon establishing that a duty of care existed, that said duty was breached, and that the breach was the proximate cause of the plaintiff's demonstrable losses — a tripartite test that must be satisfied on the balance of probabilities.>\n\nExample 2: DIPLOMATIC COMMUNIQUÉ - <The parties acknowledged the complexity of the situation and reaffirmed their commitment to pursuing a comprehensive resolution through sustained dialogue, while recognizing that significant divergences remain on several substantive issues.>\n\nExample 3: SCIENTIFIC ABSTRACT - <Our findings demonstrate a statistically significant inverse correlation between ambient particulate matter concentration and pulmonary function indices, suggesting that chronic exposure to fine particulate pollution may constitute an independent risk factor for respiratory morbidity in urban populations.>"
+      "content": "Example 1: LEGAL - <Liability is contingent upon establishing duty of care, breach, and proximate cause of demonstrable losses — a tripartite test satisfied on the balance of probabilities.>\n\nExample 2: DIPLOMATIC - <The parties reaffirmed commitment to comprehensive resolution through sustained dialogue, while recognizing significant divergences on substantive issues.>\n\nExample 3: SCIENTIFIC - <Findings demonstrate statistically significant inverse correlation between particulate matter concentration and pulmonary function, suggesting chronic exposure constitutes an independent risk factor for respiratory morbidity.>"
     },
     {
       "id": "summary",
       "title": "Mastering Specialized Discourse",
       "type": "summary",
-      "content": "True mastery of specialized domains transcends vocabulary memorization - it requires internalization of conceptual frameworks, methodological conventions, and the subtle distinctions that characterize expert thinking. Each field has evolved its specialized language to enable precise communication about complex phenomena. While this creates barriers for outsiders, it facilitates efficient, accurate exchange among experts.\n\nAs you engage with specialized texts, focus not merely on individual terms but on how concepts relate, how arguments are constructed, and how evidence is marshaled. Recognize that expertise develops gradually through sustained engagement with domain-specific materials and practices. Read widely within your field, attend to how experts communicate, and practice articulating complex ideas with precision.\n\nRemember that even at C2 proficiency, specialized domains may require additional study - native speakers also must learn technical vocabularies. The key is developing strategies for navigating unfamiliar specialized discourse and building domain knowledge systematically."
+      "content": "Mastery of specialized domains transcends vocabulary — it requires internalization of conceptual frameworks and the subtle distinctions characterizing expert thinking. Each field evolved specialized language to enable precise communication about complex phenomena.\n\nFocus not on individual terms but on how concepts relate, how arguments are constructed, and how evidence is marshaled. Read widely within your field, attend to expert communication patterns, and practice articulating complex ideas with precision. Even at C2 proficiency, specialized domains require additional study — the key is developing strategies for navigating unfamiliar discourse systematically."
     }
   ],
   "keyVocabulary": [
@@ -101,14 +101,10 @@
       "explanation": "Specialized discourse employs dense nominalization and precise technical terminology.",
       "examples": [
         "The implementation of the protocol necessitated reconfiguration of the infrastructure.",
-        "Optimization of the algorithm resulted in significant performance enhancement.",
-        "The correlation between variables warrants further investigation.",
-        "Deviation from specified parameters compromises system integrity."
+        "Optimization of the algorithm resulted in significant performance enhancement."
       ],
       "commonMistakes": [
-        "Imprecise terminology: Using \"related to\" when \"correlated with\" or \"caused by\" is more accurate",
-        "Excessive nominalization obscuring meaning: Balance precision with clarity",
-        "Inappropriate register: Using casual language in formal technical contexts"
+        "Imprecise terminology: Using \"related to\" when \"correlated with\" or \"caused by\" is more accurate"
       ]
     },
     {
@@ -116,14 +112,10 @@
       "explanation": "Expert discourse employs sophisticated hedging to express appropriate epistemic caution.",
       "examples": [
         "The data suggest / indicate / are consistent with the hypothesis.",
-        "It appears that / seems likely that / may be the case that...",
-        "This tentatively supports / provisionally confirms the theory.",
-        "While the evidence is suggestive, definitive conclusions await further research."
+        "It appears that / seems likely that / may be the case that..."
       ],
       "commonMistakes": [
-        "Overconfidence: \"This proves\" when evidence only suggests",
-        "Excessive hedging: \"It might possibly perhaps indicate\" (too weak)",
-        "Inappropriate certainty in preliminary findings"
+        "Overconfidence: \"This proves\" when evidence only suggests"
       ]
     }
   ]

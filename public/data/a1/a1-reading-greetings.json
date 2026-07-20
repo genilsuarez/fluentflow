@@ -48,7 +48,7 @@
       "id": "examples-2",
       "title": "Practice Dialogues",
       "type": "examples",
-      "content": "Example 1: AT A SHOP - <A: Good morning! How can I help you?\nB: Hello! I'm looking for a book, please.\nA: Here you are.\nB: Thank you! Goodbye!>\n\nExample 2: MEETING A FRIEND - <A: Hi, Sarah! How are you?\nB: I'm great, thanks! And you?\nA: I'm fine. See you tomorrow!\nB: Bye! Take care!>\n\nExample 3: ON THE PHONE - <A: Hello, this is Maria.\nB: Hi Maria! Nice to hear from you.\nA: Thanks for calling. Goodbye!>"
+      "content": "Example 1: AT A SHOP - <A: Good morning! How can I help you?\nB: Hello! I'm looking for a book, please.\nA: Here you are.\nB: Thank you! Goodbye!>\n\nExample 2: MEETING A FRIEND - <A: Hi, Sarah! How are you?\nB: I'm great, thanks! And you?\nA: I'm fine. See you tomorrow!>\n\nExample 3: ON THE PHONE - <A: Hello, this is Maria.\nB: Hi Maria! Nice to hear from you.>"
     },
     {
       "id": "summary",
@@ -101,13 +101,10 @@
       "explanation": "Both are correct for introductions. <My name is> is slightly more formal.",
       "examples": [
         "My name is John. (formal)",
-        "I'm John. (casual)",
-        "My name is Maria Garcia. (full name)",
-        "I'm Maria. (first name only)"
+        "I'm John. (casual)"
       ],
       "commonMistakes": [
-        "Saying \"I am name is John\" - Wrong! Say \"My name is John\"",
-        "Forgetting \"to\" in \"Nice to meet you\""
+        "Saying \"I am name is John\" - Wrong! Say \"My name is John\""
       ]
     },
     {
@@ -115,12 +112,10 @@
       "explanation": "Use this question to ask someone's name. <What's> is short for <What is>.",
       "examples": [
         "What's your name? - My name is Carlos.",
-        "What is your name? - I'm Sarah.",
-        "May I ask your name? - I'm David. (more polite)"
+        "What is your name? - I'm Sarah."
       ],
       "commonMistakes": [
-        "Saying \"How is your name?\" - Wrong! Say 'What's your name?'",
-        "Answering with just the name without \"My name is\" or 'I'm'"
+        "Saying \"How is your name?\" - Wrong! Say 'What's your name?'"
       ]
     }
   ]

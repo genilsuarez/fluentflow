@@ -166,9 +166,9 @@
 
 /* CORRECT */
 .matching-component__item--correct {
-  background-color: rgba(16, 185, 129, 0.08) !important;
-  border: 1px solid rgba(16, 185, 129, 0.4) !important;
-  color: #065f46 !important;
+  background-color: var(--lp-success-soft, #e8f6ef) !important;
+  border: 1px solid var(--lp-success, #27865a) !important;
+  color: var(--lp-success-dark, #1b5e3f) !important;
   box-shadow: none !important;
   font-weight: 600 !important;
   transform: none !important;
@@ -178,9 +178,9 @@
 
 /* INCORRECT */
 .matching-component__item--incorrect {
-  background-color: rgba(239, 68, 68, 0.06) !important;
-  border: 1px solid rgba(239, 68, 68, 0.4) !important;
-  color: #991b1b !important;
+  background-color: var(--lp-error-soft, #fdedeb) !important;
+  border: 1px solid var(--lp-error, #c0392b) !important;
+  color: var(--lp-error-dark, #922b21) !important;
   box-shadow: none !important;
   font-weight: 600 !important;
   transform: none !important;
@@ -240,15 +240,15 @@
 }
 
 .matching-component__item--correct .matching-component__item-letter {
-  background-color: rgba(16, 185, 129, 0.2) !important;
-  color: #065f46 !important;
-  border: 1px solid rgba(16, 185, 129, 0.4) !important;
+  background-color: rgba(39, 134, 90, 0.15) !important;
+  color: var(--lp-success-dark, #1b5e3f) !important;
+  border: 1px solid var(--lp-success, #27865a) !important;
 }
 
 .matching-component__item--incorrect .matching-component__item-letter {
-  background-color: rgba(239, 68, 68, 0.15) !important;
-  color: #991b1b !important;
-  border: 1px solid rgba(239, 68, 68, 0.3) !important;
+  background-color: rgba(192, 57, 43, 0.1) !important;
+  color: var(--lp-error-dark, #922b21) !important;
+  border: 1px solid var(--lp-error, #c0392b) !important;
 }
 
 /* === ITEM TEXT === */
@@ -539,17 +539,17 @@ html.dark .matching-component__item--unmatched .matching-component__item-text {
 }
 
 html.dark .matching-component__item--correct {
-  background-color: rgba(16, 185, 129, 0.12) !important;
-  border-color: rgba(16, 185, 129, 0.25) !important;
+  background-color: rgba(39, 134, 90, 0.08) !important;
+  border-color: rgba(39, 134, 90, 0.3) !important;
   color: #6ee7b7 !important;
   box-shadow: none !important;
   opacity: 1 !important;
 }
 
 html.dark .matching-component__item--correct .matching-component__item-letter {
-  background-color: rgba(16, 185, 129, 0.25) !important;
+  background-color: rgba(39, 134, 90, 0.2) !important;
   color: #6ee7b7 !important;
-  border: 1px solid rgba(16, 185, 129, 0.4) !important;
+  border: 1px solid rgba(39, 134, 90, 0.4) !important;
 }
 
 html.dark .matching-component__item--correct .matching-component__item-text,
@@ -559,15 +559,15 @@ html.dark .matching-component__item--correct .matching-component__item-text * {
 }
 
 html.dark .matching-component__item--incorrect {
-  background-color: rgba(239, 68, 68, 0.15) !important;
-  border-color: rgba(239, 68, 68, 0.4) !important;
+  background-color: rgba(192, 57, 43, 0.06) !important;
+  border-color: rgba(192, 57, 43, 0.3) !important;
   color: #fca5a5 !important;
 }
 
 html.dark .matching-component__item--incorrect .matching-component__item-letter {
-  background-color: rgba(239, 68, 68, 0.3) !important;
+  background-color: rgba(192, 57, 43, 0.15) !important;
   color: #fca5a5 !important;
-  border: 1px solid rgba(239, 68, 68, 0.5) !important;
+  border: 1px solid rgba(192, 57, 43, 0.4) !important;
 }
 
 html.dark .matching-component__item--incorrect .matching-component__item-text,
@@ -738,9 +738,9 @@ html.dark .matching-component__item--incorrect .matching-component__info-icon {
 
 /* Correct/incorrect state guarantees — high-specificity overrides only */
 html body .matching-component .matching-component__item--correct {
-  background-color: rgba(16, 185, 129, 0.08) !important;
-  border: 1px solid rgba(16, 185, 129, 0.4) !important;
-  color: #065f46 !important;
+  background-color: var(--lp-success-soft, #e8f6ef) !important;
+  border: 1px solid var(--lp-success, #27865a) !important;
+  color: var(--lp-success-dark, #1b5e3f) !important;
   box-shadow: none !important;
   font-weight: 600 !important;
   transform: none !important;
@@ -748,17 +748,17 @@ html body .matching-component .matching-component__item--correct {
 }
 
 html.dark body .matching-component .matching-component__item--correct {
-  background-color: rgba(16, 185, 129, 0.12) !important;
-  border-color: rgba(16, 185, 129, 0.25) !important;
+  background-color: rgba(39, 134, 90, 0.08) !important;
+  border-color: rgba(39, 134, 90, 0.3) !important;
   color: #6ee7b7 !important;
   box-shadow: none !important;
   font-weight: 600 !important;
 }
 
 html body .matching-component .matching-component__item--incorrect {
-  background-color: rgba(239, 68, 68, 0.06) !important;
-  border: 1px solid rgba(239, 68, 68, 0.4) !important;
-  color: #991b1b !important;
+  background-color: var(--lp-error-soft, #fdedeb) !important;
+  border: 1px solid var(--lp-error, #c0392b) !important;
+  color: var(--lp-error-dark, #922b21) !important;
   box-shadow: none !important;
   font-weight: 600 !important;
   transform: none !important;
@@ -766,8 +766,8 @@ html body .matching-component .matching-component__item--incorrect {
 }
 
 html.dark body .matching-component .matching-component__item--incorrect {
-  background-color: rgba(239, 68, 68, 0.12) !important;
-  border-color: rgba(239, 68, 68, 0.3) !important;
+  background-color: rgba(192, 57, 43, 0.06) !important;
+  border-color: rgba(192, 57, 43, 0.3) !important;
   color: #fca5a5 !important;
   box-shadow: none !important;
   font-weight: 600 !important;

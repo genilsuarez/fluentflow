@@ -24,7 +24,7 @@
       "id": "be-states",
       "title": "Be for States and Feelings",
       "type": "theory",
-      "content": "Use <be> to describe HOW someone feels or what state they are in. No movement is involved.\n\n• <I am tired.> — Estoy cansado\n• <She is happy.> — Ella está feliz\n• <We are ready.> — Estamos listos\n• <It is cold today.> — Hace frío hoy\n• <He is a teacher.> — Él es profesor (identity)\n• <The party is at 8pm.> — La fiesta es a las 8pm (schedule)\n\nRemember: <be> = no movement, just describing a situation."
+      "content": "Use <be> to describe HOW someone feels or what state they are in. No movement involved.\n\n• <I am tired.> — Estoy cansado\n• <She is happy.> — Ella está feliz\n• <We are ready.> — Estamos listos\n• <He is a teacher.> — Él es profesor (identity)\n• <The party is at 8pm.> — La fiesta es a las 8pm (schedule)\n\nRemember: <be> = no movement, just describing a situation."
     },
     {
       "id": "go-movement",
@@ -42,7 +42,7 @@
       "id": "examples",
       "title": "Be vs Go Side by Side",
       "type": "examples",
-      "content": "Example 1: LOCATION vs MOVEMENT\n<I am at the park.> (I'm already there) vs <I go to the park.> (I'm moving there)\n\nExample 2: STATE vs ACTION\n<She is tired.> (describing her state) vs <She goes to bed.> (movement to bed)\n\nExample 3: PRESENCE vs ROUTINE\n<We are at the gym.> (we're there now) vs <We go to the gym every Monday.> (regular movement)\n\nExample 4: COMMON MISTAKE\n❌ <I go at home.> → ✓ <I am at home.> (location, no movement)\n❌ <I am to school every day.> → ✓ <I go to school every day.> (movement)"
+      "content": "Example 1: LOCATION vs MOVEMENT\n<I am at the park.> (already there) vs <I go to the park.> (moving there)\n\nExample 2: STATE vs ACTION\n<She is tired.> (her state) vs <She goes to bed.> (movement)\n\nExample 3: COMMON MISTAKES\n❌ <I go at home.> → ✓ <I am at home.> (location)\n❌ <I am to school every day.> → ✓ <I go to school every day.> (movement)"
     },
     {
       "id": "summary",
@@ -80,30 +80,24 @@
   "grammarPoints": [
     {
       "rule": "Be for Location and State",
-      "explanation": "Use <be> (am/is/are) when there is NO movement. You describe where something IS or how someone FEELS.",
+      "explanation": "Use <be> (am/is/are) when there is NO movement. You describe where something IS or how someone.",
       "examples": [
         "I am at home. (location — already there)",
-        "She is in the kitchen. (location)",
-        "He is tired. (state/feeling)",
-        "We are ready. (state)"
+        "She is in the kitchen. (location)"
       ],
       "commonMistakes": [
-        "\"I am to school\" ❌ → \"I am at school\" ✓ (use 'at' not 'to' with be)",
-        "\"She is to the office\" ❌ → \"She is in the office\" ✓"
+        "\"I am to school\" ❌ → \"I am at school\" ✓ (use 'at' not 'to' with be)"
       ]
     },
     {
       "rule": "Go for Movement and Activities",
-      "explanation": "Use <go> (go/goes) when there IS movement from one place to another, or for activities with go + -ing.",
+      "explanation": "Use <go> (go/goes) when there IS movement from one place to another, or for activities with go +.",
       "examples": [
         "I go to school every day. (movement)",
-        "She goes to the gym. (movement)",
-        "We go shopping on Saturdays. (activity)",
-        "He goes running in the park. (activity)"
+        "She goes to the gym. (movement)"
       ],
       "commonMistakes": [
-        "\"I go at home\" ❌ → \"I go home\" ✓ (no preposition with 'home' after go)",
-        "\"I go to swim\" ❌ → \"I go swimming\" ✓ (use go + -ing for activities)"
+        "\"I go at home\" ❌ → \"I go home\" ✓ (no preposition with 'home' after go)"
       ]
     }
   ]

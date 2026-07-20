@@ -1,82 +1,102 @@
 [
   {
-    "word": "She is a doctor",
-    "category": "a/an — professions"
+    "word": "teacher (job title)",
+    "category": "a/an — professions",
+    "explanation": "Use 'a/an' + profession: She became a teacher."
   },
   {
-    "word": "He wants to be a pilot",
-    "category": "a/an — professions"
+    "word": "pilot (career goal)",
+    "category": "a/an — professions",
+    "explanation": "Use 'a' + profession: He wants to be a pilot."
   },
   {
-    "word": "I'm an engineer",
-    "category": "a/an — professions"
+    "word": "engineer (introduction)",
+    "category": "a/an — professions",
+    "explanation": "Use 'an' + profession starting with vowel sound: I'm an engineer."
   },
   {
-    "word": "She works as a nurse",
-    "category": "a/an — professions"
+    "word": "nurse (job description)",
+    "category": "a/an — professions",
+    "explanation": "Use 'a' + profession: She works as a nurse."
   },
   {
-    "word": "She became a teacher",
-    "category": "a/an — professions"
+    "word": "architect (career)",
+    "category": "a/an — professions",
+    "explanation": "Use 'an' + profession: My sister is an architect."
   },
   {
-    "word": "the longest river",
-    "category": "the — superlatives/ordinals"
+    "word": "longest river (superlative)",
+    "category": "the — superlatives/ordinals",
+    "explanation": "Use 'the' + superlative: The Nile is the longest river."
   },
   {
-    "word": "the first person",
-    "category": "the — superlatives/ordinals"
+    "word": "first person (ordinal)",
+    "category": "the — superlatives/ordinals",
+    "explanation": "Use 'the' + ordinal: He was the first person to arrive."
   },
   {
-    "word": "the most beautiful",
-    "category": "the — superlatives/ordinals"
+    "word": "most beautiful (superlative)",
+    "category": "the — superlatives/ordinals",
+    "explanation": "Use 'the' + most + adjective: It's the most beautiful park."
   },
   {
-    "word": "the best student",
-    "category": "the — superlatives/ordinals"
+    "word": "tallest building (superlative)",
+    "category": "the — superlatives/ordinals",
+    "explanation": "Use 'the' + superlative: That's the tallest building here."
   },
   {
-    "word": "the second floor",
-    "category": "the — superlatives/ordinals"
+    "word": "third chapter (ordinal)",
+    "category": "the — superlatives/ordinals",
+    "explanation": "Use 'the' + ordinal: Read the third chapter."
   },
   {
-    "word": "the United Kingdom",
-    "category": "the — geographic names"
+    "word": "United Kingdom (country)",
+    "category": "the — geographic names",
+    "explanation": "Use 'the' with plural/union country names: the United Kingdom."
   },
   {
-    "word": "the Amazon river",
-    "category": "the — geographic names"
+    "word": "Amazon (river)",
+    "category": "the — geographic names",
+    "explanation": "Use 'the' with rivers: the Amazon river."
   },
   {
-    "word": "the Pacific Ocean",
-    "category": "the — geographic names"
+    "word": "Pacific (ocean)",
+    "category": "the — geographic names",
+    "explanation": "Use 'the' with oceans: the Pacific Ocean."
   },
   {
-    "word": "the Sahara Desert",
-    "category": "the — geographic names"
+    "word": "Sahara (desert)",
+    "category": "the — geographic names",
+    "explanation": "Use 'the' with deserts: the Sahara Desert."
   },
   {
-    "word": "the Rocky Mountains",
-    "category": "the — geographic names"
+    "word": "Alps (mountain range)",
+    "category": "the — geographic names",
+    "explanation": "Use 'the' with mountain ranges: the Alps."
   },
   {
-    "word": "by bus",
-    "category": "∅ — fixed expressions"
+    "word": "by bus (transport)",
+    "category": "∅ — fixed expressions",
+    "explanation": "No article after 'by' + transport: I go by bus."
   },
   {
-    "word": "at work",
-    "category": "∅ — fixed expressions"
+    "word": "at work (location)",
+    "category": "∅ — fixed expressions",
+    "explanation": "No article in 'at work': She's at work now."
   },
   {
-    "word": "at home",
-    "category": "∅ — fixed expressions"
+    "word": "at home (place)",
+    "category": "∅ — fixed expressions",
+    "explanation": "No article in 'at home': Are you at home?"
   },
   {
-    "word": "go to bed",
-    "category": "∅ — fixed expressions"
+    "word": "on foot (manner)",
+    "category": "∅ — fixed expressions",
+    "explanation": "No article in 'on foot': I walk on foot."
   },
   {
-    "word": "play football",
-    "category": "∅ — fixed expressions"
+    "word": "in prison (purpose)",
+    "category": "∅ — fixed expressions",
+    "explanation": "No article when referring to purpose: He is in prison."
   }
 ]

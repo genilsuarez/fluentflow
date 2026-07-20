@@ -30,7 +30,7 @@
       "id": "email-etiquette",
       "title": "Email Etiquette",
       "type": "theory",
-      "content": "<Emails> are one of the most common forms of business communication. A professional email has three main parts: a greeting, a body, and a closing. Start with <Dear Mr./Ms. [Last Name]> for formal emails or <Hello [First Name]> for semi-formal ones.\n\nKeep the body short and clear. Use phrases like I am writing to <inform> you... or <Please find attached...> to sound professional. End with <Kind regards>, <Best regards>, or <Yours sincerely> followed by your full name.\n\nAlways check your email for spelling mistakes before sending it. Remember: never use slang, emojis, or ALL CAPS in professional emails."
+      "content": "<Emails> are very common in business. A professional email has three parts: a greeting, a body, and a closing.\n\nStart with <Dear Mr./Ms. [Last Name]> (formal) or <Hello [First Name]> (semi-formal). Use phrases like <Please find attached...> or I am writing to <inform> you...\n\nEnd with <Kind regards> or <Best regards> + your full name. Always check spelling before sending."
     },
     {
       "id": "examples",
@@ -42,13 +42,13 @@
       "id": "meetings-calls",
       "title": "Meetings and Phone Calls",
       "type": "theory",
-      "content": "Meetings and phone calls are important in business. Here are useful phrases:\n\nStarting a meeting:\n\n• <Let's get started> - Begin the meeting\n• The purpose of this <meeting> is... - Explain why you are meeting\n• <Does everyone have the agenda?> - Check everyone has the plan\n\nPhone calls:\n\n• <Good morning>, this is [name] speaking - Answering professionally\n• <May I speak to...?> - Asking for someone\n• <I'll call you back> - Promise to phone again later\n• <Could you repeat that, please?> - Asking to hear again\n\nExample: <Good morning>, this is Anna speaking. How can I help you?"
+      "content": "Meetings and phone calls are important in business. Here are useful phrases:\n\nStarting a meeting:\n\n• <Let's get started> - Begin the meeting\n• The purpose of this <meeting> is... - Explain why you are meeting\n\nPhone calls:\n\n• <Good morning>, this is [name] speaking - Answering professionally\n• <May I speak to...?> - Asking for someone\n• <I'll call you back> - Promise to phone again later"
     },
     {
       "id": "examples-2",
       "title": "Workplace Dialogues",
       "type": "examples",
-      "content": "Example 1: ASKING FOR HELP - <A: Excuse me, could you help me with this report?\nB: Of course. What do you need?\nA: I'm not sure how to format the table.>\n\nExample 2: SCHEDULING - <A: Are you free on Thursday afternoon?\nB: Let me check my calendar. Yes, 2 PM works for me.\nA: Great, I'll send a meeting invitation.>\n\nExample 3: PHONE CALL - <A: Hello, may I speak to Mr. Johnson?\nB: I'm sorry, he's in a meeting. Can I take a message?\nA: Yes, please ask him to call me back.>"
+      "content": "Example 1: ASKING FOR HELP - <A: Excuse me, could you help me with this report?\nB: Of course. What do you need?>\n\nExample 2: SCHEDULING - <A: Are you free on Thursday afternoon?\nB: Let me check my calendar. Yes, 2 PM works for me.>\n\nExample 3: PHONE CALL - <A: Hello, may I speak to Mr. Johnson?\nB: I'm sorry, he's in a meeting. Can I take a message?>"
     },
     {
       "id": "summary",
@@ -98,17 +98,13 @@
   "grammarPoints": [
     {
       "rule": "Formal vs Informal Greetings",
-      "explanation": "In business, always use formal greetings. Say <Good morning> instead of <Hi> or <Hey>. Use titles (Mr., Ms., Dr.) with last names.",
+      "explanation": "In business, always use formal greetings. Say <Good morning> instead of <Hi> or <Hey>.",
       "examples": [
         "Formal: Good morning, Mr. Smith. How are you today?",
-        "Informal: Hey John! What's up?",
-        "Formal: Dear Ms. Johnson, (in emails)",
-        "Informal: Hi Sarah, (in casual messages)"
+        "Informal: Hey John! What's up?"
       ],
       "commonMistakes": [
-        "Using \"Hey\" in professional emails",
-        "Forgetting to use titles with last names",
-        "Being too casual in first meetings"
+        "Using \"Hey\" in professional emails"
       ]
     },
     {
@@ -116,12 +112,10 @@
       "explanation": "Use <Could you please...> or <Would you mind...> to make polite requests in business settings.",
       "examples": [
         "Could you please send me the report?",
-        "Would you mind helping me with this?",
-        "May I ask you a question?"
+        "Would you mind helping me with this?"
       ],
       "commonMistakes": [
-        "Using \"Give me...\" instead of \"Could you please give me...\"",
-        "Forgetting to say \"please\" and \"thank you\""
+        "Using \"Give me...\" instead of \"Could you please give me...\""
       ]
     }
   ]

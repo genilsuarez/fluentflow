@@ -18,13 +18,13 @@
       "id": "immediate-family",
       "title": "Immediate Family",
       "type": "theory",
-      "content": "Your <immediate family> is the family you live with or are closest to:\n\n• <Mother> (mom) - Your female parent\n• <Father> (dad) - Your male parent\n• <Parents> - Your mother and father together\n• <Sister> - A girl or woman with the same parents as you\n• <Brother> - A boy or man with the same parents as you\n• <Siblings> - Your brothers and sisters\n\nWe say <I have> to talk about family: <I have two brothers> or <I have one sister>. If you don't have siblings, you say <I'm an only child>."
+      "content": "Your <immediate family> is the family you live with:\n\n• <Mother> (mom) - Your female parent\n• <Father> (dad) - Your male parent\n• <Sister> - A girl with the same parents\n• <Brother> - A boy with the same parents\n• <Siblings> - Your brothers and sisters\n\nWe say <I have> to talk about family: <I have two brothers>. If you don't have siblings: <I'm an only child>."
     },
     {
       "id": "extended-family",
       "title": "Extended Family",
       "type": "theory",
-      "content": "Your <extended family> includes people beyond your parents and siblings:\n\n• <Grandparents> - Your parents' parents (<grandmother> and <grandfather>)\n• <Uncle> - Your parent's brother\n• <Aunt> - Your parent's sister\n• <Cousin> - Your uncle's or aunt's child\n• <Nephew> - Your sibling's son\n• <Niece> - Your sibling's daughter\n\nMany families also have <in-laws> (family through marriage): <mother-in-law>, <father-in-law>, <brother-in-law>, <sister-in-law>."
+      "content": "Your <extended family> includes people beyond parents and siblings:\n\n• <Grandparents> - Your parents' parents\n• <Uncle> - Your parent's brother\n• <Aunt> - Your parent's sister\n• <Cousin> - Your uncle's or aunt's child\n• <Nephew> / <Niece> - Your sibling's son or daughter\n\nFamilies also have <in-laws> (family through marriage): <mother-in-law>, <father-in-law>."
     },
     {
       "id": "describing-family",
@@ -36,19 +36,19 @@
       "id": "examples",
       "title": "Talking About Your Family",
       "type": "examples",
-      "content": "Example 1: INTRODUCING FAMILY - <I have a big family. I have two sisters and one brother. My sisters are older than me.>\n\nExample 2: DESCRIBING SOMEONE - <My grandfather is 70 years old. He is tall and has white hair. He is very funny.>\n\nExample 3: ASKING ABOUT FAMILY - <A: Do you have any brothers or sisters?\nB: Yes, I have one brother. He's 18.\nA: What does he do?\nB: He's a university student.>"
+      "content": "Example 1: INTRODUCING FAMILY - <I have a big family. I have two sisters and one brother.>\n\nExample 2: DESCRIBING SOMEONE - <My grandfather is 70 years old. He is tall and has white hair.>\n\nExample 3: ASKING ABOUT FAMILY - <A: Do you have any brothers or sisters?\nB: Yes, I have one brother. He's 18.>"
     },
     {
       "id": "family-activities",
       "title": "Family Activities",
       "type": "theory",
-      "content": "Families do many things together. Common <family activities> include:\n\n• <Have dinner together> - Eat the evening meal as a family\n• <Visit relatives> - Go to see family members\n• <Celebrate holidays> - Enjoy special days like birthdays and Christmas\n• <Go on vacation> - Travel together for fun\n• <Help each other> - Support family members when they need it\n\nExample: On <Sundays>, my family <has lunch together> at my <grandmother's house>. We <talk>, <play games>, and <spend time> together."
+      "content": "Families do many things together:\n\n• <Have dinner together> - Eat as a family\n• <Visit relatives> - Go to see family members\n• <Celebrate holidays> - Enjoy special days like birthdays\n• <Go on vacation> - Travel together for fun\n\nExample: On <Sundays>, my family <has lunch together> at my <grandmother's house>."
     },
     {
       "id": "examples-2",
       "title": "More Conversations",
       "type": "examples",
-      "content": "Example 1: AT A PARTY - <A: Who is that woman over there?\nB: That's my aunt Maria. She's my mother's sister.\nA: And the children with her?\nB: Those are my cousins, Pedro and Ana.>\n\nExample 2: FAMILY PHOTO - <This is a photo of my family. My parents are in the middle. My older brother is on the left, and I'm on the right. My dog is in front of us!>\n\nExample 3: MARITAL STATUS - <A: Are you married?\nB: Yes, I am. My husband's name is Carlos.\nA: Do you have children?\nB: Yes, we have a daughter. She's three years old.>"
+      "content": "Example 1: AT A PARTY - <A: Who is that woman over there?\nB: That's my aunt Maria. She's my mother's sister.>\n\nExample 2: FAMILY PHOTO - <This is a photo of my family. My parents are in the middle. My brother is on the left, and I'm on the right.>\n\nExample 3: MARITAL STATUS - <A: Are you married?\nB: Yes, my husband's name is Carlos. We have a daughter.>"
     },
     {
       "id": "summary",

@@ -1,6 +1,9 @@
 import { logDebug } from '../utils/logger';
 import type { LearningModule } from '../types';
 
+/** Ordered CEFR levels — index determines hierarchy */
+const LEVEL_ORDER = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'] as const;
+
 /**
  * Service for managing module progression and prerequisites
  */
@@ -9,6 +12,8 @@ export class ProgressionService {
   private moduleMap: Map<string, LearningModule> = new Map();
   private completedModules: Set<string> = new Set();
   private _initialized = false;
+  /** Cache: modules grouped by their primary level */
+  private modulesByLevel: Map<string, LearningModule[]> = new Map();
 
   /**
    * Whether the service has been initialized with modules
@@ -29,11 +34,24 @@ export class ProgressionService {
     this.completedModules = new Set(validCompletedIds);
     this._initialized = true;
 
+    // Build level cache for gate checks
+    this.modulesByLevel = new Map();
+    for (const mod of modules) {
+      const primaryLevel = this.getPrimaryLevel(mod);
+      if (!primaryLevel) continue;
+      const list = this.modulesByLevel.get(primaryLevel) ?? [];
+      list.push(mod);
+      this.modulesByLevel.set(primaryLevel, list);
+    }
+
     logDebug(
       'ProgressionService initialized',
       {
         totalModules: modules.length,
         completedModules: completedModuleIds.length,
+        modulesPerLevel: Object.fromEntries(
+          [...this.modulesByLevel.entries()].map(([k, v]) => [k, v.length])
+        ),
       },
       'ProgressionService'
     );
@@ -51,6 +69,13 @@ export class ProgressionService {
       if (this._initialized) {
         logDebug('Module not in current set', { moduleId }, 'ProgressionService');
       }
+      return false;
+    }
+
+    // Level gate: require 100% completion of the previous level before
+    // any module in the next level can unlock. This prevents accessing
+    // A2 while A1 still has incomplete modules, regardless of prerequisites.
+    if (!this.isPreviousLevelComplete(module)) {
       return false;
     }
 
@@ -132,6 +157,34 @@ export class ProgressionService {
     );
 
     return newlyUnlockedModules;
+  }
+
+  /**
+   * Get the primary (first) level of a module
+   */
+  private getPrimaryLevel(module: LearningModule): string | null {
+    if (!module.level) return null;
+    return Array.isArray(module.level) ? module.level[0] : module.level;
+  }
+
+  /**
+   * Level gate: checks whether all modules of the previous CEFR level are completed.
+   * A1 modules have no previous level and always pass this check.
+   */
+  private isPreviousLevelComplete(module: LearningModule): boolean {
+    const primaryLevel = this.getPrimaryLevel(module);
+    if (!primaryLevel) return true;
+
+    const levelIndex = LEVEL_ORDER.indexOf(primaryLevel as (typeof LEVEL_ORDER)[number]);
+    // A1 (index 0) or unknown level — no gate
+    if (levelIndex <= 0) return true;
+
+    const previousLevel = LEVEL_ORDER[levelIndex - 1];
+    const previousLevelModules = this.modulesByLevel.get(previousLevel);
+    if (!previousLevelModules || previousLevelModules.length === 0) return true;
+
+    // All modules of the previous level must be completed
+    return previousLevelModules.every(mod => this.completedModules.has(mod.id));
   }
 
   /**

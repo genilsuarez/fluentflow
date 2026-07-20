@@ -1,102 +1,122 @@
 [
   {
-    "sentence": "Never before ______ I seen such a magnificent performance. (inversion)",
+    "sentence": "Never before ______ I seen such a magnificent performance.",
     "correct": "had",
+    "tip": "Inversión: después de <Never before> el auxiliar va antes del sujeto",
     "explanation": "Después de <Never before>, se usa el orden invertido: <had I seen>."
   },
   {
-    "sentence": "It is essential that he ______ on time. (subjunctive)",
+    "sentence": "It is essential that he ______ on time.",
     "correct": "be",
+    "tip": "Subjuntivo: después de <It is essential that> se usa la forma base del verbo",
     "explanation": "Subjuntivo después de <it is essential that>: forma base <be>, no <is>."
   },
   {
-    "sentence": "______ in the garden, she noticed a rare butterfly. (participle clause)",
+    "sentence": "______ in the garden, she noticed a rare butterfly.",
     "correct": "Walking",
+    "tip": "Cláusula de participio presente: ¿qué hacía mientras notó la mariposa?",
     "explanation": "Cláusula de participio presente: <Walking in the garden> = While she was walking."
   },
   {
-    "sentence": "The data, ______ over five years, revealed significant trends. (participle clause)",
+    "sentence": "The data, ______ over five years, revealed significant trends.",
     "correct": "collected",
+    "tip": "Cláusula de participio pasado: los datos fueron... durante 5 años",
     "explanation": "Cláusula de participio pasado: <collected over five years> = which was collected."
   },
   {
     "sentence": "She managed to ______ through the difficult negotiations successfully.",
     "correct": "pull",
+    "tip": "Phrasal verb: ___ through = salir adelante a pesar de dificultades",
     "explanation": "El phrasal verb <pull through> significa lograr salir adelante a pesar de las dificultades."
   },
   {
     "sentence": "The committee decided to ______ aside the controversial proposal.",
     "correct": "set",
+    "tip": "Phrasal verb: ___ aside = dejar de lado, hacer caso omiso",
     "explanation": "El phrasal verb <set aside> significa dejar algo de lado o hacer caso omiso de ello."
   },
   {
     "sentence": "He ______ up to the challenge and delivered an excellent presentation.",
     "correct": "rose",
+    "tip": "Phrasal verb: ___ up to = superar un desafío (pasado irregular)",
     "explanation": "El phrasal verb <rise up to> significa superar un desafío con éxito."
   },
   {
     "sentence": "The new policy ______ about significant changes in the department.",
     "correct": "brought",
+    "tip": "Phrasal verb: ___ about = causar que algo suceda (pasado irregular)",
     "explanation": "El phrasal verb <bring about> significa causar que algo suceda."
   },
   {
     "sentence": "We need to ______ into account all the variables before deciding.",
     "correct": "take",
+    "tip": "Phrasal verb: ___ into account = tener en cuenta",
     "explanation": "El phrasal verb <take into account> significa tener algo en cuenta."
   },
   {
     "sentence": "She ______ down the offer despite the generous salary.",
     "correct": "turned",
+    "tip": "Phrasal verb: ___ down = rechazar (pasado)",
     "explanation": "El phrasal verb <turn down> significa rechazar o denegar."
   },
   {
     "sentence": "He's burning the candle at both ends. He's ______ himself by working too much.",
     "correct": "exhausting",
+    "tip": "Modismo: quemar la vela por ambos extremos = ¿qué se hace a sí mismo?",
     "explanation": "El modismo <burning the candle at both ends> significa trabajar en exceso y agotarse."
   },
   {
     "sentence": "She hit the nail on the head with her analysis. She was exactly ______.",
     "correct": "right",
+    "tip": "Modismo: 'dar en el clavo' = tener la razón exacta. Ella estaba...",
     "explanation": "El modismo <hit the nail on the head> significa acertar exactamente."
   },
   {
     "sentence": "The new regulations opened a can of worms. They created many new ______.",
     "correct": "problems",
+    "tip": "Modismo: 'abrir una lata de gusanos' = generar muchos...",
     "explanation": "El modismo <open a can of worms> significa crear muchos problemas nuevos."
   },
   {
     "sentence": "He's sitting on the fence about the decision. He's ______.",
     "correct": "undecided",
+    "tip": "Modismo: 'sentarse en la cerca' = no elegir un lado. Está...",
     "explanation": "El modismo <sitting on the fence> significa estar indeciso o mantenerse neutral."
   },
   {
     "sentence": "The amelior______ of living conditions is a priority.",
     "correct": "amelioration",
+    "tip": "Sufijo -ation: convierte <ameliorate> en sustantivo",
     "explanation": "Al añadir <-ation> a <ameliorate> se forma el sustantivo <amelioration> (mejora)."
   },
   {
-    "sentence": "His argument was completely ______logical. (prefix: not logical)",
+    "sentence": "His argument was completely ______logical.",
     "correct": "illogical",
+    "tip": "Prefijo de negación para palabras con 'l': ¿cuál es?",
     "explanation": "El prefijo <il-> antes de palabras que empiezan con 'l' significa 'no': <illogical>."
   },
   {
-    "sentence": "The ______ of the research was questioned by peer reviewers. (valid → noun)",
+    "sentence": "The ______ of the research was questioned by peer reviewers.",
     "correct": "validity",
+    "tip": "Formación: <valid> + sufijo sustantivo (-ity) → ?",
     "explanation": "Al añadir <-ity> a <valid> se forma el sustantivo <validity>."
   },
   {
-    "sentence": "She spoke with great ______ence about the topic. (eloquent → noun)",
+    "sentence": "She spoke with great ______ence about the topic.",
     "correct": "eloquence",
+    "tip": "Formación: <eloquent> → sustantivo cambiando -ent por -ence",
     "explanation": "Cambiar <-ent> por <-ence>: <eloquent> → <eloquence>."
   },
   {
-    "sentence": "The phenomenon, ______ complex, can be explained simply. (transform: 'Although it is complex' → participle)",
+    "sentence": "The phenomenon, ______ complex, can be explained simply.",
     "correct": "though",
+    "tip": "Cláusula reducida: transforma 'Although it is complex' → _____ complex",
     "explanation": "Cláusula reducida: <though complex> = although it is complex."
   },
   {
-    "sentence": "______ had the meeting started than the fire alarm went off. (inversion with 'no sooner')",
+    "sentence": "______ had the meeting started than the fire alarm went off.",
     "correct": "No sooner",
+    "tip": "Inversión: _____ had... than = secuencia inmediata (2 palabras)",
     "explanation": "Estructura invertida: <No sooner had... than> expresa una secuencia inmediata."
   }
 ]

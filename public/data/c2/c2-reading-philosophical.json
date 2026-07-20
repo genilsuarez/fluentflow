@@ -12,49 +12,49 @@
       "id": "intro",
       "title": "The Philosophical Enterprise",
       "type": "introduction",
-      "content": "Philosophy represents humanity's most sustained attempt to grapple with fundamental questions about existence, knowledge, values, reason, mind, and language. Unlike empirical sciences that investigate particular phenomena, philosophy interrogates the conceptual foundations underlying all inquiry. Philosophical discourse demands exceptional linguistic sophistication - the ability to articulate subtle distinctions, construct rigorous arguments, and engage with abstract concepts that resist simple definition.\n\nThis lesson explores major philosophical domains, key concepts and debates, and the distinctive features of philosophical argumentation. Whether you're studying philosophy formally, engaging with theoretical aspects of other disciplines, or simply cultivating intellectual depth, mastering philosophical vocabulary and reasoning patterns represents the pinnacle of linguistic and conceptual sophistication."
+      "content": "Philosophy represents humanity's most sustained attempt to grapple with fundamental questions about existence, knowledge, values, reason, mind, and language. Unlike empirical sciences, philosophy interrogates the conceptual foundations underlying all inquiry — demanding the ability to articulate subtle distinctions, construct rigorous arguments, and engage with abstract concepts that resist simple definition.\n\nThis lesson explores major philosophical domains and the distinctive features of philosophical argumentation. Mastering this vocabulary and these reasoning patterns represents the pinnacle of linguistic and conceptual sophistication."
     },
     {
       "id": "epistemology-metaphysics",
       "title": "Epistemology and Metaphysics",
       "type": "theory",
-      "content": "<Epistemology> examines the nature, sources, and limits of knowledge. <Rationalism> holds that reason is the primary source of knowledge; empiricism privileges sensory experience. Skepticism questions whether knowledge is possible.\n\n<Foundationalism> seeks indubitable foundations for knowledge; coherentism emphasizes mutual support among beliefs. <Justified true belief> traditionally defined knowledge, though Gettier problems revealed inadequacies. <A priori> knowledge is independent of experience; <a posteriori> knowledge derives from experience.\n\n<Metaphysics> investigates reality's fundamental nature. Ontology concerns what exists. <Substance> is that which exists independently.\n\n<Universals> are properties shared by particulars - realism affirms their existence, nominalism denies it. Dualism posits mind and matter as distinct; materialism reduces everything to physical; idealism claims reality is fundamentally mental. <Determinism> holds that all events are causally necessitated; libertarianism (metaphysical, not political) affirms free will. The problem of <vicious circularity> arises when an argument's conclusion is implicitly assumed in its premises. The <inviolability> of certain moral principles — their status as absolute and non-negotiable — remains a central debate in ethical philosophy."
+      "content": "<Epistemology> examines knowledge's nature and limits. <Rationalism> privileges reason; empiricism privileges experience. <Foundationalism> seeks indubitable bases; coherentism stresses mutual support. <Justified true belief> defined knowledge until Gettier problems. <A priori> is experience-independent; <a posteriori> derives from experience.\n\n<Metaphysics> investigates reality. <Universals> are shared properties — realism affirms, nominalism denies. Dualism separates mind/matter; materialism reduces all to physical.\n\n<Determinism> holds events are causally necessitated. <Vicious circularity> arises when conclusions are assumed in premises. The <inviolability> of certain principles remains central."
     },
     {
       "id": "ethics-political",
       "title": "Ethics and Political Philosophy",
       "type": "theory",
-      "content": "Ethics or <moral philosophy> examines right action and good life. Consequentialism judges actions by outcomes - utilitarianism maximizes overall happiness. Deontology emphasizes duties and rules regardless of consequences - Kant's categorical imperative demands universalizable maxims.\n\n<Virtue ethics> focuses on character rather than acts or consequences. Metaethics investigates moral language and concepts. <Moral realism> holds that moral facts exist objectively; <moral relativism> denies universal moral truths; <moral nihilism> rejects moral facts entirely.\n\n<Applied ethics> addresses practical issues: bioethics, business ethics, environmental ethics. <Political philosophy> examines justice, rights, authority, and the state. Liberalism prioritizes individual liberty; communitarianism emphasizes community.\n\nRawls theory of justice' employs the <original position> and <veil of ignorance> to derive principles. <Libertarianism> (political) minimizes state power. These frameworks generate ongoing debates about fundamental values."
+      "content": "Ethics or <moral philosophy> examines right action. Consequentialism judges by outcomes — utilitarianism maximizes happiness. Deontology emphasizes duties; Kant's categorical imperative demands universalizable maxims. <Virtue ethics> focuses on character.\n\n<Moral realism> holds moral facts exist objectively; <moral relativism> denies universal truths; <moral nihilism> rejects moral facts. <Applied ethics> addresses bioethics, business, and environment.\n\n<Political philosophy> examines justice and authority. Rawls employs the <original position> and <veil of ignorance>. <Libertarianism> (political) minimizes state power."
     },
     {
       "id": "logic-language",
       "title": "Logic, Language, and Philosophy of Mind",
       "type": "theory",
-      "content": "Logic studies valid reasoning. <Deductive arguments> guarantee conclusions if premises are true; inductive arguments provide probabilistic support. <Formal logic> uses symbolic systems.\n\nFallacies are common reasoning errors: ad hominem attacks the person, straw man misrepresents positions, <false dilemma> presents limited options artificially. <Philosophy of language> examines meaning, reference, and communication. Descriptivism holds that names refer through descriptions; <direct reference theory> posits unmediated reference.\n\n<Speech act theory> analyzes how language performs actions. Analytic statements are true by meaning; synthetic statements require empirical verification. <Philosophy of mind> investigates consciousness and mental states.\n\nThe <mind-body problem> asks how mental and physical relate. Functionalism defines mental states by causal roles. Qualia are subjective experiential properties.\n\nThe <hard problem of consciousness> concerns why physical processes produce subjective experience. <Intentionality> is the mind's aboutness or directedness."
+      "content": "Logic studies valid reasoning. <Deductive arguments> guarantee conclusions if premises are true; inductive arguments provide probabilistic support. <Formal logic> uses symbolic systems. Fallacies include ad hominem, straw man, and <false dilemma>.\n\n<Philosophy of language> examines meaning. <Direct reference theory> posits unmediated reference; <speech act theory> analyzes how language performs actions.\n\n<Philosophy of mind> investigates consciousness. The <mind-body problem> asks how mental and physical relate. Qualia are subjective experiential properties. The <hard problem of consciousness> concerns why physical processes produce experience. <Intentionality> is the mind's directedness."
     },
     {
       "id": "examples",
       "title": "Philosophical Argumentation",
       "type": "examples",
-      "content": "Example 1: EPISTEMOLOGICAL ARGUMENT - <The skeptic's challenge cannot be dismissed by appealing to common sense, for the reliability of our cognitive faculties is precisely what stands in question.>\n\nExample 2: ETHICAL REASONING - <While consequentialist frameworks possess intuitive appeal, they face the repugnant conclusion that any suffering could be justified if producing sufficient utility.>\n\nExample 3: METAPHYSICAL ANALYSIS - <The persistence of identity through change presents a profound puzzle. If all constituent parts are replaced, in what sense do I remain the same person?>"
+      "content": "Example 1: EPISTEMOLOGICAL - <The skeptic's challenge cannot be dismissed by common sense, for the reliability of our cognitive faculties is precisely what stands in question.>\n\nExample 2: ETHICAL - <Consequentialist frameworks face the repugnant conclusion that any suffering could be justified if producing sufficient utility.>\n\nExample 3: METAPHYSICAL - <If all constituent parts are replaced over time, in what sense do I remain the same person? Identity's persistence through change remains a profound puzzle.>"
     },
     {
       "id": "aesthetics-existentialism",
       "title": "Aesthetics, Existentialism, and Continental Philosophy",
       "type": "theory",
-      "content": "<Aesthetics> investigates the nature of beauty, art, and taste. Central questions include whether beauty is objective or subjective, what distinguishes art from non-art, and how aesthetic experience relates to other forms of knowledge. Kant distinguished between the <beautiful> (universally pleasing) and the sublime (overwhelming, awe-inspiring). The <institutional theory of art> holds that something becomes art when the art world designates it as such.\n\n<Existentialism> emphasizes individual existence, freedom, and choice. Sartre's dictum that <existence precedes essence> means humans have no predetermined nature — we create ourselves through our choices. This radical freedom produces <anguish> (awareness of responsibility), <abandonment> (no divine guidance), and <despair> (uncertainty about outcomes). Heidegger's concept of <Dasein> (being-there) emphasizes our <thrownness> into a world we didn't choose and our orientation toward death as the horizon that gives life meaning.\n\n<Phenomenology>, founded by Husserl, examines the structures of conscious experience. Through <epoché> (bracketing assumptions), phenomenologists describe how objects appear to consciousness. Merleau-Ponty extended this to <embodied cognition>, arguing that perception is fundamentally shaped by our bodily engagement with the world."
+      "content": "<Aesthetics> investigates beauty, art, and taste. Kant distinguished the <beautiful> from the sublime. The <institutional theory of art> holds something becomes art when designated so.\n\n<Existentialism> emphasizes freedom. Sartre's <existence precedes essence> means no predetermined nature. This produces <anguish> (responsibility), <abandonment> (no divine guidance), <despair> (uncertain outcomes). Heidegger's <Dasein> emphasizes <thrownness> and orientation toward death.\n\n<Phenomenology> (Husserl) examines experience structures via <epoché> (bracketing assumptions). Merleau-Ponty extended this to <embodied cognition> — perception shaped by bodily engagement."
     },
     {
       "id": "examples-2",
       "title": "Philosophical Discourse and Argumentation",
       "type": "examples",
-      "content": "Example 1: AESTHETIC ARGUMENT - <The claim that Duchamp's \"Fountain\" — a mass-produced urinal — constitutes art precisely because it challenges our preconceptions about what art can be illustrates the paradox at the heart of institutional theories: if anything can be art by institutional fiat, the concept risks becoming vacuous.>\n\nExample 2: EXISTENTIAL ANALYSIS - <Sartre's insistence that we are \"condemned to be free\" is not merely a philosophical proposition but a phenomenological description of the human condition. Every attempt to deny our freedom — through appeals to nature, society, or circumstance — constitutes what Sartre terms \"bad faith,\" a self-deceptive flight from the burden of radical responsibility.>\n\nExample 3: EPISTEMOLOGICAL DEBATE - <The pragmatist rejoinder to the skeptic is not that we can prove the external world exists, but that the question itself presupposes a spectatorial model of knowledge that mischaracterizes our fundamental relationship with reality. We are not detached observers but engaged participants.>"
+      "content": "Example 1: AESTHETIC - <Duchamp's \"Fountain\" illustrates institutional theory's paradox: if anything becomes art by institutional fiat, the concept risks vacuity.>\n\nExample 2: EXISTENTIAL - <Sartre's \"condemned to be free\" is a phenomenological description: every denial of freedom — through nature, society, or circumstance — constitutes \"bad faith,\" a flight from radical responsibility.>\n\nExample 3: EPISTEMOLOGICAL - <The pragmatist rejoinder is not that we can prove the external world exists, but that the question presupposes a spectatorial model mischaracterizing our engaged relationship with reality.>"
     },
     {
       "id": "summary",
       "title": "Philosophical Sophistication",
       "type": "summary",
-      "content": "Engaging with philosophy at the highest level demands not merely vocabulary mastery but cultivation of distinctive cognitive capacities: the ability to think with exceptional clarity and precision, to construct and evaluate complex arguments, to appreciate subtle distinctions, and to grapple with profound ambiguity without premature closure. Philosophy teaches us to question assumptions, examine implications, and think systematically about fundamental issues. The vocabulary and concepts explored here represent centuries of sustained intellectual effort to understand ourselves and our world.\n\nAs you engage with philosophical texts, read slowly and carefully, trace arguments step by step, and don't expect easy answers - philosophy's value lies partly in the questions it raises rather than definitive solutions it provides. Practice articulating your own positions with precision, anticipating objections, and engaging charitably with opposing views. Remember that philosophical sophistication develops gradually through sustained engagement with challenging texts and ideas.\n\nThe journey itself - the cultivation of rigorous thinking and intellectual humility - may be philosophy's greatest gift."
+      "content": "Philosophy at the highest level demands exceptional clarity, rigorous argument construction, appreciation of subtle distinctions, and tolerance of ambiguity. The vocabulary here represents centuries of intellectual effort.\n\nEngage with philosophical texts slowly — trace arguments step by step, anticipate objections, engage charitably with opposing views. Sophistication develops through sustained engagement with challenging ideas.\n\nThe cultivation of rigorous thinking and intellectual humility may be philosophy's greatest gift."
     }
   ],
   "keyVocabulary": [
@@ -101,14 +101,10 @@
       "explanation": "Philosophical discourse employs sophisticated conditional and modal structures.",
       "examples": [
         "If it were the case that P, then necessarily Q would follow.",
-        "Were we to accept this premise, we would be committed to the conclusion.",
-        "It is conceivable that P, though not necessarily the case that P.",
-        "That P is possible does not entail that P is actual."
+        "Were we to accept this premise, we would be committed to the conclusion."
       ],
       "commonMistakes": [
-        "Confusing logical possibility with metaphysical or epistemic possibility",
-        "Modal scope ambiguities: \"Necessarily, if P then Q\" vs \"If P, then necessarily Q\"",
-        "Conflating subjunctive and indicative conditionals"
+        "Confusing logical possibility with metaphysical or epistemic possibility"
       ]
     },
     {
@@ -116,14 +112,10 @@
       "explanation": "Philosophy demands extreme precision through careful qualification and distinction.",
       "examples": [
         "Strictly speaking, X entails Y, though in a looser sense...",
-        "This holds ceteris paribus (all else being equal).",
-        "Prima facie (at first glance), the argument appears sound, yet...",
-        "The claim is true in one sense but false in another, more fundamental sense."
+        "This holds ceteris paribus (all else being equal)."
       ],
       "commonMistakes": [
-        "Insufficient qualification leading to overgeneralization",
-        "Failing to distinguish between different senses of terms",
-        "Imprecise use of logical vocabulary: \"implies\" vs \"entails\" vs \"suggests\""
+        "Insufficient qualification leading to overgeneralization"
       ]
     }
   ]

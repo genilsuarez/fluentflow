@@ -97,7 +97,4 @@
   text-transform: uppercase;
 }
 
-/* Hide footer in learning views (only show on menu/dashboard) */
-.layout-container:not([data-view='menu']) .app-footer {
-  display: none;
-}
+/* Footer visible in all views */

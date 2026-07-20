@@ -125,10 +125,10 @@ html.dark .error-correction__streak {
 
 /* === INSTRUCTION === */
 .transformation__instruction {
-  font-size: 0.95rem;
+  font-size: var(--lp-text-base);
   font-weight: 600;
   color: var(--theme-text-primary, #111827);
-  margin: 0 0 0.75rem;
+  margin: 0 0 var(--lp-space-sm);
   line-height: 1.4;
 }
 html.dark .transformation__instruction {
@@ -140,8 +140,8 @@ html.dark .transformation__instruction {
 .word-formation__hint,
 .error-correction__hint {
   border-radius: var(--radius-md, 0.375rem);
-  padding: 0.5rem 0.75rem;
-  margin-bottom: 0.75rem;
+  padding: var(--lp-space-sm) var(--lp-space-md);
+  margin-bottom: var(--lp-space-sm);
 }
 html.dark .transformation__hint,
 html.dark .word-formation__hint,
@@ -247,22 +247,22 @@ html.dark .error-correction__answer-area--incorrect {
 .transformation__feedback-icon--correct,
 .word-formation__feedback-icon--correct,
 .error-correction__feedback-icon--correct {
-  color: #22c55e;
+  color: var(--lp-success, #27865a);
 }
 .transformation__feedback-icon--incorrect,
 .word-formation__feedback-icon--incorrect,
 .error-correction__feedback-icon--incorrect {
-  color: #ef4444;
+  color: var(--lp-error, #c0392b);
 }
 html.dark .transformation__feedback-icon--correct,
 html.dark .word-formation__feedback-icon--correct,
 html.dark .error-correction__feedback-icon--correct {
-  color: #4ade80;
+  color: #6ee7b7;
 }
 html.dark .transformation__feedback-icon--incorrect,
 html.dark .word-formation__feedback-icon--incorrect,
 html.dark .error-correction__feedback-icon--incorrect {
-  color: #f87171;
+  color: #fca5a5;
 }
 .transformation__feedback,
 .word-formation__feedback,

@@ -133,7 +133,7 @@ interface DashboardTabProps {
   avgScore: number;
   totalSessions: number;
   totalTimeSpent: number;
-  progressData: { date: string; sessionsCount: number; timeSpent: number; averageScore: number }[];
+  progressData: { date: string; sessionsCount: number; timeSpent: number; averageScore: number; totalScore: number }[];
   language: string;
   t: (key: string, fallback?: string) => string;
 }
@@ -189,7 +189,7 @@ const DashboardTab: React.FC<DashboardTabProps> = ({
 
     <div className="my-progress__weekly">
       <h3 className="my-progress__section-title">
-        {t('dashboard.weeklyProgress', 'Progreso Semanal')}
+        {t('dashboard.recentActivity', 'Últimos días')}
       </h3>
       <div className="my-progress__weekly-content">
         {progressData.length === 0 ? (
@@ -199,26 +199,32 @@ const DashboardTab: React.FC<DashboardTabProps> = ({
           </div>
         ) : (
           <div className="my-progress__weekly-bars">
-            {progressData.slice(-5).map((day, index) => {
-              const date = new Date(day.date);
-              const dayName = date.toLocaleDateString(language, { weekday: 'short' });
-              return (
-                <div key={index} className="my-progress__weekly-day">
-                  <div className="my-progress__weekly-bar">
-                    <div
-                      className="my-progress__weekly-fill"
-                      style={
-                        {
-                          '--bar-h': `${Math.max(day.averageScore || 0, 5)}%`,
-                        } as React.CSSProperties
-                      }
-                    />
+            {(() => {
+              const recent = progressData.slice(-3);
+              const maxPts = Math.max(...recent.map(d => d.totalScore || 0), 1);
+              return recent.map((day, index) => {
+                const date = new Date(day.date);
+                const dayName = date.toLocaleDateString(language, { weekday: 'short' });
+                const pts = day.totalScore || 0;
+                const pct = Math.max((pts / maxPts) * 100, pts > 0 ? 8 : 0);
+                return (
+                  <div key={index} className="my-progress__weekly-day">
+                    <div className="my-progress__weekly-bar">
+                      <div
+                        className="my-progress__weekly-fill"
+                        style={
+                          {
+                            '--bar-h': `${pct}%`,
+                          } as React.CSSProperties
+                        }
+                      />
+                    </div>
+                    <span className="my-progress__weekly-day-label">{dayName}</span>
+                    <span className="my-progress__weekly-day-value">{pts > 0 ? pts : '—'}</span>
                   </div>
-                  <span className="my-progress__weekly-day-label">{dayName}</span>
-                  <span className="my-progress__weekly-day-value">{day.averageScore || 0}%</span>
-                </div>
-              );
-            })}
+                );
+              });
+            })()}
           </div>
         )}
       </div>
@@ -276,46 +282,65 @@ const PathTab: React.FC<PathTabProps> = ({ stats, nextRecommended, unitInfo, t }
       </div>
     )}
 
-    {/* Unit Progress Circles */}
+    {/* Unit Progress Circles — contextual: max 3 (previous, current, next) */}
     <div className="my-progress__units">
       <h3 className="my-progress__section-title">
         {t('learningPath.unitProgress', 'Progreso por Nivel')}
       </h3>
       <div className="my-progress__unit-grid">
-        {stats.unitStats.map(unitStat => {
-          const info = unitInfo[unitStat.unit as keyof typeof unitInfo];
-          return (
-            <div key={unitStat.unit} className="my-progress__unit-item">
-              <div className="my-progress__unit-circle">
-                <svg className="my-progress__unit-svg" viewBox="0 0 36 36">
-                  <path
-                    className="my-progress__unit-bg"
-                    d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                  />
-                  <path
-                    className={`my-progress__unit-fill my-progress__unit-fill--${info?.color}`}
-                    strokeDasharray={`${unitStat.percentage}, 100`}
-                    d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                  />
-                </svg>
-                <div className="my-progress__unit-center">
-                  <span className={`my-progress__unit-code my-progress__unit-code--${info?.color}`}>
-                    {info?.code}
+        {(() => {
+          // Find the active level: first unit not at 100%, or last one if all complete
+          const activeIdx = stats.unitStats.findIndex(u => u.percentage < 100);
+          const currentIdx = activeIdx === -1 ? stats.unitStats.length - 1 : activeIdx;
+
+          // Contextual window: when starting (currentIdx 0) → show first 3
+          // When advanced → show previous, current, next
+          let startIdx: number;
+          if (currentIdx === 0) {
+            startIdx = 0;
+          } else if (currentIdx >= stats.unitStats.length - 1) {
+            startIdx = Math.max(0, stats.unitStats.length - 3);
+          } else {
+            startIdx = currentIdx - 1;
+          }
+          const visibleUnits = stats.unitStats.slice(startIdx, startIdx + 3);
+
+          return visibleUnits.map(unitStat => {
+            const info = unitInfo[unitStat.unit as keyof typeof unitInfo];
+            const isCurrent = unitStat.unit === stats.unitStats[currentIdx]?.unit;
+            return (
+              <div key={unitStat.unit} className={`my-progress__unit-item${isCurrent ? ' my-progress__unit-item--active' : ''}`}>
+                <div className="my-progress__unit-circle">
+                  <svg className="my-progress__unit-svg" viewBox="0 0 36 36">
+                    <path
+                      className="my-progress__unit-bg"
+                      d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                    />
+                    <path
+                      className={`my-progress__unit-fill my-progress__unit-fill--${info?.color}`}
+                      strokeDasharray={`${unitStat.percentage}, 100`}
+                      d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                    />
+                  </svg>
+                  <div className="my-progress__unit-center">
+                    <span className={`my-progress__unit-code my-progress__unit-code--${info?.color}`}>
+                      {info?.code}
+                    </span>
+                    <span className="my-progress__unit-pct">{unitStat.percentage}%</span>
+                  </div>
+                </div>
+                <div className="my-progress__unit-label">
+                  <span className="my-progress__unit-name" title={info?.name}>
+                    {info?.shortName}
                   </span>
-                  <span className="my-progress__unit-pct">{unitStat.percentage}%</span>
+                  <span className="my-progress__unit-count">
+                    {unitStat.completed}/{unitStat.total}
+                  </span>
                 </div>
               </div>
-              <div className="my-progress__unit-label">
-                <span className="my-progress__unit-name" title={info?.name}>
-                  {info?.shortName}
-                </span>
-                <span className="my-progress__unit-count">
-                  {unitStat.completed}/{unitStat.total}
-                </span>
-              </div>
-            </div>
-          );
-        })}
+            );
+          });
+        })()}
       </div>
     </div>
   </>

@@ -8,139 +8,151 @@
  */
 
 /* === BASE STYLES === */
-.score-display-compact {
+.lp-header-stats {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.score-display-compact__container {
-  height: var(--button-size-desktop, 44px);
+.lp-header-stats__container {
+  height: var(--lp-score-height);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 0.75rem;
-  background-color: var(--theme-bg-elevated, #ffffff);
-  border: 1px solid var(--theme-border-soft, #f3f4f6);
-  border-radius: var(--radius-md, 0.375rem);
-  font-size: var(--score-font-size, 0.8125rem);
-  font-weight: 500;
-  box-shadow: var(--shadow-subtle, 0 1px 3px rgba(0, 0, 0, 0.1));
+  padding: 0 var(--lp-score-padding-x);
+  background-color: var(--lp-score-bg);
+  border: var(--lp-score-border-width) solid var(--lp-score-border);
+  border-radius: var(--lp-score-radius);
+  font-family: var(--lp-score-font-family);
+  font-size: var(--score-font-size, var(--lp-score-font-size));
+  font-weight: var(--lp-score-font-weight);
+  color: var(--lp-score-label-color);
+  box-shadow: var(--lp-score-shadow);
 }
 
-.score-display-compact__container--in-game {
+.lp-header-stats__container--in-game {
   min-width: 160px;
 }
 
-.score-display-compact__container--full {
+.lp-header-stats__container--full {
   min-width: 200px;
 }
 
-.score-display-compact__session {
+.lp-header-stats__session {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.score-display-compact__global {
+.lp-header-stats__global {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.score-display-compact__main {
+.lp-header-stats__main {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.score-display-compact__icon {
-  font-size: 1.25rem;
+.lp-header-stats__icon {
+  width: var(--lp-score-icon-size);
+  height: var(--lp-score-icon-size);
   line-height: 1;
   display: flex;
   align-items: center;
 }
 
-.score-display-compact__values {
+.lp-header-stats__values {
   display: flex;
   align-items: center;
   gap: 0.25rem;
   line-height: 1;
 }
 
-.score-display-compact__correct {
-  font-weight: 600;
-  color: var(--success, #10b981);
+.lp-header-stats__correct {
+  font-size: var(--lp-score-value-size);
+  font-weight: var(--lp-score-value-weight);
+  color: var(--lp-score-success-color);
   line-height: 1;
 }
 
-.score-display-compact__incorrect {
-  font-weight: 600;
-  color: var(--error, #ef4444);
+.lp-header-stats__incorrect {
+  font-size: var(--lp-score-value-size);
+  font-weight: var(--lp-score-value-weight);
+  color: var(--lp-score-error-color);
   line-height: 1;
 }
 
-.score-display-compact__separator {
-  color: var(--theme-text-tertiary, #9ca3af);
+.lp-header-stats__separator {
+  font-size: var(--lp-score-value-size);
+  color: var(--lp-score-label-color);
   font-weight: 400;
   line-height: 1;
 }
 
-.score-display-compact__divider {
-  width: 1px;
-  height: 24px;
-  background-color: var(--theme-border-soft, #f3f4f6);
+.lp-header-stats__divider {
+  align-self: stretch;
+  width: var(--lp-score-divider-width);
+  background-color: var(--lp-score-border);
   margin: 0 0.5rem;
 }
 
-.score-display-compact__accuracy {
-  font-weight: 600;
-  color: var(--theme-text-secondary, #6b7280);
-  font-size: inherit;
+.lp-header-stats__accuracy {
+  font-size: var(--lp-score-value-size);
+  font-weight: var(--lp-score-value-weight);
+  color: var(--lp-score-label-color);
   line-height: 1;
 }
 
-.score-display-compact__total-score {
-  font-weight: 700;
-  color: var(--theme-text-primary, #e5e7eb);
-  font-size: inherit;
+.lp-header-stats__total-score {
+  font-size: var(--lp-score-value-size);
+  font-weight: var(--lp-score-value-weight);
+  color: var(--lp-score-value-color);
   line-height: 1;
 }
 
-.score-display-compact__icon--trophy {
-  color: var(--warning, #f59e0b);
+.lp-header-stats__icon--trophy {
+  color: var(--lp-score-icon-color);
   display: flex;
   align-items: center;
 }
 
-.score-display-compact__progress {
+.lp-header-stats__icon--target {
+  color: var(--lp-score-icon-color);
+  display: flex;
+  align-items: center;
+}
+
+.lp-header-stats__progress {
   display: flex;
   align-items: center;
   gap: 0.375rem;
   line-height: 1;
 }
 
-.score-display-compact__progress-label {
-  font-weight: 600;
-  color: var(--theme-text-secondary, #6b7280);
-  font-size: inherit;
+.lp-header-stats__progress-label {
+  font-size: var(--lp-score-value-size);
+  font-weight: var(--lp-score-value-weight);
+  color: var(--lp-score-value-color);
   line-height: 1;
   white-space: nowrap;
 }
 
-.score-display-compact__progress-bar {
+.lp-header-stats__progress-bar {
   width: 50px;
   height: var(--lp-progress-height);
-  background-color: var(--theme-border-soft, #f3f4f6);
-  border-radius: var(--lp-radius-full);
+  background-color: var(--lp-score-border);
+  border-radius: var(--lp-score-radius);
   overflow: hidden;
 }
 
-.score-display-compact__progress-fill {
+.lp-header-stats__progress-fill {
   height: 100%;
   width: var(--progress-width, 0%);
-  background-color: var(--success, #10b981);
-  border-radius: var(--lp-radius-full);
+  background-color: var(--lp-score-success-color);
+  border-radius: var(--lp-score-radius);
   transition: width 0.3s ease-in-out;
 }
 
@@ -148,42 +160,41 @@
 
 /* LARGE SCREENS: 600px+ - Full display */
 @media (min-width: 600px) {
-  .score-display-compact__container--in-game {
+  .lp-header-stats__container--in-game {
     min-width: 160px;
   }
 
-  .score-display-compact__container--full {
+  .lp-header-stats__container--full {
     min-width: 200px;
   }
 }
 
 /* MEDIUM SCREENS: 520px - 599px - Slightly compact */
 @media (min-width: 520px) and (max-width: 599px) {
-  .score-display-compact__container {
+  .lp-header-stats__container {
     height: var(--button-size-desktop, 44px);
-    --score-font-size: 0.8125rem;
   }
 
-  .score-display-compact__container--in-game {
+  .lp-header-stats__container--in-game {
     min-width: 140px;
   }
 
-  .score-display-compact__container--full {
+  .lp-header-stats__container--full {
     min-width: 170px;
   }
 
-  .score-display-compact__accuracy {
+  .lp-header-stats__accuracy {
     min-width: 35px;
   }
 
-  .score-display-compact__progress-bar {
+  .lp-header-stats__progress-bar {
     width: 40px;
   }
 }
 
 /* MOBILE: ≤519px - Compact unified rules */
 @media (max-width: 519px) {
-  .score-display-compact__container {
+  .lp-header-stats__container {
     padding: 0 0.375rem;
     height: var(--button-size-mobile, 44px);
     justify-content: center;
@@ -191,104 +202,123 @@
     --score-font-size: 0.6875rem;
   }
 
-  .score-display-compact__container--in-game {
+  .lp-header-stats__container--in-game {
     min-width: 100px;
   }
 
-  .score-display-compact__container--full {
+  .lp-header-stats__container--full {
     min-width: 130px;
   }
 
-  .score-display-compact__icon {
-    font-size: 0.875rem;
+  .lp-header-stats__icon {
+    width: 14px;
+    height: 14px;
   }
 
-  .score-display-compact__values {
+  .lp-header-stats__values {
     gap: 0.125rem;
     justify-content: center;
     white-space: nowrap;
   }
 
-  .score-display-compact__accuracy {
+  .lp-header-stats__correct,
+  .lp-header-stats__incorrect,
+  .lp-header-stats__separator,
+  .lp-header-stats__accuracy,
+  .lp-header-stats__total-score,
+  .lp-header-stats__progress-label {
+    font-size: 1rem;
+  }
+
+  .lp-header-stats__accuracy {
     min-width: 28px;
     text-align: center;
   }
 
-  .score-display-compact__divider {
+  .lp-header-stats__divider {
     height: 16px;
     margin: 0 0.25rem;
   }
 
-  .score-display-compact__progress {
+  .lp-header-stats__progress {
     gap: 0.25rem;
   }
 
-  .score-display-compact__progress-bar {
+  .lp-header-stats__progress-bar {
     width: 28px;
     height: var(--lp-progress-height-compact);
   }
 
-  .score-display-compact__session,
-  .score-display-compact__global,
-  .score-display-compact__main {
+  .lp-header-stats__session,
+  .lp-header-stats__global,
+  .lp-header-stats__main {
     gap: 0.375rem;
   }
 }
 
 /* MOBILE SMALL: ≤360px - Hide progress */
 @media (max-width: 360px) {
-  .score-display-compact__progress {
+  .lp-header-stats__progress {
     display: none;
   }
 
-  .score-display-compact__divider {
+  .lp-header-stats__divider {
     display: none;
   }
 
-  .score-display-compact__container--full {
+  .lp-header-stats__container--full {
     min-width: 90px;
   }
 }
 
 /* MOBILE TINY: ≤310px - Emergency fallback */
 @media (max-width: 310px) {
-  .score-display-compact__container {
+  .lp-header-stats__container {
     padding: 0 0.125rem;
     height: var(--button-size-mobile, 44px);
     --score-font-size: 0.5625rem;
   }
 
-  .score-display-compact__container--in-game {
+  .lp-header-stats__container--in-game {
     min-width: 60px;
   }
 
-  .score-display-compact__container--full {
+  .lp-header-stats__container--full {
     min-width: 70px;
   }
 
-  .score-display-compact__icon {
+  .lp-header-stats__icon {
     display: none;
   }
 
-  .score-display-compact__accuracy {
+  .lp-header-stats__correct,
+  .lp-header-stats__incorrect,
+  .lp-header-stats__separator,
+  .lp-header-stats__accuracy,
+  .lp-header-stats__total-score,
+  .lp-header-stats__progress-label {
+    font-size: 0.8125rem;
+  }
+
+  .lp-header-stats__accuracy {
     min-width: 14px;
   }
 }
 
 /* === ACCESSIBILITY === */
 @media (prefers-reduced-motion: reduce) {
-  .score-display-compact__progress-fill {
+  .lp-header-stats__progress-fill {
     transition: none;
   }
 }
 
 @media (prefers-contrast: high) {
-  .score-display-compact__container {
+  .lp-header-stats__container {
     border-width: 2px;
-    border-color: var(--theme-text-primary, #374151);
+    border-color: var(--lp-score-value-color);
   }
 
-  .score-display-compact__progress-fill {
-    background-color: var(--theme-text-primary, #374151);
+  .lp-header-stats__progress-fill {
+    background-color: var(--lp-score-value-color);
   }
 }

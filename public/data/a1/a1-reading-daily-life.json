@@ -42,7 +42,7 @@
       "id": "weekend-activities",
       "title": "Weekend Activities",
       "type": "theory",
-      "content": "<Weekends> are different from <weekdays>. People <relax> and do fun things:\n\n\n• <Sleep in> - Wake up late\n• <Go shopping> - Buy things at stores\n• <Visit friends> - Spend time with people you like\n• <Cook a meal> - Prepare food at home\n• <Watch a movie> - See a film at home or at the cinema\n• <Go for a walk> - Walk outside for exercise or fun\n\nExample: On <Saturdays>, I usually <sleep in> and then <go shopping>. In the <afternoon>, I <visit> my friends or <watch a movie>."
+      "content": "<Weekends> are different from <weekdays>. People <relax> and do fun things:\n\n• <Sleep in> - Wake up late\n• <Go shopping> - Buy things at stores\n• <Visit friends> - Spend time with people you like\n• <Watch a movie> - See a film at home or at the cinema\n• <Go for a walk> - Walk outside for exercise or fun\n\nExample: On <Saturdays>, I usually <sleep in> and then <go shopping>."
     },
     {
       "id": "examples-2",
@@ -101,13 +101,10 @@
       "explanation": "Use simple present tense to talk about things you do regularly. Add <s> or <es> for he/she/it.",
       "examples": [
         "I wake up at 7 AM every day.",
-        "She goes to work by car.",
-        "We have dinner at 7 PM.",
-        "He watches TV in the evening."
+        "She goes to work by car."
       ],
       "commonMistakes": [
-        "Forgetting to add \"s\" for he/she/it: \"He wake up\" ❌ → \"He wakes up\" ✓",
-        "Using present continuous for routines: \"I am going to work every day\" ❌"
+        "Forgetting to add \"s\" for he/she/it: \"He wake up\" ❌ → \"He wakes up\" ✓"
       ]
     },
     {
@@ -115,12 +112,10 @@
       "explanation": "Use <at> for specific times, <in> for parts of the day, and <on> for days.",
       "examples": [
         "at 7 AM, at noon, at midnight",
-        "in the morning, in the afternoon, in the evening",
-        "on Monday, on weekends, on Saturday morning"
+        "in the morning, in the afternoon, in the evening"
       ],
       "commonMistakes": [
-        "Using wrong preposition: \"in 7 AM\" ❌ → \"at 7 AM\" ✓",
-        "Saying \"in the night\" ❌ → \"at night\" ✓"
+        "Using wrong preposition: \"in 7 AM\" ❌ → \"at 7 AM\" ✓"
       ]
     }
   ]

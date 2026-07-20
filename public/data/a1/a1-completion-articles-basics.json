@@ -3,67 +3,67 @@
     "sentence": "I have ______ cat. It's very friendly.",
     "correct": "a",
     "explanation": "Se usa <a> antes de sustantivos contables singulares que comienzan con sonido consonántico.",
-    "tip": "Choose: a / an / the / ∅"
+    "tip": "Choose: a / an / the / ∅ (type - for no article)"
   },
   {
     "sentence": "She is ______ honest person.",
     "correct": "an",
     "explanation": "Se usa <an> antes de palabras que empiezan con una 'h' muda (sonido vocálico): <an honest>.",
-    "tip": "Choose: a / an / the / ∅"
+    "tip": "Choose: a / an / the / ∅ (type - for no article)"
   },
   {
     "sentence": "I saw ______ elephant at the zoo yesterday.",
     "correct": "an",
     "explanation": "Se usa <an> antes de palabras que comienzan con sonido vocálico: <an elephant>.",
-    "tip": "Choose: a / an / the / ∅"
+    "tip": "Choose: a / an / the / ∅ (type - for no article)"
   },
   {
     "sentence": "Can you close ______ door, please?",
     "correct": "the",
     "explanation": "Se usa <the> cuando tanto el hablante como el oyente saben a qué cosa específica se refiere.",
-    "tip": "Choose: a / an / the / ∅"
+    "tip": "Choose: a / an / the / ∅ (type - for no article)"
   },
   {
     "sentence": "______ sun rises in the east.",
     "correct": "The",
     "explanation": "Se usa <the> con cosas únicas — solo hay un sol.",
-    "tip": "Choose: a / an / the / ∅"
+    "tip": "Choose: a / an / the / ∅ (type - for no article)"
   },
   {
     "sentence": "I want to be ______ engineer when I grow up.",
     "correct": "an",
     "explanation": "Se usa <an> antes de sonidos vocálicos. 'Engineer' comienza con /ɛ/.",
-    "tip": "Choose: a / an / the / ∅"
+    "tip": "Choose: a / an / the / ∅ (type - for no article)"
   },
   {
     "sentence": "She goes to ______ school every morning.",
     "correct": "∅",
     "explanation": "No se usa artículo con 'go to school' cuando se refiere a la actividad habitual (no al edificio).",
-    "tip": "Choose: a / an / the / ∅ (no article)"
+    "tip": "Choose: a / an / the / ∅ (type - for no article)"
   },
   {
     "sentence": "He plays ______ guitar very well.",
     "correct": "the",
     "explanation": "Se usa <the> con instrumentos musicales: <play the guitar>, <play the piano>.",
-    "tip": "Choose: a / an / the / ∅"
+    "tip": "Choose: a / an / the / ∅ (type - for no article)"
   },
   {
     "sentence": "I had ______ breakfast at 7 o'clock.",
     "correct": "∅",
     "explanation": "No se usa artículo con los nombres de las comidas: <have breakfast>, <have lunch>, <have dinner>.",
-    "tip": "Choose: a / an / the / ∅ (no article)"
+    "tip": "Choose: a / an / the / ∅ (type - for no article)"
   },
   {
     "sentence": "There is ______ university near my house.",
     "correct": "a",
     "explanation": "Se usa <a> antes de 'university' porque comienza con el sonido /juː/ (sonido consonántico), no vocálico.",
-    "tip": "Choose: a / an / the / ∅"
+    "tip": "Choose: a / an / the / ∅ (type - for no article)"
   },
   {
     "sentence": "______ water is important for life.",
     "correct": "∅",
     "explanation": "No se usa artículo con sustantivos incontables cuando se habla en general.",
-    "tip": "Choose: a / an / the / ∅ (no article)"
+    "tip": "Choose: a / an / the / ∅ (type - for no article)"
   },
   {
     "sentence": "She bought ______ new dress. ______ dress was blue.",
@@ -75,48 +75,48 @@
     "sentence": "I like ______ dogs. They are loyal animals.",
     "correct": "∅",
     "explanation": "No se usa artículo cuando se habla de las cosas en general (todos los perros, no unos específicos).",
-    "tip": "Choose: a / an / the / ∅ (no article)"
+    "tip": "Choose: a / an / the / ∅ (type - for no article)"
   },
   {
     "sentence": "He goes to ______ bed at 10 pm every night.",
     "correct": "∅",
     "explanation": "No se usa artículo con 'go to bed' cuando se habla de la actividad de dormir.",
-    "tip": "Choose: a / an / the / ∅ (no article)"
+    "tip": "Choose: a / an / the / ∅ (type - for no article)"
   },
   {
     "sentence": "She plays ______ tennis on Saturdays.",
     "correct": "∅",
     "explanation": "No se usa artículo con los deportes: <play tennis>, <play football>, <play basketball>.",
-    "tip": "Choose: a / an / the / ∅ (no article)"
+    "tip": "Choose: a / an / the / ∅ (type - for no article)"
   },
   {
     "sentence": "Look! ______ moon is beautiful tonight.",
     "correct": "The",
     "explanation": "Se usa <the> con objetos únicos — solo hay una luna.",
-    "tip": "Choose: a / an / the / ∅"
+    "tip": "Choose: a / an / the / ∅ (type - for no article)"
   },
   {
     "sentence": "I need ______ umbrella. It's raining.",
     "correct": "an",
     "explanation": "Se usa <an> antes de palabras que comienzan con sonido vocálico: <an umbrella>.",
-    "tip": "Choose: a / an / the / ∅"
+    "tip": "Choose: a / an / the / ∅ (type - for no article)"
   },
   {
     "sentence": "He is ______ best student in the class.",
     "correct": "the",
     "explanation": "Se usa <the> con los superlativos: <the best>, <the tallest>, <the most interesting>.",
-    "tip": "Choose: a / an / the / ∅"
+    "tip": "Choose: a / an / the / ∅ (type - for no article)"
   },
   {
     "sentence": "We live in ______ small apartment in the city center.",
     "correct": "a",
     "explanation": "Se usa <a> cuando se menciona algo por primera vez (no específico).",
-    "tip": "Choose: a / an / the / ∅"
+    "tip": "Choose: a / an / the / ∅ (type - for no article)"
   },
   {
     "sentence": "I always have ______ coffee in the morning.",
     "correct": "∅",
     "explanation": "No se usa artículo con sustantivos incontables en afirmaciones generales sobre hábitos.",
-    "tip": "Choose: a / an / the / ∅ (no article)"
+    "tip": "Choose: a / an / the / ∅ (type - for no article)"
   }
 ]

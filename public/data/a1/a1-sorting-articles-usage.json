@@ -1,82 +1,102 @@
 [
   {
-    "word": "a cat",
-    "category": "a/an (indefinite)"
+    "word": "doctor (profession)",
+    "category": "a/an (indefinite)",
+    "explanation": "Use 'a/an' before professions: She is a doctor."
   },
   {
-    "word": "an apple",
-    "category": "a/an (indefinite)"
+    "word": "apple (one fruit)",
+    "category": "a/an (indefinite)",
+    "explanation": "Use 'an' before vowel sounds: I ate an apple."
   },
   {
-    "word": "a house",
-    "category": "a/an (indefinite)"
+    "word": "new car (first mention)",
+    "category": "a/an (indefinite)",
+    "explanation": "Use 'a/an' when mentioning something for the first time: I bought a new car."
   },
   {
-    "word": "an hour",
-    "category": "a/an (indefinite)"
+    "word": "hour (time unit)",
+    "category": "a/an (indefinite)",
+    "explanation": "Use 'an' before silent h: Wait an hour."
   },
   {
-    "word": "a university",
-    "category": "a/an (indefinite)"
+    "word": "university (institution)",
+    "category": "a/an (indefinite)",
+    "explanation": "Use 'a' before /juː/ sound: She goes to a university."
   },
   {
-    "word": "an umbrella",
-    "category": "a/an (indefinite)"
+    "word": "umbrella (one item)",
+    "category": "a/an (indefinite)",
+    "explanation": "Use 'an' before vowel sounds: Take an umbrella."
   },
   {
-    "word": "an orange",
-    "category": "a/an (indefinite)"
+    "word": "good idea",
+    "category": "a/an (indefinite)",
+    "explanation": "Use 'a' for singular countable nouns: That's a good idea."
   },
   {
-    "word": "the sun",
-    "category": "the (definite)"
+    "word": "sun (unique in sky)",
+    "category": "the (definite)",
+    "explanation": "Use 'the' for things unique in context: The sun is bright."
   },
   {
-    "word": "the moon",
-    "category": "the (definite)"
+    "word": "door (we both see it)",
+    "category": "the (definite)",
+    "explanation": "Use 'the' when both speaker and listener know which one: Close the door."
   },
   {
-    "word": "the best one",
-    "category": "the (definite)"
+    "word": "best student (superlative)",
+    "category": "the (definite)",
+    "explanation": "Use 'the' with superlatives: She is the best student."
   },
   {
-    "word": "the door (known)",
-    "category": "the (definite)"
+    "word": "second floor (ordinal)",
+    "category": "the (definite)",
+    "explanation": "Use 'the' with ordinals: Go to the second floor."
   },
   {
-    "word": "the second time",
-    "category": "the (definite)"
+    "word": "moon (only one)",
+    "category": "the (definite)",
+    "explanation": "Use 'the' for unique things: The moon is full tonight."
   },
   {
-    "word": "the piano",
-    "category": "the (definite)"
+    "word": "same answer (shared reference)",
+    "category": "the (definite)",
+    "explanation": "Use 'the' with 'same': We have the same answer."
   },
   {
-    "word": "the earth",
-    "category": "the (definite)"
+    "word": "breakfast (meal)",
+    "category": "∅ (no article)",
+    "explanation": "No article before meals: I have breakfast at 8."
   },
   {
-    "word": "go to school",
-    "category": "∅ (no article)"
+    "word": "football (sport)",
+    "category": "∅ (no article)",
+    "explanation": "No article before sports: They play football."
   },
   {
-    "word": "play football",
-    "category": "∅ (no article)"
+    "word": "home (go/be at)",
+    "category": "∅ (no article)",
+    "explanation": "No article in fixed expressions: I'm at home."
   },
   {
-    "word": "have breakfast",
-    "category": "∅ (no article)"
+    "word": "bed (go to)",
+    "category": "∅ (no article)",
+    "explanation": "No article in 'go to bed': Time to go to bed."
   },
   {
-    "word": "at home",
-    "category": "∅ (no article)"
+    "word": "water (in general)",
+    "category": "∅ (no article)",
+    "explanation": "No article for uncountable nouns in general: Water is essential."
   },
   {
-    "word": "go to bed",
-    "category": "∅ (no article)"
+    "word": "school (as student)",
+    "category": "∅ (no article)",
+    "explanation": "No article when referring to the purpose: She goes to school."
   },
   {
-    "word": "Water is vital",
-    "category": "∅ (no article)"
+    "word": "English (language)",
+    "category": "∅ (no article)",
+    "explanation": "No article before languages: I speak English."
   }
 ]

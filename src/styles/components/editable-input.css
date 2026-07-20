@@ -59,13 +59,13 @@
 
 /* Correct state */
 .editable-input--correct {
-  border-color: var(--color-success, #10b981);
+  border-color: var(--lp-success, #27865a);
   background: transparent;
 }
 
 /* Incorrect state */
 .editable-input--incorrect {
-  border-color: var(--color-error, #ef4444);
+  border-color: var(--lp-error, #c0392b);
   background: transparent;
 }
 

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { Check, X, ArrowRight } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { conditionalShuffle } from '../../utils/randomUtils';
-import { isTenseError, isParticleError } from '../../utils/answerUtils';
+import { normalizeAnswer, isTenseError, isParticleError } from '../../utils/answerUtils';
 import '../../styles/components/completion-component.css';
 import '../../styles/components/editable-input.css';
 // BEM classes applied dynamically via .replace(): 'editable-input--correct' 'editable-input--incorrect' 'editable-input--neutral' 'editable-input--disabled'
@@ -70,8 +70,8 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
   const checkAnswer = useCallback(() => {
     if (showResult) return;
 
-    const userAnswer = answer.toLowerCase().trim();
-    const correctAnswer = currentExercise?.correct?.toLowerCase().trim() || '';
+    const userAnswer = normalizeAnswer(answer);
+    const correctAnswer = normalizeAnswer(currentExercise?.correct || '');
     const isCorrect = userAnswer === correctAnswer;
 
     if (isCorrect) {
@@ -175,7 +175,7 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
       if (index < parts.length - 1) {
         const isCorrect =
           showResult &&
-          answer.toLowerCase().trim() === currentExercise.correct?.toLowerCase().trim();
+          normalizeAnswer(answer) === normalizeAnswer(currentExercise.correct || '');
         const isIncorrect = showResult && answer && !isCorrect;
 
         let inputClass = 'completion-component__input';
@@ -191,9 +191,13 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
           inputClass += ' completion-component__input--neutral';
         }
 
-        // Generate hint with first letter
+        // Show first-letter hint only when the answer is long enough that it's not a giveaway
+        const correctLen = (currentExercise.correct || '').trim().length;
         const firstLetter = currentExercise.correct?.charAt(0) || '';
-        const placeholderHint = firstLetter ? `${firstLetter}...` : '...';
+        const placeholderHint = correctLen > 3 && firstLetter ? `${firstLetter}...` : '...';
+
+        // Track which gap index this is (0-based)
+        const gapIndex = elements.filter(el => el.key?.toString().startsWith('input-')).length;
 
         elements.push(
           <EditableInput
@@ -210,7 +214,7 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
                 textTransform: 'lowercase',
               } as React.CSSProperties
             }
-            autoFocus={!showResult}
+            autoFocus={!showResult && gapIndex === 0}
           />
         );
       }
@@ -220,6 +224,7 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
   };
 
   const hasAnswer = answer.trim().length > 0;
+  const isAnswerCorrect = showResult && normalizeAnswer(answer) === normalizeAnswer(currentExercise?.correct || '');
 
   return (
     <div className="completion-component__container">
@@ -250,7 +255,7 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
         <div
           className={`completion-component__sentence-container${
             showResult
-              ? answer.toLowerCase().trim() === currentExercise?.correct?.toLowerCase().trim()
+              ? isAnswerCorrect
                 ? ' completion-component__sentence-container--correct'
                 : ' completion-component__sentence-container--incorrect'
               : ''
@@ -271,19 +276,19 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
           <div className="completion-component__result">
             {/* Ultra-compact result feedback */}
             <div className="completion-component__feedback-row">
-              {answer.toLowerCase().trim() === currentExercise?.correct?.toLowerCase().trim() ? (
+              {isAnswerCorrect ? (
                 <Check className="completion-component__feedback-icon completion-component__feedback-icon--correct" />
               ) : (
                 <X className="completion-component__feedback-icon completion-component__feedback-icon--incorrect" />
               )}
               <span className="completion-component__feedback">
-                {answer.toLowerCase().trim() === currentExercise?.correct?.toLowerCase().trim()
+                {isAnswerCorrect
                   ? t('common.correct')
                   : t('common.incorrect')}
               </span>
 
               {/* Correct answer flows naturally after incorrect */}
-              {answer.toLowerCase().trim() !== currentExercise?.correct?.toLowerCase().trim() && (
+              {!isAnswerCorrect && (
                 <span className="completion-component__correct-answer">
                   - {t('learning.answer')} <strong>{currentExercise?.correct}</strong>
                 </span>
@@ -292,14 +297,14 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
 
             {/* Compact explanation */}
             {showResult &&
-              answer.toLowerCase().trim() !== currentExercise?.correct?.toLowerCase().trim() &&
+              !isAnswerCorrect &&
               isTenseError(answer, currentExercise?.correct || '') && (
                 <div className="completion-component__tense-hint">
                   <p className="completion-component__tense-hint-text">{t('learning.tenseHint')}</p>
                 </div>
               )}
             {showResult &&
-              answer.toLowerCase().trim() !== currentExercise?.correct?.toLowerCase().trim() &&
+              !isAnswerCorrect &&
               !isTenseError(answer, currentExercise?.correct || '') &&
               isParticleError(answer, currentExercise?.correct || '') && (
                 <div className="completion-component__tense-hint">

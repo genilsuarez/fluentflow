@@ -42,13 +42,13 @@
       "id": "mental-wellbeing",
       "title": "Mental Health and Wellbeing",
       "type": "theory",
-      "content": "Mental health is as important as physical health. Here are useful words:\n\n\n• <Stress> - Feeling worried or under pressure\n• <Anxiety> - Feeling nervous or worried about the future\n• <Relax> - To become calm and less worried\n• <Mindfulness> - Paying attention to the present moment\n• <Self-care> - Taking care of your own health and happiness\n\nWays to feel better:\n\n• Get enough sleep (7-8 hours)\n• <Exercise> regularly\n• Talk to friends and family\n• Take breaks during work\n• Spend time <outdoors> in nature\n\nExample: I feel stressed about my exams. I need to <relax> and take a break."
+      "content": "Mental health is as important as physical health. Here are useful words:\n\n• <Stress> - Feeling worried or under pressure\n• <Anxiety> - Feeling nervous about the future\n• <Relax> - To become calm and less worried\n• <Self-care> - Taking care of your own health and happiness\n\nWays to feel better: get enough sleep, <exercise> regularly, talk to friends, and spend time <outdoors>."
     },
     {
       "id": "examples-2",
       "title": "Health Advice Dialogues",
       "type": "examples",
-      "content": "Example 1: FEELING ILL - <A: I have a terrible headache.\nB: You should take some paracetamol and drink water.\nA: Thanks, I'll do that.>\n\nExample 2: AT THE PHARMACY - <A: I need something for a cough.\nB: This cough syrup is very good. Take it three times a day.\nA: Thank you. How much is it?>\n\nExample 3: HEALTHY HABITS - <A: How do you stay healthy?\nB: I try to eat fruit every day and I walk to work.\nA: That's a great habit!>"
+      "content": "Example 1: FEELING ILL - <A: I have a terrible headache.\nB: You should take some paracetamol and drink water.>\n\nExample 2: AT THE PHARMACY - <A: I need something for a cough.\nB: This cough syrup is very good. Take it three times a day.>\n\nExample 3: HEALTHY HABITS - <A: How do you stay healthy?\nB: I eat fruit every day and walk to work.>"
     },
     {
       "id": "summary",
@@ -101,13 +101,10 @@
       "explanation": "Use <I have...> for illnesses and <My [body part] hurts> or <I have a pain in...> for pain.",
       "examples": [
         "I have a cold/the flu/a fever.",
-        "My head hurts. / I have a headache.",
-        "My stomach hurts. / I have a stomachache.",
-        "I feel dizzy/nauseous/tired."
+        "My head hurts. / I have a headache."
       ],
       "commonMistakes": [
-        "Saying \"I am cold\" when you mean \"I have a cold\" (different meanings!)",
-        "Using \"ache\" incorrectly: \"I have a head ache\" ❌ → \"I have a headache\" ✓"
+        "Saying \"I am cold\" when you mean \"I have a cold\" (different meanings!)"
       ]
     },
     {
@@ -115,13 +112,10 @@
       "explanation": "Use <should> to give advice about health. Use <shouldn't> for negative advice.",
       "examples": [
         "You should see a doctor.",
-        "You should drink more water.",
-        "You shouldn't go to work if you're sick.",
-        "You should get some rest."
+        "You should drink more water."
       ],
       "commonMistakes": [
-        "Using \"must\" instead of \"should\" (too strong for advice)",
-        "Forgetting \"should\" stays the same for all persons: \"He should rest\" ✓"
+        "Using \"must\" instead of \"should\" (too strong for advice)"
       ]
     }
   ]

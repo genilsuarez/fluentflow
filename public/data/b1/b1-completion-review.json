@@ -1,102 +1,122 @@
 [
   {
-    "sentence": "If I ______ more time, I would travel the world. (second conditional)",
+    "sentence": "If I ______ more time, I would travel the world.",
     "correct": "had",
+    "tip": "Segunda condicional: If + ¿qué tiempo verbal?",
     "explanation": "Segunda condicional: If + pasado simple. <If I had> expresa una situación irreal en el presente."
   },
   {
-    "sentence": "The report ______ by the manager yesterday. (passive voice)",
+    "sentence": "The report ______ by the manager yesterday.",
     "correct": "was written",
+    "tip": "Voz pasiva en pasado: was/were + participio pasado de <write>",
     "explanation": "Voz pasiva en pasado simple: <was/were> + participio pasado: <was written>."
   },
   {
-    "sentence": "She suggested ______ to the new restaurant. (gerund or infinitive)",
+    "sentence": "She suggested ______ to the new restaurant.",
     "correct": "going",
+    "tip": "Después de <suggest>: ¿gerundio o infinitivo?",
     "explanation": "Después de <suggest>, se usa el gerundio (forma -ing): <suggested going>."
   },
   {
-    "sentence": "He promised ______ me with the project. (gerund or infinitive)",
+    "sentence": "He promised ______ me with the project.",
     "correct": "to help",
+    "tip": "Después de <promise>: ¿gerundio o infinitivo?",
     "explanation": "Después de <promise>, se usa el infinitivo: <promised to help>."
   },
   {
-    "sentence": "The meeting was ______ until next Monday. (phrasal verb: postpone)",
+    "sentence": "The meeting was ______ until next Monday.",
     "correct": "put off",
+    "tip": "Phrasal verb: posponer (2 palabras)",
     "explanation": "El phrasal verb <put off> significa posponer o aplazar."
   },
   {
-    "sentence": "She ______ the problem after hours of work. (phrasal verb: solve)",
+    "sentence": "She ______ the problem after hours of work.",
     "correct": "figured out",
+    "tip": "Phrasal verb: resolver, entender algo (2 palabras, pasado)",
     "explanation": "El phrasal verb <figure out> significa resolver o entender algo."
   },
   {
-    "sentence": "We need to ______ a solution before the deadline. (phrasal verb: think of)",
+    "sentence": "We need to ______ a solution before the deadline.",
     "correct": "come up with",
+    "tip": "Phrasal verb: pensar en una idea (3 palabras)",
     "explanation": "El phrasal verb <come up with> significa pensar en o producir una idea."
   },
   {
-    "sentence": "He ______ his father. They look exactly the same. (phrasal verb: resemble)",
+    "sentence": "He ______ his father. They look exactly the same.",
     "correct": "takes after",
+    "tip": "Phrasal verb: parecerse a un familiar (2 palabras)",
     "explanation": "El phrasal verb <take after> significa parecerse a un familiar."
   },
   {
-    "sentence": "Don't ______ the opportunity to study abroad. (phrasal verb: miss)",
+    "sentence": "Don't ______ the opportunity to study abroad.",
     "correct": "pass up",
+    "tip": "Phrasal verb: dejar pasar una oportunidad (2 palabras)",
     "explanation": "El phrasal verb <pass up> significa perder o no aprovechar una oportunidad."
   },
   {
     "sentence": "The whole project was a wild goose chase. This means it was a ______ effort.",
     "correct": "wasted",
+    "tip": "Modismo: si la persecución fue inútil, el esfuerzo fue...",
     "explanation": "El modismo <a wild goose chase> significa una búsqueda inútil o infructuosa."
   },
   {
     "sentence": "She spilled the beans about the surprise party. She ______ the secret.",
     "correct": "revealed",
+    "tip": "Modismo: ¿qué haces con un secreto cuando 'derramas los frijoles'?",
     "explanation": "El modismo <spill the beans> significa revelar un secreto."
   },
   {
     "sentence": "He's been burning the midnight oil. He's been ______ very late.",
     "correct": "working",
+    "tip": "Modismo: ¿qué actividad haces 'quemando aceite de medianoche'?",
     "explanation": "El modismo <burn the midnight oil> significa trabajar o estudiar hasta muy tarde."
   },
   {
     "sentence": "Don't beat around the bush. Just say it ______.",
     "correct": "directly",
+    "tip": "Modismo: lo opuesto de 'dar rodeos' es decirlo...",
     "explanation": "El modismo <beat around the bush> significa evitar decir algo directamente."
   },
   {
     "sentence": "She's on the ball. She's very ______ and efficient.",
     "correct": "alert",
+    "tip": "Modismo: estar 'sobre la pelota' = ser muy atento y...",
     "explanation": "El modismo <on the ball> significa estar alerta, ser competente y actuar con rapidez."
   },
   {
     "sentence": "It cost an arm and a leg. It was very ______.",
     "correct": "expensive",
+    "tip": "Modismo: si cuesta 'un brazo y una pierna', es muy...",
     "explanation": "El modismo <cost an arm and a leg> significa que algo es muy caro."
   },
   {
     "sentence": "The develop______ of the new software took six months.",
     "correct": "development",
+    "tip": "Sufijo que convierte <develop> en sustantivo de proceso",
     "explanation": "Al agregar <-ment> a <develop> se forma el sustantivo <development>."
   },
   {
     "sentence": "Her kind______ made everyone feel welcome.",
     "correct": "kindness",
+    "tip": "Sufijo que convierte <kind> en sustantivo de cualidad",
     "explanation": "Al agregar <-ness> a <kind> se forma el sustantivo <kindness>."
   },
   {
-    "sentence": "The ______ of the word 'un-' means 'not'. (prefix meaning)",
+    "sentence": "The ______ of the word 'un-' means 'not'.",
     "correct": "prefix",
+    "tip": "¿Cómo se llama la partícula que se agrega al inicio de una palabra?",
     "explanation": "Un <prefix> se agrega al principio de una palabra para cambiar su significado."
   },
   {
     "sentence": "Adding 're-' to 'write' gives us ______, meaning to write again.",
     "correct": "rewrite",
+    "tip": "Aplica el prefijo <re-> (= otra vez) a <write>",
     "explanation": "El prefijo <re-> significa 'otra vez': <rewrite> = escribir de nuevo."
   },
   {
-    "sentence": "If she studied harder, she ______ pass the exam. (transform to conditional)",
+    "sentence": "If she studied harder, she ______ pass the exam.",
     "correct": "would",
+    "tip": "Segunda condicional — cláusula de resultado: ¿qué modal va aquí?",
     "explanation": "Cláusula de resultado de la segunda condicional: <would> + forma base."
   }
 ]

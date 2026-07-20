@@ -42,13 +42,13 @@
       "id": "online-safety",
       "title": "Online Safety and Privacy",
       "type": "theory",
-      "content": "Staying safe online is very important. Here are key concepts:\n\n\n• <Password> - A secret word to access your accounts. Make it strong!\n• <Privacy settings> - Controls for who can see your information\n• <Phishing> - Fake emails or messages that try to steal your data\n• <Update> - Install new versions of apps to stay safe\n• <Back up> - Save copies of your important files\n\nSafety tips:\n\n• Don't share your password with anyone\n• Don't click on links from unknown people\n• Use different passwords for different accounts\n• Always <log out> of public computers"
+      "content": "Staying safe online is very important:\n\n• <Password> - A secret word to access your accounts. Make it strong!\n• <Privacy settings> - Controls for who can see your information\n• <Phishing> - Fake emails that try to steal your data\n• <Update> - Install new versions of apps to stay safe\n• <Back up> - Save copies of your important files\n\nDon't share your password, don't click links from strangers, and always <log out> of public computers."
     },
     {
       "id": "examples-2",
       "title": "Tech Support Conversations",
       "type": "examples",
-      "content": "Example 1: WIFI PROBLEM - <A: My internet isn't working.\nB: Have you tried turning the router off and on again?\nA: Yes, but it's still not connecting.\nB: Let me check the settings.>\n\nExample 2: NEW PHONE - <A: How do I download an app?\nB: Open the App Store, search for the app, and tap Install.\nA: Thanks! That was easy.>\n\nExample 3: COMPUTER HELP - <A: My computer is very slow.\nB: You should close some programs and restart it.\nA: OK, I'll try that.>"
+      "content": "Example 1: WIFI PROBLEM - <A: My internet isn't working.\nB: Have you tried turning the router off and on again?>\n\nExample 2: NEW PHONE - <A: How do I download an app?\nB: Open the App Store, search for it, and tap Install.>\n\nExample 3: COMPUTER HELP - <A: My computer is very slow.\nB: You should close some programs and restart it.>"
     },
     {
       "id": "summary",
@@ -101,14 +101,10 @@
       "explanation": "Many technology actions use specific verbs or phrasal verbs.",
       "examples": [
         "turn on/off - Turn on your computer.",
-        "log in/out - Log in to your account.",
-        "sign up - Sign up for a new account.",
-        "shut down - Shut down your laptop before traveling.",
-        "plug in - Plug in the charger."
+        "log in/out - Log in to your account."
       ],
       "commonMistakes": [
-        "Confusing \"open\" and \"turn on\": \"Open the computer\" ❌ → \"Turn on the computer\" ✓",
-        "Using \"close\" instead of \"shut down\" for computers"
+        "Confusing \"open\" and \"turn on\": \"Open the computer\" ❌ → \"Turn on the computer\" ✓"
       ]
     },
     {
@@ -116,13 +112,10 @@
       "explanation": "Use <won't> (will not) or <doesn't work> to describe problems. Use <can't> for inability.",
       "examples": [
         "My phone won't turn on.",
-        "The Wi-Fi doesn't work.",
-        "I can't connect to the internet.",
-        "The app keeps crashing."
+        "The Wi-Fi doesn't work."
       ],
       "commonMistakes": [
-        "Using present continuous incorrectly: 'My phone isn't turning on' (less common)",
-        "Forgetting \"the\" with specific devices: 'Wi-Fi doesn't work' ✓"
+        "Using present continuous incorrectly: 'My phone isn't turning on' (less common)"
       ]
     }
   ]

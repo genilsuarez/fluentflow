@@ -29,7 +29,15 @@ export const useUserStore = create<UserStore>()(
       user: null,
       userScores: {},
 
-      setUser: user => set({ user }),
+      setUser: user => {
+        set({ user });
+        // Sync to shared cross-app key
+        if (user) {
+          localStorage.setItem('lp-user', JSON.stringify({ id: user.id, name: user.name }));
+        } else {
+          localStorage.removeItem('lp-user');
+        }
+      },
 
       updateUserScore: (moduleId, score, timeSpent) =>
         set(state => {
@@ -125,6 +133,55 @@ export const useUserStore = create<UserStore>()(
     }),
     {
       name: 'user-storage',
+      onRehydrateStorage: () => state => {
+        // On app load, sync from shared lp-user key if local store is empty
+        if (state && !state.user) {
+          try {
+            const shared = localStorage.getItem('lp-user');
+            if (shared) {
+              const parsed = JSON.parse(shared);
+              if (parsed && parsed.name) {
+                state.setUser({ id: parsed.id || String(Date.now()), name: parsed.name });
+              }
+            }
+          } catch { /* ignore parse errors */ }
+        }
+        // If user exists locally but lp-user is empty, write it out
+        if (state?.user && !localStorage.getItem('lp-user')) {
+          localStorage.setItem('lp-user', JSON.stringify({ id: state.user.id, name: state.user.name }));
+        }
+      },
     }
   )
 );
+
+// Listen for cross-tab changes to lp-user
+if (typeof window !== 'undefined') {
+  window.addEventListener('storage', (e) => {
+    if (e.key !== 'lp-user') return;
+    const current = useUserStore.getState().user;
+    if (e.newValue) {
+      try {
+        const parsed = JSON.parse(e.newValue);
+        if (parsed?.name && parsed.name !== current?.name) {
+          useUserStore.setState({ user: { id: parsed.id || String(Date.now()), name: parsed.name } });
+        }
+      } catch { /* ignore */ }
+    } else if (current) {
+      useUserStore.setState({ user: null });
+    }
+  });
+
+  // Same-tab sync: listen to lpLogin.onUpdate (vanilla modal writes lp-user directly)
+  const lpLogin = (window as any).lpLogin;
+  if (lpLogin && lpLogin.onUpdate) {
+    lpLogin.onUpdate((user: { id: string; name: string } | null) => {
+      const current = useUserStore.getState().user;
+      if (user && user.name !== current?.name) {
+        useUserStore.setState({ user: { id: user.id, name: user.name } });
+      } else if (!user && current) {
+        useUserStore.setState({ user: null });
+      }
+    });
+  }
+}

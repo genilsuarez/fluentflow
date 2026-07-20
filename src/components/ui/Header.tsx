@@ -4,15 +4,13 @@ import { ArrowLeft, WifiOff, Wrench } from 'lucide-react';
 import '../../styles/components/header.css';
 import { useAppStore } from '../../stores/appStore';
 import { useSettingsStore } from '../../stores/settingsStore';
+import { useUserStore } from '../../stores/userStore';
 import { useMenuNavigation } from '../../hooks/useMenuNavigation';
 import { useTranslation } from '../../utils/i18n';
 import { useEscapeKey } from '../../hooks/useEscapeKey';
 import { useOfflineStatus } from '../../hooks/useOfflineStatus';
 // import { toast } from '../../stores/toastStore';
 // Lazy-loaded modals — only loaded when user opens them
-const CompactProfile = React.lazy(() =>
-  import('./CompactProfile').then(m => ({ default: m.CompactProfile }))
-);
 const CompactAdvancedSettings = React.lazy(() =>
   import('./CompactAdvancedSettings').then(m => ({ default: m.CompactAdvancedSettings }))
 );
@@ -55,10 +53,10 @@ function getStoredNavigationMode(): NavigationMode {
 export const Header: React.FC<HeaderProps> = () => {
   const currentView = useAppStore(state => state.currentView);
   const { developmentMode, language, offlineEnabled, theme, setTheme } = useSettingsStore();
+  const user = useUserStore(state => state.user);
   const { returnToMenu } = useMenuNavigation();
   const { t } = useTranslation(language);
   const { isOnline } = useOfflineStatus();
-  const [showProfileForm, setShowProfileForm] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [showAbout, setShowAbout] = useState(false);
   const [showSideMenu, setShowSideMenu] = useState(false);
@@ -191,13 +189,6 @@ export const Header: React.FC<HeaderProps> = () => {
         </div>
       </div>
       {/* Compact Modals - rendered via portal to avoid event bubbling to header */}
-      {showProfileForm &&
-        createPortal(
-          <Suspense fallback={null}>
-            <CompactProfile isOpen={showProfileForm} onClose={() => setShowProfileForm(false)} />
-          </Suspense>,
-          document.body
-        )}
       {showSettings &&
         createPortal(
           <Suspense fallback={null}>
@@ -369,16 +360,18 @@ export const Header: React.FC<HeaderProps> = () => {
               <button
                 type="button"
                 className="header-side-menu__item header-side-menu__item--login"
-                aria-label={t('auth.loginToAccount')}
+                aria-label={user ? `${user.name} — perfil` : t('auth.loginToAccount')}
                 onClick={() => {
-                  setShowProfileForm(true);
                   setShowSideMenu(false);
+                  if (typeof window !== 'undefined' && (window as any).lpLogin) {
+                    (window as any).lpLogin.open();
+                  }
                 }}
               >
                 <span className="header-side-menu__icon" aria-hidden="true">
                   👤
                 </span>
-                <span className="header-side-menu__text">{t('auth.login')}</span>
+                <span className="header-side-menu__text">{user ? user.name : t('auth.login')}</span>
               </button>
               <a
                 href={portalHref()}

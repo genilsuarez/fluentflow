@@ -18,43 +18,43 @@
       "id": "startup-fundamentals",
       "title": "Startup Fundamentals and Business Models",
       "type": "theory",
-      "content": "A startup is a young company designed to grow rapidly by solving a problem or filling a market need. The founder or co-founders create the company, often starting with a <minimum viable product> (MVP) - a basic version to test the concept. <Product-market fit> means your product satisfies strong market demand.\n\nCommon business models include: <SaaS> (Software as a Service) with subscription revenue, <marketplace> platforms connecting buyers and sellers, freemium offering basic free service with paid premium features, and <B2B> (business-to-business) or <B2C> (business-to-consumer) approaches. <Scalability> is crucial - the ability to grow without proportional cost increases. <Disruption> occurs when innovation fundamentally changes an industry.\n\n<Pivot> means changing strategy based on market feedback. Companies must find ways to <monetize> their innovations — that is, to turn them into revenue-generating products or services."
+      "content": "A startup is designed to grow rapidly by solving a problem. Founders start with a <minimum viable product> (MVP) — a basic version to test the concept. <Product-market fit> means your product satisfies strong market demand.\n\nBusiness models: <SaaS> (subscription revenue), <marketplace> (connecting buyers/sellers), freemium, <B2B> and <B2C>. <Scalability> is crucial — growing without proportional cost increases.\n\n<Disruption> occurs when innovation fundamentally changes an industry. <Pivot> means changing strategy based on feedback. Companies must <monetize> their innovations — turning them into revenue."
     },
     {
       "id": "funding-investment",
       "title": "Funding and Investment Landscape",
       "type": "theory",
-      "content": "Startups typically progress through funding stages. <Bootstrapping> means self-funding initially. <Angel investors> are wealthy individuals providing early capital.\n\n<Seed funding> supports initial development. <Venture capital> (VC) firms invest larger amounts for equity stakes. Funding rounds progress: Series A (scaling), Series B (expansion), Series C+ (major growth).\n\n<Valuation> determines company worth. Equity represents ownership percentage. Dilution occurs when new investment reduces existing shareholders' percentages.\n\n<Burn rate> is monthly cash spending. Runway is how long current funds last. <Exit strategies> include IPO (initial public offering - going public) or acquisition (being bought by another company).\n\n<Unicorns> are startups valued over $1 billion."
+      "content": "Startups progress through funding stages. <Bootstrapping> means self-funding. <Angel investors> provide early capital. <Seed funding> supports initial development.\n\n<Venture capital> (VC) firms invest larger amounts for equity. Rounds progress: Series A (scaling), Series B (expansion), Series C+ (major growth). <Valuation> determines company worth; dilution reduces existing shareholders' percentages.\n\n<Burn rate> is monthly spending. Runway is how long funds last. <Exit strategies> include IPO (going public) or acquisition. <Unicorns> are startups valued over $1 billion."
     },
     {
       "id": "growth-scaling",
       "title": "Growth Strategies and Scaling",
       "type": "theory",
-      "content": "<Growth hacking> uses creative, low-cost strategies to acquire customers. <Customer acquisition cost> (CAC) is the expense to gain one customer. Lifetime value (LTV) is total revenue from a customer.\n\nHealthy businesses have LTV significantly higher than CAC. <Viral growth> occurs when users naturally recruit others. <Network effects> make products more valuable as more people use them.\n\n<Churn rate> measures customer loss. Retention keeps customers engaged. Metrics and KPIs (key performance indicators) track progress.\n\n<Agile methodology> enables rapid iteration. <Lean startup> principles emphasize testing assumptions quickly. Scaling requires building infrastructure, hiring talent, and maintaining company culture.\n\n<Operational efficiency> becomes crucial as you grow."
+      "content": "<Growth hacking> uses creative, low-cost strategies to acquire customers. <Customer acquisition cost> (CAC) is the expense to gain one customer. Lifetime value (LTV) is total revenue from a customer — healthy businesses keep LTV much higher than CAC.\n\n<Viral growth> occurs when users naturally recruit others. <Network effects> make products more valuable with scale. <Churn rate> measures customer loss.\n\n<Agile methodology> enables rapid iteration. <Lean startup> principles emphasize testing assumptions quickly. Scaling requires infrastructure, talent, and <operational efficiency>."
     },
     {
       "id": "examples",
       "title": "Entrepreneurial Conversations",
       "type": "examples",
-      "content": "Example 1: PITCHING IDEA - <We're disrupting education with AI-powered personalized learning. We've achieved product-market fit with 50,000 users.>\n\nExample 2: DISCUSSING FUNDING - <We're raising Series A of $5 million to scale sales and expand to Europe. Current runway is 18 months.>\n\nExample 3: ANALYZING METRICS - <Customer acquisition cost decreased 30% while lifetime value increased 50%, improving unit economics.> A startup gains <traction> when its product begins attracting users and generating consistent growth."
+      "content": "Example 1: PITCHING - <We're disrupting education with AI-powered personalized learning. We've achieved product-market fit with 50,000 users.>\n\nExample 2: FUNDING - <We're raising Series A of $5M to scale sales and expand to Europe. Current runway is 18 months.>\n\nExample 3: METRICS - <Customer acquisition cost decreased 30% while lifetime value increased 50%.> A startup gains <traction> when it begins attracting users and generating consistent growth."
     },
     {
       "id": "disruption-transformation",
       "title": "Digital Disruption and Industry Transformation",
       "type": "theory",
-      "content": "<Digital disruption> occurs when new technologies fundamentally alter how industries operate. Understanding this process is crucial for entrepreneurs and professionals alike.\n\nKey concepts:\n\n• <Disruptive innovation> - A product or service that initially serves a niche market but eventually displaces established competitors\n• <Platform economy> - Business models built on digital platforms that connect producers and consumers (Uber, Airbnb, Amazon)\n• <Network effects> - The phenomenon where a product becomes more valuable as more people use it\n• <Pivot> - A fundamental change in business strategy when the original approach isn't working\n\nIndustries being transformed:\n\n• <Fintech> is disrupting traditional banking through mobile payments and cryptocurrency\n• <Edtech> is reshaping education through personalized learning and AI tutoring\n• <Healthtech> is revolutionizing healthcare with telemedicine and wearable devices\n\nSuccessful entrepreneurs anticipate disruption rather than react to it."
+      "content": "<Digital disruption> occurs when new technologies fundamentally alter how industries operate.\n\n• <Disruptive innovation> - a product that initially serves a niche but eventually displaces established competitors\n• <Platform economy> - digital platforms connecting producers and consumers (Uber, Airbnb)\n• <Network effects> - a product becomes more valuable as more people use it\n• <Pivot> - a fundamental change in strategy when the original approach fails\n\nIndustries being transformed: <Fintech> (banking), <Edtech> (education), <Healthtech> (telemedicine and wearables). Successful entrepreneurs anticipate disruption rather than react to it."
     },
     {
       "id": "examples-2",
       "title": "Innovation Case Studies",
       "type": "examples",
-      "content": "Example 1: STARTUP PITCH - <Our platform uses machine learning to match freelance professionals with projects based on skills, availability, and work style preferences. We've achieved a 40% higher satisfaction rate compared to traditional recruitment methods.>\n\nExample 2: PIVOT STORY - <We originally built a photo-sharing app for conferences, but user data showed people were using it primarily for everyday photos. We pivoted to become a general social media platform, which proved to be the right decision.>\n\nExample 3: MARKET ANALYSIS - <The subscription economy has grown by over 400% in the past decade. Consumers increasingly prefer access over ownership, which has implications for everything from software to transportation to entertainment.>"
+      "content": "Example 1: STARTUP PITCH - <Our platform uses machine learning to match freelancers with projects based on skills and work style. We've achieved 40% higher satisfaction than traditional recruitment.>\n\nExample 2: PIVOT STORY - <We built a photo-sharing app for conferences, but users preferred it for everyday photos. We pivoted to general social media — the right decision.>\n\nExample 3: MARKET ANALYSIS - <The subscription economy grew over 400% in a decade. Consumers prefer access over ownership, impacting software, transportation, and entertainment.>"
     },
     {
       "id": "summary",
       "title": "The Entrepreneurial Mindset",
       "type": "summary",
-      "content": "Success in innovation and entrepreneurship requires more than understanding terminology - it demands a particular mindset. Embrace failure as learning, iterate quickly based on feedback, and focus relentlessly on customer needs. Build strong teams with complementary skills.\n\nUnderstand your metrics deeply. Network actively within the entrepreneurial ecosystem. Stay resilient through inevitable challenges.\n\nWhether you're founding a company, joining a startup, or working in innovation within established organizations, these concepts and vocabulary will serve you well. Remember that behind every successful company are countless failures and pivots. The key is persistence, adaptability, and continuous learning.\n\nThe innovation economy rewards those who solve real problems with scalable solutions."
+      "content": "Innovation requires more than terminology — it demands a mindset. Embrace failure as learning, iterate based on feedback, and focus on customer needs. Build teams with complementary skills.\n\nUnderstand your metrics. Network within the ecosystem. Stay resilient through challenges. Whether founding a company or working in innovation within established organizations, persistence, adaptability, and continuous learning are key."
     }
   ],
   "keyVocabulary": [
@@ -101,14 +101,10 @@
       "explanation": "Tech and startup culture frequently converts nouns into verbs and creates new terminology.",
       "examples": [
         "We need to pivot our strategy. (pivot as verb)",
-        "Let's ideate solutions. (ideate from idea)",
-        "We're scaling rapidly. (scale as verb)",
-        "They're disrupting the market. (disrupt as verb)",
-        "We need to onboard new users efficiently. (onboard as verb)"
+        "Let's ideate solutions. (ideate from idea)"
       ],
       "commonMistakes": [
-        "Overusing jargon: \"We need to leverage synergies to optimize our go-to-market strategy\" (too much)",
-        "Using jargon inappropriately outside business contexts"
+        "Overusing jargon: \"We need to leverage synergies to optimize our go-to-market strategy\" (too much)"
       ]
     },
     {
@@ -116,14 +112,10 @@
       "explanation": "Use precise language with percentages, ratios, and comparative structures.",
       "examples": [
         "Revenue increased by 150% year-over-year.",
-        "Our churn rate decreased from 5% to 2%.",
-        "We're growing at 20% month-over-month.",
-        "Customer acquisition cost is 3x lower than industry average.",
-        "We've achieved a 10:1 LTV to CAC ratio."
+        "Our churn rate decreased from 5% to 2%."
       ],
       "commonMistakes": [
-        "Vague metrics: 'We're growing fast' vs 'We're growing at 30% monthly'",
-        "Confusing percentage points and percentages: \"from 5% to 2%\" is a 3 percentage point decrease, not 3%"
+        "Vague metrics: 'We're growing fast' vs 'We're growing at 30% monthly'"
       ]
     }
   ]

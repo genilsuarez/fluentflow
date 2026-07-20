@@ -2,101 +2,121 @@
   {
     "sentence": "I need to ______ early tomorrow for school.",
     "correct": "wake up",
+    "tip": "Phrasal verb: piensa en lo que haces al sonar la alarma (2 palabras)",
     "explanation": "El phrasal verb <wake up> significa dejar de dormir."
   },
   {
     "sentence": "Please ______ the TV. It's too loud.",
     "correct": "turn off",
+    "tip": "Phrasal verb: usa turn + una dirección (2 palabras)",
     "explanation": "El phrasal verb <turn off> significa apagar un aparato."
   },
   {
     "sentence": "She ______ her coat because it was cold outside.",
     "correct": "put on",
+    "tip": "Phrasal verb: lo contrario de quitarse algo (2 palabras)",
     "explanation": "El phrasal verb <put on> significa ponerse ropa."
   },
   {
     "sentence": "Can you ______ this word in the dictionary?",
     "correct": "look up",
+    "tip": "Phrasal verb: usa look + una dirección (2 palabras)",
     "explanation": "El phrasal verb <look up> significa buscar información."
   },
   {
     "sentence": "He ______ smoking last year.",
     "correct": "gave up",
+    "tip": "Phrasal verb en pasado: abandonar un hábito (2 palabras)",
     "explanation": "El phrasal verb <give up> significa dejar de hacer algo."
   },
   {
     "sentence": "Don't ______ your shoes on the sofa.",
     "correct": "take off",
+    "tip": "Phrasal verb: lo contrario de ponerse algo (2 palabras)",
     "explanation": "El phrasal verb <take off> significa quitarse ropa o zapatos."
   },
   {
     "sentence": "I ran ______ of milk, so I went to the shop.",
     "correct": "out",
+    "tip": "Completa el phrasal verb: run ___ of (una partícula)",
     "explanation": "El phrasal verb <run out of> significa quedarse sin algo."
   },
   {
     "sentence": "It's raining cats and dogs means it's raining ______.",
     "correct": "very hard",
+    "tip": "Modismo: describe la intensidad de la lluvia (2 palabras)",
     "explanation": "El modismo <raining cats and dogs> significa que está lloviendo muy fuerte."
   },
   {
     "sentence": "Break a leg means ______.",
     "correct": "good luck",
+    "tip": "Modismo: lo que deseas a alguien antes de un show (2 palabras)",
     "explanation": "El modismo <break a leg> se usa para desearle buena suerte a alguien."
   },
   {
     "sentence": "A piece of cake means something is very ______.",
     "correct": "easy",
+    "tip": "Modismo: piensa en lo que implica algo que es 'pan comido'",
     "explanation": "El modismo <a piece of cake> significa que algo es muy fácil de hacer."
   },
   {
     "sentence": "Hit the books means to ______ hard.",
     "correct": "study",
+    "tip": "Modismo: lo que haces la noche antes de un examen",
     "explanation": "El modismo <hit the books> significa estudiar intensamente."
   },
   {
     "sentence": "Under the weather means feeling ______.",
     "correct": "sick",
+    "tip": "Modismo: un estado físico que te impide ir a trabajar",
     "explanation": "El modismo <under the weather> significa sentirse enfermo o mal."
   },
   {
     "sentence": "Let the cat out of the bag means to reveal a ______.",
     "correct": "secret",
+    "tip": "Modismo: algo que se mantiene oculto a propósito",
     "explanation": "El modismo <let the cat out of the bag> significa revelar un secreto."
   },
   {
     "sentence": "A person who teaches is a ______.",
     "correct": "teacher",
+    "tip": "Formación: verbo + sufijo de persona que hace la acción",
     "explanation": "Añadir el sufijo <-er> a <teach> forma el sustantivo <teacher> (una persona que enseña)."
   },
   {
     "sentence": "A person who acts in films is an ______.",
     "correct": "actor",
+    "tip": "Formación: verbo + sufijo de persona (variante latina)",
     "explanation": "Añadir el sufijo <-or> a <act> forma el sustantivo <actor>."
   },
   {
     "sentence": "The opposite of happy is ______.",
     "correct": "unhappy",
+    "tip": "Usa un prefijo para invertir el significado del adjetivo",
     "explanation": "Añadir el prefijo <un-> a <happy> crea el significado opuesto: <unhappy>."
   },
   {
     "sentence": "Something that is full of beauty is ______.",
     "correct": "beautiful",
+    "tip": "Formación: sustantivo + sufijo que convierte en adjetivo",
     "explanation": "Añadir el sufijo <-ful> a <beauty> forma el adjetivo <beautiful>."
   },
   {
     "sentence": "A person who plays music is a ______.",
     "correct": "musician",
+    "tip": "Formación: campo + sufijo de practicante profesional",
     "explanation": "Añadir el sufijo <-ian> a <music> forma el sustantivo <musician>."
   },
   {
     "sentence": "Something without care is ______.",
     "correct": "careless",
+    "tip": "Formación: sustantivo + sufijo que significa ausencia",
     "explanation": "Añadir el sufijo <-less> a <care> significa sin cuidado: <careless>."
   },
   {
-    "sentence": "She ______ to school every day. (Change: 'She goes to school' → negative)",
+    "sentence": "She ______ to school every day.",
     "correct": "doesn't go",
+    "tip": "Negativo en presente simple con she (auxiliar + verbo base)",
     "explanation": "Para formar el negativo en presente simple con she/he: <doesn't> + verbo en forma base."
   }
 ]

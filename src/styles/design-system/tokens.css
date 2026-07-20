@@ -126,6 +126,31 @@
   /* ─── Progress/score bars — homologado entre DeskFlow/HubFlow/FluentFlow/LyricFlow ─── */
   --lp-progress-height: 4px;
   --lp-progress-height-compact: 3px;
+
+  /* ─── Score/stats pill (header) — homologado entre DeskFlow/HubFlow/FluentFlow/LyricFlow.
+       Tokens dedicados, no reutilizan --lp-border/--lp-ink/etc. directamente para que
+       el pill nunca se desvíe si esos tokens generales cambian en una sola app. ─── */
+  --lp-score-height: 44px;
+  --lp-score-radius: 9999px;
+  --lp-score-border-width: 1.5px;
+  --lp-score-padding-x: 20px;
+  --lp-score-icon-size: 16px;
+  --lp-score-group-gap: 6px;
+  --lp-score-divider-width: 1.5px;
+  --lp-score-divider-gap: 14px;
+  --lp-score-font-family: 'Manrope', system-ui, sans-serif;
+  --lp-score-font-size: 0.8125rem;
+  --lp-score-font-weight: 600;
+  --lp-score-value-size: 1.125rem;
+  --lp-score-value-weight: 700;
+  --lp-score-bg: #f0ede7;
+  --lp-score-border: #e8e0d4;
+  --lp-score-shadow: 0 1px 3px rgba(44, 36, 24, 0.04), 0 4px 10px rgba(44, 36, 24, 0.04);
+  --lp-score-value-color: #2c2418;
+  --lp-score-label-color: #9c8e7c;
+  --lp-score-icon-color: #c87d0a;
+  --lp-score-success-color: #27865a;
+  --lp-score-error-color: #c0392b;
 }
 
 /* === LEARN PLATFORM TOKENS — DARK === */
@@ -164,6 +189,16 @@ html.dark {
   --lp-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.22), 0 2px 4px rgba(0, 0, 0, 0.18);
   --lp-shadow-lg: 0 8px 28px rgba(0, 0, 0, 0.25), 0 2px 6px rgba(0, 0, 0, 0.12);
   --lp-shadow-hover: 0 8px 28px rgba(0, 0, 0, 0.3), 0 2px 6px rgba(0, 0, 0, 0.15);
+
+  /* ─── Score/stats pill (header, dark) — homologado entre las 4 apps ─── */
+  --lp-score-bg: #151210;
+  --lp-score-border: #3d362c;
+  --lp-score-shadow: 0 2px 4px rgba(0, 0, 0, 0.22), 0 4px 12px rgba(0, 0, 0, 0.18);
+  --lp-score-value-color: #ede8e0;
+  --lp-score-label-color: #998e84;
+  --lp-score-icon-color: #e6a832;
+  --lp-score-success-color: #4fb07a;
+  --lp-score-error-color: #c0392b;
 }
 
 /* === BRIDGE: Map existing component variables to --lp-* tokens === */

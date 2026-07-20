@@ -5,9 +5,9 @@
 
 /* === SOURCE SENTENCE === */
 .transformation__source {
-  padding: 0.5rem 0;
-  margin-bottom: 0.75rem;
-  font-size: 1.1rem;
+  padding: var(--lp-space-sm) 0;
+  margin-bottom: var(--lp-space-sm);
+  font-size: var(--lp-text-base);
   font-weight: 500;
   color: var(--theme-text-primary, #1f2937);
   line-height: 1.5;

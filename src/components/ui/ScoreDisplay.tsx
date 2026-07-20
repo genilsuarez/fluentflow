@@ -1,5 +1,5 @@
 import React from 'react';
-import { Trophy } from 'lucide-react';
+import { Trophy, Target } from 'lucide-react';
 import { useAppStore } from '../../stores/appStore';
 import { useUserStore } from '../../stores/userStore';
 import { useSettingsStore } from '../../stores/settingsStore';
@@ -22,7 +22,7 @@ export const ScoreDisplay: React.FC = () => {
 
   return (
     <div
-      className={`score-display-compact ${isInGame ? 'score-display-compact--learning' : 'score-display-compact--menu'}`}
+      className={`lp-header-stats ${isInGame ? 'lp-header-stats--learning' : 'lp-header-stats--menu'}`}
       role="status"
       aria-live="polite"
       aria-label={
@@ -32,53 +32,53 @@ export const ScoreDisplay: React.FC = () => {
       }
     >
       <div
-        className={`score-display-compact__container ${isInGame ? 'score-display-compact__container--in-game' : 'score-display-compact__container--full'}`}
+        className={`lp-header-stats__container ${isInGame ? 'lp-header-stats__container--in-game' : 'lp-header-stats__container--full'}`}
       >
         {isInGame ? (
-          <div className="score-display-compact__session">
+          <div className="lp-header-stats__session">
             <div
-              className="score-display-compact__icon"
+              className="lp-header-stats__icon lp-header-stats__icon--target"
               role="img"
               aria-label={t('scores.sessionScore')}
             >
-              🎯
+              <Target size={16} aria-hidden="true" />
             </div>
-            <div className="score-display-compact__values">
+            <div className="lp-header-stats__values">
               <span
-                className="score-display-compact__correct"
+                className="lp-header-stats__correct"
                 aria-label={`${sessionScore.correct} correct answers`}
               >
                 {sessionScore.correct}
               </span>
-              <span className="score-display-compact__separator" aria-hidden="true">
+              <span className="lp-header-stats__separator" aria-hidden="true">
                 /
               </span>
               <span
-                className="score-display-compact__incorrect"
+                className="lp-header-stats__incorrect"
                 aria-label={`${sessionScore.incorrect} incorrect answers`}
               >
                 {sessionScore.incorrect}
               </span>
             </div>
             <div
-              className="score-display-compact__accuracy min-width-sm"
+              className="lp-header-stats__accuracy min-width-sm"
               aria-label={`${sessionScore.accuracy.toFixed(0)} percent accuracy`}
             >
               {sessionScore.total > 0 ? `${sessionScore.accuracy.toFixed(0)}%` : '0%'}
             </div>
           </div>
         ) : (
-          <div className="score-display-compact__global">
-            <div className="score-display-compact__main">
+          <div className="lp-header-stats__global">
+            <div className="lp-header-stats__main">
               <div
-                className="score-display-compact__icon score-display-compact__icon--trophy"
+                className="lp-header-stats__icon lp-header-stats__icon--trophy"
                 role="img"
                 aria-label={t('scores.globalScore')}
               >
                 <Trophy size={16} aria-hidden="true" />
               </div>
               <span
-                className="score-display-compact__total-score"
+                className="lp-header-stats__total-score"
                 aria-label={`${totalScore} total score points`}
               >
                 {totalScore}
@@ -86,13 +86,13 @@ export const ScoreDisplay: React.FC = () => {
             </div>
 
             {/* Module completion progress */}
-            <div className="score-display-compact__divider" aria-hidden="true" />
-            <div className="score-display-compact__progress">
-              <span className="score-display-compact__progress-label">
+            <div className="lp-header-stats__divider" aria-hidden="true" />
+            <div className="lp-header-stats__progress">
+              <span className="lp-header-stats__progress-label">
                 {completedModules}/{totalModules}
               </span>
               <div
-                className="score-display-compact__progress-bar"
+                className="lp-header-stats__progress-bar"
                 role="progressbar"
                 aria-valuenow={completionPercentage}
                 aria-valuemin={0}
@@ -100,7 +100,7 @@ export const ScoreDisplay: React.FC = () => {
                 aria-label={`${completionPercentage}% exercises completed, ${completedModules} of ${totalModules}`}
               >
                 <div
-                  className="score-display-compact__progress-fill"
+                  className="lp-header-stats__progress-fill"
                   style={{ '--progress-width': `${progressWidth}%` } as React.CSSProperties}
                 />
               </div>

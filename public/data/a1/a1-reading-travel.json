@@ -42,13 +42,13 @@
       "id": "restaurant",
       "title": "At a Restaurant",
       "type": "theory",
-      "content": "Eating out is common when traveling. Here are useful phrases:\n\n\n• <A table for two, please> - Asking for a seat\n• <Can I see the menu?> - Asking for the food list\n• <I'd like... / I'll have...> - Ordering food\n• <The bill, please> - Asking to pay\n• <Is service included?> - Asking about the tip\n\nExample: Good evening. A table for two, please. <Of course, follow me.> <Can I see the menu?> <Here you are.> <I'd like the chicken, please.>"
+      "content": "Eating out is common when traveling. Here are useful phrases:\n\n• <A table for two, please> - Asking for a seat\n• <Can I see the menu?> - Asking for the food list\n• <I'd like... / I'll have...> - Ordering food\n• <The bill, please> - Asking to pay\n\nExample: <A table for two, please.> <Can I see the menu?> <I'd like the chicken, please.>"
     },
     {
       "id": "examples-2",
       "title": "Travel Problem Solving",
       "type": "examples",
-      "content": "Example 1: LOST - <A: Excuse me, I'm lost. Where is the train station?\nB: Go straight and turn left. It's next to the park.\nA: Thank you very much!>\n\nExample 2: AT A SHOP - <A: How much is this?\nB: It's fifteen euros.\nA: Can I pay by card?\nB: Yes, of course.>\n\nExample 3: EMERGENCY - <A: I need help, please. I lost my passport.\nB: Don't worry. Go to the police station on Main Street.>"
+      "content": "Example 1: LOST - <A: Excuse me, I'm lost. Where is the train station?\nB: Go straight and turn left. It's next to the park.>\n\nExample 2: AT A SHOP - <A: How much is this?\nB: It's fifteen euros.\nA: Can I pay by card?>\n\nExample 3: EMERGENCY - <A: I need help. I lost my passport.\nB: Go to the police station on Main Street.>"
     },
     {
       "id": "summary",
@@ -98,16 +98,13 @@
   "grammarPoints": [
     {
       "rule": "Asking for Directions",
-      "explanation": "Use <Where is...?> or <How do I get to...?> to ask for directions. Always start with <Excuse me> to be polite.",
+      "explanation": "Use <Where is...?> or <How do I get to...?> to ask for directions.",
       "examples": [
         "Excuse me, where is the train station?",
-        "How do I get to the city center?",
-        "Is there a bank near here?",
-        "Which way to the museum?"
+        "How do I get to the city center?"
       ],
       "commonMistakes": [
-        "Forgetting to say \"Excuse me\" first",
-        "Using \"Where are...?\" instead of \"Where is...?\" for singular places"
+        "Forgetting to say \"Excuse me\" first"
       ]
     },
     {
@@ -115,13 +112,10 @@
       "explanation": "Use <Can I...?> or <Could you...?> to make polite requests. Add <please> to be more polite.",
       "examples": [
         "Can I have a window seat, please?",
-        "Could you call a taxi for me?",
-        "May I see the menu?",
-        "Could you speak more slowly, please?"
+        "Could you call a taxi for me?"
       ],
       "commonMistakes": [
-        "Being too direct without \"please\"",
-        "Using \"I want\" instead of \"Can I have\""
+        "Being too direct without \"please\""
       ]
     }
   ]
