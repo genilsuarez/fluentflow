@@ -98,10 +98,9 @@
   "grammarPoints": [
     {
       "rule": "Literary Critical Metalanguage",
-      "explanation": "Literary criticism employs sophisticated metalanguage to discuss textual features and interpretive.",
+      "explanation": "Literary criticism employs sophisticated metalanguage to discuss textual.",
       "examples": [
-        "The text enacts / performs / instantiates the very fragmentation it thematizes.",
-        "This reading foregrounds / privileges / elides certain textual elements."
+        "The text enacts / performs / instantiates the very fragmentation it thematizes."
       ],
       "commonMistakes": [
         "Confusing \"imply\" (text suggests) with \"infer\" (reader concludes)"
@@ -109,10 +108,9 @@
     },
     {
       "rule": "Interpretive Hedging and Assertiveness",
-      "explanation": "Balance interpretive confidence with appropriate qualification and acknowledgment of alternatives.",
+      "explanation": "Balance interpretive confidence with appropriate qualification and.",
       "examples": [
-        "The text arguably / conceivably / plausibly suggests...",
-        "One might read this as... though alternative interpretations remain viable."
+        "The text arguably / conceivably / plausibly suggests..."
       ],
       "commonMistakes": [
         "Excessive hedging undermining interpretive authority"

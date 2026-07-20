@@ -98,10 +98,9 @@
   "grammarPoints": [
     {
       "rule": "Academic Hedging and Boosting",
-      "explanation": "Use hedging to express appropriate caution and boosting to emphasize strong claims.",
+      "explanation": "Use hedging to express appropriate caution and boosting to emphasize strong.",
       "examples": [
-        "Hedging: The data suggest/indicate/appear to show...",
-        "Hedging: It could be argued that / One might contend that..."
+        "Hedging: The data suggest/indicate/appear to show..."
       ],
       "commonMistakes": [
         "Over-hedging: \"It might possibly perhaps suggest\" (too weak)"
@@ -109,10 +108,9 @@
     },
     {
       "rule": "Nominalization and Abstract Language",
-      "explanation": "Academic writing often converts verbs and adjectives into nouns for formal, abstract expression.",
+      "explanation": "Academic writing often converts verbs and adjectives into nouns for formal,.",
       "examples": [
-        "Verb to noun: analyze → analysis, investigate → investigation",
-        "Adjective to noun: significant → significance, different → difference"
+        "Verb to noun: analyze → analysis, investigate → investigation"
       ],
       "commonMistakes": [
         "Excessive nominalization creating unclear prose: \"The facilitation of the implementation\" vs \"facilitating implementation\""

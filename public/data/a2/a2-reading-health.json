@@ -98,10 +98,9 @@
   "grammarPoints": [
     {
       "rule": "Describing Health Problems",
-      "explanation": "Use <I have...> for illnesses and <My [body part] hurts> or <I have a pain in...> for pain.",
+      "explanation": "Use <I have...> for illnesses and <My [body part] hurts> or <I have a pain in...",
       "examples": [
-        "I have a cold/the flu/a fever.",
-        "My head hurts. / I have a headache."
+        "I have a cold/the flu/a fever."
       ],
       "commonMistakes": [
         "Saying \"I am cold\" when you mean \"I have a cold\" (different meanings!)"
@@ -111,8 +110,7 @@
       "rule": "Giving Health Advice with <Should>",
       "explanation": "Use <should> to give advice about health. Use <shouldn't> for negative advice.",
       "examples": [
-        "You should see a doctor.",
-        "You should drink more water."
+        "You should see a doctor."
       ],
       "commonMistakes": [
         "Using \"must\" instead of \"should\" (too strong for advice)"

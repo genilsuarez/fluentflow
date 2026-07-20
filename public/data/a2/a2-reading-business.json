@@ -98,10 +98,9 @@
   "grammarPoints": [
     {
       "rule": "Formal vs Informal Greetings",
-      "explanation": "In business, always use formal greetings. Say <Good morning> instead of <Hi> or <Hey>.",
+      "explanation": "In business, always use formal greetings. Say <Good morning> instead of <Hi> or.",
       "examples": [
-        "Formal: Good morning, Mr. Smith. How are you today?",
-        "Informal: Hey John! What's up?"
+        "Formal: Good morning, Mr. Smith. How are you today?"
       ],
       "commonMistakes": [
         "Using \"Hey\" in professional emails"
@@ -109,10 +108,9 @@
     },
     {
       "rule": "Polite Requests",
-      "explanation": "Use <Could you please...> or <Would you mind...> to make polite requests in business settings.",
+      "explanation": "Use <Could you please...> or <Would you mind...",
       "examples": [
-        "Could you please send me the report?",
-        "Would you mind helping me with this?"
+        "Could you please send me the report?"
       ],
       "commonMistakes": [
         "Using \"Give me...\" instead of \"Could you please give me...\""

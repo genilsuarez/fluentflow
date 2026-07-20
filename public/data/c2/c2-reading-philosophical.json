@@ -100,8 +100,7 @@
       "rule": "Philosophical Conditionals and Modal Logic",
       "explanation": "Philosophical discourse employs sophisticated conditional and modal structures.",
       "examples": [
-        "If it were the case that P, then necessarily Q would follow.",
-        "Were we to accept this premise, we would be committed to the conclusion."
+        "If it were the case that P, then necessarily Q would follow."
       ],
       "commonMistakes": [
         "Confusing logical possibility with metaphysical or epistemic possibility"
@@ -109,10 +108,9 @@
     },
     {
       "rule": "Philosophical Precision and Qualification",
-      "explanation": "Philosophy demands extreme precision through careful qualification and distinction.",
+      "explanation": "Philosophy demands extreme precision through careful qualification and.",
       "examples": [
-        "Strictly speaking, X entails Y, though in a looser sense...",
-        "This holds ceteris paribus (all else being equal)."
+        "Strictly speaking, X entails Y, though in a looser sense..."
       ],
       "commonMistakes": [
         "Insufficient qualification leading to overgeneralization"

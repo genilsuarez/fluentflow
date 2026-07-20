@@ -80,10 +80,9 @@
   "grammarPoints": [
     {
       "rule": "Be for Location and State",
-      "explanation": "Use <be> (am/is/are) when there is NO movement. You describe where something IS or how someone.",
+      "explanation": "Use <be> (am/is/are) when there is NO movement.",
       "examples": [
-        "I am at home. (location — already there)",
-        "She is in the kitchen. (location)"
+        "I am at home. (location — already there)"
       ],
       "commonMistakes": [
         "\"I am to school\" ❌ → \"I am at school\" ✓ (use 'at' not 'to' with be)"
@@ -91,10 +90,9 @@
     },
     {
       "rule": "Go for Movement and Activities",
-      "explanation": "Use <go> (go/goes) when there IS movement from one place to another, or for activities with go +.",
+      "explanation": "Use <go> (go/goes) when there IS movement from one place to another, or for.",
       "examples": [
-        "I go to school every day. (movement)",
-        "She goes to the gym. (movement)"
+        "I go to school every day. (movement)"
       ],
       "commonMistakes": [
         "\"I go at home\" ❌ → \"I go home\" ✓ (no preposition with 'home' after go)"

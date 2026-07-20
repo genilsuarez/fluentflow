@@ -406,15 +406,20 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                         </div>
                         {point.examples && point.examples.length > 0 && (
                           <div className="reading-component__grammar-examples">
-                            <div className="reading-component__grammar-examples-title">
-                              {t('reading.component.examples')}
-                            </div>
+                            {point.examples.length > 1 && (
+                              <div className="reading-component__grammar-examples-title">
+                                {t('reading.component.examples')}
+                              </div>
+                            )}
                             <ul className="reading-component__grammar-examples-list">
                               {point.examples.map((example, exIndex) => (
                                 <li
                                   key={exIndex}
                                   className="reading-component__grammar-example-item"
                                 >
+                                  {point.examples.length === 1 && (
+                                    <span className="reading-component__grammar-inline-label">Ej:</span>
+                                  )}
                                   {example}
                                 </li>
                               ))}
@@ -423,15 +428,20 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                         )}
                         {point.commonMistakes && point.commonMistakes.length > 0 && (
                           <div className="reading-component__grammar-mistakes">
-                            <div className="reading-component__grammar-mistakes-title">
-                              {t('reading.component.commonMistakes')}
-                            </div>
+                            {point.commonMistakes.length > 1 && (
+                              <div className="reading-component__grammar-mistakes-title">
+                                {t('reading.component.commonMistakes')}
+                              </div>
+                            )}
                             <ul className="reading-component__grammar-mistakes-list">
                               {point.commonMistakes.map((mistake, mIndex) => (
                                 <li
                                   key={mIndex}
                                   className="reading-component__grammar-mistake-item"
                                 >
+                                  {point.commonMistakes.length === 1 && (
+                                    <span className="reading-component__grammar-inline-label">⚠</span>
+                                  )}
                                   {mistake}
                                 </li>
                               ))}

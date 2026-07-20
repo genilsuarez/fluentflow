@@ -495,8 +495,14 @@ html.dark .quiz-component__container {
 }
 
 @keyframes hintFadeIn {
-  from { opacity: 0; transform: translateY(-4px); }
-  to { opacity: 0.9; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 0.9;
+    transform: translateY(0);
+  }
 }
 
 .dark .quiz-component__hint-toggle {

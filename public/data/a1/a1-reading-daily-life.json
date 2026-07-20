@@ -98,10 +98,9 @@
   "grammarPoints": [
     {
       "rule": "Simple Present for Routines",
-      "explanation": "Use simple present tense to talk about things you do regularly. Add <s> or <es> for he/she/it.",
+      "explanation": "Use simple present tense to talk about things you do regularly.",
       "examples": [
-        "I wake up at 7 AM every day.",
-        "She goes to work by car."
+        "I wake up at 7 AM every day."
       ],
       "commonMistakes": [
         "Forgetting to add \"s\" for he/she/it: \"He wake up\" ❌ → \"He wakes up\" ✓"
@@ -111,8 +110,7 @@
       "rule": "Time Expressions",
       "explanation": "Use <at> for specific times, <in> for parts of the day, and <on> for days.",
       "examples": [
-        "at 7 AM, at noon, at midnight",
-        "in the morning, in the afternoon, in the evening"
+        "at 7 AM, at noon, at midnight"
       ],
       "commonMistakes": [
         "Using wrong preposition: \"in 7 AM\" ❌ → \"at 7 AM\" ✓"

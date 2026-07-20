@@ -82,8 +82,7 @@
       "rule": "Defining vs Non-Defining",
       "explanation": "Defining = no commas, essential. Non-defining = commas, extra info.",
       "examples": [
-        "The car that I want is expensive.",
-        "My car, which is old, still works well."
+        "The car that I want is expensive."
       ],
       "commonMistakes": [
         "Using 'that' in non-defining clauses"
@@ -91,10 +90,9 @@
     },
     {
       "rule": "Pronoun Omission",
-      "explanation": "Omit who/which/that only in defining clauses when the pronoun is the object (another subject.",
+      "explanation": "Omit who/which/that only in defining clauses when the pronoun is the object.",
       "examples": [
-        "The film (that) we saw was great.",
-        "The man who lives here is kind. (cannot omit)"
+        "The film (that) we saw was great."
       ],
       "commonMistakes": [
         "Omitting the pronoun when it's the subject"

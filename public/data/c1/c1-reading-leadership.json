@@ -98,10 +98,9 @@
   "grammarPoints": [
     {
       "rule": "Executive-Level Nominalization and Abstract Expression",
-      "explanation": "Senior leadership communication often employs nominalization and abstract language for strategic.",
+      "explanation": "Senior leadership communication often employs nominalization and abstract.",
       "examples": [
-        "The implementation of this initiative requires the alignment of cross-functional stakeholders.",
-        "Our transformation necessitates the cultivation of adaptive capacity."
+        "The implementation of this initiative requires the alignment of cross-functional stakeholders."
       ],
       "commonMistakes": [
         "Excessive abstraction obscuring meaning: \"The facilitation of the optimization of the implementation\" (too complex)"
@@ -109,10 +108,9 @@
     },
     {
       "rule": "Strategic Conditionals and Hypothetical Scenarios",
-      "explanation": "Executive communication frequently explores contingencies and strategic alternatives.",
+      "explanation": "Executive communication frequently explores contingencies and strategic.",
       "examples": [
-        "Were we to pursue this strategy, we would need to reallocate significant resources.",
-        "Should market conditions deteriorate, we have contingency plans in place."
+        "Were we to pursue this strategy, we would need to reallocate significant resources."
       ],
       "commonMistakes": [
         "Mixing conditional types: \"If we would have known\" ❌ → \"Had we known\" or \"If we had known\" ✓"

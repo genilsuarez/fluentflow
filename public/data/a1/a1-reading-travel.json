@@ -100,8 +100,7 @@
       "rule": "Asking for Directions",
       "explanation": "Use <Where is...?> or <How do I get to...?> to ask for directions.",
       "examples": [
-        "Excuse me, where is the train station?",
-        "How do I get to the city center?"
+        "Excuse me, where is the train station?"
       ],
       "commonMistakes": [
         "Forgetting to say \"Excuse me\" first"
@@ -109,10 +108,9 @@
     },
     {
       "rule": "Making Requests While Traveling",
-      "explanation": "Use <Can I...?> or <Could you...?> to make polite requests. Add <please> to be more polite.",
+      "explanation": "Use <Can I...?> or <Could you...?> to make polite requests.",
       "examples": [
-        "Can I have a window seat, please?",
-        "Could you call a taxi for me?"
+        "Can I have a window seat, please?"
       ],
       "commonMistakes": [
         "Being too direct without \"please\""

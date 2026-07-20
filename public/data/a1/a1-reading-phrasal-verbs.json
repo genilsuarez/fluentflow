@@ -110,10 +110,9 @@
   "grammarPoints": [
     {
       "rule": "Phrasal Verb Structure",
-      "explanation": "A phrasal verb is a verb + particle (preposition or adverb). The particle changes the meaning.",
+      "explanation": "A phrasal verb is a verb + particle (preposition or adverb).",
       "examples": [
-        "look + up = search for information",
-        "turn + on = start"
+        "look + up = search for information"
       ],
       "commonMistakes": [
         "Forgetting the particle: 'I woke at 7' should be 'I woke up at 7'"

@@ -186,106 +186,111 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
 
       {/* Weekly + Levels side by side */}
       <div className="home-dash__progress-row">
-      {/* Weekly Progress */}
-      <div className="home-dash__weekly">
-        <h3 className="home-dash__section-title">
-          {t('dashboard.recentActivity', 'Últimos días')}
-        </h3>
-        <div className="home-dash__weekly-chart">
-          {progressData.length === 0 ? (
-            <div className="home-dash__empty">
-              <TrendingUp className="home-dash__empty-icon" />
-              <p>
-                {t('dashboard.completeModulesMessage', 'Complete modules to see your progress')}
-              </p>
-            </div>
-          ) : (
-            <div className="home-dash__bars">
-              {(() => {
-                const recent = progressData.slice(-3);
-                const maxPts = Math.max(...recent.map(d => d.totalScore || 0), 1);
-                return recent.map((day, i) => {
-                  const date = new Date(day.date);
-                  const dayName = date.toLocaleDateString(language, { weekday: 'short' });
-                  const pts = day.totalScore || 0;
-                  const pct = Math.max((pts / maxPts) * 100, pts > 0 ? 8 : 0);
-                  return (
-                    <div key={i} className="home-dash__bar-col">
-                      <div className="home-dash__bar">
-                        <div
-                          className="home-dash__bar-fill"
-                          style={
-                            {
-                              '--bar-h': `${pct}%`,
-                            } as React.CSSProperties
-                          }
-                        />
+        {/* Weekly Progress */}
+        <div className="home-dash__weekly">
+          <h3 className="home-dash__section-title">
+            {t('dashboard.recentActivity', 'Últimos días')}
+          </h3>
+          <div className="home-dash__weekly-chart">
+            {progressData.length === 0 ? (
+              <div className="home-dash__empty">
+                <TrendingUp className="home-dash__empty-icon" />
+                <p>
+                  {t('dashboard.completeModulesMessage', 'Complete modules to see your progress')}
+                </p>
+              </div>
+            ) : (
+              <div className="home-dash__bars">
+                {(() => {
+                  const recent = progressData.slice(-3);
+                  const maxPts = Math.max(...recent.map(d => d.totalScore || 0), 1);
+                  return recent.map((day, i) => {
+                    const date = new Date(day.date);
+                    const dayName = date.toLocaleDateString(language, { weekday: 'short' });
+                    const pts = day.totalScore || 0;
+                    const pct = Math.max((pts / maxPts) * 100, pts > 0 ? 8 : 0);
+                    return (
+                      <div key={i} className="home-dash__bar-col">
+                        <div className="home-dash__bar">
+                          <div
+                            className="home-dash__bar-fill"
+                            style={
+                              {
+                                '--bar-h': `${pct}%`,
+                              } as React.CSSProperties
+                            }
+                          />
+                        </div>
+                        <span className="home-dash__bar-label">{dayName}</span>
+                        <span className="home-dash__bar-value">{pts > 0 ? pts : '—'}</span>
                       </div>
-                      <span className="home-dash__bar-label">{dayName}</span>
-                      <span className="home-dash__bar-value">{pts > 0 ? pts : '—'}</span>
+                    );
+                  });
+                })()}
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* Level Progress — contextual: max 3 (previous, current, next) */}
+        <div className="home-dash__levels">
+          <h3 className="home-dash__section-title">
+            {t('learningPath.unitProgress', 'Level Progress')}
+          </h3>
+          <div className="home-dash__level-grid">
+            {(() => {
+              const activeIdx = stats.unitStats.findIndex(u => u.percentage < 100);
+              const currentIdx = activeIdx === -1 ? stats.unitStats.length - 1 : activeIdx;
+
+              let startIdx: number;
+              if (currentIdx === 0) {
+                startIdx = 0;
+              } else if (currentIdx >= stats.unitStats.length - 1) {
+                startIdx = Math.max(0, stats.unitStats.length - 3);
+              } else {
+                startIdx = currentIdx - 1;
+              }
+              const visibleUnits = stats.unitStats.slice(startIdx, startIdx + 3);
+
+              return visibleUnits.map(unitStat => {
+                const info = unitInfo[unitStat.unit as keyof typeof unitInfo];
+                if (!info) return null;
+                const isCurrent = unitStat.unit === stats.unitStats[currentIdx]?.unit;
+                return (
+                  <div
+                    key={unitStat.unit}
+                    className={`home-dash__level-item${isCurrent ? ' home-dash__level-item--active' : ''}`}
+                  >
+                    <div className="home-dash__level-circle">
+                      <svg viewBox="0 0 36 36" className="home-dash__level-svg">
+                        <path
+                          className="home-dash__level-ring-bg"
+                          d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <path
+                          className={`home-dash__level-ring-fill home-dash__level-ring-fill--${info.color}`}
+                          strokeDasharray={`${unitStat.percentage}, 100`}
+                          d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                      </svg>
+                      <span
+                        className={`home-dash__level-code home-dash__level-code--${info.color}`}
+                      >
+                        {info.code}
+                      </span>
                     </div>
-                  );
-                });
-              })()}
-            </div>
-          )}
-        </div>
-      </div>
-
-      {/* Level Progress — contextual: max 3 (previous, current, next) */}
-      <div className="home-dash__levels">
-        <h3 className="home-dash__section-title">
-          {t('learningPath.unitProgress', 'Level Progress')}
-        </h3>
-        <div className="home-dash__level-grid">
-          {(() => {
-            const activeIdx = stats.unitStats.findIndex(u => u.percentage < 100);
-            const currentIdx = activeIdx === -1 ? stats.unitStats.length - 1 : activeIdx;
-
-            let startIdx: number;
-            if (currentIdx === 0) {
-              startIdx = 0;
-            } else if (currentIdx >= stats.unitStats.length - 1) {
-              startIdx = Math.max(0, stats.unitStats.length - 3);
-            } else {
-              startIdx = currentIdx - 1;
-            }
-            const visibleUnits = stats.unitStats.slice(startIdx, startIdx + 3);
-
-            return visibleUnits.map(unitStat => {
-              const info = unitInfo[unitStat.unit as keyof typeof unitInfo];
-              if (!info) return null;
-              const isCurrent = unitStat.unit === stats.unitStats[currentIdx]?.unit;
-              return (
-                <div key={unitStat.unit} className={`home-dash__level-item${isCurrent ? ' home-dash__level-item--active' : ''}`}>
-                  <div className="home-dash__level-circle">
-                    <svg viewBox="0 0 36 36" className="home-dash__level-svg">
-                      <path
-                        className="home-dash__level-ring-bg"
-                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                      />
-                      <path
-                        className={`home-dash__level-ring-fill home-dash__level-ring-fill--${info.color}`}
-                        strokeDasharray={`${unitStat.percentage}, 100`}
-                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                      />
-                    </svg>
-                    <span className={`home-dash__level-code home-dash__level-code--${info.color}`}>
-                      {info.code}
-                    </span>
+                    <div className="home-dash__level-info">
+                      <span className="home-dash__level-name">{info.shortName}</span>
+                      <span className="home-dash__level-count">
+                        {unitStat.completed}/{unitStat.total}
+                      </span>
+                    </div>
                   </div>
-                  <div className="home-dash__level-info">
-                    <span className="home-dash__level-name">{info.shortName}</span>
-                    <span className="home-dash__level-count">
-                      {unitStat.completed}/{unitStat.total}
-                    </span>
-                  </div>
-                </div>
-              );
-            });
-          })()}
+                );
+              });
+            })()}
+          </div>
         </div>
-      </div>
       </div>
     </div>
   );

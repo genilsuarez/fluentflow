@@ -133,7 +133,13 @@ interface DashboardTabProps {
   avgScore: number;
   totalSessions: number;
   totalTimeSpent: number;
-  progressData: { date: string; sessionsCount: number; timeSpent: number; averageScore: number; totalScore: number }[];
+  progressData: {
+    date: string;
+    sessionsCount: number;
+    timeSpent: number;
+    averageScore: number;
+    totalScore: number;
+  }[];
   language: string;
   t: (key: string, fallback?: string) => string;
 }
@@ -309,7 +315,10 @@ const PathTab: React.FC<PathTabProps> = ({ stats, nextRecommended, unitInfo, t }
             const info = unitInfo[unitStat.unit as keyof typeof unitInfo];
             const isCurrent = unitStat.unit === stats.unitStats[currentIdx]?.unit;
             return (
-              <div key={unitStat.unit} className={`my-progress__unit-item${isCurrent ? ' my-progress__unit-item--active' : ''}`}>
+              <div
+                key={unitStat.unit}
+                className={`my-progress__unit-item${isCurrent ? ' my-progress__unit-item--active' : ''}`}
+              >
                 <div className="my-progress__unit-circle">
                   <svg className="my-progress__unit-svg" viewBox="0 0 36 36">
                     <path
@@ -323,7 +332,9 @@ const PathTab: React.FC<PathTabProps> = ({ stats, nextRecommended, unitInfo, t }
                     />
                   </svg>
                   <div className="my-progress__unit-center">
-                    <span className={`my-progress__unit-code my-progress__unit-code--${info?.color}`}>
+                    <span
+                      className={`my-progress__unit-code my-progress__unit-code--${info?.color}`}
+                    >
                       {info?.code}
                     </span>
                     <span className="my-progress__unit-pct">{unitStat.percentage}%</span>

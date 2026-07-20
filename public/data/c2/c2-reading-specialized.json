@@ -98,10 +98,9 @@
   "grammarPoints": [
     {
       "rule": "Technical Precision and Nominalization",
-      "explanation": "Specialized discourse employs dense nominalization and precise technical terminology.",
+      "explanation": "Specialized discourse employs dense nominalization and precise technical.",
       "examples": [
-        "The implementation of the protocol necessitated reconfiguration of the infrastructure.",
-        "Optimization of the algorithm resulted in significant performance enhancement."
+        "The implementation of the protocol necessitated reconfiguration of the infrastructure."
       ],
       "commonMistakes": [
         "Imprecise terminology: Using \"related to\" when \"correlated with\" or \"caused by\" is more accurate"
@@ -109,10 +108,9 @@
     },
     {
       "rule": "Hedging in Scientific and Technical Writing",
-      "explanation": "Expert discourse employs sophisticated hedging to express appropriate epistemic caution.",
+      "explanation": "Expert discourse employs sophisticated hedging to express appropriate epistemic.",
       "examples": [
-        "The data suggest / indicate / are consistent with the hypothesis.",
-        "It appears that / seems likely that / may be the case that..."
+        "The data suggest / indicate / are consistent with the hypothesis."
       ],
       "commonMistakes": [
         "Overconfidence: \"This proves\" when evidence only suggests"

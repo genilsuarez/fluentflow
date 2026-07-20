@@ -174,8 +174,7 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
       // Add input after each part except the last
       if (index < parts.length - 1) {
         const isCorrect =
-          showResult &&
-          normalizeAnswer(answer) === normalizeAnswer(currentExercise.correct || '');
+          showResult && normalizeAnswer(answer) === normalizeAnswer(currentExercise.correct || '');
         const isIncorrect = showResult && answer && !isCorrect;
 
         let inputClass = 'completion-component__input';
@@ -224,7 +223,8 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
   };
 
   const hasAnswer = answer.trim().length > 0;
-  const isAnswerCorrect = showResult && normalizeAnswer(answer) === normalizeAnswer(currentExercise?.correct || '');
+  const isAnswerCorrect =
+    showResult && normalizeAnswer(answer) === normalizeAnswer(currentExercise?.correct || '');
 
   return (
     <div className="completion-component__container">
@@ -282,9 +282,7 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
                 <X className="completion-component__feedback-icon completion-component__feedback-icon--incorrect" />
               )}
               <span className="completion-component__feedback">
-                {isAnswerCorrect
-                  ? t('common.correct')
-                  : t('common.incorrect')}
+                {isAnswerCorrect ? t('common.correct') : t('common.incorrect')}
               </span>
 
               {/* Correct answer flows naturally after incorrect */}

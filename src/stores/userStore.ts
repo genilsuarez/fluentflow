@@ -144,11 +144,16 @@ export const useUserStore = create<UserStore>()(
                 state.setUser({ id: parsed.id || String(Date.now()), name: parsed.name });
               }
             }
-          } catch { /* ignore parse errors */ }
+          } catch {
+            /* ignore parse errors */
+          }
         }
         // If user exists locally but lp-user is empty, write it out
         if (state?.user && !localStorage.getItem('lp-user')) {
-          localStorage.setItem('lp-user', JSON.stringify({ id: state.user.id, name: state.user.name }));
+          localStorage.setItem(
+            'lp-user',
+            JSON.stringify({ id: state.user.id, name: state.user.name })
+          );
         }
       },
     }
@@ -157,16 +162,20 @@ export const useUserStore = create<UserStore>()(
 
 // Listen for cross-tab changes to lp-user
 if (typeof window !== 'undefined') {
-  window.addEventListener('storage', (e) => {
+  window.addEventListener('storage', e => {
     if (e.key !== 'lp-user') return;
     const current = useUserStore.getState().user;
     if (e.newValue) {
       try {
         const parsed = JSON.parse(e.newValue);
         if (parsed?.name && parsed.name !== current?.name) {
-          useUserStore.setState({ user: { id: parsed.id || String(Date.now()), name: parsed.name } });
+          useUserStore.setState({
+            user: { id: parsed.id || String(Date.now()), name: parsed.name },
+          });
         }
-      } catch { /* ignore */ }
+      } catch {
+        /* ignore */
+      }
     } else if (current) {
       useUserStore.setState({ user: null });
     }

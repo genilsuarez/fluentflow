@@ -98,10 +98,9 @@
   "grammarPoints": [
     {
       "rule": "Business Jargon and Verbing Nouns",
-      "explanation": "Tech and startup culture frequently converts nouns into verbs and creates new terminology.",
+      "explanation": "Tech and startup culture frequently converts nouns into verbs and creates new.",
       "examples": [
-        "We need to pivot our strategy. (pivot as verb)",
-        "Let's ideate solutions. (ideate from idea)"
+        "We need to pivot our strategy. (pivot as verb)"
       ],
       "commonMistakes": [
         "Overusing jargon: \"We need to leverage synergies to optimize our go-to-market strategy\" (too much)"
@@ -111,8 +110,7 @@
       "rule": "Discussing Metrics and Performance",
       "explanation": "Use precise language with percentages, ratios, and comparative structures.",
       "examples": [
-        "Revenue increased by 150% year-over-year.",
-        "Our churn rate decreased from 5% to 2%."
+        "Revenue increased by 150% year-over-year."
       ],
       "commonMistakes": [
         "Vague metrics: 'We're growing fast' vs 'We're growing at 30% monthly'"
