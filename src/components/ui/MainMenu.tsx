@@ -575,27 +575,40 @@ export const MainMenu: React.FC = () => {
                         {isExpanded && (
                           <div className="category-section__body">
                             {(() => {
-                              // Determine which levels to show:
-                              // All unlocked/completed levels + the first fully-locked level.
-                              // Hide subsequent locked levels to reduce visual noise.
-                              let firstLockedFound = false;
-                              let hiddenCount = 0;
-                              let firstLockedLabel = '';
+                              // Nested expand: each level only reveals the next when expanded.
+                              // Past levels (completed) and the active level always show.
+                              // The first locked level only appears when the previous level is expanded.
+                              // Subsequent locked levels remain hidden behind a summary message.
                               const visibleLevels: typeof levels = [];
+                              let hiddenCount = 0;
+                              let firstHiddenLabel = '';
 
-                              for (const levelData of levels) {
+                              for (let i = 0; i < levels.length; i++) {
+                                const levelData = levels[i];
                                 const allLocked = levelData.modules.every(
                                   m => exerciseStatusMap.get(m.id)?.status === 'locked'
                                 );
 
-                                if (!allLocked || !firstLockedFound) {
+                                if (!allLocked) {
+                                  // Completed or active level — always visible
                                   visibleLevels.push(levelData);
-                                  if (allLocked && !firstLockedFound) {
-                                    firstLockedFound = true;
-                                    firstLockedLabel = levelData.label;
-                                  }
                                 } else {
-                                  hiddenCount++;
+                                  // Locked level: only show if previous level is expanded
+                                  const prevLevel = levels[i - 1];
+                                  const prevKey = prevLevel
+                                    ? `${category}:${prevLevel.level}`
+                                    : '';
+                                  const prevExpanded = prevKey
+                                    ? expandedLevels.has(prevKey)
+                                    : true;
+
+                                  if (prevExpanded && hiddenCount === 0) {
+                                    // Show only the first locked level (when prev is expanded)
+                                    visibleLevels.push(levelData);
+                                  } else {
+                                    hiddenCount++;
+                                    if (!firstHiddenLabel) firstHiddenLabel = levelData.label;
+                                  }
                                 }
                               }
 
@@ -700,7 +713,7 @@ export const MainMenu: React.FC = () => {
                                       <span className="category-section__levels-hidden-text">
                                         {t('common.levelsHidden', undefined, {
                                           count: hiddenCount,
-                                          level: firstLockedLabel,
+                                          level: firstHiddenLabel,
                                         })}
                                       </span>
                                     </div>
