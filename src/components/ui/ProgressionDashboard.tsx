@@ -9,6 +9,38 @@ import Fuse from 'fuse.js';
 import { MODE_I18N_KEYS, getLevelColor } from '../../utils/progressionDisplay';
 import '../../styles/components/progression-dashboard.css';
 
+function getModuleGridColumns(): number {
+  if (typeof window === 'undefined') return 4;
+  const w = window.innerWidth;
+  if (w >= 1024) return 4;
+  if (w >= 768) return 3;
+  return 2;
+}
+
+function useModuleGridColumns(): number {
+  const [columns, setColumns] = React.useState(getModuleGridColumns);
+  React.useEffect(() => {
+    const onResize = () => setColumns(getModuleGridColumns());
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, []);
+  return columns;
+}
+
+function useMobileAccordion(breakpoint = 767): boolean {
+  const [isMobile, setIsMobile] = React.useState(
+    () => typeof window !== 'undefined' && window.innerWidth <= breakpoint
+  );
+  React.useEffect(() => {
+    const mq = window.matchMedia(`(max-width: ${breakpoint}px)`);
+    const update = () => setIsMobile(mq.matches);
+    update();
+    mq.addEventListener('change', update);
+    return () => mq.removeEventListener('change', update);
+  }, [breakpoint]);
+  return isMobile;
+}
+
 interface ProgressionDashboardProps {
   onModuleSelect: (module: LearningModule) => void;
   searchQuery?: string;
@@ -34,6 +66,8 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
   } = useSettingsStore();
   const { t } = useTranslation(language);
   const [expandedUnits, setExpandedUnits] = React.useState<Set<number>>(new Set());
+  const moduleGridColumns = useModuleGridColumns();
+  const isMobileAccordion = useMobileAccordion();
 
   const nextRecommended = progression.getNextRecommendedModule();
 
@@ -103,9 +137,10 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
     // Expand the unit containing the next recommended module
     setExpandedUnits(prev => {
       if (prev.has(nextRecommended.unit)) return prev;
+      if (isMobileAccordion) return new Set([nextRecommended.unit]);
       return new Set([...prev, nextRecommended.unit]);
     });
-  }, [nextRecommended, searchQuery, completedModulesCount]);
+  }, [nextRecommended, searchQuery, completedModulesCount, isMobileAccordion]);
 
   // Helper: schedule scroll after the browser has completed layout
   const scheduleScroll = React.useCallback(() => {
@@ -145,15 +180,17 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
   }, [nextRecommended?.id, scheduleScroll]);
 
   const toggleUnit = (unit: number) => {
-    const newExpanded = new Set(expandedUnits);
-    const isExpanding = !newExpanded.has(unit);
+    const isExpanding = !expandedUnits.has(unit);
 
-    if (newExpanded.has(unit)) {
-      newExpanded.delete(unit);
-    } else {
-      newExpanded.add(unit);
-    }
-    setExpandedUnits(newExpanded);
+    setExpandedUnits(prev => {
+      if (prev.has(unit)) {
+        const next = new Set(prev);
+        next.delete(unit);
+        return next;
+      }
+      if (isMobileAccordion) return new Set([unit]);
+      return new Set([...prev, unit]);
+    });
 
     // If expanding a unit with the next module, scroll to it
     if (isExpanding && nextRecommended && nextRecommended.unit === unit) {
@@ -378,68 +415,61 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                     </div>
                   </div>
 
-                  {isExpanded && (
-                    <div className="progression-dashboard__modules">
-                      {(() => {
-                        // Calculate how many locked cards to show:
-                        // Fill the row of the last unlocked card + 1 full row + 1 peek card.
-                        // Based on 4 columns (desktop grid). At smaller breakpoints
-                        // this still produces a reasonable peek effect.
-                        const COLUMNS = 4;
+                  {isExpanded &&
+                    (() => {
+                      // Fill the row after the last active card + one preview row.
+                      const COLUMNS = moduleGridColumns;
 
-                        // In progress view, only nextRecommended is shown as "unlocked".
-                        // Other technically-unlocked modules display as locked to reinforce
-                        // linear progression UX (avoids confusing multiple active fronts).
-                        const effectiveStatus = (module: LearningModule) => {
-                          const raw = progression.getModuleStatus(module.id);
-                          if (raw === 'unlocked' && module.id !== nextRecommended?.id) {
-                            return 'locked';
-                          }
-                          return raw;
-                        };
-
-                        const unlockedCount = modules.filter(
-                          m => effectiveStatus(m) !== 'locked'
-                        ).length;
-                        const remainder = unlockedCount % COLUMNS;
-                        const toFillRow = remainder === 0 ? 0 : COLUMNS - remainder;
-                        // Show: fill current row + 1 full row + 1 full peek row
-                        const LOCKED_VISIBLE = toFillRow + COLUMNS + COLUMNS;
-
-                        let lockedShown = 0;
-                        let lockedHidden = 0;
-                        const visible: typeof modules = [];
-
-                        for (const module of modules) {
-                          const status = effectiveStatus(module);
-                          if (status === 'locked') {
-                            if (lockedShown < LOCKED_VISIBLE) {
-                              visible.push(module);
-                              lockedShown++;
-                            } else {
-                              lockedHidden++;
-                            }
-                          } else {
-                            visible.push(module);
-                          }
+                      // In progress view, only nextRecommended is shown as "unlocked".
+                      // Other technically-unlocked modules display as locked to reinforce
+                      // linear progression UX (avoids confusing multiple active fronts).
+                      const effectiveStatus = (module: LearningModule) => {
+                        const raw = progression.getModuleStatus(module.id);
+                        if (raw === 'unlocked' && module.id !== nextRecommended?.id) {
+                          return 'locked';
                         }
+                        return raw;
+                      };
 
-                        return (
-                          <>
-                            {visible.map((module, idx) => {
+                      const unlockedCount = modules.filter(
+                        m => effectiveStatus(m) !== 'locked'
+                      ).length;
+                      const remainder = unlockedCount % COLUMNS;
+                      const toFillRow = remainder === 0 ? 0 : COLUMNS - remainder;
+                      const LOCKED_VISIBLE = toFillRow + COLUMNS + 1;
+
+                      let lockedShown = 0;
+                      let lockedHidden = 0;
+                      const visible: typeof modules = [];
+
+                      for (const module of modules) {
+                        const status = effectiveStatus(module);
+                        if (status === 'locked') {
+                          if (lockedShown < LOCKED_VISIBLE) {
+                            visible.push(module);
+                            lockedShown++;
+                          } else {
+                            lockedHidden++;
+                          }
+                        } else {
+                          visible.push(module);
+                        }
+                      }
+
+                      return (
+                        <div className="progression-dashboard__modules-stack">
+                          <div
+                            className={`progression-dashboard__modules${lockedHidden > 0 ? ' progression-dashboard__modules--truncated' : ''}`}
+                          >
+                            {visible.map(module => {
                               const status = effectiveStatus(module);
                               const isCompleted = isModuleCompleted(module.id);
                               const isNext = nextRecommended?.id === module.id;
-                              // Mark the last row of locked cards as "peek" (visually clipped)
-                              const isPeek =
-                                status === 'locked' &&
-                                lockedHidden > 0 &&
-                                idx >= visible.length - COLUMNS;
 
                               return (
                                 <div
                                   key={module.id}
-                                  className={`progression-dashboard__module progression-dashboard__module--${status} module-card--${module.learningMode} ${isNext ? 'progression-dashboard__module--next' : ''} ${isPeek ? 'progression-dashboard__module--peek' : ''}`}
+                                  className={`progression-dashboard__module progression-dashboard__module--${status} module-card--${module.learningMode} ${isNext ? 'progression-dashboard__module--next' : ''}`}
                                   onClick={
                                     status !== 'locked'
                                       ? () => handleModuleClick(module)
@@ -486,19 +516,18 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                                 </div>
                               );
                             })}
-                            {lockedHidden > 0 && (
-                              <div className="progression-dashboard__locked-hidden">
-                                <Lock size={14} aria-hidden="true" />
-                                <span>
-                                  +{lockedHidden} {t('common.lockedModulesHidden')}
-                                </span>
-                              </div>
-                            )}
-                          </>
-                        );
-                      })()}
-                    </div>
-                  )}
+                          </div>
+                          {lockedHidden > 0 && (
+                            <div className="progression-dashboard__locked-hidden">
+                              <Lock size={14} aria-hidden="true" />
+                              <span>
+                                +{lockedHidden} {t('common.lockedModulesHidden')}
+                              </span>
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })()}
                 </div>
               );
             })

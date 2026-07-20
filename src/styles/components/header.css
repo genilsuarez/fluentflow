@@ -292,7 +292,27 @@
   }
 }
 
-/* === BACK BUTTON (learning mode) === */
+/* === LEARNING TOOLBAR (back + menu) === */
+.header-redesigned__learning-toolbar {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--header-spacing-sm);
+  flex-shrink: 0;
+}
+
+.header-redesigned__toolbar-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
+  touch-action: manipulation;
+  position: relative;
+}
+
 .header-redesigned__back-btn {
   width: 44px;
   height: 44px;
@@ -421,6 +441,36 @@
 
   html[data-navigation-mode='floating'] .header-redesigned--menu .header-redesigned__container {
     padding-left: var(--lp-header-floating-pad-left-compact);
+  }
+
+  /* ☰ ghost — app bar estándar mobile (sin círculo/borde/sombra web) */
+  .header-redesigned__menu-btn,
+  .header-redesigned__menu-btn--primary,
+  html[data-navigation-mode='floating'] .header-redesigned__menu-btn {
+    border: none;
+    border-radius: var(--lp-radius-md);
+    background: transparent;
+    box-shadow: none;
+    color: var(--lp-ink-soft, var(--header-text-secondary));
+    font-size: 1.0625rem;
+    font-weight: 400;
+  }
+
+  .header-redesigned__menu-btn:hover,
+  .header-redesigned__menu-btn--primary:hover,
+  html[data-navigation-mode='floating'] .header-redesigned__menu-btn:hover {
+    background: color-mix(in srgb, var(--lp-ink) 5%, transparent);
+    border-color: transparent;
+    box-shadow: none;
+    transform: none;
+    color: var(--lp-ink, var(--header-text-primary));
+  }
+
+  .header-redesigned__menu-btn:active,
+  .header-redesigned__menu-btn--primary:active,
+  html[data-navigation-mode='floating'] .header-redesigned__menu-btn:active {
+    background: color-mix(in srgb, var(--lp-ink) 9%, transparent);
+    transform: scale(0.97);
   }
 }
 
@@ -631,6 +681,13 @@
 .header-side-menu__nav-mode-toggle:focus-visible {
   outline: 2px solid var(--lp-accent);
   outline-offset: 2px;
+}
+
+/* Sidebar pin is desktop-only (≥1024px) — hide mode toggle on mobile/tablet */
+@media (max-width: 1023px) {
+  .header-side-menu__nav-mode-toggle {
+    display: none;
+  }
 }
 
 .header-side-menu__title {
@@ -967,39 +1024,96 @@
   }
 }
 
-/* === MOBILE LEARNING MODE - COMPACT NAVIGATION TRIGGER === */
-/* LearningProgressHeader handles the lesson UI; keep global navigation reachable. */
+/* === MOBILE LEARNING MODE — compact in-flow app bar === */
 @media (max-width: 767px) {
   .header-redesigned--learning-mode {
-    position: fixed;
-    top: max(8px, env(safe-area-inset-top));
-    left: max(8px, env(safe-area-inset-left));
-    z-index: 35;
-    width: 44px;
-    height: 44px;
-    min-height: 44px;
-    padding: 0;
-    border: 0;
-    background: transparent;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: calc(44px + env(safe-area-inset-top, 0px));
+    min-height: calc(44px + env(safe-area-inset-top, 0px));
+    padding-top: env(safe-area-inset-top, 0px);
+    z-index: var(--lp-navbtn-z, 35);
+    background: var(--header-bg);
+    border-bottom: 1px solid var(--lp-border-subtle, var(--lp-border));
     box-shadow: none;
   }
 
   .header-redesigned--learning-mode .header-redesigned__container {
-    display: block;
-    width: 44px;
+    display: flex;
+    align-items: center;
+    width: 100%;
     height: 44px;
     margin: 0;
-    padding: 0;
+    padding: 0 2px;
+    max-width: none;
   }
 
   .header-redesigned--learning-mode .header-redesigned__left {
-    display: block;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 44px;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .header-redesigned--learning-mode .header-redesigned__learning-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 44px;
+    gap: 0;
+  }
+
+  .header-redesigned--learning-mode .header-redesigned__toolbar-btn.header-redesigned__back-btn,
+  .header-redesigned--learning-mode .header-redesigned__toolbar-btn.header-redesigned__menu-btn {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
+    border: none;
+    border-radius: var(--lp-radius-md);
+    background: transparent;
+    box-shadow: none;
+    color: var(--lp-ink-soft);
+    position: static;
+    top: auto;
+    left: auto;
+  }
+
+  .header-redesigned--learning-mode .header-redesigned__menu-btn {
+    font-size: 1.0625rem;
+  }
+
+  .header-redesigned--learning-mode .header-redesigned__toolbar-btn.header-redesigned__back-btn:hover,
+  .header-redesigned--learning-mode .header-redesigned__toolbar-btn.header-redesigned__menu-btn:hover {
+    background: color-mix(in srgb, var(--lp-ink) 5%, transparent);
+    border-color: transparent;
+    box-shadow: none;
+    transform: none;
+    color: var(--lp-ink);
+  }
+
+  .header-redesigned--learning-mode .header-redesigned__toolbar-btn.header-redesigned__back-btn:active,
+  .header-redesigned--learning-mode .header-redesigned__toolbar-btn.header-redesigned__menu-btn:active {
+    background: color-mix(in srgb, var(--lp-ink) 9%, transparent);
+    transform: scale(0.97);
   }
 
   .header-redesigned--learning-mode .header-redesigned__brand,
   .header-redesigned--learning-mode .header-redesigned__center,
   .header-redesigned--learning-mode .header-redesigned__right {
     display: none;
+  }
+
+  html[data-navigation-mode='floating'] .header-redesigned--learning-mode .header-redesigned__menu-btn {
+    position: static;
+    top: auto;
+    left: auto;
   }
 }
 

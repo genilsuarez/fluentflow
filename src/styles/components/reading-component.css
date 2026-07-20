@@ -1333,20 +1333,22 @@
 
 /* === MOBILE SMALL (< 768px) - Responsive dimensions === */
 @media (max-width: 767px) {
-  /* Mobile: fill viewport so nav bar stays at bottom */
+  /* Mobile: fill parent flex column so nav bar stays pinned at bottom */
   .reading-component__container {
     max-width: 100%;
+    flex: 1;
+    min-height: 0;
     height: auto;
-    min-height: 100dvh;
     max-height: none;
     margin: 0;
     padding: 0.25rem;
     border-radius: 0;
     border: none;
     box-shadow: none;
+    overflow: hidden;
   }
 
-  /* Mobile: Compact padding */
+  /* Mobile: Compact padding — scroll inside content, not the page */
   .reading-component__content {
     flex: 1;
     min-height: 0;
@@ -1356,12 +1358,16 @@
     -webkit-overflow-scrolling: touch;
   }
 
-  /* Push game controls to bottom — sticky footer pattern */
+  /* Pin game controls to the bottom of the reading shell */
   .reading-component__container > .game-controls {
     margin-top: auto;
+    flex-shrink: 0;
     position: sticky;
     bottom: 0;
     z-index: 10;
+    background: var(--theme-bg-elevated, #ffffff);
+    border-top: 1px solid var(--theme-border-soft, #e5e7eb);
+    padding-bottom: max(0.375rem, env(safe-area-inset-bottom));
   }
 
   /* Mobile: Single column vocabulary */

@@ -579,6 +579,8 @@ html.dark .home-dash__level-code--indigo {
 
   .home-dash__hero-cta {
     grid-column: 1 / -1;
+    /* Card-style “continuar último módulo” — ruido en mobile; el progreso sigue en el hero. */
+    display: none;
   }
 
   .home-dash__hero-ring {
@@ -608,6 +610,10 @@ html.dark .home-dash__level-code--indigo {
 
   .home-dash__progress-row {
     flex-direction: column;
+  }
+
+  .home-dash__weekly {
+    display: none;
   }
 
   .home-dash__level-circle {

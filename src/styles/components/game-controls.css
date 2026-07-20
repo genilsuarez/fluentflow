@@ -114,6 +114,10 @@
     position: sticky;
     bottom: 0;
     z-index: 10;
+    flex-shrink: 0;
+    background: var(--lp-surface, #ffffff);
+    border-top: 1px solid var(--lp-border-subtle, #f0ebe3);
+    padding-bottom: max(0.375rem, env(safe-area-inset-bottom));
   }
 
   .game-controls__nav-icon {
@@ -380,6 +384,13 @@
 html.dark .game-controls {
   background-color: transparent;
   border-color: transparent;
+}
+
+@media (max-width: 768px) {
+  html.dark .game-controls {
+    background: var(--lp-surface, #252930);
+    border-top-color: var(--lp-border, #353b45);
+  }
 }
 
 html.dark .game-controls__nav-btn,

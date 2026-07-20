@@ -128,37 +128,69 @@ export const Header: React.FC<HeaderProps> = () => {
       <div className={`header-redesigned__container header-redesigned__container--${headerMode}`}>
         {/* Left Section: Back + Menu + Brand */}
         <div className="header-redesigned__left">
-          {isInGame && (
-            <button
-              onClick={() => returnToMenu()}
-              className="header-redesigned__back-btn"
-              title={t('navigation.backToMenu')}
-              aria-label={t('navigation.backToMenu')}
-            >
-              <ArrowLeft size={20} aria-hidden="true" />
-            </button>
+          {isInGame ? (
+            <>
+              <div
+                className="header-redesigned__learning-toolbar"
+                role="group"
+                aria-label={t('navigation.navigationAndSettings')}
+              >
+                <button
+                  onClick={() => returnToMenu()}
+                  className="header-redesigned__toolbar-btn header-redesigned__back-btn"
+                  title={t('navigation.backToMenu')}
+                  aria-label={t('navigation.backToMenu')}
+                >
+                  <ArrowLeft size={18} aria-hidden="true" />
+                </button>
+                <button
+                  onClick={handleMenuToggle}
+                  className={`header-redesigned__toolbar-btn header-redesigned__menu-btn${navigationMode === 'sidebar' ? ' header-redesigned__menu-btn--primary' : ''}`}
+                  title={t('navigation.openMenu')}
+                  aria-label={t('navigation.openMenu')}
+                  aria-expanded={showSideMenu}
+                  aria-controls="navigation-menu"
+                >
+                  <span className="header-redesigned__menu-icon" aria-hidden="true">
+                    ☰
+                  </span>
+                  <span className="sr-only">
+                    {showSideMenu ? t('navigation.closeMenu') : t('navigation.openMenuShort')}
+                  </span>
+                </button>
+              </div>
+              <div className="header-redesigned__brand">
+                <FluentFlowLogo size="md" className="header-redesigned__logo" />
+                <h1 className="header-redesigned__title">
+                  Fluent<em>Flow</em>
+                </h1>
+              </div>
+            </>
+          ) : (
+            <>
+              <button
+                onClick={handleMenuToggle}
+                className={`header-redesigned__menu-btn${navigationMode === 'sidebar' ? ' header-redesigned__menu-btn--primary' : ''}`}
+                title={t('navigation.openMenu')}
+                aria-label={t('navigation.openMenu')}
+                aria-expanded={showSideMenu}
+                aria-controls="navigation-menu"
+              >
+                <span className="header-redesigned__menu-icon" aria-hidden="true">
+                  ☰
+                </span>
+                <span className="sr-only">
+                  {showSideMenu ? t('navigation.closeMenu') : t('navigation.openMenuShort')}
+                </span>
+              </button>
+              <div className="header-redesigned__brand">
+                <FluentFlowLogo size="md" className="header-redesigned__logo" />
+                <h1 className="header-redesigned__title">
+                  Fluent<em>Flow</em>
+                </h1>
+              </div>
+            </>
           )}
-          <button
-            onClick={handleMenuToggle}
-            className={`header-redesigned__menu-btn${navigationMode === 'sidebar' ? ' header-redesigned__menu-btn--primary' : ''}`}
-            title={t('navigation.openMenu')}
-            aria-label={t('navigation.openMenu')}
-            aria-expanded={showSideMenu}
-            aria-controls="navigation-menu"
-          >
-            <span className="header-redesigned__menu-icon" aria-hidden="true">
-              ☰
-            </span>
-            <span className="sr-only">
-              {showSideMenu ? t('navigation.closeMenu') : t('navigation.openMenuShort')}
-            </span>
-          </button>
-          <div className="header-redesigned__brand">
-            <FluentFlowLogo size="md" className="header-redesigned__logo" />
-            <h1 className="header-redesigned__title">
-              Fluent<em>Flow</em>
-            </h1>
-          </div>
         </div>
         {/* Center Section: Score Display */}
         <div className="header-redesigned__center">

@@ -55,6 +55,12 @@ const generateId = (): string => {
   return `toast-${Date.now()}-${Math.random().toString(36).substring(2, 11)}`;
 };
 
+/** Toasts are desktop-only — hidden on mobile via CSS; skip render entirely. */
+const isMobileViewport = (): boolean => {
+  if (typeof window === 'undefined' || !window.matchMedia) return false;
+  return window.matchMedia('(max-width: 767px)').matches;
+};
+
 // Notify all listeners of state changes
 const notifyListeners = (): void => {
   globalState.listeners.forEach(listener => {
@@ -86,6 +92,8 @@ const toastStore = {
 
   // Show single toast (replaces any existing toast immediately)
   showToast(toast: Omit<ToastData, 'id'>) {
+    if (isMobileViewport()) return;
+
     const newToast: ToastData = {
       id: generateId(),
       duration: 4000,

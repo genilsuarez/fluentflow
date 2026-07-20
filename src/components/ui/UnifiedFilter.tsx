@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { createPortal } from 'react-dom';
 import {
   SlidersHorizontal,
   X,
@@ -137,6 +138,7 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
   const { t } = useTranslation(language);
   const [internalOpen, setInternalOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<FilterTab>('category');
+  const [isMobileSheet, setIsMobileSheet] = useState(false);
   const panelRef = useRef<HTMLDivElement>(null);
 
   const isOpen = controlledOpen ?? internalOpen;
@@ -150,9 +152,35 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
 
   const activeFilterCount = categories.length + learningModes.length + (level !== 'all' ? 1 : 0);
 
-  // Close on outside click
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 639px)');
+    const update = () => setIsMobileSheet(mq.matches);
+    update();
+    mq.addEventListener('change', update);
+    return () => mq.removeEventListener('change', update);
+  }, []);
+
+  useEffect(() => {
+    if (!isOpen || !isMobileSheet) return;
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [isOpen, isMobileSheet]);
+
   useEffect(() => {
     if (!isOpen) return;
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') handleToggle();
+    };
+    document.addEventListener('keydown', handleEscape);
+    return () => document.removeEventListener('keydown', handleEscape);
+  }, [isOpen, handleToggle]);
+
+  // Close on outside click (desktop dropdown only — mobile uses backdrop)
+  useEffect(() => {
+    if (!isOpen || isMobileSheet) return;
     const handleClick = (e: MouseEvent) => {
       if (panelRef.current && !panelRef.current.contains(e.target as Node)) {
         const btn = (e.target as Element).closest('.unified-filter__toggle-btn');
@@ -161,7 +189,7 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
     };
     document.addEventListener('mousedown', handleClick);
     return () => document.removeEventListener('mousedown', handleClick);
-  }, [isOpen, handleToggle]);
+  }, [isOpen, isMobileSheet, handleToggle]);
 
   const handleToggleCategory = (category: Category) => {
     const isActive = categories.includes(category);
@@ -202,6 +230,118 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
     },
   ];
 
+  const panel = (
+    <div
+      className={`unified-filter__panel${isMobileSheet ? ' unified-filter__panel--sheet' : ''}`}
+      ref={panelRef}
+      role="dialog"
+      aria-label="Filters"
+    >
+      {isMobileSheet && <div className="unified-filter__handle" aria-hidden="true" />}
+      <div className="unified-filter__header">
+        <div className="unified-filter__tabs" role="tablist">
+          {tabs.map(tab => (
+            <button
+              key={tab.key}
+              className={`unified-filter__tab${activeTab === tab.key ? ' unified-filter__tab--active' : ''}`}
+              onClick={() => setActiveTab(tab.key)}
+              role="tab"
+              aria-selected={activeTab === tab.key}
+              type="button"
+            >
+              {tab.icon}
+              <span className="unified-filter__tab-label">{tab.label}</span>
+              {tab.count > 0 && <span className="unified-filter__tab-count">{tab.count}</span>}
+            </button>
+          ))}
+        </div>
+        <button
+          className="unified-filter__close"
+          onClick={handleToggle}
+          aria-label="Close filters"
+          type="button"
+        >
+          <X size={16} />
+        </button>
+      </div>
+
+      <div className="unified-filter__content" role="tabpanel">
+        {activeTab === 'category' && (
+          <div className="unified-filter__chips">
+            {ALL_CATEGORIES.map(category => {
+              const isActive = categories.includes(category);
+              return (
+                <button
+                  key={category}
+                  className={`unified-filter__chip${isActive ? ' unified-filter__chip--active' : ''}`}
+                  onClick={() => handleToggleCategory(category)}
+                  aria-pressed={isActive}
+                  type="button"
+                >
+                  <span className="unified-filter__chip-emoji" aria-hidden="true">
+                    {CATEGORY_EMOJIS[category]}
+                  </span>
+                  <span className="unified-filter__chip-label">
+                    {t(CATEGORY_I18N_KEYS[category])}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+        )}
+
+        {activeTab === 'mode' && (
+          <div className="unified-filter__chips">
+            {ALL_MODES.map(mode => {
+              const isActive = learningModes.includes(mode);
+              return (
+                <button
+                  key={mode}
+                  className={`unified-filter__chip${isActive ? ' unified-filter__chip--active' : ''}`}
+                  onClick={() => handleToggleMode(mode)}
+                  aria-pressed={isActive}
+                  type="button"
+                >
+                  <span className="unified-filter__chip-icon" aria-hidden="true">
+                    {MODE_ICONS[mode]}
+                  </span>
+                  <span className="unified-filter__chip-label">{t(MODE_I18N_KEYS[mode])}</span>
+                </button>
+              );
+            })}
+          </div>
+        )}
+
+        {activeTab === 'level' && (
+          <div className="unified-filter__chips">
+            {ALL_LEVELS.map(lvl => {
+              const isActive = level === lvl;
+              return (
+                <button
+                  key={lvl}
+                  className={`unified-filter__chip unified-filter__chip--level${isActive ? ' unified-filter__chip--active' : ''}`}
+                  onClick={() => handleSelectLevel(lvl)}
+                  aria-pressed={isActive}
+                  type="button"
+                  style={
+                    isActive
+                      ? ({ '--level-color': LEVEL_COLORS[lvl] } as React.CSSProperties)
+                      : undefined
+                  }
+                >
+                  <span className="unified-filter__chip-emoji" aria-hidden="true">
+                    {LEVEL_EMOJIS[lvl]}
+                  </span>
+                  <span className="unified-filter__chip-label">{lvl.toUpperCase()}</span>
+                </button>
+              );
+            })}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+
   return (
     <div className="unified-filter">
       <button
@@ -217,111 +357,21 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
         )}
       </button>
 
-      {isOpen && (
-        <div className="unified-filter__panel" ref={panelRef} role="dialog" aria-label="Filters">
-          <div className="unified-filter__header">
-            <div className="unified-filter__tabs" role="tablist">
-              {tabs.map(tab => (
-                <button
-                  key={tab.key}
-                  className={`unified-filter__tab${activeTab === tab.key ? ' unified-filter__tab--active' : ''}`}
-                  onClick={() => setActiveTab(tab.key)}
-                  role="tab"
-                  aria-selected={activeTab === tab.key}
-                  type="button"
-                >
-                  {tab.icon}
-                  <span className="unified-filter__tab-label">{tab.label}</span>
-                  {tab.count > 0 && <span className="unified-filter__tab-count">{tab.count}</span>}
-                </button>
-              ))}
-            </div>
+      {isOpen && !isMobileSheet && panel}
+      {isOpen &&
+        isMobileSheet &&
+        createPortal(
+          <>
             <button
-              className="unified-filter__close"
-              onClick={handleToggle}
-              aria-label="Close filters"
               type="button"
-            >
-              <X size={16} />
-            </button>
-          </div>
-
-          <div className="unified-filter__content" role="tabpanel">
-            {activeTab === 'category' && (
-              <div className="unified-filter__chips">
-                {ALL_CATEGORIES.map(category => {
-                  const isActive = categories.includes(category);
-                  return (
-                    <button
-                      key={category}
-                      className={`unified-filter__chip${isActive ? ' unified-filter__chip--active' : ''}`}
-                      onClick={() => handleToggleCategory(category)}
-                      aria-pressed={isActive}
-                      type="button"
-                    >
-                      <span className="unified-filter__chip-emoji" aria-hidden="true">
-                        {CATEGORY_EMOJIS[category]}
-                      </span>
-                      <span className="unified-filter__chip-label">
-                        {t(CATEGORY_I18N_KEYS[category])}
-                      </span>
-                    </button>
-                  );
-                })}
-              </div>
-            )}
-
-            {activeTab === 'mode' && (
-              <div className="unified-filter__chips">
-                {ALL_MODES.map(mode => {
-                  const isActive = learningModes.includes(mode);
-                  return (
-                    <button
-                      key={mode}
-                      className={`unified-filter__chip${isActive ? ' unified-filter__chip--active' : ''}`}
-                      onClick={() => handleToggleMode(mode)}
-                      aria-pressed={isActive}
-                      type="button"
-                    >
-                      <span className="unified-filter__chip-icon" aria-hidden="true">
-                        {MODE_ICONS[mode]}
-                      </span>
-                      <span className="unified-filter__chip-label">{t(MODE_I18N_KEYS[mode])}</span>
-                    </button>
-                  );
-                })}
-              </div>
-            )}
-
-            {activeTab === 'level' && (
-              <div className="unified-filter__chips">
-                {ALL_LEVELS.map(lvl => {
-                  const isActive = level === lvl;
-                  return (
-                    <button
-                      key={lvl}
-                      className={`unified-filter__chip unified-filter__chip--level${isActive ? ' unified-filter__chip--active' : ''}`}
-                      onClick={() => handleSelectLevel(lvl)}
-                      aria-pressed={isActive}
-                      type="button"
-                      style={
-                        isActive
-                          ? ({ '--level-color': LEVEL_COLORS[lvl] } as React.CSSProperties)
-                          : undefined
-                      }
-                    >
-                      <span className="unified-filter__chip-emoji" aria-hidden="true">
-                        {LEVEL_EMOJIS[lvl]}
-                      </span>
-                      <span className="unified-filter__chip-label">{lvl.toUpperCase()}</span>
-                    </button>
-                  );
-                })}
-              </div>
-            )}
-          </div>
-        </div>
-      )}
+              className="unified-filter__backdrop"
+              onClick={handleToggle}
+              aria-label={t('levelFilter.collapse')}
+            />
+            {panel}
+          </>,
+          document.body
+        )}
     </div>
   );
 };

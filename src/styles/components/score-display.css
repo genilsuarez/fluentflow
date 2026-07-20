@@ -20,6 +20,7 @@
   justify-content: center;
   padding: 0 var(--lp-score-padding-x);
   background-color: var(--lp-score-bg);
+  background-image: none;
   border: var(--lp-score-border-width) solid var(--lp-score-border);
   border-radius: var(--lp-score-radius);
   font-family: var(--lp-score-font-family);
@@ -28,6 +29,7 @@
   color: var(--lp-score-label-color);
   box-shadow: var(--lp-score-shadow);
   box-sizing: border-box;
+  isolation: isolate;
 }
 
 .lp-header-stats__container--in-game {

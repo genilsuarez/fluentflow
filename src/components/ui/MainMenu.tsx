@@ -196,24 +196,53 @@ export const MainMenu: React.FC = () => {
     return groups;
   }, [modules, isModuleCompleted]);
 
+  const pendingCategoryScrollRef = useRef<Category | null>(null);
+
+  const scrollToFirstCategoryLesson = React.useCallback(
+    (category: Category, behavior: ScrollBehavior = 'smooth') => {
+      const container = gridRef.current;
+      if (!container) return;
+
+      const section = document.getElementById(`cat-${category}`)?.closest('.category-section');
+      const firstCard = section?.querySelector('[data-module-id]');
+      if (!firstCard) return;
+
+      const containerRect = container.getBoundingClientRect();
+      const cardRect = firstCard.getBoundingClientRect();
+      const scrollTop = container.scrollTop + (cardRect.top - containerRect.top) - 8;
+
+      container.scrollTo({
+        top: Math.max(0, scrollTop),
+        behavior,
+      });
+    },
+    []
+  );
+
   const toggleCategory = React.useCallback((category: Category) => {
     setExpandedCategories(prev => {
       const isExpanding = !prev.has(category);
-      // Accordion: only one open at a time
-      const next = isExpanding ? new Set([category]) : new Set<Category>();
-
       if (isExpanding) {
-        requestAnimationFrame(() => {
-          const header = document.getElementById(`cat-${category}`);
-          header?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        });
+        pendingCategoryScrollRef.current = category;
       }
-
-      return next;
+      // Accordion: only one open at a time
+      return isExpanding ? new Set([category]) : new Set<Category>();
     });
     // Reset level expansions when toggling categories
     setExpandedLevels(new Set());
   }, []);
+
+  useEffect(() => {
+    const category = pendingCategoryScrollRef.current;
+    if (!category || !expandedCategories.has(category)) return;
+    pendingCategoryScrollRef.current = null;
+
+    const timer = setTimeout(() => {
+      scrollToFirstCategoryLesson(category);
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, [expandedCategories, scrollToFirstCategoryLesson]);
 
   const toggleLevelExpanded = React.useCallback((category: string, level: string) => {
     const key = `${category}:${level}`;

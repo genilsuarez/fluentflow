@@ -147,12 +147,12 @@
   --lp-score-font-weight: 600;
   --lp-score-value-size: 1.125rem;
   --lp-score-value-weight: 700;
-  --lp-score-bg: #f0ede7;
-  --lp-score-border: #e8e0d4;
-  --lp-score-shadow: 0 1px 3px rgba(44, 36, 24, 0.04), 0 4px 10px rgba(44, 36, 24, 0.04);
+  --lp-score-bg: #ffffff;
+  --lp-score-border: #e5e7eb;
+  --lp-score-shadow: 0 0 0 1px rgba(15, 23, 42, 0.04), 0 1px 2px rgba(15, 23, 42, 0.06);
   --lp-score-value-color: #2c2418;
   --lp-score-label-color: #9c8e7c;
-  --lp-score-icon-color: #c87d0a;
+  --lp-score-icon-color: #2563eb;
   --lp-score-success-color: #27865a;
   --lp-score-error-color: #c0392b;
 
@@ -180,9 +180,9 @@
     (var(--lp-header-height-compact) - var(--lp-navbtn-size)) / 2
   );
   --lp-navbtn-offset-left: 16px;
-  --lp-header-floating-pad-left: calc(var(--lp-navbtn-offset-left) + var(--lp-navbtn-size) + 16px);
+  --lp-header-floating-pad-left: calc(var(--lp-navbtn-offset-left) + var(--lp-navbtn-size) + 18px);
   --lp-header-floating-pad-left-compact: calc(
-    var(--lp-navbtn-offset-left) + var(--lp-navbtn-size) + 6px
+    var(--lp-navbtn-offset-left) + var(--lp-navbtn-size) + 8px
   );
   --lp-header-title-size: 1.25rem;
   --lp-header-title-weight: 500;
@@ -196,24 +196,24 @@
   --lp-header-tag-tracking: 0.06em;
 }
 
-/* === LEARN PLATFORM TOKENS — DARK === */
+/* === LEARN PLATFORM TOKENS — DARK (slate suave, alineado con DeskFlow) === */
 html.dark {
-  --lp-bg: #1a1714;
-  --lp-bg-paper: #211d18;
-  --lp-surface: #282420;
-  --lp-surface-raised: #2e2a22;
-  --lp-surface-sunken: #151210;
+  --lp-bg: #181b20;
+  --lp-bg-paper: #1e2228;
+  --lp-surface: #252930;
+  --lp-surface-raised: #2b3038;
+  --lp-surface-sunken: #14171c;
 
-  --lp-border: #3d362c;
-  --lp-border-strong: #504839;
-  --lp-border-subtle: #2e2820;
+  --lp-border: #353b45;
+  --lp-border-strong: #454c58;
+  --lp-border-subtle: #2a2f38;
 
-  --lp-ink: #ede8e0;
-  --lp-ink-soft: #b5ada2;
-  --lp-muted: #998e84;
-  --lp-ink-inverse: #1a1714;
+  --lp-ink: #e8eaed;
+  --lp-ink-soft: #a8b0bc;
+  --lp-muted: #7a8494;
+  --lp-ink-inverse: #181b20;
 
-  --lp-accent-soft: #16233d;
+  --lp-accent-soft: #1a2744;
   --lp-primary-soft: #1a2a3d;
 
   --lp-success-soft: #1a2d20;
@@ -221,35 +221,35 @@ html.dark {
   --lp-warning-soft: #2d2510;
   --lp-info-soft: #1a2a3d;
 
-  --lp-cat-blue-soft: #1a2a3d;
-  --lp-cat-amber-soft: #2d2510;
-  --lp-cat-green-soft: #1a2d20;
-  --lp-cat-purple-soft: #221a30;
-  --lp-cat-teal-soft: #1a2d2d;
+  --lp-cat-blue-soft: #1e3350;
+  --lp-cat-amber-soft: #3d3018;
+  --lp-cat-green-soft: #1f3d28;
+  --lp-cat-purple-soft: #2e2240;
+  --lp-cat-teal-soft: #1f3838;
 
-  --lp-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.15);
-  --lp-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.22), 0 4px 12px rgba(0, 0, 0, 0.18);
-  --lp-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.22), 0 2px 4px rgba(0, 0, 0, 0.18);
-  --lp-shadow-lg: 0 8px 28px rgba(0, 0, 0, 0.25), 0 2px 6px rgba(0, 0, 0, 0.12);
-  --lp-shadow-hover: 0 8px 28px rgba(0, 0, 0, 0.3), 0 2px 6px rgba(0, 0, 0, 0.15);
+  --lp-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.12);
+  --lp-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.16), 0 4px 10px rgba(0, 0, 0, 0.12);
+  --lp-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.12);
+  --lp-shadow-lg: 0 8px 28px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.1);
+  --lp-shadow-hover: 0 8px 28px rgba(0, 0, 0, 0.24), 0 2px 6px rgba(0, 0, 0, 0.12);
 
   /* ─── Score/stats pill (header, dark) — homologado entre las 4 apps ─── */
-  --lp-score-bg: #151210;
-  --lp-score-border: #3d362c;
-  --lp-score-shadow: 0 2px 4px rgba(0, 0, 0, 0.22), 0 4px 12px rgba(0, 0, 0, 0.18);
-  --lp-score-value-color: #ede8e0;
-  --lp-score-label-color: #998e84;
-  --lp-score-icon-color: #e6a832;
-  --lp-score-success-color: #4fb07a;
+  --lp-score-bg: #1e2228;
+  --lp-score-border: #353b45;
+  --lp-score-shadow: 0 2px 4px rgba(0, 0, 0, 0.18), 0 4px 12px rgba(0, 0, 0, 0.14);
+  --lp-score-value-color: #e8eaed;
+  --lp-score-label-color: #7a8494;
+  --lp-score-icon-color: #6b9fe8;
+  --lp-score-success-color: #a8b0bc;
   --lp-score-error-color: #c0392b;
 
   /* Botón de navegación (dark) — homologado entre las 4 apps */
-  --lp-navbtn-border: #3d362c;
-  --lp-navbtn-bg: #282420;
-  --lp-navbtn-icon-color: #b5ada2;
-  --lp-navbtn-accent: #d4764e;
-  --lp-navbtn-shadow: 0 2px 4px rgba(0, 0, 0, 0.22), 0 4px 12px rgba(0, 0, 0, 0.18);
-  --lp-navbtn-shadow-hover: 0 4px 14px rgba(0, 0, 0, 0.22), 0 2px 6px rgba(0, 0, 0, 0.18);
+  --lp-navbtn-border: #353b45;
+  --lp-navbtn-bg: #252930;
+  --lp-navbtn-icon-color: #a8b0bc;
+  --lp-navbtn-accent: #2563eb;
+  --lp-navbtn-shadow: 0 2px 4px rgba(0, 0, 0, 0.18), 0 4px 12px rgba(0, 0, 0, 0.14);
+  --lp-navbtn-shadow-hover: 0 4px 14px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.14);
 }
 
 /* === BRIDGE: Map existing component variables to --lp-* tokens === */
@@ -257,7 +257,7 @@ html.dark {
 /* This bridge ensures zero regressions while the new palette takes effect */
 :root {
   /* Header variables → lp tokens */
-  --header-bg: transparent;
+  --header-bg: #ffffff;
   --header-border: var(--lp-border);
   --header-text-primary: var(--lp-ink);
   --header-text-secondary: var(--lp-ink-soft);
@@ -302,7 +302,7 @@ html.dark {
 }
 
 html.dark {
-  --header-bg: transparent;
+  --header-bg: var(--lp-surface);
   --header-border: var(--lp-border-strong);
   --header-text-primary: var(--lp-ink);
   --header-text-secondary: var(--lp-ink-soft);
@@ -335,10 +335,10 @@ body::before {
   inset: 0;
   pointer-events: none;
   z-index: 0;
-  opacity: 0.25;
+  opacity: 0.04;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
 }
 
 html.dark body::before {
-  opacity: 0.1;
+  opacity: 0.06;
 }

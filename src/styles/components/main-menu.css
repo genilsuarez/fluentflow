@@ -59,13 +59,8 @@
   flex-direction: column;
   box-sizing: border-box;
 
-  /* ENHANCED: Subtle gradient background for visual hierarchy */
-  background: linear-gradient(
-    135deg,
-    var(--theme-bg-elevated, #ffffff) 0%,
-    var(--theme-bg-subtle, #faf7f2) 50%,
-    var(--theme-bg-soft, #f5f1eb) 100%
-  );
+  /* ENHANCED: Clean white surface for modern displays */
+  background: var(--lp-surface, #ffffff);
 
   /* Subtle border for definition without being intrusive */
   border: 1px solid var(--lp-border);
@@ -679,10 +674,50 @@ html.dark .main-menu__no-results-icon {
     flex-shrink: 0;
   }
 
+  /* Single state toggle: show only the alternate view (not the active one) */
   .main-menu__view-toggle {
-    /* Lock height — same as desktop */
-    height: 2.8125rem;
+    background: transparent;
+    padding: 0;
+    gap: 0;
+    height: auto;
+    max-width: none;
+    width: auto;
     flex-shrink: 0;
+  }
+
+  .main-menu__view-btn--active {
+    display: none;
+  }
+
+  .main-menu__view-btn:not(.main-menu__view-btn--active) {
+    flex: none;
+    background: #2563eb;
+    color: #ffffff;
+    font-weight: 700;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    padding: 0 0.625rem;
+    border-radius: var(--lp-radius-md);
+  }
+
+  .main-menu__view-btn:not(.main-menu__view-btn--active):hover {
+    background: #1d4ed8;
+    color: #ffffff;
+  }
+
+  .main-menu__view-btn:not(.main-menu__view-btn--active) .main-menu__view-icon {
+    opacity: 1;
+  }
+
+  html.dark .main-menu__view-btn:not(.main-menu__view-btn--active),
+  .dark .main-menu__view-btn:not(.main-menu__view-btn--active) {
+    background: #2563eb;
+    color: #ffffff;
+  }
+
+  html.dark .main-menu__view-btn:not(.main-menu__view-btn--active):hover,
+  .dark .main-menu__view-btn:not(.main-menu__view-btn--active):hover {
+    background: #1d4ed8;
+    color: #ffffff;
   }
 
   .main-menu__view-icon {
