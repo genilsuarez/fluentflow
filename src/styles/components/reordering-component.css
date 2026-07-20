@@ -89,6 +89,10 @@
   background-color: rgba(59, 130, 246, 0.02);
 }
 
+.reordering__zone--answer:has(~ .reordering__feedback) {
+  margin-bottom: 0.125rem;
+}
+
 .reordering__zone-label {
   display: block;
   font-size: 0.8125rem;
@@ -193,8 +197,8 @@
 /* === FEEDBACK === */
 .reordering__feedback {
   border-radius: var(--radius-md, 0.375rem);
-  padding: 0.5rem 0.625rem;
-  margin-bottom: 0.375rem;
+  padding: 0.375rem 0.625rem;
+  margin-bottom: 0.25rem;
   font-size: 0.8125rem;
   line-height: 1.3;
 }

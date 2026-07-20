@@ -362,8 +362,8 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
         mode="reordering"
       />
 
-      {/* Hint toggle */}
-      {currentExercise.hint && (
+      {/* Hint toggle — hidden post-validation */}
+      {currentExercise.hint && !showResult && (
         <div className="reordering__hint-section">
           <button className="reordering__hint-toggle" onClick={() => setShowHint(!showHint)}>
             <Eye className="reordering__hint-icon" />
@@ -407,7 +407,8 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
         </div>
       </div>
 
-      {/* Word Bank */}
+      {/* Word Bank — hidden when empty post-validation */}
+      {!(showResult && availableWords.length === 0) && (
       <div className="reordering__zone reordering__zone--words">
         <label className="reordering__zone-label">{t('learning.wordBank')}</label>
         <div
@@ -436,6 +437,7 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
           )}
         </div>
       </div>
+      )}
 
       {/* Result feedback */}
       {showResult && (
