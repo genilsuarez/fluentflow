@@ -60,18 +60,52 @@ export const MainMenu: React.FC = () => {
   // Pre-compute module statuses for exercises view + progression-based statuses
   const { getModuleCompletion, isModuleCompleted } = useProgressStore();
 
-  // Exercises view: unlock all modules at or below the user's highest reached level.
+  // Exercises view: in all_modules mode, unlock every module of the user's current
+  // active level (first level not fully completed). Past levels show as completed,
+  // future levels stay locked. This removes the prerequisite-chain friction from the
+  // browse/exercise view while the progress view keeps strict gating.
+  const LEVEL_ORDER_EX = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'] as const;
+
   const exerciseStatusMap = React.useMemo(() => {
-    // Use the same progression service logic as the progress view:
-    // a module is only unlocked if ALL modules of the previous level are completed
-    // AND all its direct prerequisites are met.
+    // Determine the user's active level: first CEFR level that is NOT 100% completed.
+    const modulesPerLevel = new Map<string, LearningModule[]>();
+    for (const m of allModulesRaw) {
+      const lvl = Array.isArray(m.level) ? m.level[0] : m.level;
+      if (!lvl) continue;
+      if (!modulesPerLevel.has(lvl)) modulesPerLevel.set(lvl, []);
+      modulesPerLevel.get(lvl)!.push(m);
+    }
+
+    let activeLevel: string | null = null;
+    const completedLevels = new Set<string>();
+    for (const lvl of LEVEL_ORDER_EX) {
+      const lvlModules = modulesPerLevel.get(lvl);
+      if (!lvlModules || lvlModules.length === 0) continue;
+      const allDone = lvlModules.every(m => isModuleCompleted(m.id));
+      if (allDone) {
+        completedLevels.add(lvl);
+      } else if (!activeLevel) {
+        activeLevel = lvl;
+      }
+    }
+
     const map = new Map<
       string,
       { status: 'completed' | 'unlocked' | 'locked'; missingCount: number; progressPct: number }
     >();
     for (const m of modules) {
       const completion = getModuleCompletion(m.id);
-      const status = progression.getModuleStatus(m.id);
+      const mLevel = Array.isArray(m.level) ? m.level[0] : m.level;
+
+      let status: 'completed' | 'unlocked' | 'locked';
+      if (isModuleCompleted(m.id)) {
+        status = 'completed';
+      } else if (mLevel && (completedLevels.has(mLevel) || mLevel === activeLevel)) {
+        // Active level or below: unlock without prerequisite chain
+        status = 'unlocked';
+      } else {
+        status = progression.getModuleStatus(m.id);
+      }
 
       map.set(m.id, {
         status,
@@ -80,7 +114,7 @@ export const MainMenu: React.FC = () => {
       });
     }
     return map;
-  }, [modules, getModuleCompletion, progression]);
+  }, [modules, allModulesRaw, getModuleCompletion, isModuleCompleted, progression]);
 
   // Pre-compute hidden dependencies map once (avoids creating a new Map per card)
   const hiddenDepsMap = React.useMemo(() => {
@@ -570,20 +604,44 @@ export const MainMenu: React.FC = () => {
                                   {visibleLevels.map(({ level, label, modules: levelModules }) => {
                                     const levelKey = `${category}:${level}`;
                                     const isLevelExpanded = expandedLevels.has(levelKey);
+
+                                    // Past levels (all modules completed) collapse entirely
+                                    // behind "Ver más" — no visual value in highlighting them.
+                                    const isLevelPast = levelModules.every(
+                                      m => exerciseStatusMap.get(m.id)?.status === 'completed'
+                                    );
+                                    const defaultVisible = isLevelPast ? 0 : CARDS_PER_LEVEL;
+
                                     const visibleModules = isLevelExpanded
                                       ? levelModules
-                                      : levelModules.slice(0, CARDS_PER_LEVEL);
-                                    const hasMore = levelModules.length > CARDS_PER_LEVEL;
-                                    const remaining = levelModules.length - CARDS_PER_LEVEL;
+                                      : levelModules.slice(0, defaultVisible);
+                                    const hasMore = levelModules.length > defaultVisible;
+                                    const remaining = levelModules.length - defaultVisible;
 
                                     return (
-                                      <div key={level} className="category-section__level">
+                                      <div key={level} className={`category-section__level${isLevelPast && !isLevelExpanded ? ' category-section__level--collapsed' : ''}`}>
                                         <div
                                           className="category-section__level-tag"
                                           aria-label={`Nivel ${label}`}
                                         >
                                           {label}
                                         </div>
+                                        {/* Inline show-more for collapsed past levels */}
+                                        {isLevelPast && !isLevelExpanded && hasMore && (
+                                          <button
+                                            className="category-section__show-more category-section__show-more--inline"
+                                            onClick={() => toggleLevelExpanded(category, level)}
+                                            type="button"
+                                            aria-expanded={false}
+                                          >
+                                            {`${t('common.showMore')} (+${remaining})`}
+                                            <ChevronDown
+                                              size={14}
+                                              className="category-section__show-more-icon"
+                                            />
+                                          </button>
+                                        )}
+                                        {visibleModules.length > 0 && (
                                         <div className="category-section__grid">
                                           {visibleModules.map((module, index) => (
                                             <ModuleCard
@@ -610,7 +668,8 @@ export const MainMenu: React.FC = () => {
                                             />
                                           ))}
                                         </div>
-                                        {hasMore && (
+                                        )}
+                                        {hasMore && !(isLevelPast && !isLevelExpanded) && (
                                           <button
                                             className="category-section__show-more"
                                             onClick={() => toggleLevelExpanded(category, level)}
