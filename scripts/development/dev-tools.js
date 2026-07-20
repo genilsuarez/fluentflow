@@ -211,7 +211,8 @@ const workflows = {
     steps: [
       { type: 'command', cmd: 'node scripts/git/smart-commit.js --stage-all --auto --allow-empty', desc: 'Pre-build commit (clean working directory)' },
       { type: 'command', cmd: 'git pull --rebase', desc: 'Sync with remote' },
-      { type: 'command', cmd: 'npm run format:check', desc: 'Format' },
+      { type: 'command', cmd: 'npm run format', desc: 'Auto-format' },
+      { type: 'command', cmd: 'npm run format:check', desc: 'Format check' },
       // Phase 1: lint + types + security in parallel (all CPU-light)
       { type: 'parallel', cmds: [
         { cmd: 'npm run lint',             desc: 'ESLint' },
