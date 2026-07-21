@@ -521,13 +521,20 @@
     display: none;
   }
 
-  /* Floating: ☰ fijo — ocultar columna left y reservar franja */
+  /* Mobile/tablet: ☰ siempre en la barra — el launcher fijo es solo desktop ≥1024 */
   html[data-navigation-mode='floating'] .header-redesigned--menu .header-redesigned__left {
-    display: none;
+    display: flex;
   }
 
   html[data-navigation-mode='floating'] .header-redesigned--menu .header-redesigned__container {
-    padding-left: var(--lp-header-floating-pad-left-compact);
+    padding-left: var(--lp-header-pad-x-compact, 12px);
+  }
+
+  html[data-navigation-mode='floating'] .header-redesigned--menu .header-redesigned__menu-btn {
+    position: static;
+    top: auto;
+    left: auto;
+    z-index: auto;
   }
 
   /* ☰ ghost — app bar estándar mobile (sin círculo/borde/sombra web) */
@@ -1503,12 +1510,19 @@ body {
     padding-left: 0;
   }
 
-  html[data-navigation-mode='floating'] .header-redesigned__menu-btn {
-    top: var(--lp-navbtn-offset-top-compact);
+  /* Menu header compacto: priorizar ☰ + pill; ocultar greeting en tablet/mobile */
+  .header-redesigned--menu .header-redesigned__greeting {
+    display: none;
   }
 
-  html[data-navigation-mode='floating'] .header-redesigned__container {
-    padding-left: var(--lp-header-floating-pad-left-compact);
+  html[data-navigation-mode='floating'] .header-redesigned--menu .header-redesigned__menu-btn {
+    position: static;
+    top: auto;
+    left: auto;
+  }
+
+  html[data-navigation-mode='floating'] .header-redesigned--menu .header-redesigned__container {
+    padding-left: var(--lp-header-pad-x-compact, 12px);
   }
 }
 

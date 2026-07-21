@@ -391,6 +391,13 @@ html.dark .search-bar:focus-within {
   margin: 0 auto;
   width: 100%;
   max-width: 100%;
+  background: var(--lp-surface, #ffffff);
+  border-color: var(--lp-border);
+}
+
+.main-menu__search .search-bar:hover,
+.main-menu__search .search-bar:focus-within {
+  background: var(--lp-surface, #ffffff);
 }
 
 /* Dark mode integration */

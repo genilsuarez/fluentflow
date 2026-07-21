@@ -417,7 +417,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
 
                   {isExpanded &&
                     (() => {
-                      // Fill the row after the last active card + one preview row.
+                      // Fill the row after the last active card + one preview row (full columns only).
                       const COLUMNS = moduleGridColumns;
 
                       // In progress view, only nextRecommended is shown as "unlocked".
@@ -436,7 +436,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                       ).length;
                       const remainder = unlockedCount % COLUMNS;
                       const toFillRow = remainder === 0 ? 0 : COLUMNS - remainder;
-                      const LOCKED_VISIBLE = toFillRow + COLUMNS + 1;
+                      const LOCKED_VISIBLE = toFillRow + COLUMNS;
 
                       let lockedShown = 0;
                       let lockedHidden = 0;
@@ -453,6 +453,17 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                           }
                         } else {
                           visible.push(module);
+                        }
+                      }
+
+                      // Never leave a partial trailing row — trim excess locked previews.
+                      const rowOverflow = visible.length % COLUMNS;
+                      if (rowOverflow > 0) {
+                        for (let i = 0; i < rowOverflow; i++) {
+                          const removed = visible.pop();
+                          if (removed && effectiveStatus(removed) === 'locked') {
+                            lockedHidden++;
+                          }
                         }
                       }
 
