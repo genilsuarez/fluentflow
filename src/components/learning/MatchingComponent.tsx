@@ -446,7 +446,10 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
       {/* Unified Control Bar */}
       <div className="game-controls">
         {/* Home Navigation */}
-        <GameControlsExitButton onClick={handleReturnToMenu} title={t('learning.returnToMainMenu')} />
+        <GameControlsExitButton
+          onClick={handleReturnToMenu}
+          title={t('learning.returnToMainMenu')}
+        />
 
         <button
           onClick={triggerRestart}
@@ -484,10 +487,7 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
             >
               <Info className="game-controls__action-icon" />
             </button>
-            <button
-              onClick={finishExercise}
-              className="game-controls__primary-btn"
-            >
+            <button onClick={finishExercise} className="game-controls__primary-btn">
               <Check className="game-controls__primary-icon" />
               <span>{t('learning.finishExercise')}</span>
             </button>

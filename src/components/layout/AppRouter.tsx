@@ -78,10 +78,7 @@ const ModuleError: React.FC<{ error: Error; moduleId: string; onRetry: () => voi
       <div className="game-controls">
         <GameControlsExitButton onClick={handleGoToMenu} title={t('learning.returnToMainMenu')} />
 
-        <button
-          onClick={onRetry}
-          className="game-controls__primary-btn"
-        >
+        <button onClick={onRetry} className="game-controls__primary-btn">
           <RotateCcw className="game-controls__primary-icon" />
           <span>{t('errors.tryAgain')}</span>
         </button>

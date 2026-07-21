@@ -314,7 +314,10 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
       {/* Unified Control Bar */}
       <div className="game-controls">
         {/* Home Navigation */}
-        <GameControlsExitButton onClick={handleReturnToMenu} title={t('learning.returnToMainMenu')} />
+        <GameControlsExitButton
+          onClick={handleReturnToMenu}
+          title={t('learning.returnToMainMenu')}
+        />
 
         <button
           onClick={triggerRestart}
@@ -324,11 +327,7 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
           <RotateCcw size={16} aria-hidden="true" />
         </button>
 
-        <button
-          onClick={handleNext}
-          disabled={!showResult}
-          className="game-controls__primary-btn"
-        >
+        <button onClick={handleNext} disabled={!showResult} className="game-controls__primary-btn">
           <span>
             {currentIndex === processedQuestions.length - 1
               ? t('learning.finishQuiz')

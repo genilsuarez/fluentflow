@@ -404,7 +404,11 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
                       className="compact-settings__row-label"
                       title={t('settings.randomizeItemsDescription')}
                     >
-                      <Shuffle size={16} className="compact-settings__row-icon" aria-hidden="true" />
+                      <Shuffle
+                        size={16}
+                        className="compact-settings__row-icon"
+                        aria-hidden="true"
+                      />
                       {t('settings.randomizeItems')}
                     </label>
                     <input
@@ -465,9 +469,7 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
                   </div>
 
                   <div className="compact-settings__game">
-                    <label className="compact-settings__game-label">
-                      {t('settings.quizMode')}
-                    </label>
+                    <label className="compact-settings__game-label">{t('settings.quizMode')}</label>
                     <div className="compact-settings__game-stepper">
                       <button
                         type="button"

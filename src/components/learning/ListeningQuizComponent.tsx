@@ -358,7 +358,10 @@ const ListeningQuizComponent: React.FC<ListeningQuizComponentProps> = ({ module 
 
       {/* Unified Control Bar */}
       <div className="game-controls">
-        <GameControlsExitButton onClick={handleReturnToMenu} title={t('learning.returnToMainMenu')} />
+        <GameControlsExitButton
+          onClick={handleReturnToMenu}
+          title={t('learning.returnToMainMenu')}
+        />
 
         <button
           onClick={triggerRestart}
@@ -367,11 +370,7 @@ const ListeningQuizComponent: React.FC<ListeningQuizComponentProps> = ({ module 
         >
           <RotateCcw size={16} aria-hidden="true" />
         </button>
-        <button
-          onClick={handleNext}
-          disabled={!showResult}
-          className="game-controls__primary-btn"
-        >
+        <button onClick={handleNext} disabled={!showResult} className="game-controls__primary-btn">
           <span>
             {currentIndex < processedQuestions.length - 1
               ? t('learning.nextQuestion')

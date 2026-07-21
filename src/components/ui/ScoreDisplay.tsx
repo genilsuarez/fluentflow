@@ -18,8 +18,7 @@ export const ScoreDisplay: React.FC = () => {
   const completedFromStore = useProgressStore(state => Object.keys(state.completedModules).length);
 
   const isInGame = currentView !== 'menu';
-  const completedModules =
-    stats.totalModules > 0 ? stats.completedModules : completedFromStore;
+  const completedModules = stats.totalModules > 0 ? stats.completedModules : completedFromStore;
   const totalModules = stats.totalModules;
   const progressLabel =
     !modulesFetched && totalModules === 0 ? '…' : `${completedModules}/${totalModules || '…'}`;

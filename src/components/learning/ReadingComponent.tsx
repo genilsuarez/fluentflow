@@ -727,7 +727,10 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
       {/* Unified Control Bar */}
       <div className="game-controls">
         {/* Home Navigation */}
-        <GameControlsExitButton onClick={handleReturnToMenu} title={t('reading.navigation.returnToMenu')} />
+        <GameControlsExitButton
+          onClick={handleReturnToMenu}
+          title={t('reading.navigation.returnToMenu')}
+        />
 
         <button
           onClick={triggerRestart}
@@ -746,10 +749,7 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
           <ChevronLeft className="game-controls__nav-icon" />
         </button>
 
-        <button
-          onClick={handleNext}
-          className="game-controls__primary-btn"
-        >
+        <button onClick={handleNext} className="game-controls__primary-btn">
           <span>
             {isObjectivesPage
               ? t('reading.component.startReading')

@@ -236,7 +236,10 @@ const FlashcardComponent: React.FC<FlashcardComponentProps> = ({ module }) => {
       {/* Unified Control Bar */}
       <div className="game-controls">
         {/* Home Navigation */}
-        <GameControlsExitButton onClick={handleReturnToMenu} title={t('learning.returnToMainMenu')} />
+        <GameControlsExitButton
+          onClick={handleReturnToMenu}
+          title={t('learning.returnToMainMenu')}
+        />
 
         <button
           onClick={triggerRestart}
@@ -255,10 +258,7 @@ const FlashcardComponent: React.FC<FlashcardComponentProps> = ({ module }) => {
           <ChevronLeft className="game-controls__nav-icon" />
         </button>
 
-        <button
-          onClick={handleFlip}
-          className="game-controls__primary-btn"
-        >
+        <button onClick={handleFlip} className="game-controls__primary-btn">
           <RotateCcw className="game-controls__primary-icon" />
           <span>{t('learning.flip')}</span>
         </button>

@@ -464,7 +464,10 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
 
       {/* Control Bar */}
       <div className="game-controls">
-        <GameControlsExitButton onClick={handleReturnToMenu} title={t('learning.returnToMainMenu')} />
+        <GameControlsExitButton
+          onClick={handleReturnToMenu}
+          title={t('learning.returnToMainMenu')}
+        />
 
         <button
           onClick={triggerRestart}
@@ -494,10 +497,7 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
             </button>
           </>
         ) : (
-          <button
-            onClick={handleNext}
-            className="game-controls__primary-btn"
-          >
+          <button onClick={handleNext} className="game-controls__primary-btn">
             <span>
               {currentIndex === exercises.length - 1
                 ? t('learning.finishExercise')

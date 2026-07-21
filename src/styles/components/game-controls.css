@@ -67,7 +67,6 @@
   outline-offset: 2px;
 }
 
-
 .game-controls__nav-btn:hover:not(:disabled),
 .game-controls__icon-btn:hover:not(:disabled) {
   background-color: var(--theme-primary-blue, #3b82f6);

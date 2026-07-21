@@ -265,7 +265,10 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
 
       {/* Control bar */}
       <div className="game-controls">
-        <GameControlsExitButton onClick={handleReturnToMenu} title={t('learning.returnToMainMenu')} />
+        <GameControlsExitButton
+          onClick={handleReturnToMenu}
+          title={t('learning.returnToMainMenu')}
+        />
 
         <button
           onClick={triggerRestart}
@@ -285,10 +288,7 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
             <span>{t('learning.checkAnswer')}</span>
           </button>
         ) : (
-          <button
-            onClick={handleNext}
-            className="game-controls__primary-btn"
-          >
+          <button onClick={handleNext} className="game-controls__primary-btn">
             <span>
               {currentIndex === processedExercises.length - 1
                 ? t('learning.finishExercise')

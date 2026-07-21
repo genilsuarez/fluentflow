@@ -252,7 +252,10 @@ const TransformationComponent: React.FC<TransformationComponentProps> = ({ modul
 
       {/* Control bar */}
       <div className="game-controls">
-        <GameControlsExitButton onClick={handleReturnToMenu} title={t('learning.returnToMainMenu')} />
+        <GameControlsExitButton
+          onClick={handleReturnToMenu}
+          title={t('learning.returnToMainMenu')}
+        />
 
         <button
           onClick={triggerRestart}
@@ -272,10 +275,7 @@ const TransformationComponent: React.FC<TransformationComponentProps> = ({ modul
             <span>{t('learning.checkAnswer')}</span>
           </button>
         ) : (
-          <button
-            onClick={handleNext}
-            className="game-controls__primary-btn"
-          >
+          <button onClick={handleNext} className="game-controls__primary-btn">
             <span>
               {currentIndex === processedExercises.length - 1
                 ? t('learning.finishExercise')

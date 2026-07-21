@@ -339,7 +339,10 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
       {/* Unified Control Bar */}
       <div className="game-controls">
         {/* Home Navigation */}
-        <GameControlsExitButton onClick={handleReturnToMenu} title={t('learning.returnToMainMenu')} />
+        <GameControlsExitButton
+          onClick={handleReturnToMenu}
+          title={t('learning.returnToMainMenu')}
+        />
 
         <button
           onClick={triggerRestart}
@@ -359,10 +362,7 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
             <span>{t('learning.checkAnswer')}</span>
           </button>
         ) : (
-          <button
-            onClick={handleNext}
-            className="game-controls__primary-btn"
-          >
+          <button onClick={handleNext} className="game-controls__primary-btn">
             <span>
               {currentIndex === processedExercises.length - 1
                 ? t('learning.finishExercise')

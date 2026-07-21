@@ -372,7 +372,11 @@
 }
 
 .compact-settings__stepper-btn:hover:not(:disabled) {
-  background-color: color-mix(in srgb, var(--theme-primary-blue, #3b82f6) 14%, var(--theme-bg-soft, #e8e0d4));
+  background-color: color-mix(
+    in srgb,
+    var(--theme-primary-blue, #3b82f6) 14%,
+    var(--theme-bg-soft, #e8e0d4)
+  );
 }
 
 .compact-settings__stepper-btn:active:not(:disabled) {
@@ -483,7 +487,11 @@
 }
 
 .compact-settings__offline-level-item:hover {
-  background-color: color-mix(in srgb, var(--theme-primary-blue, #3b82f6) 8%, var(--theme-bg-subtle, #faf7f2));
+  background-color: color-mix(
+    in srgb,
+    var(--theme-primary-blue, #3b82f6) 8%,
+    var(--theme-bg-subtle, #faf7f2)
+  );
 }
 
 .compact-settings__offline-level-item input[type='checkbox'] {

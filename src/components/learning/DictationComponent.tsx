@@ -294,7 +294,10 @@ const DictationComponent: React.FC<DictationComponentProps> = ({ module }) => {
 
       {/* Unified Control Bar */}
       <div className="game-controls">
-        <GameControlsExitButton onClick={handleReturnToMenu} title={t('learning.returnToMainMenu')} />
+        <GameControlsExitButton
+          onClick={handleReturnToMenu}
+          title={t('learning.returnToMainMenu')}
+        />
 
         <button
           onClick={triggerRestart}
