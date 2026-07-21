@@ -49,6 +49,7 @@
 
   /* Learning views: lock viewport — inner panels scroll, controls stay visible */
   .layout-container:not([data-view='menu']) {
+    min-height: 0;
     height: 100dvh;
     max-height: 100dvh;
     overflow: hidden;
@@ -62,8 +63,19 @@
     flex-direction: column;
   }
 
+  .layout-container:not([data-view='menu']) .layout-main > * {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
   /* Learning component roots fill the remaining column below fixed nav padding */
-  .layout-container:not([data-view='menu']) .layout-main [class*='-component__container'] {
+  .layout-container:not([data-view='menu']) .layout-main [class*='-component__container'],
+  .layout-container:not([data-view='menu']) .layout-main .sorting-component,
+  .layout-container:not([data-view='menu']) .layout-main .matching-component,
+  .layout-container:not([data-view='menu']) .layout-main .reordering {
     flex: 1;
     min-height: 0;
     overflow: hidden;
@@ -73,6 +85,7 @@
 /* Learning views on mobile — header is in-flow (sticky app bar), no extra top pad */
 @media (max-width: 767px) {
   .layout-container:not([data-view='menu']) {
+    min-height: 0;
     height: 100dvh;
     max-height: 100dvh;
     overflow: hidden;
@@ -94,7 +107,18 @@
     flex-direction: column;
   }
 
-  .layout-container:not([data-view='menu']) .layout-main [class*='-component__container'] {
+  .layout-container:not([data-view='menu']) .layout-main > * {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .layout-container:not([data-view='menu']) .layout-main [class*='-component__container'],
+  .layout-container:not([data-view='menu']) .layout-main .sorting-component,
+  .layout-container:not([data-view='menu']) .layout-main .matching-component,
+  .layout-container:not([data-view='menu']) .layout-main .reordering {
     flex: 1;
     min-height: 0;
     overflow: hidden;

@@ -28,6 +28,16 @@ html:has(.layout-container[data-view='menu']) body {
   overflow: hidden;
 }
 
+/* Learning views on mobile: lock viewport — inner panels scroll, not the page */
+@media (max-width: 767px) {
+  html:has(.layout-container:not([data-view='menu'])),
+  html:has(.layout-container:not([data-view='menu'])) body,
+  html:has(.layout-container:not([data-view='menu'])) #root {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
 body {
   overflow-x: hidden;
   width: 100%;

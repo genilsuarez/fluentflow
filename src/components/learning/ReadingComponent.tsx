@@ -42,8 +42,9 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
   const { t } = useTranslation(language);
   useLearningCleanup();
 
-  // Capture initial height from objectives page to prevent layout jumps
+  // Capture initial height from objectives page to prevent layout jumps (desktop only)
   useLayoutEffect(() => {
+    if (window.matchMedia('(max-width: 767px)').matches) return;
     if (currentSectionIndex === -1 && containerRef.current && initialHeightRef.current === 0) {
       const height = containerRef.current.getBoundingClientRect().height;
       if (height > 0) {

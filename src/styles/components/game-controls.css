@@ -115,6 +115,13 @@
     padding-bottom: max(0.375rem, env(safe-area-inset-bottom));
   }
 
+  [class*='-component__container'] > .game-controls,
+  .sorting-component > .game-controls,
+  .matching-component > .game-controls,
+  .reordering > .game-controls {
+    margin: 0;
+  }
+
   .game-controls__nav-icon {
     width: 1.125rem;
     height: 1.125rem;
@@ -260,6 +267,14 @@
     padding: 0.375rem;
     flex-wrap: wrap;
     margin: 0.25rem 0;
+  }
+
+  /* Learning shells pin controls at the bottom — no extra margin that causes page scroll */
+  [class*='-component__container'] > .game-controls,
+  .sorting-component > .game-controls,
+  .matching-component > .game-controls,
+  .reordering > .game-controls {
+    margin: 0;
   }
 
   .game-controls__primary-btn {

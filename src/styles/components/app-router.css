@@ -1,7 +1,9 @@
 /* AppRouter Component */
 .app-router {
-  min-height: calc(100dvh - 64px);
-  height: 100%;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 /* All learning component containers on mobile */

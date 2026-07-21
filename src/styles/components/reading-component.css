@@ -28,7 +28,7 @@
   width: 100%;
   max-width: 900px;
   min-height: clamp(405px, 70vh, 600px);
-  max-height: 100vh;
+  max-height: 100dvh;
   margin: 0 auto;
   padding: 0.375rem;
   display: flex;
@@ -323,7 +323,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 100dvh;
   padding: var(--reading-spacing-lg);
   background: var(--reading-bg-primary);
 }
@@ -1334,6 +1334,7 @@
 
   /* Pin game controls to the bottom of the reading shell */
   .reading-component__container > .game-controls {
+    margin: 0;
     margin-top: auto;
     flex-shrink: 0;
     position: sticky;
