@@ -11,18 +11,21 @@ import '../../styles/components/progression-dashboard.css';
 
 function getModuleGridColumns(): number {
   if (typeof window === 'undefined') return 4;
-  const w = window.innerWidth;
-  if (w >= 1024) return 4;
-  if (w >= 768) return 3;
-  return 2;
+  if (window.matchMedia('(min-width: 1024px)').matches) return 4;
+  if (window.matchMedia('(min-width: 768px)').matches) return 3;
+  return 1;
 }
 
 function useModuleGridColumns(): number {
   const [columns, setColumns] = React.useState(getModuleGridColumns);
   React.useEffect(() => {
-    const onResize = () => setColumns(getModuleGridColumns());
-    window.addEventListener('resize', onResize);
-    return () => window.removeEventListener('resize', onResize);
+    const mqs = [
+      window.matchMedia('(min-width: 1024px)'),
+      window.matchMedia('(min-width: 768px)'),
+    ];
+    const update = () => setColumns(getModuleGridColumns());
+    mqs.forEach(mq => mq.addEventListener('change', update));
+    return () => mqs.forEach(mq => mq.removeEventListener('change', update));
   }, []);
   return columns;
 }
@@ -63,6 +66,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
     setLearningModes,
     setLevel,
     theme,
+    developmentMode,
   } = useSettingsStore();
   const { t } = useTranslation(language);
   const [expandedUnits, setExpandedUnits] = React.useState<Set<number>>(new Set());
@@ -424,10 +428,14 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
 
                       // In progress view, only nextRecommended is shown as "unlocked".
                       // Other technically-unlocked modules display as locked to reinforce
-                      // linear progression UX (avoids confusing multiple active fronts).
+                      // linear progression UX — skipped in development mode.
                       const effectiveStatus = (module: LearningModule) => {
                         const raw = progression.getModuleStatus(module.id);
-                        if (raw === 'unlocked' && module.id !== nextRecommended?.id) {
+                        if (
+                          !developmentMode &&
+                          raw === 'unlocked' &&
+                          module.id !== nextRecommended?.id
+                        ) {
                           return 'locked';
                         }
                         return raw;
@@ -437,81 +445,87 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                         ? modules.findIndex(m => m.id === nextRecommended.id)
                         : -1;
 
+                      let prefix: LearningModule[] = [];
+                      let suffixVisible: LearningModule[] = modules;
+                      let lockedHidden = 0;
+                      let showCompletedToggle = false;
                       let collapsibleCompleted = 0;
-                      if (nextIndex > 0) {
-                        const beforeNextCount = nextIndex;
-                        if (beforeNextCount > COLUMNS) {
-                          collapsibleCompleted = beforeNextCount - COLUMNS;
-                        }
-                      } else if (nextIndex === -1) {
-                        const allCompleted =
-                          modules.length > 0 &&
-                          modules.every(m => progression.getModuleStatus(m.id) === 'completed');
-                        if (allCompleted && modules.length > COLUMNS) {
-                          collapsibleCompleted = modules.length - COLUMNS;
-                        }
-                      }
-
                       const isCompletedExpanded =
                         expandedCompletedUnits.has(unit) || !!searchQuery.trim();
-                      const showCompletedToggle = collapsibleCompleted > 0 && !searchQuery.trim();
 
-                      let prefix: LearningModule[] = [];
-                      let suffix: LearningModule[] = modules;
-
-                      if (nextIndex > 0) {
-                        const beforeNext = modules.slice(0, nextIndex);
-                        suffix = modules.slice(nextIndex);
-                        if (isCompletedExpanded || beforeNext.length <= COLUMNS) {
-                          prefix = beforeNext;
-                        } else {
-                          prefix = beforeNext.slice(-COLUMNS);
-                        }
-                      } else if (nextIndex === -1) {
-                        const allCompleted =
-                          modules.length > 0 &&
-                          modules.every(m => progression.getModuleStatus(m.id) === 'completed');
-                        if (allCompleted) {
-                          suffix = [];
-                          if (isCompletedExpanded || modules.length <= COLUMNS) {
-                            prefix = modules;
-                          } else {
-                            prefix = modules.slice(-COLUMNS);
+                      if (!developmentMode) {
+                        if (nextIndex > 0) {
+                          const beforeNextCount = nextIndex;
+                          if (beforeNextCount > COLUMNS) {
+                            collapsibleCompleted = beforeNextCount - COLUMNS;
+                          }
+                        } else if (nextIndex === -1) {
+                          const allCompleted =
+                            modules.length > 0 &&
+                            modules.every(m => progression.getModuleStatus(m.id) === 'completed');
+                          if (allCompleted && modules.length > COLUMNS) {
+                            collapsibleCompleted = modules.length - COLUMNS;
                           }
                         }
-                      }
 
-                      const unlockedCount = suffix.filter(
-                        m => effectiveStatus(m) !== 'locked'
-                      ).length;
-                      const remainder = unlockedCount % COLUMNS;
-                      const toFillRow = remainder === 0 ? 0 : COLUMNS - remainder;
-                      const LOCKED_VISIBLE = toFillRow + COLUMNS;
+                        showCompletedToggle = collapsibleCompleted > 0 && !searchQuery.trim();
 
-                      let lockedShown = 0;
-                      let lockedHidden = 0;
-                      const suffixVisible: LearningModule[] = [];
+                        let suffix: LearningModule[] = modules;
 
-                      for (const module of suffix) {
-                        const status = effectiveStatus(module);
-                        if (status === 'locked') {
-                          if (lockedShown < LOCKED_VISIBLE) {
+                        if (nextIndex > 0) {
+                          const beforeNext = modules.slice(0, nextIndex);
+                          suffix = modules.slice(nextIndex);
+                          if (isCompletedExpanded || beforeNext.length <= COLUMNS) {
+                            prefix = beforeNext;
+                          } else {
+                            prefix = beforeNext.slice(-COLUMNS);
+                          }
+                        } else if (nextIndex === -1) {
+                          const allCompleted =
+                            modules.length > 0 &&
+                            modules.every(m => progression.getModuleStatus(m.id) === 'completed');
+                          if (allCompleted) {
+                            suffix = [];
+                            if (isCompletedExpanded || modules.length <= COLUMNS) {
+                              prefix = modules;
+                            } else {
+                              prefix = modules.slice(-COLUMNS);
+                            }
+                          }
+                        }
+
+                        const unlockedCount = suffix.filter(
+                          m => effectiveStatus(m) !== 'locked'
+                        ).length;
+                        const remainder = unlockedCount % COLUMNS;
+                        const toFillRow = remainder === 0 ? 0 : COLUMNS - remainder;
+                        const LOCKED_VISIBLE = toFillRow + COLUMNS;
+
+                        let lockedShown = 0;
+                        lockedHidden = 0;
+                        suffixVisible = [];
+
+                        for (const module of suffix) {
+                          const status = effectiveStatus(module);
+                          if (status === 'locked') {
+                            if (lockedShown < LOCKED_VISIBLE) {
+                              suffixVisible.push(module);
+                              lockedShown++;
+                            } else {
+                              lockedHidden++;
+                            }
+                          } else {
                             suffixVisible.push(module);
-                            lockedShown++;
-                          } else {
-                            lockedHidden++;
                           }
-                        } else {
-                          suffixVisible.push(module);
                         }
-                      }
 
-                      const rowOverflow = suffixVisible.length % COLUMNS;
-                      if (rowOverflow > 0) {
-                        for (let i = 0; i < rowOverflow; i++) {
-                          const removed = suffixVisible.pop();
-                          if (removed && effectiveStatus(removed) === 'locked') {
-                            lockedHidden++;
+                        const rowOverflow = suffixVisible.length % COLUMNS;
+                        if (rowOverflow > 0) {
+                          for (let i = 0; i < rowOverflow; i++) {
+                            const removed = suffixVisible.pop();
+                            if (removed && effectiveStatus(removed) === 'locked') {
+                              lockedHidden++;
+                            }
                           }
                         }
                       }

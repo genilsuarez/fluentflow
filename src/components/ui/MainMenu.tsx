@@ -50,7 +50,7 @@ export const MainMenu: React.FC = () => {
   const progression = useProgression();
   const { query, setQuery, results } = useSearch(modules);
   const { setPreviousMenuContext, previousMenuContext } = useAppStore();
-  const { language, categories, learningModes, level: _level } = useSettingsStore();
+  const { language, categories, learningModes, level: _level, developmentMode } = useSettingsStore();
   const { t } = useTranslation(language);
   const queryClient = useQueryClient();
   const [viewMode, setViewModeRaw] = useState<'progression' | 'list'>(() => {
@@ -118,6 +118,9 @@ export const MainMenu: React.FC = () => {
       let status: 'completed' | 'unlocked' | 'locked';
       if (isModuleCompleted(m.id)) {
         status = 'completed';
+      } else if (developmentMode) {
+        // Dev mode: all modules are unlocked regardless of prerequisites/level gates
+        status = 'unlocked';
       } else if (mLevel && (completedLevels.has(mLevel) || mLevel === activeLevel)) {
         // Active level or below: unlock without prerequisite chain
         status = 'unlocked';
@@ -132,7 +135,7 @@ export const MainMenu: React.FC = () => {
       });
     }
     return map;
-  }, [modules, allModulesRaw, getModuleCompletion, isModuleCompleted, progression]);
+  }, [modules, allModulesRaw, getModuleCompletion, isModuleCompleted, progression, developmentMode]);
 
   // Pre-compute hidden dependencies map once (avoids creating a new Map per card)
   const hiddenDepsMap = React.useMemo(() => {
@@ -394,9 +397,11 @@ export const MainMenu: React.FC = () => {
       }
     }
 
-    // In exercises view, modules unlocked by level can bypass prerequisite check
+    // In exercises view, modules unlocked by level can bypass prerequisite check.
+    // Development mode always bypasses restrictions.
     const skipPrereqs =
-      modulesView === 'all' && exerciseStatusMap.get(module.id)?.status !== 'locked';
+      developmentMode ||
+      (modulesView === 'all' && exerciseStatusMap.get(module.id)?.status !== 'locked');
     navigateToModule(module, { skipPrerequisiteCheck: skipPrereqs });
   };
 
