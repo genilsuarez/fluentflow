@@ -212,22 +212,25 @@ html:not(.dark) .matching-component__item--matched .content-renderer * {
 
 /* Ensure hover states don't override ContentRenderer colors */
 html:not(.dark) .matching-component__item--matched:hover .content-renderer,
-html:not(.dark) .matching-component__item--matched-inactive:hover .content-renderer,
 html:not(.dark) .matching-component__item--matched:hover .content-renderer *,
-html:not(.dark) .matching-component__item--matched-inactive:hover .content-renderer *,
 html:not(.dark) .matching-component__item--matched:hover .content-renderer__segment--term,
-html:not(.dark) .matching-component__item--matched-inactive:hover .content-renderer__segment--term,
 html:not(.dark) .matching-component__item--matched:hover .content-renderer__segment--emphasis,
+html:not(.dark) .matching-component__item--matched:hover .content-renderer__segment--variable,
+html:not(.dark) .matching-component__item--matched:hover .content-renderer__segment--code {
+  color: var(--theme-text-primary, #2c2418);
+}
+
+html:not(.dark) .matching-component__item--matched-inactive:hover .content-renderer,
+html:not(.dark) .matching-component__item--matched-inactive:hover .content-renderer *,
+html:not(.dark) .matching-component__item--matched-inactive:hover .content-renderer__segment--term,
 html:not(.dark)
   .matching-component__item--matched-inactive:hover
   .content-renderer__segment--emphasis,
-html:not(.dark) .matching-component__item--matched:hover .content-renderer__segment--variable,
 html:not(.dark)
   .matching-component__item--matched-inactive:hover
   .content-renderer__segment--variable,
-html:not(.dark) .matching-component__item--matched:hover .content-renderer__segment--code,
 html:not(.dark) .matching-component__item--matched-inactive:hover .content-renderer__segment--code {
-  color: var(--lp-bg);
+  color: var(--lp-ink-soft);
 }
 
 /* Override for correct incorrect states in light mode - WHITE TEXT FOR CONTRAST */
