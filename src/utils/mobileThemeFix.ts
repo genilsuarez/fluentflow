@@ -9,9 +9,7 @@ import { logDebug } from './logger';
 /** Mobile user agent only — not viewport width. */
 export function isMobileDevice(): boolean {
   if (typeof window === 'undefined') return false;
-  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-    navigator.userAgent
-  );
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
 
 /** Narrow viewport — layout only, not theme path selection. */
@@ -77,7 +75,9 @@ function updateMetaTags(theme: ThemeMode): void {
     metaColorScheme.setAttribute('content', theme);
   }
 
-  const metaStatusBar = document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]');
+  const metaStatusBar = document.querySelector(
+    'meta[name="apple-mobile-web-app-status-bar-style"]'
+  );
   if (metaStatusBar) {
     metaStatusBar.setAttribute('content', theme === 'dark' ? 'black-translucent' : 'default');
   }
