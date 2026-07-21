@@ -20,6 +20,7 @@ import '../../styles/components/matching-modal.css';
 import '../../styles/components/matching-component.css';
 import '../../styles/components/game-controls.css';
 import type { LearningModule } from '../../types';
+import { GameControlsExitButton } from '../ui/GameControlsExitButton';
 
 interface MatchingComponentProps {
   module: LearningModule;
@@ -445,15 +446,7 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
       {/* Unified Control Bar */}
       <div className="game-controls">
         {/* Home Navigation */}
-        <button
-          onClick={handleReturnToMenu}
-          className="game-controls__home-btn"
-          title={t('learning.returnToMainMenu')}
-        >
-          <span className="game-controls__home-icon" aria-hidden="true">
-            🏠
-          </span>
-        </button>
+        <GameControlsExitButton onClick={handleReturnToMenu} title={t('learning.returnToMainMenu')} />
 
         <button
           onClick={triggerRestart}
@@ -476,7 +469,7 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
             <button
               onClick={checkAnswers}
               disabled={!allMatched}
-              className="game-controls__primary-btn game-controls__primary-btn--orange"
+              className="game-controls__primary-btn"
             >
               <Check className="game-controls__primary-icon" />
               <span>{t('learning.checkMatches')}</span>
@@ -493,7 +486,7 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
             </button>
             <button
               onClick={finishExercise}
-              className="game-controls__primary-btn game-controls__primary-btn--green"
+              className="game-controls__primary-btn"
             >
               <Check className="game-controls__primary-icon" />
               <span>{t('learning.finishExercise')}</span>

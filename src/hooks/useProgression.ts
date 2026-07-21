@@ -1,28 +1,26 @@
 import { useMemo } from 'react';
-import { useQuery, useQueryClient } from '@tanstack/react-query';
+import { useQuery } from '@tanstack/react-query';
 import { progressionService } from '../services/progressionService';
 import { useProgressStore } from '../stores/progressStore';
 import { useSettingsStore } from '../stores/settingsStore';
-import { useAllModules } from './useModuleData';
+import { useModulesCatalog } from './useModuleData';
 import type { LearningModule } from '../types';
 
 /**
  * Hook for managing module progression and prerequisites
  */
 export const useProgression = () => {
-  const { isLoading: modulesLoading } = useAllModules();
+  const {
+    data: rawModules = [],
+    isLoading: modulesLoading,
+    isFetched: modulesFetched,
+  } = useModulesCatalog();
   const { getCompletedModuleIds, isModuleCompleted, completedModules } = useProgressStore();
   const { developmentMode } = useSettingsStore();
-  const queryClient = useQueryClient();
-
-  // Use raw (unfiltered) modules for progression — category filtering is visual only
-  // and must not affect prerequisite chains or module unlock status
-  const rawModulesFromCache = queryClient.getQueryData<LearningModule[]>(['modules']);
-  const rawModules = useMemo(() => rawModulesFromCache ?? [], [rawModulesFromCache]);
 
   // Track completed modules for query invalidation
-  // Using completedModules object directly ensures React detects changes
   const completedModulesCount = Object.keys(completedModules || {}).length;
+  const completedFromStore = completedModulesCount;
 
   // Initialize progression service synchronously (during render, not in useEffect)
   // so that helpers like getModuleStatus() work immediately without a timing gap.
@@ -34,7 +32,6 @@ export const useProgression = () => {
   }, [rawModules, getCompletedModuleIds]);
 
   // Reconcile stale IDs from legacy migrations against the actual module catalog.
-  // Runs once after modules are loaded.
   useMemo(() => {
     if (rawModules.length > 0) {
       const validIds = new Set(rawModules.map(m => m.id));
@@ -57,9 +54,9 @@ export const useProgression = () => {
     queryFn: () => {
       if (rawModules.length === 0) {
         return {
-          unlockedModules: [],
-          lockedModules: [],
-          nextAvailableModules: [],
+          unlockedModules: [] as LearningModule[],
+          lockedModules: [] as LearningModule[],
+          nextAvailableModules: [] as LearningModule[],
           stats: {
             totalModules: 0,
             completedModules: 0,
@@ -79,16 +76,33 @@ export const useProgression = () => {
       };
     },
     enabled: rawModules.length > 0,
-    staleTime: 2 * 60 * 1000, // 2 minutes — progression only changes on module completion (tracked via queryKey)
-    refetchOnMount: true, // Always refetch on mount
-    refetchOnWindowFocus: false, // Don't refetch on window focus to avoid unnecessary updates
+    staleTime: 2 * 60 * 1000,
+    refetchOnMount: true,
+    refetchOnWindowFocus: false,
   });
+
+  const baseStats = progressionData.data?.stats || {
+    totalModules: 0,
+    completedModules: 0,
+    unlockedModules: 0,
+    lockedModules: 0,
+    completionPercentage: 0,
+    unitStats: [],
+  };
+
+  // While catalog loads (or if it failed), still surface persisted completion count.
+  const stats =
+    baseStats.totalModules > 0
+      ? baseStats
+      : {
+          ...baseStats,
+          completedModules: completedFromStore,
+        };
 
   // Memoized helper functions
   const helpers = useMemo(
     () => ({
       isModuleUnlocked: (moduleId: string): boolean => {
-        // In development mode, all modules are unlocked
         if (developmentMode) {
           return true;
         }
@@ -116,7 +130,6 @@ export const useProgression = () => {
       },
 
       canAccessModule: (moduleId: string): boolean => {
-        // In development mode, all modules are accessible
         if (developmentMode) {
           return true;
         }
@@ -127,7 +140,6 @@ export const useProgression = () => {
         if (isModuleCompleted(moduleId)) {
           return 'completed';
         }
-        // In development mode, all modules are unlocked
         if (developmentMode || progressionService.isModuleUnlocked(moduleId)) {
           return 'unlocked';
         }
@@ -136,7 +148,6 @@ export const useProgression = () => {
 
       getUnlockedModulesByUnit: (unit: number): LearningModule[] => {
         const unitModules = progressionService.getModulesByUnit(unit);
-        // In development mode, all modules are unlocked
         if (developmentMode) {
           return unitModules;
         }
@@ -149,9 +160,6 @@ export const useProgression = () => {
           return null;
         }
 
-        // Use curriculum order (index in rawModules) as the canonical progression sequence.
-        // The previous sort by unit + prereq count was non-deterministic and caused the same
-        // module to always appear as "next" regardless of what was just completed.
         const indexMap = new Map(rawModules.map((m, i) => [m.id, i]));
         const sorted = nextAvailable.sort((a, b) => {
           const aIdx = indexMap.get(a.id) ?? Infinity;
@@ -166,28 +174,16 @@ export const useProgression = () => {
   );
 
   return {
-    // Loading states
     isLoading: modulesLoading || progressionData.isLoading,
+    modulesFetched,
 
-    // Data
     unlockedModules: progressionData.data?.unlockedModules || [],
     lockedModules: progressionData.data?.lockedModules || [],
     nextAvailableModules: progressionData.data?.nextAvailableModules || [],
-    stats: progressionData.data?.stats || {
-      totalModules: 0,
-      completedModules: 0,
-      unlockedModules: 0,
-      lockedModules: 0,
-      completionPercentage: 0,
-      unitStats: [],
-    },
+    stats,
 
-    // Helper functions
     ...helpers,
 
-    // Refresh function
     refresh: () => progressionData.refetch(),
   };
 };
-
-// useModuleProgression removed — was unused

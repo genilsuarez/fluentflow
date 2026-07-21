@@ -26,16 +26,24 @@
   --menu-content-height-desktop: var(--grid-height-desktop);
 }
 
-/* SVG Icon Inheritance Fix - Force white in dark mode */
-.main-menu svg {
+/* SVG Icon Inheritance Fix - Force white in dark mode (exclude dashboard progress rings) */
+.main-menu svg:not(.home-dash__level-svg):not(.home-dash__ring-svg) {
   color: currentColor;
   stroke: currentColor;
   fill: none;
 }
 
-.dark .main-menu svg {
+.dark .main-menu svg:not(.home-dash__level-svg):not(.home-dash__ring-svg) {
   color: white;
   stroke: white;
+}
+
+/* Dashboard rings manage their own path strokes — never inherit menu icon styles */
+.main-menu .home-dash__level-svg,
+.main-menu .home-dash__ring-svg {
+  stroke: none;
+  color: unset;
+  fill: none;
 }
 
 /* === BOX SIZING RESET === */
@@ -677,12 +685,20 @@ html.dark .main-menu__no-results-icon {
   /* Single state toggle: show only the alternate view (not the active one) */
   .main-menu__view-toggle {
     background: transparent;
+    border: none;
+    border-radius: 0;
     padding: 0;
     gap: 0;
     height: auto;
     max-width: none;
     width: auto;
     flex-shrink: 0;
+    box-shadow: none;
+  }
+
+  .dark .main-menu__view-toggle,
+  :root:not(.dark) .main-menu__view-toggle {
+    background: transparent;
   }
 
   .main-menu__view-btn--active {
@@ -694,7 +710,7 @@ html.dark .main-menu__no-results-icon {
     background: #2563eb;
     color: #ffffff;
     font-weight: 700;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: none;
     padding: 0 0.625rem;
     border-radius: var(--lp-radius-md);
   }
@@ -1045,13 +1061,15 @@ html.dark .main-menu__grid::-webkit-scrollbar-thumb:hover {
   opacity: 1;
 }
 
-/* Toggle Container Theme Variants */
-.dark .main-menu__view-toggle {
-  background: var(--lp-surface-sunken);
-}
+/* Toggle Container Theme Variants — desktop segmented control only */
+@media (min-width: 640px) {
+  .dark .main-menu__view-toggle {
+    background: var(--lp-surface-sunken);
+  }
 
-:root:not(.dark) .main-menu__view-toggle {
-  background: var(--lp-border);
+  :root:not(.dark) .main-menu__view-toggle {
+    background: var(--lp-border);
+  }
 }
 
 /* Header Search Specific Styles - Prevent Overflow */

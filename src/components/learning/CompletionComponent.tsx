@@ -14,6 +14,7 @@ import { EditableInput } from '../ui/EditableInput';
 import type { EditableInputHandle } from '../ui/EditableInput';
 
 import type { LearningModule } from '../../types';
+import { GameControlsExitButton } from '../ui/GameControlsExitButton';
 
 interface CompletionData {
   sentence: string;
@@ -273,75 +274,72 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
           }`}
           aria-hidden={!showResult}
         >
-          <div className="completion-component__result">
-            {/* Ultra-compact result feedback */}
-            <div className="completion-component__feedback-row">
-              {isAnswerCorrect ? (
-                <Check className="completion-component__feedback-icon completion-component__feedback-icon--correct" />
-              ) : (
-                <X className="completion-component__feedback-icon completion-component__feedback-icon--incorrect" />
-              )}
-              <span className="completion-component__feedback">
-                {isAnswerCorrect ? t('common.correct') : t('common.incorrect')}
-              </span>
-
-              {/* Correct answer flows naturally after incorrect */}
-              {!isAnswerCorrect && (
-                <span className="completion-component__correct-answer">
-                  - {t('learning.answer')} <strong>{currentExercise?.correct}</strong>
+          {showResult && (
+            <div
+              className={`completion-component__result${
+                isAnswerCorrect
+                  ? ' completion-component__result--correct'
+                  : ' completion-component__result--incorrect'
+              }`}
+            >
+              {/* Ultra-compact result feedback */}
+              <div className="completion-component__feedback-row">
+                {isAnswerCorrect ? (
+                  <Check className="completion-component__feedback-icon completion-component__feedback-icon--correct" />
+                ) : (
+                  <X className="completion-component__feedback-icon completion-component__feedback-icon--incorrect" />
+                )}
+                <span className="completion-component__feedback">
+                  {isAnswerCorrect ? t('common.correct') : t('common.incorrect')}
                 </span>
-              )}
-            </div>
 
-            {/* Compact explanation */}
-            {showResult &&
-              !isAnswerCorrect &&
-              isTenseError(answer, currentExercise?.correct || '') && (
+                {/* Correct answer flows naturally after incorrect */}
+                {!isAnswerCorrect && (
+                  <span className="completion-component__correct-answer">
+                    - {t('learning.answer')} <strong>{currentExercise?.correct}</strong>
+                  </span>
+                )}
+              </div>
+
+              {/* Compact explanation */}
+              {!isAnswerCorrect && isTenseError(answer, currentExercise?.correct || '') && (
                 <div className="completion-component__tense-hint">
                   <p className="completion-component__tense-hint-text">{t('learning.tenseHint')}</p>
                 </div>
               )}
-            {showResult &&
-              !isAnswerCorrect &&
-              !isTenseError(answer, currentExercise?.correct || '') &&
-              isParticleError(answer, currentExercise?.correct || '') && (
-                <div className="completion-component__tense-hint">
-                  <p className="completion-component__tense-hint-text">
-                    {t('learning.particleHint')}
-                  </p>
+              {!isAnswerCorrect &&
+                !isTenseError(answer, currentExercise?.correct || '') &&
+                isParticleError(answer, currentExercise?.correct || '') && (
+                  <div className="completion-component__tense-hint">
+                    <p className="completion-component__tense-hint-text">
+                      {t('learning.particleHint')}
+                    </p>
+                  </div>
+                )}
+              {currentExercise?.explanation && (
+                <div className="completion-component__explanation">
+                  <div className="completion-component__explanation-text">
+                    <span className="completion-component__explanation-label">
+                      {t('learning.explanation')}
+                    </span>{' '}
+                    <ContentRenderer
+                      content={ContentAdapter.ensureStructured(
+                        currentExercise.explanation,
+                        'explanation'
+                      )}
+                    />
+                  </div>
                 </div>
               )}
-            {currentExercise?.explanation && (
-              <div className="completion-component__explanation">
-                <div className="completion-component__explanation-text">
-                  <span className="completion-component__explanation-label">
-                    {t('learning.explanation')}
-                  </span>{' '}
-                  <ContentRenderer
-                    content={ContentAdapter.ensureStructured(
-                      currentExercise.explanation,
-                      'explanation'
-                    )}
-                  />
-                </div>
-              </div>
-            )}
-          </div>
+            </div>
+          )}
         </div>
       </div>
 
       {/* Unified Control Bar */}
       <div className="game-controls">
         {/* Home Navigation */}
-        <button
-          onClick={handleReturnToMenu}
-          className="game-controls__home-btn"
-          title={t('learning.returnToMainMenu')}
-        >
-          <span className="game-controls__home-icon" aria-hidden="true">
-            🏠
-          </span>
-        </button>
+        <GameControlsExitButton onClick={handleReturnToMenu} title={t('learning.returnToMainMenu')} />
 
         <button
           onClick={triggerRestart}
@@ -355,7 +353,7 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
           <button
             onClick={checkAnswer}
             disabled={!hasAnswer}
-            className="game-controls__primary-btn game-controls__primary-btn--purple"
+            className="game-controls__primary-btn"
           >
             <Check className="game-controls__primary-icon" />
             <span>{t('learning.checkAnswer')}</span>
@@ -363,7 +361,7 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
         ) : (
           <button
             onClick={handleNext}
-            className="game-controls__primary-btn game-controls__primary-btn--green"
+            className="game-controls__primary-btn"
           >
             <span>
               {currentIndex === processedExercises.length - 1

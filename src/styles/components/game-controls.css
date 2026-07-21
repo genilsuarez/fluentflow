@@ -67,10 +67,6 @@
   outline-offset: 2px;
 }
 
-.game-controls__home-icon {
-  font-style: normal;
-  pointer-events: none;
-}
 
 .game-controls__nav-btn:hover:not(:disabled),
 .game-controls__icon-btn:hover:not(:disabled) {
@@ -162,6 +158,8 @@
   position: relative;
   overflow: hidden;
   touch-action: manipulation;
+  background: var(--lp-primary, #3d6b9f);
+  color: white;
 }
 
 /* Ripple effect for primary buttons */
@@ -183,65 +181,18 @@
   animation: ripple var(--animation-fast) var(--ease-smooth);
 }
 
-/* Primary Button Variants */
-.game-controls__primary-btn--blue {
-  background: var(--lp-primary, #3d6b9f);
-  color: white;
-}
-
-.game-controls__primary-btn--green {
-  background: var(--lp-success, #27865a);
-  color: white;
-}
-
-.game-controls__primary-btn--purple {
-  background: var(--lp-primary, #3d6b9f);
-  color: white;
-}
-
-.game-controls__primary-btn--orange {
-  background: var(--lp-accent, #2563eb);
-  color: white;
-}
-
-/* Shared hover/active for all primary variants */
-.game-controls__primary-btn--blue:hover:not(:disabled),
-.game-controls__primary-btn--green:hover:not(:disabled),
-.game-controls__primary-btn--purple:hover:not(:disabled),
-.game-controls__primary-btn--orange:hover:not(:disabled) {
+.game-controls__primary-btn:hover:not(:disabled) {
   transform: translateY(-1px);
   box-shadow: var(--shadow-button-hover);
 }
 
-.game-controls__primary-btn--blue:active:not(:disabled),
-.game-controls__primary-btn--green:active:not(:disabled),
-.game-controls__primary-btn--purple:active:not(:disabled),
-.game-controls__primary-btn--orange:active:not(:disabled) {
+.game-controls__primary-btn:active:not(:disabled) {
   transform: translateY(0) scale(0.98);
   box-shadow: var(--shadow-button-active);
 }
 
-.game-controls__primary-btn--green:active:not(:disabled) {
-  animation: pulse-success var(--animation-normal) var(--ease-smooth);
-}
-
-.game-controls__primary-btn--blue:focus-visible {
+.game-controls__primary-btn:focus-visible {
   outline: 2px solid var(--theme-primary-blue, #3b82f6);
-  outline-offset: 2px;
-}
-
-.game-controls__primary-btn--green:focus-visible {
-  outline: 2px solid var(--theme-success, #10b981);
-  outline-offset: 2px;
-}
-
-.game-controls__primary-btn--purple:focus-visible {
-  outline: 2px solid var(--theme-primary-purple, #8b5cf6);
-  outline-offset: 2px;
-}
-
-.game-controls__primary-btn--orange:focus-visible {
-  outline: 2px solid #ea580c;
   outline-offset: 2px;
 }
 

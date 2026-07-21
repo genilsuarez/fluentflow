@@ -14,6 +14,7 @@ import type { EditableInputHandle } from '../ui/EditableInput';
 import { ContentAdapter } from '../../utils/contentAdapter';
 import { matchesAnswer } from '../../utils/answerUtils';
 import type { LearningModule, TransformationData } from '../../types';
+import { GameControlsExitButton } from '../ui/GameControlsExitButton';
 
 interface TransformationComponentProps {
   module: LearningModule;
@@ -251,15 +252,7 @@ const TransformationComponent: React.FC<TransformationComponentProps> = ({ modul
 
       {/* Control bar */}
       <div className="game-controls">
-        <button
-          onClick={handleReturnToMenu}
-          className="game-controls__home-btn"
-          title={t('learning.returnToMainMenu')}
-        >
-          <span className="game-controls__home-icon" aria-hidden="true">
-            🏠
-          </span>
-        </button>
+        <GameControlsExitButton onClick={handleReturnToMenu} title={t('learning.returnToMainMenu')} />
 
         <button
           onClick={triggerRestart}
@@ -273,7 +266,7 @@ const TransformationComponent: React.FC<TransformationComponentProps> = ({ modul
           <button
             onClick={checkAnswer}
             disabled={!hasAnswer}
-            className="game-controls__primary-btn game-controls__primary-btn--purple"
+            className="game-controls__primary-btn"
           >
             <Check className="game-controls__primary-icon" />
             <span>{t('learning.checkAnswer')}</span>
@@ -281,7 +274,7 @@ const TransformationComponent: React.FC<TransformationComponentProps> = ({ modul
         ) : (
           <button
             onClick={handleNext}
-            className="game-controls__primary-btn game-controls__primary-btn--green"
+            className="game-controls__primary-btn"
           >
             <span>
               {currentIndex === processedExercises.length - 1

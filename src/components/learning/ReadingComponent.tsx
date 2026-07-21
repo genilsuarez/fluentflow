@@ -15,6 +15,7 @@ import LearningProgressHeader from '../ui/LearningProgressHeader';
 
 import '../../styles/components/reading-component.css';
 import type { ReadingData, LearningModule } from '../../types';
+import { GameControlsExitButton } from '../ui/GameControlsExitButton';
 
 interface ReadingComponentProps {
   module: LearningModule;
@@ -726,15 +727,7 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
       {/* Unified Control Bar */}
       <div className="game-controls">
         {/* Home Navigation */}
-        <button
-          onClick={handleReturnToMenu}
-          className="game-controls__home-btn"
-          title={t('reading.navigation.returnToMenu')}
-        >
-          <span className="game-controls__home-icon" aria-hidden="true">
-            🏠
-          </span>
-        </button>
+        <GameControlsExitButton onClick={handleReturnToMenu} title={t('reading.navigation.returnToMenu')} />
 
         <button
           onClick={triggerRestart}
@@ -755,7 +748,7 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
 
         <button
           onClick={handleNext}
-          className="game-controls__primary-btn game-controls__primary-btn--blue"
+          className="game-controls__primary-btn"
         >
           <span>
             {isObjectivesPage

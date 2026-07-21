@@ -11,6 +11,7 @@ import { speak, stopSpeaking, isSpeechAvailable } from '../../utils/speech';
 import '../../styles/components/quiz-component.css';
 
 import type { LearningModule } from '../../types';
+import { GameControlsExitButton } from '../ui/GameControlsExitButton';
 
 interface DictationItem {
   text: string;
@@ -293,15 +294,7 @@ const DictationComponent: React.FC<DictationComponentProps> = ({ module }) => {
 
       {/* Unified Control Bar */}
       <div className="game-controls">
-        <button
-          onClick={handleReturnToMenu}
-          className="game-controls__home-btn"
-          title={t('learning.returnToMainMenu')}
-        >
-          <span className="game-controls__home-icon" aria-hidden="true">
-            🏠
-          </span>
-        </button>
+        <GameControlsExitButton onClick={handleReturnToMenu} title={t('learning.returnToMainMenu')} />
 
         <button
           onClick={triggerRestart}
@@ -313,7 +306,7 @@ const DictationComponent: React.FC<DictationComponentProps> = ({ module }) => {
         <button
           onClick={showResult ? handleNext : handleSubmit}
           disabled={!showResult && !userInput.trim()}
-          className="game-controls__primary-btn game-controls__primary-btn--green"
+          className="game-controls__primary-btn"
         >
           <span>
             {showResult

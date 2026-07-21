@@ -4,6 +4,7 @@ import { useSettingsStore } from '../../stores/settingsStore';
 import { useMenuNavigation } from '../../hooks/useMenuNavigation';
 import { useTranslation } from '../../utils/i18n';
 import '../../styles/components/offline-modal.css';
+import { GameControlsExitButton } from './GameControlsExitButton';
 
 interface OfflineModalProps {
   isOpen: boolean;
@@ -60,19 +61,11 @@ export const OfflineModal: React.FC<OfflineModalProps> = ({ isOpen, onRetry }) =
 
       {/* Game controls bar with home button — matches learning components pattern */}
       <div className="game-controls">
-        <button
-          onClick={handleGoToMenu}
-          className="game-controls__home-btn"
-          title={t('learning.returnToMainMenu')}
-        >
-          <span className="game-controls__home-icon" aria-hidden="true">
-            🏠
-          </span>
-        </button>
+        <GameControlsExitButton onClick={handleGoToMenu} title={t('learning.returnToMainMenu')} />
 
         <button
           onClick={onRetry}
-          className="game-controls__primary-btn game-controls__primary-btn--blue"
+          className="game-controls__primary-btn"
         >
           <RotateCcw className="game-controls__primary-icon" />
           <span>{t('errors.tryAgain')}</span>

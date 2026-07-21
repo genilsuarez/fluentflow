@@ -3,6 +3,7 @@ import { Trophy, Target } from 'lucide-react';
 import { useAppStore } from '../../stores/appStore';
 import { useUserStore } from '../../stores/userStore';
 import { useSettingsStore } from '../../stores/settingsStore';
+import { useProgressStore } from '../../stores/progressStore';
 import { useProgression } from '../../hooks/useProgression';
 import { useTranslation } from '../../utils/i18n';
 import '../../styles/components/score-display.css';
@@ -13,10 +14,15 @@ export const ScoreDisplay: React.FC = () => {
   const { getTotalScore } = useUserStore();
   const { language } = useSettingsStore();
   const { t } = useTranslation(language);
-  const { stats } = useProgression();
+  const { stats, modulesFetched } = useProgression();
+  const completedFromStore = useProgressStore(state => Object.keys(state.completedModules).length);
 
   const isInGame = currentView !== 'menu';
-  const { completedModules, totalModules } = stats;
+  const completedModules =
+    stats.totalModules > 0 ? stats.completedModules : completedFromStore;
+  const totalModules = stats.totalModules;
+  const progressLabel =
+    !modulesFetched && totalModules === 0 ? '…' : `${completedModules}/${totalModules || '…'}`;
   const totalScore = getTotalScore();
 
   return (
@@ -86,9 +92,7 @@ export const ScoreDisplay: React.FC = () => {
 
             {/* Module completion count */}
             <div className="lp-header-stats__divider" aria-hidden="true" />
-            <span className="lp-header-stats__progress-label">
-              {completedModules}/{totalModules}
-            </span>
+            <span className="lp-header-stats__progress-label">{progressLabel}</span>
           </div>
         )}
       </div>

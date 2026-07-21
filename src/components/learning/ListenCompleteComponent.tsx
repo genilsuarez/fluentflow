@@ -13,6 +13,7 @@ import { speak, stopSpeaking, isSpeechAvailable } from '../../utils/speech';
 import '../../styles/components/quiz-component.css';
 
 import type { LearningModule, CompletionData } from '../../types';
+import { GameControlsExitButton } from '../ui/GameControlsExitButton';
 
 interface ListenCompleteComponentProps {
   module: LearningModule;
@@ -315,15 +316,7 @@ const ListenCompleteComponent: React.FC<ListenCompleteComponentProps> = ({ modul
 
       {/* Unified Control Bar */}
       <div className="game-controls">
-        <button
-          onClick={handleReturnToMenu}
-          className="game-controls__home-btn"
-          title={t('learning.returnToMainMenu')}
-        >
-          <span className="game-controls__home-icon" aria-hidden="true">
-            🏠
-          </span>
-        </button>
+        <GameControlsExitButton onClick={handleReturnToMenu} title={t('learning.returnToMainMenu')} />
 
         <button
           onClick={triggerRestart}
@@ -335,7 +328,7 @@ const ListenCompleteComponent: React.FC<ListenCompleteComponentProps> = ({ modul
         <button
           onClick={showResult ? handleNext : handleSubmit}
           disabled={!showResult && !userInput.trim()}
-          className="game-controls__primary-btn game-controls__primary-btn--green"
+          className="game-controls__primary-btn"
         >
           <span>
             {showResult

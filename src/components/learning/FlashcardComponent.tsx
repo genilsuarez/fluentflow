@@ -10,6 +10,7 @@ import ExerciseResultScreen from '../ui/ExerciseResultScreen';
 
 import '../../styles/components/flashcard-component.css';
 import type { FlashcardData, LearningModule } from '../../types';
+import { GameControlsExitButton } from '../ui/GameControlsExitButton';
 
 interface FlashcardComponentProps {
   module: LearningModule;
@@ -235,15 +236,7 @@ const FlashcardComponent: React.FC<FlashcardComponentProps> = ({ module }) => {
       {/* Unified Control Bar */}
       <div className="game-controls">
         {/* Home Navigation */}
-        <button
-          onClick={handleReturnToMenu}
-          className="game-controls__home-btn"
-          title={t('learning.returnToMainMenu')}
-        >
-          <span className="game-controls__home-icon" aria-hidden="true">
-            🏠
-          </span>
-        </button>
+        <GameControlsExitButton onClick={handleReturnToMenu} title={t('learning.returnToMainMenu')} />
 
         <button
           onClick={triggerRestart}
@@ -264,7 +257,7 @@ const FlashcardComponent: React.FC<FlashcardComponentProps> = ({ module }) => {
 
         <button
           onClick={handleFlip}
-          className="game-controls__primary-btn game-controls__primary-btn--blue"
+          className="game-controls__primary-btn"
         >
           <RotateCcw className="game-controls__primary-icon" />
           <span>{t('learning.flip')}</span>

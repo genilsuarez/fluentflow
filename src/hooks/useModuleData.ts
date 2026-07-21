@@ -4,6 +4,24 @@ import { useSettingsStore } from '../stores/settingsStore';
 import { apiService, fetchModules, fetchModuleData } from '../services/api';
 import type { LearningModule } from '../types';
 
+/** Shared TanStack Query config for the full module catalog (unfiltered). */
+export const modulesCatalogQueryOptions = {
+  queryKey: ['modules'] as const,
+  queryFn: async (): Promise<LearningModule[]> => {
+    const response = await fetchModules();
+    if (!response.success) {
+      throw new Error(response.error || 'Failed to fetch modules');
+    }
+    return response.data;
+  },
+  networkMode: 'always' as const,
+  staleTime: 15 * 60 * 1000,
+  refetchOnWindowFocus: false,
+};
+
+/** Reactive access to the full module catalog — use for progression/stats, not UI filters. */
+export const useModulesCatalog = () => useQuery(modulesCatalogQueryOptions);
+
 /**
  * Pure function that returns the unselected categories (or modes) containing prerequisites of a module.
  * Used to show dependency indicators when categories or learning modes are filtered out.
@@ -151,15 +169,7 @@ export const useAllModules = () => {
   const { categories, learningModes, level } = useSettingsStore();
 
   return useQuery({
-    queryKey: ['modules'],
-    queryFn: async () => {
-      const response = await fetchModules();
-      if (!response.success) {
-        throw new Error(response.error || 'Failed to fetch modules');
-      }
-      return response.data;
-    },
-    networkMode: 'always', // Allow queries offline - service worker handles caching
+    ...modulesCatalogQueryOptions,
     select: (modules: LearningModule[]) => {
       // Filter modules based on settings
       // Development mode only bypasses progression locks, not filters
@@ -189,7 +199,6 @@ export const useAllModules = () => {
         return true;
       });
     },
-    staleTime: 15 * 60 * 1000, // 15 minutes for modules list (longer than module data — list changes rarely)
     retry: (failureCount, error) => {
       // Don't retry parse errors
       if (error instanceof Error && error.message.includes('parse JSON')) {
@@ -197,6 +206,5 @@ export const useAllModules = () => {
       }
       return failureCount < 2; // Aligned with QueryClient global config
     },
-    refetchOnWindowFocus: false, // Explicit — don't refetch list on tab focus
   });
 };

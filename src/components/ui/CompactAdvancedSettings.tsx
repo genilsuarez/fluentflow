@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { X, Settings, Save, Gamepad2, Palette, WifiOff } from 'lucide-react';
+import { X, Gamepad2, Palette, WifiOff, Sun, Moon, Wrench, Shuffle } from 'lucide-react';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useTranslation } from '../../utils/i18n';
 import { validateGameSettings } from '../../utils/inputValidation';
@@ -15,7 +15,6 @@ import {
 import type { DownloadProgress } from '../../services/offlineManager';
 import { DownloadManagerModal } from './DownloadManagerModal';
 import '../../styles/components/compact-advanced-settings.css';
-import '../../styles/components/modal-buttons.css';
 
 interface CompactAdvancedSettingsProps {
   isOpen: boolean;
@@ -289,12 +288,14 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
       <div className="compact-settings">
         <div className="compact-settings__container">
           <div className="compact-settings__header">
-            <div className="compact-settings__title-section">
-              <Settings className="compact-settings__icon" />
-              <h2 className="compact-settings__title">{t('modals.advancedSettings')}</h2>
-            </div>
-            <button onClick={onClose} className="modal__close-btn" aria-label={t('common.close')}>
-              <X className="modal__close-icon" />
+            <h2 className="compact-settings__title">{t('modals.advancedSettings')}</h2>
+            <button
+              onClick={onClose}
+              className="compact-settings__close"
+              type="button"
+              aria-label={t('common.close')}
+            >
+              <X size={20} aria-hidden="true" />
             </button>
           </div>
 
@@ -327,75 +328,94 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
             {/* General Settings Tab */}
             {activeTab === 'general' && (
               <div className="compact-settings__section">
-                <div className="compact-settings__fields">
-                  <div className="compact-settings__field">
-                    <label className="compact-settings__label">{t('settings.theme')}</label>
-                    <select
-                      className="compact-settings__select"
-                      value={localTheme}
-                      onChange={e => setLocalTheme(e.target.value as 'light' | 'dark')}
+                <ul className="compact-settings__list">
+                  <li className="compact-settings__row">
+                    <span className="compact-settings__row-label">{t('settings.theme')}</span>
+                    <div
+                      className="compact-settings__segmented"
+                      role="group"
+                      aria-label={t('settings.theme')}
                     >
-                      <option value="light">☀️ {t('settings.light')}</option>
-                      <option value="dark">🌙 {t('settings.dark')}</option>
-                    </select>
-                  </div>
-
-                  <div className="compact-settings__field">
-                    <label className="compact-settings__label">{t('settings.language')}</label>
-                    <select
-                      className="compact-settings__select"
-                      value={localLanguage}
-                      onChange={e => setLocalLanguage(e.target.value as 'en' | 'es')}
+                      <button
+                        type="button"
+                        className={`compact-settings__segment${localTheme === 'light' ? ' compact-settings__segment--active' : ''}`}
+                        aria-pressed={localTheme === 'light'}
+                        onClick={() => setLocalTheme('light')}
+                      >
+                        <Sun size={14} aria-hidden="true" />
+                        {t('settings.light')}
+                      </button>
+                      <button
+                        type="button"
+                        className={`compact-settings__segment${localTheme === 'dark' ? ' compact-settings__segment--active' : ''}`}
+                        aria-pressed={localTheme === 'dark'}
+                        onClick={() => setLocalTheme('dark')}
+                      >
+                        <Moon size={14} aria-hidden="true" />
+                        {t('settings.dark')}
+                      </button>
+                    </div>
+                  </li>
+                  <li className="compact-settings__row">
+                    <span className="compact-settings__row-label">{t('settings.language')}</span>
+                    <div
+                      className="compact-settings__segmented"
+                      role="group"
+                      aria-label={t('settings.language')}
                     >
-                      <option value="en">{t('settings.langEnglish')}</option>
-                      <option value="es">{t('settings.langSpanish')}</option>
-                    </select>
-                  </div>
-
-                  <div className="compact-settings__toggles-row">
-                    <div className="compact-settings__field compact-settings__field--dev">
-                      <div className="compact-settings__toggle-container">
-                        <label
-                          className="compact-settings__label compact-settings__label--dev"
-                          title={t(
-                            'settings.developmentModeDescription',
-                            'Unlock all modes for testing'
-                          )}
-                        >
-                          🔧 Dev Mode
-                        </label>
-                        <input
-                          type="checkbox"
-                          id="developmentMode"
-                          className="compact-settings__toggle"
-                          checked={localDevelopmentMode}
-                          onChange={e => setLocalDevelopmentMode(e.target.checked)}
-                        />
-                      </div>
+                      <button
+                        type="button"
+                        className={`compact-settings__segment${localLanguage === 'en' ? ' compact-settings__segment--active' : ''}`}
+                        aria-pressed={localLanguage === 'en'}
+                        onClick={() => setLocalLanguage('en')}
+                      >
+                        EN
+                      </button>
+                      <button
+                        type="button"
+                        className={`compact-settings__segment${localLanguage === 'es' ? ' compact-settings__segment--active' : ''}`}
+                        aria-pressed={localLanguage === 'es'}
+                        onClick={() => setLocalLanguage('es')}
+                      >
+                        ES
+                      </button>
                     </div>
-
-                    <div className="compact-settings__field compact-settings__field--dev">
-                      <div className="compact-settings__toggle-container">
-                        <label
-                          className="compact-settings__label compact-settings__label--dev"
-                          title={t(
-                            'settings.randomizeItemsDescription',
-                            'Shuffle cards, questions and exercises in random order'
-                          )}
-                        >
-                          🎲 Randomize
-                        </label>
-                        <input
-                          type="checkbox"
-                          id="randomizeItems"
-                          className="compact-settings__toggle"
-                          checked={localRandomizeItems}
-                          onChange={e => setLocalRandomizeItems(e.target.checked)}
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                  </li>
+                  <li className="compact-settings__row compact-settings__row--toggle">
+                    <label
+                      htmlFor="developmentMode"
+                      className="compact-settings__row-label"
+                      title={t('settings.developmentModeDescription')}
+                    >
+                      <Wrench size={16} className="compact-settings__row-icon" aria-hidden="true" />
+                      {t('settings.developmentMode')}
+                    </label>
+                    <input
+                      type="checkbox"
+                      id="developmentMode"
+                      className="compact-settings__toggle"
+                      checked={localDevelopmentMode}
+                      onChange={e => setLocalDevelopmentMode(e.target.checked)}
+                    />
+                  </li>
+                  <li className="compact-settings__row compact-settings__row--toggle">
+                    <label
+                      htmlFor="randomizeItems"
+                      className="compact-settings__row-label"
+                      title={t('settings.randomizeItemsDescription')}
+                    >
+                      <Shuffle size={16} className="compact-settings__row-icon" aria-hidden="true" />
+                      {t('settings.randomizeItems')}
+                    </label>
+                    <input
+                      type="checkbox"
+                      id="randomizeItems"
+                      className="compact-settings__toggle"
+                      checked={localRandomizeItems}
+                      onChange={e => setLocalRandomizeItems(e.target.checked)}
+                    />
+                  </li>
+                </ul>
               </div>
             )}
 
@@ -405,7 +425,7 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
                 <div className="compact-settings__games">
                   <div className="compact-settings__game">
                     <label className="compact-settings__game-label">
-                      📚 {t('settings.flashcardMode')}
+                      {t('settings.flashcardMode')}
                     </label>
                     <div className="compact-settings__game-stepper">
                       <button
@@ -446,7 +466,7 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
 
                   <div className="compact-settings__game">
                     <label className="compact-settings__game-label">
-                      ❓ {t('settings.quizMode')}
+                      {t('settings.quizMode')}
                     </label>
                     <div className="compact-settings__game-stepper">
                       <button
@@ -487,7 +507,7 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
 
                   <div className="compact-settings__game">
                     <label className="compact-settings__game-label">
-                      ✏️ {t('settings.completionMode')}
+                      {t('settings.completionMode')}
                     </label>
                     <div className="compact-settings__game-stepper">
                       <button
@@ -528,7 +548,7 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
 
                   <div className="compact-settings__game">
                     <label className="compact-settings__game-label">
-                      🔄 {t('settings.sortingMode')}
+                      {t('settings.sortingMode')}
                     </label>
                     <div className="compact-settings__game-stepper">
                       <button
@@ -569,7 +589,7 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
 
                   <div className="compact-settings__game">
                     <label className="compact-settings__game-label">
-                      🔗 {t('settings.matchingMode')}
+                      {t('settings.matchingMode')}
                     </label>
                     <div className="compact-settings__game-stepper">
                       <button
@@ -610,7 +630,7 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
 
                   <div className="compact-settings__game">
                     <label className="compact-settings__game-label">
-                      🔀 {t('settings.reorderingMode')}
+                      {t('settings.reorderingMode')}
                     </label>
                     <div className="compact-settings__game-stepper">
                       <button
@@ -651,7 +671,7 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
 
                   <div className="compact-settings__game">
                     <label className="compact-settings__game-label">
-                      🔄 {t('settings.transformationMode')}
+                      {t('settings.transformationMode')}
                     </label>
                     <div className="compact-settings__game-stepper">
                       <button
@@ -692,7 +712,7 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
 
                   <div className="compact-settings__game">
                     <label className="compact-settings__game-label">
-                      🔤 {t('settings.wordFormationMode')}
+                      {t('settings.wordFormationMode')}
                     </label>
                     <div className="compact-settings__game-stepper">
                       <button
@@ -733,7 +753,7 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
 
                   <div className="compact-settings__game">
                     <label className="compact-settings__game-label">
-                      ✅ {t('settings.errorCorrectionMode')}
+                      {t('settings.errorCorrectionMode')}
                     </label>
                     <div className="compact-settings__game-stepper">
                       <button
@@ -881,13 +901,13 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
               </div>
             )}
           </div>
-          <div className="modal__actions modal__actions--single">
+          <div className="compact-settings__footer">
             <button
               onClick={handleSaveAndClose}
-              className="modal__btn modal__btn--primary"
+              className="compact-settings__done"
+              type="button"
               aria-label={hasChanges ? t('common.save') : t('common.close')}
             >
-              <Save className="modal__btn-icon" />
               {hasChanges ? t('common.save') : t('common.close')}
             </button>
           </div>

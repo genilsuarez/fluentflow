@@ -8,6 +8,7 @@ import { useAppStore } from './stores/appStore';
 import { useProgressStore } from './stores/progressStore';
 import { useSettingsStore } from './stores/settingsStore';
 
+import { modulesCatalogQueryOptions } from './hooks/useModuleData';
 import { useSystemTheme } from './hooks/useSystemTheme';
 import { useTranslation } from './utils/i18n';
 import { verifyCacheIntegrity } from './services/offlineManager';
@@ -51,18 +52,7 @@ const AppContent: React.FC = () => {
   const currentView = useAppStore(state => state.currentView);
   const progressHistory = useProgressStore(state => state.progressHistory);
   const completedModules = useProgressStore(state => state.completedModules);
-  const { data: learnFlowCatalog = [] } = useQuery({
-    queryKey: ['modules'],
-    queryFn: async () => {
-      const { fetchModules } = await import('./services/api');
-      const response = await fetchModules();
-      if (!response.success) throw new Error(response.error || 'Failed to fetch modules');
-      return response.data;
-    },
-    networkMode: 'always',
-    staleTime: 15 * 60 * 1000,
-    refetchOnWindowFocus: false,
-  });
+  const { data: learnFlowCatalog = [] } = useQuery(modulesCatalogQueryOptions);
   const {
     offlineEnabled,
     downloadedLevels,

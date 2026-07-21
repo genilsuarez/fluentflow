@@ -7,6 +7,7 @@ import ExerciseResultScreen from '../ui/ExerciseResultScreen';
 import type { LearningModule, ReorderingData } from '../../types';
 
 import '../../styles/components/reordering-component.css';
+import { GameControlsExitButton } from '../ui/GameControlsExitButton';
 
 interface ReorderingComponentProps {
   module: LearningModule;
@@ -463,15 +464,7 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
 
       {/* Control Bar */}
       <div className="game-controls">
-        <button
-          onClick={handleReturnToMenu}
-          className="game-controls__home-btn"
-          title={t('learning.returnToMainMenu')}
-        >
-          <span className="game-controls__home-icon" aria-hidden="true">
-            🏠
-          </span>
-        </button>
+        <GameControlsExitButton onClick={handleReturnToMenu} title={t('learning.returnToMainMenu')} />
 
         <button
           onClick={triggerRestart}
@@ -494,7 +487,7 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
             <button
               onClick={handleCheck}
               disabled={answerWords.length === 0}
-              className="game-controls__primary-btn game-controls__primary-btn--purple"
+              className="game-controls__primary-btn"
             >
               <Check className="game-controls__primary-icon" />
               <span>{t('learning.checkOrder')}</span>
@@ -503,7 +496,7 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
         ) : (
           <button
             onClick={handleNext}
-            className="game-controls__primary-btn game-controls__primary-btn--green"
+            className="game-controls__primary-btn"
           >
             <span>
               {currentIndex === exercises.length - 1

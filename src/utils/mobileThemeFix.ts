@@ -319,8 +319,8 @@ function forceSafariThemeOverride(): void {
         color: ${lightText} !important;
       }
       
-      html:not(.dark) *,
-      html.light * {
+      html:not(.dark) *:not(.home-dash):not(.home-dash *),
+      html.light *:not(.home-dash):not(.home-dash *) {
         color-scheme: light !important;
         background-color: inherit !important;
         color: inherit !important;
@@ -359,7 +359,7 @@ function forceSafariThemeOverride(): void {
         color: ${darkText} !important;
       }
       
-      html.dark * {
+      html.dark *:not(.home-dash):not(.home-dash *) {
         color-scheme: dark !important;
         background-color: inherit !important;
         color: inherit !important;

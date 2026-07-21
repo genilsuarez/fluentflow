@@ -39,6 +39,9 @@
   width: 100%;
   height: 100%;
   transform: rotate(-90deg);
+  stroke: none;
+  color: unset;
+  fill: none;
 }
 
 .home-dash__ring-bg {
@@ -464,6 +467,9 @@
   width: 100%;
   height: 100%;
   transform: rotate(-90deg);
+  stroke: none;
+  color: unset;
+  fill: none;
 }
 
 .home-dash__level-ring-bg {
@@ -545,22 +551,109 @@
 }
 
 /* ─── DARK MODE ─── */
-html.dark .home-dash__level-code--emerald {
+/* Scoped under .main-menu to beat svg { stroke: white } and mobile color:inherit */
+.main-menu .home-dash .home-dash__level-ring-bg,
+.main-menu .home-dash .home-dash__ring-bg {
+  stroke: var(--lp-border);
+}
+
+html.dark .main-menu .home-dash .home-dash__level-ring-bg,
+html.dark .main-menu .home-dash .home-dash__ring-bg,
+.dark .main-menu .home-dash .home-dash__level-ring-bg,
+.dark .main-menu .home-dash .home-dash__ring-bg {
+  stroke: rgba(255, 255, 255, 0.14);
+}
+
+.main-menu .home-dash .home-dash__level-ring-fill--emerald {
+  stroke: #10b981;
+}
+.main-menu .home-dash .home-dash__level-ring-fill--blue {
+  stroke: #3b82f6;
+}
+.main-menu .home-dash .home-dash__level-ring-fill--purple {
+  stroke: #8b5cf6;
+}
+.main-menu .home-dash .home-dash__level-ring-fill--orange {
+  stroke: #f97316;
+}
+.main-menu .home-dash .home-dash__level-ring-fill--red {
+  stroke: #ef4444;
+}
+.main-menu .home-dash .home-dash__level-ring-fill--indigo {
+  stroke: #6366f1;
+}
+
+html.dark .main-menu .home-dash .home-dash__level-ring-fill--emerald,
+.dark .main-menu .home-dash .home-dash__level-ring-fill--emerald {
+  stroke: #34d399;
+}
+html.dark .main-menu .home-dash .home-dash__level-ring-fill--blue,
+.dark .main-menu .home-dash .home-dash__level-ring-fill--blue {
+  stroke: #60a5fa;
+}
+html.dark .main-menu .home-dash .home-dash__level-ring-fill--purple,
+.dark .main-menu .home-dash .home-dash__level-ring-fill--purple {
+  stroke: #a78bfa;
+}
+html.dark .main-menu .home-dash .home-dash__level-ring-fill--orange,
+.dark .main-menu .home-dash .home-dash__level-ring-fill--orange {
+  stroke: #fb923c;
+}
+html.dark .main-menu .home-dash .home-dash__level-ring-fill--red,
+.dark .main-menu .home-dash .home-dash__level-ring-fill--red {
+  stroke: #f87171;
+}
+html.dark .main-menu .home-dash .home-dash__level-ring-fill--indigo,
+.dark .main-menu .home-dash .home-dash__level-ring-fill--indigo {
+  stroke: #818cf8;
+}
+
+.main-menu .home-dash .home-dash__section-title,
+.main-menu .home-dash .home-dash__level-count {
+  color: var(--lp-muted);
+}
+
+.main-menu .home-dash .home-dash__level-code--emerald {
+  color: #059669;
+}
+.main-menu .home-dash .home-dash__level-code--blue {
+  color: #2563eb;
+}
+.main-menu .home-dash .home-dash__level-code--purple {
+  color: #7c3aed;
+}
+.main-menu .home-dash .home-dash__level-code--orange {
+  color: #ea580c;
+}
+.main-menu .home-dash .home-dash__level-code--red {
+  color: #dc2626;
+}
+.main-menu .home-dash .home-dash__level-code--indigo {
+  color: #4f46e5;
+}
+
+html.dark .main-menu .home-dash .home-dash__level-code--emerald,
+.dark .main-menu .home-dash .home-dash__level-code--emerald {
   color: #34d399;
 }
-html.dark .home-dash__level-code--blue {
+html.dark .main-menu .home-dash .home-dash__level-code--blue,
+.dark .main-menu .home-dash .home-dash__level-code--blue {
   color: #60a5fa;
 }
-html.dark .home-dash__level-code--purple {
+html.dark .main-menu .home-dash .home-dash__level-code--purple,
+.dark .main-menu .home-dash .home-dash__level-code--purple {
   color: #a78bfa;
 }
-html.dark .home-dash__level-code--orange {
+html.dark .main-menu .home-dash .home-dash__level-code--orange,
+.dark .main-menu .home-dash .home-dash__level-code--orange {
   color: #fb923c;
 }
-html.dark .home-dash__level-code--red {
+html.dark .main-menu .home-dash .home-dash__level-code--red,
+.dark .main-menu .home-dash .home-dash__level-code--red {
   color: #f87171;
 }
-html.dark .home-dash__level-code--indigo {
+html.dark .main-menu .home-dash .home-dash__level-code--indigo,
+.dark .main-menu .home-dash .home-dash__level-code--indigo {
   color: #818cf8;
 }
 
@@ -579,8 +672,8 @@ html.dark .home-dash__level-code--indigo {
 
   .home-dash__hero-cta {
     grid-column: 1 / -1;
-    /* Card-style “continuar último módulo” — ruido en mobile; el progreso sigue en el hero. */
-    display: none;
+    width: 100%;
+    justify-content: space-between;
   }
 
   .home-dash__hero-ring {

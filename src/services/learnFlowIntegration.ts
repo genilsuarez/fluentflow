@@ -83,6 +83,8 @@ export const publishLearnFlowIntegration = (
       .filter((moduleId): moduleId is string => Boolean(moduleId && knownModuleIds.has(moduleId)))
   );
 
+  const moduleById = new Map(modules.map((module) => [module.id, module]));
+
   const content = Object.fromEntries(
     modules.map(module => {
       const completion = source.completedModules[module.id];
@@ -91,6 +93,7 @@ export const publishLearnFlowIntegration = (
         module.id,
         {
           contentId: module.id,
+          title: module.name,
           contentType: 'module',
           cefrLevel: getModuleLevel(module).toUpperCase(),
           progressPct: completed ? 100 : 0,
@@ -159,6 +162,7 @@ export const publishLearnFlowIntegration = (
       runId: entry.runId as string,
       app: 'fluentflow',
       contentId: entry.moduleId as string,
+      title: moduleById.get(entry.moduleId as string)?.name ?? entry.moduleId as string,
       activity: entry.learningMode ?? 'module',
       eventType: 'attempt_completed',
       occurredAt: toIsoTimestamp(entry.occurredAt as string) ?? publishedAt,

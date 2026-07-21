@@ -12,6 +12,7 @@ import { OfflineModal } from '../ui/OfflineModal';
 import { MainMenu } from '../ui/MainMenu';
 import type { LearningModule } from '../../types';
 import '../../styles/components/app-router.css';
+import { GameControlsExitButton } from '../ui/GameControlsExitButton';
 
 // Lazy load learning components with auto-retry on chunk load failure
 const FlashcardComponent = lazyWithRetry(() => import('../learning/FlashcardComponent'));
@@ -75,19 +76,11 @@ const ModuleError: React.FC<{ error: Error; moduleId: string; onRetry: () => voi
 
       {/* Game controls bar for mobile — consistent with learning components */}
       <div className="game-controls">
-        <button
-          onClick={handleGoToMenu}
-          className="game-controls__home-btn"
-          title={t('learning.returnToMainMenu')}
-        >
-          <span className="game-controls__home-icon" aria-hidden="true">
-            🏠
-          </span>
-        </button>
+        <GameControlsExitButton onClick={handleGoToMenu} title={t('learning.returnToMainMenu')} />
 
         <button
           onClick={onRetry}
-          className="game-controls__primary-btn game-controls__primary-btn--blue"
+          className="game-controls__primary-btn"
         >
           <RotateCcw className="game-controls__primary-icon" />
           <span>{t('errors.tryAgain')}</span>
