@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom';
 import { ArrowLeft, WifiOff, Wrench } from 'lucide-react';
 import '../../styles/components/header.css';
 import { useAppStore } from '../../stores/appStore';
+import { useLearningHeaderStore } from '../../stores/learningHeaderStore';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useUserStore } from '../../stores/userStore';
 import { useMenuNavigation } from '../../hooks/useMenuNavigation';
@@ -22,7 +23,8 @@ const CompactMyProgress = React.lazy(() =>
 );
 // Eagerly loaded — always visible
 import { ScoreDisplay } from './ScoreDisplay';
-import { FluentFlowLogo } from './FluentFlowLogo';
+import { NavMenuIcon } from './NavMenuIcon';
+import { useProgression } from '../../hooks/useProgression';
 interface HeaderProps {
   onMenuToggle?: () => void;
 }
@@ -52,6 +54,8 @@ function getStoredNavigationMode(): NavigationMode {
 }
 export const Header: React.FC<HeaderProps> = () => {
   const currentView = useAppStore(state => state.currentView);
+  const previousMenuContext = useAppStore(state => state.previousMenuContext);
+  const lessonProgress = useLearningHeaderStore(state => state.progress);
   const { developmentMode, language, offlineEnabled, theme, setTheme } = useSettingsStore();
   const user = useUserStore(state => state.user);
   const { returnToMenu } = useMenuNavigation();
@@ -92,6 +96,9 @@ export const Header: React.FC<HeaderProps> = () => {
   // Determine header layout mode
   const isInGame = currentView !== 'menu';
   const headerMode = isInGame ? 'learning' : 'menu';
+  const lessonTitle = lessonProgress?.title ?? '';
+  const progression = useProgression();
+  const menuModuleTotal = progression.stats?.totalModules ?? 0;
   // Theme is now handled by themeInitializer and settingsStore
   // This effect is kept for consistency but theme should already be applied
   // Handle escape key for hamburger menu
@@ -123,7 +130,7 @@ export const Header: React.FC<HeaderProps> = () => {
   // };
   return (
     <header
-      className={`header-redesigned header-redesigned--${headerMode}${isInGame ? ' header-redesigned--learning-mode' : ''}`}
+      className={`header-redesigned header-redesigned--${headerMode}${isInGame ? ' header-redesigned--learning-mode' : ''}${lessonTitle ? ' header-redesigned--has-lesson-title' : ''}`}
     >
       <div className={`header-redesigned__container header-redesigned__container--${headerMode}`}>
         {/* Left Section: Back + Menu + Brand */}
@@ -151,19 +158,16 @@ export const Header: React.FC<HeaderProps> = () => {
                   aria-expanded={showSideMenu}
                   aria-controls="navigation-menu"
                 >
-                  <span className="header-redesigned__menu-icon" aria-hidden="true">
-                    ☰
-                  </span>
+                  <NavMenuIcon name="menu" className="header-redesigned__menu-icon" />
                   <span className="sr-only">
                     {showSideMenu ? t('navigation.closeMenu') : t('navigation.openMenuShort')}
                   </span>
                 </button>
-              </div>
-              <div className="header-redesigned__brand">
-                <FluentFlowLogo size="md" className="header-redesigned__logo" />
-                <h1 className="header-redesigned__title">
-                  Fluent<em>Flow</em>
-                </h1>
+                {lessonTitle ? (
+                  <h2 className="header-redesigned__lesson-title" title={lessonTitle}>
+                    {lessonTitle}
+                  </h2>
+                ) : null}
               </div>
             </>
           ) : (
@@ -176,18 +180,43 @@ export const Header: React.FC<HeaderProps> = () => {
                 aria-expanded={showSideMenu}
                 aria-controls="navigation-menu"
               >
-                <span className="header-redesigned__menu-icon" aria-hidden="true">
-                  ☰
-                </span>
+                <NavMenuIcon name="menu" className="header-redesigned__menu-icon" />
                 <span className="sr-only">
                   {showSideMenu ? t('navigation.closeMenu') : t('navigation.openMenuShort')}
                 </span>
               </button>
-              <div className="header-redesigned__brand">
-                <FluentFlowLogo size="md" className="header-redesigned__logo" />
-                <h1 className="header-redesigned__title">
-                  Fluent<em>Flow</em>
-                </h1>
+              <div className="header-redesigned__greeting">
+                {previousMenuContext === 'list' ? (
+                  <>
+                    <h1 className="header-redesigned__greeting-title">
+                      {language === 'es' ? (
+                        <>
+                          Ejercicios <em>guiados</em>
+                        </>
+                      ) : (
+                        <>
+                          Guided <em>exercises</em>
+                        </>
+                      )}
+                    </h1>
+                    <p className="header-redesigned__greeting-sub">
+                      {t('navigation.headerModulesSub', undefined, {
+                        count: String(menuModuleTotal),
+                      })}
+                    </p>
+                  </>
+                ) : (
+                  <>
+                    <h1 className="header-redesigned__greeting-title">
+                      Fluent<em>Flow</em>
+                    </h1>
+                    <p className="header-redesigned__greeting-sub">
+                      {t('navigation.headerHomeSub', undefined, {
+                        total: String(menuModuleTotal),
+                      })}
+                    </p>
+                  </>
+                )}
               </div>
             </>
           )}
@@ -314,7 +343,7 @@ export const Header: React.FC<HeaderProps> = () => {
               }
             >
               <span className="header-side-menu__icon" aria-hidden="true">
-                ⌂
+                <NavMenuIcon name="home" />
               </span>
               <span className="header-side-menu__text">Inicio</span>
             </button>
@@ -329,7 +358,7 @@ export const Header: React.FC<HeaderProps> = () => {
               }
             >
               <span className="header-side-menu__icon" aria-hidden="true">
-                📚
+                <NavMenuIcon name="book" />
               </span>
               <span className="header-side-menu__text">Ejercicios</span>
             </button>
@@ -342,7 +371,7 @@ export const Header: React.FC<HeaderProps> = () => {
               aria-label="Ajustes"
             >
               <span className="header-side-menu__icon" aria-hidden="true">
-                ⚙
+                <NavMenuIcon name="settings" />
               </span>
               <span className="header-side-menu__text">Ajustes</span>
             </button>
@@ -357,7 +386,7 @@ export const Header: React.FC<HeaderProps> = () => {
                 aria-label="Mi progreso"
               >
                 <span className="header-side-menu__icon" aria-hidden="true">
-                  ↗
+                  <NavMenuIcon name="progress" />
                 </span>
                 <span className="header-side-menu__text">Mi Progreso</span>
               </button>
@@ -374,7 +403,7 @@ export const Header: React.FC<HeaderProps> = () => {
                 aria-label="About LearnFlow"
               >
                 <span className="header-side-menu__icon" aria-hidden="true">
-                  ⓘ
+                  <NavMenuIcon name="info" />
                 </span>
                 <span className="header-side-menu__text">About LearnFlow</span>
               </button>
@@ -385,7 +414,7 @@ export const Header: React.FC<HeaderProps> = () => {
                 onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
               >
                 <span className="header-side-menu__icon" aria-hidden="true">
-                  {theme === 'dark' ? '☀️' : '🌙'}
+                  <NavMenuIcon name={theme === 'dark' ? 'sun' : 'moon'} />
                 </span>
                 <span className="header-side-menu__text">
                   {theme === 'dark' ? 'Modo claro' : 'Modo oscuro'}
@@ -403,7 +432,7 @@ export const Header: React.FC<HeaderProps> = () => {
                 }}
               >
                 <span className="header-side-menu__icon" aria-hidden="true">
-                  👤
+                  <NavMenuIcon name="user" />
                 </span>
                 <span className="header-side-menu__text">{user ? user.name : t('auth.login')}</span>
               </button>
@@ -422,7 +451,7 @@ export const Header: React.FC<HeaderProps> = () => {
                 }}
               >
                 <span className="header-side-menu__icon" aria-hidden="true">
-                  ⌂
+                  <NavMenuIcon name="home" />
                 </span>
                 <span className="header-side-menu__text">Portal</span>
               </a>

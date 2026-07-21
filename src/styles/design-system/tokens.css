@@ -33,6 +33,7 @@
   --lp-accent-soft: #e8f0fe;
   --lp-accent-dark: #1e40af;
   --lp-accent-hover: #1d4ed8;
+  --lp-accent-text: #1e40af;
 
   /* ─── Primary action (maintained for interactive elements) ─── */
   --lp-primary: #3d6b9f;
@@ -218,6 +219,7 @@ html.dark {
   --lp-ink-inverse: #181b20;
 
   --lp-accent-soft: #1a2744;
+  --lp-accent-text: #93c5fd;
   --lp-primary-soft: #1a2a3d;
 
   --lp-success-soft: #1a2d20;

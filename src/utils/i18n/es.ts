@@ -76,6 +76,8 @@ export const es = {
   },
   navigation: {
     mainMenu: 'Menú Principal',
+    headerHomeSub: '{{total}} ejercicios · CEFR A1–C2',
+    headerModulesSub: '{{count}} ejercicios de aprendizaje disponibles',
     dashboard: 'Panel',
     settings: 'Configuración',
     profile: 'Perfil',

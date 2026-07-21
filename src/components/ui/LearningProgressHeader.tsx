@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../../styles/components/learning-progress-header.css';
+import { useLearningHeaderStore } from '../../stores/learningHeaderStore';
 import type { LearningMode } from '../../types';
 
 interface LearningProgressHeaderProps {
@@ -10,6 +11,7 @@ interface LearningProgressHeaderProps {
   helpText?: string;
 }
 
+/** Syncs lesson title to app header; renders progress bar + counter inside the game shell. */
 const LearningProgressHeader: React.FC<LearningProgressHeaderProps> = ({
   title,
   currentIndex,
@@ -17,27 +19,28 @@ const LearningProgressHeader: React.FC<LearningProgressHeaderProps> = ({
   mode,
   helpText,
 }) => {
+  const setProgress = useLearningHeaderStore(state => state.setProgress);
+  const clearProgress = useLearningHeaderStore(state => state.clearProgress);
   const progressPercentage = totalItems > 0 ? ((currentIndex + 1) / totalItems) * 100 : 0;
+  const counterLabel = totalItems > 0 ? `${currentIndex + 1}/${totalItems}` : '...';
+
+  useEffect(() => {
+    setProgress({ title, currentIndex, totalItems, mode });
+    return () => clearProgress();
+  }, [title, currentIndex, totalItems, mode, setProgress, clearProgress]);
 
   return (
     <div className="learning-progress-header">
-      <div className="learning-progress-header__top">
-        <h2 className="learning-progress-header__title">{title}</h2>
-        <span className="learning-progress-header__counter">
-          {totalItems > 0 ? `${currentIndex + 1}/${totalItems}` : '...'}
-        </span>
+      <div className="learning-progress-header__row">
+        <div className="learning-progress-header__progress-container">
+          <div
+            className={`learning-progress-header__progress-fill learning-progress-header__progress-fill--${mode}`}
+            style={{ '--progress-width': `${progressPercentage}%` } as React.CSSProperties}
+          />
+        </div>
+        <span className="learning-progress-header__counter">{counterLabel}</span>
       </div>
-      <div className="learning-progress-header__progress-container">
-        <div
-          className={`learning-progress-header__progress-fill learning-progress-header__progress-fill--${mode}`}
-          style={
-            {
-              '--progress-width': `${progressPercentage}%`,
-            } as React.CSSProperties
-          }
-        />
-      </div>
-      {helpText && <p className="learning-progress-header__help-text">{helpText}</p>}
+      {helpText ? <p className="learning-progress-header__help-text">{helpText}</p> : null}
     </div>
   );
 };
