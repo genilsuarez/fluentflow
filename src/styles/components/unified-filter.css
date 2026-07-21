@@ -171,7 +171,48 @@
 }
 
 .unified-filter__panel--sheet .unified-filter__header {
-  padding-top: 0.375rem;
+  padding: 0.25rem 0.625rem 0.5rem;
+  gap: 0.375rem;
+}
+
+.unified-filter__panel--sheet .unified-filter__tabs {
+  gap: 0.1875rem;
+  padding: 0.1875rem;
+}
+
+.unified-filter__panel--sheet .unified-filter__tab {
+  flex-direction: column;
+  gap: 0.125rem;
+  padding: 0.375rem 0.25rem;
+  font-size: 0.625rem;
+  line-height: 1.05;
+  white-space: normal;
+  text-align: center;
+}
+
+.unified-filter__panel--sheet .unified-filter__tab svg {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.unified-filter__panel--sheet .unified-filter__tab-label {
+  overflow: visible;
+  text-overflow: unset;
+  word-break: break-word;
+}
+
+.unified-filter__panel--sheet .unified-filter__close {
+  width: 2.25rem;
+  height: 2.25rem;
+  min-width: 2.25rem;
+  min-height: 2.25rem;
+  position: relative;
+}
+
+.unified-filter__panel--sheet .unified-filter__close::after {
+  content: '';
+  position: absolute;
+  inset: -0.5rem;
 }
 
 .unified-filter__tabs {
@@ -290,7 +331,73 @@
 .unified-filter__chips {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.375rem;
+}
+
+/* 6-item tabs (categories, CEFR) — fixed 3×2 grid instead of 5+1 flex rows */
+.unified-filter__chips--balanced {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-content: center;
+}
+
+.unified-filter__chips--balanced .unified-filter__chip {
+  width: 100%;
+  justify-content: center;
+}
+
+/* Learning modes — multi-column grid (13 items, varied label lengths) */
+.unified-filter__chips--modes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-content: center;
+}
+
+.unified-filter__chips--modes .unified-filter__chip {
+  width: 100%;
+  justify-content: center;
+  min-width: 0;
+}
+
+.unified-filter__chips--modes .unified-filter__chip-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+/* Center a lone chip on the last row */
+.unified-filter__chips--modes .unified-filter__chip:last-child:nth-child(3n + 1) {
+  grid-column: 2;
+}
+
+.unified-filter__panel--sheet .unified-filter__chips--modes {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.25rem;
+}
+
+.unified-filter__panel--sheet .unified-filter__chips--modes .unified-filter__chip {
+  flex-direction: column;
+  gap: 0.125rem;
+  min-height: 2.625rem;
+  padding: 0.25rem 0.1875rem;
+  font-size: 0.625rem;
+}
+
+.unified-filter__panel--sheet .unified-filter__chips--modes .unified-filter__chip-icon {
+  line-height: 1;
+}
+
+.unified-filter__panel--sheet .unified-filter__chips--modes .unified-filter__chip-icon svg {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.unified-filter__panel--sheet .unified-filter__chips--modes .unified-filter__chip-label {
+  width: 100%;
+  text-align: center;
+  line-height: 1.05;
 }
 
 .unified-filter__chip {
@@ -455,6 +562,12 @@ html.dark .unified-filter__chip--active {
   background: var(--lp-accent-soft, #1a2744);
   border-color: color-mix(in srgb, #60a5fa 40%, transparent);
   color: #93c5fd;
+}
+
+/* Cursor IDE mobile preview — bottom toolbar overlaps fixed sheets */
+html.browser-cursor-embedded .unified-filter__panel--sheet {
+  bottom: var(--cursor-preview-chrome-bottom, 52px);
+  max-height: min(78dvh, calc(100% - var(--cursor-preview-chrome-bottom, 52px) - 0.5rem));
 }
 
 @media (prefers-reduced-motion: reduce) {

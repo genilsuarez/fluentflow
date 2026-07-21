@@ -86,8 +86,7 @@
   flex-wrap: wrap;
 }
 
-.reading-component__time-badge,
-.reading-component__sections-badge {
+.reading-component__time-badge {
   display: inline-flex;
   align-items: center;
   gap: 0.375rem;
@@ -101,14 +100,7 @@
   transition: all 0.2s ease;
 }
 
-.reading-component__sections-badge {
-  background: var(--reading-bg-secondary);
-  border-color: var(--reading-border-primary);
-  color: var(--reading-text-secondary);
-}
-
-.reading-component__time-badge:hover,
-.reading-component__sections-badge:hover {
+.reading-component__time-badge:hover {
   border-color: var(--reading-accent-primary);
   transform: translateY(-1px);
 }
@@ -242,11 +234,12 @@
   justify-content: center;
   width: 1.375rem;
   height: 1.375rem;
-  background: var(--lp-primary, #3d6b9f);
-  color: #ffffff;
+  background: transparent;
+  color: var(--lp-ink);
+  border: 1.5px solid var(--lp-ink);
   border-radius: 50%;
   font-size: 0.75rem;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1;
   box-shadow: none;
 }
@@ -437,22 +430,6 @@
   font-weight: bold;
   font-size: 1.1em;
   line-height: 1;
-}
-
-.reading-component__objectives-cta {
-  margin-top: 0;
-  padding: 0.5rem 0.75rem;
-  background: var(--reading-bg-secondary);
-  border-radius: var(--reading-border-radius, 0.5rem);
-  border: 1px solid var(--reading-border-primary);
-}
-
-.reading-component__objectives-cta-text {
-  font-size: 0.8125rem;
-  color: var(--reading-text-primary);
-  font-style: italic;
-  font-weight: 500;
-  margin: 0;
 }
 
 /* === SUMMARY PAGE - Clean Layout === */
@@ -1321,10 +1298,6 @@
     padding-left: 1.75rem;
   }
 
-  .reading-component__objectives-cta-text {
-    font-size: var(--reading-font-size-base);
-  }
-
   .reading-component__objectives-page-meta {
     top: var(--reading-spacing-xl);
     right: var(--reading-spacing-xl);
@@ -1371,11 +1344,15 @@
     padding-bottom: max(0.375rem, env(safe-area-inset-bottom));
   }
 
-  /* Mobile: Single column vocabulary */
+  /* Mobile: Single column vocabulary (~25% tighter) */
+  .reading-component__vocabulary {
+    margin-bottom: 0.46875rem;
+  }
+
   .reading-component__vocabulary-grid {
     grid-template-columns: 1fr;
-    gap: 0.5rem;
-    padding: 0.5rem;
+    gap: 0.375rem;
+    padding: 0.375rem;
   }
 
   /* Mobile: Compact grammar points */
@@ -1414,34 +1391,46 @@
     margin-top: 0.25rem;
   }
 
-  /* Mobile: Compact vocabulary cards */
+  /* Mobile: Compact vocabulary cards (~25% tighter) */
   .reading-component__vocabulary-card-header {
-    padding: 0.375rem 0.5rem 0.25rem;
+    padding: 0.28125rem 0.375rem 0.1875rem;
+    gap: 0.28125rem;
   }
 
   .reading-component__vocabulary-content {
-    padding: 0.375rem 0.5rem;
-    gap: 0.3125rem;
+    padding: 0.28125rem 0.375rem;
+    gap: 0.234375rem;
   }
 
   .reading-component__vocabulary-term {
-    font-size: 0.9375rem;
+    font-size: 0.703125rem;
+    line-height: 1.08;
+  }
+
+  .reading-component__vocabulary-pronunciation {
+    font-size: 0.515625rem;
+    line-height: 1.2;
+  }
+
+  .reading-component__vocabulary-label {
+    font-size: 0.375rem;
   }
 
   .reading-component__vocabulary-definition,
   .reading-component__vocabulary-example {
-    padding: 0.25rem 0.375rem;
-    font-size: 0.75rem;
+    padding: 0.1875rem 0.28125rem;
+    font-size: 0.5625rem;
+    line-height: 1.1;
   }
 
   /* Mobile: Compact summary trigger */
   .reading-component__summary-section-trigger {
-    padding: 0.5rem 0.75rem;
-    margin-bottom: 0.5rem;
+    padding: 0.375rem 0.5625rem;
+    margin-bottom: 0.375rem;
   }
 
   .reading-component__summary-section-title {
-    font-size: 0.75rem;
+    font-size: 0.6875rem;
   }
 
   .reading-component__summary-section-count {
@@ -1512,16 +1501,7 @@
     font-size: 1em;
   }
 
-  .reading-component__objectives-cta {
-    padding: 0.5rem 0.625rem;
-  }
-
-  .reading-component__objectives-cta-text {
-    font-size: 0.75rem;
-  }
-
-  .reading-component__time-badge,
-  .reading-component__sections-badge {
+  .reading-component__time-badge {
     font-size: 0.6875rem;
     padding: 0.25rem 0.5rem;
   }
@@ -1564,21 +1544,13 @@ html.dark .reading-component__container {
 }
 
 /* Dark mode - Time badge */
-html.dark .reading-component__time-badge,
-html.dark .reading-component__sections-badge {
+html.dark .reading-component__time-badge {
   background: rgba(255, 255, 255, 0.04);
   border-color: rgba(255, 255, 255, 0.12);
   color: var(--reading-text-secondary);
 }
 
-html.dark .reading-component__sections-badge {
-  background: rgba(255, 255, 255, 0.04);
-  border-color: rgba(255, 255, 255, 0.12);
-  color: var(--reading-text-secondary);
-}
-
-html.dark .reading-component__time-badge:hover,
-html.dark .reading-component__sections-badge:hover {
+html.dark .reading-component__time-badge:hover {
   background: rgba(255, 255, 255, 0.06);
   border-color: rgba(255, 255, 255, 0.2);
 }
@@ -1624,11 +1596,7 @@ html.dark .reading-component__example-note {
   color: var(--reading-text-secondary);
 }
 
-html.dark .reading-component__example-number {
-  background: var(--lp-primary, #3d6b9f);
-  color: #ffffff;
-  box-shadow: none;
-} /* Dark theme - Objectives Page */
+/* Dark theme - Objectives Page */
 html.dark .reading-component__objectives-centered {
   background: var(--reading-bg-secondary);
   border-color: var(--reading-border-primary);

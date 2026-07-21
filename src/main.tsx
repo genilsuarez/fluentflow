@@ -5,6 +5,7 @@ import './index.css';
 import { initializeTheme } from './utils/themeInitializer';
 import { clearChunkRetryFlag } from './utils/lazyWithRetry';
 import './utils/safariDetection';
+import './utils/cursorBrowserDetection';
 
 // Registrar Service Worker para modo offline
 if ('serviceWorker' in navigator) {

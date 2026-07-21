@@ -104,15 +104,15 @@
   color: #e2e8f0;
 }
 
-/* Reading format - clear term visibility */
+/* Reading format - subtle term highlight */
 .content-renderer--reading .content-renderer__segment--term {
-  color: #2563eb;
+  color: var(--lp-primary, #3d6b9f);
   font-weight: 600;
-  border-bottom: 1px dotted currentColor;
+  border-bottom: 1px dotted color-mix(in srgb, var(--lp-primary) 50%, transparent);
 }
 
-.dark .content-renderer--reading .content-renderer__segment--term {
-  color: #93c5fd;
+html.dark .content-renderer--reading .content-renderer__segment--term {
+  color: color-mix(in srgb, var(--lp-accent-text) 72%, var(--lp-ink-soft));
 }
 
 /* Hover effects for interactive segments */

@@ -213,19 +213,19 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
     {
       key: 'category',
       icon: <Tags size={14} />,
-      label: t('categoryFilter.title'),
+      label: isMobileSheet ? t('categoryFilter.titleShort') : t('categoryFilter.title'),
       count: categories.length,
     },
     {
       key: 'mode',
       icon: <Layers size={14} />,
-      label: t('modeFilter.title'),
+      label: isMobileSheet ? t('modeFilter.titleShort') : t('modeFilter.title'),
       count: learningModes.length,
     },
     {
       key: 'level',
       icon: <GraduationCap size={14} />,
-      label: t('levelFilter.title'),
+      label: isMobileSheet ? t('levelFilter.titleShort') : t('levelFilter.title'),
       count: level !== 'all' ? 1 : 0,
     },
   ];
@@ -267,7 +267,7 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
 
       <div className="unified-filter__content" role="tabpanel">
         {activeTab === 'category' && (
-          <div className="unified-filter__chips">
+          <div className="unified-filter__chips unified-filter__chips--balanced">
             {ALL_CATEGORIES.map(category => {
               const isActive = categories.includes(category);
               return (
@@ -291,7 +291,7 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
         )}
 
         {activeTab === 'mode' && (
-          <div className="unified-filter__chips">
+          <div className="unified-filter__chips unified-filter__chips--modes">
             {ALL_MODES.map(mode => {
               const isActive = learningModes.includes(mode);
               return (
@@ -313,7 +313,7 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
         )}
 
         {activeTab === 'level' && (
-          <div className="unified-filter__chips">
+          <div className="unified-filter__chips unified-filter__chips--balanced">
             {ALL_LEVELS.map(lvl => {
               const isActive = level === lvl;
               return (

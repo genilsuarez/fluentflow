@@ -229,10 +229,6 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                     time: String(readingData.estimatedReadingTime),
                   })}
                 </span>
-                <span className="reading-component__sections-badge">
-                  {readingSections.length + 1 + (hasSummaryContent ? 1 : 0)}{' '}
-                  {t('reading.component.pages')}
-                </span>
               </div>
             )}
 
@@ -252,12 +248,6 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
               </div>
             )}
 
-            {/* Call to action */}
-            <div className="reading-component__objectives-cta">
-              <p className="reading-component__objectives-cta-text">
-                {t('reading.component.readyToStart')}
-              </p>
-            </div>
           </div>
         ) : isSummaryPage ? (
           <div className="reading-component__summary-page">
