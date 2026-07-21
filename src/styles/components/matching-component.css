@@ -444,8 +444,12 @@
   box-shadow: var(--shadow-button-hover);
 }
 
-.matching-component__item--correct .matching-component__info-button:hover .matching-component__info-icon,
-.matching-component__item--incorrect .matching-component__info-button:hover .matching-component__info-icon {
+.matching-component__item--correct
+  .matching-component__info-button:hover
+  .matching-component__info-icon,
+.matching-component__item--incorrect
+  .matching-component__info-button:hover
+  .matching-component__info-icon {
   color: #ffffff;
 }
 
@@ -664,8 +668,14 @@ html.dark .matching-component__item--incorrect .matching-component__info-button:
   border-color: var(--lp-error);
 }
 
-html.dark .matching-component__item--correct .matching-component__info-button:hover .matching-component__info-icon,
-html.dark .matching-component__item--incorrect .matching-component__info-button:hover .matching-component__info-icon {
+html.dark
+  .matching-component__item--correct
+  .matching-component__info-button:hover
+  .matching-component__info-icon,
+html.dark
+  .matching-component__item--incorrect
+  .matching-component__info-button:hover
+  .matching-component__info-icon {
   color: #ffffff;
 }
 
