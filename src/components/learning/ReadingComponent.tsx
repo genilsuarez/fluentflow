@@ -247,7 +247,6 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                 </ul>
               </div>
             )}
-
           </div>
         ) : isSummaryPage ? (
           <div className="reading-component__summary-page">
