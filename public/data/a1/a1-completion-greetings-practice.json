@@ -30,10 +30,10 @@
     "tip": "Complete with the correct preposition"
   },
   {
-    "sentence": "I'm from ______.",
-    "correct": "Spain",
-    "explanation": "Se usa el nombre de un país para decir de dónde eres.",
-    "tip": "Complete with a country name"
+    "sentence": "I'm from Spain. And ______?",
+    "correct": "you",
+    "explanation": "Se usa <and you?> para devolver la pregunta.",
+    "tip": "Complete with a pronoun to ask back"
   },
   {
     "sentence": "Good ______, everyone!",
