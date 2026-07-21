@@ -569,7 +569,8 @@ html.dark .sorting-component__category-header {
   }
 
   .sorting-component__drop-zone--interactive .sorting-component__sorted-item--default:hover::after,
-  .sorting-component__drop-zone--interactive .sorting-component__sorted-item--default:active::after {
+  .sorting-component__drop-zone--interactive
+    .sorting-component__sorted-item--default:active::after {
     opacity: 1;
   }
 
