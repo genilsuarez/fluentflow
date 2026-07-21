@@ -732,7 +732,9 @@
   z-index: 50;
   background-color: var(--lp-bg-paper, var(--menu-bg));
   border-right: 1.5px solid var(--lp-border, var(--menu-border));
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate3d(-100%, 0, 0);
+  transition: transform 320ms cubic-bezier(0.22, 0.9, 0.36, 1);
+  backface-visibility: hidden;
   display: flex;
   flex-direction: column;
   padding: 22px 14px 16px;
@@ -954,10 +956,12 @@ html.dark .header-side-menu__item:hover:not(.header-side-menu__item--active) {
 .header-side-menu-overlay {
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: color-mix(in srgb, var(--lp-ink, #2c2418) 45%, transparent);
   z-index: 40;
-  backdrop-filter: blur(4px);
-  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 320ms cubic-bezier(0.22, 0.9, 0.36, 1), visibility 320ms;
 }
 
 /* === DARK MODE ENHANCEMENTS === */
@@ -1006,8 +1010,7 @@ html.dark .header-side-menu__item:hover:not(.header-side-menu__item--active) {
 }
 
 .dark .header-side-menu-overlay {
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(8px);
+  background-color: color-mix(in srgb, #14171c 55%, transparent);
 }
 
 .dark .header-redesigned__logo {
@@ -1043,11 +1046,9 @@ html.dark .header-side-menu__item:hover:not(.header-side-menu__item--active) {
 
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
-  .header-redesigned *,
-  .header-side-menu * {
-    transition: none;
-    transform: none;
-    animation: none;
+  .header-side-menu-overlay,
+  .header-side-menu {
+    transition: none !important;
   }
 }
 
@@ -1421,16 +1422,6 @@ body {
     color 0.3s;
 }
 
-.header-side-menu-overlay {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.header-side-menu {
-  transform: translateX(-102%);
-}
-
 .header-side-menu-overlay--open {
   visibility: visible;
   opacity: 1;
@@ -1438,7 +1429,7 @@ body {
 }
 
 .header-side-menu-overlay--open .header-side-menu {
-  transform: translateX(0);
+  transform: translate3d(0, 0, 0);
 }
 
 .header-side-menu__item {
@@ -1484,7 +1475,7 @@ body {
 
   html[data-navigation-mode='sidebar'] .header-side-menu {
     pointer-events: auto;
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
     border-radius: 0;
   }
 

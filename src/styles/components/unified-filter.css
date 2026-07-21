@@ -72,7 +72,7 @@
   pointer-events: none;
 }
 
-/* === BACKDROP (mobile sheet) === */
+/* === BACKDROP (mobile sheet) — scrim ligero, sin blur: el contenido filtrado sigue legible === */
 .unified-filter__backdrop {
   position: fixed;
   inset: 0;
@@ -80,9 +80,7 @@
   margin: 0;
   padding: 0;
   border: none;
-  background: color-mix(in srgb, var(--lp-ink, #2c2418) 38%, transparent);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: color-mix(in srgb, var(--lp-ink, #2c2418) 25%, transparent);
   cursor: pointer;
   animation: unified-filter-backdrop-in 0.2s ease-out;
 }
@@ -505,7 +503,7 @@ html.dark .unified-filter__badge {
 }
 
 html.dark .unified-filter__backdrop {
-  background: color-mix(in srgb, #14171c 72%, transparent);
+  background: color-mix(in srgb, #14171c 45%, transparent);
 }
 
 html.dark .unified-filter__panel {
