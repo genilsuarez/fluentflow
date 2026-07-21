@@ -24,7 +24,7 @@ const DEFAULTS = {
   flashcardMode: { wordCount: 8 },
   quizMode: { questionCount: 8 },
   completionMode: { itemCount: 8 },
-  sortingMode: { wordCount: 5, categoryCount: 3 },
+  sortingMode: { wordCount: 4, categoryCount: 3 },
   matchingMode: { wordCount: 5 },
   reorderingMode: { itemCount: 8 },
   transformationMode: { itemCount: 8 },

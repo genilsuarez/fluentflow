@@ -89,7 +89,7 @@ export const useSettingsStore = create<SettingsState>()(
         flashcardMode: { wordCount: 8 },
         quizMode: { questionCount: 8 },
         completionMode: { itemCount: 8 },
-        sortingMode: { wordCount: 5, categoryCount: 3 },
+        sortingMode: { wordCount: 4, categoryCount: 3 },
         matchingMode: { wordCount: 5 },
         reorderingMode: { itemCount: 8 },
         transformationMode: { itemCount: 8 },
@@ -156,7 +156,7 @@ export const useSettingsStore = create<SettingsState>()(
     }),
     {
       name: 'settings-storage',
-      version: 13,
+      version: 15,
       migrate: (persistedState: any, version: number) => {
         // Migration from version 1 to version 2
         if (version < 2) {
@@ -281,6 +281,18 @@ export const useSettingsStore = create<SettingsState>()(
             gs.wordFormationMode.itemCount = 8;
           if (gs.errorCorrectionMode && gs.errorCorrectionMode.itemCount === 10)
             gs.errorCorrectionMode.itemCount = 8;
+          persistedState = { ...persistedState, gameSettings: gs };
+        }
+        // Migration from version 13 to version 14: sorting default 5→4
+        if (version < 14) {
+          const gs = persistedState.gameSettings || {};
+          if (gs.sortingMode && gs.sortingMode.wordCount === 5) gs.sortingMode.wordCount = 4;
+          persistedState = { ...persistedState, gameSettings: gs };
+        }
+        // Migration from version 14 to version 15: re-apply sorting 5→4 for stale persisted values
+        if (version < 15) {
+          const gs = persistedState.gameSettings || {};
+          if (gs.sortingMode && gs.sortingMode.wordCount === 5) gs.sortingMode.wordCount = 4;
           persistedState = { ...persistedState, gameSettings: gs };
         }
         return persistedState;

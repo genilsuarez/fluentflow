@@ -76,6 +76,14 @@
     height: 100dvh;
     max-height: 100dvh;
     overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .layout-container:not([data-view='menu']) > .header-redesigned--learning-mode {
+    width: 100%;
+    max-width: 100%;
+    align-self: stretch;
   }
 
   .layout-container:not([data-view='menu']) .layout-main {

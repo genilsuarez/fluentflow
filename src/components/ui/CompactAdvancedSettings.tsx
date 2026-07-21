@@ -560,16 +560,16 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
                           handleGameSettingChange(
                             'sortingMode',
                             'wordCount',
-                            Math.max(8, (localGameSettings.sortingMode.wordCount || 12) - 1)
+                            Math.max(4, (localGameSettings.sortingMode.wordCount || 4) - 1)
                           )
                         }
-                        disabled={(localGameSettings.sortingMode.wordCount || 12) <= 8}
+                        disabled={(localGameSettings.sortingMode.wordCount || 4) <= 4}
                         aria-label={t('settings.decreaseSortingCount')}
                       >
                         −
                       </button>
                       <span className="compact-settings__stepper-value">
-                        {localGameSettings.sortingMode.wordCount || 12}
+                        {localGameSettings.sortingMode.wordCount || 4}
                       </span>
                       <button
                         type="button"
@@ -578,10 +578,10 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
                           handleGameSettingChange(
                             'sortingMode',
                             'wordCount',
-                            Math.min(20, (localGameSettings.sortingMode.wordCount || 12) + 1)
+                            Math.min(12, (localGameSettings.sortingMode.wordCount || 4) + 1)
                           )
                         }
-                        disabled={(localGameSettings.sortingMode.wordCount || 12) >= 20}
+                        disabled={(localGameSettings.sortingMode.wordCount || 4) >= 12}
                         aria-label={t('settings.increaseSortingCount')}
                       >
                         +

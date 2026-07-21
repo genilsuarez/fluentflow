@@ -66,6 +66,9 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
   } = useSettingsStore();
   const { t } = useTranslation(language);
   const [expandedUnits, setExpandedUnits] = React.useState<Set<number>>(new Set());
+  const [expandedCompletedUnits, setExpandedCompletedUnits] = React.useState<Set<number>>(
+    new Set()
+  );
   const moduleGridColumns = useModuleGridColumns();
   const isMobileAccordion = useMobileAccordion();
 
@@ -417,7 +420,6 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
 
                   {isExpanded &&
                     (() => {
-                      // Fill the row after the last active card + one preview row (full columns only).
                       const COLUMNS = moduleGridColumns;
 
                       // In progress view, only nextRecommended is shown as "unlocked".
@@ -431,7 +433,55 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                         return raw;
                       };
 
-                      const unlockedCount = modules.filter(
+                      const nextIndex = nextRecommended
+                        ? modules.findIndex(m => m.id === nextRecommended.id)
+                        : -1;
+
+                      let collapsibleCompleted = 0;
+                      if (nextIndex > 0) {
+                        const beforeNextCount = nextIndex;
+                        if (beforeNextCount > COLUMNS) {
+                          collapsibleCompleted = beforeNextCount - COLUMNS;
+                        }
+                      } else if (nextIndex === -1) {
+                        const allCompleted =
+                          modules.length > 0 &&
+                          modules.every(m => progression.getModuleStatus(m.id) === 'completed');
+                        if (allCompleted && modules.length > COLUMNS) {
+                          collapsibleCompleted = modules.length - COLUMNS;
+                        }
+                      }
+
+                      const isCompletedExpanded =
+                        expandedCompletedUnits.has(unit) || !!searchQuery.trim();
+                      const showCompletedToggle = collapsibleCompleted > 0 && !searchQuery.trim();
+
+                      let prefix: LearningModule[] = [];
+                      let suffix: LearningModule[] = modules;
+
+                      if (nextIndex > 0) {
+                        const beforeNext = modules.slice(0, nextIndex);
+                        suffix = modules.slice(nextIndex);
+                        if (isCompletedExpanded || beforeNext.length <= COLUMNS) {
+                          prefix = beforeNext;
+                        } else {
+                          prefix = beforeNext.slice(-COLUMNS);
+                        }
+                      } else if (nextIndex === -1) {
+                        const allCompleted =
+                          modules.length > 0 &&
+                          modules.every(m => progression.getModuleStatus(m.id) === 'completed');
+                        if (allCompleted) {
+                          suffix = [];
+                          if (isCompletedExpanded || modules.length <= COLUMNS) {
+                            prefix = modules;
+                          } else {
+                            prefix = modules.slice(-COLUMNS);
+                          }
+                        }
+                      }
+
+                      const unlockedCount = suffix.filter(
                         m => effectiveStatus(m) !== 'locked'
                       ).length;
                       const remainder = unlockedCount % COLUMNS;
@@ -440,94 +490,136 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
 
                       let lockedShown = 0;
                       let lockedHidden = 0;
-                      const visible: typeof modules = [];
+                      const suffixVisible: LearningModule[] = [];
 
-                      for (const module of modules) {
+                      for (const module of suffix) {
                         const status = effectiveStatus(module);
                         if (status === 'locked') {
                           if (lockedShown < LOCKED_VISIBLE) {
-                            visible.push(module);
+                            suffixVisible.push(module);
                             lockedShown++;
                           } else {
                             lockedHidden++;
                           }
                         } else {
-                          visible.push(module);
+                          suffixVisible.push(module);
                         }
                       }
 
-                      // Never leave a partial trailing row — trim excess locked previews.
-                      const rowOverflow = visible.length % COLUMNS;
+                      const rowOverflow = suffixVisible.length % COLUMNS;
                       if (rowOverflow > 0) {
                         for (let i = 0; i < rowOverflow; i++) {
-                          const removed = visible.pop();
+                          const removed = suffixVisible.pop();
                           if (removed && effectiveStatus(removed) === 'locked') {
                             lockedHidden++;
                           }
                         }
                       }
 
+                      const toggleCompletedExpanded = (e: React.MouseEvent) => {
+                        e.stopPropagation();
+                        setExpandedCompletedUnits(prev => {
+                          const next = new Set(prev);
+                          if (next.has(unit)) next.delete(unit);
+                          else next.add(unit);
+                          return next;
+                        });
+                      };
+
+                      const renderModuleCard = (module: LearningModule) => {
+                        const status = effectiveStatus(module);
+                        const isCompleted = isModuleCompleted(module.id);
+                        const isNext = nextRecommended?.id === module.id;
+
+                        return (
+                          <div
+                            key={module.id}
+                            className={`progression-dashboard__module progression-dashboard__module--${status} module-card--${module.learningMode} ${isNext ? 'progression-dashboard__module--next' : ''}`}
+                            onClick={
+                              status !== 'locked' ? () => handleModuleClick(module) : undefined
+                            }
+                            aria-disabled={status === 'locked'}
+                          >
+                            <div className="progression-dashboard__module-icon">
+                              {isCompleted ? (
+                                <CheckCircle className="progression-dashboard__icon progression-dashboard__icon--completed" />
+                              ) : status === 'locked' ? (
+                                <Lock className="progression-dashboard__icon progression-dashboard__icon--locked" />
+                              ) : (
+                                <Play className="progression-dashboard__icon progression-dashboard__icon--available" />
+                              )}
+                            </div>
+
+                            <div className="progression-dashboard__module-content">
+                              <h4 className="progression-dashboard__module-name">{module.name}</h4>
+                              <p className="progression-dashboard__module-desc">
+                                {module.description}
+                              </p>
+                              <div className="progression-dashboard__module-meta">
+                                <span className="progression-dashboard__module-type">
+                                  {t(MODE_I18N_KEYS[module.learningMode] || 'common.exercise')}
+                                </span>
+                                <span className="progression-dashboard__module-time">
+                                  {module.estimatedTime}min
+                                </span>
+                              </div>
+                            </div>
+
+                            {isNext && (
+                              <div className="progression-dashboard__next-indicator">
+                                <span className="progression-dashboard__next-label">
+                                  {t('learningPath.nextRecommended')}
+                                </span>
+                              </div>
+                            )}
+                          </div>
+                        );
+                      };
+
                       return (
                         <div className="progression-dashboard__modules-stack">
-                          <div
-                            className={`progression-dashboard__modules${lockedHidden > 0 ? ' progression-dashboard__modules--truncated' : ''}`}
-                          >
-                            {visible.map(module => {
-                              const status = effectiveStatus(module);
-                              const isCompleted = isModuleCompleted(module.id);
-                              const isNext = nextRecommended?.id === module.id;
-
-                              return (
-                                <div
-                                  key={module.id}
-                                  className={`progression-dashboard__module progression-dashboard__module--${status} module-card--${module.learningMode} ${isNext ? 'progression-dashboard__module--next' : ''}`}
-                                  onClick={
-                                    status !== 'locked'
-                                      ? () => handleModuleClick(module)
-                                      : undefined
-                                  }
-                                  aria-disabled={status === 'locked'}
-                                >
-                                  <div className="progression-dashboard__module-icon">
-                                    {isCompleted ? (
-                                      <CheckCircle className="progression-dashboard__icon progression-dashboard__icon--completed" />
-                                    ) : status === 'locked' ? (
-                                      <Lock className="progression-dashboard__icon progression-dashboard__icon--locked" />
-                                    ) : (
-                                      <Play className="progression-dashboard__icon progression-dashboard__icon--available" />
-                                    )}
-                                  </div>
-
-                                  <div className="progression-dashboard__module-content">
-                                    <h4 className="progression-dashboard__module-name">
-                                      {module.name}
-                                    </h4>
-                                    <p className="progression-dashboard__module-desc">
-                                      {module.description}
-                                    </p>
-                                    <div className="progression-dashboard__module-meta">
-                                      <span className="progression-dashboard__module-type">
-                                        {t(
-                                          MODE_I18N_KEYS[module.learningMode] || 'common.exercise'
-                                        )}
-                                      </span>
-                                      <span className="progression-dashboard__module-time">
-                                        {module.estimatedTime}min
-                                      </span>
-                                    </div>
-                                  </div>
-
-                                  {isNext && (
-                                    <div className="progression-dashboard__next-indicator">
-                                      <span className="progression-dashboard__next-label">
-                                        {t('learningPath.nextRecommended')}
-                                      </span>
-                                    </div>
-                                  )}
-                                </div>
-                              );
-                            })}
-                          </div>
+                          {showCompletedToggle && !isCompletedExpanded && (
+                            <button
+                              type="button"
+                              className="progression-dashboard__show-more"
+                              onClick={toggleCompletedExpanded}
+                              aria-expanded={false}
+                            >
+                              {`${t('common.showMore')} (+${collapsibleCompleted})`}
+                              <ChevronDown
+                                size={14}
+                                className="progression-dashboard__show-more-icon"
+                                aria-hidden="true"
+                              />
+                            </button>
+                          )}
+                          {prefix.length > 0 && (
+                            <div className="progression-dashboard__modules progression-dashboard__modules--completed">
+                              {prefix.map(renderModuleCard)}
+                            </div>
+                          )}
+                          {showCompletedToggle && isCompletedExpanded && (
+                            <button
+                              type="button"
+                              className="progression-dashboard__show-more progression-dashboard__show-more--after-completed"
+                              onClick={toggleCompletedExpanded}
+                              aria-expanded={true}
+                            >
+                              {t('common.showLess')}
+                              <ChevronDown
+                                size={14}
+                                className="progression-dashboard__show-more-icon progression-dashboard__show-more-icon--expanded"
+                                aria-hidden="true"
+                              />
+                            </button>
+                          )}
+                          {suffixVisible.length > 0 && (
+                            <div
+                              className={`progression-dashboard__modules${lockedHidden > 0 ? ' progression-dashboard__modules--truncated' : ''}`}
+                            >
+                              {suffixVisible.map(renderModuleCard)}
+                            </div>
+                          )}
                           {lockedHidden > 0 && (
                             <div className="progression-dashboard__locked-hidden">
                               <Lock size={14} aria-hidden="true" />

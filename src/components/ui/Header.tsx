@@ -150,6 +150,11 @@ export const Header: React.FC<HeaderProps> = () => {
                 >
                   <ArrowLeft size={18} aria-hidden="true" />
                 </button>
+                {lessonTitle ? (
+                  <h2 className="header-redesigned__lesson-title" title={lessonTitle}>
+                    {lessonTitle}
+                  </h2>
+                ) : null}
                 <button
                   onClick={handleMenuToggle}
                   className={`header-redesigned__toolbar-btn header-redesigned__menu-btn${navigationMode === 'sidebar' ? ' header-redesigned__menu-btn--primary' : ''}`}
@@ -163,11 +168,6 @@ export const Header: React.FC<HeaderProps> = () => {
                     {showSideMenu ? t('navigation.closeMenu') : t('navigation.openMenuShort')}
                   </span>
                 </button>
-                {lessonTitle ? (
-                  <h2 className="header-redesigned__lesson-title" title={lessonTitle}>
-                    {lessonTitle}
-                  </h2>
-                ) : null}
               </div>
             </>
           ) : (

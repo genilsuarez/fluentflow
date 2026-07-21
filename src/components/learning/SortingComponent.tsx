@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { RotateCcw, Check, Info, X } from 'lucide-react';
+import { RotateCcw, Check, Info, X, Eraser } from 'lucide-react';
 import { useAppStore } from '../../stores/appStore';
 import { useUserStore } from '../../stores/userStore';
 import { useSettingsStore } from '../../stores/settingsStore';
@@ -632,7 +632,7 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
               className="game-controls__icon-btn"
               title={t('learning.resetExercise')}
             >
-              <RotateCcw className="game-controls__action-icon" />
+              <Eraser className="game-controls__action-icon" />
             </button>
 
             <button
