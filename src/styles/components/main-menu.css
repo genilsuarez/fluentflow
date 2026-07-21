@@ -26,19 +26,19 @@
   --menu-content-height-desktop: var(--grid-height-desktop);
 }
 
-/* SVG Icon Inheritance Fix - Force white in dark mode (exclude dashboard progress rings) */
+/* SVG icons inherit text color — dashboard rings manage their own strokes */
 .main-menu svg:not(.home-dash__level-svg):not(.home-dash__ring-svg) {
   color: currentColor;
   stroke: currentColor;
   fill: none;
 }
 
-.dark .main-menu svg:not(.home-dash__level-svg):not(.home-dash__ring-svg) {
-  color: white;
-  stroke: white;
+html.dark .main-menu svg:not(.home-dash__level-svg):not(.home-dash__ring-svg) {
+  color: var(--lp-ink);
+  stroke: currentColor;
 }
 
-/* Dashboard rings manage their own path strokes — never inherit menu icon styles */
+/* Dashboard rings — isolated from menu icon inheritance */
 .main-menu .home-dash__level-svg,
 .main-menu .home-dash__ring-svg {
   stroke: none;

@@ -1,7 +1,5 @@
 /**
- * Theme Initializer - Detects and applies system theme preference
- * This utility ensures the correct theme is applied before React renders
- * to prevent FOUC (Flash of Unstyled Content) and mixed theme states
+ * Theme Initializer — applies theme before React renders (prevents FOUC).
  */
 
 import {
@@ -17,7 +15,6 @@ import {
   initializeMobileTheme,
   emergencyLightModeFix,
   isSafariMobile,
-  applyThemeContext,
 } from './mobileThemeFix';
 
 interface ThemeState {
@@ -25,32 +22,47 @@ interface ThemeState {
   isSystemPreference: boolean;
 }
 
+function readThemeFromUrl(): ThemeMode | null {
+  if (typeof window === 'undefined') return null;
+  const urlTheme = new URLSearchParams(window.location.search).get('theme');
+  if (urlTheme === 'dark' || urlTheme === 'light') {
+    try {
+      localStorage.setItem('lp-theme', urlTheme);
+    } catch {
+      /* noop */
+    }
+    return urlTheme;
+  }
+  return null;
+}
+
 /**
- * Gets the stored theme preference or falls back to system preference
+ * Gets the stored theme preference or falls back to light mode.
+ * Priority: ?theme= → lp-theme → settings-storage → light
  */
 function getInitialTheme(): ThemeState {
-  // Check if we're in a browser environment
   if (typeof window === 'undefined') {
     return { theme: 'light', isSystemPreference: false };
   }
 
-  try {
-    // Shared cross-app key takes priority (another app may have changed it)
-    const sharedTheme = localStorage.getItem('lp-theme') as ThemeMode | null;
+  const urlTheme = readThemeFromUrl();
+  if (urlTheme) {
+    return { theme: urlTheme, isSystemPreference: false };
+  }
 
-    // Check Zustand persisted settings
+  try {
+    const sharedTheme = localStorage.getItem('lp-theme') as ThemeMode | null;
     const storedSettings = localStorage.getItem('settings-storage');
+
     if (storedSettings) {
       const parsed = JSON.parse(storedSettings);
       const storeTheme = parsed?.state?.theme as ThemeMode | undefined;
 
       if (sharedTheme && (sharedTheme === 'dark' || sharedTheme === 'light')) {
-        // lp-theme wins — another app may have updated it
         return { theme: sharedTheme, isSystemPreference: false };
       }
 
       if (storeTheme) {
-        // Sync store value to shared key
         try {
           localStorage.setItem('lp-theme', storeTheme);
         } catch {
@@ -60,7 +72,6 @@ function getInitialTheme(): ThemeState {
       }
     }
 
-    // Fallback to shared key alone
     if (sharedTheme === 'dark' || sharedTheme === 'light') {
       return { theme: sharedTheme, isSystemPreference: false };
     }
@@ -68,25 +79,81 @@ function getInitialTheme(): ThemeState {
     console.warn('Failed to parse stored theme preference:', error);
   }
 
-  // No stored preference — default to light mode
-  // This ensures incognito browsers and dark-system users get light by default
-  return {
-    theme: 'light',
-    isSystemPreference: false,
-  };
+  return { theme: 'light', isSystemPreference: false };
+}
+
+/** Sync ?theme= query param when present (cross-app local dev). */
+export function syncThemeUrlParam(theme: ThemeMode): void {
+  if (typeof window === 'undefined') return;
+  const url = new URL(window.location.href);
+  if (!url.searchParams.has('theme')) return;
+  url.searchParams.set('theme', theme);
+  window.history.replaceState(null, '', url.toString());
+}
+
+function updateMetaThemeColor(theme: ThemeMode): void {
+  if (typeof document === 'undefined') return;
+
+  const metaThemeColor = document.querySelector(THEME_SELECTORS.metaThemeColor);
+  if (metaThemeColor) {
+    metaThemeColor.setAttribute('content', THEME_COLORS[theme].metaThemeColor);
+  }
+
+  const metaColorScheme = document.querySelector('meta[name="color-scheme"]');
+  if (metaColorScheme) {
+    metaColorScheme.setAttribute('content', theme);
+  }
+
+  document.documentElement.style.colorScheme = theme;
+}
+
+function forceThemeRerender(theme: ThemeMode): void {
+  if (typeof document === 'undefined') return;
+
+  const root = document.documentElement;
+  root.style.setProperty(THEME_CSS_VARS.themeForceUpdate, theme === 'dark' ? '1' : '0');
+
+  requestAnimationFrame(() => {
+    document.querySelectorAll(THEME_SELECTORS.inlineColorElements).forEach(element => {
+      const htmlElement = element as HTMLElement;
+      const style = htmlElement.getAttribute('style');
+      if (!style) return;
+
+      const cleanedStyle = style
+        .split(';')
+        .filter(rule => {
+          const trimmed = rule.trim();
+          return (
+            !trimmed.startsWith('color:') &&
+            !trimmed.startsWith('stroke:') &&
+            !trimmed.startsWith('fill:')
+          );
+        })
+        .join(';');
+
+      if (cleanedStyle !== style) {
+        if (cleanedStyle.trim()) {
+          htmlElement.setAttribute('style', cleanedStyle);
+        } else {
+          htmlElement.removeAttribute('style');
+        }
+      }
+    });
+
+    document.querySelectorAll(THEME_SELECTORS.themeComponents).forEach(element => {
+      element.classList.add(THEME_CLASSES.themeComponent);
+    });
+  });
 }
 
 /**
- * Applies theme to DOM immediately (before React renders)
+ * Applies theme to DOM immediately (before or during React lifecycle).
  */
 export function applyThemeToDOM(theme: ThemeMode): void {
-  if (typeof document === 'undefined') {
-    return;
-  }
+  if (typeof document === 'undefined') return;
 
   const htmlElement = document.documentElement;
 
-  // Apply theme classes
   if (theme === 'dark') {
     htmlElement.classList.add(THEME_CLASSES.dark);
     htmlElement.classList.remove(THEME_CLASSES.light);
@@ -95,143 +162,47 @@ export function applyThemeToDOM(theme: ThemeMode): void {
     htmlElement.classList.add(THEME_CLASSES.light);
   }
 
-  // Apply theme context class for CSS targeting
-  applyThemeContext(theme);
+  updateMetaThemeColor(theme);
 
-  // Apply device-specific theme handling
   if (isMobileDevice()) {
-    // Special handling for Safari Mobile light mode
     if (isSafariMobile() && theme === 'light') {
-      // Use emergency fix for light mode in Safari Mobile
       emergencyLightModeFix();
     } else {
       applyMobileTheme(theme);
     }
   } else {
-    // Force re-render of problematic elements for desktop
     forceThemeRerender(theme);
-    // Update meta theme-color for mobile browsers
-    updateMetaThemeColor(theme);
   }
 }
 
-/**
- * Forces re-render of elements that might have cached styles
- */
-function forceThemeRerender(theme: ThemeMode): void {
-  if (typeof document === 'undefined') {
-    return;
-  }
-
-  // Force recalculation of CSS by temporarily changing a CSS custom property
-  const root = document.documentElement;
-  root.style.setProperty(THEME_CSS_VARS.themeForceUpdate, theme === 'dark' ? '1' : '0');
-
-  // Use requestAnimationFrame to ensure the change is processed
-  requestAnimationFrame(() => {
-    // Clean up problematic inline styles that might persist
-    const elementsWithInlineStyles = document.querySelectorAll(THEME_SELECTORS.inlineColorElements);
-    elementsWithInlineStyles.forEach(element => {
-      const htmlElement = element as HTMLElement;
-      // Only remove color-related inline styles, preserve others
-      const style = htmlElement.getAttribute('style');
-      if (style) {
-        const cleanedStyle = style
-          .split(';')
-          .filter(rule => {
-            const trimmed = rule.trim();
-            return (
-              !trimmed.startsWith('color:') &&
-              !trimmed.startsWith('stroke:') &&
-              !trimmed.startsWith('fill:')
-            );
-          })
-          .join(';');
-
-        if (cleanedStyle !== style) {
-          if (cleanedStyle.trim()) {
-            htmlElement.setAttribute('style', cleanedStyle);
-          } else {
-            htmlElement.removeAttribute('style');
-          }
-        }
-      }
-    });
-
-    // Force repaint by temporarily hiding and showing elements with problematic styles
-    const problematicElements = document.querySelectorAll(THEME_SELECTORS.svgElements);
-    problematicElements.forEach(element => {
-      const htmlElement = element as HTMLElement;
-      const originalDisplay = htmlElement.style.display;
-      htmlElement.style.display = 'none';
-      // Force reflow
-      htmlElement.offsetHeight;
-      htmlElement.style.display = originalDisplay;
-    });
-
-    // Add theme-component class to elements that need it
-    const themeComponents = document.querySelectorAll(THEME_SELECTORS.themeComponents);
-    themeComponents.forEach(element => {
-      element.classList.add(THEME_CLASSES.themeComponent);
-    });
-  });
-}
-
-/**
- * Updates the meta theme-color tag for mobile browsers
- */
-function updateMetaThemeColor(theme: ThemeMode): void {
-  if (typeof document === 'undefined') {
-    return;
-  }
-
-  const metaThemeColor = document.querySelector(THEME_SELECTORS.metaThemeColor);
-  if (metaThemeColor) {
-    // Use design system color tokens
-    const color = THEME_COLORS[theme].metaThemeColor;
-    metaThemeColor.setAttribute('content', color);
-  }
-}
-
-/**
- * Sets up system theme change listener
- */
 export function setupSystemThemeListener(callback: (theme: ThemeMode) => void): () => void {
   if (typeof window === 'undefined' || !window.matchMedia) {
-    return () => {}; // Return empty cleanup function
+    return () => {};
   }
 
   const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
   const handleChange = (e: MediaQueryListEvent) => {
-    const newTheme: ThemeMode = e.matches ? 'dark' : 'light';
-    callback(newTheme);
+    callback(e.matches ? 'dark' : 'light');
   };
 
-  // Modern browsers
   if (mediaQuery.addEventListener) {
     mediaQuery.addEventListener('change', handleChange);
     return () => mediaQuery.removeEventListener('change', handleChange);
   }
 
-  // Legacy browsers
   if (mediaQuery.addListener) {
     mediaQuery.addListener(handleChange);
     return () => mediaQuery.removeListener(handleChange);
   }
 
-  return () => {}; // Return empty cleanup function
+  return () => {};
 }
 
-/**
- * Initialize theme immediately when this module is imported
- * This ensures theme is applied before React renders
- */
 export function initializeTheme(): ThemeState {
   const themeState = getInitialTheme();
   applyThemeToDOM(themeState.theme);
 
-  // Initialize mobile theme system if on mobile
   if (isMobileDevice()) {
     initializeMobileTheme();
   }

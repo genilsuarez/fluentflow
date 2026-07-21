@@ -8,6 +8,8 @@
 
 /* === LEARN PLATFORM TOKENS — LIGHT === */
 :root {
+  color-scheme: light;
+
   /* ─── Surface & Paper ─── */
   --lp-bg: #faf7f2;
   --lp-bg-paper: #f5f1eb;
@@ -198,6 +200,8 @@
 
 /* === LEARN PLATFORM TOKENS — DARK (slate suave, alineado con DeskFlow) === */
 html.dark {
+  color-scheme: dark;
+
   --lp-bg: #181b20;
   --lp-bg-paper: #1e2228;
   --lp-surface: #252930;

@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import { applyThemeToDOM } from '../utils/themeInitializer';
+import { applyThemeToDOM, syncThemeUrlParam } from '../utils/themeInitializer';
 
 export interface GameSettings {
   flashcardMode: { wordCount: number };
@@ -114,6 +114,7 @@ export const useSettingsStore = create<SettingsState>()(
         set({ theme });
         // Apply theme to DOM and update meta theme-color
         applyThemeToDOM(theme);
+        syncThemeUrlParam(theme);
         // Sync shared cross-app theme key
         try {
           localStorage.setItem('lp-theme', theme);

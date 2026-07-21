@@ -1,44 +1,35 @@
 /**
- * Theme Constants - Design System Color Tokens
- * Centralized color values that match the CSS custom properties
- * Used for JavaScript operations that need actual color values
+ * Theme Constants — aligned with tokens.css (--lp-* palette)
+ * Used for JS operations that need literal color values (meta tags, Safari fixes).
  */
 
 export const THEME_COLORS = {
   light: {
-    metaThemeColor: '#ffffff',
-    bgPrimary: '#f9fafb',
+    metaThemeColor: '#faf7f2',
+    bgPrimary: '#faf7f2',
     bgSecondary: '#ffffff',
-    textPrimary: '#111827',
-    textSecondary: '#374151',
-    borderPrimary: '#e5e7eb',
+    textPrimary: '#2c2418',
+    textSecondary: '#5e5041',
+    borderPrimary: '#e8e0d4',
     iconColor: 'currentColor',
   },
   dark: {
-    metaThemeColor: '#1f2937',
-    bgPrimary: '#111827',
-    bgSecondary: '#1f2937',
-    textPrimary: '#ffffff',
-    textSecondary: '#e5e7eb',
-    borderPrimary: '#4b5563',
-    iconColor: '#ffffff',
+    metaThemeColor: '#181b20',
+    bgPrimary: '#181b20',
+    bgSecondary: '#252930',
+    textPrimary: '#e8eaed',
+    textSecondary: '#a8b0bc',
+    borderPrimary: '#353b45',
+    iconColor: 'currentColor',
   },
 } as const;
 
-/**
- * BEM-like class names for theme-aware components
- */
 export const THEME_CLASSES = {
-  // Base theme classes
   light: 'light',
   dark: 'dark',
-
-  // Component classes that need theme awareness
   themeComponent: 'theme-component',
   themeIcon: 'theme-icon',
   themeTransition: 'theme-transition',
-
-  // Specific component selectors
   headerRedesigned: 'header-redesigned',
   headerSideMenu: 'header-side-menu',
   moduleCard: 'module-card',
@@ -47,9 +38,6 @@ export const THEME_CLASSES = {
   toastCard: 'toast-card',
 } as const;
 
-/**
- * CSS custom property names used in the theme system
- */
 export const THEME_CSS_VARS = {
   themeMode: '--theme-mode',
   themeForceUpdate: '--theme-force-update',
@@ -63,22 +51,12 @@ export const THEME_CSS_VARS = {
   themeTransitionEasing: '--theme-transition-easing',
 } as const;
 
-/**
- * Selectors for elements that need theme fixes
- */
 export const THEME_SELECTORS = {
-  // Elements with inline styles that need cleaning
   inlineColorElements: '[style*="color"], [style*="stroke"], [style*="fill"]',
-
-  // SVG elements that need theme awareness
   svgElements:
     '.header-redesigned svg, .header-side-menu svg, .module-card svg, .nav-btn svg, [data-lucide]',
-
-  // Components that need theme-component class
   themeComponents:
     '.header-redesigned, .header-side-menu, .module-card, .nav-btn, .modal, .toast-card',
-
-  // Meta tag for theme color
   metaThemeColor: 'meta[name="theme-color"]',
 } as const;
 

@@ -411,6 +411,15 @@ export const Header: React.FC<HeaderProps> = () => {
                 href={portalHref()}
                 className="header-side-menu__item header-side-menu__item--portal"
                 aria-label="Portal"
+                onClick={e => {
+                  if (!isLocalPlatformHost() || isUnifiedLocalPlatform()) return;
+                  const theme = document.documentElement.classList.contains('dark')
+                    ? 'dark'
+                    : 'light';
+                  const url = new URL(e.currentTarget.href);
+                  url.searchParams.set('theme', theme);
+                  e.currentTarget.href = url.toString();
+                }}
               >
                 <span className="header-side-menu__icon" aria-hidden="true">
                   ⌂

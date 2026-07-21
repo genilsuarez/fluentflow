@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
     <meta name="description" content="FluentFlow - English Learning Platform" />
-    <meta name="theme-color" content="#ffffff" id="theme-color-meta" />
+    <meta name="theme-color" content="#faf7f2" id="theme-color-meta" />
     <meta name="color-scheme" content="light" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
@@ -80,16 +80,16 @@
           document.documentElement.classList.remove(theme === 'dark' ? 'light' : 'dark');
           document.documentElement.style.colorScheme = theme;
           var meta = document.getElementById('theme-color-meta');
-          if (meta) meta.setAttribute('content', theme === 'dark' ? '#1f2937' : '#ffffff');
+          if (meta) meta.setAttribute('content', theme === 'dark' ? '#181b20' : '#faf7f2');
           var colorSchemeMeta = document.querySelector('meta[name="color-scheme"]');
           if (colorSchemeMeta) colorSchemeMeta.setAttribute('content', theme);
           // Apply dark theme to fallback if needed
           if (theme === 'dark') {
-            document.documentElement.style.backgroundColor = '#1f2937';
+            document.documentElement.style.backgroundColor = '#181b20';
             var fb = document.getElementById('app-fallback');
             if (fb) {
-              fb.style.background = '#1f2937';
-              fb.querySelector('p').style.color = '#d1d5db';
+              fb.style.background = '#181b20';
+              fb.querySelector('p').style.color = '#a8b0bc';
             }
           }
         } catch (e) {

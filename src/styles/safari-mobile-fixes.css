@@ -11,7 +11,7 @@
   }
 
   .main-menu__view-btn:not(.main-menu__view-btn--active) {
-    background: #ffffff;
+    background: var(--lp-surface);
     color: var(--lp-ink);
     border: none;
   }
