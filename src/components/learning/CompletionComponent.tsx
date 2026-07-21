@@ -27,6 +27,12 @@ interface CompletionComponentProps {
   module: LearningModule;
 }
 
+/** Width in `ch` for inline blanks — scales with content, never clips typed text */
+function inlineInputWidthCh(charCount: number, minChars = 5): string {
+  const len = Math.max(charCount, minChars);
+  return `${Math.ceil(len * 1.05 + 2)}ch`;
+}
+
 const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answer, setAnswer] = useState('');
@@ -197,6 +203,10 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
         const placeholderHint =
           correctLen > 3 && firstLetter && !hasBaseWordInSentence ? `${firstLetter}...` : '...';
 
+        const widthSource = showResult
+          ? Math.max(answer.length, (currentExercise.correct || '').length)
+          : Math.max(answer.length, placeholderHint.replace(/\./g, '').length || 3);
+
         // Track which gap index this is (0-based)
         const gapIndex = elements.filter(el => el.key?.toString().startsWith('input-')).length;
 
@@ -208,10 +218,10 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
             onChange={value => setAnswer(value.toLowerCase())}
             disabled={showResult}
             placeholder={placeholderHint}
-            className={`editable-input ${inputClass.replace(/completion-component__input/g, 'editable-input')}`}
+            className={`editable-input editable-input--inline ${inputClass.replace(/completion-component__input/g, 'editable-input')}`}
             style={
               {
-                '--dynamic-width': `${Math.max(120, (answer?.length || 3) * 12 + 60)}px`,
+                '--dynamic-width': inlineInputWidthCh(widthSource),
                 textTransform: 'lowercase',
               } as React.CSSProperties
             }

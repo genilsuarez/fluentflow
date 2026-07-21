@@ -51,6 +51,7 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
   );
 
   const updateSessionScore = useAppStore(state => state.updateSessionScore);
+  const resetSession = useAppStore(state => state.resetSession);
   const triggerRestart = useAppStore(state => state.triggerRestart);
   const { updateUserScore } = useUserStore();
   const { language, randomizeItems } = useSettingsStore();
@@ -326,25 +327,29 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
     handleRemoveFromCategory(word, categoryName);
   };
 
-  const checkAnswers = () => {
-    let correctCategories = 0;
+  const getWordScore = () => {
+    const total = exercise.words.length;
+    let correct = 0;
 
     (exercise.categories || []).forEach(category => {
-      const userItems = sortedItems[category.name] || [];
-      const correctItems = category.items;
-
-      // Check if all correct items are in user's category and no extra items
-      const isCorrect =
-        userItems.length === correctItems.length &&
-        userItems.every(item => correctItems.includes(item));
-
-      if (isCorrect) {
-        correctCategories++;
-      }
+      category.items.forEach(word => {
+        const userCategory = Object.keys(sortedItems).find(catName =>
+          (sortedItems[catName] || []).includes(word)
+        );
+        if (userCategory === category.name) correct++;
+      });
     });
 
-    const isAllCorrect = correctCategories === (exercise.categories?.length || 0);
-    updateSessionScore(isAllCorrect ? { correct: 1 } : { incorrect: 1 });
+    const incorrect = total - correct;
+    const accuracy = total > 0 ? (correct / total) * 100 : 0;
+    return { correct, incorrect, total, accuracy };
+  };
+
+  const checkAnswers = () => {
+    const { correct, incorrect } = getWordScore();
+    const isAllCorrect = incorrect === 0 && correct > 0;
+
+    updateSessionScore({ correct, incorrect });
 
     // Show toast notification
     if (isAllCorrect) {
@@ -370,16 +375,15 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
 
   const finishExercise = () => {
     const timeSpent = Math.floor((Date.now() - startTime) / 1000);
-    const { sessionScore } = useAppStore.getState();
-    const finalScore = sessionScore.correct > 0 ? 100 : 0;
-    const accuracy = sessionScore.accuracy;
+    const wordScore = getWordScore();
+    const finalScore = Math.round(wordScore.accuracy);
 
     // Register progress
     addProgressEntry({
       runId,
       score: finalScore,
-      totalQuestions: sessionScore.total,
-      correctAnswers: sessionScore.correct,
+      totalQuestions: wordScore.total,
+      correctAnswers: wordScore.correct,
       moduleId: module.id,
       learningMode: 'sorting',
       timeSpent: timeSpent,
@@ -389,9 +393,9 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
 
     setExerciseResultData({
       score: finalScore,
-      accuracy,
-      correct: sessionScore.correct,
-      total: sessionScore.total,
+      accuracy: wordScore.accuracy,
+      correct: wordScore.correct,
+      total: wordScore.total,
       moduleName: module.name,
     });
   };
@@ -446,6 +450,7 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
       <ExerciseResultScreen
         result={exerciseResultData}
         onRetry={() => {
+          resetSession();
           setExerciseResultData(null);
           setShowResult(false);
           setShowExplanation(false);

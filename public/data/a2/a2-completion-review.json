@@ -2,43 +2,43 @@
   {
     "sentence": "She ______ her jacket before going outside.",
     "correct": "put on",
-    "tip": "Phrasal verb: ponerse ropa (2 palabras, pasado)",
+    "tip": "Phrasal verb con <put>: ponerse ropa (2 palabras)",
     "explanation": "El phrasal verb <put on> significa ponerse una prenda de ropa."
   },
   {
     "sentence": "I need to ______ the answer to this question.",
     "correct": "find out",
-    "tip": "Phrasal verb: descubrir información (2 palabras)",
+    "tip": "Phrasal verb con <find>: descubrir información (2 palabras)",
     "explanation": "El phrasal verb <find out> significa descubrir información."
   },
   {
     "sentence": "He ______ the form at the doctor's office.",
     "correct": "filled in",
-    "tip": "Phrasal verb: completar un formulario (2 palabras, pasado)",
+    "tip": "Phrasal verb con <fill>: completar un formulario (2 palabras, pasado)",
     "explanation": "El phrasal verb <fill in> significa completar un formulario con información."
   },
   {
     "sentence": "We ______ at the hotel at 3 pm.",
     "correct": "checked in",
-    "tip": "Phrasal verb: registrarse al llegar (2 palabras, pasado)",
+    "tip": "Phrasal verb con <check>: registrarse al llegar (2 palabras, pasado)",
     "explanation": "El phrasal verb <check in> significa registrarse en un hotel."
   },
   {
     "sentence": "Can you ______ the music? I can't hear you.",
     "correct": "turn down",
-    "tip": "Phrasal verb: bajar el volumen (2 palabras)",
+    "tip": "Phrasal verb con <turn>: bajar el volumen (2 palabras)",
     "explanation": "El phrasal verb <turn down> significa bajar el volumen."
   },
   {
     "sentence": "She ______ her old clothes to charity.",
     "correct": "gave away",
-    "tip": "Phrasal verb: donar, regalar (2 palabras, pasado)",
+    "tip": "Phrasal verb con <give>: donar, regalar (2 palabras, pasado)",
     "explanation": "El phrasal verb <give away> significa donar o regalar algo."
   },
   {
     "sentence": "They ______ the meeting until next week.",
     "correct": "put off",
-    "tip": "Phrasal verb: posponer (2 palabras, pasado)",
+    "tip": "Phrasal verb con <put>: posponer (2 palabras, pasado)",
     "explanation": "El phrasal verb <put off> significa posponer o aplazar."
   },
   {
@@ -62,7 +62,7 @@
   {
     "sentence": "They ______ dinner when the phone rang.",
     "correct": "were having",
-    "tip": "Pasado continuo con they: acción en progreso interrumpida",
+    "tip": "Pasado continuo con they + <have>: acción en progreso interrumpida",
     "explanation": "Pasado continuo con they: <were> + verbo-ing: <were having>."
   },
   {
@@ -110,7 +110,7 @@
   {
     "sentence": "The improve______ of the road took two months.",
     "correct": "improvement",
-    "tip": "Sufijo que convierte un verbo en sustantivo de proceso",
+    "tip": "Formación: improve + sufijo <-ment> → ?",
     "explanation": "Agregar <-ment> a <improve> forma el sustantivo <improvement>."
   },
   {

@@ -1,12 +1,15 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { ChevronLeft, ChevronRight, RotateCcw } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
+import { useMenuNavigation } from '../../hooks/useMenuNavigation';
+import { useProgressStore } from '../../stores/progressStore';
+import { useUserStore } from '../../stores/userStore';
 import { useSwipe } from '../../hooks/useSwipe';
 import { conditionalShuffle } from '../../utils/randomUtils';
+import { createLearnFlowId } from '../../services/learnFlowIntegration';
 import { ContentAdapter } from '../../utils/contentAdapter';
 import ContentRenderer from '../ui/ContentRenderer';
 import LearningProgressHeader from '../ui/LearningProgressHeader';
-import ExerciseResultScreen from '../ui/ExerciseResultScreen';
 
 import '../../styles/components/flashcard-component.css';
 import type { FlashcardData, LearningModule } from '../../types';
@@ -20,16 +23,17 @@ const FlashcardComponent: React.FC<FlashcardComponentProps> = ({ module }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [skipTransition, setSkipTransition] = useState(false);
+  const [runId] = useState(() => createLearnFlowId('run'));
+
+  const { updateUserScore } = useUserStore();
+  const { addProgressEntry } = useProgressStore();
+  const { returnToMenu } = useMenuNavigation();
 
   const {
     t,
     randomizeItems,
     handleReturnToMenu,
-    finishExercise,
-    exerciseResult,
-    setExerciseResult,
-    handleResultContinue,
-    resetSession,
+    startTime,
     triggerRestart,
   } = useLearningSession({
     moduleId: module.id,
@@ -54,20 +58,40 @@ const FlashcardComponent: React.FC<FlashcardComponentProps> = ({ module }) => {
     }
   }, [skipTransition]);
 
+  const completeFlashcards = useCallback(() => {
+    const timeSpent = Math.floor((Date.now() - startTime) / 1000);
+
+    updateUserScore(module.id, 100, timeSpent);
+    addProgressEntry({
+      runId,
+      score: 100,
+      totalQuestions: processedFlashcards.length,
+      correctAnswers: processedFlashcards.length,
+      moduleId: module.id,
+      learningMode: 'flashcard',
+      timeSpent,
+    });
+
+    returnToMenu({ autoScrollToNext: true });
+  }, [
+    startTime,
+    module.id,
+    processedFlashcards.length,
+    runId,
+    updateUserScore,
+    addProgressEntry,
+    returnToMenu,
+  ]);
+
   const handleNext = useCallback(() => {
     if (currentIndex < processedFlashcards.length - 1) {
       if (isFlipped) setSkipTransition(true);
       setCurrentIndex(currentIndex + 1);
       setIsFlipped(false);
     } else {
-      // End of flashcards — 100% completion for finishing all cards
-      finishExercise({
-        correct: processedFlashcards.length,
-        total: processedFlashcards.length,
-        accuracy: 100,
-      });
+      completeFlashcards();
     }
-  }, [currentIndex, isFlipped, processedFlashcards.length, finishExercise]);
+  }, [currentIndex, isFlipped, processedFlashcards.length, completeFlashcards]);
 
   const handlePrev = useCallback(() => {
     if (currentIndex > 0) {
@@ -125,22 +149,6 @@ const FlashcardComponent: React.FC<FlashcardComponentProps> = ({ module }) => {
           {t('navigation.mainMenu')}
         </button>
       </div>
-    );
-  }
-
-  if (exerciseResult) {
-    return (
-      <ExerciseResultScreen
-        result={exerciseResult}
-        onRetry={() => {
-          setExerciseResult(null);
-          resetSession();
-          setCurrentIndex(0);
-          setIsFlipped(false);
-        }}
-        onContinue={handleResultContinue}
-        t={t}
-      />
     );
   }
 

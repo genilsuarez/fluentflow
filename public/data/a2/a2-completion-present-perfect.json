@@ -9,7 +9,7 @@
     "sentence": "She ______ finished her homework yet.",
     "correct": "hasn't",
     "explanation": "Usa <hasn't> con <yet> en oraciones negativas para mostrar que algo no está terminado.",
-    "tip": "Check the time reference in the sentence to determine the tense."
+    "tip": "Negative present perfect with she: <hasn't> + past participle"
   },
   {
     "sentence": "Have you ______ lunch today?",
@@ -87,7 +87,7 @@
     "sentence": "She has already ______ three books this month.",
     "correct": "read",
     "explanation": "Usa <read> (participio pasado) con <already> para mostrar acciones completadas.",
-    "tip": "Think about the grammatical structure the sentence requires."
+    "tip": "Complete with the past participle of <read>"
   },
   {
     "sentence": "Have they ______ the new movie?",

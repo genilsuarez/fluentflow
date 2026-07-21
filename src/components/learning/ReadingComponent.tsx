@@ -27,8 +27,8 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
   const [startTime] = useState(Date.now());
   const [runId] = useState(() => createLearnFlowId('run'));
   const [expandedItems, setExpandedItems] = useState<Set<number>>(new Set());
-  const [vocabularyExpanded, setVocabularyExpanded] = useState(true);
-  const [grammarExpanded, setGrammarExpanded] = useState(false);
+  const [vocabularyExpanded, setVocabularyExpanded] = useState(false);
+  const [grammarExpanded, setGrammarExpanded] = useState(true);
   const contentRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const initialHeightRef = useRef<number>(0);
@@ -253,90 +253,6 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
           <div className="reading-component__summary-page">
             <h3 className="reading-component__summary-title">{t('reading.component.summary')}</h3>
 
-            {/* Key Vocabulary Section - Enhanced Collapsible */}
-            {readingData.keyVocabulary?.length > 0 && (
-              <div ref={vocabularyRef} className="reading-component__vocabulary">
-                <button
-                  className="reading-component__summary-section-trigger"
-                  onClick={() => {
-                    const next = !vocabularyExpanded;
-                    setVocabularyExpanded(next);
-                    if (next) setGrammarExpanded(false);
-                  }}
-                  aria-expanded={vocabularyExpanded}
-                  aria-controls="vocabulary-content"
-                  aria-label={t('reading.accessibility.vocabularySectionLabel', undefined, {
-                    action: vocabularyExpanded
-                      ? t('reading.accessibility.collapseSection')
-                      : t('reading.accessibility.expandSection'),
-                    count: readingData.keyVocabulary.length,
-                    unit:
-                      readingData.keyVocabulary.length === 1
-                        ? t('reading.accessibility.termSingular')
-                        : t('reading.accessibility.termPlural'),
-                  })}
-                >
-                  <span className="reading-component__summary-section-title">
-                    {t('reading.component.keyVocabulary')}
-                    <span className="reading-component__summary-section-count">
-                      {readingData.keyVocabulary.length}
-                    </span>
-                  </span>
-                  <ChevronDown className="reading-component__summary-section-icon" />
-                </button>
-                {vocabularyExpanded && (
-                  <div
-                    id="vocabulary-content"
-                    className="reading-component__vocabulary-grid"
-                    role="region"
-                    aria-label={t('reading.component.keyVocabulary')}
-                  >
-                    {readingData.keyVocabulary.map((term, index) => (
-                      <div key={index} className="reading-component__vocabulary-card">
-                        <div className="reading-component__vocabulary-card-header">
-                          <div className="reading-component__vocabulary-term">
-                            <ContentRenderer
-                              content={ContentAdapter.ensureStructured(term.term, 'reading')}
-                            />
-                          </div>
-                          {term.pronunciation && (
-                            <div className="reading-component__vocabulary-pronunciation">
-                              {term.pronunciation}
-                            </div>
-                          )}
-                        </div>
-                        <div className="reading-component__vocabulary-content">
-                          <div className="reading-component__vocabulary-definition-block">
-                            <div className="reading-component__vocabulary-label">
-                              {t('reading.component.definition')}
-                            </div>
-                            <div className="reading-component__vocabulary-definition">
-                              <ContentRenderer
-                                content={ContentAdapter.ensureStructured(
-                                  term.definition,
-                                  'reading'
-                                )}
-                              />
-                            </div>
-                          </div>
-                          <div className="reading-component__vocabulary-example-block">
-                            <div className="reading-component__vocabulary-label">
-                              {t('reading.component.example')}
-                            </div>
-                            <div className="reading-component__vocabulary-example">
-                              <ContentRenderer
-                                content={ContentAdapter.ensureStructured(term.example, 'reading')}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-            )}
-
             {/* Grammar Points Section - Enhanced Collapsible */}
             {readingData.grammarPoints && readingData.grammarPoints.length > 0 && (
               <div ref={grammarRef} className="reading-component__grammar-points">
@@ -447,6 +363,90 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                             </ul>
                           </div>
                         ) : null}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
+
+            {/* Key Vocabulary Section - Enhanced Collapsible */}
+            {readingData.keyVocabulary?.length > 0 && (
+              <div ref={vocabularyRef} className="reading-component__vocabulary">
+                <button
+                  className="reading-component__summary-section-trigger"
+                  onClick={() => {
+                    const next = !vocabularyExpanded;
+                    setVocabularyExpanded(next);
+                    if (next) setGrammarExpanded(false);
+                  }}
+                  aria-expanded={vocabularyExpanded}
+                  aria-controls="vocabulary-content"
+                  aria-label={t('reading.accessibility.vocabularySectionLabel', undefined, {
+                    action: vocabularyExpanded
+                      ? t('reading.accessibility.collapseSection')
+                      : t('reading.accessibility.expandSection'),
+                    count: readingData.keyVocabulary.length,
+                    unit:
+                      readingData.keyVocabulary.length === 1
+                        ? t('reading.accessibility.termSingular')
+                        : t('reading.accessibility.termPlural'),
+                  })}
+                >
+                  <span className="reading-component__summary-section-title">
+                    {t('reading.component.keyVocabulary')}
+                    <span className="reading-component__summary-section-count">
+                      {readingData.keyVocabulary.length}
+                    </span>
+                  </span>
+                  <ChevronDown className="reading-component__summary-section-icon" />
+                </button>
+                {vocabularyExpanded && (
+                  <div
+                    id="vocabulary-content"
+                    className="reading-component__vocabulary-grid"
+                    role="region"
+                    aria-label={t('reading.component.keyVocabulary')}
+                  >
+                    {readingData.keyVocabulary.map((term, index) => (
+                      <div key={index} className="reading-component__vocabulary-card">
+                        <div className="reading-component__vocabulary-card-header">
+                          <div className="reading-component__vocabulary-term">
+                            <ContentRenderer
+                              content={ContentAdapter.ensureStructured(term.term, 'reading')}
+                            />
+                          </div>
+                          {term.pronunciation && (
+                            <div className="reading-component__vocabulary-pronunciation">
+                              {term.pronunciation}
+                            </div>
+                          )}
+                        </div>
+                        <div className="reading-component__vocabulary-content">
+                          <div className="reading-component__vocabulary-definition-block">
+                            <div className="reading-component__vocabulary-label">
+                              {t('reading.component.definition')}
+                            </div>
+                            <div className="reading-component__vocabulary-definition">
+                              <ContentRenderer
+                                content={ContentAdapter.ensureStructured(
+                                  term.definition,
+                                  'reading'
+                                )}
+                              />
+                            </div>
+                          </div>
+                          <div className="reading-component__vocabulary-example-block">
+                            <div className="reading-component__vocabulary-label">
+                              {t('reading.component.example')}
+                            </div>
+                            <div className="reading-component__vocabulary-example">
+                              <ContentRenderer
+                                content={ContentAdapter.ensureStructured(term.example, 'reading')}
+                              />
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     ))}
                   </div>

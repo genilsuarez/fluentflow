@@ -21,31 +21,31 @@
     "sentence": "I ______ coffee every morning.",
     "correct": "drink",
     "explanation": "Usa la forma base del verbo con <I>",
-    "tip": "Complete with the correct verb form"
+    "tip": "Complete with the correct form of <drink>"
   },
   {
     "sentence": "She ______ to school by bus.",
     "correct": "goes",
     "explanation": "Añade <s> a los verbos con he/she/it",
-    "tip": "Complete with the correct verb form"
+    "tip": "Complete with the correct form of <go>"
   },
   {
     "sentence": "He ______ English very well.",
     "correct": "speaks",
     "explanation": "Añade <s> a los verbos con he/she/it",
-    "tip": "Complete with the correct verb form"
+    "tip": "Complete with the correct form of <speak>"
   },
   {
     "sentence": "We ______ in a big house.",
     "correct": "live",
     "explanation": "Usa la forma base del verbo con <we>",
-    "tip": "Complete with the correct verb form"
+    "tip": "Complete with the correct form of <live>"
   },
   {
     "sentence": "They ______ pizza for dinner.",
     "correct": "eat",
     "explanation": "Usa la forma base del verbo con <they>",
-    "tip": "Complete with the correct verb form"
+    "tip": "Complete with the correct form of <eat>"
   },
   {
     "sentence": "I ______ like vegetables.",
@@ -117,6 +117,6 @@
     "sentence": "The cat is ______ the table.",
     "correct": "on",
     "explanation": "<On> indica posición sobre algo",
-    "tip": "Complete with the correct preposition"
+    "tip": "Complete with the correct preposition: the cat's position is 'sobre' the table"
   }
 ]

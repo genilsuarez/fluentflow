@@ -152,7 +152,7 @@
 }
 
 .reordering__word:focus-visible {
-  outline: 2px solid var(--theme-primary-blue, #3b82f6);
+  outline: 2px solid var(--lp-accent, #2563eb);
   outline-offset: 2px;
 }
 
@@ -180,17 +180,19 @@
 
 /* Keyboard focus indicator */
 .reordering__word--focused {
-  outline: 2px solid color-mix(in srgb, var(--color-primary, #7c3aed) 60%, transparent);
+  outline: 2px solid color-mix(in srgb, var(--lp-accent, #2563eb) 70%, transparent);
   outline-offset: 2px;
-  box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.12);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--lp-accent, #2563eb) 16%, transparent);
 }
 
 /* Keyboard selected state (word "picked up" for reordering) */
 .reordering__word--selected {
-  outline: 2px solid var(--color-primary, #7c3aed);
-  outline-offset: 2px;
-  background: var(--color-primary-bg, rgba(124, 58, 237, 0.15));
-  box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.3);
+  outline: 2px solid rgba(255, 255, 255, 0.92);
+  outline-offset: 0;
+  background-color: var(--theme-primary-blue-hover, #1d4ed8);
+  box-shadow:
+    0 0 0 2px var(--lp-accent, #2563eb),
+    0 4px 10px color-mix(in srgb, var(--lp-accent, #2563eb) 30%, transparent);
   transform: scale(1.05);
 }
 

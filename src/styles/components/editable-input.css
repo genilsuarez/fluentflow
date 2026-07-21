@@ -22,9 +22,25 @@
   overflow: hidden;
   text-overflow: ellipsis;
   vertical-align: middle;
+  box-sizing: border-box;
 
   -webkit-user-select: text;
   user-select: text;
+}
+
+/* Inline blank inside a sentence — compact, baseline-aligned, auto-width */
+.editable-input--inline {
+  min-width: 4ch;
+  width: var(--dynamic-width, 6ch);
+  max-width: min(100%, 28ch);
+  margin: 0 0.2em;
+  padding: 0.05em 0.35em;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  vertical-align: baseline;
+  overflow: visible;
+  text-overflow: unset;
 }
 
 /* Full-width variant: allow text wrapping and auto-grow height */

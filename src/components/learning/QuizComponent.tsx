@@ -290,16 +290,8 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
           aria-hidden={!(showResult && currentQuestion?.explanation)}
         >
           <div className="quiz-component__explanation">
-            <h4
-              className="quiz-component__explanation-title dynamic-text-color"
-              style={{ '--dynamic-text-color': textColor } as React.CSSProperties}
-            >
-              {t('learning.explanation')}
-            </h4>
-            <div
-              className="quiz-component__explanation-content dynamic-text-color"
-              style={{ '--dynamic-text-color': textColor } as React.CSSProperties}
-            >
+            <h4 className="quiz-component__explanation-title">{t('learning.explanation')}</h4>
+            <div className="quiz-component__explanation-content">
               <ContentRenderer
                 content={ContentAdapter.ensureStructured(
                   currentQuestion?.explanation || '',

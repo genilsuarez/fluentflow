@@ -13,8 +13,8 @@
   --reading-bg-primary: var(--theme-bg-elevated, #ffffff);
   --reading-bg-secondary: var(--theme-bg-subtle, #f9fafb);
   --reading-bg-tertiary: var(--theme-bg-soft, #f3f4f6);
-  --reading-text-primary: var(--theme-text-primary, #111827);
-  --reading-text-secondary: var(--theme-text-secondary, #6b7280);
+  --reading-text-primary: var(--theme-text-primary, #2c2418);
+  --reading-text-secondary: var(--theme-text-secondary, #5e5041);
   --reading-accent-primary: var(--theme-primary-blue, #3b82f6);
   --reading-accent-secondary: #8b5cf6;
   --reading-border-primary: var(--theme-border-soft, #e5e7eb);
@@ -234,9 +234,9 @@
   justify-content: center;
   width: 1.375rem;
   height: 1.375rem;
-  background: transparent;
-  color: var(--lp-ink);
-  border: 1.5px solid var(--lp-ink);
+  background: color-mix(in srgb, var(--reading-accent-primary) 12%, transparent);
+  color: var(--reading-accent-primary);
+  border: 1.5px solid color-mix(in srgb, var(--reading-accent-primary) 32%, transparent);
   border-radius: 50%;
   font-size: 0.75rem;
   font-weight: 700;
@@ -266,7 +266,7 @@
   padding: 0.1875rem 0.5rem;
   background: transparent;
   border-radius: var(--lp-radius-sm);
-  border-left: 2px solid var(--reading-border-primary);
+  border-left: 2px solid color-mix(in srgb, var(--reading-accent-primary) 25%, transparent);
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
@@ -1587,10 +1587,17 @@ html.dark .reading-component__example-card-header {
   border-bottom-color: var(--reading-border-primary);
 }
 
+html.dark .reading-component__example-number {
+  background: color-mix(in srgb, var(--reading-accent-primary) 18%, transparent);
+  color: color-mix(in srgb, var(--reading-accent-primary) 85%, #ffffff);
+  border-color: color-mix(in srgb, var(--reading-accent-primary) 40%, transparent);
+}
+
 html.dark .reading-component__example-quote,
 html.dark .reading-component__example-content {
   background: transparent;
-  border-left-color: var(--reading-border-primary);
+  border-left-color: color-mix(in srgb, var(--reading-accent-primary) 30%, transparent);
+  color: var(--reading-text-primary);
 }
 
 html.dark .reading-component__example-note {
