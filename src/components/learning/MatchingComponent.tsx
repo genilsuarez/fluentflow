@@ -323,7 +323,9 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
 
       {/* Compact Matching Grid */}
       <div className="matching-component__grid">
-        <div className={`matching-component__columns${showResult ? ' matching-component__columns--checked' : ''}`}>
+        <div
+          className={`matching-component__columns${showResult ? ' matching-component__columns--checked' : ''}`}
+        >
           {/* Terms Column */}
           <div className="matching-component__column">
             <h3 className="matching-component__column-header">{t('learning.terms')}</h3>

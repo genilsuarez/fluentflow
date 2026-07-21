@@ -29,13 +29,7 @@ const FlashcardComponent: React.FC<FlashcardComponentProps> = ({ module }) => {
   const { addProgressEntry } = useProgressStore();
   const { returnToMenu } = useMenuNavigation();
 
-  const {
-    t,
-    randomizeItems,
-    handleReturnToMenu,
-    startTime,
-    triggerRestart,
-  } = useLearningSession({
+  const { t, randomizeItems, handleReturnToMenu, startTime, triggerRestart } = useLearningSession({
     moduleId: module.id,
     moduleName: module.name,
     learningMode: 'flashcard',
