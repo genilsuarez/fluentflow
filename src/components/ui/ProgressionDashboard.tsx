@@ -19,10 +19,7 @@ function getModuleGridColumns(): number {
 function useModuleGridColumns(): number {
   const [columns, setColumns] = React.useState(getModuleGridColumns);
   React.useEffect(() => {
-    const mqs = [
-      window.matchMedia('(min-width: 1024px)'),
-      window.matchMedia('(min-width: 768px)'),
-    ];
+    const mqs = [window.matchMedia('(min-width: 1024px)'), window.matchMedia('(min-width: 768px)')];
     const update = () => setColumns(getModuleGridColumns());
     mqs.forEach(mq => mq.addEventListener('change', update));
     return () => mqs.forEach(mq => mq.removeEventListener('change', update));

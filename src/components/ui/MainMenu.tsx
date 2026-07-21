@@ -50,7 +50,13 @@ export const MainMenu: React.FC = () => {
   const progression = useProgression();
   const { query, setQuery, results } = useSearch(modules);
   const { setPreviousMenuContext, previousMenuContext } = useAppStore();
-  const { language, categories, learningModes, level: _level, developmentMode } = useSettingsStore();
+  const {
+    language,
+    categories,
+    learningModes,
+    level: _level,
+    developmentMode,
+  } = useSettingsStore();
   const { t } = useTranslation(language);
   const queryClient = useQueryClient();
   const [viewMode, setViewModeRaw] = useState<'progression' | 'list'>(() => {
@@ -135,7 +141,14 @@ export const MainMenu: React.FC = () => {
       });
     }
     return map;
-  }, [modules, allModulesRaw, getModuleCompletion, isModuleCompleted, progression, developmentMode]);
+  }, [
+    modules,
+    allModulesRaw,
+    getModuleCompletion,
+    isModuleCompleted,
+    progression,
+    developmentMode,
+  ]);
 
   // Pre-compute hidden dependencies map once (avoids creating a new Map per card)
   const hiddenDepsMap = React.useMemo(() => {
