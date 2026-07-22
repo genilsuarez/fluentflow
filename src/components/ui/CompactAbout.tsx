@@ -178,85 +178,85 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
 
           {developmentMode && (
             <section className="about-dev-panel" aria-label="Development tools">
-            <header className="about-dev-header">
-              <span>
-                <Wrench aria-hidden="true" />
-                <strong>
-                  {language === 'es' ? 'Herramientas de desarrollo' : 'Development tools'}
-                </strong>
-              </span>
-              <code>B: {buildString}</code>
-            </header>
-            <div className="about-dev-actions">
-              <button type="button" onClick={handleRecompile}>
-                <RotateCcw aria-hidden="true" />
-                {language === 'es' ? 'Recompilar' : 'Recompile'}
-              </button>
-              <button
-                type="button"
-                aria-expanded={showCacheConfirm}
-                onClick={() => setShowCacheConfirm(value => !value)}
-              >
-                <Trash2 aria-hidden="true" />
-                {t('about.clearCache', 'Clear cache')}
-              </button>
-              <button
-                type="button"
-                aria-expanded={showScreenInfo}
-                onClick={() => setShowScreenInfo(value => !value)}
-              >
-                <Monitor aria-hidden="true" />
-                {t('about.screenInformation')}
-              </button>
-            </div>
-            {showCacheConfirm && (
-              <div className="about-cache-confirm" role="alert">
-                <p>
-                  {t(
-                    'about.clearCacheDescription',
-                    'This deletes cached assets and reloads the application.'
-                  )}
-                </p>
-                <div>
-                  <button
-                    type="button"
-                    onClick={() => setShowCacheConfirm(false)}
-                    disabled={clearingCache}
-                  >
-                    {t('common.cancel', 'Cancel')}
-                  </button>
-                  <button type="button" onClick={handleClearCache} disabled={clearingCache}>
-                    {clearingCache ? '…' : t('about.clearCacheConfirm', 'Clear & reload')}
-                  </button>
-                </div>
+              <header className="about-dev-header">
+                <span>
+                  <Wrench aria-hidden="true" />
+                  <strong>
+                    {language === 'es' ? 'Herramientas de desarrollo' : 'Development tools'}
+                  </strong>
+                </span>
+                <code>B: {buildString}</code>
+              </header>
+              <div className="about-dev-actions">
+                <button type="button" onClick={handleRecompile}>
+                  <RotateCcw aria-hidden="true" />
+                  {language === 'es' ? 'Recompilar' : 'Recompile'}
+                </button>
+                <button
+                  type="button"
+                  aria-expanded={showCacheConfirm}
+                  onClick={() => setShowCacheConfirm(value => !value)}
+                >
+                  <Trash2 aria-hidden="true" />
+                  {t('about.clearCache', 'Clear cache')}
+                </button>
+                <button
+                  type="button"
+                  aria-expanded={showScreenInfo}
+                  onClick={() => setShowScreenInfo(value => !value)}
+                >
+                  <Monitor aria-hidden="true" />
+                  {t('about.screenInformation')}
+                </button>
               </div>
-            )}
-            {screenInfo && (
-              <dl className="about-screen-grid">
-                <div>
-                  <dt>{t('about.screenResolution')}</dt>
-                  <dd>{screenInfo.resolution}</dd>
+              {showCacheConfirm && (
+                <div className="about-cache-confirm" role="alert">
+                  <p>
+                    {t(
+                      'about.clearCacheDescription',
+                      'This deletes cached assets and reloads the application.'
+                    )}
+                  </p>
+                  <div>
+                    <button
+                      type="button"
+                      onClick={() => setShowCacheConfirm(false)}
+                      disabled={clearingCache}
+                    >
+                      {t('common.cancel', 'Cancel')}
+                    </button>
+                    <button type="button" onClick={handleClearCache} disabled={clearingCache}>
+                      {clearingCache ? '…' : t('about.clearCacheConfirm', 'Clear & reload')}
+                    </button>
+                  </div>
                 </div>
-                <div>
-                  <dt>{t('about.screenViewport')}</dt>
-                  <dd>{screenInfo.viewport}</dd>
-                </div>
-                <div>
-                  <dt>{t('about.screenPixelRatio')}</dt>
-                  <dd>{screenInfo.pixelRatio}</dd>
-                </div>
-                <div>
-                  <dt>{t('about.screenColorDepth')}</dt>
-                  <dd>{screenInfo.colorDepth}</dd>
-                </div>
-                <div>
-                  <dt>{t('about.screenOrientation')}</dt>
-                  <dd>{screenInfo.orientation}</dd>
-                </div>
-              </dl>
-            )}
-          </section>
-        )}
+              )}
+              {screenInfo && (
+                <dl className="about-screen-grid">
+                  <div>
+                    <dt>{t('about.screenResolution')}</dt>
+                    <dd>{screenInfo.resolution}</dd>
+                  </div>
+                  <div>
+                    <dt>{t('about.screenViewport')}</dt>
+                    <dd>{screenInfo.viewport}</dd>
+                  </div>
+                  <div>
+                    <dt>{t('about.screenPixelRatio')}</dt>
+                    <dd>{screenInfo.pixelRatio}</dd>
+                  </div>
+                  <div>
+                    <dt>{t('about.screenColorDepth')}</dt>
+                    <dd>{screenInfo.colorDepth}</dd>
+                  </div>
+                  <div>
+                    <dt>{t('about.screenOrientation')}</dt>
+                    <dd>{screenInfo.orientation}</dd>
+                  </div>
+                </dl>
+              )}
+            </section>
+          )}
         </div>
 
         <footer className="about-footer">
