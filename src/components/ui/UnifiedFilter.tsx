@@ -23,7 +23,6 @@ import {
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useTranslation } from '../../utils/i18n';
 import type { Category, LearningMode } from '../../types';
-import '../../styles/components/unified-filter.css';
 
 type FilterTab = 'category' | 'mode' | 'level';
 type Level = 'a1' | 'a2' | 'b1' | 'b2' | 'c1' | 'c2';
@@ -139,7 +138,9 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
   const [internalOpen, setInternalOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<FilterTab>('category');
   const [isMobileSheet, setIsMobileSheet] = useState(false);
+  const [desktopAnchor, setDesktopAnchor] = useState<{ top: number; right: number } | null>(null);
   const panelRef = useRef<HTMLDivElement>(null);
+  const toggleRef = useRef<HTMLButtonElement>(null);
 
   const isOpen = controlledOpen ?? internalOpen;
   const handleToggle = React.useCallback(() => {
@@ -160,6 +161,22 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
     return () => mq.removeEventListener('change', update);
   }, []);
 
+  const updateDesktopAnchor = React.useCallback(() => {
+    const btn = toggleRef.current;
+    if (!btn) return;
+    const rect = btn.getBoundingClientRect();
+    setDesktopAnchor({
+      top: rect.bottom + 6,
+      right: Math.max(12, window.innerWidth - rect.right),
+    });
+  }, []);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    document.body.classList.add('lp-filter-open');
+    return () => document.body.classList.remove('lp-filter-open');
+  }, [isOpen]);
+
   useEffect(() => {
     if (!isOpen || !isMobileSheet) return;
     const prevOverflow = document.body.style.overflow;
@@ -168,6 +185,20 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
       document.body.style.overflow = prevOverflow;
     };
   }, [isOpen, isMobileSheet]);
+
+  useEffect(() => {
+    if (!isOpen || isMobileSheet) {
+      setDesktopAnchor(null);
+      return;
+    }
+    updateDesktopAnchor();
+    window.addEventListener('resize', updateDesktopAnchor);
+    window.addEventListener('scroll', updateDesktopAnchor, true);
+    return () => {
+      window.removeEventListener('resize', updateDesktopAnchor);
+      window.removeEventListener('scroll', updateDesktopAnchor, true);
+    };
+  }, [isOpen, isMobileSheet, updateDesktopAnchor]);
 
   useEffect(() => {
     if (!isOpen) return;
@@ -232,10 +263,18 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
 
   const panel = (
     <div
-      className={`unified-filter__panel${isMobileSheet ? ' unified-filter__panel--sheet' : ''}`}
+      className={`unified-filter__panel${isMobileSheet ? ' unified-filter__panel--sheet' : ' unified-filter__panel--anchored'}`}
       ref={panelRef}
       role="dialog"
       aria-label="Filters"
+      style={
+        !isMobileSheet && desktopAnchor
+          ? ({
+              '--filter-anchor-top': `${desktopAnchor.top}px`,
+              '--filter-anchor-right': `${desktopAnchor.right}px`,
+            } as React.CSSProperties)
+          : undefined
+      }
     >
       {isMobileSheet && <div className="unified-filter__handle" aria-hidden="true" />}
       <div className="unified-filter__header">
@@ -345,6 +384,7 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
   return (
     <div className="unified-filter">
       <button
+        ref={toggleRef}
         className={`unified-filter__toggle-btn${activeFilterCount > 0 ? ' unified-filter__toggle-btn--active' : ''}`}
         onClick={handleToggle}
         aria-expanded={isOpen}
@@ -357,19 +397,19 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
         )}
       </button>
 
-      {isOpen && !isMobileSheet && panel}
       {isOpen &&
-        isMobileSheet &&
         createPortal(
-          <>
-            <button
-              type="button"
-              className="unified-filter__backdrop"
-              onClick={handleToggle}
-              aria-label={t('levelFilter.collapse')}
-            />
+          <div className="unified-filter__overlay-root">
+            {isMobileSheet && (
+              <button
+                type="button"
+                className="unified-filter__backdrop"
+                onClick={handleToggle}
+                aria-label={t('levelFilter.collapse')}
+              />
+            )}
             {panel}
-          </>,
+          </div>,
           document.body
         )}
     </div>

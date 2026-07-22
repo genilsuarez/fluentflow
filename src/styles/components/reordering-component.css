@@ -113,6 +113,19 @@
   transition: var(--transition-interactive);
 }
 
+.reordering__zone--answer .reordering__zone-content {
+  min-height: 2.1rem;
+  align-items: center;
+  align-content: center;
+}
+
+.reordering__zone--answer .reordering__placeholder {
+  min-height: 2.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .reordering__placeholder {
   color: var(--theme-text-tertiary, #9c8e7c);
   font-style: italic;
@@ -133,6 +146,10 @@
   cursor: pointer;
   font-size: 0.853rem;
   font-weight: 500;
+  min-height: 2.1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   transition: var(--transition-shadow), var(--transition-transform);
   will-change: auto;
   user-select: none;
@@ -446,10 +463,6 @@ html.dark .reordering__empty {
   .reordering__word {
     padding: 0.328rem 0.525rem;
     font-size: 0.853rem;
-    min-height: 2.1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     -webkit-touch-callout: none;
     touch-action: none;
   }

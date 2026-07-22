@@ -73,10 +73,23 @@
 }
 
 /* === BACKDROP (mobile sheet) — scrim ligero, sin blur: el contenido filtrado sigue legible === */
+.unified-filter__overlay-root {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  isolation: isolate;
+  transform: translateZ(0);
+  pointer-events: none;
+}
+
+.unified-filter__overlay-root > * {
+  pointer-events: auto;
+}
+
 .unified-filter__backdrop {
   position: fixed;
   inset: 0;
-  z-index: 9998;
+  z-index: 1;
   margin: 0;
   padding: 0;
   border: none;
@@ -99,7 +112,7 @@
   position: absolute;
   top: calc(100% + 0.375rem);
   right: 0;
-  z-index: 50;
+  z-index: 2;
   background: var(--lp-surface, #fff);
   border: 1.5px solid var(--lp-border, #e8e0d4);
   border-radius: var(--lp-radius-lg, 14px);
@@ -116,7 +129,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 2;
   width: 100%;
   min-width: 0;
   max-width: 100%;
@@ -126,6 +139,15 @@
   border-radius: var(--lp-radius-xl, 20px) var(--lp-radius-xl, 20px) 0 0;
   border-bottom: none;
   animation: unified-filter-slide-up 0.28s cubic-bezier(0.22, 0.9, 0.36, 1);
+}
+
+.unified-filter__panel--anchored {
+  position: fixed;
+  top: var(--filter-anchor-top, 0);
+  right: var(--filter-anchor-right, 0);
+  left: auto;
+  bottom: auto;
+  z-index: 2;
 }
 
 .unified-filter__handle {
@@ -557,6 +579,16 @@ html.dark .unified-filter__chip:hover {
 }
 
 html.dark .unified-filter__chip--active {
+  background: var(--lp-accent-soft, #1a2744);
+  border-color: color-mix(in srgb, #60a5fa 40%, transparent);
+  color: #93c5fd;
+}
+
+html.dark .unified-filter__chip--level .unified-filter__chip-emoji {
+  display: none;
+}
+
+html.dark .unified-filter__chip--level.unified-filter__chip--active {
   background: var(--lp-accent-soft, #1a2744);
   border-color: color-mix(in srgb, #60a5fa 40%, transparent);
   color: #93c5fd;

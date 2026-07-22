@@ -25,14 +25,16 @@
 .header-redesigned {
   background-color: var(--header-bg);
   border-bottom: 1.5px solid var(--lp-border, var(--header-border));
-  height: var(--header-height-mobile);
-  min-height: var(--header-height-mobile);
+  height: calc(var(--header-height-mobile) + env(safe-area-inset-top, 0px));
+  min-height: calc(var(--header-height-mobile) + env(safe-area-inset-top, 0px));
+  padding-top: env(safe-area-inset-top, 0px);
   transition: all 0.2s ease-in-out;
   position: relative;
   z-index: 10;
   display: flex;
   align-items: center;
   width: 100%;
+  box-sizing: border-box;
 }
 
 /* Dark mode enhancements */
@@ -177,7 +179,7 @@
 .header-redesigned__menu-btn--primary,
 .header-redesigned__user-btn--primary,
 .header-redesigned__login-btn--primary {
-  background: linear-gradient(135deg, #faf7f2 0%, #f5f1eb 100%);
+  background: linear-gradient(135deg, var(--lp-bg) 0%, var(--lp-bg-paper) 100%);
   border: 1px solid var(--header-border);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   color: var(--header-text-primary);
@@ -196,7 +198,7 @@
 .header-redesigned__menu-btn--primary:hover,
 .header-redesigned__user-btn--primary:hover,
 .header-redesigned__login-btn--primary:hover {
-  background: linear-gradient(135deg, #f5f1eb 0%, #e8e0d4 100%);
+  background: linear-gradient(135deg, var(--lp-bg-paper) 0%, var(--lp-border) 100%);
   border-color: var(--lp-muted);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   transform: translateY(-1px);
@@ -476,6 +478,31 @@
   letter-spacing: var(--lp-header-tag-tracking);
 }
 
+/* Mobile menu: marca centrada en lugar del pill de stats */
+.header-redesigned__mobile-title {
+  display: none;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  font-family: var(--lp-font-display);
+  font-size: var(--lp-header-title-size);
+  font-weight: var(--lp-header-title-weight);
+  letter-spacing: var(--lp-header-title-tracking);
+  line-height: var(--lp-header-title-line-height);
+  color: var(--header-text-primary);
+}
+
+.header-redesigned__mobile-title em {
+  font-style: italic;
+  color: var(--lp-accent);
+  font-weight: var(--lp-weight-normal);
+}
+
 /* Hide title on mobile */
 @media (max-width: 767px) {
   .header-redesigned__title {
@@ -489,15 +516,19 @@
 
   /* Menu home: flex en lugar de center absoluto — evita solape ☰ / logo / pill */
   .header-redesigned--menu .header-redesigned__container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 44px 1fr 44px;
     align-items: center;
     gap: 0;
-    padding: 0 var(--lp-header-pad-x-compact, 12px);
+    height: var(--lp-header-height-compact);
+    padding: 0 max(var(--lp-header-pad-x-compact, 12px), env(safe-area-inset-right, 0px)) 0 max(var(--lp-header-pad-x-compact, 12px), env(safe-area-inset-left, 0px));
   }
 
   .header-redesigned--menu .header-redesigned__left {
+    grid-column: 1;
     flex: 0 0 auto;
     z-index: 2;
+    justify-self: start;
   }
 
   .header-redesigned--menu .header-redesigned__greeting {
@@ -511,10 +542,20 @@
   .header-redesigned--menu .header-redesigned__center {
     position: static;
     transform: none;
+    grid-column: 2;
     flex: 1 1 auto;
     min-width: 0;
     justify-content: center;
     z-index: 1;
+  }
+
+  /* Inicio/ejercicios: título estándar — el resumen ya muestra stats abajo */
+  .header-redesigned--menu .header-redesigned__mobile-title {
+    display: block;
+  }
+
+  .header-redesigned--menu .header-redesigned__score-wrap {
+    display: none;
   }
 
   .header-redesigned--menu .header-redesigned__right {
@@ -527,7 +568,7 @@
   }
 
   html[data-navigation-mode='floating'] .header-redesigned--menu .header-redesigned__container {
-    padding-left: var(--lp-header-pad-x-compact, 12px);
+    padding-left: max(var(--lp-header-pad-x-compact, 12px), env(safe-area-inset-left, 0px));
   }
 
   html[data-navigation-mode='floating'] .header-redesigned--menu .header-redesigned__menu-btn {
@@ -1181,6 +1222,49 @@ html.dark .header-side-menu__item:hover:not(.header-side-menu__item--active) {
   gap: var(--header-spacing-sm);
   flex: 1;
   min-width: 0;
+}
+
+/* Learning mode: hamburger siempre en la barra (nunca launcher flotante) */
+html[data-navigation-mode='floating'] .header-redesigned--learning-mode .header-redesigned__menu-btn {
+  position: static;
+  top: auto;
+  left: auto;
+  z-index: auto;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: var(--lp-radius-md);
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  color: var(--lp-ink-soft);
+  padding: 0;
+}
+
+html[data-navigation-mode='floating'] .header-redesigned--learning-mode .header-redesigned__container,
+html[data-navigation-mode='floating'] .header-redesigned--learning-mode .header-redesigned__container--learning {
+  padding-left: max(var(--lp-header-pad-x-compact, 12px), env(safe-area-inset-left, 0px));
+  padding-right: max(var(--lp-header-pad-x-compact, 12px), env(safe-area-inset-right, 0px));
+}
+
+@media (min-width: 768px) {
+  html[data-navigation-mode='floating'] .header-redesigned--learning-mode .header-redesigned__menu-btn {
+    width: var(--lp-navbtn-size);
+    height: var(--lp-navbtn-size);
+    min-width: var(--lp-navbtn-size);
+    min-height: var(--lp-navbtn-size);
+    border: var(--lp-navbtn-border-width) solid var(--lp-navbtn-border);
+    border-radius: var(--lp-navbtn-radius);
+    background: var(--lp-navbtn-bg);
+    box-shadow: var(--lp-navbtn-shadow);
+  }
+
+  html[data-navigation-mode='floating'] .header-redesigned--learning-mode .header-redesigned__container,
+  html[data-navigation-mode='floating'] .header-redesigned--learning-mode .header-redesigned__container--learning {
+    padding-left: var(--header-spacing-lg);
+    padding-right: var(--header-spacing-lg);
+  }
 }
 
 .header-redesigned--has-lesson-title .header-redesigned__lesson-title {

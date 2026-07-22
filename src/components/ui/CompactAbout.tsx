@@ -108,7 +108,7 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
           <div className="about-identity" aria-hidden="true">
             L
           </div>
-          <div>
+          <div className="about-header__text">
             <p className="about-eyebrow">LearnFlow · Plataforma</p>
             <h2 id="about-title">{t('about.title')}</h2>
           </div>
@@ -122,39 +122,62 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
           </button>
         </header>
 
-        <p id="about-description" className="about-description">
-          {language === 'es'
-            ? 'Una plataforma para aprender idiomas con estructura, práctica y música.'
-            : 'A platform for learning languages with structure, practice, and music.'}
-        </p>
+        <div className="about-body">
+          <p id="about-description" className="about-description">
+            {language === 'es'
+              ? 'Una plataforma para aprender idiomas con estructura, práctica y música.'
+              : 'A platform for learning languages with structure, practice, and music.'}
+          </p>
 
-        <nav className="about-modules" aria-label={t('about.learnFlowLinks')}>
-          <a href={getAppHref('deskflow', 3000)} onClick={preserveTheme}>
-            <strong>LearnFlow</strong>
-            <span>Portal</span>
-          </a>
-          <a href={getAppHref('fluentflow', 3001)} onClick={preserveTheme}>
-            <strong>FluentFlow</strong>
-            <span>
-              {language === 'es'
-                ? 'Ruta de inglés por niveles CEFR'
-                : 'English path by CEFR levels'}
-            </span>
-          </a>
-          <a href={getAppHref('hubflow', 3002)} onClick={preserveTheme}>
-            <strong>HubFlow</strong>
-            <span>
-              {language === 'es' ? 'Práctica flexible de gramática' : 'Flexible grammar practice'}
-            </span>
-          </a>
-          <a href={getAppHref('lyricflow', 3003)} onClick={preserveTheme}>
-            <strong>LyricFlow</strong>
-            <span>{language === 'es' ? 'Aprender con música' : 'Learn with music'}</span>
-          </a>
-        </nav>
+          <nav className="about-modules" aria-label={t('about.learnFlowLinks')}>
+            <a href={getAppHref('deskflow', 3000)} onClick={preserveTheme}>
+              <span className="about-module__mark about-module__mark--portal" aria-hidden="true">
+                L
+              </span>
+              <span className="about-module__text">
+                <strong>LearnFlow</strong>
+                <span>Portal</span>
+              </span>
+            </a>
+            <a href={getAppHref('fluentflow', 3001)} onClick={preserveTheme}>
+              <span className="about-module__mark about-module__mark--fluent" aria-hidden="true">
+                F
+              </span>
+              <span className="about-module__text">
+                <strong>FluentFlow</strong>
+                <span>
+                  {language === 'es'
+                    ? 'Ruta de inglés por niveles CEFR'
+                    : 'English path by CEFR levels'}
+                </span>
+              </span>
+            </a>
+            <a href={getAppHref('hubflow', 3002)} onClick={preserveTheme}>
+              <span className="about-module__mark about-module__mark--hub" aria-hidden="true">
+                H
+              </span>
+              <span className="about-module__text">
+                <strong>HubFlow</strong>
+                <span>
+                  {language === 'es'
+                    ? 'Práctica flexible de gramática'
+                    : 'Flexible grammar practice'}
+                </span>
+              </span>
+            </a>
+            <a href={getAppHref('lyricflow', 3003)} onClick={preserveTheme}>
+              <span className="about-module__mark about-module__mark--lyric" aria-hidden="true">
+                LF
+              </span>
+              <span className="about-module__text">
+                <strong>LyricFlow</strong>
+                <span>{language === 'es' ? 'Aprender con música' : 'Learn with music'}</span>
+              </span>
+            </a>
+          </nav>
 
-        {developmentMode && (
-          <section className="about-dev-panel" aria-label="Development tools">
+          {developmentMode && (
+            <section className="about-dev-panel" aria-label="Development tools">
             <header className="about-dev-header">
               <span>
                 <Wrench aria-hidden="true" />
@@ -234,6 +257,7 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
             )}
           </section>
         )}
+        </div>
 
         <footer className="about-footer">
           <div className="about-author">

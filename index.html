@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
     <meta name="description" content="FluentFlow - English Learning Platform" />
-    <meta name="theme-color" content="#faf7f2" id="theme-color-meta" />
+    <meta name="theme-color" content="#ffffff" id="theme-color-meta" />
     <meta name="color-scheme" content="light" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
@@ -81,7 +81,7 @@
           document.documentElement.classList.remove(theme === 'dark' ? 'light' : 'dark');
           document.documentElement.style.colorScheme = theme;
           var meta = document.getElementById('theme-color-meta');
-          if (meta) meta.setAttribute('content', theme === 'dark' ? '#181b20' : '#faf7f2');
+          if (meta) meta.setAttribute('content', theme === 'dark' ? '#181b20' : '#ffffff');
           var colorSchemeMeta = document.querySelector('meta[name="color-scheme"]');
           if (colorSchemeMeta) colorSchemeMeta.setAttribute('content', theme);
           // Apply dark theme to fallback if needed

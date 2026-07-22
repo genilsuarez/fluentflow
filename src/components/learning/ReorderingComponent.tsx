@@ -150,6 +150,13 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
         return;
       }
 
+      // Enter -> check only when every word has left the bank
+      if (e.key === 'Enter' && !e.ctrlKey && !e.metaKey && availableWords.length === 0) {
+        e.preventDefault();
+        handleCheck();
+        return;
+      }
+
       // Ctrl+Enter -> check answer (when at least one word is placed)
       if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) {
         e.preventDefault();

@@ -149,7 +149,7 @@ html.dark .completion-component__tip-text {
   line-height: 1.5;
   margin-bottom: 0;
   padding: var(--lp-space-sm) var(--lp-space-md);
-  background: linear-gradient(to right, #faf7f2, #f5f1eb);
+  background: linear-gradient(to right, var(--lp-bg-paper), var(--lp-surface-sunken));
   border-radius: var(--lp-radius-lg);
   border: 1px solid var(--theme-border-primary, #e8e0d4);
   box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);

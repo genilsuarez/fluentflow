@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { X, Gamepad2, Palette, WifiOff, Sun, Moon, Wrench, Shuffle } from 'lucide-react';
+import { X, Gamepad2, Palette, WifiOff, Wrench, Shuffle } from 'lucide-react';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useTranslation } from '../../utils/i18n';
 import { validateGameSettings } from '../../utils/inputValidation';
@@ -26,7 +26,6 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
   onClose,
 }) => {
   const {
-    theme,
     language,
     level,
     developmentMode,
@@ -34,7 +33,6 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
     gameSettings,
     offlineEnabled,
     downloadedLevels,
-    setTheme,
     setLanguage,
     setLevel,
     setDevelopmentMode,
@@ -63,7 +61,6 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
   useEscapeKey(isOpen && !isModalOpen, onClose);
 
   // Local state for editing
-  const [localTheme, setLocalTheme] = useState(theme);
   const [localLanguage, setLocalLanguage] = useState(language);
   const [localLevel, setLocalLevel] = useState(level);
   const [localDevelopmentMode, setLocalDevelopmentMode] = useState(developmentMode);
@@ -79,7 +76,6 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
   // Reset local state when modal opens
   useEffect(() => {
     if (isOpen) {
-      setLocalTheme(theme);
       setLocalLanguage(language);
       setLocalLevel(level);
       setLocalDevelopmentMode(developmentMode);
@@ -96,12 +92,11 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
       // Reset download manager modal state when main modal closes
       setIsModalOpen(false);
     }
-  }, [isOpen, theme, language, level, developmentMode, randomizeItems, gameSettings]);
+  }, [isOpen, language, level, developmentMode, randomizeItems, gameSettings]);
 
   // Check for changes
   useEffect(() => {
     const changed =
-      localTheme !== theme ||
       localLanguage !== language ||
       localLevel !== level ||
       localDevelopmentMode !== developmentMode ||
@@ -109,13 +104,11 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
       JSON.stringify(localGameSettings) !== JSON.stringify(gameSettings);
     setHasChanges(changed);
   }, [
-    localTheme,
     localLanguage,
     localLevel,
     localDevelopmentMode,
     localRandomizeItems,
     localGameSettings,
-    theme,
     language,
     level,
     developmentMode,
@@ -246,7 +239,6 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
     const validatedSettings = validateGameSettings(localGameSettings);
 
     // Apply all changes
-    setTheme(localTheme);
     setLanguage(localLanguage);
     setLevel(localLevel);
     setDevelopmentMode(localDevelopmentMode);
@@ -329,33 +321,6 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
             {activeTab === 'general' && (
               <div className="compact-settings__section">
                 <ul className="compact-settings__list">
-                  <li className="compact-settings__row">
-                    <span className="compact-settings__row-label">{t('settings.theme')}</span>
-                    <div
-                      className="compact-settings__segmented"
-                      role="group"
-                      aria-label={t('settings.theme')}
-                    >
-                      <button
-                        type="button"
-                        className={`compact-settings__segment${localTheme === 'light' ? ' compact-settings__segment--active' : ''}`}
-                        aria-pressed={localTheme === 'light'}
-                        onClick={() => setLocalTheme('light')}
-                      >
-                        <Sun size={14} aria-hidden="true" />
-                        {t('settings.light')}
-                      </button>
-                      <button
-                        type="button"
-                        className={`compact-settings__segment${localTheme === 'dark' ? ' compact-settings__segment--active' : ''}`}
-                        aria-pressed={localTheme === 'dark'}
-                        onClick={() => setLocalTheme('dark')}
-                      >
-                        <Moon size={14} aria-hidden="true" />
-                        {t('settings.dark')}
-                      </button>
-                    </div>
-                  </li>
                   <li className="compact-settings__row">
                     <span className="compact-settings__row-label">{t('settings.language')}</span>
                     <div

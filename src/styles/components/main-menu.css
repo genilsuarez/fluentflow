@@ -1119,11 +1119,23 @@ html.dark .main-menu__grid::-webkit-scrollbar-thumb:hover {
 
 /* Z-Index Hierarchy Fix - Ensure modals are above menu content */
 .main-menu,
-.main-menu *,
+.main-menu *:not(.unified-filter):not(.unified-filter *),
 .module-card,
 .module-card * {
   /* Ensure menu content stays below modals */
   z-index: auto;
+}
+
+body.lp-filter-open #root {
+  isolation: isolate;
+  z-index: 0;
+}
+
+body.lp-filter-open .module-card__status-indicator,
+body.lp-filter-open .module-card__status-icon,
+body.lp-filter-open .module-card__status,
+body.lp-filter-open .module-card__dependency-warning {
+  z-index: 0;
 }
 
 .main-menu__header,

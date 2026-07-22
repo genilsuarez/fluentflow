@@ -5,12 +5,12 @@
 
 export const THEME_COLORS = {
   light: {
-    metaThemeColor: '#faf7f2',
-    bgPrimary: '#faf7f2',
+    metaThemeColor: '#ffffff',
+    bgPrimary: '#ffffff',
     bgSecondary: '#ffffff',
     textPrimary: '#2c2418',
-    textSecondary: '#5e5041',
-    borderPrimary: '#e8e0d4',
+    textSecondary: '#574a3c',
+    borderPrimary: '#e2dad0',
     iconColor: 'currentColor',
   },
   dark: {

@@ -221,9 +221,30 @@ export const Header: React.FC<HeaderProps> = () => {
             </>
           )}
         </div>
-        {/* Center Section: Score Display */}
+        {/* Center Section: mobile brand title (menu) or score (desktop / learning) */}
         <div className="header-redesigned__center">
-          <ScoreDisplay />
+          {!isInGame && (
+            <h1 className="header-redesigned__mobile-title">
+              {previousMenuContext === 'list' ? (
+                language === 'es' ? (
+                  <>
+                    Ejercicios <em>guiados</em>
+                  </>
+                ) : (
+                  <>
+                    Guided <em>exercises</em>
+                  </>
+                )
+              ) : (
+                <>
+                  Fluent<em>Flow</em>
+                </>
+              )}
+            </h1>
+          )}
+          <div className="header-redesigned__score-wrap">
+            <ScoreDisplay />
+          </div>
           {showBadge && (
             <div
               className={`header__offline-badge${isOnline ? ' header__offline-badge--hidden' : ''}`}

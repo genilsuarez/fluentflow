@@ -678,6 +678,10 @@ html.dark .progression-dashboard__expand-icon {
   color: var(--theme-text-secondary, #d4cabb);
 }
 
+html.dark .progression-dashboard__level-badge {
+  color: var(--theme-text-primary, #ffffff);
+}
+
 html.dark .progression-dashboard__unit-stats {
   color: var(--theme-text-primary, #ffffff);
   background: var(--theme-bg-elevated, #2c2418);
@@ -842,7 +846,8 @@ html.dark .progression-dashboard__module--locked .progression-dashboard__level-b
 .progression-dashboard--dark-theme .progression-dashboard__unit-stats,
 .progression-dashboard--dark-theme .progression-dashboard__module-name,
 .progression-dashboard--dark-theme .progression-dashboard__unit-next-label,
-.progression-dashboard--dark-theme .progression-dashboard__next-label {
+.progression-dashboard--dark-theme .progression-dashboard__next-label,
+.progression-dashboard--dark-theme .progression-dashboard__level-badge {
   color: var(--theme-text-primary, #ffffff);
 }
 

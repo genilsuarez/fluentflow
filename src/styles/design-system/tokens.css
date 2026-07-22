@@ -11,21 +11,21 @@
   color-scheme: light;
 
   /* ─── Surface & Paper ─── */
-  --lp-bg: #faf7f2;
-  --lp-bg-paper: #f5f1eb;
+  --lp-bg: #ffffff;
+  --lp-bg-paper: #f7f4ef;
   --lp-surface: #ffffff;
   --lp-surface-raised: #ffffff;
-  --lp-surface-sunken: #f0ede7;
+  --lp-surface-sunken: #f3f0ea;
 
   /* ─── Borders ─── */
-  --lp-border: #e8e0d4;
-  --lp-border-strong: #d4cabb;
-  --lp-border-subtle: #f0ebe3;
+  --lp-border: #e2dad0;
+  --lp-border-strong: #cfc4b6;
+  --lp-border-subtle: #eeeae4;
 
   /* ─── Ink (Text) ─── */
   --lp-ink: #2c2418;
-  --lp-ink-soft: #5e5041;
-  --lp-muted: #9c8e7c;
+  --lp-ink-soft: #574a3c;
+  --lp-muted: #8a7d6e;
   --lp-ink-inverse: #ffffff;
 
   /* ─── Accent — vivid blue (alineado con --lp-hero-blue de las tarjetas de progreso) ─── */
@@ -75,11 +75,11 @@
   --lp-hero-blue-light: #2563eb;
 
   /* ─── Elevation (Shadows) ─── */
-  --lp-shadow-xs: 0 1px 2px rgba(44, 36, 24, 0.03);
-  --lp-shadow-sm: 0 1px 3px rgba(44, 36, 24, 0.04), 0 4px 10px rgba(44, 36, 24, 0.04);
-  --lp-shadow-md: 0 4px 12px rgba(44, 36, 24, 0.06), 0 2px 4px rgba(44, 36, 24, 0.04);
-  --lp-shadow-lg: 0 8px 28px rgba(44, 36, 24, 0.1), 0 2px 6px rgba(44, 36, 24, 0.05);
-  --lp-shadow-hover: 0 8px 28px rgba(44, 36, 24, 0.12), 0 2px 6px rgba(44, 36, 24, 0.06);
+  --lp-shadow-xs: 0 1px 2px rgba(44, 36, 24, 0.05);
+  --lp-shadow-sm: 0 2px 6px rgba(44, 36, 24, 0.06), 0 4px 14px rgba(44, 36, 24, 0.05);
+  --lp-shadow-md: 0 4px 16px rgba(44, 36, 24, 0.09), 0 2px 6px rgba(44, 36, 24, 0.05);
+  --lp-shadow-lg: 0 10px 32px rgba(44, 36, 24, 0.11), 0 3px 8px rgba(44, 36, 24, 0.06);
+  --lp-shadow-hover: 0 12px 38px rgba(44, 36, 24, 0.14), 0 4px 10px rgba(44, 36, 24, 0.07);
 
   /* ─── Shape ─── */
   --lp-radius-xs: 4px;
@@ -151,10 +151,10 @@
   --lp-score-value-size: 1.125rem;
   --lp-score-value-weight: 700;
   --lp-score-bg: #ffffff;
-  --lp-score-border: #e5e7eb;
+  --lp-score-border: #e2dad0;
   --lp-score-shadow: 0 0 0 1px rgba(15, 23, 42, 0.04), 0 1px 2px rgba(15, 23, 42, 0.06);
   --lp-score-value-color: #2c2418;
-  --lp-score-label-color: #9c8e7c;
+  --lp-score-label-color: #8a7d6e;
   --lp-score-icon-color: #2563eb;
   --lp-score-success-color: #27865a;
   --lp-score-error-color: #c0392b;
