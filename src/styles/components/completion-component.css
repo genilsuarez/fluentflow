@@ -326,25 +326,41 @@ html.dark .completion-component__input--neutral:focus {
 
 /* === RESULT SECTION === */
 .completion-component__result-container {
+  display: grid;
+  grid-template-rows: 0fr;
   margin-top: var(--lp-space-sm);
   overflow: hidden;
+  max-height: none;
   transition:
-    max-height 0.3s ease,
-    opacity 0.3s ease;
+    grid-template-rows 0.22s ease,
+    opacity 0.18s ease;
+  opacity: 0;
   width: 100%;
   box-sizing: border-box;
 }
 
 .completion-component__result-container--hidden {
-  max-height: 0;
+  max-height: none;
   opacity: 0;
 }
 
 .completion-component__result-container--visible {
-  max-height: 16rem;
+  grid-template-rows: 1fr;
+  max-height: none;
   opacity: 1;
   overflow-y: auto;
   padding-top: 0.25rem;
+}
+
+.completion-component__result-container > .completion-component__result {
+  overflow: hidden;
+  min-height: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .completion-component__result-container {
+    transition: none;
+  }
 }
 
 .completion-component__result {

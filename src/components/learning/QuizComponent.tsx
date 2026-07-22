@@ -3,6 +3,7 @@ import { CheckCircle, XCircle, ArrowRight, RotateCcw } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { conditionalShuffle } from '../../utils/randomUtils';
+import { EXERCISE_FEEDBACK_COLLAPSE_MS } from '../../utils/exerciseTransition';
 import { ContentAdapter } from '../../utils/contentAdapter';
 import ContentRenderer from '../ui/ContentRenderer';
 import LearningProgressHeader from '../ui/LearningProgressHeader';
@@ -144,9 +145,11 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
 
   const handleNext = useCallback(() => {
     if (currentIndex < processedQuestions.length - 1) {
-      setCurrentIndex(currentIndex + 1);
-      setSelectedAnswer(null);
       setShowResult(false);
+      setTimeout(() => {
+        setCurrentIndex(prev => prev + 1);
+        setSelectedAnswer(null);
+      }, EXERCISE_FEEDBACK_COLLAPSE_MS);
     } else {
       finishExercise();
     }

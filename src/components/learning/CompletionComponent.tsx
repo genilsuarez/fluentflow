@@ -3,6 +3,10 @@ import { Check, X, ArrowRight, RotateCcw } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { conditionalShuffle } from '../../utils/randomUtils';
 import { matchesAnswer, isTenseError, isParticleError } from '../../utils/answerUtils';
+import {
+  EXERCISE_ENTER_GUARD_MS,
+  EXERCISE_FEEDBACK_COLLAPSE_MS,
+} from '../../utils/exerciseTransition';
 import '../../styles/components/completion-component.css';
 import '../../styles/components/editable-input.css';
 // BEM classes applied dynamically via .replace(): 'editable-input--correct' 'editable-input--incorrect' 'editable-input--neutral' 'editable-input--disabled'
@@ -90,19 +94,18 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
 
   const handleNext = useCallback(() => {
     if (currentIndex < processedExercises.length - 1) {
-      // Imperatively clear the contentEditable div BEFORE state updates
-      // so the old text doesn't carry over (isFocused guard in useEffect would skip it)
-      inputRef.current?.clear();
-      setCurrentIndex(currentIndex + 1);
-      setAnswer('');
-      setShowResult(false);
-      // Block Enter for a short window so the keyup of the same Enter
-      // doesn't immediately trigger checkAnswer on the new question
       ignoreEnterRef.current = true;
+      setShowResult(false);
+
       setTimeout(() => {
-        ignoreEnterRef.current = false;
-        requestAnimationFrame(() => inputRef.current?.focus());
-      }, 150);
+        inputRef.current?.clear();
+        setAnswer('');
+        setCurrentIndex(prev => prev + 1);
+        setTimeout(() => {
+          ignoreEnterRef.current = false;
+          requestAnimationFrame(() => inputRef.current?.focus());
+        }, EXERCISE_ENTER_GUARD_MS);
+      }, EXERCISE_FEEDBACK_COLLAPSE_MS);
     } else {
       finishExercise();
     }

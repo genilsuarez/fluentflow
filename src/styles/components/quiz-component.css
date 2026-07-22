@@ -231,22 +231,38 @@
 
 /* === QUIZ EXPLANATION === */
 .quiz-component__explanation-container {
+  display: grid;
+  grid-template-rows: 0fr;
   overflow: hidden;
+  max-height: none;
   transition:
-    max-height 0.3s ease,
-    opacity 0.3s ease;
+    grid-template-rows 0.22s ease,
+    opacity 0.18s ease;
+  opacity: 0;
 }
 
 .quiz-component__explanation-container--hidden {
-  max-height: 0;
+  max-height: none;
   opacity: 0;
 }
 
 .quiz-component__explanation-container--visible {
-  max-height: 20rem;
+  grid-template-rows: 1fr;
+  max-height: none;
   opacity: 1;
   overflow-y: auto;
   padding-top: var(--lp-space-xs);
+}
+
+.quiz-component__explanation-container > .quiz-component__explanation {
+  overflow: hidden;
+  min-height: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .quiz-component__explanation-container {
+    transition: none;
+  }
 }
 
 .quiz-component__explanation {
@@ -262,6 +278,137 @@
   justify-content: center;
   width: 100%;
   box-sizing: border-box;
+}
+
+/* === INLINE FEEDBACK (dictation, listen-complete) === */
+.quiz-component__inline-feedback {
+  width: 100%;
+  max-width: 480px;
+  margin: 0.25rem auto 0;
+  padding-top: var(--lp-space-sm);
+  border-top: 1px solid var(--lp-border);
+}
+
+.quiz-component__inline-feedback-row {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.35rem;
+  margin: 0;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--lp-muted);
+}
+
+.quiz-component__inline-feedback-icon {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.quiz-component__inline-feedback--correct .quiz-component__inline-feedback-icon {
+  color: var(--lp-success);
+}
+
+.quiz-component__inline-feedback--incorrect .quiz-component__inline-feedback-icon {
+  color: var(--lp-error);
+}
+
+.quiz-component__inline-feedback-label {
+  font-weight: 600;
+}
+
+.quiz-component__inline-feedback--correct .quiz-component__inline-feedback-label {
+  color: var(--lp-success);
+}
+
+.quiz-component__inline-feedback--incorrect .quiz-component__inline-feedback-label {
+  color: var(--lp-error);
+}
+
+.quiz-component__inline-feedback-sep {
+  color: var(--lp-border-strong);
+}
+
+.quiz-component__inline-feedback-answer {
+  color: var(--lp-ink);
+  font-weight: 500;
+}
+
+.quiz-component__inline-feedback-note {
+  margin: 0.35rem 0 0;
+  font-size: 0.75rem;
+  line-height: 1.45;
+  color: var(--lp-muted);
+}
+
+html.dark .quiz-component__inline-feedback-answer {
+  color: var(--theme-text-primary, #e5e7eb);
+}
+
+/* === TEXT INPUT (dictation, listen-complete) === */
+.quiz-component__text-input-wrap {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.quiz-component__text-input-wrap--narrow {
+  max-width: 320px;
+}
+
+.quiz-component__text-input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  font-size: 1rem;
+  line-height: 1.4;
+  border-radius: var(--lp-radius-md, 0.5rem);
+  border: 1px solid var(--lp-border);
+  background: var(--theme-bg-elevated, #fff);
+  color: var(--lp-ink);
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.quiz-component__text-input--center {
+  padding: 0.75rem 0.875rem;
+  text-align: center;
+}
+
+.quiz-component__text-input:focus {
+  border-color: color-mix(in srgb, var(--lp-primary) 55%, var(--lp-border));
+}
+
+.quiz-component__text-input--correct {
+  border-color: color-mix(in srgb, var(--lp-success) 45%, var(--lp-border));
+  color: color-mix(in srgb, var(--lp-success) 70%, var(--lp-ink));
+}
+
+.quiz-component__text-input--incorrect {
+  border-color: color-mix(in srgb, var(--lp-error) 45%, var(--lp-border));
+  color: color-mix(in srgb, var(--lp-error) 70%, var(--lp-ink));
+}
+
+.quiz-component__text-input:disabled {
+  cursor: default;
+  opacity: 1;
+}
+
+html.dark .quiz-component__text-input {
+  background: var(--theme-bg-elevated, #1f2937);
+  color: var(--theme-text-primary, #f3f4f6);
+}
+
+html.dark .quiz-component__text-input--correct {
+  border-color: color-mix(in srgb, var(--lp-success) 35%, var(--lp-border));
+  color: color-mix(in srgb, var(--lp-success) 65%, var(--theme-text-primary, #e5e7eb));
+}
+
+html.dark .quiz-component__text-input--incorrect {
+  border-color: color-mix(in srgb, var(--lp-error) 35%, var(--lp-border));
+  color: color-mix(in srgb, var(--lp-error) 65%, var(--theme-text-primary, #e5e7eb));
 }
 
 .quiz-component__explanation-title {

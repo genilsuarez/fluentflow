@@ -13,6 +13,10 @@ import { EditableInput } from '../ui/EditableInput';
 import type { EditableInputHandle } from '../ui/EditableInput';
 import { ContentAdapter } from '../../utils/contentAdapter';
 import { matchesAnswer } from '../../utils/answerUtils';
+import {
+  EXERCISE_ENTER_GUARD_MS,
+  EXERCISE_FEEDBACK_COLLAPSE_MS,
+} from '../../utils/exerciseTransition';
 import type { LearningModule, ErrorCorrectionData } from '../../types';
 import { GameControlsExitButton } from '../ui/GameControlsExitButton';
 
@@ -86,15 +90,18 @@ const ErrorCorrectionComponent: React.FC<ErrorCorrectionComponentProps> = ({ mod
 
   const handleNext = useCallback(() => {
     if (currentIndex < processedExercises.length - 1) {
-      inputRef.current?.clear();
-      setCurrentIndex(currentIndex + 1);
-      setAnswer('');
-      setShowResult(false);
       ignoreEnterRef.current = true;
+      setShowResult(false);
+
       setTimeout(() => {
-        ignoreEnterRef.current = false;
-        requestAnimationFrame(() => inputRef.current?.focus());
-      }, 150);
+        inputRef.current?.clear();
+        setAnswer('');
+        setCurrentIndex(prev => prev + 1);
+        setTimeout(() => {
+          ignoreEnterRef.current = false;
+          requestAnimationFrame(() => inputRef.current?.focus());
+        }, EXERCISE_ENTER_GUARD_MS);
+      }, EXERCISE_FEEDBACK_COLLAPSE_MS);
     } else {
       finishExercise();
     }
@@ -163,7 +170,7 @@ const ErrorCorrectionComponent: React.FC<ErrorCorrectionComponentProps> = ({ mod
         }
       />
 
-      <div className="error-correction__exercise-card" key={currentIndex}>
+      <div className="error-correction__exercise-card">
         {/* Streak badge */}
         {streak >= 2 && (
           <div className="error-correction__streak" key={streak}>

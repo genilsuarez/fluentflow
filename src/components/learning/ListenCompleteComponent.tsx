@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { Volume2, CheckCircle, XCircle, ArrowRight, RotateCcw } from 'lucide-react';
+import { Volume2, Check, X, ArrowRight, RotateCcw } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { conditionalShuffle } from '../../utils/randomUtils';
 import { matchesAnswer } from '../../utils/answerUtils';
+import { EXERCISE_FEEDBACK_COLLAPSE_MS } from '../../utils/exerciseTransition';
 import { ContentAdapter } from '../../utils/contentAdapter';
 import ContentRenderer from '../ui/ContentRenderer';
 import LearningProgressHeader from '../ui/LearningProgressHeader';
@@ -106,10 +107,12 @@ const ListenCompleteComponent: React.FC<ListenCompleteComponentProps> = ({ modul
 
   const handleNext = useCallback(() => {
     if (currentIndex < items.length - 1) {
-      setCurrentIndex(currentIndex + 1);
-      setUserInput('');
       setShowResult(false);
-      setIsCorrect(false);
+      setTimeout(() => {
+        setCurrentIndex(prev => prev + 1);
+        setUserInput('');
+        setIsCorrect(false);
+      }, EXERCISE_FEEDBACK_COLLAPSE_MS);
     } else {
       finishExercise();
     }
@@ -251,7 +254,7 @@ const ListenCompleteComponent: React.FC<ListenCompleteComponentProps> = ({ modul
         )}
 
         {/* Input */}
-        <div style={{ width: '100%', maxWidth: '320px', margin: '0 auto' }}>
+        <div className="quiz-component__text-input-wrap quiz-component__text-input-wrap--narrow">
           <input
             ref={inputRef}
             type="text"
@@ -262,57 +265,48 @@ const ListenCompleteComponent: React.FC<ListenCompleteComponentProps> = ({ modul
             autoComplete="off"
             autoCorrect="off"
             spellCheck={false}
-            style={{
-              width: '100%',
-              padding: '12px 14px',
-              fontSize: '1rem',
-              textAlign: 'center',
-              borderRadius: '0.5rem',
-              border: `2px solid ${showResult ? (isCorrect ? '#10b981' : '#ef4444') : 'var(--theme-border, #e5e7eb)'}`,
-              background: isDark ? 'var(--theme-bg-elevated, #1f2937)' : '#fff',
-              color: isDark ? '#fff' : '#111827',
-              outline: 'none',
-              transition: 'border-color 0.2s',
-            }}
+            className={`quiz-component__text-input quiz-component__text-input--center${
+              showResult
+                ? isCorrect
+                  ? ' quiz-component__text-input--correct'
+                  : ' quiz-component__text-input--incorrect'
+                : ''
+            }`}
           />
         </div>
 
         {/* Feedback */}
         {showResult && (
           <div
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              gap: '0.5rem',
-            }}
+            className={`quiz-component__inline-feedback ${
+              isCorrect
+                ? 'quiz-component__inline-feedback--correct'
+                : 'quiz-component__inline-feedback--incorrect'
+            }`}
           >
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+            <p className="quiz-component__inline-feedback-row">
               {isCorrect ? (
-                <CheckCircle size={18} color="#10b981" />
+                <Check className="quiz-component__inline-feedback-icon" aria-hidden="true" />
               ) : (
-                <XCircle size={18} color="#ef4444" />
+                <X className="quiz-component__inline-feedback-icon" aria-hidden="true" />
               )}
-              <span
-                style={{
-                  fontWeight: 600,
-                  fontSize: '0.85rem',
-                  color: isCorrect ? '#10b981' : '#ef4444',
-                }}
-              >
-                {isCorrect ? 'Correct!' : `Answer: ${currentItem.correct}`}
+              <span className="quiz-component__inline-feedback-label">
+                {isCorrect ? t('common.correct') : t('common.incorrect')}
               </span>
-            </div>
-            {currentItem.explanation && (
-              <p
-                style={{
-                  fontSize: '0.75rem',
-                  color: 'var(--theme-text-tertiary)',
-                  textAlign: 'center',
-                }}
-              >
-                {currentItem.explanation}
-              </p>
+              {!isCorrect && (
+                <>
+                  <span className="quiz-component__inline-feedback-sep" aria-hidden="true">
+                    —
+                  </span>
+                  <span>{t('learning.answer')}</span>
+                  <span className="quiz-component__inline-feedback-answer">
+                    {currentItem.correct}
+                  </span>
+                </>
+              )}
+            </p>
+            {!isCorrect && currentItem.explanation && (
+              <p className="quiz-component__inline-feedback-note">{currentItem.explanation}</p>
             )}
           </div>
         )}

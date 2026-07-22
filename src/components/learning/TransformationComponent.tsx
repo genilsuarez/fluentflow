@@ -13,6 +13,10 @@ import { EditableInput } from '../ui/EditableInput';
 import type { EditableInputHandle } from '../ui/EditableInput';
 import { ContentAdapter } from '../../utils/contentAdapter';
 import { matchesAnswer } from '../../utils/answerUtils';
+import {
+  EXERCISE_ENTER_GUARD_MS,
+  EXERCISE_FEEDBACK_COLLAPSE_MS,
+} from '../../utils/exerciseTransition';
 import type { LearningModule, TransformationData } from '../../types';
 import { GameControlsExitButton } from '../ui/GameControlsExitButton';
 
@@ -81,15 +85,18 @@ const TransformationComponent: React.FC<TransformationComponentProps> = ({ modul
 
   const handleNext = useCallback(() => {
     if (currentIndex < processedExercises.length - 1) {
-      inputRef.current?.clear();
-      setCurrentIndex(currentIndex + 1);
-      setAnswer('');
-      setShowResult(false);
       ignoreEnterRef.current = true;
+      setShowResult(false);
+
       setTimeout(() => {
-        ignoreEnterRef.current = false;
-        requestAnimationFrame(() => inputRef.current?.focus());
-      }, 150);
+        inputRef.current?.clear();
+        setAnswer('');
+        setCurrentIndex(prev => prev + 1);
+        setTimeout(() => {
+          ignoreEnterRef.current = false;
+          requestAnimationFrame(() => inputRef.current?.focus());
+        }, EXERCISE_ENTER_GUARD_MS);
+      }, EXERCISE_FEEDBACK_COLLAPSE_MS);
     } else {
       finishExercise();
     }
@@ -156,7 +163,7 @@ const TransformationComponent: React.FC<TransformationComponentProps> = ({ modul
         helpText={showResult ? t('learning.pressEnterNext') : t('learning.transformInstruction')}
       />
 
-      <div className="transformation__exercise-card" key={currentIndex}>
+      <div className="transformation__exercise-card">
         {/* Streak badge */}
         {streak >= 2 && (
           <div className="transformation__streak" key={streak}>

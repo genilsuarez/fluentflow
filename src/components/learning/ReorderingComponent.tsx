@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { Check, ArrowRight, RotateCcw, Eye, Eraser } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { prepareWords, validateReordering, moveWord } from './reorderingUtils';
+import { EXERCISE_FEEDBACK_COLLAPSE_MS } from '../../utils/exerciseTransition';
 import LearningProgressHeader from '../ui/LearningProgressHeader';
 import ExerciseResultScreen from '../ui/ExerciseResultScreen';
 import type { LearningModule, ReorderingData } from '../../types';
@@ -125,7 +126,10 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
 
   const handleNext = useCallback(() => {
     if (currentIndex < exercises.length - 1) {
-      setCurrentIndex(currentIndex + 1);
+      setShowResult(false);
+      setTimeout(() => {
+        setCurrentIndex(prev => prev + 1);
+      }, EXERCISE_FEEDBACK_COLLAPSE_MS);
     } else {
       finishExercise();
     }

@@ -6,63 +6,167 @@
  * The container border is preserved (part of the base design).
  */
 
-/* === SENTENCE — neutral, no color accent === */
+/* === CARD ZONES — subtle horizontal dividers === */
+.word-formation__exercise-card .word-formation__hint {
+  margin-bottom: 0.25rem;
+  padding-top: var(--lp-space-sm);
+}
+
+.word-formation__exercise-card .word-formation__root-word {
+  margin-bottom: 0;
+  padding-bottom: var(--lp-space-sm);
+}
+
+/* === SENTENCE — neutral, inline blank === */
 .word-formation__sentence {
   background-color: transparent;
   border: none;
-  border-radius: var(--radius-md, 0.375rem);
+  border-top: 1px solid var(--lp-border);
+  border-radius: 0;
   padding: var(--lp-space-sm) var(--lp-space-md);
-  margin-bottom: var(--lp-space-sm);
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: var(--lp-text-base);
   font-weight: 500;
   color: var(--theme-text-primary, #374151);
-  line-height: 1.5;
+  line-height: 1.65;
 }
+.word-formation__sentence-text {
+  color: inherit;
+}
+.word-formation__sentence .editable-input--inline {
+  min-height: 0;
+  width: var(--dynamic-width, 6ch);
+  min-width: 4ch;
+  max-width: min(100%, 28ch);
+  margin: 0 0.12em;
+  padding: 0 0.1em 0 1px;
+  border: none;
+  border-bottom: 2px solid color-mix(in srgb, var(--lp-muted) 55%, transparent);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: inherit;
+  font-weight: inherit;
+  line-height: 1.65;
+  vertical-align: baseline;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.word-formation__sentence .editable-input--inline:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.word-formation__sentence .editable-input--inline.editable-input--neutral {
+  border-bottom-style: dashed;
+  border-bottom-color: color-mix(in srgb, var(--lp-muted) 65%, transparent);
+  background: transparent;
+}
+
+.word-formation__sentence .editable-input--inline.editable-input--neutral:focus {
+  border-bottom-style: solid;
+  border-bottom-color: var(--lp-primary);
+  background: transparent;
+  box-shadow: none;
+}
+
+.word-formation__sentence .editable-input--inline.editable-input--correct {
+  border-bottom-style: solid;
+  border-bottom-color: color-mix(in srgb, var(--lp-success) 75%, transparent);
+  color: var(--lp-success);
+  background: transparent;
+  box-shadow: none;
+}
+
+.word-formation__sentence .editable-input--inline.editable-input--incorrect {
+  border-bottom-style: solid;
+  border-bottom-color: color-mix(in srgb, var(--lp-error) 75%, transparent);
+  color: var(--lp-error);
+  background: transparent;
+  box-shadow: none;
+}
+
+.word-formation__sentence .editable-input--inline[contenteditable='false'] {
+  background: transparent;
+  cursor: default;
+}
+
+.word-formation__sentence .editable-input--inline[data-empty='true']::before {
+  font-style: italic;
+  opacity: 0.5;
+}
+
 html.dark .word-formation__sentence {
   background-color: transparent;
   border: none;
   color: var(--theme-text-primary, #e5e7eb);
 }
 
-/* === ROOT WORD — neutral pill, no purple/indigo === */
+html.dark .word-formation__sentence .editable-input--inline.editable-input--neutral {
+  border-bottom-color: color-mix(in srgb, var(--lp-muted) 80%, transparent);
+  background: transparent;
+}
+
+html.dark .word-formation__sentence .editable-input--inline.editable-input--neutral:focus {
+  border-bottom-color: var(--lp-accent-text);
+  box-shadow: none;
+}
+
+html.dark .word-formation__sentence .editable-input--inline.editable-input--correct {
+  border-bottom-color: color-mix(in srgb, var(--lp-success) 65%, transparent);
+  color: color-mix(in srgb, var(--lp-success) 85%, var(--lp-ink));
+}
+
+html.dark .word-formation__sentence .editable-input--inline.editable-input--incorrect {
+  border-bottom-color: color-mix(in srgb, var(--lp-error) 65%, transparent);
+  color: color-mix(in srgb, var(--lp-error) 85%, var(--lp-ink));
+}
+
+html.dark .word-formation__sentence .editable-input--inline[contenteditable='false'] {
+  background: transparent;
+}
+
+/* === ROOT WORD — minimal inline label + word === */
 .word-formation__root-word {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--lp-space-sm);
+  flex-wrap: wrap;
+  align-items: baseline;
   margin-bottom: var(--lp-space-sm);
-  padding: var(--lp-space-sm) var(--lp-space-md);
-  background: var(--theme-bg-subtle, #f9fafb);
-  border: 1px solid var(--theme-border-soft, #e5e7eb);
-  border-radius: var(--radius-md, 0.375rem);
-}
-html.dark .word-formation__root-word {
-  background: rgba(255, 255, 255, 0.04);
-  border-color: rgba(255, 255, 255, 0.1);
+  padding: 0 var(--lp-space-md);
+  font-size: 0.85rem;
+  line-height: 1.5;
 }
 .word-formation__root-word-label {
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--theme-text-secondary, #6b7280);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-weight: 500;
+  color: var(--lp-muted);
 }
-html.dark .word-formation__root-word-label {
-  color: var(--theme-text-secondary, #9ca3af);
+.word-formation__root-word-label::after {
+  content: ' · ';
+  color: var(--lp-border-strong);
+  font-weight: 400;
 }
 .word-formation__root-word-value {
-  font-size: 1rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
-  color: var(--theme-text-primary, #1f2937);
-  background-color: rgba(0, 0, 0, 0.05);
-  padding: 0.2rem 0.6rem;
-  border-radius: var(--lp-radius-full);
+  letter-spacing: 0.02em;
+  color: var(--lp-ink);
   text-transform: uppercase;
 }
-html.dark .word-formation__root-word-value {
-  color: #f3f4f6;
-  background-color: rgba(255, 255, 255, 0.08);
+
+/* === FEEDBACK ZONE === */
+.word-formation__result-container--visible {
+  border-top: 1px solid var(--lp-border);
+  padding: var(--lp-space-sm) var(--lp-space-md) 0;
+}
+
+.word-formation__result-container--visible .word-formation__result {
+  padding-top: 0;
+}
+
+.word-formation__feedback-row + .word-formation__explanation {
+  margin-top: var(--lp-space-sm);
+  padding-top: var(--lp-space-sm);
+  border-top: 1px solid color-mix(in srgb, var(--lp-border) 70%, transparent);
 }
 
 /* === EXPLANATION — neutral accent === */
@@ -79,16 +183,14 @@ html.dark .word-formation__explanation {
 /* === COMPACT MOBILE === */
 @media (max-height: 700px) {
   .word-formation__sentence {
-    padding: 0.4rem 0.6rem;
-    margin-bottom: 0.4rem;
+    padding: 0.5rem 0.6rem;
     font-size: 0.95rem;
   }
   .word-formation__root-word {
-    padding: 0.4rem 0.6rem;
-    margin-bottom: 0.4rem;
+    padding: 0 0.6rem 0.5rem;
+    font-size: 0.8rem;
   }
-  .word-formation__root-word-value {
-    font-size: 0.9rem;
-    padding: 0.15rem 0.5rem;
+  .word-formation__result-container--visible {
+    padding: 0.5rem 0.6rem 0;
   }
 }

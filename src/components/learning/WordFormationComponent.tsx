@@ -13,12 +13,24 @@ import { EditableInput } from '../ui/EditableInput';
 import type { EditableInputHandle } from '../ui/EditableInput';
 import { ContentAdapter } from '../../utils/contentAdapter';
 import { matchesAnswer } from '../../utils/answerUtils';
+import {
+  EXERCISE_ENTER_GUARD_MS,
+  EXERCISE_FEEDBACK_COLLAPSE_MS,
+} from '../../utils/exerciseTransition';
 import type { LearningModule, WordFormationData } from '../../types';
 import { GameControlsExitButton } from '../ui/GameControlsExitButton';
 
 interface WordFormationComponentProps {
   module: LearningModule;
 }
+
+/** Width in `ch` for inline blanks — scales with content, never clips typed text */
+function inlineInputWidthCh(charCount: number, minChars = 5): string {
+  const len = Math.max(charCount, minChars);
+  return `${Math.ceil(len * 1.05 + 2)}ch`;
+}
+
+const BLANK_PATTERN = /_{3,}/;
 
 const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -81,15 +93,19 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
 
   const handleNext = useCallback(() => {
     if (currentIndex < processedExercises.length - 1) {
-      inputRef.current?.clear();
-      setCurrentIndex(currentIndex + 1);
-      setAnswer('');
-      setShowResult(false);
       ignoreEnterRef.current = true;
+      setShowResult(false);
+
+      // Let the feedback zone collapse before swapping exercise content
       setTimeout(() => {
-        ignoreEnterRef.current = false;
-        requestAnimationFrame(() => inputRef.current?.focus());
-      }, 150);
+        inputRef.current?.clear();
+        setAnswer('');
+        setCurrentIndex(prev => prev + 1);
+        setTimeout(() => {
+          ignoreEnterRef.current = false;
+          requestAnimationFrame(() => inputRef.current?.focus());
+        }, EXERCISE_ENTER_GUARD_MS);
+      }, EXERCISE_FEEDBACK_COLLAPSE_MS);
     } else {
       finishExercise();
     }
@@ -146,6 +162,61 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
   const hasAnswer = answer.trim().length > 0;
   const correct = showResult && isCorrectAnswer(answer);
 
+  const renderSentence = () => {
+    if (!currentExercise?.sentence) return null;
+
+    const parts = currentExercise.sentence.split(BLANK_PATTERN);
+    const elements: React.ReactElement[] = [];
+
+    parts.forEach((part, index) => {
+      if (part) {
+        elements.push(
+          <span key={`text-${index}`} className="word-formation__sentence-text">
+            <ContentRenderer content={ContentAdapter.ensureStructured(part, 'quiz')} />
+          </span>
+        );
+      }
+
+      if (index < parts.length - 1) {
+        const isCorrect = showResult && isCorrectAnswer(answer);
+        const isIncorrect = showResult && answer.trim() && !isCorrect;
+
+        let inputClass = ' editable-input--neutral';
+        if (showResult) {
+          if (isCorrect) inputClass = ' editable-input--correct';
+          else if (isIncorrect) inputClass = ' editable-input--incorrect';
+          else inputClass = ' editable-input--disabled';
+        }
+
+        const correctLen = (currentExercise.correct || '').trim().length;
+        const firstLetter = currentExercise.correct?.charAt(0) || '';
+        const placeholderHint = correctLen > 3 && firstLetter ? `${firstLetter}...` : '...';
+
+        const widthSource = showResult
+          ? Math.max(answer.length, correctLen)
+          : Math.max(answer.length, placeholderHint.replace(/\./g, '').length || 3);
+
+        elements.push(
+          <EditableInput
+            key={`input-${index}`}
+            ref={inputRef}
+            value={answer}
+            onChange={setAnswer}
+            disabled={showResult}
+            placeholder={placeholderHint}
+            className={`editable-input editable-input--inline${inputClass}`}
+            style={
+              { '--dynamic-width': inlineInputWidthCh(widthSource) } as React.CSSProperties
+            }
+            autoFocus={!showResult && index === 0}
+          />
+        );
+      }
+    });
+
+    return <>{elements}</>;
+  };
+
   return (
     <div className="word-formation__container">
       <LearningProgressHeader
@@ -158,7 +229,7 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
         }
       />
 
-      <div className="word-formation__exercise-card" key={currentIndex}>
+      <div className="word-formation__exercise-card">
         {/* Streak badge */}
         {streak >= 2 && (
           <div className="word-formation__streak" key={streak}>
@@ -166,20 +237,7 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
           </div>
         )}
 
-        {/* Root word first — then sentence closer to input for easier rewriting */}
-        <div className="word-formation__root-word">
-          <span className="word-formation__root-word-label">{t('learning.rootWord')}</span>
-          <span className="word-formation__root-word-value">{currentExercise.rootWord}</span>
-        </div>
-
-        {/* Sentence with blank */}
-        <h3 className="word-formation__sentence">
-          <ContentRenderer
-            content={ContentAdapter.ensureStructured(currentExercise.sentence, 'quiz')}
-          />
-        </h3>
-
-        {/* Hint */}
+        {/* Hint — first so context is visible before the exercise */}
         {currentExercise.hint && (
           <div className="word-formation__hint">
             <p className="word-formation__hint-text">
@@ -191,32 +249,14 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
           </div>
         )}
 
-        {/* Answer input */}
-        <div
-          className={`word-formation__answer-area${
-            showResult
-              ? correct
-                ? ' word-formation__answer-area--correct'
-                : ' word-formation__answer-area--incorrect'
-              : ''
-          }`}
-        >
-          <EditableInput
-            ref={inputRef}
-            value={answer}
-            onChange={setAnswer}
-            disabled={showResult}
-            placeholder="..."
-            className={`editable-input editable-input--fullwidth word-formation__input${
-              showResult
-                ? correct
-                  ? ' editable-input--correct'
-                  : ' editable-input--incorrect'
-                : ' editable-input--neutral'
-            }`}
-            autoFocus={!showResult}
-          />
+        {/* Root word first — then sentence closer to input for easier rewriting */}
+        <div className="word-formation__root-word">
+          <span className="word-formation__root-word-label">{t('learning.rootWord')}</span>
+          <span className="word-formation__root-word-value">{currentExercise.rootWord}</span>
         </div>
+
+        {/* Sentence with inline blank */}
+        <h3 className="word-formation__sentence">{renderSentence()}</h3>
 
         {/* Result feedback */}
         <div

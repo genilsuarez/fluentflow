@@ -73,22 +73,12 @@ html.dark .error-correction__no-data-text {
   margin: 0;
   width: 100%;
   box-sizing: border-box;
-  animation: input-exercise-slide-in 0.3s ease-out;
+  animation: none;
 }
 html.dark .transformation__exercise-card,
 html.dark .word-formation__exercise-card,
 html.dark .error-correction__exercise-card {
   /* no visual decoration */
-}
-@keyframes input-exercise-slide-in {
-  from {
-    opacity: 0;
-    transform: translateX(24px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
 }
 
 /* === STREAK BADGE === */
@@ -205,23 +195,34 @@ html.dark .error-correction__answer-area--incorrect {
 .transformation__result-container,
 .word-formation__result-container,
 .error-correction__result-container {
+  display: grid;
+  grid-template-rows: 0fr;
   overflow: hidden;
+  max-height: none;
   transition:
-    max-height 0.3s ease,
-    opacity 0.3s ease;
+    grid-template-rows 0.22s ease,
+    opacity 0.18s ease;
+  opacity: 0;
 }
 .transformation__result-container--hidden,
 .word-formation__result-container--hidden,
 .error-correction__result-container--hidden {
-  max-height: 0;
+  max-height: none;
   opacity: 0;
 }
 .transformation__result-container--visible,
 .word-formation__result-container--visible,
 .error-correction__result-container--visible {
-  max-height: 20rem;
+  grid-template-rows: 1fr;
+  max-height: none;
   opacity: 1;
   padding-top: 0.5rem;
+}
+.transformation__result-container > .transformation__result,
+.word-formation__result-container > .word-formation__result,
+.error-correction__result-container > .error-correction__result {
+  overflow: hidden;
+  min-height: 0;
 }
 .transformation__result,
 .word-formation__result,
@@ -308,6 +309,14 @@ html.dark .error-correction__explanation-text {
 .word-formation__explanation-label,
 .error-correction__explanation-label {
   font-weight: 600;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .transformation__result-container,
+  .word-formation__result-container,
+  .error-correction__result-container {
+    transition: none;
+  }
 }
 
 /* === COMPACT MOBILE === */

@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { Volume2, CheckCircle, XCircle, ArrowRight, RotateCcw } from 'lucide-react';
+import { Volume2, Check, X, ArrowRight, RotateCcw } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
-import { useSettingsStore } from '../../stores/settingsStore';
 import { conditionalShuffle } from '../../utils/randomUtils';
 import { matchesAnswer } from '../../utils/answerUtils';
+import { EXERCISE_FEEDBACK_COLLAPSE_MS } from '../../utils/exerciseTransition';
 import LearningProgressHeader from '../ui/LearningProgressHeader';
 import ExerciseResultScreen from '../ui/ExerciseResultScreen';
 import { speak, stopSpeaking, isSpeechAvailable, whenVoicesReady } from '../../utils/speech';
@@ -47,9 +47,6 @@ const DictationComponent: React.FC<DictationComponentProps> = ({ module }) => {
     moduleName: module.name,
     learningMode: 'dictation',
   });
-
-  const { theme } = useSettingsStore();
-  const isDark = theme === 'dark';
 
   const itemsRef = useRef<DictationItem[] | null>(null);
   if (itemsRef.current === null) {
@@ -101,10 +98,12 @@ const DictationComponent: React.FC<DictationComponentProps> = ({ module }) => {
 
   const handleNext = useCallback(() => {
     if (currentIndex < items.length - 1) {
-      setCurrentIndex(currentIndex + 1);
-      setUserInput('');
       setShowResult(false);
-      setIsCorrect(false);
+      setTimeout(() => {
+        setCurrentIndex(prev => prev + 1);
+        setUserInput('');
+        setIsCorrect(false);
+      }, EXERCISE_FEEDBACK_COLLAPSE_MS);
     } else {
       finishExercise();
     }
@@ -231,7 +230,7 @@ const DictationComponent: React.FC<DictationComponentProps> = ({ module }) => {
         )}
 
         {/* Input */}
-        <div style={{ width: '100%', maxWidth: '480px', margin: '0 auto' }}>
+        <div className="quiz-component__text-input-wrap">
           <input
             ref={inputRef}
             type="text"
@@ -242,55 +241,38 @@ const DictationComponent: React.FC<DictationComponentProps> = ({ module }) => {
             autoComplete="off"
             autoCorrect="off"
             spellCheck={false}
-            style={{
-              width: '100%',
-              padding: '14px 16px',
-              fontSize: '1rem',
-              borderRadius: '0.5rem',
-              border: `2px solid ${showResult ? (isCorrect ? 'var(--theme-success, #10b981)' : 'var(--theme-error, #ef4444)') : 'var(--theme-border, #e5e7eb)'}`,
-              background: isDark ? 'var(--theme-bg-elevated, #1f2937)' : '#fff',
-              color: isDark ? '#fff' : '#111827',
-              outline: 'none',
-              transition: 'border-color 0.2s',
-            }}
+            className={`quiz-component__text-input${
+              showResult
+                ? isCorrect
+                  ? ' quiz-component__text-input--correct'
+                  : ' quiz-component__text-input--incorrect'
+                : ''
+            }`}
           />
         </div>
 
         {/* Result feedback */}
         {showResult && (
           <div
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              gap: '0.75rem',
-              width: '100%',
-            }}
+            className={`quiz-component__inline-feedback ${
+              isCorrect
+                ? 'quiz-component__inline-feedback--correct'
+                : 'quiz-component__inline-feedback--incorrect'
+            }`}
           >
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <p className="quiz-component__inline-feedback-row">
               {isCorrect ? (
-                <CheckCircle size={20} color="#10b981" />
+                <Check className="quiz-component__inline-feedback-icon" aria-hidden="true" />
               ) : (
-                <XCircle size={20} color="#ef4444" />
+                <X className="quiz-component__inline-feedback-icon" aria-hidden="true" />
               )}
-              <span style={{ fontWeight: 600, color: isCorrect ? '#10b981' : '#ef4444' }}>
-                {isCorrect ? 'Correct!' : 'Not quite'}
+              <span className="quiz-component__inline-feedback-label">
+                {isCorrect ? t('common.correct') : t('common.incorrect')}
               </span>
-            </div>
-            <p
-              style={{
-                fontSize: '0.9rem',
-                fontWeight: 500,
-                color: isDark ? '#d1d5db' : '#374151',
-                textAlign: 'center',
-                background: isDark ? 'rgba(16,185,129,0.1)' : 'rgba(16,185,129,0.05)',
-                padding: '10px 16px',
-                borderRadius: '0.5rem',
-                width: '100%',
-                maxWidth: '480px',
-              }}
-            >
-              ✓ {currentItem.text}
+              <span className="quiz-component__inline-feedback-sep" aria-hidden="true">
+                ·
+              </span>
+              <span className="quiz-component__inline-feedback-answer">{currentItem.text}</span>
             </p>
           </div>
         )}

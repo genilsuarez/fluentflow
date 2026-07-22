@@ -3,6 +3,7 @@ import { CheckCircle, XCircle, Volume2, ArrowRight, Lightbulb, RotateCcw } from 
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { conditionalShuffle } from '../../utils/randomUtils';
+import { EXERCISE_FEEDBACK_COLLAPSE_MS } from '../../utils/exerciseTransition';
 import { ContentAdapter } from '../../utils/contentAdapter';
 import ContentRenderer from '../ui/ContentRenderer';
 import LearningProgressHeader from '../ui/LearningProgressHeader';
@@ -132,10 +133,12 @@ const ListeningQuizComponent: React.FC<ListeningQuizComponentProps> = ({ module 
 
   const handleNext = useCallback(() => {
     if (currentIndex < processedQuestions.length - 1) {
-      setCurrentIndex(currentIndex + 1);
-      setSelectedAnswer(null);
       setShowResult(false);
-      setShowHint(false);
+      setTimeout(() => {
+        setCurrentIndex(prev => prev + 1);
+        setSelectedAnswer(null);
+        setShowHint(false);
+      }, EXERCISE_FEEDBACK_COLLAPSE_MS);
     } else {
       finishExercise();
     }
