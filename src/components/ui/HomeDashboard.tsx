@@ -130,29 +130,30 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
               <strong>{stats.completionPercentage}%</strong>
             </div>
           </div>
-          <p className="home-dash__context-line">
+          <p className="home-dash__context-line home-dash__context-line--primary">
             <span className="home-dash__context-title">
               {t('dashboard.yourProgress', 'Your progress')}
             </span>
             <span className="home-dash__context-sep" aria-hidden="true">
               ·
             </span>
-            <span>{progressSummary}</span>
-            {currentUnitInfo && currentUnitStat && (
-              <>
-                <span className="home-dash__context-sep" aria-hidden="true">
-                  ·
-                </span>
-                <span className="home-dash__level-mark">{currentUnitInfo.code}</span>
-                <span className="home-dash__context-sep" aria-hidden="true">
-                  ·
-                </span>
-                <span>
-                  {currentUnitInfo.name} {currentUnitStat.completed}/{currentUnitStat.total}
-                </span>
-              </>
-            )}
+            <span className="home-dash__context-stat">{progressSummary}</span>
           </p>
+          {currentUnitInfo && currentUnitStat && (
+            <p className="home-dash__context-line home-dash__context-line--meta">
+              <span className="home-dash__level-mark">{currentUnitInfo.code}</span>
+              <span className="home-dash__context-sep" aria-hidden="true">
+                ·
+              </span>
+              <span>{currentUnitInfo.name}</span>
+              <span className="home-dash__context-sep" aria-hidden="true">
+                ·
+              </span>
+              <span className="home-dash__context-stat">
+                {currentUnitStat.completed}/{currentUnitStat.total}
+              </span>
+            </p>
+          )}
         </section>
       </div>
 
