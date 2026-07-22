@@ -50,6 +50,7 @@
     "deploy:ping": "curl -s -o /dev/null -w 'HTTP Status: %{http_code}\\nResponse Time: %{time_total}s\\nURL: %{url_effective}\\n' https://genilsuarez.github.io/fluentflow/"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.109.0",
     "@tanstack/react-query": "^5.62.7",
     "fuse.js": "^7.0.0",
     "lucide-react": "^0.577.0",

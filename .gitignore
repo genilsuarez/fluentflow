@@ -1,5 +1,7 @@
 .playwright-mcp/
 node_modules/
+.env
+.env.local
 local/
 dist/
 docs/
