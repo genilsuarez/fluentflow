@@ -365,6 +365,27 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
     return cls;
   };
 
+  const feedbackBlock = (
+    <div
+      className={`reordering__feedback ${isCorrect ? 'reordering__feedback--correct' : 'reordering__feedback--incorrect'}`}
+    >
+      <p className="reordering__feedback-text">
+        {isCorrect ? t('common.correct') : t('common.incorrect')}
+      </p>
+      {!isCorrect && (
+        <div className="reordering__sentence">
+          <span className="reordering__sentence-label">{t('learning.correctSentence')}: </span>
+          <span className="reordering__sentence-text">{currentExercise.sentence}</span>
+        </div>
+      )}
+      {!isCorrect && currentExercise.explanation && (
+        <div className="reordering__explanation">
+          <p>{currentExercise.explanation}</p>
+        </div>
+      )}
+    </div>
+  );
+
   return (
     <div className="reordering">
       <LearningProgressHeader
@@ -389,89 +410,71 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
         </div>
       )}
 
-      {/* Answer Zone */}
-      <div className="reordering__zone reordering__zone--answer">
-        <label className="reordering__zone-label">{t('learning.reorderingYourAnswer')}</label>
-        <div
-          className="reordering__zone-content"
-          role="listbox"
-          aria-label={t('learning.reorderingYourAnswer')}
-          aria-dropeffect={!showResult ? 'move' : 'none'}
-        >
-          {answerWords.length === 0 && !showResult && (
-            <p className="reordering__placeholder">{t('learning.reorderingInstruction')}</p>
-          )}
-          {answerWords.map((word, index) => (
-            <button
-              key={`answer-${index}-${word}`}
-              className={getWordClass(index, 'answer')}
-              onClick={() => handleTapAnswer(index)}
-              disabled={showResult}
-              type="button"
-              role="option"
-              aria-selected={focusedZone === 'answer' && focusedIndex === index}
-              aria-grabbed={focusedZone === 'answer' && focusedIndex === index && keyboardSelected}
-              tabIndex={focusedZone === 'answer' && focusedIndex === index ? 0 : -1}
-            >
-              {word}
-            </button>
-          ))}
-        </div>
-      </div>
-
-      {/* Word Bank — hidden when empty post-validation */}
-      {!(showResult && availableWords.length === 0) && (
-        <div className="reordering__zone reordering__zone--words">
-          <label className="reordering__zone-label">{t('learning.wordBank')}</label>
+      {/* Exercise body — answer + shared slot (word bank or feedback) */}
+      <div className="reordering__body">
+        <div className="reordering__zone reordering__zone--answer">
+          <label className="reordering__zone-label">{t('learning.reorderingYourAnswer')}</label>
           <div
             className="reordering__zone-content"
             role="listbox"
-            aria-label={t('learning.wordBank')}
+            aria-label={t('learning.reorderingYourAnswer')}
             aria-dropeffect={!showResult ? 'move' : 'none'}
           >
-            {availableWords.map((word, index) => (
+            {answerWords.length === 0 && !showResult && (
+              <p className="reordering__placeholder">{t('learning.reorderingInstruction')}</p>
+            )}
+            {answerWords.map((word, index) => (
               <button
-                key={`available-${index}-${word}`}
-                className={getWordClass(index, 'available')}
-                onClick={() => handleTapAvailable(index)}
+                key={`answer-${index}-${word}`}
+                className={getWordClass(index, 'answer')}
+                onClick={() => handleTapAnswer(index)}
                 disabled={showResult}
                 type="button"
                 role="option"
-                aria-selected={focusedZone === 'available' && focusedIndex === index}
-                aria-grabbed={false}
-                tabIndex={focusedZone === 'available' && focusedIndex === index ? 0 : -1}
+                aria-selected={focusedZone === 'answer' && focusedIndex === index}
+                aria-grabbed={focusedZone === 'answer' && focusedIndex === index && keyboardSelected}
+                tabIndex={focusedZone === 'answer' && focusedIndex === index ? 0 : -1}
               >
                 {word}
               </button>
             ))}
-            {availableWords.length === 0 && !showResult && (
-              <p className="reordering__placeholder">{t('learning.tapToRemove')}</p>
-            )}
           </div>
         </div>
-      )}
 
-      {/* Result feedback */}
-      {showResult && (
-        <div
-          className={`reordering__feedback ${isCorrect ? 'reordering__feedback--correct' : 'reordering__feedback--incorrect'}`}
-        >
-          <p className="reordering__feedback-text">
-            {isCorrect ? t('common.correct') : t('common.incorrect')}
-          </p>
-          {!isCorrect && (
-            <div className="reordering__sentence">
-              <span className="reordering__sentence-label">{t('learning.correctSentence')}: </span>
-              <span className="reordering__sentence-text">{currentExercise.sentence}</span>
-            </div>
-          )}
-          {!isCorrect && currentExercise.explanation && (
-            <div className="reordering__explanation">
-              <p>{currentExercise.explanation}</p>
+        <div className="reordering__slot">
+          {showResult ? (
+            feedbackBlock
+          ) : (
+            <div className="reordering__zone reordering__zone--words">
+              <label className="reordering__zone-label">{t('learning.wordBank')}</label>
+              <div
+                className="reordering__zone-content"
+                role="listbox"
+                aria-label={t('learning.wordBank')}
+                aria-dropeffect="move"
+              >
+                {availableWords.map((word, index) => (
+                  <button
+                    key={`available-${index}-${word}`}
+                    className={getWordClass(index, 'available')}
+                    onClick={() => handleTapAvailable(index)}
+                    type="button"
+                    role="option"
+                    aria-selected={focusedZone === 'available' && focusedIndex === index}
+                    aria-grabbed={false}
+                    tabIndex={focusedZone === 'available' && focusedIndex === index ? 0 : -1}
+                  >
+                    {word}
+                  </button>
+                ))}
+                {availableWords.length === 0 && (
+                  <p className="reordering__placeholder">{t('learning.tapToRemove')}</p>
+                )}
+              </div>
             </div>
           )}
         </div>
-      )}
+      </div>
 
       {/* Control Bar */}
       <div className="game-controls">
