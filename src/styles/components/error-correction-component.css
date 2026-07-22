@@ -33,7 +33,11 @@ html.dark .error-correction__error-sentence {
   border-left-color: #d97706;
 }
 html.dark .error-correction__explanation {
-  background-color: rgba(245, 158, 11, 0.06);
+  background-color: transparent;
+  border-left-color: color-mix(in srgb, var(--lp-warning) 35%, transparent);
+}
+html.dark .error-correction__explanation-label {
+  color: var(--theme-text-secondary);
 }
 .error-correction__explanation-label {
   color: #d97706;
@@ -61,6 +65,7 @@ html.dark .error-correction__explanation {
   line-height: 1.4;
 }
 html.dark .error-correction__trap-hint {
-  background: rgba(245, 158, 11, 0.1);
-  color: #fbbf24;
+  background: var(--lp-warning-soft);
+  border-left-color: color-mix(in srgb, var(--lp-warning) 40%, transparent);
+  color: var(--theme-text-secondary);
 }

@@ -7,7 +7,7 @@ import { ContentAdapter } from '../../utils/contentAdapter';
 import ContentRenderer from '../ui/ContentRenderer';
 import LearningProgressHeader from '../ui/LearningProgressHeader';
 import ExerciseResultScreen from '../ui/ExerciseResultScreen';
-import { speak, stopSpeaking, isSpeechAvailable } from '../../utils/speech';
+import { speak, stopSpeaking, isSpeechAvailable, whenVoicesReady } from '../../utils/speech';
 
 import '../../styles/components/quiz-component.css';
 
@@ -94,10 +94,14 @@ const ListeningQuizComponent: React.FC<ListeningQuizComponentProps> = ({ module 
   }, [currentQuestion]);
 
   useEffect(() => {
-    if (currentQuestion && !showResult) {
-      const timer = setTimeout(playQuestion, 400);
-      return () => clearTimeout(timer);
-    }
+    if (!currentQuestion || showResult) return;
+    let cancelled = false;
+    void whenVoicesReady().then(() => {
+      if (!cancelled) playQuestion();
+    });
+    return () => {
+      cancelled = true;
+    };
   }, [currentIndex, currentQuestion, showResult, playQuestion]);
 
   // Cleanup speech on unmount

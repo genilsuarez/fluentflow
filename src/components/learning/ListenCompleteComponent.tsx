@@ -8,7 +8,7 @@ import { ContentAdapter } from '../../utils/contentAdapter';
 import ContentRenderer from '../ui/ContentRenderer';
 import LearningProgressHeader from '../ui/LearningProgressHeader';
 import ExerciseResultScreen from '../ui/ExerciseResultScreen';
-import { speak, stopSpeaking, isSpeechAvailable } from '../../utils/speech';
+import { speak, stopSpeaking, isSpeechAvailable, whenVoicesReady } from '../../utils/speech';
 
 import '../../styles/components/quiz-component.css';
 
@@ -75,10 +75,14 @@ const ListenCompleteComponent: React.FC<ListenCompleteComponentProps> = ({ modul
 
   // Auto-play on new item
   useEffect(() => {
-    if (currentItem && !showResult) {
-      const timer = setTimeout(() => playAudio(), 400);
-      return () => clearTimeout(timer);
-    }
+    if (!currentItem || showResult) return;
+    let cancelled = false;
+    void whenVoicesReady().then(() => {
+      if (!cancelled) playAudio();
+    });
+    return () => {
+      cancelled = true;
+    };
   }, [currentIndex, currentItem, showResult, playAudio]);
 
   // Focus input

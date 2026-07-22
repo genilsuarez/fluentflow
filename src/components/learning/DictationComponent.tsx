@@ -6,7 +6,7 @@ import { conditionalShuffle } from '../../utils/randomUtils';
 import { matchesAnswer } from '../../utils/answerUtils';
 import LearningProgressHeader from '../ui/LearningProgressHeader';
 import ExerciseResultScreen from '../ui/ExerciseResultScreen';
-import { speak, stopSpeaking, isSpeechAvailable } from '../../utils/speech';
+import { speak, stopSpeaking, isSpeechAvailable, whenVoicesReady } from '../../utils/speech';
 
 import '../../styles/components/quiz-component.css';
 
@@ -71,10 +71,14 @@ const DictationComponent: React.FC<DictationComponentProps> = ({ module }) => {
 
   // Auto-play on new item
   useEffect(() => {
-    if (currentItem && !showResult) {
-      const timer = setTimeout(() => playAudio(), 400);
-      return () => clearTimeout(timer);
-    }
+    if (!currentItem || showResult) return;
+    let cancelled = false;
+    void whenVoicesReady().then(() => {
+      if (!cancelled) playAudio();
+    });
+    return () => {
+      cancelled = true;
+    };
   }, [currentIndex, currentItem, showResult, playAudio]);
 
   // Focus input on new item

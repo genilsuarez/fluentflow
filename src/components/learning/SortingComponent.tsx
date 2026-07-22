@@ -694,8 +694,9 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
               <button
                 onClick={() => setShowExplanation(false)}
                 className="sorting-modal__close-btn"
+                aria-label={t('common.close')}
               >
-                <X className="sorting-modal__close-icon" />
+                <X className="sorting-modal__close-icon" size={18} aria-hidden="true" />
               </button>
             </div>
 
