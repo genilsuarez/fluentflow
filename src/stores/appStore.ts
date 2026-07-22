@@ -165,9 +165,19 @@ export const useAppStore = create<AppStore>()(
         // Persisting currentModule causes stale data issues when the user returns
         // after a long time — the module metadata may have changed or been removed.
         // handleHashChange re-validates the module from the network/cache on mount.
-        previousMenuContext: state.previousMenuContext,
+        // previousMenuContext is session-only — each fresh load starts on Inicio.
         globalScore: state.globalScore,
         // sessionScore should NOT be persisted - it's session-only data
+      }),
+      onRehydrateStorage: () => state => {
+        if (state) {
+          state.previousMenuContext = 'progression';
+        }
+      },
+      merge: (persistedState, currentState) => ({
+        ...currentState,
+        ...(persistedState as Partial<typeof currentState>),
+        previousMenuContext: 'progression' as const,
       }),
     }
   )
