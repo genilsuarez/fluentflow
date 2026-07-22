@@ -205,9 +205,7 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
             disabled={showResult}
             placeholder={placeholderHint}
             className={`editable-input editable-input--inline${inputClass}`}
-            style={
-              { '--dynamic-width': inlineInputWidthCh(widthSource) } as React.CSSProperties
-            }
+            style={{ '--dynamic-width': inlineInputWidthCh(widthSource) } as React.CSSProperties}
             autoFocus={!showResult && index === 0}
           />
         );
