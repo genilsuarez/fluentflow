@@ -12,6 +12,9 @@ export interface GameSettings {
   transformationMode: { itemCount: number };
   wordFormationMode: { itemCount: number };
   errorCorrectionMode: { itemCount: number };
+  dictationMode: { itemCount: number };
+  listenCompleteMode: { itemCount: number };
+  listeningQuizMode: { itemCount: number };
 }
 
 interface SettingsState {
@@ -95,6 +98,9 @@ export const useSettingsStore = create<SettingsState>()(
         transformationMode: { itemCount: 8 },
         wordFormationMode: { itemCount: 8 },
         errorCorrectionMode: { itemCount: 8 },
+        dictationMode: { itemCount: 8 },
+        listenCompleteMode: { itemCount: 8 },
+        listeningQuizMode: { itemCount: 8 },
       },
 
       // Offline defaults
@@ -156,7 +162,7 @@ export const useSettingsStore = create<SettingsState>()(
     }),
     {
       name: 'settings-storage',
-      version: 15,
+      version: 16,
       migrate: (persistedState: any, version: number) => {
         // Migration from version 1 to version 2
         if (version < 2) {
@@ -293,6 +299,15 @@ export const useSettingsStore = create<SettingsState>()(
         if (version < 15) {
           const gs = persistedState.gameSettings || {};
           if (gs.sortingMode && gs.sortingMode.wordCount === 5) gs.sortingMode.wordCount = 4;
+          persistedState = { ...persistedState, gameSettings: gs };
+        }
+        // Migration from version 15 to version 16: add dictationMode, listenCompleteMode,
+        // listeningQuizMode to gameSettings (previously unconfigurable audio exercise modes)
+        if (version < 16) {
+          const gs = persistedState.gameSettings || {};
+          if (!gs.dictationMode) gs.dictationMode = { itemCount: 8 };
+          if (!gs.listenCompleteMode) gs.listenCompleteMode = { itemCount: 8 };
+          if (!gs.listeningQuizMode) gs.listeningQuizMode = { itemCount: 8 };
           persistedState = { ...persistedState, gameSettings: gs };
         }
         return persistedState;

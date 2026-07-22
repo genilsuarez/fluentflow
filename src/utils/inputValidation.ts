@@ -30,6 +30,9 @@ const DEFAULTS = {
   transformationMode: { itemCount: 8 },
   wordFormationMode: { itemCount: 8 },
   errorCorrectionMode: { itemCount: 8 },
+  dictationMode: { itemCount: 8 },
+  listenCompleteMode: { itemCount: 8 },
+  listeningQuizMode: { itemCount: 8 },
 };
 
 /**
@@ -51,6 +54,9 @@ export const validateGameSettings = (settings: unknown): typeof DEFAULTS => {
     transformationMode: { itemCount: [1, 50] },
     wordFormationMode: { itemCount: [1, 50] },
     errorCorrectionMode: { itemCount: [1, 50] },
+    dictationMode: { itemCount: [1, 50] },
+    listenCompleteMode: { itemCount: [1, 50] },
+    listeningQuizMode: { itemCount: [1, 50] },
   };
 
   const result: Record<string, Record<string, number>> = {};

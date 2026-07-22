@@ -71,6 +71,9 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
     transformationMode: gameSettings.transformationMode ?? { itemCount: 10 },
     wordFormationMode: gameSettings.wordFormationMode ?? { itemCount: 10 },
     errorCorrectionMode: gameSettings.errorCorrectionMode ?? { itemCount: 10 },
+    dictationMode: gameSettings.dictationMode ?? { itemCount: 8 },
+    listenCompleteMode: gameSettings.listenCompleteMode ?? { itemCount: 8 },
+    listeningQuizMode: gameSettings.listeningQuizMode ?? { itemCount: 8 },
   }));
 
   // Reset local state when modal opens
@@ -86,6 +89,9 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
         transformationMode: gameSettings.transformationMode ?? { itemCount: 10 },
         wordFormationMode: gameSettings.wordFormationMode ?? { itemCount: 10 },
         errorCorrectionMode: gameSettings.errorCorrectionMode ?? { itemCount: 10 },
+        dictationMode: gameSettings.dictationMode ?? { itemCount: 8 },
+        listenCompleteMode: gameSettings.listenCompleteMode ?? { itemCount: 8 },
+        listeningQuizMode: gameSettings.listeningQuizMode ?? { itemCount: 8 },
       });
       setHasChanges(false);
     } else {
@@ -756,6 +762,129 @@ export const CompactAdvancedSettings: React.FC<CompactAdvancedSettingsProps> = (
                         }
                         disabled={(localGameSettings.errorCorrectionMode.itemCount || 10) >= 20}
                         aria-label={t('settings.increaseErrorCorrectionCount')}
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+
+                  <div className="compact-settings__game">
+                    <label className="compact-settings__game-label">
+                      {t('settings.dictationMode')}
+                    </label>
+                    <div className="compact-settings__game-stepper">
+                      <button
+                        type="button"
+                        className="compact-settings__stepper-btn compact-settings__stepper-btn--minus"
+                        onClick={() =>
+                          handleGameSettingChange(
+                            'dictationMode',
+                            'itemCount',
+                            Math.max(5, (localGameSettings.dictationMode.itemCount || 8) - 1)
+                          )
+                        }
+                        disabled={(localGameSettings.dictationMode.itemCount || 8) <= 5}
+                        aria-label={t('settings.decreaseDictationCount')}
+                      >
+                        −
+                      </button>
+                      <span className="compact-settings__stepper-value">
+                        {localGameSettings.dictationMode.itemCount || 8}
+                      </span>
+                      <button
+                        type="button"
+                        className="compact-settings__stepper-btn compact-settings__stepper-btn--plus"
+                        onClick={() =>
+                          handleGameSettingChange(
+                            'dictationMode',
+                            'itemCount',
+                            Math.min(20, (localGameSettings.dictationMode.itemCount || 8) + 1)
+                          )
+                        }
+                        disabled={(localGameSettings.dictationMode.itemCount || 8) >= 20}
+                        aria-label={t('settings.increaseDictationCount')}
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+
+                  <div className="compact-settings__game">
+                    <label className="compact-settings__game-label">
+                      {t('settings.listenCompleteMode')}
+                    </label>
+                    <div className="compact-settings__game-stepper">
+                      <button
+                        type="button"
+                        className="compact-settings__stepper-btn compact-settings__stepper-btn--minus"
+                        onClick={() =>
+                          handleGameSettingChange(
+                            'listenCompleteMode',
+                            'itemCount',
+                            Math.max(5, (localGameSettings.listenCompleteMode.itemCount || 8) - 1)
+                          )
+                        }
+                        disabled={(localGameSettings.listenCompleteMode.itemCount || 8) <= 5}
+                        aria-label={t('settings.decreaseListenCompleteCount')}
+                      >
+                        −
+                      </button>
+                      <span className="compact-settings__stepper-value">
+                        {localGameSettings.listenCompleteMode.itemCount || 8}
+                      </span>
+                      <button
+                        type="button"
+                        className="compact-settings__stepper-btn compact-settings__stepper-btn--plus"
+                        onClick={() =>
+                          handleGameSettingChange(
+                            'listenCompleteMode',
+                            'itemCount',
+                            Math.min(20, (localGameSettings.listenCompleteMode.itemCount || 8) + 1)
+                          )
+                        }
+                        disabled={(localGameSettings.listenCompleteMode.itemCount || 8) >= 20}
+                        aria-label={t('settings.increaseListenCompleteCount')}
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+
+                  <div className="compact-settings__game">
+                    <label className="compact-settings__game-label">
+                      {t('settings.listeningQuizMode')}
+                    </label>
+                    <div className="compact-settings__game-stepper">
+                      <button
+                        type="button"
+                        className="compact-settings__stepper-btn compact-settings__stepper-btn--minus"
+                        onClick={() =>
+                          handleGameSettingChange(
+                            'listeningQuizMode',
+                            'itemCount',
+                            Math.max(5, (localGameSettings.listeningQuizMode.itemCount || 8) - 1)
+                          )
+                        }
+                        disabled={(localGameSettings.listeningQuizMode.itemCount || 8) <= 5}
+                        aria-label={t('settings.decreaseListeningQuizCount')}
+                      >
+                        −
+                      </button>
+                      <span className="compact-settings__stepper-value">
+                        {localGameSettings.listeningQuizMode.itemCount || 8}
+                      </span>
+                      <button
+                        type="button"
+                        className="compact-settings__stepper-btn compact-settings__stepper-btn--plus"
+                        onClick={() =>
+                          handleGameSettingChange(
+                            'listeningQuizMode',
+                            'itemCount',
+                            Math.min(20, (localGameSettings.listeningQuizMode.itemCount || 8) + 1)
+                          )
+                        }
+                        disabled={(localGameSettings.listeningQuizMode.itemCount || 8) >= 20}
+                        aria-label={t('settings.increaseListeningQuizCount')}
                       >
                         +
                       </button>

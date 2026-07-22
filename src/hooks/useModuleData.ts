@@ -117,6 +117,21 @@ export const useModuleData = (moduleId: string) => {
           case 'transformation':
             limit = gameSettings.transformationMode?.itemCount ?? 10;
             break;
+          case 'word-formation':
+            limit = gameSettings.wordFormationMode?.itemCount ?? 10;
+            break;
+          case 'error-correction':
+            limit = gameSettings.errorCorrectionMode?.itemCount ?? 10;
+            break;
+          case 'dictation':
+            limit = gameSettings.dictationMode?.itemCount ?? 10;
+            break;
+          case 'listen-complete':
+            limit = gameSettings.listenCompleteMode?.itemCount ?? 10;
+            break;
+          case 'listening-quiz':
+            limit = gameSettings.listeningQuizMode?.itemCount ?? 10;
+            break;
         }
       }
 
