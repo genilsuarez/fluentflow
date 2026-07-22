@@ -1,6 +1,53 @@
 /** Easy-to-type aliases that map to the ∅ (no article) symbol */
 const EMPTY_SET_ALIASES = ['-', '0', 'x', 'none', 'ø', 'nothing', 'no article'];
 
+/** Common contractions → expanded forms (applied after lowercasing) */
+const CONTRACTION_EXPANSIONS: [RegExp, string][] = [
+  [/\bit's\b/g, 'it is'],
+  [/\bhe's\b/g, 'he is'],
+  [/\bshe's\b/g, 'she is'],
+  [/\bthat's\b/g, 'that is'],
+  [/\bthere's\b/g, 'there is'],
+  [/\bhere's\b/g, 'here is'],
+  [/\bwhere's\b/g, 'where is'],
+  [/\bwhat's\b/g, 'what is'],
+  [/\bwho's\b/g, 'who is'],
+  [/\bhow's\b/g, 'how is'],
+  [/\bwhen's\b/g, 'when is'],
+  [/\bwe're\b/g, 'we are'],
+  [/\bthey're\b/g, 'they are'],
+  [/\byou're\b/g, 'you are'],
+  [/\bi'm\b/g, 'i am'],
+  [/\bwe've\b/g, 'we have'],
+  [/\bthey've\b/g, 'they have'],
+  [/\byou've\b/g, 'you have'],
+  [/\bi've\b/g, 'i have'],
+  [/\bwe'd\b/g, 'we would'],
+  [/\bthey'd\b/g, 'they would'],
+  [/\byou'd\b/g, 'you would'],
+  [/\bi'd\b/g, 'i would'],
+  [/\bhe'd\b/g, 'he would'],
+  [/\bshe'd\b/g, 'she would'],
+  [/\bit'd\b/g, 'it would'],
+  [/\bwe'll\b/g, 'we will'],
+  [/\bthey'll\b/g, 'they will'],
+  [/\byou'll\b/g, 'you will'],
+  [/\bi'll\b/g, 'i will'],
+  [/\bhe'll\b/g, 'he will'],
+  [/\bshe'll\b/g, 'she will'],
+  [/\bit'll\b/g, 'it will'],
+  [/\bthat'll\b/g, 'that will'],
+  [/\blet's\b/g, 'let us'],
+];
+
+function expandContractions(s: string): string {
+  let result = s;
+  for (const [pattern, replacement] of CONTRACTION_EXPANSIONS) {
+    result = result.replace(pattern, replacement);
+  }
+  return result;
+}
+
 /**
  * Normalize answer for comparison: lowercase, collapse whitespace, trim,
  * strip common punctuation (.!?,;:) anywhere for leniency.
@@ -9,6 +56,7 @@ const EMPTY_SET_ALIASES = ['-', '0', 'x', 'none', 'ø', 'nothing', 'no article']
  * Normalizes apostrophe variants (curly quotes, backtick) to straight ASCII.
  * Expands the most common missing-apostrophe contractions (don't, doesn't,
  * didn't, isn't, can't, won't) so typing without apostrophe still matches.
+ * Expands it's/he's/we're-style contractions to full forms (it is, he is, …).
  * Maps common keyboard-friendly aliases to ∅ for article exercises.
  */
 export function normalizeAnswer(s: string): string {
@@ -17,7 +65,11 @@ export function normalizeAnswer(s: string): string {
     // Normalize all apostrophe-like characters to straight ASCII apostrophe
     .replace(/['\u2018\u2019\u02BC`]/g, "'")
     // Expand missing apostrophes only in the most common n't contractions
-    .replace(/\b(doesn|don|didn|isn|can|won|aren|wasn)t\b/g, "$1't")
+    .replace(/\b(doesn|don|didn|isn|can|won|aren|wasn)t\b/g, "$1't");
+
+  result = expandContractions(result);
+
+  result = result
     .replace(/[.!?,;:]+/g, ' ')
     .replace(/(\d)([a-z])/g, '$1 $2')
     .replace(/([a-z])(\d)/g, '$1 $2')

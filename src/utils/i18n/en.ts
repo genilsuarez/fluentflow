@@ -384,6 +384,18 @@ export const en = {
     helpModuleDesc:
       'Your best score in each completed exercise. Focus on exercises with lower scores to improve.',
     closeHelp: 'Got it!',
+    yourProgress: 'Your progress',
+    nextStep: 'Next step',
+    startLearning: 'Start learning',
+    pickModule: 'Pick a module and begin your first session.',
+    cefrRoute: 'CEFR path',
+    yourRoute: 'Route',
+    depthModules: 'modules',
+    depthModes: 'learning modes',
+    depthExercises: 'exercises',
+    depthLevels: 'levels',
+    depthTo: 'to',
+    viewAll: 'View all',
   },
   categories: {
     vocabulary: 'Vocabulary',

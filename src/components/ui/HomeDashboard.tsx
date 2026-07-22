@@ -1,12 +1,12 @@
-import React, { useEffect, useCallback } from 'react';
-import { Play, Trophy, Target, Clock, TrendingUp, ChevronRight } from 'lucide-react';
+import React, { useEffect, useCallback, useMemo } from 'react';
+import { Trophy, Target, Clock, TrendingUp, ChevronRight } from 'lucide-react';
 import { useProgressStore } from '../../stores/progressStore';
 import { useUserStore } from '../../stores/userStore';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useTranslation } from '../../utils/i18n';
 import { useProgression } from '../../hooks/useProgression';
 import { useModuleNavigation } from '../../hooks/useModuleNavigation';
-import { MODE_I18N_KEYS, getLevelColor } from '../../utils/progressionDisplay';
+import { MODE_I18N_KEYS } from '../../utils/progressionDisplay';
 import '../../styles/components/home-dashboard.css';
 
 interface HomeDashboardProps {
@@ -50,7 +50,33 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
 
   const handleContinue = useCallback(() => {
     if (nextRecommended) navigateToModule(nextRecommended);
-  }, [nextRecommended, navigateToModule]);
+    else if (onViewModules) onViewModules();
+  }, [nextRecommended, navigateToModule, onViewModules]);
+
+  const nextLevel = nextRecommended
+    ? (Array.isArray(nextRecommended.level)
+        ? nextRecommended.level[0]
+        : nextRecommended.level
+      ).toUpperCase()
+    : '';
+
+  const nextModeLabel = nextRecommended
+    ? t(MODE_I18N_KEYS[nextRecommended.learningMode] || 'common.exercise')
+    : '';
+
+  const currentUnitIdx = stats.unitStats.findIndex(u => u.percentage < 100);
+  const currentUnitStat = stats.unitStats[
+    currentUnitIdx === -1 ? Math.max(0, stats.unitStats.length - 1) : currentUnitIdx
+  ];
+  const currentUnitInfo = currentUnitStat
+    ? unitInfo[currentUnitStat.unit as keyof typeof unitInfo]
+    : null;
+
+  const progressSummary = useMemo(
+    () =>
+      `${stats.completedModules} ${t('common.of', 'of')} ${stats.totalModules} ${t('common.modules', 'exercises')}`,
+    [stats.completedModules, stats.totalModules, t]
+  );
 
   // Enter key → navigate to current lesson
   useEffect(() => {
@@ -68,65 +94,69 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
 
   return (
     <div className="home-dash">
-      {/* Hero Section — compact: ring + title + CTA in one row */}
+      {/* Hero — LearnFlow resumen layout: continue banner + context cards */}
       <div className="home-dash__hero">
-        <div className="home-dash__hero-ring">
-          <svg viewBox="0 0 36 36" className="home-dash__ring-svg">
-            <path
-              className="home-dash__ring-bg"
-              d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-            />
-            <path
-              className="home-dash__ring-fill"
-              strokeDasharray={`${stats.completionPercentage}, 100`}
-              d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-            />
-          </svg>
-          <div className="home-dash__ring-center">
-            <strong>{stats.completionPercentage}%</strong>
+        <section className="home-dash__continue-banner" aria-labelledby="home-dash-continue-title">
+          <div className="home-dash__continue-copy">
+            <span className="home-dash__kicker">{t('dashboard.nextStep', 'Next step')}</span>
+            <h2 id="home-dash-continue-title" className="home-dash__continue-title">
+              {nextRecommended
+                ? nextRecommended.name
+                : t('dashboard.startLearning', 'Start learning')}
+            </h2>
+            <p className="home-dash__continue-desc">
+              {nextRecommended
+                ? `${nextLevel} · ${nextModeLabel}`
+                : t('dashboard.pickModule', 'Pick a module and begin your first session.')}
+            </p>
           </div>
-        </div>
-        <div className="home-dash__hero-body">
-          <span className="home-dash__hero-kicker">
-            {t('dashboard.yourProgress', 'Your progress')}
-          </span>
-          <h2 className="home-dash__hero-title">
-            {stats.completedModules} {t('common.of', 'of')} {stats.totalModules}{' '}
-            {t('common.modules', 'exercises')}
-          </h2>
-        </div>
-        {nextRecommended && (
-          <button className="home-dash__hero-cta" onClick={handleContinue} type="button">
-            <span className="home-dash__cta-module">
-              <span
-                className="home-dash__cta-level"
-                style={
-                  {
-                    '--level-color': getLevelColor(
-                      Array.isArray(nextRecommended.level)
-                        ? nextRecommended.level[0]
-                        : nextRecommended.level
-                    ),
-                  } as React.CSSProperties
-                }
-              >
-                {Array.isArray(nextRecommended.level)
-                  ? nextRecommended.level[0].toUpperCase()
-                  : nextRecommended.level.toUpperCase()}
-              </span>
-              <span className="home-dash__cta-info">
-                <span className="home-dash__cta-name">{nextRecommended.name}</span>
-                <span className="home-dash__cta-type">
-                  {t(MODE_I18N_KEYS[nextRecommended.learningMode] || 'common.exercise')}
-                </span>
-              </span>
-            </span>
-            <span className="home-dash__cta-play">
-              <Play size={14} />
-              {t('common.continue', 'Continue')}
-            </span>
+          <button
+            type="button"
+            className="home-dash__continue-btn"
+            onClick={handleContinue}
+          >
+            {t('common.continue', 'Continue')} <span aria-hidden="true">→</span>
           </button>
-        )}
+        </section>
+
+        <section
+          className="home-dash__context-card home-dash__context-card--summary"
+          aria-label={t('dashboard.yourProgress', 'Your progress')}
+        >
+          <div
+            className="home-dash__context-visual"
+            style={{ '--progress': stats.completionPercentage } as React.CSSProperties}
+            role="img"
+            aria-hidden="true"
+          >
+            <div>
+              <strong>{stats.completionPercentage}%</strong>
+            </div>
+          </div>
+          <p className="home-dash__context-line">
+            <span className="home-dash__context-title">
+              {t('dashboard.yourProgress', 'Your progress')}
+            </span>
+            <span className="home-dash__context-sep" aria-hidden="true">
+              ·
+            </span>
+            <span>{progressSummary}</span>
+            {currentUnitInfo && currentUnitStat && (
+              <>
+                <span className="home-dash__context-sep" aria-hidden="true">
+                  ·
+                </span>
+                <span className="home-dash__level-mark">{currentUnitInfo.code}</span>
+                <span className="home-dash__context-sep" aria-hidden="true">
+                  ·
+                </span>
+                <span>
+                  {currentUnitInfo.name} {currentUnitStat.completed}/{currentUnitStat.total}
+                </span>
+              </>
+            )}
+          </p>
+        </section>
       </div>
 
       {/* Stats Cards */}

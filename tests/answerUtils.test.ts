@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { normalizeAnswer } from '../src/utils/answerUtils';
+import { normalizeAnswer, matchesAnswer } from '../src/utils/answerUtils';
 
 describe('normalizeAnswer', () => {
   it('returns empty string for empty input', () => {
@@ -65,5 +65,18 @@ describe('normalizeAnswer', () => {
 
   it('two strings differing only in whitespace normalize to the same value', () => {
     expect(normalizeAnswer('hello world')).toBe(normalizeAnswer('  hello   world  '));
+  });
+
+  it('expands common contractions to full forms', () => {
+    expect(normalizeAnswer("it's cold today")).toBe('it is cold today');
+    expect(normalizeAnswer('It is cold today.')).toBe('it is cold today');
+    expect(normalizeAnswer("it's cold today")).toBe(normalizeAnswer('It is cold today.'));
+  });
+});
+
+describe('matchesAnswer', () => {
+  it('accepts contraction when correct answer uses full form', () => {
+    expect(matchesAnswer("it's cold today", ['It is cold today.'])).toBe(true);
+    expect(matchesAnswer('it is cold today', ["It's cold today."])).toBe(true);
   });
 });
