@@ -26,3 +26,13 @@ export const getLevelColor = (level: string): string => {
   };
   return colors[level as keyof typeof colors] || '#6b7280';
 };
+
+/** Split "Mode: Exercise title" into type label + display title for hero cards */
+export function splitModuleDisplayName(name: string): { title: string; typeLabel: string | null } {
+  const colonIdx = name.indexOf(':');
+  if (colonIdx === -1) return { title: name, typeLabel: null };
+  const typeLabel = name.slice(0, colonIdx).trim();
+  const title = name.slice(colonIdx + 1).trim();
+  if (!title) return { title: name, typeLabel: null };
+  return { title, typeLabel: typeLabel || null };
+}

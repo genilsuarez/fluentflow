@@ -6,7 +6,7 @@ import { useSettingsStore } from '../../stores/settingsStore';
 import { useTranslation } from '../../utils/i18n';
 import { useProgression } from '../../hooks/useProgression';
 import { useModuleNavigation } from '../../hooks/useModuleNavigation';
-import { MODE_I18N_KEYS } from '../../utils/progressionDisplay';
+import { MODE_I18N_KEYS, splitModuleDisplayName } from '../../utils/progressionDisplay';
 import '../../styles/components/home-dashboard.css';
 
 interface HomeDashboardProps {
@@ -73,6 +73,14 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
     ? unitInfo[currentUnitStat.unit as keyof typeof unitInfo]
     : null;
 
+  const nextModuleDisplay = useMemo(() => {
+    if (!nextRecommended) return null;
+    const { title, typeLabel } = splitModuleDisplayName(nextRecommended.name);
+    const mode = typeLabel || nextModeLabel;
+    const meta = [nextLevel, mode].filter(Boolean).join(' · ');
+    return { title, meta };
+  }, [nextRecommended, nextLevel, nextModeLabel]);
+
   const progressSummary = useMemo(
     () =>
       `${stats.completedModules} ${t('common.of', 'of')} ${stats.totalModules} ${t('common.modules', 'exercises')}`,
@@ -101,13 +109,13 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
           <div className="home-dash__continue-copy">
             <span className="home-dash__kicker">{t('dashboard.nextStep', 'Next step')}</span>
             <h2 id="home-dash-continue-title" className="home-dash__continue-title">
-              {nextRecommended
-                ? nextRecommended.name
+              {nextModuleDisplay
+                ? nextModuleDisplay.title
                 : t('dashboard.startLearning', 'Start learning')}
             </h2>
-            <p className="home-dash__continue-desc">
-              {nextRecommended
-                ? `${nextLevel} · ${nextModeLabel}`
+            <p className="home-dash__continue-meta">
+              {nextModuleDisplay
+                ? nextModuleDisplay.meta
                 : t('dashboard.pickModule', 'Pick a module and begin your first session.')}
             </p>
           </div>

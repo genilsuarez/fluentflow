@@ -40,24 +40,31 @@
 .home-dash__continue-copy {
   display: flex;
   flex-direction: column;
+  gap: 0.15rem;
+  flex: 1;
   min-width: 0;
 }
 
 .home-dash__continue-title {
-  margin: 1px 0 2px;
-  font-family: var(--lp-font-display, Georgia, serif);
-  font-size: 1.05rem;
-  font-weight: 500;
-  line-height: 1.15;
+  margin: 0;
+  font-family: var(--lp-font-body);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
   color: var(--lp-ink);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-.home-dash__continue-desc {
+.home-dash__continue-meta {
   margin: 0;
-  max-width: 580px;
-  color: var(--lp-ink-soft);
-  font-size: 0.62rem;
-  line-height: 1.35;
+  font-family: var(--lp-font-body);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--lp-muted);
 }
 
 .home-dash__continue-btn {
@@ -245,14 +252,15 @@
   }
 
   .home-dash__continue-title {
-    font-size: 1.22rem;
-    margin: 4px 0 6px;
+    font-size: 1.1875rem;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
   }
 
-  .home-dash__continue-desc {
-    font-size: 0.76rem;
-    line-height: 1.45;
-    max-width: none;
+  .home-dash__continue-meta {
+    font-size: 0.75rem;
   }
 
   .home-dash__continue-btn {
