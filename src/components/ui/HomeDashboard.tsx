@@ -65,9 +65,10 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
     : '';
 
   const currentUnitIdx = stats.unitStats.findIndex(u => u.percentage < 100);
-  const currentUnitStat = stats.unitStats[
-    currentUnitIdx === -1 ? Math.max(0, stats.unitStats.length - 1) : currentUnitIdx
-  ];
+  const currentUnitStat =
+    stats.unitStats[
+      currentUnitIdx === -1 ? Math.max(0, stats.unitStats.length - 1) : currentUnitIdx
+    ];
   const currentUnitInfo = currentUnitStat
     ? unitInfo[currentUnitStat.unit as keyof typeof unitInfo]
     : null;
@@ -110,11 +111,7 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
                 : t('dashboard.pickModule', 'Pick a module and begin your first session.')}
             </p>
           </div>
-          <button
-            type="button"
-            className="home-dash__continue-btn"
-            onClick={handleContinue}
-          >
+          <button type="button" className="home-dash__continue-btn" onClick={handleContinue}>
             {t('common.continue', 'Continue')} <span aria-hidden="true">→</span>
           </button>
         </section>
