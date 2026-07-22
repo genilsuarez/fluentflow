@@ -432,7 +432,9 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
                 type="button"
                 role="option"
                 aria-selected={focusedZone === 'answer' && focusedIndex === index}
-                aria-grabbed={focusedZone === 'answer' && focusedIndex === index && keyboardSelected}
+                aria-grabbed={
+                  focusedZone === 'answer' && focusedIndex === index && keyboardSelected
+                }
                 tabIndex={focusedZone === 'answer' && focusedIndex === index ? 0 : -1}
               >
                 {word}
