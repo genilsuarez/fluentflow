@@ -13,6 +13,7 @@ import { useSystemTheme } from './hooks/useSystemTheme';
 import { useTranslation } from './utils/i18n';
 import { verifyCacheIntegrity } from './services/offlineManager';
 import { publishLearnFlowIntegration } from './services/learnFlowIntegration';
+import { initSyncEngine } from './services/syncEngine';
 import { toast } from './stores/toastStore';
 import { preloadVoices } from './utils/speech';
 
@@ -73,6 +74,11 @@ const AppContent: React.FC = () => {
   // Preload TTS voices for listening modes (Chrome loads async)
   useEffect(() => {
     preloadVoices();
+  }, []);
+
+  // Cloud sync — no-ops until a Supabase session exists (shared cross-app via localStorage)
+  useEffect(() => {
+    initSyncEngine();
   }, []);
 
   // Verify cache integrity on app mount when offline mode is enabled
