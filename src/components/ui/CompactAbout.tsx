@@ -10,27 +10,22 @@ interface CompactAboutProps {
   onClose: () => void;
 }
 
-// Claves de localStorage que pertenecen únicamente a FluentFlow (Zustand
-// persist stores + vistas derivadas que consume DeskFlow). Deliberadamente
-// NO incluye 'lp-theme', 'lp-navigation-mode' ni 'lp-user': esas son
-// preferencias compartidas entre las 4 apps (mismo origin en producción) y
-// tampoco se toca la sesión de Supabase ('sb-*-auth-token') — un "clear
-// cache" no debe funcionar como logout encubierto ni resetear otras apps.
-const FLUENTFLOW_LOCAL_STORAGE_KEYS = [
-  'app-storage',
-  'user-storage',
-  'settings-storage',
-  'progress-storage',
-  'learnflow:progress:fluentflow:v1',
-  'learnflow:activity:fluentflow:v1',
-];
-
-const FLUENTFLOW_SESSION_STORAGE_KEYS = [
-  'prevView',
-  'menuGridScrollPosition',
-  'autoScrollToNext',
-  'static-chunk-retry',
-];
+// En producción, DeskFlow/FluentFlow/HubFlow/LyricFlow se sirven desde el
+// mismo origin (genilsuarez.github.io/<app>/), así que localStorage,
+// sessionStorage, Cache Storage y los service workers YA son compartidos por
+// las 4 apps a nivel de navegador — este botón, corriendo en FluentFlow,
+// también alcanza el storage de las otras tres sin ningún mecanismo extra.
+// (En dev local cada app corre en su propio puerto = su propio origin, así
+// que ahí solo puede limpiar lo que ve: el storage propio de FluentFlow. Es
+// una limitación de same-origin policy, no algo resoluble desde JS.)
+//
+// Las claves de HubFlow por ejercicio (p.ej. 'vocabulary:v1') no tienen un
+// prefijo común enumerable, así que en vez de listar qué borrar, se lista
+// qué NO borrar: preferencias compartidas entre apps y la sesión de
+// Supabase. Todo lo demás en este origin es dato de la plataforma LearnFlow.
+const PRESERVED_STORAGE_KEYS = new Set(['lp-theme', 'lp-navigation-mode', 'lp-user']);
+const isPreservedStorageKey = (key: string) =>
+  PRESERVED_STORAGE_KEYS.has(key) || /^sb-.+-auth-token$/.test(key);
 
 export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) => {
   const { language, developmentMode } = useSettingsStore();
@@ -82,8 +77,10 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
       // Reload even when a browser does not expose every cache API.
     }
     try {
-      for (const key of FLUENTFLOW_LOCAL_STORAGE_KEYS) localStorage.removeItem(key);
-      for (const key of FLUENTFLOW_SESSION_STORAGE_KEYS) sessionStorage.removeItem(key);
+      for (const key of Object.keys(localStorage)) {
+        if (!isPreservedStorageKey(key)) localStorage.removeItem(key);
+      }
+      for (const key of Object.keys(sessionStorage)) sessionStorage.removeItem(key);
     } catch {
       // Private browsing or storage unavailable — Cache Storage/SW cleanup above still ran.
     }
@@ -242,7 +239,7 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
                   <p>
                     {t(
                       'about.clearCacheDescription',
-                      'This deletes FluentFlow cached assets, saved progress, and settings, then reloads. Shared cross-app preferences and your login session are kept.'
+                      'This deletes cached assets and local data for LearnFlow (DeskFlow, FluentFlow, HubFlow, LyricFlow) in this browser, then reloads. In local dev this only reaches the app running on this port. Shared theme/navigation preferences and your login session are kept.'
                     )}
                   </p>
                   <div>
