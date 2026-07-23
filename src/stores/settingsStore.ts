@@ -98,7 +98,7 @@ export const useSettingsStore = create<SettingsState>()(
         transformationMode: { itemCount: 8 },
         wordFormationMode: { itemCount: 8 },
         errorCorrectionMode: { itemCount: 8 },
-        dictationMode: { itemCount: 8 },
+        dictationMode: { itemCount: 5 },
         listenCompleteMode: { itemCount: 8 },
         listeningQuizMode: { itemCount: 8 },
       },
