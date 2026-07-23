@@ -387,7 +387,7 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
   );
 
   return (
-    <div className="reordering">
+    <div className={`reordering${showResult ? ' reordering--validated' : ''}`}>
       <LearningProgressHeader
         title={module.name}
         currentIndex={currentIndex}
@@ -441,12 +441,11 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
               </button>
             ))}
           </div>
+          {showResult && <div className="reordering__answer-feedback">{feedbackBlock}</div>}
         </div>
 
-        <div className="reordering__slot">
-          {showResult ? (
-            feedbackBlock
-          ) : (
+        {!showResult && (
+          <div className="reordering__slot">
             <div className="reordering__zone reordering__zone--words">
               <label className="reordering__zone-label">{t('learning.wordBank')}</label>
               <div
@@ -474,8 +473,8 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
                 )}
               </div>
             </div>
-          )}
-        </div>
+          </div>
+        )}
       </div>
 
       {/* Control Bar */}
