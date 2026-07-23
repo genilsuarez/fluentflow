@@ -270,7 +270,7 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
                           />
                         </div>
                         <span className="home-dash__bar-label">{dayName}</span>
-                        <span className="home-dash__bar-value">{pts > 0 ? pts : '—'}</span>
+                        <span className="home-dash__bar-value">{pts}</span>
                       </div>
                     );
                   });

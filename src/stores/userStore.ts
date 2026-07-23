@@ -206,20 +206,22 @@ if (typeof window !== 'undefined') {
   // Same-tab sync: listen to lpLogin.onUpdate (vanilla modal writes lp-user directly)
   const lpLogin = (window as any).lpLogin;
   if (lpLogin && lpLogin.onUpdate) {
-    lpLogin.onUpdate((user: { id: string; name: string; email?: string; isSupabaseUser?: boolean } | null) => {
-      const current = useUserStore.getState().user;
-      if (user && user.name !== current?.name) {
-        useUserStore.setState({
-          user: {
-            id: user.id,
-            name: user.name,
-            email: user.email,
-            isSupabaseUser: user.isSupabaseUser,
-          },
-        });
-      } else if (!user && current) {
-        useUserStore.setState({ user: null });
+    lpLogin.onUpdate(
+      (user: { id: string; name: string; email?: string; isSupabaseUser?: boolean } | null) => {
+        const current = useUserStore.getState().user;
+        if (user && user.name !== current?.name) {
+          useUserStore.setState({
+            user: {
+              id: user.id,
+              name: user.name,
+              email: user.email,
+              isSupabaseUser: user.isSupabaseUser,
+            },
+          });
+        } else if (!user && current) {
+          useUserStore.setState({ user: null });
+        }
       }
-    });
+    );
   }
 }

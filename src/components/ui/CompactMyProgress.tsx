@@ -238,7 +238,7 @@ const DashboardTab: React.FC<DashboardTabProps> = ({
                       />
                     </div>
                     <span className="my-progress__weekly-day-label">{dayName}</span>
-                    <span className="my-progress__weekly-day-value">{pts > 0 ? pts : '—'}</span>
+                    <span className="my-progress__weekly-day-value">{pts}</span>
                   </div>
                 );
               });
