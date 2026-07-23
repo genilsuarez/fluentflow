@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { progressionService } from '../services/progressionService';
 import { useProgressStore } from '../stores/progressStore';
+import { useUserStore } from '../stores/userStore';
 import { useSettingsStore } from '../stores/settingsStore';
 import { useModulesCatalog } from './useModuleData';
 import type { LearningModule } from '../types';
@@ -35,7 +36,15 @@ export const useProgression = () => {
   useMemo(() => {
     if (rawModules.length > 0) {
       const validIds = new Set(rawModules.map(m => m.id));
-      useProgressStore.getState().reconcileModuleIds(validIds);
+      useProgressStore.getState().pruneStaleCatalogData(validIds);
+
+      const { userScores } = useUserStore.getState();
+      const prunedScores = Object.fromEntries(
+        Object.entries(userScores).filter(([moduleId]) => validIds.has(moduleId))
+      );
+      if (Object.keys(prunedScores).length !== Object.keys(userScores).length) {
+        useUserStore.setState({ userScores: prunedScores });
+      }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [rawModules.length]);

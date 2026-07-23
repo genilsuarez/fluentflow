@@ -10,6 +10,7 @@ import { useMenuNavigation } from '../../hooks/useMenuNavigation';
 import { useTranslation } from '../../utils/i18n';
 import { useEscapeKey } from '../../hooks/useEscapeKey';
 import { useOfflineStatus } from '../../hooks/useOfflineStatus';
+import { portalHref } from '../../utils/platformUrls';
 // import { toast } from '../../stores/toastStore';
 // Lazy-loaded modals — only loaded when user opens them
 const CompactAdvancedSettings = React.lazy(() =>
@@ -27,25 +28,6 @@ import { NavMenuIcon } from './NavMenuIcon';
 import { useProgression } from '../../hooks/useProgression';
 interface HeaderProps {
   onMenuToggle?: () => void;
-}
-function isLocalPlatformHost() {
-  return (
-    location.hostname === 'localhost' ||
-    location.hostname === '127.0.0.1' ||
-    location.hostname.startsWith('192.168.')
-  );
-}
-function isUnifiedLocalPlatform() {
-  return (
-    isLocalPlatformHost() &&
-    location.port === '3000' &&
-    location.pathname.startsWith('/fluentflow/')
-  );
-}
-function portalHref() {
-  if (isUnifiedLocalPlatform()) return '/deskflow/';
-  if (isLocalPlatformHost()) return `http://${location.hostname}:3000/`;
-  return 'https://genilsuarez.github.io/deskflow/';
 }
 const NAVIGATION_MODE_KEY = 'lp-navigation-mode';
 type NavigationMode = 'sidebar' | 'floating';

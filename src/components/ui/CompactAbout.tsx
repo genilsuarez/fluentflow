@@ -3,6 +3,7 @@ import { Monitor, RotateCcw, Trash2, Wrench, X } from 'lucide-react';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useTranslation } from '../../utils/i18n';
 import { useEscapeKey } from '../../hooks/useEscapeKey';
+import { appHref, isLocalPlatformHost } from '../../utils/platformUrls';
 import '../../styles/components/compact-about.css';
 
 interface CompactAboutProps {
@@ -10,20 +11,8 @@ interface CompactAboutProps {
   onClose: () => void;
 }
 
-// En producción, DeskFlow/FluentFlow/HubFlow/LyricFlow se sirven desde el
-// mismo origin (genilsuarez.github.io/<app>/). En dev local, `learnctl start`
-// (modo unificado, el default) logra lo mismo: scripts/gateway.mjs es un
-// reverse proxy que mantiene las 4 apps detrás de un solo origin
-// (localhost:3000/<app>/) aunque cada Vite dev server siga corriendo en su
-// propio puerto por debajo. Solo con `learnctl start individual` cada app
-// queda en su propio origin real (localhost:300{0..3}) — ahí sí este botón,
-// corriendo en FluentFlow, solo puede limpiar su propio storage; es una
-// limitación de same-origin policy, no algo resoluble desde JS.
-//
-// Las claves de HubFlow por ejercicio (p.ej. 'vocabulary:v1') no tienen un
-// prefijo común enumerable, así que en vez de listar qué borrar, se lista
-// qué NO borrar: preferencias compartidas entre apps y la sesión de
-// Supabase. Todo lo demás en este origin es dato de la plataforma LearnFlow.
+// En producción y en dev local (gateway en localhost:3000), las 4 apps
+// comparten el mismo origin y por tanto el mismo localStorage.
 const PRESERVED_STORAGE_KEYS = new Set(['lp-theme', 'lp-navigation-mode', 'lp-user']);
 const isPreservedStorageKey = (key: string) =>
   PRESERVED_STORAGE_KEYS.has(key) || /^sb-.+-auth-token$/.test(key);
@@ -35,19 +24,7 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
   const [showCacheConfirm, setShowCacheConfirm] = useState(false);
   const [clearingCache, setClearingCache] = useState(false);
 
-  const isLocal =
-    location.hostname === 'localhost' ||
-    location.hostname === '127.0.0.1' ||
-    location.hostname.startsWith('192.168.');
-
-  const isUnified =
-    isLocal && location.port === '3000' && location.pathname.startsWith('/fluentflow');
-
-  const getAppHref = (path: string, port: number) => {
-    if (isUnified) return `/${path}/`;
-    if (isLocal) return `http://${location.hostname}:${port}/`;
-    return `https://genilsuarez.github.io/${path}/`;
-  };
+  const isLocal = isLocalPlatformHost();
 
   const preserveTheme = (event: React.MouseEvent<HTMLAnchorElement>) => {
     if (!isLocal) return;
@@ -156,7 +133,7 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
           </p>
 
           <nav className="about-modules" aria-label={t('about.learnFlowLinks')}>
-            <a href={getAppHref('deskflow', 3000)} onClick={preserveTheme}>
+            <a href={appHref('deskflow')} onClick={preserveTheme}>
               <span className="about-module__mark about-module__mark--portal" aria-hidden="true">
                 L
               </span>
@@ -165,7 +142,7 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
                 <span>Portal</span>
               </span>
             </a>
-            <a href={getAppHref('fluentflow', 3001)} onClick={preserveTheme}>
+            <a href={appHref('fluentflow')} onClick={preserveTheme}>
               <span className="about-module__mark about-module__mark--fluent" aria-hidden="true">
                 F
               </span>
@@ -178,7 +155,7 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
                 </span>
               </span>
             </a>
-            <a href={getAppHref('hubflow', 3002)} onClick={preserveTheme}>
+            <a href={appHref('hubflow')} onClick={preserveTheme}>
               <span className="about-module__mark about-module__mark--hub" aria-hidden="true">
                 H
               </span>
@@ -191,7 +168,7 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
                 </span>
               </span>
             </a>
-            <a href={getAppHref('lyricflow', 3003)} onClick={preserveTheme}>
+            <a href={appHref('lyricflow')} onClick={preserveTheme}>
               <span className="about-module__mark about-module__mark--lyric" aria-hidden="true">
                 LF
               </span>

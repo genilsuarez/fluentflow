@@ -130,6 +130,11 @@ export class ProgressionService {
    * Mark a module as completed and return newly unlocked modules
    */
   completeModule(moduleId: string): LearningModule[] {
+    if (!this.getModule(moduleId)) {
+      logDebug('Ignoring completion for unknown module', { moduleId }, 'ProgressionService');
+      return [];
+    }
+
     if (this.completedModules.has(moduleId)) {
       logDebug('Module already completed', { moduleId }, 'ProgressionService');
       return [];
@@ -165,6 +170,11 @@ export class ProgressionService {
   private getPrimaryLevel(module: LearningModule): string | null {
     if (!module.level) return null;
     return Array.isArray(module.level) ? module.level[0] : module.level;
+  }
+
+  /** Whether a completed module counts toward dashboard stats (catalog + level gate). */
+  private countsTowardProgress(module: LearningModule): boolean {
+    return this.completedModules.has(module.id) && this.isPreviousLevelComplete(module);
   }
 
   /**
@@ -269,9 +279,7 @@ export class ProgressionService {
     allCompleted: boolean;
   } {
     const unitModules = this.getModulesByUnit(unit);
-    const completedInUnit = unitModules.filter(module =>
-      this.completedModules.has(module.id)
-    ).length;
+    const completedInUnit = unitModules.filter(module => this.countsTowardProgress(module)).length;
 
     return {
       total: unitModules.length,
@@ -313,14 +321,16 @@ export class ProgressionService {
       };
     });
 
+    const completedModules = unitStats.reduce((sum, unit) => sum + unit.completed, 0);
+
     return {
       totalModules: this.modules.length,
-      completedModules: this.completedModules.size,
+      completedModules,
       unlockedModules: unlockedModules.length,
       lockedModules: lockedModules.length,
       completionPercentage:
         this.modules.length > 0
-          ? Math.round((this.completedModules.size / this.modules.length) * 100)
+          ? Math.round((completedModules / this.modules.length) * 100)
           : 0,
       unitStats,
     };

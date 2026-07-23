@@ -55,6 +55,7 @@ interface ProgressStore {
   getModuleCompletion: (moduleId: string) => ModuleCompletion | null;
   resetProgress: () => void;
   reconcileModuleIds: (validIds: Set<string>) => void;
+  pruneStaleCatalogData: (validIds: Set<string>) => void;
 }
 
 const getTodayString = (): string => {
@@ -333,7 +334,27 @@ export const useProgressStore = create<ProgressStore>()(
           }
         }
 
-        if (Object.keys(remapped).length === 0) return;
+        if (Object.keys(remapped).length === 0) {
+          // No fuzzy remaps — still drop stale IDs that no longer exist in the catalog.
+          set(state => {
+            const updated = { ...state.completedModules };
+            let changed = false;
+            for (const staleId of staleKeys) {
+              if (staleId in updated) {
+                delete updated[staleId];
+                changed = true;
+              }
+            }
+            if (!changed) return state;
+            logDebug(
+              'Pruned stale module IDs',
+              { removed: staleKeys },
+              'ProgressStore'
+            );
+            return { completedModules: updated };
+          });
+          return;
+        }
 
         // Apply remapping
         set(state => {
@@ -342,17 +363,52 @@ export const useProgressStore = create<ProgressStore>()(
             const entry = updated[oldId];
             if (entry) {
               delete updated[oldId];
-              updated[newId] = { ...entry, moduleId: newId };
+              const existing = updated[newId];
+              updated[newId] = existing
+                ? {
+                    ...existing,
+                    bestScore: Math.max(existing.bestScore, entry.bestScore),
+                    attempts: Math.max(existing.attempts, entry.attempts),
+                  }
+                : { ...entry, moduleId: newId };
+            }
+          }
+
+          for (const staleId of staleKeys) {
+            if (!remapped[staleId] && staleId in updated) {
+              delete updated[staleId];
             }
           }
 
           logDebug(
             'Reconciled stale module IDs',
-            { remapped, remaining: staleKeys.filter(k => !remapped[k]) },
+            { remapped, removed: staleKeys.filter(k => !remapped[k]) },
             'ProgressStore'
           );
 
           return { completedModules: updated };
+        });
+      },
+
+      pruneStaleCatalogData: (validIds: Set<string>) => {
+        get().reconcileModuleIds(validIds);
+
+        set(state => {
+          const filteredHistory = state.progressHistory.filter(
+            entry => !entry.moduleId || validIds.has(entry.moduleId)
+          );
+          if (filteredHistory.length === state.progressHistory.length) return state;
+
+          logDebug(
+            'Pruned stale progress history entries',
+            { removed: state.progressHistory.length - filteredHistory.length },
+            'ProgressStore'
+          );
+
+          return {
+            progressHistory: filteredHistory,
+            dailyProgress: rebuildDailyProgressFromHistory(filteredHistory),
+          };
         });
       },
     }),

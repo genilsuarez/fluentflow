@@ -213,6 +213,22 @@ function mergeUserScores(
   return merged;
 }
 
+function rebuildUserScoresFromCompletedModules(
+  completedModules: Record<string, ModuleCompletion>
+): Record<string, ModuleScore> {
+  const scores: Record<string, ModuleScore> = {};
+  for (const [moduleId, completion] of Object.entries(completedModules)) {
+    scores[moduleId] = {
+      moduleId,
+      bestScore: completion.bestScore,
+      attempts: completion.attempts,
+      lastAttempt: completion.completedAt,
+      timeSpent: 0,
+    };
+  }
+  return scores;
+}
+
 let downloaded = false;
 
 // Se llama una sola vez por sesión, justo después de autenticarse. No hay
@@ -270,10 +286,13 @@ async function downloadOnLogin() {
     useProgressStore.setState(nextState);
   }
 
-  if (remoteActivity?.length) {
+  const mergedCompleted = nextState.completedModules ?? completedModules;
+  if (remoteProgress?.length || remoteActivity?.length) {
     const { userScores } = useUserStore.getState();
+    const fromHistory = rebuildUserScoresFromHistory(nextHistory);
+    const fromCompleted = rebuildUserScoresFromCompletedModules(mergedCompleted);
     useUserStore.setState({
-      userScores: mergeUserScores(userScores, rebuildUserScoresFromHistory(nextHistory)),
+      userScores: mergeUserScores(mergeUserScores(userScores, fromHistory), fromCompleted),
     });
   }
 }

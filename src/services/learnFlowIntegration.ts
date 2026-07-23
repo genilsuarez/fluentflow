@@ -1,11 +1,5 @@
 import type { LearningModule } from '../types';
-
-const PROGRESS_KEY = 'learnflow:progress:fluentflow:v1';
-const ACTIVITY_KEY = 'learnflow:activity:fluentflow:v1';
-const MAX_ACTIVITY_EVENTS = 200;
-const CEFR_LEVELS = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'] as const;
-
-type CefrLevel = (typeof CEFR_LEVELS)[number];
+import { buildCefrStats, getCountedCompletionIds, getPrimaryLevel } from '../utils/progressionCounting';
 
 interface ProgressEntrySource {
   eventId?: string;
@@ -30,6 +24,10 @@ interface LearnFlowProgressSource {
   completedModules: Record<string, ModuleCompletionSource>;
 }
 
+const PROGRESS_KEY = 'learnflow:progress:fluentflow:v1';
+const ACTIVITY_KEY = 'learnflow:activity:fluentflow:v1';
+const MAX_ACTIVITY_EVENTS = 200;
+
 const clampPercentage = (value: number): number => Math.min(100, Math.max(0, value));
 
 const toIsoTimestamp = (value: string): string | null => {
@@ -38,14 +36,9 @@ const toIsoTimestamp = (value: string): string | null => {
   return Number.isNaN(date.getTime()) ? null : date.toISOString();
 };
 
-const getModuleLevel = (module: LearningModule): CefrLevel => {
-  const level = Array.isArray(module.level) ? module.level[0] : module.level;
-  return CEFR_LEVELS.includes(level as CefrLevel) ? (level as CefrLevel) : 'a1';
-};
-
 const hashCatalog = (modules: LearningModule[]): string => {
   const catalogIdentity = modules
-    .map(module => `${module.id}:${getModuleLevel(module)}`)
+    .map(module => `${module.id}:${getPrimaryLevel(module)}`)
     .sort()
     .join('|');
   let hash = 2166136261;
@@ -106,7 +99,7 @@ export const publishLearnFlowIntegration = (
     modules.map(module => {
       const completion = source.completedModules[module.id];
       const existing = existingContent[module.id];
-      const completed = Boolean(completion) || Boolean(existing?.completed);
+      const completed = Boolean(completion);
       const bestScore = Math.max(
         completion ? clampPercentage(completion.bestScore) : 0,
         existing?.bestScorePct ?? 0
@@ -124,7 +117,7 @@ export const publishLearnFlowIntegration = (
           contentId: module.id,
           title: module.name,
           contentType: 'module',
-          cefrLevel: getModuleLevel(module).toUpperCase(),
+          cefrLevel: getPrimaryLevel(module).toUpperCase(),
           progressPct: completed ? 100 : (existing?.progressPct ?? 0),
           completed,
           completedAt,
@@ -135,39 +128,11 @@ export const publishLearnFlowIntegration = (
     })
   );
 
-  const completedIds = new Set(
-    Object.entries(content)
-      .filter(([, item]) => item.completed)
-      .map(([moduleId]) => moduleId)
-      .filter(moduleId => knownModuleIds.has(moduleId))
+  const completedIds = getCountedCompletionIds(
+    modules,
+    Object.keys(source.completedModules)
   );
-
-  const cefr = Object.fromEntries(
-    CEFR_LEVELS.map(level => {
-      const levelModules = modules.filter(module => getModuleLevel(module) === level);
-      const completedModules = levelModules.filter(module => completedIds.has(module.id)).length;
-      const progressPct =
-        levelModules.length > 0 ? (completedModules / levelModules.length) * 100 : 0;
-      const status =
-        completedModules === 0
-          ? 'not_started'
-          : completedModules === levelModules.length
-            ? 'completed'
-            : progressPct >= 80
-              ? 'near_completion'
-              : 'in_progress';
-
-      return [
-        level.toUpperCase(),
-        {
-          progressPct,
-          completedModules,
-          totalModules: levelModules.length,
-          status,
-        },
-      ];
-    })
-  );
+  const cefr = buildCefrStats(modules, completedIds);
 
   const progress = {
     schemaVersion: 1,
@@ -175,7 +140,7 @@ export const publishLearnFlowIntegration = (
     updatedAt: publishedAt,
     catalogVersion: hashCatalog(modules),
     summary: {
-      progressPct: (completedIds.size / modules.length) * 100,
+      progressPct: modules.length > 0 ? (completedIds.size / modules.length) * 100 : 0,
       completedContent: completedIds.size,
       totalContent: modules.length,
       attemptedContent: attemptedIds.size,

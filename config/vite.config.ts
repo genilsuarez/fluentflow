@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { writeFileSync, readdirSync } from 'fs';
+import { gatewayRedirectPlugin } from '../../scripts/vite-gateway-redirect.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -18,6 +19,7 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [
+      gatewayRedirectPlugin({ app: 'fluentflow' }),
       react({
         jsxRuntime: 'automatic',
         jsxImportSource: 'react'

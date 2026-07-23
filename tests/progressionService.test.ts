@@ -98,6 +98,76 @@ describe('ProgressionService', () => {
       expect(stats.lockedModules).toBe(1);
       expect(stats.completionPercentage).toBe(33); // 1/3 * 100
     });
+
+    it('should keep total completed aligned with unit stats', () => {
+      progressionService.completeModule('module-a1-1');
+      progressionService.completeModule('module-a1-2');
+      const stats = progressionService.getProgressionStats();
+      const unitSum = stats.unitStats.reduce((sum, unit) => sum + unit.completed, 0);
+      expect(stats.completedModules).toBe(unitSum);
+    });
+  });
+
+  describe('skip-ahead completions', () => {
+    let multiLevelService: ProgressionService;
+    let multiLevelModules: LearningModule[];
+
+    beforeEach(() => {
+      multiLevelService = new ProgressionService();
+      multiLevelModules = [
+        {
+          id: 'a1-only',
+          name: 'A1 Module',
+          learningMode: 'flashcard',
+          level: ['a1'],
+          category: 'Vocabulary',
+          unit: 1,
+          prerequisites: [],
+          estimatedTime: 5,
+          difficulty: 1,
+        },
+        {
+          id: 'a2-valid',
+          name: 'A2 Module',
+          learningMode: 'flashcard',
+          level: ['a2'],
+          category: 'Vocabulary',
+          unit: 2,
+          prerequisites: [],
+          estimatedTime: 5,
+          difficulty: 2,
+        },
+        {
+          id: 'b1-incomplete',
+          name: 'B1 Module',
+          learningMode: 'flashcard',
+          level: ['b1'],
+          category: 'Vocabulary',
+          unit: 3,
+          prerequisites: [],
+          estimatedTime: 5,
+          difficulty: 3,
+        },
+        {
+          id: 'b2-skip',
+          name: 'B2 Skip',
+          learningMode: 'flashcard',
+          level: ['b2'],
+          category: 'Vocabulary',
+          unit: 4,
+          prerequisites: [],
+          estimatedTime: 5,
+          difficulty: 4,
+        },
+      ];
+      multiLevelService.initialize(multiLevelModules, ['a1-only', 'a2-valid', 'b2-skip']);
+    });
+
+    it('should not count completions above an incomplete previous level', () => {
+      const stats = multiLevelService.getProgressionStats();
+      expect(stats.completedModules).toBe(2);
+      expect(stats.unitStats.find(unit => unit.unit === 4)?.completed).toBe(0);
+    });
   });
 
   describe('getUnitCompletionStatus', () => {
