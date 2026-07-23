@@ -82,6 +82,16 @@ function scheduleSync() {
   }, 500);
 }
 
+// Postgres/PostgREST devuelve timestamptz como "2026-07-16T00:00:00+00:00"
+// (sin milisegundos, offset en vez de "Z"). progress-reader.js (DeskFlow) exige
+// match exacto con Date#toISOString() para aceptar una fecha — sin normalizar,
+// cualquier completedAt remoto invalida el documento derivado que lee DeskFlow.
+function normalizeIsoDate(value: string | null | undefined): string | null {
+  if (!value) return null;
+  const parsed = new Date(value);
+  return Number.isNaN(parsed.getTime()) ? null : parsed.toISOString();
+}
+
 // Mezcla filas remotas en completedModules sin retroceder progreso ya
 // alcanzado localmente (favorece completado, mejor puntaje, más intentos).
 function mergeRemoteProgress(
@@ -94,7 +104,8 @@ function mergeRemoteProgress(
     const existing = merged[row.content_id];
     merged[row.content_id] = {
       moduleId: row.content_id,
-      completedAt: row.completed_at || existing?.completedAt || new Date().toISOString(),
+      completedAt:
+        normalizeIsoDate(row.completed_at) || existing?.completedAt || new Date().toISOString(),
       bestScore: Math.max(row.best_score_pct ?? 0, existing?.bestScore ?? 0),
       attempts: Math.max(row.attempts ?? 0, existing?.attempts ?? 0),
     };

@@ -232,6 +232,10 @@ export const en = {
     developerTitle: 'Cloud Expert passionate about GenAI',
     screenInformation: 'Screen Information',
     clickToViewScreenInfo: 'Click to view screen information',
+    clearCache: 'Clear cache',
+    clearCacheDescription:
+      'This deletes FluentFlow cached assets, saved progress, and settings, then reloads. Shared cross-app preferences and your login session are kept.',
+    clearCacheConfirm: 'Clear & reload',
     acknowledgments: 'Acknowledgments',
     acknowledgementsText:
       'Built with passion for language learning and education. Special thanks to the open-source community for the amazing tools and libraries that made this project possible.',

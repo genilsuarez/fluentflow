@@ -233,6 +233,10 @@ export const es = {
     developerTitle: 'Experto Cloud apasionado por la GenAI',
     screenInformation: 'Información de Pantalla',
     clickToViewScreenInfo: 'Clic para ver información de pantalla',
+    clearCache: 'Limpiar caché',
+    clearCacheDescription:
+      'Esto elimina los recursos en caché de FluentFlow, el progreso guardado y los ajustes, y recarga. Las preferencias compartidas entre apps y tu sesión de acceso se mantienen.',
+    clearCacheConfirm: 'Limpiar y recargar',
     acknowledgments: 'Agradecimientos',
     acknowledgementsText:
       'Construido con pasión por el aprendizaje de idiomas y la educación. Agradecimientos especiales a la comunidad de código abierto por las increíbles herramientas y librerías que hicieron posible este proyecto.',
