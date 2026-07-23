@@ -6,6 +6,7 @@
  *   <script src="lp-login.js"></script>
  *   Then call: lpLogin.open()  / lpLogin.getUser() / lpLogin.onUpdate(callback)
  */
+/* eslint-disable no-var */
 var lpLogin = (function () {
   'use strict';
 
@@ -31,10 +32,15 @@ var lpLogin = (function () {
   }
 
   function logout() {
+    var user = getUser();
+    var wasCloud = user && user.isSupabaseUser;
     if (window.lpSupabase && window.lpSupabase.signOut) {
       window.lpSupabase.signOut();
     }
     setUser(null);
+    if (wasCloud && window.lpGuestReset && window.lpGuestReset.clearGuestLocalProgress) {
+      window.lpGuestReset.clearGuestLocalProgress();
+    }
   }
 
   function setUserFromSupabase(user, profile) {
@@ -153,7 +159,12 @@ var lpLogin = (function () {
         return;
       }
       var u = getUser();
-      setUser({ id: (u && u.id) || String(Date.now()), name: trimmed });
+      var nextUser = { id: (u && u.id) || String(Date.now()), name: trimmed };
+      if (u && u.isSupabaseUser) {
+        nextUser.isSupabaseUser = true;
+        if (u.email) nextUser.email = u.email;
+      }
+      setUser(nextUser);
       close();
     });
 

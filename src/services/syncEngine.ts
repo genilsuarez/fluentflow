@@ -77,7 +77,7 @@ function scheduleSync() {
   syncTimer = setTimeout(async () => {
     syncTimer = null;
     const authed = await isAuthenticated().catch(() => false);
-    if (!authed) return;
+    if (!authed || !cloudHydrated) return;
 
     const { completedModules, progressHistory } = useProgressStore.getState();
     if (Object.keys(completedModules).length) {
@@ -230,18 +230,24 @@ function rebuildUserScoresFromCompletedModules(
 }
 
 let downloaded = false;
+let cloudHydrated = false;
+
+function resetDownloadState() {
+  downloaded = false;
+  cloudHydrated = false;
+}
 
 // Se llama una sola vez por sesión, justo después de autenticarse. No hay
 // polling — el refresh normal ocurre vía scheduleSync() al completar algo.
-async function downloadOnLogin() {
-  if (downloaded) return;
+async function downloadOnLogin({ force = false } = {}) {
+  if (downloaded && !force) return;
   const authed = await isAuthenticated().catch(() => false);
   if (!authed) return;
 
   // Must wait for progress-storage rehydration — otherwise a late rehydrate
   // overwrites the merged remote progress with stale/empty local state.
   await waitForProgressHydration();
-  if (downloaded) return;
+  if (downloaded && !force) return;
 
   // DeskFlow may have already downloaded cloud data into the v1 projection keys.
   // Import those into Zustand before merging remote rows.
@@ -252,15 +258,15 @@ async function downloadOnLogin() {
     fetchActivityEvents().catch(() => null),
   ]);
 
-  const { completedModules, progressHistory } = useProgressStore.getState();
-  const hasLocalData = Object.keys(completedModules).length > 0 || progressHistory.length > 0;
-
   if (remoteProgress === null && remoteActivity === null) {
-    if (hasLocalData) downloaded = true;
     return;
   }
 
   downloaded = true;
+  cloudHydrated = true;
+
+  const { completedModules, progressHistory } = useProgressStore.getState();
+
   if (!remoteProgress?.length && !remoteActivity?.length) return;
 
   const nextState: {
@@ -308,13 +314,16 @@ export function initSyncEngine(): void {
   // Same-origin DeskFlow may have populated v1 before FluentFlow mounts — import on cold start.
   void waitForProgressHydration().then(() => bootstrapFromLocalProjection());
 
-  onAuthStateChange(async (_event, session) => {
-    if (session?.user) {
-      await downloadOnLogin();
-      scheduleSync();
+  onAuthStateChange(async (event, session) => {
+    if (!session?.user) {
+      resetDownloadState();
       return;
     }
-    downloaded = false;
+    if (event === 'SIGNED_IN') {
+      resetDownloadState();
+    }
+    await downloadOnLogin({ force: event === 'SIGNED_IN' });
+    scheduleSync();
   });
   isAuthenticated()
     .then(async authed => {
