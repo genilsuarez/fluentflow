@@ -17,7 +17,7 @@ export interface ProgressEntry {
   timeSpent?: number;
 }
 
-interface DailyProgress {
+export interface DailyProgress {
   date: string;
   totalScore: number;
   totalQuestions: number;
@@ -67,6 +67,47 @@ const getDateString = (daysAgo: number): string => {
   d.setDate(d.getDate() - daysAgo);
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 };
+
+/** Rebuild daily aggregates from session history (used after cloud download). */
+export function rebuildDailyProgressFromHistory(
+  history: ProgressEntry[]
+): Record<string, DailyProgress> {
+  const daily: Record<string, DailyProgress> = {};
+
+  for (const entry of history) {
+    const day = entry.date || entry.occurredAt.slice(0, 10);
+    const existing = daily[day] || {
+      date: day,
+      totalScore: 0,
+      totalQuestions: 0,
+      totalCorrect: 0,
+      averageScore: 0,
+      sessionsCount: 0,
+      timeSpent: 0,
+      modules: [],
+    };
+
+    const updated: DailyProgress = {
+      ...existing,
+      totalScore: existing.totalScore + entry.score,
+      totalQuestions: existing.totalQuestions + entry.totalQuestions,
+      totalCorrect: existing.totalCorrect + entry.correctAnswers,
+      sessionsCount: existing.sessionsCount + 1,
+      timeSpent: existing.timeSpent + (entry.timeSpent || 0),
+      modules:
+        entry.moduleId && !existing.modules.includes(entry.moduleId)
+          ? [...existing.modules, entry.moduleId]
+          : existing.modules,
+    };
+    updated.averageScore =
+      updated.totalQuestions > 0
+        ? Math.round((updated.totalCorrect / updated.totalQuestions) * 100)
+        : 0;
+    daily[day] = updated;
+  }
+
+  return daily;
+}
 
 export const useProgressStore = create<ProgressStore>()(
   persist(

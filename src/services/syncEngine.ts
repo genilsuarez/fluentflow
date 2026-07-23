@@ -5,9 +5,12 @@
 import {
   useProgressStore,
   waitForProgressHydration,
+  rebuildDailyProgressFromHistory,
   type ProgressEntry,
   type ModuleCompletion,
 } from '../stores/progressStore';
+import { useUserStore } from '../stores/userStore';
+import type { ModuleScore } from '../types';
 import {
   isAuthenticated,
   onAuthStateChange,
@@ -130,11 +133,7 @@ function mergeRemoteActivityHistory(
 
     const metrics = row.metrics ?? {};
     const totalQuestions = Number(
-      'totalQuestions' in metrics
-        ? metrics.totalQuestions
-        : 'total' in metrics
-          ? metrics.total
-          : 0
+      'totalQuestions' in metrics ? metrics.totalQuestions : 'total' in metrics ? metrics.total : 0
     );
     const correctAnswers = Number(
       'correctAnswers' in metrics
@@ -158,7 +157,59 @@ function mergeRemoteActivityHistory(
     });
   }
 
-  return [...byRunId.values()].sort((left, right) => right.occurredAt.localeCompare(left.occurredAt));
+  return [...byRunId.values()].sort((left, right) =>
+    right.occurredAt.localeCompare(left.occurredAt)
+  );
+}
+
+function entryScorePct(entry: ProgressEntry): number {
+  if (entry.totalQuestions > 0) {
+    return Math.round((entry.correctAnswers / entry.totalQuestions) * 100);
+  }
+  return Math.max(0, Math.min(100, entry.score));
+}
+
+function rebuildUserScoresFromHistory(history: ProgressEntry[]): Record<string, ModuleScore> {
+  const scores: Record<string, ModuleScore> = {};
+
+  for (const entry of history) {
+    if (!entry.moduleId) continue;
+    const scorePct = entryScorePct(entry);
+    const existing = scores[entry.moduleId];
+    scores[entry.moduleId] = {
+      moduleId: entry.moduleId,
+      bestScore: Math.max(existing?.bestScore ?? 0, scorePct),
+      attempts: (existing?.attempts ?? 0) + 1,
+      lastAttempt:
+        existing && existing.lastAttempt > entry.occurredAt
+          ? existing.lastAttempt
+          : entry.occurredAt,
+      timeSpent: (existing?.timeSpent ?? 0) + (entry.timeSpent ?? 0),
+    };
+  }
+
+  return scores;
+}
+
+function mergeUserScores(
+  local: Record<string, ModuleScore>,
+  fromHistory: Record<string, ModuleScore>
+): Record<string, ModuleScore> {
+  const merged = { ...local };
+  for (const [moduleId, score] of Object.entries(fromHistory)) {
+    const existing = merged[moduleId];
+    merged[moduleId] = {
+      moduleId,
+      bestScore: Math.max(existing?.bestScore ?? 0, score.bestScore),
+      attempts: Math.max(existing?.attempts ?? 0, score.attempts),
+      lastAttempt:
+        existing && existing.lastAttempt > score.lastAttempt
+          ? existing.lastAttempt
+          : score.lastAttempt,
+      timeSpent: Math.max(existing?.timeSpent ?? 0, score.timeSpent),
+    };
+  }
+  return merged;
 }
 
 let downloaded = false;
@@ -188,17 +239,31 @@ async function downloadOnLogin() {
   const nextState: {
     completedModules?: Record<string, ModuleCompletion>;
     progressHistory?: ProgressEntry[];
+    dailyProgress?: Record<string, import('../stores/progressStore').DailyProgress>;
   } = {};
+
+  let nextHistory = progressHistory;
 
   if (remoteProgress?.length) {
     nextState.completedModules = mergeRemoteProgress(completedModules, remoteProgress);
   }
   if (remoteActivity?.length) {
-    nextState.progressHistory = mergeRemoteActivityHistory(progressHistory, remoteActivity);
+    nextHistory = mergeRemoteActivityHistory(progressHistory, remoteActivity);
+    nextState.progressHistory = nextHistory;
+    // Stats (sessions, time, averages) derive from dailyProgress — rebuild after
+    // merging remote activity so they stay aligned with the history ledger.
+    nextState.dailyProgress = rebuildDailyProgressFromHistory(nextHistory);
   }
 
   if (Object.keys(nextState).length) {
     useProgressStore.setState(nextState);
+  }
+
+  if (remoteActivity?.length) {
+    const { userScores } = useUserStore.getState();
+    useUserStore.setState({
+      userScores: mergeUserScores(userScores, rebuildUserScoresFromHistory(nextHistory)),
+    });
   }
 }
 
