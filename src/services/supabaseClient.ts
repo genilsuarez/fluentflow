@@ -21,8 +21,46 @@ export async function isAuthenticated(): Promise<boolean> {
   return !!session?.user;
 }
 
+export function getSession() {
+  return supabase.auth.getSession();
+}
+
+export function signInWithGoogle() {
+  return supabase.auth.signInWithOAuth({
+    provider: 'google',
+    options: { redirectTo: window.location.origin + window.location.pathname },
+  });
+}
+
+export function signInWithMagicLink(email: string) {
+  return supabase.auth.signInWithOtp({
+    email,
+    options: { emailRedirectTo: window.location.origin + window.location.pathname },
+  });
+}
+
+export function signOut() {
+  return supabase.auth.signOut();
+}
+
 export function onAuthStateChange(callback: Parameters<typeof supabase.auth.onAuthStateChange>[0]) {
   return supabase.auth.onAuthStateChange(callback);
+}
+
+export interface UserProfile {
+  id: string;
+  name: string;
+  avatar_url?: string | null;
+}
+
+export async function fetchProfile(): Promise<UserProfile | null> {
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return null;
+
+  const { data } = await supabase.from('profiles').select('*').eq('id', user.id).single();
+  return data;
 }
 
 export interface ProgressContentItem {

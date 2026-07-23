@@ -6,6 +6,15 @@ import { initializeTheme } from './utils/themeInitializer';
 import { clearChunkRetryFlag } from './utils/lazyWithRetry';
 import './utils/safariDetection';
 import './utils/cursorBrowserDetection';
+import {
+  fetchProfile,
+  getSession,
+  isAuthenticated,
+  onAuthStateChange,
+  signInWithGoogle,
+  signInWithMagicLink,
+  signOut,
+} from './services/supabaseClient';
 
 // Registrar Service Worker para modo offline
 if ('serviceWorker' in navigator) {
@@ -70,6 +79,17 @@ try {
 
   // Initialize theme before React renders to prevent FOUC
   initializeTheme();
+
+  // Bridge for lp-login.js cloud auth buttons (shared modal in public/)
+  (window as Window & { lpSupabase?: Record<string, unknown> }).lpSupabase = {
+    signInWithGoogle,
+    signInWithMagicLink,
+    signOut,
+    fetchProfile,
+    isAuthenticated,
+    onAuthStateChange,
+    getSession,
+  };
 
   const rootElement = document.getElementById('root');
   if (!rootElement) {

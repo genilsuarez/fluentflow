@@ -31,9 +31,16 @@ export const useUserStore = create<UserStore>()(
 
       setUser: user => {
         set({ user });
-        // Sync to shared cross-app key
         if (user) {
-          localStorage.setItem('lp-user', JSON.stringify({ id: user.id, name: user.name }));
+          localStorage.setItem(
+            'lp-user',
+            JSON.stringify({
+              id: user.id,
+              name: user.name,
+              ...(user.email ? { email: user.email } : {}),
+              ...(user.isSupabaseUser ? { isSupabaseUser: true } : {}),
+            })
+          );
         } else {
           localStorage.removeItem('lp-user');
         }
@@ -141,7 +148,12 @@ export const useUserStore = create<UserStore>()(
             if (shared) {
               const parsed = JSON.parse(shared);
               if (parsed && parsed.name) {
-                state.setUser({ id: parsed.id || String(Date.now()), name: parsed.name });
+                state.setUser({
+                  id: parsed.id || String(Date.now()),
+                  name: parsed.name,
+                  email: parsed.email,
+                  isSupabaseUser: parsed.isSupabaseUser,
+                });
               }
             }
           } catch {
@@ -152,7 +164,12 @@ export const useUserStore = create<UserStore>()(
         if (state?.user && !localStorage.getItem('lp-user')) {
           localStorage.setItem(
             'lp-user',
-            JSON.stringify({ id: state.user.id, name: state.user.name })
+            JSON.stringify({
+              id: state.user.id,
+              name: state.user.name,
+              ...(state.user.email ? { email: state.user.email } : {}),
+              ...(state.user.isSupabaseUser ? { isSupabaseUser: true } : {}),
+            })
           );
         }
       },
@@ -170,7 +187,12 @@ if (typeof window !== 'undefined') {
         const parsed = JSON.parse(e.newValue);
         if (parsed?.name && parsed.name !== current?.name) {
           useUserStore.setState({
-            user: { id: parsed.id || String(Date.now()), name: parsed.name },
+            user: {
+              id: parsed.id || String(Date.now()),
+              name: parsed.name,
+              email: parsed.email,
+              isSupabaseUser: parsed.isSupabaseUser,
+            },
           });
         }
       } catch {
@@ -184,10 +206,17 @@ if (typeof window !== 'undefined') {
   // Same-tab sync: listen to lpLogin.onUpdate (vanilla modal writes lp-user directly)
   const lpLogin = (window as any).lpLogin;
   if (lpLogin && lpLogin.onUpdate) {
-    lpLogin.onUpdate((user: { id: string; name: string } | null) => {
+    lpLogin.onUpdate((user: { id: string; name: string; email?: string; isSupabaseUser?: boolean } | null) => {
       const current = useUserStore.getState().user;
       if (user && user.name !== current?.name) {
-        useUserStore.setState({ user: { id: user.id, name: user.name } });
+        useUserStore.setState({
+          user: {
+            id: user.id,
+            name: user.name,
+            email: user.email,
+            isSupabaseUser: user.isSupabaseUser,
+          },
+        });
       } else if (!user && current) {
         useUserStore.setState({ user: null });
       }

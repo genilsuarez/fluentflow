@@ -14,6 +14,7 @@ import { useTranslation } from './utils/i18n';
 import { verifyCacheIntegrity } from './services/offlineManager';
 import { publishLearnFlowIntegration } from './services/learnFlowIntegration';
 import { initSyncEngine } from './services/syncEngine';
+import { setupSupabaseAuth } from './services/authSetup';
 import { toast } from './stores/toastStore';
 import { preloadVoices } from './utils/speech';
 
@@ -78,6 +79,7 @@ const AppContent: React.FC = () => {
 
   // Cloud sync — no-ops until a Supabase session exists (shared cross-app via localStorage)
   useEffect(() => {
+    setupSupabaseAuth();
     initSyncEngine();
   }, []);
 
