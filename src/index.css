@@ -173,3 +173,18 @@ body:has(.my-progress) {
  * All styles moved to module-card.css with proper BEM-Like nomenclature
  * This includes: .module-card, .module-card--*, .module-card__*
  */
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 16px;
+  z-index: 10000;
+  padding: 10px 18px;
+  background: var(--lp-accent);
+  color: var(--lp-ink-inverse);
+  font-weight: 700;
+  font-size: 0.8rem;
+  border-radius: var(--lp-radius-md);
+  text-decoration: none;
+}
+.skip-link:focus { left: 16px; }

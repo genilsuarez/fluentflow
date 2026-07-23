@@ -3,7 +3,8 @@ import { Monitor, RotateCcw, Trash2, Wrench, X } from 'lucide-react';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useTranslation } from '../../utils/i18n';
 import { useEscapeKey } from '../../hooks/useEscapeKey';
-import { appHref, isLocalPlatformHost } from '../../utils/platformUrls';
+import { appHref, isLocalPlatformHost, type PlatformApp } from '../../utils/platformUrls';
+import { aboutText, getAboutContent } from '../../data/lpAboutContent';
 import '../../styles/components/compact-about.css';
 
 interface CompactAboutProps {
@@ -95,6 +96,8 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
   })();
 
   const screenInfo = showScreenInfo ? getScreenInfo() : null;
+  const aboutContent = getAboutContent();
+  const aboutLang: 'es' | 'en' = language === 'es' ? 'es' : 'en';
 
   useEscapeKey(isOpen, handleClose);
 
@@ -119,8 +122,8 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
             L
           </div>
           <div className="about-header__text">
-            <p className="about-eyebrow">LearnFlow · Plataforma</p>
-            <h2 id="about-title">{t('about.title')}</h2>
+            <p className="about-eyebrow">{aboutContent.eyebrow}</p>
+            <h2 id="about-title">{aboutText(aboutContent.title, aboutLang)}</h2>
           </div>
           <button
             type="button"
@@ -134,56 +137,24 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
 
         <div className="about-body">
           <p id="about-description" className="about-description">
-            {language === 'es'
-              ? 'Una plataforma para aprender idiomas con estructura, práctica y música.'
-              : 'A platform for learning languages with structure, practice, and music.'}
+            {aboutText(aboutContent.description, aboutLang)}
           </p>
 
           <nav className="about-modules" aria-label={t('about.learnFlowLinks')}>
-            <a href={appHref('deskflow')} onClick={preserveTheme}>
-              <span className="about-module__mark about-module__mark--portal" aria-hidden="true">
-                L
-              </span>
-              <span className="about-module__text">
-                <strong>LearnFlow</strong>
-                <span>Portal</span>
-              </span>
-            </a>
-            <a href={appHref('fluentflow')} onClick={preserveTheme}>
-              <span className="about-module__mark about-module__mark--fluent" aria-hidden="true">
-                F
-              </span>
-              <span className="about-module__text">
-                <strong>FluentFlow</strong>
-                <span>
-                  {language === 'es'
-                    ? 'Ruta de inglés por niveles CEFR'
-                    : 'English path by CEFR levels'}
+            {aboutContent.modules.map(mod => (
+              <a key={mod.id} href={appHref(mod.id as PlatformApp)} onClick={preserveTheme}>
+                <span
+                  className={`about-module__mark about-module__mark--${mod.markClass}`}
+                  aria-hidden="true"
+                >
+                  {mod.mark}
                 </span>
-              </span>
-            </a>
-            <a href={appHref('hubflow')} onClick={preserveTheme}>
-              <span className="about-module__mark about-module__mark--hub" aria-hidden="true">
-                H
-              </span>
-              <span className="about-module__text">
-                <strong>HubFlow</strong>
-                <span>
-                  {language === 'es'
-                    ? 'Práctica flexible de gramática'
-                    : 'Flexible grammar practice'}
+                <span className="about-module__text">
+                  <strong>{mod.name}</strong>
+                  <span>{aboutText(mod.subtitle, aboutLang)}</span>
                 </span>
-              </span>
-            </a>
-            <a href={appHref('lyricflow')} onClick={preserveTheme}>
-              <span className="about-module__mark about-module__mark--lyric" aria-hidden="true">
-                LF
-              </span>
-              <span className="about-module__text">
-                <strong>LyricFlow</strong>
-                <span>{language === 'es' ? 'Aprender con música' : 'Learn with music'}</span>
-              </span>
-            </a>
+              </a>
+            ))}
           </nav>
 
           {developmentMode && (
@@ -272,15 +243,11 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
         <footer className="about-footer">
           <div className="about-author">
             <div className="about-author__avatar" aria-hidden="true">
-              GS
+              {aboutContent.author.initials}
             </div>
             <div className="about-author__info">
-              <strong>{language === 'es' ? 'Genil Suárez' : 'Genil Suárez'}</strong>
-              <span>
-                {language === 'es'
-                  ? 'Diseñado y desarrollado como proyecto personal'
-                  : 'Designed and built as a personal project'}
-              </span>
+              <strong>{aboutContent.author.name}</strong>
+              <span>{aboutText(aboutContent.author.bio, aboutLang)}</span>
             </div>
           </div>
         </footer>
