@@ -11,6 +11,14 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
     persistSession: true,
     autoRefreshToken: true,
     detectSessionInUrl: true,
+    // PKCE (default) awaits the code challenge before window.location.assign()
+    // inside signInWithOAuth — that async gap between the tap and the actual
+    // navigation is a pattern associated with redirects silently not
+    // happening on iOS Safari/Chrome (WebKit). 'implicit' builds the URL
+    // synchronously, no gap. Trade-off: PKCE better protects against auth
+    // code interception; implicit is the classic OAuth flow, less robust on
+    // that front but widely used and without this issue.
+    flowType: 'implicit',
   },
 });
 
