@@ -317,20 +317,46 @@ export function initSyncEngine(): void {
   onAuthStateChange(async (event, session) => {
     if (!session?.user) {
       resetDownloadState();
+      (window as Window & { lpGuestReset?: { clearExplicitLogout: () => void } }).lpGuestReset?.clearExplicitLogout?.();
       return;
     }
-    if (event === 'SIGNED_IN') {
+
+    const guestReset = (window as Window & {
+      lpGuestReset?: {
+        shouldRejectSession: () => boolean;
+        shouldForceCloudDownload: () => boolean;
+        clearExplicitLogout: () => void;
+      };
+    }).lpGuestReset;
+
+    if (guestReset?.shouldRejectSession?.()) {
+      return;
+    }
+
+    if (event === 'SIGNED_IN' || guestReset?.shouldForceCloudDownload?.()) {
       resetDownloadState();
     }
-    await downloadOnLogin({ force: event === 'SIGNED_IN' });
+
+    await downloadOnLogin({
+      force: event === 'SIGNED_IN' || !!guestReset?.shouldForceCloudDownload?.(),
+    });
     scheduleSync();
   });
   isAuthenticated()
     .then(async authed => {
-      if (authed) {
-        await downloadOnLogin();
-        scheduleSync();
-      }
+      if (!authed) return;
+
+      const guestReset = (window as Window & {
+        lpGuestReset?: {
+          shouldRejectSession: () => boolean;
+          shouldForceCloudDownload: () => boolean;
+        };
+      }).lpGuestReset;
+
+      if (guestReset?.shouldRejectSession?.()) return;
+
+      await downloadOnLogin({ force: !!guestReset?.shouldForceCloudDownload?.() });
+      scheduleSync();
     })
     .catch(() => {});
 }

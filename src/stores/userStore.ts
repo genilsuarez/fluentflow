@@ -141,36 +141,36 @@ export const useUserStore = create<UserStore>()(
     {
       name: 'user-storage',
       onRehydrateStorage: () => state => {
-        // On app load, sync from shared lp-user key if local store is empty
-        if (state && !state.user) {
-          try {
-            const shared = localStorage.getItem('lp-user');
-            if (shared) {
-              const parsed = JSON.parse(shared);
-              if (parsed && parsed.name) {
-                state.setUser({
-                  id: parsed.id || String(Date.now()),
-                  name: parsed.name,
-                  email: parsed.email,
-                  isSupabaseUser: parsed.isSupabaseUser,
-                });
-              }
-            }
-          } catch {
-            /* ignore parse errors */
-          }
+        if (!state) return;
+
+        let shared: {
+          id?: string;
+          name?: string;
+          email?: string;
+          isSupabaseUser?: boolean;
+        } | null = null;
+
+        try {
+          const raw = localStorage.getItem('lp-user');
+          shared = raw ? JSON.parse(raw) : null;
+        } catch {
+          shared = null;
         }
-        // If user exists locally but lp-user is empty, write it out
-        if (state?.user && !localStorage.getItem('lp-user')) {
-          localStorage.setItem(
-            'lp-user',
-            JSON.stringify({
-              id: state.user.id,
-              name: state.user.name,
-              ...(state.user.email ? { email: state.user.email } : {}),
-              ...(state.user.isSupabaseUser ? { isSupabaseUser: true } : {}),
-            })
-          );
+
+        if (!shared?.name) {
+          if (state.user) {
+            state.user = null;
+          }
+          return;
+        }
+
+        if (!state.user || state.user.name !== shared.name) {
+          state.setUser({
+            id: shared.id || String(Date.now()),
+            name: shared.name,
+            email: shared.email,
+            isSupabaseUser: shared.isSupabaseUser,
+          });
         }
       },
     }
@@ -181,11 +181,10 @@ export const useUserStore = create<UserStore>()(
 if (typeof window !== 'undefined') {
   window.addEventListener('storage', e => {
     if (e.key !== 'lp-user') return;
-    const current = useUserStore.getState().user;
     if (e.newValue) {
       try {
         const parsed = JSON.parse(e.newValue);
-        if (parsed?.name && parsed.name !== current?.name) {
+        if (parsed?.name) {
           useUserStore.setState({
             user: {
               id: parsed.id || String(Date.now()),
@@ -198,7 +197,7 @@ if (typeof window !== 'undefined') {
       } catch {
         /* ignore */
       }
-    } else if (current) {
+    } else {
       useUserStore.setState({ user: null });
     }
   });
