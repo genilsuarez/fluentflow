@@ -11,13 +11,14 @@ interface CompactAboutProps {
 }
 
 // En producción, DeskFlow/FluentFlow/HubFlow/LyricFlow se sirven desde el
-// mismo origin (genilsuarez.github.io/<app>/), así que localStorage,
-// sessionStorage, Cache Storage y los service workers YA son compartidos por
-// las 4 apps a nivel de navegador — este botón, corriendo en FluentFlow,
-// también alcanza el storage de las otras tres sin ningún mecanismo extra.
-// (En dev local cada app corre en su propio puerto = su propio origin, así
-// que ahí solo puede limpiar lo que ve: el storage propio de FluentFlow. Es
-// una limitación de same-origin policy, no algo resoluble desde JS.)
+// mismo origin (genilsuarez.github.io/<app>/). En dev local, `learnctl start`
+// (modo unificado, el default) logra lo mismo: scripts/gateway.mjs es un
+// reverse proxy que mantiene las 4 apps detrás de un solo origin
+// (localhost:3000/<app>/) aunque cada Vite dev server siga corriendo en su
+// propio puerto por debajo. Solo con `learnctl start individual` cada app
+// queda en su propio origin real (localhost:300{0..3}) — ahí sí este botón,
+// corriendo en FluentFlow, solo puede limpiar su propio storage; es una
+// limitación de same-origin policy, no algo resoluble desde JS.
 //
 // Las claves de HubFlow por ejercicio (p.ej. 'vocabulary:v1') no tienen un
 // prefijo común enumerable, así que en vez de listar qué borrar, se lista
@@ -239,7 +240,7 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
                   <p>
                     {t(
                       'about.clearCacheDescription',
-                      'This deletes cached assets and local data for LearnFlow (DeskFlow, FluentFlow, HubFlow, LyricFlow) in this browser, then reloads. In local dev this only reaches the app running on this port. Shared theme/navigation preferences and your login session are kept.'
+                      'This deletes cached assets and local data for LearnFlow (DeskFlow, FluentFlow, HubFlow, LyricFlow) in this browser, then reloads. Only scoped to this app if the apps are running on separate dev ports (learnctl start individual). Shared theme/navigation preferences and your login session are kept.'
                     )}
                   </p>
                   <div>

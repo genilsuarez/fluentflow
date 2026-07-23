@@ -234,7 +234,7 @@ export const en = {
     clickToViewScreenInfo: 'Click to view screen information',
     clearCache: 'Clear cache',
     clearCacheDescription:
-      'This deletes cached assets and local data for LearnFlow (DeskFlow, FluentFlow, HubFlow, LyricFlow) in this browser, then reloads. In local dev this only reaches the app running on this port. Shared theme/navigation preferences and your login session are kept.',
+      'This deletes cached assets and local data for LearnFlow (DeskFlow, FluentFlow, HubFlow, LyricFlow) in this browser, then reloads. Only scoped to this app if the apps are running on separate dev ports (learnctl start individual). Shared theme/navigation preferences and your login session are kept.',
     clearCacheConfirm: 'Clear & reload',
     acknowledgments: 'Acknowledgments',
     acknowledgementsText:

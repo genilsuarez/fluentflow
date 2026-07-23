@@ -235,7 +235,7 @@ export const es = {
     clickToViewScreenInfo: 'Clic para ver información de pantalla',
     clearCache: 'Limpiar caché',
     clearCacheDescription:
-      'Esto elimina los recursos en caché y los datos locales de LearnFlow (DeskFlow, FluentFlow, HubFlow, LyricFlow) en este navegador, y recarga. En desarrollo local solo alcanza a la app que corre en este puerto. El tema, el modo de navegación compartidos y tu sesión de acceso se mantienen.',
+      'Esto elimina los recursos en caché y los datos locales de LearnFlow (DeskFlow, FluentFlow, HubFlow, LyricFlow) en este navegador, y recarga. Solo queda limitado a esta app si corren en puertos de dev separados (learnctl start individual). El tema, el modo de navegación compartidos y tu sesión de acceso se mantienen.',
     clearCacheConfirm: 'Limpiar y recargar',
     acknowledgments: 'Agradecimientos',
     acknowledgementsText:
