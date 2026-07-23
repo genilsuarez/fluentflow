@@ -346,11 +346,7 @@ export const useProgressStore = create<ProgressStore>()(
               }
             }
             if (!changed) return state;
-            logDebug(
-              'Pruned stale module IDs',
-              { removed: staleKeys },
-              'ProgressStore'
-            );
+            logDebug('Pruned stale module IDs', { removed: staleKeys }, 'ProgressStore');
             return { completedModules: updated };
           });
           return;

@@ -40,7 +40,9 @@ export function countsTowardProgress(
   completedIds: Set<string>,
   modulesByLevel: Map<string, LearningModule[]>
 ): boolean {
-  return completedIds.has(module.id) && isPreviousLevelComplete(module, completedIds, modulesByLevel);
+  return (
+    completedIds.has(module.id) && isPreviousLevelComplete(module, completedIds, modulesByLevel)
+  );
 }
 
 /** Completed module IDs that count toward stats (catalog-valid + level gate). */

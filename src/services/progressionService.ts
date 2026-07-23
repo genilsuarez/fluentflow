@@ -329,9 +329,7 @@ export class ProgressionService {
       unlockedModules: unlockedModules.length,
       lockedModules: lockedModules.length,
       completionPercentage:
-        this.modules.length > 0
-          ? Math.round((completedModules / this.modules.length) * 100)
-          : 0,
+        this.modules.length > 0 ? Math.round((completedModules / this.modules.length) * 100) : 0,
       unitStats,
     };
   }

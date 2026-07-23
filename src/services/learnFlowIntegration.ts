@@ -1,5 +1,9 @@
 import type { LearningModule } from '../types';
-import { buildCefrStats, getCountedCompletionIds, getPrimaryLevel } from '../utils/progressionCounting';
+import {
+  buildCefrStats,
+  getCountedCompletionIds,
+  getPrimaryLevel,
+} from '../utils/progressionCounting';
 
 interface ProgressEntrySource {
   eventId?: string;
@@ -128,10 +132,7 @@ export const publishLearnFlowIntegration = (
     })
   );
 
-  const completedIds = getCountedCompletionIds(
-    modules,
-    Object.keys(source.completedModules)
-  );
+  const completedIds = getCountedCompletionIds(modules, Object.keys(source.completedModules));
   const cefr = buildCefrStats(modules, completedIds);
 
   const progress = {
