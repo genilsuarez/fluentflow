@@ -40,6 +40,90 @@ const CONTRACTION_EXPANSIONS: [RegExp, string][] = [
   [/\blet's\b/g, 'let us'],
 ];
 
+/** UK → US spelling variants (both map to same canonical form in normalizeAnswer) */
+const UK_TO_US_SPELLING: Record<string, string> = {
+  colour: 'color',
+  colours: 'colors',
+  favourite: 'favorite',
+  favourites: 'favorites',
+  favour: 'favor',
+  favours: 'favors',
+  favoured: 'favored',
+  favouring: 'favoring',
+  honour: 'honor',
+  honours: 'honors',
+  honoured: 'honored',
+  honouring: 'honoring',
+  labour: 'labor',
+  labours: 'labors',
+  laboured: 'labored',
+  labouring: 'laboring',
+  neighbour: 'neighbor',
+  neighbours: 'neighbors',
+  behaviour: 'behavior',
+  behaviours: 'behaviors',
+  flavour: 'flavor',
+  flavours: 'flavors',
+  centre: 'center',
+  centres: 'centers',
+  metre: 'meter',
+  metres: 'meters',
+  theatre: 'theater',
+  theatres: 'theaters',
+  fibre: 'fiber',
+  fibres: 'fibers',
+  litre: 'liter',
+  litres: 'liters',
+  grey: 'gray',
+  greys: 'grays',
+  catalogue: 'catalog',
+  catalogues: 'catalogs',
+  dialogue: 'dialog',
+  dialogues: 'dialogs',
+  licence: 'license',
+  licences: 'licenses',
+  offence: 'offense',
+  offences: 'offenses',
+  defence: 'defense',
+  defences: 'defenses',
+  organise: 'organize',
+  organises: 'organizes',
+  organised: 'organized',
+  organising: 'organizing',
+  realise: 'realize',
+  realises: 'realizes',
+  realised: 'realized',
+  realising: 'realizing',
+  recognise: 'recognize',
+  recognises: 'recognizes',
+  recognised: 'recognized',
+  recognising: 'recognizing',
+  apologise: 'apologize',
+  apologises: 'apologizes',
+  apologised: 'apologized',
+  apologising: 'apologizing',
+  analyse: 'analyze',
+  analyses: 'analyzes',
+  analysed: 'analyzed',
+  analysing: 'analyzing',
+  travelled: 'traveled',
+  travelling: 'traveling',
+  traveller: 'traveler',
+  travellers: 'travelers',
+  cancelled: 'canceled',
+  cancelling: 'canceling',
+  jewellery: 'jewelry',
+  programme: 'program',
+  programmes: 'programs',
+};
+
+function normalizeSpellingVariants(s: string): string {
+  return s
+    .split(' ')
+    .map(word => UK_TO_US_SPELLING[word] ?? word)
+    .join(' ');
+}
+
 function expandContractions(s: string): string {
   let result = s;
   for (const [pattern, replacement] of CONTRACTION_EXPANSIONS) {
@@ -58,6 +142,7 @@ function expandContractions(s: string): string {
  * didn't, isn't, can't, won't) so typing without apostrophe still matches.
  * Expands it's/he's/we're-style contractions to full forms (it is, he is, …).
  * Maps common keyboard-friendly aliases to ∅ for article exercises.
+ * Accepts US/UK spelling variants (color/colour, favorite/favourite, …).
  */
 export function normalizeAnswer(s: string): string {
   let result = s
@@ -68,6 +153,7 @@ export function normalizeAnswer(s: string): string {
     .replace(/\b(doesn|don|didn|isn|can|won|aren|wasn)t\b/g, "$1't");
 
   result = expandContractions(result);
+  result = normalizeSpellingVariants(result);
 
   result = result
     .replace(/[.!?,;:]+/g, ' ')

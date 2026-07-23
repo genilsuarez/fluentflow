@@ -3,7 +3,7 @@ import { Volume2, Check, X, ArrowRight, RotateCcw } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { conditionalShuffle } from '../../utils/randomUtils';
 import { matchesAnswer } from '../../utils/answerUtils';
-import { EXERCISE_FEEDBACK_COLLAPSE_MS } from '../../utils/exerciseTransition';
+import { advanceQuizTextStep } from '../../utils/exerciseTransition';
 import LearningProgressHeader from '../ui/LearningProgressHeader';
 import ExerciseResultScreen from '../ui/ExerciseResultScreen';
 import { speak, stopSpeaking, isSpeechAvailable, whenVoicesReady } from '../../utils/speech';
@@ -98,12 +98,14 @@ const DictationComponent: React.FC<DictationComponentProps> = ({ module }) => {
 
   const handleNext = useCallback(() => {
     if (currentIndex < items.length - 1) {
-      setShowResult(false);
-      setTimeout(() => {
-        setCurrentIndex(prev => prev + 1);
-        setUserInput('');
-        setIsCorrect(false);
-      }, EXERCISE_FEEDBACK_COLLAPSE_MS);
+      advanceQuizTextStep({
+        setCurrentIndex,
+        setUserInput,
+        setShowResult,
+        setIsCorrect,
+        onAdvance: stopSpeaking,
+        focusInput: () => inputRef.current?.focus(),
+      });
     } else {
       finishExercise();
     }
@@ -216,7 +218,7 @@ const DictationComponent: React.FC<DictationComponentProps> = ({ module }) => {
         )}
 
         {/* Hint */}
-        {currentItem?.hint && !showResult && (
+        {currentItem?.hint && (
           <p
             style={{
               fontSize: '0.75rem',

@@ -4,7 +4,7 @@ import { useLearningSession } from '../../hooks/useLearningSession';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { conditionalShuffle } from '../../utils/randomUtils';
 import { matchesAnswer } from '../../utils/answerUtils';
-import { EXERCISE_FEEDBACK_COLLAPSE_MS } from '../../utils/exerciseTransition';
+import { advanceQuizTextStep } from '../../utils/exerciseTransition';
 import { ContentAdapter } from '../../utils/contentAdapter';
 import ContentRenderer from '../ui/ContentRenderer';
 import LearningProgressHeader from '../ui/LearningProgressHeader';
@@ -107,12 +107,14 @@ const ListenCompleteComponent: React.FC<ListenCompleteComponentProps> = ({ modul
 
   const handleNext = useCallback(() => {
     if (currentIndex < items.length - 1) {
-      setShowResult(false);
-      setTimeout(() => {
-        setCurrentIndex(prev => prev + 1);
-        setUserInput('');
-        setIsCorrect(false);
-      }, EXERCISE_FEEDBACK_COLLAPSE_MS);
+      advanceQuizTextStep({
+        setCurrentIndex,
+        setUserInput,
+        setShowResult,
+        setIsCorrect,
+        onAdvance: stopSpeaking,
+        focusInput: () => inputRef.current?.focus(),
+      });
     } else {
       finishExercise();
     }

@@ -72,11 +72,26 @@ describe('normalizeAnswer', () => {
     expect(normalizeAnswer('It is cold today.')).toBe('it is cold today');
     expect(normalizeAnswer("it's cold today")).toBe(normalizeAnswer('It is cold today.'));
   });
+
+  it('normalizes US and UK spelling to the same canonical form', () => {
+    expect(normalizeAnswer('my favorite color is blue')).toBe(
+      normalizeAnswer('My favourite colour is blue.')
+    );
+  });
 });
 
 describe('matchesAnswer', () => {
   it('accepts contraction when correct answer uses full form', () => {
     expect(matchesAnswer("it's cold today", ['It is cold today.'])).toBe(true);
     expect(matchesAnswer('it is cold today', ["It's cold today."])).toBe(true);
+  });
+
+  it('accepts US spelling when correct answer uses UK spelling', () => {
+    expect(
+      matchesAnswer('my favorite color is blue', ['My favourite colour is blue.'])
+    ).toBe(true);
+    expect(
+      matchesAnswer('My favourite colour is blue', ['My favorite color is blue.'])
+    ).toBe(true);
   });
 });

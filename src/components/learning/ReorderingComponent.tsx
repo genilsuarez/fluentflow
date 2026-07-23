@@ -2,7 +2,8 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { Check, ArrowRight, RotateCcw, Eye, Eraser } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { prepareWords, validateReordering, moveWord } from './reorderingUtils';
-import { EXERCISE_FEEDBACK_COLLAPSE_MS } from '../../utils/exerciseTransition';
+import { EXERCISE_SPEECH_DELAY_MS } from '../../utils/exerciseTransition';
+import { speak, stopSpeaking, isSpeechAvailable, whenVoicesReady } from '../../utils/speech';
 import LearningProgressHeader from '../ui/LearningProgressHeader';
 import ExerciseResultScreen from '../ui/ExerciseResultScreen';
 import type { LearningModule, ReorderingData } from '../../types';
@@ -53,21 +54,55 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
   }
   const exercises = processedExercisesRef.current;
   const currentExercise = exercises[currentIndex];
+  const skipLoadEffectRef = useRef(false);
+
+  const loadExerciseState = useCallback(
+    (exercise: ReorderingData) => {
+      const words = prepareWords(exercise.words, exercise.distractors, randomizeItems);
+      setAvailableWords(words);
+      setAnswerWords([]);
+      setShowResult(false);
+      setIsCorrect(false);
+      setIncorrectPositions([]);
+      setShowHint(false);
+      setFocusedZone('available');
+      setFocusedIndex(0);
+      setKeyboardSelected(false);
+    },
+    [randomizeItems]
+  );
 
   // Initialize words for current exercise
   useEffect(() => {
     if (!currentExercise) return;
-    const words = prepareWords(currentExercise.words, currentExercise.distractors, randomizeItems);
-    setAvailableWords(words);
-    setAnswerWords([]);
-    setShowResult(false);
-    setIsCorrect(false);
-    setIncorrectPositions([]);
-    setShowHint(false);
-    setFocusedZone('available');
-    setFocusedIndex(0);
-    setKeyboardSelected(false);
-  }, [currentIndex, currentExercise, randomizeItems]);
+    if (skipLoadEffectRef.current) {
+      skipLoadEffectRef.current = false;
+      return;
+    }
+    loadExerciseState(currentExercise);
+  }, [currentIndex, currentExercise, loadExerciseState]);
+
+  useEffect(() => () => stopSpeaking(), []);
+
+  // Read the correct sentence after validation (delay avoids first-play cutoff)
+  useEffect(() => {
+    if (!showResult || !currentExercise?.sentence || !isSpeechAvailable()) return;
+
+    let cancelled = false;
+    const delayTimer = window.setTimeout(() => {
+      void whenVoicesReady().then(() => {
+        if (!cancelled) {
+          speak(currentExercise.sentence, { rate: 0.9 });
+        }
+      });
+    }, EXERCISE_SPEECH_DELAY_MS);
+
+    return () => {
+      cancelled = true;
+      clearTimeout(delayTimer);
+      stopSpeaking();
+    };
+  }, [showResult, currentIndex, currentExercise]);
 
   // Tap word in word bank -> move to end of answer zone
   const handleTapAvailable = useCallback(
@@ -113,27 +148,22 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
 
   const handleReset = useCallback(() => {
     if (!currentExercise) return;
-    const words = prepareWords(currentExercise.words, currentExercise.distractors, randomizeItems);
-    setAvailableWords(words);
-    setAnswerWords([]);
-    setShowResult(false);
-    setIsCorrect(false);
-    setIncorrectPositions([]);
-    setFocusedZone('available');
-    setFocusedIndex(0);
-    setKeyboardSelected(false);
-  }, [currentExercise, randomizeItems]);
+    loadExerciseState(currentExercise);
+  }, [currentExercise, loadExerciseState]);
 
   const handleNext = useCallback(() => {
     if (currentIndex < exercises.length - 1) {
-      setShowResult(false);
-      setTimeout(() => {
-        setCurrentIndex(prev => prev + 1);
-      }, EXERCISE_FEEDBACK_COLLAPSE_MS);
+      stopSpeaking();
+      const nextIndex = currentIndex + 1;
+      const nextExercise = exercises[nextIndex];
+      if (!nextExercise) return;
+      loadExerciseState(nextExercise);
+      skipLoadEffectRef.current = true;
+      setCurrentIndex(nextIndex);
     } else {
       finishExercise();
     }
-  }, [currentIndex, exercises.length, finishExercise]);
+  }, [currentIndex, exercises, loadExerciseState, finishExercise]);
 
   // Comprehensive keyboard navigation
   useEffect(() => {

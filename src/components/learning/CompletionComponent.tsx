@@ -3,10 +3,7 @@ import { Check, X, ArrowRight, RotateCcw } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { conditionalShuffle } from '../../utils/randomUtils';
 import { matchesAnswer, isTenseError, isParticleError } from '../../utils/answerUtils';
-import {
-  EXERCISE_ENTER_GUARD_MS,
-  EXERCISE_FEEDBACK_COLLAPSE_MS,
-} from '../../utils/exerciseTransition';
+import { advanceInputExerciseStep } from '../../utils/exerciseTransition';
 import '../../styles/components/completion-component.css';
 import '../../styles/components/editable-input.css';
 // BEM classes applied dynamically via .replace(): 'editable-input--correct' 'editable-input--incorrect' 'editable-input--neutral' 'editable-input--disabled'
@@ -94,18 +91,13 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
 
   const handleNext = useCallback(() => {
     if (currentIndex < processedExercises.length - 1) {
-      ignoreEnterRef.current = true;
-      setShowResult(false);
-
-      setTimeout(() => {
-        inputRef.current?.clear();
-        setAnswer('');
-        setCurrentIndex(prev => prev + 1);
-        setTimeout(() => {
-          ignoreEnterRef.current = false;
-          requestAnimationFrame(() => inputRef.current?.focus());
-        }, EXERCISE_ENTER_GUARD_MS);
-      }, EXERCISE_FEEDBACK_COLLAPSE_MS);
+      advanceInputExerciseStep({
+        setCurrentIndex,
+        setAnswer,
+        setShowResult,
+        ignoreEnterRef,
+        focusInput: () => inputRef.current?.focus(),
+      });
     } else {
       finishExercise();
     }

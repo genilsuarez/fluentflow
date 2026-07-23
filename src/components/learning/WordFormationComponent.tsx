@@ -13,10 +13,7 @@ import { EditableInput } from '../ui/EditableInput';
 import type { EditableInputHandle } from '../ui/EditableInput';
 import { ContentAdapter } from '../../utils/contentAdapter';
 import { matchesAnswer } from '../../utils/answerUtils';
-import {
-  EXERCISE_ENTER_GUARD_MS,
-  EXERCISE_FEEDBACK_COLLAPSE_MS,
-} from '../../utils/exerciseTransition';
+import { advanceInputExerciseStep } from '../../utils/exerciseTransition';
 import type { LearningModule, WordFormationData } from '../../types';
 import { GameControlsExitButton } from '../ui/GameControlsExitButton';
 
@@ -93,19 +90,13 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
 
   const handleNext = useCallback(() => {
     if (currentIndex < processedExercises.length - 1) {
-      ignoreEnterRef.current = true;
-      setShowResult(false);
-
-      // Let the feedback zone collapse before swapping exercise content
-      setTimeout(() => {
-        inputRef.current?.clear();
-        setAnswer('');
-        setCurrentIndex(prev => prev + 1);
-        setTimeout(() => {
-          ignoreEnterRef.current = false;
-          requestAnimationFrame(() => inputRef.current?.focus());
-        }, EXERCISE_ENTER_GUARD_MS);
-      }, EXERCISE_FEEDBACK_COLLAPSE_MS);
+      advanceInputExerciseStep({
+        setCurrentIndex,
+        setAnswer,
+        setShowResult,
+        ignoreEnterRef,
+        focusInput: () => inputRef.current?.focus(),
+      });
     } else {
       finishExercise();
     }

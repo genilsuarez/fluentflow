@@ -199,9 +199,6 @@ html.dark .error-correction__answer-area--incorrect {
   grid-template-rows: 0fr;
   overflow: hidden;
   max-height: none;
-  transition:
-    grid-template-rows 0.22s ease,
-    opacity 0.18s ease;
   opacity: 0;
 }
 .transformation__result-container--hidden,
@@ -217,6 +214,9 @@ html.dark .error-correction__answer-area--incorrect {
   max-height: none;
   opacity: 1;
   padding-top: 0.5rem;
+  transition:
+    grid-template-rows 0.22s ease,
+    opacity 0.18s ease;
 }
 .transformation__result-container > .transformation__result,
 .word-formation__result-container > .word-formation__result,
