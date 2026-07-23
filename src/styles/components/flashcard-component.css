@@ -367,7 +367,18 @@
 
   /* Ensure controls don't interfere with card content */
 }
-/* Front dark: cool blue tint */
+
+/* Flashcard bar — same touch size as other modes; flip via tap/swipe on the card */
+@media (max-width: 768px) {
+  .flashcard-component__container > .game-controls--flashcard {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .game-controls--flashcard .game-controls__flashcard-flip {
+    display: none !important;
+  }
+}
 html.dark .flashcard-component__card-front {
   background: linear-gradient(
     160deg,

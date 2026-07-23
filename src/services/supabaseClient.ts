@@ -124,21 +124,22 @@ export interface RemoteProgressRow {
   attempts: number;
 }
 
-export async function fetchProgress(): Promise<RemoteProgressRow[]> {
+export async function fetchProgress(): Promise<RemoteProgressRow[] | null> {
   const {
-    data: { user },
-  } = await supabase.auth.getUser();
-  if (!user) return [];
+    data: { session },
+  } = await supabase.auth.getSession();
+  if (!session?.user) return [];
 
   const { data, error } = await supabase
     .from('progress')
     .select(
       'content_id, content_type, progress_pct, completed, completed_at, best_score_pct, attempts'
     )
-    .eq('user_id', user.id)
+    .eq('user_id', session.user.id)
     .eq('app', 'fluentflow');
 
-  return error || !data ? [] : data;
+  if (error) return null;
+  return data ?? [];
 }
 
 export interface ActivityEventInput {

@@ -4,6 +4,7 @@
 // same as it already does for the lp-user identity key (see userStore.ts).
 import {
   useProgressStore,
+  waitForProgressHydration,
   type ProgressEntry,
   type ModuleCompletion,
 } from '../stores/progressStore';
@@ -122,15 +123,20 @@ async function downloadOnLogin() {
   const authed = await isAuthenticated().catch(() => false);
   if (!authed) return;
 
+  // Must wait for progress-storage rehydration — otherwise a late rehydrate
+  // overwrites the merged remote progress with stale/empty local state.
+  await waitForProgressHydration();
+  if (downloaded) return;
+
+  const remote = await fetchProgress().catch(() => null);
+  if (remote === null) return;
+
   downloaded = true;
-  const remote = await fetchProgress().catch(() => []);
   if (!remote.length) return;
 
   const { completedModules } = useProgressStore.getState();
   const merged = mergeRemoteProgress(completedModules, remote);
-  if (Object.keys(merged).length !== Object.keys(completedModules).length) {
-    useProgressStore.setState({ completedModules: merged });
-  }
+  useProgressStore.setState({ completedModules: merged });
 }
 
 let initialized = false;
@@ -144,7 +150,9 @@ export function initSyncEngine(): void {
     if (session?.user) {
       await downloadOnLogin();
       scheduleSync();
+      return;
     }
+    downloaded = false;
   });
   isAuthenticated()
     .then(async authed => {

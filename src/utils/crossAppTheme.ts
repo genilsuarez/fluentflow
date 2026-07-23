@@ -27,8 +27,7 @@ function isCrossAppHref(href: string | null): boolean {
   try {
     const url = new URL(href, location.origin);
     const host = url.hostname;
-    const isLocalHost =
-      host === 'localhost' || host === '127.0.0.1' || host.startsWith('192.168.');
+    const isLocalHost = host === 'localhost' || host === '127.0.0.1' || host.startsWith('192.168.');
     if (!isLocalHost) return false;
     if (url.port && url.port !== location.port) return true;
     return APP_PATH_RE.test(url.pathname);

@@ -333,3 +333,16 @@ export const useProgressStore = create<ProgressStore>()(
     }
   )
 );
+
+/** Wait until progress-storage has rehydrated from localStorage. */
+export function waitForProgressHydration(): Promise<void> {
+  if (useProgressStore.persist.hasHydrated()) {
+    return Promise.resolve();
+  }
+  return new Promise(resolve => {
+    const unsub = useProgressStore.persist.onFinishHydration(() => {
+      unsub();
+      resolve();
+    });
+  });
+}
