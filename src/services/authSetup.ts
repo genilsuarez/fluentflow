@@ -39,7 +39,9 @@ export function setupSupabaseAuth(): void {
     if (event === 'SIGNED_OUT' || !session?.user) {
       const lpLogin = getLpLogin();
       if (lpLogin?.getUser?.()?.isSupabaseUser) {
-        (window as Window & { lpGuestReset?: { clearGuestLocalProgress: () => void } }).lpGuestReset?.clearGuestLocalProgress();
+        (
+          window as Window & { lpGuestReset?: { clearGuestLocalProgress: () => void } }
+        ).lpGuestReset?.clearGuestLocalProgress();
         useUserStore.getState().setUser(null);
         lpLogin.setUser(null);
       }
