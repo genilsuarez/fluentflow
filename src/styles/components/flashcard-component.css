@@ -271,15 +271,27 @@
 /* === CRITICAL: Mobile ≤400px - Translation Visibility Fix === */
 @media (max-width: 639px) {
   .flashcard-component__container {
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
     background: transparent;
     border: none;
     box-shadow: none;
     border-radius: 0;
   }
 
+  .flashcard-component__card {
+    flex: 1;
+    min-height: 0;
+    margin: auto 0;
+  }
+
   /* Push game controls to bottom of viewport */
   .flashcard-component__container > .game-controls {
     margin-top: auto;
+    flex-shrink: 0;
   }
 }
 

@@ -320,6 +320,30 @@ html.dark .error-correction__explanation-text {
 }
 
 /* === COMPACT MOBILE === */
+@media (max-width: 768px) {
+  .transformation__container,
+  .word-formation__container,
+  .error-correction__container {
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+    padding: 0.375rem;
+    margin: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+  }
+
+  .transformation__exercise-card,
+  .word-formation__exercise-card,
+  .error-correction__exercise-card {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
 @media (max-height: 700px) {
   .transformation__container,
   .word-formation__container,

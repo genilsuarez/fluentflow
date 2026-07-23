@@ -511,6 +511,11 @@ html.dark .completion-component__explanation-text .content-renderer__segment--te
 /* === MOBILE OPTIMIZATIONS === */
 @media (max-width: 768px) {
   .completion-component__container {
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
     padding: 0.375rem;
     /* Don't show container chrome beyond content on mobile */
     background: transparent;
@@ -519,9 +524,17 @@ html.dark .completion-component__explanation-text .content-renderer__segment--te
     border-radius: 0;
   }
 
+  .completion-component__exercise-card {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
   /* Push game controls to bottom of viewport */
   .completion-component__container > .game-controls {
     margin-top: auto;
+    flex-shrink: 0;
   }
 
   .completion-component__exercise-card {

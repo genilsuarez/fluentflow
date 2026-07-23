@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
 import { initializeTheme } from './utils/themeInitializer';
+import { setupCrossAppThemeLinks } from './utils/crossAppTheme';
 import { clearChunkRetryFlag } from './utils/lazyWithRetry';
 import './utils/safariDetection';
 import './utils/cursorBrowserDetection';
@@ -79,6 +80,7 @@ try {
 
   // Initialize theme before React renders to prevent FOUC
   initializeTheme();
+  setupCrossAppThemeLinks();
 
   // Bridge for lp-login.js cloud auth buttons (shared modal in public/)
   (window as Window & { lpSupabase?: Record<string, unknown> }).lpSupabase = {

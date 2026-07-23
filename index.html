@@ -80,6 +80,7 @@
           document.documentElement.classList.add(theme);
           document.documentElement.classList.remove(theme === 'dark' ? 'light' : 'dark');
           document.documentElement.style.colorScheme = theme;
+          localStorage.setItem('lp-theme', theme);
           var meta = document.getElementById('theme-color-meta');
           if (meta) meta.setAttribute('content', theme === 'dark' ? '#181b20' : '#ffffff');
           var colorSchemeMeta = document.querySelector('meta[name="color-scheme"]');

@@ -202,6 +202,11 @@ export function setupSystemThemeListener(callback: (theme: ThemeMode) => void): 
 export function initializeTheme(): ThemeState {
   const themeState = getInitialTheme();
   applyThemeToDOM(themeState.theme);
+  try {
+    localStorage.setItem('lp-theme', themeState.theme);
+  } catch {
+    /* noop */
+  }
 
   if (isMobileDevice()) {
     initializeMobileTheme();

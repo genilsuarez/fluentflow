@@ -13,7 +13,11 @@
   .layout-main > .flashcard-component__container,
   .layout-main > .sorting-component,
   .layout-main > .matching-component,
-  .layout-main > .reading-component__container {
+  .layout-main > .reading-component__container,
+  .layout-main > .reordering,
+  .layout-main > .transformation__container,
+  .layout-main > .word-formation__container,
+  .layout-main > .error-correction__container {
     margin: 0;
     border-radius: 0;
     border-left: none;
@@ -28,7 +32,11 @@
   .layout-main > .flashcard-component__container,
   .layout-main > .sorting-component,
   .layout-main > .matching-component,
-  .layout-main > .reading-component__container {
+  .layout-main > .reading-component__container,
+  .layout-main > .reordering,
+  .layout-main > .transformation__container,
+  .layout-main > .word-formation__container,
+  .layout-main > .error-correction__container {
     display: flex;
     flex-direction: column;
   }

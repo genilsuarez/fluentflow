@@ -75,7 +75,10 @@
   .layout-container:not([data-view='menu']) .layout-main [class*='-component__container'],
   .layout-container:not([data-view='menu']) .layout-main .sorting-component,
   .layout-container:not([data-view='menu']) .layout-main .matching-component,
-  .layout-container:not([data-view='menu']) .layout-main .reordering {
+  .layout-container:not([data-view='menu']) .layout-main .reordering,
+  .layout-container:not([data-view='menu']) .layout-main .transformation__container,
+  .layout-container:not([data-view='menu']) .layout-main .word-formation__container,
+  .layout-container:not([data-view='menu']) .layout-main .error-correction__container {
     flex: 1;
     min-height: 0;
     overflow: hidden;

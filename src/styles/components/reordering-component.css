@@ -23,6 +23,12 @@
   margin-top: 0.25rem;
 }
 
+@media (max-width: 768px) {
+  .reordering > .game-controls {
+    margin-top: auto;
+  }
+}
+
 /* Answer + word bank — natural height, no forced stretch */
 .reordering__body {
   display: flex;
@@ -469,21 +475,26 @@ html.dark .reordering__empty {
 
 /* === MOBILE OPTIMIZATIONS === */
 @media (max-width: 768px) {
-  .layout-container:not([data-view='menu']) .layout-main .reordering {
-    flex: 0 1 auto;
-    overflow: visible;
-    min-height: 0;
-  }
-
   .reordering {
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
     background: transparent;
     border: none;
     box-shadow: none;
     border-radius: 0;
   }
 
+  .reordering__body {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
   .reordering > .game-controls {
-    margin-top: 0;
+    margin-top: auto;
+    flex-shrink: 0;
   }
 
   .reordering__instruction {
