@@ -17,22 +17,33 @@ import {
   signOut,
 } from './services/supabaseClient';
 
-// Registrar Service Worker para modo offline
+// Registrar Service Worker para modo offline — solo en build de producción.
+// Registrarlo en `npm run dev` hace que el navegador sirva JS/CSS cacheado
+// viejo desde localhost incluso después de editar el código fuente.
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    const swPath = import.meta.env.BASE_URL + 'sw.js';
-    navigator.serviceWorker
-      .register(swPath)
-      .then(() => {
-        // After SW is ready, trigger asset precaching from client side.
-        // This is more reliable than doing it inside the SW fetch handler,
-        // especially on WebKit/iOS where SW lifecycle is more aggressive.
-        precacheAppAssets();
-      })
-      .catch(error => {
-        console.warn('SW registration failed:', error);
-      });
-  });
+  if (import.meta.env.PROD) {
+    window.addEventListener('load', () => {
+      const swPath = import.meta.env.BASE_URL + 'sw.js';
+      navigator.serviceWorker
+        .register(swPath)
+        .then(() => {
+          // After SW is ready, trigger asset precaching from client side.
+          // This is more reliable than doing it inside the SW fetch handler,
+          // especially on WebKit/iOS where SW lifecycle is more aggressive.
+          precacheAppAssets();
+        })
+        .catch(error => {
+          console.warn('SW registration failed:', error);
+        });
+    });
+  } else {
+    // Dev mode: unregister any SW left over from a previous production
+    // build or an earlier version of this file, so localhost always gets
+    // fresh assets straight from the Vite dev server.
+    navigator.serviceWorker.getRegistrations().then(registrations => {
+      registrations.forEach(registration => registration.unregister());
+    });
+  }
 }
 
 /**

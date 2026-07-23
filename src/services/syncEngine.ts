@@ -23,6 +23,7 @@ import {
   type RemoteProgressRow,
   type RemoteActivityRow,
 } from './supabaseClient';
+import { bootstrapFromLocalProjection } from './projectionBootstrap';
 
 const PASS_SCORE_PCT = 70;
 
@@ -226,16 +227,27 @@ async function downloadOnLogin() {
   await waitForProgressHydration();
   if (downloaded) return;
 
+  // DeskFlow may have already downloaded cloud data into the v1 projection keys.
+  // Import those into Zustand before merging remote rows.
+  await bootstrapFromLocalProjection();
+
   const [remoteProgress, remoteActivity] = await Promise.all([
     fetchProgress().catch(() => null),
     fetchActivityEvents().catch(() => null),
   ]);
-  if (remoteProgress === null && remoteActivity === null) return;
+
+  const { completedModules, progressHistory } = useProgressStore.getState();
+  const hasLocalData =
+    Object.keys(completedModules).length > 0 || progressHistory.length > 0;
+
+  if (remoteProgress === null && remoteActivity === null) {
+    if (hasLocalData) downloaded = true;
+    return;
+  }
 
   downloaded = true;
   if (!remoteProgress?.length && !remoteActivity?.length) return;
 
-  const { completedModules, progressHistory } = useProgressStore.getState();
   const nextState: {
     completedModules?: Record<string, ModuleCompletion>;
     progressHistory?: ProgressEntry[];
@@ -274,6 +286,10 @@ export function initSyncEngine(): void {
   initialized = true;
 
   useProgressStore.subscribe(() => scheduleSync());
+
+  // Same-origin DeskFlow may have populated v1 before FluentFlow mounts — import on cold start.
+  void waitForProgressHydration().then(() => bootstrapFromLocalProjection());
+
   onAuthStateChange(async (_event, session) => {
     if (session?.user) {
       await downloadOnLogin();

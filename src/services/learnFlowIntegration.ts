@@ -74,9 +74,6 @@ export const publishLearnFlowIntegration = (
 
   const publishedAt = new Date().toISOString();
   const knownModuleIds = new Set(modules.map(module => module.id));
-  const completedIds = new Set(
-    Object.keys(source.completedModules).filter(moduleId => knownModuleIds.has(moduleId))
-  );
   const attemptedIds = new Set(
     source.progressHistory
       .map(entry => entry.moduleId)
@@ -85,10 +82,42 @@ export const publishLearnFlowIntegration = (
 
   const moduleById = new Map(modules.map(module => [module.id, module]));
 
+  let existingContent: Record<
+    string,
+    {
+      completed?: boolean;
+      completedAt?: string | null;
+      bestScorePct?: number | null;
+      attempts?: number;
+      progressPct?: number;
+    }
+  > = {};
+  try {
+    const raw = localStorage.getItem(PROGRESS_KEY);
+    if (raw) {
+      const parsed = JSON.parse(raw) as { content?: typeof existingContent };
+      if (parsed?.content) existingContent = parsed.content;
+    }
+  } catch {
+    /* ignore */
+  }
+
   const content = Object.fromEntries(
     modules.map(module => {
       const completion = source.completedModules[module.id];
-      const completed = Boolean(completion);
+      const existing = existingContent[module.id];
+      const completed = Boolean(completion) || Boolean(existing?.completed);
+      const bestScore = Math.max(
+        completion ? clampPercentage(completion.bestScore) : 0,
+        existing?.bestScorePct ?? 0
+      );
+      const attempts = Math.max(completion?.attempts ?? 0, existing?.attempts ?? 0);
+      const completedAt = completion
+        ? toIsoTimestamp(completion.completedAt)
+        : existing?.completedAt
+          ? toIsoTimestamp(existing.completedAt as string)
+          : null;
+
       return [
         module.id,
         {
@@ -96,14 +125,21 @@ export const publishLearnFlowIntegration = (
           title: module.name,
           contentType: 'module',
           cefrLevel: getModuleLevel(module).toUpperCase(),
-          progressPct: completed ? 100 : 0,
+          progressPct: completed ? 100 : (existing?.progressPct ?? 0),
           completed,
-          completedAt: completion ? toIsoTimestamp(completion.completedAt) : null,
-          bestScorePct: completion ? clampPercentage(completion.bestScore) : null,
-          attempts: completion?.attempts ?? 0,
+          completedAt,
+          bestScorePct: completed || bestScore > 0 ? bestScore : null,
+          attempts,
         },
       ];
     })
+  );
+
+  const completedIds = new Set(
+    Object.entries(content)
+      .filter(([, item]) => item.completed)
+      .map(([moduleId]) => moduleId)
+      .filter(moduleId => knownModuleIds.has(moduleId))
   );
 
   const cefr = Object.fromEntries(
@@ -148,7 +184,7 @@ export const publishLearnFlowIntegration = (
     content,
   };
 
-  const events = source.progressHistory
+  const eventsFromSource = source.progressHistory
     .filter(
       entry =>
         entry.moduleId &&
@@ -172,7 +208,28 @@ export const publishLearnFlowIntegration = (
         correct: Math.max(0, entry.correctAnswers),
         total: Math.max(0, entry.totalQuestions),
       },
-    }))
+    }));
+
+  let existingEvents: Array<(typeof eventsFromSource)[number]> = [];
+  try {
+    const raw = localStorage.getItem(ACTIVITY_KEY);
+    if (raw) {
+      const parsed = JSON.parse(raw) as { events?: typeof existingEvents };
+      if (Array.isArray(parsed?.events)) existingEvents = parsed.events;
+    }
+  } catch {
+    /* ignore */
+  }
+
+  const eventsById = new Map<string, (typeof eventsFromSource)[number]>();
+  for (const event of existingEvents) {
+    if (event?.eventId) eventsById.set(event.eventId, event);
+  }
+  for (const event of eventsFromSource) {
+    eventsById.set(event.eventId, event);
+  }
+
+  const events = [...eventsById.values()]
     .sort((left, right) => right.occurredAt.localeCompare(left.occurredAt))
     .slice(0, MAX_ACTIVITY_EVENTS);
 
