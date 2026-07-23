@@ -83,6 +83,9 @@ The module progression uses a DAG (prerequisites graph). Key files:
 | Concern                                                          | File                                              |
 | ---------------------------------------------------------------- | ------------------------------------------------- |
 | Service (unlock logic, next module)                              | `src/services/progressionService.ts`              |
+| Cloud sync (Zustand ↔ Supabase ↔ v1 projection)                 | `src/services/syncEngine.ts`                      |
+| Shared merge helpers (remote progress + activity)                  | `src/services/progressMerge.ts`                   |
+| Auth bridge (lp-login + Supabase)                                | `src/services/authSetup.ts`                       |
 | Hook (React integration, dev mode bypass)                        | `src/hooks/useProgression.ts`                     |
 | Main Menu (flat grid, `currentModuleId` & `highlightedModuleId`) | `src/components/ui/MainMenu.tsx`                  |
 | Progression View (unit accordion, `--next` class)                | `src/components/ui/ProgressionDashboard.tsx`      |
@@ -118,6 +121,21 @@ This is correct behavior, not a bug. The prerequisite graph has parallel branche
 When `developmentMode: true` (settingsStore), `canAccessModule()` and `getModuleStatus()` return
 `unlocked` for ALL modules regardless of prerequisites. This does NOT change which module is
 "next recommended" — `getNextAvailableModules()` still filters by the real prerequisite graph.
+
+## Shared platform scripts (public/)
+
+Copied from `Learn/scripts/` — keep in sync on auth/theme/login changes:
+
+| File | Role |
+|------|------|
+| `public/lp-login.js` | Login modal; Header calls `lpLogin.open()` |
+| `public/lp-guest-reset.js` | Guest logout + cross-tab reset |
+| `public/lp-platform-urls.js` | Cross-app hrefs (mirrored by `platformUrls.ts`) |
+| `public/lp-nav-active.css` | Imported in `src/index.css` — side menu active item |
+
+**About modal:** React-only via `CompactAbout.tsx` — vanilla apps use `lp-about.js`.
+
+**Side menu active styles:** do not duplicate in `header.css` — use `lp-nav-active.css`.
 
 ## Antes de cualquier cambio
 
