@@ -35,7 +35,7 @@ function syncUserFromSupabase(
 }
 
 export function setupSupabaseAuth(): void {
-  onAuthStateChange((event, session) => {
+  onAuthStateChange(async (event, session) => {
     if (event === 'SIGNED_OUT' || !session?.user) {
       const lpLogin = getLpLogin();
       if (lpLogin?.getUser?.()?.isSupabaseUser) {
@@ -44,7 +44,8 @@ export function setupSupabaseAuth(): void {
       }
       return;
     }
-    fetchProfile().then(profile => syncUserFromSupabase(session.user, profile));
+    const profile = await fetchProfile();
+    syncUserFromSupabase(session.user, profile);
   });
 
   isAuthenticated().then(async authed => {
