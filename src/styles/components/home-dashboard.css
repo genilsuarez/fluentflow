@@ -194,6 +194,7 @@
   color: var(--lp-border-strong);
   opacity: 0.85;
   font-weight: 400;
+  -webkit-user-select: none;
   user-select: none;
 }
 

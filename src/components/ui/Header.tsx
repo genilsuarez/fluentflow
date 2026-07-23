@@ -298,188 +298,193 @@ export const Header: React.FC<HeaderProps> = () => {
           </Suspense>,
           document.body
         )}
-      <div
-        className={`header-side-menu-overlay${showSideMenu ? ' header-side-menu-overlay--open' : ''}`}
-        onClick={event => {
-          if (event.target === event.currentTarget) setShowSideMenu(false);
-        }}
-        role="presentation"
-      >
-        <nav
-          id="navigation-menu"
-          className="header-side-menu"
-          role="navigation"
-          aria-label={t('navigation.navigationAndSettings')}
+      {createPortal(
+        <div
+          className={`header-side-menu-overlay${showSideMenu ? ' header-side-menu-overlay--open' : ''}`}
+          onClick={event => {
+            if (event.target === event.currentTarget) setShowSideMenu(false);
+          }}
+          role="presentation"
         >
-          {/* Header: Avatar + User identity (clickable to edit profile) */}
-          <div className="header-side-menu__header">
-            <div className="header-side-menu__header-row">
-              <div className="header-side-menu__identity">
-                <div className="header-side-menu__avatar" aria-hidden="true">
-                  F
+          <nav
+            id="navigation-menu"
+            className="header-side-menu"
+            role="navigation"
+            aria-label={t('navigation.navigationAndSettings')}
+          >
+            {/* Header: Avatar + User identity (clickable to edit profile) */}
+            <div className="header-side-menu__header">
+              <div className="header-side-menu__header-row">
+                <div className="header-side-menu__identity">
+                  <div className="header-side-menu__avatar" aria-hidden="true">
+                    F
+                  </div>
+                  <div>
+                    <h2 className="header-side-menu__title">FluentFlow</h2>
+                    <p className="header-side-menu__subtitle">LearnFlow</p>
+                  </div>
                 </div>
-                <div>
-                  <h2 className="header-side-menu__title">FluentFlow</h2>
-                  <p className="header-side-menu__subtitle">LearnFlow</p>
-                </div>
-              </div>
-              <button
-                type="button"
-                onClick={handleNavigationModeToggle}
-                className="header-side-menu__nav-mode-toggle"
-                aria-pressed={navigationMode === 'floating'}
-                aria-label={
-                  navigationMode === 'floating'
-                    ? language === 'es'
-                      ? 'Usar barra lateral fija'
-                      : 'Use fixed sidebar'
-                    : language === 'es'
-                      ? 'Usar menú flotante'
-                      : 'Use floating menu'
-                }
-                title={
-                  navigationMode === 'floating'
-                    ? language === 'es'
-                      ? 'Muestra la barra lateral fija'
-                      : 'Shows the fixed sidebar'
-                    : language === 'es'
-                      ? 'Oculta la barra lateral y usa un menú flotante'
-                      : 'Hides the sidebar and uses a floating menu'
-                }
-              >
-                <span aria-hidden="true">{navigationMode === 'floating' ? '▣' : '◫'}</span>
-              </button>
-            </div>
-          </div>
-          {/* Flat menu — no section headers */}
-          <div className="header-side-menu__content">
-            <button
-              onClick={handleGoToHome}
-              className={`header-side-menu__item${!isInGame && useAppStore.getState().previousMenuContext === 'progression' ? ' header-side-menu__item--active' : ''}`}
-              aria-label="Ir al inicio"
-              aria-current={
-                !isInGame && useAppStore.getState().previousMenuContext === 'progression'
-                  ? 'page'
-                  : undefined
-              }
-            >
-              <span className="header-side-menu__icon" aria-hidden="true">
-                <NavMenuIcon name="home" />
-              </span>
-              <span className="header-side-menu__text">Inicio</span>
-            </button>
-            <button
-              onClick={handleGoToModules}
-              className={`header-side-menu__item${!isInGame && useAppStore.getState().previousMenuContext === 'list' ? ' header-side-menu__item--active' : ''}`}
-              aria-label="Ir a ejercicios"
-              aria-current={
-                !isInGame && useAppStore.getState().previousMenuContext === 'list'
-                  ? 'page'
-                  : undefined
-              }
-            >
-              <span className="header-side-menu__icon" aria-hidden="true">
-                <NavMenuIcon name="book" />
-              </span>
-              <span className="header-side-menu__text">Ejercicios</span>
-            </button>
-            <button
-              onClick={() => {
-                setShowSettings(true);
-                setShowSideMenu(false);
-              }}
-              className="header-side-menu__item"
-              aria-label="Ajustes"
-            >
-              <span className="header-side-menu__icon" aria-hidden="true">
-                <NavMenuIcon name="settings" />
-              </span>
-              <span className="header-side-menu__text">Ajustes</span>
-            </button>
-            {developmentMode && (
-              <button
-                onClick={() => {
-                  setShowMyProgressTab('dashboard');
-                  setShowMyProgress(true);
-                  setShowSideMenu(false);
-                }}
-                className="header-side-menu__item"
-                aria-label="Mi progreso"
-              >
-                <span className="header-side-menu__icon" aria-hidden="true">
-                  <NavMenuIcon name="progress" />
-                </span>
-                <span className="header-side-menu__text">Mi Progreso</span>
-              </button>
-            )}
-            {/* Spacer + bottom actions */}
-            <div className="header-side-menu__spacer" />
-            <div className="header-side-menu__footer">
-              <button
-                onClick={() => {
-                  setShowAbout(true);
-                  setShowSideMenu(false);
-                }}
-                className="header-side-menu__item"
-                aria-label="About LearnFlow"
-              >
-                <span className="header-side-menu__icon" aria-hidden="true">
-                  <NavMenuIcon name="info" />
-                </span>
-                <span className="header-side-menu__text">About LearnFlow</span>
-              </button>
-              <button
-                type="button"
-                className="header-side-menu__item header-side-menu__item--theme"
-                aria-label={theme === 'dark' ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'}
-                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-              >
-                <span className="header-side-menu__icon" aria-hidden="true">
-                  <NavMenuIcon name={theme === 'dark' ? 'sun' : 'moon'} />
-                </span>
-                <span className="header-side-menu__text">
-                  {theme === 'dark' ? 'Modo claro' : 'Modo oscuro'}
-                </span>
-              </button>
-              <button
-                type="button"
-                className="header-side-menu__item header-side-menu__item--login"
-                aria-label={user ? `${user.name} — perfil` : t('auth.loginToAccount')}
-                onClick={() => {
-                  setShowSideMenu(false);
-                  if (typeof window !== 'undefined' && (window as any).lpLogin) {
-                    (window as any).lpLogin.open();
+                <button
+                  type="button"
+                  onClick={handleNavigationModeToggle}
+                  className="header-side-menu__nav-mode-toggle"
+                  aria-pressed={navigationMode === 'floating'}
+                  aria-label={
+                    navigationMode === 'floating'
+                      ? language === 'es'
+                        ? 'Usar barra lateral fija'
+                        : 'Use fixed sidebar'
+                      : language === 'es'
+                        ? 'Usar menú flotante'
+                        : 'Use floating menu'
                   }
-                }}
-              >
-                <span className="header-side-menu__icon" aria-hidden="true">
-                  <NavMenuIcon name="user" />
-                </span>
-                <span className="header-side-menu__text">{user ? user.name : t('auth.login')}</span>
-              </button>
-              <a
-                href={portalHref()}
-                className="header-side-menu__item header-side-menu__item--portal"
-                aria-label="Portal"
-                onClick={e => {
-                  if (!isLocalPlatformHost()) return;
-                  const url = new URL(e.currentTarget.href, location.origin);
-                  url.searchParams.set(
-                    'theme',
-                    document.documentElement.classList.contains('dark') ? 'dark' : 'light'
-                  );
-                  e.currentTarget.href = url.toString();
-                }}
+                  title={
+                    navigationMode === 'floating'
+                      ? language === 'es'
+                        ? 'Muestra la barra lateral fija'
+                        : 'Shows the fixed sidebar'
+                      : language === 'es'
+                        ? 'Oculta la barra lateral y usa un menú flotante'
+                        : 'Hides the sidebar and uses a floating menu'
+                  }
+                >
+                  <span aria-hidden="true">{navigationMode === 'floating' ? '▣' : '◫'}</span>
+                </button>
+              </div>
+            </div>
+            {/* Flat menu — no section headers */}
+            <div className="header-side-menu__content">
+              <button
+                onClick={handleGoToHome}
+                className={`header-side-menu__item${!isInGame && useAppStore.getState().previousMenuContext === 'progression' ? ' header-side-menu__item--active' : ''}`}
+                aria-label="Ir al inicio"
+                aria-current={
+                  !isInGame && useAppStore.getState().previousMenuContext === 'progression'
+                    ? 'page'
+                    : undefined
+                }
               >
                 <span className="header-side-menu__icon" aria-hidden="true">
                   <NavMenuIcon name="home" />
                 </span>
-                <span className="header-side-menu__text">Portal</span>
-              </a>
+                <span className="header-side-menu__text">Inicio</span>
+              </button>
+              <button
+                onClick={handleGoToModules}
+                className={`header-side-menu__item${!isInGame && useAppStore.getState().previousMenuContext === 'list' ? ' header-side-menu__item--active' : ''}`}
+                aria-label="Ir a ejercicios"
+                aria-current={
+                  !isInGame && useAppStore.getState().previousMenuContext === 'list'
+                    ? 'page'
+                    : undefined
+                }
+              >
+                <span className="header-side-menu__icon" aria-hidden="true">
+                  <NavMenuIcon name="book" />
+                </span>
+                <span className="header-side-menu__text">Ejercicios</span>
+              </button>
+              <button
+                onClick={() => {
+                  setShowSettings(true);
+                  setShowSideMenu(false);
+                }}
+                className="header-side-menu__item"
+                aria-label="Ajustes"
+              >
+                <span className="header-side-menu__icon" aria-hidden="true">
+                  <NavMenuIcon name="settings" />
+                </span>
+                <span className="header-side-menu__text">Ajustes</span>
+              </button>
+              {developmentMode && (
+                <button
+                  onClick={() => {
+                    setShowMyProgressTab('dashboard');
+                    setShowMyProgress(true);
+                    setShowSideMenu(false);
+                  }}
+                  className="header-side-menu__item"
+                  aria-label="Mi progreso"
+                >
+                  <span className="header-side-menu__icon" aria-hidden="true">
+                    <NavMenuIcon name="progress" />
+                  </span>
+                  <span className="header-side-menu__text">Mi Progreso</span>
+                </button>
+              )}
+              {/* Spacer + bottom actions */}
+              <div className="header-side-menu__spacer" />
+              <div className="header-side-menu__footer">
+                <button
+                  onClick={() => {
+                    setShowAbout(true);
+                    setShowSideMenu(false);
+                  }}
+                  className="header-side-menu__item"
+                  aria-label="About LearnFlow"
+                >
+                  <span className="header-side-menu__icon" aria-hidden="true">
+                    <NavMenuIcon name="info" />
+                  </span>
+                  <span className="header-side-menu__text">About LearnFlow</span>
+                </button>
+                <button
+                  type="button"
+                  className="header-side-menu__item header-side-menu__item--theme"
+                  aria-label={theme === 'dark' ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'}
+                  onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                >
+                  <span className="header-side-menu__icon" aria-hidden="true">
+                    <NavMenuIcon name={theme === 'dark' ? 'sun' : 'moon'} />
+                  </span>
+                  <span className="header-side-menu__text">
+                    {theme === 'dark' ? 'Modo claro' : 'Modo oscuro'}
+                  </span>
+                </button>
+                <button
+                  type="button"
+                  className="header-side-menu__item header-side-menu__item--login"
+                  aria-label={user ? `${user.name} — perfil` : t('auth.loginToAccount')}
+                  onClick={() => {
+                    setShowSideMenu(false);
+                    if (typeof window !== 'undefined' && (window as any).lpLogin) {
+                      (window as any).lpLogin.open();
+                    }
+                  }}
+                >
+                  <span className="header-side-menu__icon" aria-hidden="true">
+                    <NavMenuIcon name="user" />
+                  </span>
+                  <span className="header-side-menu__text">
+                    {user ? user.name : t('auth.login')}
+                  </span>
+                </button>
+                <a
+                  href={portalHref()}
+                  className="header-side-menu__item header-side-menu__item--portal"
+                  aria-label="Portal"
+                  onClick={e => {
+                    if (!isLocalPlatformHost()) return;
+                    const url = new URL(e.currentTarget.href, location.origin);
+                    url.searchParams.set(
+                      'theme',
+                      document.documentElement.classList.contains('dark') ? 'dark' : 'light'
+                    );
+                    e.currentTarget.href = url.toString();
+                  }}
+                >
+                  <span className="header-side-menu__icon" aria-hidden="true">
+                    <NavMenuIcon name="home" />
+                  </span>
+                  <span className="header-side-menu__text">Portal</span>
+                </a>
+              </div>
             </div>
-          </div>
-        </nav>
-      </div>
+          </nav>
+        </div>,
+        document.body
+      )}
     </header>
   );
 };

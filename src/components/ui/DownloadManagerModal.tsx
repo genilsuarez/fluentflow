@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import { createPortal } from 'react-dom';
 import { X, Trash2 } from 'lucide-react';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useTranslation } from '../../utils/i18n';
@@ -95,7 +96,7 @@ export const DownloadManagerModal: React.FC<DownloadManagerModalProps> = ({ isOp
 
   const hasDownloads = levelInfo.length > 0;
 
-  return (
+  return createPortal(
     <div className="download-manager" onClick={handleOverlayClick}>
       <div className="download-manager__container">
         <div className="download-manager__header">
@@ -173,6 +174,7 @@ export const DownloadManagerModal: React.FC<DownloadManagerModalProps> = ({ isOp
         cancelLabel={t('common.cancel', 'Cancel')}
         variant="danger"
       />
-    </div>
+    </div>,
+    document.body
   );
 };

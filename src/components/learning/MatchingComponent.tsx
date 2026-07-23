@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { createPortal } from 'react-dom';
 import { RotateCcw, Check, Info, X, Eraser } from 'lucide-react';
 import { useAppStore } from '../../stores/appStore';
 import { useUserStore } from '../../stores/userStore';
@@ -501,118 +502,124 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
       </div>
 
       {/* Explanation/Summary Modal */}
-      {showExplanation && selectedTerm && (
-        <div className="matching-modal">
-          <div className="matching-modal__container">
-            <div className="matching-modal__header">
-              <h3 className="matching-modal__title">
-                {selectedTerm.pairs
-                  ? t('learning.exerciseSummary')
-                  : t('learning.explanation').replace(':', '')}
-              </h3>
-              <button
-                onClick={() => setShowExplanation(false)}
-                className="matching-modal__close-btn"
-              >
-                <X className="matching-modal__close-icon" />
-              </button>
-            </div>
+      {showExplanation &&
+        selectedTerm &&
+        createPortal(
+          <div className="matching-modal">
+            <div className="matching-modal__container">
+              <div className="matching-modal__header">
+                <h3 className="matching-modal__title">
+                  {selectedTerm.pairs
+                    ? t('learning.exerciseSummary')
+                    : t('learning.explanation').replace(':', '')}
+                </h3>
+                <button
+                  onClick={() => setShowExplanation(false)}
+                  className="matching-modal__close-btn"
+                >
+                  <X className="matching-modal__close-icon" />
+                </button>
+              </div>
 
-            <div className="matching-modal__content">
-              {selectedTerm.pairs ? (
-                /* Summary View */
-                <div className="matching-modal__summary">
-                  <div className="matching-modal__results-grid">
-                    {selectedTerm.results.map((result: any, index: number) => (
-                      <div
-                        key={index}
-                        className={`matching-modal__result-card ${
-                          result.isCorrect
-                            ? 'matching-modal__result-card--correct'
-                            : 'matching-modal__result-card--incorrect'
-                        }`}
-                      >
-                        <span
-                          className={`matching-modal__card-status ${
+              <div className="matching-modal__content">
+                {selectedTerm.pairs ? (
+                  /* Summary View */
+                  <div className="matching-modal__summary">
+                    <div className="matching-modal__results-grid">
+                      {selectedTerm.results.map((result: any, index: number) => (
+                        <div
+                          key={index}
+                          className={`matching-modal__result-card ${
                             result.isCorrect
-                              ? 'matching-modal__card-status--correct'
-                              : 'matching-modal__card-status--incorrect'
+                              ? 'matching-modal__result-card--correct'
+                              : 'matching-modal__result-card--incorrect'
                           }`}
                         >
-                          {result.isCorrect ? '✓' : '✗'}
-                        </span>
+                          <span
+                            className={`matching-modal__card-status ${
+                              result.isCorrect
+                                ? 'matching-modal__card-status--correct'
+                                : 'matching-modal__card-status--incorrect'
+                            }`}
+                          >
+                            {result.isCorrect ? '✓' : '✗'}
+                          </span>
 
-                        <div className="matching-modal__card-body">
-                          <h4 className="matching-modal__card-term">
-                            <ContentRenderer
-                              content={ContentAdapter.ensureStructured(result.left, 'quiz')}
-                            />
-                          </h4>
-
-                          <span className="matching-modal__card-arrow">→</span>
-
-                          <p className="matching-modal__card-value matching-modal__card-value--correct">
-                            <ContentRenderer
-                              content={ContentAdapter.ensureStructured(result.right, 'quiz')}
-                            />
-                          </p>
-
-                          {!result.isCorrect && (
-                            <p className="matching-modal__card-value matching-modal__card-value--incorrect">
+                          <div className="matching-modal__card-body">
+                            <h4 className="matching-modal__card-term">
                               <ContentRenderer
-                                content={ContentAdapter.ensureStructured(result.userAnswer, 'quiz')}
+                                content={ContentAdapter.ensureStructured(result.left, 'quiz')}
+                              />
+                            </h4>
+
+                            <span className="matching-modal__card-arrow">→</span>
+
+                            <p className="matching-modal__card-value matching-modal__card-value--correct">
+                              <ContentRenderer
+                                content={ContentAdapter.ensureStructured(result.right, 'quiz')}
                               />
                             </p>
-                          )}
+
+                            {!result.isCorrect && (
+                              <p className="matching-modal__card-value matching-modal__card-value--incorrect">
+                                <ContentRenderer
+                                  content={ContentAdapter.ensureStructured(
+                                    result.userAnswer,
+                                    'quiz'
+                                  )}
+                                />
+                              </p>
+                            )}
+                          </div>
                         </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ) : (
-                /* Individual Explanation View - Card style */
-                <div className="matching-modal__individual">
-                  <div className="matching-modal__result-card matching-modal__result-card--correct">
-                    <span className="matching-modal__card-status matching-modal__card-status--correct">
-                      ✓
-                    </span>
-                    <h4 className="matching-modal__card-term">
-                      <ContentRenderer
-                        content={ContentAdapter.ensureStructured(selectedTerm.left, 'quiz')}
-                      />
-                    </h4>
-                    <p className="matching-modal__card-value matching-modal__card-value--correct">
-                      <ContentRenderer
-                        content={ContentAdapter.ensureStructured(selectedTerm.right, 'quiz')}
-                      />
-                    </p>
-                  </div>
-
-                  {selectedTerm.explanation && (
-                    <div className="matching-modal__detail-explanation">
-                      <ContentRenderer
-                        content={ContentAdapter.ensureStructured(
-                          selectedTerm.explanation,
-                          'explanation'
-                        )}
-                      />
+                      ))}
                     </div>
-                  )}
-                </div>
-              )}
-            </div>
+                  </div>
+                ) : (
+                  /* Individual Explanation View - Card style */
+                  <div className="matching-modal__individual">
+                    <div className="matching-modal__result-card matching-modal__result-card--correct">
+                      <span className="matching-modal__card-status matching-modal__card-status--correct">
+                        ✓
+                      </span>
+                      <h4 className="matching-modal__card-term">
+                        <ContentRenderer
+                          content={ContentAdapter.ensureStructured(selectedTerm.left, 'quiz')}
+                        />
+                      </h4>
+                      <p className="matching-modal__card-value matching-modal__card-value--correct">
+                        <ContentRenderer
+                          content={ContentAdapter.ensureStructured(selectedTerm.right, 'quiz')}
+                        />
+                      </p>
+                    </div>
 
-            <div className="matching-modal__actions">
-              <button
-                onClick={() => setShowExplanation(false)}
-                className="matching-modal__close-button"
-              >
-                Close
-              </button>
+                    {selectedTerm.explanation && (
+                      <div className="matching-modal__detail-explanation">
+                        <ContentRenderer
+                          content={ContentAdapter.ensureStructured(
+                            selectedTerm.explanation,
+                            'explanation'
+                          )}
+                        />
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+
+              <div className="matching-modal__actions">
+                <button
+                  onClick={() => setShowExplanation(false)}
+                  className="matching-modal__close-button"
+                >
+                  Close
+                </button>
+              </div>
             </div>
-          </div>
-        </div>
-      )}
+          </div>,
+          document.body
+        )}
     </div>
   );
 };

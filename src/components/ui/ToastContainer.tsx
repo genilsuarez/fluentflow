@@ -1,4 +1,5 @@
 import React from 'react';
+import { createPortal } from 'react-dom';
 import Toast from './Toast';
 import { useToastStore } from '../../stores/toastStore';
 import { useSettingsStore } from '../../stores/settingsStore';
@@ -16,9 +17,10 @@ export const ToastContainer: React.FC = () => {
     return null;
   }
 
-  return (
+  return createPortal(
     <div aria-label={t('navigation.notifications')} role="region" className="toast-container">
       <Toast key={currentToast.id} toast={currentToast} onClose={clearToast} />
-    </div>
+    </div>,
+    document.body
   );
 };

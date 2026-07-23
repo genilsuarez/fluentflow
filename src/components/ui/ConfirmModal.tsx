@@ -1,4 +1,5 @@
 import React from 'react';
+import { createPortal } from 'react-dom';
 import { X, AlertTriangle } from 'lucide-react';
 import { useEscapeKey } from '../../hooks/useEscapeKey';
 import '../../styles/components/confirm-modal.css';
@@ -29,7 +30,7 @@ export const ConfirmModal: React.FC<ConfirmModalProps> = ({
 
   if (!isOpen) return null;
 
-  return (
+  return createPortal(
     <div className="confirm-modal" onClick={onClose} role="presentation">
       <div
         className="confirm-modal__container"
@@ -67,6 +68,7 @@ export const ConfirmModal: React.FC<ConfirmModalProps> = ({
           </button>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 };

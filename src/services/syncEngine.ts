@@ -237,8 +237,7 @@ async function downloadOnLogin() {
   ]);
 
   const { completedModules, progressHistory } = useProgressStore.getState();
-  const hasLocalData =
-    Object.keys(completedModules).length > 0 || progressHistory.length > 0;
+  const hasLocalData = Object.keys(completedModules).length > 0 || progressHistory.length > 0;
 
   if (remoteProgress === null && remoteActivity === null) {
     if (hasLocalData) downloaded = true;

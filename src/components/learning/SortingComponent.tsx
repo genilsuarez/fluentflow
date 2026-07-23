@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { RotateCcw, Check, Info, X, Eraser } from 'lucide-react';
 import { useAppStore } from '../../stores/appStore';
 import { useUserStore } from '../../stores/userStore';
@@ -686,77 +687,80 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
       )}
 
       {/* Explanation/Summary Modal */}
-      {showExplanation && selectedTerm && (
-        <div className="sorting-modal">
-          <div className="sorting-modal__container">
-            <div className="sorting-modal__header">
-              <h3 className="sorting-modal__title">{t('learning.exerciseSummary')}</h3>
-              <button
-                onClick={() => setShowExplanation(false)}
-                className="sorting-modal__close-btn"
-                aria-label={t('common.close')}
-              >
-                <X className="sorting-modal__close-icon" size={18} aria-hidden="true" />
-              </button>
-            </div>
+      {showExplanation &&
+        selectedTerm &&
+        createPortal(
+          <div className="sorting-modal">
+            <div className="sorting-modal__container">
+              <div className="sorting-modal__header">
+                <h3 className="sorting-modal__title">{t('learning.exerciseSummary')}</h3>
+                <button
+                  onClick={() => setShowExplanation(false)}
+                  className="sorting-modal__close-btn"
+                  aria-label={t('common.close')}
+                >
+                  <X className="sorting-modal__close-icon" size={18} aria-hidden="true" />
+                </button>
+              </div>
 
-            <div className="sorting-modal__content">
-              {/* Summary View */}
-              <div className="sorting-modal__summary">
-                <div className="sorting-modal__results-grid">
-                  {selectedTerm.results.map((result: any, index: number) => (
-                    <div
-                      key={index}
-                      className={`sorting-modal__result-card ${
-                        result.isCorrect
-                          ? 'sorting-modal__result-card--correct'
-                          : 'sorting-modal__result-card--incorrect'
-                      }`}
-                    >
-                      <span
-                        className={`sorting-modal__card-status ${
+              <div className="sorting-modal__content">
+                {/* Summary View */}
+                <div className="sorting-modal__summary">
+                  <div className="sorting-modal__results-grid">
+                    {selectedTerm.results.map((result: any, index: number) => (
+                      <div
+                        key={index}
+                        className={`sorting-modal__result-card ${
                           result.isCorrect
-                            ? 'sorting-modal__card-status--correct'
-                            : 'sorting-modal__card-status--incorrect'
+                            ? 'sorting-modal__result-card--correct'
+                            : 'sorting-modal__result-card--incorrect'
                         }`}
                       >
-                        {result.isCorrect ? '✓' : '✗'}
-                      </span>
+                        <span
+                          className={`sorting-modal__card-status ${
+                            result.isCorrect
+                              ? 'sorting-modal__card-status--correct'
+                              : 'sorting-modal__card-status--incorrect'
+                          }`}
+                        >
+                          {result.isCorrect ? '✓' : '✗'}
+                        </span>
 
-                      <h4 className="sorting-modal__card-word">
-                        <ContentRenderer
-                          content={ContentAdapter.ensureStructured(result.word, 'quiz')}
-                        />
-                      </h4>
+                        <h4 className="sorting-modal__card-word">
+                          <ContentRenderer
+                            content={ContentAdapter.ensureStructured(result.word, 'quiz')}
+                          />
+                        </h4>
 
-                      <p className="sorting-modal__card-value sorting-modal__card-value--correct">
-                        {result.correctCategory}
-                      </p>
-
-                      {!result.isCorrect ? (
-                        <p className="sorting-modal__card-value sorting-modal__card-value--incorrect">
-                          {result.userCategory}
+                        <p className="sorting-modal__card-value sorting-modal__card-value--correct">
+                          {result.correctCategory}
                         </p>
-                      ) : (
-                        <span className="sorting-modal__card-placeholder"></span>
-                      )}
-                    </div>
-                  ))}
+
+                        {!result.isCorrect ? (
+                          <p className="sorting-modal__card-value sorting-modal__card-value--incorrect">
+                            {result.userCategory}
+                          </p>
+                        ) : (
+                          <span className="sorting-modal__card-placeholder"></span>
+                        )}
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="sorting-modal__actions">
-              <button
-                onClick={() => setShowExplanation(false)}
-                className="sorting-modal__close-button"
-              >
-                {t('common.close')}
-              </button>
+              <div className="sorting-modal__actions">
+                <button
+                  onClick={() => setShowExplanation(false)}
+                  className="sorting-modal__close-button"
+                >
+                  {t('common.close')}
+                </button>
+              </div>
             </div>
-          </div>
-        </div>
-      )}
+          </div>,
+          document.body
+        )}
     </div>
   );
 };

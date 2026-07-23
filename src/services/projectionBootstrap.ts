@@ -56,8 +56,12 @@ function readProjectionDocs(): {
   activity: ProjectionActivityDoc | null;
 } {
   try {
-    const progress = JSON.parse(localStorage.getItem(PROGRESS_KEY) || 'null') as ProjectionProgressDoc;
-    const activity = JSON.parse(localStorage.getItem(ACTIVITY_KEY) || 'null') as ProjectionActivityDoc;
+    const progress = JSON.parse(
+      localStorage.getItem(PROGRESS_KEY) || 'null'
+    ) as ProjectionProgressDoc;
+    const activity = JSON.parse(
+      localStorage.getItem(ACTIVITY_KEY) || 'null'
+    ) as ProjectionActivityDoc;
     return {
       progress: progress?.content ? progress : null,
       activity: Array.isArray(activity?.events) ? activity : null,
