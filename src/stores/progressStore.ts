@@ -68,68 +68,6 @@ const getDateString = (daysAgo: number): string => {
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 };
 
-/**
- * Migrate legacy progress data to the current format.
- *
- * Legacy format stored completedModules as a plain string array with an old
- * ID naming convention (e.g. "a1-reading-greetings"). The current format uses
- * Record<string, ModuleCompletion> with IDs like "reading-greetings-a1".
- *
- * Migration strategy:
- *  1. Detect array format → convert each entry to a ModuleCompletion record.
- *  2. Remap old IDs: move the level prefix ("a1-") to a suffix ("-a1").
- *  3. Stale/unmatchable IDs are preserved as-is — progressionService.initialize()
- *     will filter them out when validating against the loaded module catalog.
- */
-function migrateCompletedModules(raw: unknown): Record<string, ModuleCompletion> {
-  // Already in correct format
-  if (raw && typeof raw === 'object' && !Array.isArray(raw)) {
-    const record = raw as Record<string, unknown>;
-    // Verify it's actually Record<string, ModuleCompletion> (first value has moduleId)
-    const firstValue = Object.values(record)[0];
-    if (!firstValue || (typeof firstValue === 'object' && 'moduleId' in (firstValue as object))) {
-      return record as Record<string, ModuleCompletion>;
-    }
-  }
-
-  // Legacy array format: string[] of module IDs
-  if (!Array.isArray(raw)) return {};
-
-  const today = getTodayString();
-  const migrated: Record<string, ModuleCompletion> = {};
-
-  for (const entry of raw) {
-    if (typeof entry !== 'string' || !entry) continue;
-
-    const remappedId = remapLegacyId(entry);
-    migrated[remappedId] = {
-      moduleId: remappedId,
-      completedAt: today,
-      bestScore: 85, // default score for migrated entries
-      attempts: 1,
-    };
-  }
-
-  logDebug(
-    'Migrated legacy completedModules',
-    { from: 'array', entries: raw.length, migrated: Object.keys(migrated).length },
-    'ProgressStore'
-  );
-
-  return migrated;
-}
-
-/**
- * Remap a legacy ID ("a1-reading-greetings") to current format ("reading-greetings-a1").
- * If the ID doesn't match the legacy pattern, returns it unchanged.
- */
-function remapLegacyId(id: string): string {
-  const match = id.match(/^(a[12]|b[12]|c[12])-(.+)$/);
-  if (!match) return id; // not legacy format, return as-is
-  const [, level, slug] = match;
-  return `${slug}-${level}`;
-}
-
 export const useProgressStore = create<ProgressStore>()(
   persist(
     (set, get) => ({
@@ -386,14 +324,6 @@ export const useProgressStore = create<ProgressStore>()(
         dailyProgress: state.dailyProgress,
         completedModules: state.completedModules,
       }),
-      migrate: (persisted: unknown, version: number) => {
-        const state = persisted as Record<string, unknown>;
-        if (version < 1) {
-          // Migrate completedModules from legacy array to Record format
-          state.completedModules = migrateCompletedModules(state.completedModules);
-        }
-        return state as typeof persisted;
-      },
       onRehydrateStorage: () => state => {
         // Auto-cleanup old progress data (keep 90 days) on app load
         if (state) {

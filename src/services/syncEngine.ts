@@ -12,8 +12,10 @@ import {
   onAuthStateChange,
   syncProgress,
   syncActivityEvents,
+  fetchProgress,
   type ActivityEventInput,
   type ProgressContentItem,
+  type RemoteProgressRow,
 } from './supabaseClient';
 
 const PASS_SCORE_PCT = 70;
@@ -80,6 +82,46 @@ function scheduleSync() {
   }, 500);
 }
 
+// Mezcla filas remotas en completedModules sin retroceder progreso ya
+// alcanzado localmente (favorece completado, mejor puntaje, más intentos).
+function mergeRemoteProgress(
+  local: Record<string, ModuleCompletion>,
+  remote: RemoteProgressRow[]
+): Record<string, ModuleCompletion> {
+  const merged = { ...local };
+  for (const row of remote) {
+    if (!row.completed) continue; // completedModules solo trackea completados
+    const existing = merged[row.content_id];
+    merged[row.content_id] = {
+      moduleId: row.content_id,
+      completedAt: row.completed_at || existing?.completedAt || new Date().toISOString(),
+      bestScore: Math.max(row.best_score_pct ?? 0, existing?.bestScore ?? 0),
+      attempts: Math.max(row.attempts ?? 0, existing?.attempts ?? 0),
+    };
+  }
+  return merged;
+}
+
+let downloaded = false;
+
+// Se llama una sola vez por sesión, justo después de autenticarse. No hay
+// polling — el refresh normal ocurre vía scheduleSync() al completar algo.
+async function downloadOnLogin() {
+  if (downloaded) return;
+  const authed = await isAuthenticated().catch(() => false);
+  if (!authed) return;
+
+  downloaded = true;
+  const remote = await fetchProgress().catch(() => []);
+  if (!remote.length) return;
+
+  const { completedModules } = useProgressStore.getState();
+  const merged = mergeRemoteProgress(completedModules, remote);
+  if (Object.keys(merged).length !== Object.keys(completedModules).length) {
+    useProgressStore.setState({ completedModules: merged });
+  }
+}
+
 let initialized = false;
 
 export function initSyncEngine(): void {
@@ -88,11 +130,17 @@ export function initSyncEngine(): void {
 
   useProgressStore.subscribe(() => scheduleSync());
   onAuthStateChange(async (_event, session) => {
-    if (session?.user) scheduleSync();
+    if (session?.user) {
+      await downloadOnLogin();
+      scheduleSync();
+    }
   });
   isAuthenticated()
-    .then(authed => {
-      if (authed) scheduleSync();
+    .then(async authed => {
+      if (authed) {
+        await downloadOnLogin();
+        scheduleSync();
+      }
     })
     .catch(() => {});
 }

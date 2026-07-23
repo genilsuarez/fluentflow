@@ -68,6 +68,33 @@ export async function syncProgress(
   return error ? { synced: false, reason: error.message } : { synced: true, count: rows.length };
 }
 
+export interface RemoteProgressRow {
+  content_id: string;
+  content_type: string;
+  progress_pct: number;
+  completed: boolean;
+  completed_at: string | null;
+  best_score_pct: number | null;
+  attempts: number;
+}
+
+export async function fetchProgress(): Promise<RemoteProgressRow[]> {
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return [];
+
+  const { data, error } = await supabase
+    .from('progress')
+    .select(
+      'content_id, content_type, progress_pct, completed, completed_at, best_score_pct, attempts'
+    )
+    .eq('user_id', user.id)
+    .eq('app', 'fluentflow');
+
+  return error || !data ? [] : data;
+}
+
 export interface ActivityEventInput {
   eventId: string;
   runId: string;
