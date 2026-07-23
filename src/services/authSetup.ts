@@ -1,4 +1,10 @@
-import { fetchProfile, getSession, isAuthenticated, onAuthStateChange, signOut } from './supabaseClient';
+import {
+  fetchProfile,
+  getSession,
+  isAuthenticated,
+  onAuthStateChange,
+  signOut,
+} from './supabaseClient';
 import { useUserStore } from '../stores/userStore';
 import type { User } from '../types';
 

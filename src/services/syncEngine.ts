@@ -317,17 +317,21 @@ export function initSyncEngine(): void {
   onAuthStateChange(async (event, session) => {
     if (!session?.user) {
       resetDownloadState();
-      (window as Window & { lpGuestReset?: { clearExplicitLogout: () => void } }).lpGuestReset?.clearExplicitLogout?.();
+      (
+        window as Window & { lpGuestReset?: { clearExplicitLogout: () => void } }
+      ).lpGuestReset?.clearExplicitLogout?.();
       return;
     }
 
-    const guestReset = (window as Window & {
-      lpGuestReset?: {
-        shouldRejectSession: () => boolean;
-        shouldForceCloudDownload: () => boolean;
-        clearExplicitLogout: () => void;
-      };
-    }).lpGuestReset;
+    const guestReset = (
+      window as Window & {
+        lpGuestReset?: {
+          shouldRejectSession: () => boolean;
+          shouldForceCloudDownload: () => boolean;
+          clearExplicitLogout: () => void;
+        };
+      }
+    ).lpGuestReset;
 
     if (guestReset?.shouldRejectSession?.()) {
       return;
@@ -346,12 +350,14 @@ export function initSyncEngine(): void {
     .then(async authed => {
       if (!authed) return;
 
-      const guestReset = (window as Window & {
-        lpGuestReset?: {
-          shouldRejectSession: () => boolean;
-          shouldForceCloudDownload: () => boolean;
-        };
-      }).lpGuestReset;
+      const guestReset = (
+        window as Window & {
+          lpGuestReset?: {
+            shouldRejectSession: () => boolean;
+            shouldForceCloudDownload: () => boolean;
+          };
+        }
+      ).lpGuestReset;
 
       if (guestReset?.shouldRejectSession?.()) return;
 
