@@ -724,7 +724,7 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
 
         <button
           onClick={triggerRestart}
-          className="game-controls__home-btn"
+          className="game-controls__home-btn game-controls__reset-btn"
           title={t('common.reset')}
         >
           <RotateCcw size={16} aria-hidden="true" />

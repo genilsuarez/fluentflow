@@ -6,16 +6,15 @@
  * ever overlays its own chrome over the page. This file only decides
  * WHETHER that environment applies — the clearance amount lives in CSS.
  *
- * History: this used to reserve a hardcoded 52px, on the assumption
- * Cursor draws a bottom toolbar over the page. Verified live in Cursor on
- * 2026-07-23 that this is NOT the case (at least in the version tested) —
- * there is no overlay, and reserving 52px anyway just left a visible empty
- * gap of the app's own background under the controls bar. The clearance
- * is now 0 for that reason (see the CSS comment for the single source of
- * truth). Detection is kept in place rather than deleted outright, in
- * case a real overlay shows up in a different Cursor preview mode/version
- * later — but do not restore a nonzero value without confirming an actual
- * overlay live inside Cursor first.
+ * History (see the CSS comment in game-controls.css for the full story):
+ * 52px (unverified guess) → 0px (verified live, but wrong for a different
+ * view where content really was clipped) → 34px (Apple's own iPhone
+ * home-indicator height, used as a principled fallback for what
+ * `env(safe-area-inset-bottom)` should have reported — Cursor's simulated
+ * device draws a home-indicator bar but doesn't feed that env() value).
+ * Don't change the CSS value again without a live measurement or an
+ * equally principled reason — two of the three values tried here were
+ * guesses that turned out wrong.
  *
  * Dynamic measurement (`window.visualViewport.height` vs `innerHeight`)
  * was considered instead of a constant, but per MDN, `visualViewport`

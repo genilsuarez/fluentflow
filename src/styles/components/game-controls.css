@@ -449,13 +449,25 @@ html.dark .game-controls {
 
 /* Cursor IDE mobile preview positioning override.
    --cursor-preview-chrome-bottom is the single source of truth for extra
-   bottom clearance; if a real overlapping toolbar is ever confirmed live
-   inside Cursor, set its measured height here — do not guess a value.
-   Verified 2026-07-23: no overlay present (confirmed live in Cursor's
-   preview), so this is 0 — kept at 0 rather than removed in case a real
-   overlay shows up in some other Cursor preview mode/version later. */
+   bottom clearance.
+   Root cause (confirmed live in Cursor via devtools, 2026-07-23): the
+   default mobile bottom-bar clearance elsewhere in this file uses
+   `env(safe-area-inset-bottom)` — the standard way to reserve space for a
+   real iPhone's home-indicator bar. Cursor's device-frame mock draws a
+   home-indicator-style bar too, but its simulated viewport does not feed
+   a matching `env(safe-area-inset-bottom)` value (confirmed via
+   getBoundingClientRect: .game-controls sits flush at bottom:0 with zero
+   gap, exactly what you'd see if that env() resolves to 0 in Cursor).
+   Using Apple's own standard home-indicator height (34px, iPhone X+) as
+   the fallback here — a real HIG constant, not an arbitrary guess.
+   First attempt at this was 52px (unverified guess, left a visible empty
+   gap — confirmed live, then corrected to 0). Second attempt was 0px
+   (also wrong — confirmed live via devtools this time, controls sit
+   flush with no clearance and get clipped by Cursor's own chrome). If
+   34px is still off once tested live in Cursor, adjust only this value —
+   but get a live measurement first, don't guess a third time. */
 html.browser-cursor-embedded {
-  --cursor-preview-chrome-bottom: 0px;
+  --cursor-preview-chrome-bottom: 34px;
 }
 
 @media (max-width: 768px) {

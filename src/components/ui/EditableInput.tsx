@@ -78,12 +78,14 @@ export const EditableInput = forwardRef<EditableInputHandle, EditableInputProps>
       sel?.addRange(range);
     };
 
-    // Update div content only when value changes externally AND div is not focused.
-    // On mobile (iOS/Android), setting textContent while the element has focus
-    // resets the cursor to position 0, causing the "cursor behind first letter" bug.
+    // Update div content when value changes externally.
+    // While focused, skip writes to preserve cursor — except external clears (e.g. next question).
     useEffect(() => {
-      if (divRef.current && !isFocused.current && divRef.current.textContent !== value) {
-        divRef.current.textContent = value;
+      if (!divRef.current) return;
+      const el = divRef.current;
+      if (el.textContent === value) return;
+      if (!isFocused.current || value === '') {
+        el.textContent = value;
       }
     }, [value]);
 

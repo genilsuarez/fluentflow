@@ -13,6 +13,8 @@
 .home-dash__hero {
   display: grid;
   gap: 8px;
+  width: 100%;
+  min-width: 0;
 }
 
 .home-dash__kicker {
@@ -30,6 +32,10 @@
   align-items: center;
   justify-content: space-between;
   gap: 14px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
   padding: 12px 16px;
   border: 1px solid var(--lp-border);
   border-radius: var(--lp-radius-lg, 12px);
@@ -780,8 +786,19 @@ html.dark .main-menu .home-dash .home-dash__level-code--indigo,
     gap: 0.75rem;
   }
 
+  .home-dash__continue-banner {
+    gap: 10px;
+    padding: 10px 12px;
+  }
+
+  .home-dash__continue-title {
+    font-size: 0.95rem;
+  }
+
   .home-dash__continue-btn {
     white-space: nowrap;
+    padding: 6px 10px;
+    font-size: 0.68rem;
   }
 
   .home-dash__stats {

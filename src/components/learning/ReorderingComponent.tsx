@@ -2,8 +2,6 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { Check, ArrowRight, RotateCcw, Eye, Eraser } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { prepareWords, validateReordering, moveWord } from './reorderingUtils';
-import { EXERCISE_SPEECH_DELAY_MS } from '../../utils/exerciseTransition';
-import { speak, stopSpeaking, isSpeechAvailable, whenVoicesReady } from '../../utils/speech';
 import LearningProgressHeader from '../ui/LearningProgressHeader';
 import ExerciseResultScreen from '../ui/ExerciseResultScreen';
 import type { LearningModule, ReorderingData } from '../../types';
@@ -82,28 +80,6 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
     loadExerciseState(currentExercise);
   }, [currentIndex, currentExercise, loadExerciseState]);
 
-  useEffect(() => () => stopSpeaking(), []);
-
-  // Read the correct sentence after validation (delay avoids first-play cutoff)
-  useEffect(() => {
-    if (!showResult || !currentExercise?.sentence || !isSpeechAvailable()) return;
-
-    let cancelled = false;
-    const delayTimer = window.setTimeout(() => {
-      void whenVoicesReady().then(() => {
-        if (!cancelled) {
-          speak(currentExercise.sentence, { rate: 0.9 });
-        }
-      });
-    }, EXERCISE_SPEECH_DELAY_MS);
-
-    return () => {
-      cancelled = true;
-      clearTimeout(delayTimer);
-      stopSpeaking();
-    };
-  }, [showResult, currentIndex, currentExercise]);
-
   // Tap word in word bank -> move to end of answer zone
   const handleTapAvailable = useCallback(
     (index: number) => {
@@ -153,7 +129,6 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
 
   const handleNext = useCallback(() => {
     if (currentIndex < exercises.length - 1) {
-      stopSpeaking();
       const nextIndex = currentIndex + 1;
       const nextExercise = exercises[nextIndex];
       if (!nextExercise) return;
@@ -408,7 +383,7 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
           <span className="reordering__sentence-text">{currentExercise.sentence}</span>
         </div>
       )}
-      {!isCorrect && currentExercise.explanation && (
+      {currentExercise.explanation && (
         <div className="reordering__explanation">
           <p>{currentExercise.explanation}</p>
         </div>

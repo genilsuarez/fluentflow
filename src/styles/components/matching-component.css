@@ -733,7 +733,7 @@ html.dark .matching-component__item--incorrect .matching-component__info-icon {
   }
 
   .matching-component__column-header {
-    font-size: 0.6875rem;
+    font-size: 0.84rem;
     padding: 0.25rem 0.375rem;
     margin-bottom: 0.375rem;
   }
@@ -743,21 +743,21 @@ html.dark .matching-component__item--incorrect .matching-component__info-icon {
   }
 
   .matching-component__item-text {
-    font-size: 0.75rem;
+    font-size: 0.91rem;
     line-height: 1.2;
   }
 
   .matching-component__item-letter {
     width: 1.25rem !important;
     height: 1.25rem !important;
-    font-size: 0.6875rem !important;
+    font-size: 0.84rem !important;
     margin-right: 0.375rem !important;
   }
 
   .matching-component__match-number {
     min-width: 1.25rem;
     height: 1.25rem;
-    font-size: 0.625rem;
+    font-size: 0.76rem;
   }
 
   .matching-component__info-button {
@@ -791,13 +791,13 @@ html.dark .matching-component__item--incorrect .matching-component__info-icon {
   }
 
   .matching-component__item-text {
-    font-size: 0.6875rem;
+    font-size: 0.84rem;
   }
 
   .matching-component__item-letter {
     width: 1.125rem !important;
     height: 1.125rem !important;
-    font-size: 0.625rem !important;
+    font-size: 0.76rem !important;
     margin-right: 0.25rem !important;
   }
 }
@@ -889,7 +889,7 @@ html.dark body .matching-component .matching-component__item--incorrect {
   .matching-component .matching-component__item {
     min-height: 2.25rem !important;
     padding: 0.375rem 0.4375rem !important;
-    font-size: 0.75rem !important;
+    font-size: 0.91rem !important;
     line-height: 1.2 !important;
     overflow: hidden !important;
   }
@@ -922,11 +922,18 @@ html.dark body .matching-component .matching-component__item--incorrect {
   .matching-component .matching-component__match-number {
     min-width: 1rem !important;
     height: 1rem !important;
-    font-size: 0.5625rem !important;
+    font-size: 0.69rem !important;
   }
 
   .matching-component .matching-component__item-text {
+    font-size: 0.91rem !important;
+    line-height: 1.2 !important;
     padding-right: 2rem !important;
+  }
+
+  .matching-component .matching-component__item-text .content-renderer,
+  .matching-component .matching-component__item-text .content-renderer__segment {
+    font-size: inherit;
   }
 
   .matching-component .matching-component__item--correct,
@@ -942,7 +949,7 @@ html.dark body .matching-component .matching-component__item--incorrect {
   .matching-component .matching-component__item--incorrect .matching-component__item-letter {
     width: 1.125rem !important;
     height: 1.125rem !important;
-    font-size: 0.625rem !important;
+    font-size: 0.76rem !important;
     margin-right: 0.25rem !important;
     box-shadow: none !important;
   }
@@ -952,18 +959,18 @@ html.dark body .matching-component .matching-component__item--incorrect {
   .matching-component .matching-component__item {
     min-height: 2rem !important;
     padding: 0.3125rem 0.375rem !important;
-    font-size: 0.6875rem !important;
+    font-size: 0.84rem !important;
   }
 
   .matching-component .matching-component__item-letter {
     width: 1rem !important;
     height: 1rem !important;
-    font-size: 0.5625rem !important;
+    font-size: 0.69rem !important;
     margin-right: 0.1875rem !important;
   }
 
   .matching-component .matching-component__item-text {
-    font-size: 0.6875rem !important;
+    font-size: 0.84rem !important;
     padding-right: 1.75rem !important;
   }
 

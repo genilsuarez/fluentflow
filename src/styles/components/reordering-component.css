@@ -55,6 +55,12 @@
   padding: 0.125rem 0;
 }
 
+.reordering__answer-feedback .reordering__feedback--correct:has(.reordering__explanation) {
+  max-height: 6.5rem;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 .reordering__answer-feedback .reordering__feedback--incorrect {
   max-height: 6.5rem;
   overflow-y: auto;
@@ -273,6 +279,12 @@
   border: none;
   color: var(--lp-success, #27865a);
   padding: 0.125rem 0;
+}
+
+.reordering__feedback--correct:has(.reordering__explanation) {
+  border-left: 3px solid var(--lp-success, #27865a);
+  border-radius: 0;
+  padding: 0.125rem 0.5rem 0.125rem 0.625rem;
 }
 
 .reordering__feedback--incorrect {
