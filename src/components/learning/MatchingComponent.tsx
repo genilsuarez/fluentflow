@@ -353,6 +353,7 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
                 <button
                   key={`left-${index}`}
                   onClick={() => handleLeftClick(item)}
+                  disabled={showResult}
                   className={`${className} matching-component__button matching-component__button--primary`}
                 >
                   <div className="matching-component__item-content">
@@ -453,16 +454,16 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
           title={t('learning.returnToMainMenu')}
         />
 
-        <button
-          onClick={triggerRestart}
-          className="game-controls__home-btn"
-          title={t('common.reset')}
-        >
-          <RotateCcw size={16} aria-hidden="true" />
-        </button>
-
-        {!showResult ? (
+        {!showResult && (
           <>
+            <button
+              onClick={triggerRestart}
+              className="game-controls__home-btn"
+              title={t('common.reset')}
+            >
+              <RotateCcw size={16} aria-hidden="true" />
+            </button>
+
             <button
               onClick={resetExercise}
               className="game-controls__icon-btn"
@@ -470,16 +471,18 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
             >
               <Eraser className="game-controls__action-icon" />
             </button>
-
-            <button
-              onClick={checkAnswers}
-              disabled={!allMatched}
-              className="game-controls__primary-btn"
-            >
-              <Check className="game-controls__primary-icon" />
-              <span>{t('learning.checkMatches')}</span>
-            </button>
           </>
+        )}
+
+        {!showResult ? (
+          <button
+            onClick={checkAnswers}
+            disabled={!allMatched}
+            className="game-controls__primary-btn"
+          >
+            <Check className="game-controls__primary-icon" />
+            <span>{t('learning.checkMatches')}</span>
+          </button>
         ) : (
           <>
             <button

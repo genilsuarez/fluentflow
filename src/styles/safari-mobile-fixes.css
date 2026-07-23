@@ -1,7 +1,7 @@
-/* Safari Mobile Specific Fixes - SAFARI ONLY */
-/* Applied via .browser-safari-mobile class set by JavaScript */
+/* Safari Specific Fixes (mobile and desktop) - SAFARI ONLY */
+/* Applied via .browser-safari class set by JavaScript, see safariDetection.ts */
 
-.browser-safari-mobile {
+.browser-safari {
   /* === MAIN MENU: BUTTON COLORS === */
   /* Safari renders button backgrounds differently - force correct colors */
   .main-menu__view-btn--active {

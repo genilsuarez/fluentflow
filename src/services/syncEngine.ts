@@ -14,9 +14,11 @@ import {
   syncProgress,
   syncActivityEvents,
   fetchProgress,
+  fetchActivityEvents,
   type ActivityEventInput,
   type ProgressContentItem,
   type RemoteProgressRow,
+  type RemoteActivityRow,
 } from './supabaseClient';
 
 const PASS_SCORE_PCT = 70;
@@ -114,6 +116,51 @@ function mergeRemoteProgress(
   return merged;
 }
 
+function mergeRemoteActivityHistory(
+  local: ProgressEntry[],
+  remote: RemoteActivityRow[]
+): ProgressEntry[] {
+  const byRunId = new Map(local.map(entry => [entry.runId, entry]));
+
+  for (const row of remote) {
+    if (byRunId.has(row.run_id)) continue;
+
+    const occurredAt = normalizeIsoDate(row.occurred_at);
+    if (!occurredAt) continue;
+
+    const metrics = row.metrics ?? {};
+    const totalQuestions = Number(
+      'totalQuestions' in metrics
+        ? metrics.totalQuestions
+        : 'total' in metrics
+          ? metrics.total
+          : 0
+    );
+    const correctAnswers = Number(
+      'correctAnswers' in metrics
+        ? metrics.correctAnswers
+        : 'correct' in metrics
+          ? metrics.correct
+          : 0
+    );
+
+    byRunId.set(row.run_id, {
+      date: occurredAt.slice(0, 10),
+      eventId: row.event_id,
+      runId: row.run_id,
+      occurredAt,
+      score: row.score_pct ?? 0,
+      totalQuestions: Number.isFinite(totalQuestions) ? totalQuestions : 0,
+      correctAnswers: Number.isFinite(correctAnswers) ? correctAnswers : 0,
+      moduleId: row.content_id,
+      learningMode: row.activity,
+      timeSpent: row.duration_ms ? row.duration_ms / 1000 : undefined,
+    });
+  }
+
+  return [...byRunId.values()].sort((left, right) => right.occurredAt.localeCompare(left.occurredAt));
+}
+
 let downloaded = false;
 
 // Se llama una sola vez por sesión, justo después de autenticarse. No hay
@@ -128,15 +175,31 @@ async function downloadOnLogin() {
   await waitForProgressHydration();
   if (downloaded) return;
 
-  const remote = await fetchProgress().catch(() => null);
-  if (remote === null) return;
+  const [remoteProgress, remoteActivity] = await Promise.all([
+    fetchProgress().catch(() => null),
+    fetchActivityEvents().catch(() => null),
+  ]);
+  if (remoteProgress === null && remoteActivity === null) return;
 
   downloaded = true;
-  if (!remote.length) return;
+  if (!remoteProgress?.length && !remoteActivity?.length) return;
 
-  const { completedModules } = useProgressStore.getState();
-  const merged = mergeRemoteProgress(completedModules, remote);
-  useProgressStore.setState({ completedModules: merged });
+  const { completedModules, progressHistory } = useProgressStore.getState();
+  const nextState: {
+    completedModules?: Record<string, ModuleCompletion>;
+    progressHistory?: ProgressEntry[];
+  } = {};
+
+  if (remoteProgress?.length) {
+    nextState.completedModules = mergeRemoteProgress(completedModules, remoteProgress);
+  }
+  if (remoteActivity?.length) {
+    nextState.progressHistory = mergeRemoteActivityHistory(progressHistory, remoteActivity);
+  }
+
+  if (Object.keys(nextState).length) {
+    useProgressStore.setState(nextState);
+  }
 }
 
 let initialized = false;

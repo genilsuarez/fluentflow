@@ -407,6 +407,7 @@
   border-radius: 50%;
   transition: var(--transition-interactive);
   flex-shrink: 0;
+  -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   box-shadow: var(--shadow-button-default);
 }
@@ -656,6 +657,7 @@ html.dark .matching-component__item--incorrect .matching-component__item-text * 
 html.dark .matching-component__info-button {
   background-color: color-mix(in srgb, var(--lp-ink) 10%, transparent);
   border-color: var(--lp-border);
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
 }
 

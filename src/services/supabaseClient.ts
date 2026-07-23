@@ -142,6 +142,40 @@ export async function fetchProgress(): Promise<RemoteProgressRow[] | null> {
   return data ?? [];
 }
 
+export interface RemoteActivityRow {
+  event_id: string;
+  run_id: string;
+  content_id: string;
+  title: string | null;
+  activity: string;
+  event_type: string;
+  occurred_at: string;
+  score_pct: number | null;
+  passed: boolean | null;
+  duration_ms: number | null;
+  metrics: Record<string, unknown> | null;
+}
+
+export async function fetchActivityEvents(): Promise<RemoteActivityRow[] | null> {
+  const {
+    data: { session },
+  } = await supabase.auth.getSession();
+  if (!session?.user) return [];
+
+  const { data, error } = await supabase
+    .from('activity_events')
+    .select(
+      'event_id, run_id, content_id, title, activity, event_type, occurred_at, score_pct, passed, duration_ms, metrics'
+    )
+    .eq('user_id', session.user.id)
+    .eq('app', 'fluentflow')
+    .order('occurred_at', { ascending: false })
+    .limit(200);
+
+  if (error) return null;
+  return data ?? [];
+}
+
 export interface ActivityEventInput {
   eventId: string;
   runId: string;

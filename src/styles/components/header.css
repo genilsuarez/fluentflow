@@ -1014,6 +1014,7 @@ html.dark .header-side-menu__item:hover:not(.header-side-menu__item--active) {
 .dark .header-redesigned__login-btn--primary {
   background: linear-gradient(135deg, rgba(75, 85, 99, 0.6) 0%, rgba(55, 65, 81, 0.4) 100%);
   border: 1px solid var(--header-border);
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   box-shadow:
     0 1px 3px rgba(0, 0, 0, 0.2),
