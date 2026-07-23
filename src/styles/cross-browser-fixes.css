@@ -1,0 +1,80 @@
+/* Cross-browser rendering fixes — applied unconditionally, no UA sniffing.
+   These are safe defensive CSS in every browser, not just the WebKit engines
+   that originally exposed the bugs (moved out of a `.browser-safari`-gated
+   file — see project memory for history). */
+
+/* === MAIN MENU: BUTTON COLORS === */
+.main-menu__view-btn--active {
+  background: #3b82f6;
+  color: #ffffff;
+  border: none;
+}
+
+.main-menu__view-btn:not(.main-menu__view-btn--active) {
+  background: var(--lp-surface);
+  color: var(--lp-ink);
+  border: none;
+}
+
+/* === SEARCH INPUT: REMOVE NATIVE APPEARANCE === */
+input[type='text'],
+input[type='search'] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Compensate for removed native appearance - restore padding for search icon */
+.search-bar input {
+  padding-left: 2.5rem;
+}
+
+/* === MODULE CARD: TEXT OVERFLOW === */
+.module-card {
+  overflow: hidden;
+}
+
+.module-card__title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+  width: 100%;
+}
+
+.module-card__content {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* === VIEW TOGGLE BUTTONS === */
+/* Flex buttons overflow at 0.875rem in some engines - 0.75rem fits comfortably everywhere */
+.main-menu__view-btn {
+  font-size: 0.75rem !important;
+  padding: 0.375rem 0.5rem !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.main-menu__view-toggle {
+  overflow: hidden;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+/* === MODAL AND NAV BUTTONS === */
+.modal__btn,
+.nav-btn {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}

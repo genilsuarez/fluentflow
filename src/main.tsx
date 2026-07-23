@@ -5,7 +5,6 @@ import './index.css';
 import { initializeTheme } from './utils/themeInitializer';
 import { setupCrossAppThemeLinks } from './utils/crossAppTheme';
 import { clearChunkRetryFlag } from './utils/lazyWithRetry';
-import './utils/safariDetection';
 import './utils/cursorBrowserDetection';
 import {
   fetchProfile,

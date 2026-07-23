@@ -447,13 +447,23 @@ html.dark .game-controls {
   }
 }
 
-/* Cursor IDE mobile preview — bottom toolbar overlaps the page */
+/* Cursor IDE mobile preview positioning override.
+   --cursor-preview-chrome-bottom is the single source of truth for extra
+   bottom clearance; if a real overlapping toolbar is ever confirmed live
+   inside Cursor, set its measured height here — do not guess a value.
+   Verified 2026-07-23: no overlay present (confirmed live in Cursor's
+   preview), so this is 0 — kept at 0 rather than removed in case a real
+   overlay shows up in some other Cursor preview mode/version later. */
+html.browser-cursor-embedded {
+  --cursor-preview-chrome-bottom: 0px;
+}
+
 @media (max-width: 768px) {
   html.browser-cursor-embedded .layout-container:not([data-view='menu']) .game-controls {
     position: fixed;
     left: 0;
     right: 0;
-    bottom: var(--cursor-preview-chrome-bottom, 52px);
+    bottom: var(--cursor-preview-chrome-bottom);
     z-index: 40;
     margin-top: 0;
     width: 100%;
@@ -469,7 +479,7 @@ html.dark .game-controls {
     .layout-container:not([data-view='menu'])
     .layout-main
     [class*='-component__container'] {
-    padding-bottom: calc(5.59rem + var(--cursor-preview-chrome-bottom, 52px));
+    padding-bottom: calc(5.59rem + var(--cursor-preview-chrome-bottom));
   }
 }
 

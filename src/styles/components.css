@@ -27,8 +27,8 @@
 /* transformation-component, word-formation-component, error-correction-component */
 /* editable-input */
 
-/* Safari Mobile Specific Fixes */
-@import './safari-mobile-fixes.css';
+/* Cross-browser rendering fixes */
+@import './cross-browser-fixes.css';
 
 /* Design System Foundation already imported in index.css */
 

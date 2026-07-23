@@ -25,15 +25,18 @@ Antes de proponer soluciones o crear specs, explorar el código existente.
 Usar Context7 cuando necesites documentación actualizada o ejemplos de código de cualquier librería del stack. Evita hallucinations y APIs desactualizadas.
 
 **Cuándo usar:**
+
 - Consultar API de TanStack Query, Zustand, Zod, React Hook Form, Vite, Vitest, Playwright
 - Verificar sintaxis o configuración de una versión específica
 - Generar código con APIs correctas y actualizadas
 
 **Cómo usar:**
+
 1. `resolve-library-id` — busca el ID de la librería (ej: `/tanstack/query`, `/colinhacks/zod`)
 2. `query-docs` — trae la documentación relevante para tu query
 
 **Ejemplo:**
+
 ```
 resolve-library-id: libraryName="TanStack Query", query="useQuery options"
 query-docs: libraryId="/tanstack/query", query="useQuery options and staleTime"
@@ -43,15 +46,15 @@ query-docs: libraryId="/tanstack/query", query="useQuery options and staleTime"
 
 ## Browser tools — Cuándo usar cada una
 
-| Necesidad | Herramienta | Tools clave |
-|-----------|-------------|-------------|
-| Validar UI post-deploy | Playwright | `browser_navigate`, `browser_snapshot`, `browser_take_screenshot` |
-| Recorrer módulos/flujos | Playwright | `browser_click`, `browser_wait_for`, `browser_snapshot` |
-| Screenshots comparativos | Playwright | `browser_take_screenshot` |
-| Network debugging | Chrome DevTools | `list_network_requests`, `get_network_request` |
-| Console logs/errores | Chrome DevTools | `list_console_messages`, `get_console_message` |
-| Performance/Lighthouse | Chrome DevTools | `lighthouse_audit`, `performance_start_trace` |
-| Offline/service worker | Chrome DevTools | `emulate` (networkConditions) |
+| Necesidad                | Herramienta     | Tools clave                                                       |
+| ------------------------ | --------------- | ----------------------------------------------------------------- |
+| Validar UI post-deploy   | Playwright      | `browser_navigate`, `browser_snapshot`, `browser_take_screenshot` |
+| Recorrer módulos/flujos  | Playwright      | `browser_click`, `browser_wait_for`, `browser_snapshot`           |
+| Screenshots comparativos | Playwright      | `browser_take_screenshot`                                         |
+| Network debugging        | Chrome DevTools | `list_network_requests`, `get_network_request`                    |
+| Console logs/errores     | Chrome DevTools | `list_console_messages`, `get_console_message`                    |
+| Performance/Lighthouse   | Chrome DevTools | `lighthouse_audit`, `performance_start_trace`                     |
+| Offline/service worker   | Chrome DevTools | `emulate` (networkConditions)                                     |
 
 Regla: Playwright primero para UI/UX. Chrome DevTools solo para debugging técnico de bajo nivel.
 
@@ -66,6 +69,7 @@ Si Chrome DevTools MCP no está disponible, fallback: crear script en `scripts/t
 Ver detalle completo en `docs/browser-localstorage-mcp.md`.
 
 **Script set-progress.js** (`scripts/utils/set-progress.js`) — simular progreso por nivel:
+
 - `--level a2` → completa A1+A2 (91 módulos) → desbloquea B1 como NEXT
 - `--level b1` → completa A1+A2+B1 → desbloquea B2
 - `--reset` → borra todo el progreso
@@ -76,16 +80,16 @@ Ver detalle completo en `docs/browser-localstorage-mcp.md`.
 
 The module progression uses a DAG (prerequisites graph). Key files:
 
-| Concern | File |
-|---------|------|
-| Service (unlock logic, next module) | `src/services/progressionService.ts` |
-| Hook (React integration, dev mode bypass) | `src/hooks/useProgression.ts` |
-| Main Menu (flat grid, `currentModuleId` & `highlightedModuleId`) | `src/components/ui/MainMenu.tsx` |
-| Progression View (unit accordion, `--next` class) | `src/components/ui/ProgressionDashboard.tsx` |
-| Card component | `src/components/ui/ModuleCard.tsx` |
-| Card styles (light/dark, `--current`, `--next-recommended`) | `src/styles/components/module-card.css` |
-| Progression view styles (`--next`, `--unlocked`, `--locked`) | `src/styles/components/progression-dashboard.css` |
-| Module data (prerequisites, units) | `public/data/learningModules.json` |
+| Concern                                                          | File                                              |
+| ---------------------------------------------------------------- | ------------------------------------------------- |
+| Service (unlock logic, next module)                              | `src/services/progressionService.ts`              |
+| Hook (React integration, dev mode bypass)                        | `src/hooks/useProgression.ts`                     |
+| Main Menu (flat grid, `currentModuleId` & `highlightedModuleId`) | `src/components/ui/MainMenu.tsx`                  |
+| Progression View (unit accordion, `--next` class)                | `src/components/ui/ProgressionDashboard.tsx`      |
+| Card component                                                   | `src/components/ui/ModuleCard.tsx`                |
+| Card styles (light/dark, `--current`, `--next-recommended`)      | `src/styles/components/module-card.css`           |
+| Progression view styles (`--next`, `--unlocked`, `--locked`)     | `src/styles/components/progression-dashboard.css` |
+| Module data (prerequisites, units)                               | `public/data/learningModules.json`                |
 
 ### How "next recommended" works
 
@@ -95,12 +99,12 @@ The module progression uses a DAG (prerequisites graph). Key files:
 
 ### Visual indicators
 
-| Class | Where | Behavior |
-|-------|-------|----------|
-| `module-card--current` | MainMenu flat grid | Persistent blue glow on the next-recommended card |
-| `module-card--next-recommended` | MainMenu flat grid | Temporary 2.5s pulse animation (scroll-to) |
-| `progression-dashboard__module--next` | ProgressionDashboard | Persistent highlight + "Sig."/"Next" badge |
-| `progression-dashboard__module--unlocked` | ProgressionDashboard | All unlocked cards show ▶️ icon + visible border |
+| Class                                     | Where                | Behavior                                          |
+| ----------------------------------------- | -------------------- | ------------------------------------------------- |
+| `module-card--current`                    | MainMenu flat grid   | Persistent blue glow on the next-recommended card |
+| `module-card--next-recommended`           | MainMenu flat grid   | Temporary 2.5s pulse animation (scroll-to)        |
+| `progression-dashboard__module--next`     | ProgressionDashboard | Persistent highlight + "Sig."/"Next" badge        |
+| `progression-dashboard__module--unlocked` | ProgressionDashboard | All unlocked cards show ▶️ icon + visible border  |
 
 ### Common confusion: "two active cards"
 
@@ -117,7 +121,7 @@ When `developmentMode: true` (settingsStore), `canAccessModule()` and `getModule
 
 ## Antes de cualquier cambio
 
-1. Leer `src/styles/design-system/tokens.css` para design tokens (--lp-*)
+1. Leer `src/styles/design-system/tokens.css` para design tokens (--lp-\*)
 2. Leer `src/types/index.ts` para interfaces existentes
 3. Revisar `src/styles/` para patrones BEM
 4. Revisar `src/components/` para componentes reutilizables
@@ -127,7 +131,7 @@ When `developmentMode: true` (settingsStore), `canAccessModule()` and `getModule
 ## Reglas
 
 - Extender interfaces existentes (BaseLearningData, FlashcardData, etc.), no crear nuevas
-- Seguir nomenclatura BEM: Block__Element--Modifier
+- Seguir nomenclatura BEM: Block\_\_Element--Modifier
 - Usar librerías ya instaladas, no proponer nuevas sin verificar
 - Datos configurables desde JSON, no hardcodear valores
 - Respetar estructura de scripts: build, development, git, validation, utils
@@ -161,17 +165,17 @@ When `developmentMode: true` (settingsStore), `canAccessModule()` and `getModule
 
 ## Scripts de validación
 
-| Comando | Descripción |
-|---------|-------------|
-| `npm run validate:all` | Validaciones base: data-paths + BEM |
-| `npm run validate:full` | Base + analyze-unused + deep-analysis (47 pasadas) |
-| `npm run validate:content` | Validación profunda de contenido JSON (300+ módulos) |
-| `npm run validate:content:errors` | Solo errores de contenido |
-| `npm run analyze:unused` | 17 pasadas: archivos huérfanos, exports muertos, CSS sin uso, BEM, !important audit |
-| `npm run analyze:deep` | DA+DB+DC (30 pasadas): CSS quality, cross-file, JSON integrity |
-| `npm run analyze:deep:da` | Solo DA-1..DA-10: propiedades duplicadas, @keyframes, :root vars, reglas vacías |
-| `npm run analyze:deep:db` | Solo DB-1..DB-10: var() sin definición, CSS huérfanos, timers, storage |
-| `npm run analyze:deep:dc` | Solo DC-1..DC-10: integridad JSON, prerequisites, schema, progresión |
+| Comando                           | Descripción                                                                         |
+| --------------------------------- | ----------------------------------------------------------------------------------- |
+| `npm run validate:all`            | Validaciones base: data-paths + BEM                                                 |
+| `npm run validate:full`           | Base + analyze-unused + deep-analysis (47 pasadas)                                  |
+| `npm run validate:content`        | Validación profunda de contenido JSON (300+ módulos)                                |
+| `npm run validate:content:errors` | Solo errores de contenido                                                           |
+| `npm run analyze:unused`          | 17 pasadas: archivos huérfanos, exports muertos, CSS sin uso, BEM, !important audit |
+| `npm run analyze:deep`            | DA+DB+DC (30 pasadas): CSS quality, cross-file, JSON integrity                      |
+| `npm run analyze:deep:da`         | Solo DA-1..DA-10: propiedades duplicadas, @keyframes, :root vars, reglas vacías     |
+| `npm run analyze:deep:db`         | Solo DB-1..DB-10: var() sin definición, CSS huérfanos, timers, storage              |
+| `npm run analyze:deep:dc`         | Solo DC-1..DC-10: integridad JSON, prerequisites, schema, progresión                |
 
 Ejecutar `npm run validate:full` después de cambios CSS o refactoring significativo.
 
@@ -183,10 +187,10 @@ Este proyecto usa esbuild (integrado en Vite) para minificación CSS. No agregar
 
 ## Benchmark (Feb 2026)
 
-| Herramienta | Bundle | Gzip | Build |
-|-------------|--------|------|-------|
-| esbuild | 283 KB | 36.8 KB | 9s |
-| cssnano | 420 KB | 53.6 KB | 19s |
+| Herramienta | Bundle | Gzip    | Build |
+| ----------- | ------ | ------- | ----- |
+| esbuild     | 283 KB | 36.8 KB | 9s    |
+| cssnano     | 420 KB | 53.6 KB | 19s   |
 
 ## Configuración actual
 
@@ -211,3 +215,21 @@ css: {
 ## Antes de cambiar configuración CSS
 
 Hacer build antes y después, comparar tamaños. Si empeora, revertir.
+
+**Corrección (2026-07-23)**: "Vite ya maneja vendor prefixes" (línea de arriba) es impreciso — esbuild minifica pero no auto-agrega prefijos `-webkit-` faltantes como sí hace autoprefixer con browserslist. Se encontraron y corrigieron gaps reales (`-webkit-backdrop-filter`, `-webkit-appearance`, `-webkit-user-select`) que causaban bugs visuales en Safari. Seguir agregando prefijos manualmente al escribir CSS con propiedades WebKit-sensibles.
+
+# Detección de navegador embebido (Cursor IDE, preview de dispositivo)
+
+`src/utils/cursorBrowserDetection.ts` detecta si la app corre dentro del preview de dispositivo móvil de Cursor IDE (via `navigator.userAgent` matcheando `Cursor/`) y agrega la clase `.browser-cursor-embedded` a `<html>`.
+
+**Por qué existe**: la premisa original (heredada, sin verificar) era que el preview de Cursor dibuja su propio toolbar inferior _encima_ de la página (no redimensiona el viewport) — los elementos `position:fixed` que dependen del alto del viewport terminarían tapados por ese toolbar. `game-controls.css` y `unified-filter.css` usan la clase `.browser-cursor-embedded` para levantar los controles fijos por encima, si hiciera falta.
+
+**Corrección importante (2026-07-23)**: se verificó EN VIVO dentro de Cursor (no por captura ni suposición) que esa premisa es falsa, al menos en la versión actual — no hay ningún toolbar superpuesto. El hardcode original de 52px de clearance solo generaba una franja vacía visible (fondo de la app sin nada encima) debajo de la barra de controles — un bug visual causado por el propio fix, no algo que resolviera un problema real. Se corrigió: `--cursor-preview-chrome-bottom` ahora es `0` en vez de `52px`.
+
+**Se mantiene la detección** (no se borró `cursorBrowserDetection.ts`) por si en otro modo/versión de Cursor sí aparece un overlay real — pero **no restaurar un valor > 0 sin volver a verificarlo en vivo dentro de Cursor primero**. Esta es la segunda vez en el proyecto que un valor de detección de navegador se basó en una suposición no verificada en vez de una medición real (la primera fue `safariDetection.ts`, eliminado — ver más abajo). Patrón a evitar: cualquier hardcode ligado a un navegador/host específico debe verificarse en vivo en ese entorno antes de confiar en él, no asumirse por el comentario que lo introdujo.
+
+**Single source of truth**: el valor vive en un solo lugar — `html.browser-cursor-embedded { --cursor-preview-chrome-bottom: 0px; }` en `game-controls.css`. El JS (`cursorBrowserDetection.ts`) solo decide **si** el entorno aplica, nunca el pixel value.
+
+**Por qué no se mide dinámicamente con `window.visualViewport`**: según MDN, `visualViewport` no refleja overlays dibujados por un host que embebe la página (iframe/webview) — devolvería el mismo valor que `innerHeight` sin importar si hay o no un toolbar real. No sirve como sustituto de verificar en vivo.
+
+**No extender a Claude Code**: el Browser pane de Claude Code (`mcp__Claude_Browser__*`) tampoco tiene overlay — a 375×812, `innerHeight`, `visualViewport.height`, `outerHeight` y `screen.height` coinciden exactos. No agregar `Claude/` a la detección sin un overlay real y medido primero — evita repetir el mismo error de sobre-generalizar detección de navegador que causó el bug original de Safari (ver historial de `safariDetection.ts`, eliminado — el sniffing de UA debe ser el último recurso, no el primero, y todo valor que dependa de él debe verificarse en vivo, no asumirse).

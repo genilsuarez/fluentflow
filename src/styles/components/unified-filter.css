@@ -594,10 +594,11 @@ html.dark .unified-filter__chip--level.unified-filter__chip--active {
   color: #93c5fd;
 }
 
-/* Cursor IDE mobile preview — bottom toolbar overlaps fixed sheets */
+/* Cursor IDE mobile preview — bottom toolbar overlaps fixed sheets.
+   --cursor-preview-chrome-bottom is defined in game-controls.css. */
 html.browser-cursor-embedded .unified-filter__panel--sheet {
-  bottom: var(--cursor-preview-chrome-bottom, 52px);
-  max-height: min(78dvh, calc(100% - var(--cursor-preview-chrome-bottom, 52px) - 0.5rem));
+  bottom: var(--cursor-preview-chrome-bottom);
+  max-height: min(78dvh, calc(100% - var(--cursor-preview-chrome-bottom) - 0.5rem));
 }
 
 @media (prefers-reduced-motion: reduce) {
