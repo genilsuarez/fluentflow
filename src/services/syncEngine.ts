@@ -14,16 +14,21 @@ import type { ModuleScore } from '../types';
 import {
   isAuthenticated,
   onAuthStateChange,
+  signOut,
   syncProgress,
   syncActivityEvents,
   fetchProgress,
   fetchActivityEvents,
   type ActivityEventInput,
   type ProgressContentItem,
-  type RemoteProgressRow,
-  type RemoteActivityRow,
 } from './supabaseClient';
 import { bootstrapFromLocalProjection } from './projectionBootstrap';
+import {
+  mergeRemoteActivityHistory,
+  mergeRemoteProgress,
+  mergeUserScores,
+  rebuildUserScoresFromHistory,
+} from './progressMerge';
 
 const PASS_SCORE_PCT = 70;
 
@@ -89,130 +94,6 @@ function scheduleSync() {
   }, 500);
 }
 
-// Postgres/PostgREST devuelve timestamptz como "2026-07-16T00:00:00+00:00"
-// (sin milisegundos, offset en vez de "Z"). progress-reader.js (DeskFlow) exige
-// match exacto con Date#toISOString() para aceptar una fecha — sin normalizar,
-// cualquier completedAt remoto invalida el documento derivado que lee DeskFlow.
-function normalizeIsoDate(value: string | null | undefined): string | null {
-  if (!value) return null;
-  const parsed = new Date(value);
-  return Number.isNaN(parsed.getTime()) ? null : parsed.toISOString();
-}
-
-// Mezcla filas remotas en completedModules sin retroceder progreso ya
-// alcanzado localmente (favorece completado, mejor puntaje, más intentos).
-function mergeRemoteProgress(
-  local: Record<string, ModuleCompletion>,
-  remote: RemoteProgressRow[]
-): Record<string, ModuleCompletion> {
-  const merged = { ...local };
-  for (const row of remote) {
-    if (!row.completed) continue; // completedModules solo trackea completados
-    const existing = merged[row.content_id];
-    merged[row.content_id] = {
-      moduleId: row.content_id,
-      completedAt:
-        normalizeIsoDate(row.completed_at) || existing?.completedAt || new Date().toISOString(),
-      bestScore: Math.max(row.best_score_pct ?? 0, existing?.bestScore ?? 0),
-      attempts: Math.max(row.attempts ?? 0, existing?.attempts ?? 0),
-    };
-  }
-  return merged;
-}
-
-function mergeRemoteActivityHistory(
-  local: ProgressEntry[],
-  remote: RemoteActivityRow[]
-): ProgressEntry[] {
-  const byRunId = new Map(local.map(entry => [entry.runId, entry]));
-
-  for (const row of remote) {
-    if (byRunId.has(row.run_id)) continue;
-
-    const occurredAt = normalizeIsoDate(row.occurred_at);
-    if (!occurredAt) continue;
-
-    const metrics = row.metrics ?? {};
-    const totalQuestions = Number(
-      'totalQuestions' in metrics ? metrics.totalQuestions : 'total' in metrics ? metrics.total : 0
-    );
-    const correctAnswers = Number(
-      'correctAnswers' in metrics
-        ? metrics.correctAnswers
-        : 'correct' in metrics
-          ? metrics.correct
-          : 0
-    );
-
-    byRunId.set(row.run_id, {
-      date: occurredAt.slice(0, 10),
-      eventId: row.event_id,
-      runId: row.run_id,
-      occurredAt,
-      score: row.score_pct ?? 0,
-      totalQuestions: Number.isFinite(totalQuestions) ? totalQuestions : 0,
-      correctAnswers: Number.isFinite(correctAnswers) ? correctAnswers : 0,
-      moduleId: row.content_id,
-      learningMode: row.activity,
-      timeSpent: row.duration_ms ? row.duration_ms / 1000 : undefined,
-    });
-  }
-
-  return [...byRunId.values()].sort((left, right) =>
-    right.occurredAt.localeCompare(left.occurredAt)
-  );
-}
-
-function entryScorePct(entry: ProgressEntry): number {
-  if (entry.totalQuestions > 0) {
-    return Math.round((entry.correctAnswers / entry.totalQuestions) * 100);
-  }
-  return Math.max(0, Math.min(100, entry.score));
-}
-
-function rebuildUserScoresFromHistory(history: ProgressEntry[]): Record<string, ModuleScore> {
-  const scores: Record<string, ModuleScore> = {};
-
-  for (const entry of history) {
-    if (!entry.moduleId) continue;
-    const scorePct = entryScorePct(entry);
-    const existing = scores[entry.moduleId];
-    scores[entry.moduleId] = {
-      moduleId: entry.moduleId,
-      bestScore: Math.max(existing?.bestScore ?? 0, scorePct),
-      attempts: (existing?.attempts ?? 0) + 1,
-      lastAttempt:
-        existing && existing.lastAttempt > entry.occurredAt
-          ? existing.lastAttempt
-          : entry.occurredAt,
-      timeSpent: (existing?.timeSpent ?? 0) + (entry.timeSpent ?? 0),
-    };
-  }
-
-  return scores;
-}
-
-function mergeUserScores(
-  local: Record<string, ModuleScore>,
-  fromHistory: Record<string, ModuleScore>
-): Record<string, ModuleScore> {
-  const merged = { ...local };
-  for (const [moduleId, score] of Object.entries(fromHistory)) {
-    const existing = merged[moduleId];
-    merged[moduleId] = {
-      moduleId,
-      bestScore: Math.max(existing?.bestScore ?? 0, score.bestScore),
-      attempts: Math.max(existing?.attempts ?? 0, score.attempts),
-      lastAttempt:
-        existing && existing.lastAttempt > score.lastAttempt
-          ? existing.lastAttempt
-          : score.lastAttempt,
-      timeSpent: Math.max(existing?.timeSpent ?? 0, score.timeSpent),
-    };
-  }
-  return merged;
-}
-
 function rebuildUserScoresFromCompletedModules(
   completedModules: Record<string, ModuleCompletion>
 ): Record<string, ModuleScore> {
@@ -235,6 +116,43 @@ let cloudHydrated = false;
 function resetDownloadState() {
   downloaded = false;
   cloudHydrated = false;
+}
+
+type GuestResetBridge = {
+  shouldRejectSession: () => boolean;
+  shouldForceCloudDownload: () => boolean;
+  clearExplicitLogout: () => void;
+};
+
+function getGuestReset(): GuestResetBridge | undefined {
+  return (window as Window & { lpGuestReset?: GuestResetBridge }).lpGuestReset;
+}
+
+export function handleSignedOut(): void {
+  resetDownloadState();
+  getGuestReset()?.clearExplicitLogout?.();
+}
+
+export async function handleAuthenticatedSession(event: string): Promise<void> {
+  const guestReset = getGuestReset();
+  if (guestReset?.shouldRejectSession?.()) {
+    try {
+      await signOut();
+    } catch {
+      /* noop */
+    }
+    guestReset.clearExplicitLogout?.();
+    return;
+  }
+
+  if (event === 'SIGNED_IN' || guestReset?.shouldForceCloudDownload?.()) {
+    resetDownloadState();
+  }
+
+  await downloadOnLogin({
+    force: event === 'SIGNED_IN' || !!guestReset?.shouldForceCloudDownload?.(),
+  });
+  scheduleSync();
 }
 
 // Se llama una sola vez por sesión, justo después de autenticarse. No hay
@@ -313,56 +231,4 @@ export function initSyncEngine(): void {
 
   // Same-origin DeskFlow may have populated v1 before FluentFlow mounts — import on cold start.
   void waitForProgressHydration().then(() => bootstrapFromLocalProjection());
-
-  onAuthStateChange(async (event, session) => {
-    if (!session?.user) {
-      resetDownloadState();
-      (
-        window as Window & { lpGuestReset?: { clearExplicitLogout: () => void } }
-      ).lpGuestReset?.clearExplicitLogout?.();
-      return;
-    }
-
-    const guestReset = (
-      window as Window & {
-        lpGuestReset?: {
-          shouldRejectSession: () => boolean;
-          shouldForceCloudDownload: () => boolean;
-          clearExplicitLogout: () => void;
-        };
-      }
-    ).lpGuestReset;
-
-    if (guestReset?.shouldRejectSession?.()) {
-      return;
-    }
-
-    if (event === 'SIGNED_IN' || guestReset?.shouldForceCloudDownload?.()) {
-      resetDownloadState();
-    }
-
-    await downloadOnLogin({
-      force: event === 'SIGNED_IN' || !!guestReset?.shouldForceCloudDownload?.(),
-    });
-    scheduleSync();
-  });
-  isAuthenticated()
-    .then(async authed => {
-      if (!authed) return;
-
-      const guestReset = (
-        window as Window & {
-          lpGuestReset?: {
-            shouldRejectSession: () => boolean;
-            shouldForceCloudDownload: () => boolean;
-          };
-        }
-      ).lpGuestReset;
-
-      if (guestReset?.shouldRejectSession?.()) return;
-
-      await downloadOnLogin({ force: !!guestReset?.shouldForceCloudDownload?.() });
-      scheduleSync();
-    })
-    .catch(() => {});
 }

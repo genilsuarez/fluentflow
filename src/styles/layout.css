@@ -146,14 +146,6 @@
   border-top: 1.5px solid var(--lp-border);
 }
 
-.app-footer__sig {
-  font-family: var(--lp-font-display);
-  font-style: italic;
-  font-size: 13px;
-  line-height: 1;
-  color: var(--lp-ink-soft, var(--lp-muted));
-}
-
 .app-footer__meta {
   font-family: var(--lp-font-mono);
   font-size: 9px;

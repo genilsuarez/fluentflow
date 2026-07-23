@@ -55,10 +55,17 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
       // Reload even when a browser does not expose every cache API.
     }
     try {
-      for (const key of Object.keys(localStorage)) {
-        if (!isPreservedStorageKey(key)) localStorage.removeItem(key);
+      const guestReset = (
+        window as Window & { lpGuestReset?: { clearLocalCachePreserveSession: () => void } }
+      ).lpGuestReset;
+      if (guestReset?.clearLocalCachePreserveSession) {
+        guestReset.clearLocalCachePreserveSession();
+      } else {
+        for (const key of Object.keys(localStorage)) {
+          if (!isPreservedStorageKey(key)) localStorage.removeItem(key);
+        }
+        for (const key of Object.keys(sessionStorage)) sessionStorage.removeItem(key);
       }
-      for (const key of Object.keys(sessionStorage)) sessionStorage.removeItem(key);
     } catch {
       // Private browsing or storage unavailable — Cache Storage/SW cleanup above still ran.
     }

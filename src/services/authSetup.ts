@@ -1,10 +1,5 @@
-import {
-  fetchProfile,
-  getSession,
-  isAuthenticated,
-  onAuthStateChange,
-  signOut,
-} from './supabaseClient';
+import { fetchProfile, onAuthStateChange, signOut } from './supabaseClient';
+import { handleAuthenticatedSession, handleSignedOut } from './syncEngine';
 import { useUserStore } from '../stores/userStore';
 import type { User } from '../types';
 
@@ -21,7 +16,6 @@ type LpGuestResetBridge = {
   clearGuestLocalProgress: () => void;
   hasLocalSupabaseIdentity: () => boolean;
   shouldRejectSession: () => boolean;
-  shouldForceCloudDownload: () => boolean;
   clearExplicitLogout: () => void;
 };
 
@@ -60,10 +54,22 @@ async function clearOrphanSupabaseSession(): Promise<void> {
   }
 }
 
+function setupCrossTabLogoutListener(): void {
+  window.addEventListener('lp-explicit-logout', () => {
+    void clearOrphanSupabaseSession();
+  });
+}
+
+let authListenerRegistered = false;
+
 export function setupSupabaseAuth(): void {
+  if (authListenerRegistered) return;
+  authListenerRegistered = true;
+  setupCrossTabLogoutListener();
+
   onAuthStateChange(async (event, session) => {
     if (event === 'SIGNED_OUT' || !session?.user) {
-      getLpGuestReset()?.clearExplicitLogout?.();
+      handleSignedOut();
       const lpLogin = getLpLogin();
       if (lpLogin?.getUser?.()?.isSupabaseUser) {
         getLpGuestReset()?.clearGuestLocalProgress();
@@ -83,24 +89,7 @@ export function setupSupabaseAuth(): void {
       const profile = await fetchProfile();
       syncUserFromSupabase(session.user, profile);
     }
-  });
 
-  isAuthenticated().then(async authed => {
-    if (!authed) return;
-
-    if (getLpGuestReset()?.shouldRejectSession?.()) {
-      await clearOrphanSupabaseSession();
-      getLpGuestReset()?.clearExplicitLogout?.();
-      return;
-    }
-
-    if (!getLpGuestReset()?.hasLocalSupabaseIdentity?.()) {
-      const {
-        data: { session },
-      } = await getSession();
-      if (!session?.user) return;
-      const profile = await fetchProfile();
-      syncUserFromSupabase(session.user, profile);
-    }
+    await handleAuthenticatedSession(event);
   });
 }
