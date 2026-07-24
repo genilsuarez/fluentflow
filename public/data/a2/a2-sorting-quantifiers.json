@@ -1,82 +1,102 @@
 [
   {
     "word": "How much water do you drink?",
+    "translation": "¿Cuánta agua bebes?",
     "category": "Uncountable"
   },
   {
     "word": "I don't have much time.",
+    "translation": "No tengo mucho tiempo.",
     "category": "Uncountable"
   },
   {
     "word": "She needs some information.",
+    "translation": "Ella necesita algo de información.",
     "category": "Uncountable"
   },
   {
     "word": "There's a little milk left.",
+    "translation": "Queda un poco de leche.",
     "category": "Uncountable"
   },
   {
     "word": "We have too much homework.",
+    "translation": "Tenemos demasiada tarea.",
     "category": "Uncountable"
   },
   {
     "word": "She has a lot of experience.",
+    "translation": "Ella tiene mucha experiencia.",
     "category": "Uncountable"
   },
   {
     "word": "Is there any bread?",
+    "translation": "¿Hay pan?",
     "category": "Uncountable"
   },
   {
     "word": "I need a little help.",
+    "translation": "Necesito un poco de ayuda.",
     "category": "Uncountable"
   },
   {
     "word": "There isn't much traffic today.",
+    "translation": "Hoy no hay mucho tráfico.",
     "category": "Uncountable"
   },
   {
     "word": "He ate too much rice.",
+    "translation": "Él comió demasiado arroz.",
     "category": "Uncountable"
   },
   {
     "word": "How many chairs are there?",
+    "translation": "¿Cuántas sillas hay?",
     "category": "Countable"
   },
   {
     "word": "There aren't many students today.",
+    "translation": "Hoy no hay muchos estudiantes.",
     "category": "Countable"
   },
   {
     "word": "He bought some apples.",
+    "translation": "Él compró algunas manzanas.",
     "category": "Countable"
   },
   {
     "word": "There are a few eggs in the box.",
+    "translation": "Hay unos pocos huevos en la caja.",
     "category": "Countable"
   },
   {
     "word": "Too many people came to the party.",
+    "translation": "Demasiada gente vino a la fiesta.",
     "category": "Countable"
   },
   {
     "word": "He has a lot of friends.",
+    "translation": "Él tiene muchos amigos.",
     "category": "Countable"
   },
   {
     "word": "Are there any tickets left?",
+    "translation": "¿Quedan entradas?",
     "category": "Countable"
   },
   {
     "word": "We need a few more minutes.",
+    "translation": "Necesitamos unos minutos más.",
     "category": "Countable"
   },
   {
     "word": "There aren't many options.",
+    "translation": "No hay muchas opciones.",
     "category": "Countable"
   },
   {
     "word": "She read too many books this month.",
+    "translation": "Ella leyó demasiados libros este mes.",
     "category": "Countable"
   }
 ]

@@ -1,82 +1,102 @@
 [
   {
     "word": "pillow",
+    "translation": "almohada",
     "category": "Home"
   },
   {
     "word": "curtain",
+    "translation": "cortina",
     "category": "Home"
   },
   {
     "word": "fridge",
+    "translation": "nevera / refrigerador",
     "category": "Home"
   },
   {
     "word": "blanket",
+    "translation": "manta",
     "category": "Home"
   },
   {
     "word": "shelf",
+    "translation": "estante",
     "category": "Home"
   },
   {
     "word": "headache",
+    "translation": "dolor de cabeza",
     "category": "Health"
   },
   {
     "word": "fever",
+    "translation": "fiebre",
     "category": "Health"
   },
   {
     "word": "prescription",
+    "translation": "receta médica",
     "category": "Health"
   },
   {
     "word": "symptom",
+    "translation": "síntoma",
     "category": "Health"
   },
   {
     "word": "appointment",
+    "translation": "cita",
     "category": "Health"
   },
   {
     "word": "password",
+    "translation": "contraseña",
     "category": "Technology"
   },
   {
     "word": "download",
+    "translation": "descargar / descarga",
     "category": "Technology"
   },
   {
     "word": "screenshot",
+    "translation": "captura de pantalla",
     "category": "Technology"
   },
   {
     "word": "update",
+    "translation": "actualizar / actualización",
     "category": "Technology"
   },
   {
     "word": "Wi-Fi",
+    "translation": "Wi-Fi",
     "category": "Technology"
   },
   {
     "word": "colleague",
+    "translation": "colega / compañero de trabajo",
     "category": "Work"
   },
   {
     "word": "salary",
+    "translation": "salario / sueldo",
     "category": "Work"
   },
   {
     "word": "interview",
+    "translation": "entrevista",
     "category": "Work"
   },
   {
     "word": "deadline",
+    "translation": "fecha límite",
     "category": "Work"
   },
   {
     "word": "meeting",
+    "translation": "reunión",
     "category": "Work"
   }
 ]

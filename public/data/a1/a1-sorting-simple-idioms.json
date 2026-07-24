@@ -1,82 +1,102 @@
 [
   {
     "word": "break a leg",
+    "translation": "¡mucha suerte!",
     "category": "Good Luck"
   },
   {
     "word": "fingers crossed",
+    "translation": "crucemos los dedos",
     "category": "Good Luck"
   },
   {
     "word": "knock on wood",
+    "translation": "tocar madera",
     "category": "Good Luck"
   },
   {
     "word": "best of luck",
+    "translation": "mucha suerte",
     "category": "Good Luck"
   },
   {
     "word": "hit the sack",
+    "translation": "irse a dormir",
     "category": "Sleep & Rest"
   },
   {
     "word": "call it a day",
+    "translation": "dar por terminado el día",
     "category": "Sleep & Rest"
   },
   {
     "word": "take a nap",
+    "translation": "echarse una siesta",
     "category": "Sleep & Rest"
   },
   {
     "word": "sleep like a log",
+    "translation": "dormir como un tronco",
     "category": "Sleep & Rest"
   },
   {
     "word": "piece of cake",
+    "translation": "pan comido",
     "category": "Easy"
   },
   {
     "word": "easy as pie",
+    "translation": "facilísimo",
     "category": "Easy"
   },
   {
     "word": "no sweat",
+    "translation": "sin problema",
     "category": "Easy"
   },
   {
     "word": "a walk in the park",
+    "translation": "coser y cantar",
     "category": "Easy"
   },
   {
     "word": "under the weather",
+    "translation": "indispuesto / no sentirse bien",
     "category": "Feeling Bad"
   },
   {
     "word": "feeling blue",
+    "translation": "estar triste",
     "category": "Feeling Bad"
   },
   {
     "word": "down in the dumps",
+    "translation": "decaído / deprimido",
     "category": "Feeling Bad"
   },
   {
     "word": "sick as a dog",
+    "translation": "muy enfermo",
     "category": "Feeling Bad"
   },
   {
     "word": "on top of the world",
+    "translation": "en la cima del mundo",
     "category": "Feeling Good"
   },
   {
     "word": "over the moon",
+    "translation": "contento como unas castañuelas",
     "category": "Feeling Good"
   },
   {
     "word": "on cloud nine",
+    "translation": "en el séptimo cielo",
     "category": "Feeling Good"
   },
   {
     "word": "in good spirits",
+    "translation": "de buen humor",
     "category": "Feeling Good"
   }
 ]

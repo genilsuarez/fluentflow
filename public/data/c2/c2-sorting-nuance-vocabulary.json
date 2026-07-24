@@ -1,101 +1,121 @@
 [
   {
     "word": "The performance was utterly magnificent.",
+    "translation": "La actuación fue absolutamente magnífica.",
     "category": "Intensity/Degree",
     "explanation": "<Utterly> intensifies the adjective to express complete degree"
   },
   {
     "word": "She was thoroughly exhausted after the marathon.",
+    "translation": "Ella estaba completamente agotada después del maratón.",
     "category": "Intensity/Degree",
     "explanation": "<Thoroughly> emphasizes the complete extent of exhaustion"
   },
   {
     "word": "The proposal was categorically rejected.",
+    "translation": "La propuesta fue rechazada categóricamente.",
     "category": "Intensity/Degree",
     "explanation": "<Categorically> expresses absolute, unqualified rejection"
   },
   {
     "word": "He was profoundly moved by the ceremony.",
+    "translation": "Él quedó profundamente conmovido por la ceremonia.",
     "category": "Intensity/Degree",
     "explanation": "<Profoundly> indicates deep, intense emotional impact"
   },
   {
     "word": "I would be delighted to attend your soirée.",
+    "translation": "Me encantaría asistir a tu velada.",
     "category": "Formality/Register",
     "explanation": "Formal, elevated language appropriate for sophisticated social contexts"
   },
   {
     "word": "We cordially invite you to the gala dinner.",
+    "translation": "Lo invitamos cordialmente a la cena de gala.",
     "category": "Formality/Register",
     "explanation": "<Cordially> is formal, ceremonious language for official invitations"
   },
   {
     "word": "The committee will deliberate on the matter.",
+    "translation": "El comité deliberará sobre el asunto.",
     "category": "Formality/Register",
     "explanation": "<Deliberate> is formal, official language for careful consideration"
   },
   {
     "word": "I must respectfully decline your generous offer.",
+    "translation": "Debo rechazar respetuosamente su generosa oferta.",
     "category": "Formality/Register",
     "explanation": "Highly formal, polite language for diplomatic refusal"
   },
   {
     "word": "She sauntered leisurely through the park.",
+    "translation": "Ella paseó con calma por el parque.",
     "category": "Movement/Speed",
     "explanation": "<Sauntered> implies slow, relaxed, unhurried movement"
   },
   {
     "word": "He sprinted frantically toward the station.",
+    "translation": "Él corrió a toda prisa hacia la estación.",
     "category": "Movement/Speed",
     "explanation": "<Sprinted frantically> indicates urgent, high-speed movement"
   },
   {
     "word": "The cat crept stealthily through the shadows.",
+    "translation": "El gato se deslizó sigilosamente entre las sombras.",
     "category": "Movement/Speed",
     "explanation": "<Crept stealthily> suggests slow, secretive, careful movement"
   },
   {
     "word": "She perceived the subtle implications immediately.",
+    "translation": "Ella percibió las sutiles implicaciones de inmediato.",
     "category": "Perception/Cognition",
     "explanation": "<Perceived> indicates sophisticated mental recognition of complex meaning"
   },
   {
     "word": "He discerned the underlying motives behind the proposal.",
+    "translation": "Él discernió los motivos subyacentes detrás de la propuesta.",
     "category": "Perception/Cognition",
     "explanation": "<Discerned> suggests keen insight into hidden or complex matters"
   },
   {
     "word": "The scholar contemplated the philosophical implications.",
+    "translation": "El erudito contempló las implicaciones filosóficas.",
     "category": "Perception/Cognition",
     "explanation": "<Contemplated> indicates deep, reflective intellectual consideration"
   },
   {
     "word": "I am absolutely certain of the outcome.",
+    "translation": "Estoy absolutamente seguro del resultado.",
     "category": "Certainty/Doubt",
     "explanation": "<Absolutely certain> expresses complete, unqualified confidence"
   },
   {
     "word": "She was utterly convinced by the evidence.",
+    "translation": "Ella quedó completamente convencida por la evidencia.",
     "category": "Certainty/Doubt",
     "explanation": "<Utterly convinced> indicates total, complete belief"
   },
   {
     "word": "He harbored serious doubts about the plan.",
+    "translation": "Él albergaba serias dudas sobre el plan.",
     "category": "Certainty/Doubt",
     "explanation": "<Harbored serious doubts> suggests significant uncertainty or skepticism"
   },
   {
     "word": "She whispered conspiratorially in his ear.",
+    "translation": "Ella susurró de forma conspiradora a su oído.",
     "category": "Sound/Speech",
     "explanation": "<Whispered conspiratorially> suggests secretive, low-volume communication"
   },
   {
     "word": "He bellowed angrily at the protesters.",
+    "translation": "Él bramó enfurecido a los manifestantes.",
     "category": "Sound/Speech",
     "explanation": "<Bellowed angrily> indicates loud, forceful, aggressive vocalization"
   },
   {
     "word": "The professor articulated his theory eloquently.",
+    "translation": "El profesor articuló su teoría con elocuencia.",
     "category": "Sound/Speech",
     "explanation": "<Articulated eloquently> suggests clear, sophisticated verbal expression"
   }

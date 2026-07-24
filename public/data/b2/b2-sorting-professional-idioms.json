@@ -1,82 +1,102 @@
 [
   {
     "word": "think outside the box",
+    "translation": "pensar de forma creativa / fuera de lo convencional",
     "category": "Creativity & Innovation"
   },
   {
     "word": "back to the drawing board",
+    "translation": "volver a empezar desde cero",
     "category": "Creativity & Innovation"
   },
   {
     "word": "brainstorm ideas",
+    "translation": "hacer una lluvia de ideas",
     "category": "Creativity & Innovation"
   },
   {
     "word": "break new ground",
+    "translation": "abrir nuevos caminos / innovar",
     "category": "Creativity & Innovation"
   },
   {
     "word": "get the ball rolling",
+    "translation": "poner en marcha / empezar",
     "category": "Starting & Action"
   },
   {
     "word": "hit the ground running",
+    "translation": "empezar con fuerza / arrancar a toda marcha",
     "category": "Starting & Action"
   },
   {
     "word": "take the bull by the horns",
+    "translation": "agarrar el toro por los cuernos",
     "category": "Starting & Action"
   },
   {
     "word": "jump on the bandwagon",
+    "translation": "subirse al carro / unirse a la tendencia",
     "category": "Starting & Action"
   },
   {
     "word": "the bottom line",
+    "translation": "el resultado final / lo esencial",
     "category": "Business & Finance"
   },
   {
     "word": "in the red",
+    "translation": "en números rojos / con pérdidas",
     "category": "Business & Finance"
   },
   {
     "word": "cut corners",
+    "translation": "hacer las cosas a medias / economizar a costa de la calidad",
     "category": "Business & Finance"
   },
   {
     "word": "a ballpark figure",
+    "translation": "una cifra aproximada",
     "category": "Business & Finance"
   },
   {
     "word": "go the extra mile",
+    "translation": "hacer un esfuerzo adicional",
     "category": "Teamwork & Effort"
   },
   {
     "word": "pull your weight",
+    "translation": "hacer tu parte / aportar lo que te corresponde",
     "category": "Teamwork & Effort"
   },
   {
     "word": "on the same page",
+    "translation": "estar de acuerdo / en la misma sintonía",
     "category": "Teamwork & Effort"
   },
   {
     "word": "team player",
+    "translation": "jugador de equipo / persona colaborativa",
     "category": "Teamwork & Effort"
   },
   {
     "word": "burn the candle at both ends",
+    "translation": "quemarse las pestañas / agotarse por exceso de trabajo",
     "category": "Work-Life Balance"
   },
   {
     "word": "call it a day",
+    "translation": "dar por terminado el día",
     "category": "Work-Life Balance"
   },
   {
     "word": "a nine-to-five job",
+    "translation": "un trabajo de oficina de horario fijo",
     "category": "Work-Life Balance"
   },
   {
     "word": "work around the clock",
+    "translation": "trabajar día y noche",
     "category": "Work-Life Balance"
   }
 ]

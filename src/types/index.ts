@@ -71,6 +71,9 @@ export interface CompletionData extends BaseLearningData {
 export interface SortingData extends BaseLearningData {
   word: string;
   category: Category;
+  /** Spanish gloss shown in the exercise summary modal */
+  translation?: string;
+  explanation?: string;
   subcategory?: string;
 }
 

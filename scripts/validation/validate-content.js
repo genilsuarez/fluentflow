@@ -198,6 +198,12 @@ function validateSorting(items, fileName) {
     if (!item.category) {
       err('ST-FIELD', `${fileName}[${i}]: missing "category"`);
     }
+    if (item.translation !== undefined && typeof item.translation !== 'string') {
+      err('ST-FIELD', `${fileName}[${i}]: invalid "translation" (must be string)`);
+    }
+    if (!item.translation || !String(item.translation).trim()) {
+      warn('ST-TRANS', `${fileName}[${i}]: missing Spanish "translation" for "${item.word}"`);
+    }
   }
 
   // Check category distribution (at least 2 categories)

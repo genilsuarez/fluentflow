@@ -1,82 +1,102 @@
 [
   {
     "word": "wake up",
+    "translation": "despertarse",
     "category": "Phrasal Verbs"
   },
   {
     "word": "turn on",
+    "translation": "encender",
     "category": "Phrasal Verbs"
   },
   {
     "word": "pick up",
+    "translation": "recoger / levantar",
     "category": "Phrasal Verbs"
   },
   {
     "word": "put on",
+    "translation": "ponerse (ropa)",
     "category": "Phrasal Verbs"
   },
   {
     "word": "get up",
+    "translation": "levantarse",
     "category": "Phrasal Verbs"
   },
   {
     "word": "a piece of cake",
+    "translation": "pan comido / muy fácil",
     "category": "Idioms"
   },
   {
     "word": "break the ice",
+    "translation": "romper el hielo",
     "category": "Idioms"
   },
   {
     "word": "hit the books",
+    "translation": "ponerse a estudiar",
     "category": "Idioms"
   },
   {
     "word": "under the weather",
+    "translation": "indispuesto / no sentirse bien",
     "category": "Idioms"
   },
   {
     "word": "call it a day",
+    "translation": "dar por terminado el día",
     "category": "Idioms"
   },
   {
     "word": "How are you?",
+    "translation": "¿Cómo estás?",
     "category": "Greetings"
   },
   {
     "word": "Nice to meet you.",
+    "translation": "Encantado/a de conocerte.",
     "category": "Greetings"
   },
   {
     "word": "See you later!",
+    "translation": "¡Hasta luego!",
     "category": "Greetings"
   },
   {
     "word": "Good morning!",
+    "translation": "¡Buenos días!",
     "category": "Greetings"
   },
   {
     "word": "What's up?",
+    "translation": "¿Qué tal? / ¿Qué pasa?",
     "category": "Greetings"
   },
   {
     "word": "Excuse me.",
+    "translation": "Perdón / Disculpe.",
     "category": "Polite Expressions"
   },
   {
     "word": "I'm sorry.",
+    "translation": "Lo siento.",
     "category": "Polite Expressions"
   },
   {
     "word": "Thank you very much.",
+    "translation": "Muchas gracias.",
     "category": "Polite Expressions"
   },
   {
     "word": "You're welcome.",
+    "translation": "De nada.",
     "category": "Polite Expressions"
   },
   {
     "word": "Could you help me?",
+    "translation": "¿Podrías ayudarme?",
     "category": "Polite Expressions"
   }
 ]

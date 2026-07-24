@@ -1,101 +1,121 @@
 [
   {
     "word": "wake up",
+    "translation": "despertarse",
     "category": "Daily Routine",
     "explanation": "Something you do every morning — to stop sleeping"
   },
   {
     "word": "get up",
+    "translation": "levantarse",
     "category": "Daily Routine",
     "explanation": "To leave your bed after sleeping"
   },
   {
     "word": "put on",
+    "translation": "ponerse (ropa)",
     "category": "Daily Routine",
     "explanation": "To dress yourself — you put on clothes every day"
   },
   {
     "word": "sit down",
+    "translation": "sentarse",
     "category": "Daily Routine",
     "explanation": "To take a seat — something you do many times a day"
   },
   {
     "word": "turn on",
+    "translation": "encender",
     "category": "Daily Routine",
     "explanation": "To start a device — you turn on the lights, TV, etc."
   },
   {
     "word": "give up",
+    "translation": "rendirse / dejar de intentar",
     "category": "Stopping / Ending",
     "explanation": "To quit — to stop trying or stop doing something"
   },
   {
     "word": "turn off",
+    "translation": "apagar",
     "category": "Stopping / Ending",
     "explanation": "To stop a device — the opposite of turn on"
   },
   {
     "word": "break down",
+    "translation": "averiarse / romper a llorar",
     "category": "Stopping / Ending",
     "explanation": "When a machine stops working — your car broke down"
   },
   {
     "word": "calm down",
+    "translation": "calmarse",
     "category": "Stopping / Ending",
     "explanation": "To stop being angry or excited — relax!"
   },
   {
     "word": "slow down",
+    "translation": "reducir la velocidad",
     "category": "Stopping / Ending",
     "explanation": "To reduce speed — to go less fast"
   },
   {
     "word": "pick up",
+    "translation": "recoger / levantar",
     "category": "Movement / Direction",
     "explanation": "To lift something from a surface, or to collect someone"
   },
   {
     "word": "take off",
+    "translation": "quitarse / despegar",
     "category": "Movement / Direction",
     "explanation": "To leave the ground (plane) or to remove (clothes)"
   },
   {
     "word": "get on",
+    "translation": "subirse (a un vehículo)",
     "category": "Movement / Direction",
     "explanation": "To enter a bus, train, or plane"
   },
   {
     "word": "go off",
+    "translation": "sonar (alarma) / estropearse",
     "category": "Movement / Direction",
     "explanation": "To leave a place, or when an alarm sounds"
   },
   {
     "word": "stand up",
+    "translation": "ponerse de pie",
     "category": "Movement / Direction",
     "explanation": "To rise to your feet from sitting"
   },
   {
     "word": "carry on",
+    "translation": "continuar",
     "category": "Continuing",
     "explanation": "To keep doing something — don't stop, carry on!"
   },
   {
     "word": "hold on",
+    "translation": "esperar / aguantar",
     "category": "Continuing",
     "explanation": "To wait a moment — hold on, I'm coming!"
   },
   {
     "word": "look up",
+    "translation": "buscar (en un diccionario)",
     "category": "Continuing",
     "explanation": "To search for information — look it up in the dictionary"
   },
   {
     "word": "write down",
+    "translation": "anotar",
     "category": "Continuing",
     "explanation": "To record on paper — write down the homework"
   },
   {
     "word": "show off",
+    "translation": "presumir / alardear",
     "category": "Continuing",
     "explanation": "To display proudly — showing your skills to impress others"
   }

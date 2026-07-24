@@ -1,82 +1,102 @@
 [
   {
     "word": "I eat",
+    "translation": "Yo como",
     "category": "Present"
   },
   {
     "word": "She goes",
+    "translation": "Ella va",
     "category": "Present"
   },
   {
     "word": "They play",
+    "translation": "Ellos juegan",
     "category": "Present"
   },
   {
     "word": "He works",
+    "translation": "Él trabaja",
     "category": "Present"
   },
   {
     "word": "We study",
+    "translation": "Nosotros estudiamos",
     "category": "Present"
   },
   {
     "word": "You live",
+    "translation": "Tú vives",
     "category": "Present"
   },
   {
     "word": "It rains",
+    "translation": "Llueve",
     "category": "Present"
   },
   {
     "word": "I ate",
+    "translation": "Yo comí",
     "category": "Past"
   },
   {
     "word": "She went",
+    "translation": "Ella fue",
     "category": "Past"
   },
   {
     "word": "They played",
+    "translation": "Ellos jugaron",
     "category": "Past"
   },
   {
     "word": "He worked",
+    "translation": "Él trabajó",
     "category": "Past"
   },
   {
     "word": "We studied",
+    "translation": "Nosotros estudiamos",
     "category": "Past"
   },
   {
     "word": "You lived",
+    "translation": "Tú viviste",
     "category": "Past"
   },
   {
     "word": "It rained",
+    "translation": "Llovió",
     "category": "Past"
   },
   {
     "word": "I will eat",
+    "translation": "Yo comeré",
     "category": "Future"
   },
   {
     "word": "She will go",
+    "translation": "Ella irá",
     "category": "Future"
   },
   {
     "word": "They will play",
+    "translation": "Ellos jugarán",
     "category": "Future"
   },
   {
     "word": "He will work",
+    "translation": "Él trabajará",
     "category": "Future"
   },
   {
     "word": "We will study",
+    "translation": "Nosotros estudiaremos",
     "category": "Future"
   },
   {
     "word": "You will live",
+    "translation": "Tú vivirás",
     "category": "Future"
   }
 ]

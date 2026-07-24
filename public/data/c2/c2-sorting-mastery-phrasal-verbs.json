@@ -1,101 +1,121 @@
 [
   {
     "word": "The new policy brought about sweeping reforms.",
+    "translation": "La nueva política provocó reformas radicales.",
     "category": "Causation & Change",
     "explanation": "<Brought about> means to cause something significant to happen"
   },
   {
     "word": "The scandal set off a chain reaction in parliament.",
+    "translation": "El escándalo desencadenó una reacción en cadena en el parlamento.",
     "category": "Causation & Change",
     "explanation": "<Set off> means to trigger or initiate a series of events"
   },
   {
     "word": "Years of neglect gave rise to widespread discontent.",
+    "translation": "Años de abandono dieron lugar a un descontento generalizado.",
     "category": "Causation & Change",
     "explanation": "<Gave rise to> means to cause something to develop or emerge"
   },
   {
     "word": "The merger brought forth unprecedented challenges.",
+    "translation": "La fusión generó desafíos sin precedentes.",
     "category": "Causation & Change",
     "explanation": "<Brought forth> means to produce or generate something new"
   },
   {
     "word": "The professor expounded on the theory at length.",
+    "translation": "El profesor expuso la teoría en detalle.",
     "category": "Discourse & Argumentation",
     "explanation": "<Expounded on> means to explain or present in great detail"
   },
   {
     "word": "She touched upon the ethical implications briefly.",
+    "translation": "Ella tocó brevemente las implicaciones éticas.",
     "category": "Discourse & Argumentation",
     "explanation": "<Touched upon> means to mention or address a topic briefly"
   },
   {
     "word": "The critic tore apart the author's central thesis.",
+    "translation": "El crítico destrozó la tesis central del autor.",
     "category": "Discourse & Argumentation",
     "explanation": "<Tore apart> means to criticize severely and systematically"
   },
   {
     "word": "He honed in on the weakest point of the argument.",
+    "translation": "Él se centró en el punto más débil del argumento.",
     "category": "Discourse & Argumentation",
     "explanation": "<Honed in on> means to focus precisely on a specific aspect"
   },
   {
     "word": "The committee drew up a comprehensive framework.",
+    "translation": "El comité elaboró un marco integral.",
     "category": "Planning & Strategy",
     "explanation": "<Drew up> means to prepare or draft a formal document or plan"
   },
   {
     "word": "They mapped out a five-year strategic vision.",
+    "translation": "Ellos trazaron una visión estratégica a cinco años.",
     "category": "Planning & Strategy",
     "explanation": "<Mapped out> means to plan something in careful detail"
   },
   {
     "word": "The board pencilled in a provisional timeline.",
+    "translation": "La junta anotó provisionalmente un cronograma.",
     "category": "Planning & Strategy",
     "explanation": "<Pencilled in> means to schedule tentatively, subject to change"
   },
   {
     "word": "She saw through his elaborate pretence immediately.",
+    "translation": "Ella vio a través de su elaborada farsa de inmediato.",
     "category": "Perception & Judgement",
     "explanation": "<Saw through> means to recognize deception or insincerity"
   },
   {
     "word": "The auditor picked up on subtle discrepancies in the accounts.",
+    "translation": "El auditor detectó discrepancias sutiles en las cuentas.",
     "category": "Perception & Judgement",
     "explanation": "<Picked up on> means to notice something that others might miss"
   },
   {
     "word": "He read into her silence more than was warranted.",
+    "translation": "Él interpretó en su silencio más de lo justificado.",
     "category": "Perception & Judgement",
     "explanation": "<Read into> means to interpret meaning beyond what is explicitly stated"
   },
   {
     "word": "The diplomat smoothed over the tensions between delegations.",
+    "translation": "El diplomático suavizó las tensiones entre las delegaciones.",
     "category": "Interpersonal & Social",
     "explanation": "<Smoothed over> means to make a problem seem less serious or resolve friction"
   },
   {
     "word": "He talked her round to accepting the proposal.",
+    "translation": "Él la convenció de aceptar la propuesta.",
     "category": "Interpersonal & Social",
     "explanation": "<Talked round> means to persuade someone to change their mind"
   },
   {
     "word": "The mediator prevailed upon both parties to compromise.",
+    "translation": "El mediador persuadió a ambas partes a ceder.",
     "category": "Interpersonal & Social",
     "explanation": "<Prevailed upon> means to persuade someone through sustained effort"
   },
   {
     "word": "The investigation unearthed systemic corruption.",
+    "translation": "La investigación descubrió corrupción sistémica.",
     "category": "Discovery & Resolution",
     "explanation": "<Unearthed> means to discover something hidden or previously unknown"
   },
   {
     "word": "The team ferreted out the source of the data breach.",
+    "translation": "El equipo rastreó el origen de la filtración de datos.",
     "category": "Discovery & Resolution",
     "explanation": "<Ferreted out> means to search tenaciously until finding something concealed"
   },
   {
     "word": "They ironed out the remaining contractual disputes.",
+    "translation": "Ellos resolvieron las disputas contractuales restantes.",
     "category": "Discovery & Resolution",
     "explanation": "<Ironed out> means to resolve problems or difficulties"
   }

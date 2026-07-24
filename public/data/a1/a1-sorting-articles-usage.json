@@ -1,101 +1,121 @@
 [
   {
     "word": "doctor (profession)",
+    "translation": "doctor / médico (profesión)",
     "category": "a/an (indefinite)",
     "explanation": "Use 'a/an' before professions: She is a doctor."
   },
   {
     "word": "apple (one fruit)",
+    "translation": "manzana (una fruta)",
     "category": "a/an (indefinite)",
     "explanation": "Use 'an' before vowel sounds: I ate an apple."
   },
   {
     "word": "new car (first mention)",
+    "translation": "coche nuevo (primera mención)",
     "category": "a/an (indefinite)",
     "explanation": "Use 'a/an' when mentioning something for the first time: I bought a new car."
   },
   {
     "word": "hour (time unit)",
+    "translation": "hora (unidad de tiempo)",
     "category": "a/an (indefinite)",
     "explanation": "Use 'an' before silent h: Wait an hour."
   },
   {
     "word": "university (institution)",
+    "translation": "universidad (institución)",
     "category": "a/an (indefinite)",
     "explanation": "Use 'a' before /juː/ sound: She goes to a university."
   },
   {
     "word": "umbrella (one item)",
+    "translation": "paraguas (un objeto)",
     "category": "a/an (indefinite)",
     "explanation": "Use 'an' before vowel sounds: Take an umbrella."
   },
   {
     "word": "good idea",
+    "translation": "buena idea",
     "category": "a/an (indefinite)",
     "explanation": "Use 'a' for singular countable nouns: That's a good idea."
   },
   {
     "word": "sun (unique in sky)",
+    "translation": "sol (único en el cielo)",
     "category": "the (definite)",
     "explanation": "Use 'the' for things unique in context: The sun is bright."
   },
   {
     "word": "door (we both see it)",
+    "translation": "puerta (que ambos vemos)",
     "category": "the (definite)",
     "explanation": "Use 'the' when both speaker and listener know which one: Close the door."
   },
   {
     "word": "best student (superlative)",
+    "translation": "mejor estudiante (superlativo)",
     "category": "the (definite)",
     "explanation": "Use 'the' with superlatives: She is the best student."
   },
   {
     "word": "second floor (ordinal)",
+    "translation": "segundo piso (ordinal)",
     "category": "the (definite)",
     "explanation": "Use 'the' with ordinals: Go to the second floor."
   },
   {
     "word": "moon (only one)",
+    "translation": "luna (solo hay una)",
     "category": "the (definite)",
     "explanation": "Use 'the' for unique things: The moon is full tonight."
   },
   {
     "word": "same answer (shared reference)",
+    "translation": "misma respuesta (referencia compartida)",
     "category": "the (definite)",
     "explanation": "Use 'the' with 'same': We have the same answer."
   },
   {
     "word": "breakfast (meal)",
+    "translation": "desayuno (comida)",
     "category": "∅ (no article)",
     "explanation": "No article before meals: I have breakfast at 8."
   },
   {
     "word": "football (sport)",
+    "translation": "fútbol (deporte)",
     "category": "∅ (no article)",
     "explanation": "No article before sports: They play football."
   },
   {
     "word": "home (go/be at)",
+    "translation": "casa (ir / estar en)",
     "category": "∅ (no article)",
     "explanation": "No article in fixed expressions: I'm at home."
   },
   {
     "word": "bed (go to)",
+    "translation": "cama (ir a)",
     "category": "∅ (no article)",
     "explanation": "No article in 'go to bed': Time to go to bed."
   },
   {
     "word": "water (in general)",
+    "translation": "agua (en general)",
     "category": "∅ (no article)",
     "explanation": "No article for uncountable nouns in general: Water is essential."
   },
   {
     "word": "school (as student)",
+    "translation": "escuela (como estudiante)",
     "category": "∅ (no article)",
     "explanation": "No article when referring to the purpose: She goes to school."
   },
   {
     "word": "English (language)",
+    "translation": "inglés (idioma)",
     "category": "∅ (no article)",
     "explanation": "No article before languages: I speak English."
   }

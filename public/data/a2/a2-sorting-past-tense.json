@@ -1,101 +1,121 @@
 [
   {
     "word": "walk",
+    "translation": "caminar",
     "category": "Regular Verbs",
     "explanation": "<Walk> becomes walked by adding -ed"
   },
   {
     "word": "play",
+    "translation": "jugar",
     "category": "Regular Verbs",
     "explanation": "<Play> becomes played by adding -ed"
   },
   {
     "word": "work",
+    "translation": "trabajar",
     "category": "Regular Verbs",
     "explanation": "<Work> becomes worked by adding -ed"
   },
   {
     "word": "talk",
+    "translation": "hablar",
     "category": "Regular Verbs",
     "explanation": "<Talk> becomes talked by adding -ed"
   },
   {
     "word": "watch",
+    "translation": "mirar / ver",
     "category": "Regular Verbs",
     "explanation": "<Watch> becomes watched by adding -ed"
   },
   {
     "word": "listen",
+    "translation": "escuchar",
     "category": "Regular Verbs",
     "explanation": "<Listen> becomes listened by adding -ed"
   },
   {
     "word": "cook",
+    "translation": "cocinar",
     "category": "Regular Verbs",
     "explanation": "<Cook> becomes cooked by adding -ed"
   },
   {
     "word": "clean",
+    "translation": "limpiar",
     "category": "Regular Verbs",
     "explanation": "<Clean> becomes cleaned by adding -ed"
   },
   {
     "word": "help",
+    "translation": "ayudar",
     "category": "Regular Verbs",
     "explanation": "<Help> becomes helped by adding -ed"
   },
   {
     "word": "open",
+    "translation": "abrir",
     "category": "Regular Verbs",
     "explanation": "<Open> becomes opened by adding -ed"
   },
   {
     "word": "go",
+    "translation": "ir",
     "category": "Irregular Verbs",
     "explanation": "<Go> becomes went - completely different form"
   },
   {
     "word": "come",
+    "translation": "venir",
     "category": "Irregular Verbs",
     "explanation": "<Come> becomes came - vowel change"
   },
   {
     "word": "see",
+    "translation": "ver",
     "category": "Irregular Verbs",
     "explanation": "<See> becomes saw - completely different form"
   },
   {
     "word": "eat",
+    "translation": "comer",
     "category": "Irregular Verbs",
     "explanation": "<Eat> becomes ate - vowel change"
   },
   {
     "word": "drink",
+    "translation": "beber",
     "category": "Irregular Verbs",
     "explanation": "<Drink> becomes drank - vowel change"
   },
   {
     "word": "sleep",
+    "translation": "dormir",
     "category": "Irregular Verbs",
     "explanation": "<Sleep> becomes slept - vowel change"
   },
   {
     "word": "take",
+    "translation": "tomar / llevar",
     "category": "Irregular Verbs",
     "explanation": "<Take> becomes took - vowel change"
   },
   {
     "word": "give",
+    "translation": "dar",
     "category": "Irregular Verbs",
     "explanation": "<Give> becomes gave - vowel change"
   },
   {
     "word": "make",
+    "translation": "hacer",
     "category": "Irregular Verbs",
     "explanation": "<Make> becomes made - vowel change"
   },
   {
     "word": "have",
+    "translation": "tener",
     "category": "Irregular Verbs",
     "explanation": "<Have> becomes had - completely different form"
   }

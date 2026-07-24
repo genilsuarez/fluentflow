@@ -1,82 +1,102 @@
 [
   {
     "word": "furthermore",
+    "translation": "además / es más",
     "category": "Addition"
   },
   {
     "word": "moreover",
+    "translation": "además / es más",
     "category": "Addition"
   },
   {
     "word": "in addition",
+    "translation": "además",
     "category": "Addition"
   },
   {
     "word": "besides",
+    "translation": "además / aparte de",
     "category": "Addition"
   },
   {
     "word": "however",
+    "translation": "sin embargo",
     "category": "Contrast"
   },
   {
     "word": "nevertheless",
+    "translation": "no obstante",
     "category": "Contrast"
   },
   {
     "word": "on the other hand",
+    "translation": "por otro lado",
     "category": "Contrast"
   },
   {
     "word": "conversely",
+    "translation": "a la inversa / por el contrario",
     "category": "Contrast"
   },
   {
     "word": "consequently",
+    "translation": "en consecuencia",
     "category": "Cause & Effect"
   },
   {
     "word": "therefore",
+    "translation": "por lo tanto",
     "category": "Cause & Effect"
   },
   {
     "word": "as a result",
+    "translation": "como resultado",
     "category": "Cause & Effect"
   },
   {
     "word": "hence",
+    "translation": "de ahí / por consiguiente",
     "category": "Cause & Effect"
   },
   {
     "word": "to conclude",
+    "translation": "para concluir",
     "category": "Summary"
   },
   {
     "word": "in summary",
+    "translation": "en resumen",
     "category": "Summary"
   },
   {
     "word": "to sum up",
+    "translation": "para resumir",
     "category": "Summary"
   },
   {
     "word": "all in all",
+    "translation": "en conjunto / en resumen",
     "category": "Summary"
   },
   {
     "word": "for instance",
+    "translation": "por ejemplo",
     "category": "Exemplification"
   },
   {
     "word": "namely",
+    "translation": "a saber",
     "category": "Exemplification"
   },
   {
     "word": "that is to say",
+    "translation": "es decir",
     "category": "Exemplification"
   },
   {
     "word": "to illustrate",
+    "translation": "para ilustrar",
     "category": "Exemplification"
   }
 ]

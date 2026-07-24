@@ -1,101 +1,121 @@
 [
   {
     "word": "Furthermore, the research shows positive results.",
+    "translation": "Además, la investigación muestra resultados positivos.",
     "category": "Addition",
     "explanation": "<Furthermore> adds additional information to support a point"
   },
   {
     "word": "Moreover, the costs have decreased significantly.",
+    "translation": "Es más, los costos han disminuido significativamente.",
     "category": "Addition",
     "explanation": "<Moreover> introduces additional supporting evidence"
   },
   {
     "word": "In addition, we need to consider the environmental impact.",
+    "translation": "Además, debemos considerar el impacto ambiental.",
     "category": "Addition",
     "explanation": "<In addition> introduces extra information"
   },
   {
     "word": "Additionally, the team worked overtime.",
+    "translation": "Adicionalmente, el equipo trabajó horas extra.",
     "category": "Addition",
     "explanation": "<Additionally> adds supplementary information"
   },
   {
     "word": "However, the results were not as expected.",
+    "translation": "Sin embargo, los resultados no fueron los esperados.",
     "category": "Contrast",
     "explanation": "<However> introduces contrasting information"
   },
   {
     "word": "Nevertheless, we must continue with the plan.",
+    "translation": "No obstante, debemos continuar con el plan.",
     "category": "Contrast",
     "explanation": "<Nevertheless> shows determination despite obstacles"
   },
   {
     "word": "On the other hand, some experts disagree.",
+    "translation": "Por otro lado, algunos expertos no están de acuerdo.",
     "category": "Contrast",
     "explanation": "<On the other hand> presents an alternative viewpoint"
   },
   {
     "word": "In contrast, the previous study showed different results.",
+    "translation": "En cambio, el estudio anterior mostró resultados diferentes.",
     "category": "Contrast",
     "explanation": "<In contrast> highlights differences between two things"
   },
   {
     "word": "In conclusion, the evidence supports our hypothesis.",
+    "translation": "En conclusión, la evidencia respalda nuestra hipótesis.",
     "category": "Conclusion",
     "explanation": "<In conclusion> signals the final summary of arguments"
   },
   {
     "word": "Therefore, we recommend immediate action.",
+    "translation": "Por lo tanto, recomendamos una acción inmediata.",
     "category": "Conclusion",
     "explanation": "<Therefore> shows logical consequence"
   },
   {
     "word": "Thus, the problem has been resolved.",
+    "translation": "Así pues, el problema ha sido resuelto.",
     "category": "Conclusion",
     "explanation": "<Thus> indicates a logical result"
   },
   {
     "word": "Indeed, the results exceeded our expectations.",
+    "translation": "De hecho, los resultados superaron nuestras expectativas.",
     "category": "Emphasis",
     "explanation": "<Indeed> strengthens or confirms a statement"
   },
   {
     "word": "Certainly, this approach will be more effective.",
+    "translation": "Ciertamente, este enfoque será más efectivo.",
     "category": "Emphasis",
     "explanation": "<Certainly> expresses strong confidence"
   },
   {
     "word": "Undoubtedly, she is the best candidate.",
+    "translation": "Sin duda, ella es la mejor candidata.",
     "category": "Emphasis",
     "explanation": "<Undoubtedly> expresses complete certainty"
   },
   {
     "word": "Specifically, we need to focus on customer service.",
+    "translation": "Específicamente, debemos enfocarnos en el servicio al cliente.",
     "category": "Specifying",
     "explanation": "<Specifically> introduces precise details"
   },
   {
     "word": "In particular, the marketing department needs attention.",
+    "translation": "En particular, el departamento de marketing necesita atención.",
     "category": "Specifying",
     "explanation": "<In particular> highlights a specific example"
   },
   {
     "word": "Namely, John, Sarah, and Mike will lead the project.",
+    "translation": "A saber, John, Sarah y Mike liderarán el proyecto.",
     "category": "Specifying",
     "explanation": "<Namely> introduces specific names or examples"
   },
   {
     "word": "Because of the rain, the event was cancelled.",
+    "translation": "Debido a la lluvia, el evento fue cancelado.",
     "category": "Cause/Effect",
     "explanation": "<Because of> indicates the reason for something"
   },
   {
     "word": "Due to technical problems, the system crashed.",
+    "translation": "Debido a problemas técnicos, el sistema se cayó.",
     "category": "Cause/Effect",
     "explanation": "<Due to> shows the cause of a situation"
   },
   {
     "word": "Since the weather improved, we decided to go out.",
+    "translation": "Como mejoró el clima, decidimos salir.",
     "category": "Cause/Effect",
     "explanation": "<Since> indicates cause and effect relationship"
   }

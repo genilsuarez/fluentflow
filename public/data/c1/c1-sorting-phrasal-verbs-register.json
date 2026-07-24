@@ -1,82 +1,102 @@
 [
   {
     "word": "ascertain",
+    "translation": "averiguar / determinar (formal)",
     "category": "Formal"
   },
   {
     "word": "investigate",
+    "translation": "investigar",
     "category": "Formal"
   },
   {
     "word": "postpone",
+    "translation": "posponer",
     "category": "Formal"
   },
   {
     "word": "tolerate",
+    "translation": "tolerar",
     "category": "Formal"
   },
   {
     "word": "establish",
+    "translation": "establecer",
     "category": "Formal"
   },
   {
     "word": "abandon",
+    "translation": "abandonar",
     "category": "Formal"
   },
   {
     "word": "decline",
+    "translation": "rechazar / declinar",
     "category": "Formal"
   },
   {
     "word": "eliminate",
+    "translation": "eliminar",
     "category": "Formal"
   },
   {
     "word": "devise",
+    "translation": "idear / diseñar",
     "category": "Formal"
   },
   {
     "word": "commence",
+    "translation": "comenzar (formal)",
     "category": "Formal"
   },
   {
     "word": "find out",
+    "translation": "averiguar",
     "category": "Informal"
   },
   {
     "word": "look into",
+    "translation": "investigar / examinar",
     "category": "Informal"
   },
   {
     "word": "put off",
+    "translation": "posponer",
     "category": "Informal"
   },
   {
     "word": "put up with",
+    "translation": "soportar / aguantar",
     "category": "Informal"
   },
   {
     "word": "set up",
+    "translation": "montar / establecer",
     "category": "Informal"
   },
   {
     "word": "give up",
+    "translation": "rendirse / dejar de intentar",
     "category": "Informal"
   },
   {
     "word": "turn down",
+    "translation": "rechazar",
     "category": "Informal"
   },
   {
     "word": "do away with",
+    "translation": "eliminar / acabar con",
     "category": "Informal"
   },
   {
     "word": "come up with",
+    "translation": "idear / proponer",
     "category": "Informal"
   },
   {
     "word": "kick off",
+    "translation": "empezar / dar inicio",
     "category": "Informal"
   }
 ]

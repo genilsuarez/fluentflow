@@ -1,82 +1,102 @@
 [
   {
     "word": "give up (stop trying)",
+    "translation": "rendirse (dejar de intentar)",
     "category": "Up"
   },
   {
     "word": "pick up (collect)",
+    "translation": "recoger (ir a buscar)",
     "category": "Up"
   },
   {
     "word": "set up (arrange)",
+    "translation": "montar / organizar",
     "category": "Up"
   },
   {
     "word": "come up (arise)",
+    "translation": "surgir",
     "category": "Up"
   },
   {
     "word": "make up (invent)",
+    "translation": "inventar",
     "category": "Up"
   },
   {
     "word": "find out (discover)",
+    "translation": "averiguar / descubrir",
     "category": "Out"
   },
   {
     "word": "work out (exercise/solve)",
+    "translation": "hacer ejercicio / resolver",
     "category": "Out"
   },
   {
     "word": "carry out (perform)",
+    "translation": "llevar a cabo",
     "category": "Out"
   },
   {
     "word": "point out (indicate)",
+    "translation": "señalar / indicar",
     "category": "Out"
   },
   {
     "word": "run out (exhaust supply)",
+    "translation": "agotarse",
     "category": "Out"
   },
   {
     "word": "take off (remove/depart)",
+    "translation": "quitarse / despegar",
     "category": "Off"
   },
   {
     "word": "put off (postpone)",
+    "translation": "posponer",
     "category": "Off"
   },
   {
     "word": "call off (cancel)",
+    "translation": "cancelar",
     "category": "Off"
   },
   {
     "word": "pay off (be worthwhile)",
+    "translation": "valer la pena / dar resultado",
     "category": "Off"
   },
   {
     "word": "show off (boast)",
+    "translation": "presumir",
     "category": "Off"
   },
   {
     "word": "look down on (despise)",
+    "translation": "menospreciar",
     "category": "Down"
   },
   {
     "word": "break down (stop working)",
+    "translation": "averiarse",
     "category": "Down"
   },
   {
     "word": "calm down (relax)",
+    "translation": "calmarse",
     "category": "Down"
   },
   {
     "word": "turn down (reject)",
+    "translation": "rechazar",
     "category": "Down"
   },
   {
     "word": "let down (disappoint)",
+    "translation": "decepcionar",
     "category": "Down"
   }
 ]

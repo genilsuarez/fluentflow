@@ -1,101 +1,121 @@
 [
   {
     "word": "The book is on the table.",
+    "translation": "El libro está sobre la mesa.",
     "category": "Place/Location",
     "explanation": "<On> indicates position on a surface"
   },
   {
     "word": "The cat is under the bed.",
+    "translation": "El gato está debajo de la cama.",
     "category": "Place/Location",
     "explanation": "<Under> indicates position below something"
   },
   {
     "word": "There's a picture above the fireplace.",
+    "translation": "Hay un cuadro encima de la chimenea.",
     "category": "Place/Location",
     "explanation": "<Above> indicates position higher than something"
   },
   {
     "word": "The keys are in my pocket.",
+    "translation": "Las llaves están en mi bolsillo.",
     "category": "Place/Location",
     "explanation": "<In> indicates position inside something"
   },
   {
     "word": "The shop is between the bank and the post office.",
+    "translation": "La tienda está entre el banco y la oficina de correos.",
     "category": "Place/Location",
     "explanation": "<Between> indicates position in the middle of two things"
   },
   {
     "word": "The restaurant is next to the cinema.",
+    "translation": "El restaurante está al lado del cine.",
     "category": "Place/Location",
     "explanation": "<Next to> indicates adjacent position"
   },
   {
     "word": "The library is behind the school.",
+    "translation": "La biblioteca está detrás de la escuela.",
     "category": "Place/Location",
     "explanation": "<Behind> indicates position at the back of something"
   },
   {
     "word": "I'll see you at 3 o'clock.",
+    "translation": "Te veré a las 3 en punto.",
     "category": "Time",
     "explanation": "<At> is used with specific times"
   },
   {
     "word": "We met in December.",
+    "translation": "Nos conocimos en diciembre.",
     "category": "Time",
     "explanation": "<In> is used with months, years, and seasons"
   },
   {
     "word": "The meeting is on Friday.",
+    "translation": "La reunión es el viernes.",
     "category": "Time",
     "explanation": "<On> is used with days of the week"
   },
   {
     "word": "I wake up in the morning.",
+    "translation": "Me despierto por la mañana.",
     "category": "Time",
     "explanation": "<In> is used with parts of the day"
   },
   {
     "word": "I'll finish this by tomorrow.",
+    "translation": "Terminaré esto para mañana.",
     "category": "Time",
     "explanation": "<By> indicates a deadline"
   },
   {
     "word": "She's been working since 9 AM.",
+    "translation": "Ella ha estado trabajando desde las 9 a. m.",
     "category": "Time",
     "explanation": "<Since> indicates the starting point of an action"
   },
   {
     "word": "We studied for three hours.",
+    "translation": "Estudiamos durante tres horas.",
     "category": "Time",
     "explanation": "<For> indicates duration of time"
   },
   {
     "word": "She walked through the park.",
+    "translation": "Ella caminó a través del parque.",
     "category": "Movement/Direction",
     "explanation": "<Through> indicates movement from one side to another"
   },
   {
     "word": "He ran towards the station.",
+    "translation": "Él corrió hacia la estación.",
     "category": "Movement/Direction",
     "explanation": "<Towards> indicates direction of movement"
   },
   {
     "word": "Water flows down the river.",
+    "translation": "El agua fluye río abajo.",
     "category": "Movement/Direction",
     "explanation": "<Down> indicates downward movement"
   },
   {
     "word": "She climbed up the mountain.",
+    "translation": "Ella subió la montaña.",
     "category": "Movement/Direction",
     "explanation": "<Up> indicates upward movement"
   },
   {
     "word": "The ball rolled across the field.",
+    "translation": "La pelota rodó a través del campo.",
     "category": "Movement/Direction",
     "explanation": "<Across> indicates movement from one side to the other"
   },
   {
     "word": "He jumped over the fence.",
+    "translation": "Él saltó por encima de la cerca.",
     "category": "Movement/Direction",
     "explanation": "<Over> indicates movement above and across"
   }

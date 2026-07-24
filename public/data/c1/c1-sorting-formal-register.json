@@ -1,101 +1,121 @@
 [
   {
     "word": "commence",
+    "translation": "comenzar (formal)",
     "category": "Formal",
     "explanation": "<Commence> is the formal equivalent of 'begin' or 'start', used in official contexts."
   },
   {
     "word": "terminate",
+    "translation": "terminar / cesar (formal)",
     "category": "Formal",
     "explanation": "<Terminate> is formal for 'end' or 'stop', common in contracts and legal documents."
   },
   {
     "word": "endeavour",
+    "translation": "esforzarse / intentar (formal)",
     "category": "Formal",
     "explanation": "<Endeavour> is a formal word meaning to try hard, used in academic and professional writing."
   },
   {
     "word": "ascertain",
+    "translation": "averiguar / determinar (formal)",
     "category": "Formal",
     "explanation": "<Ascertain> means to find out or determine with certainty, used in formal investigations."
   },
   {
     "word": "subsequently",
+    "translation": "posteriormente",
     "category": "Formal",
     "explanation": "<Subsequently> is a formal adverb meaning 'after that', used in academic writing."
   },
   {
     "word": "notwithstanding",
+    "translation": "no obstante / a pesar de",
     "category": "Formal",
     "explanation": "<Notwithstanding> means 'despite' or 'in spite of', common in legal and academic texts."
   },
   {
     "word": "remuneration",
+    "translation": "remuneración / retribución",
     "category": "Formal",
     "explanation": "<Remuneration> is the formal term for payment or salary, used in HR and contracts."
   },
   {
     "word": "start",
+    "translation": "empezar",
     "category": "Informal",
     "explanation": "<Start> is the everyday, informal way to say 'begin'."
   },
   {
     "word": "finish up",
+    "translation": "terminar / rematar",
     "category": "Informal",
     "explanation": "<Finish up> is a casual phrasal verb meaning to complete something."
   },
   {
     "word": "give it a go",
+    "translation": "intentarlo / probar",
     "category": "Informal",
     "explanation": "<Give it a go> is a casual expression meaning to try something."
   },
   {
     "word": "figure out",
+    "translation": "resolver / entender",
     "category": "Informal",
     "explanation": "<Figure out> is the informal equivalent of 'ascertain' or 'determine'."
   },
   {
     "word": "after that",
+    "translation": "después de eso",
     "category": "Informal",
     "explanation": "<After that> is the simple, everyday way to indicate sequence."
   },
   {
     "word": "even so",
+    "translation": "aun así",
     "category": "Informal",
     "explanation": "<Even so> is a casual way to express concession, similar to 'nevertheless'."
   },
   {
     "word": "pay",
+    "translation": "pagar",
     "category": "Informal",
     "explanation": "<Pay> is the common, everyday word for money received for work."
   },
   {
     "word": "according to",
+    "translation": "según",
     "category": "Neutral",
     "explanation": "<According to> works in both formal and informal contexts to cite a source."
   },
   {
     "word": "regarding",
+    "translation": "con respecto a",
     "category": "Neutral",
     "explanation": "<Regarding> means 'about' or 'concerning' and works across formal and informal registers."
   },
   {
     "word": "instead of",
+    "translation": "en lugar de",
     "category": "Neutral",
     "explanation": "<Instead of> is a neutral expression that works in any context."
   },
   {
     "word": "still",
+    "translation": "todavía / aún",
     "category": "Neutral",
     "explanation": "<Still> can express concession in both formal and informal contexts."
   },
   {
     "word": "also",
+    "translation": "también",
     "category": "Neutral",
     "explanation": "<Also> is a neutral adverb for adding information, suitable for any register."
   },
   {
     "word": "before",
+    "translation": "antes",
     "category": "Neutral",
     "explanation": "<Before> is a neutral preposition of time that works in any context."
   }

@@ -1,101 +1,121 @@
 [
   {
     "word": "enjoy + ___",
+    "translation": "disfrutar + gerundio",
     "category": "Gerund (-ing)",
     "explanation": "I <enjoy> swimming in the sea."
   },
   {
     "word": "avoid + ___",
+    "translation": "evitar + gerundio",
     "category": "Gerund (-ing)",
     "explanation": "She <avoids> eating late at night."
   },
   {
     "word": "mind + ___",
+    "translation": "importar / objetar + gerundio",
     "category": "Gerund (-ing)",
     "explanation": "Do you <mind> helping me?"
   },
   {
     "word": "suggest + ___",
+    "translation": "sugerir + gerundio",
     "category": "Gerund (-ing)",
     "explanation": "He <suggested> going to the park."
   },
   {
     "word": "finish + ___",
+    "translation": "terminar + gerundio",
     "category": "Gerund (-ing)",
     "explanation": "We <finished> cleaning the house."
   },
   {
     "word": "consider + ___",
+    "translation": "considerar + gerundio",
     "category": "Gerund (-ing)",
     "explanation": "I'm <considering> changing jobs."
   },
   {
     "word": "keep + ___",
+    "translation": "seguir / continuar + gerundio",
     "category": "Gerund (-ing)",
     "explanation": "She <keeps> forgetting her keys."
   },
   {
     "word": "want + ___",
+    "translation": "querer + infinitivo",
     "category": "Infinitive (to + verb)",
     "explanation": "I <want> to travel the world."
   },
   {
     "word": "decide + ___",
+    "translation": "decidir + infinitivo",
     "category": "Infinitive (to + verb)",
     "explanation": "She <decided> to study abroad."
   },
   {
     "word": "hope + ___",
+    "translation": "esperar (desear) + infinitivo",
     "category": "Infinitive (to + verb)",
     "explanation": "We <hope> to see you soon."
   },
   {
     "word": "agree + ___",
+    "translation": "aceptar / estar de acuerdo + infinitivo",
     "category": "Infinitive (to + verb)",
     "explanation": "He <agreed> to help us."
   },
   {
     "word": "refuse + ___",
+    "translation": "negarse + infinitivo",
     "category": "Infinitive (to + verb)",
     "explanation": "She <refused> to answer."
   },
   {
     "word": "offer + ___",
+    "translation": "ofrecerse + infinitivo",
     "category": "Infinitive (to + verb)",
     "explanation": "He <offered> to carry my bags."
   },
   {
     "word": "promise + ___",
+    "translation": "prometer + infinitivo",
     "category": "Infinitive (to + verb)",
     "explanation": "She <promised> to call me back."
   },
   {
     "word": "like + ___",
+    "translation": "gustar + gerundio o infinitivo",
     "category": "Both (gerund or infinitive)",
     "explanation": "I <like> swimming. / I <like> to swim."
   },
   {
     "word": "love + ___",
+    "translation": "encantar + gerundio o infinitivo",
     "category": "Both (gerund or infinitive)",
     "explanation": "She <loves> dancing. / She <loves> to dance."
   },
   {
     "word": "hate + ___",
+    "translation": "odiar + gerundio o infinitivo",
     "category": "Both (gerund or infinitive)",
     "explanation": "He <hates> waiting. / He <hates> to wait."
   },
   {
     "word": "start + ___",
+    "translation": "empezar + gerundio o infinitivo",
     "category": "Both (gerund or infinitive)",
     "explanation": "It <started> raining. / It <started> to rain."
   },
   {
     "word": "begin + ___",
+    "translation": "comenzar + gerundio o infinitivo",
     "category": "Both (gerund or infinitive)",
     "explanation": "She <began> crying. / She <began> to cry."
   },
   {
     "word": "continue + ___",
+    "translation": "continuar + gerundio o infinitivo",
     "category": "Both (gerund or infinitive)",
     "explanation": "They <continued> talking. / They <continued> to talk."
   }

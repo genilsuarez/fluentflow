@@ -1,82 +1,102 @@
 [
   {
     "word": "cat",
+    "translation": "gato",
     "category": "Animals"
   },
   {
     "word": "dog",
+    "translation": "perro",
     "category": "Animals"
   },
   {
     "word": "bird",
+    "translation": "pájaro",
     "category": "Animals"
   },
   {
     "word": "fish",
+    "translation": "pez",
     "category": "Animals"
   },
   {
     "word": "apple",
+    "translation": "manzana",
     "category": "Food"
   },
   {
     "word": "banana",
+    "translation": "plátano",
     "category": "Food"
   },
   {
     "word": "bread",
+    "translation": "pan",
     "category": "Food"
   },
   {
     "word": "cheese",
+    "translation": "queso",
     "category": "Food"
   },
   {
     "word": "red",
+    "translation": "rojo",
     "category": "Colors"
   },
   {
     "word": "blue",
+    "translation": "azul",
     "category": "Colors"
   },
   {
     "word": "green",
+    "translation": "verde",
     "category": "Colors"
   },
   {
     "word": "table",
+    "translation": "mesa",
     "category": "Furniture"
   },
   {
     "word": "chair",
+    "translation": "silla",
     "category": "Furniture"
   },
   {
     "word": "bed",
+    "translation": "cama",
     "category": "Furniture"
   },
   {
     "word": "Monday",
+    "translation": "lunes",
     "category": "Days"
   },
   {
     "word": "Tuesday",
+    "translation": "martes",
     "category": "Days"
   },
   {
     "word": "Wednesday",
+    "translation": "miércoles",
     "category": "Days"
   },
   {
     "word": "January",
+    "translation": "enero",
     "category": "Months"
   },
   {
     "word": "February",
+    "translation": "febrero",
     "category": "Months"
   },
   {
     "word": "March",
+    "translation": "marzo",
     "category": "Months"
   }
 ]

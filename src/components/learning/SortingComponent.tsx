@@ -26,6 +26,8 @@ interface SortingData {
   id: string;
   words: string[];
   categories: { name: string; items: string[] }[];
+  /** word → Spanish gloss from JSON `translation` */
+  translations: Record<string, string>;
 }
 
 interface SortingComponentProps {
@@ -64,7 +66,12 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
 
   const handleReturnToMenu = () => returnToMenu();
 
-  const [exercise, setExercise] = useState<SortingData>({ id: '', words: [], categories: [] });
+  const [exercise, setExercise] = useState<SortingData>({
+    id: '',
+    words: [],
+    categories: [],
+    translations: {},
+  });
 
   // Keyboard navigation
   useEffect(() => {
@@ -83,7 +90,7 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
   }, [showExplanation, returnToMenu]);
 
   useEffect(() => {
-    let newExercise: SortingData = { id: '', words: [], categories: [] };
+    let newExercise: SortingData = { id: '', words: [], categories: [], translations: {} };
 
     if (module?.data && Array.isArray(module.data)) {
       const firstItem = module.data[0];
@@ -96,7 +103,7 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
             `Module "${module.name}" has only ${uniqueCategories.length} category. Sorting requires at least 2 categories.`
           );
           console.warn(`Available categories:`, uniqueCategories);
-          setExercise({ id: 'sorting-exercise', words: [], categories: [] });
+          setExercise({ id: 'sorting-exercise', words: [], categories: [], translations: {} });
           return;
         }
 
@@ -107,10 +114,11 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
         // Use all available categories (no artificial limit)
         const selectedCategories = processedCategories;
 
-        // Collect all available words first
+        // Collect all available words first (keep translation from JSON)
         const allAvailableWords = (module.data || []).map((item: any) => ({
-          word: item.word,
-          category: item.category,
+          word: item.word as string,
+          category: item.category as string,
+          translation: typeof item.translation === 'string' ? item.translation : '',
         }));
 
         // Group words by category first
@@ -129,14 +137,20 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
           Math.floor(totalWords / categoriesWithWords.length)
         );
 
-        let selectedWords: { word: string; category: string }[] = [];
+        let selectedWords: { word: string; category: string; translation?: string }[] = [];
 
         // First, ensure each category gets at least one word
         categoriesWithWords.forEach(category => {
           const categoryWords = conditionalShuffle([...wordsByCategory[category]], randomizeItems);
           const wordsToTake = Math.min(minWordsPerCategory, categoryWords.length);
           for (let i = 0; i < wordsToTake && selectedWords.length < totalWords; i++) {
-            selectedWords.push({ word: categoryWords[i], category });
+            const word = categoryWords[i];
+            const meta = allAvailableWords.find(w => w.word === word);
+            selectedWords.push({
+              word,
+              category,
+              translation: meta?.translation || '',
+            });
           }
         });
 
@@ -169,14 +183,16 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
           }));
 
         const finalWords = selectedWords.map(item => item.word);
-
-        // Categories already have the correct words, no need to filter again
-        const updatedCategories = categories;
+        const translations: Record<string, string> = {};
+        allAvailableWords.forEach(({ word, translation }) => {
+          if (translation) translations[word] = translation;
+        });
 
         newExercise = {
           id: 'sorting-exercise',
           words: finalWords,
-          categories: updatedCategories,
+          categories,
+          translations,
         };
       }
     }
@@ -416,9 +432,13 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
           );
           const isCorrect = userCategory === category.name;
           const wordData = (module.data as any[])?.find((item: any) => item.word === word);
+          const translation =
+            exercise.translations[word] ||
+            (typeof wordData?.translation === 'string' ? wordData.translation : '');
 
           return {
             word,
+            translation,
             correctCategory: category.name,
             userCategory: userCategory || t('learning.notSorted'),
             isCorrect,
@@ -726,23 +746,28 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
                           {result.isCorrect ? '✓' : '✗'}
                         </span>
 
-                        <h4 className="sorting-modal__card-word">
-                          <ContentRenderer
-                            content={ContentAdapter.ensureStructured(result.word, 'quiz')}
-                          />
-                        </h4>
-
-                        <p className="sorting-modal__card-value sorting-modal__card-value--correct">
-                          {result.correctCategory}
-                        </p>
-
-                        {!result.isCorrect ? (
-                          <p className="sorting-modal__card-value sorting-modal__card-value--incorrect">
-                            {result.userCategory}
+                        <div className="sorting-modal__card-body">
+                          <div className="sorting-modal__card-main">
+                            <h4 className="sorting-modal__card-word">
+                              <ContentRenderer
+                                content={ContentAdapter.ensureStructured(result.word, 'quiz')}
+                              />
+                            </h4>
+                            {result.translation ? (
+                              <span className="sorting-modal__card-translation">
+                                {result.translation}
+                              </span>
+                            ) : null}
+                          </div>
+                          <p className="sorting-modal__card-value sorting-modal__card-value--correct">
+                            {result.correctCategory}
                           </p>
-                        ) : (
-                          <span className="sorting-modal__card-placeholder"></span>
-                        )}
+                          {!result.isCorrect ? (
+                            <p className="sorting-modal__card-value sorting-modal__card-value--incorrect">
+                              {result.userCategory}
+                            </p>
+                          ) : null}
+                        </div>
                       </div>
                     ))}
                   </div>
