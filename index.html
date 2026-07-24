@@ -29,10 +29,12 @@
   <body>
     <a class="skip-link" href="#root">Saltar al contenido</a>
     <div id="root"></div>
-    <!-- Offline/load-failure fallback (hidden by default, shown by timer if React never mounts) -->
+    <!-- Offline/load-failure fallback (hidden when React mounts) -->
     <div
       id="app-fallback"
-      style="display: none; padding: 2rem; text-align: center; font-family: system-ui, sans-serif"
+      hidden
+      aria-hidden="true"
+      style="padding: 2rem; text-align: center; font-family: system-ui, sans-serif"
     >
       <p style="font-size: 1.125rem; margin-bottom: 1rem; color: #374151">
         Loading failed — please check your connection.
@@ -99,11 +101,14 @@
         } catch (e) {
           document.documentElement.classList.add('light');
         }
-        // Safari iOS: reload when page is restored from bfcache
+        // Safari iOS: reload when page is restored from bfcache — but never during
+        // OAuth return (tokens in URL) or when React is already alive.
         window.addEventListener('pageshow', function (e) {
-          if (e.persisted && navigator.onLine !== false) {
-            window.location.reload();
-          }
+          if (!e.persisted || navigator.onLine === false) return;
+          var href = window.location.href;
+          if (/(^|[#?&])(access_token|refresh_token|code|error_description)=/.test(href)) return;
+          if (window.__REACT_ALIVE) return;
+          window.location.reload();
         });
         // Catch stale chunk errors from static imports (not covered by lazyWithRetry).
         // After a deploy, iOS Safari may serve stale HTML referencing old JS chunks
@@ -141,8 +146,13 @@
           if (!document.hidden) {
             var elapsed = Date.now() - lastActive;
             var root = document.getElementById('root');
-            if (elapsed > 30000 && root && (!root.firstChild || !window.__REACT_ALIVE)) {
-              // Only reload if online — offline reload would fail and show error
+            var href = window.location.href;
+            if (/(^|[#?&])(access_token|refresh_token|code|error_description)=/.test(href)) {
+              lastActive = Date.now();
+              return;
+            }
+            // Only reload a truly frozen tab — not a slow Vite cold start
+            if (elapsed > 60000 && root && !root.firstChild && !window.__REACT_ALIVE) {
               if (navigator.onLine !== false) {
                 window.location.reload();
               }
@@ -150,13 +160,36 @@
           }
           lastActive = Date.now();
         });
-        // Show fallback UI if React hasn't mounted after 8 seconds
-        setTimeout(function () {
-          if (!window.__REACT_ALIVE) {
-            var fb = document.getElementById('app-fallback');
-            if (fb) fb.style.display = 'block';
+        function hideAppFallback() {
+          var fb = document.getElementById('app-fallback');
+          if (fb) {
+            fb.hidden = true;
+            fb.setAttribute('aria-hidden', 'true');
           }
-        }, 8000);
+        }
+        window.__hideAppFallback = hideAppFallback;
+
+        var rootEl = document.getElementById('root');
+        if (rootEl) {
+          var rootObserver = new MutationObserver(function () {
+            if (rootEl.firstChild) {
+              window.__REACT_ALIVE = true;
+              hideAppFallback();
+            }
+          });
+          rootObserver.observe(rootEl, { childList: true });
+        }
+
+        // Show fallback only if React never mounts (slow network / chunk error)
+        setTimeout(function () {
+          if (window.__REACT_ALIVE) return;
+          if (rootEl && rootEl.firstChild) return;
+          var fb = document.getElementById('app-fallback');
+          if (fb) {
+            fb.hidden = false;
+            fb.setAttribute('aria-hidden', 'false');
+          }
+        }, 15000);
       })();
     </script>
     <script src="lp-guest-reset.js"></script>

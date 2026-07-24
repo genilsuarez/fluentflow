@@ -391,8 +391,15 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
     </div>
   );
 
+  const validatedMod =
+    showResult && isCorrect
+      ? ' reordering--validated reordering--correct'
+      : showResult
+        ? ' reordering--validated reordering--incorrect'
+        : '';
+
   return (
-    <div className={`reordering${showResult ? ' reordering--validated' : ''}`}>
+    <div className={`reordering${validatedMod}`}>
       <LearningProgressHeader
         title={module.name}
         currentIndex={currentIndex}

@@ -81,12 +81,27 @@ export const Header: React.FC<HeaderProps> = () => {
   const lessonTitle = lessonProgress?.title ?? '';
   const progression = useProgression();
   const menuModuleTotal = progression.stats?.totalModules ?? 0;
+  const catalogReady = progression.modulesFetched;
   // Theme is now handled by themeInitializer and settingsStore
   // This effect is kept for consistency but theme should already be applied
   // Handle escape key for hamburger menu
   useEscapeKey(showSideMenu, () => setShowSideMenu(false));
   const handleMenuToggle = () => {
-    setShowSideMenu(!showSideMenu);
+    const nextOpen = !showSideMenu;
+    setShowSideMenu(nextOpen);
+    if (nextOpen) {
+      const lpLogin = (window as Window & { lpLogin?: { getUser?: () => { id: string; name: string; email?: string; isSupabaseUser?: boolean } | null; refreshNavLabels?: () => void } }).lpLogin;
+      lpLogin?.refreshNavLabels?.();
+      const shared = lpLogin?.getUser?.();
+      if (shared) {
+        useUserStore.getState().setUser({
+          id: shared.id,
+          name: shared.name,
+          email: shared.email,
+          isSupabaseUser: shared.isSupabaseUser,
+        });
+      }
+    }
   };
   const handleNavigationModeToggle = () => {
     const nextMode: NavigationMode = navigationMode === 'sidebar' ? 'floating' : 'sidebar';
@@ -182,9 +197,11 @@ export const Header: React.FC<HeaderProps> = () => {
                       )}
                     </h1>
                     <p className="header-redesigned__greeting-sub">
-                      {t('navigation.headerModulesSub', undefined, {
-                        count: String(menuModuleTotal),
-                      })}
+                      {catalogReady
+                        ? t('navigation.headerModulesSub', undefined, {
+                            count: String(menuModuleTotal),
+                          })
+                        : '\u00a0'}
                     </p>
                   </>
                 ) : (
@@ -193,9 +210,11 @@ export const Header: React.FC<HeaderProps> = () => {
                       Fluent<em>Flow</em>
                     </h1>
                     <p className="header-redesigned__greeting-sub">
-                      {t('navigation.headerHomeSub', undefined, {
-                        total: String(menuModuleTotal),
-                      })}
+                      {catalogReady
+                        ? t('navigation.headerHomeSub', undefined, {
+                            total: String(menuModuleTotal),
+                          })
+                        : '\u00a0'}
                     </p>
                   </>
                 )}

@@ -5,6 +5,9 @@ import { useUserStore } from '../../stores/userStore';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useProgressStore } from '../../stores/progressStore';
 import { useProgression } from '../../hooks/useProgression';
+import { useStatsReady } from '../../hooks/useStatsReady';
+import { useStatsRevealAnimation } from '../../hooks/useStatsRevealAnimation';
+import { useAnimatedNumber } from '../../hooks/useAnimatedNumber';
 import { useTranslation } from '../../utils/i18n';
 import '../../styles/components/score-display.css';
 
@@ -15,14 +18,25 @@ export const ScoreDisplay: React.FC = () => {
   const { language } = useSettingsStore();
   const { t } = useTranslation(language);
   const { stats, modulesFetched } = useProgression();
+  const statsReady = useStatsReady();
+  const revealAnimation = useStatsRevealAnimation();
+  const shouldAnimate = statsReady && revealAnimation;
   const completedFromStore = useProgressStore(state => Object.keys(state.completedModules).length);
 
   const isInGame = currentView !== 'menu';
-  const completedModules = stats.totalModules > 0 ? stats.completedModules : completedFromStore;
-  const totalModules = stats.totalModules;
+  const completedModules = statsReady
+    ? stats.totalModules > 0
+      ? stats.completedModules
+      : completedFromStore
+    : 0;
+  const totalModules = statsReady ? stats.totalModules : 0;
+  const animatedCompleted = useAnimatedNumber(completedModules, shouldAnimate);
+  const animatedScore = useAnimatedNumber(statsReady ? getTotalScore() : 0, shouldAnimate);
   const progressLabel =
-    !modulesFetched && totalModules === 0 ? '…' : `${completedModules}/${totalModules || '…'}`;
-  const totalScore = getTotalScore();
+    !statsReady || (!modulesFetched && totalModules === 0)
+      ? '0/0'
+      : `${animatedCompleted}/${totalModules || '…'}`;
+  const totalScore = animatedScore;
 
   return (
     <div

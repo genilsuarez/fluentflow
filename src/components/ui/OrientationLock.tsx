@@ -1,37 +1,28 @@
 import React from 'react';
 import { RotateCcw } from 'lucide-react';
+import { useMobileLandscapeLock } from '../../hooks/useMobileLandscapeLock';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useTranslation } from '../../utils/i18n';
 import '../../styles/components/orientation-lock.css';
 
 interface OrientationLockProps {
-  /** Optional custom message for the orientation lock */
   message?: string;
-  /** Optional custom subtitle */
   subtitle?: string;
 }
 
 /**
- * OrientationLock Component
- *
- * Displays a user-friendly message when the device is in landscape orientation
- * on mobile devices, encouraging users to rotate to portrait mode for optimal
- * learning experience.
- *
- * Features:
- * - Only shows on mobile devices in landscape mode
- * - Elegant design consistent with app theme
- * - Animated rotation icon
- * - Theme-aware styling (light/dark mode)
- * - Internationalization support (English/Spanish)
- * - Accessibility compliant
+ * Landscape blocker for small mobile viewports only — not mounted on desktop
+ * so assistive tech does not announce hidden overlay copy.
  */
 export const OrientationLock: React.FC<OrientationLockProps> = ({ message, subtitle }) => {
+  const active = useMobileLandscapeLock();
   const { language } = useSettingsStore();
   const { t } = useTranslation(language);
 
+  if (!active) return null;
+
   return (
-    <div className="orientation-lock">
+    <div className="orientation-lock" role="dialog" aria-modal="true" aria-live="polite">
       <div className="orientation-lock__container">
         <div className="orientation-lock__icon-wrapper">
           <RotateCcw className="orientation-lock__icon" size={48} aria-hidden="true" />

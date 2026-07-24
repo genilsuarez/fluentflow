@@ -779,8 +779,17 @@
   backface-visibility: hidden;
   display: flex;
   flex-direction: column;
-  padding: 22px 14px 16px;
+  padding: 22px 14px max(16px, env(safe-area-inset-bottom));
   font-family: 'Manrope', system-ui, sans-serif;
+}
+
+/* Cursor IDE mobile preview clearance for the last footer item (Portal
+   link) — same root cause and value as game-controls.css:
+   env(safe-area-inset-bottom) is 0 in Cursor's simulated device, so its
+   home-indicator bar clips whatever sits at the true bottom edge.
+   --cursor-preview-chrome-bottom is defined once in game-controls.css. */
+html.browser-cursor-embedded .header-side-menu {
+  padding-bottom: var(--cursor-preview-chrome-bottom, 34px);
 }
 
 /* Mobile: drawer takes most of the screen width */

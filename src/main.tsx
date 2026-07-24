@@ -7,13 +7,16 @@ import { setupCrossAppThemeLinks } from './utils/crossAppTheme';
 import { clearChunkRetryFlag } from './utils/lazyWithRetry';
 import './utils/cursorBrowserDetection';
 import {
+  cleanAuthParamsFromUrl,
   fetchProfile,
   getSession,
   isAuthenticated,
+  isOAuthReturnUrl,
   onAuthStateChange,
   signInWithGoogle,
   signInWithMagicLink,
   signOut,
+  updateProfile,
 } from './services/supabaseClient';
 
 // Registrar Service Worker para modo offline — solo en build de producción.
@@ -98,9 +101,12 @@ try {
     signInWithMagicLink,
     signOut,
     fetchProfile,
+    updateProfile,
     isAuthenticated,
     onAuthStateChange,
     getSession,
+    isOAuthReturnUrl,
+    cleanAuthParamsFromUrl,
   };
 
   const rootElement = document.getElementById('root');
@@ -116,6 +122,7 @@ try {
 
   // Mark app as alive for the inline resume-detection script
   (window as any).__REACT_ALIVE = true;
+  (window as any).__hideAppFallback?.();
 
   // App loaded successfully — clear any chunk retry flag
   clearChunkRetryFlag();

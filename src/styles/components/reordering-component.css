@@ -306,6 +306,21 @@
   content: '✓ ';
 }
 
+.reordering__feedback--incorrect .reordering__feedback-text::before {
+  content: '✗ ';
+}
+
+/* Answer zone outcome — subtle frame, chips carry the detail */
+.reordering--incorrect .reordering__zone--answer {
+  border-color: color-mix(in srgb, var(--lp-error, #c0392b) 28%, transparent);
+  background-color: color-mix(in srgb, var(--lp-error, #c0392b) 4%, transparent);
+}
+
+.reordering--correct .reordering__zone--answer {
+  border-color: color-mix(in srgb, var(--lp-success, #27865a) 28%, transparent);
+  background-color: color-mix(in srgb, var(--lp-success, #27865a) 4%, transparent);
+}
+
 /* === SENTENCE (correct sentence in feedback) === */
 .reordering__sentence {
   font-size: 0.8125rem;
@@ -420,6 +435,16 @@ html.dark .reordering__zone--answer {
   background-color: rgba(59, 130, 246, 0.03);
 }
 
+html.dark .reordering--incorrect .reordering__zone--answer {
+  border-color: rgba(220, 38, 38, 0.28);
+  background-color: rgba(220, 38, 38, 0.05);
+}
+
+html.dark .reordering--correct .reordering__zone--answer {
+  border-color: rgba(22, 163, 74, 0.28);
+  background-color: rgba(22, 163, 74, 0.05);
+}
+
 html.dark .reordering__zone-label {
   color: var(--theme-text-primary, #f5f1eb);
 }
@@ -432,16 +457,17 @@ html.dark .reordering__word {
   color: #ffffff;
 }
 
+/* Soft green / soft red — readable without flooding the board */
 html.dark .reordering__word--correct {
-  background-color: rgba(255, 255, 255, 0.06);
-  color: #6ee7b7;
-  border: 1px solid rgba(52, 211, 153, 0.25);
+  background-color: rgba(22, 163, 74, 0.08);
+  color: #86efac;
+  border: 1.5px solid rgba(52, 211, 153, 0.35);
 }
 
 html.dark .reordering__word--incorrect {
-  background-color: rgba(255, 255, 255, 0.04);
-  color: #e2e8f0;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background-color: rgba(220, 38, 38, 0.1);
+  color: #fca5a5;
+  border: 1.5px solid rgba(248, 113, 113, 0.4);
 }
 
 html.dark .reordering__feedback--correct {
@@ -451,16 +477,20 @@ html.dark .reordering__feedback--correct {
 }
 
 html.dark .reordering__feedback--incorrect {
-  background-color: transparent;
+  background-color: rgba(220, 38, 38, 0.06);
   border: none;
-  border-left: 3px solid rgba(248, 113, 113, 0.45);
+  border-left: 3px solid rgba(248, 113, 113, 0.7);
   border-radius: 0;
-  padding: 0.125rem 0.5rem 0.125rem 0.625rem;
+  padding: 0.25rem 0.5rem 0.25rem 0.625rem;
   color: #fca5a5;
 }
 
-html.dark .reordering__feedback-text {
-  color: #e2e8f0;
+html.dark .reordering__feedback--correct .reordering__feedback-text {
+  color: #6ee7b7;
+}
+
+html.dark .reordering__feedback--incorrect .reordering__feedback-text {
+  color: #fca5a5;
 }
 
 html.dark .reordering__sentence-label {

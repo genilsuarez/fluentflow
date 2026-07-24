@@ -5,6 +5,9 @@ import { useUserStore } from '../../stores/userStore';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useTranslation } from '../../utils/i18n';
 import { useProgression } from '../../hooks/useProgression';
+import { useStatsReady } from '../../hooks/useStatsReady';
+import { useStatsRevealAnimation } from '../../hooks/useStatsRevealAnimation';
+import { useAnimatedNumber } from '../../hooks/useAnimatedNumber';
 import { useModuleNavigation } from '../../hooks/useModuleNavigation';
 import { MODE_I18N_KEYS, splitModuleDisplayName } from '../../utils/progressionDisplay';
 import '../../styles/components/home-dashboard.css';
@@ -18,18 +21,21 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
   const { userScores, getTotalScore } = useUserStore();
   const { language } = useSettingsStore();
   const { t } = useTranslation(language);
+  const statsReady = useStatsReady();
+  const revealAnimation = useStatsRevealAnimation();
+  const shouldAnimate = statsReady && revealAnimation;
   const progression = useProgression();
   const { navigateToModule } = useModuleNavigation('progression');
 
-  const nextRecommended = progression.getNextRecommendedModule();
+  const nextRecommended = statsReady ? progression.getNextRecommendedModule() : null;
 
   // Stats data
-  const progressData = getProgressData(7);
-  const weeklyAverage = getWeeklyAverage();
+  const progressData = statsReady ? getProgressData(7) : [];
+  const weeklyAverage = statsReady ? getWeeklyAverage() : 0;
   const totalSessions = progressData.reduce((sum, day) => sum + day.sessionsCount, 0);
   const totalTimeSpent = progressData.reduce((sum, day) => sum + day.timeSpent, 0);
-  const totalScore = getTotalScore();
-  const moduleData = Object.values(userScores);
+  const totalScore = statsReady ? getTotalScore() : 0;
+  const moduleData = statsReady ? Object.values(userScores) : [];
   const avgScore =
     moduleData.length > 0
       ? Math.round(moduleData.reduce((sum, m) => sum + m.bestScore, 0) / moduleData.length)
@@ -37,6 +43,22 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
 
   // Progression data
   const { stats } = progression;
+  const displayStats = statsReady
+    ? stats
+    : {
+        ...stats,
+        completionPercentage: 0,
+        completedModules: 0,
+        totalModules: stats.totalModules,
+        unitStats: stats.unitStats.map(unit => ({ ...unit, completed: 0, percentage: 0 })),
+      };
+
+  const animatedPct = useAnimatedNumber(displayStats.completionPercentage, shouldAnimate);
+  const animatedCompleted = useAnimatedNumber(displayStats.completedModules, shouldAnimate);
+  const animatedScore = useAnimatedNumber(totalScore, shouldAnimate);
+  const animatedAvg = useAnimatedNumber(avgScore, shouldAnimate);
+  const animatedSessions = useAnimatedNumber(totalSessions, shouldAnimate);
+  const animatedMinutes = useAnimatedNumber(Math.round(totalTimeSpent / 60), shouldAnimate);
 
   const unitInfo: Record<number, { name: string; shortName: string; code: string; color: string }> =
     {
@@ -64,10 +86,10 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
     ? t(MODE_I18N_KEYS[nextRecommended.learningMode] || 'common.exercise')
     : '';
 
-  const currentUnitIdx = stats.unitStats.findIndex(u => u.percentage < 100);
+  const currentUnitIdx = displayStats.unitStats.findIndex(u => u.percentage < 100);
   const currentUnitStat =
-    stats.unitStats[
-      currentUnitIdx === -1 ? Math.max(0, stats.unitStats.length - 1) : currentUnitIdx
+    displayStats.unitStats[
+      currentUnitIdx === -1 ? Math.max(0, displayStats.unitStats.length - 1) : currentUnitIdx
     ];
   const currentUnitInfo = currentUnitStat
     ? unitInfo[currentUnitStat.unit as keyof typeof unitInfo]
@@ -83,8 +105,8 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
 
   const progressSummary = useMemo(
     () =>
-      `${stats.completedModules} ${t('common.of', 'of')} ${stats.totalModules} ${t('common.modules', 'exercises')}`,
-    [stats.completedModules, stats.totalModules, t]
+      `${animatedCompleted} ${t('common.of', 'of')} ${displayStats.totalModules} ${t('common.modules', 'exercises')}`,
+    [animatedCompleted, displayStats.totalModules, t]
   );
 
   // Enter key → navigate to current lesson
@@ -102,7 +124,7 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
   }, [handleContinue]);
 
   return (
-    <div className="home-dash">
+    <div className="home-dash" data-lp-home>
       {/* Hero — LearnFlow resumen layout: continue banner + context cards */}
       <div className="home-dash__hero">
         <section className="home-dash__continue-banner" aria-labelledby="home-dash-continue-title">
@@ -130,12 +152,12 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
         >
           <div
             className="home-dash__context-visual"
-            style={{ '--progress': stats.completionPercentage } as React.CSSProperties}
+            style={{ '--progress': animatedPct } as React.CSSProperties}
             role="img"
             aria-hidden="true"
           >
             <div>
-              <strong>{stats.completionPercentage}%</strong>
+              <strong>{animatedPct}%</strong>
             </div>
           </div>
           <p className="home-dash__context-line home-dash__context-line--primary">
@@ -170,14 +192,14 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
         <div className="home-dash__stat home-dash__stat--points">
           <Trophy className="home-dash__stat-icon" />
           <div className="home-dash__stat-content">
-            <span className="home-dash__stat-value">{totalScore.toLocaleString()}</span>
+            <span className="home-dash__stat-value">{animatedScore.toLocaleString()}</span>
             <span className="home-dash__stat-label">{t('dashboard.totalScore', 'Points')}</span>
           </div>
         </div>
         <div className="home-dash__stat home-dash__stat--accuracy">
           <Target className="home-dash__stat-icon" />
           <div className="home-dash__stat-content">
-            <span className="home-dash__stat-value">{avgScore}%</span>
+            <span className="home-dash__stat-value">{animatedAvg}%</span>
             <span className="home-dash__stat-label">
               {t('dashboard.learningAccuracy', 'Accuracy')}
             </span>
@@ -186,7 +208,7 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
         <div className="home-dash__stat home-dash__stat--sessions">
           <Clock className="home-dash__stat-icon" />
           <div className="home-dash__stat-content">
-            <span className="home-dash__stat-value">{totalSessions}</span>
+            <span className="home-dash__stat-value">{animatedSessions}</span>
             <span className="home-dash__stat-label">
               {t('dashboard.studySessions', 'Sessions')}
             </span>
@@ -195,7 +217,7 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
         <div className="home-dash__stat home-dash__stat--time">
           <TrendingUp className="home-dash__stat-icon" />
           <div className="home-dash__stat-content">
-            <span className="home-dash__stat-value">{Math.round(totalTimeSpent / 60)}m</span>
+            <span className="home-dash__stat-value">{animatedMinutes}m</span>
             <span className="home-dash__stat-label">{t('dashboard.timeSpent', 'Practiced')}</span>
           </div>
         </div>
@@ -207,7 +229,7 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
           >
             <div className="home-dash__stat-content">
               <span className="home-dash__depth-line">
-                {stats.totalModules} {t('dashboard.depthModules', 'modules')}
+                {displayStats.totalModules} {t('dashboard.depthModules', 'modules')}
               </span>
               <span className="home-dash__depth-line">
                 6,700+ {t('dashboard.depthExercises', 'exercises')}
@@ -287,8 +309,8 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
           </h3>
           <div className="home-dash__level-grid">
             {(() => {
-              const activeIdx = stats.unitStats.findIndex(u => u.percentage < 100);
-              const currentIdx = activeIdx === -1 ? stats.unitStats.length - 1 : activeIdx;
+              const activeIdx = displayStats.unitStats.findIndex(u => u.percentage < 100);
+              const currentIdx = activeIdx === -1 ? displayStats.unitStats.length - 1 : activeIdx;
 
               let startIdx: number;
               if (currentIdx === 0) {
@@ -298,12 +320,12 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
               } else {
                 startIdx = currentIdx - 1;
               }
-              const visibleUnits = stats.unitStats.slice(startIdx, startIdx + 3);
+              const visibleUnits = displayStats.unitStats.slice(startIdx, startIdx + 3);
 
               return visibleUnits.map(unitStat => {
                 const info = unitInfo[unitStat.unit as keyof typeof unitInfo];
                 if (!info) return null;
-                const isCurrent = unitStat.unit === stats.unitStats[currentIdx]?.unit;
+                const isCurrent = unitStat.unit === displayStats.unitStats[currentIdx]?.unit;
                 return (
                   <div
                     key={unitStat.unit}

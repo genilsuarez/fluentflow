@@ -78,6 +78,10 @@ export const publishLearnFlowIntegration = (
   );
 
   const moduleById = new Map(modules.map(module => [module.id, module]));
+  const wipeExisting =
+    typeof window !== 'undefined' &&
+    !!(window as Window & { lpGuestReset?: { isExplicitLogout?: () => boolean } }).lpGuestReset
+      ?.isExplicitLogout?.();
 
   let existingContent: Record<
     string,
@@ -89,21 +93,23 @@ export const publishLearnFlowIntegration = (
       progressPct?: number;
     }
   > = {};
-  try {
-    const raw = localStorage.getItem(PROGRESS_KEY);
-    if (raw) {
-      const parsed = JSON.parse(raw) as { content?: typeof existingContent };
-      if (parsed?.content) existingContent = parsed.content;
+  if (!wipeExisting) {
+    try {
+      const raw = localStorage.getItem(PROGRESS_KEY);
+      if (raw) {
+        const parsed = JSON.parse(raw) as { content?: typeof existingContent };
+        if (parsed?.content) existingContent = parsed.content;
+      }
+    } catch {
+      /* ignore */
     }
-  } catch {
-    /* ignore */
   }
 
   const content = Object.fromEntries(
     modules.map(module => {
       const completion = source.completedModules[module.id];
       const existing = existingContent[module.id];
-      const completed = Boolean(completion);
+      const completed = Boolean(completion) || Boolean(existing?.completed);
       const bestScore = Math.max(
         completion ? clampPercentage(completion.bestScore) : 0,
         existing?.bestScorePct ?? 0
@@ -122,9 +128,11 @@ export const publishLearnFlowIntegration = (
           title: module.name,
           contentType: 'module',
           cefrLevel: getPrimaryLevel(module).toUpperCase(),
-          progressPct: completed ? 100 : (existing?.progressPct ?? 0),
+          progressPct: completed
+            ? 100
+            : Math.max(existing?.progressPct ?? 0, completion ? 100 : 0),
           completed,
-          completedAt,
+          completedAt: completed ? completedAt : null,
           bestScorePct: completed || bestScore > 0 ? bestScore : null,
           attempts,
         },
@@ -177,14 +185,16 @@ export const publishLearnFlowIntegration = (
     }));
 
   let existingEvents: Array<(typeof eventsFromSource)[number]> = [];
-  try {
-    const raw = localStorage.getItem(ACTIVITY_KEY);
-    if (raw) {
-      const parsed = JSON.parse(raw) as { events?: typeof existingEvents };
-      if (Array.isArray(parsed?.events)) existingEvents = parsed.events;
+  if (!wipeExisting) {
+    try {
+      const raw = localStorage.getItem(ACTIVITY_KEY);
+      if (raw) {
+        const parsed = JSON.parse(raw) as { events?: typeof existingEvents };
+        if (Array.isArray(parsed?.events)) existingEvents = parsed.events;
+      }
+    } catch {
+      /* ignore */
     }
-  } catch {
-    /* ignore */
   }
 
   const eventsById = new Map<string, (typeof eventsFromSource)[number]>();

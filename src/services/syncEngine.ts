@@ -2,6 +2,9 @@
 // authenticated. No login UI here: FluentFlow shares the Supabase session via
 // localStorage with DeskFlow/HubFlow/LyricFlow on the same origin (production),
 // same as it already does for the lp-user identity key (see userStore.ts).
+//
+// Multi-session: pull on login + visibility/focus, BroadcastChannel peer
+// refresh, pending upload queue until cloudHydrated, merge RPC on upload.
 import {
   useProgressStore,
   waitForProgressHydration,
@@ -13,12 +16,12 @@ import { useUserStore } from '../stores/userStore';
 import type { ModuleScore } from '../types';
 import {
   isAuthenticated,
-  onAuthStateChange,
   signOut,
   syncProgress,
   syncActivityEvents,
   fetchProgress,
   fetchActivityEvents,
+  isOAuthReturnUrl,
   type ActivityEventInput,
   type ProgressContentItem,
 } from './supabaseClient';
@@ -29,8 +32,11 @@ import {
   mergeUserScores,
   rebuildUserScoresFromHistory,
 } from './progressMerge';
+import { beginStatsDeferral, markStatsDisplayReady } from '../utils/statsBootstrap';
 
 const PASS_SCORE_PCT = 70;
+const VISIBILITY_REFRESH_MIN_MS = 12_000;
+const SYNC_CHANNEL_NAME = 'lp-sync';
 
 function mapCompletedModules(
   completedModules: Record<string, ModuleCompletion>
@@ -76,20 +82,57 @@ function mapProgressHistory(entries: ProgressEntry[]): ActivityEventInput[] {
 }
 
 let syncTimer: ReturnType<typeof setTimeout> | null = null;
+let pendingCloudSync = false;
+let lastVisibilityRefreshAt = 0;
+let refreshingFromCloud = false;
+let syncChannel: BroadcastChannel | null = null;
+let uploading = false;
+let needsReschedule = false;
 
 function scheduleSync() {
   if (syncTimer) clearTimeout(syncTimer);
   syncTimer = setTimeout(async () => {
     syncTimer = null;
+    if (shouldAbortCloudHydration()) return;
     const authed = await isAuthenticated().catch(() => false);
-    if (!authed || !cloudHydrated) return;
-
-    const { completedModules, progressHistory } = useProgressStore.getState();
-    if (Object.keys(completedModules).length) {
-      await syncProgress(mapCompletedModules(completedModules));
+    if (!authed || shouldAbortCloudHydration()) return;
+    if (!cloudHydrated) {
+      pendingCloudSync = true;
+      return;
     }
-    if (progressHistory.length) {
-      await syncActivityEvents(mapProgressHistory(progressHistory));
+    if (uploading) {
+      needsReschedule = true;
+      return;
+    }
+
+    pendingCloudSync = false;
+    uploading = true;
+    try {
+      // Pull before push so another device/tab's newer cloud rows win merge.
+      await downloadOnLogin({ force: true });
+      if (shouldAbortCloudHydration() || !(await isAuthenticated().catch(() => false))) {
+        return;
+      }
+
+      const { completedModules, progressHistory } = useProgressStore.getState();
+      if (Object.keys(completedModules).length) {
+        await syncProgress(mapCompletedModules(completedModules));
+      }
+      if (progressHistory.length) {
+        await syncActivityEvents(mapProgressHistory(progressHistory));
+      }
+
+      try {
+        syncChannel?.postMessage({ type: 'progress-local', app: 'fluentflow', at: Date.now() });
+      } catch {
+        /* noop */
+      }
+    } finally {
+      uploading = false;
+      if (needsReschedule) {
+        needsReschedule = false;
+        scheduleSync();
+      }
     }
   }, 500);
 }
@@ -116,21 +159,37 @@ let cloudHydrated = false;
 function resetDownloadState() {
   downloaded = false;
   cloudHydrated = false;
+  beginStatsDeferral();
 }
 
 type GuestResetBridge = {
   shouldRejectSession: () => boolean;
   shouldForceCloudDownload: () => boolean;
+  isExplicitLogout: () => boolean;
   clearExplicitLogout: () => void;
+  clearGuestLocalProgress: () => void;
 };
 
 function getGuestReset(): GuestResetBridge | undefined {
   return (window as Window & { lpGuestReset?: GuestResetBridge }).lpGuestReset;
 }
 
+function shouldAbortCloudHydration(): boolean {
+  return !!getGuestReset()?.isExplicitLogout?.();
+}
+
+function cancelPendingSync(): void {
+  if (syncTimer) {
+    clearTimeout(syncTimer);
+    syncTimer = null;
+  }
+  pendingCloudSync = false;
+  needsReschedule = false;
+}
+
 export function handleSignedOut(): void {
+  cancelPendingSync();
   resetDownloadState();
-  getGuestReset()?.clearExplicitLogout?.();
 }
 
 export async function handleAuthenticatedSession(event: string): Promise<void> {
@@ -145,80 +204,169 @@ export async function handleAuthenticatedSession(event: string): Promise<void> {
     return;
   }
 
-  if (event === 'SIGNED_IN' || guestReset?.shouldForceCloudDownload?.()) {
+  const forceDownload =
+    event === 'SIGNED_IN' ||
+    (event === 'INITIAL_SESSION' && isOAuthReturnUrl()) ||
+    !!guestReset?.shouldForceCloudDownload?.();
+
+  if (forceDownload) {
     resetDownloadState();
   }
 
-  await downloadOnLogin({
-    force: event === 'SIGNED_IN' || !!guestReset?.shouldForceCloudDownload?.(),
-  });
+  await downloadOnLogin({ force: forceDownload });
   scheduleSync();
 }
 
+async function applyPeerLocalProjection() {
+  await waitForProgressHydration();
+  await bootstrapFromLocalProjection();
+}
+
 // Se llama una sola vez por sesión, justo después de autenticarse. No hay
-// polling — el refresh normal ocurre vía scheduleSync() al completar algo.
+// polling — el refresh normal ocurre vía scheduleSync() / visibility.
 async function downloadOnLogin({ force = false } = {}) {
   if (downloaded && !force) return;
+  if (shouldAbortCloudHydration()) return;
   const authed = await isAuthenticated().catch(() => false);
-  if (!authed) return;
+  if (!authed || shouldAbortCloudHydration()) return;
 
   // Must wait for progress-storage rehydration — otherwise a late rehydrate
   // overwrites the merged remote progress with stale/empty local state.
   await waitForProgressHydration();
-  if (downloaded && !force) return;
+  if (downloaded && !force) {
+    markStatsDisplayReady();
+    return;
+  }
+  if (shouldAbortCloudHydration() || !(await isAuthenticated().catch(() => false))) return;
 
   // DeskFlow may have already downloaded cloud data into the v1 projection keys.
   // Import those into Zustand before merging remote rows.
   await bootstrapFromLocalProjection();
+  if (shouldAbortCloudHydration() || !(await isAuthenticated().catch(() => false))) return;
 
   const [remoteProgress, remoteActivity] = await Promise.all([
     fetchProgress().catch(() => null),
     fetchActivityEvents().catch(() => null),
   ]);
 
-  if (remoteProgress === null && remoteActivity === null) {
+  if (shouldAbortCloudHydration() || !(await isAuthenticated().catch(() => false))) {
+    getGuestReset()?.clearGuestLocalProgress?.();
+    resetDownloadState();
+    markStatsDisplayReady();
     return;
   }
 
-  downloaded = true;
-  cloudHydrated = true;
+  const fetchFailed = remoteProgress === null && remoteActivity === null;
+  if (!fetchFailed) {
+    downloaded = true;
+    cloudHydrated = true;
 
-  const { completedModules, progressHistory } = useProgressStore.getState();
+    if (pendingCloudSync) {
+      pendingCloudSync = false;
+      scheduleSync();
+    }
 
-  if (!remoteProgress?.length && !remoteActivity?.length) return;
+    const { completedModules, progressHistory } = useProgressStore.getState();
 
-  const nextState: {
-    completedModules?: Record<string, ModuleCompletion>;
-    progressHistory?: ProgressEntry[];
-    dailyProgress?: Record<string, import('../stores/progressStore').DailyProgress>;
-  } = {};
+    if (remoteProgress?.length || remoteActivity?.length) {
+      const nextState: {
+        completedModules?: Record<string, ModuleCompletion>;
+        progressHistory?: ProgressEntry[];
+        dailyProgress?: Record<string, import('../stores/progressStore').DailyProgress>;
+      } = {};
 
-  let nextHistory = progressHistory;
+      let nextHistory = progressHistory;
 
-  if (remoteProgress?.length) {
-    nextState.completedModules = mergeRemoteProgress(completedModules, remoteProgress);
+      if (remoteProgress?.length) {
+        nextState.completedModules = mergeRemoteProgress(completedModules, remoteProgress);
+      }
+      if (remoteActivity?.length) {
+        nextHistory = mergeRemoteActivityHistory(progressHistory, remoteActivity);
+        nextState.progressHistory = nextHistory;
+        // Stats (sessions, time, averages) derive from dailyProgress — rebuild after
+        // merging remote activity so they stay aligned with the history ledger.
+        nextState.dailyProgress = rebuildDailyProgressFromHistory(nextHistory);
+      }
+
+      if (Object.keys(nextState).length) {
+        useProgressStore.setState(nextState);
+      }
+
+      const mergedCompleted = nextState.completedModules ?? completedModules;
+      const { userScores } = useUserStore.getState();
+      const fromHistory = rebuildUserScoresFromHistory(nextHistory);
+      const fromCompleted = rebuildUserScoresFromCompletedModules(mergedCompleted);
+      useUserStore.setState({
+        userScores: mergeUserScores(mergeUserScores(userScores, fromHistory), fromCompleted),
+      });
+    }
   }
-  if (remoteActivity?.length) {
-    nextHistory = mergeRemoteActivityHistory(progressHistory, remoteActivity);
-    nextState.progressHistory = nextHistory;
-    // Stats (sessions, time, averages) derive from dailyProgress — rebuild after
-    // merging remote activity so they stay aligned with the history ledger.
-    nextState.dailyProgress = rebuildDailyProgressFromHistory(nextHistory);
+
+  markStatsDisplayReady();
+  if (cloudHydrated) {
+    window.dispatchEvent(new CustomEvent('lp-cloud-hydrated'));
+  }
+}
+
+async function refreshFromCloudIfNeeded({ force = false } = {}) {
+  if (refreshingFromCloud) return;
+  if (shouldAbortCloudHydration()) return;
+  if (!cloudHydrated && !force) return;
+  if (!force && Date.now() - lastVisibilityRefreshAt < VISIBILITY_REFRESH_MIN_MS) return;
+
+  const authed = await isAuthenticated().catch(() => false);
+  if (!authed || shouldAbortCloudHydration()) return;
+
+  refreshingFromCloud = true;
+  lastVisibilityRefreshAt = Date.now();
+  try {
+    await downloadOnLogin({ force: true });
+  } finally {
+    refreshingFromCloud = false;
+  }
+}
+
+function setupMultiSessionHooks() {
+  if (typeof window === 'undefined') return;
+
+  if (typeof BroadcastChannel !== 'undefined' && !syncChannel) {
+    try {
+      syncChannel = new BroadcastChannel(SYNC_CHANNEL_NAME);
+      syncChannel.onmessage = event => {
+        const msg = event?.data;
+        if (!msg || typeof msg !== 'object') return;
+        if (msg.type === 'progress-local' || msg.type === 'cloud-refreshed') {
+          void applyPeerLocalProjection();
+          if (msg.type === 'cloud-refreshed') {
+            void refreshFromCloudIfNeeded({ force: true });
+          }
+        }
+      };
+    } catch {
+      syncChannel = null;
+    }
   }
 
-  if (Object.keys(nextState).length) {
-    useProgressStore.setState(nextState);
-  }
-
-  const mergedCompleted = nextState.completedModules ?? completedModules;
-  if (remoteProgress?.length || remoteActivity?.length) {
-    const { userScores } = useUserStore.getState();
-    const fromHistory = rebuildUserScoresFromHistory(nextHistory);
-    const fromCompleted = rebuildUserScoresFromCompletedModules(mergedCompleted);
-    useUserStore.setState({
-      userScores: mergeUserScores(mergeUserScores(userScores, fromHistory), fromCompleted),
-    });
-  }
+  const onVisible = () => {
+    if (document.visibilityState && document.visibilityState !== 'visible') return;
+    void refreshFromCloudIfNeeded();
+  };
+  document.addEventListener('visibilitychange', onVisible);
+  window.addEventListener('focus', onVisible);
+  window.addEventListener('online', () => {
+    void refreshFromCloudIfNeeded({ force: true });
+  });
+  window.addEventListener('lp-sync-peer', () => {
+    void applyPeerLocalProjection();
+  });
+  window.addEventListener('lp-guest-reset', () => {
+    cancelPendingSync();
+    resetDownloadState();
+  });
+  window.addEventListener('lp-explicit-logout', () => {
+    cancelPendingSync();
+    resetDownloadState();
+  });
 }
 
 let initialized = false;
@@ -227,7 +375,14 @@ export function initSyncEngine(): void {
   if (initialized) return;
   initialized = true;
 
-  useProgressStore.subscribe(() => scheduleSync());
+  setupMultiSessionHooks();
+  useProgressStore.subscribe(() => {
+    if (uploading) {
+      needsReschedule = true;
+      return;
+    }
+    scheduleSync();
+  });
 
   // Same-origin DeskFlow may have populated v1 before FluentFlow mounts — import on cold start.
   void waitForProgressHydration().then(() => bootstrapFromLocalProjection());
