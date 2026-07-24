@@ -4,7 +4,10 @@ interface EditableInputProps {
   value: string;
   onChange: (value: string) => void;
   onFocus?: () => void;
+  onEnter?: () => void;
+  onTab?: (shiftKey: boolean) => void;
   placeholder?: string;
+  ariaLabel?: string;
   disabled?: boolean;
   className?: string;
   style?: React.CSSProperties;
@@ -26,7 +29,10 @@ export const EditableInput = forwardRef<EditableInputHandle, EditableInputProps>
       value,
       onChange,
       onFocus,
+      onEnter,
+      onTab,
       placeholder = '',
+      ariaLabel,
       disabled = false,
       className = '',
       style = {},
@@ -144,9 +150,16 @@ export const EditableInput = forwardRef<EditableInputHandle, EditableInputProps>
     };
 
     const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
-      // Prevent Enter key from creating new lines
       if (e.key === 'Enter') {
         e.preventDefault();
+        e.stopPropagation();
+        onEnter?.();
+        return;
+      }
+      if (e.key === 'Tab') {
+        e.preventDefault();
+        e.stopPropagation();
+        onTab?.(e.shiftKey);
       }
     };
 
@@ -172,12 +185,12 @@ export const EditableInput = forwardRef<EditableInputHandle, EditableInputProps>
         onBlur={handleBlur}
         onKeyDown={handleKeyDown}
         onPaste={handlePaste}
-        className={className}
+        className={`${className}${placeholder ? '' : ' editable-input--no-placeholder'}`}
         style={style}
         data-placeholder={placeholder}
         data-empty={!value ? 'true' : 'false'}
         role="textbox"
-        aria-label={placeholder}
+        aria-label={ariaLabel || placeholder || 'Blank'}
         suppressContentEditableWarning
         spellCheck={false}
         autoCorrect="off"

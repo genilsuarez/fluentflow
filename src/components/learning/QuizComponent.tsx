@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { CheckCircle, XCircle, ArrowRight, RotateCcw } from 'lucide-react';
+import { CheckCircle, XCircle, ArrowRight } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { conditionalShuffle } from '../../utils/randomUtils';
@@ -13,6 +13,8 @@ import '../../styles/components/quiz-component.css';
 
 import type { LearningModule, QuizData } from '../../types';
 import { GameControlsExitButton } from '../ui/GameControlsExitButton';
+import { GameControlsResetButton } from '../ui/GameControlsResetButton';
+
 
 interface QuizComponentProps {
   module: LearningModule;
@@ -35,12 +37,10 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
     setExerciseResult,
     handleResultContinue,
     resetSession,
-    triggerRestart,
-  } = useLearningSession({
+    triggerRestart} = useLearningSession({
     moduleId: module.id,
     moduleName: module.name,
-    learningMode: 'quiz',
-  });
+    learningMode: 'quiz'});
 
   const { theme } = useSettingsStore();
 
@@ -98,8 +98,7 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
       return {
         ...question,
         options: balanceOptionLengths(processedOptions, correctText),
-        correct: correctText,
-      };
+        correct: correctText};
     });
   }
 
@@ -313,14 +312,7 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
           onClick={handleReturnToMenu}
           title={t('learning.returnToMainMenu')}
         />
-
-        <button
-          onClick={triggerRestart}
-          className="game-controls__home-btn"
-          title={t('common.reset')}
-        >
-          <RotateCcw size={16} aria-hidden="true" />
-        </button>
+        <GameControlsResetButton onClick={triggerRestart} title={t('common.reset')} />
 
         <button onClick={handleNext} disabled={!showResult} className="game-controls__primary-btn">
           <span>

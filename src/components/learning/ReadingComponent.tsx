@@ -1,6 +1,6 @@
 import { useAppStore } from '../../stores/appStore';
 import React, { useState, useEffect, useLayoutEffect, useMemo, useCallback, useRef } from 'react';
-import { ChevronLeft, ChevronRight, ChevronDown, ChevronUp, RotateCcw } from 'lucide-react';
+import { ChevronRight, ChevronDown, ChevronUp } from 'lucide-react';
 import { useUserStore } from '../../stores/userStore';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useMenuNavigation } from '../../hooks/useMenuNavigation';
@@ -16,6 +16,9 @@ import LearningProgressHeader from '../ui/LearningProgressHeader';
 import '../../styles/components/reading-component.css';
 import type { ReadingData, LearningModule } from '../../types';
 import { GameControlsExitButton } from '../ui/GameControlsExitButton';
+import { GameControlsResetButton } from '../ui/GameControlsResetButton';
+import { GameControlsNavButton } from '../ui/GameControlsNavButton';
+
 
 interface ReadingComponentProps {
   module: LearningModule;
@@ -97,8 +100,7 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
         correctAnswers: readingSections.length,
         moduleId: module.id,
         learningMode: 'reading',
-        timeSpent: timeSpent,
-      });
+        timeSpent: timeSpent});
 
       returnToMenu({ autoScrollToNext: true });
     }
@@ -227,8 +229,7 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                     <polyline points="12 6 12 12 16 14" />
                   </svg>
                   {t('reading.component.estimatedTime', undefined, {
-                    time: String(readingData.estimatedReadingTime),
-                  })}
+                    time: String(readingData.estimatedReadingTime)})}
                 </span>
               </div>
             )}
@@ -273,8 +274,7 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                     unit:
                       readingData.grammarPoints.length === 1
                         ? t('reading.accessibility.ruleSingular')
-                        : t('reading.accessibility.rulePlural'),
-                  })}
+                        : t('reading.accessibility.rulePlural')})}
                 >
                   <span className="reading-component__summary-section-title">
                     {t('reading.component.grammarPoints')}
@@ -390,8 +390,7 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                     unit:
                       readingData.keyVocabulary.length === 1
                         ? t('reading.accessibility.termSingular')
-                        : t('reading.accessibility.termPlural'),
-                  })}
+                        : t('reading.accessibility.termPlural')})}
                 >
                   <span className="reading-component__summary-section-title">
                     {t('reading.component.keyVocabulary')}
@@ -719,25 +718,16 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
         {/* Home Navigation */}
         <GameControlsExitButton
           onClick={handleReturnToMenu}
-          title={t('reading.navigation.returnToMenu')}
+          title={t('learning.returnToMainMenu')}
         />
+        <GameControlsResetButton onClick={triggerRestart} title={t('common.reset')} />
 
-        <button
-          onClick={triggerRestart}
-          className="game-controls__home-btn game-controls__reset-btn"
-          title={t('common.reset')}
-        >
-          <RotateCcw size={16} aria-hidden="true" />
-        </button>
-
-        <button
+        <GameControlsNavButton
+          direction="prev"
           onClick={handlePrev}
           disabled={currentSectionIndex === -1}
-          className="game-controls__nav-btn"
           title={t('reading.component.previousSection')}
-        >
-          <ChevronLeft className="game-controls__nav-icon" />
-        </button>
+        />
 
         <button onClick={handleNext} className="game-controls__primary-btn">
           <span>

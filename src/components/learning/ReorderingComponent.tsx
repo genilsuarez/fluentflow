@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { Check, ArrowRight, RotateCcw, Eye, Eraser } from 'lucide-react';
+import { Check, ArrowRight, Eye, Eraser } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { prepareWords, validateReordering, moveWord } from './reorderingUtils';
 import LearningProgressHeader from '../ui/LearningProgressHeader';
@@ -8,6 +8,9 @@ import type { LearningModule, ReorderingData } from '../../types';
 
 import '../../styles/components/reordering-component.css';
 import { GameControlsExitButton } from '../ui/GameControlsExitButton';
+import { GameControlsResetButton } from '../ui/GameControlsResetButton';
+import { GameControlsIconButton } from '../ui/GameControlsIconButton';
+
 
 interface ReorderingComponentProps {
   module: LearningModule;
@@ -38,12 +41,10 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
     setExerciseResult,
     handleResultContinue,
     resetSession,
-    triggerRestart,
-  } = useLearningSession({
+    triggerRestart} = useLearningSession({
     moduleId: module.id,
     moduleName: module.name,
-    learningMode: 'reordering',
-  });
+    learningMode: 'reordering'});
 
   // Compute exercises once on mount to avoid re-shuffling on score updates
   const processedExercisesRef = useRef<ReorderingData[] | null>(null);
@@ -495,24 +496,13 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
           onClick={handleReturnToMenu}
           title={t('learning.returnToMainMenu')}
         />
-
-        <button
-          onClick={triggerRestart}
-          className="game-controls__home-btn"
-          title={t('common.reset')}
-        >
-          <RotateCcw size={16} aria-hidden="true" />
-        </button>
+        <GameControlsResetButton onClick={triggerRestart} title={t('common.reset')} />
 
         {!showResult ? (
           <>
-            <button
-              onClick={handleReset}
-              className="game-controls__icon-btn"
-              title={t('learning.resetExercise')}
-            >
+            <GameControlsIconButton onClick={handleReset} title={t('learning.resetExercise')}>
               <Eraser className="game-controls__action-icon" />
-            </button>
+            </GameControlsIconButton>
 
             <button
               onClick={handleCheck}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { Check, X, ArrowRight, RotateCcw } from 'lucide-react';
+import { Check, X, ArrowRight } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { conditionalShuffle } from '../../utils/randomUtils';
 import '../../styles/components/input-exercise-base.css';
@@ -16,6 +16,8 @@ import { matchesAnswer } from '../../utils/answerUtils';
 import { advanceInputExerciseStep } from '../../utils/exerciseTransition';
 import type { LearningModule, WordFormationData } from '../../types';
 import { GameControlsExitButton } from '../ui/GameControlsExitButton';
+import { GameControlsResetButton } from '../ui/GameControlsResetButton';
+
 
 interface WordFormationComponentProps {
   module: LearningModule;
@@ -27,7 +29,7 @@ function inlineInputWidthCh(charCount: number, minChars = 5): string {
   return `${Math.ceil(len * 1.05 + 2)}ch`;
 }
 
-const BLANK_PATTERN = /_{3,}/;
+const BLANK_PATTERN = /_{3}/;
 
 const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -48,12 +50,10 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
     setExerciseResult,
     handleResultContinue,
     resetSession,
-    triggerRestart,
-  } = useLearningSession({
+    triggerRestart} = useLearningSession({
     moduleId: module.id,
     moduleName: module.name,
-    learningMode: 'word-formation',
-  });
+    learningMode: 'word-formation'});
 
   const processedExercisesRef = useRef<WordFormationData[] | null>(null);
   if (processedExercisesRef.current === null) {
@@ -95,8 +95,7 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
         setAnswer,
         setShowResult,
         ignoreEnterRef,
-        focusInput: () => inputRef.current?.focus(),
-      });
+        focusInput: () => inputRef.current?.focus()});
     } else {
       finishExercise();
     }
@@ -298,14 +297,7 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
           onClick={handleReturnToMenu}
           title={t('learning.returnToMainMenu')}
         />
-
-        <button
-          onClick={triggerRestart}
-          className="game-controls__home-btn"
-          title={t('common.reset')}
-        >
-          <RotateCcw size={16} aria-hidden="true" />
-        </button>
+        <GameControlsResetButton onClick={triggerRestart} title={t('common.reset')} />
 
         {!showResult ? (
           <button

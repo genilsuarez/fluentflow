@@ -1345,10 +1345,6 @@
     padding-bottom: max(0.375rem, env(safe-area-inset-bottom));
   }
 
-  .reading-component__container > .game-controls .game-controls__reset-btn {
-    display: none;
-  }
-
   /* Mobile: Single column vocabulary (~25% tighter) */
   .reading-component__vocabulary {
     margin-bottom: 0.46875rem;

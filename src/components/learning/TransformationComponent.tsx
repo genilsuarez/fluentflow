@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { Check, X, ArrowRight, RotateCcw } from 'lucide-react';
+import { Check, X, ArrowRight } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { conditionalShuffle } from '../../utils/randomUtils';
 import '../../styles/components/input-exercise-base.css';
@@ -16,6 +16,8 @@ import { matchesAnswer } from '../../utils/answerUtils';
 import { advanceInputExerciseStep } from '../../utils/exerciseTransition';
 import type { LearningModule, TransformationData } from '../../types';
 import { GameControlsExitButton } from '../ui/GameControlsExitButton';
+import { GameControlsResetButton } from '../ui/GameControlsResetButton';
+
 
 interface TransformationComponentProps {
   module: LearningModule;
@@ -40,12 +42,10 @@ const TransformationComponent: React.FC<TransformationComponentProps> = ({ modul
     setExerciseResult,
     handleResultContinue,
     resetSession,
-    triggerRestart,
-  } = useLearningSession({
+    triggerRestart} = useLearningSession({
     moduleId: module.id,
     moduleName: module.name,
-    learningMode: 'transformation',
-  });
+    learningMode: 'transformation'});
 
   const processedExercisesRef = useRef<TransformationData[] | null>(null);
   if (processedExercisesRef.current === null) {
@@ -87,8 +87,7 @@ const TransformationComponent: React.FC<TransformationComponentProps> = ({ modul
         setAnswer,
         setShowResult,
         ignoreEnterRef,
-        focusInput: () => inputRef.current?.focus(),
-      });
+        focusInput: () => inputRef.current?.focus()});
     } else {
       finishExercise();
     }
@@ -255,14 +254,7 @@ const TransformationComponent: React.FC<TransformationComponentProps> = ({ modul
           onClick={handleReturnToMenu}
           title={t('learning.returnToMainMenu')}
         />
-
-        <button
-          onClick={triggerRestart}
-          className="game-controls__home-btn"
-          title={t('common.reset')}
-        >
-          <RotateCcw size={16} aria-hidden="true" />
-        </button>
+        <GameControlsResetButton onClick={triggerRestart} title={t('common.reset')} />
 
         {!showResult ? (
           <button

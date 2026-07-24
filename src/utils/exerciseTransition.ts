@@ -4,6 +4,9 @@ export const EXERCISE_FEEDBACK_COLLAPSE_MS = 220;
 /** Short guard after advance before re-enabling Enter */
 export const EXERCISE_ENTER_GUARD_MS = 50;
 
+/** Block ghost Enter keypresses right after showing exercise feedback (mobile keyboards) */
+export const EXERCISE_RESULT_ENTER_GUARD_MS = 400;
+
 /** Delay before TTS so voices are warm and feedback UI has painted */
 export const EXERCISE_SPEECH_DELAY_MS = 500;
 
@@ -35,7 +38,8 @@ export function advanceQuizTextStep({
 
 type AdvanceInputExerciseStepOptions = {
   setCurrentIndex: (value: number | ((prev: number) => number)) => void;
-  setAnswer: (value: string | ((prev: string) => string)) => void;
+  setAnswer?: (value: string | ((prev: string) => string)) => void;
+  resetAnswer?: () => void;
   setShowResult: (value: boolean | ((prev: boolean) => boolean)) => void;
   ignoreEnterRef: { current: boolean };
   focusInput?: () => void;
@@ -45,13 +49,15 @@ type AdvanceInputExerciseStepOptions = {
 export function advanceInputExerciseStep({
   setCurrentIndex,
   setAnswer,
+  resetAnswer,
   setShowResult,
   ignoreEnterRef,
   focusInput,
 }: AdvanceInputExerciseStepOptions): void {
   ignoreEnterRef.current = true;
   setCurrentIndex(prev => prev + 1);
-  setAnswer('');
+  if (resetAnswer) resetAnswer();
+  else setAnswer?.('');
   setShowResult(false);
   window.setTimeout(() => {
     ignoreEnterRef.current = false;

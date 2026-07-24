@@ -1,5 +1,7 @@
 /** Easy-to-type aliases that map to the ∅ (no article) symbol */
-const EMPTY_SET_ALIASES = ['-', '0', 'x', 'none', 'ø', 'nothing', 'no article'];
+const EMPTY_SET_ALIASES = ['-', '0', 'x', 'none', 'ø', 'nothing', 'no article', 'ninguno', 'vacio', 'vacío'];
+
+export const NO_ARTICLE_SYMBOL = '∅';
 
 /** Common contractions → expanded forms (applied after lowercasing) */
 const CONTRACTION_EXPANSIONS: [RegExp, string][] = [
@@ -170,6 +172,22 @@ export function normalizeAnswer(s: string): string {
   return result;
 }
 
+/** True when the canonical answer is “no article” (∅). */
+export function isNoArticleAnswer(answer: string): boolean {
+  return normalizeAnswer(answer.trim()) === NO_ARTICLE_SYMBOL;
+}
+
+/** Human-readable completion feedback — replaces ∅ with a short label. */
+export function formatCorrectAnswerForDisplay(correct: string, noArticleLabel: string): string {
+  if (!correct.includes(',')) {
+    return isNoArticleAnswer(correct) ? noArticleLabel : correct.trim();
+  }
+  return correct
+    .split(',')
+    .map(part => (isNoArticleAnswer(part.trim()) ? noArticleLabel : part.trim()))
+    .join(', ');
+}
+
 /**
  * Strip all apostrophes from a normalized string.
  * Used as fallback to catch remaining contractions (I'm, we'll, they're, etc.)
@@ -183,7 +201,14 @@ function stripApostrophes(s: string): string {
  * Two-pass: exact match after normalizeAnswer, then fuzzy match stripping apostrophes.
  */
 export function matchesAnswer(userAnswer: string, correctArray: string[]): boolean {
+  const trimmed = userAnswer.trim();
   const norm = normalizeAnswer(userAnswer);
+
+  // Empty field = no article when that's the expected answer (mobile-friendly)
+  if (!trimmed && correctArray.some(c => isNoArticleAnswer(c))) {
+    return true;
+  }
+
   if (!norm.length) return false;
   // Exact match (handles n't contractions already expanded by normalizeAnswer)
   if (correctArray.some(c => normalizeAnswer(c) === norm)) return true;

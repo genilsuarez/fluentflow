@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { CheckCircle, XCircle, Volume2, ArrowRight, Lightbulb, RotateCcw } from 'lucide-react';
+import { CheckCircle, XCircle, Volume2, ArrowRight, Lightbulb } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { conditionalShuffle } from '../../utils/randomUtils';
@@ -14,6 +14,8 @@ import '../../styles/components/quiz-component.css';
 
 import type { LearningModule, QuizData } from '../../types';
 import { GameControlsExitButton } from '../ui/GameControlsExitButton';
+import { GameControlsResetButton } from '../ui/GameControlsResetButton';
+
 
 interface ListeningQuizComponentProps {
   module: LearningModule;
@@ -46,12 +48,10 @@ const ListeningQuizComponent: React.FC<ListeningQuizComponentProps> = ({ module 
     setExerciseResult,
     handleResultContinue,
     resetSession,
-    triggerRestart,
-  } = useLearningSession({
+    triggerRestart} = useLearningSession({
     moduleId: module.id,
     moduleName: module.name,
-    learningMode: 'listening-quiz',
-  });
+    learningMode: 'listening-quiz'});
 
   const { theme } = useSettingsStore();
 
@@ -71,8 +71,7 @@ const ListeningQuizComponent: React.FC<ListeningQuizComponentProps> = ({ module 
       return {
         ...question,
         options: processedOptions,
-        correct: correctText,
-      };
+        correct: correctText};
     });
   }
 
@@ -220,8 +219,7 @@ const ListeningQuizComponent: React.FC<ListeningQuizComponentProps> = ({ module 
               flexDirection: 'column',
               alignItems: 'center',
               gap: '0.4rem',
-              padding: '0.5rem 0',
-            }}
+              padding: '0.5rem 0'}}
           >
             <button
               onClick={playQuestion}
@@ -237,8 +235,7 @@ const ListeningQuizComponent: React.FC<ListeningQuizComponentProps> = ({ module 
                 alignItems: 'center',
                 justifyContent: 'center',
                 transition: 'all 0.2s',
-                transform: isPlaying ? 'scale(1.06)' : 'scale(1)',
-              }}
+                transform: isPlaying ? 'scale(1.06)' : 'scale(1)'}}
             >
               <Volume2 size={24} color="var(--lp-primary, #3d6b9f)" />
             </button>
@@ -248,8 +245,7 @@ const ListeningQuizComponent: React.FC<ListeningQuizComponentProps> = ({ module 
                 fontWeight: 700,
                 color: 'var(--lp-muted)',
                 textTransform: 'uppercase',
-                letterSpacing: '0.05em',
-              }}
+                letterSpacing: '0.05em'}}
             >
               {isPlaying ? 'Playing…' : 'Tap to listen'}
             </span>
@@ -298,8 +294,7 @@ const ListeningQuizComponent: React.FC<ListeningQuizComponentProps> = ({ module 
               color: textColor,
               textAlign: 'center',
               marginTop: '0.25rem',
-              opacity: 0.85,
-            }}
+              opacity: 0.85}}
           >
             {currentQuestion?.question || currentQuestion?.sentence}
           </p>
@@ -369,14 +364,7 @@ const ListeningQuizComponent: React.FC<ListeningQuizComponentProps> = ({ module 
           onClick={handleReturnToMenu}
           title={t('learning.returnToMainMenu')}
         />
-
-        <button
-          onClick={triggerRestart}
-          className="game-controls__home-btn"
-          title={t('common.reset')}
-        >
-          <RotateCcw size={16} aria-hidden="true" />
-        </button>
+        <GameControlsResetButton onClick={triggerRestart} title={t('common.reset')} />
         <button onClick={handleNext} disabled={!showResult} className="game-controls__primary-btn">
           <span>
             {currentIndex < processedQuestions.length - 1

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import { RotateCcw, Check, Info, X, Eraser } from 'lucide-react';
+import { Check, Info, X, Eraser } from 'lucide-react';
 import { useAppStore } from '../../stores/appStore';
 import { useUserStore } from '../../stores/userStore';
 import { useSettingsStore } from '../../stores/settingsStore';
@@ -21,6 +21,9 @@ import '../../styles/components/sorting-modal.css';
 import '../../styles/components/sorting-component.css';
 import type { LearningModule } from '../../types';
 import { GameControlsExitButton } from '../ui/GameControlsExitButton';
+import { GameControlsResetButton } from '../ui/GameControlsResetButton';
+import { GameControlsIconButton } from '../ui/GameControlsIconButton';
+
 
 interface SortingData {
   id: string;
@@ -70,8 +73,7 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
     id: '',
     words: [],
     categories: [],
-    translations: {},
-  });
+    translations: {}});
 
   // Keyboard navigation
   useEffect(() => {
@@ -118,8 +120,7 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
         const allAvailableWords = (module.data || []).map((item: any) => ({
           word: item.word as string,
           category: item.category as string,
-          translation: typeof item.translation === 'string' ? item.translation : '',
-        }));
+          translation: typeof item.translation === 'string' ? item.translation : ''}));
 
         // Group words by category first
         const wordsByCategory: Record<string, string[]> = {};
@@ -149,8 +150,7 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
             selectedWords.push({
               word,
               category,
-              translation: meta?.translation || '',
-            });
+              translation: meta?.translation || ''});
           }
         });
 
@@ -179,8 +179,7 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
           .filter((categoryId: string) => finalWordsByCategory[categoryId]) // Only include categories that have words
           .map((categoryId: string) => ({
             name: categoryId, // Use the category name directly since it's already the display name
-            items: finalWordsByCategory[categoryId],
-          }));
+            items: finalWordsByCategory[categoryId]}));
 
         const finalWords = selectedWords.map(item => item.word);
         const translations: Record<string, string> = {};
@@ -192,8 +191,7 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
           id: 'sorting-exercise',
           words: finalWords,
           categories,
-          translations,
-        };
+          translations};
       }
     }
 
@@ -260,8 +258,7 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
       setDragPreview({
         word: draggedItem,
         x: touch.clientX,
-        y: touch.clientY,
-      });
+        y: touch.clientY});
     }
 
     if (isDragging) {
@@ -270,8 +267,7 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
           ? {
               ...prev,
               x: touch.clientX,
-              y: touch.clientY,
-            }
+              y: touch.clientY}
           : null
       );
 
@@ -318,8 +314,7 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
     // Add to category
     setSortedItems(prev => ({
       ...prev,
-      [categoryName]: [...(prev[categoryName] || []), word],
-    }));
+      [categoryName]: [...(prev[categoryName] || []), word]}));
 
     setDraggedItem(null);
     setDragOverCategory(null);
@@ -331,8 +326,7 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
     // Remove from category
     setSortedItems(prev => ({
       ...prev,
-      [categoryName]: (prev[categoryName] || []).filter(w => w !== word),
-    }));
+      [categoryName]: (prev[categoryName] || []).filter(w => w !== word)}));
 
     // Add back to available words
     setAvailableWords(prev => [...prev, word]);
@@ -403,8 +397,7 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
       correctAnswers: wordScore.correct,
       moduleId: module.id,
       learningMode: 'sorting',
-      timeSpent: timeSpent,
-    });
+      timeSpent: timeSpent});
 
     updateUserScore(module.id, finalScore, timeSpent);
 
@@ -413,8 +406,7 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
       accuracy: wordScore.accuracy,
       correct: wordScore.correct,
       total: wordScore.total,
-      moduleName: module.name,
-    });
+      moduleName: module.name});
   };
 
   const showSummaryModal = () => {
@@ -444,11 +436,9 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
             isCorrect,
             explanation:
               wordData?.explanation ||
-              t('learning.belongsToCategory', undefined, { category: category.name }),
-          };
+              t('learning.belongsToCategory', undefined, { category: category.name })};
         })
-      ),
-    };
+      )};
 
     setSelectedTerm(summaryData);
     setShowExplanation(true);
@@ -642,24 +632,16 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
           onClick={handleReturnToMenu}
           title={t('learning.returnToMainMenu')}
         />
-
-        <button
-          onClick={triggerRestart}
-          className="game-controls__home-btn"
-          title={t('common.reset')}
-        >
-          <RotateCcw size={16} aria-hidden="true" />
-        </button>
+        <GameControlsResetButton onClick={triggerRestart} title={t('common.reset')} />
 
         {!showResult ? (
           <>
-            <button
+            <GameControlsIconButton
               onClick={resetExercise}
-              className="game-controls__icon-btn"
               title={t('learning.resetExercise')}
             >
               <Eraser className="game-controls__action-icon" />
-            </button>
+            </GameControlsIconButton>
 
             <button
               onClick={checkAnswers}
@@ -672,13 +654,9 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
           </>
         ) : (
           <>
-            <button
-              onClick={showSummaryModal}
-              className="game-controls__icon-btn"
-              title={t('learning.viewSummary')}
-            >
+            <GameControlsIconButton onClick={showSummaryModal} title={t('learning.viewSummary')}>
               <Info className="game-controls__action-icon" />
-            </button>
+            </GameControlsIconButton>
             <button onClick={finishExercise} className="game-controls__primary-btn">
               <Check className="game-controls__primary-icon" />
               <span>{t('learning.finishSorting')}</span>
@@ -697,8 +675,7 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
             top: dragPreview.y - 20,
             zIndex: 1000,
             pointerEvents: 'none',
-            transform: 'rotate(5deg)',
-          }}
+            transform: 'rotate(5deg)'}}
         >
           <div className="sorting-component__word-chip sorting-component__word-chip--preview">
             <ContentRenderer content={ContentAdapter.ensureStructured(dragPreview.word, 'quiz')} />

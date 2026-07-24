@@ -66,6 +66,8 @@ export interface CompletionData extends BaseLearningData {
   hint?: string;
   tip?: string;
   explanation?: string;
+  /** First-letter / no-article hints in blanks. Defaults to true when omitted. */
+  showPlaceholder?: boolean;
 }
 
 export interface SortingData extends BaseLearningData {

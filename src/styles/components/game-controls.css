@@ -1,4 +1,15 @@
-/* Game Controls - Unified Design System for All Learning Modes */
+/* Game Controls - Unified Design System for All Learning Modes
+ *
+ * Canonical bar order (left → right):
+ *   1. Exit (grid) — always visible
+ *   2. Reset module — desktop only (.game-controls__reset-btn)
+ *   3. Secondary icons (eraser, info) — desktop only (.game-controls__desktop-only)
+ *   4. Prev nav — when the mode supports backward navigation
+ *   5. Primary action (pill)
+ *   6. Next nav — flashcard only (flip hidden on mobile via .game-controls__flashcard-flip)
+ *
+ * Mobile (≤768px): exit + optional prev + primary — no reset, no secondary icons.
+ */
 
 /* Bar sizing — desktop base; mobile tokens scaled in @media (max-width: 768px) */
 :root {
@@ -204,6 +215,12 @@
     height: var(--game-controls-btn-size);
     min-width: var(--game-controls-btn-size);
     min-height: var(--game-controls-btn-size);
+  }
+
+  /* Reset + secondary icon actions are desktop-only — mobile bar: exit + nav + primary */
+  .game-controls__reset-btn,
+  .game-controls__desktop-only {
+    display: none;
   }
 
   /* Lucide icons use fixed size={16} in JSX — scale all bar icons via CSS */

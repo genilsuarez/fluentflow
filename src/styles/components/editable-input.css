@@ -73,6 +73,10 @@
   pointer-events: none;
 }
 
+.editable-input--no-placeholder[data-empty='true']::before {
+  content: none;
+}
+
 /* Correct state */
 .editable-input--correct {
   border-color: var(--lp-success, #27865a);

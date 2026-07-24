@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
-import { RotateCcw, Check, Info, X, Eraser } from 'lucide-react';
+import { Check, Info, X, Eraser } from 'lucide-react';
 import { useAppStore } from '../../stores/appStore';
 import { useUserStore } from '../../stores/userStore';
 import { useProgressStore } from '../../stores/progressStore';
@@ -22,6 +22,9 @@ import '../../styles/components/matching-component.css';
 import '../../styles/components/game-controls.css';
 import type { LearningModule } from '../../types';
 import { GameControlsExitButton } from '../ui/GameControlsExitButton';
+import { GameControlsResetButton } from '../ui/GameControlsResetButton';
+import { GameControlsIconButton } from '../ui/GameControlsIconButton';
+
 
 interface MatchingComponentProps {
   module: LearningModule;
@@ -106,8 +109,7 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
     const initialPairs = (module.data as any[]).map((item: any) => ({
       left: item.left || '',
       right: item.right || '',
-      explanation: item.explanation || '',
-    }));
+      explanation: item.explanation || ''}));
 
     // Store pairs in ref so they're stable across re-renders
     // (select in useModuleData can re-shuffle on each render)
@@ -234,8 +236,7 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
       correctAnswers: correctCount,
       moduleId: module.id,
       learningMode: 'matching',
-      timeSpent,
-    });
+      timeSpent});
     updateUserScore(module.id, finalScore, timeSpent);
 
     setExerciseResultData({
@@ -243,8 +244,7 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
       accuracy,
       correct: correctCount,
       total: pairs.length,
-      moduleName: module.name,
-    });
+      moduleName: module.name});
   };
 
   const showSummaryModal = () => {
@@ -257,9 +257,7 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
       results: pairs.map(pair => ({
         ...pair,
         userAnswer: matches[pair.left] || t('learning.noAnswer'),
-        isCorrect: matches[pair.left] === pair.right,
-      })),
-    };
+        isCorrect: matches[pair.left] === pair.right}))};
     setSelectedTerm(summaryData);
     setShowExplanation(true);
   };
@@ -455,44 +453,31 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
           title={t('learning.returnToMainMenu')}
         />
 
-        {!showResult && (
-          <>
-            <button
-              onClick={triggerRestart}
-              className="game-controls__home-btn"
-              title={t('common.reset')}
-            >
-              <RotateCcw size={16} aria-hidden="true" />
-            </button>
+        <GameControlsResetButton onClick={triggerRestart} title={t('common.reset')} />
 
-            <button
+        {!showResult ? (
+          <>
+            <GameControlsIconButton
               onClick={resetExercise}
-              className="game-controls__icon-btn"
               title={t('learning.resetExercise')}
             >
               <Eraser className="game-controls__action-icon" />
+            </GameControlsIconButton>
+
+            <button
+              onClick={checkAnswers}
+              disabled={!allMatched}
+              className="game-controls__primary-btn"
+            >
+              <Check className="game-controls__primary-icon" />
+              <span>{t('learning.checkMatches')}</span>
             </button>
           </>
-        )}
-
-        {!showResult ? (
-          <button
-            onClick={checkAnswers}
-            disabled={!allMatched}
-            className="game-controls__primary-btn"
-          >
-            <Check className="game-controls__primary-icon" />
-            <span>{t('learning.checkMatches')}</span>
-          </button>
         ) : (
           <>
-            <button
-              onClick={showSummaryModal}
-              className="game-controls__icon-btn"
-              title={t('learning.viewSummary')}
-            >
+            <GameControlsIconButton onClick={showSummaryModal} title={t('learning.viewSummary')}>
               <Info className="game-controls__action-icon" />
-            </button>
+            </GameControlsIconButton>
             <button onClick={finishExercise} className="game-controls__primary-btn">
               <Check className="game-controls__primary-icon" />
               <span>{t('learning.finishExercise')}</span>

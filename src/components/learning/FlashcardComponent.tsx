@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
-import { ChevronLeft, ChevronRight, RotateCcw } from 'lucide-react';
+import { RotateCcw } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { useMenuNavigation } from '../../hooks/useMenuNavigation';
 import { useProgressStore } from '../../stores/progressStore';
@@ -14,6 +14,9 @@ import LearningProgressHeader from '../ui/LearningProgressHeader';
 import '../../styles/components/flashcard-component.css';
 import type { FlashcardData, LearningModule } from '../../types';
 import { GameControlsExitButton } from '../ui/GameControlsExitButton';
+import { GameControlsResetButton } from '../ui/GameControlsResetButton';
+import { GameControlsNavButton } from '../ui/GameControlsNavButton';
+
 
 interface FlashcardComponentProps {
   module: LearningModule;
@@ -242,23 +245,14 @@ const FlashcardComponent: React.FC<FlashcardComponentProps> = ({ module }) => {
           onClick={handleReturnToMenu}
           title={t('learning.returnToMainMenu')}
         />
+        <GameControlsResetButton onClick={triggerRestart} title={t('common.reset')} />
 
-        <button
-          onClick={triggerRestart}
-          className="game-controls__home-btn"
-          title={t('common.reset')}
-        >
-          <RotateCcw className="game-controls__action-icon" aria-hidden="true" />
-        </button>
-
-        <button
+        <GameControlsNavButton
+          direction="prev"
           onClick={handlePrev}
           disabled={currentIndex === 0}
-          className="game-controls__nav-btn"
           title={t('learning.previousCard')}
-        >
-          <ChevronLeft className="game-controls__nav-icon" />
-        </button>
+        />
 
         <button
           onClick={handleFlip}
@@ -268,9 +262,9 @@ const FlashcardComponent: React.FC<FlashcardComponentProps> = ({ module }) => {
           <span>{t('learning.flip')}</span>
         </button>
 
-        <button
+        <GameControlsNavButton
+          direction="next"
           onClick={handleRevealOrNext}
-          className="game-controls__nav-btn"
           title={
             !isFlipped
               ? t('learning.flip')
@@ -278,9 +272,7 @@ const FlashcardComponent: React.FC<FlashcardComponentProps> = ({ module }) => {
                 ? t('learning.finishFlashcards')
                 : t('learning.nextCard')
           }
-        >
-          <ChevronRight className="game-controls__nav-icon" />
-        </button>
+        />
       </div>
     </div>
   );

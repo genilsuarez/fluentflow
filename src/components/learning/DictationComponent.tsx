@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { Volume2, Check, X, ArrowRight, RotateCcw } from 'lucide-react';
+import { Volume2, Check, X, ArrowRight } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { conditionalShuffle } from '../../utils/randomUtils';
 import { matchesAnswer } from '../../utils/answerUtils';
@@ -12,6 +12,8 @@ import '../../styles/components/quiz-component.css';
 
 import type { LearningModule } from '../../types';
 import { GameControlsExitButton } from '../ui/GameControlsExitButton';
+import { GameControlsResetButton } from '../ui/GameControlsResetButton';
+
 
 interface DictationItem {
   text: string;
@@ -41,12 +43,10 @@ const DictationComponent: React.FC<DictationComponentProps> = ({ module }) => {
     setExerciseResult,
     handleResultContinue,
     resetSession,
-    triggerRestart,
-  } = useLearningSession({
+    triggerRestart} = useLearningSession({
     moduleId: module.id,
     moduleName: module.name,
-    learningMode: 'dictation',
-  });
+    learningMode: 'dictation'});
 
   const itemsRef = useRef<DictationItem[] | null>(null);
   if (itemsRef.current === null) {
@@ -104,8 +104,7 @@ const DictationComponent: React.FC<DictationComponentProps> = ({ module }) => {
         setShowResult,
         setIsCorrect,
         onAdvance: stopSpeaking,
-        focusInput: () => inputRef.current?.focus(),
-      });
+        focusInput: () => inputRef.current?.focus()});
     } else {
       finishExercise();
     }
@@ -178,8 +177,7 @@ const DictationComponent: React.FC<DictationComponentProps> = ({ module }) => {
               flexDirection: 'column',
               alignItems: 'center',
               gap: '0.5rem',
-              padding: '0.75rem 0',
-            }}
+              padding: '0.75rem 0'}}
           >
             <button
               onClick={() => playAudio()}
@@ -195,8 +193,7 @@ const DictationComponent: React.FC<DictationComponentProps> = ({ module }) => {
                 alignItems: 'center',
                 justifyContent: 'center',
                 transition: 'all 0.2s',
-                transform: isPlaying ? 'scale(1.06)' : 'scale(1)',
-              }}
+                transform: isPlaying ? 'scale(1.06)' : 'scale(1)'}}
             >
               <Volume2 size={32} color="var(--theme-primary-blue, #3b82f6)" />
             </button>
@@ -209,8 +206,7 @@ const DictationComponent: React.FC<DictationComponentProps> = ({ module }) => {
                 background: 'none',
                 border: 'none',
                 cursor: 'pointer',
-                textDecoration: 'underline',
-              }}
+                textDecoration: 'underline'}}
             >
               🐢 Slower
             </button>
@@ -224,8 +220,7 @@ const DictationComponent: React.FC<DictationComponentProps> = ({ module }) => {
               fontSize: '0.75rem',
               color: 'var(--theme-text-tertiary)',
               textAlign: 'center',
-              fontStyle: 'italic',
-            }}
+              fontStyle: 'italic'}}
           >
             💡 {currentItem.hint}
           </p>
@@ -286,14 +281,7 @@ const DictationComponent: React.FC<DictationComponentProps> = ({ module }) => {
           onClick={handleReturnToMenu}
           title={t('learning.returnToMainMenu')}
         />
-
-        <button
-          onClick={triggerRestart}
-          className="game-controls__home-btn"
-          title={t('common.reset')}
-        >
-          <RotateCcw size={16} aria-hidden="true" />
-        </button>
+        <GameControlsResetButton onClick={triggerRestart} title={t('common.reset')} />
         <button
           onClick={showResult ? handleNext : handleSubmit}
           disabled={!showResult && !userInput.trim()}
