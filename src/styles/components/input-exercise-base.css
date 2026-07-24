@@ -19,7 +19,7 @@
   border: 1px solid var(--theme-border-modal, rgba(0, 0, 0, 0.1));
   border-radius: var(--radius-lg, 0.5rem);
 }
-@media (min-width: 640px) {
+@media (--lp-from-sm) {
   .transformation__container,
   .word-formation__container,
   .error-correction__container {
@@ -320,7 +320,7 @@ html.dark .error-correction__explanation-text {
 }
 
 /* === COMPACT MOBILE === */
-@media (max-width: 768px) {
+@media (--lp-mobile-md) {
   .transformation__container,
   .word-formation__container,
   .error-correction__container {

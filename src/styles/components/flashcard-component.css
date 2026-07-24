@@ -236,7 +236,7 @@
 }
 
 /* === RESPONSIVE === */
-@media (min-width: 640px) {
+@media (--lp-from-sm) {
   .flashcard-component__container {
     padding: 0.75rem;
   }
@@ -254,22 +254,8 @@
   }
 }
 
-@media (max-width: 639px) {
-  .flashcard-component__card {
-    height: 11.5rem;
-  }
-
-  .flashcard-component__front-text {
-    font-size: 1.375rem;
-  }
-
-  .flashcard-component__back-answer {
-    font-size: 1.125rem;
-  }
-}
-
-/* === CRITICAL: Mobile ≤400px - Translation Visibility Fix === */
-@media (max-width: 639px) {
+/* === MOBILE (≤639px) — layout, typography, shell === */
+@media (--lp-mobile-sm) {
   .flashcard-component__container {
     flex: 1;
     min-height: 0;
@@ -280,96 +266,66 @@
     border: none;
     box-shadow: none;
     border-radius: 0;
+    margin: 0.0625rem auto;
+    padding: 0.25rem;
+  }
+
+  .flashcard-component__container > .game-controls {
+    margin-top: auto;
+    flex-shrink: 0;
   }
 
   .flashcard-component__card {
     flex: 1;
     min-height: 0;
-    margin: auto 0;
-  }
-
-  /* Push game controls to bottom of viewport */
-  .flashcard-component__container > .game-controls {
-    margin-top: auto;
-    flex-shrink: 0;
-  }
-}
-
-@media (max-width: 400px) {
-  .flashcard-component__container {
-    margin: 0.0625rem auto;
-    /* Reduced top/bottom margin */
-    padding: 0.25rem;
-    /* Reduced container padding */
-  }
-
-  .flashcard-component__card {
     height: 11rem;
-    /* Sufficient height for back content: word + IPA + translation + 2 examples */
     margin: 0.125rem auto;
-    /* Minimal margin */
+  }
+
+  .flashcard-component__front-text {
+    font-size: 1.375rem;
+  }
+
+  .flashcard-component__back-answer {
+    font-size: 1.375rem;
+    font-weight: 800;
+    margin-bottom: 0.25rem;
+    line-height: 1.1;
+    word-wrap: break-word;
+    hyphens: auto;
   }
 
   .flashcard-component__card-front,
   .flashcard-component__card-back {
     padding: 0.5rem;
-    /* Reduced padding for more content space */
     justify-content: center;
-    /* Center content vertically */
   }
 
   .flashcard-component__back-text {
     font-size: 1rem;
-    /* Slightly smaller question text */
     margin-bottom: 0.25rem;
-    /* Reduced margin */
     line-height: 1.1;
-    /* Tighter line height */
-  }
-
-  .flashcard-component__back-answer {
-    font-size: 1.375rem;
-    /* Maintain readable size for translation */
-    font-weight: 800;
-    /* Increased weight for better visibility */
-    margin-bottom: 0.25rem;
-    /* Reduced margin */
-    line-height: 1.1;
-    /* Tighter line height */
-    word-wrap: break-word;
-    /* Handle long translations */
-    hyphens: auto;
-    /* Allow hyphenation if needed */
   }
 
   .flashcard-component__ipa--back {
     font-size: 0.75rem;
-    /* Smaller IPA text */
     margin-bottom: 0.125rem;
-    /* Minimal margin */
   }
 
   .flashcard-component__back-examples {
     margin-top: 0.125rem;
-    /* Reduced margin */
     gap: 0.125rem;
-    /* Smaller gap between examples */
   }
 
   .flashcard-component__back-example {
     font-size: 0.6875rem;
-    /* Smaller example text */
     padding: 0.125rem 0;
-    /* Reduced padding */
     line-height: 1.1;
-    /* Tighter line height */
   }
-
-  /* Ensure controls don't interfere with card content */
 }
 
 /* Flashcard bar — same touch size as other modes; flip via tap/swipe on the card */
-@media (max-width: 768px) {
+@media (--lp-mobile-md) {
   .flashcard-component__container > .game-controls--flashcard {
     flex-wrap: nowrap;
     justify-content: center;

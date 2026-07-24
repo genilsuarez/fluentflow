@@ -203,7 +203,7 @@
 }
 
 /* === RESPONSIVE DESIGN === */
-@media (max-width: 639px) {
+@media (--lp-mobile-sm) {
   .search-bar {
     max-width: 100%;
     border-radius: var(--radius-md, 0.375rem);
@@ -263,7 +263,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (--lp-from-md) {
   .search-bar {
     max-width: 100%;
   }
@@ -409,7 +409,7 @@ html.dark .main-menu__search .search-bar {
 }
 
 /* Responsive border-radius */
-@media (min-width: 900px) {
+@media (--lp-from-lg) {
   .main-menu__search .search-bar {
     border-radius: var(--lp-radius-lg);
   }

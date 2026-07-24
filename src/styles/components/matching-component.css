@@ -706,7 +706,8 @@ html.dark .matching-component__item--incorrect .matching-component__info-icon {
 }
 
 /* === MOBILE OPTIMIZATIONS === */
-@media (max-width: 768px) {
+/* Narrow viewport OR touch-primary (iPhone Chrome, desktop-site mode, etc.) */
+@media (--lp-mobile-md-touch) {
   .matching-component {
     flex: 1;
     min-height: 0;
@@ -733,7 +734,7 @@ html.dark .matching-component__item--incorrect .matching-component__info-icon {
   }
 
   .matching-component__column-header {
-    font-size: 0.84rem;
+    font-size: var(--text-sm, 1rem);
     padding: 0.25rem 0.375rem;
     margin-bottom: 0.375rem;
   }
@@ -743,14 +744,14 @@ html.dark .matching-component__item--incorrect .matching-component__info-icon {
   }
 
   .matching-component__item-text {
-    font-size: 0.91rem;
-    line-height: 1.2;
+    font-size: var(--text-sm, 1rem);
+    line-height: 1.35;
   }
 
   .matching-component__item-letter {
-    width: 1.25rem !important;
-    height: 1.25rem !important;
-    font-size: 0.84rem !important;
+    width: 1.375rem !important;
+    height: 1.375rem !important;
+    font-size: var(--text-xs, 0.875rem) !important;
     margin-right: 0.375rem !important;
   }
 
@@ -785,24 +786,7 @@ html.dark .matching-component__item--incorrect .matching-component__info-icon {
   }
 }
 
-@media (max-width: 480px) {
-  .matching-component__item {
-    padding: 0.375rem 0.4375rem;
-  }
-
-  .matching-component__item-text {
-    font-size: 0.84rem;
-  }
-
-  .matching-component__item-letter {
-    width: 1.125rem !important;
-    height: 1.125rem !important;
-    font-size: 0.76rem !important;
-    margin-right: 0.25rem !important;
-  }
-}
-
-@media (min-width: 640px) {
+@media (--lp-from-sm) {
   .matching-component {
     padding: 0.75rem;
   }
@@ -884,13 +868,13 @@ html.dark body .matching-component .matching-component__item--incorrect {
   font-weight: 600 !important;
 }
 
-/* Mobile responsive overrides */
-@media (max-width: 767px) {
+/* Mobile layout overrides (checked state, action buttons) */
+@media (--lp-mobile-md-touch) {
   .matching-component .matching-component__item {
     min-height: 2.25rem !important;
     padding: 0.375rem 0.4375rem !important;
-    font-size: 0.91rem !important;
-    line-height: 1.2 !important;
+    font-size: var(--text-sm, 1rem) !important;
+    line-height: 1.35 !important;
     overflow: hidden !important;
   }
 
@@ -909,25 +893,25 @@ html.dark body .matching-component .matching-component__item--incorrect {
   }
 
   .matching-component .matching-component__info-button {
-    width: 1.125rem !important;
-    height: 1.125rem !important;
-    min-width: 1.125rem !important;
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+    min-width: 1.25rem !important;
   }
 
   .matching-component .matching-component__info-icon {
-    width: 0.625rem !important;
-    height: 0.625rem !important;
+    width: 0.6875rem !important;
+    height: 0.6875rem !important;
   }
 
   .matching-component .matching-component__match-number {
-    min-width: 1rem !important;
-    height: 1rem !important;
+    min-width: 1.125rem !important;
+    height: 1.125rem !important;
     font-size: 0.69rem !important;
   }
 
   .matching-component .matching-component__item-text {
-    font-size: 0.91rem !important;
-    line-height: 1.2 !important;
+    font-size: var(--text-sm, 1rem) !important;
+    line-height: 1.35 !important;
     padding-right: 2rem !important;
   }
 
@@ -947,30 +931,20 @@ html.dark body .matching-component .matching-component__item--incorrect {
 
   .matching-component .matching-component__item--correct .matching-component__item-letter,
   .matching-component .matching-component__item--incorrect .matching-component__item-letter {
-    width: 1.125rem !important;
-    height: 1.125rem !important;
-    font-size: 0.76rem !important;
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+    font-size: var(--text-xs, 0.875rem) !important;
     margin-right: 0.25rem !important;
     box-shadow: none !important;
   }
-}
 
-@media (max-width: 419px) {
+  /* Ultra-narrow spacing — typography stays at --text-sm */
   .matching-component .matching-component__item {
     min-height: 2rem !important;
     padding: 0.3125rem 0.375rem !important;
-    font-size: 0.84rem !important;
-  }
-
-  .matching-component .matching-component__item-letter {
-    width: 1rem !important;
-    height: 1rem !important;
-    font-size: 0.69rem !important;
-    margin-right: 0.1875rem !important;
   }
 
   .matching-component .matching-component__item-text {
-    font-size: 0.84rem !important;
     padding-right: 1.75rem !important;
   }
 
@@ -978,15 +952,15 @@ html.dark body .matching-component .matching-component__item--incorrect {
     gap: 0.25rem !important;
     padding: 0.1875rem !important;
   }
+}
 
-  .matching-component .matching-component__info-button {
-    width: 1rem !important;
-    height: 1rem !important;
-  }
+/* Touch-class fallback — mirrors lp-input-zoom.js detection via JS */
+html.lp-touch .matching-component__item-text,
+html.lp-touch .matching-component .matching-component__item-text {
+  font-size: var(--text-sm, 1rem);
+  line-height: 1.35;
+}
 
-  .matching-component .matching-component__match-number {
-    min-width: 0.875rem !important;
-    height: 0.875rem !important;
-    font-size: 0.5rem !important;
-  }
+html.lp-touch .matching-component__column-header {
+  font-size: var(--text-sm, 1rem);
 }

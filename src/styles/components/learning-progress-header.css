@@ -111,7 +111,7 @@
   line-height: 1.2;
 }
 
-@media (min-width: 768px) {
+@media (--lp-from-md) {
   .learning-progress-header {
     padding: var(--lp-space-sm) var(--header-spacing-lg) 0;
   }
@@ -128,17 +128,17 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (--lp-from-lg) {
   .learning-progress-header {
     padding-inline: var(--header-spacing-xl);
   }
 }
 
-@media (max-width: 480px) {
+@media (--lp-mobile-sm-touch) {
   .learning-progress-header__counter {
-    min-width: 2.5rem;
-    padding: 0 0.4375rem;
-    font-size: 0.6875rem;
+    min-width: 2.75rem;
+    padding: 0 0.5rem;
+    font-size: var(--text-xs, 0.875rem);
   }
 }
 

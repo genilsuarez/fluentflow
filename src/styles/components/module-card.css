@@ -395,8 +395,8 @@
   width: 100%;
 }
 
-/* Small mobile: compact square cards (~15% shorter) */
-@media (max-width: 479px) {
+/* Small mobile: compact square cards */
+@media (--lp-mobile-sm-touch-tablet) {
   :root {
     --card-height-mobile: 102px;
   }
@@ -421,21 +421,21 @@
   }
 
   .module-card__title {
-    font-size: 0.75rem;
+    font-size: var(--text-sm, 0.875rem);
   }
 
   .module-card__type {
-    font-size: 0.6rem;
+    font-size: 0.6875rem;
   }
 
   .module-card__level,
   .module-card__time {
-    font-size: 0.6rem;
+    font-size: 0.6875rem;
   }
 }
 
-/* Medium screens: switch to row layout */
-@media (min-width: 480px) and (max-width: 719px) {
+/* Medium screens: row layout */
+@media (--lp-sm-only) {
   .module-card {
     height: auto;
     min-height: 52px;
@@ -474,7 +474,7 @@
 }
 
 /* Tablet: matches --card-height-tablet */
-@media (min-width: 720px) {
+@media (--lp-from-md) {
   .module-card {
     height: auto;
     min-height: var(--card-height-tablet);
@@ -513,7 +513,7 @@
 }
 
 /* Desktop: matches --card-height-desktop */
-@media (min-width: 900px) {
+@media (--lp-from-lg) {
   .module-card {
     height: auto;
     min-height: var(--card-height-desktop);

@@ -322,13 +322,13 @@
   );
 }
 
-@media (min-width: 768px) {
+@media (--lp-from-md) {
   .progression-dashboard__modules--truncated::after {
     height: 96px;
   }
 }
 
-@media (min-width: 1024px) {
+@media (--lp-from-lg) {
   .progression-dashboard__modules--truncated::after {
     height: 112px;
   }
@@ -536,7 +536,7 @@
 }
 
 /* Responsive Design - MODULES GRID */
-@media (min-width: 1024px) {
+@media (--lp-from-lg) {
   .progression-dashboard__modules {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -551,7 +551,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (--lp-from-md) and (--lp-below-lg) {
   .progression-dashboard__modules {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -567,7 +567,7 @@
 }
 
 /* Responsive Design - SMALL DESKTOP */
-@media (max-height: 900px) and (min-width: 768px) {
+@media (max-height: 900px) and (--lp-from-md) {
   .progression-dashboard__units {
     max-height: 55vh;
   }
@@ -577,7 +577,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (--lp-mobile-md) {
   .progression-dashboard__units {
     flex: 1;
     max-height: none;
@@ -720,7 +720,7 @@ html.dark .progression-dashboard__module--locked .progression-dashboard__level-b
 }
 
 /* Ultra-small mobile devices - Prevent double scroll - CONSOLIDATED */
-@media (max-width: 400px) {
+@media (--lp-mobile-sm) {
   .progression-dashboard {
     flex: 1;
     min-height: 0;
@@ -985,7 +985,7 @@ html.dark .progression-dashboard__module--locked .progression-dashboard__level-b
 }
 
 /* Mobile */
-@media (max-width: 767px) {
+@media (--lp-mobile-md) {
   .progression-dashboard--dark-theme .progression-dashboard__module {
     padding: 0.875rem;
     min-height: 44px;

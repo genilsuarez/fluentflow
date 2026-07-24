@@ -182,7 +182,7 @@ html.dark .confirm-modal__btn--cancel:hover {
   color: var(--theme-text-primary, #f9fafb);
 }
 
-@media (max-width: 640px) {
+@media (--lp-mobile-sm) {
   .confirm-modal__actions {
     flex-direction: column-reverse;
   }

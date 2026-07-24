@@ -181,7 +181,7 @@
 }
 
 /* === MOBILE OPTIMIZATIONS === */
-@media (max-width: 768px) {
+@media (--lp-mobile-md) {
   .error-fallback {
     padding: var(--padding-lg, 1.5rem);
   }

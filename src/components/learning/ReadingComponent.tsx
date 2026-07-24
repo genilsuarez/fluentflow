@@ -19,7 +19,6 @@ import { GameControlsExitButton } from '../ui/GameControlsExitButton';
 import { GameControlsResetButton } from '../ui/GameControlsResetButton';
 import { GameControlsNavButton } from '../ui/GameControlsNavButton';
 
-
 interface ReadingComponentProps {
   module: LearningModule;
 }
@@ -100,7 +99,8 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
         correctAnswers: readingSections.length,
         moduleId: module.id,
         learningMode: 'reading',
-        timeSpent: timeSpent});
+        timeSpent: timeSpent,
+      });
 
       returnToMenu({ autoScrollToNext: true });
     }
@@ -229,7 +229,8 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                     <polyline points="12 6 12 12 16 14" />
                   </svg>
                   {t('reading.component.estimatedTime', undefined, {
-                    time: String(readingData.estimatedReadingTime)})}
+                    time: String(readingData.estimatedReadingTime),
+                  })}
                 </span>
               </div>
             )}
@@ -274,7 +275,8 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                     unit:
                       readingData.grammarPoints.length === 1
                         ? t('reading.accessibility.ruleSingular')
-                        : t('reading.accessibility.rulePlural')})}
+                        : t('reading.accessibility.rulePlural'),
+                  })}
                 >
                   <span className="reading-component__summary-section-title">
                     {t('reading.component.grammarPoints')}
@@ -390,7 +392,8 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                     unit:
                       readingData.keyVocabulary.length === 1
                         ? t('reading.accessibility.termSingular')
-                        : t('reading.accessibility.termPlural')})}
+                        : t('reading.accessibility.termPlural'),
+                  })}
                 >
                   <span className="reading-component__summary-section-title">
                     {t('reading.component.keyVocabulary')}

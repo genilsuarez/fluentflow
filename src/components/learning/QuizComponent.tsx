@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { CheckCircle, XCircle, ArrowRight } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
+import { useSwipe } from '../../hooks/useSwipe';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { conditionalShuffle } from '../../utils/randomUtils';
 import { EXERCISE_FEEDBACK_COLLAPSE_MS } from '../../utils/exerciseTransition';
@@ -14,7 +15,6 @@ import '../../styles/components/quiz-component.css';
 import type { LearningModule, QuizData } from '../../types';
 import { GameControlsExitButton } from '../ui/GameControlsExitButton';
 import { GameControlsResetButton } from '../ui/GameControlsResetButton';
-
 
 interface QuizComponentProps {
   module: LearningModule;
@@ -37,10 +37,12 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
     setExerciseResult,
     handleResultContinue,
     resetSession,
-    triggerRestart} = useLearningSession({
+    triggerRestart,
+  } = useLearningSession({
     moduleId: module.id,
     moduleName: module.name,
-    learningMode: 'quiz'});
+    learningMode: 'quiz',
+  });
 
   const { theme } = useSettingsStore();
 
@@ -98,7 +100,8 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
       return {
         ...question,
         options: balanceOptionLengths(processedOptions, correctText),
-        correct: correctText};
+        correct: correctText,
+      };
     });
   }
 
@@ -154,6 +157,12 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
     }
   }, [currentIndex, processedQuestions.length, finishExercise]);
 
+  const handleSwipeNext = useCallback(() => {
+    if (showResult) handleNext();
+  }, [showResult, handleNext]);
+
+  const swipeRef = useSwipe<HTMLDivElement>({ onNext: handleSwipeNext, onPrev: () => {} });
+
   useEffect(() => {
     if (processedQuestions.length === 0) return;
 
@@ -203,7 +212,7 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
   }
 
   return (
-    <div className="quiz-component__container">
+    <div ref={swipeRef} className="quiz-component__container">
       {/* Unified progress header */}
       <LearningProgressHeader
         title={module.name}

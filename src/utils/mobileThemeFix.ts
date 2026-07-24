@@ -15,7 +15,38 @@ export function isMobileDevice(): boolean {
 /** Narrow viewport — layout only, not theme path selection. */
 export function isNarrowViewport(): boolean {
   if (typeof window === 'undefined') return false;
-  return window.innerWidth <= 768;
+  return window.innerWidth <= 767;
+}
+
+/** Touch-primary device — reliable on iPhone Chrome (CriOS) and Android. */
+export function isTouchPrimaryDevice(): boolean {
+  if (typeof window === 'undefined' || !window.matchMedia) return false;
+  return window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+}
+
+/**
+ * Adds `lp-touch` on <html> so CSS can target touch phones even when
+ * width-only breakpoints miss (desktop site mode, odd viewport reporting).
+ */
+export function initializeMobileLayout(): void {
+  if (typeof document === 'undefined') return;
+
+  const apply = () => {
+    const touch = isTouchPrimaryDevice() || isMobileDevice();
+    document.documentElement.classList.toggle('lp-touch', touch);
+  };
+
+  apply();
+
+  if (typeof window !== 'undefined' && window.matchMedia) {
+    const mq = window.matchMedia('(hover: none) and (pointer: coarse)');
+    const onChange = () => apply();
+    try {
+      mq.addEventListener('change', onChange);
+    } catch {
+      mq.addListener(onChange);
+    }
+  }
 }
 
 export function isSafariMobile(): boolean {

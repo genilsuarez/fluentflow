@@ -228,7 +228,7 @@ html.dark .exercise-result__btn--secondary {
 }
 
 /* Mobile — ~15% vertical compaction (pass + fail) */
-@media (max-width: 767px) {
+@media (--lp-mobile-md) {
   .exercise-result {
     min-height: 50vh;
     padding: 0.75rem;

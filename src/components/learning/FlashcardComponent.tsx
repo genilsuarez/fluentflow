@@ -17,7 +17,6 @@ import { GameControlsExitButton } from '../ui/GameControlsExitButton';
 import { GameControlsResetButton } from '../ui/GameControlsResetButton';
 import { GameControlsNavButton } from '../ui/GameControlsNavButton';
 
-
 interface FlashcardComponentProps {
   module: LearningModule;
 }

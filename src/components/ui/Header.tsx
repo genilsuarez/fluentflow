@@ -77,7 +77,6 @@ export const Header: React.FC<HeaderProps> = () => {
   }, []);
   // Determine header layout mode
   const isInGame = currentView !== 'menu';
-  const headerMode = isInGame ? 'learning' : 'menu';
   const lessonTitle = lessonProgress?.title ?? '';
   const progression = useProgression();
   const menuModuleTotal = progression.stats?.totalModules ?? 0;
@@ -139,9 +138,9 @@ export const Header: React.FC<HeaderProps> = () => {
   // };
   return (
     <header
-      className={`header-redesigned header-redesigned--${headerMode}${isInGame ? ' header-redesigned--learning-mode' : ''}${lessonTitle ? ' header-redesigned--has-lesson-title' : ''}`}
+      className={`header-redesigned${isInGame ? ' header-redesigned--learning-mode' : ' header-redesigned--menu'}${lessonTitle ? ' header-redesigned--has-lesson-title' : ''}`}
     >
-      <div className={`header-redesigned__container header-redesigned__container--${headerMode}`}>
+      <div className={`header-redesigned__container header-redesigned__container--${isInGame ? 'learning' : 'menu'}`}>
         {/* Left Section: Back + Menu + Brand */}
         <div className="header-redesigned__left">
           {isInGame ? (
@@ -236,7 +235,7 @@ export const Header: React.FC<HeaderProps> = () => {
         </div>
         {/* Center Section: mobile brand title (menu) or score (desktop / learning) */}
         <div className="header-redesigned__center">
-          {!isInGame && (
+          {!isInGame ? (
             <h1 className="header-redesigned__mobile-title">
               {previousMenuContext === 'list' ? (
                 language === 'es' ? (
@@ -254,11 +253,11 @@ export const Header: React.FC<HeaderProps> = () => {
                 </>
               )}
             </h1>
-          )}
+          ) : null}
           <div className="header-redesigned__score-wrap">
             <ScoreDisplay />
           </div>
-          {showBadge && (
+          {!isInGame && showBadge && (
             <div
               className={`header__offline-badge${isOnline ? ' header__offline-badge--hidden' : ''}`}
               aria-label={t('offline.indicator')}
@@ -268,7 +267,7 @@ export const Header: React.FC<HeaderProps> = () => {
               <span>{t('offline.indicator')}</span>
             </div>
           )}
-          {developmentMode && (
+          {!isInGame && developmentMode && (
             <button
               className="header-redesigned__dev-indicator"
               title={t('common.developmentModeActive')}

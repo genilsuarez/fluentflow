@@ -137,7 +137,7 @@
 }
 
 /* === RESPONSIVE — compact width only, never height === */
-@media (max-width: 519px) {
+@media (--lp-mobile-sm) {
   .lp-header-stats__container {
     padding: 0 12px;
     min-width: 0;
@@ -148,35 +148,13 @@
   }
 
   .lp-header-stats__container--full {
-    min-width: 150px;
-  }
-}
-
-@media (max-width: 360px) {
-  .lp-header-stats__progress-label {
-    display: none;
-  }
-
-  .lp-header-stats__divider {
-    display: none;
-  }
-
-  .lp-header-stats__container--full {
     min-width: 100px;
   }
-}
 
-@media (max-width: 310px) {
-  .lp-header-stats__icon {
+  /* Hide secondary label/divider — keep trophy icon visible */
+  .lp-header-stats__progress-label,
+  .lp-header-stats__divider {
     display: none;
-  }
-
-  .lp-header-stats__container--in-game {
-    min-width: 80px;
-  }
-
-  .lp-header-stats__container--full {
-    min-width: 90px;
   }
 }
 

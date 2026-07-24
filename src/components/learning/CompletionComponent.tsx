@@ -2,8 +2,17 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { Check, X, ArrowRight } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { conditionalShuffle } from '../../utils/randomUtils';
-import { matchesAnswer, isTenseError, isParticleError, isNoArticleAnswer, formatCorrectAnswerForDisplay } from '../../utils/answerUtils';
-import { advanceInputExerciseStep, EXERCISE_RESULT_ENTER_GUARD_MS } from '../../utils/exerciseTransition';
+import {
+  matchesAnswer,
+  isTenseError,
+  isParticleError,
+  isNoArticleAnswer,
+  formatCorrectAnswerForDisplay,
+} from '../../utils/answerUtils';
+import {
+  advanceInputExerciseStep,
+  EXERCISE_RESULT_ENTER_GUARD_MS,
+} from '../../utils/exerciseTransition';
 import '../../styles/components/completion-component.css';
 import '../../styles/components/editable-input.css';
 // BEM classes applied dynamically via .replace(): 'editable-input--correct' 'editable-input--incorrect' 'editable-input--neutral' 'editable-input--disabled'
@@ -17,7 +26,6 @@ import type { EditableInputHandle } from '../ui/EditableInput';
 import type { LearningModule, CompletionData } from '../../types';
 import { GameControlsExitButton } from '../ui/GameControlsExitButton';
 import { GameControlsResetButton } from '../ui/GameControlsResetButton';
-
 
 interface CompletionComponentProps {
   module: LearningModule;
@@ -60,11 +68,7 @@ function allBlanksAnswered(answers: string[], correctParts: string[]): boolean {
   return correctParts.every((correct, index) => isBlankAnswered(answers[index] || '', correct));
 }
 
-function gapPlaceholder(
-  correctForGap: string,
-  sentence: string,
-  showPlaceholder: boolean
-): string {
+function gapPlaceholder(correctForGap: string, sentence: string, showPlaceholder: boolean): string {
   if (!showPlaceholder) return '';
   if (isNoArticleAnswer(correctForGap)) return '—';
   const trimmed = correctForGap.trim();
@@ -101,10 +105,12 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
     setExerciseResult,
     handleResultContinue,
     resetSession,
-    triggerRestart} = useLearningSession({
+    triggerRestart,
+  } = useLearningSession({
     moduleId: module.id,
     moduleName: module.name,
-    learningMode: 'completion'});
+    learningMode: 'completion',
+  });
 
   // Compute exercises once on mount — ref prevents re-shuffling on score updates
   const processedExercisesRef = useRef<CompletionData[] | null>(null);
@@ -137,14 +143,11 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
           ? t('learning.fillBlankNoHint')
           : t('learning.fillBlank');
 
-  const resetAnswersForExercise = useCallback(
-    (exercise?: CompletionData) => {
-      const next = emptyAnswers(countBlanks(exercise?.sentence || ''));
-      answersRef.current = next;
-      setAnswers(next);
-    },
-    []
-  );
+  const resetAnswersForExercise = useCallback((exercise?: CompletionData) => {
+    const next = emptyAnswers(countBlanks(exercise?.sentence || ''));
+    answersRef.current = next;
+    setAnswers(next);
+  }, []);
 
   // Focus input on mount
   useEffect(() => {
@@ -186,7 +189,8 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
         setShowResult,
         ignoreEnterRef,
         focusInput: () => inputRef.current?.focus(),
-        resetAnswer: () => resetAnswersForExercise(nextExercise)});
+        resetAnswer: () => resetAnswersForExercise(nextExercise),
+      });
     } else {
       finishExercise();
     }
@@ -289,14 +293,13 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
           ? Math.max(gapValue.length, correctForGap.length)
           : Math.max(
               gapValue.length,
-              showGapPlaceholders
-                ? placeholderHint.replace(/\./g, '').length || 3
-                : 4
+              showGapPlaceholders ? placeholderHint.replace(/\./g, '').length || 3 : 4
             );
 
         const blankAriaLabel = t('learning.blankLabel', undefined, {
           current: gapIndex + 1,
-          total: blankCount});
+          total: blankCount,
+        });
 
         elements.push(
           <EditableInput
@@ -324,7 +327,8 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
             style={
               {
                 '--dynamic-width': inlineInputWidthCh(widthSource),
-                textTransform: 'lowercase'} as React.CSSProperties
+                textTransform: 'lowercase',
+              } as React.CSSProperties
             }
             autoFocus={!showResult && gapIndex === 0}
             onEnter={() => {

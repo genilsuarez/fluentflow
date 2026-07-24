@@ -215,7 +215,7 @@
 }
 
 /* === MOBILE: hide toast notifications (secondary noise on small screens) === */
-@media (max-width: 767px) {
+@media (--lp-mobile-md) {
   .toast-container {
     display: none !important;
   }
@@ -224,7 +224,7 @@
 /* Responsive Design */
 
 /* Tablet - 640px and up */
-@media (min-width: 640px) {
+@media (--lp-from-sm) {
   .toast-card {
     width: 320px;
     margin: 0 0 8px 0;
@@ -232,7 +232,7 @@
 }
 
 /* Desktop - 1024px and up */
-@media (min-width: 1024px) {
+@media (--lp-from-lg) {
   .toast-card {
     max-width: 380px;
   }
@@ -247,7 +247,7 @@
 }
 
 /* Landscape mobile - adjusted position */
-@media (max-width: 639px) and (orientation: landscape) {
+@media (--lp-mobile-sm) and (orientation: landscape) {
   .toast-card {
     padding: 8px 12px;
   }

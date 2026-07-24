@@ -18,7 +18,6 @@ import type { LearningModule, TransformationData } from '../../types';
 import { GameControlsExitButton } from '../ui/GameControlsExitButton';
 import { GameControlsResetButton } from '../ui/GameControlsResetButton';
 
-
 interface TransformationComponentProps {
   module: LearningModule;
 }
@@ -42,10 +41,12 @@ const TransformationComponent: React.FC<TransformationComponentProps> = ({ modul
     setExerciseResult,
     handleResultContinue,
     resetSession,
-    triggerRestart} = useLearningSession({
+    triggerRestart,
+  } = useLearningSession({
     moduleId: module.id,
     moduleName: module.name,
-    learningMode: 'transformation'});
+    learningMode: 'transformation',
+  });
 
   const processedExercisesRef = useRef<TransformationData[] | null>(null);
   if (processedExercisesRef.current === null) {
@@ -87,7 +88,8 @@ const TransformationComponent: React.FC<TransformationComponentProps> = ({ modul
         setAnswer,
         setShowResult,
         ignoreEnterRef,
-        focusInput: () => inputRef.current?.focus()});
+        focusInput: () => inputRef.current?.focus(),
+      });
     } else {
       finishExercise();
     }

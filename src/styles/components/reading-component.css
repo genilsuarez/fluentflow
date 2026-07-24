@@ -189,7 +189,7 @@
 }
 
 /* Mobile: Single column */
-@media (min-width: 640px) {
+@media (--lp-from-sm) {
   .reading-component__examples-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.625rem;
@@ -560,14 +560,14 @@
 }
 
 /* Tablet and up: Multi-column layout */
-@media (min-width: 640px) {
+@media (--lp-from-sm) {
   .reading-component__vocabulary-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.375rem;
   }
 }
 
-@media (min-width: 1024px) {
+@media (--lp-from-lg) {
   .reading-component__vocabulary-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 0.375rem;
@@ -986,7 +986,7 @@
 /* === RESPONSIVE BREAKPOINTS - Independent, self-sufficient === */
 
 /* === TABLET (768px - 1024px) - Standalone definitions === */
-@media (min-width: 768px) {
+@media (--lp-from-md) {
   /* Update local variables for tablet - compact spacing */
   .reading-component__container {
     --reading-font-size-base: 0.9375rem;
@@ -1146,7 +1146,7 @@
 }
 
 /* === DESKTOP (> 1024px) - Standalone definitions === */
-@media (min-width: 1024px) {
+@media (--lp-from-lg) {
   /* Update local variables for desktop - compact spacing */
   .reading-component__container {
     --reading-font-size-base: 1rem;
@@ -1305,7 +1305,7 @@
 }
 
 /* === MOBILE SMALL (< 768px) - Responsive dimensions === */
-@media (max-width: 767px) {
+@media (--lp-mobile-md) {
   /* Mobile: fill parent flex column so nav bar stays pinned at bottom */
   .reading-component__container {
     max-width: 100%;
@@ -1767,7 +1767,7 @@ html.dark .reading-component__grammar-mistake-item {
 }
 
 /* === ORIENTATION SUPPORT - Mobile landscape === */
-@media (max-width: 767px) and (orientation: landscape) {
+@media (--lp-mobile-md) and (orientation: landscape) {
   .reading-component__content {
     padding: var(--reading-spacing-sm, 0.5rem) var(--reading-spacing-md);
   }

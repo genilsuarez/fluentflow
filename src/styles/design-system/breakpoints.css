@@ -1,0 +1,53 @@
+/**
+ * FluentFlow — Canonical Breakpoint System
+ *
+ * Aligned with Learn Platform LP Header spec (compact ≤640px, full 85px ≥768px).
+ * Use @custom-media tokens below — never raw ad-hoc px in component CSS.
+ *
+ * ┌──────────────────┬──────────────────────────────────────────────────────┐
+ * │ Token            │ Role                                                 │
+ * ├──────────────────┼──────────────────────────────────────────────────────┤
+ * │ --lp-mobile-sm   │ Compact mobile (header 64px, menu, typography)       │
+ * │ --lp-from-sm     │ Tablet-up compact cutoff (min 640px)                 │
+ * │ --lp-mobile-md   │ Mobile-wide (learning shells, game-controls)         │
+ * │ --lp-from-md     │ Tablet layout (min 768px)                            │
+ * │ --lp-below-lg    │ Tablet ceiling (max 1023px)                          │
+ * │ --lp-from-lg     │ Desktop density (min 1024px)                           │
+ * │ --lp-nav-compact │ Nav icon compact (lp-nav-active.css, max 860px)      │
+ * │ --lp-touch       │ Touch-primary supplement (iPhone Chrome, etc.)       │
+ * └──────────────────┴──────────────────────────────────────────────────────┘
+ *
+ * Touch combos: --lp-mobile-sm-touch, --lp-mobile-md-touch
+ *
+ * When to use sm vs md:
+ *   sm — menu, header compact, typography, module cards, score pill
+ *   md — learning view shells, game-controls bar, layout viewport-lock
+ *   Both in one file is OK when sm handles chrome and md handles layout.
+ *
+ * Exceptions (not width tiers): orientation-lock.css (height/orientation),
+ * prefers-* media queries, print.
+ */
+
+:root {
+  --lp-bp-sm: 640px;
+  --lp-bp-md: 768px;
+  --lp-bp-lg: 1024px;
+  --lp-bp-nav: 860px;
+}
+
+/* === CUSTOM MEDIA (CSS Media Queries Level 4) === */
+@custom-media --lp-mobile-sm (max-width: 639px);
+@custom-media --lp-from-sm (min-width: 640px);
+@custom-media --lp-mobile-md (max-width: 767px);
+@custom-media --lp-from-md (min-width: 768px);
+@custom-media --lp-below-lg (max-width: 1023px);
+@custom-media --lp-from-lg (min-width: 1024px);
+@custom-media --lp-nav-compact (max-width: 860px);
+@custom-media --lp-from-nav (min-width: 861px);
+@custom-media --lp-touch ((hover: none) and (pointer: coarse));
+@custom-media --lp-mobile-sm-touch (--lp-mobile-sm), (--lp-touch);
+@custom-media --lp-mobile-md-touch (--lp-mobile-md), (--lp-touch);
+@custom-media --lp-from-sm-to-lg (min-width: 640px) and (max-width: 1023px);
+@custom-media --lp-sm-only (min-width: 640px) and (max-width: 767px);
+@custom-media --lp-mobile-sm-touch-tablet (--lp-mobile-sm), ((hover: none) and (pointer: coarse) and (max-width: 1023px));
+@custom-media --lp-from-modal (min-width: 401px);

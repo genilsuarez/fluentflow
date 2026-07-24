@@ -107,8 +107,10 @@
 /* RESPONSIVE_TYPOGRAPHY - Mobile-first scaling */
 /* Larger base sizes on mobile for better legibility */
 
-/* Mobile: Larger base sizes for touch interfaces */
-@media (max-width: 640px) {
+/* Mobile: Larger base sizes for touch interfaces.
+ * Touch query catches iPhone Chrome and other phones where width-only
+ * breakpoints miss (desktop site mode, odd viewport reporting). */
+@media (--lp-mobile-sm-touch) {
   :root {
     --text-xs: 0.875rem;
     /* 14px - Larger minimum on mobile */
@@ -118,8 +120,13 @@
   }
 }
 
-/* Tablet: Balanced scaling */
-@media (min-width: 641px) and (max-width: 1024px) {
+/* Touch-class fallback — scale tokens when width queries miss (desktop site mode) */
+html.lp-touch {
+  --text-xs: 0.875rem;
+  --text-sm: 1rem;
+  --text-base: 1.125rem;
+}
+@media (--lp-from-sm-to-lg) {
   :root {
     --text-xs: 0.8125rem;
     /* 13px */

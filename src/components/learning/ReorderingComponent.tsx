@@ -11,7 +11,6 @@ import { GameControlsExitButton } from '../ui/GameControlsExitButton';
 import { GameControlsResetButton } from '../ui/GameControlsResetButton';
 import { GameControlsIconButton } from '../ui/GameControlsIconButton';
 
-
 interface ReorderingComponentProps {
   module: LearningModule;
 }
@@ -41,10 +40,12 @@ const ReorderingComponent: React.FC<ReorderingComponentProps> = ({ module }) => 
     setExerciseResult,
     handleResultContinue,
     resetSession,
-    triggerRestart} = useLearningSession({
+    triggerRestart,
+  } = useLearningSession({
     moduleId: module.id,
     moduleName: module.name,
-    learningMode: 'reordering'});
+    learningMode: 'reordering',
+  });
 
   // Compute exercises once on mount to avoid re-shuffling on score updates
   const processedExercisesRef = useRef<ReorderingData[] | null>(null);

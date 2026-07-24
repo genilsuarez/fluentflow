@@ -17,7 +17,6 @@ import type { LearningModule, CompletionData } from '../../types';
 import { GameControlsExitButton } from '../ui/GameControlsExitButton';
 import { GameControlsResetButton } from '../ui/GameControlsResetButton';
 
-
 interface ListenCompleteComponentProps {
   module: LearningModule;
 }
@@ -41,10 +40,12 @@ const ListenCompleteComponent: React.FC<ListenCompleteComponentProps> = ({ modul
     setExerciseResult,
     handleResultContinue,
     resetSession,
-    triggerRestart} = useLearningSession({
+    triggerRestart,
+  } = useLearningSession({
     moduleId: module.id,
     moduleName: module.name,
-    learningMode: 'listen-complete'});
+    learningMode: 'listen-complete',
+  });
 
   const { theme } = useSettingsStore();
   const isDark = theme === 'dark';
@@ -113,7 +114,8 @@ const ListenCompleteComponent: React.FC<ListenCompleteComponentProps> = ({ modul
         setShowResult,
         setIsCorrect,
         onAdvance: stopSpeaking,
-        focusInput: () => inputRef.current?.focus()});
+        focusInput: () => inputRef.current?.focus(),
+      });
     } else {
       finishExercise();
     }
@@ -186,7 +188,8 @@ const ListenCompleteComponent: React.FC<ListenCompleteComponentProps> = ({ modul
               flexDirection: 'column',
               alignItems: 'center',
               gap: '0.5rem',
-              padding: '0.5rem 0'}}
+              padding: '0.5rem 0',
+            }}
           >
             <button
               onClick={() => playAudio()}
@@ -202,7 +205,8 @@ const ListenCompleteComponent: React.FC<ListenCompleteComponentProps> = ({ modul
                 alignItems: 'center',
                 justifyContent: 'center',
                 transition: 'all 0.2s',
-                transform: isPlaying ? 'scale(1.06)' : 'scale(1)'}}
+                transform: isPlaying ? 'scale(1.06)' : 'scale(1)',
+              }}
             >
               <Volume2 size={28} color="var(--theme-primary-blue, #3b82f6)" />
             </button>
@@ -215,7 +219,8 @@ const ListenCompleteComponent: React.FC<ListenCompleteComponentProps> = ({ modul
                 background: 'none',
                 border: 'none',
                 cursor: 'pointer',
-                textDecoration: 'underline'}}
+                textDecoration: 'underline',
+              }}
             >
               🐢 Slower
             </button>
@@ -229,7 +234,8 @@ const ListenCompleteComponent: React.FC<ListenCompleteComponentProps> = ({ modul
             fontWeight: 500,
             color: isDark ? '#e5e7eb' : '#1f2937',
             textAlign: 'center',
-            lineHeight: 1.6}}
+            lineHeight: 1.6,
+          }}
         >
           <ContentRenderer
             content={ContentAdapter.ensureStructured(currentItem.sentence, 'completion')}
@@ -243,7 +249,8 @@ const ListenCompleteComponent: React.FC<ListenCompleteComponentProps> = ({ modul
               fontSize: '0.72rem',
               color: 'var(--theme-text-tertiary)',
               textAlign: 'center',
-              fontStyle: 'italic'}}
+              fontStyle: 'italic',
+            }}
           >
             💡 {currentItem.tip}
           </p>

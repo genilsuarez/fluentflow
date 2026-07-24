@@ -18,7 +18,6 @@ import type { LearningModule, ErrorCorrectionData } from '../../types';
 import { GameControlsExitButton } from '../ui/GameControlsExitButton';
 import { GameControlsResetButton } from '../ui/GameControlsResetButton';
 
-
 interface ErrorCorrectionComponentProps {
   module: LearningModule;
 }
@@ -42,10 +41,12 @@ const ErrorCorrectionComponent: React.FC<ErrorCorrectionComponentProps> = ({ mod
     setExerciseResult,
     handleResultContinue,
     resetSession,
-    triggerRestart} = useLearningSession({
+    triggerRestart,
+  } = useLearningSession({
     moduleId: module.id,
     moduleName: module.name,
-    learningMode: 'error-correction'});
+    learningMode: 'error-correction',
+  });
 
   const processedExercisesRef = useRef<ErrorCorrectionData[] | null>(null);
   if (processedExercisesRef.current === null) {
@@ -92,7 +93,8 @@ const ErrorCorrectionComponent: React.FC<ErrorCorrectionComponentProps> = ({ mod
         setAnswer,
         setShowResult,
         ignoreEnterRef,
-        focusInput: () => inputRef.current?.focus()});
+        focusInput: () => inputRef.current?.focus(),
+      });
     } else {
       finishExercise();
     }

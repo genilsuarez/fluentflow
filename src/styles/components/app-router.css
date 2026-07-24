@@ -6,8 +6,8 @@
   flex-direction: column;
 }
 
-/* All learning component containers on mobile */
-@media (max-width: 639px) {
+/* All learning component containers + error UI on mobile */
+@media (--lp-mobile-sm) {
   .layout-main > .completion-component__container,
   .layout-main > .quiz-component__container,
   .layout-main > .flashcard-component__container,
@@ -24,21 +24,13 @@
     border-right: none;
     border-bottom: none;
     max-width: 100%;
-  }
-
-  /* All learning modules: natural column flow, no forced stretch */
-  .layout-main > .completion-component__container,
-  .layout-main > .quiz-component__container,
-  .layout-main > .flashcard-component__container,
-  .layout-main > .sorting-component,
-  .layout-main > .matching-component,
-  .layout-main > .reading-component__container,
-  .layout-main > .reordering,
-  .layout-main > .transformation__container,
-  .layout-main > .word-formation__container,
-  .layout-main > .error-correction__container {
     display: flex;
     flex-direction: column;
+  }
+
+  /* Hide inline error actions — game-controls bar handles it */
+  .app-router__error-actions {
+    display: none;
   }
 }
 .app-router__loader::before {
@@ -144,23 +136,14 @@
   background-color: var(--primary-blue-dark, #2563eb);
 }
 
-/* === MOBILE RESPONSIVE === */
-
-/* Hide inline error actions on mobile — game-controls bar handles it */
-@media (max-width: 639px) {
-  .app-router__error-actions {
-    display: none;
-  }
-}
-
 /* Hide game-controls bar on desktop — inline buttons are enough */
-@media (min-width: 640px) {
+@media (--lp-from-sm) {
   .app-router__error > .game-controls {
     display: none;
   }
 }
 
-@media (max-width: 767px) {
+@media (--lp-mobile-md) {
   .app-router__error,
   .app-router__no-module,
   .app-router__unknown-view {

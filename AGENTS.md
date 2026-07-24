@@ -20,6 +20,26 @@ Antes de proponer soluciones o crear specs, explorar el código existente.
 - Chrome DevTools MCP para debugging técnico (network, console, performance)
 - Context7 MCP para documentación actualizada de librerías (React, Vite, TanStack Query, Zustand, Zod, etc.)
 
+## Breakpoints (canonical)
+
+Fuente de verdad: `src/styles/design-system/breakpoints.css`
+
+**Usar siempre `@custom-media` tokens en `@media` — nunca raw `639px`/`767px` en componentes.**
+
+| Token | Rol |
+|-------|-----|
+| `--lp-mobile-sm` | Compact mobile (header 64px, menú, tipografía) |
+| `--lp-mobile-md` | Learning shells, game-controls, layout lock |
+| `--lp-from-sm` / `--lp-from-md` / `--lp-from-lg` | Tablet/desktop min-width |
+| `--lp-from-sm-to-lg` | Rango tablet (640–1023px) |
+| `--lp-from-modal` | Modales centrados (min 401px) |
+| `--lp-mobile-sm-touch` / `--lp-mobile-md-touch` | Suplemento touch (iPhone Chrome) |
+| `--lp-nav-compact` | Nav icons (`lp-nav-active.css`) |
+
+CI: `npm run validate:breakpoints` — falla si hay px ad-hoc en `@media`.
+
+Excepciones: `orientation-lock.css` (altura/orientación), `prefers-*`, `print`.
+
 ## Context7 — Documentación de librerías
 
 Usar Context7 cuando necesites documentación actualizada o ejemplos de código de cualquier librería del stack. Evita hallucinations y APIs desactualizadas.

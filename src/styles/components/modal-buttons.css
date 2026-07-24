@@ -140,7 +140,7 @@ html.dark .modal__actions {
 /* Unified disabled style for dark mode */
 
 /* === RESPONSIVE === */
-@media (max-width: 640px) {
+@media (--lp-mobile-sm) {
   .modal__actions {
     flex-direction: column;
     gap: 0.5rem;

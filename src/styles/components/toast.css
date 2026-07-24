@@ -42,7 +42,7 @@
 /* === TOAST ICONS === */
 
 /* === RESPONSIVE === */
-@media (max-width: 767px) {
+@media (--lp-mobile-md) {
   .toast-container {
     display: none !important;
   }

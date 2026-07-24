@@ -661,7 +661,7 @@
 }
 
 /* === Desktop === */
-@media (min-width: 768px) {
+@media (--lp-from-md) {
   .compact-settings {
     padding: 2rem;
   }
@@ -700,7 +700,7 @@
 }
 
 /* === Mobile bottom sheet === */
-@media (max-width: 767px) {
+@media (--lp-mobile-md) {
   .compact-settings {
     align-items: flex-end;
     justify-content: center;

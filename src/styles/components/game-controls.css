@@ -8,10 +8,10 @@
  *   5. Primary action (pill)
  *   6. Next nav — flashcard only (flip hidden on mobile via .game-controls__flashcard-flip)
  *
- * Mobile (≤768px): exit + optional prev + primary — no reset, no secondary icons.
+ * Mobile (≤767px): exit + optional prev + primary — no reset, no secondary icons.
  */
 
-/* Bar sizing — desktop base; mobile tokens scaled in @media (max-width: 768px) */
+/* Bar sizing — desktop base; mobile tokens scaled in @media (--lp-mobile-md) */
 :root {
   --game-controls-btn-size: 2.4375rem;
   --game-controls-bar-padding-y: 0.575rem;
@@ -128,7 +128,7 @@
 }
 
 /* Mobile icon size adjustments for better visibility */
-@media (max-width: 768px) {
+@media (--lp-mobile-md) {
   :root {
     --game-controls-btn-size: 4.119375rem;
     --game-controls-bar-padding-y: 0.97175rem;
@@ -315,7 +315,7 @@
 }
 
 /* === RESPONSIVE DESIGN === */
-@media (min-width: 769px) {
+@media (--lp-from-md) {
   .game-controls {
     gap: 0.625rem;
     padding: 0.625rem;
@@ -339,106 +339,19 @@
   }
 }
 
-/* Tablet 768px fix */
-@media (max-width: 768px) and (min-width: 641px) {
-  .game-controls {
-    gap: var(--game-controls-bar-gap);
-    padding: var(--game-controls-bar-gap);
-    margin: 0.325rem 0;
-    flex-wrap: wrap;
-  }
-
-  .game-controls__primary-btn {
-    min-width: calc(var(--game-controls-btn-size) * 1.45);
-    font-size: var(--game-controls-primary-font-size);
-    padding: 0.325rem 0.75rem;
-    height: var(--game-controls-btn-size);
-    min-height: var(--game-controls-btn-size);
-  }
-
-  .game-controls__nav-btn,
-  .game-controls__icon-btn {
-    width: var(--game-controls-btn-size);
-    height: var(--game-controls-btn-size);
-  }
-}
-
-@media (max-width: 640px) {
-  .game-controls {
-    gap: var(--game-controls-bar-gap);
-    padding: var(--game-controls-bar-gap);
-    flex-wrap: wrap;
-    margin: 0.325rem 0;
-  }
-
-  /* Learning shells pin controls at the bottom — no extra margin that causes page scroll */
+/* === COMPACT MOBILE (≤639px) — font/pin tweaks on top of ≤767px base === */
+@media (--lp-mobile-sm) {
   [class*='-component__container'] > .game-controls,
   .sorting-component > .game-controls,
   .matching-component > .game-controls,
   .reordering > .game-controls {
     margin: 0;
-    margin-top: auto; /* flex shells pin bar to viewport bottom — don't zero this */
+    margin-top: auto;
   }
 
   .game-controls__primary-btn {
     min-width: calc(var(--game-controls-btn-size) * 1.55);
     font-size: var(--game-controls-primary-font-size-sm);
-    padding: 0.325rem 0.75rem;
-    height: var(--game-controls-btn-size);
-    min-height: var(--game-controls-btn-size);
-  }
-
-  .game-controls__nav-btn,
-  .game-controls__icon-btn {
-    width: var(--game-controls-btn-size);
-    height: var(--game-controls-btn-size);
-  }
-}
-
-@media (max-width: 400px) {
-  .game-controls {
-    gap: var(--game-controls-bar-gap);
-    padding: var(--game-controls-bar-gap);
-    margin: 0.325rem 0;
-  }
-
-  .game-controls__primary-btn {
-    min-width: calc(var(--game-controls-btn-size) * 1.65);
-    width: auto;
-    font-size: var(--game-controls-primary-font-size-xs);
-    padding: 0.40625rem 0.75rem;
-    height: var(--game-controls-btn-size);
-    min-height: var(--game-controls-btn-size);
-    text-align: center;
-  }
-
-  .game-controls__nav-btn,
-  .game-controls__icon-btn {
-    width: var(--game-controls-btn-size);
-    height: var(--game-controls-btn-size);
-  }
-}
-
-/* 320px - iPhone SE, Galaxy A10 */
-@media (max-width: 320px) {
-  .game-controls {
-    gap: 0.325rem;
-    padding: 0.325rem;
-  }
-
-  .game-controls__primary-btn {
-    min-width: calc(var(--game-controls-btn-size) * 1.4);
-    width: auto;
-    font-size: var(--game-controls-primary-font-size-sm);
-    padding: 0.325rem 0.65rem;
-    height: var(--game-controls-btn-size);
-    min-height: var(--game-controls-btn-size);
-  }
-
-  .game-controls__nav-btn,
-  .game-controls__icon-btn {
-    width: var(--game-controls-btn-size);
-    height: var(--game-controls-btn-size);
   }
 }
 
@@ -457,7 +370,7 @@ html.dark .game-controls {
   border-color: transparent;
 }
 
-@media (max-width: 768px) {
+@media (--lp-mobile-md) {
   html.dark .game-controls {
     background: var(--lp-surface, #252930);
     border-top-color: var(--lp-border, #353b45);
@@ -487,7 +400,7 @@ html.browser-cursor-embedded {
   --cursor-preview-chrome-bottom: 34px;
 }
 
-@media (max-width: 768px) {
+@media (--lp-mobile-md) {
   html.browser-cursor-embedded .layout-container:not([data-view='menu']) .game-controls {
     position: fixed;
     left: 0;

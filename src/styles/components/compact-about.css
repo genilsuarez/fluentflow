@@ -449,7 +449,7 @@
   }
 }
 
-@media (max-width: 580px) {
+@media (--lp-mobile-sm) {
   .about-dev-actions {
     grid-template-columns: 1fr;
   }

@@ -90,7 +90,7 @@
 }
 
 /* Tablet: 768px - 1024px */
-@media (min-width: 768px) {
+@media (--lp-from-md) {
   .header-redesigned {
     height: var(--header-height-tablet);
     min-height: var(--header-height-tablet);
@@ -113,7 +113,7 @@
 }
 
 /* Desktop: > 1024px */
-@media (min-width: 1024px) {
+@media (--lp-from-lg) {
   .header-redesigned {
     height: var(--header-height-desktop);
     min-height: var(--header-height-desktop);
@@ -229,7 +229,7 @@
 }
 
 /* Desktop button sizes */
-@media (min-width: 1024px) {
+@media (--lp-from-lg) {
   .header-redesigned__menu-btn,
   .header-redesigned__user-btn,
   .header-redesigned__login-btn {
@@ -295,7 +295,7 @@
   pointer-events: none;
 }
 
-@media (max-width: 860px) {
+@media (--lp-nav-compact) {
   .header-redesigned__menu-icon.lp-nav-svg {
     width: var(--lp-navbtn-icon-size-compact);
     height: var(--lp-navbtn-icon-size-compact);
@@ -317,7 +317,7 @@
   stroke: currentColor;
 }
 
-@media (min-width: 1024px) {
+@media (--lp-from-lg) {
   .header-redesigned__user-icon {
     width: var(--icon-size-desktop);
     height: var(--icon-size-desktop);
@@ -515,7 +515,7 @@
 }
 
 /* Hide title on mobile */
-@media (max-width: 767px) {
+@media (--lp-mobile-md) {
   .header-redesigned__title {
     display: none;
   }
@@ -631,27 +631,7 @@
 }
 
 /* Compact logo on mobile */
-@media (max-width: 519px) {
-  .header-redesigned__logo {
-    width: 38px;
-    height: 38px;
-  }
 
-  .header-redesigned__brand {
-    gap: 0;
-  }
-
-  .header-redesigned__left {
-    gap: var(--header-spacing-xs);
-  }
-
-  .header-redesigned__user-btn,
-  .header-redesigned__login-btn {
-    min-width: 44px;
-    min-height: 44px;
-    padding: var(--header-spacing-xs);
-  }
-}
 
 /* === USER SECTION === */
 .header-redesigned__user-section {
@@ -663,7 +643,7 @@
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (--lp-from-md) {
   .header-redesigned__user-info {
     display: block;
   }
@@ -720,7 +700,7 @@
 }
 
 /* Hide login text on mobile */
-@media (max-width: 767px) {
+@media (--lp-mobile-md) {
   .header-redesigned__login-text {
     display: none;
   }
@@ -775,7 +755,7 @@
 }
 
 /* Hide dev indicator on mobile */
-@media (max-width: 767px) {
+@media (--lp-mobile-md) {
   .header-redesigned__dev-indicator {
     display: none;
   }
@@ -812,7 +792,7 @@ html.browser-cursor-embedded .header-side-menu {
 }
 
 /* Mobile: drawer takes most of the screen width */
-@media (max-width: 767px) {
+@media (--lp-mobile-md) {
   .header-side-menu {
     width: min(232px, 86vw);
   }
@@ -887,7 +867,7 @@ html.browser-cursor-embedded .header-side-menu {
 }
 
 /* Sidebar pin is desktop-only (≥1024px) — hide mode toggle on mobile/tablet */
-@media (max-width: 1023px) {
+@media (--lp-below-lg) {
   .header-side-menu__nav-mode-toggle {
     display: none;
   }
@@ -1139,67 +1119,10 @@ html.dark .header-side-menu__item:hover:not(.header-side-menu__item--active) {
 }
 
 /* === MOBILE SAFE AREA === */
-@media (max-width: 500px) {
-  .header-redesigned__container {
-    margin-left: max(0px, env(safe-area-inset-left));
-    margin-right: max(0px, env(safe-area-inset-right));
-  }
 
-  /* Learning bar: full-bleed — safe area handled on header, not container margin */
-  .header-redesigned--learning-mode .header-redesigned__container,
-  .header-redesigned--learning-mode .header-redesigned__container--learning {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .header-redesigned {
-    padding-top: max(0px, env(safe-area-inset-top));
-  }
-
-  .header-redesigned--learning-mode {
-    padding-top: env(safe-area-inset-top, 0px);
-  }
-}
 
 /* === SMALL MOBILE ADJUSTMENTS === */
-@media (max-width: 400px) {
-  .header-side-menu {
-    width: min(232px, 86vw);
-  }
 
-  .header-side-menu__header {
-    padding: 6px 8px 16px;
-  }
-
-  .header-side-menu__content {
-    padding: 10px;
-  }
-
-  .header-side-menu__item {
-    padding: 10px 12px;
-    gap: 10px;
-    min-height: 40px;
-  }
-
-  .header-side-menu__icon {
-    width: 18px;
-    height: 18px;
-  }
-
-  .header-side-menu__title {
-    font-size: 18px;
-  }
-
-  .header-side-menu__subtitle {
-    font-size: 11px;
-  }
-
-  .header-side-menu__text {
-    font-size: 13px;
-  }
-}
 
 /* === OFFLINE BADGE === */
 .header__offline-badge {
@@ -1231,11 +1154,7 @@ html.dark .header-side-menu__item:hover:not(.header-side-menu__item--active) {
 }
 
 /* Hide offline badge on very small screens */
-@media (max-width: 400px) {
-  .header__offline-badge span {
-    display: none;
-  }
-}
+
 
 /* === LEARNING MODE ADJUSTMENTS === */
 .header-redesigned--has-lesson-title .header-redesigned__lesson-title {
@@ -1284,7 +1203,7 @@ html[data-navigation-mode='floating']
   padding-right: max(var(--lp-header-pad-x-compact, 12px), env(safe-area-inset-right, 0px));
 }
 
-@media (min-width: 768px) {
+@media (--lp-from-md) {
   html[data-navigation-mode='floating']
     .header-redesigned--learning-mode
     .header-redesigned__menu-btn {
@@ -1309,21 +1228,21 @@ html[data-navigation-mode='floating']
   }
 }
 
-.header-redesigned--has-lesson-title .header-redesigned__lesson-title {
-  flex: 1;
-  min-width: 0;
-  text-align: left;
-  padding: 0;
-  margin-left: var(--header-spacing-xs);
-}
-
 .header-redesigned__container--learning {
   position: relative;
   padding: 0 var(--header-spacing-md);
   flex-shrink: 0;
 }
 
-@media (min-width: 768px) {
+@media (--lp-from-md) {
+  .header-redesigned--has-lesson-title .header-redesigned__lesson-title {
+    flex: 1;
+    min-width: 0;
+    text-align: left;
+    padding: 0;
+    margin-left: var(--header-spacing-xs);
+  }
+
   .header-redesigned--learning-mode .header-redesigned__container {
     display: block;
     height: var(--header-height-tablet);
@@ -1373,7 +1292,7 @@ html[data-navigation-mode='floating']
   }
 }
 
-@media (min-width: 1024px) {
+@media (--lp-from-lg) {
   .header-redesigned--learning-mode .header-redesigned__container {
     height: var(--header-height-desktop);
     min-height: var(--header-height-desktop);
@@ -1390,7 +1309,7 @@ html[data-navigation-mode='floating']
 }
 
 /* === MOBILE LEARNING MODE — homologado HubFlow/LyricFlow: barra 64px, botones 44px === */
-@media (max-width: 767px) {
+@media (--lp-mobile-md) {
   .header-redesigned--learning-mode {
     display: flex;
     align-items: center;
@@ -1542,18 +1461,15 @@ html[data-navigation-mode='floating']
   }
 
   .header-redesigned--learning-mode .header-redesigned__brand,
+  .header-redesigned--learning-mode .header-redesigned__greeting,
+  .header-redesigned--learning-mode .header-redesigned__title,
+  .header-redesigned--learning-mode .header-redesigned__mobile-title,
   .header-redesigned--learning-mode .header-redesigned__center,
   .header-redesigned--learning-mode .header-redesigned__right {
     display: none;
   }
 
-  @media (max-width: 480px) {
-    .header-redesigned--has-lesson-title .header-redesigned__lesson-title {
-      font-size: 0.9375rem;
-      line-height: var(--lp-header-title-line-height);
-      -webkit-line-clamp: 2;
-    }
-  }
+  
 
   html[data-navigation-mode='floating']
     .header-redesigned--learning-mode
@@ -1602,7 +1518,7 @@ body {
   color: var(--lp-ink);
 }
 
-@media (min-width: 1024px) {
+@media (--lp-from-lg) {
   html[data-navigation-mode='sidebar'] body {
     padding-left: 232px;
   }
@@ -1681,7 +1597,7 @@ body {
   }
 }
 
-@media (max-width: 1023px) {
+@media (--lp-below-lg) {
   body {
     padding-left: 0;
   }
@@ -1702,8 +1618,99 @@ body {
   }
 }
 
-@media (max-width: 400px) {
+
+
+
+/* === MOBILE COMPACT — consolidated @custom-media --lp-mobile-sm === */
+@media (--lp-mobile-sm) {
+.header-redesigned__logo {
+    width: 38px;
+    height: 38px;
+  }
+
+  .header-redesigned__brand {
+    gap: 0;
+  }
+
+  .header-redesigned__left {
+    gap: var(--header-spacing-xs);
+  }
+
+  .header-redesigned__user-btn,
+  .header-redesigned__login-btn {
+    min-width: 44px;
+    min-height: 44px;
+    padding: var(--header-spacing-xs);
+  }
+
+.header-redesigned__container {
+    margin-left: max(0px, env(safe-area-inset-left));
+    margin-right: max(0px, env(safe-area-inset-right));
+  }
+
+  /* Learning bar: full-bleed — safe area handled on header, not container margin */
+  .header-redesigned--learning-mode .header-redesigned__container,
+  .header-redesigned--learning-mode .header-redesigned__container--learning {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .header-redesigned {
+    padding-top: max(0px, env(safe-area-inset-top));
+  }
+
+  .header-redesigned--learning-mode {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+
+.header-side-menu {
+    width: min(232px, 86vw);
+  }
+
+  .header-side-menu__header {
+    padding: 6px 8px 16px;
+  }
+
+  .header-side-menu__content {
+    padding: 10px;
+  }
+
   .header-side-menu__item {
+    padding: 10px 12px;
+    gap: 10px;
+    min-height: 40px;
+  }
+
+  .header-side-menu__icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .header-side-menu__title {
+    font-size: 18px;
+  }
+
+  .header-side-menu__subtitle {
+    font-size: 11px;
+  }
+
+  .header-side-menu__text {
+    font-size: 13px;
+  }
+
+.header__offline-badge span {
+    display: none;
+  }
+
+.header-redesigned--has-lesson-title .header-redesigned__lesson-title {
+      font-size: 0.9375rem;
+      line-height: var(--lp-header-title-line-height);
+      -webkit-line-clamp: 2;
+    }
+
+.header-side-menu__item {
     min-height: 44px;
   }
 }

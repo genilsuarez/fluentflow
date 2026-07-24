@@ -18,7 +18,6 @@ import type { LearningModule, WordFormationData } from '../../types';
 import { GameControlsExitButton } from '../ui/GameControlsExitButton';
 import { GameControlsResetButton } from '../ui/GameControlsResetButton';
 
-
 interface WordFormationComponentProps {
   module: LearningModule;
 }
@@ -50,10 +49,12 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
     setExerciseResult,
     handleResultContinue,
     resetSession,
-    triggerRestart} = useLearningSession({
+    triggerRestart,
+  } = useLearningSession({
     moduleId: module.id,
     moduleName: module.name,
-    learningMode: 'word-formation'});
+    learningMode: 'word-formation',
+  });
 
   const processedExercisesRef = useRef<WordFormationData[] | null>(null);
   if (processedExercisesRef.current === null) {
@@ -95,7 +96,8 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
         setAnswer,
         setShowResult,
         ignoreEnterRef,
-        focusInput: () => inputRef.current?.focus()});
+        focusInput: () => inputRef.current?.focus(),
+      });
     } else {
       finishExercise();
     }

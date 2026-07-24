@@ -73,9 +73,19 @@ async function main() {
     results.push({ name: 'BEM', ok: false });
   }
 
-  // 3. Análisis profundos (solo con --full)
+  // 3. Breakpoint canonical tiers
+  logInfo('Paso 3: Verificando breakpoints canónicos...');
+  try {
+    const ok = await runAnalysisScript('scripts/validation/check-breakpoints.js', 'Breakpoints');
+    results.push({ name: 'Breakpoints', ok });
+  } catch (e) {
+    logError(`Breakpoints: ${e.message}`);
+    results.push({ name: 'Breakpoints', ok: false });
+  }
+
+  // 4. Análisis profundos (solo con --full)
   if (FULL_MODE) {
-    logInfo('Paso 3: Análisis profundos...');
+    logInfo('Paso 4: Análisis profundos...');
 
     const analyses = [
       { script: 'scripts/validation/analyze-unused.js', name: 'Analyze Unused (17 pasadas)' },

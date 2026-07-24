@@ -194,7 +194,7 @@
 }
 
 /* === MOBILE === */
-@media (max-width: 400px) {
+@media (--lp-mobile-sm) {
   .download-manager {
     padding: 0.5rem;
     align-items: flex-start;
@@ -216,7 +216,7 @@
 }
 
 /* === DESKTOP === */
-@media (min-width: 401px) {
+@media (--lp-from-modal) {
   .download-manager {
     align-items: flex-start;
     padding-top: 8vh;

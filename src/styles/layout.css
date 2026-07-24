@@ -31,12 +31,11 @@
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  /* Ensure children can fill available height */
   min-height: 0;
 }
 
-/* Mobile: menu view — cap to viewport, no scroll */
-@media (max-width: 639px) {
+/* Mobile menu: cap to viewport + transparent bg */
+@media (--lp-mobile-sm) {
   .layout-container[data-view='menu'] {
     height: 100dvh;
     max-height: 100dvh;
@@ -45,48 +44,16 @@
 
   .layout-container[data-view='menu'] .layout-main {
     overflow: hidden;
+    background-color: transparent;
   }
 
-  /* Learning views: lock viewport — inner panels scroll, controls stay visible */
-  .layout-container:not([data-view='menu']) {
-    min-height: 0;
-    height: 100dvh;
-    max-height: 100dvh;
-    overflow: hidden;
-  }
-
-  .layout-container:not([data-view='menu']) .layout-main {
-    flex: 1;
-    min-height: 0;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .layout-container:not([data-view='menu']) .layout-main > * {
-    flex: 1;
-    min-height: 0;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-  }
-
-  /* Learning component roots fill the remaining column below fixed nav padding */
-  .layout-container:not([data-view='menu']) .layout-main [class*='-component__container'],
-  .layout-container:not([data-view='menu']) .layout-main .sorting-component,
-  .layout-container:not([data-view='menu']) .layout-main .matching-component,
-  .layout-container:not([data-view='menu']) .layout-main .reordering,
-  .layout-container:not([data-view='menu']) .layout-main .transformation__container,
-  .layout-container:not([data-view='menu']) .layout-main .word-formation__container,
-  .layout-container:not([data-view='menu']) .layout-main .error-correction__container {
-    flex: 1;
-    min-height: 0;
-    overflow: hidden;
+  .layout-container[data-view='menu'] {
+    background-color: transparent;
   }
 }
 
-/* Learning views on mobile — header is in-flow (sticky app bar), no extra top pad */
-@media (max-width: 767px) {
+/* Mobile-wide: learning views lock viewport — inner panels scroll, controls stay visible */
+@media (--lp-mobile-md) {
   .layout-container:not([data-view='menu']) {
     min-height: 0;
     height: 100dvh;
@@ -121,18 +88,13 @@
   .layout-container:not([data-view='menu']) .layout-main [class*='-component__container'],
   .layout-container:not([data-view='menu']) .layout-main .sorting-component,
   .layout-container:not([data-view='menu']) .layout-main .matching-component,
-  .layout-container:not([data-view='menu']) .layout-main .reordering {
+  .layout-container:not([data-view='menu']) .layout-main .reordering,
+  .layout-container:not([data-view='menu']) .layout-main .transformation__container,
+  .layout-container:not([data-view='menu']) .layout-main .word-formation__container,
+  .layout-container:not([data-view='menu']) .layout-main .error-correction__container {
     flex: 1;
     min-height: 0;
     overflow: hidden;
-  }
-}
-
-/* Mobile: menu view — transparent so body bg shows through */
-@media (max-width: 639px) {
-  .layout-container[data-view='menu'],
-  .layout-container[data-view='menu'] .layout-main {
-    background-color: transparent;
   }
 }
 
@@ -156,9 +118,7 @@
   text-transform: uppercase;
 }
 
-/* Footer visible in all views, except on mobile where it's dropped to reduce
-   secondary chrome — matches DeskFlow/HubFlow/LyricFlow's mobile treatment. */
-@media (max-width: 767px) {
+@media (--lp-mobile-md) {
   .app-footer {
     display: none;
   }

@@ -25,7 +25,6 @@ import { GameControlsExitButton } from '../ui/GameControlsExitButton';
 import { GameControlsResetButton } from '../ui/GameControlsResetButton';
 import { GameControlsIconButton } from '../ui/GameControlsIconButton';
 
-
 interface MatchingComponentProps {
   module: LearningModule;
 }
@@ -109,7 +108,8 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
     const initialPairs = (module.data as any[]).map((item: any) => ({
       left: item.left || '',
       right: item.right || '',
-      explanation: item.explanation || ''}));
+      explanation: item.explanation || '',
+    }));
 
     // Store pairs in ref so they're stable across re-renders
     // (select in useModuleData can re-shuffle on each render)
@@ -236,7 +236,8 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
       correctAnswers: correctCount,
       moduleId: module.id,
       learningMode: 'matching',
-      timeSpent});
+      timeSpent,
+    });
     updateUserScore(module.id, finalScore, timeSpent);
 
     setExerciseResultData({
@@ -244,7 +245,8 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
       accuracy,
       correct: correctCount,
       total: pairs.length,
-      moduleName: module.name});
+      moduleName: module.name,
+    });
   };
 
   const showSummaryModal = () => {
@@ -257,7 +259,9 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
       results: pairs.map(pair => ({
         ...pair,
         userAnswer: matches[pair.left] || t('learning.noAnswer'),
-        isCorrect: matches[pair.left] === pair.right}))};
+        isCorrect: matches[pair.left] === pair.right,
+      })),
+    };
     setSelectedTerm(summaryData);
     setShowExplanation(true);
   };
@@ -457,10 +461,7 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
 
         {!showResult ? (
           <>
-            <GameControlsIconButton
-              onClick={resetExercise}
-              title={t('learning.resetExercise')}
-            >
+            <GameControlsIconButton onClick={resetExercise} title={t('learning.resetExercise')}>
               <Eraser className="game-controls__action-icon" />
             </GameControlsIconButton>
 

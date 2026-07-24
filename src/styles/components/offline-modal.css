@@ -121,7 +121,7 @@
 }
 
 /* Hide inline actions on mobile — game-controls bar handles it */
-@media (max-width: 639px) {
+@media (--lp-mobile-sm) {
   .offline-modal__actions {
     display: none;
   }
@@ -133,7 +133,7 @@
 }
 
 /* Hide game-controls bar on desktop — inline buttons are enough */
-@media (min-width: 640px) {
+@media (--lp-from-sm) {
   .offline-modal > .game-controls {
     display: none;
   }

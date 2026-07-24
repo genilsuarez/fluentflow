@@ -1,5 +1,16 @@
 /** Easy-to-type aliases that map to the ∅ (no article) symbol */
-const EMPTY_SET_ALIASES = ['-', '0', 'x', 'none', 'ø', 'nothing', 'no article', 'ninguno', 'vacio', 'vacío'];
+const EMPTY_SET_ALIASES = [
+  '-',
+  '0',
+  'x',
+  'none',
+  'ø',
+  'nothing',
+  'no article',
+  'ninguno',
+  'vacio',
+  'vacío',
+];
 
 export const NO_ARTICLE_SYMBOL = '∅';
 

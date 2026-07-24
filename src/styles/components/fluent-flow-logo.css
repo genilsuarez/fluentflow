@@ -33,7 +33,7 @@
 }
 
 /* === MOBILE RESPONSIVE === */
-@media (max-width: 767px) {
+@media (--lp-mobile-md) {
   .fluent-flow-logo--sm {
     width: 1.5rem;
     height: 1.5rem;

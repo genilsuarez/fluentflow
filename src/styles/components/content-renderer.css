@@ -123,11 +123,16 @@ html.dark .content-renderer--reading .content-renderer__segment--term {
 }
 
 /* === MOBILE RESPONSIVE === */
-@media (max-width: 767px) {
+@media (--lp-mobile-md-touch) {
   /* Increase font size for better mobile readability */
   .content-renderer__segment--code {
-    font-size: 0.8125rem;
+    font-size: 0.875rem;
     padding: 0.1875rem 0.375rem;
+  }
+
+  /* Quiz terms inherit parent size; slight boost for emphasis */
+  .content-renderer--quiz .content-renderer__segment--term {
+    font-size: 1.02em;
   }
 
   /* Ensure touch-friendly spacing */
@@ -136,17 +141,6 @@ html.dark .content-renderer--reading .content-renderer__segment--term {
     min-height: 44px;
     display: inline-flex;
     align-items: center;
-  }
-}
-
-@media (max-width: 419px) {
-  /* Ultra compact for small screens */
-  .content-renderer__segment--code {
-    font-size: 0.75rem;
-  }
-
-  .content-renderer--quiz .content-renderer__segment--term {
-    font-size: 1em;
   }
 }
 
