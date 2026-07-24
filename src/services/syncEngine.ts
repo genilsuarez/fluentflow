@@ -155,10 +155,46 @@ function rebuildUserScoresFromCompletedModules(
 
 let downloaded = false;
 let cloudHydrated = false;
+let activityFetchedThisSession = false;
+
+const ACTIVITY_FETCHED_KEY = 'lp-activity-fetched:fluentflow';
+
+function wasActivityFetched(): boolean {
+  if (activityFetchedThisSession) return true;
+  try {
+    return sessionStorage.getItem(ACTIVITY_FETCHED_KEY) === '1';
+  } catch {
+    return false;
+  }
+}
+
+function markActivityFetched(): void {
+  activityFetchedThisSession = true;
+  try {
+    sessionStorage.setItem(ACTIVITY_FETCHED_KEY, '1');
+  } catch {
+    /* noop */
+  }
+}
+
+function hasLocalActivityLedger(): boolean {
+  try {
+    const parsed = JSON.parse(localStorage.getItem('learnflow:activity:fluentflow:v1') || 'null');
+    return Array.isArray(parsed?.events) && parsed.events.length > 0;
+  } catch {
+    return false;
+  }
+}
 
 function resetDownloadState() {
   downloaded = false;
   cloudHydrated = false;
+  activityFetchedThisSession = false;
+  try {
+    sessionStorage.removeItem(ACTIVITY_FETCHED_KEY);
+  } catch {
+    /* noop */
+  }
   beginStatsDeferral();
 }
 
@@ -246,8 +282,13 @@ async function downloadOnLogin({ force = false } = {}) {
 
   const [remoteProgress, remoteActivity] = await Promise.all([
     fetchProgress().catch(() => null),
-    fetchActivityEvents().catch(() => null),
+    wasActivityFetched() || hasLocalActivityLedger()
+      ? Promise.resolve([])
+      : fetchActivityEvents().catch(() => null),
   ]);
+  if (hasLocalActivityLedger() || (Array.isArray(remoteActivity) && remoteActivity.length > 0)) {
+    markActivityFetched();
+  }
 
   if (shouldAbortCloudHydration() || !(await isAuthenticated().catch(() => false))) {
     getGuestReset()?.clearGuestLocalProgress?.();

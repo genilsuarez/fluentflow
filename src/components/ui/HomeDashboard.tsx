@@ -6,6 +6,7 @@ import { useSettingsStore } from '../../stores/settingsStore';
 import { useTranslation } from '../../utils/i18n';
 import { useProgression } from '../../hooks/useProgression';
 import { useStatsReady } from '../../hooks/useStatsReady';
+import { shouldDeferActivityDisplay } from '../../utils/statsBootstrap';
 import { useStatsRevealAnimation } from '../../hooks/useStatsRevealAnimation';
 import { useAnimatedNumber } from '../../hooks/useAnimatedNumber';
 import { useModuleNavigation } from '../../hooks/useModuleNavigation';
@@ -28,6 +29,7 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
   const { language } = useSettingsStore();
   const { t } = useTranslation(language);
   const statsReady = useStatsReady();
+  const activityReady = statsReady || !shouldDeferActivityDisplay();
   const revealAnimation = useStatsRevealAnimation();
   const shouldAnimate = statsReady && revealAnimation;
   const progression = useProgression();
@@ -36,8 +38,8 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
   const nextRecommended = statsReady ? progression.getNextRecommendedModule() : null;
 
   // Stats data
-  const progressData = statsReady ? getProgressData(7) : [];
-  const weeklyAverage = statsReady ? getWeeklyAverage() : 0;
+  const progressData = activityReady ? getProgressData(7) : [];
+  const weeklyAverage = activityReady ? getWeeklyAverage() : 0;
   const totalSessions = progressData.reduce((sum, day) => sum + day.sessionsCount, 0);
   const totalTimeSpent = progressData.reduce((sum, day) => sum + day.timeSpent, 0);
   const totalScore = statsReady ? getTotalScore() : 0;
@@ -188,8 +190,8 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
           onClick={handleProgressClick}
           aria-label={
             hasProgress
-              ? `${t('dashboard.yourProgress', 'Your progress')}: ${animatedPct}%, ${animatedCompleted} ${t('common.of', 'of')} ${displayStats.totalModules} ${t('common.modules', 'modules')}, ${progressMeta}`
-              : `${t('dashboard.yourProgress', 'Your progress')}: 0 ${t('common.of', 'of')} ${displayStats.totalModules} ${t('common.modules', 'modules')}. ${progressMeta}`
+              ? `${t('dashboard.yourProgress', 'Your progress')}: ${animatedPct}%, ${animatedCompleted} ${t('common.of', 'of')} ${displayStats.totalModules} ${t('common.exercise', 'ejercicio')}, ${progressMeta}`
+              : `${t('dashboard.yourProgress', 'Your progress')}: 0 ${t('common.of', 'of')} ${displayStats.totalModules} ${t('common.exercise', 'ejercicio')}. ${progressMeta}`
           }
         >
           <div
@@ -211,7 +213,7 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
                 <span className="progress-snapshot__stat">
                   {animatedCompleted}/{displayStats.totalModules}
                 </span>
-                <span className="progress-snapshot__unit"> {t('common.modules', 'modules')}</span>
+                <span className="progress-snapshot__unit"> {t('common.exercise', 'ejercicio')}</span>
               </span>
             </span>
             <span className="progress-snapshot__line progress-snapshot__line--meta">

@@ -272,7 +272,7 @@
 
 .home-dash .progress-snapshot__stat-wrap {
   display: inline-flex;
-  align-items: center;
+  align-items: baseline;
   gap: 0.15rem;
   min-width: 0;
   white-space: nowrap;
@@ -412,17 +412,18 @@
   }
 
   .home-dash .resumen-hero .progress-snapshot {
-    grid-template-columns: 40px 1fr auto;
-    grid-template-rows: 1fr;
+    grid-template-columns: 40px 1fr auto auto;
+    grid-template-rows: auto auto;
     align-items: center;
     gap: 0 10px;
+    row-gap: 2px;
     min-height: 52px;
     padding: 8px 12px 8px 14px;
   }
 
   .home-dash .resumen-hero .progress-snapshot__visual {
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 1 / -1;
     align-self: center;
     width: 40px;
     height: 40px;
@@ -438,29 +439,33 @@
   }
 
   .home-dash .resumen-hero .progress-snapshot__copy {
-    grid-column: 2;
-    grid-row: 1;
-    align-self: center;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 2px;
-    justify-content: center;
-    min-height: 40px;
+    display: contents;
   }
 
   .home-dash .resumen-hero .progress-snapshot__line--primary {
-    font-size: inherit;
-    align-items: center;
-  }
-
-  .home-dash .resumen-hero .progress-snapshot__line--meta {
-    font-size: 0.6875rem;
-    color: var(--lp-muted);
+    display: contents;
   }
 
   .home-dash .resumen-hero .progress-snapshot__title {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: end;
     font-size: 0.6rem;
     letter-spacing: 0.08em;
+  }
+
+  .home-dash .resumen-hero .progress-snapshot__stat-wrap {
+    grid-column: 3;
+    grid-row: 1 / -1;
+    align-self: center;
+  }
+
+  .home-dash .resumen-hero .progress-snapshot__line--meta {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: start;
+    font-size: 0.6875rem;
+    color: var(--lp-muted);
   }
 
   .home-dash .resumen-hero .progress-snapshot__stat {
@@ -477,8 +482,8 @@
 
   .home-dash .resumen-hero .progress-snapshot__chev {
     display: block;
-    grid-column: 3;
-    grid-row: 1;
+    grid-column: 4;
+    grid-row: 1 / -1;
     align-self: center;
     font-size: 1.125rem;
     color: color-mix(in srgb, var(--lp-muted) 85%, transparent);

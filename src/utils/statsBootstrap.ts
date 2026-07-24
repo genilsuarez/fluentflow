@@ -45,6 +45,39 @@ export function shouldDeferStatsDisplay(): boolean {
   return !statsDisplayReady;
 }
 
+function readActivityDoc(): { events?: unknown[] } | null {
+  if (typeof localStorage === 'undefined') return null;
+  try {
+    const parsed = JSON.parse(localStorage.getItem('learnflow:activity:fluentflow:v1') || 'null');
+    return parsed && typeof parsed === 'object' ? parsed : null;
+  } catch {
+    return null;
+  }
+}
+
+function readProgressHistoryLength(): number {
+  if (typeof localStorage === 'undefined') return 0;
+  try {
+    const parsed = JSON.parse(localStorage.getItem('progress-storage') || 'null');
+    const history = parsed?.state?.progressHistory;
+    return Array.isArray(history) ? history.length : 0;
+  } catch {
+    return 0;
+  }
+}
+
+/** True when recent-activity data already lives in localStorage. */
+export function hasLocalActivityLedger(): boolean {
+  const events = readActivityDoc()?.events;
+  if (Array.isArray(events) && events.length > 0) return true;
+  return readProgressHistoryLength() > 0;
+}
+
+/** Defer recent-activity UI only until the first cloud fetch (if no local cache). */
+export function shouldDeferActivityDisplay(): boolean {
+  return shouldDeferStatsDisplay() && !hasLocalActivityLedger();
+}
+
 export function consumeStatsRevealAnimation(): boolean {
   const animate = statsRevealPending;
   statsRevealPending = false;

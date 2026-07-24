@@ -6,7 +6,7 @@
  *   <script src="lp-login.js"></script>
  *   Then call: lpLogin.open()  / lpLogin.getUser() / lpLogin.onUpdate(callback)
  */
-
+/* eslint-disable no-var */
 var lpLogin = (function () {
   'use strict';
 
