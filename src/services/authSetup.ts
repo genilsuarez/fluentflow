@@ -99,9 +99,21 @@ async function processAuthSession(
   }
 
   authHandlerInFlight = (async () => {
-    if (!getLpGuestReset()?.hasLocalSupabaseIdentity?.()) {
-      const profile = await fetchProfile();
+    const profile = await fetchProfile();
+    const hasLocal = !!getLpGuestReset()?.hasLocalSupabaseIdentity?.();
+    if (!hasLocal) {
+      // First cloud identity on this device.
       syncUserFromSupabase(session.user, profile);
+    } else if (profile) {
+      // Already logged in — refresh name/email from cloud (other browser edits).
+      const current = getLpLogin()?.getUser?.() ?? useUserStore.getState().user;
+      if (current?.isSupabaseUser && current.id === session.user.id) {
+        const fallbackName = (session.user.email || '').split('@')[0] || 'User';
+        const cloudName = profile.name || fallbackName;
+        if (current.name !== cloudName || current.email !== (session.user.email || undefined)) {
+          syncUserFromSupabase(session.user, profile);
+        }
+      }
     }
     await handleAuthenticatedSession(event);
     lastHandledUserId = session.user.id;

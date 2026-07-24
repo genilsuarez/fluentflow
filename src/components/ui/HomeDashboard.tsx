@@ -9,7 +9,12 @@ import { useStatsReady } from '../../hooks/useStatsReady';
 import { useStatsRevealAnimation } from '../../hooks/useStatsRevealAnimation';
 import { useAnimatedNumber } from '../../hooks/useAnimatedNumber';
 import { useModuleNavigation } from '../../hooks/useModuleNavigation';
-import { MODE_I18N_KEYS, splitModuleDisplayName, getLevelColor, getModeIcon } from '../../utils/progressionDisplay';
+import {
+  MODE_I18N_KEYS,
+  splitModuleDisplayName,
+  getLevelColor,
+  getModeIcon,
+} from '../../utils/progressionDisplay';
 import '../../styles/components/home-dashboard.css';
 import '../../styles/components/resumen-hero.css';
 
@@ -159,9 +164,7 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
               {heroIcon}
             </span>
             <span className="hero-card__body">
-              <span className="hero-card__context">
-                {t('dashboard.nextStep', 'Next step')}
-              </span>
+              <span className="hero-card__context">{t('dashboard.nextStep', 'Next step')}</span>
               <span className="hero-card__title" id="home-dash-continue-title">
                 {nextModuleDisplay
                   ? nextModuleDisplay.title
@@ -208,10 +211,7 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
                 <span className="progress-snapshot__stat">
                   {animatedCompleted}/{displayStats.totalModules}
                 </span>
-                <span className="progress-snapshot__unit">
-                  {' '}
-                  {t('common.modules', 'modules')}
-                </span>
+                <span className="progress-snapshot__unit"> {t('common.modules', 'modules')}</span>
               </span>
             </span>
             <span className="progress-snapshot__line progress-snapshot__line--meta">
