@@ -187,4 +187,6 @@ body:has(.my-progress) {
   border-radius: var(--lp-radius-md);
   text-decoration: none;
 }
-.skip-link:focus { left: 16px; }
+.skip-link:focus {
+  left: 16px;
+}
