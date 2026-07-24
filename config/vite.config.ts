@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { writeFileSync, readdirSync } from 'fs';
+// @ts-expect-error — untyped local .mjs plugin
 import { gatewayRedirectPlugin } from '../../scripts/vite-gateway-redirect.mjs';
 
 const __filename = fileURLToPath(import.meta.url);

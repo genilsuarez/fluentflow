@@ -10,7 +10,7 @@ import { useMenuNavigation } from '../../hooks/useMenuNavigation';
 import { useTranslation } from '../../utils/i18n';
 import { useEscapeKey } from '../../hooks/useEscapeKey';
 import { useOfflineStatus } from '../../hooks/useOfflineStatus';
-import { portalHref } from '../../utils/platformUrls';
+import { portalHref, isLocalPlatformHost } from '../../utils/platformUrls';
 // import { toast } from '../../stores/toastStore';
 // Lazy-loaded modals — only loaded when user opens them
 const CompactAdvancedSettings = React.lazy(() =>
