@@ -169,8 +169,9 @@ export async function syncProgress(
   }
 
   const message = rpcError.message || '';
-  const rpcMissing =
-    /could not find the function|function .* does not exist|PGRST202|404/i.test(message);
+  const rpcMissing = /could not find the function|function .* does not exist|PGRST202|404/i.test(
+    message
+  );
   if (!rpcMissing) return { synced: false, reason: message };
 
   const { error } = await supabase

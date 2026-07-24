@@ -15,6 +15,27 @@ export const MODE_I18N_KEYS: Record<string, string> = {
   'error-correction': 'learning.errorCorrectionMode',
 };
 
+/** Emoji slot for resumen hero (homologated with HubFlow hero-card__icon) */
+export const MODE_ICONS: Record<string, string> = {
+  flashcard: '🃏',
+  quiz: '❓',
+  reading: '📖',
+  matching: '🔗',
+  sorting: '📋',
+  completion: '✍️',
+  reordering: '🔀',
+  transformation: '🔄',
+  'word-formation': '📝',
+  'error-correction': '✏️',
+  'listening-quiz': '🎧',
+  dictation: '🎙️',
+  'listen-complete': '🔊',
+};
+
+export function getModeIcon(mode: string): string {
+  return MODE_ICONS[mode] || '📚';
+}
+
 export const getLevelColor = (level: string): string => {
   const colors = {
     a1: '#10b981', // green

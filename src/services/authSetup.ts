@@ -89,11 +89,7 @@ async function processAuthSession(
     (event === 'INITIAL_SESSION' && isOAuthReturnUrl()) ||
     !!guestReset?.shouldForceCloudDownload?.();
 
-  if (
-    event === 'INITIAL_SESSION' &&
-    !forceDownload &&
-    lastHandledUserId === session.user.id
-  ) {
+  if (event === 'INITIAL_SESSION' && !forceDownload && lastHandledUserId === session.user.id) {
     cleanAuthParamsFromUrl();
     return;
   }

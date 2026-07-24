@@ -80,8 +80,9 @@ export const publishLearnFlowIntegration = (
   const moduleById = new Map(modules.map(module => [module.id, module]));
   const wipeExisting =
     typeof window !== 'undefined' &&
-    !!(window as Window & { lpGuestReset?: { isExplicitLogout?: () => boolean } }).lpGuestReset
-      ?.isExplicitLogout?.();
+    !!(
+      window as Window & { lpGuestReset?: { isExplicitLogout?: () => boolean } }
+    ).lpGuestReset?.isExplicitLogout?.();
 
   let existingContent: Record<
     string,
@@ -128,9 +129,7 @@ export const publishLearnFlowIntegration = (
           title: module.name,
           contentType: 'module',
           cefrLevel: getPrimaryLevel(module).toUpperCase(),
-          progressPct: completed
-            ? 100
-            : Math.max(existing?.progressPct ?? 0, completion ? 100 : 0),
+          progressPct: completed ? 100 : Math.max(existing?.progressPct ?? 0, completion ? 100 : 0),
           completed,
           completedAt: completed ? completedAt : null,
           bestScorePct: completed || bestScore > 0 ? bestScore : null,

@@ -9,8 +9,9 @@ import { useStatsReady } from '../../hooks/useStatsReady';
 import { useStatsRevealAnimation } from '../../hooks/useStatsRevealAnimation';
 import { useAnimatedNumber } from '../../hooks/useAnimatedNumber';
 import { useModuleNavigation } from '../../hooks/useModuleNavigation';
-import { MODE_I18N_KEYS, splitModuleDisplayName } from '../../utils/progressionDisplay';
+import { MODE_I18N_KEYS, splitModuleDisplayName, getLevelColor, getModeIcon } from '../../utils/progressionDisplay';
 import '../../styles/components/home-dashboard.css';
+import '../../styles/components/resumen-hero.css';
 
 interface HomeDashboardProps {
   onViewModules?: () => void;
@@ -103,11 +104,24 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
     return { title, meta };
   }, [nextRecommended, nextLevel, nextModeLabel]);
 
-  const progressSummary = useMemo(
-    () =>
-      `${animatedCompleted} ${t('common.of', 'of')} ${displayStats.totalModules} ${t('common.modules', 'exercises')}`,
-    [animatedCompleted, displayStats.totalModules, t]
-  );
+  const heroSpine = useMemo(() => {
+    if (!nextRecommended) return 'var(--lp-accent)';
+    const level = Array.isArray(nextRecommended.level)
+      ? nextRecommended.level[0]
+      : nextRecommended.level;
+    return getLevelColor(level);
+  }, [nextRecommended]);
+
+  const heroIcon = nextRecommended ? getModeIcon(nextRecommended.learningMode) : '🚀';
+
+  const hasProgress = statsReady && displayStats.completedModules > 0;
+  const progressMeta = currentUnitInfo
+    ? `${currentUnitInfo.code} · ${currentUnitInfo.name}`
+    : t('dashboard.pickModule', 'Pick a module and begin your first session.');
+
+  const handleProgressClick = useCallback(() => {
+    if (onViewModules) onViewModules();
+  }, [onViewModules]);
 
   // Enter key → navigate to current lesson
   useEffect(() => {
@@ -125,33 +139,58 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
 
   return (
     <div className="home-dash" data-lp-home>
-      {/* Hero — LearnFlow resumen layout: continue banner + context cards */}
-      <div className="home-dash__hero">
-        <section className="home-dash__continue-banner" aria-labelledby="home-dash-continue-title">
-          <div className="home-dash__continue-copy">
-            <span className="home-dash__kicker">{t('dashboard.nextStep', 'Next step')}</span>
-            <h2 id="home-dash-continue-title" className="home-dash__continue-title">
-              {nextModuleDisplay
-                ? nextModuleDisplay.title
-                : t('dashboard.startLearning', 'Start learning')}
-            </h2>
-            <p className="home-dash__continue-meta">
-              {nextModuleDisplay
-                ? nextModuleDisplay.meta
-                : t('dashboard.pickModule', 'Pick a module and begin your first session.')}
-            </p>
-          </div>
-          <button type="button" className="home-dash__continue-btn" onClick={handleContinue}>
-            {t('common.continue', 'Continue')} <span aria-hidden="true">→</span>
+      {/* Hero — homologated with HubFlow resumen-hero */}
+      <div className="home-dash__hero resumen-hero">
+        <div
+          className={`hero-card${!nextRecommended ? ' hero-card--welcome' : ''}`}
+          style={{ '--hero-spine': heroSpine } as React.CSSProperties}
+        >
+          <button
+            type="button"
+            className="hero-card__launch"
+            onClick={handleContinue}
+            aria-label={
+              nextModuleDisplay
+                ? `${t('common.continue', 'Continue')}: ${nextModuleDisplay.title}`
+                : t('dashboard.startLearning', 'Start learning')
+            }
+          >
+            <span className="hero-card__icon" aria-hidden="true">
+              {heroIcon}
+            </span>
+            <span className="hero-card__body">
+              <span className="hero-card__context">
+                {t('dashboard.nextStep', 'Next step')}
+              </span>
+              <span className="hero-card__title" id="home-dash-continue-title">
+                {nextModuleDisplay
+                  ? nextModuleDisplay.title
+                  : t('dashboard.startLearning', 'Start learning')}
+              </span>
+              <span className="hero-card__meta">
+                {nextModuleDisplay
+                  ? nextModuleDisplay.meta
+                  : t('dashboard.pickModule', 'Pick a module and begin your first session.')}
+              </span>
+            </span>
+            <span className="hero-card__chev" aria-hidden="true">
+              ›
+            </span>
           </button>
-        </section>
+        </div>
 
-        <section
-          className="home-dash__context-card home-dash__context-card--summary"
-          aria-label={t('dashboard.yourProgress', 'Your progress')}
+        <button
+          type="button"
+          className={`progress-snapshot${hasProgress ? '' : ' progress-snapshot--empty'}`}
+          onClick={handleProgressClick}
+          aria-label={
+            hasProgress
+              ? `${t('dashboard.yourProgress', 'Your progress')}: ${animatedPct}%, ${animatedCompleted} ${t('common.of', 'of')} ${displayStats.totalModules} ${t('common.modules', 'modules')}, ${progressMeta}`
+              : `${t('dashboard.yourProgress', 'Your progress')}: 0 ${t('common.of', 'of')} ${displayStats.totalModules} ${t('common.modules', 'modules')}. ${progressMeta}`
+          }
         >
           <div
-            className="home-dash__context-visual"
+            className="progress-snapshot__visual"
             style={{ '--progress': animatedPct } as React.CSSProperties}
             role="img"
             aria-hidden="true"
@@ -160,31 +199,32 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
               <strong>{animatedPct}%</strong>
             </div>
           </div>
-          <p className="home-dash__context-line home-dash__context-line--primary">
-            <span className="home-dash__context-title">
-              {t('dashboard.yourProgress', 'Your progress')}
+          <span className="progress-snapshot__copy">
+            <span className="progress-snapshot__line progress-snapshot__line--primary">
+              <span className="progress-snapshot__title">
+                {t('dashboard.yourProgress', 'Your progress')}
+              </span>
+              <span className="progress-snapshot__stat-wrap">
+                <span className="progress-snapshot__stat">
+                  {animatedCompleted}/{displayStats.totalModules}
+                </span>
+                <span className="progress-snapshot__unit">
+                  {' '}
+                  {t('common.modules', 'modules')}
+                </span>
+              </span>
             </span>
-            <span className="home-dash__context-sep" aria-hidden="true">
-              ·
+            <span className="progress-snapshot__line progress-snapshot__line--meta">
+              {progressMeta}
             </span>
-            <span className="home-dash__context-stat">{progressSummary}</span>
-          </p>
-          {currentUnitInfo && currentUnitStat && (
-            <p className="home-dash__context-line home-dash__context-line--meta">
-              <span className="home-dash__level-mark">{currentUnitInfo.code}</span>
-              <span className="home-dash__context-sep" aria-hidden="true">
-                ·
-              </span>
-              <span>{currentUnitInfo.name}</span>
-              <span className="home-dash__context-sep" aria-hidden="true">
-                ·
-              </span>
-              <span className="home-dash__context-stat">
-                {currentUnitStat.completed}/{currentUnitStat.total}
-              </span>
-            </p>
-          )}
-        </section>
+          </span>
+          <span className="progress-snapshot__link" aria-hidden="true">
+            {t('dashboard.viewProgress', 'View progress')} →
+          </span>
+          <span className="progress-snapshot__chev" aria-hidden="true">
+            ›
+          </span>
+        </button>
       </div>
 
       {/* Stats Cards */}

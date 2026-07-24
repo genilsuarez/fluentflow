@@ -90,7 +90,19 @@ export const Header: React.FC<HeaderProps> = () => {
     const nextOpen = !showSideMenu;
     setShowSideMenu(nextOpen);
     if (nextOpen) {
-      const lpLogin = (window as Window & { lpLogin?: { getUser?: () => { id: string; name: string; email?: string; isSupabaseUser?: boolean } | null; refreshNavLabels?: () => void } }).lpLogin;
+      const lpLogin = (
+        window as Window & {
+          lpLogin?: {
+            getUser?: () => {
+              id: string;
+              name: string;
+              email?: string;
+              isSupabaseUser?: boolean;
+            } | null;
+            refreshNavLabels?: () => void;
+          };
+        }
+      ).lpLogin;
       lpLogin?.refreshNavLabels?.();
       const shared = lpLogin?.getUser?.();
       if (shared) {
