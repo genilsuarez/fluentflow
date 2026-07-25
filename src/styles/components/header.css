@@ -1171,6 +1171,13 @@ html.dark .header-side-menu__item:hover:not(.header-side-menu__item--active) {
   gap: var(--header-spacing-sm);
   flex: 1;
   min-width: 0;
+  position: relative;
+  z-index: 2;
+}
+
+/* Mobile-first: secondary header is [←] title [☰] only — score pill is tablet+ */
+.header-redesigned--learning-mode .header-redesigned__center {
+  display: none;
 }
 
 /* Learning mode: hamburger siempre en la barra (nunca launcher flotante) */

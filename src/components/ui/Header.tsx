@@ -38,6 +38,7 @@ export const Header: React.FC<HeaderProps> = () => {
   const currentView = useAppStore(state => state.currentView);
   const previousMenuContext = useAppStore(state => state.previousMenuContext);
   const lessonProgress = useLearningHeaderStore(state => state.progress);
+  const isInGame = currentView !== 'menu';
   const { developmentMode, language, offlineEnabled, theme, setTheme } = useSettingsStore();
   const user = useUserStore(state => state.user);
   const { returnToMenu } = useMenuNavigation();
@@ -50,6 +51,7 @@ export const Header: React.FC<HeaderProps> = () => {
   const [showMyProgress, setShowMyProgress] = useState(false);
   const [showMyProgressTab, setShowMyProgressTab] = useState<'dashboard' | 'path'>('dashboard');
   const [showBadge, setShowBadge] = useState(false);
+  const [showLearningScoreInHeader, setShowLearningScoreInHeader] = useState(false);
   // Offline badge: show immediately when offline+enabled, hide with 3s delay on reconnect
   useEffect(() => {
     const shouldShow = !isOnline && offlineEnabled;
@@ -64,6 +66,17 @@ export const Header: React.FC<HeaderProps> = () => {
     }
   }, [isOnline, offlineEnabled, showBadge]);
   useEffect(() => {
+    if (!isInGame) {
+      setShowLearningScoreInHeader(false);
+      return;
+    }
+    const mq = window.matchMedia('(min-width: 768px)');
+    const sync = () => setShowLearningScoreInHeader(mq.matches);
+    sync();
+    mq.addEventListener('change', sync);
+    return () => mq.removeEventListener('change', sync);
+  }, [isInGame]);
+  useEffect(() => {
     document.documentElement.dataset.navigationMode = navigationMode;
   }, [navigationMode]);
   useEffect(() => {
@@ -75,8 +88,6 @@ export const Header: React.FC<HeaderProps> = () => {
     window.addEventListener('storage', syncNavigationMode);
     return () => window.removeEventListener('storage', syncNavigationMode);
   }, []);
-  // Determine header layout mode
-  const isInGame = currentView !== 'menu';
   const lessonTitle = lessonProgress?.title ?? '';
   const progression = useProgression();
   const menuModuleTotal = progression.stats?.totalModules ?? 0;
@@ -233,31 +244,38 @@ export const Header: React.FC<HeaderProps> = () => {
             </>
           )}
         </div>
-        {/* Center Section: mobile brand title (menu) or score (desktop / learning) */}
+        {/* Center: menu brand/score, or learning score pill (tablet+ only) */}
+        {isInGame ? (
+          showLearningScoreInHeader ? (
+            <div className="header-redesigned__center">
+              <div className="header-redesigned__score-wrap">
+                <ScoreDisplay />
+              </div>
+            </div>
+          ) : null
+        ) : (
         <div className="header-redesigned__center">
-          {!isInGame ? (
-            <h1 className="header-redesigned__mobile-title">
-              {previousMenuContext === 'list' ? (
-                language === 'es' ? (
-                  <>
-                    Ejercicios <em>guiados</em>
-                  </>
-                ) : (
-                  <>
-                    Guided <em>exercises</em>
-                  </>
-                )
+          <h1 className="header-redesigned__mobile-title">
+            {previousMenuContext === 'list' ? (
+              language === 'es' ? (
+                <>
+                  Ejercicios <em>guiados</em>
+                </>
               ) : (
                 <>
-                  Fluent<em>Flow</em>
+                  Guided <em>exercises</em>
                 </>
-              )}
-            </h1>
-          ) : null}
+              )
+            ) : (
+              <>
+                Fluent<em>Flow</em>
+              </>
+            )}
+          </h1>
           <div className="header-redesigned__score-wrap">
             <ScoreDisplay />
           </div>
-          {!isInGame && showBadge && (
+          {showBadge && (
             <div
               className={`header__offline-badge${isOnline ? ' header__offline-badge--hidden' : ''}`}
               aria-label={t('offline.indicator')}
@@ -267,7 +285,7 @@ export const Header: React.FC<HeaderProps> = () => {
               <span>{t('offline.indicator')}</span>
             </div>
           )}
-          {!isInGame && developmentMode && (
+          {developmentMode && (
             <button
               className="header-redesigned__dev-indicator"
               title={t('common.developmentModeActive')}
@@ -279,6 +297,7 @@ export const Header: React.FC<HeaderProps> = () => {
             </button>
           )}
         </div>
+        )}
         {/* Right Section: Primary Actions Only */}
         <div className="header-redesigned__right">
           {/* User Profile Section moved to hamburger menu */}
