@@ -1180,6 +1180,95 @@ html.dark .header-side-menu__item:hover:not(.header-side-menu__item--active) {
   display: none;
 }
 
+/* Mobile-first secondary toolbar — grid works without @custom-media postcss */
+.header-redesigned--learning-mode.header-redesigned--has-lesson-title
+  .header-redesigned__learning-toolbar {
+  display: grid;
+  grid-template-columns: var(--lp-navbtn-size, 44px) minmax(0, 1fr) var(--lp-navbtn-size, 44px);
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  gap: 0;
+  box-sizing: border-box;
+}
+
+.header-redesigned--learning-mode.header-redesigned--has-lesson-title
+  .header-redesigned__lesson-title {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
+  justify-self: stretch;
+  margin: 0;
+  padding: 0 2px;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 1rem;
+  line-height: var(--lp-header-title-line-height);
+}
+
+.header-redesigned--learning-mode.header-redesigned--has-lesson-title
+  .header-redesigned__back-btn {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: start;
+  align-self: center;
+}
+
+.header-redesigned--learning-mode.header-redesigned--has-lesson-title
+  .header-redesigned__menu-btn {
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: end;
+  align-self: center;
+}
+
+.header-redesigned--learning-mode
+  .header-redesigned__toolbar-btn.header-redesigned__back-btn,
+.header-redesigned--learning-mode
+  .header-redesigned__toolbar-btn.header-redesigned__menu-btn {
+  width: var(--lp-navbtn-size, 44px);
+  height: var(--lp-navbtn-size, 44px);
+  min-width: var(--lp-navbtn-size, 44px);
+  min-height: var(--lp-navbtn-size, 44px);
+  padding: 0;
+  flex-shrink: 0;
+  border: none;
+  border-radius: var(--lp-radius-md);
+  background: transparent;
+  box-shadow: none;
+  color: var(--lp-ink-soft);
+  position: static;
+  top: auto;
+  left: auto;
+  touch-action: manipulation;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.header-redesigned--learning-mode
+  .header-redesigned__toolbar-btn.header-redesigned__back-btn:hover,
+.header-redesigned--learning-mode
+  .header-redesigned__toolbar-btn.header-redesigned__menu-btn:hover {
+  background: color-mix(in srgb, var(--lp-ink) 5%, transparent);
+  border-color: transparent;
+  box-shadow: none;
+  transform: none;
+  color: var(--lp-ink);
+}
+
+.header-redesigned--learning-mode
+  .header-redesigned__toolbar-btn.header-redesigned__back-btn:active,
+.header-redesigned--learning-mode
+  .header-redesigned__toolbar-btn.header-redesigned__menu-btn:active {
+  background: color-mix(in srgb, var(--lp-ink) 9%, transparent);
+  transform: scale(0.97);
+}
+
 /* Learning mode: hamburger siempre en la barra (nunca launcher flotante) */
 html[data-navigation-mode='floating']
   .header-redesigned--learning-mode
@@ -1266,8 +1355,56 @@ html[data-navigation-mode='floating']
   }
 
   .header-redesigned--learning-mode .header-redesigned__learning-toolbar {
+    display: flex;
+    align-items: center;
     width: 100%;
     min-width: 0;
+    gap: var(--header-spacing-sm);
+  }
+
+  .header-redesigned--learning-mode.header-redesigned--has-lesson-title
+    .header-redesigned__learning-toolbar {
+    display: flex;
+    grid-template-columns: none;
+  }
+
+  .header-redesigned--learning-mode.header-redesigned--has-lesson-title
+    .header-redesigned__lesson-title {
+    grid-column: unset;
+    grid-row: unset;
+    white-space: normal;
+    text-overflow: unset;
+    overflow: visible;
+  }
+
+  .header-redesigned--learning-mode.header-redesigned--has-lesson-title
+    .header-redesigned__back-btn,
+  .header-redesigned--learning-mode.header-redesigned--has-lesson-title
+    .header-redesigned__menu-btn {
+    grid-column: unset;
+    grid-row: unset;
+    justify-self: unset;
+  }
+
+  .header-redesigned--learning-mode.header-redesigned--has-lesson-title
+    .header-redesigned__menu-btn {
+    margin-left: auto;
+  }
+
+  .header-redesigned--learning-mode
+    .header-redesigned__toolbar-btn.header-redesigned__back-btn {
+    border: var(--lp-navbtn-border-width) solid var(--lp-navbtn-border);
+    border-radius: var(--lp-navbtn-radius);
+    background: var(--lp-navbtn-bg);
+    box-shadow: var(--lp-navbtn-shadow);
+  }
+
+  .header-redesigned--learning-mode
+    .header-redesigned__toolbar-btn.header-redesigned__back-btn:hover {
+    border-color: var(--lp-accent);
+    color: var(--lp-accent);
+    background: var(--lp-surface);
+    transform: scale(1.06);
   }
 
   /* Score pill — centrado absoluto respecto a la barra principal (spec LP) */
