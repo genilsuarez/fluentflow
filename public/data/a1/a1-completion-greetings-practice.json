@@ -1,120 +1,120 @@
 [
   {
-    "sentence": "Hello! My ______ is Maria.",
+    "sentence": "Hello! My ___ is Maria.",
     "correct": "name",
     "explanation": "Se usa <name> para presentarte.",
     "tip": "Complete with the word for how people identify you"
   },
   {
-    "sentence": "Nice to ______ you!",
+    "sentence": "Nice to ___ you!",
     "correct": "meet",
     "explanation": "Se usa <meet> cuando conoces a alguien por primera vez.",
     "tip": "Complete with the verb used after 'Nice to'"
   },
   {
-    "sentence": "How ______ you?",
+    "sentence": "How ___ you?",
     "correct": "are",
     "explanation": "Se usa <are> para preguntar cómo está alguien.",
     "tip": "Complete with the correct form of <be>"
   },
   {
-    "sentence": "I'm ______, thank you.",
+    "sentence": "I'm ___, thank you.",
     "correct": "fine",
     "explanation": "Se usa <fine> para decir que estás bien.",
     "tip": "Rhymes with 'nine' — a common one-word answer to 'How are you?'"
   },
   {
-    "sentence": "Where are you ______?",
+    "sentence": "Where are you ___?",
     "correct": "from",
     "explanation": "Se usa <from> para preguntar por el origen.",
     "tip": "Complete with the preposition that indicates origin"
   },
   {
-    "sentence": "I'm from Spain. And ______?",
+    "sentence": "I'm from Spain. And ___?",
     "correct": "you",
     "explanation": "Se usa <and you?> para devolver la pregunta.",
     "tip": "Complete with the pronoun to ask the same question back"
   },
   {
-    "sentence": "Good ______, everyone!",
+    "sentence": "Good ___, everyone!",
     "correct": "morning",
     "explanation": "Se usa <morning> para saludar antes del mediodía.",
     "tip": "The earliest part of the day — before noon"
   },
   {
-    "sentence": "See you ______!",
+    "sentence": "See you ___!",
     "correct": "later",
     "explanation": "Se usa <later> para despedirse de manera informal.",
     "tip": "Complete with the word that means 'después' — informal goodbye"
   },
   {
-    "sentence": "Have a nice ______!",
+    "sentence": "Have a nice ___!",
     "correct": "day",
     "explanation": "Se usa <day> para desearle algo bueno a alguien.",
     "tip": "24 hours = one ___"
   },
   {
-    "sentence": "Good ______, sir.",
+    "sentence": "Good ___, sir.",
     "correct": "afternoon",
     "explanation": "Se usa <afternoon> para saludar después del mediodía.",
     "tip": "The part of the day between noon and evening"
   },
   {
-    "sentence": "Good ______, sleep well!",
+    "sentence": "Good ___, sleep well!",
     "correct": "night",
     "explanation": "Se usa <night> para despedidas por la noche.",
     "tip": "The dark part of the day — when you sleep"
   },
   {
-    "sentence": "How do you ______?",
+    "sentence": "How do you ___?",
     "correct": "do",
     "explanation": "Se usa <do> en saludos formales.",
     "tip": "Formal greeting — use the same verb twice"
   },
   {
-    "sentence": "This is my ______ John.",
+    "sentence": "This is my ___ John.",
     "correct": "friend",
     "explanation": "Se usa <friend> para presentar a alguien.",
     "tip": "Complete with the word for 'amigo'"
   },
   {
-    "sentence": "I ______ in Madrid.",
+    "sentence": "I ___ in Madrid.",
     "correct": "live",
     "explanation": "Se usa <live> para decir dónde vives.",
     "tip": "Complete with the verb that means 'to reside in a place'"
   },
   {
-    "sentence": "I'm a ______.",
+    "sentence": "I'm a ___.",
     "correct": "student",
     "explanation": "Se usa <student> u otra ocupación.",
     "tip": "A person who studies at a school or university"
   },
   {
-    "sentence": "I ______ English.",
+    "sentence": "I ___ English.",
     "correct": "speak",
     "explanation": "Se usa <speak> para hablar sobre idiomas.",
     "tip": "Complete with the verb for using a language"
   },
   {
-    "sentence": "Goodbye! Take ______!",
+    "sentence": "Goodbye! Take ___!",
     "correct": "care",
     "explanation": "Se usa <care> en la expresión <take care>.",
     "tip": "Complete with the noun in 'Take ___!' (a farewell expression)"
   },
   {
-    "sentence": "Have a ______ day!",
+    "sentence": "Have a ___ day!",
     "correct": "nice",
     "explanation": "Se usa <nice> para desearle algo bueno a alguien.",
     "tip": "A 4-letter synonym of 'good' — rhymes with 'rice'"
   },
   {
-    "sentence": "______, I'm from Spain.",
+    "sentence": "___, I'm from Spain.",
     "correct": "Hello",
     "explanation": "Usamos \"Hello\" para presentarnos.",
     "tip": "The most standard/formal English greeting (5 letters)"
   },
   {
-    "sentence": "It was nice to meet you. ______!",
+    "sentence": "It was nice to meet you. ___!",
     "correct": "Goodbye",
     "explanation": "Decimos \"Goodbye\" al despedirnos.",
     "tip": "The most standard/formal way to say farewell (7 letters)"

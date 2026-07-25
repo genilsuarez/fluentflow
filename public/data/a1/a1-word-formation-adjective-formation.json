@@ -1,120 +1,120 @@
 [
   {
-    "sentence": "Be careful! The road is very _____ when it rains.",
+    "sentence": "Be careful! The road is very ___ when it rains.",
     "rootWord": "RAIN",
     "correct": "rainy",
     "explanation": "RAIN → rainy (se agrega -y para formar un adjetivo que significa 'que tiene lluvia')"
   },
   {
-    "sentence": "It is a _____ day. The sun is shining.",
+    "sentence": "It is a ___ day. The sun is shining.",
     "rootWord": "SUN",
     "correct": "sunny",
     "explanation": "SUN → sunny (se duplica la consonante y se agrega -y)"
   },
   {
-    "sentence": "The sky is very _____ today. I think it will rain.",
+    "sentence": "The sky is very ___ today. I think it will rain.",
     "rootWord": "CLOUD",
     "correct": "cloudy",
     "explanation": "CLOUD → cloudy (se agrega -y para formar un adjetivo que significa 'lleno de nubes')"
   },
   {
-    "sentence": "It is very _____ outside. Take a jacket.",
+    "sentence": "It is very ___ outside. Take a jacket.",
     "rootWord": "WIND",
     "correct": "windy",
     "explanation": "WIND → windy (se agrega -y para formar un adjetivo que significa 'que tiene viento')"
   },
   {
-    "sentence": "The room is very _____ . Please clean it.",
+    "sentence": "The room is very ___ . Please clean it.",
     "rootWord": "DIRT",
     "correct": "dirty",
     "explanation": "DIRT → dirty (se agrega -y para formar un adjetivo que significa 'cubierto de suciedad')"
   },
   {
-    "sentence": "She is a very _____ person. She always helps others.",
+    "sentence": "She is a very ___ person. She always helps others.",
     "rootWord": "HELP",
     "correct": "helpful",
     "explanation": "HELP → helpful (se agrega -ful para formar un adjetivo que significa 'lleno de ayuda')"
   },
   {
-    "sentence": "The garden is _____ in spring with many flowers.",
+    "sentence": "The garden is ___ in spring with many flowers.",
     "rootWord": "BEAUTY",
     "correct": "beautiful",
     "explanation": "BEAUTY → beautiful (se cambia -y por -iful para formar un adjetivo)"
   },
   {
-    "sentence": "He is very _____ for your gift.",
+    "sentence": "He is very ___ for your gift.",
     "rootWord": "THANK",
     "correct": "thankful",
     "explanation": "THANK → thankful (se agrega -ful para formar un adjetivo que significa 'lleno de agradecimiento')"
   },
   {
-    "sentence": "The movie was very _____ . I laughed a lot.",
+    "sentence": "The movie was very ___ . I laughed a lot.",
     "rootWord": "FUN",
     "correct": "funny",
     "explanation": "FUN → funny (se duplica la consonante y se agrega -y)"
   },
   {
-    "sentence": "She is a _____ girl. She always tells the truth.",
+    "sentence": "She is a ___ girl. She always tells the truth.",
     "rootWord": "TRUTH",
     "correct": "truthful",
     "explanation": "TRUTH → truthful (se agrega -ful para formar un adjetivo que significa 'lleno de verdad')"
   },
   {
-    "sentence": "The children are very _____ . They play all day.",
+    "sentence": "The children are very ___ . They play all day.",
     "rootWord": "PLAY",
     "correct": "playful",
     "explanation": "PLAY → playful (se agrega -ful para formar un adjetivo que significa 'lleno de juego')"
   },
   {
-    "sentence": "My hands are _____ . I need to wash them.",
+    "sentence": "My hands are ___ . I need to wash them.",
     "rootWord": "STICK",
     "correct": "sticky",
     "explanation": "STICK → sticky (se agrega -y para formar un adjetivo)"
   },
   {
-    "sentence": "The soup is very _____ . It has a lot of salt.",
+    "sentence": "The soup is very ___ . It has a lot of salt.",
     "rootWord": "SALT",
     "correct": "salty",
     "explanation": "SALT → salty (se agrega -y para formar un adjetivo que significa 'que tiene sal')"
   },
   {
-    "sentence": "Be _____ when you cross the road.",
+    "sentence": "Be ___ when you cross the road.",
     "rootWord": "CARE",
     "correct": "careful",
     "explanation": "CARE → careful (se agrega -ful para formar un adjetivo que significa 'lleno de cuidado')"
   },
   {
-    "sentence": "I am _____ that you passed the exam!",
+    "sentence": "I am ___ that you passed the exam!",
     "rootWord": "JOY",
     "correct": "joyful",
     "explanation": "JOY → joyful (se agrega -ful para formar un adjetivo que significa 'lleno de alegría')"
   },
   {
-    "sentence": "The floor is _____ . Someone spilled water.",
+    "sentence": "The floor is ___ . Someone spilled water.",
     "rootWord": "SLIP",
     "correct": "slippery",
     "explanation": "SLIP → slippery (se agrega -pery para formar un adjetivo que significa 'fácil de resbalar')"
   },
   {
-    "sentence": "It was a _____ night. The snow covered everything.",
+    "sentence": "It was a ___ night. The snow covered everything.",
     "rootWord": "SNOW",
     "correct": "snowy",
     "explanation": "SNOW → snowy (se agrega -y para formar un adjetivo que significa 'que tiene nieve')"
   },
   {
-    "sentence": "She gave me a _____ smile.",
+    "sentence": "She gave me a ___ smile.",
     "rootWord": "CHEER",
     "correct": "cheerful",
     "explanation": "CHEER → cheerful (se agrega -ful para formar un adjetivo que significa 'lleno de alegría')"
   },
   {
-    "sentence": "The baby has _____ skin.",
+    "sentence": "The baby has ___ skin.",
     "rootWord": "SILK",
     "correct": "silky",
     "explanation": "SILK → silky (se agrega -y para formar un adjetivo que significa 'como la seda')"
   },
   {
-    "sentence": "He is a _____ boy. He always says 'please' and 'thank you'.",
+    "sentence": "He is a ___ boy. He always says 'please' and 'thank you'.",
     "rootWord": "RESPECT",
     "correct": "respectful",
     "explanation": "RESPECT → respectful (se agrega -ful para formar un adjetivo que significa 'lleno de respeto')"

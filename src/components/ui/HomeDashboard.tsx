@@ -205,24 +205,24 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
             </div>
           </div>
           <span className="progress-snapshot__copy">
-            <span className="progress-snapshot__line progress-snapshot__line--primary">
-              <span className="progress-snapshot__title">
-                {t('dashboard.yourProgress', 'Your progress')}
-              </span>
-              <span className="progress-snapshot__stat-wrap">
-                <span className="progress-snapshot__stat">
-                  {animatedCompleted}/{displayStats.totalModules}
-                </span>
-                <span className="progress-snapshot__unit">
-                  {' '}
-                  {t('common.exercise', 'ejercicio')}
-                </span>
-              </span>
+            <span className="progress-snapshot__title">
+              {t('dashboard.yourProgress', 'Your progress')}
             </span>
             <span className="progress-snapshot__line progress-snapshot__line--meta">
               {progressMeta}
             </span>
           </span>
+          <div className="progress-snapshot__stat-block">
+            <span className="progress-snapshot__stat-wrap">
+              <span className="progress-snapshot__stat">
+                {animatedCompleted}/{displayStats.totalModules}
+              </span>
+              <span className="progress-snapshot__unit">
+                {' '}
+                {t('common.exercise', 'ejercicio')}
+              </span>
+            </span>
+          </div>
           <span className="progress-snapshot__link" aria-hidden="true">
             {t('dashboard.viewProgress', 'View progress')} →
           </span>

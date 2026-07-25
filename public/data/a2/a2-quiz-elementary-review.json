@@ -1,6 +1,6 @@
 [
   {
-    "question": "Choose the correct past tense: 'She _____ to the cinema last night.'",
+    "question": "Choose the correct past tense: 'She ___ to the cinema last night.'",
     "options": [
       "went",
       "goes",
@@ -22,7 +22,7 @@
     "explanation": "<Buy> es irregular: el pasado simple es <bought>, no <buyed>."
   },
   {
-    "question": "Complete: 'They _____ dinner at 7 pm yesterday.'",
+    "question": "Complete: 'They ___ dinner at 7 pm yesterday.'",
     "options": [
       "having",
       "has",
@@ -44,7 +44,7 @@
     "explanation": "En el pasado simple negativo, se usa <didn't> + la forma base: <didn't go>."
   },
   {
-    "question": "Choose the correct present perfect: 'I _____ already eaten lunch.'",
+    "question": "Choose the correct present perfect: 'I ___ already eaten lunch.'",
     "options": [
       "have",
       "am",
@@ -55,7 +55,7 @@
     "explanation": "Con <I>, se usa <have> para el presente perfecto: <I have already eaten>."
   },
   {
-    "question": "Which is the correct comparative: 'This book is _____ than that one.'",
+    "question": "Which is the correct comparative: 'This book is ___ than that one.'",
     "options": [
       "more interestinger",
       "more interesting",
@@ -66,7 +66,7 @@
     "explanation": "Los adjetivos largos usan <more> + adjetivo: <more interesting>."
   },
   {
-    "question": "Complete: 'My sister is _____ than me.'",
+    "question": "Complete: 'My sister is ___ than me.'",
     "options": [
       "more tall",
       "tall",
@@ -77,7 +77,7 @@
     "explanation": "Los adjetivos cortos añaden <-er> para el comparativo: <taller>."
   },
   {
-    "question": "Which is correct: 'She has _____ to Paris twice.'",
+    "question": "Which is correct: 'She has ___ to Paris twice.'",
     "options": [
       "being",
       "be",
@@ -154,7 +154,7 @@
     "explanation": "La primera actividad diaria es <wake up>, es decir, despertarse por la mañana."
   },
   {
-    "question": "Choose the correct option: 'I _____ to the gym every Monday.'",
+    "question": "Choose the correct option: 'I ___ to the gym every Monday.'",
     "options": [
       "be",
       "am",
@@ -165,7 +165,7 @@
     "explanation": "Se usa <go> con lugares: <go to the gym>, <go to school>."
   },
   {
-    "question": "Which is correct: 'She _____ tired after work.'",
+    "question": "Which is correct: 'She ___ tired after work.'",
     "options": [
       "goes",
       "go",

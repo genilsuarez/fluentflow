@@ -1,139 +1,139 @@
 [
   {
-    "sentence": "My sister is ______ (tall) than me.",
+    "sentence": "My sister is ___ (tall) than me.",
     "correct": "taller",
     "explanation": "Usa <taller> (forma comparativa de <tall>) — adjetivo corto: añade '-er'",
     "tip": "Transform the adjective into its comparative form",
     "showPlaceholder": false
   },
   {
-    "sentence": "This book is ______ (good) than that one.",
+    "sentence": "This book is ___ (good) than that one.",
     "correct": "better",
     "explanation": "Usa <better> (forma comparativa de <good>) — comparativo irregular",
     "tip": "This adjective doesn't follow the regular pattern",
     "showPlaceholder": false
   },
   {
-    "sentence": "She is the ______ (smart) student in the class.",
+    "sentence": "She is the ___ (smart) student in the class.",
     "correct": "smartest",
     "explanation": "Usa <smartest> (forma superlativa de <smart>) — adjetivo corto: añade '-est'",
     "tip": "You're comparing one to all the others — superlative",
     "showPlaceholder": false
   },
   {
-    "sentence": "This is the ______ (good) movie I've ever seen.",
+    "sentence": "This is the ___ (good) movie I've ever seen.",
     "correct": "best",
     "explanation": "Usa <best> (forma superlativa de <good>) — superlativo irregular",
     "tip": "This adjective has an irregular superlative form",
     "showPlaceholder": false
   },
   {
-    "sentence": "Winter is ______ (cold) than summer.",
+    "sentence": "Winter is ___ (cold) than summer.",
     "correct": "colder",
     "explanation": "Usa <colder> (forma comparativa de <cold>) — adjetivo corto: añade '-er'",
     "tip": "Transform the adjective into its comparative form",
     "showPlaceholder": false
   },
   {
-    "sentence": "This is the ______ (hot) day of the year.",
+    "sentence": "This is the ___ (hot) day of the year.",
     "correct": "hottest",
     "explanation": "Usa <hottest> (forma superlativa de <hot>) — duplica la consonante final y añade '-est'",
     "tip": "Superlative — watch the spelling carefully",
     "showPlaceholder": false
   },
   {
-    "sentence": "My car is ______ (fast) than yours.",
+    "sentence": "My car is ___ (fast) than yours.",
     "correct": "faster",
     "explanation": "Usa <faster> (forma comparativa de <fast>) — adjetivo corto: añade '-er'",
     "tip": "Transform the adjective into its comparative form",
     "showPlaceholder": false
   },
   {
-    "sentence": "She is the ______ (kind) person I know.",
+    "sentence": "She is the ___ (kind) person I know.",
     "correct": "kindest",
     "explanation": "Usa <kindest> (forma superlativa de <kind>) — adjetivo corto: añade '-est'",
     "tip": "You're comparing one to all the others — superlative",
     "showPlaceholder": false
   },
   {
-    "sentence": "This exercise is ______ (easy) than the last one.",
+    "sentence": "This exercise is ___ (easy) than the last one.",
     "correct": "easier",
     "explanation": "Usa <easier> (forma comparativa de <easy>) — cambia la 'y' por 'i' y añade '-er'",
     "tip": "Comparative — watch the spelling carefully",
     "showPlaceholder": false
   },
   {
-    "sentence": "Mount Everest is the ______ (high) mountain in the world.",
+    "sentence": "Mount Everest is the ___ (high) mountain in the world.",
     "correct": "highest",
     "explanation": "Usa <highest> (forma superlativa de <high>) — adjetivo corto: añade '-est'",
     "tip": "You're comparing one to all the others — superlative",
     "showPlaceholder": false
   },
   {
-    "sentence": "This problem is ______ (bad) than I thought.",
+    "sentence": "This problem is ___ (bad) than I thought.",
     "correct": "worse",
     "explanation": "Usa <worse> (forma comparativa de <bad>) — comparativo irregular",
     "tip": "This adjective doesn't follow the regular pattern",
     "showPlaceholder": false
   },
   {
-    "sentence": "That was the ______ (bad) meal I've ever had.",
+    "sentence": "That was the ___ (bad) meal I've ever had.",
     "correct": "worst",
     "explanation": "Usa <worst> (forma superlativa de <bad>) — superlativo irregular",
     "tip": "This adjective has an irregular superlative form",
     "showPlaceholder": false
   },
   {
-    "sentence": "My house is ______ (big) than my friend's house.",
+    "sentence": "My house is ___ (big) than my friend's house.",
     "correct": "bigger",
     "explanation": "Usa <bigger> (forma comparativa de <big>) — duplica la consonante final y añade '-er'",
     "tip": "Comparative — watch the spelling carefully",
     "showPlaceholder": false
   },
   {
-    "sentence": "This is the ______ (small) room in the house.",
+    "sentence": "This is the ___ (small) room in the house.",
     "correct": "smallest",
     "explanation": "Usa <smallest> (forma superlativa de <small>) — adjetivo corto: añade '-est'",
     "tip": "You're comparing one to all the others — superlative",
     "showPlaceholder": false
   },
   {
-    "sentence": "She speaks English ______ (fluent) than her brother.",
+    "sentence": "She speaks English ___ (fluent) than her brother.",
     "correct": "more fluently",
     "explanation": "Usa <more fluently> (forma comparativa de <fluently>) — usa 'more' con adverbios terminados en '-ly'",
     "tip": "First turn the adjective into an adverb, then make it comparative",
     "showPlaceholder": false
   },
   {
-    "sentence": "He is the ______ (fast) runner on the team.",
+    "sentence": "He is the ___ (fast) runner on the team.",
     "correct": "fastest",
     "explanation": "Usa <fastest> (forma superlativa de <fast>) — adjetivo corto: añade '-est'",
     "tip": "You're comparing one to all the others — superlative",
     "showPlaceholder": false
   },
   {
-    "sentence": "This chair is ______ (comfortable) than that one.",
+    "sentence": "This chair is ___ (comfortable) than that one.",
     "correct": "more comfortable",
     "explanation": "Usa <more comfortable> (forma comparativa) — usa 'more' con adjetivos largos",
     "tip": "Think about how many syllables this adjective has",
     "showPlaceholder": false
   },
   {
-    "sentence": "This is the ______ (expensive) restaurant in town.",
+    "sentence": "This is the ___ (expensive) restaurant in town.",
     "correct": "most expensive",
     "explanation": "Usa <most expensive> (forma superlativa) — usa 'most' con adjetivos largos",
     "tip": "Think about how many syllables this adjective has",
     "showPlaceholder": false
   },
   {
-    "sentence": "Today is ______ (sunny) than yesterday.",
+    "sentence": "Today is ___ (sunny) than yesterday.",
     "correct": "sunnier",
     "explanation": "Usa <sunnier> (forma comparativa de <sunny>) — cambia la 'y' por 'i' y añade '-er'",
     "tip": "Comparative — watch the spelling carefully",
     "showPlaceholder": false
   },
   {
-    "sentence": "This is the ______ (tall) building in the city.",
+    "sentence": "This is the ___ (tall) building in the city.",
     "correct": "tallest",
     "explanation": "Usa <tallest> (forma superlativa de <tall>) — adjetivo corto: añade '-est'",
     "tip": "You're comparing one to all the others — superlative",

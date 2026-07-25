@@ -1,6 +1,6 @@
 [
   {
-    "question": "Which formal structure is correct? 'The findings, _____ were published last year, have been widely cited.'",
+    "question": "Which formal structure is correct? 'The findings, ___ were published last year, have been widely cited.'",
     "options": [
       "which",
       "that",
@@ -11,7 +11,7 @@
     "explanation": "Las cláusulas relativas no especificativas (explicativas) usan <which> (con comas), no <that>."
   },
   {
-    "question": "Choose the correct academic hedging: 'The data _____ that there is a correlation between the two variables.'",
+    "question": "Choose the correct academic hedging: 'The data ___ that there is a correlation between the two variables.'",
     "options": [
       "confirms absolutely",
       "suggests",
@@ -22,7 +22,7 @@
     "explanation": "La escritura académica usa lenguaje atenuado (hedging) como <suggests> en lugar de afirmaciones absolutas."
   },
   {
-    "question": "Which discourse marker best fits? '_____, the study has several limitations that must be acknowledged.'",
+    "question": "Which discourse marker best fits? '___, the study has several limitations that must be acknowledged.'",
     "options": [
       "Moreover",
       "In addition",
@@ -33,7 +33,7 @@
     "explanation": "<Nevertheless> introduce un punto de contraste, reconociendo limitaciones a pesar de los hallazgos."
   },
   {
-    "question": "Choose the correct formal structure: 'Under no circumstances _____ this information be disclosed.'",
+    "question": "Choose the correct formal structure: 'Under no circumstances ___ this information be disclosed.'",
     "options": [
       "would",
       "can",
@@ -55,7 +55,7 @@
     "explanation": "El registro académico usa lenguaje preciso y formal: <remarkably promising> en vez de términos coloquiales."
   },
   {
-    "question": "Choose the correct literary analysis term: 'The author employs _____ to create a sense of unease throughout the narrative.'",
+    "question": "Choose the correct literary analysis term: 'The author employs ___ to create a sense of unease throughout the narrative.'",
     "options": [
       "foretelling",
       "foreshadowing",
@@ -77,7 +77,7 @@
     "explanation": "<Granted that> es un marcador concesivo formal que reconoce un punto antes de refutarlo."
   },
   {
-    "question": "Which is the most nuanced vocabulary choice? 'The politician's speech was deliberately _____.'",
+    "question": "Which is the most nuanced vocabulary choice? 'The politician's speech was deliberately ___.'",
     "options": [
       "unclear",
       "confusing",
@@ -99,7 +99,7 @@
     "explanation": "Un <paradigm shift> es un cambio fundamental en los conceptos y prácticas básicas de una disciplina."
   },
   {
-    "question": "Which word best completes: 'The researcher's argument is _____, lacking sufficient evidence.'",
+    "question": "Which word best completes: 'The researcher's argument is ___, lacking sufficient evidence.'",
     "options": [
       "strong",
       "tenuous",

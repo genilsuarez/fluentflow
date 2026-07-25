@@ -1,120 +1,120 @@
 [
   {
-    "sentence": "If it ______ tomorrow, we will stay at home.",
+    "sentence": "If it ___ tomorrow, we will stay at home.",
     "correct": "rains",
     "explanation": "Primer condicional: <If> + presente simple, <will> + verbo base. Se usa para situaciones futuras reales o posibles.",
     "tip": "Think about the weather forecast — what verb form goes after 'if'?"
   },
   {
-    "sentence": "If you study hard, you ______ the exam.",
+    "sentence": "If you study hard, you ___ the exam.",
     "correct": "will pass",
     "explanation": "Primer condicional: la cláusula de resultado usa <will> + verbo base para resultados probables.",
     "tip": "What's the likely result of studying hard?"
   },
   {
-    "sentence": "If I ______ a million dollars, I would travel the world.",
+    "sentence": "If I ___ a million dollars, I would travel the world.",
     "correct": "had",
     "explanation": "Segundo condicional: <If> + pasado simple, <would> + verbo base. Se usa para situaciones presentes irreales o hipotéticas.",
     "tip": "This is imaginary — what past form expresses an unreal situation?"
   },
   {
-    "sentence": "If she spoke French, she ______ get that job in Paris.",
+    "sentence": "If she spoke French, she ___ get that job in Paris.",
     "correct": "would",
     "explanation": "Segundo condicional: la cláusula de resultado usa <would> + verbo base para resultados hipotéticos.",
     "tip": "She doesn't speak French — what auxiliary shows an imaginary result?"
   },
   {
-    "sentence": "We will go to the beach if the weather ______ nice.",
+    "sentence": "We will go to the beach if the weather ___ nice.",
     "correct": "is",
     "explanation": "Primer condicional: la cláusula con <if> usa el presente simple, aunque estemos hablando del futuro.",
     "tip": "After 'if' in first conditional, use present simple — not 'will'."
   },
   {
-    "sentence": "If I ______ you, I would apologize immediately.",
+    "sentence": "If I ___ you, I would apologize immediately.",
     "correct": "were",
     "explanation": "Segundo condicional: usamos <were> para todas las personas con <be> en situaciones hipotéticas (no <was>).",
     "tip": "In formal/hypothetical English, what form of 'be' do we use after 'if I'?"
   },
   {
-    "sentence": "If they arrive late, they ______ miss the beginning of the film.",
+    "sentence": "If they arrive late, they ___ miss the beginning of the film.",
     "correct": "will",
     "explanation": "Primer condicional: <will> + verbo base en la cláusula de resultado para una posibilidad real.",
     "tip": "Arriving late is possible — what auxiliary shows a real future consequence?"
   },
   {
-    "sentence": "If he ______ more money, he would buy a bigger house.",
+    "sentence": "If he ___ more money, he would buy a bigger house.",
     "correct": "had",
     "explanation": "Segundo condicional: pasado simple en la cláusula con <if> para una situación presente irreal.",
     "tip": "He doesn't have enough money — what past form shows this isn't real?"
   },
   {
-    "sentence": "I will call you if I ______ any news.",
+    "sentence": "I will call you if I ___ any news.",
     "correct": "get",
     "explanation": "Primer condicional: presente simple después de <if> para un evento futuro posible.",
     "tip": "Receiving news is possible — use present simple after 'if'."
   },
   {
-    "sentence": "If we ______ closer to the office, we wouldn't need a car.",
+    "sentence": "If we ___ closer to the office, we wouldn't need a car.",
     "correct": "lived",
     "explanation": "Segundo condicional: pasado simple para una situación presente irreal.",
     "tip": "We don't live close — what past form shows this hypothetical situation?"
   },
   {
-    "sentence": "She will be angry if you ______ tell her the truth.",
+    "sentence": "She will be angry if you ___ tell her the truth.",
     "correct": "don't",
     "explanation": "Primer condicional: presente simple negativo en la cláusula con <if>.",
     "tip": "Not telling the truth is a real possibility — negate the present simple."
   },
   {
-    "sentence": "If I could fly, I ______ visit every country in the world.",
+    "sentence": "If I could fly, I ___ visit every country in the world.",
     "correct": "would",
     "explanation": "Segundo condicional: <would> + verbo base para un resultado imposible o imaginario.",
     "tip": "Flying is impossible for humans — what auxiliary shows the imaginary result?"
   },
   {
-    "sentence": "If the bus ______ on time, we won't be late for school.",
+    "sentence": "If the bus ___ on time, we won't be late for school.",
     "correct": "comes",
     "explanation": "Primer condicional: presente simple en la cláusula con <if> para una posibilidad real.",
     "tip": "The bus might come on time — use present simple."
   },
   {
-    "sentence": "If I ______ the president, I would improve public education.",
+    "sentence": "If I ___ the president, I would improve public education.",
     "correct": "were",
     "explanation": "Segundo condicional: <were> (no <was>) para situaciones hipotéticas con <be>.",
     "tip": "Being president is hypothetical — use the subjunctive form of 'be'."
   },
   {
-    "sentence": "If you ______ that button, the machine will start.",
+    "sentence": "If you ___ that button, the machine will start.",
     "correct": "press",
     "explanation": "Primer condicional: presente simple para una relación real de causa y efecto.",
     "tip": "This is a real, likely situation — which tense describes facts and habits?"
   },
   {
-    "sentence": "If she ______ harder, she would get better grades.",
+    "sentence": "If she ___ harder, she would get better grades.",
     "correct": "studied",
     "explanation": "Segundo condicional: pasado simple para dar un consejo sobre una situación presente irreal.",
     "tip": "She doesn't study hard enough — what past form shows this hypothetical change?"
   },
   {
-    "sentence": "I won't go to the party if nobody ______ me.",
+    "sentence": "I won't go to the party if nobody ___ me.",
     "correct": "invites",
     "explanation": "Primer condicional: presente simple en la cláusula con <if>, incluso en cláusulas de resultado negativas.",
     "tip": "Being invited is a real possibility — present simple after 'if'."
   },
   {
-    "sentence": "If I ______ speak Chinese, I would move to Beijing.",
+    "sentence": "If I ___ speak Chinese, I would move to Beijing.",
     "correct": "could",
     "explanation": "Segundo condicional: <could> (pasado de <can>) en la cláusula con <if> para una habilidad hipotética.",
     "tip": "You can't speak Chinese — what past modal shows imaginary ability?"
   },
   {
-    "sentence": "We will save money if we ______ cooking at home.",
+    "sentence": "We will save money if we ___ cooking at home.",
     "correct": "start",
     "explanation": "Primer condicional: presente simple para una acción realista con un beneficio real.",
     "tip": "Beginning a new habit at home is a real possibility — which tense fits?"
   },
   {
-    "sentence": "If they ______ us, we would help them move to their new flat.",
+    "sentence": "If they ___ us, we would help them move to their new flat.",
     "correct": "asked",
     "explanation": "Segundo condicional: pasado simple para una situación que no ha ocurrido (ellos no han <asked>).",
     "tip": "Look for time markers (yesterday, now, always) to guide your choice."

@@ -9,6 +9,7 @@ import { ContentAdapter } from '../../utils/contentAdapter';
 import ContentRenderer from '../ui/ContentRenderer';
 import LearningProgressHeader from '../ui/LearningProgressHeader';
 import ExerciseResultScreen from '../ui/ExerciseResultScreen';
+import { replaceFirstBlank } from '../../utils/blankMarker';
 import { speak, stopSpeaking, isSpeechAvailable, whenVoicesReady } from '../../utils/speech';
 
 import '../../styles/components/quiz-component.css';
@@ -61,7 +62,7 @@ const ListenCompleteComponent: React.FC<ListenCompleteComponentProps> = ({ modul
   // Build the full sentence for TTS (replace blank with the correct answer)
   const getFullSentence = useCallback(() => {
     if (!currentItem) return '';
-    return currentItem.sentence.replace(/_{2}/, currentItem.correct);
+    return replaceFirstBlank(currentItem.sentence, currentItem.correct);
   }, [currentItem]);
 
   const playAudio = useCallback(

@@ -8,7 +8,8 @@
  *   5. Primary action (pill)
  *   6. Next nav — flashcard only (flip hidden on mobile via .game-controls__flashcard-flip)
  *
- * Mobile (≤767px): exit + optional prev + primary — no reset, no secondary icons.
+ * Mobile (≤767px): exit + primary — no reset, no eraser.
+ * Post-check (`.game-controls--post-check`): info + primary — no exit.
  */
 
 /* Bar sizing — desktop base; mobile tokens scaled in @media (--lp-mobile-md) */
@@ -217,10 +218,19 @@
     min-height: var(--game-controls-btn-size);
   }
 
-  /* Reset + secondary icon actions are desktop-only — mobile bar: exit + nav + primary */
+  /* Reset + secondary icon actions are desktop-only — mobile bar: exit + primary */
   .game-controls__reset-btn,
   .game-controls__desktop-only {
     display: none;
+  }
+
+  /* After check: swap home for info on mobile */
+  .game-controls--post-check .game-controls__home-btn {
+    display: none;
+  }
+
+  .game-controls--post-check .game-controls__info-btn {
+    display: flex;
   }
 
   /* Lucide icons use fixed size={16} in JSX — scale all bar icons via CSS */

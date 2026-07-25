@@ -26,7 +26,6 @@ const ErrorCorrectionComponent: React.FC<ErrorCorrectionComponentProps> = ({ mod
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answer, setAnswer] = useState('');
   const [showResult, setShowResult] = useState(false);
-  const [streak, setStreak] = useState(0);
   const inputRef = useRef<EditableInputHandle>(null);
   const ignoreEnterRef = useRef(false);
 
@@ -78,10 +77,8 @@ const ErrorCorrectionComponent: React.FC<ErrorCorrectionComponentProps> = ({ mod
     if (showResult) return;
     if (isCorrectAnswer(answer)) {
       markCorrect();
-      setStreak(s => s + 1);
     } else {
       markIncorrect();
-      setStreak(0);
     }
     setShowResult(true);
   }, [showResult, answer, isCorrectAnswer, markCorrect, markIncorrect]);
@@ -99,6 +96,15 @@ const ErrorCorrectionComponent: React.FC<ErrorCorrectionComponentProps> = ({ mod
       finishExercise();
     }
   }, [currentIndex, processedExercises.length, finishExercise]);
+
+  const handleEnterKey = useCallback(() => {
+    if (ignoreEnterRef.current) return;
+    if (!showResult && answer.trim()) {
+      checkAnswer();
+    } else if (showResult) {
+      handleNext();
+    }
+  }, [showResult, answer, checkAnswer, handleNext]);
 
   useEffect(() => {
     if (processedExercises.length === 0) return;
@@ -137,7 +143,6 @@ const ErrorCorrectionComponent: React.FC<ErrorCorrectionComponentProps> = ({ mod
           setCurrentIndex(0);
           setAnswer('');
           setShowResult(false);
-          setStreak(0);
           processedExercisesRef.current = module?.data
             ? conditionalShuffle(module.data as ErrorCorrectionData[], randomizeItems)
             : [];
@@ -164,14 +169,7 @@ const ErrorCorrectionComponent: React.FC<ErrorCorrectionComponentProps> = ({ mod
       />
 
       <div className="error-correction__exercise-card">
-        {/* Streak badge */}
-        {streak >= 2 && (
-          <div className="error-correction__streak" key={streak}>
-            🔥 {streak}
-          </div>
-        )}
-
-        {/* Error sentence — visually distinct with red-tinted styling */}
+        {/* Sentence to correct */}
         <div className="error-correction__error-sentence">
           <ContentRenderer
             content={ContentAdapter.ensureStructured(currentExercise.sentence, 'quiz')}
@@ -204,6 +202,7 @@ const ErrorCorrectionComponent: React.FC<ErrorCorrectionComponentProps> = ({ mod
             ref={inputRef}
             value={answer}
             onChange={setAnswer}
+            onEnter={handleEnterKey}
             disabled={showResult}
             placeholder="..."
             className={`editable-input editable-input--fullwidth error-correction__input${

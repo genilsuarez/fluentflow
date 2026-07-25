@@ -1,120 +1,120 @@
 [
   {
-    "sentence": "The researcher ______ upon a groundbreaking finding by accident.",
+    "sentence": "The researcher ___ upon a groundbreaking finding by accident.",
     "correct": "stumbled",
     "tip": "Phrasal verb: ___ upon = descubrir algo inesperadamente (pasado)",
     "explanation": "El phrasal verb <stumble upon> significa descubrir algo de forma inesperada."
   },
   {
-    "sentence": "The diplomat ______ over the tensions between the two delegations.",
+    "sentence": "The diplomat ___ over the tensions between the two delegations.",
     "correct": "smoothed",
     "tip": "Phrasal verb: ___ over = suavizar un problema (pasado)",
     "explanation": "El phrasal verb <smooth over> significa hacer que un problema parezca menos grave."
   },
   {
-    "sentence": "She ______ through his elaborate pretence immediately.",
+    "sentence": "She ___ through his elaborate pretence immediately.",
     "correct": "saw",
     "tip": "Phrasal verb: ___ through = reconocer un engaño (pasado irregular)",
     "explanation": "El phrasal verb <see through> significa reconocer un engaño."
   },
   {
-    "sentence": "The panel ______ out a compromise after hours of debate.",
+    "sentence": "The panel ___ out a compromise after hours of debate.",
     "correct": "thrashed",
     "tip": "Phrasal verb: ___ out = discutir a fondo hasta resolver (pasado)",
     "explanation": "El phrasal verb <thrash out> significa discutir algo a fondo hasta llegar a una resolución."
   },
   {
-    "sentence": "He ______ in on the weakest point of the argument.",
+    "sentence": "He ___ in on the weakest point of the argument.",
     "correct": "honed",
     "tip": "Phrasal verb: ___ in on = enfocarse con precisión (pasado)",
     "explanation": "El phrasal verb <hone in on> significa enfocarse con precisión en un aspecto específico."
   },
   {
-    "sentence": "The auditor ______ up on subtle discrepancies in the accounts.",
+    "sentence": "The auditor ___ up on subtle discrepancies in the accounts.",
     "correct": "picked",
     "tip": "Phrasal verb: ___ up on = notar algo sutil que otros ignoran (pasado)",
     "explanation": "El phrasal verb <pick up on> significa notar algo que otros podrían pasar por alto."
   },
   {
-    "sentence": "The mediator ______ upon both parties to reach a compromise.",
+    "sentence": "The mediator ___ upon both parties to reach a compromise.",
     "correct": "prevailed",
     "tip": "Phrasal verb: ___ upon = persuadir con insistencia (pasado)",
     "explanation": "El phrasal verb <prevail upon> significa persuadir a través de un esfuerzo sostenido."
   },
   {
-    "sentence": "The nominali______ of complex verbs is a hallmark of academic prose.",
+    "sentence": "The nominali___ of complex verbs is a hallmark of academic prose.",
     "correct": "nominalization",
     "tip": "Sufijo -ation: convierte <nominalize> en sustantivo",
     "explanation": "Al añadir <-ation> a <nominalize> se forma <nominalization>, común en la escritura académica."
   },
   {
-    "sentence": "The ______ of the ancient text required specialized knowledge.",
+    "sentence": "The ___ of the ancient text required specialized knowledge.",
     "correct": "decipherment",
     "tip": "Formación: <decipher> + sufijo sustantivo (-ment) → ?",
     "explanation": "Al añadir <-ment> a <decipher> se forma el sustantivo <decipherment>."
   },
   {
-    "sentence": "His prose was characterized by its ______ity and precision.",
+    "sentence": "His prose was characterized by its ___ity and precision.",
     "correct": "lucidity",
     "tip": "Formación: <lucid> → sustantivo cambiando -id por -idity",
     "explanation": "Cambiar <-id> por <-idity>: <lucid> → <lucidity> (claridad de expresión)."
   },
   {
-    "sentence": "The ______ nature of the evidence made conclusions difficult.",
+    "sentence": "The ___ nature of the evidence made conclusions difficult.",
     "correct": "equivocal",
     "tip": "Adjetivo que significa ambiguo, abierto a múltiples interpretaciones",
     "explanation": "<Equivocal> significa ambiguo o abierto a más de una interpretación."
   },
   {
-    "sentence": "The prefix 'pseudo-' in 'pseudoscience' means ______.",
+    "sentence": "The prefix 'pseudo-' in 'pseudoscience' means ___.",
     "correct": "false",
     "tip": "¿Qué significa <pseudo->? Si 'pseudoscience' no es ciencia real...",
     "explanation": "El prefijo <pseudo-> significa falso o fingido: <pseudoscience> = ciencia falsa."
   },
   {
-    "sentence": "Adding '-esque' to 'Kafka' gives us ______, meaning resembling Kafka's style.",
+    "sentence": "Adding '-esque' to 'Kafka' gives us ___, meaning resembling Kafka's style.",
     "correct": "Kafkaesque",
     "tip": "Aplica el sufijo <-esque> (= al estilo de) a Kafka",
     "explanation": "El sufijo <-esque> significa 'al estilo de': <Kafkaesque> = que se asemeja al estilo surrealista de Kafka."
   },
   {
-    "sentence": "It was a Pyrrhic victory — they won the battle but at too great a ______.",
+    "sentence": "It was a Pyrrhic victory — they won the battle but at too great a ___.",
     "correct": "cost",
     "tip": "Modismo: victoria que se gana pero a un... demasiado alto",
     "explanation": "El modismo <Pyrrhic victory> significa una victoria que tiene un costo tan alto que no vale la pena."
   },
   {
-    "sentence": "The professor's argument was a red herring, designed to ______ from the real issue.",
+    "sentence": "The professor's argument was a red herring, designed to ___ from the real issue.",
     "correct": "distract",
     "tip": "Modismo: un <red herring> busca... de lo importante",
     "explanation": "El modismo <red herring> significa algo que engaña o distrae del verdadero problema."
   },
   {
-    "sentence": "She opened Pandora's box by raising the controversial topic, unleashing many ______.",
+    "sentence": "She opened Pandora's box by raising the controversial topic, unleashing many ___.",
     "correct": "problems",
     "tip": "Modismo: abrir la caja de Pandora = desatar muchos...",
     "explanation": "El modismo <Pandora's box> se refiere a una acción que genera muchos problemas imprevistos."
   },
   {
-    "sentence": "His Achilles' heel was his inability to ______ criticism gracefully.",
+    "sentence": "His Achilles' heel was his inability to ___ criticism gracefully.",
     "correct": "accept",
     "tip": "Modismo: el talón de Aquiles es una debilidad. ¿Qué no podía hacer con la crítica?",
     "explanation": "El modismo <Achilles' heel> significa la principal debilidad o vulnerabilidad de una persona."
   },
   {
-    "sentence": "The writing on the wall suggested the company's ______ was inevitable.",
+    "sentence": "The writing on the wall suggested the company's ___ was inevitable.",
     "correct": "decline",
     "tip": "Modismo: la escritura en la pared = señales claras de algo malo. ¿Qué era inevitable?",
     "explanation": "El modismo <the writing on the wall> significa señales claras de que algo malo va a suceder."
   },
   {
-    "sentence": "It is imperative that the committee ______ its findings immediately.",
+    "sentence": "It is imperative that the committee ___ its findings immediately.",
     "correct": "publish",
     "tip": "Subjuntivo formal: <that the committee...> usa forma base, no tercera persona",
     "explanation": "Subjuntivo formal: <that the committee publish> (forma base, no publishes)."
   },
   {
-    "sentence": "The data ______ to suggest a correlation between the variables.",
+    "sentence": "The data ___ to suggest a correlation between the variables.",
     "correct": "appears",
     "tip": "Matización académica (hedging): verbo que suaviza la afirmación, similar a <seems>",
     "explanation": "Matización académica (hedging): <appears to suggest> suaviza la afirmación, evitando declaraciones absolutas."

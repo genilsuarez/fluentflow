@@ -1,120 +1,120 @@
 [
   {
-    "sentence": "I stopped ______ because the doctor told me to.",
+    "sentence": "I stopped ___ because the doctor told me to.",
     "correct": "smoking",
     "explanation": "<Stop> + gerundio = detener una actividad de forma permanente. He stopped smoking = dejó de fumar.",
     "tip": "stop + -ing = quit the activity"
   },
   {
-    "sentence": "I stopped ______ some water because I was thirsty.",
+    "sentence": "I stopped ___ some water because I was thirsty.",
     "correct": "to drink",
     "explanation": "<Stop> + infinitivo = pausar una actividad para hacer otra. I stopped to drink = me detuve para tomar agua.",
     "tip": "stop + to = pause to do something else"
   },
   {
-    "sentence": "I remember ______ the door before I left.",
+    "sentence": "I remember ___ the door before I left.",
     "correct": "locking",
     "explanation": "<Remember> + gerundio = recordar algo que hiciste en el pasado.",
     "tip": "remember + -ing = memory of a past action"
   },
   {
-    "sentence": "Please remember ______ the door when you leave.",
+    "sentence": "Please remember ___ the door when you leave.",
     "correct": "to lock",
     "explanation": "<Remember> + infinitivo = no olvidar hacer algo en el futuro.",
     "tip": "remember + to = don't forget a future action"
   },
   {
-    "sentence": "I tried ______ the window, but it was stuck.",
+    "sentence": "I tried ___ the window, but it was stuck.",
     "correct": "to open",
     "explanation": "<Try> + infinitivo = intentar hacer algo difícil.",
     "tip": "try + to = attempt with effort"
   },
   {
-    "sentence": "I tried ______ the window to let some air in.",
+    "sentence": "I tried ___ the window to let some air in.",
     "correct": "opening",
     "explanation": "<Try> + gerundio = experimentar con un método o solución.",
     "tip": "try + -ing = experiment with a method"
   },
   {
-    "sentence": "She forgot ______ her mother on her birthday.",
+    "sentence": "She forgot ___ her mother on her birthday.",
     "correct": "to call",
     "explanation": "<Forget> + infinitivo = no lograr hacer algo que debías hacer.",
     "tip": "forget + to = fail to do something"
   },
   {
-    "sentence": "I'll never forget ______ the Northern Lights.",
+    "sentence": "I'll never forget ___ the Northern Lights.",
     "correct": "seeing",
     "explanation": "<Forget> + gerundio = no olvidar una experiencia o recuerdo pasado.",
     "tip": "forget + -ing = a memorable past experience"
   },
   {
-    "sentence": "I regret ______ you that the position has been filled.",
+    "sentence": "I regret ___ you that the position has been filled.",
     "correct": "to inform",
     "explanation": "<Regret> + infinitivo = lamentar lo que estás a punto de decir (formal).",
     "tip": "regret + to = sorry to say (formal announcement)"
   },
   {
-    "sentence": "She regrets ______ school so young.",
+    "sentence": "She regrets ___ school so young.",
     "correct": "leaving",
     "explanation": "<Regret> + gerundio = lamentar algo que hiciste en el pasado.",
     "tip": "regret + -ing = sorry about a past action"
   },
   {
-    "sentence": "He went on ______ about his holiday for hours.",
+    "sentence": "He went on ___ about his holiday for hours.",
     "correct": "talking",
     "explanation": "<Go on> + gerundio = continuar con la misma actividad.",
     "tip": "go on + -ing = continue the same thing"
   },
   {
-    "sentence": "After the introduction, she went on ______ the main results.",
+    "sentence": "After the introduction, she went on ___ the main results.",
     "correct": "to present",
     "explanation": "<Go on> + infinitivo = pasar a la siguiente actividad o tema.",
     "tip": "go on + to = move to the next thing"
   },
   {
-    "sentence": "Being a doctor means ______ long hours.",
+    "sentence": "Being a doctor means ___ long hours.",
     "correct": "working",
     "explanation": "<Mean> + gerundio = implicar o tener como resultado algo.",
     "tip": "mean + -ing = involve / result in"
   },
   {
-    "sentence": "I didn't mean ______ your feelings.",
+    "sentence": "I didn't mean ___ your feelings.",
     "correct": "to hurt",
     "explanation": "<Mean> + infinitivo = tener la intención de hacer algo.",
     "tip": "mean + to = intend"
   },
   {
-    "sentence": "On the way home, we stopped ______ petrol.",
+    "sentence": "On the way home, we stopped ___ petrol.",
     "correct": "to get",
     "explanation": "<Stop> + infinitivo = detenerse para hacer algo. We stopped to get petrol = nos detuvimos para cargar gasolina.",
     "tip": "stop + to = pause for a purpose"
   },
   {
-    "sentence": "Do you remember ______ this song at school?",
+    "sentence": "Do you remember ___ this song at school?",
     "correct": "singing",
     "explanation": "<Remember> + gerundio = tener el recuerdo de haber hecho algo.",
     "tip": "remember + -ing = recall a past experience"
   },
   {
-    "sentence": "You must remember ______ your passport.",
+    "sentence": "You must remember ___ your passport.",
     "correct": "to bring",
     "explanation": "<Remember> + infinitivo = no olvidar una obligación futura.",
     "tip": "remember + to = don't forget to do it"
   },
   {
-    "sentence": "If the computer crashes, try ______ it off and on again.",
+    "sentence": "If the computer crashes, try ___ it off and on again.",
     "correct": "turning",
     "explanation": "<Try> + gerundio = experimentar con una posible solución.",
     "tip": "try + -ing = test a method"
   },
   {
-    "sentence": "I'll never forget ______ my first car.",
+    "sentence": "I'll never forget ___ my first car.",
     "correct": "buying",
     "explanation": "<Forget> + gerundio = una experiencia pasada memorable que no olvidarás.",
     "tip": "forget + -ing = unforgettable memory"
   },
   {
-    "sentence": "Don't forget ______ the lights before bed.",
+    "sentence": "Don't forget ___ the lights before bed.",
     "correct": "to turn off",
     "explanation": "<Forget> + infinitivo = no lograr recordar una tarea.",
     "tip": "forget + to = remember to do it"

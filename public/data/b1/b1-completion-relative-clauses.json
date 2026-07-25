@@ -1,120 +1,120 @@
 [
   {
-    "sentence": "The woman ______ lives next door is a teacher.",
+    "sentence": "The woman ___ lives next door is a teacher.",
     "correct": "who",
     "explanation": "'Who' se usa para personas en cláusulas relativas <defining> (especificativas). Aquí es el sujeto de la cláusula.",
     "tip": "We're talking about a person — subject of the relative clause"
   },
   {
-    "sentence": "That's the book ______ I told you about.",
+    "sentence": "That's the book ___ I told you about.",
     "correct": "which",
     "explanation": "'Which' (o 'that') se usa para cosas. Aquí es el objeto de la cláusula (I told you about it).",
     "tip": "We're referring to a thing — object of the relative clause"
   },
   {
-    "sentence": "I know a man ______ brother is a famous actor.",
+    "sentence": "I know a man ___ brother is a famous actor.",
     "correct": "whose",
     "explanation": "'Whose' indica posesión — the man's brother. Reemplaza a 'his/her/their' en las cláusulas relativas.",
     "tip": "We're talking about the man's brother — possession relationship"
   },
   {
-    "sentence": "This is the restaurant ______ we had our first date.",
+    "sentence": "This is the restaurant ___ we had our first date.",
     "correct": "where",
     "explanation": "'Where' se usa para lugares. Reemplaza a 'in which' o 'at which'.",
     "tip": "We're referring to a place — think about location"
   },
   {
-    "sentence": "The students ______ passed the exam will go to the next level.",
+    "sentence": "The students ___ passed the exam will go to the next level.",
     "correct": "who",
     "explanation": "'Who' para personas, sujeto de la cláusula relativa (the students passed).",
     "tip": "People as subject — they did the action"
   },
   {
-    "sentence": "The car ______ he bought last week has already broken down.",
+    "sentence": "The car ___ he bought last week has already broken down.",
     "correct": "that",
     "explanation": "'That' (o 'which') para cosas en cláusulas especificativas. Aquí es el objeto (he bought it).",
     "tip": "Referring to a specific thing — object in a defining clause"
   },
   {
-    "sentence": "She's the colleague ______ helped me with the project.",
+    "sentence": "She's the colleague ___ helped me with the project.",
     "correct": "who",
     "explanation": "'Who' para una persona, sujeto de la cláusula relativa (she helped me).",
     "tip": "A person did the action — subject of the clause"
   },
   {
-    "sentence": "The hotel ______ we stayed was right on the beach.",
+    "sentence": "The hotel ___ we stayed was right on the beach.",
     "correct": "where",
     "explanation": "'Where' para lugares — the hotel is a place where we stayed.",
     "tip": "A hotel is a place — think about location"
   },
   {
-    "sentence": "I met a girl ______ father works at NASA.",
+    "sentence": "I met a girl ___ father works at NASA.",
     "correct": "whose",
     "explanation": "'Whose' = the girl's father. Indica posesión en las cláusulas relativas.",
     "tip": "The father belongs to the girl — possession relationship"
   },
   {
-    "sentence": "The film ______ won the Oscar was directed by a newcomer.",
+    "sentence": "The film ___ won the Oscar was directed by a newcomer.",
     "correct": "that",
     "explanation": "'That' (o 'which') para cosas, sujeto de la cláusula (the film won).",
     "tip": "A thing as subject in a defining clause"
   },
   {
-    "sentence": "My sister, ______ is a doctor, lives in Barcelona.",
+    "sentence": "My sister, ___ is a doctor, lives in Barcelona.",
     "correct": "who",
     "explanation": "Cláusula no especificativa (¡con comas!) que da información extra sobre 'my sister'. Se usa 'who' para personas. Nunca 'that'.",
     "tip": "Non-defining clause (commas!) about a person — 'that' is NOT allowed here"
   },
   {
-    "sentence": "The report, ______ was published yesterday, shows alarming data.",
+    "sentence": "The report, ___ was published yesterday, shows alarming data.",
     "correct": "which",
     "explanation": "Cláusula no especificativa (¡con comas!) sobre una cosa — se usa 'which', nunca 'that'.",
     "tip": "Non-defining clause (commas!) about a thing — 'that' is NOT allowed here"
   },
   {
-    "sentence": "That's the reason ______ I left early.",
+    "sentence": "That's the reason ___ I left early.",
     "correct": "why",
     "explanation": "'Why' puede introducir cláusulas relativas sobre razones (the reason why…).",
     "tip": "We're explaining a reason — think about cause/motive"
   },
   {
-    "sentence": "The people ______ I work with are very friendly.",
+    "sentence": "The people ___ I work with are very friendly.",
     "correct": "who",
     "explanation": "'Who' para personas (objeto: I work with them). Aquí también se podría omitir el pronombre.",
     "tip": "People as object — could even be omitted in spoken English"
   },
   {
-    "sentence": "London, ______ is the capital of England, has over 8 million people.",
+    "sentence": "London, ___ is the capital of England, has over 8 million people.",
     "correct": "which",
     "explanation": "No especificativa (comas, información extra sobre London). Cosa/lugar como sujeto → 'which'.",
     "tip": "Non-defining clause (commas!) — a place/thing as subject. 'That' is NOT allowed"
   },
   {
-    "sentence": "The teacher ______ class I enjoy most is Mr. Lopez.",
+    "sentence": "The teacher ___ class I enjoy most is Mr. Lopez.",
     "correct": "whose",
     "explanation": "'Whose' indica posesión — Mr. Lopez's class. Reemplaza a 'his/her'.",
     "tip": "The class belongs to the teacher — possession relationship"
   },
   {
-    "sentence": "This is the park ______ we used to play as children.",
+    "sentence": "This is the park ___ we used to play as children.",
     "correct": "where",
     "explanation": "'Where' se usa para lugares, reemplazando a 'in which'.",
     "tip": "A park is a place — think about location"
   },
   {
-    "sentence": "The doctor ______ treated me was very kind.",
+    "sentence": "The doctor ___ treated me was very kind.",
     "correct": "who",
     "explanation": "'Who' para personas, sujeto de la cláusula (the doctor treated me).",
     "tip": "A person did the action — subject of the clause"
   },
   {
-    "sentence": "I don't understand the reason ______ she left so suddenly.",
+    "sentence": "I don't understand the reason ___ she left so suddenly.",
     "correct": "why",
     "explanation": "'Why' introduce cláusulas relativas sobre razones (the reason why…).",
     "tip": "We're explaining a reason — think about cause/motive"
   },
   {
-    "sentence": "The museum, ______ was built in 1890, attracts many visitors.",
+    "sentence": "The museum, ___ was built in 1890, attracts many visitors.",
     "correct": "which",
     "explanation": "Cláusula no especificativa (con comas) sobre una cosa — se usa 'which', nunca 'that'.",
     "tip": "Non-defining clause (commas!) about a thing — 'that' is NOT allowed here"

@@ -1,6 +1,6 @@
 [
   {
-    "sentence": "Never before ______ such a beautiful sunset.",
+    "sentence": "Never before ___ such a beautiful sunset.",
     "options": [
       "I have seen",
       "have I seen",
@@ -12,7 +12,7 @@
     "tip": "Negative adverbs at the start trigger subject-auxiliary inversion."
   },
   {
-    "sentence": "Scarcely had ______ when the phone rang.",
+    "sentence": "Scarcely had ___ when the phone rang.",
     "options": [
       "I arrived",
       "I arrive",
@@ -24,7 +24,7 @@
     "tip": "These time expressions trigger inversion — think about the auxiliary verb."
   },
   {
-    "sentence": "No sooner had ______ than it started to rain.",
+    "sentence": "No sooner had ___ than it started to rain.",
     "options": [
       "he left",
       "he leave",
@@ -36,7 +36,7 @@
     "tip": "These time expressions trigger inversion — think about the auxiliary verb."
   },
   {
-    "sentence": "Little ______ about his past.",
+    "sentence": "Little ___ about his past.",
     "options": [
       "did he know",
       "he knew",
@@ -48,7 +48,7 @@
     "tip": "'Little' as a negative adverb triggers inversion with 'did'."
   },
   {
-    "sentence": "Only after ______ the truth did she apologize.",
+    "sentence": "Only after ___ the truth did she apologize.",
     "options": [
       "she knew",
       "did she know",
@@ -60,7 +60,7 @@
     "tip": "'Only + time expression' at the start triggers inversion in the main clause."
   },
   {
-    "sentence": "Not until ______ the sun set did they leave.",
+    "sentence": "Not until ___ the sun set did they leave.",
     "options": [
       "did they see",
       "they saw",
@@ -72,7 +72,7 @@
     "tip": "Formal inversion: the auxiliary comes before the subject for emphasis."
   },
   {
-    "sentence": "Rarely ______ such a stunning performance.",
+    "sentence": "Rarely ___ such a stunning performance.",
     "options": [
       "I have witnessed",
       "have I witnessed",
@@ -84,7 +84,7 @@
     "tip": "Negative adverbs at the start trigger subject-auxiliary inversion."
   },
   {
-    "sentence": "Seldom ______ a more captivating story.",
+    "sentence": "Seldom ___ a more captivating story.",
     "options": [
       "I have heard",
       "have I heard",
@@ -96,7 +96,7 @@
     "tip": "Negative adverbs at the start trigger subject-auxiliary inversion."
   },
   {
-    "sentence": "Under no circumstances ______ you reveal this information.",
+    "sentence": "Under no circumstances ___ you reveal this information.",
     "options": [
       "should",
       "will",
@@ -108,7 +108,7 @@
     "tip": "Negative prepositional phrases at the start trigger inversion."
   },
   {
-    "sentence": "On no account ______ you open that package.",
+    "sentence": "On no account ___ you open that package.",
     "options": [
       "should",
       "must",
@@ -120,7 +120,7 @@
     "tip": "Negative prepositional phrases at the start trigger inversion."
   },
   {
-    "sentence": "In no way ______ I agree with his proposal.",
+    "sentence": "In no way ___ I agree with his proposal.",
     "options": [
       "do",
       "did",
@@ -132,7 +132,7 @@
     "tip": "Negative prepositional phrases at the start trigger inversion."
   },
   {
-    "sentence": "At no time ______ he admit his mistake.",
+    "sentence": "At no time ___ he admit his mistake.",
     "options": [
       "did",
       "does",
@@ -144,7 +144,7 @@
     "tip": "Inversion requires an auxiliary verb before the subject."
   },
   {
-    "sentence": "So successful ______ the project that they expanded it.",
+    "sentence": "So successful ___ the project that they expanded it.",
     "options": [
       "was",
       "is",
@@ -156,7 +156,7 @@
     "tip": "'So/Such' at the start for emphasis triggers inverted order."
   },
   {
-    "sentence": "Had I known about the problem, ______ immediately.",
+    "sentence": "Had I known about the problem, ___ immediately.",
     "options": [
       "I would have helped",
       "would I have helped",
@@ -168,7 +168,7 @@
     "tip": "After an inverted conditional with 'Had + subject + past participle', complete the main clause."
   },
   {
-    "sentence": "Should you need anything, ______ me know.",
+    "sentence": "Should you need anything, ___ me know.",
     "options": [
       "let",
       "you let",
@@ -180,7 +180,7 @@
     "tip": "Formal inversion: the auxiliary comes before the subject for emphasis."
   },
   {
-    "sentence": "Not only ______ talented, but he is also very humble.",
+    "sentence": "Not only ___ talented, but he is also very humble.",
     "options": [
       "he is",
       "is he",
@@ -192,7 +192,7 @@
     "tip": "After 'Not only' at the start, use inverted word order (auxiliary + subject)."
   },
   {
-    "sentence": "Rarely ______ such a complex problem.",
+    "sentence": "Rarely ___ such a complex problem.",
     "options": [
       "I have encountered",
       "have I encountered",
@@ -204,7 +204,7 @@
     "tip": "Negative adverbs at the start trigger subject-auxiliary inversion."
   },
   {
-    "sentence": "Little ______ about the consequences of his actions.",
+    "sentence": "Little ___ about the consequences of his actions.",
     "options": [
       "did he think",
       "he thought",
@@ -216,7 +216,7 @@
     "tip": "'Little' as a negative adverb triggers inversion with 'did'."
   },
   {
-    "sentence": "No sooner had ______ than the alarm went off.",
+    "sentence": "No sooner had ___ than the alarm went off.",
     "options": [
       "they arrived",
       "they arrive",
@@ -228,7 +228,7 @@
     "tip": "These time expressions trigger inversion — think about the auxiliary verb."
   },
   {
-    "sentence": "Only when ______ the truth did she understand.",
+    "sentence": "Only when ___ the truth did she understand.",
     "options": [
       "she heard",
       "did she hear",

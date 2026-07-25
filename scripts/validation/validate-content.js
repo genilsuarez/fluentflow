@@ -59,11 +59,7 @@ const TIME_FORMULAS = {
 /** CEFR level order for cross-level comparisons */
 const LEVEL_ORDER = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'];
 
-/**
- * The CompletionComponent splits sentences on this exact string.
- * See: src/components/learning/CompletionComponent.tsx → renderSentence()
- */
-const COMPLETION_BLANK = '______'; // 6 underscores
+import { BLANK_MARKER, NON_CANONICAL_BLANK_PATTERN } from '../blank-marker.js';
 
 // ============================================================
 // HELPERS
@@ -174,9 +170,11 @@ function validateCompletion(items, fileName) {
       err('CP-FIELD', `${fileName}[${i}]: missing or invalid "correct"`);
     }
 
-    // Blank marker check — CompletionComponent.tsx splits on '______'
-    if (!item.sentence.includes(COMPLETION_BLANK)) {
-      err('CP-BLANK', `${fileName}[${i}]: sentence missing blank marker "${COMPLETION_BLANK}"`);
+    // Blank marker check — see src/utils/blankMarker.ts
+    if (!item.sentence.includes(BLANK_MARKER)) {
+      err('CP-BLANK', `${fileName}[${i}]: sentence missing blank marker "${BLANK_MARKER}"`);
+    } else if (NON_CANONICAL_BLANK_PATTERN.test(item.sentence)) {
+      err('CP-BLANK-LEN', `${fileName}[${i}]: sentence uses non-canonical blank (expected exactly "${BLANK_MARKER}")`);
     }
 
     // If has options, correct must be in options
@@ -306,9 +304,6 @@ function validateErrorCorrection(items, fileName) {
   }
 }
 
-/** WordFormationComponent renders the blank via the 5-underscore marker "_____". */
-const WORD_FORMATION_BLANK = '_____';
-
 function validateWordFormation(items, fileName) {
   for (let i = 0; i < items.length; i++) {
     const item = items[i];
@@ -316,8 +311,10 @@ function validateWordFormation(items, fileName) {
       err('WF-FIELD', `${fileName}[${i}]: missing or invalid "sentence"`);
       continue;
     }
-    if (!item.sentence.includes(WORD_FORMATION_BLANK)) {
-      err('WF-BLANK', `${fileName}[${i}]: sentence missing blank marker "${WORD_FORMATION_BLANK}"`);
+    if (!item.sentence.includes(BLANK_MARKER)) {
+      err('WF-BLANK', `${fileName}[${i}]: sentence missing blank marker "${BLANK_MARKER}"`);
+    } else if (NON_CANONICAL_BLANK_PATTERN.test(item.sentence)) {
+      err('WF-BLANK-LEN', `${fileName}[${i}]: sentence uses non-canonical blank (expected exactly "${BLANK_MARKER}")`);
     }
     if (!item.rootWord || typeof item.rootWord !== 'string') {
       err('WF-FIELD', `${fileName}[${i}]: missing or invalid "rootWord"`);

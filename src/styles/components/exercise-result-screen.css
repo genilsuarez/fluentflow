@@ -2,10 +2,15 @@
 
 .exercise-result {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  max-width: 100%;
   min-height: 60vh;
-  padding: 1rem;
+  margin: 0 auto;
+  padding: clamp(12px, 3vw, 1rem);
+  box-sizing: border-box;
   animation: exerciseResultFadeIn 0.4s var(--ease-smooth);
 }
 
@@ -30,8 +35,10 @@
   background-color: var(--theme-bg-elevated, #ffffff);
   box-shadow: var(--shadow-medium, 0 4px 6px rgba(0, 0, 0, 0.1));
   border: 2px solid transparent;
+  width: min(100%, 22rem);
   max-width: 22rem;
-  width: 100%;
+  margin-inline: auto;
+  box-sizing: border-box;
   text-align: center;
 }
 
@@ -105,14 +112,20 @@
 .exercise-result__stats {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1.25rem;
+  width: 100%;
 }
 
 .exercise-result__stat {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 0.125rem;
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 6rem;
 }
 
 .exercise-result__stat-value {
@@ -227,16 +240,36 @@ html.dark .exercise-result__btn--secondary {
   color: var(--theme-text-secondary, #d1d5db);
 }
 
-/* Mobile — ~15% vertical compaction (pass + fail) */
+/* Mobile — centered in learning shell (all game modes) */
 @media (--lp-mobile-md) {
+  .layout-container:not([data-view='menu']) .layout-main > .exercise-result {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 0.75rem clamp(12px, 3vw, 16px);
+    box-sizing: border-box;
+  }
+
   .exercise-result {
-    min-height: 50vh;
-    padding: 0.75rem;
+    min-height: 0;
+    padding: 0.75rem clamp(12px, 3vw, 16px);
   }
 
   .exercise-result__card {
     gap: 0.625rem;
     padding: 1.25rem 1rem;
+    width: min(100%, 22rem);
+    max-width: 22rem;
+    margin-inline: auto;
   }
 
   .exercise-result__icon {

@@ -450,7 +450,7 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
       </div>
 
       {/* Unified Control Bar */}
-      <div className="game-controls">
+      <div className={`game-controls${showResult ? ' game-controls--post-check' : ''}`}>
         {/* Home Navigation */}
         <GameControlsExitButton
           onClick={handleReturnToMenu}
@@ -476,7 +476,11 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
           </>
         ) : (
           <>
-            <GameControlsIconButton onClick={showSummaryModal} title={t('learning.viewSummary')}>
+            <GameControlsIconButton
+              onClick={showSummaryModal}
+              title={t('learning.viewSummary')}
+              showOnMobile
+            >
               <Info className="game-controls__action-icon" />
             </GameControlsIconButton>
             <button onClick={finishExercise} className="game-controls__primary-btn">

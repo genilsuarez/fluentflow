@@ -1,120 +1,120 @@
 [
   {
-    "sentence": "Yesterday I ______ to the store.",
+    "sentence": "Yesterday I ___ to the store.",
     "correct": "went",
     "explanation": "Usa <went> (pasado de <go>) para acciones completadas en el pasado",
     "tip": "Complete with the past tense of <go>"
   },
   {
-    "sentence": "She ______ her homework last night.",
+    "sentence": "She ___ her homework last night.",
     "correct": "did",
     "explanation": "Usa <did> (pasado de <do>) para acciones completadas",
     "tip": "Complete with the past tense of <do>"
   },
   {
-    "sentence": "We ______ pizza for dinner.",
+    "sentence": "We ___ pizza for dinner.",
     "correct": "ate",
     "explanation": "Usa <ate> (pasado de <eat>) para acciones completadas",
     "tip": "Complete with the past tense of <eat>"
   },
   {
-    "sentence": "He ______ a movie yesterday.",
+    "sentence": "He ___ a movie yesterday.",
     "correct": "watched",
     "explanation": "Usa <watched> (pasado de <watch>) - verbo regular, se añade -ed",
     "tip": "Complete with the past tense of <watch>"
   },
   {
-    "sentence": "They ______ to music all evening.",
+    "sentence": "They ___ to music all evening.",
     "correct": "listened",
     "explanation": "Usa <listened> (pasado de <listen>) - verbo regular, se añade -ed",
     "tip": "Complete with the past tense of <listen>"
   },
   {
-    "sentence": "I ______ my friend on the phone.",
+    "sentence": "I ___ my friend on the phone.",
     "correct": "called",
     "explanation": "Usa <called> (pasado de <call>) - verbo regular, se añade -ed",
     "tip": "Complete with the past tense of <call>"
   },
   {
-    "sentence": "She ______ a beautiful dress.",
+    "sentence": "She ___ a beautiful dress.",
     "correct": "wore",
     "explanation": "Usa <wore> (pasado de <wear>) - verbo irregular",
     "tip": "Complete with the past tense of <wear>"
   },
   {
-    "sentence": "We ______ at the beach all day.",
+    "sentence": "We ___ at the beach all day.",
     "correct": "played",
     "explanation": "Usa <played> (pasado de <play>) - verbo regular, se añade -ed",
     "tip": "Complete with the past tense of <play>"
   },
   {
-    "sentence": "He ______ his car to work.",
+    "sentence": "He ___ his car to work.",
     "correct": "drove",
     "explanation": "Usa <drove> (pasado de <drive>) - verbo irregular",
     "tip": "Complete with the past tense of <drive>"
   },
   {
-    "sentence": "I ______ eight hours last night.",
+    "sentence": "I ___ eight hours last night.",
     "correct": "slept",
     "explanation": "Usa <slept> (pasado de <sleep>) - verbo irregular",
     "tip": "Complete with the past tense of <sleep>"
   },
   {
-    "sentence": "She ______ a letter to her grandmother.",
+    "sentence": "She ___ a letter to her grandmother.",
     "correct": "wrote",
     "explanation": "Usa <wrote> (pasado de <write>) - verbo irregular",
     "tip": "Complete with the past tense of <write>"
   },
   {
-    "sentence": "We ______ our house last summer.",
+    "sentence": "We ___ our house last summer.",
     "correct": "painted",
     "explanation": "Usa <painted> (pasado de <paint>) - verbo regular, se añade -ed",
     "tip": "Complete with the past tense of <paint>"
   },
   {
-    "sentence": "He ______ his keys in the car.",
+    "sentence": "He ___ his keys in the car.",
     "correct": "left",
     "explanation": "Usa <left> (pasado de <leave>) - verbo irregular",
     "tip": "Complete with the past tense of <leave>"
   },
   {
-    "sentence": "They ______ a new apartment.",
+    "sentence": "They ___ a new apartment.",
     "correct": "found",
     "explanation": "Usa <found> (pasado de <find>) - verbo irregular",
     "tip": "Complete with the past tense of <find>"
   },
   {
-    "sentence": "I ______ my grandmother last weekend.",
+    "sentence": "I ___ my grandmother last weekend.",
     "correct": "visited",
     "explanation": "Usa <visited> (pasado de <visit>) - verbo regular, se añade -ed",
     "tip": "Complete with the past tense of <visit>"
   },
   {
-    "sentence": "She ______ a cake for the party.",
+    "sentence": "She ___ a cake for the party.",
     "correct": "made",
     "explanation": "Usa <made> (pasado de <make>) - verbo irregular",
     "tip": "Complete with the past tense of <make>"
   },
   {
-    "sentence": "We ______ to the park after lunch.",
+    "sentence": "We ___ to the park after lunch.",
     "correct": "walked",
     "explanation": "Usa <walked> (pasado de <walk>) - verbo regular, se añade -ed",
     "tip": "Complete with the past tense of <walk>"
   },
   {
-    "sentence": "He ______ his bicycle to school.",
+    "sentence": "He ___ his bicycle to school.",
     "correct": "rode",
     "explanation": "Usa <rode> (pasado de <ride>) - verbo irregular",
     "tip": "Complete with the past tense of <ride>"
   },
   {
-    "sentence": "I ______ a book before bed.",
+    "sentence": "I ___ a book before bed.",
     "correct": "read",
     "explanation": "Usa <read> (pasado de <read>) - misma escritura, pronunciación diferente",
     "tip": "Complete with the past tense of <read> — same spelling, different pronunciation!"
   },
   {
-    "sentence": "She ______ her room yesterday.",
+    "sentence": "She ___ her room yesterday.",
     "correct": "cleaned",
     "explanation": "Usa <cleaned> (pasado de <clean>) - verbo regular, se añade -ed",
     "tip": "Complete with the past tense of <clean>"

@@ -1,139 +1,139 @@
 [
   {
-    "sentence": "I have ______ cat. It's very friendly.",
+    "sentence": "I have ___ cat. It's very friendly.",
     "correct": "a",
     "explanation": "Se usa <a> antes de sustantivos contables singulares que comienzan con sonido consonántico.",
     "tip": "a / an / the — deja vacío si no lleva artículo",
     "showPlaceholder": false
   },
   {
-    "sentence": "She is ______ honest person.",
+    "sentence": "She is ___ honest person.",
     "correct": "an",
     "explanation": "Se usa <an> antes de palabras que empiezan con una 'h' muda (sonido vocálico): <an honest>.",
     "tip": "a / an / the — deja vacío si no lleva artículo",
     "showPlaceholder": false
   },
   {
-    "sentence": "I saw ______ elephant at the zoo yesterday.",
+    "sentence": "I saw ___ elephant at the zoo yesterday.",
     "correct": "an",
     "explanation": "Se usa <an> antes de palabras que comienzan con sonido vocálico: <an elephant>.",
     "tip": "a / an / the — deja vacío si no lleva artículo",
     "showPlaceholder": false
   },
   {
-    "sentence": "Can you close ______ door, please?",
+    "sentence": "Can you close ___ door, please?",
     "correct": "the",
     "explanation": "Se usa <the> cuando tanto el hablante como el oyente saben a qué cosa específica se refiere.",
     "tip": "a / an / the — deja vacío si no lleva artículo",
     "showPlaceholder": false
   },
   {
-    "sentence": "______ sun rises in the east.",
+    "sentence": "___ sun rises in the east.",
     "correct": "The",
     "explanation": "Se usa <the> con cosas únicas — solo hay un sol.",
     "tip": "a / an / the — deja vacío si no lleva artículo",
     "showPlaceholder": false
   },
   {
-    "sentence": "I want to be ______ engineer when I grow up.",
+    "sentence": "I want to be ___ engineer when I grow up.",
     "correct": "an",
     "explanation": "Se usa <an> antes de sonidos vocálicos. 'Engineer' comienza con /ɛ/.",
     "tip": "a / an / the — deja vacío si no lleva artículo",
     "showPlaceholder": false
   },
   {
-    "sentence": "She goes to ______ school every morning.",
+    "sentence": "She goes to ___ school every morning.",
     "correct": "∅",
     "explanation": "No se usa artículo con 'go to school' cuando se refiere a la actividad habitual (no al edificio).",
     "tip": "a / an / the — deja vacío si no lleva artículo",
     "showPlaceholder": false
   },
   {
-    "sentence": "He plays ______ guitar very well.",
+    "sentence": "He plays ___ guitar very well.",
     "correct": "the",
     "explanation": "Se usa <the> con instrumentos musicales: <play the guitar>, <play the piano>.",
     "tip": "a / an / the — deja vacío si no lleva artículo",
     "showPlaceholder": false
   },
   {
-    "sentence": "I had ______ breakfast at 7 o'clock.",
+    "sentence": "I had ___ breakfast at 7 o'clock.",
     "correct": "∅",
     "explanation": "No se usa artículo con los nombres de las comidas: <have breakfast>, <have lunch>, <have dinner>.",
     "tip": "a / an / the — deja vacío si no lleva artículo",
     "showPlaceholder": false
   },
   {
-    "sentence": "There is ______ university near my house.",
+    "sentence": "There is ___ university near my house.",
     "correct": "a",
     "explanation": "Se usa <a> antes de 'university' porque comienza con el sonido /juː/ (sonido consonántico), no vocálico.",
     "tip": "a / an / the — deja vacío si no lleva artículo",
     "showPlaceholder": false
   },
   {
-    "sentence": "______ water is important for life.",
+    "sentence": "___ water is important for life.",
     "correct": "∅",
     "explanation": "No se usa artículo con sustantivos incontables cuando se habla en general.",
     "tip": "a / an / the — deja vacío si no lleva artículo",
     "showPlaceholder": false
   },
   {
-    "sentence": "She bought ______ new dress. ______ dress was blue.",
+    "sentence": "She bought ___ new dress. ___ dress was blue.",
     "correct": "a, The",
     "explanation": "Se usa <a> para la primera mención (información nueva) y <the> para la segunda mención (ya conocida).",
     "tip": "Two gaps: first mention vs. second mention",
     "showPlaceholder": false
   },
   {
-    "sentence": "I like ______ dogs. They are loyal animals.",
+    "sentence": "I like ___ dogs. They are loyal animals.",
     "correct": "∅",
     "explanation": "No se usa artículo cuando se habla de las cosas en general (todos los perros, no unos específicos).",
     "tip": "a / an / the — deja vacío si no lleva artículo",
     "showPlaceholder": false
   },
   {
-    "sentence": "He goes to ______ bed at 10 pm every night.",
+    "sentence": "He goes to ___ bed at 10 pm every night.",
     "correct": "∅",
     "explanation": "No se usa artículo con 'go to bed' cuando se habla de la actividad de dormir.",
     "tip": "a / an / the — deja vacío si no lleva artículo",
     "showPlaceholder": false
   },
   {
-    "sentence": "She plays ______ tennis on Saturdays.",
+    "sentence": "She plays ___ tennis on Saturdays.",
     "correct": "∅",
     "explanation": "No se usa artículo con los deportes: <play tennis>, <play football>, <play basketball>.",
     "tip": "a / an / the — deja vacío si no lleva artículo",
     "showPlaceholder": false
   },
   {
-    "sentence": "Look! ______ moon is beautiful tonight.",
+    "sentence": "Look! ___ moon is beautiful tonight.",
     "correct": "The",
     "explanation": "Se usa <the> con objetos únicos — solo hay una luna.",
     "tip": "a / an / the — deja vacío si no lleva artículo",
     "showPlaceholder": false
   },
   {
-    "sentence": "I need ______ umbrella. It's raining.",
+    "sentence": "I need ___ umbrella. It's raining.",
     "correct": "an",
     "explanation": "Se usa <an> antes de palabras que comienzan con sonido vocálico: <an umbrella>.",
     "tip": "a / an / the — deja vacío si no lleva artículo",
     "showPlaceholder": false
   },
   {
-    "sentence": "He is ______ best student in the class.",
+    "sentence": "He is ___ best student in the class.",
     "correct": "the",
     "explanation": "Se usa <the> con los superlativos: <the best>, <the tallest>, <the most interesting>.",
     "tip": "a / an / the — deja vacío si no lleva artículo",
     "showPlaceholder": false
   },
   {
-    "sentence": "We live in ______ small apartment in the city center.",
+    "sentence": "We live in ___ small apartment in the city center.",
     "correct": "a",
     "explanation": "Se usa <a> cuando se menciona algo por primera vez (no específico).",
     "tip": "a / an / the — deja vacío si no lleva artículo",
     "showPlaceholder": false
   },
   {
-    "sentence": "I always have ______ coffee in the morning.",
+    "sentence": "I always have ___ coffee in the morning.",
     "correct": "∅",
     "explanation": "No se usa artículo con sustantivos incontables en afirmaciones generales sobre hábitos.",
     "tip": "a / an / the — deja vacío si no lleva artículo",

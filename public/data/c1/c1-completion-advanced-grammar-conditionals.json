@@ -1,6 +1,6 @@
 [
   {
-    "sentence": "If I ______ you, I would study more for the exam.",
+    "sentence": "If I ___ you, I would study more for the exam.",
     "options": [
       "am",
       "were",
@@ -12,7 +12,7 @@
     "tip": "In hypothetical situations, use the subjunctive form for all subjects."
   },
   {
-    "sentence": "Had I known about the traffic, I ______ a different route.",
+    "sentence": "Had I known about the traffic, I ___ a different route.",
     "options": [
       "would take",
       "would have taken",
@@ -24,7 +24,7 @@
     "tip": "This is an inverted conditional — no 'if' needed when the clause starts with 'had'."
   },
   {
-    "sentence": "If you heat water to 100 degrees, it ______.",
+    "sentence": "If you heat water to 100 degrees, it ___.",
     "options": [
       "boils",
       "will boil",
@@ -36,7 +36,7 @@
     "tip": "Zero conditional: general truths use present simple in both clauses."
   },
   {
-    "sentence": "Unless you ______ now, you will miss the train.",
+    "sentence": "Unless you ___ now, you will miss the train.",
     "options": [
       "leave",
       "don't leave",
@@ -48,7 +48,7 @@
     "tip": "'Unless' means 'if not' — the verb stays affirmative."
   },
   {
-    "sentence": "She would be a great musician if she ______ more.",
+    "sentence": "She would be a great musician if she ___ more.",
     "options": [
       "practiced",
       "practices",
@@ -60,7 +60,7 @@
     "tip": "Identify the conditional type (0, 1, 2, 3, or mixed) to choose the right tense."
   },
   {
-    "sentence": "If she had studied, she ______ the exam.",
+    "sentence": "If she had studied, she ___ the exam.",
     "options": [
       "will pass",
       "would pass",
@@ -72,7 +72,7 @@
     "tip": "Think about an unreal past result — third conditional structure."
   },
   {
-    "sentence": "What would you do if it ______ tomorrow?",
+    "sentence": "What would you do if it ___ tomorrow?",
     "options": [
       "rains",
       "rained",
@@ -84,7 +84,7 @@
     "tip": "Identify the conditional type (0, 1, 2, 3, or mixed) to choose the right tense."
   },
   {
-    "sentence": "If I see him, I ______ him the message.",
+    "sentence": "If I see him, I ___ him the message.",
     "options": [
       "give",
       "will give",
@@ -96,7 +96,7 @@
     "tip": "Identify the conditional type (0, 1, 2, 3, or mixed) to choose the right tense."
   },
   {
-    "sentence": "They would have been lost if he ______ a map.",
+    "sentence": "They would have been lost if he ___ a map.",
     "options": [
       "didn't bring",
       "hadn't brought",
@@ -108,7 +108,7 @@
     "tip": "Identify the conditional type (0, 1, 2, 3, or mixed) to choose the right tense."
   },
   {
-    "sentence": "If you mix red and blue, you ______ purple.",
+    "sentence": "If you mix red and blue, you ___ purple.",
     "options": [
       "got",
       "get",
@@ -120,7 +120,7 @@
     "tip": "Zero conditional: general truths use present simple in both clauses."
   },
   {
-    "sentence": "Provided that you ______ on time, you'll get a good seat.",
+    "sentence": "Provided that you ___ on time, you'll get a good seat.",
     "options": [
       "arrive",
       "arrived",
@@ -132,7 +132,7 @@
     "tip": "This conditional connector works like 'if' but with a condition emphasis."
   },
   {
-    "sentence": "If the weather ______ better, we would have gone to the beach.",
+    "sentence": "If the weather ___ better, we would have gone to the beach.",
     "options": [
       "was",
       "had been",
@@ -144,7 +144,7 @@
     "tip": "Identify the conditional type (0, 1, 2, 3, or mixed) to choose the right tense."
   },
   {
-    "sentence": "He will be late unless he ______ now.",
+    "sentence": "He will be late unless he ___ now.",
     "options": [
       "hurry",
       "hurries",
@@ -156,7 +156,7 @@
     "tip": "'Unless' means 'if not' — the verb stays affirmative."
   },
   {
-    "sentence": "If I had the money, I ______ a new car.",
+    "sentence": "If I had the money, I ___ a new car.",
     "options": [
       "will buy",
       "bought",
@@ -168,7 +168,7 @@
     "tip": "The result clause of a hypothetical uses 'would' + base verb."
   },
   {
-    "sentence": "Should you ______ any help, just ask.",
+    "sentence": "Should you ___ any help, just ask.",
     "options": [
       "need",
       "needed",
@@ -180,7 +180,7 @@
     "tip": "Identify the conditional type (0, 1, 2, 3, or mixed) to choose the right tense."
   },
   {
-    "sentence": "If he ______ harder, he will succeed.",
+    "sentence": "If he ___ harder, he will succeed.",
     "options": [
       "try",
       "tried",
@@ -192,7 +192,7 @@
     "tip": "Identify the conditional type (0, 1, 2, 3, or mixed) to choose the right tense."
   },
   {
-    "sentence": "Water turns to ice if the temperature ______ below zero.",
+    "sentence": "Water turns to ice if the temperature ___ below zero.",
     "options": [
       "drop",
       "drops",
@@ -204,7 +204,7 @@
     "tip": "Identify the conditional type (0, 1, 2, 3, or mixed) to choose the right tense."
   },
   {
-    "sentence": "If they had invited me, I ______.",
+    "sentence": "If they had invited me, I ___.",
     "options": [
       "went",
       "would go",
@@ -216,7 +216,7 @@
     "tip": "Think about an unreal past result — third conditional structure."
   },
   {
-    "sentence": "As long as you ______ quiet, you can stay.",
+    "sentence": "As long as you ___ quiet, you can stay.",
     "options": [
       "keep",
       "kept",
@@ -228,7 +228,7 @@
     "tip": "This conditional connector works like 'if' but with a condition emphasis."
   },
   {
-    "sentence": "Unless it ______ tomorrow, we will go for a picnic.",
+    "sentence": "Unless it ___ tomorrow, we will go for a picnic.",
     "options": [
       "rains",
       "rained",

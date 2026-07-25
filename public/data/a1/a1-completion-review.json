@@ -1,120 +1,120 @@
 [
   {
-    "sentence": "I need to ______ early tomorrow for school.",
+    "sentence": "I need to ___ early tomorrow for school.",
     "correct": "wake up",
     "tip": "Phrasal verb con <wake>: dejar de dormir (2 palabras)",
     "explanation": "El phrasal verb <wake up> significa dejar de dormir."
   },
   {
-    "sentence": "Please ______ the TV. It's too loud.",
+    "sentence": "Please ___ the TV. It's too loud.",
     "correct": "turn off",
     "tip": "Phrasal verb con <turn>: apagar completamente (2 palabras)",
     "explanation": "El phrasal verb <turn off> significa apagar un aparato."
   },
   {
-    "sentence": "She ______ her coat because it was cold outside.",
+    "sentence": "She ___ her coat because it was cold outside.",
     "correct": "put on",
     "tip": "Phrasal verb con <put>: lo contrario de quitarse (2 palabras)",
     "explanation": "El phrasal verb <put on> significa ponerse ropa."
   },
   {
-    "sentence": "Can you ______ this word in the dictionary?",
+    "sentence": "Can you ___ this word in the dictionary?",
     "correct": "look up",
     "tip": "Phrasal verb con <look>: buscar información en una referencia (2 palabras)",
     "explanation": "El phrasal verb <look up> significa buscar información."
   },
   {
-    "sentence": "He ______ smoking last year.",
+    "sentence": "He ___ smoking last year.",
     "correct": "gave up",
     "tip": "Phrasal verb <give up> en pasado: abandonar un hábito (2 palabras)",
     "explanation": "El phrasal verb <give up> significa dejar de hacer algo."
   },
   {
-    "sentence": "Don't ______ your shoes on the sofa.",
+    "sentence": "Don't ___ your shoes on the sofa.",
     "correct": "take off",
     "tip": "Phrasal verb con <take>: lo contrario de ponerse (2 palabras)",
     "explanation": "El phrasal verb <take off> significa quitarse ropa o zapatos."
   },
   {
-    "sentence": "I ran ______ of milk, so I went to the shop.",
+    "sentence": "I ran ___ of milk, so I went to the shop.",
     "correct": "out",
     "tip": "Completa el phrasal verb: run ___ of (una partícula)",
     "explanation": "El phrasal verb <run out of> significa quedarse sin algo."
   },
   {
-    "sentence": "It's raining cats and dogs means it's raining ______.",
+    "sentence": "It's raining cats and dogs means it's raining ___.",
     "correct": "very hard",
     "tip": "Modismo: 'muy fuerte' en 2 palabras (very + adjetivo)",
     "explanation": "El modismo <raining cats and dogs> significa que está lloviendo muy fuerte."
   },
   {
-    "sentence": "Break a leg means ______.",
+    "sentence": "Break a leg means ___.",
     "correct": "good luck",
     "tip": "Modismo: 'buena suerte' en inglés (2 palabras)",
     "explanation": "El modismo <break a leg> se usa para desearle buena suerte a alguien."
   },
   {
-    "sentence": "A piece of cake means something is very ______.",
+    "sentence": "A piece of cake means something is very ___.",
     "correct": "easy",
     "tip": "Modismo: 'pan comido' — adjetivo de 4 letras",
     "explanation": "El modismo <a piece of cake> significa que algo es muy fácil de hacer."
   },
   {
-    "sentence": "Hit the books means to ______ hard.",
+    "sentence": "Hit the books means to ___ hard.",
     "correct": "study",
     "tip": "Modismo: verbo que significa 'estudiar' (5 letras)",
     "explanation": "El modismo <hit the books> significa estudiar intensamente."
   },
   {
-    "sentence": "Under the weather means feeling ______.",
+    "sentence": "Under the weather means feeling ___.",
     "correct": "sick",
     "tip": "Modismo: adjetivo de 4 letras que significa 'enfermo'",
     "explanation": "El modismo <under the weather> significa sentirse enfermo o mal."
   },
   {
-    "sentence": "Let the cat out of the bag means to reveal a ______.",
+    "sentence": "Let the cat out of the bag means to reveal a ___.",
     "correct": "secret",
     "tip": "Modismo: algo que se mantiene oculto a propósito (6 letras)",
     "explanation": "El modismo <let the cat out of the bag> significa revelar un secreto."
   },
   {
-    "sentence": "A person who teaches is a ______.",
+    "sentence": "A person who teaches is a ___.",
     "correct": "teacher",
     "tip": "Formación: <teach> + sufijo <-er>",
     "explanation": "Añadir el sufijo <-er> a <teach> forma el sustantivo <teacher> (una persona que enseña)."
   },
   {
-    "sentence": "A person who acts in films is an ______.",
+    "sentence": "A person who acts in films is an ___.",
     "correct": "actor",
     "tip": "Formación: <act> + sufijo <-or>",
     "explanation": "Añadir el sufijo <-or> a <act> forma el sustantivo <actor>."
   },
   {
-    "sentence": "The opposite of happy is ______.",
+    "sentence": "The opposite of happy is ___.",
     "correct": "unhappy",
     "tip": "Aplica el prefijo <un-> a <happy>",
     "explanation": "Añadir el prefijo <un-> a <happy> crea el significado opuesto: <unhappy>."
   },
   {
-    "sentence": "Something that is full of beauty is ______.",
+    "sentence": "Something that is full of beauty is ___.",
     "correct": "beautiful",
     "tip": "Formación: <beauty> + sufijo <-ful>",
     "explanation": "Añadir el sufijo <-ful> a <beauty> forma el adjetivo <beautiful>."
   },
   {
-    "sentence": "A person who plays music is a ______.",
+    "sentence": "A person who plays music is a ___.",
     "correct": "musician",
     "tip": "Formación: <music> + sufijo <-ian>",
     "explanation": "Añadir el sufijo <-ian> a <music> forma el sustantivo <musician>."
   },
   {
-    "sentence": "Something without care is ______.",
+    "sentence": "Something without care is ___.",
     "correct": "careless",
     "tip": "Formación: <care> + sufijo <-less>",
     "explanation": "Añadir el sufijo <-less> a <care> significa sin cuidado: <careless>."
   },
   {
-    "sentence": "She ______ to school every day.",
+    "sentence": "She ___ to school every day.",
     "correct": "doesn't go",
     "tip": "Negativo en presente simple con she: <doesn't> + verbo base de <go>",
     "explanation": "Para formar el negativo en presente simple con she/he: <doesn't> + verbo en forma base."

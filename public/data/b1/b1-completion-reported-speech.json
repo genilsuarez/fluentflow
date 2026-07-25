@@ -1,120 +1,120 @@
 [
   {
-    "sentence": "\"I am tired,\" she said. → She said she ______ tired.",
+    "sentence": "\"I am tired,\" she said. → She said she ___ tired.",
     "correct": "was",
     "explanation": "Backshift: present simple 'am' → past simple 'was' in reported speech.",
     "tip": "Backshift the verb"
   },
   {
-    "sentence": "\"I will call you,\" he said. → He said he ______ call me.",
+    "sentence": "\"I will call you,\" he said. → He said he ___ call me.",
     "correct": "would",
     "explanation": "Backshift: 'will' → 'would' in reported speech.",
     "tip": "Backshift the modal"
   },
   {
-    "sentence": "\"We are leaving tomorrow,\" they said. → They said they ______ leaving the next day.",
+    "sentence": "\"We are leaving tomorrow,\" they said. → They said they ___ leaving the next day.",
     "correct": "were",
     "explanation": "Backshift: 'are' → 'were'. Time shift: 'tomorrow' → 'the next day'.",
     "tip": "Backshift + time shift"
   },
   {
-    "sentence": "\"I can swim,\" she told me. → She told me she ______ swim.",
+    "sentence": "\"I can swim,\" she told me. → She told me she ___ swim.",
     "correct": "could",
     "explanation": "Backshift: 'can' → 'could' in reported speech.",
     "tip": "Backshift the modal"
   },
   {
-    "sentence": "\"I have finished,\" he said. → He said he ______ finished.",
+    "sentence": "\"I have finished,\" he said. → He said he ___ finished.",
     "correct": "had",
     "explanation": "Backshift: present perfect 'have' → past perfect 'had'.",
     "tip": "Backshift present perfect → past perfect"
   },
   {
-    "sentence": "\"I don't like coffee,\" she said. → She said she ______ like coffee.",
+    "sentence": "\"I don't like coffee,\" she said. → She said she ___ like coffee.",
     "correct": "didn't",
     "explanation": "Backshift: 'don't' → 'didn't' in reported speech.",
     "tip": "Backshift the negative"
   },
   {
-    "sentence": "\"We went to Paris,\" they said. → They said they ______ to Paris.",
+    "sentence": "\"We went to Paris,\" they said. → They said they ___ to Paris.",
     "correct": "had gone",
     "explanation": "Backshift: past simple 'went' → past perfect 'had gone'.",
     "tip": "Backshift past simple → past perfect"
   },
   {
-    "sentence": "\"I'm working here,\" she said. → She said she ______ working there.",
+    "sentence": "\"I'm working here,\" she said. → She said she ___ working there.",
     "correct": "was",
     "explanation": "Backshift: 'am' → 'was'. Place shift: 'here' → 'there'.",
     "tip": "Backshift + place shift"
   },
   {
-    "sentence": "\"You must study harder,\" the teacher said. → The teacher said I ______ study harder.",
+    "sentence": "\"You must study harder,\" the teacher said. → The teacher said I ___ study harder.",
     "correct": "had to",
     "explanation": "Backshift: 'must' → 'had to' in reported speech.",
     "tip": "Backshift 'must'"
   },
   {
-    "sentence": "\"I saw her yesterday,\" he said. → He said he ______ her the day before.",
+    "sentence": "\"I saw her yesterday,\" he said. → He said he ___ her the day before.",
     "correct": "had seen",
     "explanation": "Backshift: 'saw' → 'had seen'. Time shift: 'yesterday' → 'the day before'.",
     "tip": "Backshift + time shift"
   },
   {
-    "sentence": "\"I'll be there at 6,\" she promised. → She promised she ______ be there at 6.",
+    "sentence": "\"I'll be there at 6,\" she promised. → She promised she ___ be there at 6.",
     "correct": "would",
     "explanation": "Retroceso verbal (backshift): 'will' → 'would'. El verbo introductorio 'promised' ya está en pasado.",
     "tip": "Backshift the future"
   },
   {
-    "sentence": "\"Do you like pizza?\" he asked. → He asked me ______ I liked pizza.",
+    "sentence": "\"Do you like pizza?\" he asked. → He asked me ___ I liked pizza.",
     "correct": "if",
     "explanation": "Yes/No questions in reported speech use 'if' or 'whether' + statement word order.",
     "tip": "Reported yes/no question"
   },
   {
-    "sentence": "\"Where do you live?\" she asked. → She asked me where I ______.",
+    "sentence": "\"Where do you live?\" she asked. → She asked me where I ___.",
     "correct": "lived",
     "explanation": "Las preguntas con wh- conservan la palabra interrogativa pero cambian al orden de una oración afirmativa. Retroceso verbal: 'live' → 'lived'.",
     "tip": "Reported wh-question"
   },
   {
-    "sentence": "\"Don't touch that!\" he told me. → He told me ______ to touch that.",
+    "sentence": "\"Don't touch that!\" he told me. → He told me ___ to touch that.",
     "correct": "not",
     "explanation": "Reported commands use 'told + object + (not) + to-infinitive'.",
     "tip": "Reported negative command"
   },
   {
-    "sentence": "\"Please sit down,\" the teacher said. → The teacher asked us ______ sit down.",
+    "sentence": "\"Please sit down,\" the teacher said. → The teacher asked us ___ sit down.",
     "correct": "to",
     "explanation": "Reported requests use 'asked + object + to-infinitive'.",
     "tip": "Reported request"
   },
   {
-    "sentence": "\"I may come later,\" she said. → She said she ______ come later.",
+    "sentence": "\"I may come later,\" she said. → She said she ___ come later.",
     "correct": "might",
     "explanation": "Backshift: 'may' → 'might' in reported speech.",
     "tip": "Backshift the modal"
   },
   {
-    "sentence": "\"This book is mine,\" he said. → He said ______ book was his.",
+    "sentence": "\"This book is mine,\" he said. → He said ___ book was his.",
     "correct": "that",
     "explanation": "Pronoun/determiner shift: 'this' → 'that', 'mine' → 'his'.",
     "tip": "Shift demonstratives and possessives"
   },
   {
-    "sentence": "\"We're coming today,\" they said. → They said they ______ coming that day.",
+    "sentence": "\"We're coming today,\" they said. → They said they ___ coming that day.",
     "correct": "were",
     "explanation": "Backshift: 'are' → 'were'. Time shift: 'today' → 'that day'.",
     "tip": "Backshift + time shift"
   },
   {
-    "sentence": "\"I've never been to Japan,\" she told me. → She told me she ______ never been to Japan.",
+    "sentence": "\"I've never been to Japan,\" she told me. → She told me she ___ never been to Japan.",
     "correct": "had",
     "explanation": "Backshift: present perfect 'have' → past perfect 'had'.",
     "tip": "Backshift present perfect → past perfect"
   },
   {
-    "sentence": "\"What time does the train leave?\" he asked. → He asked what time the train ______.",
+    "sentence": "\"What time does the train leave?\" he asked. → He asked what time the train ___.",
     "correct": "left",
     "explanation": "Reported wh-question: statement order + backshift 'leaves' → 'left'.",
     "tip": "Reported wh-question + backshift"

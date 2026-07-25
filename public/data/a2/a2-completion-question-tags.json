@@ -1,120 +1,120 @@
 [
   {
-    "sentence": "You are a student, ______?",
+    "sentence": "You are a student, ___?",
     "correct": "aren't you",
     "explanation": "Afirmación positiva → question tag negativo. 'are' → 'aren't you'.",
     "tip": "Reverse the polarity of the statement"
   },
   {
-    "sentence": "She doesn't like coffee, ______?",
+    "sentence": "She doesn't like coffee, ___?",
     "correct": "does she",
     "explanation": "Afirmación negativa → question tag positivo. 'doesn't' → 'does she'.",
     "tip": "Reverse the polarity of the statement"
   },
   {
-    "sentence": "They went to Paris, ______?",
+    "sentence": "They went to Paris, ___?",
     "correct": "didn't they",
     "explanation": "Pasado simple positivo → question tag negativo con 'did'. 'went' → 'didn't they'.",
     "tip": "Use the auxiliary of the main verb's tense"
   },
   {
-    "sentence": "He can swim, ______?",
+    "sentence": "He can swim, ___?",
     "correct": "can't he",
     "explanation": "Modal positivo → question tag negativo. 'can' → 'can't he'.",
     "tip": "Modals stay the same in the tag"
   },
   {
-    "sentence": "It's cold today, ______?",
+    "sentence": "It's cold today, ___?",
     "correct": "isn't it",
     "explanation": "'is' positivo → question tag negativo. 'it's' (it is) → 'isn't it'.",
     "tip": "Expand contractions to find the auxiliary"
   },
   {
-    "sentence": "We should leave now, ______?",
+    "sentence": "We should leave now, ___?",
     "correct": "shouldn't we",
     "explanation": "'should' positivo → question tag negativo 'shouldn't we'.",
     "tip": "Modals stay the same in the tag"
   },
   {
-    "sentence": "You haven't finished, ______?",
+    "sentence": "You haven't finished, ___?",
     "correct": "have you",
     "explanation": "'haven't' negativo → question tag positivo 'have you'.",
     "tip": "Reverse the polarity"
   },
   {
-    "sentence": "I'm late, ______?",
+    "sentence": "I'm late, ___?",
     "correct": "aren't I",
     "explanation": "Caso especial: 'I am' → el question tag es 'aren't I' (no 'amn't I').",
     "tip": "Special rule for 'I am'"
   },
   {
-    "sentence": "She lives in London, ______?",
+    "sentence": "She lives in London, ___?",
     "correct": "doesn't she",
     "explanation": "Presente simple positivo (tercera persona) → question tag negativo con 'does'. 'lives' → 'doesn't she'.",
     "tip": "Present simple uses do/does in the tag"
   },
   {
-    "sentence": "They won't come, ______?",
+    "sentence": "They won't come, ___?",
     "correct": "will they",
     "explanation": "'won't' negativo → question tag positivo 'will they'.",
     "tip": "Reverse the polarity"
   },
   {
-    "sentence": "He had lunch already, ______?",
+    "sentence": "He had lunch already, ___?",
     "correct": "hadn't he",
     "explanation": "Pasado perfecto positivo 'had' → question tag negativo 'hadn't he'.",
     "tip": "Use the same auxiliary (had) in the tag"
   },
   {
-    "sentence": "You don't smoke, ______?",
+    "sentence": "You don't smoke, ___?",
     "correct": "do you",
     "explanation": "'don't' negativo → question tag positivo 'do you'.",
     "tip": "Reverse the polarity"
   },
   {
-    "sentence": "She's been working hard, ______?",
+    "sentence": "She's been working hard, ___?",
     "correct": "hasn't she",
     "explanation": "Presente perfecto continuo positivo 'has been' → question tag negativo 'hasn't she'.",
     "tip": "Use the first auxiliary (has) in the tag"
   },
   {
-    "sentence": "We could try again, ______?",
+    "sentence": "We could try again, ___?",
     "correct": "couldn't we",
     "explanation": "'could' positivo → question tag negativo 'couldn't we'.",
     "tip": "Modals stay the same in the tag"
   },
   {
-    "sentence": "There are many people here, ______?",
+    "sentence": "There are many people here, ___?",
     "correct": "aren't there",
     "explanation": "'There are' → el tag usa 'there' como sujeto: 'aren't there'.",
     "tip": "'There' acts as the subject in the tag"
   },
   {
-    "sentence": "Nobody called, ______?",
+    "sentence": "Nobody called, ___?",
     "correct": "did they",
     "explanation": "Significado negativo (nobody) → question tag positivo. 'Nobody' usa 'they' como pronombre.",
     "tip": "Words like nobody/nothing/never make the statement negative"
   },
   {
-    "sentence": "Let's go to the park, ______?",
+    "sentence": "Let's go to the park, ___?",
     "correct": "shall we",
     "explanation": "Caso especial: 'Let's' → el tag siempre es 'shall we'.",
     "tip": "Special rule for 'Let's'"
   },
   {
-    "sentence": "You like pizza, ______?",
+    "sentence": "You like pizza, ___?",
     "correct": "don't you",
     "explanation": "Presente simple positivo → question tag negativo con 'do'. 'like' → 'don't you'.",
     "tip": "Present simple uses do/does in the tag"
   },
   {
-    "sentence": "She wasn't happy, ______?",
+    "sentence": "She wasn't happy, ___?",
     "correct": "was she",
     "explanation": "'wasn't' negativo → question tag positivo 'was she'.",
     "tip": "Reverse the polarity"
   },
   {
-    "sentence": "They've already left, ______?",
+    "sentence": "They've already left, ___?",
     "correct": "haven't they",
     "explanation": "Presente perfecto positivo 'have' → question tag negativo 'haven't they'.",
     "tip": "Use the first auxiliary in the tag"

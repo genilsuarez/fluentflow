@@ -1,120 +1,120 @@
 [
   {
-    "sentence": "The text reveals an ______ at the heart of the deconstructionist argument.",
+    "sentence": "The text reveals an ___ at the heart of the deconstructionist argument.",
     "correct": "aporia",
     "explanation": "Una <aporia> es una contradicción interna irresoluble en un argumento filosófico.",
     "tip": "Complete with the term for an irresolvable contradiction"
   },
   {
-    "sentence": "The city's architecture is a ______ of colonial, modern, and postmodern layers.",
+    "sentence": "The city's architecture is a ___ of colonial, modern, and postmodern layers.",
     "correct": "palimpsest",
     "explanation": "Un <palimpsest> describe metafóricamente algo con múltiples capas superpuestas de historia.",
     "tip": "Complete with the term for layered historical traces"
   },
   {
-    "sentence": "Bakhtin's concept of ______ emphasizes the multiplicity of voices in any text.",
+    "sentence": "Bakhtin's concept of ___ emphasizes the multiplicity of voices in any text.",
     "correct": "heteroglossia",
     "explanation": "<Heteroglossia> se refiere a la coexistencia de diversos lenguajes sociales dentro de un mismo texto.",
     "tip": "Complete with Bakhtin's term for multiple voices"
   },
   {
-    "sentence": "Spivak's question about whether the ______ can speak remains central to postcolonial studies.",
+    "sentence": "Spivak's question about whether the ___ can speak remains central to postcolonial studies.",
     "correct": "subaltern",
     "explanation": "El <subaltern> se refiere a poblaciones marginadas excluidas de las estructuras de poder hegemónicas.",
     "tip": "Complete with the term for marginalized groups"
   },
   {
-    "sentence": "The poem's vivid ______ brings the painting to life through language.",
+    "sentence": "The poem's vivid ___ brings the painting to life through language.",
     "correct": "ekphrasis",
     "explanation": "La <ekphrasis> es la descripción o representación literaria de una obra de arte visual.",
     "tip": "Complete with the term for literary description of visual art"
   },
   {
-    "sentence": "Questions of ______ — what exists and what it means to exist — underpin the entire philosophical tradition.",
+    "sentence": "Questions of ___ — what exists and what it means to exist — underpin the entire philosophical tradition.",
     "correct": "ontology",
     "explanation": "La <ontology> es la rama de la filosofía que trata la naturaleza del ser y la existencia.",
     "tip": "Complete with the philosophical study of being"
   },
   {
-    "sentence": "Kant's ______ demands that we act only according to universalizable principles.",
+    "sentence": "Kant's ___ demands that we act only according to universalizable principles.",
     "correct": "categorical imperative",
     "explanation": "El <categorical imperative> es el principio fundamental de la filosofía moral de Kant.",
     "tip": "Complete with Kant's universal moral law (two words)"
   },
   {
-    "sentence": "The hard problem of consciousness centers on explaining subjective ______.",
+    "sentence": "The hard problem of consciousness centers on explaining subjective ___.",
     "correct": "qualia",
     "explanation": "Los <qualia> son las cualidades subjetivas y fenoménicas de la experiencia consciente.",
     "tip": "Complete with the term for subjective conscious experiences"
   },
   {
-    "sentence": "The argument suffers from ______, assuming what it sets out to prove.",
+    "sentence": "The argument suffers from ___, assuming what it sets out to prove.",
     "correct": "vicious circularity",
     "explanation": "La <vicious circularity> ocurre cuando la conclusión de un argumento ya está presupuesta en sus premisas.",
     "tip": "Complete with the term for circular reasoning (two words)"
   },
   {
-    "sentence": "The ______ of human dignity is a cornerstone of international law.",
+    "sentence": "The ___ of human dignity is a cornerstone of international law.",
     "correct": "inviolability",
     "explanation": "<Inviolability> significa la cualidad de ser sagrado e intransgredible.",
     "tip": "Complete with the term for being untouchable/sacred"
   },
   {
-    "sentence": "Legal ______ has evolved significantly since the Enlightenment.",
+    "sentence": "Legal ___ has evolved significantly since the Enlightenment.",
     "correct": "jurisprudence",
     "explanation": "La <jurisprudence> es la teoría y filosofía del derecho.",
     "tip": "Complete with the term for the philosophy of law"
   },
   {
-    "sentence": "Understanding the ______ of the disease is essential for developing effective treatments.",
+    "sentence": "Understanding the ___ of the disease is essential for developing effective treatments.",
     "correct": "pathophysiology",
     "explanation": "La <pathophysiology> estudia los cambios funcionales asociados con la enfermedad.",
     "tip": "Complete with the study of disease mechanisms"
   },
   {
-    "sentence": "Intellectual ______ between competing theories can yield unexpected insights.",
+    "sentence": "Intellectual ___ between competing theories can yield unexpected insights.",
     "correct": "arbitrage",
     "explanation": "<Arbitrage> significa, metafóricamente, aprovechar de forma productiva las diferencias entre marcos teóricos.",
     "tip": "Complete with the term for exploiting differences between systems"
   },
   {
-    "sentence": "The ______ of the argument reveals connections invisible at the surface level.",
+    "sentence": "The ___ of the argument reveals connections invisible at the surface level.",
     "correct": "topology",
     "explanation": "<Topology> se refiere metafóricamente a la disposición estructural dentro de un sistema de ideas.",
     "tip": "Complete with the term for structural arrangement"
   },
   {
-    "sentence": "The ______ interdisciplinary expertise is rarely found in a single researcher.",
+    "sentence": "The ___ interdisciplinary expertise is rarely found in a single researcher.",
     "correct": "requisite",
     "explanation": "<Requisite> significa necesario o requerido para un propósito particular.",
     "tip": "Complete with the adjective meaning 'necessary'"
   },
   {
-    "sentence": "Hegel's ______ proceeds through thesis, antithesis, and synthesis.",
+    "sentence": "Hegel's ___ proceeds through thesis, antithesis, and synthesis.",
     "correct": "dialectic",
     "explanation": "La <dialectic> es un método para resolver ideas opuestas mediante un argumento razonado.",
     "tip": "Complete with Hegel's method of reasoning"
   },
   {
-    "sentence": "Biblical ______ has a long tradition in Western scholarship.",
+    "sentence": "Biblical ___ has a long tradition in Western scholarship.",
     "correct": "hermeneutics",
     "explanation": "La <hermeneutics> es la teoría y metodología de la interpretación.",
     "tip": "Complete with the study of interpretation"
   },
   {
-    "sentence": "A ______ explanation accounts for phenomena by reference to their purpose.",
+    "sentence": "A ___ explanation accounts for phenomena by reference to their purpose.",
     "correct": "teleological",
     "explanation": "<Teleological> se relaciona con explicar las cosas por su propósito o fin último.",
     "tip": "Complete with the adjective meaning 'purpose-based'"
   },
   {
-    "sentence": "Husserl's ______ seeks to describe experience as it presents itself to consciousness.",
+    "sentence": "Husserl's ___ seeks to describe experience as it presents itself to consciousness.",
     "correct": "phenomenology",
     "explanation": "La <phenomenology> estudia las estructuras de la experiencia subjetiva.",
     "tip": "Complete with Husserl's philosophical method"
   },
   {
-    "sentence": "There remains a significant ______ gap in our understanding of consciousness.",
+    "sentence": "There remains a significant ___ gap in our understanding of consciousness.",
     "correct": "epistemic",
     "explanation": "<Epistemic> se relaciona con el conocimiento y las condiciones de su posibilidad.",
     "tip": "Complete with the adjective relating to knowledge"

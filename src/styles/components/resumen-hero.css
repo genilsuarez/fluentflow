@@ -207,6 +207,19 @@
   min-height: 0;
 }
 
+.home-dash .progress-snapshot__stat-block {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  padding: 0 2px;
+  pointer-events: none;
+}
+
 .home-dash .progress-snapshot__chev {
   grid-column: 3;
   grid-row: 1 / -1;
@@ -258,16 +271,6 @@
   line-height: 1.2;
 }
 
-.home-dash .progress-snapshot__line--primary {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  color: var(--lp-ink-soft);
-}
-
 .home-dash .progress-snapshot__line--meta {
   font-size: 0.75rem;
   font-weight: 500;
@@ -283,33 +286,35 @@
   color: var(--lp-muted);
   white-space: nowrap;
   line-height: 1;
-  align-self: center;
 }
 
 .home-dash .progress-snapshot__stat-wrap {
   display: inline-flex;
   align-items: baseline;
+  justify-content: center;
   gap: 0.15rem;
   min-width: 0;
   white-space: nowrap;
-  line-height: 1;
-  align-self: center;
+  line-height: 1.1;
+  text-align: center;
 }
 
 .home-dash .progress-snapshot__stat {
-  font-size: 0.8125rem;
+  font-family: inherit;
+  font-size: 0.875rem;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
   color: var(--lp-ink);
   letter-spacing: -0.02em;
-  line-height: 1;
+  line-height: 1.1;
 }
 
 .home-dash .progress-snapshot__unit {
-  font-size: 0.6875rem;
-  font-weight: 500;
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 600;
   color: var(--lp-ink-soft);
-  line-height: 1;
+  line-height: 1.1;
 }
 
 .home-dash .progress-snapshot__link {
@@ -363,6 +368,13 @@
     gap: 0.15rem;
   }
 
+  .home-dash .resumen-hero .progress-snapshot__stat-block {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    align-self: center;
+  }
+
   .home-dash .resumen-hero .progress-snapshot__link {
     display: inline;
   }
@@ -385,11 +397,15 @@
     font-size: 0.875rem;
   }
 
-  .home-dash .resumen-hero .progress-snapshot__line--primary {
-    font-size: 0.875rem;
+  .home-dash .resumen-hero .progress-snapshot__line--meta {
+    font-size: 0.8125rem;
   }
 
-  .home-dash .resumen-hero .progress-snapshot__line--meta {
+  .home-dash .resumen-hero .progress-snapshot__stat {
+    font-size: 0.9375rem;
+  }
+
+  .home-dash .resumen-hero .progress-snapshot__unit {
     font-size: 0.8125rem;
   }
 }
@@ -427,18 +443,17 @@
   }
 
   .home-dash .resumen-hero .progress-snapshot {
-    grid-template-columns: 40px 1fr auto auto;
-    grid-template-rows: auto auto;
+    grid-template-columns: 40px minmax(0, 1fr) auto auto;
+    grid-template-rows: auto;
     align-items: center;
-    gap: 0 10px;
-    row-gap: 2px;
+    gap: 0 6px;
     min-height: 52px;
-    padding: 8px 12px 8px 14px;
+    padding: 8px 10px 8px 14px;
   }
 
   .home-dash .resumen-hero .progress-snapshot__visual {
     grid-column: 1;
-    grid-row: 1 / -1;
+    grid-row: 1;
     align-self: center;
     width: 40px;
     height: 40px;
@@ -454,32 +469,29 @@
   }
 
   .home-dash .resumen-hero .progress-snapshot__copy {
-    grid-column: 2 / 4;
-    grid-row: 1 / -1;
+    grid-column: 2;
+    grid-row: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2px;
     min-width: 0;
+    max-width: 100%;
   }
 
-  .home-dash .resumen-hero .progress-snapshot__line--primary {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 0.5rem;
-    min-width: 0;
+  .home-dash .resumen-hero .progress-snapshot__stat-block {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+    align-self: center;
+    width: auto;
+    padding: 0;
+    margin-right: 2px;
   }
 
   .home-dash .resumen-hero .progress-snapshot__title {
-    align-self: auto;
     font-size: 0.6rem;
     letter-spacing: 0.08em;
-  }
-
-  .home-dash .resumen-hero .progress-snapshot__stat-wrap {
-    align-self: center;
-    flex-shrink: 0;
   }
 
   .home-dash .resumen-hero .progress-snapshot__line--meta {
@@ -488,12 +500,18 @@
     color: var(--lp-muted);
   }
 
+  .home-dash .resumen-hero .progress-snapshot__stat-block .progress-snapshot__stat-wrap {
+    justify-content: flex-end;
+    text-align: right;
+  }
+
   .home-dash .resumen-hero .progress-snapshot__stat {
-    font-size: 0.8125rem;
+    font-size: 0.875rem;
   }
 
   .home-dash .resumen-hero .progress-snapshot__unit {
-    font-size: 0.6875rem;
+    font-size: 0.75rem;
+    font-weight: 600;
   }
 
   .home-dash .resumen-hero .progress-snapshot__link {
@@ -503,10 +521,12 @@
   .home-dash .resumen-hero .progress-snapshot__chev {
     display: block;
     grid-column: 4;
-    grid-row: 1 / -1;
+    grid-row: 1;
     align-self: center;
+    justify-self: end;
     font-size: 1.125rem;
     color: color-mix(in srgb, var(--lp-muted) 85%, transparent);
+    padding-left: 0;
   }
 
 .home-dash .hero-card--welcome .hero-card__title {

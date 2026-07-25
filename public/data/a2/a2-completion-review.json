@@ -1,120 +1,120 @@
 [
   {
-    "sentence": "She ______ her jacket before going outside.",
+    "sentence": "She ___ her jacket before going outside.",
     "correct": "put on",
     "tip": "Phrasal verb con <put>: ponerse ropa (2 palabras)",
     "explanation": "El phrasal verb <put on> significa ponerse una prenda de ropa."
   },
   {
-    "sentence": "I need to ______ the answer to this question.",
+    "sentence": "I need to ___ the answer to this question.",
     "correct": "find out",
     "tip": "Phrasal verb con <find>: descubrir información (2 palabras)",
     "explanation": "El phrasal verb <find out> significa descubrir información."
   },
   {
-    "sentence": "He ______ the form at the doctor's office.",
+    "sentence": "He ___ the form at the doctor's office.",
     "correct": "filled in",
     "tip": "Phrasal verb con <fill>: completar un formulario (2 palabras, pasado)",
     "explanation": "El phrasal verb <fill in> significa completar un formulario con información."
   },
   {
-    "sentence": "We ______ at the hotel at 3 pm.",
+    "sentence": "We ___ at the hotel at 3 pm.",
     "correct": "checked in",
     "tip": "Phrasal verb con <check>: registrarse al llegar (2 palabras, pasado)",
     "explanation": "El phrasal verb <check in> significa registrarse en un hotel."
   },
   {
-    "sentence": "Can you ______ the music? I can't hear you.",
+    "sentence": "Can you ___ the music? I can't hear you.",
     "correct": "turn down",
     "tip": "Phrasal verb con <turn>: bajar el volumen (2 palabras)",
     "explanation": "El phrasal verb <turn down> significa bajar el volumen."
   },
   {
-    "sentence": "She ______ her old clothes to charity.",
+    "sentence": "She ___ her old clothes to charity.",
     "correct": "gave away",
     "tip": "Phrasal verb con <give>: donar, regalar (2 palabras, pasado)",
     "explanation": "El phrasal verb <give away> significa donar o regalar algo."
   },
   {
-    "sentence": "They ______ the meeting until next week.",
+    "sentence": "They ___ the meeting until next week.",
     "correct": "put off",
     "tip": "Phrasal verb con <put>: posponer (2 palabras, pasado)",
     "explanation": "El phrasal verb <put off> significa posponer o aplazar."
   },
   {
-    "sentence": "She was walking on air after getting the job. This means she was very ______.",
+    "sentence": "She was walking on air after getting the job. This means she was very ___.",
     "correct": "happy",
     "tip": "Modismo: ¿cómo se siente alguien 'caminando en el aire'?",
     "explanation": "El modismo <walking on air> significa sentirse extremadamente feliz."
   },
   {
-    "sentence": "He's feeling blue today. This means he's feeling ______.",
+    "sentence": "He's feeling blue today. This means he's feeling ___.",
     "correct": "sad",
     "tip": "Modismo: ¿qué emoción asocias con el color azul?",
     "explanation": "El modismo <feeling blue> significa sentirse triste o deprimido."
   },
   {
-    "sentence": "She ______ to the park yesterday.",
+    "sentence": "She ___ to the park yesterday.",
     "correct": "was going",
-    "tip": "Transforma a pasado continuo: <She goes> → She _____ (was/were + -ing)",
+    "tip": "Transforma a pasado continuo: <She goes> → She ___ (was/were + -ing)",
     "explanation": "Pasado continuo: <was/were> + verbo-ing. She <was going>."
   },
   {
-    "sentence": "They ______ dinner when the phone rang.",
+    "sentence": "They ___ dinner when the phone rang.",
     "correct": "were having",
     "tip": "Pasado continuo con they + <have>: acción en progreso interrumpida",
     "explanation": "Pasado continuo con they: <were> + verbo-ing: <were having>."
   },
   {
-    "sentence": "I ______ to the cinema tomorrow.",
+    "sentence": "I ___ to the cinema tomorrow.",
     "correct": "will go",
-    "tip": "Transforma a futuro simple: <I go> → I _____ (will + verbo base)",
+    "tip": "Transforma a futuro simple: <I go> → I ___ (will + verbo base)",
     "explanation": "Futuro simple: <will> + forma base: <will go>."
   },
   {
-    "sentence": "He ______ the homework yet.",
+    "sentence": "He ___ the homework yet.",
     "correct": "hasn't finished",
-    "tip": "Transforma a presente perfecto negativo: <He finishes> → He _____ (hasn't + participio)",
+    "tip": "Transforma a presente perfecto negativo: <He finishes> → He ___ (hasn't + participio)",
     "explanation": "Presente perfecto negativo: <hasn't> + participio pasado: <hasn't finished>."
   },
   {
-    "sentence": "______ you ever been to London?",
+    "sentence": "___ you ever been to London?",
     "correct": "Have",
     "tip": "Pregunta en presente perfecto: ¿qué auxiliar va al inicio?",
     "explanation": "Pregunta en presente perfecto: <Have> + sujeto + participio pasado."
   },
   {
-    "sentence": "The act of moving to a new country is called ______.",
+    "sentence": "The act of moving to a new country is called ___.",
     "correct": "migration",
     "tip": "Formación: migrate + sufijo sustantivo → ?",
     "explanation": "Agregar <-tion> al verbo <migrate> forma el sustantivo <migration>."
   },
   {
-    "sentence": "The state of being happy is called ______.",
+    "sentence": "The state of being happy is called ___.",
     "correct": "happiness",
     "tip": "Formación: happy + sufijo de estado → ?",
     "explanation": "Agregar <-ness> a <happy> forma el sustantivo <happiness>."
   },
   {
-    "sentence": "Something done in a quick way is done ______.",
+    "sentence": "Something done in a quick way is done ___.",
     "correct": "quickly",
     "tip": "Formación: quick + sufijo de adverbio → ?",
     "explanation": "Agregar <-ly> al adjetivo <quick> forma el adverbio <quickly>."
   },
   {
-    "sentence": "A person who manages is a ______.",
+    "sentence": "A person who manages is a ___.",
     "correct": "manager",
     "tip": "Formación: manage + sufijo de persona → ?",
     "explanation": "Agregar <-er> a <manage> forma el sustantivo <manager>."
   },
   {
-    "sentence": "The improve______ of the road took two months.",
+    "sentence": "The improve___ of the road took two months.",
     "correct": "improvement",
     "tip": "Formación: improve + sufijo <-ment> → ?",
     "explanation": "Agregar <-ment> a <improve> forma el sustantivo <improvement>."
   },
   {
-    "sentence": "She ______ to the party last night.",
+    "sentence": "She ___ to the party last night.",
     "correct": "went",
     "tip": "Corrige el error: 'She goed' → usa el pasado irregular de <go>",
     "explanation": "<Go> es irregular. El pasado es <went>, no <goed>."

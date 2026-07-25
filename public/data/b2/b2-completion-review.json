@@ -1,120 +1,120 @@
 [
   {
-    "sentence": "If she had studied harder, she ______ the exam.",
+    "sentence": "If she had studied harder, she ___ the exam.",
     "correct": "would have passed",
     "tip": "Tercer condicional — resultado: would have + participio pasado de <pass>",
     "explanation": "Resultado del tercer condicional: <would have> + participio pasado."
   },
   {
-    "sentence": "I wish I ______ more time to travel.",
+    "sentence": "I wish I ___ more time to travel.",
     "correct": "had",
     "tip": "Wish + ¿qué tiempo verbal para un deseo irreal en el presente?",
     "explanation": "Después de <wish>, se usa el pasado simple para expresar deseos irreales en el presente."
   },
   {
-    "sentence": "She had her car ______ at the garage.",
+    "sentence": "She had her car ___ at the garage.",
     "correct": "repaired",
     "tip": "Causativo <have something done>: have + object + ¿qué forma de <repair>?",
     "explanation": "Causativo <have something done>: have + objeto + participio pasado."
   },
   {
-    "sentence": "Not only ______ she speak French, but she also speaks Italian.",
+    "sentence": "Not only ___ she speak French, but she also speaks Italian.",
     "correct": "does",
     "tip": "Inversión con <Not only>: ¿qué auxiliar va antes de she?",
     "explanation": "Después de <Not only> al inicio de la oración, se usa orden inverso: <does she>."
   },
   {
-    "sentence": "It was the manager ______ made the final decision.",
+    "sentence": "It was the manager ___ made the final decision.",
     "correct": "who",
-    "tip": "Oración hendida (cleft sentence): It was [persona] _____ [verbo]",
+    "tip": "Oración hendida (cleft sentence): It was [persona] ___ [verbo]",
     "explanation": "Oración hendida: <It was... who/that> enfatiza el sujeto."
   },
   {
-    "sentence": "The project fell ______ because of lack of funding.",
+    "sentence": "The project fell ___ because of lack of funding.",
     "correct": "through",
     "tip": "Phrasal verb: fall + ? = no concretarse, fracasar",
     "explanation": "El phrasal verb <fall through> significa no llegar a ocurrir según lo planeado."
   },
   {
-    "sentence": "We need to iron ______ the remaining issues before launch.",
+    "sentence": "We need to iron ___ the remaining issues before launch.",
     "correct": "out",
     "tip": "Phrasal verb: iron + ? = resolver problemas",
     "explanation": "El phrasal verb <iron out> significa resolver problemas o dificultades."
   },
   {
-    "sentence": "She ______ up with a brilliant idea during the meeting.",
+    "sentence": "She ___ up with a brilliant idea during the meeting.",
     "correct": "came",
     "tip": "Phrasal verb: ___ up with = idear (pasado)",
     "explanation": "El phrasal verb <come up with> significa idear o producir una idea."
   },
   {
-    "sentence": "He ______ down the job offer because of the low salary.",
+    "sentence": "He ___ down the job offer because of the low salary.",
     "correct": "turned",
     "tip": "Phrasal verb: ___ down = rechazar (pasado)",
     "explanation": "El phrasal verb <turn down> significa rechazar o negarse."
   },
   {
-    "sentence": "Don't put all your eggs in one ______. Diversify your investments.",
+    "sentence": "Don't put all your eggs in one ___. Diversify your investments.",
     "correct": "basket",
     "tip": "Modismo: ¿dónde pones los huevos? No en un solo...",
     "explanation": "El modismo <don't put all your eggs in one basket> significa no arriesgarlo todo en una sola opción."
   },
   {
-    "sentence": "The elephant in the room is the obvious problem that nobody wants to ______.",
+    "sentence": "The elephant in the room is the obvious problem that nobody wants to ___.",
     "correct": "discuss",
     "tip": "Modismo: el elefante es un problema que nadie quiere...",
     "explanation": "El modismo <the elephant in the room> se refiere a un problema obvio que todos ignoran."
   },
   {
-    "sentence": "She's barking up the wrong tree. She's looking in the wrong ______.",
+    "sentence": "She's barking up the wrong tree. She's looking in the wrong ___.",
     "correct": "place",
     "tip": "Modismo: si 'ladras al árbol equivocado', buscas en el... equivocado",
     "explanation": "El modismo <barking up the wrong tree> significa seguir un enfoque equivocado."
   },
   {
-    "sentence": "He decided to bite the bullet and ______ the difficult conversation.",
+    "sentence": "He decided to bite the bullet and ___ the difficult conversation.",
     "correct": "have",
     "tip": "Modismo: 'morder la bala' = afrontar algo difícil. ¿Qué haces con una conversación?",
     "explanation": "El modismo <bite the bullet> significa afrontar algo difícil con valentía."
   },
   {
-    "sentence": "That's the last straw. I can't ______ it anymore.",
+    "sentence": "That's the last straw. I can't ___ it anymore.",
     "correct": "take",
     "tip": "Modismo: 'la última gota'. Ya no puedo... más",
     "explanation": "El modismo <the last straw> significa el último problema que hace que una situación sea insoportable."
   },
   {
-    "sentence": "The nominali______ of verbs is common in academic writing.",
+    "sentence": "The nominali___ of verbs is common in academic writing.",
     "correct": "nominalization",
     "tip": "Sufijo que convierte <nominalize> en sustantivo (-ation)",
     "explanation": "Al agregar <-ation> a <nominalize> se forma el sustantivo <nominalization>."
   },
   {
-    "sentence": "His reckless______ caused the accident.",
+    "sentence": "His reckless___ caused the accident.",
     "correct": "recklessness",
     "tip": "Sufijo que convierte <reckless> en sustantivo de cualidad",
     "explanation": "Al agregar <-ness> a <reckless> se forma el sustantivo <recklessness>."
   },
   {
-    "sentence": "The prefix 'mis-' in 'misunderstand' means ______.",
+    "sentence": "The prefix 'mis-' in 'misunderstand' means ___.",
     "correct": "wrongly",
     "tip": "¿Qué significa el prefijo <mis->? Si 'misunderstand' es entender mal...",
     "explanation": "El prefijo <mis-> significa incorrectamente o mal: <misunderstand> = entender mal."
   },
   {
-    "sentence": "Adding '-ive' to 'create' gives us ______, meaning having the quality of creating.",
+    "sentence": "Adding '-ive' to 'create' gives us ___, meaning having the quality of creating.",
     "correct": "creative",
     "tip": "Aplica el sufijo <-ive> a <create> → adjetivo",
     "explanation": "El sufijo <-ive> forma adjetivos: <creative> = que tiene la cualidad de crear."
   },
   {
-    "sentence": "The prefix 'over-' in 'overestimate' means ______.",
+    "sentence": "The prefix 'over-' in 'overestimate' means ___.",
     "correct": "too much",
     "tip": "¿Qué significa el prefijo <over->? Si 'overestimate' es sobrestimar...",
     "explanation": "El prefijo <over-> significa demasiado o excesivamente: <overestimate> = sobrestimar."
   },
   {
-    "sentence": "If I ______ you, I would accept the offer.",
+    "sentence": "If I ___ you, I would accept the offer.",
     "correct": "were",
     "tip": "Segunda condicional para dar consejo: If I ___ you (forma subjuntiva)",
     "explanation": "Segundo condicional para dar consejos: <If I were you> (forma subjuntiva)."

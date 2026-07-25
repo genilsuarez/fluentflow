@@ -1,90 +1,90 @@
 [
   {
-    "sentence": "Had I ______ about the delay, I would have taken an earlier flight.",
+    "sentence": "Had I ___ about the delay, I would have taken an earlier flight.",
     "correct": "known",
     "explanation": "Condicional invertida de tercer tipo: Had + sujeto + participio pasado.",
     "tip": "Past participle of 'know'"
   },
   {
-    "sentence": "No sooner ______ we arrived than it started raining.",
+    "sentence": "No sooner ___ we arrived than it started raining.",
     "correct": "had",
     "explanation": "No sooner + had + sujeto + participio pasado + than.",
     "tip": "Auxiliary for past perfect"
   },
   {
-    "sentence": "It's high time we ______ something about pollution.",
+    "sentence": "It's high time we ___ something about pollution.",
     "correct": "did",
     "explanation": "'It's high time' + pasado simple = se necesita una acción urgente ahora.",
     "tip": "What tense follows 'it's high time'?"
   },
   {
-    "sentence": "Under no circumstances ______ you open this door.",
+    "sentence": "Under no circumstances ___ you open this door.",
     "correct": "should",
     "explanation": "Anteposición negativa: Under no circumstances + auxiliar + sujeto.",
     "tip": "Inversion — what auxiliary fits with prohibition?"
   },
   {
-    "sentence": "He denied ______ taken the documents from the office.",
+    "sentence": "He denied ___ taken the documents from the office.",
     "correct": "having",
     "explanation": "'Deny' + gerundio perfecto: having + participio pasado.",
     "tip": "Perfect gerund form"
   },
   {
-    "sentence": "She ______ rather we hadn't mentioned it.",
+    "sentence": "She ___ rather we hadn't mentioned it.",
     "correct": "would",
     "explanation": "'Would rather' + sujeto + pasado perfecto = preferencia sobre una acción pasada.",
     "tip": "Modal for preference"
   },
   {
-    "sentence": "So complex ______ the problem that no one could find a solution.",
+    "sentence": "So complex ___ the problem that no one could find a solution.",
     "correct": "was",
     "explanation": "Inversión: So + adjetivo + be + sujeto + that.",
     "tip": "Inverted verb for 'the problem'"
   },
   {
-    "sentence": "______ it not for your support, I would have given up.",
+    "sentence": "___ it not for your support, I would have given up.",
     "correct": "Were",
     "explanation": "Inversión condicional formal: Were it not for = if it weren't for.",
     "tip": "Formal 'if' replacement"
   },
   {
-    "sentence": "The results are ______ to have been fabricated.",
+    "sentence": "The results are ___ to have been fabricated.",
     "correct": "believed",
     "explanation": "Pasiva impersonal: sujeto + be + believed/thought + to have + participio pasado.",
     "tip": "Passive reporting verb"
   },
   {
-    "sentence": "______ the criticism, the project continued as planned.",
+    "sentence": "___ the criticism, the project continued as planned.",
     "correct": "Notwithstanding",
     "explanation": "'Notwithstanding' = despite. Conector formal de contraste.",
     "tip": "Formal word meaning 'despite'"
   },
   {
-    "sentence": "Not until the results ______ published did the problem become clear.",
+    "sentence": "Not until the results ___ published did the problem become clear.",
     "correct": "were",
     "explanation": "'Not until' + evento pasado: Not until X were/was done + did + sujeto.",
     "tip": "Past passive auxiliary"
   },
   {
-    "sentence": "The committee is ______ meet on the first Monday of each month.",
+    "sentence": "The committee is ___ meet on the first Monday of each month.",
     "correct": "to",
     "explanation": "'Be to + infinitivo' = acuerdo o disposición formal.",
     "tip": "Formal future marker (one word)"
   },
   {
-    "sentence": "By the time we arrived, the concert had already ______.",
+    "sentence": "By the time we arrived, the concert had already ___.",
     "correct": "started",
     "explanation": "Pasado perfecto: had + participio pasado. Acción completada antes de nuestra llegada.",
     "tip": "Past participle of 'start'"
   },
   {
-    "sentence": "She ______ thought to have been working on it for over a year.",
+    "sentence": "She ___ thought to have been working on it for over a year.",
     "correct": "is",
     "explanation": "Estilo pasivo de reporte: She is thought to have been + -ing.",
     "tip": "Present passive auxiliary (she)"
   },
   {
-    "sentence": "Only by working together ______ we solve this problem.",
+    "sentence": "Only by working together ___ we solve this problem.",
     "correct": "can",
     "explanation": "Inversión con 'only by': Only by + -ing + auxiliar + sujeto.",
     "tip": "Modal of ability"

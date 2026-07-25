@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Suspense } from 'react';
+import React, { useState, useEffect, useMemo, Suspense } from 'react';
 import { createPortal } from 'react-dom';
 import { ArrowLeft, WifiOff, Wrench } from 'lucide-react';
 import '../../styles/components/header.css';
@@ -11,6 +11,7 @@ import { useTranslation } from '../../utils/i18n';
 import { useEscapeKey } from '../../hooks/useEscapeKey';
 import { useOfflineStatus } from '../../hooks/useOfflineStatus';
 import { portalHref, isLocalPlatformHost } from '../../utils/platformUrls';
+import { formatLessonTitleForHeader } from '../../utils/formatLessonTitleForHeader';
 // import { toast } from '../../stores/toastStore';
 // Lazy-loaded modals — only loaded when user opens them
 const CompactAdvancedSettings = React.lazy(() =>
@@ -89,6 +90,10 @@ export const Header: React.FC<HeaderProps> = () => {
     return () => window.removeEventListener('storage', syncNavigationMode);
   }, []);
   const lessonTitle = lessonProgress?.title ?? '';
+  const lessonTitleDisplay = useMemo(
+    () => formatLessonTitleForHeader(lessonTitle),
+    [lessonTitle]
+  );
   const progression = useProgression();
   const menuModuleTotal = progression.stats?.totalModules ?? 0;
   const catalogReady = progression.modulesFetched;
@@ -170,8 +175,28 @@ export const Header: React.FC<HeaderProps> = () => {
                   <ArrowLeft size={18} aria-hidden="true" />
                 </button>
                 {lessonTitle ? (
-                  <h2 className="header-redesigned__lesson-title" title={lessonTitle}>
-                    {lessonTitle}
+                  <h2
+                    className={`header-redesigned__lesson-title${
+                      lessonTitleDisplay.isCompact
+                        ? ' header-redesigned__lesson-title--compact'
+                        : ''
+                    }${
+                      lessonTitleDisplay.displayLines.length > 1
+                        ? ' header-redesigned__lesson-title--multiline'
+                        : ''
+                    }`}
+                    title={lessonTitle}
+                  >
+                    {lessonTitleDisplay.displayLines.length > 1
+                      ? lessonTitleDisplay.displayLines.map((line, index) => (
+                          <span
+                            key={`${index}-${line}`}
+                            className="header-redesigned__lesson-title-line"
+                          >
+                            {line}
+                          </span>
+                        ))
+                      : lessonTitle}
                   </h2>
                 ) : null}
                 <button

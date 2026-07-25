@@ -1,120 +1,120 @@
 [
   {
-    "sentence": "I ______ a student.",
+    "sentence": "I ___ a student.",
     "correct": "am",
     "explanation": "Usa <am> con el pronombre <I>",
     "tip": "Complete with the correct form of <be>"
   },
   {
-    "sentence": "You ______ my friend.",
+    "sentence": "You ___ my friend.",
     "correct": "are",
     "explanation": "Usa <are> con el pronombre <you>",
     "tip": "Complete with the correct form of <be>"
   },
   {
-    "sentence": "He ______ very tall.",
+    "sentence": "He ___ very tall.",
     "correct": "is",
     "explanation": "Usa <is> con el pronombre <he>",
     "tip": "Complete with the correct form of <be>"
   },
   {
-    "sentence": "I ______ coffee every morning.",
+    "sentence": "I ___ coffee every morning.",
     "correct": "drink",
     "explanation": "Usa la forma base del verbo con <I>",
     "tip": "Complete with the correct form of <drink>"
   },
   {
-    "sentence": "She ______ to school by bus.",
+    "sentence": "She ___ to school by bus.",
     "correct": "goes",
     "explanation": "Añade <s> a los verbos con he/she/it",
     "tip": "Complete with the correct form of <go>"
   },
   {
-    "sentence": "He ______ English very well.",
+    "sentence": "He ___ English very well.",
     "correct": "speaks",
     "explanation": "Añade <s> a los verbos con he/she/it",
     "tip": "Complete with the correct form of <speak>"
   },
   {
-    "sentence": "We ______ in a big house.",
+    "sentence": "We ___ in a big house.",
     "correct": "live",
     "explanation": "Usa la forma base del verbo con <we>",
     "tip": "Complete with the correct form of <live>"
   },
   {
-    "sentence": "They ______ pizza for dinner.",
+    "sentence": "They ___ pizza for dinner.",
     "correct": "eat",
     "explanation": "Usa la forma base del verbo con <they>",
     "tip": "Complete with the correct form of <eat>"
   },
   {
-    "sentence": "I ______ like vegetables.",
+    "sentence": "I ___ like vegetables.",
     "correct": "don't",
     "explanation": "Usa <don't> para la negación con I/you/we/they",
     "tip": "Complete with the correct negative form"
   },
   {
-    "sentence": "She ______ have a car.",
+    "sentence": "She ___ have a car.",
     "correct": "doesn't",
     "explanation": "Usa <doesn't> para la negación con he/she/it",
     "tip": "Complete with the correct negative form"
   },
   {
-    "sentence": "______ you like music?",
+    "sentence": "___ you like music?",
     "correct": "Do",
     "explanation": "Usa <Do> para preguntas con I/you/we/they",
     "tip": "Complete with the correct question word"
   },
   {
-    "sentence": "______ he work here?",
+    "sentence": "___ he work here?",
     "correct": "Does",
     "explanation": "Usa <Does> para preguntas con he/she/it",
     "tip": "Complete with the correct question word"
   },
   {
-    "sentence": "______ is your name?",
+    "sentence": "___ is your name?",
     "correct": "What",
     "explanation": "<What> pregunta por información",
     "tip": "Complete with the correct question word"
   },
   {
-    "sentence": "______ are you from?",
+    "sentence": "___ are you from?",
     "correct": "Where",
     "explanation": "<Where> pregunta por un lugar",
     "tip": "Complete with the correct question word"
   },
   {
-    "sentence": "I ______ a red car.",
+    "sentence": "I ___ a red car.",
     "correct": "have",
     "explanation": "Usa <have> con I/you/we/they",
     "tip": "Look at the auxiliary verbs already in the sentence for clues."
   },
   {
-    "sentence": "She ______ two cats.",
+    "sentence": "She ___ two cats.",
     "correct": "has",
     "explanation": "Usa <has> con he/she/it",
     "tip": "Complete with the correct form of <have>"
   },
   {
-    "sentence": "I ______ swim very well.",
+    "sentence": "I ___ swim very well.",
     "correct": "can",
     "explanation": "<Can> expresa habilidad",
     "tip": "Complete with the modal verb for ability"
   },
   {
-    "sentence": "My ______ is John.",
+    "sentence": "My ___ is John.",
     "correct": "name",
     "explanation": "Usamos <name> para identificarnos",
     "tip": "Complete with the word for identification"
   },
   {
-    "sentence": "I am 25 ______ old.",
+    "sentence": "I am 25 ___ old.",
     "correct": "years",
     "explanation": "Decimos <years old> para expresar la edad",
     "tip": "Complete with the word for age"
   },
   {
-    "sentence": "The cat is ______ the table.",
+    "sentence": "The cat is ___ the table.",
     "correct": "on",
     "explanation": "<On> indica posición sobre algo",
     "tip": "Complete with the correct preposition: the cat's position is 'sobre' the table"

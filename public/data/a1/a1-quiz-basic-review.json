@@ -1,6 +1,6 @@
 [
   {
-    "question": "What is the correct form: 'She _____ to school every day.'",
+    "question": "What is the correct form: 'She ___ to school every day.'",
     "options": [
       "goes",
       "go",
@@ -11,7 +11,7 @@
     "explanation": "La tercera persona del singular (she/he/it) añade <-s> al verbo: <goes>."
   },
   {
-    "question": "Which article is correct: '_____ apple'?",
+    "question": "Which article is correct: '___ apple'?",
     "options": [
       "the",
       "an",
@@ -55,7 +55,7 @@
     "explanation": "<Eat> es irregular: el pasado simple es <ate>."
   },
   {
-    "question": "Which is correct: 'There _____ three cats.'",
+    "question": "Which is correct: 'There ___ three cats.'",
     "options": [
       "is",
       "are",

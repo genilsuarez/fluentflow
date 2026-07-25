@@ -1,6 +1,6 @@
 [
   {
-    "question": "The book ______ by millions of people.",
+    "question": "The book ___ by millions of people.",
     "options": [
       "is read",
       "reads",
@@ -11,7 +11,7 @@
     "explanation": "Voz pasiva en presente simple: is/are + participio pasado"
   },
   {
-    "question": "The house ______ in 1920.",
+    "question": "The house ___ in 1920.",
     "options": [
       "built",
       "was built",
@@ -22,7 +22,7 @@
     "explanation": "Voz pasiva en pasado simple: was/were + participio pasado"
   },
   {
-    "question": "English ______ all over the world.",
+    "question": "English ___ all over the world.",
     "options": [
       "is speaking",
       "spoke",
@@ -33,7 +33,7 @@
     "explanation": "Voz pasiva en presente simple para hechos generales"
   },
   {
-    "question": "The letter ______ yesterday.",
+    "question": "The letter ___ yesterday.",
     "options": [
       "sends",
       "sent",
@@ -44,7 +44,7 @@
     "explanation": "Voz pasiva en pasado simple con expresión de tiempo"
   },
   {
-    "question": "The car ______ right now.",
+    "question": "The car ___ right now.",
     "options": [
       "is being repaired",
       "is repairing",
@@ -55,7 +55,7 @@
     "explanation": "Voz pasiva en presente continuo: is/are being + participio pasado"
   },
   {
-    "question": "The project ______ by next week.",
+    "question": "The project ___ by next week.",
     "options": [
       "finishes",
       "will be finished",
@@ -66,7 +66,7 @@
     "explanation": "Voz pasiva en futuro simple: will be + participio pasado"
   },
   {
-    "question": "The cake ______ by my mother.",
+    "question": "The cake ___ by my mother.",
     "options": [
       "makes",
       "made",
@@ -77,7 +77,7 @@
     "explanation": "Voz pasiva en pasado simple con agente 'by'"
   },
   {
-    "question": "The windows ______ every week.",
+    "question": "The windows ___ every week.",
     "options": [
       "is cleaned",
       "clean",
@@ -88,7 +88,7 @@
     "explanation": "Voz pasiva en presente simple para rutinas"
   },
   {
-    "question": "The movie ______ in 2010.",
+    "question": "The movie ___ in 2010.",
     "options": [
       "was released",
       "releases",
@@ -99,7 +99,7 @@
     "explanation": "Voz pasiva en pasado simple para acciones completadas"
   },
   {
-    "question": "The problem ______ soon.",
+    "question": "The problem ___ soon.",
     "options": [
       "will solve",
       "will be solved",
@@ -110,7 +110,7 @@
     "explanation": "Voz pasiva en futuro para predicciones"
   },
   {
-    "question": "The documents ______ at the moment.",
+    "question": "The documents ___ at the moment.",
     "options": [
       "are checking",
       "checked",
@@ -121,7 +121,7 @@
     "explanation": "Voz pasiva en presente continuo para acciones en progreso"
   },
   {
-    "question": "The bridge ______ last year.",
+    "question": "The bridge ___ last year.",
     "options": [
       "is destroyed",
       "destroys",
@@ -132,7 +132,7 @@
     "explanation": "Voz pasiva en pasado simple para eventos pasados"
   },
   {
-    "question": "The email ______ to all employees.",
+    "question": "The email ___ to all employees.",
     "options": [
       "was sent",
       "sends",
@@ -143,7 +143,7 @@
     "explanation": "Voz pasiva en pasado simple con objeto indirecto"
   },
   {
-    "question": "The new policy ______ next month.",
+    "question": "The new policy ___ next month.",
     "options": [
       "is introducing",
       "will be introduced",
@@ -154,7 +154,7 @@
     "explanation": "Voz pasiva en futuro para eventos programados"
   },
   {
-    "question": "The song ______ by everyone at the party.",
+    "question": "The song ___ by everyone at the party.",
     "options": [
       "sings",
       "is singing",
@@ -165,7 +165,7 @@
     "explanation": "Voz pasiva en pasado simple con la frase 'by'"
   },
   {
-    "question": "The report ______ at this moment.",
+    "question": "The report ___ at this moment.",
     "options": [
       "writes",
       "is writing",
@@ -176,7 +176,7 @@
     "explanation": "Voz pasiva en presente continuo para acciones actuales"
   },
   {
-    "question": "The building ______ in the earthquake.",
+    "question": "The building ___ in the earthquake.",
     "options": [
       "was damaged",
       "is damaging",
@@ -187,7 +187,7 @@
     "explanation": "Voz pasiva en pasado simple para eventos pasados"
   },
   {
-    "question": "The package ______ tomorrow.",
+    "question": "The package ___ tomorrow.",
     "options": [
       "delivers",
       "will be delivered",
@@ -198,7 +198,7 @@
     "explanation": "Voz pasiva en futuro para acciones futuras"
   },
   {
-    "question": "The room ______ when I arrived.",
+    "question": "The room ___ when I arrived.",
     "options": [
       "cleans",
       "cleaned",
@@ -209,7 +209,7 @@
     "explanation": "Voz pasiva en pasado continuo: was/were being + participio pasado"
   },
   {
-    "question": "The decision ______ by the committee.",
+    "question": "The decision ___ by the committee.",
     "options": [
       "is making",
       "makes",

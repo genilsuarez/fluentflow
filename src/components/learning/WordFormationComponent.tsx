@@ -14,6 +14,7 @@ import type { EditableInputHandle } from '../ui/EditableInput';
 import { ContentAdapter } from '../../utils/contentAdapter';
 import { matchesAnswer } from '../../utils/answerUtils';
 import { advanceInputExerciseStep } from '../../utils/exerciseTransition';
+import { splitOnBlanks } from '../../utils/blankMarker';
 import type { LearningModule, WordFormationData } from '../../types';
 import { GameControlsExitButton } from '../ui/GameControlsExitButton';
 import { GameControlsResetButton } from '../ui/GameControlsResetButton';
@@ -27,8 +28,6 @@ function inlineInputWidthCh(charCount: number, minChars = 5): string {
   const len = Math.max(charCount, minChars);
   return `${Math.ceil(len * 1.05 + 2)}ch`;
 }
-
-const BLANK_PATTERN = /_{3}/;
 
 const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -103,6 +102,15 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
     }
   }, [currentIndex, processedExercises.length, finishExercise]);
 
+  const handleEnterKey = useCallback(() => {
+    if (ignoreEnterRef.current) return;
+    if (!showResult && answer.trim()) {
+      checkAnswer();
+    } else if (showResult) {
+      handleNext();
+    }
+  }, [showResult, answer, checkAnswer, handleNext]);
+
   useEffect(() => {
     if (processedExercises.length === 0) return;
     const handleKeyPress = (e: KeyboardEvent) => {
@@ -157,7 +165,7 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
   const renderSentence = () => {
     if (!currentExercise?.sentence) return null;
 
-    const parts = currentExercise.sentence.split(BLANK_PATTERN);
+    const parts = splitOnBlanks(currentExercise.sentence);
     const elements: React.ReactElement[] = [];
 
     parts.forEach((part, index) => {
@@ -194,6 +202,7 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
             ref={inputRef}
             value={answer}
             onChange={setAnswer}
+            onEnter={handleEnterKey}
             disabled={showResult}
             placeholder={placeholderHint}
             className={`editable-input editable-input--inline${inputClass}`}

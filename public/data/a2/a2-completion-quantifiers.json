@@ -1,139 +1,139 @@
 [
   {
-    "sentence": "There isn't ______ milk in the fridge.",
+    "sentence": "There isn't ___ milk in the fridge.",
     "correct": "much",
     "explanation": "'Much' se usa con sustantivos <uncountable> en oraciones negativas y preguntas.",
     "tip": "Milk is uncountable — which quantifier works in negatives?",
     "showPlaceholder": false
   },
   {
-    "sentence": "How ______ books do you have?",
+    "sentence": "How ___ books do you have?",
     "correct": "many",
     "explanation": "'Many' se usa con sustantivos <countable> plurales en preguntas y negaciones.",
     "tip": "Books are countable — which quantifier for questions?",
     "showPlaceholder": false
   },
   {
-    "sentence": "I have ______ friends in this city.",
+    "sentence": "I have ___ friends in this city.",
     "correct": "some",
     "explanation": "'Some' se usa en oraciones <positive> tanto con sustantivos contables como incontables.",
     "tip": "Positive sentence + unspecified amount — which quantifier?",
     "showPlaceholder": false
   },
   {
-    "sentence": "Is there ______ sugar in the cupboard?",
+    "sentence": "Is there ___ sugar in the cupboard?",
     "correct": "any",
     "explanation": "'Any' se usa en <questions> tanto con sustantivos contables como incontables.",
     "tip": "This is a question — which word replaces the positive quantifier?",
     "showPlaceholder": false
   },
   {
-    "sentence": "She doesn't have ______ time today.",
+    "sentence": "She doesn't have ___ time today.",
     "correct": "much",
     "explanation": "'Much' se usa con sustantivos incontables en negaciones. Time es incontable.",
     "tip": "Negative + uncountable noun — which quantifier?",
     "showPlaceholder": false
   },
   {
-    "sentence": "There are ______ people waiting outside.",
+    "sentence": "There are ___ people waiting outside.",
     "correct": "a lot of",
     "explanation": "'A lot of' funciona tanto con sustantivos contables como incontables en oraciones afirmativas.",
     "tip": "Positive sentence, large quantity — which expression works for both countable and uncountable?",
     "showPlaceholder": false
   },
   {
-    "sentence": "He doesn't have ______ experience.",
+    "sentence": "He doesn't have ___ experience.",
     "correct": "much",
     "explanation": "'Much' se usa con sustantivos incontables en negaciones. Experience es incontable.",
     "tip": "Negative + uncountable — which quantifier for 'not a large amount'?",
     "showPlaceholder": false
   },
   {
-    "sentence": "Would you like ______ water?",
+    "sentence": "Would you like ___ water?",
     "correct": "some",
     "explanation": "'Some' se usa en ofrecimientos y peticiones (aunque sean preguntas).",
     "tip": "This is an offer — we expect a 'yes' answer. Which quantifier breaks the usual question rule?",
     "showPlaceholder": false
   },
   {
-    "sentence": "I didn't buy ______ eggs at the shop.",
+    "sentence": "I didn't buy ___ eggs at the shop.",
     "correct": "any",
     "explanation": "'Any' se usa en oraciones <negative> con sustantivos contables e incontables.",
     "tip": "Negative sentence — which quantifier replaces the positive form?",
     "showPlaceholder": false
   },
   {
-    "sentence": "There is very ______ water left in the bottle.",
+    "sentence": "There is very ___ water left in the bottle.",
     "correct": "little",
     "explanation": "'Little' (no mucho) se usa con sustantivos <uncountable> para expresar 'no suficiente'.",
     "tip": "Uncountable + scarcity — which word means 'not enough' for uncountable nouns?",
     "showPlaceholder": false
   },
   {
-    "sentence": "______ students passed the exam — only three.",
+    "sentence": "___ students passed the exam — only three.",
     "correct": "Few",
     "explanation": "'Few' (no muchos) se usa con sustantivos <countable> plurales para expresar 'no suficiente'.",
     "tip": "Countable + small number — which word means 'not enough' for countable nouns?",
     "showPlaceholder": false
   },
   {
-    "sentence": "I need ______ help with this exercise.",
+    "sentence": "I need ___ help with this exercise.",
     "correct": "some",
     "explanation": "'Some' en una oración afirmativa con un sustantivo incontable (help).",
     "tip": "Positive statement, unspecified amount — which quantifier?",
     "showPlaceholder": false
   },
   {
-    "sentence": "How ______ money do you need?",
+    "sentence": "How ___ money do you need?",
     "correct": "much",
     "explanation": "'How much' se usa con sustantivos incontables (money). 'How many' con sustantivos contables.",
     "tip": "Money is uncountable — which word goes after 'How' for uncountable nouns?",
     "showPlaceholder": false
   },
   {
-    "sentence": "There are a ______ good restaurants near here.",
+    "sentence": "There are a ___ good restaurants near here.",
     "correct": "few",
     "explanation": "'A few' (algunos, suficientes) con sustantivos contables plurales. Sentido afirmativo.",
     "tip": "Countable + positive meaning ('some, enough') — which word completes 'a ___'?",
     "showPlaceholder": false
   },
   {
-    "sentence": "She has ______ patience with rude people.",
+    "sentence": "She has ___ patience with rude people.",
     "correct": "little",
     "explanation": "'Little' con sustantivos incontables = no mucho / no suficiente.",
     "tip": "Uncountable + 'not enough' — which quantifier expresses scarcity?",
     "showPlaceholder": false
   },
   {
-    "sentence": "There aren't ______ oranges left in the basket.",
+    "sentence": "There aren't ___ oranges left in the basket.",
     "correct": "many",
     "explanation": "'Many' se usa con sustantivos <countable> plurales en negaciones. 'Oranges' es contable.",
     "tip": "Oranges are countable, sentence is negative — which quantifier for large numbers?",
     "showPlaceholder": false
   },
   {
-    "sentence": "We don't need ______ sugar for this recipe.",
+    "sentence": "We don't need ___ sugar for this recipe.",
     "correct": "much",
     "explanation": "'Much' se usa con sustantivos incontables en negaciones. 'Sugar' es incontable.",
     "tip": "Sugar is uncountable, sentence is negative — which quantifier?",
     "showPlaceholder": false
   },
   {
-    "sentence": "There were ______ people at the concert — it was packed.",
+    "sentence": "There were ___ people at the concert — it was packed.",
     "correct": "a lot of",
     "explanation": "'A lot of' funciona con sustantivos contables e incontables en oraciones afirmativas.",
     "tip": "Positive sentence, large quantity — which expression works with both noun types?",
     "showPlaceholder": false
   },
   {
-    "sentence": "I have ______ time to finish this today, so let's hurry.",
+    "sentence": "I have ___ time to finish this today, so let's hurry.",
     "correct": "little",
     "explanation": "'Little' (no mucho) se usa con incontables para expresar escasez. 'Time' es incontable.",
     "tip": "Uncountable + 'not enough' (they need to hurry) — which quantifier?",
     "showPlaceholder": false
   },
   {
-    "sentence": "______ tourists visit this town — it's not very popular.",
+    "sentence": "___ tourists visit this town — it's not very popular.",
     "correct": "Few",
     "explanation": "'Few' (no muchos) se usa con contables plurales para expresar escasez.",
     "tip": "Countable + small number (not popular) — which quantifier?",

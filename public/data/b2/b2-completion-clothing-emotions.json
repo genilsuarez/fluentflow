@@ -1,6 +1,6 @@
 [
   {
-    "sentence": "She wore an ______ dress to the formal event.",
+    "sentence": "She wore an ___ dress to the formal event.",
     "correct": "elegant",
     "options": [
       "elegant",
@@ -12,7 +12,7 @@
     "tip": "A formal event requires clothes that are stylish and sophisticated."
   },
   {
-    "sentence": "He felt ______ when he received the unexpected award.",
+    "sentence": "He felt ___ when he received the unexpected award.",
     "correct": "overwhelmed",
     "options": [
       "overwhelmed",
@@ -24,7 +24,7 @@
     "tip": "An unexpected positive surprise can leave you flooded with emotion."
   },
   {
-    "sentence": "The ______ jacket kept him warm during winter.",
+    "sentence": "The ___ jacket kept him warm during winter.",
     "correct": "insulated",
     "options": [
       "insulated",
@@ -36,7 +36,7 @@
     "tip": "A jacket with special material that traps heat = 'aislado' thermally."
   },
   {
-    "sentence": "She was ______ about the job interview results.",
+    "sentence": "She was ___ about the job interview results.",
     "correct": "anxious",
     "options": [
       "anxious",
@@ -48,7 +48,7 @@
     "tip": "Uncertainty about results causes worry and nervousness (= 'ansioso')."
   },
   {
-    "sentence": "He prefers ______ clothing for everyday wear.",
+    "sentence": "He prefers ___ clothing for everyday wear.",
     "correct": "casual",
     "options": [
       "casual",
@@ -60,7 +60,7 @@
     "tip": "Relaxed, everyday clothing — the opposite of formal."
   },
   {
-    "sentence": "The news left her feeling ______ and disappointed.",
+    "sentence": "The news left her feeling ___ and disappointed.",
     "correct": "dejected",
     "options": [
       "dejected",
@@ -72,7 +72,7 @@
     "tip": "Sad and disheartened — 'abatido' in Spanish."
   },
   {
-    "sentence": "The ______ scarf complemented her outfit perfectly.",
+    "sentence": "The ___ scarf complemented her outfit perfectly.",
     "correct": "silk",
     "options": [
       "silk",
@@ -84,7 +84,7 @@
     "tip": "A luxurious, smooth natural fabric = 'seda'."
   },
   {
-    "sentence": "He felt ______ after achieving his long-term goal.",
+    "sentence": "He felt ___ after achieving his long-term goal.",
     "correct": "fulfilled",
     "options": [
       "fulfilled",
@@ -96,7 +96,7 @@
     "tip": "Deep satisfaction from achieving your potential = 'realizado'."
   },
   {
-    "sentence": "She bought a ______ coat for the rainy season.",
+    "sentence": "She bought a ___ coat for the rainy season.",
     "correct": "waterproof",
     "options": [
       "waterproof",
@@ -108,7 +108,7 @@
     "tip": "A coat that doesn't let water through = 'impermeable'."
   },
   {
-    "sentence": "The team was ______ after losing the championship.",
+    "sentence": "The team was ___ after losing the championship.",
     "correct": "devastated",
     "options": [
       "devastated",
@@ -120,7 +120,7 @@
     "tip": "Extremely shocked and distressed — 'devastado'."
   },
   {
-    "sentence": "He wore ______ shoes to the business meeting.",
+    "sentence": "He wore ___ shoes to the business meeting.",
     "correct": "polished",
     "options": [
       "polished",
@@ -132,7 +132,7 @@
     "tip": "Shoes that are shined and well-maintained — 'lustrados'."
   },
   {
-    "sentence": "She felt ______ when her friend betrayed her trust.",
+    "sentence": "She felt ___ when her friend betrayed her trust.",
     "correct": "hurt",
     "options": [
       "hurt",
@@ -144,7 +144,7 @@
     "tip": "Emotional pain from betrayal — 'herido/a'."
   },
   {
-    "sentence": "The ______ fabric was perfect for summer weather.",
+    "sentence": "The ___ fabric was perfect for summer weather.",
     "correct": "breathable",
     "options": [
       "breathable",
@@ -156,7 +156,7 @@
     "tip": "Fabric that lets air through, keeping you cool = 'transpirable'."
   },
   {
-    "sentence": "He was ______ by the unexpected kindness of strangers.",
+    "sentence": "He was ___ by the unexpected kindness of strangers.",
     "correct": "touched",
     "options": [
       "touched",
@@ -168,7 +168,7 @@
     "tip": "Emotionally moved by kindness — 'conmovido'."
   },
   {
-    "sentence": "She chose a ______ outfit for the job interview.",
+    "sentence": "She chose a ___ outfit for the job interview.",
     "correct": "professional",
     "options": [
       "professional",
@@ -180,7 +180,7 @@
     "tip": "Appropriate for a workplace — 'profesional'."
   },
   {
-    "sentence": "The children were ______ on Christmas morning.",
+    "sentence": "The children were ___ on Christmas morning.",
     "correct": "ecstatic",
     "options": [
       "ecstatic",
@@ -192,7 +192,7 @@
     "tip": "Overflowing with joy — stronger than 'happy', means 'extasiado'."
   },
   {
-    "sentence": "He wore a ______ tie to add color to his suit.",
+    "sentence": "He wore a ___ tie to add color to his suit.",
     "correct": "vibrant",
     "options": [
       "vibrant",
@@ -204,7 +204,7 @@
     "tip": "Full of bright color and energy — 'vibrante'."
   },
   {
-    "sentence": "She felt ______ after the long and stressful week.",
+    "sentence": "She felt ___ after the long and stressful week.",
     "correct": "exhausted",
     "options": [
       "exhausted",
@@ -216,7 +216,7 @@
     "tip": "Extremely tired, no energy left — 'agotado/a'."
   },
   {
-    "sentence": "The ______ accessories completed her elegant look.",
+    "sentence": "The ___ accessories completed her elegant look.",
     "correct": "matching",
     "options": [
       "matching",
@@ -228,7 +228,7 @@
     "tip": "Accessories that go well together, coordinated — 'a juego'."
   },
   {
-    "sentence": "He was ______ to finally reunite with his family.",
+    "sentence": "He was ___ to finally reunite with his family.",
     "correct": "overjoyed",
     "options": [
       "overjoyed",

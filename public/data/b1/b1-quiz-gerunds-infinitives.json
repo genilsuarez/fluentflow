@@ -1,6 +1,6 @@
 [
   {
-    "question": "Which is correct? 'I enjoy ______.'",
+    "question": "Which is correct? 'I enjoy ___.'",
     "options": [
       "swimming",
       "swam",
@@ -11,7 +11,7 @@
     "explanation": "<Enjoy> siempre va seguido del gerundio (forma -ing): enjoy swimming."
   },
   {
-    "question": "Which is correct? 'She decided ______ abroad.'",
+    "question": "Which is correct? 'She decided ___ abroad.'",
     "options": [
       "studying",
       "to study",
@@ -44,7 +44,7 @@
     "explanation": "<Plan> va seguido del infinitivo: plan to do something."
   },
   {
-    "question": "'Do you mind ______ me?' — Choose the correct form.",
+    "question": "'Do you mind ___ me?' — Choose the correct form.",
     "options": [
       "helping",
       "helped",
@@ -55,7 +55,7 @@
     "explanation": "<Mind> siempre va seguido del gerundio: mind helping."
   },
   {
-    "question": "'He promised ______ on time.' — Choose the correct form.",
+    "question": "'He promised ___ on time.' — Choose the correct form.",
     "options": [
       "arriving",
       "to arrive",
@@ -77,7 +77,7 @@
     "explanation": "Después de una preposición, siempre se usa el <gerund>: interested in learning, good at cooking."
   },
   {
-    "question": "'I look forward to ______ you.' — Choose the correct form.",
+    "question": "'I look forward to ___ you.' — Choose the correct form.",
     "options": [
       "see",
       "to see",
@@ -110,7 +110,7 @@
     "explanation": "<Refuse> va seguido del infinitivo: refused to help."
   },
   {
-    "question": "'She can't afford ______ a new phone.' — Choose the correct form.",
+    "question": "'She can't afford ___ a new phone.' — Choose the correct form.",
     "options": [
       "bought",
       "buy",
@@ -121,7 +121,7 @@
     "explanation": "<Afford> siempre va seguido del infinitivo: afford to buy."
   },
   {
-    "question": "'He admitted ______ the window.' — Choose the correct form.",
+    "question": "'He admitted ___ the window.' — Choose the correct form.",
     "options": [
       "broke",
       "break",
@@ -154,7 +154,7 @@
     "explanation": "<Want>, <decide> y <hope> van todos seguidos del infinitivo (to + verbo)."
   },
   {
-    "question": "'I'm tired of ______ the same thing every day.' — Choose the correct form.",
+    "question": "'I'm tired of ___ the same thing every day.' — Choose the correct form.",
     "options": [
       "did",
       "do",
@@ -165,7 +165,7 @@
     "explanation": "Después de la preposición <of>, siempre se usa el gerundio: tired of doing."
   },
   {
-    "question": "'She offered ______ dinner for everyone.' — Choose the correct form.",
+    "question": "'She offered ___ dinner for everyone.' — Choose the correct form.",
     "options": [
       "cook",
       "cooked",
@@ -176,7 +176,7 @@
     "explanation": "<Offer> siempre va seguido del infinitivo: offered to cook."
   },
   {
-    "question": "'He keeps ______ about his holiday.' — Choose the correct form.",
+    "question": "'He keeps ___ about his holiday.' — Choose the correct form.",
     "options": [
       "talking",
       "talk",
@@ -198,7 +198,7 @@
     "explanation": "Verbos como <like>, <love> y <hate> aceptan ambas formas: I like swimming / I like to swim."
   },
   {
-    "question": "'We managed ______ the project on time.' — Choose the correct form.",
+    "question": "'We managed ___ the project on time.' — Choose the correct form.",
     "options": [
       "finished",
       "finishing",
@@ -209,7 +209,7 @@
     "explanation": "<Manage> siempre va seguido del infinitivo: managed to finish."
   },
   {
-    "question": "'She postponed ______ her decision.' — Choose the correct form.",
+    "question": "'She postponed ___ her decision.' — Choose the correct form.",
     "options": [
       "made",
       "make",

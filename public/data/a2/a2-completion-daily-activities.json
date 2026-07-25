@@ -1,6 +1,6 @@
 [
   {
-    "sentence": "I usually ______ at 7 AM every morning.",
+    "sentence": "I usually ___ at 7 AM every morning.",
     "correct": "wake up",
     "options": [
       "wake up",
@@ -12,7 +12,7 @@
     "tip": "What do you do at 7 AM? The alarm rings and you..."
   },
   {
-    "sentence": "She likes to ______ in the park on weekends.",
+    "sentence": "She likes to ___ in the park on weekends.",
     "correct": "jog",
     "options": [
       "jog",
@@ -24,7 +24,7 @@
     "tip": "A physical exercise you do outdoors — running slowly."
   },
   {
-    "sentence": "We need to ______ the groceries before dinner.",
+    "sentence": "We need to ___ the groceries before dinner.",
     "correct": "buy",
     "options": [
       "buy",
@@ -36,7 +36,7 @@
     "tip": "You go to the store to ___ food (= comprar)."
   },
   {
-    "sentence": "He always ______ his teeth before going to bed.",
+    "sentence": "He always ___ his teeth before going to bed.",
     "correct": "brushes",
     "options": [
       "brushes",
@@ -48,7 +48,7 @@
     "tip": "You use a toothbrush to ___ your teeth."
   },
   {
-    "sentence": "They ______ the bus to work every day.",
+    "sentence": "They ___ the bus to work every day.",
     "correct": "take",
     "options": [
       "take",
@@ -60,7 +60,7 @@
     "tip": "The collocation is '___ the bus' (= usar transporte público)."
   },
   {
-    "sentence": "I need to ______ my homework before class.",
+    "sentence": "I need to ___ my homework before class.",
     "correct": "finish",
     "options": [
       "finish",
@@ -72,7 +72,7 @@
     "tip": "You need to complete it — to ___ it (= terminar)."
   },
   {
-    "sentence": "She ______ a shower every morning.",
+    "sentence": "She ___ a shower every morning.",
     "correct": "takes",
     "options": [
       "takes",
@@ -84,7 +84,7 @@
     "tip": "The collocation is '___ a shower' — which verb with she?"
   },
   {
-    "sentence": "We usually ______ dinner at 8 PM.",
+    "sentence": "We usually ___ dinner at 8 PM.",
     "correct": "have",
     "options": [
       "have",
@@ -96,7 +96,7 @@
     "tip": "The collocation is '___ dinner' (= eat the evening meal)."
   },
   {
-    "sentence": "He likes to ______ music while working.",
+    "sentence": "He likes to ___ music while working.",
     "correct": "listen to",
     "options": [
       "listen to",
@@ -108,7 +108,7 @@
     "tip": "The expression is '___ music' — actively, on purpose (2 words)."
   },
   {
-    "sentence": "I ______ my bed every morning after waking up.",
+    "sentence": "I ___ my bed every morning after waking up.",
     "correct": "make",
     "options": [
       "make",
@@ -120,7 +120,7 @@
     "tip": "The collocation is '___ the bed' (= arreglar las sábanas)."
   },
   {
-    "sentence": "She ______ her clothes in the wardrobe.",
+    "sentence": "She ___ her clothes in the wardrobe.",
     "correct": "hangs",
     "options": [
       "hangs",
@@ -132,7 +132,7 @@
     "tip": "You use a hanger to ___ clothes (= colgar)."
   },
   {
-    "sentence": "They ______ shopping every Saturday.",
+    "sentence": "They ___ shopping every Saturday.",
     "correct": "go",
     "options": [
       "go",
@@ -144,7 +144,7 @@
     "tip": "The expression is '___ shopping' (= ir de compras)."
   },
   {
-    "sentence": "I need to ______ the dishes after dinner.",
+    "sentence": "I need to ___ the dishes after dinner.",
     "correct": "wash",
     "options": [
       "wash",
@@ -156,7 +156,7 @@
     "tip": "You use water and soap to ___ the dishes (= lavar)."
   },
   {
-    "sentence": "He ______ his car every weekend.",
+    "sentence": "He ___ his car every weekend.",
     "correct": "washes",
     "options": [
       "washes",
@@ -168,7 +168,7 @@
     "tip": "He uses water and soap to ___ his car (= lavar)."
   },
   {
-    "sentence": "She ______ her hair every morning.",
+    "sentence": "She ___ her hair every morning.",
     "correct": "combs",
     "options": [
       "combs",
@@ -180,7 +180,7 @@
     "tip": "She uses a comb to ___ her hair (= peinarse)."
   },
   {
-    "sentence": "I ______ the newspaper every morning.",
+    "sentence": "I ___ the newspaper every morning.",
     "correct": "read",
     "options": [
       "read",
@@ -192,7 +192,7 @@
     "tip": "You look at the words to ___ the newspaper (= leer)."
   },
   {
-    "sentence": "He ______ his email several times a day.",
+    "sentence": "He ___ his email several times a day.",
     "correct": "checks",
     "options": [
       "checks",
@@ -204,7 +204,7 @@
     "tip": "He opens his inbox to ___ for new messages (= revisar)."
   },
   {
-    "sentence": "I ______ the lights before leaving the house.",
+    "sentence": "I ___ the lights before leaving the house.",
     "correct": "turn off",
     "options": [
       "turn off",
@@ -216,13 +216,13 @@
     "tip": "Before leaving you ___ the lights (= apagar, 2 palabras)."
   },
   {
-    "sentence": "I ______ my teeth every morning.",
+    "sentence": "I ___ my teeth every morning.",
     "correct": "brush",
     "explanation": "Usa <brush> para cepillarse los dientes.",
     "tip": "Complete with the correct form of <brush>"
   },
   {
-    "sentence": "He ______ to bed at 10 PM.",
+    "sentence": "He ___ to bed at 10 PM.",
     "correct": "goes",
     "explanation": "Usa <goes> con <to bed>.",
     "tip": "Complete with the correct form of <go> — ___ to bed"

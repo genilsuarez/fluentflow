@@ -1,120 +1,120 @@
 [
   {
-    "sentence": "English ______ spoken in many countries around the world.",
+    "sentence": "English ___ spoken in many countries around the world.",
     "correct": "is",
     "explanation": "Voz pasiva en presente simple: <is/are> + participio pasado. El sujeto recibe la acción.",
     "tip": "English receives the action of being spoken — what form of 'be' fits?"
   },
   {
-    "sentence": "The Mona Lisa ______ painted by Leonardo da Vinci.",
+    "sentence": "The Mona Lisa ___ painted by Leonardo da Vinci.",
     "correct": "was",
     "explanation": "Voz pasiva en pasado simple: <was/were> + participio pasado para acciones pasadas completadas.",
     "tip": "Leonardo painted it centuries ago — what past form of 'be' fits?"
   },
   {
-    "sentence": "These cars ______ made in Germany.",
+    "sentence": "These cars ___ made in Germany.",
     "correct": "are",
     "explanation": "Voz pasiva en presente simple: <are> + participio pasado para sujetos en plural.",
     "tip": "The cars (plural) receive the action of being made — present passive."
   },
   {
-    "sentence": "The letter ______ sent yesterday morning.",
+    "sentence": "The letter ___ sent yesterday morning.",
     "correct": "was",
     "explanation": "Voz pasiva en pasado simple: <was> + participio pasado. 'Yesterday' indica que es pasado.",
     "tip": "'Yesterday' signals past tense — what past form of 'be' completes the passive?"
   },
   {
-    "sentence": "Coffee ______ grown in Brazil and Colombia.",
+    "sentence": "Coffee ___ grown in Brazil and Colombia.",
     "correct": "is",
     "explanation": "Voz pasiva en presente simple: <is> + participio pasado para hechos generales.",
     "tip": "This is a general fact about coffee production — present passive."
   },
   {
-    "sentence": "The windows ______ broken during the storm last night.",
+    "sentence": "The windows ___ broken during the storm last night.",
     "correct": "were",
     "explanation": "Voz pasiva en pasado simple: <were> + participio pasado para sujetos en plural en el pasado.",
     "tip": "Look at the auxiliary verbs already in the sentence for clues."
   },
   {
-    "sentence": "This bridge ______ built in 1890.",
+    "sentence": "This bridge ___ built in 1890.",
     "correct": "was",
     "explanation": "Voz pasiva en pasado simple: <was> + participio pasado con una fecha específica en el pasado.",
     "tip": "1890 is a specific past date — what form of 'be' makes this passive?"
   },
   {
-    "sentence": "Millions of emails ______ sent every day.",
+    "sentence": "Millions of emails ___ sent every day.",
     "correct": "are",
     "explanation": "Voz pasiva en presente simple: <are> + participio pasado para acciones habituales o regulares.",
     "tip": "'Every day' signals a regular action — present passive with plural subject."
   },
   {
-    "sentence": "The homework must ______ finished before Friday.",
+    "sentence": "The homework must ___ finished before Friday.",
     "correct": "be",
     "explanation": "Voz pasiva con modal: modal + <be> + participio pasado. Después de un modal, se usa la forma base <be>.",
     "tip": "After 'must', what base form of 'be' completes the passive structure?"
   },
   {
-    "sentence": "The new hospital ______ opened by the mayor last month.",
+    "sentence": "The new hospital ___ opened by the mayor last month.",
     "correct": "was",
     "explanation": "Voz pasiva en pasado simple: <was> + participio pasado. 'Last month' confirma el tiempo pasado.",
     "tip": "The mayor opened it last month — past passive."
   },
   {
-    "sentence": "Spanish ______ taught in most American schools.",
+    "sentence": "Spanish ___ taught in most American schools.",
     "correct": "is",
     "explanation": "Voz pasiva en presente simple: <is> + participio pasado para un hecho general.",
     "tip": "This describes a current general situation — present passive."
   },
   {
-    "sentence": "These products ______ not tested on animals.",
+    "sentence": "These products ___ not tested on animals.",
     "correct": "are",
     "explanation": "Voz pasiva negativa en presente simple: <are> + not + participio pasado.",
     "tip": "This is a current policy about the products (plural) — present passive."
   },
   {
-    "sentence": "Rice ______ eaten as a main food in many Asian countries.",
+    "sentence": "Rice ___ eaten as a main food in many Asian countries.",
     "correct": "is",
     "explanation": "Voz pasiva en presente simple: <is> + participio pasado para hechos culturales generales.",
     "tip": "This is a general fact about eating habits — present passive."
   },
   {
-    "sentence": "The pyramids ______ built thousands of years ago.",
+    "sentence": "The pyramids ___ built thousands of years ago.",
     "correct": "were",
     "explanation": "Voz pasiva en pasado simple: <were> + participio pasado para sujetos en plural en un pasado lejano.",
     "tip": "Consider the relationship between the clauses."
   },
   {
-    "sentence": "This song can ______ heard on every radio station.",
+    "sentence": "This song can ___ heard on every radio station.",
     "correct": "be",
     "explanation": "Voz pasiva con modal: <can> + <be> + participio pasado.",
     "tip": "After 'can', what base form completes the passive?"
   },
   {
-    "sentence": "The children ______ given new books by their teacher.",
+    "sentence": "The children ___ given new books by their teacher.",
     "correct": "were",
     "explanation": "Voz pasiva en pasado simple: <were> + participio pasado para sujetos en plural que reciben algo.",
     "tip": "The children (plural) received books — past passive."
   },
   {
-    "sentence": "The rooms ______ cleaned every morning by the hotel staff.",
+    "sentence": "The rooms ___ cleaned every morning by the hotel staff.",
     "correct": "are",
     "explanation": "Voz pasiva en presente simple: <are> + participio pasado para acciones rutinarias.",
     "tip": "'Every morning' signals a routine — present passive with plural subject."
   },
   {
-    "sentence": "Cheese ______ made from milk.",
+    "sentence": "Cheese ___ made from milk.",
     "correct": "is",
     "explanation": "Voz pasiva en presente simple: <is> + participio pasado para describir un proceso.",
     "tip": "This describes how cheese is produced — present passive."
   },
   {
-    "sentence": "The injured people ______ taken to the hospital immediately.",
+    "sentence": "The injured people ___ taken to the hospital immediately.",
     "correct": "were",
     "explanation": "Voz pasiva en pasado simple: <were> + participio pasado para una acción de emergencia en el pasado.",
     "tip": "Look at the subject — is it doing the action or receiving it?"
   },
   {
-    "sentence": "This castle should ______ visited by every tourist.",
+    "sentence": "This castle should ___ visited by every tourist.",
     "correct": "be",
     "explanation": "Voz pasiva con modal: <should> + <be> + participio pasado para recomendaciones.",
     "tip": "After 'should', what base form completes the passive recommendation?"

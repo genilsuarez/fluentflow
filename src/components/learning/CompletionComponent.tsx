@@ -24,6 +24,7 @@ import { EditableInput } from '../ui/EditableInput';
 import type { EditableInputHandle } from '../ui/EditableInput';
 
 import type { LearningModule, CompletionData } from '../../types';
+import { countBlanks, splitOnBlanks } from '../../utils/blankMarker';
 import { GameControlsExitButton } from '../ui/GameControlsExitButton';
 import { GameControlsResetButton } from '../ui/GameControlsResetButton';
 
@@ -35,11 +36,6 @@ interface CompletionComponentProps {
 function inlineInputWidthCh(charCount: number, minChars = 5): string {
   const len = Math.max(charCount, minChars);
   return `${Math.ceil(len * 1.05 + 2)}ch`;
-}
-
-function countBlanks(sentence: string): number {
-  const matches = sentence.match(/______/g);
-  return matches ? matches.length : 0;
 }
 
 function emptyAnswers(blankCount: number): string[] {
@@ -251,8 +247,7 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
   const renderSentence = () => {
     if (!currentExercise?.sentence) return null;
 
-    // Split sentence by blank marker (______)
-    const parts = currentExercise.sentence.split('______');
+    const parts = splitOnBlanks(currentExercise.sentence);
     const elements: React.ReactElement[] = [];
 
     parts.forEach((part, index) => {

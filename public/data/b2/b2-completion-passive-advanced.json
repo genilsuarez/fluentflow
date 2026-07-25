@@ -1,120 +1,120 @@
 [
   {
-    "sentence": "The report ______ being written when the power went out.",
+    "sentence": "The report ___ being written when the power went out.",
     "correct": "was",
     "explanation": "Voz pasiva en pasado continuo: <was/were being> + participio pasado para acciones en progreso en el pasado.",
     "tip": "The writing was in progress when something interrupted it — past continuous passive."
   },
   {
-    "sentence": "The new bridge ______ been completed by the end of next year.",
+    "sentence": "The new bridge ___ been completed by the end of next year.",
     "correct": "will have",
     "explanation": "Voz pasiva en futuro perfecto: <will have been> + participio pasado para acciones completadas antes de un momento futuro.",
     "tip": "The bridge will be finished before a deadline — future perfect passive."
   },
   {
-    "sentence": "The documents should ______ been signed before the meeting.",
+    "sentence": "The documents should ___ been signed before the meeting.",
     "correct": "have",
     "explanation": "Voz pasiva con modal perfecto: <should have been> + participio pasado para obligaciones pasadas no cumplidas.",
     "tip": "Consider the relationship between the clauses."
   },
   {
-    "sentence": "The house ______ being renovated at the moment.",
+    "sentence": "The house ___ being renovated at the moment.",
     "correct": "is",
     "explanation": "Voz pasiva en presente continuo: <is/are being> + participio pasado para acciones actuales en progreso.",
     "tip": "The renovation is happening right now — present continuous passive."
   },
   {
-    "sentence": "The suspect is believed ______ have left the country.",
+    "sentence": "The suspect is believed ___ have left the country.",
     "correct": "to",
     "explanation": "Pasiva impersonal con <believed>: sujeto + <is believed to> + have + participio pasado.",
     "tip": "People believe the suspect left — what word connects 'believed' to 'have left'?"
   },
   {
-    "sentence": "She had her car ______ at the garage yesterday.",
+    "sentence": "She had her car ___ at the garage yesterday.",
     "correct": "repaired",
     "explanation": "Causativo <have>: <had> + objeto + participio pasado. Otra persona hizo la reparación por ella.",
     "tip": "She didn't repair it herself — someone did it for her. What form of 'repair'?"
   },
   {
-    "sentence": "I need to get my eyes ______ before I can renew my driving licence.",
+    "sentence": "I need to get my eyes ___ before I can renew my driving licence.",
     "correct": "tested",
     "explanation": "Causativo <get>: <get> + objeto + participio pasado. Otra persona hará las pruebas.",
     "tip": "You won't test your own eyes — someone else will. What form of 'test'?"
   },
   {
-    "sentence": "The results ______ have been announced by now.",
+    "sentence": "The results ___ have been announced by now.",
     "correct": "should",
     "explanation": "Pasiva modal para expresar expectativa: <should have been> + participio pasado.",
     "tip": "You expected the results to be announced already — what modal shows expectation?"
   },
   {
-    "sentence": "The new policy is said ______ affect millions of people.",
+    "sentence": "The new policy is said ___ affect millions of people.",
     "correct": "to",
     "explanation": "Pasiva impersonal con <said>: sujeto + <is said to> + verbo base.",
     "tip": "People say the policy affects millions — what word connects 'said' to 'affect'?"
   },
   {
-    "sentence": "She's having her hair ______ for the wedding tomorrow.",
+    "sentence": "She's having her hair ___ for the wedding tomorrow.",
     "correct": "done",
     "explanation": "Causativo <have>: <having> + objeto + participio pasado. Un peluquero lo hará.",
     "tip": "A professional will style her hair — what past participle of 'do' fits?"
   },
   {
-    "sentence": "The project might ______ been cancelled due to budget cuts.",
+    "sentence": "The project might ___ been cancelled due to budget cuts.",
     "correct": "have",
     "explanation": "Voz pasiva con modal perfecto: <might have been> + participio pasado para una posibilidad pasada.",
     "tip": "It's possible the project was cancelled — what word completes the modal perfect?"
   },
   {
-    "sentence": "The building ______ being demolished when we drove past.",
+    "sentence": "The building ___ being demolished when we drove past.",
     "correct": "was",
     "explanation": "Voz pasiva en pasado continuo: <was being> + participio pasado para una acción en progreso en un momento pasado.",
     "tip": "The demolition was in progress when you saw it — past continuous passive."
   },
   {
-    "sentence": "We got our house ______ last summer. It looks much better now.",
+    "sentence": "We got our house ___ last summer. It looks much better now.",
     "correct": "painted",
     "explanation": "Causativo <get>: <got> + objeto + participio pasado. Lo hicieron pintores profesionales.",
     "tip": "You didn't paint it yourself — what past participle shows someone else did it?"
   },
   {
-    "sentence": "The new software ______ being tested by the IT team right now.",
+    "sentence": "The new software ___ being tested by the IT team right now.",
     "correct": "is",
     "explanation": "Voz pasiva en presente continuo: <is being> + participio pasado para una prueba actual.",
     "tip": "The testing is happening now — present continuous passive."
   },
   {
-    "sentence": "I must get this document ______ before the deadline.",
+    "sentence": "I must get this document ___ before the deadline.",
     "correct": "signed",
     "explanation": "Causativo <get>: <get> + objeto + participio pasado con el modal <must>.",
     "tip": "Someone else needs to sign it for you — what past participle of 'sign'?"
   },
   {
-    "sentence": "The road ______ have been repaired months ago. It's still full of holes.",
+    "sentence": "The road ___ have been repaired months ago. It's still full of holes.",
     "correct": "should",
     "explanation": "Pasiva con modal perfecto para expresar crítica: <should have been> + participio pasado.",
     "tip": "Look at the auxiliary verbs already in the sentence for clues."
   },
   {
-    "sentence": "By the time we arrived, the food had already ______ served.",
+    "sentence": "By the time we arrived, the food had already ___ served.",
     "correct": "been",
     "explanation": "Voz pasiva en pasado perfecto: <had been> + participio pasado para acciones completadas antes de otro evento pasado.",
     "tip": "The food was served before you arrived — what completes the past perfect passive?"
   },
   {
-    "sentence": "She had her portrait ______ by a famous artist.",
+    "sentence": "She had her portrait ___ by a famous artist.",
     "correct": "painted",
     "explanation": "Causativo <have>: <had> + objeto + participio pasado. El artista lo pintó para ella.",
     "tip": "The context tells you whether this is active or passive."
   },
   {
-    "sentence": "The windows ______ being cleaned when it started to rain.",
+    "sentence": "The windows ___ being cleaned when it started to rain.",
     "correct": "were",
     "explanation": "Voz pasiva en pasado continuo: <were being> + participio pasado para sujetos en plural.",
     "tip": "The cleaning was in progress when rain started — past continuous passive (plural)."
   },
   {
-    "sentence": "I need to have my suit ______ before the interview.",
+    "sentence": "I need to have my suit ___ before the interview.",
     "correct": "dry-cleaned",
     "explanation": "Causativo <have>: <have> + objeto + participio pasado para servicios profesionales.",
     "tip": "A professional cleaner will do it — what past participle describes the service?"
