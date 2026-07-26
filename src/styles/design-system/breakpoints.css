@@ -43,7 +43,6 @@
 @custom-media --lp-below-lg (max-width: 1023px);
 @custom-media --lp-from-lg (min-width: 1024px);
 @custom-media --lp-nav-compact (max-width: 860px);
-@custom-media --lp-from-nav (min-width: 861px);
 @custom-media --lp-touch ((hover: none) and (pointer: coarse));
 @custom-media --lp-mobile-sm-touch (--lp-mobile-sm), (--lp-touch);
 @custom-media --lp-mobile-md-touch (--lp-mobile-md), (--lp-touch);

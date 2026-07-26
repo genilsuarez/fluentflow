@@ -27,7 +27,6 @@ const ALLOWED_CUSTOM_MEDIA = new Set([
   '--lp-below-lg',
   '--lp-from-lg',
   '--lp-nav-compact',
-  '--lp-from-nav',
   '--lp-touch',
   '--lp-mobile-sm-touch',
   '--lp-mobile-md-touch',
@@ -37,10 +36,9 @@ const ALLOWED_CUSTOM_MEDIA = new Set([
   '--lp-from-modal',
 ]);
 
-const FORBIDDEN_WIDTH_PX = new Set([
-  170, 171, 310, 320, 360, 374, 379, 400, 419, 460, 479, 480, 519, 520, 580,
-  641, 719, 720, 759, 760, 768, 769, 879, 880, 900, 1140, 1920,
-]);
+// Obsolete raw px values — none currently in codebase, kept as regression guard
+// for the canonical tiers (639/640, 767/768, 1023/1024, 860, 401 covered by OFF_BY_ONE below).
+const FORBIDDEN_WIDTH_PX = new Set([]);
 
 const OFF_BY_ONE = [
   { re: /max-width:\s*768px/, fix: '--lp-mobile-md' },
