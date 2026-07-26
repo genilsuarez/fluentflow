@@ -27,8 +27,7 @@ export function measureCategoryGridCapacity(container: HTMLElement): number {
   let occupied = 0;
 
   const containerStyle = getComputedStyle(container);
-  occupied +=
-    parseFloat(containerStyle.paddingTop) + parseFloat(containerStyle.paddingBottom);
+  occupied += parseFloat(containerStyle.paddingTop) + parseFloat(containerStyle.paddingBottom);
   const sectionGap = parseFloat(containerStyle.gap) || 4;
 
   let expandedSection: Element | null = null;

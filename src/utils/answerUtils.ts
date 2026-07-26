@@ -133,7 +133,7 @@ const UK_TO_US_SPELLING: Record<string, string> = {
 function normalizeSpellingVariants(s: string): string {
   return s
     .split(' ')
-    .map(word => UK_TO_US_SPELLING[word] ?? word)
+    .map(word => (Object.hasOwn(UK_TO_US_SPELLING, word) ? UK_TO_US_SPELLING[word] : word))
     .join(' ');
 }
 
