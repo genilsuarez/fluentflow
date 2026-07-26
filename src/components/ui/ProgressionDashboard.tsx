@@ -9,6 +9,61 @@ import Fuse from 'fuse.js';
 import { MODE_I18N_KEYS, getLevelColor } from '../../utils/progressionDisplay';
 import '../../styles/components/progression-dashboard.css';
 
+const COMPACT_VISIBLE_MODULE_SLOTS = 5;
+
+function trimModulesToGridRows(
+  items: LearningModule[],
+  columns: number,
+  options: {
+    isLocked: (module: LearningModule) => boolean;
+    keepModuleId?: string;
+  }
+): { items: LearningModule[]; hiddenLocked: number } {
+  if (columns <= 1 || items.length === 0) {
+    return { items, hiddenLocked: 0 };
+  }
+
+  const overflow = items.length % columns;
+  if (overflow === 0) {
+    return { items, hiddenLocked: 0 };
+  }
+
+  const result = [...items];
+  let hiddenLocked = 0;
+  let toRemove = overflow;
+
+  const removeAt = (index: number) => {
+    const [removed] = result.splice(index, 1);
+    if (options.isLocked(removed)) hiddenLocked++;
+    toRemove--;
+  };
+
+  while (toRemove > 0) {
+    let removed = false;
+
+    for (let i = result.length - 1; i >= 0 && toRemove > 0; i--) {
+      const module = result[i];
+      if (module.id === options.keepModuleId) continue;
+      if (!options.isLocked(module)) continue;
+      removeAt(i);
+      removed = true;
+    }
+    if (removed) continue;
+
+    for (let i = result.length - 1; i >= 0 && toRemove > 0; i--) {
+      const module = result[i];
+      if (module.id === options.keepModuleId) continue;
+      removeAt(i);
+      removed = true;
+      break;
+    }
+
+    if (!removed) break;
+  }
+
+  return { items: result, hiddenLocked };
+}
+
 function getModuleGridColumns(): number {
   if (typeof window === 'undefined') return 4;
   if (window.matchMedia('(min-width: 1024px)').matches) return 4;
@@ -25,20 +80,6 @@ function useModuleGridColumns(): number {
     return () => mqs.forEach(mq => mq.removeEventListener('change', update));
   }, []);
   return columns;
-}
-
-function useMobileAccordion(breakpoint = 767): boolean {
-  const [isMobile, setIsMobile] = React.useState(
-    () => typeof window !== 'undefined' && window.innerWidth <= breakpoint
-  );
-  React.useEffect(() => {
-    const mq = window.matchMedia(`(max-width: ${breakpoint}px)`);
-    const update = () => setIsMobile(mq.matches);
-    update();
-    mq.addEventListener('change', update);
-    return () => mq.removeEventListener('change', update);
-  }, [breakpoint]);
-  return isMobile;
 }
 
 interface ProgressionDashboardProps {
@@ -71,7 +112,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
     new Set()
   );
   const moduleGridColumns = useModuleGridColumns();
-  const isMobileAccordion = useMobileAccordion();
+  const useCompactProgressionList = true;
 
   const nextRecommended = progression.getNextRecommendedModule();
 
@@ -143,10 +184,10 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
     // Expand the unit containing the next recommended module
     setExpandedUnits(prev => {
       if (prev.has(nextRecommended.unit)) return prev;
-      if (isMobileAccordion) return new Set([nextRecommended.unit]);
+      if (useCompactProgressionList) return new Set([nextRecommended.unit]);
       return new Set([...prev, nextRecommended.unit]);
     });
-  }, [nextRecommended, searchQuery, completedModulesCount, isMobileAccordion]);
+  }, [nextRecommended, searchQuery, completedModulesCount, useCompactProgressionList]);
 
   // Helper: schedule scroll after the browser has completed layout
   const scheduleScroll = React.useCallback(() => {
@@ -194,7 +235,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
         next.delete(unit);
         return next;
       }
-      if (isMobileAccordion) return new Set([unit]);
+      if (useCompactProgressionList) return new Set([unit]);
       return new Set([...prev, unit]);
     });
 
@@ -306,7 +347,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
 
   return (
     <div
-      className={`progression-dashboard${isMobileAccordion ? ' progression-dashboard--mobile-accordion' : ''} ${theme === 'dark' ? 'progression-dashboard--dark-theme' : ''}`}
+      className={`progression-dashboard${useCompactProgressionList ? ' progression-dashboard--mobile-accordion' : ''} ${theme === 'dark' ? 'progression-dashboard--dark-theme' : ''}`}
     >
       {/* Search/Filter Results Header */}
       {(searchQuery.trim() ||
@@ -339,7 +380,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
 
       {/* Units Progress */}
       <div
-        className={`progression-dashboard__units${isMobileAccordion ? ' progression-dashboard__units--mobile-accordion' : ''}`}
+        className={`progression-dashboard__units${useCompactProgressionList ? ' progression-dashboard__units--mobile-accordion' : ''}`}
       >
         {Object.keys(modulesByUnit).length === 0 && searchQuery.trim() ? (
           // No search results
@@ -442,8 +483,8 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                   {isExpanded &&
                     (() => {
                       const COLUMNS = moduleGridColumns;
-                      // Mobile list: show more rows before collapse/truncation (grid stays 1 col)
-                      const visibleSlots = isMobileAccordion ? 5 : COLUMNS;
+                      const rowSlots =
+                        COLUMNS > 1 ? COLUMNS : COMPACT_VISIBLE_MODULE_SLOTS;
 
                       // In progress view, only nextRecommended is shown as "unlocked".
                       // Other technically-unlocked modules display as locked to reinforce
@@ -469,21 +510,22 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                       let lockedHidden = 0;
                       let showCompletedToggle = false;
                       let collapsibleCompleted = 0;
+                      let visibleModules: LearningModule[] = modules;
                       const isCompletedExpanded =
                         expandedCompletedUnits.has(unit) || !!searchQuery.trim();
 
                       if (!developmentMode) {
                         if (nextIndex > 0) {
                           const beforeNextCount = nextIndex;
-                          if (beforeNextCount > visibleSlots) {
-                            collapsibleCompleted = beforeNextCount - visibleSlots;
+                          if (beforeNextCount > rowSlots) {
+                            collapsibleCompleted = beforeNextCount - rowSlots;
                           }
                         } else if (nextIndex === -1) {
                           const allCompleted =
                             modules.length > 0 &&
                             modules.every(m => progression.getModuleStatus(m.id) === 'completed');
-                          if (allCompleted && modules.length > visibleSlots) {
-                            collapsibleCompleted = modules.length - visibleSlots;
+                          if (allCompleted && modules.length > rowSlots) {
+                            collapsibleCompleted = modules.length - rowSlots;
                           }
                         }
 
@@ -494,10 +536,10 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                         if (nextIndex > 0) {
                           const beforeNext = modules.slice(0, nextIndex);
                           suffix = modules.slice(nextIndex);
-                          if (isCompletedExpanded || beforeNext.length <= visibleSlots) {
+                          if (isCompletedExpanded || beforeNext.length <= rowSlots) {
                             prefix = beforeNext;
                           } else {
-                            prefix = beforeNext.slice(-visibleSlots);
+                            prefix = beforeNext.slice(-rowSlots);
                           }
                         } else if (nextIndex === -1) {
                           const allCompleted =
@@ -505,10 +547,10 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                             modules.every(m => progression.getModuleStatus(m.id) === 'completed');
                           if (allCompleted) {
                             suffix = [];
-                            if (isCompletedExpanded || modules.length <= visibleSlots) {
+                            if (isCompletedExpanded || modules.length <= rowSlots) {
                               prefix = modules;
                             } else {
-                              prefix = modules.slice(-visibleSlots);
+                              prefix = modules.slice(-rowSlots);
                             }
                           }
                         }
@@ -516,9 +558,9 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                         const unlockedCount = suffix.filter(
                           m => effectiveStatus(m) !== 'locked'
                         ).length;
-                        const remainder = unlockedCount % visibleSlots;
-                        const toFillRow = remainder === 0 ? 0 : visibleSlots - remainder;
-                        const LOCKED_VISIBLE = toFillRow + visibleSlots;
+                        const remainder = unlockedCount % rowSlots;
+                        const toFillRow = remainder === 0 ? 0 : rowSlots - remainder;
+                        const LOCKED_VISIBLE = toFillRow + rowSlots;
 
                         let lockedShown = 0;
                         lockedHidden = 0;
@@ -538,14 +580,14 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                           }
                         }
 
-                        const rowOverflow = suffixVisible.length % visibleSlots;
-                        if (rowOverflow > 0) {
-                          for (let i = 0; i < rowOverflow; i++) {
-                            const removed = suffixVisible.pop();
-                            if (removed && effectiveStatus(removed) === 'locked') {
-                              lockedHidden++;
-                            }
-                          }
+                        visibleModules = [...prefix, ...suffixVisible];
+                        if (COLUMNS > 1) {
+                          const trimmed = trimModulesToGridRows(visibleModules, COLUMNS, {
+                            isLocked: module => effectiveStatus(module) === 'locked',
+                            keepModuleId: nextRecommended?.id,
+                          });
+                          visibleModules = trimmed.items;
+                          lockedHidden += trimmed.hiddenLocked;
                         }
                       }
 
@@ -627,11 +669,6 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                                 />
                               </button>
                             )}
-                            {prefix.length > 0 && (
-                              <div className="progression-dashboard__modules progression-dashboard__modules--completed">
-                                {prefix.map(renderModuleCard)}
-                              </div>
-                            )}
                             {showCompletedToggle && isCompletedExpanded && (
                               <button
                                 type="button"
@@ -647,11 +684,11 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                                 />
                               </button>
                             )}
-                            {suffixVisible.length > 0 && (
+                            {(visibleModules.length > 0) && (
                               <div
                                 className={`progression-dashboard__modules${lockedHidden > 0 ? ' progression-dashboard__modules--truncated' : ''}`}
                               >
-                                {suffixVisible.map(renderModuleCard)}
+                                {visibleModules.map(renderModuleCard)}
                               </div>
                             )}
                             {lockedHidden > 0 && (

@@ -3,16 +3,14 @@
    that originally exposed the bugs (moved out of a `.browser-safari`-gated
    file — see project memory for history). */
 
-/* === MAIN MENU: BUTTON COLORS === */
+/* === MAIN MENU: VIEW TOGGLE (single alternate-view CTA) === */
 .main-menu__view-btn--active {
-  background: #3b82f6;
-  color: #ffffff;
-  border: none;
+  display: none;
 }
 
 .main-menu__view-btn:not(.main-menu__view-btn--active) {
-  background: var(--lp-surface);
-  color: var(--lp-ink);
+  background: #2563eb;
+  color: #ffffff;
   border: none;
 }
 
@@ -55,7 +53,7 @@ input[type='search'] {
   overflow: hidden;
   text-overflow: ellipsis;
   min-width: 0;
-  flex: 1;
+  flex: none;
   box-sizing: border-box;
 }
 

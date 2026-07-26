@@ -45,6 +45,7 @@ const LEVEL_LABELS: Record<string, string> = {
   c1: 'C1',
   c2: 'C2',
 };
+const PINNED_CATEGORY: Category = 'Grammar';
 
 export const MainMenu: React.FC = () => {
   const { data: modules = [], isLoading, error } = useAllModules();
@@ -75,7 +76,9 @@ export const MainMenu: React.FC = () => {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [isSearchExpanded, setIsSearchExpanded] = useState(false);
   const [modulesView, setModulesView] = useState<'progress' | 'all'>('progress');
-  const [expandedCategories, setExpandedCategories] = useState<Set<Category>>(() => new Set());
+  const [expandedCategories, setExpandedCategories] = useState<Set<Category>>(
+    () => new Set([PINNED_CATEGORY])
+  );
   const [expandedLevels, setExpandedLevels] = useState<Set<string>>(() => new Set());
   const gridRef = useRef<HTMLDivElement>(null);
   const categoryLayoutKey = `${modulesView}-${query}-${[...expandedCategories].sort().join(',')}`;
@@ -243,12 +246,24 @@ export const MainMenu: React.FC = () => {
 
   const toggleCategory = React.useCallback((category: Category) => {
     setExpandedCategories(prev => {
+      if (category === PINNED_CATEGORY && prev.has(PINNED_CATEGORY)) {
+        return prev;
+      }
+
       const isExpanding = !prev.has(category);
       if (isExpanding) {
         pendingCategoryScrollRef.current = category;
+        if (category === PINNED_CATEGORY) {
+          return new Set([PINNED_CATEGORY]);
+        }
+        // Accordion: Grammar pinned + one other category
+        return new Set([PINNED_CATEGORY, category]);
       }
-      // Accordion: only one open at a time
-      return isExpanding ? new Set([category]) : new Set<Category>();
+
+      const next = new Set(prev);
+      next.delete(category);
+      next.add(PINNED_CATEGORY);
+      return next;
     });
     // Reset level expansions when toggling categories
     setExpandedLevels(new Set());
@@ -309,7 +324,14 @@ export const MainMenu: React.FC = () => {
     if (!mod) return;
 
     hasInitializedRef.current = true;
-    setExpandedCategories(new Set([mod.category]));
+    setExpandedCategories(prev => {
+      const next = new Set(prev);
+      next.add(PINNED_CATEGORY);
+      if (mod.category !== PINNED_CATEGORY) {
+        next.add(mod.category);
+      }
+      return next;
+    });
   }, [modulesView, currentModuleId, modules]);
 
   // Sync view mode with stored context when component mounts
@@ -629,38 +651,58 @@ export const MainMenu: React.FC = () => {
                         {isExpanded && (
                           <div className="category-section__body">
                             {(() => {
-                              // Nested expand: each level only reveals the next when expanded.
-                              // Past levels (completed) and the active level always show.
-                              // The first locked level only appears when the previous level is expanded.
-                              // Subsequent locked levels remain hidden behind a summary message.
+                              const isLevelPast = (levelModules: LearningModule[]) =>
+                                levelModules.every(
+                                  m => exerciseStatusMap.get(m.id)?.status === 'completed'
+                                );
+
+                              const isLevelViewComplete = (
+                                levelModules: LearningModule[],
+                                levelKey: string
+                              ) => {
+                                if (isLevelPast(levelModules)) return true;
+                                if (levelModules.length <= cardsPerLevel) return true;
+                                return expandedLevels.has(levelKey);
+                              };
+
+                              // Reveal levels sequentially: finish the current level first
+                              // (via Show more), then the next CEFR row appears.
                               const visibleLevels: typeof levels = [];
                               let hiddenCount = 0;
                               let firstHiddenLabel = '';
 
                               for (let i = 0; i < levels.length; i++) {
                                 const levelData = levels[i];
-                                const allLocked = levelData.modules.every(
-                                  m => exerciseStatusMap.get(m.id)?.status === 'locked'
-                                );
+                                const levelKey = `${category}:${levelData.level}`;
 
-                                if (!allLocked) {
-                                  // Completed or active level — always visible
-                                  visibleLevels.push(levelData);
-                                } else {
-                                  // Locked level: only show if previous level is expanded
-                                  const prevLevel = levels[i - 1];
-                                  const prevKey = prevLevel ? `${category}:${prevLevel.level}` : '';
-                                  const prevExpanded = prevKey ? expandedLevels.has(prevKey) : true;
-
-                                  if (prevExpanded && hiddenCount === 0) {
-                                    // Show only the first locked level (when prev is expanded)
-                                    visibleLevels.push(levelData);
-                                  } else {
-                                    hiddenCount++;
-                                    if (!firstHiddenLabel) firstHiddenLabel = levelData.label;
+                                if (i > 0) {
+                                  const prev = levels[i - 1];
+                                  const prevKey = `${category}:${prev.level}`;
+                                  if (!isLevelViewComplete(prev.modules, prevKey)) {
+                                    for (let j = i; j < levels.length; j++) {
+                                      hiddenCount++;
+                                      if (!firstHiddenLabel) firstHiddenLabel = levels[j].label;
+                                    }
+                                    break;
                                   }
                                 }
+
+                                visibleLevels.push(levelData);
+
+                                if (!isLevelViewComplete(levelData.modules, levelKey)) {
+                                  for (let j = i + 1; j < levels.length; j++) {
+                                    hiddenCount++;
+                                    if (!firstHiddenLabel) firstHiddenLabel = levels[j].label;
+                                  }
+                                  break;
+                                }
                               }
+
+                              const showLevelsHiddenFooter =
+                                hiddenCount > 0 &&
+                                visibleLevels.every(ld =>
+                                  isLevelViewComplete(ld.modules, `${category}:${ld.level}`)
+                                );
 
                               return (
                                 <>
@@ -758,7 +800,7 @@ export const MainMenu: React.FC = () => {
                                       </div>
                                     );
                                   })}
-                                  {hiddenCount > 0 && (
+                                  {showLevelsHiddenFooter && (
                                     <div className="category-section__levels-hidden">
                                       <span className="category-section__levels-hidden-text">
                                         {t('common.levelsHidden', undefined, {
