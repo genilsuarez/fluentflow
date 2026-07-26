@@ -106,14 +106,15 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
     }
   }, [completedModulesCount, progression]);
 
-  // Scroll the .progression-dashboard__units container so the --next module
-  // appears near the top, with roughly one row of completed modules visible above.
+  // Scroll the module list so the --next module appears near the top.
   const scrollToNextModule = React.useCallback((behavior: ScrollBehavior = 'smooth') => {
     const nextEl = document.querySelector('.progression-dashboard__module--next');
     if (!nextEl) return;
 
-    // Find the scrollable ancestor (.progression-dashboard__units)
-    const container = nextEl.closest('.progression-dashboard__units');
+    // Mobile: scroll inside unit-body; desktop: scroll the units list
+    const container =
+      nextEl.closest('.progression-dashboard__unit-body') ||
+      nextEl.closest('.progression-dashboard__units');
     if (!container) {
       nextEl.scrollIntoView({ behavior, block: 'start' });
       return;
@@ -124,7 +125,8 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
 
     // Position the next module with ~1 row height offset from the top.
     // A row is ~100px (card height + gap). This leaves context above.
-    const ROW_OFFSET = 108;
+    const ROW_OFFSET =
+      typeof window !== 'undefined' && window.matchMedia('(max-width: 767px)').matches ? 52 : 108;
     const elTopInContainer = container.scrollTop + (elRect.top - containerRect.top);
     const scrollTop = elTopInContainer - ROW_OFFSET;
 
@@ -304,7 +306,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
 
   return (
     <div
-      className={`progression-dashboard ${theme === 'dark' ? 'progression-dashboard--dark-theme' : ''}`}
+      className={`progression-dashboard${isMobileAccordion ? ' progression-dashboard--mobile-accordion' : ''} ${theme === 'dark' ? 'progression-dashboard--dark-theme' : ''}`}
     >
       {/* Search/Filter Results Header */}
       {(searchQuery.trim() ||
@@ -336,7 +338,9 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
       )}
 
       {/* Units Progress */}
-      <div className="progression-dashboard__units">
+      <div
+        className={`progression-dashboard__units${isMobileAccordion ? ' progression-dashboard__units--mobile-accordion' : ''}`}
+      >
         {Object.keys(modulesByUnit).length === 0 && searchQuery.trim() ? (
           // No search results
           <div className="progression-dashboard__no-results">
@@ -358,12 +362,28 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
 
               const isExpanded = expandedUnits.has(unit);
               const hasNextModule = modules.some(m => nextRecommended?.id === m.id);
+              const unitLevel = modules[0]
+                ? Array.isArray(modules[0].level)
+                  ? modules[0].level[0]
+                  : modules[0].level
+                : undefined;
+              const unitLevelColor = unitLevel ? getLevelColor(unitLevel) : undefined;
 
               return (
-                <div key={unit} className="progression-dashboard__unit">
+                <div
+                  key={unit}
+                  className={`progression-dashboard__unit${isExpanded ? ' progression-dashboard__unit--expanded' : ''}`}
+                  style={
+                    unitLevelColor
+                      ? ({ '--unit-level-color': unitLevelColor } as React.CSSProperties)
+                      : undefined
+                  }
+                >
                   <div
-                    className={`progression-dashboard__unit-header progression-dashboard__unit-header--clickable ${filteredPercentage === 100 ? 'progression-dashboard__unit-header--completed' : ''}`}
+                    className={`progression-dashboard__unit-header progression-dashboard__unit-header--clickable${isExpanded ? ' progression-dashboard__unit-header--expanded' : ''} ${filteredPercentage === 100 ? 'progression-dashboard__unit-header--completed' : ''}`}
                     onClick={() => toggleUnit(unit)}
+                    role="button"
+                    aria-expanded={isExpanded}
                   >
                     <div className="progression-dashboard__unit-info">
                       <div
@@ -422,6 +442,8 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                   {isExpanded &&
                     (() => {
                       const COLUMNS = moduleGridColumns;
+                      // Mobile list: show more rows before collapse/truncation (grid stays 1 col)
+                      const visibleSlots = isMobileAccordion ? 5 : COLUMNS;
 
                       // In progress view, only nextRecommended is shown as "unlocked".
                       // Other technically-unlocked modules display as locked to reinforce
@@ -453,15 +475,15 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                       if (!developmentMode) {
                         if (nextIndex > 0) {
                           const beforeNextCount = nextIndex;
-                          if (beforeNextCount > COLUMNS) {
-                            collapsibleCompleted = beforeNextCount - COLUMNS;
+                          if (beforeNextCount > visibleSlots) {
+                            collapsibleCompleted = beforeNextCount - visibleSlots;
                           }
                         } else if (nextIndex === -1) {
                           const allCompleted =
                             modules.length > 0 &&
                             modules.every(m => progression.getModuleStatus(m.id) === 'completed');
-                          if (allCompleted && modules.length > COLUMNS) {
-                            collapsibleCompleted = modules.length - COLUMNS;
+                          if (allCompleted && modules.length > visibleSlots) {
+                            collapsibleCompleted = modules.length - visibleSlots;
                           }
                         }
 
@@ -472,10 +494,10 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                         if (nextIndex > 0) {
                           const beforeNext = modules.slice(0, nextIndex);
                           suffix = modules.slice(nextIndex);
-                          if (isCompletedExpanded || beforeNext.length <= COLUMNS) {
+                          if (isCompletedExpanded || beforeNext.length <= visibleSlots) {
                             prefix = beforeNext;
                           } else {
-                            prefix = beforeNext.slice(-COLUMNS);
+                            prefix = beforeNext.slice(-visibleSlots);
                           }
                         } else if (nextIndex === -1) {
                           const allCompleted =
@@ -483,10 +505,10 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                             modules.every(m => progression.getModuleStatus(m.id) === 'completed');
                           if (allCompleted) {
                             suffix = [];
-                            if (isCompletedExpanded || modules.length <= COLUMNS) {
+                            if (isCompletedExpanded || modules.length <= visibleSlots) {
                               prefix = modules;
                             } else {
-                              prefix = modules.slice(-COLUMNS);
+                              prefix = modules.slice(-visibleSlots);
                             }
                           }
                         }
@@ -494,9 +516,9 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                         const unlockedCount = suffix.filter(
                           m => effectiveStatus(m) !== 'locked'
                         ).length;
-                        const remainder = unlockedCount % COLUMNS;
-                        const toFillRow = remainder === 0 ? 0 : COLUMNS - remainder;
-                        const LOCKED_VISIBLE = toFillRow + COLUMNS;
+                        const remainder = unlockedCount % visibleSlots;
+                        const toFillRow = remainder === 0 ? 0 : visibleSlots - remainder;
+                        const LOCKED_VISIBLE = toFillRow + visibleSlots;
 
                         let lockedShown = 0;
                         lockedHidden = 0;
@@ -516,7 +538,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                           }
                         }
 
-                        const rowOverflow = suffixVisible.length % COLUMNS;
+                        const rowOverflow = suffixVisible.length % visibleSlots;
                         if (rowOverflow > 0) {
                           for (let i = 0; i < rowOverflow; i++) {
                             const removed = suffixVisible.pop();
@@ -588,7 +610,8 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                       };
 
                       return (
-                        <div className="progression-dashboard__modules-stack">
+                        <div className="progression-dashboard__unit-body">
+                          <div className="progression-dashboard__modules-stack">
                           {showCompletedToggle && !isCompletedExpanded && (
                             <button
                               type="button"
@@ -639,6 +662,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                               </span>
                             </div>
                           )}
+                        </div>
                         </div>
                       );
                     })()}

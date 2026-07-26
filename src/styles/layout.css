@@ -21,6 +21,16 @@
 .layout-container[data-view='menu'] .layout-main {
   overflow: hidden;
   min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-container[data-view='menu'] .layout-main > .main-menu {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Main content area */
