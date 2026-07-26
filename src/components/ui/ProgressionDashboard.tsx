@@ -612,57 +612,57 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                       return (
                         <div className="progression-dashboard__unit-body">
                           <div className="progression-dashboard__modules-stack">
-                          {showCompletedToggle && !isCompletedExpanded && (
-                            <button
-                              type="button"
-                              className="progression-dashboard__show-more"
-                              onClick={toggleCompletedExpanded}
-                              aria-expanded={false}
-                            >
-                              {`${t('common.showMore')} (+${collapsibleCompleted})`}
-                              <ChevronDown
-                                size={14}
-                                className="progression-dashboard__show-more-icon"
-                                aria-hidden="true"
-                              />
-                            </button>
-                          )}
-                          {prefix.length > 0 && (
-                            <div className="progression-dashboard__modules progression-dashboard__modules--completed">
-                              {prefix.map(renderModuleCard)}
-                            </div>
-                          )}
-                          {showCompletedToggle && isCompletedExpanded && (
-                            <button
-                              type="button"
-                              className="progression-dashboard__show-more progression-dashboard__show-more--after-completed"
-                              onClick={toggleCompletedExpanded}
-                              aria-expanded={true}
-                            >
-                              {t('common.showLess')}
-                              <ChevronDown
-                                size={14}
-                                className="progression-dashboard__show-more-icon progression-dashboard__show-more-icon--expanded"
-                                aria-hidden="true"
-                              />
-                            </button>
-                          )}
-                          {suffixVisible.length > 0 && (
-                            <div
-                              className={`progression-dashboard__modules${lockedHidden > 0 ? ' progression-dashboard__modules--truncated' : ''}`}
-                            >
-                              {suffixVisible.map(renderModuleCard)}
-                            </div>
-                          )}
-                          {lockedHidden > 0 && (
-                            <div className="progression-dashboard__locked-hidden">
-                              <Lock size={14} aria-hidden="true" />
-                              <span>
-                                +{lockedHidden} {t('common.lockedModulesHidden')}
-                              </span>
-                            </div>
-                          )}
-                        </div>
+                            {showCompletedToggle && !isCompletedExpanded && (
+                              <button
+                                type="button"
+                                className="progression-dashboard__show-more"
+                                onClick={toggleCompletedExpanded}
+                                aria-expanded={false}
+                              >
+                                {`${t('common.showMore')} (+${collapsibleCompleted})`}
+                                <ChevronDown
+                                  size={14}
+                                  className="progression-dashboard__show-more-icon"
+                                  aria-hidden="true"
+                                />
+                              </button>
+                            )}
+                            {prefix.length > 0 && (
+                              <div className="progression-dashboard__modules progression-dashboard__modules--completed">
+                                {prefix.map(renderModuleCard)}
+                              </div>
+                            )}
+                            {showCompletedToggle && isCompletedExpanded && (
+                              <button
+                                type="button"
+                                className="progression-dashboard__show-more progression-dashboard__show-more--after-completed"
+                                onClick={toggleCompletedExpanded}
+                                aria-expanded={true}
+                              >
+                                {t('common.showLess')}
+                                <ChevronDown
+                                  size={14}
+                                  className="progression-dashboard__show-more-icon progression-dashboard__show-more-icon--expanded"
+                                  aria-hidden="true"
+                                />
+                              </button>
+                            )}
+                            {suffixVisible.length > 0 && (
+                              <div
+                                className={`progression-dashboard__modules${lockedHidden > 0 ? ' progression-dashboard__modules--truncated' : ''}`}
+                              >
+                                {suffixVisible.map(renderModuleCard)}
+                              </div>
+                            )}
+                            {lockedHidden > 0 && (
+                              <div className="progression-dashboard__locked-hidden">
+                                <Lock size={14} aria-hidden="true" />
+                                <span>
+                                  +{lockedHidden} {t('common.lockedModulesHidden')}
+                                </span>
+                              </div>
+                            )}
+                          </div>
                         </div>
                       );
                     })()}
