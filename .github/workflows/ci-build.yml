@@ -19,9 +19,9 @@ jobs:
     name: Build Application
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: '24'
           cache: 'npm'
@@ -37,7 +37,7 @@ jobs:
           [ -f "dist/index.html" ] || { echo "❌ index.html not found"; exit 1; }
           echo "✅ Build OK"
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: build-files-${{ github.sha }}
           path: dist/
