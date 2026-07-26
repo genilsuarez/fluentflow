@@ -387,7 +387,8 @@ export const Header: React.FC<HeaderProps> = () => {
         </div>
       </div>
       {/* Compact Modals - rendered via portal to avoid event bubbling to header */}
-      {showSettings && canOpenSettings &&
+      {showSettings &&
+        canOpenSettings &&
         createPortal(
           <Suspense fallback={null}>
             <CompactAdvancedSettings isOpen={showSettings} onClose={() => setShowSettings(false)} />
