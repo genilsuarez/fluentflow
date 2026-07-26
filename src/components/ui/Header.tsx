@@ -12,6 +12,7 @@ import { useEscapeKey } from '../../hooks/useEscapeKey';
 import { useOfflineStatus } from '../../hooks/useOfflineStatus';
 import { portalHref, isLocalPlatformHost } from '../../utils/platformUrls';
 import { formatLessonTitleForHeader } from '../../utils/formatLessonTitleForHeader';
+import { canAccessAdvancedSettings } from '../../utils/settingsAccess';
 // import { toast } from '../../stores/toastStore';
 // Lazy-loaded modals — only loaded when user opens them
 const CompactAdvancedSettings = React.lazy(() =>
@@ -56,6 +57,7 @@ export const Header: React.FC<HeaderProps> = () => {
   const isInGame = currentView !== 'menu';
   const { developmentMode, language, offlineEnabled, theme, setTheme } = useSettingsStore();
   const user = useUserStore(state => state.user);
+  const canOpenSettings = canAccessAdvancedSettings(user?.email);
   const { returnToMenu } = useMenuNavigation();
   const { t } = useTranslation(language);
   const { isOnline } = useOfflineStatus();
@@ -67,6 +69,9 @@ export const Header: React.FC<HeaderProps> = () => {
   const [showMyProgressTab, setShowMyProgressTab] = useState<'dashboard' | 'path'>('dashboard');
   const [showBadge, setShowBadge] = useState(false);
   const [showLearningScoreInHeader, setShowLearningScoreInHeader] = useState(false);
+  useEffect(() => {
+    if (!canOpenSettings && showSettings) setShowSettings(false);
+  }, [canOpenSettings, showSettings]);
   // Offline badge: show immediately when offline+enabled, hide with 3s delay on reconnect
   useEffect(() => {
     const shouldShow = !isOnline && offlineEnabled;
@@ -224,17 +229,6 @@ export const Header: React.FC<HeaderProps> = () => {
                 aria-label={t('navigation.navigationAndSettings')}
               >
                 <button
-                  onClick={handleMenuToggle}
-                  className={`header-redesigned__toolbar-btn header-redesigned__menu-btn${showSideMenu ? ' header-redesigned__menu-btn--open' : ''}`}
-                  title={menuToggleLabel}
-                  aria-label={menuToggleLabel}
-                  aria-expanded={showSideMenu}
-                  aria-controls="navigation-menu"
-                >
-                  {renderMenuToggleIcon()}
-                  <span className="sr-only">{menuToggleShortLabel}</span>
-                </button>
-                <button
                   onClick={() => returnToMenu()}
                   className="header-redesigned__toolbar-btn header-redesigned__back-btn"
                   title={t('navigation.backToMenu')}
@@ -267,6 +261,17 @@ export const Header: React.FC<HeaderProps> = () => {
                       : lessonTitle}
                   </h2>
                 ) : null}
+                <button
+                  onClick={handleMenuToggle}
+                  className={`header-redesigned__toolbar-btn header-redesigned__menu-btn${showSideMenu ? ' header-redesigned__menu-btn--open' : ''}`}
+                  title={menuToggleLabel}
+                  aria-label={menuToggleLabel}
+                  aria-expanded={showSideMenu}
+                  aria-controls="navigation-menu"
+                >
+                  {renderMenuToggleIcon()}
+                  <span className="sr-only">{menuToggleShortLabel}</span>
+                </button>
               </div>
             </>
           ) : (
@@ -363,7 +368,7 @@ export const Header: React.FC<HeaderProps> = () => {
                 <span>{t('offline.indicator')}</span>
               </div>
             )}
-            {developmentMode && (
+            {developmentMode && canOpenSettings && (
               <button
                 className="header-redesigned__dev-indicator"
                 title={t('common.developmentModeActive')}
@@ -382,7 +387,7 @@ export const Header: React.FC<HeaderProps> = () => {
         </div>
       </div>
       {/* Compact Modals - rendered via portal to avoid event bubbling to header */}
-      {showSettings &&
+      {showSettings && canOpenSettings &&
         createPortal(
           <Suspense fallback={null}>
             <CompactAdvancedSettings isOpen={showSettings} onClose={() => setShowSettings(false)} />
@@ -493,19 +498,21 @@ export const Header: React.FC<HeaderProps> = () => {
                 </span>
                 <span className="header-side-menu__text">Ejercicios</span>
               </button>
-              <button
-                onClick={() => {
-                  setShowSettings(true);
-                  setShowSideMenu(false);
-                }}
-                className="header-side-menu__item"
-                aria-label="Ajustes"
-              >
-                <span className="header-side-menu__icon" aria-hidden="true">
-                  <NavMenuIcon name="settings" />
-                </span>
-                <span className="header-side-menu__text">Ajustes</span>
-              </button>
+              {canOpenSettings && (
+                <button
+                  onClick={() => {
+                    setShowSettings(true);
+                    setShowSideMenu(false);
+                  }}
+                  className="header-side-menu__item"
+                  aria-label="Ajustes"
+                >
+                  <span className="header-side-menu__icon" aria-hidden="true">
+                    <NavMenuIcon name="settings" />
+                  </span>
+                  <span className="header-side-menu__text">Ajustes</span>
+                </button>
+              )}
               {developmentMode && (
                 <button
                   onClick={() => {

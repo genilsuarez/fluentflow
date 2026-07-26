@@ -412,9 +412,10 @@ html.dark .game-controls {
    (also wrong — confirmed live via devtools this time, controls sit
    flush with no clearance and get clipped by Cursor's own chrome). If
    34px is still off once tested live in Cursor, adjust only this value —
-   but get a live measurement first, don't guess a third time. */
+   but get a live measurement first, don't guess a third time.
+   2026-07-26: 21px (−10px from 31) — bar still high in Cursor device preview. */
 html.browser-cursor-embedded {
-  --cursor-preview-chrome-bottom: 34px;
+  --cursor-preview-chrome-bottom: 21px;
 }
 
 @media (--lp-mobile-md) {
