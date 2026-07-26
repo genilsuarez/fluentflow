@@ -431,7 +431,8 @@ html.browser-cursor-embedded {
     transition: z-index 0s var(--lp-drawer-duration, 320ms);
   }
 
-  html.browser-cursor-embedded body.lp-drawer-open
+  html.browser-cursor-embedded
+    body.lp-drawer-open
     .layout-container:not([data-view='menu'])
     .game-controls {
     z-index: 30;
