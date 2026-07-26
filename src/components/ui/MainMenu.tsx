@@ -24,6 +24,7 @@ import {
   ChevronRight,
 } from 'lucide-react';
 import { UnifiedFilter } from './UnifiedFilter';
+import { useMobileCategoryGridCapacity } from '../../hooks/useMobileCategoryGridCapacity';
 import '../../styles/components/main-menu.css';
 
 const LEVEL_ORDER_EX = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'] as const;
@@ -76,8 +77,13 @@ export const MainMenu: React.FC = () => {
   const [modulesView, setModulesView] = useState<'progress' | 'all'>('progress');
   const [expandedCategories, setExpandedCategories] = useState<Set<Category>>(() => new Set());
   const [expandedLevels, setExpandedLevels] = useState<Set<string>>(() => new Set());
-  const CARDS_PER_LEVEL = 4;
   const gridRef = useRef<HTMLDivElement>(null);
+  const categoryLayoutKey = `${modulesView}-${query}-${[...expandedCategories].sort().join(',')}`;
+  const cardsPerLevel = useMobileCategoryGridCapacity(
+    gridRef,
+    viewMode === 'list' && modulesView === 'all' && !query,
+    categoryLayoutKey
+  );
 
   // Access raw (unfiltered) modules from the query cache for dependency calculations
   const allModulesRaw = React.useMemo(
@@ -667,7 +673,7 @@ export const MainMenu: React.FC = () => {
                                     const isLevelPast = levelModules.every(
                                       m => exerciseStatusMap.get(m.id)?.status === 'completed'
                                     );
-                                    const defaultVisible = isLevelPast ? 0 : CARDS_PER_LEVEL;
+                                    const defaultVisible = isLevelPast ? 0 : cardsPerLevel;
 
                                     const visibleModules = isLevelExpanded
                                       ? levelModules
