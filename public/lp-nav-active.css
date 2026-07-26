@@ -23,7 +23,7 @@
   height: var(--lp-navbtn-icon-size);
 }
 
-@media (max-width: 860px) {
+@media (--lp-nav-compact) {
   .navigation-launcher .lp-nav-svg,
   .topbar-menu .lp-nav-svg,
   #menuToggle .lp-nav-svg,
