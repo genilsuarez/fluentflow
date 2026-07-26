@@ -131,7 +131,9 @@ html.dark .main-menu svg:not(.home-dash__level-svg):not(.home-dash__ring-svg) {
   height: 2.3125rem;
   min-height: 44px;
   cursor: pointer;
-  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+  transition:
+    background-color 0.15s ease-in-out,
+    color 0.15s ease-in-out;
   white-space: nowrap;
   font-family: inherit;
   border-radius: var(--lp-radius-md);
@@ -689,10 +691,22 @@ html.dark .main-menu__grid::-webkit-scrollbar-thumb:hover {
     align-self: center;
   }
 
-  .layout-container[data-view='menu'] .layout-main > .main-menu:has(.main-menu__header) > .progression-dashboard,
-  .layout-container[data-view='menu'] .layout-main > .main-menu:has(.main-menu__header) > .main-menu__grid,
-  .layout-container[data-view='menu'] .layout-main > .main-menu:has(.main-menu__header) > .main-menu__categories,
-  .layout-container[data-view='menu'] .layout-main > .main-menu:has(.main-menu__header) > .main-menu__no-results {
+  .layout-container[data-view='menu']
+    .layout-main
+    > .main-menu:has(.main-menu__header)
+    > .progression-dashboard,
+  .layout-container[data-view='menu']
+    .layout-main
+    > .main-menu:has(.main-menu__header)
+    > .main-menu__grid,
+  .layout-container[data-view='menu']
+    .layout-main
+    > .main-menu:has(.main-menu__header)
+    > .main-menu__categories,
+  .layout-container[data-view='menu']
+    .layout-main
+    > .main-menu:has(.main-menu__header)
+    > .main-menu__no-results {
     grid-column: 1 / -1;
     grid-row: 2;
     min-height: 0;
@@ -700,17 +714,29 @@ html.dark .main-menu__grid::-webkit-scrollbar-thumb:hover {
     width: 100%;
   }
 
-  .layout-container[data-view='menu'] .layout-main > .main-menu:has(.main-menu__header) > .progression-dashboard {
+  .layout-container[data-view='menu']
+    .layout-main
+    > .main-menu:has(.main-menu__header)
+    > .progression-dashboard {
     padding: 0;
   }
 
-  .layout-container[data-view='menu'] .layout-main > .main-menu:has(.main-menu__header) .progression-dashboard__units {
+  .layout-container[data-view='menu']
+    .layout-main
+    > .main-menu:has(.main-menu__header)
+    .progression-dashboard__units {
     padding-right: 0;
     scrollbar-gutter: stable;
   }
 
-  .layout-container[data-view='menu'] .layout-main > .main-menu:has(.main-menu__header) > .main-menu__categories,
-  .layout-container[data-view='menu'] .layout-main > .main-menu:has(.main-menu__header) > .main-menu__grid {
+  .layout-container[data-view='menu']
+    .layout-main
+    > .main-menu:has(.main-menu__header)
+    > .main-menu__categories,
+  .layout-container[data-view='menu']
+    .layout-main
+    > .main-menu:has(.main-menu__header)
+    > .main-menu__grid {
     padding-inline: 0;
   }
 }

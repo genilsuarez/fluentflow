@@ -483,8 +483,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                   {isExpanded &&
                     (() => {
                       const COLUMNS = moduleGridColumns;
-                      const rowSlots =
-                        COLUMNS > 1 ? COLUMNS : COMPACT_VISIBLE_MODULE_SLOTS;
+                      const rowSlots = COLUMNS > 1 ? COLUMNS : COMPACT_VISIBLE_MODULE_SLOTS;
 
                       // In progress view, only nextRecommended is shown as "unlocked".
                       // Other technically-unlocked modules display as locked to reinforce
@@ -684,7 +683,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                                 />
                               </button>
                             )}
-                            {(visibleModules.length > 0) && (
+                            {visibleModules.length > 0 && (
                               <div
                                 className={`progression-dashboard__modules${lockedHidden > 0 ? ' progression-dashboard__modules--truncated' : ''}`}
                               >
