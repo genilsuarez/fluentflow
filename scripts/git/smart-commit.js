@@ -472,16 +472,25 @@ async function main() {
           logError('Push failed. You may need to push manually.');
           process.exit(1);
         }
-      } else {
-        if (allowEmpty) {
-          logInfo('No changes detected, but continuing due to --allow-empty flag.');
-          log('\n✨ Smart commit completed successfully (no changes detected)!', colors.green);
+      } else if (shouldPush) {
+        logInfo('No changes to commit; attempting push...');
+        try {
+          execSync('git push', { stdio: 'inherit', cwd: rootDir });
+          logSuccess('Push completed successfully!');
+          log('\n✨ Smart commit completed successfully!', colors.green);
           process.exit(0);
-        } else {
-          logInfo('No changes detected and no unpushed commits.');
-          log('\n✨ Smart commit completed successfully (nothing to do)!', colors.green);
-          process.exit(0);
+        } catch (error) {
+          logError('Push failed. You may need to push manually.');
+          process.exit(1);
         }
+      } else if (allowEmpty) {
+        logInfo('No changes detected, but continuing due to --allow-empty flag.');
+        log('\n✨ Smart commit completed successfully (no changes detected)!', colors.green);
+        process.exit(0);
+      } else {
+        logInfo('No changes detected and no unpushed commits.');
+        log('\n✨ Smart commit completed successfully (nothing to do)!', colors.green);
+        process.exit(0);
       }
     }
 

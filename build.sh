@@ -24,6 +24,25 @@ fi
 echo ""
 echo "✅ Local pipeline passed"
 
+# ─── Ensure remote is up to date (safety net; dev-tools full should push too) ───
+
+if [ -n "$(git status --porcelain)" ]; then
+  echo "🔄 Committing post-build changes..."
+  git add -A
+  SUMMARY=$(git diff --cached --stat | tail -1)
+  git commit -m "chore: update — $SUMMARY"
+  echo "🔄 Pushing to remote..."
+  git push
+else
+  git fetch --quiet origin "$BRANCH" 2>/dev/null || true
+  LOCAL=$(git rev-parse HEAD)
+  REMOTE=$(git rev-parse "origin/$BRANCH" 2>/dev/null || echo "")
+  if [ -n "$REMOTE" ] && [ "$LOCAL" != "$REMOTE" ]; then
+    echo "🔄 Pushing unpushed commits..."
+    git push
+  fi
+fi
+
 # ─── Phase 2: Monitor CI/CD (non-blocking) ──────────────────────────────────────
 
 COMMIT_SHA=$(git rev-parse HEAD)
