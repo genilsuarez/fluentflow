@@ -261,6 +261,11 @@
   box-shadow: none;
 }
 
+.header-redesigned__menu-btn--open {
+  color: var(--lp-ink);
+  background: color-mix(in srgb, var(--lp-ink) 7%, transparent);
+}
+
 .header-redesigned__menu-btn--primary {
   width: var(--lp-navbtn-size);
   height: var(--lp-navbtn-size);
@@ -808,9 +813,6 @@
   z-index: 50;
   background-color: var(--lp-bg-paper, var(--menu-bg));
   border-right: 1.5px solid var(--lp-border, var(--menu-border));
-  transform: translate3d(-100%, 0, 0);
-  transition: transform 320ms cubic-bezier(0.22, 0.9, 0.36, 1);
-  backface-visibility: hidden;
   display: flex;
   flex-direction: column;
   padding: 22px 14px max(16px, env(safe-area-inset-bottom));
@@ -830,6 +832,14 @@ html.browser-cursor-embedded .header-side-menu {
 @media (--lp-mobile-md) {
   .header-side-menu {
     width: min(232px, 86vw);
+  }
+
+  body.lp-drawer-open .header-side-menu:not(.is-persistent) {
+    padding-bottom: max(
+      16px,
+      env(safe-area-inset-bottom),
+      var(--game-controls-bar-min-height, 5.7rem)
+    );
   }
 }
 
@@ -1038,18 +1048,7 @@ html.dark .header-side-menu__item:hover:not(.header-side-menu__item--active) {
   font-weight: 400;
 }
 
-.header-side-menu-overlay {
-  position: fixed;
-  inset: 0;
-  background-color: color-mix(in srgb, var(--lp-ink, #2c2418) 45%, transparent);
-  z-index: 40;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition:
-    opacity 320ms cubic-bezier(0.22, 0.9, 0.36, 1),
-    visibility 320ms;
-}
+/* Overlay + slide: lp-drawer.css (canonical) */
 
 /* === DARK MODE ENHANCEMENTS === */
 .dark .header-redesigned__menu-btn--primary,
@@ -1097,7 +1096,7 @@ html.dark .header-side-menu__item:hover:not(.header-side-menu__item--active) {
   background: var(--lp-surface);
 }
 
-.dark .header-side-menu-overlay {
+.dark .lp-drawer-scrim::before {
   background-color: color-mix(in srgb, #14171c 55%, transparent);
 }
 
@@ -1134,7 +1133,6 @@ html.dark .header-side-menu__item:hover:not(.header-side-menu__item--active) {
 
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
-  .header-side-menu-overlay,
   .header-side-menu {
     transition: none !important;
   }
@@ -1289,6 +1287,7 @@ html.dark .header-side-menu__item:hover:not(.header-side-menu__item--active) {
   padding-left: env(safe-area-inset-left, 0px);
   padding-right: env(safe-area-inset-right, 0px);
   z-index: var(--lp-navbtn-z, 35);
+  transition: z-index 0s var(--lp-drawer-duration, 320ms);
   background: var(--header-bg);
   border-bottom: 1px solid var(--lp-border-subtle, var(--lp-border));
   box-shadow: none;
@@ -1318,10 +1317,10 @@ html.dark .header-side-menu__item:hover:not(.header-side-menu__item--active) {
   min-width: 0;
 }
 
-/* Mobile-first secondary toolbar — grid works without @custom-media postcss */
+/* Mobile-first secondary toolbar — [☰] [←] title (drawer abre a la izquierda) */
 .header-redesigned--learning-mode .header-redesigned__learning-toolbar {
   display: grid;
-  grid-template-columns: var(--lp-navbtn-size, 44px) minmax(0, 1fr) var(--lp-navbtn-size, 44px);
+  grid-template-columns: var(--lp-navbtn-size, 44px) var(--lp-navbtn-size, 44px) minmax(0, 1fr);
   align-items: center;
   width: 100%;
   max-width: 100%;
@@ -1330,7 +1329,7 @@ html.dark .header-side-menu__item:hover:not(.header-side-menu__item--active) {
 }
 
 .header-redesigned--learning-mode .header-redesigned__lesson-title {
-  grid-column: 2;
+  grid-column: 3;
   grid-row: 1;
   align-self: center;
   justify-self: stretch;
@@ -1361,17 +1360,17 @@ html.dark .header-side-menu__item:hover:not(.header-side-menu__item--active) {
   overflow: visible;
 }
 
-.header-redesigned--learning-mode .header-redesigned__toolbar-btn.header-redesigned__back-btn {
+.header-redesigned--learning-mode .header-redesigned__toolbar-btn.header-redesigned__menu-btn {
   grid-column: 1;
   grid-row: 1;
   justify-self: start;
   align-self: center;
 }
 
-.header-redesigned--learning-mode .header-redesigned__toolbar-btn.header-redesigned__menu-btn {
-  grid-column: 3;
+.header-redesigned--learning-mode .header-redesigned__toolbar-btn.header-redesigned__back-btn {
+  grid-column: 2;
   grid-row: 1;
-  justify-self: end;
+  justify-self: start;
   align-self: center;
 }
 
@@ -1713,13 +1712,13 @@ html[data-navigation-mode='floating']
 
   .header-redesigned--has-lesson-title .header-redesigned__learning-toolbar {
     display: grid;
-    grid-template-columns: 44px 1fr 44px;
+    grid-template-columns: 44px 44px minmax(0, 1fr);
     align-items: center;
     gap: 0;
   }
 
   .header-redesigned--has-lesson-title .header-redesigned__lesson-title {
-    grid-column: 2;
+    grid-column: 3;
     grid-row: 1;
     align-self: center;
     width: 100%;
@@ -1752,17 +1751,17 @@ html[data-navigation-mode='floating']
     line-height: 1.12;
   }
 
-  .header-redesigned--has-lesson-title .header-redesigned__back-btn {
+  .header-redesigned--has-lesson-title .header-redesigned__menu-btn {
     grid-column: 1;
     grid-row: 1;
     justify-self: start;
     align-self: center;
   }
 
-  .header-redesigned--has-lesson-title .header-redesigned__menu-btn {
-    grid-column: 3;
+  .header-redesigned--has-lesson-title .header-redesigned__back-btn {
+    grid-column: 2;
     grid-row: 1;
-    justify-self: end;
+    justify-self: start;
     align-self: center;
   }
 
@@ -1840,14 +1839,11 @@ body {
     color 0.3s;
 }
 
-.header-side-menu-overlay--open {
-  visibility: visible;
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.header-side-menu-overlay--open .header-side-menu {
-  transform: translate3d(0, 0, 0);
+/* Drawer abierto: header bajo scrim (39) — sticky/backdrop-filter puede pintar encima */
+body.lp-drawer-open .header-redesigned {
+  z-index: 1;
+  pointer-events: none;
+  transition: z-index 0s 0s;
 }
 
 .header-side-menu__item {
@@ -1881,19 +1877,23 @@ body {
     max-width: none;
   }
 
-  html[data-navigation-mode='sidebar'] .header-side-menu-overlay {
+  html[data-navigation-mode='sidebar'] .lp-drawer-scrim {
     right: auto;
     width: 232px;
     visibility: visible;
     opacity: 1;
     pointer-events: none;
-    background: transparent;
     backdrop-filter: none;
+    clip-path: none;
+    -webkit-clip-path: none;
   }
 
-  html[data-navigation-mode='sidebar'] .header-side-menu {
+  html[data-navigation-mode='sidebar'] .lp-drawer-scrim::before {
+    display: none;
+  }
+
+  html[data-navigation-mode='sidebar'] .header-side-menu.lp-drawer {
     pointer-events: auto;
-    transform: translate3d(0, 0, 0);
     border-radius: 0;
   }
 
@@ -2070,8 +2070,7 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   body,
-  .header-side-menu,
-  .header-side-menu-overlay {
+  .header-side-menu {
     transition: none !important;
   }
 }

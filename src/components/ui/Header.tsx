@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo, Suspense } from 'react';
 import { createPortal } from 'react-dom';
-import { ArrowLeft, WifiOff, Wrench } from 'lucide-react';
+import { ArrowLeft, WifiOff, Wrench, X } from 'lucide-react';
 import '../../styles/components/header.css';
 import { useAppStore } from '../../stores/appStore';
 import { useLearningHeaderStore } from '../../stores/learningHeaderStore';
@@ -32,6 +32,20 @@ interface HeaderProps {
 }
 const NAVIGATION_MODE_KEY = 'lp-navigation-mode';
 type NavigationMode = 'sidebar' | 'floating';
+
+function getLpDrawerCloseDelayMs(): number {
+  if (typeof window === 'undefined') return 320;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return 0;
+  const raw = getComputedStyle(document.documentElement)
+    .getPropertyValue('--lp-drawer-duration')
+    .trim();
+  const msMatch = raw.match(/^([\d.]+)ms$/);
+  if (msMatch) return Number(msMatch[1]);
+  const secMatch = raw.match(/^([\d.]+)s$/);
+  if (secMatch) return Number(secMatch[1]) * 1000;
+  return 320;
+}
+
 function getStoredNavigationMode(): NavigationMode {
   return localStorage.getItem(NAVIGATION_MODE_KEY) === 'floating' ? 'floating' : 'sidebar';
 }
@@ -98,6 +112,50 @@ export const Header: React.FC<HeaderProps> = () => {
   // This effect is kept for consistency but theme should already be applied
   // Handle escape key for hamburger menu
   useEscapeKey(showSideMenu, () => setShowSideMenu(false));
+  const [viewportLg, setViewportLg] = useState(
+    () => typeof window !== 'undefined' && window.matchMedia('(min-width: 1024px)').matches
+  );
+  useEffect(() => {
+    const mq = window.matchMedia('(min-width: 1024px)');
+    const sync = () => setViewportLg(mq.matches);
+    sync();
+    mq.addEventListener('change', sync);
+    return () => mq.removeEventListener('change', sync);
+  }, []);
+  const isPinnedSidebar = navigationMode === 'sidebar' && viewportLg;
+  const offCanvasDrawer = !isPinnedSidebar;
+  useEffect(() => {
+    if (isPinnedSidebar) setShowSideMenu(false);
+  }, [isPinnedSidebar]);
+  useEffect(() => {
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    const shouldLock = showSideMenu && offCanvasDrawer;
+
+    if (shouldLock) {
+      document.body.classList.add('lp-drawer-open');
+    } else if (document.body.classList.contains('lp-drawer-open')) {
+      timer = window.setTimeout(() => {
+        document.body.classList.remove('lp-drawer-open');
+      }, getLpDrawerCloseDelayMs());
+    }
+
+    return () => {
+      if (timer) window.clearTimeout(timer);
+    };
+  }, [showSideMenu, offCanvasDrawer]);
+  useEffect(() => () => document.body.classList.remove('lp-drawer-open'), []);
+  const menuToggleLabel = showSideMenu ? t('navigation.closeMenu') : t('navigation.openMenu');
+  const menuToggleShortLabel = showSideMenu
+    ? t('navigation.closeMenu')
+    : t('navigation.openMenuShort');
+
+  const renderMenuToggleIcon = () =>
+    showSideMenu ? (
+      <X size={20} aria-hidden="true" />
+    ) : (
+      <NavMenuIcon name="menu" className="header-redesigned__menu-icon" />
+    );
+
   const handleMenuToggle = () => {
     const nextOpen = !showSideMenu;
     setShowSideMenu(nextOpen);
@@ -166,6 +224,17 @@ export const Header: React.FC<HeaderProps> = () => {
                 aria-label={t('navigation.navigationAndSettings')}
               >
                 <button
+                  onClick={handleMenuToggle}
+                  className={`header-redesigned__toolbar-btn header-redesigned__menu-btn${showSideMenu ? ' header-redesigned__menu-btn--open' : ''}`}
+                  title={menuToggleLabel}
+                  aria-label={menuToggleLabel}
+                  aria-expanded={showSideMenu}
+                  aria-controls="navigation-menu"
+                >
+                  {renderMenuToggleIcon()}
+                  <span className="sr-only">{menuToggleShortLabel}</span>
+                </button>
+                <button
                   onClick={() => returnToMenu()}
                   className="header-redesigned__toolbar-btn header-redesigned__back-btn"
                   title={t('navigation.backToMenu')}
@@ -198,35 +267,20 @@ export const Header: React.FC<HeaderProps> = () => {
                       : lessonTitle}
                   </h2>
                 ) : null}
-                <button
-                  onClick={handleMenuToggle}
-                  className={`header-redesigned__toolbar-btn header-redesigned__menu-btn${navigationMode === 'sidebar' ? ' header-redesigned__menu-btn--primary' : ''}`}
-                  title={t('navigation.openMenu')}
-                  aria-label={t('navigation.openMenu')}
-                  aria-expanded={showSideMenu}
-                  aria-controls="navigation-menu"
-                >
-                  <NavMenuIcon name="menu" className="header-redesigned__menu-icon" />
-                  <span className="sr-only">
-                    {showSideMenu ? t('navigation.closeMenu') : t('navigation.openMenuShort')}
-                  </span>
-                </button>
               </div>
             </>
           ) : (
             <>
               <button
                 onClick={handleMenuToggle}
-                className={`header-redesigned__menu-btn${navigationMode === 'sidebar' ? ' header-redesigned__menu-btn--primary' : ''}`}
-                title={t('navigation.openMenu')}
-                aria-label={t('navigation.openMenu')}
+                className={`header-redesigned__menu-btn${showSideMenu ? ' header-redesigned__menu-btn--open' : ''}${!offCanvasDrawer && navigationMode === 'floating' ? ' header-redesigned__menu-btn--primary' : ''}`}
+                title={menuToggleLabel}
+                aria-label={menuToggleLabel}
                 aria-expanded={showSideMenu}
                 aria-controls="navigation-menu"
               >
-                <NavMenuIcon name="menu" className="header-redesigned__menu-icon" />
-                <span className="sr-only">
-                  {showSideMenu ? t('navigation.closeMenu') : t('navigation.openMenuShort')}
-                </span>
+                {renderMenuToggleIcon()}
+                <span className="sr-only">{menuToggleShortLabel}</span>
               </button>
               <div className="header-redesigned__greeting">
                 {previousMenuContext === 'list' ? (
@@ -355,7 +409,7 @@ export const Header: React.FC<HeaderProps> = () => {
         )}
       {createPortal(
         <div
-          className={`header-side-menu-overlay${showSideMenu ? ' header-side-menu-overlay--open' : ''}`}
+          className={`lp-drawer-scrim${showSideMenu && offCanvasDrawer ? ' is-open' : ''}`}
           onClick={event => {
             if (event.target === event.currentTarget) setShowSideMenu(false);
           }}
@@ -363,7 +417,7 @@ export const Header: React.FC<HeaderProps> = () => {
         >
           <nav
             id="navigation-menu"
-            className="header-side-menu"
+            className={`header-side-menu lp-drawer${showSideMenu || isPinnedSidebar ? ' is-open' : ''}${isPinnedSidebar ? ' is-persistent' : ''}`}
             role="navigation"
             aria-label={t('navigation.navigationAndSettings')}
           >
