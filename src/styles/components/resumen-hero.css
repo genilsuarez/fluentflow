@@ -5,6 +5,7 @@
   gap: 8px;
   width: 100%;
   min-width: 0;
+  --hero-spine: var(--lp-cat-purple);
 }
 
 .home-dash .resumen-hero .hero-card {
@@ -17,26 +18,15 @@
 
 .home-dash .hero-card {
   position: relative;
-  background: var(--lp-surface);
-  border: 1.5px solid var(--lp-border);
-  border-top: 4px solid var(--hero-spine, var(--lp-accent));
   border-radius: var(--lp-radius-lg);
   margin-bottom: 0;
-  box-shadow: var(--lp-shadow-md);
   overflow: hidden;
-  transition:
-    box-shadow 0.25s var(--lp-ease),
-    border-color 0.25s;
-}
-
-.home-dash .hero-card:hover {
-  box-shadow: var(--lp-shadow-hover);
 }
 
 .home-dash .hero-card__launch {
   display: grid;
-  grid-template-columns: 44px 1fr auto;
-  grid-template-areas: 'icon body chev';
+  grid-template-columns: 44px 1fr;
+  grid-template-areas: 'icon body';
   gap: 4px 12px;
   padding: 14px 16px;
   align-items: center;
@@ -63,11 +53,11 @@
 }
 
 .home-dash .hero-card__launch:hover {
-  background: color-mix(in srgb, var(--hero-spine, var(--lp-accent)) 4%, var(--lp-surface));
+  background: transparent;
 }
 
 .home-dash .hero-card__launch:active {
-  background: color-mix(in srgb, var(--lp-ink) 4%, var(--lp-surface));
+  background: transparent;
 }
 
 .home-dash .hero-card__launch:focus-visible {
@@ -78,15 +68,6 @@
 .home-dash .hero-card__icon {
   grid-area: icon;
   align-self: center;
-  width: 44px;
-  height: 44px;
-  flex: 0 0 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.25rem;
-  border-radius: var(--lp-radius-md);
-  background: color-mix(in srgb, var(--hero-spine, var(--lp-accent)) 12%, transparent);
 }
 
 .home-dash .hero-card__body {
@@ -103,7 +84,6 @@
   font-weight: var(--lp-weight-extrabold, 800);
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--hero-spine, var(--lp-accent));
   margin: 0;
   line-height: 1.2;
 }
@@ -117,24 +97,6 @@
 
 .home-dash .hero-card__meta {
   display: none;
-}
-
-.home-dash .hero-card__chev {
-  grid-area: chev;
-  align-self: center;
-  font-size: 1.25rem;
-  line-height: 1;
-  color: var(--lp-muted);
-  font-weight: 400;
-  padding-left: 4px;
-}
-
-.home-dash .hero-card--welcome {
-  background: linear-gradient(
-    165deg,
-    color-mix(in srgb, var(--lp-accent) 5%, var(--lp-surface)) 0%,
-    var(--lp-surface) 52%
-  );
 }
 
 .home-dash .hero-card--welcome .hero-card__icon {
@@ -161,10 +123,7 @@
   align-items: center;
   gap: 0 12px;
   padding: 12px 14px;
-  border: 1px solid var(--lp-border);
   border-radius: var(--lp-radius-lg);
-  background: var(--lp-surface);
-  box-shadow: var(--lp-shadow-xs);
   width: 100%;
   text-align: left;
   font: inherit;
@@ -175,24 +134,10 @@
   -webkit-appearance: none;
   appearance: none;
   -webkit-tap-highlight-color: transparent;
-  transition: background 0.15s ease;
 }
 
 .home-dash .progress-snapshot > * {
   pointer-events: none;
-}
-
-.home-dash .progress-snapshot:hover {
-  background: color-mix(in srgb, var(--lp-accent) 4%, var(--lp-surface));
-}
-
-.home-dash .progress-snapshot:active {
-  background: color-mix(in srgb, var(--lp-ink) 4%, var(--lp-surface));
-}
-
-.home-dash .progress-snapshot:focus-visible {
-  outline: 2px solid var(--lp-accent);
-  outline-offset: 2px;
 }
 
 .home-dash .progress-snapshot__copy {
@@ -213,8 +158,10 @@
   align-self: center;
   justify-self: end;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-end;
   justify-content: center;
+  gap: 2px;
   min-width: 0;
   padding: 0 2px;
   pointer-events: none;
@@ -278,6 +225,16 @@
   line-height: 1.25;
 }
 
+.home-dash .progress-snapshot__line--depth {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--lp-ink);
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  text-align: right;
+  white-space: nowrap;
+}
+
 .home-dash .progress-snapshot__title {
   font-size: 0.625rem;
   font-weight: 700;
@@ -317,19 +274,6 @@
   line-height: 1.1;
 }
 
-.home-dash .progress-snapshot__link {
-  grid-column: 2;
-  grid-row: 3;
-  justify-self: start;
-  margin: 0;
-  background: none;
-  border: none;
-  color: var(--lp-accent);
-  font-size: 0.65rem;
-  font-weight: var(--lp-weight-bold, 700);
-  pointer-events: none;
-}
-
 .home-dash .progress-snapshot--empty .progress-snapshot__line--meta {
   color: var(--lp-muted);
   font-style: italic;
@@ -337,12 +281,12 @@
 
 @media (--lp-from-sm) {
   .home-dash .resumen-hero {
-    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-    gap: 12px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
   }
 
   .home-dash .resumen-hero .hero-card {
-    grid-column: 1;
+    grid-column: 1 / span 2;
     grid-row: 1;
   }
 
@@ -355,10 +299,10 @@
   }
 
   .home-dash .resumen-hero .progress-snapshot {
-    grid-column: 2;
+    grid-column: 3 / span 2;
     grid-row: 1;
     grid-template-columns: auto 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto;
     padding: 14px 16px;
     gap: 0.4rem 14px;
   }
@@ -373,10 +317,6 @@
     grid-row: 1;
     justify-self: end;
     align-self: center;
-  }
-
-  .home-dash .resumen-hero .progress-snapshot__link {
-    display: inline;
   }
 
   .home-dash .resumen-hero .progress-snapshot__chev {
@@ -512,10 +452,6 @@
   .home-dash .resumen-hero .progress-snapshot__unit {
     font-size: 0.75rem;
     font-weight: 600;
-  }
-
-  .home-dash .resumen-hero .progress-snapshot__link {
-    display: none;
   }
 
   .home-dash .resumen-hero .progress-snapshot__chev {

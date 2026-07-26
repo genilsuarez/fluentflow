@@ -1,5 +1,5 @@
 import React, { useEffect, useCallback, useMemo } from 'react';
-import { Trophy, Target, Clock, TrendingUp, ChevronRight } from 'lucide-react';
+import { Trophy, Target, Clock, TrendingUp } from 'lucide-react';
 import { useProgressStore } from '../../stores/progressStore';
 import { useUserStore } from '../../stores/userStore';
 import { useSettingsStore } from '../../stores/settingsStore';
@@ -125,6 +125,7 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
   const progressMeta = currentUnitInfo
     ? `${currentUnitInfo.code} · ${currentUnitInfo.name}`
     : t('dashboard.pickModule', 'Pick a module and begin your first session.');
+  const depthExercisesLabel = `6,700+ ${t('dashboard.depthExercises', 'exercises')}`;
 
   const handleProgressClick = useCallback(() => {
     if (onViewModules) onViewModules();
@@ -178,9 +179,6 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
                   : t('dashboard.pickModule', 'Pick a module and begin your first session.')}
               </span>
             </span>
-            <span className="hero-card__chev" aria-hidden="true">
-              ›
-            </span>
           </button>
         </div>
 
@@ -190,8 +188,8 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
           onClick={handleProgressClick}
           aria-label={
             hasProgress
-              ? `${t('dashboard.yourProgress', 'Your progress')}: ${animatedPct}%, ${animatedCompleted} ${t('common.of', 'of')} ${displayStats.totalModules} ${t('common.exercise', 'ejercicio')}, ${progressMeta}`
-              : `${t('dashboard.yourProgress', 'Your progress')}: 0 ${t('common.of', 'of')} ${displayStats.totalModules} ${t('common.exercise', 'ejercicio')}. ${progressMeta}`
+              ? `${t('dashboard.yourProgress', 'Your progress')}: ${animatedPct}%, ${animatedCompleted} ${t('common.of', 'of')} ${displayStats.totalModules} ${t('common.exercise', 'ejercicio')}, ${progressMeta}, ${depthExercisesLabel}`
+              : `${t('dashboard.yourProgress', 'Your progress')}: 0 ${t('common.of', 'of')} ${displayStats.totalModules} ${t('common.exercise', 'ejercicio')}. ${progressMeta}. ${depthExercisesLabel}`
           }
         >
           <div
@@ -219,10 +217,10 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
               </span>
               <span className="progress-snapshot__unit"> {t('common.exercise', 'ejercicio')}</span>
             </span>
+            <span className="progress-snapshot__line progress-snapshot__line--depth">
+              {depthExercisesLabel}
+            </span>
           </div>
-          <span className="progress-snapshot__link" aria-hidden="true">
-            {t('dashboard.viewProgress', 'View progress')} →
-          </span>
           <span className="progress-snapshot__chev" aria-hidden="true">
             ›
           </span>
@@ -263,25 +261,6 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
             <span className="home-dash__stat-label">{t('dashboard.timeSpent', 'Practiced')}</span>
           </div>
         </div>
-        {onViewModules && (
-          <button
-            className="home-dash__stat home-dash__stat--depth"
-            onClick={onViewModules}
-            type="button"
-          >
-            <div className="home-dash__stat-content">
-              <span className="home-dash__depth-line">
-                {displayStats.totalModules} {t('dashboard.depthModules', 'modules')}
-              </span>
-              <span className="home-dash__depth-line">
-                6,700+ {t('dashboard.depthExercises', 'exercises')}
-              </span>
-              <span className="home-dash__depth-cta">
-                {t('dashboard.viewAll', 'View all')} <ChevronRight size={11} />
-              </span>
-            </div>
-          </button>
-        )}
       </div>
 
       {/* Weekly + Levels side by side */}

@@ -33,7 +33,7 @@
   touch-action: manipulation;
 }
 
-/* Colored spine — the only full-strength color on the card */
+/* Colored spine — accent strip on tinted surface */
 .module-card::before {
   content: '';
   position: absolute;

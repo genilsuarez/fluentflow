@@ -59,13 +59,20 @@ export function getSession() {
   return supabase.auth.getSession();
 }
 
+export function buildGoogleOAuthUrl(redirectTo?: string) {
+  const target =
+    redirectTo || window.location.origin + window.location.pathname + window.location.search;
+  return `${supabaseUrl}/auth/v1/authorize?provider=google&redirect_to=${encodeURIComponent(target)}`;
+}
+
+/** Synchronous redirect — must stay in the user-gesture call stack (iOS WebKit). */
+export function beginGoogleOAuthRedirect(redirectTo?: string) {
+  window.location.assign(buildGoogleOAuthUrl(redirectTo));
+}
+
 export function signInWithGoogle() {
-  return supabase.auth.signInWithOAuth({
-    provider: 'google',
-    options: {
-      redirectTo: window.location.origin + window.location.pathname + window.location.search,
-    },
-  });
+  beginGoogleOAuthRedirect();
+  return Promise.resolve({ data: { provider: 'google' }, error: null });
 }
 
 export function signInWithMagicLink(email: string) {

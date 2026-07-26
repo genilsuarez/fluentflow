@@ -5,6 +5,7 @@
 @import './styles/layout.css';
 @import './styles/components/orientation-lock.css';
 @import '../public/lp-nav-active.css';
+@import '../public/lp-tinted-surface.css';
 @import '../public/lp-drawer.css';
 
 /* === GLOBAL BOX SIZING === */

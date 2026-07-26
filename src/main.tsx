@@ -8,6 +8,7 @@ import { setupCrossAppThemeLinks } from './utils/crossAppTheme';
 import { clearChunkRetryFlag } from './utils/lazyWithRetry';
 import './utils/cursorBrowserDetection';
 import {
+  beginGoogleOAuthRedirect,
   cleanAuthParamsFromUrl,
   fetchProfile,
   getSession,
@@ -99,6 +100,7 @@ try {
 
   // Bridge for lp-login.js cloud auth buttons (shared modal in public/)
   (window as Window & { lpSupabase?: Record<string, unknown> }).lpSupabase = {
+    beginGoogleOAuthRedirect,
     signInWithGoogle,
     signInWithMagicLink,
     signOut,
