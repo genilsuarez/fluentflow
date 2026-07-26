@@ -412,7 +412,6 @@ html.dark .matching-modal {
 
 /* === RESPONSIVE MODAL === */
 
-
 /* === ACCESSIBILITY === */
 @media (prefers-reduced-motion: reduce) {
   .matching-modal,
@@ -445,7 +444,7 @@ html.dark .matching-modal {
   }
 }
 /* === CRITICAL: Mobile ≤400px - Compact Modal Experience === */
- /* === Dark Mode Overrides (token-based) === */
+/* === Dark Mode Overrides (token-based) === */
 
 .dark .matching-modal__container {
   background: var(--lp-surface);
@@ -604,7 +603,7 @@ body.modal-open {
   }
 }
 @media (--lp-mobile-sm) {
-.matching-modal {
+  .matching-modal {
     padding: 0.5rem;
   }
 
@@ -639,7 +638,7 @@ body.modal-open {
     padding: 0.5rem 0.75rem;
   }
 
-.matching-modal {
+  .matching-modal {
     padding: 0.5rem;
     align-items: flex-start;
     padding-top: 20px;

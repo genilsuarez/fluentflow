@@ -668,7 +668,6 @@
 
 /* Compact logo on mobile */
 
-
 /* === USER SECTION === */
 .header-redesigned__user-section {
   display: flex;
@@ -1156,9 +1155,7 @@ html.dark .header-side-menu__item:hover:not(.header-side-menu__item--active) {
 
 /* === MOBILE SAFE AREA === */
 
-
 /* === SMALL MOBILE ADJUSTMENTS === */
-
 
 /* === OFFLINE BADGE === */
 .header__offline-badge {
@@ -1190,7 +1187,6 @@ html.dark .header-side-menu__item:hover:not(.header-side-menu__item--active) {
 }
 
 /* Hide offline badge on very small screens */
-
 
 /* === LEVEL 1 MENU — mobile-first: [☰] + centered title only === */
 .header-redesigned--menu .header-redesigned__container {
@@ -1355,9 +1351,8 @@ html.dark .header-side-menu__item:hover:not(.header-side-menu__item--active) {
 }
 
 .header-redesigned--learning-mode .header-redesigned__lesson-title--multiline,
-.header-redesigned--learning-mode .header-redesigned__lesson-title--compact:not(
-    .header-redesigned__lesson-title--multiline
-  ) {
+.header-redesigned--learning-mode
+  .header-redesigned__lesson-title--compact:not(.header-redesigned__lesson-title--multiline) {
   white-space: normal;
   text-overflow: unset;
 }
@@ -1380,10 +1375,8 @@ html.dark .header-side-menu__item:hover:not(.header-side-menu__item--active) {
   align-self: center;
 }
 
-.header-redesigned--learning-mode
-  .header-redesigned__toolbar-btn.header-redesigned__back-btn,
-.header-redesigned--learning-mode
-  .header-redesigned__toolbar-btn.header-redesigned__menu-btn {
+.header-redesigned--learning-mode .header-redesigned__toolbar-btn.header-redesigned__back-btn,
+.header-redesigned--learning-mode .header-redesigned__toolbar-btn.header-redesigned__menu-btn {
   width: var(--lp-navbtn-size, 44px);
   height: var(--lp-navbtn-size, 44px);
   min-width: var(--lp-navbtn-size, 44px);
@@ -1403,8 +1396,7 @@ html.dark .header-side-menu__item:hover:not(.header-side-menu__item--active) {
   appearance: none;
 }
 
-.header-redesigned--learning-mode
-  .header-redesigned__toolbar-btn.header-redesigned__back-btn:hover,
+.header-redesigned--learning-mode .header-redesigned__toolbar-btn.header-redesigned__back-btn:hover,
 .header-redesigned--learning-mode
   .header-redesigned__toolbar-btn.header-redesigned__menu-btn:hover {
   background: color-mix(in srgb, var(--lp-ink) 5%, transparent);
@@ -1599,8 +1591,7 @@ html[data-navigation-mode='floating']
     margin-left: auto;
   }
 
-  .header-redesigned--learning-mode
-    .header-redesigned__toolbar-btn.header-redesigned__back-btn {
+  .header-redesigned--learning-mode .header-redesigned__toolbar-btn.header-redesigned__back-btn {
     border: none;
     border-radius: var(--lp-radius-md);
     background: transparent;
@@ -1832,8 +1823,6 @@ html[data-navigation-mode='floating']
     display: none;
   }
 
-  
-
   html[data-navigation-mode='floating']
     .header-redesigned--learning-mode
     .header-redesigned__menu-btn {
@@ -1981,12 +1970,9 @@ body {
   }
 }
 
-
-
-
 /* === MOBILE COMPACT — consolidated @custom-media --lp-mobile-sm === */
 @media (--lp-mobile-sm) {
-.header-redesigned__logo {
+  .header-redesigned__logo {
     width: 38px;
     height: 38px;
   }
@@ -2006,7 +1992,7 @@ body {
     padding: var(--header-spacing-xs);
   }
 
-.header-redesigned__container {
+  .header-redesigned__container {
     margin-left: max(0px, env(safe-area-inset-left));
     margin-right: max(0px, env(safe-area-inset-right));
   }
@@ -2028,7 +2014,7 @@ body {
     padding-top: env(safe-area-inset-top, 0px);
   }
 
-.header-side-menu {
+  .header-side-menu {
     width: min(232px, 86vw);
   }
 
@@ -2063,21 +2049,21 @@ body {
     font-size: 13px;
   }
 
-.header__offline-badge span {
+  .header__offline-badge span {
     display: none;
   }
 
-.header-redesigned--has-lesson-title .header-redesigned__lesson-title {
-      font-weight: var(--lp-header-title-weight);
-      letter-spacing: var(--lp-header-title-tracking);
-      line-height: 1.12;
-    }
+  .header-redesigned--has-lesson-title .header-redesigned__lesson-title {
+    font-weight: var(--lp-header-title-weight);
+    letter-spacing: var(--lp-header-title-tracking);
+    line-height: 1.12;
+  }
 
-    .header-redesigned--has-lesson-title .header-redesigned__lesson-title--compact {
-      font-size: calc(var(--lp-header-title-size) * 0.9);
-    }
+  .header-redesigned--has-lesson-title .header-redesigned__lesson-title--compact {
+    font-size: calc(var(--lp-header-title-size) * 0.9);
+  }
 
-.header-side-menu__item {
+  .header-side-menu__item {
     min-height: 44px;
   }
 }

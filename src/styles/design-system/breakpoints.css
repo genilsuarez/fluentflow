@@ -49,5 +49,6 @@
 @custom-media --lp-mobile-md-touch (--lp-mobile-md), (--lp-touch);
 @custom-media --lp-from-sm-to-lg (min-width: 640px) and (max-width: 1023px);
 @custom-media --lp-sm-only (min-width: 640px) and (max-width: 767px);
-@custom-media --lp-mobile-sm-touch-tablet (--lp-mobile-sm), ((hover: none) and (pointer: coarse) and (max-width: 1023px));
+@custom-media --lp-mobile-sm-touch-tablet (--lp-mobile-sm),
+  ((hover: none) and (pointer: coarse) and (max-width: 1023px));
 @custom-media --lp-from-modal (min-width: 401px);

@@ -90,10 +90,7 @@ export const Header: React.FC<HeaderProps> = () => {
     return () => window.removeEventListener('storage', syncNavigationMode);
   }, []);
   const lessonTitle = lessonProgress?.title ?? '';
-  const lessonTitleDisplay = useMemo(
-    () => formatLessonTitleForHeader(lessonTitle),
-    [lessonTitle]
-  );
+  const lessonTitleDisplay = useMemo(() => formatLessonTitleForHeader(lessonTitle), [lessonTitle]);
   const progression = useProgression();
   const menuModuleTotal = progression.stats?.totalModules ?? 0;
   const catalogReady = progression.modulesFetched;
@@ -156,7 +153,9 @@ export const Header: React.FC<HeaderProps> = () => {
     <header
       className={`header-redesigned${isInGame ? ' header-redesigned--learning-mode' : ' header-redesigned--menu'}${lessonTitle ? ' header-redesigned--has-lesson-title' : ''}`}
     >
-      <div className={`header-redesigned__container header-redesigned__container--${isInGame ? 'learning' : 'menu'}`}>
+      <div
+        className={`header-redesigned__container header-redesigned__container--${isInGame ? 'learning' : 'menu'}`}
+      >
         {/* Left Section: Back + Menu + Brand */}
         <div className="header-redesigned__left">
           {isInGame ? (
@@ -279,49 +278,49 @@ export const Header: React.FC<HeaderProps> = () => {
             </div>
           ) : null
         ) : (
-        <div className="header-redesigned__center">
-          <h1 className="header-redesigned__mobile-title">
-            {previousMenuContext === 'list' ? (
-              language === 'es' ? (
-                <>
-                  Ejercicios <em>guiados</em>
-                </>
+          <div className="header-redesigned__center">
+            <h1 className="header-redesigned__mobile-title">
+              {previousMenuContext === 'list' ? (
+                language === 'es' ? (
+                  <>
+                    Ejercicios <em>guiados</em>
+                  </>
+                ) : (
+                  <>
+                    Guided <em>exercises</em>
+                  </>
+                )
               ) : (
                 <>
-                  Guided <em>exercises</em>
+                  Fluent<em>Flow</em>
                 </>
-              )
-            ) : (
-              <>
-                Fluent<em>Flow</em>
-              </>
-            )}
-          </h1>
-          <div className="header-redesigned__score-wrap">
-            <ScoreDisplay />
-          </div>
-          {showBadge && (
-            <div
-              className={`header__offline-badge${isOnline ? ' header__offline-badge--hidden' : ''}`}
-              aria-label={t('offline.indicator')}
-              role="status"
-            >
-              <WifiOff size={12} aria-hidden="true" />
-              <span>{t('offline.indicator')}</span>
+              )}
+            </h1>
+            <div className="header-redesigned__score-wrap">
+              <ScoreDisplay />
             </div>
-          )}
-          {developmentMode && (
-            <button
-              className="header-redesigned__dev-indicator"
-              title={t('common.developmentModeActive')}
-              onClick={() => setShowSettings(true)}
-              aria-label={t('common.developmentModeActive')}
-            >
-              <Wrench size={11} className="header-redesigned__dev-icon" aria-hidden="true" />
-              <span className="header-redesigned__dev-text">DEV</span>
-            </button>
-          )}
-        </div>
+            {showBadge && (
+              <div
+                className={`header__offline-badge${isOnline ? ' header__offline-badge--hidden' : ''}`}
+                aria-label={t('offline.indicator')}
+                role="status"
+              >
+                <WifiOff size={12} aria-hidden="true" />
+                <span>{t('offline.indicator')}</span>
+              </div>
+            )}
+            {developmentMode && (
+              <button
+                className="header-redesigned__dev-indicator"
+                title={t('common.developmentModeActive')}
+                onClick={() => setShowSettings(true)}
+                aria-label={t('common.developmentModeActive')}
+              >
+                <Wrench size={11} className="header-redesigned__dev-icon" aria-hidden="true" />
+                <span className="header-redesigned__dev-text">DEV</span>
+              </button>
+            )}
+          </div>
         )}
         {/* Right Section: Primary Actions Only */}
         <div className="header-redesigned__right">

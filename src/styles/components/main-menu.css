@@ -432,7 +432,6 @@ html.dark .main-menu__no-results-icon {
 
 /* === COMPACT MOBILE-FIRST RESPONSIVE ≤639px - CONSOLIDATED === */
 
-
 /* No explicit dark mode rules needed - design tokens handle theme switching */
 
 /* === UX ENHANCEMENTS: ACCESSIBILITY & VISUAL HIERARCHY === */
@@ -1100,7 +1099,7 @@ html.dark .category-section__level-tag {
   color: #60a5fa;
 }
 @media (--lp-mobile-sm) {
-/* Mobile Optimization - Ultra Compact */
+  /* Mobile Optimization - Ultra Compact */
   .main-menu {
     margin: 0;
     padding-top: 0;
@@ -1337,7 +1336,7 @@ html.dark .category-section__level-tag {
     box-sizing: border-box;
   }
 
-.main-menu > .main-menu__search {
-      max-width: min(280px, 100%);
-    }
+  .main-menu > .main-menu__search {
+    max-width: min(280px, 100%);
+  }
 }

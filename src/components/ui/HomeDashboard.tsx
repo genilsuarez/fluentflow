@@ -217,10 +217,7 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
               <span className="progress-snapshot__stat">
                 {animatedCompleted}/{displayStats.totalModules}
               </span>
-              <span className="progress-snapshot__unit">
-                {' '}
-                {t('common.exercise', 'ejercicio')}
-              </span>
+              <span className="progress-snapshot__unit"> {t('common.exercise', 'ejercicio')}</span>
             </span>
           </div>
           <span className="progress-snapshot__link" aria-hidden="true">

@@ -952,10 +952,9 @@ html.dark .my-progress__unit-count:hover {
 
 /* === MOBILE ≤400px === */
 
-
 /* === RESPONSIVE 640px === */
 @media (--lp-mobile-sm) {
-.my-progress {
+  .my-progress {
     padding: 0.5rem;
     align-items: flex-start;
     padding-top: 20px;
@@ -1105,7 +1104,7 @@ html.dark .my-progress__unit-count:hover {
     font-size: 0.375rem;
   }
 
-.my-progress__container {
+  .my-progress__container {
     max-width: 21.6rem;
   }
 
