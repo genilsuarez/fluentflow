@@ -8,7 +8,11 @@ describe('blankMarker multi-blank consistency', () => {
     expect(splitOnBlanks(sentence).length - 1).toBe(2);
   });
 
-  it('normalizes legacy 4+ underscore runs to a single canonical blank', () => {
+  it('counts two blanks in language + world exercise', () => {
+    const sentence = '___ English is spoken all over ___ world.';
+    expect(countBlanks(sentence)).toBe(2);
+    expect(splitOnBlanks(sentence).length - 1).toBe(2);
+  });
     const sentence = 'I went to ____ cinema last night.';
     expect(countBlanks(sentence)).toBe(1);
     expect(splitOnBlanks(sentence).length - 1).toBe(1);
