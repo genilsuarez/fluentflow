@@ -314,25 +314,15 @@ export const MainMenu: React.FC = () => {
     return fallback?.id ?? null;
   }, [progression, modules]);
 
-  // Auto-expand the category with the next recommended module (once)
-  const hasInitializedRef = useRef(false);
+  // Collapse to Grammar-only when entering the exercises list view
+  const prevViewModeRef = useRef(viewMode);
   useEffect(() => {
-    if (hasInitializedRef.current) return;
-    if (modulesView !== 'all' || !currentModuleId || modules.length === 0) return;
-
-    const mod = modules.find(m => m.id === currentModuleId);
-    if (!mod) return;
-
-    hasInitializedRef.current = true;
-    setExpandedCategories(prev => {
-      const next = new Set(prev);
-      next.add(PINNED_CATEGORY);
-      if (mod.category !== PINNED_CATEGORY) {
-        next.add(mod.category);
-      }
-      return next;
-    });
-  }, [modulesView, currentModuleId, modules]);
+    if (viewMode === 'list' && prevViewModeRef.current !== 'list') {
+      setExpandedCategories(new Set([PINNED_CATEGORY]));
+      setExpandedLevels(new Set());
+    }
+    prevViewModeRef.current = viewMode;
+  }, [viewMode]);
 
   // Sync view mode with stored context when component mounts
   useEffect(() => {
@@ -446,7 +436,7 @@ export const MainMenu: React.FC = () => {
     navigateToModule(module, { skipPrerequisiteCheck: skipPrereqs });
   };
 
-  if (isLoading) {
+  if (isLoading && viewMode === 'list') {
     return (
       <div className="main-menu">
         <div className="main-menu__search">
@@ -464,7 +454,7 @@ export const MainMenu: React.FC = () => {
     );
   }
 
-  if (error) {
+  if (error && viewMode === 'list') {
     return (
       <div className="main-menu">
         <div className="main-menu__error" role="alert">

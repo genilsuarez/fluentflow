@@ -162,6 +162,10 @@ function expandContractions(s: string): string {
 export function normalizeAnswer(s: string): string {
   let result = s
     .toLowerCase()
+    // Strip zero-width / BOM / nbsp artifacts from contenteditable
+    .replace(/[\u200b\ufeff\u00a0]/g, '')
+    // Normalize dash variants (em dash, en dash, minus) to ASCII hyphen
+    .replace(/[\u2010-\u2015\u2212]/g, '-')
     // Normalize all apostrophe-like characters to straight ASCII apostrophe
     .replace(/['\u2018\u2019\u02BC`]/g, "'")
     // Expand missing apostrophes only in the most common n't contractions
@@ -214,11 +218,10 @@ function stripApostrophes(s: string): string {
  * Two-pass: exact match after normalizeAnswer, then fuzzy match stripping apostrophes.
  */
 export function matchesAnswer(userAnswer: string, correctArray: string[]): boolean {
-  const trimmed = userAnswer.trim();
   const norm = normalizeAnswer(userAnswer);
 
   // Empty field = no article when that's the expected answer (mobile-friendly)
-  if (!trimmed && correctArray.some(c => isNoArticleAnswer(c))) {
+  if (!norm.length && correctArray.some(c => isNoArticleAnswer(c))) {
     return true;
   }
 

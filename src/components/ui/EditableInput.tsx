@@ -5,7 +5,7 @@ interface EditableInputProps {
   onChange: (value: string) => void;
   onFocus?: () => void;
   onEnter?: () => void;
-  onTab?: (shiftKey: boolean) => void;
+  onTab?: (direction: 'next' | 'prev') => void;
   placeholder?: string;
   ariaLabel?: string;
   disabled?: boolean;
@@ -16,7 +16,9 @@ interface EditableInputProps {
 
 export interface EditableInputHandle {
   focus: () => void;
+  blur: () => void;
   clear: () => void;
+  getValue: () => string;
 }
 
 /**
@@ -45,15 +47,24 @@ export const EditableInput = forwardRef<EditableInputHandle, EditableInputProps>
     const isFocused = useRef(false);
 
     // Expose focus() and clear() to parent components for imperative control
+    const readDomValue = () =>
+      (divRef.current?.textContent || '').replace(/[\u200b\ufeff\u00a0\n]/g, '').trim();
+
     useImperativeHandle(ref, () => ({
       focus() {
         focusAtEnd();
+      },
+      blur() {
+        divRef.current?.blur();
       },
       clear() {
         if (divRef.current) {
           // Remove all child nodes (text, <br>, <div>) — not just textContent
           divRef.current.innerHTML = '';
         }
+      },
+      getValue() {
+        return readDomValue();
       },
     }));
 
@@ -74,14 +85,19 @@ export const EditableInput = forwardRef<EditableInputHandle, EditableInputProps>
     const focusAtEnd = () => {
       const el = divRef.current;
       if (!el || disabled) return;
-      el.focus();
-      // Move cursor to end
-      const range = document.createRange();
+      el.focus({ preventScroll: true });
       const sel = window.getSelection();
-      range.selectNodeContents(el);
-      range.collapse(false); // collapse to end
-      sel?.removeAllRanges();
-      sel?.addRange(range);
+      if (!sel) return;
+      const range = document.createRange();
+      if (el.childNodes.length > 0) {
+        range.selectNodeContents(el);
+        range.collapse(false);
+      } else {
+        range.setStart(el, 0);
+        range.collapse(true);
+      }
+      sel.removeAllRanges();
+      sel.addRange(range);
     };
 
     // Update div content when value changes externally.
@@ -107,7 +123,7 @@ export const EditableInput = forwardRef<EditableInputHandle, EditableInputProps>
       const el = e.currentTarget;
       // Strip any <br> or block elements that contentEditable may insert on Enter
       const raw = el.textContent || '';
-      const clean = raw.replace(/\n/g, '');
+      const clean = raw.replace(/[\u200b\ufeff\u00a0\n]/g, '').trim();
       if (raw !== clean || el.innerHTML.includes('<br') || el.innerHTML.includes('<div')) {
         // Save cursor offset before nuking HTML artifacts
         const sel = window.getSelection();
@@ -143,9 +159,10 @@ export const EditableInput = forwardRef<EditableInputHandle, EditableInputProps>
 
     const handleBlur = () => {
       isFocused.current = false;
-      // Sync content on blur in case external value differs
-      if (divRef.current && divRef.current.textContent !== value) {
-        divRef.current.textContent = value;
+      // Commit DOM text to parent — never discard in-progress edits on blur
+      const domText = readDomValue();
+      if (domText !== value) {
+        onChange(domText);
       }
     };
 
@@ -156,10 +173,10 @@ export const EditableInput = forwardRef<EditableInputHandle, EditableInputProps>
         onEnter?.();
         return;
       }
-      if (e.key === 'Tab') {
+      if (e.key === 'Tab' && onTab) {
         e.preventDefault();
         e.stopPropagation();
-        onTab?.(e.shiftKey);
+        onTab(e.shiftKey ? 'prev' : 'next');
       }
     };
 
@@ -190,6 +207,7 @@ export const EditableInput = forwardRef<EditableInputHandle, EditableInputProps>
         data-placeholder={placeholder}
         data-empty={!value ? 'true' : 'false'}
         role="textbox"
+        tabIndex={disabled ? -1 : 0}
         aria-label={ariaLabel || placeholder || 'Blank'}
         suppressContentEditableWarning
         spellCheck={false}

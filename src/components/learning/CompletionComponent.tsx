@@ -8,6 +8,7 @@ import {
   isParticleError,
   isNoArticleAnswer,
   formatCorrectAnswerForDisplay,
+  normalizeAnswer,
 } from '../../utils/answerUtils';
 import {
   advanceInputExerciseStep,
@@ -56,7 +57,7 @@ function matchesAllBlanks(answers: string[], correctParts: string[]): boolean {
 }
 
 function isBlankAnswered(userAnswer: string, correctForGap: string): boolean {
-  if (userAnswer.trim().length > 0) return true;
+  if (normalizeAnswer(userAnswer).length > 0) return true;
   return isNoArticleAnswer(correctForGap);
 }
 
@@ -83,8 +84,11 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
   const [showResult, setShowResult] = useState(false);
   const inputRef = useRef<EditableInputHandle>(null);
   const inputRefs = useRef<(EditableInputHandle | null)[]>([]);
+  const focusedGapRef = useRef(0);
+  const gapRefCallbacksRef = useRef(
+    new Map<number, (el: EditableInputHandle | null) => void>()
+  );
   const answersRef = useRef(answers);
-  answersRef.current = answers;
   const showResultRef = useRef(showResult);
   showResultRef.current = showResult;
   // Flag to ignore Enter key briefly after advancing to next question
@@ -118,16 +122,63 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
   const processedExercises = processedExercisesRef.current;
 
   const currentExercise = processedExercises[currentIndex];
-  const blankCount = countBlanks(currentExercise?.sentence || '');
+  const sentenceParts = splitOnBlanks(currentExercise?.sentence || '');
+  const blankCount = Math.max(sentenceParts.length - 1, 0);
   const correctParts = parseCorrectParts(currentExercise?.correct || '', blankCount);
   const joinedAnswer = answers.join(', ');
   const hasNoArticleGap = correctParts.some(isNoArticleAnswer);
   const noArticleLabel = t('learning.noArticle');
   const showGapPlaceholders = currentExercise?.showPlaceholder !== false;
 
-  const focusGap = useCallback((gapIndex: number) => {
-    inputRefs.current[gapIndex]?.focus();
+  const collectCurrentAnswers = useCallback((gapTotal: number) => {
+    return Array.from({ length: gapTotal }, (_, gapIndex) => {
+      const fromDom = inputRefs.current[gapIndex]?.getValue?.() ?? '';
+      const fromRef = answersRef.current[gapIndex] ?? '';
+      return (fromDom || fromRef).toLowerCase().trim();
+    });
   }, []);
+
+  const blurAllGaps = useCallback(() => {
+    inputRefs.current.forEach(ref => ref?.blur());
+    if (document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur();
+    }
+  }, []);
+
+  const getGapRef = useCallback((gapIndex: number) => {
+    let callback = gapRefCallbacksRef.current.get(gapIndex);
+    if (!callback) {
+      callback = (el: EditableInputHandle | null) => {
+        inputRefs.current[gapIndex] = el;
+        if (gapIndex === 0) {
+          (inputRef as React.MutableRefObject<EditableInputHandle | null>).current = el;
+        }
+      };
+      gapRefCallbacksRef.current.set(gapIndex, callback);
+    }
+    return callback;
+  }, []);
+
+  const focusGap = useCallback((gapIndex: number) => {
+    focusedGapRef.current = gapIndex;
+    requestAnimationFrame(() => {
+      inputRefs.current[gapIndex]?.focus();
+    });
+  }, []);
+
+  const handleGapTab = useCallback(
+    (fromIndex: number, direction: 'next' | 'prev') => {
+      if (showResultRef.current) return;
+      if (blankCount <= 1) {
+        focusGap(0);
+        return;
+      }
+      const delta = direction === 'prev' ? -1 : 1;
+      const next = (fromIndex + delta + blankCount) % blankCount;
+      focusGap(next);
+    },
+    [blankCount, focusGap]
+  );
 
   const helpText = showResult
     ? t('learning.pressEnterNext')
@@ -153,14 +204,19 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
   useEffect(() => {
     resetAnswersForExercise(processedExercises[currentIndex]);
     inputRefs.current = inputRefs.current.slice(0, blankCount);
+    focusedGapRef.current = 0;
     // eslint-disable-next-line react-hooks/exhaustive-deps -- reset only when advancing exercises
   }, [currentIndex]);
 
   const checkAnswer = useCallback(() => {
     if (showResultRef.current) return;
 
-    const currentAnswers = answersRef.current;
-    const isCorrect = matchesAllBlanks(currentAnswers, correctParts);
+    blurAllGaps();
+    const flushed = collectCurrentAnswers(blankCount);
+    answersRef.current = flushed;
+    setAnswers(flushed);
+
+    const isCorrect = matchesAllBlanks(flushed, correctParts);
 
     if (isCorrect) {
       markCorrect();
@@ -174,7 +230,7 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
     window.setTimeout(() => {
       ignoreEnterRef.current = false;
     }, EXERCISE_RESULT_ENTER_GUARD_MS);
-  }, [correctParts, markCorrect, markIncorrect]);
+  }, [blankCount, blurAllGaps, collectCurrentAnswers, correctParts, markCorrect, markIncorrect]);
 
   const handleNext = useCallback(() => {
     showResultRef.current = false;
@@ -198,7 +254,9 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
     const handleKeyPress = (e: KeyboardEvent) => {
       if (ignoreEnterRef.current) return;
       if (e.key === 'Enter' && !showResultRef.current) {
-        if (allBlanksAnswered(answersRef.current, correctParts)) {
+        const current = collectCurrentAnswers(blankCount);
+        answersRef.current = current;
+        if (allBlanksAnswered(current, correctParts)) {
           checkAnswer();
         }
       } else if (e.key === 'Enter' && showResultRef.current) {
@@ -208,7 +266,7 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
 
     window.addEventListener('keydown', handleKeyPress);
     return () => window.removeEventListener('keydown', handleKeyPress);
-  }, [processedExercises.length, correctParts, checkAnswer, handleNext]);
+  }, [processedExercises.length, blankCount, correctParts, collectCurrentAnswers, checkAnswer, handleNext]);
 
   // Early return if no data
   if (!processedExercises.length) {
@@ -285,7 +343,10 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
         );
 
         const widthSource = showResult
-          ? Math.max(gapValue.length, correctForGap.length)
+          ? Math.max(
+              gapValue.length || (isNoArticleAnswer(correctForGap) ? 1 : 0),
+              isNoArticleAnswer(correctForGap) ? Math.max(noArticleLabel.length, 1) : correctForGap.length
+            )
           : Math.max(
               gapValue.length,
               showGapPlaceholders ? placeholderHint.replace(/\./g, '').length || 3 : 4
@@ -299,12 +360,7 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
         elements.push(
           <EditableInput
             key={`input-${index}`}
-            ref={el => {
-              inputRefs.current[gapIndex] = el;
-              if (gapIndex === 0) {
-                (inputRef as React.MutableRefObject<EditableInputHandle | null>).current = el;
-              }
-            }}
+            ref={getGapRef(gapIndex)}
             value={gapValue}
             onChange={value => {
               setAnswers(prev => {
@@ -326,18 +382,22 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
               } as React.CSSProperties
             }
             autoFocus={!showResult && gapIndex === 0}
+            onFocus={() => {
+              focusedGapRef.current = gapIndex;
+            }}
             onEnter={() => {
-              if (!showResult && allBlanksAnswered(answersRef.current, correctParts)) {
+              if (ignoreEnterRef.current) return;
+              if (showResultRef.current) {
+                handleNext();
+                return;
+              }
+              const current = collectCurrentAnswers(blankCount);
+              answersRef.current = current;
+              if (allBlanksAnswered(current, correctParts)) {
                 checkAnswer();
               }
             }}
-            onTab={shiftKey => {
-              if (showResult) return;
-              const next = shiftKey ? gapIndex - 1 : gapIndex + 1;
-              if (next >= 0 && next < blankCount) {
-                focusGap(next);
-              }
-            }}
+            onTab={showResult ? undefined : direction => handleGapTab(gapIndex, direction)}
           />
         );
       }
@@ -346,7 +406,8 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
     return <>{elements}</>;
   };
 
-  const hasAnswer = allBlanksAnswered(answers, correctParts);
+  const liveAnswers = collectCurrentAnswers(blankCount);
+  const hasAnswer = allBlanksAnswered(liveAnswers, correctParts);
   const isAnswerCorrect = showResult && matchesAllBlanks(answers, correctParts);
   const formattedCorrect = formatCorrectAnswerForDisplay(
     currentExercise?.correct || '',

@@ -64,6 +64,11 @@
   background: var(--color-bg-secondary, #f9fafb);
 }
 
+.editable-input[contenteditable='false']:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 /* Placeholder styling — uses data-empty attribute instead of :empty pseudo-class.
    :empty on contenteditable can create ghost text nodes on iOS that push the cursor. */
 .editable-input[data-empty='true']::before {

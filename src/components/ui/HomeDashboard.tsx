@@ -34,32 +34,23 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
   const shouldAnimate = statsReady && revealAnimation;
   const progression = useProgression();
   const { navigateToModule } = useModuleNavigation('progression');
+  const { getNextRecommendedModule, stats, modulesFetched } = progression;
 
-  const nextRecommended = statsReady ? progression.getNextRecommendedModule() : null;
+  const nextRecommended = modulesFetched ? getNextRecommendedModule() : null;
 
-  // Stats data
+  // Stats data — use persisted local state immediately; cloud sync only toggles reveal animation.
   const progressData = activityReady ? getProgressData(7) : [];
   const weeklyAverage = activityReady ? getWeeklyAverage() : 0;
   const totalSessions = progressData.reduce((sum, day) => sum + day.sessionsCount, 0);
   const totalTimeSpent = progressData.reduce((sum, day) => sum + day.timeSpent, 0);
-  const totalScore = statsReady ? getTotalScore() : 0;
-  const moduleData = statsReady ? Object.values(userScores) : [];
+  const totalScore = getTotalScore();
+  const moduleData = Object.values(userScores);
   const avgScore =
     moduleData.length > 0
       ? Math.round(moduleData.reduce((sum, m) => sum + m.bestScore, 0) / moduleData.length)
       : weeklyAverage || 0;
 
-  // Progression data
-  const { stats } = progression;
-  const displayStats = statsReady
-    ? stats
-    : {
-        ...stats,
-        completionPercentage: 0,
-        completedModules: 0,
-        totalModules: stats.totalModules,
-        unitStats: stats.unitStats.map(unit => ({ ...unit, completed: 0, percentage: 0 })),
-      };
+  const displayStats = stats;
 
   const animatedPct = useAnimatedNumber(displayStats.completionPercentage, shouldAnimate);
   const animatedCompleted = useAnimatedNumber(displayStats.completedModules, shouldAnimate);
@@ -121,10 +112,10 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
 
   const heroIcon = nextRecommended ? getModeIcon(nextRecommended.learningMode) : '🚀';
 
-  const hasProgress = statsReady && displayStats.completedModules > 0;
+  const hasProgress = displayStats.completedModules > 0;
   const progressMeta = currentUnitInfo
     ? `${currentUnitInfo.code} · ${currentUnitInfo.name}`
-    : t('dashboard.pickModule', 'Pick a module and begin your first session.');
+    : '';
   const depthExercisesLabel = `6,700+ ${t('dashboard.depthExercises', 'exercises')}`;
 
   const handleProgressClick = useCallback(() => {
@@ -146,22 +137,24 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
   }, [handleContinue]);
 
   return (
-    <div className="home-dash" data-lp-home>
+    <div className={`home-dash${modulesFetched ? '' : ' home-dash--pending'}`} data-lp-home>
       {/* Hero — homologated with HubFlow resumen-hero */}
       <div className="home-dash__hero resumen-hero">
         <div
-          className={`hero-card${!nextRecommended ? ' hero-card--welcome' : ''}`}
+          className={`hero-card${!nextRecommended && modulesFetched ? ' hero-card--welcome' : ''}`}
           style={{ '--hero-spine': heroSpine } as React.CSSProperties}
         >
           <button
             type="button"
             className="hero-card__launch"
             onClick={handleContinue}
-            aria-label={
-              nextModuleDisplay
-                ? `${t('common.continue', 'Continue')}: ${nextModuleDisplay.title}`
-                : t('dashboard.startLearning', 'Start learning')
-            }
+          aria-label={
+            nextModuleDisplay
+              ? `${t('common.continue', 'Continue')}: ${nextModuleDisplay.title}`
+              : modulesFetched
+                ? t('dashboard.startLearning', 'Start learning')
+                : t('dashboard.nextStep', 'Next step')
+          }
           >
             <span className="hero-card__icon" aria-hidden="true">
               {heroIcon}
@@ -171,7 +164,9 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
               <span className="hero-card__title" id="home-dash-continue-title">
                 {nextModuleDisplay
                   ? nextModuleDisplay.title
-                  : t('dashboard.startLearning', 'Start learning')}
+                  : modulesFetched
+                    ? t('dashboard.startLearning', 'Start learning')
+                    : '\u00a0'}
               </span>
               <span className="hero-card__meta">
                 {nextModuleDisplay
@@ -187,9 +182,11 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
           className={`progress-snapshot${hasProgress ? '' : ' progress-snapshot--empty'}`}
           onClick={handleProgressClick}
           aria-label={
-            hasProgress
-              ? `${t('dashboard.yourProgress', 'Your progress')}: ${animatedPct}%, ${animatedCompleted} ${t('common.of', 'of')} ${displayStats.totalModules} ${t('common.exercise', 'ejercicio')}, ${progressMeta}, ${depthExercisesLabel}`
-              : `${t('dashboard.yourProgress', 'Your progress')}: 0 ${t('common.of', 'of')} ${displayStats.totalModules} ${t('common.exercise', 'ejercicio')}. ${progressMeta}. ${depthExercisesLabel}`
+            modulesFetched && displayStats.totalModules > 0
+              ? hasProgress
+                ? `${t('dashboard.yourProgress', 'Your progress')}: ${animatedPct}%, ${animatedCompleted} ${t('common.of', 'of')} ${displayStats.totalModules} ${t('common.exercise', 'ejercicio')}${progressMeta ? `, ${progressMeta}` : ''}, ${depthExercisesLabel}`
+                : `${t('dashboard.yourProgress', 'Your progress')}: 0 ${t('common.of', 'of')} ${displayStats.totalModules} ${t('common.exercise', 'ejercicio')}${progressMeta ? `. ${progressMeta}` : ''}. ${depthExercisesLabel}`
+              : `${t('dashboard.yourProgress', 'Your progress')}, ${depthExercisesLabel}`
           }
         >
           <div
@@ -206,14 +203,18 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
             <span className="progress-snapshot__title">
               {t('dashboard.yourProgress', 'Your progress')}
             </span>
-            <span className="progress-snapshot__line progress-snapshot__line--meta">
-              {progressMeta}
-            </span>
+            {progressMeta ? (
+              <span className="progress-snapshot__line progress-snapshot__line--meta">
+                {progressMeta}
+              </span>
+            ) : null}
           </span>
           <div className="progress-snapshot__stat-block">
             <span className="progress-snapshot__stat-wrap">
               <span className="progress-snapshot__stat">
-                {animatedCompleted}/{displayStats.totalModules}
+                {modulesFetched && displayStats.totalModules > 0
+                  ? `${animatedCompleted}/${displayStats.totalModules}`
+                  : '—'}
               </span>
               <span className="progress-snapshot__unit"> {t('common.exercise', 'ejercicio')}</span>
             </span>
@@ -271,13 +272,21 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
             {t('dashboard.recentActivity', 'Últimos días')}
           </h3>
           <div className="home-dash__weekly-chart">
-            {progressData.length === 0 ? (
-              <div className="home-dash__empty">
-                <TrendingUp className="home-dash__empty-icon" />
-                <p>
-                  {t('dashboard.completeModulesMessage', 'Complete modules to see your progress')}
-                </p>
+            {!activityReady ? (
+              <div className="home-dash__bars home-dash__bars--pending" aria-hidden="true">
+                <div className="home-dash__bar-col">
+                  <div className="home-dash__bar" />
+                  <span className="home-dash__bar-label">&nbsp;</span>
+                  <span className="home-dash__bar-value">&nbsp;</span>
+                </div>
+                <div className="home-dash__bar-col">
+                  <div className="home-dash__bar" />
+                  <span className="home-dash__bar-label">&nbsp;</span>
+                  <span className="home-dash__bar-value">&nbsp;</span>
+                </div>
               </div>
+            ) : progressData.length === 0 ? (
+              <div className="home-dash__weekly-placeholder" aria-hidden="true" />
             ) : (
               <div className="home-dash__bars">
                 {(() => {

@@ -9,6 +9,16 @@
   box-sizing: border-box;
 }
 
+.home-dash--pending .resumen-hero,
+.home-dash--pending .home-dash__stats,
+.home-dash--pending .home-dash__progress-row {
+  opacity: 0.88;
+}
+
+html[data-stats-syncing] .home-dash .progress-snapshot__visual {
+  opacity: 0.72;
+}
+
 /* ─── STATS GRID ─── */
 .home-dash__stats {
   display: grid;
@@ -116,6 +126,16 @@
 
 .home-dash__weekly-chart {
   min-height: 4.5rem;
+}
+
+.home-dash__weekly-placeholder,
+.home-dash__bars--pending .home-dash__bar {
+  min-height: 4.5rem;
+}
+
+.home-dash__bars--pending .home-dash__bar-label,
+.home-dash__bars--pending .home-dash__bar-value {
+  visibility: hidden;
 }
 
 .home-dash__bars {

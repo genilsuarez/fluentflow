@@ -8,7 +8,7 @@ const BLANK_RUN = /_{3,}/;
 export const NON_CANONICAL_BLANK_PATTERN = /_{4,}/g;
 
 export function countBlanks(sentence: string): number {
-  return (sentence.match(BLANK_RUN) ?? []).length;
+  return Math.max(splitOnBlanks(sentence).length - 1, 0);
 }
 
 export function splitOnBlanks(sentence: string): string[] {

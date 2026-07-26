@@ -1570,11 +1570,16 @@ html[data-navigation-mode='floating']
 
   .header-redesigned--learning-mode.header-redesigned--has-lesson-title
     .header-redesigned__lesson-title {
-    grid-column: 2;
-    grid-row: 1;
-    white-space: normal;
-    text-overflow: unset;
-    overflow: visible;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
   }
 
   .header-redesigned--learning-mode.header-redesigned--has-lesson-title

@@ -179,6 +179,19 @@ html.dark .completion-component__tip-text {
   box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
 }
 
+html.dark .completion-component__sentence .editable-input--inline.editable-input--neutral:focus,
+html.dark .completion-component__sentence .editable-input--inline.editable-input--correct:focus,
+html.dark .completion-component__sentence .editable-input--inline.editable-input--incorrect:focus {
+  box-shadow: none;
+}
+
+.completion-component__sentence .editable-input--inline.editable-input--correct:focus,
+.completion-component__sentence .editable-input--inline.editable-input--incorrect:focus,
+.completion-component__sentence .editable-input--inline[contenteditable='false']:focus {
+  box-shadow: none;
+  outline: none;
+}
+
 html.dark .completion-component__sentence .editable-input--inline.editable-input--neutral {
   background-color: var(--theme-bg-elevated, #211d18);
   border-color: var(--theme-primary-blue, #60a5fa);
