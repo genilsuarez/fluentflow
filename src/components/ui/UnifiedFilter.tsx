@@ -225,6 +225,30 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
     setLevel(level === selected ? 'all' : selected);
   };
 
+  // Double-click on any chip: apply selection + close the panel
+  // onClick fires on each individual click (including the two clicks of a dblclick).
+  // We suppress the second onClick when it's part of a dblclick using a click-count ref.
+  const clickTimerRef = React.useRef<ReturnType<typeof setTimeout> | null>(null);
+  const pendingClickRef = React.useRef<(() => void) | null>(null);
+
+  const handleChipClick = (applyFn: () => void) => {
+    if (clickTimerRef.current) {
+      // Second click arrived — this is a dblclick; cancel the deferred single-click
+      clearTimeout(clickTimerRef.current);
+      clickTimerRef.current = null;
+      pendingClickRef.current = null;
+      applyFn();
+      handleToggle();
+    } else {
+      pendingClickRef.current = applyFn;
+      clickTimerRef.current = setTimeout(() => {
+        clickTimerRef.current = null;
+        pendingClickRef.current?.();
+        pendingClickRef.current = null;
+      }, 220);
+    }
+  };
+
   const tabs: { key: FilterTab; icon: React.ReactElement; label: string; count: number }[] = [
     {
       key: 'category',
@@ -298,7 +322,7 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
                 <button
                   key={category}
                   className={`unified-filter__chip${isActive ? ' unified-filter__chip--active' : ''}`}
-                  onClick={() => handleToggleCategory(category)}
+                  onClick={() => handleChipClick(() => handleToggleCategory(category))}
                   aria-pressed={isActive}
                   type="button"
                 >
@@ -322,7 +346,7 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
                 <button
                   key={mode}
                   className={`unified-filter__chip${isActive ? ' unified-filter__chip--active' : ''}`}
-                  onClick={() => handleToggleMode(mode)}
+                  onClick={() => handleChipClick(() => handleToggleMode(mode))}
                   aria-pressed={isActive}
                   type="button"
                 >
@@ -344,7 +368,7 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
                 <button
                   key={lvl}
                   className={`unified-filter__chip unified-filter__chip--level${isActive ? ' unified-filter__chip--active' : ''}`}
-                  onClick={() => handleSelectLevel(lvl)}
+                  onClick={() => handleChipClick(() => handleSelectLevel(lvl))}
                   aria-pressed={isActive}
                   type="button"
                   style={{ '--level-color': getLevelColor(lvl) } as React.CSSProperties}
