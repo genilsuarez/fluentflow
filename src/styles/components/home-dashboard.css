@@ -460,10 +460,6 @@ html.dark .main-menu .home-dash .home-dash__level-code--indigo,
     font-size: 0.9rem;
   }
 
-  .home-dash__stat--accuracy {
-    display: none;
-  }
-
   .home-dash__level-grid {
     gap: 0.75rem;
   }
