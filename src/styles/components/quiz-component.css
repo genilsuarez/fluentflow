@@ -394,6 +394,7 @@ html.dark .quiz-component__sentence-inline {
 .quiz-component__text-input {
   width: 100%;
   padding: 0.5rem 0.25rem 0.35rem;
+  padding-left: calc(0.25rem + 3px);
   font-size: 1rem;
   line-height: 1.5;
   border: none;
@@ -433,6 +434,7 @@ html.dark .quiz-component__sentence-inline {
   display: block;
   width: 100%;
   padding: 0.5rem 0.25rem 0.35rem;
+  padding-left: calc(0.25rem + 3px);
   font-size: 1rem;
   line-height: 1.5;
   border: none;
