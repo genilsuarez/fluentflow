@@ -9,6 +9,7 @@ import '../../styles/components/editable-input.css';
 import ContentRenderer from '../ui/ContentRenderer';
 import LearningProgressHeader from '../ui/LearningProgressHeader';
 import ExerciseResultScreen from '../ui/ExerciseResultScreen';
+import { AnswerReviewDisplay } from '../ui/AnswerReviewDisplay';
 import { EditableInput } from '../ui/EditableInput';
 import type { EditableInputHandle } from '../ui/EditableInput';
 import { ContentAdapter } from '../../utils/contentAdapter';
@@ -189,22 +190,30 @@ const TransformationComponent: React.FC<TransformationComponentProps> = ({ modul
         </div>
 
         {/* Answer input */}
-        <EditableInput
-          ref={inputRef}
-          value={answer}
-          onChange={setAnswer}
-          onEnter={handleEnterKey}
-          disabled={showResult}
-          placeholder="..."
-          className={`editable-input editable-input--fullwidth transformation__input${
-            showResult
-              ? correct
-                ? ' editable-input--correct'
-                : ' editable-input--incorrect'
-              : ' editable-input--neutral'
-          }`}
-          autoFocus={!showResult}
-        />
+        {showResult && !correct ? (
+          <AnswerReviewDisplay
+            answer={answer}
+            correctAnswers={currentExercise.correct}
+            className="transformation__input"
+          />
+        ) : (
+          <EditableInput
+            ref={inputRef}
+            value={answer}
+            onChange={setAnswer}
+            onEnter={handleEnterKey}
+            disabled={showResult}
+            placeholder="..."
+            className={`editable-input editable-input--fullwidth transformation__input${
+              showResult
+                ? correct
+                  ? ' editable-input--correct'
+                  : ' editable-input--incorrect'
+                : ' editable-input--neutral'
+            }`}
+            autoFocus={!showResult}
+          />
+        )}
 
         {/* Result feedback */}
         <div

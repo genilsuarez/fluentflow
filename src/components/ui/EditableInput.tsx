@@ -47,8 +47,15 @@ export const EditableInput = forwardRef<EditableInputHandle, EditableInputProps>
     const isFocused = useRef(false);
 
     // Expose focus() and clear() to parent components for imperative control
-    const readDomValue = () =>
-      (divRef.current?.textContent || '').replace(/[\u200b\ufeff\u00a0\n]/g, '').trim();
+    const normalizeEditableText = (raw: string, trimEdges = false) => {
+      const normalized = raw
+        .replace(/[\u200b\ufeff]/g, '')
+        .replace(/\u00a0/g, ' ')
+        .replace(/\n/g, '');
+      return trimEdges ? normalized.trim() : normalized;
+    };
+
+    const readDomValue = () => normalizeEditableText(divRef.current?.textContent || '', true);
 
     useImperativeHandle(ref, () => ({
       focus() {
@@ -123,7 +130,7 @@ export const EditableInput = forwardRef<EditableInputHandle, EditableInputProps>
       const el = e.currentTarget;
       // Strip any <br> or block elements that contentEditable may insert on Enter
       const raw = el.textContent || '';
-      const clean = raw.replace(/[\u200b\ufeff\u00a0\n]/g, '').trim();
+      const clean = normalizeEditableText(raw);
       if (raw !== clean || el.innerHTML.includes('<br') || el.innerHTML.includes('<div')) {
         // Save cursor offset before nuking HTML artifacts
         const sel = window.getSelection();
@@ -190,7 +197,7 @@ export const EditableInput = forwardRef<EditableInputHandle, EditableInputProps>
       sel.getRangeAt(0).insertNode(document.createTextNode(text));
       sel.collapseToEnd();
       // Trigger onChange with updated content
-      onChange(divRef.current?.textContent || '');
+      onChange(normalizeEditableText(divRef.current?.textContent || ''));
     };
 
     return (

@@ -593,7 +593,11 @@ html.dark .unified-filter__chip--active {
 }
 
 html.dark .unified-filter__chip--level.unified-filter__chip--active {
-  background: color-mix(in srgb, var(--level-color, #60a5fa) 18%, var(--lp-surface-raised, #2b3038));
+  background: color-mix(
+    in srgb,
+    var(--level-color, #60a5fa) 18%,
+    var(--lp-surface-raised, #2b3038)
+  );
   border-color: color-mix(in srgb, var(--level-color, #60a5fa) 45%, transparent);
   color: var(--level-color, #93c5fd);
 }

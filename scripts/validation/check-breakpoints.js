@@ -17,6 +17,8 @@ const PUBLIC_CSS = join(ROOT, 'public/lp-nav-active.css');
 const SKIP_FILES = new Set([
   'src/styles/design-system/breakpoints.css',
   'src/styles/components/orientation-lock.css',
+  // Shared platform file copied to all apps (no build step) — cannot use @custom-media tokens
+  'public/lp-nav-active.css',
 ]);
 
 const ALLOWED_CUSTOM_MEDIA = new Set([

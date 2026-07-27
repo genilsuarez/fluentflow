@@ -454,3 +454,84 @@ export function isParticleError(userAnswer: string, correctAnswer: string): bool
 
   return false;
 }
+
+export type AnswerDiffSegment = { text: string; isError: boolean };
+
+function diffWordsMatch(userWord: string, correctWord: string): boolean {
+  const normUser = normalizeAnswer(userWord);
+  const normCorrect = normalizeAnswer(correctWord);
+  if (normUser === normCorrect) return true;
+  return stripApostrophes(normUser) === stripApostrophes(normCorrect);
+}
+
+function lcsMatchedUserWordIndices(userWords: string[], correctWords: string[]): Set<number> {
+  const m = userWords.length;
+  const n = correctWords.length;
+  const dp = Array.from({ length: m + 1 }, () => Array<number>(n + 1).fill(0));
+
+  for (let i = 1; i <= m; i++) {
+    for (let j = 1; j <= n; j++) {
+      if (diffWordsMatch(userWords[i - 1], correctWords[j - 1])) {
+        dp[i][j] = dp[i - 1][j - 1] + 1;
+      } else {
+        dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+      }
+    }
+  }
+
+  const matched = new Set<number>();
+  let i = m;
+  let j = n;
+  while (i > 0 && j > 0) {
+    if (diffWordsMatch(userWords[i - 1], correctWords[j - 1])) {
+      matched.add(i - 1);
+      i--;
+      j--;
+    } else if (dp[i - 1][j] >= dp[i][j - 1]) {
+      i--;
+    } else {
+      j--;
+    }
+  }
+
+  return matched;
+}
+
+function diffAnswerAgainstCorrect(userAnswer: string, correctAnswer: string): AnswerDiffSegment[] {
+  const parts = userAnswer.match(/\S+|\s+/g) ?? [];
+  if (!parts.length) return [{ text: userAnswer, isError: false }];
+
+  const userWords = parts.filter(part => /\S/.test(part));
+  const correctWords = correctAnswer.match(/\S+/g) ?? [];
+  const matchedUserIndices = lcsMatchedUserWordIndices(userWords, correctWords);
+
+  const segments: AnswerDiffSegment[] = [];
+  let wordIndex = 0;
+  for (const part of parts) {
+    if (!/\S/.test(part)) {
+      segments.push({ text: part, isError: false });
+      continue;
+    }
+    segments.push({ text: part, isError: !matchedUserIndices.has(wordIndex) });
+    wordIndex++;
+  }
+
+  return segments;
+}
+
+/** Highlight only the user's incorrect tokens while preserving their typed spacing. */
+export function diffAnswerSegments(
+  userAnswer: string,
+  correctAnswers: string[]
+): AnswerDiffSegment[] {
+  if (!correctAnswers.length) {
+    return [{ text: userAnswer, isError: false }];
+  }
+
+  const candidates = correctAnswers.map(correct => diffAnswerAgainstCorrect(userAnswer, correct));
+  return candidates.reduce((best, current) => {
+    const bestErrors = best.filter(segment => segment.isError).length;
+    const currentErrors = current.filter(segment => segment.isError).length;
+    return currentErrors < bestErrors ? current : best;
+  });
+}

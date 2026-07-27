@@ -152,6 +152,16 @@
   background: transparent;
 }
 
+/* Incorrect review — red underline, neutral text except error tokens */
+.editable-input--review.editable-input--incorrect {
+  color: var(--color-text-primary, #111827);
+  cursor: default;
+}
+
+.editable-input__segment--error {
+  color: var(--lp-error, #c0392b);
+}
+
 /* Disabled */
 .editable-input--disabled,
 .editable-input[contenteditable='false'].editable-input--correct,
@@ -187,6 +197,14 @@ html.dark .editable-input--correct.editable-input--fullwidth::after {
 }
 
 html.dark .editable-input--incorrect {
+  color: color-mix(in srgb, var(--lp-error, #c0392b) 85%, var(--lp-ink, #f3f4f6));
+}
+
+html.dark .editable-input--review.editable-input--incorrect {
+  color: var(--theme-text-primary, #f3f4f6);
+}
+
+html.dark .editable-input__segment--error {
   color: color-mix(in srgb, var(--lp-error, #c0392b) 85%, var(--lp-ink, #f3f4f6));
 }
 
