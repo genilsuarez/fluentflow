@@ -476,6 +476,14 @@
   color: var(--level-color, #2563eb);
 }
 
+.unified-filter__chip-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--level-color, var(--lp-muted, #9c8e7c));
+  flex-shrink: 0;
+}
+
 .unified-filter__chip-emoji {
   font-size: 0.875rem;
   line-height: 1;
@@ -584,14 +592,10 @@ html.dark .unified-filter__chip--active {
   color: #93c5fd;
 }
 
-html.dark .unified-filter__chip--level .unified-filter__chip-emoji {
-  display: none;
-}
-
 html.dark .unified-filter__chip--level.unified-filter__chip--active {
-  background: var(--lp-accent-soft, #1a2744);
-  border-color: color-mix(in srgb, #60a5fa 40%, transparent);
-  color: #93c5fd;
+  background: color-mix(in srgb, var(--level-color, #60a5fa) 18%, var(--lp-surface-raised, #2b3038));
+  border-color: color-mix(in srgb, var(--level-color, #60a5fa) 45%, transparent);
+  color: var(--level-color, #93c5fd);
 }
 
 /* Cursor IDE mobile preview — bottom toolbar overlaps fixed sheets.

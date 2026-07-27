@@ -16,7 +16,7 @@ import { matchesAnswer } from '../../utils/answerUtils';
 import { advanceInputExerciseStep } from '../../utils/exerciseTransition';
 import { splitOnBlanks } from '../../utils/blankMarker';
 import { gapBlankCharCount, inlineBlankWidthCh } from '../../utils/inlineBlankWidth';
-import type { LearningModule } from '../../types';
+import type { LearningModule, WordFormationData } from '../../types';
 import { GameControlsExitButton } from '../ui/GameControlsExitButton';
 import { GameControlsResetButton } from '../ui/GameControlsResetButton';
 

@@ -22,6 +22,7 @@ import {
 } from 'lucide-react';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useTranslation } from '../../utils/i18n';
+import { getLevelColor } from '../../utils/progressionDisplay';
 import type { Category, LearningMode } from '../../types';
 
 type FilterTab = 'category' | 'mode' | 'level';
@@ -99,22 +100,6 @@ const MODE_I18N_KEYS: Record<LearningMode, string> = {
 };
 
 const ALL_LEVELS: Level[] = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'];
-const LEVEL_COLORS: Record<Level, string> = {
-  a1: '#22c55e',
-  a2: '#eab308',
-  b1: '#f97316',
-  b2: '#ef4444',
-  c1: '#a855f7',
-  c2: '#374151',
-};
-const LEVEL_EMOJIS: Record<Level, string> = {
-  a1: '🟢',
-  a2: '🟡',
-  b1: '🟠',
-  b2: '🔴',
-  c1: '🟣',
-  c2: '⚫',
-};
 
 interface UnifiedFilterProps {
   isOpen?: boolean;
@@ -362,15 +347,9 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
                   onClick={() => handleSelectLevel(lvl)}
                   aria-pressed={isActive}
                   type="button"
-                  style={
-                    isActive
-                      ? ({ '--level-color': LEVEL_COLORS[lvl] } as React.CSSProperties)
-                      : undefined
-                  }
+                  style={{ '--level-color': getLevelColor(lvl) } as React.CSSProperties}
                 >
-                  <span className="unified-filter__chip-emoji" aria-hidden="true">
-                    {LEVEL_EMOJIS[lvl]}
-                  </span>
+                  <span className="unified-filter__chip-dot" aria-hidden="true" />
                   <span className="unified-filter__chip-label">{lvl.toUpperCase()}</span>
                 </button>
               );

@@ -133,7 +133,7 @@ export const Header: React.FC<HeaderProps> = () => {
     if (isPinnedSidebar) setShowSideMenu(false);
   }, [isPinnedSidebar]);
   useEffect(() => {
-    let timer: ReturnType<typeof setTimeout> | undefined;
+    let timer: number | undefined;
     const shouldLock = showSideMenu && offCanvasDrawer;
 
     if (shouldLock) {
@@ -278,7 +278,7 @@ export const Header: React.FC<HeaderProps> = () => {
             <>
               <button
                 onClick={handleMenuToggle}
-                className={`header-redesigned__menu-btn${showSideMenu ? ' header-redesigned__menu-btn--open' : ''}${!offCanvasDrawer && navigationMode === 'floating' ? ' header-redesigned__menu-btn--primary' : ''}`}
+                className={`header-redesigned__menu-btn${showSideMenu ? ' header-redesigned__menu-btn--open' : ''}${navigationMode === 'floating' ? ' header-redesigned__menu-btn--primary' : ''}`}
                 title={menuToggleLabel}
                 aria-label={menuToggleLabel}
                 aria-expanded={showSideMenu}
