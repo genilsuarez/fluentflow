@@ -225,11 +225,22 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
     setLevel(level === selected ? 'all' : selected);
   };
 
-  // Double-click on any chip: close the panel (selection already applied by the two
-  // preceding onClick events, which cancel each other out — so re-apply once here).
-  const handleChipDoubleClick = (applyFn: () => void) => {
-    applyFn(); // re-apply to restore the intended selection state
-    handleToggle();
+  // Double-click detection via timestamp — robust against React re-renders between clicks.
+  // The DOM may be replaced after the first click (portal re-render), so onDoubleClick
+  // is unreliable. Instead we track the last click time per chip key in a ref.
+  const lastClickTimeRef = React.useRef<{ key: string; time: number } | null>(null);
+
+  const handleChipClick = (key: string, applyFn: () => void) => {
+    const now = Date.now();
+    const last = lastClickTimeRef.current;
+    if (last && last.key === key && now - last.time < 300) {
+      // Second click within 300ms on the same chip → treat as double-click
+      lastClickTimeRef.current = null;
+      handleToggle();
+    } else {
+      lastClickTimeRef.current = { key, time: now };
+      applyFn();
+    }
   };
 
   const tabs: { key: FilterTab; icon: React.ReactElement; label: string; count: number }[] = [
@@ -305,8 +316,7 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
                 <button
                   key={category}
                   className={`unified-filter__chip${isActive ? ' unified-filter__chip--active' : ''}`}
-                  onClick={() => handleToggleCategory(category)}
-                  onDoubleClick={() => handleChipDoubleClick(() => handleToggleCategory(category))}
+                  onClick={() => handleChipClick(`cat:${category}`, () => handleToggleCategory(category))}
                   aria-pressed={isActive}
                   type="button"
                 >
@@ -330,8 +340,7 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
                 <button
                   key={mode}
                   className={`unified-filter__chip${isActive ? ' unified-filter__chip--active' : ''}`}
-                  onClick={() => handleToggleMode(mode)}
-                  onDoubleClick={() => handleChipDoubleClick(() => handleToggleMode(mode))}
+                  onClick={() => handleChipClick(`mode:${mode}`, () => handleToggleMode(mode))}
                   aria-pressed={isActive}
                   type="button"
                 >
@@ -353,8 +362,7 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
                 <button
                   key={lvl}
                   className={`unified-filter__chip unified-filter__chip--level${isActive ? ' unified-filter__chip--active' : ''}`}
-                  onClick={() => handleSelectLevel(lvl)}
-                  onDoubleClick={() => handleChipDoubleClick(() => handleSelectLevel(lvl))}
+                  onClick={() => handleChipClick(`lvl:${lvl}`, () => handleSelectLevel(lvl))}
                   aria-pressed={isActive}
                   type="button"
                   style={{ '--level-color': getLevelColor(lvl) } as React.CSSProperties}
