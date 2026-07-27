@@ -15,18 +15,13 @@ import { ContentAdapter } from '../../utils/contentAdapter';
 import { matchesAnswer } from '../../utils/answerUtils';
 import { advanceInputExerciseStep } from '../../utils/exerciseTransition';
 import { splitOnBlanks } from '../../utils/blankMarker';
-import type { LearningModule, WordFormationData } from '../../types';
+import { gapBlankCharCount, inlineBlankWidthCh } from '../../utils/inlineBlankWidth';
+import type { LearningModule } from '../../types';
 import { GameControlsExitButton } from '../ui/GameControlsExitButton';
 import { GameControlsResetButton } from '../ui/GameControlsResetButton';
 
 interface WordFormationComponentProps {
   module: LearningModule;
-}
-
-/** Width in `ch` for inline blanks — scales with content, never clips typed text */
-function inlineInputWidthCh(charCount: number, minChars = 5): string {
-  const len = Math.max(charCount, minChars);
-  return `${Math.ceil(len * 1.05 + 2)}ch`;
 }
 
 const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module }) => {
@@ -192,9 +187,11 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
         const firstLetter = currentExercise.correct?.charAt(0) || '';
         const placeholderHint = correctLen > 3 && firstLetter ? `${firstLetter}...` : '...';
 
-        const widthSource = showResult
-          ? Math.max(answer.length, correctLen)
-          : Math.max(answer.length, placeholderHint.replace(/\./g, '').length || 3);
+        const widthSource = gapBlankCharCount({
+          typedLength: answer.length,
+          correctLength: correctLen,
+          hintLength: placeholderHint.replace(/\./g, '').length || 3,
+        });
 
         elements.push(
           <EditableInput
@@ -206,7 +203,7 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
             disabled={showResult}
             placeholder={placeholderHint}
             className={`editable-input editable-input--inline${inputClass}`}
-            style={{ '--dynamic-width': inlineInputWidthCh(widthSource) } as React.CSSProperties}
+            style={{ '--dynamic-width': inlineBlankWidthCh(widthSource) } as React.CSSProperties}
             autoFocus={!showResult && index === 0}
           />
         );

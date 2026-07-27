@@ -26,17 +26,12 @@ import type { EditableInputHandle } from '../ui/EditableInput';
 
 import type { LearningModule, CompletionData } from '../../types';
 import { countBlanks, splitOnBlanks } from '../../utils/blankMarker';
+import { gapBlankCharCount, inlineBlankWidthCh } from '../../utils/inlineBlankWidth';
 import { GameControlsExitButton } from '../ui/GameControlsExitButton';
 import { GameControlsResetButton } from '../ui/GameControlsResetButton';
 
 interface CompletionComponentProps {
   module: LearningModule;
-}
-
-/** Width in `ch` for inline blanks — scales with content, never clips typed text */
-function inlineInputWidthCh(charCount: number, minChars = 5): string {
-  const len = Math.max(charCount, minChars);
-  return `${Math.ceil(len * 1.05 + 2)}ch`;
 }
 
 function emptyAnswers(blankCount: number): string[] {
@@ -342,15 +337,18 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
           showGapPlaceholders
         );
 
-        const widthSource = showResult
-          ? Math.max(
-              gapValue.length || (isNoArticleAnswer(correctForGap) ? 1 : 0),
-              isNoArticleAnswer(correctForGap) ? Math.max(noArticleLabel.length, 1) : correctForGap.length
-            )
-          : Math.max(
-              gapValue.length,
-              showGapPlaceholders ? placeholderHint.replace(/\./g, '').length || 3 : 4
-            );
+        const hintLen = showGapPlaceholders
+          ? placeholderHint.replace(/\./g, '').length || 3
+          : 4;
+        const correctReservedLen = isNoArticleAnswer(correctForGap)
+          ? Math.max(noArticleLabel.length, 1)
+          : correctForGap.trim().length;
+
+        const widthSource = gapBlankCharCount({
+          typedLength: gapValue.length,
+          correctLength: correctReservedLen,
+          hintLength: hintLen,
+        });
 
         const blankAriaLabel = t('learning.blankLabel', undefined, {
           current: gapIndex + 1,
@@ -377,7 +375,7 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
             className={`editable-input editable-input--inline ${inputClass.replace(/completion-component__input/g, 'editable-input')}`}
             style={
               {
-                '--dynamic-width': inlineInputWidthCh(widthSource),
+                '--dynamic-width': inlineBlankWidthCh(widthSource),
                 textTransform: 'lowercase',
               } as React.CSSProperties
             }

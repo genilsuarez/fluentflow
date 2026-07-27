@@ -167,35 +167,11 @@ html.dark .completion-component__tip-text {
   font-weight: 500;
 }
 
-/* Inline blank — subtle focus ring, aligned with sentence text */
-.completion-component__sentence .editable-input--inline.editable-input--neutral {
-  border-color: var(--theme-primary-blue, #3b82f6);
-  background-color: var(--theme-bg-elevated, #ffffff);
-  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.12);
-}
-
-.completion-component__sentence .editable-input--inline.editable-input--neutral:focus {
-  border-color: var(--theme-primary-blue, #3b82f6);
-  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
-}
-
-html.dark .completion-component__sentence .editable-input--inline.editable-input--neutral:focus,
-html.dark .completion-component__sentence .editable-input--inline.editable-input--correct:focus,
-html.dark .completion-component__sentence .editable-input--inline.editable-input--incorrect:focus {
-  box-shadow: none;
-}
-
-.completion-component__sentence .editable-input--inline.editable-input--correct:focus,
-.completion-component__sentence .editable-input--inline.editable-input--incorrect:focus,
+/* Inline blanks use canonical underline styles from editable-input.css */
+.completion-component__sentence .editable-input--inline:focus,
 .completion-component__sentence .editable-input--inline[contenteditable='false']:focus {
-  box-shadow: none;
   outline: none;
-}
-
-html.dark .completion-component__sentence .editable-input--inline.editable-input--neutral {
-  background-color: var(--theme-bg-elevated, #211d18);
-  border-color: var(--theme-primary-blue, #60a5fa);
-  box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.15);
+  box-shadow: none;
 }
 
 .completion-component__text {

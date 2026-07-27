@@ -34,99 +34,17 @@
 .word-formation__sentence-text {
   color: inherit;
 }
+/* Inline blanks use canonical underline styles from editable-input.css */
 .word-formation__sentence .editable-input--inline {
-  min-height: 0;
   width: var(--dynamic-width, 6ch);
   min-width: 4ch;
-  max-width: min(100%, 28ch);
-  margin: 0 0.12em;
-  padding: 0 0.1em 0 1px;
-  border: none;
-  border-bottom: 2px solid color-mix(in srgb, var(--lp-muted) 55%, transparent);
-  border-radius: 0;
-  background: transparent;
-  box-shadow: none;
   color: inherit;
-  font-weight: inherit;
-  line-height: 1.65;
-  vertical-align: baseline;
-  transition:
-    border-color 0.15s ease,
-    color 0.15s ease;
-}
-
-.word-formation__sentence .editable-input--inline:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-.word-formation__sentence .editable-input--inline.editable-input--neutral {
-  border-bottom-style: dashed;
-  border-bottom-color: color-mix(in srgb, var(--lp-muted) 65%, transparent);
-  background: transparent;
-}
-
-.word-formation__sentence .editable-input--inline.editable-input--neutral:focus {
-  border-bottom-style: solid;
-  border-bottom-color: var(--lp-primary);
-  background: transparent;
-  box-shadow: none;
-}
-
-.word-formation__sentence .editable-input--inline.editable-input--correct {
-  border-bottom-style: solid;
-  border-bottom-color: color-mix(in srgb, var(--lp-success) 75%, transparent);
-  color: var(--lp-success);
-  background: transparent;
-  box-shadow: none;
-}
-
-.word-formation__sentence .editable-input--inline.editable-input--incorrect {
-  border-bottom-style: solid;
-  border-bottom-color: color-mix(in srgb, var(--lp-error) 75%, transparent);
-  color: var(--lp-error);
-  background: transparent;
-  box-shadow: none;
-}
-
-.word-formation__sentence .editable-input--inline[contenteditable='false'] {
-  background: transparent;
-  cursor: default;
-}
-
-.word-formation__sentence .editable-input--inline[data-empty='true']::before {
-  font-style: italic;
-  opacity: 0.5;
 }
 
 html.dark .word-formation__sentence {
   background-color: transparent;
   border: none;
   color: var(--theme-text-primary, #e5e7eb);
-}
-
-html.dark .word-formation__sentence .editable-input--inline.editable-input--neutral {
-  border-bottom-color: color-mix(in srgb, var(--lp-muted) 80%, transparent);
-  background: transparent;
-}
-
-html.dark .word-formation__sentence .editable-input--inline.editable-input--neutral:focus {
-  border-bottom-color: var(--lp-accent-text);
-  box-shadow: none;
-}
-
-html.dark .word-formation__sentence .editable-input--inline.editable-input--correct {
-  border-bottom-color: color-mix(in srgb, var(--lp-success) 65%, transparent);
-  color: color-mix(in srgb, var(--lp-success) 85%, var(--lp-ink));
-}
-
-html.dark .word-formation__sentence .editable-input--inline.editable-input--incorrect {
-  border-bottom-color: color-mix(in srgb, var(--lp-error) 65%, transparent);
-  color: color-mix(in srgb, var(--lp-error) 85%, var(--lp-ink));
-}
-
-html.dark .word-formation__sentence .editable-input--inline[contenteditable='false'] {
-  background: transparent;
 }
 
 /* === ROOT WORD — minimal inline label + word === */

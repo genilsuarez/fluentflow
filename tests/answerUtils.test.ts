@@ -94,4 +94,10 @@ describe('matchesAnswer', () => {
       matchesAnswer('My favourite colour is blue', ['My favorite color is blue.'])
     ).toBe(true);
   });
+
+  it('accepts dash aliases for no-article (∅) answers', () => {
+    expect(matchesAnswer('-', ['∅'])).toBe(true);
+    expect(matchesAnswer('—', ['∅'])).toBe(true);
+    expect(matchesAnswer('', ['∅'])).toBe(true);
+  });
 });

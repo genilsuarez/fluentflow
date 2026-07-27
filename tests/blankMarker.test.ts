@@ -13,6 +13,8 @@ describe('blankMarker multi-blank consistency', () => {
     expect(countBlanks(sentence)).toBe(2);
     expect(splitOnBlanks(sentence).length - 1).toBe(2);
   });
+
+  it('normalizes legacy 4+ underscore runs to a single canonical blank', () => {
     const sentence = 'I went to ____ cinema last night.';
     expect(countBlanks(sentence)).toBe(1);
     expect(splitOnBlanks(sentence).length - 1).toBe(1);
