@@ -28,7 +28,6 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answer, setAnswer] = useState('');
   const [showResult, setShowResult] = useState(false);
-  const [streak, setStreak] = useState(0);
   const inputRef = useRef<EditableInputHandle>(null);
   const ignoreEnterRef = useRef(false);
 
@@ -75,10 +74,8 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
     if (showResult) return;
     if (isCorrectAnswer(answer)) {
       markCorrect();
-      setStreak(s => s + 1);
     } else {
       markIncorrect();
-      setStreak(0);
     }
     setShowResult(true);
   }, [showResult, answer, isCorrectAnswer, markCorrect, markIncorrect]);
@@ -143,7 +140,6 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
           setCurrentIndex(0);
           setAnswer('');
           setShowResult(false);
-          setStreak(0);
           processedExercisesRef.current = module?.data
             ? conditionalShuffle(module.data as WordFormationData[], randomizeItems)
             : [];
@@ -226,13 +222,6 @@ const WordFormationComponent: React.FC<WordFormationComponentProps> = ({ module 
       />
 
       <div className="word-formation__exercise-card">
-        {/* Streak badge */}
-        {streak >= 2 && (
-          <div className="word-formation__streak" key={streak}>
-            🔥 {streak}
-          </div>
-        )}
-
         {/* Hint — first so context is visible before the exercise */}
         {currentExercise.hint && (
           <div className="word-formation__hint">

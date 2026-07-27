@@ -348,7 +348,39 @@ html.dark .quiz-component__inline-feedback-answer {
   color: var(--theme-text-primary, #e5e7eb);
 }
 
-/* === TEXT INPUT (dictation, listen-complete) === */
+/* === INLINE SENTENCE (listen-complete) === */
+.quiz-component__sentence-inline {
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.65;
+  text-align: center;
+  color: var(--theme-text-primary, #1f2937);
+  padding: 0.25rem 0;
+}
+
+.quiz-component__sentence-text {
+  color: inherit;
+}
+
+.quiz-component__sentence-inline .editable-input--inline {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+.quiz-component__sentence-tip {
+  margin: 0;
+  font-size: 0.72rem;
+  color: var(--theme-text-tertiary);
+  text-align: center;
+  font-style: italic;
+}
+
+html.dark .quiz-component__sentence-inline {
+  color: var(--theme-text-primary, #e5e7eb);
+}
+
+/* === TEXT INPUT (dictation) === */
 .quiz-component__text-input-wrap {
   width: 100%;
   max-width: 639px;
@@ -397,6 +429,26 @@ html.dark .quiz-component__inline-feedback-answer {
   color: var(--lp-error, #c0392b);
 }
 
+.quiz-component__text-input-review {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.25rem 0.35rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: none;
+  border-bottom: 2px solid color-mix(in srgb, var(--lp-error) 75%, transparent);
+  border-radius: 0;
+  background: transparent;
+  color: var(--lp-ink);
+  white-space: pre-wrap;
+  word-break: break-word;
+  cursor: default;
+}
+
+.quiz-component__text-input-review__segment--error {
+  color: var(--lp-error, #c0392b);
+}
+
 .quiz-component__text-input:disabled {
   cursor: default;
   opacity: 1;
@@ -420,6 +472,15 @@ html.dark .quiz-component__text-input--correct {
 
 html.dark .quiz-component__text-input--incorrect {
   border-bottom-color: color-mix(in srgb, var(--lp-error) 65%, transparent);
+  color: color-mix(in srgb, var(--lp-error) 85%, var(--theme-text-primary, #e5e7eb));
+}
+
+html.dark .quiz-component__text-input-review {
+  color: var(--theme-text-primary, #f3f4f6);
+  border-bottom-color: color-mix(in srgb, var(--lp-error) 65%, transparent);
+}
+
+html.dark .quiz-component__text-input-review__segment--error {
   color: color-mix(in srgb, var(--lp-error) 85%, var(--theme-text-primary, #e5e7eb));
 }
 

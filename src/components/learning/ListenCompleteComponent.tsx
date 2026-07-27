@@ -1,18 +1,22 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { Volume2, Check, X, ArrowRight } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
-import { useSettingsStore } from '../../stores/settingsStore';
 import { conditionalShuffle } from '../../utils/randomUtils';
 import { matchesAnswer } from '../../utils/answerUtils';
+import { AnswerReviewDisplay } from '../ui/AnswerReviewDisplay';
 import { advanceQuizTextStep } from '../../utils/exerciseTransition';
 import { ContentAdapter } from '../../utils/contentAdapter';
 import ContentRenderer from '../ui/ContentRenderer';
 import LearningProgressHeader from '../ui/LearningProgressHeader';
 import ExerciseResultScreen from '../ui/ExerciseResultScreen';
-import { replaceFirstBlank } from '../../utils/blankMarker';
+import { replaceFirstBlank, splitOnBlanks } from '../../utils/blankMarker';
+import { gapBlankCharCount, inlineBlankWidthCh } from '../../utils/inlineBlankWidth';
+import { EditableInput } from '../ui/EditableInput';
+import type { EditableInputHandle } from '../ui/EditableInput';
 import { speak, stopSpeaking, isSpeechAvailable, whenVoicesReady } from '../../utils/speech';
 
 import '../../styles/components/quiz-component.css';
+import '../../styles/components/editable-input.css';
 
 import type { LearningModule, CompletionData } from '../../types';
 import { GameControlsExitButton } from '../ui/GameControlsExitButton';
@@ -28,7 +32,7 @@ const ListenCompleteComponent: React.FC<ListenCompleteComponentProps> = ({ modul
   const [showResult, setShowResult] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
-  const inputRef = useRef<HTMLInputElement>(null);
+  const inputRef = useRef<EditableInputHandle>(null);
 
   const {
     t,
@@ -47,9 +51,6 @@ const ListenCompleteComponent: React.FC<ListenCompleteComponentProps> = ({ modul
     moduleName: module.name,
     learningMode: 'listen-complete',
   });
-
-  const { theme } = useSettingsStore();
-  const isDark = theme === 'dark';
 
   const itemsRef = useRef<CompletionData[] | null>(null);
   if (itemsRef.current === null) {
@@ -170,6 +171,72 @@ const ListenCompleteComponent: React.FC<ListenCompleteComponentProps> = ({ modul
 
   const ttsAvailable = isSpeechAvailable();
 
+  const renderSentenceWithBlank = () => {
+    if (!currentItem?.sentence) return null;
+
+    const parts = splitOnBlanks(currentItem.sentence);
+    const correctLen = (currentItem.correct || '').trim().length;
+    const elements: React.ReactElement[] = [];
+
+    parts.forEach((part, index) => {
+      if (part) {
+        elements.push(
+          <span key={`text-${index}`} className="quiz-component__sentence-text">
+            <ContentRenderer content={ContentAdapter.ensureStructured(part, 'completion')} />
+          </span>
+        );
+      }
+
+      if (index < parts.length - 1) {
+        const widthSource = gapBlankCharCount({
+          typedLength: userInput.length,
+          correctLength: correctLen,
+          hintLength: 3,
+        });
+        const widthStyle = {
+          '--dynamic-width': inlineBlankWidthCh(widthSource),
+        } as React.CSSProperties;
+
+        if (showResult && !isCorrect) {
+          elements.push(
+            <AnswerReviewDisplay
+              key={`input-${index}`}
+              answer={userInput}
+              correctAnswers={[currentItem.correct]}
+              inline
+              style={widthStyle}
+            />
+          );
+        } else {
+          let inputClass = ' editable-input--neutral';
+          if (showResult) {
+            inputClass = isCorrect ? ' editable-input--correct' : ' editable-input--incorrect';
+          }
+
+          elements.push(
+            <EditableInput
+              key={`input-${index}`}
+              ref={inputRef}
+              value={userInput}
+              onChange={setUserInput}
+              onEnter={() => {
+                if (showResult) handleNext();
+                else handleSubmit();
+              }}
+              disabled={showResult}
+              placeholder="..."
+              className={`editable-input editable-input--inline${inputClass}`}
+              style={widthStyle}
+              autoFocus={!showResult && index === 0}
+            />
+          );
+        }
+      }
+    });
+
+    return elements;
+  };
+
   return (
     <div className="quiz-component__container">
       <LearningProgressHeader
@@ -228,56 +295,13 @@ const ListenCompleteComponent: React.FC<ListenCompleteComponentProps> = ({ modul
           </div>
         )}
 
-        {/* Sentence with blank */}
-        <div
-          style={{
-            fontSize: '1.05rem',
-            fontWeight: 500,
-            color: isDark ? '#e5e7eb' : '#1f2937',
-            textAlign: 'center',
-            lineHeight: 1.6,
-          }}
-        >
-          <ContentRenderer
-            content={ContentAdapter.ensureStructured(currentItem.sentence, 'completion')}
-          />
-        </div>
-
         {/* Tip */}
         {currentItem?.tip && !showResult && (
-          <p
-            style={{
-              fontSize: '0.72rem',
-              color: 'var(--theme-text-tertiary)',
-              textAlign: 'center',
-              fontStyle: 'italic',
-            }}
-          >
-            💡 {currentItem.tip}
-          </p>
+          <p className="quiz-component__sentence-tip">💡 {currentItem.tip}</p>
         )}
 
-        {/* Input */}
-        <div className="quiz-component__text-input-wrap quiz-component__text-input-wrap--narrow">
-          <input
-            ref={inputRef}
-            type="text"
-            value={userInput}
-            onChange={e => setUserInput(e.target.value)}
-            disabled={showResult}
-            placeholder="Type the missing word…"
-            autoComplete="off"
-            autoCorrect="off"
-            spellCheck={false}
-            className={`quiz-component__text-input quiz-component__text-input--center${
-              showResult
-                ? isCorrect
-                  ? ' quiz-component__text-input--correct'
-                  : ' quiz-component__text-input--incorrect'
-                : ''
-            }`}
-          />
-        </div>
+        {/* Sentence with inline blank */}
+        <div className="quiz-component__sentence-inline">{renderSentenceWithBlank()}</div>
 
         {/* Feedback */}
         {showResult && (

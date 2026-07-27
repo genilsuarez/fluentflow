@@ -3,6 +3,7 @@ import { Volume2, Check, X, ArrowRight } from 'lucide-react';
 import { useLearningSession } from '../../hooks/useLearningSession';
 import { conditionalShuffle } from '../../utils/randomUtils';
 import { matchesAnswer } from '../../utils/answerUtils';
+import { AnswerReviewDisplay } from '../ui/AnswerReviewDisplay';
 import { advanceQuizTextStep } from '../../utils/exerciseTransition';
 import LearningProgressHeader from '../ui/LearningProgressHeader';
 import ExerciseResultScreen from '../ui/ExerciseResultScreen';
@@ -234,24 +235,32 @@ const DictationComponent: React.FC<DictationComponentProps> = ({ module }) => {
 
         {/* Input */}
         <div className="quiz-component__text-input-wrap">
-          <input
-            ref={inputRef}
-            type="text"
-            value={userInput}
-            onChange={e => setUserInput(e.target.value)}
-            disabled={showResult}
-            placeholder="Type what you hear…"
-            autoComplete="off"
-            autoCorrect="off"
-            spellCheck={false}
-            className={`quiz-component__text-input${
-              showResult
-                ? isCorrect
-                  ? ' quiz-component__text-input--correct'
-                  : ' quiz-component__text-input--incorrect'
-                : ''
-            }`}
-          />
+          {showResult && !isCorrect ? (
+            <AnswerReviewDisplay
+              answer={userInput}
+              correctAnswers={[currentItem.text]}
+              variant="quiz"
+            />
+          ) : (
+            <input
+              ref={inputRef}
+              type="text"
+              value={userInput}
+              onChange={e => setUserInput(e.target.value)}
+              disabled={showResult}
+              placeholder="Type what you hear…"
+              autoComplete="off"
+              autoCorrect="off"
+              spellCheck={false}
+              className={`quiz-component__text-input${
+                showResult
+                  ? isCorrect
+                    ? ' quiz-component__text-input--correct'
+                    : ' quiz-component__text-input--incorrect'
+                  : ''
+              }`}
+            />
+          )}
         </div>
 
         {/* Result feedback */}

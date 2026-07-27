@@ -59,9 +59,15 @@
   line-height: 1;
   vertical-align: bottom;
   overflow: hidden;
+  white-space: pre;
   text-overflow: ellipsis;
   box-sizing: border-box;
   border-bottom: none;
+}
+
+.editable-input--inline:focus {
+  overflow-x: auto;
+  text-overflow: clip;
 }
 
 /* Full-width variant */

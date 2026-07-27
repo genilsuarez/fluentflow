@@ -8,24 +8,17 @@
   border-color: var(--theme-primary-blue, #3b82f6);
 }
 
-/* === ERROR SENTENCE — neutral surface, LP primary accent (homologado transformation) === */
+/* === SENTENCE — plain prompt, matches transformation__source === */
 .error-correction__error-sentence {
-  background: var(--lp-surface, #ffffff);
-  border: 1px solid var(--lp-border);
-  border-radius: var(--lp-radius-md);
-  border-left: 3px solid var(--lp-primary, #3d6b9f);
-  padding: var(--lp-space-sm) var(--lp-space-md);
+  padding: var(--lp-space-sm) 0;
   margin-bottom: var(--lp-space-sm);
   font-size: var(--lp-text-base);
   font-weight: 500;
-  color: var(--lp-ink);
+  color: var(--theme-text-primary, #1f2937);
   line-height: 1.5;
 }
 html.dark .error-correction__error-sentence {
-  background: var(--lp-surface-raised);
-  border-color: var(--lp-border);
-  border-left-color: color-mix(in srgb, var(--lp-primary) 70%, transparent);
-  color: var(--lp-ink);
+  color: var(--theme-text-primary, #e5e7eb);
 }
 
 /* === EXPLANATION ACCENT (neutral — matches transformation) === */
@@ -46,7 +39,7 @@ html.dark .error-correction__explanation-label {
 /* === COMPACT MOBILE === */
 @media (max-height: 700px) {
   .error-correction__error-sentence {
-    padding: 0.4rem 0.6rem;
+    padding: 0.4rem 0;
     margin-bottom: 0.4rem;
     font-size: 0.95rem;
   }

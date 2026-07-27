@@ -159,6 +159,29 @@ export const EditableInput = forwardRef<EditableInputHandle, EditableInputProps>
       onChange(clean);
     };
 
+    const insertTextAtCursor = (text: string) => {
+      const el = divRef.current;
+      if (!el) return;
+
+      el.focus({ preventScroll: true });
+      const sel = window.getSelection();
+      if (!sel) return;
+
+      if (document.queryCommandSupported('insertText')) {
+        document.execCommand('insertText', false, text);
+      } else if (sel.rangeCount > 0) {
+        const range = sel.getRangeAt(0);
+        range.deleteContents();
+        const node = document.createTextNode(text);
+        range.insertNode(node);
+        range.setStartAfter(node);
+        range.collapse(true);
+        sel.removeAllRanges();
+        sel.addRange(range);
+        onChange(normalizeEditableText(el.textContent || ''));
+      }
+    };
+
     const handleFocus = () => {
       isFocused.current = true;
       onFocus?.();
@@ -174,6 +197,12 @@ export const EditableInput = forwardRef<EditableInputHandle, EditableInputProps>
     };
 
     const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+      if (e.key === ' ' && !disabled) {
+        e.preventDefault();
+        e.stopPropagation();
+        insertTextAtCursor(' ');
+        return;
+      }
       if (e.key === 'Enter') {
         e.preventDefault();
         e.stopPropagation();

@@ -150,13 +150,14 @@ function executeParallel(commands) {
 const pipelines = {
   quality: {
     name: '🎯 Quality',
-    description: 'ESLint, TypeScript, Tests, Formatting (parallel)',
+    description: 'ESLint, TypeScript, Tests, Formatting, Breakpoints (parallel)',
     commands: [
-      // ESLint + TypeScript + Format in parallel (CPU-light, no conflicts)
+      // ESLint + TypeScript + Format + Breakpoints in parallel (CPU-light, no conflicts)
       [
         { cmd: 'npm run lint', desc: 'ESLint check' },
         { cmd: 'npm run type-check', desc: 'TypeScript check' },
         { cmd: 'npm run format:check', desc: 'Format check' },
+        { cmd: 'npm run validate:breakpoints', desc: 'Breakpoint check' },
       ],
       // Tests run after — vitest is CPU-heavy and slows everything when competing
       { cmd: 'npm test', desc: 'Tests' },
@@ -213,17 +214,18 @@ const workflows = {
       { type: 'command', cmd: 'git pull --rebase', desc: 'Sync remote' },
       { type: 'command', cmd: 'npm run format', desc: 'Auto-format' },
       { type: 'command', cmd: 'npm run format:check', desc: 'Format check' },
-      // Phase 1: lint + types + security in parallel (all CPU-light)
+      // Phase 1: lint + types + security + breakpoints in parallel (all CPU-light)
       { type: 'parallel', cmds: [
-        { cmd: 'npm run lint',             desc: 'ESLint' },
-        { cmd: 'npm run type-check',       desc: 'TypeScript' },
-        { cmd: 'npm run security:audit',   desc: 'Audit' },
-        { cmd: 'npm run security:scan',    desc: 'Security scan' },
+        { cmd: 'npm run lint',                  desc: 'ESLint' },
+        { cmd: 'npm run type-check',            desc: 'TypeScript' },
+        { cmd: 'npm run security:audit',        desc: 'Audit' },
+        { cmd: 'npm run security:scan',         desc: 'Security scan' },
+        { cmd: 'npm run validate:breakpoints',  desc: 'Breakpoint check' },
       ]},
       // Phase 2: tests alone (CPU-heavy, needs full cores)
       { type: 'command', cmd: 'npm test', desc: 'Tests' },
       { type: 'command', cmd: 'npm run validate:content:errors', desc: 'Content validation' },
-      { type: 'command', cmd: 'npx vite build --mode production --config config/vite.config.ts', desc: 'Vite build' },
+      { type: 'command', cmd: 'npm run build', desc: 'Build (tsc + vite)' },
       { type: 'command', cmd: 'node scripts/git/smart-commit.js --stage-all --push --auto --allow-empty', desc: 'Commit & push' },
     ]
   },
