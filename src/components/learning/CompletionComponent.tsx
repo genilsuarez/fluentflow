@@ -80,9 +80,7 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
   const inputRef = useRef<EditableInputHandle>(null);
   const inputRefs = useRef<(EditableInputHandle | null)[]>([]);
   const focusedGapRef = useRef(0);
-  const gapRefCallbacksRef = useRef(
-    new Map<number, (el: EditableInputHandle | null) => void>()
-  );
+  const gapRefCallbacksRef = useRef(new Map<number, (el: EditableInputHandle | null) => void>());
   const answersRef = useRef(answers);
   const showResultRef = useRef(showResult);
   showResultRef.current = showResult;
@@ -261,7 +259,14 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
 
     window.addEventListener('keydown', handleKeyPress);
     return () => window.removeEventListener('keydown', handleKeyPress);
-  }, [processedExercises.length, blankCount, correctParts, collectCurrentAnswers, checkAnswer, handleNext]);
+  }, [
+    processedExercises.length,
+    blankCount,
+    correctParts,
+    collectCurrentAnswers,
+    checkAnswer,
+    handleNext,
+  ]);
 
   // Early return if no data
   if (!processedExercises.length) {
@@ -337,9 +342,7 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
           showGapPlaceholders
         );
 
-        const hintLen = showGapPlaceholders
-          ? placeholderHint.replace(/\./g, '').length || 3
-          : 4;
+        const hintLen = showGapPlaceholders ? placeholderHint.replace(/\./g, '').length || 3 : 4;
         const correctReservedLen = isNoArticleAnswer(correctForGap)
           ? Math.max(noArticleLabel.length, 1)
           : correctForGap.trim().length;

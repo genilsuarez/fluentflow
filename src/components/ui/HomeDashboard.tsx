@@ -113,9 +113,7 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
   const heroIcon = nextRecommended ? getModeIcon(nextRecommended.learningMode) : '🚀';
 
   const hasProgress = displayStats.completedModules > 0;
-  const progressMeta = currentUnitInfo
-    ? `${currentUnitInfo.code} · ${currentUnitInfo.name}`
-    : '';
+  const progressMeta = currentUnitInfo ? `${currentUnitInfo.code} · ${currentUnitInfo.name}` : '';
   const depthExercisesLabel = `6,700+ ${t('dashboard.depthExercises', 'exercises')}`;
 
   const handleProgressClick = useCallback(() => {
@@ -148,13 +146,13 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
             type="button"
             className="hero-card__launch"
             onClick={handleContinue}
-          aria-label={
-            nextModuleDisplay
-              ? `${t('common.continue', 'Continue')}: ${nextModuleDisplay.title}`
-              : modulesFetched
-                ? t('dashboard.startLearning', 'Start learning')
-                : t('dashboard.nextStep', 'Next step')
-          }
+            aria-label={
+              nextModuleDisplay
+                ? `${t('common.continue', 'Continue')}: ${nextModuleDisplay.title}`
+                : modulesFetched
+                  ? t('dashboard.startLearning', 'Start learning')
+                  : t('dashboard.nextStep', 'Next step')
+            }
           >
             <span className="hero-card__icon" aria-hidden="true">
               {heroIcon}
