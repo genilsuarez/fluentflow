@@ -316,7 +316,9 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
                 <button
                   key={category}
                   className={`unified-filter__chip${isActive ? ' unified-filter__chip--active' : ''}`}
-                  onClick={() => handleChipClick(`cat:${category}`, () => handleToggleCategory(category))}
+                  onClick={() =>
+                    handleChipClick(`cat:${category}`, () => handleToggleCategory(category))
+                  }
                   aria-pressed={isActive}
                   type="button"
                 >
