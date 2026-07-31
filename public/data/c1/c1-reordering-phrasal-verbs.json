@@ -160,9 +160,7 @@
       "her",
       "argument"
     ],
-    "distractors": [
-      "draw"
-    ],
+    "distractors": ["draw"],
     "explanation": "'Draw on' significa usar algo como recurso. Con 'the author' (singular), se usa 'draws'."
   },
   {
@@ -223,17 +221,7 @@
   {
     "id": "reord-pv-c1-012",
     "sentence": "The reforms are expected to bring about significant change",
-    "words": [
-      "The",
-      "reforms",
-      "are",
-      "expected",
-      "to",
-      "bring",
-      "about",
-      "significant",
-      "change"
-    ],
+    "words": ["The", "reforms", "are", "expected", "to", "bring", "about", "significant", "change"],
     "hint": "Subject + passive verb + infinitive + phrasal verb + object",
     "explanation": "'Bring about' significa causar que algo suceda."
   },
@@ -260,16 +248,7 @@
   {
     "id": "reord-pv-c1-014",
     "sentence": "The committee has not ruled out further investigation",
-    "words": [
-      "The",
-      "committee",
-      "has",
-      "not",
-      "ruled",
-      "out",
-      "further",
-      "investigation"
-    ],
+    "words": ["The", "committee", "has", "not", "ruled", "out", "further", "investigation"],
     "alternativeOrders": [
       ["The", "committee", "has", "not", "ruled", "further", "investigation", "out"]
     ],
@@ -295,5 +274,91 @@
     ],
     "hint": "Subject + phrasal verb + object + prepositional phrase",
     "explanation": "'Single out' significa seleccionar de un grupo. Es separable: 'singled three departments out' también es correcto."
+  },
+  {
+    "id": "reord-pv-c1-016",
+    "sentence": "New employees often struggle to get to grips with the software",
+    "words": [
+      "New",
+      "employees",
+      "often",
+      "struggle",
+      "to",
+      "get",
+      "to",
+      "grips",
+      "with",
+      "the",
+      "software"
+    ],
+    "hint": "Subject + adverb + verb + infinitive + phrasal verb + object",
+    "explanation": "'Get to grips with' significa empezar a comprender y manejar algo complejo."
+  },
+  {
+    "id": "reord-pv-c1-017",
+    "sentence": "The new evidence sheds light on the cause of the incident",
+    "words": [
+      "The",
+      "new",
+      "evidence",
+      "sheds",
+      "light",
+      "on",
+      "the",
+      "cause",
+      "of",
+      "the",
+      "incident"
+    ],
+    "hint": "Subject + phrasal verb + object",
+    "explanation": "'Shed light on' significa aclarar o explicar algo."
+  },
+  {
+    "id": "reord-pv-c1-018",
+    "sentence": "It took her years to come to terms with the loss",
+    "words": ["It", "took", "her", "years", "to", "come", "to", "terms", "with", "the", "loss"],
+    "hint": "It + verb + object + infinitive + phrasal verb + object",
+    "explanation": "'Come to terms with' significa aceptar algo difícil emocionalmente."
+  },
+  {
+    "id": "reord-pv-c1-019",
+    "sentence": "The committee will weigh up the pros and cons before deciding",
+    "words": [
+      "The",
+      "committee",
+      "will",
+      "weigh",
+      "up",
+      "the",
+      "pros",
+      "and",
+      "cons",
+      "before",
+      "deciding"
+    ],
+    "alternativeOrders": [
+      [
+        "The",
+        "committee",
+        "will",
+        "weigh",
+        "the",
+        "pros",
+        "and",
+        "cons",
+        "up",
+        "before",
+        "deciding"
+      ]
+    ],
+    "hint": "Subject + modal + phrasal verb + object + time clause",
+    "explanation": "'Weigh up' significa sopesar o evaluar cuidadosamente. Es separable."
+  },
+  {
+    "id": "reord-pv-c1-020",
+    "sentence": "The film failed to live up to expectations",
+    "words": ["The", "film", "failed", "to", "live", "up", "to", "expectations"],
+    "hint": "Subject + verb + infinitive + phrasal verb + object",
+    "explanation": "'Live up to' significa estar a la altura de algo esperado."
   }
 ]

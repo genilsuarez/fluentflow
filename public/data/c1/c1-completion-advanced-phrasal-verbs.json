@@ -136,5 +136,65 @@
     "explanation": "El phrasal verb <pull off> significa lograr algo difícil.",
     "tip": "The team achieved a remarkable victory against the odds.",
     "showPlaceholder": false
+  },
+  {
+    "sentence": "The outcome hinges ___ a single decision.",
+    "correct": "on",
+    "explanation": "El phrasal verb <hinge on> significa depender de algo.",
+    "tip": "Partícula de <hinge>: depender de algo"
+  },
+  {
+    "sentence": "The board continues to grapple ___ the crisis.",
+    "correct": "with",
+    "explanation": "El phrasal verb <grapple with> significa lidiar con un tema complejo.",
+    "tip": "Partícula de <grapple>: lidiar con un tema complejo"
+  },
+  {
+    "sentence": "The critic singled ___ one performance for praise.",
+    "correct": "out",
+    "explanation": "El phrasal verb <single out> significa seleccionar de un grupo.",
+    "tip": "Partícula de <single>: seleccionar de un grupo"
+  },
+  {
+    "sentence": "The speech touched ___ several sensitive topics.",
+    "correct": "on",
+    "explanation": "El phrasal verb <touch on> significa mencionar brevemente.",
+    "tip": "Partícula de <touch>: mencionar brevemente"
+  },
+  {
+    "sentence": "The report calls ___ urgent action.",
+    "correct": "for",
+    "explanation": "El phrasal verb <call for> significa exigir o requerir algo.",
+    "tip": "Partícula de <call>: exigir o requerir algo"
+  },
+  {
+    "sentence": "Investigators have not ruled ___ foul play.",
+    "correct": "out",
+    "explanation": "El phrasal verb <rule out> significa descartar una posibilidad.",
+    "tip": "Partícula de <rule>: descartar una posibilidad"
+  },
+  {
+    "sentence": "The results bear ___ our initial hypothesis.",
+    "correct": "out",
+    "explanation": "El phrasal verb <bear out> significa confirmar o corroborar.",
+    "tip": "Partícula de <bear>: confirmar o corroborar"
+  },
+  {
+    "sentence": "Officials promised to look ___ the allegations.",
+    "correct": "into",
+    "explanation": "El phrasal verb <look into> significa investigar algo.",
+    "tip": "Partícula de <look>: investigar algo"
+  },
+  {
+    "sentence": "The jury needs to weigh ___ all the evidence.",
+    "correct": "up",
+    "explanation": "El phrasal verb <weigh up> significa sopesar cuidadosamente.",
+    "tip": "Partícula de <weigh>: sopesar cuidadosamente"
+  },
+  {
+    "sentence": "The judges narrowed ___ the shortlist to five names.",
+    "correct": "down",
+    "explanation": "El phrasal verb <narrow down> significa reducir opciones.",
+    "tip": "Partícula de <narrow>: reducir opciones"
   }
 ]

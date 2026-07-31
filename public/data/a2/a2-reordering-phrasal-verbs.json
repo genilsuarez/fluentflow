@@ -2,205 +2,83 @@
   {
     "id": "reord-pv-a2-001",
     "sentence": "She brought up an interesting topic at the meeting",
-    "words": [
-      "She",
-      "brought",
-      "up",
-      "an",
-      "interesting",
-      "topic",
-      "at",
-      "the",
-      "meeting"
-    ],
+    "words": ["She", "brought", "up", "an", "interesting", "topic", "at", "the", "meeting"],
     "alternativeOrders": [
       ["She", "brought", "an", "interesting", "topic", "up", "at", "the", "meeting"]
     ],
-    "distractors": [
-      "bringed"
-    ],
+    "distractors": ["bringed"],
     "hint": "Subject + phrasal verb (past) + object + place",
     "explanation": "'Bring up' significa mencionar. Pasado: 'brought up'. Es separable: 'brought an interesting topic up' también es correcto."
   },
   {
     "id": "reord-pv-a2-002",
     "sentence": "We need to check in at the hotel before noon",
-    "words": [
-      "We",
-      "need",
-      "to",
-      "check",
-      "in",
-      "at",
-      "the",
-      "hotel",
-      "before",
-      "noon"
-    ],
+    "words": ["We", "need", "to", "check", "in", "at", "the", "hotel", "before", "noon"],
     "explanation": "'Check in' significa registrarse en un hotel. 'Need to' va seguido de la forma base."
   },
   {
     "id": "reord-pv-a2-003",
     "sentence": "He found out the truth about the accident yesterday",
-    "words": [
-      "He",
-      "found",
-      "out",
-      "the",
-      "truth",
-      "about",
-      "the",
-      "accident",
-      "yesterday"
-    ],
-    "distractors": [
-      "finded"
-    ],
+    "words": ["He", "found", "out", "the", "truth", "about", "the", "accident", "yesterday"],
+    "distractors": ["finded"],
     "hint": "Past tense of 'find out' is 'found out'",
     "explanation": "'Find out' significa descubrir. Pasado: 'found out' (irregular). 'Finded' no existe."
   },
   {
     "id": "reord-pv-a2-004",
     "sentence": "They get along very well with their neighbours",
-    "words": [
-      "They",
-      "get",
-      "along",
-      "very",
-      "well",
-      "with",
-      "their",
-      "neighbours"
-    ],
-    "distractors": [
-      "gets"
-    ],
+    "words": ["They", "get", "along", "very", "well", "with", "their", "neighbours"],
+    "distractors": ["gets"],
     "explanation": "'Get along' significa tener una buena relación. Con 'they' se usa 'get', no 'gets'."
   },
   {
     "id": "reord-pv-a2-005",
     "sentence": "I have already filled in the application form",
-    "words": [
-      "I",
-      "have",
-      "already",
-      "filled",
-      "in",
-      "the",
-      "application",
-      "form"
-    ],
-    "alternativeOrders": [
-      ["I", "have", "already", "filled", "the", "application", "form", "in"]
-    ],
+    "words": ["I", "have", "already", "filled", "in", "the", "application", "form"],
+    "alternativeOrders": [["I", "have", "already", "filled", "the", "application", "form", "in"]],
     "hint": "Present perfect: have + already + past participle",
     "explanation": "'Fill in' significa completar un formulario. Es separable: 'filled the application form in' también es correcto."
   },
   {
     "id": "reord-pv-a2-006",
     "sentence": "She gave up smoking two years ago",
-    "words": [
-      "She",
-      "gave",
-      "up",
-      "smoking",
-      "two",
-      "years",
-      "ago"
-    ],
-    "distractors": [
-      "gived"
-    ],
+    "words": ["She", "gave", "up", "smoking", "two", "years", "ago"],
+    "distractors": ["gived"],
     "hint": "Past tense of 'give up' is 'gave up'",
     "explanation": "'Give up' significa dejar de hacer algo. Pasado: 'gave up' (irregular)."
   },
   {
     "id": "reord-pv-a2-007",
     "sentence": "Can you look after the children this afternoon",
-    "words": [
-      "Can",
-      "you",
-      "look",
-      "after",
-      "the",
-      "children",
-      "this",
-      "afternoon"
-    ],
+    "words": ["Can", "you", "look", "after", "the", "children", "this", "afternoon"],
     "explanation": "'Look after' significa cuidar de. Las preguntas con 'can' empiezan con el modal."
   },
   {
     "id": "reord-pv-a2-008",
     "sentence": "He ran into his old friend at the supermarket",
-    "words": [
-      "He",
-      "ran",
-      "into",
-      "his",
-      "old",
-      "friend",
-      "at",
-      "the",
-      "supermarket"
-    ],
-    "distractors": [
-      "runned"
-    ],
+    "words": ["He", "ran", "into", "his", "old", "friend", "at", "the", "supermarket"],
+    "distractors": ["runned"],
     "explanation": "'Run into' significa encontrarse con alguien por casualidad. Pasado: 'ran into' (irregular). 'Runned' no existe."
   },
   {
     "id": "reord-pv-a2-009",
     "sentence": "We have to clean up the kitchen after dinner",
-    "words": [
-      "We",
-      "have",
-      "to",
-      "clean",
-      "up",
-      "the",
-      "kitchen",
-      "after",
-      "dinner"
-    ],
-    "alternativeOrders": [
-      ["We", "have", "to", "clean", "the", "kitchen", "up", "after", "dinner"]
-    ],
+    "words": ["We", "have", "to", "clean", "up", "the", "kitchen", "after", "dinner"],
+    "alternativeOrders": [["We", "have", "to", "clean", "the", "kitchen", "up", "after", "dinner"]],
     "hint": "have to + base form of phrasal verb",
     "explanation": "'Clean up' significa ordenar. Es separable: 'clean the kitchen up' también es correcto."
   },
   {
     "id": "reord-pv-a2-010",
     "sentence": "They carried on working until midnight last Friday",
-    "words": [
-      "They",
-      "carried",
-      "on",
-      "working",
-      "until",
-      "midnight",
-      "last",
-      "Friday"
-    ],
-    "distractors": [
-      "carryed"
-    ],
+    "words": ["They", "carried", "on", "working", "until", "midnight", "last", "Friday"],
+    "distractors": ["carryed"],
     "explanation": "'Carry on' significa continuar. Pasado: 'carried on' (regular, y→ied). 'Carryed' es incorrecto."
   },
   {
     "id": "reord-pv-a2-011",
     "sentence": "We had to put off the meeting until next week",
-    "words": [
-      "We",
-      "had",
-      "to",
-      "put",
-      "off",
-      "the",
-      "meeting",
-      "until",
-      "next",
-      "week"
-    ],
+    "words": ["We", "had", "to", "put", "off", "the", "meeting", "until", "next", "week"],
     "alternativeOrders": [
       ["We", "had", "to", "put", "the", "meeting", "off", "until", "next", "week"]
     ],
@@ -210,73 +88,68 @@
   {
     "id": "reord-pv-a2-012",
     "sentence": "She turned up late for the interview again",
-    "words": [
-      "She",
-      "turned",
-      "up",
-      "late",
-      "for",
-      "the",
-      "interview",
-      "again"
-    ],
+    "words": ["She", "turned", "up", "late", "for", "the", "interview", "again"],
     "hint": "Subject + phrasal verb + adverb + prepositional phrase",
     "explanation": "'Turn up' significa llegar a algún lugar, a menudo de forma inesperada o tarde."
   },
   {
     "id": "reord-pv-a2-013",
     "sentence": "He did not show up for the party last night",
-    "words": [
-      "He",
-      "did",
-      "not",
-      "show",
-      "up",
-      "for",
-      "the",
-      "party",
-      "last",
-      "night"
-    ],
+    "words": ["He", "did", "not", "show", "up", "for", "the", "party", "last", "night"],
     "hint": "Subject + negative + phrasal verb + prepositional phrase",
     "explanation": "'Show up' significa llegar o aparecer en un evento."
   },
   {
     "id": "reord-pv-a2-014",
     "sentence": "She turned down the job offer politely",
-    "words": [
-      "She",
-      "turned",
-      "down",
-      "the",
-      "job",
-      "offer",
-      "politely"
-    ],
-    "alternativeOrders": [
-      ["She", "turned", "the", "job", "offer", "down", "politely"]
-    ],
+    "words": ["She", "turned", "down", "the", "job", "offer", "politely"],
+    "alternativeOrders": [["She", "turned", "the", "job", "offer", "down", "politely"]],
     "hint": "Subject + phrasal verb + object + adverb",
     "explanation": "'Turn down' significa rechazar algo. Es separable: 'turned the job offer down' también es correcto."
   },
   {
     "id": "reord-pv-a2-015",
     "sentence": "The teacher pointed out several mistakes in my essay",
-    "words": [
-      "The",
-      "teacher",
-      "pointed",
-      "out",
-      "several",
-      "mistakes",
-      "in",
-      "my",
-      "essay"
-    ],
+    "words": ["The", "teacher", "pointed", "out", "several", "mistakes", "in", "my", "essay"],
     "alternativeOrders": [
       ["The", "teacher", "pointed", "several", "mistakes", "out", "in", "my", "essay"]
     ],
     "hint": "Subject + phrasal verb + object + prepositional phrase",
     "explanation": "'Point out' significa señalar algo. Es separable: 'pointed several mistakes out' también es correcto."
+  },
+  {
+    "id": "reord-pv-a2-016",
+    "sentence": "Please hold on while I check the schedule",
+    "words": ["Please", "hold", "on", "while", "I", "check", "the", "schedule"],
+    "hint": "Imperative + phrasal verb + subordinate clause",
+    "explanation": "'Hold on' significa esperar un momento. No es separable."
+  },
+  {
+    "id": "reord-pv-a2-017",
+    "sentence": "I came across an old letter in the attic",
+    "words": ["I", "came", "across", "an", "old", "letter", "in", "the", "attic"],
+    "hint": "Subject + phrasal verb (past) + object + place",
+    "explanation": "'Come across' significa encontrar algo por casualidad. No es separable."
+  },
+  {
+    "id": "reord-pv-a2-018",
+    "sentence": "She kept on practicing until she improved",
+    "words": ["She", "kept", "on", "practicing", "until", "she", "improved"],
+    "hint": "Subject + phrasal verb (past) + gerund",
+    "explanation": "'Keep on' significa continuar haciendo algo. Se usa con gerundio."
+  },
+  {
+    "id": "reord-pv-a2-019",
+    "sentence": "These shoes wore out after a few months",
+    "words": ["These", "shoes", "wore", "out", "after", "a", "few", "months"],
+    "hint": "Subject + phrasal verb (past) + time expression",
+    "explanation": "'Wear out' significa desgastarse. Aquí se usa de forma intransitiva."
+  },
+  {
+    "id": "reord-pv-a2-020",
+    "sentence": "The washing machine broke down last week",
+    "words": ["The", "washing", "machine", "broke", "down", "last", "week"],
+    "hint": "Subject + phrasal verb (past) + time expression",
+    "explanation": "'Break down' significa dejar de funcionar. Pasado irregular: 'broke down'."
   }
 ]

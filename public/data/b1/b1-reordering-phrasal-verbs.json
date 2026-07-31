@@ -2,21 +2,8 @@
   {
     "id": "reord-pv-b1-001",
     "sentence": "The car broke down on the way to the airport",
-    "words": [
-      "The",
-      "car",
-      "broke",
-      "down",
-      "on",
-      "the",
-      "way",
-      "to",
-      "the",
-      "airport"
-    ],
-    "distractors": [
-      "breaked"
-    ],
+    "words": ["The", "car", "broke", "down", "on", "the", "way", "to", "the", "airport"],
+    "distractors": ["breaked"],
     "hint": "Past tense of 'break down' is 'broke down'",
     "explanation": "'Break down' significa dejar de funcionar. Pasado: 'broke down' (irregular). 'Breaked' no existe."
   },
@@ -56,9 +43,7 @@
       "the",
       "attic"
     ],
-    "distractors": [
-      "comed"
-    ],
+    "distractors": ["comed"],
     "explanation": "'Come across' significa encontrar algo por casualidad. Pasado: 'came across'. 'While' + gerundio para acciones simultáneas."
   },
   {
@@ -84,74 +69,29 @@
   {
     "id": "reord-pv-b1-005",
     "sentence": "I need to figure out how to solve this problem",
-    "words": [
-      "I",
-      "need",
-      "to",
-      "figure",
-      "out",
-      "how",
-      "to",
-      "solve",
-      "this",
-      "problem"
-    ],
+    "words": ["I", "need", "to", "figure", "out", "how", "to", "solve", "this", "problem"],
     "explanation": "'Figure out' significa entender o resolver. 'How to' introduce el método."
   },
   {
     "id": "reord-pv-b1-006",
     "sentence": "He hung up the phone without saying goodbye",
-    "words": [
-      "He",
-      "hung",
-      "up",
-      "the",
-      "phone",
-      "without",
-      "saying",
-      "goodbye"
-    ],
-    "alternativeOrders": [
-      ["He", "hung", "the", "phone", "up", "without", "saying", "goodbye"]
-    ],
-    "distractors": [
-      "hanged"
-    ],
+    "words": ["He", "hung", "up", "the", "phone", "without", "saying", "goodbye"],
+    "alternativeOrders": [["He", "hung", "the", "phone", "up", "without", "saying", "goodbye"]],
+    "distractors": ["hanged"],
     "hint": "Past tense of 'hang up' is 'hung up'",
     "explanation": "'Hang up' significa colgar el teléfono. Pasado: 'hung up'. Es separable: 'hung the phone up' también es correcto."
   },
   {
     "id": "reord-pv-b1-007",
     "sentence": "We are looking forward to meeting you next week",
-    "words": [
-      "We",
-      "are",
-      "looking",
-      "forward",
-      "to",
-      "meeting",
-      "you",
-      "next",
-      "week"
-    ],
+    "words": ["We", "are", "looking", "forward", "to", "meeting", "you", "next", "week"],
     "hint": "'Look forward to' is followed by a gerund",
     "explanation": "'Look forward to' significa esperar algo con ilusión. Aquí 'to' es una preposición, así que va seguido de un gerundio."
   },
   {
     "id": "reord-pv-b1-008",
     "sentence": "The teacher told the students to hand in their essays",
-    "words": [
-      "The",
-      "teacher",
-      "told",
-      "the",
-      "students",
-      "to",
-      "hand",
-      "in",
-      "their",
-      "essays"
-    ],
+    "words": ["The", "teacher", "told", "the", "students", "to", "hand", "in", "their", "essays"],
     "alternativeOrders": [
       ["The", "teacher", "told", "the", "students", "to", "hand", "their", "essays", "in"]
     ],
@@ -160,17 +100,7 @@
   {
     "id": "reord-pv-b1-009",
     "sentence": "She has been putting off the decision for months",
-    "words": [
-      "She",
-      "has",
-      "been",
-      "putting",
-      "off",
-      "the",
-      "decision",
-      "for",
-      "months"
-    ],
+    "words": ["She", "has", "been", "putting", "off", "the", "decision", "for", "months"],
     "alternativeOrders": [
       ["She", "has", "been", "putting", "the", "decision", "off", "for", "months"]
     ],
@@ -180,87 +110,38 @@
   {
     "id": "reord-pv-b1-010",
     "sentence": "They set up a new company in London last year",
-    "words": [
-      "They",
-      "set",
-      "up",
-      "a",
-      "new",
-      "company",
-      "in",
-      "London",
-      "last",
-      "year"
-    ],
+    "words": ["They", "set", "up", "a", "new", "company", "in", "London", "last", "year"],
     "alternativeOrders": [
       ["They", "set", "a", "new", "company", "up", "in", "London", "last", "year"]
     ],
-    "distractors": [
-      "setted"
-    ],
+    "distractors": ["setted"],
     "explanation": "'Set up' significa establecer o montar. Pasado: 'set up' (misma forma). Es separable: 'set a new company up' también es correcto."
   },
   {
     "id": "reord-pv-b1-011",
     "sentence": "It took her months to get over the flu",
-    "words": [
-      "It",
-      "took",
-      "her",
-      "months",
-      "to",
-      "get",
-      "over",
-      "the",
-      "flu"
-    ],
+    "words": ["It", "took", "her", "months", "to", "get", "over", "the", "flu"],
     "hint": "Subject + verb + infinitive + phrasal verb + object",
     "explanation": "'Get over' significa recuperarse de una enfermedad o de una experiencia difícil."
   },
   {
     "id": "reord-pv-b1-012",
     "sentence": "We ran out of milk this morning",
-    "words": [
-      "We",
-      "ran",
-      "out",
-      "of",
-      "milk",
-      "this",
-      "morning"
-    ],
+    "words": ["We", "ran", "out", "of", "milk", "this", "morning"],
     "hint": "Subject + phrasal verb + object + time expression",
     "explanation": "'Run out of' significa quedarse sin algo."
   },
   {
     "id": "reord-pv-b1-013",
     "sentence": "The police are looking into the missing car",
-    "words": [
-      "The",
-      "police",
-      "are",
-      "looking",
-      "into",
-      "the",
-      "missing",
-      "car"
-    ],
+    "words": ["The", "police", "are", "looking", "into", "the", "missing", "car"],
     "hint": "Subject + phrasal verb + object",
     "explanation": "'Look into' significa investigar algo."
   },
   {
     "id": "reord-pv-b1-014",
     "sentence": "She takes after her mother in many ways",
-    "words": [
-      "She",
-      "takes",
-      "after",
-      "her",
-      "mother",
-      "in",
-      "many",
-      "ways"
-    ],
+    "words": ["She", "takes", "after", "her", "mother", "in", "many", "ways"],
     "hint": "Subject + phrasal verb + object + prepositional phrase",
     "explanation": "'Take after' significa parecerse a un familiar en aspecto o carácter."
   },
@@ -282,5 +163,40 @@
     ],
     "hint": "Subject + verb + infinitive + phrasal verb + object",
     "explanation": "'Go through with' significa completar una acción aunque sea difícil o arriesgada."
+  },
+  {
+    "id": "reord-pv-b1-016",
+    "sentence": "The team carried out a detailed investigation",
+    "words": ["The", "team", "carried", "out", "a", "detailed", "investigation"],
+    "hint": "Subject + phrasal verb (past) + object",
+    "explanation": "'Carry out' significa realizar o llevar a cabo. Es separable pero suele usarse junto."
+  },
+  {
+    "id": "reord-pv-b1-017",
+    "sentence": "We need to deal with this problem immediately",
+    "words": ["We", "need", "to", "deal", "with", "this", "problem", "immediately"],
+    "hint": "Subject + verb + infinitive + phrasal verb + object",
+    "explanation": "'Deal with' significa ocuparse de algo. No es separable."
+  },
+  {
+    "id": "reord-pv-b1-018",
+    "sentence": "You can always count on your best friend",
+    "words": ["You", "can", "always", "count", "on", "your", "best", "friend"],
+    "hint": "Subject + modal + adverb + phrasal verb + object",
+    "explanation": "'Count on' significa confiar en alguien. No es separable."
+  },
+  {
+    "id": "reord-pv-b1-019",
+    "sentence": "He finally gave in to their demands",
+    "words": ["He", "finally", "gave", "in", "to", "their", "demands"],
+    "hint": "Subject + adverb + phrasal verb (past) + object",
+    "explanation": "'Give in' significa ceder o rendirse. No es separable."
+  },
+  {
+    "id": "reord-pv-b1-020",
+    "sentence": "Young players look up to famous athletes",
+    "words": ["Young", "players", "look", "up", "to", "famous", "athletes"],
+    "hint": "Subject + phrasal verb + object",
+    "explanation": "'Look up to' significa admirar a alguien. No es separable."
   }
 ]

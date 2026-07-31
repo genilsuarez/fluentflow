@@ -19,22 +19,8 @@
   {
     "id": "reord-pv-b2-002",
     "sentence": "She needs to brush up on her French before the trip",
-    "words": [
-      "She",
-      "needs",
-      "to",
-      "brush",
-      "up",
-      "on",
-      "her",
-      "French",
-      "before",
-      "the",
-      "trip"
-    ],
-    "distractors": [
-      "need"
-    ],
+    "words": ["She", "needs", "to", "brush", "up", "on", "her", "French", "before", "the", "trip"],
+    "distractors": ["need"],
     "hint": "Third person singular: needs to + base form",
     "explanation": "'Brush up on' significa repasar y mejorar. Con 'she', se usa 'needs', no 'need'."
   },
@@ -73,9 +59,7 @@
     "alternativeOrders": [
       ["The", "analyst", "broke", "the", "data", "down", "into", "three", "main", "categories"]
     ],
-    "distractors": [
-      "breaked"
-    ],
+    "distractors": ["breaked"],
     "explanation": "'Break down' significa analizar por partes. Pasado: 'broke down'. Es separable: 'broke the data down' también es correcto."
   },
   {
@@ -119,24 +103,29 @@
       "year"
     ],
     "alternativeOrders": [
-      ["The", "company", "is", "phasing", "the", "old", "software", "out", "by", "the", "end", "of", "the", "year"]
+      [
+        "The",
+        "company",
+        "is",
+        "phasing",
+        "the",
+        "old",
+        "software",
+        "out",
+        "by",
+        "the",
+        "end",
+        "of",
+        "the",
+        "year"
+      ]
     ],
     "explanation": "'Phase out' significa dejar de usar algo gradualmente. Es separable: 'phasing the old software out' también es correcto."
   },
   {
     "id": "reord-pv-b2-007",
     "sentence": "She talked him into applying for the management position",
-    "words": [
-      "She",
-      "talked",
-      "him",
-      "into",
-      "applying",
-      "for",
-      "the",
-      "management",
-      "position"
-    ],
+    "words": ["She", "talked", "him", "into", "applying", "for", "the", "management", "position"],
     "hint": "Talk someone into + gerund",
     "explanation": "'Talk someone into' significa persuadir. 'Into' va seguido de un gerundio."
   },
@@ -163,21 +152,8 @@
   {
     "id": "reord-pv-b2-009",
     "sentence": "The CEO stepped down after the scandal came to light",
-    "words": [
-      "The",
-      "CEO",
-      "stepped",
-      "down",
-      "after",
-      "the",
-      "scandal",
-      "came",
-      "to",
-      "light"
-    ],
-    "distractors": [
-      "comed"
-    ],
+    "words": ["The", "CEO", "stepped", "down", "after", "the", "scandal", "came", "to", "light"],
+    "distractors": ["comed"],
     "explanation": "'Step down' significa renunciar. 'Come to light' significa salir a la luz. Ambos en pasado."
   },
   {
@@ -206,85 +182,83 @@
   {
     "id": "reord-pv-b2-011",
     "sentence": "The team came up with a brilliant solution overnight",
-    "words": [
-      "The",
-      "team",
-      "came",
-      "up",
-      "with",
-      "a",
-      "brilliant",
-      "solution",
-      "overnight"
-    ],
+    "words": ["The", "team", "came", "up", "with", "a", "brilliant", "solution", "overnight"],
     "hint": "Subject + phrasal verb + object + time expression",
     "explanation": "'Come up with' significa idear un plan o una solución."
   },
   {
     "id": "reord-pv-b2-012",
     "sentence": "He thought he could get away with the mistake",
-    "words": [
-      "He",
-      "thought",
-      "he",
-      "could",
-      "get",
-      "away",
-      "with",
-      "the",
-      "mistake"
-    ],
+    "words": ["He", "thought", "he", "could", "get", "away", "with", "the", "mistake"],
     "hint": "Subject + verb + modal + phrasal verb + object",
     "explanation": "'Get away with' significa evitar el castigo o las consecuencias de algo indebido."
   },
   {
     "id": "reord-pv-b2-013",
     "sentence": "She never looks down on her colleagues",
-    "words": [
-      "She",
-      "never",
-      "looks",
-      "down",
-      "on",
-      "her",
-      "colleagues"
-    ],
+    "words": ["She", "never", "looks", "down", "on", "her", "colleagues"],
     "hint": "Subject + adverb + phrasal verb + object",
     "explanation": "'Look down on' significa considerar a alguien inferior."
   },
   {
     "id": "reord-pv-b2-014",
     "sentence": "Extra training will make up for the lost time",
-    "words": [
-      "Extra",
-      "training",
-      "will",
-      "make",
-      "up",
-      "for",
-      "the",
-      "lost",
-      "time"
-    ],
+    "words": ["Extra", "training", "will", "make", "up", "for", "the", "lost", "time"],
     "hint": "Subject + will + phrasal verb + object",
     "explanation": "'Make up for' significa compensar algo."
   },
   {
     "id": "reord-pv-b2-015",
     "sentence": "They refused to settle for anything less than the best",
-    "words": [
-      "They",
-      "refused",
-      "to",
-      "settle",
-      "for",
-      "anything",
-      "less",
-      "than",
-      "the",
-      "best"
-    ],
+    "words": ["They", "refused", "to", "settle", "for", "anything", "less", "than", "the", "best"],
     "hint": "Subject + verb + infinitive + phrasal verb + object",
     "explanation": "'Settle for' significa conformarse con algo menos de lo que originalmente se quería."
+  },
+  {
+    "id": "reord-pv-b2-016",
+    "sentence": "She spent the weekend catching up on her reading",
+    "words": ["She", "spent", "the", "weekend", "catching", "up", "on", "her", "reading"],
+    "hint": "Subject + verb + object + gerund phrase",
+    "explanation": "'Catch up on' significa ponerse al día con algo. No es separable."
+  },
+  {
+    "id": "reord-pv-b2-017",
+    "sentence": "The company decided to cut back on unnecessary spending",
+    "words": ["The", "company", "decided", "to", "cut", "back", "on", "unnecessary", "spending"],
+    "hint": "Subject + verb + infinitive + phrasal verb + object",
+    "explanation": "'Cut back on' significa reducir algo. No es separable."
+  },
+  {
+    "id": "reord-pv-b2-018",
+    "sentence": "I couldn't make out what he was saying over the noise",
+    "words": [
+      "I",
+      "couldn't",
+      "make",
+      "out",
+      "what",
+      "he",
+      "was",
+      "saying",
+      "over",
+      "the",
+      "noise"
+    ],
+    "hint": "Subject + modal (negative) + phrasal verb + clause",
+    "explanation": "'Make out' significa lograr entender o distinguir algo. Es separable."
+  },
+  {
+    "id": "reord-pv-b2-019",
+    "sentence": "She is expected to take over the company next year",
+    "words": ["She", "is", "expected", "to", "take", "over", "the", "company", "next", "year"],
+    "hint": "Subject + verb + infinitive + phrasal verb + object",
+    "explanation": "'Take over' significa asumir el control de algo. Es separable."
+  },
+  {
+    "id": "reord-pv-b2-020",
+    "sentence": "He came across as very confident during the interview",
+    "words": ["He", "came", "across", "as", "very", "confident", "during", "the", "interview"],
+    "hint": "Subject + three-word phrasal verb + adjective",
+    "explanation": "'Come across as' significa dar una impresión determinada. No es separable."
   }
 ]

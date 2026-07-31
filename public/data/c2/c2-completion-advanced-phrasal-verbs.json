@@ -138,5 +138,65 @@
     "explanation": "To <square with> significa ser coherente con algo o concordar con ello.",
     "tip": "The context tells you whether this is active or passive.",
     "showPlaceholder": false
+  },
+  {
+    "sentence": "Years of criticism chipped ___ at his confidence.",
+    "correct": "away",
+    "explanation": "El phrasal verb <chip away> significa debilitar poco a poco.",
+    "tip": "Partícula de <chip>: debilitar poco a poco"
+  },
+  {
+    "sentence": "Investigators zeroed ___ on the suspect's alibi.",
+    "correct": "in",
+    "explanation": "El phrasal verb <zero in> significa concentrarse específicamente en algo.",
+    "tip": "Partícula de <zero>: concentrarse específicamente en algo"
+  },
+  {
+    "sentence": "Researchers tried to tease ___ the underlying causes.",
+    "correct": "out",
+    "explanation": "El phrasal verb <tease out> significa identificar algo complejo con esfuerzo.",
+    "tip": "Partícula de <tease>: identificar algo complejo con esfuerzo"
+  },
+  {
+    "sentence": "She has never shied ___ from controversy.",
+    "correct": "away",
+    "explanation": "El phrasal verb <shy away> significa evitar algo por temor.",
+    "tip": "Partícula de <shy>: evitar algo por temor"
+  },
+  {
+    "sentence": "The new theory builds ___ decades of prior research.",
+    "correct": "on",
+    "explanation": "El phrasal verb <build on> significa basarse en algo existente.",
+    "tip": "Partícula de <build>: basarse en algo existente"
+  },
+  {
+    "sentence": "He tried to pass ___ the copy as an original.",
+    "correct": "off",
+    "explanation": "El phrasal verb <pass off> significa hacer pasar algo por otra cosa.",
+    "tip": "Partícula de <pass>: hacer pasar algo por otra cosa"
+  },
+  {
+    "sentence": "They roped ___ several volunteers for the campaign.",
+    "correct": "in",
+    "explanation": "El phrasal verb <rope in> significa persuadir a alguien para participar.",
+    "tip": "Partícula de <rope>: persuadir a alguien para participar"
+  },
+  {
+    "sentence": "The negotiations wound ___ lasting far longer than expected.",
+    "correct": "up",
+    "explanation": "El phrasal verb <wind up> significa terminar o concluir.",
+    "tip": "Partícula de <wind>: terminar o concluir"
+  },
+  {
+    "sentence": "Negotiators refused to hold ___ any longer.",
+    "correct": "out",
+    "explanation": "El phrasal verb <hold out> significa resistir o aguantar.",
+    "tip": "Partícula de <hold>: resistir o aguantar"
+  },
+  {
+    "sentence": "The committee aims to weed ___ unqualified applicants.",
+    "correct": "out",
+    "explanation": "El phrasal verb <weed out> significa eliminar lo no deseado.",
+    "tip": "Partícula de <weed>: eliminar lo no deseado"
   }
 ]

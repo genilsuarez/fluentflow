@@ -61,9 +61,7 @@
       "cognitive",
       "development"
     ],
-    "distractors": [
-      "set"
-    ],
+    "distractors": ["set"],
     "explanation": "'Set out to' significa tener la intención de o proponerse. Presente con sujeto singular: 'sets out'."
   },
   {
@@ -129,7 +127,22 @@
       "phenomena"
     ],
     "alternativeOrders": [
-      ["Only", "through", "sustained", "inquiry", "can", "scholars", "tease", "the", "nuances", "out", "of", "such", "complex", "phenomena"]
+      [
+        "Only",
+        "through",
+        "sustained",
+        "inquiry",
+        "can",
+        "scholars",
+        "tease",
+        "the",
+        "nuances",
+        "out",
+        "of",
+        "such",
+        "complex",
+        "phenomena"
+      ]
     ],
     "hint": "Inversion after 'Only through'",
     "explanation": "'Tease out' significa extraer con cuidado. Es separable: 'tease the nuances out' también es correcto. 'Only through' provoca inversión."
@@ -174,9 +187,7 @@
       "unified",
       "theory"
     ],
-    "distractors": [
-      "build"
-    ],
+    "distractors": ["build"],
     "explanation": "'Build on' significa usar como base. 'Put forward' significa proponer. Sujeto singular: 'builds'."
   },
   {
@@ -310,5 +321,92 @@
     ],
     "hint": "Subject + phrasal verb + object",
     "explanation": "'Call into question' significa poner en duda algo."
+  },
+  {
+    "id": "reord-pv-c2-016",
+    "sentence": "The findings run counter to previous assumptions in the field",
+    "words": [
+      "The",
+      "findings",
+      "run",
+      "counter",
+      "to",
+      "previous",
+      "assumptions",
+      "in",
+      "the",
+      "field"
+    ],
+    "hint": "Subject + phrasal verb + object",
+    "explanation": "'Run counter to' significa ir en contra de algo establecido."
+  },
+  {
+    "id": "reord-pv-c2-017",
+    "sentence": "Researchers must periodically take stock of the available evidence",
+    "words": [
+      "Researchers",
+      "must",
+      "periodically",
+      "take",
+      "stock",
+      "of",
+      "the",
+      "available",
+      "evidence"
+    ],
+    "hint": "Subject + modal + adverb + phrasal verb + object",
+    "explanation": "'Take stock of' significa evaluar cuidadosamente una situación."
+  },
+  {
+    "id": "reord-pv-c2-018",
+    "sentence": "Sustained criticism gradually chipped away at public confidence",
+    "words": [
+      "Sustained",
+      "criticism",
+      "gradually",
+      "chipped",
+      "away",
+      "at",
+      "public",
+      "confidence"
+    ],
+    "hint": "Subject + adverb + phrasal verb (past) + object",
+    "explanation": "'Chip away at' significa debilitar algo poco a poco."
+  },
+  {
+    "id": "reord-pv-c2-019",
+    "sentence": "The additional data lends credence to the original hypothesis",
+    "words": [
+      "The",
+      "additional",
+      "data",
+      "lends",
+      "credence",
+      "to",
+      "the",
+      "original",
+      "hypothesis"
+    ],
+    "hint": "Subject + phrasal verb + object",
+    "explanation": "'Lend credence to' significa dar credibilidad a algo."
+  },
+  {
+    "id": "reord-pv-c2-020",
+    "sentence": "Ethical concerns have increasingly come to the fore in recent debates",
+    "words": [
+      "Ethical",
+      "concerns",
+      "have",
+      "increasingly",
+      "come",
+      "to",
+      "the",
+      "fore",
+      "in",
+      "recent",
+      "debates"
+    ],
+    "hint": "Subject + present perfect + adverb + phrasal verb + place",
+    "explanation": "'Come to the fore' significa volverse prominente o importante."
   }
 ]

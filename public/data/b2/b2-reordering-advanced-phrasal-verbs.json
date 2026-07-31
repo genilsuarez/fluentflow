@@ -2,18 +2,7 @@
   {
     "id": "reord-b2-apv-001",
     "sentence": "She came up with a brilliant solution to the problem",
-    "words": [
-      "She",
-      "came",
-      "up",
-      "with",
-      "a",
-      "brilliant",
-      "solution",
-      "to",
-      "the",
-      "problem"
-    ],
+    "words": ["She", "came", "up", "with", "a", "brilliant", "solution", "to", "the", "problem"],
     "hint": "Subject + three-word phrasal verb + object",
     "explanation": "<Come up with> significa idear o producir una idea."
   },
@@ -39,18 +28,7 @@
   {
     "id": "reord-b2-apv-003",
     "sentence": "He managed to get away with cheating on the test",
-    "words": [
-      "He",
-      "managed",
-      "to",
-      "get",
-      "away",
-      "with",
-      "cheating",
-      "on",
-      "the",
-      "test"
-    ],
+    "words": ["He", "managed", "to", "get", "away", "with", "cheating", "on", "the", "test"],
     "hint": "Subject + managed to + phrasal verb + gerund",
     "explanation": "<Get away with> significa hacer algo incorrecto sin recibir castigo."
   },
@@ -113,7 +91,21 @@
       "scene"
     ],
     "alternativeOrders": [
-      ["The", "detective", "was", "trying", "to", "piece", "the", "evidence", "together", "from", "the", "crime", "scene"]
+      [
+        "The",
+        "detective",
+        "was",
+        "trying",
+        "to",
+        "piece",
+        "the",
+        "evidence",
+        "together",
+        "from",
+        "the",
+        "crime",
+        "scene"
+      ]
     ],
     "hint": "Subject + was trying to + phrasal verb + object + place",
     "explanation": "<Piece together> significa ir reuniendo información. Es separable: 'piece the evidence together' también es correcto."
@@ -121,17 +113,7 @@
   {
     "id": "reord-b2-apv-007",
     "sentence": "They decided to do away with the old regulations",
-    "words": [
-      "They",
-      "decided",
-      "to",
-      "do",
-      "away",
-      "with",
-      "the",
-      "old",
-      "regulations"
-    ],
+    "words": ["They", "decided", "to", "do", "away", "with", "the", "old", "regulations"],
     "hint": "Subject + decided to + phrasal verb + object",
     "explanation": "<Do away with> significa abolir o eliminar."
   },
@@ -171,7 +153,19 @@
       "2030"
     ],
     "alternativeOrders": [
-      ["The", "government", "plans", "to", "phase", "fossil", "fuel", "subsidies", "out", "by", "2030"]
+      [
+        "The",
+        "government",
+        "plans",
+        "to",
+        "phase",
+        "fossil",
+        "fuel",
+        "subsidies",
+        "out",
+        "by",
+        "2030"
+      ]
     ],
     "hint": "Subject + plans to + phrasal verb + object + time",
     "explanation": "<Phase out> significa eliminar gradualmente. Es separable: 'phase fossil fuel subsidies out' también es correcto."
@@ -231,5 +225,139 @@
     ],
     "hint": "Subject + adverb + phrasal verb + to + gerund",
     "explanation": "<Own up to> significa admitir la responsabilidad de algo."
+  },
+  {
+    "id": "reord-b2-apv-013",
+    "sentence": "Two local charities teamed up with the city council on the project",
+    "words": [
+      "Two",
+      "local",
+      "charities",
+      "teamed",
+      "up",
+      "with",
+      "the",
+      "city",
+      "council",
+      "on",
+      "the",
+      "project"
+    ],
+    "hint": "Subject + three-word phrasal verb + object + prepositional phrase",
+    "explanation": "<Team up with> significa unir fuerzas con alguien."
+  },
+  {
+    "id": "reord-b2-apv-014",
+    "sentence": "The two companies met to iron out the details of the contract",
+    "words": [
+      "The",
+      "two",
+      "companies",
+      "met",
+      "to",
+      "iron",
+      "out",
+      "the",
+      "details",
+      "of",
+      "the",
+      "contract"
+    ],
+    "hint": "Subject + verb + infinitive + phrasal verb + object",
+    "explanation": "<Iron out> significa resolver los últimos detalles de un problema."
+  },
+  {
+    "id": "reord-b2-apv-015",
+    "sentence": "The factory plans to wind down production by the end of the year",
+    "words": [
+      "The",
+      "factory",
+      "plans",
+      "to",
+      "wind",
+      "down",
+      "production",
+      "by",
+      "the",
+      "end",
+      "of",
+      "the",
+      "year"
+    ],
+    "hint": "Subject + verb + infinitive + phrasal verb + object",
+    "explanation": "<Wind down> significa reducir gradualmente una actividad."
+  },
+  {
+    "id": "reord-b2-apv-016",
+    "sentence": "Volunteers stepped up their efforts after the storm",
+    "words": ["Volunteers", "stepped", "up", "their", "efforts", "after", "the", "storm"],
+    "alternativeOrders": [
+      ["Volunteers", "stepped", "their", "efforts", "up", "after", "the", "storm"]
+    ],
+    "hint": "Subject + phrasal verb (past) + object",
+    "explanation": "<Step up> significa aumentar el esfuerzo. Es separable."
+  },
+  {
+    "id": "reord-b2-apv-017",
+    "sentence": "The firm decided to take on three new employees this month",
+    "words": [
+      "The",
+      "firm",
+      "decided",
+      "to",
+      "take",
+      "on",
+      "three",
+      "new",
+      "employees",
+      "this",
+      "month"
+    ],
+    "hint": "Subject + verb + infinitive + phrasal verb + object",
+    "explanation": "<Take on> significa contratar o asumir una responsabilidad."
+  },
+  {
+    "id": "reord-b2-apv-018",
+    "sentence": "Fear of failure held her back from applying for the promotion",
+    "words": [
+      "Fear",
+      "of",
+      "failure",
+      "held",
+      "her",
+      "back",
+      "from",
+      "applying",
+      "for",
+      "the",
+      "promotion"
+    ],
+    "hint": "Subject + phrasal verb (past) + object + prepositional phrase",
+    "explanation": "<Hold back> significa impedir el progreso de alguien."
+  },
+  {
+    "id": "reord-b2-apv-019",
+    "sentence": "The bakery is branching out into online delivery this year",
+    "words": [
+      "The",
+      "bakery",
+      "is",
+      "branching",
+      "out",
+      "into",
+      "online",
+      "delivery",
+      "this",
+      "year"
+    ],
+    "hint": "Subject + present continuous + phrasal verb + prepositional phrase",
+    "explanation": "<Branch out into> significa expandirse hacia una nueva área."
+  },
+  {
+    "id": "reord-b2-apv-020",
+    "sentence": "He fell behind with his rent after losing his job",
+    "words": ["He", "fell", "behind", "with", "his", "rent", "after", "losing", "his", "job"],
+    "hint": "Subject + phrasal verb (past) + prepositional phrase",
+    "explanation": "<Fall behind with> significa atrasarse en un pago u obligación."
   }
 ]

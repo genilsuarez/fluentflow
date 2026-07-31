@@ -138,5 +138,65 @@
     "explanation": "El phrasal verb <throw away> o <throw out> significa desechar algo.",
     "tip": "Get rid of the old shoes — discard them.",
     "showPlaceholder": false
+  },
+  {
+    "sentence": "She needs to look ___ the word in the dictionary.",
+    "correct": "up",
+    "explanation": "El phrasal verb <look up> significa buscar información.",
+    "tip": "Partícula de <look>: buscar información"
+  },
+  {
+    "sentence": "He refuses to give ___ even when things get hard.",
+    "correct": "up",
+    "explanation": "El phrasal verb <give up> significa rendirse.",
+    "tip": "Partícula de <give>: rendirse"
+  },
+  {
+    "sentence": "Students must hand ___ their essays by Friday.",
+    "correct": "in",
+    "explanation": "El phrasal verb <hand in> significa entregar un trabajo.",
+    "tip": "Partícula de <hand>: entregar un trabajo"
+  },
+  {
+    "sentence": "They plan to set ___ a new office in Madrid.",
+    "correct": "up",
+    "explanation": "El phrasal verb <set up> significa establecer algo nuevo.",
+    "tip": "Partícula de <set>: establecer algo nuevo"
+  },
+  {
+    "sentence": "She decided to turn ___ the offer.",
+    "correct": "down",
+    "explanation": "El phrasal verb <turn down> significa rechazar algo.",
+    "tip": "Partícula de <turn>: rechazar algo"
+  },
+  {
+    "sentence": "Despite the rain, they carried ___ with the match.",
+    "correct": "on",
+    "explanation": "El phrasal verb <carry on> significa continuar haciendo algo.",
+    "tip": "Partícula de <carry>: continuar haciendo algo"
+  },
+  {
+    "sentence": "He pointed ___ a mistake in the report.",
+    "correct": "out",
+    "explanation": "El phrasal verb <point out> significa señalar algo.",
+    "tip": "Partícula de <point>: señalar algo"
+  },
+  {
+    "sentence": "Can you clean ___ the kitchen, please?",
+    "correct": "up",
+    "explanation": "El phrasal verb <clean up> significa limpiar y ordenar.",
+    "tip": "Partícula de <clean>: limpiar y ordenar"
+  },
+  {
+    "sentence": "We checked ___ at the hotel late.",
+    "correct": "in",
+    "explanation": "El phrasal verb <check in> significa registrarse en un hotel.",
+    "tip": "Partícula de <check>: registrarse en un hotel"
+  },
+  {
+    "sentence": "Hold ___ a moment while I check.",
+    "correct": "on",
+    "explanation": "El phrasal verb <hold on> significa esperar un momento.",
+    "tip": "Partícula de <hold>: esperar un momento"
   }
 ]

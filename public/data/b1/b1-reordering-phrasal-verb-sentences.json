@@ -2,73 +2,30 @@
   {
     "id": "reord-b1-pv-001",
     "sentence": "She looked up the word in the dictionary",
-    "words": [
-      "She",
-      "looked",
-      "up",
-      "the",
-      "word",
-      "in",
-      "the",
-      "dictionary"
-    ],
-    "alternativeOrders": [
-      ["She", "looked", "the", "word", "up", "in", "the", "dictionary"]
-    ],
+    "words": ["She", "looked", "up", "the", "word", "in", "the", "dictionary"],
+    "alternativeOrders": [["She", "looked", "the", "word", "up", "in", "the", "dictionary"]],
     "hint": "Subject + phrasal verb + object + place",
     "explanation": "<Look up> significa buscar información. Es separable: 'looked the word up' también es correcto."
   },
   {
     "id": "reord-b1-pv-002",
     "sentence": "He came across an old photo in the drawer",
-    "words": [
-      "He",
-      "came",
-      "across",
-      "an",
-      "old",
-      "photo",
-      "in",
-      "the",
-      "drawer"
-    ],
+    "words": ["He", "came", "across", "an", "old", "photo", "in", "the", "drawer"],
     "hint": "Subject + phrasal verb + object + place",
     "explanation": "<Come across> significa encontrar algo por casualidad."
   },
   {
     "id": "reord-b1-pv-003",
     "sentence": "They put off the meeting until next Monday",
-    "words": [
-      "They",
-      "put",
-      "off",
-      "the",
-      "meeting",
-      "until",
-      "next",
-      "Monday"
-    ],
-    "alternativeOrders": [
-      ["They", "put", "the", "meeting", "off", "until", "next", "Monday"]
-    ],
+    "words": ["They", "put", "off", "the", "meeting", "until", "next", "Monday"],
+    "alternativeOrders": [["They", "put", "the", "meeting", "off", "until", "next", "Monday"]],
     "hint": "Subject + phrasal verb + object + time",
     "explanation": "<Put off> significa posponer. Es separable: 'put the meeting off' también es correcto."
   },
   {
     "id": "reord-b1-pv-004",
     "sentence": "We need to figure out a solution to this problem",
-    "words": [
-      "We",
-      "need",
-      "to",
-      "figure",
-      "out",
-      "a",
-      "solution",
-      "to",
-      "this",
-      "problem"
-    ],
+    "words": ["We", "need", "to", "figure", "out", "a", "solution", "to", "this", "problem"],
     "alternativeOrders": [
       ["We", "need", "to", "figure", "a", "solution", "out", "to", "this", "problem"]
     ],
@@ -78,54 +35,22 @@
   {
     "id": "reord-b1-pv-005",
     "sentence": "She turned down the invitation to the party",
-    "words": [
-      "She",
-      "turned",
-      "down",
-      "the",
-      "invitation",
-      "to",
-      "the",
-      "party"
-    ],
-    "alternativeOrders": [
-      ["She", "turned", "the", "invitation", "down", "to", "the", "party"]
-    ],
+    "words": ["She", "turned", "down", "the", "invitation", "to", "the", "party"],
+    "alternativeOrders": [["She", "turned", "the", "invitation", "down", "to", "the", "party"]],
     "hint": "Subject + phrasal verb + object",
     "explanation": "<Turn down> significa rechazar. Es separable: 'turned the invitation down' también es correcto."
   },
   {
     "id": "reord-b1-pv-006",
     "sentence": "He ran into his old teacher at the supermarket",
-    "words": [
-      "He",
-      "ran",
-      "into",
-      "his",
-      "old",
-      "teacher",
-      "at",
-      "the",
-      "supermarket"
-    ],
+    "words": ["He", "ran", "into", "his", "old", "teacher", "at", "the", "supermarket"],
     "hint": "Subject + phrasal verb + object + place",
     "explanation": "<Run into> significa encontrarse con alguien de forma inesperada."
   },
   {
     "id": "reord-b1-pv-007",
     "sentence": "They called off the football match because of the rain",
-    "words": [
-      "They",
-      "called",
-      "off",
-      "the",
-      "football",
-      "match",
-      "because",
-      "of",
-      "the",
-      "rain"
-    ],
+    "words": ["They", "called", "off", "the", "football", "match", "because", "of", "the", "rain"],
     "alternativeOrders": [
       ["They", "called", "the", "football", "match", "off", "because", "of", "the", "rain"]
     ],
@@ -135,49 +60,21 @@
   {
     "id": "reord-b1-pv-008",
     "sentence": "She takes after her mother in many ways",
-    "words": [
-      "She",
-      "takes",
-      "after",
-      "her",
-      "mother",
-      "in",
-      "many",
-      "ways"
-    ],
+    "words": ["She", "takes", "after", "her", "mother", "in", "many", "ways"],
     "hint": "Subject + phrasal verb + object + manner",
     "explanation": "<Take after> significa parecerse a un familiar."
   },
   {
     "id": "reord-b1-pv-009",
     "sentence": "We should look into this matter more carefully",
-    "words": [
-      "We",
-      "should",
-      "look",
-      "into",
-      "this",
-      "matter",
-      "more",
-      "carefully"
-    ],
+    "words": ["We", "should", "look", "into", "this", "matter", "more", "carefully"],
     "hint": "Subject + modal + phrasal verb + object + adverb",
     "explanation": "<Look into> significa investigar o examinar."
   },
   {
     "id": "reord-b1-pv-010",
     "sentence": "He brought up an interesting point during the discussion",
-    "words": [
-      "He",
-      "brought",
-      "up",
-      "an",
-      "interesting",
-      "point",
-      "during",
-      "the",
-      "discussion"
-    ],
+    "words": ["He", "brought", "up", "an", "interesting", "point", "during", "the", "discussion"],
     "alternativeOrders": [
       ["He", "brought", "an", "interesting", "point", "up", "during", "the", "discussion"]
     ],
@@ -187,41 +84,75 @@
   {
     "id": "reord-b1-pv-011",
     "sentence": "She got over her cold after a few days of rest",
-    "words": [
-      "She",
-      "got",
-      "over",
-      "her",
-      "cold",
-      "after",
-      "a",
-      "few",
-      "days",
-      "of",
-      "rest"
-    ],
+    "words": ["She", "got", "over", "her", "cold", "after", "a", "few", "days", "of", "rest"],
     "hint": "Subject + phrasal verb + object + time",
     "explanation": "<Get over> significa recuperarse de una enfermedad o dificultad."
   },
   {
     "id": "reord-b1-pv-012",
     "sentence": "They set up a new business in the city centre",
-    "words": [
-      "They",
-      "set",
-      "up",
-      "a",
-      "new",
-      "business",
-      "in",
-      "the",
-      "city",
-      "centre"
-    ],
+    "words": ["They", "set", "up", "a", "new", "business", "in", "the", "city", "centre"],
     "alternativeOrders": [
       ["They", "set", "a", "new", "business", "up", "in", "the", "city", "centre"]
     ],
     "hint": "Subject + phrasal verb + object + place",
     "explanation": "<Set up> significa establecer algo nuevo. Es separable: 'set a new business up' también es correcto."
+  },
+  {
+    "id": "reord-b1-pv-013",
+    "sentence": "She hung up the phone before I could say goodbye",
+    "words": ["She", "hung", "up", "the", "phone", "before", "I", "could", "say", "goodbye"],
+    "hint": "Subject + phrasal verb (past) + object + clause",
+    "explanation": "<Hang up> significa colgar el teléfono."
+  },
+  {
+    "id": "reord-b1-pv-014",
+    "sentence": "We checked in at the hotel late at night",
+    "words": ["We", "checked", "in", "at", "the", "hotel", "late", "at", "night"],
+    "hint": "Subject + phrasal verb (past) + place + time",
+    "explanation": "<Check in> significa registrarse en un hotel."
+  },
+  {
+    "id": "reord-b1-pv-015",
+    "sentence": "Please check out before eleven in the morning",
+    "words": ["Please", "check", "out", "before", "eleven", "in", "the", "morning"],
+    "hint": "Imperative + phrasal verb + time expression",
+    "explanation": "<Check out> significa dejar el hotel tras pagar la cuenta."
+  },
+  {
+    "id": "reord-b1-pv-016",
+    "sentence": "He never gives up when things get difficult",
+    "words": ["He", "never", "gives", "up", "when", "things", "get", "difficult"],
+    "hint": "Subject + adverb + phrasal verb + subordinate clause",
+    "explanation": "<Give up> significa rendirse."
+  },
+  {
+    "id": "reord-b1-pv-017",
+    "sentence": "Students must hand in their homework on Friday",
+    "words": ["Students", "must", "hand", "in", "their", "homework", "on", "Friday"],
+    "hint": "Subject + modal + phrasal verb + object + time",
+    "explanation": "<Hand in> significa entregar un trabajo."
+  },
+  {
+    "id": "reord-b1-pv-018",
+    "sentence": "Despite the noise, she carried on with her work",
+    "words": ["Despite", "the", "noise,", "she", "carried", "on", "with", "her", "work"],
+    "hint": "Adverbial phrase + subject + phrasal verb (past) + object",
+    "explanation": "<Carry on> significa continuar haciendo algo."
+  },
+  {
+    "id": "reord-b1-pv-019",
+    "sentence": "The guide pointed out several historical buildings",
+    "words": ["The", "guide", "pointed", "out", "several", "historical", "buildings"],
+    "alternativeOrders": [["The", "guide", "pointed", "several", "historical", "buildings", "out"]],
+    "hint": "Subject + phrasal verb (past) + object",
+    "explanation": "<Point out> significa señalar algo. Es separable."
+  },
+  {
+    "id": "reord-b1-pv-020",
+    "sentence": "Hold on a second, I need to find my keys",
+    "words": ["Hold", "on", "a", "second,", "I", "need", "to", "find", "my", "keys"],
+    "hint": "Imperative + phrasal verb + object + clause",
+    "explanation": "<Hold on> significa esperar un momento."
   }
 ]

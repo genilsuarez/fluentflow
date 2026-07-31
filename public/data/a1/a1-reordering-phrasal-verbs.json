@@ -2,210 +2,90 @@
   {
     "id": "reord-pv-a1-001",
     "sentence": "I get up at seven every morning",
-    "words": [
-      "I",
-      "get",
-      "up",
-      "at",
-      "seven",
-      "every",
-      "morning"
-    ],
-    "distractors": [
-      "gets"
-    ],
+    "words": ["I", "get", "up", "at", "seven", "every", "morning"],
+    "distractors": ["gets"],
     "hint": "Subject + phrasal verb + time expression",
     "explanation": "'Get up' significa levantarse de la cama. Con 'I', se usa la forma base 'get', no 'gets'."
   },
   {
     "id": "reord-pv-a1-002",
     "sentence": "Please sit down on the chair",
-    "words": [
-      "Please",
-      "sit",
-      "down",
-      "on",
-      "the",
-      "chair"
-    ],
+    "words": ["Please", "sit", "down", "on", "the", "chair"],
     "hint": "Polite request + phrasal verb + place",
     "explanation": "'Sit down' significa sentarse. 'Please' lo convierte en una petición cortés."
   },
   {
     "id": "reord-pv-a1-003",
     "sentence": "She turns on the light every night",
-    "words": [
-      "She",
-      "turns",
-      "on",
-      "the",
-      "light",
-      "every",
-      "night"
-    ],
-    "alternativeOrders": [
-      ["She", "turns", "the", "light", "on", "every", "night"]
-    ],
-    "distractors": [
-      "turn"
-    ],
+    "words": ["She", "turns", "on", "the", "light", "every", "night"],
+    "alternativeOrders": [["She", "turns", "the", "light", "on", "every", "night"]],
+    "distractors": ["turn"],
     "explanation": "'Turn on' significa encender un aparato. Con 'she', se agrega -s: 'turns on'. Es separable: 'turns the light on' también es correcto."
   },
   {
     "id": "reord-pv-a1-004",
     "sentence": "He puts on his jacket before going out",
-    "words": [
-      "He",
-      "puts",
-      "on",
-      "his",
-      "jacket",
-      "before",
-      "going",
-      "out"
-    ],
-    "alternativeOrders": [
-      ["He", "puts", "his", "jacket", "on", "before", "going", "out"]
-    ],
-    "distractors": [
-      "put"
-    ],
+    "words": ["He", "puts", "on", "his", "jacket", "before", "going", "out"],
+    "alternativeOrders": [["He", "puts", "his", "jacket", "on", "before", "going", "out"]],
+    "distractors": ["put"],
     "hint": "Subject + phrasal verb + object + time clause",
     "explanation": "'Put on' significa ponerse ropa. 'Go out' significa salir. Con 'he', se usa 'puts'. Es separable: 'puts his jacket on' también es correcto."
   },
   {
     "id": "reord-pv-a1-005",
     "sentence": "Please come in before you sit down",
-    "words": [
-      "Please",
-      "come",
-      "in",
-      "before",
-      "you",
-      "sit",
-      "down"
-    ],
+    "words": ["Please", "come", "in", "before", "you", "sit", "down"],
     "explanation": "'Come in' significa entrar. 'Sit down' significa sentarse. 'Before' establece el orden de las acciones."
   },
   {
     "id": "reord-pv-a1-006",
     "sentence": "I always wake up early on Monday",
-    "words": [
-      "I",
-      "always",
-      "wake",
-      "up",
-      "early",
-      "on",
-      "Monday"
-    ],
+    "words": ["I", "always", "wake", "up", "early", "on", "Monday"],
     "hint": "Subject + adverb + phrasal verb + time",
     "explanation": "'Wake up' significa dejar de dormir. Los adverbios de frecuencia van antes del verbo principal."
   },
   {
     "id": "reord-pv-a1-007",
     "sentence": "Can you turn off the television please",
-    "words": [
-      "Can",
-      "you",
-      "turn",
-      "off",
-      "the",
-      "television",
-      "please"
-    ],
-    "alternativeOrders": [
-      ["Can", "you", "turn", "the", "television", "off", "please"]
-    ],
+    "words": ["Can", "you", "turn", "off", "the", "television", "please"],
+    "alternativeOrders": [["Can", "you", "turn", "the", "television", "off", "please"]],
     "explanation": "'Turn off' es lo opuesto de 'turn on'. Las preguntas con 'can' comienzan con el verbo modal. Es separable: 'turn the television off' también es correcto."
   },
   {
     "id": "reord-pv-a1-008",
     "sentence": "The children go out to play after school",
-    "words": [
-      "The",
-      "children",
-      "go",
-      "out",
-      "to",
-      "play",
-      "after",
-      "school"
-    ],
-    "distractors": [
-      "goes"
-    ],
+    "words": ["The", "children", "go", "out", "to", "play", "after", "school"],
+    "distractors": ["goes"],
     "hint": "'Children' is plural — use the base form",
     "explanation": "'Go out' significa salir de un lugar. 'Children' es plural, así que se usa 'go', no 'goes'."
   },
   {
     "id": "reord-pv-a1-009",
     "sentence": "She always picks up the phone very quickly",
-    "words": [
-      "She",
-      "always",
-      "picks",
-      "up",
-      "the",
-      "phone",
-      "very",
-      "quickly"
-    ],
-    "alternativeOrders": [
-      ["She", "always", "picks", "the", "phone", "up", "very", "quickly"]
-    ],
-    "distractors": [
-      "pick"
-    ],
+    "words": ["She", "always", "picks", "up", "the", "phone", "very", "quickly"],
+    "alternativeOrders": [["She", "always", "picks", "the", "phone", "up", "very", "quickly"]],
+    "distractors": ["pick"],
     "explanation": "'Pick up' significa levantar algo o contestar el teléfono. Con 'she', se usa 'picks up'. Es separable: 'picks the phone up' también es correcto."
   },
   {
     "id": "reord-pv-a1-010",
     "sentence": "We look for our keys every morning",
-    "words": [
-      "We",
-      "look",
-      "for",
-      "our",
-      "keys",
-      "every",
-      "morning"
-    ],
-    "distractors": [
-      "looks"
-    ],
+    "words": ["We", "look", "for", "our", "keys", "every", "morning"],
+    "distractors": ["looks"],
     "hint": "Subject + phrasal verb + object + time",
     "explanation": "'Look for' significa buscar. Con 'we', se usa la forma base 'look'."
   },
   {
     "id": "reord-pv-a1-011",
     "sentence": "Please stand up when the teacher enters",
-    "words": [
-      "Please",
-      "stand",
-      "up",
-      "when",
-      "the",
-      "teacher",
-      "enters"
-    ],
+    "words": ["Please", "stand", "up", "when", "the", "teacher", "enters"],
     "hint": "Imperative + phrasal verb + time clause",
     "explanation": "'Stand up' significa ponerse de pie."
   },
   {
     "id": "reord-pv-a1-012",
     "sentence": "He takes off his shoes before entering the house",
-    "words": [
-      "He",
-      "takes",
-      "off",
-      "his",
-      "shoes",
-      "before",
-      "entering",
-      "the",
-      "house"
-    ],
+    "words": ["He", "takes", "off", "his", "shoes", "before", "entering", "the", "house"],
     "alternativeOrders": [
       ["He", "takes", "his", "shoes", "off", "before", "entering", "the", "house"]
     ],
@@ -215,49 +95,60 @@
   {
     "id": "reord-pv-a1-013",
     "sentence": "She puts away her toys every evening",
-    "words": [
-      "She",
-      "puts",
-      "away",
-      "her",
-      "toys",
-      "every",
-      "evening"
-    ],
-    "alternativeOrders": [
-      ["She", "puts", "her", "toys", "away", "every", "evening"]
-    ],
+    "words": ["She", "puts", "away", "her", "toys", "every", "evening"],
+    "alternativeOrders": [["She", "puts", "her", "toys", "away", "every", "evening"]],
     "hint": "Subject + phrasal verb + object + time expression",
     "explanation": "'Put away' significa guardar algo en su lugar. Es separable: 'puts her toys away' también es correcto."
   },
   {
     "id": "reord-pv-a1-014",
     "sentence": "They come back home at six o'clock",
-    "words": [
-      "They",
-      "come",
-      "back",
-      "home",
-      "at",
-      "six",
-      "o'clock"
-    ],
+    "words": ["They", "come", "back", "home", "at", "six", "o'clock"],
     "hint": "Subject + phrasal verb + object + time expression",
     "explanation": "'Come back' significa regresar a un lugar."
   },
   {
     "id": "reord-pv-a1-015",
     "sentence": "We go back to school in September",
-    "words": [
-      "We",
-      "go",
-      "back",
-      "to",
-      "school",
-      "in",
-      "September"
-    ],
+    "words": ["We", "go", "back", "to", "school", "in", "September"],
     "hint": "Subject + phrasal verb + prepositional phrase",
     "explanation": "'Go back' significa volver a un lugar o actividad."
+  },
+  {
+    "id": "reord-pv-a1-016",
+    "sentence": "She cleans up her room every Saturday",
+    "words": ["She", "cleans", "up", "her", "room", "every", "Saturday"],
+    "alternativeOrders": [["She", "cleans", "her", "room", "up", "every", "Saturday"]],
+    "hint": "Subject + phrasal verb + object + time expression",
+    "explanation": "'Clean up' significa limpiar y ordenar. Es separable: 'cleans her room up' también es correcto."
+  },
+  {
+    "id": "reord-pv-a1-017",
+    "sentence": "He hangs up his coat in the closet",
+    "words": ["He", "hangs", "up", "his", "coat", "in", "the", "closet"],
+    "alternativeOrders": [["He", "hangs", "his", "coat", "up", "in", "the", "closet"]],
+    "hint": "Subject + phrasal verb + object + place",
+    "explanation": "'Hang up' significa colgar algo. Es separable: 'hangs his coat up' también es correcto."
+  },
+  {
+    "id": "reord-pv-a1-018",
+    "sentence": "We get on the bus at eight o'clock",
+    "words": ["We", "get", "on", "the", "bus", "at", "eight", "o'clock"],
+    "hint": "Subject + phrasal verb + object + time",
+    "explanation": "'Get on' significa subir a un vehículo. No es separable."
+  },
+  {
+    "id": "reord-pv-a1-019",
+    "sentence": "They get off the train at the next station",
+    "words": ["They", "get", "off", "the", "train", "at", "the", "next", "station"],
+    "hint": "Subject + phrasal verb + object + place",
+    "explanation": "'Get off' significa bajar de un vehículo. No es separable."
+  },
+  {
+    "id": "reord-pv-a1-020",
+    "sentence": "I want to grow up and become a doctor",
+    "words": ["I", "want", "to", "grow", "up", "and", "become", "a", "doctor"],
+    "hint": "Subject + verb + infinitive + phrasal verb",
+    "explanation": "'Grow up' significa crecer, pasar de niño a adulto. No es separable."
   }
 ]
