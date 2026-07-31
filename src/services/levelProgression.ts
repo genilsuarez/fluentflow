@@ -25,11 +25,50 @@ interface LpProgressSummaryModule {
   LEVEL_ORDER: readonly string[];
 }
 
+const RELATIVE_IMPORT_RE = /from\s+(['"])(\.\.?\/[^'"]+)\1/g;
+
+async function fetchModuleText(url: string): Promise<string> {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`${res.status} ${res.statusText} loading ${url}`);
+  return res.text();
+}
+
+/**
+ * Vite's dev server refuses to serve /public files through the ES module
+ * import() pipeline — only via <script> tags or plain fetch() ("This file is
+ * in /public ... should not be imported from source code"). A blob-URL
+ * import never reaches Vite's server at all, so it sidesteps the dev-only
+ * restriction with no behavior change in production. lp-progress-summary.js
+ * has one level of relative imports (./lp-level-map.js); those get inlined
+ * as blob URLs too before the outer blob is created, so the nested import
+ * never round-trips through Vite either.
+ */
+async function importPublicModule(url: string): Promise<unknown> {
+  // new URL(specifier, base) requires base to be absolute — LEVEL_MODULE_URL
+  // is root-relative (e.g. /fluentflow/lp-progress-summary.js), so resolve it
+  // against the document first or the nested-import resolution below throws.
+  const absoluteUrl = new URL(url, document.baseURI).href;
+  const source = await fetchModuleText(absoluteUrl);
+  let rewritten = source;
+  for (const [full, , specifier] of source.matchAll(RELATIVE_IMPORT_RE)) {
+    const depUrl = new URL(specifier, absoluteUrl).href;
+    const depSource = await fetchModuleText(depUrl);
+    const depBlobUrl = URL.createObjectURL(new Blob([depSource], { type: 'text/javascript' }));
+    rewritten = rewritten.replace(full, full.replace(specifier, depBlobUrl));
+  }
+  const blobUrl = URL.createObjectURL(new Blob([rewritten], { type: 'text/javascript' }));
+  try {
+    return await import(/* @vite-ignore */ blobUrl);
+  } finally {
+    URL.revokeObjectURL(blobUrl);
+  }
+}
+
 let modulePromise: Promise<LpProgressSummaryModule | null> | null = null;
 
 function loadModule(): Promise<LpProgressSummaryModule | null> {
   if (!modulePromise) {
-    modulePromise = import(/* @vite-ignore */ LEVEL_MODULE_URL)
+    modulePromise = importPublicModule(LEVEL_MODULE_URL)
       .then(mod => mod as LpProgressSummaryModule)
       .catch(() => null);
   }
