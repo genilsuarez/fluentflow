@@ -230,10 +230,12 @@
 
   .progression-dashboard__units--mobile-accordion .progression-dashboard__unit--expanded {
     flex: 0 1 auto;
+    overflow: visible;
   }
 
   .progression-dashboard__units--mobile-accordion .progression-dashboard__unit-body {
     flex: 0 1 auto;
+    overflow-x: clip;
     overflow-y: visible;
     padding-bottom: 0.25rem;
   }
@@ -433,13 +435,28 @@
 .progression-dashboard__modules {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: auto;
   gap: 0.375rem;
   animation: fadeIn 0.15s ease-out;
-  overflow: hidden;
+}
+
+/* In search mode rows grow with content */
+.progression-dashboard__modules:has(.progression-dashboard__module--searching) {
+  align-items: start;
+}
+
+/* In search mode, unit and body grow freely — !important to override flex system */
+.progression-dashboard__unit--searching,
+.progression-dashboard__unit-body--searching {
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+  flex: 0 0 auto !important;
 }
 
 .progression-dashboard__modules--truncated {
   position: relative;
+  overflow: hidden;
 }
 
 .progression-dashboard__modules--truncated::after {
@@ -494,10 +511,7 @@
     transform 0.2s ease,
     box-shadow 0.2s ease;
   position: relative;
-  height: 56px;
   min-height: 56px;
-  max-height: 56px;
-  overflow: hidden;
   box-shadow:
     0 1px 2px rgba(0, 0, 0, 0.05),
     inset 0 1px 0 rgba(255, 255, 255, 0.7);
@@ -542,7 +556,19 @@
   box-shadow: none;
 }
 
-/* When a locked module is shown in search results it becomes navigable */
+/* When searching, allow module name to show full text (no clamp) */
+.progression-dashboard__module--searching .progression-dashboard__module-name {
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+  display: block;
+  overflow: visible;
+}
+
+/* In search mode, let cards grow to fit their content */
+.progression-dashboard__module--searching {
+  height: auto;
+  min-height: 0;
+}
 .progression-dashboard__module.progression-dashboard__module--locked.progression-dashboard__module--locked-preview {
   cursor: pointer;
   pointer-events: auto;
@@ -608,7 +634,7 @@
 .progression-dashboard__module-content {
   flex: 1;
   min-width: 0;
-  overflow: hidden;
+  overflow: visible;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -691,9 +717,7 @@
   }
 
   .progression-dashboard__module {
-    height: 92px;
     min-height: 92px;
-    max-height: 92px;
     padding: 0.625rem;
     gap: 0.5rem;
     border-radius: var(--radius-md, 0.5rem);
@@ -706,9 +730,7 @@
   }
 
   .progression-dashboard__module {
-    height: 84px;
     min-height: 84px;
-    max-height: 84px;
     padding: 0.5rem;
     gap: 0.4375rem;
     border-radius: var(--radius-md, 0.5rem);
@@ -832,9 +854,7 @@
   }
 
   .progression-dashboard__module {
-    height: 48px;
     min-height: 48px;
-    max-height: 48px;
     padding: 0.25rem 0.375rem;
     gap: 0.375rem;
     border-radius: var(--lp-radius-sm);
@@ -1095,9 +1115,7 @@ html.dark .progression-dashboard__module--locked .progression-dashboard__level-b
   .progression-dashboard__module {
     padding: 0.25rem 0.375rem;
     margin-bottom: 0;
-    height: 48px;
     min-height: 48px;
-    max-height: 48px;
   }
 
   .progression-dashboard__module-name {

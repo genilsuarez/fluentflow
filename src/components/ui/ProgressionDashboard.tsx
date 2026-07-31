@@ -413,7 +413,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
               return (
                 <div
                   key={unit}
-                  className={`progression-dashboard__unit${isExpanded ? ' progression-dashboard__unit--expanded' : ''}`}
+                  className={`progression-dashboard__unit${isExpanded ? ' progression-dashboard__unit--expanded' : ''}${isExpanded && searchQuery.trim() ? ' progression-dashboard__unit--searching' : ''}`}
                   style={
                     unitLevelColor
                       ? ({ '--unit-level-color': unitLevelColor } as React.CSSProperties)
@@ -611,7 +611,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                         return (
                           <div
                             key={module.id}
-                            className={`progression-dashboard__module progression-dashboard__module--${status} module-card--${module.learningMode} ${isNext ? 'progression-dashboard__module--next' : ''}${isSearching && status === 'locked' ? ' progression-dashboard__module--locked-preview' : ''}`}
+                            className={`progression-dashboard__module progression-dashboard__module--${status} module-card--${module.learningMode} ${isNext ? 'progression-dashboard__module--next' : ''}${isSearching && status === 'locked' ? ' progression-dashboard__module--locked-preview' : ''}${isSearching ? ' progression-dashboard__module--searching' : ''}`}
                             onClick={isClickable ? () => handleModuleClick(module) : undefined}
                             aria-disabled={!isClickable}
                           >
@@ -652,7 +652,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                       };
 
                       return (
-                        <div className="progression-dashboard__unit-body">
+                        <div className={`progression-dashboard__unit-body${searchQuery.trim() ? ' progression-dashboard__unit-body--searching' : ''}`}>
                           <div className="progression-dashboard__modules-stack">
                             {showCompletedToggle && !isCompletedExpanded && (
                               <button
