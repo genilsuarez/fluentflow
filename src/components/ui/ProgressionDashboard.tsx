@@ -189,6 +189,20 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
     });
   }, [nextRecommended, searchQuery, completedModulesCount, useCompactProgressionList]);
 
+  // When search is cleared, reset expansion state to default (compact view)
+  const prevSearchQueryRef = React.useRef(searchQuery);
+  React.useEffect(() => {
+    const wasSearching = prevSearchQueryRef.current.trim().length > 0;
+    const isSearching = searchQuery.trim().length > 0;
+    prevSearchQueryRef.current = searchQuery;
+
+    if (wasSearching && !isSearching) {
+      // Search was just cleared — collapse everything back to default
+      setExpandedCompletedUnits(new Set());
+      setExpandedUnits(nextRecommended ? new Set([nextRecommended.unit]) : new Set());
+    }
+  }, [searchQuery, nextRecommended]);
+
   // Helper: schedule scroll after the browser has completed layout
   const scheduleScroll = React.useCallback(() => {
     // Wait for the fadeIn animation (150ms) to finish so that
