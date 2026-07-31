@@ -114,7 +114,7 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
 
   const hasProgress = displayStats.completedModules > 0;
   const progressMeta = currentUnitInfo ? `${currentUnitInfo.code} · ${currentUnitInfo.name}` : '';
-  const depthExercisesLabel = `6,700+ ${t('dashboard.depthExercises', 'exercises')}`;
+  const depthExercisesLabel = `6,300+ ${t('dashboard.depthExercises', 'exercises')}`;
 
   const handleProgressClick = useCallback(() => {
     if (onViewModules) onViewModules();
