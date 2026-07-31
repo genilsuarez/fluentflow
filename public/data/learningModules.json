@@ -167,7 +167,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "reading-travel-a1"
+      "reading-food-a1"
     ],
     "description": "Fundamental grammar concepts and structures",
     "estimatedTime": 3,
@@ -1975,7 +1975,7 @@
     ],
     "category": "Vocabulary",
     "prerequisites": [
-      "reading-innovation-b2"
+      "reading-history-b2"
     ],
     "description": "Achievement, perseverance, ambition, and adversity vocabulary",
     "estimatedTime": 3,
@@ -5004,5 +5004,53 @@
     "description": "Vocabulary for literary and artistic analysis",
     "estimatedTime": 5,
     "difficulty": 5
+  },
+  {
+    "id": "reading-food-a1",
+    "name": "Food Reading",
+    "learningMode": "reading",
+    "dataPath": "data/a1/a1-reading-food.json",
+    "level": [
+      "a1"
+    ],
+    "category": "Reading",
+    "prerequisites": [
+      "reading-travel-a1"
+    ],
+    "description": "Everyday food vocabulary and restaurant phrases",
+    "estimatedTime": 7,
+    "difficulty": 1
+  },
+  {
+    "id": "reading-careers-b1",
+    "name": "Work and Careers Reading",
+    "learningMode": "reading",
+    "dataPath": "data/b1/b1-reading-careers.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Reading",
+    "prerequisites": [
+      "reading-social-media-b1"
+    ],
+    "description": "Jobs, interviews, and workplace vocabulary",
+    "estimatedTime": 7,
+    "difficulty": 3
+  },
+  {
+    "id": "reading-history-b2",
+    "name": "History and Society Reading",
+    "learningMode": "reading",
+    "dataPath": "data/b2/b2-reading-history.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Reading",
+    "prerequisites": [
+      "reading-innovation-b2"
+    ],
+    "description": "Historical events, social movements, and their impact",
+    "estimatedTime": 7,
+    "difficulty": 4
   }
 ]

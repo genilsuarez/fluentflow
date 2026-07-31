@@ -1,0 +1,112 @@
+{
+  "title": "Work and Careers",
+  "estimatedReadingTime": 7,
+  "learningObjectives": [
+    "Understand vocabulary related to jobs, workplaces, and career paths",
+    "Read about job applications and interviews",
+    "Learn phrases for discussing skills and experience",
+    "Practice understanding workplace situations and challenges"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "title": "Choosing a Career",
+      "type": "introduction",
+      "content": "Work takes up a large part of adult life, so choosing the right career matters. People consider salary, working hours, and whether a job matches their skills and interests. This lesson explores common vocabulary and situations related to careers and the workplace."
+    },
+    {
+      "id": "job-search",
+      "title": "Looking for a Job",
+      "type": "theory",
+      "content": "When searching for work, people check <job listings> on websites or in newspapers. They send a <CV> (or <resume>) and a <cover letter> to apply.\n\nIf the employer is interested, they invite the candidate to an <interview>. During the interview, the candidate talks about their <skills>, <experience>, and <qualifications>."
+    },
+    {
+      "id": "workplace",
+      "title": "At the Workplace",
+      "type": "theory",
+      "content": "Once hired, an employee has a <job title>, works under a <manager> or <supervisor>, and receives a <salary>. Some people work <full-time>, while others prefer <part-time> hours.\n\nCommon workplace terms include <deadline> (the date work must be finished), <colleague> (a person you work with), and <promotion> (moving to a higher position)."
+    },
+    {
+      "id": "examples",
+      "title": "Career Conversations",
+      "type": "examples",
+      "content": "Example 1: JOB INTERVIEW - <Tell me about your previous work experience.>\n\nExample 2: DISCUSSING SKILLS - <I'm good at working in a team and solving problems.>\n\nExample 3: ASKING ABOUT SALARY - <What is the salary range for this position?>"
+    },
+    {
+      "id": "challenges",
+      "title": "Workplace Challenges",
+      "type": "theory",
+      "content": "Not every day at work is easy. People sometimes deal with <stress>, tight <deadlines>, or disagreements with colleagues. Learning to <manage your time> and <communicate clearly> helps solve many problems.\n\nIf someone is unhappy with their job, they might look for a <career change> or ask for <feedback> from their manager to improve."
+    },
+    {
+      "id": "examples-2",
+      "title": "Workplace Problem Solving",
+      "type": "examples",
+      "content": "Example 1: MISSED DEADLINE - <A: I'm sorry, I couldn't finish the report on time.\nB: Let's talk about how to manage your workload better.>\n\nExample 2: ASKING FOR HELP - <A: Could you help me with this project? I'm a bit stuck.\nB: Of course, let's go through it together.>\n\nExample 3: REQUESTING TIME OFF - <A: Could I take next Friday off?\nB: Sure, just send me a request in advance.>"
+    },
+    {
+      "id": "future",
+      "title": "Career Growth",
+      "type": "theory",
+      "content": "Many people want to grow professionally. They take <training courses>, learn new <skills>, or aim for a <promotion>. Networking, or building relationships with other professionals, can also open new opportunities.\n\nSetting clear <career goals> helps people decide what steps to take next, whether that means changing jobs, gaining certifications, or starting their own business."
+    },
+    {
+      "id": "summary",
+      "title": "Career Tips",
+      "type": "summary",
+      "content": "Remember these key points: Prepare well before a job interview by researching the company. Highlight your skills and experience clearly. Communicate professionally with colleagues and managers.\n\nDon't be afraid to ask for feedback or set new career goals. A career is a long journey, so keep learning along the way!"
+    }
+  ],
+  "keyVocabulary": [
+    {
+      "term": "resume",
+      "definition": "A document listing your work experience and skills",
+      "example": "Please attach your resume to the email.",
+      "pronunciation": "/ˈrezuːmeɪ/"
+    },
+    {
+      "term": "interview",
+      "definition": "A formal meeting to discuss a job application",
+      "example": "My interview is scheduled for Monday morning.",
+      "pronunciation": "/ˈɪntərvjuː/"
+    },
+    {
+      "term": "deadline",
+      "definition": "The date by which something must be finished",
+      "example": "We need to meet the deadline on Friday.",
+      "pronunciation": "/ˈdedlaɪn/"
+    },
+    {
+      "term": "colleague",
+      "definition": "A person you work with",
+      "example": "My colleague helped me finish the report.",
+      "pronunciation": "/ˈkɑːliːɡ/"
+    },
+    {
+      "term": "promotion",
+      "definition": "A move to a higher position at work",
+      "example": "She got a promotion after two years.",
+      "pronunciation": "/prəˈmoʊʃən/"
+    },
+    {
+      "term": "qualification",
+      "definition": "A skill or achievement that makes someone suitable for a job",
+      "example": "This job requires a degree in marketing as a qualification.",
+      "pronunciation": "/ˌkwɑːlɪfɪˈkeɪʃən/"
+    }
+  ],
+  "grammarPoints": [
+    {
+      "rule": "Talking About Experience",
+      "explanation": "Use the present perfect (<have/has> + past participle) to talk about work experience that connects to now.",
+      "examples": ["I have worked in marketing for three years."],
+      "commonMistakes": ["Using the past simple instead of present perfect for ongoing experience"]
+    },
+    {
+      "rule": "Describing Skills",
+      "explanation": "Use <be good at> + noun or -ing verb to describe skills.",
+      "examples": ["She is good at solving problems."],
+      "commonMistakes": ["Using the base verb instead of -ing after \"good at\""]
+    }
+  ]
+}

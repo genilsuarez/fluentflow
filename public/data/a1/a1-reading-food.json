@@ -1,0 +1,112 @@
+{
+  "title": "Food and Eating Out",
+  "estimatedReadingTime": 7,
+  "learningObjectives": [
+    "Learn basic food vocabulary for meals, groceries, and restaurants",
+    "Understand how to order food and drinks politely",
+    "Practice talking about likes and dislikes with food",
+    "Recognize common phrases used at restaurants and cafes"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "title": "Eating Every Day",
+      "type": "introduction",
+      "content": "Food is part of daily life everywhere. In English, you need simple words to talk about meals, order food, and go shopping. This lesson teaches you the most useful food words and phrases for everyday situations."
+    },
+    {
+      "id": "meals",
+      "title": "Meals of the Day",
+      "type": "theory",
+      "content": "People usually eat three meals: <breakfast> in the morning, <lunch> at midday, and <dinner> in the evening. Some people also have a <snack> between meals.\n\nCommon breakfast foods are eggs, toast, and cereal. Lunch and dinner often include rice, pasta, meat, vegetables, or salad."
+    },
+    {
+      "id": "grocery",
+      "title": "At the Grocery Store",
+      "type": "theory",
+      "content": "At the <supermarket>, you can buy fruit, vegetables, bread, milk, and meat. You put items in a <shopping cart> or a <basket>.\n\nWhen you finish, you go to the <checkout> to pay. You can ask <Where is the bread?> or <Do you have fresh fruit?> to find things."
+    },
+    {
+      "id": "restaurant",
+      "title": "Ordering at a Restaurant",
+      "type": "theory",
+      "content": "At a restaurant, the <waiter> or <waitress> brings you a <menu>. You choose your food and say <I'd like...> or <Can I have...> to order.\n\nWhen you finish eating, you ask for <the bill> or <the check>. It is common to say <thank you> and leave a small tip in some countries."
+    },
+    {
+      "id": "examples",
+      "title": "Ordering Conversations",
+      "type": "examples",
+      "content": "Example 1: ORDERING - <Hi, I'd like a chicken sandwich and a coffee, please.>\n\nExample 2: ASKING ABOUT FOOD - <Excuse me, is this dish spicy?>\n\nExample 3: PAYING - <Could we have the bill, please?>"
+    },
+    {
+      "id": "likes",
+      "title": "Talking About Food You Like",
+      "type": "theory",
+      "content": "To say what you like, use <I like...> or <I love...>. To say what you don't like, use <I don't like...> or <I can't stand...>.\n\n• <I like pizza> - Something you enjoy\n• <I don't like spicy food> - Something you avoid\n• <My favorite food is pasta> - Your top choice\n\nYou can also ask others: <What's your favorite food?>"
+    },
+    {
+      "id": "examples-2",
+      "title": "Food Problem Solving",
+      "type": "examples",
+      "content": "Example 1: ALLERGY - <A: Does this contain nuts?\nB: No, it doesn't have any nuts.>\n\nExample 2: WRONG ORDER - <A: Excuse me, I ordered soup, not salad.\nB: I'm sorry, I'll bring the soup right away.>\n\nExample 3: TAKEOUT - <A: Can I get this to go?\nB: Sure, no problem.>"
+    },
+    {
+      "id": "summary",
+      "title": "Food Tips",
+      "type": "summary",
+      "content": "Remember these key points: Learn the names of common foods so you can order easily. Use <I'd like...> to order politely. Ask questions if you are not sure what a dish contains.\n\nDon't be afraid to say <thank you> and be polite with restaurant staff. Trying new foods is a great way to learn about a culture!"
+    }
+  ],
+  "keyVocabulary": [
+    {
+      "term": "menu",
+      "definition": "A list of food and drinks you can order",
+      "example": "Can I see the menu, please?",
+      "pronunciation": "/ˈmenjuː/"
+    },
+    {
+      "term": "bill",
+      "definition": "The paper that shows how much you must pay",
+      "example": "Could we have the bill, please?",
+      "pronunciation": "/bɪl/"
+    },
+    {
+      "term": "grocery",
+      "definition": "Food and other items you buy at a store",
+      "example": "I need to buy some groceries today.",
+      "pronunciation": "/ˈɡroʊsəri/"
+    },
+    {
+      "term": "waiter",
+      "definition": "A person who serves food at a restaurant",
+      "example": "The waiter brought our drinks quickly.",
+      "pronunciation": "/ˈweɪtər/"
+    },
+    {
+      "term": "favorite",
+      "definition": "The one you like the most",
+      "example": "Pizza is my favorite food.",
+      "pronunciation": "/ˈfeɪvərɪt/"
+    },
+    {
+      "term": "spicy",
+      "definition": "Food with a hot, strong taste",
+      "example": "This soup is very spicy.",
+      "pronunciation": "/ˈspaɪsi/"
+    }
+  ],
+  "grammarPoints": [
+    {
+      "rule": "Ordering Politely",
+      "explanation": "Use <I'd like...> or <Can I have...?> to order food politely.",
+      "examples": ["I'd like a glass of water, please."],
+      "commonMistakes": ["Forgetting to say \"please\" when ordering"]
+    },
+    {
+      "rule": "Talking About Preferences",
+      "explanation": "Use <I like / I don't like> plus a noun or -ing verb to talk about food preferences.",
+      "examples": ["I like eating fresh vegetables."],
+      "commonMistakes": ["Using the base verb instead of -ing after \"like\""]
+    }
+  ]
+}

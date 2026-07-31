@@ -1,0 +1,116 @@
+{
+  "title": "History and Society",
+  "estimatedReadingTime": 7,
+  "learningObjectives": [
+    "Read texts about historical events and their impact on society",
+    "Understand vocabulary related to historical change and social movements",
+    "Practice interpreting cause-and-effect relationships in historical texts",
+    "Discuss how the past shapes present-day society"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "title": "Why History Matters",
+      "type": "introduction",
+      "content": "History is more than a list of dates and names — it explains how societies became what they are today. Understanding key historical events helps us make sense of current politics, culture, and social attitudes. This lesson explores vocabulary and ideas used when discussing history and society."
+    },
+    {
+      "id": "movements",
+      "title": "Social Movements",
+      "type": "theory",
+      "content": "Throughout history, <social movements> have pushed for change. A movement is a group of people working together toward a shared goal, such as <civil rights>, <workers' rights>, or <gender equality>.\n\nThese movements often use <protests>, <campaigns>, and public <activism> to raise awareness and pressure governments to change laws."
+    },
+    {
+      "id": "revolutions",
+      "title": "Revolutions and Reform",
+      "type": "theory",
+      "content": "A <revolution> is a sudden, often dramatic change in government or society, sometimes involving conflict. <Reform>, on the other hand, is gradual change made through existing institutions.\n\nHistorians study the <causes> and <consequences> of these events to understand why they happened and how they reshaped nations, economies, and cultures."
+    },
+    {
+      "id": "examples",
+      "title": "Discussing History",
+      "type": "examples",
+      "content": "Example 1: CAUSE AND EFFECT - <The economic crisis led to widespread unemployment, which in turn fueled political unrest.>\n\nExample 2: COMPARING ERAS - <Unlike the previous generation, today's society values digital communication over face-to-face interaction.>\n\nExample 3: DISCUSSING IMPACT - <That decision had a lasting impact on how the country is governed today.>"
+    },
+    {
+      "id": "legacy",
+      "title": "The Legacy of the Past",
+      "type": "theory",
+      "content": "The word <legacy> refers to what a person, event, or era leaves behind for future generations. Historical decisions, both good and bad, continue to shape modern <institutions>, <laws>, and <cultural values>.\n\nUnderstanding this legacy helps societies avoid repeating past mistakes and appreciate the progress that has been made over time."
+    },
+    {
+      "id": "examples-2",
+      "title": "Historical Analysis Practice",
+      "type": "examples",
+      "content": "Example 1: DEBATE - <A: Some argue that industrialization improved living standards.\nB: Others believe it created new social inequalities.>\n\nExample 2: TIMELINE - <A: When did this reform take place?\nB: It happened gradually over several decades.>\n\nExample 3: EVALUATING SOURCES - <A: Is this account reliable?\nB: We should compare it with other historical records.>"
+    },
+    {
+      "id": "modern",
+      "title": "History in the Modern World",
+      "type": "theory",
+      "content": "Today, historians use new tools like <digital archives> and <data analysis> to study the past more accurately. Museums, documentaries, and online resources make history more accessible to the public than ever before.\n\nUnderstanding history also helps people engage critically with current events, recognizing patterns between past and present <social change>."
+    },
+    {
+      "id": "summary",
+      "title": "History Tips",
+      "type": "summary",
+      "content": "Remember these key points: Look for cause-and-effect relationships when reading about historical events. Compare different perspectives to understand an event fully. Consider how the past continues to influence society today.\n\nDon't assume history is only about the past — it constantly shapes the present and future!"
+    }
+  ],
+  "keyVocabulary": [
+    {
+      "term": "revolution",
+      "definition": "A sudden, major change in government or society",
+      "example": "The revolution changed the country's political system completely.",
+      "pronunciation": "/ˌrevəˈluːʃən/"
+    },
+    {
+      "term": "legacy",
+      "definition": "Something handed down from the past to future generations",
+      "example": "His legacy as a reformer is still remembered today.",
+      "pronunciation": "/ˈleɡəsi/"
+    },
+    {
+      "term": "activism",
+      "definition": "Action taken to bring about social or political change",
+      "example": "Her activism helped raise awareness about workers' rights.",
+      "pronunciation": "/ˈæktɪvɪzəm/"
+    },
+    {
+      "term": "institution",
+      "definition": "An established organization or system in society",
+      "example": "The university is one of the oldest institutions in the country.",
+      "pronunciation": "/ˌɪnstɪˈtuːʃən/"
+    },
+    {
+      "term": "unrest",
+      "definition": "A state of dissatisfaction and disturbance in society",
+      "example": "The new tax caused widespread social unrest.",
+      "pronunciation": "/ʌnˈrest/"
+    },
+    {
+      "term": "reform",
+      "definition": "Gradual change made to improve a system or institution",
+      "example": "The government introduced reforms to the education system.",
+      "pronunciation": "/rɪˈfɔːrm/"
+    }
+  ],
+  "grammarPoints": [
+    {
+      "rule": "Cause and Effect Language",
+      "explanation": "Use phrases like <led to>, <resulted in>, and <caused> to describe historical cause-and-effect relationships.",
+      "examples": ["The invention of the printing press led to a rise in literacy."],
+      "commonMistakes": [
+        "Confusing \"affect\" (verb) with \"effect\" (noun) when describing consequences"
+      ]
+    },
+    {
+      "rule": "Passive Voice in Historical Writing",
+      "explanation": "Use the passive voice when the focus is on the event rather than who caused it, common in historical texts.",
+      "examples": ["The treaty was signed in 1919."],
+      "commonMistakes": [
+        "Overusing the passive voice, which can make writing feel vague or distant"
+      ]
+    }
+  ]
+}
