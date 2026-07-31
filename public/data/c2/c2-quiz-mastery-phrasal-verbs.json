@@ -1,0 +1,222 @@
+[
+  {
+    "question": "What does it mean to <account for> something?",
+    "options": [
+      "To explain or give a reason for it",
+      "To count it accurately",
+      "To open a bank account for it",
+      "To take responsibility for someone else's mistake"
+    ],
+    "correct": "To explain or give a reason for it",
+    "explanation": "Account for significa explicar o justificar la causa de algo, especialmente en contextos analíticos o académicos."
+  },
+  {
+    "question": "If a writer <alludes to> a historical event, they:",
+    "options": [
+      "Refer to it indirectly without naming it explicitly",
+      "Describe it in exhaustive detail",
+      "Deny that it ever happened",
+      "Translate it into another language"
+    ],
+    "correct": "Refer to it indirectly without naming it explicitly",
+    "explanation": "Aludir a algo es mencionarlo de forma indirecta o sutil, sin nombrarlo directamente."
+  },
+  {
+    "question": "What does <bear on> mean in 'This evidence bears on the case'?",
+    "options": [
+      "To be relevant or have an influence on something",
+      "To carry something physically",
+      "To endure a difficult situation",
+      "To give birth to an idea"
+    ],
+    "correct": "To be relevant or have an influence on something",
+    "explanation": "Bear on significa tener relación o influencia directa sobre un asunto."
+  },
+  {
+    "question": "What does <bring forth> mean?",
+    "options": [
+      "To produce, introduce, or present something",
+      "To bring someone to the front of a line",
+      "To postpone an event",
+      "To forcefully remove something"
+    ],
+    "correct": "To produce, introduce, or present something",
+    "explanation": "Bring forth significa producir o presentar algo, como una idea, evidencia o resultado."
+  },
+  {
+    "question": "If someone <brushes aside> a concern, they:",
+    "options": [
+      "Dismiss it without giving it proper consideration",
+      "Clean it thoroughly",
+      "Write it down for later",
+      "Agree with it enthusiastically"
+    ],
+    "correct": "Dismiss it without giving it proper consideration",
+    "explanation": "Brush aside significa ignorar o desestimar algo rápidamente, sin considerarlo con seriedad."
+  },
+  {
+    "question": "What does it mean to <chip away at> a problem?",
+    "options": [
+      "To gradually reduce or diminish it through persistent effort",
+      "To solve it instantly",
+      "To make it significantly worse",
+      "To delegate it to someone else"
+    ],
+    "correct": "To gradually reduce or diminish it through persistent effort",
+    "explanation": "Chip away at describe un proceso lento y constante de reducir algo poco a poco."
+  },
+  {
+    "question": "If a researcher <delves into> a topic, they:",
+    "options": [
+      "Investigate or study it thoroughly and in depth",
+      "Avoid discussing it altogether",
+      "Summarize it briefly",
+      "Criticize it publicly"
+    ],
+    "correct": "Investigate or study it thoroughly and in depth",
+    "explanation": "Delve into significa profundizar o investigar algo con detenimiento."
+  },
+  {
+    "question": "What does it mean to <dwell on> something?",
+    "options": [
+      "To think or talk about it longer than necessary, often negatively",
+      "To live in a specific place",
+      "To decide something quickly",
+      "To forget about it entirely"
+    ],
+    "correct": "To think or talk about it longer than necessary, often negatively",
+    "explanation": "Dwell on implica pensar demasiado en algo, generalmente negativo, sin poder avanzar."
+  },
+  {
+    "question": "What does it mean to <embark on> a new project?",
+    "options": [
+      "To begin or start it, often something ambitious",
+      "To abandon it midway",
+      "To criticize its design",
+      "To delegate its management"
+    ],
+    "correct": "To begin or start it, often something ambitious",
+    "explanation": "Embark on significa emprender o comenzar algo nuevo, típicamente un proyecto significativo."
+  },
+  {
+    "question": "If someone <grapples with> a difficult decision, they:",
+    "options": [
+      "Struggle to understand or resolve it",
+      "Make it without hesitation",
+      "Delegate it to a committee",
+      "Postpone it indefinitely"
+    ],
+    "correct": "Struggle to understand or resolve it",
+    "explanation": "Grapple with significa luchar o forcejear mentalmente con un problema complejo."
+  },
+  {
+    "question": "What does <hark back to> mean?",
+    "options": [
+      "To recall or return to an earlier time or idea",
+      "To listen carefully to advice",
+      "To predict future events",
+      "To reject a previous idea entirely"
+    ],
+    "correct": "To recall or return to an earlier time or idea",
+    "explanation": "Hark back to significa evocar o remitirse a algo anterior, como una época o tradición."
+  },
+  {
+    "question": "If a text <lends itself to> multiple interpretations, it:",
+    "options": [
+      "Is naturally suitable or appropriate for that purpose",
+      "Prohibits any alternative reading",
+      "Was written for a single audience",
+      "Requires translation to be understood"
+    ],
+    "correct": "Is naturally suitable or appropriate for that purpose",
+    "explanation": "Lend itself to significa ser apto o prestarse naturalmente a cierto uso o análisis."
+  },
+  {
+    "question": "What does it mean to <map out> a plan?",
+    "options": [
+      "To plan or outline it in careful detail",
+      "To draw a literal map of a location",
+      "To cancel it entirely",
+      "To follow someone else's plan exactly"
+    ],
+    "correct": "To plan or outline it in careful detail",
+    "explanation": "Map out significa planificar algo detalladamente, paso a paso."
+  },
+  {
+    "question": "If an argument <plays into> a stereotype, it:",
+    "options": [
+      "Unintentionally reinforces or supports it",
+      "Actively challenges and dismantles it",
+      "Has no relation to it at all",
+      "Is based on statistical evidence"
+    ],
+    "correct": "Unintentionally reinforces or supports it",
+    "explanation": "Play into significa reforzar involuntariamente una idea o prejuicio existente."
+  },
+  {
+    "question": "What does it mean to <root out> corruption?",
+    "options": [
+      "To find and eliminate it completely",
+      "To ignore its existence",
+      "To study its historical origins",
+      "To negotiate with those involved"
+    ],
+    "correct": "To find and eliminate it completely",
+    "explanation": "Root out significa erradicar algo por completo, encontrando y eliminando su origen."
+  },
+  {
+    "question": "If a teacher <singles out> a student, they:",
+    "options": [
+      "Select them from the group for special attention",
+      "Ignore them completely",
+      "Assign them extra homework randomly",
+      "Praise the whole class equally"
+    ],
+    "correct": "Select them from the group for special attention",
+    "explanation": "Single out significa destacar o señalar a alguien específicamente dentro de un grupo."
+  },
+  {
+    "question": "What does it mean to <stumble upon> a discovery?",
+    "options": [
+      "To find it by chance, without looking for it",
+      "To search for it methodically for years",
+      "To predict it through calculation",
+      "To dismiss it as irrelevant"
+    ],
+    "correct": "To find it by chance, without looking for it",
+    "explanation": "Stumble upon significa encontrar algo por casualidad, sin buscarlo deliberadamente."
+  },
+  {
+    "question": "If a new finding <ties in with> earlier research, it:",
+    "options": [
+      "Is consistent with or connects to that earlier work",
+      "Directly contradicts it",
+      "Was published before it",
+      "Has no academic value"
+    ],
+    "correct": "Is consistent with or connects to that earlier work",
+    "explanation": "Tie in with significa conectar o encajar coherentemente con algo anterior."
+  },
+  {
+    "question": "What does it mean to <weigh up> the options?",
+    "options": [
+      "To consider them carefully before making a decision",
+      "To choose the heaviest one",
+      "To ignore all but one option",
+      "To eliminate every option available"
+    ],
+    "correct": "To consider them carefully before making a decision",
+    "explanation": "Weigh up significa sopesar o evaluar cuidadosamente distintas alternativas."
+  },
+  {
+    "question": "If a scholar <wrestles with> an idea, they:",
+    "options": [
+      "Struggle intensely to understand or resolve it",
+      "Accept it immediately without question",
+      "Dismiss it as unimportant",
+      "Publish it without review"
+    ],
+    "correct": "Struggle intensely to understand or resolve it",
+    "explanation": "Wrestle with significa luchar mentalmente con una idea difícil, tratando de comprenderla o resolverla."
+  }
+]

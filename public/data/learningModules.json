@@ -3502,6 +3502,22 @@
     "difficulty": 5
   },
   {
+    "id": "quiz-mastery-phrasal-verbs-c2",
+    "name": "Mastery Phrasal Verbs Quiz",
+    "learningMode": "quiz",
+    "dataPath": "data/c2/c2-quiz-mastery-phrasal-verbs.json",
+    "level": [
+      "c2"
+    ],
+    "category": "PhrasalVerbs",
+    "prerequisites": [
+      "reordering-phrasal-verbs-c2"
+    ],
+    "description": "Formal and academic-register phrasal verbs for near-native proficiency (20 items)",
+    "estimatedTime": 5,
+    "difficulty": 5
+  },
+  {
     "id": "completion-complex-prepositions-conjunctions-c2",
     "name": "Complex Prepositions",
     "learningMode": "completion",
