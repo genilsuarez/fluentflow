@@ -164,18 +164,7 @@
   {
     "id": "reord-b2-cc-009",
     "sentence": "However hard she tried she could not solve the problem",
-    "words": [
-      "However",
-      "hard",
-      "she",
-      "tried",
-      "she",
-      "could",
-      "not",
-      "solve",
-      "the",
-      "problem"
-    ],
+    "words": ["However", "hard", "she", "tried", "she", "could", "not", "solve", "the", "problem"],
     "hint": "However + adjective/adverb + clause, main clause",
     "explanation": "<However hard> significa 'no importa cuán duro'."
   },
@@ -241,5 +230,123 @@
     ],
     "hint": "Much as + clause, main clause",
     "explanation": "<Much as> significa 'aunque + mucho'; introduce una concesión."
+  },
+  {
+    "id": "reord-b2-cc-013",
+    "sentence": "Not until she apologised did he agree to speak to her again",
+    "words": [
+      "Not",
+      "until",
+      "she",
+      "apologised",
+      "did",
+      "he",
+      "agree",
+      "to",
+      "speak",
+      "to",
+      "her",
+      "again"
+    ],
+    "hint": "Not until + clause, inversion",
+    "explanation": "<Not until> al inicio requiere inversión: <did he agree>. Significa 'solo cuando'."
+  },
+  {
+    "id": "reord-b2-cc-014",
+    "sentence": "So exhausted was she that she fell asleep on the sofa",
+    "words": [
+      "So",
+      "exhausted",
+      "was",
+      "she",
+      "that",
+      "she",
+      "fell",
+      "asleep",
+      "on",
+      "the",
+      "sofa"
+    ],
+    "hint": "So + adjective + verb + subject, that clause",
+    "explanation": "<So + adjetivo> al inicio para dar énfasis provoca inversión de sujeto y verbo."
+  },
+  {
+    "id": "reord-b2-cc-015",
+    "sentence": "You may use my office provided that you keep it tidy",
+    "words": ["You", "may", "use", "my", "office", "provided", "that", "you", "keep", "it", "tidy"],
+    "hint": "Main clause + provided that + condition",
+    "explanation": "<Provided that> equivale a 'if' con un matiz más formal: significa 'solo si'."
+  },
+  {
+    "id": "reord-b2-cc-016",
+    "sentence": "As long as you finish the report I don't mind when you start",
+    "words": [
+      "As",
+      "long",
+      "as",
+      "you",
+      "finish",
+      "the",
+      "report",
+      "I",
+      "don't",
+      "mind",
+      "when",
+      "you",
+      "start"
+    ],
+    "hint": "As long as + condition, main clause",
+    "explanation": "<As long as> introduce una condición necesaria, similar a 'provided that'."
+  },
+  {
+    "id": "reord-b2-cc-017",
+    "sentence": "Even though he apologised she still refused to forgive him",
+    "words": [
+      "Even",
+      "though",
+      "he",
+      "apologised",
+      "she",
+      "still",
+      "refused",
+      "to",
+      "forgive",
+      "him"
+    ],
+    "hint": "Even though + clause, main clause",
+    "explanation": "<Even though> introduce un contraste más fuerte que <although>, seguido de una cláusula completa."
+  },
+  {
+    "id": "reord-b2-cc-018",
+    "sentence": "In spite of having little experience she got the job",
+    "words": ["In", "spite", "of", "having", "little", "experience", "she", "got", "the", "job"],
+    "hint": "In spite of + gerund phrase, main clause",
+    "explanation": "<In spite of> va seguido de un sustantivo o gerundio, nunca de una cláusula con verbo conjugado."
+  },
+  {
+    "id": "reord-b2-cc-019",
+    "sentence": "The new policy affects both employees and customers alike",
+    "words": ["The", "new", "policy", "affects", "both", "employees", "and", "customers", "alike"],
+    "hint": "Both + noun + and + noun",
+    "explanation": "<Both ... and> conecta dos elementos por igual, dando énfasis a que ambos están incluidos."
+  },
+  {
+    "id": "reord-b2-cc-020",
+    "sentence": "We can either postpone the meeting or hold it online instead",
+    "words": [
+      "We",
+      "can",
+      "either",
+      "postpone",
+      "the",
+      "meeting",
+      "or",
+      "hold",
+      "it",
+      "online",
+      "instead"
+    ],
+    "hint": "Either + option + or + option",
+    "explanation": "<Either ... or> presenta dos alternativas posibles entre las que elegir."
   }
 ]

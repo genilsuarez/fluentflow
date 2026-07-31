@@ -88,5 +88,35 @@
     "correct": "emergent",
     "explanation": "'Emergent' = que surge de la complejidad, no predecible a partir de las partes individuales.",
     "tip": "Adjective: a property that arises from the whole"
+  },
+  {
+    "sentence": "The committee's response was ___ at best and did little to allay concerns.",
+    "correct": "perfunctory",
+    "explanation": "'Perfunctory' = hecho por mera formalidad, sin interés real.",
+    "tip": "Adjective meaning 'done as a mere formality'"
+  },
+  {
+    "sentence": "Her argument, though elegantly constructed, ultimately proved ___.",
+    "correct": "specious",
+    "explanation": "'Specious' = que parece verdadero pero es engañoso.",
+    "tip": "Adjective meaning 'superficially plausible but false'"
+  },
+  {
+    "sentence": "The two accounts are, in essence, mutually ___.",
+    "correct": "exclusive",
+    "explanation": "'Mutually exclusive' = que no pueden ser ambos ciertos a la vez.",
+    "tip": "Adjective: cannot both be true at once"
+  },
+  {
+    "sentence": "He remained ___ to the mounting criticism throughout the inquiry.",
+    "correct": "impervious",
+    "explanation": "'Impervious to' = no afectado por, inmune a una influencia externa.",
+    "tip": "Adjective meaning 'unaffected by'"
+  },
+  {
+    "sentence": "Negotiations reached an ___ after months of protracted deliberation.",
+    "correct": "impasse",
+    "explanation": "'Impasse' = punto muerto, situación sin salida.",
+    "tip": "Noun meaning 'deadlock'"
   }
 ]

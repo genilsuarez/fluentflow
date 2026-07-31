@@ -1,134 +1,122 @@
 [
   {
     "question": "What is the correct greeting for the morning?",
-    "options": [
-      "Good morning",
-      "Good evening",
-      "Good night",
-      "Goodbye"
-    ],
+    "options": ["Good morning", "Good evening", "Good night", "Goodbye"],
     "correct": 0,
     "explanation": "'Good morning' se usa desde el amanecer hasta el mediodía."
   },
   {
     "question": "How do you ask someone's name?",
-    "options": [
-      "Where are you from?",
-      "What is your name?",
-      "How old are you?",
-      "What do you do?"
-    ],
+    "options": ["Where are you from?", "What is your name?", "How old are you?", "What do you do?"],
     "correct": 1,
     "explanation": "'What is your name?' pregunta por el nombre de alguien."
   },
   {
     "question": "Which sentence is a polite request?",
-    "options": [
-      "Give me water.",
-      "I want water now.",
-      "Can I have some water, please?",
-      "Water!"
-    ],
+    "options": ["Give me water.", "I want water now.", "Can I have some water, please?", "Water!"],
     "correct": 2,
     "explanation": "Usar 'Can I have... please?' es una forma educada de pedir algo."
   },
   {
     "question": "What does 'I'm fine, thank you' mean?",
-    "options": [
-      "I am hungry",
-      "I am lost",
-      "I am sorry",
-      "I am well"
-    ],
+    "options": ["I am hungry", "I am lost", "I am sorry", "I am well"],
     "correct": 3,
     "explanation": "'Fine' significa bien/OK en este contexto."
   },
   {
     "question": "Which word means the opposite of 'hot'?",
-    "options": [
-      "cold",
-      "warm",
-      "cool",
-      "nice"
-    ],
+    "options": ["cold", "warm", "cool", "nice"],
     "correct": 0,
     "explanation": "'Cold' es lo opuesto de 'hot'."
   },
   {
     "question": "She ___ to school every day.",
-    "options": [
-      "go",
-      "goes",
-      "going",
-      "gone"
-    ],
+    "options": ["go", "goes", "going", "gone"],
     "correct": 1,
     "explanation": "Tercera persona singular: she goes."
   },
   {
     "question": "I ___ coffee in the morning.",
-    "options": [
-      "drinks",
-      "drinking",
-      "drink",
-      "drank"
-    ],
+    "options": ["drinks", "drinking", "drink", "drank"],
     "correct": 2,
     "explanation": "Primera persona: I drink (forma base)."
   },
   {
     "question": "They ___ from Mexico.",
-    "options": [
-      "is",
-      "am",
-      "be",
-      "are"
-    ],
+    "options": ["is", "am", "be", "are"],
     "correct": 3,
     "explanation": "'They' usa 'are'."
   },
   {
     "question": "What colour is the sky?",
-    "options": [
-      "blue",
-      "green",
-      "red",
-      "yellow"
-    ],
+    "options": ["blue", "green", "red", "yellow"],
     "correct": 0,
     "explanation": "El cielo suele ser azul."
   },
   {
     "question": "How many days are in a week?",
-    "options": [
-      "five",
-      "seven",
-      "six",
-      "ten"
-    ],
+    "options": ["five", "seven", "six", "ten"],
     "correct": 1,
     "explanation": "Una semana tiene siete días."
   },
   {
     "question": "Which is a fruit?",
-    "options": [
-      "bread",
-      "cheese",
-      "apple",
-      "water"
-    ],
+    "options": ["bread", "cheese", "apple", "water"],
     "correct": 2,
     "explanation": "Una manzana es una fruta."
   },
   {
     "question": "Where do you sleep?",
-    "options": [
-      "in a car",
-      "at school",
-      "in a shop",
-      "in a bed"
-    ],
+    "options": ["in a car", "at school", "in a shop", "in a bed"],
     "correct": 3,
     "explanation": "Dormimos en una cama."
+  },
+  {
+    "question": "What time do you usually have breakfast?",
+    "options": ["In the morning", "In the pencil", "In the window", "In the chair"],
+    "correct": 0,
+    "explanation": "El desayuno se toma 'in the morning' (por la mañana)."
+  },
+  {
+    "question": "Which one is a family member?",
+    "options": ["table", "brother", "window", "pencil"],
+    "correct": 1,
+    "explanation": "'Brother' (hermano) es un miembro de la familia."
+  },
+  {
+    "question": "We ___ two cats at home.",
+    "options": ["has", "is", "have", "am"],
+    "correct": 2,
+    "explanation": "Con 'we' se usa 'have', no 'has'."
+  },
+  {
+    "question": "What is the opposite of 'big'?",
+    "options": ["tall", "small", "long", "heavy"],
+    "correct": 1,
+    "explanation": "'Small' es lo opuesto de 'big'."
+  },
+  {
+    "question": "Which word is a day of the week?",
+    "options": ["January", "Monday", "Summer", "April"],
+    "correct": 1,
+    "explanation": "'Monday' (lunes) es un día de la semana."
+  },
+  {
+    "question": "How do you say goodbye politely?",
+    "options": ["See you later!", "What's that?", "I don't know.", "Never mind."],
+    "correct": 0,
+    "explanation": "'See you later!' es una despedida común y educada."
+  },
+  {
+    "question": "This is ___ apple.",
+    "options": ["a", "an", "the a", "some a"],
+    "correct": 1,
+    "explanation": "Se usa 'an' antes de palabras que empiezan con sonido vocálico, como 'apple'."
+  },
+  {
+    "question": "Which is a job?",
+    "options": ["hungry", "teacher", "yellow", "tired"],
+    "correct": 1,
+    "explanation": "'Teacher' (profesor/a) es una profesión."
   }
 ]

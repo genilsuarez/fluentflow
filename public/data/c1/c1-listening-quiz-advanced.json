@@ -1,12 +1,7 @@
 [
   {
     "question": "The findings suggest that further research is warranted. What does 'warranted' mean here?",
-    "options": [
-      "Justified / necessary",
-      "Prohibited",
-      "Already completed",
-      "Unlikely"
-    ],
+    "options": ["Justified / necessary", "Prohibited", "Already completed", "Unlikely"],
     "correct": 0,
     "explanation": "'Warranted' = justificado, necesario, merecido. Común en el matiz cauteloso (hedging) académico."
   },
@@ -34,23 +29,13 @@
   },
   {
     "question": "It is imperative that all participants submit their data. What mood is 'submit'?",
-    "options": [
-      "Indicative",
-      "Imperative",
-      "Conditional",
-      "Subjunctive"
-    ],
+    "options": ["Indicative", "Imperative", "Conditional", "Subjunctive"],
     "correct": 3,
     "explanation": "'It is imperative/essential/vital that' + sujeto + verbo base (subjuntivo)."
   },
   {
     "question": "The phenomenon, hitherto unexplained, has now been attributed to quantum effects. What does 'hitherto' mean?",
-    "options": [
-      "Until now / up to this point",
-      "In the future",
-      "Perhaps",
-      "Definitely"
-    ],
+    "options": ["Until now / up to this point", "In the future", "Perhaps", "Definitely"],
     "correct": 0,
     "explanation": "'Hitherto' = hasta ahora. Adverbio formal/académico que indica que algo era cierto antes pero ha cambiado."
   },
@@ -122,13 +107,91 @@
   },
   {
     "question": "Notwithstanding the limitations, the study provides valuable insights. What register is 'notwithstanding'?",
-    "options": [
-      "Informal / colloquial",
-      "Legal only",
-      "Archaic / obsolete",
-      "Formal / academic"
-    ],
+    "options": ["Informal / colloquial", "Legal only", "Archaic / obsolete", "Formal / academic"],
     "correct": 3,
     "explanation": "'Notwithstanding' = a pesar de. Registro formal, común en la escritura académica y legal."
+  },
+  {
+    "question": "The report, thorough as it was, failed to address key concerns. What does 'thorough as it was' express?",
+    "options": [
+      "A conditional result",
+      "A concession fronted for emphasis (= although it was thorough)",
+      "A relative clause",
+      "A comparison"
+    ],
+    "correct": 1,
+    "explanation": "'Adjetivo + as + sujeto + be' antepuesto = concesión formal, equivalente a 'although it was thorough'."
+  },
+  {
+    "question": "So entrenched are these beliefs that reform has proven difficult. What structure triggers the inversion?",
+    "options": [
+      "A negative adverb",
+      "'So + adjective' fronted for emphasis",
+      "A question tag",
+      "A passive construction"
+    ],
+    "correct": 1,
+    "explanation": "'So + adjetivo' al inicio de la oración provoca inversión de sujeto y verbo para dar énfasis."
+  },
+  {
+    "question": "Seldom has such a proposal received unanimous support. What does 'seldom' trigger?",
+    "options": [
+      "No grammatical change",
+      "Passive voice",
+      "Inversion, as with other negative frequency adverbs",
+      "Reported speech"
+    ],
+    "correct": 2,
+    "explanation": "'Seldom' es un adverbio de frecuencia negativo; al inicio de la oración exige inversión sujeto-auxiliar."
+  },
+  {
+    "question": "The committee's decision, controversial though it may seem, was reached unanimously. What does 'though' do here?",
+    "options": [
+      "Introduces a reason",
+      "Introduces a concession after a fronted adjective",
+      "Introduces a result",
+      "Introduces a condition"
+    ],
+    "correct": 1,
+    "explanation": "'Adjetivo + though + sujeto + verbo' es una estructura concesiva formal, alternativa a 'although'."
+  },
+  {
+    "question": "Be that as it may, the deadline remains unchanged. What function does this phrase serve?",
+    "options": [
+      "It introduces a new topic",
+      "It concedes a point before dismissing its relevance",
+      "It asks a rhetorical question",
+      "It reports someone's speech"
+    ],
+    "correct": 1,
+    "explanation": "'Be that as it may' = concesión formal fija, equivalente a 'nevertheless' tras admitir un punto."
+  },
+  {
+    "question": "Nowhere is this more evident than in the field of medicine. What triggers the inversion?",
+    "options": [
+      "A fronted negative locative adverb",
+      "A passive verb",
+      "A reported clause",
+      "A conditional marker"
+    ],
+    "correct": 0,
+    "explanation": "'Nowhere' al inicio, con valor negativo de lugar, provoca inversión: 'Nowhere is this more evident'."
+  },
+  {
+    "question": "Provided the funding materialises, the project will proceed as planned. What does 'provided' introduce?",
+    "options": ["A concession", "A formal condition (= if)", "A result", "A reported statement"],
+    "correct": 1,
+    "explanation": "'Provided (that)' introduce una condición formal, equivalente a 'if', frecuente en registro académico."
+  },
+  {
+    "question": "Herein lies the fundamental problem with this approach. What does 'herein' mean?",
+    "options": [
+      "Nearby, in a physical sense",
+      "In this document or matter",
+      "Immediately",
+      "In the past"
+    ],
+    "correct": 1,
+    "explanation": "'Herein' = en esto/en este documento. Adverbio formal y arcaizante usado en textos académicos y legales."
   }
 ]

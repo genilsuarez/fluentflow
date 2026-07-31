@@ -88,5 +88,35 @@
     "correct": "see",
     "explanation": "Primer condicional: If + presente simple, modal + verbo base.",
     "tip": "First conditional verb form"
+  },
+  {
+    "sentence": "By the time we arrived, the film ___ already started.",
+    "correct": "had",
+    "explanation": "Pasado perfecto: had + participio para una acción anterior a otra acción pasada.",
+    "tip": "Past perfect auxiliary"
+  },
+  {
+    "sentence": "This house needs ___ before winter.",
+    "correct": "repairing",
+    "explanation": "'Need' + gerundio tiene sentido pasivo: needs repairing = needs to be repaired.",
+    "tip": "Passive gerund after 'need'"
+  },
+  {
+    "sentence": "Hardly ___ he arrived when the phone rang.",
+    "correct": "had",
+    "explanation": "Inversión con 'hardly': Hardly + had + sujeto + participio.",
+    "tip": "Inversion with 'hardly'"
+  },
+  {
+    "sentence": "The man ___ car was stolen called the police.",
+    "correct": "whose",
+    "explanation": "'Whose' es el pronombre relativo posesivo para personas.",
+    "tip": "Possessive relative pronoun"
+  },
+  {
+    "sentence": "It's high time you ___ your homework.",
+    "correct": "did",
+    "explanation": "'It's (high) time' + pasado simple expresa que algo debería haber pasado ya.",
+    "tip": "It's time + past tense form"
   }
 ]

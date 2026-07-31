@@ -231,5 +231,141 @@
     ],
     "hint": "Subject + of + noun phrase + verb + complement",
     "explanation": "<Elucidation> (explicación) y <elusive> (difícil de lograr) son vocabulario formal."
+  },
+  {
+    "id": "reord-c2-fa-013",
+    "sentence": "The committee's response was perfunctory at best and did little to allay concerns",
+    "words": [
+      "The",
+      "committee's",
+      "response",
+      "was",
+      "perfunctory",
+      "at",
+      "best",
+      "and",
+      "did",
+      "little",
+      "to",
+      "allay",
+      "concerns"
+    ],
+    "hint": "Subject + was + adjective + at best, main clause",
+    "explanation": "<Perfunctory> (hecho por trámite) y <allay> (aliviar/calmar) son vocabulario académico formal."
+  },
+  {
+    "id": "reord-c2-fa-014",
+    "sentence": "The two accounts are, in essence, mutually exclusive propositions",
+    "words": [
+      "The",
+      "two",
+      "accounts",
+      "are",
+      "in",
+      "essence",
+      "mutually",
+      "exclusive",
+      "propositions"
+    ],
+    "hint": "Subject + are + inserted phrase + complement",
+    "explanation": "<Mutually exclusive> significa que dos cosas no pueden ser ciertas simultáneamente."
+  },
+  {
+    "id": "reord-c2-fa-015",
+    "sentence": "The policy's efficacy remains tenuous in the absence of longitudinal data",
+    "words": [
+      "The",
+      "policy's",
+      "efficacy",
+      "remains",
+      "tenuous",
+      "in",
+      "the",
+      "absence",
+      "of",
+      "longitudinal",
+      "data"
+    ],
+    "hint": "Subject + remains + adjective + prepositional phrase",
+    "explanation": "<Tenuous> (débil, poco sólido) describe un argumento o efecto difícil de sostener con evidencia."
+  },
+  {
+    "id": "reord-c2-fa-016",
+    "sentence": "He remained impervious to the mounting criticism throughout the inquiry",
+    "words": [
+      "He",
+      "remained",
+      "impervious",
+      "to",
+      "the",
+      "mounting",
+      "criticism",
+      "throughout",
+      "the",
+      "inquiry"
+    ],
+    "hint": "Subject + remained + adjective + to + noun phrase",
+    "explanation": "<Impervious to> significa que algo o alguien no se ve afectado por una influencia externa."
+  },
+  {
+    "id": "reord-c2-fa-017",
+    "sentence": "Negotiations reached an impasse after months of protracted deliberation",
+    "words": [
+      "Negotiations",
+      "reached",
+      "an",
+      "impasse",
+      "after",
+      "months",
+      "of",
+      "protracted",
+      "deliberation"
+    ],
+    "hint": "Subject + verb + object + prepositional phrase",
+    "explanation": "<Impasse> (punto muerto) y <protracted> (prolongado) son vocabulario formal frecuente en textos de negociación."
+  },
+  {
+    "id": "reord-c2-fa-018",
+    "sentence": "The report's conclusions are tantamount to an implicit admission of failure",
+    "words": [
+      "The",
+      "report's",
+      "conclusions",
+      "are",
+      "tantamount",
+      "to",
+      "an",
+      "implicit",
+      "admission",
+      "of",
+      "failure"
+    ],
+    "hint": "Subject + are + tantamount to + noun phrase",
+    "explanation": "<Tantamount to> significa 'equivalente a', que en la práctica implica lo mismo."
+  },
+  {
+    "id": "reord-c2-fa-019",
+    "sentence": "Her critique was trenchant but not entirely without merit",
+    "words": ["Her", "critique", "was", "trenchant", "but", "not", "entirely", "without", "merit"],
+    "hint": "Subject + was + adjective + but + concession",
+    "explanation": "<Trenchant> significa incisivo, contundente, dicho con fuerza crítica."
+  },
+  {
+    "id": "reord-c2-fa-020",
+    "sentence": "The prevailing consensus notwithstanding a growing minority disputes the conclusion",
+    "words": [
+      "The",
+      "prevailing",
+      "consensus",
+      "notwithstanding",
+      "a",
+      "growing",
+      "minority",
+      "disputes",
+      "the",
+      "conclusion"
+    ],
+    "hint": "Noun phrase + notwithstanding (postposed), main clause",
+    "explanation": "<Notwithstanding> puede colocarse después del sustantivo al que modifica en registro muy formal: 'the consensus notwithstanding'."
   }
 ]

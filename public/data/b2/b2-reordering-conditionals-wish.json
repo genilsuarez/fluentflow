@@ -15,26 +15,14 @@
       "the",
       "exam"
     ],
-    "distractors": [
-      "would had"
-    ],
+    "distractors": ["would had"],
     "hint": "Third conditional: If + had + pp, would have + pp",
     "explanation": "Tercera condicional: If + pasado perfecto, would have + participio pasado. Nunca 'would had'."
   },
   {
     "id": "reord-b2-cw-002",
     "sentence": "I wish I had known about the deadline earlier",
-    "words": [
-      "I",
-      "wish",
-      "I",
-      "had",
-      "known",
-      "about",
-      "the",
-      "deadline",
-      "earlier"
-    ],
+    "words": ["I", "wish", "I", "had", "known", "about", "the", "deadline", "earlier"],
     "hint": "Wish + past perfect for past regrets",
     "explanation": "Wish + pasado perfecto para arrepentimientos sobre el pasado: 'wish I had known'."
   },
@@ -60,15 +48,7 @@
   {
     "id": "reord-b2-cw-004",
     "sentence": "I wish I could speak Japanese fluently",
-    "words": [
-      "I",
-      "wish",
-      "I",
-      "could",
-      "speak",
-      "Japanese",
-      "fluently"
-    ],
+    "words": ["I", "wish", "I", "could", "speak", "Japanese", "fluently"],
     "hint": "Wish + could for present wishes about ability",
     "explanation": "Wish + could + forma base para deseos sobre habilidades presentes."
   },
@@ -96,53 +76,20 @@
   {
     "id": "reord-b2-cw-006",
     "sentence": "If only I had listened to my parents' advice",
-    "words": [
-      "If",
-      "only",
-      "I",
-      "had",
-      "listened",
-      "to",
-      "my",
-      "parents'",
-      "advice"
-    ],
+    "words": ["If", "only", "I", "had", "listened", "to", "my", "parents'", "advice"],
     "explanation": "'If only' + pasado perfecto para expresar un fuerte arrepentimiento sobre el pasado."
   },
   {
     "id": "reord-b2-cw-007",
     "sentence": "He would have been promoted if he had worked harder",
-    "words": [
-      "He",
-      "would",
-      "have",
-      "been",
-      "promoted",
-      "if",
-      "he",
-      "had",
-      "worked",
-      "harder"
-    ],
-    "distractors": [
-      "would had"
-    ],
+    "words": ["He", "would", "have", "been", "promoted", "if", "he", "had", "worked", "harder"],
+    "distractors": ["would had"],
     "explanation": "Tercera condicional con el resultado primero. 'Would have been' (no 'would had been')."
   },
   {
     "id": "reord-b2-cw-008",
     "sentence": "I wish people would stop using so much plastic",
-    "words": [
-      "I",
-      "wish",
-      "people",
-      "would",
-      "stop",
-      "using",
-      "so",
-      "much",
-      "plastic"
-    ],
+    "words": ["I", "wish", "people", "would", "stop", "using", "so", "much", "plastic"],
     "hint": "Wish + would for complaints about others",
     "explanation": "Wish + would para expresar molestia o quejas sobre el comportamiento de otras personas."
   },
@@ -168,18 +115,7 @@
   {
     "id": "reord-b2-cw-010",
     "sentence": "She wishes she had not said those things to him",
-    "words": [
-      "She",
-      "wishes",
-      "she",
-      "had",
-      "not",
-      "said",
-      "those",
-      "things",
-      "to",
-      "him"
-    ],
+    "words": ["She", "wishes", "she", "had", "not", "said", "those", "things", "to", "him"],
     "explanation": "Wish + pasado perfecto en negativo para arrepentirse de acciones pasadas."
   },
   {
@@ -199,27 +135,14 @@
       "the",
       "position"
     ],
-    "distractors": [
-      "was"
-    ],
+    "distractors": ["was"],
     "hint": "Mixed conditional: present condition, past result",
     "explanation": "Mixta: If + were (presente), would have + pp (resultado pasado). Se usa 'were', no 'was'."
   },
   {
     "id": "reord-b2-cw-012",
     "sentence": "I wish I did not have to work this weekend",
-    "words": [
-      "I",
-      "wish",
-      "I",
-      "did",
-      "not",
-      "have",
-      "to",
-      "work",
-      "this",
-      "weekend"
-    ],
+    "words": ["I", "wish", "I", "did", "not", "have", "to", "work", "this", "weekend"],
     "explanation": "Wish + pasado simple para deseos presentes: 'wish I didn't have to'."
   },
   {
@@ -244,19 +167,7 @@
   {
     "id": "reord-b2-cw-014",
     "sentence": "If only she had told us the truth from the beginning",
-    "words": [
-      "If",
-      "only",
-      "she",
-      "had",
-      "told",
-      "us",
-      "the",
-      "truth",
-      "from",
-      "the",
-      "beginning"
-    ],
+    "words": ["If", "only", "she", "had", "told", "us", "the", "truth", "from", "the", "beginning"],
     "explanation": "'If only' + pasado perfecto para un fuerte arrepentimiento pasado."
   },
   {
@@ -276,26 +187,14 @@
       "the",
       "map"
     ],
-    "distractors": [
-      "would had"
-    ],
+    "distractors": ["would had"],
     "explanation": "Tercera condicional en negativo con el resultado primero. 'Would not have' (nunca 'would had')."
   },
   {
     "id": "reord-b2-cw-016",
     "sentence": "I wish the weather were better today",
-    "words": [
-      "I",
-      "wish",
-      "the",
-      "weather",
-      "were",
-      "better",
-      "today"
-    ],
-    "distractors": [
-      "was"
-    ],
+    "words": ["I", "wish", "the", "weather", "were", "better", "today"],
+    "distractors": ["was"],
     "explanation": "Wish + were (subjuntivo) para deseos presentes. Forma formal: 'were', no 'was'."
   },
   {
@@ -321,18 +220,7 @@
   {
     "id": "reord-b2-cw-018",
     "sentence": "He wishes he had traveled more when he was younger",
-    "words": [
-      "He",
-      "wishes",
-      "he",
-      "had",
-      "traveled",
-      "more",
-      "when",
-      "he",
-      "was",
-      "younger"
-    ],
+    "words": ["He", "wishes", "he", "had", "traveled", "more", "when", "he", "was", "younger"],
     "explanation": "Wish + pasado perfecto para arrepentimiento pasado con cláusula temporal."
   },
   {
@@ -371,9 +259,7 @@
       "top",
       "shelf"
     ],
-    "distractors": [
-      "was"
-    ],
+    "distractors": ["was"],
     "explanation": "Wish + were para un deseo presente + cláusula con 'so' para expresar propósito."
   },
   {
@@ -416,18 +302,7 @@
   {
     "id": "reord-b2-cw-023",
     "sentence": "If only we had more time to finish the project",
-    "words": [
-      "If",
-      "only",
-      "we",
-      "had",
-      "more",
-      "time",
-      "to",
-      "finish",
-      "the",
-      "project"
-    ],
+    "words": ["If", "only", "we", "had", "more", "time", "to", "finish", "the", "project"],
     "explanation": "'If only' + pasado simple para deseos presentes (igual que 'wish')."
   },
   {
@@ -468,5 +343,95 @@
       "child"
     ],
     "explanation": "Wish + pasado perfecto para arrepentimiento pasado con cláusula temporal."
+  },
+  {
+    "id": "reord-b2-cw-026",
+    "sentence": "Were it not for your support I would have given up long ago",
+    "words": [
+      "Were",
+      "it",
+      "not",
+      "for",
+      "your",
+      "support",
+      "I",
+      "would",
+      "have",
+      "given",
+      "up",
+      "long",
+      "ago"
+    ],
+    "hint": "Were it not for = if it weren't for (formal inversion)",
+    "explanation": "'Were it not for' es una inversión formal de 'if it were not for', usada en tercera condicional mixta."
+  },
+  {
+    "id": "reord-b2-cw-027",
+    "sentence": "Had we known the traffic would be so bad we would have left earlier",
+    "words": [
+      "Had",
+      "we",
+      "known",
+      "the",
+      "traffic",
+      "would",
+      "be",
+      "so",
+      "bad",
+      "we",
+      "would",
+      "have",
+      "left",
+      "earlier"
+    ],
+    "hint": "Had + subject + past participle = if + subject + had (inversion)",
+    "explanation": "Inversión formal de la tercera condicional: 'Had we known' = 'If we had known'."
+  },
+  {
+    "id": "reord-b2-cw-028",
+    "sentence": "If I had taken his advice I would not be in this situation now",
+    "words": [
+      "If",
+      "I",
+      "had",
+      "taken",
+      "his",
+      "advice",
+      "I",
+      "would",
+      "not",
+      "be",
+      "in",
+      "this",
+      "situation",
+      "now"
+    ],
+    "hint": "Mixed conditional: past condition, present result",
+    "explanation": "Condicional mixta: causa en el pasado (had taken) y resultado en el presente (would not be)."
+  },
+  {
+    "id": "reord-b2-cw-029",
+    "sentence": "I would rather you told me the truth right now",
+    "words": ["I", "would", "rather", "you", "told", "me", "the", "truth", "right", "now"],
+    "hint": "Would rather + subject + past simple for present/future preference",
+    "explanation": "'Would rather' + sujeto + pasado simple expresa preferencia sobre lo que otra persona haga ahora."
+  },
+  {
+    "id": "reord-b2-cw-030",
+    "sentence": "It's about time you took some responsibility for your actions",
+    "words": [
+      "It's",
+      "about",
+      "time",
+      "you",
+      "took",
+      "some",
+      "responsibility",
+      "for",
+      "your",
+      "actions"
+    ],
+    "hint": "It's (about) time + past simple = something should happen now",
+    "explanation": "'It's about time' + pasado simple expresa que algo debería estar sucediendo ya, con matiz de crítica."
   }
 ]

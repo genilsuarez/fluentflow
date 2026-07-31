@@ -88,5 +88,35 @@
     "correct": "like",
     "explanation": "'Would you like...?' = ofrecimiento cortés.",
     "tip": "Polite offer verb"
+  },
+  {
+    "sentence": "I ___ my homework before dinner yesterday.",
+    "correct": "finished",
+    "explanation": "Pasado simple de 'finish' → finished (verbo regular + -ed).",
+    "tip": "Regular past tense verb"
+  },
+  {
+    "sentence": "She ___ never been to Japan.",
+    "correct": "has",
+    "explanation": "Presente perfecto negativo: has + never + participio.",
+    "tip": "Present perfect auxiliary (3rd person)"
+  },
+  {
+    "sentence": "We ___ swimming every Sunday.",
+    "correct": "go",
+    "explanation": "Presente simple con 'we': go swimming.",
+    "tip": "Base form with we/they/I/you"
+  },
+  {
+    "sentence": "If it rains, I ___ stay at home.",
+    "correct": "will",
+    "explanation": "Primer condicional: if + presente, will + verbo base.",
+    "tip": "Future modal in a conditional"
+  },
+  {
+    "sentence": "He ___ watching TV when I called him.",
+    "correct": "was",
+    "explanation": "Pasado continuo: was/were + -ing para acciones interrumpidas.",
+    "tip": "Past continuous auxiliary (3rd person)"
   }
 ]

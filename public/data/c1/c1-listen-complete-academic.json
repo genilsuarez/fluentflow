@@ -88,5 +88,35 @@
     "correct": "say",
     "explanation": "'Suffice it to say' = es suficiente decir. Expresión formal fija.",
     "tip": "Fixed phrase: suffice it to ___"
+  },
+  {
+    "sentence": "So ___ are these beliefs that reform has proven extremely difficult.",
+    "correct": "entrenched",
+    "explanation": "'So + adjetivo' antepuesto para énfasis: 'entrenched' = arraigado.",
+    "tip": "Adjective meaning 'deeply rooted'"
+  },
+  {
+    "sentence": "Seldom ___ such a proposal received unanimous support.",
+    "correct": "has",
+    "explanation": "'Seldom' (adverbio de frecuencia negativo) al inicio exige inversión: Seldom has + sujeto.",
+    "tip": "Present perfect auxiliary (inverted)"
+  },
+  {
+    "sentence": "Controversial ___ it may seem, the decision was reached unanimously.",
+    "correct": "though",
+    "explanation": "'Adjetivo + though + sujeto + verbo' es una concesión formal alternativa a 'although'.",
+    "tip": "Formal concessive word after a fronted adjective"
+  },
+  {
+    "sentence": "Be that as it ___, the deadline remains unchanged.",
+    "correct": "may",
+    "explanation": "'Be that as it may' es una expresión fija concesiva: admite un punto antes de descartar su relevancia.",
+    "tip": "Fixed phrase: be that as it ___"
+  },
+  {
+    "sentence": "Nowhere ___ this more evident than in the field of medicine.",
+    "correct": "is",
+    "explanation": "'Nowhere' al inicio (adverbio negativo de lugar) provoca inversión: Nowhere is this...",
+    "tip": "Inverted 'be' after a fronted negative adverb"
   }
 ]

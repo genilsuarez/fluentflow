@@ -111,9 +111,7 @@
       "before",
       "publication"
     ],
-    "distractors": [
-      "are"
-    ],
+    "distractors": ["are"],
     "explanation": "Subjuntivo: 'be replicated' (no 'are replicated') después de 'it is imperative that'."
   },
   {
@@ -488,5 +486,106 @@
       "truth"
     ],
     "explanation": "Hendida con 'only by': 'It is only by X that...' para poner énfasis en el método."
+  },
+  {
+    "id": "reord-c2-as-026",
+    "sentence": "So far removed from reality was the proposal that no one took it seriously",
+    "words": [
+      "So",
+      "far",
+      "removed",
+      "from",
+      "reality",
+      "was",
+      "the",
+      "proposal",
+      "that",
+      "no",
+      "one",
+      "took",
+      "it",
+      "seriously"
+    ],
+    "hint": "So + participle phrase + was + subject + that",
+    "explanation": "'So + frase participial' antepuesta provoca inversión: 'So far removed... was the proposal'."
+  },
+  {
+    "id": "reord-c2-as-027",
+    "sentence": "Not since the last recession has consumer confidence fallen so sharply",
+    "words": [
+      "Not",
+      "since",
+      "the",
+      "last",
+      "recession",
+      "has",
+      "consumer",
+      "confidence",
+      "fallen",
+      "so",
+      "sharply"
+    ],
+    "hint": "Not since + time reference + auxiliary + subject + verb",
+    "explanation": "'Not since' antepuesto provoca inversión: 'has consumer confidence fallen'."
+  },
+  {
+    "id": "reord-c2-as-028",
+    "sentence": "Were the truth ever to come out the consequences would be catastrophic",
+    "words": [
+      "Were",
+      "the",
+      "truth",
+      "ever",
+      "to",
+      "come",
+      "out",
+      "the",
+      "consequences",
+      "would",
+      "be",
+      "catastrophic"
+    ],
+    "hint": "Were + subject + ever + to + infinitive (formal hypothetical)",
+    "explanation": "'Were + sujeto + to + infinitivo' es una condicional hipotética muy formal, equivalente a 'if the truth were ever to come out'."
+  },
+  {
+    "id": "reord-c2-as-029",
+    "sentence": "What the committee failed to grasp was the sheer scale of the undertaking",
+    "words": [
+      "What",
+      "the",
+      "committee",
+      "failed",
+      "to",
+      "grasp",
+      "was",
+      "the",
+      "sheer",
+      "scale",
+      "of",
+      "the",
+      "undertaking"
+    ],
+    "hint": "What + clause + was + complement (wh-cleft)",
+    "explanation": "Hendida con 'what': pone énfasis en la información nueva colocándola tras 'was'."
+  },
+  {
+    "id": "reord-c2-as-030",
+    "sentence": "Such was the outcry that the policy was withdrawn within days",
+    "words": [
+      "Such",
+      "was",
+      "the",
+      "outcry",
+      "that",
+      "the",
+      "policy",
+      "was",
+      "withdrawn",
+      "within",
+      "days"
+    ],
+    "hint": "Such + was + subject + that",
+    "explanation": "'Such' antepuesto con inversión enfatiza el grado o intensidad: 'Such was the outcry that...'."
   }
 ]

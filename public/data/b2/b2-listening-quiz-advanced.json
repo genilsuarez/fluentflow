@@ -12,12 +12,7 @@
   },
   {
     "question": "The CEO is believed to have resigned last week. What structure is this?",
-    "options": [
-      "Active voice",
-      "Impersonal passive",
-      "Reported speech",
-      "Relative clause"
-    ],
+    "options": ["Active voice", "Impersonal passive", "Reported speech", "Relative clause"],
     "correct": 1,
     "explanation": "Sujeto + is believed/thought/said + to have + participio pasado = estilo indirecto pasivo impersonal."
   },
@@ -100,23 +95,13 @@
   },
   {
     "question": "The committee is to meet on Monday. What does 'be to + infinitive' express?",
-    "options": [
-      "An ability",
-      "A formal arrangement or plan",
-      "A past habit",
-      "A permission"
-    ],
+    "options": ["An ability", "A formal arrangement or plan", "A past habit", "A permission"],
     "correct": 1,
     "explanation": "'Be to + infinitivo' = acuerdos formales/oficiales, frecuente en noticias o contextos formales."
   },
   {
     "question": "Notwithstanding the criticism, the company proceeded. What does 'notwithstanding' mean?",
-    "options": [
-      "Because of",
-      "In addition to",
-      "Despite / in spite of",
-      "As a result of"
-    ],
+    "options": ["Because of", "In addition to", "Despite / in spite of", "As a result of"],
     "correct": 2,
     "explanation": "'Notwithstanding' = despite (a pesar de). Conector de registro formal."
   },
@@ -130,5 +115,93 @@
     ],
     "correct": 3,
     "explanation": "Cláusula temporal (pasado simple) + cláusula principal (pasado perfecto pasivo) = acción anterior completada antes de la referencia temporal."
+  },
+  {
+    "question": "Little did she know that her plan would fail. What causes the inversion here?",
+    "options": [
+      "A negative adverbial ('little') at the start of the sentence",
+      "A question form",
+      "A conditional clause",
+      "Passive voice"
+    ],
+    "correct": 0,
+    "explanation": "'Little' con valor negativo al inicio de la oración provoca inversión de sujeto y auxiliar: 'Little did she know...'."
+  },
+  {
+    "question": "The proposal is said to be under review. What does this passive structure imply?",
+    "options": [
+      "The speaker is certain about the source",
+      "The information comes from an unspecified or general source",
+      "It is a direct quote",
+      "It refers to a future event only"
+    ],
+    "correct": 1,
+    "explanation": "'Is said to be' distancia al hablante de la fuente exacta de la información, típica del registro periodístico."
+  },
+  {
+    "question": "Only after the meeting did we understand the decision. What triggers the inversion?",
+    "options": [
+      "'Only after' at the start of the sentence",
+      "A relative pronoun",
+      "A modal verb",
+      "The passive voice"
+    ],
+    "correct": 0,
+    "explanation": "Expresiones restrictivas con 'only' al inicio provocan inversión: 'Only after... did we understand'."
+  },
+  {
+    "question": "I'd rather you didn't smoke in here. What does this express?",
+    "options": [
+      "A regret about the past",
+      "A polite preference about someone else's present/future action",
+      "A prediction",
+      "A reported command"
+    ],
+    "correct": 1,
+    "explanation": "'Would rather' + sujeto + pasado simple expresa una preferencia educada sobre lo que otra persona haga."
+  },
+  {
+    "question": "Rarely have I seen such dedication. What structure is this?",
+    "options": [
+      "Reported speech",
+      "Inversion after a negative frequency adverb",
+      "Passive voice",
+      "Zero conditional"
+    ],
+    "correct": 1,
+    "explanation": "'Rarely' al inicio (adverbio de frecuencia negativo) exige inversión: 'Rarely have I seen...'."
+  },
+  {
+    "question": "Given the circumstances, she handled it well. What does 'given' introduce here?",
+    "options": [
+      "A reason or condition being taken into account",
+      "A direct object",
+      "A passive agent",
+      "A relative clause"
+    ],
+    "correct": 0,
+    "explanation": "'Given' + sustantivo = 'considering' (teniendo en cuenta), introduce una circunstancia que explica lo siguiente."
+  },
+  {
+    "question": "The contract, once signed, cannot be modified. What does the reduced clause 'once signed' replace?",
+    "options": [
+      "Once it is signed",
+      "Once it was signing",
+      "Once it will sign",
+      "Once it has signing"
+    ],
+    "correct": 0,
+    "explanation": "Cláusula reducida pasiva: 'once (it is) signed' omite el sujeto y el verbo 'be' cuando son obvios por contexto."
+  },
+  {
+    "question": "Such was her determination that nothing could stop her. What is emphasised by fronting 'such'?",
+    "options": [
+      "A question",
+      "The intensity of her determination",
+      "A past habit",
+      "A future plan"
+    ],
+    "correct": 1,
+    "explanation": "'Such + be + sujeto + that' antepuesto enfatiza el grado o intensidad, seguido de inversión."
   }
 ]

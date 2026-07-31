@@ -2,139 +2,53 @@
   {
     "id": "reord-b1-rc-001",
     "sentence": "The woman who lives next door is a doctor",
-    "words": [
-      "The",
-      "woman",
-      "who",
-      "lives",
-      "next",
-      "door",
-      "is",
-      "a",
-      "doctor"
-    ],
+    "words": ["The", "woman", "who", "lives", "next", "door", "is", "a", "doctor"],
     "explanation": "Cláusula relativa especificativa: 'who lives next door' identifica de qué mujer se trata."
   },
   {
     "id": "reord-b1-rc-002",
     "sentence": "I bought the book which you recommended",
-    "words": [
-      "I",
-      "bought",
-      "the",
-      "book",
-      "which",
-      "you",
-      "recommended"
-    ],
-    "distractors": [
-      "whose"
-    ],
+    "words": ["I", "bought", "the", "book", "which", "you", "recommended"],
+    "distractors": ["whose"],
     "explanation": "'Which' para cosas — es el objeto (tú lo recomendaste)."
   },
   {
     "id": "reord-b1-rc-003",
     "sentence": "That is the school where I studied as a child",
-    "words": [
-      "That",
-      "is",
-      "the",
-      "school",
-      "where",
-      "I",
-      "studied",
-      "as",
-      "a",
-      "child"
-    ],
+    "words": ["That", "is", "the", "school", "where", "I", "studied", "as", "a", "child"],
     "explanation": "'Where' introduce una cláusula relativa sobre un lugar."
   },
   {
     "id": "reord-b1-rc-004",
     "sentence": "The man whose car was stolen called the police",
-    "words": [
-      "The",
-      "man",
-      "whose",
-      "car",
-      "was",
-      "stolen",
-      "called",
-      "the",
-      "police"
-    ],
-    "distractors": [
-      "who"
-    ],
+    "words": ["The", "man", "whose", "car", "was", "stolen", "called", "the", "police"],
+    "distractors": ["who"],
     "explanation": "'Whose' indica posesión — el auto del hombre. No 'who' (que no indica posesión)."
   },
   {
     "id": "reord-b1-rc-005",
     "sentence": "She is the teacher who inspired me to study English",
-    "words": [
-      "She",
-      "is",
-      "the",
-      "teacher",
-      "who",
-      "inspired",
-      "me",
-      "to",
-      "study",
-      "English"
-    ],
+    "words": ["She", "is", "the", "teacher", "who", "inspired", "me", "to", "study", "English"],
     "explanation": "'Who' para personas como sujeto de la cláusula relativa."
   },
   {
     "id": "reord-b1-rc-006",
     "sentence": "The restaurant where we had dinner was expensive",
-    "words": [
-      "The",
-      "restaurant",
-      "where",
-      "we",
-      "had",
-      "dinner",
-      "was",
-      "expensive"
-    ],
-    "distractors": [
-      "which"
-    ],
+    "words": ["The", "restaurant", "where", "we", "had", "dinner", "was", "expensive"],
+    "distractors": ["which"],
     "hint": "Use 'where' for places, not 'which' (unless you add 'in which')",
     "explanation": "'Where' = in which. Más natural para lugares."
   },
   {
     "id": "reord-b1-rc-007",
     "sentence": "I have a friend whose mother speaks five languages",
-    "words": [
-      "I",
-      "have",
-      "a",
-      "friend",
-      "whose",
-      "mother",
-      "speaks",
-      "five",
-      "languages"
-    ],
+    "words": ["I", "have", "a", "friend", "whose", "mother", "speaks", "five", "languages"],
     "explanation": "'Whose' = la madre de mi amigo. Indica posesión."
   },
   {
     "id": "reord-b1-rc-008",
     "sentence": "The film that we watched last night was really boring",
-    "words": [
-      "The",
-      "film",
-      "that",
-      "we",
-      "watched",
-      "last",
-      "night",
-      "was",
-      "really",
-      "boring"
-    ],
+    "words": ["The", "film", "that", "we", "watched", "last", "night", "was", "really", "boring"],
     "explanation": "'That' para cosas en cláusulas especificativas (objeto — 'we' es el sujeto)."
   },
   {
@@ -153,92 +67,38 @@
       "my",
       "neighbours"
     ],
-    "distractors": [
-      "which"
-    ],
+    "distractors": ["which"],
     "explanation": "'Who' para personas (no 'which'). Sujeto de la cláusula relativa."
   },
   {
     "id": "reord-b1-rc-010",
     "sentence": "This is the house where Shakespeare was born",
-    "words": [
-      "This",
-      "is",
-      "the",
-      "house",
-      "where",
-      "Shakespeare",
-      "was",
-      "born"
-    ],
+    "words": ["This", "is", "the", "house", "where", "Shakespeare", "was", "born"],
     "explanation": "'Where' para lugares — la casa es un lugar."
   },
   {
     "id": "reord-b1-rc-011",
     "sentence": "The company which offered me a job is in Madrid",
-    "words": [
-      "The",
-      "company",
-      "which",
-      "offered",
-      "me",
-      "a",
-      "job",
-      "is",
-      "in",
-      "Madrid"
-    ],
+    "words": ["The", "company", "which", "offered", "me", "a", "job", "is", "in", "Madrid"],
     "explanation": "'Which' para cosas como sujeto de la cláusula relativa."
   },
   {
     "id": "reord-b1-rc-012",
     "sentence": "The student whose essay was the best won a prize",
-    "words": [
-      "The",
-      "student",
-      "whose",
-      "essay",
-      "was",
-      "the",
-      "best",
-      "won",
-      "a",
-      "prize"
-    ],
-    "distractors": [
-      "who"
-    ],
+    "words": ["The", "student", "whose", "essay", "was", "the", "best", "won", "a", "prize"],
+    "distractors": ["who"],
     "explanation": "'Whose' para posesión (el ensayo del estudiante), no 'who'."
   },
   {
     "id": "reord-b1-rc-013",
     "sentence": "People who exercise regularly tend to live longer",
-    "words": [
-      "People",
-      "who",
-      "exercise",
-      "regularly",
-      "tend",
-      "to",
-      "live",
-      "longer"
-    ],
+    "words": ["People", "who", "exercise", "regularly", "tend", "to", "live", "longer"],
     "explanation": "Cláusula especificativa: identifica de qué personas se trata (las que hacen ejercicio)."
   },
   {
     "id": "reord-b1-rc-014",
     "sentence": "The cake that my mother made was absolutely delicious",
-    "words": [
-      "The",
-      "cake",
-      "that",
-      "my",
-      "mother",
-      "made",
-      "was",
-      "absolutely",
-      "delicious"
-    ],
+    "words": ["The", "cake", "that", "my", "mother", "made", "was", "absolutely", "delicious"],
     "explanation": "'That' para cosas. Objeto de la cláusula (mi madre lo hizo)."
   },
   {
@@ -258,5 +118,39 @@
       "up"
     ],
     "explanation": "'Where' para lugares — la ciudad es un lugar."
+  },
+  {
+    "id": "reord-b1-rc-016",
+    "sentence": "The book whose cover is red belongs to me",
+    "words": ["The", "book", "whose", "cover", "is", "red", "belongs", "to", "me"],
+    "distractors": ["which"],
+    "explanation": "'Whose' también se usa con cosas para indicar posesión, no solo con personas."
+  },
+  {
+    "id": "reord-b1-rc-017",
+    "sentence": "The day when we met is unforgettable",
+    "words": ["The", "day", "when", "we", "met", "is", "unforgettable"],
+    "distractors": ["where"],
+    "explanation": "'When' introduce una cláusula relativa sobre un momento en el tiempo, no 'where'."
+  },
+  {
+    "id": "reord-b1-rc-018",
+    "sentence": "The reason why she left is still unclear",
+    "words": ["The", "reason", "why", "she", "left", "is", "still", "unclear"],
+    "explanation": "'Why' introduce una cláusula relativa sobre un motivo ('the reason why')."
+  },
+  {
+    "id": "reord-b1-rc-019",
+    "sentence": "My neighbour, who works as a pilot, travels a lot",
+    "words": ["My", "neighbour", "who", "works", "as", "a", "pilot", "travels", "a", "lot"],
+    "hint": "Non-defining clause: extra information between commas",
+    "explanation": "Cláusula relativa explicativa (con comas): añade información extra, no identifica al sujeto."
+  },
+  {
+    "id": "reord-b1-rc-020",
+    "sentence": "The hotel we stayed at was very comfortable",
+    "words": ["The", "hotel", "we", "stayed", "at", "was", "very", "comfortable"],
+    "hint": "The relative pronoun can be omitted when it's the object",
+    "explanation": "El pronombre relativo se puede omitir cuando es el objeto de la cláusula: 'the hotel (that) we stayed at'."
   }
 ]

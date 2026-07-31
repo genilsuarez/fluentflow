@@ -12,12 +12,7 @@
   },
   {
     "question": "Rarely has a single publication engendered such protracted debate. What does 'engendered' mean?",
-    "options": [
-      "Ended",
-      "Caused / produced",
-      "Summarised",
-      "Avoided"
-    ],
+    "options": ["Ended", "Caused / produced", "Summarised", "Avoided"],
     "correct": 1,
     "explanation": "'Engender' = causar, producir, dar lugar a. Verbo formal/académico."
   },
@@ -78,12 +73,7 @@
   },
   {
     "question": "Lest we forget, the consequences of inaction may prove costly. What does 'lest' mean?",
-    "options": [
-      "Because",
-      "Although",
-      "Until",
-      "For fear that / in case (we forget)"
-    ],
+    "options": ["Because", "Although", "Until", "For fear that / in case (we forget)"],
     "correct": 3,
     "explanation": "'Lest' = por temor a que / para evitar que. Formal/literario. Va seguido de subjuntivo."
   },
@@ -111,24 +101,102 @@
   },
   {
     "question": "It is precisely this tension that renders the debate intellectually stimulating. What is 'renders' here?",
-    "options": [
-      "Translates",
-      "Destroys",
-      "Makes / causes something to be",
-      "Questions"
-    ],
+    "options": ["Translates", "Destroys", "Makes / causes something to be", "Questions"],
     "correct": 2,
     "explanation": "'Render' = hacer/causar que algo se convierta en (formal). 'Renders X stimulating' = hace que X sea estimulante."
   },
   {
     "question": "The author's contention, however compelling, is predicated on a contentious assumption. What does 'predicated on' mean?",
-    "options": [
-      "Contradicted by",
-      "Unrelated to",
-      "Proven by",
-      "Based on / founded upon"
-    ],
+    "options": ["Contradicted by", "Unrelated to", "Proven by", "Based on / founded upon"],
     "correct": 3,
     "explanation": "'Predicated on' = basado en, que se apoya en (un fundamento o supuesto particular)."
+  },
+  {
+    "question": "The committee's response was, to put it mildly, perfunctory. What does 'perfunctory' mean?",
+    "options": [
+      "Enthusiastic and thorough",
+      "Done with minimal effort, as a mere formality",
+      "Aggressive and confrontational",
+      "Delayed beyond reason"
+    ],
+    "correct": 1,
+    "explanation": "'Perfunctory' = hecho por mero trámite, sin interés ni esfuerzo real."
+  },
+  {
+    "question": "Her argument, though elegantly constructed, ultimately proved specious. What does 'specious' mean?",
+    "options": [
+      "Genuinely sound",
+      "Superficially plausible but actually wrong",
+      "Extremely detailed",
+      "Widely accepted"
+    ],
+    "correct": 1,
+    "explanation": "'Specious' = que parece verdadero o correcto a primera vista pero es engañoso."
+  },
+  {
+    "question": "The two accounts are, in essence, mutually exclusive. What does 'mutually exclusive' mean?",
+    "options": [
+      "They support each other",
+      "They cannot both be true or exist at the same time",
+      "They are identical",
+      "They are unrelated"
+    ],
+    "correct": 1,
+    "explanation": "'Mutually exclusive' = que se excluyen entre sí; si uno es cierto, el otro no puede serlo."
+  },
+  {
+    "question": "The policy's efficacy remains, at best, tenuous. What does 'tenuous' mean?",
+    "options": [
+      "Extremely strong and well-established",
+      "Weak, flimsy, barely holding together",
+      "Widely tested",
+      "Recently confirmed"
+    ],
+    "correct": 1,
+    "explanation": "'Tenuous' = débil, poco sólido, apenas sostenible (una conexión o argumento)."
+  },
+  {
+    "question": "He remained impervious to the mounting criticism. What does 'impervious' mean?",
+    "options": [
+      "Deeply affected by",
+      "Not able to be affected or influenced by something",
+      "Curious about",
+      "Grateful for"
+    ],
+    "correct": 1,
+    "explanation": "'Impervious to' = impermeable a, que no se ve afectado por algo (crítica, presión, etc.)."
+  },
+  {
+    "question": "The negotiations reached an impasse after months of talks. What does 'impasse' mean?",
+    "options": [
+      "A breakthrough",
+      "A deadlock where no progress can be made",
+      "A formal agreement",
+      "A temporary pause"
+    ],
+    "correct": 1,
+    "explanation": "'Impasse' = punto muerto, situación sin salida donde no se puede avanzar."
+  },
+  {
+    "question": "The report's conclusions are, in many respects, tantamount to an admission of failure. What does 'tantamount to' mean?",
+    "options": [
+      "Completely unrelated to",
+      "Equivalent in effect to",
+      "The opposite of",
+      "A minor exception to"
+    ],
+    "correct": 1,
+    "explanation": "'Tantamount to' = equivalente a, que en la práctica significa lo mismo que."
+  },
+  {
+    "question": "Her critique, while trenchant, was not without merit. What does 'trenchant' mean?",
+    "options": [
+      "Vague and unfocused",
+      "Sharp, incisive, and forceful",
+      "Overly polite",
+      "Entirely mistaken"
+    ],
+    "correct": 1,
+    "explanation": "'Trenchant' = incisivo, contundente, expresado con claridad y fuerza crítica."
   }
 ]

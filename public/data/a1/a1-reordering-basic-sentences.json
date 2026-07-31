@@ -172,5 +172,42 @@
     "words": ["We", "usually", "have", "breakfast", "at", "eight"],
     "hint": "Adverb of frequency before the main verb",
     "explanation": "'Usually' va antes del verbo principal 'have': 'We usually have breakfast'."
+  },
+  {
+    "id": "reord-a1-026",
+    "sentence": "My sister works in a bank",
+    "words": ["My", "sister", "works", "in", "a", "bank"],
+    "distractors": ["work"],
+    "explanation": "'My sister' es tercera persona del singular (she), así que se usa 'works' con -s."
+  },
+  {
+    "id": "reord-a1-027",
+    "sentence": "Can you open the window",
+    "words": ["Can", "you", "open", "the", "window"],
+    "hint": "Requests with 'can' start with the modal verb",
+    "explanation": "Las preguntas con 'can' empiezan con el verbo modal: 'Can you...?'."
+  },
+  {
+    "id": "reord-a1-028",
+    "sentence": "I never eat meat",
+    "words": ["I", "never", "eat", "meat"],
+    "hint": "Adverbs of frequency go before the main verb",
+    "explanation": "'Never' va antes del verbo principal 'eat': 'I never eat meat'."
+  },
+  {
+    "id": "reord-a1-029",
+    "sentence": "There are three chairs in the kitchen",
+    "words": ["There", "are", "three", "chairs", "in", "the", "kitchen"],
+    "distractors": ["is"],
+    "hint": "Use 'are' with plural nouns",
+    "explanation": "'Chairs' es plural, así que se usa 'there are', no 'there is'."
+  },
+  {
+    "id": "reord-a1-030",
+    "sentence": "She doesn't like spiders",
+    "words": ["She", "doesn't", "like", "spiders"],
+    "distractors": ["don't"],
+    "hint": "Third person singular negative uses 'doesn't'",
+    "explanation": "Con 'she' se usa 'doesn't' para negar, no 'don't'. 'Don't' es para I/you/we/they."
   }
 ]

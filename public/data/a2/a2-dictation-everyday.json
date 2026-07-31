@@ -13,5 +13,13 @@
   { "text": "Would you like a cup of tea?", "hint": "Offering something" },
   { "text": "The meeting has been cancelled.", "hint": "Passive voice" },
   { "text": "I need to buy some bread and milk.", "hint": "Shopping list" },
-  { "text": "She works as a doctor in a hospital.", "hint": "Someone's job" }
+  { "text": "She works as a doctor in a hospital.", "hint": "Someone's job" },
+  { "text": "If I have time, I will call you later.", "hint": "First conditional" },
+  { "text": "He has already finished his project.", "hint": "Present perfect with 'already'" },
+  {
+    "text": "We were watching a movie when the lights went out.",
+    "hint": "Past continuous interrupted"
+  },
+  { "text": "I'm not sure if she will come to the party.", "hint": "Expressing uncertainty" },
+  { "text": "They have lived in this city since 2019.", "hint": "Present perfect with 'since'" }
 ]

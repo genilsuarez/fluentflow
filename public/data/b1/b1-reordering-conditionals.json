@@ -2,330 +2,120 @@
   {
     "id": "reord-b1-cond-001",
     "sentence": "If it rains tomorrow, we will stay at home",
-    "words": [
-      "If",
-      "it",
-      "rains",
-      "tomorrow,",
-      "we",
-      "will",
-      "stay",
-      "at",
-      "home"
-    ],
+    "words": ["If", "it", "rains", "tomorrow,", "we", "will", "stay", "at", "home"],
     "hint": "First conditional: If + present, will + base verb",
     "explanation": "Primera condicional para posibilidades reales: If + presente simple, will + forma base."
   },
   {
     "id": "reord-b1-cond-002",
     "sentence": "I would travel the world if I had more money",
-    "words": [
-      "I",
-      "would",
-      "travel",
-      "the",
-      "world",
-      "if",
-      "I",
-      "had",
-      "more",
-      "money"
-    ],
-    "distractors": [
-      "will"
-    ],
+    "words": ["I", "would", "travel", "the", "world", "if", "I", "had", "more", "money"],
+    "distractors": ["will"],
     "hint": "Second conditional: would + base verb, if + past simple",
     "explanation": "Segunda condicional para lo hipotético: would + base (no 'will'). If + pasado simple."
   },
   {
     "id": "reord-b1-cond-003",
     "sentence": "If you study hard, you will pass the exam",
-    "words": [
-      "If",
-      "you",
-      "study",
-      "hard,",
-      "you",
-      "will",
-      "pass",
-      "the",
-      "exam"
-    ],
+    "words": ["If", "you", "study", "hard,", "you", "will", "pass", "the", "exam"],
     "explanation": "Primera condicional: posibilidad real. If + presente, will + base."
   },
   {
     "id": "reord-b1-cond-004",
     "sentence": "She would buy a house if she earned more",
-    "words": [
-      "She",
-      "would",
-      "buy",
-      "a",
-      "house",
-      "if",
-      "she",
-      "earned",
-      "more"
-    ],
-    "distractors": [
-      "will"
-    ],
+    "words": ["She", "would", "buy", "a", "house", "if", "she", "earned", "more"],
+    "distractors": ["will"],
     "explanation": "Segunda condicional: hipotética. 'Would' (no 'will') + if + pasado simple."
   },
   {
     "id": "reord-b1-cond-005",
     "sentence": "If we leave now, we will arrive on time",
-    "words": [
-      "If",
-      "we",
-      "leave",
-      "now,",
-      "we",
-      "will",
-      "arrive",
-      "on",
-      "time"
-    ],
+    "words": ["If", "we", "leave", "now,", "we", "will", "arrive", "on", "time"],
     "explanation": "Primera condicional: posibilidad real sobre salir ahora."
   },
   {
     "id": "reord-b1-cond-006",
     "sentence": "If I were you, I would accept the job offer",
-    "words": [
-      "If",
-      "I",
-      "were",
-      "you,",
-      "I",
-      "would",
-      "accept",
-      "the",
-      "job",
-      "offer"
-    ],
-    "distractors": [
-      "was"
-    ],
+    "words": ["If", "I", "were", "you,", "I", "would", "accept", "the", "job", "offer"],
+    "distractors": ["was"],
     "hint": "Use 'were' (not 'was') in second conditional with I/he/she",
     "explanation": "En la segunda condicional formal, se usa 'were' para todos los sujetos: 'If I were you'."
   },
   {
     "id": "reord-b1-cond-007",
     "sentence": "We will miss the bus if we do not hurry",
-    "words": [
-      "We",
-      "will",
-      "miss",
-      "the",
-      "bus",
-      "if",
-      "we",
-      "do",
-      "not",
-      "hurry"
-    ],
+    "words": ["We", "will", "miss", "the", "bus", "if", "we", "do", "not", "hurry"],
     "explanation": "Primera condicional con la cláusula de resultado primero: 'We will miss...if we don't hurry'."
   },
   {
     "id": "reord-b1-cond-008",
     "sentence": "If he spoke better English, he would get the promotion",
-    "words": [
-      "If",
-      "he",
-      "spoke",
-      "better",
-      "English,",
-      "he",
-      "would",
-      "get",
-      "the",
-      "promotion"
-    ],
-    "distractors": [
-      "will"
-    ],
+    "words": ["If", "he", "spoke", "better", "English,", "he", "would", "get", "the", "promotion"],
+    "distractors": ["will"],
     "explanation": "Segunda condicional: If + pasado simple ('spoke'), would + forma base."
   },
   {
     "id": "reord-b1-cond-009",
     "sentence": "If the weather is nice, we will have a picnic",
-    "words": [
-      "If",
-      "the",
-      "weather",
-      "is",
-      "nice,",
-      "we",
-      "will",
-      "have",
-      "a",
-      "picnic"
-    ],
+    "words": ["If", "the", "weather", "is", "nice,", "we", "will", "have", "a", "picnic"],
     "explanation": "Primera condicional: If + presente simple, will + forma base."
   },
   {
     "id": "reord-b1-cond-010",
     "sentence": "I would learn to play the piano if I had time",
-    "words": [
-      "I",
-      "would",
-      "learn",
-      "to",
-      "play",
-      "the",
-      "piano",
-      "if",
-      "I",
-      "had",
-      "time"
-    ],
+    "words": ["I", "would", "learn", "to", "play", "the", "piano", "if", "I", "had", "time"],
     "explanation": "Segunda condicional con la cláusula de resultado primero."
   },
   {
     "id": "reord-b1-cond-011",
     "sentence": "If she calls me, I will tell her the news",
-    "words": [
-      "If",
-      "she",
-      "calls",
-      "me,",
-      "I",
-      "will",
-      "tell",
-      "her",
-      "the",
-      "news"
-    ],
+    "words": ["If", "she", "calls", "me,", "I", "will", "tell", "her", "the", "news"],
     "explanation": "Primera condicional: If + presente ('calls'), will + base ('tell')."
   },
   {
     "id": "reord-b1-cond-012",
     "sentence": "They would move to the countryside if they could",
-    "words": [
-      "They",
-      "would",
-      "move",
-      "to",
-      "the",
-      "countryside",
-      "if",
-      "they",
-      "could"
-    ],
-    "distractors": [
-      "will",
-      "can"
-    ],
+    "words": ["They", "would", "move", "to", "the", "countryside", "if", "they", "could"],
+    "distractors": ["will", "can"],
     "explanation": "Segunda condicional: 'would move' + 'if they could' (no 'can' — se necesita la forma en pasado)."
   },
   {
     "id": "reord-b1-cond-013",
     "sentence": "If you do not water the plants, they will die",
-    "words": [
-      "If",
-      "you",
-      "do",
-      "not",
-      "water",
-      "the",
-      "plants,",
-      "they",
-      "will",
-      "die"
-    ],
+    "words": ["If", "you", "do", "not", "water", "the", "plants,", "they", "will", "die"],
     "explanation": "Primera condicional con cláusula 'if' en negativo."
   },
   {
     "id": "reord-b1-cond-014",
     "sentence": "If I lived near the beach, I would swim every day",
-    "words": [
-      "If",
-      "I",
-      "lived",
-      "near",
-      "the",
-      "beach,",
-      "I",
-      "would",
-      "swim",
-      "every",
-      "day"
-    ],
-    "distractors": [
-      "will"
-    ],
+    "words": ["If", "I", "lived", "near", "the", "beach,", "I", "would", "swim", "every", "day"],
+    "distractors": ["will"],
     "explanation": "Segunda condicional: If + pasado ('lived'), would + base ('swim')."
   },
   {
     "id": "reord-b1-cond-015",
     "sentence": "We will go to the park if it stops raining",
-    "words": [
-      "We",
-      "will",
-      "go",
-      "to",
-      "the",
-      "park",
-      "if",
-      "it",
-      "stops",
-      "raining"
-    ],
+    "words": ["We", "will", "go", "to", "the", "park", "if", "it", "stops", "raining"],
     "explanation": "Primera condicional con la cláusula de resultado primero."
   },
   {
     "id": "reord-b1-cond-016",
     "sentence": "If they offered me the position, I would take it",
-    "words": [
-      "If",
-      "they",
-      "offered",
-      "me",
-      "the",
-      "position,",
-      "I",
-      "would",
-      "take",
-      "it"
-    ],
-    "distractors": [
-      "will"
-    ],
+    "words": ["If", "they", "offered", "me", "the", "position,", "I", "would", "take", "it"],
+    "distractors": ["will"],
     "explanation": "Segunda condicional: If + pasado ('offered'), would + base ('take')."
   },
   {
     "id": "reord-b1-cond-017",
     "sentence": "If you eat too much, you will feel sick",
-    "words": [
-      "If",
-      "you",
-      "eat",
-      "too",
-      "much,",
-      "you",
-      "will",
-      "feel",
-      "sick"
-    ],
+    "words": ["If", "you", "eat", "too", "much,", "you", "will", "feel", "sick"],
     "explanation": "Primera condicional para consecuencias generales."
   },
   {
     "id": "reord-b1-cond-018",
     "sentence": "She would be happier if she changed her job",
-    "words": [
-      "She",
-      "would",
-      "be",
-      "happier",
-      "if",
-      "she",
-      "changed",
-      "her",
-      "job"
-    ],
-    "distractors": [
-      "will"
-    ],
+    "words": ["She", "would", "be", "happier", "if", "she", "changed", "her", "job"],
+    "distractors": ["will"],
     "explanation": "Segunda condicional: 'would be' + if + pasado ('changed')."
   },
   {
@@ -364,9 +154,7 @@
       "more",
       "friends"
     ],
-    "distractors": [
-      "will"
-    ],
+    "distractors": ["will"],
     "explanation": "Segunda condicional: If + pasado ('had'), would + base ('invite')."
   },
   {
@@ -391,49 +179,21 @@
   {
     "id": "reord-b1-cond-022",
     "sentence": "Unless you hurry you will miss the train",
-    "words": [
-      "Unless",
-      "you",
-      "hurry",
-      "you",
-      "will",
-      "miss",
-      "the",
-      "train"
-    ],
+    "words": ["Unless", "you", "hurry", "you", "will", "miss", "the", "train"],
     "hint": "Unless + present simple, will + base verb",
     "explanation": "<Unless> significa <if not>. <Unless you hurry> = <If you don't hurry>."
   },
   {
     "id": "reord-b1-cond-023",
     "sentence": "We will go to the beach if the weather is nice",
-    "words": [
-      "We",
-      "will",
-      "go",
-      "to",
-      "the",
-      "beach",
-      "if",
-      "the",
-      "weather",
-      "is",
-      "nice"
-    ],
+    "words": ["We", "will", "go", "to", "the", "beach", "if", "the", "weather", "is", "nice"],
     "hint": "Will + base verb + if + present simple",
     "explanation": "Primera condicional: la cláusula con <if> puede ir en segundo lugar."
   },
   {
     "id": "reord-b1-cond-024",
     "sentence": "If you heat ice it melts",
-    "words": [
-      "If",
-      "you",
-      "heat",
-      "ice",
-      "it",
-      "melts"
-    ],
+    "words": ["If", "you", "heat", "ice", "it", "melts"],
     "hint": "If + present simple, present simple",
     "explanation": "Condicional cero: ambas cláusulas usan presente simple para hechos generales."
   },
@@ -459,20 +219,7 @@
   {
     "id": "reord-b1-cond-026",
     "sentence": "If I had a car I would drive to work every day",
-    "words": [
-      "If",
-      "I",
-      "had",
-      "a",
-      "car",
-      "I",
-      "would",
-      "drive",
-      "to",
-      "work",
-      "every",
-      "day"
-    ],
+    "words": ["If", "I", "had", "a", "car", "I", "would", "drive", "to", "work", "every", "day"],
     "hint": "If + past simple, would + base verb",
     "explanation": "Segunda condicional: situación imaginaria sobre el presente."
   },
@@ -534,5 +281,12 @@
     ],
     "hint": "Will + base verb + if + present simple",
     "explanation": "Primera condicional: posibilidad real sobre el futuro."
+  },
+  {
+    "id": "reord-b1-cond-030",
+    "sentence": "You can borrow my car provided that you drive carefully",
+    "words": ["You", "can", "borrow", "my", "car", "provided", "that", "you", "drive", "carefully"],
+    "hint": "'Provided that' means 'only if', like a formal 'if'",
+    "explanation": "'Provided that' funciona como 'if' pero con un matiz más formal: significa 'solo si'."
   }
 ]

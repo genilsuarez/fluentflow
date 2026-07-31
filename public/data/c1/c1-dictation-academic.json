@@ -1,17 +1,82 @@
 [
-  { "text": "The findings suggest that further research is warranted in this area.", "hint": "Academic hedging" },
-  { "text": "Not until the results were published did the implications become clear.", "hint": "Negative inversion" },
-  { "text": "The phenomenon, hitherto unexplained, has now been attributed to quantum fluctuations.", "hint": "Formal adverb + passive" },
-  { "text": "It is imperative that all participants submit their data before the deadline.", "hint": "Subjunctive" },
-  { "text": "Notwithstanding the methodological limitations, the study provides valuable insights.", "hint": "Formal concession" },
-  { "text": "The hypothesis, whilst plausible, lacks empirical support.", "hint": "Formal contrast" },
-  { "text": "Such is the complexity of the issue that a multidisciplinary approach is required.", "hint": "Inversion with such" },
-  { "text": "The participants were asked to refrain from discussing the experiment.", "hint": "Formal request structure" },
-  { "text": "Only by adopting a collaborative framework can we hope to address these challenges.", "hint": "Inversion with only by" },
-  { "text": "The data, insofar as they are reliable, support the initial hypothesis.", "hint": "Formal qualifier" },
-  { "text": "It would appear that the correlation is stronger than previously thought.", "hint": "Tentative reporting" },
-  { "text": "The extent to which cultural factors influence behaviour remains a matter of debate.", "hint": "Formal noun phrase" },
-  { "text": "Were the government to implement these policies, significant savings could be made.", "hint": "Formal conditional" },
-  { "text": "Little did the researchers anticipate the magnitude of the response.", "hint": "Negative inversion with little" },
-  { "text": "The results are consistent with those obtained in previous studies.", "hint": "Academic comparison" }
+  {
+    "text": "The findings suggest that further research is warranted in this area.",
+    "hint": "Academic hedging"
+  },
+  {
+    "text": "Not until the results were published did the implications become clear.",
+    "hint": "Negative inversion"
+  },
+  {
+    "text": "The phenomenon, hitherto unexplained, has now been attributed to quantum fluctuations.",
+    "hint": "Formal adverb + passive"
+  },
+  {
+    "text": "It is imperative that all participants submit their data before the deadline.",
+    "hint": "Subjunctive"
+  },
+  {
+    "text": "Notwithstanding the methodological limitations, the study provides valuable insights.",
+    "hint": "Formal concession"
+  },
+  {
+    "text": "The hypothesis, whilst plausible, lacks empirical support.",
+    "hint": "Formal contrast"
+  },
+  {
+    "text": "Such is the complexity of the issue that a multidisciplinary approach is required.",
+    "hint": "Inversion with such"
+  },
+  {
+    "text": "The participants were asked to refrain from discussing the experiment.",
+    "hint": "Formal request structure"
+  },
+  {
+    "text": "Only by adopting a collaborative framework can we hope to address these challenges.",
+    "hint": "Inversion with only by"
+  },
+  {
+    "text": "The data, insofar as they are reliable, support the initial hypothesis.",
+    "hint": "Formal qualifier"
+  },
+  {
+    "text": "It would appear that the correlation is stronger than previously thought.",
+    "hint": "Tentative reporting"
+  },
+  {
+    "text": "The extent to which cultural factors influence behaviour remains a matter of debate.",
+    "hint": "Formal noun phrase"
+  },
+  {
+    "text": "Were the government to implement these policies, significant savings could be made.",
+    "hint": "Formal conditional"
+  },
+  {
+    "text": "Little did the researchers anticipate the magnitude of the response.",
+    "hint": "Negative inversion with little"
+  },
+  {
+    "text": "The results are consistent with those obtained in previous studies.",
+    "hint": "Academic comparison"
+  },
+  {
+    "text": "So entrenched are these beliefs that reform has proven extremely difficult.",
+    "hint": "Fronted 'so' with inversion"
+  },
+  {
+    "text": "Seldom has such a proposal received unanimous support.",
+    "hint": "Inversion with 'seldom'"
+  },
+  {
+    "text": "Controversial though it may seem, the decision was reached unanimously.",
+    "hint": "Fronted adjective concession"
+  },
+  {
+    "text": "Be that as it may, the deadline remains unchanged.",
+    "hint": "Fixed concessive phrase"
+  },
+  {
+    "text": "Nowhere is this more evident than in the field of medicine.",
+    "hint": "Fronted negative locative adverb"
+  }
 ]

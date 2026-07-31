@@ -88,5 +88,35 @@
     "correct": "can",
     "explanation": "Inversión con 'only by': Only by + -ing + auxiliar + sujeto.",
     "tip": "Modal of ability"
+  },
+  {
+    "sentence": "Little ___ she know that her plan would fail completely.",
+    "correct": "did",
+    "explanation": "'Little' con valor negativo al inicio provoca inversión: Little did she know.",
+    "tip": "Inversion auxiliary for negative adverb"
+  },
+  {
+    "sentence": "Rarely ___ I seen such dedication to a project.",
+    "correct": "have",
+    "explanation": "Inversión con adverbios de frecuencia negativos: Rarely + have + sujeto + participio.",
+    "tip": "Present perfect auxiliary (inverted)"
+  },
+  {
+    "sentence": "The contract, once ___, cannot be modified.",
+    "correct": "signed",
+    "explanation": "Cláusula reducida pasiva: once (it is) signed, omitiendo sujeto y 'be'.",
+    "tip": "Past participle of 'sign'"
+  },
+  {
+    "sentence": "Such was her ___ that nothing could stop her.",
+    "correct": "determination",
+    "explanation": "'Such was + sustantivo + that' enfatiza el grado o intensidad de una cualidad.",
+    "tip": "Noun form of 'determined'"
+  },
+  {
+    "sentence": "Given the ___, she handled the situation remarkably well.",
+    "correct": "circumstances",
+    "explanation": "'Given' + sustantivo = teniendo en cuenta. Introduce una circunstancia relevante.",
+    "tip": "Noun meaning 'the situation/conditions'"
   }
 ]
