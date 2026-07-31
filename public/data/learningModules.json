@@ -846,22 +846,6 @@
     "difficulty": 2
   },
   {
-    "id": "matching-be-vs-go-a2",
-    "name": "Be vs Go",
-    "learningMode": "matching",
-    "dataPath": "data/a2/a2-matching-be-vs-go.json",
-    "level": [
-      "a2"
-    ],
-    "category": "Grammar",
-    "prerequisites": [
-      "quiz-be-vs-go-a2"
-    ],
-    "description": "Match be and go sentences with their Spanish translations",
-    "estimatedTime": 3,
-    "difficulty": 2
-  },
-  {
     "id": "completion-past-stories-a2",
     "name": "Past Stories",
     "learningMode": "completion",
@@ -871,7 +855,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "matching-be-vs-go-a2"
+      "quiz-be-vs-go-a2"
     ],
     "description": "Complete stories using past tense",
     "estimatedTime": 5,
@@ -1726,22 +1710,6 @@
     "difficulty": 3
   },
   {
-    "id": "reading-gerunds-infinitives-context-b1",
-    "name": "Gerunds & Infinitives in Context",
-    "learningMode": "reading",
-    "dataPath": "data/b1/b1-reading-gerunds-infinitives-context.json",
-    "level": [
-      "b1"
-    ],
-    "category": "Grammar",
-    "prerequisites": [
-      "sorting-gerunds-infinitives-b1"
-    ],
-    "description": "Learn gerund and infinitive patterns through real-life conversations, emails, and everyday situations",
-    "estimatedTime": 5,
-    "difficulty": 3
-  },
-  {
     "id": "completion-gerunds-infinitives-b1",
     "name": "Gerunds & Infinitives Practice",
     "learningMode": "completion",
@@ -1751,7 +1719,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "reading-gerunds-infinitives-context-b1"
+      "sorting-gerunds-infinitives-b1"
     ],
     "description": "Complete sentences with the correct gerund or infinitive form",
     "estimatedTime": 5,
@@ -4078,22 +4046,6 @@
     "difficulty": 1
   },
   {
-    "id": "transformation-past-continuous-future-a2",
-    "name": "Past Continuous & Future Transformations",
-    "learningMode": "transformation",
-    "dataPath": "data/a2/a2-transformation-past-continuous-future.json",
-    "level": [
-      "a2"
-    ],
-    "category": "Grammar",
-    "prerequisites": [
-      "word-formation-common-nouns-a2"
-    ],
-    "description": "Transform sentences between past continuous and future tenses",
-    "estimatedTime": 4,
-    "difficulty": 2
-  },
-  {
     "id": "transformation-phrasal-verb-tense-a2",
     "name": "Phrasal Verb Tense Transformations",
     "learningMode": "transformation",
@@ -4103,7 +4055,7 @@
     ],
     "category": "PhrasalVerbs",
     "prerequisites": [
-      "transformation-past-continuous-future-a2"
+      "word-formation-common-nouns-a2"
     ],
     "description": "Transform phrasal verb sentences across different tenses",
     "estimatedTime": 4,
@@ -4270,22 +4222,6 @@
     "difficulty": 3
   },
   {
-    "id": "transformation-gerunds-infinitives-b1",
-    "name": "Gerund & Infinitive Transformations",
-    "learningMode": "transformation",
-    "dataPath": "data/b1/b1-transformation-gerunds-infinitives.json",
-    "level": [
-      "b1"
-    ],
-    "category": "Grammar",
-    "prerequisites": [
-      "transformation-relative-clauses-b1"
-    ],
-    "description": "Transform sentences between gerund and infinitive patterns: remember, stop, try, used to",
-    "estimatedTime": 4,
-    "difficulty": 3
-  },
-  {
     "id": "transformation-indirect-questions-b1",
     "name": "Indirect Question Transformations",
     "learningMode": "transformation",
@@ -4295,7 +4231,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "transformation-gerunds-infinitives-b1"
+      "transformation-relative-clauses-b1"
     ],
     "description": "Transform between direct and indirect questions: word order, if/whether, polite forms",
     "estimatedTime": 4,
@@ -4686,16 +4622,16 @@
     "difficulty": 5
   },
   {
-    "id": "transformation-concession-contrast-c1",
+    "id": "transformation-concession-contrast-c2",
     "name": "Concession & Contrast Transformations",
     "learningMode": "transformation",
-    "dataPath": "data/c1/c1-transformation-concession-contrast.json",
+    "dataPath": "data/c2/c2-transformation-concession-contrast.json",
     "level": [
-      "c1"
+      "c2"
     ],
     "category": "Grammar",
     "prerequisites": [
-      "transformation-cleft-focus-c1"
+      "quiz-advanced-grammar-structures-c2"
     ],
     "description": "Advanced concessive structures: much as, albeit, notwithstanding, however + adj",
     "estimatedTime": 4,
@@ -4711,7 +4647,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "transformation-concession-contrast-c1"
+      "transformation-cleft-focus-c1"
     ],
     "description": "Convert verbal to nominal constructions and vice versa for academic register",
     "estimatedTime": 4,
@@ -4798,22 +4734,6 @@
     "difficulty": 5
   },
   {
-    "id": "reordering-inverted-emphatic-c1",
-    "name": "Reorder Inverted & Emphatic Sentences",
-    "learningMode": "reordering",
-    "dataPath": "data/c1/c1-reordering-inverted-emphatic.json",
-    "level": [
-      "c1"
-    ],
-    "category": "Grammar",
-    "prerequisites": [
-      "error-correction-advanced-phrasal-verbs-c1"
-    ],
-    "description": "Put words in the correct order to form inverted and emphatic sentences",
-    "estimatedTime": 3,
-    "difficulty": 5
-  },
-  {
     "id": "reordering-academic-argument-c1",
     "name": "Reorder Academic Argument Sentences",
     "learningMode": "reordering",
@@ -4823,7 +4743,7 @@
     ],
     "category": "Vocabulary",
     "prerequisites": [
-      "reordering-inverted-emphatic-c1"
+      "error-correction-advanced-phrasal-verbs-c1"
     ],
     "description": "Put words in the correct order to form academic argument sentences",
     "estimatedTime": 3,
