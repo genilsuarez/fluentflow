@@ -241,5 +241,145 @@
     ],
     "hint": "Never again + would + subject + verb + complement",
     "explanation": "Inversión literaria después de <Never again> para un tono elegíaco."
+  },
+  {
+    "id": "reord-c2-lp-013",
+    "sentence": "Deep within the forest something ancient and watchful stirred",
+    "words": [
+      "Deep",
+      "within",
+      "the",
+      "forest",
+      "something",
+      "ancient",
+      "and",
+      "watchful",
+      "stirred"
+    ],
+    "hint": "Prepositional phrase + subject + verb",
+    "explanation": "Anteposición literaria: el escenario precede al sujeto para crear atmósfera de suspenso."
+  },
+  {
+    "id": "reord-c2-lp-014",
+    "sentence": "Little did she suspect that the letter would change everything",
+    "words": [
+      "Little",
+      "did",
+      "she",
+      "suspect",
+      "that",
+      "the",
+      "letter",
+      "would",
+      "change",
+      "everything"
+    ],
+    "hint": "Little + did + subject + verb + that clause",
+    "explanation": "Inversión con <Little> al inicio: apenas sospechaba, dando un tono de presagio."
+  },
+  {
+    "id": "reord-c2-lp-015",
+    "sentence": "Only when the storm subsided did the villagers dare to leave their homes",
+    "words": [
+      "Only",
+      "when",
+      "the",
+      "storm",
+      "subsided",
+      "did",
+      "the",
+      "villagers",
+      "dare",
+      "to",
+      "leave",
+      "their",
+      "homes"
+    ],
+    "hint": "Only when + clause + inversion",
+    "explanation": "<Only when> antepuesto exige inversión del auxiliar en la cláusula principal."
+  },
+  {
+    "id": "reord-c2-lp-016",
+    "sentence": "Across the desolate moor the wind carried a mournful, distant cry",
+    "words": [
+      "Across",
+      "the",
+      "desolate",
+      "moor",
+      "the",
+      "wind",
+      "carried",
+      "a",
+      "mournful",
+      "distant",
+      "cry"
+    ],
+    "hint": "Prepositional phrase + subject + verb + object",
+    "explanation": "Anteposición literaria del sintagma de lugar para establecer la escena."
+  },
+  {
+    "id": "reord-c2-lp-017",
+    "sentence": "Rarely does one encounter such quiet, unassuming courage",
+    "words": ["Rarely", "does", "one", "encounter", "such", "quiet", "unassuming", "courage"],
+    "hint": "Rarely + does + subject + verb + object",
+    "explanation": "Inversión con <Rarely> al inicio para dar énfasis literario."
+  },
+  {
+    "id": "reord-c2-lp-018",
+    "sentence": "Only later would she understand the true weight of that decision",
+    "words": [
+      "Only",
+      "later",
+      "would",
+      "she",
+      "understand",
+      "the",
+      "true",
+      "weight",
+      "of",
+      "that",
+      "decision"
+    ],
+    "hint": "Only later + would + subject + verb + object",
+    "explanation": "<Only later> antepuesto provoca inversión, creando un efecto de premonición narrativa."
+  },
+  {
+    "id": "reord-c2-lp-019",
+    "sentence": "Amid the ruins of the old cathedral time itself seemed to falter",
+    "words": [
+      "Amid",
+      "the",
+      "ruins",
+      "of",
+      "the",
+      "old",
+      "cathedral",
+      "time",
+      "itself",
+      "seemed",
+      "to",
+      "falter"
+    ],
+    "hint": "Prepositional phrase + subject + verb + infinitive",
+    "explanation": "<Amid> es una preposición formal/literaria que significa 'en medio de'."
+  },
+  {
+    "id": "reord-c2-lp-020",
+    "sentence": "Down the cobbled street echoed the fading footsteps of a stranger",
+    "words": [
+      "Down",
+      "the",
+      "cobbled",
+      "street",
+      "echoed",
+      "the",
+      "fading",
+      "footsteps",
+      "of",
+      "a",
+      "stranger"
+    ],
+    "hint": "Prepositional phrase + verb + subject",
+    "explanation": "Inversión literaria: el verbo <echoed> precede al sujeto tras el sintagma de lugar."
   }
 ]

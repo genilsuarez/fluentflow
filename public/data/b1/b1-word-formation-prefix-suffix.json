@@ -138,5 +138,145 @@
     "correct": "disappointment",
     "hint": "The noun form of disappoint",
     "explanation": "DISAPPOINT → disappointment (sufijo -ment: el estado de estar decepcionado)"
+  },
+  {
+    "sentence": "This old phone is completely ___ now. Nobody uses it.",
+    "rootWord": "USE",
+    "correct": "useless",
+    "hint": "Without any use",
+    "explanation": "USE → useless (sufijo -less: sin uso)"
+  },
+  {
+    "sentence": "The task was ___. We finished it in five minutes.",
+    "rootWord": "DO",
+    "correct": "doable",
+    "hint": "Able to be done",
+    "explanation": "DO → doable (sufijo -able: que se puede hacer)"
+  },
+  {
+    "sentence": "She found the answer ___. It was not what she expected.",
+    "rootWord": "BELIEVE",
+    "correct": "unbelievable",
+    "hint": "Not able to be believed",
+    "explanation": "BELIEVE → unbelievable (prefijo un- + sufijo -able: que no se puede creer)"
+  },
+  {
+    "sentence": "The ___ of the old building was completed last month.",
+    "rootWord": "CONSTRUCT",
+    "correct": "reconstruction",
+    "hint": "Building something again",
+    "explanation": "CONSTRUCT → reconstruction (prefijo re- + sufijo -ion: construir de nuevo)"
+  },
+  {
+    "sentence": "The ___ of the team led to their defeat.",
+    "rootWord": "ABLE",
+    "correct": "inability",
+    "hint": "The noun form meaning lack of ability",
+    "explanation": "ABLE → inability (prefijo in- + sufijo -ity: falta de habilidad)"
+  },
+  {
+    "sentence": "She showed great ___ during the crisis.",
+    "rootWord": "RELY",
+    "correct": "reliability",
+    "hint": "The noun form of rely",
+    "explanation": "RELY → reliability (sufijo -ability: la cualidad de ser confiable)"
+  },
+  {
+    "sentence": "The instructions were ___. Nobody could follow them.",
+    "rootWord": "READ",
+    "correct": "unreadable",
+    "hint": "Not able to be read",
+    "explanation": "READ → unreadable (prefijo un- + sufijo -able: que no se puede leer)"
+  },
+  {
+    "sentence": "The ___ of the contract caused many problems.",
+    "rootWord": "RENEW",
+    "correct": "renewal",
+    "hint": "The noun form of renew",
+    "explanation": "RENEW → renewal (sufijo -al: el acto de renovar)"
+  },
+  {
+    "sentence": "The food was ___. We couldn't eat it.",
+    "rootWord": "EAT",
+    "correct": "uneatable",
+    "hint": "Not fit to be eaten",
+    "explanation": "EAT → uneatable (prefijo un- + sufijo -able: no apto para comer)"
+  },
+  {
+    "sentence": "The ___ of the old factory created new jobs.",
+    "rootWord": "DEVELOP",
+    "correct": "redevelopment",
+    "hint": "Developing something again",
+    "explanation": "DEVELOP → redevelopment (prefijo re- + sufijo -ment: desarrollar de nuevo)"
+  },
+  {
+    "sentence": "His ___ to change was frustrating for everyone.",
+    "rootWord": "WILLING",
+    "correct": "unwillingness",
+    "hint": "The noun form meaning not being willing",
+    "explanation": "WILLING → unwillingness (prefijo un- + sufijo -ness: no estar dispuesto)"
+  },
+  {
+    "sentence": "The situation was ___. There was nothing we could do.",
+    "rootWord": "AVOID",
+    "correct": "unavoidable",
+    "hint": "Not able to be avoided",
+    "explanation": "AVOID → unavoidable (prefijo un- + sufijo -able: que no se puede evitar)"
+  },
+  {
+    "sentence": "The ___ of the old system was necessary.",
+    "rootWord": "PLACE",
+    "correct": "replacement",
+    "hint": "Putting something new in its place",
+    "explanation": "PLACE → replacement (prefijo re- + sufijo -ment: poner algo nuevo en su lugar)"
+  },
+  {
+    "sentence": "The ___ of the data was a serious problem.",
+    "rootWord": "SECURE",
+    "correct": "insecurity",
+    "hint": "The noun form meaning lack of security",
+    "explanation": "SECURE → insecurity (prefijo in- + sufijo -ity: falta de seguridad)"
+  },
+  {
+    "sentence": "The new policy was ___ to many employees.",
+    "rootWord": "FAIR",
+    "correct": "unfair",
+    "hint": "Not fair",
+    "explanation": "FAIR → unfair (prefijo un-: no justo)"
+  },
+  {
+    "sentence": "His ___ was clear from the way he spoke.",
+    "rootWord": "HAPPY",
+    "correct": "unhappiness",
+    "hint": "The noun form meaning not being happy",
+    "explanation": "HAPPY → unhappiness (prefijo un- + sufijo -ness: estado de no ser feliz)"
+  },
+  {
+    "sentence": "His behaviour was completely ___. Even his best friends were shocked.",
+    "rootWord": "HONEST",
+    "correct": "dishonesty",
+    "hint": "The noun form meaning lack of honesty",
+    "explanation": "HONEST → dishonesty (prefijo dis- + sufijo -y: falta de honestidad)"
+  },
+  {
+    "sentence": "Her ___ made it very hard to work with her on group projects.",
+    "rootWord": "FLEXIBLE",
+    "correct": "inflexibility",
+    "hint": "The noun form meaning lack of flexibility",
+    "explanation": "FLEXIBLE → inflexibility (prefijo in- + sufijo -ity: falta de flexibilidad)"
+  },
+  {
+    "sentence": "His ___ grew as he waited for the delayed train.",
+    "rootWord": "PATIENT",
+    "correct": "impatience",
+    "hint": "The noun form meaning lack of patience",
+    "explanation": "PATIENT → impatience (prefijo im- + sufijo -ce: falta de paciencia)"
+  },
+  {
+    "sentence": "The ___ of his closest friend hurt him deeply.",
+    "rootWord": "LOYAL",
+    "correct": "disloyalty",
+    "hint": "The noun form meaning lack of loyalty",
+    "explanation": "LOYAL → disloyalty (prefijo dis- + sufijo -ty: falta de lealtad)"
   }
 ]

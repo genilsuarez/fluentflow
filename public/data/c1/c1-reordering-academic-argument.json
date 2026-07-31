@@ -227,5 +227,152 @@
     ],
     "hint": "Subject + of + noun + verb + object",
     "explanation": "<A critical examination reveals> es una construcción académica formal."
+  },
+  {
+    "id": "reord-c1-aa-013",
+    "sentence": "On the whole the results align with the initial predictions of the model",
+    "words": [
+      "On",
+      "the",
+      "whole",
+      "the",
+      "results",
+      "align",
+      "with",
+      "the",
+      "initial",
+      "predictions",
+      "of",
+      "the",
+      "model"
+    ],
+    "hint": "On the whole + subject + verb + prepositional phrase",
+    "explanation": "<On the whole> significa 'en general' e introduce una valoración global."
+  },
+  {
+    "id": "reord-c1-aa-014",
+    "sentence": "By contrast the second experiment yielded markedly different results",
+    "words": [
+      "By",
+      "contrast",
+      "the",
+      "second",
+      "experiment",
+      "yielded",
+      "markedly",
+      "different",
+      "results"
+    ],
+    "hint": "By contrast + subject + verb + object",
+    "explanation": "<By contrast> señala una diferencia importante respecto al punto anterior."
+  },
+  {
+    "id": "reord-c1-aa-015",
+    "sentence": "Admittedly the sample size limits the generalisability of these conclusions",
+    "words": [
+      "Admittedly",
+      "the",
+      "sample",
+      "size",
+      "limits",
+      "the",
+      "generalisability",
+      "of",
+      "these",
+      "conclusions"
+    ],
+    "hint": "Admittedly + subject + verb + object",
+    "explanation": "<Admittedly> reconoce una limitación antes de continuar el argumento."
+  },
+  {
+    "id": "reord-c1-aa-016",
+    "sentence": "Taken together these results point to a consistent underlying pattern",
+    "words": [
+      "Taken",
+      "together",
+      "these",
+      "results",
+      "point",
+      "to",
+      "a",
+      "consistent",
+      "underlying",
+      "pattern"
+    ],
+    "hint": "Taken together + subject + point to + noun phrase",
+    "explanation": "<Taken together> introduce una síntesis de varios hallazgos combinados."
+  },
+  {
+    "id": "reord-c1-aa-017",
+    "sentence": "Crucially the authors fail to account for confounding variables",
+    "words": [
+      "Crucially",
+      "the",
+      "authors",
+      "fail",
+      "to",
+      "account",
+      "for",
+      "confounding",
+      "variables"
+    ],
+    "hint": "Crucially + subject + verb + to + infinitive",
+    "explanation": "<Crucially> enfatiza el punto más importante de una crítica."
+  },
+  {
+    "id": "reord-c1-aa-018",
+    "sentence": "It is worth noting that the effect diminished significantly over time",
+    "words": [
+      "It",
+      "is",
+      "worth",
+      "noting",
+      "that",
+      "the",
+      "effect",
+      "diminished",
+      "significantly",
+      "over",
+      "time"
+    ],
+    "hint": "It is worth noting that + clause",
+    "explanation": "<It is worth noting that> introduce un dato relevante que merece atención."
+  },
+  {
+    "id": "reord-c1-aa-019",
+    "sentence": "Given these constraints the researchers adopted a more conservative approach",
+    "words": [
+      "Given",
+      "these",
+      "constraints",
+      "the",
+      "researchers",
+      "adopted",
+      "a",
+      "more",
+      "conservative",
+      "approach"
+    ],
+    "hint": "Given + noun phrase, main clause",
+    "explanation": "<Given> introduce una circunstancia que explica una decisión tomada."
+  },
+  {
+    "id": "reord-c1-aa-020",
+    "sentence": "Ultimately the argument rests on the assumption that markets behave rationally",
+    "words": [
+      "Ultimately",
+      "the",
+      "argument",
+      "rests",
+      "on",
+      "the",
+      "assumption",
+      "that",
+      "markets",
+      "behave",
+      "rationally"
+    ],
+    "hint": "Ultimately + subject + rests on + noun + that clause",
+    "explanation": "<Rest on the assumption that> significa que un argumento depende de una premisa concreta."
   }
 ]

@@ -138,5 +138,145 @@
     "correct": "slowly",
     "hint": "The adverb form of slow",
     "explanation": "SLOW → slowly (sufijo -ly: de manera lenta)"
+  },
+  {
+    "sentence": "The ___ of the problem was very difficult.",
+    "rootWord": "SOLVE",
+    "correct": "solution",
+    "hint": "The noun form of solve",
+    "explanation": "SOLVE → solution (se cambia -ve por -ution para formar un sustantivo)"
+  },
+  {
+    "sentence": "The ___ of the team was excellent this season.",
+    "rootWord": "PERFORM",
+    "correct": "performance",
+    "hint": "The noun form of perform",
+    "explanation": "PERFORM → performance (sufijo -ance: el acto de actuar o rendir)"
+  },
+  {
+    "sentence": "Her ___ at the concert was amazing.",
+    "rootWord": "APPEAR",
+    "correct": "appearance",
+    "hint": "The noun form of appear",
+    "explanation": "APPEAR → appearance (sufijo -ance: el acto de aparecer)"
+  },
+  {
+    "sentence": "The ___ of the new park made everyone happy.",
+    "rootWord": "DEVELOP",
+    "correct": "development",
+    "hint": "The noun form of develop",
+    "explanation": "DEVELOP → development (sufijo -ment: el proceso de desarrollar)"
+  },
+  {
+    "sentence": "She showed great ___ during the difficult exam.",
+    "rootWord": "PATIENT",
+    "correct": "patience",
+    "hint": "The noun form of patient",
+    "explanation": "PATIENT → patience (se cambia -t por -ce para formar un sustantivo)"
+  },
+  {
+    "sentence": "The ___ between the two countries improved.",
+    "rootWord": "RELATE",
+    "correct": "relation",
+    "hint": "The noun form of relate",
+    "explanation": "RELATE → relation (se cambia -e por -ion para formar un sustantivo)"
+  },
+  {
+    "sentence": "His ___ to help others is admirable.",
+    "rootWord": "WILLING",
+    "correct": "willingness",
+    "hint": "The noun form of willing",
+    "explanation": "WILLING → willingness (sufijo -ness: la disposición a hacer algo)"
+  },
+  {
+    "sentence": "The ___ of the movie was very surprising.",
+    "rootWord": "END",
+    "correct": "ending",
+    "hint": "The noun form of end",
+    "explanation": "END → ending (sufijo -ing: la parte final de algo)"
+  },
+  {
+    "sentence": "We celebrated the ___ of the project.",
+    "rootWord": "COMPLETE",
+    "correct": "completion",
+    "hint": "The noun form of complete",
+    "explanation": "COMPLETE → completion (se cambia -e por -ion para formar un sustantivo)"
+  },
+  {
+    "sentence": "The ___ of the students improved after the new teacher arrived.",
+    "rootWord": "BEHAVE",
+    "correct": "behaviour",
+    "hint": "The noun form of behave",
+    "explanation": "BEHAVE → behaviour (se cambia -e por -iour para formar un sustantivo)"
+  },
+  {
+    "sentence": "She expressed her ___ for the beautiful gift.",
+    "rootWord": "GRATEFUL",
+    "correct": "gratitude",
+    "hint": "The noun form of grateful",
+    "explanation": "GRATEFUL → gratitude (la forma de sustantivo usa la raíz GRAT- + -itude)"
+  },
+  {
+    "sentence": "The ___ of the new law caused many protests.",
+    "rootWord": "INTRODUCE",
+    "correct": "introduction",
+    "hint": "The noun form of introduce",
+    "explanation": "INTRODUCE → introduction (se cambia -ce por -ction para formar un sustantivo)"
+  },
+  {
+    "sentence": "His ___ to the team was very important.",
+    "rootWord": "CONTRIBUTE",
+    "correct": "contribution",
+    "hint": "The noun form of contribute",
+    "explanation": "CONTRIBUTE → contribution (se cambia -e por -ion para formar un sustantivo)"
+  },
+  {
+    "sentence": "The ___ of the weather affected our plans.",
+    "rootWord": "MOVE",
+    "correct": "movement",
+    "hint": "The noun form of move",
+    "explanation": "MOVE → movement (sufijo -ment: el acto de moverse)"
+  },
+  {
+    "sentence": "She felt a deep ___ for her lost pet.",
+    "rootWord": "LONELY",
+    "correct": "loneliness",
+    "hint": "The noun form of lonely",
+    "explanation": "LONELY → loneliness (se cambia -y por -iness para formar un sustantivo)"
+  },
+  {
+    "sentence": "The ___ of the children was very loud.",
+    "rootWord": "LAUGH",
+    "correct": "laughter",
+    "hint": "The noun form of laugh",
+    "explanation": "LAUGH → laughter (sufijo -ter: el sonido o acto de reír)"
+  },
+  {
+    "sentence": "The ___ of the flight was delayed by two hours.",
+    "rootWord": "ARRIVE",
+    "correct": "arrival",
+    "hint": "The noun form of arrive",
+    "explanation": "ARRIVE → arrival (sufijo -al: el acto de llegar)"
+  },
+  {
+    "sentence": "Her ___ to sign the contract surprised the manager.",
+    "rootWord": "REFUSE",
+    "correct": "refusal",
+    "hint": "The noun form of refuse",
+    "explanation": "REFUSE → refusal (sufijo -al: el acto de negarse)"
+  },
+  {
+    "sentence": "They had a long ___ about where to go on holiday.",
+    "rootWord": "ARGUE",
+    "correct": "argument",
+    "hint": "The noun form of argue",
+    "explanation": "ARGUE → argument (sufijo -ment: se elimina la -e y se agrega -ment)"
+  },
+  {
+    "sentence": "The volunteers offered their ___ to the flood victims.",
+    "rootWord": "ASSIST",
+    "correct": "assistance",
+    "hint": "The noun form of assist",
+    "explanation": "ASSIST → assistance (sufijo -ance: la ayuda que se ofrece)"
   }
 ]

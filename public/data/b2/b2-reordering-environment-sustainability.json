@@ -1,0 +1,135 @@
+[
+  {
+    "id": "reord-b2-es-001",
+    "sentence": "Governments must invest more heavily in renewable energy sources",
+    "words": [
+      "Governments",
+      "must",
+      "invest",
+      "more",
+      "heavily",
+      "in",
+      "renewable",
+      "energy",
+      "sources"
+    ],
+    "hint": "Modal + verb + adverb + prepositional phrase",
+    "explanation": "'Invest in' se usa para hablar de destinar recursos a algo."
+  },
+  {
+    "id": "reord-b2-es-002",
+    "sentence": "Plastic waste is having a devastating effect on marine life",
+    "words": [
+      "Plastic",
+      "waste",
+      "is",
+      "having",
+      "a",
+      "devastating",
+      "effect",
+      "on",
+      "marine",
+      "life"
+    ],
+    "hint": "Present continuous + have an effect on",
+    "explanation": "'Have an effect on' significa causar un impacto sobre algo."
+  },
+  {
+    "id": "reord-b2-es-003",
+    "sentence": "Unless we reduce emissions, global temperatures will keep rising",
+    "words": [
+      "Unless",
+      "we",
+      "reduce",
+      "emissions",
+      "global",
+      "temperatures",
+      "will",
+      "keep",
+      "rising"
+    ],
+    "hint": "Unless + present simple, will + keep + gerund",
+    "explanation": "'Unless' introduce una condición negativa: 'si no reducimos'."
+  },
+  {
+    "id": "reord-b2-es-004",
+    "sentence": "The company was fined for illegally dumping toxic waste",
+    "words": ["The", "company", "was", "fined", "for", "illegally", "dumping", "toxic", "waste"],
+    "hint": "Passive voice + fined for + gerund",
+    "explanation": "'Be fined for' + gerundio se usa para hablar de una sanción por una acción."
+  },
+  {
+    "id": "reord-b2-es-005",
+    "sentence": "Deforestation has led to a sharp decline in biodiversity",
+    "words": ["Deforestation", "has", "led", "to", "a", "sharp", "decline", "in", "biodiversity"],
+    "hint": "Present perfect + lead to + noun phrase",
+    "explanation": "'Lead to' significa provocar o causar un resultado."
+  },
+  {
+    "id": "reord-b2-es-006",
+    "sentence": "More people are switching to electric vehicles nowadays",
+    "words": ["More", "people", "are", "switching", "to", "electric", "vehicles", "nowadays"],
+    "hint": "Present continuous + switch to",
+    "explanation": "'Switch to' significa cambiar a una alternativa diferente."
+  },
+  {
+    "id": "reord-b2-es-007",
+    "sentence": "The city council introduced a scheme to promote recycling",
+    "words": ["The", "city", "council", "introduced", "a", "scheme", "to", "promote", "recycling"],
+    "hint": "Subject + past verb + object + to + infinitive",
+    "explanation": "'Scheme' significa un plan o programa organizado."
+  },
+  {
+    "id": "reord-b2-es-008",
+    "sentence": "It is essential that businesses reduce their carbon footprint",
+    "words": [
+      "It",
+      "is",
+      "essential",
+      "that",
+      "businesses",
+      "reduce",
+      "their",
+      "carbon",
+      "footprint"
+    ],
+    "hint": "It is essential that + subjunctive",
+    "explanation": "'It is essential that' + subjuntivo (verbo base) expresa una necesidad urgente."
+  },
+  {
+    "id": "reord-b2-es-009",
+    "sentence": "Rising sea levels threaten to submerge low-lying coastal areas",
+    "words": [
+      "Rising",
+      "sea",
+      "levels",
+      "threaten",
+      "to",
+      "submerge",
+      "low-lying",
+      "coastal",
+      "areas"
+    ],
+    "hint": "Subject + threaten + to + infinitive",
+    "explanation": "'Threaten to' significa haber una posibilidad amenazante de que algo ocurra."
+  },
+  {
+    "id": "reord-b2-es-010",
+    "sentence": "Had the factory installed proper filters, the river would be cleaner",
+    "words": [
+      "Had",
+      "the",
+      "factory",
+      "installed",
+      "proper",
+      "filters",
+      "the",
+      "river",
+      "would",
+      "be",
+      "cleaner"
+    ],
+    "hint": "Inverted third conditional",
+    "explanation": "Inversión de la tercera condicional: 'Had + sujeto + participio' = 'If the factory had installed'."
+  }
+]

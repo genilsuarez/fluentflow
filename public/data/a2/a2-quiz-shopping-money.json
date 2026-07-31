@@ -1,0 +1,167 @@
+[
+  {
+    "question": "How much does this cost?",
+    "options": [
+      "What is the price?",
+      "What is the size?",
+      "What is the colour?",
+      "What is the weight?"
+    ],
+    "correct": 0,
+    "explanation": "'How much does this cost?' pregunta por el precio de algo."
+  },
+  {
+    "question": "What do you call the money you get back after paying more than the price?",
+    "options": ["receipt", "change", "discount", "bill"],
+    "correct": 1,
+    "explanation": "'Change' es el dinero que te devuelven si pagas de más."
+  },
+  {
+    "question": "What is a 'receipt'?",
+    "options": [
+      "A list of things to buy",
+      "A paper that proves you bought something",
+      "A type of coin",
+      "A shop assistant"
+    ],
+    "correct": 1,
+    "explanation": "Un 'receipt' es el papel que confirma tu compra."
+  },
+  {
+    "question": "Which word means 'to pay less than the usual price'?",
+    "options": ["discount", "expensive", "afford", "borrow"],
+    "correct": 0,
+    "explanation": "'Discount' es una reducción en el precio normal."
+  },
+  {
+    "question": "What does it mean to 'try on' clothes in a shop?",
+    "options": ["To buy them", "To wear them to see if they fit", "To wash them", "To return them"],
+    "correct": 1,
+    "explanation": "'Try on' significa ponerse ropa para ver si te queda bien, antes de comprarla."
+  },
+  {
+    "question": "Which word describes something that costs a lot of money?",
+    "options": ["cheap", "expensive", "free", "affordable"],
+    "correct": 1,
+    "explanation": "'Expensive' significa caro."
+  },
+  {
+    "question": "What is a 'cashier'?",
+    "options": [
+      "A person who makes clothes",
+      "A person who takes your payment in a shop",
+      "A person who cleans the shop",
+      "A person who delivers packages"
+    ],
+    "correct": 1,
+    "explanation": "El 'cashier' es la persona que cobra en la caja de una tienda."
+  },
+  {
+    "question": "Which word means 'to give back an item you don't want'?",
+    "options": ["return", "sell", "wear", "keep"],
+    "correct": 0,
+    "explanation": "'Return' significa devolver un producto a la tienda."
+  },
+  {
+    "question": "What is a 'shopping list'?",
+    "options": [
+      "A bill for your purchases",
+      "A list of things you need to buy",
+      "A discount coupon",
+      "A store's opening hours"
+    ],
+    "correct": 1,
+    "explanation": "Una 'shopping list' es la lista de cosas que necesitas comprar."
+  },
+  {
+    "question": "Which word means 'to pay for something using a card instead of cash'?",
+    "options": ["pay by card", "pay in cash", "pay later", "pay nothing"],
+    "correct": 0,
+    "explanation": "'Pay by card' significa pagar con tarjeta."
+  },
+  {
+    "question": "What do you call money that you save in a bank?",
+    "options": ["savings", "spending", "shopping", "change"],
+    "correct": 0,
+    "explanation": "'Savings' es el dinero que guardas, normalmente en el banco."
+  },
+  {
+    "question": "Which sentence is correct when something is too expensive for you?",
+    "options": [
+      "I can't afford it.",
+      "I can't spend it.",
+      "I can't return it.",
+      "I can't discount it."
+    ],
+    "correct": 0,
+    "explanation": "'I can't afford it' significa que no tienes suficiente dinero para comprarlo."
+  },
+  {
+    "question": "What is a 'sale'?",
+    "options": [
+      "A special event where prices are lower",
+      "A place to keep money",
+      "A type of receipt",
+      "A shopping list"
+    ],
+    "correct": 0,
+    "explanation": "Una 'sale' es un periodo en el que los precios bajan."
+  },
+  {
+    "question": "Which word means 'money you owe and must pay back'?",
+    "options": ["debt", "cash", "coin", "price"],
+    "correct": 0,
+    "explanation": "'Debt' es dinero que debes y tienes que devolver."
+  },
+  {
+    "question": "What does 'to borrow money' mean?",
+    "options": [
+      "To give money to someone",
+      "To take money that you must give back later",
+      "To spend all your money",
+      "To lose your money"
+    ],
+    "correct": 1,
+    "explanation": "'Borrow' significa tomar dinero prestado que debes devolver."
+  },
+  {
+    "question": "Which word means 'a small paper or card that gives you a discount'?",
+    "options": ["coupon", "invoice", "wallet", "budget"],
+    "correct": 0,
+    "explanation": "Un 'coupon' es un cupón que da derecho a un descuento."
+  },
+  {
+    "question": "What is a 'budget'?",
+    "options": [
+      "A plan for how you will spend your money",
+      "A type of bank card",
+      "A shopping bag",
+      "A list of shops"
+    ],
+    "correct": 0,
+    "explanation": "Un 'budget' es un plan de cuánto dinero puedes gastar."
+  },
+  {
+    "question": "Which word means 'not costing much money'?",
+    "options": ["cheap", "expensive", "priceless", "valuable"],
+    "correct": 0,
+    "explanation": "'Cheap' significa barato."
+  },
+  {
+    "question": "What do you say when a shop assistant asks if they can help you?",
+    "options": [
+      "I'm just looking, thanks.",
+      "I'm just cooking, thanks.",
+      "I'm just walking, thanks.",
+      "I'm just working, thanks."
+    ],
+    "correct": 0,
+    "explanation": "'I'm just looking, thanks' es una respuesta educada cuando solo estás mirando."
+  },
+  {
+    "question": "Which word means 'a small container for carrying money and cards'?",
+    "options": ["wallet", "basket", "trolley", "till"],
+    "correct": 0,
+    "explanation": "Un 'wallet' es la cartera donde llevas el dinero y las tarjetas."
+  }
+]

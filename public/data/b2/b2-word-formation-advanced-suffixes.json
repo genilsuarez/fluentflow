@@ -138,5 +138,145 @@
     "correct": "success",
     "hint": "The noun form of succeed",
     "explanation": "SUCCEED → success (forma sustantiva: el logro de un objetivo)"
+  },
+  {
+    "sentence": "She gave a very ___ speech at the conference.",
+    "rootWord": "PERSUADE",
+    "correct": "persuasive",
+    "hint": "An adjective meaning able to persuade",
+    "explanation": "PERSUADE → persuasive (se cambia -de por -sive para formar un adjetivo)"
+  },
+  {
+    "sentence": "The ___ nature of the chemical made it dangerous.",
+    "rootWord": "EXPLODE",
+    "correct": "explosive",
+    "hint": "An adjective meaning able to explode",
+    "explanation": "EXPLODE → explosive (se cambia -de por -sive para formar un adjetivo)"
+  },
+  {
+    "sentence": "His ___ behaviour at the party embarrassed everyone.",
+    "rootWord": "OUTRAGE",
+    "correct": "outrageous",
+    "hint": "An adjective meaning shockingly bad",
+    "explanation": "OUTRAGE → outrageous (sufijo -ous: que causa indignación)"
+  },
+  {
+    "sentence": "The ___ of the new employee was remarkable.",
+    "rootWord": "COMPETENT",
+    "correct": "competence",
+    "hint": "The noun form of competent",
+    "explanation": "COMPETENT → competence (se cambia -t por -ce para formar un sustantivo)"
+  },
+  {
+    "sentence": "She showed great ___ in handling the crisis.",
+    "rootWord": "CONFIDENT",
+    "correct": "confidence",
+    "hint": "The noun form of confident",
+    "explanation": "CONFIDENT → confidence (se cambia -t por -ce para formar un sustantivo)"
+  },
+  {
+    "sentence": "The ___ landscape of the mountains was breathtaking.",
+    "rootWord": "MOUNTAIN",
+    "correct": "mountainous",
+    "hint": "An adjective meaning full of mountains",
+    "explanation": "MOUNTAIN → mountainous (sufijo -ous: lleno de montañas)"
+  },
+  {
+    "sentence": "The ___ of the new technology was impressive.",
+    "rootWord": "INNOVATE",
+    "correct": "innovation",
+    "hint": "The noun form of innovate",
+    "explanation": "INNOVATE → innovation (se cambia -e por -ion para formar un sustantivo)"
+  },
+  {
+    "sentence": "His ___ approach to problem-solving was admired.",
+    "rootWord": "CREATE",
+    "correct": "creative",
+    "hint": "An adjective meaning showing imagination",
+    "explanation": "CREATE → creative (se cambia -e por -ive para formar un adjetivo)"
+  },
+  {
+    "sentence": "The ___ of the old building was a major concern.",
+    "rootWord": "MAINTAIN",
+    "correct": "maintenance",
+    "hint": "The noun form of maintain",
+    "explanation": "MAINTAIN → maintenance (se cambia -tain por -tenance para formar un sustantivo)"
+  },
+  {
+    "sentence": "She received a ___ response from the audience.",
+    "rootWord": "FAVOUR",
+    "correct": "favourable",
+    "hint": "An adjective meaning showing approval",
+    "explanation": "FAVOUR → favourable (sufijo -able: que muestra aprobación)"
+  },
+  {
+    "sentence": "The ___ of the new drug was tested in clinical trials.",
+    "rootWord": "SAFE",
+    "correct": "safety",
+    "hint": "The noun form of safe",
+    "explanation": "SAFE → safety (se cambia -e por -ety para formar un sustantivo)"
+  },
+  {
+    "sentence": "His ___ remarks offended many people.",
+    "rootWord": "PROVOKE",
+    "correct": "provocative",
+    "hint": "An adjective meaning intended to provoke",
+    "explanation": "PROVOKE → provocative (se cambia -ke por -cative para formar un adjetivo)"
+  },
+  {
+    "sentence": "She made a ___ decision that changed her career.",
+    "rootWord": "COURAGE",
+    "correct": "courageous",
+    "hint": "An adjective meaning brave",
+    "explanation": "COURAGE → courageous (sufijo -ous: que muestra valentía)"
+  },
+  {
+    "sentence": "The ___ of the evidence was questioned by the defence.",
+    "rootWord": "RELEVANT",
+    "correct": "relevance",
+    "hint": "The noun form of relevant",
+    "explanation": "RELEVANT → relevance (se cambia -t por -ce para formar un sustantivo)"
+  },
+  {
+    "sentence": "The company adopted a more ___ strategy.",
+    "rootWord": "COMPETE",
+    "correct": "competitive",
+    "hint": "An adjective meaning able to compete effectively",
+    "explanation": "COMPETE → competitive (se cambia -e por -itive para formar un adjetivo)"
+  },
+  {
+    "sentence": "The ___ of the new policy was debated in parliament.",
+    "rootWord": "IMPLEMENT",
+    "correct": "implementation",
+    "hint": "The noun form of implement",
+    "explanation": "IMPLEMENT → implementation (sufijo -ation: el proceso de poner en práctica)"
+  },
+  {
+    "sentence": "She has an ___ personality that attracts people.",
+    "rootWord": "ATTRACT",
+    "correct": "attractive",
+    "hint": "An adjective meaning pleasing to look at",
+    "explanation": "ATTRACT → attractive (sufijo -ive: que tiene la cualidad de atraer)"
+  },
+  {
+    "sentence": "The ___ of the old system was no longer acceptable.",
+    "rootWord": "DEPEND",
+    "correct": "dependence",
+    "hint": "The noun form of depend",
+    "explanation": "DEPEND → dependence (sufijo -ence: el estado de depender de algo)"
+  },
+  {
+    "sentence": "The manager praised her ___ approach to solving customer complaints.",
+    "rootWord": "PRODUCE",
+    "correct": "productive",
+    "hint": "An adjective meaning achieving good results",
+    "explanation": "PRODUCE → productive (sufijo -ive: que produce buenos resultados)"
+  },
+  {
+    "sentence": "He gave an ___ answer instead of avoiding the question.",
+    "rootWord": "ASSERT",
+    "correct": "assertive",
+    "hint": "An adjective meaning confident and direct",
+    "explanation": "ASSERT → assertive (sufijo -ive: que expresa opiniones con confianza)"
   }
 ]

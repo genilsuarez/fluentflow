@@ -82,5 +82,61 @@
     "words": ["He", "usually", "does", "his", "homework", "before", "dinner"],
     "hint": "Subject + adverb + verb + object + time",
     "explanation": "<Usually> va antes del verbo principal: <usually does>."
+  },
+  {
+    "id": "reord-a2-da-013",
+    "sentence": "We are meeting some friends for dinner tonight",
+    "words": ["We", "are", "meeting", "some", "friends", "for", "dinner", "tonight"],
+    "hint": "Subject + be + verb-ing + object + time",
+    "explanation": "El presente continuo se usa para planes ya organizados en el futuro cercano."
+  },
+  {
+    "id": "reord-a2-da-014",
+    "sentence": "She occasionally goes to the gym before work",
+    "words": ["She", "occasionally", "goes", "to", "the", "gym", "before", "work"],
+    "hint": "Subject + adverb + verb + place + time",
+    "explanation": "<Occasionally> es un adverbio de frecuencia que va antes del verbo principal."
+  },
+  {
+    "id": "reord-a2-da-015",
+    "sentence": "They are planning to visit their grandparents this weekend",
+    "words": ["They", "are", "planning", "to", "visit", "their", "grandparents", "this", "weekend"],
+    "hint": "Subject + be + verb-ing + to + infinitive + object",
+    "explanation": "<Be planning to> se usa para hablar de intenciones futuras."
+  },
+  {
+    "id": "reord-a2-da-016",
+    "sentence": "I usually check my emails first thing in the morning",
+    "words": ["I", "usually", "check", "my", "emails", "first", "thing", "in", "the", "morning"],
+    "hint": "Subject + adverb + verb + object + time expression",
+    "explanation": "<First thing in the morning> significa lo primero que haces al despertar."
+  },
+  {
+    "id": "reord-a2-da-017",
+    "sentence": "He hardly ever cooks dinner during the week",
+    "words": ["He", "hardly", "ever", "cooks", "dinner", "during", "the", "week"],
+    "hint": "Subject + adverb phrase + verb + object + time",
+    "explanation": "<Hardly ever> significa casi nunca; va antes del verbo principal."
+  },
+  {
+    "id": "reord-a2-da-018",
+    "sentence": "We are having a party next Saturday evening",
+    "words": ["We", "are", "having", "a", "party", "next", "Saturday", "evening"],
+    "hint": "Subject + be + verb-ing + object + time",
+    "explanation": "El presente continuo con expresión de tiempo futuro indica un plan organizado."
+  },
+  {
+    "id": "reord-a2-da-019",
+    "sentence": "She generally arrives at the office before nine",
+    "words": ["She", "generally", "arrives", "at", "the", "office", "before", "nine"],
+    "hint": "Subject + adverb + verb + place + time",
+    "explanation": "<Generally> es un sinónimo de <usually> y también va antes del verbo principal."
+  },
+  {
+    "id": "reord-a2-da-020",
+    "sentence": "They are getting ready to leave for the airport",
+    "words": ["They", "are", "getting", "ready", "to", "leave", "for", "the", "airport"],
+    "hint": "Subject + be + verb-ing + adjective + to + infinitive",
+    "explanation": "<Get ready> significa prepararse para hacer algo."
   }
 ]

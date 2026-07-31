@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What do scientists call a possible explanation that has not yet been proven?",
+    "options": ["theory", "hypothesis", "law", "fact"],
+    "correct": 1,
+    "explanation": "'Hypothesis' es una explicación tentativa que aún debe comprobarse."
+  },
+  {
+    "question": "Which word describes an idea or product that is completely new?",
+    "options": ["outdated", "innovative", "traditional", "conventional"],
+    "correct": 1,
+    "explanation": "'Innovative' describe algo nuevo y original."
+  },
+  {
+    "question": "What is a 'breakthrough' in science?",
+    "options": [
+      "A minor mistake",
+      "A sudden important discovery",
+      "A repeated experiment",
+      "An old theory"
+    ],
+    "correct": 1,
+    "explanation": "'Breakthrough' es un avance o descubrimiento importante y repentino."
+  },
+  {
+    "question": "Which word means 'to test an idea scientifically'?",
+    "options": ["assume", "experiment", "guess", "ignore"],
+    "correct": 1,
+    "explanation": "'Experiment' significa poner a prueba una idea mediante un procedimiento científico."
+  },
+  {
+    "question": "What do you call a machine that can perform tasks automatically?",
+    "options": ["gadget", "robot", "tool", "device"],
+    "correct": 1,
+    "explanation": "'Robot' es una máquina que realiza tareas de forma automática."
+  },
+  {
+    "question": "Which term refers to artificial systems that can learn and make decisions?",
+    "options": ["artificial intelligence", "virtual reality", "cloud storage", "biotechnology"],
+    "correct": 0,
+    "explanation": "'Artificial intelligence' (AI) se refiere a sistemas capaces de aprender y decidir."
+  },
+  {
+    "question": "What does 'to fund research' mean?",
+    "options": [
+      "To conduct research",
+      "To provide money for research",
+      "To publish research results",
+      "To criticise research"
+    ],
+    "correct": 1,
+    "explanation": "'Fund' significa proporcionar el dinero necesario para algo."
+  },
+  {
+    "question": "Which word means 'a scientific study that has been checked by other experts'?",
+    "options": ["peer-reviewed", "self-published", "unverified", "anonymous"],
+    "correct": 0,
+    "explanation": "'Peer-reviewed' significa revisado por otros expertos antes de publicarse."
+  },
+  {
+    "question": "What is a 'patent'?",
+    "options": [
+      "A type of laboratory",
+      "Legal protection for an invention",
+      "A scientific journal",
+      "A university degree"
+    ],
+    "correct": 1,
+    "explanation": "Una 'patent' otorga protección legal exclusiva sobre una invención."
+  },
+  {
+    "question": "Which verb means 'to develop and produce a new invention'?",
+    "options": ["invent", "copy", "cancel", "delay"],
+    "correct": 0,
+    "explanation": "'Invent' significa crear algo nuevo por primera vez."
+  },
+  {
+    "question": "What do you call the process of testing a product before it's released?",
+    "options": ["marketing", "trial", "advertising", "distribution"],
+    "correct": 1,
+    "explanation": "Un 'trial' es una prueba antes del lanzamiento oficial."
+  },
+  {
+    "question": "Which word describes technology that harms the environment as little as possible?",
+    "options": ["eco-friendly", "obsolete", "expensive", "complex"],
+    "correct": 0,
+    "explanation": "'Eco-friendly' describe tecnología que respeta el medio ambiente."
+  },
+  {
+    "question": "What does 'to upgrade' a system mean?",
+    "options": ["To delete it", "To improve it with newer features", "To sell it", "To copy it"],
+    "correct": 1,
+    "explanation": "'Upgrade' significa mejorar un sistema con características más nuevas."
+  },
+  {
+    "question": "Which word means 'no longer used because something newer exists'?",
+    "options": ["cutting-edge", "obsolete", "advanced", "efficient"],
+    "correct": 1,
+    "explanation": "'Obsolete' describe algo anticuado que ya no se usa."
+  },
+  {
+    "question": "What is a 'prototype'?",
+    "options": [
+      "The final commercial version of a product",
+      "An early model used for testing",
+      "A user manual",
+      "A marketing plan"
+    ],
+    "correct": 1,
+    "explanation": "Un 'prototype' es un primer modelo de prueba de un producto."
+  },
+  {
+    "question": "Which phrase means 'at the forefront of new technology'?",
+    "options": ["cutting-edge", "old-fashioned", "second-hand", "worn out"],
+    "correct": 0,
+    "explanation": "'Cutting-edge' describe tecnología muy avanzada y actual."
+  },
+  {
+    "question": "What does it mean when a company 'launches' a product?",
+    "options": [
+      "It stops making the product",
+      "It introduces the product to the market",
+      "It repairs the product",
+      "It recalls the product"
+    ],
+    "correct": 1,
+    "explanation": "'Launch' significa presentar oficialmente un producto al mercado."
+  },
+  {
+    "question": "Which word describes data stored and accessed over the internet rather than on a local device?",
+    "options": ["cloud-based", "offline", "manual", "analogue"],
+    "correct": 0,
+    "explanation": "'Cloud-based' se refiere a datos almacenados en internet en vez de en un dispositivo local."
+  },
+  {
+    "question": "What is the purpose of a 'clinical trial'?",
+    "options": [
+      "To advertise a new medicine",
+      "To test the safety and effectiveness of a treatment",
+      "To train new doctors",
+      "To fund a hospital"
+    ],
+    "correct": 1,
+    "explanation": "Un 'clinical trial' evalúa la seguridad y eficacia de un tratamiento médico."
+  },
+  {
+    "question": "Which word means 'to happen or develop gradually over time'?",
+    "options": ["evolve", "collapse", "vanish", "pause"],
+    "correct": 0,
+    "explanation": "'Evolve' significa desarrollarse o cambiar gradualmente."
+  }
+]

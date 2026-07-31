@@ -1,0 +1,136 @@
+[
+  {
+    "id": "reord-b2-ps-001",
+    "sentence": "The government announced a new policy to tackle unemployment",
+    "words": [
+      "The",
+      "government",
+      "announced",
+      "a",
+      "new",
+      "policy",
+      "to",
+      "tackle",
+      "unemployment"
+    ],
+    "hint": "Subject + past verb + object + to + infinitive",
+    "explanation": "'Tackle unemployment' significa abordar el problema del desempleo."
+  },
+  {
+    "id": "reord-b2-ps-002",
+    "sentence": "Voter turnout was lower than expected in this year's election",
+    "words": [
+      "Voter",
+      "turnout",
+      "was",
+      "lower",
+      "than",
+      "expected",
+      "in",
+      "this",
+      "year's",
+      "election"
+    ],
+    "hint": "Subject + be + comparative + than expected",
+    "explanation": "'Turnout' se refiere al número de personas que participan en una votación."
+  },
+  {
+    "id": "reord-b2-ps-003",
+    "sentence": "The opposition party strongly criticised the proposed reforms",
+    "words": ["The", "opposition", "party", "strongly", "criticised", "the", "proposed", "reforms"],
+    "hint": "Subject + adverb + past verb + object",
+    "explanation": "'Opposition party' es el partido que se opone al gobierno actual."
+  },
+  {
+    "id": "reord-b2-ps-004",
+    "sentence": "Citizens have the right to protest peacefully against injustice",
+    "words": [
+      "Citizens",
+      "have",
+      "the",
+      "right",
+      "to",
+      "protest",
+      "peacefully",
+      "against",
+      "injustice"
+    ],
+    "hint": "Have the right + to + infinitive",
+    "explanation": "'Have the right to' expresa un derecho legal o moral."
+  },
+  {
+    "id": "reord-b2-ps-005",
+    "sentence": "The minister resigned after the scandal was made public",
+    "words": ["The", "minister", "resigned", "after", "the", "scandal", "was", "made", "public"],
+    "hint": "Past simple + after + passive clause",
+    "explanation": "'Resign' significa dimitir de un cargo."
+  },
+  {
+    "id": "reord-b2-ps-006",
+    "sentence": "Inequality has widened significantly over the past decade",
+    "words": ["Inequality", "has", "widened", "significantly", "over", "the", "past", "decade"],
+    "hint": "Present perfect + adverb + over + time period",
+    "explanation": "'Widen' significa ampliarse o aumentar una brecha."
+  },
+  {
+    "id": "reord-b2-ps-007",
+    "sentence": "The referendum result divided public opinion sharply",
+    "words": ["The", "referendum", "result", "divided", "public", "opinion", "sharply"],
+    "hint": "Subject + past verb + object + adverb",
+    "explanation": "'Divide opinion' significa causar desacuerdo entre la gente."
+  },
+  {
+    "id": "reord-b2-ps-008",
+    "sentence": "Campaigners are calling for greater transparency in public spending",
+    "words": [
+      "Campaigners",
+      "are",
+      "calling",
+      "for",
+      "greater",
+      "transparency",
+      "in",
+      "public",
+      "spending"
+    ],
+    "hint": "Present continuous + call for",
+    "explanation": "'Call for' significa exigir o pedir públicamente algo."
+  },
+  {
+    "id": "reord-b2-ps-009",
+    "sentence": "The new law was passed despite fierce opposition in parliament",
+    "words": [
+      "The",
+      "new",
+      "law",
+      "was",
+      "passed",
+      "despite",
+      "fierce",
+      "opposition",
+      "in",
+      "parliament"
+    ],
+    "hint": "Passive voice + despite + noun phrase",
+    "explanation": "'Despite' va seguido de un sustantivo, no de una cláusula completa."
+  },
+  {
+    "id": "reord-b2-ps-010",
+    "sentence": "Were the economy to improve, support for the government would rise",
+    "words": [
+      "Were",
+      "the",
+      "economy",
+      "to",
+      "improve",
+      "support",
+      "for",
+      "the",
+      "government",
+      "would",
+      "rise"
+    ],
+    "hint": "Formal inverted conditional",
+    "explanation": "'Were + sujeto + to + infinitivo' es una condicional formal e hipotética."
+  }
+]

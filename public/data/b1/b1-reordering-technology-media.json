@@ -1,0 +1,96 @@
+[
+  {
+    "id": "reord-b1-tm-001",
+    "sentence": "You can download the app for free from the store",
+    "words": ["You", "can", "download", "the", "app", "for", "free", "from", "the", "store"],
+    "hint": "Modal + verb + object + adverb + place",
+    "explanation": "'Download' significa transferir datos desde internet a un dispositivo."
+  },
+  {
+    "id": "reord-b1-tm-002",
+    "sentence": "My phone battery dies very quickly these days",
+    "words": ["My", "phone", "battery", "dies", "very", "quickly", "these", "days"],
+    "hint": "Subject + verb + adverb + time expression",
+    "explanation": "'These days' se usa para hablar de una tendencia reciente."
+  },
+  {
+    "id": "reord-b1-tm-003",
+    "sentence": "She spends too much time scrolling through social media",
+    "words": ["She", "spends", "too", "much", "time", "scrolling", "through", "social", "media"],
+    "hint": "Spend time + gerund",
+    "explanation": "'Spend time' se combina con el gerundio para describir cómo se usa el tiempo."
+  },
+  {
+    "id": "reord-b1-tm-004",
+    "sentence": "The website crashed because too many people were online",
+    "words": ["The", "website", "crashed", "because", "too", "many", "people", "were", "online"],
+    "hint": "Past simple + because + past continuous",
+    "explanation": "'Because' introduce la razón por la que la página web falló."
+  },
+  {
+    "id": "reord-b1-tm-005",
+    "sentence": "I forgot to charge my laptop last night",
+    "words": ["I", "forgot", "to", "charge", "my", "laptop", "last", "night"],
+    "distractors": ["charging"],
+    "hint": "Forget + to + base verb",
+    "explanation": "'Forget to do something' significa olvidar hacer algo que era necesario."
+  },
+  {
+    "id": "reord-b1-tm-006",
+    "sentence": "Could you send me the file by email, please",
+    "words": ["Could", "you", "send", "me", "the", "file", "by", "email", "please"],
+    "hint": "Polite request with 'could'",
+    "explanation": "'Could you...?' es una forma educada de pedir algo."
+  },
+  {
+    "id": "reord-b1-tm-007",
+    "sentence": "The company launched a new streaming service last month",
+    "words": ["The", "company", "launched", "a", "new", "streaming", "service", "last", "month"],
+    "hint": "Subject + past verb + object + time expression",
+    "explanation": "'Launch' significa lanzar o presentar un nuevo producto al público."
+  },
+  {
+    "id": "reord-b1-tm-008",
+    "sentence": "You should back up your photos before you update the software",
+    "words": [
+      "You",
+      "should",
+      "back",
+      "up",
+      "your",
+      "photos",
+      "before",
+      "you",
+      "update",
+      "the",
+      "software"
+    ],
+    "hint": "Modal advice + before-clause",
+    "explanation": "'Back up' significa hacer una copia de seguridad de los datos."
+  },
+  {
+    "id": "reord-b1-tm-009",
+    "sentence": "My internet connection has been very slow recently",
+    "words": ["My", "internet", "connection", "has", "been", "very", "slow", "recently"],
+    "hint": "Present perfect + adjective + adverb",
+    "explanation": "El presente perfecto describe una situación que empezó en el pasado y continúa ahora."
+  },
+  {
+    "id": "reord-b1-tm-010",
+    "sentence": "They are developing an app that helps people learn languages",
+    "words": [
+      "They",
+      "are",
+      "developing",
+      "an",
+      "app",
+      "that",
+      "helps",
+      "people",
+      "learn",
+      "languages"
+    ],
+    "hint": "Present continuous + relative clause",
+    "explanation": "'That' introduce una cláusula relativa que describe la aplicación."
+  }
+]

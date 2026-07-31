@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What do you call the money you pay every month to live in a rented flat?",
+    "options": ["mortgage", "rent", "deposit", "bill"],
+    "correct": 1,
+    "explanation": "'Rent' es el pago mensual por vivir en una propiedad alquilada."
+  },
+  {
+    "question": "What is a 'mortgage'?",
+    "options": [
+      "A loan to buy a house",
+      "A type of insurance",
+      "A monthly rent payment",
+      "A home repair"
+    ],
+    "correct": 0,
+    "explanation": "Una 'mortgage' (hipoteca) es un préstamo para comprar una propiedad."
+  },
+  {
+    "question": "Which word means 'a person who owns the property you rent'?",
+    "options": ["tenant", "landlord", "neighbour", "agent"],
+    "correct": 1,
+    "explanation": "'Landlord' es el propietario que alquila la vivienda."
+  },
+  {
+    "question": "Which word describes a home without any furniture?",
+    "options": ["furnished", "unfurnished", "spacious", "cosy"],
+    "correct": 1,
+    "explanation": "'Unfurnished' significa sin muebles."
+  },
+  {
+    "question": "What do you call a building divided into separate homes on different floors?",
+    "options": ["cottage", "apartment block", "detached house", "bungalow"],
+    "correct": 1,
+    "explanation": "Un 'apartment block' (edificio de apartamentos) tiene varias viviendas en distintos pisos."
+  },
+  {
+    "question": "Which word means 'to recycle or reuse something instead of throwing it away'?",
+    "options": ["pollute", "conserve", "waste", "litter"],
+    "correct": 1,
+    "explanation": "'Conserve' significa usar los recursos de forma responsable."
+  },
+  {
+    "question": "What is 'pollution'?",
+    "options": [
+      "Clean air and water",
+      "Harmful substances damaging the environment",
+      "A type of renewable energy",
+      "A government policy"
+    ],
+    "correct": 1,
+    "explanation": "'Pollution' (contaminación) son sustancias dañinas que afectan el medio ambiente."
+  },
+  {
+    "question": "Which of these is a 'renewable energy' source?",
+    "options": ["coal", "oil", "solar power", "gas"],
+    "correct": 2,
+    "explanation": "La energía solar es renovable porque no se agota con el uso."
+  },
+  {
+    "question": "What does 'sustainable' mean?",
+    "options": [
+      "Something that harms the environment",
+      "Something that can continue without damaging resources",
+      "Something very expensive",
+      "Something temporary"
+    ],
+    "correct": 1,
+    "explanation": "'Sustainable' describe prácticas que se pueden mantener sin agotar los recursos naturales."
+  },
+  {
+    "question": "What do you call the outdoor space usually attached to a house where you can grow plants?",
+    "options": ["balcony", "garden", "basement", "attic"],
+    "correct": 1,
+    "explanation": "'Garden' es el espacio exterior de una casa, típicamente con plantas."
+  },
+  {
+    "question": "Which word means 'the room under the roof of a house'?",
+    "options": ["attic", "basement", "hallway", "porch"],
+    "correct": 0,
+    "explanation": "'Attic' es el desván, el espacio bajo el tejado."
+  },
+  {
+    "question": "What is a 'neighbourhood'?",
+    "options": [
+      "A single house",
+      "An area where people live near each other",
+      "A type of furniture",
+      "A government building"
+    ],
+    "correct": 1,
+    "explanation": "'Neighbourhood' es la zona o barrio donde vive la gente."
+  },
+  {
+    "question": "Which word describes water, air, and soil that are free from harmful substances?",
+    "options": ["polluted", "clean", "wasted", "recycled"],
+    "correct": 1,
+    "explanation": "'Clean' describe un ambiente sin contaminación."
+  },
+  {
+    "question": "What do you call a small house, usually with one floor?",
+    "options": ["bungalow", "skyscraper", "mansion", "flat"],
+    "correct": 0,
+    "explanation": "Un 'bungalow' es una casa pequeña, generalmente de una sola planta."
+  },
+  {
+    "question": "Which verb means 'to reduce the amount of something you use'?",
+    "options": ["increase", "reduce", "waste", "spend"],
+    "correct": 1,
+    "explanation": "'Reduce' significa disminuir la cantidad usada de algo."
+  },
+  {
+    "question": "What is a 'greenhouse gas'?",
+    "options": [
+      "A gas used in gardening",
+      "A gas that traps heat and contributes to climate change",
+      "A gas used for cooking",
+      "A harmless natural gas"
+    ],
+    "correct": 1,
+    "explanation": "Los 'greenhouse gases' (gases de efecto invernadero) atrapan el calor y contribuyen al cambio climático."
+  },
+  {
+    "question": "Which word means 'the natural world, including plants, animals, and land'?",
+    "options": ["furniture", "environment", "vehicle", "appliance"],
+    "correct": 1,
+    "explanation": "'Environment' se refiere al mundo natural que nos rodea."
+  },
+  {
+    "question": "What do you call a house that is completely separate from other houses?",
+    "options": ["semi-detached house", "terraced house", "detached house", "apartment"],
+    "correct": 2,
+    "explanation": "Una 'detached house' no comparte paredes con otras viviendas."
+  },
+  {
+    "question": "Which word describes water that comes from rain?",
+    "options": ["tap water", "rainwater", "sea water", "sparkling water"],
+    "correct": 1,
+    "explanation": "'Rainwater' es el agua de lluvia."
+  },
+  {
+    "question": "What does it mean to 'move house'?",
+    "options": [
+      "To renovate a house",
+      "To physically lift a house",
+      "To change where you live",
+      "To buy furniture"
+    ],
+    "correct": 2,
+    "explanation": "'Move house' significa mudarse a una vivienda diferente."
+  }
+]

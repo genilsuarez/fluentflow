@@ -138,5 +138,145 @@
     "correct": "player",
     "hint": "A person who plays",
     "explanation": "PLAY → player (sufijo -er: persona que realiza la acción)"
+  },
+  {
+    "sentence": "My mother is a ___. She works in a bank.",
+    "rootWord": "BANK",
+    "correct": "banker",
+    "hint": "A person who works in a bank",
+    "explanation": "BANK → banker (sufijo -er: persona que trabaja en un banco)"
+  },
+  {
+    "sentence": "The ___ fixed the broken pipe.",
+    "rootWord": "PLUMB",
+    "correct": "plumber",
+    "hint": "A person who fixes pipes",
+    "explanation": "PLUMB → plumber (sufijo -er: persona que trabaja con tuberías)"
+  },
+  {
+    "sentence": "She wants to be a ___ when she grows up. She loves to dance.",
+    "rootWord": "DANCE",
+    "correct": "dancer",
+    "hint": "A person who dances",
+    "explanation": "DANCE → dancer (sufijo -r: se agrega a los verbos terminados en -e)"
+  },
+  {
+    "sentence": "The ___ writes stories for the newspaper.",
+    "rootWord": "WRITE",
+    "correct": "writer",
+    "hint": "A person who writes",
+    "explanation": "WRITE → writer (sufijo -r: se agrega a los verbos terminados en -e)"
+  },
+  {
+    "sentence": "He is a fast ___. He runs every morning.",
+    "rootWord": "RUN",
+    "correct": "runner",
+    "hint": "A person who runs",
+    "explanation": "RUN → runner (se duplica la consonante final y se agrega -er)"
+  },
+  {
+    "sentence": "My uncle is an ___. He acts in movies.",
+    "rootWord": "DIRECT",
+    "correct": "director",
+    "hint": "A person who directs",
+    "explanation": "DIRECT → director (sufijo -or: persona que dirige)"
+  },
+  {
+    "sentence": "The ___ invented a new machine.",
+    "rootWord": "INVENT",
+    "correct": "inventor",
+    "hint": "A person who invents",
+    "explanation": "INVENT → inventor (sufijo -or: persona que inventa)"
+  },
+  {
+    "sentence": "The ___ cleaned the office after work.",
+    "rootWord": "CLEAN",
+    "correct": "cleaner",
+    "hint": "A person who cleans",
+    "explanation": "CLEAN → cleaner (sufijo -er: persona que limpia)"
+  },
+  {
+    "sentence": "My sister is a ___. She bakes cakes and bread.",
+    "rootWord": "BAKE",
+    "correct": "baker",
+    "hint": "A person who bakes",
+    "explanation": "BAKE → baker (sufijo -r: se agrega a los verbos terminados en -e)"
+  },
+  {
+    "sentence": "He is a ___. He farms vegetables and fruits.",
+    "rootWord": "FARM",
+    "correct": "farmer",
+    "hint": "A person who farms",
+    "explanation": "FARM → farmer (sufijo -er: persona que trabaja la tierra)"
+  },
+  {
+    "sentence": "The ___ designed a beautiful building.",
+    "rootWord": "DESIGN",
+    "correct": "designer",
+    "hint": "A person who designs",
+    "explanation": "DESIGN → designer (sufijo -er: persona que diseña)"
+  },
+  {
+    "sentence": "He is a good ___. He builds houses and schools.",
+    "rootWord": "BUILD",
+    "correct": "builder",
+    "hint": "A person who builds",
+    "explanation": "BUILD → builder (sufijo -er: persona que construye)"
+  },
+  {
+    "sentence": "She is a hard ___. She works ten hours a day.",
+    "rootWord": "WORK",
+    "correct": "worker",
+    "hint": "A person who works",
+    "explanation": "WORK → worker (sufijo -er: persona que trabaja)"
+  },
+  {
+    "sentence": "He is a great ___. He won the race last year.",
+    "rootWord": "WIN",
+    "correct": "winner",
+    "hint": "A person who wins",
+    "explanation": "WIN → winner (se duplica la consonante final y se agrega -er)"
+  },
+  {
+    "sentence": "Take an umbrella. It is very ___ today.",
+    "rootWord": "RAIN",
+    "correct": "rainy",
+    "hint": "An adjective describing weather with rain",
+    "explanation": "RAIN → rainy (sufijo -y: que tiene la cualidad de la lluvia)"
+  },
+  {
+    "sentence": "The sky is ___ today. I cannot see the sun.",
+    "rootWord": "CLOUD",
+    "correct": "cloudy",
+    "hint": "An adjective describing weather with clouds",
+    "explanation": "CLOUD → cloudy (sufijo -y: que tiene la cualidad de las nubes)"
+  },
+  {
+    "sentence": "It is very ___ near the river. Drive carefully.",
+    "rootWord": "FOG",
+    "correct": "foggy",
+    "hint": "An adjective describing weather with fog",
+    "explanation": "FOG → foggy (se duplica la consonante final y se agrega -y)"
+  },
+  {
+    "sentence": "I am ___ that tomorrow will be a good day.",
+    "rootWord": "HOPE",
+    "correct": "hopeful",
+    "hint": "Full of hope",
+    "explanation": "HOPE → hopeful (sufijo -ful: se elimina la -e final y se agrega -ful)"
+  },
+  {
+    "sentence": "The machine is very ___. It never stops working.",
+    "rootWord": "POWER",
+    "correct": "powerful",
+    "hint": "Full of power",
+    "explanation": "POWER → powerful (sufijo -ful: lleno de fuerza)"
+  },
+  {
+    "sentence": "He is a strong ___. He goes up the mountain every summer.",
+    "rootWord": "CLIMB",
+    "correct": "climber",
+    "hint": "A person who climbs",
+    "explanation": "CLIMB → climber (sufijo -er: persona que escala)"
   }
 ]

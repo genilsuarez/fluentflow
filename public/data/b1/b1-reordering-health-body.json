@@ -1,0 +1,83 @@
+[
+  {
+    "id": "reord-b1-hb-001",
+    "sentence": "You should see a doctor if the pain gets worse",
+    "words": ["You", "should", "see", "a", "doctor", "if", "the", "pain", "gets", "worse"],
+    "hint": "Modal advice + if-clause",
+    "explanation": "'Should' se usa para dar consejos médicos generales."
+  },
+  {
+    "id": "reord-b1-hb-002",
+    "sentence": "She has been suffering from a headache since this morning",
+    "words": [
+      "She",
+      "has",
+      "been",
+      "suffering",
+      "from",
+      "a",
+      "headache",
+      "since",
+      "this",
+      "morning"
+    ],
+    "hint": "Present perfect continuous + since",
+    "explanation": "El presente perfecto continuo describe un síntoma que empezó en el pasado y continúa."
+  },
+  {
+    "id": "reord-b1-hb-003",
+    "sentence": "The nurse took my temperature and blood pressure",
+    "words": ["The", "nurse", "took", "my", "temperature", "and", "blood", "pressure"],
+    "hint": "Subject + past verb + two objects",
+    "explanation": "'Take someone's temperature/blood pressure' es la colocación estándar en contextos médicos."
+  },
+  {
+    "id": "reord-b1-hb-004",
+    "sentence": "I twisted my ankle while I was running yesterday",
+    "words": ["I", "twisted", "my", "ankle", "while", "I", "was", "running", "yesterday"],
+    "hint": "Past simple + while + past continuous",
+    "explanation": "'While' + pasado continuo describe la acción de fondo durante la cual ocurrió otra."
+  },
+  {
+    "id": "reord-b1-hb-005",
+    "sentence": "The doctor prescribed some antibiotics for the infection",
+    "words": ["The", "doctor", "prescribed", "some", "antibiotics", "for", "the", "infection"],
+    "hint": "Subject + verb + object + for + reason",
+    "explanation": "'Prescribe' significa recetar un medicamento."
+  },
+  {
+    "id": "reord-b1-hb-006",
+    "sentence": "You need to rest and drink plenty of water",
+    "words": ["You", "need", "to", "rest", "and", "drink", "plenty", "of", "water"],
+    "hint": "Need to + two coordinated verbs",
+    "explanation": "'Plenty of' significa una cantidad grande o suficiente de algo."
+  },
+  {
+    "id": "reord-b1-hb-007",
+    "sentence": "He broke his arm when he fell off his bike",
+    "words": ["He", "broke", "his", "arm", "when", "he", "fell", "off", "his", "bike"],
+    "hint": "Past simple + when + past simple",
+    "explanation": "'When' conecta dos acciones pasadas simples que ocurrieron una tras otra."
+  },
+  {
+    "id": "reord-b1-hb-008",
+    "sentence": "Regular exercise can improve your mental health",
+    "words": ["Regular", "exercise", "can", "improve", "your", "mental", "health"],
+    "hint": "Subject + modal + verb + object",
+    "explanation": "'Can' se usa aquí para expresar posibilidad general, no habilidad."
+  },
+  {
+    "id": "reord-b1-hb-009",
+    "sentence": "She is allergic to peanuts and shellfish",
+    "words": ["She", "is", "allergic", "to", "peanuts", "and", "shellfish"],
+    "hint": "Subject + be + allergic to + noun list",
+    "explanation": "'Allergic to' siempre va seguido de la preposición 'to'."
+  },
+  {
+    "id": "reord-b1-hb-010",
+    "sentence": "I haven't slept well for the past few nights",
+    "words": ["I", "haven't", "slept", "well", "for", "the", "past", "few", "nights"],
+    "hint": "Present perfect negative + for + duration",
+    "explanation": "'For' + periodo de tiempo se usa con el presente perfecto para expresar duración."
+  }
+]

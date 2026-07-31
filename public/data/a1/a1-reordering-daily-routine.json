@@ -2,172 +2,144 @@
   {
     "id": "reord-a1-dr-001",
     "sentence": "I wake up at seven o'clock",
-    "words": [
-      "I",
-      "wake",
-      "up",
-      "at",
-      "seven",
-      "o'clock"
-    ],
+    "words": ["I", "wake", "up", "at", "seven", "o'clock"],
     "hint": "Subject + phrasal verb + time",
     "explanation": "El patrón básico es Sujeto + Verbo + Tiempo: <I wake up at seven o'clock>."
   },
   {
     "id": "reord-a1-dr-002",
     "sentence": "She brushes her teeth every morning",
-    "words": [
-      "She",
-      "brushes",
-      "her",
-      "teeth",
-      "every",
-      "morning"
-    ],
+    "words": ["She", "brushes", "her", "teeth", "every", "morning"],
     "hint": "Subject + verb + object + time",
     "explanation": "Sigue el patrón Sujeto + Verbo + Objeto + Expresión de tiempo."
   },
   {
     "id": "reord-a1-dr-003",
     "sentence": "He takes a shower before breakfast",
-    "words": [
-      "He",
-      "takes",
-      "a",
-      "shower",
-      "before",
-      "breakfast"
-    ],
+    "words": ["He", "takes", "a", "shower", "before", "breakfast"],
     "hint": "Subject + verb + object + time",
     "explanation": "El patrón es Sujeto + Verbo + Objeto + Tiempo: <He takes a shower before breakfast>."
   },
   {
     "id": "reord-a1-dr-004",
     "sentence": "We have lunch at twelve thirty",
-    "words": [
-      "We",
-      "have",
-      "lunch",
-      "at",
-      "twelve",
-      "thirty"
-    ],
+    "words": ["We", "have", "lunch", "at", "twelve", "thirty"],
     "hint": "Subject + verb + meal + time",
     "explanation": "Las comidas siguen el patrón: Sujeto + have + comida + at + hora."
   },
   {
     "id": "reord-a1-dr-005",
     "sentence": "They go to school by bus",
-    "words": [
-      "They",
-      "go",
-      "to",
-      "school",
-      "by",
-      "bus"
-    ],
+    "words": ["They", "go", "to", "school", "by", "bus"],
     "hint": "Subject + verb + place + transport",
     "explanation": "El patrón es Sujeto + go to + lugar + by + medio de transporte."
   },
   {
     "id": "reord-a1-dr-006",
     "sentence": "I get dressed after my shower",
-    "words": [
-      "I",
-      "get",
-      "dressed",
-      "after",
-      "my",
-      "shower"
-    ],
+    "words": ["I", "get", "dressed", "after", "my", "shower"],
     "hint": "Subject + phrasal verb + time",
     "explanation": "<Get dressed> es un phrasal verb que significa vestirse."
   },
   {
     "id": "reord-a1-dr-007",
     "sentence": "She reads a book before bed",
-    "words": [
-      "She",
-      "reads",
-      "a",
-      "book",
-      "before",
-      "bed"
-    ],
+    "words": ["She", "reads", "a", "book", "before", "bed"],
     "hint": "Subject + verb + object + time",
     "explanation": "El patrón es Sujeto + Verbo + Objeto + Tiempo: <She reads a book before bed>."
   },
   {
     "id": "reord-a1-dr-008",
     "sentence": "He walks to work every day",
-    "words": [
-      "He",
-      "walks",
-      "to",
-      "work",
-      "every",
-      "day"
-    ],
+    "words": ["He", "walks", "to", "work", "every", "day"],
     "hint": "Subject + verb + place + frequency",
     "explanation": "El patrón es Sujeto + Verbo + to + lugar + frecuencia."
   },
   {
     "id": "reord-a1-dr-009",
     "sentence": "We eat dinner at seven in the evening",
-    "words": [
-      "We",
-      "eat",
-      "dinner",
-      "at",
-      "seven",
-      "in",
-      "the",
-      "evening"
-    ],
+    "words": ["We", "eat", "dinner", "at", "seven", "in", "the", "evening"],
     "hint": "Subject + verb + meal + time",
     "explanation": "El patrón es Sujeto + eat + comida + at + hora + in the + parte del día."
   },
   {
     "id": "reord-a1-dr-010",
     "sentence": "I go to bed at ten o'clock",
-    "words": [
-      "I",
-      "go",
-      "to",
-      "bed",
-      "at",
-      "ten",
-      "o'clock"
-    ],
+    "words": ["I", "go", "to", "bed", "at", "ten", "o'clock"],
     "hint": "Subject + verb + place + time",
     "explanation": "Decimos <go to bed> (sin artículo) cuando hablamos de ir a dormir."
   },
   {
     "id": "reord-a1-dr-011",
     "sentence": "She makes breakfast for her family",
-    "words": [
-      "She",
-      "makes",
-      "breakfast",
-      "for",
-      "her",
-      "family"
-    ],
+    "words": ["She", "makes", "breakfast", "for", "her", "family"],
     "hint": "Subject + verb + object + for whom",
     "explanation": "El patrón es Sujeto + Verbo + Objeto + for + persona."
   },
   {
     "id": "reord-a1-dr-012",
     "sentence": "He does his homework after school",
-    "words": [
-      "He",
-      "does",
-      "his",
-      "homework",
-      "after",
-      "school"
-    ],
+    "words": ["He", "does", "his", "homework", "after", "school"],
     "hint": "Subject + verb + object + time",
     "explanation": "El patrón es Sujeto + do + posesivo + homework + hora."
+  },
+  {
+    "id": "reord-a1-dr-013",
+    "sentence": "We watch television after dinner",
+    "words": ["We", "watch", "television", "after", "dinner"],
+    "hint": "Subject + verb + object + time",
+    "explanation": "El patrón es Sujeto + Verbo + Objeto + Tiempo."
+  },
+  {
+    "id": "reord-a1-dr-014",
+    "sentence": "She washes the dishes after lunch",
+    "words": ["She", "washes", "the", "dishes", "after", "lunch"],
+    "distractors": ["wash"],
+    "hint": "Third person singular needs -es",
+    "explanation": "Con 'she' se agrega -es al verbo cuando termina en -sh: <washes>."
+  },
+  {
+    "id": "reord-a1-dr-015",
+    "sentence": "I check my phone before I leave the house",
+    "words": ["I", "check", "my", "phone", "before", "I", "leave", "the", "house"],
+    "hint": "Subject + verb + object + before + clause",
+    "explanation": "'Before' + sujeto + verbo introduce una acción que ocurre justo después."
+  },
+  {
+    "id": "reord-a1-dr-016",
+    "sentence": "He feeds the cat every morning",
+    "words": ["He", "feeds", "the", "cat", "every", "morning"],
+    "distractors": ["feed"],
+    "hint": "Third person singular needs -s",
+    "explanation": "Con 'he' se agrega -s al verbo: <feeds>."
+  },
+  {
+    "id": "reord-a1-dr-017",
+    "sentence": "They tidy their room on Saturdays",
+    "words": ["They", "tidy", "their", "room", "on", "Saturdays"],
+    "hint": "Subject + verb + object + day",
+    "explanation": "Se usa 'on' antes de días de la semana: <on Saturdays>."
+  },
+  {
+    "id": "reord-a1-dr-018",
+    "sentence": "I turn off the light before I sleep",
+    "words": ["I", "turn", "off", "the", "light", "before", "I", "sleep"],
+    "hint": "Subject + phrasal verb + object + before + clause",
+    "explanation": "<Turn off> es un phrasal verb que significa apagar."
+  },
+  {
+    "id": "reord-a1-dr-019",
+    "sentence": "She packs her bag for school every night",
+    "words": ["She", "packs", "her", "bag", "for", "school", "every", "night"],
+    "distractors": ["pack"],
+    "hint": "Third person singular needs -s",
+    "explanation": "Con 'she' se agrega -s al verbo: <packs>."
+  },
+  {
+    "id": "reord-a1-dr-020",
+    "sentence": "We usually meet our friends after work",
+    "words": ["We", "usually", "meet", "our", "friends", "after", "work"],
+    "hint": "Adverb of frequency before the main verb",
+    "explanation": "'Usually' va antes del verbo principal: <We usually meet>."
   }
 ]

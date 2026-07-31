@@ -1,0 +1,22 @@
+[
+  { "word": "painting", "translation": "pintura", "category": "Visual Arts" },
+  { "word": "sculpture", "translation": "escultura", "category": "Visual Arts" },
+  { "word": "exhibition", "translation": "exposición", "category": "Visual Arts" },
+  { "word": "gallery", "translation": "galería", "category": "Visual Arts" },
+  { "word": "novel", "translation": "novela", "category": "Literature" },
+  { "word": "poem", "translation": "poema", "category": "Literature" },
+  { "word": "author", "translation": "autor/a", "category": "Literature" },
+  { "word": "chapter", "translation": "capítulo", "category": "Literature" },
+  { "word": "orchestra", "translation": "orquesta", "category": "Music" },
+  { "word": "concert", "translation": "concierto", "category": "Music" },
+  { "word": "composer", "translation": "compositor/a", "category": "Music" },
+  { "word": "instrument", "translation": "instrumento", "category": "Music" },
+  { "word": "actor", "translation": "actor", "category": "Theatre" },
+  { "word": "stage", "translation": "escenario", "category": "Theatre" },
+  { "word": "audience", "translation": "público", "category": "Theatre" },
+  { "word": "rehearsal", "translation": "ensayo", "category": "Theatre" },
+  { "word": "tradition", "translation": "tradición", "category": "Culture" },
+  { "word": "festival", "translation": "festival", "category": "Culture" },
+  { "word": "custom", "translation": "costumbre", "category": "Culture" },
+  { "word": "heritage", "translation": "patrimonio", "category": "Culture" }
+]

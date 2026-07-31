@@ -1866,7 +1866,7 @@
       "sorting-connector-words-b2"
     ],
     "description": "Essential IELTS vocabulary: General, Technology, and Clothing (120 words)",
-    "estimatedTime": 9,
+    "estimatedTime": 10,
     "difficulty": 4
   },
   {
@@ -3231,13 +3231,13 @@
   },
   {
     "id": "completion-advanced-collocations-idioms-c2",
-    "name": "Advanced Collocations",
+    "name": "Advanced Idioms & Collocations",
     "learningMode": "completion",
     "dataPath": "data/c2/c2-completion-advanced-collocations-idioms.json",
     "level": [
       "c2"
     ],
-    "category": "Vocabulary",
+    "category": "Idioms",
     "prerequisites": [
       "matching-reading-vocab-c2"
     ],
@@ -3422,16 +3422,16 @@
     "difficulty": 5
   },
   {
-    "id": "matching-advanced-collocations-c2",
+    "id": "matching-advanced-collocations-c1",
     "name": "Advanced Collocations",
     "learningMode": "matching",
-    "dataPath": "data/c2/c2-matching-advanced-collocations.json",
+    "dataPath": "data/c1/c1-matching-advanced-collocations.json",
     "level": [
-      "c2"
+      "c1"
     ],
     "category": "Vocabulary",
     "prerequisites": [
-      "completion-complex-prepositions-conjunctions-c2"
+      "quiz-advanced-grammar-review-c1"
     ],
     "description": "Sophisticated verb-noun collocations matched with Spanish equivalents (40 pairs)",
     "estimatedTime": 3,
@@ -3447,7 +3447,7 @@
     ],
     "category": "Idioms",
     "prerequisites": [
-      "matching-advanced-collocations-c2"
+      "completion-complex-prepositions-conjunctions-c2"
     ],
     "description": "Literary and classical idioms with Spanish translations (20 idioms)",
     "estimatedTime": 3,
@@ -3838,22 +3838,6 @@
     "difficulty": 1
   },
   {
-    "id": "word-formation-jobs-people-a1",
-    "name": "Basic Suffixes — Jobs & People (-er, -or)",
-    "learningMode": "word-formation",
-    "dataPath": "data/a1/a1-word-formation-jobs-people.json",
-    "level": [
-      "a1"
-    ],
-    "category": "Vocabulary",
-    "prerequisites": [
-      "transformation-singular-plural-a1"
-    ],
-    "description": "Form nouns for jobs and people using -er and -or suffixes",
-    "estimatedTime": 3,
-    "difficulty": 1
-  },
-  {
     "id": "word-formation-adjective-formation-a1",
     "name": "Simple Adjective Formation (-y, -ful)",
     "learningMode": "word-formation",
@@ -3863,7 +3847,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "word-formation-jobs-people-a1"
+      "transformation-singular-plural-a1"
     ],
     "description": "Form simple adjectives using -y and -ful suffixes",
     "estimatedTime": 3,
@@ -3950,20 +3934,20 @@
     "difficulty": 1
   },
   {
-    "id": "reading-family-a1",
+    "id": "reading-family-a2",
     "name": "Family & Relationships",
     "learningMode": "reading",
-    "dataPath": "data/a1/a1-reading-family.json",
+    "dataPath": "data/a2/a2-reading-family.json",
     "level": [
-      "a1"
+      "a2"
     ],
     "category": "Vocabulary",
     "prerequisites": [
-      "sorting-phrasal-verbs-particle-a1"
+      "quiz-elementary-review-a2"
     ],
     "description": "Learn vocabulary for family members and how to describe relationships",
     "estimatedTime": 7,
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "id": "transformation-phrasal-verb-tense-a2",
@@ -3982,22 +3966,6 @@
     "difficulty": 2
   },
   {
-    "id": "word-formation-noun-suffixes-a2",
-    "name": "Common Noun Suffixes (-tion, -ment, -ness)",
-    "learningMode": "word-formation",
-    "dataPath": "data/a2/a2-word-formation-noun-suffixes.json",
-    "level": [
-      "a2"
-    ],
-    "category": "Vocabulary",
-    "prerequisites": [
-      "transformation-phrasal-verb-tense-a2"
-    ],
-    "description": "Form nouns using common suffixes -tion, -ment, and -ness",
-    "estimatedTime": 3,
-    "difficulty": 2
-  },
-  {
     "id": "word-formation-adverb-formation-a2",
     "name": "Adverb Formation (-ly)",
     "learningMode": "word-formation",
@@ -4007,7 +3975,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "word-formation-noun-suffixes-a2"
+      "transformation-phrasal-verb-tense-a2"
     ],
     "description": "Form adverbs from adjectives using the -ly suffix",
     "estimatedTime": 3,
@@ -4174,22 +4142,6 @@
     "difficulty": 3
   },
   {
-    "id": "word-formation-prefix-suffix-combo-b1",
-    "name": "Prefix & Suffix Combinations (un-, re-, -able, -ity)",
-    "learningMode": "word-formation",
-    "dataPath": "data/b1/b1-word-formation-prefix-suffix-combo.json",
-    "level": [
-      "b1"
-    ],
-    "category": "Vocabulary",
-    "prerequisites": [
-      "transformation-modals-obligation-b1"
-    ],
-    "description": "Form words using prefix and suffix combinations (un-, re-, -able, -ity)",
-    "estimatedTime": 3,
-    "difficulty": 3
-  },
-  {
     "id": "error-correction-conditional-passive-b1",
     "name": "Fix Conditional & Passive Errors",
     "learningMode": "error-correction",
@@ -4199,7 +4151,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "word-formation-prefix-suffix-combo-b1"
+      "transformation-modals-obligation-b1"
     ],
     "description": "Identify and fix errors in conditional and passive voice sentences",
     "estimatedTime": 4,
@@ -4382,22 +4334,6 @@
     "difficulty": 4
   },
   {
-    "id": "word-formation-advanced-suffixes-ive-b2",
-    "name": "Advanced Suffixes (-ive, -ous, -ment, -ence)",
-    "learningMode": "word-formation",
-    "dataPath": "data/b2/b2-word-formation-advanced-suffixes-ive.json",
-    "level": [
-      "b2"
-    ],
-    "category": "Vocabulary",
-    "prerequisites": [
-      "transformation-connectors-emphasis-b2"
-    ],
-    "description": "Form words using advanced suffixes -ive, -ous, -ment, and -ence",
-    "estimatedTime": 3,
-    "difficulty": 4
-  },
-  {
     "id": "word-formation-negative-prefixes-b2",
     "name": "Negative Prefixes (dis-, mis-, un-, in-)",
     "learningMode": "word-formation",
@@ -4407,7 +4343,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "word-formation-advanced-suffixes-ive-b2"
+      "transformation-connectors-emphasis-b2"
     ],
     "description": "Form words using negative prefixes dis-, mis-, un-, and in-",
     "estimatedTime": 3,
@@ -4734,22 +4670,6 @@
     "difficulty": 6
   },
   {
-    "id": "word-formation-scholarly-families-c2",
-    "name": "Scholarly Word Families",
-    "learningMode": "word-formation",
-    "dataPath": "data/c2/c2-word-formation-scholarly-families.json",
-    "level": [
-      "c2"
-    ],
-    "category": "Vocabulary",
-    "prerequisites": [
-      "word-formation-archaic-literary-c2"
-    ],
-    "description": "Explore scholarly word families and their derivational relationships",
-    "estimatedTime": 3,
-    "difficulty": 6
-  },
-  {
     "id": "error-correction-register-collocation-c2",
     "name": "Fix Subtle Register & Collocation Errors",
     "learningMode": "error-correction",
@@ -4759,7 +4679,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "word-formation-scholarly-families-c2"
+      "word-formation-archaic-literary-c2"
     ],
     "description": "Identify and fix subtle register and collocation errors",
     "estimatedTime": 4,
@@ -4858,6 +4778,230 @@
       "matching-literary-idioms-origins-c2"
     ],
     "description": "Test your mastery of advanced syntactic structures: inversion, cleft sentences, subjunctive, mixed conditionals, and nominalization",
+    "estimatedTime": 5,
+    "difficulty": 5
+  },
+  {
+    "id": "quiz-shopping-money-a2",
+    "name": "Shopping & Money",
+    "learningMode": "quiz",
+    "dataPath": "data/a2/a2-quiz-shopping-money.json",
+    "level": [
+      "a2"
+    ],
+    "category": "Vocabulary",
+    "prerequisites": [
+      "reading-family-a2"
+    ],
+    "description": "Vocabulary for shopping, prices, and paying for things",
+    "estimatedTime": 5,
+    "difficulty": 2
+  },
+  {
+    "id": "reordering-food-cooking-b1",
+    "name": "Reorder Food & Cooking Sentences",
+    "learningMode": "reordering",
+    "dataPath": "data/b1/b1-reordering-food-cooking.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Vocabulary",
+    "prerequisites": [
+      "quiz-intermediate-review-b1"
+    ],
+    "description": "Practise word order with food and cooking vocabulary",
+    "estimatedTime": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "reordering-health-body-b1",
+    "name": "Reorder Health & Body Sentences",
+    "learningMode": "reordering",
+    "dataPath": "data/b1/b1-reordering-health-body.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Vocabulary",
+    "prerequisites": [
+      "reordering-food-cooking-b1"
+    ],
+    "description": "Practise word order with health and body vocabulary",
+    "estimatedTime": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "reordering-technology-media-b1",
+    "name": "Reorder Technology & Media Sentences",
+    "learningMode": "reordering",
+    "dataPath": "data/b1/b1-reordering-technology-media.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Vocabulary",
+    "prerequisites": [
+      "reordering-health-body-b1"
+    ],
+    "description": "Practise word order with technology and media vocabulary",
+    "estimatedTime": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "quiz-housing-environment-b1",
+    "name": "Housing & Environment",
+    "learningMode": "quiz",
+    "dataPath": "data/b1/b1-quiz-housing-environment.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Vocabulary",
+    "prerequisites": [
+      "reordering-technology-media-b1"
+    ],
+    "description": "Vocabulary for housing, renting, and the environment",
+    "estimatedTime": 5,
+    "difficulty": 3
+  },
+  {
+    "id": "matching-sports-hobbies-b1",
+    "name": "Sports & Hobbies",
+    "learningMode": "matching",
+    "dataPath": "data/b1/b1-matching-sports-hobbies.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Vocabulary",
+    "prerequisites": [
+      "quiz-housing-environment-b1"
+    ],
+    "description": "Match sports and hobbies expressions to their translations",
+    "estimatedTime": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "sorting-arts-culture-b1",
+    "name": "Arts & Culture",
+    "learningMode": "sorting",
+    "dataPath": "data/b1/b1-sorting-arts-culture.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Vocabulary",
+    "prerequisites": [
+      "matching-sports-hobbies-b1"
+    ],
+    "description": "Sort arts and culture vocabulary by category",
+    "estimatedTime": 3,
+    "difficulty": 3
+  },
+  {
+    "id": "completion-nature-weather-b1",
+    "name": "Nature & Weather",
+    "learningMode": "completion",
+    "dataPath": "data/b1/b1-completion-nature-weather.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Vocabulary",
+    "prerequisites": [
+      "sorting-arts-culture-b1"
+    ],
+    "description": "Complete sentences with nature and weather vocabulary",
+    "estimatedTime": 5,
+    "difficulty": 3
+  },
+  {
+    "id": "reordering-environment-sustainability-b2",
+    "name": "Reorder Environment & Sustainability Sentences",
+    "learningMode": "reordering",
+    "dataPath": "data/b2/b2-reordering-environment-sustainability.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Vocabulary",
+    "prerequisites": [
+      "quiz-upper-intermediate-review-b2"
+    ],
+    "description": "Practise word order with environment and sustainability vocabulary",
+    "estimatedTime": 3,
+    "difficulty": 4
+  },
+  {
+    "id": "reordering-crime-law-b2",
+    "name": "Reorder Crime & Law Sentences",
+    "learningMode": "reordering",
+    "dataPath": "data/b2/b2-reordering-crime-law.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Vocabulary",
+    "prerequisites": [
+      "reordering-environment-sustainability-b2"
+    ],
+    "description": "Practise word order with crime and law vocabulary",
+    "estimatedTime": 3,
+    "difficulty": 4
+  },
+  {
+    "id": "reordering-politics-society-b2",
+    "name": "Reorder Politics & Society Sentences",
+    "learningMode": "reordering",
+    "dataPath": "data/b2/b2-reordering-politics-society.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Vocabulary",
+    "prerequisites": [
+      "reordering-crime-law-b2"
+    ],
+    "description": "Practise word order with politics and society vocabulary",
+    "estimatedTime": 3,
+    "difficulty": 4
+  },
+  {
+    "id": "quiz-science-innovation-b2",
+    "name": "Science & Innovation",
+    "learningMode": "quiz",
+    "dataPath": "data/b2/b2-quiz-science-innovation.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Vocabulary",
+    "prerequisites": [
+      "reordering-politics-society-b2"
+    ],
+    "description": "Vocabulary for science, technology, and innovation",
+    "estimatedTime": 5,
+    "difficulty": 4
+  },
+  {
+    "id": "matching-travel-culture-shock-b2",
+    "name": "Travel & Culture Shock",
+    "learningMode": "matching",
+    "dataPath": "data/b2/b2-matching-travel-culture-shock.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Vocabulary",
+    "prerequisites": [
+      "quiz-science-innovation-b2"
+    ],
+    "description": "Match travel and culture shock expressions to their translations",
+    "estimatedTime": 3,
+    "difficulty": 4
+  },
+  {
+    "id": "quiz-arts-literature-c1",
+    "name": "Arts & Literature",
+    "learningMode": "quiz",
+    "dataPath": "data/c1/c1-quiz-arts-literature.json",
+    "level": [
+      "c1"
+    ],
+    "category": "Vocabulary",
+    "prerequisites": [
+      "matching-advanced-collocations-c1"
+    ],
+    "description": "Vocabulary for literary and artistic analysis",
     "estimatedTime": 5,
     "difficulty": 5
   }

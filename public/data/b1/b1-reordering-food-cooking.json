@@ -1,0 +1,85 @@
+[
+  {
+    "id": "reord-b1-fc-001",
+    "sentence": "You should chop the onions before you fry the vegetables",
+    "words": [
+      "You",
+      "should",
+      "chop",
+      "the",
+      "onions",
+      "before",
+      "you",
+      "fry",
+      "the",
+      "vegetables"
+    ],
+    "hint": "Modal + verb + object + time clause",
+    "explanation": "'Chop' significa cortar en trozos pequeños; va antes de la cláusula temporal con 'before'."
+  },
+  {
+    "id": "reord-b1-fc-002",
+    "sentence": "Let the soup simmer for twenty minutes on low heat",
+    "words": ["Let", "the", "soup", "simmer", "for", "twenty", "minutes", "on", "low", "heat"],
+    "hint": "Imperative + object + verb + duration + place",
+    "explanation": "'Simmer' significa cocinar a fuego lento, justo por debajo del punto de ebullición."
+  },
+  {
+    "id": "reord-b1-fc-003",
+    "sentence": "She seasoned the chicken with salt, pepper, and garlic",
+    "words": ["She", "seasoned", "the", "chicken", "with", "salt", "pepper", "and", "garlic"],
+    "hint": "Subject + verb + object + with + ingredients",
+    "explanation": "'Season' significa añadir sal, especias u otros condimentos a la comida."
+  },
+  {
+    "id": "reord-b1-fc-004",
+    "sentence": "We need to preheat the oven before baking the cake",
+    "words": ["We", "need", "to", "preheat", "the", "oven", "before", "baking", "the", "cake"],
+    "distractors": ["heating"],
+    "hint": "Need to + base verb + before + gerund",
+    "explanation": "'Preheat' significa calentar el horno de antemano. 'Before' va seguido de gerundio."
+  },
+  {
+    "id": "reord-b1-fc-005",
+    "sentence": "He whisked the eggs until they became fluffy",
+    "words": ["He", "whisked", "the", "eggs", "until", "they", "became", "fluffy"],
+    "hint": "Subject + verb + object + until + result clause",
+    "explanation": "'Whisk' significa batir con un utensilio para mezclar aire con el líquido."
+  },
+  {
+    "id": "reord-b1-fc-006",
+    "sentence": "The recipe recommends marinating the meat overnight",
+    "words": ["The", "recipe", "recommends", "marinating", "the", "meat", "overnight"],
+    "distractors": ["marinate"],
+    "hint": "Recommend + gerund",
+    "explanation": "'Recommend' va seguido de gerundio (-ing), no del infinitivo."
+  },
+  {
+    "id": "reord-b1-fc-007",
+    "sentence": "Drain the pasta and mix it with the sauce",
+    "words": ["Drain", "the", "pasta", "and", "mix", "it", "with", "the", "sauce"],
+    "hint": "Two imperatives joined by 'and'",
+    "explanation": "'Drain' significa escurrir el agua de un alimento cocinado."
+  },
+  {
+    "id": "reord-b1-fc-008",
+    "sentence": "This restaurant is famous for its homemade bread",
+    "words": ["This", "restaurant", "is", "famous", "for", "its", "homemade", "bread"],
+    "hint": "Subject + be + famous for + noun phrase",
+    "explanation": "'Famous for' se usa para hablar de aquello por lo que algo es conocido."
+  },
+  {
+    "id": "reord-b1-fc-009",
+    "sentence": "I prefer grilled vegetables to fried ones",
+    "words": ["I", "prefer", "grilled", "vegetables", "to", "fried", "ones"],
+    "hint": "Prefer + noun + to + alternative",
+    "explanation": "'Prefer X to Y' se usa para expresar una preferencia entre dos opciones."
+  },
+  {
+    "id": "reord-b1-fc-010",
+    "sentence": "The stew tasted much better after it had cooled down",
+    "words": ["The", "stew", "tasted", "much", "better", "after", "it", "had", "cooled", "down"],
+    "hint": "Past simple + comparative + after + past perfect",
+    "explanation": "El pasado perfecto ('had cooled') indica que enfriarse ocurrió antes de que supiera mejor."
+  }
+]

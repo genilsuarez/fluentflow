@@ -138,5 +138,145 @@
     "correct": "extinction",
     "hint": "The noun form meaning the dying out of something",
     "explanation": "EXTINCT → extinction (sufijo -tion: el estado de dejar de existir)"
+  },
+  {
+    "sentence": "The ___ of the research methodology was questioned by peer reviewers.",
+    "rootWord": "RIGOUR",
+    "correct": "rigorousness",
+    "hint": "The noun form meaning the quality of being rigorous",
+    "explanation": "RIGOUR → rigorousness (sufijo -ousness: la cualidad de ser riguroso)"
+  },
+  {
+    "sentence": "The ___ nature of the evidence made it difficult to draw firm conclusions.",
+    "rootWord": "EQUIVOCATE",
+    "correct": "equivocal",
+    "hint": "An adjective meaning ambiguous or open to more than one interpretation",
+    "explanation": "EQUIVOCATE → equivocal (se cambia -ate por -al para formar un adjetivo que significa 'ambiguo')"
+  },
+  {
+    "sentence": "Her ___ of the classical texts was unparalleled in the department.",
+    "rootWord": "ERUDITE",
+    "correct": "erudition",
+    "hint": "The noun form meaning deep knowledge",
+    "explanation": "ERUDITE → erudition (se cambia -e por -ion para formar un sustantivo que significa 'conocimiento profundo')"
+  },
+  {
+    "sentence": "The ___ between the two philosophical traditions has been debated for centuries.",
+    "rootWord": "DICHOTOMOUS",
+    "correct": "dichotomy",
+    "hint": "The noun form meaning a division into two",
+    "explanation": "DICHOTOMOUS → dichotomy (se cambia -ous por -y para formar un sustantivo que significa 'división en dos')"
+  },
+  {
+    "sentence": "The professor's ___ analysis of the text revealed hidden layers of meaning.",
+    "rootWord": "HERMENEUTICS",
+    "correct": "hermeneutical",
+    "hint": "An adjective relating to interpretation theory",
+    "explanation": "HERMENEUTICS → hermeneutical (se cambia -ics por -ical para formar un adjetivo)"
+  },
+  {
+    "sentence": "The ___ of the author's argument was evident to all scholars in the field.",
+    "rootWord": "SPECIOUS",
+    "correct": "speciousness",
+    "hint": "The noun form meaning the quality of appearing plausible but being wrong",
+    "explanation": "SPECIOUS → speciousness (sufijo -ness: aparentemente plausible pero erróneo)"
+  },
+  {
+    "sentence": "The ___ implications of the discovery were far-reaching.",
+    "rootWord": "EPISTEMOLOGY",
+    "correct": "epistemological",
+    "hint": "An adjective relating to the theory of knowledge",
+    "explanation": "EPISTEMOLOGY → epistemological (se cambia -y por -ical para formar un adjetivo)"
+  },
+  {
+    "sentence": "His ___ approach to the subject alienated many of his colleagues.",
+    "rootWord": "DOGMA",
+    "correct": "dogmatic",
+    "hint": "An adjective meaning presenting opinions as facts",
+    "explanation": "DOGMA → dogmatic (sufijo -tic: que presenta opiniones como hechos)"
+  },
+  {
+    "sentence": "The ___ of the ancient civilisation was evident in its architectural achievements.",
+    "rootWord": "SOPHISTICATED",
+    "correct": "sophistication",
+    "hint": "The noun form meaning refinement or complexity",
+    "explanation": "SOPHISTICATED → sophistication (se cambia -ed por -ion para formar un sustantivo)"
+  },
+  {
+    "sentence": "Her ___ contributions to the field earned her international recognition.",
+    "rootWord": "SEMINAL",
+    "correct": "seminally",
+    "hint": "An adverb meaning in a highly influential way",
+    "explanation": "SEMINAL → seminally (sufijo -ly: de manera innovadora)"
+  },
+  {
+    "sentence": "The ___ of the philosophical argument was difficult to follow.",
+    "rootWord": "ABSTRUSE",
+    "correct": "abstruseness",
+    "hint": "The noun form meaning the quality of being hard to understand",
+    "explanation": "ABSTRUSE → abstruseness (sufijo -ness: cualidad de ser difícil de entender)"
+  },
+  {
+    "sentence": "The ___ framework of the study was based on post-structuralist theory.",
+    "rootWord": "PARADIGM",
+    "correct": "paradigmatic",
+    "hint": "An adjective meaning serving as a typical example or model",
+    "explanation": "PARADIGM → paradigmatic (sufijo -atic: que sirve de modelo)"
+  },
+  {
+    "sentence": "The ___ of the historical narrative was challenged by new archaeological evidence.",
+    "rootWord": "VERACIOUS",
+    "correct": "veracity",
+    "hint": "The noun form meaning truthfulness",
+    "explanation": "VERACIOUS → veracity (se cambia -ous por -ity para formar un sustantivo que significa 'veracidad')"
+  },
+  {
+    "sentence": "His ___ style of writing made his academic papers accessible to a wider audience.",
+    "rootWord": "PERSPICUOUS",
+    "correct": "perspicuity",
+    "hint": "The noun form meaning clarity of expression",
+    "explanation": "PERSPICUOUS → perspicuity (se cambia -ous por -ity para formar un sustantivo que significa 'claridad de expresión')"
+  },
+  {
+    "sentence": "The ___ of the researcher's claims was questioned at the conference.",
+    "rootWord": "TENABLE",
+    "correct": "tenability",
+    "hint": "The noun form meaning the quality of being defensible",
+    "explanation": "TENABLE → tenability (se cambia -le por -lity para formar un sustantivo que significa 'cualidad de ser defendible')"
+  },
+  {
+    "sentence": "The ___ between theory and practice remains a central concern in education.",
+    "rootWord": "DISJUNCT",
+    "correct": "disjunction",
+    "hint": "The noun form meaning a lack of connection",
+    "explanation": "DISJUNCT → disjunction (sufijo -ion: desconexión)"
+  },
+  {
+    "sentence": "Her ___ reading of the primary sources uncovered previously overlooked details.",
+    "rootWord": "METICULOUS",
+    "correct": "meticulously",
+    "hint": "An adverb meaning with great attention to detail",
+    "explanation": "METICULOUS → meticulously (sufijo -ly: con gran atención al detalle)"
+  },
+  {
+    "sentence": "The ___ of the argument was undermined by logical fallacies.",
+    "rootWord": "COGENT",
+    "correct": "cogency",
+    "hint": "The noun form meaning logical persuasiveness",
+    "explanation": "COGENT → cogency (se cambia -t por -cy para formar un sustantivo que significa 'persuasión lógica')"
+  },
+  {
+    "sentence": "The ___ nature of the phenomenon defied simple categorisation.",
+    "rootWord": "MULTIFACETED",
+    "correct": "multifacetedness",
+    "hint": "The noun form meaning the quality of having many aspects",
+    "explanation": "MULTIFACETED → multifacetedness (sufijo -ness: que tiene muchos aspectos)"
+  },
+  {
+    "sentence": "The scholar's deliberate ___ of the controversial passage drew sharp criticism.",
+    "rootWord": "OBFUSCATE",
+    "correct": "obfuscation",
+    "hint": "The noun form meaning the act of making something unclear",
+    "explanation": "OBFUSCATE → obfuscation (sufijo -ion: el acto deliberado de hacer algo confuso u oscuro)"
   }
 ]

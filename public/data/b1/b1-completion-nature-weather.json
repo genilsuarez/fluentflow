@@ -1,0 +1,122 @@
+[
+  {
+    "sentence": "The weather ___ says it will rain tomorrow afternoon.",
+    "correct": "forecast",
+    "explanation": "'Forecast' es la predicción del tiempo.",
+    "tip": "Noun: prediction of future weather"
+  },
+  {
+    "sentence": "A ___ is a very strong storm with dangerous winds.",
+    "correct": "hurricane",
+    "explanation": "'Hurricane' es una tormenta tropical muy fuerte.",
+    "tip": "Tropical storm with strong winds"
+  },
+  {
+    "sentence": "The sky was full of dark ___ before the storm began.",
+    "correct": "clouds",
+    "explanation": "'Clouds' son las nubes en el cielo.",
+    "tip": "Plural noun: white or grey shapes in the sky"
+  },
+  {
+    "sentence": "We saw a beautiful ___ after the rain stopped.",
+    "correct": "rainbow",
+    "explanation": "'Rainbow' es el arcoíris que aparece tras la lluvia.",
+    "tip": "Colourful arc in the sky after rain"
+  },
+  {
+    "sentence": "There was a loud ___ of thunder during the storm.",
+    "correct": "clap",
+    "explanation": "'Clap of thunder' es el estruendo del trueno.",
+    "tip": "Noun: a sudden loud sound (of thunder)"
+  },
+  {
+    "sentence": "The ___ struck the old tree in the park.",
+    "correct": "lightning",
+    "explanation": "'Lightning' es el rayo que cae durante una tormenta.",
+    "tip": "Bright flash in the sky during a storm"
+  },
+  {
+    "sentence": "In autumn, the leaves change colour and start to ___.",
+    "correct": "fall",
+    "explanation": "'Fall' significa caer, en referencia a las hojas en otoño.",
+    "tip": "Verb: to drop from the trees"
+  },
+  {
+    "sentence": "The river ___ its banks after three days of heavy rain.",
+    "correct": "flooded",
+    "explanation": "'Flood' significa desbordarse e inundar una zona.",
+    "tip": "Past tense verb: overflowed with water"
+  },
+  {
+    "sentence": "It's very ___ today, so take an umbrella with you.",
+    "correct": "humid",
+    "explanation": "'Humid' describe un clima con mucha humedad en el aire.",
+    "tip": "Adjective: describes damp, moist air"
+  },
+  {
+    "sentence": "The mountains were covered in ___ all winter.",
+    "correct": "snow",
+    "explanation": "'Snow' es la nieve.",
+    "tip": "White frozen precipitation"
+  },
+  {
+    "sentence": "A gentle ___ blew through the trees in the evening.",
+    "correct": "breeze",
+    "explanation": "'Breeze' es una brisa suave.",
+    "tip": "Noun: a light, soft wind"
+  },
+  {
+    "sentence": "The farmers were worried about the long ___ this summer.",
+    "correct": "drought",
+    "explanation": "'Drought' es un periodo largo sin lluvia.",
+    "tip": "Noun: a long period without rain"
+  },
+  {
+    "sentence": "The temperature will ___ sharply tonight, so wear a coat.",
+    "correct": "drop",
+    "explanation": "'Drop' significa bajar o disminuir la temperatura.",
+    "tip": "Verb: to decrease (of temperature)"
+  },
+  {
+    "sentence": "There is thick ___ on the road, so drive carefully.",
+    "correct": "fog",
+    "explanation": "'Fog' es la niebla espesa.",
+    "tip": "Thick mist that reduces visibility"
+  },
+  {
+    "sentence": "The garden looked lovely with all the ___ in bloom.",
+    "correct": "flowers",
+    "explanation": "'Flowers' son las flores.",
+    "tip": "Plural noun: colourful plants that bloom"
+  },
+  {
+    "sentence": "Wild animals live freely in the national ___.",
+    "correct": "park",
+    "explanation": "'National park' es una zona natural protegida.",
+    "tip": "Protected natural area"
+  },
+  {
+    "sentence": "The waves were huge because of the strong ___.",
+    "correct": "wind",
+    "explanation": "'Wind' es el viento.",
+    "tip": "Moving air"
+  },
+  {
+    "sentence": "The scientists are studying how climate change affects ___.",
+    "correct": "wildlife",
+    "explanation": "'Wildlife' se refiere a los animales y plantas silvestres.",
+    "tip": "Wild animals and plants collectively"
+  },
+  {
+    "sentence": "It's freezing outside. The ___ dropped below zero last night.",
+    "correct": "temperature",
+    "explanation": "'Temperature' es la temperatura.",
+    "tip": "Measure of how hot or cold it is"
+  },
+  {
+    "sentence": "The forest fire spread quickly because of the dry ___.",
+    "correct": "climate",
+    "explanation": "'Climate' se refiere al patrón general del tiempo en una región.",
+    "tip": "The general weather pattern of a region"
+  }
+]

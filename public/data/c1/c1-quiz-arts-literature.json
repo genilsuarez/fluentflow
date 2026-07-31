@@ -1,0 +1,172 @@
+[
+  {
+    "question": "What is a 'novella'?",
+    "options": [
+      "A short poem",
+      "A work of fiction longer than a short story but shorter than a novel",
+      "A type of theatre",
+      "A collection of essays"
+    ],
+    "correct": 1,
+    "explanation": "Una 'novella' es una obra de ficción de longitud intermedia entre el relato corto y la novela."
+  },
+  {
+    "question": "Which term describes the underlying message or moral of a literary work?",
+    "options": ["theme", "genre", "plot", "setting"],
+    "correct": 0,
+    "explanation": "El 'theme' (tema) es la idea central o mensaje subyacente de una obra."
+  },
+  {
+    "question": "What does 'to critique' a work of art mean?",
+    "options": [
+      "To copy it exactly",
+      "To analyse and evaluate it critically",
+      "To destroy it",
+      "To sell it"
+    ],
+    "correct": 1,
+    "explanation": "'Critique' significa analizar y evaluar una obra de forma crítica y detallada."
+  },
+  {
+    "question": "Which word describes a story told from the first-person perspective?",
+    "options": ["objective", "first-person narrative", "omniscient", "third-person"],
+    "correct": 1,
+    "explanation": "Una 'first-person narrative' está contada desde el punto de vista del narrador que dice 'I'."
+  },
+  {
+    "question": "What is an 'anthology'?",
+    "options": [
+      "A single long poem",
+      "A collection of literary works by different authors",
+      "A type of art gallery",
+      "A biography"
+    ],
+    "correct": 1,
+    "explanation": "Una 'anthology' es una recopilación de obras literarias de varios autores."
+  },
+  {
+    "question": "Which term refers to the historical period and cultural background of a novel?",
+    "options": ["setting", "protagonist", "climax", "foreshadowing"],
+    "correct": 0,
+    "explanation": "El 'setting' incluye el tiempo, lugar y contexto cultural de la historia."
+  },
+  {
+    "question": "What does it mean for an artwork to be 'avant-garde'?",
+    "options": [
+      "Traditional and conventional",
+      "Experimental and ahead of its time",
+      "Cheap and mass-produced",
+      "Religious in nature"
+    ],
+    "correct": 1,
+    "explanation": "'Avant-garde' describe obras experimentales y adelantadas a su época."
+  },
+  {
+    "question": "Which word describes the turning point of tension in a story?",
+    "options": ["climax", "epilogue", "prologue", "dedication"],
+    "correct": 0,
+    "explanation": "El 'climax' es el punto de mayor tensión en la trama."
+  },
+  {
+    "question": "What is a 'metaphor'?",
+    "options": [
+      "A literal description",
+      "A figure of speech comparing two things without using 'like' or 'as'",
+      "A rhyme scheme",
+      "A type of stage direction"
+    ],
+    "correct": 1,
+    "explanation": "Una 'metaphor' compara dos cosas de forma implícita, sin usar 'like' o 'as'."
+  },
+  {
+    "question": "Which word describes a piece of writing that criticises society through humour and exaggeration?",
+    "options": ["satire", "elegy", "sonnet", "memoir"],
+    "correct": 0,
+    "explanation": "'Satire' usa el humor y la exageración para criticar aspectos de la sociedad."
+  },
+  {
+    "question": "What is the role of a 'curator' in an art gallery?",
+    "options": [
+      "To paint the artworks",
+      "To select and organise exhibitions",
+      "To sell tickets",
+      "To clean the building"
+    ],
+    "correct": 1,
+    "explanation": "Un 'curator' selecciona y organiza las obras que se exponen."
+  },
+  {
+    "question": "Which word describes writing that gives hints about what will happen later in the story?",
+    "options": ["foreshadowing", "flashback", "irony", "parody"],
+    "correct": 0,
+    "explanation": "'Foreshadowing' son pistas que anticipan eventos futuros de la trama."
+  },
+  {
+    "question": "What is 'irony' in literature?",
+    "options": [
+      "A direct statement of fact",
+      "A contrast between expectation and reality",
+      "A type of poem with 14 lines",
+      "A summary of the plot"
+    ],
+    "correct": 1,
+    "explanation": "'Irony' es el contraste entre lo que se espera y lo que realmente ocurre."
+  },
+  {
+    "question": "Which term describes an artist's distinctive way of using colour, form, and technique?",
+    "options": ["style", "canvas", "exhibition", "sculpture"],
+    "correct": 0,
+    "explanation": "El 'style' de un artista es su forma característica de usar color, forma y técnica."
+  },
+  {
+    "question": "What is a 'protagonist'?",
+    "options": [
+      "The villain of the story",
+      "The main character of a story",
+      "The narrator's assistant",
+      "A minor character"
+    ],
+    "correct": 1,
+    "explanation": "El 'protagonist' es el personaje principal de la historia."
+  },
+  {
+    "question": "Which word describes a piece of music, art, or literature that has lasting value and influence?",
+    "options": ["timeless", "outdated", "forgettable", "temporary"],
+    "correct": 0,
+    "explanation": "'Timeless' describe una obra cuyo valor perdura a través del tiempo."
+  },
+  {
+    "question": "What does it mean to 'adapt' a novel for the screen?",
+    "options": [
+      "To translate it into another language",
+      "To turn it into a film or TV series",
+      "To publish a second edition",
+      "To summarise it in a review"
+    ],
+    "correct": 1,
+    "explanation": "'Adapt' significa convertir una obra literaria en película o serie."
+  },
+  {
+    "question": "Which word describes a painting or sculpture that represents real objects accurately?",
+    "options": ["abstract", "realistic", "surreal", "minimalist"],
+    "correct": 1,
+    "explanation": "'Realistic' describe obras que representan la realidad con fidelidad."
+  },
+  {
+    "question": "What is a 'manuscript'?",
+    "options": [
+      "A printed book",
+      "A handwritten or typed original text before publication",
+      "A book review",
+      "A library catalogue"
+    ],
+    "correct": 1,
+    "explanation": "Un 'manuscript' es el texto original antes de ser publicado."
+  },
+  {
+    "question": "Which term describes literature that is highly regarded and studied academically?",
+    "options": ["canonical", "obscure", "amateur", "unpublished"],
+    "correct": 0,
+    "explanation": "'Canonical' describe obras reconocidas como fundamentales dentro de la literatura."
+  }
+]

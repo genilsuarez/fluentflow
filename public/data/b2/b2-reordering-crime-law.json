@@ -1,0 +1,143 @@
+[
+  {
+    "id": "reord-b2-cl-001",
+    "sentence": "The suspect was arrested on suspicion of fraud",
+    "words": ["The", "suspect", "was", "arrested", "on", "suspicion", "of", "fraud"],
+    "hint": "Passive voice + on suspicion of",
+    "explanation": "'On suspicion of' se usa cuando alguien es detenido pero aún no ha sido condenado."
+  },
+  {
+    "id": "reord-b2-cl-002",
+    "sentence": "She was found guilty of theft and sentenced to six months",
+    "words": [
+      "She",
+      "was",
+      "found",
+      "guilty",
+      "of",
+      "theft",
+      "and",
+      "sentenced",
+      "to",
+      "six",
+      "months"
+    ],
+    "hint": "Passive voice + guilty of + sentenced to",
+    "explanation": "'Found guilty of' significa declarado culpable de un delito."
+  },
+  {
+    "id": "reord-b2-cl-003",
+    "sentence": "The witness testified that she had seen the whole incident",
+    "words": [
+      "The",
+      "witness",
+      "testified",
+      "that",
+      "she",
+      "had",
+      "seen",
+      "the",
+      "whole",
+      "incident"
+    ],
+    "hint": "Past simple + that-clause + past perfect",
+    "explanation": "'Testify' significa declarar como testigo ante un tribunal."
+  },
+  {
+    "id": "reord-b2-cl-004",
+    "sentence": "The jury took several hours to reach a verdict",
+    "words": ["The", "jury", "took", "several", "hours", "to", "reach", "a", "verdict"],
+    "hint": "Take + time + to + infinitive",
+    "explanation": "'Reach a verdict' significa llegar a una decisión final en un juicio."
+  },
+  {
+    "id": "reord-b2-cl-005",
+    "sentence": "Burglars broke into the house while the family was on holiday",
+    "words": [
+      "Burglars",
+      "broke",
+      "into",
+      "the",
+      "house",
+      "while",
+      "the",
+      "family",
+      "was",
+      "on",
+      "holiday"
+    ],
+    "hint": "Past simple + while + past continuous",
+    "explanation": "'Break into' significa entrar por la fuerza en un lugar."
+  },
+  {
+    "id": "reord-b2-cl-006",
+    "sentence": "The lawyer argued that her client should be released on bail",
+    "words": [
+      "The",
+      "lawyer",
+      "argued",
+      "that",
+      "her",
+      "client",
+      "should",
+      "be",
+      "released",
+      "on",
+      "bail"
+    ],
+    "hint": "Argue that + subject + should + passive infinitive",
+    "explanation": "'Released on bail' significa puesto en libertad bajo fianza mientras espera juicio."
+  },
+  {
+    "id": "reord-b2-cl-007",
+    "sentence": "New legislation was passed to tackle knife crime",
+    "words": ["New", "legislation", "was", "passed", "to", "tackle", "knife", "crime"],
+    "hint": "Passive voice + to + infinitive",
+    "explanation": "'Tackle' significa abordar o enfrentar un problema de manera activa."
+  },
+  {
+    "id": "reord-b2-cl-008",
+    "sentence": "The police are investigating a series of break-ins in the area",
+    "words": [
+      "The",
+      "police",
+      "are",
+      "investigating",
+      "a",
+      "series",
+      "of",
+      "break-ins",
+      "in",
+      "the",
+      "area"
+    ],
+    "hint": "Present continuous + object",
+    "explanation": "'Break-in' es un sustantivo que significa robo con allanamiento."
+  },
+  {
+    "id": "reord-b2-cl-009",
+    "sentence": "He was released early for good behaviour",
+    "words": ["He", "was", "released", "early", "for", "good", "behaviour"],
+    "hint": "Passive voice + for + reason",
+    "explanation": "'For good behaviour' se usa para explicar la razón de una liberación anticipada."
+  },
+  {
+    "id": "reord-b2-cl-010",
+    "sentence": "The court ordered the company to pay compensation to the victims",
+    "words": [
+      "The",
+      "court",
+      "ordered",
+      "the",
+      "company",
+      "to",
+      "pay",
+      "compensation",
+      "to",
+      "the",
+      "victims"
+    ],
+    "hint": "Order + object + to + infinitive",
+    "explanation": "'Order someone to do something' es un patrón verbal común con verbos de mandato."
+  }
+]

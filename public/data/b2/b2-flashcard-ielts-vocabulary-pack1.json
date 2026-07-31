@@ -886,5 +886,77 @@
     "example": "We can <tailor> the program to meet your specific needs.",
     "example_es": "Podemos adaptar el programa para satisfacer tus necesidades específicas.",
     "category": "Clothing"
+  },
+  {
+    "front": "Implement",
+    "back": "Implementar / Poner en práctica",
+    "ipa": "/ˈɪmplɪment/",
+    "example": "The company plans to <implement> the new policy next month.",
+    "example_es": "La empresa planea <implementar> la nueva política el próximo mes.",
+    "category": "General"
+  },
+  {
+    "front": "Justify",
+    "back": "Justificar",
+    "ipa": "/ˈdʒʌstɪfaɪ/",
+    "example": "She had to <justify> her decision to the board.",
+    "example_es": "Ella tuvo que <justificar> su decisión ante la junta.",
+    "category": "General"
+  },
+  {
+    "front": "Fluctuate",
+    "back": "Fluctuar / Variar",
+    "ipa": "/ˈflʌktʃueɪt/",
+    "example": "Prices tend to <fluctuate> during the holiday season.",
+    "example_es": "Los precios tienden a <fluctuar> durante la temporada festiva.",
+    "category": "General"
+  },
+  {
+    "front": "Correlate",
+    "back": "Correlacionar / Guardar relación",
+    "ipa": "/ˈkɒrəleɪt/",
+    "example": "Higher education tends to <correlate> with higher income.",
+    "example_es": "La educación superior tiende a <correlacionarse> con mayores ingresos.",
+    "category": "General"
+  },
+  {
+    "front": "Rigorous",
+    "back": "Riguroso",
+    "ipa": "/ˈrɪɡərəs/",
+    "example": "The experiment followed a <rigorous> testing procedure.",
+    "example_es": "El experimento siguió un procedimiento de prueba <riguroso>.",
+    "category": "General"
+  },
+  {
+    "front": "Sufficient",
+    "back": "Suficiente",
+    "ipa": "/səˈfɪʃənt/",
+    "example": "We don't have <sufficient> evidence to draw a conclusion.",
+    "example_es": "No tenemos evidencia <suficiente> para sacar una conclusión.",
+    "category": "General"
+  },
+  {
+    "front": "Predominant",
+    "back": "Predominante",
+    "ipa": "/prɪˈdɒmɪnənt/",
+    "example": "English is the <predominant> language used in international business.",
+    "example_es": "El inglés es el idioma <predominante> en los negocios internacionales.",
+    "category": "General"
+  },
+  {
+    "front": "Underlying",
+    "back": "Subyacente",
+    "ipa": "/ˌʌndərˈlaɪɪŋ/",
+    "example": "The report identifies the <underlying> causes of the crisis.",
+    "example_es": "El informe identifica las causas <subyacentes> de la crisis.",
+    "category": "General"
+  },
+  {
+    "front": "Facilitate",
+    "back": "Facilitar",
+    "ipa": "/fəˈsɪlɪteɪt/",
+    "example": "The new software will <facilitate> communication between teams.",
+    "example_es": "El nuevo software <facilitará> la comunicación entre equipos.",
+    "category": "General"
   }
 ]

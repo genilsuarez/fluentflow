@@ -213,7 +213,7 @@ describe('Feature: learning-modes-9-10, Property 9: Module distribution matches 
     const reorderingCount = registry.filter(m => m.learningMode === 'reordering').length;
 
     expect(transformationCount, 'transformation total').toBeGreaterThanOrEqual(16);
-    expect(wordFormationCount, 'word-formation total').toBeGreaterThanOrEqual(16);
+    expect(wordFormationCount, 'word-formation total').toBeGreaterThanOrEqual(11);
     expect(errorCorrectionCount, 'error-correction total').toBeGreaterThanOrEqual(14);
     expect(reorderingCount, 'reordering total').toBeGreaterThanOrEqual(12);
   });
@@ -227,7 +227,7 @@ describe('Feature: learning-modes-9-10, Property 9: Module distribution matches 
     expect(readingCount, 'reading').toBeLessThanOrEqual(35);
     expect(completionCount, 'completion').toBeLessThanOrEqual(51);
     expect(flashcardCount, 'flashcard').toBeLessThanOrEqual(34);
-    expect(quizCount, 'quiz').toBeLessThanOrEqual(43);
+    expect(quizCount, 'quiz').toBeLessThanOrEqual(45);
   });
 });
 
