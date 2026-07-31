@@ -1278,22 +1278,6 @@
     "difficulty": 3
   },
   {
-    "id": "sorting-modal-verbs-b1",
-    "name": "Modal Verbs",
-    "learningMode": "sorting",
-    "dataPath": "data/b1/b1-sorting-modal-verbs.json",
-    "level": [
-      "b1"
-    ],
-    "category": "Grammar",
-    "prerequisites": [
-      "reading-environment-b1"
-    ],
-    "description": "Modal verbs and their uses",
-    "estimatedTime": 3,
-    "difficulty": 3
-  },
-  {
     "id": "sorting-prepositions-a2",
     "name": "Basic Prepositions",
     "learningMode": "sorting",
@@ -1319,7 +1303,7 @@
     ],
     "category": "Reading",
     "prerequisites": [
-      "sorting-modal-verbs-b1"
+      "reading-environment-b1"
     ],
     "description": "Social media and modern communication",
     "estimatedTime": 7,
@@ -1338,7 +1322,7 @@
     "estimatedTime": 3,
     "difficulty": 3,
     "prerequisites": [
-      "sorting-modal-verbs-b1"
+      "reading-environment-b1"
     ]
   },
   {
@@ -1438,22 +1422,6 @@
     ]
   },
   {
-    "id": "sorting-conditionals-b1",
-    "name": "Conditionals Sorting",
-    "learningMode": "sorting",
-    "dataPath": "data/b1/b1-sorting-conditionals.json",
-    "level": [
-      "b1"
-    ],
-    "category": "Grammar",
-    "prerequisites": [
-      "completion-conditionals-b1"
-    ],
-    "description": "Sort sentences by conditional type: first and second conditionals",
-    "estimatedTime": 3,
-    "difficulty": 3
-  },
-  {
     "id": "reordering-conditionals-b1",
     "name": "Conditionals Word Order",
     "learningMode": "reordering",
@@ -1463,7 +1431,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "sorting-conditionals-b1"
+      "completion-conditionals-b1"
     ],
     "description": "Reorder first, second, and third conditional sentences, plus zero conditional and unless",
     "estimatedTime": 3,
@@ -1502,22 +1470,6 @@
     ]
   },
   {
-    "id": "quiz-passive-voice-b1",
-    "name": "Passive Voice Quiz",
-    "learningMode": "quiz",
-    "dataPath": "data/b1/b1-quiz-passive-voice.json",
-    "level": [
-      "b1"
-    ],
-    "category": "Grammar",
-    "prerequisites": [
-      "completion-passive-voice-b1"
-    ],
-    "description": "Test your understanding of passive voice transformations",
-    "estimatedTime": 5,
-    "difficulty": 3
-  },
-  {
     "id": "reordering-passive-voice-b1",
     "name": "Passive Voice Word Order",
     "learningMode": "reordering",
@@ -1527,7 +1479,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "quiz-passive-voice-b1"
+      "completion-passive-voice-b1"
     ],
     "description": "Reorder passive voice sentences in present, past, and modal forms",
     "estimatedTime": 3,
@@ -1694,22 +1646,6 @@
     "difficulty": 3
   },
   {
-    "id": "sorting-gerunds-infinitives-b1",
-    "name": "Gerunds & Infinitives Sorting",
-    "learningMode": "sorting",
-    "dataPath": "data/b1/b1-sorting-gerunds-infinitives.json",
-    "level": [
-      "b1"
-    ],
-    "category": "Grammar",
-    "prerequisites": [
-      "reading-gerunds-infinitives-b1"
-    ],
-    "description": "Sort verbs into three groups: followed by gerund (-ing), infinitive (to + verb), or both",
-    "estimatedTime": 3,
-    "difficulty": 3
-  },
-  {
     "id": "completion-gerunds-infinitives-b1",
     "name": "Gerunds & Infinitives Practice",
     "learningMode": "completion",
@@ -1719,7 +1655,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "sorting-gerunds-infinitives-b1"
+      "reading-gerunds-infinitives-b1"
     ],
     "description": "Complete sentences with the correct gerund or infinitive form",
     "estimatedTime": 5,
@@ -1822,22 +1758,6 @@
     "difficulty": 3
   },
   {
-    "id": "listening-quiz-intermediate-b1",
-    "name": "Listening Quiz: Intermediate Grammar",
-    "learningMode": "listening-quiz",
-    "dataPath": "data/b1/b1-listening-quiz-intermediate.json",
-    "level": [
-      "b1"
-    ],
-    "category": "Grammar",
-    "prerequisites": [
-      "quiz-question-tags-b1"
-    ],
-    "description": "Listen to grammar questions via TTS: conditionals, passive, reported speech, relative clauses",
-    "estimatedTime": 5,
-    "difficulty": 3
-  },
-  {
     "id": "listen-complete-grammar-b1",
     "name": "Listen & Complete: Grammar",
     "learningMode": "listen-complete",
@@ -1847,7 +1767,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "listening-quiz-intermediate-b1"
+      "quiz-question-tags-b1"
     ],
     "description": "Listen to the full sentence, then fill the blank: conditionals, modals, inversions, wish",
     "estimatedTime": 5,
