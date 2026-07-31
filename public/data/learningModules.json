@@ -1310,16 +1310,16 @@
     "difficulty": 3
   },
   {
-    "id": "sorting-prepositions-b1",
+    "id": "sorting-prepositions-a2",
     "name": "Basic Prepositions",
     "learningMode": "sorting",
-    "dataPath": "data/b1/b1-sorting-prepositions.json",
+    "dataPath": "data/a2/a2-sorting-prepositions.json",
     "level": [
-      "b1"
+      "a2"
     ],
     "category": "Grammar",
     "prerequisites": [
-      "sorting-modal-verbs-b1"
+      "sorting-quantifiers-a2"
     ],
     "description": "Prepositions of place, time and movement",
     "estimatedTime": 3,
@@ -1354,7 +1354,7 @@
     "estimatedTime": 3,
     "difficulty": 3,
     "prerequisites": [
-      "sorting-prepositions-b1"
+      "sorting-modal-verbs-b1"
     ]
   },
   {
@@ -1481,7 +1481,7 @@
     "prerequisites": [
       "sorting-conditionals-b1"
     ],
-    "description": "Reorder first and second conditional sentences",
+    "description": "Reorder first, second, and third conditional sentences, plus zero conditional and unless",
     "estimatedTime": 3,
     "difficulty": 3
   },
@@ -3886,22 +3886,6 @@
     "difficulty": 4
   },
   {
-    "id": "word-formation-multi-step-c1",
-    "name": "Multi-step Derivations (ir-, il-, im- + -ity, -ness)",
-    "learningMode": "word-formation",
-    "dataPath": "data/c1/c1-word-formation-multi-step.json",
-    "level": [
-      "c1"
-    ],
-    "category": "Grammar",
-    "prerequisites": [
-      "transformation-inversions-subjunctive-c1"
-    ],
-    "description": "Practice complex multi-step word derivations with negative prefixes and abstract suffixes",
-    "estimatedTime": 3,
-    "difficulty": 5
-  },
-  {
     "id": "word-formation-scholarly-c2",
     "name": "Scholarly Word Families",
     "learningMode": "word-formation",
@@ -3916,54 +3900,6 @@
     "description": "Practice scholarly and literary word formation with archaic and academic derivations",
     "estimatedTime": 3,
     "difficulty": 6
-  },
-  {
-    "id": "error-correction-subject-verb-a1",
-    "name": "Fix Basic Subject-Verb Agreement",
-    "learningMode": "error-correction",
-    "dataPath": "data/a1/a1-error-correction-subject-verb.json",
-    "level": [
-      "a1"
-    ],
-    "category": "Grammar",
-    "prerequisites": [
-      "word-formation-basic-suffixes-a1"
-    ],
-    "description": "Identify and correct basic subject-verb agreement errors",
-    "estimatedTime": 4,
-    "difficulty": 1
-  },
-  {
-    "id": "error-correction-tense-errors-a2",
-    "name": "Fix Tense Consistency Errors",
-    "learningMode": "error-correction",
-    "dataPath": "data/a2/a2-error-correction-tense-errors.json",
-    "level": [
-      "a2"
-    ],
-    "category": "Grammar",
-    "prerequisites": [
-      "word-formation-common-nouns-a2"
-    ],
-    "description": "Identify and correct tense consistency and basic preposition errors",
-    "estimatedTime": 4,
-    "difficulty": 2
-  },
-  {
-    "id": "error-correction-conditionals-b1",
-    "name": "Fix Conditional & Passive Errors",
-    "learningMode": "error-correction",
-    "dataPath": "data/b1/b1-error-correction-conditionals.json",
-    "level": [
-      "b1"
-    ],
-    "category": "Grammar",
-    "prerequisites": [
-      "word-formation-prefix-suffix-b1"
-    ],
-    "description": "Identify and correct conditional, passive voice, and preposition errors",
-    "estimatedTime": 4,
-    "difficulty": 3
   },
   {
     "id": "error-correction-advanced-tense-b2",
@@ -3982,38 +3918,6 @@
     "difficulty": 4
   },
   {
-    "id": "error-correction-inversion-c1",
-    "name": "Fix Inversion & Subjunctive Errors",
-    "learningMode": "error-correction",
-    "dataPath": "data/c1/c1-error-correction-inversion.json",
-    "level": [
-      "c1"
-    ],
-    "category": "Grammar",
-    "prerequisites": [
-      "word-formation-multi-step-c1"
-    ],
-    "description": "Identify and correct inversion, subjunctive, and advanced phrasal verb errors",
-    "estimatedTime": 4,
-    "difficulty": 5
-  },
-  {
-    "id": "error-correction-register-c2",
-    "name": "Fix Subtle Register & Collocation Errors",
-    "learningMode": "error-correction",
-    "dataPath": "data/c2/c2-error-correction-register.json",
-    "level": [
-      "c2"
-    ],
-    "category": "Grammar",
-    "prerequisites": [
-      "word-formation-scholarly-c2"
-    ],
-    "description": "Identify and correct subtle register, collocation, and literary idiom errors",
-    "estimatedTime": 4,
-    "difficulty": 6
-  },
-  {
     "id": "transformation-pronoun-possessive-a1",
     "name": "Pronoun & Possessive Transformations",
     "learningMode": "transformation",
@@ -4023,7 +3927,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "error-correction-subject-verb-a1"
+      "word-formation-basic-suffixes-a1"
     ],
     "description": "Practice transforming sentences by changing pronouns and possessive forms",
     "estimatedTime": 4,
@@ -4183,7 +4087,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "error-correction-tense-errors-a2"
+      "word-formation-common-nouns-a2"
     ],
     "description": "Transform sentences between past continuous and future tenses",
     "estimatedTime": 4,
@@ -4343,7 +4247,7 @@
     ],
     "category": "PhrasalVerbs",
     "prerequisites": [
-      "error-correction-conditionals-b1"
+      "word-formation-prefix-suffix-b1"
     ],
     "description": "Transform phrasal verbs between informal and formal register",
     "estimatedTime": 4,
@@ -4446,22 +4350,6 @@
     "difficulty": 3
   },
   {
-    "id": "reordering-conditional-sentences-b1",
-    "name": "Reorder Conditional Sentences",
-    "learningMode": "reordering",
-    "dataPath": "data/b1/b1-reordering-conditional-sentences.json",
-    "level": [
-      "b1"
-    ],
-    "category": "Grammar",
-    "prerequisites": [
-      "error-correction-conditional-passive-b1"
-    ],
-    "description": "Put words in the correct order to form conditional sentences",
-    "estimatedTime": 3,
-    "difficulty": 3
-  },
-  {
     "id": "reordering-phrasal-verb-sentences-b1",
     "name": "Reorder Phrasal Verb Sentences",
     "learningMode": "reordering",
@@ -4471,7 +4359,7 @@
     ],
     "category": "PhrasalVerbs",
     "prerequisites": [
-      "reordering-conditional-sentences-b1"
+      "reordering-conditionals-b1"
     ],
     "description": "Put words in the correct order to form phrasal verb sentences",
     "estimatedTime": 3,
@@ -4759,7 +4647,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "error-correction-inversion-c1"
+      "transformation-inversions-subjunctive-c1"
     ],
     "description": "Transform sentences using participle clause constructions",
     "estimatedTime": 4,
@@ -4967,7 +4855,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "error-correction-register-c2"
+      "word-formation-scholarly-c2"
     ],
     "description": "Transform sentences using complex nominalization structures",
     "estimatedTime": 4,

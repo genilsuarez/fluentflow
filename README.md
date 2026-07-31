@@ -10,7 +10,7 @@ React 18 · TypeScript strict · Vite + esbuild · Zustand · TanStack Query · 
 
 ## Features
 
-13 learning modes (Flashcards, Quiz, Completion, Sorting, Matching, Reading, Reordering, Transformation, Word Formation, Error Correction, Dictation, Listening Quiz, Listen & Complete) · 321 modules · Dark/light theme · Offline mode · Progress tracking · Bilingual EN/ES · CEFR A1-C2
+13 learning modes (Flashcards, Quiz, Completion, Sorting, Matching, Reading, Reordering, Transformation, Word Formation, Error Correction, Dictation, Listening Quiz, Listen & Complete) · 314 modules · Dark/light theme · Offline mode · Progress tracking · Bilingual EN/ES · CEFR A1-C2
 
 ## Setup
 
@@ -25,7 +25,7 @@ npm install && npm run dev
 |----------|---------|-------------|
 | Dev | `npm run dev` | Dev server |
 | Build | `npm run build` | Production build |
-| Test | `npm test` | 14 files, 389 tests, ~5.5s |
+| Test | `npm test` | 14 files, 365 tests, ~5.5s |
 | Lint | `npm run lint` | ESLint |
 | Format | `npm run format` | Prettier |
 | Types | `npm run type-check` | TypeScript check |

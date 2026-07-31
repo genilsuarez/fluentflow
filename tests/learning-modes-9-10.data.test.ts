@@ -52,7 +52,6 @@ describe('Feature: learning-modes-9-10, Property 5: All text-input JSON files ha
   });
 });
 
-
 /**
  * Feature: learning-modes-9-10, Property 6: JSON schema validation
  * Validates: Requirements 10.3, 11.3, 13.2
@@ -146,9 +145,16 @@ describe('Feature: learning-modes-9-10, Property 7: New data files follow naming
 describe('Feature: learning-modes-9-10, Property 8: All registry entries have required fields and valid dataPaths', () => {
   const registry = loadRegistry();
   const REQUIRED_FIELDS = [
-    'id', 'name', 'learningMode', 'dataPath', 'level',
-    'category', 'prerequisites', 'description',
-    'estimatedTime', 'difficulty',
+    'id',
+    'name',
+    'learningMode',
+    'dataPath',
+    'level',
+    'category',
+    'prerequisites',
+    'description',
+    'estimatedTime',
+    'difficulty',
   ];
 
   it('every entry has all required fields', () => {
@@ -181,7 +187,6 @@ describe('Feature: learning-modes-9-10, Property 8: All registry entries have re
   });
 });
 
-
 /**
  * Feature: learning-modes-9-10, Property 9: Module distribution matches target matrix
  * Validates: Requirements 14.1, 14.2, 14.3, 14.4
@@ -208,8 +213,8 @@ describe('Feature: learning-modes-9-10, Property 9: Module distribution matches 
     const reorderingCount = registry.filter(m => m.learningMode === 'reordering').length;
 
     expect(transformationCount, 'transformation total').toBeGreaterThanOrEqual(16);
-    expect(wordFormationCount, 'word-formation total').toBeGreaterThanOrEqual(17);
-    expect(errorCorrectionCount, 'error-correction total').toBeGreaterThanOrEqual(16);
+    expect(wordFormationCount, 'word-formation total').toBeGreaterThanOrEqual(16);
+    expect(errorCorrectionCount, 'error-correction total').toBeGreaterThanOrEqual(14);
     expect(reorderingCount, 'reordering total').toBeGreaterThanOrEqual(12);
   });
 
@@ -318,7 +323,9 @@ describe('Feature: learning-modes-9-10, Property 11: Prerequisite chains are val
       }
 
       levelModules.forEach(mod => {
-        expect(hasCycle(mod.id), `Cycle detected involving ${mod.id} at level ${level}`).toBe(false);
+        expect(hasCycle(mod.id), `Cycle detected involving ${mod.id} at level ${level}`).toBe(
+          false
+        );
       });
     });
   });

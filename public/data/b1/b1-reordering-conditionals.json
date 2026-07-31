@@ -368,5 +368,171 @@
       "will"
     ],
     "explanation": "Segunda condicional: If + pasado ('had'), would + base ('invite')."
+  },
+  {
+    "id": "reord-b1-cond-021",
+    "sentence": "If she had studied harder she would have passed the exam",
+    "words": [
+      "If",
+      "she",
+      "had",
+      "studied",
+      "harder",
+      "she",
+      "would",
+      "have",
+      "passed",
+      "the",
+      "exam"
+    ],
+    "hint": "If + past perfect, would have + past participle",
+    "explanation": "Tercera condicional: <If> + pasado perfecto, <would have> + participio pasado."
+  },
+  {
+    "id": "reord-b1-cond-022",
+    "sentence": "Unless you hurry you will miss the train",
+    "words": [
+      "Unless",
+      "you",
+      "hurry",
+      "you",
+      "will",
+      "miss",
+      "the",
+      "train"
+    ],
+    "hint": "Unless + present simple, will + base verb",
+    "explanation": "<Unless> significa <if not>. <Unless you hurry> = <If you don't hurry>."
+  },
+  {
+    "id": "reord-b1-cond-023",
+    "sentence": "We will go to the beach if the weather is nice",
+    "words": [
+      "We",
+      "will",
+      "go",
+      "to",
+      "the",
+      "beach",
+      "if",
+      "the",
+      "weather",
+      "is",
+      "nice"
+    ],
+    "hint": "Will + base verb + if + present simple",
+    "explanation": "Primera condicional: la cláusula con <if> puede ir en segundo lugar."
+  },
+  {
+    "id": "reord-b1-cond-024",
+    "sentence": "If you heat ice it melts",
+    "words": [
+      "If",
+      "you",
+      "heat",
+      "ice",
+      "it",
+      "melts"
+    ],
+    "hint": "If + present simple, present simple",
+    "explanation": "Condicional cero: ambas cláusulas usan presente simple para hechos generales."
+  },
+  {
+    "id": "reord-b1-cond-025",
+    "sentence": "She would have called you if she had known your number",
+    "words": [
+      "She",
+      "would",
+      "have",
+      "called",
+      "you",
+      "if",
+      "she",
+      "had",
+      "known",
+      "your",
+      "number"
+    ],
+    "hint": "Would have + past participle + if + past perfect",
+    "explanation": "Tercera condicional: <would have called> + <if she had known>."
+  },
+  {
+    "id": "reord-b1-cond-026",
+    "sentence": "If I had a car I would drive to work every day",
+    "words": [
+      "If",
+      "I",
+      "had",
+      "a",
+      "car",
+      "I",
+      "would",
+      "drive",
+      "to",
+      "work",
+      "every",
+      "day"
+    ],
+    "hint": "If + past simple, would + base verb",
+    "explanation": "Segunda condicional: situación imaginaria sobre el presente."
+  },
+  {
+    "id": "reord-b1-cond-027",
+    "sentence": "They will be disappointed if we don't come to the party",
+    "words": [
+      "They",
+      "will",
+      "be",
+      "disappointed",
+      "if",
+      "we",
+      "don't",
+      "come",
+      "to",
+      "the",
+      "party"
+    ],
+    "hint": "Will + be + adjective + if + present simple negative",
+    "explanation": "Primera condicional en negativo: <if we don't come>."
+  },
+  {
+    "id": "reord-b1-cond-028",
+    "sentence": "If he had left earlier he would not have missed the flight",
+    "words": [
+      "If",
+      "he",
+      "had",
+      "left",
+      "earlier",
+      "he",
+      "would",
+      "not",
+      "have",
+      "missed",
+      "the",
+      "flight"
+    ],
+    "hint": "If + past perfect, would not have + past participle",
+    "explanation": "Tercera condicional en negativo: <would not have missed>."
+  },
+  {
+    "id": "reord-b1-cond-029",
+    "sentence": "I will lend you the book if you promise to return it",
+    "words": [
+      "I",
+      "will",
+      "lend",
+      "you",
+      "the",
+      "book",
+      "if",
+      "you",
+      "promise",
+      "to",
+      "return",
+      "it"
+    ],
+    "hint": "Will + base verb + if + present simple",
+    "explanation": "Primera condicional: posibilidad real sobre el futuro."
   }
 ]
