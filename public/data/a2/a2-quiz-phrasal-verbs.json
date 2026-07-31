@@ -1,0 +1,122 @@
+[
+  {
+    "question": "I always ___ at 7 a.m. on weekdays.",
+    "options": ["wake up", "wake on", "wake off", "wake for"],
+    "correct": "wake up",
+    "explanation": "El phrasal verb <wake up> significa despertarse."
+  },
+  {
+    "question": "Could you ___? We're leaving in five minutes.",
+    "options": ["get up", "get off", "get out", "get in"],
+    "correct": "get up",
+    "explanation": "El phrasal verb <get up> significa levantarse de la cama."
+  },
+  {
+    "question": "It's dark in here. Can you ___ the light?",
+    "options": ["turn off", "turn on", "turn up", "turn down"],
+    "correct": "turn on",
+    "explanation": "El phrasal verb <turn on> significa encender un aparato o luz."
+  },
+  {
+    "question": "Please ___ your phone during the movie.",
+    "options": ["turn on", "turn off", "turn in", "turn out"],
+    "correct": "turn off",
+    "explanation": "El phrasal verb <turn off> significa apagar un aparato."
+  },
+  {
+    "question": "It's cold outside, so ___ your jacket.",
+    "options": ["put on", "put off", "put out", "put away"],
+    "correct": "put on",
+    "explanation": "El phrasal verb <put on> significa ponerse una prenda de ropa."
+  },
+  {
+    "question": "You should ___ your shoes before entering the house.",
+    "options": ["take on", "take off", "take up", "take out"],
+    "correct": "take off",
+    "explanation": "El phrasal verb <take off> significa quitarse una prenda de ropa."
+  },
+  {
+    "question": "I'm ___ my keys. Have you seen them?",
+    "options": ["looking for", "looking at", "looking after", "looking up"],
+    "correct": "looking for",
+    "explanation": "El phrasal verb <look for> significa buscar algo."
+  },
+  {
+    "question": "My sister ___ our dog while we're on vacation.",
+    "options": ["looks for", "looks after", "looks at", "looks up"],
+    "correct": "looks after",
+    "explanation": "El phrasal verb <look after> significa cuidar de alguien o algo."
+  },
+  {
+    "question": "Don't ___! You can learn this if you keep practicing.",
+    "options": ["give up", "give in", "give out", "give away"],
+    "correct": "give up",
+    "explanation": "El phrasal verb <give up> significa rendirse o dejar de intentar."
+  },
+  {
+    "question": "We need to ___ what time the train leaves.",
+    "options": ["find in", "find out", "find up", "find off"],
+    "correct": "find out",
+    "explanation": "El phrasal verb <find out> significa descubrir o averiguar información."
+  },
+  {
+    "question": "Please ___ this form with your name and address.",
+    "options": ["fill in", "fill up", "fill out of", "fill on"],
+    "correct": "fill in",
+    "explanation": "El phrasal verb <fill in> significa rellenar un formulario."
+  },
+  {
+    "question": "I usually ___ with my friends on Saturday afternoons.",
+    "options": ["hang out", "hang up", "hang on", "hang in"],
+    "correct": "hang out",
+    "explanation": "El phrasal verb <hang out> significa pasar tiempo libre con alguien."
+  },
+  {
+    "question": "My new coworker is friendly. I ___ well with her.",
+    "options": ["get along", "get up", "get off", "get out"],
+    "correct": "get along",
+    "explanation": "El phrasal verb <get along> significa llevarse bien con alguien."
+  },
+  {
+    "question": "My grandparents ___ in a small village near the coast.",
+    "options": ["grew up", "grew on", "grew out", "grew off"],
+    "correct": "grew up",
+    "explanation": "El phrasal verb <grow up> significa crecer desde la infancia hasta la edad adulta."
+  },
+  {
+    "question": "We need to ___ at the hotel before 3 p.m.",
+    "options": ["check up", "check in", "check on", "check for"],
+    "correct": "check in",
+    "explanation": "El phrasal verb <check in> significa registrarse en un hotel o aeropuerto."
+  },
+  {
+    "question": "What time do we have to ___ of the hotel room tomorrow?",
+    "options": ["check out", "check in", "check up", "check off"],
+    "correct": "check out",
+    "explanation": "El phrasal verb <check out> significa dejar el hotel tras pagar la cuenta."
+  },
+  {
+    "question": "We ___ milk, so I need to buy more.",
+    "options": ["ran out of", "ran into", "ran up", "ran off"],
+    "correct": "ran out of",
+    "explanation": "El phrasal verb <run out of> significa quedarse sin algo."
+  },
+  {
+    "question": "Despite the rain, the players decided to ___ with the match.",
+    "options": ["carry on", "carry out", "carry off", "carry up"],
+    "correct": "carry on",
+    "explanation": "El phrasal verb <carry on> significa continuar haciendo algo."
+  },
+  {
+    "question": "Next month, my family is going to ___ a bigger apartment.",
+    "options": ["move in", "move on", "move out", "move up"],
+    "correct": "move in",
+    "explanation": "El phrasal verb <move in> significa mudarse a vivir a un nuevo lugar."
+  },
+  {
+    "question": "Can you help me ___ the kitchen before the guests arrive?",
+    "options": ["clean up", "clean out", "clean off", "clean on"],
+    "correct": "clean up",
+    "explanation": "El phrasal verb <clean up> significa limpiar y ordenar un lugar."
+  }
+]

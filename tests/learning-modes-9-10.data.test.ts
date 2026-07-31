@@ -227,7 +227,7 @@ describe('Feature: learning-modes-9-10, Property 9: Module distribution matches 
     expect(readingCount, 'reading').toBeLessThanOrEqual(36);
     expect(completionCount, 'completion').toBeLessThanOrEqual(51);
     expect(flashcardCount, 'flashcard').toBeLessThanOrEqual(34);
-    expect(quizCount, 'quiz').toBeLessThanOrEqual(45);
+    expect(quizCount, 'quiz').toBeLessThanOrEqual(46);
   });
 });
 

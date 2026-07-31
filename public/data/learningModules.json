@@ -999,7 +999,7 @@
     ],
     "category": "PhrasalVerbs",
     "prerequisites": [
-      "completion-elementary-phrasal-verbs-a2"
+      "quiz-phrasal-verbs-a2"
     ],
     "description": "Reorder sentences with elementary phrasal verbs",
     "estimatedTime": 3,
@@ -5052,5 +5052,21 @@
     "description": "Historical events, social movements, and their impact",
     "estimatedTime": 7,
     "difficulty": 4
+  },
+  {
+    "id": "quiz-phrasal-verbs-a2",
+    "name": "A2 Phrasal Verbs Quiz",
+    "learningMode": "quiz",
+    "dataPath": "data/a2/a2-quiz-phrasal-verbs.json",
+    "level": [
+      "a2"
+    ],
+    "category": "PhrasalVerbs",
+    "prerequisites": [
+      "completion-elementary-phrasal-verbs-a2"
+    ],
+    "description": "Test your knowledge of elementary phrasal verbs",
+    "estimatedTime": 5,
+    "difficulty": 2
   }
 ]
