@@ -111,10 +111,13 @@ describe('checkLevelAdvancement', () => {
 
   it('treats HubFlow exactly at 50% as meeting its threshold', () => {
     const a1HubflowIds = idsForLevel(HUBFLOW_LEVELS, 'a1');
-    expect(a1HubflowIds.length).toBe(20); // fixture assumption -- keeps 50% exact
+    // Even totals only, so half is an exact 50% split -- avoids a hardcoded
+    // count that silently drifts whenever HubFlow's catalog is rebalanced.
+    expect(a1HubflowIds.length % 2).toBe(0);
+    const half = a1HubflowIds.length / 2;
 
     writeFluentflow('A1', 5, 5);
-    completeHubflow('a1', 10); // exactly 50% of 20
+    completeHubflow('a1', half);
     completeLyricflow('a1', idsForLevel(LYRICFLOW_LEVELS, 'a1').length);
 
     const result = checkLevelAdvancement();
