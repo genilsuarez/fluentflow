@@ -542,6 +542,19 @@
   box-shadow: none;
 }
 
+/* When a locked module is shown in search results it becomes navigable */
+.progression-dashboard__module.progression-dashboard__module--locked.progression-dashboard__module--locked-preview {
+  cursor: pointer;
+  pointer-events: auto;
+  opacity: 0.82;
+}
+
+.progression-dashboard__module--locked.progression-dashboard__module--locked-preview:hover {
+  border-color: var(--lp-border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  opacity: 1;
+}
+
 .progression-dashboard__module--locked .progression-dashboard__module-name {
   color: var(--lp-ink-soft);
 }

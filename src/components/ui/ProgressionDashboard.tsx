@@ -513,7 +513,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                       const isCompletedExpanded =
                         expandedCompletedUnits.has(unit) || !!searchQuery.trim();
 
-                      if (!developmentMode) {
+                      if (!developmentMode && !searchQuery.trim()) {
                         if (nextIndex > 0) {
                           const beforeNextCount = nextIndex;
                           if (beforeNextCount > rowSlots) {
@@ -528,7 +528,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                           }
                         }
 
-                        showCompletedToggle = collapsibleCompleted > 0 && !searchQuery.trim();
+                        showCompletedToggle = collapsibleCompleted > 0;
 
                         let suffix: LearningModule[] = modules;
 
@@ -604,15 +604,16 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                         const status = effectiveStatus(module);
                         const isCompleted = isModuleCompleted(module.id);
                         const isNext = nextRecommended?.id === module.id;
+                        // When searching, locked modules are shown and are clickable
+                        const isSearching = !!searchQuery.trim();
+                        const isClickable = status !== 'locked' || isSearching;
 
                         return (
                           <div
                             key={module.id}
-                            className={`progression-dashboard__module progression-dashboard__module--${status} module-card--${module.learningMode} ${isNext ? 'progression-dashboard__module--next' : ''}`}
-                            onClick={
-                              status !== 'locked' ? () => handleModuleClick(module) : undefined
-                            }
-                            aria-disabled={status === 'locked'}
+                            className={`progression-dashboard__module progression-dashboard__module--${status} module-card--${module.learningMode} ${isNext ? 'progression-dashboard__module--next' : ''}${isSearching && status === 'locked' ? ' progression-dashboard__module--locked-preview' : ''}`}
+                            onClick={isClickable ? () => handleModuleClick(module) : undefined}
+                            aria-disabled={!isClickable}
                           >
                             <div className="progression-dashboard__module-icon">
                               {isCompleted ? (
