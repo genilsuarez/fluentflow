@@ -96,6 +96,7 @@ export interface UserProfile {
   id: string;
   name: string;
   avatar_url?: string | null;
+  cefr_level?: string | null;
 }
 
 export async function fetchProfile(): Promise<UserProfile | null> {
@@ -117,6 +118,19 @@ export async function updateProfile(updates: Partial<Pick<UserProfile, 'name' | 
   const { error } = await supabase
     .from('profiles')
     .upsert({ id: user.id, ...updates }, { onConflict: 'id' });
+
+  return { error: error?.message || null };
+}
+
+export async function updateCefrLevel(level: string) {
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return { error: 'not_authenticated' as const };
+
+  const { error } = await supabase
+    .from('profiles')
+    .upsert({ id: user.id, cefr_level: level }, { onConflict: 'id' });
 
   return { error: error?.message || null };
 }

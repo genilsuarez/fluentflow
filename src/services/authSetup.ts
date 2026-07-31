@@ -6,6 +6,7 @@ import {
   signOut,
 } from './supabaseClient';
 import { handleAuthenticatedSession, handleSignedOut } from './syncEngine';
+import { checkLevelAdvancement, restoreLevelFromProfile } from './levelProgression';
 import { markStatsDisplayReady } from '../utils/statsBootstrap';
 import { useUserStore } from '../stores/userStore';
 import type { User } from '../types';
@@ -115,7 +116,9 @@ async function processAuthSession(
         }
       }
     }
+    await restoreLevelFromProfile(profile?.cefr_level);
     await handleAuthenticatedSession(event);
+    await checkLevelAdvancement();
     lastHandledUserId = session.user.id;
     cleanAuthParamsFromUrl();
   })();

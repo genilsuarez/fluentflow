@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import { useProgressStore } from './progressStore';
+import { checkLevelAdvancement } from '../services/levelProgression';
 import type { User, ModuleScore } from '../types';
 
 interface UserStore {
@@ -61,6 +62,8 @@ export const useUserStore = create<UserStore>()(
           if (score >= 70) {
             const progressStore = useProgressStore.getState();
             progressStore.completeModule(moduleId, score);
+            // Cross-app CEFR level check — fire-and-forget (dynamic import + async Supabase write)
+            void checkLevelAdvancement();
           }
 
           return {
