@@ -235,7 +235,11 @@ export const publishLearnFlowIntegration = (
     // Esta clave no matchea ese borrado, así que sobrevive al logout.
     localStorage.setItem(
       CATALOG_KEY,
-      JSON.stringify({ totalContent: modules.length, updatedAt: publishedAt })
+      JSON.stringify({
+        totalContent: modules.length,
+        ids: modules.map(module => module.id),
+        updatedAt: publishedAt,
+      })
     );
   } catch {
     // Integration snapshots are reconstructible; source progress remains untouched.
