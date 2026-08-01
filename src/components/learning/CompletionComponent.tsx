@@ -23,6 +23,7 @@ import LearningProgressHeader from '../ui/LearningProgressHeader';
 import ExerciseResultScreen from '../ui/ExerciseResultScreen';
 import { EditableInput } from '../ui/EditableInput';
 import type { EditableInputHandle } from '../ui/EditableInput';
+import { AnswerReviewDisplay } from '../ui/AnswerReviewDisplay';
 
 import type { LearningModule, CompletionData } from '../../types';
 import { countBlanks, splitOnBlanks } from '../../utils/blankMarker';
@@ -358,49 +359,61 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
           total: blankCount,
         });
 
-        elements.push(
-          <EditableInput
-            key={`input-${index}`}
-            ref={getGapRef(gapIndex)}
-            value={gapValue}
-            onChange={value => {
-              setAnswers(prev => {
-                const next = [...prev];
-                while (next.length <= gapIndex) next.push('');
-                next[gapIndex] = value.toLowerCase();
-                answersRef.current = next;
-                return next;
-              });
-            }}
-            disabled={showResult}
-            placeholder={placeholderHint}
-            ariaLabel={blankAriaLabel}
-            className={`editable-input editable-input--inline ${inputClass.replace(/completion-component__input/g, 'editable-input')}`}
-            style={
-              {
-                '--dynamic-width': inlineBlankWidthCh(widthSource),
-                textTransform: 'lowercase',
-              } as React.CSSProperties
-            }
-            autoFocus={!showResult && gapIndex === 0}
-            onFocus={() => {
-              focusedGapRef.current = gapIndex;
-            }}
-            onEnter={() => {
-              if (ignoreEnterRef.current) return;
-              if (showResultRef.current) {
-                handleNext();
-                return;
-              }
-              const current = collectCurrentAnswers(blankCount);
-              answersRef.current = current;
-              if (allBlanksAnswered(current, correctParts)) {
-                checkAnswer();
-              }
-            }}
-            onTab={showResult ? undefined : direction => handleGapTab(gapIndex, direction)}
-          />
-        );
+        const widthStyle = {
+          '--dynamic-width': inlineBlankWidthCh(widthSource),
+          textTransform: 'lowercase',
+        } as React.CSSProperties;
+
+        if (showResult && !gapCorrect) {
+          elements.push(
+            <AnswerReviewDisplay
+              key={`input-${index}`}
+              answer={gapValue}
+              correctAnswers={[correctForGap]}
+              inline
+              style={widthStyle}
+            />
+          );
+        } else {
+          elements.push(
+            <EditableInput
+              key={`input-${index}`}
+              ref={getGapRef(gapIndex)}
+              value={gapValue}
+              onChange={value => {
+                setAnswers(prev => {
+                  const next = [...prev];
+                  while (next.length <= gapIndex) next.push('');
+                  next[gapIndex] = value.toLowerCase();
+                  answersRef.current = next;
+                  return next;
+                });
+              }}
+              disabled={showResult}
+              placeholder={placeholderHint}
+              ariaLabel={blankAriaLabel}
+              className={`editable-input editable-input--inline ${inputClass.replace(/completion-component__input/g, 'editable-input')}`}
+              style={widthStyle}
+              autoFocus={!showResult && gapIndex === 0}
+              onFocus={() => {
+                focusedGapRef.current = gapIndex;
+              }}
+              onEnter={() => {
+                if (ignoreEnterRef.current) return;
+                if (showResultRef.current) {
+                  handleNext();
+                  return;
+                }
+                const current = collectCurrentAnswers(blankCount);
+                answersRef.current = current;
+                if (allBlanksAnswered(current, correctParts)) {
+                  checkAnswer();
+                }
+              }}
+              onTab={showResult ? undefined : direction => handleGapTab(gapIndex, direction)}
+            />
+          );
+        }
       }
     });
 
