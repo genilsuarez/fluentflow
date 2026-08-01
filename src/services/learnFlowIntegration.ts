@@ -30,6 +30,7 @@ interface LearnFlowProgressSource {
 
 const PROGRESS_KEY = 'learnflow:progress:fluentflow:v1';
 const ACTIVITY_KEY = 'learnflow:activity:fluentflow:v1';
+const CATALOG_KEY = 'learnflow:catalog:fluentflow:v1';
 const MAX_ACTIVITY_EVENTS = 200;
 
 const clampPercentage = (value: number): number => Math.min(100, Math.max(0, value));
@@ -225,6 +226,17 @@ export const publishLearnFlowIntegration = (
   try {
     localStorage.setItem(PROGRESS_KEY, JSON.stringify(progress));
     localStorage.setItem(ACTIVITY_KEY, JSON.stringify(activity));
+    // learnflow:catalog:fluentflow:v1 — tamaño de catálogo por separado de
+    // learnflow:progress:fluentflow:v1. clearGuestLocalProgress() (DeskFlow,
+    // lp-guest-reset.js) borra todo lo que empieza con learnflow:progress:/
+    // learnflow:activity: al hacer logout explícito (correcto, evita filtrar
+    // progreso ajeno en un dispositivo compartido) — pero eso dejaba el
+    // total en 0 también en modo invitado, aunque el catálogo es público.
+    // Esta clave no matchea ese borrado, así que sobrevive al logout.
+    localStorage.setItem(
+      CATALOG_KEY,
+      JSON.stringify({ totalContent: modules.length, updatedAt: publishedAt })
+    );
   } catch {
     // Integration snapshots are reconstructible; source progress remains untouched.
   }
