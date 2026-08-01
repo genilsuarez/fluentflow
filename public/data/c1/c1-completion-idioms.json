@@ -2,101 +2,121 @@
   {
     "sentence": "Let's stop discussing details and ___.",
     "correct": "get down to business",
-    "explanation": "<Get down to business> significa empezar a concentrarse en lo importante."
+    "explanation": "<Get down to business> significa empezar a concentrarse en lo importante.",
+    "tip": "Idiom with <business>: concentrarse en lo importante (4 words)"
   },
   {
     "sentence": "The politician decided to ___ rather than take a clear position.",
     "correct": "sit on the fence",
-    "explanation": "<Sit on the fence> significa mantenerse neutral."
+    "explanation": "<Sit on the fence> significa mantenerse neutral.",
+    "tip": "Idiom with <fence>: mantenerse neutral (4 words)"
   },
   {
     "sentence": "___ is that we need to cut costs by 15% this quarter.",
     "correct": "The bottom line",
-    "explanation": "<The bottom line> significa el punto o resultado esencial."
+    "explanation": "<The bottom line> significa el punto o resultado esencial.",
+    "tip": "Idiom with <bottom line>: el punto esencial (3 words)"
   },
   {
     "sentence": "He got the promotion because he knows how to ___ within the company.",
     "correct": "pull strings",
-    "explanation": "<Pull strings> significa usar influencia personal."
+    "explanation": "<Pull strings> significa usar influencia personal.",
+    "tip": "Idiom with <strings>: usar influencia personal (2 words)"
   },
   {
     "sentence": "Deciding who to lay off was ___ for the manager.",
     "correct": "a tough call",
-    "explanation": "<A tough call> significa una decisión difícil."
+    "explanation": "<A tough call> significa una decisión difícil.",
+    "tip": "Idiom with <call>: una decisión difícil (3 words)"
   },
   {
     "sentence": "Can you give me ___ of how much the renovation will cost?",
     "correct": "a ballpark figure",
-    "explanation": "<A ballpark figure> significa una estimación aproximada."
+    "explanation": "<A ballpark figure> significa una estimación aproximada.",
+    "tip": "Idiom with <ballpark>: una estimación aproximada (3 words)"
   },
   {
     "sentence": "The marketing campaign ___ and failed to attract new customers.",
     "correct": "fell flat",
-    "explanation": "<Fall flat> significa no lograr el efecto deseado."
+    "explanation": "<Fall flat> significa no lograr el efecto deseado.",
+    "tip": "Idiom with <flat>: no lograr el efecto deseado (2 words, pasado)"
   },
   {
     "sentence": "I'd take his promises with ___.",
     "correct": "a grain of salt",
-    "explanation": "<Take something with a grain of salt> significa no creerlo del todo."
+    "explanation": "<Take something with a grain of salt> significa no creerlo del todo.",
+    "tip": "Idiom with <grain of salt>: no creerlo del todo (5 words)"
   },
   {
     "sentence": "After the failed negotiation, they had to go ___ and rethink their strategy.",
     "correct": "back to square one",
-    "explanation": "<Back to square one> significa volver al punto de partida."
+    "explanation": "<Back to square one> significa volver al punto de partida.",
+    "tip": "Idiom with <square one>: volver al punto de partida (4 words)"
   },
   {
     "sentence": "The company managed to ___ despite the economic crisis.",
     "correct": "weather the storm",
-    "explanation": "<Weather the storm> significa sobrevivir un período difícil."
+    "explanation": "<Weather the storm> significa sobrevivir un período difícil.",
+    "tip": "Idiom with <storm>: sobrevivir un período difícil (3 words)"
   },
   {
     "sentence": "The new CEO's strategy was ___ for the entire industry.",
     "correct": "a game changer",
-    "explanation": "<A game changer> significa algo que altera radicalmente una situación."
+    "explanation": "<A game changer> significa algo que altera radicalmente una situación.",
+    "tip": "Idiom with <changer>: algo que altera todo (3 words)"
   },
   {
     "sentence": "It's time you ___ and started meeting deadlines.",
     "correct": "got your act together",
-    "explanation": "<Get your act together> significa organizarse y comportarse de forma eficaz."
+    "explanation": "<Get your act together> significa organizarse y comportarse de forma eficaz.",
+    "tip": "Idiom with <act>: organizarse y ser eficaz (4 words, pasado)"
   },
   {
     "sentence": "The new policy ensures ___ for all applicants.",
     "correct": "a level playing field",
-    "explanation": "<A level playing field> significa una situación justa e igualitaria."
+    "explanation": "<A level playing field> significa una situación justa e igualitaria.",
+    "tip": "Idiom with <playing field>: situación justa e igualitaria (5 words)"
   },
   {
     "sentence": "A good negotiator knows how to ___ before making an offer.",
     "correct": "read the room",
-    "explanation": "<Read the room> significa entender el ambiente o estado de ánimo del grupo."
+    "explanation": "<Read the room> significa entender el ambiente o estado de ánimo del grupo.",
+    "tip": "Idiom with <room>: entender el ambiente del grupo (3 words)"
   },
   {
     "sentence": "Cutting corners on safety inspections is ___.",
     "correct": "a slippery slope",
-    "explanation": "<A slippery slope> describe una acción que puede llevar a consecuencias cada vez peores."
+    "explanation": "<A slippery slope> describe una acción que puede llevar a consecuencias cada vez peores.",
+    "tip": "Idiom with <slope>: lleva a consecuencias cada vez peores (4 words)"
   },
   {
     "sentence": "In a live interview, you have to ___ and answer unexpected questions.",
     "correct": "think on your feet",
-    "explanation": "<Think on your feet> significa reaccionar rápido bajo presión."
+    "explanation": "<Think on your feet> significa reaccionar rápido bajo presión.",
+    "tip": "Idiom with <feet>: reaccionar rápido bajo presión (4 words)"
   },
   {
     "sentence": "After three profit warnings, ___ for the struggling company.",
     "correct": "the writing was on the wall",
-    "explanation": "<The writing is on the wall> significa que hay señales claras de un mal desenlace."
+    "explanation": "<The writing is on the wall> significa que hay señales claras de un mal desenlace.",
+    "tip": "Idiom with <writing on the wall>: señales claras de fracaso (6 words, pasado)"
   },
   {
     "sentence": "The new manager wants to ___ and expects everyone to work harder.",
     "correct": "raise the bar",
-    "explanation": "<Raise the bar> significa elevar el nivel exigido."
+    "explanation": "<Raise the bar> significa elevar el nivel exigido.",
+    "tip": "Idiom with <bar>: elevar el nivel exigido (3 words)"
   },
   {
     "sentence": "In a small startup, everyone has to ___ juggling several roles.",
     "correct": "wear many hats",
-    "explanation": "<Wear many hats> significa desempeñar muchos roles distintos."
+    "explanation": "<Wear many hats> significa desempeñar muchos roles distintos.",
+    "tip": "Idiom with <hats>: desempeñar muchos roles (3 words)"
   },
   {
     "sentence": "The small clinic operated ___ for years before anyone noticed its success.",
     "correct": "under the radar",
-    "explanation": "<Under the radar> significa pasar desapercibido."
+    "explanation": "<Under the radar> significa pasar desapercibido.",
+    "tip": "Idiom with <radar>: pasar desapercibido (3 words)"
   }
 ]
