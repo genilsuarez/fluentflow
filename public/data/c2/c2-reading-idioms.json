@@ -1,0 +1,109 @@
+{
+  "title": "Idioms with Classical and Literary Origins",
+  "estimatedReadingTime": 7,
+  "learningObjectives": [
+    "Recognize idioms rooted in mythology, literature, and Latin",
+    "Understand the cultural and historical origins behind common idioms",
+    "Interpret idioms of dilemma and difficulty at a near-native level",
+    "Use formal, Latinate expressions appropriately in academic and literary contexts"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "title": "Idioms as Cultural Artifacts",
+      "type": "introduction",
+      "content": "At the mastery level, many English idioms are not simply colorful phrases — they are fragments of mythology, literature, and history preserved in everyday speech. When someone mentions a company's <Achilles' heel>, they are quietly invoking Homer's Iliad. Understanding these origins deepens comprehension of tone, register, and allusion in formal and literary English."
+    },
+    {
+      "id": "mythology",
+      "title": "Idioms from Greek and Roman Mythology",
+      "type": "theory",
+      "content": "Classical mythology gave English many enduring idioms:\n\n• <Achilles' heel> - A fatal weakness, from the Iliad\n• <A Pandora's box> - A source of unforeseen problems, from Hesiod\n• <A Sisyphean task> - An endless, futile task, from the myth of Sisyphus\n• <Cross the Rubicon> - Pass a point of no return, from Julius Caesar's history\n• <The Midas touch> - The ability to turn any venture into a success\n\nEach phrase compresses a whole story into a few words."
+    },
+    {
+      "id": "latin",
+      "title": "Latin Phrases in Formal English",
+      "type": "theory",
+      "content": "Formal and academic English also borrows directly from Latin:\n\n• <Status quo> - The existing state of affairs\n• <De facto> - In practice, though not officially\n• <Bona fide> - Genuine, in good faith\n• <Sine qua non> - An essential condition\n• <Ad hoc> - Formed for a specific purpose, improvised\n\nThese expressions are common in legal, academic, and journalistic writing."
+    },
+    {
+      "id": "story",
+      "title": "A Literary Account",
+      "type": "theory",
+      "content": "The scandal, journalists agreed, was <a Pandora's box>. Once the first document leaked, there was no closing it again. The minister's <Achilles' heel> had always been his overconfidence, and his advisors had long known that, sooner or later, he would <cross the Rubicon> and make a decision from which there was no return. His resignation felt, to many, like <a Pyrrhic victory> for his opponents — they had won, but at a considerable cost to public trust.\n\nCan you find all four idioms in the passage?"
+    },
+    {
+      "id": "dilemma",
+      "title": "Idioms of Dilemma and Difficulty",
+      "type": "theory",
+      "content": "English has precise idioms for situations with no good outcome:\n\n• <A Catch-22> - A paradoxical situation with no escape\n• <A Hobson's choice> - An apparent choice that offers no real alternative\n• <A poisoned chalice> - An assignment that seems desirable but is likely to cause problems\n• <Beyond the pale> - Unacceptable, outside the bounds of decency\n\nExample: Accepting the failing division was <a poisoned chalice> — a promotion in name only."
+    },
+    {
+      "id": "examples",
+      "title": "Idioms in Formal Contexts",
+      "type": "examples",
+      "content": "Example 1: LEGAL WRITING - <The defendant's alibi turned out to be a red herring, distracting investigators from the real suspect.>\n\nExample 2: ACADEMIC REVIEW - <The theory, while elegant, rests on a foregone conclusion rather than genuine evidence.>\n\nExample 3: JOURNALISM - <Critics argue the reform is little more than a Trojan horse for further deregulation.>"
+    },
+    {
+      "id": "register",
+      "title": "Register and Precision",
+      "type": "theory",
+      "content": "At this level, idiom choice signals precision as much as fluency. <Par for the course> and <status quo> both describe 'what's normal,' but the first sounds conversational and the second sounds analytical. Advanced writers select idioms deliberately — not just to sound fluent, but to calibrate tone exactly to their audience and medium."
+    },
+    {
+      "id": "summary",
+      "title": "Key Takeaways",
+      "type": "summary",
+      "content": "Remember:\n\n• Many idioms preserve fragments of mythology, literature, or history\n• Latin phrases remain common in legal, academic, and formal English\n• Idioms of dilemma express nuanced, no-win situations precisely\n• Register matters — classical and Latin idioms tend to sound more formal\n• Recognizing origin stories helps you remember meaning and connotation"
+    }
+  ],
+  "keyVocabulary": [
+    {
+      "term": "Achilles' heel",
+      "definition": "A fatal or critical weakness",
+      "example": "Overconfidence was his Achilles' heel.",
+      "pronunciation": "/əˈkɪliːz hiːl/"
+    },
+    {
+      "term": "a Pandora's box",
+      "definition": "A source of many unforeseen problems",
+      "example": "The investigation opened a Pandora's box.",
+      "pronunciation": "/ə pænˈdɔːrəz bɒks/"
+    },
+    {
+      "term": "status quo",
+      "definition": "The existing state of affairs",
+      "example": "They want to maintain the status quo.",
+      "pronunciation": "/ˈsteɪtəs kwoʊ/"
+    },
+    {
+      "term": "a Catch-22",
+      "definition": "A paradoxical situation with no escape",
+      "example": "It was a genuine Catch-22.",
+      "pronunciation": "/ə kætʃ ˌtwɛntiˈtuː/"
+    },
+    {
+      "term": "sine qua non",
+      "definition": "An essential, indispensable condition",
+      "example": "Trust is the sine qua non of any partnership.",
+      "pronunciation": "/ˌsɪneɪ kwɑː ˈnɒn/"
+    },
+    {
+      "term": "a poisoned chalice",
+      "definition": "An assignment that seems desirable but causes problems",
+      "example": "The role turned out to be a poisoned chalice.",
+      "pronunciation": "/ə ˈpɔɪzənd ˈtʃælɪs/"
+    }
+  ],
+  "grammarPoints": [
+    {
+      "rule": "Idioms with Article Variation",
+      "explanation": "Some classical idioms require 'a/an' before them (a Pandora's box, a Catch-22), while others never take an article (status quo, red tape) — this must be learned per idiom.",
+      "examples": [
+        "The report opened a Pandora's box. (article required)",
+        "They preferred to maintain the status quo. (no indefinite article)"
+      ],
+      "commonMistakes": ["Adding 'a' before 'status quo': 'a status quo' is incorrect"]
+    }
+  ]
+}

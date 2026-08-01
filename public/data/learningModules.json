@@ -3918,6 +3918,38 @@
     "difficulty": 1
   },
   {
+    "id": "completion-idioms-a1",
+    "name": "Complete Basic Idioms",
+    "learningMode": "completion",
+    "dataPath": "data/a1/a1-completion-idioms.json",
+    "level": [
+      "a1"
+    ],
+    "category": "Idioms",
+    "prerequisites": [
+      "sorting-simple-idioms-a1"
+    ],
+    "description": "Fill in the blank with the correct basic English idiom",
+    "estimatedTime": 5,
+    "difficulty": 1
+  },
+  {
+    "id": "matching-idioms-a1",
+    "name": "Match Basic Idioms to Meanings",
+    "learningMode": "matching",
+    "dataPath": "data/a1/a1-matching-idioms.json",
+    "level": [
+      "a1"
+    ],
+    "category": "Idioms",
+    "prerequisites": [
+      "completion-idioms-a1"
+    ],
+    "description": "Match basic English idioms to their meanings",
+    "estimatedTime": 3,
+    "difficulty": 1
+  },
+  {
     "id": "sorting-phrasal-verbs-particle-a1",
     "name": "Sort Phrasal Verbs by Meaning",
     "learningMode": "sorting",
@@ -3927,7 +3959,7 @@
     ],
     "category": "PhrasalVerbs",
     "prerequisites": [
-      "sorting-simple-idioms-a1"
+      "matching-idioms-a1"
     ],
     "description": "Classify common phrasal verbs into meaning categories: Daily Routine, Stopping, Movement, Continuing",
     "estimatedTime": 3,
@@ -4046,6 +4078,38 @@
     "difficulty": 2
   },
   {
+    "id": "completion-idioms-a2",
+    "name": "Complete Elementary Idioms",
+    "learningMode": "completion",
+    "dataPath": "data/a2/a2-completion-idioms.json",
+    "level": [
+      "a2"
+    ],
+    "category": "Idioms",
+    "prerequisites": [
+      "matching-elementary-idioms-a2"
+    ],
+    "description": "Fill in the blank with the correct elementary English idiom",
+    "estimatedTime": 5,
+    "difficulty": 2
+  },
+  {
+    "id": "sorting-idioms-a2",
+    "name": "Sort Elementary Idioms by Category",
+    "learningMode": "sorting",
+    "dataPath": "data/a2/a2-sorting-idioms.json",
+    "level": [
+      "a2"
+    ],
+    "category": "Idioms",
+    "prerequisites": [
+      "completion-idioms-a2"
+    ],
+    "description": "Sort elementary idioms into categories by their meaning",
+    "estimatedTime": 3,
+    "difficulty": 2
+  },
+  {
     "id": "completion-quantifiers-a2",
     "name": "Quantifiers Practice",
     "learningMode": "completion",
@@ -4055,7 +4119,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "matching-elementary-idioms-a2"
+      "sorting-idioms-a2"
     ],
     "description": "Complete sentences with some, any, much, many, a few, a little",
     "estimatedTime": 5,
@@ -4190,6 +4254,38 @@
     "difficulty": 3
   },
   {
+    "id": "completion-idioms-b1",
+    "name": "Complete Everyday Idioms",
+    "learningMode": "completion",
+    "dataPath": "data/b1/b1-completion-idioms.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Idioms",
+    "prerequisites": [
+      "matching-idioms-situations-b1"
+    ],
+    "description": "Fill in the blank with the correct everyday English idiom",
+    "estimatedTime": 5,
+    "difficulty": 3
+  },
+  {
+    "id": "sorting-idioms-b1",
+    "name": "Sort Everyday Idioms by Category",
+    "learningMode": "sorting",
+    "dataPath": "data/b1/b1-sorting-idioms.json",
+    "level": [
+      "b1"
+    ],
+    "category": "Idioms",
+    "prerequisites": [
+      "completion-idioms-b1"
+    ],
+    "description": "Sort everyday idioms into categories by their meaning",
+    "estimatedTime": 3,
+    "difficulty": 3
+  },
+  {
     "id": "reading-relative-clauses-b1",
     "name": "Relative Clauses: Who, Which, That, Whose, Where",
     "learningMode": "reading",
@@ -4199,7 +4295,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "matching-idioms-situations-b1"
+      "sorting-idioms-b1"
     ],
     "description": "Learn defining and non-defining relative clauses with who, which, that, whose, where",
     "estimatedTime": 5,
@@ -4414,6 +4510,22 @@
     "difficulty": 4
   },
   {
+    "id": "completion-idioms-b2",
+    "name": "Complete Professional Idioms",
+    "learningMode": "completion",
+    "dataPath": "data/b2/b2-completion-idioms.json",
+    "level": [
+      "b2"
+    ],
+    "category": "Idioms",
+    "prerequisites": [
+      "sorting-professional-idioms-b2"
+    ],
+    "description": "Fill in the blank with the correct professional English idiom",
+    "estimatedTime": 5,
+    "difficulty": 4
+  },
+  {
     "id": "error-correction-relative-clauses-b2",
     "name": "Fix Relative Clause Errors",
     "learningMode": "error-correction",
@@ -4423,7 +4535,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "sorting-professional-idioms-b2"
+      "completion-idioms-b2"
     ],
     "description": "Identify and correct common errors in relative clauses (who/which/that, defining/non-defining)",
     "estimatedTime": 4,
@@ -4462,6 +4574,70 @@
     "difficulty": 5
   },
   {
+    "id": "reading-idioms-c1",
+    "name": "Idioms in Professional and Media English",
+    "learningMode": "reading",
+    "dataPath": "data/c1/c1-reading-idioms.json",
+    "level": [
+      "c1"
+    ],
+    "category": "Idioms",
+    "prerequisites": [
+      "transformation-formal-register-idioms-c1"
+    ],
+    "description": "Read about advanced idioms used in business and media contexts",
+    "estimatedTime": 7,
+    "difficulty": 5
+  },
+  {
+    "id": "matching-idioms-c1",
+    "name": "Match Advanced Idioms to Meanings",
+    "learningMode": "matching",
+    "dataPath": "data/c1/c1-matching-idioms.json",
+    "level": [
+      "c1"
+    ],
+    "category": "Idioms",
+    "prerequisites": [
+      "reading-idioms-c1"
+    ],
+    "description": "Match advanced English idioms to their meanings",
+    "estimatedTime": 3,
+    "difficulty": 5
+  },
+  {
+    "id": "completion-idioms-c1",
+    "name": "Complete Advanced Idioms",
+    "learningMode": "completion",
+    "dataPath": "data/c1/c1-completion-idioms.json",
+    "level": [
+      "c1"
+    ],
+    "category": "Idioms",
+    "prerequisites": [
+      "matching-idioms-c1"
+    ],
+    "description": "Fill in the blank with the correct advanced English idiom",
+    "estimatedTime": 5,
+    "difficulty": 5
+  },
+  {
+    "id": "error-correction-idioms-c1",
+    "name": "Fix Misused Advanced Idioms",
+    "learningMode": "error-correction",
+    "dataPath": "data/c1/c1-error-correction-idioms.json",
+    "level": [
+      "c1"
+    ],
+    "category": "Idioms",
+    "prerequisites": [
+      "completion-idioms-c1"
+    ],
+    "description": "Identify and fix misused advanced idioms in context",
+    "estimatedTime": 4,
+    "difficulty": 5
+  },
+  {
     "id": "transformation-cleft-focus-c1",
     "name": "Cleft & Focus Transformations",
     "learningMode": "transformation",
@@ -4471,7 +4647,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "transformation-formal-register-idioms-c1"
+      "error-correction-idioms-c1"
     ],
     "description": "Cleft sentences, pseudo-clefts, and focus structures for emphasis",
     "estimatedTime": 4,
@@ -4766,6 +4942,38 @@
     "difficulty": 6
   },
   {
+    "id": "reading-idioms-c2",
+    "name": "Idioms with Classical and Literary Origins",
+    "learningMode": "reading",
+    "dataPath": "data/c2/c2-reading-idioms.json",
+    "level": [
+      "c2"
+    ],
+    "category": "Idioms",
+    "prerequisites": [
+      "matching-literary-idioms-origins-c2"
+    ],
+    "description": "Read about idioms rooted in mythology, literature, and Latin",
+    "estimatedTime": 7,
+    "difficulty": 5
+  },
+  {
+    "id": "sorting-idioms-c2",
+    "name": "Sort Idioms by Origin and Register",
+    "learningMode": "sorting",
+    "dataPath": "data/c2/c2-sorting-idioms.json",
+    "level": [
+      "c2"
+    ],
+    "category": "Idioms",
+    "prerequisites": [
+      "reading-idioms-c2"
+    ],
+    "description": "Sort advanced idioms into categories by their origin and register",
+    "estimatedTime": 3,
+    "difficulty": 5
+  },
+  {
     "id": "quiz-advanced-grammar-structures-c2",
     "name": "Advanced Grammar Structures Quiz",
     "learningMode": "quiz",
@@ -4775,7 +4983,7 @@
     ],
     "category": "Grammar",
     "prerequisites": [
-      "matching-literary-idioms-origins-c2"
+      "sorting-idioms-c2"
     ],
     "description": "Test your mastery of advanced syntactic structures: inversion, cleft sentences, subjunctive, mixed conditionals, and nominalization",
     "estimatedTime": 5,

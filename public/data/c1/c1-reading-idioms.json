@@ -1,0 +1,108 @@
+{
+  "title": "Idioms in Professional and Media English",
+  "estimatedReadingTime": 7,
+  "learningObjectives": [
+    "Recognize advanced idioms used in business and media contexts",
+    "Understand how idioms convey nuance in professional communication",
+    "Interpret idioms about decisions, challenges, and negotiations",
+    "Use advanced idioms appropriately in formal and semi-formal speech"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "title": "Idioms Beyond the Basics",
+      "type": "introduction",
+      "content": "At an advanced level, idioms are everywhere — in news articles, business meetings, and everyday professional conversation. Knowing them well isn't just about vocabulary; it's about understanding tone and nuance. For example, when a journalist writes that a scandal left <the writing on the wall> for a company, native readers immediately understand the situation is doomed, without a single literal word about failure."
+    },
+    {
+      "id": "business-idioms",
+      "title": "Idioms in Business and Negotiation",
+      "type": "theory",
+      "content": "Business English relies heavily on idiomatic expressions:\n\n• <Get down to business> - Start focusing on important matters\n• <Sit on the fence> - Avoid taking a clear position\n• <Pull strings> - Use personal influence to get an advantage\n• <A tough call> - A difficult decision\n• <A ballpark figure> - An approximate estimate\n• <Back to square one> - Starting over after a failed attempt\n\nThese phrases let speakers sound natural and precise at the same time."
+    },
+    {
+      "id": "challenges",
+      "title": "Idioms About Challenges and Resilience",
+      "type": "theory",
+      "content": "When companies or people face difficulty, English has vivid idioms to describe it:\n\n• <Weather the storm> - Survive a difficult period\n• <A slippery slope> - A course of action likely to lead to worse outcomes\n• <Fall through the cracks> - Be overlooked or forgotten\n• <Wear many hats> - Perform many different roles\n• <Under the radar> - Operating without being noticed\n\nThese idioms describe not just events, but attitudes toward adversity."
+    },
+    {
+      "id": "story",
+      "title": "A Story from the Business World",
+      "type": "theory",
+      "content": "When the startup's biggest client canceled their contract, the founders knew it was time to <get down to business>. Some board members wanted to <sit on the fence> and wait, but the CEO refused. She had already seen <the writing on the wall> months earlier, so the team wasn't caught completely off guard. Still, rebuilding the client list meant going <back to square one>. Everyone had to <wear many hats>, and by the end of the year, the company had managed to <weather the storm>.\n\nCan you find all five idioms in the story?"
+    },
+    {
+      "id": "decisions",
+      "title": "Idioms About Making Decisions",
+      "type": "theory",
+      "content": "Decision-making has its own set of idioms:\n\n• <A game changer> - Something that significantly alters a situation\n• <A level playing field> - A fair and equal situation for everyone\n• <Read the room> - Understand the mood of the people present\n• <Think on your feet> - Make quick decisions under pressure\n• <Raise the bar> - Set a higher standard\n\nExample: The new CEO's strategy was <a game changer> for the entire industry, forcing every competitor to <raise the bar>."
+    },
+    {
+      "id": "examples",
+      "title": "Idioms in Mini Dialogues",
+      "type": "examples",
+      "content": "Example 1: IN A MEETING - <A: Should we launch the product now or wait?\nB: Let's not sit on the fence — I say we go for it.>\n\nExample 2: AFTER A SETBACK - <A: The client backed out at the last minute.\nB: Well, we'll just have to go back to square one.>\n\nExample 3: GIVING FEEDBACK - <A: What did you think of her presentation?\nB: Honestly, she really knows how to read the room.>"
+    },
+    {
+      "id": "register",
+      "title": "Idioms and Register",
+      "type": "theory",
+      "content": "Not every idiom fits every situation. In formal writing (reports, academic essays), idioms are often replaced with more neutral language:\n\n• <Get to the bottom of> → investigate thoroughly\n• <A step in the right direction> → a positive development\n• <Think outside the box> → adopt an innovative approach\n\nIn spoken English and informal writing, however, idioms make speech sound natural and engaging. Advanced learners need to judge when an idiom is appropriate and when a more formal equivalent is expected."
+    },
+    {
+      "id": "summary",
+      "title": "Key Takeaways",
+      "type": "summary",
+      "content": "Remember:\n\n• Advanced idioms often appear in business, media, and professional speech\n• Idioms can replace long explanations with a single vivid phrase\n• Register matters — some idioms are too informal for academic writing\n• Understanding idioms helps you catch nuance and tone, not just literal meaning\n• Practice recognizing idioms in context rather than memorizing them in isolation"
+    }
+  ],
+  "keyVocabulary": [
+    {
+      "term": "get down to business",
+      "definition": "Start focusing on important matters",
+      "example": "After the small talk, they got down to business.",
+      "pronunciation": "/ɡɛt daʊn tə ˈbɪznɪs/"
+    },
+    {
+      "term": "a tough call",
+      "definition": "A difficult decision",
+      "example": "Choosing who to promote was a tough call.",
+      "pronunciation": "/ə tʌf kɔːl/"
+    },
+    {
+      "term": "weather the storm",
+      "definition": "Survive a difficult period",
+      "example": "The company managed to weather the storm.",
+      "pronunciation": "/ˈwɛðər ðə stɔːrm/"
+    },
+    {
+      "term": "a game changer",
+      "definition": "Something that significantly alters a situation",
+      "example": "The new app was a game changer for the industry.",
+      "pronunciation": "/ə ɡeɪm ˈtʃeɪndʒər/"
+    },
+    {
+      "term": "read the room",
+      "definition": "Understand the mood of the people present",
+      "example": "A good speaker knows how to read the room.",
+      "pronunciation": "/riːd ðə ruːm/"
+    },
+    {
+      "term": "back to square one",
+      "definition": "Starting over after a failed attempt",
+      "example": "The deal fell through, so we're back to square one.",
+      "pronunciation": "/bæk tə skwɛr wʌn/"
+    }
+  ],
+  "grammarPoints": [
+    {
+      "rule": "Idioms as Fixed Expressions",
+      "explanation": "Most idioms cannot be changed grammatically without losing their meaning — the words, tense, and structure stay fixed.",
+      "examples": ["The company weathered the storm. (not 'weathered a storm')"],
+      "commonMistakes": [
+        "Changing the preposition: 'on the fence' becomes meaningless as 'in the fence'"
+      ]
+    }
+  ]
+}

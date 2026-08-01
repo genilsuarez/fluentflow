@@ -1,0 +1,102 @@
+[
+  {
+    "sentence": "The new policy is a step in the right way.",
+    "correct": ["The new policy is a step in the right direction."],
+    "explanation": "El modismo correcto es <a step in the right direction>, no <right way>."
+  },
+  {
+    "sentence": "We shouldn't put all our eggs in one bag.",
+    "correct": ["We shouldn't put all our eggs in one basket."],
+    "explanation": "El modismo correcto es <put all your eggs in one basket>, no <one bag>."
+  },
+  {
+    "sentence": "She hit the nail on its head with her analysis.",
+    "correct": ["She hit the nail on the head with her analysis."],
+    "explanation": "El modismo correcto es <hit the nail on the head>, no <on its head>."
+  },
+  {
+    "sentence": "The company is in hot soup over the scandal.",
+    "correct": ["The company is in hot water over the scandal."],
+    "explanation": "El modismo correcto es <in hot water>, no <in hot soup>."
+  },
+  {
+    "sentence": "Let's not beat around the tree — tell me the truth.",
+    "correct": ["Let's not beat around the bush — tell me the truth."],
+    "explanation": "El modismo correcto es <beat around the bush>, no <around the tree>."
+  },
+  {
+    "sentence": "The new regulations opened a can of snakes.",
+    "correct": ["The new regulations opened a can of worms."],
+    "explanation": "El modismo correcto es <a can of worms>, no <a can of snakes>."
+  },
+  {
+    "sentence": "We need to keep our eye on the target during negotiations.",
+    "correct": ["We need to keep our eye on the ball during negotiations."],
+    "explanation": "El modismo correcto es <keep your eye on the ball>, no <on the target>."
+  },
+  {
+    "sentence": "The CEO pulled ropes to get the deal approved.",
+    "correct": ["The CEO pulled strings to get the deal approved."],
+    "explanation": "El modismo correcto es <pull strings>, no <pull ropes>."
+  },
+  {
+    "sentence": "We're barking up the wrong bush with this approach.",
+    "correct": ["We're barking up the wrong tree with this approach."],
+    "explanation": "El modismo correcto es <barking up the wrong tree>, no <wrong bush>."
+  },
+  {
+    "sentence": "The merger is still up in the sky.",
+    "correct": ["The merger is still up in the air."],
+    "explanation": "El modismo correcto es <up in the air>, no <up in the sky>."
+  },
+  {
+    "sentence": "She went above and further to complete the project.",
+    "correct": ["She went above and beyond to complete the project."],
+    "explanation": "El modismo correcto es <above and beyond>, no <above and further>."
+  },
+  {
+    "sentence": "The team needs to get their act combined before the deadline.",
+    "correct": ["The team needs to get their act together before the deadline."],
+    "explanation": "El modismo correcto es <get your act together>, no <act combined>."
+  },
+  {
+    "sentence": "The budget cuts are just the top of the iceberg.",
+    "correct": ["The budget cuts are just the tip of the iceberg."],
+    "explanation": "El modismo correcto es <the tip of the iceberg>, no <the top>."
+  },
+  {
+    "sentence": "We need to nip this problem in the flower.",
+    "correct": ["We need to nip this problem in the bud."],
+    "explanation": "El modismo correcto es <nip something in the bud>, no <in the flower>."
+  },
+  {
+    "sentence": "The new manager has turned the company back.",
+    "correct": ["The new manager has turned the company around."],
+    "explanation": "El modismo correcto es <turn a company around>, no <turn back>."
+  },
+  {
+    "sentence": "We're all in the same ship regarding the pay freeze.",
+    "correct": ["We're all in the same boat regarding the pay freeze."],
+    "explanation": "El modismo correcto es <in the same boat>, no <in the same ship>."
+  },
+  {
+    "sentence": "The proposal was shot up by the board.",
+    "correct": ["The proposal was shot down by the board."],
+    "explanation": "El modismo correcto es <shot down>, no <shot up>."
+  },
+  {
+    "sentence": "The project is back to circle one.",
+    "correct": ["The project is back to square one."],
+    "explanation": "El modismo correcto es <back to square one>, no <back to circle one>."
+  },
+  {
+    "sentence": "We need to think outside the square to solve this.",
+    "correct": ["We need to think outside the box to solve this."],
+    "explanation": "El modismo correcto es <think outside the box>, no <outside the square>."
+  },
+  {
+    "sentence": "The lawyer's objection only served to muddy the river.",
+    "correct": ["The lawyer's objection only served to muddy the waters."],
+    "explanation": "El modismo correcto es <muddy the waters>, no <muddy the river>."
+  }
+]

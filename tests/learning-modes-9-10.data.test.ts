@@ -224,8 +224,8 @@ describe('Feature: learning-modes-9-10, Property 9: Module distribution matches 
     const flashcardCount = registry.filter(m => m.learningMode === 'flashcard').length;
     const quizCount = registry.filter(m => m.learningMode === 'quiz').length;
 
-    expect(readingCount, 'reading').toBeLessThanOrEqual(36);
-    expect(completionCount, 'completion').toBeLessThanOrEqual(51);
+    expect(readingCount, 'reading').toBeLessThanOrEqual(38);
+    expect(completionCount, 'completion').toBeLessThanOrEqual(55);
     expect(flashcardCount, 'flashcard').toBeLessThanOrEqual(34);
     expect(quizCount, 'quiz').toBeLessThanOrEqual(46);
   });

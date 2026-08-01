@@ -1,0 +1,102 @@
+[
+  {
+    "sentence": "I need to ___ tonight because I have a big test tomorrow.",
+    "correct": "hit the books",
+    "explanation": "<Hit the books> significa estudiar mucho."
+  },
+  {
+    "sentence": "___! I hope your interview goes well.",
+    "correct": "Break a leg",
+    "explanation": "<Break a leg> se usa para desear buena suerte."
+  },
+  {
+    "sentence": "I'm feeling a little ___ today, so I think I'll stay home.",
+    "correct": "under the weather",
+    "explanation": "<Under the weather> significa sentirse enfermo."
+  },
+  {
+    "sentence": "The math homework was ___ — I finished it in ten minutes.",
+    "correct": "a piece of cake",
+    "explanation": "<A piece of cake> significa algo muy fácil."
+  },
+  {
+    "sentence": "It's midnight — I'm going to ___ now.",
+    "correct": "hit the sack",
+    "explanation": "<Hit the sack> significa irse a dormir."
+  },
+  {
+    "sentence": "That new phone must have ___ — it's so expensive!",
+    "correct": "cost an arm and a leg",
+    "explanation": "<Cost an arm and a leg> significa ser muy caro."
+  },
+  {
+    "sentence": "My little brother ___ about the surprise party.",
+    "correct": "let the cat out of the bag",
+    "explanation": "<Let the cat out of the bag> significa revelar un secreto sin querer."
+  },
+  {
+    "sentence": "We only see our cousins ___, maybe once a year.",
+    "correct": "once in a blue moon",
+    "explanation": "<Once in a blue moon> significa muy pocas veces."
+  },
+  {
+    "sentence": "I don't want to go to the dentist, but I'll ___ and make an appointment.",
+    "correct": "bite the bullet",
+    "explanation": "<Bite the bullet> significa enfrentar algo difícil con valentía."
+  },
+  {
+    "sentence": "It's 6 p.m. — let's ___ and go home.",
+    "correct": "call it a day",
+    "explanation": "<Call it a day> significa dejar de trabajar por hoy."
+  },
+  {
+    "sentence": "She was ___ after passing her driving test.",
+    "correct": "on cloud nine",
+    "explanation": "<On cloud nine> significa sentirse muy feliz."
+  },
+  {
+    "sentence": "Please don't ___ about my birthday plans — it's a secret!",
+    "correct": "spill the beans",
+    "explanation": "<Spill the beans> significa revelar información secreta."
+  },
+  {
+    "sentence": "Losing my keys was ___ — I was already having a terrible day.",
+    "correct": "the last straw",
+    "explanation": "<The last straw> es el último problema que colma la paciencia."
+  },
+  {
+    "sentence": "The party started to ___ when too many people arrived.",
+    "correct": "get out of hand",
+    "explanation": "<Get out of hand> significa volverse incontrolable."
+  },
+  {
+    "sentence": "Can you ___ my bag while I buy a ticket?",
+    "correct": "keep an eye on",
+    "explanation": "<Keep an eye on> significa vigilar algo con atención."
+  },
+  {
+    "sentence": "A funny joke is a great way to ___ at a party.",
+    "correct": "break the ice",
+    "explanation": "<Break the ice> significa iniciar una conversación en una situación social."
+  },
+  {
+    "sentence": "___! The exam will be over soon.",
+    "correct": "Hang in there",
+    "explanation": "<Hang in there> se usa para animar a alguien a seguir intentando."
+  },
+  {
+    "sentence": "Take an umbrella — ___ outside!",
+    "correct": "it's raining cats and dogs",
+    "explanation": "<It's raining cats and dogs> significa que llueve muy fuerte."
+  },
+  {
+    "sentence": "He arrived an hour late, but ___.",
+    "correct": "better late than never",
+    "explanation": "<Better late than never> significa que es mejor tarde que nunca."
+  },
+  {
+    "sentence": "Don't worry about the test — it will be ___!",
+    "correct": "a walk in the park",
+    "explanation": "<A walk in the park> significa algo muy fácil de hacer."
+  }
+]

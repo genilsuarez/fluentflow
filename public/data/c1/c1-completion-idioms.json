@@ -1,0 +1,102 @@
+[
+  {
+    "sentence": "Let's stop discussing details and ___.",
+    "correct": "get down to business",
+    "explanation": "<Get down to business> significa empezar a concentrarse en lo importante."
+  },
+  {
+    "sentence": "The politician decided to ___ rather than take a clear position.",
+    "correct": "sit on the fence",
+    "explanation": "<Sit on the fence> significa mantenerse neutral."
+  },
+  {
+    "sentence": "___ is that we need to cut costs by 15% this quarter.",
+    "correct": "The bottom line",
+    "explanation": "<The bottom line> significa el punto o resultado esencial."
+  },
+  {
+    "sentence": "He got the promotion because he knows how to ___ within the company.",
+    "correct": "pull strings",
+    "explanation": "<Pull strings> significa usar influencia personal."
+  },
+  {
+    "sentence": "Deciding who to lay off was ___ for the manager.",
+    "correct": "a tough call",
+    "explanation": "<A tough call> significa una decisión difícil."
+  },
+  {
+    "sentence": "Can you give me ___ of how much the renovation will cost?",
+    "correct": "a ballpark figure",
+    "explanation": "<A ballpark figure> significa una estimación aproximada."
+  },
+  {
+    "sentence": "The marketing campaign ___ and failed to attract new customers.",
+    "correct": "fell flat",
+    "explanation": "<Fall flat> significa no lograr el efecto deseado."
+  },
+  {
+    "sentence": "I'd take his promises with ___.",
+    "correct": "a grain of salt",
+    "explanation": "<Take something with a grain of salt> significa no creerlo del todo."
+  },
+  {
+    "sentence": "After the failed negotiation, they had to go ___ and rethink their strategy.",
+    "correct": "back to square one",
+    "explanation": "<Back to square one> significa volver al punto de partida."
+  },
+  {
+    "sentence": "The company managed to ___ despite the economic crisis.",
+    "correct": "weather the storm",
+    "explanation": "<Weather the storm> significa sobrevivir un período difícil."
+  },
+  {
+    "sentence": "The new CEO's strategy was ___ for the entire industry.",
+    "correct": "a game changer",
+    "explanation": "<A game changer> significa algo que altera radicalmente una situación."
+  },
+  {
+    "sentence": "It's time you ___ and started meeting deadlines.",
+    "correct": "got your act together",
+    "explanation": "<Get your act together> significa organizarse y comportarse de forma eficaz."
+  },
+  {
+    "sentence": "The new policy ensures ___ for all applicants.",
+    "correct": "a level playing field",
+    "explanation": "<A level playing field> significa una situación justa e igualitaria."
+  },
+  {
+    "sentence": "A good negotiator knows how to ___ before making an offer.",
+    "correct": "read the room",
+    "explanation": "<Read the room> significa entender el ambiente o estado de ánimo del grupo."
+  },
+  {
+    "sentence": "Cutting corners on safety inspections is ___.",
+    "correct": "a slippery slope",
+    "explanation": "<A slippery slope> describe una acción que puede llevar a consecuencias cada vez peores."
+  },
+  {
+    "sentence": "In a live interview, you have to ___ and answer unexpected questions.",
+    "correct": "think on your feet",
+    "explanation": "<Think on your feet> significa reaccionar rápido bajo presión."
+  },
+  {
+    "sentence": "After three profit warnings, ___ for the struggling company.",
+    "correct": "the writing was on the wall",
+    "explanation": "<The writing is on the wall> significa que hay señales claras de un mal desenlace."
+  },
+  {
+    "sentence": "The new manager wants to ___ and expects everyone to work harder.",
+    "correct": "raise the bar",
+    "explanation": "<Raise the bar> significa elevar el nivel exigido."
+  },
+  {
+    "sentence": "In a small startup, everyone has to ___ juggling several roles.",
+    "correct": "wear many hats",
+    "explanation": "<Wear many hats> significa desempeñar muchos roles distintos."
+  },
+  {
+    "sentence": "The small clinic operated ___ for years before anyone noticed its success.",
+    "correct": "under the radar",
+    "explanation": "<Under the radar> significa pasar desapercibido."
+  }
+]
