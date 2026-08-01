@@ -36,10 +36,14 @@ jobs:
           npm test            &  PID_TEST=$!
           npm run format:check & PID_FMT=$!
           npm run validate:breakpoints & PID_BP=$!
-          # Invariantes del conteo de progreso: cada caso corresponde a un bug
-          # que llegó a producción con totales o completados incorrectos.
+          # Pruebas de progreso: cada caso corresponde a un bug que llegó a
+          # producción con totales o completados incorrectos.
           # docs/progress-counting-system.md
-          node tests/progress-invariants.mjs & PID_PROG=$!
+          #
+          # Recorre tests/*.mjs en vez de nombrar el archivo: con la lista a mano
+          # cada prueba nueva queda fuera de CI en silencio (le pasó a DeskFlow,
+          # donde el gate local corría cuatro suites y CI solo una).
+          (shopt -s nullglob; rc=0; for t in tests/*.mjs; do echo "── $t"; node "$t" || rc=1; done; exit $rc) & PID_PROG=$!
 
           FAIL=0
           wait $PID_LINT   || { echo "❌ ESLint failed";      FAIL=1; }
