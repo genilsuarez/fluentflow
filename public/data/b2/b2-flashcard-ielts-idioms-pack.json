@@ -32,86 +32,6 @@
     "category": "Emotions"
   },
   {
-    "front": "A heavy heart",
-    "back": "Con el corazón encogido / Triste",
-    "ipa": "/ə ˈhevi hɑːrt/",
-    "example": "She's got <a heavy heart>.",
-    "example_es": "Tiene el corazón encogido.",
-    "category": "Emotions"
-  },
-  {
-    "front": "A bone to pick with someone",
-    "back": "Tener algo que reprochar a alguien",
-    "ipa": "/ə boʊn tuː pɪk wɪð ˈsʌmwʌn/",
-    "example": "He's got a <bone> to pick with you.",
-    "example_es": "Tiene <algo> que reprocharte.",
-    "category": "Emotions"
-  },
-  {
-    "front": "A lump in your throat",
-    "back": "Tener un nudo en la garganta (emocional)",
-    "ipa": "/ə lʌmp ɪn jɔːr θroʊt/",
-    "example": "She's got a <lump> in her throat.",
-    "example_es": "Tiene un <nudo> en la garganta.",
-    "category": "Emotions"
-  },
-  {
-    "front": "A green thumb",
-    "back": "Tener mano para las plantas",
-    "ipa": "/ə ɡriːn θʌm/",
-    "example": "She's got <a green thumb>.",
-    "example_es": "Tiene mano para las plantas.",
-    "category": "Emotions"
-  },
-  {
-    "front": "A sweet tooth",
-    "back": "Ser goloso",
-    "ipa": "/ə swiːt tuːθ/",
-    "example": "He's got <a sweet tooth>.",
-    "example_es": "Es goloso.",
-    "category": "Emotions"
-  },
-  {
-    "front": "A sharp tongue",
-    "back": "Tener la lengua afilada",
-    "ipa": "/ə ʃɑːrp tʌŋ/",
-    "example": "She's got <a sharp tongue>.",
-    "example_es": "Tiene la lengua afilada.",
-    "category": "Emotions"
-  },
-  {
-    "front": "A big head",
-    "back": "Ser engreído / Creído",
-    "ipa": "/ə bɪɡ hed/",
-    "example": "He's got <a big head>.",
-    "example_es": "Es engreído.",
-    "category": "Emotions"
-  },
-  {
-    "front": "Bite your tongue",
-    "back": "Morderse la lengua",
-    "ipa": "/baɪt jɔːr tʌŋ/",
-    "example": "I had to <bite> my tongue to avoid saying something rude.",
-    "example_es": "Tuve que morderme la <lengua> para no decir algo grosero.",
-    "category": "Emotions"
-  },
-  {
-    "front": "Bury your head in the sand",
-    "back": "Esconder la cabeza bajo tierra",
-    "ipa": "/ˈberi jɔːr hed ɪn ðə sænd/",
-    "example": "You can't just <bury your head in the sand> and hope the problem goes away.",
-    "example_es": "No puedes simplemente <esconder la cabeza bajo tierra> y esperar que el problema desaparezca.",
-    "category": "Emotions"
-  },
-  {
-    "front": "Carry a torch for someone",
-    "back": "Estar enamorado de alguien (en secreto)",
-    "ipa": "/ˈkæri ə tɔːrtʃ fɔːr ˈsʌmwʌn/",
-    "example": "He still carries a <torch> for his ex-girlfriend.",
-    "example_es": "Todavía está <enamorado> de su ex-novia.",
-    "category": "Emotions"
-  },
-  {
     "front": "Down in the dumps",
     "back": "Deprimido / Triste",
     "ipa": "/daʊn ɪn ðə dʌmps/",
@@ -128,67 +48,11 @@
     "category": "Emotions"
   },
   {
-    "front": "Have a chip on your shoulder",
-    "back": "Estar resentido / Guardar rencor",
-    "ipa": "/hæv ə tʃɪp ɒn jɔːr ˈʃoʊldər/",
-    "example": "He has a <chip> on his shoulder about not getting promoted.",
-    "example_es": "Está <resentido> por no haber sido ascendido.",
-    "category": "Emotions"
-  },
-  {
-    "front": "Have a cow",
-    "back": "Enfadarse mucho",
-    "ipa": "/hæv ə kaʊ/",
-    "example": "Don't <have a cow>, it's just a small scratch.",
-    "example_es": "No te enfades tanto, es solo un pequeño rasguño.",
-    "category": "Emotions"
-  },
-  {
-    "front": "Have a long face",
-    "back": "Tener cara larga / Estar triste",
-    "ipa": "/hæv ə lɒŋ feɪs/",
-    "example": "Why do you <have> such a long face?",
-    "example_es": "¿Por qué tienes esa <cara> larga?",
-    "category": "Emotions"
-  },
-  {
-    "front": "In a bad mood",
-    "back": "De mal humor",
-    "ipa": "/ɪn ə bæd muːd/",
-    "example": "He's been <in a bad mood> all day.",
-    "example_es": "Ha estado <de mal humor> todo el día.",
-    "category": "Emotions"
-  },
-  {
-    "front": "In high spirits",
-    "back": "De buen humor / Animado",
-    "ipa": "/ɪn haɪ ˈspɪrɪts/",
-    "example": "She's <in high spirits> today.",
-    "example_es": "Está de buen humor hoy.",
-    "category": "Emotions"
-  },
-  {
-    "front": "Keep a straight face",
-    "back": "Mantener la seriedad / No reírse",
-    "ipa": "/kiːp ə streɪt feɪs/",
-    "example": "It was hard to <keep a straight face> when he told that joke.",
-    "example_es": "Fue difícil mantener la seriedad cuando contó ese chiste.",
-    "category": "Emotions"
-  },
-  {
     "front": "Lose your temper",
     "back": "Perder los estribos / Enfadarse",
     "ipa": "/luːz jɔːr ˈtempər/",
     "example": "He lost his <temper> and started shouting.",
     "example_es": "Perdió los <estribos> y empezó a gritar.",
-    "category": "Emotions"
-  },
-  {
-    "front": "Make your blood boil",
-    "back": "Hacerte hervir la sangre",
-    "ipa": "/meɪk jɔːr blʌd bɔɪl/",
-    "example": "His arrogance really makes my <blood> boil.",
-    "example_es": "Su arrogancia realmente me hace <hervir> la sangre.",
     "category": "Emotions"
   },
   {
@@ -200,43 +64,11 @@
     "category": "Emotions"
   },
   {
-    "front": "Over the moon",
-    "back": "Loco de contento / Muy feliz",
-    "ipa": "/ˈoʊvər ðə muːn/",
-    "example": "She was <over the moon> when she got the job.",
-    "example_es": "Estaba loca de contento cuando consiguió el trabajo.",
-    "category": "Emotions"
-  },
-  {
     "front": "Pull yourself together",
     "back": "Serenarse / Calmarse",
     "ipa": "/pʊl jɔːrˈself təˈɡeðər/",
     "example": "Come on, <pull yourself together>!",
     "example_es": "¡Vamos, serénate!",
-    "category": "Emotions"
-  },
-  {
-    "front": "See red",
-    "back": "Ver todo rojo / Enfadarse mucho",
-    "ipa": "/siː red/",
-    "example": "When he insulted her, she just <saw> red.",
-    "example_es": "Cuando la insultó, ella simplemente vio <todo> rojo.",
-    "category": "Emotions"
-  },
-  {
-    "front": "Shake like a leaf",
-    "back": "Temblar como una hoja",
-    "ipa": "/ʃeɪk laɪk ə liːf/",
-    "example": "He was shaking <like> a leaf after the accident.",
-    "example_es": "Estaba temblando <como> una hoja después del accidente.",
-    "category": "Emotions"
-  },
-  {
-    "front": "Stab someone in the back",
-    "back": "Apuñalar por la espalda",
-    "ipa": "/stæb ˈsʌmwʌn ɪn ðə bæk/",
-    "example": "I can't believe he stabbed me in the <back> like that.",
-    "example_es": "No puedo creer que me apuñalara por la <espalda> de esa manera.",
     "category": "Emotions"
   },
   {
@@ -248,51 +80,11 @@
     "category": "Emotions"
   },
   {
-    "front": "Up in arms",
-    "back": "En pie de guerra / Indignado",
-    "ipa": "/ʌp ɪn ɑːrmz/",
-    "example": "The residents are <up in arms> about the new development.",
-    "example_es": "Los residentes están en pie de guerra por el nuevo desarrollo.",
-    "category": "Emotions"
-  },
-  {
     "front": "Wear your heart on your sleeve",
     "back": "Llevar el corazón en la mano",
     "ipa": "/weər jɔːr hɑːrt ɒn jɔːr sliːv/",
     "example": "She wears her <heart> on her sleeve, so you always know how she's feeling.",
     "example_es": "Ella lleva el <corazón> en la mano, así que siempre sabes cómo se siente.",
-    "category": "Emotions"
-  },
-  {
-    "front": "Be beside yourself",
-    "back": "Estar fuera de sí",
-    "ipa": "/biː bɪˈsaɪd jɔːrˈself/",
-    "example": "She was <beside> herself with grief.",
-    "example_es": "Estaba <fuera> de sí de dolor.",
-    "category": "Emotions"
-  },
-  {
-    "front": "Have a soft spot for",
-    "back": "Tener debilidad por",
-    "ipa": "/hæv ə sɒft spɒt fɔːr/",
-    "example": "I <have a soft spot for> old romantic movies.",
-    "example_es": "Tengo debilidad por las viejas películas románticas.",
-    "category": "Emotions"
-  },
-  {
-    "front": "Be in two minds",
-    "back": "Estar indeciso",
-    "ipa": "/biː ɪn tuː maɪndz/",
-    "example": "I'm in two <minds> about whether to go or not.",
-    "example_es": "Estoy <indeciso> sobre si ir o no.",
-    "category": "Emotions"
-  },
-  {
-    "front": "Have a whale of a time",
-    "back": "Pasárselo en grande",
-    "ipa": "/hæv ə weɪl ɒv ə taɪm/",
-    "example": "We had a <whale> of a time at the party.",
-    "example_es": "Nos lo pasamos en <grande> en la fiesta.",
     "category": "Emotions"
   },
   {
@@ -309,30 +101,6 @@
     "ipa": "/wɪð ˈflaɪɪŋ ˈkʌlərz/",
     "example": "He passed the exam <with flying colors>.",
     "example_es": "Aprobó el examen con gran éxito.",
-    "category": "Success"
-  },
-  {
-    "front": "Not rocket science",
-    "back": "No es ciencia espacial / No es tan difícil",
-    "ipa": "/nɒt ˈrɒkɪt ˈsaɪəns/",
-    "example": "It's <not rocket science>.",
-    "example_es": "No es ciencia espacial.",
-    "category": "Success"
-  },
-  {
-    "front": "Cut corners",
-    "back": "Tomar atajos / Recortar gastos",
-    "ipa": "/kʌt ˈkɔːrnərz/",
-    "example": "She <cut corners> to finish the project on time.",
-    "example_es": "Tomó atajos para terminar el proyecto a tiempo.",
-    "category": "Success"
-  },
-  {
-    "front": "Back to square one",
-    "back": "Volver a empezar de cero",
-    "ipa": "/bæk tuː skweər wʌn/",
-    "example": "He's <back to square one>.",
-    "example_es": "Está de vuelta en el punto de partida.",
     "category": "Success"
   },
   {
@@ -360,91 +128,11 @@
     "category": "Success"
   },
   {
-    "front": "Have your head in the game",
-    "back": "Estar concentrado / Atento",
-    "ipa": "/hæv jɔːr hed ɪn ðə ɡeɪm/",
-    "example": "He's got his <head> in the game.",
-    "example_es": "Está <concentrado>.",
-    "category": "Success"
-  },
-  {
-    "front": "Keep your eye on the ball",
-    "back": "Estar atento / No perder de vista el objetivo",
-    "ipa": "/kiːp jɔːr aɪ ɒn ðə bɔːl/",
-    "example": "She's got her eye on the <ball>.",
-    "example_es": "Está atenta.",
-    "category": "Success"
-  },
-  {
     "front": "Have your foot in the door",
     "back": "Poner un pie en (una empresa/oportunidad)",
     "ipa": "/hæv jɔːr fʊt ɪn ðə dɔːr/",
     "example": "He's got his <foot> in the door.",
     "example_es": "Ha puesto un pie en la empresa.",
-    "category": "Success"
-  },
-  {
-    "front": "Have your hands full",
-    "back": "Estar muy ocupado",
-    "ipa": "/hæv jɔːr hændz fʊl/",
-    "example": "She's got her <hands> full with work.",
-    "example_es": "Está muy ocupada con el trabajo.",
-    "category": "Success"
-  },
-  {
-    "front": "Have your back against the wall",
-    "back": "Estar contra la espada y la pared",
-    "ipa": "/hæv jɔːr bæk əˈɡenst ðə wɔːl/",
-    "example": "He's got his <back> against the wall.",
-    "example_es": "Está <contra> la espada y la pared.",
-    "category": "Success"
-  },
-  {
-    "front": "Be a big fish in a small pond",
-    "back": "Ser un pez gordo en un estanque pequeño",
-    "ipa": "/biː ə bɪɡ fɪʃ ɪn ə smɔːl pɒnd/",
-    "example": "He was a big <fish> in a small pond in his hometown.",
-    "example_es": "Era un pez <gordo> en un estanque pequeño en su ciudad natal.",
-    "category": "Success"
-  },
-  {
-    "front": "Be a flash in the pan",
-    "back": "Ser flor de un día",
-    "ipa": "/biː ə flæʃ ɪn ðə pæn/",
-    "example": "His success was just a <flash> in the pan.",
-    "example_es": "Su éxito fue solo <flor> de un día.",
-    "category": "Success"
-  },
-  {
-    "front": "Be a long shot",
-    "back": "Ser poco probable",
-    "ipa": "/biː ə lɒŋ ʃɒt/",
-    "example": "It's a <long> shot, but it might work.",
-    "example_es": "Es <poco> probable, pero podría funcionar.",
-    "category": "Success"
-  },
-  {
-    "front": "Be a mixed blessing",
-    "back": "Ser un arma de doble filo",
-    "ipa": "/biː ə mɪkst ˈblesɪŋ/",
-    "example": "Working from home is a <mixed> blessing.",
-    "example_es": "Trabajar desde casa es un <arma> de doble filo.",
-    "category": "Success"
-  },
-  {
-    "front": "Be a stepping stone",
-    "back": "Ser un trampolín",
-    "ipa": "/biː ə ˈstepɪŋ stoʊn/",
-    "example": "This job is a <stepping> stone to a better career.",
-    "example_es": "Este trabajo es un <trampolín> para una mejor carrera.",
-    "category": "Success"
-  },
-  {
-    "front": "Be on the verge of",
-    "back": "Estar a punto de",
-    "ipa": "/biː ɒn ðə vɜːrdʒ ɒv/",
-    "example": "She's on the <verge> of tears.",
-    "example_es": "Está a <punto> de llorar.",
     "category": "Success"
   },
   {
@@ -480,27 +168,11 @@
     "category": "Success"
   },
   {
-    "front": "Go places",
-    "back": "Llegar lejos / Tener éxito",
-    "ipa": "/ɡoʊ ˈpleɪsɪz/",
-    "example": "She's very talented; she'll <go places>.",
-    "example_es": "Es muy talentosa; llegará lejos.",
-    "category": "Success"
-  },
-  {
     "front": "Hit the ground running",
     "back": "Empezar con fuerza",
     "ipa": "/hɪt ðə ɡraʊnd ˈrʌnɪŋ/",
     "example": "He <hit the ground running> in his new job.",
     "example_es": "Empezó con fuerza en su nuevo trabajo.",
-    "category": "Success"
-  },
-  {
-    "front": "Make a go of it",
-    "back": "Tener éxito",
-    "ipa": "/meɪk ə ɡoʊ ɒv ɪt/",
-    "example": "They decided to <make> a go of their new business.",
-    "example_es": "Decidieron <tener éxito> con su nuevo negocio.",
     "category": "Success"
   },
   {
@@ -512,38 +184,6 @@
     "category": "Success"
   },
   {
-    "front": "Pull strings",
-    "back": "Mover hilos",
-    "ipa": "/pʊl strɪŋz/",
-    "example": "He had to <pull> some strings to get that job.",
-    "example_es": "Tuvo que <mover> algunos hilos para conseguir ese trabajo.",
-    "category": "Success"
-  },
-  {
-    "front": "Rest on your laurels",
-    "back": "Dormirse en los laureles",
-    "ipa": "/rest ɒn jɔːr ˈlɔːrəlz/",
-    "example": "You can't <rest on your laurels>; you need to keep working.",
-    "example_es": "No puedes dormirte en los laureles; necesitas seguir trabajando.",
-    "category": "Success"
-  },
-  {
-    "front": "Shoot for the stars",
-    "back": "Apuntar alto",
-    "ipa": "/ʃuːt fɔːr ðə stɑːrz/",
-    "example": "Always <shoot for the stars>, even if you miss.",
-    "example_es": "Siempre apunta alto, incluso si fallas.",
-    "category": "Success"
-  },
-  {
-    "front": "Stand on your own two feet",
-    "back": "Valerse por sí mismo",
-    "ipa": "/stænd ɒn jɔːr oʊn tuː fiːt/",
-    "example": "It's time for him to <stand> on his own two feet.",
-    "example_es": "Es hora de que se valga por sí <mismo>.",
-    "category": "Success"
-  },
-  {
     "front": "The sky's the limit",
     "back": "El cielo es el límite",
     "ipa": "/ðə skaɪz ðə ˈlɪmɪt/",
@@ -552,163 +192,11 @@
     "category": "Success"
   },
   {
-    "front": "Up and running",
-    "back": "En funcionamiento",
-    "ipa": "/ʌp ænd ˈrʌnɪŋ/",
-    "example": "The new system is finally <up and running>.",
-    "example_es": "El nuevo sistema finalmente está <en funcionamiento>.",
-    "category": "Success"
-  },
-  {
-    "front": "Win-win situation",
-    "back": "Situación en la que todos ganan",
-    "ipa": "/wɪn wɪn ˌsɪtʃuˈeɪʃn/",
-    "example": "It's a <win-win situation> for everyone involved.",
-    "example_es": "Es una <situación en la que todos ganan>.",
-    "category": "Success"
-  },
-  {
-    "front": "Zero in on",
-    "back": "Centrarse en",
-    "ipa": "/ˈzɪəroʊ ɪn ɒn/",
-    "example": "We need to <zero in on> the main problem.",
-    "example_es": "Necesitamos centrarnos en el problema principal.",
-    "category": "Success"
-  },
-  {
-    "front": "Be a cut above",
-    "back": "Ser superior a",
-    "ipa": "/biː ə kʌt əˈbʌv/",
-    "example": "Her performance was a cut <above> the rest.",
-    "example_es": "Su actuación fue <superior> a la del resto.",
-    "category": "Success"
-  },
-  {
-    "front": "Be on the same page",
-    "back": "Estar de acuerdo",
-    "ipa": "/bi ɒn ðə seɪm peɪdʒ/",
-    "example": "We need to <be on the same page> before we proceed.",
-    "example_es": "Necesitamos <estar de acuerdo> antes de continuar.",
-    "category": "Success"
-  },
-  {
-    "front": "Time flies when you're having fun",
-    "back": "El tiempo vuela cuando te diviertes",
-    "ipa": "/taɪm flaɪz wɛn jʊər ˈhævɪŋ fʌn/",
-    "example": "<Time flies when you're having fun>.",
-    "example_es": "<El tiempo vuela cuando te diviertes>.",
-    "category": "Time"
-  },
-  {
-    "front": "A stitch in time saves nine",
-    "back": "Más vale prevenir que curar",
-    "ipa": "/ə stɪtʃ ɪn taɪm seɪvz naɪn/",
-    "example": "<A stitch in time saves nine>.",
-    "example_es": "<Más vale prevenir que curar>.",
-    "category": "Time"
-  },
-  {
-    "front": "The sands of time are running out",
-    "back": "El tiempo se acaba",
-    "ipa": "/ðə sændz ɒv taɪm ɑːr ˈrʌnɪŋ aʊt/",
-    "example": "<The sands of time are running out>.",
-    "example_es": "<El tiempo se acaba>.",
-    "category": "Time"
-  },
-  {
-    "front": "Ahead of its time",
-    "back": "Avanzado a su tiempo",
-    "ipa": "/əˈhed ɒv ɪts taɪm/",
-    "example": "<Ahead of its time>.",
-    "example_es": "<Avanzado a su tiempo>.",
-    "category": "Time"
-  },
-  {
-    "front": "The big day",
-    "back": "El gran día",
-    "ipa": "/ðə bɪɡ deɪ/",
-    "example": "After months of planning, <the big day> finally arrived and everything went perfectly.",
-    "example_es": "<El gran día>.",
-    "category": "Time"
-  },
-  {
-    "front": "A moment in time",
-    "back": "Un momento en el tiempo",
-    "ipa": "/ə ˈmoʊmənt ɪn taɪm/",
-    "example": "It was just <a moment in time>.",
-    "example_es": "Fue solo <un momento en el tiempo>.",
-    "category": "Time"
-  },
-  {
-    "front": "Beat the clock",
-    "back": "Ganar al reloj",
-    "ipa": "/biːt ðə klɒk/",
-    "example": "We managed to <beat the clock> and finish on time.",
-    "example_es": "Logramos <ganar al reloj> y terminar a tiempo.",
-    "category": "Time"
-  },
-  {
-    "front": "Big time",
-    "back": "A lo grande / Mucho",
-    "ipa": "/bɪɡ taɪm/",
-    "example": "He failed <big time>.",
-    "example_es": "Fracasó a lo grande.",
-    "category": "Time"
-  },
-  {
-    "front": "Out of time",
-    "back": "Sin tiempo",
-    "ipa": "/aʊt ɒv taɪm/",
-    "example": "We are <out of time>, so we need to finish.",
-    "example_es": "Estamos <sin tiempo>, así que necesitamos terminar.",
-    "category": "Time"
-  },
-  {
-    "front": "Pass the time",
-    "back": "Pasar el tiempo",
-    "ipa": "/pɑːs ðə taɪm/",
-    "example": "We played cards to <pass the time>.",
-    "example_es": "Jugamos a las cartas para <pasar el tiempo>.",
-    "category": "Time"
-  },
-  {
-    "front": "Save time",
-    "back": "Ahorrar tiempo",
-    "ipa": "/seɪv taɪm/",
-    "example": "Taking the shortcut will <save> us time.",
-    "example_es": "Tomar el atajo nos <ahorrar>á tiempo.",
-    "category": "Time"
-  },
-  {
-    "front": "Once in a lifetime",
-    "back": "Una vez en la vida",
-    "ipa": "/wʌns ɪn ə ˈlaɪftaɪm/",
-    "example": "This is a <once in a lifetime> opportunity.",
-    "example_es": "Esta es una oportunidad única en la vida.",
-    "category": "Time"
-  },
-  {
     "front": "A bird in the hand is worth two in the bush",
     "back": "Más vale pájaro en mano que ciento volando",
     "ipa": "/ə bɜːrd ɪn ðə hænd ɪz wɜːrθ tuː ɪn ðə bʊʃ/",
     "example": "<A bird in the hand is worth two in the bush>.",
     "example_es": "<Más vale pájaro en mano que ciento volando>.",
-    "category": "Nature"
-  },
-  {
-    "front": "The elephant in the room",
-    "back": "El elefante en la habitación (problema obvio)",
-    "ipa": "/ði ˈelɪfənt ɪn ðə ruːm/",
-    "example": "<The elephant in the room>.",
-    "example_es": "El elefante en la habitación.",
-    "category": "Nature"
-  },
-  {
-    "front": "A fish out of water",
-    "back": "Como pez fuera del agua",
-    "ipa": "/ə fɪʃ aʊt ɒv ˈwɔːtər/",
-    "example": "<A fish out of water>.",
-    "example_es": "<Como pez fuera del agua>.",
     "category": "Nature"
   },
   {
@@ -744,27 +232,11 @@
     "category": "Nature"
   },
   {
-    "front": "To take the bull by the horns",
-    "back": "Tomar el toro por los cuernos",
-    "ipa": "/tuː teɪk ðə bʊl baɪ ðə hɔːrnz/",
-    "example": "<To take the bull by the horns>.",
-    "example_es": "<Tomar el toro por los cuernos>.",
-    "category": "Nature"
-  },
-  {
     "front": "To smell a rat",
     "back": "Sospechar / Oler a chamusquina",
     "ipa": "/tuː smel ə ræt/",
     "example": "<To smell a rat>.",
     "example_es": "Sospechar.",
-    "category": "Nature"
-  },
-  {
-    "front": "To have a frog in your throat",
-    "back": "Tener un nudo en la garganta (al hablar)",
-    "ipa": "/tuː hæv ə frɒɡ ɪn jɔːr θroʊt/",
-    "example": "<To have a frog in your throat>.",
-    "example_es": "Tener un nudo en la garganta.",
     "category": "Nature"
   },
   {
@@ -784,35 +256,11 @@
     "category": "Nature"
   },
   {
-    "front": "To be a dark horse",
-    "back": "Ser un tapado / Sorpresa",
-    "ipa": "/tuː bi ə dɑːrk hɔːrs/",
-    "example": "<To be a dark horse>.",
-    "example_es": "Ser un tapado.",
-    "category": "Nature"
-  },
-  {
     "front": "To be a night owl",
     "back": "Ser un ave nocturna",
     "ipa": "/tuː bi ə naɪt aʊl/",
     "example": "<To be a night owl>.",
     "example_es": "Ser una ave nocturna.",
-    "category": "Nature"
-  },
-  {
-    "front": "To be a morning lark",
-    "back": "Ser una persona madrugadora",
-    "ipa": "/tuː bi ə ˈmɔːrnɪŋ lɑːrk/",
-    "example": "<To be a morning lark>.",
-    "example_es": "<Ser una persona madrugadora>.",
-    "category": "Nature"
-  },
-  {
-    "front": "To be a social butterfly",
-    "back": "Ser una mariposa social",
-    "ipa": "/tuː bi ə ˈsoʊʃl ˈbʌtərflaɪ/",
-    "example": "<To be a social butterfly>.",
-    "example_es": "<Ser una mariposa social>.",
     "category": "Nature"
   },
   {
@@ -832,14 +280,6 @@
     "category": "Nature"
   },
   {
-    "front": "Barking up the wrong tree",
-    "back": "Ladrar al árbol equivocado",
-    "ipa": "/ˈbɑːrkɪŋ ʌp ðə rɒŋ triː/",
-    "example": "You're <barking up the wrong tree> if you think I did it.",
-    "example_es": "Estás ladrando al árbol equivocado si crees que lo hice yo.",
-    "category": "Nature"
-  },
-  {
     "front": "Birds of a feather flock together",
     "back": "Dios los cría y ellos se juntan",
     "ipa": "/bɜːrdz ɒv ə ˈfeðər flɒk təˈɡeðər/",
@@ -848,131 +288,35 @@
     "category": "Nature"
   },
   {
-    "front": "Cry wolf",
-    "back": "Dar una falsa alarma",
-    "ipa": "/kraɪ wʊlf/",
-    "example": "He cried <wolf> so many times that no one believed him.",
-    "example_es": "Dio tantas falsas alarmas que nadie le creyó.",
-    "category": "Nature"
+    "front": "Time flies when you're having fun",
+    "back": "El tiempo vuela cuando te diviertes",
+    "ipa": "/taɪm flaɪz wɛn jʊər ˈhævɪŋ fʌn/",
+    "example": "<Time flies when you're having fun>.",
+    "example_es": "<El tiempo vuela cuando te diviertes>.",
+    "category": "Time"
   },
   {
-    "front": "Dark horse",
-    "back": "Caballo oscuro / Sorpresa",
-    "ipa": "/dɑːrk hɔːrs/",
-    "example": "She's a <dark horse>, no one expected her to win.",
-    "example_es": "Es una caballo oscuro, nadie esperaba que ganara.",
-    "category": "Nature"
+    "front": "A stitch in time saves nine",
+    "back": "Más vale prevenir que curar",
+    "ipa": "/ə stɪtʃ ɪn taɪm seɪvz naɪn/",
+    "example": "<A stitch in time saves nine>.",
+    "example_es": "<Más vale prevenir que curar>.",
+    "category": "Time"
   },
   {
-    "front": "Eager beaver",
-    "back": "Persona muy trabajadora / Entusiasta",
-    "ipa": "/ˈiːɡər ˈbiːvər/",
-    "example": "He's an <eager beaver>, always the first to volunteer.",
-    "example_es": "Es una persona muy trabajadora, siempre el primero en ofrecerse.",
-    "category": "Nature"
+    "front": "Ahead of its time",
+    "back": "Avanzado a su tiempo",
+    "ipa": "/əˈhed ɒv ɪts taɪm/",
+    "example": "<Ahead of its time>.",
+    "example_es": "<Avanzado a su tiempo>.",
+    "category": "Time"
   },
   {
-    "front": "Get your ducks in a row",
-    "back": "Poner tus patos en fila / Organizarse",
-    "ipa": "/ɡet jɔːr dʌks ɪn ə roʊ/",
-    "example": "Before you start the project, you need to <get your ducks in a row>.",
-    "example_es": "Antes de empezar el proyecto, necesitas organizarte.",
-    "category": "Nature"
-  },
-  {
-    "front": "Go to the dogs",
-    "back": "Irse a pique / Deteriorarse",
-    "ipa": "/ɡoʊ tuː ðə dɒɡz/",
-    "example": "The neighborhood has gone to the <dogs>.",
-    "example_es": "El barrio se ha ido a <pique>.",
-    "category": "Nature"
-  },
-  {
-    "front": "Hold your horses",
-    "back": "Espera un momento / Cálmate",
-    "ipa": "/hoʊld jɔːr ˈhɔːrsɪz/",
-    "example": "<Hold your horses>, I'm not ready yet.",
-    "example_es": "Espera un momento, todavía no estoy listo.",
-    "category": "Nature"
-  },
-  {
-    "front": "Let sleeping dogs lie",
-    "back": "No remover el pasado / Dejar las cosas como están",
-    "ipa": "/let ˈsliːpɪŋ dɒɡz laɪ/",
-    "example": "It's better to <let sleeping dogs lie> and not bring up the past.",
-    "example_es": "Es mejor no remover el pasado y dejar las cosas como están.",
-    "category": "Nature"
-  },
-  {
-    "front": "Like a fish out of water",
-    "back": "Como pez fuera del agua",
-    "ipa": "/laɪk ə fɪʃ aʊt ɒv ˈwɔːtər/",
-    "example": "I felt <like a fish out of water> at the party.",
-    "example_es": "Me sentí <como pez fuera del agua> en la fiesta.",
-    "category": "Nature"
-  },
-  {
-    "front": "Open a can of worms",
-    "back": "Abrir la caja de Pandora",
-    "ipa": "/ˈoʊpən ə kæn ɒv wɜːrmz/",
-    "example": "If you bring that up, you'll <open> a whole can of worms.",
-    "example_es": "Si sacas ese tema, <abrir>ás la caja de Pandora.",
-    "category": "Nature"
-  },
-  {
-    "front": "Raining cats and dogs",
-    "back": "Llover a cántaros",
-    "ipa": "/ˈreɪnɪŋ kæts ænd dɒɡz/",
-    "example": "It's <raining cats and dogs>, so I can't go out.",
-    "example_es": "Está lloviendo a cántaros, así que no puedo salir.",
-    "category": "Nature"
-  },
-  {
-    "front": "Straight from the horse's mouth",
-    "back": "De primera mano / De fuente fiable",
-    "ipa": "/streɪt frɒm ðə ˈhɔːrsɪz maʊθ/",
-    "example": "I heard it <straight from the horse's mouth>.",
-    "example_es": "Lo escuché de primera mano.",
-    "category": "Nature"
-  },
-  {
-    "front": "Take the bull by the horns",
-    "back": "Tomar el toro por los cuernos",
-    "ipa": "/teɪk ðə bʊl baɪ ðə hɔːrnz/",
-    "example": "You need to <take the bull by the horns> and deal with the problem.",
-    "example_es": "Necesitas <tomar el toro por los cuernos> y lidiar con el problema.",
-    "category": "Nature"
-  },
-  {
-    "front": "Wild goose chase",
-    "back": "Búsqueda inútil",
-    "ipa": "/waɪld ɡuːs tʃeɪs/",
-    "example": "We went on a <wild goose chase> looking for that rare book.",
-    "example_es": "Fuimos en una <búsqueda inútil> buscando ese libro raro.",
-    "category": "Nature"
-  },
-  {
-    "front": "Wolf in sheep's clothing",
-    "back": "Lobo con piel de cordero",
-    "ipa": "/wʊlf ɪn ʃiːps ˈkloʊðɪŋ/",
-    "example": "Be careful, he's a <wolf in sheep's clothing>.",
-    "example_es": "Ten cuidado, es un <lobo con piel de cordero>.",
-    "category": "Nature"
-  },
-  {
-    "front": "To be a busy bee",
-    "back": "Ser una persona muy ocupada",
-    "ipa": "/tuː bi ə ˈbɪzi biː/",
-    "example": "<To be a busy bee>.",
-    "example_es": "<Ser una persona muy ocupada>.",
-    "category": "Nature"
-  },
-  {
-    "front": "The world is your oyster",
-    "back": "El mundo es tuyo",
-    "ipa": "/ðə wɜːrld ɪz jɔːr ˈɔɪstər/",
-    "example": "With your skills, <the world is your oyster>.",
-    "example_es": "Con tus habilidades, <el mundo es tuyo>.",
-    "category": "Nature"
+    "front": "Once in a lifetime",
+    "back": "Una vez en la vida",
+    "ipa": "/wʌns ɪn ə ˈlaɪftaɪm/",
+    "example": "This is a <once in a lifetime> opportunity.",
+    "example_es": "Esta es una oportunidad única en la vida.",
+    "category": "Time"
   }
 ]
