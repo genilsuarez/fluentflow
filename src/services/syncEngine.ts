@@ -33,7 +33,7 @@ import {
   rebuildUserScoresFromHistory,
 } from './progressMerge';
 import { beginStatsDeferral, markStatsDisplayReady } from '../utils/statsBootstrap';
-import { filterToKnownModules } from '../utils/catalogIds';
+import { filterToKnownModules, readKnownModuleIds } from '../utils/catalogIds';
 
 const PASS_SCORE_PCT = 70;
 const VISIBILITY_REFRESH_MIN_MS = 12_000;
@@ -63,7 +63,14 @@ function mapCompletedModules(
 }
 
 function mapProgressHistory(entries: ProgressEntry[]): ActivityEventInput[] {
-  return entries.map(entry => {
+  // Solo eventos de módulos del catálogo vigente. activity_events es
+  // append-only en Supabase (migración 003), así que una fila huérfana subida
+  // desde acá solo se puede quitar con una migración server-side. Ver catalogIds.ts.
+  const knownIds = readKnownModuleIds();
+  const inCatalog = knownIds
+    ? entries.filter(entry => !entry.moduleId || knownIds.has(entry.moduleId))
+    : entries;
+  return inCatalog.map(entry => {
     const scorePct =
       entry.totalQuestions > 0
         ? Math.round((entry.correctAnswers / entry.totalQuestions) * 100)
