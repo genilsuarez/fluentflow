@@ -2,37 +2,13 @@
   {
     "id": "reord-id-b1-001",
     "sentence": "She decided to go the extra mile to impress her boss",
-    "words": [
-      "She",
-      "decided",
-      "to",
-      "go",
-      "the",
-      "extra",
-      "mile",
-      "to",
-      "impress",
-      "her",
-      "boss"
-    ],
+    "words": ["She", "decided", "to", "go", "the", "extra", "mile", "to", "impress", "her", "boss"],
     "explanation": "'Go the extra mile' significa hacer más esfuerzo del esperado. 'Decided to' + forma base."
   },
   {
     "id": "reord-id-b1-002",
     "sentence": "He has been sitting on the fence about the job offer",
-    "words": [
-      "He",
-      "has",
-      "been",
-      "sitting",
-      "on",
-      "the",
-      "fence",
-      "about",
-      "the",
-      "job",
-      "offer"
-    ],
+    "words": ["He", "has", "been", "sitting", "on", "the", "fence", "about", "the", "job", "offer"],
     "hint": "Present perfect continuous: has been + -ing",
     "explanation": "'Sit on the fence' significa evitar tomar una decisión. Presente perfecto continuo para una indecisión que persiste."
   },
@@ -59,17 +35,7 @@
   {
     "id": "reord-id-b1-004",
     "sentence": "The manager told us to think outside the box",
-    "words": [
-      "The",
-      "manager",
-      "told",
-      "us",
-      "to",
-      "think",
-      "outside",
-      "the",
-      "box"
-    ],
+    "words": ["The", "manager", "told", "us", "to", "think", "outside", "the", "box"],
     "explanation": "'Think outside the box' significa pensar de forma creativa. 'Told us to' + forma base."
   },
   {
@@ -113,19 +79,7 @@
   {
     "id": "reord-id-b1-007",
     "sentence": "I would not touch that topic with a ten foot pole",
-    "words": [
-      "I",
-      "would",
-      "not",
-      "touch",
-      "that",
-      "topic",
-      "with",
-      "a",
-      "ten",
-      "foot",
-      "pole"
-    ],
+    "words": ["I", "would", "not", "touch", "that", "topic", "with", "a", "ten", "foot", "pole"],
     "hint": "Would not + base form for hypothetical refusal",
     "explanation": "'Touch with a ten foot pole' significa evitar por completo. 'Would not' para situaciones hipotéticas."
   },
@@ -146,25 +100,13 @@
       "surprise",
       "party"
     ],
-    "distractors": [
-      "letted"
-    ],
+    "distractors": ["letted"],
     "explanation": "'Let the cat out of the bag' significa revelar un secreto. El pasado de 'let' es 'let' (irregular)."
   },
   {
     "id": "reord-id-b1-009",
     "sentence": "The new employee is learning the ropes very quickly",
-    "words": [
-      "The",
-      "new",
-      "employee",
-      "is",
-      "learning",
-      "the",
-      "ropes",
-      "very",
-      "quickly"
-    ],
+    "words": ["The", "new", "employee", "is", "learning", "the", "ropes", "very", "quickly"],
     "hint": "Present continuous: is + -ing",
     "explanation": "'Learn the ropes' significa aprender cómo funcionan las cosas. Presente continuo para una acción actual."
   },
@@ -190,93 +132,71 @@
   {
     "id": "reord-id-b1-011",
     "sentence": "After the failure we went back to the drawing board",
-    "words": [
-      "After",
-      "the",
-      "failure",
-      "we",
-      "went",
-      "back",
-      "to",
-      "the",
-      "drawing",
-      "board"
-    ],
+    "words": ["After", "the", "failure", "we", "went", "back", "to", "the", "drawing", "board"],
     "hint": "Time expression + subject + verb + idiom",
     "explanation": "'Back to the drawing board' significa volver a planificar algo desde el principio después de un fracaso."
   },
   {
     "id": "reord-id-b1-012",
     "sentence": "I cannot remember the number off the top of my head",
-    "words": [
-      "I",
-      "cannot",
-      "remember",
-      "the",
-      "number",
-      "off",
-      "the",
-      "top",
-      "of",
-      "my",
-      "head"
-    ],
+    "words": ["I", "cannot", "remember", "the", "number", "off", "the", "top", "of", "my", "head"],
     "hint": "Subject + modal + verb + object + idiom",
     "explanation": "'Off the top of my head' significa decir algo de memoria sin verificar los datos."
   },
   {
     "id": "reord-id-b1-013",
     "sentence": "These complaints are just the tip of the iceberg",
-    "words": [
-      "These",
-      "complaints",
-      "are",
-      "just",
-      "the",
-      "tip",
-      "of",
-      "the",
-      "iceberg"
-    ],
+    "words": ["These", "complaints", "are", "just", "the", "tip", "of", "the", "iceberg"],
     "hint": "Subject + verb + idiom",
     "explanation": "'The tip of the iceberg' significa una parte pequeña y visible de un problema mucho mayor."
   },
   {
     "id": "reord-id-b1-014",
     "sentence": "It took a while but I finally got the hang of it",
-    "words": [
-      "It",
-      "took",
-      "a",
-      "while",
-      "but",
-      "I",
-      "finally",
-      "got",
-      "the",
-      "hang",
-      "of",
-      "it"
-    ],
+    "words": ["It", "took", "a", "while", "but", "I", "finally", "got", "the", "hang", "of", "it"],
     "hint": "Clause + but + subject + verb + idiom",
     "explanation": "'Get the hang of it' significa aprender a hacer algo."
   },
   {
     "id": "reord-id-b1-015",
     "sentence": "To make a long story short we missed the flight",
-    "words": [
-      "To",
-      "make",
-      "a",
-      "long",
-      "story",
-      "short",
-      "we",
-      "missed",
-      "the",
-      "flight"
-    ],
+    "words": ["To", "make", "a", "long", "story", "short", "we", "missed", "the", "flight"],
     "hint": "Idiom + subject + verb",
     "explanation": "'To make a long story short' se usa para resumir algo rápidamente."
+  },
+  {
+    "id": "reord-id-b1-016",
+    "sentence": "The detectives left no stone unturned during the search",
+    "words": ["The", "detectives", "left", "no", "stone", "unturned", "during", "the", "search"],
+    "hint": "Subject + past simple + idiom + time expression",
+    "explanation": "'Leave no stone unturned' significa investigar exhaustivamente."
+  },
+  {
+    "id": "reord-id-b1-017",
+    "sentence": "Do not jump to conclusions before hearing the facts",
+    "words": ["Do", "not", "jump", "to", "conclusions", "before", "hearing", "the", "facts"],
+    "hint": "Negative imperative + before + gerund",
+    "explanation": "'Jump to conclusions' significa sacar conclusiones precipitadas."
+  },
+  {
+    "id": "reord-id-b1-018",
+    "sentence": "It is hard to make ends meet on a small salary",
+    "words": ["It", "is", "hard", "to", "make", "ends", "meet", "on", "a", "small", "salary"],
+    "hint": "It is + adjective + infinitive + idiom",
+    "explanation": "'Make ends meet' significa lograr cubrir los gastos básicos."
+  },
+  {
+    "id": "reord-id-b1-019",
+    "sentence": "Eventually he had to face the music for his mistake",
+    "words": ["Eventually", "he", "had", "to", "face", "the", "music", "for", "his", "mistake"],
+    "hint": "Time adverb + subject + had to + idiom",
+    "explanation": "'Face the music' significa afrontar las consecuencias de tus actos."
+  },
+  {
+    "id": "reord-id-b1-020",
+    "sentence": "I think you got the wrong end of the stick",
+    "words": ["I", "think", "you", "got", "the", "wrong", "end", "of", "the", "stick"],
+    "hint": "Subject + think + clause + idiom",
+    "explanation": "'Get the wrong end of the stick' significa malinterpretar algo por completo."
   }
 ]

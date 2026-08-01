@@ -213,17 +213,7 @@
   {
     "id": "reord-id-c1-011",
     "sentence": "The new legislation cuts both ways for small businesses",
-    "words": [
-      "The",
-      "new",
-      "legislation",
-      "cuts",
-      "both",
-      "ways",
-      "for",
-      "small",
-      "businesses"
-    ],
+    "words": ["The", "new", "legislation", "cuts", "both", "ways", "for", "small", "businesses"],
     "hint": "Subject + verb + idiom + prepositional phrase",
     "explanation": "'Cut both ways' significa tener efectos tanto positivos como negativos."
   },
@@ -267,17 +257,7 @@
   {
     "id": "reord-id-c1-014",
     "sentence": "The lawyer's objection only served to muddy the waters",
-    "words": [
-      "The",
-      "lawyer's",
-      "objection",
-      "only",
-      "served",
-      "to",
-      "muddy",
-      "the",
-      "waters"
-    ],
+    "words": ["The", "lawyer's", "objection", "only", "served", "to", "muddy", "the", "waters"],
     "hint": "Subject + verb + infinitive + idiom",
     "explanation": "'Muddy the waters' significa hacer que una situación sea más confusa o poco clara."
   },
@@ -299,5 +279,87 @@
     ],
     "hint": "Subject + modal + idiom + prepositional phrase",
     "explanation": "'Tip the scales' significa ser el factor decisivo en una situación."
+  },
+  {
+    "id": "reord-id-c1-016",
+    "sentence": "Rarely do such important cases fall through the cracks",
+    "words": ["Rarely", "do", "such", "important", "cases", "fall", "through", "the", "cracks"],
+    "hint": "Inversion after 'Rarely': Rarely + auxiliary + subject",
+    "explanation": "'Fall through the cracks' significa pasar desapercibido o ser olvidado. 'Rarely' provoca inversión."
+  },
+  {
+    "id": "reord-id-c1-017",
+    "sentence": "It took months for her to come to grips with the diagnosis",
+    "words": [
+      "It",
+      "took",
+      "months",
+      "for",
+      "her",
+      "to",
+      "come",
+      "to",
+      "grips",
+      "with",
+      "the",
+      "diagnosis"
+    ],
+    "hint": "It took + time + for + object + infinitive + idiom",
+    "explanation": "'Come to grips with' significa empezar a aceptar y afrontar algo difícil."
+  },
+  {
+    "id": "reord-id-c1-018",
+    "sentence": "Had management not drawn the line costs would have spiralled",
+    "words": [
+      "Had",
+      "management",
+      "not",
+      "drawn",
+      "the",
+      "line",
+      "costs",
+      "would",
+      "have",
+      "spiralled"
+    ],
+    "hint": "Inverted third conditional: Had + subject + not + past participle",
+    "explanation": "'Draw the line' significa poner un límite. Condicional invertida para un pasado hipotético."
+  },
+  {
+    "id": "reord-id-c1-019",
+    "sentence": "By and large the merger proved beneficial for both companies",
+    "words": [
+      "By",
+      "and",
+      "large",
+      "the",
+      "merger",
+      "proved",
+      "beneficial",
+      "for",
+      "both",
+      "companies"
+    ],
+    "hint": "Idiom + subject + verb + complement",
+    "explanation": "'By and large' significa en términos generales."
+  },
+  {
+    "id": "reord-id-c1-020",
+    "sentence": "Criticizing your main sponsor is biting the hand that feeds you",
+    "words": [
+      "Criticizing",
+      "your",
+      "main",
+      "sponsor",
+      "is",
+      "biting",
+      "the",
+      "hand",
+      "that",
+      "feeds",
+      "you"
+    ],
+    "hint": "Gerund subject + verb to be + idiom",
+    "explanation": "'Bite the hand that feeds you' significa perjudicar a quien te ayuda o apoya."
   }
 ]

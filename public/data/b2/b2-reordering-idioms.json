@@ -193,18 +193,7 @@
   {
     "id": "reord-id-b2-011",
     "sentence": "We will cross that bridge when we come to it",
-    "words": [
-      "We",
-      "will",
-      "cross",
-      "that",
-      "bridge",
-      "when",
-      "we",
-      "come",
-      "to",
-      "it"
-    ],
+    "words": ["We", "will", "cross", "that", "bridge", "when", "we", "come", "to", "it"],
     "hint": "Subject + will + idiom + time clause",
     "explanation": "'Cross that bridge when we come to it' significa ocuparse de un problema solo cuando realmente ocurre."
   },
@@ -230,18 +219,7 @@
   {
     "id": "reord-id-b2-013",
     "sentence": "The manager should have read the writing on the wall",
-    "words": [
-      "The",
-      "manager",
-      "should",
-      "have",
-      "read",
-      "the",
-      "writing",
-      "on",
-      "the",
-      "wall"
-    ],
+    "words": ["The", "manager", "should", "have", "read", "the", "writing", "on", "the", "wall"],
     "hint": "Subject + modal perfect + idiom",
     "explanation": "'Read the writing on the wall' significa reconocer señales claras de que algo malo está por suceder."
   },
@@ -268,16 +246,68 @@
   {
     "id": "reord-id-b2-015",
     "sentence": "Regular exercise helps keep stress at bay",
-    "words": [
-      "Regular",
-      "exercise",
-      "helps",
-      "keep",
-      "stress",
-      "at",
-      "bay"
-    ],
+    "words": ["Regular", "exercise", "helps", "keep", "stress", "at", "bay"],
     "hint": "Subject + verb + infinitive + idiom",
     "explanation": "'Keep something at bay' significa evitar que algo te afecte o se acerque a ti."
+  },
+  {
+    "id": "reord-id-b2-016",
+    "sentence": "She could not help because she had a lot on her plate",
+    "words": [
+      "She",
+      "could",
+      "not",
+      "help",
+      "because",
+      "she",
+      "had",
+      "a",
+      "lot",
+      "on",
+      "her",
+      "plate"
+    ],
+    "hint": "Clause + because + subject + had + idiom",
+    "explanation": "'Have a lot on your plate' significa tener muchas responsabilidades a la vez."
+  },
+  {
+    "id": "reord-id-b2-017",
+    "sentence": "The manager decided to turn a blind eye to the mistake",
+    "words": [
+      "The",
+      "manager",
+      "decided",
+      "to",
+      "turn",
+      "a",
+      "blind",
+      "eye",
+      "to",
+      "the",
+      "mistake"
+    ],
+    "hint": "Subject + decided to + idiom + to + object",
+    "explanation": "'Turn a blind eye' significa ignorar algo deliberadamente."
+  },
+  {
+    "id": "reord-id-b2-018",
+    "sentence": "You should never burn bridges with former colleagues",
+    "words": ["You", "should", "never", "burn", "bridges", "with", "former", "colleagues"],
+    "hint": "Should + never + idiom + with + object",
+    "explanation": "'Burn bridges' significa romper relaciones de forma irreparable."
+  },
+  {
+    "id": "reord-id-b2-019",
+    "sentence": "Managers must nip small problems in the bud",
+    "words": ["Managers", "must", "nip", "small", "problems", "in", "the", "bud"],
+    "hint": "Subject + must + verb + object + idiom",
+    "explanation": "'Nip something in the bud' significa cortar un problema de raíz antes de que crezca."
+  },
+  {
+    "id": "reord-id-b2-020",
+    "sentence": "The accountant keeps tabs on every expense",
+    "words": ["The", "accountant", "keeps", "tabs", "on", "every", "expense"],
+    "hint": "Subject + verb (3rd person -s) + idiom + object",
+    "explanation": "'Keep tabs on' significa vigilar o hacer seguimiento de algo de cerca."
   }
 ]

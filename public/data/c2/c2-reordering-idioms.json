@@ -321,5 +321,91 @@
     ],
     "hint": "Idiom + conditional clause",
     "explanation": "'Gild the lily' significa añadir una decoración innecesaria a algo que ya es bueno, arruinando su efecto."
+  },
+  {
+    "id": "reord-id-c2-016",
+    "sentence": "Overconfidence proved to be the committee's Achilles' heel",
+    "words": ["Overconfidence", "proved", "to", "be", "the", "committee's", "Achilles'", "heel"],
+    "explanation": "'Achilles' heel' significa una debilidad fatal, de la Ilíada de Homero."
+  },
+  {
+    "id": "reord-id-c2-017",
+    "sentence": "Only after the scandal broke was the outcome no longer a foregone conclusion",
+    "words": [
+      "Only",
+      "after",
+      "the",
+      "scandal",
+      "broke",
+      "was",
+      "the",
+      "outcome",
+      "no",
+      "longer",
+      "a",
+      "foregone",
+      "conclusion"
+    ],
+    "hint": "Inversion after 'Only after'",
+    "explanation": "'A foregone conclusion' significa un resultado inevitable o predecible. 'Only after' desencadena la inversión."
+  },
+  {
+    "id": "reord-id-c2-018",
+    "sentence": "New archival evidence has helped shed light on the forgotten treaty",
+    "words": [
+      "New",
+      "archival",
+      "evidence",
+      "has",
+      "helped",
+      "shed",
+      "light",
+      "on",
+      "the",
+      "forgotten",
+      "treaty"
+    ],
+    "hint": "Present perfect + helped + base form + idiom",
+    "explanation": "'Shed light on' significa ayudar a explicar o aclarar algo."
+  },
+  {
+    "id": "reord-id-c2-019",
+    "sentence": "Faced with bankruptcy or a hostile merger the board confronted a Hobson's choice",
+    "words": [
+      "Faced",
+      "with",
+      "bankruptcy",
+      "or",
+      "a",
+      "hostile",
+      "merger",
+      "the",
+      "board",
+      "confronted",
+      "a",
+      "Hobson's",
+      "choice"
+    ],
+    "hint": "Past participle clause + subject + verb + idiom",
+    "explanation": "'A Hobson's choice' significa una elección aparente que en realidad no ofrece alternativa real."
+  },
+  {
+    "id": "reord-id-c2-020",
+    "sentence": "Seldom does policy manage to strike a balance between competing interests",
+    "words": [
+      "Seldom",
+      "does",
+      "policy",
+      "manage",
+      "to",
+      "strike",
+      "a",
+      "balance",
+      "between",
+      "competing",
+      "interests"
+    ],
+    "hint": "Inversion after 'Seldom': Seldom + auxiliary + subject",
+    "explanation": "'Strike a balance' significa encontrar un equilibrio satisfactorio entre dos extremos. 'Seldom' provoca inversión."
   }
 ]
