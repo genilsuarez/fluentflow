@@ -33,6 +33,7 @@ import {
   rebuildUserScoresFromHistory,
 } from './progressMerge';
 import { beginStatsDeferral, markStatsDisplayReady } from '../utils/statsBootstrap';
+import { filterToKnownModules } from '../utils/catalogIds';
 
 const PASS_SCORE_PCT = 70;
 const VISIBILITY_REFRESH_MIN_MS = 12_000;
@@ -41,8 +42,11 @@ const SYNC_CHANNEL_NAME = 'lp-sync';
 function mapCompletedModules(
   completedModules: Record<string, ModuleCompletion>
 ): Record<string, ProgressContentItem> {
+  // Solo módulos del catálogo vigente: subir ids huérfanos los reinstala en
+  // Supabase en cada sync (upsert_progress_merge es monotónico y nunca los
+  // borra), y de ahí vuelven a bajar a todos los dispositivos. Ver catalogIds.ts.
   return Object.fromEntries(
-    Object.entries(completedModules).map(([moduleId, completion]) => [
+    filterToKnownModules(Object.entries(completedModules)).map(([moduleId, completion]) => [
       moduleId,
       {
         contentType: 'module',

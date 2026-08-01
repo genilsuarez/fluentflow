@@ -14,6 +14,7 @@ import {
   mergeUserScores,
   rebuildUserScoresFromHistory,
 } from './progressMerge';
+import { filterToKnownModules } from '../utils/catalogIds';
 
 const PROGRESS_KEY = 'learnflow:progress:fluentflow:v1';
 const ACTIVITY_KEY = 'learnflow:activity:fluentflow:v1';
@@ -69,7 +70,11 @@ function readProjectionDocs(): {
 }
 
 function progressDocToRows(doc: ProjectionProgressDoc): RemoteProgressRow[] {
-  return Object.entries(doc.content ?? {})
+  // Filtra ids fuera del catálogo vigente antes de importarlos al store: el
+  // documento compartido lo llena el cloud-merge de DeskFlow, que une filas de
+  // Supabase sin podar contenido eliminado/renombrado. Sin esto los huérfanos
+  // entran a completedModules y syncEngine los vuelve a subir. Ver catalogIds.ts.
+  return filterToKnownModules(Object.entries(doc.content ?? {}))
     .filter(([, item]) => item?.completed)
     .map(([contentId, item]) => ({
       content_id: contentId,
