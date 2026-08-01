@@ -36,6 +36,10 @@ jobs:
           npm test            &  PID_TEST=$!
           npm run format:check & PID_FMT=$!
           npm run validate:breakpoints & PID_BP=$!
+          # Invariantes del conteo de progreso: cada caso corresponde a un bug
+          # que llegó a producción con totales o completados incorrectos.
+          # docs/progress-counting-system.md
+          node tests/progress-invariants.mjs & PID_PROG=$!
 
           FAIL=0
           wait $PID_LINT   || { echo "❌ ESLint failed";      FAIL=1; }
@@ -43,6 +47,7 @@ jobs:
           wait $PID_TEST   || { echo "❌ Tests failed";       FAIL=1; }
           wait $PID_FMT    || { echo "❌ Format check failed"; FAIL=1; }
           wait $PID_BP     || { echo "❌ Breakpoint check failed"; FAIL=1; }
+          wait $PID_PROG   || { echo "❌ Progress invariants failed"; FAIL=1; }
 
           [ $FAIL -eq 0 ] && echo "✅ All quality checks passed"
           exit $FAIL

@@ -9,8 +9,21 @@ TIMEOUT=120
 INTERVAL=10
 WARNINGS=()
 
+cd "$(dirname "$0")"
+
 echo "📦 FluentFlow — running full pipeline..."
 echo ""
+
+# ─── Phase 0: Progress-system validation (blocking) ─────────────────────────────
+# Antes del pipeline pesado: falla en segundos en vez de después de un build
+# completo. Invariantes del conteo + deriva de archivos compartidos.
+# docs/progress-counting-system.md
+
+if [ -x ../scripts/lp-build-validate.sh ]; then
+  ../scripts/lp-build-validate.sh FluentFlow || exit 1
+elif [ -f tests/progress-invariants.mjs ]; then
+  node tests/progress-invariants.mjs || exit 1
+fi
 
 # ─── Phase 1: Local pipeline (blocking) ─────────────────────────────────────────
 
