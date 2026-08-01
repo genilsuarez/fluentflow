@@ -594,7 +594,11 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                         }
 
                         visibleModules = [...prefix, ...suffixVisible];
-                        if (COLUMNS > 1) {
+                        // Trim to whole grid rows only while locked modules are already
+                        // being held back. Near the end of a level the whole tail fits,
+                        // and trimming would hide the last modules (and even completed
+                        // ones) just to square off the grid.
+                        if (COLUMNS > 1 && lockedHidden > 0) {
                           const trimmed = trimModulesToGridRows(visibleModules, COLUMNS, {
                             isLocked: module => effectiveStatus(module) === 'locked',
                             keepModuleId: nextRecommended?.id,
@@ -701,9 +705,7 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                               </button>
                             )}
                             {visibleModules.length > 0 && (
-                              <div
-                                className={`progression-dashboard__modules${lockedHidden > 0 ? ' progression-dashboard__modules--truncated' : ''}`}
-                              >
+                              <div className="progression-dashboard__modules">
                                 {visibleModules.map(renderModuleCard)}
                               </div>
                             )}

@@ -454,38 +454,9 @@
   flex: 0 0 auto !important;
 }
 
-.progression-dashboard__modules--truncated {
-  position: relative;
-  overflow: hidden;
-}
-
-.progression-dashboard__modules--truncated::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 72px;
-  pointer-events: none;
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    color-mix(in srgb, var(--progression-unit-bg) 55%, transparent) 55%,
-    var(--progression-unit-bg) 100%
-  );
-}
-
-@media (--lp-from-md) {
-  .progression-dashboard__modules--truncated::after {
-    height: 96px;
-  }
-}
-
-@media (--lp-from-lg) {
-  .progression-dashboard__modules--truncated::after {
-    height: 112px;
-  }
-}
+/* No fade-out veil over the last row: hidden locked modules are removed from the
+   DOM, so nothing is actually clipped — the gradient only made real (often the
+   --next) cards unreadable. The "+N locked" label below is the affordance. */
 
 @keyframes fadeIn {
   from {
@@ -933,10 +904,6 @@
   .progression-dashboard__locked-hidden {
     padding: 0.25rem 0.5rem 0.375rem;
     font-size: 0.6875rem;
-  }
-
-  .progression-dashboard__modules--truncated::after {
-    height: 40px;
   }
 }
 
