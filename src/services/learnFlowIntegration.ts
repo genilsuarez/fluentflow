@@ -147,6 +147,13 @@ export const publishLearnFlowIntegration = (
     app: 'fluentflow',
     updatedAt: publishedAt,
     catalogVersion: hashCatalog(modules),
+    // Catálogo real vigente, fuera de `summary`/`content` a propósito: el
+    // cloud-merge de DeskFlow (sync-engine.js) solo une content_ids de
+    // Supabase sin podar ids huérfanos de catálogos viejos, así que
+    // items.length ahí puede inflarse. catalogTotalContent es la única
+    // fuente que sabe con certeza cuántos módulos hay AHORA — se
+    // recalcula acá en cada publish, nunca se sincroniza ni se fusiona.
+    catalogTotalContent: modules.length,
     summary: {
       progressPct: modules.length > 0 ? (completedIds.size / modules.length) * 100 : 0,
       completedContent: completedIds.size,
