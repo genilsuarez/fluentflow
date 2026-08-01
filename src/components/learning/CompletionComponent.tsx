@@ -128,7 +128,7 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
     return Array.from({ length: gapTotal }, (_, gapIndex) => {
       const fromDom = inputRefs.current[gapIndex]?.getValue?.() ?? '';
       const fromRef = answersRef.current[gapIndex] ?? '';
-      return (fromDom || fromRef).toLowerCase().trim();
+      return (fromDom || fromRef).trim();
     });
   }, []);
 
@@ -361,7 +361,6 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
 
         const widthStyle = {
           '--dynamic-width': inlineBlankWidthCh(widthSource),
-          textTransform: 'lowercase',
         } as React.CSSProperties;
 
         if (showResult && !gapCorrect) {
@@ -384,7 +383,7 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
                 setAnswers(prev => {
                   const next = [...prev];
                   while (next.length <= gapIndex) next.push('');
-                  next[gapIndex] = value.toLowerCase();
+                  next[gapIndex] = value;
                   answersRef.current = next;
                   return next;
                 });

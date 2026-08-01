@@ -229,12 +229,12 @@
   }
 
   .progression-dashboard__units--mobile-accordion .progression-dashboard__unit--expanded {
-    flex: 0 1 auto;
+    flex: 0 0 auto;
     overflow: visible;
   }
 
   .progression-dashboard__units--mobile-accordion .progression-dashboard__unit-body {
-    flex: 0 1 auto;
+    flex: 0 0 auto;
     overflow-x: clip;
     overflow-y: visible;
     padding-bottom: 0.25rem;
