@@ -666,7 +666,9 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                       };
 
                       return (
-                        <div className={`progression-dashboard__unit-body${searchQuery.trim() ? ' progression-dashboard__unit-body--searching' : ''}`}>
+                        <div
+                          className={`progression-dashboard__unit-body${searchQuery.trim() ? ' progression-dashboard__unit-body--searching' : ''}`}
+                        >
                           <div className="progression-dashboard__modules-stack">
                             {showCompletedToggle && !isCompletedExpanded && (
                               <button
