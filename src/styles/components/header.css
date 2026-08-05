@@ -898,8 +898,20 @@ html.browser-cursor-embedded .header-side-menu {
   cursor: pointer;
   font-size: 0.9rem;
   opacity: 0.6;
+  position: relative;
   transition: all 0.2s ease;
   flex-shrink: 0;
+}
+/* Área táctil extendida a 44px sin cambiar el tamaño visual */
+.header-side-menu__nav-mode-toggle::after {
+  content: '';
+  position: absolute;
+  inset: 50%;
+  translate: -50% -50%;
+  min-width: 44px;
+  min-height: 44px;
+  width: 100%;
+  height: 100%;
 }
 .header-side-menu__nav-mode-toggle:hover {
   opacity: 1;
@@ -915,6 +927,48 @@ html.browser-cursor-embedded .header-side-menu {
 @media (--lp-below-lg) {
   .header-side-menu__nav-mode-toggle {
     display: none;
+  }
+}
+
+.header-side-menu__close-btn {
+  display: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--lp-border);
+  background: var(--lp-surface);
+  color: var(--lp-muted);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.9rem;
+  position: relative;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+.header-side-menu__close-btn::after {
+  content: '';
+  position: absolute;
+  inset: 50%;
+  translate: -50% -50%;
+  min-width: 44px;
+  min-height: 44px;
+  width: 100%;
+  height: 100%;
+}
+.header-side-menu__close-btn:hover {
+  border-color: var(--lp-accent);
+  color: var(--lp-ink);
+}
+.header-side-menu__close-btn:focus-visible {
+  outline: 2px solid var(--lp-accent);
+  outline-offset: 2px;
+}
+
+/* Sidebar pin es desktop-only — mostrar la X de cierre en su lugar en mobile/tablet */
+@media (--lp-below-lg) {
+  .header-side-menu__close-btn {
+    display: flex;
   }
 }
 

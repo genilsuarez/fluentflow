@@ -465,6 +465,14 @@ export const Header: React.FC<HeaderProps> = () => {
                 >
                   <span aria-hidden="true">{navigationMode === 'floating' ? '▣' : '◫'}</span>
                 </button>
+                <button
+                  type="button"
+                  onClick={() => setShowSideMenu(false)}
+                  className="header-side-menu__close-btn"
+                  aria-label={t('common.close')}
+                >
+                  <span aria-hidden="true">✕</span>
+                </button>
               </div>
             </div>
             {/* Flat menu — no section headers */}
