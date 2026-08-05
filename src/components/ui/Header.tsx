@@ -480,7 +480,7 @@ export const Header: React.FC<HeaderProps> = () => {
               <button
                 onClick={handleGoToHome}
                 className={`header-side-menu__item${!isInGame && useAppStore.getState().previousMenuContext === 'progression' ? ' header-side-menu__item--active' : ''}`}
-                aria-label="Ir al inicio"
+                aria-label={t('navigation.goToHome')}
                 aria-current={
                   !isInGame && useAppStore.getState().previousMenuContext === 'progression'
                     ? 'page'
@@ -490,12 +490,12 @@ export const Header: React.FC<HeaderProps> = () => {
                 <span className="header-side-menu__icon" aria-hidden="true">
                   <NavMenuIcon name="home" />
                 </span>
-                <span className="header-side-menu__text">Inicio</span>
+                <span className="header-side-menu__text">{t('navigation.home')}</span>
               </button>
               <button
                 onClick={handleGoToModules}
                 className={`header-side-menu__item${!isInGame && useAppStore.getState().previousMenuContext === 'list' ? ' header-side-menu__item--active' : ''}`}
-                aria-label="Ir a ejercicios"
+                aria-label={t('navigation.goToExercises')}
                 aria-current={
                   !isInGame && useAppStore.getState().previousMenuContext === 'list'
                     ? 'page'
@@ -505,7 +505,7 @@ export const Header: React.FC<HeaderProps> = () => {
                 <span className="header-side-menu__icon" aria-hidden="true">
                   <NavMenuIcon name="book" />
                 </span>
-                <span className="header-side-menu__text">Ejercicios</span>
+                <span className="header-side-menu__text">{t('navigation.exercises')}</span>
               </button>
               {canOpenSettings && (
                 <button
@@ -514,12 +514,12 @@ export const Header: React.FC<HeaderProps> = () => {
                     setShowSideMenu(false);
                   }}
                   className="header-side-menu__item"
-                  aria-label="Ajustes"
+                  aria-label={t('navigation.settingsShort')}
                 >
                   <span className="header-side-menu__icon" aria-hidden="true">
                     <NavMenuIcon name="settings" />
                   </span>
-                  <span className="header-side-menu__text">Ajustes</span>
+                  <span className="header-side-menu__text">{t('navigation.settingsShort')}</span>
                 </button>
               )}
               {developmentMode && (
@@ -530,12 +530,12 @@ export const Header: React.FC<HeaderProps> = () => {
                     setShowSideMenu(false);
                   }}
                   className="header-side-menu__item"
-                  aria-label="Mi progreso"
+                  aria-label={t('modals.myProgress')}
                 >
                   <span className="header-side-menu__icon" aria-hidden="true">
                     <NavMenuIcon name="progress" />
                   </span>
-                  <span className="header-side-menu__text">Mi Progreso</span>
+                  <span className="header-side-menu__text">{t('modals.myProgress')}</span>
                 </button>
               )}
               {/* Spacer + bottom actions */}
@@ -557,14 +557,18 @@ export const Header: React.FC<HeaderProps> = () => {
                 <button
                   type="button"
                   className="header-side-menu__item header-side-menu__item--theme"
-                  aria-label={theme === 'dark' ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'}
+                  aria-label={
+                    theme === 'dark'
+                      ? t('navigation.switchToLightMode')
+                      : t('navigation.switchToDarkMode')
+                  }
                   onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                 >
                   <span className="header-side-menu__icon" aria-hidden="true">
                     <NavMenuIcon name={theme === 'dark' ? 'sun' : 'moon'} />
                   </span>
                   <span className="header-side-menu__text">
-                    {theme === 'dark' ? 'Modo claro' : 'Modo oscuro'}
+                    {theme === 'dark' ? t('navigation.lightMode') : t('navigation.darkMode')}
                   </span>
                 </button>
                 <button

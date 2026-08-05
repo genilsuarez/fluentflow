@@ -62,7 +62,7 @@ export const useSettingsStore = create<SettingsState>()(
     (set, get) => ({
       // Default values - will be overridden by theme initializer
       theme: 'light',
-      language: 'en',
+      language: 'es',
       level: 'all',
       developmentMode: false,
       randomizeItems: true, // Default: randomization enabled
@@ -142,7 +142,15 @@ export const useSettingsStore = create<SettingsState>()(
     }),
     {
       name: 'settings-storage',
-      version: 1,
+      version: 2,
+      migrate: (persistedState: any, version: number) => {
+        // v1 → v2: default flipped to 'es' (español-first). Existing users on
+        // 'en' were on the old default, not a deliberate choice — migrate once.
+        if (version < 2 && persistedState) {
+          return { ...persistedState, language: 'es' };
+        }
+        return persistedState;
+      },
       merge: (persistedState: any, currentState: SettingsState): SettingsState => {
         const merged = { ...currentState, ...persistedState };
         // Deep-merge gameSettings to ensure new modes get defaults
