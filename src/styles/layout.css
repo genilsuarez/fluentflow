@@ -109,7 +109,7 @@
 }
 
 /* ─── APP FOOTER ─── */
-.app-footer {
+.lp-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -118,7 +118,7 @@
   border-top: 1.5px solid var(--lp-border);
 }
 
-.app-footer__meta {
+.lp-footer__meta {
   font-family: var(--lp-font-mono);
   font-size: 9px;
   font-weight: 700;
@@ -129,7 +129,7 @@
 }
 
 @media (--lp-mobile-md) {
-  .app-footer {
+  .lp-footer {
     display: none;
   }
 }

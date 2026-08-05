@@ -295,8 +295,8 @@ const AppContent: React.FC = () => {
           <AppRouter />
         </main>
 
-        <footer className="app-footer">
-          <span className="app-footer__meta">FluentFlow → LearnFlow</span>
+        <footer className="lp-footer">
+          <span className="lp-footer__meta">FluentFlow → LearnFlow</span>
         </footer>
 
         <MemoizedToastContainer />
