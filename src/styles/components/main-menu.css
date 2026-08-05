@@ -1061,6 +1061,7 @@ html.dark .main-menu__error-text {
   justify-content: center;
   gap: 0.375rem;
   width: 100%;
+  min-height: 44px;
   padding: 0.125rem 0.75rem;
   margin-top: 0;
   border: none;

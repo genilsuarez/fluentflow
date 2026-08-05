@@ -1307,6 +1307,7 @@ html.dark .progression-dashboard__module--locked .progression-dashboard__level-b
   justify-content: center;
   gap: 0.375rem;
   width: 100%;
+  min-height: 44px;
   margin: 0 0 0.375rem;
   padding: 0.375rem 0.75rem;
   border: 1px dashed var(--lp-border-subtle, var(--lp-border));
