@@ -198,7 +198,7 @@ const DashboardTab: React.FC<DashboardTabProps> = ({
         {t('dashboard.recentActivity', 'Últimos días')}
       </h3>
       <div className="my-progress__weekly-content">
-        {progressData.length === 0 ? (
+        {!progressData.some(day => day.sessionsCount > 0) ? (
           <div className="my-progress__no-data">
             <TrendingUp className="my-progress__no-data-icon" />
             <p className="my-progress__no-data-text">{t('dashboard.completeModulesMessage')}</p>

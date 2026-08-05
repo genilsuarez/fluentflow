@@ -283,7 +283,7 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
                   <span className="home-dash__bar-value">&nbsp;</span>
                 </div>
               </div>
-            ) : progressData.length === 0 ? (
+            ) : !progressData.some(d => d.sessionsCount > 0) ? (
               <div className="home-dash__weekly-placeholder" aria-hidden="true" />
             ) : (
               <div className="home-dash__bars">
