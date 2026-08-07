@@ -207,9 +207,7 @@ const ListeningQuizComponent: React.FC<ListeningQuizComponentProps> = ({ module 
         currentIndex={currentIndex}
         totalItems={processedQuestions.length}
         mode="listening-quiz"
-        helpText={
-          showResult ? t('learning.pressEnterNext') : 'Listen and choose the correct answer'
-        }
+        helpText={showResult ? t('learning.pressEnterNext') : t('learning.listenAndChoose')}
       />
 
       {/* Audio prompt — question text is hidden, replaced by listen button */}
@@ -226,7 +224,7 @@ const ListeningQuizComponent: React.FC<ListeningQuizComponentProps> = ({ module 
           >
             <button
               onClick={playQuestion}
-              aria-label="Play audio"
+              aria-label={t('learning.playAudio')}
               style={{
                 width: '52px',
                 height: '52px',
@@ -252,18 +250,18 @@ const ListeningQuizComponent: React.FC<ListeningQuizComponentProps> = ({ module 
                 letterSpacing: '0.05em',
               }}
             >
-              {isPlaying ? 'Playing…' : 'Tap to listen'}
+              {isPlaying ? t('learning.playing') : t('learning.tapToListen')}
             </span>
 
             {/* Hint toggle — only before answering */}
             {!showResult && (
               <button
                 onClick={() => setShowHint(h => !h)}
-                aria-label={showHint ? 'Hide tip' : 'Show tip'}
+                aria-label={showHint ? t('learning.hideHint') : t('learning.showHint')}
                 className="quiz-component__hint-toggle"
               >
                 <Lightbulb size={14} />
-                <span>{showHint ? 'Hide tip' : 'Show tip'}</span>
+                <span>{showHint ? t('learning.hideHint') : t('learning.showHint')}</span>
               </button>
             )}
 

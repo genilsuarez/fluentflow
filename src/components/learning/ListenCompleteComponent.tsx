@@ -244,7 +244,7 @@ const ListenCompleteComponent: React.FC<ListenCompleteComponentProps> = ({ modul
         currentIndex={currentIndex}
         totalItems={items.length}
         mode="listen-complete"
-        helpText={showResult ? t('learning.pressEnterNext') : 'Listen, then fill in the blank'}
+        helpText={showResult ? t('learning.pressEnterNext') : t('learning.listenAndFillBlank')}
       />
 
       <div className="quiz-component__question-card" style={{ gap: '1rem' }}>
@@ -261,7 +261,7 @@ const ListenCompleteComponent: React.FC<ListenCompleteComponentProps> = ({ modul
           >
             <button
               onClick={() => playAudio()}
-              aria-label="Play audio"
+              aria-label={t('learning.playAudio')}
               style={{
                 width: '64px',
                 height: '64px',
@@ -290,7 +290,7 @@ const ListenCompleteComponent: React.FC<ListenCompleteComponentProps> = ({ modul
                 textDecoration: 'underline',
               }}
             >
-              🐢 Slower
+              {t('learning.slower')}
             </button>
           </div>
         )}

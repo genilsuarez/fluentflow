@@ -168,7 +168,7 @@ const DictationComponent: React.FC<DictationComponentProps> = ({ module }) => {
         currentIndex={currentIndex}
         totalItems={items.length}
         mode="dictation"
-        helpText={showResult ? t('learning.pressEnterNext') : 'Listen and type what you hear'}
+        helpText={showResult ? t('learning.pressEnterNext') : t('learning.listenAndType')}
       />
 
       <div className="quiz-component__question-card" style={{ gap: '1rem' }}>
@@ -185,7 +185,7 @@ const DictationComponent: React.FC<DictationComponentProps> = ({ module }) => {
           >
             <button
               onClick={() => playAudio()}
-              aria-label="Play audio"
+              aria-label={t('learning.playAudio')}
               style={{
                 width: '72px',
                 height: '72px',
@@ -214,7 +214,7 @@ const DictationComponent: React.FC<DictationComponentProps> = ({ module }) => {
                 textDecoration: 'underline',
               }}
             >
-              🐢 Slower
+              {t('learning.slower')}
             </button>
           </div>
         )}
@@ -248,7 +248,7 @@ const DictationComponent: React.FC<DictationComponentProps> = ({ module }) => {
               value={userInput}
               onChange={e => setUserInput(e.target.value)}
               disabled={showResult}
-              placeholder="Type what you hear…"
+              placeholder={t('learning.typeWhatYouHear')}
               autoComplete="off"
               autoCorrect="off"
               spellCheck={false}
