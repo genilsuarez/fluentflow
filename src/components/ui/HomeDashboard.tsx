@@ -284,7 +284,12 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
                 </div>
               </div>
             ) : !progressData.some(d => d.sessionsCount > 0) ? (
-              <div className="home-dash__weekly-placeholder" aria-hidden="true" />
+              <div className="home-dash__weekly-placeholder">
+                <TrendingUp className="home-dash__weekly-placeholder-icon" />
+                <p className="home-dash__weekly-placeholder-text">
+                  {t('dashboard.completeModulesMessage')}
+                </p>
+              </div>
             ) : (
               <div className="home-dash__bars">
                 {(() => {
