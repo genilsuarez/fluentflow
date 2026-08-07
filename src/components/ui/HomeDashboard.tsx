@@ -266,9 +266,9 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
       <div className="home-dash__progress-row">
         {/* Weekly Progress */}
         <div className="home-dash__weekly">
-          <h3 className="home-dash__section-title">
+          <h2 className="home-dash__section-title">
             {t('dashboard.recentActivity', 'Últimos días')}
-          </h3>
+          </h2>
           <div className="home-dash__weekly-chart">
             {!activityReady ? (
               <div className="home-dash__bars home-dash__bars--pending" aria-hidden="true">
@@ -332,9 +332,9 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
 
         {/* Level Progress — contextual: max 3 (previous, current, next) */}
         <div className="home-dash__levels">
-          <h3 className="home-dash__section-title">
+          <h2 className="home-dash__section-title">
             {t('learningPath.unitProgress', 'Level Progress')}
-          </h3>
+          </h2>
           <div className="home-dash__level-grid">
             {(() => {
               const activeIdx = displayStats.unitStats.findIndex(u => u.percentage < 100);
