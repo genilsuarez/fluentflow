@@ -203,11 +203,24 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   transition: var(--transition-shadow), var(--transition-transform);
   will-change: auto;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+}
+/* Hit-area táctil 44px (H5/1.11) — gap:0.375rem entre chips, solape mínimo
+   con filas vecinas, mejor que el estado actual sin hit-area. */
+.reordering__word::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 44px;
+  min-height: 44px;
 }
 
 .reordering__word:hover:not(:disabled) {

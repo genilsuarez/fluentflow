@@ -83,6 +83,23 @@
   font-weight: 500;
   transition: var(--transition-shadow), var(--transition-transform);
   will-change: auto;
+  min-height: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+/* Hit-area táctil 44px — el handle de drag es más difícil de acertar que un
+   tap simple (H5/1.11). gap:0.5rem entre chips evita solape con filas vecinas. */
+.sorting-component__word-chip::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 44px;
+  min-height: 44px;
 }
 
 .sorting-component__word-chip:hover {
@@ -501,7 +518,7 @@ html.dark .sorting-component__category-header {
   .sorting-component__word-chip {
     padding: 0.3125rem 0.5rem;
     font-size: var(--text-sm, 1rem);
-    min-height: 2rem;
+    min-height: 2.25rem;
     display: flex;
     align-items: center;
     justify-content: center;
