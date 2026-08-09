@@ -608,6 +608,17 @@ export const Header: React.FC<HeaderProps> = () => {
                   </span>
                   <span className="header-side-menu__text">Portal</span>
                 </a>
+                <a
+                  href="privacy.html"
+                  className="header-side-menu__item"
+                  aria-label="Privacidad"
+                  onClick={() => setShowSideMenu(false)}
+                >
+                  <span className="header-side-menu__icon" aria-hidden="true">
+                    <NavMenuIcon name="info" />
+                  </span>
+                  <span className="header-side-menu__text">Privacidad</span>
+                </a>
               </div>
             </div>
           </nav>

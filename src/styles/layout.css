@@ -128,6 +128,15 @@
   text-transform: uppercase;
 }
 
+.lp-footer__link {
+  font-size: 11px;
+  color: var(--lp-muted);
+  text-decoration: underline;
+}
+.lp-footer__link:hover {
+  color: var(--lp-ink-soft);
+}
+
 @media (--lp-mobile-md) {
   .lp-footer {
     display: none;

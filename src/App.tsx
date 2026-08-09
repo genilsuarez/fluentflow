@@ -297,6 +297,9 @@ const AppContent: React.FC = () => {
 
         <footer className="lp-footer">
           <span className="lp-footer__meta">FluentFlow → LearnFlow</span>
+          <a className="lp-footer__link" href="privacy.html">
+            Privacidad
+          </a>
         </footer>
 
         <MemoizedToastContainer />
