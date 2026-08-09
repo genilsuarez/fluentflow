@@ -164,22 +164,10 @@ export const useProgression = () => {
       },
 
       getNextRecommendedModule: (): LearningModule | null => {
-        const nextAvailable = progressionService.getNextAvailableModules();
-        if (nextAvailable.length === 0) {
-          return null;
-        }
-
-        const indexMap = new Map(rawModules.map((m, i) => [m.id, i]));
-        const sorted = nextAvailable.sort((a, b) => {
-          const aIdx = indexMap.get(a.id) ?? Infinity;
-          const bIdx = indexMap.get(b.id) ?? Infinity;
-          return aIdx - bIdx;
-        });
-
-        return sorted[0];
+        return progressionService.getRecommendedModule();
       },
     }),
-    [isModuleCompleted, developmentMode, rawModules]
+    [isModuleCompleted, developmentMode]
   );
 
   return {

@@ -84,10 +84,34 @@ export class ProgressionService {
       return true;
     }
 
-    // Check if all prerequisites are completed
-    const allPrerequisitesMet = module.prerequisites.every(prereqId =>
-      this.completedModules.has(prereqId)
-    );
+    // Check if all prerequisites are completed. Excepción: un prerequisito de un
+    // nivel ANTERIOR al del propio módulo (ej. el módulo B1 "Education Reading"
+    // exige el quiz de repaso de A2 "quiz-elementary-review-a2") cuenta como
+    // satisfecho si el usuario ya autoevaluó ese nivel como dominado (onboarding,
+    // Fase B.2) — mismo criterio que el level gate de arriba. Restringido a
+    // prerequisitos de nivel *inferior* al del módulo: la inmensa mayoría de
+    // prerequisitos del catálogo son del MISMO nivel (secuencia interna, ej. A1
+    // exige A1) y esos deben seguir exigiendo completar de verdad — si no, alguien
+    // con lp-level='a1' (el default de casi todo el mundo) se saltaría el orden
+    // completo dentro de su propio nivel.
+    const ownLevel = this.getPrimaryLevel(module);
+    const moduleLevelIndex = ownLevel
+      ? LEVEL_ORDER.indexOf(ownLevel as (typeof LEVEL_ORDER)[number])
+      : -1;
+    const baselineIndex = this.getSelfAssessedLevelIndex();
+    const allPrerequisitesMet = module.prerequisites.every(prereqId => {
+      if (this.completedModules.has(prereqId)) return true;
+      const prereqModule = this.getModule(prereqId);
+      const prereqLevel = prereqModule ? this.getPrimaryLevel(prereqModule) : null;
+      const prereqLevelIndex = prereqLevel
+        ? LEVEL_ORDER.indexOf(prereqLevel as (typeof LEVEL_ORDER)[number])
+        : -1;
+      return (
+        prereqLevelIndex >= 0 &&
+        prereqLevelIndex < moduleLevelIndex &&
+        prereqLevelIndex <= baselineIndex
+      );
+    });
 
     logDebug(
       'Checking module unlock status',
@@ -124,6 +148,33 @@ export class ProgressionService {
     return this.modules.filter(
       module => !this.completedModules.has(module.id) && this.isModuleUnlocked(module.id)
     );
+  }
+
+  /**
+   * Módulo recomendado: normalmente el primer disponible en orden de catálogo.
+   * Si el usuario se autoevaluó un nivel en el onboarding de DeskFlow (Fase B.2) y
+   * quedan módulos de niveles anteriores sin completar, se prioriza igual un módulo
+   * del nivel autoevaluado — evita recomendar contenido que el usuario ya dijo saber.
+   * Esos módulos anteriores no desaparecen ni se marcan como completados, solo dejan
+   * de ser "lo siguiente a hacer".
+   */
+  getRecommendedModule(): LearningModule | null {
+    const available = this.getNextAvailableModules();
+    if (available.length === 0) return null;
+
+    const baselineIndex = this.getSelfAssessedLevelIndex();
+    if (baselineIndex > 0) {
+      const atBaseline = available.find(module => {
+        const primaryLevel = this.getPrimaryLevel(module);
+        const levelIndex = primaryLevel
+          ? LEVEL_ORDER.indexOf(primaryLevel as (typeof LEVEL_ORDER)[number])
+          : -1;
+        return levelIndex === baselineIndex;
+      });
+      if (atBaseline) return atBaseline;
+    }
+
+    return available[0];
   }
 
   /**
@@ -189,12 +240,30 @@ export class ProgressionService {
     // A1 (index 0) or unknown level — no gate
     if (levelIndex <= 0) return true;
 
+    // Autoevaluación de nivel (onboarding de DeskFlow, Fase B.2): si el usuario ya
+    // se ubicó en este nivel o uno superior, no tiene sentido exigirle completar
+    // niveles que dice ya dominar. Solo afecta este gate de acceso — el progreso
+    // real (countsTowardProgress, más abajo) sigue exigiendo completar cada
+    // módulo de verdad, esto no fabrica estadísticas de completado.
+    if (levelIndex <= this.getSelfAssessedLevelIndex()) return true;
+
     const previousLevel = LEVEL_ORDER[levelIndex - 1];
     const previousLevelModules = this.modulesByLevel.get(previousLevel);
     if (!previousLevelModules || previousLevelModules.length === 0) return true;
 
     // All modules of the previous level must be completed
     return previousLevelModules.every(mod => this.completedModules.has(mod.id));
+  }
+
+  /** Índice en LEVEL_ORDER del nivel autoevaluado en `lp-level` (localStorage), o -1 si no hay ninguno. */
+  private getSelfAssessedLevelIndex(): number {
+    try {
+      const stored = localStorage.getItem('lp-level');
+      if (!stored) return -1;
+      return LEVEL_ORDER.indexOf(stored as (typeof LEVEL_ORDER)[number]);
+    } catch {
+      return -1;
+    }
   }
 
   /**
