@@ -62,3 +62,14 @@ tests/           setup.ts + 14 test files (api-service, progressionService, offl
 - No PostCSS, no autoprefixer (Vite handles it)
 - Data-driven: all content in `public/data/` JSON, no external APIs
 - CSS variables for light/dark theming
+
+## Licencia
+
+| Qué | Licencia |
+|---|---|
+| Código fuente | [Apache-2.0](LICENSE) |
+| Contenido educativo | [CC BY-SA 4.0](LICENSE-CONTENT.md) |
+
+Puedes reusar y adaptar ambos, incluso comercialmente, pero debes **dar crédito**
+a Genil Alejandro Suarez Perez y conservar el archivo [NOTICE](NOTICE). Los
+nombres y logos de LearnFlow no están cubiertos por estas licencias.
