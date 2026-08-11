@@ -104,6 +104,10 @@ export const en = {
     loadingModules: 'Loading exercises',
     backToPortal: 'Back to LearnFlow',
     backToMenu: 'Back to menu',
+    settingsSectionAccount: 'Account',
+    settingsSectionAppearance: 'Appearance',
+    settingsSectionHelp: 'Help & about',
+    closeSettings: 'Close settings',
   },
   auth: {
     login: 'Login',
@@ -639,7 +643,7 @@ export const en = {
     deleteAll: 'Delete All',
     deleteAllConfirmTitle: 'Delete All Downloads',
     confirmDeleteAll: 'Are you sure you want to delete all downloaded content?',
-    emptyState: 'No content downloaded. Download levels from Advanced Settings to play offline.',
+    emptyState: 'No content downloaded. Download levels from Offline Mode to play offline.',
     moduleNotAvailable:
       'This module is not available offline. Download it when you have a connection.',
     indicator: 'Offline Mode',

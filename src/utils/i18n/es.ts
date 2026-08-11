@@ -105,6 +105,10 @@ export const es = {
     loadingModules: 'Cargando ejercicios',
     backToPortal: 'Volver a LearnFlow',
     backToMenu: 'Volver al menú',
+    settingsSectionAccount: 'Cuenta',
+    settingsSectionAppearance: 'Apariencia',
+    settingsSectionHelp: 'Ayuda y acerca de',
+    closeSettings: 'Cerrar ajustes',
   },
   auth: {
     login: 'Iniciar Sesión',
@@ -641,7 +645,7 @@ export const es = {
     deleteAllConfirmTitle: 'Eliminar todas las descargas',
     confirmDeleteAll: '¿Estás seguro de que deseas eliminar todo el contenido descargado?',
     emptyState:
-      'No hay contenido descargado. Descarga niveles desde Configuración Avanzada para jugar offline.',
+      'No hay contenido descargado. Descarga niveles desde Modo Offline para jugar sin conexión.',
     moduleNotAvailable:
       'Este módulo no está disponible offline. Descárgalo cuando tengas conexión.',
     indicator: 'Modo Offline',

@@ -10,16 +10,19 @@ import { useMenuNavigation } from '../../hooks/useMenuNavigation';
 import { useTranslation } from '../../utils/i18n';
 import { useEscapeKey } from '../../hooks/useEscapeKey';
 import { useOfflineStatus } from '../../hooks/useOfflineStatus';
-import { portalHref, isLocalPlatformHost } from '../../utils/platformUrls';
 import { formatLessonTitleForHeader } from '../../utils/formatLessonTitleForHeader';
 import { canAccessAdvancedSettings } from '../../utils/settingsAccess';
+import { portalHref, isLocalPlatformHost } from '../../utils/platformUrls';
 // import { toast } from '../../stores/toastStore';
 // Lazy-loaded modals — only loaded when user opens them
-const CompactAdvancedSettings = React.lazy(() =>
-  import('./CompactAdvancedSettings').then(m => ({ default: m.CompactAdvancedSettings }))
+const OfflineDownloadsModal = React.lazy(() =>
+  import('./OfflineDownloadsModal').then(m => ({ default: m.OfflineDownloadsModal }))
 );
 const CompactAbout = React.lazy(() =>
   import('./CompactAbout').then(m => ({ default: m.CompactAbout }))
+);
+const SettingsModal = React.lazy(() =>
+  import('./SettingsModal').then(m => ({ default: m.SettingsModal }))
 );
 const CompactMyProgress = React.lazy(() =>
   import('./CompactMyProgress').then(m => ({ default: m.CompactMyProgress }))
@@ -63,6 +66,7 @@ export const Header: React.FC<HeaderProps> = () => {
   const { isOnline } = useOfflineStatus();
   const [showSettings, setShowSettings] = useState(false);
   const [showAbout, setShowAbout] = useState(false);
+  const [showSettingsModal, setShowSettingsModal] = useState(false);
   const [showSideMenu, setShowSideMenu] = useState(false);
   const [navigationMode, setNavigationMode] = useState<NavigationMode>(getStoredNavigationMode);
   const [showMyProgress, setShowMyProgress] = useState(false);
@@ -391,7 +395,7 @@ export const Header: React.FC<HeaderProps> = () => {
         canOpenSettings &&
         createPortal(
           <Suspense fallback={null}>
-            <CompactAdvancedSettings isOpen={showSettings} onClose={() => setShowSettings(false)} />
+            <OfflineDownloadsModal isOpen={showSettings} onClose={() => setShowSettings(false)} />
           </Suspense>,
           document.body
         )}
@@ -409,6 +413,28 @@ export const Header: React.FC<HeaderProps> = () => {
               isOpen={showMyProgress}
               onClose={() => setShowMyProgress(false)}
               initialTab={showMyProgressTab}
+            />
+          </Suspense>,
+          document.body
+        )}
+      {showSettingsModal &&
+        createPortal(
+          <Suspense fallback={null}>
+            <SettingsModal
+              isOpen={showSettingsModal}
+              onClose={() => setShowSettingsModal(false)}
+              onOpenAbout={() => {
+                setShowSettingsModal(false);
+                setShowAbout(true);
+              }}
+              onOpenOfflineDownloads={
+                canOpenSettings
+                  ? () => {
+                      setShowSettingsModal(false);
+                      setShowSettings(true);
+                    }
+                  : undefined
+              }
             />
           </Suspense>,
           document.body
@@ -507,21 +533,6 @@ export const Header: React.FC<HeaderProps> = () => {
                 </span>
                 <span className="header-side-menu__text">{t('navigation.exercises')}</span>
               </button>
-              {canOpenSettings && (
-                <button
-                  onClick={() => {
-                    setShowSettings(true);
-                    setShowSideMenu(false);
-                  }}
-                  className="header-side-menu__item"
-                  aria-label={t('navigation.settingsShort')}
-                >
-                  <span className="header-side-menu__icon" aria-hidden="true">
-                    <NavMenuIcon name="settings" />
-                  </span>
-                  <span className="header-side-menu__text">{t('navigation.settingsShort')}</span>
-                </button>
-              )}
               {developmentMode && (
                 <button
                   onClick={() => {
@@ -542,19 +553,6 @@ export const Header: React.FC<HeaderProps> = () => {
               <div className="header-side-menu__spacer" />
               <div className="header-side-menu__footer">
                 <button
-                  onClick={() => {
-                    setShowAbout(true);
-                    setShowSideMenu(false);
-                  }}
-                  className="header-side-menu__item"
-                  aria-label="About LearnFlow"
-                >
-                  <span className="header-side-menu__icon" aria-hidden="true">
-                    <NavMenuIcon name="info" />
-                  </span>
-                  <span className="header-side-menu__text">About LearnFlow</span>
-                </button>
-                <button
                   type="button"
                   className="header-side-menu__item header-side-menu__item--theme"
                   aria-label={
@@ -572,52 +570,35 @@ export const Header: React.FC<HeaderProps> = () => {
                   </span>
                 </button>
                 <button
-                  type="button"
-                  className="header-side-menu__item header-side-menu__item--login"
-                  aria-label={user ? `${user.name} — perfil` : t('auth.loginToAccount')}
                   onClick={() => {
+                    setShowSettingsModal(true);
                     setShowSideMenu(false);
-                    if (typeof window !== 'undefined' && (window as any).lpLogin) {
-                      (window as any).lpLogin.open();
-                    }
                   }}
+                  className="header-side-menu__item"
+                  aria-label={t('navigation.settingsShort')}
                 >
                   <span className="header-side-menu__icon" aria-hidden="true">
-                    <NavMenuIcon name="user" />
+                    <NavMenuIcon name="settings" />
                   </span>
-                  <span className="header-side-menu__text">
-                    {user ? user.name : t('auth.login')}
-                  </span>
+                  <span className="header-side-menu__text">{t('navigation.settingsShort')}</span>
                 </button>
                 <a
                   href={portalHref()}
                   className="header-side-menu__item header-side-menu__item--portal"
                   aria-label="Portal"
-                  onClick={e => {
-                    if (!isLocalPlatformHost()) return;
-                    const url = new URL(e.currentTarget.href, location.origin);
-                    url.searchParams.set(
-                      'theme',
-                      document.documentElement.classList.contains('dark') ? 'dark' : 'light'
-                    );
-                    e.currentTarget.href = url.toString();
+                  onClick={event => {
+                    if (isLocalPlatformHost()) {
+                      const url = new URL(event.currentTarget.href, location.origin);
+                      url.searchParams.set('theme', theme === 'dark' ? 'dark' : 'light');
+                      event.currentTarget.href = url.toString();
+                    }
+                    setShowSideMenu(false);
                   }}
                 >
                   <span className="header-side-menu__icon" aria-hidden="true">
                     <NavMenuIcon name="home" />
                   </span>
                   <span className="header-side-menu__text">Portal</span>
-                </a>
-                <a
-                  href="privacy.html"
-                  className="header-side-menu__item"
-                  aria-label="Privacidad"
-                  onClick={() => setShowSideMenu(false)}
-                >
-                  <span className="header-side-menu__icon" aria-hidden="true">
-                    <NavMenuIcon name="info" />
-                  </span>
-                  <span className="header-side-menu__text">Privacidad</span>
                 </a>
               </div>
             </div>
