@@ -569,6 +569,17 @@ export const Header: React.FC<HeaderProps> = () => {
                     {theme === 'dark' ? t('navigation.lightMode') : t('navigation.darkMode')}
                   </span>
                 </button>
+                <a
+                  href="privacy.html"
+                  className="header-side-menu__item"
+                  aria-label="Privacidad"
+                  onClick={() => setShowSideMenu(false)}
+                >
+                  <span className="header-side-menu__icon" aria-hidden="true">
+                    <NavMenuIcon name="info" />
+                  </span>
+                  <span className="header-side-menu__text">Privacidad</span>
+                </a>
                 <button
                   onClick={() => {
                     setShowSettingsModal(true);
