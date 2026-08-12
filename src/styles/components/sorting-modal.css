@@ -295,7 +295,7 @@
 .sorting-modal__close-button {
   padding: 0.5rem 1.5rem;
   background-color: var(--lp-primary);
-  color: var(--lp-ink-inverse);
+  color: var(--lp-on-accent);
   border-radius: var(--lp-radius-md);
   transition: all var(--lp-duration-fast) var(--lp-ease);
   font-family: var(--lp-font-body);

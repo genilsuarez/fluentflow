@@ -117,7 +117,7 @@ html.dark body {
 
 .dark .btn--primary {
   background-color: var(--lp-primary);
-  color: var(--lp-ink-inverse);
+  color: var(--lp-on-accent);
 }
 
 .dark .btn--primary:hover {
@@ -184,7 +184,7 @@ body:has(.my-progress) {
   z-index: 10000;
   padding: 10px 18px;
   background: var(--lp-accent);
-  color: var(--lp-ink-inverse);
+  color: var(--lp-on-accent);
   font-weight: 700;
   font-size: 0.8rem;
   border-radius: var(--lp-radius-md);

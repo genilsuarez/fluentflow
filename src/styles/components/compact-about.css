@@ -61,7 +61,7 @@
   place-items: center;
   border-radius: 50%;
   background: var(--lp-accent);
-  color: var(--lp-ink-inverse);
+  color: var(--lp-on-accent);
   font-size: 1.05rem;
   font-weight: 700;
   letter-spacing: -0.03em;
@@ -190,7 +190,7 @@
   place-items: center;
   border-radius: 50%;
   background: var(--lp-accent);
-  color: var(--lp-ink-inverse);
+  color: var(--lp-on-accent);
   font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -401,7 +401,7 @@
   height: 36px;
   border-radius: 50%;
   background: var(--lp-accent);
-  color: var(--lp-ink-inverse);
+  color: var(--lp-on-accent);
   display: flex;
   align-items: center;
   justify-content: center;
