@@ -206,21 +206,19 @@ if (typeof window !== 'undefined') {
   });
 
   // Same-tab sync: lp-login modal writes lp-user directly
-  const lpLogin = (window as any).lpLogin;
+  const lpLogin = window.lpLogin;
   if (lpLogin && lpLogin.onUpdate) {
-    lpLogin.onUpdate(
-      (user: { id: string; name: string; email?: string; isSupabaseUser?: boolean } | null) => {
-        useUserStore.getState().setUser(
-          user
-            ? {
-                id: user.id,
-                name: user.name,
-                email: user.email,
-                isSupabaseUser: user.isSupabaseUser,
-              }
-            : null
-        );
-      }
-    );
+    lpLogin.onUpdate(user => {
+      useUserStore.getState().setUser(
+        user
+          ? {
+              id: user.id,
+              name: user.name,
+              email: user.email,
+              isSupabaseUser: user.isSupabaseUser,
+            }
+          : null
+      );
+    });
   }
 }

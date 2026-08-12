@@ -27,14 +27,6 @@ import { UnifiedFilter } from './UnifiedFilter';
 import { useMobileCategoryGridCapacity } from '../../hooks/useMobileCategoryGridCapacity';
 import '../../styles/components/main-menu.css';
 
-// M3 — bridge del script clásico public/lp-login-nudge.js (sin `export`).
-type LpLoginNudgeBridge = {
-  maybePrompt: (options: {
-    hasProgress: boolean;
-    copy: { eyebrow: string; title: string; lede: string };
-  }) => boolean;
-};
-
 const LEVEL_ORDER_EX = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'] as const;
 const CATEGORY_ORDER: Category[] = [
   'Grammar',
@@ -417,9 +409,8 @@ export const MainMenu: React.FC = () => {
   // toda la plataforma. Lógica compartida en public/lp-login-nudge.js.
   const completedModules = progression.stats.completedModules;
   useEffect(() => {
-    const lpLoginNudge = (window as Window & { lpLoginNudge?: LpLoginNudgeBridge }).lpLoginNudge;
-    if (!lpLoginNudge) return;
-    lpLoginNudge.maybePrompt({
+    if (!window.lpLoginNudge) return;
+    window.lpLoginNudge.maybePrompt({
       hasProgress: completedModules > 0,
       copy: {
         eyebrow: 'Módulo completado',

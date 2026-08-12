@@ -56,9 +56,7 @@ export const CompactAbout: React.FC<CompactAboutProps> = ({ isOpen, onClose }) =
       // Reload even when a browser does not expose every cache API.
     }
     try {
-      const guestReset = (
-        window as Window & { lpGuestReset?: { clearLocalCachePreserveSession: () => void } }
-      ).lpGuestReset;
+      const guestReset = window.lpGuestReset;
       if (guestReset?.clearLocalCachePreserveSession) {
         guestReset.clearLocalCachePreserveSession();
       } else {

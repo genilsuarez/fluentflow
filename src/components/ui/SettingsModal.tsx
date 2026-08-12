@@ -72,9 +72,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               aria-label={user ? `${user.name} — perfil` : t('auth.loginToAccount')}
               onClick={() => {
                 onClose();
-                if (typeof window !== 'undefined' && (window as any).lpLogin) {
-                  (window as any).lpLogin.open();
-                }
+                window.lpLogin?.open();
               }}
             >
               <span className="header-side-menu__icon" aria-hidden="true">

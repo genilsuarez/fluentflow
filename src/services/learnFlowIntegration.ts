@@ -79,11 +79,7 @@ export const publishLearnFlowIntegration = (
   );
 
   const moduleById = new Map(modules.map(module => [module.id, module]));
-  const wipeExisting =
-    typeof window !== 'undefined' &&
-    !!(
-      window as Window & { lpGuestReset?: { isExplicitLogout?: () => boolean } }
-    ).lpGuestReset?.isExplicitLogout?.();
+  const wipeExisting = typeof window !== 'undefined' && !!window.lpGuestReset?.isExplicitLogout?.();
 
   let existingContent: Record<
     string,

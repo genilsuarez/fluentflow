@@ -209,16 +209,8 @@ function resetDownloadState() {
   beginStatsDeferral();
 }
 
-type GuestResetBridge = {
-  shouldRejectSession: () => boolean;
-  shouldForceCloudDownload: () => boolean;
-  isExplicitLogout: () => boolean;
-  clearExplicitLogout: () => void;
-  clearGuestLocalProgress: () => void;
-};
-
-function getGuestReset(): GuestResetBridge | undefined {
-  return (window as Window & { lpGuestReset?: GuestResetBridge }).lpGuestReset;
+function getGuestReset() {
+  return window.lpGuestReset;
 }
 
 function shouldAbortCloudHydration(): boolean {

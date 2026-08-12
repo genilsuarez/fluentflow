@@ -9,32 +9,13 @@ import { handleAuthenticatedSession, handleSignedOut } from './syncEngine';
 import { checkLevelAdvancement, restoreLevelFromProfile } from './levelProgression';
 import { markStatsDisplayReady } from '../utils/statsBootstrap';
 import { useUserStore } from '../stores/userStore';
-import type { User } from '../types';
 
-type LpLoginBridge = {
-  setUserFromSupabase: (
-    user: { id: string; email?: string | null },
-    profile: { name?: string } | null
-  ) => void;
-  setUser: (user: User | null) => void;
-  getUser: () => (User & { isSupabaseUser?: boolean }) | null;
-};
-
-type LpGuestResetBridge = {
-  clearGuestLocalProgress: () => void;
-  hasLocalSupabaseIdentity: () => boolean;
-  shouldRejectSession: () => boolean;
-  shouldForceCloudDownload: () => boolean;
-  isExplicitLogout: () => boolean;
-  clearExplicitLogout: () => void;
-};
-
-function getLpLogin(): LpLoginBridge | undefined {
-  return (window as Window & { lpLogin?: LpLoginBridge }).lpLogin;
+function getLpLogin() {
+  return window.lpLogin;
 }
 
-function getLpGuestReset(): LpGuestResetBridge | undefined {
-  return (window as Window & { lpGuestReset?: LpGuestResetBridge }).lpGuestReset;
+function getLpGuestReset() {
+  return window.lpGuestReset;
 }
 
 function syncUserFromSupabase(
