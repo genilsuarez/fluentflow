@@ -228,35 +228,47 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
 
       {/* Stats Cards */}
       <div className="home-dash__stats">
-        <div className="home-dash__stat home-dash__stat--points">
+        <div
+          className={`home-dash__stat home-dash__stat--points${hasProgress ? '' : ' home-dash__stat--empty'}`}
+        >
           <Trophy className="home-dash__stat-icon" />
           <div className="home-dash__stat-content">
-            <span className="home-dash__stat-value">{animatedScore.toLocaleString()}</span>
+            <span className="home-dash__stat-value">
+              {hasProgress ? animatedScore.toLocaleString() : '—'}
+            </span>
             <span className="home-dash__stat-label">{t('dashboard.totalScore', 'Points')}</span>
           </div>
         </div>
-        <div className="home-dash__stat home-dash__stat--accuracy">
+        <div
+          className={`home-dash__stat home-dash__stat--accuracy${hasProgress ? '' : ' home-dash__stat--empty'}`}
+        >
           <Target className="home-dash__stat-icon" />
           <div className="home-dash__stat-content">
-            <span className="home-dash__stat-value">{animatedAvg}%</span>
+            <span className="home-dash__stat-value">{hasProgress ? `${animatedAvg}%` : '—'}</span>
             <span className="home-dash__stat-label">
               {t('dashboard.learningAccuracy', 'Accuracy')}
             </span>
           </div>
         </div>
-        <div className="home-dash__stat home-dash__stat--sessions">
+        <div
+          className={`home-dash__stat home-dash__stat--sessions${hasProgress ? '' : ' home-dash__stat--empty'}`}
+        >
           <Clock className="home-dash__stat-icon" />
           <div className="home-dash__stat-content">
-            <span className="home-dash__stat-value">{animatedSessions}</span>
+            <span className="home-dash__stat-value">{hasProgress ? animatedSessions : '—'}</span>
             <span className="home-dash__stat-label">
               {t('dashboard.studySessions', 'Sessions')}
             </span>
           </div>
         </div>
-        <div className="home-dash__stat home-dash__stat--time">
+        <div
+          className={`home-dash__stat home-dash__stat--time${hasProgress ? '' : ' home-dash__stat--empty'}`}
+        >
           <TrendingUp className="home-dash__stat-icon" />
           <div className="home-dash__stat-content">
-            <span className="home-dash__stat-value">{animatedMinutes}m</span>
+            <span className="home-dash__stat-value">
+              {hasProgress ? `${animatedMinutes}m` : '—'}
+            </span>
             <span className="home-dash__stat-label">{t('dashboard.timeSpent', 'Practiced')}</span>
           </div>
         </div>
