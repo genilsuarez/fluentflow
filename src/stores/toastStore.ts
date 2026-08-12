@@ -18,7 +18,7 @@ export interface ToastData {
 interface ToastStore {
   currentToast: ToastData | null;
   isVisible: boolean;
-  showToast: (toast: Omit<ToastData, 'id'>) => void;
+  showToast: (toast: Omit<ToastData, 'id'>) => boolean;
   clearToast: () => void;
   clearOnNavigation: () => void;
   showWelcomeOnce: (moduleCount: number) => void;
@@ -92,7 +92,9 @@ const toastStore = {
 
   // Show single toast (replaces any existing toast immediately)
   showToast(toast: Omit<ToastData, 'id'>) {
-    if (isMobileViewport()) return;
+    // isMobileViewport() sale sin renderizar — callers como showWelcomeOnce()
+    // no deben marcar "ya mostrado" cuando esto fue un no-op (M5).
+    if (isMobileViewport()) return false;
 
     const newToast: ToastData = {
       id: generateId(),
@@ -116,6 +118,8 @@ const toastStore = {
         }
       }, newToast.duration);
     }
+
+    return true;
   },
 
   // Clear current toast immediately
@@ -139,7 +143,7 @@ const toastStore = {
     const hasShown = safeLocalStorage.getItem('welcome-toast-shown');
 
     if (!hasShown) {
-      this.showToast({
+      const shown = this.showToast({
         type: 'success',
         title: 'Bienvenido',
         message: `${moduleCount} módulos disponibles para aprender`,
@@ -147,6 +151,9 @@ const toastStore = {
         priority: 'high',
       });
 
+      // M5 — en mobile showToast() es no-op (isMobileViewport); no quemar el
+      // único intento de bienvenida si nunca se mostró.
+      if (!shown) return;
       safeLocalStorage.setItem('welcome-toast-shown', 'true');
     }
   },
