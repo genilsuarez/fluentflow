@@ -19,6 +19,34 @@ html[data-stats-syncing] .home-dash .progress-snapshot__visual {
   opacity: 0.72;
 }
 
+/* M1/M5 — banner de contexto para usuario nuevo, reemplaza el toast de
+   bienvenida (no dependía de viewport ni de un flag que quemar). */
+.home-dash__welcome-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.65rem 0.9rem;
+  background: var(--lp-accent-soft, color-mix(in srgb, var(--lp-accent) 10%, transparent));
+  border: 1px solid var(--lp-border);
+  border-radius: var(--lp-radius-lg, 10px);
+}
+
+.home-dash__welcome-banner-icon {
+  font-size: 1.1rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.home-dash__welcome-banner-text {
+  font-size: 0.82rem;
+  color: var(--lp-ink-soft);
+  line-height: 1.4;
+}
+
+.home-dash__welcome-banner-text strong {
+  color: var(--lp-ink);
+}
+
 /* ─── STATS GRID ─── */
 .home-dash__stats {
   display: grid;

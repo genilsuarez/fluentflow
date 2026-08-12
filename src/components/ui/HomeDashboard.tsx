@@ -226,6 +226,25 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
         </button>
       </div>
 
+      {/* M1/M5 — contexto de plataforma para usuario nuevo. Reemplaza el
+          toast de bienvenida (toastStore.showWelcomeOnce): no dependía de
+          localStorage — se muestra mientras no haya progreso real, así que
+          no hay bandera que quemar en mobile (era el bug de M5). */}
+      {!hasProgress && modulesFetched ? (
+        <div className="home-dash__welcome-banner" role="status">
+          <span className="home-dash__welcome-banner-icon" aria-hidden="true">
+            🚀
+          </span>
+          <span className="home-dash__welcome-banner-text">
+            <strong>FluentFlow</strong> ·{' '}
+            {t(
+              'dashboard.welcomeBanner',
+              'Curso de inglés estructurado, del A1 al C2 — Empieza en Foundation o elige tu nivel.'
+            )}
+          </span>
+        </div>
+      ) : null}
+
       {/* Stats Cards */}
       <div className="home-dash__stats">
         <div

@@ -430,6 +430,8 @@ export const es = {
       'Tu mejor puntuación en cada ejercicio completado. Enfócate en ejercicios con puntuaciones más bajas para mejorar.',
     closeHelp: '¡Entendido!',
     yourProgress: 'Tu progreso',
+    welcomeBanner:
+      'Curso de inglés estructurado, del A1 al C2 — Empieza en Foundation o elige tu nivel.',
     nextStep: 'Siguiente paso',
     startLearning: 'Empieza a aprender',
     pickModule: 'Elige un módulo y comienza tu primera sesión.',

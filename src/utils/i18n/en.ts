@@ -429,6 +429,8 @@ export const en = {
       'Your best score in each completed exercise. Focus on exercises with lower scores to improve.',
     closeHelp: 'Got it!',
     yourProgress: 'Your progress',
+    welcomeBanner:
+      'Structured English course, from A1 to C2 — Start at Foundation or pick your level.',
     nextStep: 'Next step',
     startLearning: 'Start learning',
     pickModule: 'Pick a module and begin your first session.',

@@ -398,13 +398,6 @@ export const MainMenu: React.FC = () => {
     return () => clearTimeout(timerId);
   }, [viewMode, modulesView, isLoading, modules.length]);
 
-  // Show welcome toast when modules are loaded (only once per session)
-  useEffect(() => {
-    if (modules.length > 0 && !isLoading) {
-      toast.welcomeOnce(modules.length);
-    }
-  }, [modules.length, isLoading]);
-
   // M3 — nudge de login tras el primer módulo completado, una sola vez en
   // toda la plataforma. Lógica compartida en public/lp-login-nudge.js.
   const completedModules = progression.stats.completedModules;
