@@ -37,14 +37,15 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
     persistSession: true,
     autoRefreshToken: true,
     detectSessionInUrl: true,
-    // PKCE (default) awaits the code challenge before window.location.assign()
-    // inside signInWithOAuth — that async gap between the tap and the actual
-    // navigation is a pattern associated with redirects silently not
-    // happening on iOS Safari/Chrome (WebKit). 'implicit' builds the URL
-    // synchronously, no gap. Trade-off: PKCE better protects against auth
-    // code interception; implicit is the classic OAuth flow, less robust on
-    // that front but widely used and without this issue.
-    flowType: 'implicit',
+    // PKCE (A.3.1, docs/auditoria-y-plan.md) — previamente 'implicit', porque
+    // signInWithOAuth() normal hace un await (hashear el code challenge con
+    // SHA-256) entre el tap y window.location.assign(), y ese salto async
+    // hace que WebKit (Safari/Chrome iOS) descarte el redirect en silencio.
+    // beginGoogleOAuthRedirect() de abajo arma el challenge PKCE a mano con
+    // método 'plain' (challenge === verifier, sin hash) para que todo el
+    // camino siga siendo síncrono dentro del gesto del usuario, sin volver a
+    // 'implicit'. Pendiente de confirmar en dispositivo iOS real.
+    flowType: 'pkce',
   },
 });
 
@@ -59,15 +60,60 @@ export function getSession() {
   return supabase.auth.getSession();
 }
 
-export function buildGoogleOAuthUrl(redirectTo?: string) {
+/**
+ * Genera un code_verifier de PKCE (RFC 7636: 43-128 chars, alfabeto
+ * URL-safe) de forma SÍNCRONA — crypto.getRandomValues no hace await, a
+ * diferencia de crypto.subtle.digest (que sí, y es lo que rompe el redirect
+ * en WebKit si se usa el challenge S256 por defecto del SDK).
+ */
+function generateCodeVerifier(): string {
+  const bytes = new Uint8Array(32);
+  crypto.getRandomValues(bytes);
+  let binary = '';
+  for (const byte of bytes) binary += String.fromCharCode(byte);
+  return btoa(binary).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+}
+
+/**
+ * Réplica la key de storage que @supabase/auth-js usa para el code_verifier
+ * (`${storageKey}-code-verifier`, storageKey default `sb-<project-ref>-auth-
+ * token`). No es API pública documentada — verificado leyendo
+ * @supabase/auth-js en node_modules (GoTrueClient.js, _exchangeCodeForSession
+ * y el default de SupabaseClient), no la documentación. Puede cambiar en un
+ * bump de versión sin aviso — ver A.3.1 en docs/auditoria-y-plan.md.
+ */
+function pkceVerifierStorageKey(): string {
+  const projectRef = new URL(supabaseUrl).hostname.split('.')[0];
+  return `sb-${projectRef}-auth-token-code-verifier`;
+}
+
+export function buildGoogleOAuthUrl(redirectTo?: string, codeChallenge?: string) {
   const target =
     redirectTo || window.location.origin + window.location.pathname + window.location.search;
-  return `${supabaseUrl}/auth/v1/authorize?provider=google&redirect_to=${encodeURIComponent(target)}`;
+  const params = new URLSearchParams({ provider: 'google', redirect_to: target });
+  if (codeChallenge) {
+    // Método 'plain' (challenge === verifier, sin hash S256) — el mismo
+    // fallback que usa @supabase/auth-js cuando crypto.subtle no está
+    // disponible. Más débil que S256, pero sigue protegiendo contra
+    // interceptación del `code` de vuelta (sin el verifier, es inútil) y
+    // deja todo el camino de ida síncrono.
+    params.set('code_challenge', codeChallenge);
+    params.set('code_challenge_method', 'plain');
+  }
+  return `${supabaseUrl}/auth/v1/authorize?${params.toString()}`;
 }
 
 /** Synchronous redirect — must stay in the user-gesture call stack (iOS WebKit). */
 export function beginGoogleOAuthRedirect(redirectTo?: string) {
-  window.location.assign(buildGoogleOAuthUrl(redirectTo));
+  const codeVerifier = generateCodeVerifier();
+  try {
+    window.localStorage.setItem(pkceVerifierStorageKey(), codeVerifier);
+  } catch {
+    // localStorage no disponible (modo privado estricto, cuota) — el
+    // redirect igual sigue; exchangeCodeForSession() fallará al volver con
+    // AuthPKCECodeVerifierMissingError, mismo resultado que hoy en ese caso.
+  }
+  window.location.assign(buildGoogleOAuthUrl(redirectTo, codeVerifier));
 }
 
 export function signInWithGoogle() {
