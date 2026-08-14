@@ -191,6 +191,20 @@
   flex-shrink: 0;
 }
 
+.module-card__requires {
+  font-size: 0.625rem;
+  line-height: 1.3;
+  color: var(--lp-muted);
+  text-align: center;
+  margin: 0.125rem 0 0;
+  padding: 0 0.25rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 /* Learning Mode Variants - BEM-Like Modifiers with Enhanced Gradient Overlays */
 .module-card--flashcard {
   --module-accent: #3b82f6;

@@ -656,6 +656,19 @@ export const ProgressionDashboard: React.FC<ProgressionDashboardProps> = ({
                                   {module.estimatedTime}min
                                 </span>
                               </div>
+                              {status === 'locked' &&
+                                (() => {
+                                  const missingNames = progression
+                                    .getMissingPrerequisites(module.id)
+                                    .map(m => m.name);
+                                  return missingNames.length > 0 ? (
+                                    <p className="progression-dashboard__module-requires">
+                                      {t('learning.requiresPrerequisitesNamed', undefined, {
+                                        names: missingNames.join(', '),
+                                      })}
+                                    </p>
+                                  ) : null;
+                                })()}
                             </div>
 
                             {isNext && (

@@ -340,6 +340,7 @@ export const en = {
     finishSorting: 'Finish',
     loadingSorting: 'Loading sorting exercise...',
     requiresPrerequisites: 'Requires {{count}} prerequisite{{plural}}',
+    requiresPrerequisitesNamed: 'Requires: {{names}}',
     startExercise: 'Start {{mode}}: {{name}} (Level: {{level}})',
     exerciseIsLocked: '{{name}} is locked. {{status}}',
     noFlashcardsAvailable: 'No flashcards available',

@@ -33,6 +33,8 @@ interface ModuleCardProps {
   moduleStatus?: 'completed' | 'unlocked' | 'locked';
   /** Pre-computed missing prerequisites count */
   missingPrerequisitesCount?: number;
+  /** Pre-computed names of the missing prerequisite modules */
+  missingPrerequisiteNames?: string[];
   /** Pre-computed best score percentage — avoids per-card store subscription */
   progressPercentage?: number;
   /** Language for translations — avoids per-card store subscription */
@@ -90,6 +92,7 @@ export const ModuleCard: React.FC<ModuleCardProps> = React.memo(
     hiddenDependencies,
     moduleStatus = 'locked',
     missingPrerequisitesCount = 0,
+    missingPrerequisiteNames,
     progressPercentage = 0,
     language,
   }) => {
@@ -142,10 +145,15 @@ export const ModuleCard: React.FC<ModuleCardProps> = React.memo(
           return {
             className: 'module-card--locked',
             statusIcon: <Lock size={12} className="text-white" />,
-            statusText: t('learning.requiresPrerequisites', undefined, {
-              count: missingPrerequisitesCount,
-              plural: missingPrerequisitesCount !== 1 ? 's' : '',
-            }),
+            statusText:
+              missingPrerequisiteNames && missingPrerequisiteNames.length > 0
+                ? t('learning.requiresPrerequisitesNamed', undefined, {
+                    names: missingPrerequisiteNames.join(', '),
+                  })
+                : t('learning.requiresPrerequisites', undefined, {
+                    count: missingPrerequisitesCount,
+                    plural: missingPrerequisitesCount !== 1 ? 's' : '',
+                  }),
             disabled: true,
           };
         default:
@@ -208,6 +216,15 @@ export const ModuleCard: React.FC<ModuleCardProps> = React.memo(
                 {module.estimatedTime || 5}min
               </span>
             </div>
+            {status === 'locked' &&
+              missingPrerequisiteNames &&
+              missingPrerequisiteNames.length > 0 && (
+                <p className="module-card__requires">
+                  {t('learning.requiresPrerequisitesNamed', undefined, {
+                    names: missingPrerequisiteNames.join(', '),
+                  })}
+                </p>
+              )}
           </div>
 
           {/* Status indicators - Consistent positioning for all states */}

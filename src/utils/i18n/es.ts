@@ -341,6 +341,7 @@ export const es = {
     finishSorting: 'Finalizar',
     loadingSorting: 'Cargando ejercicio de clasificación...',
     requiresPrerequisites: 'Requiere {{count}} prerrequisito{{plural}}',
+    requiresPrerequisitesNamed: 'Requiere: {{names}}',
     startExercise: 'Iniciar {{mode}}: {{name}} (Nivel: {{level}})',
     exerciseIsLocked: '{{name}} está bloqueado. {{status}}',
     noFlashcardsAvailable: 'No hay tarjetas disponibles',

@@ -668,6 +668,19 @@
   color: var(--theme-text-tertiary, #9c8e7c);
 }
 
+.progression-dashboard__module-requires {
+  font-size: var(--text-xs, 0.75rem);
+  color: var(--theme-text-tertiary, #9c8e7c);
+  font-style: italic;
+  margin: 0.125rem 0 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
 .progression-dashboard__next-indicator {
   position: absolute;
   top: -1px;

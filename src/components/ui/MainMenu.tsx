@@ -124,7 +124,12 @@ export const MainMenu: React.FC = () => {
 
     const map = new Map<
       string,
-      { status: 'completed' | 'unlocked' | 'locked'; missingCount: number; progressPct: number }
+      {
+        status: 'completed' | 'unlocked' | 'locked';
+        missingCount: number;
+        missingNames: string[];
+        progressPct: number;
+      }
     >();
     for (const m of modules) {
       const completion = getModuleCompletion(m.id);
@@ -143,9 +148,12 @@ export const MainMenu: React.FC = () => {
         status = progression.getModuleStatus(m.id);
       }
 
+      const missingPrereqs = status === 'locked' ? progression.getMissingPrerequisites(m.id) : [];
+
       map.set(m.id, {
         status,
-        missingCount: status === 'locked' ? progression.getMissingPrerequisites(m.id).length : 0,
+        missingCount: missingPrereqs.length,
+        missingNames: missingPrereqs.map(p => p.name),
         progressPct: completion?.bestScore || 0,
       });
     }
@@ -606,6 +614,7 @@ export const MainMenu: React.FC = () => {
                         missingPrerequisitesCount={
                           exerciseStatusMap.get(module.id)?.missingCount ?? 0
                         }
+                        missingPrerequisiteNames={exerciseStatusMap.get(module.id)?.missingNames}
                         hiddenDependencies={hiddenDepsMap?.get(module.id)}
                         progressPercentage={exerciseStatusMap.get(module.id)?.progressPct ?? 0}
                         language={language}
@@ -772,6 +781,9 @@ export const MainMenu: React.FC = () => {
                                                 missingPrerequisitesCount={
                                                   exerciseStatusMap.get(module.id)?.missingCount ??
                                                   0
+                                                }
+                                                missingPrerequisiteNames={
+                                                  exerciseStatusMap.get(module.id)?.missingNames
                                                 }
                                                 hiddenDependencies={hiddenDepsMap?.get(module.id)}
                                                 progressPercentage={
