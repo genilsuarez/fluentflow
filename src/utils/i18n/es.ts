@@ -246,22 +246,10 @@ export const es = {
     feature4: 'Interfaz bilingüe (Inglés/Español)',
     feature5: 'Múltiples modos de aprendizaje y juegos',
     developerTitle: 'Experto Cloud apasionado por la GenAI',
-    screenInformation: 'Información de Pantalla',
-    clickToViewScreenInfo: 'Clic para ver información de pantalla',
-    clearCache: 'Limpiar caché',
-    clearCacheDescription:
-      'Esto elimina los recursos en caché y los datos locales de LearnFlow (DeskFlow, FluentFlow, HubFlow, LyricFlow) en este navegador, y recarga. Solo queda limitado a esta app si corren en puertos de dev separados (learnctl start individual). El tema, el modo de navegación compartidos y tu sesión de acceso se mantienen.',
-    clearCacheConfirm: 'Limpiar y recargar',
     acknowledgments: 'Agradecimientos',
     acknowledgementsText:
       'Construido con pasión por el aprendizaje de idiomas y la educación. Agradecimientos especiales a la comunidad de código abierto por las increíbles herramientas y librerías que hicieron posible este proyecto.',
     githubProfile: 'Perfil de GitHub',
-    closeScreenInfo: 'Cerrar información de pantalla',
-    screenResolution: 'Resolución:',
-    screenViewport: 'Ventana:',
-    screenPixelRatio: 'Ratio de Píxeles:',
-    screenColorDepth: 'Profundidad de Color:',
-    screenOrientation: 'Orientación:',
     platformWeb: 'Web',
   },
   learning: {

@@ -79,6 +79,19 @@ export class ProgressionService {
       return false;
     }
 
+    // Cross-app gate: `lp-level` (localStorage) es el nivel CEFR combinado de
+    // las 3 apps, calculado en lp-progress-summary.js con la regla FluentFlow
+    // ≥100% + LyricFlow ≥100% + HubFlow ≥50% del nivel anterior. Sin este
+    // check, terminar el nivel anterior solo en FluentFlow ya desbloqueaba el
+    // siguiente aquí, aunque HubFlow/LyricFlow estuvieran muy por detrás —
+    // isPreviousLevelComplete() de arriba solo mira el progreso propio de
+    // FluentFlow. No se fusiona con ese método porque también alimenta
+    // countsTowardProgress() (estadísticas del dashboard), que debe seguir
+    // reflejando el progreso real de FluentFlow sin depender de las otras apps.
+    if (!this.hasReachedCombinedLevel(module)) {
+      return false;
+    }
+
     // If no prerequisites, module is unlocked
     if (!module.prerequisites || module.prerequisites.length === 0) {
       return true;
@@ -253,6 +266,34 @@ export class ProgressionService {
 
     // All modules of the previous level must be completed
     return previousLevelModules.every(mod => this.completedModules.has(mod.id));
+  }
+
+  /** `true` si `lp-level` (combinado cross-app) ya alcanzó el nivel del módulo. A1 nunca lo requiere. */
+  private hasReachedCombinedLevel(module: LearningModule): boolean {
+    const primaryLevel = this.getPrimaryLevel(module);
+    if (!primaryLevel) return true;
+    const levelIndex = LEVEL_ORDER.indexOf(primaryLevel as (typeof LEVEL_ORDER)[number]);
+    if (levelIndex <= 0) return true;
+    return levelIndex <= this.getCombinedLevelIndex();
+  }
+
+  /**
+   * Índice en LEVEL_ORDER de `lp-level` (localStorage), con default 'a1' si
+   * la key no existe todavía — mismo fallback que readLpLevel() en el módulo
+   * canónico lp-progress-summary.js. A diferencia de getSelfAssessedLevelIndex()
+   * (que usa -1 como "sin autoevaluación" para un bypass opcional), este valor
+   * es un gate obligatorio: tratar "sin key" como -1 aquí bloquearía A2 para
+   * cualquier usuario nuevo, que nunca tiene 'lp-level' escrito hasta el
+   * primer ascenso de nivel.
+   */
+  private getCombinedLevelIndex(): number {
+    try {
+      const stored = localStorage.getItem('lp-level') || 'a1';
+      const idx = LEVEL_ORDER.indexOf(stored as (typeof LEVEL_ORDER)[number]);
+      return idx === -1 ? 0 : idx;
+    } catch {
+      return 0;
+    }
   }
 
   /** Índice en LEVEL_ORDER del nivel autoevaluado en `lp-level` (localStorage), o -1 si no hay ninguno. */

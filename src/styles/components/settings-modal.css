@@ -40,24 +40,24 @@
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  padding: 14px 14px 12px;
+  padding: 8px 12px 7px;
   border-bottom: 1px solid var(--lp-border);
   flex-shrink: 0;
 }
 
 .lp-settings-header h2 {
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.1;
   color: var(--lp-ink);
 }
 
 .lp-settings-close {
-  flex: 0 0 44px;
-  width: 44px;
-  height: 44px;
-  margin: -4px -6px -4px 0;
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  margin: -2px -4px -2px 0;
   padding: 0;
   display: grid;
   place-items: center;
@@ -87,25 +87,25 @@
 }
 
 .lp-settings-body {
-  padding: 14px 14px 16px;
+  padding: 8px 10px 10px;
   overflow-y: auto;
   flex: 1;
   min-height: 0;
   display: grid;
-  gap: 16px;
+  gap: 8px;
 }
 
 .lp-settings-section {
   display: grid;
-  gap: 2px;
-  padding: 6px;
+  gap: 0;
+  padding: 3px;
   border: 1px solid var(--lp-border);
   border-radius: 12px;
   background: var(--lp-surface);
 }
 
 .lp-settings-section__title {
-  margin: 6px 8px 4px;
+  margin: 3px 6px 1px;
   color: var(--lp-muted);
   font-size: 10px;
   font-weight: 600;
@@ -115,6 +115,8 @@
 
 .lp-settings-section .header-side-menu__item {
   width: 100%;
+  min-height: 32px;
+  padding: 5px 10px;
 }
 
 @keyframes settingsFadeIn {

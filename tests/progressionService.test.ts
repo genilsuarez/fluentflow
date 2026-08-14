@@ -1,3 +1,4 @@
+// @vitest-environment jsdom
 import { describe, it, expect, beforeEach } from 'vitest';
 import { ProgressionService } from '../src/services/progressionService';
 import type { LearningModule } from '../src/types';
@@ -8,7 +9,7 @@ describe('ProgressionService', () => {
 
   beforeEach(() => {
     progressionService = new ProgressionService();
-    
+
     // Create mock modules with prerequisites
     mockModules = [
       {
@@ -20,7 +21,7 @@ describe('ProgressionService', () => {
         unit: 1,
         prerequisites: [],
         estimatedTime: 5,
-        difficulty: 1
+        difficulty: 1,
       },
       {
         id: 'module-a1-2',
@@ -31,7 +32,7 @@ describe('ProgressionService', () => {
         unit: 1,
         prerequisites: ['module-a1-1'],
         estimatedTime: 5,
-        difficulty: 1
+        difficulty: 1,
       },
       {
         id: 'module-a2-1',
@@ -42,8 +43,8 @@ describe('ProgressionService', () => {
         unit: 2,
         prerequisites: ['module-a1-2'],
         estimatedTime: 5,
-        difficulty: 2
-      }
+        difficulty: 2,
+      },
     ];
 
     progressionService.initialize(mockModules, []);
@@ -182,12 +183,63 @@ describe('ProgressionService', () => {
     it('should update unit status after completing modules', () => {
       progressionService.completeModule('module-a1-1');
       progressionService.completeModule('module-a1-2');
-      
+
       const unit1Status = progressionService.getUnitCompletionStatus(1);
       expect(unit1Status.total).toBe(2);
       expect(unit1Status.completed).toBe(2);
       expect(unit1Status.percentage).toBe(100);
       expect(unit1Status.allCompleted).toBe(true);
+    });
+  });
+
+  describe('cross-app lp-level gate', () => {
+    let crossAppService: ProgressionService;
+    let crossAppModules: LearningModule[];
+
+    beforeEach(() => {
+      localStorage.clear();
+      crossAppService = new ProgressionService();
+      crossAppModules = [
+        {
+          id: 'a1-only',
+          name: 'A1 Module',
+          learningMode: 'flashcard',
+          level: ['a1'],
+          category: 'Vocabulary',
+          unit: 1,
+          prerequisites: [],
+          estimatedTime: 5,
+          difficulty: 1,
+        },
+        {
+          id: 'a2-only',
+          name: 'A2 Module',
+          learningMode: 'flashcard',
+          level: ['a2'],
+          category: 'Vocabulary',
+          unit: 2,
+          prerequisites: [],
+          estimatedTime: 5,
+          difficulty: 2,
+        },
+      ];
+      // FluentFlow's own A1 is fully complete — this alone must NOT unlock A2.
+      crossAppService.initialize(crossAppModules, ['a1-only']);
+    });
+
+    it('should keep next-level modules locked when lp-level has not caught up, even if FluentFlow finished its own previous level', () => {
+      expect(localStorage.getItem('lp-level')).toBeNull();
+      expect(crossAppService.isModuleUnlocked('a2-only')).toBe(false);
+    });
+
+    it('should unlock next-level modules once lp-level (combined FluentFlow+HubFlow+LyricFlow) reaches that level', () => {
+      localStorage.setItem('lp-level', 'a2');
+      expect(crossAppService.isModuleUnlocked('a2-only')).toBe(true);
+    });
+
+    it('should default missing lp-level to a1 without blocking a1-level modules', () => {
+      expect(localStorage.getItem('lp-level')).toBeNull();
+      expect(crossAppService.isModuleUnlocked('a1-only')).toBe(true);
     });
   });
 

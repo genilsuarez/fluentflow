@@ -245,22 +245,10 @@ export const en = {
     feature4: 'Bilingual interface (English/Spanish)',
     feature5: 'Multiple learning modes and games',
     developerTitle: 'Cloud Expert passionate about GenAI',
-    screenInformation: 'Screen Information',
-    clickToViewScreenInfo: 'Click to view screen information',
-    clearCache: 'Clear cache',
-    clearCacheDescription:
-      'This deletes cached assets and local data for LearnFlow (DeskFlow, FluentFlow, HubFlow, LyricFlow) in this browser, then reloads. Only scoped to this app if the apps are running on separate dev ports (learnctl start individual). Shared theme/navigation preferences and your login session are kept.',
-    clearCacheConfirm: 'Clear & reload',
     acknowledgments: 'Acknowledgments',
     acknowledgementsText:
       'Built with passion for language learning and education. Special thanks to the open-source community for the amazing tools and libraries that made this project possible.',
     githubProfile: 'GitHub Profile',
-    closeScreenInfo: 'Close screen information',
-    screenResolution: 'Resolution:',
-    screenViewport: 'Viewport:',
-    screenPixelRatio: 'Pixel Ratio:',
-    screenColorDepth: 'Color Depth:',
-    screenOrientation: 'Orientation:',
     platformWeb: 'Web',
   },
   learning: {
