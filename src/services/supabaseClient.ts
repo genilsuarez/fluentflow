@@ -312,6 +312,36 @@ export async function fetchActivityEvents(): Promise<RemoteActivityRow[] | null>
   return data ?? [];
 }
 
+export interface RemoteInvalidationRow {
+  content_id: string | null;
+  invalidated_at: string;
+}
+
+/**
+ * Invalidaciones de progreso más nuevas que `sinceIso` (migración 024 de
+ * LearnBackend). El cliente las usa para purgar su propio localStorage antes
+ * de sincronizar, así nunca re-sube un "completado" que un admin acaba de
+ * corregir. `content_id: null` significa "toda la app".
+ */
+export async function fetchInvalidations(
+  sinceIso: string
+): Promise<RemoteInvalidationRow[] | null> {
+  const {
+    data: { session },
+  } = await supabase.auth.getSession();
+  if (!session?.user) return [];
+
+  const { data, error } = await supabase
+    .from('progress_invalidations')
+    .select('content_id, invalidated_at')
+    .eq('user_id', session.user.id)
+    .eq('app', 'fluentflow')
+    .gt('invalidated_at', sinceIso);
+
+  if (error) return null;
+  return data ?? [];
+}
+
 export interface ActivityEventInput {
   eventId: string;
   runId: string;

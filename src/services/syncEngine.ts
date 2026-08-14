@@ -26,6 +26,7 @@ import {
   type ProgressContentItem,
 } from './supabaseClient';
 import { bootstrapFromLocalProjection } from './projectionBootstrap';
+import { purgeInvalidatedProgress } from './progressInvalidations';
 import {
   mergeRemoteActivityHistory,
   mergeRemoteProgress,
@@ -281,6 +282,13 @@ async function downloadOnLogin({ force = false } = {}) {
   // DeskFlow may have already downloaded cloud data into the v1 projection keys.
   // Import those into Zustand before merging remote rows.
   await bootstrapFromLocalProjection();
+  if (shouldAbortCloudHydration() || !(await isAuthenticated().catch(() => false))) return;
+
+  // Purge anything an admin invalidated server-side BEFORE merging/uploading
+  // anything else this cycle — otherwise a stale local "completed" entry
+  // gets merged back in below and re-uploaded by the scheduleSync() this
+  // function triggers, undoing the correction. See progressInvalidations.ts.
+  await purgeInvalidatedProgress().catch(() => false);
   if (shouldAbortCloudHydration() || !(await isAuthenticated().catch(() => false))) return;
 
   const [remoteProgress, remoteActivity] = await Promise.all([
