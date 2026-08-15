@@ -230,6 +230,11 @@
     var(--theme-bg-subtle, #fafafa) 0%,
     var(--theme-bg-primary, #f9fafb) 100%
   );
+  /* Sin min-height, el skeleton por defecto (una barra de 1rem) colapsaba
+     dejando el resto del contenedor en blanco mientras carga el módulo. */
+  min-height: 60vh;
+  padding: 1.5rem;
+  display: flex;
 }
 
 /* Error state visual hierarchy */

@@ -31,10 +31,14 @@ const ListeningQuizComponent = lazyWithRetry(() => import('../learning/Listening
 const DictationComponent = lazyWithRetry(() => import('../learning/DictationComponent'));
 const ListenCompleteComponent = lazyWithRetry(() => import('../learning/ListenCompleteComponent'));
 
-// Enhanced loading component
+// Antes usaba el LoadingSkeleton por defecto (una barra de 1rem), casi
+// invisible dentro de .app-router__loader sin altura propia — el usuario
+// veía una pantalla en blanco de 1-2s al abrir un ejercicio, sin indicio de
+// que algo estaba cargando. variant="card" + height ocupan el alto del
+// contenedor para que se note de inmediato.
 const ComponentLoader: React.FC = () => (
   <div className="app-router__loader">
-    <LoadingSkeleton />
+    <LoadingSkeleton variant="card" width="100%" height="100%" />
   </div>
 );
 

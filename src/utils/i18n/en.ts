@@ -281,6 +281,7 @@ export const en = {
     helpTextNotFlipped: 'Click card or press Enter/Space to flip',
     backToMenu: 'Back to Menu',
     returnToMainMenu: 'Return to main menu',
+    confirmExitScored: 'Exit exercise? You will lose this session’s progress.',
     previousCard: 'Previous Card (←)',
     nextCard: 'Next (→)',
     finishFlashcards: 'Finish Flashcards',

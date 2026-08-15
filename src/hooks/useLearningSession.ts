@@ -85,6 +85,13 @@ export const useLearningSession = ({
 
       updateUserScore(moduleId, finalScore, timeSpent);
 
+      // El intento ya quedó registrado (addProgressEntry + updateUserScore):
+      // limpiar sessionScore ahora para que el guard de returnToMenu() en
+      // useMenuNavigation no confunda "resultado ya guardado" con "progreso
+      // sin guardar" y pida confirmar de más al salir desde la pantalla de
+      // resultado.
+      resetSession();
+
       // Show result screen instead of navigating away
       setExerciseResult({
         score: finalScore,
@@ -94,13 +101,25 @@ export const useLearningSession = ({
         moduleName,
       });
     },
-    [startTime, runId, moduleId, moduleName, learningMode, addProgressEntry, updateUserScore]
+    [
+      startTime,
+      runId,
+      moduleId,
+      moduleName,
+      learningMode,
+      addProgressEntry,
+      updateUserScore,
+      resetSession,
+    ]
   );
 
   const handleResultContinue = useCallback(() => {
     returnToMenu({ autoScrollToNext: true });
   }, [returnToMenu]);
 
+  // El guard de "hay progreso sin guardar" vive en useMenuNavigation.returnToMenu()
+  // — cubre este atajo, la flecha del header y el menú lateral con una sola
+  // implementación en vez de repetirla por cada punto de salida.
   const handleReturnToMenu = useCallback(() => returnToMenu(), [returnToMenu]);
 
   // Escape key to return to menu (base behavior, components can override)

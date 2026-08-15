@@ -282,6 +282,7 @@ export const es = {
     helpTextNotFlipped: 'Haz clic en la tarjeta o presiona Enter/Espacio para voltear',
     backToMenu: 'Volver al Menú',
     returnToMainMenu: 'Volver al menú principal',
+    confirmExitScored: '¿Salir del ejercicio? Perderás el progreso de esta sesión.',
     previousCard: 'Tarjeta Anterior (←)',
     nextCard: 'Siguiente (→)',
     finishFlashcards: 'Finalizar Tarjetas',
