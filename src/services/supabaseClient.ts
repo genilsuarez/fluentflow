@@ -235,19 +235,11 @@ export async function syncProgress(
     };
   }
 
-  const message = rpcError.message || '';
-  const rpcMissing = /could not find the function|function .* does not exist|PGRST202|404/i.test(
-    message
-  );
-  if (!rpcMissing) return { synced: false, reason: message };
-
-  const { error } = await supabase
-    .from('progress')
-    .upsert(rows, { onConflict: 'user_id,app,content_id' });
-
-  return error
-    ? { synced: false, reason: error.message }
-    : { synced: true, count: rows.length, via: 'upsert_fallback' };
+  // No fallback to a plain .upsert() here on purpose: that path overwrites the
+  // whole row instead of merging (greatest()/OR per field), which is exactly
+  // the multi-device last-write-wins race migración 019 replaced. Failing the
+  // cycle is safe — scheduleSync/visibility-refresh retry it automatically.
+  return { synced: false, reason: rpcError.message || 'rpc_failed' };
 }
 
 export interface RemoteProgressRow {
