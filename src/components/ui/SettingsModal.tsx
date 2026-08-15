@@ -6,6 +6,7 @@ import { useTranslation } from '../../utils/i18n';
 import { useEscapeKey } from '../../hooks/useEscapeKey';
 import { portalHref, isLocalPlatformHost } from '../../utils/platformUrls';
 import { NavMenuIcon } from './NavMenuIcon';
+import { DevToolsPanel } from './DevToolsPanel';
 import '../../styles/components/settings-modal.css';
 
 interface SettingsModalProps {
@@ -21,7 +22,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
   onOpenAbout,
   onOpenOfflineDownloads,
 }) => {
-  const { language, theme, setTheme } = useSettingsStore();
+  const { language, theme, setTheme, developmentMode } = useSettingsStore();
   const user = useUserStore(state => state.user);
   const { t } = useTranslation(language);
 
@@ -151,6 +152,15 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               <span className="header-side-menu__text">Privacidad</span>
             </a>
           </section>
+
+          {developmentMode && (
+            <section aria-labelledby="settings-section-dev" className="lp-settings-section">
+              <h3 id="settings-section-dev" className="lp-settings-section__title">
+                Desarrollador
+              </h3>
+              <DevToolsPanel />
+            </section>
+          )}
         </div>
       </section>
     </div>
