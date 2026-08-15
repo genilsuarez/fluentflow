@@ -299,11 +299,15 @@ async function downloadOnLogin({ force = false } = {}) {
   await purgeInvalidatedProgress().catch(() => false);
   if (shouldAbortCloudHydration() || !(await isAuthenticated().catch(() => false))) return;
 
+  // Antes el gate era `wasActivityFetched() || hasLocalActivityLedger()`:
+  // como hasLocalActivityLedger() es casi siempre true para un usuario
+  // activo, el fetch remoto se saltaba para siempre, no solo dentro de la
+  // misma sesión — actividad hecha en otro dispositivo nunca llegaba acá.
+  // Solo wasActivityFetched() (sessionStorage, se resetea por pestaña/reload)
+  // es el gate correcto — mismo fix que scripts/sync-engine.js.
   const [remoteProgress, remoteActivity] = await Promise.all([
     fetchProgress().catch(() => null),
-    wasActivityFetched() || hasLocalActivityLedger()
-      ? Promise.resolve([])
-      : fetchActivityEvents().catch(() => null),
+    wasActivityFetched() ? Promise.resolve([]) : fetchActivityEvents().catch(() => null),
   ]);
   if (hasLocalActivityLedger() || (Array.isArray(remoteActivity) && remoteActivity.length > 0)) {
     markActivityFetched();
@@ -390,12 +394,20 @@ async function refreshFromCloudIfNeeded({ force = false } = {}) {
   }
 }
 
+// -1 (no 0) como default: "nunca chequeado" tiene que ser distinguible de
+// "la última revisión vista fue 0" — ver la misma nota en scripts/sync-engine.js.
+// Datos de progreso escritos antes de la migración 026 nunca bumpearon
+// sync_cursor, así que un usuario con progreso real puede tener revision=0
+// ahí; con 0 como sentinel de "nunca chequeado" el dispositivo concluye
+// falsamente "ya estoy al día" y no pullea nunca.
 function readLastSeenRevision(): number {
   try {
-    const n = Number(localStorage.getItem(SYNC_REVISION_KEY));
-    return Number.isFinite(n) ? n : 0;
+    const raw = localStorage.getItem(SYNC_REVISION_KEY);
+    if (raw === null) return -1;
+    const n = Number(raw);
+    return Number.isFinite(n) ? n : -1;
   } catch {
-    return 0;
+    return -1;
   }
 }
 
