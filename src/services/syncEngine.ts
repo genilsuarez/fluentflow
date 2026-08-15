@@ -101,51 +101,55 @@ let syncChannel: BroadcastChannel | null = null;
 let uploading = false;
 let needsReschedule = false;
 
+async function performSync() {
+  if (shouldAbortCloudHydration()) return;
+  const authed = await isAuthenticated().catch(() => false);
+  if (!authed || shouldAbortCloudHydration()) return;
+  if (!cloudHydrated) {
+    pendingCloudSync = true;
+    return;
+  }
+  if (uploading) {
+    needsReschedule = true;
+    return;
+  }
+
+  pendingCloudSync = false;
+  uploading = true;
+  try {
+    // Pull before push so another device/tab's newer cloud rows win merge.
+    await downloadOnLogin({ force: true });
+    if (shouldAbortCloudHydration() || !(await isAuthenticated().catch(() => false))) {
+      return;
+    }
+
+    const { completedModules, progressHistory } = useProgressStore.getState();
+    if (Object.keys(completedModules).length) {
+      await syncProgress(mapCompletedModules(completedModules));
+    }
+    if (progressHistory.length) {
+      await syncActivityEvents(mapProgressHistory(progressHistory));
+    }
+
+    try {
+      syncChannel?.postMessage({ type: 'progress-local', app: 'fluentflow', at: Date.now() });
+    } catch {
+      /* noop */
+    }
+  } finally {
+    uploading = false;
+    if (needsReschedule) {
+      needsReschedule = false;
+      scheduleSync();
+    }
+  }
+}
+
 function scheduleSync() {
   if (syncTimer) clearTimeout(syncTimer);
-  syncTimer = setTimeout(async () => {
+  syncTimer = setTimeout(() => {
     syncTimer = null;
-    if (shouldAbortCloudHydration()) return;
-    const authed = await isAuthenticated().catch(() => false);
-    if (!authed || shouldAbortCloudHydration()) return;
-    if (!cloudHydrated) {
-      pendingCloudSync = true;
-      return;
-    }
-    if (uploading) {
-      needsReschedule = true;
-      return;
-    }
-
-    pendingCloudSync = false;
-    uploading = true;
-    try {
-      // Pull before push so another device/tab's newer cloud rows win merge.
-      await downloadOnLogin({ force: true });
-      if (shouldAbortCloudHydration() || !(await isAuthenticated().catch(() => false))) {
-        return;
-      }
-
-      const { completedModules, progressHistory } = useProgressStore.getState();
-      if (Object.keys(completedModules).length) {
-        await syncProgress(mapCompletedModules(completedModules));
-      }
-      if (progressHistory.length) {
-        await syncActivityEvents(mapProgressHistory(progressHistory));
-      }
-
-      try {
-        syncChannel?.postMessage({ type: 'progress-local', app: 'fluentflow', at: Date.now() });
-      } catch {
-        /* noop */
-      }
-    } finally {
-      uploading = false;
-      if (needsReschedule) {
-        needsReschedule = false;
-        scheduleSync();
-      }
-    }
+    void performSync();
   }, 500);
 }
 
@@ -309,6 +313,7 @@ async function downloadOnLogin({ force = false } = {}) {
   }
 
   const fetchFailed = remoteProgress === null && remoteActivity === null;
+  const hadChanges = !!(remoteProgress?.length || remoteActivity?.length);
   if (!fetchFailed) {
     downloaded = true;
     cloudHydrated = true;
@@ -358,24 +363,35 @@ async function downloadOnLogin({ force = false } = {}) {
   if (cloudHydrated) {
     window.dispatchEvent(new CustomEvent('lp-cloud-hydrated'));
   }
+  return { downloaded: hadChanges };
 }
 
 async function refreshFromCloudIfNeeded({ force = false } = {}) {
-  if (refreshingFromCloud) return;
-  if (shouldAbortCloudHydration()) return;
-  if (!cloudHydrated && !force) return;
-  if (!force && Date.now() - lastVisibilityRefreshAt < VISIBILITY_REFRESH_MIN_MS) return;
+  if (refreshingFromCloud) return { downloaded: false };
+  if (shouldAbortCloudHydration()) return { downloaded: false };
+  if (!cloudHydrated && !force) return { downloaded: false };
+  if (!force && Date.now() - lastVisibilityRefreshAt < VISIBILITY_REFRESH_MIN_MS) {
+    return { downloaded: false };
+  }
 
   const authed = await isAuthenticated().catch(() => false);
-  if (!authed || shouldAbortCloudHydration()) return;
+  if (!authed || shouldAbortCloudHydration()) return { downloaded: false };
 
   refreshingFromCloud = true;
   lastVisibilityRefreshAt = Date.now();
   try {
-    await downloadOnLogin({ force: true });
+    return (await downloadOnLogin({ force: true })) ?? { downloaded: false };
   } finally {
     refreshingFromCloud = false;
   }
+}
+
+// Pull-merge-push manual desde el panel "Desarrollador" en Ajustes — para
+// verificar sync multi-dispositivo sin esperar al próximo visibility/focus.
+export async function forceSync(): Promise<{ pull: { downloaded: boolean } }> {
+  const pull = await refreshFromCloudIfNeeded({ force: true });
+  await performSync();
+  return { pull };
 }
 
 function setupMultiSessionHooks() {
@@ -427,6 +443,7 @@ export function initSyncEngine(): void {
   if (initialized) return;
   initialized = true;
 
+  window.lpForceSync = forceSync;
   setupMultiSessionHooks();
   useProgressStore.subscribe(() => {
     if (uploading) {
