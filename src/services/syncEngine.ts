@@ -21,6 +21,7 @@ import {
   syncActivityEvents,
   fetchProgress,
   fetchActivityEvents,
+  fetchSyncRevision,
   isOAuthReturnUrl,
   type ActivityEventInput,
   type ProgressContentItem,
@@ -39,6 +40,8 @@ import { filterToKnownModules, readKnownModuleIds } from '../utils/catalogIds';
 const PASS_SCORE_PCT = 70;
 const VISIBILITY_REFRESH_MIN_MS = 12_000;
 const SYNC_CHANNEL_NAME = 'lp-sync';
+const SYNC_REVISION_KEY = 'lp-sync-revision';
+const REVISION_POLL_MS = 25_000;
 
 function mapCompletedModules(
   completedModules: Record<string, ModuleCompletion>
@@ -100,6 +103,7 @@ let refreshingFromCloud = false;
 let syncChannel: BroadcastChannel | null = null;
 let uploading = false;
 let needsReschedule = false;
+let revisionPollTimer: ReturnType<typeof setInterval> | null = null;
 
 async function performSync() {
   if (shouldAbortCloudHydration()) return;
@@ -386,10 +390,55 @@ async function refreshFromCloudIfNeeded({ force = false } = {}) {
   }
 }
 
+function readLastSeenRevision(): number {
+  try {
+    const n = Number(localStorage.getItem(SYNC_REVISION_KEY));
+    return Number.isFinite(n) ? n : 0;
+  } catch {
+    return 0;
+  }
+}
+
+function writeLastSeenRevision(revision: number): void {
+  try {
+    localStorage.setItem(SYNC_REVISION_KEY, String(revision));
+  } catch {
+    /* localStorage no disponible */
+  }
+}
+
+/**
+ * Gate barato delante de refreshFromCloudIfNeeded() (migración 026 de
+ * LearnBackend, sync_cursor): compara un solo entero contra el último visto
+ * antes de pullear progress/activity_events completos. Reemplaza el mismo
+ * gate en la copia canónica de HubFlow/LyricFlow/DeskFlow (scripts/sync-engine.js)
+ * — ver esa nota para el porqué (bug de 5-navegadores-5-porcentajes).
+ *
+ * force:true se salta la comparación pero de todos modos registra la
+ * revisión post-pull. Si fetchSyncRevision() falla, cae al comportamiento
+ * de siempre (refreshFromCloudIfNeeded con su propio throttle).
+ */
+async function checkAndRefresh({ force = false } = {}): Promise<{ downloaded: boolean }> {
+  if (force) {
+    const result = await refreshFromCloudIfNeeded({ force: true });
+    const revision = await fetchSyncRevision();
+    if (revision !== null) writeLastSeenRevision(revision);
+    return result;
+  }
+
+  const revision = await fetchSyncRevision();
+  if (revision === null) return refreshFromCloudIfNeeded();
+  if (revision <= readLastSeenRevision()) return { downloaded: false };
+
+  const result = await refreshFromCloudIfNeeded({ force: true });
+  writeLastSeenRevision(revision);
+  return result;
+}
+
 // Pull-merge-push manual desde el panel "Desarrollador" en Ajustes — para
 // verificar sync multi-dispositivo sin esperar al próximo visibility/focus.
 export async function forceSync(): Promise<{ pull: { downloaded: boolean } }> {
-  const pull = await refreshFromCloudIfNeeded({ force: true });
+  const pull = await checkAndRefresh({ force: true });
   await performSync();
   return { pull };
 }
@@ -406,7 +455,7 @@ function setupMultiSessionHooks() {
         if (msg.type === 'progress-local' || msg.type === 'cloud-refreshed') {
           void applyPeerLocalProjection();
           if (msg.type === 'cloud-refreshed') {
-            void refreshFromCloudIfNeeded({ force: true });
+            void checkAndRefresh({ force: true });
           }
         }
       };
@@ -417,12 +466,12 @@ function setupMultiSessionHooks() {
 
   const onVisible = () => {
     if (document.visibilityState && document.visibilityState !== 'visible') return;
-    void refreshFromCloudIfNeeded();
+    void checkAndRefresh();
   };
   document.addEventListener('visibilitychange', onVisible);
   window.addEventListener('focus', onVisible);
   window.addEventListener('online', () => {
-    void refreshFromCloudIfNeeded({ force: true });
+    void checkAndRefresh({ force: true });
   });
   window.addEventListener('lp-sync-peer', () => {
     void applyPeerLocalProjection();
@@ -435,6 +484,13 @@ function setupMultiSessionHooks() {
     cancelPendingSync();
     resetDownloadState();
   });
+
+  if (!revisionPollTimer) {
+    revisionPollTimer = setInterval(() => {
+      if (document.visibilityState !== 'visible') return;
+      void checkAndRefresh();
+    }, REVISION_POLL_MS);
+  }
 }
 
 let initialized = false;
