@@ -243,6 +243,70 @@ describe('ProgressionService', () => {
     });
   });
 
+  describe('self-assessed level bypasses access but not the completion count', () => {
+    let selfAssessedService: ProgressionService;
+    let levelModules: LearningModule[];
+
+    beforeEach(() => {
+      localStorage.clear();
+      selfAssessedService = new ProgressionService();
+      levelModules = [
+        {
+          id: 'a1-mod',
+          name: 'A1 Module',
+          learningMode: 'flashcard',
+          level: ['a1'],
+          category: 'Vocabulary',
+          unit: 1,
+          prerequisites: [],
+          estimatedTime: 5,
+          difficulty: 1,
+        },
+        {
+          id: 'a2-mod',
+          name: 'A2 Module',
+          learningMode: 'flashcard',
+          level: ['a2'],
+          category: 'Vocabulary',
+          unit: 2,
+          prerequisites: [],
+          estimatedTime: 5,
+          difficulty: 2,
+        },
+      ];
+      // A1 never completed — user placed straight into A2 via onboarding
+      // self-assessment. lp-level from the combined-app gate would normally
+      // stay at 'a1' too, so this exercises getSelfAssessedLevelIndex()
+      // specifically, not the cross-app lp-level default.
+      localStorage.setItem('lp-level', 'a2');
+      selfAssessedService.initialize(levelModules, ['a2-mod']);
+    });
+
+    it('unlocks the self-assessed level even though the previous level was never completed', () => {
+      expect(selfAssessedService.isModuleUnlocked('a2-mod')).toBe(true);
+    });
+
+    it('does NOT count a2-mod toward completedModules while a1 is still unfinished', () => {
+      // Regression test: countsTowardProgress() used to call the same
+      // isPreviousLevelComplete() that isModuleUnlocked() uses, which has a
+      // self-assessment bypass. That let the dashboard report a module as
+      // "completed" purely because onboarding placed the user past A1, not
+      // because A1 was actually done — inflating FluentFlow's own stats
+      // above the portal's stricter aggregate (lp-progress-summary.js),
+      // which has no such bypass. Fixed by giving countsTowardProgress()
+      // its own strict check (isPreviousLevelActuallyComplete).
+      const stats = selfAssessedService.getProgressionStats();
+      expect(stats.completedModules).toBe(0);
+      expect(stats.completionPercentage).toBe(0);
+    });
+
+    it('counts a2-mod once a1 is actually completed too', () => {
+      selfAssessedService.completeModule('a1-mod');
+      const stats = selfAssessedService.getProgressionStats();
+      expect(stats.completedModules).toBe(2);
+    });
+  });
+
   describe('getMissingPrerequisites', () => {
     it('should return missing prerequisites for locked modules', () => {
       const missing = progressionService.getMissingPrerequisites('module-a1-2');

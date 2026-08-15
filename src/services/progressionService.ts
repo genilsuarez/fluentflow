@@ -236,9 +236,17 @@ export class ProgressionService {
     return Array.isArray(module.level) ? module.level[0] : module.level;
   }
 
-  /** Whether a completed module counts toward dashboard stats (catalog + level gate). */
+  /**
+   * Whether a completed module counts toward dashboard stats (catalog + level gate).
+   * Usa isPreviousLevelActuallyComplete() (sin bypass de autoevaluación) — este
+   * número debe reflejar módulos realmente terminados. isPreviousLevelComplete()
+   * (con bypass) existía acá antes por error: el comentario decía que el bypass
+   * "no fabrica estadísticas de completado" pero el código sí lo hacía, inflando
+   * el dashboard propio de FluentFlow por encima del agregado del portal
+   * (que usa la regla estricta en lp-progress-summary.js). Corregido 2026-08-15.
+   */
   private countsTowardProgress(module: LearningModule): boolean {
-    return this.completedModules.has(module.id) && this.isPreviousLevelComplete(module);
+    return this.completedModules.has(module.id) && this.isPreviousLevelActuallyComplete(module);
   }
 
   /**
@@ -255,10 +263,23 @@ export class ProgressionService {
 
     // Autoevaluación de nivel (onboarding de DeskFlow, Fase B.2): si el usuario ya
     // se ubicó en este nivel o uno superior, no tiene sentido exigirle completar
-    // niveles que dice ya dominar. Solo afecta este gate de acceso — el progreso
-    // real (countsTowardProgress, más abajo) sigue exigiendo completar cada
-    // módulo de verdad, esto no fabrica estadísticas de completado.
+    // niveles que dice ya dominar. Solo afecta este gate de ACCESO (desbloqueo) —
+    // el progreso real usa isPreviousLevelActuallyComplete(), sin este bypass.
     if (levelIndex <= this.getSelfAssessedLevelIndex()) return true;
+
+    return this.isPreviousLevelActuallyComplete(module);
+  }
+
+  /** Como isPreviousLevelComplete(), pero sin el bypass de autoevaluación —
+   *  exige que cada módulo del nivel anterior esté realmente completado.
+   *  Usado para estadísticas (countsTowardProgress), donde "completado"
+   *  debe significar completado de verdad, no "el usuario dijo que ya lo sabe". */
+  private isPreviousLevelActuallyComplete(module: LearningModule): boolean {
+    const primaryLevel = this.getPrimaryLevel(module);
+    if (!primaryLevel) return true;
+
+    const levelIndex = LEVEL_ORDER.indexOf(primaryLevel as (typeof LEVEL_ORDER)[number]);
+    if (levelIndex <= 0) return true;
 
     const previousLevel = LEVEL_ORDER[levelIndex - 1];
     const previousLevelModules = this.modulesByLevel.get(previousLevel);
