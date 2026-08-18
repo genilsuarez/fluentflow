@@ -24,6 +24,7 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [showResult, setShowResult] = useState(false);
+  const showResultRef = useRef(false);
   const optionsRef = useRef<HTMLDivElement>(null);
 
   const {
@@ -163,23 +164,30 @@ const QuizComponent: React.FC<QuizComponentProps> = ({ module }) => {
 
   const swipeRef = useSwipe<HTMLDivElement>({ onNext: handleSwipeNext, onPrev: () => {} });
 
+  // Keep ref in sync so the keyboard listener always reads the latest value
+  // without needing to re-register on every showResult change.
+  useEffect(() => {
+    showResultRef.current = showResult;
+  }, [showResult]);
+
   useEffect(() => {
     if (processedQuestions.length === 0) return;
 
     const handleKeyPress = (e: KeyboardEvent) => {
-      if (e.key >= '1' && e.key <= '4' && !showResult && currentQuestion) {
+      const isShowingResult = showResultRef.current;
+      if (e.key >= '1' && e.key <= '4' && !isShowingResult && currentQuestion) {
         const optionIndex = parseInt(e.key) - 1;
         if (optionIndex < (currentQuestion.options?.length || 0)) {
           handleAnswerSelect(optionIndex);
         }
-      } else if (e.key === 'Enter' && showResult) {
+      } else if (e.key === 'Enter' && isShowingResult) {
         handleNext();
       }
     };
 
     window.addEventListener('keydown', handleKeyPress);
     return () => window.removeEventListener('keydown', handleKeyPress);
-  }, [showResult, currentQuestion, processedQuestions.length, handleAnswerSelect, handleNext]);
+  }, [currentQuestion, processedQuestions.length, handleAnswerSelect, handleNext]);
 
   // Early return if no data
   if (!processedQuestions.length) {
