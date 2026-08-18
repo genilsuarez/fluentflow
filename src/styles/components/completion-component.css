@@ -167,6 +167,21 @@ html.dark .completion-component__tip-text {
   font-weight: 500;
 }
 
+/* Verb hint shown inline after the sentence: (verb) */
+.completion-component__verb-hint {
+  display: inline;
+  margin-left: 0.5em;
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--theme-text-secondary, #8b7355);
+  font-style: italic;
+  white-space: nowrap;
+}
+
+html.dark .completion-component__verb-hint {
+  color: var(--theme-text-secondary, rgba(255, 255, 255, 0.5));
+}
+
 /* Inline blanks use canonical underline styles from editable-input.css */
 .completion-component__sentence .editable-input--inline:focus,
 .completion-component__sentence .editable-input--inline[contenteditable='false']:focus {

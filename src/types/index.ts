@@ -66,6 +66,8 @@ export interface CompletionData extends BaseLearningData {
   hint?: string;
   tip?: string;
   explanation?: string;
+  /** Base form of the verb to conjugate, shown inline as "(verb)" next to the sentence. */
+  baseVerb?: string;
   /** First-letter / no-article hints in blanks. Defaults to true when omitted. */
   showPlaceholder?: boolean;
 }

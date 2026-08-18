@@ -74,6 +74,16 @@ function gapPlaceholder(correctForGap: string, sentence: string, showPlaceholder
   return '...';
 }
 
+/**
+ * Extracts the base verb from a tip string like "Complete with the correct form of <go>"
+ * or returns null if the tip doesn't match that pattern.
+ */
+function extractVerbFromTip(tip?: string): string | null {
+  if (!tip) return null;
+  const match = tip.match(/<([^>]+)>/);
+  return match ? match[1] : null;
+}
+
 const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<string[]>(['']);
@@ -123,6 +133,10 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
   const hasNoArticleGap = correctParts.some(isNoArticleAnswer);
   const noArticleLabel = t('learning.noArticle');
   const showGapPlaceholders = currentExercise?.showPlaceholder !== false;
+  // Verb hint: prefer explicit baseVerb field, fall back to extracting <verb> from tip
+  const verbHint = currentExercise?.baseVerb || extractVerbFromTip(currentExercise?.tip) || null;
+  // Show tip block only when it exists but isn't the "complete with <verb>" pattern
+  const showTipBlock = !!(currentExercise?.tip && !extractVerbFromTip(currentExercise?.tip));
 
   const collectCurrentAnswers = useCallback((gapTotal: number) => {
     return Array.from({ length: gapTotal }, (_, gapIndex) => {
@@ -442,12 +456,12 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
       <div className="completion-component__exercise-card">
         <h3 className="completion-component__instruction">{t('learning.completeSentence')}</h3>
 
-        {currentExercise?.tip && (
+        {showTipBlock && (
           <div className="completion-component__tip">
             <p className="completion-component__tip-text">
               <strong>{t('learning.tip')}</strong>{' '}
               <ContentRenderer
-                content={ContentAdapter.ensureStructured(currentExercise.tip, 'explanation')}
+                content={ContentAdapter.ensureStructured(currentExercise.tip!, 'explanation')}
               />
             </p>
           </div>
@@ -462,7 +476,12 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
               : ''
           }`}
         >
-          <div className="completion-component__sentence">{renderSentence()}</div>
+          <div className="completion-component__sentence">
+            {renderSentence()}
+            {verbHint && (
+              <span className="completion-component__verb-hint">({verbHint})</span>
+            )}
+          </div>
         </div>
 
         {/* Result and Explanation - Compact unified section */}
