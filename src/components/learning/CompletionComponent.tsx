@@ -478,9 +478,7 @@ const CompletionComponent: React.FC<CompletionComponentProps> = ({ module }) => 
         >
           <div className="completion-component__sentence">
             {renderSentence()}
-            {verbHint && (
-              <span className="completion-component__verb-hint">({verbHint})</span>
-            )}
+            {verbHint && <span className="completion-component__verb-hint">({verbHint})</span>}
           </div>
         </div>
 
