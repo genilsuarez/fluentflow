@@ -31,6 +31,7 @@ interface LearnFlowProgressSource {
 const PROGRESS_KEY = 'learnflow:progress:fluentflow:v1';
 const ACTIVITY_KEY = 'learnflow:activity:fluentflow:v1';
 const CATALOG_KEY = 'learnflow:catalog:fluentflow:v1';
+const FLUENTFLOW_LOCAL_READY_KEY = 'learnflow:fluentflow:local-ready:v1';
 const MAX_ACTIVITY_EVENTS = 200;
 
 const clampPercentage = (value: number): number => Math.min(100, Math.max(0, value));
@@ -222,6 +223,7 @@ export const publishLearnFlowIntegration = (
   try {
     localStorage.setItem(PROGRESS_KEY, JSON.stringify(progress));
     localStorage.setItem(ACTIVITY_KEY, JSON.stringify(activity));
+    localStorage.setItem(FLUENTFLOW_LOCAL_READY_KEY, '1');
     // learnflow:catalog:fluentflow:v1 — tamaño de catálogo por separado de
     // learnflow:progress:fluentflow:v1. clearGuestLocalProgress() (DeskFlow,
     // lp-guest-reset.js) borra todo lo que empieza con learnflow:progress:/
