@@ -22,6 +22,7 @@ import {
   fetchProgress,
   fetchActivityEvents,
   fetchSyncRevision,
+  getUserId,
   isOAuthReturnUrl,
   type ActivityEventInput,
   type ProgressContentItem,
@@ -40,8 +41,32 @@ import { filterToKnownModules, readKnownModuleIds } from '../utils/catalogIds';
 const PASS_SCORE_PCT = 70;
 const VISIBILITY_REFRESH_MIN_MS = 12_000;
 const SYNC_CHANNEL_NAME = 'lp-sync';
-const SYNC_REVISION_KEY = 'lp-sync-revision';
 const REVISION_POLL_MS = 25_000;
+
+// ── Cursor de revisión (migración 026): por USUARIO y por MOTOR ─────────────
+//
+// La clave era una sola global, `lp-sync-revision`, y este motor era el peor
+// afectado por eso. Las 4 apps comparten origin (localhost:3000 en dev,
+// genilsuarez.github.io en prod) y por lo tanto localStorage — pero NO
+// comparten motor: éste solo pullea `fluentflow`, mientras HubFlow, LyricFlow
+// y DeskFlow corren scripts/sync-engine.js, que pullea las 3 apps vanilla.
+// Con la clave común, abrir FluentFlow escribía la revisión N como "ya vista"
+// y las otras tres concluían `up_to_date` sin haber bajado NADA suyo: el
+// dispositivo quedaba mostrando su copia local vieja de HubFlow por más veces
+// que se forzara el sync.
+//
+// Además el contador remoto es por usuario, así que otra cuenta en el mismo
+// navegador podía tener una revisión más baja y silenciar el pull para
+// siempre. Namespacear por (userId, scope) resuelve las dos cosas: cada motor
+// lleva su propia cuenta de hasta dónde bajó él para ese usuario. Pulls de
+// más (una escritura de HubFlow también despierta a éste), nunca de menos.
+const SYNC_REVISION_SCOPE = 'fluentflow';
+const SYNC_REVISION_KEY_PREFIX = 'lp-sync-revision';
+const LEGACY_SYNC_REVISION_KEY = 'lp-sync-revision';
+
+function syncRevisionKey(userId: string): string {
+  return `${SYNC_REVISION_KEY_PREFIX}:${userId}:${SYNC_REVISION_SCOPE}`;
+}
 
 function mapCompletedModules(
   completedModules: Record<string, ModuleCompletion>
@@ -215,6 +240,19 @@ function resetDownloadState() {
   } catch {
     /* noop */
   }
+  // El cursor de revisión también: si sobrevive a un logout, la próxima cuenta
+  // (o el próximo invitado que vuelve a loguearse) arranca comparando contra
+  // un número que no le corresponde. Con el cursor namespaced por userId esto
+  // ya casi no puede morder, pero borrarlo deja el arranque en frío en su
+  // estado honesto: -1, "nunca chequeé nada".
+  try {
+    localStorage.removeItem(LEGACY_SYNC_REVISION_KEY);
+    for (const key of Object.keys(localStorage)) {
+      if (key.startsWith(`${SYNC_REVISION_KEY_PREFIX}:`)) localStorage.removeItem(key);
+    }
+  } catch {
+    /* noop */
+  }
   beginStatsDeferral();
 }
 
@@ -272,32 +310,40 @@ async function applyPeerLocalProjection() {
 
 // Se llama una sola vez por sesión, justo después de autenticarse. No hay
 // polling — el refresh normal ocurre vía scheduleSync() / visibility.
-async function downloadOnLogin({ force = false } = {}) {
-  if (downloaded && !force) return;
-  if (shouldAbortCloudHydration()) return;
+// `complete` significa "bajé TODO lo que había que bajar, sin errores" — es
+// lo único con lo que checkAndRefresh puede avanzar el cursor de revisión sin
+// arriesgarse a saltear un cambio del peer. No confundir con `cloudHydrated`,
+// que solo dice "ya puedo pintar algo" y queda en true incluso con un pull a
+// medias. Toda salida temprana de acá es, por definición, incompleta.
+type DownloadResult = { downloaded: boolean; complete: boolean };
+const INCOMPLETE: DownloadResult = { downloaded: false, complete: false };
+
+async function downloadOnLogin({ force = false } = {}): Promise<DownloadResult> {
+  if (downloaded && !force) return INCOMPLETE;
+  if (shouldAbortCloudHydration()) return INCOMPLETE;
   const authed = await isAuthenticated().catch(() => false);
-  if (!authed || shouldAbortCloudHydration()) return;
+  if (!authed || shouldAbortCloudHydration()) return INCOMPLETE;
 
   // Must wait for progress-storage rehydration — otherwise a late rehydrate
   // overwrites the merged remote progress with stale/empty local state.
   await waitForProgressHydration();
   if (downloaded && !force) {
     markStatsDisplayReady();
-    return;
+    return INCOMPLETE;
   }
-  if (shouldAbortCloudHydration() || !(await isAuthenticated().catch(() => false))) return;
+  if (shouldAbortCloudHydration() || !(await isAuthenticated().catch(() => false))) return INCOMPLETE;
 
   // DeskFlow may have already downloaded cloud data into the v1 projection keys.
   // Import those into Zustand before merging remote rows.
   await bootstrapFromLocalProjection();
-  if (shouldAbortCloudHydration() || !(await isAuthenticated().catch(() => false))) return;
+  if (shouldAbortCloudHydration() || !(await isAuthenticated().catch(() => false))) return INCOMPLETE;
 
   // Purge anything an admin invalidated server-side BEFORE merging/uploading
   // anything else this cycle — otherwise a stale local "completed" entry
   // gets merged back in below and re-uploaded by the scheduleSync() this
   // function triggers, undoing the correction. See progressInvalidations.ts.
   await purgeInvalidatedProgress().catch(() => false);
-  if (shouldAbortCloudHydration() || !(await isAuthenticated().catch(() => false))) return;
+  if (shouldAbortCloudHydration() || !(await isAuthenticated().catch(() => false))) return INCOMPLETE;
 
   // Antes el gate era `wasActivityFetched() || hasLocalActivityLedger()`:
   // como hasLocalActivityLedger() es casi siempre true para un usuario
@@ -317,10 +363,18 @@ async function downloadOnLogin({ force = false } = {}) {
     getGuestReset()?.clearGuestLocalProgress?.();
     resetDownloadState();
     markStatsDisplayReady();
-    return;
+    return INCOMPLETE;
   }
 
   const fetchFailed = remoteProgress === null && remoteActivity === null;
+  // Ojo con la asimetría: `fetchFailed` exige que fallen LAS DOS consultas
+  // para dar el pull por fallido (eso decide si se hidrata la UI, y ahí está
+  // bien ser permisivo). Para el cursor hace falta el criterio estricto: si
+  // CUALQUIERA de las dos volvió null, hay datos que no bajaron y la revisión
+  // no se puede dar por vista. `remoteActivity` es [] —no null— cuando el
+  // fetch se saltea por wasActivityFetched(), así que eso sigue contando como
+  // completo.
+  const complete = remoteProgress !== null && remoteActivity !== null;
   const hadChanges = !!(remoteProgress?.length || remoteActivity?.length);
   if (!fetchFailed) {
     downloaded = true;
@@ -371,24 +425,24 @@ async function downloadOnLogin({ force = false } = {}) {
   if (cloudHydrated) {
     window.dispatchEvent(new CustomEvent('lp-cloud-hydrated'));
   }
-  return { downloaded: hadChanges };
+  return { downloaded: hadChanges, complete };
 }
 
-async function refreshFromCloudIfNeeded({ force = false } = {}) {
-  if (refreshingFromCloud) return { downloaded: false };
-  if (shouldAbortCloudHydration()) return { downloaded: false };
-  if (!cloudHydrated && !force) return { downloaded: false };
+async function refreshFromCloudIfNeeded({ force = false } = {}): Promise<DownloadResult> {
+  if (refreshingFromCloud) return INCOMPLETE;
+  if (shouldAbortCloudHydration()) return INCOMPLETE;
+  if (!cloudHydrated && !force) return INCOMPLETE;
   if (!force && Date.now() - lastVisibilityRefreshAt < VISIBILITY_REFRESH_MIN_MS) {
-    return { downloaded: false };
+    return INCOMPLETE;
   }
 
   const authed = await isAuthenticated().catch(() => false);
-  if (!authed || shouldAbortCloudHydration()) return { downloaded: false };
+  if (!authed || shouldAbortCloudHydration()) return INCOMPLETE;
 
   refreshingFromCloud = true;
   lastVisibilityRefreshAt = Date.now();
   try {
-    return (await downloadOnLogin({ force: true })) ?? { downloaded: false };
+    return (await downloadOnLogin({ force: true })) ?? INCOMPLETE;
   } finally {
     refreshingFromCloud = false;
   }
@@ -400,9 +454,13 @@ async function refreshFromCloudIfNeeded({ force = false } = {}) {
 // sync_cursor, así que un usuario con progreso real puede tener revision=0
 // ahí; con 0 como sentinel de "nunca chequeado" el dispositivo concluye
 // falsamente "ya estoy al día" y no pullea nunca.
-function readLastSeenRevision(): number {
+function readLastSeenRevision(userId: string): number {
   try {
-    const raw = localStorage.getItem(SYNC_REVISION_KEY);
+    // La clave global vieja pudo haberla escrito el motor vanilla (que no
+    // pullea fluentflow) o una cuenta distinta — su valor no dice nada sobre
+    // lo que ESTE motor bajó. Se descarta, no se migra.
+    localStorage.removeItem(LEGACY_SYNC_REVISION_KEY);
+    const raw = localStorage.getItem(syncRevisionKey(userId));
     if (raw === null) return -1;
     const n = Number(raw);
     return Number.isFinite(n) ? n : -1;
@@ -411,9 +469,9 @@ function readLastSeenRevision(): number {
   }
 }
 
-function writeLastSeenRevision(revision: number): void {
+function writeLastSeenRevision(userId: string, revision: number): void {
   try {
-    localStorage.setItem(SYNC_REVISION_KEY, String(revision));
+    localStorage.setItem(syncRevisionKey(userId), String(revision));
   } catch {
     /* localStorage no disponible */
   }
@@ -429,21 +487,35 @@ function writeLastSeenRevision(revision: number): void {
  * force:true se salta la comparación pero de todos modos registra la
  * revisión post-pull. Si fetchSyncRevision() falla, cae al comportamiento
  * de siempre (refreshFromCloudIfNeeded con su propio throttle).
+ *
+ * INVARIANTE: la revisión solo se registra si el pull terminó COMPLETO. Antes
+ * se escribía incondicionalmente — incluso cuando refreshFromCloudIfNeeded
+ * cortaba de entrada por throttle, por `refreshingFromCloud`, o cuando el
+ * fetch devolvía null. Cada uno de esos casos quemaba la revisión: el
+ * dispositivo pasaba a responder `up_to_date` y esa escritura del peer no se
+ * volvía a pedir nunca más.
  */
-async function checkAndRefresh({ force = false } = {}): Promise<{ downloaded: boolean }> {
+async function checkAndRefresh({ force = false } = {}): Promise<DownloadResult> {
+  const userId = await getUserId().catch(() => null);
+
   if (force) {
     const result = await refreshFromCloudIfNeeded({ force: true });
+    if (!userId || !result.complete) return result;
     const revision = await fetchSyncRevision();
-    if (revision !== null) writeLastSeenRevision(revision);
+    if (revision !== null) writeLastSeenRevision(userId, revision);
     return result;
   }
 
+  // Sin userId no hay cursor con el que comparar (sesión en carrera): pullear
+  // de más es siempre preferible a saltarse un cambio real.
+  if (!userId) return refreshFromCloudIfNeeded({ force: true });
+
   const revision = await fetchSyncRevision();
   if (revision === null) return refreshFromCloudIfNeeded();
-  if (revision <= readLastSeenRevision()) return { downloaded: false };
+  if (revision <= readLastSeenRevision(userId)) return { downloaded: false, complete: true };
 
   const result = await refreshFromCloudIfNeeded({ force: true });
-  writeLastSeenRevision(revision);
+  if (result.complete) writeLastSeenRevision(userId, revision);
   return result;
 }
 

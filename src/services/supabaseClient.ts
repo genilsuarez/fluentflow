@@ -61,6 +61,21 @@ export function getSession() {
 }
 
 /**
+ * id del usuario autenticado, o null. Barato: getSession() resuelve contra el
+ * token ya restaurado en localStorage, no hace round-trip a Supabase.
+ *
+ * sync_cursor.revision es POR USUARIO, así que el cursor local que lo compara
+ * tiene que estar namespaced por este id — ver syncRevisionKey() en
+ * syncEngine.ts.
+ */
+export async function getUserId(): Promise<string | null> {
+  const {
+    data: { session },
+  } = await supabase.auth.getSession();
+  return session?.user?.id ?? null;
+}
+
+/**
  * Genera un code_verifier de PKCE (RFC 7636: 43-128 chars, alfabeto
  * URL-safe) de forma SÍNCRONA — crypto.getRandomValues no hace await, a
  * diferencia de crypto.subtle.digest (que sí, y es lo que rompe el redirect
