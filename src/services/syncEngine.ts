@@ -331,19 +331,22 @@ async function downloadOnLogin({ force = false } = {}): Promise<DownloadResult> 
     markStatsDisplayReady();
     return INCOMPLETE;
   }
-  if (shouldAbortCloudHydration() || !(await isAuthenticated().catch(() => false))) return INCOMPLETE;
+  if (shouldAbortCloudHydration() || !(await isAuthenticated().catch(() => false)))
+    return INCOMPLETE;
 
   // DeskFlow may have already downloaded cloud data into the v1 projection keys.
   // Import those into Zustand before merging remote rows.
   await bootstrapFromLocalProjection();
-  if (shouldAbortCloudHydration() || !(await isAuthenticated().catch(() => false))) return INCOMPLETE;
+  if (shouldAbortCloudHydration() || !(await isAuthenticated().catch(() => false)))
+    return INCOMPLETE;
 
   // Purge anything an admin invalidated server-side BEFORE merging/uploading
   // anything else this cycle — otherwise a stale local "completed" entry
   // gets merged back in below and re-uploaded by the scheduleSync() this
   // function triggers, undoing the correction. See progressInvalidations.ts.
   await purgeInvalidatedProgress().catch(() => false);
-  if (shouldAbortCloudHydration() || !(await isAuthenticated().catch(() => false))) return INCOMPLETE;
+  if (shouldAbortCloudHydration() || !(await isAuthenticated().catch(() => false)))
+    return INCOMPLETE;
 
   // Antes el gate era `wasActivityFetched() || hasLocalActivityLedger()`:
   // como hasLocalActivityLedger() es casi siempre true para un usuario
