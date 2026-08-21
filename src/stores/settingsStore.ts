@@ -95,7 +95,7 @@ export const useSettingsStore = create<SettingsState>()(
           document.documentElement.classList.add('theme-transitioning');
           setTimeout(() => {
             document.documentElement.classList.remove('theme-transitioning');
-          }, 350);
+          }, 200);
         }
         set({ theme });
         // Apply theme to DOM and update meta theme-color
