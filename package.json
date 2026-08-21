@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite --mode development --config config/vite.config.ts",
-    "build": "tsc --project config/tsconfig.json && vite build --mode production --config config/vite.config.ts",
+    "minify:public": "bash scripts/build/minify-public-js.sh",
+    "build": "npm run minify:public && tsc --project config/tsconfig.json && vite build --mode production --config config/vite.config.ts",
     "build:analyze": "npm run build && npx vite-bundle-analyzer",
     "build:full": "node scripts/development/dev-tools.js full --quiet",
     "preview": "vite preview --config config/vite.config.ts",
