@@ -10,7 +10,7 @@ import {
   getCombinedLevelProgress,
   levelUnlocks,
 } from '../public/lp-progress-summary.js';
-import { HUBFLOW_LEVELS, LYRICFLOW_LEVELS } from '../public/lp-level-map.js';
+import { HUBFLOW_LEVELS, LYRICFLOW_LEVELS, FLUENTFLOW_LEVELS } from '../public/lp-level-map.js';
 
 function idsForLevel(map: Record<string, string>, level: string): string[] {
   return Object.entries(map)
@@ -43,16 +43,21 @@ function completeLyricflow(level: string, count: number) {
   writeDoc('lyricflow', Object.fromEntries(ids.map(id => [id, { completed: true }])));
 }
 /**
- * FluentFlow content isn't id-mapped to a level -- each entry carries its own
- * cefrLevel field. Writes `total` fake entries at `level`, the first
- * `completedCount` of them marked completed (so progressPct = completedCount/total).
+ * Marks `count` of the given level's real FluentFlow ids as completed.
+ *
+ * The denominator is the real catalog (FLUENTFLOW_LEVELS in lp-level-map.js),
+ * not the size of the progress doc -- see countFluentflowCatalogByLevel in
+ * lp-progress-summary.js: deriving totalModules from the user's local progress
+ * showed a new user "0 de 0" instead of the level's real total. So the doc has
+ * to be written with real ids, same as HubFlow and LyricFlow above; writing N
+ * fake ids no longer yields N/N.
  */
-function writeFluentflow(level: string, total: number, completedCount: number) {
-  const content: Record<string, unknown> = {};
-  for (let i = 0; i < total; i++) {
-    content[`fake-${level}-${i}`] = { completed: i < completedCount, cefrLevel: level };
-  }
-  writeDoc('fluentflow', content);
+function completeFluentflow(level: string, count: number) {
+  const ids = idsForLevel(FLUENTFLOW_LEVELS, level);
+  writeDoc(
+    'fluentflow',
+    Object.fromEntries(ids.map((id, i) => [id, { completed: i < count, cefrLevel: level }]))
+  );
 }
 
 beforeEach(() => {
@@ -99,7 +104,8 @@ describe('getCombinedLevelProgress', () => {
 
 describe('checkLevelAdvancement', () => {
   it('does not advance when FluentFlow is below 100%', () => {
-    writeFluentflow('A1', 10, 5); // 50%
+    // Media tabla del catálogo real de a1 -- por debajo del 100% que exige el ascenso.
+    completeFluentflow('a1', Math.floor(idsForLevel(FLUENTFLOW_LEVELS, 'a1').length / 2));
     completeHubflow('a1', idsForLevel(HUBFLOW_LEVELS, 'a1').length);
     completeLyricflow('a1', idsForLevel(LYRICFLOW_LEVELS, 'a1').length);
 
@@ -116,7 +122,7 @@ describe('checkLevelAdvancement', () => {
     expect(a1HubflowIds.length % 2).toBe(0);
     const half = a1HubflowIds.length / 2;
 
-    writeFluentflow('A1', 5, 5);
+    completeFluentflow('a1', idsForLevel(FLUENTFLOW_LEVELS, 'a1').length);
     completeHubflow('a1', half);
     completeLyricflow('a1', idsForLevel(LYRICFLOW_LEVELS, 'a1').length);
 
@@ -128,7 +134,7 @@ describe('checkLevelAdvancement', () => {
   });
 
   it('advances a1 -> a2 once FluentFlow=100%, HubFlow>=50%, LyricFlow=100%', () => {
-    writeFluentflow('A1', 5, 5);
+    completeFluentflow('a1', idsForLevel(FLUENTFLOW_LEVELS, 'a1').length);
     completeHubflow('a1', idsForLevel(HUBFLOW_LEVELS, 'a1').length);
     completeLyricflow('a1', idsForLevel(LYRICFLOW_LEVELS, 'a1').length);
 
@@ -141,7 +147,7 @@ describe('checkLevelAdvancement', () => {
   });
 
   it('is idempotent -- a second call with the same a1 data does not advance past a2', () => {
-    writeFluentflow('A1', 5, 5);
+    completeFluentflow('a1', idsForLevel(FLUENTFLOW_LEVELS, 'a1').length);
     completeHubflow('a1', idsForLevel(HUBFLOW_LEVELS, 'a1').length);
     completeLyricflow('a1', idsForLevel(LYRICFLOW_LEVELS, 'a1').length);
 
