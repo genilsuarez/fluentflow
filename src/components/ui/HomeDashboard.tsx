@@ -1,5 +1,5 @@
 import React, { useEffect, useCallback, useMemo } from 'react';
-import { Trophy, Target, Clock, TrendingUp } from 'lucide-react';
+import { Trophy, Target, Clock, TrendingUp, Database, Play, ArrowRight } from 'lucide-react';
 import { useProgressStore } from '../../stores/progressStore';
 import { useUserStore } from '../../stores/userStore';
 import { useSettingsStore } from '../../stores/settingsStore';
@@ -169,8 +169,15 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
               <span className="hero-card__meta">
                 {nextModuleDisplay
                   ? nextModuleDisplay.meta
-                  : t('dashboard.pickModule', 'Pick a module and begin your first session.')}
+                  : t('dashboard.smallSteps', 'Small steps, big wins')}
               </span>
+            </span>
+            <span className="hero-card__cta" aria-hidden="true">
+              <span className="hero-card__play">
+                <Play />
+              </span>
+              <span className="hero-card__cta-label">{t('common.continue', 'Continue')}</span>
+              <ArrowRight className="hero-card__cta-arrow" />
             </span>
           </button>
         </div>
@@ -208,16 +215,21 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
             ) : null}
           </span>
           <div className="progress-snapshot__stat-block">
-            <span className="progress-snapshot__stat-wrap">
-              <span className="progress-snapshot__stat">
-                {modulesFetched && displayStats.totalModules > 0
-                  ? `${animatedCompleted}/${displayStats.totalModules}`
-                  : '—'}
-              </span>
-              <span className="progress-snapshot__unit"> {t('common.exercise', 'ejercicio')}</span>
+            <span className="progress-snapshot__stat-icon" aria-hidden="true">
+              <Database />
             </span>
-            <span className="progress-snapshot__line progress-snapshot__line--depth">
-              {depthExercisesLabel}
+            <span className="progress-snapshot__stat-copy">
+              <span className="progress-snapshot__stat-wrap">
+                <span className="progress-snapshot__stat">
+                  {modulesFetched && displayStats.totalModules > 0
+                    ? `${animatedCompleted}/${displayStats.totalModules}`
+                    : '—'}
+                </span>
+                <span className="progress-snapshot__unit"> {t('common.exercise', 'ejercicio')}</span>
+              </span>
+              <span className="progress-snapshot__line progress-snapshot__line--depth">
+                {depthExercisesLabel}
+              </span>
             </span>
           </div>
           <span className="progress-snapshot__chev" aria-hidden="true">
@@ -250,7 +262,9 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
         <div
           className={`home-dash__stat home-dash__stat--points${hasProgress ? '' : ' home-dash__stat--empty'}`}
         >
-          <Trophy className="home-dash__stat-icon" />
+          <span className="home-dash__stat-mark" aria-hidden="true">
+            <Trophy className="home-dash__stat-icon" />
+          </span>
           <div className="home-dash__stat-content">
             <span className="home-dash__stat-value">
               {hasProgress ? animatedScore.toLocaleString() : '—'}
@@ -261,7 +275,9 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
         <div
           className={`home-dash__stat home-dash__stat--accuracy${hasProgress ? '' : ' home-dash__stat--empty'}`}
         >
-          <Target className="home-dash__stat-icon" />
+          <span className="home-dash__stat-mark" aria-hidden="true">
+            <Target className="home-dash__stat-icon" />
+          </span>
           <div className="home-dash__stat-content">
             <span className="home-dash__stat-value">{hasProgress ? `${animatedAvg}%` : '—'}</span>
             <span className="home-dash__stat-label">
@@ -272,7 +288,9 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
         <div
           className={`home-dash__stat home-dash__stat--sessions${hasProgress ? '' : ' home-dash__stat--empty'}`}
         >
-          <Clock className="home-dash__stat-icon" />
+          <span className="home-dash__stat-mark" aria-hidden="true">
+            <Clock className="home-dash__stat-icon" />
+          </span>
           <div className="home-dash__stat-content">
             <span className="home-dash__stat-value">{hasProgress ? animatedSessions : '—'}</span>
             <span className="home-dash__stat-label">
@@ -283,7 +301,9 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
         <div
           className={`home-dash__stat home-dash__stat--time${hasProgress ? '' : ' home-dash__stat--empty'}`}
         >
-          <TrendingUp className="home-dash__stat-icon" />
+          <span className="home-dash__stat-mark" aria-hidden="true">
+            <TrendingUp className="home-dash__stat-icon" />
+          </span>
           <div className="home-dash__stat-content">
             <span className="home-dash__stat-value">
               {hasProgress ? `${animatedMinutes}m` : '—'}
@@ -297,9 +317,22 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
       <div className="home-dash__progress-row">
         {/* Weekly Progress */}
         <div className="home-dash__weekly">
-          <h2 className="home-dash__section-title">
-            {t('dashboard.recentActivity', 'Últimos días')}
-          </h2>
+          <div className="home-dash__card-head">
+            <div className="home-dash__card-head-copy">
+              <h2 className="home-dash__section-title">
+                {t('dashboard.recentActivity', 'Últimos días')}
+              </h2>
+              <p className="home-dash__section-sub">
+                {t('dashboard.recentActivitySub', 'Your recent activity')}
+              </p>
+            </div>
+            {onViewModules ? (
+              <button type="button" className="home-dash__card-link" onClick={onViewModules}>
+                {t('dashboard.viewAll', 'View all')}
+                <ArrowRight className="home-dash__card-link-arrow" />
+              </button>
+            ) : null}
+          </div>
           <div className="home-dash__weekly-chart">
             {!activityReady ? (
               <div className="home-dash__bars home-dash__bars--pending" aria-hidden="true">
@@ -316,9 +349,14 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
               </div>
             ) : !progressData.some(d => d.sessionsCount > 0) ? (
               <div className="home-dash__weekly-placeholder">
-                <TrendingUp className="home-dash__weekly-placeholder-icon" />
+                <span className="home-dash__weekly-placeholder-mark" aria-hidden="true">
+                  <TrendingUp className="home-dash__weekly-placeholder-icon" />
+                </span>
                 <p className="home-dash__weekly-placeholder-text">
                   {t('dashboard.completeModulesMessage')}
+                </p>
+                <p className="home-dash__weekly-placeholder-sub">
+                  {t('dashboard.activityEmptySub', 'Your recent activity will show up here.')}
                 </p>
               </div>
             ) : (
@@ -368,9 +406,16 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
 
         {/* Level Progress — contextual: max 3 (previous, current, next) */}
         <div className="home-dash__levels">
-          <h2 className="home-dash__section-title">
-            {t('learningPath.unitProgress', 'Level Progress')}
-          </h2>
+          <div className="home-dash__card-head">
+            <div className="home-dash__card-head-copy">
+              <h2 className="home-dash__section-title">
+                {t('learningPath.unitProgress', 'Level Progress')}
+              </h2>
+              <p className="home-dash__section-sub">
+                {t('dashboard.levelPathSub', 'Your learning path, step by step')}
+              </p>
+            </div>
+          </div>
           <div className="home-dash__level-grid">
             {(() => {
               const activeIdx = displayStats.unitStats.findIndex(u => u.percentage < 100);
@@ -418,6 +463,17 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
                       <span className="home-dash__level-count">
                         {unitStat.completed}/{unitStat.total}
                       </span>
+                      <span
+                        className={`home-dash__level-status home-dash__level-status--${
+                          unitStat.percentage >= 100 ? 'done' : isCurrent ? 'current' : 'pending'
+                        }`}
+                      >
+                        {unitStat.percentage >= 100
+                          ? t('dashboard.levelStatusCompleted', 'Completed')
+                          : isCurrent
+                            ? t('dashboard.levelStatusCurrent', 'In progress')
+                            : t('dashboard.levelStatusPending', 'Pending')}
+                      </span>
                     </div>
                   </div>
                 );
@@ -425,6 +481,24 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
             })()}
           </div>
         </div>
+      </div>
+
+      {/* Franja de cierre — mismo patrón que la home de HubFlow */}
+      <div className="home-dash__footer">
+        <span className="home-dash__footer-icon" aria-hidden="true">
+          💡
+        </span>
+        <span className="home-dash__footer-text">
+          {t('dashboard.footerCta', 'Ready to keep learning?')}
+        </span>
+        <span className="home-dash__footer-sep" aria-hidden="true" />
+        <span className="home-dash__footer-sub">
+          {t('dashboard.footerSub', 'Every exercise brings you closer to your goals')}
+        </span>
+        <span className="home-dash__footer-tagline">
+          <span aria-hidden="true">💙</span>{' '}
+          {t('dashboard.footerTagline', 'Your learning, our purpose')}
+        </span>
       </div>
     </div>
   );
