@@ -834,7 +834,11 @@ html.browser-cursor-embedded .header-side-menu {
     width: min(232px, 86vw);
   }
 
-  body.lp-drawer-open .header-side-menu:not(.is-persistent) {
+  /* Extra clearance only while a game-controls bar is actually on screen
+     (data-view != 'menu') — otherwise this padding pushes the footer items
+     up and leaves a blank gap under them on the home/menu screen. */
+  body.lp-drawer-open:has(.layout-container:not([data-view='menu']))
+    .header-side-menu:not(.is-persistent) {
     padding-bottom: max(
       16px,
       env(safe-area-inset-bottom),
