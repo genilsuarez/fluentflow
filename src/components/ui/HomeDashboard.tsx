@@ -225,7 +225,10 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
                     ? `${animatedCompleted}/${displayStats.totalModules}`
                     : '—'}
                 </span>
-                <span className="progress-snapshot__unit"> {t('common.exercise', 'ejercicio')}</span>
+                <span className="progress-snapshot__unit">
+                  {' '}
+                  {t('common.exercise', 'ejercicio')}
+                </span>
               </span>
               <span className="progress-snapshot__line progress-snapshot__line--depth">
                 {depthExercisesLabel}

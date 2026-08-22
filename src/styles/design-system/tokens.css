@@ -11,16 +11,16 @@
   color-scheme: light;
 
   /* ─── Surface & Paper ─── */
-  --lp-bg: #ffffff;
-  --lp-bg-paper: #f7f4ef;
-  --lp-surface: #ffffff;
-  --lp-surface-raised: #ffffff;
-  --lp-surface-sunken: #f3f0ea;
+  --lp-bg: #FCFBF9;
+  --lp-bg-paper: #F7F6F3;
+  --lp-surface: #FFFFFF;
+  --lp-surface-raised: #FFFFFF;
+  --lp-surface-sunken: #F2F1ED;
 
   /* ─── Borders ─── */
-  --lp-border: #e2dad0;
-  --lp-border-strong: #cfc4b6;
-  --lp-border-subtle: #eeeae4;
+  --lp-border: #E7E3DC;
+  --lp-border-strong: #D8D2C8;
+  --lp-border-subtle: #F1EFEA;
 
   /* ─── Ink (Text) ─── */
   --lp-ink: #2c2418;
