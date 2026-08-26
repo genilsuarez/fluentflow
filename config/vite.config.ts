@@ -23,7 +23,7 @@ export default defineConfig(({ mode }) => {
       gatewayRedirectPlugin({ app: 'fluentflow' }),
       react({
         jsxRuntime: 'automatic',
-        jsxImportSource: 'react'
+        jsxImportSource: 'react',
       }),
       {
         name: 'build-info-and-asset-manifest',
@@ -35,15 +35,13 @@ export default defineConfig(({ mode }) => {
           try {
             const assetsDir = resolve(outDir, 'assets');
             const files = readdirSync(assetsDir);
-            const assets = files
-              .filter(f => /\.(js|css)$/.test(f))
-              .map(f => `assets/${f}`);
+            const assets = files.filter(f => /\.(js|css)$/.test(f)).map(f => `assets/${f}`);
             writeFileSync(resolve(outDir, 'asset-manifest.json'), JSON.stringify(assets));
           } catch {
             // Non-critical: offline pre-caching will skip if manifest missing
           }
-        }
-      }
+        },
+      },
     ],
     root: resolve(__dirname, '..'),
     base: env.VITE_APP_BASE_URL || '/',
@@ -55,15 +53,22 @@ export default defineConfig(({ mode }) => {
         output: {
           manualChunks: {
             'vendor-search': ['fuse.js'],
+            // Split stable vendor deps into their own immutable chunks so a
+            // typical app-only deploy (this repo ships ~daily) doesn't force
+            // every returning user to re-download React/Supabase/react-query
+            // again — only the smaller chunk that actually changed.
+            'vendor-react': ['react', 'react-dom'],
+            'vendor-supabase': ['@supabase/supabase-js'],
+            'vendor-query': ['@tanstack/react-query'],
           },
-          chunkFileNames: (chunkInfo) => {
+          chunkFileNames: chunkInfo => {
             if (chunkInfo.name === 'vendor' || chunkInfo.name.startsWith('vendor-')) {
               return 'assets/[name]-[hash].js';
             }
             return 'assets/[name]-[hash].js';
           },
-          assetFileNames: 'assets/[name]-[hash][extname]'
-        }
+          assetFileNames: 'assets/[name]-[hash][extname]',
+        },
       },
       // Enable CSS code splitting for better chunk management
       cssCodeSplit: true,
@@ -73,48 +78,42 @@ export default defineConfig(({ mode }) => {
       chunkSizeWarningLimit: 500, // 500KB warning limit
       // Configure esbuild for JS minification only
       minify: 'esbuild',
-      target: 'es2015'
+      target: 'es2015',
     },
     // Configure esbuild for JS and CSS minification
     esbuild: {
-      legalComments: 'none'
+      legalComments: 'none',
     },
     publicDir: resolve(__dirname, '../public'),
     css: {
       // CSS optimization settings for pure CSS architecture
       devSourcemap: mode === 'development',
       // Disable CSS modules - using pure BEM methodology
-      modules: false
+      modules: false,
     },
     resolve: {
       alias: {
-        '@': resolve(__dirname, '../src')
-      }
+        '@': resolve(__dirname, '../src'),
+      },
     },
     optimizeDeps: {
-      include: [
-        'react',
-        'react-dom',
-        'react/jsx-runtime',
-        'zustand',
-        '@tanstack/react-query'
-      ]
+      include: ['react', 'react-dom', 'react/jsx-runtime', 'zustand', '@tanstack/react-query'],
     },
     server: {
       fs: {
-        allow: ['..']
+        allow: ['..'],
       },
       port: 5173,
       host: true,
       hmr: isUnifiedLocal
         ? {
             clientPort: 3000,
-            path: '/fluentflow/'
+            path: '/fluentflow/',
           }
         : {
             port: 5173,
-            clientPort: 5173
-          }
+            clientPort: 5173,
+          },
     },
     define: {
       __APP_VERSION__: JSON.stringify(process.env.npm_package_version),
@@ -123,8 +122,8 @@ export default defineConfig(({ mode }) => {
       // Properly define NODE_ENV for runtime (Vite best practice)
       'process.env.NODE_ENV': JSON.stringify(mode),
       // Make environment variables available at build time
-      'import.meta.env.VITE_IS_PRODUCTION': JSON.stringify(isProduction)
+      'import.meta.env.VITE_IS_PRODUCTION': JSON.stringify(isProduction),
     },
-    envDir: __dirname
+    envDir: __dirname,
   };
 });
