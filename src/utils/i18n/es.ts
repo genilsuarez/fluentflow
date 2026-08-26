@@ -440,8 +440,8 @@ export const es = {
     levelStatusCompleted: 'Completado',
     levelStatusCurrent: 'En curso',
     levelStatusPending: 'Pendiente',
-    footerCta: '¿Listo para seguir aprendiendo?',
-    footerSub: 'Cada ejercicio te acerca a tus metas',
+    footerCta: '¿Necesitas ayuda?',
+    footerAboutLink: 'Conoce más sobre FluentFlow',
     footerTagline: 'Tu aprendizaje, nuestro propósito',
   },
   categories: {

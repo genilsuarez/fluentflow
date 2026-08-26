@@ -439,8 +439,8 @@ export const en = {
     levelStatusCompleted: 'Completed',
     levelStatusCurrent: 'In progress',
     levelStatusPending: 'Pending',
-    footerCta: 'Ready to keep learning?',
-    footerSub: 'Every exercise brings you closer to your goals',
+    footerCta: 'Need help?',
+    footerAboutLink: 'Learn more about FluentFlow',
     footerTagline: 'Your learning, our purpose',
   },
   categories: {

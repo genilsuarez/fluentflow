@@ -535,8 +535,16 @@ html[data-stats-syncing] .home-dash .progress-snapshot__visual {
   color: var(--lp-ink-soft);
 }
 
+.home-dash__footer-question {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-width: 0;
+}
+
 .home-dash__footer-icon {
   line-height: 1;
+  flex: 0 0 auto;
 }
 
 .home-dash__footer-text {
@@ -548,15 +556,30 @@ html[data-stats-syncing] .home-dash .progress-snapshot__visual {
   width: 1px;
   height: 0.9rem;
   background: var(--lp-border);
+  flex: 0 0 auto;
 }
 
-.home-dash__footer-sub {
-  color: var(--lp-muted);
+.home-dash__footer-link {
+  flex: 0 0 auto;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font: inherit;
+  font-weight: var(--lp-weight-bold, 700);
+  color: var(--lp-accent);
+  white-space: nowrap;
+}
+
+.home-dash__footer-link:hover {
+  text-decoration: underline;
 }
 
 .home-dash__footer-tagline {
   margin-left: auto;
   color: var(--lp-muted);
+  white-space: nowrap;
 }
 
 /* ─── DARK MODE ─── */
@@ -689,9 +712,21 @@ html.dark .main-menu .home-dash .home-dash__level-code--indigo,
   }
 
   .home-dash__footer {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: nowrap;
     gap: 0.3rem;
+    font-size: 0.7rem;
+  }
+
+  .home-dash__footer-question {
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+
+  .home-dash__footer-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    min-width: 0;
   }
 
   .home-dash__footer-sep {
@@ -699,7 +734,7 @@ html.dark .main-menu .home-dash .home-dash__level-code--indigo,
   }
 
   .home-dash__footer-tagline {
-    margin-left: 0;
+    display: none;
   }
 
   .home-dash__stat-value {

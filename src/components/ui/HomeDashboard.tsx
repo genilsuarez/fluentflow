@@ -486,18 +486,22 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
         </div>
       </div>
 
-      {/* Franja de cierre — mismo patrón que la home de HubFlow */}
+      {/* Franja de cierre — mismo patrón que la home de DeskFlow/HubFlow/LyricFlow */}
       <div className="home-dash__footer">
-        <span className="home-dash__footer-icon" aria-hidden="true">
-          💡
-        </span>
-        <span className="home-dash__footer-text">
-          {t('dashboard.footerCta', 'Ready to keep learning?')}
+        <span className="home-dash__footer-question">
+          <span className="home-dash__footer-icon" aria-hidden="true">
+            💡
+          </span>
+          <span className="home-dash__footer-text">{t('dashboard.footerCta', 'Need help?')}</span>
         </span>
         <span className="home-dash__footer-sep" aria-hidden="true" />
-        <span className="home-dash__footer-sub">
-          {t('dashboard.footerSub', 'Every exercise brings you closer to your goals')}
-        </span>
+        <button
+          type="button"
+          className="home-dash__footer-link"
+          onClick={() => window.dispatchEvent(new CustomEvent('fluentflow:open-about'))}
+        >
+          {t('dashboard.footerAboutLink', 'Learn more about FluentFlow')}
+        </button>
         <span className="home-dash__footer-tagline">
           <span aria-hidden="true">💙</span>{' '}
           {t('dashboard.footerTagline', 'Your learning, our purpose')}

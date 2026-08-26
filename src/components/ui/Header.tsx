@@ -76,6 +76,12 @@ export const Header: React.FC<HeaderProps> = () => {
   useEffect(() => {
     if (!canOpenSettings && showSettings) setShowSettings(false);
   }, [canOpenSettings, showSettings]);
+  // "Conoce más sobre FluentFlow" — franja de ayuda de la home dispara este evento
+  useEffect(() => {
+    const openAbout = () => setShowAbout(true);
+    window.addEventListener('fluentflow:open-about', openAbout);
+    return () => window.removeEventListener('fluentflow:open-about', openAbout);
+  }, []);
   // Offline badge: show immediately when offline+enabled, hide with 3s delay on reconnect
   useEffect(() => {
     const shouldShow = !isOnline && offlineEnabled;
