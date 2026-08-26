@@ -58,10 +58,10 @@ const SortingComponent: React.FC<SortingComponentProps> = ({ module }) => {
   const updateSessionScore = useAppStore(state => state.updateSessionScore);
   const resetSession = useAppStore(state => state.resetSession);
   const triggerRestart = useAppStore(state => state.triggerRestart);
-  const { updateUserScore } = useUserStore();
+  const updateUserScore = useUserStore(state => state.updateUserScore);
   const { language, randomizeItems } = useSettingsStore();
   const { returnToMenu } = useMenuNavigation();
-  const { addProgressEntry } = useProgressStore();
+  const addProgressEntry = useProgressStore(state => state.addProgressEntry);
   const { t } = useTranslation(language);
   const { showCorrectAnswer, showIncorrectAnswer } = useToast();
   useLearningCleanup();

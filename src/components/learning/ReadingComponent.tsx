@@ -37,10 +37,10 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
   const vocabularyRef = useRef<HTMLDivElement>(null);
   const grammarRef = useRef<HTMLDivElement>(null);
 
-  const { updateUserScore } = useUserStore();
+  const updateUserScore = useUserStore(state => state.updateUserScore);
   const { language } = useSettingsStore();
   const { returnToMenu } = useMenuNavigation();
-  const { addProgressEntry } = useProgressStore();
+  const addProgressEntry = useProgressStore(state => state.addProgressEntry);
   const { t } = useTranslation(language);
   useLearningCleanup();
 
@@ -72,6 +72,76 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
   const isSummaryPage = currentSectionIndex === readingSections.length;
   const hasSummaryContent =
     (readingData?.keyVocabulary?.length ?? 0) > 0 || (readingData?.grammarPoints?.length ?? 0) > 0;
+
+  // Parsed content is memoized by source text so re-renders that don't touch
+  // the reading data (e.g. store updates unrelated to this module) don't
+  // re-run ContentAdapter's regex parsing for every paragraph/term again.
+  const parsedSectionTitle = useMemo(
+    () => ContentAdapter.ensureStructured(currentSection?.title || '', 'reading'),
+    [currentSection?.title]
+  );
+
+  const parsedContentParagraphs = useMemo(() => {
+    const text = currentSection?.content;
+    if (!text || currentSection?.type === 'examples') return [];
+    return text.split('\n\n').map(paragraph => {
+      const lines = paragraph.split('\n');
+      const nonEmptyLines = lines.filter(l => l.trim());
+      const isBulletList =
+        nonEmptyLines.length > 0 && nonEmptyLines.every(l => /^[•·]\s/.test(l.trim()));
+      if (isBulletList) {
+        return {
+          type: 'bullet' as const,
+          items: lines
+            .filter(l => l.trim())
+            .map(line =>
+              ContentAdapter.ensureStructured(line.trim().replace(/^[•·]\s*/, ''), 'reading')
+            ),
+        };
+      }
+      return {
+        type: 'paragraph' as const,
+        lines: lines.map(line => ContentAdapter.ensureStructured(line, 'reading')),
+      };
+    });
+  }, [currentSection?.content, currentSection?.type]);
+
+  const parsedTooltips = useMemo(() => {
+    const tooltips = currentSection?.interactive?.tooltips;
+    if (!tooltips?.length) return [];
+    return tooltips.map(tooltip => ({
+      term: ContentAdapter.ensureStructured(tooltip.term, 'reading'),
+      definition: ContentAdapter.ensureStructured(tooltip.definition, 'reading'),
+    }));
+  }, [currentSection?.interactive?.tooltips]);
+
+  const parsedExpandables = useMemo(() => {
+    const expandable = currentSection?.interactive?.expandable;
+    if (!expandable?.length) return [];
+    return expandable.map(item => ({
+      title: ContentAdapter.ensureStructured(item.title, 'reading'),
+      content: ContentAdapter.ensureStructured(item.content, 'reading'),
+    }));
+  }, [currentSection?.interactive?.expandable]);
+
+  const parsedGrammarPoints = useMemo(() => {
+    const points = readingData?.grammarPoints;
+    if (!points?.length) return [];
+    return points.map(point => ({
+      rule: ContentAdapter.ensureStructured(point.rule, 'reading'),
+      explanation: ContentAdapter.ensureStructured(point.explanation, 'explanation'),
+    }));
+  }, [readingData?.grammarPoints]);
+
+  const parsedVocabulary = useMemo(() => {
+    const vocabulary = readingData?.keyVocabulary;
+    if (!vocabulary?.length) return [];
+    return vocabulary.map(term => ({
+      term: ContentAdapter.ensureStructured(term.term, 'reading'),
+      definition: ContentAdapter.ensureStructured(term.definition, 'reading'),
+      example: ContentAdapter.ensureStructured(term.example, 'reading'),
+    }));
+  }, [readingData?.keyVocabulary]);
 
   const handleNext = useCallback(() => {
     const maxIndex = hasSummaryContent ? readingSections.length : readingSections.length - 1;
@@ -302,18 +372,11 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                             {index + 1}
                           </span>
                           <div className="reading-component__grammar-rule">
-                            <ContentRenderer
-                              content={ContentAdapter.ensureStructured(point.rule, 'reading')}
-                            />
+                            <ContentRenderer content={parsedGrammarPoints[index].rule} />
                           </div>
                         </div>
                         <div className="reading-component__grammar-explanation">
-                          <ContentRenderer
-                            content={ContentAdapter.ensureStructured(
-                              point.explanation,
-                              'explanation'
-                            )}
-                          />
+                          <ContentRenderer content={parsedGrammarPoints[index].explanation} />
                         </div>
                         {point.examples && point.examples.length === 1 ? (
                           <div className="reading-component__grammar-single-line">
@@ -414,9 +477,7 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                       <div key={index} className="reading-component__vocabulary-card">
                         <div className="reading-component__vocabulary-card-header">
                           <div className="reading-component__vocabulary-term">
-                            <ContentRenderer
-                              content={ContentAdapter.ensureStructured(term.term, 'reading')}
-                            />
+                            <ContentRenderer content={parsedVocabulary[index].term} />
                           </div>
                           {term.pronunciation && (
                             <div className="reading-component__vocabulary-pronunciation">
@@ -430,12 +491,7 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                               {t('reading.component.definition')}
                             </div>
                             <div className="reading-component__vocabulary-definition">
-                              <ContentRenderer
-                                content={ContentAdapter.ensureStructured(
-                                  term.definition,
-                                  'reading'
-                                )}
-                              />
+                              <ContentRenderer content={parsedVocabulary[index].definition} />
                             </div>
                           </div>
                           <div className="reading-component__vocabulary-example-block">
@@ -443,9 +499,7 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                               {t('reading.component.example')}
                             </div>
                             <div className="reading-component__vocabulary-example">
-                              <ContentRenderer
-                                content={ContentAdapter.ensureStructured(term.example, 'reading')}
-                              />
+                              <ContentRenderer content={parsedVocabulary[index].example} />
                             </div>
                           </div>
                         </div>
@@ -460,9 +514,7 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
           <>
             {/* Regular content section */}
             <h3 className="reading-component__section-title">
-              <ContentRenderer
-                content={ContentAdapter.ensureStructured(currentSection?.title || '', 'reading')}
-              />
+              <ContentRenderer content={parsedSectionTitle} />
             </h3>
 
             <div className="reading-component__section-content">
@@ -587,49 +639,31 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                     ) : null;
                   })}
                 </div>
-              ) : (
+              ) : currentSection?.content ? (
                 <>
-                  {(currentSection?.content || t('common.loading'))
-                    .split('\n\n')
-                    .map((paragraph, idx) => {
-                      const lines = paragraph.split('\n');
-                      // If all non-empty lines in this paragraph start with a bullet, render as list
-                      const nonEmpty = lines.filter(l => l.trim());
-                      const isBulletList =
-                        nonEmpty.length > 0 && nonEmpty.every(l => /^[•·]\s/.test(l.trim()));
-                      if (isBulletList) {
-                        return (
-                          <ul key={idx} className="reading-component__bullet-list">
-                            {lines
-                              .filter(l => l.trim())
-                              .map((line, lineIdx) => {
-                                // Strip the bullet character
-                                const text = line.trim().replace(/^[•·]\s*/, '');
-                                return (
-                                  <li key={lineIdx} className="reading-component__bullet-item">
-                                    <ContentRenderer
-                                      content={ContentAdapter.ensureStructured(text, 'reading')}
-                                    />
-                                  </li>
-                                );
-                              })}
-                          </ul>
-                        );
-                      }
-                      return (
-                        <p key={idx}>
-                          {lines.map((line, lineIdx, arr) => (
-                            <React.Fragment key={lineIdx}>
-                              <ContentRenderer
-                                content={ContentAdapter.ensureStructured(line, 'reading')}
-                              />
-                              {lineIdx < arr.length - 1 && <br />}
-                            </React.Fragment>
-                          ))}
-                        </p>
-                      );
-                    })}
+                  {parsedContentParagraphs.map((paragraph, idx) =>
+                    paragraph.type === 'bullet' ? (
+                      <ul key={idx} className="reading-component__bullet-list">
+                        {paragraph.items.map((item, lineIdx) => (
+                          <li key={lineIdx} className="reading-component__bullet-item">
+                            <ContentRenderer content={item} />
+                          </li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p key={idx}>
+                        {paragraph.lines.map((lineContent, lineIdx, arr) => (
+                          <React.Fragment key={lineIdx}>
+                            <ContentRenderer content={lineContent} />
+                            {lineIdx < arr.length - 1 && <br />}
+                          </React.Fragment>
+                        ))}
+                      </p>
+                    )
+                  )}
                 </>
+              ) : (
+                <p>{t('common.loading')}</p>
               )}
             </div>
 
@@ -644,17 +678,13 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                       : t('reading.component.keyTerms')}
                   </h4>
                   <div className="reading-component__tooltips-grid">
-                    {currentSection.interactive.tooltips.map((tooltip, index) => (
+                    {currentSection.interactive.tooltips.map((_tooltip, index) => (
                       <div key={index} className="reading-component__tooltip-card">
                         <span className="reading-component__tooltip-term">
-                          <ContentRenderer
-                            content={ContentAdapter.ensureStructured(tooltip.term, 'reading')}
-                          />
+                          <ContentRenderer content={parsedTooltips[index].term} />
                         </span>
                         <span className="reading-component__tooltip-definition">
-                          <ContentRenderer
-                            content={ContentAdapter.ensureStructured(tooltip.definition, 'reading')}
-                          />
+                          <ContentRenderer content={parsedTooltips[index].definition} />
                         </span>
                       </div>
                     ))}
@@ -666,7 +696,7 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
             {currentSection?.interactive?.expandable &&
               currentSection.interactive.expandable.length > 0 && (
                 <div className="reading-component__expandables">
-                  {currentSection.interactive.expandable.map((expandable, index) => (
+                  {currentSection.interactive.expandable.map((_expandable, index) => (
                     <div key={index} className="reading-component__expandable">
                       <button
                         className="reading-component__expandable-trigger"
@@ -674,9 +704,7 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                         aria-expanded={expandedItems.has(index)}
                       >
                         <span className="reading-component__expandable-title">
-                          <ContentRenderer
-                            content={ContentAdapter.ensureStructured(expandable.title, 'reading')}
-                          />
+                          <ContentRenderer content={parsedExpandables[index].title} />
                         </span>
                         {expandedItems.has(index) ? (
                           <ChevronUp className="reading-component__expandable-icon" />
@@ -686,9 +714,7 @@ const ReadingComponent: React.FC<ReadingComponentProps> = ({ module }) => {
                       </button>
                       {expandedItems.has(index) && (
                         <div className="reading-component__expandable-content">
-                          <ContentRenderer
-                            content={ContentAdapter.ensureStructured(expandable.content, 'reading')}
-                          />
+                          <ContentRenderer content={parsedExpandables[index].content} />
                         </div>
                       )}
                     </div>

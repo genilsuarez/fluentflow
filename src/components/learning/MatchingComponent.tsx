@@ -46,8 +46,8 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
 
   const updateSessionScore = useAppStore(state => state.updateSessionScore);
   const triggerRestart = useAppStore(state => state.triggerRestart);
-  const { updateUserScore } = useUserStore();
-  const { addProgressEntry } = useProgressStore();
+  const updateUserScore = useUserStore(state => state.updateUserScore);
+  const addProgressEntry = useProgressStore(state => state.addProgressEntry);
   const { language, randomizeItems } = useSettingsStore();
   const { returnToMenu } = useMenuNavigation();
   const { showCorrectAnswer } = useToast();

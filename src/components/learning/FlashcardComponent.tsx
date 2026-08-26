@@ -27,8 +27,8 @@ const FlashcardComponent: React.FC<FlashcardComponentProps> = ({ module }) => {
   const [skipTransition, setSkipTransition] = useState(false);
   const [runId] = useState(() => createLearnFlowId('run'));
 
-  const { updateUserScore } = useUserStore();
-  const { addProgressEntry } = useProgressStore();
+  const updateUserScore = useUserStore(state => state.updateUserScore);
+  const addProgressEntry = useProgressStore(state => state.addProgressEntry);
   const { returnToMenu } = useMenuNavigation();
 
   const { t, randomizeItems, handleReturnToMenu, startTime, triggerRestart } = useLearningSession({

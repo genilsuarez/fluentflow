@@ -391,36 +391,62 @@ async function downloadOnLogin({ force = false } = {}): Promise<DownloadResult> 
     const { completedModules, progressHistory } = useProgressStore.getState();
 
     if (remoteProgress?.length || remoteActivity?.length) {
-      const nextState: {
-        completedModules?: Record<string, ModuleCompletion>;
-        progressHistory?: ProgressEntry[];
-        dailyProgress?: Record<string, import('../stores/progressStore').DailyProgress>;
-      } = {};
+      // mergeRemoteProgress/mergeRemoteActivityHistory always return a new
+      // object/array (even when nothing actually changed), so we can't gate
+      // on remote?.length alone — that made setState fire on every single
+      // pull for any user with existing progress, which re-triggers the
+      // useProgressStore.subscribe() below → scheduleSync() → another pull,
+      // forever, roughly every ~2s (500ms timer + network round trip).
+      // Only write to the stores when the merge produced a real difference.
+      const mergedCompleted = remoteProgress?.length
+        ? mergeRemoteProgress(completedModules, remoteProgress)
+        : completedModules;
+      const modulesChanged =
+        !!remoteProgress?.length &&
+        (Object.keys(mergedCompleted).length !== Object.keys(completedModules).length ||
+          Object.entries(mergedCompleted).some(([id, mod]) => {
+            const prev = completedModules[id];
+            return (
+              !prev ||
+              prev.bestScore !== mod.bestScore ||
+              prev.attempts !== mod.attempts ||
+              prev.completedAt !== mod.completedAt
+            );
+          }));
 
       let nextHistory = progressHistory;
-
-      if (remoteProgress?.length) {
-        nextState.completedModules = mergeRemoteProgress(completedModules, remoteProgress);
-      }
+      let historyChanged = false;
       if (remoteActivity?.length) {
         nextHistory = mergeRemoteActivityHistory(progressHistory, remoteActivity);
-        nextState.progressHistory = nextHistory;
-        // Stats (sessions, time, averages) derive from dailyProgress — rebuild after
-        // merging remote activity so they stay aligned with the history ledger.
-        nextState.dailyProgress = rebuildDailyProgressFromHistory(nextHistory);
+        historyChanged = nextHistory.length !== progressHistory.length;
       }
 
-      if (Object.keys(nextState).length) {
+      if (modulesChanged || historyChanged) {
+        const nextState: {
+          completedModules?: Record<string, ModuleCompletion>;
+          progressHistory?: ProgressEntry[];
+          dailyProgress?: Record<string, import('../stores/progressStore').DailyProgress>;
+        } = {};
+
+        if (modulesChanged) {
+          nextState.completedModules = mergedCompleted;
+        }
+        if (historyChanged) {
+          nextState.progressHistory = nextHistory;
+          // Stats (sessions, time, averages) derive from dailyProgress — rebuild after
+          // merging remote activity so they stay aligned with the history ledger.
+          nextState.dailyProgress = rebuildDailyProgressFromHistory(nextHistory);
+        }
+
         useProgressStore.setState(nextState);
-      }
 
-      const mergedCompleted = nextState.completedModules ?? completedModules;
-      const { userScores } = useUserStore.getState();
-      const fromHistory = rebuildUserScoresFromHistory(nextHistory);
-      const fromCompleted = rebuildUserScoresFromCompletedModules(mergedCompleted);
-      useUserStore.setState({
-        userScores: mergeUserScores(mergeUserScores(userScores, fromHistory), fromCompleted),
-      });
+        const { userScores } = useUserStore.getState();
+        const fromHistory = rebuildUserScoresFromHistory(nextHistory);
+        const fromCompleted = rebuildUserScoresFromCompletedModules(mergedCompleted);
+        useUserStore.setState({
+          userScores: mergeUserScores(mergeUserScores(userScores, fromHistory), fromCompleted),
+        });
+      }
     }
   }
 
