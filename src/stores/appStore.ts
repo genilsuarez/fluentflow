@@ -9,10 +9,19 @@ interface AppStore extends AppState {
   // Key that increments on in-place restart to force component remount
   restartKey: number;
 
+  // Transient (never persisted) — true while App.tsx's async hash resolver
+  // is still fetching a module for the initial #/learn/<id> deep link on
+  // this page load. currentView starts as 'menu' on every load (see
+  // partialize below), so components that branch on currentView === 'menu'
+  // (Header, AppRouter) use this to avoid flashing menu-mode UI during that
+  // window. Always false once the initial resolution completes.
+  isResolvingInitialHash: boolean;
+
   // Actions
   setCurrentModule: (module: LearningModule | null) => void;
   setCurrentView: (view: AppState['currentView']) => void;
   setPreviousMenuContext: (context: MenuContext) => void;
+  setIsResolvingInitialHash: (value: boolean) => void;
   updateSessionScore: (score: Partial<SessionScore>) => void;
   updateGlobalScore: (score: Partial<SessionScore>) => void;
   setLoading: (loading: boolean) => void;
@@ -30,6 +39,8 @@ export const useAppStore = create<AppStore>()(
       currentView: 'menu',
       previousMenuContext: 'progression',
       restartKey: 0,
+      isResolvingInitialHash:
+        typeof window !== 'undefined' && window.location.hash.startsWith('#/learn/'),
       sessionScore: {
         correct: 0,
         incorrect: 0,
@@ -75,6 +86,8 @@ export const useAppStore = create<AppStore>()(
         set(() => ({
           previousMenuContext: context,
         })),
+
+      setIsResolvingInitialHash: value => set({ isResolvingInitialHash: value }),
 
       updateSessionScore: scoreUpdate =>
         set(state => {

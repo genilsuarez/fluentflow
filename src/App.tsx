@@ -4,6 +4,7 @@ import { ErrorBoundary } from './components/common/ErrorBoundary';
 import { AppRouter } from './components/layout/AppRouter';
 import { MemoizedHeader, MemoizedToastContainer } from './components/ui/MemoizedComponents';
 import { OrientationLock } from './components/ui/OrientationLock';
+import { LoadingSkeleton } from './components/ui/LoadingSkeleton';
 import { useAppStore } from './stores/appStore';
 import { useProgressStore } from './stores/progressStore';
 import { useSettingsStore } from './stores/settingsStore';
@@ -66,6 +67,12 @@ const AppContent: React.FC = () => {
   } = useSettingsStore();
   const { t } = useTranslation(language);
   const integrityChecked = useRef(false);
+  // currentView always starts as 'menu' (see appStore's partialize), so on a
+  // deep link like #/learn/<id> AppRouter (and Header) would flash menu-mode
+  // UI for a tick before the async hash resolution below loads the real
+  // module. This shared store flag (see appStore) gates both, so the user
+  // sees a loader instead of a home-screen flash.
+  const showInitialLoader = useAppStore(state => state.isResolvingInitialHash);
   // Set up system theme listener
   useSystemTheme();
 
@@ -130,6 +137,7 @@ const AppContent: React.FC = () => {
     // one is in-flight are debounced and re-run after it finishes.
     let isProcessing = false;
     let pendingHash: string | null = null;
+    let isFirstResolution = true;
 
     const resolveHash = async (hash: string) => {
       // Parse hash format: #/learn/module-id
@@ -206,7 +214,7 @@ const AppContent: React.FC = () => {
             setCurrentView('menu');
           }
         }
-      } else if (hash === '' || hash === '#/' || hash === '#/menu') {
+      } else if (hash === '' || hash === '#/' || hash === '#/menu' || hash === '#/menu/list') {
         // Navigate to menu
         const { setCurrentView, setCurrentModule } = useAppStore.getState();
         setCurrentModule(null);
@@ -228,6 +236,10 @@ const AppContent: React.FC = () => {
         await resolveHash(hash);
       } finally {
         isProcessing = false;
+        if (isFirstResolution) {
+          isFirstResolution = false;
+          useAppStore.getState().setIsResolvingInitialHash(false);
+        }
         // If a new hash arrived while we were processing, handle it now
         if (pendingHash !== null) {
           const next = pendingHash;
@@ -292,7 +304,13 @@ const AppContent: React.FC = () => {
         <MemoizedHeader />
 
         <main className="layout-main">
-          <AppRouter />
+          {showInitialLoader ? (
+            <div className="app-router__loader">
+              <LoadingSkeleton variant="card" width="100%" height="100%" />
+            </div>
+          ) : (
+            <AppRouter />
+          )}
         </main>
 
         <footer className="lp-footer">

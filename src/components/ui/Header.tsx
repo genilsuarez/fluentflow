@@ -57,7 +57,12 @@ export const Header: React.FC<HeaderProps> = () => {
   const currentView = useAppStore(state => state.currentView);
   const previousMenuContext = useAppStore(state => state.previousMenuContext);
   const lessonProgress = useLearningHeaderStore(state => state.progress);
-  const isInGame = currentView !== 'menu';
+  // currentView always starts as 'menu' on load (see appStore's partialize),
+  // so on a #/learn/<id> deep link this would otherwise render the menu
+  // header (greeting/brand) for a tick before App.tsx's async hash
+  // resolution flips currentView — a visible header flash on refresh.
+  const isResolvingInitialHash = useAppStore(state => state.isResolvingInitialHash);
+  const isInGame = currentView !== 'menu' || isResolvingInitialHash;
   const { developmentMode, language, offlineEnabled, theme, setTheme } = useSettingsStore();
   const user = useUserStore(state => state.user);
   const canOpenSettings = canAccessAdvancedSettings(user?.email);

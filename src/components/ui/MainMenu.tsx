@@ -62,6 +62,10 @@ export const MainMenu: React.FC = () => {
   const { t } = useTranslation(language);
   const queryClient = useQueryClient();
   const [viewMode, setViewModeRaw] = useState<'progression' | 'list'>(() => {
+    // Hash takes priority so a reload/shared link/back-forward lands on the
+    // right tab — falls back to the persisted context (localStorage) when
+    // there's no tab-specific hash yet (e.g. a bare #/menu).
+    if (window.location.hash === '#/menu/list') return 'list';
     // Map legacy stored values to the new semantics
     // 'progression' now means 'home' tab, 'list' means 'modules' tab
     return previousMenuContext === 'list' ? 'list' : 'progression';
@@ -332,8 +336,18 @@ export const MainMenu: React.FC = () => {
     prevViewModeRef.current = viewMode;
   }, [viewMode]);
 
-  // Sync view mode with stored context when component mounts
+  // Sync view mode when the header's tab buttons change previousMenuContext
+  // directly (they call useAppStore.getState().setPreviousMenuContext, not
+  // setViewMode). Skip the initial mount: the useState initializer above
+  // already resolved the right starting tab from the hash (falling back to
+  // previousMenuContext) — re-running this here would clobber a hash-picked
+  // 'list' with a stale persisted 'progression', or vice versa.
+  const didMountViewModeSync = useRef(false);
   useEffect(() => {
+    if (!didMountViewModeSync.current) {
+      didMountViewModeSync.current = true;
+      return;
+    }
     setViewMode(previousMenuContext);
   }, [previousMenuContext, setViewMode]);
 
@@ -341,6 +355,46 @@ export const MainMenu: React.FC = () => {
   useEffect(() => {
     setPreviousMenuContext(viewMode);
   }, [viewMode, setPreviousMenuContext]);
+
+  // Reflect the active tab in the URL hash so reload/share/back-forward
+  // land on the right one instead of always resetting to the home tab
+  // (same pattern as DeskFlow/HubFlow/LyricFlow's dashboard sections).
+  // Assigning `location.hash` is a no-op when the value is already current,
+  // so this doesn't spam history on every render.
+  //
+  // Only force the hash while it's already a menu-family hash (or empty).
+  // currentView always starts as 'menu' on a fresh load (see appStore's
+  // partialize), so MainMenu mounts transiently even for a deep link like
+  // #/learn/<id> while App.tsx's async hash resolver is still fetching the
+  // module. Without this guard, this effect would stomp that real deep
+  // link back to '#/menu' before the resolver finishes — a race that a
+  // mount-skip ref can't reliably prevent under React.StrictMode, which
+  // double-invokes effects on mount in dev.
+  useEffect(() => {
+    const currentHash = window.location.hash;
+    const isMenuHash =
+      currentHash === '' ||
+      currentHash === '#/' ||
+      currentHash === '#/menu' ||
+      currentHash === '#/menu/list';
+    if (!isMenuHash) return;
+    const targetHash = viewMode === 'list' ? '#/menu/list' : '#/menu';
+    if (currentHash !== targetHash) {
+      window.location.hash = targetHash;
+    }
+  }, [viewMode]);
+
+  // Browser back/forward between the two tabs while on the menu.
+  useEffect(() => {
+    const onHashChange = () => {
+      const hash = window.location.hash;
+      if (hash === '#/menu/list' || hash === '#/menu' || hash === '' || hash === '#/') {
+        setViewMode(hash === '#/menu/list' ? 'list' : 'progression');
+      }
+    };
+    window.addEventListener('hashchange', onHashChange);
+    return () => window.removeEventListener('hashchange', onHashChange);
+  }, [setViewMode]);
 
   // Scroll to next recommended module and highlight it
   const scrollToNextModule = React.useCallback(
