@@ -581,48 +581,64 @@ html.dark .matching-component__item--selected .matching-component__item-text * {
 }
 
 html.dark .matching-component__item--matched {
-  background: var(--lp-surface-raised) !important;
-  color: var(--lp-ink-soft) !important;
-  border-color: var(--lp-border-strong) !important;
+  background: color-mix(
+    in srgb,
+    var(--pair-accent, var(--lp-primary)) 14%,
+    var(--lp-surface-raised)
+  ) !important;
+  color: var(--lp-ink) !important;
+  border-color: color-mix(
+    in srgb,
+    var(--pair-accent, var(--lp-primary)) 55%,
+    transparent
+  ) !important;
 }
 
 html.dark .matching-component__item--matched .matching-component__item-letter {
-  background-color: color-mix(in srgb, var(--lp-primary) 15%, transparent);
-  color: var(--lp-ink-soft);
-  border-color: var(--lp-border-strong);
+  background-color: color-mix(in srgb, var(--pair-accent, var(--lp-primary)) 20%, transparent);
+  color: var(--lp-ink);
+  border-color: color-mix(in srgb, var(--pair-accent, var(--lp-primary)) 55%, transparent);
 }
 
 html.dark .matching-component__item--matched .matching-component__item-text {
-  color: var(--lp-ink-soft);
+  color: var(--lp-ink);
 }
 
 html.dark .matching-component__match-number {
-  background-color: color-mix(in srgb, var(--lp-primary) 20%, transparent);
-  color: var(--lp-ink-soft);
+  background-color: var(--pair-accent, color-mix(in srgb, var(--lp-primary) 20%, transparent));
+  color: var(--lp-ink);
   border: 1px solid var(--lp-border-strong);
 }
 
 html.dark .matching-component__item--matched-inactive {
-  background: var(--lp-surface-raised) !important;
-  color: var(--lp-muted) !important;
-  border-color: transparent !important;
+  background: color-mix(
+    in srgb,
+    var(--pair-accent, var(--lp-muted)) 10%,
+    var(--lp-surface-raised)
+  ) !important;
+  color: var(--lp-ink-soft) !important;
+  border-color: color-mix(in srgb, var(--pair-accent, var(--lp-muted)) 40%, transparent) !important;
 }
 
 html.dark .matching-component__item--matched-inactive:hover {
-  background: var(--lp-surface-raised) !important;
-  color: var(--lp-muted) !important;
-  border-color: transparent !important;
+  background: color-mix(
+    in srgb,
+    var(--pair-accent, var(--lp-muted)) 18%,
+    var(--lp-surface-raised)
+  ) !important;
+  color: var(--lp-ink) !important;
+  border-color: color-mix(in srgb, var(--pair-accent, var(--lp-muted)) 55%, transparent) !important;
   transform: none;
   box-shadow: none;
 }
 
 html.dark .matching-component__item--matched-inactive .matching-component__item-text {
-  color: var(--lp-muted) !important;
+  color: var(--lp-ink-soft) !important;
 }
 
 html.dark .matching-component__item--matched-inactive:hover .matching-component__item-text,
 html.dark .matching-component__item--matched-inactive:hover .matching-component__item-text * {
-  color: var(--lp-muted) !important;
+  color: var(--lp-ink) !important;
 }
 
 html.dark .matching-component__item--unmatched {
