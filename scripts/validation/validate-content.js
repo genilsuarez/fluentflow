@@ -18,11 +18,13 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { computeLevelCatalogs } from '../generate-level-catalogs.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..', '..');
 const DATA_DIR = path.join(ROOT, 'public', 'data');
 const MODULES_PATH = path.join(DATA_DIR, 'learningModules.json');
+const LEVEL_CATALOGS_DIR = path.join(DATA_DIR, 'learningModules');
 
 // ============================================================
 // CONFIG
@@ -44,16 +46,16 @@ const MINIMUMS = {
 
 /** Time estimate formulas: mode → (itemCount) → minutes */
 const TIME_FORMULAS = {
-  flashcard:          (c) => Math.max(1, Math.round(c * 5 / 60)),
-  quiz:               (c) => Math.max(2, Math.round(Math.min(c, 15) * 20 / 60)),
-  completion:         (c) => Math.max(2, Math.round(Math.min(c, 15) * 20 / 60)),
-  sorting:            (c) => Math.max(2, Math.round(Math.min(c, 20) * 10 / 60)),
-  matching:           (c) => Math.max(1, Math.round(Math.min(c, 10) * 15 / 60)),
-  reading:            (c) => Math.max(3, Math.round(c * 0.9)),
-  reordering:         (c) => Math.max(2, Math.round(Math.min(c, 12) * 15 / 60)),
-  transformation:     (c) => Math.max(2, Math.round(Math.min(c, 12) * 20 / 60)),
-  'error-correction': (c) => Math.max(2, Math.round(Math.min(c, 12) * 20 / 60)),
-  'word-formation':   (c) => Math.max(2, Math.round(Math.min(c, 12) * 15 / 60)),
+  flashcard: c => Math.max(1, Math.round((c * 5) / 60)),
+  quiz: c => Math.max(2, Math.round((Math.min(c, 15) * 20) / 60)),
+  completion: c => Math.max(2, Math.round((Math.min(c, 15) * 20) / 60)),
+  sorting: c => Math.max(2, Math.round((Math.min(c, 20) * 10) / 60)),
+  matching: c => Math.max(1, Math.round((Math.min(c, 10) * 15) / 60)),
+  reading: c => Math.max(3, Math.round(c * 0.9)),
+  reordering: c => Math.max(2, Math.round((Math.min(c, 12) * 15) / 60)),
+  transformation: c => Math.max(2, Math.round((Math.min(c, 12) * 20) / 60)),
+  'error-correction': c => Math.max(2, Math.round((Math.min(c, 12) * 20) / 60)),
+  'word-formation': c => Math.max(2, Math.round((Math.min(c, 12) * 15) / 60)),
 };
 
 /** CEFR level order for cross-level comparisons */
@@ -69,9 +71,15 @@ const errors = [];
 const warnings = [];
 const info = [];
 
-function err(code, msg) { errors.push({ code, msg }); }
-function warn(code, msg) { warnings.push({ code, msg }); }
-function inf(code, msg) { info.push({ code, msg }); }
+function err(code, msg) {
+  errors.push({ code, msg });
+}
+function warn(code, msg) {
+  warnings.push({ code, msg });
+}
+function inf(code, msg) {
+  info.push({ code, msg });
+}
 
 function getLevel(mod) {
   return Array.isArray(mod.level) ? mod.level[0] : mod.level;
@@ -104,8 +112,11 @@ function validateFlashcard(items, fileName) {
     }
 
     // front === back (cognados sin traducción)
-    if (card.front && card.back &&
-        card.front.trim().toLowerCase() === card.back.trim().toLowerCase()) {
+    if (
+      card.front &&
+      card.back &&
+      card.front.trim().toLowerCase() === card.back.trim().toLowerCase()
+    ) {
       err('FC-SAME', `${fileName}[${i}]: front === back "${card.front}"`);
     }
 
@@ -140,7 +151,10 @@ function validateQuiz(items, fileName) {
     } else if (typeof item.correct === 'number') {
       // Index-based: must be valid index
       if (item.correct < 0 || item.correct >= item.options.length) {
-        err('QZ-IDX', `${fileName}[${i}]: correct index ${item.correct} out of range [0..${item.options.length - 1}]`);
+        err(
+          'QZ-IDX',
+          `${fileName}[${i}]: correct index ${item.correct} out of range [0..${item.options.length - 1}]`
+        );
       }
     } else if (typeof item.correct === 'string') {
       // String-based: must be in options
@@ -174,7 +188,10 @@ function validateCompletion(items, fileName) {
     if (!item.sentence.includes(BLANK_MARKER)) {
       err('CP-BLANK', `${fileName}[${i}]: sentence missing blank marker "${BLANK_MARKER}"`);
     } else if (NON_CANONICAL_BLANK_PATTERN.test(item.sentence)) {
-      err('CP-BLANK-LEN', `${fileName}[${i}]: sentence uses non-canonical blank (expected exactly "${BLANK_MARKER}")`);
+      err(
+        'CP-BLANK-LEN',
+        `${fileName}[${i}]: sentence uses non-canonical blank (expected exactly "${BLANK_MARKER}")`
+      );
     }
 
     // If has options, correct must be in options
@@ -223,8 +240,11 @@ function validateMatching(items, fileName) {
     }
 
     // left === right
-    if (item.left && item.right &&
-        item.left.trim().toLowerCase() === item.right.trim().toLowerCase()) {
+    if (
+      item.left &&
+      item.right &&
+      item.left.trim().toLowerCase() === item.right.trim().toLowerCase()
+    ) {
       err('MT-SAME', `${fileName}[${i}]: left === right "${item.left}"`);
     }
   }
@@ -266,11 +286,18 @@ function validateReordering(items, fileName) {
       continue;
     }
 
-    const norm = (s) => s.toLowerCase().replace(/[.,!?;:]/g, '').trim();
+    const norm = s =>
+      s
+        .toLowerCase()
+        .replace(/[.,!?;:]/g, '')
+        .trim();
     const target = norm(item.sentence);
     const joined = norm(item.words.join(' '));
     if (target !== joined) {
-      err('RO-MISMATCH', `${fileName}[${i}]: words don't reconstruct sentence — "${item.sentence}" vs "${item.words.join(' ')}"`);
+      err(
+        'RO-MISMATCH',
+        `${fileName}[${i}]: words don't reconstruct sentence — "${item.sentence}" vs "${item.words.join(' ')}"`
+      );
     }
   }
 }
@@ -286,8 +313,15 @@ function validateTransformation(items, fileName) {
     if (!item.source || typeof item.source !== 'string') {
       err('TR-FIELD', `${fileName}[${i}]: missing or invalid "source"`);
     }
-    if (!Array.isArray(item.correct) || item.correct.length === 0 || item.correct.some((c) => !c || typeof c !== 'string')) {
-      err('TR-CORRECT', `${fileName}[${i}]: "correct" must be a non-empty array of non-empty strings`);
+    if (
+      !Array.isArray(item.correct) ||
+      item.correct.length === 0 ||
+      item.correct.some(c => !c || typeof c !== 'string')
+    ) {
+      err(
+        'TR-CORRECT',
+        `${fileName}[${i}]: "correct" must be a non-empty array of non-empty strings`
+      );
     }
   }
 }
@@ -298,8 +332,15 @@ function validateErrorCorrection(items, fileName) {
     if (!item.sentence || typeof item.sentence !== 'string') {
       err('EC-FIELD', `${fileName}[${i}]: missing or invalid "sentence"`);
     }
-    if (!Array.isArray(item.correct) || item.correct.length === 0 || item.correct.some((c) => !c || typeof c !== 'string')) {
-      err('EC-CORRECT', `${fileName}[${i}]: "correct" must be a non-empty array of non-empty strings`);
+    if (
+      !Array.isArray(item.correct) ||
+      item.correct.length === 0 ||
+      item.correct.some(c => !c || typeof c !== 'string')
+    ) {
+      err(
+        'EC-CORRECT',
+        `${fileName}[${i}]: "correct" must be a non-empty array of non-empty strings`
+      );
     }
   }
 }
@@ -314,7 +355,10 @@ function validateWordFormation(items, fileName) {
     if (!item.sentence.includes(BLANK_MARKER)) {
       err('WF-BLANK', `${fileName}[${i}]: sentence missing blank marker "${BLANK_MARKER}"`);
     } else if (NON_CANONICAL_BLANK_PATTERN.test(item.sentence)) {
-      err('WF-BLANK-LEN', `${fileName}[${i}]: sentence uses non-canonical blank (expected exactly "${BLANK_MARKER}")`);
+      err(
+        'WF-BLANK-LEN',
+        `${fileName}[${i}]: sentence uses non-canonical blank (expected exactly "${BLANK_MARKER}")`
+      );
     }
     if (!item.rootWord || typeof item.rootWord !== 'string') {
       err('WF-FIELD', `${fileName}[${i}]: missing or invalid "rootWord"`);
@@ -331,7 +375,8 @@ function validateWordFormation(items, fileName) {
  * regardless of mode.
  */
 function validateInFileDuplicates(items, fileName) {
-  const keyOf = (item) => item.sentence || item.question || item.source || item.left || item.word || item.text;
+  const keyOf = item =>
+    item.sentence || item.question || item.source || item.left || item.word || item.text;
   const seen = new Map();
   for (let i = 0; i < items.length; i++) {
     const key = keyOf(items[i]);
@@ -366,6 +411,34 @@ function run() {
     process.exit(1);
   }
 
+  // ── learningModules/*.json drift ───────────────────────────
+  // These per-level files are generated from learningModules.json by
+  // generate-level-catalogs.mjs so the app doesn't have to fetch all 330
+  // modules' metadata to open one level. Catch edits to the source that
+  // forgot to re-run the generator.
+  try {
+    const expected = computeLevelCatalogs(modules).files;
+    for (const [fileName, expectedContent] of Object.entries(expected)) {
+      const filePath = path.join(LEVEL_CATALOGS_DIR, fileName);
+      if (!fs.existsSync(filePath)) {
+        err(
+          'CATALOG-DRIFT',
+          `public/data/learningModules/${fileName} missing — run npm run generate:catalogs`
+        );
+        continue;
+      }
+      const actualContent = fs.readFileSync(filePath, 'utf8');
+      if (actualContent !== expectedContent) {
+        err(
+          'CATALOG-DRIFT',
+          `public/data/learningModules/${fileName} out of sync with learningModules.json — run npm run generate:catalogs`
+        );
+      }
+    }
+  } catch (e) {
+    err('CATALOG-DRIFT', `Failed to verify learningModules/*.json: ${e.message}`);
+  }
+
   const moduleIds = new Set(modules.map(m => m.id));
   const levelStats = {};
   const allFlashcards = {}; // level -> [{front, file}]
@@ -380,13 +453,20 @@ function run() {
     if (!levelStats[level]) levelStats[level] = { modules: 0, items: 0, time: 0, modes: {} };
     levelStats[level].modules++;
     levelStats[level].time += mod.estimatedTime || 0;
-    levelStats[level].modes[mod.learningMode] = (levelStats[level].modes[mod.learningMode] || 0) + 1;
+    levelStats[level].modes[mod.learningMode] =
+      (levelStats[level].modes[mod.learningMode] || 0) + 1;
 
     // ── Module-level checks ──
     if (!mod.id) err('MOD-ID', `Module missing "id"`);
     if (!mod.learningMode) err('MOD-MODE', `${mod.id}: missing "learningMode"`);
-    if (!mod.dataPath) { err('MOD-PATH', `${mod.id}: missing "dataPath"`); continue; }
-    if (!fs.existsSync(filePath)) { err('MOD-FILE', `${mod.id}: file not found "${mod.dataPath}"`); continue; }
+    if (!mod.dataPath) {
+      err('MOD-PATH', `${mod.id}: missing "dataPath"`);
+      continue;
+    }
+    if (!fs.existsSync(filePath)) {
+      err('MOD-FILE', `${mod.id}: file not found "${mod.dataPath}"`);
+      continue;
+    }
 
     // Prerequisites reference valid modules
     if (mod.prerequisites) {
@@ -399,7 +479,10 @@ function run() {
 
     // Load data
     const rawData = loadJSON(filePath);
-    if (rawData === null) { err('MOD-JSON', `${mod.id}: invalid JSON in ${fileName}`); continue; }
+    if (rawData === null) {
+      err('MOD-JSON', `${mod.id}: invalid JSON in ${fileName}`);
+      continue;
+    }
 
     // ── Item count & time estimate ──
     let items, count;
@@ -423,7 +506,10 @@ function run() {
     if (formula) {
       const expected = formula(count);
       if (mod.estimatedTime !== expected) {
-        warn('TIME-EST', `${mod.id}: estimatedTime=${mod.estimatedTime}, expected=${expected} (${count} items)`);
+        warn(
+          'TIME-EST',
+          `${mod.id}: estimatedTime=${mod.estimatedTime}, expected=${expected} (${count} items)`
+        );
       }
     }
 
@@ -476,7 +562,11 @@ function run() {
         break;
     }
 
-    if (mod.learningMode !== 'reading' && mod.learningMode !== 'flashcard' && mod.learningMode !== 'sorting') {
+    if (
+      mod.learningMode !== 'reading' &&
+      mod.learningMode !== 'flashcard' &&
+      mod.learningMode !== 'sorting'
+    ) {
       validateInFileDuplicates(items, fileName);
     }
   }
@@ -526,9 +616,7 @@ function run() {
     if (!Array.isArray(data)) continue;
     for (const item of data) {
       if (!item.question) continue;
-      const normalized = item.question
-        .replace(/"[^"]+"/g, '"___"')
-        .replace(/'[^']+'/g, "'___'");
+      const normalized = item.question.replace(/"[^"]+"/g, '"___"').replace(/'[^']+'/g, "'___'");
       const pattern = normalized.split(/\s+/).slice(0, 6).join(' ').toLowerCase();
       globalPatterns[pattern] = (globalPatterns[pattern] || 0) + 1;
     }
@@ -571,13 +659,19 @@ function run() {
     console.log('------|---------|-------|----------|------');
     const totalItems = { modules: 0, items: 0, time: 0 };
     for (const [level, stats] of Object.entries(levelStats).sort()) {
-      const modes = Object.entries(stats.modes).map(([m, c]) => `${m}:${c}`).join(', ');
-      console.log(`${level.toUpperCase()}    | ${String(stats.modules).padStart(7)} | ${String(stats.items).padStart(5)} | ${String(stats.time).padStart(6)}m | ${modes}`);
+      const modes = Object.entries(stats.modes)
+        .map(([m, c]) => `${m}:${c}`)
+        .join(', ');
+      console.log(
+        `${level.toUpperCase()}    | ${String(stats.modules).padStart(7)} | ${String(stats.items).padStart(5)} | ${String(stats.time).padStart(6)}m | ${modes}`
+      );
       totalItems.modules += stats.modules;
       totalItems.items += stats.items;
       totalItems.time += stats.time;
     }
-    console.log(`TOTAL | ${String(totalItems.modules).padStart(7)} | ${String(totalItems.items).padStart(5)} | ${String(totalItems.time).padStart(6)}m |`);
+    console.log(
+      `TOTAL | ${String(totalItems.modules).padStart(7)} | ${String(totalItems.items).padStart(5)} | ${String(totalItems.time).padStart(6)}m |`
+    );
 
     if (errors.length > 0) {
       console.log(`\n❌ ERRORS (${errors.length}):`);
@@ -604,7 +698,9 @@ function run() {
     }
 
     console.log('\n============================================================');
-    console.log(`RESULT: ${errors.length} errors, ${warnings.length} warnings, ${info.length} info`);
+    console.log(
+      `RESULT: ${errors.length} errors, ${warnings.length} warnings, ${info.length} info`
+    );
     if (errors.length === 0) {
       console.log('✅ No errors found');
     } else {

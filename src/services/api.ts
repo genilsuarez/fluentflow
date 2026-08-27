@@ -1,6 +1,8 @@
-import { getLearningModulesPath, getAssetPath } from '../utils/pathUtils';
+import { getLevelCatalogPath, getAssetPath } from '../utils/pathUtils';
 import { ModuleNotAvailableOfflineError } from '../utils/secureHttp';
 import { shuffleArray } from '../utils/randomUtils';
+import { queryClient } from './queryClient';
+import { LEVEL_ORDER } from './progressionService';
 import type { LearningModule } from '../types';
 
 export interface ApiResponse<T> {
@@ -54,13 +56,77 @@ function enhanceModules(modules: LearningModule[]): LearningModule[] {
 }
 
 /**
+ * `lp-level` (localStorage) is the cross-app combined CEFR level — same
+ * fallback/default as ProgressionService.getCombinedLevelIndex(), which is
+ * the hard gate on what a module can ever unlock to. Nothing above this
+ * index is reachable yet, so nothing above it needs to be in the FIRST
+ * catalog fetch either.
+ */
+function getCombinedLevelIndex(): number {
+  try {
+    const stored = localStorage.getItem('lp-level') || 'a1';
+    const idx = LEVEL_ORDER.indexOf(stored as (typeof LEVEL_ORDER)[number]);
+    return idx === -1 ? 0 : idx;
+  } catch {
+    return 0;
+  }
+}
+
+function fetchLevelCatalog(level: string): Promise<LearningModule[]> {
+  return fetchJson<LearningModule[]>(getLevelCatalogPath(level));
+}
+
+// In-flight/resolved catalog shared across every fetchModules() caller in this
+// session, so the progressive load below (and its background top-up) only
+// ever runs once — repeat callers (fetchModuleData's fallback path, a second
+// mount before React Query's own cache is warm, ...) get the same promise.
+let modulesPromise: Promise<LearningModule[]> | null = null;
+
+/**
+ * Loads the module catalog progressively by CEFR level instead of the full
+ * ~330-module file: modules above the user's current level are locked
+ * (ProgressionService.hasReachedCombinedLevel) and unreachable anyway, so the
+ * first paint only needs the current level and everything below it. Levels
+ * beyond that load in the background and merge into the React Query cache
+ * once ready, so search and locked-level previews still see everything —
+ * just not before the first module the user can actually open is on screen.
+ */
+async function loadModulesProgressively(): Promise<LearningModule[]> {
+  const combinedIndex = getCombinedLevelIndex();
+  const neededLevels = LEVEL_ORDER.slice(0, combinedIndex + 1);
+  const remainingLevels = LEVEL_ORDER.slice(combinedIndex + 1);
+
+  const neededResults = await Promise.all(neededLevels.map(fetchLevelCatalog));
+  const partial = enhanceModules(neededResults.flat());
+
+  if (remainingLevels.length > 0) {
+    Promise.all(remainingLevels.map(fetchLevelCatalog))
+      .then(remainingResults => {
+        const full = enhanceModules([...neededResults.flat(), ...remainingResults.flat()]);
+        modulesPromise = Promise.resolve(full);
+        queryClient.setQueryData(['modules'], full);
+      })
+      .catch(() => {
+        // Non-critical: modules beyond the user's current level just stay
+        // unavailable to search/preview until the next fetchModules() call.
+      });
+  }
+
+  return partial;
+}
+
+/**
  * Fetch all available learning modules.
  */
 export async function fetchModules(): Promise<ApiResponse<LearningModule[]>> {
   try {
-    const modules = await fetchJson<LearningModule[]>(getLearningModulesPath());
-    return { data: enhanceModules(modules), success: true };
+    if (!modulesPromise) {
+      modulesPromise = loadModulesProgressively();
+    }
+    const modules = await modulesPromise;
+    return { data: modules, success: true };
   } catch (error) {
+    modulesPromise = null; // allow the next call to retry
     const msg = error instanceof Error ? error.message : 'Unknown error';
     return { data: [], success: false, error: msg };
   }

@@ -165,7 +165,11 @@
   }
 }
 
-.matching-component__item--shake {
+/* Higher specificity than --matched/--matched-inactive's own `animation` so the
+   shake isn't silently overridden by their pulse-success/base animation. */
+.matching-component__item--shake,
+.matching-component__item--matched.matching-component__item--shake,
+.matching-component__item--matched-inactive.matching-component__item--shake {
   animation: matching-shake-wrong 0.4s ease-in-out;
 }
 
@@ -776,7 +780,7 @@ html.dark .matching-component__item--incorrect .matching-component__info-icon {
   }
 
   .matching-component__column-header {
-    font-size: 1.2rem;
+    font-size: 1.14rem;
     padding: 0.3rem 0.45rem;
     margin-bottom: 0.45rem;
   }
@@ -787,7 +791,7 @@ html.dark .matching-component__item--incorrect .matching-component__info-icon {
   }
 
   .matching-component__item-text {
-    font-size: 1.2rem;
+    font-size: 1.015rem;
     line-height: 1.45;
     min-height: 1.5rem;
   }
@@ -795,14 +799,14 @@ html.dark .matching-component__item--incorrect .matching-component__info-icon {
   .matching-component__item-letter {
     width: 1.65rem !important;
     height: 1.65rem !important;
-    font-size: 1.05rem !important;
+    font-size: 1rem !important;
     margin-right: 0.45rem !important;
   }
 
   .matching-component__match-number {
     min-width: 1.5rem;
     height: 1.5rem;
-    font-size: 0.9rem;
+    font-size: 0.855rem;
   }
 
   .matching-component__info-button {
@@ -921,7 +925,7 @@ html.dark body .matching-component .matching-component__item--incorrect {
   .matching-component .matching-component__item {
     min-height: 2.7rem !important;
     padding: 0.45rem 0.525rem !important;
-    font-size: 1.2rem !important;
+    font-size: 1.14rem !important;
     line-height: 1.45 !important;
     overflow: hidden !important;
   }
@@ -955,12 +959,16 @@ html.dark body .matching-component .matching-component__item--incorrect {
   .matching-component .matching-component__match-number {
     min-width: 1.35rem !important;
     height: 1.35rem !important;
-    font-size: 0.83rem !important;
+    font-size: 0.79rem !important;
   }
 
   .matching-component .matching-component__item-text {
-    font-size: 1.2rem !important;
+    font-size: 1.015rem !important;
     line-height: 1.45 !important;
+  }
+
+  .matching-component .matching-component__item-content:has(.matching-component__info-button)
+    .matching-component__item-text {
     padding-right: 2.4rem !important;
   }
 
@@ -982,7 +990,7 @@ html.dark body .matching-component .matching-component__item--incorrect {
   .matching-component .matching-component__item--incorrect .matching-component__item-letter {
     width: 1.5rem !important;
     height: 1.5rem !important;
-    font-size: 1.05rem !important;
+    font-size: 1rem !important;
     margin-right: 0.3rem !important;
     box-shadow: none !important;
   }

@@ -5,8 +5,11 @@
   "license": "Apache-2.0",
   "type": "module",
   "scripts": {
+    "predev": "node scripts/generate-level-catalogs.mjs",
     "dev": "vite --mode development --config config/vite.config.ts",
+    "generate:catalogs": "node scripts/generate-level-catalogs.mjs",
     "minify:public": "bash scripts/build/minify-public-js.sh",
+    "prebuild": "node scripts/generate-level-catalogs.mjs",
     "build": "npm run minify:public && tsc --project config/tsconfig.json && vite build --mode production --config config/vite.config.ts",
     "build:analyze": "npm run build && npx vite-bundle-analyzer",
     "build:full": "node scripts/development/dev-tools.js full --quiet",

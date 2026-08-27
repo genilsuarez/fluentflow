@@ -42,3 +42,13 @@ export const getAssetPath = (assetPath: string): string => {
 export const getLearningModulesPath = (): string => {
   return getAssetPath('learningModules.json');
 };
+
+/** Path to one CEFR level's slice of the catalog (see scripts/generate-level-catalogs.mjs). */
+export const getLevelCatalogPath = (level: string): string => {
+  return getAssetPath(`learningModules/${level}.json`);
+};
+
+/** Path to the per-level module-count summary (see scripts/generate-level-catalogs.mjs). */
+export const getLevelCountsPath = (): string => {
+  return getAssetPath('learningModules/counts.json');
+};

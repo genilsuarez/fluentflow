@@ -2,7 +2,7 @@ import { logDebug } from '../utils/logger';
 import type { LearningModule } from '../types';
 
 /** Ordered CEFR levels — index determines hierarchy */
-const LEVEL_ORDER = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'] as const;
+export const LEVEL_ORDER = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'] as const;
 
 /**
  * Service for managing module progression and prerequisites

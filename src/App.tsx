@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
-import { QueryClient, QueryClientProvider, useQuery } from '@tanstack/react-query';
+import { QueryClientProvider, useQuery } from '@tanstack/react-query';
+import { queryClient } from './services/queryClient';
 import { ErrorBoundary } from './components/common/ErrorBoundary';
 import { AppRouter } from './components/layout/AppRouter';
 import { MemoizedHeader, MemoizedToastContainer } from './components/ui/MemoizedComponents';
@@ -19,38 +20,6 @@ import { setupSupabaseAuth } from './services/authSetup';
 import { setupGuestResetListener } from './services/guestReset';
 import { toast } from './stores/toastStore';
 import { preloadVoices } from './utils/speech';
-
-// Optimized QueryClient configuration
-const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      staleTime: 10 * 60 * 1000, // 10 minutes
-      gcTime: 30 * 60 * 1000, // Keep unused data in cache 30 minutes
-      retry: (failureCount, error) => {
-        // Don't retry on 4xx errors
-        if (error instanceof Error && error.message.includes('HTTP 4')) {
-          return false;
-        }
-        // Don't retry JSON parse errors (content issue, not transient)
-        if (error instanceof Error && error.message.includes('parse JSON')) {
-          return false;
-        }
-        return failureCount < 2;
-      },
-      refetchOnWindowFocus: false,
-      // Don't auto-refetch on reconnect — user can manually refresh if needed.
-      // Auto-refetch on reconnect can cause the UI to flash/error when coming
-      // back to the page after a long time if the network request fails.
-      refetchOnReconnect: false,
-      // Allow queries to run even when offline - let service worker handle it
-      networkMode: 'always',
-    },
-    mutations: {
-      retry: 1,
-      networkMode: 'always',
-    },
-  },
-});
 
 const AppContent: React.FC = () => {
   const currentView = useAppStore(state => state.currentView);
