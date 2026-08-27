@@ -278,8 +278,16 @@
   .flashcard-component__card {
     flex: 1;
     min-height: 0;
-    height: 11rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0.125rem auto;
+  }
+
+  .flashcard-component__card-inner {
+    height: 11rem;
+    flex-shrink: 0;
   }
 
   .flashcard-component__front-text {

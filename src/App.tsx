@@ -154,25 +154,14 @@ const AppContent: React.FC = () => {
 
         try {
           // Module needs to be loaded - fetch module metadata.
-          // fetchModules() uses ApiService memory cache (10 min) and falls back
-          // to Cache API, so this is resilient to network failures.
-          const { fetchModules } = await import('./services/api');
-          const response = await fetchModules();
+          // ensureQueryData reuses the TanStack Query cache (['modules'], staleTime
+          // above) instead of re-fetching + re-parsing the ~150KB catalog on every
+          // single module open — this ran on EVERY tap into ANY exercise before,
+          // since it bypassed the cache useModulesCatalog/useModuleData already
+          // populate, adding a redundant network round trip to every navigation.
+          const modules = await queryClient.ensureQueryData(modulesCatalogQueryOptions);
 
-          if (!response.success || !response.data) {
-            console.error('[App] Failed to fetch modules:', response.error);
-            // Don't redirect to menu on transient errors — let useModuleData handle the error UI.
-            // Only redirect if Zustand has no usable module info at all.
-            const { currentModule } = useAppStore.getState();
-            if (!currentModule || currentModule.id !== moduleId) {
-              const { setCurrentView, setCurrentModule } = useAppStore.getState();
-              setCurrentModule(null);
-              setCurrentView('menu');
-            }
-            return;
-          }
-
-          const module = response.data.find(m => m.id === moduleId);
+          const module = modules.find(m => m.id === moduleId);
 
           if (!module) {
             console.error('[App] Module not found:', moduleId);

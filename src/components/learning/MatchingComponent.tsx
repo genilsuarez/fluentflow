@@ -29,6 +29,11 @@ interface MatchingComponentProps {
   module: LearningModule;
 }
 
+// Distinct accent per pair so a matched term and its definition are visually
+// linked at a glance, instead of relying on reading the tiny letter/number badge.
+// Avoids red/green/amber — those are reserved for the post-check correct/incorrect/unmatched states.
+const PAIR_ACCENT_COLORS = ['#0284c7', '#7c3aed', '#0d9488', '#db2777', '#4f46e5', '#0891b2'];
+
 const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
   const [leftItems, setLeftItems] = useState<string[]>([]);
   const [rightItems, setRightItems] = useState<string[]>([]);
@@ -36,6 +41,11 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
   const [selectedRight, setSelectedRight] = useState<string | null>(null);
   const [matches, setMatches] = useState<Record<string, string>>({});
   const [showResult, setShowResult] = useState(false);
+  const [pairFeedback, setPairFeedback] = useState<{
+    left: string;
+    right: string;
+    correct: boolean;
+  } | null>(null);
   const [startTime] = useState(Date.now());
   const [runId] = useState(() => createLearnFlowId('run'));
   const [showExplanation, setShowExplanation] = useState(false);
@@ -82,6 +92,14 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
     }
   }, [showExplanation]);
 
+  // Brief shake feedback on a wrong pair fades on its own; nothing to clean up on unmount
+  // since the timeout only clears local state.
+  useEffect(() => {
+    if (!pairFeedback) return;
+    const timeout = setTimeout(() => setPairFeedback(null), 450);
+    return () => clearTimeout(timeout);
+  }, [pairFeedback]);
+
   // Keyboard navigation
   useEffect(() => {
     const handleKeyPress = (e: KeyboardEvent) => {
@@ -126,6 +144,7 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
       setSelectedLeft(null);
       setSelectedRight(null);
       setShowResult(false);
+      setPairFeedback(null);
     }
   }, [module?.data, module?.id, randomizeItems]);
 
@@ -180,10 +199,14 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
   };
 
   const createMatch = (left: string, right: string) => {
-    // Store the match without validating — validation happens on Check
+    // Store the match without revealing right/wrong — grading still happens on Check.
+    // A wrong pair gets a brief shake so the tap feels responsive; it settles back
+    // into the same neutral "matched" look as any other pending pair.
+    const isCorrect = pairs.find(pair => pair.left === left)?.right === right;
     setMatches(prev => ({ ...prev, [left]: right }));
     setSelectedLeft(null);
     setSelectedRight(null);
+    setPairFeedback({ left, right, correct: isCorrect });
   };
 
   const removeMatch = (leftItem: string) => {
@@ -219,6 +242,7 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
     setSelectedLeft(null);
     setSelectedRight(null);
     setShowResult(false);
+    setPairFeedback(null);
   };
 
   const finishExercise = () => {
@@ -346,17 +370,27 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
                     : 'matching-component__item--incorrect';
               } else if (isMatched) {
                 className += 'matching-component__item--matched';
+                if (pairFeedback?.left === item && !pairFeedback.correct) {
+                  className += ' matching-component__item--shake';
+                }
               } else if (isSelected) {
                 className += 'matching-component__item--selected';
               } else {
                 className += 'matching-component__item--default';
               }
 
+              const pairAccentStyle = isMatched
+                ? ({
+                    '--pair-accent': PAIR_ACCENT_COLORS[index % PAIR_ACCENT_COLORS.length],
+                  } as React.CSSProperties)
+                : undefined;
+
               return (
                 <button
                   key={`left-${index}`}
                   onClick={() => handleLeftClick(item)}
                   disabled={showResult}
+                  style={pairAccentStyle}
                   className={`${className} matching-component__button matching-component__button--primary`}
                 >
                   <div className="matching-component__item-content">
@@ -404,6 +438,7 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
               const status = getItemStatus(item, false);
 
               let className = 'matching-component__item ';
+              const matchedLeftIndex = leftItems.findIndex(term => matches[term] === item);
 
               if (showResult) {
                 className +=
@@ -414,17 +449,29 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
                       : 'matching-component__item--unmatched';
               } else if (isMatched) {
                 className += 'matching-component__item--matched-inactive';
+                if (pairFeedback?.right === item && !pairFeedback.correct) {
+                  className += ' matching-component__item--shake';
+                }
               } else if (isSelected) {
                 className += 'matching-component__item--selected';
               } else {
                 className += 'matching-component__item--default';
               }
 
+              const pairAccentStyle =
+                isMatched && matchedLeftIndex >= 0
+                  ? ({
+                      '--pair-accent':
+                        PAIR_ACCENT_COLORS[matchedLeftIndex % PAIR_ACCENT_COLORS.length],
+                    } as React.CSSProperties)
+                  : undefined;
+
               return (
                 <button
                   key={`right-${index}`}
                   onClick={() => handleRightClick(item)}
                   disabled={showResult}
+                  style={pairAccentStyle}
                   className={`${className} matching-component__button matching-component__button--secondary`}
                 >
                   <div className="matching-component__item-content">
@@ -434,11 +481,9 @@ const MatchingComponent: React.FC<MatchingComponentProps> = ({ module }) => {
                     <span className="matching-component__item-text">
                       <ContentRenderer content={ContentAdapter.ensureStructured(item, 'quiz')} />
                     </span>
-                    {isMatched && (
+                    {isMatched && matchedLeftIndex >= 0 && (
                       <span className="matching-component__item-letter">
-                        {String.fromCharCode(
-                          65 + leftItems.findIndex(term => matches[term] === item)
-                        )}
+                        {String.fromCharCode(65 + matchedLeftIndex)}
                       </span>
                     )}
                   </div>

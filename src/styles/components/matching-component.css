@@ -60,7 +60,7 @@
   justify-content: center;
   min-width: 1.5rem;
   height: 1.5rem;
-  background-color: var(--theme-primary-blue, #3b82f6);
+  background-color: var(--pair-accent, var(--theme-primary-blue, #3b82f6));
   color: white;
   border-radius: 50%;
   font-size: 0.75rem;
@@ -142,6 +142,33 @@
 
 /* === ITEM STATES === */
 
+/* WRONG-PAIR SHAKE — brief, non-revealing feedback the instant a pair is made.
+   Settles back into the normal matched/matched-inactive look; grading still
+   only happens on Check. */
+@keyframes matching-shake-wrong {
+  10%,
+  90% {
+    transform: translateX(-1px);
+  }
+  20%,
+  80% {
+    transform: translateX(2px);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translateX(-4px);
+  }
+  40%,
+  60% {
+    transform: translateX(4px);
+  }
+}
+
+.matching-component__item--shake {
+  animation: matching-shake-wrong 0.4s ease-in-out;
+}
+
 /* SELECTED */
 .matching-component__item--selected {
   background: rgba(59, 130, 246, 0.12) !important;
@@ -152,43 +179,42 @@
   font-weight: 600 !important;
 }
 
-/* MATCHED */
+/* MATCHED — tinted per pair (--pair-accent, set inline per item) so a term and
+   its definition are visually linked without having to read the letter/number badge. */
 .matching-component__item--matched {
-  background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
-  border: 2px solid #0284c7;
-  color: #0c4a6e;
+  background: color-mix(in srgb, var(--pair-accent, #0284c7) 12%, #ffffff);
+  border: 2px solid var(--pair-accent, #0284c7);
+  color: color-mix(in srgb, var(--pair-accent, #0284c7) 75%, #1a1714);
   cursor: default;
   font-weight: 600;
   animation: pulse-success var(--animation-normal) ease-out;
 }
 
-/* MATCHED INACTIVE */
+/* MATCHED INACTIVE (right column) — same accent as its paired term, slightly softer */
 .matching-component__item--matched-inactive {
-  background-color: #f8fafc;
-  border: 2px solid #cbd5e1;
-  color: #475569;
-  cursor: not-allowed;
-  opacity: 0.8;
+  background-color: color-mix(in srgb, var(--pair-accent, #64748b) 8%, #ffffff);
+  border: 2px solid color-mix(in srgb, var(--pair-accent, #64748b) 55%, transparent);
+  color: color-mix(in srgb, var(--pair-accent, #64748b) 70%, #1a1714);
+  cursor: pointer;
   box-shadow: none;
 }
 
 .matching-component__item--matched-inactive:hover {
-  background-color: #f8fafc;
-  border-color: #cbd5e1;
-  color: #475569;
+  background-color: color-mix(in srgb, var(--pair-accent, #64748b) 14%, #ffffff);
+  border-color: var(--pair-accent, #64748b);
   transform: none;
   box-shadow: none;
 }
 
 .matching-component__item--matched-inactive:hover .matching-component__item-text,
 .matching-component__item--matched-inactive:hover .matching-component__item-text * {
-  color: var(--lp-ink-soft);
+  color: color-mix(in srgb, var(--pair-accent, #64748b) 75%, #1a1714);
 }
 
 .matching-component__item--matched-inactive:hover .matching-component__item-letter {
-  background-color: var(--lp-bg-paper);
-  color: var(--lp-ink-soft);
-  border-color: #d4cabb;
+  background-color: color-mix(in srgb, var(--pair-accent, #64748b) 20%, #ffffff);
+  color: color-mix(in srgb, var(--pair-accent, #64748b) 75%, #1a1714);
+  border-color: var(--pair-accent, #64748b);
 }
 
 /* UNMATCHED */
@@ -258,14 +284,14 @@
 
 .matching-component__item--matched .matching-component__item-letter {
   background-color: #ffffff;
-  color: #0c4a6e;
-  border: 2px solid #0284c7;
+  color: color-mix(in srgb, var(--pair-accent, #0284c7) 80%, #1a1714);
+  border: 2px solid var(--pair-accent, #0284c7);
 }
 
 .matching-component__item--matched-inactive .matching-component__item-letter {
-  background-color: var(--lp-bg-paper);
-  color: var(--lp-ink-soft);
-  border: 1px solid #d4cabb;
+  background-color: color-mix(in srgb, var(--pair-accent, #64748b) 15%, #ffffff);
+  color: color-mix(in srgb, var(--pair-accent, #64748b) 75%, #1a1714);
+  border: 1px solid var(--pair-accent, #64748b);
 }
 
 .matching-component__item--unmatched .matching-component__item-letter {
@@ -309,11 +335,11 @@
 }
 
 .matching-component__item--matched .matching-component__item-text {
-  color: var(--lp-ink);
+  color: color-mix(in srgb, var(--pair-accent, #0284c7) 75%, #1a1714);
 }
 
 .matching-component__item--matched-inactive .matching-component__item-text {
-  color: var(--lp-ink-soft);
+  color: color-mix(in srgb, var(--pair-accent, #64748b) 65%, #1a1714);
 }
 
 .matching-component__item--unmatched .matching-component__item-text {
@@ -799,6 +825,10 @@ html.dark .matching-component__item--incorrect .matching-component__info-icon {
   .matching-component__item {
     transition: none;
     transform: none;
+  }
+
+  .matching-component__item--shake {
+    animation: none;
   }
 }
 

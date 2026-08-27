@@ -14,6 +14,8 @@ export class ProgressionService {
   private _initialized = false;
   /** Cache: modules grouped by their primary level */
   private modulesByLevel: Map<string, LearningModule[]> = new Map();
+  /** Signature of the completed-ids set last applied — guards against redundant rebuilds. */
+  private _completedSignature = '';
 
   /**
    * Whether the service has been initialized with modules
@@ -26,12 +28,22 @@ export class ProgressionService {
    * Initialize the service with modules and completed modules
    */
   initialize(modules: LearningModule[], completedModuleIds: string[] = []): void {
+    // useProgression() is called independently by several components
+    // (ModuleCard, Header, HomeDashboard, ...), each re-running this on mount
+    // with the same catalog + completed-ids. Without this guard every one of
+    // those mounts redoes the full O(modules) map/level-cache rebuild.
+    const signature = this.signatureOf(completedModuleIds);
+    if (this._initialized && this.modules === modules && this._completedSignature === signature) {
+      return;
+    }
+
     this.modules = modules;
     this.moduleMap = new Map(modules.map(m => [m.id, m]));
     // Filter out stale IDs that don't exist in the current module set
     // (e.g. renamed/removed modules still in persisted progress)
     const validCompletedIds = completedModuleIds.filter(id => this.moduleMap.has(id));
     this.completedModules = new Set(validCompletedIds);
+    this._completedSignature = signature;
     this._initialized = true;
 
     // Build level cache for gate checks
@@ -471,7 +483,13 @@ export class ProgressionService {
   reset(): void {
     this.completedModules.clear();
     this._initialized = false;
+    this._completedSignature = '';
     logDebug('Progression reset', {}, 'ProgressionService');
+  }
+
+  /** Order-independent signature used to detect no-op initialize/setCompletedModules calls. */
+  private signatureOf(ids: string[]): string {
+    return [...ids].sort().join(',');
   }
 
   /**
@@ -485,11 +503,15 @@ export class ProgressionService {
    * Set completed modules (for initialization from storage)
    */
   setCompletedModules(completedModuleIds: string[]): void {
+    const signature = this.signatureOf(completedModuleIds);
+    if (this._completedSignature === signature) return;
+
     // Filter out stale IDs not in current module set
     const validIds = this._initialized
       ? completedModuleIds.filter(id => this.moduleMap.has(id))
       : completedModuleIds;
     this.completedModules = new Set(validIds);
+    this._completedSignature = signature;
     logDebug(
       'Completed modules updated',
       {
