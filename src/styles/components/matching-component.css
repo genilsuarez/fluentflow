@@ -967,7 +967,8 @@ html.dark body .matching-component .matching-component__item--incorrect {
     line-height: 1.45 !important;
   }
 
-  .matching-component .matching-component__item-content:has(.matching-component__info-button)
+  .matching-component
+    .matching-component__item-content:has(.matching-component__info-button)
     .matching-component__item-text {
     padding-right: 2.4rem !important;
   }
