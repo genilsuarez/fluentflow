@@ -83,6 +83,15 @@ function fetchLevelCatalog(level: string): Promise<LearningModule[]> {
 let modulesPromise: Promise<LearningModule[]> | null = null;
 
 /**
+ * Test-only escape hatch: clears the module-level catalog cache so each test
+ * case gets a fresh fetchModules() call instead of the previous test's
+ * cached promise.
+ */
+export function __resetModulesCacheForTests(): void {
+  modulesPromise = null;
+}
+
+/**
  * Loads the module catalog progressively by CEFR level instead of the full
  * ~330-module file: modules above the user's current level are locked
  * (ProgressionService.hasReachedCombinedLevel) and unreachable anyway, so the

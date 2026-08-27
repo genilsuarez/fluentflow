@@ -1,10 +1,16 @@
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
-import { fetchModules, fetchModuleData, filterModuleData, apiService } from '../src/services/api';
+import {
+  fetchModules,
+  fetchModuleData,
+  filterModuleData,
+  apiService,
+  __resetModulesCacheForTests,
+} from '../src/services/api';
 import { ModuleNotAvailableOfflineError } from '../src/utils/secureHttp';
 
 vi.mock('../src/utils/pathUtils', () => ({
-  getLearningModulesPath: () => 'http://localhost/data/learningModules.json',
   getAssetPath: (path: string) => `http://localhost/data/${path}`,
+  getLevelCatalogPath: (level: string) => `http://localhost/data/learningModules/${level}.json`,
 }));
 
 vi.mock('../src/utils/logger', () => ({
@@ -41,19 +47,47 @@ let originalFetch: typeof fetch;
 
 beforeEach(() => {
   originalFetch = globalThis.fetch;
+  // No `localStorage` in this suite's node test environment — getCombinedLevelIndex()
+  // catches that and falls back to 'a1' (index 0), which is what these tests assume.
+  __resetModulesCacheForTests();
 });
 
 afterEach(() => {
   globalThis.fetch = originalFetch;
+  __resetModulesCacheForTests();
   vi.clearAllMocks();
 });
+
+/**
+ * fetchModules() now loads the catalog progressively by CEFR level: the
+ * caller's current level (here 'a1', combinedIndex 0) is fetched and
+ * awaited, while every other level is prefetched in the background and
+ * merged in later. Tests only need the 'a1' response to resolve correctly —
+ * a URL-aware mock keeps the background prefetch calls from stealing queued
+ * `mockResolvedValueOnce` responses meant for the awaited call.
+ */
+function mockCatalogFetch(
+  a1Response: unknown,
+  extraHandler?: (url: string) => Response | undefined
+) {
+  globalThis.fetch = vi.fn((input: RequestInfo | URL) => {
+    const url = String(input);
+    if (extraHandler) {
+      const extra = extraHandler(url);
+      if (extra) return Promise.resolve(extra);
+    }
+    if (url.includes('/learningModules/a1.json')) {
+      return Promise.resolve(new Response(JSON.stringify(a1Response), { status: 200 }));
+    }
+    // Background prefetch for other levels — irrelevant to the assertions.
+    return Promise.resolve(new Response(JSON.stringify([]), { status: 200 }));
+  }) as typeof fetch;
+}
 
 describe('API Service Integration Tests', () => {
   describe('fetchModules', () => {
     it('should fetch and enhance modules successfully', async () => {
-      globalThis.fetch = vi.fn().mockResolvedValue(
-        new Response(JSON.stringify(mockModules), { status: 200 })
-      ) as typeof fetch;
+      mockCatalogFetch(mockModules);
 
       const result = await fetchModules();
 
@@ -79,16 +113,18 @@ describe('API Service Integration Tests', () => {
       expect(result.error).toBe('Network error');
     });
 
-    it('should call fetch each time (React Query handles caching)', async () => {
-      globalThis.fetch = vi.fn().mockResolvedValue(
-        new Response(JSON.stringify(mockModules), { status: 200 })
-      ) as typeof fetch;
+    it('should reuse the in-flight/resolved catalog across calls in the same session', async () => {
+      mockCatalogFetch(mockModules);
 
       await fetchModules();
+      const fetchCallsAfterFirst = (globalThis.fetch as ReturnType<typeof vi.fn>).mock.calls.length;
       await fetchModules();
 
-      // No memory cache — fetch is called each time
-      expect(globalThis.fetch).toHaveBeenCalledTimes(2);
+      // Module-level cache: the second call reuses the first's promise
+      // instead of issuing new requests.
+      expect(globalThis.fetch as ReturnType<typeof vi.fn>).toHaveBeenCalledTimes(
+        fetchCallsAfterFirst
+      );
     });
   });
 
@@ -102,10 +138,11 @@ describe('API Service Integration Tests', () => {
       ];
       const moduleData = [{ en: 'hello', es: 'hola' }];
 
-      globalThis.fetch = vi
-        .fn()
-        .mockResolvedValueOnce(new Response(JSON.stringify(moduleWithPath), { status: 200 }))
-        .mockResolvedValueOnce(new Response(JSON.stringify(moduleData), { status: 200 })) as typeof fetch;
+      mockCatalogFetch(moduleWithPath, url =>
+        url.includes('/data/a1/test-flashcard.json')
+          ? new Response(JSON.stringify(moduleData), { status: 200 })
+          : undefined
+      );
 
       const result = await fetchModuleData('test-module-1');
 
@@ -115,9 +152,7 @@ describe('API Service Integration Tests', () => {
     });
 
     it('should handle module not found', async () => {
-      globalThis.fetch = vi.fn().mockResolvedValue(
-        new Response(JSON.stringify(mockModules), { status: 200 })
-      ) as typeof fetch;
+      mockCatalogFetch(mockModules);
 
       const result = await fetchModuleData('non-existent-module');
 
@@ -126,30 +161,24 @@ describe('API Service Integration Tests', () => {
     });
 
     it('should handle module without dataPath', async () => {
-      globalThis.fetch = vi.fn().mockResolvedValue(
-        new Response(JSON.stringify(mockModules), { status: 200 })
-      ) as typeof fetch;
+      mockCatalogFetch(mockModules);
 
       const result = await fetchModuleData('test-module-1');
 
       expect(result.success).toBe(true);
       expect(result.data.id).toBe('test-module-1');
       expect(result.data.data).toBeUndefined();
-      // Only one fetch call (modules list), no second call for data
-      expect(globalThis.fetch).toHaveBeenCalledTimes(1);
     });
 
     it('should throw ModuleNotAvailableOfflineError on SW 503', async () => {
-      const swResponse = new Response(
-        JSON.stringify({ error: 'MODULE_NOT_AVAILABLE_OFFLINE' }),
-        { status: 503 }
-      );
+      const swResponse = new Response(JSON.stringify({ error: 'MODULE_NOT_AVAILABLE_OFFLINE' }), {
+        status: 503,
+      });
       const moduleWithPath = [{ ...mockModules[0], dataPath: 'data/a1/test.json' }];
 
-      globalThis.fetch = vi
-        .fn()
-        .mockResolvedValueOnce(new Response(JSON.stringify(moduleWithPath), { status: 200 }))
-        .mockResolvedValueOnce(swResponse) as typeof fetch;
+      mockCatalogFetch(moduleWithPath, url =>
+        url.includes('/data/a1/test.json') ? swResponse : undefined
+      );
 
       await expect(fetchModuleData('test-module-1')).rejects.toThrow(
         ModuleNotAvailableOfflineError
