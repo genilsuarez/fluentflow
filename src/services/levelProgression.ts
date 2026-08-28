@@ -5,11 +5,13 @@
 // it's loaded here at runtime via a browser-native dynamic import instead of being
 // ported to TypeScript, so the level logic stays in one place.
 import { updateCefrLevel } from './supabaseClient';
+import { portalHref } from '../utils/platformUrls';
 
 // FluentFlow deploys under a path prefix (/fluentflow/ locally and in prod),
 // so the module URL must be base-aware — a hardcoded "/lp-progress-summary.js"
 // resolves to the wrong app at the shared origin.
 const LEVEL_MODULE_URL = `${import.meta.env.BASE_URL || '/'}lp-progress-summary.js`;
+const COMPLETION_CONFIG_URL = `${import.meta.env.BASE_URL || '/'}lp-completion-config.js`;
 
 interface LevelAdvancementResult {
   advanced: boolean;
@@ -20,9 +22,21 @@ interface LevelAdvancementResult {
   error?: string;
 }
 
+interface CombinedLevelProgress {
+  fluentflow: { progressPct: number };
+  hubflow: { progressPct: number };
+  lyricflow: { progressPct: number };
+}
+
 interface LpProgressSummaryModule {
   checkLevelAdvancement: () => LevelAdvancementResult;
   LEVEL_ORDER: readonly string[];
+  getActiveLevel: () => string;
+  getCombinedLevelProgress: (level?: string) => CombinedLevelProgress;
+}
+
+interface LpCompletionConfigModule {
+  getThresholds: () => { fluentflow: number; hubflow: number; lyricflow: number };
 }
 
 const RELATIVE_IMPORT_RE = /from\s+(['"])(\.\.?\/[^'"]+)\1/g;
@@ -73,6 +87,50 @@ function loadModule(): Promise<LpProgressSummaryModule | null> {
       .catch(() => null);
   }
   return modulePromise;
+}
+
+// lp-progress-summary.js itself imports getThresholds from lp-completion-config.js,
+// but doesn't re-export it — loaded separately here for the same reason.
+let completionConfigPromise: Promise<LpCompletionConfigModule | null> | null = null;
+
+function loadCompletionConfig(): Promise<LpCompletionConfigModule | null> {
+  if (!completionConfigPromise) {
+    completionConfigPromise = importPublicModule(COMPLETION_CONFIG_URL)
+      .then(mod => mod as LpCompletionConfigModule)
+      .catch(() => null);
+  }
+  return completionConfigPromise;
+}
+
+export interface StuckLevelStatus {
+  level: string;
+  portalUrl: string;
+}
+
+/**
+ * Espejo de HubFlow/LyricFlow js/level-status.js: si FluentFlow ya cumplió su
+ * parte del nivel activo (100%) pero `lp-level` no subió porque HubFlow o
+ * LyricFlow no llegaron a su propio umbral, devuelve el nivel + link al
+ * portal (DeskFlow) para que la UI lo comunique. `null` si no aplica.
+ */
+export async function getStuckLevelStatus(): Promise<StuckLevelStatus | null> {
+  const [progressMod, configMod] = await Promise.all([loadModule(), loadCompletionConfig()]);
+  if (!progressMod || !configMod) return null;
+
+  try {
+    const level = progressMod.getActiveLevel();
+    const progress = progressMod.getCombinedLevelProgress(level);
+    const thresholds = configMod.getThresholds();
+    const fluentflowDone = progress.fluentflow.progressPct >= thresholds.fluentflow;
+    const allDone =
+      fluentflowDone &&
+      progress.hubflow.progressPct >= thresholds.hubflow &&
+      progress.lyricflow.progressPct >= thresholds.lyricflow;
+    if (!fluentflowDone || allDone) return null;
+    return { level, portalUrl: portalHref() };
+  } catch {
+    return null;
+  }
 }
 
 /**

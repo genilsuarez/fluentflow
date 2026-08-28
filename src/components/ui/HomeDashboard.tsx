@@ -10,6 +10,7 @@ import { shouldDeferActivityDisplay } from '../../utils/statsBootstrap';
 import { useStatsRevealAnimation } from '../../hooks/useStatsRevealAnimation';
 import { useAnimatedNumber } from '../../hooks/useAnimatedNumber';
 import { useModuleNavigation } from '../../hooks/useModuleNavigation';
+import { useStuckLevelStatus } from '../../hooks/useStuckLevelStatus';
 import {
   MODE_I18N_KEYS,
   splitModuleDisplayName,
@@ -33,6 +34,7 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
   const revealAnimation = useStatsRevealAnimation();
   const shouldAnimate = statsReady && revealAnimation;
   const progression = useProgression();
+  const stuckLevel = useStuckLevelStatus();
   const { navigateToModule } = useModuleNavigation('progression');
   const { getNextRecommendedModule, stats, modulesFetched } = progression;
 
@@ -257,6 +259,36 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
               'Curso de inglés estructurado, del A1 al C2 — Empieza en Foundation o elige tu nivel.'
             )}
           </span>
+        </div>
+      ) : null}
+
+      {/* Espejo de HubFlow/LyricFlow js/level-status.js: si FluentFlow ya
+          cumplió el 100% del nivel activo pero lp-level no subió porque
+          HubFlow o LyricFlow no llegaron a su umbral, avisa con link al
+          portal (DeskFlow) en vez de dejar la duda de "por qué no avanzo". */}
+      {stuckLevel ? (
+        <div
+          className="home-dash__welcome-banner home-dash__welcome-banner--level-stuck"
+          role="status"
+        >
+          <span className="home-dash__welcome-banner-icon" aria-hidden="true">
+            🔒
+          </span>
+          <span className="home-dash__welcome-banner-text">
+            <strong>{stuckLevel.level.toUpperCase()}</strong> ·{' '}
+            {t(
+              'dashboard.levelStuckBanner',
+              "You've done your part in FluentFlow. Your level is shared with HubFlow and LyricFlow — check what's left."
+            )}
+          </span>
+          <a
+            className="home-dash__welcome-banner-link"
+            href={stuckLevel.portalUrl}
+            target="_blank"
+            rel="noopener"
+          >
+            {t('dashboard.levelStuckBannerLink', 'See global progress →')}
+          </a>
         </div>
       ) : null}
 
