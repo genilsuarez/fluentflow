@@ -766,16 +766,14 @@
     overflow: hidden;
   }
 
+  /* Cada nivel es una tarjeta con borde completo y margen lateral (antes: filas
+     de borde a borde con solo línea arriba/abajo, se veían "sin borde"). */
   .progression-dashboard__unit {
     padding: 0;
-    border-radius: 0;
-    border-left: none;
-    border-right: none;
-    box-shadow: none;
-  }
-
-  .progression-dashboard__unit:first-child {
-    border-top: none;
+    overflow: hidden;
+    border: 1px solid var(--lp-border, #e2e8f0);
+    border-radius: var(--lp-radius-lg, 12px);
+    box-shadow: var(--lp-shadow-xs, 0 1px 2px rgba(15, 23, 42, 0.05));
   }
 
   .progression-dashboard__unit-header {
@@ -1029,10 +1027,11 @@ html.dark .progression-dashboard__module--locked .progression-dashboard__level-b
     max-height: none;
     overflow-y: auto;
     overflow-x: hidden;
-    gap: 0.25rem;
-    padding: 0;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem 0.75rem;
     margin: 0;
     width: 100%;
+    box-sizing: border-box;
     touch-action: pan-y;
     overscroll-behavior: contain;
     scrollbar-width: none;
@@ -1051,9 +1050,8 @@ html.dark .progression-dashboard__module--locked .progression-dashboard__level-b
   .progression-dashboard__unit {
     padding: 0;
     margin-bottom: 0;
-    border-left: none;
-    border-right: none;
-    border-radius: 0;
+    border: 1px solid var(--lp-border, #e2e8f0);
+    border-radius: var(--lp-radius-lg, 12px);
   }
 
   .progression-dashboard__unit-header {
