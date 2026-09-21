@@ -258,24 +258,13 @@ export const MainMenu: React.FC = () => {
 
   const toggleCategory = React.useCallback((category: Category) => {
     setExpandedCategories(prev => {
-      // Cualquier categoría abierta se puede colapsar (antes Grammar ignoraba el
-      // clic aunque el encabezado mostrara el chevron de "abierto").
-      if (prev.has(category)) {
-        const next = new Set(prev);
-        next.delete(category);
-        return next;
-      }
+      // Acordeón uniforme: una sola categoría abierta a la vez. Antes Grammar estaba
+      // "anclada" y no se cerraba al abrir otra, mientras que las demás sí se cerraban
+      // entre sí — el comportamiento parecía aleatorio.
+      if (prev.has(category)) return new Set<Category>();
 
       pendingCategoryScrollRef.current = category;
-      if (category === PINNED_CATEGORY) {
-        return new Set([PINNED_CATEGORY]);
-      }
-      // Accordion: Grammar (abierta por defecto) se conserva si sigue abierta +
-      // una sola otra categoría.
-      const next = new Set<Category>();
-      if (prev.has(PINNED_CATEGORY)) next.add(PINNED_CATEGORY);
-      next.add(category);
-      return next;
+      return new Set<Category>([category]);
     });
     // Reset level expansions when toggling categories
     setExpandedLevels(new Set());
