@@ -278,7 +278,7 @@ export const HomeDashboard: React.FC<HomeDashboardProps> = ({ onViewModules }) =
             <strong>{stuckLevel.level.toUpperCase()}</strong> ·{' '}
             {t(
               'dashboard.levelStuckBanner',
-              "You've done your part in FluentFlow. Your level is shared with HubFlow and LyricFlow — check what's left."
+              "You finished FluentFlow. To level up, HubFlow or LyricFlow still need progress."
             )}
           </span>
           <a

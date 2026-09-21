@@ -423,7 +423,7 @@ export const es = {
     welcomeBanner:
       'Curso de inglés estructurado, del A1 al C2 — Empieza en Foundation o elige tu nivel.',
     levelStuckBanner:
-      'Ya hiciste tu parte en FluentFlow. Tu nivel es compartido con HubFlow y LyricFlow — revisa qué falta.',
+      'Completaste FluentFlow. Para subir, falta avance en HubFlow o LyricFlow.',
     levelStuckBannerLink: 'Ver progreso global →',
     nextStep: 'Siguiente paso',
     startLearning: 'Empieza a aprender',
