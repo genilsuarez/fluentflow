@@ -75,7 +75,7 @@
 
 .game-controls__home-btn:hover:not(:disabled) {
   transform: scale(1.06);
-  background: color-mix(in srgb, var(--lp-surface, #f5f1eb) 64%, transparent);
+  background: color-mix(in srgb, var(--lp-surface, #eef2f7) 64%, transparent);
 }
 
 .game-controls__home-btn:active:not(:disabled) {
@@ -151,7 +151,7 @@
     flex-shrink: 0;
     min-height: var(--game-controls-bar-min-height);
     background: var(--lp-surface, #ffffff);
-    border-top: 1px solid var(--lp-border-subtle, #f0ebe3);
+    border-top: 1px solid var(--lp-border-subtle, #eef2f9);
     padding-bottom: max(var(--game-controls-bar-padding-y), env(safe-area-inset-bottom));
     transition: z-index 0s var(--lp-drawer-duration, 320ms);
   }
@@ -428,7 +428,7 @@ html.browser-cursor-embedded {
     margin-top: 0;
     width: 100%;
     box-sizing: border-box;
-    box-shadow: 0 -4px 16px rgba(44, 36, 24, 0.08);
+    box-shadow: 0 -4px 16px rgba(15, 23, 42, 0.08);
     transition: z-index 0s var(--lp-drawer-duration, 320ms);
   }
 

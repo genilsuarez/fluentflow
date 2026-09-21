@@ -11,21 +11,21 @@
   color-scheme: light;
 
   /* ─── Surface & Paper ─── */
-  --lp-bg: #fcfbf9;
-  --lp-bg-paper: #f7f6f3;
+  --lp-bg: #fafbff;
+  --lp-bg-paper: #f4f7fc;
   --lp-surface: #ffffff;
   --lp-surface-raised: #ffffff;
-  --lp-surface-sunken: #f2f1ed;
+  --lp-surface-sunken: #eef2f9;
 
   /* ─── Borders ─── */
-  --lp-border: #e7e3dc;
-  --lp-border-strong: #d8d2c8;
-  --lp-border-subtle: #f1efea;
+  --lp-border: #e2e8f0;
+  --lp-border-strong: #cbd5e1;
+  --lp-border-subtle: #eef2f7;
 
   /* ─── Ink (Text) ─── */
-  --lp-ink: #2c2418;
-  --lp-ink-soft: #574a3c;
-  --lp-muted: #8a7d6e;
+  --lp-ink: #0f172a;
+  --lp-ink-soft: #475569;
+  --lp-muted: #64748b;
   --lp-ink-inverse: #ffffff;
   /* Texto sobre fondos de color fijo (accent/success/error/cat-*): siempre
      blanco, sin importar el tema — --lp-ink-inverse se invierte con el tema
@@ -79,11 +79,11 @@
   --lp-hero-blue-light: #2563eb;
 
   /* ─── Elevation (Shadows) ─── */
-  --lp-shadow-xs: 0 1px 2px rgba(44, 36, 24, 0.05);
-  --lp-shadow-sm: 0 2px 6px rgba(44, 36, 24, 0.06), 0 4px 14px rgba(44, 36, 24, 0.05);
-  --lp-shadow-md: 0 4px 16px rgba(44, 36, 24, 0.09), 0 2px 6px rgba(44, 36, 24, 0.05);
-  --lp-shadow-lg: 0 10px 32px rgba(44, 36, 24, 0.11), 0 3px 8px rgba(44, 36, 24, 0.06);
-  --lp-shadow-hover: 0 12px 38px rgba(44, 36, 24, 0.14), 0 4px 10px rgba(44, 36, 24, 0.07);
+  --lp-shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.05);
+  --lp-shadow-sm: 0 2px 6px rgba(15, 23, 42, 0.06), 0 4px 14px rgba(15, 23, 42, 0.05);
+  --lp-shadow-md: 0 4px 16px rgba(15, 23, 42, 0.09), 0 2px 6px rgba(15, 23, 42, 0.05);
+  --lp-shadow-lg: 0 10px 32px rgba(15, 23, 42, 0.11), 0 3px 8px rgba(15, 23, 42, 0.06);
+  --lp-shadow-hover: 0 12px 38px rgba(15, 23, 42, 0.14), 0 4px 10px rgba(15, 23, 42, 0.07);
 
   /* ─── Shape ─── */
   --lp-radius-xs: 4px;
@@ -155,10 +155,10 @@
   --lp-score-value-size: 1.125rem;
   --lp-score-value-weight: 700;
   --lp-score-bg: #ffffff;
-  --lp-score-border: #e7e3dc;
+  --lp-score-border: #e2e8f0;
   --lp-score-shadow: 0 0 0 1px rgba(15, 23, 42, 0.04), 0 1px 2px rgba(15, 23, 42, 0.06);
-  --lp-score-value-color: #2c2418;
-  --lp-score-label-color: #8a7d6e;
+  --lp-score-value-color: #0f172a;
+  --lp-score-label-color: #64748b;
   --lp-score-icon-color: #2563eb;
   --lp-score-success-color: #27865a;
   --lp-score-error-color: #c0392b;
@@ -170,12 +170,12 @@
   --lp-navbtn-radius: 50%;
   --lp-navbtn-border-width: 1.5px;
   --lp-navbtn-z: 35;
-  --lp-navbtn-border: #e8e0d4;
+  --lp-navbtn-border: #e2e8f0;
   --lp-navbtn-bg: #ffffff;
   --lp-navbtn-icon-color: #5e5041;
   --lp-navbtn-accent: #d4764e;
-  --lp-navbtn-shadow: 0 1px 3px rgba(44, 36, 24, 0.04), 0 4px 10px rgba(44, 36, 24, 0.04);
-  --lp-navbtn-shadow-hover: 0 4px 14px rgba(44, 36, 24, 0.08), 0 2px 6px rgba(44, 36, 24, 0.05);
+  --lp-navbtn-shadow: 0 1px 3px rgba(15, 23, 42, 0.04), 0 4px 10px rgba(15, 23, 42, 0.04);
+  --lp-navbtn-shadow-hover: 0 4px 14px rgba(15, 23, 42, 0.08), 0 2px 6px rgba(15, 23, 42, 0.05);
 
   /* LP HEADER layout + typography — spec v1 */
   --lp-header-pad-y: 22px;

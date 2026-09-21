@@ -364,7 +364,7 @@
 .progression-dashboard__unit-title {
   font-size: var(--text-base, 1rem);
   font-weight: 600;
-  color: var(--theme-text-primary, #2c2418);
+  color: var(--theme-text-primary, #0f172a);
   white-space: nowrap;
 }
 
@@ -623,7 +623,7 @@
 .progression-dashboard__module-name {
   font-size: var(--text-sm, 0.875rem);
   font-weight: 600;
-  color: var(--theme-text-primary, #2c2418);
+  color: var(--theme-text-primary, #0f172a);
   margin: 0 0 0.0625rem 0;
   line-height: 1.2;
   overflow: hidden;
@@ -659,18 +659,18 @@
 
 .progression-dashboard__module-type {
   font-size: var(--text-xs, 0.75rem);
-  color: var(--theme-text-tertiary, #9c8e7c);
+  color: var(--theme-text-tertiary, #64748b);
   text-transform: capitalize;
 }
 
 .progression-dashboard__module-time {
   font-size: var(--text-xs, 0.75rem);
-  color: var(--theme-text-tertiary, #9c8e7c);
+  color: var(--theme-text-tertiary, #64748b);
 }
 
 .progression-dashboard__module-requires {
   font-size: var(--text-xs, 0.75rem);
-  color: var(--theme-text-tertiary, #9c8e7c);
+  color: var(--theme-text-tertiary, #64748b);
   font-style: italic;
   margin: 0.125rem 0 0;
   overflow: hidden;
@@ -958,11 +958,11 @@ html.dark .progression-dashboard__module {
 }
 
 html.dark .progression-dashboard__unit-expand {
-  background: var(--theme-bg-soft, #2c2418);
+  background: var(--theme-bg-soft, #0f172a);
 }
 
 html.dark .progression-dashboard__expand-icon {
-  color: var(--theme-text-secondary, #d4cabb);
+  color: var(--theme-text-secondary, #cbd5e1);
 }
 
 html.dark .progression-dashboard__level-badge {
@@ -971,7 +971,7 @@ html.dark .progression-dashboard__level-badge {
 
 html.dark .progression-dashboard__unit-stats {
   color: var(--theme-text-primary, #ffffff);
-  background: var(--theme-bg-elevated, #2c2418);
+  background: var(--theme-bg-elevated, #0f172a);
   border-color: var(--theme-border-soft, #5e5041);
   box-shadow: var(--shadow-subtle, 0 1px 3px rgba(0, 0, 0, 0.2));
 }
@@ -1179,16 +1179,16 @@ html.dark .progression-dashboard__module--locked .progression-dashboard__level-b
 }
 
 .progression-dashboard--dark-theme .progression-dashboard__no-results-hint {
-  color: var(--theme-text-secondary, #9c8e7c);
+  color: var(--theme-text-secondary, #64748b);
 }
 
 /* Expand icon */
 .progression-dashboard--dark-theme .progression-dashboard__unit-expand {
-  background: var(--theme-bg-soft, #2c2418);
+  background: var(--theme-bg-soft, #0f172a);
 }
 
 .progression-dashboard--dark-theme .progression-dashboard__expand-icon {
-  color: var(--theme-text-secondary, #d4cabb);
+  color: var(--theme-text-secondary, #cbd5e1);
 }
 
 .progression-dashboard--dark-theme .progression-dashboard__unit-header--expanded {
@@ -1221,7 +1221,7 @@ html.dark .progression-dashboard__module--locked .progression-dashboard__level-b
 }
 
 .progression-dashboard--dark-theme .progression-dashboard__module:hover {
-  background-color: var(--theme-bg-soft, #2c2418);
+  background-color: var(--theme-bg-soft, #0f172a);
   border-color: var(--theme-primary-blue, #3b82f6);
 }
 

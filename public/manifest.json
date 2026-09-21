@@ -4,8 +4,8 @@
   "description": "FluentFlow - CEFR-based interactive English learning platform",
   "start_url": "/fluentflow/",
   "display": "standalone",
-  "background_color": "#fcfbf9",
-  "theme_color": "#fcfbf9",
+  "background_color": "#fafbff",
+  "theme_color": "#fafbff",
   "icons": [
     {
       "src": "./favicon.svg",

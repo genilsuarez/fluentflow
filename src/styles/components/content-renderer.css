@@ -172,7 +172,7 @@ html.dark .content-renderer--reading .content-renderer__segment--term {
 
 .matching-component__item--matched .content-renderer__segment--term,
 .matching-component__item--matched .content-renderer {
-  color: var(--theme-text-primary, #2c2418);
+  color: var(--theme-text-primary, #0f172a);
 }
 
 .matching-component__item--correct .content-renderer__segment--term,
@@ -188,7 +188,7 @@ html.dark .content-renderer--reading .content-renderer__segment--term {
 }
 
 .matching-component__item--matched-inactive .content-renderer__segment--term {
-  color: var(--theme-text-tertiary, #9c8e7c);
+  color: var(--theme-text-tertiary, #64748b);
 }
 
 /* Light mode override for matched items content */
@@ -196,12 +196,12 @@ html:not(.dark) .matching-component__item--matched .content-renderer__segment--t
 html:not(.dark) .matching-component__item--matched .content-renderer__segment--emphasis,
 html:not(.dark) .matching-component__item--matched .content-renderer__segment--variable,
 html:not(.dark) .matching-component__item--matched .content-renderer__segment--code {
-  color: var(--theme-text-primary, #2c2418);
+  color: var(--theme-text-primary, #0f172a);
 }
 
 html:not(.dark) .matching-component__item--matched .content-renderer,
 html:not(.dark) .matching-component__item--matched .content-renderer * {
-  color: var(--theme-text-primary, #2c2418);
+  color: var(--theme-text-primary, #0f172a);
 }
 
 /* Ensure hover states don't override ContentRenderer colors */
@@ -211,7 +211,7 @@ html:not(.dark) .matching-component__item--matched:hover .content-renderer__segm
 html:not(.dark) .matching-component__item--matched:hover .content-renderer__segment--emphasis,
 html:not(.dark) .matching-component__item--matched:hover .content-renderer__segment--variable,
 html:not(.dark) .matching-component__item--matched:hover .content-renderer__segment--code {
-  color: var(--theme-text-primary, #2c2418);
+  color: var(--theme-text-primary, #0f172a);
 }
 
 html:not(.dark) .matching-component__item--matched-inactive:hover .content-renderer,
@@ -279,7 +279,7 @@ html:not(.dark) .matching-component__item--unmatched .content-renderer__segment-
 }
 
 .matching-component__item--matched-inactive .content-renderer__segment--emphasis {
-  color: var(--theme-text-disabled, #9c8e7c);
+  color: var(--theme-text-disabled, #64748b);
 }
 
 .matching-component__item--selected .content-renderer__segment--variable,
@@ -291,7 +291,7 @@ html:not(.dark) .matching-component__item--unmatched .content-renderer__segment-
 }
 
 .matching-component__item--matched-inactive .content-renderer__segment--variable {
-  color: var(--theme-text-disabled, #9c8e7c);
+  color: var(--theme-text-disabled, #64748b);
 }
 
 .matching-component__item--selected .content-renderer__segment--code,
@@ -304,8 +304,8 @@ html:not(.dark) .matching-component__item--unmatched .content-renderer__segment-
 }
 
 .matching-component__item--matched-inactive .content-renderer__segment--code {
-  color: var(--theme-text-disabled, #9c8e7c);
-  background-color: var(--theme-bg-subtle, #faf7f2);
+  color: var(--theme-text-disabled, #64748b);
+  background-color: var(--theme-bg-subtle, #fafbff);
 }
 
 /* Override colors for other components */

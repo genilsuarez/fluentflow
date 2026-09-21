@@ -755,7 +755,7 @@
 
 /* === MODULE CARD ICONS === */
 .module-card__status-icon {
-  color: var(--theme-text-tertiary, #9c8e7c);
+  color: var(--theme-text-tertiary, #64748b);
 }
 
 /* Dark mode for locked cards — clearly inert: no spine, dashed border, dimmed content */

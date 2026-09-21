@@ -16,7 +16,7 @@
   background: linear-gradient(
     135deg,
     var(--theme-bg-elevated, #ffffff) 0%,
-    var(--theme-bg-subtle, #faf7f2) 100%
+    var(--theme-bg-subtle, #fafbff) 100%
   );
   border: 1px solid var(--theme-border-modal, rgba(0, 0, 0, 0.1));
   border-radius: var(--radius-lg, 0.5rem);
@@ -48,7 +48,7 @@
 
 /* Dark mode no data text */
 html.dark .completion-component__no-data-text {
-  color: var(--theme-text-secondary, #e8e0d4);
+  color: var(--theme-text-secondary, #e2e8f0);
 }
 
 .completion-component__no-data-btn {
@@ -74,7 +74,7 @@ html.dark .completion-component__no-data-text {
   box-shadow: var(--shadow-subtle, 0 1px 3px rgba(0, 0, 0, 0.1));
   padding: var(--lp-space-sm) var(--lp-space-md) var(--lp-space-md);
   margin: 0;
-  border: 1px solid var(--theme-border-soft, #f5f1eb);
+  border: 1px solid var(--theme-border-soft, #eef2f7);
   width: 100%;
   max-width: none;
   box-sizing: border-box;
@@ -89,7 +89,7 @@ html.dark .completion-component__no-data-text {
 .completion-component__instruction {
   font-size: var(--lp-text-base);
   font-weight: 600;
-  color: var(--theme-text-primary, #2c2418);
+  color: var(--theme-text-primary, #0f172a);
   margin: 0 0 var(--lp-space-sm);
   line-height: 1.3;
 }
@@ -111,7 +111,7 @@ html.dark .completion-component__instruction {
   padding: 0 0 0 0.5rem;
   background: transparent;
   border: none;
-  border-left: 2px solid var(--theme-border-soft, #e8e0d4);
+  border-left: 2px solid var(--theme-border-soft, #e2e8f0);
   border-radius: 0;
 }
 
@@ -151,7 +151,7 @@ html.dark .completion-component__tip-text {
   padding: var(--lp-space-sm) var(--lp-space-md);
   background: linear-gradient(to right, var(--lp-bg-paper), var(--lp-surface-sunken));
   border-radius: var(--lp-radius-lg);
-  border: 1px solid var(--theme-border-primary, #e8e0d4);
+  border: 1px solid var(--theme-border-primary, #e2e8f0);
   box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
   width: 100%;
   box-sizing: border-box;
@@ -163,7 +163,7 @@ html.dark .completion-component__tip-text {
 .completion-component__sentence {
   display: inline;
   line-height: 1.65;
-  color: var(--theme-text-primary, #2c2418);
+  color: var(--theme-text-primary, #0f172a);
   font-weight: 500;
 }
 
@@ -190,7 +190,7 @@ html.dark .completion-component__verb-hint {
 }
 
 .completion-component__text {
-  color: var(--theme-text-primary, #2c2418);
+  color: var(--theme-text-primary, #0f172a);
 }
 
 /* Dark mode sentence container */
@@ -266,15 +266,15 @@ html.dark .completion-component__sentence {
 }
 
 .completion-component__input--disabled {
-  border-color: var(--theme-border-soft, #f5f1eb);
-  background-color: var(--theme-bg-subtle, #faf7f2);
+  border-color: var(--theme-border-soft, #eef2f7);
+  background-color: var(--theme-bg-subtle, #fafbff);
   color: var(--theme-text-secondary, #5e5041);
 }
 
 .completion-component__input--neutral {
   border-color: var(--theme-primary-blue, #3b82f6);
   background-color: #ffffff;
-  color: var(--theme-text-primary, #2c2418);
+  color: var(--theme-text-primary, #0f172a);
   box-shadow:
     0 0 0 3px rgba(59, 130, 246, 0.15),
     0 1px 3px rgba(0, 0, 0, 0.08);
@@ -306,8 +306,8 @@ html.dark .completion-component__input--incorrect {
 }
 
 html.dark .completion-component__input--disabled {
-  background-color: var(--theme-bg-subtle, #2c2418);
-  color: var(--theme-text-secondary, #e8e0d4);
+  background-color: var(--theme-bg-subtle, #0f172a);
+  color: var(--theme-text-secondary, #e2e8f0);
   border-color: var(--theme-border-soft, #5e5041);
 }
 
@@ -321,7 +321,7 @@ html.dark .completion-component__input--neutral {
 }
 
 html.dark .completion-component__input--neutral:focus {
-  background-color: var(--theme-bg-subtle, #2c2418);
+  background-color: var(--theme-bg-subtle, #0f172a);
   border-color: var(--theme-primary-blue, #3b82f6);
   box-shadow:
     0 0 0 3px rgba(59, 130, 246, 0.3),
@@ -472,7 +472,7 @@ html.dark .completion-component__tense-hint-text {
 .completion-component__explanation {
   margin-top: 0.25rem;
   padding: 0 0 0 0.5rem;
-  border-left: 2px solid var(--theme-border-soft, #e8e0d4);
+  border-left: 2px solid var(--theme-border-soft, #e2e8f0);
   background: transparent;
 }
 

@@ -269,7 +269,7 @@
   padding: 0 0 0 0.5rem;
   background: transparent;
   border: none;
-  border-left: 2px solid var(--theme-border-soft, #e8e0d4);
+  border-left: 2px solid var(--theme-border-soft, #e2e8f0);
   border-radius: 0;
   font-size: var(--lp-text-sm);
   display: flex;
