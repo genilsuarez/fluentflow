@@ -1015,16 +1015,29 @@ html.dark .main-menu__error-text {
   border-top: 1px dashed color-mix(in srgb, var(--lp-border, #e2e8f0) 65%, transparent);
 }
 
-/* Collapsed past level: tag + show-more on the same row */
+/* Collapsed past level: una fila compacta — etiqueta a la izquierda, "Ver más (+N)"
+   a la derecha. Antes el botón heredaba width:100% y min-height:44px de
+   .category-section__show-more (definido después, misma especificidad), así que
+   ocupaba toda la fila con el texto centrado y la etiqueta quedaba arriba. */
 .category-section__level--collapsed {
   flex-direction: row;
   align-items: center;
   gap: 0.5rem;
 }
 
-.category-section__show-more--inline {
+.category-section__level--collapsed .category-section__level-tag {
+  align-self: center;
+  flex-shrink: 0;
+}
+
+.category-section__level--collapsed .category-section__show-more--inline {
+  flex: 1;
   width: auto;
+  min-width: 0;
+  min-height: 32px;
   margin-top: 0;
+  justify-content: flex-end;
+  padding: 0.25rem 0.5rem;
 }
 
 .category-section__level-tag {
