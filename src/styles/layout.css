@@ -33,6 +33,17 @@
   flex-direction: column;
 }
 
+/* El menú se ancla al viewport sin scroll asumiendo que el dashboard de inicio
+   siempre cabe. En pantallas cortas (p. ej. 320×640, 375×667) sobran ~100px y el
+   pie quedaba recortado e inalcanzable: solo el contenedor que aloja el dashboard
+   pasa a poder hacer scroll (la lista de ejercicios sigue con su scroll interno). */
+.layout-container[data-view='menu'] .layout-main > .main-menu:has(> .home-dash) {
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
 /* Main content area */
 .layout-main {
   flex: 1;

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 
-const LANDSCAPE_LOCK_MQ = '(orientation: landscape) and (max-height: 500px)';
+// `pointer: coarse` = pantalla táctil: no bloquear ventanas de escritorio bajas.
+const LANDSCAPE_LOCK_MQ = '(orientation: landscape) and (max-height: 500px) and (pointer: coarse)';
 
 /** True when FluentFlow should block landscape on small-height viewports. */
 export function useMobileLandscapeLock(): boolean {

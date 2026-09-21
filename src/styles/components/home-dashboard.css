@@ -754,21 +754,20 @@ html.dark .main-menu .home-dash .home-dash__level-code--indigo,
     height: 1.75rem;
   }
 
+  /* En 320px "¿Necesitas ayuda?" + el link no caben en una fila: antes el texto se
+     cortaba con "…"; ahora el link baja a una segunda línea. */
   .home-dash__footer {
-    flex-wrap: nowrap;
-    gap: 0.3rem;
+    flex-wrap: wrap;
+    gap: 0.15rem 0.6rem;
     font-size: 0.7rem;
   }
 
   .home-dash__footer-question {
     min-width: 0;
-    flex: 1 1 auto;
+    flex: 0 1 auto;
   }
 
   .home-dash__footer-text {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
     min-width: 0;
   }
 

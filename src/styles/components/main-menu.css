@@ -216,6 +216,23 @@ html.dark .main-menu svg:not(.home-dash__level-svg):not(.home-dash__ring-svg) {
   gap: var(--grid-gap-mobile);
 }
 
+/* 640–767px: la regla de scroll de .main-menu__grid existía para ≥768px (from-md) y
+   para ≤639px (mobile-sm), pero no para este tramo: los resultados de búsqueda y la
+   vista "Ejercicios" quedaban recortados dentro de .main-menu (overflow:hidden) sin
+   ningún contenedor con scroll. */
+@media (--lp-from-sm) and (--lp-mobile-md) {
+  .main-menu__grid {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
+    scrollbar-color: var(--theme-border-medium, #e2e8f0) transparent;
+    overscroll-behavior: contain;
+  }
+}
+
 @media (--lp-from-md) {
   .main-menu__grid-container {
     gap: var(--grid-gap-desktop);

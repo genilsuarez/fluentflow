@@ -173,7 +173,9 @@
  * - Orientation landscape confirms the problematic orientation
  * - This combination prevents triggering on tablets or desktop
  */
-@media screen and (orientation: landscape) and (max-height: 500px) {
+/* Solo pantallas táctiles: una ventana de escritorio baja (p. ej. 1024×500 o con
+   DevTools abierto) no es un teléfono girado y quedaba bloqueada. */
+@media screen and (orientation: landscape) and (max-height: 500px) and (pointer: coarse) {
   /* Hide the main app content */
   .layout-container {
     display: none !important;
@@ -315,7 +317,7 @@
 /* === RESPONSIVE FINE-TUNING === */
 
 /* Very small mobile screens */
-@media screen and (orientation: landscape) and (max-height: 400px) {
+@media screen and (orientation: landscape) and (max-height: 400px) and (pointer: coarse) {
   .orientation-lock__container {
     padding: 2rem 1.5rem;
     max-width: 350px;
@@ -342,7 +344,7 @@
 }
 
 /* Larger mobile screens in landscape */
-@media screen and (orientation: landscape) and (min-height: 401px) and (max-height: 500px) {
+@media screen and (orientation: landscape) and (min-height: 401px) and (max-height: 500px) and (pointer: coarse) {
   .orientation-lock__container {
     padding: 3.5rem 2.5rem;
   }
