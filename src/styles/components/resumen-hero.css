@@ -571,21 +571,6 @@
 
 @media (--lp-from-sm) {
   @container hero (max-width: 749px) {
-    /* "Siguiente paso": el botón baja a su propia fila, ancho completo, para
-       que el título deje de partirse palabra por palabra. */
-    .home-dash .resumen-hero .hero-card__launch {
-      grid-template-columns: auto minmax(0, 1fr);
-      grid-template-areas:
-        'icon body'
-        'cta cta';
-      row-gap: 10px;
-    }
-
-    .home-dash .resumen-hero .hero-card__cta {
-      justify-self: stretch;
-      justify-content: center;
-    }
-
     .home-dash .resumen-hero .progress-snapshot {
       grid-template-columns: auto minmax(0, 1fr) auto;
       grid-template-rows: auto auto;
@@ -609,6 +594,27 @@
     .home-dash .resumen-hero .progress-snapshot__chev {
       grid-row: 1;
       grid-column: 3;
+    }
+  }
+}
+
+/* "Siguiente paso": con la tarjeta de ~380px el título se parte palabra por
+   palabra y el subtítulo se recorta; el botón baja a su propia fila, ancho
+   completo. Umbral más alto que el del snapshot porque esta tarjeta necesita
+   más ancho (ícono + texto + botón) para verse completa en una fila. */
+@media (--lp-from-sm) {
+  @container hero (max-width: 949px) {
+    .home-dash .resumen-hero .hero-card__launch {
+      grid-template-columns: auto minmax(0, 1fr);
+      grid-template-areas:
+        'icon body'
+        'cta cta';
+      row-gap: 10px;
+    }
+
+    .home-dash .resumen-hero .hero-card__cta {
+      justify-self: stretch;
+      justify-content: center;
     }
   }
 }
