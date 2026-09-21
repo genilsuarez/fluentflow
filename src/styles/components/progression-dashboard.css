@@ -248,7 +248,10 @@
   }
 }
 
-@media (--lp-mobile-md) {
+/* Solo ≤639px (scroll interno del nivel). Entre 640 y 767px aplica el bloque
+   "web" de arriba (lista a su altura, scroll en __units): con --lp-mobile-md
+   este overflow:hidden lo pisaba y el contenido quedaba cortado sin scroll. */
+@media (--lp-mobile-sm) {
   .progression-dashboard--mobile-accordion {
     overflow: hidden;
   }
@@ -761,10 +764,6 @@
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     touch-action: pan-y;
-  }
-
-  .progression-dashboard__units--mobile-accordion {
-    overflow: hidden;
   }
 
   /* Cada nivel es una tarjeta con borde completo y margen lateral (antes: filas
