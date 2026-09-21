@@ -173,8 +173,7 @@
   margin-bottom: 0;
   flex-shrink: 0;
   background: var(--lp-surface, #ffffff);
-  border-bottom: 1px solid
-    color-mix(in srgb, var(--unit-level-color, var(--lp-border)) 18%, var(--lp-border-subtle));
+  border-bottom: 1px solid var(--lp-border);
   box-shadow: 0 2px 8px color-mix(in srgb, var(--lp-ink) 6%, transparent);
 }
 
@@ -261,10 +260,12 @@
 
 .progression-dashboard__unit-body {
   position: relative;
+  /* Base neutra fría con apenas un toque del color del nivel: al 5% sobre gris
+     el ámbar de B1 teñía todo el bloque de beige. */
   background: color-mix(
     in srgb,
-    var(--unit-level-color, var(--lp-accent)) 5%,
-    var(--progression-unit-bg, #f7f8fa)
+    var(--unit-level-color, var(--lp-accent)) 2.5%,
+    var(--lp-bg-paper, var(--progression-unit-bg, #f7f8fa))
   );
   padding: 0.25rem 0 0.375rem;
 }
@@ -1371,4 +1372,23 @@ html.dark .progression-dashboard__show-more:hover {
 
 html.dark .progression-dashboard__locked-hidden {
   color: var(--lp-ink-soft);
+}
+
+/* Las tarjetas de módulo tenían alto fijo (48–92px según el breakpoint) y una
+   tarjeta bloqueada con nombre + tipo + "Requiere: …" (3 líneas) se recortaba por
+   abajo. El alto de cada breakpoint pasa a ser un mínimo; en una grilla las
+   tarjetas de una misma fila siguen igualándose. Va al final para ganar a las
+   reglas de cada breakpoint (misma especificidad). */
+.progression-dashboard__module {
+  height: auto;
+  max-height: none;
+}
+
+@media (--lp-mobile-sm) {
+  /* En móvil tipo y tiempo bajan a ~0.625–0.6875rem; "Requiere: …" seguía en
+     0.75rem y pesaba más que el nombre de la actividad. */
+  .progression-dashboard__module-requires {
+    font-size: 0.6875rem;
+    margin-top: 0.0625rem;
+  }
 }
