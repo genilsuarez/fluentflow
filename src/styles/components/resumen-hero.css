@@ -618,3 +618,26 @@
     }
   }
 }
+
+/* Móvil: mismo problema que en tablet — el botón "Continuar" se comía el ancho
+   del texto (título partido, subtítulo con "…"). Baja a su propia fila; en la
+   tarjeta de progreso se oculta el ícono decorativo de la estadística para que
+   "B1 · Intermediate" quepa en una sola línea. */
+@media (--lp-mobile-sm) {
+  .home-dash .resumen-hero .hero-card__launch {
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-areas:
+      'icon body'
+      'cta cta';
+    row-gap: 10px;
+  }
+
+  .home-dash .resumen-hero .hero-card__cta {
+    justify-self: stretch;
+    justify-content: center;
+  }
+
+  .home-dash .resumen-hero .progress-snapshot__stat-icon {
+    display: none;
+  }
+}
