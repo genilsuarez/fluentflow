@@ -725,7 +725,9 @@ export const MainMenu: React.FC = () => {
                                 levelKey: string
                               ) => {
                                 if (isLevelPast(levelModules)) return true;
-                                if (levelModules.length <= cardsPerLevel) return true;
+                                // Un nivel actual solo "se completa" cuando el usuario pulsa
+                                // "Ver más", aunque quepa entero: si no, las categorías con
+                                // niveles cortos abrían todos los niveles de golpe.
                                 return expandedLevels.has(levelKey);
                               };
 
@@ -786,6 +788,16 @@ export const MainMenu: React.FC = () => {
                                       : levelModules.slice(0, defaultVisible);
                                     const hasMore = levelModules.length > defaultVisible;
                                     const remaining = levelModules.length - defaultVisible;
+
+                                    // Nivel actual que ya cabe entero: su "Ver más" no destapa
+                                    // tarjetas propias sino el siguiente nivel (+N módulos).
+                                    const levelIdx = levels.findIndex(l => l.level === level);
+                                    const nextLevelData = levels[levelIdx + 1];
+                                    const revealsNextLevel =
+                                      !hasMore && !isLevelPast && !!nextLevelData;
+                                    const showMoreCount = revealsNextLevel
+                                      ? nextLevelData.modules.length
+                                      : remaining;
 
                                     return (
                                       <div
@@ -848,22 +860,23 @@ export const MainMenu: React.FC = () => {
                                             ))}
                                           </div>
                                         )}
-                                        {hasMore && !(isLevelPast && !isLevelExpanded) && (
-                                          <button
-                                            className="category-section__show-more"
-                                            onClick={() => toggleLevelExpanded(category, level)}
-                                            type="button"
-                                            aria-expanded={isLevelExpanded}
-                                          >
-                                            {isLevelExpanded
-                                              ? t('common.showLess')
-                                              : `${t('common.showMore')} (+${remaining})`}
-                                            <ChevronDown
-                                              size={14}
-                                              className={`category-section__show-more-icon${isLevelExpanded ? ' category-section__show-more-icon--expanded' : ''}`}
-                                            />
-                                          </button>
-                                        )}
+                                        {(hasMore || revealsNextLevel) &&
+                                          !(isLevelPast && !isLevelExpanded) && (
+                                            <button
+                                              className="category-section__show-more"
+                                              onClick={() => toggleLevelExpanded(category, level)}
+                                              type="button"
+                                              aria-expanded={isLevelExpanded}
+                                            >
+                                              {isLevelExpanded
+                                                ? t('common.showLess')
+                                                : `${t('common.showMore')} (+${showMoreCount})`}
+                                              <ChevronDown
+                                                size={14}
+                                                className={`category-section__show-more-icon${isLevelExpanded ? ' category-section__show-more-icon--expanded' : ''}`}
+                                              />
+                                            </button>
+                                          )}
                                       </div>
                                     );
                                   })}
