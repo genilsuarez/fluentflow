@@ -225,6 +225,12 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
     setLevel(level === selected ? 'all' : selected);
   };
 
+  const handleClearAll = () => {
+    setCategories([]);
+    setLearningModes([]);
+    setLevel('all');
+  };
+
   // Double-click detection via timestamp — robust against React re-renders between clicks.
   // The DOM may be replaced after the first click (portal re-render), so onDoubleClick
   // is unreliable. Instead we track the last click time per chip key in a ref.
@@ -300,7 +306,7 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
         <button
           className="unified-filter__close"
           onClick={handleToggle}
-          aria-label="Close filters"
+          aria-label={t('unifiedFilter.close')}
           type="button"
         >
           <X size={16} />
@@ -375,6 +381,24 @@ export const UnifiedFilter: React.FC<UnifiedFilterProps> = ({
               );
             })}
           </div>
+        )}
+      </div>
+
+      {/* Pie: cuántos filtros hay en total (las pestañas solo cuentan la suya)
+          y una forma de quitarlos todos de una vez — antes había que
+          desmarcar chip por chip en cada pestaña. */}
+      <div className="unified-filter__footer">
+        <span className="unified-filter__summary" aria-live="polite">
+          {activeFilterCount === 0
+            ? t('unifiedFilter.noneActive')
+            : activeFilterCount === 1
+              ? t('unifiedFilter.activeOne')
+              : t('unifiedFilter.activeMany', undefined, { count: activeFilterCount })}
+        </span>
+        {activeFilterCount > 0 && (
+          <button type="button" className="unified-filter__clear" onClick={handleClearAll}>
+            {t('unifiedFilter.clearAll')}
+          </button>
         )}
       </div>
     </div>

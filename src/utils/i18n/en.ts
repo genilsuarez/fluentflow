@@ -422,7 +422,7 @@ export const en = {
     welcomeBanner:
       'Structured English course, from A1 to C2 — Start at Foundation or pick your level.',
     levelStuckBanner:
-      "You finished FluentFlow. To level up, HubFlow or LyricFlow still need progress.",
+      'You finished FluentFlow. To level up, HubFlow or LyricFlow still need progress.',
     levelStuckBannerLink: 'See global progress →',
     nextStep: 'Next step',
     startLearning: 'Start learning',
@@ -473,6 +473,13 @@ export const en = {
     titleShort: 'CEFR',
     collapse: 'Hide levels',
     expand: 'Show levels',
+  },
+  unifiedFilter: {
+    close: 'Close filters',
+    noneActive: 'No filters: showing every exercise',
+    activeOne: '1 active filter',
+    activeMany: '{{count}} active filters',
+    clearAll: 'Clear filters',
   },
   levels: {
     all: 'All Levels',
