@@ -117,6 +117,67 @@
   width: 100%;
   min-height: 32px;
   padding: 5px 10px;
+  /* Misma escala e iconografía que el modal de las apps vanilla
+     (scripts/lp-settings.css): texto algo menor e iconos en acento. */
+  font-size: 0.86rem;
+  /* Los enlaces (Portal, Privacidad) heredaban el subrayado global de <a>. */
+  text-decoration: none;
+}
+
+.lp-settings-section .header-side-menu__icon {
+  color: var(--lp-accent);
+}
+
+/* Filas que abren otra ventana: chevron a la derecha (mismo opt-in que
+   scripts/lp-settings.css). */
+.lp-settings-section .nav-item--modal::after {
+  content: '\203A';
+  margin-left: auto;
+  padding-left: 8px;
+  color: var(--lp-muted);
+  font-size: 1.15rem;
+  line-height: 1;
+  flex: 0 0 auto;
+}
+
+/* Interruptor del tema: muestra el estado, no solo la acción. */
+.lp-switch {
+  margin-left: auto;
+  flex: 0 0 auto;
+  width: 34px;
+  height: 20px;
+  border-radius: 999px;
+  background: var(--lp-border-strong, var(--lp-border));
+  position: relative;
+  transition: background 0.15s ease;
+}
+
+.lp-switch::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.25);
+  transition: transform 0.15s ease;
+}
+
+[aria-checked='true'] > .lp-switch {
+  background: var(--lp-accent);
+}
+
+[aria-checked='true'] > .lp-switch::after {
+  transform: translateX(14px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lp-switch,
+  .lp-switch::after {
+    transition: none;
+  }
 }
 
 @keyframes settingsFadeIn {

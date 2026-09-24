@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, WifiOff } from 'lucide-react';
+import { X, WifiOff, ShieldCheck } from 'lucide-react';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useUserStore } from '../../stores/userStore';
 import { useTranslation } from '../../utils/i18n';
@@ -69,7 +69,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
             </h3>
             <button
               type="button"
-              className="header-side-menu__item header-side-menu__item--login"
+              className="header-side-menu__item header-side-menu__item--login nav-item--modal"
               aria-label={user ? `${user.name} — perfil` : t('auth.loginToAccount')}
               onClick={() => {
                 onClose();
@@ -87,22 +87,21 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
             <h3 id="settings-section-appearance" className="lp-settings-section__title">
               {t('navigation.settingsSectionAppearance')}
             </h3>
+            {/* Interruptor en vez de botón de acción: la fila muestra el estado
+                actual (activado/desactivado) con una etiqueta fija, como en
+                DeskFlow, en lugar de alternar entre "Modo oscuro" y "Modo claro". */}
             <button
               type="button"
+              role="switch"
+              aria-checked={theme === 'dark'}
               className="header-side-menu__item header-side-menu__item--theme"
-              aria-label={
-                theme === 'dark'
-                  ? t('navigation.switchToLightMode')
-                  : t('navigation.switchToDarkMode')
-              }
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
             >
               <span className="header-side-menu__icon" aria-hidden="true">
-                <NavMenuIcon name={theme === 'dark' ? 'sun' : 'moon'} />
+                <NavMenuIcon name="moon" />
               </span>
-              <span className="header-side-menu__text">
-                {theme === 'dark' ? t('navigation.lightMode') : t('navigation.darkMode')}
-              </span>
+              <span className="header-side-menu__text">{t('navigation.darkMode')}</span>
+              <span className="lp-switch" aria-hidden="true" />
             </button>
           </section>
 
@@ -113,7 +112,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
             <button
               type="button"
               onClick={onOpenAbout}
-              className="header-side-menu__item"
+              className="header-side-menu__item nav-item--modal"
               aria-label="About LearnFlow"
             >
               <span className="header-side-menu__icon" aria-hidden="true">
@@ -125,7 +124,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               <button
                 type="button"
                 onClick={onOpenOfflineDownloads}
-                className="header-side-menu__item"
+                className="header-side-menu__item nav-item--modal"
                 aria-label={t('offline.title')}
               >
                 <span className="header-side-menu__icon" aria-hidden="true">
@@ -147,7 +146,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
             </a>
             <a href="privacy.html" className="header-side-menu__item" aria-label="Privacidad">
               <span className="header-side-menu__icon" aria-hidden="true">
-                <NavMenuIcon name="info" />
+                <ShieldCheck size={18} />
               </span>
               <span className="header-side-menu__text">Privacidad</span>
             </a>
